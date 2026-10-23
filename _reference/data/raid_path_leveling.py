@@ -31,6 +31,7 @@ import run as FR  # noqa: E402  (fightlab/run.py)
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 import derive_leveling as DL  # noqa: E402
+import fl_signature as FS  # noqa: E402  (signature spells, user rule 2026-10-22)
 from fmt_json import dumps  # noqa: E402
 
 LEVELS = [20, 30, 40, 50, 60]
@@ -106,14 +107,19 @@ def main():
             b = {"allocation": target["allocation"], "order": order}
             times = pool.map(_run, [(cls, spec, FR.allocation_at(b, L), L, a.fights) for L in LEVELS])
             res[name] = {L: t for L, t in zip(LEVELS, times)}
-        best = min(res, key=lambda k: weighted(res[k]))
+        # the signature rule (2026-10-22): the fastest order whose path plays the tree's signature spells (fl_signature, the tree's
+        # leveling rule; an order changes the level a talent spell arrives); the fastest of all when none does (the page then says so)
+        sigs = dict(zip(orders, FS.check_builds(pool, cls, spec, [{"allocation": target["allocation"], "order": o} for o in orders.values()],
+                                                spec=tree))) if FS.enabled() else {}
+        ok = [k for k in res if (sigs.get(k) or {"ok": True}).get("ok")]
+        best = min(ok or list(res), key=lambda k: weighted(res[k]))
         first = next(int(s["levels"].split("-")[0]) for s in orders[best] if s["tree"] == tree)
         print(f"== {cls} {tree}: raid build {target['id']} ({'/'.join(str(sum(r for _, r in v)) for v in target['allocation'].values())}); "
               + ", ".join(f"{k} {weighted(v):.1f}s" for k, v in res.items()) + f" -> {best} (first {tree} point at {first})", flush=True)
         r = rec.setdefault(cls, {}).setdefault(tree, {})
         r.update({"spec": spec, "model": model, "tree": tree, "date": TODAY, "verdict": "new", "raid_path": target["id"], "order_kind": best,
                   "orders": {k: {"weighted": weighted(v), "levels": v} for k, v in res.items()}, "levels": {str(L): t for L, t in res[best].items()},
-                  "keep_incumbent": False})
+                  "keep_incumbent": False, "signature": {k: (v or {}).get("verdict") for k, v in sigs.items()}})
         if not a.write:
             continue
         bp = paths.builds_json("forever", cls)

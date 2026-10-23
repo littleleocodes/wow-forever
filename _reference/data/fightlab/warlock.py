@@ -441,6 +441,13 @@ class WarlockModule(BaseModule):
         return c
 
     NUKE_ABOVE = 0.8   # Demonology / Destruction: Shadow Bolt, Incinerate and filler Searing Pain only above this mana share (else the wand)
+    # tuned by rotation_opt.py (2026-10-22, the signature rule: with the bolt held for 80% mana, the Destruction list was dots and the
+    # wand, 3-21% of its damage from Destruction spells; the knob lets a re-tune trade speed for the spec's own spells)
+    # Destruction's bolt-first list (2026-10-22, coordinator decision on the signature rule: Shadow Bolt the filler, Immolate and
+    # Conflagrate where taken, the Affliction dots optional; the old dots-first list behind BOLT_FIRST = 0)
+    BOLT_FIRST = 1
+    DESTRO_DOTS = 0
+    ROTATION_KNOBS = {"NUKE_ABOVE": [0.0, 0.2, 0.4, 0.6, 0.8], "BOLT_FIRST": [0, 1], "DESTRO_DOTS": [0, 1]}
     CONFLAG_LEFT = 3.0   # Destruction: Conflagrate (outside the finisher) once Immolate has this many seconds left
     CRIT_BONUS_OF_BASE = 0.5   # new rotations: "increases the critical strike damage bonus by X%" = X% of the 50% bonus (wowsims)
 
@@ -907,6 +914,60 @@ class WarlockModule(BaseModule):
         return "wand"
 
     def decide_destruction(self, fight):
+        """Destruction leveling (destruction-leveling: the Destruction tree and the Shadow Bolt hybrid). Bolt first (BOLT_FIRST, the
+        default since 2026-10-22): finishers (Shadowburn, Conflagrate, the wand for the last hit), Immolate on a fresh mob, Conflagrate,
+        the Affliction dots only with DESTRO_DOTS, Soul Fire under Decimation, then Shadow Bolt (Incinerate on an Immolated mob) as the
+        filler whenever the mana reserve allows, Searing Pain to finish, the wand only when mana runs short. BOLT_FIRST = 0: the
+        dots-first list of 2026-09-30 (decide_destruction_dots), whose Destruction spells were 3-21% of its damage."""
+        if not self.BOLT_FIRST:
+            return self.decide_destruction_dots(fight)
+        c = self._situation(fight)
+        if c.action is not None:
+            return c.action
+        p, m, t, sp = c.p, c.m, c.t, c.sp
+        hp = m.hp
+        bolt, sear, burn, conf, inc, soul = (sp.get(n) for n in ("Shadow Bolt", "Searing Pain", "Shadowburn", "Conflagrate", "Incinerate", "Soul Fire"))
+        immolated = fight.dot_active("Immolate")
+        if burn and c.can(burn) and hp <= c.hit(burn):
+            return burn
+        if conf and immolated and c.can(conf) and hp <= c.hit(conf):
+            return conf
+        if hp <= c.wand_hit * 1.5:
+            return "wand"
+        filler = inc if (inc and immolated) else bolt
+        r = self._mana_and_health(fight, c, filler)
+        if r is not None:
+            return r
+        immo = sp.get("Immolate")
+        if (immo and c.can(immo) and not immolated and hp > 0.30 * m.hp_max and not (c.on_me and c.in_melee) and c.safe(immo, c.avg(immo))
+                and p.mana - self.mana_cost(immo) > c.reserve):
+            return immo
+        keeps = self.tv("Shadow and Flame", 4) >= 100
+        if (conf and immolated and c.can(conf) and (fight.dot_remaining("Immolate") <= self.CONFLAG_LEFT or keeps) and c.safe(conf, c.avg(conf))
+                and p.mana - self.mana_cost(conf) > c.reserve):
+            return conf
+        if self.DESTRO_DOTS:
+            corr, agony = sp.get("Corruption"), sp.get("Bane of Agony")
+            if corr and c.can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
+                return corr
+            if agony and c.can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:
+                return agony
+            r = self._dots(fight, c, immolate_mana=1.01)
+            if r is not None:
+                return r
+        if soul and c.can(soul) and p.buff("Decimation", t) and hp > c.avg(soul) * 0.6 and not c.near_aggro:
+            return soul
+        if bolt and c.can(bolt) and p.buff("Shadow Trance", t) and hp > c.avg(bolt) * 0.5:
+            return bolt
+        if filler and c.can(filler) and hp > c.avg(filler) * 0.9 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(filler) > c.reserve:
+            return filler
+        if sear and c.can(sear) and hp > c.wand_hit * 2 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(sear) > c.reserve:
+            return sear
+        if c.drain and c.can(c.drain) and p.hp < 0.85 * p.hp_max and hp > c.wand_hit * 4 and m.dist <= c.drain.range and not c.near_aggro:
+            return c.drain
+        return "wand"
+
+    def decide_destruction_dots(self, fight):
         """Destruction: Immolate first (Aftermath, Conflagrate, Incinerate need it), the cheap instant DoTs of the Affliction half,
         Conflagrate on cooldown once Immolate has done most of its ticking (or at once when the mob will die first), Shadowburn as
         the finisher, Incinerate on an Immolated mob (else Shadow Bolt) as the filler, Searing Pain to finish what a bolt would

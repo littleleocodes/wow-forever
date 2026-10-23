@@ -426,6 +426,11 @@ class MageModule(BaseModule):
     def is_arcane(self):
         return self.spec.startswith("arcane")
 
+    def is_barrage(self):
+        """`barrage-frost-leveling` (2026-10-22, the signature rule: the Arcane-Frost hybrid's own rotation, Frostbolt with Missile
+        Barrage's Arcane Missiles): the Frost list, plus Missile Barrage procs from Frostbolt and Arcane Missiles on a proc."""
+        return self.spec.startswith("barrage")
+
     def arcane_blast(self):
         """The Arcane Blast rank to cast (None without the talent)."""
         return self.spells.get("Arcane Blast") if self.rank("Arcane Blast") else None
@@ -684,7 +689,7 @@ class MageModule(BaseModule):
         return False
 
     def on_hit(self, fight, spell, amount, crit, frozen):
-        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and (spell.name == "Arcane Blast" or spell.name in MB_OTHERS):
+        if amount > 0 and (self.is_arcane() or self.is_barrage()) and self.rank("Missile Barrage") and (spell.name == "Arcane Blast" or spell.name in MB_OTHERS):
             # client 70425 numbers: Arcane Blast 20%/rank (index 0), each missile 5%/rank (1, on_tick; off since the hotfix), the others 10%/rank (2)
             chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 2)
             if chance and fight.rng.random() < chance / 100:
@@ -779,6 +784,11 @@ class MageModule(BaseModule):
                     p.buffs.pop("Missile Barrage", None)
                 self._am_first_tick = None
             # Missile Barrage rolls in on_hit: only a spell that lands procs it (2026-10-09; it rolled after every cast, misses too)
+        elif self.is_barrage() and spell.name == "Arcane Missiles":   # the proc it was cast on is spent (as the arcane block above)
+            b = p.buffs.get("Missile Barrage")
+            if b and (self._am_first_tick is None or b.get("since", -1.0) < self._am_first_tick):
+                p.buffs.pop("Missile Barrage", None)
+            self._am_first_tick = None
         if spell.name in ("Frost Nova", "Cone of Cold", "Blast Wave") and m.in_melee and m.hp > 0:
             if spell.name == "Frost Nova" and m.rooted(t):
                 fight.retreat_until = t + self.retreat_time()
@@ -898,8 +908,14 @@ class MageModule(BaseModule):
         if frozen:
             if lance and can(lance):
                 return lance
-            if can(fb):
+            if can(fb) and not self.is_barrage():
                 return fb
+        if self.is_barrage() and self.rank("Missile Barrage") and p.buff("Missile Barrage", t) and (not in_melee or rooted):
+            am = self.missiles(fight)   # a Missile Barrage proc: the free, fast Arcane Missiles before the next Frostbolt
+            if am is not None and can(am) and hp > wand_hit * 3:
+                return am
+        if frozen and can(fb):
+            return fb
         if p.buff("Presence of Mind", t) and can(fb):
             return fb
         if not in_melee and not rooted:

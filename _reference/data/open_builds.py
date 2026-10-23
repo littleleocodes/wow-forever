@@ -125,6 +125,46 @@ def family_text(cls, spec):
 
 
 # ------------------------------------------------------------------------------------------------ raid
+_RAIDSIM = []
+
+
+def raidsim_mods():
+    """(raid_signature, apl_opt, run, repo) for the raid signature check, loaded once."""
+    if not _RAIDSIM:
+        sys.path.insert(0, str(HERE / "raidsim"))
+        import raid_signature as RSG
+        A = _load("aplopt_openbuilds", HERE / "raidsim" / "apl_opt.py")
+        A.R.set_game("forever")
+        _RAIDSIM.append((RSG, A, A.R, A.R.repo_path(argparse.Namespace(repo=None))))
+    return _RAIDSIM[0]
+
+
+def raid_sig(cls, entry, e, w, spec):
+    """The open winner's signature-spell check in a full raid, for the spec it is filed under (user rule 2026-10-22: "make sure that the
+    specs we're testing are actually using the spells for that spec ... Especially the hybrid ones"; signature_spells.json): the record's
+    `sig_check` (family_search.py, since 2026-10-22) when it was made for this winner, else measured now (raid_signature.measure, 6,000
+    fights) and kept in the record. None when the check is switched off (WOW_FOREVER_SIGNATURE=0)."""
+    try:
+        RSG, A, R, repo = raidsim_mods()
+    except Exception as ex:   # noqa: BLE001 - no simulator here: the strict answer is no build
+        return {"ok": False, "why": f"signature check unavailable ({type(ex).__name__}: {ex})"}
+    if not RSG.enabled():
+        return None
+    flat = flat_of(w["allocation"])
+    try:
+        talents = R.talents_string(R.load_trees(repo, cls), flat)
+        chk = e.get("sig_check")
+        if not chk or chk.get("talents") != talents or chk.get("shares") is None:
+            chk, _ = RSG.measure(cls, entry, flat, repo, R, A, iterations=6000, seed=9)
+            chk = dict(chk, talents=talents)
+            e["sig_check"] = chk   # saved with the record on --write
+    except (Exception, SystemExit) as ex:   # noqa: BLE001 - a winner from older trees (a talent the simulator no longer has)
+        return {"ok": False, "why": f"cannot be checked in the current simulator ({str(ex)[:120]})"}
+    if chk.get("spec") != spec:
+        chk = dict(RSG.recheck(cls, spec, chk, flat) or chk, talents=talents)
+    return chk
+
+
 def raid_candidates(cls, st, data, RM):
     """Per done entry: (entry, spec, dps, build or None, why). The build is made only for winners that qualify."""
     nums = RM.raid_numbers(cls)
@@ -147,6 +187,13 @@ def raid_candidates(cls, st, data, RM):
             # faster": a winner of another spec found in this entry's rotation is not written for that spec
             out.append((entry, spec, wd, None, f"found in {entry}, a rotation built for {'/'.join(sorted(own))}, not {SM.spec_name(cls, spec)}'s own: "
                                                "not written (each spec plays its own rotation)"))
+            continue
+        chk = raid_sig(cls, entry, e, w, spec)
+        if chk is not None and not chk.get("ok"):
+            # user rule 2026-10-22 ("The specs should use the spells that make that spec, that spec"): a winner that does not play its spec's
+            # signature spells as its main damage is no build of that spec (a hybrid winner does not count for that hybrid)
+            out.append((entry, spec, wd, None, f"fails {SM.spec_name(cls, spec)}'s signature-spell check in a full raid ({chk.get('why')}; "
+                                               "signature_spells.json): not written"))
             continue
         raced = {k: v["dps"] for k, v in race.items() if k != "open winner" and v.get("dps")}   # raced with it: the same fights
         byid = {b["id"]: b for b in data["builds"]}
@@ -297,6 +344,47 @@ def make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, best_hand, h
 
 
 # ------------------------------------------------------------------------------------------------ leveling
+_LEV = []
+
+
+def lev_sig():
+    """fightlab/fl_signature.py (the leveling signature checks), loaded once."""
+    if not _LEV:
+        sys.path.insert(0, str(HERE / "fightlab"))
+        import fl_signature
+        _LEV.append(fl_signature)
+    return _LEV[0]
+
+
+_LEV_POOL = []
+
+
+def _lev_init():
+    """Pool worker setup: the fight lab's folder first (its run.py is `run`), green gear."""
+    sys.path.insert(0, str(HERE / "fightlab"))
+    import run
+    run.apply_gear("greens")
+
+
+def leveling_sig(cls, rot, r):
+    """The open leveling winner's signature-spell check at levels 20-60 (user rule 2026-10-22; fightlab/fl_signature.check_build): the
+    record's `signature` (fl_open_search.set_signature) when it was made for this winner, order and rotation rules, else measured now
+    (a small pool, fl_signature.CHECK_FIGHTS per level) and kept in the record. None when the checks are off (WOW_FOREVER_SIGNATURE=0)."""
+    FS = lev_sig()
+    if not FS.enabled():
+        return None
+    b = {"allocation": r["winner"]["allocation"], "order": r.get("order") or []}
+    fp = FS.build_fingerprint(cls, b, rot)
+    sg = r.get("signature")
+    if not sg or sg.get("fingerprint") != fp:
+        if not _LEV_POOL:
+            import multiprocessing
+            _LEV_POOL.append(multiprocessing.Pool(3, initializer=_lev_init))
+        sg = dict(FS.check_build(_LEV_POOL[0], cls, rot, b), fingerprint=fp)
+        r["signature"] = sg   # saved with the record on --write
+    return sg
+
+
 def leveling_candidates(cls, st, data, RM):
     """Per done rotation: (rotation, spec, weighted seconds, build or None, why)."""
     nums = RM.leveling_numbers(cls)
@@ -304,15 +392,25 @@ def leveling_candidates(cls, st, data, RM):
     for spec_rot, r in st["rotations"].items():
         if not r.get("done"):
             continue
-        spec = spec_of_alloc(cls, r["winner"]["allocation"])
+        # the spec it plays there (fl_signature.spec_for: a rotation built for one hybrid alone files the hybrid's trees under it)
+        spec = lev_sig().spec_for(cls, spec_rot, flat_of(r["winner"]["allocation"]))
         race = r["race"]
         wt = race["open winner"]["weighted"]
         own = SM.leveling_rotation_trees(cls).get(spec_rot)
-        if own and not SM.rotation_allows(spec, own):
+        if not SM.leveling_rotation_ok(cls, spec, spec_rot, own):
             # user decision 2026-10-08: no spec takes another spec's rotation because it is faster (the paladin's Holy rotation had
-            # found a Protection/Retribution build, written as Prot-Ret's leveling build)
-            out.append((spec_rot, spec, wt, None, f"found in the {spec_rot} rotation, built for {'/'.join(sorted(own))}, not "
+            # found a Protection/Retribution build, written as Prot-Ret's leveling build); 2026-10-22: a hybrid levels only with its
+            # spec_modes.HYBRID_LEVELING_ROTATION (the Frostfire winner of the Fire rotation had been written as Frostfire's build)
+            out.append((spec_rot, spec, wt, None, f"found in the {spec_rot} rotation, "
+                                                  + (f"built for {'/'.join(sorted(own))}" if own else "a hybrid's") + ", not "
                                                   f"{SM.spec_name(cls, spec)}'s own: not written (each spec plays its own rotation)"))
+            continue
+        sg = leveling_sig(cls, spec_rot, r)
+        if sg is not None and not sg.get("ok"):
+            # user rule 2026-10-22 ("The specs should use the spells that make that spec, that spec"): a winner that does not play its
+            # spec's signature spells at levels 20-60 is no build of that spec
+            out.append((spec_rot, spec, wt, None, f"fails {SM.spec_name(cls, spec)}'s signature-spell check in the fight lab "
+                                                  f"({sg.get('verdict')}; signature_spells.json): not written"))
             continue
         raced = {k: v["weighted"] for k, v in race.items() if k != "open winner" and not k.startswith("finalist ") and v.get("weighted")}
         byid = {b["id"]: b for b in data["builds"]}

@@ -146,6 +146,43 @@ RAID_ENTRY_VARIANT = {
 LEVELING_EXTRA_TREES = {("rogue", "combat-daggers-raid"): {"Combat"}}
 
 
+# the fight-lab rotation each hybrid levels with (user rule 2026-10-22: "make sure that the specs we're testing are actually using the
+# spells for that spec ... the Frostfire mage leveling build doesn't even use Frostfire. It uses Fireball"): the rotation that plays the
+# hybrid's signature spells (signature_spells.json), not its lead tree's. The lead-tree rule had given Frostfire the Fire rotation
+# (Fireball), the Discipline-Shadow priest the Penance rotation. A hybrid levels with this rotation only (leveling_rotation_ok).
+HYBRID_LEVELING_ROTATION = {
+    ("hunter", "Hybrid Beast Mastery/Marksmanship"): "bm-leveling",    # the pet with Aimed Shot (the BM list casts it when the build has it)
+    ("hunter", "Hybrid Marksmanship/Survival"): "melee-dps",
+    ("hunter", "Hybrid Beast Mastery/Survival"): "melee-dps",
+    ("mage", "Hybrid Arcane/Frost"): "barrage-frost-leveling",         # Frostbolt with Missile Barrage's Arcane Missiles (fightlab/mage.py
+                                                                        # is_barrage, 2026-10-22: the Frost list never cast them)
+    ("mage", "Hybrid Fire/Frost"): "frostfire-leveling",               # Frostfire Bolt from 40 (decide_frostfire)
+    ("paladin", "Hybrid Holy/Retribution"): "holy-leveling",           # Shockadin: Holy Shock on cooldown
+    ("paladin", "Hybrid Protection/Retribution"): "ret-dps",
+    ("priest", "Hybrid Discipline/Holy"): "holy-leveling",             # Smite: Smite and Holy Fire
+    ("priest", "Hybrid Discipline/Shadow"): "shadow-dps",              # Shadow's dots and Mind Flay
+    ("priest", "Hybrid Holy/Shadow"): "holy-leveling",                 # Shadow Word: Pain and Holy Fire (the Holy list keeps the dot up)
+    ("rogue", "Hybrid Assassination/Combat"): "combat-daggers-raid",   # Daggers: Backstab
+    ("rogue", "Hybrid Combat/Subtlety"): "subtlety-leveling",          # Ghostly Strike and the openers
+    ("shaman", "Hybrid Elemental/Enhancement"): "elemental-dps",       # a Lightning Bolt caster
+    ("warlock", "Hybrid Affliction/Destruction"): "destruction-leveling",   # Shadow Bolt
+    ("warlock", "Hybrid Affliction/Demonology"): "demonology-leveling",     # dots with the demon (Demonic Brand); the rotation it was found in
+}
+
+
+def leveling_rotation_ok(cls, spec, rot, trees_=None):
+    """Whether `spec` may be shown leveling with fight-lab rotation `rot`: a hybrid with a HYBRID_LEVELING_ROTATION only with that
+    rotation (2026-10-22, the signature rule); otherwise rotation_allows on the rotation's trees. A rotation no tree levels with: only
+    its hybrid's (a rotation unknown to both maps, a report's variant, stays allowed as before)."""
+    if (cls, spec) in HYBRID_LEVELING_ROTATION:
+        return rot == HYBRID_LEVELING_ROTATION[(cls, spec)]
+    if trees_ is None:
+        trees_ = leveling_rotation_trees(cls).get(rot)
+    if not trees_:
+        return rot not in {r for (c, _), r in HYBRID_LEVELING_ROTATION.items() if c == cls}
+    return rotation_allows(spec, trees_)
+
+
 def rotation_allows(spec, trees_):
     """Whether a rotation built for `trees_` is `spec`'s own: the spec itself, or for a hybrid either of its two trees."""
     if not trees_:
@@ -171,8 +208,11 @@ def leveling_rotation_trees(cls):
 
 
 def own_leveling_rotation(cls, spec, alloc=None):
-    """The rotation a spec levels with: its tree's (derive_leveling.LEVEL); a hybrid's: its lead tree's (the most points in `alloc`)."""
+    """The rotation a spec levels with: its tree's (derive_leveling.LEVEL); a hybrid's: HYBRID_LEVELING_ROTATION (the rotation that plays
+    its signature spells, 2026-10-22), else its lead tree's (the most points in `alloc`)."""
     import derive_leveling as DL
+    if (cls, spec) in HYBRID_LEVELING_ROTATION:
+        return HYBRID_LEVELING_ROTATION[(cls, spec)]
     tree = spec
     if spec.startswith("Hybrid ") and alloc:
         pts = {t: sum(k for _, k in items) for t, items in alloc.items()}

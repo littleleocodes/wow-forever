@@ -217,14 +217,17 @@ def research(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, leads, be
     builds = cands + list(ours.values())
     res = FT.race(pool, cls, spec, builds, FO.RACE_FIGHTS, 3)
     table = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
-    bi = min(range(len(cands)), key=lambda i: res[i][0])
+    # the pick among the candidates that play their spec's signature spells (2026-10-22, fl_signature); all of them when none does
+    qual = FO.FS.qualifying(pool, cls, spec, cands)
+    elig = [i for i, (ok_, _) in enumerate(qual) if ok_] or list(range(len(cands)))
+    bi = min(elig, key=lambda i: res[i][0])
     r["winner"] = {"allocation": cands[bi]["allocation"], "split": space.split(FT.flat_of(cands[bi])), "picked_by": "the 20-60 race after the leveling certificate"}
     r["order"] = cands[bi]["order"]
     table["open winner"] = table.pop(cands[bi]["id"])
     r["race"] = table
     r["simulated_builds"] = r.get("simulated_builds", 0) + rec2["simulated_builds"]
     w2 = FT.flat_of(r["winner"])
-    jobs_ = [(cls, spec, w2, 60, FO.VALUE_FIGHTS, 5)] + [(cls, spec, {k: v for k, v in w2.items() if k != n}, 60, FO.VALUE_FIGHTS, 5) for n in w2]
+    jobs_ = [(cls, spec, w2, 60, FO.VALUE_FIGHTS, 5, False)] + [(cls, spec, {k: v for k, v in w2.items() if k != n}, 60, FO.VALUE_FIGHTS, 5, False) for n in w2]
     vres = pool.map(FO._ttk, jobs_, chunksize=1)
     base = vres[0][0]
     r["values"] = dict(sorted({n: {"ranks": w2[n], "seconds": round(vres[i + 1][0] - base, 2), "per_point": round((vres[i + 1][0] - base) / w2[n], 2)}
@@ -300,6 +303,7 @@ def main():
                 log(f"== {cls} {spec}: leveling certificate done ({r['synergy'].get('date')})")
                 continue
             model, trees = r["model"], r["trees"]
+            FO.FS.leveling_space(space, cls, spec)   # (2026-10-22) the rotation's own specs, signature talents kept
             ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees}
             for bid, b in list(ours.items()):
                 if not b.get("order"):
@@ -308,6 +312,8 @@ def main():
                     except Exception:   # noqa: BLE001
                         ours.pop(bid)
             certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, a, save)
+            FO.set_signature(pool, cls, spec, r)
+            save()
         if not a.rotation:
             cross_rotations(cls, st, pool, save)
     FO.write_class(cls, st)

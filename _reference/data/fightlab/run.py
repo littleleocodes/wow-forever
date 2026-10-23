@@ -99,6 +99,20 @@ def apply_rotation(mod, cls, spec, rot=None):
             return mod
         rot = json.load(open(p, encoding="utf-8"))
     mod.veto = {k: dict(v) for k, v in (rot.get("veto") or {}).items()}
+    if os.environ.get("WOW_FOREVER_SIGNATURE", "1") not in ("0", "", "off", "false"):
+        # the signature rule (2026-10-22, signature_spells.json): saved rules never switch off or starve a required spell of a spec that
+        # levels with this rotation ("off", "max_hp", a mana gate above 15%); files tuned before the rule are flagged by
+        # rotation_opt.py --check-rules for a re-tune
+        import signature as _SG
+        for sp in _SG.rotation_required(cls, spec):
+            v = mod.veto.get(sp)
+            if v:
+                v.pop("off", None)
+                v.pop("max_hp", None)
+                if v.get("min_mana") and v["min_mana"] > 0.15:
+                    v["min_mana"] = 0.15
+                if not v:
+                    mod.veto.pop(sp)
     for k in ("drink_below", "eat_below"):
         if rot.get(k) is not None:
             setattr(mod, k, rot[k])

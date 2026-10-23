@@ -560,6 +560,7 @@ class Fight:
         self.queued_swing = None
         self.regen_tick = t0 + 2.0
         self.damage = {}             # spell name -> damage dealt
+        self.pet_sources = set()     # damage names dealt by the pet or demon (signature_spells.json's "pet" core source, 2026-10-22)
         self.healing = {}
         self.casts = {}
         self.crits = {}
@@ -595,6 +596,7 @@ class Fight:
         if source == "player":
             self.m.threat_player += amount
         else:
+            self.pet_sources.add(spell.name)
             self.m.threat_pet += amount * (self.p.pet.threat_mult if self.p.pet else 1.0)
         if amount > 0 and self.m.rooted(self.t) and not spell.aoe and self.rng.random() < ROOT_BREAK_CHANCE:
             self.m.root_until = self.t
@@ -1616,7 +1618,7 @@ class Session:
         p = mod.make_player(self.level)
         t = 0.0
         stats = {"kills": 0, "deaths": 0, "pet_deaths": 0, "fight_time": [], "downtime": 0.0, "drink_time": 0.0, "eat_time": 0.0,
-                 "heal_time": 0.0, "mana_spent": [], "damage": {}, "healing": {}, "casts": {}, "crits": {}, "frozen_casts": 0,
+                 "heal_time": 0.0, "mana_spent": [], "damage": {}, "pet_sources": set(), "healing": {}, "casts": {}, "crits": {}, "frozen_casts": 0,
                  "spell_casts": 0, "pushbacks": 0, "timeouts": 0, "hp_after": [], "mana_after": [], "logs": [], "casters": 0, "interrupts": 0, "runners": 0, "pulls": 0}
         i = 0
         while stats["kills"] < self.fights:
@@ -1641,6 +1643,7 @@ class Session:
                 stats["logs"].append((result, log))
             for k, v in f.damage.items():
                 stats["damage"][k] = stats["damage"].get(k, 0.0) + v
+            stats["pet_sources"] |= f.pet_sources
             for k, v in f.healing.items():
                 stats["healing"][k] = stats["healing"].get(k, 0.0) + v
             for k, v in f.casts.items():
@@ -1751,6 +1754,7 @@ class Session:
             "deaths_per_100": 100.0 * s["deaths"] / kills,
             "pet_deaths_per_100": 100.0 * s["pet_deaths"] / kills,
             "shares": {k: v / total_dmg for k, v in sorted(s["damage"].items(), key=lambda kv: -kv[1])},
+            "pet_sources": sorted(s.get("pet_sources") or ()),
             "healing_per_kill": {k: v / kills for k, v in s["healing"].items()},
             "casts": s["casts"], "crits": s["crits"],
             "crit_rate": {k: s["crits"].get(k, 0) / v for k, v in s["casts"].items() if v},

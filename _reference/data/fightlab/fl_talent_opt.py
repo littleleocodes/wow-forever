@@ -31,6 +31,8 @@ ROOT = HERE.parents[2]
 sys.path[:0] = [str(HERE), str(ROOT / "_reference/data/scorer"), str(ROOT / "_reference/data")]
 import run as FR  # noqa: E402  (fightlab/run.py)
 import validate_builds as VB  # noqa: E402
+import signature as SG  # noqa: E402  (signature spells, user rule 2026-10-22)
+import fl_signature as FS  # noqa: E402
 
 _spec = importlib.util.spec_from_file_location("raid_talent_opt", ROOT / "_reference/data/raidsim/talent_opt.py")
 T = importlib.util.module_from_spec(_spec)
@@ -49,6 +51,18 @@ def _run(job):
     try:
         return FR.simulate(cls, alloc, level, spec, fights, seed, 0)["time_per_kill"]
     except Exception as e:   # a broken candidate (a rotation that cannot kill) loses, it does not stop the search
+        print(f"  error {type(e).__name__}: {e}", flush=True)
+        return 1e9
+
+
+def _run_sig(job):
+    """_run with the signature penalty (fl_signature.penalty, 2026-10-22): job (cls, rotation, alloc, level, fights, seed, spec); a build
+    that does not play `spec`'s signature spells scores slower by the penalty, so the search climbs only among builds that do."""
+    cls, spec, alloc, level, fights, seed, rule_spec = job
+    try:
+        o = FR.simulate(cls, alloc, level, spec, fights, seed, 0)
+        return o["time_per_kill"] / FS.penalty(FS.check(cls, spec, alloc, level, o, spec=rule_spec))
+    except Exception as e:   # noqa: BLE001
         print(f"  error {type(e).__name__}: {e}", flush=True)
         return 1e9
 
@@ -124,8 +138,8 @@ def main():
     rng = random.Random(7)
     pool = multiprocessing.Pool(a.jobs, initializer=_init, initargs=(a.gear,))
 
-    def at60(allocs, fights, seed):
-        return pool.map(_run, [(cls, a.spec, al, 60, fights, seed) for al in allocs], chunksize=1)
+    def at60(allocs, fights, seed):   # (signature-penalized: the tree's leveling rule, 2026-10-22)
+        return pool.map(_run_sig, [(cls, a.spec, al, 60, fights, seed, a.tree) for al in allocs], chunksize=1)
 
     starts = [(s, flat_of(load(cls, s))) for s in a.start]
     starts = [(s, f) for s, f in starts if T.valid(trees, f)]
@@ -135,7 +149,9 @@ def main():
     best = min(range(len(starts)), key=lambda i: t0[i])
     name, cur = starts[best]
     print(f"== {cls} {a.spec} ({a.tree}): start {name} " + ", ".join(f"{s} {t:.2f}s" for (s, _), t in zip(starts, t0)), flush=True)
-    protect = set(a.keep) & set(cur)
+    # the talents that grant the tree's required signature spells are never dropped (2026-10-22, like raid's rotation talents)
+    rl = SG.rule(cls, a.tree, "leveling") if FS.enabled() else None
+    protect = (set(a.keep) | set(SG.granting_talents(cls, (rl or {}).get("required", [])))) & set(cur)
     log = []
     for rnd in range(1, a.rounds + 1):
         nb = T.neighbors(trees, cur, protect)
@@ -159,7 +175,7 @@ def main():
             break
         desc, cur = pick[i]
         log.append({"round": rnd, "move": desc, "gain_seed1": 1 - sc1, "gain_seed2": 1 - sc2})
-        print(f"  round {rnd}: {desc} ({1 - sc1:+.2%} seed 1, {1 - sc2:+.2%} seed 2 faster per kill at 60)", flush=True)
+        print(f"  round {rnd}: {desc} ({1 - sc1:+.2%} seed 1, {1 - sc2:+.2%} seed 2 faster per kill at 60, signature-weighted)", flush=True)
     alloc = {t: [[n, r] for n, r in items.items()] for t, items in T.by_tree(trees, cur).items()}
     # the path to 60: a start build's own order when the search kept its allocation (the scorer's order is only a fallback: on the
     # Frost mage's hand draft it was 0.9% slower per kill over 20-60, 2026-09-30), else the scorer's order
@@ -167,7 +183,11 @@ def main():
     cand = {"id": f"fl-{a.tree.lower().replace(' ', '-')}-{a.spec}", "allocation": alloc, "order": same[0]["order"] if same else order_of(cls, a.model, cur)}
     incs = [load(cls, x) for x in (a.incumbent or a.start[:1])]
     res = race(pool, cls, a.spec, incs + [cand], a.confirm, 3)
-    k = min(range(len(incs)), key=lambda i: res[i][0])   # the fastest existing build is the bar (2026-09-30: not the first listed)
+    # the signature check of every raced build under the tree's rule (2026-10-22): the bar is the fastest incumbent that passes (a
+    # failing hand draft is no build of the spec), and derive_leveling.py writes the result only when it passes
+    sigs = FS.check_builds(pool, cls, a.spec, incs + [cand], spec=a.tree) if FS.enabled() else [{"ok": True}] * (len(incs) + 1)
+    passing = [i for i in range(len(incs)) if sigs[i].get("ok")]
+    k = min(passing or range(len(incs)), key=lambda i: res[i][0])   # the fastest existing build is the bar (2026-09-30: not the first listed)
     inc, fin = incs[k], [res[k], res[-1]]
     gain = 1 - fin[1][0] / fin[0][0]
     print(f"  race (seed 3, levels {LEVELS}): " + ", ".join(f"{b['id']} {r[0]:.2f}s" for b, r in zip(incs, res)) + f", search {fin[1][0]:.2f}s "
@@ -175,7 +195,10 @@ def main():
     cand["search"] = {"date": datetime.date.today().isoformat(), "spec": a.spec, "model": a.model, "tree": a.tree, "start": name,
                       "starts": {s: t for (s, _), t in zip(starts, t0)}, "moves": log, "incumbent": inc["id"],
                       "race": {"incumbent": fin[0], "search": fin[1], "gain": gain,
-                               "all": {b["id"]: r for b, r in zip(incs, res[:-1])}}, "fights": a.fights, "confirm": a.confirm}
+                               "all": {b["id"]: r for b, r in zip(incs, res[:-1])}}, "fights": a.fights, "confirm": a.confirm,
+                      "signature": {"search": sigs[-1], "incumbents": {b["id"]: s_ for b, s_ in zip(incs, sigs[:-1])},
+                                    "incumbent_passes": bool(sigs[k].get("ok"))}}
+    print(f"  signature ({a.tree}): search {sigs[-1].get('verdict')}; bar {inc['id']} {sigs[k].get('verdict')}", flush=True)
     if a.write:
         pathlib.Path(a.write).parent.mkdir(parents=True, exist_ok=True)
         pathlib.Path(a.write).write_text(json.dumps(cand, indent=1) + "\n", encoding="utf-8")

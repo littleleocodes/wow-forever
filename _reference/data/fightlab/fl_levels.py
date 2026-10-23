@@ -339,7 +339,7 @@ def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None, model=N
 
 def values(cls, spec, r, pool):
     w = FT.flat_of(r["winner"])
-    jobs = [(cls, spec, w, 60, FO.VALUE_FIGHTS, 5)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, FO.VALUE_FIGHTS, 5) for n in w]
+    jobs = [(cls, spec, w, 60, FO.VALUE_FIGHTS, 5, False)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, FO.VALUE_FIGHTS, 5, False) for n in w]
     res = pool.map(FO._ttk, jobs, chunksize=1)
     base = res[0][0]
     r["values"] = dict(sorted({n: {"ranks": w[n], "seconds": round(res[i + 1][0] - base, 2), "per_point": round((res[i + 1][0] - base) / w[n], 2)}
@@ -413,6 +413,8 @@ def main():
             r = st["rotations"].get(spec)
             if not r or not r.get("done") or (a.rotation and spec not in a.rotation):
                 continue
+            FO.FS.leveling_space(space, cls, spec)   # (2026-10-22) the rotation's own specs, signature talents kept; the polish's
+                                                     # objective (fl_open_search._ttk) penalizes builds that do not play them
             if a.orders:   # the order only: the three orders raced and the order polish, on the current winner
                 if "order_polish" in r and not a.fresh:
                     log(f"  {cls} {spec}: order polished already ({r['order_polish'].get('date')}); --fresh redoes it")
@@ -420,6 +422,7 @@ def main():
                 before_order = r["order"]
                 choose_order(cls, spec, r, pool, space, save, None, ocfg, model)
                 finish(cls, spec, r, space)
+                FO.set_signature(pool, cls, spec, r)
                 save()
                 changed_any |= r["order"] != before_order
                 log(f"  {cls} {spec}: open winner {r['split']} ({r['family']}), {r['race']['open winner']['weighted']:.2f} s per kill (20-60), "
@@ -435,6 +438,8 @@ def main():
                 ensure_order(cls, spec, r, pool, space, save)   # a re-search's new winner comes with the stats model's order only
                 finish(cls, spec, r, space)
                 save()
+            FO.set_signature(pool, cls, spec, r)
+            save()
             changed_any |= ch
             log(f"  {cls} {spec}: open winner {r['split']} ({r['family']}), {r['race']['open winner']['weighted']:.2f} s per kill (20-60)"
                 + (f", {r['gain_vs_ours']:+.1%} faster than {r['ours_best']} ({r['race'][r['ours_best']]['weighted']:.2f} s)" if r.get("ours_best") else "")

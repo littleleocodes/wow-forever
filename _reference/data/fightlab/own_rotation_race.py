@@ -8,7 +8,8 @@ spec_modes.leveling_rotation_trees). Some page builds carried numbers from anoth
 put them in another spec than the rotation they were made for (the hunter's leveling-beast-mastery has 30+ Marksmanship points and played
 the Beast Mastery rotation), and open-search winners shown with a faster sibling rotation. This races each such build at levels 20-60
 (weights level / 10, seed 3, 3,000 fights per level, the open search's race) with its own spec's rotation (spec_modes.own_leveling_rotation:
-the tree's derive_leveling.LEVEL rotation, a hybrid's lead tree's) and its own talent order (the stats model's for that tree when it has
+the tree's derive_leveling.LEVEL rotation; a hybrid's spec_modes.HYBRID_LEVELING_ROTATION since 2026-10-22, the rotation that plays its
+signature spells, before that its lead tree's) and its own talent order (the stats model's for that tree when it has
 none). Record fightlab/own-rotation.json ({class: {build id: {rotation, levels, weighted, was, date}}}), which render_modes reads last.
 The fight lab is this project's model of stated assumptions, not an in-game measurement.
 """
@@ -43,9 +44,9 @@ def mismatched(cls):
     for spec, modes in g.items():
         for b in modes.get("leveling") or []:
             rot = RM.LEVEL_MODEL.get((cls, b["id"]))
-            if not RM.weighted(L.get(b["id"]) or {}) or rot is None or rot not in trees_of:
+            if not RM.weighted(L.get(b["id"]) or {}) or rot is None:
                 continue
-            if SM.rotation_allows(spec, trees_of[rot]):
+            if SM.leveling_rotation_ok(cls, spec, rot, trees_of.get(rot)):   # (2026-10-22: a hybrid only with its HYBRID_LEVELING_ROTATION)
                 continue
             own = SM.own_leveling_rotation(cls, spec, b["allocation"])
             if own:

@@ -1,5 +1,5 @@
 {
- "_doc": "Signature spells per spec and hybrid (user rule 2026-10-22: 'The specs should use the spells that make that spec, that spec. Especially the hybrid ones'; strictness 'main damage', leveling and raid). Keys: the spec as spec_modes.spec_of names it (a tree, or 'Hybrid A/B'). `required`: never vetoed, dropped or gated off by a rotation search (rotation_opt.py, apl_opt.py), and cast in every fight from the level it is learned (trainer level or the talent's level in the build's order); a search keeps the talents that grant them. `core`: these sources (spell names; 'pet' = the pet's or demon's damage, 'melee' = white melee swings, 'Auto Shot' = ranged white) must together carry at least `min_share` of the build's damage (at level 60 for leveling, in the full raid for raid); a build below it is not shown for this spec. `modes` overrides per mode. A spec that plays its signature spells and comes out slower is shown slower: the rule is about what the spec is, not about speed.",
+ "_doc": "Signature spells per spec and hybrid (user rule 2026-10-22: 'The specs should use the spells that make that spec, that spec. Especially the hybrid ones'; strictness 'main damage', leveling and raid). Keys: the spec as spec_modes.spec_of names it (a tree, or 'Hybrid A/B'). `required`: never vetoed, dropped or gated off by a rotation search (rotation_opt.py, apl_opt.py), and cast in every fight from the level it is learned (trainer level or the talent's level in the build's order); a search keeps the talents that grant them. `core`: these sources (spell names; 'pet' = the pet's or demon's damage, 'melee' = white melee swings, 'Auto Shot' = ranged white) must together carry at least `min_share` of the build's damage (at level 60 for leveling, in the full raid for raid); a build below it is not shown for this spec. `modes` overrides per mode. A spec that plays its signature spells and comes out slower is shown slower: the rule is about what the spec is, not about speed. Optional keys (leveling checks, signature.py): `min_casts` {spell: casts per kill} (a spell listed there is checked at that rate from its learn level, whether or not it is required: reactive or proc spells such as Mongoose Bite or Missile Barrage's Arcane Missiles), `enabled_by` {spell: talent} (counted from the level the talent arrives in the build's order), `grace_levels` {spell: levels} (counted that many levels after it is learned).",
  "druid": {
   "Balance": {
    "required": [
@@ -13,12 +13,14 @@
     "Insect Swarm"
    ],
    "min_share": 0.7,
-   "note": "a Moonkin caster (raid: Starfire and Moonfire; Wrath is optional)"
+   "note": "a Moonkin caster (raid: Starfire and Moonfire; Wrath is optional)",
+   "grace_levels": {
+    "Starfire": 10
+   }
   },
   "Feral Combat": {
    "required": [
     "Claw",
-    "Rip",
     "Ferocious Bite"
    ],
    "core": [
@@ -103,7 +105,25 @@
     "Wing Clip"
    ],
    "min_share": 0.5,
-   "note": "the melee hunter"
+   "note": "the melee hunter",
+   "modes": {
+    "leveling": {
+     "required": [
+      "Raptor Strike"
+     ],
+     "core": [
+      "melee",
+      "Raptor Strike",
+      "Mongoose Bite",
+      "Lacerate",
+      "Wing Clip"
+     ],
+     "min_share": 0.5,
+     "min_casts": {
+      "Mongoose Bite": 0.1
+     }
+    }
+   }
   },
   "Hybrid Beast Mastery/Marksmanship": {
    "required": [
@@ -161,6 +181,22 @@
       "pet"
      ],
      "min_share": 0.5
+    },
+    "leveling": {
+     "required": [
+      "Raptor Strike"
+     ],
+     "core": [
+      "melee",
+      "Raptor Strike",
+      "Mongoose Bite",
+      "Lacerate",
+      "pet"
+     ],
+     "min_share": 0.5,
+     "min_casts": {
+      "Mongoose Bite": 0.1
+     }
     }
    },
    "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid"
@@ -219,7 +255,13 @@
     "Arcane Blast"
    ],
    "min_share": 0.6,
-   "note": "Missile Barrage with Shatter and Fingers of Frost"
+   "note": "Missile Barrage with Shatter and Fingers of Frost",
+   "enabled_by": {
+    "Arcane Missiles": "Missile Barrage"
+   },
+   "min_casts": {
+    "Arcane Missiles": 0.25
+   }
   },
   "Hybrid Fire/Frost": {
    "required": [

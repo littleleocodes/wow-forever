@@ -13,6 +13,9 @@ talents. Per spec:
    (20-60, seed 3) against the incumbent: the best hand draft, else the generated build.
 4. The user's replacement rule: the derived build becomes the spec's leveling build only when it is 2%+ faster than the hand draft
    (--min-gain); the hand draft stays as the alternative. Without a hand draft it replaces the generated build when it is faster.
+   The signature rule (2026-10-22, signature_spells.json): fl_talent_opt.py keeps the talents that grant the tree's required spells and
+   penalizes builds that do not play them; a result that fails the check is never written, and one that passes replaces a hand draft
+   that fails it whatever the race says.
 Records: `_reference/data/derived-leveling.json` (generated; one entry per spec, reused unless --fresh), candidates under
 `<class>/research/leveling/fightlab/candidates/derived-<tree>.json`. --write puts winners into proposed-builds.json.
 """
@@ -130,13 +133,19 @@ def derive(cls, tree, a, log):
     c = json.load(open(cand, encoding="utf-8"))
     s = c["search"]
     rec.update({"candidate": str(cand.relative_to(ROOT)), "search": s, "gain": s["race"]["gain"], "incumbent": s["incumbent"]})
+    # the signature rule (2026-10-22, signature_spells.json; fl_talent_opt records the checks): a search result that does not play the
+    # tree's signature spells is never written; one that does replaces a hand draft that does not, whatever the race says
+    sg = s.get("signature") or {}
+    cand_ok = (sg.get("search") or {}).get("ok", True)
+    inc_ok = sg.get("incumbent_passes", True)
+    rec["signature"] = {"search": (sg.get("search") or {}).get("verdict"), "incumbent": ((sg.get("incumbents") or {}).get(s["incumbent"]) or {}).get("verdict")}
     if hands:
-        rec["verdict"] = "replaces" if s["race"]["gain"] >= a.min_gain else "hand stays"
+        rec["verdict"] = "replaces" if cand_ok and (s["race"]["gain"] >= a.min_gain or not inc_ok) else "hand stays"
     else:
         # no hand draft: the spec always gets a derived build (the rotation may be new, so the old generated build's numbers are stale),
-        # holding the search's result or, when that lost the race, the old build's talents
+        # holding the search's result or, when that lost the race (or fails the signature rule while the old build passes), the old build's talents
         rec["verdict"] = "new"
-        rec["keep_incumbent"] = s["race"]["gain"] <= 0
+        rec["keep_incumbent"] = (s["race"]["gain"] <= 0 and (inc_ok or not cand_ok)) or (not cand_ok and inc_ok)
     won = rec["verdict"] == "replaces" or (rec["verdict"] == "new" and not rec.get("keep_incumbent"))
     rec["levels"] = {str(L): v for L, v in (s["race"]["search"][1] if won else s["race"]["incumbent"][1]).items()}
     return rec

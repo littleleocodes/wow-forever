@@ -465,6 +465,45 @@ def raid_casts_of(cls, entry, label):
     return _RAID_CASTS[(cls, entry)].get(label, {})
 
 
+_RAID_SIG = {}
+
+
+def raid_sig_check(cls, spec, b, entry):
+    """A raid build's signature-spell check (user rule 2026-10-22: "The specs should use the spells that make that spec, that spec";
+    signature_spells.json, raidsim/raid_signature.py) in its page entry: the environments run's full-raid shares and casts (recorded since
+    2026-10-22), else the raid audit's measured row (raidsim/signature-audit.json, signature_audit.py --measure). None without a rule or data."""
+    if not entry:
+        return None
+    if "mod" not in _RAID_SIG:
+        sys.path.insert(0, str(HERE / "raidsim"))
+        import raid_signature
+        _RAID_SIG["mod"] = raid_signature
+        p = HERE / "raidsim" / "signature-audit.json"
+        _RAID_SIG["audit"] = json.load(open(p, encoding="utf-8")).get("classes", {}) if p.exists() else {}
+    RSG = _RAID_SIG["mod"]
+    if not RSG.enabled() or (b.get("role") == "tank" and cls == "druid"):   # the druid's Feral Combat rule is the cat's
+        return None
+    held = rs.flat(b)
+    key = (cls, entry)
+    if key not in _RAID_SIG:
+        f = paths.raidsim_dir(cls) / f"{entry}-environments.json"
+        _RAID_SIG[key] = {x["label"]: x for x in json.load(open(f, encoding="utf-8"))["results"]} if f.exists() else {}
+    row = _RAID_SIG[key].get(b["id"]) or {}
+    if row.get("raid_shares"):
+        return RSG.check_shares(cls, spec, row["raid_shares"], row.get("raid_casts"), held)
+    m = ((((_RAID_SIG["audit"].get(cls) or {}).get("entries") or {}).get(entry) or {}).get("builds") or {}).get(b["id"]) or {}
+    if m.get("raid_measured_shares"):   # re-checked against the rule as it is now (the audit's own verdict may predate a rule change)
+        return RSG.check_shares(cls, spec, m["raid_measured_shares"], m.get("raid_measured_casts"), held)
+    return None
+
+
+def sig_text(cls, spec, chk):
+    rl = _RAID_SIG["mod"].rule(cls, spec) or {}
+    parts = ([", ".join(f"**{x}**" for x in rl["required"]) + " cast every fight"] if rl.get("required") else []) \
+        + ([f"{', '.join(rl['core'])} carrying {rl['min_share']:.0%} of the damage"] if rl.get("core") else [])
+    return f"{chk['why']}; {SM.spec_name(cls, spec)} is defined by " + " and ".join(parts) if parts else chk["why"]
+
+
 def late_dps(cls, r):
     """Average DPS over a 6-minute fight (the curve's longest) for a raid_numbers row, or None."""
     return (list((env_info(cls, r["entry"], r["row"]["label"])[1] or {}).values()) or [None])[-1] if r else None
@@ -478,16 +517,88 @@ def healer_numbers(cls):
     return {r["id"]: r for r in rs.healer_rows(cls)}
 
 
+def lev_sig_lines(cls, spec, top):
+    """The leveling page's signature-spell lines (2026-10-22, user rule; signature_spells.json): the share the spec's core spells carry
+    at level 60 in the fight lab, and a warning when the page's build fails the check (rank_builds puts passing builds first, so a
+    failing build is shown only when no build of the spec passes)."""
+    import signature as SGN
+    rl = SGN.rule(cls, spec, "leveling")
+    if not rl:
+        return []
+    c = lev_sig_check(cls, top)
+    req = ", ".join(f"**{x}**" for x in rl["required"])
+    core = ", ".join(rl["core"])
+    if c is None:
+        return [f"*Signature spells{' (' + req + ')' if req else ''}: not checked for this build in its rotation yet "
+                f"(fightlab/signature_audit.py).*", ""]
+    share = f"{c['core_share']:.0%}" if c.get("core_share") is not None else "?"
+    if c.get("ok"):
+        return [f"**Signature spells:** {share} of the damage at level 60 in the fight lab comes from {core} (the spec's rule: at least "
+                f"{rl['min_share']:.0%}" + (f"; {req} cast in every fight" if req else "") + ").", ""]
+    return [f"> **Signature spells: this build fails the check** in the fight lab ({c.get('verdict', '').replace('FAIL: ', '')}). "
+            f"{SM.spec_name(cls, spec)} is defined by " + (f"{req} cast in every fight and " if req else "")
+            + f"{core} carrying {rl['min_share']:.0%} of the damage at level 60. No leveling build of this spec passes yet; it stays on the "
+            "page until one does (the leveling searches since 2026-10-22 look only for such builds).", ""]
+
+
 def weighted(per):
     tot = sum(int(L) / 10 for L in per)
     return sum(v * int(L) / 10 for L, v in per.items()) / tot if tot else None
 
 
 # ------------------------------------------------------------------------------------------------ picking builds
-def rank_builds(cls, mode, builds, nums):
+def level_rotation(cls, b):
+    """The fight-lab rotation a leveling build plays on the pages (LEVEL_MODEL after leveling_numbers; the generated record's model; the
+    class pipeline's spec)."""
+    return LEVEL_MODEL.get((cls, b["id"])) or (GEN.get(cls, {}).get(b["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
+
+
+_LEV_SIG = {}
+
+
+def lev_sig_check(cls, b):
+    """A leveling build's signature-spell check (user rule 2026-10-22: "The specs should use the spells that make that spec, that spec";
+    signature_spells.json) from fightlab/signature-audit.json (fightlab/signature_audit.py, rebuild.py's regen step): its row while the
+    fingerprint (allocation, order, the rotation the page shows and its tuned rules) still matches, else None (not checked)."""
+    if "mod" not in _LEV_SIG:
+        sys.path.insert(0, str(HERE / "fightlab"))
+        import fl_signature
+        _LEV_SIG["mod"] = fl_signature
+        p = HERE / "fightlab" / "signature-audit.json"
+        _LEV_SIG["audit"] = (json.load(open(p, encoding="utf-8")).get("builds") or {}) if p.exists() else {}
+    FS = _LEV_SIG["mod"]
+    if not FS.enabled():
+        return None
+    row = ((_LEV_SIG["audit"].get(cls) or {}).get(b["id"])) or None
+    if not row:
+        return None
+    rot = level_rotation(cls, b)
+    if row.get("rotation") != rot or row.get("fingerprint") != FS.build_fingerprint(cls, b, rot):
+        return None
+    return row
+
+
+def rank_builds(cls, mode, builds, nums, signature=True):
     """Builds of one spec and mode, best first: raid by DPS in a full raid (tanks: tank value; healers: healing capacity), leveling by
-    level-weighted time per kill (solo), PvP hand drafts before generated ones."""
+    level-weighted time per kill (solo), PvP hand drafts before generated ones. Leveling (2026-10-22, the signature rule): a build that
+    fails its spec's signature-spell check (lev_sig_check) ranks after every build that passes or is not checked."""
     R, L, H = nums
+
+    def raid_chk(b):   # raid (2026-10-22): the build's full-raid signature check in its page entry (raid_sig_check)
+        if b.get("role") == "healer":
+            return None
+        return raid_sig_check(cls, SM.spec_of(cls, b), b, (R.get(b["id"]) or {}).get("entry"))
+
+    def sig_fail(b):
+        if not signature or mode not in ("leveling", "raid"):
+            return 0
+        c = lev_sig_check(cls, b) if mode == "leveling" else raid_chk(b)
+        return 1 if c is not None and not c.get("ok") else 0
+
+    if mode == "raid" and signature:
+        # a raid build without the talent that grants its spec's required spell (the Arms Battle Stance draft without Mortal Strike, the
+        # Protection paladin draft without Holy Shield) is no build of that spec: not shown; one that fails otherwise ranks after the passing
+        builds = [b for b in builds if not ((raid_chk(b) or {}).get("missing_talents"))]
 
     def key(b):
         bid = b["id"]
@@ -496,10 +607,10 @@ def rank_builds(cls, mode, builds, nums):
             if b.get("role") == "healer":
                 return (0, -(H.get(bid, {}).get("capacity") or 0), gen)
             r = R.get(bid) or {}
-            return (0, -(r.get("group") or 0), gen)
+            return (0, sig_fail(b), -(r.get("group") or 0), gen)
         if mode == "leveling":
             w = weighted(L.get(bid) or {})
-            return (0 if w else 1, w or 0, gen)
+            return (0 if w else 1, sig_fail(b), w or 0, gen)
         return (0 if b.get("replaces") else 1 + gen, b.get("tier") != "primary", bid)
     parse_ids = set() if mode == "raid" else {b["id"] for b in builds if b["id"].endswith("-parse")}   # raid: a parse build is a raid build
     main = sorted([b for b in builds if b["id"] not in parse_ids], key=key)
@@ -512,7 +623,7 @@ def rank_builds(cls, mode, builds, nums):
                 return 1 / w if w else None
             r = R.get(b["id"]) or {}
             return r.get("group")
-        others = [b for b in main[1:] if not b.get("generated") and metric(b)]
+        others = [b for b in main[1:] if not b.get("generated") and metric(b) and not sig_fail(b)]
         if others and metric(main[0]) and metric(main[0]) < metric(others[0]) * (1 + DERIVED_BAR):
             main.remove(others[0])
             main.insert(0, others[0])
@@ -705,7 +816,13 @@ def mode_section(cls, spec, mode, builds, nums, src):
               + (", refined in the raid simulator" if mode == "raid" and (GEN.get(cls, {}).get(top["id"], {}).get("entry")) else "")
               + ". A starting point, not a proven build.", ""]
     if mode == "raid":
+        sc = raid_sig_check(cls, spec, top, (R.get(top["id"]) or {}).get("entry")) if top.get("role") != "healer" else None
+        if sc and not sc.get("ok"):   # the signature-spell rule (2026-10-22): the page says when its build fails it
+            o += [f"> **Signature spells: this build fails the check** in a full raid ({sig_text(cls, spec, sc)}). It stays on the page until a build "
+                  "of this spec that passes is found; the raid searches since 2026-10-22 look only for such builds (signature_spells.json).", ""]
         o += variant_lines(cls, top, builds, nums, src)
+    if mode == "leveling":
+        o += lev_sig_lines(cls, spec, top)
     play, talents, numbers = [], [], []   # the page reads: build, how to play, talents while leveling, the numbers, other builds
     if mode == "leveling":
         if top.get("order"):
@@ -901,6 +1018,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
             extra = ""
             if mode == "raid" and (R.get(b["id"]) or {}).get("group") and not (R.get(b["id"]) or {}).get("tank"):
                 extra = f", {R[b['id']]['group']:.0f} DPS in a full raid"   # no dummy number on the pages (user decision, 2026-10-04)
+                sc = raid_sig_check(cls, spec, b, R[b["id"]].get("entry"))
+                if sc and not sc.get("ok"):   # the signature-spell rule (2026-10-22)
+                    extra += f"; fails the signature-spell check: {sc['why']}"
             if mode == "leveling" and weighted(L.get(b["id"]) or {}):
                 extra = f", {weighted(L[b['id']]):.0f} s per kill, level-weighted"   # no nested parentheses (2026-10-15 page audit B17)
             o.append(f"- {link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))}{extra}) — {tree_link(cls, b)}")
@@ -1031,13 +1151,14 @@ def cell(cls, spec, mode, builds, nums, src, rec=False):
 def own_rotation_only(cls, g, nums):
     """Leveling builds whose numbers come from another spec's rotation leave their spec's page (user decision 2026-10-08: "I don't want
     classes specs taking other specs rotations or builds or anything just because it's faster"): kept only with a rotation built for the
-    spec's tree (a hybrid: either tree). fightlab/own_rotation_race.py gives such builds their own rotation's numbers first."""
-    trees_of = SM.leveling_rotation_trees(cls)
+    spec's tree (a hybrid: either tree; since 2026-10-22 a hybrid only with its spec_modes.HYBRID_LEVELING_ROTATION, the rotation that
+    plays its signature spells: the Frostfire build had been shown with the Fire rotation's Fireball). fightlab/own_rotation_race.py gives
+    such builds their own rotation's numbers first."""
     for spec, modes in g.items():
         keep = []
         for b in modes.get("leveling") or []:
             rot = LEVEL_MODEL.get((cls, b["id"]))
-            if not weighted(nums[1].get(b["id"]) or {}) or rot is None or rot not in trees_of or SM.rotation_allows(spec, trees_of[rot]):
+            if not weighted(nums[1].get(b["id"]) or {}) or rot is None or SM.leveling_rotation_ok(cls, spec, rot):
                 keep.append(b)
         modes["leveling"] = keep
     return g

@@ -37,6 +37,7 @@ import run as FR  # noqa: E402
 import paths  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
+import fl_signature as FS  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 
 
@@ -74,11 +75,16 @@ def log(m):
 
 
 def _ttk(job):
-    """(time per kill, per-fight spread of the fight time) of an allocation at a level; a broken build loses."""
-    cls, spec, alloc, level, fights, seed = job
+    """(time per kill, per-fight spread of the fight time) of an allocation at a level; a broken build loses. A build that does not play
+    its spec's signature spells (fl_signature: a required spell uncast, its talent missing, the core share under min_share at 60) has its
+    time divided by fl_signature.penalty (2026-10-22, user rule), so every search, polish and certificate on this objective looks for the
+    fastest build that plays its spec. A 7th element False (the talent values) measures the plain time."""
+    cls, spec, alloc, level, fights, seed = job[:6]
+    sig = job[6] if len(job) > 6 else True
     try:
         o = FR.simulate(cls, alloc, level, spec, fights, seed, 0)
-        return o["time_per_kill"], o.get("fight_sd") or 0.0
+        f = FS.penalty(FS.check(cls, spec, alloc, level, o)) if sig else 1.0
+        return o["time_per_kill"] / f, (o.get("fight_sd") or 0.0) / f
     except Exception as e:   # noqa: BLE001
         print(f"  error {type(e).__name__}: {e}", flush=True)
         return 1e9, 0.0
@@ -135,12 +141,18 @@ def known_positives(cls):
 
 
 def rotations(cls):
-    """{fight-lab spec: (scorer model, [trees that level with it])}."""
+    """{fight-lab spec: (scorer model, [trees that level with it])}; a rotation built for one hybrid alone
+    (spec_modes.HYBRID_LEVELING_ROTATION, 2026-10-22: the mage's frostfire-leveling) lists the hybrid, with its first tree's model."""
     DL = _load("derive_leveling_open", ROOT / "_reference/data/derive_leveling.py")
     out = {}
     for (c, tree), (spec, model) in DL.LEVEL.items():
         if c == cls:
             out.setdefault(spec, (model, []))[1].append(tree)
+    for (c, hyb), rot in SM.HYBRID_LEVELING_ROTATION.items():
+        if c == cls and rot not in out:
+            first = next((DL.LEVEL[(c, t)][1] for t in hyb[len("Hybrid "):].split("/") if (c, t) in DL.LEVEL), None)
+            if first:
+                out[rot] = (first, [hyb])
     return out
 
 
@@ -198,7 +210,9 @@ def main():
             t0 = time.time()
             # only builds that may use this rotation (2026-10-08, user decision: no spec takes another spec's rotation; the priest's
             # Discipline rotation had found a 31-point Shadow build, which no page may show with it)
-            space.allow_trees = SM.leveling_rotation_trees(cls).get(spec)
+            # 2026-10-22 (signature rule): and only builds of specs that level with it (spec_modes.leveling_rotation_ok: a hybrid with its
+            # HYBRID_LEVELING_ROTATION only), each keeping the talents that grant its spec's required spells (fl_signature.leveling_space)
+            FS.leveling_space(space, cls, spec)
             rstarts = [x for x in starts if space.valid(x)]
             if "winner" not in r:
                 import random
@@ -243,7 +257,13 @@ def main():
                 builds = cands + list(ours.values())
                 res = FT.race(pool, cls, spec, builds, RACE_FIGHTS, 3)
                 table = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
-                best = min(range(len(cands)), key=lambda i: res[i][0])
+                # the pick among the finalists that play their spec's signature spells at levels 20-60 (2026-10-22); all of them when none does
+                qual = FS.qualifying(pool, cls, spec, cands)
+                for c_, (ok_, sm_) in zip(cands, qual):
+                    if sm_ is not None:
+                        table[c_["id"]]["signature"] = sm_.get("verdict")
+                elig = [i for i, (ok_, _) in enumerate(qual) if ok_] or list(range(len(cands)))
+                best = min(elig, key=lambda i: res[i][0])
                 r["winner"] = {"allocation": cands[best]["allocation"], "split": space.split(FT.flat_of(cands[best])), "picked_by": "the 20-60 race among the finalists"}
                 r["order"] = cands[best]["order"]
                 table["open winner"] = table.pop(cands[best]["id"])
@@ -257,7 +277,7 @@ def main():
                 FL.after_race(cls, spec, r, model, trees, pool, space, ours, save)
             w = FT.flat_of(r["winner"])
             if "values" not in r:
-                jobs = [(cls, spec, w, 60, VALUE_FIGHTS, 5)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, VALUE_FIGHTS, 5) for n in w]
+                jobs = [(cls, spec, w, 60, VALUE_FIGHTS, 5, False)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, VALUE_FIGHTS, 5, False) for n in w]
                 res = pool.map(_ttk, jobs, chunksize=1)
                 base = res[0][0]
                 r["values"] = dict(sorted({n: {"ranks": w[n], "seconds": round(res[i + 1][0] - base, 2),
@@ -273,6 +293,7 @@ def main():
                 FL = _load("fl_levels_fo", HERE / "fl_levels.py")
                 FL.ensure_order(cls, spec, r, pool, space, save, model)   # a re-search's new winner comes with the stats model's order only
                 w = FT.flat_of(r["winner"])
+            set_signature(pool, cls, spec, r)
             best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,
                       "gain_vs_ours": round(r["race"][best]["weighted"] / r["race"]["open winner"]["weighted"] - 1, 4) if best else None,
@@ -288,6 +309,20 @@ def main():
         write_class(cls, st)
         write_page()
     log("== done")
+
+
+def set_signature(pool, cls, spec, r):
+    """The winner's signature check at levels 20-60 (fl_signature.check_build; 2026-10-22): open_builds.py writes a build only when it
+    passes, for the fingerprint it was made for (allocation, order, rotation rules)."""
+    b = {"allocation": r["winner"]["allocation"], "order": r.get("order") or []}
+    fp = FS.build_fingerprint(cls, b, spec)
+    if (r.get("signature") or {}).get("fingerprint") == fp:
+        return r["signature"]
+    sm = FS.check_build(pool, cls, spec, b)
+    sm["fingerprint"] = fp
+    r["signature"] = sm
+    log(f"  {cls} {spec}: signature check of the winner ({sm.get('spec')}): {sm.get('verdict')}")
+    return sm
 
 
 def ours_vs(r):
@@ -325,6 +360,10 @@ def write_class(cls, st):
         written = set((r.get("builds") or {}).get("written") or [])
         o += ["", "Race at levels 20-60 (seconds per kill): " + ", ".join(f"{k}{' (the build this search wrote)' if k in written else ''} {v['weighted']:.2f}"
                                                                          for k, v in sorted(r["race"].items(), key=lambda kv: kv[1]["weighted"])) + ".", ""]
+        sg = r.get("signature")
+        if sg:   # fl_signature.check_build (2026-10-22): does the winner play its spec's signature spells?
+            o += [f"**Signature spells** ({sg.get('spec')}, levels 20-60, {sg.get('date')}): {sg.get('verdict')}"
+                  + (f"; core share at 60 {sg['core_share']:.0%} (rule {sg['min_share']:.0%}: {', '.join(sg.get('core') or [])})" if sg.get("core") else "") + ".", ""]
         sy = r.get("synergy")
         if sy:   # fl_synergy.py: every pair of relevant talents measured around the winner at level 60
             o += [f"**Synergy certificate** ({sy['date']}, fightlab/fl_synergy.py): {sy['relevant']} relevant talents, {sy['missing']} the winner lacks; "
