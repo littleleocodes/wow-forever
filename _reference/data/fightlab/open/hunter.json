@@ -26832,19 +26832,28 @@
     },
     "minutes": 2.4
    },
+   "minutes": 141.4,
+   "done": true,
+   "date": "2026-10-24",
+   "builds": {
+    "written": [
+     "beast-survival-open-leveling"
+    ],
+    "why": null,
+    "spec": "Hybrid Beast Mastery/Survival",
+    "date": "2026-10-24"
+   },
    "signature": {
     "spec": "Hybrid Beast Mastery/Survival",
     "rotation": "melee-dps",
     "date": "2026-10-24",
     "fights": 600,
     "split": "23/3/25",
-    "ok": false,
-    "verdict": "FAIL: Mongoose Bite 0.00/kill at 20 (needs 0.10); Mongoose Bite 0.01/kill at 30 (needs 0.10)",
+    "ok": true,
+    "verdict": "OK",
     "core_share": 0.7549,
     "min_share": 0.5,
-    "required": [
-     "Raptor Strike"
-    ],
+    "required": [],
     "core": [
      "melee",
      "Raptor Strike",
@@ -26853,39 +26862,9 @@
      "pet"
     ],
     "missing_talents": [],
-    "uncast": [
-     [
-      "Mongoose Bite",
-      20,
-      0.0,
-      0.1
-     ],
-     [
-      "Mongoose Bite",
-      30,
-      0.005,
-      0.1
-     ]
-    ],
-    "casts": {
-     "Raptor Strike": {
-      "20": 1.4,
-      "30": 1.82,
-      "40": 2.08,
-      "50": 2.27,
-      "60": 2.47
-     }
-    },
+    "uncast": [],
+    "casts": {},
     "fingerprint": "562d9b86b2f0"
-   },
-   "minutes": 141.4,
-   "done": true,
-   "date": "2026-10-24",
-   "builds": {
-    "written": [],
-    "why": "fails Beast-Survival's signature-spell check in the fight lab (FAIL: Mongoose Bite 0.00/kill at 20 (needs 0.10); Mongoose Bite 0.01/kill at 30 (needs 0.10); signature_spells.json): not written",
-    "spec": "Hybrid Beast Mastery/Survival",
-    "date": "2026-10-24"
    }
   }
  },

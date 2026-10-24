@@ -93,10 +93,7 @@
    "note": "ranged shots"
   },
   "Survival": {
-   "required": [
-    "Raptor Strike",
-    "Mongoose Bite"
-   ],
+   "required": [],
    "core": [
     "melee",
     "Raptor Strike",
@@ -105,12 +102,10 @@
     "Wing Clip"
    ],
    "min_share": 0.5,
-   "note": "the melee hunter",
+   "note": "the melee hunter; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share",
    "modes": {
     "leveling": {
-     "required": [
-      "Raptor Strike"
-     ],
+     "required": [],
      "core": [
       "melee",
       "Raptor Strike",
@@ -118,10 +113,7 @@
       "Lacerate",
       "Wing Clip"
      ],
-     "min_share": 0.5,
-     "min_casts": {
-      "Mongoose Bite": 0.1
-     }
+     "min_share": 0.5
     }
    }
   },
@@ -143,22 +135,17 @@
    "note": "Beast-Marks: pet plus Marksmanship shots"
   },
   "Hybrid Marksmanship/Survival": {
-   "required": [
-    "Raptor Strike"
-   ],
+   "required": [],
    "core": [
     "melee",
     "Raptor Strike",
     "Mongoose Bite"
    ],
    "min_share": 0.5,
-   "note": "Melee (split)"
+   "note": "Melee (split); user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share"
   },
   "Hybrid Beast Mastery/Survival": {
-   "required": [
-    "Raptor Strike",
-    "Mongoose Bite"
-   ],
+   "required": [],
    "core": [
     "melee",
     "Raptor Strike",
@@ -169,11 +156,7 @@
    "min_share": 0.5,
    "modes": {
     "raid": {
-     "required": [
-      "Raptor Strike",
-      "Mongoose Bite",
-      "Summon Hawk"
-     ],
+     "required": [],
      "core": [
       "melee",
       "Raptor Strike",
@@ -183,9 +166,7 @@
      "min_share": 0.5
     },
     "leveling": {
-     "required": [
-      "Raptor Strike"
-     ],
+     "required": [],
      "core": [
       "melee",
       "Raptor Strike",
@@ -193,13 +174,10 @@
       "Lacerate",
       "pet"
      ],
-     "min_share": 0.5,
-     "min_casts": {
-      "Mongoose Bite": 0.1
-     }
+     "min_share": 0.5
     }
    },
-   "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid"
+   "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share"
   }
  },
  "mage": {
