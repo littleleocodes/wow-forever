@@ -14,67 +14,13 @@
   "bis": {
    "entry": "frost-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json",
-   "date": "2026-10-22",
+   "date": "2026-10-24",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 64.4,
+   "ilvl": 64.5,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Weakness Analyzer"
    ],
-   "trinket_screen": {
-    "Talisman of Ephemeral Power (18820)": 1.0149,
-    "Weakness Analyzer (272438)": 1.0136,
-    "Serenity Field (272439)": 1.0115,
-    "Frozen Heart of the Mountain (249469)": 1.0058,
-    "Alchemist's Stone (13503)": 1.0037,
-    "Jewel of the Guard Captain (270225)": 1.0028,
-    "Rune of the Guard Captain (19120)": 1.0018,
-    "Cleansed Vilebranch Medallion (270275)": 1.0018,
-    "Ankh of Life (1713)": 1.0,
-    "Shard of the Splithooves (10659)": 0.999,
-    "Enriched Seal (271903)": 0.9979,
-    "Darkspear Voodoo Seal (272061)": 0.9979,
-    "Everlook Delivery Bot (274760)": 0.9967,
-    "Enriched Seal (271905)": 0.9963,
-    "Darkspear Voodoo Seal (272059)": 0.9963,
-    "Dog Whistle (3456)": 0.9926,
-    "Minor Recombobulator (4381)": 0.9926,
-    "Gnomish Universal Remote (7506)": 0.9926,
-    "Demon's Blood (10779)": 0.9926,
-    "Smoking Heart of the Mountain (11811)": 0.9926,
-    "Heart of the Scale (13164)": 0.9926,
-    "Arcanite Dragonling (16022)": 0.9926,
-    "Stormpike Insignia Rank 6 (17904)": 0.9926,
-    "Gyrofreeze Ice Reflector (18634)": 0.9926,
-    "Major Recombobulator (18637)": 0.9926,
-    "Hyper-Radiant Flame Reflector (18638)": 0.9926,
-    "Ultra-Flash Shadow Reflector (18639)": 0.9926,
-    "Essence of the Pure Flame (18815)": 0.9926,
-    "Arena Grand Master (19024)": 0.9926,
-    "Talisman of Arathor (20071)": 0.9926,
-    "Defiler's Talisman (20072)": 0.9926,
-    "Defiler's Talisman (21115)": 0.9926,
-    "Defiler's Talisman (21116)": 0.9926,
-    "Talisman of Arathor (21117)": 0.9926,
-    "Talisman of Arathor (21118)": 0.9926,
-    "Talisman of Arathor (21119)": 0.9926,
-    "Defiler's Talisman (21120)": 0.9926,
-    "Defender of the Timbermaw (21326)": 0.9926,
-    "Molten Heart of the Mountain (249470)": 0.9926,
-    "Dormant Heart of the Mountain (249473)": 0.9926,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9926,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.9926,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9926,
-    "Gnomish Poultryizer (260824)": 0.9926,
-    "Volunteer's Lucky Seal (271904)": 0.9926,
-    "Volunteer's Lucky Seal (271906)": 0.9926,
-    "Relentless Raider's Seal (272060)": 0.9926,
-    "Relentless Raider's Seal (272062)": 0.9926,
-    "Adaptive Combat Assistant (272437)": 0.9926,
-    "Defender's Grip Stabilizer (272440)": 0.9926,
-    "Everlook Pathcarver (274759)": 0.9926,
-    "Parachute-Priest Pager (274761)": 0.9926
-   },
    "names": [
     "Dreadmist Mask",
     "Choker of the Fire Lord",
@@ -84,118 +30,97 @@
     "Rockfury Bracers",
     "Gloves of Spell Mastery",
     "Belt of the Archmage",
-    "Flarecore Leggings",
+    "Magister's Leggings",
     "Sorcerer's Boots",
-    "Ring of Spell Power",
+    "Signet Ring of the Bronze Dragonflight",
     "Ring of Spell Power",
     "Talisman of Ephemeral Power",
     "Weakness Analyzer",
     "Sageblade",
     "Therazane's Touch",
-    "Wand of Biting Cold"
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.007466656941878,
-    "keep-sets-and-effects": 1.0107121248976623
+    "all-slots": 1.0202830183141935,
+    "keep-sets-and-effects": 1.0256461998754183,
+    "previous": 1.0145755244543613
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.0122102823123686
+    "keep-sets-and-effects": 1.0259832755431262
    },
    "weights": {
-    "StatArcaneDamage": 0.0567,
-    "StatCritRating": 0.2784,
-    "StatFireDamage": 0.0014,
-    "StatFrostDamage": 0.3426,
-    "StatHasteRating": 0.3905,
-    "StatHitRating": 0.5539,
-    "StatIntellect": 0.1807,
-    "StatSpellDamage": 0.4007,
-    "StatSpellPiercing": 1.2835,
-    "StatSpirit": 0.1421
+    "StatArcaneDamage": 0.1322,
+    "StatCritRating": 0.266,
+    "StatFireDamage": 0.0012,
+    "StatFrostDamage": 0.2518,
+    "StatHasteRating": 0.3925,
+    "StatHitRating": 0.6357,
+    "StatIntellect": 0.2423,
+    "StatSpellDamage": 0.3852,
+    "StatSpellPiercing": 0.943,
+    "StatSpirit": 0.0711
    },
    "evaluated_on": [
     "frost-raid: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Spellweaver's Turban (not in the database)",
-     "to": "Dreadmist Mask"
-    },
-    {
-     "slot": 2,
-     "from": "Rugged Mantle of the Timbermaw (not in the database)",
-     "to": "Mantle of the Timbermaw"
-    },
-    {
-     "slot": 3,
-     "from": "Crystalline Threaded Cape (not in the database)",
-     "to": "Arcanoweave Cloak"
-    },
-    {
-     "slot": 4,
-     "from": "Robe of Volatile Power (not in the database)",
-     "to": "Robe of the Archmage"
-    },
-    {
-     "slot": 6,
-     "from": "Sandworm Skin Gloves",
-     "to": "Gloves of Spell Mastery"
-    },
-    {
-     "slot": 7,
-     "from": "Mana Igniting Cord (not in the database)",
-     "to": "Belt of the Archmage"
-    },
-    {
-     "slot": 8,
-     "from": "Netherwind Pants (not in the database)",
-     "to": "Flarecore Leggings"
-    },
-    {
-     "slot": 11,
-     "from": "Rune Band of Wizardry (not in the database)",
-     "to": "Ring of Spell Power"
-    },
-    {
-     "slot": 13,
-     "from": "Briarwood Reed (not in the database)",
-     "to": "Weakness Analyzer"
-    },
-    {
-     "slot": 14,
-     "from": "Azuresong Mageblade (not in the database)",
-     "to": "Sageblade"
-    },
-    {
-     "slot": 15,
-     "from": "Scepter of Interminable Focus (not in the database)",
-     "to": "Therazane's Touch"
-    }
+   "commit": "30f67f5d2"
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "frost-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-prebis.gear.json",
+   "date": "2026-10-24",
+   "chosen": "all-slots",
+   "ilvl": 62.2,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Frozen Heart of the Mountain"
    ],
-   "remade": {
-    "simulator": "wowsims/forever 30f67f5d2",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22267",
-     "item:227808",
-     "item:20697",
-     "item:19145",
-     "item:19136",
-     "item:16915",
-     "item:22339",
-     "item:12930",
-     "item:17103",
-     "item:22329"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [
-     "Piercing Ice"
-    ],
-    "minutes": 0.5
+   "names": [
+    "Red Mageweave Headband",
+    "Orb of the Darkmoon",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Archmage",
+    "Rockfury Bracers",
+    "Gloves of Spell Mastery",
+    "Belt of the Archmage",
+    "Magister's Leggings",
+    "Sorcerer's Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Brilliant Watcher's Signet",
+    "Weakness Analyzer",
+    "Frozen Heart of the Mountain",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9979955890508915,
+    "previous": 0.9939789515296343
    },
+   "confirm_seed2": {
+    "previous": 1.0,
+    "all-slots": 1.0057704771587115
+   },
+   "weights": {
+    "StatArcaneDamage": 0.2204,
+    "StatCritRating": 0.3426,
+    "StatFireDamage": 0.0014,
+    "StatFrostDamage": 0.2249,
+    "StatHasteRating": 0.4278,
+    "StatHitRating": 0.6644,
+    "StatIntellect": 0.219,
+    "StatSpellDamage": 0.4467,
+    "StatSpellPiercing": 1.0115,
+    "StatSpirit": 0.0177
+   },
+   "evaluated_on": [
+    "frost-raid: ml winner (bis)"
+   ],
    "commit": "30f67f5d2"
   }
  },
@@ -697,11 +622,1815 @@
    "minutes": 2.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json",
    "commit": "30f67f5d2"
+  },
+  "bis-dummy": {
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "setting": "dummy",
+   "entry": "frost-raid",
+   "date": "2026-10-24",
+   "constraint": "Hybrid of Arcane and Frost",
+   "protected": [
+    "Fingers of Frost",
+    "Missile Barrage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "frost-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Impact",
+       3
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       2
+      ],
+      [
+       "Presence of Mind",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ]
+     ],
+     "Fire": [],
+     "Frost": [
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       3
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frost Channeling",
+       3
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "29/0/22",
+    "dps": 610.0,
+    "se": 0.1,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/0/22",
+    "dps": 608.18,
+    "se": 0.1034,
+    "differs": [
+     [
+      "Frost Channeling",
+      2
+     ],
+     [
+      "Frost Channeling",
+      3
+     ],
+     [
+      "Ice Block",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.003,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 610.0,
+     "se": 0.1
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frost Channeling",
+        2
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Ice Block",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 608.18,
+     "se": 0.1034
+    }
+   ],
+   "runs": [
+    {
+     "entry": "frost-raid",
+     "run": 1,
+     "simulated": 1595,
+     "best_screen": 609.06,
+     "best_split": "29/0/22",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 395,
+       "best": 604.5
+      },
+      {
+       "round": 1,
+       "simulated": 595,
+       "best": 607.83,
+       "predicted_top": 598.99
+      },
+      {
+       "round": 2,
+       "simulated": 795,
+       "best": 607.83,
+       "predicted_top": 602.22
+      },
+      {
+       "round": 3,
+       "simulated": 995,
+       "best": 609.06,
+       "predicted_top": 604.53
+      },
+      {
+       "round": 4,
+       "simulated": 1195,
+       "best": 609.06,
+       "predicted_top": 605.7
+      },
+      {
+       "round": 5,
+       "simulated": 1395,
+       "best": 609.06,
+       "predicted_top": 605.78
+      },
+      {
+       "round": 6,
+       "simulated": 1595,
+       "best": 609.06,
+       "predicted_top": 605.27
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      610.04,
+      607.8,
+      606.81,
+      606.81,
+      606.81,
+      606.81
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      609.79,
+      607.85,
+      606.8,
+      606.8,
+      606.8
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      610.0,
+      608.18
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 271,
+     "best_gap": -0.0008,
+     "best_move": "1 Fingers of Frost -> Incineration"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.3685
+    },
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.216
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.195
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0446
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.0398
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0262
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0205
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0136
+    },
+    {
+     "feature": "Improved Channeling",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0125
+    },
+    {
+     "feature": "Frost Warding",
+     "importance": 0.0107
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.0067
+    }
+   ],
+   "simulated_builds": 1880,
+   "signature_check": {
+    "spec": "Hybrid Arcane/Frost",
+    "ok": true,
+    "core_share": 0.9793,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2821000,
+   "minutes": 4.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "bis-raid": {
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "setting": "raid",
+   "entry": "frost-raid",
+   "date": "2026-10-24",
+   "constraint": "Hybrid of Arcane and Frost",
+   "protected": [
+    "Fingers of Frost",
+    "Missile Barrage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "frost-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Impact",
+       3
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       1
+      ],
+      [
+       "Arcane Wrath",
+       1
+      ],
+      [
+       "Presence of Mind",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ]
+     ],
+     "Fire": [],
+     "Frost": [
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       3
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frostbite",
+       2
+      ],
+      [
+       "Improved Frost Nova",
+       1
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "29/0/22",
+    "dps": 702.72,
+    "se": 0.1181,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/0/22",
+    "dps": 702.72,
+    "se": 0.1181,
+    "differs": [
+     [
+      "Ice Block",
+      1
+     ],
+     [
+      "Improved Frost Nova",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        1
+       ],
+       [
+        "Arcane Wrath",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        2
+       ],
+       [
+        "Improved Frost Nova",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 702.72,
+     "se": 0.1181
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        1
+       ],
+       [
+        "Arcane Wrath",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        2
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Ice Block",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 702.72,
+     "se": 0.1181
+    }
+   ],
+   "runs": [
+    {
+     "entry": "frost-raid",
+     "run": 1,
+     "simulated": 1600,
+     "best_screen": 706.18,
+     "best_split": "29/0/22",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 701.3
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 704.7,
+       "predicted_top": 695.35
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 704.7,
+       "predicted_top": 701.14
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 704.7,
+       "predicted_top": 703.19
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 704.7,
+       "predicted_top": 703.49
+      },
+      {
+       "round": 5,
+       "simulated": 1400,
+       "best": 705.99,
+       "predicted_top": 704.39
+      },
+      {
+       "round": 6,
+       "simulated": 1600,
+       "best": 706.18,
+       "predicted_top": 705.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      702.86,
+      702.86,
+      702.86,
+      702.86,
+      702.86,
+      702.4
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      702.73,
+      702.73,
+      702.73,
+      702.73,
+      702.73
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      702.72,
+      702.72
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 267,
+     "best_gap": 0.0003,
+     "best_move": "2 Frostbite -> Arctic Reach"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.3955
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.1952
+    },
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.1661
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.0922
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0457
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0228
+    },
+    {
+     "feature": "Presence of Mind",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Frost Warding",
+     "importance": 0.0082
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0072
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.0039
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0038
+    }
+   ],
+   "simulated_builds": 1881,
+   "signature_check": {
+    "spec": "Hybrid Arcane/Frost",
+    "ok": true,
+    "core_share": 0.7709,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2814000,
+   "minutes": 5.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-dummy": {
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "setting": "dummy",
+   "entry": "frost-raid",
+   "date": "2026-10-24",
+   "constraint": "Hybrid of Arcane and Frost",
+   "protected": [
+    "Fingers of Frost",
+    "Missile Barrage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "frost-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Impact",
+       3
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       2
+      ],
+      [
+       "Presence of Mind",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ]
+     ],
+     "Fire": [],
+     "Frost": [
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       3
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frost Channeling",
+       3
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "29/0/22",
+    "dps": 595.69,
+    "se": 0.098,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/1/21",
+    "dps": 595.01,
+    "se": 0.097,
+    "differs": [
+     [
+      "Fingers of Frost",
+      1
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Incineration",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0011,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 595.69,
+     "se": 0.098
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        1
+       ]
+      ]
+     },
+     "split": "29/1/21",
+     "dps": 595.01,
+     "se": 0.097
+    }
+   ],
+   "runs": [
+    {
+     "entry": "frost-raid",
+     "run": 1,
+     "simulated": 1199,
+     "best_screen": 595.74,
+     "best_split": "29/1/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 595.67
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 595.74,
+       "predicted_top": 587.39
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 595.74,
+       "predicted_top": 592.78
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 595.74,
+       "predicted_top": 593.07
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 595.74,
+       "predicted_top": 592.67
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      595.83,
+      595.2,
+      594.26,
+      593.82,
+      593.81,
+      593.55
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      595.29,
+      594.6,
+      594.14,
+      593.97,
+      593.9
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      595.69,
+      595.01
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 271,
+     "best_gap": -0.0005,
+     "best_move": "1 Presence of Mind -> Incineration"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.4098
+    },
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.228
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.1184
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.0527
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0503
+    },
+    {
+     "feature": "Frost Warding",
+     "importance": 0.0399
+    },
+    {
+     "feature": "Improved Channeling",
+     "importance": 0.0227
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0105
+    },
+    {
+     "feature": "Arcane Concentration",
+     "importance": 0.0098
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0073
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.0067
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0062
+    }
+   ],
+   "simulated_builds": 1484,
+   "signature_check": {
+    "spec": "Hybrid Arcane/Frost",
+    "ok": true,
+    "core_share": 0.9786,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2425000,
+   "minutes": 4.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-prebis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-raid": {
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "setting": "raid",
+   "entry": "frost-raid",
+   "date": "2026-10-24",
+   "constraint": "Hybrid of Arcane and Frost",
+   "protected": [
+    "Fingers of Frost",
+    "Missile Barrage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "frost-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Impact",
+       3
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Improved Counterspell",
+       1
+      ],
+      [
+       "Arcane Wrath",
+       1
+      ],
+      [
+       "Presence of Mind",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ]
+     ],
+     "Fire": [],
+     "Frost": [
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       3
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frostbite",
+       2
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Arctic Reach",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "29/0/22",
+    "dps": 686.9,
+    "se": 0.1127,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/0/22",
+    "dps": 686.9,
+    "se": 0.1127,
+    "differs": [
+     [
+      "Arctic Reach",
+      1
+     ],
+     [
+      "Permafrost",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Improved Counterspell",
+        1
+       ],
+       [
+        "Arcane Wrath",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        2
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Arctic Reach",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 686.9,
+     "se": 0.1127
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Improved Counterspell",
+        1
+       ],
+       [
+        "Arcane Wrath",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        2
+       ],
+       [
+        "Permafrost",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 686.9,
+     "se": 0.1127
+    }
+   ],
+   "runs": [
+    {
+     "entry": "frost-raid",
+     "run": 1,
+     "simulated": 1195,
+     "best_screen": 688.82,
+     "best_split": "29/0/22",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 395,
+       "best": 688.07
+      },
+      {
+       "round": 1,
+       "simulated": 595,
+       "best": 688.36,
+       "predicted_top": 681.52
+      },
+      {
+       "round": 2,
+       "simulated": 795,
+       "best": 688.36,
+       "predicted_top": 686.62
+      },
+      {
+       "round": 3,
+       "simulated": 995,
+       "best": 688.36,
+       "predicted_top": 687.62
+      },
+      {
+       "round": 4,
+       "simulated": 1195,
+       "best": 688.82,
+       "predicted_top": 687.73
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      687.02,
+      686.71,
+      686.37,
+      686.37,
+      686.37,
+      686.37
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      687.0,
+      687.0,
+      687.0,
+      686.91,
+      686.6
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      686.9,
+      686.9
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 280,
+     "best_gap": 0.0008,
+     "best_move": "1 Arctic Reach -> Frost Channeling"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.3707
+    },
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.2202
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.1567
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.0901
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0412
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0329
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0123
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0112
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.0073
+    },
+    {
+     "feature": "Wand Specialization",
+     "importance": 0.0069
+    },
+    {
+     "feature": "Improved Frost Nova",
+     "importance": 0.0065
+    },
+    {
+     "feature": "Arcane Wrath",
+     "importance": 0.0049
+    }
+   ],
+   "simulated_builds": 1489,
+   "signature_check": {
+    "spec": "Hybrid Arcane/Frost",
+    "ok": true,
+    "core_share": 0.7733,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2448000,
+   "minutes": 6.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-prebis.gear.json",
+   "commit": "30f67f5d2"
   }
  },
  "commit": "30f67f5d2",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 609.93,
+    "se": 0.1
+   },
+   "frost-arcane-power-raid": {
+    "entry": "frost-raid",
+    "dps": 587.58,
+    "se": 0.097
+   },
+   "frost-fingers-of-frost-raid": {
+    "entry": "frost-raid",
+    "dps": 483.22,
+    "se": 0.084
+   }
+  },
+  "best_hand": "frost-arcane-power-raid",
+  "gain_vs_hand": 0.038,
+  "commit": "30f67f5d2"
  }
 }
