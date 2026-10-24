@@ -1,0 +1,210 @@
+{
+ "class": "mage",
+ "spec": "fire-raid",
+ "build": "fire-open-raid",
+ "setting": "raid",
+ "date": "2026-10-24",
+ "tank": false,
+ "removal": {
+  "Arcane Concentration": 0.0446206186503566,
+  "Arcane Focus": 0.004078962570186584,
+  "Arcane Impact": 0.0006712825970242031,
+  "Arcane Meditation": 0.03530307693734824,
+  "Arcane Subtlety": 0.024476129508312128,
+  "Combustion": 0.027618258230053816,
+  "Critical Mass": 0.08857097566430239,
+  "Elemental Precision": 0.07245724669029352,
+  "Fire Power": 0.07146044624070946,
+  "Heating Up": 0.5947460362661403,
+  "Ignite": 0.12289462220140013,
+  "Improved Fire Blast": 0.0357799623465197,
+  "Improved Fireball": 0.06982784014971122,
+  "Improved Scorch": 0.22520496989725214,
+  "Incineration": 0.019276225940441538,
+  "Master of Elements": 0.023641020948992675,
+  "Missile Barrage": 0.21506238943344613,
+  "Pyroblast": 0.1653351445393263
+ },
+ "free": [
+  "Arcane Impact"
+ ],
+ "kept_for_rotation": [
+  "Heating Up",
+  "Missile Barrage",
+  "Pyroblast"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Arcane Impact",
+   "to": "Improved Channeling",
+   "seed1": -0.0006712825970242031,
+   "seed2": -0.0006548283019455203,
+   "utility": "interrupt"
+  }
+ ],
+ "final_seed3": -0.0006720701275328977,
+ "start": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    2
+   ],
+   [
+    "Critical Mass",
+    5
+   ],
+   [
+    "Fire Power",
+    3
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Meditation",
+    2
+   ],
+   [
+    "Improved Channeling",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    2
+   ],
+   [
+    "Critical Mass",
+    5
+   ],
+   [
+    "Fire Power",
+    3
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    3
+   ]
+  ]
+ }
+}

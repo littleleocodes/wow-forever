@@ -1602,147 +1602,6 @@
       ]
     },
     {
-      "id": "beast-marks-open-leveling",
-      "name": "Beast-Marks — Leveling (open talent search)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Hybrid Beast Mastery/Marksmanship",
-      "generated": "2026-10-19",
-      "derived": "leveling",
-      "summary": "The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +2.3% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
-          ["Focused Fire", 2],
-          ["Pathfinding", 1],
-          ["Improved Revive Pet", 1],
-          ["Unleashed Fury", 5],
-          ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Spirit Bond", 2],
-          ["Bestial Discipline", 2],
-          ["Frenzy", 3]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 5],
-          ["Careful Aim", 5],
-          ["Trueshot Aura", 1]
-        ],
-        "Survival": [
-          ["Improved Tracking", 4]
-        ]
-      },
-      "order": [
-        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "17", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
-        {"levels": "18", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
-        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
-        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "25-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
-        {"levels": "30-31", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 2},
-        {"levels": "32-33", "tree": "Beast Mastery", "talent": "Spirit Bond", "points": 2},
-        {"levels": "34", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
-        {"levels": "35-37", "tree": "Beast Mastery", "talent": "Frenzy", "points": 3},
-        {"levels": "38-42", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "43-47", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
-        {"levels": "48-50", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "51-52", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
-        {"levels": "53", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "54-56", "tree": "Marksmanship", "talent": "Careful Aim", "points": 3},
-        {"levels": "57-60", "tree": "Survival", "talent": "Improved Tracking", "points": 4}
-      ],
-      "core": [
-        {"talent": "Unleashed Fury", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Bestial Discipline", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Efficiency", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ferocity", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Lethal Attacks", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Deadly Aspects", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Stings", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frenzy", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.03; beast-mastery-leveling 24.59, bm-solo-farm 25.13. The search simulated 45,533 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
-      "open_questions": ["An open-search Beast-Marks leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512011050512023-0053550001-4-7"]
-    },
-    {
-      "id": "beast-survival-open-leveling",
-      "name": "Beast-Survival — Leveling (open talent search)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Hybrid Beast Mastery/Survival",
-      "generated": "2026-10-19",
-      "derived": "leveling",
-      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +6.7% faster per kill than leveling-melee, the fastest of our leveling builds in that race.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 3],
-          ["Focused Fire", 2],
-          ["Improved Aspect of the Monkey", 3],
-          ["Unleashed Fury", 2],
-          ["Ferocity", 5],
-          ["Spirit Bond", 1],
-          ["Bestial Discipline", 1]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5],
-          ["Deflection", 3],
-          ["Savage Strikes", 2],
-          ["Clever Traps", 2],
-          ["Surefooted", 3],
-          ["Survival Tactics", 1],
-          ["Predator's Edge", 4],
-          ["Resourcefulness", 2],
-          ["Survivalist's Discipline", 2]
-        ]
-      },
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
-        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "23-24", "tree": "Survival", "talent": "Clever Traps", "points": 2},
-        {"levels": "25-28", "tree": "Survival", "talent": "Predator's Edge", "points": 4},
-        {"levels": "29", "tree": "Survival", "talent": "Survival Tactics", "points": 1},
-        {"levels": "30-31", "tree": "Survival", "talent": "Resourcefulness", "points": 2},
-        {"levels": "32-33", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
-        {"levels": "34-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "39-43", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "44-45", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "46-48", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
-        {"levels": "49-50", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 2},
-        {"levels": "51-53", "tree": "Beast Mastery", "talent": "Improved Aspect of the Monkey", "points": 3},
-        {"levels": "54-58", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
-        {"levels": "59", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
-        {"levels": "60", "tree": "Beast Mastery", "talent": "Spirit Bond", "points": 1}
-      ],
-      "core": [
-        {"talent": "Resourcefulness", "why": "+3.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Survivalist's Discipline", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Clever Traps", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Lethal Attacks", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ferocity", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Tracking", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Bestial Discipline", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Surefooted", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.11; leveling-melee 23.60, opt-bm-leveling-leveling-aoe 28.33. The search simulated 69,161 builds.", "The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 23.28 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
-      "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/53230002050101-005-530200230140202-7"]
-    },
-    {
       "id": "opt-mm-raid-raid-dps",
       "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
       "role": "dps",
@@ -1968,6 +1827,147 @@
       "open_questions": ["An open-search Marksmanship build: check it against the community's Marksmanship builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/502-0053352501522051-5-7"],
       "replaces": "mm-lone-wolf-raid"
+    },
+    {
+      "id": "beast-marks-open-leveling",
+      "name": "Beast-Marks — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Marksmanship",
+      "generated": "2026-10-24",
+      "derived": "leveling",
+      "summary": "The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-24: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +2.3% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Pathfinding", 1],
+          ["Improved Revive Pet", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Spirit Bond", 2],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 3]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 4]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
+        {"levels": "18", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
+        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
+        {"levels": "30-31", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 2},
+        {"levels": "32-33", "tree": "Beast Mastery", "talent": "Spirit Bond", "points": 2},
+        {"levels": "34", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "35-37", "tree": "Beast Mastery", "talent": "Frenzy", "points": 3},
+        {"levels": "38-42", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "43-47", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "48-50", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "51-52", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
+        {"levels": "53", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "54-56", "tree": "Marksmanship", "talent": "Careful Aim", "points": 3},
+        {"levels": "57-60", "tree": "Survival", "talent": "Improved Tracking", "points": 4}
+      ],
+      "core": [
+        {"talent": "Unleashed Fury", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Bestial Discipline", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Efficiency", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ferocity", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Stings", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Frenzy", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.03; beast-mastery-leveling 24.59, bm-solo-farm 25.13. The search simulated 25,096 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Beast-Marks leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512011050512023-0053550001-4-7"]
+    },
+    {
+      "id": "marksmanship-open-leveling",
+      "name": "Marksmanship — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-10-24",
+      "derived": "leveling",
+      "summary": "The Marksmanship leveling build the open leveling search found on 2026-10-24: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). +0.9% faster per kill than opt-bm-leveling-solo-60, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Bestial Discipline", 1]
+        ],
+        "Marksmanship": [
+          ["Improved Concussive Shot", 1],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Rapid Recuperation", 1],
+          ["Barrage", 2],
+          ["Scatter Shot", 1],
+          ["Ranged Weapon Specialization", 4]
+        ],
+        "Survival": []
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "15-19", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "20-22", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "23-24", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "25", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "26", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
+        {"levels": "27-30", "tree": "Marksmanship", "talent": "Efficiency", "points": 4},
+        {"levels": "31", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
+        {"levels": "32", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 1},
+        {"levels": "33-36", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 4},
+        {"levels": "37-38", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "39", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
+        {"levels": "40-42", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
+        {"levels": "43-47", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "48-52", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
+        {"levels": "53", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "54-55", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
+        {"levels": "56-59", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 4},
+        {"levels": "60", "tree": "Marksmanship", "talent": "Improved Concussive Shot", "points": 1}
+      ],
+      "core": [
+        {"talent": "Unleashed Fury", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Efficiency", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ferocity", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Stings", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ranged Weapon Specialization", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Focused Fire", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+4.8% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.32; opt-bm-leveling-solo-60 24.53, opt-bm-leveling-leveling-st 24.69, opt-mm-raid-leveling-st 25.11, leveling-beast-mastery 25.48. The search simulated 22,836 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Marksmanship leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/53200005050001-015355200101214--7"],
+      "replaces": "leveling-beast-mastery"
     }
   ]
 }

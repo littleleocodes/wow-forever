@@ -5,28 +5,21 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "itemId": 12662
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 12042
      }
     }
    },
    "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "auraIsActive": {
-      "auraId": {
-       "spellId": 400669
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1240047
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-06: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -117,7 +110,7 @@
             },
             "rhs": {
              "const": {
-              "val": "15s"
+              "val": "7.5s"
              }
             }
            }
@@ -134,7 +127,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-06: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -245,6 +238,16 @@
     }
    },
    "notes": "apl_opt 2026-10-06: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 14152
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {

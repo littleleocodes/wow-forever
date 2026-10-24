@@ -3,63 +3,71 @@
  "spec": "frostfire-raid",
  "build": "frostfire-open-raid",
  "setting": "raid",
- "date": "2026-10-06",
+ "date": "2026-10-24",
  "tank": false,
  "removal": {
-  "Combustion": 0.034752953848767754,
-  "Critical Mass": 0.07446410817777682,
-  "Elemental Precision": 0.025970708342845983,
-  "Fire Power": 0.08847461794381684,
-  "Frost Channeling": 0.009560520045250542,
-  "Heating Up": 0.07168660204101351,
-  "Ice Shards": 0.06782884191428751,
-  "Ignite": 0.1364295712085295,
-  "Improved Fire Ward": -0.0,
-  "Improved Fireball": 0.056866885619525576,
+  "Arctic Reach": -0.0,
+  "Critical Mass": 0.11057839853817275,
+  "Elemental Precision": 0.08107926811591237,
+  "Fingers of Frost": 0.06992460617837293,
+  "Fire Power": 0.05797886314870715,
+  "Frost Channeling": 0.051520414378469215,
+  "Heating Up": 0.5835127895703812,
+  "Ice Lance": -0.0,
+  "Ice Shards": 0.06410889434673672,
+  "Ignite": 0.15142064612537576,
+  "Improved Blizzard": -0.0,
+  "Improved Fire Blast": 0.012424913841084462,
+  "Improved Fireball": 0.06497273077774424,
+  "Improved Frost Nova": -0.0,
   "Improved Frostbolt": -0.0,
-  "Improved Scorch": 0.12425914649333425,
-  "Incineration": 0.025345229776501,
-  "Master of Elements": 0.007219997799496003,
-  "Piercing Ice": 0.0267792026180117,
-  "Pyroblast": 0.07168660204101351,
-  "Wake of Fire": 0.006741678236307891
+  "Improved Scorch": 0.13621814382639152,
+  "Incineration": 0.012152324908355494,
+  "Master of Elements": 0.046916596394372734,
+  "Pyroblast": 0.16856504972577757,
+  "Shatter": 0.06987563293629928
  },
  "free": [
-  "Improved Fire Ward",
+  "Arctic Reach",
+  "Ice Lance",
+  "Improved Blizzard",
+  "Improved Frost Nova",
   "Improved Frostbolt"
  ],
  "kept_for_rotation": [
   "Heating Up"
  ],
  "active_never_worth": [],
- "abilities_never_cast": [],
+ "abilities_never_cast": [
+  "Ice Lance"
+ ],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Improved Fire Ward",
-   "to": "Improved Channeling",
+   "from": "Improved Blizzard",
+   "to": "Arctic Reach",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "interrupt"
+   "utility": "range"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Improved Fire Ward",
-   "to": "Improved Channeling",
+   "from": "Improved Frost Nova",
+   "to": "Frost Warding",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "interrupt"
+   "utility": "survival"
   },
   {
    "round": 3,
    "kind": "utility",
    "from": "Improved Frostbolt",
-   "to": "Improved Channeling",
+   "to": "Frost Warding",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "interrupt"
+   "utility": "survival"
   }
  ],
  "final_seed3": 0.0,
@@ -67,12 +75,12 @@
   "Arcane": [],
   "Fire": [
    [
-    "Wake of Fire",
+    "Improved Fire Blast",
     2
    ],
    [
     "Incineration",
-    3
+    2
    ],
    [
     "Improved Fireball",
@@ -91,8 +99,91 @@
     3
    ],
    [
-    "Improved Fire Ward",
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
     2
+   ],
+   [
+    "Critical Mass",
+    5
+   ],
+   [
+    "Fire Power",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    2
+   ],
+   [
+    "Elemental Precision",
+    3
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Improved Frost Nova",
+    1
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Improved Blizzard",
+    1
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Incineration",
+    2
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
    ],
    [
     "Heating Up",
@@ -100,19 +191,15 @@
    ],
    [
     "Master of Elements",
-    3
+    2
    ],
    [
     "Critical Mass",
-    3
-   ],
-   [
-    "Fire Power",
     5
    ],
    [
-    "Combustion",
-    1
+    "Fire Power",
+    3
    ]
   ],
   "Frost": [
@@ -122,91 +209,35 @@
    ],
    [
     "Elemental Precision",
-    5
+    3
    ],
    [
     "Ice Shards",
     5
    ],
    [
-    "Piercing Ice",
+    "Frost Channeling",
     3
    ],
    [
-    "Frost Channeling",
-    3
-   ]
-  ]
- },
- "allocation": {
-  "Arcane": [
+    "Ice Lance",
+    1
+   ],
    [
-    "Improved Channeling",
-    3
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
+    "Arctic Reach",
     2
    ],
    [
-    "Incineration",
+    "Shatter",
     3
    ],
    [
-    "Improved Fireball",
-    5
+    "Fingers of Frost",
+    2
    ],
    [
-    "Ignite",
-    5
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
+    "Frost Warding",
+    2
    ]
   ]
  }

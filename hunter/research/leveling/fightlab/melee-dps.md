@@ -11,30 +11,30 @@ Single-target leveling fights against normal mobs of your level with a cat: the 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Pet deaths/100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 20 | 11 | 8.5s | 9.0s | 10.3s | 0.0s | 0.0 | 16.5s | 218 | 61 | 0.00 | 0% |
-| 30 | 21 | 10.6s | 10.1s | 12.9s | 1.9s | 0.0 | 20.5s | 176 | 181 | 0.00 | 0% |
-| 40 | 31 | 13.9s | 13.8s | 17.6s | 0.7s | 0.0 | 22.6s | 159 | 139 | 0.00 | 0% |
-| 50 | 41 | 15.5s | 15.5s | 19.1s | 1.1s | 0.0 | 24.6s | 146 | 186 | 0.00 | 0% |
-| 60 | 51 | 17.6s | 17.6s | 21.8s | 1.8s | 0.0 | 27.4s | 131 | 274 | 0.00 | 0% |
+| 30 | 21 | 11.8s | 11.9s | 14.9s | 0.2s | 0.0 | 20.0s | 180 | 113 | 0.00 | 0% |
+| 40 | 31 | 14.9s | 14.9s | 18.1s | 0.6s | 0.0 | 23.5s | 153 | 113 | 0.00 | 0% |
+| 50 | 41 | 16.6s | 16.4s | 20.3s | 1.0s | 0.0 | 25.6s | 141 | 144 | 0.00 | 0% |
+| 60 | 51 | 18.5s | 18.1s | 23.0s | 1.6s | 0.0 | 28.2s | 128 | 205 | 0.00 | 0% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
-| Level | Auto Shot | Bite | Cat melee | Claw | Counterattack | Immolation Trap | Lacerate | Lacerating Strikes | Melee | Melee (off-hand) | Mongoose Bite | Raptor Strike | Strider Kick |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 14% | 5% | 28% | 13% | 0% | 3% | 0% | 0% | 11% | 10% | 0% | 16% | 0% |
-| 30 | 10% | 3% | 25% | 9% | 0% | 4% | 1% | 0% | 11% | 12% | 0% | 15% | 10% |
-| 40 | 7% | 4% | 23% | 9% | 0% | 5% | 1% | 0% | 12% | 12% | 5% | 14% | 9% |
-| 50 | 6% | 4% | 21% | 8% | 0% | 6% | 1% | 0% | 12% | 12% | 6% | 13% | 9% |
-| 60 | 5% | 4% | 20% | 8% | 0% | 8% | 2% | 0% | 12% | 12% | 6% | 13% | 9% |
+| Level | Auto Shot | Bite | Cat melee | Claw | Counterattack | Immolation Trap | Lacerate | Lacerating Strikes | Melee | Melee (off-hand) | Mongoose Bite | Raptor Strike |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 20 | 14% | 5% | 28% | 13% | 0% | 3% | 0% | 0% | 11% | 10% | 0% | 16% |
+| 30 | 10% | 4% | 28% | 9% | 0% | 5% | 1% | 0% | 13% | 14% | 0% | 16% |
+| 40 | 7% | 4% | 25% | 9% | 0% | 6% | 4% | 0% | 13% | 13% | 5% | 14% |
+| 50 | 6% | 4% | 23% | 9% | 0% | 8% | 5% | 0% | 13% | 13% | 5% | 14% |
+| 60 | 5% | 4% | 22% | 8% | 0% | 10% | 5% | 0% | 13% | 13% | 6% | 14% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: melee 26%, melee_oh 12%, raptor_strike 18%, mongoose_bite 12%, lacerate 5%, counterattack 4%, strider_kick 5%, serpent 6%, pet 12%, lacerate_spell 0%.
 
 ## Realized crit rates and player at each level
 
 - **Level 20**: 1209 health, 1021 mana, 38 Int, 36 Spirit, 33 Str, 86 Agi, 139 AP, melee crit 4.1%, 0 spell power, base spell crit 5.1%, armor 492 (Aspect of the Monkey); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 5%, Growl 0%, Bite 4%, Raptor Strike 8%, Melee (off-hand) 4%, Claw 4%, Melee 4%, Immolation Trap 0%, Mongoose Bite 25%. Health after a fight 100%, mana 94%.
-- **Level 30**: 1736 health, 1527 mana, 50 Int, 60 Spirit, 41 Str, 126 Agi, 256 AP, melee crit 3.7%, 0 spell power, base spell crit 5.1%, armor 564 (Aspect of the Beast); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 4%, Growl 0%, Bite 4%, Raptor Strike 7%, Melee (off-hand) 4%, Strider Kick 6%, Claw 3%, Lacerate 7%, Melee 4%, Immolation Trap 0%, Mongoose Bite 6%. Health after a fight 99%, mana 58%.
-- **Level 40**: 2183 health, 1881 mana, 52 Int, 63 Spirit, 56 Str, 171 Agi, 357 AP, melee crit 8.6%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Beast); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Growl 0%, Bite 8%, Raptor Strike 13%, Melee (off-hand) 9%, Strider Kick 12%, Claw 8%, Lacerate 12%, Melee 9%, Immolation Trap 0%, Hunter's Mark 0%, Mongoose Bite 14%. Health after a fight 99%, mana 62%.
-- **Level 50**: 2540 health, 2348 mana, 62 Int, 92 Spirit, 70 Str, 230 Agi, 519 AP, melee crit 8.8%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Beast); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 10%, Growl 0%, Bite 8%, Raptor Strike 12%, Melee (off-hand) 9%, Strider Kick 13%, Claw 8%, Lacerate 12%, Melee 9%, Immolation Trap 0%, Hunter's Mark 0%, Mongoose Bite 13%. Health after a fight 96%, mana 62%.
-- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 263 Agi, 615 AP, melee crit 8.5%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Beast); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Growl 0%, Bite 8%, Raptor Strike 12%, Melee (off-hand) 9%, Strider Kick 12%, Claw 7%, Lacerate 13%, Melee 8%, Immolation Trap 0%, Hunter's Mark 0%, Mongoose Bite 13%, Counterattack 11%. Health after a fight 93%, mana 61%.
+- **Level 30**: 1736 health, 1527 mana, 50 Int, 60 Spirit, 41 Str, 126 Agi, 256 AP, melee crit 3.7%, 0 spell power, base spell crit 5.1%, armor 564 (Aspect of the Beast); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 4%, Growl 0%, Bite 3%, Raptor Strike 8%, Melee (off-hand) 4%, Lacerate 7%, Claw 3%, Immolation Trap 0%, Melee 4%, Mongoose Bite 15%. Health after a fight 100%, mana 73%.
+- **Level 40**: 2183 health, 1881 mana, 52 Int, 63 Spirit, 56 Str, 171 Agi, 357 AP, melee crit 8.6%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Beast); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Growl 0%, Bite 8%, Raptor Strike 12%, Melee (off-hand) 9%, Lacerate 13%, Claw 8%, Immolation Trap 0%, Melee 10%, Hunter's Mark 0%, Mongoose Bite 12%. Health after a fight 100%, mana 80%.
+- **Level 50**: 2540 health, 2348 mana, 62 Int, 92 Spirit, 70 Str, 230 Agi, 519 AP, melee crit 8.8%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Beast); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 10%, Growl 0%, Bite 8%, Raptor Strike 13%, Melee (off-hand) 9%, Lacerate 11%, Claw 8%, Immolation Trap 0%, Melee 9%, Hunter's Mark 0%, Mongoose Bite 13%, Mend Pet 0%. Health after a fight 99%, mana 80%.
+- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 263 Agi, 615 AP, melee crit 8.5%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Beast); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Growl 0%, Bite 7%, Raptor Strike 12%, Melee (off-hand) 9%, Lacerate 11%, Claw 7%, Immolation Trap 0%, Melee 8%, Hunter's Mark 0%, Mongoose Bite 13%, Counterattack 13%. Health after a fight 97%, mana 77%.
 
 ## Other builds (same mobs, same seeds)
 
@@ -43,18 +43,18 @@ Spec model (`_reference/data/scorer/specs`) assumes: melee 26%, melee_oh 12%, ra
 | 20 | leveling-melee | 16.5s | - | 8.5s | 0.0 | 0.0s |
 | 20 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 16.1s | -2.1% | 7.0s | 0.0 | 1.2s |
 | 20 | opt-melee-dps-leveling-st | 16.5s | +0.0% | 8.5s | 0.0 | 0.0s |
-| 30 | leveling-melee | 20.5s | - | 10.6s | 0.0 | 1.9s |
-| 30 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 20.5s | +0.2% | 10.3s | 0.0 | 2.2s |
-| 30 | opt-melee-dps-leveling-st | 20.5s | +0.0% | 10.6s | 0.0 | 1.9s |
-| 40 | leveling-melee | 22.6s | - | 13.9s | 0.0 | 0.7s |
-| 40 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 24.6s | +8.9% | 14.0s | 0.0 | 2.6s |
-| 40 | opt-melee-dps-leveling-st | 22.6s | -0.0% | 13.9s | 0.0 | 0.7s |
-| 50 | leveling-melee | 24.6s | - | 15.5s | 0.0 | 1.1s |
-| 50 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 27.1s | +9.9% | 15.8s | 0.0 | 3.3s |
-| 50 | opt-melee-dps-leveling-st | 24.3s | -1.2% | 15.3s | 0.0 | 1.0s |
-| 60 | leveling-melee | 27.4s | - | 17.6s | 0.0 | 1.8s |
-| 60 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 28.1s | +2.4% | 16.2s | 0.0 | 3.9s |
-| 60 | opt-melee-dps-leveling-st | 26.5s | -3.3% | 16.7s | 0.0 | 1.9s |
+| 30 | leveling-melee | 20.0s | - | 11.8s | 0.0 | 0.2s |
+| 30 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 20.5s | +2.4% | 10.3s | 0.0 | 2.2s |
+| 30 | opt-melee-dps-leveling-st | 20.0s | +0.0% | 11.8s | 0.0 | 0.2s |
+| 40 | leveling-melee | 23.5s | - | 14.9s | 0.0 | 0.6s |
+| 40 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 24.6s | +5.0% | 14.0s | 0.0 | 2.6s |
+| 40 | opt-melee-dps-leveling-st | 23.4s | -0.4% | 14.8s | 0.0 | 0.5s |
+| 50 | leveling-melee | 25.6s | - | 16.6s | 0.0 | 1.0s |
+| 50 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 27.1s | +5.6% | 15.8s | 0.0 | 3.3s |
+| 50 | opt-melee-dps-leveling-st | 25.3s | -1.3% | 16.3s | 0.0 | 0.9s |
+| 60 | leveling-melee | 28.2s | - | 18.5s | 0.0 | 1.6s |
+| 60 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 28.1s | -0.3% | 16.2s | 0.0 | 3.9s |
+| 60 | opt-melee-dps-leveling-st | 27.0s | -4.3% | 17.3s | 0.0 | 1.6s |
 
 ## Talent values at level 30
 
@@ -62,13 +62,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Surefooted | 3 | +2.5% | +3.7% ± 0.4 | +0.8% | +1.9% | 0.0 |
-| Improved Tracking | 5 | +2.0% | +2.6% ± 0.3 | +0.4% | +2.3% | 0.0 |
-| Predator's Edge | 5 | +2.0% | +2.6% ± 0.3 | +0.4% | +7.5% | 0.0 |
-| Savage Strikes | 2 | +0.9% | +1.1% ± 0.3 | +0.4% | +1.9% | 0.0 |
+| Surefooted | 3 | +2.7% | +3.8% ± 0.4 | +0.9% | +1.9% | 0.0 |
+| Improved Tracking | 5 | +2.1% | +3.0% ± 0.3 | +0.4% | +2.3% | 0.0 |
+| Predator's Edge | 5 | +2.0% | +3.2% ± 0.3 | +0.4% | +7.5% | 0.0 |
+| Savage Strikes | 2 | +0.5% | +1.0% ± 0.3 | +0.2% | +1.9% | 0.0 |
 | Deterrence | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.0 |
-| Deflection | 4 | -0.1% | -0.1% ± 0.1 | -0.0% | +0.1% | 0.0 |
-| Strider Kick | 1 | -2.8% | +11.3% ± 0.4 | -2.8% | +10.9% | 0.0 |
+| Strider Kick | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +10.9% | 0.0 |
+| Deflection | 4 | -0.1% | -0.1% ± 0.3 | -0.0% | +0.1% | 0.0 |
 
 ## Talent values at level 60
 
@@ -76,23 +76,23 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Resourcefulness | 2 | +17.9% | -0.5% ± 0.4 | +8.9% | +8.4% | 0.0 |
+| Resourcefulness | 2 | +15.1% | -0.8% ± 0.4 | +7.5% | +8.4% | 0.0 |
 | Lethal Attacks | 5 | +5.1% | +4.7% ± 0.4 | +1.0% | +5.1% | 0.0 |
-| Strider Kick | 1 | +4.1% | +7.6% ± 0.4 | +4.1% | +10.8% | 0.0 |
-| Careful Aim | 5 | +3.2% | +3.4% ± 0.4 | +0.6% | +3.2% | 0.0 |
-| Predator's Edge | 5 | +2.7% | +2.9% ± 0.4 | +0.5% | +8.2% | 0.0 |
-| Improved Tracking | 5 | +2.6% | +2.9% ± 0.4 | +0.5% | +2.5% | 0.0 |
-| Surefooted | 3 | +2.5% | +2.9% ± 0.4 | +0.8% | +2.1% | 0.0 |
-| Deadly Aspects | 5 | +2.2% | +2.6% ± 0.4 | +0.4% | +2.4% | 0.0 |
-| Savage Strikes | 2 | +1.9% | +1.2% ± 0.4 | +0.9% | +2.1% | 0.0 |
-| Lightning Reflexes | 5 | +1.7% | +1.7% ± 0.4 | +0.3% | +1.5% | 0.0 |
-| Expose Prey | 2 | +1.5% | +4.9% ± 0.4 | +0.8% | +7.2% | 0.0 |
-| Focused Fire | 2 | +1.5% | +1.6% ± 0.4 | +0.7% | +1.8% | 0.0 |
-| Lacerating Strikes | 1 | +0.7% | +0.6% ± 0.4 | +0.7% | +0.3% | 0.0 |
-| Counterattack | 1 | +0.1% | +0.1% ± 0.3 | +0.1% | +0.3% | 0.0 |
+| Careful Aim | 5 | +3.2% | +3.5% ± 0.4 | +0.6% | +3.2% | 0.0 |
+| Improved Tracking | 5 | +2.8% | +3.0% ± 0.4 | +0.6% | +2.5% | 0.0 |
+| Predator's Edge | 5 | +2.7% | +2.8% ± 0.4 | +0.5% | +8.2% | 0.0 |
+| Surefooted | 3 | +2.5% | +3.2% ± 0.4 | +0.8% | +2.1% | 0.0 |
+| Deadly Aspects | 5 | +2.4% | +3.0% ± 0.4 | +0.5% | +2.4% | 0.0 |
+| Expose Prey | 2 | +2.4% | +6.1% ± 0.4 | +1.2% | +7.2% | 0.0 |
+| Focused Fire | 2 | +1.9% | +2.0% ± 0.4 | +0.9% | +1.8% | 0.0 |
+| Lightning Reflexes | 5 | +1.8% | +2.0% ± 0.4 | +0.4% | +1.5% | 0.0 |
+| Savage Strikes | 2 | +1.7% | +1.2% ± 0.4 | +0.8% | +2.1% | 0.0 |
+| Lacerating Strikes | 1 | +0.6% | +0.6% ± 0.4 | +0.6% | +0.3% | 0.0 |
+| Deflection | 4 | +0.5% | +0.5% ± 0.4 | +0.1% | +0.1% | 0.0 |
+| Counterattack | 1 | +0.2% | +0.1% ± 0.4 | +0.2% | +0.3% | 0.0 |
 | Deterrence | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.3% | 0.0 |
 | Pathfinding | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
-| Deflection | 4 | -0.1% | -0.1% ± 0.4 | -0.0% | +0.1% | 0.0 |
+| Strider Kick | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +10.8% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

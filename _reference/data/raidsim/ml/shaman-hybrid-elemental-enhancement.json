@@ -777,11 +777,11 @@
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -789,23 +789,23 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
       [
-       "Improved Fire Nova",
-       2
+       "Elemental Focus",
+       1
       ],
       [
        "Eye of the Storm",
        2
       ],
       [
-       "Call of Thunder",
+       "Trial by Fire",
+       2
+      ],
+      [
+       "Lava Burst",
        1
       ],
       [
@@ -819,15 +819,15 @@
      ],
      "Enhancement": [
       [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
        "Earth's Grasp",
        2
       ],
       [
        "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
        5
       ],
       [
@@ -839,11 +839,11 @@
        1
       ],
       [
-       "Shamanistic Focus",
+       "Anticipation",
        1
       ],
       [
-       "Anticipation",
+       "Shamanistic Focus",
        1
       ],
       [
@@ -860,7 +860,8 @@
     "split": "29/22/0",
     "dps": 378.38,
     "se": 0.0661,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "29/22/0",
@@ -899,11 +900,11 @@
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -911,23 +912,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -941,15 +942,15 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
        [
         "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
         5
        ],
        [
@@ -961,11 +962,11 @@
         1
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -981,17 +982,18 @@
      },
      "split": "29/22/0",
      "dps": 378.38,
-     "se": 0.0661
+     "se": 0.0661,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -999,23 +1001,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -1029,15 +1031,15 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
        [
         "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
         5
        ],
        [
@@ -1049,11 +1051,11 @@
         2
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -1069,7 +1071,8 @@
      },
      "split": "29/22/0",
      "dps": 378.38,
-     "se": 0.0661
+     "se": 0.0661,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     }
    ],
    "runs": [
@@ -1300,11 +1303,11 @@
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -1312,23 +1315,23 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
       [
-       "Improved Fire Nova",
-       2
+       "Elemental Focus",
+       1
       ],
       [
        "Eye of the Storm",
        2
       ],
       [
-       "Call of Thunder",
+       "Trial by Fire",
+       2
+      ],
+      [
+       "Lava Burst",
        1
       ],
       [
@@ -1342,15 +1345,15 @@
      ],
      "Enhancement": [
       [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
        "Earth's Grasp",
        2
       ],
       [
        "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
        5
       ],
       [
@@ -1362,11 +1365,11 @@
        1
       ],
       [
-       "Shamanistic Focus",
+       "Anticipation",
        1
       ],
       [
-       "Anticipation",
+       "Shamanistic Focus",
        1
       ],
       [
@@ -1383,7 +1386,8 @@
     "split": "29/22/0",
     "dps": 379.88,
     "se": 0.0649,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "29/22/0",
@@ -1406,11 +1410,11 @@
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -1418,23 +1422,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -1448,15 +1452,15 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
        [
         "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
         5
        ],
        [
@@ -1468,11 +1472,11 @@
         1
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -1488,17 +1492,18 @@
      },
      "split": "29/22/0",
      "dps": 379.88,
-     "se": 0.0649
+     "se": 0.0649,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -1506,23 +1511,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -1536,6 +1541,10 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
@@ -1544,23 +1553,19 @@
         5
        ],
        [
-        "Ancestral Knowledge",
-        5
+        "Improved Ghost Wolf",
+        1
        ],
        [
         "Mental Dexterity",
         1
        ],
        [
-        "Improved Ghost Wolf",
+        "Anticipation",
         1
        ],
        [
         "Shamanistic Focus",
-        1
-       ],
-       [
-        "Anticipation",
         1
        ],
        [
@@ -1576,7 +1581,8 @@
      },
      "split": "29/22/0",
      "dps": 379.88,
-     "se": 0.0649
+     "se": 0.0649,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     }
    ],
    "runs": [
@@ -1737,11 +1743,11 @@
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -1749,23 +1755,23 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
       [
-       "Improved Fire Nova",
-       2
+       "Elemental Focus",
+       1
       ],
       [
        "Eye of the Storm",
        2
       ],
       [
-       "Call of Thunder",
+       "Trial by Fire",
+       2
+      ],
+      [
+       "Lava Burst",
        1
       ],
       [
@@ -1779,15 +1785,15 @@
      ],
      "Enhancement": [
       [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
        "Earth's Grasp",
        2
       ],
       [
        "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
        5
       ],
       [
@@ -1799,11 +1805,11 @@
        1
       ],
       [
-       "Shamanistic Focus",
+       "Anticipation",
        1
       ],
       [
-       "Anticipation",
+       "Shamanistic Focus",
        1
       ],
       [
@@ -1820,7 +1826,8 @@
     "split": "29/22/0",
     "dps": 366.86,
     "se": 0.0583,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "29/22/0",
@@ -1843,11 +1850,11 @@
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -1855,23 +1862,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -1885,15 +1892,15 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
        [
         "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
         5
        ],
        [
@@ -1905,11 +1912,11 @@
         1
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -1925,17 +1932,18 @@
      },
      "split": "29/22/0",
      "dps": 366.86,
-     "se": 0.0583
+     "se": 0.0583,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
-        "Convection",
+        "Concussion",
         5
        ],
        [
-        "Concussion",
+        "Convection",
         5
        ],
        [
@@ -1943,23 +1951,23 @@
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Improved Fire Nova",
-        2
+        "Elemental Focus",
+        1
        ],
        [
         "Eye of the Storm",
         2
        ],
        [
-        "Call of Thunder",
+        "Trial by Fire",
+        2
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -1973,6 +1981,10 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
@@ -1981,15 +1993,7 @@
         5
        ],
        [
-        "Ancestral Knowledge",
-        5
-       ],
-       [
         "Improved Ghost Wolf",
-        1
-       ],
-       [
-        "Shamanistic Focus",
         1
        ],
        [
@@ -1997,12 +2001,16 @@
         1
        ],
        [
-        "Toughness",
-        4
+        "Shamanistic Focus",
+        1
        ],
        [
         "Stormstrike",
         1
+       ],
+       [
+        "Toughness",
+        4
        ],
        [
         "Mental Quickness",
@@ -2013,7 +2021,8 @@
      },
      "split": "29/22/0",
      "dps": 366.86,
-     "se": 0.0583
+     "se": 0.0583,
+     "repair_note": "2026-10-23: repaired to the current trees: 29/22/0 -> 29/22/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     }
    ],
    "runs": [
@@ -2175,10 +2184,6 @@
        5
       ],
       [
-       "Reverberation",
-       5
-      ],
-      [
        "Call of Flame",
        3
       ],
@@ -2187,21 +2192,25 @@
        3
       ],
       [
+       "Reverberation",
+       5
+      ],
+      [
        "Elemental Focus",
        1
       ],
       [
-       "Improved Fire Nova",
+       "Trial by Fire",
        2
       ]
      ],
      "Enhancement": [
       [
-       "Thundering Strikes",
+       "Ancestral Knowledge",
        5
       ],
       [
-       "Ancestral Knowledge",
+       "Thundering Strikes",
        5
       ],
       [
@@ -2225,11 +2234,11 @@
        1
       ],
       [
-       "Mental Quickness",
+       "Improved Stormstrike",
        2
       ],
       [
-       "Improved Stormstrike",
+       "Mental Quickness",
        2
       ],
       [
@@ -2246,7 +2255,8 @@
     "split": "19/32/0",
     "dps": 749.02,
     "se": 0.1468,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "19/32/0",
@@ -2281,10 +2291,6 @@
         5
        ],
        [
-        "Reverberation",
-        5
-       ],
-       [
         "Call of Flame",
         3
        ],
@@ -2293,21 +2299,25 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
+        "Ancestral Knowledge",
         5
        ],
        [
-        "Ancestral Knowledge",
+        "Thundering Strikes",
         5
        ],
        [
@@ -2331,11 +2341,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2351,17 +2361,14 @@
      },
      "split": "19/32/0",
      "dps": 749.02,
-     "se": 0.1468
+     "se": 0.1468,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
         "Convection",
-        5
-       ],
-       [
-        "Reverberation",
         5
        ],
        [
@@ -2373,22 +2380,26 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
-        5
-       ],
-       [
         "Ancestral Knowledge",
         4
+       ],
+       [
+        "Thundering Strikes",
+        5
        ],
        [
         "Mental Dexterity",
@@ -2411,11 +2422,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2431,7 +2442,8 @@
      },
      "split": "19/32/0",
      "dps": 748.68,
-     "se": 0.1481
+     "se": 0.1481,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     }
    ],
    "runs": [
@@ -2599,10 +2611,6 @@
        5
       ],
       [
-       "Reverberation",
-       5
-      ],
-      [
        "Call of Flame",
        3
       ],
@@ -2611,22 +2619,26 @@
        3
       ],
       [
+       "Reverberation",
+       5
+      ],
+      [
        "Elemental Focus",
        1
       ],
       [
-       "Improved Fire Nova",
+       "Trial by Fire",
        2
       ]
      ],
      "Enhancement": [
       [
-       "Thundering Strikes",
-       5
-      ],
-      [
        "Ancestral Knowledge",
        4
+      ],
+      [
+       "Thundering Strikes",
+       5
       ],
       [
        "Mental Dexterity",
@@ -2649,11 +2661,11 @@
        1
       ],
       [
-       "Mental Quickness",
+       "Improved Stormstrike",
        2
       ],
       [
-       "Improved Stormstrike",
+       "Mental Quickness",
        2
       ],
       [
@@ -2670,7 +2682,8 @@
     "split": "19/32/0",
     "dps": 729.99,
     "se": 0.1447,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "19/32/0",
@@ -2705,10 +2718,6 @@
         5
        ],
        [
-        "Reverberation",
-        5
-       ],
-       [
         "Call of Flame",
         3
        ],
@@ -2717,22 +2726,26 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
-        5
-       ],
-       [
         "Ancestral Knowledge",
         4
+       ],
+       [
+        "Thundering Strikes",
+        5
        ],
        [
         "Mental Dexterity",
@@ -2755,11 +2768,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2775,17 +2788,14 @@
      },
      "split": "19/32/0",
      "dps": 729.99,
-     "se": 0.1447
+     "se": 0.1447,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
         "Convection",
-        5
-       ],
-       [
-        "Reverberation",
         5
        ],
        [
@@ -2797,21 +2807,25 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
+        "Ancestral Knowledge",
         5
        ],
        [
-        "Ancestral Knowledge",
+        "Thundering Strikes",
         5
        ],
        [
@@ -2835,11 +2849,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2855,7 +2869,8 @@
      },
      "split": "19/32/0",
      "dps": 729.92,
-     "se": 0.1438
+     "se": 0.1438,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     }
    ],
    "runs": [

@@ -26,7 +26,7 @@ Single-target leveling fights against normal mobs of your level with a cat: the 
 | 50 | 14% | 44% | 4% | 18% | 7% | 0% | 0% | 0% | 13% | 0% |
 | 60 | 15% | 38% | 3% | 17% | 7% | 1% | 0% | 1% | 17% | 0% |
 
-Spec model (`_reference/data/scorer/specs`) assumes: auto 46%, multi 2%, aimed 14%, arcane 0%, serpent 22%, melee 0%, pet 16%.
+Spec model (`_reference/data/scorer/specs`) assumes: auto 37%, multi 1%, aimed 12%, arcane 2%, serpent 16%, melee 0%, pet 32%.
 
 ## Realized crit rates and player at each level
 
@@ -58,12 +58,12 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
 | Efficiency | 4 | +2.9% | -0.2% ± 0.2 | +0.7% | +2.1% | 0.0 |
-| Lethal Attacks | 5 | +1.7% | +4.7% ± 0.3 | +0.3% | +1.8% | 0.0 |
+| Lethal Attacks | 5 | +1.7% | +4.7% ± 0.3 | +0.3% | +1.5% | 0.0 |
 | Careful Aim | 5 | +1.2% | +3.9% ± 0.3 | +0.2% | +3.8% | 0.0 |
-| Trueshot Aura | 1 | +0.6% | +2.0% ± 0.3 | +0.6% | +2.1% | 0.0 |
-| Improved Stings | 3 | +0.3% | +0.7% ± 0.3 | +0.1% | +2.5% | 0.0 |
-| Deadly Aspects | 1 | +0.2% | +0.2% ± 0.4 | +0.2% | +0.7% | 0.0 |
-| Rapid Killing | 2 | -0.2% | +0.5% ± 0.2 | -0.1% | +1.2% | 0.0 |
+| Trueshot Aura | 1 | +0.6% | +2.0% ± 0.3 | +0.6% | +1.8% | 0.0 |
+| Improved Stings | 3 | +0.3% | +0.7% ± 0.3 | +0.1% | +1.8% | 0.0 |
+| Deadly Aspects | 1 | +0.2% | +0.2% ± 0.4 | +0.2% | +0.6% | 0.0 |
+| Rapid Killing | 2 | -0.2% | +0.5% ± 0.2 | -0.1% | +1.1% | 0.0 |
 
 ## Talent values at level 60
 
@@ -71,24 +71,24 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Efficiency | 5 | +3.3% | +0.4% ± 0.3 | +0.7% | +2.6% | 0.0 |
-| Lethal Attacks | 5 | +3.1% | +4.2% ± 0.3 | +0.6% | +2.0% | 0.0 |
-| Rapid Recuperation | 2 | +2.8% | +0.3% ± 0.3 | +1.4% | +1.3% | 0.0 |
-| Deadly Aspects | 5 | +2.3% | +2.8% ± 0.4 | +0.5% | +3.1% | 0.0 |
-| Improved Stings | 3 | +2.3% | +3.0% ± 0.3 | +0.8% | +2.4% | 0.0 |
-| Improved Tracking | 5 | +2.1% | +3.1% ± 0.3 | +0.4% | +2.7% | 0.0 |
-| Ranged Weapon Specialization | 5 | +1.9% | +2.9% ± 0.3 | +0.4% | +2.7% | 0.0 |
+| Efficiency | 5 | +3.3% | +0.4% ± 0.3 | +0.7% | +2.5% | 0.0 |
+| Lethal Attacks | 5 | +3.1% | +4.2% ± 0.3 | +0.6% | +1.8% | 0.0 |
+| Rapid Recuperation | 2 | +2.8% | +0.3% ± 0.3 | +1.4% | +1.2% | 0.0 |
+| Deadly Aspects | 5 | +2.3% | +2.8% ± 0.4 | +0.5% | +2.6% | 0.0 |
+| Improved Stings | 3 | +2.3% | +3.0% ± 0.3 | +0.8% | +1.8% | 0.0 |
+| Improved Tracking | 5 | +2.1% | +3.1% ± 0.3 | +0.4% | +2.3% | 0.0 |
+| Ranged Weapon Specialization | 5 | +1.9% | +2.9% ± 0.3 | +0.4% | +2.3% | 0.0 |
 | Careful Aim | 5 | +1.6% | +2.2% ± 0.3 | +0.3% | +3.7% | 0.0 |
-| Trueshot Aura | 1 | +1.5% | +2.1% ± 0.3 | +1.5% | +2.1% | 0.0 |
-| Focused Fire | 2 | +1.4% | +1.7% ± 0.3 | +0.7% | +1.0% | 0.0 |
+| Trueshot Aura | 1 | +1.5% | +2.1% ± 0.3 | +1.5% | +1.8% | 0.0 |
+| Focused Fire | 2 | +1.4% | +1.7% ± 0.3 | +0.7% | +1.1% | 0.0 |
 | Barrage | 2 | +0.5% | +0.9% ± 0.3 | +0.3% | +0.6% | 0.0 |
 | Mortal Shots | 2 | +0.2% | +0.2% ± 0.3 | +0.1% | +0.5% | 0.0 |
-| Rapid Killing | 2 | +0.2% | +0.6% ± 0.2 | +0.1% | +1.4% | 0.0 |
+| Rapid Killing | 2 | +0.2% | +0.6% ± 0.2 | +0.1% | +1.3% | 0.0 |
 | Bestial Swiftness | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.7% | 0.0 |
 | Improved Revive Pet | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
 | Pathfinding | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.8% | 0.0 |
 | Scatter Shot | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.8% | 0.0 |
-| Sniper Shot | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.7% | 0.0 |
+| Sniper Shot | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.3% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

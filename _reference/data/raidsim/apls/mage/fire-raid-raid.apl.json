@@ -3,6 +3,32 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpEq",
+      "lhs": {
+       "auraNumStacks": {
+        "auraId": {
+         "spellId": 400625
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "3"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 18809
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 10199
@@ -82,7 +108,7 @@
       },
       "rhs": {
        "const": {
-        "val": "80%"
+        "val": "75%"
        }
       }
      }
@@ -92,7 +118,26 @@
       "itemId": 8008
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see fire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 400589
+      },
+      "includeReactionTime": true
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10212
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see fire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -177,32 +222,6 @@
    "action": {
     "condition": {
      "cmp": {
-      "op": "OpEq",
-      "lhs": {
-       "auraNumStacks": {
-        "auraId": {
-         "spellId": 400625
-        }
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "3"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 18809
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
       "op": "OpGe",
       "lhs": {
        "remainingTime": {}
@@ -230,6 +249,39 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 14152
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see fire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 12051
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "10%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see fire-raid-rotation-search.json)"
   }
  ]
 }

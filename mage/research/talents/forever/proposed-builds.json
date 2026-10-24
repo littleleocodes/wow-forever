@@ -1001,99 +1001,6 @@
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
     {
-      "id": "opt-frost-raid-parse",
-      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +69.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Improved Channeling", 4],
-          ["Arcane Concentration", 5],
-          ["Arcane Impact", 3],
-          ["Arcane Meditation", 3],
-          ["Presence of Mind", 1]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Elemental Precision", 3],
-          ["Improved Frostbolt", 5],
-          ["Ice Shards", 5],
-          ["Frost Channeling", 3],
-          ["Ice Lance", 1],
-          ["Arctic Reach", 2],
-          ["Ice Block", 1],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Winter's Chill", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 21.5 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 20.1 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 17.9 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 10.7 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 10.7 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 8.3 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 8.2 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md", "2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Channeling (tier gating for Fingers of Frost); +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-fire-raid-parse",
-      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +161.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 5],
-          ["Missile Barrage", 1],
-          ["Arcane Concentration", 5],
-          ["Arcane Subtlety", 2],
-          ["Magic Absorption", 1]
-        ],
-        "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 5],
-          ["Incineration", 3],
-          ["Ignite", 5],
-          ["Burning Soul", 2],
-          ["Pyroblast", 1],
-          ["Heating Up", 1],
-          ["Improved Scorch", 3],
-          ["Master of Elements", 3],
-          ["Critical Mass", 5],
-          ["Fire Power", 3],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 88.8 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 23.6 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 22.3 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 20.7 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 15.2 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 14.6 points of score in this model."},
-        {"talent": "Pyroblast", "why": "Removing it costs 11.9 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 9.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 13/33/5 -> 13/33/5; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion) (refill: the fire-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 13/33/5 -> 14/34/3; Elemental Precision 5 -> 3 (rank cap); refill +1 Heating Up, +1 Missile Barrage (refill: the fire-raid model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
       "id": "frostfire-fingers-of-frost-raid",
       "name": "Frostfire — Fingers of Frost / Ice Lance (user build)",
       "role": "dps",
@@ -1140,55 +1047,6 @@
       "notes": ["Added 2026-10-06 from the user's link; the open talent search of the same day found 0/34/17 at 684 DPS in the Frostfire rotation and missed this build (698): recorded in raidsim/known-positives.json so later searches start from it.", "Alone on a training dummy (own buffs only) it is 2% behind the 0/34/17 build; in a full raid 2% ahead. Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Fire/Frost: its full-raid winner is +0.07% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Fire Power 4 -> 3 (rank cap); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Arctic Reach (tier gating for Fingers of Frost) (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?"],
       "sources": ["https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-TUV4WaVbdeflmqrswzh-6"]
-    },
-    {
-      "id": "arcane-frost-open-raid",
-      "name": "Arcane-Frost — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Arcane/Frost",
-      "generated": "2026-10-09",
-      "derived": "raid",
-      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
-          ["Arcane Concentration", 3],
-          ["Arcane Subtlety", 2],
-          ["Arcane Blast", 1],
-          ["Arcane Impact", 3],
-          ["Arcane Mind", 5],
-          ["Arcane Instability", 3]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Elemental Precision", 3],
-          ["Improved Frostbolt", 5],
-          ["Ice Shards", 5],
-          ["Frost Channeling", 3],
-          ["Ice Lance", 1],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "91 DPS lost without it (13% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Fingers of Frost", "why": "72 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Missile Barrage", "why": "66 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ice Shards", "why": "63 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shatter", "why": "52 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Arcane Instability", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Piercing Ice", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Elemental Precision", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Arcane Subtlety (threat); Arcane Concentration -> Arcane Subtlety (threat). Net +0.04% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Arcane/Frost: its full-raid winner is -0.03% against it, under the 0.5% bar for a new build.", "2026-10-22 (repair_builds.py, client build 70425 trees): 28/0/23 -> 29/0/22; Elemental Precision 4 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Channeling (tier gating for Shatter); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); refill +1 Missile Barrage (refill: the frost-raid model, raid-dps)."],
-      "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05120501310011053--05450003010003002-6"],
-      "replaces": "frost-fingers-of-frost-raid"
     },
     {
       "id": "opt-fire-leveling-leveling-st",
@@ -1351,55 +1209,6 @@
       ]
     },
     {
-      "id": "opt-fire-raid-raid-dps",
-      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +250.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
-          ["Magic Absorption", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Blast", 1],
-          ["Arcane Wrath", 1],
-          ["Arcane Meditation", 1]
-        ],
-        "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 5],
-          ["Incineration", 2],
-          ["Ignite", 5],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 3],
-          ["Heating Up", 1],
-          ["Master of Elements", 3],
-          ["Critical Mass", 5],
-          ["Fire Power", 3],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 119.7 points of score in this model."},
-        {"talent": "Pyroblast", "why": "Removing it costs 41.3 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 33.9 points of score in this model."},
-        {"talent": "Heating Up", "why": "Removing it costs 26.2 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 25.7 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 24.6 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 23.3 points of score in this model."},
-        {"talent": "Improved Fire Blast", "why": "Removing it costs 20.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
       "id": "opt-frost-raid-raid-dps-extwc",
       "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps-extwc)",
       "role": "dps",
@@ -1445,56 +1254,6 @@
       ],
       "flex": [],
       "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps-extwc.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-frost-raid-raid-dps",
-      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +86.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Missile Barrage", 2],
-          ["Arcane Focus", 5],
-          ["Improved Channeling", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Blast", 1],
-          ["Arcane Impact", 3],
-          ["Arcane Wrath", 1],
-          ["Arcane Meditation", 1],
-          ["Presence of Mind", 1],
-          ["Arcane Mind", 4],
-          ["Arcane Instability", 3]
-        ],
-        "Fire": [
-          ["Incineration", 1]
-        ],
-        "Frost": [
-          ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
-          ["Ice Shards", 5],
-          ["Ice Lance", 1],
-          ["Frost Channeling", 2],
-          ["Shatter", 3],
-          ["Ice Block", 1],
-          ["Fingers of Frost", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.1 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 19.4 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 16.7 points of score in this model."},
-        {"talent": "Missile Barrage", "why": "Removing it costs 12.7 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 12.5 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 11.3 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 10.1 points of score in this model."},
-        {"talent": "Arcane Instability", "why": "Removing it costs 9.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1977,6 +1736,400 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.41; . The search simulated 76,952 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frostfire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-7"]
+    },
+    {
+      "id": "opt-frost-raid-raid-dps",
+      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +70.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Missile Barrage", 2],
+          ["Arcane Focus", 5],
+          ["Improved Channeling", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 2],
+          ["Arcane Concentration", 1],
+          ["Arcane Impact", 3],
+          ["Presence of Mind", 1],
+          ["Arcane Mind", 5],
+          ["Arcane Instability", 3]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Ice Lance", 1],
+          ["Frost Channeling", 2],
+          ["Shatter", 3],
+          ["Ice Block", 1],
+          ["Fingers of Frost", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 18.6 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 11.4 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 11.3 points of score in this model."},
+        {"talent": "Arcane Mind", "why": "Removing it costs 10.5 points of score in this model."},
+        {"talent": "Missile Barrage", "why": "Removing it costs 9.6 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Arcane Instability", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 8.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-frost-raid-parse",
+      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +73.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Missile Barrage", 2],
+          ["Arcane Focus", 5],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5],
+          ["Arcane Impact", 3],
+          ["Arcane Meditation", 3],
+          ["Arcane Mind", 5],
+          ["Presence of Mind", 1],
+          ["Arcane Instability", 3]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Frost Channeling", 3],
+          ["Ice Lance", 1],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 18.4 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 12.2 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 11.1 points of score in this model."},
+        {"talent": "Missile Barrage", "why": "Removing it costs 9.8 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 9.4 points of score in this model."},
+        {"talent": "Arcane Mind", "why": "Removing it costs 9.3 points of score in this model."},
+        {"talent": "Arcane Instability", "why": "Removing it costs 8.8 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 8.3 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-fire-raid-raid-dps",
+      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +280.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Missile Barrage", 2],
+          ["Improved Channeling", 5],
+          ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 1],
+          ["Arcane Meditation", 3]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Incineration", 3],
+          ["Improved Fire Blast", 1],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Master of Elements", 3],
+          ["Heating Up", 1],
+          ["Critical Mass", 5],
+          ["Fire Power", 3],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Scorch", "why": "Removing it costs 130.2 points of score in this model."},
+        {"talent": "Heating Up", "why": "Removing it costs 65.2 points of score in this model."},
+        {"talent": "Pyroblast", "why": "Removing it costs 59.4 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 36.7 points of score in this model."},
+        {"talent": "Arcane Concentration", "why": "Removing it costs 30.3 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 27.9 points of score in this model."},
+        {"talent": "Arcane Meditation", "why": "Removing it costs 27.8 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 26.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-fire-raid-parse",
+      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +205.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Missile Barrage", 2],
+          ["Improved Channeling", 5],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5],
+          ["Magic Absorption", 1],
+          ["Arcane Meditation", 2]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Incineration", 3],
+          ["Improved Fire Blast", 2],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Heating Up", 1],
+          ["Master of Elements", 2],
+          ["Critical Mass", 5],
+          ["Fire Power", 3],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Scorch", "why": "Removing it costs 103.3 points of score in this model."},
+        {"talent": "Heating Up", "why": "Removing it costs 51.6 points of score in this model."},
+        {"talent": "Pyroblast", "why": "Removing it costs 47.0 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 28.8 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 21.8 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 21.1 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 20.1 points of score in this model."},
+        {"talent": "Combustion", "why": "Removing it costs 11.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "arcane-frost-open-raid",
+      "name": "Arcane-Frost — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Arcane/Frost",
+      "generated": "2026-10-24",
+      "derived": "raid",
+      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over arcane-frost-open-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Improved Channeling", 5],
+          ["Missile Barrage", 2],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 2],
+          ["Arcane Impact", 3],
+          ["Arcane Blast", 1],
+          ["Presence of Mind", 1],
+          ["Arcane Mind", 5],
+          ["Arcane Instability", 3]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Frostbite", 1],
+          ["Ice Lance", 1],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2],
+          ["Arctic Reach", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Fingers of Frost", "why": "310 DPS lost without it (45% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Missile Barrage", "why": "121 DPS lost without it (18% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Frostbolt", "why": "69 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Blast", "why": "64 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Mind", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Instability", "why": "36 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ice Shards", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Elemental Precision", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+2.3% over the best hand draft of the spec, frost-arcane-power-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 29/0/22 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.1 DPS; arcane-frost-open-raid 687.8, opt-frost-raid-raid-dps-extwc 680.3, frost-arcane-power-raid 676.5, opt-frost-raid-raid-dps 662.6, frost-fingers-of-frost-raid 546.6, frost-ml-raid 544.9, frost-winters-chill-raid 500.9 in the same fights; 4,517 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -41.2%, arcane-dps -13.5%, frostfire-raid -40.2%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Magic Absorption, Arcane Resilience, Arcane Shielding, Improved Counterspell, Improved Frost Nova.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Concentration -> Improved Channeling (interrupt); Arcane Resilience -> Improved Channeling (interrupt); Arcane Shielding -> Improved Channeling (interrupt); Improved Counterspell -> Improved Channeling (interrupt); Improved Counterspell -> Magic Absorption (mana); Frostbite -> Arctic Reach (range); Improved Frost Nova -> Arctic Reach (range). Net +0.07% on a third seed."],
+      "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/051221110311200153--0535210001003002-7"],
+      "replaces": "frost-arcane-power-raid"
+    },
+    {
+      "id": "fire-open-raid",
+      "name": "Fire — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Fire",
+      "generated": "2026-10-24",
+      "derived": "raid",
+      "summary": "The Fire raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +2.3% over fire-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Missile Barrage", 2],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5],
+          ["Arcane Meditation", 2],
+          ["Improved Channeling", 1]
+        ],
+        "Fire": [
+          ["Improved Fire Blast", 2],
+          ["Incineration", 3],
+          ["Improved Fireball", 5],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Heating Up", 1],
+          ["Master of Elements", 2],
+          ["Critical Mass", 5],
+          ["Fire Power", 3],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Heating Up", "why": "505 DPS lost without it (59% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Scorch", "why": "191 DPS lost without it (22% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Missile Barrage", "why": "183 DPS lost without it (22% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Pyroblast", "why": "139 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ignite", "why": "104 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Critical Mass", "why": "74 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Elemental Precision", "why": "62 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Fire Power", "why": "61 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+2.3% over the best hand draft of the spec, fire-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fire-raid, full raid): 17/31/3 (Fire) at 849.9 DPS; fire-raid 830.4, opt-fire-raid-raid-dps 815.6 in the same fights; 4,304 builds simulated, 2 independent runs reached the top.", "The fire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -49.0%, arcane-dps -26.6%, frostfire-raid -12.0%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Impact -> Improved Channeling (interrupt). Net -0.07% on a third seed."],
+      "open_questions": ["An open-search Fire build: check it against the community's Fire builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05022050010002-23550000130125031-003-7"],
+      "replaces": "fire-raid"
+    },
+    {
+      "id": "arcane-open-raid",
+      "name": "Arcane — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Arcane",
+      "generated": "2026-10-24",
+      "derived": "raid",
+      "summary": "The Arcane raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's arcane-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +6.9% over arcane-blast-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Missile Barrage", 2],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5],
+          ["Arcane Impact", 3],
+          ["Arcane Blast", 1],
+          ["Arcane Meditation", 3],
+          ["Arcane Wrath", 1],
+          ["Presence of Mind", 1],
+          ["Arcane Mind", 5],
+          ["Arcane Instability", 3],
+          ["Arcane Power", 1],
+          ["Improved Channeling", 3]
+        ],
+        "Fire": [
+          ["Incineration", 3],
+          ["Improved Fireball", 5],
+          ["Ignite", 5]
+        ],
+        "Frost": [
+          ["Elemental Precision", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Missile Barrage", "why": "213 DPS lost without it (30% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Blast", "why": "85 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Mind", "why": "77 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Instability", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Focus", "why": "34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Wrath", "why": "34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Impact", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Power", "why": "19 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+6.9% over the best hand draft of the spec, arcane-blast-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (arcane-dps, full raid): 32/16/3 (Arcane) at 717.4 DPS; arcane-blast-raid 671.4 in the same fights; 4,438 builds simulated, 2 independent runs reached the top.", "The arcane-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -10.0%, fire-raid -54.7%, frostfire-raid -53.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Pyroblast.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Pyroblast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Master of Elements -> Improved Channeling (interrupt); Improved Fire Blast -> Improved Channeling (interrupt); Pyroblast -> Improved Channeling (interrupt). Net -0.11% on a third seed."],
+      "open_questions": ["An open-search Arcane build: check it against the community's Arcane builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/0502205003100311531-1355000010001-003-7"],
+      "replaces": "arcane-blast-raid"
+    },
+    {
+      "id": "frostfire-open-raid",
+      "name": "Frostfire — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Fire/Frost",
+      "generated": "2026-10-24",
+      "derived": "raid",
+      "summary": "The Frostfire (a Fire/Frost hybrid) raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's frostfire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +5.1% over frostfire-fingers-of-frost-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arcane": [],
+        "Fire": [
+          ["Improved Fire Blast", 2],
+          ["Incineration", 2],
+          ["Improved Fireball", 5],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Heating Up", 1],
+          ["Master of Elements", 2],
+          ["Critical Mass", 5],
+          ["Fire Power", 3]
+        ],
+        "Frost": [
+          ["Improved Frostbolt", 1],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Frost Channeling", 3],
+          ["Ice Lance", 1],
+          ["Arctic Reach", 2],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2],
+          ["Frost Warding", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Heating Up", "why": "467 DPS lost without it (58% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Pyroblast", "why": "135 DPS lost without it (17% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ignite", "why": "121 DPS lost without it (15% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Scorch", "why": "109 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Critical Mass", "why": "88 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Elemental Precision", "why": "64 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shatter", "why": "55 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Fingers of Frost", "why": "54 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+5.1% over the best hand draft of the spec, frostfire-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frostfire-raid, full raid): 0/29/22 (Frostfire (a Fire/Frost hybrid)) at 801.8 DPS; frostfire-fingers-of-frost-raid 762.8, frostfire-ml-raid 757.9, frostfire-raid 743.0 in the same fights; 4,511 builds simulated, 2 independent runs reached the top.", "The frostfire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -41.1%, fire-raid -31.8%, arcane-dps -52.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Frostbolt, Improved Frost Nova, Improved Blizzard, Ice Lance, Arctic Reach.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Blizzard -> Arctic Reach (range); Improved Frost Nova -> Frost Warding (survival); Improved Frostbolt -> Frost Warding (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Frostfire build: check it against the community's Frostfire builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/-2255000013012503-0235010311103002-7"],
+      "replaces": "frostfire-fingers-of-frost-raid"
     }
   ]
 }

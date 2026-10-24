@@ -2,26 +2,30 @@
  "dummy": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
    {
-    "label": "ml: Arcane",
-    "talents": "050005023110311531-2305-0451",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
+    "label": "open winner",
+    "talents": "0502205003100311531-1335021000002-002"
    },
    {
     "label": "arcane-blast-raid",
-    "talents": "055205003100311531-2305001-005"
+    "talents": "0552205003100301531-2305001-013",
+    "protect_only": true
    },
    {
-    "label": "sim preset: Arcane DPS",
-    "talents": "050215003100311531-2305003202003-"
+    "label": "sim preset: Arcane Frost",
+    "talents": "0552205003100311531-03-0533",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -81,64 +85,139 @@
     "gain_seed2": 0.006030125031904365,
     "candidates": 257,
     "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "insert in the middle: cast Arcane Wrath",
+    "gain_seed1": 0.049992837397971224,
+    "gain_seed2": 0.04790533136385933,
+    "candidates": 295,
+    "pass": 6
+   },
+   {
+    "round": 9,
+    "change": "insert in the middle: if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast",
+    "gain_seed1": 0.008545465689674403,
+    "gain_seed2": 0.01029467548067009,
+    "candidates": 304,
+    "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "insert at the end: cast Frost Blast",
+    "gain_seed1": 0.009548546765754118,
+    "gain_seed2": 0.009432039413651339,
+    "candidates": 323,
+    "pass": 6
+   },
+   {
+    "round": 11,
+    "change": "insert before the filler: cast Robe of the Archmage",
+    "gain_seed1": 0.006168308443597725,
+    "gain_seed2": 0.004838018936914379,
+    "candidates": 339,
+    "pass": 6
+   },
+   {
+    "round": 12,
+    "change": "move down below 'if Missile Barrage is up: cast Arcane Missiles (rank 7)': cast Fire Blast",
+    "gain_seed1": 0.003247724446747924,
+    "gain_seed2": 0.0024990853083401987,
+    "candidates": 346,
+    "pass": 6
+   },
+   {
+    "round": 13,
+    "change": "only with 10s or more of the fight left: if stacks of Arcane Blast \u2265 1.5: cast Frostbolt (rank 10)",
+    "gain_seed1": 0.0015924466353736122,
+    "gain_seed2": 0.0016740625631579409,
+    "candidates": 346,
+    "pass": 6
+   },
+   {
+    "round": 14,
+    "change": "insert before the filler: cast Mana Citrine",
+    "gain_seed1": 0.002455003800690303,
+    "gain_seed2": 0.0033916241510691947,
+    "candidates": 357,
+    "pass": 6
    }
   ],
   "final": {
    "dummy": {
-    "ml: Arcane": {
-     "before": 574.9081710406551,
-     "after": 602.6795327220035,
-     "base": 574.9081710406551,
+    "open winner": {
+     "before": 518.7872617772712,
+     "after": 561.9508504442163,
+     "base": 518.7872617772712,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.10469885,
-     "oom_after": 0.15413824999995
+     "oom_before": 2.445007499998796,
+     "oom_after": 4.874577499999139
     },
     "arcane-blast-raid": {
-     "before": 561.1219496302391,
-     "after": 601.9653857362199,
-     "base": 561.1219496302391,
+     "before": 524.0175652938523,
+     "after": 539.0037903014626,
+     "base": 524.0175652938523,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.11610289999999998,
-     "oom_after": 0.1872558
+     "oom_before": 6.617512499112448,
+     "oom_after": 4.812379998520088
     },
-    "sim preset: Arcane DPS": {
-     "before": 557.5247646749617,
-     "after": 594.4564163704521,
-     "base": 557.5247646749617,
+    "sim preset: Arcane Frost": {
+     "before": 546.3750702859066,
+     "after": 565.4332470565001,
+     "base": 546.3750702859066,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.10693164999999999,
-     "oom_after": 0.10822295
+     "oom_before": 4.801289999995756,
+     "oom_after": 4.977917499998801
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Arcane"
+   ],
+   "required": [
+    "Arcane Blast"
+   ],
+   "rejected": {
+    "structure": 309,
+    "casts": 0,
+    "core_share": 23
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
    {
-    "label": "arcane-blast-raid",
-    "talents": "055205003100311531-2305001-005"
+    "label": "open winner",
+    "talents": "0502205003100311531-1335021000002-002"
    },
    {
-    "label": "sim preset: Arcane DPS",
-    "talents": "050215003100311531-2305003202003-"
+    "label": "arcane-blast-raid",
+    "talents": "0552205003100301531-2305001-013",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Arcane Fire",
+    "talents": "0502205003100311531-230510301001-003",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "arcane-blast-raid",
-   "sim preset: Arcane DPS"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -222,31 +301,158 @@
     "gain_seed2": 0.0031303380364717803,
     "candidates": 309,
     "pass": 6
+   },
+   {
+    "round": 11,
+    "change": "insert at the end: cast Fireball (rank 11)",
+    "gain_seed1": 2.070274057388608,
+    "gain_seed2": 2.0778167538543766,
+    "candidates": 309,
+    "pass": 8
+   },
+   {
+    "round": 12,
+    "change": "insert before the filler: cast Arcane Wrath",
+    "gain_seed1": 0.07317501261327708,
+    "gain_seed2": 0.07409655009007388,
+    "candidates": 329,
+    "pass": 8
+   },
+   {
+    "round": 13,
+    "change": "insert at the end: cast Mana Citrine",
+    "gain_seed1": 0.0015397708018729528,
+    "gain_seed2": 0.0015762538222836575,
+    "candidates": 338,
+    "pass": 8
+   },
+   {
+    "round": 14,
+    "change": "move to the top: cast Arcane Wrath",
+    "gain_seed1": 0.08872836103906168,
+    "gain_seed2": 0.08854391576472143,
+    "candidates": 349,
+    "pass": 9
+   },
+   {
+    "round": 15,
+    "change": "insert in the middle: if (auraIsInactive or time left on Arcane Blast < cast time of Arcane Blast): cast Arcane Blast",
+    "gain_seed1": 0.015325756637056154,
+    "gain_seed2": 0.015374441070266753,
+    "candidates": 349,
+    "pass": 9
+   },
+   {
+    "round": 16,
+    "change": "move to the top: if Missile Barrage is up: cast Arcane Missiles (rank 7)",
+    "gain_seed1": 0.011675401380813133,
+    "gain_seed2": 0.011081889662695188,
+    "candidates": 368,
+    "pass": 9
+   },
+   {
+    "round": 17,
+    "change": "move to the top: use every other cooldown when ready",
+    "gain_seed1": 0.014683124680490822,
+    "gain_seed2": 0.01425554243828464,
+    "candidates": 368,
+    "pass": 9
+   },
+   {
+    "round": 18,
+    "change": "insert before the filler: cast Frost Blast",
+    "gain_seed1": 0.004020489171760788,
+    "gain_seed2": 0.003915860537873073,
+    "candidates": 368,
+    "pass": 9
+   },
+   {
+    "round": 19,
+    "change": "only with 10s or more of the fight left: cast Arcane Wrath",
+    "gain_seed1": 0.002761501813639322,
+    "gain_seed2": 0.0028562788346391255,
+    "candidates": 384,
+    "pass": 9
+   },
+   {
+    "round": 20,
+    "change": "threshold 20s -> 40s: if mana % < 15% and time left in the fight > 20s: cast Evocation",
+    "gain_seed1": 0.0023721935487697188,
+    "gain_seed2": 0.0023036196794778974,
+    "candidates": 398,
+    "pass": 9
+   },
+   {
+    "round": 21,
+    "change": "threshold 40s -> 80s: if mana % < 15% and time left in the fight > 40s: cast Evocation",
+    "gain_seed1": 0.002328392252885836,
+    "gain_seed2": 0.0025067254573039044,
+    "candidates": 398,
+    "pass": 9
+   },
+   {
+    "round": 22,
+    "change": "insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast",
+    "gain_seed1": 0.0016894722846965138,
+    "gain_seed2": 0.0017011418480252782,
+    "candidates": 398,
+    "pass": 9
+   },
+   {
+    "round": 23,
+    "change": "only above 25% mana: if time left in the fight \u2265 3s: cast Arcane Blast",
+    "gain_seed1": 0.002352887277143667,
+    "gain_seed2": 0.0017961471162475373,
+    "candidates": 423,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
-    "arcane-blast-raid": {
-     "before": 678.6526653519228,
-     "after": 693.6861373704097,
-     "base": 678.6526653519228,
+    "open winner": {
+     "before": 620.3709077214431,
+     "after": 714.3911393938214,
+     "base": 620.3709077214431,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.29020239999999997,
-     "oom_after": 0.29020239999999997
+     "oom_before": 49.701239999846536,
+     "oom_after": 5.398797499987587
     },
-    "sim preset: Arcane DPS": {
-     "before": 672.7792420627754,
-     "after": 687.2470737491462,
-     "base": 672.7792420627754,
+    "arcane-blast-raid": {
+     "before": 606.7252097783171,
+     "after": 670.6615559890802,
+     "base": 606.7252097783171,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.24109225,
-     "oom_after": 0.24109225
+     "oom_before": 48.17633249968277,
+     "oom_after": 17.398445000001015
+    },
+    "sim preset: Arcane Fire": {
+     "before": 616.1884572541745,
+     "after": 711.6742538675416,
+     "base": 616.1884572541745,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 48.11384499970402,
+     "oom_after": 5.300310000000549
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Arcane"
+   ],
+   "required": [
+    "Arcane Blast"
+   ],
+   "rejected": {
+    "structure": 388,
+    "casts": 1,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 9
  }
 }

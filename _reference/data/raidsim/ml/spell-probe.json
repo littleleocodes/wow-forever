@@ -5319,8 +5319,8 @@
   "spec": "any",
   "entry": "fire-raid",
   "setting": "raid",
-  "date": "2026-10-09",
-  "base_dps": 687.72,
+  "date": "2026-10-23",
+  "base_dps": 830.12,
   "abilities": [
    {
     "ability": "Combustion",
@@ -5333,7 +5333,7 @@
      "line": "plain",
      "spot": "in the middle",
      "gain_seed1": 0.0,
-     "split": "12/34/5",
+     "split": "17/31/3",
      "vs_spec_build": 0.0
     },
     "kept": false
@@ -5345,8 +5345,8 @@
   "spec": "any",
   "entry": "arcane-dps",
   "setting": "raid",
-  "date": "2026-10-09",
-  "base_dps": 697.31,
+  "date": "2026-10-23",
+  "base_dps": 618.93,
   "abilities": [
    {
     "ability": "Arcane Power",
@@ -5358,25 +5358,9 @@
     "best": {
      "line": "plain",
      "spot": "in the middle",
-     "gain_seed1": -0.0001,
-     "split": "32/12/7",
-     "vs_spec_build": -0.0001
-    },
-    "kept": false
-   },
-   {
-    "ability": "Pyroblast",
-    "talent": "Pyroblast",
-    "spell": 18809,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 8,
-    "best": {
-     "line": "dot not ticking",
-     "spot": "at the end",
-     "gain_seed1": -0.0001,
-     "split": "32/12/7",
-     "vs_spec_build": -0.0001
+     "gain_seed1": -0.0003,
+     "split": "32/17/2",
+     "vs_spec_build": -0.0003
     },
     "kept": false
    }
@@ -5387,22 +5371,22 @@
   "spec": "any",
   "entry": "frostfire-raid",
   "setting": "raid",
-  "date": "2026-10-06",
-  "base_dps": 682.95,
+  "date": "2026-10-23",
+  "base_dps": 800.12,
   "abilities": [
    {
-    "ability": "Combustion",
-    "talent": "Combustion",
-    "spell": 11129,
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
     "builds": "the spec's build",
     "builds_tried": 1,
     "lines_tried": 4,
     "best": {
      "line": "plain",
-     "spot": "in the middle",
-     "gain_seed1": 0.0,
-     "split": "0/34/17",
-     "vs_spec_build": 0.0
+     "spot": "at the end",
+     "gain_seed1": -0.0002,
+     "split": "0/29/22",
+     "vs_spec_build": -0.0002
     },
     "kept": false
    }
@@ -5849,8 +5833,8 @@
   "spec": "any",
   "entry": "frost-raid",
   "setting": "raid",
-  "date": "2026-10-09",
-  "base_dps": 692.32,
+  "date": "2026-10-23",
+  "base_dps": 629.59,
   "abilities": [
    {
     "ability": "Arcane Blast",
@@ -5862,11 +5846,38 @@
     "best": {
      "line": "plain",
      "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "28/0/23",
-     "vs_spec_build": 0.0
+     "gain_seed1": 0.0001,
+     "split": "29/0/22",
+     "vs_spec_build": 0.0001
     },
     "kept": false
+   },
+   {
+    "ability": "Arcane Wrath",
+    "talent": "Arcane Wrath",
+    "spell": 1326082,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0084,
+     "split": "29/0/22",
+     "vs_spec_build": 0.0084,
+     "gain_seed2": 0.0099
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 1326082
+       }
+      }
+     }
+    },
+    "at": 3
    }
   ]
  },

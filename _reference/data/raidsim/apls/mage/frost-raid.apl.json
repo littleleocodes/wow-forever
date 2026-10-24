@@ -4,16 +4,35 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "currentManaPercent": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "60%"
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
+        }
        }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -22,11 +41,27 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   },
   {
    "action": {
     "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 400669
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1240047
+     }
+    }
    }
   },
   {
@@ -62,18 +97,71 @@
   {
    "action": {
     "condition": {
-     "auraIsActive": {
-      "auraId": {
-       "spellId": 400669
+     "or": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraRemainingTime": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 1239700
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraNumStacks": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "spellIsReady": {
+      "spellId": {
+       "spellId": 1326082
       }
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 1240047
+      "spellId": 12043
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -185,6 +273,26 @@
     }
    },
    "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 14152
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1326055
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   }
  ]
 }

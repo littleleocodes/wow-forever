@@ -1373,10 +1373,6 @@
        5
       ],
       [
-       "Reverberation",
-       5
-      ],
-      [
        "Call of Flame",
        3
       ],
@@ -1385,21 +1381,25 @@
        3
       ],
       [
+       "Reverberation",
+       5
+      ],
+      [
        "Elemental Focus",
        1
       ],
       [
-       "Improved Fire Nova",
+       "Trial by Fire",
        2
       ]
      ],
      "Enhancement": [
       [
-       "Thundering Strikes",
+       "Ancestral Knowledge",
        5
       ],
       [
-       "Ancestral Knowledge",
+       "Thundering Strikes",
        5
       ],
       [
@@ -1423,11 +1423,11 @@
        1
       ],
       [
-       "Mental Quickness",
+       "Improved Stormstrike",
        2
       ],
       [
-       "Improved Stormstrike",
+       "Mental Quickness",
        2
       ],
       [
@@ -1444,7 +1444,8 @@
     "split": "19/32/0",
     "dps": 749.02,
     "se": 0.1468,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "19/32/0",
@@ -1479,10 +1480,6 @@
         5
        ],
        [
-        "Reverberation",
-        5
-       ],
-       [
         "Call of Flame",
         3
        ],
@@ -1491,21 +1488,25 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
+        "Ancestral Knowledge",
         5
        ],
        [
-        "Ancestral Knowledge",
+        "Thundering Strikes",
         5
        ],
        [
@@ -1529,11 +1530,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -1549,17 +1550,14 @@
      },
      "split": "19/32/0",
      "dps": 749.02,
-     "se": 0.1468
+     "se": 0.1468,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
         "Convection",
-        5
-       ],
-       [
-        "Reverberation",
         5
        ],
        [
@@ -1571,22 +1569,26 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
-        5
-       ],
-       [
         "Ancestral Knowledge",
         4
+       ],
+       [
+        "Thundering Strikes",
+        5
        ],
        [
         "Mental Dexterity",
@@ -1609,11 +1611,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -1629,7 +1631,8 @@
      },
      "split": "19/32/0",
      "dps": 748.68,
-     "se": 0.1481
+     "se": 0.1481,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     }
    ],
    "runs": [
@@ -2201,10 +2204,6 @@
        5
       ],
       [
-       "Reverberation",
-       5
-      ],
-      [
        "Call of Flame",
        3
       ],
@@ -2213,22 +2212,26 @@
        3
       ],
       [
+       "Reverberation",
+       5
+      ],
+      [
        "Elemental Focus",
        1
       ],
       [
-       "Improved Fire Nova",
+       "Trial by Fire",
        2
       ]
      ],
      "Enhancement": [
       [
-       "Thundering Strikes",
-       5
-      ],
-      [
        "Ancestral Knowledge",
        4
+      ],
+      [
+       "Thundering Strikes",
+       5
       ],
       [
        "Mental Dexterity",
@@ -2251,11 +2254,11 @@
        1
       ],
       [
-       "Mental Quickness",
+       "Improved Stormstrike",
        2
       ],
       [
-       "Improved Stormstrike",
+       "Mental Quickness",
        2
       ],
       [
@@ -2272,7 +2275,8 @@
     "split": "19/32/0",
     "dps": 748.25,
     "se": 0.1503,
-    "iterations": 100000
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "19/32/0",
@@ -2307,10 +2311,6 @@
         5
        ],
        [
-        "Reverberation",
-        5
-       ],
-       [
         "Call of Flame",
         3
        ],
@@ -2319,22 +2319,26 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
-        5
-       ],
-       [
         "Ancestral Knowledge",
         4
+       ],
+       [
+        "Thundering Strikes",
+        5
        ],
        [
         "Mental Dexterity",
@@ -2357,11 +2361,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2377,17 +2381,14 @@
      },
      "split": "19/32/0",
      "dps": 748.25,
-     "se": 0.1503
+     "se": 0.1503,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     },
     {
      "allocation": {
       "Elemental": [
        [
         "Convection",
-        5
-       ],
-       [
-        "Reverberation",
         5
        ],
        [
@@ -2399,21 +2400,25 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
+        "Ancestral Knowledge",
         5
        ],
        [
-        "Ancestral Knowledge",
+        "Thundering Strikes",
         5
        ],
        [
@@ -2437,11 +2442,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -2457,7 +2462,8 @@
      },
      "split": "19/32/0",
      "dps": 748.16,
-     "se": 0.149
+     "se": 0.149,
+     "repair_note": "2026-10-23: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     }
    ],
    "runs": [

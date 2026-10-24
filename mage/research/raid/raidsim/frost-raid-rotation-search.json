@@ -2,8 +2,8 @@
  "dummy": {
   "class": "mage",
   "spec": "frost-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-23",
+  "commit": "30f67f5d2",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
@@ -11,41 +11,46 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "05120501310011053--05450003010003002"
+    "talents": "051221010311201153--2535010001003002"
    },
    {
-    "label": "frost-ml-raid",
-    "talents": "053005003000311--055500031100030025",
+    "label": "opt-frost-raid-raid-dps-extwc",
+    "talents": "050220500310011143-01-0535000301003002",
     "protect_only": true
    },
    {
-    "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024",
+    "label": "sim preset: Arcane Frost",
+    "talents": "0552205003100311531-03-0533",
     "protect_only": true
    },
    {
     "label": "frost-arcane-power-raid",
-    "talents": "055005003000311531--055500031",
+    "talents": "0552005003100311531--053500020001",
     "protect_only": true
    },
    {
     "label": "frost-winters-chill-raid",
-    "talents": "054005003000211--055500033002100105",
+    "talents": "0541005003000201--25353003002100105",
     "protect_only": true
    },
    {
     "label": "frost-fingers-of-frost-raid",
-    "talents": "0530050030003111--055500031100030024",
+    "talents": "05310050030003011--05350003012130024",
     "protect_only": true
    },
    {
     "label": "opt-frost-raid-raid-dps",
-    "talents": "1502050030003111--055500030100031024",
+    "talents": "052200500310011143-01-0535000201013002",
     "protect_only": true
    },
    {
-    "label": "opt-frost-raid-raid-dps-extwc",
-    "talents": "1-2330203-0555000331021301251",
+    "label": "frost-ml-raid",
+    "talents": "0531005003000301--05350003012130025",
+    "protect_only": true
+   },
+   {
+    "label": "arcane-frost-open-raid",
+    "talents": "055220300310000053--0535000301003002",
     "protect_only": true
    }
   ],
@@ -110,92 +115,157 @@
     "gain_seed2": 0.0024623371573211372,
     "candidates": 334,
     "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast",
+    "gain_seed1": 0.10160988547966787,
+    "gain_seed2": 0.10201815688551141,
+    "candidates": 356,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "insert at the end: cast Robe of the Archmage",
+    "gain_seed1": 0.00980424881876818,
+    "gain_seed2": 0.009371717819806058,
+    "candidates": 382,
+    "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "insert in the middle: if Arcane Wrath is ready: cast Presence of Mind",
+    "gain_seed1": 0.007282421218206103,
+    "gain_seed2": 0.007050982840458131,
+    "candidates": 389,
+    "pass": 5
+   },
+   {
+    "round": 11,
+    "change": "move down below 'if Fingers of Frost is up: cast Ice Lance': if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7)",
+    "gain_seed1": 0.0014486466732956949,
+    "gain_seed2": 0.0015489504004677634,
+    "candidates": 397,
+    "pass": 5
+   },
+   {
+    "round": 12,
+    "change": "only above 60% mana: if mana % \u2264 60%: cast Mana Ruby + insert at the end: cast Frost Blast",
+    "gain_seed1": 0.001644973597030086,
+    "gain_seed2": 0.001768225710764293,
+    "candidates": 397,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 575.6635906014023,
-     "after": 605.1076954345235,
-     "base": 575.6635906014023,
+     "before": 527.8684895019317,
+     "after": 576.8105076800545,
+     "base": 527.8684895019317,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.9362224500000185,
-     "oom_after": 1.9868458000000038
-    },
-    "frost-ml-raid": {
-     "before": 591.485251934373,
-     "after": 604.4841033536337,
-     "base": 591.485251934373,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.10684635000000002,
-     "oom_after": 0.14916055000000006
-    },
-    "sim preset: Frost DPS": {
-     "before": 551.4446197535692,
-     "after": 560.7780346153099,
-     "base": 551.4446197535692,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.03588135,
-     "oom_after": 0.05491119999999998
-    },
-    "frost-arcane-power-raid": {
-     "before": 566.7667579389595,
-     "after": 571.5788929315819,
-     "base": 566.7667579389595,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0172828,
-     "oom_after": 0.007787749999999999
-    },
-    "frost-winters-chill-raid": {
-     "before": 543.9160394977301,
-     "after": 546.9836646163475,
-     "base": 543.9160394977301,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0003497,
-     "oom_after": 0.0010249999999999999
-    },
-    "frost-fingers-of-frost-raid": {
-     "before": 587.5829561718159,
-     "after": 601.6494080491815,
-     "base": 587.5829561718159,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0763929,
-     "oom_after": 0.09847710000000001
-    },
-    "opt-frost-raid-raid-dps": {
-     "before": 579.9620280955328,
-     "after": 599.7647079010993,
-     "base": 579.9620280955328,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.8510928499999985,
-     "oom_after": 0.8582783499999996
+     "oom_before": 14.070459999778661,
+     "oom_after": 6.786502499999966
     },
     "opt-frost-raid-raid-dps-extwc": {
-     "before": 545.0999617201594,
-     "after": 549.1980489694149,
-     "base": 545.0999617201594,
+     "before": 548.854548158039,
+     "after": 586.3673111533966,
+     "base": 548.854548158039,
      "before_value": null,
      "after_value": null,
-     "oom_before": 7.252082499999876,
-     "oom_after": 7.253502499999875
+     "oom_before": 0.0052749999996,
+     "oom_after": 8.743237499999994
+    },
+    "sim preset: Arcane Frost": {
+     "before": 515.7431505157981,
+     "after": 581.5796245164267,
+     "base": 515.7431505157981,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.2815399999976,
+     "oom_after": 7.645739999999982
+    },
+    "frost-arcane-power-raid": {
+     "before": 514.5356920307456,
+     "after": 577.0944316437563,
+     "base": 514.5356920307456,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00019499999999999997,
+     "oom_after": 5.418882500000002
+    },
+    "frost-winters-chill-raid": {
+     "before": 436.15358941013045,
+     "after": 441.11096546006155,
+     "base": 436.15358941013045,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.02631,
+     "oom_after": 0.122275
+    },
+    "frost-fingers-of-frost-raid": {
+     "before": 479.9028040857818,
+     "after": 483.6872098331274,
+     "base": 479.9028040857818,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00054,
+     "oom_after": 0.003835
+    },
+    "opt-frost-raid-raid-dps": {
+     "before": 531.750295901,
+     "after": 565.9528637487869,
+     "base": 531.750295901,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.12862499999444998,
+     "oom_after": 9.466639999999973
+    },
+    "frost-ml-raid": {
+     "before": 478.22163309308473,
+     "after": 482.1389597944256,
+     "base": 478.22163309308473,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0009600000000000001,
+     "oom_after": 0.00689
+    },
+    "arcane-frost-open-raid": {
+     "before": 542.9148811322366,
+     "after": 576.4432741728968,
+     "base": 542.9148811322366,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.2506874999875999,
+     "oom_after": 9.982479999999946
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Frost",
+    "Hybrid Arcane/Frost"
+   ],
+   "required": [
+    "Arcane Missiles",
+    "Frostbolt"
+   ],
+   "rejected": {
+    "structure": 403,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-10-02",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "mage",
   "spec": "frost-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-23",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
@@ -203,41 +273,46 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "05120501310011053--05450003010003002"
+    "talents": "051221010311201153--2535010001003002"
    },
    {
-    "label": "frost-ml-raid",
-    "talents": "053005003000311--055500031100030025",
+    "label": "opt-frost-raid-raid-dps-extwc",
+    "talents": "050220500310011143-01-0535000301003002",
     "protect_only": true
    },
    {
-    "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024",
+    "label": "sim preset: Arcane Frost",
+    "talents": "0552205003100311531-03-0533",
     "protect_only": true
    },
    {
     "label": "frost-arcane-power-raid",
-    "talents": "055005003000311531--055500031",
+    "talents": "0552005003100311531--053500020001",
     "protect_only": true
    },
    {
     "label": "frost-winters-chill-raid",
-    "talents": "054005003000211--055500033002100105",
+    "talents": "0541005003000201--25353003002100105",
     "protect_only": true
    },
    {
     "label": "frost-fingers-of-frost-raid",
-    "talents": "0530050030003111--055500031100030024",
+    "talents": "05310050030003011--05350003012130024",
     "protect_only": true
    },
    {
     "label": "opt-frost-raid-raid-dps",
-    "talents": "1502050030003111--055500030100031024",
+    "talents": "052200500310011143-01-0535000201013002",
     "protect_only": true
    },
    {
-    "label": "opt-frost-raid-raid-dps-extwc",
-    "talents": "1-2330203-0555000331021301251",
+    "label": "frost-ml-raid",
+    "talents": "0531005003000301--05350003012130025",
+    "protect_only": true
+   },
+   {
+    "label": "arcane-frost-open-raid",
+    "talents": "055220300310000053--0535000301003002",
     "protect_only": true
    }
   ],
@@ -262,77 +337,118 @@
     "gain_seed2": 0.005444111827739739,
     "candidates": 276,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "spell probe: insert in the middle: cast Arcane Wrath",
+    "gain_seed1": 0.0084,
+    "gain_seed2": 0.0099,
+    "candidates": 4,
+    "pass": 6
+   },
+   {
+    "round": 4,
+    "change": "insert at the top: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast",
+    "gain_seed1": 0.05904157153459422,
+    "gain_seed2": 0.06078501827006022,
+    "candidates": 342,
+    "pass": 7
+   },
+   {
+    "round": 5,
+    "change": "move to the top: if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7)",
+    "gain_seed1": 0.024026025864955614,
+    "gain_seed2": 0.02182701305440382,
+    "candidates": 368,
+    "pass": 7
+   },
+   {
+    "round": 6,
+    "change": "only with 20s or more of the fight left: cast Arcane Wrath",
+    "gain_seed1": 0.004106175609947416,
+    "gain_seed2": 0.004036354128368114,
+    "candidates": 370,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 676.2501792377617,
-     "after": 692.7560866673109,
-     "base": 676.2501792377617,
+     "before": 626.032067241406,
+     "after": 691.2526661576794,
+     "base": 626.032067241406,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.0002525
+    },
+    "opt-frost-raid-raid-dps-extwc": {
+     "before": 622.5200627956993,
+     "after": 680.2498094958232,
+     "base": 622.5200627956993,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "frost-ml-raid": {
-     "before": 673.1081191923093,
-     "after": 682.8990117216208,
-     "base": 673.1081191923093,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Frost DPS": {
-     "before": 631.3290933204299,
-     "after": 635.4592479873623,
-     "base": 631.3290933204299,
+    "sim preset: Arcane Frost": {
+     "before": 586.3285030015201,
+     "after": 692.7226024930685,
+     "base": 586.3285030015201,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-arcane-power-raid": {
-     "before": 646.4020384817271,
-     "after": 650.1533989148411,
-     "base": 646.4020384817271,
+     "before": 584.876466566192,
+     "after": 676.1239810567213,
+     "base": 584.876466566192,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-winters-chill-raid": {
-     "before": 615.9537296742981,
-     "after": 619.5440986041593,
-     "base": 615.9537296742981,
+     "before": 496.57529620173807,
+     "after": 500.67870090813574,
+     "base": 496.57529620173807,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-fingers-of-frost-raid": {
-     "before": 668.948829659896,
-     "after": 680.1545915806853,
-     "base": 668.948829659896,
+     "before": 544.1404672453066,
+     "after": 546.6954987379762,
+     "base": 544.1404672453066,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-frost-raid-raid-dps": {
-     "before": 669.0224100592466,
-     "after": 680.312872661107,
-     "base": 669.0224100592466,
+     "before": 606.2424927491303,
+     "after": 662.5128574564671,
+     "base": 606.2424927491303,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "opt-frost-raid-raid-dps-extwc": {
-     "before": 645.3370993373314,
-     "after": 649.5925589516941,
-     "base": 645.3370993373314,
+    "frost-ml-raid": {
+     "before": 541.975037288096,
+     "after": 544.5312314353157,
+     "base": 541.975037288096,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "arcane-frost-open-raid": {
+     "before": 621.809275645481,
+     "after": 687.3845370642129,
+     "base": 621.809275645481,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -340,7 +456,23 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Frost",
+    "Hybrid Arcane/Frost"
+   ],
+   "required": [
+    "Arcane Missiles",
+    "Frostbolt"
+   ],
+   "rejected": {
+    "structure": 143,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-10-02",
-  "passes": 4
+  "passes": 7
  }
 }

@@ -7,91 +7,294 @@
  ],
  "best": "frostfire-raid",
  "best_entry": "frostfire-raid",
- "best_dps": 556.32,
+ "best_dps": 476.06,
  "any_split": true,
- "date": "2026-10-01",
+ "date": "2026-10-14",
  "gear": {
   "bis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json",
-   "date": "2026-10-02",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 66.4,
+   "date": "2026-10-22",
+   "chosen": "all-slots",
+   "ilvl": 62.5,
    "trinkets": [
-    "Talisman of Ephemeral Power",
-    "Briarwood Reed"
+    "Alchemist's Stone",
+    "Talisman of Ephemeral Power"
    ],
+   "trinket_screen": {
+    "Alchemist's Stone (13503)": 1.0217,
+    "Talisman of Ephemeral Power (18820)": 1.0187,
+    "Weakness Analyzer (272438)": 1.0069,
+    "Serenity Field (272439)": 1.002,
+    "Ankh of Life (1713)": 1.0,
+    "Jewel of the Guard Captain (270225)": 0.9965,
+    "Everlook Delivery Bot (274760)": 0.9935,
+    "Frozen Heart of the Mountain (249469)": 0.9929,
+    "Shard of the Splithooves (10659)": 0.9929,
+    "Enriched Seal (271903)": 0.9926,
+    "Darkspear Voodoo Seal (272061)": 0.9926,
+    "Rune of the Guard Captain (19120)": 0.9906,
+    "Cleansed Vilebranch Medallion (270275)": 0.9906,
+    "Enriched Seal (271905)": 0.9884,
+    "Darkspear Voodoo Seal (272059)": 0.9884,
+    "Dog Whistle (3456)": 0.9832,
+    "Minor Recombobulator (4381)": 0.9832,
+    "Gnomish Universal Remote (7506)": 0.9832,
+    "Demon's Blood (10779)": 0.9832,
+    "Smoking Heart of the Mountain (11811)": 0.9832,
+    "Heart of the Scale (13164)": 0.9832,
+    "Arcanite Dragonling (16022)": 0.9832,
+    "Stormpike Insignia Rank 6 (17904)": 0.9832,
+    "Gyrofreeze Ice Reflector (18634)": 0.9832,
+    "Major Recombobulator (18637)": 0.9832,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9832,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9832,
+    "Essence of the Pure Flame (18815)": 0.9832,
+    "Arena Grand Master (19024)": 0.9832,
+    "Talisman of Arathor (20071)": 0.9832,
+    "Defiler's Talisman (20072)": 0.9832,
+    "Defiler's Talisman (21115)": 0.9832,
+    "Defiler's Talisman (21116)": 0.9832,
+    "Talisman of Arathor (21117)": 0.9832,
+    "Talisman of Arathor (21118)": 0.9832,
+    "Talisman of Arathor (21119)": 0.9832,
+    "Defiler's Talisman (21120)": 0.9832,
+    "Defender of the Timbermaw (21326)": 0.9832,
+    "Molten Heart of the Mountain (249470)": 0.9832,
+    "Dormant Heart of the Mountain (249473)": 0.9832,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9832,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9832,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9832,
+    "Gnomish Poultryizer (260824)": 0.9832,
+    "Volunteer's Lucky Seal (271904)": 0.9832,
+    "Volunteer's Lucky Seal (271906)": 0.9832,
+    "Relentless Raider's Seal (272060)": 0.9832,
+    "Relentless Raider's Seal (272062)": 0.9832,
+    "Adaptive Combat Assistant (272437)": 0.9832,
+    "Defender's Grip Stabilizer (272440)": 0.9832,
+    "Everlook Pathcarver (274759)": 0.9832,
+    "Parachute-Priest Pager (274761)": 0.9832
+   },
    "names": [
-    "Spellweaver's Turban",
+    "Dreadmist Mask",
     "Choker of the Fire Lord",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
-    "Robe of Volatile Power",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Archmage",
     "Rockfury Bracers",
-    "Gloves of the Hypnotic Flame",
-    "Mana Igniting Cord",
-    "Netherwind Pants",
+    "Dreadmist Wraps",
+    "Belt of the Archmage",
+    "Magister's Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
-    "Ring of Spell Power",
+    "Channeler's Ring",
+    "Blessed Band of Light",
+    "Alchemist's Stone",
     "Talisman of Ephemeral Power",
-    "Briarwood Reed",
-    "Azuresong Mageblade",
-    "Scepter of Interminable Focus",
-    "Bonecreeper Stylus"
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0132158807880007,
-    "keep-sets-and-effects": 1.0135124028197926
+    "all-slots": 1.0401811875643114,
+    "keep-sets-and-effects": 1.0401811875643114
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.0101539645201711
+    "all-slots": 1.0401208507646311
    },
    "weights": {
-    "StatArcaneDamage": 0.0022,
-    "StatFireDamage": 0.5271,
-    "StatIntellect": 0.1661,
-    "StatSpellCritRating": 0.3401,
-    "StatSpellDamage": 0.5293,
-    "StatSpellHasteRating": -0.3095,
-    "StatSpellHitRating": 0.7236,
-    "StatSpirit": 0.0107
+    "StatArcaneDamage": 0.0351,
+    "StatCritRating": 0.3661,
+    "StatFireDamage": 0.3836,
+    "StatHasteRating": 0.0338,
+    "StatHitRating": 0.6384,
+    "StatIntellect": 0.3714,
+    "StatSpellDamage": 0.4188,
+    "StatSpellPiercing": 0.5536,
+    "StatSpirit": 0.6184
    },
    "evaluated_on": [
     "frostfire-raid: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Arcanist Crown (not in the database)",
+     "to": "Dreadmist Mask"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Sapphiron Drape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Robe of Volatile Power (not in the database)",
+     "to": "Robe of the Archmage"
+    },
+    {
+     "slot": 6,
+     "from": "Gloves of the Hypnotic Flame (not in the database)",
+     "to": "Dreadmist Wraps"
+    },
+    {
+     "slot": 7,
+     "from": "Mana Igniting Cord (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Netherwind Pants (not in the database)",
+     "to": "Magister's Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Arcanist Boots (not in the database)",
+     "to": "Sorcerer's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Ring of Spell Power",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Rune Band of Wizardry (not in the database)",
+     "to": "Blessed Band of Light"
+    },
+    {
+     "slot": 12,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Alchemist's Stone"
+    },
+    {
+     "slot": 14,
+     "from": "Azuresong Mageblade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Bonecreeper Stylus (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 30f67f5d2",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16795",
+     "item:227808",
+     "item:17078",
+     "item:19145",
+     "item:18808",
+     "item:19136",
+     "item:16915",
+     "item:16800",
+     "item:22339",
+     "item:13968",
+     "item:17103",
+     "item:22329",
+     "item:13938"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Piercing Ice",
+     "Wake of Fire"
+    ],
+    "minutes": 0.6
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-prebis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 61.1,
+   "ilvl": 61.6,
    "trinkets": [
-    "Briarwood Reed",
-    "Eye of the Beast"
+    "Alchemist's Stone",
+    "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Alchemist's Stone (13503)": 1.0198,
+    "Weakness Analyzer (272438)": 1.0058,
+    "Serenity Field (272439)": 1.0008,
+    "Ankh of Life (1713)": 1.0,
+    "Jewel of the Guard Captain (270225)": 0.9958,
+    "Frozen Heart of the Mountain (249469)": 0.9932,
+    "Shard of the Splithooves (10659)": 0.9927,
+    "Rune of the Guard Captain (19120)": 0.991,
+    "Cleansed Vilebranch Medallion (270275)": 0.991,
+    "Enriched Seal (271903)": 0.9908,
+    "Darkspear Voodoo Seal (272061)": 0.9908,
+    "Everlook Delivery Bot (274760)": 0.9903,
+    "Enriched Seal (271905)": 0.9876,
+    "Darkspear Voodoo Seal (272059)": 0.9876,
+    "Dog Whistle (3456)": 0.9825,
+    "Minor Recombobulator (4381)": 0.9825,
+    "Gnomish Universal Remote (7506)": 0.9825,
+    "Demon's Blood (10779)": 0.9825,
+    "Smoking Heart of the Mountain (11811)": 0.9825,
+    "Heart of the Scale (13164)": 0.9825,
+    "Arcanite Dragonling (16022)": 0.9825,
+    "Stormpike Insignia Rank 6 (17904)": 0.9825,
+    "Gyrofreeze Ice Reflector (18634)": 0.9825,
+    "Major Recombobulator (18637)": 0.9825,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9825,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9825,
+    "Talisman of Arathor (20071)": 0.9825,
+    "Defiler's Talisman (20072)": 0.9825,
+    "Defiler's Talisman (21115)": 0.9825,
+    "Defiler's Talisman (21116)": 0.9825,
+    "Talisman of Arathor (21117)": 0.9825,
+    "Talisman of Arathor (21118)": 0.9825,
+    "Talisman of Arathor (21119)": 0.9825,
+    "Defiler's Talisman (21120)": 0.9825,
+    "Defender of the Timbermaw (21326)": 0.9825,
+    "Molten Heart of the Mountain (249470)": 0.9825,
+    "Dormant Heart of the Mountain (249473)": 0.9825,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9825,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9825,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9825,
+    "Gnomish Poultryizer (260824)": 0.9825,
+    "Volunteer's Lucky Seal (271904)": 0.9825,
+    "Volunteer's Lucky Seal (271906)": 0.9825,
+    "Relentless Raider's Seal (272060)": 0.9825,
+    "Relentless Raider's Seal (272062)": 0.9825,
+    "Adaptive Combat Assistant (272437)": 0.9825,
+    "Defender's Grip Stabilizer (272440)": 0.9825,
+    "Everlook Pathcarver (274759)": 0.9825,
+    "Parachute-Priest Pager (274761)": 0.9825
+   },
    "names": [
-    "Spellweaver's Turban",
-    "Nacreous Shell Necklace",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
+    "Dreadmist Mask",
+    "Orb of the Darkmoon",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
     "Robe of the Archmage",
     "Rockfury Bracers",
-    "Inferno Gloves",
-    "Knowledge of the Timbermaw",
-    "Skyshroud Leggings",
+    "Dreadmist Wraps",
+    "Belt of the Archmage",
+    "Magister's Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
-    "Rune Band of Wizardry",
-    "Briarwood Reed",
-    "Eye of the Beast",
-    "Searing Golden Blade",
-    "Scepter of Interminable Focus",
-    "Bonecreeper Stylus"
+    "Channeler's Ring",
+    "Blessed Band of Light",
+    "Alchemist's Stone",
+    "Weakness Analyzer",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "all-slots": 1.0,
@@ -102,18 +305,113 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatArcaneDamage": 0.0024,
-    "StatFireDamage": 0.5321,
-    "StatIntellect": 0.3544,
-    "StatSpellCritRating": 0.409,
-    "StatSpellDamage": 0.5345,
-    "StatSpellHasteRating": -1.0324,
-    "StatSpellHitRating": 0.7278,
-    "StatSpirit": 0.1239
+    "StatArcaneDamage": 0.0341,
+    "StatCritRating": 0.3747,
+    "StatFireDamage": 0.3872,
+    "StatHasteRating": 0.0093,
+    "StatHitRating": 0.6235,
+    "StatIntellect": 0.3186,
+    "StatSpellDamage": 0.4213,
+    "StatSpellPiercing": 0.546,
+    "StatSpirit": 0.6708
    },
    "evaluated_on": [
     "frostfire-raid: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Dreadmist Mask"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Spritecaster Cape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Alanna's Embrace (not in the database)",
+     "to": "Robe of the Archmage"
+    },
+    {
+     "slot": 6,
+     "from": "Inferno Gloves",
+     "to": "Dreadmist Wraps"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Ghostweave Pants",
+     "to": "Magister's Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Maiden's Circle",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Elemental Focus Band",
+     "to": "Blessed Band of Light"
+    },
+    {
+     "slot": 12,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Alchemist's Stone"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 14,
+     "from": "Elemental Attuned Blade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Bonecreeper Stylus (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 30f67f5d2",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:227808",
+     "item:11623",
+     "item:13314",
+     "item:228190",
+     "item:12930",
+     "item:13968",
+     "item:20698",
+     "item:22329",
+     "item:13938"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Piercing Ice",
+     "Wake of Fire"
+    ],
+    "minutes": 0.6
+   }
   }
  },
  "search": {
@@ -122,7 +420,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "dummy",
    "entry": "frostfire-raid",
-   "date": "2026-10-01",
+   "date": "2026-10-14",
    "constraint": "spec field (entry rotation)",
    "protected": [],
    "entries_screened": {},
@@ -131,20 +429,11 @@
    ],
    "winner": {
     "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       1
-      ],
-      [
-       "Improved Channeling",
-       2
-      ]
-     ],
+     "Arcane": [],
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
@@ -159,7 +448,15 @@
        5
       ],
       [
+       "Flame Throwing",
+       2
+      ],
+      [
        "Impact",
+       1
+      ],
+      [
+       "Burning Soul",
        1
       ],
       [
@@ -171,12 +468,12 @@
        3
       ],
       [
-       "Hot Streak",
+       "Heating Up",
        1
       ],
       [
        "Master of Elements",
-       2
+       3
       ],
       [
        "Critical Mass",
@@ -210,71 +507,247 @@
       ]
      ]
     },
-    "split": "3/32/16",
-    "dps": 563.27,
-    "se": 0.139,
+    "split": "0/35/16",
+    "dps": 496.43,
+    "se": 0.1374,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "2/32/17",
-    "dps": 563.27,
-    "se": 0.139,
+    "split": "0/34/17",
+    "dps": 496.43,
+    "se": 0.1374,
     "differs": [
      [
-      "Arcane Focus",
+      "Flame Throwing",
       1
      ],
      [
-      "Arctic Reach",
-      1
+      "Flame Throwing",
+      2
      ],
      [
-      "Blast Wave",
-      1
-     ],
-     [
-      "Impact",
+      "Ice Lance",
       1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        2
+       ],
+       [
+        "Impact",
+        1
+       ],
+       [
+        "Burning Soul",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ]
+      ]
+     },
+     "split": "0/35/16",
+     "dps": 496.43,
+     "se": 0.1374
+    },
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        1
+       ],
+       [
+        "Impact",
+        1
+       ],
+       [
+        "Burning Soul",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ]
+      ]
+     },
+     "split": "0/34/17",
+     "dps": 496.43,
+     "se": 0.1374
+    }
+   ],
    "runs": [
     {
      "entry": "frostfire-raid",
      "run": 1,
-     "simulated": 1204,
-     "best_screen": 562.55,
-     "best_split": "2/33/16",
+     "simulated": 1408,
+     "best_screen": 496.45,
+     "best_split": "0/35/16",
      "trace": [
       {
        "round": 0,
-       "simulated": 404,
-       "best": 562.55
+       "simulated": 408,
+       "best": 493.3
       },
       {
        "round": 1,
-       "simulated": 604,
-       "best": 562.55,
-       "predicted_top": 559.25
+       "simulated": 608,
+       "best": 496.45,
+       "predicted_top": 489.58
       },
       {
        "round": 2,
-       "simulated": 804,
-       "best": 562.55,
-       "predicted_top": 561.53
+       "simulated": 808,
+       "best": 496.45,
+       "predicted_top": 494.99
       },
       {
        "round": 3,
-       "simulated": 1004,
-       "best": 562.55,
-       "predicted_top": 561.67
+       "simulated": 1008,
+       "best": 496.45,
+       "predicted_top": 496.08
       },
       {
        "round": 4,
-       "simulated": 1204,
-       "best": 562.55,
-       "predicted_top": 562.03
+       "simulated": 1208,
+       "best": 496.45,
+       "predicted_top": 496.4
+      },
+      {
+       "round": 5,
+       "simulated": 1408,
+       "best": 496.45,
+       "predicted_top": 496.43
       }
      ],
      "best_stage1_gap": 0.0,
@@ -283,145 +756,151 @@
     {
      "entry": "frostfire-raid",
      "run": 2,
-     "simulated": 1217,
-     "best_screen": 562.03,
-     "best_split": "2/32/17",
+     "simulated": 1406,
+     "best_screen": 493.35,
+     "best_split": "0/34/17",
      "trace": [
       {
        "round": 0,
-       "simulated": 417,
-       "best": 562.03
+       "simulated": 406,
+       "best": 492.84
       },
       {
        "round": 1,
-       "simulated": 617,
-       "best": 562.03,
-       "predicted_top": 555.29
+       "simulated": 606,
+       "best": 493.35,
+       "predicted_top": 487.61
       },
       {
        "round": 2,
-       "simulated": 817,
-       "best": 562.03,
-       "predicted_top": 561.17
+       "simulated": 806,
+       "best": 493.35,
+       "predicted_top": 492.51
       },
       {
        "round": 3,
-       "simulated": 1017,
-       "best": 562.03,
-       "predicted_top": 561.96
+       "simulated": 1006,
+       "best": 493.35,
+       "predicted_top": 493.1
       },
       {
        "round": 4,
-       "simulated": 1217,
-       "best": 562.03,
-       "predicted_top": 562.03
+       "simulated": 1206,
+       "best": 493.35,
+       "predicted_top": 493.26
+      },
+      {
+       "round": 5,
+       "simulated": 1406,
+       "best": 493.35,
+       "predicted_top": 493.34
       }
      ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
+     "best_stage1_gap": -0.0073,
+     "agrees_with_winner": false
     }
    ],
-   "runs_agree": 2,
+   "runs_agree": 1,
    "race": [
     {
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      563.0,
-      563.0,
-      563.0,
-      563.0,
-      563.0,
-      563.0,
-      563.0,
-      561.64,
-      561.64,
-      561.64,
-      561.64,
-      561.64
+      496.55,
+      496.55,
+      496.55,
+      496.55,
+      496.55,
+      496.55,
+      492.92,
+      492.92,
+      492.92,
+      492.92,
+      492.92,
+      492.92
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      563.08,
-      563.08,
-      563.08,
-      563.08,
-      563.08
+      496.26,
+      496.26,
+      496.26,
+      496.26,
+      496.26
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      563.27,
-      563.27
+      496.43,
+      496.43
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 400,
+     "neighbours": 476,
      "best_gap": 0.0,
-     "best_move": "1 Arcane Focus -> Shatter"
+     "best_move": "1 Impact -> Shatter"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Combustion",
-     "importance": 0.3862
-    },
-    {
      "feature": "Fire Power",
-     "importance": 0.1537
-    },
-    {
-     "feature": "Hot Streak",
-     "importance": 0.1488
+     "importance": 0.3374
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.0983
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0633
+     "importance": 0.1996
     },
     {
      "feature": "Improved Scorch",
-     "importance": 0.032
+     "importance": 0.0962
+    },
+    {
+     "feature": "Combustion",
+     "importance": 0.0849
+    },
+    {
+     "feature": "Frost Channeling",
+     "importance": 0.0519
+    },
+    {
+     "feature": "Heating Up",
+     "importance": 0.0473
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0444
     },
     {
      "feature": "Ice Shards",
-     "importance": 0.0234
-    },
-    {
-     "feature": "Piercing Ice",
-     "importance": 0.0211
-    },
-    {
-     "feature": "Ignite",
-     "importance": 0.0177
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.0086
-    },
-    {
-     "feature": "Pyroblast",
-     "importance": 0.0072
+     "importance": 0.0175
     },
     {
      "feature": "Frost points",
-     "importance": 0.0068
+     "importance": 0.0174
+    },
+    {
+     "feature": "Ignite",
+     "importance": 0.014
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0125
     }
    ],
-   "simulated_builds": 2841,
-   "simulated_fights": 4094000,
-   "minutes": 1.9,
+   "simulated_builds": 3282,
+   "simulated_fights": 4687000,
+   "minutes": 2.7,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
   },
   "bis-dummy": {
@@ -429,7 +908,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "dummy",
    "entry": "frostfire-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "spec field (entry rotation)",
    "protected": [],
    "entries_screened": {},
@@ -438,20 +917,15 @@
    ],
    "winner": {
     "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       1
-      ]
-     ],
+     "Arcane": [],
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
-       2
+       3
       ],
       [
        "Improved Fireball",
@@ -463,6 +937,10 @@
       ],
       [
        "Flame Throwing",
+       1
+      ],
+      [
+       "Burning Soul",
        2
       ],
       [
@@ -474,7 +952,7 @@
        3
       ],
       [
-       "Hot Streak",
+       "Heating Up",
        1
       ],
       [
@@ -517,295 +995,18 @@
       ]
      ]
     },
-    "split": "1/34/16",
-    "dps": 627.08,
-    "se": 0.235,
+    "split": "0/35/16",
+    "dps": 502.25,
+    "se": 0.1371,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "1/34/16",
-    "dps": 627.06,
-    "se": 0.235,
+    "split": "0/35/16",
+    "dps": 500.81,
+    "se": 0.1379,
     "differs": [
      [
-      "Blast Wave",
-      1
-     ],
-     [
-      "Burning Soul",
-      2
-     ],
-     [
-      "Wake of Fire",
-      1
-     ],
-     [
-      "Wake of Fire",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "frostfire-raid",
-     "run": 1,
-     "simulated": 1206,
-     "best_screen": 630.35,
-     "best_split": "1/34/16",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 406,
-       "best": 630.27
-      },
-      {
-       "round": 1,
-       "simulated": 606,
-       "best": 630.35,
-       "predicted_top": 625.97
-      },
-      {
-       "round": 2,
-       "simulated": 806,
-       "best": 630.35,
-       "predicted_top": 629.98
-      },
-      {
-       "round": 3,
-       "simulated": 1006,
-       "best": 630.35,
-       "predicted_top": 630.25
-      },
-      {
-       "round": 4,
-       "simulated": 1206,
-       "best": 630.35,
-       "predicted_top": 630.27
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      625.96,
-      625.93,
-      625.93,
-      625.93,
-      625.93,
-      625.93
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      626.71,
-      626.7,
-      626.7,
-      626.7,
-      626.7
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      627.08,
-      627.06
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 470,
-     "best_gap": 0.0011,
-     "best_move": "2 Incineration -> Arcane Focus",
-     "raced": [
-      "2 Incineration -> Arcane Focus"
-     ],
-     "confirmed_gap": 0.0006
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Combustion",
-     "importance": 0.3612
-    },
-    {
-     "feature": "Hot Streak",
-     "importance": 0.2791
-    },
-    {
-     "feature": "Fire Power",
-     "importance": 0.1076
-    },
-    {
-     "feature": "Ice Shards",
-     "importance": 0.046
-    },
-    {
-     "feature": "Critical Mass",
-     "importance": 0.0434
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0312
-    },
-    {
-     "feature": "Improved Scorch",
-     "importance": 0.0269
-    },
-    {
-     "feature": "Piercing Ice",
-     "importance": 0.0202
-    },
-    {
-     "feature": "Incineration",
-     "importance": 0.0155
-    },
-    {
-     "feature": "Wake of Fire",
-     "importance": 0.0144
-    },
-    {
-     "feature": "Frost points",
-     "importance": 0.0127
-    },
-    {
-     "feature": "Frost Channeling",
-     "importance": 0.0079
-    }
-   ],
-   "simulated_builds": 1692,
-   "simulated_fights": 3089000,
-   "minutes": 1.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "mage",
-   "spec": "Hybrid Fire/Frost",
-   "setting": "raid",
-   "entry": "frostfire-raid",
-   "date": "2026-10-02",
-   "constraint": "spec field (entry rotation)",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "frostfire-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Arcane": [
-      [
-       "Improved Channeling",
-       1
-      ]
-     ],
-     "Fire": [
-      [
-       "Wake of Fire",
-       1
-      ],
-      [
-       "Improved Fireball",
-       5
-      ],
-      [
-       "Ignite",
-       5
-      ],
-      [
-       "Flame Throwing",
-       2
-      ],
-      [
-       "Impact",
-       3
-      ],
-      [
-       "Improved Flamestrike",
-       1
-      ],
-      [
-       "Pyroblast",
-       1
-      ],
-      [
-       "Improved Scorch",
-       3
-      ],
-      [
-       "Hot Streak",
-       1
-      ],
-      [
-       "Critical Mass",
-       3
-      ],
-      [
-       "Fire Power",
-       5
-      ],
-      [
-       "Combustion",
-       1
-      ]
-     ],
-     "Frost": [
-      [
-       "Elemental Precision",
-       5
-      ],
-      [
-       "Ice Shards",
-       5
-      ],
-      [
-       "Frostbite",
-       1
-      ],
-      [
-       "Piercing Ice",
-       3
-      ],
-      [
-       "Frost Channeling",
-       3
-      ],
-      [
-       "Ice Lance",
-       1
-      ],
-      [
-       "Arctic Reach",
-       1
-      ]
-     ]
-    },
-    "split": "1/31/19",
-    "dps": 739.62,
-    "se": 0.23,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "3/31/17",
-    "dps": 739.62,
-    "se": 0.23,
-    "differs": [
-     [
-      "Blast Wave",
-      1
-     ],
-     [
-      "Burning Soul",
+      "Flame Throwing",
       1
      ],
      [
@@ -813,88 +1014,214 @@
       2
      ],
      [
-      "Frostbite",
+      "Wake of Fire",
       1
-     ],
-     [
-      "Ice Lance",
-      1
-     ],
-     [
-      "Impact",
-      3
-     ],
-     [
-      "Improved Channeling",
-      1
-     ],
-     [
-      "Improved Channeling",
-      3
-     ],
-     [
-      "Improved Fire Ward",
-      2
-     ],
-     [
-      "Improved Flamestrike",
-      1
-     ],
-     [
-      "Improved Flamestrike",
-      2
      ]
     ]
    },
-   "gap_to_runner_up": 0.0,
+   "gap_to_runner_up": 0.0029,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        1
+       ],
+       [
+        "Burning Soul",
+        2
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Blast Wave",
+        1
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ]
+      ]
+     },
+     "split": "0/35/16",
+     "dps": 502.25,
+     "se": 0.1371
+    },
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        2
+       ],
+       [
+        "Burning Soul",
+        2
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Blast Wave",
+        1
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ]
+      ]
+     },
+     "split": "0/35/16",
+     "dps": 500.81,
+     "se": 0.1379
+    }
+   ],
    "runs": [
     {
      "entry": "frostfire-raid",
      "run": 1,
-     "simulated": 1617,
-     "best_screen": 743.13,
-     "best_split": "1/31/19",
+     "simulated": 1210,
+     "best_screen": 501.12,
+     "best_split": "0/35/16",
      "trace": [
       {
        "round": 0,
-       "simulated": 417,
-       "best": 736.44
+       "simulated": 410,
+       "best": 501.12
       },
       {
        "round": 1,
-       "simulated": 617,
-       "best": 736.56,
-       "predicted_top": 729.08
+       "simulated": 610,
+       "best": 501.12,
+       "predicted_top": 498.05
       },
       {
        "round": 2,
-       "simulated": 817,
-       "best": 740.42,
-       "predicted_top": 735.75
+       "simulated": 810,
+       "best": 501.12,
+       "predicted_top": 500.95
       },
       {
        "round": 3,
-       "simulated": 1017,
-       "best": 743.12,
-       "predicted_top": 737.84
+       "simulated": 1010,
+       "best": 501.12,
+       "predicted_top": 501.11
       },
       {
        "round": 4,
-       "simulated": 1217,
-       "best": 743.12,
-       "predicted_top": 740.59
-      },
-      {
-       "round": 5,
-       "simulated": 1417,
-       "best": 743.13,
-       "predicted_top": 743.03
-      },
-      {
-       "round": 6,
-       "simulated": 1617,
-       "best": 743.13,
-       "predicted_top": 743.12
+       "simulated": 1210,
+       "best": 501.12,
+       "predicted_top": 501.12
       }
      ],
      "best_stage1_gap": 0.0,
@@ -907,95 +1234,524 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      739.49,
-      739.49,
-      739.49,
-      739.49,
-      739.49,
-      739.49
+      501.32,
+      501.32,
+      501.32,
+      501.32,
+      501.32,
+      501.32
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      738.85,
-      738.85,
-      738.85,
-      738.85,
-      738.85
+      500.44,
+      500.44,
+      500.44,
+      500.44,
+      500.44
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      739.62,
-      739.62
+      500.81,
+      500.81
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      502.25,
+      500.81
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 311,
-     "best_gap": 0.0002,
-     "best_move": "1 Frost Channeling -> Wake of Fire"
+     "neighbours": 469,
+     "best_gap": 0.004,
+     "best_move": "1 Blast Wave -> Wake of Fire",
+     "raced": [
+      "1 Blast Wave -> Wake of Fire",
+      "1 Burning Soul -> Wake of Fire",
+      "1 Flame Throwing -> Wake of Fire"
+     ],
+     "confirmed_gap": 0.0025
+    },
+    {
+     "neighbours": 475,
+     "best_gap": 0.0,
+     "best_move": "1 Blast Wave -> Shatter"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Combustion",
-     "importance": 0.3698
-    },
-    {
      "feature": "Fire Power",
-     "importance": 0.1829
+     "importance": 0.2777
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.1095
-    },
-    {
-     "feature": "Hot Streak",
-     "importance": 0.1003
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0763
-    },
-    {
-     "feature": "Ice Shards",
-     "importance": 0.0631
-    },
-    {
-     "feature": "Piercing Ice",
-     "importance": 0.027
+     "importance": 0.2623
     },
     {
      "feature": "Improved Scorch",
-     "importance": 0.0263
+     "importance": 0.1436
+    },
+    {
+     "feature": "Heating Up",
+     "importance": 0.0624
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0431
+    },
+    {
+     "feature": "Frost Channeling",
+     "importance": 0.042
+    },
+    {
+     "feature": "Combustion",
+     "importance": 0.0388
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0178
+    },
+    {
+     "feature": "Piercing Ice",
+     "importance": 0.013
+    },
+    {
+     "feature": "Wake of Fire",
+     "importance": 0.0117
+    },
+    {
+     "feature": "Ice Shards",
+     "importance": 0.0116
     },
     {
      "feature": "Frost points",
-     "importance": 0.0103
+     "importance": 0.0108
+    }
+   ],
+   "simulated_builds": 2174,
+   "simulated_fights": 4678000,
+   "minutes": 2.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "mage",
+   "spec": "Hybrid Fire/Frost",
+   "setting": "raid",
+   "entry": "frostfire-raid",
+   "date": "2026-10-14",
+   "constraint": "spec field (entry rotation)",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "frostfire-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [],
+     "Fire": [
+      [
+       "Wake of Fire",
+       1
+      ],
+      [
+       "Incineration",
+       3
+      ],
+      [
+       "Improved Fireball",
+       5
+      ],
+      [
+       "Ignite",
+       5
+      ],
+      [
+       "Pyroblast",
+       1
+      ],
+      [
+       "Improved Scorch",
+       3
+      ],
+      [
+       "Heating Up",
+       1
+      ],
+      [
+       "Master of Elements",
+       3
+      ],
+      [
+       "Critical Mass",
+       3
+      ],
+      [
+       "Fire Power",
+       4
+      ]
+     ],
+     "Frost": [
+      [
+       "Elemental Precision",
+       5
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Piercing Ice",
+       3
+      ],
+      [
+       "Frost Channeling",
+       3
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "0/29/22",
+    "dps": 688.8,
+    "se": 0.1824,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "0/29/22",
+    "dps": 687.97,
+    "se": 0.1818,
+    "differs": [
+     [
+      "Flame Throwing",
+      1
+     ],
+     [
+      "Wake of Fire",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0012,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        4
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "0/29/22",
+     "dps": 688.8,
+     "se": 0.1824
+    },
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        4
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "0/29/22",
+     "dps": 687.97,
+     "se": 0.1818
+    }
+   ],
+   "runs": [
+    {
+     "entry": "frostfire-raid",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 689.58,
+     "best_split": "0/29/22",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 689.02
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 689.58,
+       "predicted_top": 668.51
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 689.58,
+       "predicted_top": 679.18
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 689.58,
+       "predicted_top": 682.69
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 689.58,
+       "predicted_top": 682.29
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      687.95,
+      687.19,
+      687.19,
+      687.19,
+      687.19,
+      682.86
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      688.51,
+      687.76,
+      687.76,
+      687.76,
+      687.76
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      688.8,
+      687.97
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 265,
+     "best_gap": -0.0006,
+     "best_move": "1 Wake of Fire -> Improved Flamestrike"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Fire Power",
+     "importance": 0.336
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.1172
+    },
+    {
+     "feature": "Improved Scorch",
+     "importance": 0.0888
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0803
+    },
+    {
+     "feature": "Ice Shards",
+     "importance": 0.0655
+    },
+    {
+     "feature": "Frost Channeling",
+     "importance": 0.0462
+    },
+    {
+     "feature": "Heating Up",
+     "importance": 0.0371
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0277
+    },
+    {
+     "feature": "Impact",
+     "importance": 0.0266
     },
     {
      "feature": "Ignite",
-     "importance": 0.0053
+     "importance": 0.0233
     },
     {
-     "feature": "Arcane points",
-     "importance": 0.0047
+     "feature": "Wake of Fire",
+     "importance": 0.0224
     },
     {
-     "feature": "Pyroblast",
-     "importance": 0.0029
+     "feature": "Master of Elements",
+     "importance": 0.0158
     }
    ],
-   "simulated_builds": 1942,
-   "simulated_fights": 2963000,
-   "minutes": 1.6,
+   "simulated_builds": 1479,
+   "simulated_fights": 2408000,
+   "minutes": 1.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
   },
   "prebis-dummy": {
@@ -1003,7 +1759,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "dummy",
    "entry": "frostfire-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-15",
    "constraint": "spec field (entry rotation)",
    "protected": [],
    "entries_screened": {},
@@ -1015,7 +1771,27 @@
      "Arcane": [
       [
        "Arcane Focus",
+       5
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Resilience",
+       2
+      ],
+      [
+       "Arcane Impact",
        3
+      ],
+      [
+       "Arcane Meditation",
+       3
+      ],
+      [
+       "Missile Barrage",
+       1
       ]
      ],
      "Fire": [
@@ -1025,7 +1801,7 @@
       ],
       [
        "Incineration",
-       1
+       3
       ],
       [
        "Improved Fireball",
@@ -1036,14 +1812,6 @@
        5
       ],
       [
-       "Flame Throwing",
-       2
-      ],
-      [
-       "Impact",
-       1
-      ],
-      [
        "Pyroblast",
        1
       ],
@@ -1052,20 +1820,16 @@
        3
       ],
       [
-       "Hot Streak",
+       "Heating Up",
        1
       ],
       [
        "Master of Elements",
-       1
+       2
       ],
       [
        "Critical Mass",
        3
-      ],
-      [
-       "Blast Wave",
-       1
       ],
       [
        "Fire Power",
@@ -1079,43 +1843,31 @@
      "Frost": [
       [
        "Elemental Precision",
-       5
-      ],
-      [
-       "Ice Shards",
-       5
-      ],
-      [
-       "Frostbite",
        1
-      ],
-      [
-       "Piercing Ice",
-       3
-      ],
-      [
-       "Frost Channeling",
-       2
       ]
      ]
     },
-    "split": "3/32/16",
-    "dps": 602.49,
-    "se": 0.189,
+    "split": "19/31/1",
+    "dps": 461.85,
+    "se": 0.1108,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "3/34/14",
-    "dps": 601.74,
-    "se": 0.188,
+    "split": "19/31/1",
+    "dps": 459.46,
+    "se": 0.1103,
     "differs": [
      [
-      "Frost Channeling",
+      "Improved Scorch",
       2
      ],
      [
+      "Improved Scorch",
+      3
+     ],
+     [
       "Master of Elements",
-      1
+      2
      ],
      [
       "Master of Elements",
@@ -1123,43 +1875,215 @@
      ]
     ]
    },
-   "gap_to_runner_up": 0.0012,
+   "gap_to_runner_up": 0.0052,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Resilience",
+        2
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        2
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        2
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        1
+       ]
+      ]
+     },
+     "split": "19/31/1",
+     "dps": 461.85,
+     "se": 0.1108
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Resilience",
+        2
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        2
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        2
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        1
+       ]
+      ]
+     },
+     "split": "19/31/1",
+     "dps": 459.46,
+     "se": 0.1103
+    }
+   ],
    "runs": [
     {
      "entry": "frostfire-raid",
      "run": 1,
-     "simulated": 1209,
-     "best_screen": 603.24,
-     "best_split": "1/33/17",
+     "simulated": 1203,
+     "best_screen": 458.71,
+     "best_split": "19/31/1",
      "trace": [
       {
        "round": 0,
-       "simulated": 409,
-       "best": 599.23
+       "simulated": 403,
+       "best": 454.86
       },
       {
        "round": 1,
-       "simulated": 609,
-       "best": 601.44,
-       "predicted_top": 594.64
+       "simulated": 603,
+       "best": 454.86,
+       "predicted_top": 447.52
       },
       {
        "round": 2,
-       "simulated": 809,
-       "best": 601.44,
-       "predicted_top": 598.77
+       "simulated": 803,
+       "best": 455.03,
+       "predicted_top": 451.34
       },
       {
        "round": 3,
-       "simulated": 1009,
-       "best": 602.61,
-       "predicted_top": 600.44
+       "simulated": 1003,
+       "best": 458.33,
+       "predicted_top": 451.66
       },
       {
        "round": 4,
-       "simulated": 1209,
-       "best": 603.24,
-       "predicted_top": 602.14
+       "simulated": 1203,
+       "best": 458.71,
+       "predicted_top": 455.25
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1172,121 +2096,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      601.96,
-      601.87,
-      601.87,
-      601.16,
-      601.06,
-      600.25
+      458.91,
+      458.75,
+      458.75,
+      458.75,
+      458.58,
+      458.58
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      601.46,
-      601.37,
-      601.37,
-      600.65,
-      600.59
+      459.58,
+      459.41,
+      459.41,
+      459.41,
+      459.23
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      601.74,
-      601.65
+      459.46,
+      459.29
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      602.49,
-      601.74
+      461.85,
+      459.46
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 439,
-     "best_gap": 0.0025,
-     "best_move": "1 Master of Elements -> Frost Channeling",
+     "neighbours": 238,
+     "best_gap": 0.0052,
+     "best_move": "1 Master of Elements -> Improved Scorch",
      "raced": [
-      "1 Master of Elements -> Frost Channeling",
-      "2 Master of Elements -> Frost Channeling",
-      "3 Master of Elements -> Frost Channeling"
+      "1 Master of Elements -> Improved Scorch",
+      "1 Arcane Meditation -> Improved Scorch"
      ],
-     "confirmed_gap": 0.0015
+     "confirmed_gap": 0.006
     },
     {
-     "neighbours": 451,
-     "best_gap": 0.0017,
-     "best_move": "1 Incineration -> Arcane Focus",
-     "raced": [
-      "1 Incineration -> Arcane Focus",
-      "1 Incineration -> Shatter",
-      "1 Incineration -> Ice Block",
-      "1 Incineration -> Arctic Reach"
-     ],
-     "confirmed_gap": 0.0007
+     "neighbours": 238,
+     "best_gap": 0.0,
+     "best_move": "2 Arcane Resilience -> Arcane Geometry"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Combustion",
-     "importance": 0.4135
-    },
-    {
-     "feature": "Hot Streak",
-     "importance": 0.2226
-    },
-    {
      "feature": "Fire Power",
-     "importance": 0.1161
+     "importance": 0.2604
+    },
+    {
+     "feature": "Combustion",
+     "importance": 0.1766
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.0713
-    },
-    {
-     "feature": "Ice Shards",
-     "importance": 0.0381
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0328
+     "importance": 0.1608
     },
     {
      "feature": "Improved Scorch",
-     "importance": 0.0292
+     "importance": 0.153
     },
     {
-     "feature": "Frost points",
-     "importance": 0.0186
+     "feature": "Heating Up",
+     "importance": 0.0382
     },
     {
-     "feature": "Piercing Ice",
-     "importance": 0.0183
+     "feature": "Arcane Blast",
+     "importance": 0.0358
     },
     {
-     "feature": "Arcane points",
-     "importance": 0.0135
+     "feature": "Improved Frostbolt",
+     "importance": 0.0241
     },
     {
-     "feature": "Ignite",
-     "importance": 0.0098
+     "feature": "Fire points",
+     "importance": 0.0224
     },
     {
      "feature": "Impact",
-     "importance": 0.0015
+     "importance": 0.0181
+    },
+    {
+     "feature": "Flame Throwing",
+     "importance": 0.013
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0099
+    },
+    {
+     "feature": "Wake of Fire",
+     "importance": 0.009
     }
    ],
-   "simulated_builds": 2125,
-   "simulated_fights": 4765000,
-   "minutes": 1.8,
+   "simulated_builds": 1698,
+   "simulated_fights": 3237000,
+   "minutes": 3.3,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-prebis.gear.json"
   },
   "prebis-raid": {
@@ -1294,7 +2210,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "raid",
    "entry": "frostfire-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-15",
    "constraint": "spec field (entry rotation)",
    "protected": [],
    "entries_screened": {},
@@ -1303,16 +2219,11 @@
    ],
    "winner": {
     "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       3
-      ]
-     ],
+     "Arcane": [],
      "Fire": [
       [
-       "Wake of Fire",
-       2
+       "Incineration",
+       3
       ],
       [
        "Improved Fireball",
@@ -1324,10 +2235,6 @@
       ],
       [
        "Flame Throwing",
-       2
-      ],
-      [
-       "Impact",
        1
       ],
       [
@@ -1339,28 +2246,20 @@
        3
       ],
       [
-       "Hot Streak",
+       "Heating Up",
        1
       ],
       [
        "Master of Elements",
-       1
+       3
       ],
       [
        "Critical Mass",
        3
       ],
       [
-       "Blast Wave",
-       1
-      ],
-      [
        "Fire Power",
-       5
-      ],
-      [
-       "Combustion",
-       1
+       4
       ]
      ],
      "Frost": [
@@ -1373,112 +2272,246 @@
        5
       ],
       [
-       "Frostbite",
-       1
-      ],
-      [
        "Piercing Ice",
        3
       ],
       [
        "Frost Channeling",
-       2
+       3
       ],
       [
        "Ice Lance",
        1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
       ]
      ]
     },
-    "split": "3/31/17",
-    "dps": 721.57,
-    "se": 0.221,
+    "split": "0/29/22",
+    "dps": 619.2,
+    "se": 0.1689,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "1/35/15",
-    "dps": 721.28,
-    "se": 0.22,
+    "split": "0/29/22",
+    "dps": 618.79,
+    "se": 0.1704,
     "differs": [
      [
-      "Arcane Focus",
+      "Flame Throwing",
       1
      ],
      [
-      "Arcane Focus",
-      3
-     ],
-     [
-      "Blast Wave",
+      "Wake of Fire",
       1
-     ],
-     [
-      "Burning Soul",
-      1
-     ],
-     [
-      "Frost Channeling",
-      2
-     ],
-     [
-      "Ice Lance",
-      1
-     ],
-     [
-      "Improved Blizzard",
-      1
-     ],
-     [
-      "Improved Fire Ward",
-      2
-     ],
-     [
-      "Master of Elements",
-      1
-     ],
-     [
-      "Master of Elements",
-      3
      ]
     ]
    },
-   "gap_to_runner_up": 0.0004,
+   "gap_to_runner_up": 0.0007,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Flame Throwing",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        4
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "0/29/22",
+     "dps": 619.2,
+     "se": 0.1689
+    },
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        4
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "0/29/22",
+     "dps": 618.79,
+     "se": 0.1704
+    }
+   ],
    "runs": [
     {
      "entry": "frostfire-raid",
      "run": 1,
-     "simulated": 1215,
-     "best_screen": 724.38,
-     "best_split": "1/35/15",
+     "simulated": 1201,
+     "best_screen": 619.85,
+     "best_split": "0/29/22",
      "trace": [
       {
        "round": 0,
-       "simulated": 415,
-       "best": 723.57
+       "simulated": 401,
+       "best": 619.85
       },
       {
        "round": 1,
-       "simulated": 615,
-       "best": 723.57,
-       "predicted_top": 717.35
+       "simulated": 601,
+       "best": 619.85,
+       "predicted_top": 606.17
       },
       {
        "round": 2,
-       "simulated": 815,
-       "best": 723.57,
-       "predicted_top": 722.81
+       "simulated": 801,
+       "best": 619.85,
+       "predicted_top": 611.74
       },
       {
        "round": 3,
-       "simulated": 1015,
-       "best": 723.57,
-       "predicted_top": 722.88
+       "simulated": 1001,
+       "best": 619.85,
+       "predicted_top": 611.43
       },
       {
        "round": 4,
-       "simulated": 1215,
-       "best": 724.38,
-       "predicted_top": 723.27
+       "simulated": 1201,
+       "best": 619.85,
+       "predicted_top": 613.11
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1491,139 +2524,162 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      722.28,
-      722.09,
-      722.09,
-      722.09,
-      722.09,
-      722.09
+      618.33,
+      618.33,
+      618.33,
+      618.33,
+      617.98,
+      615.59
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      720.73,
-      720.72,
-      720.72,
-      720.72,
-      720.72
+      618.95,
+      618.86,
+      618.86,
+      618.86,
+      618.86
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      721.57,
-      721.28
+      619.2,
+      618.79
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 305,
-     "best_gap": 0.0,
-     "best_move": "1 Ice Lance -> Shatter"
+     "neighbours": 265,
+     "best_gap": 0.0016,
+     "best_move": "1 Flame Throwing -> Wake of Fire",
+     "raced": [
+      "1 Flame Throwing -> Wake of Fire"
+     ],
+     "confirmed_gap": -0.0002
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Combustion",
-     "importance": 0.338
-    },
-    {
      "feature": "Fire Power",
-     "importance": 0.1825
+     "importance": 0.2788
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.1153
+     "importance": 0.1822
     },
     {
-     "feature": "Fire points",
-     "importance": 0.0997
-    },
-    {
-     "feature": "Hot Streak",
-     "importance": 0.0891
-    },
-    {
-     "feature": "Ice Shards",
-     "importance": 0.0661
+     "feature": "Fingers of Frost",
+     "importance": 0.0696
     },
     {
      "feature": "Improved Scorch",
-     "importance": 0.0295
+     "importance": 0.0692
     },
     {
-     "feature": "Piercing Ice",
-     "importance": 0.0252
+     "feature": "Heating Up",
+     "importance": 0.0673
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0512
     },
     {
      "feature": "Frost Channeling",
-     "importance": 0.0097
+     "importance": 0.0495
     },
     {
-     "feature": "Arcane points",
-     "importance": 0.0096
+     "feature": "Ice Shards",
+     "importance": 0.0461
     },
     {
-     "feature": "Frost points",
-     "importance": 0.0093
+     "feature": "Impact",
+     "importance": 0.0417
     },
     {
-     "feature": "Ignite",
-     "importance": 0.0071
+     "feature": "Wake of Fire",
+     "importance": 0.0165
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0164
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0157
     }
    ],
-   "simulated_builds": 1534,
-   "simulated_fights": 2543000,
-   "minutes": 1.3,
+   "simulated_builds": 1482,
+   "simulated_fights": 2469000,
+   "minutes": 3.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-prebis.gear.json"
   }
  },
+ "commit": "2ce8265",
  "spells_done": {
-  "date": "2026-10-01",
-  "lines_kept": 0
+  "date": "2026-10-14",
+  "lines_kept": 3
  },
  "compare": {
+  "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "frostfire-raid",
-    "dps": 627.07,
-    "se": 0.234
+    "dps": 502.35,
+    "se": 0.137
    },
    "frostfire-raid": {
     "entry": "frostfire-raid",
-    "dps": 626.59,
-    "se": 0.237
+    "dps": 491.06,
+    "se": 0.135
+   },
+   "frostfire-fingers-of-frost-raid": {
+    "entry": "frostfire-raid",
+    "dps": 499.88,
+    "se": 0.153
    }
   },
-  "best_hand": "frostfire-raid",
-  "gain_vs_hand": 0.0008
+  "best_hand": "frostfire-fingers-of-frost-raid",
+  "gain_vs_hand": 0.0049
  },
- "parse": {
-  "bis-dummy": {
-   "entry": "frostfire-raid",
-   "dps": 733.0,
-   "se": 0.226
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frostfire-raid",
+    "dps": 688.69,
+    "se": 0.182
+   },
+   "frostfire-fingers-of-frost-raid": {
+    "entry": "frostfire-raid",
+    "dps": 688.24,
+    "se": 0.182
+   },
+   "frostfire-raid": {
+    "entry": "frostfire-raid",
+    "dps": 637.79,
+    "se": 0.171
+   },
+   "frostfire-ml-raid": {
+    "entry": "frostfire-raid",
+    "dps": 623.58,
+    "se": 0.158
+   }
   },
-  "bis-raid": {
-   "entry": "frostfire-raid",
-   "dps": 739.35,
-   "se": 0.229
-  },
-  "gain": 0.0087,
-  "vs_parse": null
+  "best_hand": "frostfire-fingers-of-frost-raid",
+  "gain_vs_hand": 0.0007
  },
  "builds": {
-  "written": [
-   "frostfire-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-03",
-  "setting": "raid"
+  "date": "2026-10-15",
+  "setting": "raid",
+  "why": "confirms frostfire-fingers-of-frost-raid (+0.07% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
@@ -1635,6 +2691,14 @@
      ]
     ],
     "Fire": [
+     [
+      "Wake of Fire",
+      1
+     ],
+     [
+      "Incineration",
+      3
+     ],
      [
       "Improved Fireball",
       5
@@ -1652,7 +2716,7 @@
       3
      ],
      [
-      "Hot Streak",
+      "Heating Up",
       1
      ],
      [
@@ -1669,14 +2733,6 @@
      ],
      [
       "Combustion",
-      1
-     ],
-     [
-      "Burning Soul",
-      3
-     ],
-     [
-      "Flame Throwing",
       1
      ]
     ],
@@ -1704,25 +2760,25 @@
     {
      "round": 1,
      "kind": "utility",
-     "from": "Incineration",
+     "from": "Blast Wave",
      "to": "Improved Channeling",
-     "seed1": 0.0009830245418995798,
-     "seed2": 0.0008765064568863057,
+     "seed1": 0.0,
+     "seed2": 0.0,
      "utility": "interrupt"
     },
     {
      "round": 2,
      "kind": "utility",
-     "from": "Incineration",
+     "from": "Burning Soul",
      "to": "Improved Channeling",
-     "seed1": 0.0008765951269293915,
-     "seed2": -8.407151051670336e-05,
+     "seed1": 0.0,
+     "seed2": 0.0,
      "utility": "interrupt"
     },
     {
      "round": 3,
      "kind": "utility",
-     "from": "Blast Wave",
+     "from": "Burning Soul",
      "to": "Improved Channeling",
      "seed1": 0.0,
      "seed2": 0.0,
@@ -1731,561 +2787,23 @@
     {
      "round": 4,
      "kind": "utility",
-     "from": "Arcane Focus",
+     "from": "Flame Throwing",
      "to": "Improved Channeling",
-     "seed1": -4.430429970170291e-05,
-     "seed2": -6.061211232177843e-05,
+     "seed1": 0.0,
+     "seed2": 0.0,
      "utility": "interrupt"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Wake of Fire",
-     "to": "Burning Soul",
-     "seed1": -7.208125367919038e-06,
-     "seed2": 6.832178346405371e-06,
-     "utility": "threat"
-    },
-    {
-     "round": 8,
-     "kind": "utility",
-     "from": "Wake of Fire",
-     "to": "Flame Throwing",
-     "seed1": -1.698407783023992e-05,
-     "seed2": -1.0765968873838183e-05,
-     "utility": "range"
     }
    ],
    "abilities_never_cast": [
     "Blast Wave"
-   ],
-   "final_seed3": 0.0002642647491279959
-  },
-  "prebis-dummy": {
-   "allocation": {
-    "Arcane": [
-     [
-      "Improved Channeling",
-      5
-     ],
-     [
-      "Arcane Subtlety",
-      1
-     ]
-    ],
-    "Fire": [
-     [
-      "Wake of Fire",
-      1
-     ],
-     [
-      "Improved Fireball",
-      5
-     ],
-     [
-      "Ignite",
-      5
-     ],
-     [
-      "Pyroblast",
-      1
-     ],
-     [
-      "Improved Scorch",
-      3
-     ],
-     [
-      "Hot Streak",
-      1
-     ],
-     [
-      "Master of Elements",
-      1
-     ],
-     [
-      "Critical Mass",
-      3
-     ],
-     [
-      "Fire Power",
-      5
-     ],
-     [
-      "Combustion",
-      1
-     ],
-     [
-      "Burning Soul",
-      3
-     ],
-     [
-      "Flame Throwing",
-      2
-     ]
-    ],
-    "Frost": [
-     [
-      "Elemental Precision",
-      5
-     ],
-     [
-      "Ice Shards",
-      5
-     ],
-     [
-      "Piercing Ice",
-      3
-     ],
-     [
-      "Frost Channeling",
-      1
-     ]
-    ]
-   },
-   "split": "6/31/14",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "gain",
-     "from": "Frost Channeling",
-     "to": "Arcane Focus",
-     "seed1": 0.009623041170637947,
-     "seed2": 0.006627942770487838,
-     "utility": null
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Incineration",
-     "to": "Improved Channeling",
-     "seed1": 0.0002093337208457502,
-     "seed2": 0.0012836781165339595,
-     "utility": "interrupt"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Frostbite",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": -6.3825215930291e-05,
-     "seed2": -5.497313471325427e-05,
-     "utility": "interrupt"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": -5.9621626729566835e-05,
-     "seed2": -5.909869824960445e-05,
-     "utility": "interrupt"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": -6.233093047225413e-05,
-     "seed2": -5.254516555641686e-05,
-     "utility": "interrupt"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Blast Wave",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 8,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 9,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 10,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Arcane Subtlety",
-     "seed1": -6.734973379829423e-05,
-     "seed2": -6.644302004732427e-05,
-     "utility": "threat"
-    },
-    {
-     "round": 11,
-     "kind": "utility",
-     "from": "Impact",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    },
-    {
-     "round": 12,
-     "kind": "utility",
-     "from": "Wake of Fire",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    }
-   ],
-   "abilities_never_cast": [
-    "Blast Wave"
-   ],
-   "final_seed3": 0.0077701995843597604
-  },
-  "prebis-raid": {
-   "allocation": {
-    "Arcane": [
-     [
-      "Improved Channeling",
-      5
-     ]
-    ],
-    "Fire": [
-     [
-      "Wake of Fire",
-      2
-     ],
-     [
-      "Improved Fireball",
-      4
-     ],
-     [
-      "Ignite",
-      5
-     ],
-     [
-      "Pyroblast",
-      1
-     ],
-     [
-      "Improved Scorch",
-      3
-     ],
-     [
-      "Hot Streak",
-      1
-     ],
-     [
-      "Master of Elements",
-      1
-     ],
-     [
-      "Critical Mass",
-      3
-     ],
-     [
-      "Fire Power",
-      5
-     ],
-     [
-      "Combustion",
-      1
-     ],
-     [
-      "Burning Soul",
-      3
-     ],
-     [
-      "Flame Throwing",
-      2
-     ]
-    ],
-    "Frost": [
-     [
-      "Elemental Precision",
-      5
-     ],
-     [
-      "Ice Shards",
-      5
-     ],
-     [
-      "Piercing Ice",
-      3
-     ],
-     [
-      "Frost Channeling",
-      2
-     ]
-    ]
-   },
-   "split": "5/31/15",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Arcane Focus",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Frostbite",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Ice Lance",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Blast Wave",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 8,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 9,
-     "kind": "utility",
-     "from": "Impact",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    },
-    {
-     "round": 10,
-     "kind": "utility",
-     "from": "Improved Fireball",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    }
-   ],
-   "abilities_never_cast": [
-    "Blast Wave",
-    "Ice Lance"
    ],
    "final_seed3": 0.0
   },
-  "bis-raid": null
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "frostfire-raid",
-    "dps": 739.29,
-    "se": 0.23
-   },
-   "frostfire-raid": {
-    "entry": "frostfire-raid",
-    "dps": 727.6,
-    "se": 0.228
-   }
-  },
-  "best_hand": "frostfire-raid",
-  "gain_vs_hand": 0.0161
- },
- "aligned_raid": {
-  "target": "frostfire-raid",
-  "moves": [
-   {
-    "from": "Improved Fireball",
-    "to": "Burning Soul",
-    "ratio": 1.0
-   },
-   {
-    "from": "Flame Throwing",
-    "to": "Burning Soul",
-    "ratio": 1.0
-   },
-   {
-    "from": "Impact",
-    "to": "Burning Soul",
-    "ratio": 1.0
-   },
-   {
-    "from": "Frostbite",
-    "to": "Improved Channeling",
-    "ratio": 1.0
-   },
-   {
-    "from": "Ice Lance",
-    "to": "Improved Channeling",
-    "ratio": 1.0
-   },
-   {
-    "from": "Arctic Reach",
-    "to": "Improved Channeling",
-    "ratio": 1.0
-   }
-  ],
-  "allocation": {
-   "Arcane": [
-    [
-     "Improved Channeling",
-     4
-    ]
-   ],
-   "Fire": [
-    [
-     "Wake of Fire",
-     1
-    ],
-    [
-     "Improved Fireball",
-     4
-    ],
-    [
-     "Ignite",
-     5
-    ],
-    [
-     "Flame Throwing",
-     1
-    ],
-    [
-     "Impact",
-     2
-    ],
-    [
-     "Burning Soul",
-     3
-    ],
-    [
-     "Improved Flamestrike",
-     1
-    ],
-    [
-     "Pyroblast",
-     1
-    ],
-    [
-     "Improved Scorch",
-     3
-    ],
-    [
-     "Hot Streak",
-     1
-    ],
-    [
-     "Critical Mass",
-     3
-    ],
-    [
-     "Fire Power",
-     5
-    ],
-    [
-     "Combustion",
-     1
-    ]
-   ],
-   "Frost": [
-    [
-     "Elemental Precision",
-     5
-    ],
-    [
-     "Ice Shards",
-     5
-    ],
-    [
-     "Piercing Ice",
-     3
-    ],
-    [
-     "Frost Channeling",
-     3
-    ]
-   ]
-  },
-  "split": "4/31/16",
-  "ratio": 1.0
- }
+ "notes": [
+  "2026-10-15: pre-BiS set and searches cleared and re-run: gear_opt.SUSPECT_ITEMS (Searing Golden Blade, Windweaver Staff) left the pools"
+ ]
 }

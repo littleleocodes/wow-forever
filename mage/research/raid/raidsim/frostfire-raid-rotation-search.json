@@ -2,13 +2,41 @@
  "dummy": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-10-14",
-  "commit": "2ce8265",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "-2255000013012503-0235010311103002"
+   },
+   {
+    "label": "frostfire-raid",
+    "talents": "0041-23251030130135031-20350003",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: FFB",
+    "talents": "-2355000013011503-2035010311013002",
+    "protect_only": true
+   },
+   {
+    "label": "frostfire-ml-raid",
+    "talents": "0042-20552030130115031-20350003",
+    "protect_only": true
+   },
+   {
+    "label": "frostfire-fingers-of-frost-raid",
+    "talents": "-1355100013013303-2135000301113002",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "open winner"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -158,21 +186,109 @@
    }
   ],
   "final": {
-   "dummy": {}
+   "dummy": {
+    "open winner": {
+     "before": 495.59467336478207,
+     "after": 468.9579857318906,
+     "base": 495.59467336478207,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 64.10630250001076,
+     "oom_after": 64.10630250001076
+    },
+    "frostfire-raid": {
+     "before": 506.1946074804346,
+     "after": 515.161368433136,
+     "base": 506.1946074804346,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 52.0924575000281,
+     "oom_after": 52.0924575000281
+    },
+    "sim preset: FFB": {
+     "before": 484.7412510186742,
+     "after": 462.82492361911153,
+     "base": 484.7412510186742,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 66.95659000000872,
+     "oom_after": 66.95659000000872
+    },
+    "frostfire-ml-raid": {
+     "before": 477.3292452416174,
+     "after": 488.3784098884138,
+     "base": 477.3292452416174,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 61.85989000000824,
+     "oom_after": 61.85989000000824
+    },
+    "frostfire-fingers-of-frost-raid": {
+     "before": 493.88020502410455,
+     "after": 462.6267442990912,
+     "base": 493.88020502410455,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 57.91984750001408,
+     "oom_after": 57.91984750001408
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Fire/Frost"
+   ],
+   "required": [
+    "Frostfire Bolt"
+   ],
+   "rejected": {
+    "structure": 1,
+    "casts": 0,
+    "core_share": 11
+   },
+   "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  },
  "raid": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-10-14",
-  "commit": "2ce8265",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "-2255000013012503-0235010311103002"
+   },
+   {
+    "label": "frostfire-fingers-of-frost-raid",
+    "talents": "-1355100013013303-2135000301113002",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: FFB",
+    "talents": "-2355000013011503-2035010311013002",
+    "protect_only": true
+   },
+   {
+    "label": "frostfire-raid",
+    "talents": "0041-23251030130135031-20350003",
+    "protect_only": true
+   },
+   {
+    "label": "frostfire-ml-raid",
+    "talents": "0042-20552030130115031-20350003",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "open winner"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -359,12 +475,104 @@
     "gain_seed2": 0.0032,
     "candidates": 12,
     "pass": 13
+   },
+   {
+    "round": 24,
+    "change": "drop: if Fingers of Frost is up: cast Ice Lance",
+    "gain_seed1": 2.1731619258262995,
+    "gain_seed2": 2.17753096619061,
+    "candidates": 438,
+    "pass": 14
+   },
+   {
+    "round": 25,
+    "change": "insert at the top: cast Demonic Rune",
+    "gain_seed1": 0.0036872847823332666,
+    "gain_seed2": 0.004407670151591603,
+    "candidates": 415,
+    "pass": 14
+   },
+   {
+    "round": 26,
+    "change": "insert before the filler: cast Robe of the Archmage",
+    "gain_seed1": 0.0016970312931228193,
+    "gain_seed2": 0.00260814832328915,
+    "candidates": 422,
+    "pass": 14
+   },
+   {
+    "round": 27,
+    "change": "threshold 15s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 15s): cast Scorch",
+    "gain_seed1": 0.002595056178773536,
+    "gain_seed2": 0.00369914630671353,
+    "candidates": 431,
+    "pass": 15
    }
   ],
   "final": {
-   "raid": {}
+   "raid": {
+    "open winner": {
+     "before": 779.3686664914426,
+     "after": 801.402023283051,
+     "base": 779.3686664914426,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 4.313997499999803,
+     "oom_after": 4.693194999999846
+    },
+    "frostfire-fingers-of-frost-raid": {
+     "before": 749.1233437064315,
+     "after": 763.2305199151197,
+     "base": 749.1233437064315,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.8965474999999987,
+     "oom_after": 0.7498874999999996
+    },
+    "sim preset: FFB": {
+     "before": 765.6609325894814,
+     "after": 793.9045615312408,
+     "base": 765.6609325894814,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 11.412459999998866,
+     "oom_after": 11.906964999999488
+    },
+    "frostfire-raid": {
+     "before": 725.6170030617054,
+     "after": 742.9221743394419,
+     "base": 725.6170030617054,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.7482074999970979,
+     "oom_after": 0.6778274999968984
+    },
+    "frostfire-ml-raid": {
+     "before": 732.307494233397,
+     "after": 757.8679467345399,
+     "base": 732.307494233397,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 9.620054999999118,
+     "oom_after": 10.134859999999685
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Fire/Frost"
+   ],
+   "required": [
+    "Frostfire Bolt"
+   ],
+   "rejected": {
+    "structure": 205,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 15
  }
 }

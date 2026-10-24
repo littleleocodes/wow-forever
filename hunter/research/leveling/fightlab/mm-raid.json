@@ -37,6 +37,11 @@
     "Melee": 0.0004291345992301457,
     "Mongoose Bite": 7.614487497047175e-05
    },
+   "pet_sources": [
+    "Bite",
+    "Cat melee",
+    "Claw"
+   ],
    "healing_per_kill": {},
    "casts": {
     "Auto Shot": 6152,
@@ -157,6 +162,11 @@
     "Mongoose Bite": 0.00010782202086461956,
     "Wing Clip": 1.2161901287317374e-05
    },
+   "pet_sources": [
+    "Bite",
+    "Cat melee",
+    "Claw"
+   ],
    "healing_per_kill": {},
    "casts": {
     "Auto Shot": 8898,
@@ -288,6 +298,11 @@
     "Mongoose Bite": 0.0003225377875181105,
     "Wing Clip": 0.00014001491429961398
    },
+   "pet_sources": [
+    "Bite",
+    "Cat melee",
+    "Claw"
+   ],
    "healing_per_kill": {},
    "casts": {
     "Auto Shot": 11624,
@@ -425,6 +440,11 @@
     "Mongoose Bite": 0.0011696072272553853,
     "Wing Clip": 0.0003255089623922995
    },
+   "pet_sources": [
+    "Bite",
+    "Cat melee",
+    "Claw"
+   ],
    "healing_per_kill": {},
    "casts": {
     "Auto Shot": 13270,
@@ -565,6 +585,11 @@
     "Mongoose Bite": 0.0027535342661168722,
     "Wing Clip": 0.0012446051266030193
    },
+   "pet_sources": [
+    "Bite",
+    "Cat melee",
+    "Claw"
+   ],
    "healing_per_kill": {},
    "casts": {
     "Auto Shot": 13915,
@@ -710,6 +735,11 @@
      "Melee": 0.00041565874584795605,
      "Mongoose Bite": 0.00014189062735017158
     },
+    "pet_sources": [
+     "Bite",
+     "Cat melee",
+     "Claw"
+    ],
     "healing_per_kill": {},
     "casts": {
      "Auto Shot": 6235,
@@ -830,6 +860,11 @@
      "Raptor Strike": 0.0002895638443064871,
      "Wing Clip": 6.951447584779553e-06
     },
+    "pet_sources": [
+     "Bite",
+     "Cat melee",
+     "Claw"
+    ],
     "healing_per_kill": {},
     "casts": {
      "Auto Shot": 8760,
@@ -960,6 +995,11 @@
      "Mongoose Bite": 0.0005104901758945185,
      "Wing Clip": 0.00014903270256555912
     },
+    "pet_sources": [
+     "Bite",
+     "Cat melee",
+     "Claw"
+    ],
     "healing_per_kill": {},
     "casts": {
      "Auto Shot": 11512,
@@ -1098,6 +1138,11 @@
      "Mongoose Bite": 0.000804554206717136,
      "Wing Clip": 0.00020096146793066602
     },
+    "pet_sources": [
+     "Bite",
+     "Cat melee",
+     "Claw"
+    ],
     "healing_per_kill": {},
     "casts": {
      "Auto Shot": 13729,
@@ -1240,6 +1285,11 @@
      "Mongoose Bite": 0.0003773031626755872,
      "Wing Clip": 0.00015235133688677385
     },
+    "pet_sources": [
+     "Bite",
+     "Cat melee",
+     "Claw"
+    ],
     "healing_per_kill": {},
     "casts": {
      "Auto Shot": 14075,
@@ -1362,7 +1412,7 @@
      "sim_delta": 0.01152121586302067,
      "sim_delta_per_point": 0.002304243172604134,
      "fight_se": 0.0027722017975178198,
-     "ev_delta": 0.037633585176550986,
+     "ev_delta": 0.037974724580954695,
      "sim_fight_delta": 0.03896034062179765,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1373,7 +1423,7 @@
      "sim_delta": 0.0017197161419450731,
      "sim_delta_per_point": 0.0017197161419450731,
      "fight_se": 0.004229181418923546,
-     "ev_delta": 0.007208645215941333,
+     "ev_delta": 0.005971036664384977,
      "sim_fight_delta": 0.0016767122751753418,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1384,7 +1434,7 @@
      "sim_delta": 0.029154876883670494,
      "sim_delta_per_point": 0.0072887192209176235,
      "fight_se": 0.0022428946333787345,
-     "ev_delta": 0.020817824872330744,
+     "ev_delta": 0.02050030503582671,
      "sim_fight_delta": -0.0020873356897389344,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1395,7 +1445,7 @@
      "sim_delta": 0.0030297468494005905,
      "sim_delta_per_point": 0.0010099156164668636,
      "fight_se": 0.002548730642044507,
-     "ev_delta": 0.025370606775387834,
+     "ev_delta": 0.01828849435386088,
      "sim_fight_delta": 0.0069903747915882565,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1406,7 +1456,7 @@
      "sim_delta": 0.017382912012248758,
      "sim_delta_per_point": 0.0034765824024497517,
      "fight_se": 0.0028504480795075162,
-     "ev_delta": 0.017698924250620498,
+     "ev_delta": 0.01549743407594687,
      "sim_fight_delta": 0.047392785737557244,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1417,7 +1467,7 @@
      "sim_delta": -0.001962546451703347,
      "sim_delta_per_point": -0.0009812732258516735,
      "fight_se": 0.0020067847476249725,
-     "ev_delta": 0.012070527193886148,
+     "ev_delta": 0.011441362369381819,
      "sim_fight_delta": 0.0051767880449855,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1428,13 +1478,13 @@
      "sim_delta": 0.005984626585231457,
      "sim_delta_per_point": 0.005984626585231457,
      "fight_se": 0.002691481847572618,
-     "ev_delta": 0.021288200587258013,
+     "ev_delta": 0.01773414369988337,
      "sim_fight_delta": 0.020188984538022217,
      "deaths_with": 0.0,
      "deaths_without": 0.0
     }
    ],
-   "ev_base": 0.13107858701501562
+   "ev_base": 0.11762026117529378
   },
   "60": {
    "rows": [
@@ -1444,7 +1494,7 @@
      "sim_delta": 0.0052172529223234775,
      "sim_delta_per_point": 0.0026086264611617387,
      "fight_se": 0.002750910948231415,
-     "ev_delta": 0.006218283405760102,
+     "ev_delta": 0.0058859599965183805,
      "sim_fight_delta": 0.009352174409848457,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1455,7 +1505,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.006833861237247607,
+     "ev_delta": 0.006617745775878301,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1466,7 +1516,7 @@
      "sim_delta": 0.015926938277755733,
      "sim_delta_per_point": 0.003185387655551147,
      "fight_se": 0.0028763989573342835,
-     "ev_delta": 0.036585033339746456,
+     "ev_delta": 0.03732551315738539,
      "sim_fight_delta": 0.02211179833050152,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1477,7 +1527,7 @@
      "sim_delta": 0.02318045693112065,
      "sim_delta_per_point": 0.00463609138622413,
      "fight_se": 0.0038867275687343027,
-     "ev_delta": 0.030809445129473666,
+     "ev_delta": 0.026377886487914108,
      "sim_fight_delta": 0.028036014075030855,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1488,7 +1538,7 @@
      "sim_delta": 0.03269108913519332,
      "sim_delta_per_point": 0.006538217827038664,
      "fight_se": 0.0027008054726196944,
-     "ev_delta": 0.025738347489392216,
+     "ev_delta": 0.024924392589015267,
      "sim_fight_delta": 0.003735595981247274,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1499,7 +1549,7 @@
      "sim_delta": 0.013571940233272925,
      "sim_delta_per_point": 0.006785970116636462,
      "fight_se": 0.0028980279820008488,
-     "ev_delta": 0.010475835693570341,
+     "ev_delta": 0.010825104872042107,
      "sim_fight_delta": 0.016521588814840928,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1510,7 +1560,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.010030205691637265,
+     "ev_delta": 0.009713008362715603,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1521,7 +1571,7 @@
      "sim_delta": 0.022719635185522793,
      "sim_delta_per_point": 0.007573211728507598,
      "fight_se": 0.0029137673696409145,
-     "ev_delta": 0.02380622796414694,
+     "ev_delta": 0.01786053600088762,
      "sim_fight_delta": 0.02985546905891795,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1532,7 +1582,7 @@
      "sim_delta": 0.021367459163425827,
      "sim_delta_per_point": 0.0042734918326851655,
      "fight_se": 0.0028212247560770597,
-     "ev_delta": 0.026595139356400017,
+     "ev_delta": 0.023037248024796213,
      "sim_fight_delta": 0.030995192068143915,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1543,7 +1593,7 @@
      "sim_delta": 0.03118134632059923,
      "sim_delta_per_point": 0.006236269264119846,
      "fight_se": 0.0030800725120921015,
-     "ev_delta": 0.020080157255164946,
+     "ev_delta": 0.01823092858332896,
      "sim_fight_delta": 0.04208185496497573,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1554,7 +1604,7 @@
      "sim_delta": 0.0022061955027500245,
      "sim_delta_per_point": 0.0011030977513750123,
      "fight_se": 0.002743294307550209,
-     "ev_delta": 0.00546394614863038,
+     "ev_delta": 0.0049734664238642624,
      "sim_fight_delta": 0.0018868422054963794,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1565,7 +1615,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.008200633484697128,
+     "ev_delta": 0.007941294931053925,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1576,7 +1626,7 @@
      "sim_delta": 0.018942356185453132,
      "sim_delta_per_point": 0.0037884712370906265,
      "fight_se": 0.002956876661508503,
-     "ev_delta": 0.026595139356400017,
+     "ev_delta": 0.023037248024796213,
      "sim_fight_delta": 0.0293222310443434,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1587,7 +1637,7 @@
      "sim_delta": 0.0018587604761892758,
      "sim_delta_per_point": 0.0009293802380946379,
      "fight_se": 0.0024951140134136882,
-     "ev_delta": 0.013661842502082227,
+     "ev_delta": 0.012940298670551622,
      "sim_fight_delta": 0.005965234053403381,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1598,7 +1648,7 @@
      "sim_delta": 0.028156586522120223,
      "sim_delta_per_point": 0.014078293261060111,
      "fight_se": 0.002664878681041204,
-     "ev_delta": 0.012647979155113984,
+     "ev_delta": 0.012247996809028666,
      "sim_fight_delta": 0.002654470556059884,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1609,7 +1659,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.008200633484697128,
+     "ev_delta": 0.007941294931053961,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1620,7 +1670,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.026595139356400017,
+     "ev_delta": 0.023037248024796213,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1631,13 +1681,13 @@
      "sim_delta": 0.014862310359179521,
      "sim_delta_per_point": 0.014862310359179521,
      "fight_se": 0.0028999226653944636,
-     "ev_delta": 0.021302013008645235,
+     "ev_delta": 0.018475434835484413,
      "sim_fight_delta": 0.021183026623757574,
      "deaths_with": 0.0,
      "deaths_without": 0.0
     }
    ],
-   "ev_base": 0.26834920604653734
+   "ev_base": 0.24445571508276784
   }
  },
  "gear_tiers": {},

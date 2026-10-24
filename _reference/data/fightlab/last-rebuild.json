@@ -5,10 +5,9 @@
    "spec": "frost-leveling",
    "hand": "leveling-frost",
    "opt": "opt-frost-leveling-leveling-st",
-   "started": "2026-10-23T05:09:49",
+   "started": "2026-10-23T16:28:05",
    "steps": [
-    "race",
-    "report"
+    "raid"
    ],
    "raid": {
     "frost-raid": {
@@ -17,254 +16,240 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "cand-frost-raid-r1": 615.3,
-        "cand-frost-raid-r2": 613.3,
-        "cand-frost-raid-hand-2026-09-28": 588.2,
-        "cand-frost-raid-r12": 588.2,
-        "cand-frost-raid-r7": 588.2,
-        "cand-frost-raid-r11": 586.4,
-        "opt-frost-raid-raid-dps": 584.6,
-        "cand-frost-raid-r4": 567.5,
-        "cand-frost-raid-r6": 566.4,
-        "cand-frost-raid-r5": 566.1,
-        "cand-frost-raid-r10": 566.0,
-        "cand-frost-raid-hand-2026-09-27": 565.6,
-        "cand-frost-raid-r9": 565.2,
-        "cand-frost-raid-r8": 563.6,
-        "cand-frost-raid-from-arcane-power": 559.9,
-        "cand-frost-raid-r3": 549.0
+        "cand-frost-raid-preset-arcane-frost": 580.8,
+        "cand-frost-raid-from-arcane-power": 578.0,
+        "opt-frost-raid-raid-dps": 550.3,
+        "cand-frost-raid-r3": 535.9,
+        "cand-frost-raid-hand-2026-09-27": 511.6,
+        "cand-frost-raid-r9": 498.6,
+        "cand-frost-raid-r1": 498.3,
+        "cand-frost-raid-r11": 497.5,
+        "cand-frost-raid-hand-2026-09-28": 496.6,
+        "cand-frost-raid-r12": 496.6,
+        "cand-frost-raid-r7": 496.6,
+        "cand-frost-raid-r2": 496.2,
+        "cand-frost-raid-r5": 489.2,
+        "cand-frost-raid-r4": 489.0,
+        "cand-frost-raid-r13": 479.7,
+        "cand-frost-raid-r6": 468.1,
+        "cand-frost-raid-r10": 461.5,
+        "cand-frost-raid-r8": 456.8
        },
        "converged_by_noise": true
       }
      ],
      "top": [
       [
-       "frost-ml-raid",
-       617.1
+       "opt-frost-raid-raid-dps-extwc",
+       587.0
       ],
       [
-       "frost-fingers-of-frost-raid",
-       614.6
+       "sim preset: Arcane Frost",
+       581.6
       ],
       [
-       "cand-frost-raid-r1",
-       613.7
+       "cand-frost-raid-from-arcane-power",
+       577.5
       ],
       [
-       "cand-frost-raid-r2",
-       610.9
+       "frost-arcane-power-raid",
+       576.8
       ]
      ],
-     "promoted": "cand-frost-raid-r1",
+     "promoted": null,
      "adopted": null,
      "environments": {
       "frost-arcane-power-raid": {
-       "dummy": 574.995242227121,
-       "dummy60": 627.8643788925015,
-       "ladder-mana": 574.5342742210837,
-       "ladder-armor": 574.5342742210837,
-       "ladder-physical": 567.9274991042593,
-       "ladder-spell": 624.7202490146849,
-       "raid": 659.592334961406,
-       "curve60": 612.2372161760954,
-       "curve120": 588.3223578661128,
-       "curve180": 574.995242227121,
-       "curve240": 576.7144147518356,
-       "curve360": 558.9789815317836,
-       "max": 659.592334961406,
-       "max60": 708.0693855594391
+       "dummy": 576.8341422048439,
+       "dummy60": 632.1294888037991,
+       "ladder-mana": 583.099305680241,
+       "ladder-armor": 583.099305680241,
+       "ladder-physical": 582.5897281443749,
+       "ladder-spell": 657.047077179241,
+       "raid": 676.0473322396091,
+       "curve60": 628.4982173973052,
+       "curve120": 598.2761138840301,
+       "curve180": 576.8341422048439,
+       "curve240": 574.9416932431104,
+       "curve360": 547.2959354659198,
+       "max": 676.0473322396091,
+       "max60": 735.4753409423574
       },
       "frost-winters-chill-raid": {
-       "dummy": 548.4832681493345,
-       "dummy60": 598.1645818636263,
-       "ladder-mana": 547.7697643016062,
-       "ladder-armor": 547.7697643016062,
-       "ladder-physical": 540.1738047092136,
-       "ladder-spell": 594.1911851801352,
-       "raid": 625.9361418471834,
-       "curve60": 551.9171180403,
-       "curve120": 553.7760190604375,
-       "curve180": 548.4832681493345,
-       "curve240": 551.929716207073,
-       "curve360": 539.7372634295984,
-       "max": 625.9361418471834,
-       "max60": 636.4808529116797
+       "dummy": 441.4204254907029,
+       "dummy60": 479.5637366906362,
+       "ladder-mana": 441.3908847024462,
+       "ladder-armor": 441.3908847024462,
+       "ladder-physical": 441.0555827203613,
+       "ladder-spell": 497.3084861015971,
+       "raid": 500.9253261803924,
+       "curve60": 458.1148297228535,
+       "curve120": 449.5056755181506,
+       "curve180": 441.4204254907029,
+       "curve240": 441.8264758196922,
+       "curve360": 432.6009226797552,
+       "max": 500.9253261803924,
+       "max60": 518.3027512629915
       },
       "frost-fingers-of-frost-raid": {
-       "dummy": 614.6055375415687,
-       "dummy60": 674.5234744901959,
-       "ladder-mana": 613.8045561520003,
-       "ladder-armor": 613.8045561520003,
-       "ladder-physical": 606.3708474814877,
-       "ladder-spell": 667.0079322296366,
-       "raid": 700.6485393068783,
-       "curve60": 618.110694242777,
-       "curve120": 620.0465591647621,
-       "curve180": 614.6055375415687,
-       "curve240": 615.2752352902886,
-       "curve360": 601.979290905825,
-       "max": 700.6485393068783,
-       "max60": 713.9253179031944
+       "dummy": 483.97413119955297,
+       "dummy60": 530.2610767210529,
+       "ladder-mana": 484.3057677748207,
+       "ladder-armor": 484.3057677748207,
+       "ladder-physical": 484.01145477988194,
+       "ladder-spell": 544.8852372017047,
+       "raid": 547.0665700239438,
+       "curve60": 493.95499853063257,
+       "curve120": 490.3701834075796,
+       "curve180": 483.97413119955297,
+       "curve240": 486.0001589120592,
+       "curve360": 475.60877671130334,
+       "max": 547.0665700239438,
+       "max60": 557.2112229399162
       },
       "opt-frost-raid-raid-dps": {
-       "dummy": 613.7405736747397,
-       "dummy60": 674.3966932476583,
-       "ladder-mana": 613.9404636298854,
-       "ladder-armor": 613.9404636298854,
-       "ladder-physical": 606.2151972501972,
-       "ladder-spell": 666.8367169752171,
-       "raid": 700.5226353556782,
-       "curve60": 618.491708893506,
-       "curve120": 620.7264541915329,
-       "curve180": 613.7405736747397,
-       "curve240": 606.1657379396884,
-       "curve360": 588.2318456976847,
-       "max": 700.5226353556782,
-       "max60": 713.9253179031944
+       "dummy": 549.3979534057629,
+       "dummy60": 600.2764756166465,
+       "ladder-mana": 556.1189271608068,
+       "ladder-armor": 556.1189271608068,
+       "ladder-physical": 555.1673688979557,
+       "ladder-spell": 625.3993188696229,
+       "raid": 627.8481337111608,
+       "curve60": 563.6485525555427,
+       "curve120": 562.9970528176055,
+       "curve180": 549.3979534057629,
+       "curve240": 541.9502654619495,
+       "curve360": 512.4368357703203,
+       "max": 627.8481337111608,
+       "max60": 637.373756040412
       },
       "opt-frost-raid-raid-dps-extwc": {
-       "dummy": 563.9999843632178,
-       "dummy60": 612.0726382987117,
-       "ladder-mana": 589.8072725142335,
-       "ladder-armor": 589.8072725142335,
-       "ladder-physical": 582.3457928204899,
-       "ladder-spell": 640.580372102539,
-       "raid": 674.8372545681672,
-       "curve60": 585.6796634451473,
-       "curve120": 592.7600134813885,
-       "curve180": 563.9999843632178,
-       "curve240": 533.4664429707705,
-       "curve360": 456.6537786621965,
-       "max": 674.8372545681672,
-       "max60": 677.7371295891814
+       "dummy": 586.9732028753979,
+       "dummy60": 644.5826917179219,
+       "ladder-mana": 600.5956044828444,
+       "ladder-armor": 600.5956044828444,
+       "ladder-physical": 600.854227031593,
+       "ladder-spell": 676.2979809228468,
+       "raid": 680.1257964707855,
+       "curve60": 611.4523805081938,
+       "curve120": 606.4134986878057,
+       "curve180": 586.9732028753979,
+       "curve240": 583.1225703026217,
+       "curve360": 543.5912228447849,
+       "max": 680.1257964707855,
+       "max60": 702.0011764950709
       },
       "frost-ml-raid": {
-       "dummy": 617.1427956752397,
-       "dummy60": 677.5230414809665,
-       "ladder-mana": 618.4448146507546,
-       "ladder-armor": 618.4448146507546,
-       "ladder-physical": 609.830832205073,
-       "ladder-spell": 670.8139154255807,
-       "raid": 705.1776220667592,
-       "curve60": 621.7718748721965,
-       "curve120": 622.6601624355317,
-       "curve180": 617.1427956752397,
-       "curve240": 617.6661699835705,
-       "curve360": 604.5559482685201,
-       "max": 705.1776220667592,
-       "max60": 714.9440646627742
+       "dummy": 482.1677541520497,
+       "dummy60": 528.3158755890533,
+       "ladder-mana": 482.1878450978977,
+       "ladder-armor": 482.1878450978977,
+       "ladder-physical": 481.9183064403484,
+       "ladder-spell": 542.4811510363103,
+       "raid": 544.4080196805438,
+       "curve60": 491.7288473897629,
+       "curve120": 488.82856697627915,
+       "curve180": 482.1677541520497,
+       "curve240": 483.9868867279539,
+       "curve360": 473.2017005119143,
+       "max": 544.4080196805438,
+       "max60": 555.2328936076605
+      },
+      "arcane-frost-open-raid": {
+       "dummy": 576.5335514275345,
+       "dummy60": 632.0546765132885,
+       "ladder-mana": 602.3959595043497,
+       "ladder-armor": 602.3959595043497,
+       "ladder-physical": 601.9555556768762,
+       "ladder-spell": 678.2668949704964,
+       "raid": 687.7116565609388,
+       "curve60": 605.4625478217783,
+       "curve120": 605.0029518639218,
+       "curve180": 576.5335514275345,
+       "curve240": 573.057640583265,
+       "curve360": 504.07750151930594,
+       "max": 687.7116565609388,
+       "max60": 691.2069824278237
       },
       "opt-frost-raid-parse": {
-       "dummy": 570.8439274835715,
-       "dummy60": 620.9802878282552,
-       "ladder-mana": 587.1218902780854,
-       "ladder-armor": 587.1218902780854,
-       "ladder-physical": 580.1840344549942,
-       "ladder-spell": 638.2024379004937,
-       "raid": 673.2687957629852,
-       "curve60": 595.375609722892,
-       "curve120": 594.1817879662872,
-       "curve180": 570.8439274835715,
-       "curve240": 574.2870934847015,
-       "curve360": 507.6855225844157,
-       "max": 673.2687957629852,
-       "max60": 686.7652964516524
+       "dummy": 555.510154930464,
+       "dummy60": 607.421483128188,
+       "ladder-mana": 555.9424019912248,
+       "ladder-armor": 555.9424019912248,
+       "ladder-physical": 555.2388190115157,
+       "ladder-spell": 625.3303460356474,
+       "raid": 628.1484097136289,
+       "curve60": 564.2280084380079,
+       "curve120": 562.5755403758255,
+       "curve180": 555.510154930464,
+       "curve240": 559.1537999580148,
+       "curve360": 554.3386460718316,
+       "max": 628.1484097136289,
+       "max60": 638.059811050728
       },
-      "sim preset: Frost DPS": {
-       "dummy": 575.8377216274534,
-       "dummy60": 625.3984098637143,
-       "ladder-mana": 575.8852368365607,
-       "ladder-armor": 575.8852368365607,
-       "ladder-physical": 569.6914194202521,
-       "ladder-spell": 626.6605613622776,
-       "raid": 660.3497328688185,
-       "curve60": 572.004849533982,
-       "curve120": 580.1059631743611,
-       "curve180": 575.8377216274534,
-       "curve240": 565.2559839917762,
-       "curve360": 555.1365140102469,
-       "max": 660.3497328688185,
-       "max60": 664.7653257529604
+      "sim preset: Arcane Frost": {
+       "dummy": 581.6200144751946,
+       "dummy60": 636.77562655799,
+       "ladder-mana": 595.4460910856029,
+       "ladder-armor": 595.4460910856029,
+       "ladder-physical": 595.7295152718347,
+       "ladder-spell": 670.3143723633274,
+       "raid": 692.5733677337853,
+       "curve60": 643.3446072241669,
+       "curve120": 610.6163764948172,
+       "curve180": 581.6200144751946,
+       "curve240": 581.5530661723144,
+       "curve360": 535.6184673754362,
+       "max": 692.5733677337853,
+       "max60": 754.626669481032
       },
-      "sim preset: Arcane DPS": {
-       "dummy": 430.4084457974296,
-       "dummy60": 490.36298135407924,
-       "ladder-mana": 429.83196843148863,
-       "ladder-armor": 429.83196843148863,
-       "ladder-physical": 422.89469878311354,
-       "ladder-spell": 465.18416866142485,
-       "raid": 488.94756409603656,
-       "curve60": 461.148716722447,
-       "curve120": 440.56015109266315,
-       "curve180": 430.4084457974296,
-       "curve240": 441.7603901135378,
-       "curve360": 430.2924384113808,
-       "max": 488.94756409603656,
-       "max60": 529.9516075563496
+      "sim preset: Arcane Fire": {
+       "dummy": 521.133475173425,
+       "dummy60": 568.7565757811449,
+       "ladder-mana": 522.2140452508388,
+       "ladder-armor": 522.2140452508388,
+       "ladder-physical": 521.9753520156257,
+       "ladder-spell": 585.6721827326934,
+       "raid": 645.3930587896793,
+       "curve60": 571.2080349388585,
+       "curve120": 537.1161079927012,
+       "curve180": 521.133475173425,
+       "curve240": 520.9545543880573,
+       "curve360": 502.0082073039607,
+       "max": 645.3930587896793,
+       "max60": 698.7073724139144
       },
-      "sim preset: Fire DPS": {
-       "dummy": 324.28935822583276,
-       "dummy60": 369.15513167019736,
-       "ladder-mana": 324.32323389725667,
-       "ladder-armor": 324.32323389725667,
-       "ladder-physical": 318.0542534366544,
-       "ladder-spell": 349.85967878031994,
-       "raid": 368.8298699520855,
-       "curve60": 328.7690284830827,
-       "curve120": 327.31438070499865,
-       "curve180": 324.28935822583276,
-       "curve240": 322.3254018612139,
-       "curve360": 315.76246403571463,
-       "max": 368.8298699520855,
-       "max60": 384.2118870616108
+      "sim preset: FFB": {
+       "dummy": 386.76910352329025,
+       "dummy60": 423.6122024054407,
+       "ladder-mana": 389.978815058813,
+       "ladder-armor": 389.978815058813,
+       "ladder-physical": 389.4524590527544,
+       "ladder-spell": 438.9779860882213,
+       "raid": 442.53541275501465,
+       "curve60": 391.3942215061,
+       "curve120": 392.9663759909417,
+       "curve180": 386.76910352329025,
+       "curve240": 378.7704391008175,
+       "curve360": 367.56694642606493,
+       "max": 442.53541275501465,
+       "max60": 444.37662985025173
       },
-      "sim preset: Fire 0/35/16": {
-       "dummy": 387.46122069370665,
-       "dummy60": 416.84323915889524,
-       "ladder-mana": 387.64403463002276,
-       "ladder-armor": 387.64403463002276,
-       "ladder-physical": 383.3306229059027,
-       "ladder-spell": 421.6636851964929,
-       "raid": 448.3918037994172,
-       "curve60": 392.436081227799,
-       "curve120": 391.51024334236115,
-       "curve180": 387.46122069370665,
-       "curve240": 371.2140499709899,
-       "curve360": 361.9824161699328,
-       "max": 448.3918037994172,
-       "max60": 465.1243827643049
-      },
-      "sim preset: Frost 14/0/37": {
-       "dummy": 559.8538393422558,
-       "dummy60": 607.0002075969701,
-       "ladder-mana": 583.6130219874685,
-       "ladder-armor": 583.6130219874685,
-       "ladder-physical": 578.2523357713303,
-       "ladder-spell": 636.0775693484636,
-       "raid": 669.7837934226625,
-       "curve60": 582.2488922238053,
-       "curve120": 563.4736498209134,
-       "curve180": 559.8538393422558,
-       "curve240": 499.1932559393968,
-       "curve360": 427.765228614605,
-       "max": 669.7837934226625,
-       "max60": 674.8103093527884
-      },
-      "sim preset: Arcane 35/0/16": {
-       "dummy": 492.98858994133593,
-       "dummy60": 538.7076673497505,
-       "ladder-mana": 492.5593034356146,
-       "ladder-armor": 492.5593034356146,
-       "ladder-physical": 486.7898635187239,
-       "ladder-spell": 535.4688498705962,
-       "raid": 566.5068353657982,
-       "curve60": 527.8712296874589,
-       "curve120": 504.27424121791336,
-       "curve180": 492.98858994133593,
-       "curve240": 505.22755272398945,
-       "curve360": 495.68675389038185,
-       "max": 566.5068353657982,
-       "max60": 612.6216724431262
+      "sim preset: Fire": {
+       "dummy": 438.8449933290043,
+       "dummy60": 479.68144367907854,
+       "ladder-mana": 447.90204590563945,
+       "ladder-armor": 447.90204590563945,
+       "ladder-physical": 446.8256120270092,
+       "ladder-spell": 498.6194620957954,
+       "raid": 504.4460283289032,
+       "curve60": 453.7210905533525,
+       "curve120": 453.292188745132,
+       "curve180": 438.8449933290043,
+       "curve240": 435.64322034702695,
+       "curve360": 413.1666432072776,
+       "max": 504.4460283289032,
+       "max60": 512.0433953504986
       }
      }
     },
@@ -272,256 +257,456 @@
      "rounds": [
       {
        "round": 1,
+       "new_build": true,
+       "quick_race": {
+        "opt-fire-raid-raid-dps": 597.0,
+        "cand-fire-raid-preset-fire": 590.1,
+        "cand-fire-raid-r1": 574.9,
+        "cand-fire-raid-r7": 573.7,
+        "cand-fire-raid-r8": 570.5,
+        "cand-fire-raid-r2": 567.9,
+        "cand-fire-raid-r4": 563.9,
+        "cand-fire-raid-r5": 563.8,
+        "cand-fire-raid-r6": 563.2,
+        "cand-fire-raid-hand-2026-09-28": 562.3,
+        "cand-fire-raid-r3": 492.0
+       }
+      },
+      {
+       "round": 2,
        "new_build": false
       }
      ],
      "top": [
       [
-       "fire-raid",
-       559.0
+       "opt-fire-raid-raid-dps",
+       598.0
+      ],
+      [
+       "cand-fire-raid-r9",
+       598.0
+      ],
+      [
+       "sim preset: Fire",
+       591.6
       ],
       [
        "cand-fire-raid-r1",
-       559.0
-      ],
-      [
-       "cand-fire-raid-r2",
-       559.0
-      ],
-      [
-       "cand-fire-raid-r4",
-       559.0
+       577.0
       ]
      ],
-     "promoted": "cand-fire-raid-r1",
+     "promoted": null,
      "adopted": null,
      "environments": {
       "fire-raid": {
-       "dummy": 558.9834674530041,
-       "dummy60": 644.0332137810566,
-       "ladder-mana": 581.2365662483593,
-       "ladder-armor": 581.2365662483593,
-       "ladder-physical": 578.1724821200968,
-       "ladder-spell": 635.9897303321063,
-       "raid": 700.2749407994415,
-       "curve60": 644.1260900602356,
-       "curve120": 580.2158101133583,
-       "curve180": 558.9834674530041,
-       "curve240": 487.05522399647134,
-       "curve360": 438.02530578983806,
-       "max": 700.2749407994415,
-       "max60": 747.7435550513977
+       "dummy": 576.2019216330924,
+       "dummy60": 639.7407266274021,
+       "ladder-mana": 681.7033680577813,
+       "ladder-armor": 681.7033680577813,
+       "ladder-physical": 679.2887693601186,
+       "ladder-spell": 772.5001684621534,
+       "raid": 820.9092527032832,
+       "curve60": 752.1890395716016,
+       "curve120": 675.9642383694213,
+       "curve180": 576.2019216330924,
+       "curve240": 474.3744387526134,
+       "curve360": 406.4823418345723,
+       "max": 820.9092527032832,
+       "max60": 873.2865550547622
       },
       "opt-fire-raid-raid-dps": {
-       "dummy": 558.9834674530041,
-       "dummy60": 644.0332137810566,
-       "ladder-mana": 581.2365662483593,
-       "ladder-armor": 581.2365662483593,
-       "ladder-physical": 578.1724821200968,
-       "ladder-spell": 635.9897303321063,
-       "raid": 700.2749407994415,
-       "curve60": 644.1260900602356,
-       "curve120": 580.2158101133583,
-       "curve180": 558.9834674530041,
-       "curve240": 487.05522399647134,
-       "curve360": 438.02530578983806,
-       "max": 700.2749407994415,
-       "max60": 747.7435550513977
+       "dummy": 598.047817048023,
+       "dummy60": 679.1866096289076,
+       "ladder-mana": 667.7007507710188,
+       "ladder-armor": 667.7007507710188,
+       "ladder-physical": 668.2072289532337,
+       "ladder-spell": 758.1715943999003,
+       "raid": 808.0026814768294,
+       "curve60": 708.8986513901091,
+       "curve120": 656.4175485002734,
+       "curve180": 598.047817048023,
+       "curve240": 521.4904739179656,
+       "curve360": 454.65216032947126,
+       "max": 808.0026814768294,
+       "max60": 831.7000157029191
       },
       "opt-fire-raid-parse": {
-       "dummy": 526.6891727038811,
-       "dummy60": 604.6705156851723,
-       "ladder-mana": 544.4490247709956,
-       "ladder-armor": 544.4490247709956,
-       "ladder-physical": 537.9430178834853,
-       "ladder-spell": 591.7373196718338,
-       "raid": 645.1441828265399,
-       "curve60": 600.0430414436887,
-       "curve120": 543.4247581475516,
-       "curve180": 526.6891727038811,
-       "curve240": 466.2300981196882,
-       "curve360": 420.75196639621265,
-       "max": 645.1441828265399,
-       "max60": 673.5361743033733
+       "dummy": 594.1185364907387,
+       "dummy60": 658.3037724647401,
+       "ladder-mana": 692.6017383792686,
+       "ladder-armor": 692.6017383792686,
+       "ladder-physical": 693.7968666753547,
+       "ladder-spell": 784.5833311081112,
+       "raid": 826.0528921691887,
+       "curve60": 752.5497299215247,
+       "curve120": 685.2397946567718,
+       "curve180": 594.1185364907387,
+       "curve240": 498.11056576521133,
+       "curve360": 432.31781650671985,
+       "max": 826.0528921691887,
+       "max60": 873.7388535520593
       },
-      "sim preset: Frost DPS": {
-       "dummy": 281.7387940446161,
-       "dummy60": 323.6122471154988,
-       "ladder-mana": 286.09560992203313,
-       "ladder-armor": 286.09560992203313,
-       "ladder-physical": 278.9109545794728,
-       "ladder-spell": 306.8020500374201,
-       "raid": 355.15805563624855,
-       "curve60": 285.83467085114995,
-       "curve120": 288.3697525174906,
-       "curve180": 281.7387940446161,
-       "curve240": 281.49215236192686,
-       "curve360": 270.62701047424844,
-       "max": 355.15805563624855,
-       "max60": 353.52561954257646
+      "sim preset: Arcane Frost": {
+       "dummy": 336.3164510847085,
+       "dummy60": 365.4762091264735,
+       "ladder-mana": 343.26746634289384,
+       "ladder-armor": 343.26746634289384,
+       "ladder-physical": 343.07211026411477,
+       "ladder-spell": 382.56756176300155,
+       "raid": 413.26219665665326,
+       "curve60": 342.997164997223,
+       "curve120": 345.1373150972873,
+       "curve180": 336.3164510847085,
+       "curve240": 327.75317486506526,
+       "curve360": 283.0440339616413,
+       "max": 413.26219665665326,
+       "max60": 422.32310276976375
       },
-      "sim preset: Arcane DPS": {
-       "dummy": 423.4060513412071,
-       "dummy60": 512.8492246461506,
-       "ladder-mana": 440.0491336270072,
-       "ladder-armor": 440.0491336270072,
-       "ladder-physical": 436.1402060102362,
-       "ladder-spell": 479.75422661125947,
-       "raid": 512.0246301063504,
-       "curve60": 480.26215565183185,
-       "curve120": 458.24554946595464,
-       "curve180": 423.4060513412071,
-       "curve240": 432.31249435987,
-       "curve360": 421.5424176645164,
-       "max": 512.0246301063504,
-       "max60": 552.3534868166743
+      "sim preset: Arcane Fire": {
+       "dummy": 374.6401198354056,
+       "dummy60": 407.32140572988527,
+       "ladder-mana": 382.0119068027721,
+       "ladder-armor": 382.0119068027721,
+       "ladder-physical": 381.8226247486351,
+       "ladder-spell": 431.20197758307614,
+       "raid": 612.6860442208456,
+       "curve60": 380.13257316204056,
+       "curve120": 383.62620832535197,
+       "curve180": 374.6401198354056,
+       "curve240": 365.36952487159294,
+       "curve360": 315.6442338870654,
+       "max": 612.6860442208456,
+       "max60": 623.8042145211866
       },
-      "sim preset: Fire DPS": {
-       "dummy": 542.6406317087002,
-       "dummy60": 661.8487356183922,
-       "ladder-mana": 554.7808327070608,
-       "ladder-armor": 554.7808327070608,
-       "ladder-physical": 551.6221074691772,
-       "ladder-spell": 606.7843182160949,
-       "raid": 669.5368109069144,
-       "curve60": 605.9782342932542,
-       "curve120": 555.1336748895667,
-       "curve180": 542.6406317087002,
-       "curve240": 508.1049511059477,
-       "curve360": 476.30855617872265,
-       "max": 669.5368109069144,
-       "max60": 706.5919344044506
+      "sim preset: FFB": {
+       "dummy": 456.28252599417016,
+       "dummy60": 500.9322373213271,
+       "ladder-mana": 569.4100817596857,
+       "ladder-armor": 569.4100817596857,
+       "ladder-physical": 569.1238138745593,
+       "ladder-spell": 647.3641794929437,
+       "raid": 598.0983478424056,
+       "curve60": 674.7606356911899,
+       "curve120": 537.3934326127778,
+       "curve180": 456.28252599417016,
+       "curve240": 365.54093657940797,
+       "curve360": 313.1413815780015,
+       "max": 598.0983478424056,
+       "max60": 622.1565399218325
       },
-      "sim preset: Fire 0/35/16": {
-       "dummy": 532.9549691279103,
-       "dummy60": 613.5191131939166,
-       "ladder-mana": 565.1517305599674,
-       "ladder-armor": 565.1517305599674,
-       "ladder-physical": 560.9298725230408,
-       "ladder-spell": 617.0228597753446,
-       "raid": 671.3799260482336,
-       "curve60": 632.4737900312654,
-       "curve120": 566.5579054323222,
-       "curve180": 532.9549691279103,
-       "curve240": 457.20617976956066,
-       "curve360": 410.1338842255216,
-       "max": 671.3799260482336,
-       "max60": 730.3504067547024
-      },
-      "sim preset: Frost 14/0/37": {
-       "dummy": 277.7167763122663,
-       "dummy60": 317.98535381472186,
-       "ladder-mana": 288.9023245538699,
-       "ladder-armor": 288.9023245538699,
-       "ladder-physical": 281.78531176138046,
-       "ladder-spell": 309.9638429375185,
-       "raid": 357.9666132095179,
-       "curve60": 285.83467085114995,
-       "curve120": 291.7890267370377,
-       "curve180": 277.7167763122663,
-       "curve240": 272.37732914763194,
-       "curve360": 251.10632945745783,
-       "max": 357.9666132095179,
-       "max60": 353.52561954257646
-      },
-      "sim preset: Arcane 35/0/16": {
-       "dummy": 302.65944733535076,
-       "dummy60": 346.6549330013107,
-       "ladder-mana": 299.61623079355246,
-       "ladder-armor": 299.61623079355246,
-       "ladder-physical": 292.11733695534355,
-       "ladder-spell": 321.32907065087784,
-       "raid": 372.55984277698934,
-       "curve60": 299.40848400583303,
-       "curve120": 300.0431878873883,
-       "curve180": 302.65944733535076,
-       "curve240": 297.42349091719865,
-       "curve360": 305.42345592873437,
-       "max": 372.55984277698934,
-       "max60": 370.33664417668825
+      "sim preset: Fire": {
+       "dummy": 591.5916003297084,
+       "dummy60": 657.5050238245822,
+       "ladder-mana": 693.4559549513901,
+       "ladder-armor": 693.4559549513901,
+       "ladder-physical": 693.7292664991426,
+       "ladder-spell": 786.2353864441131,
+       "raid": 827.8058691864569,
+       "curve60": 752.7248450025015,
+       "curve120": 684.9288148645717,
+       "curve180": 591.5916003297084,
+       "curve240": 493.9503912837927,
+       "curve360": 426.03943284547915,
+       "max": 827.8058691864569,
+       "max60": 876.5592456441334
       }
      }
     }
    },
-   "seconds": 518,
+   "seconds": 2606,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build leveling-frost --compare F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-0-5-46.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-23-0-28.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-28-0-23.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r1.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r2.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r3.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r4.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r5.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r6.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r7.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec frost-raid --preset-candidates",
      "rc": 0,
-     "seconds": 77,
+     "seconds": 1,
      "tail": [
-      "L60: fight 13.1s (median 12.7, p90 17.2), downtime 7.7s, deaths/100 0.0, time/kill 28.8s, 125 kills/h, mana/kill 1309, shares Ice Lance 55%, Frostbolt 27%, Fire Blast 14%, Wand 2%, Frost Nova 1%",
-      "   vs cand-frost-0-5-46: time/kill 29.6s (+3.0%), fight 12.6s, deaths/100 0.0",
-      "   vs cand-frost-23-0-28: time/kill 28.8s (+0.1%), fight 13.4s, deaths/100 0.0",
-      "   vs cand-frost-28-0-23: time/kill 27.8s (-3.3%), fight 12.8s, deaths/100 0.0",
-      "   vs cand-frost-r1: time/kill 27.9s (-3.0%), fight 13.0s, deaths/100 0.0",
-      "   vs cand-frost-r2: time/kill 28.1s (-2.2%), fight 13.3s, deaths/100 0.0",
-      "   vs cand-frost-r3: time/kill 28.1s (-2.2%), fight 12.6s, deaths/100 0.0",
-      "   vs cand-frost-r4: time/kill 27.6s (-3.8%), fight 12.8s, deaths/100 0.0",
-      "   vs cand-frost-r5: time/kill 28.1s (-2.2%), fight 12.6s, deaths/100 0.0",
-      "   vs cand-frost-r6: time/kill 28.1s (-2.2%), fight 12.6s, deaths/100 0.0",
-      "   vs cand-frost-r7: time/kill 27.6s (-3.9%), fight 13.1s, deaths/100 0.0",
-      "done in 76s"
+      "mage frost-raid: cand-frost-raid-preset-arcane-frost.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build opt-frost-leveling-leveling-st --compare leveling-frost opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py mage --spec frost-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 151,
+     "seconds": 229,
      "tail": [
-      "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +2.6%",
-      "   Ice Lance                1  sim  +16.2% (fight  +29.5% +-0.7)  EV  +26.7%",
-      "   Ice Shards               5  sim   +8.4% (fight  +10.9% +-0.5)  EV  +10.4%",
-      "   Improved Frostbolt       5  sim   +3.1% (fight   +5.2% +-0.6)  EV   +3.0%",
-      "   Incineration             3  sim   +1.5% (fight   +1.9% +-0.5)  EV   +1.0%",
-      "   Magic Absorption         2  sim   +0.1% (fight   -0.0% +-0.1)  EV   +0.1%",
-      "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.8%",
-      "   Presence of Mind         1  sim   +0.5% (fight   +1.0% +-0.4)  EV   +0.9%",
-      "   Shatter                  3  sim  +15.6% (fight  +20.3% +-0.5)  EV  +18.9%",
-      "   Wand Specialization      2  sim   +1.0% (fight   +1.3% +-0.4)  EV   +0.3%",
-      "done in 150s",
-      "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frost-leveling.md"
+      "Arcane Geometry                 0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Counterspell           0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
+      "Ice Barrier                     0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Cone of Cold           0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Shielding                0.0%      0.0%     0.0%   1.00   noise",
+      "Burning Soul                    0.0%      0.0%     0.0%   1.00   noise",
+      "Flame Throwing                  0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Fire Blast             0.0%      0.2%     0.2%   1.00   noise",
+      "Improved Fireball               0.0%      0.0%     0.0%   1.00   noise",
+      "Magic Absorption               -0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference\\data\\scorer\\effects\\forever\\mage.manual.json (16 entries, 7 fitted) and mage\\research\\raid\\raidsim\\frost-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec fire-leveling --build opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py mage --spec frost-raid --profile raid-dps --write --export --seed frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid frost-ml-raid arcane-frost-open-raid F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-preset-arcane-frost.json",
      "rc": 0,
-     "seconds": 114,
+     "seconds": 121,
      "tail": [
-      "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.4%",
-      "   Ice Lance                1  sim  +10.1% (fight  +15.5% +-0.7)  EV  +67.0%",
-      "   Ignite                   5  sim   +4.8% (fight   +6.4% +-0.5)  EV  +16.4%",
-      "   Impact                   3  sim   +0.3% (fight   -0.0% +-0.6)  EV   +1.9%",
-      "   Improved Fire Blast      2  sim   +0.8% (fight   +3.0% +-0.5)  EV   +7.3%",
-      "   Improved Fireball        3  sim   +0.4% (fight   +2.3% +-0.5)  EV   +0.8%",
-      "   Improved Scorch          3  sim   -0.1% (fight   -0.1% +-0.5)  EV   +1.3%",
-      "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +2.5%",
-      "   Permafrost               3  sim   +0.0% (fight   -0.1% +-0.5)  EV   +0.4%",
-      "   Pyroblast                1  sim   +3.5% (fight   +9.7% +-0.5)  EV   +8.4%",
-      "done in 114s",
-      "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\fire-leveling.md"
+      "| Ice Barrier | Frost 7 | 1/1 | +0.01% | no |",
+      "| Critical Mass | Fire 5 | 1/5 | +0.01% | no |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | no |",
+      "| Frost Channeling | Frost 3 | 3/3 | +0.00% | yes |",
+      "| Arcane Concentration | Arcane 2 | 2/5 | +0.00% | yes |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Arcane Meditation | Arcane 4 | 1/3 | +0.00% | no |",
+      "| Master of Elements | Fire 4 | 1/3 | +0.00% | no |",
+      "",
+      "exported opt-frost-raid-raid-dps -> mage\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote mage\\research\\raid\\optimizer\\frost-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frostfire-leveling --build opt-frost-leveling-leveling-st --compare opt-frost-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec frost-raid --builds opt-frost-raid-raid-dps F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-from-arcane-power.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-hand-2026-09-27.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-hand-2026-09-28.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-preset-arcane-frost.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r1.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r10.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r11.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r12.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r13.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r2.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r3.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r4.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r5.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r6.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r7.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r8.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r9.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 176,
+     "seconds": 26,
      "tail": [
-      "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Ice Lance                1  sim  +52.7% (fight  +68.3% +-0.8)  EV     n/a",
-      "   Ice Shards               5  sim  +12.0% (fight  +14.9% +-0.7)  EV     n/a",
-      "   Improved Frostbolt       5  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Incineration             3  sim   +2.3% (fight   +2.9% +-0.6)  EV     n/a",
-      "   Magic Absorption         2  sim   +0.2% (fight   +0.0% +-0.4)  EV     n/a",
-      "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Presence of Mind         1  sim   +0.8% (fight   +1.5% +-0.6)  EV     n/a",
-      "   Shatter                  3  sim  +20.4% (fight  +25.5% +-0.8)  EV     n/a",
-      "   Wand Specialization      2  sim   +1.1% (fight   +1.4% +-0.7)  EV     n/a",
-      "done in 176s",
-      "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frostfire-leveling.md"
+      "  cand-frost-raid-r11                         19/2/30  DPS    497.5 ±  27.3  threat      397  oom   0.0s  scorer +49.5%",
+      "  cand-frost-raid-hand-2026-09-28             20/1/30  DPS    496.6 ±  25.6  threat      397  oom   0.0s  scorer +49.2%",
+      "  cand-frost-raid-r12                         20/1/30  DPS    496.6 ±  25.6  threat      397  oom   0.0s  scorer +49.2%",
+      "  cand-frost-raid-r7                          20/1/30  DPS    496.6 ±  25.6  threat      397  oom   0.0s  scorer +49.2%",
+      "  cand-frost-raid-r2                          22/0/29  DPS    496.2 ±  27.2  threat      362  oom   0.0s  scorer +51.2%",
+      "  cand-frost-raid-r5                          4/17/30  DPS    489.2 ±  28.2  threat      391  oom   1.5s  scorer +45.9%",
+      "  cand-frost-raid-r4                          3/18/30  DPS    489.0 ±  26.5  threat      391  oom   0.8s  scorer +46.7%",
+      "  cand-frost-raid-r13                         19/2/30  DPS    479.7 ±  27.1  threat      369  oom   0.0s  scorer +45.8%",
+      "  cand-frost-raid-r6                          2/18/31  DPS    468.1 ±  31.6  threat      363  oom   5.7s  scorer +42.3%",
+      "  cand-frost-raid-r10                         21/0/30  DPS    461.5 ±  27.9  threat      338  oom   0.3s  scorer +43.0%",
+      "  cand-frost-raid-r8                          17/3/31  DPS    456.8 ±  30.3  threat      355  oom  11.1s  scorer +42.7%",
+      "  damage shares of opt-frost-raid-raid-dps: Frostbolt 64%, Arcane Missiles 25%, Ice Lance 9%, Demonic Rune 2%, Frost Blast 0%, Fire Blast 0% | model sources: frostbolt 65%, missiles 26%, ice_lance 9%, fire_blast 0% (unmatched 2%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec frost-raid --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc frost-ml-raid arcane-frost-open-raid F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-from-arcane-power.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-hand-2026-09-27.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-hand-2026-09-28.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-preset-arcane-frost.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r1.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r10.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r11.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r12.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r13.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r14.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r2.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r3.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r4.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r5.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r6.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r7.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r8.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-frost-raid-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 343,
+     "tail": [
+      "  cand-frost-raid-r4                          3/18/30  DPS    489.3 ±  26.7  threat      391  oom   0.8s  scorer +46.7%",
+      "  frost-fingers-of-frost-raid                 22/0/29  DPS    484.0 ±  27.2  threat      372  oom   0.0s  scorer +47.8%",
+      "  frost-ml-raid                               21/0/30  DPS    482.2 ±  27.4  threat      371  oom   0.0s  scorer +46.7%",
+      "  cand-frost-raid-r13                         19/2/30  DPS    480.1 ±  27.3  threat      369  oom   0.0s  scorer +45.8%",
+      "  cand-frost-raid-r6                          2/18/31  DPS    468.4 ±  31.7  threat      363  oom   5.7s  scorer +42.3%",
+      "  cand-frost-raid-r10                         21/0/30  DPS    462.0 ±  27.8  threat      338  oom   0.3s  scorer +43.0%",
+      "  cand-frost-raid-r8                          17/3/31  DPS    457.0 ±  30.1  threat      355  oom  10.8s  scorer +42.7%",
+      "  frost-winters-chill-raid                    21/0/30  DPS    441.4 ±  22.3  threat      343  oom   0.1s  scorer +38.8%",
+      "  sim preset: Fire                                     DPS    438.8 ±  27.6  threat      387  oom   7.7s",
+      "  sim preset: FFB                                      DPS    386.8 ±  26.8  threat      286  oom   2.3s",
+      "  damage shares of frost-arcane-power-raid: Frostbolt 46%, Arcane Missiles 38%, Arcane Blast 14%, Demonic Rune 2%, Frost Blast 0%, Fire Blast 0% | model sources: frostbolt 55%, missiles 45%, fire_blast 0% (unmatched 16%)",
+      "wrote mage\\research\\raid\\raidsim\\frost-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py mage --spec frost-raid --profile parse --write --export --seed frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid frost-ml-raid arcane-frost-open-raid",
+     "rc": 0,
+     "seconds": 112,
+     "tail": [
+      "| Combustion | Fire 7 | 1/1 | +0.02% | no |",
+      "| Ice Barrier | Frost 7 | 1/1 | +0.01% | no |",
+      "| Critical Mass | Fire 5 | 1/5 | +0.01% | no |",
+      "| Ice Block | Frost 4 | 1/1 | +0.01% | yes |",
+      "| Improved Channeling | Arcane 1 | 1/5 | +0.01% | yes |",
+      "| Magic Absorption | Arcane 2 | 1/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | no |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "",
+      "exported opt-frost-raid-parse -> mage\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote mage\\research\\raid\\optimizer\\frost-raid-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec frost-raid --env environments --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc frost-ml-raid arcane-frost-open-raid opt-frost-raid-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 789,
+     "tail": [
+      "  sim preset: Arcane Frost                             dummy   581.6  dummy60   636.8  ladder-mana   595.4  ladder-armor   595.4  ladder-physical   595.7  ladder-spell   670.3  raid   692.6  curve60   643.3  curve120   610.6  curve180   581.6  curve240   581.6  curve360   535.6  max   692.6  max60   754.6",
+      "  frost-arcane-power-raid                     35/0/16  dummy   576.8  dummy60   632.1  ladder-mana   583.1  ladder-armor   583.1  ladder-physical   582.6  ladder-spell   657.0  raid   676.0  curve60   628.5  curve120   598.3  curve180   576.8  curve240   574.9  curve360   547.3  max   676.0  max60   735.5",
+      "  arcane-frost-open-raid                      29/0/22  dummy   576.5  dummy60   632.1  ladder-mana   602.4  ladder-armor   602.4  ladder-physical   602.0  ladder-spell   678.3  raid   687.7  curve60   605.5  curve120   605.0  curve180   576.5  curve240   573.1  curve360   504.1  max   687.7  max60   691.2",
+      "  opt-frost-raid-parse                        29/0/22  dummy   555.5  dummy60   607.4  ladder-mana   555.9  ladder-armor   555.9  ladder-physical   555.2  ladder-spell   625.3  raid   628.1  curve60   564.2  curve120   562.6  curve180   555.5  curve240   559.2  curve360   554.3  max   628.1  max60   638.1",
+      "  opt-frost-raid-raid-dps                     29/0/22  dummy   549.4  dummy60   600.3  ladder-mana   556.1  ladder-armor   556.1  ladder-physical   555.2  ladder-spell   625.4  raid   627.8  curve60   563.6  curve120   563.0  curve180   549.4  curve240   542.0  curve360   512.4  max   627.8  max60   637.4",
+      "  sim preset: Arcane Fire                              dummy   521.1  dummy60   568.8  ladder-mana   522.2  ladder-armor   522.2  ladder-physical   522.0  ladder-spell   585.7  raid   645.4  curve60   571.2  curve120   537.1  curve180   521.1  curve240   521.0  curve360   502.0  max   645.4  max60   698.7",
+      "  frost-fingers-of-frost-raid                 22/0/29  dummy   484.0  dummy60   530.3  ladder-mana   484.3  ladder-armor   484.3  ladder-physical   484.0  ladder-spell   544.9  raid   547.1  curve60   494.0  curve120   490.4  curve180   484.0  curve240   486.0  curve360   475.6  max   547.1  max60   557.2",
+      "  frost-ml-raid                               21/0/30  dummy   482.2  dummy60   528.3  ladder-mana   482.2  ladder-armor   482.2  ladder-physical   481.9  ladder-spell   542.5  raid   544.4  curve60   491.7  curve120   488.8  curve180   482.2  curve240   484.0  curve360   473.2  max   544.4  max60   555.2",
+      "  frost-winters-chill-raid                    21/0/30  dummy   441.4  dummy60   479.6  ladder-mana   441.4  ladder-armor   441.4  ladder-physical   441.1  ladder-spell   497.3  raid   500.9  curve60   458.1  curve120   449.5  curve180   441.4  curve240   441.8  curve360   432.6  max   500.9  max60   518.3",
+      "  sim preset: Fire                                     dummy   438.8  dummy60   479.7  ladder-mana   447.9  ladder-armor   447.9  ladder-physical   446.8  ladder-spell   498.6  raid   504.4  curve60   453.7  curve120   453.3  curve180   438.8  curve240   435.6  curve360   413.2  max   504.4  max60   512.0",
+      "  sim preset: FFB                                      dummy   386.8  dummy60   423.6  ladder-mana   390.0  ladder-armor   390.0  ladder-physical   389.5  ladder-spell   439.0  raid   442.5  curve60   391.4  curve120   393.0  curve180   386.8  curve240   378.8  curve360   367.6  max   442.5  max60   444.4",
+      "wrote mage\\research\\raid\\raidsim\\frost-raid-environments.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec fire-raid --preset-candidates",
+     "rc": 0,
+     "seconds": 1,
+     "tail": [
+      "mage fire-raid: cand-fire-raid-preset-fire.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py mage --spec fire-raid --iterations 1500 --write",
+     "rc": 0,
+     "seconds": 169,
+     "tail": [
+      "Arcane Blast                    0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Wrath                    0.0%      3.0%     0.0%   0.00  fitted",
+      "Magic Absorption                0.0%      0.0%     0.0%   1.00   noise",
+      "Flame Throwing                  0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Geometry                 0.0%      0.0%     0.0%   1.00   noise",
+      "Frost Channeling                0.0%      0.0%     0.0%   1.00   noise",
+      "Frost Warding                   0.0%      0.0%     0.0%   1.00   noise",
+      "Ice Shards                      0.0%      0.0%     0.0%   1.00   noise",
+      "Permafrost                      0.0%      0.0%     0.0%   1.00   noise",
+      "Shatter                         0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference\\data\\scorer\\effects\\forever\\mage.manual.json (15 entries, 8 fitted) and mage\\research\\raid\\raidsim\\fire-raid-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py mage --spec fire-raid --profile raid-dps --write --export --seed fire-raid F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire.json",
+     "rc": 0,
+     "seconds": 59,
+     "tail": [
+      "| Ice Block | Frost 4 | 1/1 | +0.00% | no |",
+      "| Magic Absorption | Arcane 2 | 2/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | yes |",
+      "| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | yes |",
+      "| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |",
+      "",
+      "exported opt-fire-raid-raid-dps -> mage\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote mage\\research\\raid\\optimizer\\fire-raid-raid-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec fire-raid --builds opt-fire-raid-raid-dps F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-hand-2026-09-28.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r1.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r2.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r3.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r4.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r5.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r6.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r7.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r8.json --iterations 1000 --no-presets",
+     "rc": 0,
+     "seconds": 41,
+     "tail": [
+      "  opt-fire-raid-raid-dps                      18/31/2  DPS    597.0 ±  49.2  threat      618  oom  29.7s  scorer +277.0%",
+      "  cand-fire-raid-preset-fire                  16/32/3  DPS    590.1 ±  49.4  threat      610  oom  39.7s  scorer +268.3%",
+      "  cand-fire-raid-r1                           16/32/3  DPS    574.9 ±  50.9  threat      595  oom  43.3s  scorer +258.6%",
+      "  cand-fire-raid-r7                           16/32/3  DPS    573.7 ±  50.9  threat      594  oom  43.3s  scorer +258.6%",
+      "  cand-fire-raid-r8                           14/34/3  DPS    570.5 ±  51.6  threat      479  oom  44.2s  scorer +252.8%",
+      "  cand-fire-raid-r2                           13/35/3  DPS    567.9 ±  50.0  threat      422  oom  43.3s  scorer +256.8%",
+      "  cand-fire-raid-r4                           16/32/3  DPS    563.9 ±  49.3  threat      587  oom  43.0s  scorer +255.1%",
+      "  cand-fire-raid-r5                           16/32/3  DPS    563.8 ±  49.2  threat      587  oom  43.0s  scorer +255.1%",
+      "  cand-fire-raid-r6                           15/33/3  DPS    563.2 ±  49.2  threat      587  oom  42.9s  scorer +255.1%",
+      "  cand-fire-raid-hand-2026-09-28              14/34/3  DPS    562.3 ±  49.1  threat      417  oom  42.9s  scorer +251.8%",
+      "  cand-fire-raid-r3                           0/33/18  DPS    492.0 ±  40.9  threat      367  oom  62.8s  scorer +209.5%",
+      "  damage shares of opt-fire-raid-raid-dps: Fireball 41%, Pyroblast 20%, Fire Blast 16%, Ignite 11%, Scorch 11%, Arcane Missiles 1% | model sources: fireball 41%, pyroblast 20%, fire_blast 16%, ignite 11%, scorch 11%, missiles 1% (unmatched 0%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py mage --spec fire-raid --iterations 1500 --write",
+     "rc": 0,
+     "seconds": 309,
+     "tail": [
+      "Improved Channeling             0.0%      0.0%     0.0%   1.00   noise",
+      "Magic Absorption                0.0%      0.0%     0.0%   1.00   noise",
+      "Flame Throwing                  0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Blast                    0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Geometry                 0.0%      0.0%     0.0%   1.00   noise",
+      "Frost Channeling                0.0%      0.0%     0.0%   1.00   noise",
+      "Frost Warding                   0.0%      0.0%     0.0%   1.00   noise",
+      "Ice Shards                      0.0%      0.0%     0.0%   1.00   noise",
+      "Permafrost                      0.0%      0.0%     0.0%   1.00   noise",
+      "Shatter                         0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference\\data\\scorer\\effects\\forever\\mage.manual.json (14 entries, 2 fitted) and mage\\research\\raid\\raidsim\\fire-raid-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py mage --spec fire-raid --profile raid-dps --write --export --seed fire-raid F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire.json",
+     "rc": 0,
+     "seconds": 58,
+     "tail": [
+      "| Ice Block | Frost 4 | 1/1 | +0.00% | no |",
+      "| Magic Absorption | Arcane 2 | 2/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | yes |",
+      "| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | yes |",
+      "| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |",
+      "",
+      "exported opt-fire-raid-raid-dps -> mage\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote mage\\research\\raid\\optimizer\\fire-raid-raid-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec fire-raid --builds fire-raid opt-fire-raid-raid-dps F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-hand-2026-09-28.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r1.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r2.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r3.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r4.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r5.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r6.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r7.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r8.json F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 41,
+     "tail": [
+      "  cand-fire-raid-r8                           14/34/3  DPS    572.4 ±  50.5  threat      481  oom  44.1s  scorer +256.4%",
+      "  cand-fire-raid-r2                           13/35/3  DPS    570.3 ±  49.4  threat      424  oom  43.1s  scorer +258.4%",
+      "  cand-fire-raid-r5                           16/32/3  DPS    564.0 ±  50.0  threat      587  oom  43.0s  scorer +254.6%",
+      "  cand-fire-raid-r4                           16/32/3  DPS    563.9 ±  49.9  threat      587  oom  42.9s  scorer +254.6%",
+      "  cand-fire-raid-r6                           15/33/3  DPS    563.2 ±  49.8  threat      587  oom  42.9s  scorer +254.6%",
+      "  cand-fire-raid-hand-2026-09-28              14/34/3  DPS    562.4 ±  49.2  threat      417  oom  43.0s  scorer +255.3%",
+      "  cand-fire-raid-r3                           0/33/18  DPS    493.1 ±  41.3  threat      368  oom  62.8s  scorer +209.4%",
+      "  sim preset: FFB                                      DPS    456.3 ±  36.5  threat      476  oom  68.6s",
+      "  sim preset: Arcane Fire                              DPS    374.6 ±  18.1  threat      273  oom  14.2s",
+      "  sim preset: Arcane Frost                             DPS    336.3 ±  12.7  threat      347  oom  14.2s",
+      "  damage shares of fire-raid: Fireball 36%, Pyroblast 21%, Fire Blast 19%, Ignite 11%, Scorch 11%, Arcane Missiles 2% | model sources: fireball 36%, pyroblast 21%, fire_blast 19%, ignite 11%, scorch 11%, missiles 2% (unmatched 0%)",
+      "wrote mage\\research\\raid\\raidsim\\fire-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py mage --spec fire-raid --profile parse --write --export --seed fire-raid",
+     "rc": 0,
+     "seconds": 56,
+     "tail": [
+      "| Ice Block | Frost 4 | 1/1 | +0.00% | no |",
+      "| Magic Absorption | Arcane 2 | 2/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | yes |",
+      "| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | yes |",
+      "| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |",
+      "",
+      "exported opt-fire-raid-parse -> mage\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote mage\\research\\raid\\optimizer\\fire-raid-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py mage --spec fire-raid --env environments --builds fire-raid opt-fire-raid-raid-dps opt-fire-raid-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 252,
+     "tail": [
+      "== mage fire-raid environments (gear raid mage-dps-p1.p1opt.gear.json, max mage-dps-p1.p1opt.gear.json):",
+      "  opt-fire-raid-raid-dps                      18/31/2  dummy   598.0  dummy60   679.2  ladder-mana   667.7  ladder-armor   667.7  ladder-physical   668.2  ladder-spell   758.2  raid   808.0  curve60   708.9  curve120   656.4  curve180   598.0  curve240   521.5  curve360   454.7  max   808.0  max60   831.7",
+      "  opt-fire-raid-parse                         17/31/3  dummy   594.1  dummy60   658.3  ladder-mana   692.6  ladder-armor   692.6  ladder-physical   693.8  ladder-spell   784.6  raid   826.1  curve60   752.5  curve120   685.2  curve180   594.1  curve240   498.1  curve360   432.3  max   826.1  max60   873.7",
+      "  sim preset: Fire                                     dummy   591.6  dummy60   657.5  ladder-mana   693.5  ladder-armor   693.5  ladder-physical   693.7  ladder-spell   786.2  raid   827.8  curve60   752.7  curve120   684.9  curve180   591.6  curve240   494.0  curve360   426.0  max   827.8  max60   876.6",
+      "  fire-raid                                   14/34/3  dummy   576.2  dummy60   639.7  ladder-mana   681.7  ladder-armor   681.7  ladder-physical   679.3  ladder-spell   772.5  raid   820.9  curve60   752.2  curve120   676.0  curve180   576.2  curve240   474.4  curve360   406.5  max   820.9  max60   873.3",
+      "  sim preset: FFB                                      dummy   456.3  dummy60   500.9  ladder-mana   569.4  ladder-armor   569.4  ladder-physical   569.1  ladder-spell   647.4  raid   598.1  curve60   674.8  curve120   537.4  curve180   456.3  curve240   365.5  curve360   313.1  max   598.1  max60   622.2",
+      "  sim preset: Arcane Fire                              dummy   374.6  dummy60   407.3  ladder-mana   382.0  ladder-armor   382.0  ladder-physical   381.8  ladder-spell   431.2  raid   612.7  curve60   380.1  curve120   383.6  curve180   374.6  curve240   365.4  curve360   315.6  max   612.7  max60   623.8",
+      "  sim preset: Arcane Frost                             dummy   336.3  dummy60   365.5  ladder-mana   343.3  ladder-armor   343.3  ladder-physical   343.1  ladder-spell   382.6  raid   413.3  curve60   343.0  curve120   345.1  curve180   336.3  curve240   327.8  curve360   283.0  max   413.3  max60   422.3",
+      "wrote mage\\research\\raid\\raidsim\\fire-raid-environments.md"
      ],
      "stderr": []
     }
@@ -2237,9 +2422,10 @@
    "spec": "bm-leveling",
    "hand": "leveling-beast-mastery",
    "opt": "opt-bm-leveling-leveling-st",
-   "started": "2026-10-22T22:53:45",
+   "started": "2026-10-24T05:57:31",
    "steps": [
-    "raid"
+    "race",
+    "report"
    ],
    "raid": {
     "mm-raid": {
@@ -2709,303 +2895,103 @@
      }
     }
    },
-   "seconds": 871,
+   "seconds": 772,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --preset-candidates",
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py hunter --spec bm-leveling --build leveling-beast-mastery --compare F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-hand-2026-09-26.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r1.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r2.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r3.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r4.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r5.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r6.json F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\candidates\\cand-bm-r7.json --levels 20,30,40,50,60 --fights 1000",
+     "rc": 0,
+     "seconds": 77,
+     "tail": [
+      "   vs cand-bm-r6: time/kill 27.0s (+0.9%), fight 15.6s, deaths/100 0.0",
+      "   vs cand-bm-r7: time/kill 27.1s (+1.1%), fight 15.7s, deaths/100 0.0",
+      "L60: fight 16.6s (median 16.3, p90 20.5), downtime 4.0s, deaths/100 0.0, time/kill 28.6s, 126 kills/h, mana/kill 577, shares Auto Shot 36%, Cat melee 21%, Serpent Sting 16%, Aimed Shot 14%, Claw 8%",
+      "   vs cand-bm-hand-2026-09-26: time/kill 29.2s (+2.2%), fight 16.2s, deaths/100 0.0",
+      "   vs cand-bm-r1: time/kill 29.2s (+2.2%), fight 16.9s, deaths/100 0.0",
+      "   vs cand-bm-r2: time/kill 29.3s (+2.4%), fight 17.2s, deaths/100 0.0",
+      "   vs cand-bm-r3: time/kill 28.9s (+1.2%), fight 16.7s, deaths/100 0.0",
+      "   vs cand-bm-r4: time/kill 29.0s (+1.4%), fight 16.8s, deaths/100 0.0",
+      "   vs cand-bm-r5: time/kill 28.2s (-1.3%), fight 16.2s, deaths/100 0.0",
+      "   vs cand-bm-r6: time/kill 28.2s (-1.4%), fight 16.2s, deaths/100 0.0",
+      "   vs cand-bm-r7: time/kill 28.0s (-2.0%), fight 16.1s, deaths/100 0.0",
+      "done in 76s"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-st --compare leveling-beast-mastery --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
+     "rc": 0,
+     "seconds": 155,
+     "tail": [
+      "   Improved Stings          3  sim   +2.0% (fight   +2.9% +-0.2)  EV   +1.8%",
+      "   Lethal Attacks           5  sim   +3.0% (fight   +4.2% +-0.3)  EV   +1.4%",
+      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Ranged Weapon Specialization 5  sim   +2.4% (fight   +3.3% +-0.3)  EV   +3.1%",
+      "   Rapid Killing            2  sim   +0.3% (fight   +0.5% +-0.2)  EV   +0.0%",
+      "   Rapid Recuperation       2  sim   +2.7% (fight   +0.3% +-0.2)  EV   +2.1%",
+      "   Scatter Shot             1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Sniper Shot              1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.8%",
+      "   Trueshot Aura            1  sim   +1.6% (fight   +2.3% +-0.3)  EV   +1.3%",
+      "   Unleashed Fury           5  sim   +4.7% (fight   +6.1% +-0.3)  EV   +4.8%",
+      "done in 154s",
+      "wrote F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\bm-leveling.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py hunter --spec mm-raid --build opt-mm-raid-leveling-st --compare opt-bm-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
+     "rc": 0,
+     "seconds": 204,
+     "tail": [
+      "   Improved Tracking        5  sim   +2.1% (fight   +3.1% +-0.3)  EV   +2.3%",
+      "   Lethal Attacks           5  sim   +3.1% (fight   +4.2% +-0.3)  EV   +1.8%",
+      "   Mortal Shots             2  sim   +0.2% (fight   +0.2% +-0.3)  EV   +0.5%",
+      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Ranged Weapon Specialization 5  sim   +1.9% (fight   +2.9% +-0.3)  EV   +2.3%",
+      "   Rapid Killing            2  sim   +0.2% (fight   +0.6% +-0.2)  EV   +1.3%",
+      "   Rapid Recuperation       2  sim   +2.8% (fight   +0.3% +-0.3)  EV   +1.2%",
+      "   Scatter Shot             1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Sniper Shot              1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +2.3%",
+      "   Trueshot Aura            1  sim   +1.5% (fight   +2.1% +-0.3)  EV   +1.8%",
+      "done in 204s",
+      "wrote F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\mm-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "abs_dps_factor hunter mm-raid",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "hunter mm-raid: cand-mm-raid-preset-bm-weave.json, cand-mm-raid-preset-bm.json"
+      "0.985"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py hunter --spec mm-raid --iterations 1500 --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py hunter --spec melee-dps --build leveling-melee --compare opt-bm-leveling-leveling-st opt-melee-dps-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 115,
+     "seconds": 337,
      "tail": [
-      "Endurance Training              0.0%      0.2%     0.3%   1.00   noise",
-      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Bestial Swiftness               0.0%      0.0%     0.0%   1.00   noise",
-      "Intimidation                    0.0%      0.6%     0.0%   0.00  fitted",
-      "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
-      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Mend Pet               0.0%      0.0%     0.0%   1.00   noise",
-      "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
-      "Summon Hawk                    -5.3%     18.9%     0.0%   0.00  fitted",
-      "wrote _reference\\data\\scorer\\effects\\forever\\hunter.manual.json (19 entries, 9 fitted) and hunter\\research\\raid\\raidsim\\mm-raid-calibration.json"
+      "   Improved Tracking        5  sim   +2.8% (fight   +3.0% +-0.4)  EV   +2.5%",
+      "   Lacerating Strikes       1  sim   +0.6% (fight   +0.6% +-0.4)  EV   +0.3%",
+      "   Lethal Attacks           5  sim   +5.1% (fight   +4.7% +-0.4)  EV   +5.1%",
+      "   Lightning Reflexes       5  sim   +1.8% (fight   +2.0% +-0.4)  EV   +1.5%",
+      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.0%",
+      "   Predator's Edge          5  sim   +2.7% (fight   +2.8% +-0.4)  EV   +8.2%",
+      "   Resourcefulness          2  sim  +15.1% (fight   -0.8% +-0.4)  EV   +8.4%",
+      "   Savage Strikes           2  sim   +1.7% (fight   +1.2% +-0.4)  EV   +2.1%",
+      "   Strider Kick             1  sim   +0.0% (fight   +0.0% +-0.0)  EV  +10.8%",
+      "   Surefooted               3  sim   +2.5% (fight   +3.2% +-0.4)  EV   +2.1%",
+      "done in 336s",
+      "wrote F:\\wow-forever\\hunter\\research\\leveling\\fightlab\\melee-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid marksmanship-with-a-pet-open-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm-weave.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm.json",
-     "rc": 0,
-     "seconds": 70,
-     "tail": [
-      "| Barrage | Marksmanship 5 | 1/3 | +0.26% | no |",
-      "| Endurance Training | Beast Mastery 1 | 5/5 | +0.13% | yes |",
-      "| Improved Arcane Shot | Marksmanship 3 | 1/5 | +0.03% | yes |",
-      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
-      "| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |",
-      "| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-mm-raid-raid-dps -> hunter\\research\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\research\\raid\\optimizer\\mm-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --builds opt-mm-raid-raid-dps F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-09-27.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-10-02.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm-weave.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r1.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r10.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r11.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r2.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r3.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r4.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r5.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r6.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r7.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r8.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r9.json --iterations 1000 --no-presets",
-     "rc": 0,
-     "seconds": 6,
-     "tail": [
-      "  cand-mm-raid-r5                             22/29/0  DPS    397.2 ±  13.7  threat      303  oom  21.1s  scorer +48.1%",
-      "  cand-mm-raid-preset-bm-weave                31/16/4  DPS    394.8 ±  13.1  threat      240  oom  41.2s  scorer +54.3%",
-      "  cand-mm-raid-preset-bm                      31/16/4  DPS    394.8 ±  13.1  threat      240  oom  41.2s  scorer +54.3%",
-      "  cand-mm-raid-r11                            31/20/0  DPS    393.9 ±  13.3  threat      239  oom  36.3s  scorer +55.8%",
-      "  cand-mm-raid-r4                             24/27/0  DPS    391.6 ±  13.5  threat      297  oom  21.1s  scorer +46.2%",
-      "  cand-mm-raid-r8                             19/32/0  DPS    390.2 ±  13.8  threat      297  oom  32.5s  scorer +46.6%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    381.9 ±  13.7  threat      287  oom  34.8s  scorer +43.0%",
-      "  cand-mm-raid-r10                            22/29/0  DPS    375.4 ±  12.8  threat      260  oom  21.1s  scorer +49.3%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    372.3 ±  13.2  threat      299  oom  43.1s  scorer +36.7%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    359.0 ±  12.5  threat      250  oom  39.4s  scorer +40.4%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    351.6 ±  12.4  threat      250  oom  39.4s  scorer +38.0%",
-      "  damage shares of opt-mm-raid-raid-dps: Auto Shot 33%, Pet: Auto Attack 30%, Arcane Shot 16%, Serpent Sting 8%, Aimed Shot 6%, Pet: Bite 2%, Pet: Claw 2%, Multi-Shot 1% | model sources: pet 35%, auto 34%, arcane 16%, serpent 8%, aimed 6%, multi 1% (unmatched 1%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py hunter --spec mm-raid --iterations 1500 --write",
-     "rc": 0,
-     "seconds": 120,
-     "tail": [
-      "Endurance Training              0.0%      0.3%     0.3%   1.00   noise",
-      "Bestial Swiftness               0.0%      0.0%     0.0%   1.00   noise",
-      "Intimidation                    0.0%      0.0%     0.0%   1.00   noise",
-      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
-      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Mend Pet               0.0%      0.0%     0.0%   1.00   noise",
-      "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
-      "Summon Hawk                    -5.3%      0.0%     0.0%   1.00    kept",
-      "wrote _reference\\data\\scorer\\effects\\forever\\hunter.manual.json (18 entries, 0 fitted) and hunter\\research\\raid\\raidsim\\mm-raid-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid marksmanship-with-a-pet-open-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm-weave.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm.json",
-     "rc": 0,
-     "seconds": 68,
-     "tail": [
-      "| Barrage | Marksmanship 5 | 1/3 | +0.26% | no |",
-      "| Endurance Training | Beast Mastery 1 | 5/5 | +0.13% | yes |",
-      "| Improved Arcane Shot | Marksmanship 3 | 1/5 | +0.03% | yes |",
-      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
-      "| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |",
-      "| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-mm-raid-raid-dps -> hunter\\research\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\research\\raid\\optimizer\\mm-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps marksmanship-with-a-pet-open-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-09-27.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-10-02.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm-weave.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-preset-bm.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r1.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r10.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r11.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r12.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r2.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r3.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r4.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r5.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r6.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r7.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r8.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-raid-r9.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 16,
-     "tail": [
-      "  sim preset: MM                                       DPS    375.9 ±  13.5  threat      318  oom  42.9s",
-      "  bm-mm-raid                                  22/29/0  DPS    375.7 ±  12.8  threat      261  oom  21.0s  scorer +49.3%",
-      "  cand-mm-raid-r10                            22/29/0  DPS    375.7 ±  12.8  threat      261  oom  21.0s  scorer +49.3%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    372.6 ±  13.6  threat      299  oom  42.9s  scorer +36.7%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    359.1 ±  12.7  threat      250  oom  39.4s  scorer +40.4%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    351.6 ±  12.5  threat      250  oom  39.4s  scorer +38.0%",
-      "  sim preset: SV                                       DPS    340.3 ±  12.7  threat      281  oom  34.4s",
-      "  sim preset: SV Weave                                 DPS    337.8 ±  12.5  threat      279  oom  40.9s",
-      "  sim preset: MM Weave                                 DPS    329.8 ±  12.2  threat      271  oom  49.1s",
-      "  sim preset: SV Melee                                 DPS    321.9 ±  10.5  threat      217  oom  46.1s",
-      "  damage shares of bm-mm-raid: Auto Shot 39%, Pet: Auto Attack 29%, Serpent Sting 11%, Aimed Shot 7%, Summon Hawk 5%, Pet: Bite 3%, Pet: Claw 2%, Arcane Shot 2% | model sources: auto 41%, pet 35%, serpent 12%, aimed 8%, arcane 2%, multi 2% (unmatched 6%)",
-      "wrote hunter\\research\\raid\\raidsim\\mm-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid marksmanship-with-a-pet-open-raid",
-     "rc": 0,
-     "seconds": 51,
-     "tail": [
-      "| Endurance Training | Beast Mastery 1 | 5/5 | +0.06% | yes |",
-      "| Improved Arcane Shot | Marksmanship 3 | 1/5 | +0.03% | yes |",
-      "| Survivalist | Survival 2 | 1/5 | +0.00% | yes |",
-      "| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |",
-      "| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |",
-      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
-      "",
-      "exported opt-mm-raid-parse -> hunter\\research\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\research\\raid\\optimizer\\mm-raid-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps marksmanship-with-a-pet-open-raid opt-mm-raid-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 117,
-     "tail": [
-      "  opt-mm-raid-parse                           31/15/5  dummy   410.3  dummy60   448.8  ladder-mana   466.6  ladder-armor   607.6  ladder-physical   637.5  ladder-spell   656.4  raid   740.7  curve60   486.0  curve120   425.5  curve180   410.3  curve240   384.5  curve360   373.7  max   749.1  max60   788.3",
-      "  bm-mm-full-buffs-raid                       21/30/0  dummy   394.9  dummy60   428.4  ladder-mana   446.6  ladder-armor   579.1  ladder-physical   607.8  ladder-spell   626.9  raid   715.3  curve60   459.3  curve120   416.6  curve180   394.9  curve240   371.8  curve360   359.6  max   715.3  max60   744.7",
-      "  sim preset: BM Weave                                 dummy   394.7  dummy60   436.4  ladder-mana   444.6  ladder-armor   605.0  ladder-physical   643.0  ladder-spell   655.0  raid   744.2  curve60   470.3  curve120   407.8  curve180   394.7  curve240   370.4  curve360   361.2  max   744.2  max60   783.2",
-      "  sim preset: BM                                       dummy   394.7  dummy60   436.4  ladder-mana   444.6  ladder-armor   605.0  ladder-physical   643.0  ladder-spell   655.0  raid   744.2  curve60   470.3  curve120   407.8  curve180   394.7  curve240   370.4  curve360   361.2  max   744.2  max60   783.2",
-      "  marksmanship-with-a-pet-open-raid            7/39/5  dummy   385.3  dummy60   417.2  ladder-mana   468.8  ladder-armor   594.3  ladder-physical   623.0  ladder-spell   649.2  raid   780.5  curve60   487.9  curve120   403.9  curve180   385.3  curve240   358.9  curve360   343.6  max   780.5  max60   823.1",
-      "  sim preset: MM                                       dummy   375.9  dummy60   405.2  ladder-mana   446.8  ladder-armor   564.1  ladder-physical   591.9  ladder-spell   614.9  raid   707.2  curve60   463.1  curve120   397.3  curve180   375.9  curve240   349.2  curve360   332.8  max   707.2  max60   732.9",
-      "  bm-mm-raid                                  22/29/0  dummy   375.7  dummy60   411.5  ladder-mana   416.4  ladder-armor   563.5  ladder-physical   599.2  ladder-spell   611.6  raid   714.0  curve60   436.9  curve120   397.8  curve180   375.7  curve240   354.8  curve360   344.1  max   714.0  max60   740.6",
-      "  sim preset: SV                                       dummy   340.3  dummy60   367.1  ladder-mana   400.3  ladder-armor   511.1  ladder-physical   537.0  ladder-spell   556.2  raid   648.3  curve60   416.0  curve120   358.3  curve180   340.3  curve240   316.9  curve360   306.0  max   648.3  max60   677.8",
-      "  sim preset: SV Weave                                 dummy   337.8  dummy60   364.6  ladder-mana   397.3  ladder-armor   504.4  ladder-physical   529.5  ladder-spell   549.5  raid   646.7  curve60   421.5  curve120   353.6  curve180   337.8  curve240   311.7  curve360   301.0  max   646.7  max60   654.9",
-      "  sim preset: MM Weave                                 dummy   329.8  dummy60   356.5  ladder-mana   398.7  ladder-armor   503.3  ladder-physical   529.3  ladder-spell   553.7  raid   628.9  curve60   420.0  curve120   347.9  curve180   329.8  curve240   305.8  curve360   294.6  max   628.9  max60   648.9",
-      "  sim preset: SV Melee                                 dummy   321.9  dummy60   351.6  ladder-mana   371.7  ladder-armor   506.4  ladder-physical   538.0  ladder-spell   551.2  raid   639.5  curve60   396.2  curve120   333.9  curve180   321.9  curve240   303.9  curve360   297.0  max   647.6  max60   675.6",
-      "wrote hunter\\research\\raid\\raidsim\\mm-raid-environments.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --preset-candidates",
+     "cmd": "abs_dps_factor hunter melee-dps",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "hunter mm-lonewolf-raid: cand-mm-lonewolf-raid-preset-mm.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
-     "rc": 0,
-     "seconds": 46,
-     "tail": [
-      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Aspect of the Monkey    0.0%      0.0%     0.0%   1.00   noise",
-      "Clever Traps                    0.0%      0.0%     0.0%   1.00   noise",
-      "Deterrence                      0.0%      0.0%     0.0%   1.00   noise",
-      "Entrapment                      0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Wing Clip              0.0%      0.0%     0.0%   1.00   noise",
-      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\hunter.manual.json (13 entries, 6 fitted) and hunter\\research\\raid\\raidsim\\mm-lonewolf-raid-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid marksmanship-ml-parse marksmanship-ml-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-preset-mm.json",
-     "rc": 0,
-     "seconds": 84,
-     "tail": [
-      "| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | yes |",
-      "| Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
-      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
-      "| Deterrence | Survival 3 | 1/1 | +0.00% | no |",
-      "| Counterattack | Survival 4 | 1/1 | +0.00% | no |",
-      "| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-mm-lonewolf-raid-raid-dps -> hunter\\research\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\research\\raid\\optimizer\\mm-lonewolf-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps marksmanship-ml-parse marksmanship-ml-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-hand-2026-09-26.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-preset-mm.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r1.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r2.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r3.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r4.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r5.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 8,
-     "tail": [
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    356.8 ±  15.3  threat      367  oom  34.6s  scorer +70.8%",
-      "  marksmanship-ml-parse                        7/44/0  DPS    353.9 ±  14.9  threat      364  oom  45.2s  scorer +74.9%",
-      "  marksmanship-ml-raid                        11/40/0  DPS    340.8 ±  14.5  threat      351  oom  47.1s  scorer +74.7%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    328.9 ±  13.1  threat      339  oom  37.0s  scorer +60.2%",
-      "  sim preset: SV                                       DPS    328.9 ±  14.1  threat      339  oom  37.0s",
-      "  sim preset: SV Weave                                 DPS    320.3 ±  13.6  threat      330  oom  42.7s",
-      "  sim preset: MM Weave                                 DPS    312.8 ±  14.4  threat      323  oom  50.5s",
-      "  sim preset: BM Weave                                 DPS    249.5 ±   9.3  threat      240  oom  30.4s",
-      "  sim preset: BM                                       DPS    249.5 ±   9.3  threat      240  oom  30.4s",
-      "  sim preset: SV Melee                                 DPS    219.2 ±   8.4  threat      213  oom  50.2s",
-      "  damage shares of mm-lone-wolf-raid: Auto Shot 50%, Arcane Shot 25%, Serpent Sting 13%, Aimed Shot 10%, spell 1295633 1% | model sources: auto 51%, arcane 26%, serpent 13%, aimed 10% (unmatched 1%)",
-      "wrote hunter\\research\\raid\\raidsim\\mm-lonewolf-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps marksmanship-ml-parse marksmanship-ml-raid F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-hand-2026-09-26.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-preset-mm.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r1.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r2.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r3.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r4.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r5.json F:\\wow-forever\\hunter\\research\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 8,
-     "tail": [
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    356.8 ±  15.3  threat      367  oom  34.6s  scorer +70.8%",
-      "  marksmanship-ml-parse                        7/44/0  DPS    353.9 ±  14.9  threat      364  oom  45.2s  scorer +74.9%",
-      "  marksmanship-ml-raid                        11/40/0  DPS    340.8 ±  14.5  threat      351  oom  47.1s  scorer +74.7%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    328.9 ±  13.1  threat      339  oom  37.0s  scorer +60.2%",
-      "  sim preset: SV                                       DPS    328.9 ±  14.1  threat      339  oom  37.0s",
-      "  sim preset: SV Weave                                 DPS    320.3 ±  13.6  threat      330  oom  42.7s",
-      "  sim preset: MM Weave                                 DPS    312.8 ±  14.4  threat      323  oom  50.5s",
-      "  sim preset: BM Weave                                 DPS    249.5 ±   9.3  threat      240  oom  30.4s",
-      "  sim preset: BM                                       DPS    249.5 ±   9.3  threat      240  oom  30.4s",
-      "  sim preset: SV Melee                                 DPS    219.2 ±   8.4  threat      213  oom  50.2s",
-      "  damage shares of mm-lone-wolf-raid: Auto Shot 50%, Arcane Shot 25%, Serpent Sting 13%, Aimed Shot 10%, spell 1295633 1% | model sources: auto 51%, arcane 26%, serpent 13%, aimed 10% (unmatched 1%)",
-      "wrote hunter\\research\\raid\\raidsim\\mm-lonewolf-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid marksmanship-ml-parse marksmanship-ml-raid",
-     "rc": 0,
-     "seconds": 79,
-     "tail": [
-      "| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |",
-      "| Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
-      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
-      "| Deterrence | Survival 3 | 1/1 | +0.00% | no |",
-      "| Counterattack | Survival 4 | 1/1 | +0.00% | no |",
-      "| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-mm-lonewolf-raid-parse -> hunter\\research\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\research\\raid\\optimizer\\mm-lonewolf-raid-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps marksmanship-ml-parse marksmanship-ml-raid opt-mm-lonewolf-raid-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 83,
-     "tail": [
-      "  opt-mm-lonewolf-raid-raid-dps                7/41/3  dummy   360.6  dummy60   380.1  ladder-mana   428.2  ladder-armor   535.1  ladder-physical   557.3  ladder-spell   581.5  raid   705.9  curve60   446.2  curve120   389.3  curve180   360.6  curve240   332.2  curve360   312.5  max   705.9  max60   735.7",
-      "  mm-lone-wolf-raid                            5/41/5  dummy   359.6  dummy60   378.9  ladder-mana   460.8  ladder-armor   567.2  ladder-physical   590.3  ladder-spell   623.0  raid   759.5  curve60   483.0  curve120   380.8  curve180   359.6  curve240   327.9  curve360   309.8  max   759.5  max60   781.0",
-      "  marksmanship-ml-parse                        7/44/0  dummy   353.9  dummy60   373.1  ladder-mana   443.4  ladder-armor   546.0  ladder-physical   568.7  ladder-spell   595.6  raid   723.9  curve60   459.9  curve120   377.7  curve180   353.9  curve240   322.6  curve360   303.6  max   723.9  max60   744.1",
-      "  opt-mm-lonewolf-raid-parse                   5/37/9  dummy   351.5  dummy60   370.7  ladder-mana   450.0  ladder-armor   553.4  ladder-physical   576.2  ladder-spell   610.8  raid   716.5  curve60   475.2  curve120   371.9  curve180   351.5  curve240   318.0  curve360   303.5  max   727.1  max60   746.5",
-      "  marksmanship-ml-raid                        11/40/0  dummy   340.8  dummy60   359.9  ladder-mana   433.8  ladder-armor   535.7  ladder-physical   558.0  ladder-spell   586.6  raid   683.7  curve60   453.5  curve120   360.9  curve180   340.8  curve240   308.4  curve360   294.3  max   683.7  max60   710.3",
-      "  sim preset: SV                                       dummy   328.9  dummy60   345.9  ladder-mana   407.0  ladder-armor   506.0  ladder-physical   526.9  ladder-spell   551.3  raid   630.1  curve60   423.0  curve120   347.2  curve180   328.9  curve240   297.9  curve360   284.6  max   630.1  max60   655.1",
-      "  sim preset: SV Weave                                 dummy   320.3  dummy60   337.3  ladder-mana   403.2  ladder-armor   500.1  ladder-physical   521.3  ladder-spell   548.9  raid   623.9  curve60   417.5  curve120   338.6  curve180   320.3  curve240   289.8  curve360   277.6  max   623.9  max60   649.6",
-      "  sim preset: MM Weave                                 dummy   312.8  dummy60   330.4  ladder-mana   397.8  ladder-armor   489.6  ladder-physical   510.7  ladder-spell   542.7  raid   640.9  curve60   424.6  curve120   334.3  curve180   312.8  curve240   284.5  curve360   271.3  max   640.9  max60   663.4",
-      "  sim preset: BM Weave                                 dummy   249.5  dummy60   263.8  ladder-mana   298.0  ladder-armor   396.2  ladder-physical   419.4  ladder-spell   430.7  raid   505.8  curve60   317.2  curve120   263.4  curve180   249.5  curve240   227.5  curve360   218.7  max   505.8  max60   521.6",
-      "  sim preset: BM                                       dummy   249.5  dummy60   263.8  ladder-mana   298.0  ladder-armor   396.2  ladder-physical   419.4  ladder-spell   430.7  raid   505.8  curve60   317.2  curve120   263.4  curve180   249.5  curve240   227.5  curve360   218.7  max   505.8  max60   521.6",
-      "  sim preset: SV Melee                                 dummy   219.2  dummy60   231.2  ladder-mana   264.9  ladder-armor   355.6  ladder-physical   377.1  ladder-spell   391.4  raid   474.3  curve60   296.2  curve120   230.9  curve180   219.2  curve240   201.6  curve360   194.9  max   481.7  max60   497.9",
-      "wrote hunter\\research\\raid\\raidsim\\mm-lonewolf-raid-environments.md"
+      "1.025"
      ],
      "stderr": []
     }
@@ -3887,11 +3873,10 @@
    "spec": "combat-swords-raid",
    "hand": "leveling-combat-swords",
    "opt": "opt-combat-swords-raid-leveling-st",
-   "started": "2026-10-19T23:11:40",
+   "started": "2026-10-24T00:15:07",
    "steps": [
     "race",
-    "report",
-    "sensitivity"
+    "report"
    ],
    "raid": {
     "combat-swords-raid": {
@@ -4291,12 +4276,12 @@
      }
     }
    },
-   "seconds": 615,
+   "seconds": 623,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-swords-raid --build leveling-combat-swords --compare F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-hand-2026-09-26.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r1.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r2.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r3.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r4.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r5.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r6.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r7.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r8.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r9.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 75,
+     "seconds": 143,
      "tail": [
       "L60: fight 17.4s (median 17.4, p90 22.3), downtime 2.3s, deaths/100 0.0, time/kill 27.7s, 130 kills/h, mana/kill 90, shares Eviscerate 27%, Sinister Strike 21%, Melee 17%, Garrote 11%, Melee (off-hand) 9%",
       "   vs cand-combat-hand-2026-09-26: time/kill 28.4s (+2.7%), fight 18.1s, deaths/100 0.0",
@@ -4309,14 +4294,14 @@
       "   vs cand-combat-r7: time/kill 28.2s (+1.7%), fight 17.8s, deaths/100 0.0",
       "   vs cand-combat-r8: time/kill 27.3s (-1.4%), fight 17.2s, deaths/100 0.0",
       "   vs cand-combat-r9: time/kill 27.1s (-2.0%), fight 17.0s, deaths/100 0.0",
-      "done in 75s"
+      "done in 143s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-swords-raid --build opt-combat-swords-raid-leveling-st --compare leveling-combat-swords --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 116,
+     "seconds": 224,
      "tail": [
       "   Malice                   5  sim   +3.9% (fight   +5.5% +-0.4)  EV   +3.5%",
       "   Murder                   2  sim   +1.6% (fight   +2.4% +-0.2)  EV   +1.0%",
@@ -4328,7 +4313,7 @@
       "   Seal Fate                5  sim   +5.2% (fight   +7.5% +-0.5)  EV   +4.8%",
       "   Vigor                    2  sim   +1.6% (fight   +2.5% +-0.5)  EV   +1.2%",
       "   Vile Poisons             5  sim   +1.8% (fight   +2.6% +-0.2)  EV   +2.3%",
-      "done in 116s",
+      "done in 223s",
       "wrote F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\combat-swords-raid.md"
      ],
      "stderr": []
@@ -4336,19 +4321,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-daggers-raid --build opt-combat-daggers-raid-leveling-st --compare opt-combat-swords-raid-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 126,
+     "seconds": 256,
      "tail": [
-      "   Lightning Reflexes       5  sim   +0.7% (fight   +0.1% +-0.2)  EV   +0.8%",
-      "   Malice                   5  sim   +2.8% (fight   +3.7% +-0.2)  EV   +2.2%",
-      "   Murder                   2  sim   +1.3% (fight   +1.7% +-0.1)  EV   +1.1%",
+      "   Lightning Reflexes       5  sim   +0.5% (fight   -0.1% +-0.3)  EV   +0.8%",
+      "   Malice                   5  sim   +3.1% (fight   +4.1% +-0.2)  EV   +2.2%",
+      "   Murder                   2  sim   +1.4% (fight   +1.7% +-0.2)  EV   +1.1%",
       "   Mutilate                 1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +6.9%",
-      "   Opportunity              2  sim   +0.9% (fight   +1.2% +-0.1)  EV   +3.5%",
-      "   Precision                3  sim   +3.3% (fight   +4.4% +-0.4)  EV   +1.9%",
+      "   Opportunity              2  sim   +1.1% (fight   +1.4% +-0.2)  EV   +3.5%",
+      "   Precision                3  sim   +3.3% (fight   +4.3% +-0.4)  EV   +1.9%",
       "   Puncturing Wounds        3  sim   +0.0% (fight   +0.0% +-0.0)  EV  +12.0%",
-      "   Relentless Strikes       1  sim   +1.0% (fight   +1.4% +-0.2)  EV   +2.2%",
-      "   Riposte                  1  sim   +0.7% (fight   +1.0% +-0.4)  EV   +1.6%",
-      "   Ruthlessness             3  sim   +0.3% (fight   +0.4% +-0.2)  EV   +2.2%",
-      "done in 125s",
+      "   Relentless Strikes       1  sim   +1.3% (fight   +1.9% +-0.4)  EV   +2.2%",
+      "   Riposte                  1  sim   +2.5% (fight   +3.5% +-0.4)  EV   +1.6%",
+      "   Ruthlessness             3  sim   +3.8% (fight   +4.8% +-0.4)  EV   +2.2%",
+      "done in 256s",
       "wrote F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\combat-daggers-raid.md"
      ],
      "stderr": []
@@ -4358,27 +4343,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.86"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\sensitivity.py rogue --spec combat-swords-raid --builds opt-combat-swords-raid-leveling-st leveling-combat-swords --levels 30,60 --fights 1000 --write",
-     "rc": 0,
-     "seconds": 297,
-     "tail": [
-      "30% caster mobs 60 {'opt-combat-swords-raid-leveling-st': 26.2, 'leveling-combat-swords': 26.7} {'opt-combat-swords-raid-leveling-st': {'Malice': 4.2, 'Improved Eviscerate': 3.2}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.2, 'Malice': 3.7, 'Improved Eviscerate': 2.9}}",
-      "20% of mobs run at 20% health 30 {'opt-combat-swords-raid-leveling-st': 22.0, 'leveling-combat-swords': 22.6} {'opt-combat-swords-raid-leveling-st': {'Malice': 1.6, 'Improved Eviscerate': 0.9}, 'leveling-combat-swords': {'Malice': 2.8, 'Improved Eviscerate': 0.4}}",
-      "20% of mobs run at 20% health 60 {'opt-combat-swords-raid-leveling-st': 27.4, 'leveling-combat-swords': 27.9} {'opt-combat-swords-raid-leveling-st': {'Malice': 4.2, 'Improved Eviscerate': 3.8}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.4, 'Malice': 3.6, 'Improved Eviscerate': 3.5}}",
-      "2.5% partial resists (the assumption before 2026-10-18) 30 {'opt-combat-swords-raid-leveling-st': 21.9, 'leveling-combat-swords': 22.5} {'opt-combat-swords-raid-leveling-st': {'Malice': 1.5, 'Improved Eviscerate': 0.6}, 'leveling-combat-swords': {'Malice': 3.0, 'Improved Eviscerate': 0.2}}",
-      "2.5% partial resists (the assumption before 2026-10-18) 60 {'opt-combat-swords-raid-leveling-st': 27.1, 'leveling-combat-swords': 27.7} {'opt-combat-swords-raid-leveling-st': {'Malice': 3.9, 'Improved Eviscerate': 3.3}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.1, 'Malice': 3.3, 'Improved Eviscerate': 3.1}}",
-      "channel pushback 0.5 s per hit (before 2026-10-18) 30 {'opt-combat-swords-raid-leveling-st': 21.9, 'leveling-combat-swords': 22.5} {'opt-combat-swords-raid-leveling-st': {'Malice': 1.5, 'Improved Eviscerate': 0.6}, 'leveling-combat-swords': {'Malice': 3.0, 'Improved Eviscerate': 0.2}}",
-      "channel pushback 0.5 s per hit (before 2026-10-18) 60 {'opt-combat-swords-raid-leveling-st': 27.1, 'leveling-combat-swords': 27.7} {'opt-combat-swords-raid-leveling-st': {'Malice': 3.9, 'Improved Eviscerate': 3.3}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.1, 'Malice': 3.3, 'Improved Eviscerate': 3.1}}",
-      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 30 {'opt-combat-swords-raid-leveling-st': 25.4, 'leveling-combat-swords': 26.1} {'opt-combat-swords-raid-leveling-st': {'Malice': 1.9, 'Improved Eviscerate': 1.1}, 'leveling-combat-swords': {'Malice': 3.1, 'Improved Eviscerate': 0.6}}",
-      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 60 {'opt-combat-swords-raid-leveling-st': 29.9, 'leveling-combat-swords': 30.5} {'opt-combat-swords-raid-leveling-st': {'Malice': 4.5, 'Improved Eviscerate': 3.8}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.6, 'Malice': 4.0, 'Improved Eviscerate': 3.9}}",
-      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 30 {'opt-combat-swords-raid-leveling-st': 21.9, 'leveling-combat-swords': 22.5} {'opt-combat-swords-raid-leveling-st': {'Malice': 1.5, 'Improved Eviscerate': 0.6}, 'leveling-combat-swords': {'Malice': 3.0, 'Improved Eviscerate': 0.2}}",
-      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 60 {'opt-combat-swords-raid-leveling-st': 27.1, 'leveling-combat-swords': 27.7} {'opt-combat-swords-raid-leveling-st': {'Malice': 3.9, 'Improved Eviscerate': 3.3}, 'leveling-combat-swords': {'Dual Wield Specialization': 1.1, 'Malice': 3.3, 'Improved Eviscerate': 3.1}}",
-      "wrote F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\sensitivity.md"
+      "0.849"
      ],
      "stderr": []
     }
@@ -4646,11 +4611,10 @@
    "spec": "ret-dps",
    "hand": "leveling-retribution",
    "opt": "opt-ret-dps-leveling-st",
-   "started": "2026-10-19T08:07:13",
+   "started": "2026-10-23T23:09:15",
    "steps": [
     "race",
-    "report",
-    "sensitivity"
+    "report"
    ],
    "raid": {
     "ret-dps": {
@@ -4825,12 +4789,12 @@
      "environments": null
     }
    },
-   "seconds": 464,
+   "seconds": 389,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build leveling-retribution --compare F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-hand-2026-09-26.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r1.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r2.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r3.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r4.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r5.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r6.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r7.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r8.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 55,
+     "seconds": 138,
      "tail": [
       "   vs cand-ret-r8: time/kill 30.8s (+3.6%), fight 16.8s, deaths/100 0.0",
       "L60: fight 20.0s (median 18.9, p90 26.1), downtime 5.1s, deaths/100 0.0, time/kill 33.1s, 109 kills/h, mana/kill 323, shares Melee 36%, Judgement 20%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 13%",
@@ -4843,14 +4807,14 @@
       "   vs cand-ret-r6: time/kill 33.1s (-0.0%), fight 20.1s, deaths/100 0.0",
       "   vs cand-ret-r7: time/kill 32.9s (-0.5%), fight 19.9s, deaths/100 0.0",
       "   vs cand-ret-r8: time/kill 33.2s (+0.5%), fight 19.9s, deaths/100 0.0",
-      "done in 55s"
+      "done in 137s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build opt-ret-dps-leveling-st --compare leveling-retribution --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 100,
+     "seconds": 251,
      "tail": [
       "   Instrument of Law        2  sim   +1.5% (fight   +2.6% +-0.4)  EV   +2.9%",
       "   Pursuit of Justice       2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.7%",
@@ -4862,28 +4826,8 @@
       "   Two-Handed Weapon Specialization 3  sim   +0.6% (fight   +1.1% +-0.5)  EV   +2.5%",
       "   Vengeance                3  sim   +2.9% (fight   +4.1% +-0.4)  EV   +3.8%",
       "   Vindication              3  sim   +0.5% (fight   +0.8% +-0.4)  EV   +1.2%",
-      "done in 100s",
+      "done in 250s",
       "wrote F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\ret-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\sensitivity.py paladin --spec ret-dps --builds opt-ret-dps-leveling-st leveling-retribution --levels 30,60 --fights 1000 --write",
-     "rc": 0,
-     "seconds": 309,
-     "tail": [
-      "30% caster mobs 60 {'opt-ret-dps-leveling-st': 31.8, 'leveling-retribution': 31.7} {'opt-ret-dps-leveling-st': {'Seal of Command': 2.8, 'Conviction': 5.9, 'Improved Seals': 3.8}, 'leveling-retribution': {'Seal of Command': 2.7, 'Conviction': 5.2, 'Improved Seals': 3.6}}",
-      "20% of mobs run at 20% health 30 {'opt-ret-dps-leveling-st': 23.8, 'leveling-retribution': 23.9} {'opt-ret-dps-leveling-st': {'Seal of Command': 11.5, 'Conviction': 4.9}, 'leveling-retribution': {'Seal of Command': 11.8, 'Conviction': 4.5}}",
-      "20% of mobs run at 20% health 60 {'opt-ret-dps-leveling-st': 33.6, 'leveling-retribution': 33.3} {'opt-ret-dps-leveling-st': {'Seal of Command': 2.1, 'Conviction': 5.9, 'Improved Seals': 4.5}, 'leveling-retribution': {'Seal of Command': 3.2, 'Conviction': 6.6, 'Improved Seals': 4.5}}",
-      "2.5% partial resists (the assumption before 2026-10-18) 30 {'opt-ret-dps-leveling-st': 23.5, 'leveling-retribution': 23.6} {'opt-ret-dps-leveling-st': {'Seal of Command': 11.6, 'Conviction': 4.6}, 'leveling-retribution': {'Seal of Command': 12.4, 'Conviction': 4.4}}",
-      "2.5% partial resists (the assumption before 2026-10-18) 60 {'opt-ret-dps-leveling-st': 33.2, 'leveling-retribution': 33.0} {'opt-ret-dps-leveling-st': {'Seal of Command': 1.8, 'Conviction': 5.5, 'Improved Seals': 4.0}, 'leveling-retribution': {'Seal of Command': 1.4, 'Conviction': 5.3, 'Improved Seals': 3.6}}",
-      "channel pushback 0.5 s per hit (before 2026-10-18) 30 {'opt-ret-dps-leveling-st': 23.5, 'leveling-retribution': 23.6} {'opt-ret-dps-leveling-st': {'Seal of Command': 11.6, 'Conviction': 4.6}, 'leveling-retribution': {'Seal of Command': 12.4, 'Conviction': 4.4}}",
-      "channel pushback 0.5 s per hit (before 2026-10-18) 60 {'opt-ret-dps-leveling-st': 33.2, 'leveling-retribution': 33.1} {'opt-ret-dps-leveling-st': {'Seal of Command': 1.2, 'Conviction': 5.3, 'Improved Seals': 4.3}, 'leveling-retribution': {'Seal of Command': 1.2, 'Conviction': 5.2, 'Improved Seals': 3.8}}",
-      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 30 {'opt-ret-dps-leveling-st': 27.8, 'leveling-retribution': 28.0} {'opt-ret-dps-leveling-st': {'Seal of Command': 12.7, 'Conviction': 4.9}, 'leveling-retribution': {'Seal of Command': 12.8, 'Conviction': 3.8}}",
-      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 60 {'opt-ret-dps-leveling-st': 36.4, 'leveling-retribution': 36.1} {'opt-ret-dps-leveling-st': {'Seal of Command': 2.2, 'Conviction': 6.0, 'Improved Seals': 4.6}, 'leveling-retribution': {'Seal of Command': 2.3, 'Conviction': 5.9, 'Improved Seals': 3.5}}",
-      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 30 {'opt-ret-dps-leveling-st': 23.6, 'leveling-retribution': 23.6} {'opt-ret-dps-leveling-st': {'Seal of Command': 11.4, 'Conviction': 4.7}, 'leveling-retribution': {'Seal of Command': 12.1, 'Conviction': 4.3}}",
-      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 60 {'opt-ret-dps-leveling-st': 33.2, 'leveling-retribution': 33.1} {'opt-ret-dps-leveling-st': {'Seal of Command': 1.2, 'Conviction': 5.3, 'Improved Seals': 4.3}, 'leveling-retribution': {'Seal of Command': 1.2, 'Conviction': 5.2, 'Improved Seals': 3.8}}",
-      "wrote F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\sensitivity.md"
      ],
      "stderr": []
     }
@@ -6542,9 +6486,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-23T09:50:53",
+  "date": "2026-10-24T06:10:23",
   "classes": [
-   "priest"
+   "hunter"
   ],
   "steps": [
    "race",
@@ -6556,7 +6500,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 296,
+  "seconds": 772,
   "refresh": null,
   "regen_log": []
  }

@@ -4,6 +4,88 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "auraIsKnown": {
+         "auraId": {
+          "spellId": 400589
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 400589
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10212
+     }
+    }
+   },
+   "notes": "added 2026-09-28: Arcane Missiles on a Missile Barrage proc, guarded by auraIsKnown so a build without Missile Barrage never casts it"
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraRemainingTime": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 1239700
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraNumStacks": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpLe",
       "lhs": {
@@ -71,33 +153,26 @@
   },
   {
    "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "auraIsKnown": {
-         "auraId": {
-          "spellId": 400589
-         }
-        }
-       },
-       {
-        "auraIsActive": {
-         "auraId": {
-          "spellId": 400589
-         }
-        }
-       }
-      ]
-     }
-    },
     "castSpell": {
      "spellId": {
-      "spellId": 10212
+      "spellId": 1326082
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "20s"
+       }
+      }
      }
     }
    },
-   "notes": "added 2026-09-28: Arcane Missiles on a Missile Barrage proc, guarded by auraIsKnown so a build without Missile Barrage never casts it"
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   },
   {
    "action": {

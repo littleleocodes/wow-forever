@@ -149,7 +149,7 @@
       }
     },
     "combat-daggers-raid": {
-      "note": "Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as combat-swords-raid; Mutilate ranks (30/40/50/60) add 23/33/48/67 per hand before the 75%, Hemorrhage is one normalized-damage rank. Raid sim shares (2026-10-03, combat-daggers-raid in the ElliotWood/Forever simulator b0f0df3): backstab 40%, white_mh 34%, white_oh 18%, poisons 7%, eviscerate 2%; 7% of the damage matched no source. Fight lab speed (2026-10-19): its leveling build kills 0.86x as fast as combat-swords-raid's optimizer build (level-weighted time per kill 29.3s vs 25.2s), written as abs_dps_factor so respec.py compares the models on that.",
+      "note": "Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as combat-swords-raid; Mutilate ranks (30/40/50/60) add 23/33/48/67 per hand before the 75%, Hemorrhage is one normalized-damage rank. Raid sim shares (2026-10-03, combat-daggers-raid in the ElliotWood/Forever simulator b0f0df3): backstab 40%, white_mh 34%, white_oh 18%, poisons 7%, eviscerate 2%; 7% of the damage matched no source. Fight lab speed (2026-10-24): its leveling build kills 0.85x as fast as combat-swords-raid's optimizer build (level-weighted time per kill 29.7s vs 25.2s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "white_mh",
@@ -224,7 +224,7 @@
       "stat_to_surv": {"stamina": 1.0, "agility": 0.3},
       "mana_share": {},
       "regen_share": 0.0,
-      "abs_dps_factor": 0.86,
+      "abs_dps_factor": 0.849,
       "time": {
         "leveling-st": {"fight": 0.7, "downtime": 0.2, "death": 0.1}
       },
