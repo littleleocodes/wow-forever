@@ -9,6 +9,10 @@
      "allocation": {
       "Affliction": [
        [
+        "Improved Corruption",
+        5
+       ],
+       [
         "Improved Life Tap",
         2
        ],
@@ -17,20 +21,12 @@
         5
        ],
        [
-        "Improved Corruption",
-        2
-       ],
-       [
-        "Malediction",
-        5
+        "Amplify Curse",
+        1
        ],
        [
         "Improved Bane of Agony",
         2
-       ],
-       [
-        "Amplify Curse",
-        1
        ],
        [
         "Pandemic",
@@ -41,6 +37,10 @@
         5
        ],
        [
+        "Nightfall",
+        2
+       ],
+       [
         "Shadow Mastery",
         5
        ]
@@ -48,11 +48,11 @@
       "Demonology": [],
       "Destruction": [
        [
-        "Improved Shadow Bolt",
+        "Bane",
         5
        ],
        [
-        "Bane",
+        "Improved Shadow Bolt",
         5
        ],
        [
@@ -72,7 +72,8 @@
      "split": "30/0/21",
      "dps": 762.89,
      "se": 0.1229,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 30/0/21 -> 30/0/21; Malediction 5 gone; +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Shadow Mastery); +1 Improved Corruption (tier gating for Shadow Mastery); +1 Nightfall (tier gating for Shadow Mastery); +1 Nightfall (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps)"
     },
     "family": "Affliction",
     "runs_agree": 3,
@@ -13022,20 +13023,16 @@
      "allocation": {
       "Affliction": [
        [
+        "Improved Corruption",
+        3
+       ],
+       [
         "Improved Life Tap",
-        1
+        2
        ],
        [
         "Suppression",
         5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ],
-       [
-        "Malediction",
-        2
        ],
        [
         "Improved Bane of Agony",
@@ -13078,11 +13075,11 @@
       ],
       "Destruction": [
        [
-        "Improved Shadow Bolt",
+        "Bane",
         5
        ],
        [
-        "Bane",
+        "Improved Shadow Bolt",
         5
        ],
        [
@@ -13102,7 +13099,8 @@
      "split": "20/11/20",
      "dps": 703.65,
      "se": 0.1276,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 20/11/20 -> 20/11/20; Malediction 2 gone; +1 Improved Life Tap (tier gating for Improved Bane of Agony); +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)"
     },
     "family": "Hybrid Affliction/Destruction",
     "runs_agree": 3,
@@ -13272,20 +13270,16 @@
      "allocation": {
       "Affliction": [
        [
+        "Improved Corruption",
+        3
+       ],
+       [
         "Improved Life Tap",
-        1
+        2
        ],
        [
         "Suppression",
         5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ],
-       [
-        "Malediction",
-        2
        ],
        [
         "Improved Bane of Agony",
@@ -13328,11 +13322,11 @@
       ],
       "Destruction": [
        [
-        "Improved Shadow Bolt",
+        "Bane",
         5
        ],
        [
-        "Bane",
+        "Improved Shadow Bolt",
         5
        ],
        [
@@ -13352,7 +13346,8 @@
      "split": "20/11/20",
      "dps": 709.33,
      "se": 0.1295,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 20/11/20 -> 20/11/20; Malediction 2 gone; +1 Improved Life Tap (tier gating for Improved Bane of Agony); +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)"
     },
     "family": "Hybrid Affliction/Destruction",
     "runs_agree": 2,
@@ -25713,20 +25708,16 @@
      "allocation": {
       "Affliction": [
        [
+        "Improved Corruption",
+        3
+       ],
+       [
         "Improved Life Tap",
         2
        ],
        [
         "Suppression",
         5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ],
-       [
-        "Malediction",
-        1
        ],
        [
         "Improved Bane of Agony",
@@ -25751,12 +25742,12 @@
         4
        ],
        [
-        "Improved Voidwalker",
-        1
-       ],
-       [
         "Fel Vitality",
         3
+       ],
+       [
+        "Improved Voidwalker",
+        1
        ],
        [
         "Demonic Sacrifice",
@@ -25765,11 +25756,11 @@
       ],
       "Destruction": [
        [
-        "Improved Shadow Bolt",
+        "Bane",
         5
        ],
        [
-        "Bane",
+        "Improved Shadow Bolt",
         5
        ],
        [
@@ -25793,7 +25784,8 @@
      "split": "20/11/20",
      "dps": 731.01,
      "se": 0.1346,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 20/11/20 -> 20/11/20; Malediction 1 gone; +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)"
     },
     "family": "Hybrid Affliction/Destruction",
     "runs_agree": 3,
@@ -25967,20 +25959,16 @@
      "allocation": {
       "Affliction": [
        [
+        "Improved Corruption",
+        3
+       ],
+       [
         "Improved Life Tap",
         2
        ],
        [
         "Suppression",
         5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ],
-       [
-        "Malediction",
-        1
        ],
        [
         "Improved Bane of Agony",
@@ -26005,12 +25993,12 @@
         4
        ],
        [
-        "Improved Voidwalker",
-        1
-       ],
-       [
         "Fel Vitality",
         3
+       ],
+       [
+        "Improved Voidwalker",
+        1
        ],
        [
         "Demonic Sacrifice",
@@ -26019,11 +26007,11 @@
       ],
       "Destruction": [
        [
-        "Improved Shadow Bolt",
+        "Bane",
         5
        ],
        [
-        "Bane",
+        "Improved Shadow Bolt",
         5
        ],
        [
@@ -26047,7 +26035,8 @@
      "split": "20/11/20",
      "dps": 731.01,
      "se": 0.1346,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 20/11/20 -> 20/11/20; Malediction 1 gone; +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)"
     },
     "family": "Hybrid Affliction/Destruction",
     "runs_agree": 2,

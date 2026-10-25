@@ -42,6 +42,7 @@ import spec_builds as SB  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 from filelock import locked  # noqa: E402
 from fmt_json import dumps  # noqa: E402
+import builds_io as BIO  # noqa: E402  (locked writes of proposed-builds.json, 2026-10-24)
 
 FAMILIES = HERE / "raidsim" / "families"
 OPEN = HERE / "fightlab" / "open"
@@ -200,9 +201,15 @@ def raid_candidates(cls, st, data, RM):
         # the bar is the spec's own builds (until 2026-10-09 every build raced in the entry counted, other specs' and the simulator's
         # presets too: the hunter's Beast-Survival winner "confirmed" a Survival hand draft and the hybrid's raid page went empty);
         # the build's notes still list every raced build
-        rivals = {k: v for k, v in raced.items() if k in byid and SM.spec_of(cls, byid[k]) == spec}
+        # 2026-10-24 audit: a build without its spec's signature talents (the Assassination builds without Mutilate) is no bar either
+        try:
+            RSG = raidsim_mods()[0]
+            sig_ok = lambda b: RSG.talents_ok(cls, spec, b["allocation"], own)
+        except Exception:   # noqa: BLE001 - no simulator here: every build counts, as before
+            sig_ok = lambda b: True
+        rivals = {k: v for k, v in raced.items() if k in byid and SM.spec_of(cls, byid[k]) == spec and sig_ok(byid[k])}
         same = [b for b in data["builds"] if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and not is_open(b)
-                and SM.spec_of(cls, b) == spec]
+                and SM.spec_of(cls, b) == spec and sig_ok(b)]
         pages = {b["id"]: nums[b["id"]]["group"] for b in same if b["id"] not in rivals and (nums.get(b["id"]) or {}).get("group")}
         allr = {**rivals, **pages}
         best = max(allr, key=allr.get) if allr else None
@@ -544,8 +551,7 @@ def main():
         new = [b for *_, b, _ in rc if b] + [b for *_, b, _ in lc if b]
         kinds = ("-open-raid",) if a.only == "raid" else ("-open-leveling",) if a.only == "leveling" else ("-open-raid", "-open-leveling")
         old = [b["id"] for b in data["builds"] if b["id"].endswith(kinds)]   # rewritten from the records (the other kind stays with --only)
-        data["builds"] = [b for b in data["builds"] if not b["id"].endswith(kinds)] + new
-        bp.write_text(dumps(data) + "\n", encoding="utf-8")
+        data = BIO.update(cls, remove=old, add=new)   # locked, on the file as it is now (2026-10-24 audit)
         with locked(HERE / "raidsim" / "specs.json.lock"):   # a running search of another class may point an entry at a new rotation
             if old:
                 ML.drop_from_entries(cls, set(old))

@@ -54,6 +54,7 @@ import spec_modes as SM  # noqa: E402
 import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 from filelock import locked  # noqa: E402
 from fmt_json import dumps  # noqa: E402
+import builds_io as BIO  # noqa: E402  (locked writes of proposed-builds.json, 2026-10-24)
 
 
 def _load(name, path):
@@ -332,6 +333,11 @@ def verdict(r):
     c = r["compare_raid"]["dps"]
     w = c["winner"]["dps"]
     others = {k: v["dps"] for k, v in c.items() if k != "winner" and v.get("dps")}
+    # 2026-10-24 audit: a build of ours without its spec's signature talents (the Assassination builds without Mutilate) is no bar
+    import raid_signature as RSG
+    pb = ROOT / r["class"] / "research/talents/forever/proposed-builds.json"
+    byid = {b["id"]: b for b in json.load(open(pb, encoding="utf-8"))["builds"]} if pb.exists() else {}
+    others = {k: v for k, v in others.items() if k not in byid or RSG.talents_ok(r["class"], r["spec"], byid[k]["allocation"])}
     if not others:
         return True, ""
     k = max(others, key=others.get)
@@ -347,6 +353,7 @@ def write_builds(classes):
         bp = paths.builds_json("forever", cls)
         data = json.load(open(bp, encoding="utf-8"))
         changed, dropped, written = False, set(), []
+        removed, added = set(), []   # the change, applied to the file under a lock at the end (builds_io)
         for r in records([cls]):
             if not complete(r):
                 print(f"  {cls} {r['spec']}: record not complete, skipped")
@@ -375,6 +382,8 @@ def write_builds(classes):
                        and SM.spec_of(cls, x) == r["spec"] and (not x["id"].endswith("-parse") or x["id"].endswith("-ml-parse")))]
             gone = {x["id"] for x in old} - ids
             data["builds"] = [x for x in data["builds"] if x not in old] + new
+            removed |= {x["id"] for x in old}
+            added = [x for x in added if x["id"] not in {y["id"] for y in old}] + new
             dropped |= gone
             if gone and ok:
                 supersede(cls, r["spec"], gone, new[0]["id"])
@@ -386,7 +395,7 @@ def write_builds(classes):
                   + (f" (replaces {new[0]['replaces']})" if new and new[0].get("replaces") else "")
                   + (f"; removed {', '.join(sorted(gone))}" if gone else ""))
         if changed:
-            bp.write_text(dumps(data) + "\n", encoding="utf-8")
+            BIO.update(cls, remove=removed, add=added)   # locked, on the file as it is now (2026-10-24 audit)
             if dropped:
                 drop_from_entries(cls, dropped)
             for bid, entry in written:

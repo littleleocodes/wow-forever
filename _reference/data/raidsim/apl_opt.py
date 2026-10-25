@@ -428,8 +428,41 @@ COMBAT_ALLOW = ("Summon Hawk",)   # damage spells the prefixes above would drop 
 COMBAT_TEXT = re.compile(r"damage|attack power|attack speed|haste|critical|spell power|chance to hit|armor by|mana regen|restores? \d+ mana|increas\w+ (your|all)", re.I)
 
 
+def inline_refs(apl):
+    """The rotation's priority items with its value variables written out and its action groups expanded (2026-10-24 audit: the
+    official simulator's rotations define conditions as `valueVariables` and bundle lines in `groups`; the pool copied the lines without
+    them, the simulator drops a `variableRef` it cannot find and an and/or then drops that branch, so the rogue lines inserted from them
+    read "not V and V and V and not Garrote" and ran as "if Garrote is not on the target"). Items that still name an unknown variable or
+    group are left out."""
+    var = {v.get("name"): v.get("value") for v in apl.get("valueVariables") or [] if v.get("name")}
+    grp = {g.get("name"): g.get("actions") or [] for g in apl.get("groups") or [] if g.get("name")}
+
+    def sub(x, depth=0):
+        if isinstance(x, dict):
+            if set(x) == {"variableRef"}:
+                n = (x["variableRef"] or {}).get("name")
+                if n not in var or depth > 8:
+                    raise KeyError(n)
+                return sub(var[n], depth + 1)
+            return {k: sub(v, depth) for k, v in x.items()}
+        if isinstance(x, list):
+            return [sub(v, depth) for v in x]
+        return x
+
+    out = []
+    for it in items(apl):
+        gref = (it.get("action") or {}).get("groupReference")
+        for x in (grp.get((gref or {}).get("groupName"), []) if gref else [it]):
+            try:
+                out.append(sub(x))
+            except KeyError:
+                continue
+    return out
+
+
 def class_pool(repo, entry):
-    """Every priority item of the class's rotations in the simulator (all its spec folders), hidden or not, shown."""
+    """Every priority item of the class's rotations in the simulator (all its spec folders), hidden or not, shown; variables and
+    groups inlined (inline_refs)."""
     cls_dir = repo / "ui/specs" / entry["sim_spec"].split("/")[0]
     pool, seen = [], set()
     for f in sorted(cls_dir.glob("*/apls/*.apl.json")):
@@ -437,7 +470,7 @@ def class_pool(repo, entry):
             a = json.load(open(f, encoding="utf-8"))
         except Exception:
             continue
-        for it in items(a):
+        for it in inline_refs(a):
             it = {k: v for k, v in it.items() if k not in ("hide", "notes")}
             k = key(it)
             if k not in seen and it.get("action"):
@@ -531,6 +564,12 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
             rd = {x["label"]: (x.get("dps") or {}).get("raid") for x in json.load(open(env, encoding="utf-8")).get("results", [])}
         keyf = (lambda x: (0, x.get("value") or 0)) if tank else (lambda x: (1, rd[x["label"]]) if rd.get(x["label"]) else (0, x["dps"]))
         ours = sorted([x for x in rows if x["ours"]], key=keyf, reverse=True)
+        # 2026-10-24 audit: tune on our best build that holds its spec's signature talents (the Assassination rotation had been tuned on
+        # assassination-ml-raid, a Backstab build without Mutilate); the others stay protected below
+        sig_ok = [x for x in ours if x["label"] not in data or SIG.talents_ok(
+            cls, SIG.entry_spec(cls, spec, data[x["label"]]["allocation"], data[x["label"]]), data[x["label"]]["allocation"],
+            SIG._entry_trees(cls, spec))]
+        ours = sig_ok + [x for x in ours if x not in sig_ok]
         theirs = sorted([x for x in rows if not x["ours"]], key=keyf, reverse=True)
         for x in ours[:1] + theirs[:1]:
             if x.get("talents") and x["talents"] not in {b["talents"] for b in out}:

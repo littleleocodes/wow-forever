@@ -236,9 +236,43 @@ def compare(rec, repo, setting="dummy"):
             "gain_vs_hand": round(out["winner"]["dps"] / out[hand_best]["dps"] - 1, 4) if hand_best else None}
 
 
+def sig_start(rec, first):
+    """The final step's start when the stored winner lacks its spec's signature talents (2026-10-24 audit: the Assassination record's
+    winner was a Backstab build without Mutilate, made before the signature rule; its BiS set would have been chosen for it and the search
+    would have started from a build the space rejects): the best open-search winner of the class filed under the spec with the talents
+    (families/<class>.json), else the spec's raid build of ours with them. The stored winner when it passes or nothing else does."""
+    import raid_signature as SIG
+    cls, spec = rec["class"], rec["spec"]
+    if SIG.talents_ok(cls, spec, first):
+        return first, None
+    best = None
+    for fp in (HERE / "families" / f"{cls}.json", HERE / "families" / f"{cls}.prev.json"):   # the current search, else the last one
+        for entry, e in (json.load(open(fp, encoding="utf-8")).get("entries", {}) if fp.exists() else {}).items():
+            w = ((e.get("again") or e.get("first") or {}).get("winner") or {})
+            al = flat_of(w.get("allocation") or {})
+            dps = ((e.get("race") or {}).get("open winner") or {}).get("dps") or 0
+            if al and SIG.entry_spec(cls, entry, al) == spec and SIG.talents_ok(cls, spec, al) and (best is None or dps > best[0]):
+                best = (dps, al, f"the {entry} open-search winner ({fp.name})")
+        if best is not None:
+            break
+    if best is None:
+        pb = ROOT / cls / "research/talents/forever/proposed-builds.json"
+        for b in json.load(open(pb, encoding="utf-8"))["builds"]:
+            if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and SM.spec_of(cls, b) == spec and SIG.talents_ok(cls, spec, b["allocation"]):
+                best = (0, flat_of(b["allocation"]), f"our raid build {b['id']}")
+                break
+    if best is None:
+        return first, None
+    return best[1], f"{TODAY}: the stored winner lacks {spec}'s signature talents; the final step starts from {best[2]}"
+
+
 def final(rec, repo, db, zones):
     s = rec.setdefault("search", {})
     first = flat_of(s["bis-dummy-1"]["winner"]["allocation"])
+    first, note = sig_start(rec, first)
+    if note and s["bis-dummy-1"].get("sig_start") != note:
+        s["bis-dummy-1"]["sig_start"] = note
+        print("  " + note, flush=True)
     if "bis2" not in rec.get("gear", {}):
         rec["gear"]["bis"] = gear(rec, "bis", first, "ml winner", s["bis-dummy-1"]["entry"], repo, db, zones)
         rec["gear"]["bis2"] = True

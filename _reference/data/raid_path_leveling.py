@@ -33,6 +33,7 @@ import spec_modes as SM  # noqa: E402
 import derive_leveling as DL  # noqa: E402
 import fl_signature as FS  # noqa: E402  (signature spells, user rule 2026-10-22)
 from fmt_json import dumps  # noqa: E402
+import builds_io as BIO  # noqa: E402  (locked writes of proposed-builds.json, 2026-10-24)
 
 LEVELS = [20, 30, 40, 50, 60]
 TODAY = datetime.date.today().isoformat()
@@ -138,9 +139,7 @@ def main():
                        "Fight-lab numbers are a model of the beta, not in-game measurements."],
              "open_questions": [f"Check the {tree} leveling pace at launch; the raid build's talents may cost speed early."],
              "sources": target.get("sources", [])}
-        data["builds"] = [x for x in data["builds"] if x["id"] != bid]
-        data["builds"].append(b)
-        bp.write_text(dumps(data) + "\n", encoding="utf-8")
+        BIO.update(cls, remove={bid}, add=[b])   # locked, on the file as it is now (2026-10-24 audit)
     if a.write:
         DL.OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {DL.OUT.relative_to(ROOT)}")

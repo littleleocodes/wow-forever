@@ -128,6 +128,7 @@ RAID_ENTRY_TREES = {
     ("warrior", "arms-2h-raid"): {"Arms", "Fury"}, ("warrior", "fury-dw-raid"): {"Arms", "Fury"}, ("warrior", "arms-battle-raid"): {"Arms"},
     ("warrior", "prot-tank"): {"Protection"},
     ("paladin", "ret-dps"): {"Retribution"}, ("paladin", "prot-tank"): {"Protection"},
+    ("paladin", "shockadin-raid"): {"Hybrid Holy/Retribution"},   # 2026-10-24: Shockadin under the signature rule (sweep_raid2.sh)
     ("shaman", "elemental-dps"): {"Elemental"}, ("shaman", "enhancement-dps"): {"Enhancement"}, ("shaman", "stormcaller-dps"): {"Elemental"},
     ("druid", "balance-dps"): {"Balance"}, ("druid", "feral-cat-dps"): {"Feral Combat"}, ("druid", "feral-bear-tank"): {"Feral Combat"},
 }

@@ -95,6 +95,20 @@ def required_talents_by_spec(cls, mode="raid"):
     return out
 
 
+def talents_ok(cls, spec, alloc, trees=None, mode="raid"):
+    """True when the build holds every talent that grants a required spell of one of the specs whose rule it must pass (rule_specs), or
+    no rule applies. A build without them cannot play its spec's signature spells, so it is no bar a new build must beat and no build a
+    rotation is tuned on (2026-10-24 audit: the three Assassination raid builds lack Mutilate; the rotation was tuned on one of them and
+    a Mutilate winner would only have 'confirmed' it)."""
+    if not enabled():
+        return True
+    specs_ = rule_specs(cls, spec, trees, mode)
+    if not specs_:
+        return True
+    held = flat_of(alloc)
+    return any(all(held.get(t) for t in required_talents(cls, s, mode)) for s in specs_)
+
+
 def flat_of(alloc):
     """{talent: rank} from {tree: [[talent, rank]]} or {talent: rank}."""
     if not alloc:

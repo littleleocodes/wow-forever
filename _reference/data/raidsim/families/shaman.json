@@ -9,31 +9,31 @@
      "allocation": {
       "Elemental": [
        [
-        "Convection",
-        5
-       ],
-       [
         "Concussion",
         5
        ],
        [
-        "Reverberation",
-        4
+        "Convection",
+        5
        ],
        [
         "Call of Flame",
         3
        ],
        [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Elemental Alacrity",
         3
        ],
        [
-        "Call of Thunder",
+        "Reverberation",
+        4
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Lava Burst",
         1
        ],
        [
@@ -47,15 +47,15 @@
       ],
       "Enhancement": [
        [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
         "Earth's Grasp",
         2
        ],
        [
         "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
         5
        ],
        [
@@ -88,7 +88,8 @@
      "split": "29/22/0",
      "dps": 518.24,
      "se": 0.0868,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     "family": "Hybrid Elemental/Enhancement",
     "runs_agree": 3,
@@ -7461,10 +7462,6 @@
         5
        ],
        [
-        "Reverberation",
-        5
-       ],
-       [
         "Call of Flame",
         3
        ],
@@ -7473,21 +7470,25 @@
         3
        ],
        [
+        "Reverberation",
+        5
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Improved Fire Nova",
+        "Trial by Fire",
         2
        ]
       ],
       "Enhancement": [
        [
-        "Thundering Strikes",
+        "Ancestral Knowledge",
         5
        ],
        [
-        "Ancestral Knowledge",
+        "Thundering Strikes",
         5
        ],
        [
@@ -7511,11 +7512,11 @@
         1
        ],
        [
-        "Mental Quickness",
+        "Improved Stormstrike",
         2
        ],
        [
-        "Improved Stormstrike",
+        "Mental Quickness",
         2
        ],
        [
@@ -7532,7 +7533,8 @@
      "split": "19/32/0",
      "dps": 739.49,
      "se": 0.149,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)"
     },
     "family": "Enhancement",
     "runs_agree": 3,
@@ -15072,11 +15074,11 @@
         5
        ],
        [
-        "Reverberation",
-        4
+        "Call of Flame",
+        3
        ],
        [
-        "Call of Flame",
+        "Elemental Alacrity",
         3
        ],
        [
@@ -15084,15 +15086,15 @@
         3
        ],
        [
+        "Reverberation",
+        4
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Elemental Alacrity",
-        3
-       ],
-       [
-        "Call of Thunder",
+        "Earthbound",
         1
        ],
        [
@@ -15100,12 +15102,12 @@
         1
        ],
        [
-        "Lightning Overload",
-        3
+        "Lava Burst",
+        1
        ],
        [
-        "Earthbound",
-        1
+        "Lightning Overload",
+        3
        ],
        [
         "Elemental Fury",
@@ -15113,6 +15115,10 @@
        ]
       ],
       "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        5
+       ],
        [
         "Earth's Grasp",
         2
@@ -15122,19 +15128,15 @@
         5
        ],
        [
-        "Ancestral Knowledge",
-        5
-       ],
-       [
         "Guardian Totems",
         2
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -15151,7 +15153,8 @@
      "split": "29/22/0",
      "dps": 509.97,
      "se": 0.0854,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     "family": "Hybrid Elemental/Enhancement",
     "runs_agree": 3,
@@ -15317,11 +15320,11 @@
         5
        ],
        [
-        "Reverberation",
-        4
+        "Call of Flame",
+        3
        ],
        [
-        "Call of Flame",
+        "Elemental Alacrity",
         3
        ],
        [
@@ -15329,15 +15332,15 @@
         3
        ],
        [
+        "Reverberation",
+        4
+       ],
+       [
         "Elemental Focus",
         1
        ],
        [
-        "Elemental Alacrity",
-        3
-       ],
-       [
-        "Call of Thunder",
+        "Earthbound",
         1
        ],
        [
@@ -15345,12 +15348,12 @@
         1
        ],
        [
-        "Lightning Overload",
-        3
+        "Lava Burst",
+        1
        ],
        [
-        "Earthbound",
-        1
+        "Lightning Overload",
+        3
        ],
        [
         "Elemental Fury",
@@ -15358,6 +15361,10 @@
        ]
       ],
       "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        5
+       ],
        [
         "Earth's Grasp",
         2
@@ -15367,19 +15374,15 @@
         5
        ],
        [
-        "Ancestral Knowledge",
-        5
-       ],
-       [
         "Guardian Totems",
         2
        ],
        [
-        "Shamanistic Focus",
+        "Anticipation",
         1
        ],
        [
-        "Anticipation",
+        "Shamanistic Focus",
         1
        ],
        [
@@ -15396,7 +15399,8 @@
      "split": "29/22/0",
      "dps": 509.97,
      "se": 0.0854,
-     "iterations": 100000
+     "iterations": 100000,
+     "repair_note": "2026-10-24: repaired to the current trees: 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
     },
     "family": "Hybrid Elemental/Enhancement",
     "runs_agree": 2,
