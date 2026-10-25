@@ -59,6 +59,8 @@ SND = re.compile(r"attack speed by (\d+)%")
 POISON = re.compile(r"(\d+)% chance of poisoning the enemy(?: which instantly inflicts (\d[\d,]*) to (\d[\d,]*) Nature damage| for (\d[\d,]*) Nature damage over (\d+) sec)")
 INCAP = re.compile(r"incapacitates the target for (\d+) sec")
 PER_POINT_SECONDS = re.compile(r"(\d) points?\s*:\s*(\d+) seconds?")   # Kidney Shot: "1 point : 2 seconds  2 points: 3 seconds ..."
+VENOM = re.compile(r"damage of your Poisons by (\d+)% and your chance to apply Poisons by (\d+)%")   # Venom (Assassination, row 6)
+VENOM_POINTS = re.compile(r"(\d) points?\s*:\s*(\d+) sec")                                         # "1 point : 9 sec ... 5 points: 21 sec"
 MUT_FLAT = re.compile(r"plus an additional (\d[\d,]*) with each weapon")       # Mutilate: "75% weapon damage plus an additional 13 with each weapon"
 MUT_POISONED = re.compile(r"[Dd]amage increased by (\d+)% against Poisoned")    # Mutilate: "Damage increased by 20% against Poisoned targets"
 
@@ -120,6 +122,11 @@ def load_spellbook():
                     s.combo = -1
                 if name in ("Kidney Shot", "Slice and Dice", "Expose Armor"):
                     s.combo = -1
+                if name == "Venom":   # a finisher buff on the rogue: its seconds by combo points spent, applied in on_hit
+                    vm = VENOM.search(txt)
+                    s.kind, s.combo = "buff", -1
+                    s.venom = (float(vm.group(1)) / 100, float(vm.group(2)) / 100) if vm else (0.0, 0.0)
+                    s.venom_by_points = {int(a): float(b) for a, b in VENOM_POINTS.findall(txt)}
                 if name == "Kidney Shot":   # stun seconds by combo points spent, applied in on_swing (spell.stun stays 0: the engine's stun is fixed)
                     s.stun_by_points = {int(a): float(b) for a, b in PER_POINT_SECONDS.findall(txt)}
                 if st:
@@ -199,6 +206,8 @@ MECHANICS = {
     "Opportunity": "+5%/rank Backstab, Garrote (the opener's bleed), Ambush, Mutilate",
     "Mutilate": "daggers: the builder from 30 (2 points for 60 energy; both hands strike for 75% weapon damage plus a flat amount, +20% on a "
                 "Deadly-Poisoned mob, Seal Fate per critical strike); swords: not used",
+    "Venom": "off by default (slower in every gate tried, 2026-10-25); with the VENOM_HP knob a finisher kept up above that health share (VENOM_CP+ points; 9 s + 3 s per point): poison "
+             "damage +30%, poison chance +10 points (read like Improved Poisons' +2%/rank)",
     "Setup": "33%/rank: a combo point after dodging the target's own swing (an add's dodged swing gives none)",
     "Elusiveness": "not used",
     "Dirty Tricks": "not used",
@@ -236,7 +245,7 @@ FIT = {
     "Hack and Slash": "scale", "Weapon Expertise": "scale", "Aggression": "scale", "Adrenaline Rush": "scale", "Remorseless Attacks": "scale",
     "Vile Poisons": "scale", "Improved Poisons": "scale", "Vigor": "scale", "Seal Fate": "scale", "Cold Blood": "scale", "Improved Kidney Shot": "scale",
     "Improved Gouge": "scale", "Camouflage": "scale", "Setup": "scale", "Initiative": "scale", "Serrated Blades": "scale", "Dirty Deeds": "scale",
-    "Quietus": "scale", "Improved Sprint": "scale", "Opportunity": "scale",
+    "Quietus": "scale", "Improved Sprint": "scale", "Opportunity": "scale", "Venom": "scale",
 }
 SHARE_SOURCE = {"Melee": "white_mh", "Melee (off-hand)": "white_oh", "Sinister Strike": "sinister", "Eviscerate": "eviscerate", "Instant Poison": "poisons",
                 "Deadly Poison": "poisons", "Rupture": "rupture", "Cheap Shot": "sinister", "Garrote": "garrote", "Riposte": "riposte", "Kidney Shot": "eviscerate",
@@ -252,7 +261,7 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% "
                "health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the "
                "thresholds on top of this list.")
-NOT_MODELLED = ("runners, adds, the stealth approach time, Expose Armor, Rupture (Eviscerate is used), Garrote's attack power bonus (its tooltip gives no number), "
+NOT_MODELLED = ("runners, adds, the stealth approach time, Expose Armor, Rupture by default (Eviscerate is used; the RUPTURE_HP knob lets rotation_opt try it at 5 points), Garrote's attack power bonus (its tooltip gives no number), "
                 "Gouge-and-bandage, Vanish, Sprint, weapon skill, maces (Hack and Slash's armor share), gear upgrades within a level bracket.")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'combat-swords-raid', 'opt': 'opt-combat-swords-raid-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=2'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'Two-mob pulls with Blade Flurry'}], "spec": "combat-swords-raid", "hand": "leveling-combat-swords", "opt": "opt-combat-swords-raid-leveling-st", "tag": "combat", "lookahead": 16,
@@ -261,6 +270,15 @@ PIPELINE = {"variants": [{'spec': 'combat-swords-raid', 'opt': 'opt-combat-sword
 
 
 class RogueModule(BaseModule):
+    # rotation knobs (rotation_opt.py tunes them; the defaults are the hand-written rotation): Venom while the mob has more than VENOM_HP of
+    # its health and VENOM_CP+ points; Rupture at 5 points instead of Eviscerate while the mob has more than RUPTURE_HP. Both default to
+    # 1.01 (never): measured 2026-10-25 on a 31/20/0 Mutilate + Venom build at 60 (300 fights), every Venom gate tried was slower (VENOM_HP
+    # 0.5 at 5 points +2.4% per kill, at 1 point +5.4%, 0.0 +9.2%: a 25-energy finisher in place of an Eviscerate buys +30% on 16% of the
+    # damage), and Rupture at 5 points finds the mob above 60% about once in 100 kills. Combat and daggers playstyles only.
+    VENOM_HP = 1.01
+    VENOM_CP = 1
+    RUPTURE_HP = 1.01
+    ROTATION_KNOBS = {"VENOM_HP": [0.0, 0.3, 0.5, 0.7, 1.01], "VENOM_CP": [1, 2, 3, 5], "RUPTURE_HP": [1.01, 0.8, 0.6, 0.4]}
     resource = "energy"
     melee = True
     eat_below = 0.65
@@ -413,6 +431,9 @@ class RogueModule(BaseModule):
             m *= 1 + self.tv("Opportunity", 0) / 100
         if spell.school == "nature":
             m *= 1 + self.tv("Vile Poisons", 0) / 100
+            ven = f.p.buff("Venom", f.t) if f else None
+            if ven:
+                m *= 1 + ven["dmg"]
         if spell.name == "Rupture":
             m *= 1 + self.tv("Serrated Blades", 1) / 100
         if f and f.m.stunned(f.t) and f.m.debuffs.get("Kidney Shot", {}).get("until", 0) > f.t:
@@ -515,6 +536,9 @@ class RogueModule(BaseModule):
                     m.cast_end = -1.0   # a stun breaks the mob's cast, as engine.apply_control does for a fixed stun
         # poisons: Instant Poison on main-hand hits, Deadly Poison on off-hand hits
         chance_bonus = self.tv("Improved Poisons", 0) / 100
+        ven = p.buff("Venom", t)
+        if ven:
+            chance_bonus += ven["chance"]
         ip, dp = self.spells.get("Instant Poison"), self.spells.get("Deadly Poison")
         if hand == "mh" and ip is not None and fight.rng.random() < ip.poison_chance + chance_bonus:
             self.poison_hit(fight, ip)
@@ -554,6 +578,11 @@ class RogueModule(BaseModule):
             dur = (9.0 + 3.0 * (cp - 1)) * (1 + self.tv("Improved Slice and Dice", 0) / 100)
             p.buffs["Slice and Dice"] = {"until": t + dur, "speed": getattr(spell, "snd", 0.2)}
             fight.note(f"Slice and Dice {dur:.0f}s")
+        if spell.name == "Venom":
+            cp = max(1, min(5, fight.last_combo))
+            dur = spell.venom_by_points.get(cp, 9.0 + 3.0 * (cp - 1))
+            p.buffs["Venom"] = {"until": t + dur, "dmg": spell.venom[0], "chance": spell.venom[1]}
+            fight.note(f"Venom {dur:.0f}s")
         if spell.name == "Evasion":
             p.buffs["Evasion"] = {"until": t + 15.0}
         if spell.name == "Riposte":
@@ -657,9 +686,15 @@ class RogueModule(BaseModule):
                 return evis
         if snd and can(snd) and p.combo >= 1 and not p.buff("Slice and Dice", t) and hp > 0.5 * m.hp_max and (p.combo <= 2 or hp > 0.8 * m.hp_max):
             return snd
+        ven = sp.get("Venom")   # builds holding the talent (from 40): poison damage and chance up for 9-21 s
+        if ven is not None and p.combo >= self.VENOM_CP and hp > self.VENOM_HP * m.hp_max and not p.buff("Venom", t) and can(ven):
+            return ven
         if p.combo >= 5:
             if ks and can(ks) and p.hp < 0.6 * p.hp_max and not m.stunned(t) and hp > 0.25 * m.hp_max:
                 return ks
+            rup = sp.get("Rupture") if self.RUPTURE_HP <= 1.0 else None   # off by default (RUPTURE_HP 1.01)
+            if rup is not None and hp > self.RUPTURE_HP * m.hp_max and not fight.dot_active("Rupture") and can(rup):
+                return rup
             if evis and can(evis):
                 self.cold_blood(fight, can)
                 return evis

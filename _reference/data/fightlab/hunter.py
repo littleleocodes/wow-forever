@@ -7,7 +7,8 @@ inherits from the hunter since 2026-10-08 (`make_pet`); Claw/Bite from the beta 
 models it since its fit to beta combat logs (`summon_hawk`: the dive bomb, then a swing on arrival and every 2.5 s for 18 s).
 
 Playstyle `bm-leveling` (the scorer's model id): the cat runs in and Growls, the hunter shoots from 35 yd: Hunter's Mark,
-Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between; Bestial
+Serpent Sting, Summon Hawk or Arcane Shot, Sniper Shot (with the talent and the SNIPER_SHOT knob, since 2026-10-25), Multi-Shot / Aimed Shot on their
+shared cooldown, Auto Shot in between; Bestial
 Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops low; Feign Death, Wing Clip and
 Raptor Strike when a mob reaches the hunter. Between fights: Mend Pet, food and water.
 """
@@ -32,6 +33,7 @@ FLAT = re.compile(r"caus(?:es|ing) (\d[\d,]*) (\w+) damage(?! over)|Inflicts (\d
 DOT = re.compile(r"caus(?:es|ing) (\d[\d,]*) (\w+) damage over (\d+) sec")
 PLUS = re.compile(r"weapon damage plus (\d[\d,]*)")
 RANGED_PLUS = re.compile(r"increases ranged damage by (\d[\d,]*)")
+SNIPER_PLUS = re.compile(r"ranged damage plus (\d[\d,]*)")
 # "Heals your pet 245 health every second while you focus. Lasts 5 sec." Until 2026-10-18 the pattern's [^.]*? could not cross the period
 # after "focus", so Mend Pet parsed as a 0-damage spell cast at the mob (mana and a GCD) and healed nothing between fights (audit 2 #26).
 MEND = re.compile(r"Heals your pet (\d[\d,]*) health every second.*?Lasts (\d+) sec")
@@ -125,6 +127,10 @@ def load_spellbook():
                     s.kind = "ranged"
                     if name in ("Multi-Shot", "Aimed Shot", "Scatter Shot"):
                         s.weapon_pct = 0.5 if name == "Scatter Shot" else 1.0
+                    if name == "Sniper Shot":   # "deals ranged damage plus 295": a full ranged weapon hit plus the rank's flat damage
+                        sn = SNIPER_PLUS.search(txt)
+                        s.weapon_pct = 1.0
+                        s.dmg_min = s.dmg_max = _num(sn.group(1)) if sn else 0.0
                     if rp:
                         s.dmg_min = s.dmg_max = _num(rp.group(1))
                     if name == "Summon Hawk":   # the dive bomb: the rank's base plus a share of ranged attack power (resolve_attack adds coef x RAP)
@@ -228,7 +234,7 @@ MECHANICS = {
     "Barrage": "+3.3%/rank Multi-Shot and Aimed Shot",
     "Scatter Shot": "not used (the pet holds the mob)",
     "Ranged Weapon Specialization": "+1%/rank ranged damage",
-    "Sniper Shot": "not used (4s cast; Multi-Shot / Aimed Shot fill the slot)",
+    "Sniper Shot": "a full ranged hit plus the rank's flat damage (4 s cast, 15 s cooldown), cast from range on cooldown while the mob has more than 30% health, before Multi-Shot / Aimed Shot, when the SNIPER_SHOT rotation knob is on (off by default; the bonus range for the next 3 Shots is not modelled)",
     "Improved Tracking": "+1%/rank damage (the mob is assumed tracked)",
     "Deflection": "+2%/rank parry when meleeing",
     "Savage Strikes": "+2%/rank crit on melee abilities (the client's class mask: abilities only, no auto attacks)",
@@ -305,6 +311,10 @@ class HunterModule(BaseModule):
     melee = True
     ranged = True
     special_stat = ("Pet deaths/100", "pet_deaths_per_100")
+    # Sniper Shot (2026-10-25: never cast before): 0 = not cast (the default, every build as before), 1 = from range on cooldown while the
+    # mob has more than 30% health; the default cast cost the builds holding it 1-11% per kill before any tuning, so rotation_opt.py decides
+    SNIPER_SHOT = 0
+    ROTATION_KNOBS = {"SNIPER_SHOT": [0, 1]}   # tuned by rotation_opt.py ("knobs" in rotations/hunter-<spec>.json)
 
     AOE = {'channel': ['Volley'], 'direct': ['Multi-Shot'], 'dots': ['Serpent Sting'], 'min_near': 2}
 
@@ -837,6 +847,7 @@ class HunterModule(BaseModule):
             return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         mark, sting, arcane, hawk, multi, aimed, conc, mend, fd, clip, raptor, mongoose = (sp.get(n) for n in ("Hunter's Mark", "Serpent Sting", "Arcane Shot", "Summon Hawk", "Multi-Shot", "Aimed Shot", "Concussive Shot", "Mend Pet", "Feign Death", "Wing Clip", "Raptor Strike", "Mongoose Bite"))
+        sniper = sp.get("Sniper Shot")   # talent-granted: absent without the talent (TALENT_SPELLS)
         hp = m.hp
         # a mob on me: Feign Death sends it back to the pet; otherwise melee it (Wing Clip, Raptor Strike, Mongoose Bite after a dodge)
         if on_me and pet is not None and pet.alive and fd and can(fd) and (in_melee or m.dist < 10):
@@ -867,6 +878,8 @@ class HunterModule(BaseModule):
             return hawk
         if arcane and can(arcane):
             return arcane
+        if self.SNIPER_SHOT and sniper and can(sniper) and hp > 0.3 * m.hp_max:
+            return sniper
         if multi and can(multi):
             return multi
         if aimed and can(aimed) and hp > 0.25 * m.hp_max:

@@ -105,6 +105,21 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0a. **Fight-lab cast-path audit (2026-10-25, agent; read-only)**: spells a spec's leveling rotation never presses, so no search can value
+   their talents. Being fixed: rogue Venom, hunter Sniper Shot, mage Pyroblast hard-cast (only Heating Up casts it), mage Frost Blast.
+   Done the same day (cast paths, knobs off by default: every number unchanged, mage regression identical): Venom (`VENOM_HP`/`VENOM_CP`:
+   +2.4% to +9.2% slower per kill on a 31/20/0 Mutilate+Venom build at 60: an Eviscerate is worth more), Rupture (`RUPTURE_HP`), Sniper Shot
+   (`SNIPER_SHOT`; its damage had parsed to 0; +1.8% to +11% slower on the Beast Mastery slot build, -0.7% to +4.9% Marksmanship),
+   Pyroblast hard cast inside a root, stun or the run-in (`PYRO_HARDCAST`: +0.4% to +1.5% slower; the pre-pull opener needs an engine
+   pre-pull model), Frost Blast (`FROST_BLAST`: never pays). Next re-tunes test the knobs (the hunter's mm-raid and bm-leveling tuning
+   builds hold Sniper Shot; rogue's combat-daggers-raid tuning build lacks Venom). Open: Fire's signature requirement should count Heating
+   Up with Pyroblast (only Heating Up casts it; the hand draft holds Pyroblast alone and casts 0); a Presence of Mind Pyroblast line for Arcane.
+   Open: rogue Rupture's cast is now a knob, hunter Wing Clip in `decide_melee`, priest Mind Flay in `decide_holy` (the Holy/Shadow hybrid),
+   warlock Drain Soul, paladin Exorcism (Undead and Demons only), mage Flamestrike in `decide_aoe`, shaman single-target Chain Lightning.
+   Rules: `enhancement-dps.json` vetoes Lightning Bolt above 35% health, the Elemental-Enhancement hybrid's required spell (`--check-rules`
+   misses it: the hybrid maps to `elemental-dps`); the signature audit ran the melee Beast-Survival `opt-melee-dps-solo-60` in `bm-leveling`;
+   the druid, shaman and warrior rules files carry no `signature` block (tuned before the rule).
+
 0. **From the 2026-10-24 speed audit (agent), after the queues** (evidence in its report, summarized here):
    - Gear is chosen on the training dummy (`gear_tiers.make` races in the dummy setting, `-raid` sets too): give `make` a setting, gear
      the full-raid winner in `ml_pipeline.final` and drop the two dummy searches (~40% of the ML final step, and the gear-talent coupling).

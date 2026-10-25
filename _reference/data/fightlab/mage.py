@@ -8,9 +8,14 @@ the numbers are the client's. Talents with no entry in MECHANICS are not simulat
 Playstyles:
 - `frost-leveling`: single-target Frostbolt kiting: pull at max range, Frostbolt while the mob walks in, Frost Nova
   when it reaches melee, step back, Ice Lance / Frostbolt into the freeze, Fire Blast and wand to finish without
-  overkill, Cone of Cold and Cold Snap as extra control, Ice Barrier before pulls.
+  overkill, Cone of Cold and Cold Snap as extra control, Ice Barrier before pulls. Frost Blast (trained at 24, never cast before
+  2026-10-25) behind the FROST_BLAST knob (off by default): 1 = a finisher like Scorch, 2 = also when a Frostbolt would not finish
+  its cast before the mob arrives.
 - `fire-leveling`: Fireball at range, Scorch and Fire Blast when the mob is close, Frost Nova / Blast Wave for
-  distance, Ice Lance into freezes if talented, Pyroblast on a full Heating Up, Combustion on the pull.
+  distance, Ice Lance into freezes if talented, Pyroblast on a full Heating Up, Combustion on the pull. With the PYRO_HARDCAST
+  knob (2026-10-25) also a hard-cast Pyroblast whenever its whole cast (shortened by Heating Up stacks) finishes before the mob is on
+  you: in a Frost Nova root, with Presence of Mind, or while it walks in. The lab's mob runs in from the pull's first second, so the
+  classic "Pyroblast before the mob notices you" opener is not modelled.
 - `arcane-leveling` (2026-09-30, `decide_arcane`): Arcane Power and Presence of Mind on the pull, Arcane Blast stacked while the
   mana allows (client 70425: each stack 15% of Intellect as spell damage for 15 s from the first, +175% to the next Arcane Blast's
   cost; Arcane Wrath when talented), Arcane Missiles as the channel
@@ -335,7 +340,11 @@ class MageModule(BaseModule):
     AW_OPENER = 1            # Arcane Wrath (client 70425) as the pull's first cast when its 3.5 s cast fits before the mob arrives
     # client 70425 rewrote Arcane Blast (stacks are spell damage for every spell, 15 s, no longer spent by other spells): the stack
     # knobs set by hand for the 70291 rule are searched again by rotation_opt.py, with the Arcane Wrath opener
-    ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1]}
+    # 2026-10-25 (cast-path audit: Pyroblast was cast only on a full Heating Up, Frost Blast never): decide_fire / decide_frost
+    PYRO_HARDCAST = 0        # 1: a hard-cast Pyroblast whenever its whole cast finishes before the mob is on you (0: as before)
+    FROST_BLAST = 0          # 1: Frost Blast as a finisher; 2: also when a Frostbolt cannot finish before the mob arrives (0: never)
+    ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1],
+                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -884,10 +893,13 @@ class MageModule(BaseModule):
         hp = m.hp
         fb_cast = self.cast_time(fb)
         wand_hit = self.wand_damage() * 0.65
+        fblast = sp.get("Frost Blast") if self.FROST_BLAST else None
         if blast and can(blast) and hp <= avg(blast) * 0.9:
             return blast
         if lance and can(lance) and hp <= avg(lance) * (self.lance_frozen_mult() if frozen else 1) * 0.9:
             return lance
+        if fblast and can(fblast) and hp <= avg(fblast) * 0.9 and hp > wand_hit * 1.5:   # FROST_BLAST: a finisher, as Scorch for Fire
+            return fblast
         if hp <= wand_hit * 1.5:
             return "wand"
         if in_melee and not rooted:
@@ -923,6 +935,8 @@ class MageModule(BaseModule):
             if time_to_melee < fb_cast:
                 if blast and can(blast):
                     return blast
+                if fblast and self.FROST_BLAST >= 2 and can(fblast) and time_to_melee >= self.cast_time(fblast):
+                    return fblast
                 if nova and can(nova):
                     return "wand"
         if in_melee and blast and can(blast):
@@ -1111,6 +1125,11 @@ class MageModule(BaseModule):
             return "retreat"
         if frozen and lance and can(lance):
             return lance
+        if self.PYRO_HARDCAST and pyro and can(pyro) and hp > avg(pyro) * 0.5:   # a hard cast that finishes before the mob is on me
+            c = self.cast_time(pyro)
+            if c <= 0 or (rooted and m.root_until - t >= c) or (m.stunned(t) and m.stun_until - t >= c) \
+                    or (not in_melee and not rooted and (m.dist - MELEE_RANGE) / max(0.1, m.speed(t)) >= c):
+                return pyro
         if p.buff("Presence of Mind", t) and can(fireball):
             return fireball
         if not in_melee and not rooted and not m.stunned(t):
