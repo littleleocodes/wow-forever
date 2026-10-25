@@ -6220,5 +6220,31 @@
     "kept": false
    }
   ]
+ },
+ "rogue/subtlety-raid/raid/any": {
+  "class": "rogue",
+  "spec": "any",
+  "entry": "subtlety-raid",
+  "setting": "raid",
+  "date": "2026-10-24",
+  "base_dps": 611.6,
+  "abilities": [
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
  }
 }

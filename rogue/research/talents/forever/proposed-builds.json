@@ -989,164 +989,6 @@
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
     {
-      "id": "combat-swords-open-raid",
-      "name": "Combat — Swords (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Combat",
-      "generated": "2026-10-10",
-      "derived": "raid",
-      "summary": "The Combat raid build the open talent search found on 2026-10-10: every legal 51-point build with no tree rule, searched in the community simulator's combat-swords-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.8% over opt-combat-swords-raid-raid-dps, the best of our builds in that rotation.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Ruthlessness", 3],
-          ["Improved Slice and Dice", 3],
-          ["Relentless Strikes", 1],
-          ["Lethality", 3],
-          ["Improved Poisons", 3]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Improved Sinister Strike", 2],
-          ["Lightning Reflexes", 4],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 5],
-          ["Blade Flurry", 1],
-          ["Hack and Slash", 5],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": []
-      },
-      "core": [
-        {"talent": "Relentless Strikes", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Sinister Strike", "why": "33 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malice", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Slice and Dice", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Adrenaline Rush", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Dual Wield Specialization", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruthlessness", "why": "21 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Precision", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["The best swords build: +1.8% over opt-combat-swords-raid-raid-dps, the best of our builds in combat-swords-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (combat-swords-raid, full raid): 18/33/0 (Combat) at 716.1 DPS; opt-combat-swords-raid-raid-dps 703.7, combat-swords-raid 702.6 in the same fights; 5,806 builds simulated, 2 independent runs reached the top.", "The combat-swords-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): combat-daggers-raid -53.6%, assassination-raid -53.6%, subtlety-raid -53.6%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Lightning Reflexes, Deflection.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements."],
-      "open_questions": ["An open-search Combat build: check it against the community's Combat builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/005303103003-32403300001515231--6"]
-    },
-    {
-      "id": "subtlety-open-raid",
-      "name": "Subtlety — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Subtlety",
-      "generated": "2026-10-10",
-      "derived": "raid",
-      "summary": "The Subtlety raid build the open talent search found on 2026-10-10: every legal 51-point build with no tree rule, searched in the community simulator's subtlety-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.5% over subtlety-hemo-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Ruthlessness", 3],
-          ["Improved Slice and Dice", 3],
-          ["Relentless Strikes", 1],
-          ["Lethality", 3],
-          ["Cold Blood", 1],
-          ["Improved Poisons", 4]
-        ],
-        "Combat": [],
-        "Subtlety": [
-          ["Camouflage", 3],
-          ["Opportunity", 2],
-          ["Setup", 1],
-          ["Dirty Tricks", 1],
-          ["Improved Ambush", 3],
-          ["Initiative", 3],
-          ["Improved Distract", 2],
-          ["Heightened Senses", 1],
-          ["Premeditation", 1],
-          ["Serrated Blades", 3],
-          ["Dirty Deeds", 2],
-          ["Preparation", 1],
-          ["Hemorrhage", 1],
-          ["Quietus", 5],
-          ["Thousand Cuts", 1],
-          ["Ghostly Strike", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Hemorrhage", "why": "387 DPS lost without it (57% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Relentless Strikes", "why": "52 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruthlessness", "why": "46 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Thousand Cuts", "why": "39 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malice", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Slice and Dice", "why": "25 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Serrated Blades", "why": "25 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+0.5% over the best hand draft of the spec, subtlety-hemo-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (subtlety-raid, full raid): 20/0/31 (Subtlety) at 676.1 DPS; subtlety-hemo-raid 672.7 in the same fights; 4,312 builds simulated, 2 independent runs reached the top.", "The subtlety-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): combat-swords-raid -15.0%, combat-daggers-raid -57.1%, assassination-raid -9.4%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Camouflage, Setup, Dirty Tricks, Improved Ambush, Improved Distract, Heightened Senses.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Camouflage -> Ghostly Strike (survival). Net -0.15% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Subtlety: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build."],
-      "open_questions": ["An open-search Subtlety build: check it against the community's Subtlety builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/005303103014--4021013302113211501-6"],
-      "replaces": "subtlety-hemo-raid"
-    },
-    {
-      "id": "daggers-split-open-raid",
-      "name": "Daggers (split) — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Assassination/Combat",
-      "generated": "2026-10-10",
-      "derived": "raid",
-      "summary": "The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent search found on 2026-10-10: every legal 51-point build with no tree rule, searched in the community simulator's assassination-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over assassination-ml-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Ruthlessness", 3],
-          ["Improved Slice and Dice", 3],
-          ["Relentless Strikes", 1],
-          ["Lethality", 3],
-          ["Vile Poisons", 1],
-          ["Cold Blood", 1],
-          ["Improved Poisons", 3],
-          ["Mutilate", 1]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 3],
-          ["Puncturing Wounds", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 5],
-          ["Blade Flurry", 1],
-          ["Hack and Slash", 4],
-          ["Weapon Expertise", 2]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Relentless Strikes", "why": "49 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Dual Wield Specialization", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malice", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruthlessness", "why": "27 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Slice and Dice", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Hack and Slash", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Precision", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Flawless Execution", "why": "16 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["Open search result (assassination-raid, full raid): 21/28/2 (Daggers (split) (an Assassination/Combat hybrid)) at 717.9 DPS; assassination-ml-raid 707.6, assassination-seal-fate-raid 702.3, assassination-mutilate-raid 688.5 in the same fights; 4,405 builds simulated, 2 independent runs reached the top.", "The assassination-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): combat-swords-raid -11.0%, combat-daggers-raid -0.1%, subtlety-raid -53.8%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json, item level 64.7): 717.9 DPS against 717.9 in the rotation's standard set: the standard set stays.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Sinister Strike, Lightning Reflexes, Deflection, Riposte.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Riposte was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Sinister Strike -> Lightning Reflexes (survival); Riposte -> Lightning Reflexes (survival). Net +0.00% on a third seed.", "2026-10-15 (page audit): restored. The 2026-10-15 ML search for the hybrid wrote daggers-split-ml-raid (30/19/2) in its place, which is the Assassination ML build with two free points moved (30 Assassination points: not a split); that build was removed."],
-      "open_questions": ["An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6"]
-    },
-    {
       "id": "opt-combat-daggers-raid-leveling-st",
       "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)",
       "role": "dps",
@@ -1888,6 +1730,57 @@
       "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "daggers-split-open-raid",
+      "name": "Daggers (split) — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Assassination/Combat",
+      "generated": "2026-10-25",
+      "derived": "raid",
+      "summary": "The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent search found on 2026-10-25: every legal 51-point build with no tree rule, searched in the community simulator's assassination-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.2% over assassination-ml-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Ruthlessness", 3],
+          ["Improved Slice and Dice", 3],
+          ["Relentless Strikes", 1],
+          ["Lethality", 3],
+          ["Vile Poisons", 3],
+          ["Cold Blood", 1],
+          ["Improved Poisons", 5],
+          ["Mutilate", 1],
+          ["Seal Fate", 3]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 3],
+          ["Puncturing Wounds", 3],
+          ["Deflection", 3],
+          ["Precision", 3],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 5]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Relentless Strikes", "why": "58 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Dual Wield Specialization", "why": "32 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Malice", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Seal Fate", "why": "24 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Slice and Dice", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ruthlessness", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Poisons", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Flawless Execution", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Open search result (assassination-raid, full raid): 28/21/2 (Daggers (split) (an Assassination/Combat hybrid)) at 663.4 DPS; assassination-ml-raid 662.0, assassination-seal-fate-raid 656.9, daggers-split-open-raid 656.5, assassination-mutilate-raid 642.9 in the same fights; 7,678 builds simulated, 3 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): combat-swords-raid -11.1%, combat-daggers-raid -0.2%, subtlety-raid -55.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Sinister Strike, Lightning Reflexes, Deflection, Endurance.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-25 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Improved Sinister Strike -> Lightning Reflexes (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/0053031033150103-311333100015-002-7"]
     }
   ]
 }

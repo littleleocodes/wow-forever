@@ -15,67 +15,13 @@
   "bis": {
    "entry": "combat-daggers-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json",
-   "date": "2026-10-22",
+   "date": "2026-10-25",
    "chosen": "all-slots",
    "ilvl": 63.8,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
    ],
-   "trinket_screen": {
-    "Adaptive Combat Assistant (272437)": 1.0131,
-    "Rune of the Guard Captain (19120)": 1.0126,
-    "Cleansed Vilebranch Medallion (270275)": 1.0126,
-    "Molten Heart of the Mountain (249470)": 1.0104,
-    "Frozen Heart of the Mountain (249469)": 1.0079,
-    "Everlook Delivery Bot (274760)": 1.0063,
-    "Everlook Pathcarver (274759)": 1.0061,
-    "Jewel of the Guard Captain (270225)": 1.0041,
-    "Weakness Analyzer (272438)": 1.0006,
-    "Ankh of Life (1713)": 1.0,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Stormpike Insignia Rank 6 (17904)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "Essence of the Pure Flame (18815)": 1.0,
-    "Talisman of Ephemeral Power (18820)": 1.0,
-    "Arena Grand Master (19024)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
    "names": [
     "Darkmantle Cap",
     "Onyxia Tooth Pendant",
@@ -97,13 +43,13 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0019454280525864,
-    "keep-sets-and-effects": 1.0012520211582634,
-    "previous": 0.3845977766152978
+    "all-slots": 1.0019454280525881,
+    "keep-sets-and-effects": 1.0012520211582627,
+    "previous": 1.0019454280525881
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0015951938505532
+    "all-slots": 1.0015951938505496
    },
    "weights": {
     "PseudoStatMainHandDps": 1.744,
@@ -121,109 +67,19 @@
    "evaluated_on": [
     "combat-daggers-raid: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 2,
-     "from": "Zandalar Madcap's Mantle",
-     "to": "Theramore Pauldrons"
-    },
-    {
-     "slot": 8,
-     "from": "Sentinel's Leather Pants",
-     "to": "Devilsaur Leggings"
-    },
-    {
-     "slot": 9,
-     "from": "Shadowcraft Boots",
-     "to": "Dunestalker's Boots"
-    },
-    {
-     "slot": 11,
-     "from": "Don Julio's Band",
-     "to": "Quick Strike Ring"
-    },
-    {
-     "slot": 14,
-     "from": "Greenhammer",
-     "to": "Premier High Warlord's Razor"
-    },
-    {
-     "slot": 15,
-     "from": "Premier High Warlord's Razor",
-     "to": "Heartseeker"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 30f67f5d2",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 0.9
-   }
+   "commit": "30f67f5d2"
   },
   "bis2": true,
   "prebis": {
    "entry": "combat-daggers-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "previous+trinkets",
+   "date": "2026-10-25",
+   "chosen": "previous",
    "ilvl": 63.7,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
    ],
-   "trinket_screen": {
-    "Adaptive Combat Assistant (272437)": 1.0135,
-    "Rune of the Guard Captain (19120)": 1.0109,
-    "Cleansed Vilebranch Medallion (270275)": 1.0109,
-    "Molten Heart of the Mountain (249470)": 1.0108,
-    "Frozen Heart of the Mountain (249469)": 1.0075,
-    "Everlook Delivery Bot (274760)": 1.0061,
-    "Everlook Pathcarver (274759)": 1.005,
-    "Jewel of the Guard Captain (270225)": 1.0041,
-    "Weakness Analyzer (272438)": 1.0007,
-    "Smoking Heart of the Mountain (11811)": 1.0005,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0005,
-    "Dormant Heart of the Mountain (249473)": 1.0005,
-    "Volunteer's Lucky Seal (271904)": 1.0005,
-    "Volunteer's Lucky Seal (271906)": 1.0005,
-    "Relentless Raider's Seal (272060)": 1.0005,
-    "Relentless Raider's Seal (272062)": 1.0005,
-    "Ankh of Life (1713)": 1.0,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Stormpike Insignia Rank 6 (17904)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
    "names": [
     "Darkmantle Cap",
     "Beads of Ogre Might",
@@ -245,50 +101,29 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9984545502989848,
-    "previous": 1.008724845991652,
-    "previous+trinkets": 1.0100131032204773
+    "keep-sets-and-effects": 0.9995763758630168,
+    "previous": 1.0104283806245373
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "previous+trinkets": 1.001662719296594
+    "previous": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.7207,
-    "PseudoStatOffHandDps": 0.5861,
-    "StatAgility": 0.2636,
-    "StatArmorPenetration": 0.0456,
-    "StatAttackPower": 0.1615,
-    "StatCritRating": 0.2305,
-    "StatExpertiseRating": 0.2303,
-    "StatHasteRating": 0.1986,
-    "StatHitRating": 0.285,
-    "StatSpellPiercing": 0.0427,
-    "StatStrength": 0.1615
+    "PseudoStatMainHandDps": 1.7019,
+    "PseudoStatOffHandDps": 0.5783,
+    "StatAgility": 0.2605,
+    "StatArmorPenetration": 0.0452,
+    "StatAttackPower": 0.1598,
+    "StatCritRating": 0.2264,
+    "StatExpertiseRating": 0.2433,
+    "StatHasteRating": 0.1937,
+    "StatHitRating": 0.2857,
+    "StatSpellPiercing": 0.0447,
+    "StatStrength": 0.1598
    },
    "evaluated_on": [
     "combat-daggers-raid: ml winner (bis)"
    ],
-   "replaced": [
-    {
-     "slot": 12,
-     "from": "Rune of the Guard Captain",
-     "to": "Adaptive Combat Assistant"
-    },
-    {
-     "slot": 13,
-     "from": "Cleansed Vilebranch Medallion",
-     "to": "Rune of the Guard Captain"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 30f67f5d2",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 0.8
-   }
+   "commit": "30f67f5d2"
   }
  },
  "search": {
@@ -808,19 +643,20 @@
    "simulated_builds": 4736,
    "simulated_fights": 6689000,
    "minutes": 6.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json",
+   "commit": "30f67f5d2"
   },
   "bis-dummy": {
    "class": "rogue",
    "spec": "Combat",
    "setting": "dummy",
    "entry": "combat-daggers-raid",
-   "date": "2026-10-16",
+   "date": "2026-10-25",
    "constraint": "Combat 30+",
    "protected": [],
    "entries_screened": {
-    "combat-daggers-raid": 428.96,
-    "combat-swords-raid": 386.6
+    "combat-daggers-raid": 383.21,
+    "combat-swords-raid": 338.5
    },
    "entries_searched": [
     "combat-daggers-raid"
@@ -854,7 +690,7 @@
       ],
       [
        "Improved Poisons",
-       2
+       3
       ]
      ],
      "Combat": [
@@ -892,6 +728,468 @@
       ],
       [
        "Weapon Expertise",
+       1
+      ],
+      [
+       "Aggression",
+       3
+      ],
+      [
+       "Adrenaline Rush",
+       1
+      ]
+     ],
+     "Subtlety": [
+      [
+       "Opportunity",
+       2
+      ]
+     ]
+    },
+    "split": "18/31/2",
+    "dps": 383.65,
+    "se": 0.0534,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "18/31/2",
+    "dps": 383.65,
+    "se": 0.0534,
+    "differs": [
+     [
+      "Deflection",
+      1
+     ],
+     [
+      "Endurance",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        1
+       ],
+       [
+        "Improved Expose Armor",
+        2
+       ],
+       [
+        "Lethality",
+        1
+       ],
+       [
+        "Improved Poisons",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Improved Eviscerate",
+        3
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Deflection",
+        1
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Dual Wield Specialization",
+        5
+       ],
+       [
+        "Blade Flurry",
+        1
+       ],
+       [
+        "Hack and Slash",
+        5
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Adrenaline Rush",
+        1
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Opportunity",
+        2
+       ]
+      ]
+     },
+     "split": "18/31/2",
+     "dps": 383.65,
+     "se": 0.0534
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        1
+       ],
+       [
+        "Improved Expose Armor",
+        2
+       ],
+       [
+        "Lethality",
+        1
+       ],
+       [
+        "Improved Poisons",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Improved Eviscerate",
+        3
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Endurance",
+        1
+       ],
+       [
+        "Dual Wield Specialization",
+        5
+       ],
+       [
+        "Blade Flurry",
+        1
+       ],
+       [
+        "Hack and Slash",
+        5
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Adrenaline Rush",
+        1
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Opportunity",
+        2
+       ]
+      ]
+     },
+     "split": "18/31/2",
+     "dps": 383.65,
+     "se": 0.0534
+    }
+   ],
+   "runs": [
+    {
+     "entry": "combat-daggers-raid",
+     "run": 1,
+     "simulated": 1626,
+     "best_screen": 383.96,
+     "best_split": "18/31/2",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 426,
+       "best": 383.21
+      },
+      {
+       "round": 1,
+       "simulated": 626,
+       "best": 383.21,
+       "predicted_top": 380.11
+      },
+      {
+       "round": 2,
+       "simulated": 826,
+       "best": 383.96,
+       "predicted_top": 381.24
+      },
+      {
+       "round": 3,
+       "simulated": 1026,
+       "best": 383.96,
+       "predicted_top": 382.37
+      },
+      {
+       "round": 4,
+       "simulated": 1226,
+       "best": 383.96,
+       "predicted_top": 383.55
+      },
+      {
+       "round": 5,
+       "simulated": 1426,
+       "best": 383.96,
+       "predicted_top": 383.05
+      },
+      {
+       "round": 6,
+       "simulated": 1626,
+       "best": 383.96,
+       "predicted_top": 383.45
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      383.59,
+      383.59,
+      383.59,
+      383.59,
+      383.59,
+      383.59
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      383.56,
+      383.56,
+      383.56,
+      383.56,
+      383.56
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      383.65,
+      383.65
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 245,
+     "best_gap": 0.0,
+     "best_move": "3 Lightning Reflexes -> 2 Deflection + 1 Riposte"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.3358
+    },
+    {
+     "feature": "Improved Expose Armor",
+     "importance": 0.1652
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.1596
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0629
+    },
+    {
+     "feature": "Adrenaline Rush",
+     "importance": 0.0484
+    },
+    {
+     "feature": "Puncturing Wounds",
+     "importance": 0.0452
+    },
+    {
+     "feature": "Improved Slice and Dice",
+     "importance": 0.0368
+    },
+    {
+     "feature": "Malice",
+     "importance": 0.0224
+    },
+    {
+     "feature": "Opportunity",
+     "importance": 0.0198
+    },
+    {
+     "feature": "Improved Sinister Strike",
+     "importance": 0.0171
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0129
+    },
+    {
+     "feature": "Ruthlessness",
+     "importance": 0.0104
+    }
+   ],
+   "simulated_builds": 3104,
+   "signature_check": {
+    "spec": "Combat",
+    "ok": true,
+    "core_share": 0.8557,
+    "min_share": 0.7,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3993000,
+   "minutes": 7.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "bis-raid": {
+   "class": "rogue",
+   "spec": "Combat",
+   "setting": "raid",
+   "entry": "combat-daggers-raid",
+   "date": "2026-10-25",
+   "constraint": "Combat 30+",
+   "protected": [],
+   "entries_screened": {
+    "combat-daggers-raid": 679.69,
+    "combat-swords-raid": 620.71
+   },
+   "entries_searched": [
+    "combat-daggers-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Relentless Strikes",
+       1
+      ],
+      [
+       "Lethality",
+       3
+      ],
+      [
+       "Improved Poisons",
+       2
+      ]
+     ],
+     "Combat": [
+      [
+       "Improved Eviscerate",
+       3
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ],
+      [
+       "Puncturing Wounds",
+       3
+      ],
+      [
+       "Deflection",
+       1
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Flawless Execution",
+       1
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Blade Flurry",
+       1
+      ],
+      [
+       "Hack and Slash",
+       4
+      ],
+      [
+       "Weapon Expertise",
        2
       ],
       [
@@ -911,14 +1209,484 @@
      ]
     },
     "split": "17/32/2",
-    "dps": 429.17,
-    "se": 0.0607,
+    "dps": 681.73,
+    "se": 0.089,
     "iterations": 100000
    },
    "runner_up": {
     "split": "17/32/2",
-    "dps": 429.17,
-    "se": 0.0607,
+    "dps": 681.73,
+    "se": 0.089,
+    "differs": [
+     [
+      "Improved Sinister Strike",
+      1
+     ],
+     [
+      "Lightning Reflexes",
+      4
+     ],
+     [
+      "Lightning Reflexes",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        1
+       ],
+       [
+        "Lethality",
+        3
+       ],
+       [
+        "Improved Poisons",
+        2
+       ]
+      ],
+      "Combat": [
+       [
+        "Improved Eviscerate",
+        3
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Deflection",
+        1
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Dual Wield Specialization",
+        5
+       ],
+       [
+        "Blade Flurry",
+        1
+       ],
+       [
+        "Hack and Slash",
+        4
+       ],
+       [
+        "Weapon Expertise",
+        2
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Adrenaline Rush",
+        1
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Opportunity",
+        2
+       ]
+      ]
+     },
+     "split": "17/32/2",
+     "dps": 681.73,
+     "se": 0.089
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        1
+       ],
+       [
+        "Lethality",
+        3
+       ],
+       [
+        "Improved Poisons",
+        2
+       ]
+      ],
+      "Combat": [
+       [
+        "Improved Eviscerate",
+        3
+       ],
+       [
+        "Improved Sinister Strike",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        4
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Deflection",
+        1
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Dual Wield Specialization",
+        5
+       ],
+       [
+        "Blade Flurry",
+        1
+       ],
+       [
+        "Hack and Slash",
+        4
+       ],
+       [
+        "Weapon Expertise",
+        2
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Adrenaline Rush",
+        1
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Opportunity",
+        2
+       ]
+      ]
+     },
+     "split": "17/32/2",
+     "dps": 681.73,
+     "se": 0.089
+    }
+   ],
+   "runs": [
+    {
+     "entry": "combat-daggers-raid",
+     "run": 1,
+     "simulated": 1637,
+     "best_screen": 681.97,
+     "best_split": "17/32/2",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 437,
+       "best": 679.83
+      },
+      {
+       "round": 1,
+       "simulated": 637,
+       "best": 680.07,
+       "predicted_top": 672.66
+      },
+      {
+       "round": 2,
+       "simulated": 837,
+       "best": 681.97,
+       "predicted_top": 678.75
+      },
+      {
+       "round": 3,
+       "simulated": 1037,
+       "best": 681.97,
+       "predicted_top": 679.75
+      },
+      {
+       "round": 4,
+       "simulated": 1237,
+       "best": 681.97,
+       "predicted_top": 681.46
+      },
+      {
+       "round": 5,
+       "simulated": 1437,
+       "best": 681.97,
+       "predicted_top": 681.86
+      },
+      {
+       "round": 6,
+       "simulated": 1637,
+       "best": 681.97,
+       "predicted_top": 681.8
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      681.8,
+      681.8,
+      681.8,
+      681.8,
+      681.8,
+      681.8
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      681.63,
+      681.63,
+      681.63,
+      681.63,
+      681.63
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      681.73,
+      681.73
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 327,
+     "best_gap": 0.0,
+     "best_move": "3 Lightning Reflexes -> 2 Deflection + 1 Riposte"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.3488
+    },
+    {
+     "feature": "Lethality",
+     "importance": 0.2043
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0983
+    },
+    {
+     "feature": "Puncturing Wounds",
+     "importance": 0.0466
+    },
+    {
+     "feature": "Adrenaline Rush",
+     "importance": 0.0448
+    },
+    {
+     "feature": "Improved Slice and Dice",
+     "importance": 0.0423
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0393
+    },
+    {
+     "feature": "Malice",
+     "importance": 0.0333
+    },
+    {
+     "feature": "Ruthlessness",
+     "importance": 0.0252
+    },
+    {
+     "feature": "Opportunity",
+     "importance": 0.0218
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.015
+    },
+    {
+     "feature": "Improved Kick",
+     "importance": 0.0135
+    }
+   ],
+   "simulated_builds": 3222,
+   "signature_check": {
+    "spec": "Combat",
+    "ok": true,
+    "core_share": 0.8962,
+    "min_share": 0.7,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 4275000,
+   "minutes": 12.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-dummy": {
+   "class": "rogue",
+   "spec": "Combat",
+   "setting": "dummy",
+   "entry": "combat-daggers-raid",
+   "date": "2026-10-25",
+   "constraint": "Combat 30+",
+   "protected": [],
+   "entries_screened": {
+    "combat-daggers-raid": 386.45,
+    "combat-swords-raid": 346.12
+   },
+   "entries_searched": [
+    "combat-daggers-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Relentless Strikes",
+       1
+      ],
+      [
+       "Improved Expose Armor",
+       2
+      ],
+      [
+       "Lethality",
+       1
+      ],
+      [
+       "Improved Poisons",
+       3
+      ]
+     ],
+     "Combat": [
+      [
+       "Improved Eviscerate",
+       3
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ],
+      [
+       "Puncturing Wounds",
+       3
+      ],
+      [
+       "Deflection",
+       1
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Blade Flurry",
+       1
+      ],
+      [
+       "Hack and Slash",
+       5
+      ],
+      [
+       "Weapon Expertise",
+       1
+      ],
+      [
+       "Aggression",
+       3
+      ],
+      [
+       "Adrenaline Rush",
+       1
+      ]
+     ],
+     "Subtlety": [
+      [
+       "Opportunity",
+       2
+      ]
+     ]
+    },
+    "split": "18/31/2",
+    "dps": 386.73,
+    "se": 0.054,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "18/31/2",
+    "dps": 386.73,
+    "se": 0.054,
     "differs": [
      [
       "Improved Sprint",
@@ -965,7 +1733,7 @@
        ],
        [
         "Improved Poisons",
-        2
+        3
        ]
       ],
       "Combat": [
@@ -1003,7 +1771,7 @@
        ],
        [
         "Weapon Expertise",
-        2
+        1
        ],
        [
         "Aggression",
@@ -1021,9 +1789,9 @@
        ]
       ]
      },
-     "split": "17/32/2",
-     "dps": 429.17,
-     "se": 0.0607
+     "split": "18/31/2",
+     "dps": 386.73,
+     "se": 0.054
     },
     {
      "allocation": {
@@ -1054,7 +1822,7 @@
        ],
        [
         "Improved Poisons",
-        2
+        3
        ]
       ],
       "Combat": [
@@ -1096,798 +1864,7 @@
        ],
        [
         "Weapon Expertise",
-        2
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Adrenaline Rush",
         1
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Opportunity",
-        2
-       ]
-      ]
-     },
-     "split": "17/32/2",
-     "dps": 429.17,
-     "se": 0.0607
-    }
-   ],
-   "runs": [
-    {
-     "entry": "combat-daggers-raid",
-     "run": 1,
-     "simulated": 1267,
-     "best_screen": 428.96,
-     "best_split": "17/32/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 467,
-       "best": 428.96
-      },
-      {
-       "round": 1,
-       "simulated": 667,
-       "best": 428.96,
-       "predicted_top": 423.51
-      },
-      {
-       "round": 2,
-       "simulated": 867,
-       "best": 428.96,
-       "predicted_top": 426.42
-      },
-      {
-       "round": 3,
-       "simulated": 1067,
-       "best": 428.96,
-       "predicted_top": 427.44
-      },
-      {
-       "round": 4,
-       "simulated": 1267,
-       "best": 428.96,
-       "predicted_top": 427.59
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      429.16,
-      429.16,
-      429.16,
-      429.16,
-      429.16,
-      429.16
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      429.17,
-      429.17,
-      429.17,
-      429.17,
-      429.17
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      429.17,
-      429.17
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 316,
-     "best_gap": 0.0,
-     "best_move": "3 Lightning Reflexes -> 2 Deflection + 1 Riposte"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.27
-    },
-    {
-     "feature": "Improved Expose Armor",
-     "importance": 0.2139
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.1703
-    },
-    {
-     "feature": "Improved Sinister Strike",
-     "importance": 0.0784
-    },
-    {
-     "feature": "Puncturing Wounds",
-     "importance": 0.0769
-    },
-    {
-     "feature": "Opportunity",
-     "importance": 0.0222
-    },
-    {
-     "feature": "Lethality",
-     "importance": 0.0197
-    },
-    {
-     "feature": "Improved Sprint",
-     "importance": 0.0193
-    },
-    {
-     "feature": "Malice",
-     "importance": 0.0173
-    },
-    {
-     "feature": "Improved Slice and Dice",
-     "importance": 0.0168
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0153
-    },
-    {
-     "feature": "Improved Poisons",
-     "importance": 0.0117
-    }
-   ],
-   "simulated_builds": 2913,
-   "simulated_fights": 3944000,
-   "minutes": 3.6,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "rogue",
-   "spec": "Combat",
-   "setting": "raid",
-   "entry": "combat-daggers-raid",
-   "date": "2026-10-16",
-   "constraint": "Combat 30+",
-   "protected": [],
-   "entries_screened": {
-    "combat-daggers-raid": 696.74,
-    "combat-swords-raid": 624.92
-   },
-   "entries_searched": [
-    "combat-daggers-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Assassination": [
-      [
-       "Malice",
-       5
-      ],
-      [
-       "Ruthlessness",
-       3
-      ],
-      [
-       "Improved Slice and Dice",
-       3
-      ],
-      [
-       "Relentless Strikes",
-       1
-      ],
-      [
-       "Lethality",
-       3
-      ],
-      [
-       "Cold Blood",
-       1
-      ]
-     ],
-     "Combat": [
-      [
-       "Improved Eviscerate",
-       3
-      ],
-      [
-       "Lightning Reflexes",
-       5
-      ],
-      [
-       "Puncturing Wounds",
-       3
-      ],
-      [
-       "Deflection",
-       1
-      ],
-      [
-       "Precision",
-       3
-      ],
-      [
-       "Flawless Execution",
-       1
-      ],
-      [
-       "Dual Wield Specialization",
-       5
-      ],
-      [
-       "Blade Flurry",
-       1
-      ],
-      [
-       "Hack and Slash",
-       5
-      ],
-      [
-       "Weapon Expertise",
-       2
-      ],
-      [
-       "Aggression",
-       3
-      ],
-      [
-       "Adrenaline Rush",
-       1
-      ]
-     ],
-     "Subtlety": [
-      [
-       "Opportunity",
-       2
-      ]
-     ]
-    },
-    "split": "16/33/2",
-    "dps": 695.76,
-    "se": 0.0945,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "16/33/2",
-    "dps": 695.76,
-    "se": 0.0945,
-    "differs": [
-     [
-      "Deflection",
-      1
-     ],
-     [
-      "Improved Sinister Strike",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Relentless Strikes",
-        1
-       ],
-       [
-        "Lethality",
-        3
-       ],
-       [
-        "Cold Blood",
-        1
-       ]
-      ],
-      "Combat": [
-       [
-        "Improved Eviscerate",
-        3
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Deflection",
-        1
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Dual Wield Specialization",
-        5
-       ],
-       [
-        "Blade Flurry",
-        1
-       ],
-       [
-        "Hack and Slash",
-        5
-       ],
-       [
-        "Weapon Expertise",
-        2
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Adrenaline Rush",
-        1
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Opportunity",
-        2
-       ]
-      ]
-     },
-     "split": "16/33/2",
-     "dps": 695.76,
-     "se": 0.0945
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Relentless Strikes",
-        1
-       ],
-       [
-        "Lethality",
-        3
-       ],
-       [
-        "Cold Blood",
-        1
-       ]
-      ],
-      "Combat": [
-       [
-        "Improved Eviscerate",
-        3
-       ],
-       [
-        "Improved Sinister Strike",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Dual Wield Specialization",
-        5
-       ],
-       [
-        "Blade Flurry",
-        1
-       ],
-       [
-        "Hack and Slash",
-        5
-       ],
-       [
-        "Weapon Expertise",
-        2
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Adrenaline Rush",
-        1
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Opportunity",
-        2
-       ]
-      ]
-     },
-     "split": "16/33/2",
-     "dps": 695.76,
-     "se": 0.0945
-    }
-   ],
-   "runs": [
-    {
-     "entry": "combat-daggers-raid",
-     "run": 1,
-     "simulated": 1283,
-     "best_screen": 696.74,
-     "best_split": "16/33/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 483,
-       "best": 696.74
-      },
-      {
-       "round": 1,
-       "simulated": 683,
-       "best": 696.74,
-       "predicted_top": 686.75
-      },
-      {
-       "round": 2,
-       "simulated": 883,
-       "best": 696.74,
-       "predicted_top": 693.38
-      },
-      {
-       "round": 3,
-       "simulated": 1083,
-       "best": 696.74,
-       "predicted_top": 694.88
-      },
-      {
-       "round": 4,
-       "simulated": 1283,
-       "best": 696.74,
-       "predicted_top": 694.19
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      695.49,
-      695.49,
-      695.49,
-      695.49,
-      695.49,
-      695.49
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      695.81,
-      695.81,
-      695.81,
-      695.81,
-      695.81
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      695.76,
-      695.76
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 314,
-     "best_gap": 0.0,
-     "best_move": "3 Lightning Reflexes -> 2 Deflection + 1 Riposte"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.2942
-    },
-    {
-     "feature": "Lethality",
-     "importance": 0.11
-    },
-    {
-     "feature": "Malice",
-     "importance": 0.1058
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.0745
-    },
-    {
-     "feature": "Improved Sinister Strike",
-     "importance": 0.0705
-    },
-    {
-     "feature": "Puncturing Wounds",
-     "importance": 0.0691
-    },
-    {
-     "feature": "Improved Sprint",
-     "importance": 0.0659
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0325
-    },
-    {
-     "feature": "Opportunity",
-     "importance": 0.0311
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0284
-    },
-    {
-     "feature": "Improved Slice and Dice",
-     "importance": 0.0231
-    },
-    {
-     "feature": "Adrenaline Rush",
-     "importance": 0.0153
-    }
-   ],
-   "simulated_builds": 2924,
-   "simulated_fights": 3951000,
-   "minutes": 4.9,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
-  },
-  "prebis-dummy": {
-   "class": "rogue",
-   "spec": "Combat",
-   "setting": "dummy",
-   "entry": "combat-daggers-raid",
-   "date": "2026-10-16",
-   "constraint": "Combat 30+",
-   "protected": [],
-   "entries_screened": {
-    "combat-daggers-raid": 386.95,
-    "combat-swords-raid": 341.35
-   },
-   "entries_searched": [
-    "combat-daggers-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Assassination": [
-      [
-       "Malice",
-       5
-      ],
-      [
-       "Ruthlessness",
-       3
-      ],
-      [
-       "Improved Slice and Dice",
-       3
-      ],
-      [
-       "Relentless Strikes",
-       1
-      ],
-      [
-       "Improved Expose Armor",
-       2
-      ],
-      [
-       "Lethality",
-       1
-      ],
-      [
-       "Improved Poisons",
-       3
-      ]
-     ],
-     "Combat": [
-      [
-       "Improved Eviscerate",
-       3
-      ],
-      [
-       "Lightning Reflexes",
-       5
-      ],
-      [
-       "Puncturing Wounds",
-       3
-      ],
-      [
-       "Deflection",
-       1
-      ],
-      [
-       "Precision",
-       3
-      ],
-      [
-       "Dual Wield Specialization",
-       5
-      ],
-      [
-       "Blade Flurry",
-       1
-      ],
-      [
-       "Hack and Slash",
-       4
-      ],
-      [
-       "Weapon Expertise",
-       2
-      ],
-      [
-       "Aggression",
-       3
-      ],
-      [
-       "Adrenaline Rush",
-       1
-      ]
-     ],
-     "Subtlety": [
-      [
-       "Opportunity",
-       2
-      ]
-     ]
-    },
-    "split": "18/31/2",
-    "dps": 386.32,
-    "se": 0.0567,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "18/31/2",
-    "dps": 386.32,
-    "se": 0.0567,
-    "differs": [
-     [
-      "Deflection",
-      1
-     ],
-     [
-      "Endurance",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Relentless Strikes",
-        1
-       ],
-       [
-        "Improved Expose Armor",
-        2
-       ],
-       [
-        "Lethality",
-        1
-       ],
-       [
-        "Improved Poisons",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Improved Eviscerate",
-        3
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Deflection",
-        1
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Dual Wield Specialization",
-        5
-       ],
-       [
-        "Blade Flurry",
-        1
-       ],
-       [
-        "Hack and Slash",
-        4
-       ],
-       [
-        "Weapon Expertise",
-        2
        ],
        [
         "Aggression",
@@ -1906,135 +1883,46 @@
       ]
      },
      "split": "18/31/2",
-     "dps": 386.32,
-     "se": 0.0567
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Relentless Strikes",
-        1
-       ],
-       [
-        "Improved Expose Armor",
-        2
-       ],
-       [
-        "Lethality",
-        1
-       ],
-       [
-        "Improved Poisons",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Improved Eviscerate",
-        3
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Endurance",
-        1
-       ],
-       [
-        "Dual Wield Specialization",
-        5
-       ],
-       [
-        "Blade Flurry",
-        1
-       ],
-       [
-        "Hack and Slash",
-        4
-       ],
-       [
-        "Weapon Expertise",
-        2
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Adrenaline Rush",
-        1
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Opportunity",
-        2
-       ]
-      ]
-     },
-     "split": "18/31/2",
-     "dps": 386.32,
-     "se": 0.0567
+     "dps": 386.73,
+     "se": 0.054
     }
    ],
    "runs": [
     {
      "entry": "combat-daggers-raid",
      "run": 1,
-     "simulated": 1267,
-     "best_screen": 386.95,
+     "simulated": 1227,
+     "best_screen": 386.45,
      "best_split": "18/31/2",
      "trace": [
       {
        "round": 0,
-       "simulated": 467,
-       "best": 385.85
+       "simulated": 427,
+       "best": 386.45
       },
       {
        "round": 1,
-       "simulated": 667,
-       "best": 386.62,
-       "predicted_top": 380.33
+       "simulated": 627,
+       "best": 386.45,
+       "predicted_top": 381.34
       },
       {
        "round": 2,
-       "simulated": 867,
-       "best": 386.62,
-       "predicted_top": 384.45
+       "simulated": 827,
+       "best": 386.45,
+       "predicted_top": 385.27
       },
       {
        "round": 3,
-       "simulated": 1067,
-       "best": 386.95,
-       "predicted_top": 386.11
+       "simulated": 1027,
+       "best": 386.45,
+       "predicted_top": 385.31
       },
       {
        "round": 4,
-       "simulated": 1267,
-       "best": 386.95,
-       "predicted_top": 386.47
+       "simulated": 1227,
+       "best": 386.45,
+       "predicted_top": 385.69
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2047,37 +1935,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      386.13,
-      386.13,
-      386.13,
-      386.13,
-      386.13,
-      386.13
+      387.01,
+      387.01,
+      387.01,
+      387.01,
+      387.01,
+      387.01
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      386.3,
-      386.3,
-      386.3,
-      386.3,
-      386.3
+      386.68,
+      386.68,
+      386.68,
+      386.68,
+      386.68
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      386.32,
-      386.32
+      386.73,
+      386.73
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 252,
+     "neighbours": 245,
      "best_gap": 0.0,
      "best_move": "3 Lightning Reflexes -> 2 Deflection + 1 Riposte"
     }
@@ -2085,70 +1973,80 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Improved Expose Armor",
-     "importance": 0.2671
+     "feature": "Assassination points",
+     "importance": 0.2723
     },
     {
      "feature": "Relentless Strikes",
-     "importance": 0.194
+     "importance": 0.1899
     },
     {
-     "feature": "Assassination points",
-     "importance": 0.1519
+     "feature": "Improved Expose Armor",
+     "importance": 0.1587
     },
     {
      "feature": "Puncturing Wounds",
-     "importance": 0.0786
-    },
-    {
-     "feature": "Improved Sinister Strike",
-     "importance": 0.0689
-    },
-    {
-     "feature": "Ruthlessness",
-     "importance": 0.0531
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0397
-    },
-    {
-     "feature": "Opportunity",
-     "importance": 0.0294
-    },
-    {
-     "feature": "Lethality",
-     "importance": 0.0272
+     "importance": 0.0559
     },
     {
      "feature": "Improved Slice and Dice",
-     "importance": 0.0208
+     "importance": 0.0488
+    },
+    {
+     "feature": "Ruthlessness",
+     "importance": 0.0403
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0402
+    },
+    {
+     "feature": "Adrenaline Rush",
+     "importance": 0.037
+    },
+    {
+     "feature": "Malice",
+     "importance": 0.0245
+    },
+    {
+     "feature": "Improved Sinister Strike",
+     "importance": 0.022
     },
     {
      "feature": "Deflection",
-     "importance": 0.0152
+     "importance": 0.0216
     },
     {
      "feature": "Improved Gouge",
-     "importance": 0.0097
+     "importance": 0.018
     }
    ],
-   "simulated_builds": 2841,
-   "simulated_fights": 3744000,
-   "minutes": 3.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json"
+   "simulated_builds": 2718,
+   "signature_check": {
+    "spec": "Combat",
+    "ok": true,
+    "core_share": 0.8605,
+    "min_share": 0.7,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3607000,
+   "minutes": 10.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json",
+   "commit": "30f67f5d2"
   },
   "prebis-raid": {
    "class": "rogue",
    "spec": "Combat",
    "setting": "raid",
    "entry": "combat-daggers-raid",
-   "date": "2026-10-16",
+   "date": "2026-10-25",
    "constraint": "Combat 30+",
    "protected": [],
    "entries_screened": {
-    "combat-daggers-raid": 645.57,
-    "combat-swords-raid": 578.82
+    "combat-daggers-raid": 685.35,
+    "combat-swords-raid": 625.57
    },
    "entries_searched": [
     "combat-daggers-raid"
@@ -2239,30 +2137,22 @@
      ]
     },
     "split": "16/33/2",
-    "dps": 643.63,
+    "dps": 684.91,
     "se": 0.0893,
     "iterations": 100000
    },
    "runner_up": {
     "split": "16/33/2",
-    "dps": 643.63,
+    "dps": 684.91,
     "se": 0.0893,
     "differs": [
-     [
-      "Deflection",
-      1
-     ],
-     [
-      "Deflection",
-      3
-     ],
      [
       "Endurance",
       1
      ],
      [
       "Lightning Reflexes",
-      2
+      4
      ],
      [
       "Lightning Reflexes",
@@ -2358,7 +2248,7 @@
       ]
      },
      "split": "16/33/2",
-     "dps": 643.63,
+     "dps": 684.91,
      "se": 0.0893
     },
     {
@@ -2396,7 +2286,7 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        4
        ],
        [
         "Puncturing Wounds",
@@ -2404,7 +2294,7 @@
        ],
        [
         "Deflection",
-        3
+        1
        ],
        [
         "Precision",
@@ -2451,7 +2341,7 @@
       ]
      },
      "split": "16/33/2",
-     "dps": 643.63,
+     "dps": 684.91,
      "se": 0.0893
     }
    ],
@@ -2459,38 +2349,38 @@
     {
      "entry": "combat-daggers-raid",
      "run": 1,
-     "simulated": 1282,
-     "best_screen": 645.57,
+     "simulated": 1245,
+     "best_screen": 685.35,
      "best_split": "16/33/2",
      "trace": [
       {
        "round": 0,
-       "simulated": 482,
-       "best": 643.73
+       "simulated": 445,
+       "best": 685.35
       },
       {
        "round": 1,
-       "simulated": 682,
-       "best": 645.57,
-       "predicted_top": 637.34
+       "simulated": 645,
+       "best": 685.35,
+       "predicted_top": 680.74
       },
       {
        "round": 2,
-       "simulated": 882,
-       "best": 645.57,
-       "predicted_top": 642.18
+       "simulated": 845,
+       "best": 685.35,
+       "predicted_top": 682.27
       },
       {
        "round": 3,
-       "simulated": 1082,
-       "best": 645.57,
-       "predicted_top": 644.4
+       "simulated": 1045,
+       "best": 685.35,
+       "predicted_top": 683.54
       },
       {
        "round": 4,
-       "simulated": 1282,
-       "best": 645.57,
-       "predicted_top": 644.19
+       "simulated": 1245,
+       "best": 685.35,
+       "predicted_top": 683.43
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2503,99 +2393,109 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      643.4,
-      643.4,
-      643.4,
-      643.4,
-      643.4,
-      643.4
+      684.68,
+      684.68,
+      684.68,
+      684.68,
+      684.68,
+      684.68
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      643.7,
-      643.7,
-      643.7,
-      643.7,
-      643.7
+      684.86,
+      684.86,
+      684.86,
+      684.86,
+      684.86
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      643.63,
-      643.63
+      684.91,
+      684.91
      ]
     }
    ],
    "certificate": [
     {
      "neighbours": 321,
-     "best_gap": 0.0008,
-     "best_move": "1 Improved Poisons -> Cold Blood"
+     "best_gap": 0.0003,
+     "best_move": "1 Dual Wield Specialization -> Improved Poisons"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Relentless Strikes",
-     "importance": 0.2859
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.1538
+     "importance": 0.3152
     },
     {
      "feature": "Lethality",
-     "importance": 0.1164
-    },
-    {
-     "feature": "Puncturing Wounds",
-     "importance": 0.075
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0537
-    },
-    {
-     "feature": "Opportunity",
-     "importance": 0.0491
-    },
-    {
-     "feature": "Improved Sinister Strike",
-     "importance": 0.0422
-    },
-    {
-     "feature": "Improved Sprint",
-     "importance": 0.0368
-    },
-    {
-     "feature": "Improved Slice and Dice",
-     "importance": 0.034
+     "importance": 0.1707
     },
     {
      "feature": "Adrenaline Rush",
-     "importance": 0.0279
-    },
-    {
-     "feature": "Ruthlessness",
-     "importance": 0.0276
+     "importance": 0.0913
     },
     {
      "feature": "Malice",
-     "importance": 0.0201
+     "importance": 0.0731
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0706
+    },
+    {
+     "feature": "Improved Sinister Strike",
+     "importance": 0.0523
+    },
+    {
+     "feature": "Puncturing Wounds",
+     "importance": 0.0453
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0327
+    },
+    {
+     "feature": "Improved Slice and Dice",
+     "importance": 0.0307
+    },
+    {
+     "feature": "Opportunity",
+     "importance": 0.0233
+    },
+    {
+     "feature": "Improved Kick",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Ruthlessness",
+     "importance": 0.0132
     }
    ],
-   "simulated_builds": 2930,
-   "simulated_fights": 3971000,
-   "minutes": 4.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json"
+   "simulated_builds": 2823,
+   "signature_check": {
+    "spec": "Combat",
+    "ok": true,
+    "core_share": 0.9041,
+    "min_share": 0.7,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3864000,
+   "minutes": 15.5,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json",
+   "commit": "30f67f5d2"
   }
  },
- "commit": "2ce8265",
+ "commit": "30f67f5d2",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2603,78 +2503,6 @@
  "notes": [
   "2026-10-15: full-raid searches cleared and re-run after the Windfury Totem main-hand patch (they had run with off-hand procs)"
  ],
- "compare": {
-  "setting": "dummy",
-  "dps": {
-   "winner": {
-    "entry": "combat-daggers-raid",
-    "dps": 429.11,
-    "se": 0.061
-   },
-   "combat-swords-raid": {
-    "entry": "combat-swords-raid",
-    "dps": 381.55,
-    "se": 0.055
-   },
-   "combat-daggers-raid": {
-    "entry": "combat-daggers-raid",
-    "dps": 403.39,
-    "se": 0.06
-   },
-   "opt-combat-daggers-raid-raid-dps": {
-    "entry": "combat-daggers-raid",
-    "dps": 423.98,
-    "se": 0.061
-   }
-  },
-  "best_hand": "combat-daggers-raid",
-  "gain_vs_hand": 0.0638
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "combat-daggers-raid",
-    "dps": 695.71,
-    "se": 0.094
-   },
-   "combat-daggers-raid": {
-    "entry": "combat-daggers-raid",
-    "dps": 688.79,
-    "se": 0.094
-   },
-   "combat-swords-raid": {
-    "entry": "combat-swords-raid",
-    "dps": 611.76,
-    "se": 0.087
-   },
-   "combat-ml-raid": {
-    "entry": "combat-daggers-raid",
-    "dps": 695.71,
-    "se": 0.094
-   },
-   "combat-swords-open-raid": {
-    "entry": "combat-swords-raid",
-    "dps": 624.68,
-    "se": 0.086
-   }
-  },
-  "best_hand": "combat-daggers-raid",
-  "gain_vs_hand": 0.01
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-16",
-  "setting": "raid",
-  "why": "confirms combat-ml-raid (+0.00% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
- },
  "signature_check": {
   "spec": "Combat",
   "ok": true,
@@ -2794,5 +2622,33 @@
     ]
    ]
   }
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "combat-daggers-raid",
+    "dps": 383.63,
+    "se": 0.053
+   },
+   "combat-daggers-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 357.2,
+    "se": 0.053
+   },
+   "combat-swords-raid": {
+    "entry": "combat-swords-raid",
+    "dps": 333.6,
+    "se": 0.048
+   },
+   "opt-combat-daggers-raid-raid-dps": {
+    "entry": "combat-daggers-raid",
+    "dps": 377.19,
+    "se": 0.054
+   }
+  },
+  "best_hand": "combat-daggers-raid",
+  "gain_vs_hand": 0.074,
+  "commit": "30f67f5d2"
  }
 }

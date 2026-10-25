@@ -3,48 +3,44 @@
  "spec": "assassination-raid",
  "build": "daggers-split-open-raid",
  "setting": "raid",
- "date": "2026-10-10",
+ "date": "2026-10-25",
  "tank": false,
  "removal": {
-  "Blade Flurry": 0.010341896950201712,
-  "Cold Blood": 0.006206718240823417,
+  "Cold Blood": 0.005508292533863202,
   "Deflection": -0.0,
-  "Dual Wield Specialization": 0.048530239535877095,
-  "Flawless Execution": 0.023837318961503873,
-  "Hack and Slash": 0.03189364556915586,
-  "Improved Eviscerate": 0.021014722301408773,
-  "Improved Poisons": 0.014646594358817877,
+  "Dual Wield Specialization": 0.04749810755339956,
+  "Endurance": -0.0,
+  "Flawless Execution": 0.031858583807915175,
+  "Improved Eviscerate": 0.02593363503195556,
+  "Improved Poisons": 0.031218601039204708,
   "Improved Sinister Strike": -0.0,
-  "Improved Slice and Dice": 0.032522400515282435,
-  "Lethality": 0.007735688471870783,
+  "Improved Slice and Dice": 0.036253075637247556,
+  "Lethality": 0.00758882957998086,
   "Lightning Reflexes": -0.0,
-  "Malice": 0.042363036544402655,
-  "Mutilate": 0.015011523258255721,
-  "Opportunity": 0.016438817673400274,
-  "Precision": 0.028248014334847582,
-  "Puncturing Wounds": 0.021792683677893,
-  "Relentless Strikes": 0.06803258887035357,
-  "Riposte": -0.0,
-  "Ruthlessness": 0.03778813248215074,
-  "Vile Poisons": 0.0034715391606972013,
-  "Weapon Expertise": 0.018920672513152326
+  "Malice": 0.04312493078138169,
+  "Mutilate": 0.01620934351670944,
+  "Opportunity": 0.018426305061884918,
+  "Precision": 0.023271076150451542,
+  "Puncturing Wounds": 0.03191754933763724,
+  "Relentless Strikes": 0.08785625897085525,
+  "Ruthlessness": 0.03131462477457114,
+  "Seal Fate": 0.03704102666785836,
+  "Vile Poisons": 0.01390402470217611
  },
  "free": [
   "Deflection",
+  "Endurance",
   "Improved Sinister Strike",
-  "Lightning Reflexes",
-  "Riposte"
+  "Lightning Reflexes"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
- "abilities_never_cast": [
-  "Riposte"
- ],
+ "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Improved Sinister Strike",
+   "from": "Endurance",
    "to": "Lightning Reflexes",
    "seed1": 0.0,
    "seed2": 0.0,
@@ -53,7 +49,7 @@
   {
    "round": 2,
    "kind": "utility",
-   "from": "Riposte",
+   "from": "Improved Sinister Strike",
    "to": "Lightning Reflexes",
    "seed1": 0.0,
    "seed2": 0.0,
@@ -85,7 +81,7 @@
    ],
    [
     "Vile Poisons",
-    1
+    3
    ],
    [
     "Cold Blood",
@@ -93,11 +89,15 @@
    ],
    [
     "Improved Poisons",
-    3
+    5
    ],
    [
     "Mutilate",
     1
+   ],
+   [
+    "Seal Fate",
+    3
    ]
   ],
   "Combat": [
@@ -126,7 +126,7 @@
     3
    ],
    [
-    "Riposte",
+    "Endurance",
     1
    ],
    [
@@ -136,18 +136,6 @@
    [
     "Dual Wield Specialization",
     5
-   ],
-   [
-    "Blade Flurry",
-    1
-   ],
-   [
-    "Hack and Slash",
-    4
-   ],
-   [
-    "Weapon Expertise",
-    2
    ]
   ],
   "Subtlety": [
@@ -181,7 +169,7 @@
    ],
    [
     "Vile Poisons",
-    1
+    3
    ],
    [
     "Cold Blood",
@@ -189,11 +177,15 @@
    ],
    [
     "Improved Poisons",
-    3
+    5
    ],
    [
     "Mutilate",
     1
+   ],
+   [
+    "Seal Fate",
+    3
    ]
   ],
   "Combat": [
@@ -224,18 +216,6 @@
    [
     "Dual Wield Specialization",
     5
-   ],
-   [
-    "Blade Flurry",
-    1
-   ],
-   [
-    "Hack and Slash",
-    4
-   ],
-   [
-    "Weapon Expertise",
-    2
    ]
   ],
   "Subtlety": [

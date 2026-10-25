@@ -574,7 +574,7 @@
         "extraMhImbueId": 22756,
         "extraOhImbueId": 16138
       },
-      "builds": ["combat-swords-raid", "opt-combat-swords-raid-raid-dps", "combat-swords-open-raid"],
+      "builds": ["combat-swords-raid", "opt-combat-swords-raid-raid-dps"],
       "not_measured": {"Murder": "+4% against Humanoid and Giant targets only (beta tooltip); the simulator's standard target is neither, so the removal run reads 0. Raid value = 30% of the bonus (assumed share of raid boss fights against those types: Zul'Gurub's trolls, several Molten Core and AQ40 bosses; not Blackwing Lair's dragonkin or Naxxramas's undead)."},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -686,7 +686,7 @@
         "extraOhImbueId": 16138
       },
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["subtlety-hemo-raid", "subtlety-open-raid"],
+      "builds": ["subtlety-hemo-raid"],
       "rotation_only": true,
       "preset_names": ["Subtlety Hemo", "Subtlety BS"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
