@@ -8,7 +8,9 @@ each rank's tooltip in `_reference/data/forever-talents/rogue.json`. Weapons: a 
 Playstyle `combat-swords-raid` (the scorer's model id, used for leveling): open from stealth behind the mob with Cheap Shot
 (Garrote before 26), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (or Kidney
 Shot when hurt), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull when ready, Cold Blood right before a
-5-point Eviscerate, Evasion when low. Between fights: a bandage below 60% health (First Aid, 60 s cooldown), food below 65%
+5-point Eviscerate, Evasion when low. Daggers builds with the Mutilate talent build with Mutilate from 30 instead of Sinister
+Strike (2026-10-25: the list had never cast it, so no Assassination leveling build could hold its signature spell; `mutilate()`
+follows the raid simulator's registerMutilate). Between fights: a bandage below 60% health (First Aid, 60 s cooldown), food below 65%
 (the tuned rules in `rotations/rogue-<spec>.json` veto spells and move the thresholds on top of this list).
 
 2026-10-09 fixes against the 70291 tooltips: Cold Blood is spent by the next Sinister Strike, Backstab, Ambush, Eviscerate or
@@ -57,6 +59,8 @@ SND = re.compile(r"attack speed by (\d+)%")
 POISON = re.compile(r"(\d+)% chance of poisoning the enemy(?: which instantly inflicts (\d[\d,]*) to (\d[\d,]*) Nature damage| for (\d[\d,]*) Nature damage over (\d+) sec)")
 INCAP = re.compile(r"incapacitates the target for (\d+) sec")
 PER_POINT_SECONDS = re.compile(r"(\d) points?\s*:\s*(\d+) seconds?")   # Kidney Shot: "1 point : 2 seconds  2 points: 3 seconds ..."
+MUT_FLAT = re.compile(r"plus an additional (\d[\d,]*) with each weapon")       # Mutilate: "75% weapon damage plus an additional 13 with each weapon"
+MUT_POISONED = re.compile(r"[Dd]amage increased by (\d+)% against Poisoned")    # Mutilate: "Damage increased by 20% against Poisoned targets"
 
 TALENT_SPELLS = {"Riposte": "Riposte", "Blade Flurry": "Blade Flurry", "Adrenaline Rush": "Adrenaline Rush", "Cold Blood": "Cold Blood", "Mutilate": "Mutilate",
                  "Ghostly Strike": "Ghostly Strike", "Hemorrhage": "Hemorrhage", "Premeditation": "Premeditation", "Preparation": "Preparation", "Venom": "Venom"}
@@ -193,6 +197,8 @@ MECHANICS = {
     "Camouflage": "-2s/rank Stealth cooldown, stealth speed",
     "Master of Deception": "stealth only",
     "Opportunity": "+5%/rank Backstab, Garrote (the opener's bleed), Ambush, Mutilate",
+    "Mutilate": "daggers: the builder from 30 (2 points for 60 energy; both hands strike for 75% weapon damage plus a flat amount, +20% on a "
+                "Deadly-Poisoned mob, Seal Fate per critical strike); swords: not used",
     "Setup": "33%/rank: a combo point after dodging the target's own swing (an add's dodged swing gives none)",
     "Elusiveness": "not used",
     "Dirty Tricks": "not used",
@@ -289,6 +295,16 @@ class RogueModule(BaseModule):
                     self.spells[sname].text = self.book[sname].text
         else:
             self.mh_dagger = "dagger" in spec   # daggers builds carry two daggers (1.8 s); the priority list is the same (no Backstab from the front)
+            mu = self.spells.get("Mutilate")
+            if mu is not None:   # "Requires Daggers": a dagger build's builder, resolved by mutilate() (both hands strike); swords never have it
+                if self.mh_dagger:
+                    fl, po = MUT_FLAT.search(mu.text or ""), MUT_POISONED.search(mu.text or "")
+                    flat = _num(fl.group(1)) if fl else 0.0
+                    self.spells["Mutilate"] = dataclasses.replace(mu, kind="buff", dmg_min=flat, dmg_max=flat)   # "buff": the engine counts the
+                    self.spells["Mutilate"].text = mu.text                                                     # cast and calls on_hit
+                    self.mutilate_poisoned = float(po.group(1)) / 100 if po else 0.0
+                else:
+                    self.spells.pop("Mutilate")
         self.weapon_kind = "dagger" if self.mh_dagger else "1h"   # the same kind in both hands; "1h" is a sword (Hack and Slash: an extra attack)
         self._fight = None
         self.opened = False
@@ -530,6 +546,9 @@ class RogueModule(BaseModule):
 
     def on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t = fight.p, fight.m, fight.t
+        if spell.name == "Mutilate" and spell.kind == "buff":   # the cast (the engine routes it here): both strikes
+            self.mutilate(fight, spell)
+            return
         if spell.name == "Slice and Dice":
             cp = max(1, fight.last_combo)
             dur = (9.0 + 3.0 * (cp - 1)) * (1 + self.tv("Improved Slice and Dice", 0) / 100)
@@ -644,9 +663,51 @@ class RogueModule(BaseModule):
             if evis and can(evis):
                 self.cold_blood(fight, can)
                 return evis
+        mu = sp.get("Mutilate")   # dagger builds holding the talent (from 30): the builder, 2 points for 60 energy against Sinister Strike's 1
+        if mu is not None:
+            if can(mu):
+                return mu
+            if p.energy < self.mana_cost(mu):
+                return None   # wait for the energy; Sinister Strike only when a tuned rule holds Mutilate back
         if ss and can(ss):
             return ss
         return None
+
+    def mutilate(self, fight, spell):
+        """Mutilate (the raid simulator's registerMutilate): one roll for the cast (miss, dodge, parry); when it lands, 2 combo points, then
+        an off-hand and a main-hand strike, each 75% weapon damage plus the rank's flat amount, with its own crit roll (Cold Blood,
+        Remorseless Attacks, Hack and Slash's dagger crit, Lethality and Opportunity through the usual hooks; Seal Fate per critical
+        strike), +20% while Deadly Poison is on the mob (the lab's only poison with a debuff), each strike able to apply its hand's poison.
+        The off hand's weapon damage is halved and its flat amount is not (the simulator's OHNormalizedWeaponDamage). Weapon damage at
+        the dagger's own speed like every yellow attack in the lab (the simulator normalizes daggers to 1.7 s); a missed cast keeps its
+        energy spent like the lab's other builders (the simulator refunds part of it)."""
+        p, m = fight.p, fight.m
+        strikes = [dataclasses.replace(spell, kind="melee", hand=h) for h in ("oh", "mh")]
+        outcome = fight.attack_table(strikes[1], False, "mh")
+        if outcome in ("miss", "dodge", "parry"):
+            fight.note(f"Mutilate {outcome.upper()}")
+            self.on_swing(fight, strikes[1], outcome, 0.0, "mh")
+            self.on_miss(fight, strikes[1])
+            return
+        p.combo = min(5, p.combo + spell.combo)
+        crits = [fight.rng.random() < p.melee_crit + self.crit_bonus(s, False) for s in strikes]   # before on_swing spends Cold Blood
+        for s, crit in zip(strikes, crits):
+            if m.hp <= 0:
+                break   # the off-hand strike killed it
+            weapon = p.oh if s.hand == "oh" else p.mh
+            amount = fight.rng.uniform(s.dmg_min, s.dmg_max) + s.weapon_pct * fight.weapon_damage(weapon) * (0.5 if s.hand == "oh" else 1.0)
+            amount *= self.damage_multiplier(s, False)
+            if m.debuffs.get("Deadly Poison", {}).get("until", 0) > fight.t:
+                amount *= 1 + self.mutilate_poisoned
+            if crit:
+                amount *= 2.0 + self.crit_damage_bonus(s)
+            amount *= 1.0 - armor_mitigation(m.effective_armor(), p.level)
+            fight.deal(s, amount, crit)
+            fight.note(f"Mutilate ({s.hand}){' CRIT' if crit else ''} {amount:.0f} -> mob {max(0, m.hp):.0f}")
+            self.on_swing(fight, s, "crit" if crit else "hit", amount, s.hand)
+            extra = self.extra_targets(fight, s, False) if fight.others() else 0
+            if extra > 0:
+                fight.hit_others_melee(s, extra, False, s.hand)
 
     def cold_blood(self, fight, can):
         """Cold Blood (no global cooldown) right before a 5-point Eviscerate, so its sure crit lands on the biggest hit: the next Sinister
