@@ -69,8 +69,11 @@ TODAY = datetime.date.today().isoformat()
 POLISH = dict(fights=300, rounds=24, per_pair=1, top=5, full_fights=800, workers=2)   # 2026-10-05: one draw; 2026-10-07: batched climbs (ml_talents.polish) take
                                                                             # small cheap steps, so the cap is 24 steps and a climb ends on a full pass without gain;
                                                                             # workers: two climbs at once, identical families, 22% faster in a test (2026-10-07)
-SEARCH = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=400, pool=10000, parents=48, finalists=6, screen_budget=600)
-AGAIN = dict(SEARCH, runs=2, budget=2000)
+# 2026-10-24 audit (101 raid open searches in the logs): later runs beat run 1 by more than 0.1% once (priest smite, 70291); the runs
+# agreed 3/3 in 24 of 25 first searches and 2/2 in 10 of 10 re-searches. Two runs for the first search, one for a re-search; leveling keeps
+# three (a later run won by 0.3%+ in 28 of 107 leveling searches).
+SEARCH = dict(runs=2, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=400, pool=10000, parents=48, finalists=6, screen_budget=600)
+AGAIN = dict(SEARCH, runs=1, budget=2000)   # 2026-10-24 audit: runs 3/2 -> 2/1 (see the note above)
 RACE, VALUES = 30000, 12000
 SMOKE = False
 
@@ -272,7 +275,7 @@ def retune(cls, entry, flat, quick=False):
     tune.write_text(json.dumps([{"label": "open winner", "allocation": flat}], indent=1), encoding="utf-8")
     log(f"== rotation {cls}/{entry}: tuning on the open winner (every build the entry lists protected){' (quick: raid setting, 8 rounds, no lookahead)' if quick else ''}")
     args = [sys.executable, str(HERE / "apl_opt.py"), cls, "--spec", entry, "--tune", str(tune), "--write"]
-    args += ["--rounds", "8", "--lookahead", "0", "--setting", "raid"] if quick else ["--rounds", "20"]
+    args += ["--rounds", "8", "--lookahead", "0", "--setting", "raid"] if quick else ["--rounds", "20", "--setting", "raid"]   # raid only (2026-10-24 audit: the pages show the full raid; the dummy half was ~60% of a re-tune)
     r = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
     for ln in r.stdout.splitlines():
         if ln.strip().startswith(("==", "round", "raid", "wrote", "no change")):

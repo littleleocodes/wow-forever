@@ -706,6 +706,11 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
     for a, b in pairs:
         space.protect = keep0 | {a, b}
         draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
+        for _ in range(20 if not draws else 0):   # 2026-10-24 audit: one failed draw dropped feasible pairs (3 of 94 rogue swords pairs,
+            x = space.random_build(rng)           # 5 of 50 Enhancement pairs such as Lava Burst + Water Shield)
+            if x:
+                draws = [x]
+                break
         space.protect = keep0
         ws = [dict(w) for w in (warm or {}).get(f"{a} + {b}", []) + (warm or {}).get(f"{b} + {a}", [])
               if w and w.get(a) and w.get(b) and space.valid(w)]
@@ -713,6 +718,7 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
             n_warm += 1
             draws = draws + [w for i, w in enumerate(ws) if w not in ws[:i]]
         plan.append((a, b, draws))
+    log(f"    polish: {sum(1 for p in plan if p[2])} of {len(plan)} keystone pairs have a legal build")
 
     def climb(item):
         a, b, draws = item

@@ -44,7 +44,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/wowsims/forever/assets/database"
@@ -293,6 +295,13 @@ func main() {
 	if len(cfg.Spec) > 0 {
 		cfg.Spec = legacySpec(cfg.Spec)
 	}
+	// Builds in parallel (2026-10-24 audit): with several builds the sims run side by side, one build per thread (core.RunRaidSim), instead
+	// of one build at a time split over every thread and waiting for the slowest split (12 one-fight splits of a build took 12-83 ms under
+	// load, one fight 3 ms). The iterations and their seeds are the same (a split starts at RandomSeed + the iterations before it), so
+	// the results match up to the order of the floating-point sums. Lines are printed in the config's order. WOW_FOREVER_BENCH_SPLIT=1
+	// keeps the old way.
+	var jobs []simJob
+	parallel := len(cfg.Builds) > 1 && os.Getenv("WOW_FOREVER_BENCH_SPLIT") != "1"
 	for _, b := range cfg.Builds {
 		player := &proto.Player{}
 		if len(cfg.Spec) > 0 {
@@ -555,30 +564,73 @@ func main() {
 			Encounter:  encounter,
 			SimOptions: &proto.SimOptions{Iterations: cfg.Iterations, RandomSeed: cfg.Seed},
 		}
-		t0 := time.Now()
-		result := core.RunRaidSimConcurrent(request)
-		if result.Error != nil {
-			fmt.Printf("{\"label\": %q, \"error\": %q}\n", b.Label, result.Error.Message)
+		job := simJob{label: b.Label, talents: b.Talents, request: request, missing: missing, iterations: cfg.Iterations}
+		if parallel {
+			jobs = append(jobs, job)
 			continue
 		}
-		pm := result.RaidMetrics.Parties[0].Players[0]
-		actions := actionRows(pm.Actions, cfg.Iterations, false)
-		for _, pet := range pm.Pets {
-			actions = append(actions, actionRows(pet.Actions, cfg.Iterations, true)...)
-		}
-		out := map[string]interface{}{
-			"label": b.Label, "talents": b.Talents,
-			"dps": pm.Dps.Avg, "dps_stdev": pm.Dps.Stdev, "hps": pm.Hps.Avg, "threat": pm.Threat.Avg,
-			"dtps": pm.Dtps.Avg, "dtps_stdev": pm.Dtps.Stdev, "tmi": pm.Tmi.Avg, "tto": pm.Tto.Avg,
-			"oom_seconds": pm.SecondsOomAvg, "iterations": cfg.Iterations, "seconds": time.Since(t0).Seconds(),
-			"actions": actions,
-		}
-		if len(missing) > 0 {
-			out["missing_gear"] = missing
-		}
-		line, _ := json.Marshal(out)
-		fmt.Println(string(line))
+		fmt.Println(job.run(false))
 	}
+	if len(jobs) > 0 {
+		lines := make([]string, len(jobs))
+		next := make(chan int)
+		var wg sync.WaitGroup
+		for w := 0; w < min(runtime.NumCPU(), len(jobs)); w++ {
+			wg.Add(1)
+			go func() {
+				defer wg.Done()
+				for i := range next {
+					lines[i] = jobs[i].run(true)
+				}
+			}()
+		}
+		for i := range jobs {
+			next <- i
+		}
+		close(next)
+		wg.Wait()
+		for _, ln := range lines {
+			fmt.Println(ln)
+		}
+	}
+}
+
+type simJob struct {
+	label, talents string
+	request        *proto.RaidSimRequest
+	missing        []string
+	iterations     int32
+}
+
+// run simulates the build and returns its output line: on one thread (single) or split over every thread.
+func (j simJob) run(single bool) string {
+	t0 := time.Now()
+	var result *proto.RaidSimResult
+	if single {
+		result = core.RunRaidSim(gproto.Clone(j.request).(*proto.RaidSimRequest))
+	} else {
+		result = core.RunRaidSimConcurrent(j.request)
+	}
+	if result.Error != nil {
+		return fmt.Sprintf("{\"label\": %q, \"error\": %q}", j.label, result.Error.Message)
+	}
+	pm := result.RaidMetrics.Parties[0].Players[0]
+	actions := actionRows(pm.Actions, j.iterations, false)
+	for _, pet := range pm.Pets {
+		actions = append(actions, actionRows(pet.Actions, j.iterations, true)...)
+	}
+	out := map[string]interface{}{
+		"label": j.label, "talents": j.talents,
+		"dps": pm.Dps.Avg, "dps_stdev": pm.Dps.Stdev, "hps": pm.Hps.Avg, "threat": pm.Threat.Avg,
+		"dtps": pm.Dtps.Avg, "dtps_stdev": pm.Dtps.Stdev, "tmi": pm.Tmi.Avg, "tto": pm.Tto.Avg,
+		"oom_seconds": pm.SecondsOomAvg, "iterations": j.iterations, "seconds": time.Since(t0).Seconds(),
+		"actions": actions,
+	}
+	if len(j.missing) > 0 {
+		out["missing_gear"] = j.missing
+	}
+	line, _ := json.Marshal(out)
+	return string(line)
 }
 
 func containsID(ids []int32, id int32) bool {

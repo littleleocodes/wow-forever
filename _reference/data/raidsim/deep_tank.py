@@ -52,7 +52,8 @@ A, R = MLT.A, MLT.R
 OUT = HERE / "deep"
 TODAY = datetime.date.today().isoformat()
 TANK_ENTRY = {"warrior": "prot-tank", "paladin": "prot-tank", "druid": "feral-bear-tank"}
-DEEP = dict(runs=6, budget=5000, screen=1500, patience=8, max_rounds=40, random_init=500, pool=10000, parents=48, finalists=8, screen_budget=800)
+# 2026-10-24 audit: the six runs agreed 6/6 in every tank search and later runs never gained: three
+DEEP = dict(runs=3, budget=5000, screen=1500, patience=8, max_rounds=40, random_init=500, pool=10000, parents=48, finalists=8, screen_budget=800)
 QUICK = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=300, pool=8000, parents=40, finalists=6, screen_budget=600)
 FINAL_FIGHTS = 100000
 REF_FIGHTS = 20000

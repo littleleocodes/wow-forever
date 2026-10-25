@@ -57,6 +57,8 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 |---|---|---|---|
 | 2026-10-24 | `apl_opt.class_pool` inlines the official rotations' `valueVariables` and expands their `groups` (`inline_refs`); `apl_prune.py` rewrites the rotations already carrying undefined references to what the simulator runs | Self-audit (agent): the pool copied lines without their variables; the simulator drops an undefined reference and the and/or branch holding it, so the rogue's new Garrote line read "not V and V and V and not Garrote" and ran as "Garrote not on the target"; druid feral (22-55 variables), Fury, Protection warrior and paladin rotations would have been next | Pool lines are now the official logic (druid 61, warrior 90 pool lines, none unresolved); the four rogue rotations prune to identical DPS (500 fights, bit-identical), applied after the rogue raid steps |
 | 2026-10-24 | Signature-failing builds are no bar and no tuning build (`raid_signature.talents_ok` in `apl_opt.main_builds`, `open_builds.raid_candidates`, `ml_builds.verdict`) | Self-audit: the three Assassination raid builds lack Mutilate; the Assassination rotation had been tuned on one of them, and a Mutilate winner below their 662 DPS would only have "confirmed" them | Assassination now tunes on daggers-split-open-raid (casts Mutilate) and the Mutilate preset; the three stay protected |
+| 2026-10-25 00:10 | Bench runs the builds of a call side by side, one per thread (`foreverbench` `simJob`, `core.RunRaidSim`); one build alone still splits over every thread; `WOW_FOREVER_BENCH_SPLIT=1` restores the old way | Speed audit (agent): each build was split 12 ways and waited for its slowest split (12 one-fight splits 12-83 ms under load, one fight 3 ms) | A 114-build x 300-fight polish batch 26.0/19.6 s -> 11.2/10.4 s under the queues' load; DPS identical to 1e-13, the same action rows (order and the last float digit aside); swapped in by rename while the queues ran |
+| 2026-10-24 | Raid open search: 2 runs for the first search, 1 for a re-search (were 3 and 2); `family_search.retune` tunes the raid rotation only; tank deep search 3 runs (was 6); the family polish retries a pair's draw up to 20 times and logs how many pairs have a legal build | Speed audit: in 101 raid open searches a later run beat run 1 by 0.1%+ once; runs agreed 3/3 in 24 of 25 and 2/2 in 10 of 10; tank runs agreed 6/6 every time; the dummy half was ~60% of a re-tune; one failed draw dropped 3 of 94 rogue swords pairs and 5 of 50 Enhancement pairs that have legal builds | About 25-45 min per raid entry and 1 h per tank class; leveling keeps three runs (a later run won 0.3%+ in 28 of 107) |
 | 2026-10-24 | `ml_pipeline.sig_start`: the ML final step starts from a build with its spec's signature talents (the class's best open-search winner of the spec, else our raid build of it) when the stored winner lacks them | Self-audit: rogue-assassination.json's winner is a Backstab build without Mutilate (made before the rule); its BiS set would have been chosen for it | The rogue ML step (after family-rogue, which gives an Assassination winner under the rule) gears and searches a Mutilate build |
 | 2026-10-24 | Follow-up queue `sweep_raid2.sh` (the raid final steps moved into it) | Self-audit: the hunter melee-dps search ran under the old Beast-Survival rule (Raptor Strike, Mongoose Bite, Summon Hawk required), and the Shockadin entry was planned but in no queue | hunter melee-dps re-searched under the relaxed rule, paladin shockadin-raid tuned, raced and searched, then the final steps once |
 | 2026-10-24 | `builds_io.update`: proposed-builds.json written under a lock, re-read inside it, only the change applied (open_builds, ml_builds, raid_path_leveling) | Self-audit: each read the file, simulated for minutes, wrote it back whole; the raid and leveling queues can run them for the same class at once | No lost builds when the queues overlap (filler_audit, spec_builds and the derive scripts still write unlocked: short read-write windows) |
@@ -99,6 +101,23 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-07 | Rank-3 Seal of Command on Retribution's twist line | Rotation search | Best for mana-hungry builds, but costs the hand draft 0.6% | Rejected by the protection rule; a mana-conditional rank line stays open (below) |
 
 ## Open ideas, ranked by what they could still find
+
+0. **From the 2026-10-24 speed audit (agent), after the queues** (evidence in its report, summarized here):
+   - Gear is chosen on the training dummy (`gear_tiers.make` races in the dummy setting, `-raid` sets too): give `make` a setting, gear
+     the full-raid winner in `ml_pipeline.final` and drop the two dummy searches (~40% of the ML final step, and the gear-talent coupling).
+   - Rotation-talent coupling: the mage re-tunes on the open winners gained 8.9-13% (Frost's Arcane Blast refresh line); before the
+     polish, a quick re-tune on a build for each damage keystone whose ability the rotation never casts; after a re-tune that moves a
+     build 3%+, re-polish the top 10 families instead of reusing the cache.
+   - A result cache on disk (`ml_talents.Sim.run`, `fl_open_search.LabSim.run`; key: build, fights, seed, setting, hashes of rotation,
+     gear, bench binary and switches): a paused step replays to its kill point in seconds (pauses lost ~4 h in two days); the fight lab
+     has no cache at all.
+   - `apl_opt` screening: each round's 290-600 candidates at 750 fights, the top 40 at 3,000 (~60% of a rotation tune; A/B one recorded
+     round first).
+   - Distinct finalists: the races raced near-copies (rogue 641.4 x5); merge identical stage-1 results, pick finalists by distinct
+     family, and put the top 5 distinct polished families into the leveling 20-60 race (the 20-60 polish changed 10 of 26 winners).
+   - Polish pruning: log each climb's score per step, then replay one entry with "4 steps for all, finish the top half" (the family
+     nearest each winner was always within 2.1% of the best family; the median family ends 5-12% behind).
+   - Unrestricted raid search: skip entries 10-12%+ behind the class's best (about 11 of 25), keeping the margin wide.
 
 1. **Leveling rotation moves (2026-10-13, the sweep's largest gap).** Give `fightlab/rotation_opt.py` the raid `apl_opt` move set:
    move a priority line up or down, insert a line from the class's other leveling rotations, and conditional rules ("only as the
