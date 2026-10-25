@@ -236,7 +236,7 @@ def compare(rec, repo, setting="dummy"):
             "gain_vs_hand": round(out["winner"]["dps"] / out[hand_best]["dps"] - 1, 4) if hand_best else None}
 
 
-def sig_start(rec, first):
+def sig_start(rec, first, repo=None):
     """The final step's start when the stored winner lacks its spec's signature talents (2026-10-24 audit: the Assassination record's
     winner was a Backstab build without Mutilate, made before the signature rule; its BiS set would have been chosen for it and the search
     would have started from a build the space rejects): the best open-search winner of the class filed under the spec with the talents
@@ -261,6 +261,20 @@ def sig_start(rec, first):
             if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and SM.spec_of(cls, b) == spec and SIG.talents_ok(cls, spec, b["allocation"]):
                 best = (0, flat_of(b["allocation"]), f"our raid build {b['id']}")
                 break
+    if best is None and repo is not None:
+        # 2026-10-25 audit: no Assassination build of ours or open winner holds Mutilate (the entry's winner is the Daggers split); the
+        # simulator's presets raced in the class's entries (race reports' "sim preset: X" rows) are the last starts with the talents
+        trees = R.load_trees(repo, cls)
+        for ent in sorted(R.SPECS.get(cls, {})):
+            rp = paths.raidsim_dir(cls) / f"{ent}.json"
+            rows = (json.load(open(rp, encoding="utf-8")).get("results") or []) if rp.exists() else []
+            for row in rows:
+                if not str(row.get("label", "")).startswith("sim preset: ") or not row.get("talents"):
+                    continue
+                al = flat_of(R.preset_allocation(trees, row["talents"]))
+                dps = float(row.get("dps") or 0)
+                if al and SIG.entry_spec(cls, ent, al) == spec and SIG.talents_ok(cls, spec, al) and (best is None or dps > best[0]):
+                    best = (dps, al, f"the simulator's {row['label'][len('sim preset: '):]} preset (raced in {ent})")
     if best is None:
         return first, None
     return best[1], f"{TODAY}: the stored winner lacks {spec}'s signature talents; the final step starts from {best[2]}"
@@ -269,7 +283,7 @@ def sig_start(rec, first):
 def final(rec, repo, db, zones):
     s = rec.setdefault("search", {})
     first = flat_of(s["bis-dummy-1"]["winner"]["allocation"])
-    first, note = sig_start(rec, first)
+    first, note = sig_start(rec, first, repo)
     if note and s["bis-dummy-1"].get("sig_start") != note:
         s["bis-dummy-1"]["sig_start"] = note
         print("  " + note, flush=True)
