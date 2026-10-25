@@ -59,7 +59,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever fork b7083fa (client 70425)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|

@@ -31,18 +31,20 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step: the fight lab's time per kill drops from 36 to 22 seconds between levels 30 and 40.",
+    "plan": "Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step: the fight lab's time per kill for this build drops from 35 to 22 seconds between levels 30 and 40.",
     "why": [
-     "Open from as far away as you can: the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so all three land while the mob walks in.",
-     "**Mind Flay** (level 20) is your filler and your biggest damage share (about 45% at 60): it slows the mob while you channel, so a mob walking in reaches you later. **Mind Blast** goes out whenever it is ready.",
-     "From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise** (level 35). From 40 it does a sixth to a quarter of your damage and the wand is rarely needed.",
-     "Before 20 your wand finishes: when a mob has a hit or two of wand damage left, a new spell would be wasted mana. **Mind Blast** also finishes a mob when one cast kills it.",
-     "**Vampiric Embrace** (level 28) is your heal once **Shadowform** stops real heals: it heals you for a fifth of your Shadow damage, and the fight lab casts it whenever it is ready.",
-     "Mana: **Spirit Tap** doubles your Spirit for 15 seconds after kills and **Shadowform** halves your Shadow costs, so the tuned rules (2026-10-20) drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below 80% health (about 13% faster than shielding every pull: the shield is not a Shadow spell and costs full mana)."
+     "Open from as far away as you can: the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so they land while the mob walks in. **Shadow Reach** (levels 19 and 23) adds 20% range.",
+     "**Mind Flay** (level 20) is your filler: it slows the mob by 50% while you channel, so a mob walking in reaches you later, and **Improved Mind Flay** (21-22) makes each tick hit harder than the last. **Mind Blast** goes out whenever it is ready; **Improved Mind Blast** (all five points by 33) takes 2.5 seconds off its cooldown. At 60 the fight lab casts about 1.9 **Mind Blast** and 2.1 **Mind Flay** per kill.",
+     "From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise** (level 35).",
+     "Before 20 your wand fills the gaps between **Mind Blast** casts and finishes: when a mob has a hit or two of wand damage left, a new spell would be wasted mana. **Mind Blast** also finishes a mob when one cast kills it.",
+     "**Vampiric Embrace** (level 39 in this order) is your heal once **Shadowform** stops real heals: it heals you for a fifth of your Shadow damage, and the fight lab casts it whenever it is ready.",
+     "Mana: **Spirit Tap** (levels 10-14) doubles your Spirit for 15 seconds after a kill and keeps half your regeneration going while you cast, **Dark Inspiration** adds 15% Spirit for 10 seconds after a **Mind Blast** or a full **Mind Flay**, and **Shadowform** halves your Shadow costs, so the tuned rules (2026-10-23) drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below 80% health (about 13% faster than shielding every pull in the tuning run: the shield is not a Shadow spell and costs full mana).",
+     "In the fight lab at 60 this build loses most without **Shadowform** (11.3 seconds per kill), **Mind Flay** (5.1) and **Spirit Tap** (3.3)."
     ],
     "caveats": [
-     "The tuned rules never cast **Devouring Plague** (about 11% faster without it): at top rank it costs 985 mana for 848 damage over 24 seconds, and most mobs die before it ends. Nor **Smite** (about 7% faster without it).",
+     "The tuned rules never cast **Devouring Plague** (about 11% faster without it): at top rank it costs 985 mana for 848 damage over 24 seconds, and most mobs die before it ends. Nor **Smite** (about 7% faster without it), so the two points in **Power in Light** only fill a Discipline tier.",
      "**Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.",
+     "The Discipline and Holy points come last (45-60): **Twin Disciplines** makes your instants and **Mind Flay** 5% stronger, **Twilight Focus** lets you ignore most pushback and **Meditation** keeps half your regeneration going while you cast. This build has no **Inner Focus**.",
      "Two or three mobs at once: put **Shadow Word: Pain** on each and use **Psychic Scream** (below 40% of your health with a mob on you) to buy time. The no-shield rule was tuned on single pulls."
     ],
     "diverge": [
@@ -50,11 +52,11 @@
      "Below 40% health with the mob on you: **Psychic Scream**, then **Flash Heal** if you are not in **Shadowform** yet."
     ],
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-25"
    }
   },
   "Hybrid Discipline/Holy": {
@@ -84,29 +86,30 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Leveling as Smite: pull with the instant **Shadow Word: Pain**, cast **Mind Blast** whenever it is ready and **Smite** while the mob has more than 35% of its health, both only above 30% of your mana, and let your wand do the rest. A **Power Word: Shield** before every pull lets you keep casting in melee.",
+    "plan": "Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mob, cast **Mind Blast** whenever it is ready and **Smite** in every gap, and let your wand take the last hit. A **Power Word: Shield** before every pull lets you keep casting in melee.",
     "why": [
-     "**Shadow Word: Pain** pulls because it is instant and ticks for the whole fight; **Improved Shadow Word: Pain** (levels 59-60) makes it last longer. **Power in Light** (17-19 and 33) adds 8% to **Smite** while it burns.",
-     "**Mind Blast** hits hardest for its mana, so it goes first whenever ready (above 30% mana and while the mob has more than 20% of its health).",
-     "**Smite** only while the mob has more than 35% of its health and you have more than 30% mana: below that your wand finishes without spending mana or starting a cast the mob may not live through.",
-     "Mana sets the pace. The tuned rules (2026-10-20) cast **Smite** and **Mind Blast** only above 30% of your mana and drink only below 15%: between the two you only wand while your mana creeps back, so most fights end on the wand (about half the damage at 60 in the fight lab). That is why **Wand Specialization** (levels 10-11) and **Spirit Tap** (35-39) are the build's most valuable talents in the fight lab at 60, with **Meditation** (half your regeneration while casting).",
-     "**Inner Focus** at the start of a pull, whenever it is ready: press it right before **Mind Blast** to make that cast free with 25% more crit chance."
+     "**Holy Fire** (level 20) opens from range: a hard hit and a 10-second burn. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your shield holds. **Inner Focus** (level 26) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.",
+     "**Shadow Word: Pain** is instant and ticks for the whole fight; **Improved Shadow Word: Pain** (levels 59-60) makes it last longer. While it or **Holy Fire** burns on the mob, **Power in Light** (levels 14-18) makes **Smite** 10% stronger.",
+     "**Smite** is your main spell: about 6 casts per kill at 60, and with **Holy Fire** 56% of your damage in the fight lab. **Divine Fury** (levels 47-51) takes half a second off both casts, **Holy Specialization** adds 5% crit and **Searing Light** 5% Holy damage.",
+     "**Mind Blast** goes out whenever it is ready while you have more than 30% of your mana; **Smite** at any mana until the mob has less health left than about half a **Smite** hit. Then your wand finishes, 25% stronger with **Wand Specialization** (levels 10-11).",
+     "Mana: you drink only below 15%. In the fight lab at 60 the build loses most without **Meditation** (1.9 seconds per kill), **Divine Fury** and **Mental Agility** (1.8 each), then **Power in Light** and **Spirit Tap** (1.3 each)."
     ],
     "caveats": [
-     "The pre-pull shield is part of this rotation: **Smite** takes 2 seconds or more to cast, and while **Power Word: Shield** holds, damage does not push your casts back. In melee, shield again once Weakened Soul is gone and you are below 80% health.",
-     "The tuned rules never cast Holy Fire or Devouring Plague: per point of mana they deal less than **Mind Blast**. This build has no **Penance**.",
-     "This build has no area damage: pull one mob at a time. With two on you, **Psychic Scream** sends them running."
+     "The pre-pull shield is part of this rotation: **Smite** and **Holy Fire** take 2 seconds or more to cast, and while **Power Word: Shield** holds, damage does not push your casts back. In melee, shield again once Weakened Soul is gone and you are below 80% health; **Twilight Focus** (levels 37-39) avoids most pushback in between.",
+     "The tuned rules (2026-10-23) never cast Devouring Plague and hold **Mind Blast** below 30% mana: the gate keeps **Smite** and **Holy Fire** your main damage (the spec's rule) and cost about 2% speed in the tuning run. This build has no **Penance**.",
+     "**Holy Nova** (level 52) is for pulls of several mobs: the fight lab casts it only when two or more are in reach. Otherwise pull one mob at a time; with two on you, **Psychic Scream** sends them running.",
+     "After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule)."
     ],
     "diverge": [
      "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60% if it is not already on you.",
-     "For pure speed, level as Shadow: about 25 seconds per kill in the fight lab (level-weighted) against this build's 35."
+     "For pure speed, level as Shadow: 24 seconds per kill in the fight lab (level-weighted) against this build's 51."
     ],
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-25"
    }
   },
   "Holy": {
@@ -136,30 +139,31 @@
     }
    },
    "leveling": {
-    "plan": "You level with your raid talents, Discipline first: the Holy talents from 31 on mostly heal. The fight is a Smite priest's: an instant pull with **Shadow Word: Pain**, **Mind Blast** on cooldown, **Smite** in between, both only above 30% of your mana, and your wand for the rest.",
+    "plan": "You level with your raid talents, Discipline first: the first Holy point comes at level 32 (the fastest of the three orders the fight lab raced). The fight is a Smite priest's: **Holy Fire** to open, **Shadow Word: Pain**, **Penance** and **Mind Blast** whenever they are ready, **Smite** in every gap and your wand for the last hit.",
     "why": [
-     "**Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Mind Blast** hits hardest for its mana, so it goes out whenever ready while you have more than 30% mana and the mob more than 20% of its health.",
-     "**Smite** only while the mob has more than 35% of its health and you have more than 30% mana: below that your wand finishes without spending mana.",
-     "Mana sets the pace. The tuned rules (2026-10-20) cast **Smite** and **Mind Blast** only above 30% of your mana and drink only below 15%: between the two you only wand while your mana creeps back, so most fights end on the wand (about half the damage at 60 in the fight lab).",
-     "**Inner Focus** (level 24) at the start of a pull: press it right before **Mind Blast** to make that cast free with 25% more crit chance.",
-     "After a fight, **Renew** heals you while you loot and walk on; eat only if you are still below two thirds of your health."
+     "**Holy Fire** (level 20) opens from range: a long cast (3.5 seconds before **Divine Fury**) that hits hard and burns for 10 seconds more. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your **Power Word: Shield** holds (damage would push the long cast back). **Inner Focus** (level 24) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.",
+     "**Shadow Word: Pain** is instant and ticks for the whole fight; while it or **Holy Fire** burns, **Power in Light** (levels 28-29) adds 4% to **Smite** and **Penance**.",
+     "**Penance** (level 30) goes out whenever it is ready: three Holy hits in 2 seconds on a 12-second cooldown, 15% cheaper with **Improved Healing** (48-50).",
+     "**Mind Blast** whenever it is ready while you have more than 30% of your mana; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes. At 60 the fight lab casts about 4.2 **Smite** and 1.6 **Holy Fire** per kill, 41% of your damage.",
+     "Mana: you drink only below 15%. **Meditation** (levels 20-22) keeps half your regeneration going while you cast and **Mental Strength** (15-19) adds 10% Intellect.",
+     "The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back, and **Twilight Focus** (levels 32-34) avoids most pushback after it breaks."
     ],
     "caveats": [
-     "**Penance** (level 30) is in the build for the raid, but the tuned rules never cast it while leveling: it deals less per mana than **Mind Blast**, and casting it above 30% mana measured about 0.5% slower (at level 40 it took **Mind Blast**'s mana). The same goes for Holy Fire and Devouring Plague.",
-     "Most of your Holy points are for healing (**Spiritual Guidance**, **Spiritual Healing**, **Improved Renew**, **Litany of Light**), so this is a slow way to level: about 44 seconds per kill in the fight lab (level-weighted), against 25 for Shadow.",
-     "The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your **Smite** back. In melee, shield again once Weakened Soul is gone and you are below 80% health.",
-     "**Holy Nova** (level 42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach."
+     "Most of your Holy points are for healing (**Spiritual Healing**, **Improved Renew**, **Inspiration**, **Litany of Light**, **Binding Heal**), so this is a slow way to level: 56 seconds per kill in the fight lab (level-weighted), against 24 for Shadow; kills slow from 51 seconds at 30 to 63 at 40.",
+     "The tuned rules (2026-10-23) never cast Devouring Plague and hold **Mind Blast** below 30% mana: the gate keeps **Smite** and **Holy Fire** your main damage (the spec's rule) and cost about 2% speed in the tuning run.",
+     "**Holy Nova** (level 42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.",
+     "After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule)."
     ],
     "diverge": [
      "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.",
-     "If you only want to reach 60, level as Shadow and respec."
+     "If you only want to reach 60, level as Shadow and respec: about 2.3 times as fast per kill in the fight lab."
     ],
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-25"
    }
   },
   "Discipline": {
@@ -188,81 +192,80 @@
     }
    },
    "leveling": {
-    "plan": "You level with your raid talents, all Discipline first. The fight is a Smite priest's: an instant pull with **Shadow Word: Pain**, **Mind Blast** on cooldown, **Smite** in between, both only above 30% of your mana, and your wand for the rest.",
+    "plan": "Leveling as Discipline: **Shadow Word: Pain** and **Devouring Plague** on the mob, **Penance** and **Mind Blast** whenever they are ready, **Smite** in the gaps while you have more than 30% of your mana, and your wand for the rest. The build is Discipline's damage and mana talents with 21 Shadow points for **Spirit Tap**, hit and **Shadow Weaving**; **Penance** comes late, at level 51.",
     "why": [
-     "**Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Mind Blast** hits hardest for its mana, so it goes out whenever ready while you have more than 30% mana and the mob more than 10% of its health.",
-     "**Smite** only while the mob has more than 35% of its health and you have more than 30% mana; below that your wand finishes.",
-     "Mana sets the pace. The tuned rules (2026-10-20) cast **Smite** and **Mind Blast** only above 30% of your mana and drink only below 15%: between the two you only wand while your mana creeps back, so most fights end on the wand (about half the damage at 60 in the fight lab). **Meditation** (levels 22-24) keeps half your regeneration going while you cast.",
-     "**Inner Focus** (level 26) at the start of a pull: press it right before **Mind Blast** to make that cast free with 25% more crit chance.",
-     "After a fight, **Renew** heals you while you loot and walk; eat only if you are still below two thirds of your health."
+     "**Shadow Word: Pain** pulls: it is instant, ticks for the whole fight, and **Improved Shadow Word: Pain** (levels 40-41) makes it last longer. **Devouring Plague** (level 20) follows while the mob has more than 30% of its health: the Discipline list keeps it (the Shadow and Holy lists do not), it heals you for its damage, and **Devouring Contagion** (level 50) makes it 25% cheaper.",
+     "**Penance** (level 51) whenever it is ready while the mob has more than 35% of its health: three Holy hits in 2 seconds. While your **Shadow Word: Pain** burns, **Power in Light** (five points by 55) makes it and **Smite** 10% stronger.",
+     "**Mind Blast** whenever it is ready, at any mana, while the mob has more than 10% of its health; it also finishes a mob one cast will kill.",
+     "**Smite** only while the mob has more than 35% of its health and you have more than 30% of your mana: otherwise your wand fills the gaps and finishes, 25% stronger with **Wand Specialization** (levels 10-11). At 60 the fight lab casts about one **Penance** and 1.2 **Smite** per kill; with **Mind Blast** they are 46% of your damage.",
+     "Mana sets the pace: you drink only below 15%. In the fight lab at 60 the build loses most without **Spirit Tap** and **Meditation** (1.1 seconds per kill each) and **Devouring Contagion** (1.0).",
+     "**Inner Focus** (level 30) goes up as the pull starts: your first spell is free."
     ],
     "caveats": [
-     "**Penance** (level 30) is in the build for the raid, but the tuned rules never cast it while leveling: it deals less per mana than **Mind Blast**, and casting it above 30% mana measured about 1% slower (at level 40 it took **Mind Blast**'s mana). The same goes for Holy Fire and Devouring Plague.",
-     "This is a slow way to level: about 43 seconds per kill in the fight lab (level-weighted), Shadow 25. The fight lab does not count **Divine Aegis** or **Inspiration**: they are raid talents.",
-     "This build takes no **Power Infusion** or **Renewed Hope**: skip the list's lines for them.",
-     "The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your **Smite** back, and **Soul Warding** (level 36) removes its 4-second cooldown and cuts its cost by 15%."
+     "The tuned rules (2026-10-23) shield before a pull only when you start it below 80% health. In melee, shield again below 80% once Weakened Soul is gone, so damage does not push your **Smite** back; **Martyrdom** (levels 57-58) stops pushback for 6 seconds after a mob crits you.",
+     "The tuned rules never cast Holy Fire (about 5% faster without it in the tuning run). This build takes no **Power Infusion** or **Renewed Hope**: skip the list's lines for them. **Improved Mana Burn** only fills a tier.",
+     "This is a slow way to level: 40 seconds per kill in the fight lab (level-weighted), against 24 for Shadow.",
+     "After a fight, **Renew** heals you while you loot and walk on (below 85% health); eat only if you are still below two thirds of your health."
     ],
     "diverge": [
-     "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third; **Psychic Scream** if a mob is on you and you are below 40%.",
-     "If you only want to reach 60, level as Shadow and respec: well under half the time per kill in the fight lab."
+     "Hurt in a fight: shield below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.",
+     "If you only want to reach 60, level as Shadow and respec: about 1.6 times as fast per kill in the fight lab."
     ],
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-25"
    }
   },
   "Hybrid Discipline/Shadow": {
    "leveling": {
-    "plan": "The Discipline-Shadow build plays the Discipline leveling list (a Smite priest's) with Shadow's damage talents behind it: an instant pull with **Shadow Word: Pain**, **Mind Blast** on cooldown, **Smite** in between, both only above 30% of your mana, your wand for the rest, a **Power Word: Shield** before every pull. Discipline comes first (levels 10-24), then **Spirit Tap** (25-29), then mostly Shadow.",
+    "plan": "A Discipline-Shadow build levels with the Shadow leveling list, the rotation that plays its signature spells (**Shadow Word: Pain** and **Mind Flay**): instants while the mob runs in, **Mind Blast** whenever it is ready, **Mind Flay** in between, and **Shadow Word: Death** or your wand to finish.",
     "why": [
-     "**Shadow Word: Pain** and **Mind Blast** are your Shadow spells, and the Shadow points make them hit harder: **Improved Shadow Word: Pain** (levels 39-40) makes the pain last longer, **Shadow Weaving** (41-43) and **Darkness** (57-60) add Shadow damage, and **Improved Mind Blast** (37-38) brings **Mind Blast** back sooner.",
-     "Mana sets the pace. The tuned rules (2026-10-20) cast **Smite** and **Mind Blast** only above 30% of your mana and drink only below 15%: between the two you only wand while your mana creeps back, so most fights end on the wand (about half the damage at 60 in the fight lab). The build pays for it: in the fight lab its most valuable talents at 60 are **Spirit Tap** (double Spirit for 15 seconds after a kill), **Wand Specialization** (levels 10-11), **Improved Shadow Word: Pain** and **Meditation** (half your regeneration while casting).",
-     "**Smite** only while the mob has more than 35% of its health and you have more than 30% mana; **Mind Blast** above 30% mana while the mob has more than 10% of its health.",
-     "**Inner Focus** (level 30) right before **Mind Blast** makes that cast free with 25% more crit chance."
+     "**Shadow Word: Pain** (and **Vampiric Embrace** when the build has it) go out first, then **Mind Blast**, so they land while the mob walks in.",
+     "**Mind Flay** is the filler: it slows the mob by 50% while you channel. The build needs the **Mind Flay** talent: without it the list has no filler and your wand does the work.",
+     "**Shadow Word: Death** (level 32) when one cast will kill the mob, so its backlash never lands, and below 20% health with **Early Demise**.",
+     "Mana: the tuned Shadow rules (2026-10-23) drink only below 15% and shield before a pull only below 80% health. **Spirit Tap** doubles your Spirit after a kill, **Meditation** keeps half your regeneration going while you cast and **Twin Disciplines** makes your instants and **Mind Flay** stronger."
     ],
     "caveats": [
-     "This build takes neither **Penance**, **Power Infusion** nor **Renewed Hope**: skip those lines. The tuned rules never cast Holy Fire or Devouring Plague.",
-     "The Discipline list never casts **Mind Flay** or **Vampiric Embrace**: the build's **Mind Flay** and **Improved Mind Flay** points (54-56) only open the **Darkness** tier. The fight lab measured this build at about 34 seconds per kill (level-weighted), against 25 for the Shadow page.",
-     "Drink below 15% of your mana; after a fight, **Renew** heals you while you loot and walk, and you eat only below two thirds of your health."
+     "The tuned rules never cast Devouring Plague or Smite, and the Shadow list has no **Penance** line: Discipline's **Smite** and **Penance** talents do nothing on it.",
+     "With fewer than 31 Shadow points there is no **Shadowform**: your Shadow spells cost full mana, but you can still heal (**Flash Heal** below a third of your health, **Renew** after a fight)."
     ],
     "diverge": [
-     "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.",
-     "For speed, the Shadow page levels about a quarter faster per kill."
+     "When a pull goes wrong, shield yourself: **Power Word: Shield** absorbs damage and stops pushback while it holds; **Psychic Scream** if a mob is on you and you are below 40%.",
+     "For speed, the Shadow page is the fastest priest leveling build in the fight lab."
     ],
-    "written": "2026-10-22",
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
-    }
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
+    },
+    "written": "2026-10-25"
    }
   },
   "Hybrid Holy/Shadow": {
    "leveling": {
-    "plan": "The Holy-Shadow build plays the Holy leveling list (a Smite priest's) with points in all three trees: an instant pull with **Shadow Word: Pain**, **Mind Blast** on cooldown, **Smite** in between, both only above 30% of your mana, your wand for the rest, a **Power Word: Shield** before every pull.",
+    "plan": "A Holy-Shadow build levels with the Holy leveling list, the rotation that plays its signature spells (**Shadow Word: Pain** and **Holy Fire**): **Holy Fire** to open, **Shadow Word: Pain**, **Mind Blast** above 30% mana, **Smite** in every gap and your wand for the last hit, with a **Power Word: Shield** before every pull.",
     "why": [
-     "The Shadow points make your two Shadow spells hit harder and your mana last: **Spirit Tap** (double Spirit for 15 seconds after a kill), **Improved Shadow Word: Pain**, **Improved Mind Blast** and **Shadow Weaving**.",
-     "**Smite** only while the mob has more than 35% of its health and you have more than 30% mana; **Mind Blast** above 30% mana while the mob has more than 20% of its health. **Divine Fury** cuts **Smite**'s cast time.",
-     "Mana sets the pace. The tuned rules (2026-10-20) cast **Smite** and **Mind Blast** only above 30% of your mana and drink only below 15%: between the two you only wand while your mana creeps back, so most fights end on the wand (about half the damage at 60 in the fight lab).",
-     "**Inner Focus** right before **Mind Blast** makes that cast free with 25% more crit chance."
+     "**Holy Fire** opens from range and is cast again once its burn has ended while the mob has more than 40% of its health, in melee only while your shield holds. **Inner Focus**, when the build has it, goes up as the pull starts and makes that opening **Holy Fire** free.",
+     "The Shadow points make **Shadow Word: Pain** and **Mind Blast** better and your mana last: **Spirit Tap**, **Improved Shadow Word: Pain**, **Improved Mind Blast** and **Shadow Weaving**, whichever the build takes.",
+     "**Mind Blast** whenever it is ready while you have more than 30% of your mana; **Smite** at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes. **Penance**, when the build has it, goes out whenever it is ready."
     ],
     "caveats": [
-     "This build takes no **Penance**. The tuned rules never cast Holy Fire or Devouring Plague: per point of mana they deal less than **Mind Blast**.",
-     "**Mind Flay** is in the build but the Holy list never casts it, so its point only counts toward the Shadow tiers. Shadow levels faster per kill."
+     "The Holy list never casts **Mind Flay** or **Vampiric Embrace**: Shadow points in them only open tiers. The tuned rules (2026-10-23) never cast Devouring Plague.",
+     "Drink below 15% of your mana; after a fight, **Renew** heals you while you loot and walk on (below 85% health), and you eat below 80%."
     ],
     "diverge": [
      "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.",
      "For speed, level as Shadow."
     ],
-    "written": "2026-10-22",
     "rotations": {
-     "leveling:shadow-dps": "f2aca7c1348e",
-     "leveling:holy-leveling": "813ef2291b89",
-     "leveling:discipline-leveling": "f54a6ff3ab65"
-    }
+     "leveling:shadow-dps": "c9fb4f710ad9",
+     "leveling:holy-leveling": "efa767cc819b",
+     "leveling:discipline-leveling": "3e9a00a0562d"
+    },
+    "written": "2026-10-25"
    }
   }
  }

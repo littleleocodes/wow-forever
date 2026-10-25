@@ -154,35 +154,35 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-10-10",
-  "commit": "2ce8265",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
-    "label": "open winner",
+    "label": "combat-swords-open-raid",
     "talents": "005303103003-32403300001515231"
    },
    {
-    "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "005323101005-32502300000514231",
-    "protect_only": true
-   },
-   {
     "label": "sim preset: Sinister Strike",
-    "talents": "00530310501-32003311201515231",
-    "protect_only": true
+    "talents": "00530310501-32003311201515231"
    },
    {
     "label": "combat-swords-raid",
     "talents": "005303125-32403300001515131",
     "protect_only": true
+   },
+   {
+    "label": "opt-combat-swords-raid-raid-dps",
+    "talents": "005323101005-32502300000514231",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "combat-swords-open-raid",
+   "sim preset: Sinister Strike"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -226,41 +226,49 @@
     "gain_seed2": 0.001867604705545034,
     "candidates": 340,
     "pass": 5
+   },
+   {
+    "round": 6,
+    "change": "insert at the top: if (energy \u2264 15 or Eureka! is known and energy \u2264 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea",
+    "gain_seed1": 0.02092323685036024,
+    "gain_seed2": 0.020790222033995054,
+    "candidates": 365,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 715.2119964412224,
-     "after": 716.6103294686462,
-     "base": 715.2119964412224,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "opt-combat-swords-raid-raid-dps": {
-     "before": 705.6232269888802,
-     "after": 703.7674753701898,
-     "base": 705.6232269888802,
+    "combat-swords-open-raid": {
+     "before": 626.1779748900005,
+     "after": 641.2688477973483,
+     "base": 626.1779748900005,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Sinister Strike": {
-     "before": 709.9959328113082,
-     "after": 710.9764929762764,
-     "base": 709.9959328113082,
+     "before": 617.8972957912388,
+     "after": 632.8282588544841,
+     "base": 617.8972957912388,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-swords-raid": {
-     "before": 701.7894196855564,
-     "after": 702.7798693233102,
-     "base": 701.7894196855564,
+     "before": 610.7816333558002,
+     "after": 625.3325624348304,
+     "base": 610.7816333558002,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-combat-swords-raid-raid-dps": {
+     "before": 619.3904849441384,
+     "after": 630.4779266255534,
+     "base": 619.3904849441384,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -268,7 +276,19 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Combat"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

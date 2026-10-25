@@ -2959,5 +2959,123 @@
    ],
    "final_seed3": 0.0
   }
+ },
+ "signature_check": {
+  "spec": "Hybrid Discipline/Holy",
+  "ok": true,
+  "core_share": 0.603,
+  "min_share": 0.5,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "smite-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 593.8,
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Smite": 0.416,
+   "Holy Fire": 0.187,
+   "Shadow Word: Pain": 0.1761,
+   "Penance": 0.1335,
+   "Shadow Word: Death": 0.0581,
+   "Devouring Plague": 0.0156,
+   "Demonic Rune": 0.0138
+  },
+  "casts": {
+   "Smite": 40.55,
+   "Penance": 14.13,
+   "Devouring Plague": 1.0,
+   "Holy Fire": 13.8,
+   "Shadow Word: Pain": 7.66,
+   "Shadow Word: Death": 7.54,
+   "Berserking": 1.0,
+   "Inner Focus": 1.0
+  },
+  "allocation": {
+   "Discipline": [
+    [
+     "Power in Light",
+     5
+    ],
+    [
+     "Twin Disciplines",
+     5
+    ],
+    [
+     "Holy Precision",
+     3
+    ],
+    [
+     "Mental Agility",
+     2
+    ],
+    [
+     "Inner Focus",
+     1
+    ],
+    [
+     "Meditation",
+     3
+    ],
+    [
+     "Mental Strength",
+     1
+    ],
+    [
+     "Penance",
+     1
+    ]
+   ],
+   "Holy": [
+    [
+     "Twilight Focus",
+     1
+    ],
+    [
+     "Holy Specialization",
+     5
+    ],
+    [
+     "Spell Warding",
+     2
+    ],
+    [
+     "Divine Fury",
+     5
+    ],
+    [
+     "Holy Nova",
+     1
+    ],
+    [
+     "Blessed Recovery",
+     3
+    ],
+    [
+     "Searing Light",
+     2
+    ],
+    [
+     "Binding Heal",
+     1
+    ],
+    [
+     "Spiritual Guidance",
+     3
+    ]
+   ],
+   "Shadow": [
+    [
+     "Shadow Focus",
+     5
+    ],
+    [
+     "Improved Shadow Word: Pain",
+     2
+    ]
+   ]
+  }
  }
 }

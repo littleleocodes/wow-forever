@@ -9,42 +9,42 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Relentless Strikes | Assassination | 3 | +5.78% | manual |
-| Puncturing Wounds | Combat | 2 | +4.34% | manual |
-| Adrenaline Rush | Combat | 7 | +3.62% | manual |
-| Improved Expose Armor | Assassination | 3 | +2.07% | manual |
-| Thousand Cuts | Subtlety | 7 | +1.82% | manual |
-| Improved Slice and Dice | Assassination | 2 | +1.30% | manual |
-| Opportunity | Subtlety | 1 | +1.30% | manual |
-| Precision | Combat | 2 | +1.23% | manual |
-| Ruthlessness | Assassination | 2 | +1.00% | manual |
-| Malice | Assassination | 1 | +0.99% | manual |
-| Weapon Expertise | Combat | 6 | +0.95% | manual |
-| Ghostly Strike | Subtlety | 3 | +0.95% | manual |
-| Serrated Blades | Subtlety | 4 | +0.95% | manual |
-| Hack and Slash | Combat | 5 | +0.93% | manual |
-| Dual Wield Specialization | Combat | 4 | +0.91% | manual |
-| Seal Fate | Assassination | 6 | +0.74% | manual |
-| Blade Flurry | Combat | 5 | +0.62% | manual |
+| Relentless Strikes | Assassination | 3 | +5.87% | manual |
+| Adrenaline Rush | Combat | 7 | +5.26% | manual |
+| Puncturing Wounds | Combat | 2 | +4.46% | manual |
+| Improved Expose Armor | Assassination | 3 | +2.10% | manual |
+| Thousand Cuts | Subtlety | 7 | +1.87% | manual |
+| Improved Slice and Dice | Assassination | 2 | +1.80% | manual |
+| Opportunity | Subtlety | 1 | +1.34% | manual |
+| Ruthlessness | Assassination | 2 | +1.01% | manual |
+| Malice | Assassination | 1 | +1.01% | manual |
+| Dual Wield Specialization | Combat | 4 | +1.00% | manual |
+| Weapon Expertise | Combat | 6 | +1.00% | manual |
+| Ghostly Strike | Subtlety | 3 | +1.00% | manual |
+| Serrated Blades | Subtlety | 4 | +1.00% | manual |
+| Hack and Slash | Combat | 5 | +0.98% | manual |
+| Precision | Combat | 2 | +0.76% | manual |
+| Seal Fate | Assassination | 6 | +0.75% | manual |
+| Blade Flurry | Combat | 5 | +0.68% | manual |
 | Murder | Assassination | 2 | +0.60% | manual |
-| Improved Poisons | Assassination | 4 | +0.54% | manual |
-| Aggression | Combat | 6 | +0.50% | manual |
-| Flawless Execution | Combat | 4 | +0.31% | manual |
-| Lethality | Assassination | 3 | +0.26% | manual |
+| Aggression | Combat | 6 | +0.51% | manual |
+| Flawless Execution | Combat | 4 | +0.32% | manual |
+| Lethality | Assassination | 3 | +0.27% | manual |
 | Cutthroat | Subtlety | 6 | +0.23% | manual |
-| Vile Poisons | Assassination | 4 | +0.21% | manual |
 | Cold Blood | Assassination | 4 | +0.21% | manual |
 | Vigor | Assassination | 5 | +0.09% | manual |
-| Improved Eviscerate | Combat | 1 | +0.08% | manual |
+| Improved Eviscerate | Combat | 1 | +0.07% | manual |
 | Lightning Reflexes | Combat | 1 | +0.00% | manual |
 | Deflection | Combat | 2 | +0.00% | manual |
 | Riposte | Combat | 3 | +0.00% | manual |
+| Quietus | Subtlety | 6 | +0.00% | manual |
+| Improved Gouge | Assassination | 1 | +0.00% | manual |
 
-## Optimized build: 17/32/2  score +84.67%  (dps x1.847, sustain x1.000, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.592  — use this to compare models with different pet shares.
+## Optimized build: 17/32/2  score +91.40%  (dps x1.914, sustain x1.000, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.625  — use this to compare models with different pet shares.
 
 ```
-  Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Improved Expose Armor 2, Lethality 1
+  Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Relentless Strikes 1, Improved Expose Armor 2, Lethality 3
   Combat: Improved Eviscerate 3, Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 1, Dual Wield Specialization 5, Hack and Slash 5, Blade Flurry 1, Aggression 3, Weapon Expertise 2, Adrenaline Rush 1
   Subtlety: Opportunity 2
 ```
@@ -53,19 +53,19 @@ Absolute DPS index (character alone, no talents = 1.00): 1.592  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Thousand Cuts | Subtlety 7 | 1/1 | +4.50% | no |
-| Seal Fate | Assassination 6 | 1/5 | +1.83% | no |
-| Ghostly Strike | Subtlety 3 | 1/1 | +1.79% | no |
-| Serrated Blades | Subtlety 4 | 1/3 | +1.79% | no |
-| Lethality | Assassination 3 | 2/5 | +1.08% | yes |
-| Flawless Execution | Combat 4 | 1/1 | +0.77% | yes |
-| Improved Poisons | Assassination 4 | 1/5 | +0.58% | yes |
-| Cutthroat | Subtlety 6 | 1/5 | +0.56% | no |
-| Cold Blood | Assassination 4 | 1/1 | +0.51% | yes |
-| Vile Poisons | Assassination 4 | 1/5 | +0.23% | yes |
-| Vigor | Assassination 5 | 1/2 | +0.21% | no |
+| Thousand Cuts | Subtlety 7 | 1/1 | +4.87% | no |
+| Seal Fate | Assassination 6 | 1/5 | +1.96% | no |
+| Ghostly Strike | Subtlety 3 | 1/1 | +1.91% | no |
+| Serrated Blades | Subtlety 4 | 1/3 | +1.91% | no |
+| Murder | Assassination 2 | 1/2 | +1.15% | yes |
+| Lethality | Assassination 3 | 4/5 | +1.15% | yes |
+| Flawless Execution | Combat 4 | 1/1 | +0.83% | yes |
+| Cutthroat | Subtlety 6 | 1/5 | +0.61% | no |
+| Cold Blood | Assassination 4 | 1/1 | +0.55% | yes |
+| Vigor | Assassination 5 | 1/2 | +0.23% | no |
 | Deflection | Combat 2 | 2/3 | +0.00% | yes |
 | Riposte | Combat 3 | 1/1 | +0.00% | no |
 | Quietus | Subtlety 6 | 1/5 | +0.00% | no |
-| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |
+| Mutilate | Assassination 5 | 1/1 | +0.00% | no |
+| Improved Kidney Shot | Assassination 5 | 1/2 | +0.00% | no |
 

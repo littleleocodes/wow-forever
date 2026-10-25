@@ -10,7 +10,7 @@
 
 **Other setups of this spec.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
 
-- Swords: [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (18/33/0, 679 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303103003-32403300001515231--7)
+- Swords: [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (18/33/0, 641 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303103003-32403300001515231--7)
 
 ## How to play
 
@@ -18,16 +18,18 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Cold Blood** right before your finisher
-2. **Eviscerate** when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
-3. **Adrenaline Rush**
-4. **Backstab**
+1. **Garrote**: keep it on the target
+2. **Cold Blood** right before your finisher
+3. **Eviscerate** (rank 8) when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
+4. **Backstab** (rank 8) when Cutthroat is not active
+5. **Adrenaline Rush**
 
-**Backstab** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Blade Flurry**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
+- **Vanish**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -55,11 +57,13 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 - In the last 6 seconds of a fight, skip **Slice and Dice** and put every combo point into **Eviscerate**: a buff that outlives the boss does nothing.
 - If the boss is about to die and you hold only 1 to 3 points, an **Eviscerate** still beats keeping them.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 695 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 683 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
 
@@ -68,7 +72,7 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 | Pre-BiS | 644 | [16/33/2](https://talentsforever.com/rogue/60/005303103001-30531300001515231-002-7) |
 | Phase 1 BiS | 696 | this build |
 
-**The gear** (average item level: Pre-BiS 63.4; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 63.7; Phase 1 BiS 63.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -94,11 +98,11 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 
 ## Other builds of this spec
 
-- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 688 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-7)
-- [Combat (optimized, daggers)](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 673 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-7)
-- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 667 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--7)
-- [Combat (optimized, swords)](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 666 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--7)
+- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 677 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-7)
+- [Combat (optimized, daggers)](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 663 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-7)
+- [Combat (optimized, swords)](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 629 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--7)
+- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 625 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -99,14 +99,14 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
-    "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health.",
+    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).",
+    "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.",
     "**Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).",
-    "Below a fifth of the mob's health: an **Ice Lance** that will kill, or your wand. No Fire Blast or Cone of Cold at all.",
+    "Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "fire-leveling": {
@@ -116,11 +116,11 @@
    ],
    "steps": [
     "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third (35%) of its health.",
-    "**Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill; never on a mob below a tenth of its health.",
+    "**Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill.",
     "**Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.",
     "**Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.",
     "Mob on you and no control left: **Scorch** (a short cast, pushed back less), while the mob has more than about a third of its health.",
-    "Below about a third of the mob's health, no **Fireball** or **Scorch**: finish with **Fire Blast** (not below a tenth), an **Ice Lance** or your wand.",
+    "Below about a third of the mob's health, no **Fireball** or **Scorch**: finish with **Fire Blast**, an **Ice Lance** or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -133,14 +133,14 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in, only while the mob has more than a third of its health (no Frostfire Bolt: Frostbolt kills faster in the fight lab, even with a Frostfire build); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
+    "Your bolt: **Frostbolt** until level 40, only while the mob has more than a third of its health; from level 40 **Frostfire Bolt**, while the mob has more than a tenth of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
     "**Frost Nova** when it reaches you, then step back.",
-    "**Ice Lance** while the mob is frozen; **Pyroblast** at 3 stacks of **Heating Up**.",
-    "Finish with **Fire Blast** or an **Ice Lance** that will kill (no Fire Blast on a mob under a tenth of its health), else your wand. No Cone of Cold.",
+    "**Ice Lance** while the mob is frozen and you have more than 30% of your mana.",
+    "**Fire Blast** only while the mob is between a tenth and a fifth of its health and you have more than 30% of your mana; an **Ice Lance** that will kill, or your wand, finishes it. No Cone of Cold.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "frost-aoe": {
@@ -162,18 +162,18 @@
   "arcane-leveling": {
    "before": [
     "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
-    "Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana."
+    "Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly), and **Arcane Power** too while you have more than half your mana."
    ],
    "steps": [
     "With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.",
     "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (15% of your Intellect) for 15 seconds.",
-    "**Arcane Missiles** as your channel, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); only while the mob has more than about a third (35%) of its health.",
-    "**Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen. No Cone of Cold.",
-    "**Frostbolt** when **Arcane Missiles** is out of mana or the mob is below a third of its health, but not below a fifth; then finish with **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.",
+    "**Arcane Missiles** as your channel, also once the mob is on you (with **Improved Channeling**, hits do not cut it short), and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you).",
+    "No Frost Nova: let the mob come and keep channeling. **Cone of Cold** only when the mob is on you and below a fifth of its health, then step back; **Ice Lance** if the mob is frozen.",
+    "When you cannot afford **Arcane Missiles**: **Fire Blast** if the mob is on you, else **Frostbolt**; finish with a **Fire Blast** that will kill, or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health."
    ]
   },
   "barrage-frost-leveling": {
@@ -182,15 +182,15 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** it instead.",
+    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead.",
     "**Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.",
-    "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; **Cone of Cold** when both are down.",
+    "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**. No Cone of Cold.",
     "**Ice Lance** while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).",
-    "To finish: a **Fire Blast** or **Ice Lance** that will kill, or your wand.",
+    "To finish: a **Fire Blast** (not below a tenth of the mob's health) or **Ice Lance** that will kill, or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health."
    ]
   }
  },
@@ -221,17 +221,18 @@
     "**Hammer of Justice** a mob that casts spells.",
     "Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.",
     "Keep your seal up.",
+    "**Hammer of Wrath** when the mob is below 20% health.",
     "With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).",
-    "**Judgement** and **Holy Strike** whenever ready. No Hammer of Wrath and no Consecration: the tuned rotation casts neither.",
+    "**Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.",
     "Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below a quarter of your mana."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana."
    ]
   },
   "prot-leveling": {
    "before": [
-    "**Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too if you have **Improved Righteous Fury** (less damage taken while it is on).",
+    "**Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too: **Iron Creed** and **Improved Righteous Fury** cut your damage taken only while it is on (the fight lab keeps it up).",
     "**Seal of Fury** before each pull: with a shield it also gives you an absorb."
    ],
    "steps": [
@@ -252,7 +253,7 @@
   "shadow-dps": {
    "before": [
     "**Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it.",
-    "**Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, right before a **Mind Blast** (that cast is free)."
+    "**Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free)."
    ],
    "steps": [
     "Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.",
@@ -269,35 +270,35 @@
   "holy-leveling": {
    "before": [
     "**Power Word: Fortitude** and **Inner Fire** up.",
-    "**Power Word: Shield** on yourself before every pull: while it holds, damage does not push your **Smite** back. **Inner Focus** when it is ready, right before **Mind Blast** (that cast is free)."
+    "**Power Word: Shield** on yourself before every pull: while it holds, damage does not push your casts back. **Inner Focus** when it is ready, as the pull starts: your first spell (from level 20 the opening **Holy Fire**) is free and 25% more likely to crit."
    ],
    "steps": [
-    "**Shadow Word: Pain** to pull, and again when it runs out while the mob has more than 30% of its health.",
-    "**Mind Blast** whenever it is ready while you have more than 30% mana and the mob more than 20% of its health.",
-    "**Smite** in between while the mob has more than 35% of its health and you have more than 30% mana; your wand otherwise.",
-    "Below 30% mana: wand only. You drink only below 15%, so most of a fight ends on the wand.",
-    "Skip Holy Fire, Penance and Devouring Plague: they deal less per mana than **Mind Blast**, and mana is what limits you.",
+    "Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).",
+    "**Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.",
+    "**Penance** whenever it is ready; **Mind Blast** whenever it is ready while you have more than 30% mana (also to finish a mob one cast will kill).",
+    "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.",
+    "Skip Devouring Plague: the tuned rules never cast it.",
     "Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
-    "Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health."
+    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%."
    ]
   },
   "discipline-leveling": {
    "before": [
     "**Power Word: Fortitude** and **Inner Fire** up.",
-    "**Power Word: Shield** on yourself before every pull; **Power Infusion** on yourself when it is ready, and **Inner Focus** right before **Mind Blast** (that cast is free)."
+    "**Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free); **Power Infusion** on yourself when it is ready."
    ],
    "steps": [
-    "**Shadow Word: Pain** to pull, and again when it runs out while the mob has more than 30% of its health.",
-    "**Mind Blast** whenever it is ready while you have more than 30% mana and the mob more than 10% of its health.",
-    "**Smite** in between while the mob has more than 35% of its health and you have more than 30% mana; your wand otherwise.",
-    "Below 30% mana: wand only. You drink only below 15%, so most of a fight ends on the wand.",
-    "Skip Holy Fire, Penance and Devouring Plague: they deal less per mana than **Mind Blast**, and mana is what limits you.",
-    "Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
+    "**Shadow Word: Pain** to pull, then **Devouring Plague**; each again when it runs out while the mob has more than 30% of its health.",
+    "**Penance** whenever it is ready while the mob has more than 35% of its health.",
+    "**Mind Blast** whenever it is ready, at any mana, while the mob has more than 10% of its health (also to finish a mob one cast will kill).",
+    "**Smite** in between while the mob has more than 35% of its health and you have more than 30% mana; your wand otherwise, and for the last hit or two.",
+    "Skip Holy Fire: the tuned rules never cast it.",
+    "Hurt: **Power Word: Shield** in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
-    "Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health."
+    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat only if you are still below two thirds."
    ]
   }
  },

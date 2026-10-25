@@ -60,20 +60,19 @@ The Combat raid build the open talent search found on 2026-10-10: every legal 51
 
 ## Rank among our builds and the community simulator's
 
-**3 of 10** for `combat-swords-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 409 | +0.0% | 667 | -1.7% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 667 | -1.7% | 0 s |
-| 3 | **[`combat-swords-open-raid`](combat-swords-open-raid.md)** | ours: derived (open search) | 18/33/0 | 392 | -4.2% | 679 | +0.0% | 0 s |
-| 4 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 391 | -4.4% | 666 | -2.0% | 0 s |
-| 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 675 | -0.5% | 0 s |
-| 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 662 | -2.6% | 0 s |
-| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 610 | -10.2% | 0 s |
-| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 598 | -12.0% | 0 s |
-| 9 | *Backstab* | community simulator | - | 331 | -18.9% | 602 | -11.4% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 527 | -22.5% | 0 s |
+| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 336 | +0.0% | 625 | -2.5% | 0 s |
+| 2 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 327 | -2.7% | 629 | -1.9% | 0 s |
+| 3 | **[`combat-swords-open-raid`](combat-swords-open-raid.md)** | ours: derived (open search) | 18/33/0 | 325 | -3.3% | 641 | +0.0% | 0 s |
+| 4 | *Combat SS* | community simulator | - | 321 | -4.5% | 635 | -1.0% | 0 s |
+| 5 | *Combat BS* | community simulator | - | 315 | -6.4% | 626 | -2.3% | 0 s |
+| 6 | *Asn Muti* | community simulator | - | 292 | -13.3% | 575 | -10.3% | 0 s |
+| 7 | *Combat Muti* | community simulator | - | 287 | -14.8% | 585 | -8.8% | 0 s |
+| 8 | *Subtlety Hemo* | community simulator | - | 286 | -14.9% | 494 | -23.0% | 0 s |
+| 9 | *Subtlety BS* | community simulator | - | 270 | -19.7% | 473 | -26.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,12 +86,13 @@ The Combat raid build the open talent search found on 2026-10-10: every legal 51
   7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
   8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
   9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-10, 5 changes to the base rotation; third-seed check: open winner 715 -> 717 DPS (+0.2%), opt-combat-swords-raid-raid-dps 706 -> 704 DPS (-0.3%), sim preset: Sinister Strike 710 -> 711 DPS (+0.1%), combat-swords-raid 702 -> 703 DPS (+0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-24, 6 changes to the base rotation; third-seed check: combat-swords-open-raid 626 -> 641 DPS (+2.4%), sim preset: Sinister Strike 618 -> 633 DPS (+2.4%), combat-swords-raid 611 -> 625 DPS (+2.4%), opt-combat-swords-raid-raid-dps 619 -> 630 DPS (+1.8%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
   3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)
   4. spell probe: insert at the top: cast Hemorrhage (+8.6%, pass 4)
   5. threshold 2.5 -> 3.75: if combo points ≥ 2.5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.2%, pass 5)
+  6. insert at the top: if (energy ≤ 15 or Eureka! is known and energy ≤ 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+2.1%, pass 9)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-swords-open-raid`](combat-swords-open-raid.md) casts/min |
 |---|---|---|
@@ -100,20 +100,20 @@ The Combat raid build the open talent search found on 2026-10-10: every legal 51
 | 2 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
 | 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.8 |
 | 4 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
-| 5 | cast Sinister Strike | 17.1 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 0.3 |
+| 6 | cast Sinister Strike | 15.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Eviscerate (rank 8) (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 
 | Ability | [`combat-swords-open-raid`](combat-swords-open-raid.md) |
 |---|---|
-| Auto Attack | 55% |
-| Sinister Strike | 29% |
-| Deadly Poison | 6% |
-| Dense Sharpening Stone | 4% |
-| Eviscerate | 3% |
-| Dragonbreath Chili | 2% |
+| Auto Attack | 56% |
+| Sinister Strike | 26% |
+| spell 11337 | 7% |
+| spell 25349 | 7% |
+| Eviscerate | 2% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes

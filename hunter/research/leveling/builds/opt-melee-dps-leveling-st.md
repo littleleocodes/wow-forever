@@ -86,7 +86,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-18, on top of the priority below): never cast Serpent Sting. Together +2.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-24, on top of the priority below): never cast Serpent Sting; Immolation Trap only above 50% mana; Strider Kick only while the mob has more than 35% health; never cast Strider Kick; drink below 60% mana. Together +0.2% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/melee-dps-opt.md), all leveling builds: [leveling rotations](../rotation.md)):
 

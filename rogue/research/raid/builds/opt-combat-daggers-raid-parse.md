@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +84.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +91.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -22,10 +22,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
-| **Murder** | 2/2 | changed | Increases all damage dealt by 4% against Humanoid and Giant targets. |
 | **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
 | **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
-| **Lethality** | 1/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 4%. |
+| **Lethality** | 3/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%. |
 
 ### Combat (32)
 
@@ -51,14 +50,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Core talents (priority order)
 
-1. **Puncturing Wounds** — Removing it costs 24.5 points of score in this model.
-2. **Relentless Strikes** — Removing it costs 12.7 points of score in this model.
-3. **Improved Expose Armor** — Removing it costs 9.3 points of score in this model.
-4. **Improved Slice and Dice** — Removing it costs 8.9 points of score in this model.
-5. **Adrenaline Rush** — Removing it costs 8.3 points of score in this model.
-6. **Malice** — Removing it costs 7.6 points of score in this model.
-7. **Hack and Slash** — Removing it costs 7.2 points of score in this model.
-8. **Ruthlessness** — Removing it costs 6.9 points of score in this model.
+1. **Puncturing Wounds** — Removing it costs 26.9 points of score in this model.
+2. **Relentless Strikes** — Removing it costs 13.6 points of score in this model.
+3. **Improved Slice and Dice** — Removing it costs 12.6 points of score in this model.
+4. **Adrenaline Rush** — Removing it costs 12.3 points of score in this model.
+5. **Improved Expose Armor** — Removing it costs 10.0 points of score in this model.
+6. **Malice** — Removing it costs 8.0 points of score in this model.
+7. **Hack and Slash** — Removing it costs 7.8 points of score in this model.
+8. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
 
 ## Rotation
 

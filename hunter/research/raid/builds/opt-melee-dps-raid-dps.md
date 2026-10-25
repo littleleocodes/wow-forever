@@ -58,15 +58,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 ## Rank among our builds and the community simulator's
 
-**3 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 496 | +0.0% | 1019 | -0.6% | 16 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 494 | -0.3% | 999 | -2.6% | 0 s |
-| 3 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 471 | -5.0% | 986 | -3.9% | 0 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 369 | -25.5% | 1026 | +0.0% | 126 s |
-| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 364 | -26.5% | 969 | -5.6% | 117 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 395 | +0.0% | 835 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 380 | -3.9% | 801 | -4.1% | 0 s |
+| 3 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 357 | -9.6% | 796 | -4.8% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 275 | -30.4% | 797 | -4.7% | 103 s |
+| 5 | `beast-survival-open-raid` | ours | 16/11/24 | 267 | -32.4% | 823 | -1.5% | 120 s |
+| 6 | *SV Melee* | community simulator | - | 215 | -45.4% | 672 | -19.6% | 122 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -80,24 +81,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 11 passes, the last 2026-10-16, 4 changes to the base rotation; third-seed check: beast-survival-open-raid 708 -> 1027 DPS (+45.0%), melee-survival-raid 735 -> 1017 DPS (+38.4%), opt-melee-dps-raid-dps 735 -> 987 DPS (+34.2%), survival-raid 720 -> 998 DPS (+38.5%), survival-ml-parse 701 -> 969 DPS (+38.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 12 passes, the last 2026-10-22, 5 changes to the base rotation; third-seed check: beast-survival-open-raid 540 -> 825 DPS (+52.7%), melee-survival-raid 577 -> 836 DPS (+44.9%), opt-melee-dps-raid-dps 577 -> 794 DPS (+37.7%), survival-raid 550 -> 801 DPS (+45.5%), survival-ml-parse 550 -> 797 DPS (+44.9%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
   3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
   4. move to the top: cast Raptor Strike (+0.3%, pass 10)
+  5. move to the top: cast Explosive Trap (+0.6%, pass 12)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 13.1 |
-| 3 | cast Raptor Strike | 20.0 |
+| 2 | cast Mongoose Bite | 4.5 |
+| 3 | cast Raptor Strike | 10.0 |
 | 4 | cast Immolation Trap | 2.0 |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | cast Strider Kick | 6.5 |
 | 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 24.4 |
+| 8 | cast Wing Clip | 26.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -105,13 +107,13 @@ Damage by ability:
 
 | Ability | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 45% |
-| Raptor Strike | 17% |
-| Mongoose Bite | 15% |
-| Strider Kick | 8% |
+| Auto Attack | 52% |
+| Raptor Strike | 15% |
+| Immolation Trap | 10% |
+| Strider Kick | 7% |
+| Mongoose Bite | 6% |
 | Wing Clip | 6% |
-| Immolation Trap | 6% |
-| Dragonbreath Chili | 3% |
+| Lacerating Strikes | 3% |
 
 ## Notes
 

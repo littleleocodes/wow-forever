@@ -16,6 +16,10 @@ rotation counts as one):
 4. talent values at level 60: seconds per kill each talent of the winner saves (removal, common random numbers).
 Level 60 is where the search looks: a build best at 60 but slow early loses the 20-60 race, which decides. Record
 fightlab/open/<class>.json (resumable per rotation), reports <class>/research/leveling/open-search.md and _reference/leveling-open-search.md.
+`--tree <tree> --rotation <rot>` (2026-10-25 audit) searches one tree's builds alone (30+ points there, filed as that spec) in a rotation
+the tree shares with a hybrid: the open search keeps one winner per rotation, so when a hybrid won it (Subtlety's, Destruction's, the
+Daggers rotation's) the pure spec's page kept a hand draft that fails its signature rule. Record fightlab/open/pure/<class>-<tree>.json
+(read by open_builds.py and render_modes.leveling_numbers next to the main record); no class report is rewritten.
 The fight lab is this project's model of stated assumptions (fightlab/tables.py), not an in-game measurement.
 """
 import argparse
@@ -58,6 +62,8 @@ def _load(name, path):
 
 
 OUT = HERE / "open"
+CACHE = HERE / "open" / "cache"   # the polished families of every rotation (a --tree search's too; sibling_starts reads them all)
+PURE = None                       # --tree: the one tree searched alone
 KNOWN = ROOT / "_reference/data/raidsim/known-positives.json"
 PAGE = ROOT / "_reference" / "leveling-open-search.md"
 TODAY = datetime.date.today().isoformat()
@@ -108,7 +114,7 @@ class LabSim:
 
 
 def family_cache(cls, spec):
-    return OUT / "cache" / f"{cls}-{spec}.families.json"
+    return CACHE / (f"{cls}-{spec}-{SM.slug(PURE)}.families.json" if PURE else f"{cls}-{spec}.families.json")
 
 
 def sibling_starts(cls, spec, space, have):
@@ -116,7 +122,7 @@ def sibling_starts(cls, spec, space, have):
     sibling_starts: tested as warm starts of the polish instead, they made 4 of 8 families worse)."""
     seen = {tuple(sorted(x.items())) for x in have}
     out = []
-    for fp in sorted((OUT / "cache").glob(f"{cls}-*.families.json")):
+    for fp in sorted(CACHE.glob(f"{cls}-*.families.json")):
         if fp == family_cache(cls, spec):
             continue
         try:
@@ -164,6 +170,7 @@ def main():
     ap.add_argument("--smoke", action="store_true", help="tiny budgets, a separate record, nothing else written (a test)")
     ap.add_argument("--jobs", type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--tree", help="search this tree's builds alone (30+ points there) in the one --rotation given; record open/pure/")
     ap.add_argument("--no-known", action="store_true", help="leave out the known positives and the last run's winners: a clean test of the search")
     a = ap.parse_args()
     global OUT, SEARCH, RACE_FIGHTS, VALUE_FIGHTS, SMOKE, POLISH
@@ -178,15 +185,21 @@ def main():
         SEARCH = dict(runs=1, budget=60, screen=60, patience=1, max_rounds=1, random_init=20, pool=300, parents=6, finalists=2,
                       race_stages=((100, 2, 2), (200, 3, 1), (300, 4, 1)), cert_its=(60, 200))
     cls = a.cls
+    global PURE
+    if a.tree:
+        if not a.rotation or len(a.rotation) != 1 or a.tree not in SM.trees(cls) or a.smoke:
+            ap.error("--tree needs one --rotation, a tree of the class, and no --smoke")
+        PURE = a.tree
+        OUT = HERE / "open" / "pure"
     s = importlib.util.spec_from_file_location("ml_talents_open", ROOT / "_reference/data/raidsim/ml_talents.py")
     MLT = importlib.util.module_from_spec(s)
     s.loader.exec_module(MLT)
     OUT.mkdir(parents=True, exist_ok=True)
-    rp = OUT / f"{cls}.json"
+    rp = OUT / (f"{cls}-{SM.slug(PURE)}.json" if PURE else f"{cls}.json")
     prev = rp.with_suffix(".prev.json")
     if a.fresh and rp.exists() and not SMOKE:
         rp.replace(prev)   # warm start (2026-10-05): the last run's winners seed the new search after a beta update
-    st = json.load(open(rp, encoding="utf-8")) if rp.exists() and not a.fresh else {"class": cls, "date": TODAY, "rotations": {}}
+    st = json.load(open(rp, encoding="utf-8")) if rp.exists() and not a.fresh else {"class": cls, "date": TODAY, "rotations": {}, **({"tree": PURE} if PURE else {})}
     warm = [FT.flat_of(r["winner"]) for r in json.load(open(prev, encoding="utf-8")).get("rotations", {}).values()
             if r.get("winner")] if prev.exists() else []
 
@@ -213,6 +226,9 @@ def main():
             # 2026-10-22 (signature rule): and only builds of specs that level with it (spec_modes.leveling_rotation_ok: a hybrid with its
             # HYBRID_LEVELING_ROTATION only), each keeping the talents that grant its spec's required spells (fl_signature.leveling_space)
             FS.leveling_space(space, cls, spec)
+            if PURE:   # one tree's builds alone (--tree): filed as that spec in this rotation
+                base_ok = space.allowed
+                space.allowed = lambda flat, _b=base_ok, _r=spec: _b(flat) and FS.spec_for(cls, _r, flat) == PURE
             rstarts = [x for x in starts if space.valid(x)]
             if "winner" not in r:
                 import random
@@ -305,7 +321,7 @@ def main():
         if not SMOKE and not a.rotation:   # every winner under the class's other leveling rotations (fl_synergy.cross_rotations, 2026-10-07)
             SYL = _load("fl_synergy_fo", HERE / "fl_synergy.py")
             SYL.cross_rotations(cls, st, pool, save)
-    if not SMOKE:
+    if not SMOKE and not PURE:
         write_class(cls, st)
         write_page()
     log("== done")

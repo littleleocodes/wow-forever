@@ -4,13 +4,11 @@
 
 *Marksmanship's shots (Trueshot Aura, Barrage, Sniper Shot) with a few Beast Mastery points: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Beast-Marks — Raid](../research/raid/builds/beast-marks-open-raid.md)** (27/21/3) — [open the talent tree](https://talentsforever.com/hunter/60/552100050500022-00530503005-3-7)
-
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Marksmanship — Summon Hawk), which stays below as the alternative. A model of the beta, to check at launch.
+**[Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--7)
 
 **Other setups of this spec.** The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--7)
+- With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 714 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--7)
 
 ## How to play
 
@@ -18,9 +16,11 @@
 
 **Keep up all fight:** **Aspect of the Hawk**.
 
+**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
+
 **Then press the first one that is ready**, top to bottom:
 
-1. **Serpent Sting**: keep it on the target, when you have at least 30% mana
+1. **Serpent Sting**: keep it on the target
 2. **Arcane Shot**
 3. **Rapid Fire**
 4. **Aimed Shot**
@@ -55,20 +55,22 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 - In the last few seconds, skip the **Serpent Sting** refresh: its damage comes over 15 seconds.
 - Inside 8 yards your shots and **Auto Shot** stop: step back out at once; the pet keeps attacking meanwhile.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 852 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 715 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | - | none as a split (the search ended at 7/39/5, 30 points in Marksmanship: that tree's build, not a split) |
-| Phase 1 BiS | - | none as a split (the search ended at 7/39/5, 30 points in Marksmanship: that tree's build, not a split) |
+| Pre-BiS | 748 | [28/20/3](https://talentsforever.com/hunter/60/502300151500123-00520503005-3-7) |
+| Phase 1 BiS | 762 | [28/20/3](https://talentsforever.com/hunter/60/502301151500023-00500505005-3-7) |
 
-**The gear** (average item level: Pre-BiS 63.5; Phase 1 BiS 66.3; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.5; Phase 1 BiS 63.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -91,11 +93,6 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMlV2IG1UUx+fcmcycHNvs7N2vcfBjDCLbgQl3pk51+zLZIiI+SBQffNF2bFIzi9mETB4qPriFCqX4sX1rVajQLrZFpYKCCL6sLqQY2bTiB1pUtEIffAgISt9kZhKjom+70P/TzTnnnvz+5zAztANBBwMsmAcBfO6vX0zA/VCGCrRgBcA8kUfUZfN50vDjDyaMa7eQgp++C6Tgj7/tJA1f7+vGZZU0/OT9CePnAmm4vgbGH0Aa9nq68UOBFPz+96TyxHuQXFfx1UYWvrKWtDl7tkAyvtwgBc+vJte+WQXjeoEk0vDKZd34bqpYwqOR3o2MlyLrrTdg/tppOA7saHQSzoRvwtvhObi6eBFOr0EXoA+vRPtobO0jNusLzxHC3+35ni9c39stfNfxu0zpM/yJHdNomtBUScH+BhSRVFIcV8Q0M4yeOwPFPGmUc7ySH/O8qZk5knGzyVeBPxW2nt3fbHUsT3h7HFc44t691sF6uPxMrWo121ZYrdaq1tPPWZ16zWo3O2Enai5bcS1sH6xb83GtZjUaTjuMqs4o6WTJ0lLcXN5lluhuXqSd36pECn594xHOdIUm7QlUOXtYMjXKkeyKOAVN0orJ9kr8hX9xiQXHu29LuW6naZujzHPrjGEu4xAlN53ML3P8yPZP5k6asacwNyJI9yZKfjzaGbfMO/6vJKH8Ypp/9l+U/pZSRrSfP0mz9jTKHJcStM0NSBCJuTEZ9iyqPH8BhsyjOfo0Z8+gyvECZKjjhG4XhrtPm+zJ/G5uAF/a9pFnz8ONk8AfMyv0IH+ApuzJ8XxHrhK3/3CVI5nATZfxd09ZOO25vlIx5OusCwPmHZGlVPPl4zBDUzSJqo4G7JJSDQIBxfNyPjlLK4fKt752KtGl4K5Dqb4KvAEzFCuwu0y6qdQpj07bqnve2fL/Wfi81+vtOHCxvDgMlA/AMYBTEDUHL156/MtgIY1K/WAxqez1fg0ezQ5XA1vGD+f23TZ+IWdfl4egAk9AHVpwGA7zPwcADPhUIA==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMlU9oI3UUx+f9ZjLzy3NN01+SZhz8MwaR7MCE38w6q93LpIuIeJAoHrzo7rjJmim2CZkcVhDs0i4si3/KnrYirLCUbYtCDwoieKkUUow0bf2HFgSt0IOH3KQ3mZnEqOitBb+nN++9+c3n+x4zg6copEEFHYrAgeX/vCIcnoAyVKAJcwDazSSlaVF7AxX6+Sdj6sE9KNGDdwEl2psHVOgXy6DuyGHw8Zj6SwoVujsP6u9h6et5UH9KoUT3os61BQhvV+jOMH/3WnjO7jKgSN+eQYmuLoaN3y+CephCARW6dBPUHzOFEl3w0x1ffcvX774PxYPbcAPIgn8L7ngfwIfeCuxPrcPtZegA9OAd/zyOvH1GJhxum5w7Z844tsMtx7a5Y5lOh0g9Qn8m1xXMItXk0NEmFCjKKJkWDzA3yK7cgUISFUyYdskJWFJTtASKdLvBFoG97DVfu9BotnWb22dNi5v8sXP6pbo3+2qtqjdaulet1qr6K6/r7XpNbzXaXttvzOpBzWtdquvFoFbTZ2bMludXzWHRjIul6aAxe1or4SOsgPf+ICNK9LujZxlJSzhujFGZkWcETcEEihYPItCwLGnknMDe/AcXnzTtx4+V6wHMGoyKLLFBCE3EHLxkRZP5Nc+unvxkHsKckaGJIUG0N15yguHOmK49+F8tIeVeln35b5TOsVL6eIG9hBNGloqMTodo25sQIiKxAlSNCSqz5BoMmIdzdDBv5KjM6BrEqKNC2kgNdh8dcjb2u70JbPrERx6/D0e3gD2vVfAp9iRmjPHRfIeuQrd/c5VAEcGKlvFXT3E6OnNjrqKKh6QDfWJfFYVIxfINyGEGx6mcpiqcFiL1XQ6FVTEZxsLc5fJ97y2F2nIfvhzpW9fuE1XSXaNDhP+V2uVhdKJ69KNjf87kV91u99TF9fLUIFG+CNcBlsBv9K9tvfCNOxllhZ47FXZ2u7+5z8XBvmuI9NP8+ftHH+T49/I0VOBFqEMTrsAV9scAQ7RSLw==).
 
-## Other builds of this spec
-
-- [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 806 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--7)
-- [Beast-Marks (optimized, with a pet)](../research/raid/builds/opt-mm-raid-raid-dps.md) (22/29/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--7)
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

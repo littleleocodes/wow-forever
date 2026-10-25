@@ -4,23 +4,23 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**✅ Recommended** for raid (the best mage spec here, or within 3% of it).
+**[Frostfire — Raid](../research/raid/builds/frostfire-open-raid.md)** (0/29/22) — [open the talent tree](https://talentsforever.com/mage/60/-2255000013012503-2135000301203002-7)
 
-**[Frostfire — Fingers of Frost / Ice Lance](../research/raid/builds/frostfire-fingers-of-frost-raid.md)** (0/29/19) — [open the talent tree](https://talentsforever.com/mage/60/-0355100013013303-0035000301003002-7)
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Frostfire — Fingers of Frost / Ice Lance), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Press the first one that is ready**, top to bottom:
 
-1. **Ice Lance** when Fingers of Frost is active
-2. **Pyroblast** when Heating Up has 3 stacks
-3. **Fire Blast**
-4. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 15 seconds left
-5. **Frostfire Bolt** (rank 2) when your mana is below 30%
-6. **Frostfire Bolt** when you have at least 10% mana
-7. **Fireball** (rank 2)
+1. **Pyroblast** when Heating Up has 3 stacks
+2. **Fire Blast**
+3. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 7.5 seconds left
+4. **Frostfire Bolt** when your mana is below 30%
+5. **Frostfire Bolt** when you have at least 10% mana
 
-**Fireball** is your filler: cast it whenever nothing above is ready.
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Evocation**: when you run low on mana (about 1 time a fight)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -50,20 +50,22 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 - Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a **Fireball** is a weak stopgap only for when even that is out of reach.
 - Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 675 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 802 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 619 | this build |
-| Phase 1 BiS | 689 | [0/29/22](https://talentsforever.com/mage/60/-0355000013013303-0035000301003002-7) (ties this build) |
+| Pre-BiS | 789 | [0/29/22](https://talentsforever.com/mage/60/-2355000013011503-2035020301013002-7) |
+| Phase 1 BiS | 793 | [0/29/22](https://talentsforever.com/mage/60/-2355000013011503-1135001321003002-7) |
 
-**The gear** (average item level: Pre-BiS 61.8; Phase 1 BiS 67.4; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.7; Phase 1 BiS 63.5; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -89,9 +91,10 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 
 ## Other builds of this spec
 
-- [Frostfire — Frostfire Bolt / Heating Up](../research/raid/builds/frostfire-raid.md) (4/31/13, 630 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133031-00350003-7)
-- [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (4/30/13, 597 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-00452131130103031-00350003-7)
+- [Frostfire — Fingers of Frost / Ice Lance](../research/raid/builds/frostfire-fingers-of-frost-raid.md) (0/29/22, 764 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/-1355100013013303-2135000301113002-7)
+- [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (6/32/13, 760 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0042-20552030130115031-20350003-7)
+- [Frostfire — Frostfire Bolt](../research/raid/builds/frostfire-raid.md) (5/33/13, 743 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0041-23251030130135031-20350003-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

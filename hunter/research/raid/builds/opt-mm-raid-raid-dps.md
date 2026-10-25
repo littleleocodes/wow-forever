@@ -1,17 +1,17 @@
-# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps) — 31/20/0
+# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps) — 31/16/4
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/20/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 31/16/4 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +67.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +56.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -20,18 +20,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
+| **Endurance Training** | 4/5 | changed | Increases the Health and Armor of your pets by 12%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 | **Frenzy** | 5/5 | unchanged | Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 | **Bestial Wrath** | 1/1 | unchanged | Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed. |
 
-### Marksmanship (20)
+### Marksmanship (16)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -39,37 +38,41 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
-| **Mortal Shots** | 4/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 24%. |
 
-### Survival (0)
+### Survival (4)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Tracking** | 4/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 4%. |
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — Removing it costs 17.9 points of score in this model.
-2. **Bestial Discipline** — Removing it costs 9.5 points of score in this model.
-3. **Efficiency** — Removing it costs 7.8 points of score in this model.
-4. **Deadly Aspects** — Removing it costs 7.5 points of score in this model.
-5. **Unleashed Fury** — Removing it costs 7.4 points of score in this model.
-6. **Careful Aim** — Removing it costs 6.2 points of score in this model.
-7. **Frenzy** — Removing it costs 6.1 points of score in this model.
-8. **Lethal Attacks** — Removing it costs 5.8 points of score in this model.
+1. **Frenzy** — Removing it costs 10.0 points of score in this model.
+2. **Careful Aim** — Removing it costs 7.4 points of score in this model.
+3. **Unleashed Fury** — Removing it costs 6.7 points of score in this model.
+4. **Efficiency** — Removing it costs 6.5 points of score in this model.
+5. **Lethal Attacks** — Removing it costs 6.4 points of score in this model.
+6. **Deadly Aspects** — Removing it costs 5.9 points of score in this model.
+7. **Bestial Discipline** — Removing it costs 5.8 points of score in this model.
+8. **Ferocity** — Removing it costs 5.4 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**3 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 475 | +0.0% | 808 | -8.7% | 68 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
-| 3 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
-| 4 | *Marksmanship* | community simulator | - | 457 | -3.9% | 850 | -3.9% | 89 s |
-| 5 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 454 | -4.4% | 885 | +0.0% | 98 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 449 | -5.5% | 777 | -12.2% | 75 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 434 | -8.7% | 795 | -10.1% | 83 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 399 | -16.1% | 684 | -22.7% | 76 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 417 | +0.0% | 731 | -6.4% | 36 s |
+| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 395 | -5.2% | 715 | -8.5% | 27 s |
+| 3 | *BM Weave* | community simulator | - | 395 | -5.2% | 744 | -4.7% | 41 s |
+| 4 | *BM* | community simulator | - | 395 | -5.2% | 744 | -4.7% | 41 s |
+| 5 | [`marksmanship-open-raid`](marksmanship-open-raid.md) | ours: derived (open search) | 7/39/5 | 389 | -6.7% | 781 | +0.0% | 49 s |
+| 6 | *MM* | community simulator | - | 376 | -9.8% | 707 | -9.5% | 43 s |
+| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 376 | -9.8% | 714 | -8.6% | 21 s |
+| 8 | *SV* | community simulator | - | 340 | -18.3% | 648 | -17.0% | 34 s |
+| 9 | *SV Weave* | community simulator | - | 338 | -18.9% | 647 | -17.2% | 41 s |
+| 10 | *MM Weave* | community simulator | - | 330 | -20.8% | 629 | -19.5% | 49 s |
+| 11 | *SV Melee* | community simulator | - | 322 | -22.7% | 640 | -18.1% | 46 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +89,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-16, 10 changes to the base rotation; third-seed check: marksmanship-with-a-pet-open-raid 825 -> 886 DPS (+7.3%), sim preset: Marksmanship 789 -> 850 DPS (+7.6%), bm-mm-raid 791 -> 812 DPS (+2.6%), bm-mm-full-buffs-raid 794 -> 808 DPS (+1.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-10-22, 13 changes to the base rotation; third-seed check: marksmanship-with-a-pet-open-raid 729 -> 780 DPS (+7.0%), sim preset: Marksmanship 708 -> 757 DPS (+6.9%), bm-mm-raid 699 -> 714 DPS (+2.1%), bm-mm-full-buffs-raid 705 -> 715 DPS (+1.5%), opt-mm-raid-raid-dps 725 -> 735 DPS (+1.4%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -97,34 +100,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
   8. insert before the filler: cast Intimidation (+0.2%, pass 6)
   9. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30% and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 8)
   10. move to the top: cast Arcane Shot (+3.0%, pass 9)
+  11. threshold 1 -> 3: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.7%, pass 12)
+  12. move to the top: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.5%, pass 12)
+  13. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 12)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if auraIsInactive and time left in the fight ≥ 15s: cast Summon Hawk | 8.3 |
-| 2 | cast Arcane Shot | 0.7 |
-| 3 | use every other cooldown when ready | as ready |
-| 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.4 |
-| 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 |
-| 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
+| 1 | cast Arcane Shot | 8.8 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.7 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.8 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 42% |
-| Pet: Auto Attack | 15% |
-| Serpent Sting | 14% |
-| Summon Hawk | 13% |
-| Aimed Shot | 8% |
-| Pet: Claw | 6% |
-| Arcane Shot | 2% |
+| Auto Shot | 33% |
+| Pet: Auto Attack | 30% |
+| Arcane Shot | 16% |
+| Serpent Sting | 8% |
+| Aimed Shot | 6% |
+| Pet: Bite | 2% |
+| Pet: Claw | 2% |
 | Multi-Shot | 1% |
-| Pet: Bite | 0% |
+| spell 1295633 | 1% |
 
 ## Notes
 

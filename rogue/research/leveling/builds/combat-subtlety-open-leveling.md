@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.6% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
+The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-24: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.6% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -86,7 +86,7 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 
 ## Core talents (priority order)
 
-1. **Setup** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Setup** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Flawless Execution** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Remorseless Attacks** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Improved Eviscerate** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
@@ -101,7 +101,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.83; subtlety-leveling 25.65. The search simulated 80,476 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.83; subtlety-leveling 25.64. The search simulated 56,780 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

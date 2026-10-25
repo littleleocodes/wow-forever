@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best druid spec here, or within 3% of it).
 
-**[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/33/9) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332021031212051-144-7)
+**[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/33/9) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032021031212051-144-7)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Feral — Cat DPS), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -16,10 +16,11 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Faerie Fire**: keep it on the target
-2. **Rip**: keep it on the target, when you have 4 or more combo points
-3. **Shifting Power**
-4. **Shred**
+1. **Rake**: keep it on the target
+2. **Faerie Fire**: keep it on the target
+3. **Rip**: keep it on the target, when you have 4 or more combo points
+4. **Shifting Power**
+5. **Shred**
 
 **Shred** is your filler: cast it whenever nothing above is ready.
 
@@ -56,20 +57,22 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 - On an add that dies within a few seconds, the same: **Ferocious Bite** rather than **Rip**.
 - If you pull the boss off the tank, **Cower** (20 energy, 10-second cooldown) lowers your threat by a large amount.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 694 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 766 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 692 | [9/34/8](https://talentsforever.com/druid/60/050022-55000032021032212051-053-7) |
-| Phase 1 BiS | 714 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-7) (ties this build) |
+| Pre-BiS | 760 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-7) |
+| Phase 1 BiS | 778 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-7) |
 
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 63.9; Phase 1 BiS 63.5; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -96,7 +99,7 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 **[Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md)** (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-7)
 
-Tank value 1.000 (threat and damage taken under a boss, relative to our reference tank build): 1221 threat and 636 damage taken per second in a full raid.
+Tank value 1.000 (threat and damage taken under a boss, relative to our reference tank build): 1224 threat and 636 damage taken per second in a full raid.
 
 **The gear** (average item level: Pre-BiS 61.0; Phase 1 BiS 61.0; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -123,12 +126,12 @@ Tank value 1.000 (threat and damage taken under a boss, relative to our referenc
 
 ## Other builds of this spec
 
-- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 688 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-7)
-- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 590 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-7)
-- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 575 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-7)
+- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 756 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-7)
+- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 655 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-7)
+- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 638 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-7)
 - [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-7)
 - [Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-504-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at b7083fa (client 1.60.1.70425, its spell data of 14-15 Oct)). Simulations, not in-game measurements. Do not hand-edit.*
 

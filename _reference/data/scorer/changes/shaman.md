@@ -107,17 +107,15 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 - **Drops:** Ancestral Knowledge 5, Elemental Weapons 3, Restorative Totems 5, Totemic Focus 5
 - **Adds:** Call of Flame 1, Concussion 5, Earth's Grasp 2, Elemental Focus 1, Guardian Totems 2, Improved Ghost Wolf 2, Improved Lightning Shield 3, Maelstrom Weapon 1 (new), Mental Dexterity 3 (new), Mental Quickness 2 (new), Mindfulness 3 (new), Rage of the Farseer 1 (new), Reverberation 5, Shamanistic Focus 1 (new)
 
-### `opt-elemental-dps-raid-dps` (31/7/13) vs Classic `elemental-raid-dps` (31/0/20)
+### `opt-elemental-dps-raid-dps` (31/11/9) vs Classic `elemental-raid-dps` (31/0/20)
 
-- **Drops:** Elemental Mastery 1, Improved Reincarnation 1, Tidal Mastery 5
-- **Adds:** Ancestral Knowledge 2, Elemental Alacrity 3 (new), Elemental Reach 1 (new), Lava Burst 1 (new), Lightning Overload 3 (new), Mindfulness 3 (new), Thundering Strikes 5
-- **Fewer ranks:** Call of Thunder 5->1
+- **Drops:** Improved Reincarnation 1, Tidal Mastery 5, Totemic Focus 5
+- **Adds:** Ancestral Knowledge 5, Elemental Alacrity 3 (new), Elemental Reach 1 (new), Lava Burst 1 (new), Lightning Overload 3 (new), Mindfulness 1 (new), Natural Grace 3 (new), Shamanistic Focus 1 (new), Thundering Strikes 5
 
-### `opt-enhancement-dps-raid-dps` (11/31/9) vs Classic `enhancement-raid-support` (0/31/20)
+### `opt-enhancement-dps-raid-dps` (14/31/6) vs Classic `enhancement-raid-support` (0/31/20)
 
-- **Drops:** Anticipation 2, Restorative Totems 5
-- **Adds:** Call of Flame 3, Convection 5, Elemental Devastation 2, Elemental Focus 1, Maelstrom Weapon 5 (new), Mental Dexterity 3 (new), Mental Quickness 2 (new), Rage of the Farseer 1 (new), Shamanistic Focus 1 (new)
-- **Fewer ranks:** Tidal Focus 5->4
+- **Drops:** Anticipation 2, Elemental Weapons 3, Restorative Totems 5, Totemic Focus 5
+- **Adds:** Call of Flame 3, Convection 5, Earth's Grasp 1, Elemental Alacrity 2 (new), Elemental Devastation 3, Elemental Focus 1, Maelstrom Weapon 5 (new), Mental Dexterity 3 (new), Mental Quickness 2 (new), Mindfulness 1 (new), Rage of the Farseer 1 (new), Shamanistic Focus 1 (new), Spirit Weapons 1 (new), Toughness 1
 
 ### `opt-resto-heal-raid-heal` (0/10/41) vs Classic `resto-raid-healer` (0/5/46)
 

@@ -521,8 +521,10 @@ def table(rs_, tier, src):
     o = ["| # | Spec | Full raid DPS | Behind the best | Talents |", "|---|---|---|---|---|"]
     for i, r in enumerate(rows, 1):
         d = winner(r, f"{tier}-raid")["dps"]
-        page = paths.rel(src, ROOT / r["class"] / "raid" / f"{SM.spec_slug(r['class'], r['spec'])}.md")
-        o.append(f"| {i} | [{SM.spec_name(r['class'], r['spec'])} {r['class'].title()}]({page}) | {d:.0f} | {'best' if i == 1 else f'{d / best - 1:+.0%}'} | "
+        pf = ROOT / r["class"] / "raid" / f"{SM.spec_slug(r['class'], r['spec'])}.md"
+        nm = f"{SM.spec_name(r['class'], r['spec'])} {r['class'].title()}"
+        nm = f"[{nm}]({paths.rel(src, pf)})" if pf.exists() else nm   # 2026-10-25: a spec whose raid page is gone (Beast-Survival) has no link
+        o.append(f"| {i} | {nm} | {d:.0f} | {'best' if i == 1 else f'{d / best - 1:+.0%}'} | "
                  f"{tf(r, f'{tier}-raid')} |")
     o += ["", "Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on)."]
     if gone:

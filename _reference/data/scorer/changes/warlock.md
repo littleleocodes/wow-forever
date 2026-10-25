@@ -114,8 +114,8 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 
 ### `opt-affliction-raid-raid-dps` (30/0/21) vs Classic `sm-ruin-raid` (30/0/21)
 
-- **Drops:** Destructive Reach 2, Grim Reach 2, Nightfall 2, Shadowburn 1, Siphon Life 1
-- **Adds:** Agonizing Flames 3 (new), Improved Bane of Agony 2 (new), Malediction 2, Malevolence 5 (new), Pandemic 3 (new)
+- **Drops:** Destructive Reach 2, Grim Reach 2, Shadowburn 1, Siphon Life 1
+- **Adds:** Agonizing Flames 3 (new), Improved Bane of Agony 2 (new), Malevolence 5 (new), Pandemic 3 (new)
 
 ### `opt-fire-destro-raid-raid-dps` (10/11/30) vs Classic `ds-ruin-raid` (7/21/23)
 
@@ -123,8 +123,8 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 - **Adds:** Agonizing Flames 3 (new), Conflagrate 1, Demonic Aegis 2 (new), Fel Vitality 3 (new), Fire and Brimstone 2 (new), Improved Corruption 3, Shadow and Flame 5 (new)
 - **Fewer ranks:** Cataclysm 4->3
 
-### `opt-sb-raid-raid-dps` (22/11/18) vs Classic `ds-ruin-raid` (7/21/23)
+### `opt-sb-raid-raid-dps` (10/11/30) vs Classic `ds-ruin-raid` (7/21/23)
 
-- **Drops:** Cataclysm 4, Destructive Reach 2, Fel Domination 1, Master Summoner 2, Shadowburn 1
-- **Adds:** Agonizing Flames 3 (new), Demonic Aegis 2 (new), Fel Vitality 3 (new), Improved Bane of Agony 2 (new), Improved Corruption 5, Malevolence 5 (new), Pandemic 3 (new)
+- **Drops:** Cataclysm 4, Destructive Reach 2, Fel Domination 1, Master Summoner 2
+- **Adds:** Aftermath 2, Agonizing Flames 3 (new), Conflagrate 1, Demonic Aegis 2 (new), Fel Vitality 3 (new), Fire and Brimstone 3 (new), Improved Corruption 3, Shadow and Flame 5 (new)
 

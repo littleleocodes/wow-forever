@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +67.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +74.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -27,8 +27,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
-| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
 | **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
@@ -44,14 +44,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — Removing it costs 25.5 points of score in this model.
-2. **Mortal Shots** — Removing it costs 8.7 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 8.0 points of score in this model.
-4. **Efficiency** — Removing it costs 7.4 points of score in this model.
-5. **Careful Aim** — Removing it costs 6.8 points of score in this model.
-6. **Deadly Aspects** — Removing it costs 6.6 points of score in this model.
-7. **Ranged Weapon Specialization** — Removing it costs 5.8 points of score in this model.
-8. **Improved Stings** — Removing it costs 5.3 points of score in this model.
+1. **Lone Wolf** — Removing it costs 27.0 points of score in this model.
+2. **Careful Aim** — Removing it costs 10.1 points of score in this model.
+3. **Lethal Attacks** — Removing it costs 8.3 points of score in this model.
+4. **Improved Tracking** — Removing it costs 8.0 points of score in this model.
+5. **Ranged Weapon Specialization** — Removing it costs 7.9 points of score in this model.
+6. **Mortal Shots** — Removing it costs 7.5 points of score in this model.
+7. **Efficiency** — Removing it costs 7.4 points of score in this model.
+8. **Deadly Aspects** — Removing it costs 6.4 points of score in this model.
 
 ## Rotation
 

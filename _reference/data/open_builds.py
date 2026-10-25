@@ -432,6 +432,10 @@ def leveling_candidates(cls, st, data, RM):
             if wv:
                 pages[b["id"]] = wv
         allr = {**rivals, **pages}
+        # 2026-10-25 audit (as raid's sig_ok): a build that fails its spec's signature check (signature-audit.json) is no bar; it had kept
+        # Subtlety's 5/16/30 draft without Hemorrhage on its page. The notes still list it.
+        sigfail = {k for k in allr if k in byid and not ((RM.lev_sig_check(cls, byid[k]) or {}).get("ok", True))}
+        allr = {k: v for k, v in allr.items() if k not in sigfail}
         best = min(allr, key=allr.get) if allr else None   # the fastest: the fewest seconds per kill
         why = None
         if best is not None and allr[best] / wt - 1 < GAIN_NEW:
@@ -540,15 +544,31 @@ def main():
         bp = paths.builds_json("forever", cls)
         data = json.load(open(bp, encoding="utf-8"))
         rc = raid_candidates(cls, fam, data, RM) if use_fam else []
-        lc = leveling_candidates(cls, lvl, data, RM) if use_lvl else []
+        lc = [(OPEN / f"{cls}.json", lvl, x) for x in leveling_candidates(cls, lvl, data, RM)] if use_lvl else []
+        if a.only != "raid":   # the one-tree searches (fl_open_search.py --tree, 2026-10-25): a pure spec whose rotation a hybrid won
+            for pf in sorted((OPEN / "pure").glob(f"{cls}-*.json")):
+                pr = load_record(pf)
+                if pr and (complete(pr, "rotations") or (a.partial and pr.get("rotations"))):
+                    lc += [(pf, pr, x) for x in leveling_candidates(cls, pr, data, RM)]
+        # one build per spec across the records: the fastest record's (the main search's winner of the spec, or the one-tree search's)
+        for i, (pf, pr, (rot, spec, wt, b, why)) in enumerate(lc):
+            if b is None:
+                continue
+            faster = [(pf2, r2) for j, (pf2, pr2, (r2, s2, t2, b2, w2)) in enumerate(lc)
+                      if j != i and b2 is not None and s2 == spec and (t2 < wt or (t2 == wt and j < i))]
+            if faster:
+                pf2, r2 = faster[0]
+                lc[i] = (pf, pr, (rot, spec, wt, None, f"the {r2} rotation's record ({pf2.name}) has a faster {SM.spec_name(cls, spec)} build: "
+                                                      "that one is written"))
+        use_lvl = use_lvl or bool(lc)
         print(f"== {cls}")
         for entry, spec, wd, b, why in rc:
             print(f"  raid {entry}: {SM.spec_name(cls, spec)} {wd:.1f} DPS -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
-        for rot, spec, wt, b, why in lc:
-            print(f"  leveling {rot}: {SM.spec_name(cls, spec)} {wt:.2f} s per kill -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
+        for pf, _, (rot, spec, wt, b, why) in lc:
+            print(f"  leveling {rot}" + (f" ({pf.stem})" if pf.parent.name == "pure" else "") + f": {SM.spec_name(cls, spec)} {wt:.2f} s per kill -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
         if not a.write:
             continue
-        new = [b for *_, b, _ in rc if b] + [b for *_, b, _ in lc if b]
+        new = [b for *_, b, _ in rc if b] + [x[3] for *_, x in lc if x[3]]
         kinds = ("-open-raid",) if a.only == "raid" else ("-open-leveling",) if a.only == "leveling" else ("-open-raid", "-open-leveling")
         old = [b["id"] for b in data["builds"] if b["id"].endswith(kinds)]   # rewritten from the records (the other kind stays with --only)
         data = BIO.update(cls, remove=old, add=new)   # locked, on the file as it is now (2026-10-24 audit)
@@ -572,9 +592,12 @@ def main():
                     if not a.no_tidy:
                         ML.tidy(cls, entry, b["id"])
         if use_lvl:
-            for rot, spec, wt, b, why in lc:
-                lvl["rotations"][rot]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
-            save_record(OPEN / f"{cls}.json", lvl)
+            recs = {}
+            for pf, pr, (rot, spec, wt, b, why) in lc:
+                pr["rotations"][rot]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
+                recs[pf] = pr
+            for pf, pr in recs.items():
+                save_record(pf, pr)
         if a.race or a.regen:
             import subprocess
             steps = [[sys.executable, str(HERE / "validate_builds.py"), cls]]

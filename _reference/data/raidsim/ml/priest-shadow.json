@@ -3341,5 +3341,125 @@
   "date": "2026-10-15",
   "setting": "raid",
   "why": "confirms opt-shadow-dps-raid-dps (-0.01% in a full raid)"
+ },
+ "signature_check": {
+  "spec": "Shadow",
+  "ok": true,
+  "core_share": 0.8999,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "shadow-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 798.3,
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Mind Flay": 0.4091,
+   "Shadow Word: Pain": 0.1978,
+   "Mind Blast": 0.1808,
+   "Devouring Plague": 0.1122,
+   "Shadow Word: Death": 0.0934,
+   "Demonic Rune": 0.0067
+  },
+  "casts": {
+   "Mind Flay": 38.89,
+   "Mind Blast": 20.47,
+   "Shadow Word: Pain": 7.79,
+   "Shadow Word: Death": 10.0,
+   "Devouring Plague": 7.02,
+   "Shadowform": 1.0,
+   "Berserking": 1.0,
+   "Inner Focus": 1.0
+  },
+  "allocation": {
+   "Discipline": [
+    [
+     "Twin Disciplines",
+     5
+    ],
+    [
+     "Martyrdom",
+     1
+    ],
+    [
+     "Mental Strength",
+     3
+    ],
+    [
+     "Silent Resolve",
+     3
+    ],
+    [
+     "Improved Power Word: Shield",
+     2
+    ],
+    [
+     "Inner Focus",
+     1
+    ],
+    [
+     "Meditation",
+     3
+    ]
+   ],
+   "Holy": [],
+   "Shadow": [
+    [
+     "Shadow Focus",
+     5
+    ],
+    [
+     "Improved Mind Blast",
+     5
+    ],
+    [
+     "Improved Shadow Word: Pain",
+     2
+    ],
+    [
+     "Improved Mind Flay",
+     2
+    ],
+    [
+     "Mind Flay",
+     1
+    ],
+    [
+     "Dark Inspiration",
+     3
+    ],
+    [
+     "Shadow Weaving",
+     3
+    ],
+    [
+     "Vampiric Embrace",
+     1
+    ],
+    [
+     "Devouring Contagion",
+     2
+    ],
+    [
+     "Silence",
+     1
+    ],
+    [
+     "Darkness",
+     5
+    ],
+    [
+     "Early Demise",
+     2
+    ],
+    [
+     "Shadowform",
+     1
+    ]
+   ]
+  }
  }
 }

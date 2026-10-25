@@ -70,16 +70,15 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 422 | +0.0% | 667 | -0.8% | 0 s |
-| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 410 | -2.7% | 672 | +0.0% | 0 s |
-| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 410 | -2.8% | 653 | -2.9% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 21/28/2 | 396 | -6.2% | 669 | -0.5% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 629 | -6.4% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 611 | -9.1% | 0 s |
+| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 373 | +0.0% | 657 | -0.8% | 0 s |
+| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 371 | -0.6% | 643 | -2.9% | 0 s |
+| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 362 | -3.0% | 662 | +0.0% | 0 s |
+| 4 | *Asn Muti* | community simulator | - | 345 | -7.5% | 648 | -2.0% | 0 s |
+| 5 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 21/28/2 | 344 | -8.0% | 657 | -0.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,32 +94,35 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
   9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
   10. drop: if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+2.8%, pass 8)
   11. spell probe: insert at the top: if auraIsInactive: cast Adrenaline Rush (+1.8%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-14, 5 changes to the base rotation; third-seed check: ):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-24, 7 changes to the base rotation; third-seed check: assassination-ml-raid 285 -> 662 DPS (+132.1%), sim preset: Mutilate 621 -> 624 DPS (+0.5%), assassination-mutilate-raid 280 -> 643 DPS (+129.8%), assassination-seal-fate-raid 285 -> 657 DPS (+130.3%), daggers-split-open-raid 635 -> 657 DPS (+3.3%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
   3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)
   4. move down below 'cast Mutilate': cast Backstab (+0.2%, pass 9)
   5. spell probe: insert in the middle: if auraIsInactive: cast Adrenaline Rush (+1.4%, pass 11)
+  6. insert at the top: if (energy ≤ 15 or Eureka! is known and energy ≤ 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+1.3%, pass 12)
+  7. insert at the top: if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote (+0.2%, pass 12)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 |
-| 2 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.9 |
-| 3 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
+| 1 | cast Backstab (rank 8) | 9.8 |
+| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
+| 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.9 |
+| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
+| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 2.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Backstab (rank 8), cast Eviscerate (rank 8) (its condition never held in these fights); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 
 | Ability | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) |
 |---|---|
-| Auto Attack | 40% |
-| Backstab | 31% |
-| Eviscerate | 12% |
-| Deadly Poison | 8% |
-| Dense Sharpening Stone | 5% |
-| Dragonbreath Chili | 2% |
+| Auto Attack | 42% |
+| Backstab | 30% |
+| Eviscerate | 11% |
+| spell 25349 | 9% |
+| spell 11337 | 6% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes

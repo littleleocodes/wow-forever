@@ -60,136 +60,6 @@
      "and": {
       "vals": [
        {
-        "or": {
-         "vals": [
-          {
-           "and": {
-            "vals": [
-             {
-              "cmp": {
-               "op": "OpGe",
-               "lhs": {
-                "currentComboPoints": {}
-               },
-               "rhs": {
-                "const": {
-                 "val": "1"
-                }
-               }
-              }
-             },
-             {
-              "not": {
-               "val": {
-                "auraIsActive": {
-                 "auraId": {
-                  "spellId": 6774,
-                  "rank": 2
-                 }
-                }
-               }
-              }
-             },
-             {
-              "cmp": {
-               "op": "OpGe",
-               "lhs": {
-                "remainingTime": {}
-               },
-               "rhs": {
-                "const": {
-                 "val": "6"
-                }
-               }
-              }
-             }
-            ]
-           }
-          },
-          {
-           "and": {
-            "vals": [
-             {
-              "cmp": {
-               "op": "OpGe",
-               "lhs": {
-                "currentComboPoints": {}
-               },
-               "rhs": {
-                "const": {
-                 "val": "3.75"
-                }
-               }
-              }
-             },
-             {
-              "cmp": {
-               "op": "OpLt",
-               "lhs": {
-                "auraRemainingTime": {
-                 "auraId": {
-                  "spellId": 6774,
-                  "rank": 2
-                 }
-                }
-               },
-               "rhs": {
-                "const": {
-                 "val": "3"
-                }
-               }
-              }
-             },
-             {
-              "cmp": {
-               "op": "OpGt",
-               "lhs": {
-                "remainingTime": {}
-               },
-               "rhs": {
-                "const": {
-                 "val": "9"
-                }
-               }
-              }
-             }
-            ]
-           }
-          }
-         ]
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "20s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 6774,
-      "rank": 2
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
         "cmp": {
          "op": "OpGe",
          "lhs": {
@@ -197,7 +67,7 @@
          },
          "rhs": {
           "const": {
-           "val": "60"
+           "val": "45"
           }
          }
         }
@@ -245,7 +115,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -325,6 +195,107 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentEnergy": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "15"
+             }
+            }
+           }
+          },
+          {
+           "and": {
+            "vals": [
+             {
+              "spellIsKnown": {
+               "spellId": {
+                "spellId": 1259812
+               }
+              }
+             },
+             {
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "const": {
+                 "val": "25"
+                }
+               }
+              }
+             },
+             {
+              "auraIsActive": {
+               "auraId": {
+                "spellId": 1259812
+               },
+               "includeReactionTime": true
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "1"
+             }
+            }
+           }
+          },
+          {
+           "variableRef": {
+            "name": "Expose - Low Duration"
+           }
+          },
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 1259812
+            },
+            "includeReactionTime": true
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 7676
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -412,26 +383,6 @@
     "castSpell": {
      "spellId": {
       "spellId": 14177
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 14278
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 14278
      }
     }
    },

@@ -70,22 +70,21 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `fire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 7** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Fire DPS* | community simulator | - | 518 | +0.0% | 661 | -3.4% | 1 s |
-| 2 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 12/34/5 | 515 | -0.5% | 685 | +0.0% | 3 s |
-| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 14/32/5 | 515 | -0.5% | 685 | +0.0% | 3 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 472 | -8.8% | 638 | -6.8% | 6 s |
-| 5 | *Arcane DPS* | community simulator | - | 415 | -19.8% | 506 | -26.1% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 292 | -43.7% | 373 | -45.6% | 2 s |
-| 7 | *Frost 14/0/37* | community simulator | - | 274 | -47.1% | 357 | -47.9% | 1 s |
-| 8 | *Frost DPS* | community simulator | - | 271 | -47.7% | 356 | -48.0% | 0 s |
+| 1 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 648 | +0.0% | 815 | -4.1% | 17 s |
+| 2 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 646 | -0.4% | 850 | +0.0% | 29 s |
+| 3 | *Fire* | community simulator | - | 642 | -0.9% | 848 | -0.2% | 29 s |
+| 4 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 14/34/3 | 623 | -3.9% | 830 | -2.3% | 33 s |
+| 5 | *FFB* | community simulator | - | 393 | -39.3% | 546 | -35.8% | 59 s |
+| 6 | *Arcane Fire* | community simulator | - | 379 | -41.6% | 619 | -27.1% | 12 s |
+| 7 | *Arcane Frost* | community simulator | - | 340 | -47.5% | 436 | -48.7% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-02, 7 changes to the base rotation; third-seed check: ml: Fire 568 -> 607 DPS (+6.9%), fire-raid 563 -> 598 DPS (+6.3%), sim preset: Fire DPS 537 -> 578 DPS (+7.6%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-23, 12 changes to the base rotation; third-seed check: open winner 594 -> 652 DPS (+9.8%), opt-fire-raid-raid-dps 597 -> 648 DPS (+8.4%), sim preset: Fire 584 -> 643 DPS (+10.1%), fire-raid 566 -> 623 DPS (+10.1%)):
   1. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+3.1%, pass 1)
   2. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.1%, pass 1)
   3. insert before the filler: if Missile Barrage is up: cast Arcane Missiles (+0.2%, pass 1)
@@ -93,7 +92,12 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
   5. insert before the filler: cast Fireball (+0.3%, pass 4)
   6. threshold 5s -> 6s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.3%, pass 4)
   7. only with 3s or more of the fight left: cast Fireball (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 6 passes, the last 2026-10-09, 14 changes to the base rotation; third-seed check: fire-raid 680 -> 688 DPS (+1.2%), sim preset: Fire DPS 662 -> 665 DPS (+0.4%), opt-fire-raid-raid-dps 680 -> 688 DPS (+1.2%)):
+  8. always rank 10 instead of rank 11: if mana % ≥ 10%: cast Fireball (rank 11) (+4.2%, pass 5)
+  9. insert before the filler: cast Robe of the Archmage (+1.9%, pass 5)
+  10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
+  11. insert at the end: cast Frost Blast (+0.5%, pass 5)
+  12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-23, 20 changes to the base rotation; third-seed check: open winner 810 -> 849 DPS (+4.8%), fire-raid 813 -> 831 DPS (+2.2%), sim preset: Fire 814 -> 848 DPS (+4.1%), opt-fire-raid-raid-dps 786 -> 816 DPS (+3.8%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -108,28 +112,41 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
   12. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and time left in the fight ≥ 3s: cast Fireball (+0.4%, pass 6)
   13. insert in the middle: cast Major Mana Potion (+0.3%, pass 6)
   14. move down below 'use every other cooldown when ready': if mana % ≤ 80%: cast Mana Ruby (mana gem) (+0.2%, pass 6)
+  15. insert in the middle: if Missile Barrage is up: cast Arcane Missiles (rank 7) (+3.8%, pass 7)
+  16. move to the top: if stacks of Heating Up = 3: cast Pyroblast (+0.9%, pass 7)
+  17. insert at the end: cast Evocation (+1.4%, pass 8)
+  18. insert before the filler: cast Robe of the Archmage (+0.4%, pass 8)
+  19. threshold 80% -> 75%: if mana % ≤ 80%: cast Mana Ruby (+0.3%, pass 8)
+  20. only above 10% mana: cast Evocation (+0.2%, pass 8)
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-raid`](fire-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.4 |
-| 2 | if mana % ≤ 80%: cast Mana Ruby | as ready |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 5.2 |
+| 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
-| 6 | cast Fire Blast | 7.0 |
-| 7 | cast Scorch | 4.4 |
+| 5 | if stacks of Heating Up = 3: cast Pyroblast | 3.0 |
+| 6 | cast Fire Blast | 6.6 |
+| 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 1.9 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 7.6 |
+| 9 | cast Robe of the Archmage | as ready |
+| 10 | cast Scorch | 5.2 |
+| 11 | cast Frost Blast | 1.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball (rank 11), cast Arcane Missiles (rank 7) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10) (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`fire-raid`](fire-raid.md) |
 |---|---|
-| Fireball | 48% |
-| Fire Blast | 21% |
-| Ignite | 11% |
-| Pyroblast | 11% |
+| Fireball | 32% |
+| Pyroblast | 20% |
+| Fire Blast | 18% |
+| Ignite | 10% |
+| Arcane Missiles | 9% |
 | Scorch | 8% |
+| Demonic Rune | 1% |
+| Frost Blast | 1% |
 
 ## Notes
 

@@ -1,5 +1,5 @@
 {
- "id": "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+ "id": "cand-combat-swords-raid-preset-combat-ss",
  "allocation": {
   "Assassination": [
    [
@@ -11,6 +11,10 @@
     3
    ],
    [
+    "Murder",
+    2
+   ],
+   [
     "Improved Slice and Dice",
     3
    ],
@@ -19,12 +23,16 @@
     1
    ],
    [
-    "Improved Expose Armor",
-    2
+    "Lethality",
+    1
    ],
    [
-    "Lethality",
-    5
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    2
    ]
   ],
   "Combat": [
@@ -37,7 +45,7 @@
     2
    ],
    [
-    "Deflection",
+    "Puncturing Wounds",
     3
    ],
    [
@@ -46,11 +54,7 @@
    ],
    [
     "Endurance",
-    1
-   ],
-   [
-    "Riposte",
-    1
+    2
    ],
    [
     "Improved Sprint",
@@ -74,7 +78,7 @@
    ],
    [
     "Weapon Expertise",
-    1
+    2
    ],
    [
     "Aggression",
@@ -86,7 +90,7 @@
    ]
   ]
  },
- "preset": "Improved Expose Armor (SS)",
- "talents": "005303125-32003311201515131",
- "note": "The community simulator's preset 'Improved Expose Armor (SS)' (rogue/dps/presets.ts), a raid candidate since it ran within 6% of the best build of combat-swords-raid (329.3 vs 338.6 in the race of 2026-09-27)."
+ "preset": "Combat SS",
+ "talents": "005323101012-32030320201515231",
+ "note": "The community simulator's preset 'Combat SS' (rogue/dps/presets.ts), a raid candidate since it ran within 6% of the best build of combat-swords-raid (321.2 vs 336.5 in the race of 2026-10-24)."
 }

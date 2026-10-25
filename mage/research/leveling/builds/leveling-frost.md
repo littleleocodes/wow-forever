@@ -51,6 +51,38 @@ Classic Frost leveling was Frostbolt/Ice Shards early, Shatter at 30, Ice Block 
 | **Winter's Chill** | 5/5 | changed | Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
 | **Ice Barrier** | 1/1 | changed | Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
+| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
+| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
+| 24 | Frost | Elemental Precision | 1 | 0/0/15 |
+| 25 | Frost | Ice Block | 1 | 0/0/16 |
+| 26-27 | Frost | Shatter | 2 | 0/0/18 |
+| 28 | Frost | Ice Shards | 1 | 0/0/19 |
+| 29 | Frost | Shatter | 1 | 0/0/20 |
+| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
+| 32-35 | Frost | Ice Shards | 4 | 0/0/26 |
+| 36 | Frost | Arctic Reach | 1 | 0/0/27 |
+| 37 | Frost | Cold Snap | 1 | 0/0/28 |
+| 38-39 | Frost | Winter's Chill | 2 | 0/0/30 |
+| 40 | Frost | Ice Barrier | 1 | 0/0/31 |
+| 41-43 | Frost | Winter's Chill | 3 | 0/0/34 |
+| 44-45 | Arcane | Missile Barrage | 2 | 2/0/34 |
+| 46-47 | Arcane | Wand Specialization | 2 | 4/0/34 |
+| 48 | Arcane | Arcane Focus | 1 | 5/0/34 |
+| 49-52 | Arcane | Arcane Concentration | 4 | 9/0/34 |
+| 53-54 | Arcane | Arcane Subtlety | 2 | 11/0/34 |
+| 55 | Arcane | Arcane Concentration | 1 | 12/0/34 |
+| 56-57 | Arcane | Arcane Focus | 2 | 14/0/34 |
+| 58 | Arcane | Arcane Blast | 1 | 15/0/34 |
+| 59 | Arcane | Arcane Wrath | 1 | 16/0/34 |
+| 60 | Arcane | Arcane Meditation | 1 | 17/0/34 |
+
 ## Core talents (priority order)
 
 1. **Improved Frostbolt** — Still 5/5 but no longer the opening points: the fight lab values it at ~3% per kill once Ice Lance carries the damage, so it comes at 44-48 after Ice Barrier.
@@ -75,16 +107,17 @@ Classic Frost leveling was Frostbolt/Ice Shards early, Shatter at 30, Ice Block 
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): never cast Cone of Cold; never cast Fire Blast; Frostbolt only while the mob has more than 20% health; drink below 15% mana. Together +5.2% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): never cast Cone of Cold; Frostbolt only while the mob has more than 20% health; Fire Blast only while the mob has more than 10% health. Together +3.7% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/frost-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 3.2 | 3.9 | 4.8 | 3.7 | 3.5 | 61% |
-| Frostbolt | 2.6 | 2.3 | 2.5 | 2.2 | 2.1 | 33% |
-| Wand | 1.1 | 1.6 | 2.1 | 1.9 | 1.7 | 4% |
-| Frost Nova | 0.6 | 0.8 | 0.9 | 0.7 | 0.7 | 1% |
+| Ice Lance | 2.7 | 3.5 | 4.1 | 3.4 | 3.3 | 55% |
+| Frostbolt | 2.7 | 2.0 | 2.1 | 2.0 | 1.9 | 27% |
+| Fire Blast | 0.9 | 1.6 | 1.5 | 1.2 | 1.2 | 14% |
+| Wand | 0.3 | 0.7 | 1.3 | 0.9 | 0.9 | 2% |
+| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
@@ -93,8 +126,9 @@ What this build casts per kill ([report](../fightlab/frost-leveling.md), all lev
 - Arcane Concentration and the Arcane fillers are left for 49-60 because nothing in Arcane speeds up a kill.
 - Order revised 2026-09-26 from the fight lab (fightlab/candidates/cand-hand-revised.json raced against the old order with the same seeds): Elemental Precision, Frostbite and Ice Shards first so that Ice Lance lands at 20 and Shatter at 25-27 — 7% faster per kill at 20, 13% at 25, 6% at 30, the same from 40 on. Improved Frostbolt first instead (cand-hand-revised-2) ties within noise.
 - The optimizer's opt-frost-leveling-leveling-st (12/3/36, same Arcane points) ends 2-3% faster at 50-60 in the sim by swapping Arctic Reach and four Winter's Chill points for Incineration and Improved Cone of Cold, and is 6% slower at 30 because its order buys Frost Channeling before Ice Shards.
-- Fight lab (leveling/fightlab/frost-leveling.md, 2026-10-22, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 29/33/36/29/27 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-frost-leveling-leveling-st is -4% at 60 and +4% at 30 (negative = faster); race winner over the leveling: cand-frost-r4; top talents at 60: Ice Lance +25%, Shatter +20%, Ice Shards +10%, Frost Channeling +7%; about zero: Arcane Blast, Arcane Focus, Arcane Subtlety, Arcane Wrath, Cold Snap, Ice Block. See the Fight lab section of leveling/README.md.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 12/0/39 -> 17/0/34; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Arcane Blast, +2 Missile Barrage, +1 Arcane Wrath, +1 Arcane Meditation; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
+- 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the frost-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 31.2 s per kill; stats model 31.6 s; own tree last 37.2 s.
+- Fight lab (leveling/fightlab/frost-leveling.md, 2026-10-25, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 27/34/36/31/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-frost-leveling-leveling-st is -4% at 60 and +0% at 30 (negative = faster); race winner over the leveling: cand-frost-r4; top talents at 60: Ice Lance +16%, Shatter +16%, Ice Shards +8%, Frostbite +6%; about zero: Arcane Blast, Arcane Focus, Arcane Resilience, Arcane Subtlety, Arcane Wrath, Ice Block. See the Fight lab section of leveling/README.md.
 
 ## Open questions (verify in the live game)
 

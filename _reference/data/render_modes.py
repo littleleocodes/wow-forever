@@ -343,8 +343,7 @@ def leveling_numbers(cls):
             bid = f"{SM.slug(tree)}-leveling"
             out[bid] = {int(Lv): v for Lv, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["spec"]
-    whole = open_leveling(cls, whole=True)
-    for spec, rec in (whole.get("rotations") or {}).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
+    for whole, spec, rec in open_leveling_rows(cls):   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
         if not current_record({"date": rec.get("date") or whole.get("date")}):   # a rotation's own date, else the record's (its start)
             continue
         lv = ((rec.get("race") or {}).get("open winner") or {}).get("levels") or {}
@@ -406,6 +405,22 @@ def open_leveling(cls, whole=False):
     except ValueError:
         return {}
     return st if whole else (st.get("rotations") or {})
+
+
+def open_leveling_rows(cls):
+    """(record, rotation, rotation record) of the open leveling search: the main record, then the one-tree searches
+    (fightlab/open/pure/<class>-<tree>.json, fl_open_search.py --tree, 2026-10-25)."""
+    out = []
+    wholes = [open_leveling(cls, whole=True)]
+    for f in sorted((HERE / "fightlab" / "open" / "pure").glob(f"{cls}-*.json")):
+        try:
+            wholes.append(json.load(open(f, encoding="utf-8")))
+        except ValueError:   # a search is writing it
+            continue
+    for whole in wholes:
+        for rot, rec in (whole.get("rotations") or {}).items():
+            out.append((whole, rot, rec))
+    return out
 
 
 _TALENT_SPELLS = {}
@@ -1197,7 +1212,8 @@ def class_pages(cls):
         idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../README.md) > {SM.MODE_TITLE[mode]}", ""]
         idx += ranking(cls, g, specs, mode, nums)
         if mode == "raid":
-            idx += tier_table(cls, specs, d / "README.md")
+            # only specs with a raid page (2026-10-25: Beast-Survival kept its tier row from the ML record after its raid build left)
+            idx += tier_table(cls, [s for s in specs if not s.startswith("Hybrid") or g[s]["raid"]], d / "README.md")
         idx += [f"{DER_MARK} = a derived build (searched in a simulator). "
                 f"{GEN_MARK} = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the "
                 "simulations' noise and assumptions: treat them as a tie.", "", "---", foot(raid_sims(nums[0]) if mode == "raid" else None), ""]

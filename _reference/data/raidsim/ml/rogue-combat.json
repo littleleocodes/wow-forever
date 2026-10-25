@@ -2674,5 +2674,125 @@
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "signature_check": {
+  "spec": "Combat",
+  "ok": true,
+  "core_share": 0.9069,
+  "min_share": 0.7,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "combat-daggers-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 680.6,
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Attack": 0.5245,
+   "Backstab": 0.2837,
+   "Eviscerate": 0.0987,
+   "Deadly Poison V": 0.0453,
+   "Instant Poison VI": 0.0273,
+   "Garrote": 0.0109,
+   "Goblin Sapper Charge": 0.0096
+  },
+  "casts": {
+   "Vanish": 1.0,
+   "Eviscerate": 7.65,
+   "Blade Flurry": 2.0,
+   "Slice and Dice": 9.3,
+   "Adrenaline Rush": 1.0,
+   "Cold Blood": 1.0,
+   "spell 11337": 31.38,
+   "spell 25349": 30.21,
+   "Garrote": 1.0,
+   "Backstab": 30.95
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     5
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Blade Flurry",
+     1
+    ],
+    [
+     "Hack and Slash",
+     5
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     3
+    ],
+    [
+     "Adrenaline Rush",
+     1
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Opportunity",
+     2
+    ]
+   ]
+  }
  }
 }

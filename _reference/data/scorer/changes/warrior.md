@@ -105,13 +105,14 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 
 ### `opt-arms-2h-raid-raid-dps` (20/31/0) vs Classic `fury-2h-raid` (17/34/0)
 
-- **Drops:** Improved Heroic Strike 3, Improved Slam 5
-- **Adds:** Blood Craze 3, Deflection 3, Improved Berserker Rage 2, Improved Tactical Mastery 5 (new), Lingering Rage 2, Two-Handed Weapon Specialization 3
+- **Drops:** Anger Management 1, Enrage 5, Improved Slam 5
+- **Adds:** Blood Craze 3, Booming Voice 2, Deflection 5, Dual Wield Specialization 4, Improved Berserker Rage 2, Improved Charge 1, Raging Blows 1 (new), Spearing Strike 1 (new), Two-Handed Weapon Specialization 3
+- **Fewer ranks:** Impale 2->1
 
-### `opt-fury-dw-raid-raid-dps` (19/32/0) vs Classic `fury-dw-raid` (17/34/0)
+### `opt-fury-dw-raid-raid-dps` (18/33/0) vs Classic `fury-dw-raid` (17/34/0)
 
-- **Drops:** Enrage 5, Improved Heroic Strike 3
-- **Adds:** Blood Craze 3, Booming Voice 2, Deflection 4, Improved Berserker Rage 2, Improved Tactical Mastery 5 (new), Raging Blows 1 (new), Spearing Strike 1 (new)
+- **Drops:** Anger Management 1, Enrage 5
+- **Adds:** Blood Craze 3, Deflection 5, Furious Precision 3, Improved Berserker Rage 2, Improved Charge 1, Raging Blows 1 (new), Spearing Strike 1 (new)
 
 ### `opt-prot-tank-raid-tank` (14/5/32) vs Classic `prot-raid-tank` (11/5/35)
 

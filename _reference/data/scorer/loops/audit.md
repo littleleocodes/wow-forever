@@ -26,9 +26,9 @@
 | classic | `leveling-feral` | feral-cat-dps / leveling-st | **Improved Nature's Grasp** | Balance | 4 | +0.00% | manual | filler | Same path; proc chance. |
 | classic | `leveling-feral` | feral-cat-dps / leveling-st | **Improved Shred** | Feral Combat | 2 | +0.00% | manual | throughput | Cheaper Shred: the raid builder; while leveling Shred is only used on stunned/rooted mobs, so its value is small there. |
 | classic | `leveling-feral` | feral-cat-dps / leveling-st | **Primal Fury** | Feral Combat | 2 | +0.00% | manual | filler | Bear-only rage on crits in Classic: cat raid filler on the way down the tree. |
+| classic | `leveling-feral` | feral-cat-dps / leveling-st | **Natural Shapeshifter** | Balance | 3 | +0.06% | manual | filler (from resto-heal) | Balance tier-2 path to Nature's Grace (21 Balance points); cheaper shifts in dungeons. |
 | classic | `leveling-feral` | feral-cat-dps / leveling-st | **Thick Hide** | Feral Combat | 5 | +0.07% | manual | filler | Cat raid filler; real mitigation for Bear. |
-| classic | `leveling-feral` | feral-cat-dps / leveling-st | **Natural Shapeshifter** | Balance | 3 | +0.08% | manual | filler (from resto-heal) | Balance tier-2 path to Nature's Grace (21 Balance points); cheaper shifts in dungeons. |
-| classic | `leveling-feral` | feral-cat-dps / leveling-st | **Ferocity** | Feral Combat | 5 | +0.26% | parsed | sustain | Cheaper Claw/Rake/Maul/Swipe: matters when Claw is the builder (leveling) and for Bear; raid cats Shred. |
+| classic | `leveling-feral` | feral-cat-dps / leveling-st | **Ferocity** | Feral Combat | 5 | +0.22% | parsed | sustain | Cheaper Claw/Rake/Maul/Swipe: matters when Claw is the builder (leveling) and for Bear; raid cats Shred. |
 | classic | `resto-regrowth-natures-grace` | resto-heal / raid-heal | **Nature's Grasp** | Balance | 1 | +0.00% | manual | filler (from feral-cat-dps) | Balance tier-1 path to Natural Weapons/Omen of Clarity; roots on hit while leveling. |
 | classic | `resto-regrowth-natures-grace` | resto-heal / raid-heal | **Nature's Focus** | Restoration | 5 | +0.33% | manual | throughput | Pushback resistance on Healing Touch/Regrowth when hit. |
 | classic | `resto-regrowth-natures-grace` | resto-heal / raid-heal | **Improved Rejuvenation** | Restoration | 1 | +0.39% | parsed | OPEN |  |
@@ -37,7 +37,7 @@
 | classic | `resto-swiftmend-healer` | resto-heal / raid-heal | **Nature's Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance on Healing Touch/Regrowth when hit. |
 | forever-draft | `feral-cat-dps` | feral-cat-dps / raid-dps | **Feral Charge** | Feral Combat | 1 | +0.00% | manual | OPEN |  |
 
-## Hunter - 30 flagged of 55 taken talents, 5 without a documented reason
+## Hunter - 21 flagged of 60 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -46,43 +46,34 @@
 | classic | `bm-mm-raid` | mm-raid / raid-dps | **Endurance Training** | Beast Mastery | 3 | +0.15% | parsed | filler | 'Improved Revive Pet vs. Endurance Training: personal preference and depends on how often you think your pet will die.' |
 | classic | `bm-mm-raid` | mm-raid / raid-dps | **Improved Hunter's Mark** | Marksmanship | 3 | +0.25% | manual | utility | 'Only 1 Hunter in the raid needs to use Hunter's Mark for all hunters to benefit from it' - raid attack power, not your own DPS. |
 | classic | `bm-mm-raid` | mm-raid / raid-dps | **Hawk Eye** | Marksmanship | 3 | +0.30% | manual | utility | Preference point: 'one of you should take all 5 points in Improved Hunter's Mark instead of either Ferocity or Hawk Eye'. |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Efficiency** | Marksmanship | 5 | +0.21% | manual | sustain | 'If you plan on doing no PvP at all, take Efficiency' (else Improved Concussive Shot). |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Endurance Training** | Beast Mastery | 5 | +0.23% | parsed | filler | Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveli |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Improved Aspect of the Hawk** | Beast Mastery | 5 | +0.27% | manual | throughput | 'A huge damage gain when it procs, making it a solid choice for both leveling and at Level 60.' |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Bestial Discipline** | Beast Mastery | 1 | +0.30% | manual | sustain | +20% pet Focus regeneration (more Claw / Bite: pet damage and threat) and 50% of the hunter's regen while casting (beta); one point on the w |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Lethal Shots** | Marksmanship | 5 | +0.30% | manual | throughput | 'A strong damage increase' - low at leveling crit rates, taken on the way to Aimed Shot. |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Ferocity** | Beast Mastery | 5 | +0.34% | manual | throughput | Same as Unleashed Fury: pet damage and threat. |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Mortal Shots** | Marksmanship | 5 | +0.37% | manual | throughput | 'A solid damage increase' at 60; small at 5% crit while leveling. |
-| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Improved Revive Pet** | Beast Mastery | 2 | +0.38% | manual | safety | 'Hugely important for if your pet ever dies during combat and just to make it easier to cast.' |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Mortal Shots** | Marksmanship | 5 | +0.20% | manual | throughput | 'A solid damage increase' at 60; small at 5% crit while leveling. |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Efficiency** | Marksmanship | 5 | +0.21% | manual | sustain | 'If you plan on doing no PvP at all, take Efficiency' (else Improved Concussive Shot). |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Endurance Training** | Beast Mastery | 5 | +0.23% | parsed | filler | Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveli |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Improved Aspect of the Hawk** | Beast Mastery | 5 | +0.25% | manual | throughput | 'A huge damage gain when it procs, making it a solid choice for both leveling and at Level 60.' |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Bestial Discipline** | Beast Mastery | 1 | +0.32% | manual | sustain | +20% pet Focus regeneration (more Claw / Bite: pet damage and threat) and 50% of the hunter's regen while casting (beta); one point on the w |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Lethal Shots** | Marksmanship | 5 | +0.33% | manual | throughput | 'A strong damage increase' - low at leveling crit rates, taken on the way to Aimed Shot. |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Ferocity** | Beast Mastery | 5 | +0.37% | manual | throughput | Same as Unleashed Fury: pet damage and threat. |
-| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Improved Revive Pet** | Beast Mastery | 2 | +0.38% | manual | safety | 'Hugely important for if your pet ever dies during combat and just to make it easier to cast.' |
+| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Efficiency** | Marksmanship | 5 | +0.12% | manual | sustain | 'If you plan on doing no PvP at all, take Efficiency' (else Improved Concussive Shot). |
+| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Endurance Training** | Beast Mastery | 5 | +0.13% | parsed | filler | Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveli |
+| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Improved Revive Pet** | Beast Mastery | 2 | +0.21% | manual | safety | 'Hugely important for if your pet ever dies during combat and just to make it easier to cast.' |
+| classic | `bm-solo-farm` | bm-leveling / solo-60 | **Improved Aspect of the Hawk** | Beast Mastery | 5 | +0.36% | manual | throughput | 'A huge damage gain when it procs, making it a solid choice for both leveling and at Level 60.' |
+| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Efficiency** | Marksmanship | 5 | +0.12% | manual | sustain | 'If you plan on doing no PvP at all, take Efficiency' (else Improved Concussive Shot). |
+| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Endurance Training** | Beast Mastery | 5 | +0.13% | parsed | filler | Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveli |
+| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Improved Revive Pet** | Beast Mastery | 2 | +0.21% | manual | safety | 'Hugely important for if your pet ever dies during combat and just to make it easier to cast.' |
+| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Mortal Shots** | Marksmanship | 5 | +0.28% | manual | throughput | 'A solid damage increase' at 60; small at 5% crit while leveling. |
+| classic | `leveling-beast-mastery` | bm-leveling / leveling-st | **Improved Aspect of the Hawk** | Beast Mastery | 5 | +0.34% | manual | throughput | 'A huge damage gain when it procs, making it a solid choice for both leveling and at Level 60.' |
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Bestial Swiftness** | Beast Mastery | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Summon Hawk** | Beast Mastery | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Intimidation** | Beast Mastery | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Mortal Shots** | Marksmanship | 5 | +0.00% | manual | throughput | 'A solid damage increase' at 60; small at 5% crit while leveling. |
-| forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Frenzy** | Beast Mastery | 5 | +0.23% | manual | enabler | 'One of the most powerful talents', increasing the 'pet's damage and threat immensely'. |
-| forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Bestial Wrath** | Beast Mastery | 1 | +0.36% | manual | throughput | 'An incredible damage cooldown... what makes this spec viable at low gear levels at Level 60.' |
+| forever-draft | `leveling-beast-mastery` | bm-leveling / leveling-st | **Summon Hawk** | Beast Mastery | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-beast-mastery` | bm-leveling / leveling-st | **Hawk Eye** | Marksmanship | 3 | +0.00% | manual | control | Range: one more shot before the mob arrives and a wider kiting / dead-zone margin. |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Killing** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Sniper Shot** | Marksmanship | 1 | +0.00% | manual | OPEN |  |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Improved Arcane Shot** | Marksmanship | 5 | +0.26% | manual | OPEN |  |
 
-## Mage - 51 flagged of 105 taken talents, 5 without a documented reason
+## Mage - 50 flagged of 100 taken talents, 0 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Meditation** | Arcane | 3 | +0.03% | manual | sustain | 'What we are really looking towards': regen while channelling cuts the drink after each pack. |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Frost Warding** | Frost | 2 | +0.04% | manual | safety | 'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.' |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Concentration** | Arcane | 5 | +0.05% | manual | sustain | Clearcasting saves whole Blizzards. |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Concentration** | Arcane | 5 | +0.04% | manual | sustain | Clearcasting saves whole Blizzards. |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Wand Specialization** | Arcane | 2 | +0.04% | manual | filler | Arcane tier-1 filler of the Icy Veins AoE build; wands do nothing while farming packs. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Focus** | Arcane | 3 | +0.05% | manual | filler | Fewer Arcane Explosion resists on the cleanup; 'since you should be fighting enemies around your level 2 points are enough'. Tier-1 path to  |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Wand Specialization** | Arcane | 2 | +0.05% | manual | filler | Arcane tier-1 filler of the Icy Veins AoE build; wands do nothing while farming packs. |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Frost Warding** | Frost | 2 | +0.05% | manual | safety | 'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.' |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Improved Arcane Explosion** | Arcane | 3 | +0.06% | manual | utility (from frost-leveling) | Multi-mob cleanup and dungeon trash. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Resilience** | Arcane | 1 | +0.07% | manual | safety | 'Further decrease your melee damage taken' while gathering. |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Improved Arcane Explosion** | Arcane | 3 | +0.07% | manual | utility (from frost-leveling) | Multi-mob cleanup and dungeon trash. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Subtlety** | Arcane | 2 | +0.20% | manual | filler | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | classic | `fire-raid` | fire-raid / raid-dps | **Arcane Subtlety** | Arcane | 2 | +0.00% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | classic | `fire-raid` | fire-raid / raid-dps | **Arcane Focus** | Arcane | 3 | +0.00% | manual | filler | Tier-1 path to Arcane Concentration. |
@@ -112,23 +103,22 @@
 | classic | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arcane Concentration** | Arcane | 5 | +0.18% | manual | sustain (from frost-aoe) | Clearcasting saves whole Blizzards. |
 | classic | `frost-winters-chill-raid` | frost-raid / raid-dps | **Frost Channeling** | Frost | 3 | +0.28% | manual | sustain (from frost-aoe) | 'A great Mana efficiency increase' on the Blizzard channel. |
 | classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Focus** | Arcane | 5 | +0.00% | manual | filler | Tier-1 path to Arcane Concentration; Arcane hit only matters for Arcane Explosion cleanup. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Improved Arcane Explosion** | Arcane | 3 | +0.07% | manual | utility | Multi-mob cleanup and dungeon trash. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Meditation** | Arcane | 2 | +0.11% | manual | sustain | Regen while casting: fewer drinks. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Improved Frost Nova** | Frost | 2 | +0.13% | manual | control | Nova every 21s instead of 25s: a second freeze on multi-mob pulls and runners; Icy Veins takes it at 20-21 in the leveling build. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Concentration** | Arcane | 5 | +0.15% | manual | sustain (from frost-aoe) | Clearcasting saves whole Blizzards. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Frost Channeling** | Frost | 3 | +0.33% | manual | sustain (from frost-aoe) | 'A great Mana efficiency increase' on the Blizzard channel. |
-| classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Subtlety** | Arcane | 2 | +0.37% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
+| classic | `leveling-frost` | frost-leveling / leveling-st | **Improved Arcane Explosion** | Arcane | 3 | +0.11% | manual | utility | Multi-mob cleanup and dungeon trash. |
+| classic | `leveling-frost` | frost-leveling / leveling-st | **Improved Frost Nova** | Frost | 2 | +0.14% | manual | control | Nova every 21s instead of 25s: a second freeze on multi-mob pulls and runners; Icy Veins takes it at 20-21 in the leveling build. |
+| classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Meditation** | Arcane | 2 | +0.16% | manual | sustain | Regen while casting: fewer drinks. |
+| classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Concentration** | Arcane | 5 | +0.23% | manual | sustain (from frost-aoe) | Clearcasting saves whole Blizzards. |
 | forever-draft | `fire-raid` | fire-raid / raid-dps | **Burning Soul** | Fire | 2 | +0.00% | manual | utility | Threat reduction and pushback resistance: taken with 2-3 points so Fire mages do not pull aggro. |
-| forever-draft | `fire-raid` | fire-raid / raid-dps | **Improved Channeling** | Arcane | 5 | +0.01% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Missile Barrage** | Arcane | 1 | +0.00% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Improved Channeling** | Arcane | 5 | +0.00% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Concentration** | Arcane | 5 | +0.22% | manual | sustain (from frost-aoe) | Clearcasting saves whole Blizzards. |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 5 | +0.29% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Impact** | Arcane | 3 | +0.34% | manual | OPEN |  |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Improved Channeling** | Arcane | 4 | +0.00% | manual | OPEN |  |
-| forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Arctic Reach** | Frost | 1 | +0.05% | manual | control (from frost-aoe) | 'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers. |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Ice Block** | Frost | 1 | +0.00% | manual | safety | Survival on fire/AoE mechanics (Ragnaros, Baron Geddon); no DPS. |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Frostbite** | Frost | 3 | +0.00% | manual | avoid (from frost-aoe) | 'Do NOT put points into this talent, as it will cause issues with being able to properly clump the mobs together' - random freezes scatter t |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Winter's Chill** | Frost | 5 | +0.00% | manual | raid-buff | Brings winters chill to 4 others (a target debuff for frost spells: four other frost mages on the same boss (one mage brings it, the rest ta |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Frost Warding** | Frost | 2 | +0.00% | manual | safety (from frost-aoe) | 'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.' |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Cold Snap** | Frost | 1 | +0.00% | manual | safety | Second Ice Block. |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arctic Reach** | Frost | 2 | +0.00% | manual | control (from frost-aoe) | 'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers. |
+| forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Winter's Chill** | Frost | 5 | +0.03% | manual | raid-buff (from frost-raid) | Brings winters chill to 4 others (a target debuff for frost spells: four other frost mages on the same boss (one mage brings it, the rest ta |
+| forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Cold Snap** | Frost | 1 | +0.16% | manual | safety (from frost-aoe) | 'A second shot at fixing a pull that is going wrong' - a second Nova and Ice Block. |
+| forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Ice Barrier** | Frost | 1 | +0.16% | manual | safety (from frost-aoe) | 'Run around gathering mobs on your fresh mount without being in danger of being dazed and dismounted'; an escape when running. |
 
-## Paladin - 25 flagged of 75 taken talents, 1 without a documented reason
+## Paladin - 29 flagged of 73 taken talents, 2 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -136,13 +126,13 @@
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Improved Blessing of Might** | Retribution | 5 | +0.00% | manual | utility | The raid's attack-power blessing. |
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Benediction** | Retribution | 4 | +0.05% | manual | sustain | Cheaper Seals/Judgements: small for a healer who rarely judges. |
 | classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Retribution Aura** | Retribution | 2 | +0.00% | manual | filler | Tier filler; small aura damage. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Deflection** | Retribution | 5 | +0.11% | parsed | filler | Tier-1 Retribution filler (parry) in the raid build; some leveling survivability. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Blessing of Might** | Retribution | 5 | +0.13% | manual | utility | Raid attack power; small for you. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.14% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Conviction** | Retribution | 5 | +0.25% | manual | throughput | 5% crit; low while leveling, core at 60. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Deflection** | Retribution | 5 | +0.08% | parsed | filler | Tier-1 Retribution filler (parry) in the raid build; some leveling survivability. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.10% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Blessing of Might** | Retribution | 5 | +0.17% | manual | utility | Raid attack power; small for you. |
 | classic | `leveling-retribution` | ret-dps / leveling-st | **Repentance** | Retribution | 1 | +0.30% | manual | utility | Humanoid CC while leveling / dungeons. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Seal of the Crusader** | Retribution | 3 | +0.30% | manual | throughput | Judgement of the Crusader debuff feeds every Holy hit. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Divine Intellect** | Holy | 5 | +0.39% | manual | sustain | +10% Intellect: mana for seals and judgements over a five-minute fight; Holy tier-1 path. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Conviction** | Retribution | 5 | +0.32% | manual | throughput | 5% crit; low while leveling, core at 60. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Seal of the Crusader** | Retribution | 3 | +0.36% | manual | throughput | Judgement of the Crusader debuff feeds every Holy hit. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Divine Intellect** | Holy | 5 | +0.38% | manual | sustain | +10% Intellect: mana for seals and judgements over a five-minute fight; Holy tier-1 path. |
 | classic | `prot-tank` | prot-tank / raid-tank | **Anticipation** | Protection | 5 | +0.30% | manual | safety | '10 Defense skill, which is the main stat tanks desire... less valuable as your gear improves.' |
 | classic | `ret-raid-dps` | ret-dps / raid-dps | **Consecration** | Holy | 1 | +0.00% | manual | utility | One point: an area threat and damage tool for trash and farming; the simulator's raid rotation casts it rarely, so the raid value is small. |
 | classic | `ret-raid-dps` | ret-dps / raid-dps | **Improved Seal of the Crusader** | Retribution | 3 | +0.00% | manual | throughput | Judgement of the Crusader debuff feeds every Holy hit. |
@@ -155,10 +145,14 @@
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Unyielding Faith** | Holy | 2 | +0.00% | manual | filler | Holy tier-2 filler: fear/disorient resist. |
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Voice of Truth** | Holy | 1 | +0.00% | manual | utility (from prot-tank) | 6 s immunity to silence and interrupts (beta): spell uptime for a tank under interrupts; one point. |
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Improved Judgement** | Retribution | 2 | +0.00% | manual | utility | Judgement cooldown -2 s (beta): keeps Judgement of Light / Wisdom up for the raid when the healer judges; Retribution tier-2 path of the For |
-| forever-draft | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.07% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
+| forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Conviction** | Retribution | 3 | +0.00% | manual | throughput (from ret-dps) | 5% crit; low while leveling, core at 60. |
+| forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Pursuit of Justice** | Retribution | 2 | +0.00% | manual | utility (from ret-dps) | +8% movement: travel while leveling; nothing on a boss. |
+| forever-draft | `leveling-retribution` | ret-dps / leveling-st | **Purifying Power** | Holy | 2 | +0.08% | manual | utility (from prot-tank) | Cheaper Cleanse / Purify and -33% Exorcism / Holy Wrath cooldown (beta): dispels and undead / demon threat; two points on the Holy path. |
+| forever-draft | `prot-tank` | prot-tank / raid-tank | **Improved Judgement** | Retribution | 2 | +0.00% | manual | utility (from holy-heal) | Judgement cooldown -2 s (beta): keeps Judgement of Light / Wisdom up for the raid when the healer judges; Retribution tier-2 path of the For |
+| forever-draft | `prot-tank` | prot-tank / raid-tank | **Eye for an Eye** | Retribution | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `ret-raid-dps` | ret-dps / raid-dps | **Divine Favor** | Holy | 1 | +0.00% | manual | OPEN |  |
 
-## Priest - 22 flagged of 52 taken talents, 3 without a documented reason
+## Priest - 24 flagged of 58 taken talents, 3 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -169,21 +163,23 @@
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Unbreakable Will** | Discipline | 5 | +0.00% | manual | filler | Tier-1 Discipline filler with a use (stun/fear resist); Wand Specialization does nothing for a healer. |
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Improved Renew** | Holy | 2 | +0.08% | parsed | OPEN |  |
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Silent Resolve** | Discipline | 4 | +0.10% | manual | utility | -4%/rank spell threat: healers pulling aggro on pulls. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Spirit Tap** | Shadow | 5 | +0.00% | manual | sustain | +100% Spirit for 15 s after a kill with 50% regen while casting (beta): the leveling mana loop; nothing in a raid, where nothing dies. |
 | classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Fade** | Shadow | 1 | +0.00% | manual | safety | Shorter Fade in dungeons. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Unbreakable Will** | Discipline | 5 | +0.02% | manual | filler | Discipline tier-1 path to Inner Focus/Meditation. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Power Word: Shield** | Discipline | 2 | +0.03% | manual | safety | Bigger shield on every pull. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Vampiric Embrace** | Shadow | 2 | +0.03% | manual | sustain | +5%/rank Vampiric Embrace self-healing (Classic): less eating between leveling fights. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Shadow Reach** | Shadow | 3 | +0.11% | manual | control | +20% range: one more cast before melee. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Vampiric Embrace** | Shadow | 1 | +0.17% | manual | OPEN |  |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Blackout** | Shadow | 5 | +0.18% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Unbreakable Will** | Discipline | 5 | +0.01% | manual | filler | Discipline tier-1 path to Inner Focus/Meditation. |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Power Word: Shield** | Discipline | 2 | +0.01% | manual | safety | Bigger shield on every pull. |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Vampiric Embrace** | Shadow | 2 | +0.17% | manual | sustain | +5%/rank Vampiric Embrace self-healing (Classic): less eating between leveling fights. |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Shadow Reach** | Shadow | 3 | +0.18% | manual | control | +20% range: one more cast before melee. |
 | classic | `leveling-shadow` | shadow-dps / leveling-st | **Silence** | Shadow | 1 | +0.20% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Shadow Focus** | Shadow | 5 | +0.24% | manual | control | Resisted Shadow Word: Pain / Mind Flay means taking hits. |
-| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Shadow Word: Pain** | Shadow | 2 | +0.25% | manual | throughput | +3 s (one tick) per rank on Shadow Word: Pain, the dot that opens every pull; the fight lab values it 0.27%/point because mobs die before th |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Blackout** | Shadow | 5 | +0.24% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Improved Shadow Word: Pain** | Shadow | 2 | +0.35% | manual | throughput | +3 s (one tick) per rank on Shadow Word: Pain, the dot that opens every pull; the fight lab values it 0.27%/point because mobs die before th |
+| classic | `leveling-shadow` | shadow-dps / leveling-st | **Shadow Focus** | Shadow | 5 | +0.38% | manual | control | Resisted Shadow Word: Pain / Mind Flay means taking hits. |
+| forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Divine Fury** | Holy | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Improved Power Word: Shield** | Discipline | 3 | +0.11% | manual | safety (from shadow-dps) | Bigger shield on every pull. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Improved Power Word: Shield** | Discipline | 3 | +0.00% | manual | safety | Bigger shield on every pull. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Blackout** | Shadow | 3 | +0.00% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Shadow Reach** | Shadow | 2 | +0.00% | manual | control | +20% range: one more cast before melee. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Spirit Tap** | Shadow | 5 | +0.00% | manual | sustain | +100% Spirit for 15 s after a kill with 50% regen while casting (beta): the leveling mana loop; nothing in a raid, where nothing dies. |
+| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Martyrdom** | Discipline | 2 | +0.00% | manual | utility | Pushback immunity after being crit (beta): a leveling safety point of the leveling build; nothing in a raid. |
+| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
 
 ## Rogue - 22 flagged of 62 taken talents, 4 without a documented reason
 
@@ -201,18 +197,18 @@
 | classic | `combat-swords-raid` | combat-swords-raid / raid-dps | **Improved Sprint** | Combat | 2 | +0.00% | manual | filler | PvP/utility filler. |
 | classic | `combat-swords-raid` | combat-swords-raid / raid-dps | **Murder** | Assassination | 2 | +0.39% | manual | throughput | +2% vs humanoids/giants/beasts/dragonkin - most raid bosses. |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Sprint** | Combat | 2 | +0.00% | manual | filler | PvP/utility filler. |
-| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lethality** | Assassination | 2 | +0.12% | manual | throughput | Crit damage on Sinister Strike/Backstab; small at leveling crit rates. |
-| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lightning Reflexes** | Combat | 4 | +0.16% | parsed | filler | Raid: tier filler (dodge does nothing on bosses); leveling: 1% dodge per rank. |
-| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.17% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
-| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Blade Flurry** | Combat | 1 | +0.34% | manual | OPEN |  |
+| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lightning Reflexes** | Combat | 4 | +0.11% | parsed | filler | Raid: tier filler (dodge does nothing on bosses); leveling: 1% dodge per rank. |
+| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lethality** | Assassination | 2 | +0.14% | manual | throughput | Crit damage on Sinister Strike/Backstab; small at leveling crit rates. |
+| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.21% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
+| classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Blade Flurry** | Combat | 1 | +0.35% | manual | OPEN |  |
 | forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Improved Expose Armor** | Assassination | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.00% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Mutilate** | Assassination | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Sprint** | Combat | 2 | +0.00% | manual | filler | PvP/utility filler. |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Endurance** | Combat | 1 | +0.00% | manual | safety | Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler. |
-| forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.19% | manual | OPEN |  |
+| forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.17% | manual | OPEN |  |
 
-## Shaman - 32 flagged of 72 taken talents, 4 without a documented reason
+## Shaman - 37 flagged of 75 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -232,24 +228,29 @@
 | classic | `enhancement-raid-support` | enhancement-dps / raid-dps | **Enhancing Totems** | Enhancement | 2 | +0.25% | manual | utility | Strength of Earth / Grace of Air for the group. |
 | classic | `enhancement-raid-support` | enhancement-dps / raid-dps | **Improved Weapon Totems** | Enhancement | 2 | +0.40% | manual | utility | Windfury Totem for the melee group (your own imbue overrides it). |
 | classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Improved Weapon Totems** | Enhancement | 2 | +0.00% | manual | utility | Windfury Totem for the melee group (your own imbue overrides it). |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Totemic Focus** | Restoration | 5 | +0.08% | manual | sustain | Totem mana: the support half of the spec. |
 | classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Anticipation** | Enhancement | 2 | +0.09% | manual | safety | Dodge for a melee who takes hits; raid filler. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Totemic Focus** | Restoration | 5 | +0.10% | manual | sustain | Totem mana: the support half of the spec. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Restorative Totems** | Restoration | 5 | +0.12% | manual | utility | Mana Spring / Healing Stream for the group. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Enhancing Totems** | Enhancement | 2 | +0.13% | manual | utility | Strength of Earth / Grace of Air for the group. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Tidal Focus** | Restoration | 5 | +0.18% | manual | sustain | Cheaper heals between pulls. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Ancestral Knowledge** | Enhancement | 5 | +0.20% | manual | sustain | +5% mana: shocks and totems. |
-| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Thundering Strikes** | Enhancement | 5 | +0.24% | manual | throughput | 1% crit per rank; low at leveling crit rates, taken as the tier-1 path. |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Restorative Totems** | Restoration | 5 | +0.09% | manual | utility | Mana Spring / Healing Stream for the group. |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Tidal Focus** | Restoration | 5 | +0.14% | manual | sustain | Cheaper heals between pulls. |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Ancestral Knowledge** | Enhancement | 5 | +0.16% | manual | sustain | +5% mana: shocks and totems. |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Enhancing Totems** | Enhancement | 2 | +0.18% | manual | utility | Strength of Earth / Grace of Air for the group. |
+| classic | `leveling-enhancement` | enhancement-dps / leveling-st | **Thundering Strikes** | Enhancement | 5 | +0.33% | manual | throughput | 1% crit per rank; low at leveling crit rates, taken as the tier-1 path. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Totemic Focus** | Restoration | 5 | +0.20% | manual | sustain | Totem mana on every re-drop. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Grace** | Restoration | 2 | +0.30% | manual | utility | -15% healing threat. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance when hit. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Tidal Mastery** | Restoration | 5 | +0.37% | manual | throughput | Crit heals (and Lightning). |
+| forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Reverberation** | Elemental | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Anticipation** | Enhancement | 3 | +0.00% | manual | safety (from enhancement-dps) | Dodge for a melee who takes hits; raid filler. |
 | forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Earth's Grasp** | Enhancement | 2 | +0.00% | manual | OPEN |  |
+| forever-draft | `enhancement-raid-dps` | enhancement-dps / raid-dps | **Elemental Weapons** | Enhancement | 3 | +0.00% | manual | throughput | +40% Windfury Weapon effect (beta): the imbue that is 23-33% of enhancement damage in the simulators; Enhancement tier-3 path. |
+| forever-draft | `enhancement-raid-dps` | enhancement-dps / raid-dps | **Totemic Focus** | Restoration | 4 | +0.18% | manual | sustain | Totem mana: the support half of the spec. |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Elemental Weapons** | Enhancement | 3 | +0.00% | manual | throughput | +40% Windfury Weapon effect (beta): the imbue that is 23-33% of enhancement damage in the simulators; Enhancement tier-3 path. |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Improved Stormstrike** | Enhancement | 2 | +0.00% | manual | OPEN |  |
-| forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Maelstrom Weapon** | Enhancement | 5 | +0.14% | manual | throughput | Melee hits stack -20% cast time and mana on the next Lightning Bolt, five stacks (beta): instant Lightning Bolts inside the melee loop. The  |
+| forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Spirit Weapons** | Enhancement | 1 | +0.00% | manual | utility | Parry chance and threat changes (beta): survivability while leveling; one point on the path. |
+| forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Ancestral Knowledge** | Enhancement | 5 | +0.01% | manual | sustain | +5% mana: shocks and totems. |
+| forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Totemic Focus** | Restoration | 5 | +0.07% | manual | sustain | Totem mana: the support half of the spec. |
 
-## Warlock - 22 flagged of 68 taken talents, 8 without a documented reason
+## Warlock - 20 flagged of 67 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -261,22 +262,20 @@
 | classic | `ds-ruin-raid` | sb-raid / raid-dps | **Demonic Sacrifice** | Demonology | 1 | +0.00% | manual | OPEN |  |
 | classic | `ds-ruin-raid` | sb-raid / raid-dps | **Improved Healthstone** | Demonology | 2 | +0.00% | manual | filler | Demonology tier-1 path of the DS/Ruin build toward Demonic Sacrifice (21 points); no throughput. |
 | classic | `ds-ruin-raid` | sb-raid / raid-dps | **Destructive Reach** | Destruction | 2 | +0.20% | manual | utility | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
-| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Fel Intellect** | Demonology | 2 | +0.00% | manual | filler | Voidwalker mana for Torment/Sacrifice; tier filler. |
-| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Improved Drain Life** | Affliction | 5 | +0.03% | manual | sustain | Drain-tanking damage and health. |
+| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Fel Intellect** | Demonology | 2 | +0.04% | manual | filler | Voidwalker mana for Torment/Sacrifice; tier filler. |
+| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Improved Drain Life** | Affliction | 5 | +0.08% | manual | sustain | Drain-tanking damage and health. |
+| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Unholy Power** | Demonology | 5 | +0.28% | parsed | enabler | Voidwalker damage = Voidwalker threat. |
 | classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Demonic Embrace** | Demonology | 5 | +0.37% | manual | safety (from sb-raid) | Stamina: survivability on AoE mechanics; no DPS. |
-| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Improved Voidwalker** | Demonology | 3 | +0.40% | manual | OPEN |  |
-| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Life Tap** | Affliction | 2 | +0.00% | manual | sustain (from sb-raid) | 'Absolutely required for raiding as Life Tap is your main source of mana during fights.' |
+| classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Fel Stamina** | Demonology | 5 | +0.40% | manual | filler (from sb-raid) | 'Fel Stamina & Unholy Power... provide no benefits' - Demonology tier filler on the way to Demonic Sacrifice. |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Curse of Exhaustion** | Affliction | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Health Funnel** | Demonology | 2 | +0.00% | manual | OPEN |  |
-| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Demonic Energies** | Demonology | 2 | +0.00% | manual | OPEN |  |
-| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Master Summoner** | Demonology | 2 | +0.00% | manual | filler (from sb-raid) | Demonology tier-2 path of the DS/Ruin build toward Demonic Sacrifice; faster and cheaper summons only. |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Sayaad** | Demonology | 3 | +0.00% | manual | OPEN |  |
+| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Master Summoner** | Demonology | 2 | +0.00% | manual | filler (from sb-raid) | Demonology tier-2 path of the DS/Ruin build toward Demonic Sacrifice; faster and cheaper summons only. |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Fel Domination** | Demonology | 1 | +0.00% | manual | safety (from sb-raid) | 'Quite useful since it effectively gives you a defensive cooldown when you need it' (instant re-summon). |
-| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Decimation** | Demonology | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 
-## Warrior - 19 flagged of 73 taken talents, 4 without a documented reason
+## Warrior - 21 flagged of 79 taken talents, 6 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -287,15 +286,17 @@
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Unbridled Wrath** | Fury | 5 | +0.16% | manual | throughput | 'Suits dual wielding well, as the more often you attack, the more often you activate this talent.' |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Enrage** | Fury | 5 | +0.17% | manual | filler | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Heroic Strike** | Arms | 3 | +0.28% | manual | sustain (from arms-2h-raid) | Cheaper rage dump: more Heroic Strikes per pull. |
-| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Tactical Mastery** | Arms | 5 | +0.07% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
-| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Unbridled Wrath** | Fury | 5 | +0.26% | manual | throughput | Extra rage per hit (half as often with a two-hander). |
-| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Charge** | Arms | 2 | +0.27% | manual | sustain | Opening rage on every pull. |
-| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Heroic Strike** | Arms | 2 | +0.35% | manual | sustain | Cheaper rage dump: more Heroic Strikes per pull. |
+| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Heroic Strike** | Arms | 2 | +0.05% | manual | sustain | Cheaper rage dump: more Heroic Strikes per pull. |
+| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Tactical Mastery** | Arms | 5 | +0.09% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
+| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Unbridled Wrath** | Fury | 5 | +0.28% | manual | throughput | Extra rage per hit (half as often with a two-hander). |
+| classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Charge** | Arms | 2 | +0.36% | manual | sustain | Opening rage on every pull. |
 | classic | `prot-raid-tank` | prot-tank / raid-tank | **Improved Sunder Armor** | Protection | 3 | +0.00% | parsed | sustain | -1 rage/rank on Sunder Armor, the tank's threat filler (35% of the threat split): rage economy the threat model does not carry beyond the ab |
 | classic | `prot-raid-tank` | prot-tank / raid-tank | **Anticipation** | Protection | 5 | +0.30% | manual | safety | 'Not quite as good as it might look at first glance. While 10 Defense is a strong defensive boost, it comes at the cost of 5 precious talent |
-| forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Booming Voice** | Fury | 5 | +0.00% | manual | OPEN |  |
-| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Heroic Strike** | Arms | 2 | +0.00% | manual | sustain (from arms-2h-raid) | Cheaper rage dump: more Heroic Strikes per pull. |
-| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Furious Precision** | Fury | 3 | +0.00% | parsed | OPEN |  |
+| forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Improved Tactical Mastery** | Arms | 5 | +0.00% | manual | OPEN |  |
+| forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Lingering Rage** | Fury | 3 | +0.00% | missing | OPEN |  |
+| forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Enrage** | Fury | 5 | +0.00% | manual | filler (from fury-dw-raid) | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
+| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Tactical Mastery** | Arms | 5 | +0.00% | manual | OPEN |  |
+| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Booming Voice** | Fury | 5 | +0.00% | manual | OPEN |  |
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Enrage** | Fury | 5 | +0.00% | manual | filler | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
 | forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Bloodrage** | Protection | 1 | +0.27% | manual | OPEN |  |
 | forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Tactical Mastery** | Arms | 5 | +0.38% | manual | OPEN |  |

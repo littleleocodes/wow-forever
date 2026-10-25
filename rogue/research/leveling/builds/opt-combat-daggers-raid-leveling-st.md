@@ -88,21 +88,23 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +16.0% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-23, on top of the priority below): never cast Cheap Shot; eat below 40% health. Together +14.0% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.5 | 8.4 | 10.6 | 11.7 | 12.0 | 21% |
-| Melee (off-hand) | 6.9 | 7.8 | 10.2 | 11.4 | 11.7 | 11% |
-| Sinister Strike | 3.0 | 3.3 | 4.1 | 4.5 | 4.7 | 17% |
-| Eviscerate | 0.6 | 0.6 | 1.0 | 1.2 | 1.3 | 22% |
-| Riposte | 0.0 | 0.8 | 1.1 | 1.2 | 1.3 | 4% |
+| Melee | 8.1 | 9.2 | 12.0 | 13.9 | 14.7 | 25% |
+| Melee (off-hand) | 7.6 | 8.8 | 11.5 | 13.5 | 14.3 | 14% |
+| Sinister Strike | 2.5 | 2.9 | 3.7 | 4.0 | 4.3 | 15% |
+| Riposte | 0.0 | 0.9 | 1.2 | 1.4 | 1.4 | 4% |
+| Slice and Dice | 1.0 | 1.1 | 1.3 | 1.3 | 1.4 | 0% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Kick | 0.3 | 0.3 | 0.3 | 0.3 | 0.2 | 0% |
+| Eviscerate | 0.4 | 0.4 | 0.8 | 0.9 | 1.0 | 14% |
+| Kick | 0.2 | 0.2 | 0.3 | 0.3 | 0.2 | 0% |
 | Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
-| Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Evasion | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
+| Kidney Shot | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

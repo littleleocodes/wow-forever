@@ -74,5 +74,35 @@
    "spec": "Hybrid Arcane/Frost",
    "date": "2026-10-23"
   }
+ },
+ "warlock": {
+  "leveling-affliction": {
+   "rotation": "demonology-leveling",
+   "levels": {
+    "20": 23.83,
+    "30": 28.73,
+    "40": 33.5,
+    "50": 35.01,
+    "60": 34.37
+   },
+   "weighted": 32.46,
+   "was": "affliction-leveling",
+   "spec": "Hybrid Affliction/Demonology",
+   "date": "2026-10-25"
+  },
+  "opt-affliction-leveling-leveling-st": {
+   "rotation": "demonology-leveling",
+   "levels": {
+    "20": 23.14,
+    "30": 29.06,
+    "40": 34.06,
+    "50": 34.97,
+    "60": 33.47
+   },
+   "weighted": 32.27,
+   "was": "affliction-leveling",
+   "spec": "Hybrid Affliction/Demonology",
+   "date": "2026-10-25"
+  }
  }
 }

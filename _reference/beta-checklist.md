@@ -96,6 +96,7 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Beast-Marks leveling build: check it while leveling at launch.
+- An open-search Marksmanship leveling build: check it while leveling at launch.
 - An open-search Beast-Survival leveling build: check it while leveling at launch.
 
 ## Mage
@@ -143,8 +144,11 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - A derived Arcane leveling build: check it while leveling at launch.
 - A derived Fire leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Frostfire leveling build: check it while leveling at launch.
+- An open-search Arcane leveling build: check it while leveling at launch.
+- An open-search Fire leveling build: check it while leveling at launch.
 - An open-search Frost leveling build: check it while leveling at launch.
+- An open-search Arcane-Frost leveling build: check it while leveling at launch.
+- An open-search Frostfire leveling build: check it while leveling at launch.
 
 ## Paladin
 
@@ -188,9 +192,9 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - Improved Seals rank scaling (5% read at rank 1).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Shockadin leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
 - An open-search Retribution leveling build: check it while leveling at launch.
+- An open-search Holy leveling build: check it while leveling at launch.
 - Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 - Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -235,7 +239,7 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Shadow Word: Death availability and level.
 - Whether Shadowform's demo crit bonus (text truncated) changes the value of Blackout/Early Demise.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Discipline-Shadow leveling build: check it while leveling at launch.
+- An open-search Discipline leveling build: check it while leveling at launch.
 - An open-search Smite leveling build: check it while leveling at launch.
 - An open-search Shadow leveling build: check it while leveling at launch.
 - Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
@@ -282,6 +286,7 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - A derived Subtlety leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Daggers (split) leveling build: check it while leveling at launch.
+- An open-search Combat leveling build: check it while leveling at launch.
 - An open-search Combat-Subtlety leveling build: check it while leveling at launch.
 
 ## Shaman
@@ -377,8 +382,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - A derived Demonology leveling build: check it while leveling at launch.
 - A derived Destruction leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- An open-search Affliction leveling build: check it while leveling at launch.
 - An open-search Affliction-Demonology leveling build: check it while leveling at launch.
-- An open-search Shadow Bolt hybrid leveling build: check it while leveling at launch.
+- An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
 
 ## Warrior
 

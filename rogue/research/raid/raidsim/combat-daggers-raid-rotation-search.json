@@ -99,11 +99,11 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
@@ -163,41 +163,65 @@
     "gain_seed2": 0.01523108775709936,
     "candidates": 387,
     "pass": 6
+   },
+   {
+    "round": 5,
+    "change": "insert at the top: if (energy \u2264 15 or Eureka! is known and energy \u2264 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea",
+    "gain_seed1": 0.021444028854951558,
+    "gain_seed2": 0.02196426652273109,
+    "candidates": 395,
+    "pass": 8
+   },
+   {
+    "round": 6,
+    "change": "insert in the middle: if not Cutthroat is up and variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Backstab (rank 8)",
+    "gain_seed1": 0.007358363907066234,
+    "gain_seed2": 0.005969949072639036,
+    "candidates": 429,
+    "pass": 8
+   },
+   {
+    "round": 7,
+    "change": "insert at the top: if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote",
+    "gain_seed1": 0.00263651921774688,
+    "gain_seed2": 0.0031682728780209057,
+    "candidates": 454,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "combat-ml-raid": {
-     "before": 717.7407702100434,
-     "after": 735.5975825177209,
-     "base": 717.7407702100434,
+     "before": 659.3738009453654,
+     "after": 683.0865648444399,
+     "base": 659.3738009453654,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 704.3373663475162,
-     "after": 718.6531274469718,
-     "base": 704.3373663475162,
+     "before": 646.3492087071237,
+     "after": 666.8999259092736,
+     "base": 646.3492087071237,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-daggers-raid": {
-     "before": 713.3670300421952,
-     "after": 728.6839702815172,
-     "base": 713.3670300421952,
+     "before": 655.0965326323301,
+     "after": 676.6068295708142,
+     "base": 655.0965326323301,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-combat-daggers-raid-raid-dps": {
-     "before": 701.6522237560724,
-     "after": 713.4119087274448,
-     "base": 701.6522237560724,
+     "before": 643.1412039262163,
+     "after": 661.5485249757887,
+     "base": 643.1412039262163,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -205,7 +229,19 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Combat"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

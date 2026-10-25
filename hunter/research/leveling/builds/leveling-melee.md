@@ -97,25 +97,25 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 
 The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-18, on top of the priority below): never cast Serpent Sting. Together +2.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-24, on top of the priority below): never cast Serpent Sting; Immolation Trap only above 50% mana; Strider Kick only while the mob has more than 35% health; never cast Strider Kick; drink below 60% mana. Together +0.2% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.1 | 5.3 | 6.1 | 7.3 | 12% |
-| Claw | 4.8 | 5.4 | 6.1 | 6.5 | 7.3 | 8% |
-| Melee | 1.8 | 2.3 | 3.2 | 3.8 | 4.6 | 12% |
-| Growl | 1.9 | 2.3 | 3.0 | 3.3 | 3.7 | 0% |
-| Raptor Strike | 1.4 | 1.8 | 2.1 | 2.3 | 2.7 | 13% |
-| Strider Kick | 0.0 | 1.6 | 1.9 | 2.1 | 2.4 | 9% |
-| Bite | 1.0 | 1.2 | 1.6 | 1.8 | 1.9 | 4% |
+| Melee (off-hand) | 3.2 | 4.6 | 5.7 | 6.6 | 7.8 | 13% |
+| Claw | 4.8 | 5.7 | 6.4 | 6.9 | 7.7 | 8% |
+| Melee | 1.8 | 2.7 | 3.5 | 4.1 | 4.9 | 13% |
+| Growl | 1.9 | 2.5 | 3.2 | 3.5 | 3.9 | 0% |
+| Raptor Strike | 1.4 | 1.9 | 2.2 | 2.5 | 2.8 | 14% |
+| Bite | 1.0 | 1.4 | 1.8 | 1.9 | 2.0 | 4% |
 | Mongoose Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.3 | 6% |
 | Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
 | Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 0.7 | 8% |
-| Lacerate | 0.0 | 0.2 | 0.2 | 0.3 | 0.3 | 2% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Immolation Trap | 0.5 | 0.5 | 0.6 | 0.7 | 0.8 | 10% |
+| Lacerate | 0.0 | 0.3 | 0.7 | 0.8 | 0.7 | 5% |
+| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

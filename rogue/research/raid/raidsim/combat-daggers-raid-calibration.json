@@ -7,7 +7,7 @@
   "combat-daggers-raid",
   "opt-combat-daggers-raid-raid-dps",
   "combat-ml-raid",
-  "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json",
+  "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-preset-combat-bs.json",
   "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-r1.json",
   "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-r2.json",
   "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-r3.json",
@@ -17,12 +17,16 @@
   "F:\\wow-forever\\rogue\\research\\raid\\raidsim\\candidates\\cand-combat-daggers-raid-r7.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "rogue/dps",
-  "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+  "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_backstab_p1_bis.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/rogue/combat-daggers-raid.apl.json",
-  "apl_sim": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+  "apl_sim": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
   "race": "RaceDwarf",
   "setting": "dummy",
   "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
@@ -37,9 +41,11 @@
    "conjuredId": 7676,
    "mhImbueId": 26891,
    "ohImbueId": 27186,
-   "goblinSapper": true
+   "goblinSapper": true,
+   "extraMhImbueId": 22756,
+   "extraOhImbueId": 16138
   },
-  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
@@ -47,16 +53,16 @@
  "talents": [
   {
    "talent": "Puncturing Wounds",
-   "sim": 0.17168812450233698,
-   "ev_before": 0.15320660095382704,
-   "ev_after": 0.15320660095382704,
+   "sim": 0.17519366356220997,
+   "ev_before": 0.15607186389909858,
+   "ev_after": 0.16007383024009567,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -68,16 +74,16 @@
   },
   {
    "talent": "Relentless Strikes",
-   "sim": 0.07774596455611284,
-   "ev_before": 0.07217375581386,
-   "ev_after": 0.07217375581386,
+   "sim": 0.08006969268548368,
+   "ev_before": 0.07271110142643374,
+   "ev_after": 0.07443783422335247,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -88,29 +94,17 @@
    ]
   },
   {
-   "talent": "Improved Expose Armor",
-   "sim": 0.05844822558333417,
-   "ev_before": 0.05334401743224673,
-   "ev_after": 0.05334401743224673,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-combat-daggers-raid-raid-dps",
-    "cand-combat-daggers-raid-r7"
-   ]
-  },
-  {
    "talent": "Improved Slice and Dice",
-   "sim": 0.05488865401431766,
-   "ev_before": 0.04952713714362149,
-   "ev_after": 0.04952713714362149,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.06763060874780749,
+   "ev_before": 0.04988804373769554,
+   "ev_after": 0.0685031409294088,
+   "scale": 1.3556520780548453,
+   "how": "fitted",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -122,16 +116,49 @@
   },
   {
    "talent": "Adrenaline Rush",
-   "sim": 0.04818267820435385,
-   "ev_before": 0.045980664478643976,
-   "ev_after": 0.045980664478643976,
+   "sim": 0.06691851996273314,
+   "ev_before": 0.0463145893661759,
+   "ev_after": 0.06699759200391318,
+   "scale": 1.430034196935594,
+   "how": "fitted",
+   "builds": [
+    "combat-daggers-raid",
+    "opt-combat-daggers-raid-raid-dps",
+    "combat-ml-raid",
+    "cand-combat-daggers-raid-preset-combat-bs",
+    "cand-combat-daggers-raid-r1",
+    "cand-combat-daggers-raid-r2",
+    "cand-combat-daggers-raid-r3",
+    "cand-combat-daggers-raid-r4",
+    "cand-combat-daggers-raid-r5",
+    "cand-combat-daggers-raid-r6",
+    "cand-combat-daggers-raid-r7"
+   ]
+  },
+  {
+   "talent": "Improved Expose Armor",
+   "sim": 0.06588515649642866,
+   "ev_before": 0.05368898322814601,
+   "ev_after": 0.054899996274092276,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-combat-daggers-raid-raid-dps",
+    "cand-combat-daggers-raid-r7"
+   ]
+  },
+  {
+   "talent": "Ruthlessness",
+   "sim": 0.044590981583510686,
+   "ev_before": 0.03839939834670891,
+   "ev_after": 0.03928147004139632,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -143,16 +170,16 @@
   },
   {
    "talent": "Malice",
-   "sim": 0.04437789630428948,
-   "ev_before": 0.04401585527853927,
-   "ev_after": 0.04401585527853927,
+   "sim": 0.041960992800321166,
+   "ev_before": 0.04447683918068015,
+   "ev_after": 0.04437410695975603,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -164,37 +191,16 @@
   },
   {
    "talent": "Hack and Slash",
-   "sim": 0.041189239598985135,
-   "ev_before": 0.04162014390910478,
-   "ev_after": 0.04162014390910478,
+   "sim": 0.03875205411756882,
+   "ev_before": 0.04322130126154369,
+   "ev_after": 0.04312099008630507,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
-    "cand-combat-daggers-raid-r1",
-    "cand-combat-daggers-raid-r2",
-    "cand-combat-daggers-raid-r3",
-    "cand-combat-daggers-raid-r4",
-    "cand-combat-daggers-raid-r5",
-    "cand-combat-daggers-raid-r6",
-    "cand-combat-daggers-raid-r7"
-   ]
-  },
-  {
-   "talent": "Ruthlessness",
-   "sim": 0.04087730988800456,
-   "ev_before": 0.03812461710416016,
-   "ev_after": 0.03812461710416016,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "combat-daggers-raid",
-    "opt-combat-daggers-raid-raid-dps",
-    "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -206,16 +212,16 @@
   },
   {
    "talent": "Dual Wield Specialization",
-   "sim": 0.038003966634616075,
-   "ev_before": 0.030940795578930036,
-   "ev_after": 0.030940795578930036,
+   "sim": 0.03840813199316872,
+   "ev_before": 0.03361565584310717,
+   "ev_after": 0.032329156753785386,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -227,16 +233,16 @@
   },
   {
    "talent": "Opportunity",
-   "sim": 0.03311013067580874,
-   "ev_before": 0.03353436418005005,
-   "ev_after": 0.03353436418005005,
+   "sim": 0.033900770259353924,
+   "ev_before": 0.03406717970555768,
+   "ev_after": 0.03484639842456498,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -248,16 +254,16 @@
   },
   {
    "talent": "Precision",
-   "sim": 0.029610818143158687,
-   "ev_before": 0.03561890154527602,
-   "ev_after": 0.03561890154527602,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.021861641083974113,
+   "ev_before": 0.03576009629450892,
+   "ev_after": 0.021861133404471374,
+   "scale": 0.6132499999366701,
+   "how": "fitted",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -269,16 +275,16 @@
   },
   {
    "talent": "Aggression",
-   "sim": 0.02073913144430942,
-   "ev_before": 0.019416790556734,
-   "ev_after": 0.019416790556734,
+   "sim": 0.02185223410990464,
+   "ev_before": 0.01955420076521248,
+   "ev_after": 0.019995046036720046,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -290,16 +296,16 @@
   },
   {
    "talent": "Weapon Expertise",
-   "sim": 0.016853569067323,
-   "ev_before": 0.0193338955980636,
-   "ev_after": 0.0193338955980636,
+   "sim": 0.013695407304028278,
+   "ev_before": 0.020010200727640707,
+   "ev_after": 0.020009974922497255,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -311,15 +317,16 @@
   },
   {
    "talent": "Lethality",
-   "sim": 0.01182085548167855,
-   "ev_before": 0.012354833501785609,
-   "ev_after": 0.012354833501785609,
+   "sim": 0.011289931982979952,
+   "ev_before": 0.011919394100467945,
+   "ev_after": 0.012187280350737835,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -331,37 +338,16 @@
   },
   {
    "talent": "Improved Eviscerate",
-   "sim": 0.003551325471774866,
-   "ev_before": 0.0021917444757569007,
-   "ev_after": 0.0021917444757569007,
+   "sim": 0.0028630325352124314,
+   "ev_before": 0.0017854747974913913,
+   "ev_after": 0.0018250092554722617,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
-    "cand-combat-daggers-raid-r1",
-    "cand-combat-daggers-raid-r2",
-    "cand-combat-daggers-raid-r3",
-    "cand-combat-daggers-raid-r4",
-    "cand-combat-daggers-raid-r5",
-    "cand-combat-daggers-raid-r6",
-    "cand-combat-daggers-raid-r7"
-   ]
-  },
-  {
-   "talent": "Blade Flurry",
-   "sim": 0.003501172592367348,
-   "ev_before": 0.004528529338934411,
-   "ev_after": 0.004528529338934411,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "combat-daggers-raid",
-    "opt-combat-daggers-raid-raid-dps",
-    "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -373,28 +359,29 @@
   },
   {
    "talent": "Cold Blood",
-   "sim": 0.0032288528229312365,
-   "ev_before": 0.002697533536073314,
-   "ev_after": 0.002697533536073314,
+   "sim": 0.002434704915793993,
+   "ev_before": 0.0027118286832208995,
+   "ev_after": 0.002772417593173679,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "combat-ml-raid",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2"
    ]
   },
   {
    "talent": "Flawless Execution",
-   "sim": 0.0016659381079154136,
-   "ev_before": 0.004074173828683547,
-   "ev_after": 0.004074173828683547,
+   "sim": 0.0024316634535176177,
+   "ev_before": 0.004104093753800187,
+   "ev_after": 0.00419580261014192,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "combat-daggers-raid",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -402,10 +389,31 @@
    ]
   },
   {
+   "talent": "Blade Flurry",
+   "sim": 0.00012595472543661077,
+   "ev_before": 0.0049096746045629415,
+   "ev_after": 0.004726807497008114,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid",
+    "opt-combat-daggers-raid-raid-dps",
+    "combat-ml-raid",
+    "cand-combat-daggers-raid-preset-combat-bs",
+    "cand-combat-daggers-raid-r1",
+    "cand-combat-daggers-raid-r2",
+    "cand-combat-daggers-raid-r3",
+    "cand-combat-daggers-raid-r4",
+    "cand-combat-daggers-raid-r5",
+    "cand-combat-daggers-raid-r6",
+    "cand-combat-daggers-raid-r7"
+   ]
+  },
+  {
    "talent": "Deflection",
    "sim": 0.0,
-   "ev_before": 5.539049530093921e-06,
-   "ev_after": 5.539049530093921e-06,
+   "ev_before": 5.4667904702373355e-06,
+   "ev_after": 5.344772830397566e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -419,15 +427,14 @@
   {
    "talent": "Lightning Reflexes",
    "sim": 0.0,
-   "ev_before": 2.2865110996253278e-05,
-   "ev_after": 2.2865110996253278e-05,
+   "ev_before": 2.201340384543443e-05,
+   "ev_after": 2.1524523109482854e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
     "combat-ml-raid",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
@@ -440,58 +447,20 @@
   {
    "talent": "Murder",
    "sim": 0.0,
-   "ev_before": 0.011999187909835455,
-   "ev_after": 0.011999187909835455,
+   "ev_before": 0.011999236845066246,
+   "ev_after": 0.011999253795633713,
    "scale": 1.0,
    "how": "unmeasured",
    "builds": [
     "combat-daggers-raid",
     "opt-combat-daggers-raid-raid-dps",
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
     "cand-combat-daggers-raid-r4",
     "cand-combat-daggers-raid-r5",
     "cand-combat-daggers-raid-r6",
     "cand-combat-daggers-raid-r7"
-   ]
-  },
-  {
-   "talent": "Improved Gouge",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3"
-   ]
-  },
-  {
-   "talent": "Improved Sinister Strike",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3",
-    "cand-combat-daggers-raid-r1",
-    "cand-combat-daggers-raid-r2",
-    "cand-combat-daggers-raid-r3",
-    "cand-combat-daggers-raid-r4",
-    "cand-combat-daggers-raid-r5"
-   ]
-  },
-  {
-   "talent": "Master of Deception",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3"
    ]
   },
   {
@@ -502,11 +471,39 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
+    "cand-combat-daggers-raid-preset-combat-bs",
     "cand-combat-daggers-raid-r1",
     "cand-combat-daggers-raid-r2",
     "cand-combat-daggers-raid-r3",
     "cand-combat-daggers-raid-r4",
     "cand-combat-daggers-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Sinister Strike",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-daggers-raid-preset-combat-bs",
+    "cand-combat-daggers-raid-r1",
+    "cand-combat-daggers-raid-r2",
+    "cand-combat-daggers-raid-r3",
+    "cand-combat-daggers-raid-r4",
+    "cand-combat-daggers-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Sprint",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-daggers-raid-preset-combat-bs"
    ]
   }
  ],
@@ -514,70 +511,70 @@
   "limit": null,
   "builds": {
    "combat-daggers-raid": {
-    "dps": 398.11064969749356,
-    "surplus": 398.7712612792857,
+    "dps": 355.8696281926459,
+    "surplus": 355.92732684214354,
     "oom_seconds": 0.0,
-    "deficit": 0.0016566178306651747
+    "deficit": 0.00016210795054583116
    },
    "opt-combat-daggers-raid-raid-dps": {
-    "dps": 418.5624039116808,
-    "surplus": 419.65367027773686,
+    "dps": 376.3912566366728,
+    "surplus": 375.6862782604094,
     "oom_seconds": 0.0,
-    "deficit": 0.002600397526212106
+    "deficit": 0.0
    },
    "combat-ml-raid": {
-    "dps": 401.5324263756655,
-    "surplus": 401.84644985357534,
+    "dps": 358.65835929039076,
+    "surplus": 358.6771737987478,
     "oom_seconds": 0.0,
-    "deficit": 0.0007814514176354148
+    "deficit": 5.2455271010831694e-05
    },
-   "cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3": {
-    "dps": 393.51097960930434,
-    "surplus": 394.1293630372519,
+   "cand-combat-daggers-raid-preset-combat-bs": {
+    "dps": 354.81406420648807,
+    "surplus": 354.8470321125151,
     "oom_seconds": 0.0,
-    "deficit": 0.0015689859369577563
+    "deficit": 9.290737428668816e-05
    },
    "cand-combat-daggers-raid-r1": {
-    "dps": 401.5324263756655,
-    "surplus": 401.84644985357534,
+    "dps": 358.65835929039076,
+    "surplus": 358.6771737987478,
     "oom_seconds": 0.0,
-    "deficit": 0.0007814514176354148
+    "deficit": 5.2455271010831694e-05
    },
    "cand-combat-daggers-raid-r2": {
-    "dps": 397.230615937897,
-    "surplus": 397.550589780889,
+    "dps": 354.81406420648807,
+    "surplus": 354.8470321125151,
     "oom_seconds": 0.0,
-    "deficit": 0.0008048632078959672
+    "deficit": 9.290737428668816e-05
    },
    "cand-combat-daggers-raid-r3": {
-    "dps": 398.11064969749356,
-    "surplus": 398.7712612792857,
+    "dps": 355.8696281926459,
+    "surplus": 355.92732684214354,
     "oom_seconds": 0.0,
-    "deficit": 0.0016566178306651747
+    "deficit": 0.00016210795054583116
    },
    "cand-combat-daggers-raid-r4": {
-    "dps": 397.22296612748005,
-    "surplus": 397.89400599403064,
+    "dps": 355.0624132476816,
+    "surplus": 355.12010612933,
     "oom_seconds": 0.0,
-    "deficit": 0.0016864789527909485
+    "deficit": 0.0001624601948823079
    },
    "cand-combat-daggers-raid-r5": {
-    "dps": 399.6525738034568,
-    "surplus": 399.6928296491785,
+    "dps": 356.88862623288605,
+    "surplus": 357.05707662550526,
     "oom_seconds": 0.0,
-    "deficit": 0.0001007169574621658
+    "deficit": 0.0004717744126827572
    },
    "cand-combat-daggers-raid-r6": {
-    "dps": 399.6525738034568,
-    "surplus": 399.6928296491785,
+    "dps": 356.88862623288605,
+    "surplus": 357.05707662550526,
     "oom_seconds": 0.0,
-    "deficit": 0.0001007169574621658
+    "deficit": 0.0004717744126827572
    },
    "cand-combat-daggers-raid-r7": {
-    "dps": 418.5624039116808,
-    "surplus": 419.65367027773686,
+    "dps": 376.3912566366728,
+    "surplus": 375.6862782604094,
     "oom_seconds": 0.0,
-    "deficit": 0.002600397526212106
+    "deficit": 0.0
    }
   },
   "removals": {}

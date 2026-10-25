@@ -2,11 +2,11 @@
   "_doc": "Rogue spec models. Always dual-wield: white swings carry the +19% miss penalty. Energy talents are resource_cost on the builder. Weapon-type talents use weapon:sword / weapon:dagger tags. The builder source is tagged 'builder' (+ 'builder-dagger' for Backstab/Mutilate builds) so Mutilate/Puncturing Wounds/Opportunity apply to the right one. Poisons are a separate source (school:nature, ability:Poisons). min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "combat-swords-raid": {
-      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Raid sim shares (2026-10-03, combat-swords-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 37%, sinister 32%, white_oh 20%, eviscerate 6%, poisons 5%; 7% of the damage matched no source. Fight lab calibration [leveling-st] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-st at level 60, 1500 fights): shares are the measured damage split (Eviscerate 27%, Sinister Strike 21%, Melee 16%, Garrote 12%, Instant Poison 10%, Melee (off-hand) 8%, Riposte 4%, Deadly Poison 2%) and the leveling time split is fight 85% / drink 0% / eat 10% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Fight lab calibration [leveling-aoe] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 33%, Sinister Strike 23%, Melee 17%, Melee (off-hand) 10%, Garrote 6%, Instant Poison 5%, Riposte 3%, Deadly Poison 2%, Hack and Slash 1%) and the leveling time split is fight 87% / drink 0% / eat 7% / other 0% / death 6% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Fight lab calibration [leveling-st] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-st at level 60, 1500 fights): shares are the measured damage split (Eviscerate 27%, Sinister Strike 21%, Melee 16%, Garrote 12%, Instant Poison 10%, Melee (off-hand) 8%, Riposte 4%, Deadly Poison 2%) and the leveling time split is fight 85% / drink 0% / eat 10% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Fight lab calibration [leveling-aoe] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 33%, Sinister Strike 23%, Melee 17%, Melee (off-hand) 10%, Garrote 6%, Instant Poison 5%, Riposte 3%, Deadly Poison 2%, Hack and Slash 1%) and the leveling time split is fight 87% / drink 0% / eat 7% / other 0% / death 6% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-24, combat-swords-raid in the wowsims/forever simulator 30f67f5d2): white_mh 41%, sinister 31%, white_oh 22%, eviscerate 7%; 12% of the damage matched no source.",
       "sources": [
         {
           "id": "white_mh",
-          "share": 0.3694,
+          "share": 0.4061,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "dw", "weapon:sword"],
           "miss_extra": 0.19,
           "profile_overrides": {
@@ -20,7 +20,7 @@
         },
         {
           "id": "white_oh",
-          "share": 0.1989,
+          "share": 0.2187,
           "tags": ["type:melee", "white", "school:physical", "offhand", "dw", "weapon:sword"],
           "miss_extra": 0.19,
           "profile_overrides": {
@@ -34,7 +34,7 @@
         },
         {
           "id": "sinister",
-          "share": 0.3206,
+          "share": 0.3054,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Sinister Strike", "builder", "weapon:sword"],
           "cost": 45,
           "profile_overrides": {
@@ -48,7 +48,7 @@
         },
         {
           "id": "eviscerate",
-          "share": 0.0611,
+          "share": 0.0697,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Eviscerate", "finisher", "weapon:sword"],
           "cost": 35,
           "profile_overrides": {
@@ -62,7 +62,7 @@
         },
         {
           "id": "poisons",
-          "share": 0.0499,
+          "share": 0.0,
           "tags": ["school:nature", "ability:Poisons", "poison"],
           "can_crit": false,
           "game_overrides": {
@@ -149,11 +149,11 @@
       }
     },
     "combat-daggers-raid": {
-      "note": "Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as combat-swords-raid; Mutilate ranks (30/40/50/60) add 23/33/48/67 per hand before the 75%, Hemorrhage is one normalized-damage rank. Raid sim shares (2026-10-03, combat-daggers-raid in the ElliotWood/Forever simulator b0f0df3): backstab 40%, white_mh 34%, white_oh 18%, poisons 7%, eviscerate 2%; 7% of the damage matched no source. Fight lab speed (2026-10-24): its leveling build kills 0.85x as fast as combat-swords-raid's optimizer build (level-weighted time per kill 29.7s vs 25.2s), written as abs_dps_factor so respec.py compares the models on that.",
+      "note": "Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as combat-swords-raid; Mutilate ranks (30/40/50/60) add 23/33/48/67 per hand before the 75%, Hemorrhage is one normalized-damage rank. Fight lab speed (2026-10-24): its leveling build kills 0.85x as fast as combat-swords-raid's optimizer build (level-weighted time per kill 29.7s vs 25.2s), written as abs_dps_factor so respec.py compares the models on that. Raid sim shares (2026-10-24, combat-daggers-raid in the wowsims/forever simulator 30f67f5d2): backstab 41%, white_mh 37%, white_oh 20%, eviscerate 2%; 13% of the damage matched no source.",
       "sources": [
         {
           "id": "white_mh",
-          "share": 0.3354,
+          "share": 0.3726,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "dw", "weapon:dagger"],
           "miss_extra": 0.19,
           "game_overrides": {
@@ -162,7 +162,7 @@
         },
         {
           "id": "white_oh",
-          "share": 0.1806,
+          "share": 0.2006,
           "tags": ["type:melee", "white", "school:physical", "offhand", "dw", "weapon:dagger"],
           "miss_extra": 0.19,
           "game_overrides": {
@@ -171,7 +171,7 @@
         },
         {
           "id": "backstab",
-          "share": 0.3956,
+          "share": 0.4112,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Backstab", "ability:Mutilate", "builder", "builder-dagger", "weapon:dagger"],
           "cost": 60,
           "min_level": 4,
@@ -181,7 +181,7 @@
         },
         {
           "id": "eviscerate",
-          "share": 0.0193,
+          "share": 0.0156,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Eviscerate", "finisher", "weapon:dagger"],
           "cost": 35,
           "game_overrides": {
@@ -190,7 +190,7 @@
         },
         {
           "id": "poisons",
-          "share": 0.0691,
+          "share": 0.0,
           "tags": ["school:nature", "ability:Poisons", "poison"],
           "can_crit": false,
           "game_overrides": {

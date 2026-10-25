@@ -60,17 +60,19 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 5** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.4% | 52 s |
+| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 6/32/13 | 489 | -5.2% | 760 | -5.3% | 62 s |
+| 3 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: derived (open search) | 0/29/22 | 470 | -8.9% | 802 | +0.0% | 64 s |
+| 4 | *FFB* | community simulator | - | 464 | -10.1% | 792 | -1.3% | 67 s |
+| 5 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 464 | -10.1% | 764 | -4.8% | 58 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-14, 18 changes to the base rotation; third-seed check: ):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-24, 18 changes to the base rotation; third-seed check: open winner 496 -> 469 DPS (-5.4%), frostfire-raid 506 -> 515 DPS (+1.8%), sim preset: FFB 485 -> 463 DPS (-4.5%), frostfire-ml-raid 477 -> 488 DPS (+2.3%), frostfire-fingers-of-frost-raid 494 -> 463 DPS (-6.3%)):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
@@ -89,7 +91,7 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
   17. spell probe: insert in the middle: cast Arcane Blast (+1.8%, pass 9)
   18. spell probe: insert at the top: cast Arcane Power (+1.2%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-10-14, 23 changes to the base rotation; third-seed check: ):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-10-24, 27 changes to the base rotation; third-seed check: open winner 779 -> 801 DPS (+2.8%), frostfire-fingers-of-frost-raid 749 -> 763 DPS (+1.9%), sim preset: FFB 766 -> 794 DPS (+3.7%), frostfire-raid 726 -> 743 DPS (+2.4%), frostfire-ml-raid 732 -> 758 DPS (+3.5%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -113,34 +115,42 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
   21. rank 2 below 30% mana, above: if mana % ≥ 10%: cast Frostfire Bolt (+1.4%, pass 12)
   22. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and mana % < 30%: cast Frostfire Bolt (+0.9%, pass 12)
   23. spell probe: insert at the top: cast Arcane Power (+0.3%, pass 13)
+  24. drop: if Fingers of Frost is up: cast Ice Lance (+217.8%, pass 14)
+  25. insert at the top: cast Demonic Rune (+0.4%, pass 14)
+  26. insert before the filler: cast Robe of the Archmage (+0.3%, pass 14)
+  27. threshold 15s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 15s): cast Scorch (+0.4%, pass 15)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.1 |
-| 2 | cast Fire Blast | 6.4 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.1 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.0 |
+| 2 | cast Fire Blast | 5.0 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.0 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 2.6 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 2.6 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 3.0 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 3.0 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 8.3 |
-| 11 | cast Robe of the Archmage | as ready |
-| 12 | cast Scorch | 4.1 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 5.5 |
+| 11 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 1.4 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 0.4 |
+| 13 | cast Robe of the Archmage | as ready |
+| 14 | cast Scorch | 6.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7), cast Fireball (rank 11) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 
 Damage by ability:
 
 | Ability | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) |
 |---|---|
-| Frostfire Bolt | 35% |
-| Fire Blast | 21% |
-| Pyroblast | 20% |
-| Ignite | 12% |
-| Scorch | 8% |
-| Fireball | 3% |
+| Frostfire Bolt | 25% |
+| Pyroblast | 25% |
+| Fire Blast | 17% |
+| Scorch | 12% |
+| Ignite | 10% |
+| Arcane Missiles | 8% |
+| Fireball | 2% |
+| Demonic Rune | 0% |
 
 ## Notes
 

@@ -211,8 +211,8 @@ def research(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, leads, be
     cands, seen = [], set()
     for f in [rec2["winner"]] + rec2.get("finalists", [])[:5] + [{"allocation": ld["allocation"]} for ld in leads] + [{"allocation": r["winner"]["allocation"]}]:
         k = tuple(sorted(FT.flat_of(f).items()))
-        if k not in seen:
-            seen.add(k)
+        if k not in seen and space.valid(FT.flat_of(f)):   # 2026-10-25 audit: a lead made legal by with_talents may leave the space
+            seen.add(k)                                     # (another spec's build, a signature talent dropped): no winner then
             cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
     builds = cands + list(ours.values())
     res = FT.race(pool, cls, spec, builds, FO.RACE_FIGHTS, 3)

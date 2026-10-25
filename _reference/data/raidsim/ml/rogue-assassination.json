@@ -2523,5 +2523,117 @@
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "signature_check": {
+  "spec": "Assassination",
+  "ok": false,
+  "core_share": 0.7158,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [
+   "Mutilate"
+  ],
+  "why": "lacks Mutilate",
+  "entry": "assassination-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 669.4,
+  "date": "2026-10-24",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Attack": 0.4837,
+   "Backstab": 0.2636,
+   "Eviscerate": 0.1312,
+   "Deadly Poison V": 0.0569,
+   "Instant Poison VI": 0.044,
+   "Garrote": 0.0108,
+   "Goblin Sapper Charge": 0.0098
+  },
+  "casts": {
+   "Slice and Dice": 8.25,
+   "Cold Blood": 1.0,
+   "spell 11337": 45.97,
+   "Backstab": 29.88,
+   "Eviscerate": 11.04,
+   "Garrote": 1.0,
+   "spell 25349": 36.24,
+   "Vanish": 1.0
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     5
+    ],
+    [
+     "Vile Poisons",
+     2
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     5
+    ],
+    [
+     "Seal Fate",
+     5
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     5
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     3
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Opportunity",
+     2
+    ]
+   ]
+  }
  }
 }

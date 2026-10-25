@@ -2,11 +2,13 @@
 
 [Hunter](../README.md) > [Raid (group)](README.md) > Marksmanship
 
-**[Marksmanship — Lone Wolf](../research/raid/builds/mm-lone-wolf-raid.md)** (5/41/5) — [open the talent tree](https://talentsforever.com/hunter/60/5-0053452511513051-5-7)
+**[Marksmanship — Raid](../research/raid/builds/marksmanship-open-raid.md)** (7/39/5) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053352501522051-5-7)
 
-**Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Marksmanship — Lone Wolf), which stays below as the alternative. A model of the beta, to check at launch.
 
-- With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 879 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-7)
+**Other setups of this spec.** This build is the With a pet setup. The spec's best build for each other setup, in a full raid:
+
+- Lone Wolf: [Marksmanship — Lone Wolf](../research/raid/builds/mm-lone-wolf-raid.md) (5/41/5, 759 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-0053452511513051-5-7)
 
 ## How to play
 
@@ -14,15 +16,13 @@
 
 **Keep up all fight:** **Aspect of the Hawk**.
 
-**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
-
 **Then press the first one that is ready**, top to bottom:
 
 1. **Aimed Shot**
-2. **Rapid Fire**
-3. **Multi-Shot**
-4. **Serpent Sting**: keep it on the target
-5. **Arcane Shot**
+2. **Arcane Shot**
+3. **Rapid Fire**
+4. **Multi-Shot**
+5. **Serpent Sting**: keep it on the target
 6. **Sniper Shot**
 
 Between these, **Auto Shot** keeps firing on its own.
@@ -56,20 +56,22 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - In the last seconds, skip the **Serpent Sting** refresh and do not start a **Sniper Shot** that will not finish; **Arcane Shot** instead.
 - With a pet out **Lone Wolf** does nothing: if you want the pet, take the pet build linked above, whose rotation puts **Arcane Shot** first.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 893 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 781 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 819 | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) |
-| Phase 1 BiS | 887 | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) (ties this build) |
+| Pre-BiS | 748 | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-7) |
+| Phase 1 BiS | 777 | this build |
 
-**The gear** (average item level: Pre-BiS 62.9; Phase 1 BiS 66.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 64.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -94,10 +96,10 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 ## Other builds of this spec
 
-- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 855 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-7)
-- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 813 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--7)
-- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 801 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--7)
+- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 715 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--7)
+- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 706 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/500002-3053552011523051-3-7)
+- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 684 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

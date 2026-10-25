@@ -21,15 +21,15 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [mage](../mage/research/leveling/open-search.md) | barrage-frost-leveling | [18/2/31](https://talentsforever.com/mage/60/22220050011003-02-05253233011030021-7) | Frost | 28.74 | +4.3% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [30/0/21](https://talentsforever.com/paladin/60/5102300310512115--23225131011-7) | Holy | 30.19 | +18.9% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/3/30](https://talentsforever.com/mage/60/22101252000003-03-13253223012030021-7) | Frost | 30.24 | +4.0% |
+| [warlock](../warlock/research/leveling/open-search.md) | demonology-leveling | [27/24/0](https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--7) | Hybrid Affliction/Demonology | 30.42 | +2.4% |
 | [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [13/32/6](https://talentsforever.com/shaman/60/5322001-050130321005112251-05001-7) | Enhancement | 30.49 | +1.4% |
-| [warlock](../warlock/research/leveling/open-search.md) | demonology-leveling | [25/26/0](https://talentsforever.com/warlock/60/24520020135001-00250322112013013--7) | Hybrid Affliction/Demonology | 30.67 | +1.1% |
 | [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [0/32/19](https://talentsforever.com/paladin/60/-1530510301311521-05125230001-7) | Protection | 30.82 | +3.0% |
-| [warlock](../warlock/research/leveling/open-search.md) | destruction-leveling | [29/10/12](https://talentsforever.com/warlock/60/2550002013501104-00050302-005034-7) | Hybrid Affliction/Destruction | 32.18 | +7.5% |
 | [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [34/17/0](https://talentsforever.com/mage/60/0452005003100311531-2340230010002--7) | Arcane | 32.45 | +31.0% |
 | [mage](../mage/research/leveling/open-search.md) | fire-leveling | [0/31/20](https://talentsforever.com/mage/60/-23151031110135031-1235020301003-7) | Fire | 34.21 | +5.4% |
 | [mage](../mage/research/leveling/open-search.md) | frostfire-leveling | [1/25/25](https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-7) | Hybrid Fire/Frost | 34.41 | - |
 | [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [21/22/8](https://talentsforever.com/shaman/60/5013321023001-054030321200002-053-7) | Hybrid Elemental/Enhancement | 34.88 | +5.0% |
-| [warlock](../warlock/research/leveling/open-search.md) | affliction-leveling | [27/24/0](https://talentsforever.com/warlock/60/2550002013401112-03440302110200013--7) | Hybrid Affliction/Demonology | 38.17 | +3.0% |
+| [warlock](../warlock/research/leveling/open-search.md) | affliction-leveling | [37/14/0](https://talentsforever.com/warlock/60/25500322134001351-0025030211--7) | Affliction | 37.38 | +5.1% |
 | [priest](../priest/research/leveling/open-search.md) | discipline-leveling | [30/0/21](https://talentsforever.com/priest/60/525020231133201--42522000020301-7) | Discipline | 39.52 | +17.0% |
 | [druid](../druid/research/leveling/open-search.md) | balance-dps | [38/0/13](https://talentsforever.com/druid/60/5432200115501351--505003-7) | Balance | 43.03 | +2.2% |
+| [warlock](../warlock/research/leveling/open-search.md) | destruction-leveling | [5/24/22](https://talentsforever.com/warlock/60/05-10050332012210013-0450304123-7) | Hybrid Demonology/Destruction | 44.56 | +14.1% |
 | [priest](../priest/research/leveling/open-search.md) | holy-leveling | [22/21/8](https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7) | Hybrid Discipline/Holy | 51.39 | +8.6% |

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Discipline raid build (discipline-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree first: 43 s per kill over levels 20-60, the discipline-leveling rotation).
+Level with the talents of the Discipline raid build (discipline-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 46 s per kill over levels 20-60, the discipline-leveling rotation).
 
 ## Point allocation
 
@@ -60,22 +60,22 @@ Level with the talents of the Discipline raid build (discipline-ml-heal) so you 
 | 22-24 | Discipline | Meditation | 3 | 15/0/0 |
 | 25 | Discipline | Mental Agility | 1 | 16/0/0 |
 | 26 | Discipline | Inner Focus | 1 | 17/0/0 |
-| 27-29 | Discipline | Improved Power Word: Shield | 3 | 20/0/0 |
-| 30 | Discipline | Penance | 1 | 21/0/0 |
-| 31-33 | Discipline | Silent Resolve | 3 | 24/0/0 |
-| 34 | Discipline | Power in Light | 1 | 25/0/0 |
-| 35 | Discipline | Holy Precision | 1 | 26/0/0 |
-| 36 | Discipline | Soul Warding | 1 | 27/0/0 |
-| 37-39 | Discipline | Divine Aegis | 3 | 30/0/0 |
-| 40-42 | Holy | Twilight Focus | 3 | 30/3/0 |
-| 43 | Holy | Improved Renew | 1 | 30/4/0 |
-| 44-48 | Holy | Holy Specialization | 5 | 30/9/0 |
-| 49 | Holy | Divine Fury | 1 | 30/10/0 |
-| 50-51 | Holy | Blessed Recovery | 2 | 30/12/0 |
-| 52-54 | Holy | Inspiration | 3 | 30/15/0 |
-| 55-56 | Holy | Holy Reach | 2 | 30/17/0 |
-| 57-59 | Holy | Improved Healing | 3 | 30/20/0 |
-| 60 | Holy | Litany of Light | 1 | 30/21/0 |
+| 27-29 | Holy | Twilight Focus | 3 | 17/3/0 |
+| 30-32 | Discipline | Improved Power Word: Shield | 3 | 20/3/0 |
+| 33 | Discipline | Penance | 1 | 21/3/0 |
+| 34 | Holy | Improved Renew | 1 | 21/4/0 |
+| 35-39 | Holy | Holy Specialization | 5 | 21/9/0 |
+| 40 | Holy | Divine Fury | 1 | 21/10/0 |
+| 41-42 | Holy | Blessed Recovery | 2 | 21/12/0 |
+| 43-45 | Holy | Inspiration | 3 | 21/15/0 |
+| 46-47 | Holy | Holy Reach | 2 | 21/17/0 |
+| 48-50 | Holy | Improved Healing | 3 | 21/20/0 |
+| 51 | Holy | Litany of Light | 1 | 21/21/0 |
+| 52-54 | Discipline | Silent Resolve | 3 | 24/21/0 |
+| 55 | Discipline | Power in Light | 1 | 25/21/0 |
+| 56 | Discipline | Holy Precision | 1 | 26/21/0 |
+| 57 | Discipline | Soul Warding | 1 | 27/21/0 |
+| 58-60 | Discipline | Divine Aegis | 3 | 30/21/0 |
 
 ## Leveling rotation
 
@@ -83,7 +83,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-10-22 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 43 s; stats model's order 44 s; own tree last 46 s. First Discipline point at level 10.
+- 2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 46 s; own tree first 46 s; own tree last 47 s. First Discipline point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -92,7 +92,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-18, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; never cast Summon Hawk; drink below 15% mana. Together +8.2% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-24, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; never cast Summon Hawk; drink below 15% mana. Together +8.5% time per kill saved for `bm-solo-farm` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 

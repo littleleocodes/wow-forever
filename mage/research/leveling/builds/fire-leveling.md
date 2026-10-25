@@ -49,6 +49,35 @@ The Fire leveling build derived on 2026-09-30 (derive_leveling.py): searched in 
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Frost | Elemental Precision | 3 | 0/0/3 |
+| 13-14 | Frost | Frost Warding | 2 | 0/0/5 |
+| 15 | Frost | Permafrost | 1 | 0/0/6 |
+| 16-18 | Frost | Frostbite | 3 | 0/0/9 |
+| 19 | Frost | Ice Shards | 1 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-24 | Frost | Ice Shards | 4 | 0/0/15 |
+| 25 | Frost | Ice Block | 1 | 0/0/16 |
+| 26-28 | Frost | Shatter | 3 | 0/0/19 |
+| 29 | Fire | Improved Fire Blast | 1 | 0/1/19 |
+| 30-33 | Fire | Improved Fireball | 4 | 0/5/19 |
+| 34-38 | Fire | Ignite | 5 | 0/10/19 |
+| 39-41 | Fire | Burning Soul | 3 | 0/13/19 |
+| 42 | Fire | Impact | 1 | 0/14/19 |
+| 43 | Fire | Improved Fireball | 1 | 0/15/19 |
+| 44-46 | Fire | Improved Scorch | 3 | 0/18/19 |
+| 47-48 | Fire | Master of Elements | 2 | 0/20/19 |
+| 49 | Fire | Blast Wave | 1 | 0/21/19 |
+| 50-53 | Fire | Critical Mass | 4 | 0/25/19 |
+| 54-56 | Fire | Fire Power | 3 | 0/28/19 |
+| 57 | Fire | Master of Elements | 1 | 0/29/19 |
+| 58 | Fire | Critical Mass | 1 | 0/30/19 |
+| 59 | Fire | Combustion | 1 | 0/31/19 |
+| 60 | Fire | Pyroblast | 1 | 0/32/19 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — The scorer's value in this build: +38.5% of its score (model fire-leveling).
@@ -72,6 +101,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
 - 2026-10-17 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 37.9 s per kill; stats model 40.1 s; own tree first 42.2 s.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
+- 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s.
 
 ## Open questions (verify in the live game)
 

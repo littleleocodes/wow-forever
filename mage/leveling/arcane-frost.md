@@ -4,49 +4,53 @@
 
 *Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost.* (a hybrid: Arcane/Frost).
 
-**[Arcane-Frost (optimized)](../research/leveling/builds/opt-frost-leveling-leveling-st.md)** (21/3/27) — [open the talent tree](https://talentsforever.com/mage/60/2102225100100311-03-0535300301113002-7)
+**✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
+
+**[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/22220050011003-02-05253233011030021-7)
+
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+
+**Signature spells:** 88% of the damage at level 60 in the fight lab comes from Frostbolt, Arcane Missiles, Ice Lance, Arcane Blast (the spec's rule: at least 60%; **Frostbolt**, **Arcane Missiles** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Cold Snap** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
-2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health.
-3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
-4. Below a fifth of the mob's health: an **Ice Lance** that will kill, or your wand. No Fire Blast or Cone of Cold at all.
-5. **Counterspell** a mob that casts spells.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead.
+2. **Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.
+3. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**. No Cone of Cold.
+4. **Ice Lance** while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
+5. To finish: a **Fire Blast** (not below a tenth of the mob's health) or **Ice Lance** that will kill, or your wand.
+6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
 
 ## Why this rotation
 
-This hybrid levels on the Arcane list: **Arcane Blast** and **Arcane Wrath** while the mob walks in, **Arcane Missiles** from range, **Frost Nova** and a step back when the mob arrives. Its points go into Arcane first (levels 10-38); the Frost half comes late (**Ice Lance** at 49, **Shatter** from 54), and from then **Ice Lance** into the frozen mob is about as big a part of the kill as **Arcane Blast**.
+This hybrid plays the Frost list with one Arcane addition: **Frostbolt** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the freeze, and a free, fast **Arcane Missiles** whenever **Missile Barrage** lights up. Its first 25 points (levels 10-34) are Frost; **Missile Barrage** comes at 35-36 and the rest of the Arcane half from 43. In the fight lab at level 60, **Ice Lance** is about 53% of its damage, **Frostbolt** 26%, **Fire Blast** 10% and **Arcane Missiles** 9%.
 
 **Why it works**
 
-- **Missile Barrage** (levels 10-11) is the build's most valuable talent at level 60 in the fight lab: **Arcane Blast** (40%), **Arcane Wrath** and **Frostbolt** (20%) can make your next **Arcane Missiles** free and twice as fast. Cast those at once, after your two **Arcane Blast** stacks or when the mob is on you.
-- **Arcane Blast** (level 24) twice while the mob walks in: each cast gives all your spells spell damage (15% of your Intellect) for 15 seconds and makes the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you.
-- **Arcane Wrath** (level 25) as the opener when its 3.5-second cast lands before the mob arrives, then whenever it is ready and the cast fits. It gains spell damage from your maximum mana.
-- **Arcane Missiles** is the channel at range, but only while the mob has more than 35% health: a full channel would overkill. Below that, **Frostbolt** (not below a fifth of the mob's health), then **Fire Blast** (not below a tenth), an **Ice Lance** or the wand finish it. **Improved Channeling** keeps hits from cutting the Missiles short.
-- **Frost Nova** and a step back when the mob arrives; from level 49, **Ice Lance** into the frozen mob: 200% more damage to a frozen target, with **Shatter**'s 50% more crit chance from level 54.
+- **Frostbolt** from as far away as you can and as the filler: its slow buys casts before the mob arrives, its chill rolls **Frostbite** (15% to freeze) and **Fingers of Frost** (15%: the next 2 spells count as cast on a frozen target), and with **Missile Barrage** (levels 35-36) each one has a 20% chance to light it up. **Improved Frostbolt** (levels 10-14) cuts its cast by half a second.
+- **Arcane Missiles** only on a **Missile Barrage** proc: the channel is half as long and costs nothing. Cast it at range or into a freeze, not while the mob is hitting you: **Improved Channeling** (2 points) gives only a 40% chance that a hit does not interrupt it. The fight lab casts it about once every three kills at level 60.
+- **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen: 200% more damage to a frozen target, 50% more crit chance from **Shatter** and bigger crits from **Ice Shards**. In the fight lab a kill at level 60 takes about 3.7 seconds longer without **Shatter**, 2.9 without **Ice Lance** and 1.3 without **Missile Barrage**.
+- **Fire Blast** when the mob would reach you before a **Frostbolt** lands, when it is on you and **Frost Nova** is down, and to finish one it will kill. The tuned rules (2026-10-23) start no **Frostbolt** or **Fire Blast** once the mob is below a tenth of its health: an **Ice Lance** that will kill, or the wand, finishes it.
+- **Arcane Blast** (level 54) is one of the points that open **Arcane Meditation**'s row; this list never casts it. **Arcane Concentration** (levels 46-50) and **Arcane Meditation** (56-58) are for mana.
 
 **Caveats**
 
-- **Presence of Mind** (level 32) goes at the pull. This build has no **Arcane Power**: skip that part of the list.
-- Mana: **Arcane Missiles** costs 655 at top rank and every **Arcane Blast** stack makes the next one dearer. Drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana.
-- **Cone of Cold** stays out of single pulls: the tuned rotation never casts it.
-- Pulls of several mobs: **Arcane Explosion** hits everything within 10 yards.
+- This build takes no **Cold Snap**: skip that part of the list. Before level 35 it is a plain Frost mage, with no **Missile Barrage** yet.
+- **Cone of Cold** stays out of single pulls: the tuned rules never cast it (about 1% faster kills in the fight lab). **Winter's Chill** (level 42) only helps **Cone of Cold**.
+- Rest: the tuned rules drink below 15% of your mana and eat below 40% of your health, later than the other mage lists (each a little faster per kill in the fight lab); **Evocation** between fights when it is ready and you are under 40% mana.
 
 **When to change it**
 
-- Below about a third of the mob's health, skip **Arcane Missiles** (even a free one from **Missile Barrage**); **Frostbolt** down to a fifth, then **Fire Blast**, **Ice Lance** or the wand.
-- If the mob would reach you before an **Arcane Blast** or **Arcane Wrath** finishes, do not start it: **Frost Nova**, step back, and cast while it is frozen.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
+- On a nearly dead mob, skip even a free **Arcane Missiles** (the fight lab does not channel it into a mob a few wand hits from death): an **Ice Lance** or **Fire Blast** that will kill, or the wand.
+- Mob on you with **Frost Nova** down: **Fire Blast**, then keep casting **Frostbolt**; the list does not use **Cone of Cold** here.
 
 ## Talents while leveling
 
@@ -59,37 +63,42 @@ One point per level from 10, in this order:
 | 18-19 | Elemental Precision (Frost) | 2 |
 | 20 | Ice Lance (Frost) | 1 |
 | 21-23 | Frost Channeling (Frost) | 3 |
-| 24 | Elemental Precision (Frost) | 1 |
-| 25 | Ice Block (Frost) | 1 |
-| 26-27 | Shatter (Frost) | 2 |
-| 28 | Ice Shards (Frost) | 1 |
-| 29 | Shatter (Frost) | 1 |
+| 24 | Ice Shards (Frost) | 1 |
+| 25 | Shatter (Frost) | 1 |
+| 26-27 | Ice Shards (Frost) | 2 |
+| 28-29 | Shatter (Frost) | 2 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
-| 32-35 | Ice Shards (Frost) | 4 |
-| 36-37 | Missile Barrage (Arcane) | 2 |
-| 38-39 | Wand Specialization (Arcane) | 2 |
-| 40 | Arcane Focus (Arcane) | 1 |
-| 41-45 | Arcane Concentration (Arcane) | 5 |
-| 46 | Arcane Blast (Arcane) | 1 |
-| 47-48 | Arcane Subtlety (Arcane) | 2 |
-| 49-50 | Magic Absorption (Arcane) | 2 |
-| 51 | Arcane Wrath (Arcane) | 1 |
-| 52-54 | Arcane Meditation (Arcane) | 3 |
-| 55 | Arcane Resilience (Arcane) | 1 |
-| 56 | Presence of Mind (Arcane) | 1 |
-| 57-59 | Incineration (Fire) | 3 |
-| 60 | Arctic Reach (Frost) | 1 |
+| 32-33 | Ice Shards (Frost) | 2 |
+| 34 | Arctic Reach (Frost) | 1 |
+| 35-36 | Missile Barrage (Arcane) | 2 |
+| 37-38 | Improved Frost Nova (Frost) | 2 |
+| 39-41 | Permafrost (Frost) | 3 |
+| 42 | Winter's Chill (Frost) | 1 |
+| 43-44 | Wand Specialization (Arcane) | 2 |
+| 45 | Arcane Focus (Arcane) | 1 |
+| 46-50 | Arcane Concentration (Arcane) | 5 |
+| 51 | Arcane Focus (Arcane) | 1 |
+| 52 | Improved Channeling (Arcane) | 1 |
+| 53 | Arcane Impact (Arcane) | 1 |
+| 54 | Arcane Blast (Arcane) | 1 |
+| 55 | Improved Channeling (Arcane) | 1 |
+| 56-58 | Arcane Meditation (Arcane) | 3 |
+| 59-60 | Incineration (Fire) | 2 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 27 |
-| 30 | 35 |
-| 40 | 37 |
-| 50 | 31 |
-| 60 | 27 |
+| 30 | 32 |
+| 40 | 33 |
+| 50 | 28 |
+| 60 | 25 |
+
+## Other builds of this spec
+
+- [Arcane-Frost (optimized)](../research/leveling/builds/opt-frost-leveling-leveling-st.md) (21/3/27, 30 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2102225100100311-03-0535300301113002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

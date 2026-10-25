@@ -49,6 +49,36 @@ The Arcane leveling build derived on 2026-09-30 (derive_leveling.py): searched i
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 1/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 1 spell cast as if the target were Frozen. Lasts 15 sec. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
+| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
+| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-24 | Frost | Ice Shards | 4 | 0/0/15 |
+| 25 | Frost | Shatter | 1 | 0/0/16 |
+| 26 | Frost | Ice Block | 1 | 0/0/17 |
+| 27 | Frost | Ice Shards | 1 | 0/0/18 |
+| 28-29 | Frost | Shatter | 2 | 0/0/20 |
+| 30 | Frost | Fingers of Frost | 1 | 0/0/21 |
+| 31-32 | Arcane | Wand Specialization | 2 | 2/0/21 |
+| 33-35 | Arcane | Arcane Focus | 3 | 5/0/21 |
+| 36-40 | Arcane | Arcane Concentration | 5 | 10/0/21 |
+| 41-42 | Arcane | Arcane Subtlety | 2 | 12/0/21 |
+| 43 | Arcane | Arcane Resilience | 1 | 13/0/21 |
+| 44 | Arcane | Magic Absorption | 1 | 14/0/21 |
+| 45 | Arcane | Arcane Impact | 1 | 15/0/21 |
+| 46-48 | Arcane | Arcane Meditation | 3 | 18/0/21 |
+| 49 | Arcane | Arcane Shielding | 1 | 19/0/21 |
+| 50 | Arcane | Arcane Impact | 1 | 20/0/21 |
+| 51 | Arcane | Presence of Mind | 1 | 21/0/21 |
+| 52 | Arcane | Arcane Impact | 1 | 22/0/21 |
+| 53-55 | Arcane | Arcane Mind | 3 | 25/0/21 |
+| 56-58 | Arcane | Arcane Instability | 3 | 28/0/21 |
+| 59-60 | Arcane | Arcane Mind | 2 | 30/0/21 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — The scorer's value in this build: +21.2% of its score (model frost-leveling).
@@ -67,6 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab talent search (fightlab/fl_talent_opt.py): start arcane-leveling, moves: 2 points Improved Counterspell -> Arcane Impact; 1 point Magic Absorption -> Arcane Impact. Race against arcane-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.3% faster per kill.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Piercing Ice 2 gone; +1 Elemental Precision (tier gating for Ice Block); +1 Elemental Precision (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
+- 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 36.1 s per kill; own tree first 38.0 s; own tree last 36.1 s.
 
 ## Open questions (verify in the live game)
 

@@ -1,35 +1,35 @@
-# Retribution — Leveling (open talent search) — 9/9/33
+# Retribution — Leveling (open talent search) — 8/10/33
 
 *[Paladin](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 9/9/33 (Holy / Protection / Retribution) |
+| **Build** | 8/10/33 (Holy / Protection / Retribution) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Retribution leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). 
+The Retribution leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). 
 
 ## Point allocation
 
-### Holy (9)
+### Holy (8)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Divine Strength** | 5/5 | unchanged | Increases your Strength by 10%. |
-| **Healing Light** | 1/3 | changed | Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 4%. |
 | **Improved Seals** | 3/3 | **NEW** | Increases the damage done by your Seals and Judgements by 15%. |
 
-### Protection (9)
+### Protection (10)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Toughness** | 5/5 | moved | Increases your armor value from items by 10%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Guardian's Favor** | 1/2 | changed | Reduces the cooldown of your Blessing of Protection by 1 min and increases the duration of your Blessing of Freedom by 3 sec. |
+| **Anticipation** | 1/5 | changed | Increases your Defense Skill by 4. |
 
 ### Retribution (33)
 
@@ -63,27 +63,27 @@ The Retribution leveling build the open leveling search found on 2026-10-19: eve
 | 29 | Retribution | Vindication | 1 | 0/0/20 |
 | 30-32 | Retribution | Vengeance | 3 | 0/0/23 |
 | 33-34 | Retribution | Two-Handed Weapon Specialization | 2 | 0/0/25 |
-| 35-36 | Retribution | Instrument of Law | 2 | 0/0/27 |
-| 37 | Retribution | Two-Handed Weapon Specialization | 1 | 0/0/28 |
-| 38-40 | Retribution | Champion of the Light | 3 | 0/0/31 |
-| 41-42 | Retribution | Vindication | 2 | 0/0/33 |
-| 43-47 | Holy | Divine Strength | 5 | 5/0/33 |
-| 48-50 | Holy | Improved Seals | 3 | 8/0/33 |
-| 51-55 | Protection | Toughness | 5 | 8/5/33 |
-| 56-58 | Protection | Precision | 3 | 8/8/33 |
-| 59 | Holy | Healing Light | 1 | 9/8/33 |
-| 60 | Protection | Guardian's Favor | 1 | 9/9/33 |
+| 35-39 | Holy | Divine Strength | 5 | 5/0/25 |
+| 40-42 | Holy | Improved Seals | 3 | 8/0/25 |
+| 43 | Retribution | Two-Handed Weapon Specialization | 1 | 8/0/26 |
+| 44-45 | Retribution | Instrument of Law | 2 | 8/0/28 |
+| 46-47 | Retribution | Vindication | 2 | 8/0/30 |
+| 48-52 | Protection | Toughness | 5 | 8/5/30 |
+| 53-55 | Protection | Precision | 3 | 8/8/30 |
+| 56-58 | Retribution | Champion of the Light | 3 | 8/8/33 |
+| 59 | Protection | Anticipation | 1 | 8/9/33 |
+| 60 | Protection | Guardian's Favor | 1 | 8/10/33 |
 
 ## Core talents (priority order)
 
 1. **Sanctified Judgement** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Conviction** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Conviction** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Holy Conduit** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Improved Seals** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Vengeance** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Seal of Command** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 7. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Judgement** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Improved Judgement** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -91,8 +91,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +1.4% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.16; leveling-retribution 28.56, opt-ret-dps-leveling-st 28.70, opt-ret-dps-leveling-aoe 28.95. The search simulated 51,321 builds.
+- +1.3% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.18; leveling-retribution 28.56, opt-ret-dps-leveling-st 28.70, opt-ret-dps-leveling-aoe 28.95. The search simulated 33,899 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -102,7 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/paladin>
-- <https://talentsforever.com/paladin/60/50103-5031-5022533100133032-7>
+- <https://talentsforever.com/paladin/60/50003-50311-5022533100133032-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

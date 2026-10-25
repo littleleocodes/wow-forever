@@ -5475,8 +5475,8 @@
   "spec": "any",
   "entry": "combat-swords-raid",
   "setting": "raid",
-  "date": "2026-10-10",
-  "base_dps": 717.95,
+  "date": "2026-10-24",
+  "base_dps": 641.79,
   "abilities": [
    {
     "ability": "Blade Flurry",
@@ -5487,10 +5487,26 @@
     "lines_tried": 4,
     "best": {
      "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": -0.0016,
+     "split": "19/32/0",
+     "vs_spec_build": -0.0016
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
      "spot": "at the end",
-     "gain_seed1": -0.0024,
-     "split": "18/33/0",
-     "vs_spec_build": -0.0024
+     "gain_seed1": 0.0,
+     "split": "19/32/0",
+     "vs_spec_build": 0.0
     },
     "kept": false
    }
@@ -5713,8 +5729,8 @@
   "spec": "any",
   "entry": "combat-daggers-raid",
   "setting": "raid",
-  "date": "2026-10-10",
-  "base_dps": 735.38,
+  "date": "2026-10-24",
+  "base_dps": 683.17,
   "abilities": [
    {
     "ability": "Blade Flurry",
@@ -5725,10 +5741,10 @@
     "lines_tried": 4,
     "best": {
      "line": "plain",
-     "spot": "at the end",
-     "gain_seed1": 0.001,
+     "spot": "before the filler",
+     "gain_seed1": 0.0004,
      "split": "16/33/2",
-     "vs_spec_build": 0.001
+     "vs_spec_build": 0.0004
     },
     "kept": false
    }

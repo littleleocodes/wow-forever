@@ -4,25 +4,26 @@
 
 *Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost.* (a hybrid: Arcane/Frost).
 
-**✅ Recommended** for raid (the best mage spec here, or within 3% of it).
+**[Arcane-Frost — Raid](../research/raid/builds/arcane-frost-open-raid.md)** (29/0/22) — [open the talent tree](https://talentsforever.com/mage/60/055222000310000153--0535100001203002-7)
 
-**[Arcane-Frost — Raid](../research/raid/builds/arcane-frost-open-raid.md)** (28/0/20) — [open the talent tree](https://talentsforever.com/mage/60/055120300310000053--0535000001003002-7)
-
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Frost — Fingers of Frost / Ice Lance / Shatter), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Frost — Arcane Power / Frostbolt), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Press the first one that is ready**, top to bottom:
 
-1. **Arcane Missiles** when Missile Barrage is active
-2. **Ice Lance** when Fingers of Frost is active
-3. **Frostbolt**
+1. **Arcane Missiles** (rank 7) when Missile Barrage is active
+2. **Arcane Blast**: keep it on the target
+3. **Ice Lance** when Fingers of Frost is active
+4. **Frostbolt**
 
 **Frostbolt** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Frostbolt**
+- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -50,20 +51,22 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 - In the last 3 seconds, cast **Fire Blast** instead of starting a **Frostbolt**.
 - Without raid mana buffs, channel **Evocation** below 20% mana while more than 25 seconds remain; later than that, the mana comes back too late to spend.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 687 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 693 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 665 | [28/0/23](https://talentsforever.com/mage/60/052100510310020053--0535000001003002-7) |
-| Phase 1 BiS | 694 | [28/0/23](https://talentsforever.com/mage/60/052110500311010053--0535000001003002-7) (ties this build) |
+| Pre-BiS | 687 | [29/0/22](https://talentsforever.com/mage/60/050220500310101153--0535200001103002-7) |
+| Phase 1 BiS | 703 | [29/0/22](https://talentsforever.com/mage/60/050220500310011153--0535210001003002-7) |
 
-**The gear** (average item level: Pre-BiS 61.6; Phase 1 BiS 65.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 64.5; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -89,10 +92,11 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 
 ## Other builds of this spec
 
-- [Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md) (22/0/26, 676 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/05310050030003011--05350001010030024-7)
-- [Arcane-Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/26, 676 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/15012050030003011--05350000010031024-7)
-- [Frost — Arcane Power / Frostbolt](../research/raid/builds/frost-arcane-power-raid.md) (32/0/16, 643 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0551005003000301531--05350001-7)
+- [Arcane-Frost (optimized, another mage's Winter's Chill)](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (28/1/22, 680 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/050220500310011143-01-0535000301003002-7)
+- [Frost — Arcane Power / Frostbolt](../research/raid/builds/frost-arcane-power-raid.md) (35/0/16, 676 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0552005003100311531--053500020001-7)
+- [Arcane-Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps.md) (29/0/22, 628 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/055222100300000153--0535000201013002-7)
+- [Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md) (22/0/29, 547 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/05310050030003011--05350003012130024-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

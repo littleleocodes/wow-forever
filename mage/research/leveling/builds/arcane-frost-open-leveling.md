@@ -1,64 +1,97 @@
-# Arcane-Frost — Leveling (open talent search) — 29/0/22
+# Arcane-Frost — Leveling (open talent search) — 18/2/31
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 29/0/22 (Arcane / Fire / Frost) |
+| **Build** | 18/2/31 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +14.9% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +4.3% faster per kill than opt-frost-leveling-leveling-st, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
-### Arcane (29)
+### Arcane (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Arcane Focus** | 2/5 | changed | Improves your chance to hit with Arcane spells by 2%. |
-| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
+| **Improved Channeling** | 2/5 | **NEW** | Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast or Arcane Wrath. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Arcane Impact** | 1/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 2%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
-| **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
-| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
-| **Arcane Mind** | 3/5 | changed | Increases your Intellect by 6% and increases the critical strike damage bonus of your Arcane spells by 60%. |
-| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
-| **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 
-### Fire (0)
-
-*No points.*
-
-### Frost (22)
+### Fire (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
-| **Improved Frostbolt** | 2/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.2 sec. |
-| **Frostbite** | 2/3 | moved | Gives your Chill effects a 10% chance to Freeze the target for 5 sec. |
+| **Incineration** | 2/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 4%. |
+
+### Frost (31)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
+| **Elemental Precision** | 2/3 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
+| **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
+| **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
+| **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
-| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
+| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
+| **Winter's Chill** | 1/5 | changed | Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
+
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
+| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
+| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
+| 24 | Frost | Ice Shards | 1 | 0/0/15 |
+| 25 | Frost | Shatter | 1 | 0/0/16 |
+| 26-27 | Frost | Ice Shards | 2 | 0/0/18 |
+| 28-29 | Frost | Shatter | 2 | 0/0/20 |
+| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
+| 32-33 | Frost | Ice Shards | 2 | 0/0/24 |
+| 34 | Frost | Arctic Reach | 1 | 0/0/25 |
+| 35-36 | Arcane | Missile Barrage | 2 | 2/0/25 |
+| 37-38 | Frost | Improved Frost Nova | 2 | 2/0/27 |
+| 39-41 | Frost | Permafrost | 3 | 2/0/30 |
+| 42 | Frost | Winter's Chill | 1 | 2/0/31 |
+| 43-44 | Arcane | Wand Specialization | 2 | 4/0/31 |
+| 45 | Arcane | Arcane Focus | 1 | 5/0/31 |
+| 46-50 | Arcane | Arcane Concentration | 5 | 10/0/31 |
+| 51 | Arcane | Arcane Focus | 1 | 11/0/31 |
+| 52 | Arcane | Improved Channeling | 1 | 12/0/31 |
+| 53 | Arcane | Arcane Impact | 1 | 13/0/31 |
+| 54 | Arcane | Arcane Blast | 1 | 14/0/31 |
+| 55 | Arcane | Improved Channeling | 1 | 15/0/31 |
+| 56-58 | Arcane | Arcane Meditation | 3 | 18/0/31 |
+| 59-60 | Fire | Incineration | 2 | 18/2/31 |
 
 ## Core talents (priority order)
 
-1. **Missile Barrage** — +3.8 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +3.7 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Shatter** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Arcane Blast** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Channeling** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Fingers of Frost** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Arcane Concentration** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +3.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +2.9 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ice Shards** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Improved Frostbolt** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Frostbite** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Missile Barrage** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Frost Channeling** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -66,9 +99,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.29; arcane-leveling 35.94. The search simulated 63,363 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.74; opt-frost-leveling-leveling-st 29.99. The search simulated 56,114 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
-- 2026-10-22 (repair_builds.py, client build 70425 trees): 29/0/22 -> 29/0/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 2 gone; +1 Improved Frostbolt (tier gating for Frostbite); +1 Improved Frostbolt (tier gating for Frostbite); +1 Ice Block (tier gating for Fingers of Frost); +1 Frostbite (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 
@@ -77,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/025200500310031133--00550012310003002-7>
+- <https://talentsforever.com/mage/60/22220050011003-02-05253233011030021-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

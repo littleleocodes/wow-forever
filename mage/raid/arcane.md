@@ -2,25 +2,29 @@
 
 [Mage](../README.md) > [Raid (group)](README.md) > Arcane
 
-**✅ Recommended** for raid (the best mage spec here, or within 3% of it).
+**[Arcane — Raid](../research/raid/builds/arcane-open-raid.md)** (35/13/3) — [open the talent tree](https://talentsforever.com/mage/60/0532205003100311531-0355-003-7)
 
-**[Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md)** (35/9/5) — [open the talent tree](https://talentsforever.com/mage/60/0551205003100301531-0305001-003-7)
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Arcane — Arcane Blast), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Press the first one that is ready**, top to bottom:
 
-1. **Arcane Missiles** when Missile Barrage is active
-2. **Fire Blast** until the last 40 seconds of the fight
-3. **Arcane Blast**
+1. **Arcane Missiles** (rank 7) when Missile Barrage is active
+2. **Arcane Wrath** until the last 10 seconds of the fight
+3. **Arcane Blast**: keep it on the target
+4. **Fire Blast** until the last 40 seconds of the fight
+5. **Arcane Blast** when you have at least 25% mana
+6. **Fireball** (rank 11)
+7. **Frost Blast**
 
-**Arcane Blast** is your filler: cast it whenever nothing above is ready.
+**Frost Blast** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Arcane Blast**
-- **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Evocation**: when you run out of mana (needed in about 3 of 10 fights)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -50,20 +54,22 @@ Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane B
 - In the last 3 seconds an **Arcane Blast** cannot finish: cast the **Fire Blast** you saved.
 - In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back, and channel **Evocation** below 15% mana while more than 20 seconds remain.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 689 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 717 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 673 | [31/10/10](https://talentsforever.com/mage/60/2501005003110301531-0315-053-7) |
-| Phase 1 BiS | 696 | [31/10/10](https://talentsforever.com/mage/60/2501005003110301531-0315-053-7) (ties this build) |
+| Pre-BiS | 720 | [34/13/4](https://talentsforever.com/mage/60/0502205203100311531-0355-013-7) |
+| Phase 1 BiS | 735 | [33/14/4](https://talentsforever.com/mage/60/0502205103100311531-1355-013-7) |
 
-**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 65.6; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 63.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -87,6 +93,10 @@ Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane B
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlM1PE10UxnvuDJ3D4ePtO8Q4jC6uJJLaOOZOyxhgM4WV0YWYuHClTOlAa7Bt2i5wJSgmhgUadYNxA4lRE0DiCln6lcFUwwZN0Bg/YnThgqBh48bMUOw/oMYnmcy5z7kn93dPcg81IkRAAw5REKC2/loxAZ2QhD44AQUYBdBXZcQI6kVS8MccaJ8aSMYL94BkfPetiWRcmgcKo5fTPjaTgg9vgfa6mSR8MkQyvt1sojBuDPpVCi7MgnZZIRkfzfvlz6aBJDzvkoRXzpCCa9OgeS0k44N5P7Ex3LYfx7MRL8tv34Toi0kQm6m+mccwAWw8exXYZuoOfO5ZhNkJWIHJbC/VbrTEdsUtIYQlRMI0/c9KmIaZMC1DWJbHYIU1fGDvmSrrrDukJnSTomo7/R/7DyWVpUK6QnUkmdbewKpT2eGqFRclvY4kvHZS3aG3UP19CJOM39eY7v/HnoJ6TnWcwvCpfKHM4yJ+0DCFITq7+UDGyQ25aZ4vcieddtM8dZaXMy4v5stOOZvP8ZLrFAcyPFpyXe4UB5yca6QLJWM7b2zlD5wu5XP7dD3gCte4Oqpcr47+LYBIrLkKECaZWKIUdOD66hG1XleqLJr0hXmwzuJjUihQR3LGbxgxhLa7Ur1vhUYHk603pnwt23sGA7204+tMk7kd81jon1I5uR39UbXP/fZzup5XKpXG/oVkT9VI9sMlgCnI5tcvLh9ftbsCN7Ri9/g7K5Wv9rGt4I0dk3BxZ+/u2vvamhGHgimRgQKMwIj6cwC6GsoL); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVM9LFFEc3++b0Xl+NdtGonHq8BKSbWnizawT6mVGT1GHDDp0Kmfd0Z2QnWVnAzulsUJ4MNA8GF0SogIV6WSdol+stJUX+33oB1GHDlLhJYiYcc1/oKIPvPe+7/N5Pz7vC++LDRTioACDBHCQm3/PCId2sKEHjkMehgHUFyKlcaqeRon+mAPlYz2K9OcEoEjfftuCIn15BVCiS1OgfGhEid69CsrrRhTogwEU6Z2pUJwsRfskujALygUJRfpoKjzg3nzYlyYBBXrORYk+HQWl3IQivTUfcl8HW/bRkhcve+zaZUg8GQe+lu6ZuQ9jQEreBJC19HX41LUIs2OwDONeN24+6jbZaZicc5PzlK6HzUzpmp7STY2bZpnAMql/T94RWVRJZ0xOqTom5FbcltxKBZmkY6qENSjo5p6IqpHJoSpl8ECtQYFOnpC3q01YdxNqUaTfXxE1HEcegnxWdpz84Ek/X2QGNw5oOtd4eyfryzq5ATfD/AJzMhk3w9JnWDHrsoJfdIqen2OB6xT6siwRuC5zCn1OztUy+UDb0LV1ff+pwM/tVdXIV+2mr7aqr+dH/pWBeLKxaqAWRSSpIMrAxZXDcp0qVb0owmdShlVijAixCG32TJgwJBRabgh1IRUb7rebL02HWLJ290d4ZhmrRBGZlSyT2H+For0R/VW0zv3xezoeVyqVht4Fu6tK2L1wHmAaPH91dOnYitURsbFlqytcWal8sY6uB2+spEAXd3Tv2vxf62XiYFQospCHIRiSfw0AHX3Jyw==).
 
+## Other builds of this spec
+
+- [Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md) (36/11/4, 671 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0552205003100301531-2305001-013-7)
+
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

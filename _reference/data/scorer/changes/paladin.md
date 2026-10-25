@@ -111,13 +111,13 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 
 ### `opt-prot-tank-raid-tank` (0/32/19) vs Classic `prot-tank` (11/40/0)
 
-- **Drops:** Divine Intellect 5, Divine Strength 5, Reckoning 3, Toughness 5
-- **Adds:** Conviction 5, Deflection 5, Holy Conduit 2 (new), Improved Hammer of Justice 1, Improved Seal of Fury 1 (new), Iron Creed 5 (new), Sacred Arbiter 1 (new), Sanctified Judgement 3 (new), Swift Judgement 1 (new), Templar's Bulwark 1 (new), Vindication 3
-- **Fewer ranks:** One-Handed Weapon Specialization 5->3
+- **Drops:** Divine Intellect 5, Divine Strength 5, Reckoning 3
+- **Adds:** Conviction 5, Deflection 5, Holy Conduit 2 (new), Improved Seal of Fury 1 (new), Iron Creed 5 (new), Sacred Arbiter 1 (new), Sanctified Judgement 3 (new), Swift Judgement 1 (new), Templar's Bulwark 1 (new), Vindication 3
+- **Fewer ranks:** One-Handed Weapon Specialization 5->3, Toughness 5->1
 
-### `opt-ret-dps-raid-dps` (12/8/31) vs Classic `ret-raid-dps` (11/0/40)
+### `opt-ret-dps-raid-dps` (17/0/34) vs Classic `ret-raid-dps` (11/0/40)
 
 - **Drops:** Deflection 5, Pursuit of Justice 2, Repentance 1
-- **Adds:** Champion of the Light 3 (new), Holy Conduit 2 (new), Improved Seals 3 (new), Instrument of Law 2 (new), Precision 3, Reverence 2 (new), Sacred Arbiter 1 (new), Sanctified Judgement 3 (new), Toughness 5, Twist of Light 1 (new), Vindication 1
-- **Fewer ranks:** Divine Strength 5->2, Two-Handed Weapon Specialization 3->2, Vengeance 5->3
+- **Adds:** Champion of the Light 3 (new), Holy Conduit 2 (new), Improved Seals 3 (new), Instrument of Law 2 (new), Reverence 3 (new), Sacred Arbiter 1 (new), Sanctified Judgement 3 (new), Twist of Light 1 (new), Vindication 3, Voice of Truth 1 (new)
+- **Fewer ranks:** Vengeance 5->3
 

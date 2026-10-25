@@ -7,6 +7,153 @@
      "and": {
       "vals": [
        {
+        "not": {
+         "val": {
+          "variableRef": {
+           "name": "Use Ambush Opener"
+          }
+         }
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Use Stealth/Vanish for Damage"
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Current Points less than 5"
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 11290
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11290
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentEnergy": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "15"
+             }
+            }
+           }
+          },
+          {
+           "and": {
+            "vals": [
+             {
+              "spellIsKnown": {
+               "spellId": {
+                "spellId": 1259812
+               }
+              }
+             },
+             {
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "const": {
+                 "val": "25"
+                }
+               }
+              }
+             },
+             {
+              "auraIsActive": {
+               "auraId": {
+                "spellId": 1259812
+               },
+               "includeReactionTime": true
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3"
+             }
+            }
+           }
+          },
+          {
+           "variableRef": {
+            "name": "Expose - Low Duration"
+           }
+          },
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 1259812
+            },
+            "includeReactionTime": true
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 7676
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
         "cmp": {
          "op": "OpGe",
          "lhs": {
@@ -161,6 +308,125 @@
     }
    },
    "notes": "2026-10-16 page audit B17: the early refresh (5 combo points, under 3 s left) removed: the Eviscerate lines above take those points first, so it never fired (20,000 fights, seed 1, every build of the entry: identical DPS without it)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "auraIsActive": {
+           "auraId": {
+            "spellId": 462707
+           },
+           "includeReactionTime": true
+          }
+         }
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Use Backstab"
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Current Points less than 5"
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "not": {
+            "val": {
+             "variableRef": {
+              "name": "SnD Fall Imminent"
+             }
+            }
+           }
+          },
+          {
+           "and": {
+            "vals": [
+             {
+              "cmp": {
+               "op": "OpGt",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "math": {
+                 "op": "OpAdd",
+                 "lhs": {
+                  "spellCurrentCost": {
+                   "spellId": {
+                    "spellId": 6774
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "spellCurrentCost": {
+                   "spellId": {
+                    "spellId": 11281
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             {
+              "not": {
+               "val": {
+                "variableRef": {
+                 "name": "SnD Fall Imminent"
+                }
+               }
+              }
+             }
+            ]
+           }
+          },
+          {
+           "not": {
+            "val": {
+             "variableRef": {
+              "name": "Above SnD Point Threshold"
+             }
+            }
+           }
+          },
+          {
+           "variableRef": {
+            "name": "In Danger of Energy Capping"
+           }
+          },
+          {
+           "variableRef": {
+            "name": "Expose - Low Duration"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Gnome Eureka - Active or Not Ready"
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11281
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
   },
   {
    "action": {

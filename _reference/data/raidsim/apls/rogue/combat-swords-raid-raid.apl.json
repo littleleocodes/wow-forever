@@ -3,6 +3,107 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentEnergy": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "15"
+             }
+            }
+           }
+          },
+          {
+           "and": {
+            "vals": [
+             {
+              "spellIsKnown": {
+               "spellId": {
+                "spellId": 1259812
+               }
+              }
+             },
+             {
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "const": {
+                 "val": "25"
+                }
+               }
+              }
+             },
+             {
+              "auraIsActive": {
+               "auraId": {
+                "spellId": 1259812
+               },
+               "includeReactionTime": true
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3"
+             }
+            }
+           }
+          },
+          {
+           "variableRef": {
+            "name": "Expose - Low Duration"
+           }
+          },
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 1259812
+            },
+            "includeReactionTime": true
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 7676
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 16511

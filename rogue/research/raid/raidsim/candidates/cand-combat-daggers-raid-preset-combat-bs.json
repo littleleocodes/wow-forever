@@ -1,5 +1,5 @@
 {
- "id": "cand-combat-swords-raid-preset-sinister-strike",
+ "id": "cand-combat-daggers-raid-preset-combat-bs",
  "allocation": {
   "Assassination": [
    [
@@ -11,6 +11,10 @@
     3
    ],
    [
+    "Murder",
+    2
+   ],
+   [
     "Improved Slice and Dice",
     3
    ],
@@ -20,7 +24,7 @@
    ],
    [
     "Lethality",
-    5
+    1
    ],
    [
     "Cold Blood",
@@ -37,7 +41,7 @@
     2
    ],
    [
-    "Deflection",
+    "Puncturing Wounds",
     3
    ],
    [
@@ -46,11 +50,7 @@
    ],
    [
     "Endurance",
-    1
-   ],
-   [
-    "Riposte",
-    1
+    2
    ],
    [
     "Improved Sprint",
@@ -84,9 +84,15 @@
     "Adrenaline Rush",
     1
    ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
   ]
  },
- "preset": "Sinister Strike",
- "talents": "00530310501-32003311201515231",
- "note": "The community simulator's preset 'Sinister Strike' (rogue/dps/presets.ts), a raid candidate since it ran within 6% of the best build of combat-swords-raid (334 vs 338.6 in the race of 2026-09-27)."
+ "preset": "Combat BS",
+ "talents": "00532310101-32030320201515231-002",
+ "note": "The community simulator's preset 'Combat BS' (rogue/dps/presets.ts), a raid candidate since it ran within 6% of the best build of combat-daggers-raid (354.8 vs 376.4 in the race of 2026-10-24)."
 }
