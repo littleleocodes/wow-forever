@@ -82,18 +82,18 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Assassination | page | opt-combat-swords-raid-leveling-st (33/16/2) | combat-daggers-raid | - | Mutilate 0.00 | 68% (min 60%) | 27.9 | FAIL: lacks Mutilate |
-| Assassination | slot | opt-combat-swords-raid-solo-60 (33/16/2) | combat-daggers-raid | - | Mutilate 0.00 | 68% (min 60%) | 27.9 | FAIL: lacks Mutilate |
-| Assassination | slot | leveling-combat-swords (31/20/0) | combat-daggers-raid | - | Mutilate 2.90 | 84% (min 60%) | 27.7 | OK |
+| Assassination | page | assassination-open-leveling (30/19/2) | combat-daggers-raid | - | Mutilate 2.90 | 85% (min 60%) | 26.3 | OK |
+| Assassination | slot | opt-combat-swords-raid-solo-60 (33/16/2) | combat-daggers-raid | - | Mutilate 0.00 | 68% (min 60%) | 26.6 | FAIL: lacks Mutilate |
+| Assassination | slot | opt-combat-swords-raid-leveling-st (33/16/2) | combat-daggers-raid | - | Mutilate 0.00 | 68% (min 60%) | 26.6 | FAIL: lacks Mutilate |
+| Assassination | slot | leveling-combat-swords (31/20/0) | combat-daggers-raid | - | Mutilate 3.04 | 85% (min 60%) | 26.9 | OK |
 | Combat | page | combat-open-leveling (12/31/8) | combat-swords-raid | - | - | 78% (min 70%) | 25.1 | OK |
 | Combat | slot | opt-combat-swords-raid-leveling-aoe (12/31/8) | combat-swords-raid | - | - | 78% (min 70%) | 25.1 | OK |
 | Combat | slot | combat-leveling (18/31/2) | combat-swords-raid | - | - | 76% (min 70%) | 25.7 | OK |
 | Subtlety | page | subtlety-open-leveling (12/9/30) | subtlety-leveling | - | Hemorrhage 3.13 | 91% (min 60%) | 25.5 | OK |
 | Subtlety | slot | subtlety-leveling (5/16/30) | subtlety-leveling | - | Hemorrhage 0.00 | 64% (min 60%) | 26.0 | FAIL: lacks Hemorrhage |
-| Daggers (split) | page | daggers-split-open-leveling (16/27/8) | combat-daggers-raid | - | - | 74% (min 60%) | 27.0 | OK |
-| Daggers (split) | slot | opt-combat-daggers-raid-leveling-st (21/28/2) | combat-daggers-raid | - | - | 70% (min 60%) | 29.0 | OK |
+| Daggers (split) | page | daggers-split-open-leveling (22/16/13) | combat-daggers-raid | - | - | 73% (min 60%) | 26.2 | OK |
+| Daggers (split) | slot | opt-combat-daggers-raid-leveling-st (21/28/2) | combat-daggers-raid | - | - | 72% (min 60%) | 28.0 | OK |
 | Combat-Subtlety | page | combat-subtlety-open-leveling (13/17/21) | subtlety-leveling | - | Ghostly Strike 0.97 | 89% (min 60%) | 23.8 | OK |
-| Assassination | default | opt-combat-swords-raid-leveling-st (33/16/2) | combat-daggers-raid (no rules) | - | Mutilate 0.00 | 78% (min 60%) | 32.1 | FAIL: lacks Mutilate |
 
 ## Shaman
 

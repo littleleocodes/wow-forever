@@ -26,7 +26,7 @@ Single-target leveling fights against normal mobs of your level with two swords 
 | 50 | 2% | 20% | 14% | 7% | 20% | 9% | 5% | 25% |
 | 60 | 2% | 27% | 12% | 10% | 16% | 8% | 4% | 21% |
 
-Spec model (`_reference/data/scorer/specs`) assumes: white_mh 37%, white_oh 20%, sinister 32%, eviscerate 6%, poisons 5%, rupture 0%, riposte 0%, garrote 0%.
+Spec model (`_reference/data/scorer/specs`) assumes: white_mh 41%, white_oh 22%, sinister 31%, eviscerate 7%, poisons 0%, rupture 0%, riposte 0%, garrote 0%.
 
 ## Realized crit rates and player at each level
 
@@ -132,5 +132,5 @@ school-specific bonus counts half). Classic items: unverified for WoW: Forever. 
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water (mana per second while drinking; unverified against the 70425 items, audit of 2026-10-18 row 73), Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
 Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
-- Not modelled yet: runners, adds, the stealth approach time, Expose Armor, Rupture (Eviscerate is used), Garrote's attack power bonus (its tooltip gives no number), Gouge-and-bandage, Vanish, Sprint, weapon skill, maces (Hack and Slash's armor share), gear upgrades within a level bracket.
+- Not modelled yet: runners, adds, the stealth approach time, Expose Armor, Rupture by default (Eviscerate is used; the RUPTURE_HP knob lets rotation_opt try it at 5 points), Garrote's attack power bonus (its tooltip gives no number), Gouge-and-bandage, Vanish, Sprint, weapon skill, maces (Hack and Slash's armor share), gear upgrades within a level bracket.
 

@@ -546,7 +546,7 @@ def main():
         rc = raid_candidates(cls, fam, data, RM) if use_fam else []
         lc = [(OPEN / f"{cls}.json", lvl, x) for x in leveling_candidates(cls, lvl, data, RM)] if use_lvl else []
         if a.only != "raid":   # the one-tree searches (fl_open_search.py --tree, 2026-10-25): a pure spec whose rotation a hybrid won
-            for pf in sorted((OPEN / "pure").glob(f"{cls}-*.json")):
+            for pf in sorted(x for x in (OPEN / "pure").glob(f"{cls}-*.json") if not x.stem.endswith((".pre-mutilate", ".pre-fix", ".prev"))):
                 pr = load_record(pf)
                 if pr and (complete(pr, "rotations") or (a.partial and pr.get("rotations"))):
                     # only the record's own tree (2026-10-26 audit: the Survival search's finalists race let in the 17/10/24 Beast-Survival

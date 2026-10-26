@@ -1326,72 +1326,12 @@
    }
   },
   "rogue": {
-   "opt-combat-swords-raid-leveling-st": {
-    "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
-    "ok": false,
-    "verdict": "FAIL: lacks Mutilate",
-    "core_share": 0.6767,
-    "min_share": 0.6,
-    "required": [
-     "Mutilate"
-    ],
-    "core": [
-     "melee",
-     "Mutilate",
-     "Eviscerate",
-     "Venom",
-     "Rupture",
-     "Deadly Poison",
-     "Instant Poison"
-    ],
-    "casts_60": {
-     "Mutilate": 0.0
-    },
-    "missing_talents": [
-     "Mutilate"
-    ],
-    "uncast": [],
-    "fingerprint": "97b7f0cf6a58",
-    "date": "2026-10-26",
-    "fights": 300
-   },
-   "opt-combat-swords-raid-solo-60": {
-    "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
-    "ok": false,
-    "verdict": "FAIL: lacks Mutilate",
-    "core_share": 0.6767,
-    "min_share": 0.6,
-    "required": [
-     "Mutilate"
-    ],
-    "core": [
-     "melee",
-     "Mutilate",
-     "Eviscerate",
-     "Venom",
-     "Rupture",
-     "Deadly Poison",
-     "Instant Poison"
-    ],
-    "casts_60": {
-     "Mutilate": 0.0
-    },
-    "missing_talents": [
-     "Mutilate"
-    ],
-    "uncast": [],
-    "fingerprint": "97b7f0cf6a58",
-    "date": "2026-10-26",
-    "fights": 300
-   },
-   "leveling-combat-swords": {
+   "assassination-open-leveling": {
     "spec": "Assassination",
     "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8427,
+    "core_share": 0.8462,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1410,7 +1350,95 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "f649f650caae",
+    "fingerprint": "602dae9bee15",
+    "date": "2026-10-26",
+    "fights": 300
+   },
+   "opt-combat-swords-raid-solo-60": {
+    "spec": "Assassination",
+    "rotation": "combat-daggers-raid",
+    "ok": false,
+    "verdict": "FAIL: lacks Mutilate",
+    "core_share": 0.6752,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "missing_talents": [
+     "Mutilate"
+    ],
+    "uncast": [],
+    "fingerprint": "42be225aaee3",
+    "date": "2026-10-26",
+    "fights": 300
+   },
+   "opt-combat-swords-raid-leveling-st": {
+    "spec": "Assassination",
+    "rotation": "combat-daggers-raid",
+    "ok": false,
+    "verdict": "FAIL: lacks Mutilate",
+    "core_share": 0.6752,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "missing_talents": [
+     "Mutilate"
+    ],
+    "uncast": [],
+    "fingerprint": "42be225aaee3",
+    "date": "2026-10-26",
+    "fights": 300
+   },
+   "leveling-combat-swords": {
+    "spec": "Assassination",
+    "rotation": "combat-daggers-raid",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8535,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "casts_60": {
+     "Mutilate": 3.04
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "60e004c0d68d",
     "date": "2026-10-26",
     "fights": 300
    },
@@ -1539,7 +1567,7 @@
     "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7415,
+    "core_share": 0.7344,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -1552,7 +1580,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "32feaceefa15",
+    "fingerprint": "3462d722a1c5",
     "date": "2026-10-26",
     "fights": 300
    },
@@ -1561,7 +1589,7 @@
     "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.697,
+    "core_share": 0.7191,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -1574,7 +1602,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "5a8337bba4db",
+    "fingerprint": "f5d28ee55c9c",
     "date": "2026-10-26",
     "fights": 300
    },
@@ -4259,8 +4287,8 @@
    {
     "spec": "Assassination",
     "name": "Assassination",
-    "build": "opt-combat-swords-raid-leveling-st",
-    "split": "33/16/2",
+    "build": "assassination-open-leveling",
+    "split": "30/19/2",
     "rotation": "combat-daggers-raid",
     "rules": "tuned",
     "kind": "page",
@@ -4278,24 +4306,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 0.0
+     "Mutilate": 2.9
     },
-    "core_share": 0.6767,
+    "core_share": 0.8462,
     "min_share": 0.6,
-    "weighted": 27.94,
-    "verdict": "FAIL: lacks Mutilate",
-    "ok": false,
-    "missing_talents": [
-     "Mutilate"
-    ],
+    "weighted": 26.31,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.211,
-     "Eviscerate": 0.174,
-     "Sinister Strike": 0.15,
-     "Instant Poison": 0.136,
-     "Garrote": 0.129,
-     "Melee (off-hand)": 0.101
+     "Eviscerate": 0.314,
+     "Melee": 0.161,
+     "Mutilate": 0.149,
+     "Garrote": 0.118,
+     "Instant Poison": 0.095,
+     "Melee (off-hand)": 0.083
     }
    },
    {
@@ -4322,9 +4348,9 @@
     "casts_60": {
      "Mutilate": 0.0
     },
-    "core_share": 0.6767,
+    "core_share": 0.6752,
     "min_share": 0.6,
-    "weighted": 27.94,
+    "weighted": 26.62,
     "verdict": "FAIL: lacks Mutilate",
     "ok": false,
     "missing_talents": [
@@ -4332,12 +4358,54 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.211,
-     "Eviscerate": 0.174,
-     "Sinister Strike": 0.15,
-     "Instant Poison": 0.136,
-     "Garrote": 0.129,
-     "Melee (off-hand)": 0.101
+     "Eviscerate": 0.265,
+     "Melee": 0.166,
+     "Sinister Strike": 0.164,
+     "Instant Poison": 0.125,
+     "Garrote": 0.123,
+     "Melee (off-hand)": 0.079
+    }
+   },
+   {
+    "spec": "Assassination",
+    "name": "Assassination",
+    "build": "opt-combat-swords-raid-leveling-st",
+    "split": "33/16/2",
+    "rotation": "combat-daggers-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "core_share": 0.6752,
+    "min_share": 0.6,
+    "weighted": 26.62,
+    "verdict": "FAIL: lacks Mutilate",
+    "ok": false,
+    "missing_talents": [
+     "Mutilate"
+    ],
+    "uncast": [],
+    "top_shares": {
+     "Eviscerate": 0.265,
+     "Melee": 0.166,
+     "Sinister Strike": 0.164,
+     "Instant Poison": 0.125,
+     "Garrote": 0.123,
+     "Melee (off-hand)": 0.079
     }
    },
    {
@@ -4362,22 +4430,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 2.9
+     "Mutilate": 3.04
     },
-    "core_share": 0.8427,
+    "core_share": 0.8535,
     "min_share": 0.6,
-    "weighted": 27.66,
+    "weighted": 26.85,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.22,
-     "Melee": 0.208,
-     "Mutilate": 0.131,
-     "Melee (off-hand)": 0.124,
-     "Garrote": 0.117,
-     "Instant Poison": 0.106
+     "Eviscerate": 0.307,
+     "Melee": 0.165,
+     "Mutilate": 0.144,
+     "Garrote": 0.111,
+     "Instant Poison": 0.095,
+     "Melee (off-hand)": 0.094
     }
    },
    {
@@ -4564,7 +4632,7 @@
     "spec": "Hybrid Assassination/Combat",
     "name": "Daggers (split)",
     "build": "daggers-split-open-leveling",
-    "split": "16/27/8",
+    "split": "22/16/13",
     "rotation": "combat-daggers-raid",
     "rules": "tuned",
     "kind": "page",
@@ -4578,20 +4646,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.7415,
+    "core_share": 0.7344,
     "min_share": 0.6,
-    "weighted": 27.04,
+    "weighted": 26.17,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.26,
-     "Melee": 0.216,
-     "Sinister Strike": 0.138,
-     "Melee (off-hand)": 0.127,
-     "Garrote": 0.126,
-     "Instant Poison": 0.072
+     "Eviscerate": 0.383,
+     "Melee": 0.152,
+     "Mutilate": 0.127,
+     "Garrote": 0.115,
+     "Instant Poison": 0.082,
+     "Melee (off-hand)": 0.073
     }
    },
    {
@@ -4612,20 +4680,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.697,
+    "core_share": 0.7191,
     "min_share": 0.6,
-    "weighted": 28.97,
+    "weighted": 28.03,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.236,
-     "Eviscerate": 0.195,
-     "Mutilate": 0.139,
-     "Garrote": 0.134,
-     "Melee (off-hand)": 0.127,
-     "Instant Poison": 0.071
+     "Eviscerate": 0.266,
+     "Melee": 0.193,
+     "Mutilate": 0.158,
+     "Garrote": 0.132,
+     "Melee (off-hand)": 0.102,
+     "Instant Poison": 0.067
     }
    },
    {
@@ -4665,48 +4733,6 @@
      "Hemorrhage": 0.082,
      "Melee (off-hand)": 0.072,
      "Instant Poison": 0.062
-    }
-   },
-   {
-    "spec": "Assassination",
-    "name": "Assassination",
-    "build": "opt-combat-swords-raid-leveling-st",
-    "split": "33/16/2",
-    "rotation": "combat-daggers-raid",
-    "rules": "default",
-    "kind": "default",
-    "required": [
-     "Mutilate"
-    ],
-    "core": [
-     "melee",
-     "Mutilate",
-     "Eviscerate",
-     "Venom",
-     "Rupture",
-     "Deadly Poison",
-     "Instant Poison"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Mutilate": 0.0
-    },
-    "core_share": 0.7831,
-    "min_share": 0.6,
-    "weighted": 32.09,
-    "verdict": "FAIL: lacks Mutilate",
-    "ok": false,
-    "missing_talents": [
-     "Mutilate"
-    ],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.234,
-     "Eviscerate": 0.221,
-     "Sinister Strike": 0.169,
-     "Instant Poison": 0.147,
-     "Melee (off-hand)": 0.112,
-     "Deadly Poison": 0.069
     }
    }
   ],
