@@ -333,12 +333,15 @@ def check(cls, spec, actions, names, held=None, mode="raid", trees=None):
     return check_shares(cls, spec, shares_of(actions, names), casts_of(actions, names), held, mode, trees)
 
 
+FAIL_STEP = 0.9   # the factor every failing build pays on top of its core-share ratio (the leveling searches' too)
+
+
 def penalty(chk):
     """The search objective's factor for a build (1 when it passes or has no rule)."""
     if not chk or chk.get("ok") or chk.get("core_share") is None:
         return 1.0
-    f = min(1.0, chk["core_share"] / chk["min_share"]) if chk["min_share"] else 1.0
-    if chk.get("uncast") or chk.get("missing_talents"):
+    f = FAIL_STEP * (min(1.0, chk["core_share"] / chk["min_share"]) if chk["min_share"] else 1.0)   # 2026-10-26 audit (fl_signature):
+    if chk.get("uncast") or chk.get("missing_talents"):   # a near miss (49.5% of 50%, x0.99) had beaten passing builds 2% slower
         f *= 0.5
     return max(0.05, f)
 

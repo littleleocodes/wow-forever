@@ -30,7 +30,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Survival | page | leveling-melee (9/10/32) | melee-dps | - | - | 50% (min 50%) | 24.3 | OK |
 | Survival | slot | opt-bm-leveling-leveling-aoe (7/12/32) | melee-dps | - | - | 45% (min 50%) | 28.3 | FAIL: core share 45% < 50% |
 | Beast-Marks | page | beast-marks-open-leveling (28/19/4) | bm-leveling | - | Aimed Shot 1.57 | 100% (min 70%) | 23.9 | OK |
-| Beast-Survival | page | beast-survival-open-leveling (17/10/24) | melee-dps | - | - | 75% (min 50%) | 22.3 | OK |
+| Beast-Survival | page | beast-survival-open-leveling (23/3/25) | melee-dps | - | - | 75% (min 50%) | 22.4 | OK |
 | Beast-Survival | slot | opt-melee-dps-leveling-st (15/10/26) | melee-dps | - | - | 82% (min 50%) | 23.9 | OK |
 | Beast-Survival | slot | opt-melee-dps-solo-60 (15/10/26) | bm-leveling | - | - | 35% (min 50%) | 26.8 | FAIL: core share 35% < 50% |
 

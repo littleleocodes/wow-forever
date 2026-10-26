@@ -458,7 +458,7 @@
     "rotation": "melee-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7476,
+    "core_share": 0.754,
     "min_share": 0.5,
     "required": [],
     "core": [
@@ -471,7 +471,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "eeefd2ec0401",
+    "fingerprint": "562d9b86b2f0",
     "date": "2026-10-26",
     "fights": 300
    },
@@ -3046,7 +3046,7 @@
     "spec": "Hybrid Beast Mastery/Survival",
     "name": "Beast-Survival",
     "build": "beast-survival-open-leveling",
-    "split": "17/10/24",
+    "split": "23/3/25",
     "rotation": "melee-dps",
     "rules": "tuned",
     "kind": "page",
@@ -3060,20 +3060,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.7476,
+    "core_share": 0.754,
     "min_share": 0.5,
-    "weighted": 22.32,
+    "weighted": 22.44,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Cat melee": 0.236,
-     "Immolation Trap": 0.207,
-     "Raptor Strike": 0.115,
-     "Melee": 0.114,
-     "Melee (off-hand)": 0.108,
-     "Claw": 0.089
+     "Cat melee": 0.239,
+     "Immolation Trap": 0.203,
+     "Claw": 0.126,
+     "Raptor Strike": 0.107,
+     "Melee": 0.102,
+     "Melee (off-hand)": 0.098
     }
    },
    {

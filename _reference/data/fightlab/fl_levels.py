@@ -185,6 +185,12 @@ def pick_order(cls, spec, r, pool, space, save, before=None, model=None):
     for c, x in zip(cands, res):
         table[c["id"]] = row(x)
     pool_ids = list(labels) + ([before_id] if before_id else [])
+    if before_id:   # 2026-10-26 audit: the old pick won back on plain time (Survival 10/11/30 at a 49.5% melee share against a polished
+        new_id = min(labels, key=lambda k: table[k]["weighted"])   # build that passes); it does only when it plays its spec too
+        (ok_old, _), (ok_new, _) = FO.FS.qualifying(pool, cls, spec, [before, {"allocation": r["winner"]["allocation"], "order": labels[new_id][1]}])
+        if ok_new and not ok_old:
+            pool_ids.remove(before_id)
+            log(f"  {cls} {spec}: the race's old pick {before['split']} fails its signature check and the polished build passes: no win back")
     best_id = min(pool_ids, key=lambda k: table[k]["weighted"])
     if before_id and best_id == before_id:
         r["winner"] = {"allocation": before["allocation"], "split": before["split"],

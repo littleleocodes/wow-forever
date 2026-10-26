@@ -26836,8 +26836,10 @@
    "done": true,
    "date": "2026-10-24",
    "builds": {
-    "written": [],
-    "why": "the melee-dps rotation's record (hunter-survival.json) has a faster Beast-Survival build: that one is written",
+    "written": [
+     "beast-survival-open-leveling"
+    ],
+    "why": null,
     "spec": "Hybrid Beast Mastery/Survival",
     "date": "2026-10-26"
    },

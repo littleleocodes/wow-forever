@@ -9,7 +9,7 @@ What the leveling tools share:
   (spec_modes.leveling_rotation_ok) and keeping, per build, the talents that grant its spec's required leveling spells;
 - `check(cls, rot, flat, level, result)`: one fight-lab result against the build's spec rule at one level (required spells cast from
   the level they are learned; the core share only at level 60, where the rule applies);
-- `penalty(chk)`: the factor the searches put on a failing build's kills per hour (core share / min_share, halved when a required spell
+- `penalty(chk)`: the factor the searches put on a failing build's kills per hour (FAIL_STEP x core share / min_share, halved when a required spell
   goes uncast or its talent is missing), so they look for the fastest build that plays its spec (fl_open_search._ttk);
 - `check_build(pool, cls, rot, build)`: levels 20-60 of a build with its order, the record `fl_open_search` keeps as `signature` and
   `open_builds.py` reads; `qualifying(...)` for the race picks.
@@ -29,6 +29,7 @@ import spec_modes as SM  # noqa: E402
 
 LEVELS = (20, 30, 40, 50, 60)
 CHECK_FIGHTS, CHECK_SEED = 600, 4
+FAIL_STEP = 0.9   # the factor every failing build pays on top of its core-share ratio (penalty)
 
 
 def enabled():
@@ -139,9 +140,9 @@ def check(cls, rot, flat, level, result, order=None, spec=None):
 def penalty(v):
     if not v or v.get("ok"):
         return 1.0
-    f = 1.0
-    if v.get("core_share_checked", True) and v.get("core_share") is not None and v.get("min_share"):
-        f = min(1.0, v["core_share"] / v["min_share"])
+    f = FAIL_STEP   # 2026-10-26 audit: a proportional penalty alone let the one-tree Survival search pick 10/11/30, 2.1% faster at a
+    if v.get("core_share_checked", True) and v.get("core_share") is not None and v.get("min_share"):   # core share of 49.5% (x0.99),
+        f *= min(1.0, v["core_share"] / v["min_share"])   # which no page may show; any failure now costs 10% on top
     if v.get("uncast") or v.get("missing_talents"):
         f *= 0.5
     return max(0.05, f)
