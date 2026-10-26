@@ -1606,9 +1606,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Affliction",
-      "generated": "2026-10-25",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "summary": "The Affliction leveling build the open leveling search found on 2026-10-25: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +5.1% faster per kill than affliction-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Affliction leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +5.1% faster per kill than affliction-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Affliction": [
           ["Improved Life Tap", 2],
@@ -1685,9 +1685,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Affliction/Demonology",
-      "generated": "2026-10-25",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "summary": "The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-10-25: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.4% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.4% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Affliction": [
           ["Improved Life Tap", 2],
@@ -1756,7 +1756,7 @@
         {"talent": "Improved Voidwalker", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+28.3% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.42; demonology-leveling 31.15. The search simulated 34,237 builds.", "The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.21 s, leveling-affliction 39.03 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["+6.7% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.42; demonology-leveling 31.15. The search simulated 34,237 builds.", "The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 32.27 s, leveling-affliction 32.46 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Affliction-Demonology leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--7"],
       "replaces": "leveling-affliction"
@@ -1768,9 +1768,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Demonology/Destruction",
-      "generated": "2026-10-25",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "summary": "The Demonology/Destruction hybrid (a Demonology/Destruction hybrid) leveling build the open leveling search found on 2026-10-25: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +14.0% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Demonology/Destruction hybrid (a Demonology/Destruction hybrid) leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +14.0% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Affliction": [
           ["Suppression", 5]
@@ -1837,6 +1837,80 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 44.56; destruction-leveling 50.82. The search simulated 40,901 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/05-10050332012210013-0450304123-7"]
+    },
+    {
+      "id": "destruction-open-leveling",
+      "name": "Destruction — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-10-26",
+      "derived": "leveling",
+      "summary": "The Destruction leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +11.1% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 1],
+          ["Suppression", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 1],
+          ["Unholy Power", 5],
+          ["Improved Voidwalker", 3],
+          ["Fel Vitality", 2]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Cataclysm", 3],
+          ["Aftermath", 2],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Intensity", 3],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Pyroclasm", 1],
+          ["Bane of Havoc", 1],
+          ["Fire and Brimstone", 3],
+          ["Shadow and Flame", 5],
+          ["Incinerate", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Destruction", "talent": "Bane", "points": 5},
+        {"levels": "15-16", "tree": "Destruction", "talent": "Aftermath", "points": 2},
+        {"levels": "17-19", "tree": "Destruction", "talent": "Cataclysm", "points": 3},
+        {"levels": "20-24", "tree": "Destruction", "talent": "Ruin", "points": 5},
+        {"levels": "25-27", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
+        {"levels": "28", "tree": "Destruction", "talent": "Shadowburn", "points": 1},
+        {"levels": "29-31", "tree": "Destruction", "talent": "Intensity", "points": 3},
+        {"levels": "32", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
+        {"levels": "33", "tree": "Destruction", "talent": "Pyroclasm", "points": 1},
+        {"levels": "34", "tree": "Destruction", "talent": "Bane of Havoc", "points": 1},
+        {"levels": "35-39", "tree": "Destruction", "talent": "Shadow and Flame", "points": 5},
+        {"levels": "40", "tree": "Destruction", "talent": "Incinerate", "points": 1},
+        {"levels": "41-43", "tree": "Destruction", "talent": "Fire and Brimstone", "points": 3},
+        {"levels": "44", "tree": "Affliction", "talent": "Improved Life Tap", "points": 1},
+        {"levels": "45-48", "tree": "Affliction", "talent": "Suppression", "points": 4},
+        {"levels": "49-53", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "54-56", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "57", "tree": "Affliction", "talent": "Suppression", "points": 1},
+        {"levels": "58", "tree": "Demonology", "talent": "Demonic Embrace", "points": 1},
+        {"levels": "59-60", "tree": "Demonology", "talent": "Fel Vitality", "points": 2}
+      ],
+      "core": [
+        {"talent": "Suppression", "why": "+3.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Conflagrate", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shadow and Flame", "why": "+2.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Agonizing Flames", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Voidwalker", "why": "+1.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Cataclysm", "why": "+1.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shadowburn", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Incinerate", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 45.74; destruction-leveling 50.82. The search simulated 26,746 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Destruction leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/15-0015032-0050325133111351-7"]
     }
   ]
 }

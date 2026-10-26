@@ -9,22 +9,27 @@
   "enhancement-ml-raid",
   "elemental-enhancement-ml-raid",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-hand-2026-09-27.json",
-  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-preset-level-60.json",
+  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-preset-standard.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r1.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r2.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r3.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r4.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r5.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r6.json",
-  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r7.json"
+  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r7.json",
+  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-enhancement-dps-r8.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "shaman/enhancement",
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/shaman/enhancement-dps.apl.json",
-  "apl_sim": "ui/specs/shaman/enhancement/apls/forever.apl.json",
+  "apl_sim": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
   "race": "RaceOrc",
   "setting": "dummy",
   "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus mana_spring_totem and the spec's standard consumables; no raid or party buffs and no debuffs from others",
@@ -39,89 +44,93 @@
    "zanzaId": 8410,
    "dragonbreathChili": true,
    "foodId": 13810,
-   "potId": 13444
+   "potId": 13444,
+   "mhImbueId": 22756,
+   "ohImbueId": 16138
   },
-  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
  },
  "talents": [
   {
-   "talent": "Stormstrike",
-   "sim": 0.18200817109405365,
-   "ev_before": 0.3070914288070583,
-   "ev_after": 0.1797746050028269,
-   "scale": 0.25398801686242223,
-   "how": "fitted",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Shamanistic Focus",
-   "sim": 0.10124944810173342,
-   "ev_before": 0.11814045181330063,
-   "ev_after": 0.11924282674349164,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
    "talent": "Maelstrom Weapon",
-   "sim": 0.09700504453783651,
-   "ev_before": 0.16573935332270556,
-   "ev_after": 0.16993505830739672,
+   "sim": 0.5250234670110976,
+   "ev_before": 0.17080896825591851,
+   "ev_after": 0.1695821357651218,
    "scale": 1.0,
    "how": "apl",
    "builds": [
     "enhancement-raid-dps",
     "opt-enhancement-dps-raid-dps",
     "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Stormstrike",
+   "sim": 0.19834733315209332,
+   "ev_before": 0.1379165892562634,
+   "ev_after": 0.198397200873315,
+   "scale": 2.4183326680213213,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Shamanistic Focus",
+   "sim": 0.08290506090235673,
+   "ev_before": 0.10346842238893325,
+   "ev_after": 0.0799865558207518,
+   "scale": 0.7815013597719371,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Flurry",
-   "sim": 0.08329777858102477,
-   "ev_before": 0.06819562499346002,
-   "ev_after": 0.08318217180992521,
-   "scale": 1.312522946856916,
+   "sim": 0.07699403097098158,
+   "ev_before": 0.09454689933427694,
+   "ev_after": 0.07675687666691611,
+   "scale": 0.7884212345816195,
    "how": "fitted",
    "builds": [
     "enhancement-raid-dps",
@@ -129,21 +138,22 @@
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Mental Dexterity",
-   "sim": 0.056661939743658435,
-   "ev_before": 0.05578390829033763,
-   "ev_after": 0.05578231987873305,
+   "sim": 0.06504096110958839,
+   "ev_before": 0.05578095786585618,
+   "ev_after": 0.055781542667407424,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -152,21 +162,22 @@
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Thundering Strikes",
-   "sim": 0.05107433555027896,
-   "ev_before": 0.047236103632035384,
-   "ev_after": 0.0470233289834614,
+   "sim": 0.04712572734356418,
+   "ev_before": 0.0474676020595043,
+   "ev_after": 0.04745817866612172,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -175,121 +186,55 @@
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Convection",
-   "sim": 0.03580422518806457,
-   "ev_before": 0.04206346214974924,
-   "ev_after": 0.04272351180458388,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Mental Quickness",
-   "sim": 0.026918337647318307,
-   "ev_before": 0.03179911516307668,
-   "ev_after": 0.03245312757899223,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Call of Flame",
-   "sim": 0.023240184470690713,
-   "ev_before": 0.02715544807789998,
-   "ev_after": 0.029743898050103478,
+   "sim": 0.03973487475115921,
+   "ev_before": 0.041826458417508094,
+   "ev_after": 0.03974448348106723,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "opt-enhancement-dps-raid-dps",
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
-   "talent": "Rage of the Farseer",
-   "sim": 0.021809876227519145,
-   "ev_before": 0.015028356498792778,
-   "ev_after": 0.014346664796989162,
+   "talent": "Improved Stormstrike",
+   "sim": 0.03711542417645704,
+   "ev_before": 2.537222957540565e-05,
+   "ev_after": 2.4307130274141805e-05,
    "scale": 1.0,
-   "how": "kept",
+   "how": "held",
    "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Elemental Focus",
-   "sim": 0.02088404659293068,
-   "ev_before": 0.013352660637917908,
-   "ev_after": 0.013555919789760352,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r8"
    ]
   },
   {
-   "talent": "Ancestral Knowledge",
-   "sim": 0.018392698421224898,
-   "ev_before": 0.020906020533462907,
-   "ev_after": 0.02118649075723228,
+   "talent": "Mental Quickness",
+   "sim": 0.03199670090035745,
+   "ev_before": 0.030899639507214794,
+   "ev_after": 0.030931153071739086,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -298,106 +243,157 @@
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Elemental Devastation",
-   "sim": 0.016789491836042746,
-   "ev_before": 0.010524828140557182,
-   "ev_after": 0.010354950919667828,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Tidal Focus",
-   "sim": 0.016588115230765428,
-   "ev_before": 0.028853827306772075,
-   "ev_after": 0.01657735994740948,
-   "scale": 0.4072721959091723,
+   "sim": 0.026494171349355687,
+   "ev_before": 0.015009984982027887,
+   "ev_after": 0.02672384637351155,
+   "scale": 2.3659362103790045,
    "how": "fitted",
    "builds": [
     "enhancement-raid-dps",
     "opt-enhancement-dps-raid-dps",
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-r4",
-    "cand-enhancement-dps-r5",
-    "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
-   ]
-  },
-  {
-   "talent": "Elemental Weapons",
-   "sim": 0.009224432362737357,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "enhancement-raid-dps",
-    "opt-enhancement-dps-raid-dps",
-    "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
-    "cand-enhancement-dps-r7"
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
    ]
   },
   {
    "talent": "Reverberation",
-   "sim": 0.008342553377039217,
-   "ev_before": 0.0074218702663776314,
-   "ev_after": 0.007127591418335767,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.02000669598072207,
+   "ev_before": 0.00484560334165872,
+   "ev_after": 0.019921786899867604,
+   "scale": 3.3830689539707084,
+   "how": "fitted",
    "builds": [
     "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3"
    ]
   },
   {
-   "talent": "Concussion",
-   "sim": 0.00829827454491697,
-   "ev_before": 0.005654375407646581,
-   "ev_after": 0.0056665816317342296,
+   "talent": "Ancestral Knowledge",
+   "sim": 0.01897071468235372,
+   "ev_before": 0.0183817828699298,
+   "ev_after": 0.01899997773917436,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
     "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Rage of the Farseer",
+   "sim": 0.01873724004669551,
+   "ev_before": 0.014598657273630923,
+   "ev_after": 0.015048377469177313,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Elemental Devastation",
+   "sim": 0.01728642941087449,
+   "ev_before": 0.010875489638308184,
+   "ev_after": 0.010863015005949595,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Elemental Focus",
+   "sim": 0.0118856343595865,
+   "ev_before": 0.011305967709580894,
+   "ev_after": 0.012015629838397476,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-dps",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Concussion",
+   "sim": 0.009860797062074766,
+   "ev_before": 0.004916655293215583,
+   "ev_after": 0.005076439060481331,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-dps",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
     "cand-enhancement-dps-r1",
     "cand-enhancement-dps-r2",
     "cand-enhancement-dps-r3",
@@ -407,16 +403,52 @@
    ]
   },
   {
-   "talent": "Totemic Focus",
-   "sim": 0.00498382756789921,
-   "ev_before": 0.004245991380037706,
-   "ev_after": 0.004317378816004815,
+   "talent": "Mindfulness",
+   "sim": 0.009859301212082358,
+   "ev_before": 0.0058333378332976775,
+   "ev_after": 0.008316671469878198,
    "scale": 1.0,
-   "how": "noise",
+   "how": "kept",
+   "builds": [
+    "opt-enhancement-dps-raid-dps",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Convection",
+   "sim": 0.009599318535045108,
+   "ev_before": 0.036273185449489334,
+   "ev_after": 0.009487552396554601,
+   "scale": 0.25741754984483123,
+   "how": "fitted",
    "builds": [
     "enhancement-raid-dps",
     "opt-enhancement-dps-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Elemental Weapons",
+   "sim": 0.009423125741233114,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-dps",
+    "enhancement-ml-raid",
+    "elemental-enhancement-ml-raid",
     "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r3",
     "cand-enhancement-dps-r4",
     "cand-enhancement-dps-r5",
     "cand-enhancement-dps-r6",
@@ -424,7 +456,66 @@
    ]
   },
   {
-   "talent": "Improved Fire Nova",
+   "talent": "Totemic Focus",
+   "sim": 0.002393255762486229,
+   "ev_before": 0.00320730133213555,
+   "ev_after": 0.003671315859951437,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "enhancement-raid-dps",
+    "elemental-enhancement-ml-raid",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r5",
+    "cand-enhancement-dps-r6",
+    "cand-enhancement-dps-r7",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Earth's Grasp",
+   "sim": 0.0,
+   "ev_before": 9.339065190091193e-06,
+   "ev_after": 9.092486785114537e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-enhancement-dps-raid-dps",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Spirit Weapons",
+   "sim": 0.0,
+   "ev_before": 1.961483363438133e-05,
+   "ev_after": 1.8731312400119378e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-enhancement-dps-raid-dps",
+    "cand-enhancement-dps-hand-2026-09-27",
+    "cand-enhancement-dps-preset-standard",
+    "cand-enhancement-dps-r1",
+    "cand-enhancement-dps-r2",
+    "cand-enhancement-dps-r3",
+    "cand-enhancement-dps-r4",
+    "cand-enhancement-dps-r8"
+   ]
+  },
+  {
+   "talent": "Toughness",
+   "sim": 0.0,
+   "ev_before": 1.390287129523407e-05,
+   "ev_after": 1.3502440406019877e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-enhancement-dps-raid-dps"
+   ]
+  },
+  {
+   "talent": "Trial by Fire",
    "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
@@ -432,23 +523,7 @@
    "how": "noise",
    "builds": [
     "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid"
-   ]
-  },
-  {
-   "talent": "Spirit Weapons",
-   "sim": 0.0,
-   "ev_before": 1.6701184718665743e-05,
-   "ev_after": 1.8837080364876137e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-enhancement-dps-hand-2026-09-27",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3",
-    "cand-enhancement-dps-r4"
+    "cand-enhancement-dps-preset-standard"
    ]
   },
   {
@@ -488,8 +563,8 @@
   {
    "talent": "Elemental Warding",
    "sim": 0.0,
-   "ev_before": 1.5068359192578501e-05,
-   "ev_after": 1.7112667201851278e-05,
+   "ev_before": 1.8013688810320954e-05,
+   "ev_after": 1.7057455389382863e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -497,19 +572,14 @@
    ]
   },
   {
-   "talent": "Improved Stormstrike",
-   "sim": -0.0009295021446656267,
-   "ev_before": 2.4893086750158045e-05,
-   "ev_after": 2.791742800318728e-05,
+   "talent": "Elemental Alacrity",
+   "sim": -0.0009760869129004843,
+   "ev_before": 0.0035881713823964615,
+   "ev_after": 0.003548548538549571,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "enhancement-ml-raid",
-    "elemental-enhancement-ml-raid",
-    "cand-enhancement-dps-preset-level-60",
-    "cand-enhancement-dps-r1",
-    "cand-enhancement-dps-r2",
-    "cand-enhancement-dps-r3"
+    "opt-enhancement-dps-raid-dps"
    ]
   }
  ],
@@ -519,412 +589,463 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.3475,
-   "cap": 0.29,
-   "rms": 0.0156,
-   "points": 60
+   "loss": 0.29,
+   "cap": 0.9,
+   "rms": 0.02,
+   "points": 68
   },
   "builds": {
    "enhancement-raid-dps": {
-    "dps": 394.8243330602872,
-    "surplus": 400.8541189347982,
-    "oom_seconds": 13.851154603009999,
-    "deficit": 0.015042344807467911,
-    "sustain": 1.3137,
-    "bound_share": 0.583,
-    "model_deficit": 0.0197
+    "dps": 373.15981465438125,
+    "surplus": 382.38161466230486,
+    "oom_seconds": 11.675239999960672,
+    "deficit": 0.024116745299241682,
+    "sustain": 1.2584,
+    "bound_share": 0.5198,
+    "model_deficit": 0.0164
    },
    "opt-enhancement-dps-raid-dps": {
-    "dps": 400.85687665890566,
-    "surplus": 406.5080882166136,
-    "oom_seconds": 13.680554085152668,
-    "deficit": 0.013901842845243984,
-    "sustain": 1.3137,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0201
+    "dps": 387.77577539028306,
+    "surplus": 393.5220441624444,
+    "oom_seconds": 7.55477733330268,
+    "deficit": 0.014602152172672911,
+    "sustain": 1.2606,
+    "bound_share": 0.5386,
+    "model_deficit": 0.0158
    },
    "enhancement-ml-raid": {
-    "dps": 397.363441694014,
-    "surplus": 414.67810812144785,
-    "oom_seconds": 29.212244803292666,
-    "deficit": 0.04175447434607005,
-    "sustain": 1.2947,
-    "bound_share": 0.5969,
-    "model_deficit": 0.0315
+    "dps": 397.77412888743396,
+    "surplus": 402.9713190332339,
+    "oom_seconds": 4.956277333200666,
+    "deficit": 0.012897171337822422,
+    "sustain": 1.2378,
+    "bound_share": 0.5471,
+    "model_deficit": 0.0286
    },
    "elemental-enhancement-ml-raid": {
-    "dps": 377.05357659844066,
-    "surplus": 399.70657410535,
-    "oom_seconds": 34.240173371607334,
-    "deficit": 0.056674067864940225,
-    "sustain": 1.2947,
-    "bound_share": 0.5868,
-    "model_deficit": 0.031
+    "dps": 254.666744779954,
+    "surplus": 256.20515096327244,
+    "oom_seconds": 28.80643999997265,
+    "deficit": 0.0060045872517956456,
+    "sustain": 1.2441,
+    "bound_share": 0.479,
+    "model_deficit": 0.022
    },
    "cand-enhancement-dps-hand-2026-09-27": {
-    "dps": 376.1275993562462,
-    "surplus": 406.7774815322199,
-    "oom_seconds": 45.81248206975399,
-    "deficit": 0.07534803072314611,
-    "sustain": 1.2274,
-    "bound_share": 0.5876,
-    "model_deficit": 0.0706
+    "dps": 363.76866744311224,
+    "surplus": 389.53218896728396,
+    "oom_seconds": 28.75368092204804,
+    "deficit": 0.06613964713025433,
+    "sustain": 1.2205,
+    "bound_share": 0.5271,
+    "model_deficit": 0.0366
    },
-   "cand-enhancement-dps-preset-level-60": {
-    "dps": 392.9984383315149,
-    "surplus": 411.58157072151886,
-    "oom_seconds": 31.381884731166664,
-    "deficit": 0.0451505453886748,
-    "sustain": 1.2824,
-    "bound_share": 0.604,
-    "model_deficit": 0.0393
+   "cand-enhancement-dps-preset-standard": {
+    "dps": 396.09819018924867,
+    "surplus": 408.48843961800395,
+    "oom_seconds": 13.352413333303998,
+    "deficit": 0.030331946334495985,
+    "sustain": 1.2081,
+    "bound_share": 0.5502,
+    "model_deficit": 0.045
    },
    "cand-enhancement-dps-r1": {
-    "dps": 379.6626091934425,
-    "surplus": 411.67021311076155,
-    "oom_seconds": 46.95060505790933,
-    "deficit": 0.07775059476724222,
-    "sustain": 1.2273,
-    "bound_share": 0.5882,
-    "model_deficit": 0.0707
+    "dps": 380.1526494259337,
+    "surplus": 389.76333292512,
+    "oom_seconds": 10.650986666619348,
+    "deficit": 0.024657741473676942,
+    "sustain": 1.2204,
+    "bound_share": 0.5328,
+    "model_deficit": 0.0371
    },
    "cand-enhancement-dps-r2": {
-    "dps": 389.7147190994068,
-    "surplus": 406.76598549119893,
-    "oom_seconds": 29.212244803292666,
-    "deficit": 0.041919105824941405,
-    "sustain": 1.2947,
-    "bound_share": 0.5875,
-    "model_deficit": 0.031
+    "dps": 379.9994693981674,
+    "surplus": 384.7176058172044,
+    "oom_seconds": 4.33642564090267,
+    "deficit": 0.012263895251206192,
+    "sustain": 1.2378,
+    "bound_share": 0.5321,
+    "model_deficit": 0.0278
    },
    "cand-enhancement-dps-r3": {
-    "dps": 390.926847160039,
-    "surplus": 407.71668933176215,
-    "oom_seconds": 29.212244803292666,
-    "deficit": 0.04118016900225807,
-    "sustain": 1.2947,
-    "bound_share": 0.5855,
-    "model_deficit": 0.0309
+    "dps": 380.7862691718984,
+    "surplus": 385.48095170249627,
+    "oom_seconds": 4.33642564090267,
+    "deficit": 0.012178766576827038,
+    "sustain": 1.2378,
+    "bound_share": 0.5301,
+    "model_deficit": 0.0277
    },
    "cand-enhancement-dps-r4": {
-    "dps": 379.78943396912877,
-    "surplus": 402.6784022282548,
-    "oom_seconds": 39.10212736761333,
-    "deficit": 0.05684180758756374,
-    "sustain": 1.2274,
-    "bound_share": 0.585,
-    "model_deficit": 0.0702
+    "dps": 365.6428831923677,
+    "surplus": 384.64632926264443,
+    "oom_seconds": 23.868533333278023,
+    "deficit": 0.04940498485116385,
+    "sustain": 1.2205,
+    "bound_share": 0.5217,
+    "model_deficit": 0.0362
    },
    "cand-enhancement-dps-r5": {
-    "dps": 386.7341404490988,
-    "surplus": 403.6032065241648,
-    "oom_seconds": 31.181070532471338,
-    "deficit": 0.04179616465474245,
-    "sustain": 1.2463,
-    "bound_share": 0.585,
-    "model_deficit": 0.0592
+    "dps": 369.52333630836455,
+    "surplus": 383.8341010055397,
+    "oom_seconds": 16.917533333337996,
+    "deficit": 0.037283724035162336,
+    "sustain": 1.2394,
+    "bound_share": 0.5216,
+    "model_deficit": 0.0264
    },
    "cand-enhancement-dps-r6": {
-    "dps": 394.8243330602872,
-    "surplus": 400.8541189347982,
-    "oom_seconds": 13.851154603009999,
-    "deficit": 0.015042344807467911,
-    "sustain": 1.3137,
-    "bound_share": 0.583,
-    "model_deficit": 0.0197
+    "dps": 372.14887655935235,
+    "surplus": 380.96265439868057,
+    "oom_seconds": 11.432666666610023,
+    "deficit": 0.02313554291362252,
+    "sustain": 1.2567,
+    "bound_share": 0.5197,
+    "model_deficit": 0.0173
    },
    "cand-enhancement-dps-r7": {
-    "dps": 400.85687665890566,
-    "surplus": 406.5080882166136,
-    "oom_seconds": 13.680554085152668,
-    "deficit": 0.013901842845243984,
-    "sustain": 1.3137,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0201
+    "dps": 383.10223851137715,
+    "surplus": 392.37945393690813,
+    "oom_seconds": 12.449266666639994,
+    "deficit": 0.023643479118105604,
+    "sustain": 1.2567,
+    "bound_share": 0.5383,
+    "model_deficit": 0.0179
+   },
+   "cand-enhancement-dps-r8": {
+    "dps": 382.8147791328584,
+    "surplus": 383.7012555892826,
+    "oom_seconds": 0.0,
+    "deficit": 0.002310329829551261,
+    "sustain": 1.2711,
+    "bound_share": 0.538,
+    "model_deficit": 0.0102
    }
   },
   "removals": {
    "enhancement-raid-dps -Convection": {
-    "deficit": 0.0414,
-    "sustain": 1.2463,
-    "bound_share": 0.583,
-    "model_deficit": 0.059
+    "deficit": 0.0358,
+    "sustain": 1.241,
+    "bound_share": 0.5198,
+    "model_deficit": 0.0255
    },
    "enhancement-raid-dps -Elemental Focus": {
-    "deficit": 0.0317,
-    "sustain": 1.2918,
-    "bound_share": 0.583,
-    "model_deficit": 0.0325
+    "deficit": 0.0379,
+    "sustain": 1.2365,
+    "bound_share": 0.5198,
+    "model_deficit": 0.0278
    },
    "enhancement-raid-dps -Shamanistic Focus": {
-    "deficit": 0.1041,
-    "sustain": 1.139,
-    "bound_share": 0.583,
-    "model_deficit": 0.1216
+    "deficit": 0.1003,
+    "sustain": 1.1219,
+    "bound_share": 0.5198,
+    "model_deficit": 0.0874
    },
    "enhancement-raid-dps -Totemic Focus": {
-    "deficit": 0.0183,
-    "sustain": 1.3068,
-    "bound_share": 0.583,
-    "model_deficit": 0.0237
+    "deficit": 0.0239,
+    "sustain": 1.2528,
+    "bound_share": 0.5198,
+    "model_deficit": 0.0193
    },
    "opt-enhancement-dps-raid-dps -Convection": {
-    "deficit": 0.042,
-    "sustain": 1.2463,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0602
+    "deficit": 0.0235,
+    "sustain": 1.2433,
+    "bound_share": 0.5386,
+    "model_deficit": 0.0252
    },
    "opt-enhancement-dps-raid-dps -Elemental Focus": {
-    "deficit": 0.0339,
-    "sustain": 1.2918,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0332
+    "deficit": 0.0275,
+    "sustain": 1.2388,
+    "bound_share": 0.5386,
+    "model_deficit": 0.0276
+   },
+   "opt-enhancement-dps-raid-dps -Mindfulness": {
+    "deficit": 0.0256,
+    "sustain": 1.2528,
+    "bound_share": 0.5386,
+    "model_deficit": 0.02
    },
    "opt-enhancement-dps-raid-dps -Shamanistic Focus": {
-    "deficit": 0.1064,
-    "sustain": 1.139,
-    "bound_share": 0.5952,
-    "model_deficit": 0.1241
-   },
-   "opt-enhancement-dps-raid-dps -Totemic Focus": {
-    "deficit": 0.0179,
-    "sustain": 1.3068,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0242
+    "deficit": 0.0964,
+    "sustain": 1.1241,
+    "bound_share": 0.5386,
+    "model_deficit": 0.0893
    },
    "enhancement-ml-raid -Convection": {
-    "deficit": 0.079,
-    "sustain": 1.2273,
-    "bound_share": 0.5969,
-    "model_deficit": 0.0717
+    "deficit": 0.0249,
+    "sustain": 1.2204,
+    "bound_share": 0.5471,
+    "model_deficit": 0.0381
    },
    "enhancement-ml-raid -Elemental Focus": {
-    "deficit": 0.0625,
-    "sustain": 1.2728,
-    "bound_share": 0.5969,
-    "model_deficit": 0.0446
+    "deficit": 0.0251,
+    "sustain": 1.2159,
+    "bound_share": 0.5471,
+    "model_deficit": 0.0405
    },
    "enhancement-ml-raid -Improved Stormstrike": {
-    "deficit": 0.0402,
-    "sustain": 1.2947,
-    "bound_share": 0.5969,
-    "model_deficit": 0.0315
+    "deficit": 0.0568,
+    "sustain": 1.2378,
+    "bound_share": 0.5471,
+    "model_deficit": 0.0286
    },
    "enhancement-ml-raid -Shamanistic Focus": {
-    "deficit": 0.1355,
-    "sustain": 1.12,
-    "bound_share": 0.5969,
-    "model_deficit": 0.1358
+    "deficit": 0.1013,
+    "sustain": 1.1013,
+    "bound_share": 0.5471,
+    "model_deficit": 0.1032
    },
    "elemental-enhancement-ml-raid -Convection": {
-    "deficit": 0.0996,
-    "sustain": 1.2273,
-    "bound_share": 0.5868,
-    "model_deficit": 0.0705
+    "deficit": 0.0081,
+    "sustain": 1.2267,
+    "bound_share": 0.479,
+    "model_deficit": 0.0303
    },
    "elemental-enhancement-ml-raid -Elemental Focus": {
-    "deficit": 0.0799,
-    "sustain": 1.2728,
-    "bound_share": 0.5868,
-    "model_deficit": 0.0438
-   },
-   "elemental-enhancement-ml-raid -Improved Stormstrike": {
-    "deficit": 0.0559,
-    "sustain": 1.2947,
-    "bound_share": 0.5868,
-    "model_deficit": 0.031
-   },
-   "elemental-enhancement-ml-raid -Shamanistic Focus": {
-    "deficit": 0.164,
-    "sustain": 1.12,
-    "bound_share": 0.5868,
-    "model_deficit": 0.1335
-   },
-   "cand-enhancement-dps-hand-2026-09-27 -Shamanistic Focus": {
-    "deficit": 0.148,
-    "sustain": 1.0528,
-    "bound_share": 0.5876,
-    "model_deficit": 0.1704
-   },
-   "cand-enhancement-dps-hand-2026-09-27 -Totemic Focus": {
-    "deficit": 0.0815,
-    "sustain": 1.2205,
-    "bound_share": 0.5876,
-    "model_deficit": 0.0746
-   },
-   "cand-enhancement-dps-preset-level-60 -Convection": {
-    "deficit": 0.0836,
-    "sustain": 1.215,
-    "bound_share": 0.604,
-    "model_deficit": 0.08
-   },
-   "cand-enhancement-dps-preset-level-60 -Elemental Focus": {
-    "deficit": 0.0638,
-    "sustain": 1.2605,
-    "bound_share": 0.604,
-    "model_deficit": 0.0525
-   },
-   "cand-enhancement-dps-preset-level-60 -Improved Stormstrike": {
-    "deficit": 0.045,
-    "sustain": 1.2824,
-    "bound_share": 0.604,
-    "model_deficit": 0.0393
-   },
-   "cand-enhancement-dps-preset-level-60 -Shamanistic Focus": {
-    "deficit": 0.1419,
-    "sustain": 1.1077,
-    "bound_share": 0.604,
-    "model_deficit": 0.1448
-   },
-   "cand-enhancement-dps-r1 -Elemental Focus": {
-    "deficit": 0.1016,
-    "sustain": 1.2055,
-    "bound_share": 0.5882,
-    "model_deficit": 0.0835
-   },
-   "cand-enhancement-dps-r1 -Improved Stormstrike": {
-    "deficit": 0.0781,
-    "sustain": 1.2273,
-    "bound_share": 0.5882,
-    "model_deficit": 0.0707
-   },
-   "cand-enhancement-dps-r1 -Shamanistic Focus": {
-    "deficit": 0.1523,
-    "sustain": 1.0527,
-    "bound_share": 0.5882,
-    "model_deficit": 0.1706
-   },
-   "cand-enhancement-dps-r2 -Convection": {
-    "deficit": 0.0783,
-    "sustain": 1.2273,
-    "bound_share": 0.5875,
-    "model_deficit": 0.0706
-   },
-   "cand-enhancement-dps-r2 -Elemental Focus": {
-    "deficit": 0.0616,
-    "sustain": 1.2728,
-    "bound_share": 0.5875,
-    "model_deficit": 0.0439
-   },
-   "cand-enhancement-dps-r2 -Improved Stormstrike": {
-    "deficit": 0.0403,
-    "sustain": 1.2947,
-    "bound_share": 0.5875,
-    "model_deficit": 0.031
-   },
-   "cand-enhancement-dps-r2 -Shamanistic Focus": {
-    "deficit": 0.1345,
-    "sustain": 1.12,
-    "bound_share": 0.5875,
-    "model_deficit": 0.1336
-   },
-   "cand-enhancement-dps-r3 -Convection": {
-    "deficit": 0.0771,
-    "sustain": 1.2273,
-    "bound_share": 0.5855,
-    "model_deficit": 0.0704
-   },
-   "cand-enhancement-dps-r3 -Elemental Focus": {
-    "deficit": 0.0607,
-    "sustain": 1.2728,
-    "bound_share": 0.5855,
-    "model_deficit": 0.0437
-   },
-   "cand-enhancement-dps-r3 -Improved Stormstrike": {
-    "deficit": 0.0396,
-    "sustain": 1.2947,
-    "bound_share": 0.5855,
-    "model_deficit": 0.0309
-   },
-   "cand-enhancement-dps-r3 -Shamanistic Focus": {
-    "deficit": 0.132,
-    "sustain": 1.12,
-    "bound_share": 0.5855,
-    "model_deficit": 0.1332
-   },
-   "cand-enhancement-dps-r4 -Shamanistic Focus": {
-    "deficit": 0.133,
-    "sustain": 1.0528,
-    "bound_share": 0.585,
-    "model_deficit": 0.1696
-   },
-   "cand-enhancement-dps-r4 -Totemic Focus": {
-    "deficit": 0.0651,
-    "sustain": 1.2205,
-    "bound_share": 0.585,
-    "model_deficit": 0.0743
-   },
-   "cand-enhancement-dps-r4 -Water Shield": {
-    "deficit": 0.0568,
-    "sustain": 1.2274,
-    "bound_share": 0.585,
-    "model_deficit": 0.0702
-   },
-   "cand-enhancement-dps-r5 -Elemental Focus": {
-    "deficit": 0.059,
-    "sustain": 1.2244,
-    "bound_share": 0.585,
-    "model_deficit": 0.072
-   },
-   "cand-enhancement-dps-r5 -Shamanistic Focus": {
-    "deficit": 0.1194,
-    "sustain": 1.0716,
-    "bound_share": 0.585,
-    "model_deficit": 0.1614
-   },
-   "cand-enhancement-dps-r5 -Totemic Focus": {
-    "deficit": 0.0461,
-    "sustain": 1.2394,
-    "bound_share": 0.585,
-    "model_deficit": 0.0632
-   },
-   "cand-enhancement-dps-r6 -Convection": {
-    "deficit": 0.0414,
-    "sustain": 1.2463,
-    "bound_share": 0.583,
-    "model_deficit": 0.059
-   },
-   "cand-enhancement-dps-r6 -Elemental Focus": {
-    "deficit": 0.0317,
-    "sustain": 1.2918,
-    "bound_share": 0.583,
+    "deficit": 0.0121,
+    "sustain": 1.2222,
+    "bound_share": 0.479,
     "model_deficit": 0.0325
    },
+   "elemental-enhancement-ml-raid -Improved Stormstrike": {
+    "deficit": 0.0191,
+    "sustain": 1.2441,
+    "bound_share": 0.479,
+    "model_deficit": 0.022
+   },
+   "elemental-enhancement-ml-raid -Mindfulness": {
+    "deficit": 0.0201,
+    "sustain": 1.2285,
+    "bound_share": 0.479,
+    "model_deficit": 0.0295
+   },
+   "elemental-enhancement-ml-raid -Shamanistic Focus": {
+    "deficit": 0.006,
+    "sustain": 1.1076,
+    "bound_share": 0.479,
+    "model_deficit": 0.0874
+   },
+   "elemental-enhancement-ml-raid -Totemic Focus": {
+    "deficit": 0.0056,
+    "sustain": 1.2372,
+    "bound_share": 0.479,
+    "model_deficit": 0.0253
+   },
+   "cand-enhancement-dps-hand-2026-09-27 -Shamanistic Focus": {
+    "deficit": 0.1508,
+    "sustain": 1.084,
+    "bound_share": 0.5271,
+    "model_deficit": 0.1086
+   },
+   "cand-enhancement-dps-hand-2026-09-27 -Totemic Focus": {
+    "deficit": 0.0726,
+    "sustain": 1.2136,
+    "bound_share": 0.5271,
+    "model_deficit": 0.0403
+   },
+   "cand-enhancement-dps-preset-standard -Elemental Focus": {
+    "deficit": 0.0468,
+    "sustain": 1.1863,
+    "bound_share": 0.5502,
+    "model_deficit": 0.0571
+   },
+   "cand-enhancement-dps-preset-standard -Improved Stormstrike": {
+    "deficit": 0.083,
+    "sustain": 1.2081,
+    "bound_share": 0.5502,
+    "model_deficit": 0.045
+   },
+   "cand-enhancement-dps-preset-standard -Shamanistic Focus": {
+    "deficit": 0.1225,
+    "sustain": 1.0716,
+    "bound_share": 0.5502,
+    "model_deficit": 0.1201
+   },
+   "cand-enhancement-dps-r1 -Elemental Focus": {
+    "deficit": 0.0381,
+    "sustain": 1.1986,
+    "bound_share": 0.5328,
+    "model_deficit": 0.0487
+   },
+   "cand-enhancement-dps-r1 -Improved Stormstrike": {
+    "deficit": 0.0711,
+    "sustain": 1.2204,
+    "bound_share": 0.5328,
+    "model_deficit": 0.0371
+   },
+   "cand-enhancement-dps-r1 -Shamanistic Focus": {
+    "deficit": 0.1144,
+    "sustain": 1.0839,
+    "bound_share": 0.5328,
+    "model_deficit": 0.1098
+   },
+   "cand-enhancement-dps-r2 -Convection": {
+    "deficit": 0.0247,
+    "sustain": 1.2204,
+    "bound_share": 0.5321,
+    "model_deficit": 0.037
+   },
+   "cand-enhancement-dps-r2 -Elemental Focus": {
+    "deficit": 0.0228,
+    "sustain": 1.2159,
+    "bound_share": 0.5321,
+    "model_deficit": 0.0394
+   },
+   "cand-enhancement-dps-r2 -Improved Stormstrike": {
+    "deficit": 0.0563,
+    "sustain": 1.2378,
+    "bound_share": 0.5321,
+    "model_deficit": 0.0278
+   },
+   "cand-enhancement-dps-r2 -Shamanistic Focus": {
+    "deficit": 0.0979,
+    "sustain": 1.1013,
+    "bound_share": 0.5321,
+    "model_deficit": 0.1004
+   },
+   "cand-enhancement-dps-r3 -Convection": {
+    "deficit": 0.0244,
+    "sustain": 1.2204,
+    "bound_share": 0.5301,
+    "model_deficit": 0.0369
+   },
+   "cand-enhancement-dps-r3 -Elemental Focus": {
+    "deficit": 0.0223,
+    "sustain": 1.2159,
+    "bound_share": 0.5301,
+    "model_deficit": 0.0393
+   },
+   "cand-enhancement-dps-r3 -Improved Stormstrike": {
+    "deficit": 0.0555,
+    "sustain": 1.2378,
+    "bound_share": 0.5301,
+    "model_deficit": 0.0277
+   },
+   "cand-enhancement-dps-r3 -Shamanistic Focus": {
+    "deficit": 0.0963,
+    "sustain": 1.1013,
+    "bound_share": 0.5301,
+    "model_deficit": 0.1
+   },
+   "cand-enhancement-dps-r4 -Shamanistic Focus": {
+    "deficit": 0.1363,
+    "sustain": 1.084,
+    "bound_share": 0.5217,
+    "model_deficit": 0.1075
+   },
+   "cand-enhancement-dps-r4 -Totemic Focus": {
+    "deficit": 0.0567,
+    "sustain": 1.2136,
+    "bound_share": 0.5217,
+    "model_deficit": 0.0398
+   },
+   "cand-enhancement-dps-r4 -Water Shield": {
+    "deficit": 0.0494,
+    "sustain": 1.2205,
+    "bound_share": 0.5217,
+    "model_deficit": 0.0362
+   },
+   "cand-enhancement-dps-r5 -Elemental Focus": {
+    "deficit": 0.0515,
+    "sustain": 1.2175,
+    "bound_share": 0.5216,
+    "model_deficit": 0.0378
+   },
+   "cand-enhancement-dps-r5 -Shamanistic Focus": {
+    "deficit": 0.1154,
+    "sustain": 1.1029,
+    "bound_share": 0.5216,
+    "model_deficit": 0.0976
+   },
+   "cand-enhancement-dps-r5 -Totemic Focus": {
+    "deficit": 0.0394,
+    "sustain": 1.2325,
+    "bound_share": 0.5216,
+    "model_deficit": 0.03
+   },
+   "cand-enhancement-dps-r6 -Convection": {
+    "deficit": 0.0371,
+    "sustain": 1.2394,
+    "bound_share": 0.5197,
+    "model_deficit": 0.0263
+   },
+   "cand-enhancement-dps-r6 -Elemental Focus": {
+    "deficit": 0.0385,
+    "sustain": 1.2349,
+    "bound_share": 0.5197,
+    "model_deficit": 0.0287
+   },
    "cand-enhancement-dps-r6 -Shamanistic Focus": {
-    "deficit": 0.1041,
-    "sustain": 1.139,
-    "bound_share": 0.583,
-    "model_deficit": 0.1216
+    "deficit": 0.0994,
+    "sustain": 1.1202,
+    "bound_share": 0.5197,
+    "model_deficit": 0.0882
    },
    "cand-enhancement-dps-r6 -Totemic Focus": {
-    "deficit": 0.0183,
-    "sustain": 1.3068,
-    "bound_share": 0.583,
-    "model_deficit": 0.0237
+    "deficit": 0.0267,
+    "sustain": 1.2498,
+    "bound_share": 0.5197,
+    "model_deficit": 0.0209
    },
    "cand-enhancement-dps-r7 -Convection": {
-    "deficit": 0.042,
-    "sustain": 1.2463,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0602
+    "deficit": 0.0344,
+    "sustain": 1.2394,
+    "bound_share": 0.5383,
+    "model_deficit": 0.0272
    },
    "cand-enhancement-dps-r7 -Elemental Focus": {
-    "deficit": 0.0339,
-    "sustain": 1.2918,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0332
+    "deficit": 0.0385,
+    "sustain": 1.2349,
+    "bound_share": 0.5383,
+    "model_deficit": 0.0297
    },
    "cand-enhancement-dps-r7 -Shamanistic Focus": {
-    "deficit": 0.1064,
-    "sustain": 1.139,
-    "bound_share": 0.5952,
-    "model_deficit": 0.1241
+    "deficit": 0.104,
+    "sustain": 1.1202,
+    "bound_share": 0.5383,
+    "model_deficit": 0.0914
    },
    "cand-enhancement-dps-r7 -Totemic Focus": {
-    "deficit": 0.0179,
-    "sustain": 1.3068,
-    "bound_share": 0.5952,
-    "model_deficit": 0.0242
+    "deficit": 0.0242,
+    "sustain": 1.2498,
+    "bound_share": 0.5383,
+    "model_deficit": 0.0216
+   },
+   "cand-enhancement-dps-r8 -Convection": {
+    "deficit": 0.0022,
+    "sustain": 1.2538,
+    "bound_share": 0.538,
+    "model_deficit": 0.0195
+   },
+   "cand-enhancement-dps-r8 -Elemental Focus": {
+    "deficit": 0.0,
+    "sustain": 1.2492,
+    "bound_share": 0.538,
+    "model_deficit": 0.0219
+   },
+   "cand-enhancement-dps-r8 -Improved Stormstrike": {
+    "deficit": 0.0022,
+    "sustain": 1.2711,
+    "bound_share": 0.538,
+    "model_deficit": 0.0102
+   },
+   "cand-enhancement-dps-r8 -Mindfulness": {
+    "deficit": 0.0062,
+    "sustain": 1.2477,
+    "bound_share": 0.538,
+    "model_deficit": 0.0228
+   },
+   "cand-enhancement-dps-r8 -Shamanistic Focus": {
+    "deficit": 0.0311,
+    "sustain": 1.1346,
+    "bound_share": 0.538,
+    "model_deficit": 0.0836
+   },
+   "cand-enhancement-dps-r8 -Totemic Focus": {
+    "deficit": 0.0011,
+    "sustain": 1.2642,
+    "bound_share": 0.538,
+    "model_deficit": 0.0139
    }
   }
  }

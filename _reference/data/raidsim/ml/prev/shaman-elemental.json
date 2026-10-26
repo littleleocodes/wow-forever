@@ -7,91 +7,268 @@
  ],
  "best": "elemental-raid",
  "best_entry": "elemental-dps",
- "best_dps": 439.83,
+ "best_dps": 356.88,
  "any_split": false,
- "date": "2026-10-01",
+ "date": "2026-10-14",
  "gear": {
   "bis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-22",
    "chosen": "all-slots",
-   "ilvl": 64.5,
+   "ilvl": 65.4,
    "trinkets": [
     "Talisman of Ephemeral Power",
-    "Briarwood Reed"
+    "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Talisman of Ephemeral Power (18820)": 1.0228,
+    "Weakness Analyzer (272438)": 1.0211,
+    "Serenity Field (272439)": 1.0125,
+    "Alchemist's Stone (13503)": 1.0114,
+    "Jewel of the Guard Captain (270225)": 1.0075,
+    "Frozen Heart of the Mountain (249469)": 1.0062,
+    "Shard of the Splithooves (10659)": 1.0028,
+    "Rune of the Guard Captain (19120)": 1.0025,
+    "Cleansed Vilebranch Medallion (270275)": 1.0025,
+    "Enriched Seal (271903)": 1.0016,
+    "Darkspear Voodoo Seal (272061)": 1.0016,
+    "Everlook Delivery Bot (274760)": 1.0012,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271905)": 0.9993,
+    "Darkspear Voodoo Seal (272059)": 0.9993,
+    "Dog Whistle (3456)": 0.9963,
+    "Demon's Blood (10779)": 0.9963,
+    "Smoking Heart of the Mountain (11811)": 0.9963,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9963,
+    "Molten Heart of the Mountain (249470)": 0.9963,
+    "Dormant Heart of the Mountain (249473)": 0.9963,
+    "Volunteer's Lucky Seal (271904)": 0.9963,
+    "Volunteer's Lucky Seal (271906)": 0.9963,
+    "Relentless Raider's Seal (272060)": 0.9963,
+    "Relentless Raider's Seal (272062)": 0.9963,
+    "Parachute-Priest Pager (274761)": 0.9963,
+    "Minor Recombobulator (4381)": 0.9951,
+    "Gnomish Universal Remote (7506)": 0.9951,
+    "Heart of the Scale (13164)": 0.9951,
+    "Arcanite Dragonling (16022)": 0.9951,
+    "Stormpike Insignia Rank 6 (17904)": 0.9951,
+    "Gyrofreeze Ice Reflector (18634)": 0.9951,
+    "Major Recombobulator (18637)": 0.9951,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9951,
+    "Essence of the Pure Flame (18815)": 0.9951,
+    "Arena Grand Master (19024)": 0.9951,
+    "Talisman of Arathor (20071)": 0.9951,
+    "Defiler's Talisman (20072)": 0.9951,
+    "Defiler's Talisman (21115)": 0.9951,
+    "Defiler's Talisman (21116)": 0.9951,
+    "Talisman of Arathor (21117)": 0.9951,
+    "Talisman of Arathor (21118)": 0.9951,
+    "Talisman of Arathor (21119)": 0.9951,
+    "Defiler's Talisman (21120)": 0.9951,
+    "Defender of the Timbermaw (21326)": 0.9951,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9951,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9951,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9951,
+    "Gnomish Poultryizer (260824)": 0.9951,
+    "Adaptive Combat Assistant (272437)": 0.9951,
+    "Defender's Grip Stabilizer (272440)": 0.9951,
+    "Everlook Pathcarver (274759)": 0.9951
+   },
    "names": [
-    "Spellweaver's Turban",
+    "Blue Dragonscale Helm",
     "Choker of the Fire Lord",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
-    "Robe of Volatile Power",
+    "Theramore Shoulderguards",
+    "Arcanoweave Cloak",
+    "Zandalar Augur's Hauberk",
     "Rockfury Bracers",
-    "Gloves of the Greatfather",
-    "Mana Igniting Cord",
-    "Legplates of Ten Storms",
-    "Waterspout Boots",
-    "Leafre's Ring of Precise Spell Power",
+    "Theramore Handguards",
+    "Belt of the Archmage",
+    "Ironfeather Leggings",
+    "Sorcerer's Boots",
+    "Signet Ring of the Bronze Dragonflight",
     "Ring of Spell Power",
     "Talisman of Ephemeral Power",
-    "Briarwood Reed",
-    "Staff of Dominance",
+    "Weakness Analyzer",
+    "Ironbark Staff",
     null,
-    null
+    "Totem of the Storm"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.004124915609895,
-    "keep-sets-and-effects": 1.0032707013064954
+    "all-slots": 1.00881278707007,
+    "keep-sets-and-effects": 1.00881278707007
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0035059689813268
+    "all-slots": 1.0089341484695835
    },
    "weights": {
-    "StatFireDamage": 0.1413,
-    "StatIntellect": 0.1504,
-    "StatNatureDamage": 0.2926,
-    "StatSpellCritRating": 0.2613,
-    "StatSpellDamage": 0.4338,
-    "StatSpellHasteRating": 0.3531,
-    "StatSpellHitRating": 0.476,
-    "StatSpirit": 0.0404
+    "StatCritRating": 0.2811,
+    "StatFireDamage": 0.1565,
+    "StatHasteRating": 0.1698,
+    "StatHitRating": 0.5429,
+    "StatIntellect": 0.4523,
+    "StatNatureDamage": 0.3038,
+    "StatSpellDamage": 0.4603,
+    "StatSpellPiercing": 0.8085,
+    "StatSpirit": 0.2391
    },
    "evaluated_on": [
-    "elemental-dps: deep winner"
-   ]
+    "elemental-dps: ml winner"
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Blue Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Deep Earth Spaulders (not in the database)",
+     "to": "Theramore Shoulderguards"
+    },
+    {
+     "slot": 3,
+     "from": "Sapphiron Drape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Robe of Volatile Power (not in the database)",
+     "to": "Zandalar Augur's Hauberk"
+    },
+    {
+     "slot": 6,
+     "from": "Gloves of the Greatfather",
+     "to": "Theramore Handguards"
+    },
+    {
+     "slot": 7,
+     "from": "Mana Igniting Cord (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 10,
+     "from": "Rune Band of Wizardry (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 13,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 14,
+     "from": "Staff of Dominance (not in the database)",
+     "to": "Ironbark Staff"
+    },
+    {
+     "slot": 16,
+     "from": null,
+     "to": "Totem of the Storm"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:18829",
+     "item:17078",
+     "item:19145",
+     "item:19136",
+     "item:22339",
+     "item:12930",
+     "item:18842"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Call of Thunder"
+    ],
+    "minutes": 2.3
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.9,
+   "ilvl": 63.3,
    "trinkets": [
-    "Briarwood Reed",
-    "Weakness Analyzer"
+    "Weakness Analyzer",
+    "Alchemist's Stone"
    ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0217,
+    "Serenity Field (272439)": 1.0128,
+    "Alchemist's Stone (13503)": 1.0111,
+    "Jewel of the Guard Captain (270225)": 1.0079,
+    "Frozen Heart of the Mountain (249469)": 1.0063,
+    "Shard of the Splithooves (10659)": 1.0029,
+    "Rune of the Guard Captain (19120)": 1.0024,
+    "Cleansed Vilebranch Medallion (270275)": 1.0024,
+    "Enriched Seal (271903)": 1.0019,
+    "Darkspear Voodoo Seal (272061)": 1.0019,
+    "Everlook Delivery Bot (274760)": 1.0008,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271905)": 0.9989,
+    "Darkspear Voodoo Seal (272059)": 0.9989,
+    "Dog Whistle (3456)": 0.996,
+    "Demon's Blood (10779)": 0.996,
+    "Smoking Heart of the Mountain (11811)": 0.996,
+    "Ultra-Flash Shadow Reflector (18639)": 0.996,
+    "Molten Heart of the Mountain (249470)": 0.996,
+    "Dormant Heart of the Mountain (249473)": 0.996,
+    "Volunteer's Lucky Seal (271904)": 0.996,
+    "Volunteer's Lucky Seal (271906)": 0.996,
+    "Relentless Raider's Seal (272060)": 0.996,
+    "Relentless Raider's Seal (272062)": 0.996,
+    "Parachute-Priest Pager (274761)": 0.996,
+    "Minor Recombobulator (4381)": 0.9954,
+    "Gnomish Universal Remote (7506)": 0.9954,
+    "Heart of the Scale (13164)": 0.9954,
+    "Arcanite Dragonling (16022)": 0.9954,
+    "Stormpike Insignia Rank 6 (17904)": 0.9954,
+    "Gyrofreeze Ice Reflector (18634)": 0.9954,
+    "Major Recombobulator (18637)": 0.9954,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9954,
+    "Talisman of Arathor (20071)": 0.9954,
+    "Defiler's Talisman (20072)": 0.9954,
+    "Defiler's Talisman (21115)": 0.9954,
+    "Defiler's Talisman (21116)": 0.9954,
+    "Talisman of Arathor (21117)": 0.9954,
+    "Talisman of Arathor (21118)": 0.9954,
+    "Talisman of Arathor (21119)": 0.9954,
+    "Defiler's Talisman (21120)": 0.9954,
+    "Defender of the Timbermaw (21326)": 0.9954,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9954,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9954,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9954,
+    "Gnomish Poultryizer (260824)": 0.9954,
+    "Adaptive Combat Assistant (272437)": 0.9954,
+    "Defender's Grip Stabilizer (272440)": 0.9954,
+    "Everlook Pathcarver (274759)": 0.9954
+   },
    "names": [
-    "Spellweaver's Turban",
-    "Nacreous Shell Necklace",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
+    "Blue Dragonscale Helm",
+    "Orb of the Darkmoon",
+    "Theramore Shoulderguards",
+    "Arcanoweave Cloak",
     "Zandalar Augur's Hauberk",
     "Rockfury Bracers",
     "Gloves of Earthen Power",
-    "Knowledge of the Timbermaw",
+    "Belt of the Archmage",
     "Ironfeather Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
-    "Rune Band of Wizardry",
-    "Briarwood Reed",
+    "Signet Ring of the Bronze Dragonflight",
+    "Elemental Focus Band",
     "Weakness Analyzer",
-    "Lord Valthalak's Staff of Command",
+    "Alchemist's Stone",
+    "Ironbark Staff",
     null,
-    null
+    "Totem of the Storm"
    ],
    "race_seed1": {
     "all-slots": 1.0,
@@ -102,18 +279,88 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatFireDamage": 0.1413,
-    "StatIntellect": 0.2417,
-    "StatNatureDamage": 0.3007,
-    "StatSpellCritRating": 0.2603,
-    "StatSpellDamage": 0.442,
-    "StatSpellHasteRating": 0.3547,
-    "StatSpellHitRating": 0.5251,
-    "StatSpirit": 0.0389
+    "StatCritRating": 0.2754,
+    "StatFireDamage": 0.158,
+    "StatHasteRating": 0.1967,
+    "StatHitRating": 0.5571,
+    "StatIntellect": 0.4184,
+    "StatNatureDamage": 0.306,
+    "StatSpellDamage": 0.4639,
+    "StatSpellPiercing": 0.8013,
+    "StatSpirit": 0.2267
    },
    "evaluated_on": [
-    "elemental-dps: deep winner (bis)"
-   ]
+    "elemental-dps: ml winner (bis)"
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Blue Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Theramore Shoulderguards"
+    },
+    {
+     "slot": 3,
+     "from": "Crystalline Threaded Cape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 10,
+     "from": "Elemental Focus Band",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Elemental Focus Band"
+    },
+    {
+     "slot": 12,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 13,
+     "from": "Weakness Analyzer",
+     "to": "Alchemist's Stone"
+    },
+    {
+     "slot": 14,
+     "from": "Lord Valthalak's Staff of Command (not in the database)",
+     "to": "Ironbark Staff"
+    },
+    {
+     "slot": 16,
+     "from": null,
+     "to": "Totem of the Storm"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:227808",
+     "item:20697",
+     "item:228190",
+     "item:12930",
+     "item:22335"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Call of Thunder"
+    ],
+    "minutes": 2.3
+   }
   }
  },
  "search": {
@@ -122,7 +369,7 @@
    "spec": "Elemental",
    "setting": "dummy",
    "entry": "elemental-dps",
-   "date": "2026-10-01",
+   "date": "2026-10-14",
    "constraint": "Elemental 30+",
    "protected": [
     "Elemental Focus"
@@ -135,11 +382,11 @@
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -147,23 +394,23 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
       [
-       "Eye of the Storm",
-       2
-      ],
-      [
-       "Call of Thunder",
+       "Elemental Focus",
        1
       ],
       [
+       "Eye of the Storm",
+       3
+      ],
+      [
        "Elemental Reach",
+       1
+      ],
+      [
+       "Lava Burst",
        1
       ],
       [
@@ -171,144 +418,319 @@
        3
       ],
       [
-       "Earthbound",
-       1
-      ],
-      [
        "Elemental Fury",
        5
       ],
       [
-       "Lava Burst",
+       "Elemental Mastery",
        1
       ]
      ],
      "Enhancement": [
       [
        "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
-       2
+       4
       ]
      ],
      "Restoration": [
       [
-       "Improved Healing Wave",
-       3
-      ],
-      [
-       "Totemic Focus",
-       2
+       "Tidal Focus",
+       5
       ],
       [
        "Mindfulness",
        3
       ],
       [
-       "Tidal Focus",
+       "Natural Grace",
+       2
+      ],
+      [
+       "Totemic Focus",
        5
+      ],
+      [
+       "Mana Tide Totem",
+       1
       ]
      ]
     },
-    "split": "31/7/13",
-    "dps": 441.14,
-    "se": 0.067,
-    "iterations": 100000
+    "split": "31/4/16",
+    "dps": 379.05,
+    "se": 0.0675,
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
-    "split": "31/7/13",
-    "dps": 441.14,
-    "se": 0.067,
+    "split": "31/4/16",
+    "dps": 379.05,
+    "se": 0.0675,
     "differs": [
      [
-      "Earthbound",
-      1
+      "Healing Focus",
+      2
      ],
      [
-      "Elemental Devastation",
-      1
+      "Natural Grace",
+      2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        4
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Natural Grace",
+        2
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 379.05,
+     "se": 0.0675,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        4
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Healing Focus",
+        2
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 379.05,
+     "se": 0.0675,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    }
+   ],
    "runs": [
     {
      "entry": "elemental-dps",
      "run": 1,
-     "simulated": 1193,
-     "best_screen": 441.13,
-     "best_split": "31/7/13",
+     "simulated": 1391,
+     "best_screen": 380.45,
+     "best_split": "31/4/16",
      "trace": [
       {
        "round": 0,
-       "simulated": 393,
-       "best": 440.95
+       "simulated": 391,
+       "best": 379.45
       },
       {
        "round": 1,
-       "simulated": 593,
-       "best": 440.95,
-       "predicted_top": 439.1
+       "simulated": 591,
+       "best": 380.26,
+       "predicted_top": 366.08
       },
       {
        "round": 2,
-       "simulated": 793,
-       "best": 440.95,
-       "predicted_top": 439.8
+       "simulated": 791,
+       "best": 380.26,
+       "predicted_top": 378.16
       },
       {
        "round": 3,
-       "simulated": 993,
-       "best": 441.13,
-       "predicted_top": 440.39
+       "simulated": 991,
+       "best": 380.45,
+       "predicted_top": 379.44
       },
       {
        "round": 4,
-       "simulated": 1193,
-       "best": 441.13,
-       "predicted_top": 440.77
+       "simulated": 1191,
+       "best": 380.45,
+       "predicted_top": 380.24
+      },
+      {
+       "round": 5,
+       "simulated": 1391,
+       "best": 380.45,
+       "predicted_top": 380.26
       }
      ],
-     "best_stage1_gap": 0.0,
+     "best_stage1_gap": -0.0019,
      "agrees_with_winner": true
     },
     {
      "entry": "elemental-dps",
      "run": 2,
-     "simulated": 1191,
-     "best_screen": 441.13,
-     "best_split": "31/7/13",
+     "simulated": 1402,
+     "best_screen": 380.26,
+     "best_split": "31/4/16",
      "trace": [
       {
        "round": 0,
-       "simulated": 391,
-       "best": 440.95
+       "simulated": 402,
+       "best": 377.9
       },
       {
        "round": 1,
-       "simulated": 591,
-       "best": 440.95,
-       "predicted_top": 439.23
+       "simulated": 602,
+       "best": 380.26,
+       "predicted_top": 368.07
       },
       {
        "round": 2,
-       "simulated": 791,
-       "best": 441.13,
-       "predicted_top": 440.72
+       "simulated": 802,
+       "best": 380.26,
+       "predicted_top": 378.54
       },
       {
        "round": 3,
-       "simulated": 991,
-       "best": 441.13,
-       "predicted_top": 440.88
+       "simulated": 1002,
+       "best": 380.26,
+       "predicted_top": 380.07
       },
       {
        "round": 4,
-       "simulated": 1191,
-       "best": 441.13,
-       "predicted_top": 441.12
+       "simulated": 1202,
+       "best": 380.26,
+       "predicted_top": 380.26
+      },
+      {
+       "round": 5,
+       "simulated": 1402,
+       "best": 380.26,
+       "predicted_top": 380.26
       }
      ],
      "best_stage1_gap": 0.0,
@@ -321,122 +743,130 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91,
-      440.91
+      379.32,
+      379.32,
+      379.32,
+      379.32,
+      379.32,
+      379.32,
+      378.58,
+      378.58,
+      378.58,
+      378.58,
+      378.58,
+      378.58
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      441.01,
-      441.01,
-      441.01,
-      441.01,
-      441.01
+      378.97,
+      378.97,
+      378.97,
+      378.97,
+      378.97
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      441.14,
-      441.14
+      379.05,
+      379.05
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 263,
-     "best_gap": 0.0012,
-     "best_move": "1 Improved Healing Wave -> Totemic Focus",
+     "neighbours": 208,
+     "best_gap": 0.0013,
+     "best_move": "3 Eye of the Storm -> Reverberation",
      "raced": [
-      "1 Improved Healing Wave -> Totemic Focus",
-      "2 Improved Healing Wave -> Totemic Focus"
+      "3 Eye of the Storm -> Reverberation"
      ],
-     "confirmed_gap": 0.0006
+     "confirmed_gap": -0.0013
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Elemental Fury",
-     "importance": 0.3676
+     "importance": 0.3307
     },
     {
      "feature": "Tidal Focus",
-     "importance": 0.22
+     "importance": 0.1982
     },
     {
-     "feature": "Lava Burst",
-     "importance": 0.1131
+     "feature": "Mindfulness",
+     "importance": 0.1268
     },
     {
-     "feature": "Call of Thunder",
-     "importance": 0.0931
-    },
-    {
-     "feature": "Reverberation",
-     "importance": 0.0376
-    },
-    {
-     "feature": "Elemental Alacrity",
-     "importance": 0.0348
-    },
-    {
-     "feature": "Elemental Devastation",
-     "importance": 0.0274
+     "feature": "Mana Tide Totem",
+     "importance": 0.0741
     },
     {
      "feature": "Elemental Warding",
-     "importance": 0.0192
+     "importance": 0.0706
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0142
+     "importance": 0.0363
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0339
+    },
+    {
+     "feature": "Call of Thunder",
+     "importance": 0.0231
     },
     {
      "feature": "Elemental points",
-     "importance": 0.0129
+     "importance": 0.0169
     },
     {
-     "feature": "Thundering Strikes",
-     "importance": 0.012
+     "feature": "Lava Burst",
+     "importance": 0.0146
     },
     {
-     "feature": "Lightning Overload",
-     "importance": 0.0113
+     "feature": "Shamanistic Focus",
+     "importance": 0.0118
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0101
     }
    ],
-   "simulated_builds": 2670,
-   "simulated_fights": 3736000,
-   "minutes": 2.1,
+   "simulated_builds": 2963,
+   "simulated_fights": 3890000,
+   "minutes": 2.4,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
   },
   "bis-dummy": {
-   "entry": "elemental-dps",
+   "class": "shaman",
+   "spec": "Elemental",
    "setting": "dummy",
-   "date": "2026-10-03",
-   "deep": true,
+   "entry": "elemental-dps",
+   "date": "2026-10-14",
+   "constraint": "Elemental 30+",
+   "protected": [
+    "Elemental Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "elemental-dps"
+   ],
    "winner": {
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -444,23 +874,23 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
+      ],
+      [
+       "Elemental Focus",
+       1
       ],
       [
        "Eye of the Storm",
        3
       ],
       [
-       "Call of Thunder",
+       "Elemental Reach",
        1
       ],
       [
-       "Elemental Reach",
+       "Lava Burst",
        1
       ],
       [
@@ -472,52 +902,921 @@
        5
       ],
       [
-       "Lava Burst",
+       "Elemental Mastery",
        1
       ]
      ],
      "Enhancement": [
       [
        "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
-       2
+       4
       ]
      ],
      "Restoration": [
       [
-       "Improved Healing Wave",
-       2
-      ],
-      [
-       "Totemic Focus",
-       3
+       "Tidal Focus",
+       5
       ],
       [
        "Mindfulness",
        3
       ],
       [
+       "Natural Grace",
+       2
+      ],
+      [
+       "Totemic Focus",
+       5
+      ],
+      [
+       "Mana Tide Totem",
+       1
+      ]
+     ]
+    },
+    "split": "31/4/16",
+    "dps": 370.83,
+    "se": 0.0697,
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+   },
+   "runner_up": {
+    "split": "31/4/16",
+    "dps": 370.83,
+    "se": 0.0697,
+    "differs": [
+     [
+      "Earthbound",
+      1
+     ],
+     [
+      "Elemental Reach",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        4
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Natural Grace",
+        2
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 370.83,
+     "se": 0.0697,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Earthbound",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        4
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Natural Grace",
+        2
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 370.83,
+     "se": 0.0697,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    }
+   ],
+   "runs": [
+    {
+     "entry": "elemental-dps",
+     "run": 1,
+     "simulated": 1202,
+     "best_screen": 371.93,
+     "best_split": "31/4/16",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 402,
+       "best": 371.85
+      },
+      {
+       "round": 1,
+       "simulated": 602,
+       "best": 371.85,
+       "predicted_top": 367.43
+      },
+      {
+       "round": 2,
+       "simulated": 802,
+       "best": 371.85,
+       "predicted_top": 369.55
+      },
+      {
+       "round": 3,
+       "simulated": 1002,
+       "best": 371.93,
+       "predicted_top": 371.37
+      },
+      {
+       "round": 4,
+       "simulated": 1202,
+       "best": 371.93,
+       "predicted_top": 371.82
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      370.99,
+      370.99,
+      370.99,
+      370.57,
+      370.57,
+      370.57
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      370.84,
+      370.84,
+      370.84,
+      370.39,
+      370.39
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      370.83,
+      370.83
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 208,
+     "best_gap": 0.0022,
+     "best_move": "1 Lava Burst -> Thundering Strikes",
+     "raced": [
+      "1 Lava Burst -> Thundering Strikes"
+     ],
+     "confirmed_gap": -0.0004
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Elemental Fury",
+     "importance": 0.3451
+    },
+    {
+     "feature": "Mana Tide Totem",
+     "importance": 0.1786
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.1279
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.1203
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0391
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0378
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.034
+    },
+    {
+     "feature": "Elemental Warding",
+     "importance": 0.0315
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0137
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0088
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.007
+    },
+    {
+     "feature": "Enhancement points",
+     "importance": 0.007
+    }
+   ],
+   "simulated_builds": 1426,
+   "simulated_fights": 2299000,
+   "minutes": 1.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "shaman",
+   "spec": "Elemental",
+   "setting": "raid",
+   "entry": "elemental-dps",
+   "date": "2026-10-14",
+   "constraint": "Elemental 30+",
+   "protected": [
+    "Elemental Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "elemental-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Reverberation",
+       2
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Earthbound",
+       1
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lava Burst",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Elemental Mastery",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Ancestral Knowledge",
+       2
+      ],
+      [
+       "Thundering Strikes",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
        "Tidal Focus",
+       5
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Totemic Focus",
        5
       ]
      ]
     },
     "split": "31/7/13",
-    "dps": 441.22,
-    "se": 0.048,
-    "iterations": 200000
+    "dps": 509.88,
+    "se": 0.0791,
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "31/7/13",
-    "dps": 441.26,
-    "se": 0.067,
+    "dps": 509.88,
+    "se": 0.0791,
     "differs": [
      [
-      "Elemental Warding",
+      "Earthbound",
       1
+     ],
+     [
+      "Elemental Reach",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      1
+     ],
+     [
+      "Improved Fire Nova",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Reverberation",
+        2
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Earthbound",
+        1
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        2
+       ],
+       [
+        "Thundering Strikes",
+        5
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        5
+       ]
+      ]
+     },
+     "split": "31/7/13",
+     "dps": 509.88,
+     "se": 0.0791,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Reverberation",
+        2
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        1
+       ],
+       [
+        "Trial by Fire",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        2
+       ],
+       [
+        "Thundering Strikes",
+        5
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        5
+       ]
+      ]
+     },
+     "split": "31/7/13",
+     "dps": 509.88,
+     "se": 0.0791,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    }
+   ],
+   "runs": [
+    {
+     "entry": "elemental-dps",
+     "run": 1,
+     "simulated": 1594,
+     "best_screen": 510.99,
+     "best_split": "31/7/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 394,
+       "best": 510.11
+      },
+      {
+       "round": 1,
+       "simulated": 594,
+       "best": 510.14,
+       "predicted_top": 508.31
+      },
+      {
+       "round": 2,
+       "simulated": 794,
+       "best": 510.42,
+       "predicted_top": 509.44
+      },
+      {
+       "round": 3,
+       "simulated": 994,
+       "best": 510.99,
+       "predicted_top": 510.08
+      },
+      {
+       "round": 4,
+       "simulated": 1194,
+       "best": 510.99,
+       "predicted_top": 510.36
+      },
+      {
+       "round": 5,
+       "simulated": 1394,
+       "best": 510.99,
+       "predicted_top": 510.75
+      },
+      {
+       "round": 6,
+       "simulated": 1594,
+       "best": 510.99,
+       "predicted_top": 510.87
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      510.27,
+      510.27,
+      510.27,
+      510.27,
+      510.27,
+      510.27
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      509.87,
+      509.87,
+      509.87,
+      509.87,
+      509.87
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      509.88,
+      509.88
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 304,
+     "best_gap": 0.0,
+     "best_move": "1 Earthbound -> Elemental Reach"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Elemental Fury",
+     "importance": 0.4522
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.1965
+    },
+    {
+     "feature": "Call of Thunder",
+     "importance": 0.1155
+    },
+    {
+     "feature": "Elemental Warding",
+     "importance": 0.0432
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0328
+    },
+    {
+     "feature": "Lava Burst",
+     "importance": 0.0295
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0245
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0193
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.018
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0158
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0139
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.0122
+    }
+   ],
+   "simulated_builds": 1912,
+   "simulated_fights": 2919000,
+   "minutes": 2.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "shaman",
+   "spec": "Elemental",
+   "setting": "dummy",
+   "entry": "elemental-dps",
+   "date": "2026-10-14",
+   "constraint": "Elemental 30+",
+   "protected": [
+    "Elemental Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "elemental-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Eye of the Storm",
+       3
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lava Burst",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Elemental Mastery",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Ancestral Knowledge",
+       1
+      ],
+      [
+       "Thundering Strikes",
+       3
+      ]
+     ],
+     "Restoration": [
+      [
+       "Tidal Focus",
+       5
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Natural Grace",
+       2
+      ],
+      [
+       "Totemic Focus",
+       5
+      ],
+      [
+       "Mana Tide Totem",
+       1
+      ]
+     ]
+    },
+    "split": "31/4/16",
+    "dps": 355.39,
+    "se": 0.066,
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+   },
+   "runner_up": {
+    "split": "31/4/16",
+    "dps": 355.39,
+    "se": 0.066,
+    "differs": [
+     [
+      "Elemental Reach",
+      1
+     ],
+     [
+      "Elemental Reach",
+      2
      ],
      [
       "Eye of the Storm",
@@ -530,51 +1829,338 @@
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        1
+       ],
+       [
+        "Thundering Strikes",
+        3
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Natural Grace",
+        2
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 355.39,
+     "se": 0.066,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        2
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        1
+       ],
+       [
+        "Thundering Strikes",
+        3
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Natural Grace",
+        2
+       ],
+       [
+        "Totemic Focus",
+        5
+       ],
+       [
+        "Mana Tide Totem",
+        1
+       ]
+      ]
+     },
+     "split": "31/4/16",
+     "dps": 355.39,
+     "se": 0.066,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; +1 Eye of the Storm (tier gating for Elemental Reach) (refill: the elemental-dps model, raid-dps)"
+    }
+   ],
    "runs": [
     {
-     "run": 1
-    },
-    {
-     "run": 2
-    },
-    {
-     "run": 3
-    },
-    {
-     "run": 4
-    },
-    {
-     "run": 5
-    },
-    {
-     "run": 6
+     "entry": "elemental-dps",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 357.13,
+     "best_split": "31/4/16",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 357.12
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 357.13,
+       "predicted_top": 352.15
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 357.13,
+       "predicted_top": 356.38
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 357.13,
+       "predicted_top": 357.01
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 357.13,
+       "predicted_top": 357.12
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     }
    ],
-   "runs_agree": 3,
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      355.45,
+      355.45,
+      355.45,
+      355.45,
+      355.45,
+      355.45
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      355.54,
+      355.54,
+      355.54,
+      355.54,
+      355.54
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      355.39,
+      355.39
+     ]
+    }
+   ],
    "certificate": [
     {
-     "neighbours": 271,
+     "neighbours": 224,
      "best_gap": 0.0,
-     "best_move": "1 Elemental Reach -> Earthbound"
+     "best_move": "1 Natural Grace -> Water Shield"
     }
    ],
-   "simulated_builds": 11684,
-   "protected": []
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Mana Tide Totem",
+     "importance": 0.2615
+    },
+    {
+     "feature": "Elemental Fury",
+     "importance": 0.2406
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.1148
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.0955
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0584
+    },
+    {
+     "feature": "Elemental Warding",
+     "importance": 0.0558
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0459
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0385
+    },
+    {
+     "feature": "Improved Fire Nova",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0123
+    },
+    {
+     "feature": "Improved Healing Wave",
+     "importance": 0.0088
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0066
+    }
+   ],
+   "simulated_builds": 1435,
+   "simulated_fights": 2282000,
+   "minutes": 1.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json"
   },
-  "bis-raid": {
-   "entry": "elemental-dps",
+  "prebis-raid": {
+   "class": "shaman",
+   "spec": "Elemental",
    "setting": "raid",
-   "date": "2026-10-03",
-   "deep": true,
+   "entry": "elemental-dps",
+   "date": "2026-10-14",
+   "constraint": "Elemental 30+",
+   "protected": [
+    "Elemental Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "elemental-dps"
+   ],
    "winner": {
     "allocation": {
      "Elemental": [
       [
-       "Convection",
+       "Concussion",
        5
       ],
       [
-       "Concussion",
+       "Convection",
        5
       ],
       [
@@ -582,19 +2168,19 @@
        3
       ],
       [
-       "Elemental Focus",
-       1
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
       [
-       "Eye of the Storm",
+       "Reverberation",
        2
       ],
       [
-       "Call of Thunder",
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Earthbound",
        1
       ],
       [
@@ -602,435 +2188,392 @@
        1
       ],
       [
-       "Lightning Overload",
-       3
+       "Lava Burst",
+       1
       ],
       [
-       "Earthbound",
-       1
+       "Lightning Overload",
+       3
       ],
       [
        "Elemental Fury",
        5
       ],
       [
-       "Lava Burst",
+       "Elemental Mastery",
        1
       ]
      ],
      "Enhancement": [
       [
-       "Thundering Strikes",
-       5
-      ],
-      [
        "Ancestral Knowledge",
        2
+      ],
+      [
+       "Thundering Strikes",
+       5
       ]
      ],
      "Restoration": [
       [
-       "Improved Healing Wave",
-       3
-      ],
-      [
-       "Totemic Focus",
-       2
+       "Tidal Focus",
+       5
       ],
       [
        "Mindfulness",
        3
       ],
       [
-       "Tidal Focus",
+       "Totemic Focus",
        5
       ]
      ]
     },
     "split": "31/7/13",
-    "dps": 555.51,
-    "se": 0.062,
-    "iterations": 200000
+    "dps": 496.6,
+    "se": 0.0749,
+    "iterations": 100000,
+    "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
    },
    "runner_up": {
     "split": "31/7/13",
-    "dps": 555.49,
-    "se": 0.088,
+    "dps": 496.6,
+    "se": 0.0749,
     "differs": [
      [
-      "Elemental Devastation",
+      "Elemental Reach",
       1
      ],
      [
-      "Elemental Reach",
+      "Eye of the Storm",
       1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Reverberation",
+        2
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Earthbound",
+        1
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        2
+       ],
+       [
+        "Thundering Strikes",
+        5
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        5
+       ]
+      ]
+     },
+     "split": "31/7/13",
+     "dps": 496.6,
+     "se": 0.0749,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Reverberation",
+        2
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Earthbound",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Elemental Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Ancestral Knowledge",
+        2
+       ],
+       [
+        "Thundering Strikes",
+        5
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        5
+       ]
+      ]
+     },
+     "split": "31/7/13",
+     "dps": 496.6,
+     "se": 0.0749,
+     "repair_note": "2026-10-23: repaired to the current trees: 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+    }
+   ],
    "runs": [
     {
-     "run": 1
-    },
-    {
-     "run": 2
-    },
-    {
-     "run": 3
-    },
-    {
-     "run": 4
-    },
-    {
-     "run": 5
-    },
-    {
-     "run": 6
-    },
-    {
-     "run": 7
-    },
-    {
-     "run": 8
-    },
-    {
-     "run": 9
+     "entry": "elemental-dps",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 498.12,
+     "best_split": "31/7/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 498.12
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 498.12,
+       "predicted_top": 495.9
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 498.12,
+       "predicted_top": 496.96
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 498.12,
+       "predicted_top": 497.69
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 498.12,
+       "predicted_top": 497.91
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     }
    ],
-   "runs_agree": 3,
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      496.89,
+      496.89,
+      496.89,
+      496.89,
+      496.89,
+      496.89
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      496.55,
+      496.55,
+      496.55,
+      496.55,
+      496.55
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      496.6,
+      496.6
+     ]
+    }
+   ],
    "certificate": [
     {
-     "neighbours": 268,
-     "best_gap": 0.0002,
-     "best_move": "1 Mindfulness -> Ancestral Knowledge"
+     "neighbours": 304,
+     "best_gap": 0.0,
+     "best_move": "1 Earthbound -> Elemental Reach"
     }
    ],
-   "simulated_builds": 19945,
-   "protected": []
-  },
-  "prebis-dummy": {
-   "entry": "elemental-dps",
-   "setting": "dummy",
-   "date": "2026-10-03",
-   "deep": true,
-   "winner": {
-    "allocation": {
-     "Elemental": [
-      [
-       "Convection",
-       5
-      ],
-      [
-       "Concussion",
-       5
-      ],
-      [
-       "Call of Flame",
-       3
-      ],
-      [
-       "Elemental Devastation",
-       1
-      ],
-      [
-       "Elemental Focus",
-       1
-      ],
-      [
-       "Elemental Alacrity",
-       3
-      ],
-      [
-       "Eye of the Storm",
-       1
-      ],
-      [
-       "Call of Thunder",
-       1
-      ],
-      [
-       "Elemental Reach",
-       1
-      ],
-      [
-       "Lightning Overload",
-       3
-      ],
-      [
-       "Earthbound",
-       1
-      ],
-      [
-       "Elemental Fury",
-       5
-      ],
-      [
-       "Lava Burst",
-       1
-      ]
-     ],
-     "Enhancement": [
-      [
-       "Thundering Strikes",
-       5
-      ],
-      [
-       "Ancestral Knowledge",
-       2
-      ]
-     ],
-     "Restoration": [
-      [
-       "Improved Healing Wave",
-       3
-      ],
-      [
-       "Totemic Focus",
-       2
-      ],
-      [
-       "Mindfulness",
-       3
-      ],
-      [
-       "Tidal Focus",
-       5
-      ]
-     ]
-    },
-    "split": "31/7/13",
-    "dps": 427.09,
-    "se": 0.04,
-    "iterations": 200000
-   },
-   "runner_up": {
-    "split": "32/6/13",
-    "dps": 426.23,
-    "se": 0.057,
-    "differs": [
-     [
-      "Ancestral Knowledge",
-      1
-     ],
-     [
-      "Ancestral Knowledge",
-      2
-     ],
-     [
-      "Eye of the Storm",
-      1
-     ],
-     [
-      "Eye of the Storm",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.002,
-   "runs": [
+   "other_entries": [],
+   "important_features": [
     {
-     "run": 1
+     "feature": "Elemental Fury",
+     "importance": 0.4018
     },
     {
-     "run": 2
+     "feature": "Tidal Focus",
+     "importance": 0.2251
     },
     {
-     "run": 3
+     "feature": "Lava Burst",
+     "importance": 0.0768
     },
     {
-     "run": 4
+     "feature": "Elemental Devastation",
+     "importance": 0.0627
     },
     {
-     "run": 5
+     "feature": "Call of Thunder",
+     "importance": 0.0504
     },
     {
-     "run": 6
+     "feature": "Elemental Warding",
+     "importance": 0.0474
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0352
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0138
+    },
+    {
+     "feature": "Improved Fire Nova",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0123
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0116
     }
    ],
-   "runs_agree": 3,
-   "certificate": [
-    {
-     "neighbours": 369,
-     "best_gap": 0.0032,
-     "best_move": "1 Elemental Devastation -> Ancestral Knowledge",
-     "raced": [
-      "1 Elemental Devastation -> Ancestral Knowledge",
-      "1 Earthbound -> Ancestral Knowledge",
-      "1 Elemental Reach -> Ancestral Knowledge",
-      "1 Eye of the Storm -> Ancestral Knowledge"
-     ],
-     "confirmed_gap": 0.0022
-    },
-    {
-     "neighbours": 269,
-     "best_gap": 0.0009,
-     "best_move": "2 Improved Healing Wave -> Totemic Focus"
-    }
-   ],
-   "simulated_builds": 11642,
-   "protected": []
-  },
-  "prebis-raid": {
-   "entry": "enhancement-dps",
-   "setting": "raid",
-   "date": "2026-10-03",
-   "deep": true,
-   "winner": {
-    "allocation": {
-     "Elemental": [
-      [
-       "Convection",
-       5
-      ],
-      [
-       "Concussion",
-       5
-      ],
-      [
-       "Reverberation",
-       1
-      ],
-      [
-       "Call of Flame",
-       3
-      ],
-      [
-       "Elemental Devastation",
-       3
-      ],
-      [
-       "Elemental Focus",
-       1
-      ],
-      [
-       "Elemental Alacrity",
-       3
-      ],
-      [
-       "Call of Thunder",
-       1
-      ],
-      [
-       "Lightning Overload",
-       3
-      ],
-      [
-       "Elemental Fury",
-       5
-      ]
-     ],
-     "Enhancement": [
-      [
-       "Thundering Strikes",
-       5
-      ],
-      [
-       "Mental Dexterity",
-       3
-      ]
-     ],
-     "Restoration": [
-      [
-       "Totemic Focus",
-       5
-      ],
-      [
-       "Mindfulness",
-       3
-      ],
-      [
-       "Tidal Focus",
-       5
-      ]
-     ]
-    },
-    "split": "30/8/13",
-    "dps": 543.42,
-    "se": 0.058,
-    "iterations": 200000
-   },
-   "runner_up": {
-    "split": "30/8/13",
-    "dps": 543.33,
-    "se": 0.082,
-    "differs": [
-     [
-      "Improved Healing Wave",
-      1
-     ],
-     [
-      "Totemic Focus",
-      4
-     ],
-     [
-      "Totemic Focus",
-      5
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0002,
-   "runs": [
-    {
-     "run": 1
-    },
-    {
-     "run": 2
-    },
-    {
-     "run": 3
-    },
-    {
-     "run": 4
-    },
-    {
-     "run": 5
-    },
-    {
-     "run": 6
-    },
-    {
-     "run": 7
-    },
-    {
-     "run": 8
-    },
-    {
-     "run": 9
-    }
-   ],
-   "runs_agree": 3,
-   "certificate": [
-    {
-     "neighbours": 233,
-     "best_gap": -0.0008,
-     "best_move": "1 Elemental Devastation -> Reverberation"
-    }
-   ],
-   "simulated_builds": 18276,
-   "protected": []
+   "simulated_builds": 1515,
+   "simulated_fights": 2522000,
+   "minutes": 1.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json"
   }
  },
+ "commit": "2ce8265",
  "spells_done": {
-  "date": "2026-10-01",
+  "date": "2026-10-14",
   "lines_kept": 0
- },
- "deep": {
-  "date": "2026-10-03",
-  "cycles": 3,
-  "converged": 3
  },
  "compare": {
   "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "elemental-dps",
-    "dps": 441.19,
-    "se": 0.067
+    "dps": 370.97,
+    "se": 0.069
    },
    "elemental-raid": {
     "entry": "elemental-dps",
-    "dps": 441.38,
-    "se": 0.067
+    "dps": 357.06,
+    "se": 0.07
    }
   },
   "best_hand": null,
@@ -1041,18 +2584,18 @@
   "dps": {
    "winner": {
     "entry": "elemental-dps",
-    "dps": 555.59,
-    "se": 0.088
+    "dps": 509.88,
+    "se": 0.079
    },
    "elemental-raid": {
     "entry": "elemental-dps",
-    "dps": 555.63,
-    "se": 0.088
+    "dps": 509.76,
+    "se": 0.079
    },
    "opt-elemental-dps-raid-dps": {
     "entry": "elemental-dps",
-    "dps": 555.63,
-    "se": 0.088
+    "dps": 509.76,
+    "se": 0.079
    }
   },
   "best_hand": null,
@@ -1061,14 +2604,224 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-03",
+  "date": "2026-10-16",
   "setting": "raid",
-  "why": "confirms elemental-raid (-0.01% in a full raid)"
+  "why": "confirms elemental-raid (+0.02% in a full raid)"
  },
  "tidied": {
-  "bis-dummy": null,
+  "bis-dummy": {
+   "allocation": {
+    "Elemental": [
+     [
+      "Concussion",
+      5
+     ],
+     [
+      "Convection",
+      5
+     ],
+     [
+      "Call of Flame",
+      3
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ],
+     [
+      "Elemental Focus",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      3
+     ],
+     [
+      "Elemental Reach",
+      1
+     ],
+     [
+      "Lava Burst",
+      1
+     ],
+     [
+      "Lightning Overload",
+      3
+     ],
+     [
+      "Elemental Fury",
+      5
+     ],
+     [
+      "Elemental Mastery",
+      1
+     ]
+    ],
+    "Enhancement": [
+     [
+      "Thundering Strikes",
+      4
+     ]
+    ],
+    "Restoration": [
+     [
+      "Tidal Focus",
+      5
+     ],
+     [
+      "Mindfulness",
+      3
+     ],
+     [
+      "Totemic Focus",
+      5
+     ],
+     [
+      "Healing Focus",
+      2
+     ],
+     [
+      "Mana Tide Totem",
+      1
+     ]
+    ]
+   },
+   "split": "31/4/16",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Natural Grace",
+     "to": "Healing Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Natural Grace",
+     "to": "Healing Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    }
+   ],
+   "abilities_never_cast": [
+    "Mana Tide Totem"
+   ],
+   "final_seed3": 0.0,
+   "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+  },
   "bis-raid": null,
-  "prebis-dummy": null,
+  "prebis-dummy": {
+   "allocation": {
+    "Elemental": [
+     [
+      "Concussion",
+      5
+     ],
+     [
+      "Convection",
+      5
+     ],
+     [
+      "Call of Flame",
+      3
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ],
+     [
+      "Elemental Focus",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      3
+     ],
+     [
+      "Elemental Reach",
+      1
+     ],
+     [
+      "Lava Burst",
+      1
+     ],
+     [
+      "Lightning Overload",
+      3
+     ],
+     [
+      "Elemental Fury",
+      5
+     ],
+     [
+      "Elemental Mastery",
+      1
+     ]
+    ],
+    "Enhancement": [
+     [
+      "Ancestral Knowledge",
+      1
+     ],
+     [
+      "Thundering Strikes",
+      3
+     ]
+    ],
+    "Restoration": [
+     [
+      "Tidal Focus",
+      5
+     ],
+     [
+      "Mindfulness",
+      3
+     ],
+     [
+      "Totemic Focus",
+      5
+     ],
+     [
+      "Healing Focus",
+      2
+     ],
+     [
+      "Mana Tide Totem",
+      1
+     ]
+    ]
+   },
+   "split": "31/4/16",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Natural Grace",
+     "to": "Healing Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Natural Grace",
+     "to": "Healing Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    }
+   ],
+   "abilities_never_cast": [
+    "Mana Tide Totem"
+   ],
+   "final_seed3": 0.0,
+   "repair_note": "2026-10-23: repaired to the current trees: 31/4/16 -> 31/4/16; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
+  },
   "prebis-raid": null
  }
 }

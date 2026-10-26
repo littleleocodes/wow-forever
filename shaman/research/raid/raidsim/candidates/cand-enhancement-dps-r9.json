@@ -1,5 +1,5 @@
 {
- "id": "cand-enhancement-dps-preset-level-60",
+ "id": "cand-enhancement-dps-r9",
  "allocation": {
   "Elemental": [
    [
@@ -7,16 +7,12 @@
     5
    ],
    [
-    "Concussion",
-    5
+    "Call of Flame",
+    3
    ],
    [
     "Reverberation",
     5
-   ],
-   [
-    "Call of Flame",
-    3
    ],
    [
     "Elemental Focus",
@@ -30,14 +26,14 @@
    ],
    [
     "Ancestral Knowledge",
-    3
+    5
+   ],
+   [
+    "Earth's Grasp",
+    1
    ],
    [
     "Mental Dexterity",
-    3
-   ],
-   [
-    "Elemental Weapons",
     3
    ],
    [
@@ -45,15 +41,15 @@
     1
    ],
    [
-    "Flurry",
-    5
-   ],
-   [
     "Stormstrike",
     1
    ],
    [
-    "Spirit Weapons",
+    "Flurry",
+    5
+   ],
+   [
+    "Toughness",
     1
    ],
    [
@@ -61,8 +57,8 @@
     2
    ],
    [
-    "Improved Stormstrike",
-    2
+    "Spirit Weapons",
+    1
    ],
    [
     "Maelstrom Weapon",
@@ -72,9 +68,17 @@
     "Rage of the Farseer",
     1
    ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    1
+   ]
   ]
  },
- "preset": "Level 60",
- "talents": "5505301-053030031005112251",
- "note": "The community simulator's preset 'Level 60' (shaman/enhancement/presets.ts), a raid candidate since it ran within 6% of the best build of enhancement-dps (362.1 vs 371.9 in the race of 2026-09-27)."
+ "note": "Optimizer raid build saved by rebuild.py on 2026-10-26 (raid calibration round 1)"
 }

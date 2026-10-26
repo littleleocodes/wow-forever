@@ -8,9 +8,7 @@
   "opt-elemental-dps-raid-dps",
   "elemental-raid",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-hand-2026-09-26.json",
-  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-preset-elemental-31-6-14.json",
-  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-preset-level-60.json",
-  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-preset-stormcaller-28-23-0.json",
+  "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-preset-standard.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-r1.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-r2.json",
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-r3.json",
@@ -22,12 +20,16 @@
   "F:\\wow-forever\\shaman\\research\\raid\\raidsim\\candidates\\cand-elemental-dps-spec-elemental.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "shaman/elemental",
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/shaman/elemental-dps.apl.json",
-  "apl_sim": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "apl_sim": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "race": "RaceTroll",
   "setting": "dummy",
   "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus mana_spring_totem and the spec's standard consumables; no raid or party buffs and no debuffs from others",
@@ -41,9 +43,10 @@
    "zanzaId": 8423,
    "foodId": 18254,
    "potId": 13444,
-   "conjuredId": 12662
+   "conjuredId": 12662,
+   "mhImbueId": 25122
   },
-  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
@@ -51,9 +54,9 @@
  "talents": [
   {
    "talent": "Elemental Alacrity",
-   "sim": 0.18032598161932326,
-   "ev_before": 0.20773458106449827,
-   "ev_after": 0.20773436323732944,
+   "sim": 0.154966839769547,
+   "ev_before": 0.19205217059887966,
+   "ev_after": 0.18266355879477217,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -61,9 +64,7 @@
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -77,14 +78,13 @@
   },
   {
    "talent": "Mental Quickness",
-   "sim": 0.10407784151854323,
-   "ev_before": 0.09280414190164794,
-   "ev_after": 0.09280409313719311,
+   "sim": 0.11210518424800048,
+   "ev_before": 0.09280091379259468,
+   "ev_after": 0.09280437203192876,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "elemental-raid-dps",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -93,10 +93,34 @@
    ]
   },
   {
+   "talent": "Call of Flame",
+   "sim": 0.10669536267678811,
+   "ev_before": 0.050574006195543045,
+   "ev_after": 0.10308614497613729,
+   "scale": 2.1096583921462297,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "elemental-raid",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6",
+    "cand-elemental-dps-r7",
+    "cand-elemental-dps-r8",
+    "cand-elemental-dps-spec-elemental"
+   ]
+  },
+  {
    "talent": "Elemental Fury",
-   "sim": 0.07820625839633971,
-   "ev_before": 0.08735633405141119,
-   "ev_after": 0.08735624236507249,
+   "sim": 0.08228987242632982,
+   "ev_before": 0.08088166764531911,
+   "ev_after": 0.08088594498966116,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -104,9 +128,7 @@
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -119,17 +141,16 @@
   },
   {
    "talent": "Tidal Focus",
-   "sim": 0.058553507821343706,
-   "ev_before": 0.06612713343380974,
-   "ev_after": 0.06615853543019884,
+   "sim": 0.060020203217163344,
+   "ev_before": 0.06296095121967893,
+   "ev_after": 0.0647799223163906,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r5",
     "cand-elemental-dps-r6",
     "cand-elemental-dps-r7",
@@ -138,20 +159,102 @@
    ]
   },
   {
-   "talent": "Call of Flame",
-   "sim": 0.044068756866196955,
-   "ev_before": 0.03776464197938505,
-   "ev_after": 0.037764608299557065,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Lava Burst",
+   "sim": 0.05837653679621917,
+   "ev_before": 0.024507135647193513,
+   "ev_after": 0.05837722474397748,
+   "scale": 2.5118144061416388,
+   "how": "fitted",
    "builds": [
     "elemental-raid-dps",
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6",
+    "cand-elemental-dps-r7",
+    "cand-elemental-dps-r8",
+    "cand-elemental-dps-spec-elemental"
+   ]
+  },
+  {
+   "talent": "Mindfulness",
+   "sim": 0.05712662856666629,
+   "ev_before": 0.021526227855349404,
+   "ev_after": 0.06527188305294337,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-elemental-dps-raid-dps",
+    "elemental-raid",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r7",
+    "cand-elemental-dps-r8",
+    "cand-elemental-dps-spec-elemental"
+   ]
+  },
+  {
+   "talent": "Convection",
+   "sim": 0.05310555984100799,
+   "ev_before": 0.005637905462101417,
+   "ev_after": 0.00635490268365873,
+   "scale": 1.0,
+   "how": "held",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "elemental-raid",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6",
+    "cand-elemental-dps-r7",
+    "cand-elemental-dps-r8",
+    "cand-elemental-dps-spec-elemental"
+   ]
+  },
+  {
+   "talent": "Shamanistic Focus",
+   "sim": 0.04589689895808832,
+   "ev_before": 0.022976982026946636,
+   "ev_after": 0.05363518025704446,
+   "scale": 0.7458025957457721,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Elemental Focus",
+   "sim": 0.04454671333949075,
+   "ev_before": 0.007446634693928965,
+   "ev_after": 0.008418746625775839,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "elemental-raid",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -165,17 +268,16 @@
   },
   {
    "talent": "Thundering Strikes",
-   "sim": 0.03987380880089052,
-   "ev_before": 0.03904581032417503,
-   "ev_after": 0.03904577555167892,
+   "sim": 0.03995002120091265,
+   "ev_before": 0.040163543220326905,
+   "ev_after": 0.0401655088162726,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "elemental-raid-dps",
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -189,9 +291,9 @@
   },
   {
    "talent": "Concussion",
-   "sim": 0.03334750670695859,
-   "ev_before": 0.041183868752310636,
-   "ev_after": 0.04118383153405312,
+   "sim": 0.03033567358232191,
+   "ev_before": 0.038374070209826514,
+   "ev_after": 0.03677190231123482,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -199,140 +301,7 @@
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
-    "cand-elemental-dps-r5",
-    "cand-elemental-dps-r6",
-    "cand-elemental-dps-r7",
-    "cand-elemental-dps-r8",
-    "cand-elemental-dps-spec-elemental"
-   ]
-  },
-  {
-   "talent": "Lightning Overload",
-   "sim": 0.028037831967678898,
-   "ev_before": 0.029207639714928506,
-   "ev_after": 0.02920778988772387,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "elemental-raid-dps",
-    "opt-elemental-dps-raid-dps",
-    "elemental-raid",
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
-    "cand-elemental-dps-r6",
-    "cand-elemental-dps-r7",
-    "cand-elemental-dps-r8",
-    "cand-elemental-dps-spec-elemental"
-   ]
-  },
-  {
-   "talent": "Lava Burst",
-   "sim": 0.027664637664612895,
-   "ev_before": 0.026709525391232794,
-   "ev_after": 0.026709492881075752,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-elemental-dps-raid-dps",
-    "elemental-raid",
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-r7",
-    "cand-elemental-dps-r8",
-    "cand-elemental-dps-spec-elemental"
-   ]
-  },
-  {
-   "talent": "Mindfulness",
-   "sim": 0.02110968165055582,
-   "ev_before": 0.024726518826092,
-   "ev_after": 0.022693217000056123,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-elemental-dps-raid-dps",
-    "elemental-raid",
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-r5",
-    "cand-elemental-dps-r7",
-    "cand-elemental-dps-r8",
-    "cand-elemental-dps-spec-elemental"
-   ]
-  },
-  {
-   "talent": "Shamanistic Focus",
-   "sim": 0.017961408177872458,
-   "ev_before": 0.023537174419134946,
-   "ev_after": 0.021665459072246172,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "elemental-raid-dps",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
-    "cand-elemental-dps-r5",
-    "cand-elemental-dps-r6"
-   ]
-  },
-  {
-   "talent": "Call of Thunder",
-   "sim": 0.015657635920389653,
-   "ev_before": 0.019320052942215494,
-   "ev_after": 0.019320034984130874,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "elemental-raid-dps",
-    "opt-elemental-dps-raid-dps",
-    "elemental-raid",
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
-    "cand-elemental-dps-r5",
-    "cand-elemental-dps-r6",
-    "cand-elemental-dps-r7",
-    "cand-elemental-dps-r8",
-    "cand-elemental-dps-spec-elemental"
-   ]
-  },
-  {
-   "talent": "Elemental Focus",
-   "sim": 0.014937457328844227,
-   "ev_before": 0.008284659299900828,
-   "ev_after": 0.008305903767697997,
-   "scale": 1.0,
-   "how": "apl",
-   "builds": [
-    "elemental-raid-dps",
-    "opt-elemental-dps-raid-dps",
-    "elemental-raid",
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -346,16 +315,16 @@
   },
   {
    "talent": "Ancestral Knowledge",
-   "sim": 0.010559371987992202,
-   "ev_before": 0.01339375410789397,
-   "ev_after": 0.013425598746771128,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.028368688406243407,
+   "ev_before": 0.013163089872654184,
+   "ev_after": 0.029048448122408532,
+   "scale": 1.8764196867123246,
+   "how": "fitted",
    "builds": [
     "elemental-raid-dps",
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
@@ -368,10 +337,10 @@
    ]
   },
   {
-   "talent": "Convection",
-   "sim": 0.009351041322919019,
-   "ev_before": 0.005988300884358658,
-   "ev_after": 0.00600360511429351,
+   "talent": "Lightning Overload",
+   "sim": 0.027822984624786447,
+   "ev_before": 0.027256115584717834,
+   "ev_after": 0.026151184211001734,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -379,14 +348,11 @@
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r1",
     "cand-elemental-dps-r2",
     "cand-elemental-dps-r3",
     "cand-elemental-dps-r4",
-    "cand-elemental-dps-r5",
     "cand-elemental-dps-r6",
     "cand-elemental-dps-r7",
     "cand-elemental-dps-r8",
@@ -394,10 +360,25 @@
    ]
   },
   {
+   "talent": "Elemental Mastery",
+   "sim": 0.022809860669294423,
+   "ev_before": 0.015512698496122015,
+   "ev_after": 0.014899915918699052,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r7",
+    "cand-elemental-dps-r8",
+    "cand-elemental-dps-spec-elemental"
+   ]
+  },
+  {
    "talent": "Mana Tide Totem",
-   "sim": 0.008250443284521987,
-   "ev_before": 0.012692377472173257,
-   "ev_after": 0.012724798314757322,
+   "sim": 0.017273484345978033,
+   "ev_before": 0.012724713882268852,
+   "ev_after": 0.01322992243057976,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -406,16 +387,14 @@
   },
   {
    "talent": "Totemic Focus",
-   "sim": 0.0013609128693201362,
-   "ev_before": 0.002905745283989881,
-   "ev_after": 0.0029131052789681373,
+   "sim": 0.003916128751503078,
+   "ev_before": 0.002805832402220962,
+   "ev_after": 0.0028896314875903363,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
     "cand-elemental-dps-r5",
     "cand-elemental-dps-r6",
     "cand-elemental-dps-r7",
@@ -424,10 +403,27 @@
    ]
   },
   {
+   "talent": "Reverberation",
+   "sim": 0.001940613678330699,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6",
+    "cand-elemental-dps-r7"
+   ]
+  },
+  {
    "talent": "Anticipation",
    "sim": 0.0,
-   "ev_before": 1.770029787893139e-05,
-   "ev_after": 1.774539824836713e-05,
+   "ev_before": 1.770927794335282e-05,
+   "ev_after": 1.57254356771901e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -437,8 +433,8 @@
   {
    "talent": "Earth's Grasp",
    "sim": 0.0,
-   "ev_before": 2.360227725332927e-05,
-   "ev_after": 2.366242067305919e-05,
+   "ev_before": 2.361425258086305e-05,
+   "ev_after": 2.09687315005992e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -449,8 +445,8 @@
   {
    "talent": "Eye of the Storm",
    "sim": 0.0,
-   "ev_before": 7.631820639138884e-05,
-   "ev_after": 7.65116513420524e-05,
+   "ev_before": 7.656389474494567e-05,
+   "ev_after": 6.686830460674153e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -458,14 +454,16 @@
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-standard",
+    "cand-elemental-dps-r5",
     "cand-elemental-dps-r8"
    ]
   },
   {
    "talent": "Toughness",
    "sim": 0.0,
-   "ev_before": 8.368054553824625e-05,
-   "ev_after": 8.38158713401088e-05,
+   "ev_before": 8.409826847527322e-05,
+   "ev_after": 7.432547755744772e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -477,28 +475,27 @@
   {
    "talent": "Elemental Reach",
    "sim": 0.0,
-   "ev_before": 1.6545841577616465e-05,
-   "ev_after": 1.6587864278009108e-05,
+   "ev_before": 1.506777517271514e-05,
+   "ev_after": 1.3227627011971615e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "opt-elemental-dps-raid-dps",
     "elemental-raid",
     "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
     "cand-elemental-dps-r8"
    ]
   },
   {
    "talent": "Natural Grace",
    "sim": 0.0,
-   "ev_before": 4.894640330765534e-05,
-   "ev_after": 4.9071359753182076e-05,
+   "ev_before": 4.733940387141489e-05,
+   "ev_after": 4.1266368682341086e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-level-60"
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26"
    ]
   },
   {
@@ -520,59 +517,31 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-hand-2026-09-26",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60"
+    "cand-elemental-dps-hand-2026-09-26"
    ]
   },
   {
-   "talent": "Improved Lightning Shield",
+   "talent": "Improved Ghost Wolf",
    "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
+    "cand-elemental-dps-preset-standard",
     "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
     "cand-elemental-dps-r5"
    ]
   },
   {
-   "talent": "Improved Healing Wave",
+   "talent": "Trial by Fire",
    "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-preset-level-60"
-   ]
-  },
-  {
-   "talent": "Improved Reincarnation",
-   "sim": 0.0,
-   "ev_before": 3.6854185920453955e-05,
-   "ev_after": 3.694863836367278e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-elemental-dps-preset-level-60"
-   ]
-  },
-  {
-   "talent": "Elemental Devastation",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-spec-elemental"
+    "cand-elemental-dps-preset-standard"
    ]
   },
   {
@@ -583,45 +552,7 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
     "cand-elemental-dps-r1"
-   ]
-  },
-  {
-   "talent": "Flurry",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-elemental-dps-preset-stormcaller-28-23-0"
-   ]
-  },
-  {
-   "talent": "Mental Dexterity",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3"
-   ]
-  },
-  {
-   "talent": "Stormstrike",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2"
    ]
   },
   {
@@ -639,10 +570,49 @@
    ]
   },
   {
+   "talent": "Improved Lightning Shield",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Stormstrike",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2"
+   ]
+  },
+  {
+   "talent": "Mental Dexterity",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3"
+   ]
+  },
+  {
    "talent": "Elemental Warding",
    "sim": 0.0,
-   "ev_before": 3.171448382375031e-05,
-   "ev_after": 3.179487133421065e-05,
+   "ev_before": 3.190129981038886e-05,
+   "ev_after": 2.8200062994299655e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -654,35 +624,14 @@
    ]
   },
   {
-   "talent": "Improved Ghost Wolf",
+   "talent": "Elemental Devastation",
    "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r5"
-   ]
-  },
-  {
-   "talent": "Reverberation",
-   "sim": -0.0009697840224760539,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "elemental-raid-dps",
-    "cand-elemental-dps-preset-elemental-31-6-14",
-    "cand-elemental-dps-preset-level-60",
-    "cand-elemental-dps-preset-stormcaller-28-23-0",
-    "cand-elemental-dps-r1",
-    "cand-elemental-dps-r2",
-    "cand-elemental-dps-r3",
-    "cand-elemental-dps-r4",
-    "cand-elemental-dps-r6",
-    "cand-elemental-dps-r7"
+    "cand-elemental-dps-spec-elemental"
    ]
   }
  ],
@@ -692,523 +641,463 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.14,
-   "cap": 0.04,
-   "rms": 0.0106,
-   "points": 77
+   "loss": 0.1775,
+   "cap": 0.11,
+   "rms": 0.0214,
+   "points": 68
   },
   "builds": {
    "elemental-raid-dps": {
-    "dps": 409.7527264339638,
-    "surplus": 411.73765614251283,
-    "oom_seconds": 0.003266666666666667,
-    "deficit": 0.004820860270943972,
-    "sustain": 1.1208,
+    "dps": 497.76111831931405,
+    "surplus": 514.8738003982552,
+    "oom_seconds": 9.327799999966023,
+    "deficit": 0.033236653458972754,
+    "sustain": 1.1162,
     "bound_share": 1.0,
-    "model_deficit": 0.0192
+    "model_deficit": 0.0613
    },
    "opt-elemental-dps-raid-dps": {
-    "dps": 408.33468416761764,
-    "surplus": 416.1435037369869,
-    "oom_seconds": 0.06950666666666666,
-    "deficit": 0.01876472779040328,
-    "sustain": 1.126,
+    "dps": 499.79333915801243,
+    "surplus": 508.797189955385,
+    "oom_seconds": 4.772000000000026,
+    "deficit": 0.0176963453712512,
+    "sustain": 1.158,
     "bound_share": 1.0,
-    "model_deficit": 0.014
+    "model_deficit": 0.0195
    },
    "elemental-raid": {
-    "dps": 408.33468416761764,
-    "surplus": 416.1435037369869,
-    "oom_seconds": 0.06950666666666666,
-    "deficit": 0.01876472779040328,
-    "sustain": 1.126,
+    "dps": 484.10350871178633,
+    "surplus": 497.07960391102404,
+    "oom_seconds": 6.966599999999388,
+    "deficit": 0.02610466230587971,
+    "sustain": 1.1401,
     "bound_share": 1.0,
-    "model_deficit": 0.014
+    "model_deficit": 0.0374
    },
    "cand-elemental-dps-hand-2026-09-26": {
-    "dps": 392.6055612474493,
-    "surplus": 397.6980634011804,
-    "oom_seconds": 0.128268,
-    "deficit": 0.012804945817887936,
+    "dps": 464.62282830976363,
+    "surplus": 473.949056644182,
+    "oom_seconds": 5.828399999995343,
+    "deficit": 0.019677702072988912,
     "sustain": 1.1306,
     "bound_share": 1.0,
-    "model_deficit": 0.0094
+    "model_deficit": 0.0469
    },
-   "cand-elemental-dps-preset-elemental-31-6-14": {
-    "dps": 403.36020898996196,
-    "surplus": 415.9712289836107,
-    "oom_seconds": 0.16736666666666664,
-    "deficit": 0.030317048668155766,
-    "sustain": 1.114,
+   "cand-elemental-dps-preset-standard": {
+    "dps": 507.37256906009634,
+    "surplus": 507.48471407439666,
+    "oom_seconds": 0.8954666666666661,
+    "deficit": 0.00022098205362675039,
+    "sustain": 1.2005,
     "bound_share": 1.0,
-    "model_deficit": 0.026
-   },
-   "cand-elemental-dps-preset-level-60": {
-    "dps": 389.05965629330865,
-    "surplus": 398.1418823053895,
-    "oom_seconds": 0.09523466666666665,
-    "deficit": 0.022811531305100052,
-    "sustain": 1.1151,
-    "bound_share": 1.0,
-    "model_deficit": 0.0249
-   },
-   "cand-elemental-dps-preset-stormcaller-28-23-0": {
-    "dps": 393.52106262598005,
-    "surplus": 405.4517214917309,
-    "oom_seconds": 0.30190933333333336,
-    "deficit": 0.029425596768601125,
-    "sustain": 1.03,
-    "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.0
    },
    "cand-elemental-dps-r1": {
-    "dps": 410.64187774072883,
-    "surplus": 411.62299266101735,
-    "oom_seconds": 0.001,
-    "deficit": 0.0023835279801691645,
-    "sustain": 1.1208,
+    "dps": 497.6793311921241,
+    "surplus": 516.5551449238654,
+    "oom_seconds": 9.368266666664722,
+    "deficit": 0.03654172050599447,
+    "sustain": 1.1162,
     "bound_share": 1.0,
-    "model_deficit": 0.0192
+    "model_deficit": 0.0613
    },
    "cand-elemental-dps-r2": {
-    "dps": 410.64187774072883,
-    "surplus": 411.62299266101735,
-    "oom_seconds": 0.001,
-    "deficit": 0.0023835279801691645,
-    "sustain": 1.1208,
+    "dps": 497.6793311921241,
+    "surplus": 516.5551449238654,
+    "oom_seconds": 9.368266666664722,
+    "deficit": 0.03654172050599447,
+    "sustain": 1.1162,
     "bound_share": 1.0,
-    "model_deficit": 0.0192
+    "model_deficit": 0.0613
    },
    "cand-elemental-dps-r3": {
-    "dps": 409.2057978967683,
-    "surplus": 410.93484604511036,
-    "oom_seconds": 0.004266666666666667,
-    "deficit": 0.004207596812445202,
-    "sustain": 1.1208,
+    "dps": 497.91136915550476,
+    "surplus": 514.1460286881145,
+    "oom_seconds": 9.178199999975382,
+    "deficit": 0.031575969912738144,
+    "sustain": 1.1162,
     "bound_share": 1.0,
-    "model_deficit": 0.0192
+    "model_deficit": 0.0613
    },
    "cand-elemental-dps-r4": {
-    "dps": 409.2057978967683,
-    "surplus": 410.93484604511036,
-    "oom_seconds": 0.004266666666666667,
-    "deficit": 0.004207596812445202,
-    "sustain": 1.1208,
+    "dps": 497.91136915550476,
+    "surplus": 514.1460286881145,
+    "oom_seconds": 9.178199999975382,
+    "deficit": 0.031575969912738144,
+    "sustain": 1.1162,
     "bound_share": 1.0,
-    "model_deficit": 0.0192
+    "model_deficit": 0.0613
    },
    "cand-elemental-dps-r5": {
-    "dps": 393.21989639135506,
-    "surplus": 393.31717336491675,
-    "oom_seconds": 0.0036666666666666666,
-    "deficit": 0.0002473245008079994,
-    "sustain": 1.2201,
+    "dps": 455.85398748676363,
+    "surplus": 456.0867477504725,
+    "oom_seconds": 0.05006666666666668,
+    "deficit": 0.0005103420892119681,
+    "sustain": 1.2154,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-elemental-dps-r6": {
-    "dps": 400.54184258044256,
-    "surplus": 401.02856335084664,
-    "oom_seconds": 0.004599999998666667,
-    "deficit": 0.0012136810563746492,
-    "sustain": 1.1364,
+    "dps": 483.01661935445276,
+    "surplus": 498.51091447822455,
+    "oom_seconds": 7.871799999986723,
+    "deficit": 0.031081155244091607,
+    "sustain": 1.1318,
     "bound_share": 1.0,
-    "model_deficit": 0.0036
+    "model_deficit": 0.0457
    },
    "cand-elemental-dps-r7": {
-    "dps": 407.6787757388986,
-    "surplus": 415.5280812353238,
-    "oom_seconds": 0.07220933332666667,
-    "deficit": 0.01888995196928689,
-    "sustain": 1.126,
+    "dps": 492.5199322927084,
+    "surplus": 508.17817105087414,
+    "oom_seconds": 8.687066666632056,
+    "deficit": 0.03081249776192807,
+    "sustain": 1.1328,
     "bound_share": 1.0,
-    "model_deficit": 0.014
+    "model_deficit": 0.0447
    },
    "cand-elemental-dps-r8": {
-    "dps": 408.33468416761764,
-    "surplus": 416.1435037369869,
-    "oom_seconds": 0.06950666666666666,
-    "deficit": 0.01876472779040328,
-    "sustain": 1.126,
+    "dps": 492.4359624306574,
+    "surplus": 507.60635705891866,
+    "oom_seconds": 8.839066666664728,
+    "deficit": 0.029886139953326896,
+    "sustain": 1.1328,
     "bound_share": 1.0,
-    "model_deficit": 0.014
+    "model_deficit": 0.0447
    },
    "cand-elemental-dps-spec-elemental": {
-    "dps": 408.33468416761764,
-    "surplus": 416.1435037369869,
-    "oom_seconds": 0.06950666666666666,
-    "deficit": 0.01876472779040328,
-    "sustain": 1.126,
+    "dps": 492.4359624306574,
+    "surplus": 507.60635705891866,
+    "oom_seconds": 8.839066666664728,
+    "deficit": 0.029886139953326896,
+    "sustain": 1.1328,
     "bound_share": 1.0,
-    "model_deficit": 0.014
+    "model_deficit": 0.0447
    }
   },
   "removals": {
    "elemental-raid-dps -Convection": {
-    "deficit": 0.0127,
-    "sustain": 1.1139,
+    "deficit": 0.0876,
+    "sustain": 1.1092,
     "bound_share": 1.0,
-    "model_deficit": 0.0261
+    "model_deficit": 0.0683
    },
    "elemental-raid-dps -Elemental Focus": {
-    "deficit": 0.0126,
-    "sustain": 1.1116,
+    "deficit": 0.0791,
+    "sustain": 1.1069,
     "bound_share": 1.0,
-    "model_deficit": 0.0284
+    "model_deficit": 0.0706
    },
    "elemental-raid-dps -Shamanistic Focus": {
-    "deficit": 0.0219,
-    "sustain": 1.0356,
+    "deficit": 0.0838,
+    "sustain": 1.0526,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "opt-elemental-dps-raid-dps -Convection": {
-    "deficit": 0.0308,
-    "sustain": 1.119,
+    "deficit": 0.065,
+    "sustain": 1.1511,
     "bound_share": 1.0,
-    "model_deficit": 0.021
+    "model_deficit": 0.0264
    },
    "opt-elemental-dps-raid-dps -Elemental Focus": {
-    "deficit": 0.0387,
-    "sustain": 1.1167,
-    "bound_share": 1.0,
-    "model_deficit": 0.0233
-   },
-   "opt-elemental-dps-raid-dps -Mindfulness": {
-    "deficit": 0.0399,
-    "sustain": 1.0395,
-    "bound_share": 1.0,
-    "model_deficit": 0.04
-   },
-   "opt-elemental-dps-raid-dps -Totemic Focus": {
-    "deficit": 0.0206,
-    "sustain": 1.1228,
-    "bound_share": 1.0,
-    "model_deficit": 0.0172
-   },
-   "elemental-raid -Convection": {
-    "deficit": 0.0308,
-    "sustain": 1.119,
-    "bound_share": 1.0,
-    "model_deficit": 0.021
-   },
-   "elemental-raid -Elemental Focus": {
-    "deficit": 0.0387,
-    "sustain": 1.1167,
-    "bound_share": 1.0,
-    "model_deficit": 0.0233
-   },
-   "elemental-raid -Mindfulness": {
-    "deficit": 0.0399,
-    "sustain": 1.0395,
-    "bound_share": 1.0,
-    "model_deficit": 0.04
-   },
-   "elemental-raid -Totemic Focus": {
-    "deficit": 0.0206,
-    "sustain": 1.1228,
-    "bound_share": 1.0,
-    "model_deficit": 0.0172
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Convection": {
-    "deficit": 0.0219,
-    "sustain": 1.1237,
-    "bound_share": 1.0,
-    "model_deficit": 0.0163
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Elemental Focus": {
-    "deficit": 0.0243,
-    "sustain": 1.1214,
-    "bound_share": 1.0,
-    "model_deficit": 0.0186
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Mana Tide Totem": {
-    "deficit": 0.0209,
-    "sustain": 1.1182,
-    "bound_share": 1.0,
-    "model_deficit": 0.0218
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Mindfulness": {
-    "deficit": 0.027,
-    "sustain": 1.0442,
-    "bound_share": 1.0,
-    "model_deficit": 0.04
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Totemic Focus": {
-    "deficit": 0.0142,
-    "sustain": 1.1275,
-    "bound_share": 1.0,
-    "model_deficit": 0.0125
-   },
-   "cand-elemental-dps-hand-2026-09-26 -Water Shield": {
-    "deficit": 0.0128,
-    "sustain": 1.1306,
-    "bound_share": 1.0,
-    "model_deficit": 0.0094
-   },
-   "cand-elemental-dps-preset-elemental-31-6-14 -Convection": {
-    "deficit": 0.0353,
-    "sustain": 1.1113,
+    "deficit": 0.0559,
+    "sustain": 1.1488,
     "bound_share": 1.0,
     "model_deficit": 0.0287
    },
-   "cand-elemental-dps-preset-elemental-31-6-14 -Elemental Focus": {
-    "deficit": 0.0441,
-    "sustain": 1.1048,
+   "opt-elemental-dps-raid-dps -Mindfulness": {
+    "deficit": 0.0356,
+    "sustain": 1.1287,
     "bound_share": 1.0,
-    "model_deficit": 0.0352
+    "model_deficit": 0.0488
    },
-   "cand-elemental-dps-preset-elemental-31-6-14 -Mindfulness": {
-    "deficit": 0.0648,
-    "sustain": 1.0276,
+   "opt-elemental-dps-raid-dps -Shamanistic Focus": {
+    "deficit": 0.0594,
+    "sustain": 1.0945,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.083
    },
-   "cand-elemental-dps-preset-elemental-31-6-14 -Totemic Focus": {
-    "deficit": 0.0321,
-    "sustain": 1.1109,
+   "elemental-raid -Convection": {
+    "deficit": 0.0779,
+    "sustain": 1.1331,
     "bound_share": 1.0,
-    "model_deficit": 0.0291
+    "model_deficit": 0.0444
    },
-   "cand-elemental-dps-preset-elemental-31-6-14 -Water Shield": {
-    "deficit": 0.0303,
-    "sustain": 1.114,
+   "elemental-raid -Elemental Focus": {
+    "deficit": 0.0702,
+    "sustain": 1.1308,
     "bound_share": 1.0,
-    "model_deficit": 0.026
+    "model_deficit": 0.0467
    },
-   "cand-elemental-dps-preset-level-60 -Convection": {
-    "deficit": 0.0346,
-    "sustain": 1.1082,
+   "elemental-raid -Mindfulness": {
+    "deficit": 0.0903,
+    "sustain": 1.0536,
     "bound_share": 1.0,
-    "model_deficit": 0.0318
+    "model_deficit": 0.11
    },
-   "cand-elemental-dps-preset-level-60 -Elemental Focus": {
-    "deficit": 0.0469,
-    "sustain": 1.1058,
+   "elemental-raid -Totemic Focus": {
+    "deficit": 0.0309,
+    "sustain": 1.1369,
     "bound_share": 1.0,
-    "model_deficit": 0.0342
+    "model_deficit": 0.0406
    },
-   "cand-elemental-dps-preset-level-60 -Mindfulness": {
-    "deficit": 0.0459,
-    "sustain": 1.0286,
+   "cand-elemental-dps-hand-2026-09-26 -Convection": {
+    "deficit": 0.0825,
+    "sustain": 1.1237,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.0538
    },
-   "cand-elemental-dps-preset-level-60 -Water Shield": {
-    "deficit": 0.0228,
-    "sustain": 1.1151,
+   "cand-elemental-dps-hand-2026-09-26 -Elemental Focus": {
+    "deficit": 0.0727,
+    "sustain": 1.1214,
     "bound_share": 1.0,
-    "model_deficit": 0.0249
+    "model_deficit": 0.0561
    },
-   "cand-elemental-dps-preset-stormcaller-28-23-0 -Convection": {
-    "deficit": 0.0325,
-    "sustain": 1.0286,
+   "cand-elemental-dps-hand-2026-09-26 -Mana Tide Totem": {
+    "deficit": 0.0363,
+    "sustain": 1.1182,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.0593
    },
-   "cand-elemental-dps-preset-stormcaller-28-23-0 -Elemental Focus": {
-    "deficit": 0.0463,
-    "sustain": 1.0208,
+   "cand-elemental-dps-hand-2026-09-26 -Mindfulness": {
+    "deficit": 0.0935,
+    "sustain": 1.0442,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
+   },
+   "cand-elemental-dps-hand-2026-09-26 -Totemic Focus": {
+    "deficit": 0.0225,
+    "sustain": 1.1275,
+    "bound_share": 1.0,
+    "model_deficit": 0.05
+   },
+   "cand-elemental-dps-hand-2026-09-26 -Water Shield": {
+    "deficit": 0.0197,
+    "sustain": 1.1306,
+    "bound_share": 1.0,
+    "model_deficit": 0.0469
+   },
+   "cand-elemental-dps-preset-standard -Convection": {
+    "deficit": 0.0337,
+    "sustain": 1.1936,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-elemental-dps-preset-standard -Elemental Focus": {
+    "deficit": 0.026,
+    "sustain": 1.1913,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-elemental-dps-preset-standard -Mindfulness": {
+    "deficit": 0.0466,
+    "sustain": 1.1141,
+    "bound_share": 1.0,
+    "model_deficit": 0.0634
+   },
+   "cand-elemental-dps-preset-standard -Shamanistic Focus": {
+    "deficit": 0.0287,
+    "sustain": 1.1369,
+    "bound_share": 1.0,
+    "model_deficit": 0.0406
    },
    "cand-elemental-dps-r1 -Convection": {
-    "deficit": 0.0124,
-    "sustain": 1.1139,
+    "deficit": 0.0894,
+    "sustain": 1.1092,
     "bound_share": 1.0,
-    "model_deficit": 0.0261
+    "model_deficit": 0.0683
    },
    "cand-elemental-dps-r1 -Elemental Focus": {
-    "deficit": 0.013,
-    "sustain": 1.1116,
+    "deficit": 0.0806,
+    "sustain": 1.1069,
     "bound_share": 1.0,
-    "model_deficit": 0.0284
+    "model_deficit": 0.0706
    },
    "cand-elemental-dps-r1 -Shamanistic Focus": {
-    "deficit": 0.0227,
-    "sustain": 1.0356,
+    "deficit": 0.086,
+    "sustain": 1.0526,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r2 -Convection": {
-    "deficit": 0.0124,
-    "sustain": 1.1139,
+    "deficit": 0.0894,
+    "sustain": 1.1092,
     "bound_share": 1.0,
-    "model_deficit": 0.0261
+    "model_deficit": 0.0683
    },
    "cand-elemental-dps-r2 -Elemental Focus": {
-    "deficit": 0.013,
-    "sustain": 1.1116,
+    "deficit": 0.0806,
+    "sustain": 1.1069,
     "bound_share": 1.0,
-    "model_deficit": 0.0284
+    "model_deficit": 0.0706
    },
    "cand-elemental-dps-r2 -Shamanistic Focus": {
-    "deficit": 0.0227,
-    "sustain": 1.0356,
+    "deficit": 0.086,
+    "sustain": 1.0526,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r3 -Convection": {
-    "deficit": 0.0122,
-    "sustain": 1.1139,
+    "deficit": 0.0869,
+    "sustain": 1.1092,
     "bound_share": 1.0,
-    "model_deficit": 0.0261
+    "model_deficit": 0.0683
    },
    "cand-elemental-dps-r3 -Elemental Focus": {
-    "deficit": 0.0146,
-    "sustain": 1.1116,
+    "deficit": 0.0781,
+    "sustain": 1.1069,
     "bound_share": 1.0,
-    "model_deficit": 0.0284
+    "model_deficit": 0.0706
    },
    "cand-elemental-dps-r3 -Shamanistic Focus": {
-    "deficit": 0.0212,
-    "sustain": 1.0356,
+    "deficit": 0.0823,
+    "sustain": 1.0526,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r4 -Convection": {
-    "deficit": 0.0122,
-    "sustain": 1.1139,
+    "deficit": 0.0869,
+    "sustain": 1.1092,
     "bound_share": 1.0,
-    "model_deficit": 0.0261
+    "model_deficit": 0.0683
    },
    "cand-elemental-dps-r4 -Elemental Focus": {
-    "deficit": 0.0146,
-    "sustain": 1.1116,
+    "deficit": 0.0781,
+    "sustain": 1.1069,
     "bound_share": 1.0,
-    "model_deficit": 0.0284
+    "model_deficit": 0.0706
    },
    "cand-elemental-dps-r4 -Shamanistic Focus": {
-    "deficit": 0.0212,
-    "sustain": 1.0356,
+    "deficit": 0.0823,
+    "sustain": 1.0526,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r5 -Convection": {
-    "deficit": 0.0002,
-    "sustain": 1.216,
+    "deficit": 0.0046,
+    "sustain": 1.2113,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-elemental-dps-r5 -Elemental Focus": {
-    "deficit": 0.0072,
-    "sustain": 1.2109,
+    "deficit": 0.0107,
+    "sustain": 1.2062,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-elemental-dps-r5 -Mindfulness": {
-    "deficit": 0.0051,
-    "sustain": 1.1337,
+    "deficit": 0.0275,
+    "sustain": 1.129,
     "bound_share": 1.0,
-    "model_deficit": 0.0063
+    "model_deficit": 0.0485
    },
    "cand-elemental-dps-r5 -Shamanistic Focus": {
-    "deficit": 0.0098,
-    "sustain": 1.1348,
+    "deficit": 0.015,
+    "sustain": 1.1519,
     "bound_share": 1.0,
-    "model_deficit": 0.0052
+    "model_deficit": 0.0256
    },
    "cand-elemental-dps-r5 -Totemic Focus": {
-    "deficit": 0.0,
-    "sustain": 1.217,
+    "deficit": 0.0006,
+    "sustain": 1.2123,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-elemental-dps-r6 -Convection": {
-    "deficit": 0.0133,
-    "sustain": 1.1295,
+    "deficit": 0.0811,
+    "sustain": 1.1249,
     "bound_share": 1.0,
-    "model_deficit": 0.0105
+    "model_deficit": 0.0526
    },
    "cand-elemental-dps-r6 -Elemental Focus": {
-    "deficit": 0.0115,
-    "sustain": 1.1272,
+    "deficit": 0.0733,
+    "sustain": 1.1226,
     "bound_share": 1.0,
-    "model_deficit": 0.0128
+    "model_deficit": 0.0549
    },
    "cand-elemental-dps-r6 -Shamanistic Focus": {
-    "deficit": 0.0229,
-    "sustain": 1.0512,
+    "deficit": 0.0778,
+    "sustain": 1.0682,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.1093
    },
    "cand-elemental-dps-r6 -Totemic Focus": {
-    "deficit": 0.0017,
-    "sustain": 1.1333,
+    "deficit": 0.035,
+    "sustain": 1.1287,
     "bound_share": 1.0,
-    "model_deficit": 0.0067
+    "model_deficit": 0.0488
    },
    "cand-elemental-dps-r7 -Convection": {
-    "deficit": 0.0317,
-    "sustain": 1.119,
+    "deficit": 0.0852,
+    "sustain": 1.1259,
     "bound_share": 1.0,
-    "model_deficit": 0.021
+    "model_deficit": 0.0516
    },
    "cand-elemental-dps-r7 -Elemental Focus": {
-    "deficit": 0.0373,
-    "sustain": 1.1167,
+    "deficit": 0.0762,
+    "sustain": 1.1235,
     "bound_share": 1.0,
-    "model_deficit": 0.0233
+    "model_deficit": 0.054
    },
    "cand-elemental-dps-r7 -Mindfulness": {
-    "deficit": 0.0395,
-    "sustain": 1.0395,
+    "deficit": 0.0943,
+    "sustain": 1.0463,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r7 -Totemic Focus": {
-    "deficit": 0.02,
-    "sustain": 1.1228,
+    "deficit": 0.0358,
+    "sustain": 1.1296,
     "bound_share": 1.0,
-    "model_deficit": 0.0172
+    "model_deficit": 0.0479
    },
    "cand-elemental-dps-r8 -Convection": {
-    "deficit": 0.0308,
-    "sustain": 1.119,
+    "deficit": 0.0842,
+    "sustain": 1.1259,
     "bound_share": 1.0,
-    "model_deficit": 0.021
+    "model_deficit": 0.0516
    },
    "cand-elemental-dps-r8 -Elemental Focus": {
-    "deficit": 0.0387,
-    "sustain": 1.1167,
+    "deficit": 0.0762,
+    "sustain": 1.1235,
     "bound_share": 1.0,
-    "model_deficit": 0.0233
+    "model_deficit": 0.054
    },
    "cand-elemental-dps-r8 -Mindfulness": {
-    "deficit": 0.0399,
-    "sustain": 1.0395,
+    "deficit": 0.0933,
+    "sustain": 1.0463,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-r8 -Totemic Focus": {
-    "deficit": 0.0206,
-    "sustain": 1.1228,
+    "deficit": 0.0349,
+    "sustain": 1.1296,
     "bound_share": 1.0,
-    "model_deficit": 0.0172
+    "model_deficit": 0.0479
    },
    "cand-elemental-dps-spec-elemental -Convection": {
-    "deficit": 0.0308,
-    "sustain": 1.119,
+    "deficit": 0.0842,
+    "sustain": 1.1259,
     "bound_share": 1.0,
-    "model_deficit": 0.021
+    "model_deficit": 0.0516
    },
    "cand-elemental-dps-spec-elemental -Elemental Focus": {
-    "deficit": 0.0387,
-    "sustain": 1.1167,
+    "deficit": 0.0762,
+    "sustain": 1.1235,
     "bound_share": 1.0,
-    "model_deficit": 0.0233
+    "model_deficit": 0.054
    },
    "cand-elemental-dps-spec-elemental -Mindfulness": {
-    "deficit": 0.0399,
-    "sustain": 1.0395,
+    "deficit": 0.0933,
+    "sustain": 1.0463,
     "bound_share": 1.0,
-    "model_deficit": 0.04
+    "model_deficit": 0.11
    },
    "cand-elemental-dps-spec-elemental -Totemic Focus": {
-    "deficit": 0.0206,
-    "sustain": 1.1228,
+    "deficit": 0.0349,
+    "sustain": 1.1296,
     "bound_share": 1.0,
-    "model_deficit": 0.0172
+    "model_deficit": 0.0479
    }
   }
  }

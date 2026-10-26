@@ -11421,7 +11421,13 @@
    },
    "minutes": 104.3,
    "done": true,
-   "date": "2026-10-25"
+   "date": "2026-10-25",
+   "builds": {
+    "written": [],
+    "why": "fails Assassination's signature-spell check in the fight lab (FAIL: Mutilate 0.00/kill at 60 (needs 0.50); signature_spells.json): not written",
+    "spec": "Assassination",
+    "date": "2026-10-26"
+   }
   }
  },
  "tree": "Assassination"

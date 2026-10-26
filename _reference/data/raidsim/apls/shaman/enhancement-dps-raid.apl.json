@@ -150,6 +150,45 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "auraIsInactive": {
+         "sourceUnit": {
+          "type": "Self"
+         },
+         "auraId": {
+          "spellId": 10587
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "25%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10587
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-26: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpGe",
       "lhs": {
@@ -217,6 +256,26 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 16316
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 16316
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-26: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   }
  ]
 }

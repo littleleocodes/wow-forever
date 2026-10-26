@@ -137,30 +137,40 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-26",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "elemental-raid-dps",
-    "talents": "550230130210304-255000001340002"
+    "label": "open winner",
+    "talents": "450533100000134-255201301000102"
    },
    {
-    "label": "sim preset: Elemental 31/6/14",
-    "talents": "2505301300123051-0500001-053050001"
+    "label": "elemental-raid-dps",
+    "talents": "550233100200134-255000001340002",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Standard",
+    "talents": "5500331023001351-053002001-053",
+    "protect_only": true
    },
    {
     "label": "opt-elemental-dps-raid-dps",
-    "talents": "5500301303113051-052-05305",
+    "talents": "5500331003011351-055000001-0522",
+    "protect_only": true
+   },
+   {
+    "label": "elemental-raid",
+    "talents": "550033100301135-053-05305",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "elemental-raid-dps",
-   "sim preset: Elemental 31/6/14"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -196,40 +206,106 @@
     "gain_seed2": 0.014332926217863973,
     "candidates": 346,
     "pass": 8
+   },
+   {
+    "round": 5,
+    "change": "threshold 0s -> 1s: if number of targets = 1 and time left on the totem \u2264 0s and time left in the fight \u2265 10s: cast Searing Totem",
+    "gain_seed1": 0.0030030575745896293,
+    "gain_seed2": 0.0022220251326696694,
+    "candidates": 329,
+    "pass": 9
+   },
+   {
+    "round": 6,
+    "change": "insert in the middle: if mana % < 80%: cast ResourcePotion",
+    "gain_seed1": 0.0017093785422068741,
+    "gain_seed2": 0.001618481391569393,
+    "candidates": 332,
+    "pass": 9
+   },
+   {
+    "round": 7,
+    "change": "move down below 'if not Flame Shock is on the target: cast Flame Shock': use every other cooldown when ready",
+    "gain_seed1": 0.0014278252446633388,
+    "gain_seed2": 0.0017413344764036776,
+    "candidates": 346,
+    "pass": 9
+   },
+   {
+    "round": 8,
+    "change": "drop 'Clearcasting is up' from the condition: if (Clearcasting is up or number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 200)): cast Chain Lightning",
+    "gain_seed1": 0.003765355203370957,
+    "gain_seed2": 0.002920953753875466,
+    "candidates": 346,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "elemental-raid-dps": {
-     "before": 517.2891141939169,
-     "after": 517.6519212560079,
-     "base": 517.2891141939169,
+    "open winner": {
+     "before": 617.6324908106303,
+     "after": 621.8473988431805,
+     "base": 617.6324908106303,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0020136999980999992,
-     "oom_after": 0.0022586999980999996
+     "oom_before": 0.001385,
+     "oom_after": 0.001335
     },
-    "sim preset: Elemental 31/6/14": {
-     "before": 492.9450425597234,
-     "after": 503.32517615754125,
-     "base": 492.9450425597234,
+    "elemental-raid-dps": {
+     "before": 615.5736778513243,
+     "after": 618.7963877240812,
+     "base": 615.5736778513243,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.05545640000000001,
-     "oom_after": 0.06865469999999999
+     "oom_before": 0,
+     "oom_after": 0.00046999999985
+    },
+    "sim preset: Standard": {
+     "before": 595.6249330499116,
+     "after": 601.8812160873823,
+     "base": 595.6249330499116,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     },
     "opt-elemental-dps-raid-dps": {
-     "before": 508.6544558114406,
-     "after": 509.9553707758059,
-     "base": 508.6544558114406,
+     "before": 596.8907331142964,
+     "after": 603.3738737627851,
+     "base": 596.8907331142964,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.009557999999999999,
-     "oom_after": 0.007951799999999998
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "elemental-raid": {
+     "before": 583.1969261001911,
+     "after": 586.0968208908142,
+     "base": 583.1969261001911,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Elemental",
+    "Hybrid Elemental/Enhancement"
+   ],
+   "required": [
+    "Lightning Bolt",
+    "Stormstrike"
+   ],
+   "rejected": {
+    "structure": 48,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 10
  }
 }

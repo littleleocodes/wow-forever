@@ -145,40 +145,45 @@
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-26",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/shaman/enhancement/apls/forever.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "enhancement-ml-raid",
-    "talents": "500533102-055030021005102251"
+    "label": "open winner",
+    "talents": "053303102-053030031005102251-03"
    },
    {
-    "label": "sim preset: Level 60",
-    "talents": "5505301-053030031005112251"
+    "label": "enhancement-ml-raid",
+    "talents": "503503102-055030021005102251",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Standard",
+    "talents": "053503102-053030031005112251",
+    "protect_only": true
    },
    {
     "label": "enhancement-raid-dps",
-    "talents": "5200031-055030031005102051-05004",
+    "talents": "5230001-055030031005102051-05004",
     "protect_only": true
    },
    {
     "label": "opt-enhancement-dps-raid-dps",
-    "talents": "5000321-055030031005102051-05004",
+    "talents": "5005031-155030001015112051-051",
     "protect_only": true
    },
    {
     "label": "elemental-enhancement-ml-raid",
-    "talents": "530533102-05503001100510224",
+    "talents": "5033031-0550300110051021-05205",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "enhancement-ml-raid",
-   "sim preset: Level 60"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -246,58 +251,106 @@
     "gain_seed2": 0.05050108358187044,
     "candidates": 327,
     "pass": 8
+   },
+   {
+    "round": 9,
+    "change": "insert at the end: if auraIsInactive: cast Rockbiter Weapon",
+    "gain_seed1": 0.035282696707222616,
+    "gain_seed2": 0.03457690411804659,
+    "candidates": 309,
+    "pass": 10
+   },
+   {
+    "round": 10,
+    "change": "insert in the middle: if auraIsInactive: cast Magma Totem",
+    "gain_seed1": 0.012464225942796503,
+    "gain_seed2": 0.014222989597154623,
+    "candidates": 329,
+    "pass": 10
+   },
+   {
+    "round": 11,
+    "change": "only above 25% mana: if auraIsInactive: cast Magma Totem",
+    "gain_seed1": 0.0019392023616688903,
+    "gain_seed2": 0.0015383590530473334,
+    "candidates": 345,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "enhancement-ml-raid": {
-     "before": 714.919694036486,
-     "after": 739.3868704261314,
-     "base": 714.919694036486,
+    "open winner": {
+     "before": 660.7371991779554,
+     "after": 733.7471202086762,
+     "base": 660.7371991779554,
      "before_value": null,
      "after_value": null,
-     "oom_before": 27.178302876821252,
-     "oom_after": 27.178302876821252
+     "oom_before": 7.856610496071073,
+     "oom_after": 7.856610496071073
     },
-    "sim preset: Level 60": {
-     "before": 675.3871661252306,
-     "after": 696.2688196649796,
-     "base": 675.3871661252306,
+    "enhancement-ml-raid": {
+     "before": 647.1465268966997,
+     "after": 722.3274251095121,
+     "base": 647.1465268966997,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.4821236276194,
-     "oom_after": 0.4821236276194
+     "oom_before": 5.66240180440081,
+     "oom_after": 5.66240180440081
+    },
+    "sim preset: Standard": {
+     "before": 652.0106374450393,
+     "after": 725.1632006177894,
+     "base": 652.0106374450393,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 11.246887274076244,
+     "oom_after": 11.246887274076244
     },
     "enhancement-raid-dps": {
-     "before": 672.9867644834435,
-     "after": 683.0465570857633,
-     "base": 672.9867644834435,
+     "before": 615.0551072816655,
+     "after": 667.9706181858578,
+     "base": 615.0551072816655,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0150974814345,
-     "oom_after": 1.0150974814345
+     "oom_before": 4.550766314902715,
+     "oom_after": 4.550766314902715
     },
     "opt-enhancement-dps-raid-dps": {
-     "before": 675.6711135157722,
-     "after": 692.884408863866,
-     "base": 675.6711135157722,
+     "before": 619.2507435481184,
+     "after": 670.8816379299934,
+     "base": 619.2507435481184,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0188021669433005,
-     "oom_after": 1.0188021669433005
+     "oom_before": 11.205759211091635,
+     "oom_after": 11.205759211091635
     },
     "elemental-enhancement-ml-raid": {
-     "before": 668.0701651821672,
-     "after": 690.4455150780248,
-     "base": 668.0701651821672,
+     "before": 344.83174873452464,
+     "after": 437.4043459011632,
+     "base": 344.83174873452464,
      "before_value": null,
      "after_value": null,
-     "oom_before": 34.48790546134587,
-     "oom_after": 34.48790546134587
+     "oom_before": 0.040374999998550015,
+     "oom_after": 0.040374999998550015
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Enhancement",
+    "Hybrid Elemental/Enhancement"
+   ],
+   "required": [
+    "Stormstrike"
+   ],
+   "rejected": {
+    "structure": 12,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 11
  }
 }

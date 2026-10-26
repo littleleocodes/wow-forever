@@ -549,7 +549,9 @@ def main():
             for pf in sorted((OPEN / "pure").glob(f"{cls}-*.json")):
                 pr = load_record(pf)
                 if pr and (complete(pr, "rotations") or (a.partial and pr.get("rotations"))):
-                    lc += [(pf, pr, x) for x in leveling_candidates(cls, pr, data, RM)]
+                    # only the record's own tree (2026-10-26 audit: the Survival search's finalists race let in the 17/10/24 Beast-Survival
+                    # known positive, which won and was filed under the hybrid)
+                    lc += [(pf, pr, x) for x in leveling_candidates(cls, pr, data, RM) if not pr.get("tree") or x[1] == pr["tree"]]
         # one build per spec across the records: the fastest record's (the main search's winner of the spec, or the one-tree search's)
         for i, (pf, pr, (rot, spec, wt, b, why)) in enumerate(lc):
             if b is None:

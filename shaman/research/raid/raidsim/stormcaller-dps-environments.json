@@ -2,10 +2,14 @@
  "class": "shaman",
  "spec": "stormcaller-dps",
  "game": "forever",
- "date": "2026-10-16",
+ "date": "2026-10-26",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "2ce8265",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
   "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\shaman-elemental-phase_1.p1opt.gear.json",
   "iterations": 3000,
@@ -69,45 +73,5 @@
    "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
   }
  },
- "results": [
-  {
-   "label": "sim preset: Stormcaller 28/23/0",
-   "split": "",
-   "ours": false,
-   "dps": {
-    "dummy": 358.30329701796074,
-    "dummy60": 442.6319978070189,
-    "ladder-mana": 395.0789260831186,
-    "ladder-armor": 395.0789260831186,
-    "ladder-physical": 402.63626044671355,
-    "ladder-spell": 450.04640596586216,
-    "raid": 491.92886085567557,
-    "curve60": 408.58390656648055,
-    "curve120": 387.2205773835682,
-    "curve180": 358.30329701796074,
-    "curve240": 302.099322939758,
-    "curve360": 272.24137688681236,
-    "max": 491.92886085567557,
-    "max60": 504.5827166354675
-   },
-   "raid_spell_casts": {
-    "15208": 1.0,
-    "10605": 3.1043333333333334,
-    "15207": 73.00666666666666,
-    "10438": 3.99,
-    "529": 1.5473333333333332,
-    "29228": 14.988
-   },
-   "raid_casts": {
-    "Major Mana Potion": 1.9153333333333333,
-    "Lightning Bolt": 75.55399999999999,
-    "OtherActionManaGain": 43.99933333333333,
-    "Demonic Rune": 2.0,
-    "Chain Lightning": 3.1043333333333334,
-    "Searing Totem": 3.99,
-    "Flame Shock": 14.988,
-    "Talisman of Ephemeral Power": 2.0
-   }
-  }
- ]
+ "results": []
 }

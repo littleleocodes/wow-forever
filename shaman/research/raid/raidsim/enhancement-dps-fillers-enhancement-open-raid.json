@@ -1,0 +1,197 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "build": "enhancement-open-raid",
+ "setting": "raid",
+ "date": "2026-10-26",
+ "tank": false,
+ "removal": {
+  "Ancestral Knowledge": 0.008018290191337707,
+  "Call of Flame": 0.0420146898214967,
+  "Concussion": 0.008116522066524912,
+  "Elemental Devastation": 0.023791417923254232,
+  "Elemental Focus": 0.01716670833292322,
+  "Elemental Weapons": 0.02393036336475718,
+  "Flurry": 0.08428287660560096,
+  "Improved Stormstrike": 0.04327736624495926,
+  "Maelstrom Weapon": 0.398144542304692,
+  "Mental Dexterity": 0.057205531405653764,
+  "Mental Quickness": 0.027112859066512174,
+  "Rage of the Farseer": 0.020802400872958593,
+  "Reverberation": 0.015248821902775656,
+  "Shamanistic Focus": 0.07345746924584629,
+  "Stormstrike": 0.20934515945081422,
+  "Thundering Strikes": 0.044790139440906374,
+  "Tidal Focus": 0.017409401860407292,
+  "Trial by Fire": 0.036292422795002
+ },
+ "free": [],
+ "kept_for_rotation": [
+  "Maelstrom Weapon",
+  "Stormstrike"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Reverberation",
+    3
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Trial by Fire",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    3
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Reverberation",
+    3
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Trial by Fire",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    3
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    3
+   ]
+  ]
+ }
+}

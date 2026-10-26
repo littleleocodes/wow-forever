@@ -9,18 +9,18 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Elemental Alacrity | Elemental | 2 | +6.18% | manual |
+| Lava Burst | Elemental | 5 | +6.09% | manual |
+| Elemental Alacrity | Elemental | 2 | +5.76% | manual |
+| Call of Flame | Elemental | 2 | +4.69% | manual |
 | Mental Quickness | Enhancement | 5 | +4.64% | manual |
-| Lava Burst | Elemental | 5 | +2.64% | manual |
-| Call of Flame | Elemental | 2 | +1.69% | manual |
-| Elemental Mastery | Elemental | 7 | +1.63% | manual |
+| Elemental Mastery | Elemental | 7 | +1.51% | manual |
 | Elemental Fury | Elemental | 6 | +1.37% | manual |
 | Tidal Focus | Restoration | 1 | +1.08% | manual |
-| Lightning Overload | Elemental | 5 | +0.87% | manual |
-| Concussion | Elemental | 1 | +0.82% | manual |
+| Lightning Overload | Elemental | 5 | +0.80% | manual |
+| Concussion | Elemental | 1 | +0.76% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Thundering Strikes | Enhancement | 1 | +0.47% | manual |
-| Ancestral Knowledge | Enhancement | 1 | +0.03% | manual |
+| Ancestral Knowledge | Enhancement | 1 | +0.05% | manual |
 | Eye of the Storm | Elemental | 4 | +0.01% | manual |
 | Healing Focus | Restoration | 3 | +0.01% | manual |
 | Spirit Weapons | Enhancement | 5 | +0.00% | manual |
@@ -40,32 +40,32 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Elemental Warding | Elemental | 3 | +0.00% | manual |
 | Anticipation | Enhancement | 3 | +0.00% | manual |
 
-## Optimized build: 31/11/9  score +73.14%  (dps x1.731, sustain x1.163, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.471  — use this to compare models with different pet shares.
+## Optimized build: 31/11/9  score +102.26%  (dps x2.022, sustain x1.186, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.743  — use this to compare models with different pet shares.
 
 ```
   Elemental: Concussion 5, Convection 5, Elemental Alacrity 3, Call of Flame 3, Elemental Focus 1, Eye of the Storm 3, Lava Burst 1, Lightning Overload 3, Elemental Reach 1, Elemental Fury 5, Elemental Mastery 1
   Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Shamanistic Focus 1
-  Restoration: Tidal Focus 5, Mindfulness 1, Natural Grace 3
+  Restoration: Tidal Focus 5, Mindfulness 2, Natural Grace 2
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mental Quickness | Enhancement 5 | 1/2 | +8.03% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.87% | no |
+| Mental Quickness | Enhancement 5 | 1/2 | +9.38% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +1.01% | no |
 | Healing Focus | Restoration 3 | 1/3 | +0.00% | no |
 | Spirit Weapons | Enhancement 5 | 1/1 | +0.00% | no |
-| Toughness | Enhancement 4 | 1/5 | +0.00% | no |
+| Natural Grace | Restoration 2 | 3/3 | +0.00% | yes |
 | Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |
 | Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |
-| Mindfulness | Restoration 2 | 2/3 | +0.00% | yes |
+| Mindfulness | Restoration 2 | 3/3 | +0.00% | yes |
 | Totemic Focus | Restoration 2 | 1/5 | +0.00% | yes |
-| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |
 | Mana Tide Totem | Restoration 4 | 1/1 | +0.00% | no |
+| Toughness | Enhancement 4 | 1/5 | +0.00% | no |
+| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |
 | Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |
 | Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |
 | Elemental Warding | Elemental 3 | 1/3 | +0.00% | yes |
-| Anticipation | Enhancement 3 | 1/3 | +0.00% | yes |
 

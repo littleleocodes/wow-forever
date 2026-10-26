@@ -5423,8 +5423,8 @@
   "spec": "any",
   "entry": "enhancement-dps",
   "setting": "raid",
-  "date": "2026-10-09",
-  "base_dps": 739.27,
+  "date": "2026-10-26",
+  "base_dps": 733.92,
   "abilities": [
    {
     "ability": "Rage of the Farseer",
@@ -5435,10 +5435,10 @@
     "lines_tried": 12,
     "best": {
      "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.0007,
-     "split": "19/32/0",
-     "vs_spec_build": 0.0007
+     "spot": "before the filler",
+     "gain_seed1": 0.0005,
+     "split": "17/31/3",
+     "vs_spec_build": 0.0005
     },
     "kept": false
    }

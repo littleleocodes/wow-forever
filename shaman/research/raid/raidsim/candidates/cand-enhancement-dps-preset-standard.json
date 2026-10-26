@@ -1,0 +1,84 @@
+{
+ "id": "cand-enhancement-dps-preset-standard",
+ "allocation": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Trial by Fire",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    3
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ]
+ },
+ "preset": "Standard",
+ "talents": "053503102-053030031005112251",
+ "note": "The community simulator's preset 'Standard' (shaman/enhancement/presets.ts), a raid candidate since it ran within 6% of the best build of enhancement-dps (396.1 vs 398.3 in the race of 2026-10-26)."
+}

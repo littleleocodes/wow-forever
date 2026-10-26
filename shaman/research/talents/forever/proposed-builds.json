@@ -594,99 +594,6 @@
       "replaces": "enhancement-raid-dps"
     },
     {
-      "id": "opt-elemental-dps-parse",
-      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +71.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Elemental": [
-          ["Concussion", 5],
-          ["Convection", 5],
-          ["Call of Flame", 3],
-          ["Elemental Alacrity", 3],
-          ["Elemental Focus", 1],
-          ["Eye of the Storm", 3],
-          ["Elemental Reach", 1],
-          ["Lava Burst", 1],
-          ["Lightning Overload", 3],
-          ["Elemental Fury", 5]
-        ],
-        "Enhancement": [
-          ["Ancestral Knowledge", 3],
-          ["Thundering Strikes", 5]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 5],
-          ["Mindfulness", 3],
-          ["Totemic Focus", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Elemental Alacrity", "why": "Removing it costs 29.1 points of score in this model."},
-        {"talent": "Elemental Fury", "why": "Removing it costs 16.8 points of score in this model."},
-        {"talent": "Tidal Focus", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Concussion", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Call of Flame", "why": "Removing it costs 6.0 points of score in this model."},
-        {"talent": "Lightning Overload", "why": "Removing it costs 4.8 points of score in this model."},
-        {"talent": "Lava Burst", "why": "Removing it costs 4.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 31/7/13 -> 30/8/13; Call of Thunder 1 gone; refill +1 Ancestral Knowledge (refill: the elemental-dps model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
-    },
-    {
-      "id": "opt-enhancement-dps-parse",
-      "name": "Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +104.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Elemental": [
-          ["Concussion", 5],
-          ["Convection", 1],
-          ["Call of Flame", 3],
-          ["Elemental Alacrity", 3],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 4],
-          ["Elemental Focus", 1]
-        ],
-        "Enhancement": [
-          ["Ancestral Knowledge", 5],
-          ["Earth's Grasp", 1],
-          ["Thundering Strikes", 5],
-          ["Mental Dexterity", 3],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Toughness", 1],
-          ["Mental Quickness", 2],
-          ["Spirit Weapons", 1],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": []
-      },
-      "core": [
-        {"talent": "Maelstrom Weapon", "why": "Removing it costs 30.6 points of score in this model."},
-        {"talent": "Stormstrike", "why": "Removing it costs 30.1 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 14.2 points of score in this model."},
-        {"talent": "Mental Dexterity", "why": "Removing it costs 10.5 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 8.6 points of score in this model."},
-        {"talent": "Mental Quickness", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Call of Flame", "why": "Removing it costs 5.7 points of score in this model."},
-        {"talent": "Shamanistic Focus", "why": "Removing it costs 3.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-parse.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 20/31/0 -> 20/31/0; Call of Thunder 1 gone; refill +1 Convection (refill: the enhancement-dps model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
-    },
-    {
       "id": "elemental-enhancement-ml-raid",
       "name": "Elemental-Enhancement — Raid (machine-learning search)",
       "role": "dps",
@@ -870,102 +777,6 @@
         {"levels": "59", "tree": "Enhancement", "talent": "Rage of the Farseer", "points": 1},
         {"levels": "60", "tree": "Elemental", "talent": "Call of Flame", "points": 1}
       ]
-    },
-    {
-      "id": "opt-elemental-dps-raid-dps",
-      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +73.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Elemental": [
-          ["Concussion", 5],
-          ["Convection", 5],
-          ["Elemental Alacrity", 3],
-          ["Call of Flame", 3],
-          ["Elemental Focus", 1],
-          ["Eye of the Storm", 3],
-          ["Lava Burst", 1],
-          ["Lightning Overload", 3],
-          ["Elemental Reach", 1],
-          ["Elemental Fury", 5],
-          ["Elemental Mastery", 1]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 5],
-          ["Shamanistic Focus", 1]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 5],
-          ["Mindfulness", 1],
-          ["Natural Grace", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Elemental Alacrity", "why": "Removing it costs 29.8 points of score in this model."},
-        {"talent": "Elemental Fury", "why": "Removing it costs 14.2 points of score in this model."},
-        {"talent": "Tidal Focus", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 7.2 points of score in this model."},
-        {"talent": "Shamanistic Focus", "why": "Removing it costs 6.9 points of score in this model."},
-        {"talent": "Concussion", "why": "Removing it costs 6.9 points of score in this model."},
-        {"talent": "Call of Flame", "why": "Removing it costs 6.2 points of score in this model."},
-        {"talent": "Lightning Overload", "why": "Removing it costs 4.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
-    },
-    {
-      "id": "opt-enhancement-dps-raid-dps",
-      "name": "Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +129.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 5],
-          ["Call of Flame", 3],
-          ["Elemental Devastation", 3],
-          ["Elemental Alacrity", 2],
-          ["Elemental Focus", 1]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 5],
-          ["Earth's Grasp", 1],
-          ["Mental Dexterity", 3],
-          ["Shamanistic Focus", 1],
-          ["Stormstrike", 1],
-          ["Flurry", 5],
-          ["Toughness", 1],
-          ["Mental Quickness", 2],
-          ["Spirit Weapons", 1],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 5],
-          ["Mindfulness", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Maelstrom Weapon", "why": "Removing it costs 37.6 points of score in this model."},
-        {"talent": "Stormstrike", "why": "Removing it costs 35.1 points of score in this model."},
-        {"talent": "Shamanistic Focus", "why": "Removing it costs 23.7 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 16.7 points of score in this model."},
-        {"talent": "Mental Dexterity", "why": "Removing it costs 12.1 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Convection", "why": "Removing it costs 9.1 points of score in this model."},
-        {"talent": "Mental Quickness", "why": "Removing it costs 7.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
     },
     {
       "id": "opt-resto-heal-raid-heal",
@@ -1159,15 +970,323 @@
       ]
     },
     {
+      "id": "restoration-leveling",
+      "name": "Restoration — Leveling into the raid build",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-10-25",
+      "derived": "leveling",
+      "raid_path": "resto-raid-healer",
+      "summary": "Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 44 s per kill over levels 20-60, the enhancement-dps rotation).",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5]
+        ],
+        "Restoration": [
+          ["Totemic Focus", 5],
+          ["Mindfulness", 3],
+          ["Tidal Focus", 5],
+          ["Water Shield", 1],
+          ["Ancestral Healing", 3],
+          ["Healing Focus", 3],
+          ["Mana Tide Totem", 1],
+          ["Restorative Totems", 5],
+          ["Tidal Mastery", 5],
+          ["Healing Way", 3],
+          ["Nature's Swiftness", 1],
+          ["Purification", 5],
+          ["Riptide", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+        {"levels": "15-17", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+        {"levels": "18-22", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "23-27", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+        {"levels": "28", "tree": "Restoration", "talent": "Water Shield", "points": 1},
+        {"levels": "29", "tree": "Restoration", "talent": "Ancestral Healing", "points": 1},
+        {"levels": "30", "tree": "Restoration", "talent": "Mana Tide Totem", "points": 1},
+        {"levels": "31-34", "tree": "Restoration", "talent": "Restorative Totems", "points": 4},
+        {"levels": "35", "tree": "Restoration", "talent": "Nature's Swiftness", "points": 1},
+        {"levels": "36", "tree": "Restoration", "talent": "Restorative Totems", "points": 1},
+        {"levels": "37-41", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 5},
+        {"levels": "42-43", "tree": "Restoration", "talent": "Ancestral Healing", "points": 2},
+        {"levels": "44-46", "tree": "Restoration", "talent": "Healing Focus", "points": 3},
+        {"levels": "47-51", "tree": "Restoration", "talent": "Tidal Mastery", "points": 5},
+        {"levels": "52-54", "tree": "Restoration", "talent": "Healing Way", "points": 3},
+        {"levels": "55-59", "tree": "Restoration", "talent": "Purification", "points": 5},
+        {"levels": "60", "tree": "Restoration", "talent": "Riptide", "points": 1}
+      ],
+      "core": [
+        {"talent": "Mindfulness", "why": "New: 17%/rank regen while casting (est. 51%). Healer lab (2026-09-26): removing it costs +16% healing capacity."},
+        {"talent": "Healing Way", "why": "+24% Healing Wave (est.); Riptide prerequisite. Healer lab (2026-09-26): removing it costs +8% healing capacity."},
+        {"talent": "Purification", "why": "+10% healing. Healer lab (2026-09-26): removing it costs +5% healing capacity."},
+        {"talent": "Tidal Focus", "why": "Cheaper heals plus 5% spell hit (est.). Healer lab (2026-09-26): removing it costs +5% healing capacity."},
+        {"talent": "Water Shield", "why": "New: mana on being hit or on crit heals. Healer lab (2026-09-26): removing it costs +4% healing capacity."},
+        {"talent": "Mana Tide Totem", "why": "Now a 16-point talent. Healer lab (2026-09-26): removing it costs +3% healing capacity."},
+        {"talent": "Ancestral Knowledge", "why": "+10% Intellect (est.). Healer lab (2026-09-26): removing it costs +2% healing capacity."},
+        {"talent": "Ancestral Healing", "why": "Armor on crit heals (8%/rank est. 24%). Healer lab (2026-09-26): removing it costs +2% healing capacity."}
+      ],
+      "flex": [],
+      "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 44 s; own tree first 45 s; own tree last 44 s. First Restoration point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
+      "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "opt-elemental-dps-raid-dps",
+      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +102.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Convection", 5],
+          ["Elemental Alacrity", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Eye of the Storm", 3],
+          ["Lava Burst", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Reach", 1],
+          ["Elemental Fury", 5],
+          ["Elemental Mastery", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5],
+          ["Shamanistic Focus", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Mindfulness", 2],
+          ["Natural Grace", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Elemental Alacrity", "why": "Removing it costs 31.4 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 18.6 points of score in this model."},
+        {"talent": "Elemental Fury", "why": "Removing it costs 16.6 points of score in this model."},
+        {"talent": "Shamanistic Focus", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Lava Burst", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Tidal Focus", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Mindfulness", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 8.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "opt-elemental-dps-parse",
+      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +86.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Convection", 5],
+          ["Elemental Alacrity", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Eye of the Storm", 3],
+          ["Lava Burst", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Reach", 1],
+          ["Elemental Fury", 5],
+          ["Elemental Mastery", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5],
+          ["Shamanistic Focus", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Mindfulness", 3],
+          ["Totemic Focus", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Elemental Alacrity", "why": "Removing it costs 28.2 points of score in this model."},
+        {"talent": "Elemental Fury", "why": "Removing it costs 16.7 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 16.7 points of score in this model."},
+        {"talent": "Lava Burst", "why": "Removing it costs 10.1 points of score in this model."},
+        {"talent": "Tidal Focus", "why": "Removing it costs 9.6 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Concussion", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Lightning Overload", "why": "Removing it costs 4.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "opt-enhancement-dps-raid-dps",
+      "name": "Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +124.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Call of Flame", 3],
+          ["Reverberation", 5],
+          ["Elemental Focus", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5],
+          ["Earth's Grasp", 1],
+          ["Mental Dexterity", 3],
+          ["Shamanistic Focus", 1],
+          ["Stormstrike", 1],
+          ["Flurry", 5],
+          ["Toughness", 1],
+          ["Mental Quickness", 2],
+          ["Spirit Weapons", 1],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Mindfulness", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Stormstrike", "why": "Removing it costs 35.8 points of score in this model."},
+        {"talent": "Maelstrom Weapon", "why": "Removing it costs 31.9 points of score in this model."},
+        {"talent": "Shamanistic Focus", "why": "Removing it costs 17.2 points of score in this model."},
+        {"talent": "Flurry", "why": "Removing it costs 15.0 points of score in this model."},
+        {"talent": "Mental Dexterity", "why": "Removing it costs 11.8 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 10.1 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 8.4 points of score in this model."},
+        {"talent": "Mental Quickness", "why": "Removing it costs 7.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "opt-enhancement-dps-parse",
+      "name": "Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +105.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Call of Flame", 3],
+          ["Reverberation", 5],
+          ["Elemental Devastation", 2]
+        ],
+        "Enhancement": [
+          ["Ancestral Knowledge", 5],
+          ["Thundering Strikes", 5],
+          ["Earth's Grasp", 1],
+          ["Mental Dexterity", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Improved Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Spirit Weapons", 1],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Stormstrike", "why": "Removing it costs 32.3 points of score in this model."},
+        {"talent": "Maelstrom Weapon", "why": "Removing it costs 27.0 points of score in this model."},
+        {"talent": "Flurry", "why": "Removing it costs 13.3 points of score in this model."},
+        {"talent": "Mental Dexterity", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 8.8 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 7.5 points of score in this model."},
+        {"talent": "Mental Quickness", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Tidal Focus", "why": "Removing it costs 4.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "enhancement-open-raid",
+      "name": "Enhancement — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-10-26",
+      "derived": "raid",
+      "summary": "The Enhancement raid build the open talent search found on 2026-10-26: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over enhancement-ml-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Elemental Devastation", 3],
+          ["Reverberation", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Trial by Fire", 2]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 3],
+          ["Mental Dexterity", 3],
+          ["Elemental Weapons", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Maelstrom Weapon", "why": "292 DPS lost without it (40% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Stormstrike", "why": "153 DPS lost without it (21% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Flurry", "why": "61 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shamanistic Focus", "why": "53 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Mental Dexterity", "why": "42 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Thundering Strikes", "why": "34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Call of Flame", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Stormstrike", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+9.9% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (enhancement-dps, full raid): 17/31/3 (Enhancement) at 733.5 DPS; enhancement-ml-raid 722.4, opt-enhancement-dps-raid-dps 670.8, enhancement-raid-dps 667.7, elemental-enhancement-ml-raid 437.2 in the same fights; 2,330 builds simulated, 1 independent runs reached the top.", "The enhancement-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): elemental-dps -54.4%, stormcaller-dps -55.0%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Enhancement build: check it against the community's Enhancement builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/shaman/60/053303102-053030031005102251-03-7"],
+      "replaces": "enhancement-raid-dps"
+    },
+    {
       "id": "elemental-enhancement-open-leveling",
       "name": "Elemental-Enhancement — Leveling (open talent search)",
       "role": "dps",
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Elemental/Enhancement",
-      "generated": "2026-10-20",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "summary": "The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-10-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +5.0% faster per kill than opt-elemental-dps-leveling-st, the fastest of our leveling builds in that race.",
+      "summary": "The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +5.0% faster per kill than opt-elemental-dps-leveling-st, the fastest of our leveling builds in that race.",
       "allocation": {
         "Elemental": [
           ["Convection", 5],
@@ -1239,9 +1358,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Enhancement",
-      "generated": "2026-10-20",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "summary": "The Enhancement leveling build the open leveling search found on 2026-10-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). ",
+      "summary": "The Enhancement leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). ",
       "allocation": {
         "Elemental": [
           ["Convection", 5],
@@ -1314,71 +1433,77 @@
       "replaces": "leveling-enhancement"
     },
     {
-      "id": "restoration-leveling",
-      "name": "Restoration — Leveling into the raid build",
+      "id": "elemental-open-leveling",
+      "name": "Elemental — Leveling (open talent search)",
       "role": "dps",
       "content": "leveling",
       "tier": "draft",
-      "spec": "Restoration",
-      "generated": "2026-10-25",
+      "spec": "Elemental",
+      "generated": "2026-10-26",
       "derived": "leveling",
-      "raid_path": "resto-raid-healer",
-      "summary": "Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 44 s per kill over levels 20-60, the enhancement-dps rotation).",
+      "summary": "The Elemental leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +2.1% faster per kill than opt-elemental-dps-leveling-st, the fastest of our leveling builds in that race.",
       "allocation": {
-        "Elemental": [],
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 3],
+          ["Reverberation", 3],
+          ["Elemental Alacrity", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Eye of the Storm", 3],
+          ["Elemental Reach", 1],
+          ["Lava Burst", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Fury", 5]
+        ],
         "Enhancement": [
           ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 5]
+          ["Mental Dexterity", 3],
+          ["Improved Ghost Wolf", 2],
+          ["Improved Lightning Shield", 1],
+          ["Shamanistic Focus", 1]
         ],
         "Restoration": [
-          ["Totemic Focus", 5],
-          ["Mindfulness", 3],
           ["Tidal Focus", 5],
-          ["Water Shield", 1],
-          ["Ancestral Healing", 3],
-          ["Healing Focus", 3],
-          ["Mana Tide Totem", 1],
-          ["Restorative Totems", 5],
-          ["Tidal Mastery", 5],
-          ["Healing Way", 3],
-          ["Nature's Swiftness", 1],
-          ["Purification", 5],
-          ["Riptide", 1]
+          ["Mindfulness", 3]
         ]
       },
       "order": [
         {"levels": "10-14", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
         {"levels": "15-17", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
         {"levels": "18-22", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
-        {"levels": "23-27", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
-        {"levels": "28", "tree": "Restoration", "talent": "Water Shield", "points": 1},
-        {"levels": "29", "tree": "Restoration", "talent": "Ancestral Healing", "points": 1},
-        {"levels": "30", "tree": "Restoration", "talent": "Mana Tide Totem", "points": 1},
-        {"levels": "31-34", "tree": "Restoration", "talent": "Restorative Totems", "points": 4},
-        {"levels": "35", "tree": "Restoration", "talent": "Nature's Swiftness", "points": 1},
-        {"levels": "36", "tree": "Restoration", "talent": "Restorative Totems", "points": 1},
-        {"levels": "37-41", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 5},
-        {"levels": "42-43", "tree": "Restoration", "talent": "Ancestral Healing", "points": 2},
-        {"levels": "44-46", "tree": "Restoration", "talent": "Healing Focus", "points": 3},
-        {"levels": "47-51", "tree": "Restoration", "talent": "Tidal Mastery", "points": 5},
-        {"levels": "52-54", "tree": "Restoration", "talent": "Healing Way", "points": 3},
-        {"levels": "55-59", "tree": "Restoration", "talent": "Purification", "points": 5},
-        {"levels": "60", "tree": "Restoration", "talent": "Riptide", "points": 1}
+        {"levels": "23-24", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "25-27", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "28", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "29", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+        {"levels": "30-34", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "35-37", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "38-39", "tree": "Elemental", "talent": "Call of Flame", "points": 2},
+        {"levels": "40", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "41", "tree": "Elemental", "talent": "Call of Flame", "points": 1},
+        {"levels": "42-44", "tree": "Elemental", "talent": "Concussion", "points": 3},
+        {"levels": "45-47", "tree": "Elemental", "talent": "Eye of the Storm", "points": 3},
+        {"levels": "48-49", "tree": "Elemental", "talent": "Reverberation", "points": 2},
+        {"levels": "50", "tree": "Elemental", "talent": "Lava Burst", "points": 1},
+        {"levels": "51-53", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "54", "tree": "Elemental", "talent": "Reverberation", "points": 1},
+        {"levels": "55-59", "tree": "Elemental", "talent": "Elemental Fury", "points": 5},
+        {"levels": "60", "tree": "Elemental", "talent": "Elemental Reach", "points": 1}
       ],
       "core": [
-        {"talent": "Mindfulness", "why": "New: 17%/rank regen while casting (est. 51%). Healer lab (2026-09-26): removing it costs +16% healing capacity."},
-        {"talent": "Healing Way", "why": "+24% Healing Wave (est.); Riptide prerequisite. Healer lab (2026-09-26): removing it costs +8% healing capacity."},
-        {"talent": "Purification", "why": "+10% healing. Healer lab (2026-09-26): removing it costs +5% healing capacity."},
-        {"talent": "Tidal Focus", "why": "Cheaper heals plus 5% spell hit (est.). Healer lab (2026-09-26): removing it costs +5% healing capacity."},
-        {"talent": "Water Shield", "why": "New: mana on being hit or on crit heals. Healer lab (2026-09-26): removing it costs +4% healing capacity."},
-        {"talent": "Mana Tide Totem", "why": "Now a 16-point talent. Healer lab (2026-09-26): removing it costs +3% healing capacity."},
-        {"talent": "Ancestral Knowledge", "why": "+10% Intellect (est.). Healer lab (2026-09-26): removing it costs +2% healing capacity."},
-        {"talent": "Ancestral Healing", "why": "Armor on crit heals (8%/rank est. 24%). Healer lab (2026-09-26): removing it costs +2% healing capacity."}
+        {"talent": "Shamanistic Focus", "why": "+4.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Alacrity", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mindfulness", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Convection", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Tidal Focus", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Thundering Strikes", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Call of Flame", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Focus", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 44 s; own tree first 45 s; own tree last 44 s. First Restoration point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
-      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.87; opt-elemental-dps-leveling-st 36.61. The search simulated 24,342 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Elemental leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/530333100301135-050032101-053-7"]
     }
   ]
 }

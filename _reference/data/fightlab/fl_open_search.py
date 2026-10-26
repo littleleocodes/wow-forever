@@ -267,8 +267,8 @@ def main():
                                              for x in known_positives(cls)]
                 for f in [r["winner"]] + r.get("finalists", [])[:5] + pos:
                     k = tuple(sorted(FT.flat_of(f).items()))
-                    if k not in seen:
-                        seen.add(k)
+                    if k not in seen and space.valid(FT.flat_of(f)):   # 2026-10-26 audit: a known positive outside the space (the
+                        seen.add(k)                                   # one-tree Survival search took the 17/10/24 hybrid) never races
                         cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
                 builds = cands + list(ours.values())
                 res = FT.race(pool, cls, spec, builds, RACE_FIGHTS, 3)

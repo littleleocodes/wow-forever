@@ -1,0 +1,8350 @@
+{
+ "class": "shaman",
+ "date": "2026-10-26",
+ "rotations": {
+  "elemental-dps": {
+   "model": "elemental-dps",
+   "trees": [
+    "Elemental"
+   ],
+   "families": [
+    {
+     "keystones": "Elemental Focus + Shamanistic Focus",
+     "split": "31/12/8",
+     "family": "Elemental",
+     "kills_per_hour": 98.95
+    },
+    {
+     "keystones": "Earthbound + Stormstrike",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 98.03
+    },
+    {
+     "keystones": "Earthbound + Shamanistic Focus",
+     "split": "31/12/8",
+     "family": "Elemental",
+     "kills_per_hour": 97.6
+    },
+    {
+     "keystones": "Earthbound + Flurry",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 96.01
+    },
+    {
+     "keystones": "Lava Burst + Stormstrike",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 94.14
+    },
+    {
+     "keystones": "Elemental Focus + Flurry",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 96.04
+    },
+    {
+     "keystones": "Elemental Focus + Stormstrike",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 95.88
+    },
+    {
+     "keystones": "Lava Burst + Shamanistic Focus",
+     "split": "32/11/8",
+     "family": "Elemental",
+     "kills_per_hour": 95.25
+    },
+    {
+     "keystones": "Elemental Focus + Improved Stormstrike",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 93.74
+    },
+    {
+     "keystones": "Earthbound + Spirit Weapons",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 93.65
+    },
+    {
+     "keystones": "Elemental Mastery + Flurry",
+     "split": "33/16/2",
+     "family": "Elemental",
+     "kills_per_hour": 93.11
+    },
+    {
+     "keystones": "Elemental Mastery + Stormstrike",
+     "split": "31/20/0",
+     "family": "Elemental",
+     "kills_per_hour": 92.75
+    },
+    {
+     "keystones": "Elemental Mastery + Shamanistic Focus",
+     "split": "32/13/6",
+     "family": "Elemental",
+     "kills_per_hour": 92.58
+    },
+    {
+     "keystones": "Earthbound + Improved Stormstrike",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 92.21
+    },
+    {
+     "keystones": "Lava Burst + Spirit Weapons",
+     "split": "30/21/0",
+     "family": "Elemental",
+     "kills_per_hour": 92.0
+    }
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       3
+      ],
+      [
+       "Reverberation",
+       3
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Eye of the Storm",
+       3
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lava Burst",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Improved Ghost Wolf",
+       2
+      ],
+      [
+       "Improved Lightning Shield",
+       1
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Tidal Focus",
+       5
+      ],
+      [
+       "Mindfulness",
+       3
+      ]
+     ]
+    },
+    "split": "31/12/8",
+    "picked_by": "the 20-60 polish after the race"
+   },
+   "runs_agree": 1,
+   "simulated_builds": 24342,
+   "important_features": [
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.3708
+    },
+    {
+     "feature": "Elemental Fury",
+     "importance": 0.1574
+    },
+    {
+     "feature": "Improved Lightning Shield",
+     "importance": 0.1136
+    },
+    {
+     "feature": "Enhancement points",
+     "importance": 0.1008
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0659
+    },
+    {
+     "feature": "Mental Dexterity",
+     "importance": 0.0332
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0292
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.0223
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.0207
+    },
+    {
+     "feature": "Elemental Warding",
+     "importance": 0.0188
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0138
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0091
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Concussion",
+        3
+       ],
+       [
+        "Reverberation",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        5
+       ],
+       [
+        "Mental Dexterity",
+        3
+       ],
+       [
+        "Improved Lightning Shield",
+        3
+       ],
+       [
+        "Shamanistic Focus",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ]
+      ]
+     },
+     "split": "31/12/8",
+     "dps": 99.78,
+     "se": 0.1291
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Concussion",
+        2
+       ],
+       [
+        "Reverberation",
+        3
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Lava Burst",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        5
+       ],
+       [
+        "Mental Dexterity",
+        3
+       ],
+       [
+        "Improved Lightning Shield",
+        3
+       ],
+       [
+        "Elemental Weapons",
+        1
+       ],
+       [
+        "Shamanistic Focus",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ]
+      ]
+     },
+     "split": "30/13/8",
+     "dps": 99.6,
+     "se": 0.1268
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-14",
+     "tree": "Restoration",
+     "talent": "Tidal Focus",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Restoration",
+     "talent": "Mindfulness",
+     "points": 3
+    },
+    {
+     "levels": "18-22",
+     "tree": "Enhancement",
+     "talent": "Thundering Strikes",
+     "points": 5
+    },
+    {
+     "levels": "23-24",
+     "tree": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "points": 2
+    },
+    {
+     "levels": "25-27",
+     "tree": "Enhancement",
+     "talent": "Mental Dexterity",
+     "points": 3
+    },
+    {
+     "levels": "28",
+     "tree": "Enhancement",
+     "talent": "Shamanistic Focus",
+     "points": 1
+    },
+    {
+     "levels": "29",
+     "tree": "Enhancement",
+     "talent": "Improved Lightning Shield",
+     "points": 1
+    },
+    {
+     "levels": "30-34",
+     "tree": "Elemental",
+     "talent": "Convection",
+     "points": 5
+    },
+    {
+     "levels": "35-37",
+     "tree": "Elemental",
+     "talent": "Elemental Alacrity",
+     "points": 3
+    },
+    {
+     "levels": "38-39",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 2
+    },
+    {
+     "levels": "40",
+     "tree": "Elemental",
+     "talent": "Elemental Focus",
+     "points": 1
+    },
+    {
+     "levels": "41",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 1
+    },
+    {
+     "levels": "42-44",
+     "tree": "Elemental",
+     "talent": "Concussion",
+     "points": 3
+    },
+    {
+     "levels": "45-47",
+     "tree": "Elemental",
+     "talent": "Eye of the Storm",
+     "points": 3
+    },
+    {
+     "levels": "48-49",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 2
+    },
+    {
+     "levels": "50",
+     "tree": "Elemental",
+     "talent": "Lava Burst",
+     "points": 1
+    },
+    {
+     "levels": "51-53",
+     "tree": "Elemental",
+     "talent": "Lightning Overload",
+     "points": 3
+    },
+    {
+     "levels": "54",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 1
+    },
+    {
+     "levels": "55-59",
+     "tree": "Elemental",
+     "talent": "Elemental Fury",
+     "points": 5
+    },
+    {
+     "levels": "60",
+     "tree": "Elemental",
+     "talent": "Elemental Reach",
+     "points": 1
+    }
+   ],
+   "race": {
+    "finalist 30/13/8": {
+     "weighted": 37.21,
+     "levels": {
+      "20": 29.19,
+      "30": 36.29,
+      "40": 39.35,
+      "50": 40.55,
+      "60": 36.12
+     },
+     "signature": "OK"
+    },
+    "opt-elemental-dps-leveling-st": {
+     "weighted": 36.61,
+     "levels": {
+      "20": 29.19,
+      "30": 36.29,
+      "40": 37.1,
+      "50": 38.1,
+      "60": 37.66
+     }
+    },
+    "finalist 31/12/8 (before the 20-60 polish)": {
+     "weighted": 37.14,
+     "levels": {
+      "20": 29.19,
+      "30": 36.29,
+      "40": 39.32,
+      "50": 40.39,
+      "60": 36.06
+     },
+     "signature": "OK"
+    },
+    "finalist 31/12/8 (stats model order)": {
+     "weighted": 35.96,
+     "levels": {
+      "20": 29.19,
+      "30": 36.29,
+      "40": 36.2,
+      "50": 37.64,
+      "60": 36.49
+     }
+    },
+    "finalist 31/12/8 (own tree first order)": {
+     "weighted": 37.83,
+     "levels": {
+      "20": 28.51,
+      "30": 37.2,
+      "40": 41.22,
+      "50": 40.82,
+      "60": 36.49
+     }
+    },
+    "open winner": {
+     "weighted": 35.87,
+     "levels": {
+      "20": 29.52,
+      "30": 35.46,
+      "40": 36.19,
+      "50": 37.65,
+      "60": 36.49
+     }
+    }
+   },
+   "order_stats": [
+    {
+     "levels": "10-14",
+     "tree": "Restoration",
+     "talent": "Tidal Focus",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Restoration",
+     "talent": "Mindfulness",
+     "points": 3
+    },
+    {
+     "levels": "18-22",
+     "tree": "Elemental",
+     "talent": "Convection",
+     "points": 5
+    },
+    {
+     "levels": "23-25",
+     "tree": "Elemental",
+     "talent": "Elemental Alacrity",
+     "points": 3
+    },
+    {
+     "levels": "26-27",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 2
+    },
+    {
+     "levels": "28",
+     "tree": "Elemental",
+     "talent": "Elemental Focus",
+     "points": 1
+    },
+    {
+     "levels": "29-33",
+     "tree": "Enhancement",
+     "talent": "Thundering Strikes",
+     "points": 5
+    },
+    {
+     "levels": "34-35",
+     "tree": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "points": 2
+    },
+    {
+     "levels": "36-38",
+     "tree": "Enhancement",
+     "talent": "Mental Dexterity",
+     "points": 3
+    },
+    {
+     "levels": "39",
+     "tree": "Enhancement",
+     "talent": "Shamanistic Focus",
+     "points": 1
+    },
+    {
+     "levels": "40",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 1
+    },
+    {
+     "levels": "41-43",
+     "tree": "Elemental",
+     "talent": "Concussion",
+     "points": 3
+    },
+    {
+     "levels": "44-46",
+     "tree": "Elemental",
+     "talent": "Eye of the Storm",
+     "points": 3
+    },
+    {
+     "levels": "47-48",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 2
+    },
+    {
+     "levels": "49",
+     "tree": "Elemental",
+     "talent": "Lava Burst",
+     "points": 1
+    },
+    {
+     "levels": "50-52",
+     "tree": "Elemental",
+     "talent": "Lightning Overload",
+     "points": 3
+    },
+    {
+     "levels": "53",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 1
+    },
+    {
+     "levels": "54-58",
+     "tree": "Elemental",
+     "talent": "Elemental Fury",
+     "points": 5
+    },
+    {
+     "levels": "59",
+     "tree": "Elemental",
+     "talent": "Elemental Reach",
+     "points": 1
+    },
+    {
+     "levels": "60",
+     "tree": "Enhancement",
+     "talent": "Improved Lightning Shield",
+     "points": 1
+    }
+   ],
+   "order_stats_split": "31/12/8",
+   "level_polish": {
+    "date": "2026-10-26",
+    "levels": [
+     40,
+     50,
+     60
+    ],
+    "from": "31/12/8",
+    "steps": [
+     {
+      "round": 1,
+      "split": "31/12/8",
+      "seed1": -0.0392,
+      "seed2": -0.0467,
+      "seconds_40_60": 36.69
+     }
+    ],
+    "neighbours_tried": 240,
+    "minutes": 4.7,
+    "changed": true
+   },
+   "order_label": "own tree last",
+   "orders_raced": "31/12/8",
+   "order_polish": {
+    "date": "2026-10-26",
+    "levels": [
+     30,
+     40,
+     50
+    ],
+    "from": "own tree last",
+    "steps": [],
+    "minutes": 0.2,
+    "changed": false
+   },
+   "values": {
+    "Shamanistic Focus": {
+     "ranks": 1,
+     "seconds": 4.08,
+     "per_point": 4.08
+    },
+    "Elemental Alacrity": {
+     "ranks": 3,
+     "seconds": 1.69,
+     "per_point": 0.56
+    },
+    "Mindfulness": {
+     "ranks": 3,
+     "seconds": 1.31,
+     "per_point": 0.44
+    },
+    "Convection": {
+     "ranks": 5,
+     "seconds": 1.25,
+     "per_point": 0.25
+    },
+    "Tidal Focus": {
+     "ranks": 5,
+     "seconds": 1.23,
+     "per_point": 0.25
+    },
+    "Thundering Strikes": {
+     "ranks": 5,
+     "seconds": 1.2,
+     "per_point": 0.24
+    },
+    "Call of Flame": {
+     "ranks": 3,
+     "seconds": 1.18,
+     "per_point": 0.39
+    },
+    "Elemental Focus": {
+     "ranks": 1,
+     "seconds": 1.17,
+     "per_point": 1.17
+    },
+    "Elemental Fury": {
+     "ranks": 5,
+     "seconds": 1.06,
+     "per_point": 0.21
+    },
+    "Reverberation": {
+     "ranks": 3,
+     "seconds": 0.75,
+     "per_point": 0.25
+    },
+    "Mental Dexterity": {
+     "ranks": 3,
+     "seconds": 0.66,
+     "per_point": 0.22
+    },
+    "Eye of the Storm": {
+     "ranks": 3,
+     "seconds": 0.61,
+     "per_point": 0.2
+    },
+    "Lava Burst": {
+     "ranks": 1,
+     "seconds": 0.45,
+     "per_point": 0.45
+    },
+    "Concussion": {
+     "ranks": 3,
+     "seconds": 0.38,
+     "per_point": 0.13
+    },
+    "Lightning Overload": {
+     "ranks": 3,
+     "seconds": 0.21,
+     "per_point": 0.07
+    },
+    "Improved Lightning Shield": {
+     "ranks": 1,
+     "seconds": 0.21,
+     "per_point": 0.21
+    },
+    "Elemental Reach": {
+     "ranks": 1,
+     "seconds": 0.17,
+     "per_point": 0.17
+    },
+    "Improved Ghost Wolf": {
+     "ranks": 2,
+     "seconds": 0.0,
+     "per_point": 0.0
+    }
+   },
+   "values_base": 36.48,
+   "split": "31/12/8",
+   "family": "Elemental",
+   "link": "https://talentsforever.com/shaman/60/530333100301135-050032101-053-7",
+   "ours_best": "opt-elemental-dps-leveling-st",
+   "gain_vs_ours": 0.0206,
+   "synergy": {
+    "date": "2026-10-26",
+    "winner": "31/12/8",
+    "relevant": 36,
+    "missing": 19,
+    "pairs": 525,
+    "screen_fights": 400,
+    "singles": {
+     "Mental Quickness": 0.0712,
+     "Elemental Mastery": 0.0069,
+     "Maelstrom Weapon": 0.0053,
+     "Spirit Weapons": 0.0048,
+     "Elemental Devastation": 0.0021,
+     "Elemental Weapons": 0.0019,
+     "Rage of the Farseer": 0.0009,
+     "Flurry": 0.0006,
+     "Concussion -1": 0.0002,
+     "Elemental Warding": 0.0,
+     "Trial by Fire": 0.0,
+     "Earthbound": 0.0
+    },
+    "top_pairs": [
+     {
+      "pair": "Mental Quickness + Maelstrom Weapon",
+      "gain": 0.0847,
+      "interaction": 0.0082
+     },
+     {
+      "pair": "Mental Quickness + Totemic Focus",
+      "gain": 0.0814,
+      "interaction": 0.0137
+     },
+     {
+      "pair": "Spirit Weapons + Mental Quickness",
+      "gain": 0.0792,
+      "interaction": 0.0032
+     },
+     {
+      "pair": "Flurry + Mental Quickness",
+      "gain": 0.0751,
+      "interaction": 0.0033
+     },
+     {
+      "pair": "Elemental Weapons + Mental Quickness",
+      "gain": 0.0747,
+      "interaction": 0.0016
+     },
+     {
+      "pair": "Mental Quickness + Rage of the Farseer",
+      "gain": 0.0744,
+      "interaction": 0.0023
+     },
+     {
+      "pair": "Elemental Devastation + Mental Quickness",
+      "gain": 0.0726,
+      "interaction": -0.0007
+     },
+     {
+      "pair": "Elemental Mastery + Mental Quickness",
+      "gain": 0.0715,
+      "interaction": -0.0066
+     },
+     {
+      "pair": "Elemental Warding + Mental Quickness",
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Trial by Fire + Mental Quickness",
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Earthbound + Mental Quickness",
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Guardian Totems + Mental Quickness",
+      "gain": 0.0712,
+      "interaction": 0.0
+     }
+    ],
+    "top_interactions": [
+     {
+      "pair": "Maelstrom Weapon + Reverberation",
+      "gain": -0.0029,
+      "interaction": 0.0205,
+      "kind": "swap"
+     },
+     {
+      "pair": "Totemic Focus + Reverberation",
+      "gain": -0.0144,
+      "interaction": 0.0178,
+      "kind": "swap"
+     },
+     {
+      "pair": "Maelstrom Weapon + Eye of the Storm",
+      "gain": 0.0027,
+      "interaction": 0.0157,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Shamanistic Focus",
+      "gain": -0.1111,
+      "interaction": 0.0155,
+      "kind": "swap"
+     },
+     {
+      "pair": "Spirit Weapons + Reverberation",
+      "gain": -0.009,
+      "interaction": 0.0149,
+      "kind": "swap"
+     },
+     {
+      "pair": "Maelstrom Weapon + Totemic Focus",
+      "gain": 0.0163,
+      "interaction": 0.0145
+     },
+     {
+      "pair": "Mental Quickness + Totemic Focus",
+      "gain": 0.0814,
+      "interaction": 0.0137
+     },
+     {
+      "pair": "Totemic Focus + Thundering Strikes",
+      "gain": -0.0253,
+      "interaction": 0.0123,
+      "kind": "swap"
+     },
+     {
+      "pair": "Maelstrom Weapon + Elemental Alacrity",
+      "gain": -0.0223,
+      "interaction": 0.0112,
+      "kind": "swap"
+     },
+     {
+      "pair": "Totemic Focus + Shamanistic Focus",
+      "gain": -0.1076,
+      "interaction": 0.0111,
+      "kind": "swap"
+     },
+     {
+      "pair": "Mental Quickness + Reverberation",
+      "gain": 0.0532,
+      "interaction": 0.0107,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Reverberation",
+      "gain": -0.0295,
+      "interaction": 0.0106,
+      "kind": "swap"
+     }
+    ],
+    "leads": [],
+    "base_kills_per_hour": 100.35,
+    "winner_allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       3
+      ],
+      [
+       "Reverberation",
+       3
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Eye of the Storm",
+       3
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lava Burst",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Improved Ghost Wolf",
+       2
+      ],
+      [
+       "Improved Lightning Shield",
+       1
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Tidal Focus",
+       5
+      ],
+      [
+       "Mindfulness",
+       3
+      ]
+     ]
+    },
+    "singles_all": {
+     "Elemental Devastation": 0.0021,
+     "Elemental Warding": 0.0,
+     "Trial by Fire": 0.0,
+     "Earthbound": 0.0,
+     "Elemental Mastery": 0.0069,
+     "Guardian Totems": 0.0,
+     "Elemental Weapons": 0.0019,
+     "Flurry": 0.0006,
+     "Stormstrike": 0.0,
+     "Spirit Weapons": 0.0048,
+     "Mental Quickness": 0.0712,
+     "Improved Stormstrike": 0.0,
+     "Maelstrom Weapon": 0.0053,
+     "Rage of the Farseer": 0.0009,
+     "Natural Grace": 0.0,
+     "Totemic Focus": -0.0035,
+     "Healing Focus": 0.0,
+     "Water Shield": -0.0114,
+     "Nature's Swiftness": 0.0,
+     "-Convection": -0.0338,
+     "Convection -1": -0.0039,
+     "Convection -2": -0.0142,
+     "-Concussion": -0.0146,
+     "Concussion -1": 0.0002,
+     "Concussion -2": -0.0088,
+     "-Reverberation": -0.0287,
+     "Reverberation -1": -0.0281,
+     "Reverberation -2": -0.0287,
+     "-Elemental Alacrity": -0.0388,
+     "Elemental Alacrity -1": -0.0257,
+     "Elemental Alacrity -2": -0.0345,
+     "-Call of Flame": -0.0291,
+     "Call of Flame -1": -0.0139,
+     "Call of Flame -2": -0.0254,
+     "-Elemental Focus": -0.0287,
+     "-Eye of the Storm": -0.0183,
+     "Eye of the Storm -1": -0.0078,
+     "Eye of the Storm -2": -0.009,
+     "-Elemental Reach": -0.0009,
+     "-Lava Burst": -0.0157,
+     "-Lightning Overload": -0.0108,
+     "Lightning Overload -1": -0.0073,
+     "Lightning Overload -2": -0.0117,
+     "-Elemental Fury": -0.0306,
+     "Elemental Fury -1": -0.0072,
+     "Elemental Fury -2": -0.0164,
+     "-Thundering Strikes": -0.0341,
+     "Thundering Strikes -1": -0.0066,
+     "Thundering Strikes -2": -0.0126,
+     "-Mental Dexterity": -0.0235,
+     "Mental Dexterity -1": -0.0082,
+     "Mental Dexterity -2": -0.0184,
+     "-Improved Ghost Wolf": 0.0,
+     "Improved Ghost Wolf -1": 0.0,
+     "-Improved Lightning Shield": -0.0063,
+     "-Shamanistic Focus": -0.1152,
+     "-Mindfulness": -0.0322,
+     "Mindfulness -1": -0.0099,
+     "Mindfulness -2": -0.0229
+    },
+    "pairs_all": {
+     "Elemental Devastation + Elemental Warding": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Trial by Fire": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Earthbound": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Elemental Mastery": {
+      "gain": 0.0052,
+      "interaction": -0.0038
+     },
+     "Elemental Devastation + Guardian Totems": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Elemental Weapons": {
+      "gain": -0.0021,
+      "interaction": -0.0061
+     },
+     "Elemental Devastation + Flurry": {
+      "gain": 0.004,
+      "interaction": 0.0013
+     },
+     "Elemental Devastation + Stormstrike": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Spirit Weapons": {
+      "gain": 0.0076,
+      "interaction": 0.0007
+     },
+     "Elemental Devastation + Mental Quickness": {
+      "gain": 0.0726,
+      "interaction": -0.0007
+     },
+     "Elemental Devastation + Improved Stormstrike": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Maelstrom Weapon": {
+      "gain": 0.0067,
+      "interaction": -0.0007
+     },
+     "Elemental Devastation + Rage of the Farseer": {
+      "gain": 0.0034,
+      "interaction": 0.0004
+     },
+     "Elemental Devastation + Natural Grace": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Totemic Focus": {
+      "gain": -0.0058,
+      "interaction": -0.0044
+     },
+     "Elemental Devastation + Healing Focus": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Devastation + Water Shield": {
+      "gain": -0.0076,
+      "interaction": 0.0017
+     },
+     "Elemental Devastation + Nature's Swiftness": {
+      "gain": 0.0021,
+      "interaction": -0.0
+     },
+     "Elemental Warding + Trial by Fire": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Earthbound": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Elemental Mastery": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Guardian Totems": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Elemental Weapons": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Elemental Warding + Flurry": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Spirit Weapons": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Mental Quickness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Improved Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Elemental Warding + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Elemental Warding + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Elemental Warding + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Earthbound": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Elemental Mastery": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Guardian Totems": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Elemental Weapons": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Trial by Fire + Flurry": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Spirit Weapons": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Mental Quickness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Improved Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Trial by Fire + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Trial by Fire + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Trial by Fire + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Elemental Mastery": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Earthbound + Guardian Totems": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Elemental Weapons": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Earthbound + Flurry": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Earthbound + Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Spirit Weapons": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Earthbound + Mental Quickness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Earthbound + Improved Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Earthbound + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Earthbound + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Earthbound + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Earthbound + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Earthbound + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Guardian Totems": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Elemental Weapons": {
+      "gain": 0.0022,
+      "interaction": -0.0066
+     },
+     "Elemental Mastery + Flurry": {
+      "gain": 0.0081,
+      "interaction": 0.0006
+     },
+     "Elemental Mastery + Stormstrike": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Spirit Weapons": {
+      "gain": 0.0003,
+      "interaction": -0.0114
+     },
+     "Elemental Mastery + Mental Quickness": {
+      "gain": 0.0715,
+      "interaction": -0.0066
+     },
+     "Elemental Mastery + Improved Stormstrike": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Maelstrom Weapon": {
+      "gain": -0.0052,
+      "interaction": -0.0174
+     },
+     "Elemental Mastery + Rage of the Farseer": {
+      "gain": 0.007,
+      "interaction": -0.0008
+     },
+     "Elemental Mastery + Natural Grace": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Totemic Focus": {
+      "gain": 0.01,
+      "interaction": 0.0066
+     },
+     "Elemental Mastery + Healing Focus": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Elemental Mastery + Water Shield": {
+      "gain": -0.0126,
+      "interaction": -0.0081
+     },
+     "Elemental Mastery + Nature's Swiftness": {
+      "gain": 0.0069,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Elemental Weapons": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Guardian Totems + Flurry": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Spirit Weapons": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Mental Quickness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Improved Stormstrike": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Guardian Totems + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Guardian Totems + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Guardian Totems + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Elemental Weapons + Flurry": {
+      "gain": 0.0033,
+      "interaction": 0.0008
+     },
+     "Elemental Weapons + Stormstrike": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Elemental Weapons + Spirit Weapons": {
+      "gain": 0.0068,
+      "interaction": 0.0001
+     },
+     "Elemental Weapons + Mental Quickness": {
+      "gain": 0.0747,
+      "interaction": 0.0016
+     },
+     "Elemental Weapons + Improved Stormstrike": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Elemental Weapons + Maelstrom Weapon": {
+      "gain": 0.0066,
+      "interaction": -0.0006
+     },
+     "Elemental Weapons + Rage of the Farseer": {
+      "gain": 0.0037,
+      "interaction": 0.0009
+     },
+     "Elemental Weapons + Natural Grace": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Elemental Weapons + Totemic Focus": {
+      "gain": -0.0018,
+      "interaction": -0.0002
+     },
+     "Elemental Weapons + Healing Focus": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Elemental Weapons + Water Shield": {
+      "gain": -0.0095,
+      "interaction": -0.0
+     },
+     "Elemental Weapons + Nature's Swiftness": {
+      "gain": 0.0019,
+      "interaction": -0.0
+     },
+     "Flurry + Stormstrike": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Flurry + Spirit Weapons": {
+      "gain": 0.0073,
+      "interaction": 0.0019
+     },
+     "Flurry + Mental Quickness": {
+      "gain": 0.0751,
+      "interaction": 0.0033
+     },
+     "Flurry + Improved Stormstrike": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Flurry + Maelstrom Weapon": {
+      "gain": -0.0093,
+      "interaction": -0.0152
+     },
+     "Flurry + Rage of the Farseer": {
+      "gain": 0.0014,
+      "interaction": -0.0001
+     },
+     "Flurry + Natural Grace": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Flurry + Totemic Focus": {
+      "gain": -0.0039,
+      "interaction": -0.001
+     },
+     "Flurry + Healing Focus": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Flurry + Water Shield": {
+      "gain": -0.0112,
+      "interaction": -0.0004
+     },
+     "Flurry + Nature's Swiftness": {
+      "gain": 0.0006,
+      "interaction": 0.0
+     },
+     "Stormstrike + Spirit Weapons": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Stormstrike + Mental Quickness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Stormstrike + Improved Stormstrike": {
+      "gain": -0.0046,
+      "interaction": -0.0046
+     },
+     "Stormstrike + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Stormstrike + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Stormstrike + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Stormstrike + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Stormstrike + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Stormstrike + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Stormstrike + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Spirit Weapons + Mental Quickness": {
+      "gain": 0.0792,
+      "interaction": 0.0032
+     },
+     "Spirit Weapons + Improved Stormstrike": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Spirit Weapons + Maelstrom Weapon": {
+      "gain": -0.0026,
+      "interaction": -0.0127
+     },
+     "Spirit Weapons + Rage of the Farseer": {
+      "gain": 0.0069,
+      "interaction": 0.0012
+     },
+     "Spirit Weapons + Natural Grace": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Spirit Weapons + Totemic Focus": {
+      "gain": 0.0109,
+      "interaction": 0.0096
+     },
+     "Spirit Weapons + Healing Focus": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Spirit Weapons + Water Shield": {
+      "gain": -0.0086,
+      "interaction": -0.002
+     },
+     "Spirit Weapons + Nature's Swiftness": {
+      "gain": 0.0048,
+      "interaction": 0.0
+     },
+     "Mental Quickness + Improved Stormstrike": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Mental Quickness + Maelstrom Weapon": {
+      "gain": 0.0847,
+      "interaction": 0.0082
+     },
+     "Mental Quickness + Rage of the Farseer": {
+      "gain": 0.0744,
+      "interaction": 0.0023
+     },
+     "Mental Quickness + Natural Grace": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Mental Quickness + Totemic Focus": {
+      "gain": 0.0814,
+      "interaction": 0.0137
+     },
+     "Mental Quickness + Healing Focus": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Mental Quickness + Water Shield": {
+      "gain": 0.0579,
+      "interaction": -0.0019
+     },
+     "Mental Quickness + Nature's Swiftness": {
+      "gain": 0.0712,
+      "interaction": 0.0
+     },
+     "Improved Stormstrike + Maelstrom Weapon": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Improved Stormstrike + Rage of the Farseer": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Improved Stormstrike + Natural Grace": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Stormstrike + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Improved Stormstrike + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Stormstrike + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Improved Stormstrike + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Maelstrom Weapon + Rage of the Farseer": {
+      "gain": 0.0051,
+      "interaction": -0.0011
+     },
+     "Maelstrom Weapon + Natural Grace": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Maelstrom Weapon + Totemic Focus": {
+      "gain": 0.0163,
+      "interaction": 0.0145
+     },
+     "Maelstrom Weapon + Healing Focus": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Maelstrom Weapon + Water Shield": {
+      "gain": -0.0017,
+      "interaction": 0.0044
+     },
+     "Maelstrom Weapon + Nature's Swiftness": {
+      "gain": 0.0053,
+      "interaction": -0.0
+     },
+     "Rage of the Farseer + Natural Grace": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Rage of the Farseer + Totemic Focus": {
+      "gain": -0.0055,
+      "interaction": -0.0029
+     },
+     "Rage of the Farseer + Healing Focus": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Rage of the Farseer + Water Shield": {
+      "gain": -0.0107,
+      "interaction": -0.0002
+     },
+     "Rage of the Farseer + Nature's Swiftness": {
+      "gain": 0.0009,
+      "interaction": -0.0
+     },
+     "Natural Grace + Totemic Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Natural Grace + Healing Focus": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Natural Grace + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Natural Grace + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Totemic Focus + Healing Focus": {
+      "gain": -0.0035,
+      "interaction": 0.0
+     },
+     "Totemic Focus + Water Shield": {
+      "gain": -0.0051,
+      "interaction": 0.0098
+     },
+     "Totemic Focus + Nature's Swiftness": {
+      "gain": -0.0036,
+      "interaction": -0.0001
+     },
+     "Healing Focus + Water Shield": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Healing Focus + Nature's Swiftness": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Water Shield + Nature's Swiftness": {
+      "gain": -0.0114,
+      "interaction": 0.0
+     },
+     "Elemental Devastation + Thundering Strikes": {
+      "gain": -0.0407,
+      "interaction": -0.0087,
+      "kind": "swap"
+     },
+     "Elemental Devastation + Mental Dexterity": {
+      "gain": -0.0175,
+      "interaction": 0.0039,
+      "kind": "swap"
+     },
+     "Elemental Devastation + Improved Ghost Wolf": {
+      "gain": 0.0021,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Elemental Devastation + Improved Lightning Shield": {
+      "gain": 0.0013,
+      "interaction": 0.0055,
+      "kind": "swap"
+     },
+     "Elemental Devastation + Shamanistic Focus": {
+      "gain": -0.1097,
+      "interaction": 0.0034,
+      "kind": "swap"
+     },
+     "Elemental Devastation + Mindfulness": {
+      "gain": -0.0294,
+      "interaction": 0.0007,
+      "kind": "swap"
+     },
+     "Elemental Warding + Thundering Strikes": {
+      "gain": -0.0341,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Warding + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Warding + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Warding + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Warding + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Elemental Warding + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Thundering Strikes": {
+      "gain": -0.0341,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Trial by Fire + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Thundering Strikes": {
+      "gain": -0.0341,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Earthbound + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Thundering Strikes": {
+      "gain": -0.0335,
+      "interaction": -0.0063,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Mental Dexterity": {
+      "gain": -0.0178,
+      "interaction": -0.0012,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Improved Ghost Wolf": {
+      "gain": 0.0069,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Improved Lightning Shield": {
+      "gain": -0.0029,
+      "interaction": -0.0035,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Shamanistic Focus": {
+      "gain": -0.1155,
+      "interaction": -0.0072,
+      "kind": "swap"
+     },
+     "Elemental Mastery + Mindfulness": {
+      "gain": -0.0391,
+      "interaction": -0.0138,
+      "kind": "swap"
+     },
+     "Guardian Totems + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Lightning Overload": {
+      "gain": -0.0108,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Guardian Totems + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Convection": {
+      "gain": -0.0299,
+      "interaction": 0.002,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Concussion": {
+      "gain": -0.0109,
+      "interaction": 0.0018,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Reverberation": {
+      "gain": -0.0164,
+      "interaction": 0.0104,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Elemental Alacrity": {
+      "gain": -0.0372,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Call of Flame": {
+      "gain": -0.0302,
+      "interaction": -0.003,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Elemental Focus": {
+      "gain": -0.0257,
+      "interaction": 0.0011,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Eye of the Storm": {
+      "gain": -0.0197,
+      "interaction": -0.0033,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Elemental Reach": {
+      "gain": 0.0032,
+      "interaction": 0.0022,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Lava Burst": {
+      "gain": -0.0092,
+      "interaction": 0.0046,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Lightning Overload": {
+      "gain": -0.0093,
+      "interaction": -0.0004,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Elemental Fury": {
+      "gain": -0.028,
+      "interaction": 0.0007,
+      "kind": "swap"
+     },
+     "Elemental Weapons + Mindfulness": {
+      "gain": -0.03,
+      "interaction": 0.0003,
+      "kind": "swap"
+     },
+     "Flurry + Convection": {
+      "gain": -0.0319,
+      "interaction": 0.0013,
+      "kind": "swap"
+     },
+     "Flurry + Concussion": {
+      "gain": -0.0127,
+      "interaction": 0.0013,
+      "kind": "swap"
+     },
+     "Flurry + Reverberation": {
+      "gain": -0.026,
+      "interaction": 0.0021,
+      "kind": "swap"
+     },
+     "Flurry + Elemental Alacrity": {
+      "gain": -0.0372,
+      "interaction": 0.001,
+      "kind": "swap"
+     },
+     "Flurry + Call of Flame": {
+      "gain": -0.0273,
+      "interaction": 0.0012,
+      "kind": "swap"
+     },
+     "Flurry + Elemental Focus": {
+      "gain": -0.0258,
+      "interaction": 0.0023,
+      "kind": "swap"
+     },
+     "Flurry + Eye of the Storm": {
+      "gain": -0.02,
+      "interaction": -0.0023,
+      "kind": "swap"
+     },
+     "Flurry + Elemental Reach": {
+      "gain": 0.0015,
+      "interaction": 0.0018,
+      "kind": "swap"
+     },
+     "Flurry + Lava Burst": {
+      "gain": -0.0085,
+      "interaction": 0.0066,
+      "kind": "swap"
+     },
+     "Flurry + Lightning Overload": {
+      "gain": -0.0095,
+      "interaction": 0.0007,
+      "kind": "swap"
+     },
+     "Flurry + Elemental Fury": {
+      "gain": -0.0297,
+      "interaction": 0.0003,
+      "kind": "swap"
+     },
+     "Flurry + Mindfulness": {
+      "gain": -0.0307,
+      "interaction": 0.0009,
+      "kind": "swap"
+     },
+     "Stormstrike + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Lightning Overload": {
+      "gain": -0.0108,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Stormstrike + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Convection": {
+      "gain": -0.0209,
+      "interaction": 0.0081,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Concussion": {
+      "gain": -0.0114,
+      "interaction": -0.0016,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Reverberation": {
+      "gain": -0.009,
+      "interaction": 0.0149,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Elemental Alacrity": {
+      "gain": -0.0442,
+      "interaction": -0.0102,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Call of Flame": {
+      "gain": -0.0184,
+      "interaction": 0.0059,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Elemental Focus": {
+      "gain": -0.0304,
+      "interaction": -0.0065,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Eye of the Storm": {
+      "gain": -0.0187,
+      "interaction": -0.0052,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Elemental Reach": {
+      "gain": 0.0045,
+      "interaction": 0.0006,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Lava Burst": {
+      "gain": -0.0094,
+      "interaction": 0.0015,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Lightning Overload": {
+      "gain": -0.0073,
+      "interaction": -0.0013,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Elemental Fury": {
+      "gain": -0.0256,
+      "interaction": 0.0002,
+      "kind": "swap"
+     },
+     "Spirit Weapons + Mindfulness": {
+      "gain": -0.0236,
+      "interaction": 0.0038,
+      "kind": "swap"
+     },
+     "Mental Quickness + Convection": {
+      "gain": 0.0401,
+      "interaction": 0.0027,
+      "kind": "swap"
+     },
+     "Mental Quickness + Concussion": {
+      "gain": 0.0605,
+      "interaction": 0.0039,
+      "kind": "swap"
+     },
+     "Mental Quickness + Reverberation": {
+      "gain": 0.0532,
+      "interaction": 0.0107,
+      "kind": "swap"
+     },
+     "Mental Quickness + Elemental Alacrity": {
+      "gain": 0.036,
+      "interaction": 0.0036,
+      "kind": "swap"
+     },
+     "Mental Quickness + Call of Flame": {
+      "gain": 0.0445,
+      "interaction": 0.0024,
+      "kind": "swap"
+     },
+     "Mental Quickness + Elemental Focus": {
+      "gain": 0.0475,
+      "interaction": 0.005,
+      "kind": "swap"
+     },
+     "Mental Quickness + Eye of the Storm": {
+      "gain": 0.0588,
+      "interaction": 0.0059,
+      "kind": "swap"
+     },
+     "Mental Quickness + Elemental Reach": {
+      "gain": 0.067,
+      "interaction": -0.0033,
+      "kind": "swap"
+     },
+     "Mental Quickness + Lava Burst": {
+      "gain": 0.0634,
+      "interaction": 0.0079,
+      "kind": "swap"
+     },
+     "Mental Quickness + Lightning Overload": {
+      "gain": 0.0524,
+      "interaction": -0.008,
+      "kind": "swap"
+     },
+     "Mental Quickness + Elemental Fury": {
+      "gain": 0.0441,
+      "interaction": 0.0035,
+      "kind": "swap"
+     },
+     "Mental Quickness + Mindfulness": {
+      "gain": 0.0343,
+      "interaction": -0.0047,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Lightning Overload": {
+      "gain": -0.0108,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stormstrike + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Convection": {
+      "gain": -0.0187,
+      "interaction": 0.0098,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Concussion": {
+      "gain": -0.0124,
+      "interaction": -0.0031,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Reverberation": {
+      "gain": -0.0029,
+      "interaction": 0.0205,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Elemental Alacrity": {
+      "gain": -0.0223,
+      "interaction": 0.0112,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Call of Flame": {
+      "gain": -0.0259,
+      "interaction": -0.0021,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Elemental Focus": {
+      "gain": -0.0375,
+      "interaction": -0.0141,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Eye of the Storm": {
+      "gain": 0.0027,
+      "interaction": 0.0157,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Elemental Reach": {
+      "gain": 0.0013,
+      "interaction": -0.0031,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Lava Burst": {
+      "gain": -0.0002,
+      "interaction": 0.0102,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Lightning Overload": {
+      "gain": -0.0104,
+      "interaction": -0.0049,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Elemental Fury": {
+      "gain": -0.0314,
+      "interaction": -0.0061,
+      "kind": "swap"
+     },
+     "Maelstrom Weapon + Mindfulness": {
+      "gain": -0.0212,
+      "interaction": 0.0057,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Convection": {
+      "gain": -0.0344,
+      "interaction": -0.0015,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Concussion": {
+      "gain": -0.0147,
+      "interaction": -0.001,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Reverberation": {
+      "gain": -0.0204,
+      "interaction": 0.0074,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Elemental Alacrity": {
+      "gain": -0.0386,
+      "interaction": -0.0007,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Call of Flame": {
+      "gain": -0.0287,
+      "interaction": -0.0005,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Elemental Focus": {
+      "gain": -0.0286,
+      "interaction": -0.0008,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Eye of the Storm": {
+      "gain": -0.0191,
+      "interaction": -0.0017,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": -0.0009,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Lava Burst": {
+      "gain": -0.0167,
+      "interaction": -0.0019,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Lightning Overload": {
+      "gain": -0.0051,
+      "interaction": 0.0048,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Elemental Fury": {
+      "gain": -0.0304,
+      "interaction": -0.0007,
+      "kind": "swap"
+     },
+     "Rage of the Farseer + Mindfulness": {
+      "gain": -0.032,
+      "interaction": -0.0007,
+      "kind": "swap"
+     },
+     "Natural Grace + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Lightning Overload": {
+      "gain": -0.0108,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Thundering Strikes": {
+      "gain": -0.0341,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Natural Grace + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Totemic Focus + Convection": {
+      "gain": -0.0276,
+      "interaction": 0.0097,
+      "kind": "swap"
+     },
+     "Totemic Focus + Concussion": {
+      "gain": -0.0088,
+      "interaction": 0.0093,
+      "kind": "swap"
+     },
+     "Totemic Focus + Reverberation": {
+      "gain": -0.0144,
+      "interaction": 0.0178,
+      "kind": "swap"
+     },
+     "Totemic Focus + Elemental Alacrity": {
+      "gain": -0.0322,
+      "interaction": 0.0101,
+      "kind": "swap"
+     },
+     "Totemic Focus + Call of Flame": {
+      "gain": -0.0273,
+      "interaction": 0.0053,
+      "kind": "swap"
+     },
+     "Totemic Focus + Elemental Focus": {
+      "gain": -0.0339,
+      "interaction": -0.0017,
+      "kind": "swap"
+     },
+     "Totemic Focus + Eye of the Storm": {
+      "gain": -0.0204,
+      "interaction": 0.0014,
+      "kind": "swap"
+     },
+     "Totemic Focus + Elemental Reach": {
+      "gain": 0.0047,
+      "interaction": 0.0091,
+      "kind": "swap"
+     },
+     "Totemic Focus + Lava Burst": {
+      "gain": -0.0106,
+      "interaction": 0.0086,
+      "kind": "swap"
+     },
+     "Totemic Focus + Lightning Overload": {
+      "gain": -0.0051,
+      "interaction": 0.0092,
+      "kind": "swap"
+     },
+     "Totemic Focus + Elemental Fury": {
+      "gain": -0.0291,
+      "interaction": 0.005,
+      "kind": "swap"
+     },
+     "Totemic Focus + Thundering Strikes": {
+      "gain": -0.0253,
+      "interaction": 0.0123,
+      "kind": "swap"
+     },
+     "Totemic Focus + Mental Dexterity": {
+      "gain": -0.0172,
+      "interaction": 0.0098,
+      "kind": "swap"
+     },
+     "Totemic Focus + Improved Ghost Wolf": {
+      "gain": -0.0035,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Totemic Focus + Improved Lightning Shield": {
+      "gain": -0.0003,
+      "interaction": 0.0095,
+      "kind": "swap"
+     },
+     "Totemic Focus + Shamanistic Focus": {
+      "gain": -0.1076,
+      "interaction": 0.0111,
+      "kind": "swap"
+     },
+     "Healing Focus + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Lightning Overload": {
+      "gain": -0.0108,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Thundering Strikes": {
+      "gain": -0.0341,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Healing Focus + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Water Shield + Convection": {
+      "gain": -0.0499,
+      "interaction": -0.0047,
+      "kind": "swap"
+     },
+     "Water Shield + Concussion": {
+      "gain": -0.0195,
+      "interaction": 0.0065,
+      "kind": "swap"
+     },
+     "Water Shield + Reverberation": {
+      "gain": -0.0295,
+      "interaction": 0.0106,
+      "kind": "swap"
+     },
+     "Water Shield + Elemental Alacrity": {
+      "gain": -0.0705,
+      "interaction": -0.0203,
+      "kind": "swap"
+     },
+     "Water Shield + Call of Flame": {
+      "gain": -0.0462,
+      "interaction": -0.0057,
+      "kind": "swap"
+     },
+     "Water Shield + Elemental Focus": {
+      "gain": -0.046,
+      "interaction": -0.0059,
+      "kind": "swap"
+     },
+     "Water Shield + Eye of the Storm": {
+      "gain": -0.0393,
+      "interaction": -0.0096,
+      "kind": "swap"
+     },
+     "Water Shield + Elemental Reach": {
+      "gain": -0.009,
+      "interaction": 0.0033,
+      "kind": "swap"
+     },
+     "Water Shield + Lava Burst": {
+      "gain": -0.0247,
+      "interaction": 0.0024,
+      "kind": "swap"
+     },
+     "Water Shield + Lightning Overload": {
+      "gain": -0.0274,
+      "interaction": -0.0052,
+      "kind": "swap"
+     },
+     "Water Shield + Elemental Fury": {
+      "gain": -0.0441,
+      "interaction": -0.0021,
+      "kind": "swap"
+     },
+     "Water Shield + Thundering Strikes": {
+      "gain": -0.0524,
+      "interaction": -0.0069,
+      "kind": "swap"
+     },
+     "Water Shield + Mental Dexterity": {
+      "gain": -0.0361,
+      "interaction": -0.0012,
+      "kind": "swap"
+     },
+     "Water Shield + Improved Ghost Wolf": {
+      "gain": -0.0114,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Water Shield + Improved Lightning Shield": {
+      "gain": -0.0132,
+      "interaction": 0.0045,
+      "kind": "swap"
+     },
+     "Water Shield + Shamanistic Focus": {
+      "gain": -0.1111,
+      "interaction": 0.0155,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Convection": {
+      "gain": -0.0338,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Concussion": {
+      "gain": -0.0146,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Reverberation": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Elemental Alacrity": {
+      "gain": -0.0388,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Call of Flame": {
+      "gain": -0.0291,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Elemental Focus": {
+      "gain": -0.0287,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Eye of the Storm": {
+      "gain": -0.0183,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Elemental Reach": {
+      "gain": -0.0009,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Lava Burst": {
+      "gain": -0.0157,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Lightning Overload": {
+      "gain": -0.0107,
+      "interaction": 0.0001,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Elemental Fury": {
+      "gain": -0.0306,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Thundering Strikes": {
+      "gain": -0.0342,
+      "interaction": -0.0001,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Mental Dexterity": {
+      "gain": -0.0235,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Improved Ghost Wolf": {
+      "gain": 0.0,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Nature's Swiftness + Shamanistic Focus": {
+      "gain": -0.1153,
+      "interaction": -0.0001,
+      "kind": "swap"
+     }
+    },
+    "removed_pairs_all": {
+     "Convection + Concussion": {
+      "gain": -0.0415,
+      "interaction": 0.0069
+     },
+     "Convection + Reverberation": {
+      "gain": -0.0548,
+      "interaction": 0.0077
+     },
+     "Convection + Elemental Alacrity": {
+      "gain": -0.0745,
+      "interaction": -0.0019
+     },
+     "Convection + Call of Flame": {
+      "gain": -0.0831,
+      "interaction": -0.0202
+     },
+     "Convection + Elemental Focus": {
+      "gain": -0.0769,
+      "interaction": -0.0144
+     },
+     "Convection + Eye of the Storm": {
+      "gain": -0.0562,
+      "interaction": -0.0041
+     },
+     "Convection + Elemental Reach": {
+      "gain": -0.0288,
+      "interaction": 0.0059
+     },
+     "Convection + Lava Burst": {
+      "gain": -0.0584,
+      "interaction": -0.0089
+     },
+     "Convection + Lightning Overload": {
+      "gain": -0.0568,
+      "interaction": -0.0122
+     },
+     "Convection + Elemental Fury": {
+      "gain": -0.0662,
+      "interaction": -0.0018
+     },
+     "Convection + Thundering Strikes": {
+      "gain": -0.0671,
+      "interaction": 0.0008
+     },
+     "Convection + Mental Dexterity": {
+      "gain": -0.0522,
+      "interaction": 0.0051
+     },
+     "Convection + Improved Ghost Wolf": {
+      "gain": -0.0338,
+      "interaction": 0.0
+     },
+     "Convection + Improved Lightning Shield": {
+      "gain": -0.0395,
+      "interaction": 0.0006
+     },
+     "Convection + Shamanistic Focus": {
+      "gain": -0.1436,
+      "interaction": 0.0054
+     },
+     "Convection + Mindfulness": {
+      "gain": -0.0601,
+      "interaction": 0.0059
+     },
+     "Concussion + Reverberation": {
+      "gain": -0.0302,
+      "interaction": 0.0131
+     },
+     "Concussion + Elemental Alacrity": {
+      "gain": -0.047,
+      "interaction": 0.0064
+     },
+     "Concussion + Call of Flame": {
+      "gain": -0.0457,
+      "interaction": -0.002
+     },
+     "Concussion + Elemental Focus": {
+      "gain": -0.0475,
+      "interaction": -0.0042
+     },
+     "Concussion + Eye of the Storm": {
+      "gain": -0.0258,
+      "interaction": 0.0071
+     },
+     "Concussion + Elemental Reach": {
+      "gain": -0.0129,
+      "interaction": 0.0026
+     },
+     "Concussion + Lava Burst": {
+      "gain": -0.0265,
+      "interaction": 0.0038
+     },
+     "Concussion + Lightning Overload": {
+      "gain": -0.0155,
+      "interaction": 0.0099
+     },
+     "Concussion + Elemental Fury": {
+      "gain": -0.0416,
+      "interaction": 0.0036
+     },
+     "Concussion + Thundering Strikes": {
+      "gain": -0.0462,
+      "interaction": 0.0025
+     },
+     "Concussion + Mental Dexterity": {
+      "gain": -0.0315,
+      "interaction": 0.0066
+     },
+     "Concussion + Improved Ghost Wolf": {
+      "gain": -0.0146,
+      "interaction": -0.0
+     },
+     "Concussion + Improved Lightning Shield": {
+      "gain": -0.0203,
+      "interaction": 0.0006
+     },
+     "Concussion + Shamanistic Focus": {
+      "gain": -0.1174,
+      "interaction": 0.0124
+     },
+     "Concussion + Mindfulness": {
+      "gain": -0.0418,
+      "interaction": 0.005
+     },
+     "Reverberation + Elemental Alacrity": {
+      "gain": -0.04,
+      "interaction": 0.0275
+     },
+     "Reverberation + Call of Flame": {
+      "gain": -0.0552,
+      "interaction": 0.0026
+     },
+     "Reverberation + Elemental Focus": {
+      "gain": -0.0504,
+      "interaction": 0.007
+     },
+     "Reverberation + Eye of the Storm": {
+      "gain": -0.0247,
+      "interaction": 0.0223
+     },
+     "Reverberation + Elemental Reach": {
+      "gain": -0.0103,
+      "interaction": 0.0193
+     },
+     "Reverberation + Lava Burst": {
+      "gain": -0.0269,
+      "interaction": 0.0175
+     },
+     "Reverberation + Lightning Overload": {
+      "gain": -0.0358,
+      "interaction": 0.0037
+     },
+     "Reverberation + Elemental Fury": {
+      "gain": -0.054,
+      "interaction": 0.0053
+     },
+     "Reverberation + Thundering Strikes": {
+      "gain": -0.0545,
+      "interaction": 0.0083
+     },
+     "Reverberation + Mental Dexterity": {
+      "gain": -0.041,
+      "interaction": 0.0112
+     },
+     "Reverberation + Improved Ghost Wolf": {
+      "gain": -0.0287,
+      "interaction": 0.0
+     },
+     "Reverberation + Improved Lightning Shield": {
+      "gain": -0.0314,
+      "interaction": 0.0036
+     },
+     "Reverberation + Shamanistic Focus": {
+      "gain": -0.1178,
+      "interaction": 0.0261
+     },
+     "Reverberation + Mindfulness": {
+      "gain": -0.054,
+      "interaction": 0.0069
+     },
+     "Elemental Alacrity + Call of Flame": {
+      "gain": -0.0748,
+      "interaction": -0.0069
+     },
+     "Elemental Alacrity + Elemental Focus": {
+      "gain": -0.0636,
+      "interaction": 0.0039
+     },
+     "Elemental Alacrity + Eye of the Storm": {
+      "gain": -0.0644,
+      "interaction": -0.0073
+     },
+     "Elemental Alacrity + Elemental Reach": {
+      "gain": -0.0431,
+      "interaction": -0.0034
+     },
+     "Elemental Alacrity + Lava Burst": {
+      "gain": -0.0642,
+      "interaction": -0.0097
+     },
+     "Elemental Alacrity + Lightning Overload": {
+      "gain": -0.0532,
+      "interaction": -0.0036
+     },
+     "Elemental Alacrity + Elemental Fury": {
+      "gain": -0.0644,
+      "interaction": 0.005
+     },
+     "Elemental Alacrity + Thundering Strikes": {
+      "gain": -0.0776,
+      "interaction": -0.0047
+     },
+     "Elemental Alacrity + Mental Dexterity": {
+      "gain": -0.0608,
+      "interaction": 0.0015
+     },
+     "Elemental Alacrity + Improved Ghost Wolf": {
+      "gain": -0.0388,
+      "interaction": -0.0
+     },
+     "Elemental Alacrity + Improved Lightning Shield": {
+      "gain": -0.0482,
+      "interaction": -0.0031
+     },
+     "Elemental Alacrity + Shamanistic Focus": {
+      "gain": -0.1392,
+      "interaction": 0.0148
+     },
+     "Elemental Alacrity + Mindfulness": {
+      "gain": -0.0812,
+      "interaction": -0.0102
+     },
+     "Call of Flame + Elemental Focus": {
+      "gain": -0.0701,
+      "interaction": -0.0123
+     },
+     "Call of Flame + Eye of the Storm": {
+      "gain": -0.0474,
+      "interaction": -0.0
+     },
+     "Call of Flame + Elemental Reach": {
+      "gain": -0.0306,
+      "interaction": -0.0006
+     },
+     "Call of Flame + Lava Burst": {
+      "gain": -0.0345,
+      "interaction": 0.0103
+     },
+     "Call of Flame + Lightning Overload": {
+      "gain": -0.0473,
+      "interaction": -0.0074
+     },
+     "Call of Flame + Elemental Fury": {
+      "gain": -0.0601,
+      "interaction": -0.0004
+     },
+     "Call of Flame + Thundering Strikes": {
+      "gain": -0.0742,
+      "interaction": -0.011
+     },
+     "Call of Flame + Mental Dexterity": {
+      "gain": -0.0592,
+      "interaction": -0.0066
+     },
+     "Call of Flame + Improved Ghost Wolf": {
+      "gain": -0.0291,
+      "interaction": -0.0
+     },
+     "Call of Flame + Improved Lightning Shield": {
+      "gain": -0.0433,
+      "interaction": -0.0079
+     },
+     "Call of Flame + Shamanistic Focus": {
+      "gain": -0.1427,
+      "interaction": 0.0016
+     },
+     "Call of Flame + Mindfulness": {
+      "gain": -0.0856,
+      "interaction": -0.0243
+     },
+     "Elemental Focus + Eye of the Storm": {
+      "gain": -0.0576,
+      "interaction": -0.0106
+     },
+     "Elemental Focus + Elemental Reach": {
+      "gain": -0.0391,
+      "interaction": -0.0095
+     },
+     "Elemental Focus + Lava Burst": {
+      "gain": -0.047,
+      "interaction": -0.0026
+     },
+     "Elemental Focus + Lightning Overload": {
+      "gain": -0.0484,
+      "interaction": -0.0089
+     },
+     "Elemental Focus + Elemental Fury": {
+      "gain": -0.0603,
+      "interaction": -0.001
+     },
+     "Elemental Focus + Thundering Strikes": {
+      "gain": -0.0687,
+      "interaction": -0.0059
+     },
+     "Elemental Focus + Mental Dexterity": {
+      "gain": -0.0583,
+      "interaction": -0.0061
+     },
+     "Elemental Focus + Improved Ghost Wolf": {
+      "gain": -0.0287,
+      "interaction": 0.0
+     },
+     "Elemental Focus + Improved Lightning Shield": {
+      "gain": -0.0345,
+      "interaction": 0.0005
+     },
+     "Elemental Focus + Shamanistic Focus": {
+      "gain": -0.1337,
+      "interaction": 0.0102
+     },
+     "Elemental Focus + Mindfulness": {
+      "gain": -0.0706,
+      "interaction": -0.0097
+     },
+     "Eye of the Storm + Elemental Reach": {
+      "gain": -0.0249,
+      "interaction": -0.0057
+     },
+     "Eye of the Storm + Lava Burst": {
+      "gain": -0.0393,
+      "interaction": -0.0053
+     },
+     "Eye of the Storm + Lightning Overload": {
+      "gain": -0.0384,
+      "interaction": -0.0093
+     },
+     "Eye of the Storm + Elemental Fury": {
+      "gain": -0.046,
+      "interaction": 0.0029
+     },
+     "Eye of the Storm + Thundering Strikes": {
+      "gain": -0.0544,
+      "interaction": -0.002
+     },
+     "Eye of the Storm + Mental Dexterity": {
+      "gain": -0.0445,
+      "interaction": -0.0027
+     },
+     "Eye of the Storm + Improved Ghost Wolf": {
+      "gain": -0.0183,
+      "interaction": 0.0
+     },
+     "Eye of the Storm + Improved Lightning Shield": {
+      "gain": -0.0247,
+      "interaction": -0.0001
+     },
+     "Eye of the Storm + Shamanistic Focus": {
+      "gain": -0.1156,
+      "interaction": 0.0179
+     },
+     "Eye of the Storm + Mindfulness": {
+      "gain": -0.0608,
+      "interaction": -0.0103
+     },
+     "Elemental Reach + Lava Burst": {
+      "gain": -0.0143,
+      "interaction": 0.0023
+     },
+     "Elemental Reach + Lightning Overload": {
+      "gain": -0.017,
+      "interaction": -0.0053
+     },
+     "Elemental Reach + Elemental Fury": {
+      "gain": -0.0291,
+      "interaction": 0.0024
+     },
+     "Elemental Reach + Thundering Strikes": {
+      "gain": -0.0361,
+      "interaction": -0.0011
+     },
+     "Elemental Reach + Mental Dexterity": {
+      "gain": -0.0159,
+      "interaction": 0.0085
+     },
+     "Elemental Reach + Improved Ghost Wolf": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Elemental Reach + Improved Lightning Shield": {
+      "gain": -0.0059,
+      "interaction": 0.0013
+     },
+     "Elemental Reach + Shamanistic Focus": {
+      "gain": -0.1086,
+      "interaction": 0.0075
+     },
+     "Elemental Reach + Mindfulness": {
+      "gain": -0.0228,
+      "interaction": 0.0103
+     },
+     "Lava Burst + Lightning Overload": {
+      "gain": -0.0314,
+      "interaction": -0.0049
+     },
+     "Lava Burst + Elemental Fury": {
+      "gain": -0.0589,
+      "interaction": -0.0126
+     },
+     "Lava Burst + Thundering Strikes": {
+      "gain": -0.0556,
+      "interaction": -0.0058
+     },
+     "Lava Burst + Mental Dexterity": {
+      "gain": -0.0345,
+      "interaction": 0.0047
+     },
+     "Lava Burst + Improved Ghost Wolf": {
+      "gain": -0.0157,
+      "interaction": 0.0
+     },
+     "Lava Burst + Improved Lightning Shield": {
+      "gain": -0.0219,
+      "interaction": 0.0001
+     },
+     "Lava Burst + Shamanistic Focus": {
+      "gain": -0.1397,
+      "interaction": -0.0088
+     },
+     "Lava Burst + Mindfulness": {
+      "gain": -0.0565,
+      "interaction": -0.0086
+     },
+     "Lightning Overload + Elemental Fury": {
+      "gain": -0.0408,
+      "interaction": 0.0006
+     },
+     "Lightning Overload + Thundering Strikes": {
+      "gain": -0.0608,
+      "interaction": -0.0159
+     },
+     "Lightning Overload + Mental Dexterity": {
+      "gain": -0.038,
+      "interaction": -0.0037
+     },
+     "Lightning Overload + Improved Ghost Wolf": {
+      "gain": -0.0108,
+      "interaction": -0.0
+     },
+     "Lightning Overload + Improved Lightning Shield": {
+      "gain": -0.0135,
+      "interaction": 0.0036
+     },
+     "Lightning Overload + Shamanistic Focus": {
+      "gain": -0.1297,
+      "interaction": -0.0037
+     },
+     "Lightning Overload + Mindfulness": {
+      "gain": -0.0547,
+      "interaction": -0.0117
+     },
+     "Elemental Fury + Thundering Strikes": {
+      "gain": -0.0509,
+      "interaction": 0.0138
+     },
+     "Elemental Fury + Mental Dexterity": {
+      "gain": -0.053,
+      "interaction": 0.0011
+     },
+     "Elemental Fury + Improved Ghost Wolf": {
+      "gain": -0.0306,
+      "interaction": -0.0
+     },
+     "Elemental Fury + Improved Lightning Shield": {
+      "gain": -0.0369,
+      "interaction": -0.0
+     },
+     "Elemental Fury + Shamanistic Focus": {
+      "gain": -0.1363,
+      "interaction": 0.0095
+     },
+     "Elemental Fury + Mindfulness": {
+      "gain": -0.0699,
+      "interaction": -0.0071
+     },
+     "Thundering Strikes + Mental Dexterity": {
+      "gain": -0.0553,
+      "interaction": 0.0023
+     },
+     "Thundering Strikes + Improved Ghost Wolf": {
+      "gain": -0.0341,
+      "interaction": 0.0
+     },
+     "Thundering Strikes + Improved Lightning Shield": {
+      "gain": -0.0385,
+      "interaction": 0.0019
+     },
+     "Thundering Strikes + Shamanistic Focus": {
+      "gain": -0.1422,
+      "interaction": 0.0071
+     },
+     "Thundering Strikes + Mindfulness": {
+      "gain": -0.0725,
+      "interaction": -0.0062
+     },
+     "Mental Dexterity + Improved Ghost Wolf": {
+      "gain": -0.0235,
+      "interaction": 0.0
+     },
+     "Mental Dexterity + Improved Lightning Shield": {
+      "gain": -0.0283,
+      "interaction": 0.0015
+     },
+     "Mental Dexterity + Shamanistic Focus": {
+      "gain": -0.1277,
+      "interaction": 0.011
+     },
+     "Mental Dexterity + Mindfulness": {
+      "gain": -0.0639,
+      "interaction": -0.0082
+     },
+     "Improved Ghost Wolf + Improved Lightning Shield": {
+      "gain": -0.0063,
+      "interaction": 0.0
+     },
+     "Improved Ghost Wolf + Shamanistic Focus": {
+      "gain": -0.1152,
+      "interaction": -0.0
+     },
+     "Improved Ghost Wolf + Mindfulness": {
+      "gain": -0.0322,
+      "interaction": 0.0
+     },
+     "Improved Lightning Shield + Shamanistic Focus": {
+      "gain": -0.1149,
+      "interaction": 0.0066
+     },
+     "Improved Lightning Shield + Mindfulness": {
+      "gain": -0.0423,
+      "interaction": -0.0038
+     },
+     "Shamanistic Focus + Mindfulness": {
+      "gain": -0.1426,
+      "interaction": 0.0048
+     }
+    },
+    "builds_all": {
+     "Elemental Devastation": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Warding": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Mastery": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Guardian Totems": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Weapons": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Flurry": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Stormstrike": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Spirit Weapons": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Mental Quickness": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Improved Stormstrike": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Maelstrom Weapon": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Rage of the Farseer": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Natural Grace": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Totemic Focus": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Healing Focus": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Water Shield": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Nature's Swiftness": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "-Convection": {
+      "added": {},
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Convection -1": {
+      "added": {},
+      "removed": {
+       "Convection": 1
+      },
+      "gain": -0.00386
+     },
+     "Convection -2": {
+      "added": {},
+      "removed": {
+       "Convection": 2
+      },
+      "gain": -0.0142
+     },
+     "-Concussion": {
+      "added": {},
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Concussion -1": {
+      "added": {},
+      "removed": {
+       "Concussion": 1
+      },
+      "gain": 0.00022
+     },
+     "Concussion -2": {
+      "added": {},
+      "removed": {
+       "Concussion": 2
+      },
+      "gain": -0.00876
+     },
+     "-Reverberation": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Reverberation -1": {
+      "added": {},
+      "removed": {
+       "Reverberation": 1
+      },
+      "gain": -0.02813
+     },
+     "Reverberation -2": {
+      "added": {},
+      "removed": {
+       "Reverberation": 2
+      },
+      "gain": -0.02865
+     },
+     "-Elemental Alacrity": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Elemental Alacrity -1": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 1
+      },
+      "gain": -0.02568
+     },
+     "Elemental Alacrity -2": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 2
+      },
+      "gain": -0.03445
+     },
+     "-Call of Flame": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Call of Flame -1": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 1
+      },
+      "gain": -0.01391
+     },
+     "Call of Flame -2": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 2
+      },
+      "gain": -0.02543
+     },
+     "-Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "-Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Eye of the Storm -1": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 1
+      },
+      "gain": -0.00782
+     },
+     "Eye of the Storm -2": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 2
+      },
+      "gain": -0.00901
+     },
+     "-Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "-Lava Burst": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "-Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Lightning Overload -1": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 1
+      },
+      "gain": -0.00735
+     },
+     "Lightning Overload -2": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 2
+      },
+      "gain": -0.01171
+     },
+     "-Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Elemental Fury -1": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 1
+      },
+      "gain": -0.00719
+     },
+     "Elemental Fury -2": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 2
+      },
+      "gain": -0.01636
+     },
+     "-Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Thundering Strikes -1": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 1
+      },
+      "gain": -0.0066
+     },
+     "Thundering Strikes -2": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 2
+      },
+      "gain": -0.01265
+     },
+     "-Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Mental Dexterity -1": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 1
+      },
+      "gain": -0.00817
+     },
+     "Mental Dexterity -2": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 2
+      },
+      "gain": -0.01842
+     },
+     "-Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Improved Ghost Wolf -1": {
+      "added": {},
+      "removed": {
+       "Improved Ghost Wolf": 1
+      },
+      "gain": 0.0
+     },
+     "-Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "-Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "-Mindfulness": {
+      "added": {},
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Mindfulness -1": {
+      "added": {},
+      "removed": {
+       "Mindfulness": 1
+      },
+      "gain": -0.00994
+     },
+     "Mindfulness -2": {
+      "added": {},
+      "removed": {
+       "Mindfulness": 2
+      },
+      "gain": -0.02286
+     },
+     "Elemental Devastation + Elemental Warding": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Elemental Warding": 3
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Trial by Fire": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Trial by Fire": 2
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Earthbound": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Earthbound": 1
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Elemental Mastery": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Elemental Mastery": 1
+      },
+      "removed": {},
+      "gain": 0.00515
+     },
+     "Elemental Devastation + Guardian Totems": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Elemental Weapons": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": -0.00206
+     },
+     "Elemental Devastation + Flurry": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00397
+     },
+     "Elemental Devastation + Stormstrike": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Spirit Weapons": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00763
+     },
+     "Elemental Devastation + Mental Quickness": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07259
+     },
+     "Elemental Devastation + Improved Stormstrike": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Maelstrom Weapon": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.0067
+     },
+     "Elemental Devastation + Rage of the Farseer": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00337
+     },
+     "Elemental Devastation + Natural Grace": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Totemic Focus": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00583
+     },
+     "Elemental Devastation + Healing Focus": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Devastation + Water Shield": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.00761
+     },
+     "Elemental Devastation + Nature's Swiftness": {
+      "added": {
+       "Elemental Devastation": 3,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00206
+     },
+     "Elemental Warding + Trial by Fire": {
+      "added": {
+       "Elemental Warding": 3,
+       "Trial by Fire": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Earthbound": {
+      "added": {
+       "Elemental Warding": 3,
+       "Earthbound": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Elemental Mastery": {
+      "added": {
+       "Elemental Warding": 3,
+       "Elemental Mastery": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Warding + Guardian Totems": {
+      "added": {
+       "Elemental Warding": 3,
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Elemental Weapons": {
+      "added": {
+       "Elemental Warding": 3,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Elemental Warding + Flurry": {
+      "added": {
+       "Elemental Warding": 3,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Elemental Warding + Stormstrike": {
+      "added": {
+       "Elemental Warding": 3,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Spirit Weapons": {
+      "added": {
+       "Elemental Warding": 3,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Elemental Warding + Mental Quickness": {
+      "added": {
+       "Elemental Warding": 3,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Elemental Warding + Improved Stormstrike": {
+      "added": {
+       "Elemental Warding": 3,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Maelstrom Weapon": {
+      "added": {
+       "Elemental Warding": 3,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Elemental Warding + Rage of the Farseer": {
+      "added": {
+       "Elemental Warding": 3,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Elemental Warding + Natural Grace": {
+      "added": {
+       "Elemental Warding": 3,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Totemic Focus": {
+      "added": {
+       "Elemental Warding": 3,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Elemental Warding + Healing Focus": {
+      "added": {
+       "Elemental Warding": 3,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Warding + Water Shield": {
+      "added": {
+       "Elemental Warding": 3,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Elemental Warding + Nature's Swiftness": {
+      "added": {
+       "Elemental Warding": 3,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Earthbound": {
+      "added": {
+       "Trial by Fire": 2,
+       "Earthbound": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Elemental Mastery": {
+      "added": {
+       "Trial by Fire": 2,
+       "Elemental Mastery": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Trial by Fire + Guardian Totems": {
+      "added": {
+       "Trial by Fire": 2,
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Elemental Weapons": {
+      "added": {
+       "Trial by Fire": 2,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Trial by Fire + Flurry": {
+      "added": {
+       "Trial by Fire": 2,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Trial by Fire + Stormstrike": {
+      "added": {
+       "Trial by Fire": 2,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Spirit Weapons": {
+      "added": {
+       "Trial by Fire": 2,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Trial by Fire + Mental Quickness": {
+      "added": {
+       "Trial by Fire": 2,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Trial by Fire + Improved Stormstrike": {
+      "added": {
+       "Trial by Fire": 2,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Maelstrom Weapon": {
+      "added": {
+       "Trial by Fire": 2,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Trial by Fire + Rage of the Farseer": {
+      "added": {
+       "Trial by Fire": 2,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Trial by Fire + Natural Grace": {
+      "added": {
+       "Trial by Fire": 2,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Totemic Focus": {
+      "added": {
+       "Trial by Fire": 2,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Trial by Fire + Healing Focus": {
+      "added": {
+       "Trial by Fire": 2,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Trial by Fire + Water Shield": {
+      "added": {
+       "Trial by Fire": 2,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Trial by Fire + Nature's Swiftness": {
+      "added": {
+       "Trial by Fire": 2,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Elemental Mastery": {
+      "added": {
+       "Earthbound": 1,
+       "Elemental Mastery": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Earthbound + Guardian Totems": {
+      "added": {
+       "Earthbound": 1,
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Elemental Weapons": {
+      "added": {
+       "Earthbound": 1,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Earthbound + Flurry": {
+      "added": {
+       "Earthbound": 1,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Earthbound + Stormstrike": {
+      "added": {
+       "Earthbound": 1,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Spirit Weapons": {
+      "added": {
+       "Earthbound": 1,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Earthbound + Mental Quickness": {
+      "added": {
+       "Earthbound": 1,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Earthbound + Improved Stormstrike": {
+      "added": {
+       "Earthbound": 1,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Maelstrom Weapon": {
+      "added": {
+       "Earthbound": 1,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Earthbound + Rage of the Farseer": {
+      "added": {
+       "Earthbound": 1,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Earthbound + Natural Grace": {
+      "added": {
+       "Earthbound": 1,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Totemic Focus": {
+      "added": {
+       "Earthbound": 1,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Earthbound + Healing Focus": {
+      "added": {
+       "Earthbound": 1,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Earthbound + Water Shield": {
+      "added": {
+       "Earthbound": 1,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Earthbound + Nature's Swiftness": {
+      "added": {
+       "Earthbound": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Mastery + Guardian Totems": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Guardian Totems": 2
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Mastery + Elemental Weapons": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00224
+     },
+     "Elemental Mastery + Flurry": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00811
+     },
+     "Elemental Mastery + Stormstrike": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Mastery + Spirit Weapons": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.0003
+     },
+     "Elemental Mastery + Mental Quickness": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.0715
+     },
+     "Elemental Mastery + Improved Stormstrike": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Mastery + Maelstrom Weapon": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": -0.00525
+     },
+     "Elemental Mastery + Rage of the Farseer": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00697
+     },
+     "Elemental Mastery + Natural Grace": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Mastery + Totemic Focus": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": 0.01003
+     },
+     "Elemental Mastery + Healing Focus": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Elemental Mastery + Water Shield": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01263
+     },
+     "Elemental Mastery + Nature's Swiftness": {
+      "added": {
+       "Elemental Mastery": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00692
+     },
+     "Guardian Totems + Elemental Weapons": {
+      "added": {
+       "Guardian Totems": 2,
+       "Elemental Weapons": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Guardian Totems + Flurry": {
+      "added": {
+       "Guardian Totems": 2,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Guardian Totems + Stormstrike": {
+      "added": {
+       "Guardian Totems": 2,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Guardian Totems + Spirit Weapons": {
+      "added": {
+       "Guardian Totems": 2,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Guardian Totems + Mental Quickness": {
+      "added": {
+       "Guardian Totems": 2,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Guardian Totems + Improved Stormstrike": {
+      "added": {
+       "Guardian Totems": 2,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Guardian Totems + Maelstrom Weapon": {
+      "added": {
+       "Guardian Totems": 2,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Guardian Totems + Rage of the Farseer": {
+      "added": {
+       "Guardian Totems": 2,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Guardian Totems + Natural Grace": {
+      "added": {
+       "Guardian Totems": 2,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Guardian Totems + Totemic Focus": {
+      "added": {
+       "Guardian Totems": 2,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Guardian Totems + Healing Focus": {
+      "added": {
+       "Guardian Totems": 2,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Guardian Totems + Water Shield": {
+      "added": {
+       "Guardian Totems": 2,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Guardian Totems + Nature's Swiftness": {
+      "added": {
+       "Guardian Totems": 2,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Elemental Weapons + Flurry": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Flurry": 5
+      },
+      "removed": {},
+      "gain": 0.00333
+     },
+     "Elemental Weapons + Stormstrike": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Elemental Weapons + Spirit Weapons": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00684
+     },
+     "Elemental Weapons + Mental Quickness": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07467
+     },
+     "Elemental Weapons + Improved Stormstrike": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Elemental Weapons + Maelstrom Weapon": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00657
+     },
+     "Elemental Weapons + Rage of the Farseer": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00373
+     },
+     "Elemental Weapons + Natural Grace": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Elemental Weapons + Totemic Focus": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00184
+     },
+     "Elemental Weapons + Healing Focus": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Elemental Weapons + Water Shield": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.00952
+     },
+     "Elemental Weapons + Nature's Swiftness": {
+      "added": {
+       "Elemental Weapons": 3,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00186
+     },
+     "Flurry + Stormstrike": {
+      "added": {
+       "Flurry": 5,
+       "Stormstrike": 1
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Flurry + Spirit Weapons": {
+      "added": {
+       "Flurry": 5,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00731
+     },
+     "Flurry + Mental Quickness": {
+      "added": {
+       "Flurry": 5,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07515
+     },
+     "Flurry + Improved Stormstrike": {
+      "added": {
+       "Flurry": 5,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Flurry + Maelstrom Weapon": {
+      "added": {
+       "Flurry": 5,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": -0.00934
+     },
+     "Flurry + Rage of the Farseer": {
+      "added": {
+       "Flurry": 5,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00142
+     },
+     "Flurry + Natural Grace": {
+      "added": {
+       "Flurry": 5,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Flurry + Totemic Focus": {
+      "added": {
+       "Flurry": 5,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00387
+     },
+     "Flurry + Healing Focus": {
+      "added": {
+       "Flurry": 5,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Flurry + Water Shield": {
+      "added": {
+       "Flurry": 5,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01123
+     },
+     "Flurry + Nature's Swiftness": {
+      "added": {
+       "Flurry": 5,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00063
+     },
+     "Stormstrike + Spirit Weapons": {
+      "added": {
+       "Stormstrike": 1,
+       "Spirit Weapons": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Stormstrike + Mental Quickness": {
+      "added": {
+       "Stormstrike": 1,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Stormstrike + Improved Stormstrike": {
+      "added": {
+       "Stormstrike": 1,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": -0.0046
+     },
+     "Stormstrike + Maelstrom Weapon": {
+      "added": {
+       "Stormstrike": 1,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Stormstrike + Rage of the Farseer": {
+      "added": {
+       "Stormstrike": 1,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Stormstrike + Natural Grace": {
+      "added": {
+       "Stormstrike": 1,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Stormstrike + Totemic Focus": {
+      "added": {
+       "Stormstrike": 1,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Stormstrike + Healing Focus": {
+      "added": {
+       "Stormstrike": 1,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Stormstrike + Water Shield": {
+      "added": {
+       "Stormstrike": 1,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Stormstrike + Nature's Swiftness": {
+      "added": {
+       "Stormstrike": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Spirit Weapons + Mental Quickness": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Mental Quickness": 2
+      },
+      "removed": {},
+      "gain": 0.07918
+     },
+     "Spirit Weapons + Improved Stormstrike": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Spirit Weapons + Maelstrom Weapon": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": -0.00258
+     },
+     "Spirit Weapons + Rage of the Farseer": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00687
+     },
+     "Spirit Weapons + Natural Grace": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Spirit Weapons + Totemic Focus": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": 0.01094
+     },
+     "Spirit Weapons + Healing Focus": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Spirit Weapons + Water Shield": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.00857
+     },
+     "Spirit Weapons + Nature's Swiftness": {
+      "added": {
+       "Spirit Weapons": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00484
+     },
+     "Mental Quickness + Improved Stormstrike": {
+      "added": {
+       "Mental Quickness": 2,
+       "Improved Stormstrike": 2
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Mental Quickness + Maelstrom Weapon": {
+      "added": {
+       "Mental Quickness": 2,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.08474
+     },
+     "Mental Quickness + Rage of the Farseer": {
+      "added": {
+       "Mental Quickness": 2,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.07436
+     },
+     "Mental Quickness + Natural Grace": {
+      "added": {
+       "Mental Quickness": 2,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Mental Quickness + Totemic Focus": {
+      "added": {
+       "Mental Quickness": 2,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": 0.08144
+     },
+     "Mental Quickness + Healing Focus": {
+      "added": {
+       "Mental Quickness": 2,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Mental Quickness + Water Shield": {
+      "added": {
+       "Mental Quickness": 2,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": 0.05795
+     },
+     "Mental Quickness + Nature's Swiftness": {
+      "added": {
+       "Mental Quickness": 2,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.07125
+     },
+     "Improved Stormstrike + Maelstrom Weapon": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Maelstrom Weapon": 5
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Improved Stormstrike + Rage of the Farseer": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Improved Stormstrike + Natural Grace": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Stormstrike + Totemic Focus": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Improved Stormstrike + Healing Focus": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Stormstrike + Water Shield": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Improved Stormstrike + Nature's Swiftness": {
+      "added": {
+       "Improved Stormstrike": 2,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Maelstrom Weapon + Rage of the Farseer": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Rage of the Farseer": 1
+      },
+      "removed": {},
+      "gain": 0.0051
+     },
+     "Maelstrom Weapon + Natural Grace": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Maelstrom Weapon + Totemic Focus": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": 0.01629
+     },
+     "Maelstrom Weapon + Healing Focus": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Maelstrom Weapon + Water Shield": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.00165
+     },
+     "Maelstrom Weapon + Nature's Swiftness": {
+      "added": {
+       "Maelstrom Weapon": 5,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00529
+     },
+     "Rage of the Farseer + Natural Grace": {
+      "added": {
+       "Rage of the Farseer": 1,
+       "Natural Grace": 3
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Rage of the Farseer + Totemic Focus": {
+      "added": {
+       "Rage of the Farseer": 1,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00547
+     },
+     "Rage of the Farseer + Healing Focus": {
+      "added": {
+       "Rage of the Farseer": 1,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Rage of the Farseer + Water Shield": {
+      "added": {
+       "Rage of the Farseer": 1,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01075
+     },
+     "Rage of the Farseer + Nature's Swiftness": {
+      "added": {
+       "Rage of the Farseer": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.00088
+     },
+     "Natural Grace + Totemic Focus": {
+      "added": {
+       "Natural Grace": 3,
+       "Totemic Focus": 5
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Natural Grace + Healing Focus": {
+      "added": {
+       "Natural Grace": 3,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Natural Grace + Water Shield": {
+      "added": {
+       "Natural Grace": 3,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Natural Grace + Nature's Swiftness": {
+      "added": {
+       "Natural Grace": 3,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Totemic Focus + Healing Focus": {
+      "added": {
+       "Totemic Focus": 5,
+       "Healing Focus": 3
+      },
+      "removed": {},
+      "gain": -0.00347
+     },
+     "Totemic Focus + Water Shield": {
+      "added": {
+       "Totemic Focus": 5,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.00507
+     },
+     "Totemic Focus + Nature's Swiftness": {
+      "added": {
+       "Totemic Focus": 5,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": -0.00356
+     },
+     "Healing Focus + Water Shield": {
+      "added": {
+       "Healing Focus": 3,
+       "Water Shield": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Healing Focus + Nature's Swiftness": {
+      "added": {
+       "Healing Focus": 3,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Water Shield + Nature's Swiftness": {
+      "added": {
+       "Water Shield": 1,
+       "Nature's Swiftness": 1
+      },
+      "removed": {},
+      "gain": -0.01138
+     },
+     "Elemental Devastation - Thundering Strikes": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.04071
+     },
+     "Elemental Devastation - Mental Dexterity": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.01747
+     },
+     "Elemental Devastation - Improved Ghost Wolf": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.00206
+     },
+     "Elemental Devastation - Improved Lightning Shield": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": 0.00135
+     },
+     "Elemental Devastation - Shamanistic Focus": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.10975
+     },
+     "Elemental Devastation - Mindfulness": {
+      "added": {
+       "Elemental Devastation": 3
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.02936
+     },
+     "Elemental Warding - Thundering Strikes": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Elemental Warding - Mental Dexterity": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Elemental Warding - Improved Ghost Wolf": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Elemental Warding - Improved Lightning Shield": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Elemental Warding - Shamanistic Focus": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "Elemental Warding - Mindfulness": {
+      "added": {
+       "Elemental Warding": 3
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Trial by Fire - Thundering Strikes": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Trial by Fire - Mental Dexterity": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Trial by Fire - Improved Ghost Wolf": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Trial by Fire - Improved Lightning Shield": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Trial by Fire - Shamanistic Focus": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "Trial by Fire - Mindfulness": {
+      "added": {
+       "Trial by Fire": 2
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Earthbound - Thundering Strikes": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Earthbound - Mental Dexterity": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Earthbound - Improved Ghost Wolf": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Earthbound - Improved Lightning Shield": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Earthbound - Shamanistic Focus": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "Earthbound - Mindfulness": {
+      "added": {
+       "Earthbound": 1
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Elemental Mastery - Thundering Strikes": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03355
+     },
+     "Elemental Mastery - Mental Dexterity": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.01776
+     },
+     "Elemental Mastery - Improved Ghost Wolf": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.00692
+     },
+     "Elemental Mastery - Improved Lightning Shield": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.00291
+     },
+     "Elemental Mastery - Shamanistic Focus": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11552
+     },
+     "Elemental Mastery - Mindfulness": {
+      "added": {
+       "Elemental Mastery": 1
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03912
+     },
+     "Guardian Totems - Convection": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Guardian Totems - Concussion": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Guardian Totems - Reverberation": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Guardian Totems - Elemental Alacrity": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Guardian Totems - Call of Flame": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Guardian Totems - Elemental Focus": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Guardian Totems - Eye of the Storm": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Guardian Totems - Elemental Reach": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Guardian Totems - Lava Burst": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Guardian Totems - Lightning Overload": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Guardian Totems - Elemental Fury": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Guardian Totems - Mindfulness": {
+      "added": {
+       "Guardian Totems": 2
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Elemental Weapons - Convection": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.02991
+     },
+     "Elemental Weapons - Concussion": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01095
+     },
+     "Elemental Weapons - Reverberation": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.01636
+     },
+     "Elemental Weapons - Elemental Alacrity": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03722
+     },
+     "Elemental Weapons - Call of Flame": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.03023
+     },
+     "Elemental Weapons - Elemental Focus": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02573
+     },
+     "Elemental Weapons - Eye of the Storm": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.01966
+     },
+     "Elemental Weapons - Elemental Reach": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.00322
+     },
+     "Elemental Weapons - Lava Burst": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.00923
+     },
+     "Elemental Weapons - Lightning Overload": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.00935
+     },
+     "Elemental Weapons - Elemental Fury": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.02796
+     },
+     "Elemental Weapons - Mindfulness": {
+      "added": {
+       "Elemental Weapons": 3
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.02998
+     },
+     "Flurry - Convection": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03191
+     },
+     "Flurry - Concussion": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01271
+     },
+     "Flurry - Reverberation": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02601
+     },
+     "Flurry - Elemental Alacrity": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03716
+     },
+     "Flurry - Call of Flame": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0273
+     },
+     "Flurry - Elemental Focus": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02584
+     },
+     "Flurry - Eye of the Storm": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.02001
+     },
+     "Flurry - Elemental Reach": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.00152
+     },
+     "Flurry - Lava Burst": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.00847
+     },
+     "Flurry - Lightning Overload": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.00946
+     },
+     "Flurry - Elemental Fury": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.02974
+     },
+     "Flurry - Mindfulness": {
+      "added": {
+       "Flurry": 5
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03073
+     },
+     "Stormstrike - Convection": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Stormstrike - Concussion": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Stormstrike - Reverberation": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Stormstrike - Elemental Alacrity": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Stormstrike - Call of Flame": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Stormstrike - Elemental Focus": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Stormstrike - Eye of the Storm": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Stormstrike - Elemental Reach": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Stormstrike - Lava Burst": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Stormstrike - Lightning Overload": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Stormstrike - Elemental Fury": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Stormstrike - Mindfulness": {
+      "added": {
+       "Stormstrike": 1
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Spirit Weapons - Convection": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.02089
+     },
+     "Spirit Weapons - Concussion": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.0114
+     },
+     "Spirit Weapons - Reverberation": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.00896
+     },
+     "Spirit Weapons - Elemental Alacrity": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.0442
+     },
+     "Spirit Weapons - Call of Flame": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.01836
+     },
+     "Spirit Weapons - Elemental Focus": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.03035
+     },
+     "Spirit Weapons - Eye of the Storm": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.01875
+     },
+     "Spirit Weapons - Elemental Reach": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.00452
+     },
+     "Spirit Weapons - Lava Burst": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.00935
+     },
+     "Spirit Weapons - Lightning Overload": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.00728
+     },
+     "Spirit Weapons - Elemental Fury": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.02559
+     },
+     "Spirit Weapons - Mindfulness": {
+      "added": {
+       "Spirit Weapons": 1
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.02364
+     },
+     "Mental Quickness - Convection": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": 0.04014
+     },
+     "Mental Quickness - Concussion": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": 0.06052
+     },
+     "Mental Quickness - Reverberation": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": 0.05317
+     },
+     "Mental Quickness - Elemental Alacrity": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": 0.03597
+     },
+     "Mental Quickness - Call of Flame": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": 0.04454
+     },
+     "Mental Quickness - Elemental Focus": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": 0.0475
+     },
+     "Mental Quickness - Eye of the Storm": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": 0.05879
+     },
+     "Mental Quickness - Elemental Reach": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.06704
+     },
+     "Mental Quickness - Lava Burst": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": 0.06341
+     },
+     "Mental Quickness - Lightning Overload": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": 0.05236
+     },
+     "Mental Quickness - Elemental Fury": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": 0.04413
+     },
+     "Mental Quickness - Mindfulness": {
+      "added": {
+       "Mental Quickness": 2
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": 0.03429
+     },
+     "Improved Stormstrike - Convection": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Improved Stormstrike - Concussion": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Improved Stormstrike - Reverberation": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Improved Stormstrike - Elemental Alacrity": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Improved Stormstrike - Call of Flame": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Improved Stormstrike - Elemental Focus": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Improved Stormstrike - Eye of the Storm": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Improved Stormstrike - Elemental Reach": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Improved Stormstrike - Lava Burst": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Improved Stormstrike - Lightning Overload": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Improved Stormstrike - Elemental Fury": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Improved Stormstrike - Mindfulness": {
+      "added": {
+       "Improved Stormstrike": 2
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "Maelstrom Weapon - Convection": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.01865
+     },
+     "Maelstrom Weapon - Concussion": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.0124
+     },
+     "Maelstrom Weapon - Reverberation": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.0029
+     },
+     "Maelstrom Weapon - Elemental Alacrity": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.02232
+     },
+     "Maelstrom Weapon - Call of Flame": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.02591
+     },
+     "Maelstrom Weapon - Elemental Focus": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.03753
+     },
+     "Maelstrom Weapon - Eye of the Storm": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": 0.00274
+     },
+     "Maelstrom Weapon - Elemental Reach": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.00134
+     },
+     "Maelstrom Weapon - Lava Burst": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.00019
+     },
+     "Maelstrom Weapon - Lightning Overload": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01041
+     },
+     "Maelstrom Weapon - Elemental Fury": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03144
+     },
+     "Maelstrom Weapon - Mindfulness": {
+      "added": {
+       "Maelstrom Weapon": 5
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.02121
+     },
+     "Rage of the Farseer - Convection": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03438
+     },
+     "Rage of the Farseer - Concussion": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01471
+     },
+     "Rage of the Farseer - Reverberation": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02037
+     },
+     "Rage of the Farseer - Elemental Alacrity": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03859
+     },
+     "Rage of the Farseer - Call of Flame": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.02867
+     },
+     "Rage of the Farseer - Elemental Focus": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02865
+     },
+     "Rage of the Farseer - Eye of the Storm": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.01915
+     },
+     "Rage of the Farseer - Elemental Reach": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00092
+     },
+     "Rage of the Farseer - Lava Burst": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01668
+     },
+     "Rage of the Farseer - Lightning Overload": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.00514
+     },
+     "Rage of the Farseer - Elemental Fury": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.0304
+     },
+     "Rage of the Farseer - Mindfulness": {
+      "added": {
+       "Rage of the Farseer": 1
+      },
+      "removed": {
+       "Mindfulness": 3
+      },
+      "gain": -0.03202
+     },
+     "Natural Grace - Convection": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Natural Grace - Concussion": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Natural Grace - Reverberation": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Natural Grace - Elemental Alacrity": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Natural Grace - Call of Flame": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Natural Grace - Elemental Focus": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Natural Grace - Eye of the Storm": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Natural Grace - Elemental Reach": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Natural Grace - Lava Burst": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Natural Grace - Lightning Overload": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Natural Grace - Elemental Fury": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Natural Grace - Thundering Strikes": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Natural Grace - Mental Dexterity": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Natural Grace - Improved Ghost Wolf": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Natural Grace - Improved Lightning Shield": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Natural Grace - Shamanistic Focus": {
+      "added": {
+       "Natural Grace": 3
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "Totemic Focus - Convection": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.02755
+     },
+     "Totemic Focus - Concussion": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.00878
+     },
+     "Totemic Focus - Reverberation": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.0144
+     },
+     "Totemic Focus - Elemental Alacrity": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03221
+     },
+     "Totemic Focus - Call of Flame": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0273
+     },
+     "Totemic Focus - Elemental Focus": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.03394
+     },
+     "Totemic Focus - Eye of the Storm": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.02039
+     },
+     "Totemic Focus - Elemental Reach": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": 0.00472
+     },
+     "Totemic Focus - Lava Burst": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01059
+     },
+     "Totemic Focus - Lightning Overload": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.00514
+     },
+     "Totemic Focus - Elemental Fury": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.0291
+     },
+     "Totemic Focus - Thundering Strikes": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.02525
+     },
+     "Totemic Focus - Mental Dexterity": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.01716
+     },
+     "Totemic Focus - Improved Ghost Wolf": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.00347
+     },
+     "Totemic Focus - Improved Lightning Shield": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.00027
+     },
+     "Totemic Focus - Shamanistic Focus": {
+      "added": {
+       "Totemic Focus": 5
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.10761
+     },
+     "Healing Focus - Convection": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Healing Focus - Concussion": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Healing Focus - Reverberation": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Healing Focus - Elemental Alacrity": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Healing Focus - Call of Flame": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Healing Focus - Elemental Focus": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Healing Focus - Eye of the Storm": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Healing Focus - Elemental Reach": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Healing Focus - Lava Burst": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Healing Focus - Lightning Overload": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01084
+     },
+     "Healing Focus - Elemental Fury": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Healing Focus - Thundering Strikes": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03409
+     },
+     "Healing Focus - Mental Dexterity": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Healing Focus - Improved Ghost Wolf": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Healing Focus - Improved Lightning Shield": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Healing Focus - Shamanistic Focus": {
+      "added": {
+       "Healing Focus": 3
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "Water Shield - Convection": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.04987
+     },
+     "Water Shield - Concussion": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01951
+     },
+     "Water Shield - Reverberation": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02951
+     },
+     "Water Shield - Elemental Alacrity": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.07051
+     },
+     "Water Shield - Call of Flame": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.04624
+     },
+     "Water Shield - Elemental Focus": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.04596
+     },
+     "Water Shield - Eye of the Storm": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.03928
+     },
+     "Water Shield - Elemental Reach": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00898
+     },
+     "Water Shield - Lava Burst": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.02467
+     },
+     "Water Shield - Lightning Overload": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.02738
+     },
+     "Water Shield - Elemental Fury": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.04411
+     },
+     "Water Shield - Thundering Strikes": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.05241
+     },
+     "Water Shield - Mental Dexterity": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.03615
+     },
+     "Water Shield - Improved Ghost Wolf": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.01138
+     },
+     "Water Shield - Improved Lightning Shield": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.01317
+     },
+     "Water Shield - Shamanistic Focus": {
+      "added": {
+       "Water Shield": 1
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11106
+     },
+     "Nature's Swiftness - Convection": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Convection": 5
+      },
+      "gain": -0.03379
+     },
+     "Nature's Swiftness - Concussion": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Concussion": 3
+      },
+      "gain": -0.01464
+     },
+     "Nature's Swiftness - Reverberation": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Reverberation": 3
+      },
+      "gain": -0.02866
+     },
+     "Nature's Swiftness - Elemental Alacrity": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.03884
+     },
+     "Nature's Swiftness - Call of Flame": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Call of Flame": 3
+      },
+      "gain": -0.0291
+     },
+     "Nature's Swiftness - Elemental Focus": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Elemental Focus": 1
+      },
+      "gain": -0.02869
+     },
+     "Nature's Swiftness - Eye of the Storm": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Eye of the Storm": 3
+      },
+      "gain": -0.0183
+     },
+     "Nature's Swiftness - Elemental Reach": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Elemental Reach": 1
+      },
+      "gain": -0.00087
+     },
+     "Nature's Swiftness - Lava Burst": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Lava Burst": 1
+      },
+      "gain": -0.01565
+     },
+     "Nature's Swiftness - Lightning Overload": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Lightning Overload": 3
+      },
+      "gain": -0.01074
+     },
+     "Nature's Swiftness - Elemental Fury": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Elemental Fury": 5
+      },
+      "gain": -0.03064
+     },
+     "Nature's Swiftness - Thundering Strikes": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03422
+     },
+     "Nature's Swiftness - Mental Dexterity": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Mental Dexterity": 3
+      },
+      "gain": -0.02348
+     },
+     "Nature's Swiftness - Improved Ghost Wolf": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Improved Ghost Wolf": 2
+      },
+      "gain": 0.0
+     },
+     "Nature's Swiftness - Improved Lightning Shield": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "Nature's Swiftness - Shamanistic Focus": {
+      "added": {
+       "Nature's Swiftness": 1
+      },
+      "removed": {
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11535
+     },
+     "-Convection - Concussion": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Concussion": 3
+      },
+      "gain": -0.04145
+     },
+     "-Convection - Reverberation": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Reverberation": 3
+      },
+      "gain": -0.05478
+     },
+     "-Convection - Elemental Alacrity": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.07451
+     },
+     "-Convection - Call of Flame": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Call of Flame": 3
+      },
+      "gain": -0.08313
+     },
+     "-Convection - Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Elemental Focus": 1
+      },
+      "gain": -0.0769
+     },
+     "-Convection - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.05618
+     },
+     "-Convection - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Elemental Reach": 1
+      },
+      "gain": -0.02885
+     },
+     "-Convection - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Lava Burst": 1
+      },
+      "gain": -0.05835
+     },
+     "-Convection - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Lightning Overload": 3
+      },
+      "gain": -0.05677
+     },
+     "-Convection - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Elemental Fury": 5
+      },
+      "gain": -0.06624
+     },
+     "-Convection - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.06712
+     },
+     "-Convection - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.05221
+     },
+     "-Convection - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.03379
+     },
+     "-Convection - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.03949
+     },
+     "-Convection - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.14363
+     },
+     "-Convection - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Convection": 5,
+       "Mindfulness": 3
+      },
+      "gain": -0.06009
+     },
+     "-Concussion - Reverberation": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Reverberation": 3
+      },
+      "gain": -0.03017
+     },
+     "-Concussion - Elemental Alacrity": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.04697
+     },
+     "-Concussion - Call of Flame": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Call of Flame": 3
+      },
+      "gain": -0.04567
+     },
+     "-Concussion - Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Elemental Focus": 1
+      },
+      "gain": -0.04746
+     },
+     "-Concussion - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.02584
+     },
+     "-Concussion - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Elemental Reach": 1
+      },
+      "gain": -0.01295
+     },
+     "-Concussion - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Lava Burst": 1
+      },
+      "gain": -0.02648
+     },
+     "-Concussion - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Lightning Overload": 3
+      },
+      "gain": -0.01554
+     },
+     "-Concussion - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.04158
+     },
+     "-Concussion - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.04624
+     },
+     "-Concussion - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.03147
+     },
+     "-Concussion - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.01464
+     },
+     "-Concussion - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.02033
+     },
+     "-Concussion - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11739
+     },
+     "-Concussion - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Concussion": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.04183
+     },
+     "-Reverberation - Elemental Alacrity": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Elemental Alacrity": 3
+      },
+      "gain": -0.04003
+     },
+     "-Reverberation - Call of Flame": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Call of Flame": 3
+      },
+      "gain": -0.05523
+     },
+     "-Reverberation - Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Elemental Focus": 1
+      },
+      "gain": -0.05035
+     },
+     "-Reverberation - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.02474
+     },
+     "-Reverberation - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Elemental Reach": 1
+      },
+      "gain": -0.01031
+     },
+     "-Reverberation - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Lava Burst": 1
+      },
+      "gain": -0.02692
+     },
+     "-Reverberation - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Lightning Overload": 3
+      },
+      "gain": -0.0358
+     },
+     "-Reverberation - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.054
+     },
+     "-Reverberation - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.05446
+     },
+     "-Reverberation - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.04097
+     },
+     "-Reverberation - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.02866
+     },
+     "-Reverberation - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0314
+     },
+     "-Reverberation - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11778
+     },
+     "-Reverberation - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Reverberation": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.05402
+     },
+     "-Elemental Alacrity - Call of Flame": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Call of Flame": 3
+      },
+      "gain": -0.07479
+     },
+     "-Elemental Alacrity - Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Elemental Focus": 1
+      },
+      "gain": -0.06358
+     },
+     "-Elemental Alacrity - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.06439
+     },
+     "-Elemental Alacrity - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Elemental Reach": 1
+      },
+      "gain": -0.04311
+     },
+     "-Elemental Alacrity - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Lava Burst": 1
+      },
+      "gain": -0.06419
+     },
+     "-Elemental Alacrity - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Lightning Overload": 3
+      },
+      "gain": -0.05323
+     },
+     "-Elemental Alacrity - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.06438
+     },
+     "-Elemental Alacrity - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.07762
+     },
+     "-Elemental Alacrity - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.06076
+     },
+     "-Elemental Alacrity - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.03884
+     },
+     "-Elemental Alacrity - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.04821
+     },
+     "-Elemental Alacrity - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.13925
+     },
+     "-Elemental Alacrity - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Elemental Alacrity": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.08123
+     },
+     "-Call of Flame - Elemental Focus": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Elemental Focus": 1
+      },
+      "gain": -0.07007
+     },
+     "-Call of Flame - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.04742
+     },
+     "-Call of Flame - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Elemental Reach": 1
+      },
+      "gain": -0.03059
+     },
+     "-Call of Flame - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Lava Burst": 1
+      },
+      "gain": -0.03452
+     },
+     "-Call of Flame - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Lightning Overload": 3
+      },
+      "gain": -0.04733
+     },
+     "-Call of Flame - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.06006
+     },
+     "-Call of Flame - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.07418
+     },
+     "-Call of Flame - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.05918
+     },
+     "-Call of Flame - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.0291
+     },
+     "-Call of Flame - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.04334
+     },
+     "-Call of Flame - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.14267
+     },
+     "-Call of Flame - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Call of Flame": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.08564
+     },
+     "-Elemental Focus - Eye of the Storm": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Eye of the Storm": 3
+      },
+      "gain": -0.05763
+     },
+     "-Elemental Focus - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Elemental Reach": 1
+      },
+      "gain": -0.03912
+     },
+     "-Elemental Focus - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Lava Burst": 1
+      },
+      "gain": -0.04705
+     },
+     "-Elemental Focus - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Lightning Overload": 3
+      },
+      "gain": -0.04844
+     },
+     "-Elemental Focus - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Elemental Fury": 5
+      },
+      "gain": -0.06034
+     },
+     "-Elemental Focus - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.06866
+     },
+     "-Elemental Focus - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.05835
+     },
+     "-Elemental Focus - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.02869
+     },
+     "-Elemental Focus - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.03445
+     },
+     "-Elemental Focus - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.13372
+     },
+     "-Elemental Focus - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Elemental Focus": 1,
+       "Mindfulness": 3
+      },
+      "gain": -0.07061
+     },
+     "-Eye of the Storm - Elemental Reach": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Elemental Reach": 1
+      },
+      "gain": -0.02487
+     },
+     "-Eye of the Storm - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Lava Burst": 1
+      },
+      "gain": -0.03935
+     },
+     "-Eye of the Storm - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Lightning Overload": 3
+      },
+      "gain": -0.03842
+     },
+     "-Eye of the Storm - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.04602
+     },
+     "-Eye of the Storm - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.05436
+     },
+     "-Eye of the Storm - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.0445
+     },
+     "-Eye of the Storm - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.0183
+     },
+     "-Eye of the Storm - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.02472
+     },
+     "-Eye of the Storm - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11557
+     },
+     "-Eye of the Storm - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Eye of the Storm": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.06083
+     },
+     "-Elemental Reach - Lava Burst": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Lava Burst": 1
+      },
+      "gain": -0.01435
+     },
+     "-Elemental Reach - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Lightning Overload": 3
+      },
+      "gain": -0.01699
+     },
+     "-Elemental Reach - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Elemental Fury": 5
+      },
+      "gain": -0.02906
+     },
+     "-Elemental Reach - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.03606
+     },
+     "-Elemental Reach - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.01593
+     },
+     "-Elemental Reach - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.00087
+     },
+     "-Elemental Reach - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.00593
+     },
+     "-Elemental Reach - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.10865
+     },
+     "-Elemental Reach - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Elemental Reach": 1,
+       "Mindfulness": 3
+      },
+      "gain": -0.02279
+     },
+     "-Lava Burst - Lightning Overload": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Lightning Overload": 3
+      },
+      "gain": -0.03137
+     },
+     "-Lava Burst - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Elemental Fury": 5
+      },
+      "gain": -0.05885
+     },
+     "-Lava Burst - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.05555
+     },
+     "-Lava Burst - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.03452
+     },
+     "-Lava Burst - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.01565
+     },
+     "-Lava Burst - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.02186
+     },
+     "-Lava Burst - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.13969
+     },
+     "-Lava Burst - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Lava Burst": 1,
+       "Mindfulness": 3
+      },
+      "gain": -0.05645
+     },
+     "-Lightning Overload - Elemental Fury": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Elemental Fury": 5
+      },
+      "gain": -0.04084
+     },
+     "-Lightning Overload - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.06082
+     },
+     "-Lightning Overload - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.03801
+     },
+     "-Lightning Overload - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.01084
+     },
+     "-Lightning Overload - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.01345
+     },
+     "-Lightning Overload - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.12972
+     },
+     "-Lightning Overload - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Lightning Overload": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.05465
+     },
+     "-Elemental Fury - Thundering Strikes": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Thundering Strikes": 5
+      },
+      "gain": -0.05094
+     },
+     "-Elemental Fury - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.05297
+     },
+     "-Elemental Fury - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.03064
+     },
+     "-Elemental Fury - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0369
+     },
+     "-Elemental Fury - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.13626
+     },
+     "-Elemental Fury - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Elemental Fury": 5,
+       "Mindfulness": 3
+      },
+      "gain": -0.06986
+     },
+     "-Thundering Strikes - Mental Dexterity": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5,
+       "Mental Dexterity": 3
+      },
+      "gain": -0.05528
+     },
+     "-Thundering Strikes - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.03409
+     },
+     "-Thundering Strikes - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.03852
+     },
+     "-Thundering Strikes - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.14219
+     },
+     "-Thundering Strikes - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Thundering Strikes": 5,
+       "Mindfulness": 3
+      },
+      "gain": -0.07249
+     },
+     "-Mental Dexterity - Improved Ghost Wolf": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 3,
+       "Improved Ghost Wolf": 2
+      },
+      "gain": -0.02348
+     },
+     "-Mental Dexterity - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 3,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.02833
+     },
+     "-Mental Dexterity - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 3,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.12774
+     },
+     "-Mental Dexterity - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Mental Dexterity": 3,
+       "Mindfulness": 3
+      },
+      "gain": -0.06395
+     },
+     "-Improved Ghost Wolf - Improved Lightning Shield": {
+      "added": {},
+      "removed": {
+       "Improved Ghost Wolf": 2,
+       "Improved Lightning Shield": 1
+      },
+      "gain": -0.0063
+     },
+     "-Improved Ghost Wolf - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Improved Ghost Wolf": 2,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11525
+     },
+     "-Improved Ghost Wolf - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Improved Ghost Wolf": 2,
+       "Mindfulness": 3
+      },
+      "gain": -0.03218
+     },
+     "-Improved Lightning Shield - Shamanistic Focus": {
+      "added": {},
+      "removed": {
+       "Improved Lightning Shield": 1,
+       "Shamanistic Focus": 1
+      },
+      "gain": -0.11494
+     },
+     "-Improved Lightning Shield - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Improved Lightning Shield": 1,
+       "Mindfulness": 3
+      },
+      "gain": -0.04228
+     },
+     "-Shamanistic Focus - Mindfulness": {
+      "added": {},
+      "removed": {
+       "Shamanistic Focus": 1,
+       "Mindfulness": 3
+      },
+      "gain": -0.14265
+     }
+    },
+    "minutes": 1.0
+   },
+   "signature": {
+    "spec": "Elemental",
+    "rotation": "elemental-dps",
+    "date": "2026-10-26",
+    "fights": 600,
+    "split": "31/12/8",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6392,
+    "min_share": 0.6,
+    "required": [
+     "Lightning Bolt"
+    ],
+    "core": [
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "missing_talents": [],
+    "uncast": [],
+    "casts": {
+     "Lightning Bolt": {
+      "20": 3.33,
+      "30": 4.45,
+      "40": 4.63,
+      "50": 4.26,
+      "60": 3.88
+     }
+    },
+    "fingerprint": "89dd5149a537"
+   },
+   "minutes": 41.6,
+   "done": true,
+   "date": "2026-10-26",
+   "builds": {
+    "written": [
+     "elemental-open-leveling"
+    ],
+    "why": null,
+    "spec": "Elemental",
+    "date": "2026-10-26"
+   }
+  }
+ },
+ "tree": "Elemental"
+}
