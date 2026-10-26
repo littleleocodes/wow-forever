@@ -1118,6 +1118,11 @@ def run_target(cls, spec, entries, setting, gear_path, a, log, extra_starts=(), 
     if any_split:   # a hybrid named by a spec field (Frostfire): only splits its entries may file under it (2026-10-08, own-rotation rule)
         trees_ = set().union(*[SM.RAID_ENTRY_TREES.get((cls, e)) or set() for e in entries]) if entries else set()
         space.allow_trees = trees_ or None
+        if trees_ and not any(t.startswith("Hybrid ") for t in trees_) and spec.startswith("Hybrid "):
+            # 2026-10-26 audit: a hybrid searched in pure-spec entries (the shaman's Elemental/Enhancement in enhancement-dps) drifted to
+            # the pure spec's builds (17/31/3), which ml_builds then rejects as not a split: keep the search on the hybrid's own splits
+            base_ok = space.allowed
+            space.allowed = lambda flat, _b=base_ok: _b(flat) and space.classify(flat) == spec
     own = [st for st in starts if space.valid(st)]
     space.protect = set(protect) if protect is not None else protected(cls, entries, repo, setting, own)
     space.start_splits = [space.split(st) for st in own]

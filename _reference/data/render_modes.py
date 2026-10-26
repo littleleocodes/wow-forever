@@ -288,6 +288,9 @@ def raid_numbers(cls):
         own = SM.RAID_ENTRY_TREES.get((cls, x["spec"]))
         if lab in B and own and not SM.rotation_allows(SM.spec_of(cls, B[lab]), own):
             continue   # 2026-10-08 (user decision): a build counts only in an entry built for its own spec, never in a faster sibling's
+        if lab in B and r.get("split") and r["split"] != rs.split_of(cls, {n: k for t in B[lab]["allocation"].values() for n, k in t}):
+            continue   # 2026-10-26 audit: a report made before a repair or tidy changed the build's talents under the same id (the shaman's
+                       # 15/24/12 hybrid showed the 17/26/8 build's 713 from 2026-10-16) is not this build's number
         grp = r.get("value") if x["tank"] else (r.get("raid") or r.get("dps"))
         cur = out.get(lab)
         if cur is None or (grp or 0) > (cur["group"] or 0):
