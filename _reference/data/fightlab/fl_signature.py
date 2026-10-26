@@ -101,8 +101,12 @@ def allowed(cls, rot, flat):
 
 
 def leveling_space(space, cls, rot):
-    """Restrict an any-split Space to the builds that may level with `rot`, with the leveling signature talents per build."""
-    trees_ = SM.leveling_rotation_trees(cls).get(rot) or set()
+    """Restrict an any-split Space to the builds that may level with `rot`, with the leveling signature talents per build.
+    WOW_FOREVER_UNRESTRICTED=1 (the unrestricted search, user 2026-10-24: "no matter what talents or rotations"): no restriction."""
+    if os.environ.get("WOW_FOREVER_UNRESTRICTED") == "1":
+        space.allow_trees, space.sig, space.signature_rotation = None, {}, rot
+        return space
+    trees_ =SM.leveling_rotation_trees(cls).get(rot) or set()
     space.allow_trees = set(trees_) or hybrids_of(cls, rot) or None
     space.sig = {s: set(SG.granting_talents(cls, (SG.rule(cls, s, "leveling") or {}).get("required", []))) for s in SG.specs_of(cls)} if enabled() else {}
     space.sig = {s: t for s, t in space.sig.items() if t}
