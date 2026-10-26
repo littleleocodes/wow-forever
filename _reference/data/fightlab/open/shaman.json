@@ -8137,7 +8137,40 @@
     ],
     "why": null,
     "spec": "Hybrid Elemental/Enhancement",
-    "date": "2026-10-20"
+    "date": "2026-10-26"
+   },
+   "signature": {
+    "spec": "Hybrid Elemental/Enhancement",
+    "rotation": "elemental-dps",
+    "date": "2026-10-26",
+    "fights": 600,
+    "split": "21/22/8",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6367,
+    "min_share": 0.5,
+    "required": [
+     "Lightning Bolt"
+    ],
+    "core": [
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "missing_talents": [],
+    "uncast": [],
+    "casts": {
+     "Lightning Bolt": {
+      "20": 3.41,
+      "30": 4.09,
+      "40": 3.68,
+      "50": 4.56,
+      "60": 3.79
+     }
+    },
+    "fingerprint": "01b3e2a09897"
    }
   },
   "enhancement-dps": {
@@ -17489,7 +17522,41 @@
     ],
     "why": null,
     "spec": "Enhancement",
-    "date": "2026-10-20"
+    "date": "2026-10-26"
+   },
+   "signature": {
+    "spec": "Enhancement",
+    "rotation": "enhancement-dps",
+    "date": "2026-10-26",
+    "fights": 600,
+    "split": "13/32/6",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7539,
+    "min_share": 0.6,
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "missing_talents": [],
+    "uncast": [],
+    "casts": {
+     "Stormstrike": {
+      "20": 0.0,
+      "30": 1.74,
+      "40": 1.96,
+      "50": 2.21,
+      "60": 2.56
+     }
+    },
+    "fingerprint": "07893712e1ef"
    }
   }
  },
