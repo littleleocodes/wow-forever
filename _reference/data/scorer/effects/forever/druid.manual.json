@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered Druid effects (Forever). Tags: cat = Cat Form sources (white/Shred/finishers), tank/bear = Bear Form threat sources, finisher/builder = combo-point abilities, hot/direct = heal parts, form:cat/form:bear for Heart of the Wild stats. mana_share tag shapeshift = mana spent on form changes.",
   "Genesis": {
-    "note": "+1%/rank periodic damage and healing (Moonfire/Rip/Rake DoTs, Rejuvenation/Regrowth HoTs). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-cat-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.27 to match (0.6%). Other modes unchanged.",
+    "note": "+1%/rank periodic damage and healing (Moonfire/Rip/Rake DoTs, Rejuvenation/Regrowth HoTs). Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.27 to match (0.6%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -124,38 +124,6 @@
         "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
         "modes": ["heal"],
         "specs": ["resto-heal"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["dot"],
-        "per_rank": 0.027405,
-        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["hot"],
-        "per_rank": 0.027405,
-        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["dot"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["hot"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
       },
       {
         "channel": "heal",
@@ -172,11 +140,43 @@
         "values": [0.011216, 0.022433, 0.033649, 0.044866, 0.056081],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.027405,
+        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.027405,
+        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Improved Wrath": {
-    "note": "-0.1s/rank Wrath cast (parsed) and -10%/rank Wrath mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 5.6% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.2%). Other modes unchanged.",
+    "note": "-0.1s/rank Wrath cast (parsed) and -10%/rank Wrath mana. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 5.6% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 0.2% on the same scale); raid values scaled x43.49, the cap on effect size stops short of the target (0.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -227,8 +227,24 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Wrath"],
-        "per_rank": 0.006898,
-        "values": [0.006898, 0.013795, 0.020693, 0.027591, 0.034488],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.300017,
+        "values": [0.300017, 0.599991, 0.900009, 1.200026, 1.5],
         "modes": ["raid"],
         "specs": ["balance-dps"]
       },
@@ -239,27 +255,11 @@
         "values": [0.003449, 0.006897, 0.010346, 0.013796, 0.017244],
         "modes": ["raid"],
         "specs": ["balance-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Wrath"],
-        "per_rank": 0.3,
-        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Wrath"],
-        "per_rank": 0.3,
-        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
       }
     ]
   },
   "Nature's Reach": {
-    "note": "+2%/rank hit with all spells and attacks (parser kept spells only) and +10%/rank Balance range. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-cat-dps, training dummy): removing it costs 2.5% DPS in the simulator (scorer said 3.0% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.0% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "+2%/rank hit with all spells and attacks (parser kept spells only) and +10%/rank Balance range. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.0% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 4.4% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 3.0% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 2.3% DPS in the simulator (scorer said 2.3% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -348,19 +348,28 @@
         "specs": ["balance-dps"]
       },
       {
-        "channel": "hit",
-        "scope": ["type:spell", "type:melee"],
-        "values": [0.000436, 0.000873, 0.001309, 0.001745, 0.002182],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
         "channel": "utility",
         "scope": ["mode:pvp"],
         "per_rank": 0.0075,
         "modes": ["pvp"],
         "kind": "range",
         "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002154,
+        "values": [0.002154, 0.004308, 0.006462, 0.008616, 0.010771],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.014361,
+        "values": [0.014361, 0.028722, 0.043083, 0.057444, 0.071805],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
       },
       {
         "channel": "hit",
@@ -379,20 +388,11 @@
         "specs": ["feral-cat-dps"]
       },
       {
-        "channel": "utility",
-        "scope": ["mode:leveling"],
-        "per_rank": 0.002154,
-        "values": [0.002154, 0.004308, 0.006462, 0.008616, 0.010771],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
         "channel": "hit",
         "scope": ["type:spell", "type:melee"],
-        "per_rank": 0.014361,
-        "values": [0.014361, 0.028722, 0.043083, 0.057444, 0.071805],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
+        "values": [0.014672, 0.029378, 0.044049, 0.058721, 0.073427],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
@@ -414,7 +414,7 @@
     ]
   },
   "Nature's Splendor": {
-    "note": "+3s Moonfire/Rejuvenation, +6s Regrowth, +2s Insect Swarm: fewer refreshes -> ~+4% HoT throughput, +10% Moonfire, some mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 4.1% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "note": "+3s Moonfire/Rejuvenation, +6s Regrowth, +2s Insect Swarm: fewer refreshes -> ~+4% HoT throughput, +10% Moonfire, some mana. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -543,21 +543,21 @@
         "channel": "heal",
         "scope": ["ability:Rejuvenation", "ability:Regrowth"],
         "values": [0.0],
-        "modes": ["raid", "tank"],
+        "modes": ["tank"],
         "specs": ["feral-cat-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Moonfire"],
         "values": [0.0],
-        "modes": ["raid", "tank"],
+        "modes": ["tank"],
         "specs": ["feral-cat-dps"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
         "values": [0.0],
-        "modes": ["raid", "tank"],
+        "modes": ["tank"],
         "specs": ["feral-cat-dps"]
       },
       {
@@ -622,11 +622,32 @@
         "values": [0.026312],
         "modes": ["raid"],
         "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Improved Starfire": {
-    "note": "-0.1s/rank Starfire cast (parsed) and a 3%/rank stun chance (leveling). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 6.4% DPS in the simulator (scorer said 6.5% on the same scale); already within tolerance, raid effects split off unchanged (6.5%). Other modes unchanged.",
+    "note": "-0.1s/rank Starfire cast (parsed) and a 3%/rank stun chance (leveling). Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 7.6% DPS in the simulator (scorer said 6.6% on the same scale); already within tolerance, raid effects split off unchanged (6.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -685,7 +706,7 @@
     ]
   },
   "Insect Swarm": {
-    "note": "Instant Nature DoT with a -2% hit debuff: ~+5% caster damage, tank/healer utility. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 9.3% DPS in the simulator (scorer said 9.5% on the same scale); already within tolerance, raid effects split off unchanged (9.5%). Other modes unchanged.",
+    "note": "Instant Nature DoT with a -2% hit debuff: ~+5% caster damage, tank/healer utility. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 9.5% DPS in the simulator (scorer said 9.8% on the same scale); already within tolerance, raid effects split off unchanged (9.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -783,7 +804,7 @@
     ]
   },
   "Nature's Grace": {
-    "note": "+10% casting speed for 3s after any direct spell crit - heals included: ~35% uptime at raid crit -> ~+3.5% spell haste for casters and healers, ~+5% with Improved Regrowth 5/5 feeding crits. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "+10% casting speed for 3s after any direct spell crit - heals included: ~35% uptime at raid crit -> ~+3.5% spell haste for casters and healers, ~+5% with Improved Regrowth 5/5 feeding crits. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -814,17 +835,17 @@
         "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
       },
       {
-        "channel": "haste",
-        "scope": ["type:spell"],
-        "values": [0.009744],
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
         "channel": "heal",
         "scope": ["heal"],
         "values": [0.004176],
         "requires": {"Improved Regrowth": 5},
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:spell"],
+        "values": [0.009744],
         "modes": ["raid"],
         "specs": ["balance-dps"]
       }
@@ -849,7 +870,7 @@
     ]
   },
   "Moonkin Form": {
-    "note": "+3% crit for the party (and you), +360% item armor, and (beta) Omen of Clarity triggers twice as often (~+3% mana): caster survivability while leveling. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 7.6% DPS in the simulator (scorer said 7.8% on the same scale); already within tolerance, raid effects split off unchanged (7.8%). Other modes unchanged.",
+    "note": "+3% crit for the party (and you), +360% item armor, and (beta) Omen of Clarity triggers twice as often (~+3% mana): caster survivability while leveling. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 7.6% DPS in the simulator (scorer said 7.9% on the same scale); already within tolerance, raid effects split off unchanged (7.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -979,7 +1000,7 @@
     ]
   },
   "Feral Swiftness": {
-    "note": "+2%/rank dodge (parsed) and +15%/rank Cat Form speed. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.4% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged.",
+    "note": "+2%/rank dodge (parsed) and +15%/rank Cat Form speed. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1030,14 +1051,6 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.034222,
-        "values": [0.034222, 0.068445, 0.102667, 0.136889, 0.171111],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
         "per_rank": 0.004522,
         "values": [0.004522, 0.009045, 0.013567, 0.018089, 0.022611],
         "modes": ["leveling-st", "solo-60"],
@@ -1050,11 +1063,19 @@
         "values": [0.001357, 0.002714, 0.00407, 0.005427, 0.006783],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.034222,
+        "values": [0.034222, 0.068445, 0.102667, 0.136889, 0.171111],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Thick Hide": {
-    "note": "Extra base armor per level in forms (~60 armor at 60 before form multipliers): ~+0.6%/rank effective health. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 6.4% DPS in the simulator (scorer said 5.8% on the same scale); already within tolerance, raid effects split off unchanged (5.8%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "note": "Extra base armor per level in forms (~60 armor at 60 before form multipliers): ~+0.6%/rank effective health. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 3.1% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1082,23 +1103,23 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.053301,
-        "values": [0.053301, 0.106602, 0.159904, 0.213205, 0.266506],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
         "per_rank": 0.006861,
         "values": [0.006861, 0.013722, 0.020584, 0.027445, 0.034306],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.053301,
+        "values": [0.053301, 0.106602, 0.159904, 0.213205, 0.266506],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Feral Charge": {
-    "note": "Bear charge/interrupt and cat leap: leveling and tanking utility. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.7%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Bear charge/interrupt and cat leap: leveling and tanking utility. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -1199,7 +1220,7 @@
     ]
   },
   "Savage Fury": {
-    "note": "+5%/rank Claw, Rake, Shred, Maul and Swipe damage. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-cat-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "+5%/rank Claw, Rake, Shred, Maul and Swipe damage. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 3.1% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1235,9 +1256,10 @@
       {
         "channel": "dmg",
         "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
-        "values": [0.007325, 0.014677, 0.022054, 0.02946, 0.036892],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
+        "per_rank": 0.044991,
+        "values": [0.044991, 0.089982, 0.134972, 0.179964, 0.224955],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
       },
       {
         "channel": "dmg",
@@ -1250,15 +1272,14 @@
       {
         "channel": "dmg",
         "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
-        "per_rank": 0.044991,
-        "values": [0.044991, 0.089982, 0.134972, 0.179964, 0.224955],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
+        "values": [0.02845, 0.057006, 0.085658, 0.114423, 0.143289],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Sharpened Claws": {
-    "note": "+3%/rank crit in Cat/Bear form. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 4.3% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 4.2% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged.",
+    "note": "+3%/rank crit in Cat/Bear form. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 4.2% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 5.8% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.5%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 8.4% DPS in the simulator (scorer said 8.3% on the same scale); already within tolerance, raid effects split off unchanged (8.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1294,6 +1315,14 @@
       {
         "channel": "crit",
         "scope": ["type:melee"],
+        "per_rank": 0.020829,
+        "values": [0.020829, 0.041659, 0.062488, 0.083317, 0.104146],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
         "per_rank": 0.048636,
         "values": [0.048636, 0.097273, 0.145911, 0.194549, 0.243186],
         "modes": ["raid"],
@@ -1302,22 +1331,14 @@
       {
         "channel": "crit",
         "scope": ["type:melee"],
-        "values": [0.043386, 0.086772, 0.13016, 0.173546, 0.216932],
+        "values": [0.067477, 0.134955, 0.202435, 0.269912, 0.337389],
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "per_rank": 0.020829,
-        "values": [0.020829, 0.041659, 0.062488, 0.083317, 0.104146],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Primal Bite": {
-    "note": "Primal Bite (renamed from Mangle in build 1.60.1.70009; its signature debuff is gone): bear-only strike every 6s for 20 Rage, 100% weapon damage plus 26/38/59/77 at levels 25/40/50/60 (beta spellbook): ~+15% bear threat. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 0.3% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.48 to match (0.3%). Other modes unchanged.",
+    "note": "Primal Bite (renamed from Mangle in build 1.60.1.70009; its signature debuff is gone): bear-only strike every 6s for 20 Rage, 100% weapon damage plus 26/38/59/77 at levels 25/40/50/60 (beta spellbook): ~+15% bear threat. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 1.2% DPS in the simulator (scorer said 1.7% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1335,14 +1356,14 @@
       {
         "channel": "dmg",
         "scope": ["tank"],
-        "values": [0.005501],
+        "values": [0.023209],
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Predatory Strikes": {
-    "note": "+50%/rank of your level as attack power in forms (30 AP per rank at 60): ~+2.5%/rank at raid gear, ~+4%/rank while leveling. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged.",
+    "note": "+50%/rank of your level as attack power in forms (30 AP per rank at 60): ~+2.5%/rank at raid gear, ~+4%/rank while leveling. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 3.3% on the same scale); already within tolerance, raid effects split off unchanged (3.3%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 1.6% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1378,6 +1399,14 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
+        "per_rank": 0.01105,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01105, 0.0221, 0.03315, 0.044201, 0.055251],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
         "per_rank": 0.011017,
         "modes": ["raid"],
         "values": [0.011017, 0.022035, 0.033052, 0.04407, 0.055087],
@@ -1389,19 +1418,11 @@
         "modes": ["tank"],
         "values": [0.00906, 0.018164, 0.027306, 0.036491, 0.045715],
         "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:melee"],
-        "per_rank": 0.01105,
-        "modes": ["leveling-st", "solo-60"],
-        "values": [0.01105, 0.0221, 0.03315, 0.044201, 0.055251],
-        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Blood Frenzy": {
-    "note": "Blood Frenzy (renamed from Primal Fury in build 1.60.1.70009; same numbers): 50%/rank chance for 5 Rage on bear crits (more Mauls) and 50%/rank chance of an extra combo point on non-periodic cat crits (more finishers). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 5.7% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.0% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-st/solo-60 values scaled x0.64 to match (2.9%). Other modes unchanged.",
+    "note": "Blood Frenzy (renamed from Primal Fury in build 1.60.1.70009; same numbers): 50%/rank chance for 5 Rage on bear crits (more Mauls) and 50%/rank chance of an extra combo point on non-periodic cat crits (more finishers). Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.0% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-st/solo-60 values scaled x0.64 to match (2.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 8.4% DPS in the simulator (scorer said 7.8% on the same scale); already within tolerance, raid effects split off unchanged (7.7%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 25.1% DPS in the simulator (scorer said 26.5% on the same scale); already within tolerance, raid effects split off unchanged (26.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1468,6 +1489,22 @@
       {
         "channel": "dmg",
         "scope": ["tank"],
+        "per_rank": 0.031316,
+        "values": [0.031316, 0.062633, 0.093949, 0.125266, 0.156582],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.060491,
+        "values": [0.060491, 0.120983, 0.181474, 0.241966, 0.302457],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
         "per_rank": 0.056863,
         "values": [0.056863, 0.113727, 0.170589, 0.227452, 0.284316],
         "modes": ["raid"],
@@ -1483,13 +1520,6 @@
       },
       {
         "channel": "dmg",
-        "scope": ["tank"],
-        "values": [0.062868, 0.127653, 0.194356, 0.262974, 0.333508],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "dmg",
         "scope": ["finisher"],
         "values": [0.194356, 0.405958, 0.63481, 0.880911, 1.144259],
         "modes": ["tank"],
@@ -1498,23 +1528,14 @@
       {
         "channel": "dmg",
         "scope": ["tank"],
-        "per_rank": 0.031316,
-        "values": [0.031316, 0.062633, 0.093949, 0.125266, 0.156582],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["finisher"],
-        "per_rank": 0.060491,
-        "values": [0.060491, 0.120983, 0.181474, 0.241966, 0.302457],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
+        "values": [0.199488, 0.40506, 0.616717, 0.834451, 1.058264],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Leader of the Pack": {
-    "note": "+3% crit for you (in forms) and the party. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-cat-dps, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 1.9% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged.",
+    "note": "+3% crit for you (in forms) and the party. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 1.9% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.8% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 4.0% DPS in the simulator (scorer said 4.1% on the same scale); already within tolerance, raid effects split off unchanged (4.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1553,9 +1574,9 @@
       {
         "channel": "crit",
         "scope": ["type:melee"],
-        "values": [0.0],
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
+        "values": [0.021339],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
       },
       {
         "channel": "crit",
@@ -1567,14 +1588,14 @@
       {
         "channel": "crit",
         "scope": ["type:melee"],
-        "values": [0.021339],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
+        "values": [0.071111],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Natural Reaction": {
-    "note": "+1%/rank dodge in bear (parsed) and 20%/rank chance for 5 rage per dodge. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 4.7% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged.",
+    "note": "+1%/rank dodge in bear (parsed) and 20%/rank chance for 5 rage per dodge. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 4.6% DPS in the simulator (scorer said 4.8% on the same scale); already within tolerance, raid effects split off unchanged (4.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1618,7 +1639,7 @@
     ]
   },
   "Berserk": {
-    "note": "15s every 3 min: Primal Bite spam (no cooldown, 3 targets) in bear, +100% crit on combo builders in cat (~8% uptime). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-cat-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.1% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged.",
+    "note": "15s every 3 min: Primal Bite spam (no cooldown, 3 targets) in bear, +100% crit on combo builders in cat (~8% uptime). Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.1% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1697,9 +1718,16 @@
       },
       {
         "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.028806],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
         "scope": ["cat"],
-        "values": [0.02577],
-        "modes": ["raid"],
+        "values": [0.028806],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
       },
       {
@@ -1711,22 +1739,15 @@
       },
       {
         "channel": "dmg",
-        "scope": ["tank"],
-        "values": [0.028806],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "dmg",
         "scope": ["cat"],
-        "values": [0.028806],
-        "modes": ["leveling-st", "solo-60"],
+        "values": [0.02577],
+        "modes": ["raid"],
         "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Furor": {
-    "note": "Beta text: 20%/rank chance for 10 Rage on a bear shift; cat shifts keep 20%/rank of the Energy you had (100% at 5/5) plus 2/rank Energy per second spent out of forms (max 20/rank). Powershifting loses nothing at 5/5 and every shift-heal returns to a full bar: cat +1.5%/rank, bear +0.6%/rank. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Beta text: 20%/rank chance for 10 Rage on a bear shift; cat shifts keep 20%/rank of the Energy you had (100% at 5/5) plus 2/rank Energy per second spent out of forms (max 20/rank). Powershifting loses nothing at 5/5 and every shift-heal returns to a full bar: cat +1.5%/rank, bear +0.6%/rank. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1815,9 +1836,17 @@
       {
         "channel": "dmg",
         "scope": ["cat"],
-        "per_rank": 0.001014,
-        "values": [0.001014, 0.002028, 0.003042, 0.004056, 0.00507],
-        "modes": ["raid"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
       },
       {
@@ -1831,17 +1860,9 @@
       {
         "channel": "dmg",
         "scope": ["cat"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["tank"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["leveling-st", "solo-60"],
+        "per_rank": 0.001014,
+        "values": [0.001014, 0.002028, 0.003042, 0.004056, 0.00507],
+        "modes": ["raid"],
         "specs": ["feral-cat-dps"]
       }
     ]
@@ -1891,7 +1912,7 @@
     ]
   },
   "Natural Shapeshifter": {
-    "note": "-10%/rank shapeshift mana: powershifting and form-swapping while leveling. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 1.4% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged.",
+    "note": "-10%/rank shapeshift mana: powershifting and form-swapping while leveling. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 1.4% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1948,6 +1969,14 @@
         "values": [0.013333, 0.026666, 0.039999, 0.053332, 0.066665]
       },
       {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.500002,
+        "values": [0.500002, 1.0, 1.5, 1.999998, 2.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
         "channel": "dmg",
         "scope": ["cat"],
         "per_rank": 0.0,
@@ -1961,14 +1990,6 @@
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["shapeshift"],
-        "per_rank": 0.500002,
-        "values": [0.500002, 1.0, 1.5, 1.999998, 2.5],
-        "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
       }
     ]
@@ -2289,7 +2310,7 @@
     ]
   },
   "Vengeance": {
-    "note": "+20%/rank crit damage bonus on Arcane/Nature damage spells (healing crits are unaffected). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 10.1% DPS in the simulator (scorer said 11.4% on the same scale); already within tolerance, raid effects split off unchanged (11.4%). Other modes unchanged.",
+    "note": "+20%/rank crit damage bonus on Arcane/Nature damage spells (healing crits are unaffected). Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 10.2% DPS in the simulator (scorer said 11.6% on the same scale); already within tolerance, raid effects split off unchanged (11.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -2317,7 +2338,7 @@
     ]
   },
   "Ferocity": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 1.6% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 27.5% DPS in the simulator (scorer said 30.4% on the same scale); already within tolerance, raid effects split off unchanged (30.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -2361,23 +2382,23 @@
       {
         "channel": "resource_cost",
         "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
-        "values": [1.321581, 2.643187, 3.964768, 5.286348, 6.607953],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
         "values": [0.833851, 1.667702, 2.501553, 3.335404, 4.169254],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.741683, 3.483398, 5.225081, 6.966762, 8.708476],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Heart of the Wild": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2530,54 +2551,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.007348, 0.014695, 0.022043, 0.029391, 0.036738],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:stamina", "form:bear"],
-        "values": [0.014695, 0.029391, 0.044085, 0.058782, 0.073477],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength", "form:cat"],
-        "values": [0.007348, 0.014695, 0.022043, 0.029391, 0.036738],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
-        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:stamina", "form:bear"],
-        "values": [0.010546, 0.021092, 0.031639, 0.042185, 0.052731],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength", "form:cat"],
-        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["tank"],
@@ -2646,11 +2619,59 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.007348, 0.014695, 0.022043, 0.029391, 0.036738],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.014695, 0.029391, 0.044085, 0.058782, 0.073477],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.007348, 0.014695, 0.022043, 0.029391, 0.036738],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.010546, 0.021092, 0.031639, 0.042185, 0.052731],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Natural Instinct": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 1.8% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.1% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.1% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.5%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.3% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -2682,6 +2703,14 @@
         "values": [0.1, 0.2],
         "source": "parsed",
         "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.061454, 0.122907],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
       },
       {
         "channel": "crit_bonus",
@@ -2698,19 +2727,11 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "crit_bonus",
-        "scope": ["type:melee"],
-        "values": [0.061454, 0.122907],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Rend and Tear": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 3.9% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 4.7% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.9%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 3.7% DPS in the simulator (scorer said 3.8% on the same scale); already within tolerance, raid effects split off unchanged (3.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2746,6 +2767,14 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
+        "values": [0.005023, 0.010045, 0.015068, 0.020091, 0.025113],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
         "values": [0.010477, 0.020956, 0.031433, 0.04191, 0.052387],
         "source": "parsed",
         "modes": ["raid"],
@@ -2754,23 +2783,15 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
-        "values": [0.013674, 0.027442, 0.0413, 0.055253, 0.069297],
+        "values": [0.010441, 0.020954, 0.031535, 0.042189, 0.052913],
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:melee"],
-        "values": [0.005023, 0.010045, 0.015068, 0.020091, 0.025113],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Nature's Majesty": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 5.4% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2814,6 +2835,22 @@
       {
         "channel": "crit",
         "scope": ["type:melee", "type:spell"],
+        "values": [0.013881, 0.027761],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.011061, 0.022121],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
         "values": [0.02, 0.04],
         "source": "parsed",
         "modes": ["raid"],
@@ -2830,31 +2867,15 @@
       {
         "channel": "crit",
         "scope": ["type:melee", "type:spell"],
-        "values": [0.019444, 0.038886],
+        "values": [0.045403, 0.090801],
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee", "type:spell"],
-        "values": [0.013881, 0.027761],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee", "type:spell"],
-        "values": [0.011061, 0.022121],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
       }
     ]
   },
   "Naturalist": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.6% time per kill in the simulator (scorer said 3.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.6% time per kill in the simulator (scorer said 3.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.8%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 5.0% DPS in the simulator (scorer said 5.0% on the same scale); already within tolerance, raid effects split off unchanged (5.0%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.7% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2935,54 +2956,6 @@
         "specs": ["resto-heal"]
       },
       {
-        "channel": "dmg",
-        "scope": ["all"],
-        "values": [0.01, 0.02, 0.029999, 0.039999, 0.05],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Healing Touch"],
-        "values": [0.099998, 0.199997, 0.299995, 0.399993, 0.499991],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Healing Touch"],
-        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
-        "values": [0.006892, 0.013805, 0.020744, 0.027707, 0.034694],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Healing Touch"],
-        "values": [0.068794, 0.137588, 0.206382, 0.275176, 0.34397],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
         "channel": "cast_time",
         "scope": ["ability:Healing Touch"],
         "values": [0.086548, 0.173095, 0.259643, 0.346191, 0.432738],
@@ -3013,11 +2986,59 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.099998, 0.199997, 0.299995, 0.399993, 0.499991],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.029999, 0.039999, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.068794, 0.137588, 0.206382, 0.275176, 0.34397],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.006892, 0.013805, 0.020744, 0.027707, 0.034694],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Moonglow": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 21.3% DPS in the simulator (scorer said 22.1% on the same scale); already within tolerance, raid effects split off unchanged (21.5%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 10.2% time per kill in the simulator (scorer said 7.6% on the same scale); leveling-st/solo-60 values scaled x1.58 to match (10.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 10.2% time per kill in the simulator (scorer said 7.6% on the same scale); leveling-st/solo-60 values scaled x1.58 to match (10.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 24.2% DPS in the simulator (scorer said 21.8% on the same scale); already within tolerance, raid effects split off unchanged (24.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -3056,7 +3077,7 @@
         "scope": ["type:spell"],
         "values": [0.0],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "heal", "tank", "pvp"],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"],
         "specs": ["feral-cat-dps"]
       },
       {
@@ -3078,6 +3099,14 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell"],
+        "values": [0.460752, 0.9791, 1.439853],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
         "values": [0.177989, 0.378226, 0.556216],
         "source": "parsed",
         "modes": ["raid"],
@@ -3086,15 +3115,15 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell"],
-        "values": [0.460752, 0.9791, 1.439853],
+        "values": [0.0],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
       }
     ]
   },
   "Shredding Attacks": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 5.3% DPS in the simulator (scorer said 6.2% on the same scale); already within tolerance, raid effects split off unchanged (6.2%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 18.9% DPS in the simulator (scorer said 18.2% on the same scale); already within tolerance, raid effects split off unchanged (17.9%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 6.4% DPS in the simulator (scorer said 7.0% on the same scale); already within tolerance, raid effects split off unchanged (7.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -3173,38 +3202,6 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
-      },
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Shred"],
-        "values": [10.954397, 21.908794, 32.86319],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Lacerate"],
-        "values": [1.825726, 3.651473, 5.477198],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["feral-cat-dps"]
-      },
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Shred"],
-        "values": [7.014309, 14.028618, 21.042927],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
-      },
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Lacerate"],
-        "values": [1.169051, 2.338103, 3.507154],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["feral-bear-tank"]
       },
       {
         "channel": "resource_cost",
@@ -3221,11 +3218,43 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.825726, 3.651473, 5.477198],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [10.954397, 21.908794, 32.86319],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [7.014309, 14.028618, 21.042927],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [3.853736, 7.707475, 11.561211],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
       }
     ]
   },
   "Improved Moonfire": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.6% time per kill in the simulator (scorer said 3.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.6% time per kill in the simulator (scorer said 3.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.0%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 3.4% on the same scale); already within tolerance, raid effects split off unchanged (3.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3276,39 +3305,39 @@
       {
         "channel": "dmg",
         "scope": ["ability:Moonfire"],
-        "values": [0.05, 0.1],
+        "values": [0.042255, 0.084509],
         "source": "parsed",
-        "modes": ["raid"],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "crit",
         "scope": ["ability:Moonfire"],
-        "values": [0.05, 0.1],
+        "values": [0.042255, 0.084509],
         "source": "parsed",
-        "modes": ["raid"],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Moonfire"],
-        "values": [0.042255, 0.084509],
+        "values": [0.05, 0.1],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
+        "modes": ["raid"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "crit",
         "scope": ["ability:Moonfire"],
-        "values": [0.042255, 0.084509],
+        "values": [0.05, 0.1],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
+        "modes": ["raid"],
         "specs": ["balance-dps"]
       }
     ]
   },
   "Moonfury": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3336,7 +3365,7 @@
     ]
   },
   "Reflection": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 8.7% DPS in the simulator (scorer said 7.6% on the same scale); already within tolerance, raid effects split off unchanged (7.7%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.9% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.9% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 8.9% DPS in the simulator (scorer said 7.8% on the same scale); already within tolerance, raid effects split off unchanged (7.6%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.4% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -3344,7 +3373,7 @@
         "values": [0.17, 0.33, 0.5],
         "source": "parsed",
         "modes": ["raid"],
-        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+        "specs": ["resto-heal", "feral-bear-tank"]
       },
       {
         "channel": "regen",
@@ -3420,14 +3449,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.069828, 0.135548, 0.205377],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -3440,6 +3461,22 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.069828, 0.135548, 0.205377],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.049069, 0.095253, 0.144322],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
       }
     ]
   },

@@ -65,31 +65,13 @@
 **Restoration — PvP (derived)** (`druid/research/pvp/builds/restoration-pvp.md`)
 - [ ] A derived Restoration PvP build: check it in duels and battlegrounds at launch.
 
-**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (parse)** (`druid/research/raid/builds/opt-balance-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (parse)** (`druid/research/raid/builds/opt-feral-cat-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)** (`druid/research/raid/builds/feral-combat-shifting-power-raid.md`)
 - [ ] Does powershifting work in Forever as the simulator plays it (Furor's energy on every Cat Form)? Check at launch.
-
-**Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
-- [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
 
 **Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (leveling-st)** (`druid/research/leveling/builds/opt-feral-cat-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (solo-60)** (`druid/research/leveling/builds/opt-feral-cat-dps-solo-60.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (raid-dps)** (`druid/research/raid/builds/opt-feral-cat-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)** (`druid/research/raid/builds/opt-resto-heal-raid-heal.md`)
@@ -106,6 +88,24 @@
 
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (parse)** (`druid/research/raid/builds/opt-balance-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (raid-dps)** (`druid/research/raid/builds/opt-feral-cat-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (parse)** (`druid/research/raid/builds/opt-feral-cat-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
+- [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
 
 ### Hunter
 
@@ -227,6 +227,9 @@
 
 **Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
 - [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
+
+**Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
+- [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
 
 ### Mage
 
@@ -538,15 +541,6 @@
 **Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
 - [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
 
-**Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
-- [ ] An open-search Combat build: check it against the community's Combat builds at launch.
-
-**Subtlety — Raid (open talent search)** (`rogue/research/raid/builds/subtlety-open-raid.md`)
-- [ ] An open-search Subtlety build: check it against the community's Subtlety builds at launch.
-
-**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
-- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
-
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)** (`rogue/research/leveling/builds/opt-combat-daggers-raid-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -559,15 +553,6 @@
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)** (`rogue/research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
-- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
-
-**Combat — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-open-leveling.md`)
-- [ ] An open-search Combat leveling build: check it while leveling at launch.
-
-**Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
-- [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
-
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-swords-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -579,6 +564,24 @@
 
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
+- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
+
+**Combat — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-open-leveling.md`)
+- [ ] An open-search Combat leveling build: check it while leveling at launch.
+
+**Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
+- [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
+
+**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
+- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
+
+**Assassination — Leveling (open talent search)** (`rogue/research/leveling/builds/assassination-open-leveling.md`)
+- [ ] An open-search Assassination leveling build: check it while leveling at launch.
+
+**Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/subtlety-open-leveling.md`)
+- [ ] An open-search Subtlety leveling build: check it while leveling at launch.
 
 ### Shaman
 
@@ -617,12 +620,6 @@
 **Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
 - [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
 
-**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)** (`shaman/research/raid/builds/opt-elemental-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
 - [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
@@ -630,12 +627,6 @@
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (solo-60)** (`shaman/research/leveling/builds/opt-enhancement-dps-solo-60.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)** (`shaman/research/raid/builds/opt-enhancement-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Raid healing: Chain Heal 45%, Healing Wave 35%, Lesser Healing Wave 15%, Healing Stream Totem 5% (raid-heal)** (`shaman/research/raid/builds/opt-resto-heal-raid-heal.md`)
@@ -647,14 +638,32 @@
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st)** (`shaman/research/leveling/builds/opt-elemental-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)** (`shaman/research/raid/builds/opt-elemental-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)** (`shaman/research/raid/builds/opt-enhancement-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
+- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
+
 **Elemental-Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-enhancement-open-leveling.md`)
 - [ ] An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 
 **Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
 - [ ] An open-search Enhancement leveling build: check it while leveling at launch.
 
-**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
-- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+**Elemental — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-open-leveling.md`)
+- [ ] An open-search Elemental leveling build: check it while leveling at launch.
 
 ### Warlock
 
@@ -752,6 +761,9 @@
 
 **Demonology/Destruction hybrid — Leveling (open talent search)** (`warlock/research/leveling/builds/hybrid-demonology-destruction-open-leveling.md`)
 - [ ] An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
+
+**Destruction — Leveling (open talent search)** (`warlock/research/leveling/builds/destruction-open-leveling.md`)
+- [ ] An open-search Destruction leveling build: check it while leveling at launch.
 
 ### Warrior
 

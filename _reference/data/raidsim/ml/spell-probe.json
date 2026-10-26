@@ -5797,8 +5797,8 @@
   "spec": "any",
   "entry": "feral-cat-dps",
   "setting": "raid",
-  "date": "2026-10-10",
-  "base_dps": 698.33,
+  "date": "2026-10-26",
+  "base_dps": 754.3,
   "abilities": [
    {
     "ability": "Berserk",
@@ -5810,9 +5810,9 @@
     "best": {
      "line": "plain",
      "spot": "in the middle",
-     "gain_seed1": -0.0007,
+     "gain_seed1": 0.0,
      "split": "9/33/9",
-     "vs_spec_build": -0.0007
+     "vs_spec_build": 0.0
     },
     "kept": false
    }

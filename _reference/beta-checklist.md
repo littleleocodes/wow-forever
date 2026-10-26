@@ -98,6 +98,7 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - An open-search Beast-Marks leveling build: check it while leveling at launch.
 - An open-search Marksmanship leveling build: check it while leveling at launch.
 - An open-search Beast-Survival leveling build: check it while leveling at launch.
+- An open-search Beast Mastery leveling build: check it while leveling at launch.
 
 ## Mage
 
@@ -285,9 +286,11 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - A generated Combat build: check it against the community's Combat builds at launch.
 - A derived Subtlety leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Daggers (split) leveling build: check it while leveling at launch.
 - An open-search Combat leveling build: check it while leveling at launch.
 - An open-search Combat-Subtlety leveling build: check it while leveling at launch.
+- An open-search Daggers (split) leveling build: check it while leveling at launch.
+- An open-search Assassination leveling build: check it while leveling at launch.
+- An open-search Subtlety leveling build: check it while leveling at launch.
 
 ## Shaman
 
@@ -301,8 +304,8 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 | Talent | What the model assumes |
 |---|---|
 | Earthbound | Earthbind Totem roots on cast: kiting/AoE control while leveling. PvP (2026-09-27): high, kite: Earthbind Totem roots nearby enemies for 5 s when dropped (15 s cooldown): free casts or distance against melee. Unknown: di |
-| Mental Dexterity | Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Raid sim calibration (2026-10 |
-| Mental Quickness | Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Raid sim calibration (2026-10-03, Ell |
+| Mental Dexterity | Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration [enhanc |
+| Mental Quickness | Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration [enhancement-dp |
 | Stormstrike | Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8 |
 
 ### 3. Confirm level-scaled spell numbers (1 reachable talents quote level-60 client values)
@@ -332,9 +335,10 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 - Two-hander / dual-wield availability for shamans.
 - Mental Dexterity and Mental Quickness scaling at max rank (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 - An open-search Enhancement leveling build: check it while leveling at launch.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Elemental leveling build: check it while leveling at launch.
 
 ## Warlock
 
@@ -385,6 +389,7 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - An open-search Affliction leveling build: check it while leveling at launch.
 - An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 - An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
+- An open-search Destruction leveling build: check it while leveling at launch.
 
 ## Warrior
 

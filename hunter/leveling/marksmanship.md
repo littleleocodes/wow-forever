@@ -4,7 +4,7 @@
 
 **[Marksmanship — Leveling](../research/leveling/builds/marksmanship-open-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-015355200101214--7)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Marksmanship with a pet), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 **Signature spells:** 65% of the damage at level 60 in the fight lab comes from Auto Shot, Aimed Shot, Arcane Shot, Multi-Shot, Sniper Shot, Barrage, Serpent Sting (the spec's rule: at least 60%; **Aimed Shot** cast in every fight).
 
@@ -25,22 +25,23 @@
 
 ## Why this rotation
 
-Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Trueshot Aura** always on and **Auto Shot** in between. No Arcane Shot and no Multi-Shot on a single mob.
+Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Trueshot Aura** always on and **Auto Shot** in between. No Arcane Shot and no Multi-Shot on a single mob. The build fills Marksmanship to 30 points and puts the other 21 into the pet.
 
 **Why it works**
 
 - Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own.
-- **Aimed Shot** gets the cooldown it shares with **Multi-Shot**, while the mob has more than a quarter of its health. The fight lab's tuned rules never cast Multi-Shot on one mob (about 3.5% faster per kill) nor Arcane Shot (about 4.5% faster): its mana goes to **Aimed Shot** and **Serpent Sting**, and you sit less between pulls.
-- **Trueshot Aura** (level 26) is a buff you cast in Forever, not a passive aura: keep it on. **Rapid Fire** at the start of a fight when ready; **Rapid Killing** (levels 24-25) cuts its cooldown to 3 minutes.
-- **Auto Shot** is still the largest share (about 38% at 60, **Serpent Sting** and **Aimed Shot** about 15% each) and cannot fire within 8 yards: step back out rather than melee while the pet holds the mob.
+- **Aimed Shot** gets the cooldown it shares with **Multi-Shot**, while the mob has more than a quarter of its health. Never casting Multi-Shot on one mob was by far the largest gain of the fight lab's tuning (2026-10-24), and Arcane Shot goes too (about 3% faster per kill): its mana goes to **Aimed Shot** and **Serpent Sting**, and you sit less between pulls.
+- **Lethal Attacks** and **Careful Aim** (levels 10-19) first, **Rapid Killing** (23-24) cuts **Rapid Fire** to 3 minutes, **Trueshot Aura** (25) is a buff you cast in Forever: keep it on. **Efficiency** (27-30, 39) is worth almost a second a kill at 60.
+- From level 33 the points go to the pet: **Deadly Aspects**, **Focused Fire**, **Endurance Training**, then **Unleashed Fury** and **Ferocity** (43-52), in the fight lab's removal runs at 60 the build's most valuable talents with **Efficiency**.
+- **Auto Shot** is still the largest share (about 35% at 60, the cat about a third, **Serpent Sting** and **Aimed Shot** about 15% each) and cannot fire within 8 yards: step back out rather than melee while the pet holds the mob.
 - Drink below 15% mana rather than a third: it measured slightly faster (under 1% per kill).
 
 **Caveats**
 
-- **Sniper Shot** (level 41) and **Scatter Shot** (31) are not in the list: the fight lab does not cast them, so their worth while leveling is unmeasured. A 4-second **Sniper Shot** is long next to fights of 20 to 30 seconds.
-- **Rapid Killing** also makes your next Shot within 20 seconds of a kill hit 20% harder, and with 2 points in **Rapid Recuperation** spending it lets all your mana regeneration continue while casting for 15 seconds. The fight lab leaves this out: let the next pull's first **Aimed Shot** spend it.
+- **Scatter Shot** (31) and **Improved Concussive Shot** (60) measured nothing in the fight lab: they are the points the tree's rows need. **Barrage** (54-55) adds 10% to **Aimed Shot**, **Multi-Shot** and **Volley**: little on one mob, more on several.
+- **Sniper Shot** is not in the list: the fight lab does not cast it while leveling, so its worth there is unmeasured. A 4-second **Sniper Shot** is long next to fights of 20 to 30 seconds.
+- **Rapid Killing** also makes your next Shot within 20 seconds of a kill hit 20% harder. **Rapid Recuperation** (32): **Serpent Sting** lets half your mana regeneration continue while casting for 15 seconds, all of it when you spend that bonus. The fight lab leaves the bonus out: let the next pull's first **Aimed Shot** spend it.
 - A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
-- From level 45, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
 - Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
 - **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
@@ -48,8 +49,6 @@ Marksmanship levels with the pet tanking, but more of the damage is your own: **
 
 - Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
 - A mob on you while the pet is down: **Scatter Shot** disorients it for 4 seconds (any damage breaks it), so step back past 8 yards and shoot.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -95,5 +94,5 @@ One point per level from 10, in this order:
 - [Leveling — Marksmanship with a pet](../research/leveling/builds/leveling-beast-mastery.md) (20/31/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/43202005031-3053512001022151--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

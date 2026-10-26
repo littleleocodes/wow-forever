@@ -18,9 +18,9 @@
 
 **In the fight**, top to bottom:
 
-1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob.
-2. **Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only while you have more than half your mana; **Immolate** only above half your mana too, and not on a mob below about a third of its health.
-3. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain** when the mob has too little health left for a bolt), which the dots and brands rarely leave you.
+1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob and you have more than 30% of your mana.
+2. **Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only on a mob above 35% of its health; **Immolate** only above half your mana, and not on a mob below about a third of its health.
+3. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain**, above 30% of your mana, when the mob has too little health left for a bolt), which the dots and brands rarely leave you.
 4. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).
 5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
 6. With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.
@@ -30,28 +30,27 @@
 
 ## Why this rotation
 
-Demonology levels on the Voidwalker and the wand: it holds the mob, **Demonic Brand** (levels 28-29 and 34) turns **Searing Pain** into extra Voidwalker damage, and your dots from the Affliction points do the rest. **Shadow Bolt** only with nearly full mana, which this list rarely leaves you.
+Demonology levels on the Voidwalker: its talents make the demon both the tank and a large share of the damage, **Demonic Brand** (levels 28-29 and 34) turns **Searing Pain** into extra Voidwalker hits, and your dots from the Affliction points and the wand do the rest. The page judges Demonology by what the demon adds, not by your own spells.
 
 **Why it works**
 
-- Send the Voidwalker in first: **Unholy Power** (levels 10-14), **Improved Voidwalker** (24-26), **Demonic Knowledge** (31-33) and **Master Demonologist** (35-39) make it and you stronger, and **Soul Link** (30) moves 30% of the damage you take to it and adds 3% damage for both. **Demonic Sacrifice** is only the step to **Soul Link**: never sacrifice your tank.
-- **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob: the Voidwalker's next attacks (6 with all 3 points) each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. The fight lab casts it about twice per kill from level 30.
-- **Bane of Agony** and, from level 60, **Siphon Life** on every mob above about a third of its health. **Corruption** only while you have more than half your mana: the 2026-10-20 re-tune measured that about 3% faster per kill, and it leaves **Corruption** off about half the mobs at 40-60. **Immolate** needs half your mana too, so after level 30 it is rare.
-- The wand is your filler. **Shadow Bolt** and filler **Searing Pain** wait for 80% mana, and with the brands and dots you almost never get there: the fight lab casts no **Shadow Bolt** past level 20, and needs no drinking at any level.
-- **Drain Life** below 60% health and in place of the wand below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health (rare). Between fights, **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows**, eat below 55% health.
+- Send the Voidwalker in first: **Unholy Power** (levels 10-14), **Demonic Energies** (22-23), **Improved Voidwalker** (24-26), **Demonic Knowledge** (31-33) and **Master Demonologist** (35-39) make it and you stronger, and **Soul Link** (30) moves 30% of the damage you take to it and adds 3% damage for both. **Demonic Sacrifice** is only the step to **Soul Link**: never sacrifice your tank.
+- **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a quarter of its health and you have more than 30% mana (the 2026-10-24 re-tune, about 1% faster per kill): the Voidwalker's next 6 attacks each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. The open search measured **Demonic Brand** the build's second most valuable talent at 60, after **Siphon Life**.
+- **Bane of Agony**, **Corruption** and, from level 60, **Siphon Life** on every mob above about a third of its health (the re-tune's **Corruption** rule, about 1% faster per kill). **Immolate** only while you have more than half your mana: common at level 20, rare once the brand costs mana from level 30.
+- The wand is your filler. **Shadow Bolt** and filler **Searing Pain** wait for 80% mana, and with the brands and dots you almost never get there: the fight lab casts almost no **Shadow Bolt** past level 20 and needs no drinking.
+- **Drain Life** below 60% health and in place of the wand below 85% (with **Soul Link** and the Voidwalker holding the mob, the fight lab rarely needs it); **Life Tap** in a fight only when you are short of mana and above 60% health. Between fights, **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows**, eat below 55% health.
 
 **Caveats**
 
 - This build has no **Decimation** and no **Improved Health Funnel**, so the **Soul Fire** and in-fight **Health Funnel** lines do not apply.
 - **Improved Imp** does nothing while the Voidwalker is out: those 3 points only help reach the deeper talents.
-- When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and let the Voidwalker take it back.
+- When a mob reaches you, cast **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and let the Voidwalker take it back.
+- The Affliction/Demonology hybrid (27/24/0) plays this same list and levels about 2% faster per kill at levels 20-60; this page keeps 30 points in Demonology.
 
 **When to change it**
 
 - If the Voidwalker dies, finish the mob with dots, **Death Coil** and the wand, and summon a new one before the next pull: without a demon out you also lose **Demonic Knowledge**, **Soul Link** and **Master Demonologist**.
 - Finish a nearly dead mob with the wand; start no new dot on it.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -91,5 +90,5 @@ One point per level from 10, in this order:
 | 60 | 33 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

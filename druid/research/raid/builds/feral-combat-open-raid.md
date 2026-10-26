@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Feral Combat raid build the open talent search found on 2026-10-16: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over feral-combat-shifting-power-raid, the best of our builds in that rotation.
+The Feral Combat raid build the open talent search found on 2026-10-26: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -45,33 +45,32 @@ The Feral Combat raid build the open talent search found on 2026-10-16: every le
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Nature's Focus** | 1/5 | changed | Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
-| **Furor** | 4/5 | changed | Gives you a 80% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 80% of the Energy you had when last in Cat Form, plus 8 Energy per second spent outside Bear Form or Dire Bear Form, up to 80 Energy. |
+| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 | **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 
 ## Core talents (priority order)
 
-1. **Shifting Power** — 126 DPS lost without it (18% of the build in a full raid; removal, 12,000 fights).
-2. **Shredding Attacks** — 103 DPS lost without it (15% of the build in a full raid; removal, 12,000 fights).
-3. **Improved Shifting Power** — 58 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
-4. **Rend and Tear** — 34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-5. **Sharpened Claws** — 32 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-6. **Naturalist** — 26 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-7. **Natural Instinct** — 26 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-8. **Savage Fury** — 21 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+1. **Shifting Power** — 124 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights).
+2. **Shredding Attacks** — 70 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+3. **Improved Shifting Power** — 56 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
+4. **Rend and Tear** — 41 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+5. **Sharpened Claws** — 34 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+6. **Natural Instinct** — 29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+7. **Naturalist** — 28 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+8. **Savage Fury** — 25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**3 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever fork b7083fa (client 70425)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 398 | +0.0% | 756 | -1.4% | 119 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 398 | +0.0% | 756 | -1.4% | 119 s |
-| 3 | **[`feral-combat-open-raid`](feral-combat-open-raid.md)** | ours: derived (open search) | 9/33/9 | 393 | -1.1% | 766 | +0.0% | 119 s |
-| 4 | *Feral* | community simulator | - | 392 | -1.3% | 724 | -5.5% | 86 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 371 | -6.7% | 655 | -14.5% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 360 | -9.5% | 638 | -16.8% | 0 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 361 | +0.0% | 743 | -1.5% | 66 s |
+| 2 | **[`feral-combat-open-raid`](feral-combat-open-raid.md)** | ours: derived (open search) | 9/33/9 | 358 | -0.8% | 754 | +0.0% | 66 s |
+| 3 | *Hybrid* | community simulator | - | 352 | -2.4% | 722 | -4.2% | 65 s |
+| 4 | *Cat* | community simulator | - | 351 | -2.7% | 736 | -2.5% | 66 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 334 | -7.3% | 643 | -14.7% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 325 | -10.0% | 630 | -16.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +85,7 @@ The Feral Combat raid build the open talent search found on 2026-10-16: every le
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-16, 8 changes to the base rotation; third-seed check: feral-combat-open-raid 751 -> 759 DPS (+1.1%), feral-combat-shifting-power-raid 749 -> 755 DPS (+0.8%), feral-cat-dps 634 -> 638 DPS (+0.7%), opt-feral-cat-dps-raid-dps 645 -> 654 DPS (+1.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-26, 9 changes to the base rotation; third-seed check: feral-combat-open-raid 757 -> 754 DPS (-0.4%), feral-combat-shifting-power-raid 750 -> 743 DPS (-0.9%), feral-cat-dps 635 -> 630 DPS (-0.7%), opt-feral-cat-dps-raid-dps 644 -> 643 DPS (-0.1%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
@@ -95,24 +94,24 @@ The Feral Combat raid build the open talent search found on 2026-10-16: every le
   6. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%, pass 5)
   7. insert at the top: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+7.5%, pass 7)
   8. drop 'combo points < 5' from the condition: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+0.5%, pass 7)
+  9. insert at the top: if (combo points ≥ 5 and not time left in the fight ≥ 10s or combo points ≥ 3 and time left in the fight < 3s): cast Ferocious Bite (rank 4) (+0.2%, pass 8)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-combat-open-raid`](feral-combat-open-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 33.0 |
-| 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.8 |
-| 5 | cast Shred | 18.4 |
-| 6 | if Shifting Power is known and energy ≤ 60: cast Shifting Power | 3.7 |
-| 7 | if time left in the fight ≥ 6s: cast Faerie Fire | 33.0 |
-| 8 | cast Goblin Sapper Charge | as ready |
-| 9 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
-| 10 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
-| 11 | if not Cat Form is up: cast Cat Form | 0.3 |
+| 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 8.9 |
+| 2 | if Cat Form is up: use every other cooldown when ready | as ready |
+| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.6 |
+| 4 | cast Shred | 17.6 |
+| 5 | if Shifting Power is known and energy ≤ 60: cast Shifting Power | 3.3 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 8.9 |
+| 7 | cast Goblin Sapper Charge | as ready |
+| 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
+| 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
+| 10 | if not Cat Form is up: cast Cat Form | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Tiger's Fury, cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
 
 Damage by ability:
 
@@ -120,19 +119,15 @@ Damage by ability:
 |---|---|
 | Rip | 36% |
 | Shred | 32% |
-| Auto Attack | 29% |
+| Auto Attack | 31% |
 | Goblin Sapper Charge | 2% |
-| Dragonbreath Chili | 1% |
 
 ## Notes
 
-- +20.6% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (feral-cat-dps, full raid): 9/33/9 (Feral Combat) at 698.2 DPS; feral-combat-shifting-power-raid 691.0, opt-feral-cat-dps-raid-dps 593.3, feral-cat-dps 578.8 in the same fights; 4,652 builds simulated, 2 independent runs reached the top.
-- The feral-cat-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): balance-dps -64.6%; none adopted.
-- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Ferocity, Feral Swiftness, Leader of the Pack, Nature's Focus.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever b7083fa with this project's patches), not in-game measurements.
-- 2026-10-16 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Feral Swiftness -> Ferocity (+0.2% DPS). Net +0.27% on a third seed.
+- +19.7% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (feral-cat-dps, full raid): 9/33/9 (Feral Combat) at 753.7 DPS; feral-combat-shifting-power-raid 743.2, opt-feral-cat-dps-raid-dps 643.1, feral-cat-dps 629.8 in the same fights; 4,989 builds simulated, 2 independent runs reached the top.
+- Sibling rotations tried on it (10,000 fights): balance-dps -65.6%; none adopted.
+- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
@@ -141,7 +136,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/druid/60/050022-45100032021031212051-144-6>
+- <https://talentsforever.com/druid/60/050022-55000032021031212051-054-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

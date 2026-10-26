@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +86.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +84.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -50,14 +50,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Core talents (priority order)
 
-1. **Shredding Attacks** — Removing it costs 29.0 points of score in this model.
-2. **Blood Frenzy** — Removing it costs 14.2 points of score in this model.
-3. **Sharpened Claws** — Removing it costs 9.7 points of score in this model.
+1. **Shredding Attacks** — Removing it costs 28.0 points of score in this model.
+2. **Blood Frenzy** — Removing it costs 14.1 points of score in this model.
+3. **Sharpened Claws** — Removing it costs 9.6 points of score in this model.
 4. **Rend and Tear** — Removing it costs 9.2 points of score in this model.
 5. **Naturalist** — Removing it costs 8.8 points of score in this model.
 6. **Predatory Strikes** — Removing it costs 5.9 points of score in this model.
-7. **Natural Instinct** — Removing it costs 5.6 points of score in this model.
-8. **Nature's Reach** — Removing it costs 5.5 points of score in this model.
+7. **Natural Instinct** — Removing it costs 5.5 points of score in this model.
+8. **Nature's Reach** — Removing it costs 5.4 points of score in this model.
 
 ## Rotation
 

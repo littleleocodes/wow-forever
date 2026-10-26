@@ -71,16 +71,14 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 375 | +0.0% | 515 | +0.0% | 0 s |
-| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
-| 3 | [`elemental-raid`](elemental-raid.md) | ours: generated | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 334 | -11.0% | 500 | -2.9% | 0 s |
-| 5 | *Level 60* | community simulator | - | 332 | -11.5% | 485 | -5.8% | 0 s |
-| 6 | *Stormcaller 28/23/0* | community simulator | - | 304 | -19.1% | 477 | -7.5% | 0 s |
+| 1 | *Standard* | community simulator | - | 507 | +0.0% | 599 | -3.3% | 1 s |
+| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/11/9 | 506 | -0.3% | 600 | -3.1% | 2 s |
+| 3 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 497 | -2.0% | 619 | +0.0% | 9 s |
+| 4 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 484 | -4.5% | 586 | -5.4% | 7 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,11 +87,15 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
   2. only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   3. always rank 8 instead of rank 10: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.3%, pass 1)
   4. always rank 7 instead of rank 8: if mana ≥ (time left in the fight × 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: elemental-raid-dps 517 -> 518 DPS (+0.1%), sim preset: Elemental 31/6/14 493 -> 503 DPS (+2.1%), opt-elemental-dps-raid-dps 509 -> 510 DPS (+0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-26, 8 changes to the base rotation; third-seed check: open winner 618 -> 622 DPS (+0.7%), elemental-raid-dps 616 -> 619 DPS (+0.5%), sim preset: Standard 596 -> 602 DPS (+1.1%), opt-elemental-dps-raid-dps 597 -> 603 DPS (+1.1%), elemental-raid 583 -> 586 DPS (+0.5%)):
   1. only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   2. always rank 2 instead of rank 4: cast Lightning Bolt (+0.4%, pass 1)
   3. threshold 100 -> 200: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+0.2%, pass 2)
   4. drop the condition: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+1.4%, pass 8)
+  5. threshold 0s -> 1s: if number of targets = 1 and time left on the totem ≤ 0s and time left in the fight ≥ 10s: cast Searing Totem (+0.2%, pass 9)
+  6. insert in the middle: if mana % < 80%: cast ResourcePotion (+0.2%, pass 9)
+  7. move down below 'if not Flame Shock is on the target: cast Flame Shock': use every other cooldown when ready (+0.2%, pass 9)
+  8. drop 'Clearcasting is up' from the condition: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 200)): cast Chain Lightning (+0.3%, pass 10)
 
 Before the pull: at -2s: cast Lightning Bolt.
 
@@ -101,19 +103,24 @@ Before the pull: at -2s: cast Lightning Bolt.
 |---|---|---|
 | 1 | if number of targets = 1 and time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 |
-| 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 3.2 |
+| 4 | cast Lava Burst (rank 3) | 4.5 |
+| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.1 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 19.6 |
+| 7 | cast Lightning Bolt (rank 8) | 19.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Magma Totem, cast Lava Burst (rank 3), cast Lightning Bolt (rank 8) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`elemental-raid-dps`](elemental-raid-dps.md) |
 |---|---|
-| Lightning Bolt | 68% |
-| Flame Shock | 19% |
-| Attack | 6% |
-| Chain Lightning | 6% |
+| Lightning Bolt | 55% |
+| Lava Burst | 20% |
+| Flame Shock | 14% |
+| Searing Totem | 6% |
+| Chain Lightning | 4% |
+| Demonic Rune | 2% |
 
 ## Notes
 

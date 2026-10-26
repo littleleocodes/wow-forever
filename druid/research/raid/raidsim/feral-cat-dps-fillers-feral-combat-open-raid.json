@@ -3,53 +3,36 @@
  "spec": "feral-cat-dps",
  "build": "feral-combat-open-raid",
  "setting": "raid",
- "date": "2026-10-16",
+ "date": "2026-10-26",
  "tank": false,
  "removal": {
-  "Berserk": 0.01859224531348691,
-  "Blood Frenzy": 0.010500200910635638,
-  "Feral Swiftness": -0.0,
-  "Ferocity": 0.011536995867442501,
-  "Furor": 0.0021821279964985285,
-  "Genesis": 0.016040695132111593,
-  "Heart of the Wild": 0.02299778540954489,
-  "Improved Shifting Power": 0.07492785247150435,
-  "Leader of the Pack": -0.0,
-  "Natural Instinct": 0.03982835735442358,
-  "Naturalist": 0.037064901567847586,
-  "Nature's Focus": -0.0,
-  "Nature's Majesty": 0.031594642740153445,
-  "Nature's Reach": 0.022873072618096457,
-  "Predatory Strikes": 0.026906042894233484,
-  "Rend and Tear": 0.05663800343952419,
-  "Savage Fury": 0.034929932605467284,
-  "Sharpened Claws": 0.04666673283606926,
-  "Shifting Power": 0.16304163925325166,
-  "Shredding Attacks": 0.09123005379628357
+  "Berserk": 0.01943179326040334,
+  "Blood Frenzy": 0.01287131512706019,
+  "Ferocity": 0.013685939479418652,
+  "Furor": 0.005458182396472,
+  "Genesis": 0.016437230676047965,
+  "Heart of the Wild": 0.02188500361287915,
+  "Improved Shifting Power": 0.0751654572801782,
+  "Leader of the Pack": 0.0226763573176485,
+  "Natural Instinct": 0.03885216150359938,
+  "Naturalist": 0.037123189712192195,
+  "Nature's Majesty": 0.029878007164506615,
+  "Nature's Reach": 0.023776759365077837,
+  "Predatory Strikes": 0.025574776191792492,
+  "Rend and Tear": 0.05413811063920315,
+  "Savage Fury": 0.0336736683918738,
+  "Sharpened Claws": 0.0451382819459859,
+  "Shifting Power": 0.16568798310881216,
+  "Shredding Attacks": 0.0953244916680347
  },
- "free": [
-  "Feral Swiftness",
-  "Leader of the Pack",
-  "Nature's Focus"
- ],
+ "free": [],
  "kept_for_rotation": [
-  "Furor",
   "Shifting Power"
  ],
  "active_never_worth": [],
  "abilities_never_cast": [],
- "moves": [
-  {
-   "round": 1,
-   "kind": "gain",
-   "from": "Feral Swiftness",
-   "to": "Ferocity",
-   "seed1": 0.0030844134605483298,
-   "seed2": 0.0022700897072782666,
-   "utility": null
-  }
- ],
- "final_seed3": 0.0026814470476774765,
+ "moves": [],
+ "final_seed3": 0.0,
  "start": {
   "Balance": [
    [
@@ -68,15 +51,11 @@
   "Feral Combat": [
    [
     "Ferocity",
-    4
+    5
    ],
    [
     "Heart of the Wild",
     5
-   ],
-   [
-    "Feral Swiftness",
-    1
    ],
    [
     "Shredding Attacks",
@@ -125,12 +104,8 @@
   ],
   "Restoration": [
    [
-    "Nature's Focus",
-    1
-   ],
-   [
     "Furor",
-    4
+    5
    ],
    [
     "Naturalist",
@@ -209,12 +184,8 @@
   ],
   "Restoration": [
    [
-    "Nature's Focus",
-    1
-   ],
-   [
     "Furor",
-    4
+    5
    ],
    [
     "Naturalist",

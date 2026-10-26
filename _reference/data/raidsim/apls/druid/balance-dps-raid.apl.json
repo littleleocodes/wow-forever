@@ -21,6 +21,21 @@
    "action": {
     "multidot": {
      "spellId": {
+      "spellId": 9835
+     },
+     "maxDots": 1,
+     "maxOverlap": {
+      "const": {
+       "val": "0ms"
+      }
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "multidot": {
+     "spellId": {
       "spellId": 24977
      },
      "maxDots": 1,
@@ -55,21 +70,6 @@
     "castSpell": {
      "spellId": {
       "spellId": 29166
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "multidot": {
-     "spellId": {
-      "spellId": 9835
-     },
-     "maxDots": 1,
-     "maxOverlap": {
-      "const": {
-       "val": "0ms"
-      }
      }
     }
    }

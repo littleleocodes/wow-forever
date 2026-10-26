@@ -83,7 +83,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 338 | +0.0% | 609 | -0.4% | 0 s |
-| 2 | [`subtlety-open-raid`](subtlety-open-raid.md) | ours: derived (open search) | 20/0/31 | 317 | -6.2% | 612 | +0.0% | 0 s |
+| 2 | `subtlety-open-raid` | ours | 20/0/31 | 317 | -6.2% | 612 | +0.0% | 0 s |
 | 3 | *Subtlety Hemo* | community simulator | - | 316 | -6.6% | 609 | -0.4% | 0 s |
 | 4 | *Subtlety BS* | community simulator | - | 300 | -11.1% | 585 | -4.3% | 0 s |
 

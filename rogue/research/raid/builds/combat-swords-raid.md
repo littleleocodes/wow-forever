@@ -77,7 +77,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 336 | +0.0% | 625 | -2.5% | 0 s |
 | 2 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 327 | -2.7% | 629 | -1.9% | 0 s |
-| 3 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 18/33/0 | 325 | -3.3% | 641 | +0.0% | 0 s |
+| 3 | `combat-swords-open-raid` | ours | 18/33/0 | 325 | -3.3% | 641 | +0.0% | 0 s |
 | 4 | *Combat SS* | community simulator | - | 321 | -4.5% | 635 | -1.0% | 0 s |
 | 5 | *Combat BS* | community simulator | - | 315 | -6.4% | 626 | -2.3% | 0 s |
 | 6 | *Asn Muti* | community simulator | - | 292 | -13.3% | 575 | -10.3% | 0 s |

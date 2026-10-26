@@ -28,30 +28,30 @@
 
 ## Why this rotation
 
-Affliction levels by letting its damage-over-time spells do the killing while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Siphon Life** on a healthy mob, **Shadow Bolt** while the mob has more than about a third of its health, then the wand while the dots finish it.
+Affliction levels on its damage-over-time spells while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Siphon Life** on a healthy mob, **Wrack** (level 40) channelled once **Corruption** is up, **Shadow Bolt** while the mob has more than about a third of its health, then the wand while the dots finish it.
 
 **Why it works**
 
-- Send the Voidwalker in first: its **Torment** holds the mob while you stand at range, and your dots build threat slowly enough that it keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
-- **Corruption**, **Bane of Agony** and **Siphon Life** (level 30) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. The 2026-10-20 re-tune measured the 35% rule on **Corruption** about 2% faster per kill, and keeping **Corruption** for when you have more than 15% mana a little under 1%.
-- **Shadow Bolt** fills while the mob has more than 35% of its health and you keep the mana for **Fear** and **Drain Life**; below that, your wand while the dots finish the mob. The tuned rule (no **Shadow Bolt** on a mob below 35%) measured about 6.5% faster per kill, the largest gain of the re-tune.
-- **Immolate** only on a mob above about half its health and while you have more than half your mana: it costs the most of your dots, and the fight lab casts it on one mob in two at level 20 and one in five at 60.
-- **Drain Life** below 60% health, and in place of the wand below 85% (**Improved Drains** and **Soul Siphon** make it stronger). **Life Tap** in a fight only when the next **Shadow Bolt** would eat into your **Fear** and **Drain Life** mana, while you stay above 60% health; between fights tap back to about 70% mana and eat only below 55% health.
+- Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 31) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob through your bolts: the open search measured it the build's most valuable talent at 60. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
+- **Corruption**, **Bane of Agony** and **Siphon Life** (level 34) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. The 2026-10-24 re-tune measured the 35% rule on **Corruption** about 2% faster per kill, and keeping **Corruption** for when you have more than 15% mana a little under 1%.
+- **Wrack** (level 40) is channelled once **Corruption** is on a mob with more than a quarter of its health: 6 seconds of Shadow damage that also makes your other Shadow dots 10% stronger, and **Soul Siphon** (levels 32-33 and 41) and **Improved Drains** (42-44) make it up to 36% and 20% stronger. From level 40 it replaces most of your **Shadow Bolt** casts.
+- **Shadow Bolt** fills while the mob has more than 35% of its health and you keep the mana for **Fear** and **Drain Life**; below that, the wand while the dots finish the mob. The tuned rule (no **Shadow Bolt** on a mob below 35%) measured about 6.5% faster per kill, the largest gain of the re-tune.
+- **Immolate** only on a mob above about half its health and while you have more than half your mana: it is your most expensive dot, so the fight lab casts it on a minority of mobs.
+- **Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when the next **Shadow Bolt** would eat into your **Fear** and **Drain Life** mana, while you stay above 60% health; between fights tap back to about 70% mana and eat only below 55% health.
 
 **Caveats**
 
-- No **Curse of the Elements** while leveling: the 2026-10-20 re-tune measured about 2-3% faster per kill without it (it costs a global cooldown and mana on a mob that dies quickly).
-- This build has no **Wrack** and no **Nightfall**. With **Wrack**, the fight lab channels it once **Corruption** is up.
-- Affliction is the one warlock list that drinks: **Shadow Bolt** spends mana faster than the other specs' wand-heavy play, and when you are too hurt to **Life Tap** you drink below 15% mana (about 6-8 seconds per kill in the fight lab).
-- When a mob reaches you: **Death Coil** if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
+- No **Curse of the Elements** while leveling: the 2026-10-24 re-tune measured about 2-3% faster per kill without it (it costs a global cooldown and mana on a mob that dies quickly).
+- This build has no **Nightfall**. The 14 Demonology points (levels 45-60) are for the Voidwalker: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage, **Demonic Embrace** adds Stamina. **Improved Sayaad** and **Demonic Sacrifice** are only steps to the tier: never sacrifice your tank.
+- Affliction spends more mana than the other warlock lists (**Shadow Bolt** and **Wrack**): when you are too hurt to **Life Tap**, drink below 15% mana.
+- When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
+- The open search's 37/14/0 levels about 5% faster per kill at levels 20-60 than the 33/6/12 hand draft in the fight lab.
 
 **When to change it**
 
 - Finish a nearly dead mob with the wand; start no new spell on it.
 - Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
 - If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -101,5 +101,5 @@ One point per level from 10, in this order:
 - [Affliction — Leveling](../research/leveling/builds/affliction-leveling.md) (33/6/12, 39 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/0550032013500135-00050001-0055002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

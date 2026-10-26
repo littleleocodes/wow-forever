@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +129.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +124.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -21,8 +21,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 |---|---|---|---|
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
-| **Elemental Devastation** | 3/3 | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
-| **Elemental Alacrity** | 2/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.33 sec. |
+| **Reverberation** | 5/5 | changed | Reduces the cooldown of your Shock spells by 1.0 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 
 ### Enhancement (31)
@@ -51,27 +50,27 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Maelstrom Weapon** — Removing it costs 37.6 points of score in this model.
-2. **Stormstrike** — Removing it costs 35.1 points of score in this model.
-3. **Shamanistic Focus** — Removing it costs 23.7 points of score in this model.
-4. **Flurry** — Removing it costs 16.7 points of score in this model.
-5. **Mental Dexterity** — Removing it costs 12.1 points of score in this model.
-6. **Thundering Strikes** — Removing it costs 10.2 points of score in this model.
-7. **Convection** — Removing it costs 9.1 points of score in this model.
-8. **Mental Quickness** — Removing it costs 7.6 points of score in this model.
+1. **Stormstrike** — Removing it costs 35.8 points of score in this model.
+2. **Maelstrom Weapon** — Removing it costs 31.9 points of score in this model.
+3. **Shamanistic Focus** — Removing it costs 17.2 points of score in this model.
+4. **Flurry** — Removing it costs 15.0 points of score in this model.
+5. **Mental Dexterity** — Removing it costs 11.8 points of score in this model.
+6. **Thundering Strikes** — Removing it costs 10.1 points of score in this model.
+7. **Call of Flame** — Removing it costs 8.4 points of score in this model.
+8. **Mental Quickness** — Removing it costs 7.2 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 405 | +0.0% | 754 | +0.0% | 18 s |
-| 2 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 404 | -0.2% | 704 | -6.6% | 4 s |
-| 3 | *Level 60* | community simulator | - | 399 | -1.3% | 704 | -6.6% | 21 s |
-| 4 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 399 | -1.3% | 694 | -7.9% | 4 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/26/8 | 381 | -6.0% | 713 | -5.4% | 2 s |
-| 6 | *Enhancement 16/35/0* | community simulator | - | 362 | -10.6% | 691 | -8.3% | 79 s |
+| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/31/3 | 402 | +0.0% | 734 | +0.0% | 10 s |
+| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 398 | -1.0% | 722 | -1.6% | 5 s |
+| 3 | *Standard* | community simulator | - | 396 | -1.5% | 726 | -1.1% | 13 s |
+| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 386 | -4.0% | 672 | -8.4% | 18 s |
+| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
+| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 15/24/12 | 255 | -36.7% | 437 | -40.4% | 29 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -81,7 +80,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 8 changes to the base rotation; third-seed check: enhancement-ml-raid 715 -> 739 DPS (+3.4%), sim preset: Level 60 675 -> 696 DPS (+3.1%), enhancement-raid-dps 673 -> 683 DPS (+1.5%), opt-enhancement-dps-raid-dps 676 -> 693 DPS (+2.5%), elemental-enhancement-ml-raid 668 -> 690 DPS (+3.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-26, 11 changes to the base rotation; third-seed check: open winner 661 -> 734 DPS (+11.0%), enhancement-ml-raid 647 -> 722 DPS (+11.6%), sim preset: Standard 652 -> 725 DPS (+11.2%), enhancement-raid-dps 615 -> 668 DPS (+8.6%), opt-enhancement-dps-raid-dps 619 -> 671 DPS (+8.3%), elemental-enhancement-ml-raid 345 -> 437 DPS (+26.8%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -90,6 +89,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
   6. move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight left: if not Flame Shock is on the target: cast Flame Shock (+0.2%, pass 2)
   7. threshold 3.75 -> 2.812: if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt (+0.3%, pass 4)
   8. threshold 2.812 -> 4.218: if stacks of Maelstrom Weapon ≥ 2.812: cast Lightning Bolt (+5.1%, pass 8)
+  9. insert at the end: if auraIsInactive: cast Rockbiter Weapon (+3.5%, pass 10)
+  10. insert in the middle: if auraIsInactive: cast Magma Totem (+1.4%, pass 10)
+  11. only above 25% mana: if auraIsInactive: cast Magma Totem (+0.2%, pass 10)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -98,25 +100,23 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.3 |
+| 4 | cast Stormstrike | 7.5 |
 | 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
-| 8 | cast Earth Shock | 5.1 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.6 |
+| 8 | cast Earth Shock | 6.8 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 28% |
-| Windfury Weapon | 19% |
+| Auto Attack | 41% |
+| Earth Shock | 16% |
+| Lightning Bolt | 13% |
 | Flame Shock | 12% |
-| Earth Shock | 11% |
-| Stormstrike | 11% |
-| Lightning Bolt | 10% |
-| Attack | 6% |
-| Dragonbreath Chili | 3% |
+| Stormstrike | 10% |
+| Searing Totem | 7% |
 
 ## Notes
 

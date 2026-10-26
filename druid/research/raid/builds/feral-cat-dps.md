@@ -70,16 +70,16 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 ## Rank among our builds and the community simulator's
 
-**6 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever fork b7083fa (client 70425)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**6 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 398 | +0.0% | 756 | -1.4% | 119 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 398 | +0.0% | 756 | -1.4% | 119 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/33/9 | 393 | -1.1% | 766 | +0.0% | 119 s |
-| 4 | *Feral* | community simulator | - | 392 | -1.3% | 724 | -5.5% | 86 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 371 | -6.7% | 655 | -14.5% | 0 s |
-| 6 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 360 | -9.5% | 638 | -16.8% | 0 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 361 | +0.0% | 743 | -1.5% | 66 s |
+| 2 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/33/9 | 358 | -0.8% | 754 | +0.0% | 66 s |
+| 3 | *Hybrid* | community simulator | - | 352 | -2.4% | 722 | -4.2% | 65 s |
+| 4 | *Cat* | community simulator | - | 351 | -2.7% | 736 | -2.5% | 66 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 334 | -7.3% | 643 | -14.7% | 0 s |
+| 6 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 325 | -10.0% | 630 | -16.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,7 +94,7 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-16, 8 changes to the base rotation; third-seed check: feral-combat-open-raid 751 -> 759 DPS (+1.1%), feral-combat-shifting-power-raid 749 -> 755 DPS (+0.8%), feral-cat-dps 634 -> 638 DPS (+0.7%), opt-feral-cat-dps-raid-dps 645 -> 654 DPS (+1.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-26, 9 changes to the base rotation; third-seed check: feral-combat-open-raid 757 -> 754 DPS (-0.4%), feral-combat-shifting-power-raid 750 -> 743 DPS (-0.9%), feral-cat-dps 635 -> 630 DPS (-0.7%), opt-feral-cat-dps-raid-dps 644 -> 643 DPS (-0.1%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
@@ -103,33 +103,32 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
   6. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%, pass 5)
   7. insert at the top: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+7.5%, pass 7)
   8. drop 'combo points < 5' from the condition: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+0.5%, pass 7)
+  9. insert at the top: if (combo points ≥ 5 and not time left in the fight ≥ 10s or combo points ≥ 3 and time left in the fight < 3s): cast Ferocious Bite (rank 4) (+0.2%, pass 8)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-cat-dps`](feral-cat-dps.md) casts/min |
 |---|---|---|
-| 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.6 |
-| 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.8 |
-| 5 | cast Shred | 14.9 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.6 |
-| 7 | cast Goblin Sapper Charge | as ready |
-| 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
-| 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
-| 10 | if not Cat Form is up: cast Cat Form | 0.3 |
+| 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 9.6 |
+| 2 | if Cat Form is up: use every other cooldown when ready | as ready |
+| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.5 |
+| 4 | cast Shred | 14.2 |
+| 5 | if time left in the fight ≥ 6s: cast Faerie Fire | 9.6 |
+| 6 | cast Goblin Sapper Charge | as ready |
+| 7 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
+| 8 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
+| 9 | if not Cat Form is up: cast Cat Form | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights); cast Shifting Power (needs the Shifting Power talent).
+Lines of the simulator's rotation these builds never cast: cast Tiger's Fury, cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights); cast Shifting Power (needs the Shifting Power talent).
 
 Damage by ability:
 
 | Ability | [`feral-cat-dps`](feral-cat-dps.md) |
 |---|---|
-| Rip | 38% |
-| Auto Attack | 32% |
+| Rip | 37% |
+| Auto Attack | 34% |
 | Shred | 27% |
 | Goblin Sapper Charge | 2% |
-| Dragonbreath Chili | 1% |
 
 ## Notes
 

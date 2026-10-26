@@ -99,8 +99,8 @@
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-26",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
@@ -137,31 +137,54 @@
     "gain_seed2": 0.0017270110013098972,
     "candidates": 311,
     "pass": 3
+   },
+   {
+    "round": 3,
+    "change": "move to the top: keep Moonfire on up to 1 targets (refresh under 0ms)",
+    "gain_seed1": 0.0055624414681960666,
+    "gain_seed2": 0.005338598001350947,
+    "candidates": 332,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
     "balance-moonkin-raid": {
-     "before": 591.8182851321291,
-     "after": 593.6679837679064,
-     "base": 591.8182851321291,
+     "before": 609.3453785811513,
+     "after": 623.0374578388207,
+     "base": 609.3453785811513,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Moonkin 38/0/13": {
-     "before": 584.0567027596876,
-     "after": 585.9912272171747,
-     "base": 584.0567027596876,
+     "before": 663.1304418713158,
+     "after": 616.0235732957334,
+     "base": 663.1304418713158,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.22418674999999993,
-     "oom_after": 0.22682129999999995
+     "oom_before": 0.07080080000000008,
+     "oom_after": 0.10099275000000005
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Balance"
+   ],
+   "required": [
+    "Moonfire",
+    "Starfire"
+   ],
+   "rejected": {
+    "structure": 61,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-10-01",
-  "passes": 3
+  "passes": 4
  }
 }

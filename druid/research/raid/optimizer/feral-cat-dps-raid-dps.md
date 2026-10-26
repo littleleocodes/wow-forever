@@ -10,25 +10,25 @@ Missing: Shifting Power
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.59% | manual |
-| Shredding Attacks | Feral Combat | 3 | +3.45% | manual |
-| Leader of the Pack | Feral Combat | 5 | +2.67% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.61% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.44% | manual |
+| Shredding Attacks | Feral Combat | 3 | +3.27% | manual |
+| Leader of the Pack | Feral Combat | 5 | +2.71% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.65% | manual |
 | Berserk | Feral Combat | 7 | +2.58% | manual |
+| Moonkin Form | Balance | 7 | +1.92% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
-| Nature's Majesty | Balance | 2 | +1.44% | manual |
-| Savage Fury | Feral Combat | 3 | +1.12% | manual |
+| Nature's Majesty | Balance | 2 | +1.46% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
+| Savage Fury | Feral Combat | 3 | +1.06% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
-| Natural Instinct | Feral Combat | 5 | +1.00% | manual |
+| Natural Instinct | Feral Combat | 5 | +1.02% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
-| Reflection | Restoration | 3 | +0.68% | manual |
-| Moonkin Form | Balance | 7 | +0.60% | manual |
-| Genesis | Balance | 1 | +0.33% | manual |
-| Heart of the Wild | Feral Combat | 1 | +0.30% | manual |
-| Tranquil Spirit | Restoration | 4 | +0.12% | manual |
+| Reflection | Restoration | 3 | +0.63% | manual |
+| Tranquil Spirit | Restoration | 4 | +0.39% | manual |
+| Heart of the Wild | Feral Combat | 1 | +0.37% | manual |
+| Living Spirit | Restoration | 5 | +0.32% | manual |
+| Genesis | Balance | 1 | +0.32% | manual |
 | Furor | Restoration | 1 | +0.10% | manual |
-| Living Spirit | Restoration | 5 | +0.10% | manual |
 | Improved Entangling Roots | Balance | 3 | +0.01% | manual |
 | Feral Charge | Feral Combat | 3 | +0.01% | manual |
 | Primal Bite | Feral Combat | 4 | +0.00% | manual |
@@ -41,7 +41,7 @@ Missing: Shifting Power
 | Natural Reaction | Feral Combat | 6 | +0.00% | manual |
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
 
-## Optimized build: 9/31/11  score +91.11%  (dps x1.903, sustain x1.042, surv x1.000, utility +0.00%)
+## Optimized build: 9/31/11  score +90.78%  (dps x1.908, sustain x1.018, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
@@ -53,10 +53,10 @@ Missing: Shifting Power
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Reflection | Restoration 3 | 2/3 | +0.64% | yes |
-| Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
-| Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |
-| Living Spirit | Restoration 5 | 1/3 | +0.10% | no |
+| Moonkin Form | Balance 7 | 1/1 | +3.73% | no |
+| Reflection | Restoration 3 | 2/3 | +1.26% | yes |
+| Tranquil Spirit | Restoration 4 | 1/5 | +0.82% | no |
+| Living Spirit | Restoration 5 | 1/3 | +0.68% | no |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |
 | Feral Charge | Feral Combat 3 | 1/1 | +0.00% | yes |
 | Primal Bite | Feral Combat 4 | 1/1 | +0.00% | yes |

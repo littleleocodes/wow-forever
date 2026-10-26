@@ -1,5 +1,5 @@
 {
- "id": "cand-feral-cat-dps-preset-feral-cat-9-35-7",
+ "id": "cand-feral-cat-dps-preset-cat",
  "allocation": {
   "Balance": [
    [
@@ -18,11 +18,15 @@
   "Feral Combat": [
    [
     "Ferocity",
-    5
+    3
    ],
    [
     "Heart of the Wild",
     5
+   ],
+   [
+    "Feral Swiftness",
+    2
    ],
    [
     "Shredding Attacks",
@@ -45,12 +49,16 @@
     1
    ],
    [
+    "Primal Bite",
+    1
+   ],
+   [
     "Predatory Strikes",
     3
    ],
    [
     "Blood Frenzy",
-    2
+    1
    ],
    [
     "Improved Shifting Power",
@@ -84,7 +92,7 @@
    ]
   ]
  },
- "preset": "Feral Cat 9/35/7",
- "talents": "050022-55000032121032212051-052",
- "note": "The community simulator's preset 'Feral Cat 9/35/7' (druid/feralcat/presets.ts), a raid candidate since it ran within 6% of the best build of feral-cat-dps (370.5 vs 370.5 in the race of 2026-10-03)."
+ "preset": "Cat",
+ "talents": "050022-35200032121131212051-052",
+ "note": "The community simulator's preset 'Cat' (druid/feralcat/presets.ts), a raid candidate since it ran within 6% of the best build of feral-cat-dps (350.8 vs 360.5 in the race of 2026-10-26)."
 }

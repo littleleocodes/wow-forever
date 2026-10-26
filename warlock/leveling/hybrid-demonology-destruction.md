@@ -8,21 +8,44 @@
 
 ## How to play
 
-**Not in this build:** **Amplify Curse**, **Conflagrate**, **Incinerate**, **Shadow and Flame**, **Siphon Life** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Conflagrate**, **Incinerate**, **Shadow and Flame** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
+**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**.
 
 **In the fight**, top to bottom:
 
-1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, neither on a mob below about a third of its health.
-2. **Immolate** only while you have more than half your mana, the mob has more than about a third of its health and it will not pull the mob off the Voidwalker.
-3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
-4. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain** when the mob has too little health left for a bolt), which the dots rarely leave you.
-5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
-6. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
-7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs, until **Torment** takes it back. Your Healthstone below 35% health.
+1. Finish first: **Shadowburn** on a mob it would kill, **Conflagrate** on a burning mob it would kill, your wand for the last sliver of health.
+2. **Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.
+3. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning).
+4. With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.
+5. The filler is **Shadow Bolt**, or **Incinerate** on a burning mob (from level 40), whenever you have mana to spare; **Shadow Bolt** only while the mob has more than a fifth of its health. The wand only when mana runs short. No Affliction dots, Searing Pain or Drain Life: the fight lab levels faster without them.
+6. **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it while you have half your mana or more, until **Torment** takes it back. Your Healthstone below 35% health.
 
 **Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).
+
+## Why this rotation
+
+The Demonology/Destruction hybrid levels with the Destruction list on a Voidwalker made stronger by 24 Demonology points: **Immolate** on a fresh mob, **Shadow Bolt** as the filler, **Soul Fire** under **Decimation** (from level 48) and **Shadowburn** (level 58) to finish.
+
+**Why it works**
+
+- The Demonology points come first (levels 14-37): **Unholy Power**, **Improved Voidwalker**, **Demonic Energies**, **Fel Vitality**, **Soul Link** (34) and **Demonic Knowledge** (35-37) make the Voidwalker a strong tank and add spell damage while it is out. **Suppression** (levels 10-13 and 38) gives 5% hit and 20% less threat: the open search measured it the build's most valuable talent at 60, then **Improved Voidwalker** and **Demonic Knowledge**.
+- Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker.
+- **Shadow Bolt** is the filler whenever you keep a small mana reserve for **Fear**, never on a mob below a fifth of its health (the 2026-10-24 re-tune, about 3.5% faster per kill). **Bane** (39-43), **Cataclysm** (44-46), **Improved Shadow Bolt** (47-48, 53 and 57), **Ruin** (49-52) and **Agonizing Flames** (54-56) make it faster, cheaper and harder-hitting.
+- **Decimation** (levels 29-30): a **Shadow Bolt** on a mob below 35% health makes your next **Soul Fire** faster and free of a Soul Shard for 10 seconds; cast it then, while the mob has enough health left for it.
+- No **Searing Pain** and no **Drain Life**: the re-tune measured about 3% and 2% faster per kill without them. **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 55% health.
+
+**Caveats**
+
+- This build has no **Conflagrate** and no **Incinerate**: skip the lines that name them. **Improved Health Funnel**, **Master Summoner** and **Fel Domination** are steps to deeper talents (the last two shorten a new summon).
+- When a mob reaches you: **Death Coil** (level 42) below 60% health, otherwise **Fear** it while you have half your mana or more, until the Voidwalker's **Torment** takes it back. A Healthstone below 35% health.
+- The open search's 5/24/22 levels about 14% faster per kill at levels 20-60 than the 21/0/30 Destruction hand draft in the fight lab.
+
+**When to change it**
+
+- Finish a nearly dead mob with **Shadowburn** or the wand; start no new **Immolate** on it.
+- If the Voidwalker dies, summon a new one before the next pull: without it you also lose **Demonic Knowledge** and **Soul Link**.
 
 ## Talents while leveling
 
@@ -65,5 +88,5 @@ One point per level from 10, in this order:
 | 60 | 44 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

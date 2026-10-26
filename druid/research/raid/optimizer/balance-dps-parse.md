@@ -10,15 +10,15 @@ Missing: Shifting Power
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Insect Swarm | Balance | 4 | +11.40% | manual |
+| Insect Swarm | Balance | 4 | +11.64% | manual |
 | Moonkin Form | Balance | 7 | +4.25% | manual |
 | Moonglow | Balance | 2 | +3.56% | manual |
 | Nature's Reach | Balance | 2 | +2.44% | manual |
 | Moonfury | Balance | 6 | +2.00% | manual |
-| Nature's Splendor | Balance | 3 | +1.75% | manual |
+| Nature's Splendor | Balance | 3 | +1.73% | manual |
 | Vengeance | Balance | 4 | +1.73% | manual |
-| Improved Starfire | Balance | 4 | +1.54% | manual |
-| Improved Moonfire | Balance | 2 | +1.32% | manual |
+| Improved Starfire | Balance | 4 | +1.55% | manual |
+| Improved Moonfire | Balance | 2 | +1.30% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Nature's Grace | Balance | 5 | +0.97% | manual |
 | Nature's Majesty | Balance | 2 | +0.92% | manual |
@@ -41,8 +41,8 @@ Missing: Shifting Power
 | Eclipse | Balance | 5 | +0.00% | manual |
 | Ferocity | Feral Combat | 1 | +0.00% | manual |
 
-## Optimized build: 33/5/13  score +96.56%  (dps x1.825, sustain x1.702, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 0.896  — use this to compare models with different pet shares.
+## Optimized build: 33/5/13  score +97.09%  (dps x1.830, sustain x1.702, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.195  — use this to compare models with different pet shares.
 
 ```
   Balance: Genesis 5, Moonglow 3, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Insect Swarm 1, Vengeance 5, Improved Starfire 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
@@ -54,7 +54,7 @@ Absolute DPS index (character alone, no talents = 1.00): 0.896  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.91% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.92% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.40% | no |
 | Improved Wrath | Balance 1 | 1/5 | +0.02% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.01% | yes |

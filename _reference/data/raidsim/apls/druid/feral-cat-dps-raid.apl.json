@@ -34,6 +34,90 @@
   {
    "action": {
     "condition": {
+     "or": {
+      "vals": [
+       {
+        "and": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "5"
+             }
+            }
+           }
+          },
+          {
+           "not": {
+            "val": {
+             "cmp": {
+              "op": "OpGe",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "10s"
+               }
+              }
+             }
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "remainingTime": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3s"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 22829
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-26: changed or added by the rotation search (see feral-cat-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {

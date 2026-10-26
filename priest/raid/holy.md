@@ -33,25 +33,25 @@ The healer lab's Holy priest heals the tank with **Penance** every time it is re
 
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 59.7; Phase 1 BiS 65.1; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 60.4; Phase 1 BiS 60.8; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) | [Halo of Transcendence](https://www.wowhead.com/forever/item=16921) · *Onyxia, Onyxia's Lair*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) |
-| Neck | [Heart of the Fiend](https://www.wowhead.com/forever/item=13960) · *Kirtonos the Herald, Scholomance* | [Heart of the Fiend](https://www.wowhead.com/forever/item=13960) · *Kirtonos the Herald, Scholomance* |
-| Shoulders | [Mantle of the Scarlet Crusade](https://www.wowhead.com/forever/item=22405) · *Cannon Master Willey, Stratholme* | [Mantle of the Scarlet Crusade](https://www.wowhead.com/forever/item=22405) · *Cannon Master Willey, Stratholme* |
+| Head | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
+| Neck | [Lady Alizabeth's Pendant](https://www.wowhead.com/forever/item=13002) | [Lady Alizabeth's Pendant](https://www.wowhead.com/forever/item=13002) |
+| Shoulders | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
-| Chest | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Devout Bracers](https://www.wowhead.com/forever/item=16697) · *Stratholme*<br>+ [Enchant Bracer - Superior Spirit](https://www.wowhead.com/forever/item=16218) | [Vambraces of Prophecy](https://www.wowhead.com/forever/item=16819) · *Molten Core*<br>+ [Enchant Bracer - Superior Spirit](https://www.wowhead.com/forever/item=16218) |
-| Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) · *Blackrock Depths* | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) · *Blackrock Depths* |
+| Chest | [Ghostweave Vest](https://www.wowhead.com/forever/item=14141) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Ghostweave Vest](https://www.wowhead.com/forever/item=14141) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Devout Bracers](https://www.wowhead.com/forever/item=16697) · *Stratholme*<br>+ [Enchant Bracer - Superior Spirit](https://www.wowhead.com/forever/item=16218) | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) · *Tailoring*<br>+ [Enchant Bracer - Superior Spirit](https://www.wowhead.com/forever/item=16218) |
+| Hands | [Devout Gloves](https://www.wowhead.com/forever/item=16692) · *Archivist Galford, Stratholme* | [Devout Gloves](https://www.wowhead.com/forever/item=16692) · *Archivist Galford, Stratholme* |
 | Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* |
-| Legs | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) | [Leggings of Transcendence](https://www.wowhead.com/forever/item=16922) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) |
-| Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Boots of Prophecy](https://www.wowhead.com/forever/item=16811) · *Shazzrah, Molten Core*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
-| Finger | [Band of Mending](https://www.wowhead.com/forever/item=22334) · *Stratholme* | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
-| Finger | [Emerald Flame Ring](https://www.wowhead.com/forever/item=18395) · *Prince Tortheldrin, Dire Maul* | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
-| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Serenity Field](https://www.wowhead.com/forever/item=272439) |
-| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18469) · *quest: Holy Bologna: What the Light Won't Tell You* | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
-| Main hand | [Dancing Sliver](https://www.wowhead.com/forever/item=15854) · *quest: Dawn's Gambit*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) | [Staff of Dominance](https://www.wowhead.com/forever/item=18842) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
+| Legs | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
+| Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
+| Finger | [Vigilant Watcher's Signet](https://www.wowhead.com/forever/item=275983) | [Vigilant Watcher's Signet](https://www.wowhead.com/forever/item=275983) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
+| Trinket | [Serenity Field](https://www.wowhead.com/forever/item=272439) | [Serenity Field](https://www.wowhead.com/forever/item=272439) |
+| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
+| Main hand | [Dreamstaff](https://www.wowhead.com/forever/item=249454) · *Enchanting*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) | [Dreamstaff](https://www.wowhead.com/forever/item=249454) · *Enchanting*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
 ## Other builds of this spec
@@ -60,5 +60,5 @@ Healing capacity 0.69 (the raid damage it heals through in this project's healer
 - [Holy — Raid healing](../research/raid/builds/holy-ml-heal.md) (21/30/0) — [open the talent tree](https://talentsforever.com/priest/60/113113031330001-0350510303002053--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-25 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

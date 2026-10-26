@@ -70,13 +70,14 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever fork b7083fa (client 70425)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 1224 | 636 |
-| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 1224 | 636 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.878 | -12.2% | 986 | 670 |
+| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/42/0 | 1.046 | +0.0% | 3139 | 360 |
+| 2 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | -4.4% | 2874 | 360 |
+| 3 | *Hybrid* | community simulator | - | 0.889 | -15.0% | 2428 | 386 |
+| 4 | *Bear* | community simulator | - | 0.825 | -21.1% | 2068 | 387 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -89,7 +90,7 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 39.0 |
-| 3 | if rage ≥ 50: cast Maul | 15.5 |
+| 3 | if rage ≥ 50: cast Maul | 110.2 |
 | 4 | cast Barkskin | 1.0 |
 | 5 | cast Lacerate | 39.0 |
 
@@ -99,13 +100,13 @@ Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Lacerate | 58% |
-| Maul | 28% |
-| Auto Attack | 11% |
-| OtherActionRageGain | 1% |
+| Maul | 69% |
+| Auto Attack | 18% |
+| Lacerate | 9% |
+| Judgement of Light | 2% |
+| OtherActionRageGain | 2% |
 | Retribution Aura | 0% |
 | Thorns | 0% |
-| Dragonbreath Chili | 0% |
 
 ## Notes
 

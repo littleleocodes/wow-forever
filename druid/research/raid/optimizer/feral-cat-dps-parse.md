@@ -10,21 +10,21 @@ Missing: Shifting Power
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.51% | manual |
-| Shredding Attacks | Feral Combat | 3 | +3.47% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.45% | manual |
+| Shredding Attacks | Feral Combat | 3 | +3.36% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.59% | manual |
 | Berserk | Feral Combat | 7 | +2.58% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.57% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
 | Nature's Majesty | Balance | 2 | +1.42% | manual |
-| Savage Fury | Feral Combat | 3 | +1.13% | manual |
-| Predatory Instincts | Feral Combat | 5 | +1.11% | manual |
+| Natural Instinct | Feral Combat | 5 | +1.11% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
+| Savage Fury | Feral Combat | 3 | +1.09% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
-| Reflection | Restoration | 3 | +0.68% | manual |
 | Moonkin Form | Balance | 7 | +0.60% | manual |
 | Genesis | Balance | 1 | +0.32% | manual |
 | Heart of the Wild | Feral Combat | 1 | +0.30% | manual |
+| Reflection | Restoration | 3 | +0.20% | manual |
 | Tranquil Spirit | Restoration | 4 | +0.12% | manual |
 | Furor | Restoration | 1 | +0.10% | manual |
 | Living Spirit | Restoration | 5 | +0.10% | manual |
@@ -41,11 +41,11 @@ Missing: Shifting Power
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
 | Nature's Splendor | Balance | 3 | +0.00% | manual |
 
-## Optimized build: 9/31/11  score +86.13%  (dps x1.853, sustain x1.042, surv x1.000, utility +0.00%)
+## Optimized build: 9/31/11  score +84.44%  (dps x1.841, sustain x1.018, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
-  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Shredding Attacks 3, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Predatory Instincts 2, Leader of the Pack 1, Rend and Tear 5, Berserk 1
+  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Shredding Attacks 3, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Natural Instinct 2, Leader of the Pack 1, Rend and Tear 5, Berserk 1
   Restoration: Furor 5, Naturalist 5, Reflection 1
 ```
 
@@ -53,12 +53,12 @@ Missing: Shifting Power
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Reflection | Restoration 3 | 2/3 | +0.64% | yes |
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
+| Reflection | Restoration 3 | 2/3 | +0.19% | yes |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.10% | no |
-| Feral Charge | Feral Combat 3 | 1/1 | +0.01% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |
+| Feral Charge | Feral Combat 3 | 1/1 | +0.00% | yes |
 | Primal Bite | Feral Combat 4 | 1/1 | +0.00% | yes |
 | Subtlety | Restoration 2 | 1/3 | +0.00% | yes |
 | Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |

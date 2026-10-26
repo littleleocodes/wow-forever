@@ -31,7 +31,7 @@ Total: **69.5 h** (22.7% faster than talentless), no respec.
   - at level 60: **Subtlety**: Opportunity 2; **Combat**: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Endurance 2, Dual Wield Specialization 2, Blade Flurry 1, Hack and Slash 4, Aggression 3; **Assassination**: Malice 5, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Remorseless Attacks 1, Improved Gouge 2, Mutilate 1
   - order: 10-11 Opportunity x2, 12-16 Lightning Reflexes x5, 17-19 Puncturing Wounds x3, 20 Precision, 21-25 Malice x5, 26-28 Ruthlessness x3, 29-30 Murder x2, 31 Relentless Strikes, 32-36 Lethality x5, 37 Cold Blood, 38 Remorseless Attacks, 39-40 Improved Gouge x2, 41 Mutilate, 42-43 Precision x2, 44-46 Deflection x3, 47 Riposte, 48 Flawless Execution, 49-50 Endurance x2, 51-52 Dual Wield Specialization x2, 53 Blade Flurry, 54-57 Hack and Slash x4, 58-60 Aggression x3
 
-Total: **77.8 h** (13.6% faster than talentless), no respec.
+Total: **73.9 h** (17.9% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **77.8 h** (13.6% faster than talentless), no respec.
 | combat-swords-raid -> level-60 build (33/16/2) | 69.7 | +0.2 h |
 | combat-swords-raid -> level-40 build (11/18/2) | 70.1 | +0.5 h |
 | combat-swords-raid -> level-50 build (8/31/2) | 70.1 | +0.6 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 77.8 | +8.3 h |
-| combat-daggers-raid -> level-30 build (3/16/2) | 78.0 | +8.5 h |
-| combat-daggers-raid -> level-40 build (21/8/2) | 79.1 | +9.5 h |
-| combat-daggers-raid -> level-50 build (23/16/2) | 79.7 | +10.1 h |
-| combat-daggers-raid -> level-60 build (21/28/2) | 79.8 | +10.3 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 73.9 | +4.3 h |
+| combat-daggers-raid -> level-30 build (3/16/2) | 74.1 | +4.6 h |
+| combat-daggers-raid -> level-40 build (21/8/2) | 75.1 | +5.5 h |
+| combat-daggers-raid -> level-50 build (23/16/2) | 75.6 | +6.1 h |
+| combat-daggers-raid -> level-60 build (21/28/2) | 75.8 | +6.2 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

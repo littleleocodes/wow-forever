@@ -31,20 +31,21 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.",
+    "plan": "Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. The build spends its first 15 points in Marksmanship (cheaper shots and crit) and then makes the pet strong, with **Bestial Wrath** at 60. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.",
     "why": [
      "Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts them only while the mob has more than 30% and 40% of its health.",
-     "**Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The fight lab's tuned rules never cast Multi-Shot (it shares the cooldown; about 4% faster per kill without it), Arcane Shot (about 2%) or **Summon Hawk** (about 2%): their mana is worth more as fewer drinks between pulls.",
-     "**Summon Hawk** (level 25 in this order) is still taken: it is the point that opens the next rows of the tree. On one mob the hawk costs more mana than it saves time.",
-     "**Auto Shot** is the biggest part of your damage (about 37% at 60, the cat about a third) and cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.",
-     "**Rapid Fire** at the start of a fight whenever it is ready: 40% faster attacks for 15 seconds, every 3 minutes once **Rapid Killing** is in (levels 49-50 in this order).",
+     "**Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The fight lab's tuned rules (2026-10-24) never cast Multi-Shot (it shares the cooldown; about 3.5% faster per kill without it), Arcane Shot (about 2%) or **Summon Hawk** (about 2.5%): their mana is worth more as fewer drinks between pulls.",
+     "**Efficiency** and **Lethal Attacks** (levels 10-19) come first: in the fight lab's removal runs at 60 they are worth almost a second a kill each, next to the pet's **Unleashed Fury**, **Bestial Discipline** and **Ferocity** (levels 36-47), the build's most valuable talents. **Trueshot Aura** (level 25) is a buff you cast in Forever: keep it on.",
+     "At 60 **Auto Shot** is about a third of your damage, the cat's swings and Claw about 40%, **Serpent Sting** and **Aimed Shot** about 12-15% each. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.",
+     "**Rapid Fire** at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (54) and **Bestial Wrath** (60) likewise. At 60 the fight lab casts **Bestial Wrath** about one pull in five.",
      "**Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then."
     ],
     "caveats": [
-     "This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.",
-     "The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster (about 0.6% per kill): less time sitting between pulls.",
-     "A mob that turns on you: **Feign Death** sends it back to the pet (the fight lab needs it less than once in five kills at 60); while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.",
-     "Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage. In the fight lab's three-mob pulls **Volley** is about a tenth of the damage at 60.",
+     "**Intimidation** is the point that opens **Bestial Wrath**: on its own it measured nothing in the fight lab. **Endurance Training**, **Spirit Bond** and **Bestial Swiftness** also measured about 0 at 60 (a sturdier, faster pet; the lab's pet rarely dies).",
+     "The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster (under 1% per kill): less time sitting between pulls.",
+     "A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.",
+     "Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage.",
+     "From level 50, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.",
      "**Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots."
     ],
@@ -53,11 +54,11 @@
      "If the pet dies mid-fight, finish the mob with **Raptor Strike** and **Wing Clip** (or **Feign Death** if it is going badly), and revive the pet before the next pull."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   },
   "Marksmanship": {
@@ -90,19 +91,20 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Trueshot Aura** always on and **Auto Shot** in between. No Arcane Shot and no Multi-Shot on a single mob.",
+    "plan": "Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Trueshot Aura** always on and **Auto Shot** in between. No Arcane Shot and no Multi-Shot on a single mob. The build fills Marksmanship to 30 points and puts the other 21 into the pet.",
     "why": [
      "Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own.",
-     "**Aimed Shot** gets the cooldown it shares with **Multi-Shot**, while the mob has more than a quarter of its health. The fight lab's tuned rules never cast Multi-Shot on one mob (about 3.5% faster per kill) nor Arcane Shot (about 4.5% faster): its mana goes to **Aimed Shot** and **Serpent Sting**, and you sit less between pulls.",
-     "**Trueshot Aura** (level 26) is a buff you cast in Forever, not a passive aura: keep it on. **Rapid Fire** at the start of a fight when ready; **Rapid Killing** (levels 24-25) cuts its cooldown to 3 minutes.",
-     "**Auto Shot** is still the largest share (about 38% at 60, **Serpent Sting** and **Aimed Shot** about 15% each) and cannot fire within 8 yards: step back out rather than melee while the pet holds the mob.",
+     "**Aimed Shot** gets the cooldown it shares with **Multi-Shot**, while the mob has more than a quarter of its health. Never casting Multi-Shot on one mob was by far the largest gain of the fight lab's tuning (2026-10-24), and Arcane Shot goes too (about 3% faster per kill): its mana goes to **Aimed Shot** and **Serpent Sting**, and you sit less between pulls.",
+     "**Lethal Attacks** and **Careful Aim** (levels 10-19) first, **Rapid Killing** (23-24) cuts **Rapid Fire** to 3 minutes, **Trueshot Aura** (25) is a buff you cast in Forever: keep it on. **Efficiency** (27-30, 39) is worth almost a second a kill at 60.",
+     "From level 33 the points go to the pet: **Deadly Aspects**, **Focused Fire**, **Endurance Training**, then **Unleashed Fury** and **Ferocity** (43-52), in the fight lab's removal runs at 60 the build's most valuable talents with **Efficiency**.",
+     "**Auto Shot** is still the largest share (about 35% at 60, the cat about a third, **Serpent Sting** and **Aimed Shot** about 15% each) and cannot fire within 8 yards: step back out rather than melee while the pet holds the mob.",
      "Drink below 15% mana rather than a third: it measured slightly faster (under 1% per kill)."
     ],
     "caveats": [
-     "**Sniper Shot** (level 41) and **Scatter Shot** (31) are not in the list: the fight lab does not cast them, so their worth while leveling is unmeasured. A 4-second **Sniper Shot** is long next to fights of 20 to 30 seconds.",
-     "**Rapid Killing** also makes your next Shot within 20 seconds of a kill hit 20% harder, and with 2 points in **Rapid Recuperation** spending it lets all your mana regeneration continue while casting for 15 seconds. The fight lab leaves this out: let the next pull's first **Aimed Shot** spend it.",
+     "**Scatter Shot** (31) and **Improved Concussive Shot** (60) measured nothing in the fight lab: they are the points the tree's rows need. **Barrage** (54-55) adds 10% to **Aimed Shot**, **Multi-Shot** and **Volley**: little on one mob, more on several.",
+     "**Sniper Shot** is not in the list: the fight lab does not cast it while leveling, so its worth there is unmeasured. A 4-second **Sniper Shot** is long next to fights of 20 to 30 seconds.",
+     "**Rapid Killing** also makes your next Shot within 20 seconds of a kill hit 20% harder. **Rapid Recuperation** (32): **Serpent Sting** lets half your mana regeneration continue while casting for 15 seconds, all of it when you spend that bonus. The fight lab leaves the bonus out: let the next pull's first **Aimed Shot** spend it.",
      "A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
-     "From level 45, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.",
      "**Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots."
     ],
@@ -111,11 +113,11 @@
      "A mob on you while the pet is down: **Scatter Shot** disorients it for 4 seconds (any damage breaks it), so step back past 8 yards and shoot."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   },
   "Survival": {
@@ -148,19 +150,22 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Melee Survival levels with the pet as the tank: you walk in behind it and fight beside it with two one-handers. **Raptor Strike** and **Strider Kick** are your steady hits, **Immolation Trap** burns the longer fights, and white swings do the rest.",
+    "plan": "Melee Survival levels with the pet as the tank: you walk in behind it and fight beside it with two one-handers. **Raptor Strike** is your steady hit, **Mongoose Bite** and **Counterattack** come when they light up, **Immolation Trap** burns the longer fights, and white swings do the rest.",
     "why": [
-     "No **Serpent Sting** from range: the fight lab's tuned rules never cast it, about 2.5% faster per kill. Walk in while the pet takes the mob.",
-     "**Raptor Strike** whenever it is ready: it replaces your next main-hand swing and costs no global cooldown, so queue it first; the fight lab lost about 1% per kill when it waited behind other buttons. **Strider Kick** (level 30) on its 8-second cooldown.",
-     "**Immolation Trap** goes at your feet beside the mob: traps work in combat in Forever but land where you stand. Only while the mob has more than 40% of its health, because the burn lasts 15 seconds.",
-     "**Lacerate** (trained from level 30) only while the mob has more than half its health and you have 80% of your mana or more: cast freely its mana cost more time than its bleed saved. It is about 2% of your damage at 60.",
-     "**Hunter's Mark** matters to a melee hunter only through **Expose Prey** (levels 31-32): from then on mark the mob in a free global cooldown, and each of your hits on it has a chance to light up **Mongoose Bite**. **Counterattack** (level 57) lights up after you parry.",
-     "**Aspect of the Monkey** until level 30 (its dodges also light up **Mongoose Bite**), then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** (levels 49-53) a chance per swing for 30% faster swings for 12 seconds."
+     "No **Serpent Sting** from range: the fight lab's tuned rules (2026-10-24) never cast it, and it was faster without it (about 2.5% per kill). Walk in while the pet takes the mob.",
+     "**Raptor Strike** whenever it is ready: it replaces your next main-hand swing and costs no global cooldown, so queue it first; the fight lab lost about 1% per kill when it waited behind other buttons.",
+     "**Immolation Trap** goes at your feet beside the mob (traps work in combat in Forever but land where you stand), while the mob has more than 40% of its health (the burn lasts 15 seconds) and you have half your mana or more.",
+     "**Lacerate** (trained from level 30) only while the mob has more than half its health and you have 80% of your mana or more: cast freely its mana cost more time than its bleed saved.",
+     "**Hunter's Mark** matters to a melee hunter only through **Expose Prey** (levels 31-32): from then on mark the mob in a free global cooldown, and each of your hits on it has a chance to light up **Mongoose Bite**. **Counterattack** (level 57) lights up after you parry; **Deflection** raises your parry.",
+     "**Aspect of the Monkey** until level 30 (its dodges also light up **Mongoose Bite**), then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** (levels 49-53) a chance per swing for 30% faster swings for 12 seconds.",
+     "At 60 your white swings are about 27% of the damage, **Raptor Strike** about 13%, the trap about 10% and the cat about 30%. Drink below 60% mana: the tuned rules measured it slightly faster than waiting (under 1% per kill), since the trap and **Lacerate** need the mana."
     ],
     "caveats": [
-     "The pet is still your tank and about a fifth of your damage: **Mend Pet** below about a third in the fight and below half between fights, and let it build threat before you hit hard.",
+     "**Strider Kick** and **Immolation Trap** are not melee damage under this project's rule for a melee hunter (more than half the damage from white swings and strikes). The fight lab's tuning of 2026-10-24 keeps the rotation over that line: no **Strider Kick** at all and the trap only from half your mana up. That play is a little slower than pressing both freely (about 3.5% per kill on the tuning's check seed, 24.4 against 23.6 seconds). **Strider Kick** (level 30) stays in the build, but the tuned rotation never presses it.",
+     "The pet is still your tank: **Mend Pet** below about a third in the fight and below half between fights, and let it build threat before you hit hard.",
      "**Deterrence** (level 23) when you fall below 40% health while the mob has more than 30% of its health: +25% dodge and parry for 10 seconds. With the pet tanking, the fight lab almost never needs it on one mob.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
+     "The search found a split Survival build (10/11/30) about 2% faster per kill, but its melee share sat just under half (49.5%), so the page keeps this one.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
     "diverge": [
@@ -168,11 +173,11 @@
      "If the pet dies mid-fight, **Deterrence** and finish the mob, or **Feign Death** if it is going badly; revive the pet before the next pull."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   },
   "Hybrid Beast Mastery/Marksmanship": {
@@ -205,16 +210,17 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split puts a full set of pet talents first and adds Marksmanship's cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**).",
+    "plan": "Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split puts a full set of pet talents first (levels 10-37) and then adds Marksmanship's crit (**Lethal Attacks**), cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**).",
     "why": [
-     "Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity**, **Bestial Discipline** and **Frenzy** make it a real part of your damage: **Unleashed Fury** and **Bestial Discipline** were the build's most valuable talents in the fight lab at 60.",
-     "**Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The tuned rules never cast Multi-Shot (about 4% faster per kill), Arcane Shot (about 2%) or **Summon Hawk** (about 2%).",
+     "Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity**, **Bestial Discipline** and **Frenzy** make it a real part of your damage: **Unleashed Fury** and **Bestial Discipline** were the build's most valuable talents in the fight lab at 60, about a second a kill each.",
+     "**Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The tuned rules (2026-10-24) never cast Multi-Shot (about 3.5% faster per kill), Arcane Shot (about 2%) or **Summon Hawk** (about 2.5%).",
      "**Summon Hawk** (level 34) is only the point that opens the next row (**Frenzy**); the fight lab gives it no value while leveling. Don't spend mana on it.",
-     "**Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you. **Mend Pet** when the pet drops below about a third; **Spirit Bond** (levels 32-33) heals you both between pulls.",
-     "**Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build: no **Rapid Killing**)."
+     "**Auto Shot** is the largest share (about 35% at 60, the cat about a third) and cannot fire within 8 yards: step back out if the mob ends up beside you. **Mend Pet** when the pet drops below about a third; **Spirit Bond** (levels 32-33) heals you both between pulls.",
+     "**Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build: no **Rapid Killing**). **Trueshot Aura** (level 53) is a buff you cast in Forever: keep it on."
     ],
     "caveats": [
      "This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.",
+     "**Endurance Training**, **Pathfinding** and **Improved Revive Pet** measured nothing at 60 in the fight lab: they open the rows.",
      "From level 57, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
      "The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite**, **Raptor Strike** and **Wing Clip** hold it until the pet's Growl takes it back.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
@@ -224,24 +230,26 @@
      "If the pet dies, finish the mob in melee or **Feign Death**, and revive it before the next pull. When a mob is nearly dead, stop spending mana and let **Auto Shot** and the pet finish it."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   },
   "Hybrid Marksmanship/Survival": {
    "leveling": {
     "plan": "The split melee build plays the melee Survival list: walk in behind the pet, trap at your feet and fight beside it. Its Marksmanship points buy crit and attack power (**Lethal Attacks**, **Careful Aim**), and **Survivalist's Discipline** brings the trap back sooner.",
     "why": [
-     "No **Serpent Sting** from range: the fight lab's tuned rules never cast it (about 2.5% faster per kill), so **Improved Stings** points add nothing to this rotation.",
-     "**Immolation Trap** at your feet beside the mob, while it has more than 40% of its health (the burn lasts 15 seconds). **Survivalist's Discipline** cuts its cooldown from 30 to 18 seconds.",
-     "**Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown) and **Strider Kick** (level 30) on cooldown. **Lacerate** only while the mob has more than half its health and you have 80% of your mana or more.",
+     "No **Serpent Sting** from range: the fight lab's tuned rules (2026-10-24) never cast it (about 2.5% faster per kill), so **Improved Stings** points add nothing to this rotation.",
+     "**Immolation Trap** at your feet beside the mob, while it has more than 40% of its health (the burn lasts 15 seconds) and you have half your mana or more. **Survivalist's Discipline** cuts its cooldown from 30 to 18 seconds.",
+     "**Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown). **Lacerate** only while the mob has more than half its health and you have 80% of your mana or more.",
      "**Hunter's Mark** in a free global cooldown once you have **Expose Prey**: your hits on the marked mob can light up **Mongoose Bite**, which otherwise lights up only after you dodge. **Counterattack** after you parry; **Deflection** raises your parry.",
-     "**Deterrence** below 40% health while the mob has more than 30% of its health: +25% dodge and parry for 10 seconds, every 3 minutes with **Survivalist's Discipline**, and those dodges and parries light up **Mongoose Bite** and **Counterattack**."
+     "**Deterrence** below 40% health while the mob has more than 30% of its health: +25% dodge and parry for 10 seconds, every 3 minutes with **Survivalist's Discipline**, and those dodges and parries light up **Mongoose Bite** and **Counterattack**.",
+     "Drink below 60% mana: the trap and **Lacerate** need it, and the tuned rules measured it slightly faster than waiting."
     ],
     "caveats": [
+     "**Strider Kick** and **Immolation Trap** are not melee damage under this project's rule for a melee hunter (more than half the damage from white swings and strikes). The fight lab's tuning of 2026-10-24 keeps the rotation over that line: no **Strider Kick** at all and the trap only from half your mana up. That play is a little slower than pressing both freely (about 3.5% per kill on the tuning's check seed, 24.4 against 23.6 seconds).",
      "**Aspect of the Monkey** until level 30, then **Aspect of the Beast** for its melee attack power; **Deadly Aspects** adds its swing-speed chance to **Aspect of the Beast**.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
@@ -251,11 +259,11 @@
      "If the pet dies, **Deterrence** and finish the mob, or **Feign Death** if it is going badly; revive the pet before the next pull."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   },
   "Hybrid Beast Mastery/Survival": {
@@ -285,17 +293,18 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings.",
+    "plan": "Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings. Survival comes first (levels 10-34), then the pet.",
     "why": [
-     "**Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds 30%, **Survival Tactics** (29) helps it hit, and **Survivalist's Discipline** (32-33) brings it back every 18 seconds. In the fight lab's removal runs at 60, **Resourcefulness** (60% cheaper traps and strikes, about 3.5 seconds a kill) and **Survivalist's Discipline** (about 2 seconds) were the build's most valuable talents.",
-     "Set the trap at your feet beside the mob (traps work in combat in Forever but land where you stand), and only while the mob has more than 40% of its health: the burn lasts 15 seconds.",
-     "**Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown); **Mongoose Bite** after you dodge. **Lacerate** (from level 30) only while the mob has more than half its health and you have 80% of your mana or more.",
-     "From level 34 the points go to **Lethal Attacks** and then Beast Mastery: **Deadly Aspects** for your swings, then the pet: **Focused Fire**, **Endurance Training** for a sturdier tank, **Unleashed Fury** and **Ferocity** for damage. Send it first and let it hold the mob.",
-     "No **Serpent Sting** and no **Hunter's Mark**: the tuned rules never cast the sting, and without **Expose Prey** the mark adds nothing to your melee. **Aspect of the Monkey** until 30, then **Aspect of the Beast** for melee attack power."
+     "**Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds to it, **Survival Tactics** (29) helps it hit, and **Survivalist's Discipline** (33-34) brings it back every 18 seconds. In the fight lab's removal runs at 60, **Resourcefulness** (levels 30 and 32: cheaper traps and strikes, about 3.5 seconds a kill) and **Survivalist's Discipline** (about 1 second) were the build's most valuable talents; at 60 the trap is about a fifth of your damage.",
+     "Set the trap at your feet beside the mob (traps work in combat in Forever but land where you stand), only while the mob has more than 40% of its health (the burn lasts 15 seconds) and you have half your mana or more.",
+     "**Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown); **Mongoose Bite** when it lights up. **Lacerate** (from level 30) only while the mob has more than half its health and you have 80% of your mana or more.",
+     "From level 35 the points go to **Lethal Attacks** and then Beast Mastery: **Deadly Aspects** for your swings, then the pet: **Focused Fire**, **Endurance Training**, **Unleashed Fury** and **Ferocity** (48-57), **Bestial Discipline** (58-59). The cat's swings and Claw are over a third of the damage at 60: send it first and let it hold the mob.",
+     "No **Serpent Sting**: the tuned rules never cast it. With **Expose Prey** (level 31) **Hunter's Mark** goes on in a free global cooldown so your hits can light up **Mongoose Bite**. **Aspect of the Monkey** until 30, then **Aspect of the Beast**. Drink below 60% mana."
     ],
     "caveats": [
-     "This build takes none of **Strider Kick**, **Counterattack**, **Deterrence** or **Expose Prey**: skip those steps. Between traps your global cooldown is mostly free, and white swings and the pet do most of the damage.",
-     "**Improved Aspect of the Monkey** (levels 51-53) only fills the row to **Ferocity**: after level 30 you use **Aspect of the Beast**, so it adds nothing in the fight lab.",
+     "This build takes none of **Strider Kick**, **Counterattack** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free, and white swings and the pet do most of the damage.",
+     "The trap only from half your mana up comes from the fight lab's tuning for melee Survival (the project's melee rule: more than half the damage from white swings and strikes); the rotation is shared, and this build plays it too.",
+     "**Entrapment** and **Survivalist** measured nothing at 60 in the fight lab: they fill the tree's first row.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.",
      "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
@@ -304,11 +313,11 @@
      "Low on health with no **Deterrence**: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you."
     ],
     "rotations": {
-     "leveling:bm-leveling": "218171201396",
-     "leveling:mm-raid": "7c8288202caa",
-     "leveling:melee-dps": "23c998860560"
+     "leveling:bm-leveling": "e852aa153be5",
+     "leveling:mm-raid": "d33d788a1cf8",
+     "leveling:melee-dps": "8458d12d978e"
     },
-    "written": "2026-10-22"
+    "written": "2026-10-26"
    }
   }
  }

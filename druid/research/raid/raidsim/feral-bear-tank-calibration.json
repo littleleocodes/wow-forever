@@ -13,13 +13,18 @@
   "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r3.json",
   "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r4.json",
   "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r5.json",
-  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r6.json"
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r6.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r7.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "druid/feralbear",
-  "gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
+  "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "apl": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
   "apl_sim": "ui/specs/druid/feralbear/apls/default.apl.json",
   "race": "RaceTauren",
@@ -37,17 +42,17 @@
    "dragonbreathChili": true,
    "foodId": 20452
   },
-  "encounter": "single level-63 target, 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "single level-63 target (creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
  },
  "talents": [
   {
-   "talent": "Thick Hide",
-   "sim": 0.06399298157663864,
-   "ev_before": 0.05786281255718602,
-   "ev_after": 0.05786281255718602,
+   "talent": "Ferocity",
+   "sim": 0.2750388252173987,
+   "ev_before": 0.3038274803595305,
+   "ev_after": 0.3038274803595305,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -60,14 +65,15 @@
     "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Blood Frenzy",
-   "sim": 0.05662242999189907,
-   "ev_before": 0.0672343321028088,
-   "ev_after": 0.0672343321028088,
+   "sim": 0.2511517012477349,
+   "ev_before": 0.26539959539825647,
+   "ev_after": 0.26539959539825647,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -80,49 +86,15 @@
     "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Shredding Attacks",
-   "sim": 0.05344187387754382,
-   "ev_before": 0.062204183008792845,
-   "ev_after": 0.062204183008792845,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Natural Reaction",
-   "sim": 0.04729952789990939,
-   "ev_before": 0.047414286384194024,
-   "ev_after": 0.047414286384194024,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Sharpened Claws",
-   "sim": 0.042943450853455904,
-   "ev_before": 0.04398210040444994,
-   "ev_after": 0.04398210040444994,
+   "sim": 0.08418168770747386,
+   "ev_before": 0.08328591357623255,
+   "ev_after": 0.08328591357623255,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -135,33 +107,31 @@
     "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
-   "talent": "Rend and Tear",
-   "sim": 0.039043653944220866,
-   "ev_before": 0.03737029340068396,
-   "ev_after": 0.03737029340068396,
+   "talent": "Shredding Attacks",
+   "sim": 0.06416727285926281,
+   "ev_before": 0.07013962652767919,
+   "ev_after": 0.07013962652767919,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "feral-bear-tank",
     "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Nature's Majesty",
-   "sim": 0.026612176537481845,
-   "ev_before": 0.019220354372821876,
-   "ev_after": 0.019220354372821876,
+   "sim": 0.05418364116691735,
+   "ev_before": 0.05425625167579396,
+   "ev_after": 0.05425625167579396,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -170,6 +140,159 @@
     "cand-feral-bear-tank-hand-2026-09-26",
     "cand-feral-bear-tank-hand-2026-09-27",
     "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Natural Reaction",
+   "sim": 0.0457477516499206,
+   "ev_before": 0.04781335038197307,
+   "ev_after": 0.04781335038197307,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Leader of the Pack",
+   "sim": 0.04023837165320053,
+   "ev_before": 0.04144417865915869,
+   "ev_after": 0.04144417865915869,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Rend and Tear",
+   "sim": 0.037279226834773194,
+   "ev_before": 0.03792174023150142,
+   "ev_after": 0.03792174023150142,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Savage Fury",
+   "sim": 0.03144101590092702,
+   "ev_before": 0.031687234264810196,
+   "ev_after": 0.031687234264810196,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Thick Hide",
+   "sim": 0.030579951636835537,
+   "ev_before": 0.034738556156003235,
+   "ev_after": 0.034738556156003235,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Nature's Reach",
+   "sim": 0.023084667694628774,
+   "ev_before": 0.023217709824653536,
+   "ev_after": 0.023217709824653536,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Natural Instinct",
+   "sim": 0.020471849520132375,
+   "ev_before": 0.023032622367660065,
+   "ev_after": 0.023032622367660065,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Naturalist",
+   "sim": 0.020154176226554608,
+   "ev_before": 0.02128056522091826,
+   "ev_after": 0.02128056522091826,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-bear-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
     "cand-feral-bear-tank-r6"
@@ -177,9 +300,9 @@
   },
   {
    "talent": "Feral Swiftness",
-   "sim": 0.023713237123334927,
-   "ev_before": 0.02364085407004442,
-   "ev_after": 0.02364085407004442,
+   "sim": 0.01687093950619254,
+   "ev_before": 0.014442277952706344,
+   "ev_after": 0.014442277952706344,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -191,51 +314,15 @@
     "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Naturalist",
-   "sim": 0.019945395184192305,
-   "ev_before": 0.016234768670932435,
-   "ev_after": 0.016234768670932435,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Natural Instinct",
-   "sim": 0.018043075807508316,
-   "ev_before": 0.012491703167806997,
-   "ev_after": 0.012491703167806997,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Predatory Strikes",
-   "sim": 0.016994741159661146,
-   "ev_before": 0.014948791039040867,
-   "ev_after": 0.014948791039040867,
+   "sim": 0.015789309289929745,
+   "ev_before": 0.0197013469066115,
+   "ev_after": 0.0197013469066115,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -248,131 +335,31 @@
     "cand-feral-bear-tank-r3",
     "cand-feral-bear-tank-r4",
     "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Ferocity",
-   "sim": 0.01573127796797586,
-   "ev_before": 0.015731277269467193,
-   "ev_after": 0.015731277269467193,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Primal Bite",
-   "sim": 0.0037204302232533514,
-   "ev_before": 0.0030134926332797962,
-   "ev_after": 0.0030134926332797962,
+   "sim": 0.012225048711342947,
+   "ev_before": 0.016788328123908895,
+   "ev_after": 0.016788328123908895,
    "scale": 1.0,
-   "how": "noise",
+   "how": "kept",
    "builds": [
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Genesis",
-   "sim": 0.0035395012997684466,
-   "ev_before": 0.004200598715477511,
-   "ev_after": 0.004200598715477511,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Savage Fury",
-   "sim": 0.001965212714481257,
-   "ev_before": 0.000793662454903225,
-   "ev_after": 0.000793662454903225,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "feral-bear-tank",
     "opt-feral-bear-tank-raid-tank",
     "cand-feral-bear-tank-hand-2026-09-26",
     "cand-feral-bear-tank-hand-2026-09-27",
     "cand-feral-bear-tank-r1",
     "cand-feral-bear-tank-r2",
     "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
-   ]
-  },
-  {
-   "talent": "Berserk",
-   "sim": 0.0005208381830280146,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2"
-   ]
-  },
-  {
-   "talent": "Nature's Reach",
-   "sim": 0.00046552679328462507,
-   "ev_before": 0.0005269260598639846,
-   "ev_after": 0.0005269260598639846,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1"
-   ]
-  },
-  {
-   "talent": "Feral Charge",
-   "sim": 0.0,
-   "ev_before": 0.006902288780462987,
-   "ev_after": 0.006902288780462987,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "builds": [
-    "feral-bear-tank",
-    "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3",
-    "cand-feral-bear-tank-r4",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
    "talent": "Furor",
-   "sim": 0.0,
+   "sim": 0.0022303585802176925,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -386,16 +373,54 @@
    ]
   },
   {
-   "talent": "Nature's Focus",
+   "talent": "Genesis",
+   "sim": 0.00020678709479594483,
+   "ev_before": 0.0009188555195370547,
+   "ev_after": 0.0009188555195370547,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Feral Charge",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 0.00422550339032511,
+   "ev_after": 0.00422550339032511,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank",
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2",
+    "cand-feral-bear-tank-r3",
+    "cand-feral-bear-tank-r4",
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6",
+    "cand-feral-bear-tank-r7"
+   ]
+  },
+  {
+   "talent": "Heart of the Wild",
+   "sim": 0.0,
+   "ev_before": 0.00010270952911998917,
+   "ev_after": 0.00010270952911998917,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "opt-feral-bear-tank-raid-tank",
-    "cand-feral-bear-tank-r5",
-    "cand-feral-bear-tank-r6"
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-r7"
    ]
   },
   {
@@ -414,25 +439,10 @@
    ]
   },
   {
-   "talent": "Leader of the Pack",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-feral-bear-tank-hand-2026-09-26",
-    "cand-feral-bear-tank-hand-2026-09-27",
-    "cand-feral-bear-tank-r1",
-    "cand-feral-bear-tank-r2",
-    "cand-feral-bear-tank-r3"
-   ]
-  },
-  {
    "talent": "Improved Wrath",
    "sim": 0.0,
-   "ev_before": 7.03078806274085e-05,
-   "ev_after": 7.03078806274085e-05,
+   "ev_before": 4.192020952144665e-05,
+   "ev_after": 4.192020952144665e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -443,8 +453,8 @@
   {
    "talent": "Moonglow",
    "sim": 0.0,
-   "ev_before": 4.218354204227756e-05,
-   "ev_after": 4.218354204227756e-05,
+   "ev_before": 2.515170396696933e-05,
+   "ev_after": 2.515170396696933e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -467,8 +477,8 @@
   {
    "talent": "Natural Shapeshifter",
    "sim": 0.0,
-   "ev_before": 3.518128802394503e-05,
-   "ev_after": 3.518128802394503e-05,
+   "ev_before": 2.202658771763038e-05,
+   "ev_after": 2.202658771763038e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -479,8 +489,8 @@
   {
    "talent": "Reflection",
    "sim": 0.0,
-   "ev_before": 3.518128802394503e-05,
-   "ev_after": 3.518128802394503e-05,
+   "ev_before": 2.202658771763038e-05,
+   "ev_after": 2.202658771763038e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -500,14 +510,29 @@
    ]
   },
   {
-   "talent": "Heart of the Wild",
-   "sim": -0.006062528040324169,
-   "ev_before": 0.00018857294675068465,
-   "ev_after": 0.00018857294675068465,
+   "talent": "Nature's Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
-   "how": "kept",
+   "how": "noise",
    "builds": [
-    "cand-feral-bear-tank-hand-2026-09-26"
+    "cand-feral-bear-tank-r5",
+    "cand-feral-bear-tank-r6"
+   ]
+  },
+  {
+   "talent": "Berserk",
+   "sim": -0.0006901983388251981,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-feral-bear-tank-hand-2026-09-26",
+    "cand-feral-bear-tank-hand-2026-09-27",
+    "cand-feral-bear-tank-r1",
+    "cand-feral-bear-tank-r2"
    ]
   }
  ],

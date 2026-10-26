@@ -1,21 +1,21 @@
-# Daggers (split) — Raid (open talent search) — 21/28/2
+# Daggers (split) — Raid (open talent search) — 28/21/2
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 21/28/2 (Assassination / Combat / Subtlety) |
+| **Build** | 28/21/2 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent search found on 2026-10-10: every legal 51-point build with no tree rule, searched in the community simulator's assassination-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over assassination-ml-raid, the best of our builds in that rotation.
+The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent search found on 2026-10-25: every legal 51-point build with no tree rule, searched in the community simulator's assassination-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.2% over assassination-ml-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
-### Assassination (21)
+### Assassination (28)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -24,12 +24,13 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
 | **Lethality** | 3/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%. |
-| **Vile Poisons** | 1/5 | moved | Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects. |
+| **Vile Poisons** | 3/5 | moved | Increases the damage dealt by your poisons by 12% and gives your poisons an additional 24% chance to resist dispel effects. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Improved Poisons** | 3/5 | changed | Increases the chance to apply Poisons to your target by 6%, and gives Poison applications a 30% chance to not consume a charge. |
+| **Improved Poisons** | 5/5 | changed | Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
+| **Seal Fate** | 3/5 | moved | Your critical strikes from abilities that add Combo Points have a 60% chance to add an additional Combo Point. |
 
-### Combat (28)
+### Combat (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -40,9 +41,6 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
-| **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
-| **Hack and Slash** | 4/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 4% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 4%.   Mace: Your attacks ignore 12% of  your target's armor. |
-| **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
 
 ### Subtlety (2)
 
@@ -52,26 +50,26 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 
 ## Core talents (priority order)
 
-1. **Relentless Strikes** — 49 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
-2. **Dual Wield Specialization** — 35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-3. **Malice** — 31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-4. **Ruthlessness** — 27 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-5. **Improved Slice and Dice** — 24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
-6. **Hack and Slash** — 23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
-7. **Precision** — 22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
-8. **Flawless Execution** — 16 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights).
+1. **Relentless Strikes** — 58 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+2. **Dual Wield Specialization** — 32 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+3. **Malice** — 29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+4. **Seal Fate** — 24 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+5. **Improved Slice and Dice** — 23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+6. **Ruthlessness** — 20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+7. **Improved Poisons** — 20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+8. **Flawless Execution** — 20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 373 | +0.0% | 657 | -0.8% | 0 s |
-| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 371 | -0.6% | 643 | -2.9% | 0 s |
-| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 362 | -3.0% | 662 | +0.0% | 0 s |
-| 4 | *Asn Muti* | community simulator | - | 345 | -7.5% | 648 | -2.0% | 0 s |
-| 5 | **[`daggers-split-open-raid`](daggers-split-open-raid.md)** | ours: derived (open search) | 21/28/2 | 344 | -8.0% | 657 | -0.8% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 373 | +0.0% | 657 | -1.0% | 0 s |
+| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 371 | -0.6% | 643 | -3.2% | 0 s |
+| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 362 | -3.0% | 662 | -0.3% | 0 s |
+| 4 | **[`daggers-split-open-raid`](daggers-split-open-raid.md)** | ours: derived (open search) | 28/21/2 | 356 | -4.5% | 664 | +0.0% | 0 s |
+| 5 | *Asn Muti* | community simulator | - | 345 | -7.5% | 648 | -2.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,12 +96,12 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 
 | # | Priority (the first line whose condition holds is cast) | [`daggers-split-open-raid`](daggers-split-open-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Backstab (rank 8) | 9.2 |
-| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.5 |
+| 1 | cast Backstab (rank 8) | 9.5 |
+| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 |
 | 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 3.0 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
-| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 0.8 |
+| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 1.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
 
@@ -111,23 +109,20 @@ Damage by ability:
 
 | Ability | [`daggers-split-open-raid`](daggers-split-open-raid.md) |
 |---|---|
-| Auto Attack | 49% |
-| Backstab | 31% |
-| spell 25349 | 9% |
-| spell 11337 | 5% |
-| Eviscerate | 4% |
+| Auto Attack | 44% |
+| Backstab | 30% |
+| spell 25349 | 10% |
+| Eviscerate | 7% |
+| spell 11337 | 6% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes
 
-- Open search result (assassination-raid, full raid): 21/28/2 (Daggers (split) (an Assassination/Combat hybrid)) at 717.9 DPS; assassination-ml-raid 707.6, assassination-seal-fate-raid 702.3, assassination-mutilate-raid 688.5 in the same fights; 4,405 builds simulated, 2 independent runs reached the top.
-- The assassination-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): combat-swords-raid -11.0%, combat-daggers-raid -0.1%, subtlety-raid -53.8%; none adopted.
-- A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json, item level 64.7): 717.9 DPS against 717.9 in the rotation's standard set: the standard set stays.
-- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Sinister Strike, Lightning Reflexes, Deflection, Riposte.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
-- 2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Riposte was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Sinister Strike -> Lightning Reflexes (survival); Riposte -> Lightning Reflexes (survival). Net +0.00% on a third seed.
-- 2026-10-15 (page audit): restored. The 2026-10-15 ML search for the hybrid wrote daggers-split-ml-raid (30/19/2) in its place, which is the Assassination ML build with two free points moved (30 Assassination points: not a split); that build was removed.
+- Open search result (assassination-raid, full raid): 28/21/2 (Daggers (split) (an Assassination/Combat hybrid)) at 663.4 DPS; assassination-ml-raid 662.0, assassination-seal-fate-raid 656.9, daggers-split-open-raid 656.5, assassination-mutilate-raid 642.9 in the same fights; 7,678 builds simulated, 3 independent runs reached the top.
+- Sibling rotations tried on it (10,000 fights): combat-swords-raid -11.1%, combat-daggers-raid -0.2%, subtlety-raid -55.8%; none adopted.
+- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Sinister Strike, Lightning Reflexes, Deflection, Endurance.
+- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
+- 2026-10-25 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Improved Sinister Strike -> Lightning Reflexes (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -136,7 +131,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6>
+- <https://talentsforever.com/rogue/60/0053031033150103-311333100015-002-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*
