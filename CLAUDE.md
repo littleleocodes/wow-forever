@@ -390,7 +390,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   scorer model: the scenario audit leaves them out.
 - **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`; files the patches add are
   removed there): our additions to the community simulator. **Since the port (2026-10-18)** `patches/forever/` holds the official
-  simulator's: no racials, Champion of the Light 10/20/30%, pet hit inheritance, the unnormalized pet swing, Hunter's Mark rank 3; the
+  simulator's: no racials, Champion of the Light 10/20/30%, pet hit inheritance, the unnormalized pet swing, Hunter's Mark rank 3, and since 2026-10-26 the absent rule (a rotation condition on an aura, dot or spell the build lacks reads false/0 instead of being dropped, which made the action cast always: `forever_absent.go`; removal values of rotation-conditioned talents before that date are inflated); the
   others below are the official code's own now or retired, and the fork's set is archived in `patches/elliotwood-b7083fa/`
   (`patches/README.md`, `_reference/sim-port.md`). The rest of this paragraph is the fork's history.
   Frostfire Bolt was one until 2026-10-03, when the fork implemented it (retired).

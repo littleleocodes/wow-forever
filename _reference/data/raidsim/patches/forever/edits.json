@@ -22,5 +22,53 @@
   "replace": "\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n",
   "with": "\t\tif foreverPetNormalize() { // wow-forever patch: Forever keeps a faster pet's swing damage whole (patches/forever/sim/hunter/forever_pet_rule.go)\n\t\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n\t\t}\n",
   "why": "forum measurements put a 1.2 s cat 42% ahead of a 2.0 s pet at levels 20-30: Forever does not normalize pet damage by speed; the official simulator does"
+ },
+ {
+  "file": "sim/core/apl_values_aura.go",
+  "replace": "\tif aura.Get() == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueAuraIsActive{",
+  "with": "\tif aura.Get() == nil {\n\t\treturn rot.foreverAbsent(\"false\") // wow-forever patch: absent reads as false (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueAuraIsActive{",
+  "why": "a condition on an aura/dot/spell the build lacks reads false (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_aura.go",
+  "replace": "\tif aura.Get() == nil {\n\t\treturn nil\n\t}\n\n\treturn &APLValueAuraIsInactive{",
+  "with": "\tif aura.Get() == nil {\n\t\treturn rot.foreverAbsent(\"true\") // wow-forever patch: absent reads as true (patches/forever/sim/core/forever_absent.go)\n\t}\n\n\treturn &APLValueAuraIsInactive{",
+  "why": "a condition on an aura/dot/spell the build lacks reads true (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_aura.go",
+  "replace": "\tif aura.Get() == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueAuraRemainingTime{",
+  "with": "\tif aura.Get() == nil {\n\t\treturn rot.foreverAbsent(\"0ms\") // wow-forever patch: absent reads as 0ms (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueAuraRemainingTime{",
+  "why": "a condition on an aura/dot/spell the build lacks reads 0ms (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_aura.go",
+  "replace": "\tresolvedAura := aura.Get()\n\tif resolvedAura == nil {\n\t\treturn nil\n\t}\n\tif resolvedAura.MaxStacks == 0 {",
+  "with": "\tresolvedAura := aura.Get()\n\tif resolvedAura == nil {\n\t\treturn rot.foreverAbsent(\"0\") // wow-forever patch: absent reads as 0 (patches/forever/sim/core/forever_absent.go)\n\t}\n\tif resolvedAura.MaxStacks == 0 {",
+  "why": "a condition on an aura/dot/spell the build lacks reads 0 (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_dot.go",
+  "replace": "\tif dot.Get() == nil {\n\t\treturn nil\n\t}\n\n\treturn &APLValueDotIsActive{",
+  "with": "\tif dot.Get() == nil {\n\t\treturn rot.foreverAbsent(\"false\") // wow-forever patch: absent reads as false (patches/forever/sim/core/forever_absent.go)\n\t}\n\n\treturn &APLValueDotIsActive{",
+  "why": "a condition on an aura/dot/spell the build lacks reads false (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_dot.go",
+  "replace": "\tif dot.Get() == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueDotRemainingTime{",
+  "with": "\tif dot.Get() == nil {\n\t\treturn rot.foreverAbsent(\"0ms\") // wow-forever patch: absent reads as 0ms (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueDotRemainingTime{",
+  "why": "a condition on an aura/dot/spell the build lacks reads 0ms (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_spell.go",
+  "replace": "\tif spell == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueSpellIsReady{",
+  "with": "\tif spell == nil {\n\t\treturn rot.foreverAbsent(\"false\") // wow-forever patch: absent reads as false (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueSpellIsReady{",
+  "why": "a condition on an aura/dot/spell the build lacks reads false (upstream drops it and the action casts always)"
+ },
+ {
+  "file": "sim/core/apl_values_spell.go",
+  "replace": "\tif spell == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueSpellCanCast{",
+  "with": "\tif spell == nil {\n\t\treturn rot.foreverAbsent(\"false\") // wow-forever patch: absent reads as false (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueSpellCanCast{",
+  "why": "a condition on an aura/dot/spell the build lacks reads false (upstream drops it and the action casts always)"
  }
 ]
