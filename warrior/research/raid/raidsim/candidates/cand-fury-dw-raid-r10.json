@@ -1,13 +1,13 @@
 {
- "id": "cand-fury-dw-raid-preset-dps",
+ "id": "cand-fury-dw-raid-r10",
  "allocation": {
   "Arms": [
    [
-    "Improved Heroic Strike",
+    "Improved Rend",
     3
    ],
    [
-    "Improved Rend",
+    "Deflection",
     3
    ],
    [
@@ -21,15 +21,19 @@
    [
     "Deep Wounds",
     3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Spearing Strike",
+    1
    ]
   ],
   "Fury": [
    [
     "Cruelty",
-    5
-   ],
-   [
-    "Lingering Rage",
     5
    ],
    [
@@ -41,6 +45,10 @@
     3
    ],
    [
+    "Blood Craze",
+    3
+   ],
+   [
     "Dual Wield Specialization",
     5
    ],
@@ -49,12 +57,16 @@
     1
    ],
    [
-    "Enrage",
-    5
+    "Improved Execute",
+    2
    ],
    [
     "Death Wish",
     1
+   ],
+   [
+    "Improved Berserker Rage",
+    2
    ],
    [
     "Flurry",
@@ -64,9 +76,8 @@
     "Bloodthirst",
     1
    ]
-  ]
+  ],
+  "Protection": []
  },
- "preset": "DPS",
- "talents": "30305013-05553005150010501",
- "note": "The community simulator's preset 'DPS' (warrior/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fury-dw-raid (370.5 vs 389.9 in the race of 2026-10-03)."
+ "note": "Optimizer raid build saved by rebuild.py on 2026-10-27 (raid calibration round 1)"
 }

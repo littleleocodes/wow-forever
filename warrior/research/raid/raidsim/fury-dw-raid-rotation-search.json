@@ -250,16 +250,16 @@
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-27",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
     "label": "fury-open-raid",
-    "talents": "04305013002-05053035102010501-2"
+    "talents": "31305013002-05053035102010501-2"
    },
    {
     "label": "sim preset: DPS",
@@ -272,7 +272,7 @@
    },
    {
     "label": "opt-fury-dw-raid-raid-dps",
-    "talents": "04305013102-25050035102210501",
+    "talents": "35310003102-05053035102210501",
     "protect_only": true
    }
   ],
@@ -410,41 +410,57 @@
     "gain_seed2": 0.0031036690923431642,
     "candidates": 742,
     "pass": 7
+   },
+   {
+    "round": 17,
+    "change": "threshold 1.5s -> 1s: if time until Bloodthirst is ready > 1.125s and time until Whirlwind is ready > 1.5s: cast Hamstring",
+    "gain_seed1": 0.0022038042968026694,
+    "gain_seed2": 0.0026445722304280217,
+    "candidates": 943,
+    "pass": 8
+   },
+   {
+    "round": 18,
+    "change": "insert before the filler: if rage < 90: cast Bloodrage",
+    "gain_seed1": 0.0013382250758284808,
+    "gain_seed2": 0.0018359860120522598,
+    "candidates": 939,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "fury-open-raid": {
-     "before": 843.8850200193172,
-     "after": 925.0897865710722,
-     "base": 843.8850200193172,
+     "before": 833.3563562976998,
+     "after": 924.3539806580455,
+     "base": 833.3563562976998,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 813.9292903099656,
-     "after": 885.4589673109614,
-     "base": 813.9292903099656,
+     "before": 788.2604499590157,
+     "after": 873.5056935835719,
+     "base": 788.2604499590157,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "fury-dw-raid": {
-     "before": 812.8547863613248,
-     "after": 884.9467119228199,
-     "base": 812.8547863613248,
+     "before": 791.8939341251391,
+     "after": 873.9930460762914,
+     "base": 791.8939341251391,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-fury-dw-raid-raid-dps": {
-     "before": 809.2958500640993,
-     "after": 885.9986044189441,
-     "base": 809.2958500640993,
+     "before": 818.6784180014413,
+     "after": 909.5616361900081,
+     "base": 818.6784180014413,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -452,7 +468,23 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Arms",
+    "Fury"
+   ],
+   "required": [
+    "Bloodthirst",
+    "Mortal Strike"
+   ],
+   "rejected": {
+    "structure": 12,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

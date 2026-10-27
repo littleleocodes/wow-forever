@@ -10,23 +10,23 @@ Missing: Lingering Rage
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Bloodthirst | Fury | 7 | +21.93% | manual |
-| Mortal Strike | Arms | 7 | +8.20% | manual |
-| Flurry | Fury | 6 | +5.95% | manual |
-| Deep Wounds | Arms | 3 | +3.10% | manual |
-| Anger Management | Arms | 3 | +2.63% | manual |
-| Death Wish | Fury | 5 | +1.87% | manual |
-| Weaponmaster | Arms | 5 | +1.81% | manual |
-| Improved Execute | Fury | 4 | +1.71% | manual |
+| Bloodthirst | Fury | 7 | +23.16% | manual |
+| Mortal Strike | Arms | 7 | +13.42% | manual |
+| Flurry | Fury | 6 | +5.57% | manual |
+| Death Wish | Fury | 5 | +3.55% | manual |
+| Deep Wounds | Arms | 3 | +2.93% | manual |
+| Raging Blows | Fury | 4 | +2.69% | manual |
+| Improved Execute | Fury | 4 | +1.95% | manual |
 | Cruelty | Fury | 1 | +1.65% | manual |
+| Anger Management | Arms | 3 | +1.53% | manual |
+| Focused Rage | Protection | 5 | +1.12% | manual |
 | Two-Handed Weapon Specialization | Arms | 4 | +1.00% | manual |
-| Focused Rage | Protection | 5 | +0.99% | manual |
-| Raging Blows | Fury | 4 | +0.95% | manual |
-| Unbridled Wrath | Fury | 2 | +0.74% | manual |
+| Improved Berserker Rage | Fury | 5 | +0.98% | manual |
+| Weaponmaster | Arms | 5 | +0.72% | manual |
 | Spearing Strike | Arms | 4 | +0.50% | manual |
-| Impale | Arms | 4 | +0.35% | manual |
-| Improved Berserker Rage | Fury | 5 | +0.07% | manual |
-| Dual Wield Specialization | Fury | 4 | +0.05% | manual |
+| Impale | Arms | 4 | +0.40% | manual |
+| Unbridled Wrath | Fury | 2 | +0.23% | manual |
+| Dual Wield Specialization | Fury | 4 | +0.06% | manual |
 | Last Stand | Protection | 3 | +0.01% | manual |
 | Improved Slam | Arms | 6 | +0.01% | manual |
 | Defiance | Protection | 3 | +0.00% | manual |
@@ -41,30 +41,30 @@ Missing: Lingering Rage
 | Improved Rend | Arms | 1 | +0.00% | manual |
 | Improved Charge | Arms | 2 | +0.00% | manual |
 
-## Optimized build: 20/31/0  score +97.92%  (dps x1.979, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 20/31/0  score +105.22%  (dps x2.052, sustain x1.000, surv x1.000, utility +0.00%)
 
 ```
-  Arms: Deflection 5, Improved Heroic Strike 3, Improved Rend 3, Improved Charge 1, Deep Wounds 3, Two-Handed Weapon Specialization 3, Spearing Strike 1, Impale 1
-  Fury: Cruelty 5, Booming Voice 2, Unbridled Wrath 5, Blood Craze 3, Improved Execute 2, Raging Blows 1, Dual Wield Specialization 4, Death Wish 1, Improved Berserker Rage 2, Flurry 5, Bloodthirst 1
+  Arms: Deflection 3, Improved Rend 3, Improved Tactical Mastery 5, Deep Wounds 3, Anger Management 1, Two-Handed Weapon Specialization 3, Impale 2
+  Fury: Booming Voice 2, Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Improved Execute 2, Raging Blows 1, Dual Wield Specialization 4, Death Wish 1, Improved Berserker Rage 2, Flurry 5, Bloodthirst 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mortal Strike | Arms 7 | 1/1 | +16.24% | no |
-| Anger Management | Arms 3 | 1/1 | +5.78% | no |
-| Weaponmaster | Arms 5 | 1/5 | +3.58% | yes |
-| Focused Rage | Protection 5 | 1/3 | +1.39% | no |
-| Impale | Arms 4 | 2/2 | +0.97% | yes |
-| Dual Wield Specialization | Fury 4 | 5/5 | +0.11% | yes |
+| Mortal Strike | Arms 7 | 1/1 | +27.54% | no |
+| Focused Rage | Protection 5 | 1/3 | +1.76% | no |
+| Weaponmaster | Arms 5 | 1/5 | +1.48% | yes |
+| Spearing Strike | Arms 4 | 1/1 | +1.03% | yes |
+| Dual Wield Specialization | Fury 4 | 5/5 | +0.14% | yes |
 | Last Stand | Protection 3 | 1/1 | +0.01% | no |
+| Improved Slam | Arms 6 | 1/2 | +0.01% | no |
 | Gore Drinker | Fury 6 | 1/2 | +0.01% | no |
-| Improved Slam | Arms 6 | 1/2 | +0.00% | no |
 | Defiance | Protection 3 | 1/3 | +0.00% | no |
 | Shield Slam | Protection 7 | 1/1 | +0.00% | no |
+| Deflection | Arms 1 | 4/5 | +0.00% | yes |
 | Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |
 | Master of Defense | Protection 3 | 1/2 | +0.00% | no |
 | Improved Sunder Armor | Protection 4 | 1/3 | +0.00% | no |
-| Improved Charge | Arms 2 | 2/2 | +0.00% | yes |
+| Improved Heroic Strike | Arms 1 | 1/3 | +0.00% | yes |
 

@@ -226,11 +226,11 @@
  "raid": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-27",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
@@ -244,6 +244,11 @@
    {
     "label": "arms-2h-raid",
     "talents": "03305013031-55350000052010501",
+    "protect_only": true
+   },
+   {
+    "label": "opt-arms-2h-raid-raid-dps",
+    "talents": "35310003131-25050034102210501",
     "protect_only": true
    }
   ],
@@ -349,32 +354,40 @@
     "gain_seed2": 0.0017500400214169876,
     "candidates": 702,
     "pass": 7
+   },
+   {
+    "round": 13,
+    "change": "insert before the filler: if time until Bloodthirst is ready \u2265 1.5s and time until Whirlwind is ready \u2265 1.5s and (Improved Berserker Rage is known or Improved Berserker Rage is known): cast Berserker Rage",
+    "gain_seed1": 0.0044870725272263545,
+    "gain_seed2": 0.004447395788367281,
+    "candidates": 913,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "opt-arms-2h-raid-raid-dps": {
-     "before": 725.2396653079478,
-     "after": 898.6192154993064,
-     "base": 725.2396653079478,
+     "before": 688.1224737022656,
+     "after": 829.2383116228654,
+     "base": 688.1224737022656,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 683.0796550188809,
-     "after": 843.4605450507884,
-     "base": 683.0796550188809,
+     "before": 654.3400454188094,
+     "after": 785.4879503600127,
+     "base": 654.3400454188094,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "arms-2h-raid": {
-     "before": 716.5066428748856,
-     "after": 887.039343968704,
-     "base": 716.5066428748856,
+     "before": 685.4546922615996,
+     "after": 828.5260443861953,
+     "base": 685.4546922615996,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -382,7 +395,23 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Arms",
+    "Fury"
+   ],
+   "required": [
+    "Bloodthirst",
+    "Mortal Strike"
+   ],
+   "rejected": {
+    "structure": 10,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

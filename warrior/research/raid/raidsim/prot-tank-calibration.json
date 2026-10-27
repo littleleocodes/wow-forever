@@ -6,20 +6,26 @@
  "builds": [
   "prot-raid-tank",
   "opt-prot-tank-raid-tank",
+  "protection-ml-tank",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-26.json",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-27.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-protection.json",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r1.json",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r2.json",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r3.json",
   "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r4.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "warrior/protection",
-  "gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
+  "gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
   "apl": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
-  "apl_sim": "ui/specs/warrior/protection/apls/protection.apl.json",
+  "apl_sim": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/apls/protection.apl.json",
   "race": "RaceDwarf",
   "setting": "raid",
   "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults), the sim spec's default consumables",
@@ -35,24 +41,27 @@
    "dragonbreathChili": true,
    "foodId": 20452
   },
-  "encounter": "single level-63 target, 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "single level-63 target (creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
  },
  "talents": [
   {
-   "talent": "Shield Slam",
-   "sim": 0.17086102721541846,
-   "ev_before": 0.1645742529609191,
-   "ev_after": 0.1645742529609191,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Improved Revenge",
+   "sim": 0.07687891819644188,
+   "ev_before": 0.0536597126685564,
+   "ev_after": 0.0688826208498792,
+   "scale": 1.4327141912654042,
+   "how": "fitted",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r1",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
@@ -60,16 +69,18 @@
   },
   {
    "talent": "Defiance",
-   "sim": 0.06013672381391484,
-   "ev_before": 0.06006145957313825,
-   "ev_after": 0.06006145957313825,
+   "sim": 0.0638888888888882,
+   "ev_before": 0.0644943775978314,
+   "ev_after": 0.05922149664452278,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
@@ -77,16 +88,18 @@
   },
   {
    "talent": "Deflection",
-   "sim": 0.03976808913116088,
-   "ev_before": 0.03826615761313435,
-   "ev_after": 0.03826615761313435,
+   "sim": 0.04400620962499168,
+   "ev_before": 0.0374938102194051,
+   "ev_after": 0.04170795791695216,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r1",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
@@ -95,49 +108,35 @@
   },
   {
    "talent": "Bastion",
-   "sim": 0.03723822748208053,
-   "ev_before": 0.03544628025438025,
-   "ev_after": 0.03544628025438025,
+   "sim": 0.039265478776730735,
+   "ev_before": 0.03611799243101612,
+   "ev_after": 0.03328278907773368,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
    ]
   },
   {
-   "talent": "Focused Rage",
-   "sim": 0.029088979041000197,
-   "ev_before": 0.026870651294456583,
-   "ev_after": 0.026870651294456583,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Shield Slam",
+   "sim": 0.03589413847519192,
+   "ev_before": 0.16880587375615222,
+   "ev_after": 0.03539230034200846,
+   "scale": 0.20913837058469653,
+   "how": "fitted",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
-    "cand-prot-tank-r2",
-    "cand-prot-tank-r3",
-    "cand-prot-tank-r4"
-   ]
-  },
-  {
-   "talent": "Improved Revenge",
-   "sim": 0.028741873815882075,
-   "ev_before": 0.030196698389584206,
-   "ev_after": 0.030196698389584206,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "prot-raid-tank",
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-hand-2026-09-26",
-    "cand-prot-tank-hand-2026-09-27",
-    "cand-prot-tank-r1",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
@@ -145,16 +144,37 @@
   },
   {
    "talent": "Anticipation",
-   "sim": 0.025260575589289267,
-   "ev_before": 0.019899112160221562,
-   "ev_after": 0.019899112160221562,
+   "sim": 0.027235953967438973,
+   "ev_before": 0.019254329886721273,
+   "ev_after": 0.021740013715977988,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r2",
+    "cand-prot-tank-r3",
+    "cand-prot-tank-r4"
+   ]
+  },
+  {
+   "talent": "Focused Rage",
+   "sim": 0.02512665853771973,
+   "ev_before": 0.04224482101563847,
+   "ev_after": 0.025055979227889616,
+   "scale": 0.6671712887473404,
+   "how": "fitted",
+   "builds": [
+    "prot-raid-tank",
+    "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
+    "cand-prot-tank-hand-2026-09-26",
+    "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
@@ -162,9 +182,9 @@
   },
   {
    "talent": "Weaponmaster",
-   "sim": 0.024624606843544592,
-   "ev_before": 0.016949584403319076,
-   "ev_after": 0.016949584403319076,
+   "sim": 0.02294382228158897,
+   "ev_before": 0.01705260143075375,
+   "ev_after": 0.017211472017189144,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -173,16 +193,18 @@
   },
   {
    "talent": "Shield Specialization",
-   "sim": 0.02088483334160305,
-   "ev_before": 0.01887199199716754,
-   "ev_after": 0.01887199199716754,
+   "sim": 0.0157711974433336,
+   "ev_before": 0.018959098493442968,
+   "ev_after": 0.018697814832236936,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r1",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
@@ -191,51 +213,18 @@
   },
   {
    "talent": "Cruelty",
-   "sim": 0.019283079392183225,
-   "ev_before": 0.016044333505288274,
-   "ev_after": 0.016044333505288274,
+   "sim": 0.01572238797117086,
+   "ev_before": 0.015967012566345008,
+   "ev_after": 0.014779139231321046,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
-    "cand-prot-tank-r1",
-    "cand-prot-tank-r2",
-    "cand-prot-tank-r3",
-    "cand-prot-tank-r4"
-   ]
-  },
-  {
-   "talent": "Improved Thunder Clap",
-   "sim": 0.01819523819781397,
-   "ev_before": 0.009647554640608572,
-   "ev_after": 0.009647554640608572,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "prot-raid-tank",
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-hand-2026-09-27",
-    "cand-prot-tank-r1",
-    "cand-prot-tank-r2",
-    "cand-prot-tank-r3",
-    "cand-prot-tank-r4"
-   ]
-  },
-  {
-   "talent": "Master of Defense",
-   "sim": 0.00849313238844802,
-   "ev_before": 0.014186278279837526,
-   "ev_after": 0.014186278279837526,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "prot-raid-tank",
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-hand-2026-09-26",
-    "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r1",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
@@ -244,40 +233,30 @@
   },
   {
    "talent": "Impale",
-   "sim": 0.00817210380555665,
-   "ev_before": 0.0035677153707104393,
-   "ev_after": 0.0035677153707104393,
+   "sim": 0.011826446752423137,
+   "ev_before": 0.005226004718439181,
+   "ev_after": 0.0050529586291922085,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "protection-ml-tank",
     "cand-prot-tank-r1"
    ]
   },
   {
-   "talent": "Deep Wounds",
-   "sim": 0.008124025627156736,
-   "ev_before": 0.006176734556417658,
-   "ev_after": 0.006176734556417658,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-r1",
-    "cand-prot-tank-r4"
-   ]
-  },
-  {
-   "talent": "Improved Heroic Strike",
-   "sim": 0.007793696240518304,
-   "ev_before": 0.007659538720734911,
-   "ev_after": 0.007659538720734911,
+   "talent": "Master of Defense",
+   "sim": 0.010681643858608994,
+   "ev_before": 0.014528674925996066,
+   "ev_after": 0.013498797992824538,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r1",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
@@ -285,12 +264,74 @@
    ]
   },
   {
-   "talent": "Anger Management",
-   "sim": 0.005719582405474605,
-   "ev_before": 0.011536593018384795,
-   "ev_after": 0.011536593018384795,
+   "talent": "Deep Wounds",
+   "sim": 0.006596911504276151,
+   "ev_before": 0.007073661581672379,
+   "ev_after": 0.00658091055705128,
    "scale": 1.0,
    "how": "kept",
+   "builds": [
+    "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r1",
+    "cand-prot-tank-r4"
+   ]
+  },
+  {
+   "talent": "Improved Heroic Strike",
+   "sim": 0.00598159350091826,
+   "ev_before": 0.006998452897578805,
+   "ev_after": 0.0063528363791738665,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "prot-raid-tank",
+    "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
+    "cand-prot-tank-hand-2026-09-26",
+    "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r1",
+    "cand-prot-tank-r2",
+    "cand-prot-tank-r3",
+    "cand-prot-tank-r4"
+   ]
+  },
+  {
+   "talent": "Improved Rend",
+   "sim": 0.004044208772014699,
+   "ev_before": 0.0038563614773853504,
+   "ev_after": 0.0035734940940867453,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r1",
+    "cand-prot-tank-r4"
+   ]
+  },
+  {
+   "talent": "Improved Sunder Armor",
+   "sim": 0.0034002128373648386,
+   "ev_before": 0.005300353103378733,
+   "ev_after": 0.004818630800587515,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "protection-ml-tank",
+    "cand-prot-tank-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Anger Management",
+   "sim": 0.0030529614133465695,
+   "ev_before": 0.011711115898764191,
+   "ev_after": 0.0030531166000411876,
+   "scale": 0.27782500023022294,
+   "how": "fitted",
    "builds": [
     "prot-raid-tank",
     "cand-prot-tank-hand-2026-09-27",
@@ -300,27 +341,15 @@
    ]
   },
   {
-   "talent": "Improved Rend",
-   "sim": 0.005580723772529616,
-   "ev_before": 0.0060225572951628226,
-   "ev_after": 0.0060225572951628226,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-r1",
-    "cand-prot-tank-r4"
-   ]
-  },
-  {
    "talent": "Improved Bloodrage",
-   "sim": 0.005210903448192667,
-   "ev_before": 0.002937796015208484,
-   "ev_after": 0.002937796015208484,
+   "sim": 0.0030112465059787693,
+   "ev_before": 0.003080060205674648,
+   "ev_after": 0.0028772341957723382,
    "scale": 1.0,
-   "how": "kept",
+   "how": "noise",
    "builds": [
     "prot-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
     "cand-prot-tank-r1",
@@ -329,9 +358,9 @@
   },
   {
    "talent": "Bloodthrill",
-   "sim": 0.001775784031295026,
-   "ev_before": 0.0043487791704014175,
-   "ev_after": 0.0043487791704014175,
+   "sim": 0.0009755573288044581,
+   "ev_before": 0.004375575674386169,
+   "ev_after": 0.004416892814019064,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -341,15 +370,17 @@
   {
    "talent": "Concussion Blow",
    "sim": 0.0,
-   "ev_before": 0.0032623607051770385,
-   "ev_after": 0.0032623607051770385,
+   "ev_before": 0.003158331303225361,
+   "ev_after": 0.0035588042668690196,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "prot-raid-tank",
     "opt-prot-tank-raid-tank",
+    "protection-ml-tank",
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
     "cand-prot-tank-r4"
@@ -371,10 +402,28 @@
    ]
   },
   {
+   "talent": "Improved Thunder Clap",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "prot-raid-tank",
+    "opt-prot-tank-raid-tank",
+    "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
+    "cand-prot-tank-r1",
+    "cand-prot-tank-r2",
+    "cand-prot-tank-r3",
+    "cand-prot-tank-r4"
+   ]
+  },
+  {
    "talent": "Vanguard",
    "sim": 0.0,
-   "ev_before": 0.006817905189973991,
-   "ev_after": 0.006817905189973991,
+   "ev_before": 0.0066545992963271345,
+   "ev_after": 0.007336009043854141,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
@@ -388,6 +437,17 @@
    ]
   },
   {
+   "talent": "Improved Charge",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "protection-ml-tank"
+   ]
+  },
+  {
    "talent": "Improved Shield Wall",
    "sim": 0.0,
    "ev_before": 0.0,
@@ -397,25 +457,15 @@
    "builds": [
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2"
-   ]
-  },
-  {
-   "talent": "Improved Sunder Armor",
-   "sim": 0.0,
-   "ev_before": 9.885266938114431e-05,
-   "ev_after": 9.885266938114431e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-prot-tank-hand-2026-09-26"
    ]
   },
   {
    "talent": "Iron Will",
    "sim": 0.0,
-   "ev_before": 0.0010554370234813224,
-   "ev_after": 0.0010554370234813224,
+   "ev_before": 0.0010094060917832269,
+   "ev_after": 0.0011371429330645278,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -425,21 +475,22 @@
   {
    "talent": "Last Stand",
    "sim": 0.0,
-   "ev_before": 3.3683404677356243e-05,
-   "ev_after": 3.3683404677356243e-05,
+   "ev_before": 3.2248532585830594e-05,
+   "ev_after": 3.62777385938006e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-hand-2026-09-27",
+    "cand-prot-tank-preset-protection",
     "cand-prot-tank-r2"
    ]
   },
   {
    "talent": "Improved Shield Bash",
    "sim": 0.0,
-   "ev_before": 0.004102714094525146,
-   "ev_after": 0.004102714094525146,
+   "ev_before": 0.004002950664140899,
+   "ev_after": 0.00450386069274316,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -450,8 +501,8 @@
   {
    "talent": "Mortal Strike",
    "sim": 0.0,
-   "ev_before": 0.0046962550843328505,
-   "ev_after": 0.0046962550843328505,
+   "ev_before": 0.004725202754395238,
+   "ev_after": 0.004769836987572029,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -461,8 +512,8 @@
   {
    "talent": "Sweeping Strikes",
    "sim": 0.0,
-   "ev_before": 0.0019077632390019526,
-   "ev_after": 0.0019077632390019526,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [

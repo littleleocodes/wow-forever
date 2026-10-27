@@ -147,8 +147,8 @@
  "raid": {
   "class": "warrior",
   "spec": "arms-battle-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-27",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
@@ -164,7 +164,7 @@
    },
    {
     "label": "arms-battle-raid",
-    "talents": "023052131325052-55050000002",
+    "talents": "02305213132514101-55050000002",
     "protect_only": true
    }
   ],
@@ -270,32 +270,48 @@
     "gain_seed2": 0.0025527163967014044,
     "candidates": 706,
     "pass": 3
+   },
+   {
+    "round": 13,
+    "change": "insert before the filler: cast Everlook Pathcarver",
+    "gain_seed1": 0.0034072491901115942,
+    "gain_seed2": 0.004208819502417249,
+    "candidates": 941,
+    "pass": 4
+   },
+   {
+    "round": 14,
+    "change": "only with 6s or more of the fight left: if not Rend is on the target: cast Rend",
+    "gain_seed1": 0.0028670630425262633,
+    "gain_seed2": 0.0030314694785684715,
+    "candidates": 948,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
     "arms-community-parse": {
-     "before": 867.4724040023134,
-     "after": 984.722848729932,
-     "base": 867.4724040023134,
+     "before": 718.6682944632473,
+     "after": 792.237257531255,
+     "base": 718.6682944632473,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Arms 39/12/0": {
-     "before": 866.4641971645171,
-     "after": 983.0892956534816,
-     "base": 866.4641971645171,
+     "before": 717.4105542829103,
+     "after": 787.8551686543082,
+     "base": 717.4105542829103,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "arms-battle-raid": {
-     "before": 692.1478335889173,
-     "after": 881.7534801606138,
-     "base": 692.1478335889173,
+     "before": 723.4347196628169,
+     "after": 796.3363995872733,
+     "base": 723.4347196628169,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -303,7 +319,21 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Arms"
+   ],
+   "required": [
+    "Mortal Strike"
+   ],
+   "rejected": {
+    "structure": 12,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-29",
-  "passes": 3
+  "passes": 4
  }
 }

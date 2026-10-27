@@ -1,0 +1,82 @@
+{
+ "id": "cand-prot-tank-preset-protection",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Deep Wounds",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Shield Specialization",
+    5
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Revenge",
+    3
+   ],
+   [
+    "Improved Thunder Clap",
+    1
+   ],
+   [
+    "Last Stand",
+    1
+   ],
+   [
+    "Master of Defense",
+    2
+   ],
+   [
+    "Defiance",
+    3
+   ],
+   [
+    "Improved Shield Wall",
+    2
+   ],
+   [
+    "Concussion Blow",
+    1
+   ],
+   [
+    "Focused Rage",
+    3
+   ],
+   [
+    "Bastion",
+    5
+   ],
+   [
+    "Shield Slam",
+    1
+   ]
+  ]
+ },
+ "preset": "Protection",
+ "talents": "35300003-05-050531120300021351",
+ "note": "The community simulator's preset 'Protection' (warrior/protection/presets.ts), a raid candidate since it ran within 6% of the best build of prot-tank (1.005 vs 1.016 in the race of 2026-10-27)."
+}
