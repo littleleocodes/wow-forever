@@ -349,8 +349,19 @@ def search(pool, cls, spec, bid, levels, a):
         rot = apply_change(rot, ch)
         base1 = res[i]
     # final check on a third seed
-    fin = evaluate(pool, cls, spec, bid, levels, [rot0, rot], a.confirm, 3)
+    saved = None
+    if a.fresh and FR.rotation_file(cls, spec).exists():   # 2026-10-27 audit (unrestricted mage Fire: a --fresh re-tune that found nothing
+        saved = {k: v for k, v in json.load(open(FR.rotation_file(cls, spec), encoding="utf-8")).items() if k in ("veto", "drink_below", "eat_below", "knobs")}
+        if sanitize(saved, req):   # wrote the hand-written rotation over rules 2.5% faster): the saved rules compete in the final check
+            saved = None
+    fin = evaluate(pool, cls, spec, bid, levels, [rot0, rot] + ([saved] if saved is not None else []), a.confirm, 3)
     wb, wa = weighted({L: fin[0][L]["time_per_kill"] for L in levels}), weighted({L: fin[1][L]["time_per_kill"] for L in levels})
+    if saved is not None:
+        ws = weighted({L: fin[2][L]["time_per_kill"] for L in levels})
+        if ws < wa:
+            print(f"  the saved rules are faster on seed 3 ({ws:.2f}s against {wa:.2f}s): kept", flush=True)
+            rot, wa, fin = saved, ws, [fin[0], fin[2]]
+            log.append({"round": "final", "change": "kept the saved rules (faster on seed 3 than the fresh re-tune)", "rule": [], "gain_seed1": None, "gain_seed2": None})
     per_level = {L: {"before": fin[0][L]["time_per_kill"], "after": fin[1][L]["time_per_kill"], "deaths_before": fin[0][L]["deaths_per_100"],
                      "deaths_after": fin[1][L]["deaths_per_100"]} for L in levels}
     print(f"  final (seed 3, {a.confirm} fights): weighted time/kill {wb:.2f}s -> {wa:.2f}s ({1 - wa / wb:+.2%} faster); "
