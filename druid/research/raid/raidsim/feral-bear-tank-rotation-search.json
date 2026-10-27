@@ -2,7 +2,7 @@
  "raid": {
   "class": "druid",
   "spec": "feral-bear-tank",
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "commit": "30f67f5d2",
   "setting": "raid",
   "tank": true,
@@ -10,27 +10,27 @@
   "start": "ui\\specs\\druid\\feralbear\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "deep: tank",
-    "talents": "050022-5020033202003201255-052"
-   },
-   {
     "label": "opt-feral-bear-tank-raid-tank",
-    "talents": "050022-5520033212013201255",
-    "protect_only": true
+    "talents": "050022-5520033212013201255"
    },
    {
     "label": "sim preset: Hybrid",
-    "talents": "050022-35230332121132212051-",
-    "protect_only": true
+    "talents": "050022-35230332121132212051-"
    },
    {
     "label": "feral-bear-tank",
     "talents": "05002-5020033212003200255-054",
     "protect_only": true
+   },
+   {
+    "label": "feral-combat-ml-tank",
+    "talents": "500022-5020033202003201255-052",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "deep: tank"
+   "opt-feral-bear-tank-raid-tank",
+   "sim preset: Hybrid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -66,43 +66,75 @@
     "gain_seed2": 0.011765352600020318,
     "candidates": 454,
     "pass": 11
+   },
+   {
+    "round": 5,
+    "change": "drop the condition: if rage \u2265 50: cast Maul",
+    "gain_seed1": 0.06682377065655509,
+    "gain_seed2": 0.06614802752933757,
+    "candidates": 464,
+    "pass": 12
+   },
+   {
+    "round": 6,
+    "change": "drop: cast Primal Bite",
+    "gain_seed1": 0.021172686350355185,
+    "gain_seed2": 0.02234108879875185,
+    "candidates": 455,
+    "pass": 12
+   },
+   {
+    "round": 7,
+    "change": "insert before the filler: if rage < 20: cast Enrage",
+    "gain_seed1": 0.01284616887041512,
+    "gain_seed2": 0.012355909326798642,
+    "candidates": 446,
+    "pass": 12
+   },
+   {
+    "round": 8,
+    "change": "drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate \u2264 4.5s): cast Lacerate",
+    "gain_seed1": 0.003214300044561913,
+    "gain_seed2": 0.0026388159700370117,
+    "candidates": 462,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
-    "deep: tank": {
-     "before": 542.26173307563,
-     "after": 2108.648618946988,
-     "base": 542.26173307563,
-     "before_value": 1.0,
-     "after_value": 1.0117992051235167,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "opt-feral-bear-tank-raid-tank": {
-     "before": 593.6387719418711,
-     "after": 2046.333889795798,
-     "base": 593.6387719418711,
+     "before": 600.9948429391923,
+     "after": 2586.540600187666,
+     "base": 600.9948429391923,
      "before_value": 1.0,
-     "after_value": 1.0076909959407927,
+     "after_value": 1.1177406438850461,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Hybrid": {
-     "before": 579.194096606406,
-     "after": 1581.6046681715268,
-     "base": 579.194096606406,
+     "before": 586.6600926304598,
+     "after": 1954.3438404202,
+     "base": 586.6600926304598,
      "before_value": 1.0,
-     "after_value": 1.0062184787200616,
+     "after_value": 1.103502700524598,
      "oom_before": 0,
      "oom_after": 0
     },
     "feral-bear-tank": {
-     "before": 513.2481922533066,
-     "after": 1889.5327810177155,
-     "base": 513.2481922533066,
+     "before": 519.2625942628741,
+     "after": 2377.0670127594713,
+     "base": 519.2625942628741,
      "before_value": 1.0,
-     "after_value": 1.0120489503464696,
+     "after_value": 1.1144789019387482,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "feral-combat-ml-tank": {
+     "before": 548.6357850088643,
+     "after": 2641.383605031672,
+     "base": 548.6357850088643,
+     "before_value": 1.0,
+     "after_value": 1.1105922743225685,
      "oom_before": 0,
      "oom_after": 0
     }
@@ -119,11 +151,11 @@
    "rejected": {
     "structure": 0,
     "casts": 0,
-    "core_share": 21
+    "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }
