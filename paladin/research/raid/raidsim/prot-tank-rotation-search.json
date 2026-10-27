@@ -2,8 +2,8 @@
  "raid": {
   "class": "paladin",
   "spec": "prot-tank",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-27",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "ui/specs/paladin/protection/apls/default.apl.json",
@@ -11,26 +11,26 @@
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "-0530513301201551-50221230001"
+    "talents": "-2530503200301551-50223030001"
    },
    {
-    "label": "protection-ml-tank",
-    "talents": "-0530513301301251-50223230001",
+    "label": "opt-prot-tank-raid-tank",
+    "talents": "-5530513300301051-50025030001",
     "protect_only": true
    },
    {
-    "label": "sim preset: Protection 0/45/6",
-    "talents": "-5532513321301551-15",
+    "label": "sim preset: Default",
+    "talents": "50003-0530313321301531-5022",
     "protect_only": true
    },
    {
     "label": "prot-tank",
-    "talents": "-0530513101301-502253300110303",
+    "talents": "-5531513101301011-50225220011",
     "protect_only": true
    },
    {
-    "label": "opt-prot-tank-raid-tank",
-    "talents": "-0530513301311051-50025330001",
+    "label": "protection-ml-tank",
+    "talents": "-0530513301201551-50221230001",
     "protect_only": true
    }
   ],
@@ -95,58 +95,88 @@
     "gain_seed2": 0.0035065143273462773,
     "candidates": 277,
     "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath",
+    "gain_seed1": 0.006451471229043104,
+    "gain_seed2": 0.005631333826967788,
+    "candidates": 247,
+    "pass": 11
+   },
+   {
+    "round": 9,
+    "change": "move to the top: cast Lay on Hands + only above 25% mana: cast Templar's Bulwark",
+    "gain_seed1": 0.004163670746044845,
+    "gain_seed2": 0.007319947937524773,
+    "candidates": 268,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 399.5130228101806,
-     "after": 433.44929726040357,
-     "base": 399.5130228101806,
+     "before": 480.4118156188748,
+     "after": 457.65306430050305,
+     "base": 480.4118156188748,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 4.3786856773875495,
-     "oom_after": 4.3786856773875495
-    },
-    "protection-ml-tank": {
-     "before": 397.2572939982505,
-     "after": 422.4575281363528,
-     "base": 397.2572939982505,
-     "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 4.704366857639548,
-     "oom_after": 4.704366857639548
-    },
-    "sim preset: Protection 0/45/6": {
-     "before": 374.8626052128242,
-     "after": 390.0530177098519,
-     "base": 374.8626052128242,
-     "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 19.365666264812905,
-     "oom_after": 19.365666264812905
-    },
-    "prot-tank": {
-     "before": 430.5201657809445,
-     "after": 427.65715727675064,
-     "base": 430.5201657809445,
-     "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 3.02505014908185,
-     "oom_after": 3.02505014908185
+     "after_value": 1.0128471775618442,
+     "oom_before": 6.516602064361351,
+     "oom_after": 12.671174851328594
     },
     "opt-prot-tank-raid-tank": {
-     "before": 383.99135465461376,
-     "after": 402.35640826623995,
-     "base": 383.99135465461376,
+     "before": 447.54489807124446,
+     "after": 428.11629564787614,
+     "base": 447.54489807124446,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 5.7038385434954435,
-     "oom_after": 5.7038385434954435
+     "after_value": 1.0148988507600318,
+     "oom_before": 5.52358050424768,
+     "oom_after": 11.510304976556231
+    },
+    "sim preset: Default": {
+     "before": 490.7663450566716,
+     "after": 451.411952258165,
+     "base": 490.7663450566716,
+     "before_value": 1.0,
+     "after_value": 1.0033133354655128,
+     "oom_before": 23.892144688360595,
+     "oom_after": 38.46455595292124
+    },
+    "prot-tank": {
+     "before": 467.85279190523346,
+     "after": 419.7490706750272,
+     "base": 467.85279190523346,
+     "before_value": 1.0,
+     "after_value": 1.0031519957556299,
+     "oom_before": 44.50896149341606,
+     "oom_after": 59.36752112949877
+    },
+    "protection-ml-tank": {
+     "before": 470.34222865279514,
+     "after": 448.5946026517909,
+     "base": 470.34222865279514,
+     "before_value": 1.0,
+     "after_value": 1.0154310456281723,
+     "oom_before": 4.2191088093034335,
+     "oom_after": 7.231484290317776
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Protection"
+   ],
+   "required": [
+    "Holy Shield"
+   ],
+   "rejected": {
+    "structure": 144,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }

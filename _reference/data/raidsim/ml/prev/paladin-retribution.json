@@ -14,121 +14,358 @@
   "bis": {
    "entry": "ret-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 64.6,
+   "date": "2026-10-22",
+   "chosen": "all-slots",
+   "ilvl": 64.7,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0175,
+    "Talisman of Ephemeral Power (18820)": 1.0169,
+    "Adaptive Combat Assistant (272437)": 1.0136,
+    "Jewel of the Guard Captain (270225)": 1.01,
+    "Serenity Field (272439)": 1.009,
+    "Everlook Pathcarver (274759)": 1.008,
+    "Everlook Delivery Bot (274760)": 1.0065,
+    "Rune of the Guard Captain (19120)": 1.0052,
+    "Cleansed Vilebranch Medallion (270275)": 1.0052,
+    "Shard of the Splithooves (10659)": 1.0019,
+    "Molten Heart of the Mountain (249470)": 1.0017,
+    "Enriched Seal (271903)": 1.0012,
+    "Darkspear Voodoo Seal (272061)": 1.0012,
+    "Minor Recombobulator (4381)": 1.0009,
+    "Gnomish Universal Remote (7506)": 1.0009,
+    "Heart of the Scale (13164)": 1.0009,
+    "Arcanite Dragonling (16022)": 1.0009,
+    "Stormpike Insignia Rank 6 (17904)": 1.0009,
+    "Gyrofreeze Ice Reflector (18634)": 1.0009,
+    "Major Recombobulator (18637)": 1.0009,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0009,
+    "Essence of the Pure Flame (18815)": 1.0009,
+    "Arena Grand Master (19024)": 1.0009,
+    "Talisman of Arathor (20071)": 1.0009,
+    "Defiler's Talisman (20072)": 1.0009,
+    "Defiler's Talisman (21115)": 1.0009,
+    "Defiler's Talisman (21116)": 1.0009,
+    "Talisman of Arathor (21117)": 1.0009,
+    "Talisman of Arathor (21118)": 1.0009,
+    "Talisman of Arathor (21119)": 1.0009,
+    "Defiler's Talisman (21120)": 1.0009,
+    "Defender of the Timbermaw (21326)": 1.0009,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0009,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0009,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0009,
+    "Gnomish Poultryizer (260824)": 1.0009,
+    "Defender's Grip Stabilizer (272440)": 1.0009,
+    "Enriched Seal (271905)": 1.0008,
+    "Darkspear Voodoo Seal (272059)": 1.0008,
+    "Alchemist's Stone (13503)": 1.0006,
+    "Frozen Heart of the Mountain (249469)": 1.0001,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 0.9998,
+    "Demon's Blood (10779)": 0.9998,
+    "Smoking Heart of the Mountain (11811)": 0.9998,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9998,
+    "Dormant Heart of the Mountain (249473)": 0.9998,
+    "Volunteer's Lucky Seal (271904)": 0.9998,
+    "Volunteer's Lucky Seal (271906)": 0.9998,
+    "Relentless Raider's Seal (272060)": 0.9998,
+    "Relentless Raider's Seal (272062)": 0.9998,
+    "Parachute-Priest Pager (274761)": 0.9998
+   },
    "names": [
     "Stalwart Helm",
     "Choker of the Fire Lord",
-    "Rugged Mantle of the Timbermaw",
+    "Theramore Shoulderguards",
     "Arcanoweave Cloak",
     "Soulforge Breastplate",
-    "Wildheart Bracers",
-    "Gloves of Earthen Power",
-    "Knowledge of the Timbermaw",
-    "Ironfeather Leggings",
+    "Rockfury Bracers",
+    "Soulforge Gauntlets",
+    "Belt of the Archmage",
+    "Titanic Leggings",
     "Sorcerer's Boots",
+    "Channeler's Ring",
     "Signet Ring of the Bronze Dragonflight",
-    "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant",
-    "Bonereaver's Edge",
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer",
+    "Fist of Cenarius",
     null,
     "Libram of Law"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 0.9910869751657928,
-    "keep-sets-and-effects": 1.0006769123739476
+    "all-slots": 1.1228189743447123,
+    "keep-sets-and-effects": 1.0748345250367368
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.0011300222412653
+    "all-slots": 1.1244034570711054
    },
    "weights": {
-    "PseudoStatMainHandDps": 0.9373,
-    "StatAgility": 0.1939,
-    "StatArmorPenetration": 0.0089,
-    "StatAttackPower": 0.0692,
-    "StatExpertiseRating": 0.3168,
-    "StatFireDamage": 0.0203,
-    "StatHolyDamage": 0.3472,
-    "StatIntellect": 0.2451,
-    "StatMeleeCritRating": 0.2736,
-    "StatMeleeHasteRating": 0.1813,
-    "StatMeleeHitRating": 0.4314,
-    "StatSpellCritRating": 0.03,
-    "StatSpellDamage": 0.3674,
-    "StatSpellHasteRating": -0.1272,
-    "StatSpellHitRating": 0.0946,
-    "StatStrength": 0.1385
+    "PseudoStatMainHandDps": 1.0961,
+    "StatAgility": 0.1444,
+    "StatArmorPenetration": 0.0102,
+    "StatAttackPower": 0.078,
+    "StatCritRating": 0.2222,
+    "StatExpertiseRating": 0.2534,
+    "StatHasteRating": 0.0178,
+    "StatHitRating": 0.4181,
+    "StatHolyDamage": 0.2157,
+    "StatIntellect": 0.2718,
+    "StatSpellDamage": 0.2157,
+    "StatSpirit": 0.095,
+    "StatStrength": 0.1638
    },
    "evaluated_on": [
     "ret-dps: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Theramore Shoulderguards"
+    },
+    {
+     "slot": 3,
+     "from": "Sapphiron Drape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Soulforge Breastplate (not in the database)",
+     "to": "Soulforge Breastplate"
+    },
+    {
+     "slot": 6,
+     "from": "Gloves of Earthen Power",
+     "to": "Soulforge Gauntlets"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Ironfeather Leggings",
+     "to": "Titanic Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Elemental Focus Band",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Ring of Spell Power",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Talisman of Ephemeral Power"
+    },
+    {
+     "slot": 13,
+     "from": "Serenity Field",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 14,
+     "from": "Bonereaver's Edge (not in the database)",
+     "to": "Fist of Cenarius"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:227808",
+     "item:17078",
+     "item:226973",
+     "item:228190",
+     "item:13965",
+     "item:17076"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.9
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "ret-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-prebis.gear.json",
-   "date": "2026-10-16",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 63.0,
+   "ilvl": 62.8,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Weakness Analyzer",
+    "Shard of the Splithooves"
    ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0141,
+    "Adaptive Combat Assistant (272437)": 1.0117,
+    "Serenity Field (272439)": 1.0081,
+    "Shard of the Splithooves (10659)": 1.0078,
+    "Jewel of the Guard Captain (270225)": 1.0062,
+    "Enriched Seal (271903)": 1.0046,
+    "Darkspear Voodoo Seal (272061)": 1.0046,
+    "Everlook Delivery Bot (274760)": 1.0042,
+    "Everlook Pathcarver (274759)": 1.0035,
+    "Enriched Seal (271905)": 1.0015,
+    "Darkspear Voodoo Seal (272059)": 1.0015,
+    "Ankh of Life (1713)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Rune of the Guard Captain (19120)": 0.9999,
+    "Cleansed Vilebranch Medallion (270275)": 0.9999,
+    "Alchemist's Stone (13503)": 0.998,
+    "Dog Whistle (3456)": 0.9977,
+    "Demon's Blood (10779)": 0.9977,
+    "Smoking Heart of the Mountain (11811)": 0.9977,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9977,
+    "Frozen Heart of the Mountain (249469)": 0.9977,
+    "Dormant Heart of the Mountain (249473)": 0.9977,
+    "Volunteer's Lucky Seal (271904)": 0.9977,
+    "Volunteer's Lucky Seal (271906)": 0.9977,
+    "Relentless Raider's Seal (272060)": 0.9977,
+    "Relentless Raider's Seal (272062)": 0.9977,
+    "Parachute-Priest Pager (274761)": 0.9977,
+    "Minor Recombobulator (4381)": 0.9968,
+    "Gnomish Universal Remote (7506)": 0.9968,
+    "Heart of the Scale (13164)": 0.9968,
+    "Arcanite Dragonling (16022)": 0.9968,
+    "Stormpike Insignia Rank 6 (17904)": 0.9968,
+    "Gyrofreeze Ice Reflector (18634)": 0.9968,
+    "Major Recombobulator (18637)": 0.9968,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9968,
+    "Talisman of Arathor (20071)": 0.9968,
+    "Defiler's Talisman (20072)": 0.9968,
+    "Defiler's Talisman (21115)": 0.9968,
+    "Defiler's Talisman (21116)": 0.9968,
+    "Talisman of Arathor (21117)": 0.9968,
+    "Talisman of Arathor (21118)": 0.9968,
+    "Talisman of Arathor (21119)": 0.9968,
+    "Defiler's Talisman (21120)": 0.9968,
+    "Defender of the Timbermaw (21326)": 0.9968,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9968,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9968,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9968,
+    "Gnomish Poultryizer (260824)": 0.9968,
+    "Defender's Grip Stabilizer (272440)": 0.9968
+   },
    "names": [
-    "Black Dragonscale Helm",
-    "Nacreous Shell Necklace",
-    "Rugged Mantle of the Timbermaw",
-    "Hide of the Wild",
-    "Soulforge Breastplate",
+    "Stalwart Helm",
+    "Beads of Ogre Might",
+    "Hermit's Pauldron",
+    "Arcanoweave Cloak",
+    "Darkmantle Tunic",
     "Rockfury Bracers",
-    "Gloves of Earthen Power",
-    "Knowledge of the Timbermaw",
-    "Ironfeather Leggings",
+    "Storm Gauntlets",
+    "Belt of Preserved Heads",
+    "Titanic Leggings",
     "Sorcerer's Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Elemental Focus Band",
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant",
+    "Don Julio's Band",
+    "Band of the Better Half",
+    "Weakness Analyzer",
+    "Shard of the Splithooves",
     "Fist of Cenarius",
     null,
     "Libram of Law"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0016205286296311
+    "keep-sets-and-effects": 1.0279995121736454
    },
    "confirm_seed2": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0001426443096013
+    "keep-sets-and-effects": 1.027966246012155
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.0349,
-    "StatAgility": 0.1968,
-    "StatArmorPenetration": 0.009,
-    "StatAttackPower": 0.0737,
-    "StatExpertiseRating": 0.3405,
-    "StatFireDamage": 0.02,
-    "StatHolyDamage": 0.3578,
-    "StatIntellect": 0.531,
-    "StatMeleeCritRating": 0.2803,
-    "StatMeleeHasteRating": 0.113,
-    "StatSpellCritRating": 0.0367,
-    "StatSpellDamage": 0.3777,
-    "StatSpellHasteRating": -0.0483,
-    "StatSpellHitRating": 0.1138,
-    "StatStrength": 0.1549
+    "PseudoStatMainHandDps": 1.1076,
+    "StatAgility": 0.1472,
+    "StatArmorPenetration": 0.0106,
+    "StatAttackPower": 0.0788,
+    "StatCritRating": 0.2269,
+    "StatExpertiseRating": 0.2641,
+    "StatHasteRating": -0.286,
+    "StatHitRating": 0.409,
+    "StatHolyDamage": 0.2201,
+    "StatIntellect": -0.0699,
+    "StatSpellDamage": 0.2201,
+    "StatSpirit": 0.1066,
+    "StatStrength": 0.1655
    },
    "evaluated_on": [
     "ret-dps: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Orb of the Darkmoon",
+     "to": "Beads of Ogre Might"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Hermit's Pauldron"
+    },
+    {
+     "slot": 4,
+     "from": "Earthpower Vest",
+     "to": "Darkmantle Tunic"
+    },
+    {
+     "slot": 6,
+     "from": "Gloves of Earthen Power",
+     "to": "Storm Gauntlets"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 8,
+     "from": "Ironfeather Leggings",
+     "to": "Titanic Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Don Julio's Band"
+    },
+    {
+     "slot": 11,
+     "from": "Elemental Focus Band",
+     "to": "Band of the Better Half"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Shard of the Splithooves"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:227808",
+     "item:228190",
+     "item:234020",
+     "item:13965"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 3.0
+   }
   }
  },
  "search": {
@@ -636,11 +873,11 @@
      "Holy": [
       [
        "Divine Strength",
-       2
+       3
       ],
       [
        "Divine Intellect",
-       5
+       4
       ],
       [
        "Improved Seals",
@@ -648,7 +885,7 @@
       ],
       [
        "Reverence",
-       3
+       2
       ]
      ],
      "Protection": [
@@ -658,7 +895,7 @@
       ],
       [
        "Precision",
-       2
+       3
       ]
      ],
      "Retribution": [
@@ -716,15 +953,15 @@
       ]
      ]
     },
-    "split": "13/7/31",
-    "dps": 545.26,
-    "se": 0.0656,
+    "split": "12/8/31",
+    "dps": 516.17,
+    "se": 0.0676,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "13/7/31",
-    "dps": 545.26,
-    "se": 0.0656,
+    "split": "12/8/31",
+    "dps": 516.17,
+    "se": 0.0676,
     "differs": [
      [
       "Redoubt",
@@ -747,11 +984,11 @@
       "Holy": [
        [
         "Divine Strength",
-        2
+        3
        ],
        [
         "Divine Intellect",
-        5
+        4
        ],
        [
         "Improved Seals",
@@ -759,7 +996,7 @@
        ],
        [
         "Reverence",
-        3
+        2
        ]
       ],
       "Protection": [
@@ -769,7 +1006,7 @@
        ],
        [
         "Precision",
-        2
+        3
        ]
       ],
       "Retribution": [
@@ -827,20 +1064,20 @@
        ]
       ]
      },
-     "split": "13/7/31",
-     "dps": 545.26,
-     "se": 0.0656
+     "split": "12/8/31",
+     "dps": 516.17,
+     "se": 0.0676
     },
     {
      "allocation": {
       "Holy": [
        [
         "Divine Strength",
-        2
+        3
        ],
        [
         "Divine Intellect",
-        5
+        4
        ],
        [
         "Improved Seals",
@@ -848,7 +1085,7 @@
        ],
        [
         "Reverence",
-        3
+        2
        ]
       ],
       "Protection": [
@@ -862,7 +1099,7 @@
        ],
        [
         "Precision",
-        2
+        3
        ]
       ],
       "Retribution": [
@@ -920,53 +1157,47 @@
        ]
       ]
      },
-     "split": "13/7/31",
-     "dps": 545.26,
-     "se": 0.0656
+     "split": "12/8/31",
+     "dps": 516.17,
+     "se": 0.0676
     }
    ],
    "runs": [
     {
      "entry": "ret-dps",
      "run": 1,
-     "simulated": 1399,
-     "best_screen": 544.92,
-     "best_split": "13/7/31",
+     "simulated": 1199,
+     "best_screen": 515.15,
+     "best_split": "12/8/31",
      "trace": [
       {
        "round": 0,
        "simulated": 399,
-       "best": 543.76
+       "best": 515.12
       },
       {
        "round": 1,
        "simulated": 599,
-       "best": 544.92,
-       "predicted_top": 538.61
+       "best": 515.15,
+       "predicted_top": 507.41
       },
       {
        "round": 2,
        "simulated": 799,
-       "best": 544.92,
-       "predicted_top": 542.94
+       "best": 515.15,
+       "predicted_top": 512.89
       },
       {
        "round": 3,
        "simulated": 999,
-       "best": 544.92,
-       "predicted_top": 543.9
+       "best": 515.15,
+       "predicted_top": 513.68
       },
       {
        "round": 4,
        "simulated": 1199,
-       "best": 544.92,
-       "predicted_top": 544.38
-      },
-      {
-       "round": 5,
-       "simulated": 1399,
-       "best": 544.92,
-       "predicted_top": 544.44
+       "best": 515.15,
+       "predicted_top": 514.08
       }
      ],
      "best_stage1_gap": 0.0,
@@ -979,95 +1210,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      545.56,
-      545.56,
-      545.56,
-      545.56,
-      545.56,
-      545.56
+      516.1,
+      516.1,
+      516.1,
+      516.1,
+      516.1,
+      516.1
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      545.1,
-      545.1,
-      545.1,
-      545.1,
-      545.1
+      516.03,
+      516.03,
+      516.03,
+      516.03,
+      516.03
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      545.26,
-      545.26
+      516.17,
+      516.17
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 203,
-     "best_gap": 0.0,
-     "best_move": "5 Toughness -> Redoubt"
+     "neighbours": 198,
+     "best_gap": 0.0001,
+     "best_move": "1 Divine Strength -> Divine Intellect"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Deflection",
-     "importance": 0.2634
-    },
-    {
-     "feature": "Seal of Command",
-     "importance": 0.2022
+     "importance": 0.3074
     },
     {
      "feature": "Twist of Light",
-     "importance": 0.1912
+     "importance": 0.1874
     },
     {
-     "feature": "Improved Seals",
-     "importance": 0.081
+     "feature": "Seal of Command",
+     "importance": 0.18
     },
     {
      "feature": "Pursuit of Justice",
-     "importance": 0.0575
+     "importance": 0.0666
     },
     {
-     "feature": "Champion of the Light",
-     "importance": 0.0417
+     "feature": "Vengeance",
+     "importance": 0.0581
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.051
     },
     {
      "feature": "Reverence",
      "importance": 0.0346
     },
     {
-     "feature": "Vengeance",
-     "importance": 0.0255
+     "feature": "Holy Conduit",
+     "importance": 0.021
     },
     {
      "feature": "Retribution points",
-     "importance": 0.0183
+     "importance": 0.0182
     },
     {
-     "feature": "Holy Conduit",
-     "importance": 0.0125
+     "feature": "Instrument of Law",
+     "importance": 0.0085
     },
     {
      "feature": "Protection points",
-     "importance": 0.0124
+     "importance": 0.0083
     },
     {
-     "feature": "Eye for an Eye",
-     "importance": 0.0094
+     "feature": "Champion of the Light",
+     "importance": 0.0077
     }
    ],
-   "simulated_builds": 1616,
-   "simulated_fights": 2421000,
-   "minutes": 2.5,
+   "simulated_builds": 1411,
+   "simulated_fights": 2206000,
+   "minutes": 2.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
   },
   "bis-raid": {
@@ -1092,896 +1323,6 @@
       [
        "Divine Intellect",
        2
-      ],
-      [
-       "Improved Seals",
-       3
-      ],
-      [
-       "Reverence",
-       1
-      ]
-     ],
-     "Protection": [
-      [
-       "Toughness",
-       5
-      ],
-      [
-       "Precision",
-       2
-      ]
-     ],
-     "Retribution": [
-      [
-       "Benediction",
-       5
-      ],
-      [
-       "Improved Judgement",
-       2
-      ],
-      [
-       "Holy Conduit",
-       2
-      ],
-      [
-       "Conviction",
-       5
-      ],
-      [
-       "Vindication",
-       2
-      ],
-      [
-       "Sanctified Judgement",
-       3
-      ],
-      [
-       "Seal of Command",
-       1
-      ],
-      [
-       "Sacred Arbiter",
-       1
-      ],
-      [
-       "Two-Handed Weapon Specialization",
-       3
-      ],
-      [
-       "Vengeance",
-       3
-      ],
-      [
-       "Champion of the Light",
-       3
-      ],
-      [
-       "Instrument of Law",
-       2
-      ],
-      [
-       "Twist of Light",
-       1
-      ]
-     ]
-    },
-    "split": "11/7/33",
-    "dps": 1015.16,
-    "se": 0.1544,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "12/7/32",
-    "dps": 1014.91,
-    "se": 0.1538,
-    "differs": [
-     [
-      "Divine Intellect",
-      2
-     ],
-     [
-      "Divine Intellect",
-      3
-     ],
-     [
-      "Vindication",
-      1
-     ],
-     [
-      "Vindication",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0002,
-   "finalists": [
-    {
-     "allocation": {
-      "Holy": [
-       [
-        "Divine Strength",
-        5
-       ],
-       [
-        "Divine Intellect",
-        2
-       ],
-       [
-        "Improved Seals",
-        3
-       ],
-       [
-        "Reverence",
-        1
-       ]
-      ],
-      "Protection": [
-       [
-        "Toughness",
-        5
-       ],
-       [
-        "Precision",
-        2
-       ]
-      ],
-      "Retribution": [
-       [
-        "Benediction",
-        5
-       ],
-       [
-        "Improved Judgement",
-        2
-       ],
-       [
-        "Holy Conduit",
-        2
-       ],
-       [
-        "Conviction",
-        5
-       ],
-       [
-        "Vindication",
-        2
-       ],
-       [
-        "Sanctified Judgement",
-        3
-       ],
-       [
-        "Seal of Command",
-        1
-       ],
-       [
-        "Sacred Arbiter",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Vengeance",
-        3
-       ],
-       [
-        "Champion of the Light",
-        3
-       ],
-       [
-        "Instrument of Law",
-        2
-       ],
-       [
-        "Twist of Light",
-        1
-       ]
-      ]
-     },
-     "split": "11/7/33",
-     "dps": 1015.16,
-     "se": 0.1544
-    },
-    {
-     "allocation": {
-      "Holy": [
-       [
-        "Divine Strength",
-        5
-       ],
-       [
-        "Divine Intellect",
-        3
-       ],
-       [
-        "Improved Seals",
-        3
-       ],
-       [
-        "Reverence",
-        1
-       ]
-      ],
-      "Protection": [
-       [
-        "Toughness",
-        5
-       ],
-       [
-        "Precision",
-        2
-       ]
-      ],
-      "Retribution": [
-       [
-        "Benediction",
-        5
-       ],
-       [
-        "Improved Judgement",
-        2
-       ],
-       [
-        "Holy Conduit",
-        2
-       ],
-       [
-        "Conviction",
-        5
-       ],
-       [
-        "Vindication",
-        1
-       ],
-       [
-        "Sanctified Judgement",
-        3
-       ],
-       [
-        "Seal of Command",
-        1
-       ],
-       [
-        "Sacred Arbiter",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Vengeance",
-        3
-       ],
-       [
-        "Champion of the Light",
-        3
-       ],
-       [
-        "Instrument of Law",
-        2
-       ],
-       [
-        "Twist of Light",
-        1
-       ]
-      ]
-     },
-     "split": "12/7/32",
-     "dps": 1014.91,
-     "se": 0.1538
-    }
-   ],
-   "runs": [
-    {
-     "entry": "ret-dps",
-     "run": 1,
-     "simulated": 1194,
-     "best_screen": 1015.07,
-     "best_split": "12/7/32",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 394,
-       "best": 1013.12
-      },
-      {
-       "round": 1,
-       "simulated": 594,
-       "best": 1014.11,
-       "predicted_top": 1006.88
-      },
-      {
-       "round": 2,
-       "simulated": 794,
-       "best": 1014.11,
-       "predicted_top": 1010.51
-      },
-      {
-       "round": 3,
-       "simulated": 994,
-       "best": 1015.07,
-       "predicted_top": 1012.23
-      },
-      {
-       "round": 4,
-       "simulated": 1194,
-       "best": 1015.07,
-       "predicted_top": 1013.89
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      1015.37,
-      1015.14,
-      1015.14,
-      1015.14,
-      1014.01,
-      1014.01
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      1014.96,
-      1014.69,
-      1014.69,
-      1014.69,
-      1014.5
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      1015.16,
-      1014.91
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 341,
-     "best_gap": 0.0006,
-     "best_move": "1 Reverence -> Vindication"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Twist of Light",
-     "importance": 0.433
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.1883
-    },
-    {
-     "feature": "Champion of the Light",
-     "importance": 0.1096
-    },
-    {
-     "feature": "Vengeance",
-     "importance": 0.081
-    },
-    {
-     "feature": "Improved Seals",
-     "importance": 0.0398
-    },
-    {
-     "feature": "Pursuit of Justice",
-     "importance": 0.0324
-    },
-    {
-     "feature": "Seal of Command",
-     "importance": 0.0222
-    },
-    {
-     "feature": "Instrument of Law",
-     "importance": 0.0173
-    },
-    {
-     "feature": "Precision",
-     "importance": 0.0169
-    },
-    {
-     "feature": "Retribution points",
-     "importance": 0.0152
-    },
-    {
-     "feature": "Eye for an Eye",
-     "importance": 0.0072
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0055
-    }
-   ],
-   "simulated_builds": 1549,
-   "simulated_fights": 2630000,
-   "minutes": 3.5,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
-  },
-  "prebis-dummy": {
-   "class": "paladin",
-   "spec": "Retribution",
-   "setting": "dummy",
-   "entry": "ret-dps",
-   "date": "2026-10-16",
-   "constraint": "Retribution 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "ret-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Holy": [
-      [
-       "Divine Strength",
-       2
-      ],
-      [
-       "Divine Intellect",
-       5
-      ],
-      [
-       "Improved Seals",
-       3
-      ],
-      [
-       "Reverence",
-       2
-      ]
-     ],
-     "Protection": [
-      [
-       "Toughness",
-       5
-      ],
-      [
-       "Precision",
-       3
-      ]
-     ],
-     "Retribution": [
-      [
-       "Benediction",
-       5
-      ],
-      [
-       "Improved Judgement",
-       2
-      ],
-      [
-       "Holy Conduit",
-       2
-      ],
-      [
-       "Conviction",
-       5
-      ],
-      [
-       "Vindication",
-       1
-      ],
-      [
-       "Sanctified Judgement",
-       3
-      ],
-      [
-       "Seal of Command",
-       1
-      ],
-      [
-       "Sacred Arbiter",
-       1
-      ],
-      [
-       "Two-Handed Weapon Specialization",
-       2
-      ],
-      [
-       "Vengeance",
-       3
-      ],
-      [
-       "Champion of the Light",
-       3
-      ],
-      [
-       "Instrument of Law",
-       2
-      ],
-      [
-       "Twist of Light",
-       1
-      ]
-     ]
-    },
-    "split": "12/8/31",
-    "dps": 523.89,
-    "se": 0.0636,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "12/8/31",
-    "dps": 523.89,
-    "se": 0.0636,
-    "differs": [
-     [
-      "Redoubt",
-      1
-     ],
-     [
-      "Toughness",
-      4
-     ],
-     [
-      "Toughness",
-      5
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Holy": [
-       [
-        "Divine Strength",
-        2
-       ],
-       [
-        "Divine Intellect",
-        5
-       ],
-       [
-        "Improved Seals",
-        3
-       ],
-       [
-        "Reverence",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Toughness",
-        5
-       ],
-       [
-        "Precision",
-        3
-       ]
-      ],
-      "Retribution": [
-       [
-        "Benediction",
-        5
-       ],
-       [
-        "Improved Judgement",
-        2
-       ],
-       [
-        "Holy Conduit",
-        2
-       ],
-       [
-        "Conviction",
-        5
-       ],
-       [
-        "Vindication",
-        1
-       ],
-       [
-        "Sanctified Judgement",
-        3
-       ],
-       [
-        "Seal of Command",
-        1
-       ],
-       [
-        "Sacred Arbiter",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        2
-       ],
-       [
-        "Vengeance",
-        3
-       ],
-       [
-        "Champion of the Light",
-        3
-       ],
-       [
-        "Instrument of Law",
-        2
-       ],
-       [
-        "Twist of Light",
-        1
-       ]
-      ]
-     },
-     "split": "12/8/31",
-     "dps": 523.89,
-     "se": 0.0636
-    },
-    {
-     "allocation": {
-      "Holy": [
-       [
-        "Divine Strength",
-        2
-       ],
-       [
-        "Divine Intellect",
-        5
-       ],
-       [
-        "Improved Seals",
-        3
-       ],
-       [
-        "Reverence",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Toughness",
-        4
-       ],
-       [
-        "Redoubt",
-        1
-       ],
-       [
-        "Precision",
-        3
-       ]
-      ],
-      "Retribution": [
-       [
-        "Benediction",
-        5
-       ],
-       [
-        "Improved Judgement",
-        2
-       ],
-       [
-        "Holy Conduit",
-        2
-       ],
-       [
-        "Conviction",
-        5
-       ],
-       [
-        "Vindication",
-        1
-       ],
-       [
-        "Sanctified Judgement",
-        3
-       ],
-       [
-        "Seal of Command",
-        1
-       ],
-       [
-        "Sacred Arbiter",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        2
-       ],
-       [
-        "Vengeance",
-        3
-       ],
-       [
-        "Champion of the Light",
-        3
-       ],
-       [
-        "Instrument of Law",
-        2
-       ],
-       [
-        "Twist of Light",
-        1
-       ]
-      ]
-     },
-     "split": "12/8/31",
-     "dps": 523.89,
-     "se": 0.0636
-    }
-   ],
-   "runs": [
-    {
-     "entry": "ret-dps",
-     "run": 1,
-     "simulated": 1203,
-     "best_screen": 524.19,
-     "best_split": "12/8/31",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 403,
-       "best": 524.19
-      },
-      {
-       "round": 1,
-       "simulated": 603,
-       "best": 524.19,
-       "predicted_top": 519.73
-      },
-      {
-       "round": 2,
-       "simulated": 803,
-       "best": 524.19,
-       "predicted_top": 522.36
-      },
-      {
-       "round": 3,
-       "simulated": 1003,
-       "best": 524.19,
-       "predicted_top": 523.26
-      },
-      {
-       "round": 4,
-       "simulated": 1203,
-       "best": 524.19,
-       "predicted_top": 523.42
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      523.91,
-      523.91,
-      523.91,
-      523.91,
-      523.63,
-      523.63
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      523.79,
-      523.79,
-      523.79,
-      523.79,
-      523.5
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      523.89,
-      523.89
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 202,
-     "best_gap": 0.0,
-     "best_move": "5 Toughness -> Redoubt"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Seal of Command",
-     "importance": 0.2804
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.2368
-    },
-    {
-     "feature": "Twist of Light",
-     "importance": 0.2172
-    },
-    {
-     "feature": "Champion of the Light",
-     "importance": 0.0703
-    },
-    {
-     "feature": "Vengeance",
-     "importance": 0.0544
-    },
-    {
-     "feature": "Improved Seals",
-     "importance": 0.0377
-    },
-    {
-     "feature": "Retribution points",
-     "importance": 0.0165
-    },
-    {
-     "feature": "Pursuit of Justice",
-     "importance": 0.0132
-    },
-    {
-     "feature": "Holy Conduit",
-     "importance": 0.0099
-    },
-    {
-     "feature": "Vindication",
-     "importance": 0.0075
-    },
-    {
-     "feature": "Sanctified Judgement",
-     "importance": 0.0054
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0054
-    }
-   ],
-   "simulated_builds": 1419,
-   "simulated_fights": 2222000,
-   "minutes": 2.1,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-prebis.gear.json"
-  },
-  "prebis-raid": {
-   "class": "paladin",
-   "spec": "Retribution",
-   "setting": "raid",
-   "entry": "ret-dps",
-   "date": "2026-10-16",
-   "constraint": "Retribution 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "ret-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Holy": [
-      [
-       "Divine Strength",
-       2
-      ],
-      [
-       "Divine Intellect",
-       5
       ],
       [
        "Improved Seals",
@@ -2058,41 +1399,37 @@
      ]
     },
     "split": "11/8/32",
-    "dps": 949.41,
-    "se": 0.1408,
+    "dps": 954.21,
+    "se": 0.1539,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "10/8/33",
-    "dps": 947.61,
-    "se": 0.1434,
+    "split": "11/8/32",
+    "dps": 954.21,
+    "se": 0.1539,
     "differs": [
      [
-      "Reverence",
-      1
+      "Redoubt",
+      5
      ],
      [
-      "Vindication",
-      1
-     ],
-     [
-      "Vindication",
-      2
+      "Toughness",
+      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0019,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
       "Holy": [
        [
         "Divine Strength",
-        2
+        5
        ],
        [
         "Divine Intellect",
-        5
+        2
        ],
        [
         "Improved Seals",
@@ -2169,28 +1506,32 @@
       ]
      },
      "split": "11/8/32",
-     "dps": 949.41,
-     "se": 0.1408
+     "dps": 954.21,
+     "se": 0.1539
     },
     {
      "allocation": {
       "Holy": [
        [
         "Divine Strength",
-        2
+        5
        ],
        [
         "Divine Intellect",
-        5
+        2
        ],
        [
         "Improved Seals",
         3
+       ],
+       [
+        "Reverence",
+        1
        ]
       ],
       "Protection": [
        [
-        "Toughness",
+        "Redoubt",
         5
        ],
        [
@@ -2217,7 +1558,7 @@
        ],
        [
         "Vindication",
-        2
+        1
        ],
        [
         "Sanctified Judgement",
@@ -2253,47 +1594,53 @@
        ]
       ]
      },
-     "split": "10/8/33",
-     "dps": 947.61,
-     "se": 0.1434
+     "split": "11/8/32",
+     "dps": 954.21,
+     "se": 0.1539
     }
    ],
    "runs": [
     {
      "entry": "ret-dps",
      "run": 1,
-     "simulated": 1197,
-     "best_screen": 949.86,
+     "simulated": 1399,
+     "best_screen": 954.67,
      "best_split": "11/8/32",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 949.86
+       "simulated": 399,
+       "best": 951.76
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 949.86,
-       "predicted_top": 941.95
+       "simulated": 599,
+       "best": 954.67,
+       "predicted_top": 947.2
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 949.86,
-       "predicted_top": 944.26
+       "simulated": 799,
+       "best": 954.67,
+       "predicted_top": 950.97
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 949.86,
-       "predicted_top": 947.54
+       "simulated": 999,
+       "best": 954.67,
+       "predicted_top": 951.75
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 949.86,
-       "predicted_top": 947.92
+       "simulated": 1199,
+       "best": 954.67,
+       "predicted_top": 953.3
+      },
+      {
+       "round": 5,
+       "simulated": 1399,
+       "best": 954.67,
+       "predicted_top": 953.08
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2306,37 +1653,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      948.92,
-      948.0,
-      948.0,
-      948.0,
-      948.0,
-      948.0
+      954.52,
+      954.52,
+      954.52,
+      954.52,
+      954.52,
+      954.52
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      949.1,
-      947.5,
-      947.5,
-      947.5,
-      947.5
+      954.09,
+      954.09,
+      954.09,
+      954.09,
+      954.09
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      949.41,
-      947.61
+      954.21,
+      954.21
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 226,
+     "neighbours": 223,
      "best_gap": 0.0,
      "best_move": "5 Toughness -> Redoubt"
     }
@@ -2345,56 +1692,946 @@
    "important_features": [
     {
      "feature": "Twist of Light",
-     "importance": 0.405
+     "importance": 0.4674
     },
     {
      "feature": "Deflection",
-     "importance": 0.218
+     "importance": 0.1671
     },
     {
      "feature": "Vengeance",
-     "importance": 0.0875
-    },
-    {
-     "feature": "Champion of the Light",
-     "importance": 0.0771
+     "importance": 0.0988
     },
     {
      "feature": "Improved Seals",
-     "importance": 0.0727
-    },
-    {
-     "feature": "Pursuit of Justice",
-     "importance": 0.03
-    },
-    {
-     "feature": "Seal of Command",
-     "importance": 0.0183
-    },
-    {
-     "feature": "Eye for an Eye",
-     "importance": 0.0165
-    },
-    {
-     "feature": "Retribution points",
-     "importance": 0.0147
+     "importance": 0.0724
     },
     {
      "feature": "Precision",
-     "importance": 0.0138
+     "importance": 0.0373
+    },
+    {
+     "feature": "Seal of Command",
+     "importance": 0.027
+    },
+    {
+     "feature": "Pursuit of Justice",
+     "importance": 0.0226
     },
     {
      "feature": "Instrument of Law",
-     "importance": 0.0126
+     "importance": 0.0202
+    },
+    {
+     "feature": "Eye for an Eye",
+     "importance": 0.0195
+    },
+    {
+     "feature": "Champion of the Light",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0072
+    }
+   ],
+   "simulated_builds": 1636,
+   "simulated_fights": 2481000,
+   "minutes": 3.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "paladin",
+   "spec": "Retribution",
+   "setting": "dummy",
+   "entry": "ret-dps",
+   "date": "2026-10-16",
+   "constraint": "Retribution 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "ret-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       2
+      ],
+      [
+       "Divine Intellect",
+       5
+      ],
+      [
+       "Improved Seals",
+       3
+      ],
+      [
+       "Reverence",
+       3
+      ]
+     ],
+     "Protection": [
+      [
+       "Toughness",
+       5
+      ],
+      [
+       "Precision",
+       2
+      ]
+     ],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       5
+      ],
+      [
+       "Vindication",
+       1
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       2
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ],
+      [
+       "Instrument of Law",
+       2
+      ],
+      [
+       "Twist of Light",
+       1
+      ]
+     ]
+    },
+    "split": "13/7/31",
+    "dps": 516.97,
+    "se": 0.0611,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "13/7/31",
+    "dps": 516.97,
+    "se": 0.0611,
+    "differs": [
+     [
+      "Redoubt",
+      1
+     ],
+     [
+      "Toughness",
+      4
+     ],
+     [
+      "Toughness",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        2
+       ],
+       [
+        "Divine Intellect",
+        5
+       ],
+       [
+        "Improved Seals",
+        3
+       ],
+       [
+        "Reverence",
+        3
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        5
+       ],
+       [
+        "Precision",
+        2
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Holy Conduit",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        1
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        2
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "13/7/31",
+     "dps": 516.97,
+     "se": 0.0611
+    },
+    {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        2
+       ],
+       [
+        "Divine Intellect",
+        5
+       ],
+       [
+        "Improved Seals",
+        3
+       ],
+       [
+        "Reverence",
+        3
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        4
+       ],
+       [
+        "Redoubt",
+        1
+       ],
+       [
+        "Precision",
+        2
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Holy Conduit",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        1
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        2
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "13/7/31",
+     "dps": 516.97,
+     "se": 0.0611
+    }
+   ],
+   "runs": [
+    {
+     "entry": "ret-dps",
+     "run": 1,
+     "simulated": 1204,
+     "best_screen": 517.18,
+     "best_split": "13/7/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 404,
+       "best": 510.96
+      },
+      {
+       "round": 1,
+       "simulated": 604,
+       "best": 517.18,
+       "predicted_top": 505.68
+      },
+      {
+       "round": 2,
+       "simulated": 804,
+       "best": 517.18,
+       "predicted_top": 512.54
+      },
+      {
+       "round": 3,
+       "simulated": 1004,
+       "best": 517.18,
+       "predicted_top": 515.26
+      },
+      {
+       "round": 4,
+       "simulated": 1204,
+       "best": 517.18,
+       "predicted_top": 515.89
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      517.13,
+      517.13,
+      517.13,
+      516.44,
+      516.44,
+      516.44
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      516.97,
+      516.97,
+      516.97,
+      516.29,
+      516.29
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      516.97,
+      516.97
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 203,
+     "best_gap": 0.0,
+     "best_move": "5 Toughness -> Redoubt"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Seal of Command",
+     "importance": 0.2767
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.2657
+    },
+    {
+     "feature": "Twist of Light",
+     "importance": 0.1737
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0732
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0482
+    },
+    {
+     "feature": "Reverence",
+     "importance": 0.0332
+    },
+    {
+     "feature": "Eye for an Eye",
+     "importance": 0.0158
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0136
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.0122
+    },
+    {
+     "feature": "Pursuit of Justice",
+     "importance": 0.0096
+    },
+    {
+     "feature": "Vindication",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.0084
+    }
+   ],
+   "simulated_builds": 1421,
+   "simulated_fights": 2226000,
+   "minutes": 2.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "paladin",
+   "spec": "Retribution",
+   "setting": "raid",
+   "entry": "ret-dps",
+   "date": "2026-10-16",
+   "constraint": "Retribution 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "ret-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Divine Intellect",
+       2
+      ],
+      [
+       "Improved Seals",
+       3
+      ],
+      [
+       "Reverence",
+       2
+      ]
+     ],
+     "Protection": [
+      [
+       "Toughness",
+       5
+      ],
+      [
+       "Precision",
+       2
+      ]
+     ],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       5
+      ],
+      [
+       "Vindication",
+       1
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ],
+      [
+       "Instrument of Law",
+       2
+      ],
+      [
+       "Twist of Light",
+       1
+      ]
+     ]
+    },
+    "split": "12/7/32",
+    "dps": 928.82,
+    "se": 0.1378,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "12/7/32",
+    "dps": 928.82,
+    "se": 0.1378,
+    "differs": [
+     [
+      "Redoubt",
+      2
+     ],
+     [
+      "Toughness",
+      3
+     ],
+     [
+      "Toughness",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        5
+       ],
+       [
+        "Divine Intellect",
+        2
+       ],
+       [
+        "Improved Seals",
+        3
+       ],
+       [
+        "Reverence",
+        2
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        5
+       ],
+       [
+        "Precision",
+        2
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Holy Conduit",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        1
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "12/7/32",
+     "dps": 928.82,
+     "se": 0.1378
+    },
+    {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        5
+       ],
+       [
+        "Divine Intellect",
+        2
+       ],
+       [
+        "Improved Seals",
+        3
+       ],
+       [
+        "Reverence",
+        2
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        3
+       ],
+       [
+        "Redoubt",
+        2
+       ],
+       [
+        "Precision",
+        2
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Holy Conduit",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        1
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "12/7/32",
+     "dps": 928.82,
+     "se": 0.1378
+    }
+   ],
+   "runs": [
+    {
+     "entry": "ret-dps",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 931.05,
+     "best_split": "12/7/32",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 927.83
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 931.05,
+       "predicted_top": 921.48
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 931.05,
+       "predicted_top": 927.32
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 931.05,
+       "predicted_top": 928.94
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 931.05,
+       "predicted_top": 929.65
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      929.01,
+      929.01,
+      929.01,
+      929.01,
+      928.06,
+      928.06
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      928.04,
+      928.04,
+      928.04,
+      928.04,
+      926.99
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      928.82,
+      928.82
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Toughness -> Redoubt"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Twist of Light",
+     "importance": 0.4568
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.2149
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0861
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0848
+    },
+    {
+     "feature": "Champion of the Light",
+     "importance": 0.0276
+    },
+    {
+     "feature": "Instrument of Law",
+     "importance": 0.0244
+    },
+    {
+     "feature": "Seal of Command",
+     "importance": 0.0228
+    },
+    {
+     "feature": "Pursuit of Justice",
+     "importance": 0.0173
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.0134
+    },
+    {
+     "feature": "Eye for an Eye",
+     "importance": 0.0117
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.007
     },
     {
      "feature": "Protection points",
-     "importance": 0.0076
+     "importance": 0.0051
     }
    ],
-   "simulated_builds": 1437,
-   "simulated_fights": 2288000,
-   "minutes": 2.9,
+   "simulated_builds": 1447,
+   "simulated_fights": 2312000,
+   "minutes": 3.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-prebis.gear.json"
   }
  },
@@ -2408,71 +2645,26 @@
   "dps": {
    "winner": {
     "entry": "ret-dps",
-    "dps": 545.25,
-    "se": 0.066
+    "dps": 516.2,
+    "se": 0.067
    },
    "ret-raid-dps": {
     "entry": "ret-dps",
-    "dps": 537.67,
-    "se": 0.069
+    "dps": 506.04,
+    "se": 0.071
    },
    "ret-full-buffs-raid": {
     "entry": "ret-dps",
-    "dps": 527.51,
-    "se": 0.067
+    "dps": 499.51,
+    "se": 0.066
    },
    "opt-ret-dps-raid-dps": {
     "entry": "ret-dps",
-    "dps": 542.55,
-    "se": 0.066
+    "dps": 516.3,
+    "se": 0.067
    }
   },
   "best_hand": "ret-raid-dps",
-  "gain_vs_hand": 0.0141
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "ret-dps",
-    "dps": 1015.04,
-    "se": 0.154
-   },
-   "ret-full-buffs-raid": {
-    "entry": "ret-dps",
-    "dps": 1013.68,
-    "se": 0.154
-   },
-   "ret-raid-dps": {
-    "entry": "ret-dps",
-    "dps": 999.11,
-    "se": 0.155
-   },
-   "retribution-ml-raid": {
-    "entry": "ret-dps",
-    "dps": 1013.24,
-    "se": 0.151
-   },
-   "opt-ret-dps-raid-dps": {
-    "entry": "ret-dps",
-    "dps": 1008.88,
-    "se": 0.148
-   }
-  },
-  "best_hand": "ret-full-buffs-raid",
-  "gain_vs_hand": 0.0013
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-16",
-  "setting": "raid",
-  "why": "confirms ret-full-buffs-raid (+0.13% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "gain_vs_hand": 0.0201
  }
 }

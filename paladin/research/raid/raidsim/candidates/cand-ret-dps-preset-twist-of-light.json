@@ -1,5 +1,5 @@
 {
- "id": "cand-ret-dps-preset-p4-p5-ret",
+ "id": "cand-ret-dps-preset-twist-of-light",
  "allocation": {
   "Holy": [
    [
@@ -16,15 +16,7 @@
    ],
    [
     "Reverence",
-    2
-   ],
-   [
-    "Purifying Power",
-    2
-   ],
-   [
-    "Divine Favor",
-    1
+    3
    ]
   ],
   "Retribution": [
@@ -46,7 +38,7 @@
    ],
    [
     "Vindication",
-    2
+    3
    ],
    [
     "Sanctified Judgement",
@@ -54,6 +46,10 @@
    ],
    [
     "Seal of Command",
+    1
+   ],
+   [
+    "Pursuit of Justice",
     1
    ],
    [
@@ -82,7 +78,7 @@
    ]
   ]
  },
- "preset": "P4/P5 Ret",
- "talents": "550030022001--05225231001330321",
- "note": "The community simulator's preset 'P4/P5 Ret' (paladin/retribution/presets.ts), a raid candidate since it ran within 6% of the best build of ret-dps (304.5 vs 306.8 in the race of 2026-09-27)."
+ "preset": "Twist of Light",
+ "talents": "55003003--05225331101330321",
+ "note": "The community simulator's preset 'Twist of Light' (paladin/retribution/presets.ts), a raid candidate since it ran within 6% of the best build of ret-dps (382.9 vs 382.9 in the race of 2026-10-26)."
 }

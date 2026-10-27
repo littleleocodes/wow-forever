@@ -166,16 +166,16 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-26",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/paladin/retribution/apls/default.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "retribution-ml-raid",
-    "talents": "25003001-503-05225131001330321"
+    "label": "ret-full-buffs-raid",
+    "talents": "52003-503-05225231001330321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
@@ -187,18 +187,18 @@
     "protect_only": true
    },
    {
-    "label": "ret-full-buffs-raid",
-    "talents": "52003-503-05225231001330321",
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "55003013--05225331001330321",
     "protect_only": true
    },
    {
-    "label": "opt-ret-dps-raid-dps",
-    "talents": "25003002-503-05225131001230321",
+    "label": "retribution-ml-raid",
+    "talents": "25003001-503-05225131001330321",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "retribution-ml-raid",
+   "ret-full-buffs-raid",
    "sim preset: P4/P5 Ret"
   ],
   "iterations": 3000,
@@ -301,58 +301,96 @@
     "gain_seed2": 0.0929,
     "candidates": 12,
     "pass": 11
+   },
+   {
+    "round": 13,
+    "change": "move to the top: cast Holy Strike",
+    "gain_seed1": 0.03169288357483624,
+    "gain_seed2": 0.02994492678260796,
+    "candidates": 432,
+    "pass": 13
+   },
+   {
+    "round": 14,
+    "change": "insert at the end: cast Concentration Aura",
+    "gain_seed1": 0.00212741308103781,
+    "gain_seed2": 0.002430781748374855,
+    "candidates": 432,
+    "pass": 13
+   },
+   {
+    "round": 15,
+    "change": "threshold 20s -> 30s: if Judgement can be cast and time left in the fight \u2265 20s: cast Judgement",
+    "gain_seed1": 0.0017258921459430976,
+    "gain_seed2": 0.0016453373486831069,
+    "candidates": 440,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
-    "retribution-ml-raid": {
-     "before": 857.7328080235214,
-     "after": 950.8835083319234,
-     "base": 857.7328080235214,
+    "ret-full-buffs-raid": {
+     "before": 742.4515443649286,
+     "after": 777.8590193411834,
+     "base": 742.4515443649286,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.028507199957899996,
+     "oom_after": 0.0015639999990500002
     },
     "sim preset: P4/P5 Ret": {
-     "before": 833.3367919482348,
-     "after": 923.8279505197113,
-     "base": 833.3367919482348,
+     "before": 741.0880891516449,
+     "after": 781.2946479599326,
+     "base": 741.0880891516449,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.0013111999984000001,
      "oom_after": 0
     },
     "ret-raid-dps": {
-     "before": 835.6720662407013,
-     "after": 926.6642094387266,
-     "base": 835.6720662407013,
+     "before": 743.282113677687,
+     "after": 784.6679769110212,
+     "base": 743.282113677687,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.000475,
      "oom_after": 0
     },
-    "ret-full-buffs-raid": {
-     "before": 863.8155899737782,
-     "after": 953.3199033318639,
-     "base": 863.8155899737782,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00039249999975,
-     "oom_after": 0.00039249999975
-    },
     "opt-ret-dps-raid-dps": {
-     "before": 852.8506391811896,
-     "after": 947.9342900446918,
-     "base": 852.8506391811896,
+     "before": 743.3537752197913,
+     "after": 784.8605259592089,
+     "base": 743.3537752197913,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.0003525000001,
+     "oom_after": 0
+    },
+    "retribution-ml-raid": {
+     "before": 733.6262166068359,
+     "after": 771.428915847606,
+     "base": 733.6262166068359,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0038004999950000014,
      "oom_after": 0
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Retribution"
+   ],
+   "required": [
+    "Judgement"
+   ],
+   "rejected": {
+    "structure": 78,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

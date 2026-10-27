@@ -188,7 +188,7 @@
     ]
   },
   "Divine Favor": {
-    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, ret-dps, training dummy): removing it costs -1.2% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -2.0% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -453,7 +453,7 @@
     ]
   },
   "Improved Righteous Fury": {
-    "note": "-2%/rank damage taken with Righteous Fury: +2%/rank effective health for tanks. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 3.3% DPS in the simulator (scorer said 3.6% on the same scale); already within tolerance, raid effects split off unchanged (3.6%). Other modes unchanged.",
+    "note": "-2%/rank damage taken with Righteous Fury: +2%/rank effective health for tanks. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 3.3% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -481,7 +481,7 @@
     ]
   },
   "Shield Specialization": {
-    "note": "+10%/rank block value (~+1%/rank mitigation) and 33%/rank chance for 6% mana on block. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged. Audit 2026-10-18: 70425: 33%/rank chance on block for 4% maximum mana (not 6%), 3 ranks: tooltip sustain x2/3 (row 46).",
+    "note": "+10%/rank block value (~+1%/rank mitigation) and 33%/rank chance for 6% mana on block. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.6% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -524,7 +524,7 @@
     ]
   },
   "Templar's Bulwark": {
-    "note": "Absorb equal to 100% max health for 8s every 5 min: ~6% effective health; Holy Shield prerequisite. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
+    "note": "Absorb equal to 100% max health for 8s every 5 min: ~6% effective health; Holy Shield prerequisite. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.3% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -556,7 +556,7 @@
     ]
   },
   "Reckoning": {
-    "note": "8%/rank extra attack on block, 20%/rank on being crit: a tank blocks ~30% of hits -> +2.5%/rank white swings. PvP (2026-09-27): medium, burst: Extra swings after being crit (100%, non-periodic) or after blocking (40%, shield only): players crit far more than mobs, and its damage is counted only in tank mode. If the charges bank as in Classic, a two-hander Reckoning bomb (unverified). Melee. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.2% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.38 to match (0.2%). Other modes unchanged.",
+    "note": "8%/rank extra attack on block, 20%/rank on being crit: a tank blocks ~30% of hits -> +2.5%/rank white swings. PvP (2026-09-27): medium, burst: Extra swings after being crit (100%, non-periodic) or after blocking (40%, shield only): players crit far more than mobs, and its damage is counted only in tank mode. If the charges bank as in Classic, a two-hander Reckoning bomb (unverified). Melee. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.2% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -584,7 +584,7 @@
     ]
   },
   "Iron Creed": {
-    "note": "+5%/rank Holy Strike threat and -2%/rank damage taken for 6s after Holy Strike (permanent uptime). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 3.9% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "note": "+5%/rank Holy Strike threat and -2%/rank damage taken for 6s after Holy Strike (permanent uptime). Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 3.7% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "threat_up",
@@ -635,7 +635,7 @@
     ]
   },
   "Holy Shield": {
-    "note": "+20% block for 10s every 10s (permanent) with Holy damage per block: ~+10% effective health and ~+10% threat. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 7.6% DPS in the simulator (scorer said 7.2% on the same scale); already within tolerance, raid effects split off unchanged (7.2%). Other modes unchanged.",
+    "note": "+20% block for 10s every 10s (permanent) with Holy damage per block: ~+10% effective health and ~+10% threat. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 9.4% DPS in the simulator (scorer said 9.2% on the same scale); already within tolerance, raid effects split off unchanged (9.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -675,21 +675,21 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "values": [0.089476],
+        "values": [0.116007],
         "modes": ["tank"],
         "specs": ["prot-tank"]
       },
       {
         "channel": "dmg",
         "scope": ["tank"],
-        "values": [0.089476],
+        "values": [0.116007],
         "modes": ["tank"],
         "specs": ["prot-tank"]
       }
     ]
   },
   "Vindication": {
-    "note": "AP debuff on the target and +1%/rank own AP: tiny damage, some leveling survivability. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 2.9% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "AP debuff on the target and +1%/rank own AP: tiny damage, some leveling survivability. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 0.4% DPS in the simulator (scorer said 2.6% on the same scale); raid values scaled x0.15 to match (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -764,13 +764,6 @@
         "specs": ["ret-dps"]
       },
       {
-        "channel": "dmg",
-        "scope": ["type:melee"],
-        "values": [0.021165, 0.042551, 0.064159, 0.085987, 0.108038],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
         "channel": "surv",
         "scope": ["all"],
         "per_rank": 0.01,
@@ -785,11 +778,18 @@
         "values": [0.005, 0.01, 0.015, 0.02, 0.025],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.003187, 0.006406, 0.00966, 0.012946, 0.016266],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Sanctified Judgement": {
-    "note": "33%/rank chance to refund 20% of the seal's mana on Judgement: ~+2%/rank mana for seal users. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.3% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 11.7% time per kill in the simulator (scorer said 6.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (6.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 8.5% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (4.7%). Other modes unchanged.",
+    "note": "33%/rank chance to refund 20% of the seal's mana on Judgement: ~+2%/rank mana for seal users. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 11.7% time per kill in the simulator (scorer said 6.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (6.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 8.5% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (4.7%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 9.6% DPS in the simulator (scorer said 4.7% on the same scale); raid values scaled x3.06 to match (11.8%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 0.8% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -841,21 +841,6 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "per_rank": 0.017881,
-        "values": [0.017881, 0.035762, 0.053641, 0.071524, 0.089405],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "values": [0.064211, 0.128422, 0.192627, 0.256838, 0.321049],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
         "per_rank": 0.500001,
         "values": [0.500001, 1.0, 1.5, 1.999998, 2.499999],
         "modes": ["leveling-st", "solo-60"],
@@ -868,11 +853,26 @@
         "values": [0.5, 1.0, 1.5, 2.0, 2.5],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.054774,
+        "values": [0.054774, 0.109547, 0.164314, 0.219094, 0.273868],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.064211, 0.128422, 0.192627, 0.256838, 0.321049],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Seal of Command": {
-    "note": "70% weapon-damage Holy procs replace Seal of Righteousness: ~+15% total damage for a two-hander. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 76.5% DPS in the simulator (scorer said 12.2% on the same scale); raid values scaled x6.29 to match (76.6%). Other modes unchanged. Audit 2026-10-18: the ret-dps raid value 0.864 (x6.29) came from a removal run that broke the rotation; back to the tooltip estimate (+15%) until the raid refit (row 46). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 6.7% time per kill in the simulator (scorer said 10.2% on the same scale); leveling-st/solo-60 values scaled x0.66 to match (6.8%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 5.7% time per kill in the simulator (scorer said 4.5% on the same scale); leveling-aoe values scaled x0.54 to match (5.7%). Other modes unchanged.",
+    "note": "70% weapon-damage Holy procs replace Seal of Righteousness: ~+15% total damage for a two-hander. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 6.7% time per kill in the simulator (scorer said 10.2% on the same scale); leveling-st/solo-60 values scaled x0.66 to match (6.8%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 5.7% time per kill in the simulator (scorer said 4.5% on the same scale); leveling-aoe values scaled x0.54 to match (5.7%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 56.1% DPS in the simulator (scorer said 13.6% on the same scale); raid values scaled x4.11 to match (56.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -904,13 +904,6 @@
       },
       {
         "channel": "dmg",
-        "scope": ["weapon:2h"],
-        "values": [0.15],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
         "scope": ["type:melee"],
         "values": [0.098622],
         "modes": ["leveling-st", "solo-60"],
@@ -921,6 +914,13 @@
         "scope": ["type:melee"],
         "values": [0.081475],
         "modes": ["leveling-aoe"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.61702],
+        "modes": ["raid"],
         "specs": ["ret-dps"]
       }
     ]
@@ -985,7 +985,7 @@
     ]
   },
   "Champion of the Light": {
-    "note": "+33%/rank of Intellect as spell damage and healing (est.): ~150 Intellect -> +50 spell power per rank = ~+4%/rank Holy damage (Judgements/Consecration/Holy Strike) and ~+4%/rank healing. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 4.6% DPS in the simulator (scorer said 4.6% on the same scale); already within tolerance, raid effects split off unchanged (4.6%). Other modes unchanged. Audit 2026-10-18: 70425 (Blizzard's notes of 16 Oct; user decision 2026-10-18): spell damage only, 10/20/30% of Intellect, 3 ranks. Removed every heal effect (the talent does not heal) and cut the lists to 3 ranks; tooltip copies: ~170 Intellect at 60 -> +17/34/51 spell power on the Holy part of Retribution damage, ~+1.2%/rank Holy damage; the raid fit (on the fork's 20/40/60) halved. Refit with the next calibrations (row 40). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.7% on the same scale); leveling-st/solo-60 values scaled x0.57 to match (1.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "+33%/rank of Intellect as spell damage and healing (est.): ~150 Intellect -> +50 spell power per rank = ~+4%/rank Holy damage (Judgements/Consecration/Holy Strike) and ~+4%/rank healing. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.7% on the same scale); leveling-st/solo-60 values scaled x0.57 to match (1.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 8.0% on the same scale); raid values scaled x0.28 to match (2.1%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.7% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1011,20 +1011,6 @@
       {
         "channel": "dmg",
         "scope": ["school:holy"],
-        "values": [0.034781, 0.069563, 0.104344],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:holy"],
-        "values": [0.044078, 0.089885, 0.13742],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:holy"],
         "values": [0.008141, 0.016281, 0.024422],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["ret-dps"]
@@ -1035,11 +1021,25 @@
         "values": [0.006102, 0.012203, 0.018305],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.009738, 0.019477, 0.029215],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.016237, 0.033112, 0.050623],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Twist of Light": {
-    "note": "Build 70009 adds -20% Seal mana cost (parsed). Seal twisting Echoes: an extra seal proc on the swing after each seal swap; mechanics untested, valued as ~+6% Retribution damage pending beta testing. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 11.4% DPS in the simulator (scorer said 5.6% on the same scale); raid values scaled x7.61, the cap on effect size stops short of the target (5.5%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs -0.5% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Build 70009 adds -20% Seal mana cost (parsed). Seal twisting Echoes: an extra seal proc on the swing after each seal swap; mechanics untested, valued as ~+6% Retribution damage pending beta testing. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs -0.5% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 7.9% DPS in the simulator (scorer said 5.2% on the same scale); raid values scaled x7.61, the cap on effect size stops short of the target (5.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1095,6 +1095,34 @@
         "channel": "dmg",
         "scope": ["weapon:2h"],
         "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Seal"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Seal"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.0],
         "modes": ["raid"],
         "specs": ["ret-dps"]
       },
@@ -1103,34 +1131,6 @@
         "scope": ["ability:Seal"],
         "values": [0.19712],
         "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["weapon:2h"],
-        "values": [0.0],
-        "modes": ["leveling-aoe"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Seal"],
-        "values": [0.0],
-        "modes": ["leveling-aoe"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["weapon:2h"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Seal"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
         "specs": ["ret-dps"]
       }
     ]
@@ -1229,7 +1229,7 @@
     ]
   },
   "Benediction": {
-    "note": "-2%/rank mana on all instant spells and abilities (Judgements, Seals, Holy Shock, Consecration). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 3.9% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x2.00 to match (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "-2%/rank mana on all instant spells and abilities (Judgements, Seals, Holy Shock, Consecration). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x2.00 to match (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.7% on the same scale); raid values scaled x0.73 to match (2.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1288,14 +1288,6 @@
       {
         "channel": "mana_cost",
         "scope": ["instant", "yellow"],
-        "per_rank": 0.009633,
-        "values": [0.009633, 0.019269, 0.028905, 0.038538, 0.048171],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["instant", "yellow"],
         "per_rank": 0.116848,
         "values": [0.116848, 0.233695, 0.350543, 0.467389, 0.584238],
         "modes": ["leveling-st", "solo-60"],
@@ -1308,11 +1300,19 @@
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant", "yellow"],
+        "per_rank": 0.007055,
+        "values": [0.007055, 0.014111, 0.021168, 0.028223, 0.035277],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
       }
     ]
   },
   "Sacred Arbiter": {
-    "note": "Build 70009: +20% Holy Strike (parsed; was 10%) and Holy Strike refreshes all Judgement effects on the target -> fewer re-Judgements (~+10% Judgement throughput). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.3%). Other modes unchanged.",
+    "note": "Build 70009: +20% Holy Strike (parsed; was 10%) and Holy Strike refreshes all Judgement effects on the target -> fewer re-Judgements (~+10% Judgement throughput). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.3%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 0.8% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1355,34 +1355,6 @@
         "values": [0.1],
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Holy Strike"],
-        "values": [0.094075],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Judgements"],
-        "values": [0.047038],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Holy Strike"],
-        "values": [0.075612],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Judgements"],
-        "values": [0.037462],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
       },
       {
         "channel": "dmg",
@@ -1411,11 +1383,39 @@
         "values": [0.048634],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Holy Strike"],
+        "values": [0.094075],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Judgements"],
+        "values": [0.047038],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Holy Strike"],
+        "values": [0.075612],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Judgements"],
+        "values": [0.037462],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Vengeance": {
-    "note": "Build 70009: +1%/rank Physical and Holy damage per stack after a non-periodic crit, 3 stacks (was 5), 30s: 3/6/9% at full stacks x ~80% uptime at raid crit. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 3.4% DPS in the simulator (scorer said 3.3% on the same scale); already within tolerance, raid effects split off unchanged (3.3%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-st/solo-60 values scaled x2.81 to match (3.8%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 4.8% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-aoe values scaled x1.29 to match (4.8%). Other modes unchanged.",
+    "note": "Build 70009: +1%/rank Physical and Holy damage per stack after a non-periodic crit, 3 stacks (was 5), 30s: 3/6/9% at full stacks x ~80% uptime at raid crit. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-st/solo-60 values scaled x2.81 to match (3.8%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 4.8% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-aoe values scaled x1.29 to match (4.8%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 8.5% DPS in the simulator (scorer said 7.2% on the same scale); already within tolerance, raid effects split off unchanged (7.2%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 3.8% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1441,20 +1441,6 @@
       {
         "channel": "dmg",
         "scope": ["type:melee", "school:holy"],
-        "values": [0.024, 0.048, 0.072],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:melee", "school:holy"],
-        "values": [0.022327, 0.044899, 0.067719],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:melee", "school:holy"],
         "values": [0.013054, 0.026111, 0.039164],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["ret-dps"]
@@ -1465,11 +1451,25 @@
         "values": [0.017373, 0.034749, 0.05212],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee", "school:holy"],
+        "values": [0.024, 0.048, 0.072],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee", "school:holy"],
+        "values": [0.022327, 0.044899, 0.067719],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Instrument of Law": {
-    "note": "Faster Hammer of Wrath, -10% threat: small. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 3.9% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-aoe values scaled x8.19 to match (1.7%). Other modes unchanged.",
+    "note": "Faster Hammer of Wrath, -10% threat: small. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-aoe values scaled x8.19 to match (1.7%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 3.4% on the same scale); raid values scaled x0.52 to match (1.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1512,14 +1512,6 @@
       {
         "channel": "dmg",
         "scope": ["school:holy"],
-        "per_rank": 0.021736,
-        "values": [0.021736, 0.043468, 0.065204, 0.086935, 0.10867],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:holy"],
         "per_rank": 0.023141,
         "values": [0.023141, 0.046282, 0.069422, 0.092563, 0.115704],
         "modes": ["leveling-st", "solo-60"],
@@ -1531,6 +1523,14 @@
         "per_rank": 0.030193,
         "values": [0.030193, 0.060385, 0.090578, 0.12077, 0.150954],
         "modes": ["leveling-aoe"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "per_rank": 0.011229,
+        "values": [0.011229, 0.022455, 0.033684, 0.04491, 0.056139],
+        "modes": ["raid"],
         "specs": ["ret-dps"]
       }
     ]
@@ -1643,7 +1643,7 @@
     ]
   },
   "Swift Judgement": {
-    "note": "Resets Judgement and makes the next one free every ~1 min: +15% Judgement output, some mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.6% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged.",
+    "note": "Resets Judgement and makes the next one free every ~1 min: +15% Judgement output, some mana. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 1.0% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1681,14 +1681,14 @@
       {
         "channel": "dmg",
         "scope": ["ability:Judgements"],
-        "values": [0.04441],
+        "values": [0.0],
         "modes": ["tank"],
         "specs": ["prot-tank"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.005921],
+        "values": [0.0],
         "modes": ["tank"],
         "specs": ["prot-tank"]
       }
@@ -1794,7 +1794,7 @@
     ]
   },
   "Toughness": {
-    "note": "+2%/rank armor from items: ~8000 item armor tank -> +800 at 5/5 -> physical damage taken ~-5.8% (armor DR 63.6% -> 65.7%) -> +1.1%/rank effective health. Wowhead classic prot guide: 'Toughness improves your physical damage mitigation'. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Audit 2026-10-18: the prot-tank 0 came from a run before the armor fill (the fork listed no armor for most items until 2026-10-15): re-seeded at the tooltip estimate for the tank refit (row 46). Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.5% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "+2%/rank armor from items: ~8000 item armor tank -> +800 at 5/5 -> physical damage taken ~-5.8% (armor DR 63.6% -> 65.7%) -> +1.1%/rank effective health. Wowhead classic prot guide: 'Toughness improves your physical damage mitigation'. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Audit 2026-10-18: the prot-tank 0 came from a run before the armor fill (the fork listed no armor for most items until 2026-10-15): re-seeded at the tooltip estimate for the tank refit (row 46). Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.5% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 2.2% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1830,14 +1830,6 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.011,
-        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-st", "solo-60"],
@@ -1850,11 +1842,19 @@
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.011,
+        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Anticipation": {
-    "note": "+4 defense/rank (Forever doubles Classic): +0.04% dodge/parry/block/miss and -0.04% crit taken per point -> +1.6% avoidance, -0.4% crit at 5/5 -> ~+3% effective health for a tank (0.6%/rank). Wowhead: 'defense skill, which is the main stat tanks desire'; 'less valuable as your gear improves'. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 2.1% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.1%). Other modes unchanged.",
+    "note": "+4 defense/rank (Forever doubles Classic): +0.04% dodge/parry/block/miss and -0.04% crit taken per point -> +1.6% avoidance, -0.4% crit at 5/5 -> ~+3% effective health for a tank (0.6%/rank). Wowhead: 'defense skill, which is the main stat tanks desire'; 'less valuable as your gear improves'. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 2.3% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1882,23 +1882,23 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.012,
-        "modes": ["tank"],
-        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
         "per_rank": 0.004,
         "modes": ["leveling-aoe"],
         "values": [0.004, 0.008, 0.012, 0.016, 0.02],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Divine Strength": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.2% on the same scale); leveling-st/solo-60 values scaled x1.95 to match (2.3%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.2% on the same scale); leveling-st/solo-60 values scaled x1.95 to match (2.3%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.6%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -1923,22 +1923,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength"],
-        "values": [0.00194, 0.003879, 0.005819, 0.007759, 0.009699],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength"],
-        "values": [0.00937, 0.01874, 0.028108, 0.037478, 0.046848],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
       },
       {
         "channel": "stat",
@@ -1955,11 +1939,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength"],
+        "values": [0.00194, 0.003879, 0.005819, 0.007759, 0.009699],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength"],
+        "values": [0.00937, 0.01874, 0.028108, 0.037478, 0.046848],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Improved Seals": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.9% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 4.0% time per kill in the simulator (scorer said 5.2% on the same scale); leveling-aoe values scaled x0.77 to match (4.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.2%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 4.0% time per kill in the simulator (scorer said 5.2% on the same scale); leveling-aoe values scaled x0.77 to match (4.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 5.6% DPS in the simulator (scorer said 5.7% on the same scale); already within tolerance, raid effects split off unchanged (5.5%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1988,22 +1988,6 @@
       {
         "channel": "dmg",
         "scope": ["ability:Seals", "ability:Judgements"],
-        "values": [0.039947, 0.079892, 0.11984],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Seals", "ability:Judgements"],
-        "values": [0.038473, 0.077674, 0.1176],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Seals", "ability:Judgements"],
         "values": [0.038124, 0.076248, 0.114373],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2016,11 +2000,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Seals", "ability:Judgements"],
+        "values": [0.039947, 0.079892, 0.11984],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Seals", "ability:Judgements"],
+        "values": [0.038473, 0.077674, 0.1176],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Reverence": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 0.9% on the same scale); raid values scaled x3.23 to match (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2057,14 +2057,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.021132, 0.042264, 0.063395],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.500001, 1.000002, 1.5],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2077,11 +2069,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.06825, 0.1365, 0.204747],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
       }
     ]
   },
   "Precision": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.8% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x3.46 to match (3.7%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 3.9% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (3.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x3.46 to match (3.7%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 3.9% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (3.9%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 3.6% on the same scale); raid values scaled x0.14 to match (0.5%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.8% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -2133,22 +2133,6 @@
       {
         "channel": "hit",
         "scope": ["all"],
-        "values": [0.010773, 0.021546, 0.032319],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "values": [0.01165, 0.023302, 0.034952],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
         "values": [0.012726, 0.025449, 0.038175],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2161,11 +2145,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.001509, 0.003019, 0.004528],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01165, 0.023302, 0.034952],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Improved Judgement": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 2.7% on the same scale); raid values scaled x1.00, the cap on effect size stops short of the target (2.7%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.1% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-aoe values scaled x1.64 to match (2.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.1% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-aoe values scaled x1.64 to match (2.4%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 5.7% DPS in the simulator (scorer said 3.0% on the same scale); raid values scaled x1.00, the cap on effect size stops short of the target (3.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -2190,14 +2190,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal", "prot-tank"]
-      },
-      {
-        "channel": "cooldown",
-        "scope": ["ability:Judgement"],
-        "values": [0.75, 1.5],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
       },
       {
         "channel": "cooldown",
@@ -2214,11 +2206,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Judgement"],
+        "values": [0.75, 1.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
       }
     ]
   },
   "Holy Conduit": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.6% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.5%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 7.1% DPS in the simulator (scorer said 17.4% on the same scale); raid values scaled x0.37 to match (8.8%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -2243,22 +2243,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Consecration", "ability:Holy Wrath", "ability:Exorcism", "ability:Hammer of Wrath"],
-        "values": [0.481636, 0.963271],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Consecration", "ability:Holy Wrath", "ability:Exorcism", "ability:Hammer of Wrath"],
-        "values": [0.2, 0.4],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
       },
       {
         "channel": "mana_cost",
@@ -2275,11 +2259,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Consecration", "ability:Holy Wrath", "ability:Exorcism", "ability:Hammer of Wrath"],
+        "values": [0.179845, 0.35969],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Consecration", "ability:Holy Wrath", "ability:Exorcism", "ability:Hammer of Wrath"],
+        "values": [0.2, 0.4],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Conviction": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 2.0% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.3% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x1.50 to match (4.4%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 6.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (6.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.3% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x1.50 to match (4.4%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 6.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (6.6%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 4.9% on the same scale); raid values scaled x0.74 to match (3.9%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.6% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2304,22 +2304,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "values": [0.018683, 0.037365, 0.056047, 0.07473, 0.093412],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "values": [0.011662, 0.023322, 0.034984, 0.046644, 0.058306],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
       },
       {
         "channel": "crit",
@@ -2336,11 +2320,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01389, 0.02778, 0.041669, 0.055559, 0.069448],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.011662, 0.023322, 0.034984, 0.046644, 0.058306],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "Two-Handed Weapon Specialization": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, ret-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-st/solo-60 values scaled x0.43 to match (1.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-st/solo-60 values scaled x0.43 to match (1.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.4%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 4.7% DPS in the simulator (scorer said 0.9% on the same scale); raid values scaled x4.90 to match (4.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2369,14 +2369,6 @@
       {
         "channel": "dmg",
         "scope": ["weapon:2h"],
-        "values": [0.003516, 0.007032, 0.010549],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["weapon:2h"],
         "values": [0.008513, 0.017027, 0.02554],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2389,11 +2381,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.017223, 0.034446, 0.051673],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
       }
     ]
   },
   "Divine Intellect": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.1% on the same scale); already within tolerance, raid effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.00 to match (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x8.43 to match (2.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.1% on the same scale); already within tolerance, raid effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.00 to match (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x8.43 to match (2.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -0.0% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2422,14 +2422,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.007773, 0.015549, 0.02332, 0.031095, 0.038869],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.001774, 0.003547, 0.005321, 0.007094, 0.008868],
         "source": "parsed",
         "modes": ["tank"],
@@ -2450,11 +2442,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
       }
     ]
   },
   "Deflection": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 3.5% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-aoe values scaled x3.84 to match (1.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-aoe values scaled x3.84 to match (1.8%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 3.8% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -2498,14 +2498,6 @@
       {
         "channel": "surv",
         "scope": ["surv:parry"],
-        "values": [0.022068, 0.044137, 0.066205, 0.088274, 0.110342],
-        "source": "parsed",
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["surv:parry"],
         "values": [0.011214, 0.022428, 0.033642, 0.044856, 0.056071],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2518,11 +2510,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.022068, 0.044137, 0.066205, 0.088274, 0.110342],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
       }
     ]
   },
   "One-Handed Weapon Specialization": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.2% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 2.9% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2542,7 +2542,7 @@
       {
         "channel": "dmg",
         "scope": ["weapon:1h"],
-        "values": [0.011255, 0.026262, 0.037517],
+        "values": [0.020998, 0.048996, 0.069995],
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["prot-tank"]

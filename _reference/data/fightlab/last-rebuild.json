@@ -4587,151 +4587,163 @@
    "spec": "ret-dps",
    "hand": "leveling-retribution",
    "opt": "opt-ret-dps-leveling-st",
-   "started": "2026-10-23T23:09:15",
+   "started": "2026-10-26T23:25:53",
    "steps": [
-    "race",
-    "report"
+    "raid"
    ],
    "raid": {
     "ret-dps": {
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "cand-ret-dps-preset-twist-of-light": 382.8,
+        "cand-ret-dps-r4": 382.8,
+        "cand-ret-dps-r6": 380.4,
+        "cand-ret-dps-r1": 375.8,
+        "cand-ret-dps-hand-2026-09-27": 368.0,
+        "cand-ret-dps-r3": 367.8,
+        "cand-ret-dps-r5": 367.8,
+        "cand-ret-dps-r7": 363.9,
+        "cand-ret-dps-r2": 352.7,
+        "opt-ret-dps-raid-dps": 349.1
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
       [
-       "retribution-ml-raid",
-       486.5
+       "cand-ret-dps-r4",
+       382.9
       ],
       [
-       "opt-ret-dps-raid-dps",
-       484.8
+       "sim preset: Twist of Light",
+       382.9
       ],
       [
-       "cand-ret-dps-r7",
-       484.8
+       "cand-ret-dps-r6",
+       380.4
       ],
       [
-       "ret-full-buffs-raid",
-       479.6
+       "ret-raid-dps",
+       375.5
       ]
      ],
-     "promoted": null,
+     "promoted": "cand-ret-dps-r4",
      "adopted": null,
      "environments": {
       "ret-raid-dps": {
-       "dummy": 472.5873898471162,
-       "dummy60": 531.6200362091389,
-       "ladder-mana": 490.18090572605473,
-       "ladder-armor": 531.7856240083697,
-       "ladder-physical": 665.7969192628614,
-       "ladder-spell": 786.6012449021295,
-       "raid": 862.6190813911841,
-       "curve60": 471.72809110101116,
-       "curve120": 452.4958075046829,
-       "curve180": 444.23439135438736,
-       "curve240": 435.66705812571206,
-       "curve360": 422.01472587634106,
-       "max": 862.6190813911841,
-       "max60": 852.1472850194106
+       "dummy": 375.5129583279656,
+       "dummy60": 408.476005268372,
+       "ladder-mana": 423.1152579874673,
+       "ladder-armor": 464.05739269788336,
+       "ladder-physical": 601.5675491199139,
+       "ladder-spell": 697.9256109721813,
+       "raid": 784.4015596108056,
+       "curve60": 407.5428919191585,
+       "curve120": 392.74801822029434,
+       "curve180": 375.2037217805611,
+       "curve240": 371.1476256350362,
+       "curve360": 362.63171868877726,
+       "max": 784.4015596108056,
+       "max60": 804.9728665499498
       },
       "ret-full-buffs-raid": {
-       "dummy": 479.6049582759154,
-       "dummy60": 536.8420677325266,
-       "ladder-mana": 500.11623369374763,
-       "ladder-armor": 542.7824881730565,
-       "ladder-physical": 684.9816157200016,
-       "ladder-spell": 811.3014766608994,
-       "raid": 889.100276698639,
-       "curve60": 485.70393703874913,
-       "curve120": 459.37307021518154,
-       "curve180": 451.5984550454755,
-       "curve240": 427.8175807946456,
-       "curve360": 404.4627320855249,
-       "max": 889.100276698639,
-       "max60": 883.0768012909334
+       "dummy": 368.2605068716659,
+       "dummy60": 399.86655338306895,
+       "ladder-mana": 421.9010042303212,
+       "ladder-armor": 462.5535528474138,
+       "ladder-physical": 598.0759579374233,
+       "ladder-spell": 692.8616603005258,
+       "raid": 777.7193945025211,
+       "curve60": 403.44524357087647,
+       "curve120": 388.1012641423092,
+       "curve180": 368.9157569668393,
+       "curve240": 362.96914974366376,
+       "curve360": 351.1859769132487,
+       "max": 777.7193945025211,
+       "max60": 804.0589567043684
       },
       "opt-ret-dps-raid-dps": {
-       "dummy": 484.8137037637963,
-       "dummy60": 541.0335464464865,
-       "ladder-mana": 503.05658784626326,
-       "ladder-armor": 544.1196556636189,
-       "ladder-physical": 682.1749564911802,
-       "ladder-spell": 807.9107728480233,
-       "raid": 885.0931449327844,
-       "curve60": 484.73563179201614,
-       "curve120": 464.3241488542284,
-       "curve180": 455.5540787331027,
-       "curve240": 445.93645559112196,
-       "curve360": 425.25216949767014,
-       "max": 885.0931449327844,
-       "max60": 877.6052098753594
+       "dummy": 382.90325485178175,
+       "dummy60": 413.3297836751598,
+       "ladder-mana": 423.15927861439644,
+       "ladder-armor": 463.98091360208747,
+       "ladder-physical": 602.3005742167551,
+       "ladder-spell": 698.2315861030611,
+       "raid": 784.5451732802968,
+       "curve60": 406.98304989730116,
+       "curve120": 391.4530908695388,
+       "curve180": 379.59748830488434,
+       "curve240": 374.1531806194687,
+       "curve360": 365.7857732215665,
+       "max": 784.5451732802968,
+       "max60": 805.3294165090452
       },
       "retribution-ml-raid": {
-       "dummy": 486.4638418999098,
-       "dummy60": 543.1225702618126,
-       "ladder-mana": 503.97655080872335,
-       "ladder-armor": 545.8705465225177,
-       "ladder-physical": 685.9738473977745,
-       "ladder-spell": 812.6193953360544,
-       "raid": 889.7136113067963,
-       "curve60": 486.40785719391084,
-       "curve120": 466.0038045305804,
-       "curve180": 457.2015040451527,
-       "curve240": 436.6270044628767,
-       "curve360": 414.2308616936923,
-       "max": 889.7136113067963,
-       "max60": 882.4854934966887
+       "dummy": 366.44630450177806,
+       "dummy60": 396.89175104630965,
+       "ladder-mana": 419.5143645951351,
+       "ladder-armor": 459.1351209104834,
+       "ladder-physical": 592.1379173756976,
+       "ladder-spell": 687.2478417432466,
+       "raid": 770.4274209108578,
+       "curve60": 404.68844224987134,
+       "curve120": 388.1178090769197,
+       "curve180": 366.4693062160768,
+       "curve240": 363.56302675707025,
+       "curve360": 352.7834122766567,
+       "max": 770.4274209108578,
+       "max60": 794.6955503367036
       },
       "opt-ret-dps-parse": {
-       "dummy": 476.9224141676527,
-       "dummy60": 535.9919850391702,
-       "ladder-mana": 499.08401420818853,
-       "ladder-armor": 541.9148018427593,
-       "ladder-physical": 684.7302134009192,
-       "ladder-spell": 810.4288751075192,
-       "raid": 888.4762182564233,
-       "curve60": 484.986629993077,
-       "curve120": 458.63062029160085,
-       "curve180": 450.83738202048244,
-       "curve240": 425.004574297816,
-       "curve360": 398.57965989390743,
-       "max": 888.4762182564233,
-       "max60": 882.640159787108
+       "dummy": 349.09491971868624,
+       "dummy60": 374.61358407452457,
+       "ladder-mana": 421.19958947808107,
+       "ladder-armor": 458.30191548160127,
+       "ladder-physical": 576.1128246260898,
+       "ladder-spell": 662.3070668998137,
+       "raid": 696.1316877001367,
+       "curve60": 418.61650125283995,
+       "curve120": 361.6981457119351,
+       "curve180": 347.03414086817963,
+       "curve240": 325.1733981469804,
+       "curve360": 312.8042593020374,
+       "max": 696.1316877001367,
+       "max60": 716.7116158936282
       },
-      "sim preset: P4/P5 Ret": {
-       "dummy": 472.0619537770538,
-       "dummy60": 530.9613202216923,
-       "ladder-mana": 488.14623581522767,
-       "ladder-armor": 529.5150145436431,
-       "ladder-physical": 663.2352903619883,
-       "ladder-spell": 784.4844084413731,
-       "raid": 860.7841628041332,
-       "curve60": 471.11705018225393,
-       "curve120": 451.94760469703897,
-       "curve180": 443.70886811606437,
-       "curve240": 431.372284787464,
-       "curve360": 409.9193312057506,
-       "max": 860.7841628041332,
-       "max60": 850.7268341690954
+      "sim preset: Holy Shock": {
+       "dummy": 260.16062428011077,
+       "dummy60": 284.01926831029175,
+       "ladder-mana": 301.35087214575174,
+       "ladder-armor": 336.41265673097985,
+       "ladder-physical": 408.1267433913055,
+       "ladder-spell": 463.59415325434566,
+       "raid": 711.5527557482055,
+       "curve60": 286.1407880407524,
+       "curve120": 276.62128861765154,
+       "curve180": 257.64573247644796,
+       "curve240": 252.73567031023697,
+       "curve360": 243.31975435126046,
+       "max": 711.5527557482055,
+       "max60": 720.4250033816917
       },
-      "sim preset: Retribution 9/0/42": {
-       "dummy": 459.87324232035013,
-       "dummy60": 521.1716138418702,
-       "ladder-mana": 479.8339529940368,
-       "ladder-armor": 521.3145247542665,
-       "ladder-physical": 656.6598130961848,
-       "ladder-spell": 777.1105140539712,
-       "raid": 854.4138090224146,
-       "curve60": 466.6362867881166,
-       "curve120": 441.7792873313363,
-       "curve180": 434.58295824028534,
-       "curve240": 410.0071976652197,
-       "curve360": 384.86608360141287,
-       "max": 854.4138090224146,
-       "max60": 844.2050097393882
+      "sim preset: Twist of Light": {
+       "dummy": 382.90325485178175,
+       "dummy60": 413.3297836751598,
+       "ladder-mana": 423.15927861439644,
+       "ladder-armor": 463.98091360208747,
+       "ladder-physical": 602.3005742167551,
+       "ladder-spell": 698.2315861030611,
+       "raid": 784.5451732802968,
+       "curve60": 406.98304989730116,
+       "curve120": 391.4530908695388,
+       "curve180": 379.59748830488434,
+       "curve240": 374.1531806194687,
+       "curve360": 365.7857732215665,
+       "max": 784.5451732802968,
+       "max60": 805.3294165090452
       }
      }
     },
@@ -4739,25 +4751,45 @@
      "rounds": [
       {
        "round": 1,
+       "new_build": true,
+       "quick_race": {
+        "opt-prot-tank-raid-tank": 1.0,
+        "cand-prot-tank-preset-default": 0.985,
+        "cand-prot-tank-r10": 0.982,
+        "cand-prot-tank-hand-2026-09-26": 0.926,
+        "cand-prot-tank-r3": 0.919,
+        "cand-prot-tank-r2": 0.917,
+        "cand-prot-tank-r4": 0.908,
+        "cand-prot-tank-r9": 0.907,
+        "cand-prot-tank-r8": 0.904,
+        "cand-prot-tank-hand-2026-09-28": 0.902,
+        "cand-prot-tank-r1": 0.902,
+        "cand-prot-tank-r7": 0.892,
+        "cand-prot-tank-r6": 0.889,
+        "cand-prot-tank-r5": 0.888
+       }
+      },
+      {
+       "round": 2,
        "new_build": false
       }
      ],
      "top": [
       [
        "opt-prot-tank-raid-tank",
-       1.013
+       1.041
       ],
       [
-       "cand-prot-tank-r10",
-       1.013
+       "cand-prot-tank-r11",
+       1.041
       ],
       [
-       "prot-tank",
-       1.0
+       "protection-ml-tank",
+       1.04
       ],
       [
-       "cand-prot-tank-r9",
-       0.979
+       "sim preset: Default",
+       1.024
       ]
      ],
      "promoted": null,
@@ -4765,45 +4797,280 @@
      "environments": null
     }
    },
-   "seconds": 389,
+   "seconds": 962,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build leveling-retribution --compare F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-hand-2026-09-26.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r1.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r2.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r3.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r4.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r5.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r6.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r7.json F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r8.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec ret-dps --preset-candidates",
      "rc": 0,
-     "seconds": 138,
+     "seconds": 0,
      "tail": [
-      "   vs cand-ret-r8: time/kill 30.8s (+3.6%), fight 16.8s, deaths/100 0.0",
-      "L60: fight 20.0s (median 18.9, p90 26.1), downtime 5.1s, deaths/100 0.0, time/kill 33.1s, 109 kills/h, mana/kill 323, shares Melee 36%, Judgement 20%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 13%",
-      "   vs cand-ret-hand-2026-09-26: time/kill 33.2s (+0.5%), fight 19.2s, deaths/100 0.0",
-      "   vs cand-ret-r1: time/kill 35.2s (+6.6%), fight 22.2s, deaths/100 0.0",
-      "   vs cand-ret-r2: time/kill 35.3s (+6.7%), fight 22.3s, deaths/100 0.0",
-      "   vs cand-ret-r3: time/kill 35.1s (+6.0%), fight 22.0s, deaths/100 0.0",
-      "   vs cand-ret-r4: time/kill 34.6s (+4.6%), fight 21.6s, deaths/100 0.0",
-      "   vs cand-ret-r5: time/kill 33.9s (+2.7%), fight 20.8s, deaths/100 0.0",
-      "   vs cand-ret-r6: time/kill 33.1s (-0.0%), fight 20.1s, deaths/100 0.0",
-      "   vs cand-ret-r7: time/kill 32.9s (-0.5%), fight 19.9s, deaths/100 0.0",
-      "   vs cand-ret-r8: time/kill 33.2s (+0.5%), fight 19.9s, deaths/100 0.0",
-      "done in 137s"
+      "paladin ret-dps: cand-ret-dps-preset-twist-of-light.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build opt-ret-dps-leveling-st --compare leveling-retribution --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py paladin --spec ret-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 251,
+     "seconds": 120,
      "tail": [
-      "   Instrument of Law        2  sim   +1.5% (fight   +2.6% +-0.4)  EV   +2.9%",
-      "   Pursuit of Justice       2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.7%",
-      "   Repentance               1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
-      "   Reverence                2  sim   +1.0% (fight   +0.2% +-0.4)  EV   +0.3%",
-      "   Sacred Arbiter           1  sim   +1.5% (fight   +2.5% +-0.4)  EV   +2.1%",
-      "   Sanctified Judgement     3  sim   +7.1% (fight   +0.8% +-0.6)  EV   +3.5%",
-      "   Seal of Command          1  sim   +1.3% (fight   +2.7% +-0.5)  EV   +6.3%",
-      "   Two-Handed Weapon Specialization 3  sim   +0.6% (fight   +1.1% +-0.5)  EV   +2.5%",
-      "   Vengeance                3  sim   +2.9% (fight   +4.1% +-0.4)  EV   +3.8%",
-      "   Vindication              3  sim   +0.5% (fight   +0.8% +-0.4)  EV   +1.2%",
-      "done in 250s",
-      "wrote F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\ret-dps.md"
+      "Instrument of Law               1.7%      3.4%     1.7%   0.52  fitted",
+      "Divine Strength                 1.2%      0.5%     0.5%   1.00    kept",
+      "Precision                       0.5%      3.6%     0.5%   0.14  fitted",
+      "Vindication                     0.5%      0.3%     0.3%   1.00   noise",
+      "Toughness                       0.0%      0.0%     0.0%   1.00   noise",
+      "Voice of Truth                  0.0%      0.0%     0.0%   1.00   noise",
+      "Pursuit of Justice              0.0%      0.0%     0.0%   1.00   noise",
+      "Redoubt                         0.0%      0.0%     0.0%   1.00   noise",
+      "Illumination                    0.0%      0.0%     0.0%   1.00   noise",
+      "Divine Intellect               -0.0%      1.6%     0.0%   0.00  fitted",
+      "Divine Favor                   -2.0%      0.0%     0.0%   1.00    kept",
+      "wrote _reference\\data\\scorer\\effects\\forever\\paladin.manual.json (18 entries, 11 fitted) and paladin\\research\\raid\\raidsim\\ret-dps-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py paladin --spec ret-dps --profile raid-dps --write --export --seed ret-raid-dps ret-full-buffs-raid retribution-ml-raid F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-twist-of-light.json",
+     "rc": 0,
+     "seconds": 53,
+     "tail": [
+      "| Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |",
+      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
+      "| Iron Creed | Protection 6 | 1/5 | +0.00% | no |",
+      "| Holy Shield | Protection 7 | 1/1 | +0.00% | no |",
+      "| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |",
+      "| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |",
+      "| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |",
+      "| Toughness | Protection 1 | 1/5 | +0.00% | yes |",
+      "",
+      "exported opt-ret-dps-raid-dps -> paladin\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote paladin\\research\\raid\\optimizer\\ret-dps-raid-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec ret-dps --builds opt-ret-dps-raid-dps F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-hand-2026-09-27.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-twist-of-light.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r1.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r2.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r3.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r4.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r5.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r6.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r7.json --iterations 1000 --no-presets",
+     "rc": 0,
+     "seconds": 4,
+     "tail": [
+      "== paladin ret-dps: 10 builds x 1000 iterations, paladin/retribution paladin-retribution-default.p1opt.gear.json + default.apl.json",
+      "  cand-ret-dps-preset-twist-of-light            16/35  DPS    382.8 ±  17.8  threat      471  oom  21.1s  scorer +138.5%",
+      "  cand-ret-dps-r4                             17/0/34  DPS    382.8 ±  17.8  threat      471  oom  21.1s  scorer +138.5%",
+      "  cand-ret-dps-r6                             19/0/32  DPS    380.4 ±  17.6  threat      468  oom  21.1s  scorer +137.6%",
+      "  cand-ret-dps-r1                             17/0/34  DPS    375.8 ±  19.3  threat      463  oom  28.2s  scorer +138.5%",
+      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    368.0 ±  17.7  threat      453  oom  30.6s  scorer +130.7%",
+      "  cand-ret-dps-r3                              9/8/34  DPS    367.8 ±  18.1  threat      453  oom  31.7s  scorer +131.0%",
+      "  cand-ret-dps-r5                              9/8/34  DPS    367.8 ±  18.1  threat      453  oom  31.7s  scorer +131.0%",
+      "  cand-ret-dps-r7                             12/8/31  DPS    363.9 ±  17.9  threat      449  oom  30.2s  scorer +131.8%",
+      "  cand-ret-dps-r2                             11/8/32  DPS    352.7 ±  18.2  threat      437  oom  36.6s  scorer +127.2%",
+      "  opt-ret-dps-raid-dps                        24/0/27  DPS    349.1 ±  18.2  threat      401  oom  74.5s  scorer +139.4%",
+      "  damage shares of opt-ret-dps-raid-dps: Auto Attack 25%, Holy Strike 16%, Consecration 11%, Holy Shock 11%, Judgement of Righteousness 9%, Seal of Righteousness 8%, Judgement of Command 6%, Seal of Command 6% | model sources: white 30%, holy_strike 19%, judgement 18%, seal 17%, consecration 13%, hammer_of_wrath 4% (unmatched 14%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec ret-dps --builds ret-raid-dps ret-full-buffs-raid opt-ret-dps-raid-dps retribution-ml-raid F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-hand-2026-09-27.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-twist-of-light.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r1.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r2.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r3.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r4.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r5.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r6.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r7.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r8.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 17,
+     "tail": [
+      "  ret-full-buffs-raid                         10/8/33  DPS    368.3 ±  18.2  threat      454  oom  30.8s  scorer +130.7%",
+      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    368.3 ±  18.2  threat      454  oom  30.8s  scorer +130.7%",
+      "  cand-ret-dps-r3                              9/8/34  DPS    368.0 ±  18.4  threat      453  oom  31.8s  scorer +131.0%",
+      "  cand-ret-dps-r5                              9/8/34  DPS    368.0 ±  18.4  threat      453  oom  31.8s  scorer +131.0%",
+      "  retribution-ml-raid                         11/8/32  DPS    366.4 ±  18.3  threat      452  oom  32.8s  scorer +132.6%",
+      "  cand-ret-dps-r7                             12/8/31  DPS    364.0 ±  17.8  threat      449  oom  30.2s  scorer +131.8%",
+      "  cand-ret-dps-r2                             11/8/32  DPS    352.3 ±  18.1  threat      437  oom  37.0s  scorer +127.2%",
+      "  opt-ret-dps-raid-dps                        24/0/27  DPS    349.1 ±  18.2  threat      401  oom  74.4s  scorer +139.4%",
+      "  cand-ret-dps-r8                             24/0/27  DPS    349.1 ±  18.2  threat      401  oom  74.4s  scorer +139.4%",
+      "  sim preset: Holy Shock                               DPS    260.2 ±  11.6  threat      273  oom  59.9s",
+      "  damage shares of ret-raid-dps: Auto Attack 25%, Holy Strike 15%, Judgement of Righteousness 15%, Seal of Righteousness 14%, Consecration 14%, Seal of Command 7%, Judgement of Command 4%, Hammer of Wrath 3% | model sources: white 26%, seal 22%, judgement 19%, holy_strike 16%, consecration 14%, hammer_of_wrath 3% (unmatched 3%)",
+      "wrote paladin\\research\\raid\\raidsim\\ret-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec ret-dps --builds ret-raid-dps ret-full-buffs-raid opt-ret-dps-raid-dps retribution-ml-raid F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-hand-2026-09-27.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-twist-of-light.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r1.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r2.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r3.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r4.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r5.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r6.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r7.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r8.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 15,
+     "tail": [
+      "  cand-ret-dps-r1                             17/0/34  DPS    375.5 ±  18.7  threat      462  oom  28.6s  scorer +138.5%",
+      "  ret-full-buffs-raid                         10/8/33  DPS    368.3 ±  18.2  threat      454  oom  30.8s  scorer +130.7%",
+      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    368.3 ±  18.2  threat      454  oom  30.8s  scorer +130.7%",
+      "  cand-ret-dps-r3                              9/8/34  DPS    368.0 ±  18.4  threat      453  oom  31.8s  scorer +131.0%",
+      "  cand-ret-dps-r5                              9/8/34  DPS    368.0 ±  18.4  threat      453  oom  31.8s  scorer +131.0%",
+      "  retribution-ml-raid                         11/8/32  DPS    366.4 ±  18.3  threat      452  oom  32.8s  scorer +132.6%",
+      "  cand-ret-dps-r7                             12/8/31  DPS    364.0 ±  17.8  threat      449  oom  30.2s  scorer +131.8%",
+      "  cand-ret-dps-r2                             11/8/32  DPS    352.3 ±  18.1  threat      437  oom  37.0s  scorer +127.2%",
+      "  cand-ret-dps-r8                             24/0/27  DPS    349.1 ±  18.2  threat      401  oom  74.4s  scorer +139.4%",
+      "  sim preset: Holy Shock                               DPS    260.2 ±  11.6  threat      273  oom  59.9s",
+      "  damage shares of ret-raid-dps: Auto Attack 25%, Holy Strike 15%, Judgement of Righteousness 15%, Seal of Righteousness 14%, Consecration 14%, Seal of Command 7%, Judgement of Command 4%, Hammer of Wrath 3% | model sources: white 26%, seal 22%, judgement 19%, holy_strike 16%, consecration 14%, hammer_of_wrath 3% (unmatched 3%)",
+      "wrote paladin\\research\\raid\\raidsim\\ret-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py paladin --spec ret-dps --profile parse --write --export --seed ret-raid-dps ret-full-buffs-raid retribution-ml-raid",
+     "rc": 0,
+     "seconds": 50,
+     "tail": [
+      "| Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |",
+      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
+      "| Iron Creed | Protection 6 | 1/5 | +0.00% | no |",
+      "| Holy Shield | Protection 7 | 1/1 | +0.00% | no |",
+      "| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |",
+      "| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |",
+      "| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |",
+      "| Toughness | Protection 1 | 1/5 | +0.00% | yes |",
+      "",
+      "exported opt-ret-dps-parse -> paladin\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote paladin\\research\\raid\\optimizer\\ret-dps-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec ret-dps --env environments --builds ret-raid-dps ret-full-buffs-raid opt-ret-dps-raid-dps retribution-ml-raid opt-ret-dps-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 126,
+     "tail": [
+      "== paladin ret-dps environments (gear raid paladin-retribution-default.p1opt.gear.json, max paladin-retribution-default.p1opt.gear.json):",
+      "  opt-ret-dps-raid-dps                        17/0/34  dummy   382.9  dummy60   413.3  ladder-mana   423.2  ladder-armor   464.0  ladder-physical   602.3  ladder-spell   698.2  raid   784.5  curve60   407.0  curve120   391.5  curve180   379.6  curve240   374.2  curve360   365.8  max   784.5  max60   805.3",
+      "  sim preset: Twist of Light                           dummy   382.9  dummy60   413.3  ladder-mana   423.2  ladder-armor   464.0  ladder-physical   602.3  ladder-spell   698.2  raid   784.5  curve60   407.0  curve120   391.5  curve180   379.6  curve240   374.2  curve360   365.8  max   784.5  max60   805.3",
+      "  ret-raid-dps                                17/0/34  dummy   375.5  dummy60   408.5  ladder-mana   423.1  ladder-armor   464.1  ladder-physical   601.6  ladder-spell   697.9  raid   784.4  curve60   407.5  curve120   392.7  curve180   375.2  curve240   371.1  curve360   362.6  max   784.4  max60   805.0",
+      "  ret-full-buffs-raid                         10/8/33  dummy   368.3  dummy60   399.9  ladder-mana   421.9  ladder-armor   462.6  ladder-physical   598.1  ladder-spell   692.9  raid   777.7  curve60   403.4  curve120   388.1  curve180   368.9  curve240   363.0  curve360   351.2  max   777.7  max60   804.1",
+      "  retribution-ml-raid                         11/8/32  dummy   366.4  dummy60   396.9  ladder-mana   419.5  ladder-armor   459.1  ladder-physical   592.1  ladder-spell   687.2  raid   770.4  curve60   404.7  curve120   388.1  curve180   366.5  curve240   363.6  curve360   352.8  max   770.4  max60   794.7",
+      "  opt-ret-dps-parse                           24/0/27  dummy   349.1  dummy60   374.6  ladder-mana   421.2  ladder-armor   458.3  ladder-physical   576.1  ladder-spell   662.3  raid   696.1  curve60   418.6  curve120   361.7  curve180   347.0  curve240   325.2  curve360   312.8  max   696.1  max60   716.7",
+      "  sim preset: Holy Shock                               dummy   260.2  dummy60   284.0  ladder-mana   301.4  ladder-armor   336.4  ladder-physical   408.1  ladder-spell   463.6  raid   711.6  curve60   286.1  curve120   276.6  curve180   257.6  curve240   252.7  curve360   243.3  max   711.6  max60   720.4",
+      "wrote paladin\\research\\raid\\raidsim\\ret-dps-environments.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec prot-tank --preset-candidates",
+     "rc": 0,
+     "seconds": 0,
+     "tail": [
+      "paladin prot-tank: cand-prot-tank-preset-default.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py paladin --spec prot-tank --iterations 1500 --write",
+     "rc": 0,
+     "seconds": 217,
+     "tail": [
+      "Vindication                     0.4%      2.6%     0.4%   0.15  fitted",
+      "Divine Intellect                0.4%      0.1%     0.1%   1.00   noise",
+      "Eye for an Eye                  0.3%      0.0%     0.0%   1.00   noise",
+      "Benediction                     0.2%      0.0%     0.0%   1.00   noise",
+      "Sacred Duty                     0.1%      0.0%     0.0%   1.00   noise",
+      "Guardian's Favor                0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Seal of Fury           0.0%      0.2%     0.2%   1.00   noise",
+      "Swift Judgement                 0.0%      1.0%     0.0%   0.00  fitted",
+      "Purifying Power                 0.0%      0.0%     0.0%   1.00   noise",
+      "Voice of Truth                  0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Hammer of Justice      0.0%      0.1%     0.1%   1.00   noise",
+      "wrote _reference\\data\\scorer\\effects\\forever\\paladin.manual.json (21 entries, 5 fitted) and paladin\\research\\raid\\raidsim\\prot-tank-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py paladin --spec prot-tank --profile raid-tank --write --export --seed prot-tank protection-ml-tank F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-default.json",
+     "rc": 0,
+     "seconds": 44,
+     "tail": [
+      "| Reverence | Holy 3 | 1/3 | +0.40% | no |",
+      "| Holy Power | Holy 6 | 1/5 | +0.34% | no |",
+      "| Instrument of Law | Retribution 6 | 1/2 | +0.29% | no |",
+      "| Improved Hammer of Justice | Protection 4 | 1/3 | +0.20% | yes |",
+      "| Vindication | Retribution 3 | 1/3 | +0.19% | yes |",
+      "| Divine Strength | Holy 1 | 1/5 | +0.19% | yes |",
+      "| Reckoning | Protection 5 | 1/5 | +0.19% | yes |",
+      "| Unyielding Faith | Holy 2 | 1/2 | +0.05% | no |",
+      "",
+      "exported opt-prot-tank-raid-tank -> paladin\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote paladin\\research\\raid\\optimizer\\prot-tank-raid-tank.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec prot-tank --builds opt-prot-tank-raid-tank F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-26.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-28.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-default.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r1.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r10.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r2.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r3.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r4.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r5.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r6.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r7.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r8.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r9.json --iterations 1000 --no-presets",
+     "rc": 0,
+     "seconds": 5,
+     "tail": [
+      "  cand-prot-tank-hand-2026-09-26              13/38/0  DPS    391.9 ±  17.8  threat      709  oom  77.8s  dtps   339.2  tank-value  0.926  scorer +45.9%",
+      "  cand-prot-tank-r3                           0/23/28  DPS    426.5 ±  17.2  threat      728  oom   1.8s  dtps   354.8  tank-value  0.919  scorer +39.6%",
+      "  cand-prot-tank-r2                           0/23/28  DPS    428.3 ±  17.5  threat      731  oom   1.8s  dtps   357.7  tank-value  0.917  scorer +39.2%",
+      "  cand-prot-tank-r4                           0/23/28  DPS    428.2 ±  17.0  threat      732  oom   1.8s  dtps   365.1  tank-value  0.908  scorer +36.8%",
+      "  cand-prot-tank-r9                           0/23/28  DPS    427.6 ±  16.9  threat      731  oom   2.0s  dtps   366.3  tank-value  0.907  scorer +39.3%",
+      "  cand-prot-tank-r8                           0/23/28  DPS    425.7 ±  17.3  threat      726  oom   1.5s  dtps   366.3  tank-value  0.904  scorer +39.3%",
+      "  cand-prot-tank-hand-2026-09-28              8/15/28  DPS    418.6 ±  16.7  threat      724  oom   1.9s  dtps   366.1  tank-value  0.902  scorer +35.9%",
+      "  cand-prot-tank-r1                           8/15/28  DPS    418.6 ±  16.7  threat      724  oom   1.9s  dtps   366.1  tank-value  0.902  scorer +35.9%",
+      "  cand-prot-tank-r7                           0/23/28  DPS    426.2 ±  16.8  threat      728  oom   1.2s  dtps   377.4  tank-value  0.892  scorer +37.7%",
+      "  cand-prot-tank-r6                           0/23/28  DPS    422.6 ±  16.8  threat      722  oom  10.0s  dtps   377.1  tank-value  0.889  scorer +35.9%",
+      "  cand-prot-tank-r5                           0/23/28  DPS    423.4 ±  17.6  threat      724  oom   7.9s  dtps   379.2  tank-value  0.888  scorer +36.7%",
+      "  damage shares of opt-prot-tank-raid-tank: Auto Attack 22%, Seal of Righteousness 16%, Holy Strike 13%, Holy Shield 13%, Consecration 12%, Judgement of Righteousness 11%, Lay on Hands 5%, Judgement of Light 4% | model sources: seal 38%, white 28%, holy_strike 16%, consecration 16%, ret_aura 2% (unmatched 22%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py paladin --spec prot-tank --iterations 1500 --write",
+     "rc": 0,
+     "seconds": 239,
+     "tail": [
+      "Vindication                     0.4%      0.4%     0.4%   1.00   noise",
+      "Divine Intellect                0.4%      0.1%     0.1%   1.00   noise",
+      "Eye for an Eye                  0.3%      0.0%     0.0%   1.00   noise",
+      "Benediction                     0.2%      0.0%     0.0%   1.00   noise",
+      "Sacred Duty                     0.1%      0.0%     0.0%   1.00   noise",
+      "Guardian's Favor                0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Seal of Fury           0.0%      0.2%     0.2%   1.00   noise",
+      "Swift Judgement                 0.0%      0.0%     0.0%   1.00   noise",
+      "Purifying Power                 0.0%      0.0%     0.0%   1.00   noise",
+      "Voice of Truth                  0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Hammer of Justice      0.0%      0.1%     0.1%   1.00   noise",
+      "wrote _reference\\data\\scorer\\effects\\forever\\paladin.manual.json (19 entries, 0 fitted) and paladin\\research\\raid\\raidsim\\prot-tank-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py paladin --spec prot-tank --profile raid-tank --write --export --seed prot-tank protection-ml-tank F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-default.json",
+     "rc": 0,
+     "seconds": 47,
+     "tail": [
+      "| Reverence | Holy 3 | 1/3 | +0.40% | no |",
+      "| Holy Power | Holy 6 | 1/5 | +0.34% | no |",
+      "| Instrument of Law | Retribution 6 | 1/2 | +0.29% | no |",
+      "| Improved Hammer of Justice | Protection 4 | 1/3 | +0.20% | yes |",
+      "| Vindication | Retribution 3 | 1/3 | +0.19% | yes |",
+      "| Divine Strength | Holy 1 | 1/5 | +0.19% | yes |",
+      "| Reckoning | Protection 5 | 1/5 | +0.19% | yes |",
+      "| Unyielding Faith | Holy 2 | 1/2 | +0.05% | no |",
+      "",
+      "exported opt-prot-tank-raid-tank -> paladin\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote paladin\\research\\raid\\optimizer\\prot-tank-raid-tank.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py paladin --spec prot-tank --builds prot-tank opt-prot-tank-raid-tank protection-ml-tank F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-26.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-28.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-default.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r1.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r10.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r11.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r2.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r3.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r4.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r5.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r6.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r7.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r8.json F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 24,
+     "tail": [
+      "  cand-prot-tank-r3                           0/23/28  DPS    426.8 ±  17.3  threat      728  oom   1.8s  dtps   353.5  tank-value  0.958  scorer +39.6%",
+      "  cand-prot-tank-r2                           0/23/28  DPS    428.4 ±  17.4  threat      731  oom   1.8s  dtps   356.9  tank-value  0.955  scorer +39.2%",
+      "  cand-prot-tank-r4                           0/23/28  DPS    428.9 ±  17.4  threat      732  oom   1.8s  dtps   364.1  tank-value  0.947  scorer +36.8%",
+      "  cand-prot-tank-r9                           0/23/28  DPS    428.2 ±  17.1  threat      731  oom   2.0s  dtps   366.2  tank-value  0.944  scorer +39.3%",
+      "  cand-prot-tank-r8                           0/23/28  DPS    425.7 ±  17.5  threat      726  oom   1.6s  dtps   366.2  tank-value  0.940  scorer +39.3%",
+      "  cand-prot-tank-hand-2026-09-28              8/15/28  DPS    418.4 ±  16.7  threat      723  oom   1.9s  dtps   366.6  tank-value  0.937  scorer +35.9%",
+      "  cand-prot-tank-r1                           8/15/28  DPS    418.4 ±  16.7  threat      723  oom   1.9s  dtps   366.6  tank-value  0.937  scorer +35.9%",
+      "  cand-prot-tank-r7                           0/23/28  DPS    426.0 ±  16.9  threat      728  oom   1.3s  dtps   377.2  tank-value  0.928  scorer +37.7%",
+      "  cand-prot-tank-r6                           0/23/28  DPS    423.0 ±  17.0  threat      723  oom  10.1s  dtps   377.8  tank-value  0.924  scorer +35.9%",
+      "  cand-prot-tank-r5                           0/23/28  DPS    423.8 ±  17.2  threat      725  oom   7.9s  dtps   380.3  tank-value  0.922  scorer +36.7%",
+      "  damage shares of prot-tank: Auto Attack 23%, Seal of Righteousness 16%, Judgement of Righteousness 13%, Holy Shield 12%, Holy Strike 11%, Consecration 10%, Lay on Hands 5%, Judgement of Light 4% | model sources: seal 42%, white 29%, holy_strike 14%, consecration 13%, ret_aura 2% (unmatched 22%)",
+      "wrote paladin\\research\\raid\\raidsim\\prot-tank.md"
      ],
      "stderr": []
     }
@@ -6865,20 +7132,12 @@
   }
  },
  "last_run": {
-  "date": "2026-10-26T16:22:43",
+  "date": "2026-10-26T23:41:55",
   "classes": [
-   "mage",
-   "priest",
-   "warlock",
-   "hunter",
-   "warrior",
-   "rogue",
-   "paladin",
-   "shaman",
-   "druid"
+   "paladin"
   ],
   "steps": [
-   "regen"
+   "raid"
   ],
   "fights": {
    "calibrate": 1500,
@@ -6886,501 +7145,8 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 1910,
+  "seconds": 962,
   "refresh": null,
-  "regen_log": [
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote F:\\wow-forever\\warrior\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\paladin\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\hunter\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\rogue\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\priest\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\warlock\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\druid\\research\\talents\\forever\\talent-trees.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 6,
-    "tail": [
-     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\druid\\research\\talents\\forever\\proposed-builds.json",
-     "mage: README section + leveling-frost note written",
-     "priest: README section + leveling-shadow note written",
-     "warlock: README section + leveling-affliction note written",
-     "hunter: README section + leveling-beast-mastery note written",
-     "warrior: README section + leveling-arms note written",
-     "rogue: README section + leveling-combat-swords note written",
-     "paladin: README section + leveling-retribution note written",
-     "shaman: README section + leveling-enhancement note written",
-     "druid: README section + leveling-feral note written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 2,
-    "tail": [
-     "druid: raid sim section written (3 specs)",
-     "hunter: raid sim section written (4 specs)",
-     "mage: raid sim section written (4 specs)",
-     "paladin: raid sim section written (2 specs)",
-     "priest: raid sim section written (2 specs)",
-     "rogue: raid sim section written (4 specs)",
-     "shaman: raid sim section written (3 specs)",
-     "warlock: raid sim section written (5 specs)",
-     "warrior: raid sim section written (4 specs)",
-     "wrote _reference\\raidsim-summary.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 2,
-    "tail": [
-     "druid: healer lab section written (1 specs)",
-     "paladin: healer lab section written (1 specs)",
-     "priest: healer lab section written (1 specs)",
-     "shaman: healer lab section written (1 specs)",
-     "wrote _reference\\heallab-summary.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 3,
-    "tail": [
-     "mage: leveling/guide.md written (arcane-frost-open-leveling)",
-     "priest: leveling/guide.md written (shadow-open-leveling)",
-     "warlock: leveling/guide.md written (affliction-demonology-open-leveling)",
-     "hunter: leveling/guide.md written (beast-survival-open-leveling)",
-     "warrior: leveling/guide.md written (fury-open-leveling)",
-     "rogue: leveling/guide.md written (combat-subtlety-open-leveling)",
-     "paladin: leveling/guide.md written (retribution-open-leveling)",
-     "shaman: leveling/guide.md written (enhancement-open-leveling)",
-     "druid: leveling/guide.md written (opt-feral-cat-dps-solo-60)"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 2,
-    "tail": [
-     "mage: raid gear and consumables written",
-     "priest: raid gear and consumables written",
-     "warlock: raid gear and consumables written",
-     "hunter: raid gear and consumables written",
-     "warrior: raid gear and consumables written",
-     "rogue: raid gear and consumables written",
-     "paladin: raid gear and consumables written",
-     "shaman: raid gear and consumables written",
-     "druid: raid gear and consumables written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 4,
-    "tail": [
-     "mage: raid and leveling rotations, DPS ranking written",
-     "priest: raid and leveling rotations, DPS ranking written",
-     "warlock: raid and leveling rotations, DPS ranking written",
-     "hunter: raid and leveling rotations, DPS ranking written",
-     "warrior: raid and leveling rotations, DPS ranking written",
-     "rogue: raid and leveling rotations, DPS ranking written",
-     "paladin: raid and leveling rotations, DPS ranking written",
-     "shaman: raid and leveling rotations, DPS ranking written",
-     "druid: raid and leveling rotations, DPS ranking written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "  ok   opt-balance-dps-leveling-st (36/2/13)",
-     "  ok   balance-open-leveling (38/0/13)",
-     "  ok   restoration-ml-heal (11/5/35)",
-     "  ok   restoration-leveling (11/5/35)",
-     "  ok   opt-balance-dps-raid-dps (33/5/13)",
-     "  ok   opt-balance-dps-parse (33/5/13)",
-     "  ok   opt-feral-cat-dps-raid-dps (9/31/11)",
-     "  ok   opt-feral-cat-dps-parse (9/31/11)",
-     "  ok   opt-feral-bear-tank-raid-tank (9/42/0)",
-     "  ok   feral-combat-open-raid (9/33/9)",
-     "",
-     "all builds valid"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
-    "rc": 0,
-    "seconds": 7,
-    "tail": [
-     "rogue/classic-baseline: 5 build pages + README.md",
-     "rogue: 28 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "priest/classic-baseline: 4 build pages + README.md",
-     "priest: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "shaman/classic-baseline: 5 build pages + README.md",
-     "shaman: 25 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "mage/classic-baseline: 7 build pages + README.md",
-     "mage: 33 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "warlock/classic-baseline: 4 build pages + README.md",
-     "warlock: 30 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "druid/classic-baseline: 7 build pages + README.md",
-     "druid: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "wrote _reference\\new-builds-survey.md",
-     "wrote the New spells and builds section of 9 raid READMEs"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage priest warlock hunter warrior rogue paladin shaman druid --write --no-default",
-    "rc": 0,
-    "seconds": 166,
-    "tail": [
-     "  Balance [slot: opt-balance-dps-leveling-st 36/2/13] balance-dps (tuned): casts/kill at 60 {'Starfire': 4.64, 'Moonfire': 1.56}, core 96% (min 70%), 44.4 s/kill; rules: -; OK",
-     "      shares at 60: {'Starfire': 0.652, 'Moonfire': 0.215, 'Wrath': 0.096, 'Thorns': 0.037, 'Entangling Roots': 0.0}",
-     "  Feral Combat [page: opt-feral-cat-dps-solo-60 9/31/11] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.23, 'Ferocious Bite': 0.89}, core 82% (min 80%), 28.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.306, 'Claw': 0.176, 'Ferocious Bite': 0.146, 'Ravage': 0.141, 'Rip': 0.116, 'Rake': 0.075}",
-     "  Feral Combat [slot: opt-feral-cat-dps-leveling-st 9/31/11] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.23, 'Ferocious Bite': 0.89}, core 82% (min 80%), 28.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.306, 'Claw': 0.176, 'Ferocious Bite': 0.146, 'Ravage': 0.141, 'Rip': 0.116, 'Rake': 0.075}",
-     "  Feral Combat [slot: leveling-feral 9/31/11] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.72, 'Ferocious Bite': 1.06}, core 82% (min 80%), 29.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.331, 'Claw': 0.194, 'Ferocious Bite': 0.174, 'Ravage': 0.141, 'Rake': 0.082, 'Thorns': 0.043}",
-     "  Restoration [page: restoration-leveling 11/5/35] feral-cat-dps (tuned): casts/kill at 60 {}, core - (min -), 34.7 s/kill; rules: -; no rule",
-     "      shares at 60: {'Melee': 0.377, 'Claw': 0.146, 'Ferocious Bite': 0.13, 'Ravage': 0.1, 'Rip': 0.092, 'Rake': 0.092}",
-     "wrote _reference\\signature-audit.md",
-     "wrote _reference\\data\\fightlab\\signature-audit.json"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
-    "rc": 0,
-    "seconds": 6,
-    "tail": [
-     "druid: README.md sections and 3 mode folders written",
-     "hunter: README.md sections and 3 mode folders written",
-     "mage: README.md sections and 3 mode folders written",
-     "paladin: README.md sections and 3 mode folders written",
-     "priest: README.md sections and 3 mode folders written",
-     "rogue: README.md sections and 3 mode folders written",
-     "shaman: README.md sections and 3 mode folders written",
-     "warlock: README.md sections and 3 mode folders written",
-     "warrior: README.md sections and 3 mode folders written",
-     "wrote README.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_tier_list.py",
-    "rc": 0,
-    "seconds": 3,
-    "tail": [
-     "wrote tier-list.md: 25 damage specs, 5 healers, 3 tanks"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
-    "rc": 0,
-    "seconds": 346,
-    "tail": [
-     "| fire-leveling -> level-20 build (0/0/11) | +1.4% | +4.4% | +43.3% | +49.4% | +54.4% | +58.2% | +62.0% | +63.0% | +65.2% | +67.7% | +68.9% |",
-     "| fire-leveling -> level-30 build (0/10/11) | +4.4% | +13.1% | +23.9% | +26.2% | +56.1% | +58.2% | +62.0% | +63.0% | +65.2% | +67.7% | +68.9% |",
-     "| fire-leveling -> level-40 build (2/18/11) | +4.4% | +14.4% | +20.6% | +28.1% | +35.0% | +36.4% | +62.0% | +62.7% | +64.9% | +67.7% | +68.9% |",
-     "| fire-leveling -> level-50 build (2/28/11) | +4.4% | +14.5% | +24.8% | +26.4% | +32.8% | +35.6% | +40.3% | +42.1% | +65.2% | +65.7% | +68.2% |",
-     "| fire-leveling -> level-60 build (2/33/16) | +4.4% | +14.5% | +24.8% | +26.4% | +32.8% | +35.6% | +40.3% | +42.6% | +46.6% | +67.7% | +68.9% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py priest --write",
-    "rc": 0,
-    "seconds": 155,
-    "tail": [
-     "| shadow-dps -> level-20 build (11/0/0) | +0.6% | +2.8% | +29.5% | +36.0% | +36.7% | +34.8% | +36.4% | +36.9% | +38.9% | +52.3% | +53.3% |",
-     "| shadow-dps -> level-30 build (17/0/4) | +0.6% | +2.8% | +29.0% | +36.1% | +38.6% | +37.2% | +37.8% | +39.4% | +40.0% | +41.5% | +53.5% |",
-     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +2.8% | +4.9% | +22.4% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |",
-     "| shadow-dps -> level-50 build (5/3/33) | -0.1% | +0.4% | +3.7% | +23.5% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |",
-     "| shadow-dps -> level-60 build (16/2/33) | +0.6% | +2.8% | +29.0% | +36.1% | +38.4% | +37.0% | +37.6% | +39.2% | +27.8% | +34.4% | +54.6% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
-    "rc": 0,
-    "seconds": 144,
-    "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |",
-     "| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
-    "rc": 0,
-    "seconds": 71,
-    "tail": [
-     "| bm-leveling -> level-20 build (1/10/0) | +0.8% | +2.0% | +6.6% | +8.8% | +10.9% | +13.5% | +16.2% | +20.9% | +22.5% | +25.2% | +27.0% |",
-     "| bm-leveling -> level-30 build (5/16/0) | +0.8% | +3.2% | +5.0% | +8.8% | +11.7% | +13.1% | +15.7% | +20.9% | +22.5% | +25.2% | +27.0% |",
-     "| bm-leveling -> level-40 build (0/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +21.0% | +22.3% | +25.6% | +27.3% |",
-     "| bm-leveling -> level-50 build (9/32/0) | +0.3% | +2.4% | +6.5% | +9.5% | +10.6% | +13.6% | +19.0% | +20.9% | +22.5% | +25.2% | +27.2% |",
-     "| bm-leveling -> level-60 build (20/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +20.9% | +22.3% | +25.6% | +27.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
-    "rc": 0,
-    "seconds": 169,
-    "tail": [
-     "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.9% | +11.0% | +18.0% | +21.5% | +33.1% | +34.8% | +35.6% | +36.3% | +37.2% |",
-     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.9% | +11.0% | +18.0% | +21.5% | +33.1% | +34.8% | +35.6% | +36.3% | +37.2% |",
-     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.9% | +11.0% | +18.0% | +21.5% | +33.2% | +34.8% | +35.6% | +36.3% | +37.2% |",
-     "| fury-dw-raid -> level-50 build (1/40/0) | +0.6% | +4.1% | +8.9% | +11.0% | +18.0% | +21.5% | +33.1% | +34.8% | +35.7% | +36.3% | +37.2% |",
-     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.9% | +11.0% | +18.0% | +21.5% | +33.1% | +34.8% | +35.4% | +36.1% | +38.1% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py rogue --write",
-    "rc": 0,
-    "seconds": 189,
-    "tail": [
-     "| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.6% | +14.1% | +16.2% | +19.1% | +22.2% | +23.5% | +30.0% | +33.6% | +35.0% | +37.0% |",
-     "| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.0% | +8.8% | +16.6% | +20.8% | +23.3% | +26.5% | +28.0% | +33.7% | +35.0% | +37.0% |",
-     "| combat-daggers-raid -> level-40 build (21/8/2) | +1.6% | +5.5% | +8.5% | +11.6% | +12.5% | +18.5% | +28.1% | +30.0% | +33.7% | +35.0% | +37.0% |",
-     "| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.5% | +11.6% | +12.5% | +18.9% | +22.8% | +30.1% | +33.7% | +34.9% | +36.5% |",
-     "| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.0% | +12.4% | +15.5% | +18.7% | +22.6% | +24.9% | +28.1% | +30.2% | +31.8% | +37.0% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
-    "rc": 0,
-    "seconds": 117,
-    "tail": [
-     "| ret-dps -> level-20 build (0/0/11) | +1.4% | +6.0% | +15.7% | +22.7% | +26.5% | +30.3% | +32.7% | +34.8% | +36.4% | +37.4% | +38.2% |",
-     "| ret-dps -> level-30 build (0/0/21) | +1.4% | +6.0% | +15.5% | +23.1% | +26.5% | +30.3% | +32.7% | +34.8% | +36.4% | +37.4% | +38.2% |",
-     "| ret-dps -> level-40 build (8/0/23) | +1.4% | +6.0% | +15.5% | +23.1% | +26.5% | +29.3% | +32.9% | +34.8% | +36.4% | +37.4% | +38.2% |",
-     "| ret-dps -> level-50 build (8/0/33) | +1.4% | +6.0% | +15.5% | +23.1% | +26.5% | +30.3% | +32.7% | +34.8% | +36.4% | +37.4% | +38.2% |",
-     "| ret-dps -> level-60 build (15/0/36) | +1.4% | +6.0% | +15.5% | +23.1% | +26.5% | +30.3% | +32.7% | +34.8% | +36.4% | +37.4% | +38.2% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
-    "rc": 0,
-    "seconds": 176,
-    "tail": [
-     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.9% | +30.3% | +31.4% | +35.0% | +37.0% | +38.9% |",
-     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.9% | +30.3% | +31.4% | +35.0% | +37.0% | +38.9% |",
-     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.9% | +30.3% | +31.4% | +35.2% | +37.2% | +38.9% |",
-     "| elemental-dps -> level-50 build (22/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.9% | +30.3% | +31.4% | +35.2% | +37.2% | +38.9% |",
-     "| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.9% | +30.3% | +31.4% | +35.0% | +37.0% | +38.9% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
-    "rc": 0,
-    "seconds": 327,
-    "tail": [
-     "| balance-dps -> level-20 build (11/0/0) | +1.4% | +11.5% | +21.0% | +26.3% | +34.7% | +44.5% | +51.1% | +55.8% | +56.1% | +57.1% | +58.6% |",
-     "| balance-dps -> level-30 build (21/0/0) | +1.4% | +11.5% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.9% | +57.0% | +57.9% | +59.5% |",
-     "| balance-dps -> level-40 build (31/0/0) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.1% | +56.9% | +57.0% | +57.9% | +59.5% |",
-     "| balance-dps -> level-50 build (35/6/0) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.7% | +57.5% | +58.6% | +59.5% |",
-     "| balance-dps -> level-60 build (36/2/13) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.9% | +57.0% | +57.9% | +59.5% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "updated hunter/leveling/README.md and hunter/raid/README.md",
-     "updated mage/leveling/README.md and mage/raid/README.md",
-     "updated warrior/leveling/README.md and warrior/raid/README.md",
-     "updated rogue/leveling/README.md and rogue/raid/README.md",
-     "updated priest/leveling/README.md and priest/raid/README.md",
-     "updated paladin/leveling/README.md and paladin/raid/README.md",
-     "updated shaman/leveling/README.md and shaman/raid/README.md",
-     "updated warlock/leveling/README.md and warlock/raid/README.md",
-     "updated druid/leveling/README.md and druid/raid/README.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "druid    buff=9 nerf=17 reworked=0 new=18 removed=13 same=8 unscored=0",
-     "hunter   buff=3 nerf=21 reworked=0 new=18 removed=14 same=8 unscored=0",
-     "mage     buff=9 nerf=16 reworked=3 new=12 removed=6 same=11 unscored=3",
-     "paladin  buff=12 nerf=11 reworked=1 new=19 removed=13 same=6 unscored=1",
-     "priest   buff=12 nerf=13 reworked=1 new=15 removed=10 same=9 unscored=2",
-     "rogue    buff=14 nerf=11 reworked=0 new=10 removed=8 same=18 unscored=0",
-     "shaman   buff=10 nerf=15 reworked=2 new=18 removed=13 same=5 unscored=0",
-     "warlock  buff=6 nerf=18 reworked=1 new=23 removed=20 same=3 unscored=1",
-     "warrior  buff=9 nerf=15 reworked=1 new=13 removed=12 same=14 unscored=0"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
-    "rc": 0,
-    "seconds": 3,
-    "tail": [
-     "druid    flagged 30/99  open 2",
-     "hunter   flagged 21/60  open 5",
-     "mage     flagged 50/100  open 0",
-     "paladin  flagged 29/73  open 2",
-     "priest   flagged 24/58  open 3",
-     "rogue    flagged 22/62  open 4",
-     "shaman   flagged 37/76  open 5",
-     "warlock  flagged 20/67  open 5",
-     "warrior  flagged 21/79  open 6",
-     "total flagged: 254 -> _reference\\data\\scorer\\loops\\audit.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\build_launch_checklist.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference\\launch-checklist.md (312 per-build questions)"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\build_beta_checklist.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference\\beta-checklist.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "wrote _reference\\fightlab-summary.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py mage priest warlock hunter warrior rogue paladin shaman druid",
-    "rc": 0,
-    "seconds": 10,
-    "tail": [
-     "mage: leveling 3, raid 13, classic 10",
-     "priest: leveling 3, raid 11, classic 3",
-     "warlock: leveling 3, raid 16, classic 5",
-     "hunter: leveling 6, raid 14, classic 5",
-     "warrior: leveling 4, raid 14, classic 6",
-     "rogue: leveling 4, raid 12, classic 8",
-     "paladin: leveling 3, raid 12, classic 7",
-     "shaman: leveling 4, raid 15, classic 9",
-     "druid: leveling 3, raid 16, classic 10"
-    ],
-    "stderr": []
-   }
-  ]
+  "regen_log": []
  }
 }

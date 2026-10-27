@@ -3,33 +3,30 @@
  "spec": "prot-tank",
  "build": "protection-ml-tank",
  "setting": "raid",
- "date": "2026-10-16",
+ "date": "2026-10-27",
  "tank": true,
  "removal": {
-  "Anticipation": 0.024428592131551463,
-  "Conviction": 0.003036539669410754,
-  "Deflection": 0.03896901621617521,
-  "Holy Conduit": 0.019400605022980133,
-  "Holy Shield": 0.08573162331767636,
-  "Improved Judgement": 0.017254138368236527,
-  "Improved Righteous Fury": 0.03116296449000422,
-  "Improved Seal of Fury": -0.0,
-  "Iron Creed": 0.03880607324406582,
-  "One-Handed Weapon Specialization": 0.008198589847768556,
-  "Precision": 0.016324130133672732,
-  "Reckoning": 0.032160532165643296,
-  "Redoubt": 0.018784328218320212,
-  "Sacred Arbiter": 0.009349808358878331,
-  "Sanctified Judgement": 0.028050971116633683,
-  "Shield Specialization": 0.03998317728636669,
-  "Swift Judgement": 0.008425393371444656,
-  "Templar's Bulwark": 0.022895477025459132,
-  "Vindication": 0.02739601071883424
+  "Anticipation": 0.024103897706748256,
+  "Conviction": 0.008503291787686607,
+  "Deflection": 0.03644336992303698,
+  "Holy Conduit": 0.026786742033902855,
+  "Holy Shield": 0.08866444845465793,
+  "Improved Judgement": 0.014795076882241132,
+  "Improved Righteous Fury": 0.031279279318392694,
+  "Iron Creed": 0.04234218377768917,
+  "One-Handed Weapon Specialization": 0.025024821215388737,
+  "Precision": 0.016550676826316613,
+  "Reckoning": 0.021263466216562943,
+  "Redoubt": 0.0195105301234082,
+  "Sacred Arbiter": 0.007738872957564702,
+  "Sanctified Judgement": 0.023450497081292987,
+  "Shield Specialization": 0.020991339234451845,
+  "Templar's Bulwark": 0.020240141169738157,
+  "Toughness": 0.008837721235342544
  },
- "free": [
-  "Improved Seal of Fury"
- ],
+ "free": [],
  "kept_for_rotation": [
+  "Holy Shield",
   "Redoubt"
  ],
  "active_never_worth": [],
@@ -39,6 +36,10 @@
  "start": {
   "Holy": [],
   "Protection": [
+   [
+    "Toughness",
+    2
+   ],
    [
     "Redoubt",
     5
@@ -52,24 +53,16 @@
     5
    ],
    [
-    "Improved Seal of Fury",
-    1
-   ],
-   [
     "Improved Righteous Fury",
     3
    ],
    [
     "Shield Specialization",
-    3
-   ],
-   [
-    "Swift Judgement",
-    1
+    2
    ],
    [
     "One-Handed Weapon Specialization",
-    2
+    3
    ],
    [
     "Templar's Bulwark",
@@ -103,11 +96,7 @@
    ],
    [
     "Conviction",
-    1
-   ],
-   [
-    "Vindication",
-    2
+    3
    ],
    [
     "Sanctified Judgement",
@@ -123,6 +112,10 @@
   "Holy": [],
   "Protection": [
    [
+    "Toughness",
+    2
+   ],
+   [
     "Redoubt",
     5
    ],
@@ -135,24 +128,16 @@
     5
    ],
    [
-    "Improved Seal of Fury",
-    1
-   ],
-   [
     "Improved Righteous Fury",
     3
    ],
    [
     "Shield Specialization",
-    3
-   ],
-   [
-    "Swift Judgement",
-    1
+    2
    ],
    [
     "One-Handed Weapon Specialization",
-    2
+    3
    ],
    [
     "Templar's Bulwark",
@@ -186,11 +171,7 @@
    ],
    [
     "Conviction",
-    1
-   ],
-   [
-    "Vindication",
-    2
+    3
    ],
    [
     "Sanctified Judgement",

@@ -245,3 +245,12 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   paladin and warrior tanks unchanged: their split already reads Protection). The talent search was unaffected (tank values unpenalized).
   Bear rotation re-tuned afterwards (`bear-retune.log`). Also: never run `unr_cands.py` from main; it writes start files into the
   candidates folder of the folder it runs in, and main's races pick up every candidate.
+- 2026-10-27 (unrestricted mage audit): `rotation_opt.py --fresh` wrote its result even when the saved rules were faster (mage Fire's
+  pass-2 re-tune found nothing and wrote the hand-written rotation, about 2.5% slower than pass 1's rules on the same build). In the
+  `unrestricted` worktree a --fresh run now races the saved rules in the seed-3 check and keeps them when faster; Fire re-run with
+  main's tuned rules as the saved file (`unr-fire-fix.log`). Open: the same guard on main (there a --fresh after a mechanics fix is
+  meant to forget the old rules, so it must race them under the new mechanics, which this does).
+- 2026-10-27: bear rotation re-tuned after the entry_spec fix: +11-12% tank value for every bear build (Maul ungated +6.7%, Primal Bite
+  dropped +2.2%, Enrage below 20 rage +1.3%, Lacerate +0.3%). Raid queue 2 searches the tank talents again (`druid-tank-2`). Also fixed
+  in sweep_raid2.sh before it ran: the shaman-hybrid-clear block had a literal line break inside a Python string (a SyntaxError: the
+  record would not have been cleared). Check every queued heredoc with `compile()` before a queue starts.
