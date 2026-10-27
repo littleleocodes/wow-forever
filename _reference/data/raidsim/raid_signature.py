@@ -161,9 +161,10 @@ def _tank_entry(cls, entry):
 def entry_spec(cls, entry, alloc, build=None, role=None):
     """The spec a build plays in a raid entry: its own `spec` field; tanks the class's tank tree; else the entry's hybrid when the entry is
     built for one hybrid (Frostfire's frostfire-raid, Smite's smite-dps) and the split is that hybrid or one of its trees; else by split."""
-    if build and build.get("spec"):
+    tank = (role or (build or {}).get("role")) == "tank" or _tank_entry(cls, entry)
+    if build and build.get("spec") and not tank:   # a tank build's spec field names its tree ("Feral Combat"), not the bear
         return build["spec"]
-    if (role or (build or {}).get("role")) == "tank" or _tank_entry(cls, entry):   # 2026-10-26 audit: unlabelled tank-entry builds (a
+    if tank:   # 2026-10-26 audit: unlabelled tank-entry builds (a
         # search's "deep: tank", the simulator's presets) were filed by split, so the bear rotation search kept the cat's core share
         import sys
         sys.path.insert(0, str(DATA))

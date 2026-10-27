@@ -238,3 +238,10 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
 - (2026-10-25) After a leveling queue: every pure spec has a winner filed under it in some record (main or `open/pure/`), not only a
   hybrid that won its shared rotation; the signature audit's page rows show no FAIL (`_reference/signature-audit.md`).
 - (2026-10-25) Every signature spell a leveling rotation requires (`rotations/<class>-<spec>.json` `signature.required`) has a cast path in its fight-lab module's priority for that rotation: a talent the module never presses (Mutilate until 2026-10-25) fails every build of the spec however long the search runs.
+
+- 2026-10-26 (druid self-audit): `raid_signature.entry_spec` filed the unlabelled builds of a tank entry (a search's "deep: tank", the
+  simulator's presets) by split, so the bear rotation search held them to the cat's Feral Combat rule (core share 18-27% against 80%) and
+  rejected Enrage and Maul edits. Now every build of a `"tank": true` entry is the tank (the druid's "Feral Combat (Bear)", no rule;
+  paladin and warrior tanks unchanged: their split already reads Protection). The talent search was unaffected (tank values unpenalized).
+  Bear rotation re-tuned afterwards (`bear-retune.log`). Also: never run `unr_cands.py` from main; it writes start files into the
+  candidates folder of the folder it runs in, and main's races pick up every candidate.
