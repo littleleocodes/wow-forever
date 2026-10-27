@@ -156,8 +156,22 @@
      "spellId": {
       "spellId": 1235827
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "20s"
+       }
+      }
+     }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-26: changed or added by the rotation search (see feral-bear-tank-rotation-search.json)"
   }
  ]
 }

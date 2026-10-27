@@ -1,0 +1,233 @@
+{
+ "class": "druid",
+ "spec": "feral-bear-tank",
+ "build": "feral-combat-ml-tank",
+ "setting": "raid",
+ "date": "2026-10-26",
+ "tank": true,
+ "removal": {
+  "Blood Frenzy": 0.17724135344918612,
+  "Feral Swiftness": 0.016564849825019712,
+  "Ferocity": 0.1847416597834588,
+  "Furor": 0.0026383578350349657,
+  "Genesis": 0.00011590033739439232,
+  "Leader of the Pack": 0.037255209782087295,
+  "Natural Instinct": 0.020683384077256894,
+  "Natural Reaction": 0.047156857494668025,
+  "Naturalist": 0.009255602672839647,
+  "Nature's Majesty": 0.04909050637540613,
+  "Nature's Reach": 0.024925016293534608,
+  "Predatory Strikes": 0.015261545972902635,
+  "Rend and Tear": 0.03513070738870705,
+  "Savage Fury": 0.03204421496191323,
+  "Sharpened Claws": 0.07157637758271762,
+  "Shredding Attacks": 0.05697505262086777,
+  "Thick Hide": 0.028817082950109985
+ },
+ "free": [
+  "Genesis"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Genesis",
+   "to": "Improved Wrath",
+   "seed1": -2.318006747836776e-05,
+   "seed2": -2.3261206901104003e-05,
+   "utility": "range"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Genesis",
+   "to": "Improved Wrath",
+   "seed1": -2.3181142159600654e-05,
+   "seed2": -2.3262289114422963e-05,
+   "utility": "range"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Genesis",
+   "to": "Improved Wrath",
+   "seed1": -2.3182216940198508e-05,
+   "seed2": -2.326337143854218e-05,
+   "utility": "range"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Genesis",
+   "to": "Improved Wrath",
+   "seed1": -2.318329182238177e-05,
+   "seed2": -2.3264453858473644e-05,
+   "utility": "range"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Genesis",
+   "to": "Improved Wrath",
+   "seed1": -2.3184366799267053e-05,
+   "seed2": -2.3265536375993712e-05,
+   "utility": "range"
+  }
+ ],
+ "final_seed3": -0.00011667678607962806,
+ "start": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Nature's Reach",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Shredding Attacks",
+    3
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Natural Reaction",
+    5
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Naturalist",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Balance": [
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Nature's Reach",
+    2
+   ],
+   [
+    "Improved Wrath",
+    5
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Shredding Attacks",
+    3
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Natural Reaction",
+    5
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Naturalist",
+    2
+   ]
+  ]
+ }
+}

@@ -3,11 +3,318 @@
  "spec": "Feral Combat",
  "entry": "feral-bear-tank",
  "date": "2026-10-26",
- "cycles": [],
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Feral Swiftness",
+       2
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Natural Reaction",
+       5
+      ],
+      [
+       "Rend and Tear",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       2
+      ]
+     ]
+    },
+    "split": "9/35/7",
+    "dps": 1.0584,
+    "se": 0.0002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/35/7",
+    "dps": 1.0584,
+    "se": 0.0002,
+    "differs": [
+     [
+      "Genesis",
+      4
+     ],
+     [
+      "Genesis",
+      5
+     ],
+     [
+      "Improved Wrath",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-bear-tank",
+     "run": 1,
+     "simulated": 4626,
+     "best_screen": 1.0588,
+     "best_split": "9/35/7",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 2,
+     "simulated": 3223,
+     "best_screen": 1.0588,
+     "best_split": "9/35/7",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 3,
+     "simulated": 4419,
+     "best_screen": 1.0588,
+     "best_split": "9/35/7",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 3,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      1.0581,
+      1.0581,
+      1.0581,
+      1.0581,
+      1.0581,
+      1.058,
+      1.0559,
+      1.0559
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      1.0589,
+      1.0589,
+      1.0589,
+      1.0589,
+      1.0588
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      1.0584,
+      1.0584
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 350,
+     "best_gap": -0.0,
+     "best_move": "1 Genesis -> Improved Wrath"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.3638
+    },
+    {
+     "feature": "Heart of the Wild",
+     "importance": 0.1732
+    },
+    {
+     "feature": "Natural Reaction",
+     "importance": 0.1182
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0796
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.0502
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0459
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.0401
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0243
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0226
+    },
+    {
+     "feature": "Nature's Reach",
+     "importance": 0.0146
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0131
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0098
+    }
+   ],
+   "simulated_builds": 12634,
+   "minutes": 85.9,
+   "rotation_changed": true
+  }
+ ],
  "ref": {
   "build": "feral-bear-tank",
   "threat": 2879.803142912573,
   "dtps": 361.1372462359993,
   "fights": 20000
+ },
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 350,
+    "two_move": 47117,
+    "expanded": null,
+    "screen": 1000,
+    "screen_best": [
+     [
+      "1 Genesis -> Improved Wrath",
+      -0.0
+     ],
+     [
+      "2 Genesis -> Improved Wrath",
+      -0.0
+     ],
+     [
+      "3 Genesis -> Improved Wrath",
+      -0.0001
+     ],
+     [
+      "1 Genesis -> Improved Wrath; then 3 Genesis -> Improved Wrath",
+      -0.0001
+     ],
+     [
+      "5 Genesis -> Improved Wrath",
+      -0.0001
+     ]
+    ],
+    "raced": 60,
+    "confirmed": [
+     [
+      "1 Genesis -> Improved Wrath",
+      -0.0
+     ],
+     [
+      "2 Genesis -> Improved Wrath",
+      -0.0
+     ],
+     [
+      "3 Genesis -> Improved Wrath",
+      -0.0001
+     ],
+     [
+      "1 Genesis -> Improved Wrath; then 3 Genesis -> Improved Wrath",
+      -0.0001
+     ],
+     [
+      "5 Genesis -> Improved Wrath",
+      -0.0001
+     ]
+    ],
+    "minutes": 334.3
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "value": 1.0715,
+   "se": 0.0002
+  },
+  "feral-bear-tank": {
+   "value": 1.0122,
+   "se": 0.0002
+  },
+  "opt-feral-bear-tank-raid-tank": {
+   "value": 1.0549,
+   "se": 0.0002
+  }
+ },
+ "minutes": 442.8,
+ "build": {
+  "written": "feral-combat-ml-tank",
+  "gain_vs_hand": 0.05858525983007312
  }
 }

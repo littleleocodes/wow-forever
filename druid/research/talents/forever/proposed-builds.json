@@ -1427,6 +1427,48 @@
       "open_questions": ["An open-search Feral Combat build: check it against the community's Feral Combat builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/druid/60/050022-55000032021031212051-054-7"],
       "replaces": "feral-cat-dps"
+    },
+    {
+      "id": "feral-combat-ml-tank",
+      "name": "Feral Combat — Raid tank (machine-learning search)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Feral Combat",
+      "generated": "2026-10-26",
+      "derived": "raid",
+      "summary": "The Feral Combat tank build the machine-learning talent search found in the community simulator on 2026-10-26 (raidsim/deep_tank.py: a random forest guiding a genetic search over every legal build of the spec, scored on tank value: threat per second and damage taken under boss melee; the rotation tuned with it; races on fresh seeds; every build one or two moves from the winner checked). The simulator's model of the beta, not an in-game measurement.",
+      "allocation": {
+        "Balance": [
+          ["Nature's Majesty", 2],
+          ["Nature's Reach", 2],
+          ["Improved Wrath", 5]
+        ],
+        "Feral Combat": [
+          ["Ferocity", 5],
+          ["Feral Swiftness", 2],
+          ["Thick Hide", 3],
+          ["Shredding Attacks", 3],
+          ["Savage Fury", 2],
+          ["Sharpened Claws", 2],
+          ["Predatory Strikes", 3],
+          ["Blood Frenzy", 2],
+          ["Leader of the Pack", 1],
+          ["Natural Instinct", 2],
+          ["Natural Reaction", 5],
+          ["Rend and Tear", 5]
+        ],
+        "Restoration": [
+          ["Furor", 5],
+          ["Naturalist", 2]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+5.9% tank value over the hand draft feral-bear-tank (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).", "Final race over 100,000 fights: tank value 1.071 ± 0.000 (relative to feral-bear-tank over 20,000 fights); opt-feral-bear-tank-raid-tank 1.055, feral-bear-tank 1.012.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 350 one-move and 47,117 two-move builds, none better.", "2026-10-26 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range). Net -0.01% on a third seed."],
+      "open_questions": ["A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
+      "sources": [],
+      "replaces": "feral-bear-tank"
     }
   ]
 }

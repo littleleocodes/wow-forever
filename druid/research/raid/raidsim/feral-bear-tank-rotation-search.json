@@ -2,8 +2,8 @@
  "raid": {
   "class": "druid",
   "spec": "feral-bear-tank",
-  "date": "2026-10-17",
-  "commit": "b7083fa",
+  "date": "2026-10-26",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "ui/specs/druid/feralbear/apls/default.apl.json",
@@ -11,21 +11,21 @@
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "05002-5120033202003200255-054"
+    "talents": "050022-5020033202003201255-052"
+   },
+   {
+    "label": "opt-feral-bear-tank-raid-tank",
+    "talents": "050022-5520033212013201255",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Hybrid",
+    "talents": "050022-35230332121132212051-",
+    "protect_only": true
    },
    {
     "label": "feral-bear-tank",
     "talents": "05002-5020033212003200255-054",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: Bear Tank 0/31/20",
-    "talents": "-50032302120132010501-0550325",
-    "protect_only": true
-   },
-   {
-    "label": "opt-feral-bear-tank-raid-tank",
-    "talents": "05002-5020033212003200255-504",
     "protect_only": true
    }
   ],
@@ -58,49 +58,72 @@
     "gain_seed2": 0.0215269208295652,
     "candidates": 84,
     "pass": 3
+   },
+   {
+    "round": 4,
+    "change": "only with 20s or more of the fight left: cast Lacerate",
+    "gain_seed1": 0.011576243465674096,
+    "gain_seed2": 0.011765352600020318,
+    "candidates": 454,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 539.1469007420175,
-     "after": 536.8894946805349,
-     "base": 539.1469007420175,
+     "before": 542.26173307563,
+     "after": 2108.648618946988,
+     "base": 542.26173307563,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "feral-bear-tank": {
-     "before": 539.1462671428643,
-     "after": 536.8888224880878,
-     "base": 539.1462671428643,
-     "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Bear Tank 0/31/20": {
-     "before": 494.58476279018345,
-     "after": 499.4400484175236,
-     "base": 494.58476279018345,
-     "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.0117992051235167,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-feral-bear-tank-raid-tank": {
-     "before": 539.1462671428643,
-     "after": 536.8888224880878,
-     "base": 539.1462671428643,
+     "before": 593.6387719418711,
+     "after": 2046.333889795798,
+     "base": 593.6387719418711,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.0076909959407927,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Hybrid": {
+     "before": 579.194096606406,
+     "after": 1581.6046681715268,
+     "base": 579.194096606406,
+     "before_value": 1.0,
+     "after_value": 1.0062184787200616,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "feral-bear-tank": {
+     "before": 513.2481922533066,
+     "after": 1889.5327810177155,
+     "base": 513.2481922533066,
+     "before_value": 1.0,
+     "after_value": 1.0120489503464696,
      "oom_before": 0,
      "oom_after": 0
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Feral Combat"
+   ],
+   "required": [
+    "Rip",
+    "Shred"
+   ],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 21
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }
