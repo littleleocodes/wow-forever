@@ -1,0 +1,256 @@
+{
+ "id": "unr-fire-leveling",
+ "name": "Unrestricted start (fire-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    1
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Flame Throwing",
+    1
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    1
+   ],
+   [
+    "Improved Fire Ward",
+    1
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    5
+   ],
+   [
+    "Fire Power",
+    3
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Elemental Precision",
+    3
+   ],
+   [
+    "Ice Shards",
+    4
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Permafrost",
+    2
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Frost",
+   "talent": "Permafrost",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Fire",
+   "talent": "Improved Fireball",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "40-42",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 3
+  },
+  {
+   "levels": "43",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Fire",
+   "talent": "Flame Throwing",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "46",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 1
+  },
+  {
+   "levels": "47-49",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "50-54",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 5
+  },
+  {
+   "levels": "55-57",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Improved Fire Ward",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the fire-leveling open-search winner 0/31/20 (own tree last), the start of the unrestricted search"
+ ]
+}

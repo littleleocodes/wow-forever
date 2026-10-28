@@ -1,21 +1,15 @@
 {
+ "knobs": {
+  "BOLT_FIRST": 0
+ },
  "veto": {
-  "Searing Pain": {
-   "off": true
-  },
-  "Shadow Bolt": {
-   "min_hp": 0.2
-  },
-  "Fear": {
-   "min_mana": 0.5
-  },
-  "Drain Life": {
-   "off": true
+  "Immolate": {
+   "min_mana": 0.3
   }
  },
  "class": "warlock",
  "spec": "destruction-leveling",
- "build": "destruction-leveling",
+ "build": "warlock/research/leveling/fightlab/candidates/unr-destruction-leveling.json",
  "levels": [
   20,
   30,
@@ -23,98 +17,66 @@
   50,
   60
  ],
- "date": "2026-10-24",
- "signature": {
-  "required": [
-   "Shadow Bolt"
-  ],
-  "build_spec": "Destruction",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.6818988400951871,
-  "core_share_after": 0.6212520740294775,
-  "min_share": 0.6,
-  "floor_reached": null
- },
+ "date": "2026-10-28",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Searing Pain",
+   "change": "BOLT_FIRST = 0",
    "rule": [
-    "off",
-    "Searing Pain",
-    true
+    "knob",
+    "BOLT_FIRST",
+    0
    ],
-   "gain_seed1": 0.03565196048310426,
-   "gain_seed2": 0.03078050014170053
+   "gain_seed1": 0.33715621578562327,
+   "gain_seed2": 0.3314515810858357
   },
   {
    "round": 2,
-   "change": "Shadow Bolt only while the mob has more than 20% health",
-   "rule": [
-    "min_hp",
-    "Shadow Bolt",
-    0.2
-   ],
-   "gain_seed1": 0.0341972779337818,
-   "gain_seed2": 0.037343898608604875
-  },
-  {
-   "round": 3,
-   "change": "Fear only above 50% mana",
+   "change": "Immolate only above 30% mana",
    "rule": [
     "min_mana",
-    "Fear",
-    0.5
+    "Immolate",
+    0.3
    ],
-   "gain_seed1": 0.020703333566558624,
-   "gain_seed2": 0.019227449814563258
-  },
-  {
-   "round": 4,
-   "change": "never cast Drain Life",
-   "rule": [
-    "off",
-    "Drain Life",
-    true
-   ],
-   "gain_seed1": 0.022601014412492626,
-   "gain_seed2": 0.022845038108922355
+   "gain_seed1": 0.008653069587056916,
+   "gain_seed2": 0.006663746766551237
   }
  ],
- "weighted_before": 56.787563530494914,
- "weighted_after": 50.82351382454358,
+ "weighted_before": 48.59644110123317,
+ "weighted_after": 32.28436588272352,
  "per_level": {
   "20": {
-   "before": 36.82956033897791,
-   "after": 34.32619969065549,
+   "before": 36.48399800070921,
+   "after": 23.801699999927543,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 51.591885741029,
-   "after": 47.54896522797266,
+   "before": 49.31856153993681,
+   "after": 28.68303333344883,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 62.69074047065307,
-   "after": 55.98081768108852,
+   "before": 52.056036793196526,
+   "after": 33.55059238058409,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 57.90350532454166,
-   "after": 52.83320660947871,
+   "before": 49.630095608441266,
+   "after": 35.40780650563474,
    "deaths_before": 0.0,
-   "deaths_after": 0.03333333333333333
+   "deaths_after": 0.0
   },
   "60": {
-   "before": 61.172667367255826,
-   "after": 52.84694627564917,
+   "before": 49.105086031407,
+   "after": 33.465569267293134,
    "deaths_before": 0.0,
-   "deaths_after": 0.03333333333333333
+   "deaths_after": 0.0
   }
  }
 }

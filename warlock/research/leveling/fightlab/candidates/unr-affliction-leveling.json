@@ -1,0 +1,250 @@
+{
+ "id": "unr-affliction-leveling",
+ "name": "Unrestricted start (affliction-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Improved Drains",
+    3
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Fel Concentration",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    4
+   ],
+   [
+    "Siphon Life",
+    1
+   ],
+   [
+    "Soul Siphon",
+    3
+   ],
+   [
+    "Shadow Mastery",
+    5
+   ],
+   [
+    "Wrack",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Improved Sayaad",
+    1
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": []
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "12-15",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "16-19",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "28",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "32-33",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Affliction",
+   "talent": "Wrack",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 1
+  },
+  {
+   "levels": "42-44",
+   "tree": "Affliction",
+   "talent": "Improved Drains",
+   "points": 3
+  },
+  {
+   "levels": "45-46",
+   "tree": "Affliction",
+   "talent": "Fel Concentration",
+   "points": 2
+  },
+  {
+   "levels": "47-51",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Demonology",
+   "talent": "Improved Sayaad",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the affliction-leveling open-search winner 37/14/0 (polished from the own tree first order), the start of the unrestricted search"
+ ]
+}

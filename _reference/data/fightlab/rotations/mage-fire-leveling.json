@@ -9,7 +9,7 @@
  },
  "class": "mage",
  "spec": "fire-leveling",
- "build": "opt-fire-leveling-leveling-st",
+ "build": "mage/research/leveling/fightlab/candidates/unr-fire-leveling.json",
  "levels": [
   20,
   30,
@@ -17,75 +17,49 @@
   50,
   60
  ],
- "date": "2026-10-22",
- "signature": {
-  "required": [
-   "Fireball",
-   "Pyroblast"
-  ],
-  "build_spec": "Fire",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.719301824957743,
-  "core_share_after": 0.6933955153020332,
-  "min_share": 0.6,
-  "floor_reached": null
- },
+ "date": "2026-10-27",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
-   "round": 1,
-   "change": "Fireball only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Fireball",
-    0.35
-   ],
-   "gain_seed1": 0.013848957124380057,
-   "gain_seed2": 0.012687385045910937
-  },
-  {
-   "round": 2,
-   "change": "Scorch only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Scorch",
-    0.35
-   ],
-   "gain_seed1": 0.012170128909991806,
-   "gain_seed2": 0.010284161720716
+   "round": "final",
+   "change": "kept the saved rules (faster on seed 3 than the fresh re-tune)",
+   "rule": [],
+   "gain_seed1": null,
+   "gain_seed2": null
   }
  ],
- "weighted_before": 39.95572652195837,
- "weighted_after": 39.05041740722267,
+ "weighted_before": 35.10116173898154,
+ "weighted_after": 34.46052337982991,
  "per_level": {
   "20": {
-   "before": 36.53480318936474,
-   "after": 34.59626237047355,
+   "before": 31.618847982919547,
+   "after": 30.6999311509739,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 40.02854745517535,
-   "after": 39.01095012397686,
+   "before": 36.16087124947478,
+   "after": 34.98180500860534,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 46.88787342026336,
-   "after": 45.44437375480735,
+   "before": 43.08109401870787,
+   "after": 41.683002228493805,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 40.46557472693231,
-   "after": 40.00699648596158,
+   "before": 34.585135031050584,
+   "after": 34.289664989160244,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 36.01331906319946,
-   "after": 35.49508259708971,
+   "before": 30.842145639213825,
+   "after": 30.780809401509657,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

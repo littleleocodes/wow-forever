@@ -1,0 +1,266 @@
+{
+ "id": "unr-demonology-leveling",
+ "name": "Unrestricted start (demonology-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Grim Reach",
+    1
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ],
+   [
+    "Siphon Life",
+    1
+   ],
+   [
+    "Shadow Mastery",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Improved Health Funnel",
+    1
+   ],
+   [
+    "Demonic Embrace",
+    4
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    1
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ]
+  ],
+  "Destruction": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Demonology",
+   "talent": "Improved Health Funnel",
+   "points": 1
+  },
+  {
+   "levels": "21-24",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 4
+  },
+  {
+   "levels": "25",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Demonology",
+   "talent": "Demonic Brand",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "36",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "41-43",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "49-51",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 2
+  }
+ ],
+ "notes": [
+  "the demonology-leveling open-search winner 27/24/0 (polished from the own tree last order), the start of the unrestricted search"
+ ]
+}

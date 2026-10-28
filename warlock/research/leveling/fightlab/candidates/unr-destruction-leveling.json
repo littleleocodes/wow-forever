@@ -1,0 +1,242 @@
+{
+ "id": "unr-destruction-leveling",
+ "name": "Unrestricted start (destruction-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ],
+   [
+    "Siphon Life",
+    1
+   ],
+   [
+    "Soul Siphon",
+    3
+   ],
+   [
+    "Shadow Mastery",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    4
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Fel Domination",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ]
+  ],
+  "Destruction": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20-23",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 4
+  },
+  {
+   "levels": "24",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "25-26",
+   "tree": "Demonology",
+   "talent": "Decimation",
+   "points": 2
+  },
+  {
+   "levels": "27-28",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 2
+  },
+  {
+   "levels": "29",
+   "tree": "Demonology",
+   "talent": "Fel Domination",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34-37",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "38-40",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 3
+  },
+  {
+   "levels": "41-42",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "47-48",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 2
+  },
+  {
+   "levels": "49-52",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 4
+  },
+  {
+   "levels": "53",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "56-58",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 3
+  },
+  {
+   "levels": "59-60",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 2
+  }
+ ],
+ "notes": [
+  "the destruction-leveling open-search winner 27/24/0 (polished from the own tree last order), the start of the unrestricted search"
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "id": "unr-holy-leveling",
+ "name": "Unrestricted start (holy-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    2
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    1
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Meditation",
+    2
+   ],
+   [
+    "Soul Warding",
+    1
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    2
+   ],
+   [
+    "Spirit Tap",
+    5
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Dark Inspiration",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23-26",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 4
+  },
+  {
+   "levels": "27-28",
+   "tree": "Shadow",
+   "talent": "Dark Inspiration",
+   "points": 2
+  },
+  {
+   "levels": "29-30",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 2
+  },
+  {
+   "levels": "31-33",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Discipline",
+   "talent": "Holy Precision",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "52-53",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 1
+  },
+  {
+   "levels": "57-59",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Discipline",
+   "talent": "Soul Warding",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the holy-leveling open-search winner 20/0/31 (polished from the stats model order), the start of the unrestricted search"
+ ]
+}

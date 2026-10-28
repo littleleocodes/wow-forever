@@ -9,7 +9,7 @@
  },
  "class": "warlock",
  "spec": "demonology-leveling",
- "build": "affliction-demonology-open-leveling",
+ "build": "warlock/research/leveling/fightlab/candidates/unr-demonology-leveling.json",
  "levels": [
   20,
   30,
@@ -17,74 +17,60 @@
   50,
   60
  ],
- "date": "2026-10-24",
- "signature": {
-  "required": [
-   "Corruption"
-  ],
-  "build_spec": "Hybrid Affliction/Demonology",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.7001805941912373,
-  "core_share_after": 0.7086559516745801,
-  "min_share": 0.5,
-  "floor_reached": null
- },
+ "date": "2026-10-28",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Corruption only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Corruption",
-    0.35
-   ],
-   "gain_seed1": 0.010393636063888656,
-   "gain_seed2": 0.009935485224431218
-  },
-  {
-   "round": 2,
-   "change": "Searing Pain only above 30% mana",
+   "change": "Corruption only above 50% mana",
    "rule": [
     "min_mana",
-    "Searing Pain",
-    0.3
+    "Corruption",
+    0.5
    ],
-   "gain_seed1": 0.01000047361806522,
-   "gain_seed2": 0.012456285415238466
+   "gain_seed1": 0.023675314877755982,
+   "gain_seed2": 0.02202924611357049
+  },
+  {
+   "round": "final",
+   "change": "kept the saved rules (faster on seed 3 than the fresh re-tune)",
+   "rule": [],
+   "gain_seed1": null,
+   "gain_seed2": null
   }
  ],
- "weighted_before": 31.44226740256972,
- "weighted_after": 30.792156796669218,
+ "weighted_before": 31.29336277959875,
+ "weighted_after": 30.415967869367375,
  "per_level": {
   "20": {
-   "before": 23.821966666595113,
-   "after": 23.821866666595103,
+   "before": 23.829266666595224,
+   "after": 23.829699999928582,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 27.137258526737433,
-   "after": 26.97013333337824,
+   "before": 27.28580563742305,
+   "after": 27.042033333379397,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 31.82046714791921,
-   "after": 31.167711209784105,
+   "before": 31.59062926589077,
+   "after": 30.545130779968186,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 33.73253965125399,
-   "after": 32.9694795088865,
+   "before": 33.67955736442588,
+   "after": 32.8847128412784,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.974178715007504,
-   "after": 32.96179336941508,
+   "before": 33.5985002434705,
+   "after": 32.154961676847904,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

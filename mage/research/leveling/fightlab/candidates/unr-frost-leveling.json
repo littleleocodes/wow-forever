@@ -1,0 +1,269 @@
+{
+ "id": "unr-frost-leveling",
+ "name": "Unrestricted start (frost-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Arcane Focus",
+    2
+   ],
+   [
+    "Improved Channeling",
+    2
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Resilience",
+    1
+   ],
+   [
+    "Arcane Impact",
+    1
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    1
+   ],
+   [
+    "Improved Frostbolt",
+    4
+   ],
+   [
+    "Elemental Precision",
+    2
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Permafrost",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-13",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 4
+  },
+  {
+   "levels": "14",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 1
+  },
+  {
+   "levels": "15-17",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "18",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 1
+  },
+  {
+   "levels": "26-27",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "28-29",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Arcane",
+   "talent": "Missile Barrage",
+   "points": 1
+  },
+  {
+   "levels": "34-35",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "36-37",
+   "tree": "Arcane",
+   "talent": "Arcane Focus",
+   "points": 2
+  },
+  {
+   "levels": "38-42",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
+  },
+  {
+   "levels": "43",
+   "tree": "Arcane",
+   "talent": "Arcane Resilience",
+   "points": 1
+  },
+  {
+   "levels": "44-45",
+   "tree": "Arcane",
+   "talent": "Improved Channeling",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Arcane",
+   "talent": "Arcane Impact",
+   "points": 1
+  },
+  {
+   "levels": "47",
+   "tree": "Arcane",
+   "talent": "Arcane Blast",
+   "points": 1
+  },
+  {
+   "levels": "48-50",
+   "tree": "Arcane",
+   "talent": "Arcane Meditation",
+   "points": 3
+  },
+  {
+   "levels": "51-53",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 3
+  },
+  {
+   "levels": "54",
+   "tree": "Frost",
+   "talent": "Arctic Reach",
+   "points": 1
+  },
+  {
+   "levels": "55-56",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  },
+  {
+   "levels": "57",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Frost",
+   "talent": "Permafrost",
+   "points": 3
+  }
+ ],
+ "notes": [
+  "the frost-leveling open-search winner 18/3/30 (stats model), the start of the unrestricted search"
+ ]
+}

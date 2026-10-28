@@ -2,15 +2,14 @@
  "veto": {
   "Cone of Cold": {
    "max_hp": 0.2
-  },
-  "Frost Nova": {
-   "off": true
   }
  },
- "eat_below": 0.4,
+ "knobs": {
+  "AB_MAX_STACKS": 1
+ },
  "class": "mage",
  "spec": "arcane-leveling",
- "build": "mage/research/leveling/fightlab/candidates/arcane-blast-leveling-start.json",
+ "build": "mage/research/leveling/fightlab/candidates/unr-arcane-leveling.json",
  "levels": [
   20,
   30,
@@ -18,18 +17,8 @@
   50,
   60
  ],
- "date": "2026-10-22",
- "signature": {
-  "required": [
-   "Arcane Blast"
-  ],
-  "build_spec": "Arcane",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.911977121430604,
-  "core_share_after": 0.9197255337717877,
-  "min_share": 0.5,
-  "floor_reached": null
- },
+ "date": "2026-10-27",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -41,62 +30,51 @@
     "Cone of Cold",
     0.2
    ],
-   "gain_seed1": 0.014405395028714851,
-   "gain_seed2": 0.01620545680323593
+   "gain_seed1": 0.0231120494270306,
+   "gain_seed2": 0.021823853357640144
   },
   {
    "round": 2,
-   "change": "never cast Frost Nova",
+   "change": "AB_MAX_STACKS = 1",
    "rule": [
-    "off",
-    "Frost Nova",
-    true
+    "knob",
+    "AB_MAX_STACKS",
+    1
    ],
-   "gain_seed1": 0.01999823934268785,
-   "gain_seed2": 0.01758100486976133
-  },
-  {
-   "round": 3,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.007798412184439885,
-   "gain_seed2": 0.007986924727185651
+   "gain_seed1": 0.004601384412980414,
+   "gain_seed2": 0.009913314795336414
   }
  ],
- "weighted_before": 36.442086642839016,
- "weighted_after": 34.97778975481204,
+ "weighted_before": 32.16175654792265,
+ "weighted_after": 31.265574782906707,
  "per_level": {
   "20": {
-   "before": 35.125610285548156,
-   "after": 34.359571838451416,
+   "before": 31.563005101584096,
+   "after": 30.758259337974746,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 38.75207501130065,
-   "after": 37.629828921152416,
+   "before": 33.39226261329978,
+   "after": 32.927552288766414,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 38.69884401202492,
-   "after": 36.95576263058933,
+   "before": 34.57556922959503,
+   "after": 33.36235706140482,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 36.95624571357521,
-   "after": 35.20255260848988,
+   "before": 33.375077542068254,
+   "after": 32.72599828947468,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.792947105967706,
-   "after": 32.35189184851232,
+   "before": 29.125778047777338,
+   "after": 27.98881673714878,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
