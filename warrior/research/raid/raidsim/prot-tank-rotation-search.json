@@ -2,30 +2,35 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-10-15",
-  "commit": "2ce8265",
+  "date": "2026-10-28",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": true,
-  "simulator_apl": "ui/specs/warrior/protection/apls/protection.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/apls/protection.apl.json",
   "start": "ui\\specs\\warrior\\protection\\apls\\protection.apl.json",
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "35310003002-03-250530020310001351"
+    "talents": "35310003002-03-150530020320001351"
    },
    {
-    "label": "opt-prot-tank-raid-tank",
-    "talents": "35300003-05-050533020301001351",
+    "label": "protection-ml-tank",
+    "talents": "35310003002-03-250530020310001351",
     "protect_only": true
    },
    {
     "label": "sim preset: Protection",
-    "talents": "31--255533123330201351",
+    "talents": "35300003-05-050531120300021351",
     "protect_only": true
    },
    {
     "label": "prot-raid-tank",
     "talents": "3500501-05-150533020300001351",
+    "protect_only": true
+   },
+   {
+    "label": "opt-prot-tank-raid-tank",
+    "talents": "35-05-250530022331201351",
     "protect_only": true
    }
   ],
@@ -90,49 +95,88 @@
     "gain_seed2": 0.0015779461608658174,
     "candidates": 360,
     "pass": 7
+   },
+   {
+    "round": 8,
+    "change": "insert at the top: if (rage \u2265 40 or auraIsInactive and time until Revenge is ready \u2264 1.5s): cast Shield Block",
+    "gain_seed1": 0.08324412831208416,
+    "gain_seed2": 0.08384120240775439,
+    "candidates": 578,
+    "pass": 9
+   },
+   {
+    "round": 9,
+    "change": "drop the condition: if (rage \u2265 40 or auraIsInactive and time until Revenge is ready \u2264 1.5s): cast Shield Block",
+    "gain_seed1": 0.022032197470520654,
+    "gain_seed2": 0.021751720149861598,
+    "candidates": 605,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 485.17411551459395,
-     "after": 518.0361377890216,
-     "base": 485.17411551459395,
+     "before": 489.1438866998225,
+     "after": 522.9586047013289,
+     "base": 489.1438866998225,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.1087473412924571,
      "oom_before": 0,
      "oom_after": 0
     },
-    "opt-prot-tank-raid-tank": {
-     "before": 493.46406699483833,
-     "after": 513.5338103186809,
-     "base": 493.46406699483833,
+    "protection-ml-tank": {
+     "before": 488.4336173387898,
+     "after": 520.9959219414055,
+     "base": 488.4336173387898,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.1092743226048882,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Protection": {
-     "before": 455.19688544989003,
-     "after": 468.18196190852063,
-     "base": 455.19688544989003,
+     "before": 486.31950538305165,
+     "after": 512.3001865677849,
+     "base": 486.31950538305165,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.1101636043466683,
      "oom_before": 0,
      "oom_after": 0
     },
     "prot-raid-tank": {
-     "before": 485.92372022726653,
-     "after": 500.2179122222176,
-     "base": 485.92372022726653,
+     "before": 483.37730294680597,
+     "after": 497.947054156713,
+     "base": 483.37730294680597,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.1091766842321134,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-prot-tank-raid-tank": {
+     "before": 475.7917545628506,
+     "after": 503.3578112994234,
+     "base": 475.7917545628506,
+     "before_value": 1.0,
+     "after_value": 1.1103428101848114,
      "oom_before": 0,
      "oom_after": 0
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Protection"
+   ],
+   "required": [
+    "Shield Slam"
+   ],
+   "rejected": {
+    "structure": 6,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

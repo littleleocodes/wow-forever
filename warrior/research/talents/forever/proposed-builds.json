@@ -613,100 +613,6 @@
       "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"]
     },
     {
-      "id": "fury-open-raid",
-      "name": "Fury — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Fury",
-      "generated": "2026-10-11",
-      "derived": "raid",
-      "summary": "The Fury raid build the open talent search found on 2026-10-11: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
-      "allocation": {
-        "Arms": [
-          ["Improved Heroic Strike", 3],
-          ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3],
-          ["Impale", 2],
-          ["Deflection", 1]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
-          ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
-          ["Improved Execute", 2],
-          ["Death Wish", 1],
-          ["Flurry", 5],
-          ["Bloodthirst", 1],
-          ["Blood Craze", 3]
-        ],
-        "Protection": [
-          ["Improved Bloodrage", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Flurry", "why": "131 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Bloodthirst", "why": "86 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Dual Wield Specialization", "why": "64 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Deep Wounds", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Death Wish", "why": "39 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Cruelty", "why": "37 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Furious Precision", "why": "35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Impale", "why": "27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+4.8% over the best hand draft of the spec, arms-2h-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fury-dw-raid, full raid): 17/32/2 (Fury) at 929.2 DPS; opt-fury-dw-raid-raid-dps 885.5, fury-dw-raid 883.7 in the same fights; 9,040 builds simulated, 3 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 898.1, arms-2h-raid 886.5.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.8%, arms-battle-raid -15.1%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Rend, Improved Tactical Mastery, Booming Voice.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Fury: its full-raid winner is -0.34% against it, under the 0.5% bar for a new build."],
-      "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/30305013002-45053005102010501-2-6"],
-      "replaces": "arms-2h-raid"
-    },
-    {
-      "id": "protection-ml-tank",
-      "name": "Protection — Raid tank (machine-learning search)",
-      "role": "tank",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Protection",
-      "generated": "2026-10-15",
-      "derived": "raid",
-      "summary": "The Protection tank build the machine-learning talent search found in the community simulator on 2026-10-15 (raidsim/deep_tank.py: a random forest guiding a genetic search over every legal build of the spec, scored on tank value: threat per second and damage taken under boss melee; the rotation tuned with it; races on fresh seeds; every build one or two moves from the winner checked). The simulator's model of the beta, not an in-game measurement.",
-      "allocation": {
-        "Arms": [
-          ["Improved Heroic Strike", 3],
-          ["Deflection", 5],
-          ["Improved Rend", 3],
-          ["Improved Charge", 1],
-          ["Deep Wounds", 3],
-          ["Impale", 2]
-        ],
-        "Fury": [
-          ["Cruelty", 3]
-        ],
-        "Protection": [
-          ["Improved Bloodrage", 2],
-          ["Shield Specialization", 5],
-          ["Anticipation", 5],
-          ["Improved Revenge", 3],
-          ["Master of Defense", 2],
-          ["Defiance", 3],
-          ["Improved Sunder Armor", 1],
-          ["Concussion Blow", 1],
-          ["Focused Rage", 3],
-          ["Bastion", 5],
-          ["Shield Slam", 1]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Final race over 100,000 fights: tank value 1.016 ± 0.000 (relative to prot-raid-tank over 20,000 fights); opt-prot-tank-raid-tank 1.011, prot-raid-tank 1.005.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 217 one-move and 21,329 two-move builds, none better."],
-      "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
-      "sources": []
-    },
-    {
       "id": "opt-arms-2h-raid-leveling-st",
       "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-st)",
       "role": "dps",
@@ -1440,6 +1346,99 @@
       "notes": ["Report: warrior/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "fury-open-raid",
+      "name": "Fury — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Fury",
+      "generated": "2026-10-28",
+      "derived": "raid",
+      "summary": "The Fury raid build the open talent search found on 2026-10-28: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Deflection", 1],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Furious Precision", 3],
+          ["Blood Craze", 3],
+          ["Dual Wield Specialization", 5],
+          ["Raging Blows", 1],
+          ["Improved Execute", 2],
+          ["Death Wish", 1],
+          ["Flurry", 5],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": [
+          ["Improved Bloodrage", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Flurry", "why": "130 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bloodthirst", "why": "89 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Dual Wield Specialization", "why": "72 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deep Wounds", "why": "57 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Cruelty", "why": "54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Death Wish", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Impale", "why": "27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Furious Precision", "why": "26 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+5.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fury-dw-raid, full raid): 18/31/2 (Fury) at 924.2 DPS; opt-fury-dw-raid-raid-dps 913.9, fury-dw-raid 873.9 in the same fights; 5,742 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 845.0, arms-2h-raid 827.9.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.5%, arms-battle-raid -18.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Blood Craze.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7"],
+      "replaces": "fury-dw-raid"
+    },
+    {
+      "id": "protection-ml-tank",
+      "name": "Protection — Raid tank (machine-learning search)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-10-28",
+      "derived": "raid",
+      "summary": "The Protection tank build the machine-learning talent search found in the community simulator on 2026-10-28 (raidsim/deep_tank.py: a random forest guiding a genetic search over every legal build of the spec, scored on tank value: threat per second and damage taken under boss melee; the rotation tuned with it; races on fresh seeds; every build one or two moves from the winner checked). The simulator's model of the beta, not an in-game measurement.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Deflection", 5],
+          ["Improved Rend", 3],
+          ["Improved Overpower", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 3]
+        ],
+        "Protection": [
+          ["Shield Specialization", 5],
+          ["Anticipation", 5],
+          ["Improved Revenge", 3],
+          ["Master of Defense", 2],
+          ["Defiance", 3],
+          ["Improved Sunder Armor", 3],
+          ["Concussion Blow", 1],
+          ["Focused Rage", 3],
+          ["Bastion", 5],
+          ["Shield Slam", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Final race over 100,000 fights: tank value 1.129 ± 0.000 (relative to prot-raid-tank over 20,000 fights); protection-ml-tank 1.126, opt-prot-tank-raid-tank 1.115, prot-raid-tank 1.109.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 193 one-move and 17,130 two-move builds, none better."],
+      "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
+      "sources": []
     }
   ]
 }

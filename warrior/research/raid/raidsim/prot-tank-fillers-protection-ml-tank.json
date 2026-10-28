@@ -3,33 +3,33 @@
  "spec": "prot-tank",
  "build": "protection-ml-tank",
  "setting": "raid",
- "date": "2026-10-15",
+ "date": "2026-10-28",
  "tank": true,
  "removal": {
-  "Anticipation": 0.023645299756387628,
-  "Bastion": 0.0322206940671248,
+  "Anticipation": 0.020128984300589847,
+  "Bastion": 0.03772267443549526,
   "Concussion Blow": -0.0,
-  "Cruelty": 0.01321976737373709,
-  "Deep Wounds": 0.00746465143083852,
-  "Defiance": 0.06471459364105292,
-  "Deflection": 0.0370007502438765,
-  "Focused Rage": 0.027979169893368905,
-  "Impale": 0.009077199778028344,
-  "Improved Bloodrage": 0.004440724794328776,
-  "Improved Charge": -0.0,
-  "Improved Heroic Strike": 0.01516126027273157,
-  "Improved Rend": 0.005163233570322889,
-  "Improved Revenge": 0.024999036147598797,
-  "Improved Sunder Armor": -0.0,
-  "Master of Defense": 0.007266539243978687,
-  "Shield Slam": 0.10889323779342519,
-  "Shield Specialization": 0.018083142828601906
+  "Cruelty": 0.011886422112326489,
+  "Deep Wounds": 0.006665328755524058,
+  "Defiance": 0.0652173913043479,
+  "Deflection": 0.039404176057167284,
+  "Focused Rage": 0.030541026129881965,
+  "Impale": 0.011511607128050771,
+  "Improved Heroic Strike": 0.00828507895049957,
+  "Improved Overpower": -0.0,
+  "Improved Rend": 0.0036798060150504686,
+  "Improved Revenge": 0.0782568845878483,
+  "Improved Sunder Armor": 0.007456572897305058,
+  "Master of Defense": 0.013607496123313245,
+  "Shield Slam": 0.02398963883069083,
+  "Shield Specialization": 0.017085067618476724
  },
  "free": [
-  "Improved Charge",
-  "Improved Sunder Armor"
+  "Improved Overpower"
  ],
- "kept_for_rotation": [],
+ "kept_for_rotation": [
+  "Shield Slam"
+ ],
  "active_never_worth": [
   "Concussion Blow"
  ],
@@ -51,7 +51,7 @@
     3
    ],
    [
-    "Improved Charge",
+    "Improved Overpower",
     1
    ],
    [
@@ -70,10 +70,6 @@
    ]
   ],
   "Protection": [
-   [
-    "Improved Bloodrage",
-    2
-   ],
    [
     "Shield Specialization",
     5
@@ -96,7 +92,7 @@
    ],
    [
     "Improved Sunder Armor",
-    1
+    3
    ],
    [
     "Concussion Blow",
@@ -131,7 +127,7 @@
     3
    ],
    [
-    "Improved Charge",
+    "Improved Overpower",
     1
    ],
    [
@@ -150,10 +146,6 @@
    ]
   ],
   "Protection": [
-   [
-    "Improved Bloodrage",
-    2
-   ],
    [
     "Shield Specialization",
     5
@@ -176,7 +168,7 @@
    ],
    [
     "Improved Sunder Armor",
-    1
+    3
    ],
    [
     "Concussion Blow",

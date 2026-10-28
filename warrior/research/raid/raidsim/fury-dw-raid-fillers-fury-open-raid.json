@@ -3,79 +3,50 @@
  "spec": "fury-dw-raid",
  "build": "fury-open-raid",
  "setting": "raid",
- "date": "2026-10-11",
+ "date": "2026-10-28",
  "tank": false,
  "removal": {
-  "Anger Management": 0.010036657435068874,
-  "Bloodthirst": 0.0924449350079719,
-  "Booming Voice": -0.0,
-  "Cruelty": 0.04087885511681899,
-  "Death Wish": 0.043252371254468014,
-  "Deep Wounds": 0.04514964084707629,
-  "Dual Wield Specialization": 0.06812758576419753,
-  "Flurry": 0.14182323051442947,
-  "Furious Precision": 0.04083466596537455,
-  "Impale": 0.029179852803695616,
-  "Improved Bloodrage": 0.003854280767284668,
-  "Improved Execute": 0.013969770408923221,
-  "Improved Heroic Strike": 0.00453875655478575,
+  "Anger Management": 0.011937338949156606,
+  "Blood Craze": -0.0,
+  "Bloodthirst": 0.09726879426181623,
+  "Cruelty": 0.05917722394398617,
+  "Death Wish": 0.047567575593371325,
+  "Deep Wounds": 0.06125510891947261,
+  "Deflection": -0.0,
+  "Dual Wield Specialization": 0.08134469234307395,
+  "Flurry": 0.14334858455479071,
+  "Furious Precision": 0.028621966436999435,
+  "Impale": 0.029065146589574264,
+  "Improved Bloodrage": 0.006173549061588179,
+  "Improved Execute": 0.023123136275725042,
+  "Improved Heroic Strike": 0.004007892948401426,
   "Improved Rend": -0.0,
   "Improved Tactical Mastery": -0.0,
-  "Raging Blows": 0.005120910121524935,
-  "Unbridled Wrath": 0.014284928882537296
+  "Raging Blows": 0.007242385322569822,
+  "Unbridled Wrath": 0.015978605518155775
  },
  "free": [
-  "Booming Voice",
+  "Blood Craze",
+  "Deflection",
   "Improved Rend",
   "Improved Tactical Mastery"
  ],
- "kept_for_rotation": [],
+ "kept_for_rotation": [
+  "Bloodthirst"
+ ],
  "active_never_worth": [],
  "abilities_never_cast": [],
- "moves": [
-  {
-   "round": 1,
-   "kind": "utility",
-   "from": "Booming Voice",
-   "to": "Deflection",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Booming Voice",
-   "to": "Blood Craze",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Booming Voice",
-   "to": "Blood Craze",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Booming Voice",
-   "to": "Blood Craze",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  }
- ],
+ "moves": [],
  "final_seed3": 0.0,
  "start": {
   "Arms": [
    [
     "Improved Heroic Strike",
     3
+   ],
+   [
+    "Deflection",
+    1
    ],
    [
     "Improved Rend",
@@ -100,10 +71,6 @@
   ],
   "Fury": [
    [
-    "Booming Voice",
-    4
-   ],
-   [
     "Cruelty",
     5
    ],
@@ -113,6 +80,10 @@
    ],
    [
     "Furious Precision",
+    3
+   ],
+   [
+    "Blood Craze",
     3
    ],
    [
@@ -154,6 +125,10 @@
     3
    ],
    [
+    "Deflection",
+    1
+   ],
+   [
     "Improved Rend",
     3
    ],
@@ -172,10 +147,6 @@
    [
     "Impale",
     2
-   ],
-   [
-    "Deflection",
-    1
    ]
   ],
   "Fury": [
@@ -189,6 +160,10 @@
    ],
    [
     "Furious Precision",
+    3
+   ],
+   [
+    "Blood Craze",
     3
    ],
    [
@@ -214,10 +189,6 @@
    [
     "Bloodthirst",
     1
-   ],
-   [
-    "Blood Craze",
-    3
    ]
   ],
   "Protection": [
