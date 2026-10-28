@@ -10,24 +10,21 @@ Missing: Soul Harvest
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology | 3 | +15.35% | manual |
-| Bane | Destruction | 1 | +1.86% | manual |
-| Conflagrate | Destruction | 4 | +1.71% | manual |
-| Agonizing Flames | Destruction | 4 | +1.64% | manual |
-| Improved Shadow Bolt | Destruction | 1 | +1.32% | manual |
+| Demonic Sacrifice | Demonology | 3 | +15.61% | manual |
+| Bane | Destruction | 1 | +1.88% | manual |
+| Agonizing Flames | Destruction | 4 | +1.67% | manual |
+| Shadow Mastery | Affliction | 6 | +1.52% | manual |
+| Improved Shadow Bolt | Destruction | 1 | +1.27% | manual |
 | Suppression | Affliction | 1 | +1.19% | manual |
-| Improved Corruption | Affliction | 1 | +0.88% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.76% | manual |
-| Amplify Curse | Affliction | 3 | +0.76% | manual |
-| Ruin | Destruction | 3 | +0.73% | manual |
-| Malevolence | Affliction | 4 | +0.58% | manual |
-| Pandemic | Affliction | 3 | +0.56% | manual |
-| Wrack | Affliction | 7 | +0.43% | manual |
-| Malediction | Affliction | 2 | +0.43% | manual |
-| Shadow Mastery | Affliction | 6 | +0.32% | manual |
-| Aftermath | Destruction | 2 | +0.29% | manual |
+| Ruin | Destruction | 3 | +0.98% | manual |
+| Improved Corruption | Affliction | 1 | +0.90% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.72% | manual |
+| Malevolence | Affliction | 4 | +0.56% | manual |
+| Pandemic | Affliction | 3 | +0.54% | manual |
+| Wrack | Affliction | 7 | +0.42% | manual |
+| Aftermath | Destruction | 2 | +0.28% | manual |
 | Improved Life Tap | Affliction | 1 | +0.24% | manual |
-| Nightfall | Affliction | 4 | +0.23% | manual |
+| Nightfall | Affliction | 4 | +0.24% | manual |
 | Fel Vitality | Demonology | 2 | +0.13% | manual |
 | Cataclysm | Destruction | 2 | +0.10% | manual |
 | Decimation | Demonology | 4 | +0.09% | manual |
@@ -38,34 +35,37 @@ Missing: Soul Harvest
 | Soul Harvest | Affliction | 2 | +0.00% | missing |
 | Master Summoner | Demonology | 3 | +0.00% | manual |
 | Demonic Aegis | Demonology | 2 | +0.00% | manual |
+| Grim Reach | Affliction | 2 | +0.00% | manual |
 | Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
+| Siphon Life | Affliction | 5 | +0.00% | manual |
+| Soul Siphon | Affliction | 5 | +0.00% | manual |
 
-## Optimized build: 10/11/30  score +90.96%  (dps x1.905, sustain x1.020, surv x1.020, utility +0.00%)
+## Optimized build: 10/11/30  score +89.62%  (dps x1.892, sustain x1.020, surv x1.020, utility +0.00%)
 
 ```
   Affliction: Suppression 5, Improved Corruption 5
   Demonology: Demonic Embrace 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
-  Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 2, Ruin 5, Shadowburn 1, Conflagrate 1, Agonizing Flames 3, Fire and Brimstone 3, Shadow and Flame 5
+  Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 2, Ruin 5, Shadowburn 1, Agonizing Flames 3, Conflagrate 1, Fire and Brimstone 3, Shadow and Flame 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Improved Bane of Agony | Affliction 3 | 1/2 | +1.07% | yes |
-| Amplify Curse | Affliction 3 | 1/1 | +1.07% | yes |
-| Malevolence | Affliction 4 | 1/5 | +0.85% | no |
-| Pandemic | Affliction 3 | 1/3 | +0.83% | yes |
-| Aftermath | Destruction 2 | 3/5 | +0.81% | yes |
-| Malediction | Affliction 2 | 1/5 | +0.78% | yes |
-| Wrack | Affliction 7 | 1/1 | +0.72% | no |
-| Shadow Mastery | Affliction 6 | 1/5 | +0.46% | no |
-| Nightfall | Affliction 4 | 1/2 | +0.45% | no |
+| Shadow Mastery | Affliction 6 | 1/5 | +2.21% | no |
+| Improved Bane of Agony | Affliction 3 | 1/2 | +1.02% | yes |
+| Malevolence | Affliction 4 | 1/5 | +0.83% | no |
+| Pandemic | Affliction 3 | 1/3 | +0.81% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.70% | no |
+| Aftermath | Destruction 2 | 3/5 | +0.69% | yes |
+| Nightfall | Affliction 4 | 1/2 | +0.47% | no |
 | Improved Life Tap | Affliction 1 | 1/2 | +0.24% | yes |
-| Decimation | Demonology 4 | 1/2 | +0.18% | no |
+| Decimation | Demonology 4 | 1/2 | +0.19% | no |
 | Cataclysm | Destruction 2 | 1/3 | +0.10% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
 | Intensity | Destruction 4 | 1/3 | +0.00% | yes |
 | Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
+| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |
+| Soul Harvest | Affliction 2 | 1/2 | +0.00% | yes |
 

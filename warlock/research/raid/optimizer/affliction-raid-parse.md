@@ -10,28 +10,27 @@ Missing: Soul Harvest
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Demonic Knowledge | Demonology | 5 | +2.12% | manual |
-| Agonizing Flames | Destruction | 4 | +1.83% | manual |
-| Bane | Destruction | 1 | +1.74% | manual |
-| Master Demonologist | Demonology | 6 | +1.61% | manual |
-| Improved Shadow Bolt | Destruction | 1 | +1.04% | manual |
+| Demonic Knowledge | Demonology | 5 | +2.11% | manual |
+| Agonizing Flames | Destruction | 4 | +1.82% | manual |
+| Bane | Destruction | 1 | +1.72% | manual |
+| Shadow Mastery | Affliction | 6 | +1.69% | manual |
+| Master Demonologist | Demonology | 6 | +1.63% | manual |
+| Improved Shadow Bolt | Destruction | 1 | +1.06% | manual |
+| Demonic Sacrifice | Demonology | 3 | +1.03% | manual |
 | Suppression | Affliction | 1 | +0.92% | manual |
-| Pandemic | Affliction | 3 | +0.89% | manual |
-| Shadow Mastery | Affliction | 6 | +0.83% | manual |
+| Pandemic | Affliction | 3 | +0.91% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.81% | manual |
 | Improved Corruption | Affliction | 1 | +0.79% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.76% | manual |
 | Improved Life Tap | Affliction | 1 | +0.72% | manual |
 | Ruin | Destruction | 3 | +0.69% | manual |
-| Aftermath | Destruction | 2 | +0.56% | manual |
-| Decimation | Demonology | 4 | +0.53% | manual |
-| Malevolence | Affliction | 4 | +0.50% | manual |
-| Amplify Curse | Affliction | 3 | +0.42% | manual |
-| Malediction | Affliction | 2 | +0.41% | manual |
-| Wrack | Affliction | 7 | +0.40% | manual |
-| Demonic Sacrifice | Demonology | 3 | +0.33% | manual |
-| Nightfall | Affliction | 4 | +0.22% | manual |
+| Decimation | Demonology | 4 | +0.54% | manual |
+| Aftermath | Destruction | 2 | +0.51% | manual |
+| Malevolence | Affliction | 4 | +0.51% | manual |
+| Amplify Curse | Affliction | 3 | +0.44% | manual |
+| Wrack | Affliction | 7 | +0.41% | manual |
+| Nightfall | Affliction | 4 | +0.23% | manual |
 | Fel Vitality | Demonology | 2 | +0.13% | manual |
-| Unholy Power | Demonology | 1 | +0.12% | manual |
+| Unholy Power | Demonology | 1 | +0.11% | manual |
 | Cataclysm | Destruction | 2 | +0.10% | manual |
 | Fel Concentration | Affliction | 3 | +0.01% | manual |
 | Intensity | Destruction | 4 | +0.01% | manual |
@@ -40,11 +39,12 @@ Missing: Soul Harvest
 | Soul Harvest | Affliction | 2 | +0.00% | missing |
 | Master Summoner | Demonology | 3 | +0.00% | manual |
 | Demonic Aegis | Demonology | 2 | +0.00% | manual |
+| Grim Reach | Affliction | 2 | +0.00% | manual |
 
-## Optimized build: 30/0/21  score +61.88%  (dps x1.604, sustain x1.072, surv x1.000, utility +0.00%)
+## Optimized build: 30/0/21  score +68.19%  (dps x1.667, sustain x1.072, surv x1.000, utility +0.00%)
 
 ```
-  Affliction: Suppression 5, Improved Corruption 5, Improved Life Tap 2, Malediction 2, Pandemic 3, Improved Bane of Agony 2, Amplify Curse 1, Malevolence 5, Shadow Mastery 5
+  Affliction: Suppression 5, Improved Corruption 5, Improved Life Tap 2, Pandemic 3, Improved Bane of Agony 2, Amplify Curse 1, Malevolence 5, Nightfall 2, Shadow Mastery 5
   Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 3, Ruin 5, Agonizing Flames 3
 ```
 
@@ -52,19 +52,19 @@ Missing: Soul Harvest
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology 3 | 1/1 | +4.01% | no |
-| Demonic Knowledge | Demonology 5 | 1/3 | +3.33% | no |
-| Master Demonologist | Demonology 6 | 1/5 | +2.56% | no |
-| Decimation | Demonology 4 | 1/2 | +0.90% | no |
-| Aftermath | Destruction 2 | 4/5 | +0.84% | yes |
-| Wrack | Affliction 7 | 1/1 | +0.63% | no |
-| Malediction | Affliction 2 | 3/5 | +0.63% | yes |
-| Nightfall | Affliction 4 | 1/2 | +0.38% | yes |
+| Demonic Sacrifice | Demonology 3 | 1/1 | +5.29% | no |
+| Demonic Knowledge | Demonology 5 | 1/3 | +3.45% | no |
+| Master Demonologist | Demonology 6 | 1/5 | +2.71% | no |
+| Decimation | Demonology 4 | 1/2 | +0.97% | no |
+| Aftermath | Destruction 2 | 4/5 | +0.75% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.66% | no |
 | Fel Vitality | Demonology 2 | 1/3 | +0.13% | no |
-| Unholy Power | Demonology 1 | 1/5 | +0.12% | yes |
+| Unholy Power | Demonology 1 | 1/5 | +0.11% | yes |
 | Cataclysm | Destruction 2 | 1/3 | +0.10% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
 | Intensity | Destruction 4 | 1/3 | +0.00% | yes |
 | Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
 | Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
+| Soul Harvest | Affliction 2 | 1/2 | +0.00% | yes |
+| Master Summoner | Demonology 3 | 1/2 | +0.00% | no |
 

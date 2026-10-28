@@ -20,22 +20,41 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 25311
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
         }
        }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 25311
-        }
-       }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -43,7 +62,8 @@
       "spellId": 25311
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-28: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -153,47 +173,6 @@
     "castSpell": {
      "spellId": {
       "otherId": "OtherActionPotion"
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "60%"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "itemId": 12662
      }
     }
    }

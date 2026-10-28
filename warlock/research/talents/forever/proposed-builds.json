@@ -1015,237 +1015,6 @@
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
     {
-      "id": "opt-affliction-raid-parse",
-      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +61.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 5],
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Amplify Curse", 1],
-          ["Improved Bane of Agony", 2],
-          ["Pandemic", 3],
-          ["Malevolence", 5],
-          ["Nightfall", 2],
-          ["Shadow Mastery", 5]
-        ],
-        "Demonology": [],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Aftermath", 3],
-          ["Ruin", 5],
-          ["Agonizing Flames", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Bane", "why": "Removing it costs 14.4 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 7.9 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Ruin", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Malevolence", "why": "Removing it costs 6.5 points of score in this model."},
-        {"talent": "Shadow Mastery", "why": "Removing it costs 6.4 points of score in this model."},
-        {"talent": "Improved Corruption", "why": "Removing it costs 6.1 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-parse.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Malediction 2 gone; +1 Nightfall (tier gating for Shadow Mastery); +1 Nightfall (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
-    },
-    {
-      "id": "opt-fire-destro-raid-parse",
-      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +91.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Fel Vitality", 3],
-          ["Demonic Aegis", 2],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Aftermath", 2],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Conflagrate", 1],
-          ["Agonizing Flames", 3],
-          ["Fire and Brimstone", 3],
-          ["Shadow and Flame", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "Removing it costs 26.5 points of score in this model."},
-        {"talent": "Shadow and Flame", "why": "Removing it costs 20.0 points of score in this model."},
-        {"talent": "Bane", "why": "Removing it costs 19.7 points of score in this model."},
-        {"talent": "Conflagrate", "why": "Removing it costs 13.3 points of score in this model."},
-        {"talent": "Shadowburn", "why": "Removing it costs 13.1 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 10.7 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 10.7 points of score in this model."},
-        {"talent": "Ruin", "why": "Removing it costs 8.3 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/fire-destro-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
-    },
-    {
-      "id": "opt-sb-raid-parse",
-      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +97.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Fel Vitality", 3],
-          ["Demonic Aegis", 2],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Aftermath", 2],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Conflagrate", 1],
-          ["Agonizing Flames", 3],
-          ["Fire and Brimstone", 3],
-          ["Shadow and Flame", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "Removing it costs 25.8 points of score in this model."},
-        {"talent": "Conflagrate", "why": "Removing it costs 25.8 points of score in this model."},
-        {"talent": "Shadow and Flame", "why": "Removing it costs 25.0 points of score in this model."},
-        {"talent": "Bane", "why": "Removing it costs 20.3 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 13.3 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 11.1 points of score in this model."},
-        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 10.5 points of score in this model."},
-        {"talent": "Improved Corruption", "why": "Removing it costs 9.1 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
-    },
-    {
-      "id": "shadow-bolt-hybrid-fire-open-raid",
-      "name": "Shadow Bolt hybrid — Fire (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Affliction/Destruction",
-      "generated": "2026-10-12",
-      "derived": "raid",
-      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.8% over destruction-fire-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 3],
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Bane of Agony", 2],
-          ["Pandemic", 3],
-          ["Malevolence", 5]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Demonic Aegis", 2],
-          ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Cataclysm", 2],
-          ["Ruin", 5],
-          ["Agonizing Flames", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "81 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Bane", "why": "81 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Shadow Bolt", "why": "57 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Agonizing Flames", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruin", "why": "43 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Suppression", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malevolence", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Pandemic", "why": "21 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["The best fire build: +1.8% over destruction-fire-raid, the best of our builds in fire-destro-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (fire-destro-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 709.6 DPS; destruction-fire-raid 697.1 in the same fights; 4,669 builds simulated, 2 independent runs reached the top.", "The fire-destro-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.6%, sb-raid -0.5%, demonology-raid -0.5%, incinerate-raid -0.9%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Health Funnel, Improved Imp, Unholy Power, Demonic Aegis.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-12 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival). Net +0.01% on a third seed.", "2026-10-16 (repair_builds.py, client build 70425 trees): 20/11/20 -> 20/11/20; Malediction 2 gone; +1 Improved Life Tap (tier gating for Improved Bane of Agony); +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)."],
-      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/15220020035-2103103001-0550205003-6"]
-    },
-    {
-      "id": "shadow-bolt-hybrid-open-raid",
-      "name": "Shadow Bolt hybrid — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Affliction/Destruction",
-      "generated": "2026-10-12",
-      "derived": "raid",
-      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over opt-sb-raid-raid-dps, the best of our builds in that rotation.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 3],
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Bane of Agony", 2],
-          ["Pandemic", 3],
-          ["Malevolence", 5]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Demonic Aegis", 2],
-          ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Cataclysm", 1],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Agonizing Flames", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "85 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Bane", "why": "78 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Shadow Bolt", "why": "60 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Agonizing Flames", "why": "45 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruin", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Suppression", "why": "37 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malevolence", "why": "36 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Pandemic", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+0.9% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 731.1 DPS; opt-sb-raid-raid-dps 726.6, ds-ruin-raid 724.5, destruction-ml-raid 711.9 in the same fights; 4,633 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): destruction-fire-raid 692.5.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.4%, fire-destro-raid +0.2%, demonology-raid -0.7%, incinerate-raid -1.6%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Imp, Unholy Power, Improved Voidwalker.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-12 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net -0.04% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Affliction/Destruction: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 20/11/20 -> 20/11/20; Malediction 1 gone; +1 Improved Corruption (tier gating for Improved Bane of Agony) (refill: the affliction-raid model, raid-dps)."],
-      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25210020035-0204013001-0550105103-6"],
-      "replaces": "ds-ruin-raid"
-    },
-    {
       "id": "opt-affliction-leveling-leveling-st",
       "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-st)",
       "role": "dps",
@@ -1394,141 +1163,6 @@
         {"levels": "57", "tree": "Demonology", "talent": "Soul Link", "points": 1},
         {"levels": "58-60", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3}
       ]
-    },
-    {
-      "id": "opt-affliction-raid-raid-dps",
-      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +66.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5],
-          ["Improved Life Tap", 2],
-          ["Pandemic", 3],
-          ["Improved Bane of Agony", 2],
-          ["Amplify Curse", 1],
-          ["Malevolence", 5],
-          ["Nightfall", 2],
-          ["Shadow Mastery", 5]
-        ],
-        "Demonology": [],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Cataclysm", 3],
-          ["Ruin", 5],
-          ["Agonizing Flames", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Bane", "why": "Removing it costs 14.7 points of score in this model."},
-        {"talent": "Shadow Mastery", "why": "Removing it costs 13.0 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 9.8 points of score in this model."},
-        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.4 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 7.3 points of score in this model."},
-        {"talent": "Malevolence", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Improved Corruption", "why": "Removing it costs 6.5 points of score in this model."},
-        {"talent": "Ruin", "why": "Removing it costs 6.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
-    },
-    {
-      "id": "opt-fire-destro-raid-raid-dps",
-      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +96.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Corruption", 3]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Fel Vitality", 3],
-          ["Demonic Aegis", 2],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Cataclysm", 3],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Conflagrate", 1],
-          ["Agonizing Flames", 3],
-          ["Fire and Brimstone", 2],
-          ["Shadow and Flame", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "Removing it costs 27.2 points of score in this model."},
-        {"talent": "Shadow and Flame", "why": "Removing it costs 20.5 points of score in this model."},
-        {"talent": "Bane", "why": "Removing it costs 20.1 points of score in this model."},
-        {"talent": "Shadowburn", "why": "Removing it costs 13.4 points of score in this model."},
-        {"talent": "Conflagrate", "why": "Removing it costs 12.7 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 11.1 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 11.0 points of score in this model."},
-        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/fire-destro-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
-    },
-    {
-      "id": "opt-sb-raid-raid-dps",
-      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +106.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Corruption", 3]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Fel Vitality", 3],
-          ["Demonic Aegis", 2],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Improved Shadow Bolt", 5],
-          ["Aftermath", 2],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Conflagrate", 1],
-          ["Agonizing Flames", 3],
-          ["Fire and Brimstone", 3],
-          ["Shadow and Flame", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Conflagrate", "why": "Removing it costs 27.2 points of score in this model."},
-        {"talent": "Demonic Sacrifice", "why": "Removing it costs 27.0 points of score in this model."},
-        {"talent": "Shadow and Flame", "why": "Removing it costs 26.3 points of score in this model."},
-        {"talent": "Bane", "why": "Removing it costs 21.2 points of score in this model."},
-        {"talent": "Agonizing Flames", "why": "Removing it costs 13.9 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 11.6 points of score in this model."},
-        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 11.0 points of score in this model."},
-        {"talent": "Fel Vitality", "why": "Removing it costs 8.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"]
     },
     {
       "id": "opt-affliction-leveling-leveling-aoe",
@@ -1911,6 +1545,323 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 45.74; destruction-leveling 50.82. The search simulated 26,746 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Destruction leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/15-0015032-0050325133111351-7"]
+    },
+    {
+      "id": "opt-affliction-raid-raid-dps",
+      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +66.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Life Tap", 2],
+          ["Improved Bane of Agony", 2],
+          ["Pandemic", 3],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Cataclysm", 3],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Bane", "why": "Removing it costs 14.6 points of score in this model."},
+        {"talent": "Shadow Mastery", "why": "Removing it costs 13.2 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 9.8 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.6 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 7.2 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 6.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-affliction-raid-parse",
+      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +68.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Life Tap", 2],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 3],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Bane", "why": "Removing it costs 14.8 points of score in this model."},
+        {"talent": "Shadow Mastery", "why": "Removing it costs 13.1 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.5 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 6.9 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 6.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-fire-destro-raid-raid-dps",
+      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +95.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Improved Health Funnel", 2],
+          ["Improved Imp", 3],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Cataclysm", 3],
+          ["Ruin", 4],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 27.2 points of score in this model."},
+        {"talent": "Shadow and Flame", "why": "Removing it costs 19.9 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 19.8 points of score in this model."},
+        {"talent": "Shadowburn", "why": "Removing it costs 13.5 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 11.0 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 11.0 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 9.1 points of score in this model."},
+        {"talent": "Conflagrate", "why": "Removing it costs 8.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-fire-destro-raid-r8 on 2026-10-28: the optimizer's earlier round beat its last export in the community simulator (674 vs 667 DPS; the calibration moved the model past the better build).", "Report: warlock/research/talents/forever/optimizer/fire-destro-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-fire-destro-raid-parse",
+      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +89.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 2],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Fire and Brimstone", 3],
+          ["Shadow and Flame", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 26.6 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 19.5 points of score in this model."},
+        {"talent": "Shadow and Flame", "why": "Removing it costs 19.5 points of score in this model."},
+        {"talent": "Shadowburn", "why": "Removing it costs 13.2 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Conflagrate", "why": "Removing it costs 8.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/fire-destro-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-sb-raid-raid-dps",
+      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +98.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 1],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Improved Health Funnel", 2],
+          ["Improved Imp", 3],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 26.2 points of score in this model."},
+        {"talent": "Conflagrate", "why": "Removing it costs 25.9 points of score in this model."},
+        {"talent": "Shadow and Flame", "why": "Removing it costs 25.1 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 20.4 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 13.4 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 7.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-sb-raid-r6 on 2026-10-28: the optimizer's earlier round beat its last export in the community simulator (697 vs 672 DPS; the calibration moved the model past the better build).", "Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-sb-raid-parse",
+      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +97.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 2],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Conflagrate", 1],
+          ["Agonizing Flames", 3],
+          ["Fire and Brimstone", 3],
+          ["Shadow and Flame", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 26.0 points of score in this model."},
+        {"talent": "Conflagrate", "why": "Removing it costs 25.6 points of score in this model."},
+        {"talent": "Shadow and Flame", "why": "Removing it costs 24.8 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 20.2 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 13.3 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 11.1 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 9.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "shadow-bolt-hybrid-open-raid",
+      "name": "Shadow Bolt hybrid — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Affliction/Destruction",
+      "generated": "2026-10-28",
+      "derived": "raid",
+      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-28: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over ds-ruin-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5],
+          ["Bane", 5],
+          ["Cataclysm", 1],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "93 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bane", "why": "84 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Shadow Bolt", "why": "62 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Agonizing Flames", "why": "48 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ruin", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Malevolence", "why": "40 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Suppression", "why": "39 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Corruption", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+0.6% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 21/11/19 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 794.8 DPS; ds-ruin-raid 790.3, opt-sb-raid-raid-dps 788.1, shadow-bolt-hybrid-open-raid 786.0, destruction-ml-raid 763.7 in the same fights; 2,636 builds simulated, 1 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-fire-destro-raid-raid-dps 755.8, destruction-fire-raid 749.0.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.1%, fire-destro-raid -1.0%, demonology-raid -1.2%, incinerate-raid -1.0%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Demonic Embrace, Demonic Aegis.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7"],
+      "replaces": "ds-ruin-raid"
     }
   ]
 }

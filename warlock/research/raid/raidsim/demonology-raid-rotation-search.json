@@ -144,11 +144,11 @@
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-28",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\demonic_pact.apl.json",
   "builds": [
    {
@@ -232,35 +232,47 @@
   "final": {
    "raid": {
     "demonology-ml-raid": {
-     "before": 836.9949978719092,
-     "after": 832.4345979973976,
-     "base": 836.9949978719092,
+     "before": 876.6078005282508,
+     "after": 868.3172704591246,
+     "base": 876.6078005282508,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.5329627000000017,
-     "oom_after": 1.5329627000000017
+     "oom_before": 0.33611804992567296,
+     "oom_after": 0.33611804992567296
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 804.8886193078832,
-     "after": 797.7620101566171,
-     "base": 804.8886193078832,
+     "before": 840.866115658927,
+     "after": 832.8026640740935,
+     "base": 840.866115658927,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.3533554500000067,
-     "oom_after": 1.3533554500000067
+     "oom_before": 0.29309564992907894,
+     "oom_after": 0.29309564992907894
     },
     "demonology-pact-raid": {
-     "before": 833.0138647284667,
-     "after": 826.9055808655078,
-     "base": 833.0138647284667,
+     "before": 872.9347754177181,
+     "after": 864.1100635334822,
+     "base": 872.9347754177181,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.3497466500000015,
-     "oom_after": 1.3497466500000015
+     "oom_before": 0.3158359999329254,
+     "oom_after": 0.3158359999329254
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Demonology"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

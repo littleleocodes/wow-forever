@@ -80,8 +80,8 @@
  "raid": {
   "class": "warlock",
   "spec": "incinerate-raid",
-  "date": "2026-10-12",
-  "commit": "2ce8265",
+  "date": "2026-10-28",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
@@ -89,11 +89,16 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "25300020035-0105103001-0550205003"
+    "talents": "25300020035-0050203001-0550205003"
    },
    {
     "label": "destruction-incinerate-raid",
     "talents": "153-0050203001-0050245103101351",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Destro",
+    "talents": "2530000013-0004-0050355103101351",
     "protect_only": true
    }
   ],
@@ -166,31 +171,71 @@
     "gain_seed2": 0.0019884794519258175,
     "candidates": 554,
     "pass": 2
+   },
+   {
+    "round": 9,
+    "change": "only with 20s or more of the fight left: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.0019131432916015267,
+    "gain_seed2": 0.001753055221485722,
+    "candidates": 541,
+    "pass": 3
+   },
+   {
+    "round": 10,
+    "change": "drop: if time left in the fight \u2265 15s and mana % \u2264 60%: cast Demonic Rune",
+    "gain_seed1": 0.002374645227093186,
+    "gain_seed2": 0.002083933490886647,
+    "candidates": 514,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 305.05950881763806,
-     "after": 703.7501366432501,
-     "base": 305.05950881763806,
+     "before": 339.8927751269838,
+     "after": 766.56900562794,
+     "base": 339.8927751269838,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7759987500000016,
-     "oom_after": 1.0563302999999993
+     "oom_before": 0.26869269997239104,
+     "oom_after": 0.21043049997845356
     },
     "destruction-incinerate-raid": {
-     "before": 609.4941528468396,
-     "after": 671.6723969682404,
-     "base": 609.4941528468396,
+     "before": 695.648268330335,
+     "after": 715.9611269471216,
+     "base": 695.648268330335,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0369944993609528,
-     "oom_after": 1.3457426483773596
+     "oom_before": 0.30319389992793244,
+     "oom_after": 0.24313139994753982
+    },
+    "sim preset: Destro": {
+     "before": 687.0137201556487,
+     "after": 662.2480106476785,
+     "base": 687.0137201556487,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.44470769990701536,
+     "oom_after": 0.4063075499214737
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Destruction",
+    "Hybrid Affliction/Destruction"
+   ],
+   "required": [
+    "Shadow Bolt"
+   ],
+   "rejected": {
+    "structure": 190,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-10-09",
-  "passes": 2
+  "passes": 4
  }
 }

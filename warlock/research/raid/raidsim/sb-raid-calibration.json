@@ -7,8 +7,10 @@
   "ds-ruin-raid",
   "opt-sb-raid-raid-dps",
   "destruction-ml-raid",
+  "shadow-bolt-hybrid-open-raid",
   "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-hand-2026-09-26.json",
-  "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json",
+  "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-preset-aff-wrack.json",
+  "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-preset-sm-ruin.json",
   "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-r1.json",
   "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-r10.json",
   "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-r2.json",
@@ -21,12 +23,16 @@
   "F:\\wow-forever\\warlock\\research\\raid\\raidsim\\candidates\\cand-sb-raid-r9.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
+  "commit": "30f67f5d2",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70450",
   "spec_folder": "warlock/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/warlock/sb-raid.apl.json",
-  "apl_sim": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+  "apl_sim": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/ds_ruin.apl.json",
   "race": "RaceGnome",
   "setting": "dummy",
   "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
@@ -39,9 +45,11 @@
    "alcoholId": 21151,
    "foodId": 18254,
    "potId": 13444,
-   "conjuredId": 12662
+   "conjuredId": 12662,
+   "mhImbueId": 25122,
+   "extraMhImbueId": 13603
   },
-  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
   "duration": 180.0
@@ -49,9 +57,9 @@
  "talents": [
   {
    "talent": "Shadow and Flame",
-   "sim": 0.14089672369768236,
-   "ev_before": 0.14432114052845213,
-   "ev_after": 0.14439092501696482,
+   "sim": 0.143758738871843,
+   "ev_before": 0.1434769920209406,
+   "ev_after": 0.14347549776519786,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -63,17 +71,17 @@
   },
   {
    "talent": "Demonic Sacrifice",
-   "sim": 0.1251770588074463,
-   "ev_before": 0.14697869006413908,
-   "ev_after": 0.14694550308612264,
+   "sim": 0.1265279517773247,
+   "ev_before": 0.14798228785670817,
+   "ev_after": 0.14798168781750548,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -88,17 +96,19 @@
   },
   {
    "talent": "Bane",
-   "sim": 0.10001236074170711,
-   "ev_before": 0.10775235741766394,
-   "ev_after": 0.10770429640349716,
+   "sim": 0.09967004700424752,
+   "ev_before": 0.10755806186000799,
+   "ev_after": 0.10755707397243693,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -109,20 +119,35 @@
     "cand-sb-raid-r7",
     "cand-sb-raid-r8",
     "cand-sb-raid-r9"
+   ]
+  },
+  {
+   "talent": "Shadow Mastery",
+   "sim": 0.08749938547880487,
+   "ev_before": 0.09047300405337969,
+   "ev_after": 0.09047237704111377,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin"
    ]
   },
   {
    "talent": "Agonizing Flames",
-   "sim": 0.06301973677603463,
-   "ev_before": 0.06954938186526763,
-   "ev_after": 0.06951579484603945,
+   "sim": 0.06279060455913103,
+   "ev_before": 0.06950534917506757,
+   "ev_after": 0.06950473323911731,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -136,32 +161,20 @@
    ]
   },
   {
-   "talent": "Conflagrate",
-   "sim": 0.05839972399782024,
-   "ev_before": 0.14509151302577833,
-   "ev_after": 0.1451647562260701,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "builds": [
-    "opt-sb-raid-raid-dps",
-    "destruction-ml-raid",
-    "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-r10"
-   ]
-  },
-  {
    "talent": "Improved Shadow Bolt",
-   "sim": 0.05316746945781803,
-   "ev_before": 0.05839745672093913,
-   "ev_after": 0.058386166762253805,
+   "sim": 0.0547354531531796,
+   "ev_before": 0.05881480886199863,
+   "ev_after": 0.05881544510675423,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -176,14 +189,16 @@
   },
   {
    "talent": "Malevolence",
-   "sim": 0.053127063415024156,
-   "ev_before": 0.05295753790129798,
-   "ev_after": 0.05295612264474725,
+   "sim": 0.053490005587755636,
+   "ev_before": 0.05344760743836539,
+   "ev_after": 0.053447179498835186,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r2",
     "cand-sb-raid-r3",
     "cand-sb-raid-r4",
@@ -195,18 +210,34 @@
    ]
   },
   {
+   "talent": "Conflagrate",
+   "sim": 0.051537704478891166,
+   "ev_before": 0.1442072451113678,
+   "ev_after": 0.14420576186689013,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "opt-sb-raid-raid-dps",
+    "destruction-ml-raid",
+    "cand-sb-raid-hand-2026-09-26",
+    "cand-sb-raid-r10"
+   ]
+  },
+  {
    "talent": "Suppression",
-   "sim": 0.047228953998765234,
-   "ev_before": 0.05724171506157126,
-   "ev_after": 0.057241854173869094,
+   "sim": 0.04952750355978252,
+   "ev_before": 0.057523227206181415,
+   "ev_after": 0.05752710810595272,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -221,17 +252,19 @@
   },
   {
    "talent": "Ruin",
-   "sim": 0.04382373174452182,
-   "ev_before": 0.039659163294472645,
-   "ev_after": 0.03964515430765425,
+   "sim": 0.04335152117078425,
+   "ev_before": 0.04031996771865232,
+   "ev_after": 0.04031962773032855,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -246,16 +279,18 @@
   },
   {
    "talent": "Improved Corruption",
-   "sim": 0.037190470298191024,
-   "ev_before": 0.04262461563425035,
-   "ev_after": 0.04261135975118688,
+   "sim": 0.036414907656012435,
+   "ev_before": 0.04236731589055625,
+   "ev_after": 0.04236697372237433,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
     "cand-sb-raid-r3",
@@ -269,14 +304,16 @@
   },
   {
    "talent": "Pandemic",
-   "sim": 0.027425994267424314,
-   "ev_before": 0.024053517572508485,
-   "ev_after": 0.024064536692104208,
+   "sim": 0.026977542194754966,
+   "ev_before": 0.02374450187942227,
+   "ev_after": 0.023744316438217658,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r2",
     "cand-sb-raid-r3",
     "cand-sb-raid-r4",
@@ -288,31 +325,20 @@
    ]
   },
   {
-   "talent": "Fire and Brimstone",
-   "sim": 0.019449637604396556,
-   "ev_before": 0.020069340699570073,
-   "ev_after": 0.020156083014321185,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-sb-raid-raid-dps",
-    "destruction-ml-raid",
-    "cand-sb-raid-r10"
-   ]
-  },
-  {
    "talent": "Improved Life Tap",
-   "sim": 0.019266835386487765,
-   "ev_before": 0.025863345325163895,
-   "ev_after": 0.025863334868381074,
+   "sim": 0.02146850639970924,
+   "ev_before": 0.026287887576467286,
+   "ev_after": 0.023065710017606916,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
     "cand-sb-raid-r4",
@@ -324,28 +350,30 @@
    ]
   },
   {
-   "talent": "Cataclysm",
-   "sim": 0.0182461051434477,
-   "ev_before": 0.013353166835683742,
-   "ev_after": 0.013353266024041908,
+   "talent": "Fire and Brimstone",
+   "sim": 0.01709114730145961,
+   "ev_before": 0.019024364457774983,
+   "ev_after": 0.019024209663186926,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
-    "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-r5"
+    "cand-sb-raid-r10"
    ]
   },
   {
    "talent": "Improved Bane of Agony",
-   "sim": 0.013543338209037999,
-   "ev_before": 0.011230972419679387,
-   "ev_after": 0.011234648269970506,
+   "sim": 0.015204119069422766,
+   "ev_before": 0.012634728952340695,
+   "ev_after": 0.012634630763207044,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "ds-ruin-raid",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r3",
     "cand-sb-raid-r4",
     "cand-sb-raid-r5",
@@ -356,22 +384,44 @@
    ]
   },
   {
-   "talent": "Nightfall",
-   "sim": 0.009780046295259706,
-   "ev_before": 0.0019838008774656904,
-   "ev_after": 0.0019801239217324593,
+   "talent": "Cataclysm",
+   "sim": 0.012915686728517603,
+   "ev_before": 0.012150592520079943,
+   "ev_after": 0.010236812227017087,
    "scale": 1.0,
    "how": "kept",
    "builds": [
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
-    "cand-sb-raid-r2"
+    "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-hand-2026-09-26",
+    "cand-sb-raid-preset-sm-ruin",
+    "cand-sb-raid-r5"
+   ]
+  },
+  {
+   "talent": "Amplify Curse",
+   "sim": 0.011851475540219689,
+   "ev_before": 0.0038172027464692376,
+   "ev_after": 0.00381717416720186,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
+    "cand-sb-raid-r3",
+    "cand-sb-raid-r4",
+    "cand-sb-raid-r5",
+    "cand-sb-raid-r6",
+    "cand-sb-raid-r7",
+    "cand-sb-raid-r8"
    ]
   },
   {
    "talent": "Decimation",
-   "sim": 0.009285468176813602,
-   "ev_before": 0.012290098303304913,
-   "ev_after": 0.012290098303304913,
+   "sim": 0.011793361156815495,
+   "ev_before": 0.012455818291409435,
+   "ev_after": 0.012456242088227305,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -379,29 +429,18 @@
    ]
   },
   {
-   "talent": "Malediction",
-   "sim": 0.008864307908742297,
-   "ev_before": 0.008009867433681508,
-   "ev_after": 0.008043314418496117,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16"
-   ]
-  },
-  {
    "talent": "Fel Vitality",
-   "sim": 0.008510638089777475,
-   "ev_before": 0.04292123259378945,
-   "ev_after": 0.04292124170258436,
+   "sim": 0.008046896351839779,
+   "ev_before": 0.04290740764079295,
+   "ev_after": 0.02931273861676622,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
@@ -415,10 +454,23 @@
    ]
   },
   {
+   "talent": "Nightfall",
+   "sim": 0.0071782317715171386,
+   "ev_before": 0.002259084841193882,
+   "ev_after": 0.002259069876702571,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
+    "cand-sb-raid-r2"
+   ]
+  },
+  {
    "talent": "Aftermath",
-   "sim": 0.00635162904053256,
-   "ev_before": 0.012274531980941849,
-   "ev_after": 0.01232697256658347,
+   "sim": 0.006279726720958937,
+   "ev_before": 0.011642380991582874,
+   "ev_after": 0.011642291171883307,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -427,49 +479,17 @@
    ]
   },
   {
-   "talent": "Shadowburn",
-   "sim": 0.004873414224000466,
-   "ev_before": 0.015826882520872627,
-   "ev_after": 0.011544948937936382,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "builds": [
-    "opt-sb-raid-raid-dps",
-    "destruction-ml-raid",
-    "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
-    "cand-sb-raid-r10"
-   ]
-  },
-  {
-   "talent": "Amplify Curse",
-   "sim": 0.003845504777615359,
-   "ev_before": 0.0037633925665188513,
-   "ev_after": 0.003765479961926041,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "ds-ruin-raid",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
-    "cand-sb-raid-r3",
-    "cand-sb-raid-r4",
-    "cand-sb-raid-r5",
-    "cand-sb-raid-r6",
-    "cand-sb-raid-r7",
-    "cand-sb-raid-r8"
-   ]
-  },
-  {
    "talent": "Demonic Aegis",
    "sim": 0.0,
-   "ev_before": 2.0281657031962244e-05,
-   "ev_after": 2.0311854677888208e-05,
+   "ev_before": 2.0333285061023994e-05,
+   "ev_after": 2.1133279140193598e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
     "cand-sb-raid-r10",
     "cand-sb-raid-r4",
@@ -483,22 +503,37 @@
   {
    "talent": "Demonic Embrace",
    "sim": 0.0,
-   "ev_before": 2.4948258267624005e-05,
-   "ev_after": 2.4990220014480497e-05,
+   "ev_before": 2.6313683297072993e-05,
+   "ev_after": 2.7350874881490557e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "ds-ruin-raid",
     "opt-sb-raid-raid-dps",
     "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
     "cand-sb-raid-hand-2026-09-26",
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
     "cand-sb-raid-r1",
     "cand-sb-raid-r10",
     "cand-sb-raid-r2",
     "cand-sb-raid-r3",
     "cand-sb-raid-r8",
     "cand-sb-raid-r9"
+   ]
+  },
+  {
+   "talent": "Shadowburn",
+   "sim": 0.0,
+   "ev_before": 0.01089681754869514,
+   "ev_after": 0.010896718496400375,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "opt-sb-raid-raid-dps",
+    "destruction-ml-raid",
+    "shadow-bolt-hybrid-open-raid",
+    "cand-sb-raid-hand-2026-09-26",
+    "cand-sb-raid-r10"
    ]
   },
   {
@@ -515,8 +550,8 @@
   {
    "talent": "Destructive Reach",
    "sim": 0.0,
-   "ev_before": 2.016423267454903e-05,
-   "ev_after": 2.0251122716510574e-05,
+   "ev_before": 2.0236016003015835e-05,
+   "ev_after": 2.1028745098043752e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -526,8 +561,8 @@
   {
    "talent": "Intensity",
    "sim": 0.0,
-   "ev_before": 5.041210646848327e-05,
-   "ev_after": 5.0629344742830385e-05,
+   "ev_before": 5.05915756653856e-05,
+   "ev_after": 5.2573521077811494e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -537,34 +572,44 @@
   {
    "talent": "Siphon Life",
    "sim": 0.0,
-   "ev_before": 5.359639475867547e-06,
-   "ev_after": 5.367365642962689e-06,
+   "ev_before": 5.459597940113327e-06,
+   "ev_after": 5.66099263566135e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-sb-raid-preset-aff-wrack",
+    "cand-sb-raid-preset-sm-ruin",
     "cand-sb-raid-r2",
     "cand-sb-raid-r3"
    ]
   },
   {
-   "talent": "Unholy Power",
+   "talent": "Soul Siphon",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.7245787791327166e-05,
+   "ev_after": 1.775200825412774e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16",
-    "cand-sb-raid-r5",
-    "cand-sb-raid-r7"
+    "cand-sb-raid-preset-aff-wrack"
+   ]
+  },
+  {
+   "talent": "Wrack",
+   "sim": 0.0,
+   "ev_before": 0.004137440758396069,
+   "ev_after": 0.004137420425530736,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-sb-raid-preset-aff-wrack"
    ]
   },
   {
    "talent": "Demonic Brand",
    "sim": 0.0,
-   "ev_before": 8.572443197792856e-05,
-   "ev_after": 8.572443197792856e-05,
+   "ev_before": 8.566954967295403e-05,
+   "ev_after": 8.907021650655685e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -632,8 +677,8 @@
   {
    "talent": "Master Demonologist",
    "sim": 0.0,
-   "ev_before": 3.5716727276371526e-05,
-   "ev_after": 3.5716727276371526e-05,
+   "ev_before": 3.569386193542868e-05,
+   "ev_after": 3.71106620291492e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -643,8 +688,8 @@
   {
    "talent": "Soul Link",
    "sim": 0.0,
-   "ev_before": -0.13603368567656204,
-   "ev_after": -0.13603368567656204,
+   "ev_before": -0.13687296073617095,
+   "ev_after": -0.1368712762913413,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -663,6 +708,18 @@
     "cand-sb-raid-r4",
     "cand-sb-raid-r6"
    ]
+  },
+  {
+   "talent": "Unholy Power",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-sb-raid-r5",
+    "cand-sb-raid-r7"
+   ]
   }
  ],
  "mana": {
@@ -671,244 +728,286 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.1825,
-   "cap": 0.9,
-   "rms": 0.0046,
-   "points": 31
+   "loss": 0.1925,
+   "cap": 0.16,
+   "rms": 0.0078,
+   "points": 37
   },
   "builds": {
    "ds-ruin-raid": {
-    "dps": 591.0003130624809,
-    "surplus": 681.1763548673915,
-    "oom_seconds": 0.845,
-    "deficit": 0.13238281270415753,
+    "dps": 695.9610801155134,
+    "surplus": 811.5007921261025,
+    "oom_seconds": 0.06238133330200005,
+    "deficit": 0.14237781790437853,
     "sustain": 1.048,
     "bound_share": 1.0,
-    "model_deficit": 0.1345
+    "model_deficit": 0.1445
    },
    "opt-sb-raid-raid-dps": {
-    "dps": 580.5710301450832,
-    "surplus": 666.2063373935918,
-    "oom_seconds": 0.7363333333333333,
-    "deficit": 0.1285417181462739,
+    "dps": 671.6292019443356,
+    "surplus": 783.9574174847364,
+    "oom_seconds": 0.09242866652333337,
+    "deficit": 0.14328356749375082,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "destruction-ml-raid": {
-    "dps": 585.3161732499153,
-    "surplus": 665.1266664886781,
-    "oom_seconds": 0.4536666666666667,
-    "deficit": 0.11999292354356583,
+    "dps": 675.8516637720047,
+    "surplus": 779.8452935378338,
+    "oom_seconds": 0.06190133323333334,
+    "deficit": 0.13335161554165853,
     "sustain": 1.0681,
     "bound_share": 1.0,
-    "model_deficit": 0.1144
+    "model_deficit": 0.1244
+   },
+   "shadow-bolt-hybrid-open-raid": {
+    "dps": 693.3256377146763,
+    "surplus": 798.790519947569,
+    "oom_seconds": 0.05966999997066671,
+    "deficit": 0.13203071343387396,
+    "sustain": 1.064,
+    "bound_share": 1.0,
+    "model_deficit": 0.1285
    },
    "cand-sb-raid-hand-2026-09-26": {
-    "dps": 560.863337367864,
-    "surplus": 631.2348182451269,
-    "oom_seconds": 0.7286666666666668,
-    "deficit": 0.11148225484915442,
+    "dps": 646.5814622068222,
+    "surplus": 742.3529285191912,
+    "oom_seconds": 0.017383333297333332,
+    "deficit": 0.1290106937456409,
     "sustain": 1.0735,
     "bound_share": 1.0,
-    "model_deficit": 0.109
+    "model_deficit": 0.119
    },
-   "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16": {
-    "dps": 564.2944676492634,
-    "surplus": 642.0039197850538,
-    "oom_seconds": 1.1133333333333333,
-    "deficit": 0.12104202130386976,
-    "sustain": 1.06,
+   "cand-sb-raid-preset-aff-wrack": {
+    "dps": 672.2155964072182,
+    "surplus": 781.084177979557,
+    "oom_seconds": 0.15546133327266692,
+    "deficit": 0.13938136841275028,
+    "sustain": 1.024,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.16
+   },
+   "cand-sb-raid-preset-sm-ruin": {
+    "dps": 687.0677282611481,
+    "surplus": 790.8324557525988,
+    "oom_seconds": 0.07840599994933337,
+    "deficit": 0.13120949543314153,
+    "sustain": 1.0375,
+    "bound_share": 1.0,
+    "model_deficit": 0.155
    },
    "cand-sb-raid-r1": {
-    "dps": 500.15195688534396,
-    "surplus": 585.3493920051728,
-    "oom_seconds": 0.6746666666666669,
-    "deficit": 0.14554971147740758,
+    "dps": 585.8995112989752,
+    "surplus": 693.2064785137126,
+    "oom_seconds": 0.08833199993933334,
+    "deficit": 0.15479798666165334,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r10": {
-    "dps": 580.5710301450832,
-    "surplus": 666.2063373935918,
-    "oom_seconds": 0.7363333333333333,
-    "deficit": 0.1285417181462739,
+    "dps": 671.6292019443356,
+    "surplus": 783.9574174847364,
+    "oom_seconds": 0.09242866652333337,
+    "deficit": 0.14328356749375082,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r2": {
-    "dps": 589.4688446837605,
-    "surplus": 672.0114492443776,
-    "oom_seconds": 1.5076666666666665,
-    "deficit": 0.12282916407663813,
+    "dps": 685.9549198163995,
+    "surplus": 793.041257879945,
+    "oom_seconds": 0.07099666662733338,
+    "deficit": 0.13503249294976372,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r3": {
-    "dps": 585.5860424754268,
-    "surplus": 681.2030656198507,
-    "oom_seconds": 1.9696666666666667,
-    "deficit": 0.1403649337036066,
+    "dps": 687.190859715929,
+    "surplus": 811.1331921552719,
+    "oom_seconds": 0.07109333328666674,
+    "deficit": 0.1528014555908065,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r4": {
-    "dps": 591.0003130624809,
-    "surplus": 681.1763548673915,
-    "oom_seconds": 0.845,
-    "deficit": 0.13238281270415753,
+    "dps": 695.9610801155134,
+    "surplus": 811.5007921261025,
+    "oom_seconds": 0.06238133330200005,
+    "deficit": 0.14237781790437853,
     "sustain": 1.048,
     "bound_share": 1.0,
-    "model_deficit": 0.1345
+    "model_deficit": 0.1445
    },
    "cand-sb-raid-r5": {
-    "dps": 586.5321972208263,
-    "surplus": 660.7769810059989,
-    "oom_seconds": 0.8986666666666667,
-    "deficit": 0.11235982172402359,
+    "dps": 689.982571744055,
+    "surplus": 781.0625169544089,
+    "oom_seconds": 0.020878666632666687,
+    "deficit": 0.11661031381393294,
     "sustain": 1.0735,
     "bound_share": 1.0,
-    "model_deficit": 0.109
+    "model_deficit": 0.119
    },
    "cand-sb-raid-r6": {
-    "dps": 591.6196418113367,
-    "surplus": 676.0824088095267,
-    "oom_seconds": 1.0723333333333334,
-    "deficit": 0.12492969185060654,
+    "dps": 697.3322342109215,
+    "surplus": 805.0192754281222,
+    "oom_seconds": 0.06737199996200002,
+    "deficit": 0.13376951894714706,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r7": {
-    "dps": 591.6196418113367,
-    "surplus": 676.0824088095267,
-    "oom_seconds": 1.0723333333333334,
-    "deficit": 0.12492969185060654,
+    "dps": 697.3322342109215,
+    "surplus": 805.0192754281222,
+    "oom_seconds": 0.06737199996200002,
+    "deficit": 0.13376951894714706,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r8": {
-    "dps": 591.6196418113367,
-    "surplus": 676.0824088095267,
-    "oom_seconds": 1.0723333333333334,
-    "deficit": 0.12492969185060654,
+    "dps": 697.3322342109215,
+    "surplus": 805.0192754281222,
+    "oom_seconds": 0.06737199996200002,
+    "deficit": 0.13376951894714706,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r9": {
-    "dps": 594.3030276617734,
-    "surplus": 679.6525802733552,
-    "oom_seconds": 1.4793333333333338,
-    "deficit": 0.1255782072912227,
+    "dps": 695.1776293092852,
+    "surplus": 802.7322803591286,
+    "oom_seconds": 0.06821199996200002,
+    "deficit": 0.13398570567228885,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    }
   },
   "removals": {
    "ds-ruin-raid -Improved Life Tap": {
-    "deficit": 0.1403,
+    "deficit": 0.1532,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "opt-sb-raid-raid-dps -Improved Life Tap": {
-    "deficit": 0.1466,
+    "deficit": 0.1631,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "destruction-ml-raid -Cataclysm": {
-    "deficit": 0.1326,
+    "deficit": 0.1441,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "destruction-ml-raid -Improved Life Tap": {
-    "deficit": 0.1403,
+    "deficit": 0.1539,
     "sustain": 1.0441,
     "bound_share": 1.0,
-    "model_deficit": 0.1384
+    "model_deficit": 0.1484
+   },
+   "shadow-bolt-hybrid-open-raid -Cataclysm": {
+    "deficit": 0.1337,
+    "sustain": 1.06,
+    "bound_share": 1.0,
+    "model_deficit": 0.1325
+   },
+   "shadow-bolt-hybrid-open-raid -Improved Life Tap": {
+    "deficit": 0.152,
+    "sustain": 1.04,
+    "bound_share": 1.0,
+    "model_deficit": 0.1525
    },
    "cand-sb-raid-hand-2026-09-26 -Cataclysm": {
-    "deficit": 0.1298,
+    "deficit": 0.1433,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-hand-2026-09-26 -Improved Life Tap": {
-    "deficit": 0.1309,
+    "deficit": 0.1429,
     "sustain": 1.0495,
     "bound_share": 1.0,
-    "model_deficit": 0.133
+    "model_deficit": 0.143
    },
-   "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16 -Improved Life Tap": {
-    "deficit": 0.1392,
-    "sustain": 1.036,
+   "cand-sb-raid-preset-aff-wrack -Improved Life Tap": {
+    "deficit": 0.1603,
+    "sustain": 1.0,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.16
+   },
+   "cand-sb-raid-preset-sm-ruin -Cataclysm": {
+    "deficit": 0.1458,
+    "sustain": 1.024,
+    "bound_share": 1.0,
+    "model_deficit": 0.16
+   },
+   "cand-sb-raid-preset-sm-ruin -Improved Life Tap": {
+    "deficit": 0.1504,
+    "sustain": 1.0135,
+    "bound_share": 1.0,
+    "model_deficit": 0.16
    },
    "cand-sb-raid-r10 -Improved Life Tap": {
-    "deficit": 0.1466,
+    "deficit": 0.1631,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r2 -Improved Life Tap": {
-    "deficit": 0.1441,
+    "deficit": 0.1541,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r4 -Improved Life Tap": {
-    "deficit": 0.1403,
+    "deficit": 0.1532,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r5 -Cataclysm": {
-    "deficit": 0.129,
+    "deficit": 0.1307,
     "sustain": 1.06,
     "bound_share": 1.0,
-    "model_deficit": 0.1225
+    "model_deficit": 0.1325
    },
    "cand-sb-raid-r5 -Improved Life Tap": {
-    "deficit": 0.1289,
+    "deficit": 0.1337,
     "sustain": 1.0495,
     "bound_share": 1.0,
-    "model_deficit": 0.133
+    "model_deficit": 0.143
    },
    "cand-sb-raid-r6 -Improved Life Tap": {
-    "deficit": 0.1413,
+    "deficit": 0.1539,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r7 -Improved Life Tap": {
-    "deficit": 0.1413,
+    "deficit": 0.1539,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r8 -Improved Life Tap": {
-    "deficit": 0.1413,
+    "deficit": 0.1539,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    },
    "cand-sb-raid-r9 -Improved Life Tap": {
-    "deficit": 0.1438,
+    "deficit": 0.1542,
     "sustain": 1.036,
     "bound_share": 1.0,
-    "model_deficit": 0.1465
+    "model_deficit": 0.1565
    }
   }
  }

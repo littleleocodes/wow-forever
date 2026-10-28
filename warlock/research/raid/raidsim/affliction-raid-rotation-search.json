@@ -96,11 +96,11 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-28",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
@@ -114,6 +114,11 @@
    {
     "label": "affliction-dot-raid",
     "talents": "2550002013520005--0550035003",
+    "protect_only": true
+   },
+   {
+    "label": "opt-affliction-raid-raid-dps",
+    "talents": "2550002013520005--0550305003",
     "protect_only": true
    }
   ],
@@ -163,40 +168,71 @@
     "gain_seed2": 0.0015160670249541042,
     "candidates": 513,
     "pass": 5
+   },
+   {
+    "round": 6,
+    "change": "threshold 75% -> 65%: if time left in the fight \u2265 15s and mana % \u2264 75%: cast Potion",
+    "gain_seed1": 0.0023310840177788172,
+    "gain_seed2": 0.003798805398841365,
+    "candidates": 467,
+    "pass": 7
+   },
+   {
+    "round": 7,
+    "change": "only with 10s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.0021664152696290184,
+    "gain_seed2": 0.002015335441609256,
+    "candidates": 467,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
     "opt-affliction-raid-raid-dps": {
-     "before": 739.6128837360835,
-     "after": 739.0250704378503,
-     "base": 739.6128837360835,
+     "before": 831.8210164073337,
+     "after": 836.7556906521661,
+     "base": 831.8210164073337,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.702625,
-     "oom_after": 0.702625
+     "oom_before": 0.37261869990694463,
+     "oom_after": 0.25303949993325303
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 702.4661502833341,
-     "after": 695.4344140932167,
-     "base": 702.4661502833341,
+     "before": 751.6698411859855,
+     "after": 744.4149430619267,
+     "base": 751.6698411859855,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.6057699999999999,
-     "oom_after": 0.6057699999999999
+     "oom_before": 0.31522324991670037,
+     "oom_after": 0.23649739993400562
     },
     "affliction-dot-raid": {
-     "before": 734.4112573719217,
-     "after": 734.5721082820122,
-     "base": 734.4112573719217,
+     "before": 825.029229549851,
+     "after": 829.4129552257201,
+     "base": 825.029229549851,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.578775,
-     "oom_after": 1.578775
+     "oom_before": 0.5483100998963005,
+     "oom_after": 0.43628399990344596
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Affliction"
+   ],
+   "required": [
+    "Bane of Agony",
+    "Corruption"
+   ],
+   "rejected": {
+    "structure": 111,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-27",
-  "passes": 6
+  "passes": 7
  }
 }

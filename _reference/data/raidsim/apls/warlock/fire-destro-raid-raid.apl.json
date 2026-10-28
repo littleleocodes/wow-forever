@@ -43,47 +43,6 @@
          },
          "rhs": {
           "const": {
-           "val": "75%"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "otherId": "OtherActionPotion"
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
            "val": "60%"
           }
          }

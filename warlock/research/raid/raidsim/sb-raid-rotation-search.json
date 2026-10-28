@@ -144,26 +144,16 @@
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-10-11",
-  "commit": "2ce8265",
+  "date": "2026-10-28",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/ds_ruin.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
     "label": "open winner",
-    "talents": "25210020035-0204013001-0550105103"
-   },
-   {
-    "label": "opt-sb-raid-raid-dps",
-    "talents": "25500020035-0050203001-0550005003",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051",
-    "protect_only": true
+    "talents": "25300020135-0050203001-0550105003"
    },
    {
     "label": "ds-ruin-raid",
@@ -171,8 +161,23 @@
     "protect_only": true
    },
    {
+    "label": "sim preset: SM/Ruin",
+    "talents": "2540002013520105--0550305003",
+    "protect_only": true
+   },
+   {
+    "label": "opt-sb-raid-raid-dps",
+    "talents": "25500010135-2300203001-0550005003",
+    "protect_only": true
+   },
+   {
     "label": "destruction-ml-raid",
     "talents": "253-0050203001-055020510310035",
+    "protect_only": true
+   },
+   {
+    "label": "shadow-bolt-hybrid-open-raid",
+    "talents": "25300020035-0050203001-0550105103",
     "protect_only": true
    }
   ],
@@ -242,53 +247,77 @@
   "final": {
    "raid": {
     "open winner": {
-     "before": 732.0508884225814,
-     "after": 730.6982470347313,
-     "base": 732.0508884225814,
+     "before": 788.2834435687646,
+     "after": 793.9674115094922,
+     "base": 788.2834435687646,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.2498996999999958,
-     "oom_after": 1.2498996999999958
-    },
-    "opt-sb-raid-raid-dps": {
-     "before": 727.365348671443,
-     "after": 726.3293545670708,
-     "base": 727.365348671443,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 3.1536873999999746,
-     "oom_after": 3.1536873999999746
-    },
-    "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 690.0485805577605,
-     "after": 686.2356084352843,
-     "base": 690.0485805577605,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 2.108304100000027,
-     "oom_after": 2.108304100000027
+     "oom_before": 0.19322469994580488,
+     "oom_after": 0.19322469994580488
     },
     "ds-ruin-raid": {
-     "before": 723.6987940319702,
-     "after": 724.6269785025289,
-     "base": 723.6987940319702,
+     "before": 784.2702500387028,
+     "after": 789.45274151399,
+     "base": 784.2702500387028,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.172124649999974,
-     "oom_after": 3.172124649999974
+     "oom_before": 0.2769457999240326,
+     "oom_after": 0.2769457999240326
+    },
+    "sim preset: SM/Ruin": {
+     "before": 769.4436147061224,
+     "after": 772.9588909066666,
+     "base": 769.4436147061224,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.5592620499379803,
+     "oom_after": 0.5592620499379803
+    },
+    "opt-sb-raid-raid-dps": {
+     "before": 786.767651538516,
+     "after": 787.4688395094745,
+     "base": 786.767651538516,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.2566441499389866,
+     "oom_after": 0.2566441499389866
     },
     "destruction-ml-raid": {
-     "before": 679.2361548156731,
-     "after": 711.7208631683964,
-     "base": 679.2361548156731,
+     "before": 730.6593295364768,
+     "after": 763.6368798386277,
+     "base": 730.6593295364768,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.1124045997396204,
-     "oom_after": 3.1124045997396204
+     "oom_before": 0.18269769990819867,
+     "oom_after": 0.18269769990819867
+    },
+    "shadow-bolt-hybrid-open-raid": {
+     "before": 787.1938305340274,
+     "after": 785.2569931706023,
+     "base": 787.1938305340274,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.1938772999456551,
+     "oom_after": 0.1938772999456551
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Destruction",
+    "Hybrid Affliction/Destruction"
+   ],
+   "required": [
+    "Shadow Bolt"
+   ],
+   "rejected": {
+    "structure": 208,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 10
  }
 }
