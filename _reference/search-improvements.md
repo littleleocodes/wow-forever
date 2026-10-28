@@ -254,3 +254,10 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   dropped +2.2%, Enrage below 20 rage +1.3%, Lacerate +0.3%). Raid queue 2 searches the tank talents again (`druid-tank-2`). Also fixed
   in sweep_raid2.sh before it ran: the shaman-hybrid-clear block had a literal line break inside a Python string (a SyntaxError: the
   record would not have been cleared). Check every queued heredoc with `compile()` before a queue starts.
+- 2026-10-28 (self-audit, unrestricted leveling): three rotations' no-rules winners are slower at 20-60 than a build of ours the same
+  race ran (mage Fire 34.24 against fire-open-leveling 33.87, priest Shadow 24.53 against shadow-open-leveling 24.27, warlock Affliction
+  36.24 against 36.14). The level-60 screen cannot tell them apart (priest 177.5 against 177.4 kills/h) and the winner's order is
+  polished from the stats model's, while our build carries an order polished by an earlier run. Harmless on main (open_builds.py
+  writes a winner only 0.5% ahead of ours), but the no-rules summary must take, per rotation, the faster of the winner and the race's
+  builds of ours (it changes the priest's no-rules best: 13/3/35 at 24.27 s, not 15/3/33). Lead for fl_open_search: our raced builds
+  as finalists of the 20-60 race.
