@@ -1,0 +1,275 @@
+{
+ "id": "unr-combat-swords-raid",
+ "name": "Unrestricted start (combat-swords-raid)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Assassination": [
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Camouflage",
+    2
+   ],
+   [
+    "Master of Deception",
+    2
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Elusiveness",
+    2
+   ],
+   [
+    "Dirty Tricks",
+    2
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Heightened Senses",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 1
+  },
+  {
+   "levels": "11-12",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "13",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 1
+  },
+  {
+   "levels": "14-16",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "17",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "28-32",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "33-34",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "35",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "37-38",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "39-40",
+   "tree": "Subtlety",
+   "talent": "Master of Deception",
+   "points": 2
+  },
+  {
+   "levels": "41",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "42-44",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 3
+  },
+  {
+   "levels": "45-46",
+   "tree": "Subtlety",
+   "talent": "Elusiveness",
+   "points": 2
+  },
+  {
+   "levels": "47-49",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 3
+  },
+  {
+   "levels": "50",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Subtlety",
+   "talent": "Dirty Tricks",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Subtlety",
+   "talent": "Serrated Blades",
+   "points": 3
+  },
+  {
+   "levels": "55",
+   "tree": "Subtlety",
+   "talent": "Heightened Senses",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Subtlety",
+   "talent": "Dirty Tricks",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Subtlety",
+   "talent": "Dirty Deeds",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 2
+  }
+ ],
+ "notes": [
+  "the combat-swords-raid open-search winner 13/16/22 (stats model), the start of the unrestricted search"
+ ]
+}

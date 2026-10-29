@@ -1,0 +1,279 @@
+{
+ "id": "unr-subtlety-leveling",
+ "name": "Unrestricted start (subtlety-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Assassination": [
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Camouflage",
+    1
+   ],
+   [
+    "Master of Deception",
+    2
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Heightened Senses",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Hemorrhage",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Subtlety",
+   "talent": "Master of Deception",
+   "points": 2
+  },
+  {
+   "levels": "14",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "15-17",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Subtlety",
+   "talent": "Ghostly Strike",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Subtlety",
+   "talent": "Serrated Blades",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Subtlety",
+   "talent": "Premeditation",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Subtlety",
+   "talent": "Heightened Senses",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Subtlety",
+   "talent": "Hemorrhage",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "36-37",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "39-40",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "48",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "49-53",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "54-55",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 2
+  }
+ ],
+ "notes": [
+  "the subtlety-leveling open-search winner 13/17/21 (polished from the own tree first order), the start of the unrestricted search"
+ ]
+}

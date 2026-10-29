@@ -1,0 +1,261 @@
+{
+ "id": "unr-combat-daggers-raid",
+ "name": "Unrestricted start (combat-daggers-raid)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Assassination": [
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Improved Expose Armor",
+    1
+   ],
+   [
+    "Lethality",
+    1
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Vigor",
+    1
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Elusiveness",
+    1
+   ],
+   [
+    "Improved Ambush",
+    1
+   ],
+   [
+    "Initiative",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 2
+  },
+  {
+   "levels": "17",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Assassination",
+   "talent": "Improved Expose Armor",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Assassination",
+   "talent": "Mutilate",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 1
+  },
+  {
+   "levels": "32-33",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "34-38",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "39-41",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "42-44",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 3
+  },
+  {
+   "levels": "45",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "50-52",
+   "tree": "Subtlety",
+   "talent": "Master of Deception",
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 3
+  },
+  {
+   "levels": "57",
+   "tree": "Subtlety",
+   "talent": "Elusiveness",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 3
+  }
+ ],
+ "notes": [
+  "the combat-daggers-raid open-search winner 22/16/13 (own tree first), the start of the unrestricted search"
+ ]
+}
