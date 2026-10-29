@@ -265,3 +265,8 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   file as text and expects the fmt_json layout (class blocks closing at two spaces), so the next rotation write raised IndexError
   (shockadin-apl rc=1; it had no builds to tune on, so nothing was lost). Repaired with `fmt_json.py` under the specs lock before the
   family search's re-tune. Rule: a script that writes specs.json goes through `fmt_json.py` (or run.py's writer), never a bare dump.
+- 2026-10-29 (raid queue 2, Shockadin under the signature rule): the winner sits at the rule's edge (Holy Shock core share 12%, needs
+  12%), so the same build passed at one race stage and failed at the next (759.0 on 30,000 fights, 682.5 = x0.9 on 100,000), and the
+  first search's "certificate +10.92%" was a build leaving the penalty, not DPS. The written build (24/0/27, 759.1, passes the final
+  check) is right; the higher 23/0/28 (792.4) fails the rule. Open idea: measure the core share once per build on the check seed
+  (or with a small hysteresis) so the race's stages agree.
