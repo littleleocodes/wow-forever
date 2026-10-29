@@ -998,192 +998,228 @@
    "spec": "shadow-dps",
    "hand": "leveling-shadow",
    "opt": "opt-shadow-dps-leveling-st",
-   "started": "2026-10-23T09:45:57",
+   "started": "2026-10-29T01:29:58",
    "steps": [
-    "race",
-    "report"
+    "raid"
    ],
    "raid": {
     "shadow-dps": {
      "rounds": [
       {
        "round": 1,
-       "new_build": true,
-       "quick_race": {
-        "cand-shadow-dps-r9": 589.7,
-        "opt-shadow-dps-raid-dps": 589.7,
-        "cand-shadow-dps-r2": 589.7,
-        "cand-shadow-dps-r7": 589.3,
-        "cand-shadow-dps-r1": 589.2,
-        "cand-shadow-dps-r8": 589.2,
-        "cand-shadow-dps-r5": 588.7,
-        "cand-shadow-dps-preset-shadow": 587.8,
-        "cand-shadow-dps-r3": 583.6,
-        "cand-shadow-dps-r6": 572.9,
-        "cand-shadow-dps-r4": 567.4
-       },
-       "converged_by_noise": true
+       "new_build": false
       }
      ],
      "top": [
       [
-       "cand-shadow-dps-r9",
-       589.6
+       "cand-shadow-dps-r3",
+       695.2
       ],
       [
-       "cand-shadow-dps-r7",
-       589.5
-      ],
-      [
-       "cand-shadow-dps-r8",
-       589.5
+       "cand-shadow-dps-r4",
+       681.6
       ],
       [
        "opt-shadow-dps-raid-dps",
-       589.3
+       655.9
+      ],
+      [
+       "cand-shadow-dps-r1",
+       655.2
       ]
      ],
-     "promoted": null,
+     "promoted": "cand-shadow-dps-r3",
      "adopted": null,
      "environments": {
       "opt-shadow-dps-raid-dps": {
-       "dummy": 589.2522076342804,
-       "dummy60": 634.958882879101,
-       "ladder-mana": 589.9386028266247,
-       "ladder-armor": 589.9386028266247,
-       "ladder-physical": 586.8950426116232,
-       "ladder-spell": 648.7095984377626,
-       "raid": 678.5125010841246,
-       "curve60": 576.5439018973369,
-       "curve120": 589.0653402520272,
-       "curve180": 587.6022525562679,
-       "curve240": 569.3008500778834,
-       "curve360": 501.0727070704155,
-       "max": 678.5125010841246,
-       "max60": 675.1709196312574
+       "dummy": 695.2352852047892,
+       "dummy60": 746.0536178715766,
+       "ladder-mana": 696.9867168495232,
+       "ladder-armor": 696.9867168495232,
+       "ladder-physical": 696.9320862447375,
+       "ladder-spell": 790.5432089487808,
+       "raid": 796.421270265238,
+       "curve60": 686.7874535647493,
+       "curve120": 703.5474186540818,
+       "curve180": 695.2352852047892,
+       "curve240": 658.1332114437541,
+       "curve360": 594.6635979273644,
+       "max": 796.421270265238,
+       "max60": 783.1108928775145
       },
       "opt-shadow-dps-parse": {
-       "dummy": 589.2522076342804,
-       "dummy60": 634.958882879101,
-       "ladder-mana": 589.9386028266247,
-       "ladder-armor": 589.9386028266247,
-       "ladder-physical": 586.8950426116232,
-       "ladder-spell": 648.7095984377626,
-       "raid": 678.5125010841246,
-       "curve60": 576.5439018973369,
-       "curve120": 589.0653402520272,
-       "curve180": 587.6022525562679,
-       "curve240": 569.3008500778834,
-       "curve360": 501.0727070704155,
-       "max": 678.5125010841246,
-       "max60": 675.1709196312574
+       "dummy": 656.183028725478,
+       "dummy60": 697.0299770053535,
+       "ladder-mana": 655.8017704130302,
+       "ladder-armor": 655.8017704130302,
+       "ladder-physical": 655.5688950028243,
+       "ladder-spell": 743.6340293634096,
+       "raid": 798.4708599166618,
+       "curve60": 664.2890436282229,
+       "curve120": 660.6214285610895,
+       "curve180": 652.9671484296942,
+       "curve240": 660.5675375909764,
+       "curve360": 622.7194087308695,
+       "max": 798.4708599166618,
+       "max60": 785.7059882354021
       },
-      "sim preset: Shadow": {
-       "dummy": 588.0875017067783,
-       "dummy60": 634.7399464657176,
-       "ladder-mana": 589.7440010297397,
-       "ladder-armor": 589.7440010297397,
-       "ladder-physical": 586.3196457802906,
-       "ladder-spell": 648.0982759018168,
-       "raid": 679.6637809094536,
-       "curve60": 577.1289084470358,
-       "curve120": 588.3876109103281,
-       "curve180": 588.0875017067783,
-       "curve240": 591.1867941054642,
-       "curve360": 559.6858225135178,
-       "max": 679.6637809094536,
-       "max60": 672.255821040325
-      },
-      "sim preset: Shadow 15/0/36": {
-       "dummy": 587.3356064355602,
-       "dummy60": 632.9471538836867,
-       "ladder-mana": 588.055625174516,
-       "ladder-armor": 588.055625174516,
-       "ladder-physical": 585.0116485073685,
-       "ladder-spell": 646.3358051979116,
-       "raid": 675.7845355514942,
-       "curve60": 574.7439356295862,
-       "curve120": 587.1886526353586,
-       "curve180": 585.6825892992445,
-       "curve240": 557.8858565475865,
-       "curve360": 492.6471574959821,
-       "max": 675.7845355514942,
-       "max60": 672.5161649405144
+      "sim preset: Standard": {
+       "dummy": 652.0245083178769,
+       "dummy60": 695.725789202912,
+       "ladder-mana": 651.4658117443023,
+       "ladder-armor": 651.4658117443023,
+       "ladder-physical": 650.9868414631305,
+       "ladder-spell": 738.592476332241,
+       "raid": 793.2527998516589,
+       "curve60": 663.2073913066201,
+       "curve120": 659.26235420039,
+       "curve180": 652.0245083178769,
+       "curve240": 658.7215276313076,
+       "curve360": 613.1477968615592,
+       "max": 793.2527998516589,
+       "max60": 779.7834168925178
       },
       "sim preset: Smite": {
-       "dummy": 217.98656369120897,
-       "dummy60": 253.7363267730544,
-       "ladder-mana": 219.3253592657676,
-       "ladder-armor": 219.3253592657676,
-       "ladder-physical": 216.32709453672135,
-       "ladder-spell": 238.64279873288643,
-       "raid": 246.83970133382635,
-       "curve60": 238.54471135291337,
-       "curve120": 222.10163227752048,
-       "curve180": 217.98656369120897,
-       "curve240": 197.38180858938108,
-       "curve360": 171.56517601097713,
-       "max": 246.83970133382635,
-       "max60": 268.79465361125705
-      },
-      "sim preset: Smite 31/17/3": {
-       "dummy": 217.98656369120897,
-       "dummy60": 253.7363267730544,
-       "ladder-mana": 219.3253592657676,
-       "ladder-armor": 219.3253592657676,
-       "ladder-physical": 216.32709453672135,
-       "ladder-spell": 238.64279873288643,
-       "raid": 246.83970133382635,
-       "curve60": 238.54471135291337,
-       "curve120": 222.10163227752048,
-       "curve180": 217.98656369120897,
-       "curve240": 197.38180858938108,
-       "curve360": 171.56517601097713,
-       "max": 246.83970133382635,
-       "max60": 268.79465361125705
+       "dummy": 232.57071218062248,
+       "dummy60": 256.3492604144589,
+       "ladder-mana": 239.56713731876175,
+       "ladder-armor": 239.56713731876175,
+       "ladder-physical": 239.64961880853957,
+       "ladder-spell": 267.9973450003009,
+       "raid": 319.3063335306566,
+       "curve60": 264.3041412096003,
+       "curve120": 239.94286793487802,
+       "curve180": 232.57071218062248,
+       "curve240": 216.2648706226223,
+       "curve360": 190.16468853077347,
+       "max": 319.3063335306566,
+       "max60": 333.00033289886665
       }
      }
     }
    },
-   "seconds": 296,
+   "seconds": 138,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py priest --spec shadow-dps --build leveling-shadow --compare F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-hand-2026-09-26.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r1.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r2.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r3.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r4.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r5.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r6.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r7.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r8.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py priest --spec shadow-dps --preset-candidates",
      "rc": 0,
-     "seconds": 93,
+     "seconds": 0,
      "tail": [
-      "   vs cand-shadow-r8: time/kill 36.4s (+63.8%), fight 18.5s, deaths/100 0.0",
-      "L60: fight 13.2s (median 13.6, p90 15.6), downtime 0.4s, deaths/100 0.0, time/kill 21.6s, 167 kills/h, mana/kill 605, shares Mind Flay 46%, Mind Blast 20%, Shadow Word: Pain 17%, Shadow Word: Death 16%, Wand 1%",
-      "   vs cand-shadow-hand-2026-09-26: time/kill 22.1s (+2.4%), fight 12.5s, deaths/100 0.0",
-      "   vs cand-shadow-r1: time/kill 24.4s (+13.2%), fight 13.2s, deaths/100 0.0",
-      "   vs cand-shadow-r2: time/kill 24.4s (+13.2%), fight 13.2s, deaths/100 0.0",
-      "   vs cand-shadow-r3: time/kill 22.3s (+3.2%), fight 13.3s, deaths/100 0.0",
-      "   vs cand-shadow-r4: time/kill 21.3s (-1.6%), fight 13.2s, deaths/100 0.0",
-      "   vs cand-shadow-r5: time/kill 21.6s (+0.0%), fight 13.2s, deaths/100 0.0",
-      "   vs cand-shadow-r6: time/kill 21.5s (-0.5%), fight 13.2s, deaths/100 0.0",
-      "   vs cand-shadow-r7: time/kill 25.1s (+16.1%), fight 12.3s, deaths/100 0.0",
-      "   vs cand-shadow-r8: time/kill 21.1s (-2.3%), fight 13.1s, deaths/100 0.0",
-      "done in 93s"
+      "priest shadow-dps: cand-shadow-dps-preset-standard.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py priest --spec shadow-dps --build opt-shadow-dps-leveling-st --compare leveling-shadow --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py priest --spec shadow-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 202,
+     "seconds": 53,
      "tail": [
-      "   Mind Flay                1  sim  +23.6% (fight  +36.7% +-0.5)  EV   +3.2%",
-      "   Shadow Focus             5  sim   +1.8% (fight   +2.8% +-0.2)  EV   +2.9%",
-      "   Shadow Reach             2  sim   -0.1% (fight   -0.2% +-0.2)  EV   +0.7%",
-      "   Shadow Weaving           3  sim   +2.3% (fight   +2.8% +-0.3)  EV   +4.4%",
-      "   Shadowform               1  sim  +47.5% (fight   +9.4% +-0.3)  EV  +38.0%",
-      "   Spirit Tap               5  sim  +13.5% (fight   +0.5% +-0.2)  EV   +3.0%",
-      "   Twilight Focus           2  sim   -0.1% (fight   -0.0% +-0.2)  EV   +0.7%",
-      "   Twin Disciplines         5  sim   +1.5% (fight   +2.4% +-0.2)  EV   +2.0%",
-      "   Vampiric Embrace         1  sim   +2.4% (fight   -6.4% +-0.2)  EV   +0.0%",
-      "   Wand Specialization      2  sim   +0.3% (fight   +0.3% +-0.1)  EV   +0.4%",
-      "done in 202s",
-      "wrote F:\\wow-forever\\priest\\research\\leveling\\fightlab\\shadow-dps.md"
+      "Dark Inspiration                0.1%      0.5%     0.1%   0.01  fitted",
+      "Vampiric Embrace                0.0%      0.0%     0.0%   1.00   noise",
+      "Martyrdom                       0.0%      0.0%     0.0%   1.00   noise",
+      "Shadow Reach                    0.0%      0.0%     0.0%   1.00   noise",
+      "Silent Resolve                  0.0%      0.0%     0.0%   1.00   noise",
+      "Blackout                        0.0%      0.0%     0.0%   1.00   noise",
+      "Power in Light                  0.0%      0.0%     0.0%   1.00   noise",
+      "Silence                         0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
+      "Spirit Tap                      0.0%      0.0%     0.0%   1.00   noise",
+      "Inner Focus                    -4.2%      0.9%     1.2%   1.00     apl",
+      "wrote _reference\\data\\scorer\\effects\\forever\\priest.manual.json (15 entries, 6 fitted) and priest\\research\\raid\\raidsim\\shadow-dps-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py priest --spec shadow-dps --profile raid-dps --write --export --seed F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-preset-standard.json",
+     "rc": 0,
+     "seconds": 21,
+     "tail": [
+      "| Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |",
+      "| Holy Nova | Holy 3 | 1/1 | +0.00% | no |",
+      "| Binding Heal | Holy 4 | 1/1 | +0.00% | no |",
+      "| Soul Warding | Discipline 4 | 1/1 | +0.00% | no |",
+      "| Improved Healing | Holy 4 | 1/3 | +0.00% | no |",
+      "| Spirit Tap | Shadow 1 | 1/5 | +0.00% | yes |",
+      "| Spell Warding | Holy 2 | 1/5 | +0.00% | no |",
+      "| Holy Reach | Holy 4 | 1/2 | +0.00% | no |",
+      "",
+      "exported opt-shadow-dps-raid-dps -> priest\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote priest\\research\\raid\\optimizer\\shadow-dps-raid-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py priest --spec shadow-dps --builds opt-shadow-dps-raid-dps F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-preset-standard.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r1.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r10.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r2.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r3.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r4.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r5.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r6.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r7.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r8.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 5,
+     "tail": [
+      "  cand-shadow-dps-r1                          18/0/33  DPS    655.2 ±  21.6  threat      667  oom   0.0s  scorer +679.6%",
+      "  cand-shadow-dps-r9                          18/0/33  DPS    654.2 ±  21.9  threat      471  oom   0.3s  scorer +680.4%",
+      "  cand-shadow-dps-r5                          20/0/31  DPS    653.2 ±  21.5  threat      469  oom   0.0s  scorer +681.2%",
+      "  cand-shadow-dps-r8                          18/0/33  DPS    653.2 ±  22.3  threat      667  oom   0.9s  scorer +678.8%",
+      "  sim preset: Standard                                 DPS    652.0 ±  21.4  threat      468  oom   0.0s",
+      "  cand-shadow-dps-r10                         18/0/33  DPS    646.4 ±  24.2  threat      468  oom   4.3s  scorer +680.6%",
+      "  cand-shadow-dps-r2                          18/0/33  DPS    645.1 ±  24.4  threat      661  oom   4.9s  scorer +680.0%",
+      "  cand-shadow-dps-r6                          20/0/31  DPS    636.9 ±  20.8  threat      649  oom   0.0s  scorer +666.3%",
+      "  cand-shadow-dps-r7                          18/0/33  DPS    623.7 ±  27.2  threat      640  oom  15.1s  scorer +679.7%",
+      "  sim preset: Smite                                    DPS    232.6 ±  12.2  threat      203  oom   8.5s",
+      "  damage shares of opt-shadow-dps-raid-dps: Mind Flay 46%, Shadow Word: Pain 21%, Mind Blast 19%, Shadow Word: Death 10%, Devouring Plague 2%, Demonic Rune 2% | model sources: mind_flay 47%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 2% (unmatched 2%)",
+      "wrote priest\\research\\raid\\raidsim\\shadow-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py priest --spec shadow-dps --builds opt-shadow-dps-raid-dps F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-preset-standard.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r1.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r10.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r2.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r3.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r4.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r5.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r6.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r7.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r8.json F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 5,
+     "tail": [
+      "  cand-shadow-dps-r1                          18/0/33  DPS    655.2 ±  21.6  threat      667  oom   0.0s  scorer +679.6%",
+      "  cand-shadow-dps-r9                          18/0/33  DPS    654.2 ±  21.9  threat      471  oom   0.3s  scorer +680.4%",
+      "  cand-shadow-dps-r5                          20/0/31  DPS    653.2 ±  21.5  threat      469  oom   0.0s  scorer +681.2%",
+      "  cand-shadow-dps-r8                          18/0/33  DPS    653.2 ±  22.3  threat      667  oom   0.9s  scorer +678.8%",
+      "  sim preset: Standard                                 DPS    652.0 ±  21.4  threat      468  oom   0.0s",
+      "  cand-shadow-dps-r10                         18/0/33  DPS    646.4 ±  24.2  threat      468  oom   4.3s  scorer +680.6%",
+      "  cand-shadow-dps-r2                          18/0/33  DPS    645.1 ±  24.4  threat      661  oom   4.9s  scorer +680.0%",
+      "  cand-shadow-dps-r6                          20/0/31  DPS    636.9 ±  20.8  threat      649  oom   0.0s  scorer +666.3%",
+      "  cand-shadow-dps-r7                          18/0/33  DPS    623.7 ±  27.2  threat      640  oom  15.1s  scorer +679.7%",
+      "  sim preset: Smite                                    DPS    232.6 ±  12.2  threat      203  oom   8.5s",
+      "  damage shares of opt-shadow-dps-raid-dps: Mind Flay 40%, Shadow Word: Pain 20%, Mind Blast 18%, Devouring Plague 12%, Shadow Word: Death 9%, Demonic Rune 2% | model sources: mind_flay 40%, swp 20%, mind_blast 19%, devouring_plague 12%, swd 9% (unmatched 2%)",
+      "wrote priest\\research\\raid\\raidsim\\shadow-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py priest --spec shadow-dps --profile parse --write --export",
+     "rc": 0,
+     "seconds": 19,
+     "tail": [
+      "| Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |",
+      "| Holy Nova | Holy 3 | 1/1 | +0.00% | no |",
+      "| Binding Heal | Holy 4 | 1/1 | +0.00% | no |",
+      "| Soul Warding | Discipline 4 | 1/1 | +0.00% | no |",
+      "| Improved Healing | Holy 4 | 1/3 | +0.00% | no |",
+      "| Spirit Tap | Shadow 1 | 1/5 | +0.00% | yes |",
+      "| Spell Warding | Holy 2 | 1/5 | +0.00% | no |",
+      "| Holy Reach | Holy 4 | 1/2 | +0.00% | no |",
+      "",
+      "exported opt-shadow-dps-parse -> priest\\research\\talents\\forever\\proposed-builds.json",
+      "",
+      "wrote priest\\research\\raid\\optimizer\\shadow-dps-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py priest --spec shadow-dps --env environments --builds opt-shadow-dps-raid-dps opt-shadow-dps-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 34,
+     "tail": [
+      "== priest shadow-dps environments (gear raid priest-dps-p0.p1opt.gear.json, max priest-dps-p0.p1opt.gear.json):",
+      "  opt-shadow-dps-raid-dps                     20/0/31  dummy   695.2  dummy60   746.1  ladder-mana   697.0  ladder-armor   697.0  ladder-physical   696.9  ladder-spell   790.5  raid   796.4  curve60   686.8  curve120   703.5  curve180   695.2  curve240   658.1  curve360   594.7  max   796.4  max60   783.1",
+      "  opt-shadow-dps-parse                        17/1/33  dummy   656.2  dummy60   697.0  ladder-mana   655.8  ladder-armor   655.8  ladder-physical   655.6  ladder-spell   743.6  raid   798.5  curve60   664.3  curve120   660.6  curve180   653.0  curve240   660.6  curve360   622.7  max   798.5  max60   785.7",
+      "  sim preset: Standard                                 dummy   652.0  dummy60   695.7  ladder-mana   651.5  ladder-armor   651.5  ladder-physical   651.0  ladder-spell   738.6  raid   793.3  curve60   663.2  curve120   659.3  curve180   652.0  curve240   658.7  curve360   613.1  max   793.3  max60   779.8",
+      "  sim preset: Smite                                    dummy   232.6  dummy60   256.3  ladder-mana   239.6  ladder-armor   239.6  ladder-physical   239.6  ladder-spell   268.0  raid   319.3  curve60   264.3  curve120   239.9  curve180   232.6  curve240   216.3  curve360   190.2  max   319.3  max60   333.0",
+      "wrote priest\\research\\raid\\raidsim\\shadow-dps-environments.md"
      ],
      "stderr": []
     }
@@ -7704,9 +7740,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-28T08:11:08",
+  "date": "2026-10-29T01:32:15",
   "classes": [
-   "warlock"
+   "priest"
   ],
   "steps": [
    "raid"
@@ -7717,7 +7753,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 859,
+  "seconds": 138,
   "refresh": null,
   "regen_log": []
  }

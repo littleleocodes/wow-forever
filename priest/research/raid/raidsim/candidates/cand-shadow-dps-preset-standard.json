@@ -1,0 +1,84 @@
+{
+ "id": "cand-shadow-dps-preset-standard",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Silent Resolve",
+    3
+   ],
+   [
+    "Mental Strength",
+    3
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Dark Inspiration",
+    5
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "preset": "Standard",
+ "talents": "00530320103--50052201251302051",
+ "note": "The community simulator's preset 'Standard' (priest/dps/presets.ts), a raid candidate since it ran within 6% of the best build of shadow-dps (652 vs 655.9 in the race of 2026-10-29)."
+}

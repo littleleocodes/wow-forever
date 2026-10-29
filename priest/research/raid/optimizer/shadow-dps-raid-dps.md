@@ -9,25 +9,25 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Shadowform | Shadow | 7 | +97.57% | manual |
-| Mind Flay | Shadow | 3 | +88.01% | manual |
+| Shadowform | Shadow | 7 | +165.52% | manual |
+| Mind Flay | Shadow | 3 | +88.98% | manual |
+| Prayer of Mending | Holy | 7 | +8.28% | manual |
+| Litany of Light | Holy | 5 | +5.52% | manual |
+| Penance | Discipline | 5 | +5.23% | manual |
 | Shadow Weaving | Shadow | 4 | +5.00% | manual |
-| Improved Shadow Word: Pain | Shadow | 2 | +2.66% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.86% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
+| Inner Focus | Discipline | 3 | +1.73% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
-| Inner Focus | Discipline | 3 | +1.22% | manual |
-| Prayer of Mending | Holy | 7 | +1.20% | manual |
-| Improved Mind Blast | Shadow | 2 | +1.19% | manual |
-| Litany of Light | Holy | 5 | +0.80% | manual |
-| Penance | Discipline | 5 | +0.76% | manual |
+| Twin Disciplines | Discipline | 1 | +1.63% | manual |
+| Improved Mind Blast | Shadow | 2 | +0.79% | manual |
 | Shadow Focus | Shadow | 1 | +0.74% | manual |
-| Twin Disciplines | Discipline | 1 | +0.62% | manual |
-| Dark Inspiration | Shadow | 4 | +0.60% | manual |
-| Mental Strength | Discipline | 2 | +0.30% | manual |
-| Devouring Contagion | Shadow | 5 | +0.15% | manual |
+| Mental Strength | Discipline | 2 | +0.57% | manual |
+| Devouring Contagion | Shadow | 5 | +0.40% | manual |
+| Mental Agility | Discipline | 3 | +0.16% | manual |
 | Early Demise | Shadow | 6 | +0.13% | manual |
-| Mental Agility | Discipline | 3 | +0.06% | manual |
-| Meditation | Discipline | 3 | +0.05% | manual |
+| Meditation | Discipline | 3 | +0.12% | manual |
+| Dark Inspiration | Shadow | 4 | +0.06% | manual |
 | Martyrdom | Discipline | 2 | +0.01% | manual |
 | Twilight Focus | Holy | 1 | +0.01% | manual |
 | Silence | Shadow | 5 | +0.01% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Spell Warding | Holy | 2 | +0.00% | manual |
 | Holy Reach | Holy | 4 | +0.00% | manual |
 
-## Optimized build: 17/0/34  score +356.27%  (dps x3.909, sustain x2.633, surv x1.000, utility +0.00%)
+## Optimized build: 17/0/34  score +685.06%  (dps x7.850, sustain x1.622, surv x1.000, utility +0.00%)
 
 ```
   Discipline: Twin Disciplines 5, Mental Strength 5, Inner Focus 1, Mental Agility 3, Meditation 3
@@ -51,13 +51,13 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +6.65% | no |
-| Prayer of Mending | Holy 7 | 1/1 | +1.20% | no |
-| Litany of Light | Holy 5 | 1/2 | +0.80% | no |
-| Penance | Discipline 5 | 1/1 | +0.76% | no |
+| Power Infusion | Discipline 7 | 1/1 | +13.35% | no |
+| Penance | Discipline 5 | 1/1 | +12.49% | no |
+| Litany of Light | Holy 5 | 1/2 | +12.49% | no |
+| Prayer of Mending | Holy 7 | 1/1 | +12.49% | no |
 | Martyrdom | Discipline 2 | 1/2 | +0.01% | yes |
-| Twilight Focus | Holy 1 | 1/3 | +0.01% | yes |
-| Silence | Shadow 5 | 1/1 | +0.01% | yes |
+| Twilight Focus | Holy 1 | 1/3 | +0.00% | yes |
+| Silence | Shadow 5 | 1/1 | +0.00% | yes |
 | Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |
 | Holy Nova | Holy 3 | 1/1 | +0.00% | no |
 | Binding Heal | Holy 4 | 1/1 | +0.00% | no |

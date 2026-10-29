@@ -515,108 +515,6 @@
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/popular.js"]
     },
     {
-      "id": "opt-shadow-dps-parse",
-      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +321.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Discipline": [
-          ["Twin Disciplines", 5],
-          ["Martyrdom", 2],
-          ["Mental Strength", 3],
-          ["Silent Resolve", 3],
-          ["Inner Focus", 1],
-          ["Meditation", 1],
-          ["Mental Agility", 3]
-        ],
-        "Holy": [],
-        "Shadow": [
-          ["Shadow Focus", 5],
-          ["Spirit Tap", 3],
-          ["Improved Mind Blast", 5],
-          ["Improved Shadow Word: Pain", 2],
-          ["Improved Mind Flay", 2],
-          ["Mind Flay", 1],
-          ["Shadow Weaving", 3],
-          ["Vampiric Embrace", 1],
-          ["Devouring Contagion", 2],
-          ["Silence", 1],
-          ["Darkness", 5],
-          ["Early Demise", 2],
-          ["Shadowform", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 188.8 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 136.6 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 35.5 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 35.5 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 34.8 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 14.0 points of score in this model."},
-        {"talent": "Improved Mind Blast", "why": "Removing it costs 11.9 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 9.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: priest/research/talents/forever/optimizer/shadow-dps-parse.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 18/0/33 -> 18/0/33; Shadow Affinity 3 gone; +1 Spirit Tap (tier gating for Devouring Contagion); +1 Spirit Tap (tier gating for Darkness); +1 Spirit Tap (tier gating for Darkness) (refill: the shadow-dps model, raid-dps)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/priest"]
-    },
-    {
-      "id": "smite-open-raid",
-      "name": "Smite — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Discipline/Holy",
-      "generated": "2026-10-11",
-      "derived": "raid",
-      "summary": "The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-10-11: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over smite-discipline-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Discipline": [
-          ["Power in Light", 5],
-          ["Twin Disciplines", 5],
-          ["Holy Precision", 3],
-          ["Mental Agility", 2],
-          ["Inner Focus", 1],
-          ["Meditation", 3],
-          ["Mental Strength", 1],
-          ["Penance", 1]
-        ],
-        "Holy": [
-          ["Twilight Focus", 3],
-          ["Holy Specialization", 5],
-          ["Spell Warding", 1],
-          ["Divine Fury", 5],
-          ["Holy Nova", 1],
-          ["Improved Healing", 2],
-          ["Searing Light", 2],
-          ["Spiritual Guidance", 3],
-          ["Binding Heal", 1]
-        ],
-        "Shadow": [
-          ["Shadow Focus", 5],
-          ["Improved Shadow Word: Pain", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Divine Fury", "why": "60 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Holy Precision", "why": "56 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Meditation", "why": "56 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Penance", "why": "48 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Power in Light", "why": "29 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Searing Light", "why": "21 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Mental Agility", "why": "16 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Shadow Word: Pain", "why": "15 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+0.6% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 21/23/7 (Smite (a Discipline/Holy hybrid)) at 587.6 DPS; smite-discipline-raid 584.1, smite-open-raid 583.2 in the same fights; 3,922 builds simulated, 2 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -54.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Improved Renew, Spell Warding, Holy Nova.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Renew -> Binding Heal (threat). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Discipline/Holy: its full-raid winner is +0.06% against it, under the 0.5% bar for a new build."],
-      "open_questions": ["An open-search Smite build: check it against the community's Smite builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/priest/60/505030021301001-315151000220003-50002-6"],
-      "replaces": "smite-discipline-raid"
-    },
-    {
       "id": "holy-ml-heal",
       "name": "Holy — Raid healing (machine-learning search)",
       "role": "healer",
@@ -848,52 +746,6 @@
       ],
       "flex": [],
       "notes": ["Report: priest/research/talents/forever/optimizer/holy-heal-raid-heal.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/priest"]
-    },
-    {
-      "id": "opt-shadow-dps-raid-dps",
-      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +356.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Discipline": [
-          ["Twin Disciplines", 5],
-          ["Mental Strength", 5],
-          ["Inner Focus", 1],
-          ["Mental Agility", 3],
-          ["Meditation", 3]
-        ],
-        "Holy": [],
-        "Shadow": [
-          ["Shadow Focus", 5],
-          ["Improved Shadow Word: Pain", 2],
-          ["Improved Mind Blast", 5],
-          ["Mind Flay", 1],
-          ["Improved Mind Flay", 2],
-          ["Vampiric Embrace", 1],
-          ["Shadow Weaving", 3],
-          ["Dark Inspiration", 5],
-          ["Devouring Contagion", 2],
-          ["Darkness", 5],
-          ["Early Demise", 2],
-          ["Shadowform", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 189.0 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 166.8 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 35.5 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 35.5 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 34.9 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 14.0 points of score in this model."},
-        {"talent": "Improved Mind Blast", "why": "Removing it costs 12.0 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 9.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -1396,6 +1248,153 @@
       "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-raid-dps",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +685.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Power in Light", 5],
+          ["Twin Disciplines", 5],
+          ["Wand Specialization", 2],
+          ["Mental Strength", 5],
+          ["Meditation", 3]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Mind Blast", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Shadow Reach", 1],
+          ["Improved Mind Flay", 2],
+          ["Mind Flay", 1],
+          ["Dark Inspiration", 3],
+          ["Shadow Weaving", 3],
+          ["Vampiric Embrace", 1],
+          ["Devouring Contagion", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shadowform", "why": "Removing it costs 478.5 points of score in this model."},
+        {"talent": "Mind Flay", "why": "Removing it costs 376.5 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 71.4 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 71.4 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 69.5 points of score in this model."},
+        {"talent": "Twin Disciplines", "why": "Removing it costs 30.5 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 28.1 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 21.8 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-10-29: the optimizer's earlier round beat its last export in the community simulator (695 vs 656 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-parse",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +201.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Mental Strength", 5],
+          ["Inner Focus", 1],
+          ["Mental Agility", 3],
+          ["Meditation", 3]
+        ],
+        "Holy": [
+          ["Twilight Focus", 1]
+        ],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Improved Mind Blast", 5],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Shadow Weaving", 3],
+          ["Vampiric Embrace", 1],
+          ["Dark Inspiration", 3],
+          ["Devouring Contagion", 2],
+          ["Silence", 1],
+          ["Darkness", 5],
+          ["Early Demise", 2],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 138.7 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 26.3 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 26.3 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 25.6 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 12.0 points of score in this model."},
+        {"talent": "Twin Disciplines", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 10.3 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 7.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/research/talents/forever/optimizer/shadow-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "smite-open-raid",
+      "name": "Smite — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Discipline/Holy",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over smite-open-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Discipline": [
+          ["Power in Light", 5],
+          ["Twin Disciplines", 2],
+          ["Holy Precision", 3],
+          ["Mental Agility", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3]
+        ],
+        "Holy": [
+          ["Twilight Focus", 3],
+          ["Holy Specialization", 5],
+          ["Divine Fury", 5],
+          ["Holy Nova", 1],
+          ["Inspiration", 1],
+          ["Searing Light", 2]
+        ],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Mind Blast", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Mind Flay", 1],
+          ["Shadow Weaving", 2],
+          ["Spirit Tap", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Divine Fury", "why": "67 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Holy Precision", "why": "51 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Inner Focus", "why": "29 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Power in Light", "why": "23 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Meditation", "why": "21 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shadow Weaving", "why": "17 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shadow Focus", "why": "13 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Searing Light", "why": "13 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+2.9% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 17/17/17 (Smite (a Discipline/Holy hybrid)) at 611.1 DPS; smite-open-raid 605.0, smite-discipline-raid 593.7 in the same fights; 2,354 builds simulated, 1 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blessed Recovery -> Twilight Focus (interrupt); Blessed Recovery -> Twilight Focus (interrupt); Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana). Net -0.00% on a third seed."],
+      "open_questions": ["An open-search Smite build: check it against the community's Smite builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7"],
+      "replaces": "smite-discipline-raid"
     }
   ]
 }

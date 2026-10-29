@@ -17,7 +17,7 @@
     ]
   },
   "Twin Disciplines": {
-    "note": "+1%/rank damage and healing of instant casts (Renew, Shield, Prayer of Mending, Shadow Word: Pain, Devouring Plague). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 1.1% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x2.56 to match (2.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x0.57 to match (1.5%). Other modes unchanged.",
+    "note": "+1%/rank damage and healing of instant casts (Renew, Shield, Prayer of Mending, Shadow Word: Pain, Devouring Plague). Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x2.56 to match (2.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x0.57 to match (1.5%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 4.0% DPS in the simulator (scorer said 1.3% on the same scale); raid values scaled x2.60 to match (4.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -68,22 +68,6 @@
         "specs": ["holy-heal"]
       },
       {
-        "channel": "heal",
-        "scope": ["instant"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["instant"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
         "channel": "dmg",
         "scope": ["instant"],
         "per_rank": 0.012964,
@@ -113,6 +97,22 @@
         "per_rank": 0.005694,
         "values": [0.005694, 0.011388, 0.017082, 0.022775, 0.028469],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.026025,
+        "values": [0.026025, 0.05205, 0.078075, 0.1041, 0.130125],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.026025,
+        "values": [0.026025, 0.05205, 0.078075, 0.1041, 0.130125],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -279,7 +279,7 @@
     ]
   },
   "Mental Agility": {
-    "note": "Beta curve 3/7/10% mana on Smite, Holy Fire and instant casts (parser drops the instant part): Renew/Shield/Prayer of Mending/SW:P. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.1% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values otherwise unchanged (noise) (0.2%). Other modes unchanged. Healer lab calibration (2026-09-30, holy-heal): removing it costs 1.1% healing capacity in the lab (scorer said 0.2% on the same scale); already within tolerance, heal effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged.",
+    "note": "Beta curve 3/7/10% mana on Smite, Holy Fire and instant casts (parser drops the instant part): Renew/Shield/Prayer of Mending/SW:P. Healer lab calibration (2026-09-30, holy-heal): removing it costs 1.1% healing capacity in the lab (scorer said 0.2% on the same scale); already within tolerance, heal effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 0.3% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values otherwise unchanged (noise) (0.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -311,13 +311,6 @@
       {
         "channel": "mana_cost",
         "scope": ["instant"],
-        "values": [0.0048, 0.0112, 0.016],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["instant"],
         "values": [0.03, 0.07, 0.1],
         "modes": ["heal"],
         "specs": ["holy-heal"]
@@ -328,11 +321,18 @@
         "values": [0.45, 1.05, 1.5],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.00192, 0.00448, 0.0064],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Inner Focus": {
-    "note": "One free spell with +25% crit every 3 min (parser read it as 100% cost reduction on everything): ~+1% healing, ~+2% mana. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs -1.0% DPS in the simulator (scorer said 1.0% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values otherwise unchanged (apl) (1.3%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.62 to match (0.7%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-aoe values scaled x4.72 to match (1.6%). Other modes unchanged.",
+    "note": "One free spell with +25% crit every 3 min (parser read it as 100% cost reduction on everything): ~+1% healing, ~+2% mana. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.62 to match (0.7%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-aoe values scaled x4.72 to match (1.6%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs -4.2% DPS in the simulator (scorer said 0.9% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values otherwise unchanged (apl) (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -425,27 +425,6 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.007197],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["heal"],
-        "values": [0.009265],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:spell"],
-        "values": [0.009265],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
         "values": [0.061563],
         "modes": ["heal"],
         "specs": ["holy-heal"]
@@ -504,6 +483,27 @@
         "scope": ["type:spell"],
         "values": [0.017273],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.009265],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.002879],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.009265],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -983,7 +983,7 @@
     ]
   },
   "Improved Shadow Word: Pain": {
-    "note": "+3s/rank duration (18 -> 24s): more damage per cast and fewer recasts -> +5%/rank SW:P damage, +1%/rank mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.8% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-aoe values scaled x1.38 to match (7.0%). Other modes unchanged.",
+    "note": "+3s/rank duration (18 -> 24s): more damage per cast and fewer recasts -> +5%/rank SW:P damage, +1%/rank mana. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.8% time per kill in the simulator (scorer said 4.7% on the same scale); leveling-aoe values scaled x1.38 to match (7.0%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 2.2% on the same scale); mana values moved to the mana limit's unit (x0.40), already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1036,22 +1036,6 @@
       {
         "channel": "dmg",
         "scope": ["ability:Shadow Word: Pain"],
-        "per_rank": 0.06555,
-        "values": [0.06555, 0.131101, 0.196652, 0.262202, 0.327753],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "per_rank": 0.002098,
-        "values": [0.002098, 0.004195, 0.006293, 0.00839, 0.010488],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Shadow Word: Pain"],
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-st", "solo-60"],
@@ -1080,11 +1064,27 @@
         "values": [0.002894, 0.005788, 0.008682, 0.011575, 0.01447],
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.06555,
+        "values": [0.06555, 0.131101, 0.196652, 0.262202, 0.327753],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.000839,
+        "values": [0.000839, 0.001678, 0.002517, 0.003356, 0.004195],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Mind Flay": {
-    "note": "The Shadow filler: a channelled snare-nuke replacing wand time -> ~+15% total damage while leveling, +10% in a raid rotation. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 79.7% DPS in the simulator (scorer said 97.3% on the same scale); already within tolerance, raid effects split off unchanged (72.2%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 9.4% time per kill in the simulator (scorer said 22.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (18.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 14.1% time per kill in the simulator (scorer said 10.2% on the same scale); leveling-aoe values scaled x0.47 to match (12.4%). Other modes unchanged.",
+    "note": "The Shadow filler: a channelled snare-nuke replacing wand time -> ~+15% total damage while leveling, +10% in a raid rotation. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 9.4% time per kill in the simulator (scorer said 22.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (18.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 14.1% time per kill in the simulator (scorer said 10.2% on the same scale); leveling-aoe values scaled x0.47 to match (12.4%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 74.1% DPS in the simulator (scorer said 72.7% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x0.00 to match (92.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1119,13 +1119,6 @@
         "channel": "dmg",
         "scope": ["type:spell"],
         "values": [0.0],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:spell"],
-        "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["shadow-dps"]
       },
@@ -1135,11 +1128,18 @@
         "values": [0.070337],
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Improved Mind Flay": {
-    "note": "+10% Mind Flay damage and +5 yards for 2 points (rank 1 read). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 8.6% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (8.4%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 5.8% time per kill in the simulator (scorer said 7.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.1%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-aoe values scaled x0.28 to match (0.4%). Other modes unchanged.",
+    "note": "+10% Mind Flay damage and +5 yards for 2 points (rank 1 read). Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 5.8% time per kill in the simulator (scorer said 7.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.1%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-aoe values scaled x0.28 to match (0.4%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 8.9% DPS in the simulator (scorer said 8.4% on the same scale); already within tolerance, raid effects split off unchanged (9.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1176,14 +1176,6 @@
       {
         "channel": "dmg",
         "scope": ["ability:Mind Flay"],
-        "per_rank": 0.113134,
-        "values": [0.113134, 0.226268, 0.339403, 0.452537, 0.565671],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Mind Flay"],
         "per_rank": 0.092722,
         "values": [0.092722, 0.185443, 0.278165, 0.370887, 0.463609],
         "modes": ["leveling-st", "solo-60"],
@@ -1195,6 +1187,14 @@
         "per_rank": 0.008157,
         "values": [0.016316, 0.032631, 0.048946, 0.065262, 0.081578],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.113134,
+        "values": [0.113134, 0.226268, 0.339403, 0.452537, 0.565671],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -1288,7 +1288,7 @@
     ]
   },
   "Shadow Weaving": {
-    "note": "33%/rank chance per Shadow spell to stack +2% Shadow damage (5 stacks, 15s): at 3/3 five stacks are always up (+10%); at 1/3 ~5%. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 9.4% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (8.5%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 4.4% time per kill in the simulator (scorer said 8.3% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (4.4%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 2.0% on the same scale); leveling-aoe values scaled x0.53 to match (1.2%). Other modes unchanged.",
+    "note": "33%/rank chance per Shadow spell to stack +2% Shadow damage (5 stacks, 15s): at 3/3 five stacks are always up (+10%); at 1/3 ~5%. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 4.4% time per kill in the simulator (scorer said 8.3% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (4.4%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 2.0% on the same scale); leveling-aoe values scaled x0.53 to match (1.2%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 9.8% DPS in the simulator (scorer said 8.5% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1314,13 +1314,6 @@
       {
         "channel": "dmg",
         "scope": ["school:shadow"],
-        "values": [0.05, 0.08, 0.1],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:shadow"],
         "values": [0.022244, 0.035589, 0.044486],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["shadow-dps"]
@@ -1330,6 +1323,13 @@
         "scope": ["school:shadow"],
         "values": [0.008001, 0.012802, 0.016002],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.1],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -1449,7 +1449,7 @@
     ]
   },
   "Shadowform": {
-    "note": "+10% Shadow damage, -50% Shadow mana cost, physical damage reduction (text truncated; assumed 15% like Classic). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 57.9% DPS in the simulator (scorer said 70.7% on the same scale); raid values scaled x3.56, the cap on effect size stops short of the target (58.5%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 43.1% time per kill in the simulator (scorer said 56.0% on the same scale); leveling-st/solo-60 values scaled x0.66 to match (47.1%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 40.3% time per kill in the simulator (scorer said 22.9% on the same scale); leveling-aoe values scaled x1.86 to match (41.8%). Other modes unchanged.",
+    "note": "+10% Shadow damage, -50% Shadow mana cost, physical damage reduction (text truncated; assumed 15% like Classic). Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 43.1% time per kill in the simulator (scorer said 56.0% on the same scale); leveling-st/solo-60 values scaled x0.66 to match (47.1%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 40.3% time per kill in the simulator (scorer said 22.9% on the same scale); leveling-aoe values scaled x1.86 to match (41.8%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 72.6% DPS in the simulator (scorer said 58.2% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values scaled x0.00 to match (158.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1517,27 +1517,6 @@
       {
         "channel": "dmg",
         "scope": ["school:shadow"],
-        "values": [0.375645],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "values": [1.5],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
-        "values": [0.375645],
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:shadow"],
         "values": [0.327547],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["shadow-dps"]
@@ -1575,6 +1554,27 @@
         "scope": ["all"],
         "values": [0.373525],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.6],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -1632,7 +1632,7 @@
     ]
   },
   "Devouring Contagion": {
-    "note": "Cheaper Devouring Plague (racial) and spreading: small. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 0.3% DPS in the simulator (scorer said 0.2% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values otherwise unchanged (noise) (0.3%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "Cheaper Devouring Plague (racial) and spreading: small. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.0%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.1% on the same scale); mana values moved to the mana limit's unit (x0.40), already within tolerance, raid effects split off unchanged (0.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1660,17 +1660,17 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "per_rank": 0.003607,
-        "values": [0.003607, 0.007214, 0.010821, 0.014428, 0.018035],
-        "modes": ["raid"],
+        "per_rank": 0.32,
+        "values": [0.32, 0.64, 0.96, 1.28, 1.6],
+        "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
-        "per_rank": 0.32,
-        "values": [0.32, 0.64, 0.96, 1.28, 1.6],
-        "modes": ["leveling-aoe"],
+        "per_rank": 0.001443,
+        "values": [0.001443, 0.002886, 0.004328, 0.005771, 0.007214],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -1991,7 +1991,7 @@
     ]
   },
   "Shadow Focus": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 3.5% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 2.9% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x0.38 to match (2.9%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 4.4% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (4.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 2.9% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x0.38 to match (2.9%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 4.4% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (4.8%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -2016,14 +2016,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["school:shadow"],
-        "values": [0.006228, 0.012455, 0.018683, 0.024911, 0.031139],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
       },
       {
         "channel": "hit",
@@ -2056,11 +2048,19 @@
         "values": [0.005, 0.01, 0.015, 0.02, 0.025],
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "values": [0.006228, 0.012455, 0.018683, 0.024911, 0.031139],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Improved Mind Blast": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 1.4% on the same scale); raid values scaled x2.09 to match (2.7%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-st/solo-60 values scaled x1.63 to match (0.7%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -0.9% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-st/solo-60 values scaled x1.63 to match (0.7%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -0.9% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 2.6% on the same scale); raid values scaled x0.68 to match (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -2085,14 +2085,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "cooldown",
-        "scope": ["ability:Mind Blast"],
-        "values": [0.242366, 0.484732, 0.727099, 0.969465, 1.211823],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
       },
       {
         "channel": "cooldown",
@@ -2109,11 +2101,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.165695, 0.331391, 0.497087, 0.662783, 0.828473],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Darkness": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (8.5%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 6.0% time per kill in the simulator (scorer said 5.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.9%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.6% time per kill in the simulator (scorer said 2.0% on the same scale); leveling-aoe values scaled x3.19 to match (6.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 6.0% time per kill in the simulator (scorer said 5.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.9%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.6% time per kill in the simulator (scorer said 2.0% on the same scale); leveling-aoe values scaled x3.19 to match (6.5%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 8.5% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2142,14 +2142,6 @@
       {
         "channel": "dmg",
         "scope": ["school:shadow"],
-        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:shadow"],
         "values": [0.01181, 0.02362, 0.03543, 0.04724, 0.05905],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2162,11 +2154,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Meditation": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 7.0% on the same scale); raid values scaled x0.02 to match (0.0%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.5%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.5%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.3%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.40), raid values kept at x1.00: its builds sit where the mana limit is flat, so the removal runs cannot move it (0.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2195,14 +2195,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.003596, 0.00698, 0.010577],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.51, 0.99, 1.5],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2215,11 +2207,19 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.001438, 0.002792, 0.004231],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
       }
     ]
   },
   "Mental Strength": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, shadow-dps, training dummy): removing it costs 0.4% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [shadow-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 0.4% on the same scale); raid values scaled x0.32 to match (0.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2248,14 +2248,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.010442, 0.020885, 0.031327, 0.04177, 0.052212],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["shadow-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["leveling-aoe"],
@@ -2267,6 +2259,14 @@
         "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.003366, 0.006732, 0.010098, 0.013465, 0.016831],
+        "source": "parsed",
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]
@@ -2444,13 +2444,20 @@
     ]
   },
   "Dark Inspiration": {
-    "note": "70425: Mind Blast and a full Mind Flay give you and your party +3%/rank Spirit for 10 s: a Shadow priest keeps it up almost all the time -> +3%/rank Spirit (the party half is not scored). Audit 2026-10-18: was valued 0 (no parse, no entry) though the fight lab plays it (row 37). Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -3.6% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "70425: Mind Blast and a full Mind Flay give you and your party +3%/rank Spirit for 10 s: a Shadow priest keeps it up almost all the time -> +3%/rank Spirit (the party half is not scored). Audit 2026-10-18: was valued 0 (no parse, no entry) though the fight lab plays it (row 37). Fight lab calibration [shadow-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -3.6% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [shadow-dps] (2026-10-29, wowsims/forever 30f67f5d2, shadow-dps, training dummy): removing it costs 0.1% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.01 to match (0.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
         "scope": ["stat:spirit"],
         "values": [0.03, 0.06, 0.09, 0.12, 0.15],
-        "modes": ["raid", "leveling-st", "solo-60", "heal", "tank", "pvp"]
+        "modes": ["leveling-st", "solo-60", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:spirit"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
       },
       {
         "channel": "stat",
@@ -2464,6 +2471,13 @@
         "scope": ["stat:spirit"],
         "values": [0.03, 0.06, 0.09, 0.12, 0.15],
         "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:spirit"],
+        "values": [0.000443, 0.000886, 0.001329, 0.001773, 0.002216],
+        "modes": ["raid"],
         "specs": ["shadow-dps"]
       }
     ]

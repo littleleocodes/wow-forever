@@ -198,13 +198,36 @@
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-14",
-  "commit": "2ce8265",
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "50503200103-105050220320005-50002"
+   },
+   {
+    "label": "smite-open-raid",
+    "talents": "505031021030001-305151000221003-50002",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Smite",
+    "talents": "525235031030001001-30515100002-3",
+    "protect_only": true
+   },
+   {
+    "label": "smite-discipline-raid",
+    "talents": "505235231030001001-30505101002-3",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "open winner"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -423,12 +446,152 @@
     "gain_seed2": 0.0022,
     "candidates": 24,
     "pass": 12
+   },
+   {
+    "round": 28,
+    "change": "drop the condition: if mana % \u2265 20% and mana % < 50% and time left in the fight \u2265 30s: cast Smite (rank 2)",
+    "gain_seed1": 0.1452204363078633,
+    "gain_seed2": 0.14604957637035554,
+    "candidates": 428,
+    "pass": 13
+   },
+   {
+    "round": 29,
+    "change": "drop: cast Penance (rank 3)",
+    "gain_seed1": 0.006283153289872612,
+    "gain_seed2": 0.006215046276700331,
+    "candidates": 402,
+    "pass": 13
+   },
+   {
+    "round": 30,
+    "change": "drop: cast Penance",
+    "gain_seed1": 0.006822124613150127,
+    "gain_seed2": 0.007534203381536653,
+    "candidates": 389,
+    "pass": 13
+   },
+   {
+    "round": 31,
+    "change": "only above 25% mana: cast Smite",
+    "gain_seed1": 0.006548004362617821,
+    "gain_seed2": 0.006430090776038622,
+    "candidates": 382,
+    "pass": 13
+   },
+   {
+    "round": 32,
+    "change": "only above 40% mana: if time left on Holy Fire < 1.5s: cast Holy Fire",
+    "gain_seed1": 0.0048593073183975655,
+    "gain_seed2": 0.004540849907655353,
+    "candidates": 382,
+    "pass": 13
+   },
+   {
+    "round": 33,
+    "change": "only with 10s or more of the fight left: cast Smite (rank 2)",
+    "gain_seed1": 0.0027954934020595346,
+    "gain_seed2": 0.0027773663052881314,
+    "candidates": 390,
+    "pass": 13
+   },
+   {
+    "round": 34,
+    "change": "move down below 'if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain': use every other cooldown when ready",
+    "gain_seed1": 0.002593463000006402,
+    "gain_seed2": 0.00261587312237177,
+    "candidates": 398,
+    "pass": 13
+   },
+   {
+    "round": 35,
+    "change": "move down below 'strict sequence: cast Inner Focus; cast Devouring Plague': use every other cooldown when ready",
+    "gain_seed1": 0.0021597633672461036,
+    "gain_seed2": 0.002224158045831537,
+    "candidates": 398,
+    "pass": 13
+   },
+   {
+    "round": 36,
+    "change": "move to the top: cast Mind Blast",
+    "gain_seed1": 0.008915880775163032,
+    "gain_seed2": 0.008006991309617018,
+    "candidates": 410,
+    "pass": 14
+   },
+   {
+    "round": 37,
+    "change": "threshold 1.5s -> 0.5s: if time left on Holy Fire < 1.5s and mana % \u2265 40%: cast Holy Fire",
+    "gain_seed1": 0.0020311254025391356,
+    "gain_seed2": 0.0021083117819713504,
+    "candidates": 410,
+    "pass": 14
+   },
+   {
+    "round": 38,
+    "change": "move down below 'if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain': cast Mind Blast",
+    "gain_seed1": 0.0017129990222488622,
+    "gain_seed2": 0.0017969303157301386,
+    "candidates": 407,
+    "pass": 14
    }
   ],
   "final": {
-   "raid": {}
+   "raid": {
+    "open winner": {
+     "before": 525.6748167200017,
+     "after": 606.0772577394065,
+     "base": 525.6748167200017,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.021285000000000005,
+     "oom_after": 5.660659999999953
+    },
+    "smite-open-raid": {
+     "before": 543.9918888245945,
+     "after": 604.7804062391368,
+     "base": 543.9918888245945,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.012334999999999999,
+     "oom_after": 2.953849999999988
+    },
+    "sim preset: Smite": {
+     "before": 540.4778000774638,
+     "after": 593.8466632655624,
+     "base": 540.4778000774638,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.018259999999999985,
+     "oom_after": 2.7366999999999972
+    },
+    "smite-discipline-raid": {
+     "before": 540.4778000774638,
+     "after": 593.8466632655624,
+     "base": 540.4778000774638,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.018259999999999985,
+     "oom_after": 2.7366999999999972
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Discipline/Holy"
+   ],
+   "required": [
+    "Holy Fire",
+    "Smite"
+   ],
+   "rejected": {
+    "structure": 182,
+    "casts": 20,
+    "core_share": 0
+   },
+   "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 14
  }
 }

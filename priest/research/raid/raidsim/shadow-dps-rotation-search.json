@@ -88,11 +88,11 @@
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/priest/dps/apls/shadow.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/shadow.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
   "builds": [
    {
@@ -102,6 +102,11 @@
    {
     "label": "sim preset: Shadow",
     "talents": "005300231303--505120501201300051"
+   },
+   {
+    "label": "opt-shadow-dps-raid-dps",
+    "talents": "00500503103--50052001251302251",
+    "protect_only": true
    }
   ],
   "tuned_on": [
@@ -139,26 +144,42 @@
   "final": {
    "raid": {
     "opt-shadow-dps-raid-dps": {
-     "before": 692.422395272649,
-     "after": 697.4943198590684,
-     "base": 692.422395272649,
+     "before": 799.5146248367683,
+     "after": 798.3237705618631,
+     "base": 799.5146248367683,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Shadow": {
-     "before": 691.4359589368291,
-     "after": 695.4520733756791,
-     "base": 691.4359589368291,
+     "before": null,
+     "after": null,
+     "base": null,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": null,
+     "oom_after": null
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Shadow"
+   ],
+   "required": [
+    "Mind Blast",
+    "Mind Flay",
+    "Shadow Word: Pain"
+   ],
+   "rejected": {
+    "structure": 21,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-27",
-  "passes": 6
+  "passes": 7
  }
 }

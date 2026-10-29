@@ -3,40 +3,42 @@
  "spec": "smite-dps",
  "build": "smite-open-raid",
  "setting": "raid",
- "date": "2026-10-11",
+ "date": "2026-10-29",
  "tank": false,
  "removal": {
-  "Divine Fury": 0.10088154434975716,
+  "Blessed Recovery": -0.0,
+  "Divine Fury": 0.10799658582634286,
   "Holy Nova": -0.0,
-  "Holy Precision": 0.09498954483548594,
-  "Holy Specialization": 0.016778983853269924,
-  "Improved Healing": 0.002052152375409455,
-  "Improved Renew": -0.0,
-  "Improved Shadow Word: Pain": 0.0248843195545857,
-  "Inner Focus": 0.007656881454577991,
-  "Meditation": 0.09389824606262165,
-  "Mental Agility": 0.02725745766507126,
-  "Mental Strength": 0.0011421926474348698,
-  "Penance": 0.08124046937366614,
-  "Power in Light": 0.050034069635628065,
-  "Searing Light": 0.034994783573428445,
-  "Shadow Focus": 0.007913283816608274,
-  "Spell Warding": -0.0,
-  "Spiritual Guidance": 0.009287098345467149,
+  "Holy Precision": 0.08295614839638932,
+  "Holy Specialization": 0.011927412768059531,
+  "Improved Mind Blast": 0.00265698110059176,
+  "Improved Mind Flay": 7.066239819164544e-06,
+  "Improved Shadow Word: Pain": 0.019960727088625396,
+  "Inner Focus": 0.04806948498237651,
+  "Inspiration": -0.0,
+  "Meditation": 0.03382959482285186,
+  "Mental Agility": 0.010498242088325949,
+  "Mind Flay": 6.792701660929268e-06,
+  "Power in Light": 0.03799900111779608,
+  "Searing Light": 0.021683108761059944,
+  "Shadow Focus": 0.020978669105313874,
+  "Shadow Weaving": 0.02801896036260232,
   "Twilight Focus": -0.0,
-  "Twin Disciplines": 0.008813157266216787
+  "Twin Disciplines": 0.005362299156182693
  },
  "free": [
+  "Blessed Recovery",
   "Holy Nova",
-  "Improved Renew",
-  "Mental Strength",
-  "Spell Warding",
+  "Improved Mind Flay",
+  "Inspiration",
   "Twilight Focus"
  ],
  "kept_for_rotation": [
   "Inner Focus"
  ],
- "active_never_worth": [],
+ "active_never_worth": [
+  "Mind Flay"
+ ],
  "abilities_never_cast": [
   "Holy Nova"
  ],
@@ -44,14 +46,41 @@
   {
    "round": 1,
    "kind": "utility",
-   "from": "Improved Renew",
-   "to": "Binding Heal",
+   "from": "Blessed Recovery",
+   "to": "Twilight Focus",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "threat"
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Blessed Recovery",
+   "to": "Twilight Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Mind Flay",
+   "to": "Spirit Tap",
+   "seed1": -3.636054286770829e-06,
+   "seed2": -4.385717682908741e-06,
+   "utility": "mana"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Improved Mind Flay",
+   "to": "Spirit Tap",
+   "seed1": -3.4301980047501957e-06,
+   "seed2": -4.147167214529901e-06,
+   "utility": "mana"
   }
  ],
- "final_seed3": 0.0,
+ "final_seed3": -8.432803833446911e-06,
  "start": {
   "Discipline": [
    [
@@ -60,7 +89,7 @@
    ],
    [
     "Twin Disciplines",
-    5
+    2
    ],
    [
     "Holy Precision",
@@ -68,7 +97,7 @@
    ],
    [
     "Mental Agility",
-    2
+    3
    ],
    [
     "Inner Focus",
@@ -77,32 +106,16 @@
    [
     "Meditation",
     3
-   ],
-   [
-    "Mental Strength",
-    1
-   ],
-   [
-    "Penance",
-    1
    ]
   ],
   "Holy": [
    [
     "Twilight Focus",
-    3
-   ],
-   [
-    "Improved Renew",
     1
    ],
    [
     "Holy Specialization",
     5
-   ],
-   [
-    "Spell Warding",
-    1
    ],
    [
     "Divine Fury",
@@ -113,16 +126,16 @@
     1
    ],
    [
-    "Improved Healing",
+    "Blessed Recovery",
     2
+   ],
+   [
+    "Inspiration",
+    1
    ],
    [
     "Searing Light",
     2
-   ],
-   [
-    "Spiritual Guidance",
-    3
    ]
   ],
   "Shadow": [
@@ -131,7 +144,23 @@
     5
    ],
    [
+    "Improved Mind Blast",
+    5
+   ],
+   [
     "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Shadow Weaving",
     2
    ]
   ]
@@ -144,7 +173,7 @@
    ],
    [
     "Twin Disciplines",
-    5
+    2
    ],
    [
     "Holy Precision",
@@ -152,7 +181,7 @@
    ],
    [
     "Mental Agility",
-    2
+    3
    ],
    [
     "Inner Focus",
@@ -161,14 +190,6 @@
    [
     "Meditation",
     3
-   ],
-   [
-    "Mental Strength",
-    1
-   ],
-   [
-    "Penance",
-    1
    ]
   ],
   "Holy": [
@@ -181,10 +202,6 @@
     5
    ],
    [
-    "Spell Warding",
-    1
-   ],
-   [
     "Divine Fury",
     5
    ],
@@ -193,20 +210,12 @@
     1
    ],
    [
-    "Improved Healing",
-    2
+    "Inspiration",
+    1
    ],
    [
     "Searing Light",
     2
-   ],
-   [
-    "Spiritual Guidance",
-    3
-   ],
-   [
-    "Binding Heal",
-    1
    ]
   ],
   "Shadow": [
@@ -215,7 +224,23 @@
     5
    ],
    [
+    "Improved Mind Blast",
+    5
+   ],
+   [
     "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    2
+   ],
+   [
+    "Spirit Tap",
     2
    ]
   ]
