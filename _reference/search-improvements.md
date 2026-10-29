@@ -261,3 +261,7 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   writes a winner only 0.5% ahead of ours), but the no-rules summary must take, per rotation, the faster of the winner and the race's
   builds of ours (it changes the priest's no-rules best: 13/3/35 at 24.27 s, not 15/3/33). Lead for fl_open_search: our raced builds
   as finalists of the 20-60 race.
+- 2026-10-29 (raid queue 2): the shockadin-entry heredoc wrote specs.json with `json.dumps(indent=1)`; apl_opt's `_point_specs` edits the
+  file as text and expects the fmt_json layout (class blocks closing at two spaces), so the next rotation write raised IndexError
+  (shockadin-apl rc=1; it had no builds to tune on, so nothing was lost). Repaired with `fmt_json.py` under the specs lock before the
+  family search's re-tune. Rule: a script that writes specs.json goes through `fmt_json.py` (or run.py's writer), never a bare dump.
