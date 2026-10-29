@@ -1,0 +1,250 @@
+{
+ "id": "unr-holy-leveling",
+ "name": "Unrestricted start (holy-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    1
+   ],
+   [
+    "Spiritual Focus",
+    2
+   ],
+   [
+    "Improved Seals",
+    3
+   ],
+   [
+    "Reverence",
+    3
+   ],
+   [
+    "Purifying Power",
+    1
+   ],
+   [
+    "Illumination",
+    5
+   ],
+   [
+    "Divine Favor",
+    1
+   ],
+   [
+    "Divine Precision",
+    2
+   ],
+   [
+    "Holy Shock",
+    1
+   ],
+   [
+    "Consecrated Ground",
+    1
+   ],
+   [
+    "Holy Power",
+    5
+   ]
+  ],
+  "Protection": [],
+  "Retribution": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Benediction",
+    3
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Vindication",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Eye for an Eye",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "15-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "27",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 1
+  },
+  {
+   "levels": "28-29",
+   "tree": "Retribution",
+   "talent": "Holy Conduit",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Retribution",
+   "talent": "Eye for an Eye",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "36-38",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Holy",
+   "talent": "Divine Intellect",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Holy",
+   "talent": "Spiritual Focus",
+   "points": 1
+  },
+  {
+   "levels": "41-43",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Holy",
+   "talent": "Purifying Power",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Holy",
+   "talent": "Spiritual Focus",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Holy",
+   "talent": "Illumination",
+   "points": 5
+  },
+  {
+   "levels": "51",
+   "tree": "Holy",
+   "talent": "Holy Shock",
+   "points": 1
+  },
+  {
+   "levels": "52-53",
+   "tree": "Holy",
+   "talent": "Divine Precision",
+   "points": 2
+  },
+  {
+   "levels": "54",
+   "tree": "Holy",
+   "talent": "Divine Favor",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Holy",
+   "talent": "Consecrated Ground",
+   "points": 1
+  },
+  {
+   "levels": "56-60",
+   "tree": "Holy",
+   "talent": "Holy Power",
+   "points": 5
+  }
+ ],
+ "notes": [
+  "the holy-leveling open-search winner 30/0/21 (own tree last), the start of the unrestricted search"
+ ]
+}

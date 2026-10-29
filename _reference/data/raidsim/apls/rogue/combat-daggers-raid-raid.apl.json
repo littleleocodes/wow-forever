@@ -4,39 +4,14 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Use Ambush Opener"
-          }
-         }
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Use Stealth/Vanish for Damage"
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Current Points less than 5"
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 11290
-           }
-          }
-         }
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 11290
         }
        }
-      ]
+      }
      }
     },
     "castSpell": {
@@ -119,11 +94,6 @@
               "val": "3"
              }
             }
-           }
-          },
-          {
-           "variableRef": {
-            "name": "Expose - Low Duration"
            }
           },
           {
@@ -327,94 +297,30 @@
         }
        },
        {
-        "variableRef": {
-         "name": "Use Backstab"
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Current Points less than 5"
-        }
-       },
-       {
-        "or": {
-         "vals": [
-          {
-           "not": {
-            "val": {
-             "variableRef": {
-              "name": "SnD Fall Imminent"
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "currentEnergy": {}
+         },
+         "rhs": {
+          "math": {
+           "op": "OpAdd",
+           "lhs": {
+            "spellCurrentCost": {
+             "spellId": {
+              "spellId": 6774
              }
             }
-           }
-          },
-          {
-           "and": {
-            "vals": [
-             {
-              "cmp": {
-               "op": "OpGt",
-               "lhs": {
-                "currentEnergy": {}
-               },
-               "rhs": {
-                "math": {
-                 "op": "OpAdd",
-                 "lhs": {
-                  "spellCurrentCost": {
-                   "spellId": {
-                    "spellId": 6774
-                   }
-                  }
-                 },
-                 "rhs": {
-                  "spellCurrentCost": {
-                   "spellId": {
-                    "spellId": 11281
-                   }
-                  }
-                 }
-                }
-               }
-              }
-             },
-             {
-              "not": {
-               "val": {
-                "variableRef": {
-                 "name": "SnD Fall Imminent"
-                }
-               }
-              }
-             }
-            ]
-           }
-          },
-          {
-           "not": {
-            "val": {
-             "variableRef": {
-              "name": "Above SnD Point Threshold"
+           },
+           "rhs": {
+            "spellCurrentCost": {
+             "spellId": {
+              "spellId": 11281
              }
             }
-           }
-          },
-          {
-           "variableRef": {
-            "name": "In Danger of Energy Capping"
-           }
-          },
-          {
-           "variableRef": {
-            "name": "Expose - Low Duration"
            }
           }
-         ]
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Gnome Eureka - Active or Not Ready"
+         }
         }
        }
       ]

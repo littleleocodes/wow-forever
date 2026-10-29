@@ -1,0 +1,110 @@
+{
+ "raid": {
+  "class": "paladin",
+  "spec": "shockadin-raid",
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/shockadin-sig-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\paladin\\shockadin-sig-raid.base.apl.json",
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "553030030001012--1421533000133002"
+   }
+  ],
+  "tuned_on": [
+   "open winner"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: cast Consecration",
+    "gain_seed1": 0.03126151951388212,
+    "gain_seed2": 0.03073886929445835,
+    "candidates": 447,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop: if mana % \u2265 15% and time to the next auto attack < 0.4s and mana % < 50%: cast Seal of Righteousness (rank 7)",
+    "gain_seed1": 0.007309197173871684,
+    "gain_seed2": 0.007518248284687168,
+    "candidates": 457,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: if time left on Seal of Righteousness < time to the next auto attack and auraIsInactive: cast Seal of Righteousness",
+    "gain_seed1": 0.014990140632199722,
+    "gain_seed2": 0.014563220503335916,
+    "candidates": 413,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop: if mana % \u2265 15% and time to the next auto attack < 0.4s: cast Seal of Righteousness",
+    "gain_seed1": 0.0032986971423512035,
+    "gain_seed2": 0.0036157706225283803,
+    "candidates": 434,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop: if time left on Seal of Righteousness \u2264 1s: cast Seal of Righteousness",
+    "gain_seed1": 0.005414943736063327,
+    "gain_seed2": 0.005009211455992979,
+    "candidates": 397,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "move to the top: use every other cooldown when ready",
+    "gain_seed1": 0.0030235330050711884,
+    "gain_seed2": 0.0032624197315165304,
+    "candidates": 368,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "drop: cast Consecration",
+    "gain_seed1": 0.0069746356219311245,
+    "gain_seed2": 0.006314105077684262,
+    "candidates": 368,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "open winner": {
+     "before": 741.7452703568501,
+     "after": 792.4268164943281,
+     "base": 741.7452703568501,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.27114569834360747,
+     "oom_after": 0.04339649980834979
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Holy/Retribution"
+   ],
+   "required": [
+    "Holy Shock"
+   ],
+   "rejected": {
+    "structure": 34,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
+  "first_date": "2026-10-29",
+  "passes": 2
+ }
+}

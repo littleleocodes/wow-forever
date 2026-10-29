@@ -4,39 +4,14 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Use Ambush Opener"
-          }
-         }
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Use Stealth/Vanish for Damage"
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Current Points less than 5"
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 11290
-           }
-          }
-         }
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 11290
         }
        }
-      ]
+      }
      }
     },
     "castSpell": {
@@ -119,11 +94,6 @@
               "val": "3"
              }
             }
-           }
-          },
-          {
-           "variableRef": {
-            "name": "Expose - Low Duration"
            }
           },
           {

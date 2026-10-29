@@ -899,6 +899,7 @@
       "builds": ["prot-tank", "opt-prot-tank-raid-tank", "protection-ml-tank"]
     },
     "shockadin-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
       "sim_class": "ClassPaladin",
       "sim_spec": "paladin/retribution",
       "profile": "raid-dps",
@@ -930,7 +931,7 @@
       },
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": [],
+      "builds": ["shockadin-open-raid"],
       "rotation_only": true,
       "preset_names": [],
       "rotation_note": "2026-10-24 (signature rule, user 2026-10-22): Shockadin plays Holy Shock as its main damage; base rotation shockadin-sig-raid.base.apl.json; gear, consumables and self-buffs as ret-dps"

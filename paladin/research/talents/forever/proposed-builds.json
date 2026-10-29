@@ -1521,6 +1521,58 @@
       "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
       "sources": [],
       "replaces": "prot-tank"
+    },
+    {
+      "id": "shockadin-open-raid",
+      "name": "Shockadin — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Holy/Retribution",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Shockadin (a Holy/Retribution hybrid) raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Divine Intellect", 5],
+          ["Improved Seals", 3],
+          ["Reverence", 3],
+          ["Divine Favor", 1],
+          ["Divine Precision", 1],
+          ["Holy Shock", 1],
+          ["Consecrated Ground", 2],
+          ["Voice of Truth", 1],
+          ["Purifying Power", 2]
+        ],
+        "Protection": [],
+        "Retribution": [
+          ["Benediction", 5],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Conviction", 5],
+          ["Sanctified Judgement", 3],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 2],
+          ["Vengeance", 3],
+          ["Champion of the Light", 1],
+          ["Instrument of Law", 1],
+          ["Vindication", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Holy Shock", "why": "83 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Vengeance", "why": "58 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Consecrated Ground", "why": "46 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Judgement", "why": "36 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Seals", "why": "27 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Conviction", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Open search result (shockadin-raid, full raid): 24/0/27 (Shockadin (a Holy/Retribution hybrid)) at 759.1 DPS;  in the same fights; 2,349 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.6): 764.9 DPS against 759.2 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Healing Light, Spiritual Focus, Unyielding Faith, Deflection, Pursuit of Justice.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Healing Light -> Divine Strength (+0.2% DPS); Spiritual Focus -> Voice of Truth (interrupt); Deflection -> Benediction (mana); Spiritual Focus -> Purifying Power (mana); Unyielding Faith -> Purifying Power (mana); Deflection -> Benediction (mana); Pursuit of Justice -> Deflection (survival); Benediction -> Vindication (+0.2% DPS); Pursuit of Justice -> Vindication (+0.2% DPS); Deflection -> Benediction (mana). Net +0.73% on a third seed."],
+      "open_questions": ["An open-search Shockadin build: check it against the community's Shockadin builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/451231030001112--2322503020123011-7"]
     }
   ]
 }

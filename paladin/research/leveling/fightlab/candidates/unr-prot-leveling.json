@@ -1,0 +1,260 @@
+{
+ "id": "unr-prot-leveling",
+ "name": "Unrestricted start (prot-leveling)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Holy": [],
+  "Protection": [
+   [
+    "Toughness",
+    1
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Shield Specialization",
+    3
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "One-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Improved Hammer of Justice",
+    1
+   ],
+   [
+    "Templar's Bulwark",
+    1
+   ],
+   [
+    "Reckoning",
+    5
+   ],
+   [
+    "Iron Creed",
+    2
+   ],
+   [
+    "Holy Shield",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    1
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Vindication",
+    2
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Retribution",
+   "talent": "Holy Conduit",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "27-30",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 4
+  },
+  {
+   "levels": "31-32",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "33",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "35",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "36-38",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Protection",
+   "talent": "Improved Seal of Fury",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Retribution",
+   "talent": "Holy Conduit",
+   "points": 1
+  },
+  {
+   "levels": "46-47",
+   "tree": "Protection",
+   "talent": "One-Handed Weapon Specialization",
+   "points": 2
+  },
+  {
+   "levels": "48",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "49",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Protection",
+   "talent": "One-Handed Weapon Specialization",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 2
+  },
+  {
+   "levels": "53-57",
+   "tree": "Protection",
+   "talent": "Reckoning",
+   "points": 5
+  },
+  {
+   "levels": "58-59",
+   "tree": "Protection",
+   "talent": "Iron Creed",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Protection",
+   "talent": "Holy Shield",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the prot-leveling open-search winner 0/32/19 (polished from the stats model order), the start of the unrestricted search"
+ ]
+}

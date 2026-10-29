@@ -6246,5 +6246,31 @@
     "kept": false
    }
   ]
+ },
+ "paladin/shockadin-raid/raid/any": {
+  "class": "paladin",
+  "spec": "any",
+  "entry": "shockadin-raid",
+  "setting": "raid",
+  "date": "2026-10-29",
+  "base_dps": 725.95,
+  "abilities": [
+   {
+    "ability": "Divine Favor",
+    "talent": "Divine Favor",
+    "spell": 20216,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0,
+     "split": "24/0/27",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
  }
 }
