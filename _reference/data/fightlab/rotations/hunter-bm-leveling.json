@@ -1,19 +1,16 @@
 {
  "veto": {
-  "Multi-Shot": {
-   "off": true
-  },
   "Arcane Shot": {
    "off": true
   },
-  "Summon Hawk": {
+  "Multi-Shot": {
    "off": true
   }
  },
  "drink_below": 0.15,
  "class": "hunter",
  "spec": "bm-leveling",
- "build": "bm-solo-farm",
+ "build": "hunter/research/leveling/fightlab/candidates/unr-bm-leveling.json",
  "levels": [
   20,
   30,
@@ -21,97 +18,75 @@
   50,
   60
  ],
- "date": "2026-10-24",
- "signature": {
-  "required": [
-   "Aimed Shot",
-   "Bestial Wrath"
-  ],
-  "build_spec": "Beast Mastery",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.46676157826810877,
-  "core_share_after": 0.41622826808224367,
-  "min_share": 0.35,
-  "floor_reached": null
- },
+ "date": "2026-10-29",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Multi-Shot",
-   "rule": [
-    "off",
-    "Multi-Shot",
-    true
-   ],
-   "gain_seed1": 0.03279402689744548,
-   "gain_seed2": 0.0350061724578965
-  },
-  {
-   "round": 2,
    "change": "never cast Arcane Shot",
    "rule": [
     "off",
     "Arcane Shot",
     true
    ],
-   "gain_seed1": 0.021761611672820647,
-   "gain_seed2": 0.01998796950034587
+   "gain_seed1": 0.04963268244002872,
+   "gain_seed2": 0.04799513454155191
+  },
+  {
+   "round": 2,
+   "change": "never cast Multi-Shot",
+   "rule": [
+    "off",
+    "Multi-Shot",
+    true
+   ],
+   "gain_seed1": 0.04545678706218437,
+   "gain_seed2": 0.04543646800913015
   },
   {
    "round": 3,
-   "change": "never cast Summon Hawk",
-   "rule": [
-    "off",
-    "Summon Hawk",
-    true
-   ],
-   "gain_seed1": 0.025035109360147634,
-   "gain_seed2": 0.02471479952810529
-  },
-  {
-   "round": 4,
    "change": "drink below 15% mana",
    "rule": [
     "drink_below",
     null,
     0.15
    ],
-   "gain_seed1": 0.006399604993075458,
-   "gain_seed2": 0.007685372593137396
+   "gain_seed1": 0.005739510258545466,
+   "gain_seed2": 0.005236040113187124
   }
  ],
- "weighted_before": 26.76664120916921,
- "weighted_after": 24.49695749789545,
+ "weighted_before": 26.652436939113738,
+ "weighted_after": 24.087359728393356,
  "per_level": {
   "20": {
-   "before": 15.41713490757413,
-   "after": 14.602115465263257,
+   "before": 17.038988829023616,
+   "after": 16.136698567456957,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 20.974321260079126,
-   "after": 19.216786594618195,
+   "before": 23.036669849124806,
+   "after": 20.409625046104058,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.177413245890367,
-   "after": 23.881347190575767,
+   "before": 28.083065428895793,
+   "after": 24.452928695508653,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.215688067524248,
-   "after": 26.54555734923304,
+   "before": 28.21050285772388,
+   "after": 25.252351991648137,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.131249544469306,
-   "after": 29.138563955843278,
+   "before": 29.41266259544176,
+   "after": 27.36190792572762,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

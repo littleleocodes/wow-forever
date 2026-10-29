@@ -2,19 +2,11 @@
  "veto": {
   "Serpent Sting": {
    "off": true
-  },
-  "Immolation Trap": {
-   "min_mana": 0.5
-  },
-  "Strider Kick": {
-   "min_hp": 0.35,
-   "off": true
   }
  },
- "drink_below": 0.6,
  "class": "hunter",
  "spec": "melee-dps",
- "build": "leveling-melee",
+ "build": "hunter/research/leveling/fightlab/candidates/unr-melee-dps.json",
  "levels": [
   20,
   30,
@@ -22,91 +14,25 @@
   50,
   60
  ],
- "date": "2026-10-24",
- "signature": {
-  "required": [
-   "Raptor Strike"
-  ],
-  "build_spec": "Survival",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.3802132474721401,
-  "core_share_after": 0.5061835334228724,
-  "min_share": 0.5,
-  "floor_reached": true
- },
+ "date": "2026-10-29",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "phase": "floor",
    "change": "never cast Serpent Sting",
    "rule": [
     "off",
     "Serpent Sting",
     true
    ],
-   "share_seed1": 0.4458,
-   "share_seed2": 0.4518,
-   "seconds_seed2": 23.57,
-   "seconds_before_seed2": 24.21
-  },
-  {
-   "round": 2,
-   "phase": "floor",
-   "change": "Immolation Trap only above 50% mana",
-   "rule": [
-    "min_mana",
-    "Immolation Trap",
-    0.5
-   ],
-   "share_seed1": 0.4583,
-   "share_seed2": 0.4652,
-   "seconds_seed2": 23.75,
-   "seconds_before_seed2": 23.57
-  },
-  {
-   "round": 3,
-   "phase": "floor",
-   "change": "Strider Kick only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Strider Kick",
-    0.35
-   ],
-   "share_seed1": 0.4735,
-   "share_seed2": 0.4788,
-   "seconds_seed2": 23.96,
-   "seconds_before_seed2": 23.75
-  },
-  {
-   "round": 4,
-   "phase": "floor",
-   "change": "never cast Strider Kick",
-   "rule": [
-    "off",
-    "Strider Kick",
-    true
-   ],
-   "share_seed1": 0.5048,
-   "share_seed2": 0.5043,
-   "seconds_seed2": 24.4,
-   "seconds_before_seed2": 23.96
-  },
-  {
-   "round": 1,
-   "change": "drink below 60% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.6
-   ],
-   "gain_seed1": 0.0056021634060609005,
-   "gain_seed2": 0.008984912626875174
+   "gain_seed1": 0.038813862892048245,
+   "gain_seed2": 0.035665796748029166
   }
  ],
- "weighted_before": 24.18499040767148,
- "weighted_after": 24.135735588912272,
+ "weighted_before": 23.251478485139575,
+ "weighted_after": 22.368531729307627,
  "per_level": {
   "20": {
    "before": 16.85940313928401,
@@ -115,26 +41,26 @@
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.000016523588677,
-   "after": 19.97902235624673,
+   "before": 21.156117593974468,
+   "after": 19.70800676250477,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 23.889159383964813,
-   "after": 23.413186498119458,
+   "before": 23.093823865981687,
+   "after": 22.00466666652961,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 25.28467282193385,
-   "after": 25.43363074452526,
+   "before": 24.554486995270224,
+   "after": 23.610356292893858,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 27.00015844309451,
-   "after": 28.163735276869936,
+   "before": 25.4491133670037,
+   "after": 24.866972139144835,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

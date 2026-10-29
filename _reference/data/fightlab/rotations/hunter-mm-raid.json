@@ -1,16 +1,19 @@
 {
  "veto": {
+  "Arcane Shot": {
+   "off": true
+  },
   "Multi-Shot": {
    "off": true
   },
-  "Arcane Shot": {
-   "off": true
+  "Serpent Sting": {
+   "min_mana": 0.3
   }
  },
  "drink_below": 0.15,
  "class": "hunter",
  "spec": "mm-raid",
- "build": "opt-mm-raid-leveling-st",
+ "build": "hunter/research/leveling/fightlab/candidates/unr-mm-raid.json",
  "levels": [
   20,
   30,
@@ -18,42 +21,32 @@
   50,
   60
  ],
- "date": "2026-10-24",
- "signature": {
-  "required": [
-   "Aimed Shot"
-  ],
-  "build_spec": "Marksmanship",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.7121496328735533,
-  "core_share_after": 0.7045610249635706,
-  "min_share": 0.6,
-  "floor_reached": null
- },
+ "date": "2026-10-29",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Multi-Shot",
-   "rule": [
-    "off",
-    "Multi-Shot",
-    true
-   ],
-   "gain_seed1": 0.522030362009659,
-   "gain_seed2": 0.5227204996297774
-  },
-  {
-   "round": 2,
    "change": "never cast Arcane Shot",
    "rule": [
     "off",
     "Arcane Shot",
     true
    ],
-   "gain_seed1": 0.031127079118204004,
-   "gain_seed2": 0.03412009906863589
+   "gain_seed1": 0.047765639486079925,
+   "gain_seed2": 0.04821048366916236
+  },
+  {
+   "round": 2,
+   "change": "never cast Multi-Shot",
+   "rule": [
+    "off",
+    "Multi-Shot",
+    true
+   ],
+   "gain_seed1": 0.04687131090191876,
+   "gain_seed2": 0.04753783962882885
   },
   {
    "round": 3,
@@ -63,40 +56,51 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.009002681336654272,
-   "gain_seed2": 0.007219146465182291
+   "gain_seed1": 0.008202757255708404,
+   "gain_seed2": 0.006377950125841081
+  },
+  {
+   "round": 4,
+   "change": "Serpent Sting only above 30% mana",
+   "rule": [
+    "min_mana",
+    "Serpent Sting",
+    0.3
+   ],
+   "gain_seed1": 0.0037139924264528723,
+   "gain_seed2": 0.004560033318937284
   }
  ],
- "weighted_before": 27.385518988568315,
- "weighted_after": 25.11329248423778,
+ "weighted_before": 26.871728213377196,
+ "weighted_after": 24.06909750502063,
  "per_level": {
   "20": {
-   "before": 17.698844216276985,
-   "after": 16.597403561442274,
+   "before": 17.89262749809269,
+   "after": 15.379720405057547,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.307004932160197,
-   "after": 20.63477195186827,
+   "before": 22.693132091571037,
+   "after": 19.391470930727976,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.811045697695885,
-   "after": 24.4978304332009,
+   "before": 28.498341795877145,
+   "after": 24.381323203628494,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.121423238958098,
-   "after": 26.605936875555006,
+   "before": 28.725342713776598,
+   "after": 25.852020700143516,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.923396259459622,
-   "after": 29.357620099281263,
+   "before": 29.32497204070897,
+   "after": 27.610450030480326,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

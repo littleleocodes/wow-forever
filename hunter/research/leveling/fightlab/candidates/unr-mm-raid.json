@@ -1,0 +1,195 @@
+{
+ "id": "unr-mm-raid",
+ "name": "Unrestricted start (mm-raid)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Spirit Bond",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    4
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 3
+  },
+  {
+   "levels": "20-24",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "25",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Swiftness",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Beast Mastery",
+   "talent": "Intimidation",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Beast Mastery",
+   "talent": "Spirit Bond",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Beast Mastery",
+   "talent": "Frenzy",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Wrath",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "46-50",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "51-52",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 2
+  },
+  {
+   "levels": "53-55",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 4
+  }
+ ],
+ "notes": [
+  "the mm-raid open-search winner 31/16/4 (polished from the stats model order), the start of the unrestricted search"
+ ]
+}
