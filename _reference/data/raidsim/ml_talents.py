@@ -34,6 +34,7 @@ import argparse
 import datetime
 import importlib.util
 import json
+import os
 import math
 import pathlib
 import random
@@ -161,7 +162,9 @@ class Space:
 
     def allowed(self, flat):
         """Whether the build may use the searched rotation (allow_trees; see __init__)."""
-        if self.allow_trees is None:
+        # WOW_FOREVER_UNRESTRICTED=1 (the unrestricted search, user 2026-10-24: "no matter what talents or rotations"; branch
+        # unrestricted-raid only): any build may use any entry's rotation
+        if self.allow_trees is None or os.environ.get("WOW_FOREVER_UNRESTRICTED") == "1":
             return True
         spec = self.classify(flat)
         for t in self.allow_trees:

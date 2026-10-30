@@ -581,6 +581,8 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
             out.append({"label": pr["label"], "talents": pr["talents"]})
     # the builds below are protected, not tuned on (2026-10-08: an --all pass scored every candidate on every listed build, 6 to 8 builds
     # an entry, several times the work of the two tuning builds; only our best build and the simulator's best preset above are tuned on)
+    if os.environ.get("WOW_FOREVER_UNRESTRICTED") == "1":   # the unrestricted search (branch unrestricted-raid): no build is protected
+        return out
     for bid in entry.get("tune_builds", []):   # builds of another rotation family sharing the entry (2026-09-28: the Arcane Power Frost draft)
         t = R.talents_string(trees, R.alloc_of(data[bid]))
         if t not in {b["talents"] for b in out}:
