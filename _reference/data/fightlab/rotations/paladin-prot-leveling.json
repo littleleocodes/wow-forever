@@ -1,0 +1,68 @@
+{
+ "veto": {
+  "Hammer of Justice": {
+   "off": true
+  }
+ },
+ "class": "paladin",
+ "spec": "prot-leveling",
+ "build": "paladin/research/leveling/fightlab/candidates/unr-prot-leveling.json",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-10-30",
+ "signature": null,
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Hammer of Justice",
+   "rule": [
+    "off",
+    "Hammer of Justice",
+    true
+   ],
+   "gain_seed1": 0.0067308942950012884,
+   "gain_seed2": 0.004730923224990691
+  }
+ ],
+ "weighted_before": 30.931558644125765,
+ "weighted_after": 30.843544906038623,
+ "per_level": {
+  "20": {
+   "before": 23.601504362907512,
+   "after": 23.469935055993755,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 29.804419327890734,
+   "after": 29.7433083025737,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 32.33873333361088,
+   "after": 32.304928859386365,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 30.820260475657957,
+   "after": 30.719919975930384,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 33.09311174338247,
+   "after": 32.98029796397775,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

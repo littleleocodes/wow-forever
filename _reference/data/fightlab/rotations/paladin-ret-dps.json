@@ -7,7 +7,7 @@
  "drink_below": 0.15,
  "class": "paladin",
  "spec": "ret-dps",
- "build": "leveling-retribution",
+ "build": "paladin/research/leveling/fightlab/candidates/unr-ret-dps.json",
  "levels": [
   20,
   30,
@@ -15,18 +15,8 @@
   50,
   60
  ],
- "date": "2026-10-23",
- "signature": {
-  "required": [
-   "Judgement"
-  ],
-  "build_spec": "Retribution",
-  "dropped_saved_rules": [],
-  "core_share_before": 0.7734659755475337,
-  "core_share_after": 0.8692546991672637,
-  "min_share": 0.6,
-  "floor_reached": null
- },
+ "date": "2026-10-30",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -38,8 +28,8 @@
     "Consecration",
     true
    ],
-   "gain_seed1": 0.05044433143695981,
-   "gain_seed2": 0.05089402227653628
+   "gain_seed1": 0.06472941353368022,
+   "gain_seed2": 0.06311506200168115
   },
   {
    "round": 2,
@@ -49,40 +39,40 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.012578657366546508,
-   "gain_seed2": 0.009360639455844977
+   "gain_seed1": 0.013261587413192943,
+   "gain_seed2": 0.010572239715863851
   }
  ],
- "weighted_before": 30.432732574957576,
- "weighted_after": 28.562279548947703,
+ "weighted_before": 30.561381664257198,
+ "weighted_after": 28.16189716177245,
  "per_level": {
   "20": {
-   "before": 20.996303734812916,
-   "after": 19.867678597889174,
+   "before": 21.694000451584404,
+   "after": 19.690942922687793,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.283714381304556,
-   "after": 23.435664991749398,
+   "before": 25.47557869727375,
+   "after": 23.299864505790733,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 31.305193449681774,
-   "after": 29.283193944332368,
+   "before": 31.273583960574527,
+   "after": 29.025268971505977,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 31.734435712304627,
-   "after": 29.626910938214206,
+   "before": 31.718425738717183,
+   "after": 29.089153875868213,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 34.48632475422696,
-   "after": 32.655984723254505,
+   "before": 34.62107195904497,
+   "after": 32.068269767889376,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
