@@ -108,7 +108,7 @@
          },
          "rhs": {
           "const": {
-           "val": "0.1"
+           "val": "0.2"
           }
          }
         }
@@ -138,7 +138,8 @@
       "spellId": 3045
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-30: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -183,6 +184,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 13444
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-30: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   }
  ]
 }

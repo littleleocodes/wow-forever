@@ -230,7 +230,7 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-22",
+  "date": "2026-10-30",
   "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
@@ -238,27 +238,22 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "beast-marks-open-raid",
-    "talents": "552100050500022-00530503005-3"
-   },
-   {
-    "label": "sim preset: Beast Mastery 35/16/0",
-    "talents": "5520001505121251-0050551"
-   },
-   {
-    "label": "mm-hawk-raid",
-    "talents": "53200005051001-105355000150004",
-    "protect_only": true
+    "label": "open winner",
+    "talents": "502-0053352501522051-5"
    },
    {
     "label": "beast-mastery-ml-raid",
     "talents": "5320001505101251-00530502005",
     "protect_only": true
+   },
+   {
+    "label": "sim preset: BM",
+    "talents": "5320001505101251-0053250001-4",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "beast-marks-open-raid",
-   "sim preset: Beast Mastery 35/16/0"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -374,49 +369,72 @@
     "gain_seed2": 0.002234557693348682,
     "candidates": 322,
     "pass": 13
+   },
+   {
+    "round": 15,
+    "change": "insert at the end: cast Major Mana Potion",
+    "gain_seed1": 0.0030352827636670465,
+    "gain_seed2": 0.0029796858650101843,
+    "candidates": 422,
+    "pass": 15
+   },
+   {
+    "round": 16,
+    "change": "threshold 0.1 -> 0.2: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire",
+    "gain_seed1": 0.001507281467270749,
+    "gain_seed2": 0.002294776781675223,
+    "candidates": 429,
+    "pass": 15
    }
   ],
   "final": {
    "raid": {
-    "beast-marks-open-raid": {
-     "before": 637.2472621632246,
-     "after": 756.4204143308996,
-     "base": 637.2472621632246,
+    "open winner": {
+     "before": 611.6725510080018,
+     "after": 783.5565799175383,
+     "base": 611.6725510080018,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.01021593404675,
-     "oom_after": 0.01021593404675
-    },
-    "sim preset: Beast Mastery 35/16/0": {
-     "before": 700.6781057192826,
-     "after": 716.9397991084375,
-     "base": 700.6781057192826,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "mm-hawk-raid": {
-     "before": 689.0463609124697,
-     "after": 715.1404808738423,
-     "base": 689.0463609124697,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 2.3743531300055856,
+     "oom_after": 0.08166543938505008
     },
     "beast-mastery-ml-raid": {
-     "before": 735.682573210256,
-     "after": 768.4099220238508,
-     "base": 735.682573210256,
+     "before": 735.6825732102587,
+     "after": 768.913399808715,
+     "base": 735.6825732102587,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0118252197144,
-     "oom_after": 0.0118252197144
+     "oom_before": 0.011825219714399997,
+     "oom_after": 0.00018967032645000003
+    },
+    "sim preset: BM": {
+     "before": 730.8142139521855,
+     "after": 749.8968923075355,
+     "base": 730.8142139521855,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Beast Mastery",
+    "Hybrid Beast Mastery/Marksmanship"
+   ],
+   "required": [
+    "Aimed Shot",
+    "Bestial Wrath"
+   ],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": false
+  },
   "first_date": "2026-09-28",
-  "passes": 14
+  "passes": 15
  }
 }
