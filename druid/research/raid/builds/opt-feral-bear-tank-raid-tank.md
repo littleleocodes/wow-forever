@@ -60,30 +60,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/42/0 | 1.046 | +0.0% | 3139 | 360 |
-| 2 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -4.4% | 2874 | 360 |
-| 3 | *Hybrid* | community simulator | - | 0.889 | -15.0% | 2428 | 386 |
-| 4 | *Bear* | community simulator | - | 0.825 | -21.1% | 2068 | 387 |
+| 1 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.056 | +0.0% | 4045 | 364 |
+| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/42/0 | 1.044 | -1.1% | 3964 | 364 |
+| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -5.3% | 3641 | 364 |
+| 4 | *Hybrid* | community simulator | - | 0.880 | -16.7% | 2997 | 389 |
+| 5 | *Bear* | community simulator | - | 0.800 | -24.3% | 2421 | 390 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-17, 3 changes to the base rotation; third-seed check: deep: tank 539 -> 537 DPS (-0.4%), feral-bear-tank 539 -> 537 DPS (-0.4%), sim preset: Bear Tank 0/31/20 495 -> 499 DPS (+1.0%), opt-feral-bear-tank-raid-tank 539 -> 537 DPS (-0.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-10-29, 8 changes to the base rotation; third-seed check: deep: tank 542 -> 2610 DPS (+381.3%), opt-feral-bear-tank-raid-tank 594 -> 2554 DPS (+330.3%), sim preset: Hybrid 579 -> 1930 DPS (+233.2%), feral-bear-tank 513 -> 2349 DPS (+357.6%), feral-combat-ml-tank 542 -> 2608 DPS (+381.5%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
   3. insert before the filler: cast Barkskin (+2.2%, pass 3)
+  4. only with 20s or more of the fight left: cast Lacerate (+1.2%, pass 11)
+  5. drop the condition: if rage ≥ 50: cast Maul (+6.6%, pass 12)
+  6. drop: cast Primal Bite (+2.2%, pass 12)
+  7. insert before the filler: if rage < 20: cast Enrage (+1.2%, pass 12)
+  8. drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate (+0.3%, pass 12)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 29.3 |
-| 3 | cast Primal Bite | 9.6 |
-| 4 | if rage ≥ 50: cast Maul | 112.9 |
-| 5 | cast Barkskin | 1.0 |
-| 6 | cast Lacerate | 29.3 |
+| 2 | if time left on Lacerate ≤ 4.5s: cast Lacerate | 5.6 |
+| 3 | cast Maul | 170.2 |
+| 4 | cast Barkskin | 1.0 |
+| 5 | if rage < 20: cast Enrage | 1.0 |
+| 6 | if time left in the fight ≥ 20s: cast Lacerate | 5.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights).
 
@@ -91,11 +97,10 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
-| Maul | 67% |
-| Auto Attack | 17% |
-| Lacerate | 7% |
-| Primal Bite | 5% |
+| Maul | 80% |
+| Auto Attack | 14% |
 | Judgement of Light | 2% |
+| Lacerate | 2% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 0% |
 | Thorns | 0% |

@@ -2591,5 +2591,686 @@
   "date": "2026-10-29",
   "setting": "raid",
   "why": "confirms opt-shadow-dps-raid-dps (+0.45% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Meditation",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Spirit Tap",
+      4
+     ],
+     [
+      "Improved Mind Blast",
+      4
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ]
+    ]
+   },
+   "split": "18/0/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": -0.0001415061201260892,
+     "seed2": -3.590867618941118e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": -0.0001498482594943784,
+     "seed2": -0.00013557470649905312,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.0003116450350511002,
+     "seed2": -0.0002953694438355692,
+     "utility": "mana"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.00036621561864502716,
+     "seed2": -0.00020083347596189238,
+     "utility": "mana"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.00033871303322607904,
+     "seed2": -0.00020521262986061828,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": -0.0010392226942994576
+  },
+  "bis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Silent Resolve",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Spirit Tap",
+      5
+     ]
+    ]
+   },
+   "split": "15/3/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Mental Agility",
+     "to": "Martyrdom",
+     "seed1": 0.0003068606771166049,
+     "seed2": 0.00018093453814072014,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Silence",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Improved Psychic Scream",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Power in Light",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 9,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 10,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 11,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 12,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 13,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": -6.530161614681784e-05
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Meditation",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Spirit Tap",
+      3
+     ]
+    ]
+   },
+   "split": "18/0/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Inner Fire",
+     "to": "Martyrdom",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": -0.00013960932064516207,
+     "seed2": -3.374844907755303e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Silence",
+     "seed1": -0.00015092121995352592,
+     "seed2": -0.0001330760649536078,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.00032051225553886287,
+     "seed2": -0.0002991783686143723,
+     "utility": "mana"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.0003626948066476343,
+     "seed2": -0.00019737690478960346,
+     "utility": "mana"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Spirit Tap",
+     "seed1": -0.00034439883158687845,
+     "seed2": -0.00020883515051695056,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": -0.0010404472413633181
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Silent Resolve",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Spirit Tap",
+      5
+     ]
+    ]
+   },
+   "split": "15/3/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Martyrdom",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Dark Inspiration",
+     "to": "Silence",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Improved Psychic Scream",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Power in Light",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Power in Light",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 9,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 10,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 11,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 12,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 13,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": 0.0
+  }
  }
 }

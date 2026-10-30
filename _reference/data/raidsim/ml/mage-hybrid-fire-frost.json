@@ -2865,5 +2865,228 @@
   ],
   "date": "2026-10-29",
   "setting": "raid"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": {
+   "allocation": {
+    "Arcane": [],
+    "Fire": [
+     [
+      "Improved Fire Blast",
+      1
+     ],
+     [
+      "Incineration",
+      3
+     ],
+     [
+      "Improved Fireball",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Heating Up",
+      1
+     ],
+     [
+      "Master of Elements",
+      2
+     ],
+     [
+      "Critical Mass",
+      5
+     ],
+     [
+      "Fire Power",
+      3
+     ]
+    ],
+    "Frost": [
+     [
+      "Frost Warding",
+      2
+     ],
+     [
+      "Improved Frostbolt",
+      1
+     ],
+     [
+      "Elemental Precision",
+      3
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Frost Channeling",
+      3
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Arctic Reach",
+      1
+     ],
+     [
+      "Ice Block",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ]
+    ]
+   },
+   "split": "0/29/22",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "gain",
+     "from": "Improved Fire Blast",
+     "to": "Master of Elements",
+     "seed1": 0.009407413851078017,
+     "seed2": 0.0071930775601267705,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Ice Lance"
+   ],
+   "final_seed3": 0.006455259568197702
+  },
+  "prebis-dummy": null,
+  "prebis-raid": {
+   "allocation": {
+    "Arcane": [],
+    "Fire": [
+     [
+      "Improved Fire Blast",
+      1
+     ],
+     [
+      "Incineration",
+      3
+     ],
+     [
+      "Improved Fireball",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Heating Up",
+      1
+     ],
+     [
+      "Master of Elements",
+      2
+     ],
+     [
+      "Critical Mass",
+      5
+     ],
+     [
+      "Fire Power",
+      3
+     ]
+    ],
+    "Frost": [
+     [
+      "Frost Warding",
+      2
+     ],
+     [
+      "Elemental Precision",
+      3
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Improved Frost Nova",
+      1
+     ],
+     [
+      "Frost Channeling",
+      3
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Ice Block",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Arctic Reach",
+      1
+     ]
+    ]
+   },
+   "split": "0/29/22",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "gain",
+     "from": "Improved Fire Blast",
+     "to": "Master of Elements",
+     "seed1": 0.009407413851078017,
+     "seed2": 0.0071930775601267705,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Frost Nova",
+     "to": "Arctic Reach",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Ice Lance"
+   ],
+   "final_seed3": 0.006455259568197702
+  }
  }
 }

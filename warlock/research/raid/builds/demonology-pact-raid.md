@@ -74,14 +74,14 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 702 | +0.0% | 816 | -0.8% | 2 s |
-| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 700 | -0.2% | 822 | +0.0% | 2 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 678 | -3.4% | 788 | -4.1% | 2 s |
-| 4 | *Demonic Pact* | community simulator | - | 670 | -4.6% | 778 | -5.3% | 1 s |
+| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 749 | +0.0% | 865 | -0.6% | 1 s |
+| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 747 | -0.3% | 870 | +0.0% | 1 s |
+| 3 | *Demo (Shadow Brand)* | community simulator | - | 747 | -0.3% | 870 | +0.0% | 1 s |
+| 4 | *Demo (Fire Brand)* | community simulator | - | 728 | -2.7% | 831 | -4.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,7 +96,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
   8. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 5)
   9. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 5)
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: demonology-ml-raid 837 -> 832 DPS (-0.5%), sim preset: Demonic Pact 2/31/18 805 -> 798 DPS (-0.9%), demonology-pact-raid 833 -> 827 DPS (-0.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-28, 7 changes to the base rotation; third-seed check: demonology-ml-raid 877 -> 868 DPS (-0.9%), sim preset: Demonic Pact 2/31/18 841 -> 833 DPS (-1.0%), demonology-pact-raid 873 -> 864 DPS (-1.0%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
   3. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
@@ -113,10 +113,10 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
-| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
-| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.1 |
-| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.8 |
-| 10 | cast Shadow Bolt | 13.5 |
+| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.5 |
+| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.3 |
+| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.9 |
+| 10 | cast Shadow Bolt | 13.3 |
 
 Damage by ability:
 
@@ -124,12 +124,13 @@ Damage by ability:
 |---|---|
 | Shadow Bolt | 48% |
 | Bane of Agony | 16% |
-| Corruption | 15% |
+| Corruption | 16% |
 | Immolate | 11% |
-| Pet: Auto Attack | 7% |
+| Pet: Auto Attack | 5% |
 | Pet: Lash of Pain | 2% |
+| Demonic Rune | 2% |
 | Searing Pain | 1% |
-| Pet: Demonic Brand | 0% |
+| Pet: spell 1293697 | 0% |
 
 ## Notes
 

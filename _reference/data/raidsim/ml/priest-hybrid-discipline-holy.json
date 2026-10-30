@@ -2603,5 +2603,554 @@
   "date": "2026-10-29",
   "setting": "raid",
   "why": "confirms smite-open-raid (+0.07% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Mental Agility",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Spell Warding",
+      1
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Searing Light",
+      2
+     ],
+     [
+      "Spiritual Guidance",
+      5
+     ],
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Binding Heal",
+      1
+     ],
+     [
+      "Improved Healing",
+      2
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ]
+    ]
+   },
+   "split": "19/25/7",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Holy Nova",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Holy Nova",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Inspiration",
+     "to": "Binding Heal",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Spell Warding",
+     "to": "Improved Healing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Spell Warding",
+     "to": "Improved Healing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Spell Warding",
+      1
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Searing Light",
+      2
+     ],
+     [
+      "Holy Nova",
+      1
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      2
+     ],
+     [
+      "Spirit Tap",
+      2
+     ]
+    ]
+   },
+   "split": "17/17/17",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Holy Nova",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Inspiration",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Inspiration",
+     "to": "Holy Nova",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Shadow Reach",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Shadow Reach",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      4
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Spell Warding",
+      1
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Searing Light",
+      2
+     ],
+     [
+      "Spiritual Guidance",
+      5
+     ],
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Binding Heal",
+      1
+     ],
+     [
+      "Improved Healing",
+      2
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ]
+    ]
+   },
+   "split": "19/25/7",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Holy Nova",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Improved Healing",
+     "to": "Holy Nova",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Inspiration",
+     "to": "Binding Heal",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Spell Warding",
+     "to": "Improved Healing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Spell Warding",
+     "to": "Improved Healing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      2
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Inspiration",
+      1
+     ],
+     [
+      "Searing Light",
+      2
+     ],
+     [
+      "Holy Nova",
+      1
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Spirit Tap",
+      3
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Shadow Weaving",
+      2
+     ]
+    ]
+   },
+   "split": "17/17/17",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Holy Nova",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Renew",
+     "to": "Holy Nova",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Blackout",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Shadow Reach",
+     "to": "Spirit Tap",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0
+  }
  }
 }

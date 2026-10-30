@@ -75,20 +75,18 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 6** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever fork b7083fa (client 70425)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/33/18 | 1.066 | +0.0% | 490 | 518 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.043 | -2.2% | 469 | 518 |
-| 3 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -6.2% | 473 | 567 |
-| 4 | *Protection 0/45/6* | community simulator | - | 0.956 | -10.3% | 441 | 579 |
-| 5 | *P4 Prot* | community simulator | - | 0.936 | -12.2% | 452 | 619 |
-| 6 | *P5 Prot* | community simulator | - | 0.927 | -13.1% | 445 | 622 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.068 | +0.0% | 826 | 321 |
+| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/35/16 | 1.053 | -1.4% | 779 | 311 |
+| 3 | *Default* | community simulator | - | 1.026 | -4.0% | 804 | 339 |
+| 4 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/31/20 | 1.000 | -6.4% | 745 | 329 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-16, 7 changes to the base rotation; third-seed check: deep: tank 400 -> 433 DPS (+8.5%), protection-ml-tank 397 -> 422 DPS (+6.3%), sim preset: Protection 0/45/6 375 -> 390 DPS (+4.1%), prot-tank 431 -> 428 DPS (-0.7%), opt-prot-tank-raid-tank 384 -> 402 DPS (+4.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-27, 9 changes to the base rotation; third-seed check: deep: tank 480 -> 458 DPS (-4.7%), opt-prot-tank-raid-tank 448 -> 428 DPS (-4.3%), sim preset: Default 491 -> 451 DPS (-8.0%), prot-tank 468 -> 420 DPS (-10.3%), protection-ml-tank 470 -> 449 DPS (-4.6%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
@@ -96,35 +94,38 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
   5. insert before the filler: cast Retribution Aura (+0.2%, pass 3)
   6. drop: cast Retribution Aura (+1.4%, pass 4)
   7. drop the condition: if health % < 10%: cast Lay on Hands (+0.4%, pass 5)
+  8. insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+0.6%, pass 11)
+  9. move to the top: cast Lay on Hands + only above 25% mana: cast Templar's Bulwark (+0.7%, pass 11)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
 | # | Priority (the first line whose condition holds is cast) | [`prot-tank`](prot-tank.md) casts/min |
 |---|---|---|
-| 1 | cast Templar's Bulwark | 0.3 |
-| 2 | use every other cooldown when ready | as ready |
-| 3 | cast Judgement | 8.3 |
-| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
-| 5 | cast Consecration | 7.2 |
-| 6 | cast Holy Strike | 6.0 |
-| 7 | cast Lay on Hands | 0.3 |
-
-Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent).
+| 1 | cast Lay on Hands | 0.3 |
+| 2 | if mana % ≥ 25%: cast Templar's Bulwark | 0.3 |
+| 3 | cast Holy Shield | 5.7 |
+| 4 | use every other cooldown when ready | as ready |
+| 5 | cast Judgement | 7.2 |
+| 6 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.2 |
+| 7 | cast Consecration | 4.8 |
+| 8 | cast Holy Strike | 6.0 |
+| 9 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.6 |
+| 10 | if Redoubt is up: cast Holy Shield | 5.7 |
 
 Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Auto Attack | 27% |
-| Consecration | 15% |
-| Judgement of Righteousness | 15% |
-| Seal of Righteousness | 14% |
+| Auto Attack | 23% |
+| Seal of Righteousness | 16% |
+| Judgement of Righteousness | 13% |
+| Holy Shield | 12% |
 | Holy Strike | 11% |
-| Lay on Hands | 10% |
-| OtherActionManaGain | 5% |
-| Retribution Aura | 1% |
-| Thorns | 1% |
-| Eye for an Eye | 0% |
+| Consecration | 9% |
+| Lay on Hands | 5% |
+| Judgement of Light | 4% |
+| OtherActionManaGain | 2% |
+| Hammer of Wrath | 2% |
 
 ## Notes
 

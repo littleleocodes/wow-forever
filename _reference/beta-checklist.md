@@ -352,7 +352,7 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 | Talent | What the model assumes |
 |---|---|
 | Demonic Aegis | +15%/rank Demon Armor: ~+1%/rank effective health. Fight lab calibration [affliction-leveling, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs -0.1% time per kill in the simulator (sc |
-| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Raid sim calibration (2026-10-03, ElliotWood/Fo |
+| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration [affliction-leveling, lev |
 | Improved Drains | Beta text (reworked): flat +7/13/20% to Drain Life, Drain Soul and Wrack (the demo's per-effect scaling moved to Soul Siphon). Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, affliction-raid): removing it c |
 | Soul Siphon | Beta text (reworked): +4/8/12% Drain Life/Drain Soul/Wrack damage per other Affliction effect on the target, up to 3 effects (12/24/36%). A DoT build keeps ~2.5 effects up -> +10/20/30% on drains; the demo's healing pena |
 
@@ -402,8 +402,8 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 | Talent | What the model assumes |
 |---|---|
-| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); al |
-| Weaponmaster | Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Raid sim |
+| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration [prot-tank] (2026-10-27, wowsims/forever 30f67f5d2, prot-tank): removing it costs 6.4% DPS in the simulator (scorer said 6.4% on the same |
+| Weaponmaster | Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight la |
 
 ### 3. Confirm level-scaled spell numbers (0 reachable talents quote level-60 client values)
 

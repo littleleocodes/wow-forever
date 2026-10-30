@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +97.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +97.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,13 +47,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 25.8 points of score in this model.
-2. **Conflagrate** — Removing it costs 25.8 points of score in this model.
-3. **Shadow and Flame** — Removing it costs 25.0 points of score in this model.
-4. **Bane** — Removing it costs 20.3 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 26.0 points of score in this model.
+2. **Conflagrate** — Removing it costs 25.6 points of score in this model.
+3. **Shadow and Flame** — Removing it costs 24.8 points of score in this model.
+4. **Bane** — Removing it costs 20.2 points of score in this model.
 5. **Agonizing Flames** — Removing it costs 13.3 points of score in this model.
 6. **Suppression** — Removing it costs 11.1 points of score in this model.
-7. **Improved Shadow Bolt** — Removing it costs 10.5 points of score in this model.
+7. **Improved Shadow Bolt** — Removing it costs 10.6 points of score in this model.
 8. **Improved Corruption** — Removing it costs 9.1 points of score in this model.
 
 ## Rotation

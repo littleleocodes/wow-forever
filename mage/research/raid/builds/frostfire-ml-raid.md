@@ -1,64 +1,64 @@
-# Frostfire — Raid (machine-learning search) — 6/32/13
+# Frostfire — Raid (machine-learning search) — 0/29/22
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 6/32/13 (Arcane / Fire / Frost) |
+| **Build** | 0/29/22 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
-### Arcane (6)
+### Arcane (0)
+
+*No points.*
+
+### Fire (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Channeling** | 4/5 | **NEW** | Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast or Arcane Wrath. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
-
-### Fire (32)
-
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
+| **Improved Fire Blast** | 1/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. |
+| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 | **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
-| **Flame Throwing** | 2/2 | unchanged | Increases the range of your Fire spells by 6 yards. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
-| **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
-| **Master of Elements** | 1/3 | changed | Your Fire and Frost critical strikes will refund 10% of their base mana cost. |
+| **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
+| **Master of Elements** | 2/3 | changed | Your Fire and Frost critical strikes will refund 20% of their base mana cost. |
 | **Critical Mass** | 5/5 | unchanged | Increases the critical strike chance of your Fire spells by 10%. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
-| **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
-### Frost (13)
+### Frost (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 | **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
+| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
+| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
+| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
+| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
+| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
+| **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.4% | 52 s |
-| 2 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 6/32/13 | 489 | -5.2% | 760 | -5.3% | 62 s |
-| 3 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: derived (open search) | 0/29/22 | 470 | -8.9% | 802 | +0.0% | 64 s |
-| 4 | *FFB* | community simulator | - | 464 | -10.1% | 792 | -1.3% | 67 s |
-| 5 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 464 | -10.1% | 764 | -4.8% | 58 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.1% | 52 s |
+| 2 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 498 | -3.5% | 799 | +0.0% | 61 s |
+| 3 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 486 | -5.7% | 764 | -4.5% | 58 s |
+| 4 | *FFB* | community simulator | - | 480 | -7.0% | 792 | -0.9% | 67 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -112,49 +112,43 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.1 |
-| 2 | cast Fire Blast | 5.6 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.1 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.3 |
+| 2 | cast Fire Blast | 5.1 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.3 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 3.2 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 3.2 |
-| 9 | cast Combustion | 0.3 |
-| 10 | cast Mana Citrine | as ready |
-| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 4.7 |
-| 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.6 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.6 |
-| 14 | cast Robe of the Archmage | as ready |
-| 15 | cast Scorch | 6.1 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 3.3 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 3.3 |
+| 9 | cast Mana Citrine | as ready |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 5.3 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.9 |
+| 12 | cast Robe of the Archmage | as ready |
+| 13 | cast Scorch | 6.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 
 Damage by ability:
 
 | Ability | [`frostfire-ml-raid`](frostfire-ml-raid.md) |
 |---|---|
 | Pyroblast | 25% |
-| Frostfire Bolt | 21% |
-| Fire Blast | 18% |
-| Scorch | 12% |
-| Ignite | 11% |
-| Fireball | 8% |
-| Arcane Missiles | 4% |
+| Frostfire Bolt | 23% |
+| Fire Blast | 17% |
+| Scorch | 13% |
+| Ignite | 12% |
+| Fireball | 10% |
 | Demonic Rune | 0% |
 
 ## Notes
 
-- Against the best hand draft frostfire-raid in a full raid, same gear and fights (100,000, one seed): +1.6% (under the 2% bar: the hand draft stays the pick).
-- Where the simulator measured no difference, the points follow frostfire-raid: Improved Fireball → Burning Soul, Flame Throwing → Burning Soul, Impact → Burning Soul, Frostbite → Improved Channeling, Ice Lance → Improved Channeling, Arctic Reach → Improved Channeling (the same DPS as the search winner 1/31/19 on one seed, 30,000 fights).
-- Search result (full raid): 1/31/19 at 739.6 ± 0.23 DPS over 100,000 fights; runner-up 3/31/17 (+0.00%; the winner takes Flame Throwing 2, Frostbite 1, Ice Lance 1, Impact 3, Improved Channeling 1, Improved Flamestrike 1; the runner-up Blast Wave 1, Burning Soul 1, Improved Channeling 3, Improved Fire Ward 2, Improved Flamestrike 2); 1,942 builds simulated; certificate: none of its 311 one-move and chain-move neighbours was 0.1% ahead.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 3/31/17 at 721.6 DPS in a full raid (other talents: _reference/dps-rankings.md).
-- Alone on the training dummy (only your own buffs) the search's best is 1/34/16 at 627.1 DPS.
-- 2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed.
-- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 4/31/16 -> 4/31/16; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Impact (over 51); -1 Improved Flamestrike (over 51) (refill: the fire-raid model, raid-dps).
-- 2026-10-22 (repair_builds.py, client build 70425 trees): 4/31/16 -> 6/32/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +2 Missile Barrage, +1 Master of Elements (refill: the fire-raid model, raid-dps).
+- Against the best hand draft frostfire-fingers-of-frost-raid in a full raid, same gear and fights (100,000, one seed): +6.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
+- Where the simulator measured no difference, the points follow frostfire-fingers-of-frost-raid: Permafrost → Frost Warding, Improved Blizzard → Arctic Reach, Improved Blizzard → Ice Block (the same DPS as the search winner 0/29/22 on one seed, 30,000 fights).
+- Search result (full raid): 0/29/22 at 793.4 ± 0.17 DPS over 100,000 fights; runner-up 0/29/22 (+0.15%; the winner takes Permafrost 1; the runner-up Frostbite 1); 2,324 builds simulated; certificate: 1 confirmed move first, then none of its 347 one-move and chain-move neighbours was 0.1% ahead.
+- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 0/29/22 at 789.2 DPS in a full raid (other talents: _reference/dps-rankings.md).
+- Alone on the training dummy (only your own buffs) the search's best is 10/28/13 at 497.0 DPS.
+- 2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Fire Blast -> Master of Elements (+0.7% DPS). Net +0.65% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -162,7 +156,7 @@ Damage by ability:
 
 ## Sources
 
-- <https://github.com/ElliotWood/Forever>
+- <https://github.com/wowsims/forever>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

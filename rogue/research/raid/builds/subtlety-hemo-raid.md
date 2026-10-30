@@ -78,14 +78,13 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 338 | +0.0% | 609 | -0.4% | 0 s |
-| 2 | `subtlety-open-raid` | ours | 20/0/31 | 317 | -6.2% | 612 | +0.0% | 0 s |
-| 3 | *Subtlety Hemo* | community simulator | - | 316 | -6.6% | 609 | -0.4% | 0 s |
-| 4 | *Subtlety BS* | community simulator | - | 300 | -11.1% | 585 | -4.3% | 0 s |
+| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 338 | +0.0% | 609 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 316 | -6.6% | 609 | +0.0% | 0 s |
+| 3 | *Subtlety BS* | community simulator | - | 300 | -11.1% | 585 | -3.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

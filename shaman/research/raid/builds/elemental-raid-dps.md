@@ -75,10 +75,10 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Standard* | community simulator | - | 507 | +0.0% | 599 | -3.3% | 1 s |
-| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/11/9 | 506 | -0.3% | 600 | -3.1% | 2 s |
+| 1 | *Standard* | community simulator | - | 507 | +0.0% | 602 | -2.8% | 1 s |
+| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/11/9 | 506 | -0.3% | 603 | -2.6% | 2 s |
 | 3 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 497 | -2.0% | 619 | +0.0% | 9 s |
-| 4 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 484 | -4.5% | 586 | -5.4% | 7 s |
+| 4 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 484 | -4.5% | 586 | -5.3% | 7 s |
 
 ## Rotation (community simulator, training dummy)
 

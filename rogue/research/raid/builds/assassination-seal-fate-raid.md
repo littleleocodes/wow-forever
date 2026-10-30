@@ -76,8 +76,8 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 373 | +0.0% | 657 | -1.0% | 0 s |
 | 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 371 | -0.6% | 643 | -3.2% | 0 s |
-| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 362 | -3.0% | 662 | -0.3% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 356 | -4.5% | 664 | +0.0% | 0 s |
+| 3 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 356 | -4.5% | 664 | +0.0% | 0 s |
+| 4 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/21/0 | 356 | -4.7% | 662 | -0.3% | 0 s |
 | 5 | *Asn Muti* | community simulator | - | 345 | -7.5% | 648 | -2.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)

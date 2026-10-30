@@ -2,7 +2,7 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Protection
 
-**[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35310003002-03-250530020310001351-7)
+**[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35300103002-03-050530020330001351-7)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
 
@@ -12,12 +12,14 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Shield Wall**
-2. **Revenge** after you block, dodge or parry
-3. **Bloodrage** when you have less than 90 rage
-4. **Shield Slam**
-5. **Heroic Strike** when you have 34+ rage
-6. **Rend**: keep it on the target
+1. **Shield Block**
+2. **Shield Wall**
+3. **Revenge** after you block, dodge or parry
+4. **Bloodrage** when you have less than 90 rage
+5. **Shield Slam**
+6. **Sunder Armor**: stack it to 5 on the target
+7. **Heroic Strike** when you have 34+ rage
+8. **Rend**: keep it on the target
 
 Between these, your white swings do the rest.
 
@@ -53,7 +55,7 @@ Protection tanks in **Defensive Stance** with a shield, and threat comes from th
 
 ## The numbers
 
-Tank value 1.011 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.020 (threat and damage taken under a boss, relative to our reference tank build).
 
 **The gear** (average item level: Pre-BiS 63.7; Phase 1 BiS 63.7; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -77,13 +79,13 @@ Tank value 1.011 (threat and damage taken under a boss, relative to our referenc
 | Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) |
 | Ranged/relic | [Gryphonwing Long Bow](https://www.wowhead.com/forever/item=13022) | [Gryphonwing Long Bow](https://www.wowhead.com/forever/item=13022) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzElE9oE1sUxnPuTGZOTkqYzuvjTe/rg2kWZV5gys2EaNNN0m50Ka6kGzttUhMrSUhmURdiXQQEXShu2lqoUAvin4WCpXQlYksLinWhoGCtWrALhbpw40JlpkbEta3fYjjzfXfO/DgXDnUgaGCACRYMQhGqMA5wFuAKwDUAvSVImZ/2AH+tINOAnyYFN4aMzSjJODsBJOPzaSAVH18A44lCKn64AcbbGKl4bw6Myyqp+OChZryKkYyX1jRS8eJt8D9XcW0advync36fiTWNZNw+59d3g5MvG63Ge7/VeqPVWI+RhOuFeIe2XLI2Z2AKIrPuTfdF38wcXAflfOnjf41SPwXMYEEOFllnKp1KCiFSQji2SNlOWqT9WgRuMpVOrjD5DduS6W8ijqRYCq4uQVylMEl2sq6P6oNu9cTRStUzHeHss0XGdjK95nDRLR8r5M1KzXTz+ULeHDppesWCWat4rleqlM16wa0NF02rXiiY1VrFsz23PGo3Y3sn7j5er5T/5yoPk4TvFF3mrDekI1e4TAwP6C28ybSyBPqpX1CSwk6mfzNKO2mJGEo6q4W4QjKxjAjgvrbpxNG38NMi6Bbvon8T7SjpsfsQpbAVxkcDOtPC/mGCNFebXgP2gLqT/kq0ohJQR0ilcCrVvT/NidAEC3F5CfSxPbjHNorGI6Q6/sDmB/xR4PyAHuWRH+MwpC22AtvMOSOFArXl7rAoRUhFZoH4DPEvLOL7ofGRXPvUpK/VbOdIoGdZZ4MZsplNLLDQH5GXa1a7qq5bu/afTPA8fDXX993IDfrrbhKCl9BGNiHhwj+9TIP+nzajgB7IwUE4BEegCFUYgzH2bQDjkwQ/); Phase 1 BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzElE9oE1sUxnPuTGZOTkqYzuvjTe/rg2kWZV5gymRCtOkmaTe6FFfSjZ02qYmVJCSzqAuxLgouXCgqtLVQoRbEPwtdlNKViC0tKGajoIuaasEuFHThxoXKnRoR17Z+i8uZ75s58+NcONSFoIEBJlgwDEWowiTAeYDrADcB9LYgZSLtA76lINOAnyUFmyPGdpRkXJgGkvHFHJCKTy+CsRUjFd/fBuONKB4sgnFNJRUfPdaMVzGS8XJDIxUv3QPxuYqNOdj1ny2KPtMNjWRcDs7GFdGzeRWMd6LV5lS7sRkjCTcL8S5trWRtz8MsRBa8O97LgflFuAXKhdLH/6ZKgxQwgwU5WGHdqXQq6ThOynFc20nZbtpJi9oJ3GQqnVxn8mu2I9PfRBxJsRTcWIW4SmGS7GRdH9eHveqp45Wqb7qOe8B2Mrab6TdHi175RCFvVmqml88X8ubIadMvFsxaxff8UqVs1gtebbRoWvVCwazWKr7te+VxuxXbu3HvyXql/D9XeZgkfKvoMmf9IR25wmVieEhv4y2m9VXQz/yCknTsZPo3o3SSloihpLNaiCskE8s4AdzXDp04Cgs/rYBu8R76N9GJkh57CFEKW2F8MqQzLSxeJkhzteVNwT5Qd9NfiXZUAuoIqRROpXoPpjkRmmAhrq2CPrEP99hB0XiEVFcMbGlIjAKXhvQoj/wYhyHtsHX4wNxzUihQR+4+i1KEVGQWOJ8h/oVFhB+aHMt1zs4IbWS7xwI9z7pNZshmNrHMQn9Efq5V7al67u7ZfzLBefRGbuC7kRsW624GgodQM5uQcPmffqbB4E+b0YE+yMFhOALHoAhVmIAJ9m0AC4cERg==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVE9oE2kUz/tmMvPyUsJ0NstOv+3CNIcyG5jyZYbsNr0k7WX3uOxJerHTJjWxkoQkh3oQ6yEg6EHx0tZChVoQ/xwULKUnEVta8E89VFCwFi3oQaEevHhQmakRoVdbf4fhm9/vzXu/+X3wqBNBAwNMsGAIilCFCYDTAJcArgDobYHKfLUX+EMVmQb8JCm4NWxsR0nGuUkgGZ/OAKn46BwYjxVS8d01MF7FSMU782BcVEnFe/c140WMZLywrpGK52+C/7mK6zOwy2/M+30m1zWSceeMf74dVD5vthtv/VabzXZjM0YSbhYSndpKydqehWmIzHnXvWf9s/NwFZSzpfd/NEsDFHgGC3KwxLrctCtESrhCOLZwbZEWPuEI1xVCpNx0apXJL9lGmH4l4kiKpeDaMiRUCpNkp+r6mD7kVY8drlQbpiOcv+yUsJ3ePnOk6JWPFPJmpWZ6+Xwhbw4fNxvFglmrNLxGqVI26wWvNlI0rXqhYFZrlYbd8Mpjdku2d+Weo/VK+U+u8jBJ2IzvGSYytpPZl2GvFV3mrC+kI1e4TAz/0dt4K4DVZdBP7P3vVPoHW+kgLRlDSWe1EFdIJpYRgbnPcZ04+hR+WALd4t30e7IDJT12F6IUtsL4YFBnWtgvJkhztcU14QBcd9EvyXZUAtcRUinsuj1/pzkRmmAhriyDPn4A9xinaCJCquMHtjDoR4ELg3qUR77FYUhv2CrsMOeUFAoQz91iUYqQiswC8RESn1jE50MTo7mO6Skfa9mu0QBPss4WM2Qzm1xkoZ+CRq512ld039i3OZng+f/lXP9XIjfk79YpCF5CW9mkhIu/9TENBr5bwwJ6IQf/wn9wCIpQhXEYZ18GALOLJ0U=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVD9oE3EUzvvd5e7lpYTrGfF6VrhmKGfgyi93RJsuSbvoKE7SxV6b1MRKEpIMdRDrEHBwUFRoa6FCLYh/Bh1K6SRiSwv+yVJBhxq1oIOCDi4OKnc1InS19Rt+vPu+u/e++37wqBNBAQ0MMGEI8lCGCYCLADcBbgOobb7KPLUX9OcyMgX08yRhc1jbDJOIc5NAIr6aAZLxxWXQ3kZIxs93QXvvFY/mQbshk4xPniramwiJeLWhkIxXHoD3uYyNGdji1+e9PpMNhURc9M/GNa9n8zpon7xWG/V2bSNCAm7kYp3KSsHcnIVpCM2599zX/bPzcAekS4WvB+qFAfI9gwkZWGJdTtLhPMEdzm2LOxZPco+wueNwzhNOMrHKxHdsPUh7iXQkyZRwbRliMgVJsBJVdUwdcstnTpbKNcPm9iErwS27t88YybvFU7msUaoYbjabyxrDZ41aPmdUSjW3VigVjWrOrYzkDbOayxnlSqlm1dzimNWSrS2553S1VDyoy3qQBKxHtw3jKctO7ciwD5Iq6qwvoKIu6SIxPKK26a0AVpdBPbf9vxPJf2ylg5R4BAWVVQK6RCKxFPfN/YyqpKNH4bclUE29m/bHO1BQI48hTEEziM8GVaYEvZcJkrrc4uqwC667aE+8HSXfdYhkCjpOz+GkToQGmIgry6CO78I9RikcC5Fse4EtDHpR4MKgGtZDf+LQhI9sFb4w+4IQ8BHNPGRhCpGMzAT+HWI/WMjjAxOjmY7pKQ9r6a5RHy/TdpNpopGOL7LAf0Et06p2FN33d2xOyj+P38r0/yYyQ95unQL/IdBMxwVc3NfHFBj4aw1z6IUMHIVjcALyUIZxGGe/BgDeaydM).
 
 ## Other builds of this spec
 
-- [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-7)
+- [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (8/5/38) — [open the talent tree](https://talentsforever.com/warrior/60/35-05-250530022331201351-7)
 - [Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md) (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-150533020300001351-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

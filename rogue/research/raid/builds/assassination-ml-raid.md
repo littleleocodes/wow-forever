@@ -1,17 +1,17 @@
-# Assassination — Raid (machine-learning search) — 30/19/2
+# Assassination — Raid (machine-learning search) — 30/21/0
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 30/19/2 (Assassination / Combat / Subtlety) |
+| **Build** | 30/21/0 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Assassination build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry assassination-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Assassination build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry assassination-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
@@ -23,13 +23,14 @@ The Assassination build the machine-learning talent search found in a full raid 
 | **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
-| **Lethality** | 5/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%. |
-| **Vile Poisons** | 2/5 | moved | Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects. |
+| **Lethality** | 3/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%. |
+| **Vile Poisons** | 3/5 | moved | Increases the damage dealt by your poisons by 12% and gives your poisons an additional 24% chance to resist dispel effects. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 | **Improved Poisons** | 5/5 | changed | Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. |
+| **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 | **Seal Fate** | 5/5 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 
-### Combat (19)
+### Combat (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -39,24 +40,22 @@ The Assassination build the machine-learning talent search found in a full raid 
 | **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
-| **Dual Wield Specialization** | 3/5 | changed | Increases the damage done by your off-hand weapon by 15%. |
+| **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
 
-### Subtlety (2)
+### Subtlety (0)
 
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
+*No points.*
 
 ## Rank among our builds and the community simulator's
 
-**3 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 373 | +0.0% | 657 | -1.0% | 0 s |
 | 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 371 | -0.6% | 643 | -3.2% | 0 s |
-| 3 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 30/19/2 | 362 | -3.0% | 662 | -0.3% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 356 | -4.5% | 664 | +0.0% | 0 s |
+| 3 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 356 | -4.5% | 664 | +0.0% | 0 s |
+| 4 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 30/21/0 | 356 | -4.7% | 662 | -0.3% | 0 s |
 | 5 | *Asn Muti* | community simulator | - | 345 | -7.5% | 648 | -2.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
@@ -91,14 +90,14 @@ The Assassination build the machine-learning talent search found in a full raid 
 | 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
 | 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 1.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 
 | Ability | [`assassination-ml-raid`](assassination-ml-raid.md) |
 |---|---|
-| Auto Attack | 42% |
-| Backstab | 31% |
+| Auto Attack | 44% |
+| Backstab | 28% |
 | spell 25349 | 10% |
 | Eviscerate | 9% |
 | spell 11337 | 6% |
@@ -106,13 +105,12 @@ Damage by ability:
 
 ## Notes
 
-- Against the best hand draft assassination-seal-fate-raid in a full raid, same gear and fights (100,000, one seed): +0.8% (under the 2% bar: the hand draft stays the pick).
-- Where the simulator measured no difference, the points follow assassination-seal-fate-raid: Endurance → Lightning Reflexes (the same DPS as the search winner 30/19/2 on one seed, 30,000 fights).
-- Search result (full raid): 30/19/2 at 703.4 ± 0.10 DPS over 100,000 fights; runner-up 30/19/2 (+0.00%; the winner takes Endurance 1, Lightning Reflexes 4; the runner-up Endurance 2, Lightning Reflexes 3); 1,680 builds simulated; certificate: none of its 265 one-move and chain-move neighbours was 0.1% ahead.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 30/19/2 at 647.4 DPS in a full raid (the same talents).
-- Alone on the training dummy (only your own buffs) the search's best is 30/19/2 at 410.8 DPS.
-- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Assassination: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
+- Against the best hand draft assassination-seal-fate-raid in a full raid, same gear and fights (100,000, one seed): +1.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
+- Where the simulator measured no difference, the points follow assassination-seal-fate-raid: Improved Sinister Strike → Lightning Reflexes, Endurance → Lightning Reflexes, Improved Sprint → Lightning Reflexes (2 points) (the same DPS as the search winner 30/21/0 on one seed, 30,000 fights).
+- Search result (full raid): 30/21/0 at 673.8 ± 0.09 DPS over 100,000 fights; runner-up 30/21/0 (+0.00%; the winner takes Improved Sinister Strike 1, Lightning Reflexes 1; the runner-up Improved Sinister Strike 2); 1,782 builds simulated; certificate: none of its 182 one-move and chain-move neighbours was 0.1% ahead.
+- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 30/21/0 at 667.9 DPS in a full raid (the same talents).
+- Alone on the training dummy (only your own buffs) the search's best is 38/11/2 at 192.3 DPS.
 
 ## Open questions (verify in the live game)
 
@@ -120,7 +118,7 @@ Damage by ability:
 
 ## Sources
 
-- <https://github.com/ElliotWood/Forever>
+- <https://github.com/wowsims/forever>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

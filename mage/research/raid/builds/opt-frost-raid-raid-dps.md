@@ -66,14 +66,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 587 | +0.0% | 680 | -1.8% | 9 s |
 | 2 | *Arcane Frost* | community simulator | - | 582 | -0.9% | 693 | +0.0% | 8 s |
-| 3 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 29/0/22 | 577 | -1.7% | 693 | -0.0% | 7 s |
-| 4 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 35/0/16 | 577 | -1.7% | 676 | -2.4% | 5 s |
-| 5 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 29/0/22 | 549 | -6.4% | 628 | -9.3% | 4 s |
+| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 35/0/16 | 577 | -1.7% | 676 | -2.4% | 5 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 29/0/22 | 574 | -2.3% | 693 | -0.0% | 7 s |
+| 5 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 29/0/22 | 546 | -6.9% | 628 | -9.3% | 4 s |
 | 6 | *Arcane Fire* | community simulator | - | 521 | -11.2% | 645 | -6.8% | 2 s |
-| 7 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 484 | -17.5% | 547 | -21.0% | 0 s |
-| 8 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 482 | -17.9% | 544 | -21.4% | 0 s |
-| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 441 | -24.8% | 501 | -27.7% | 0 s |
-| 10 | *Fire* | community simulator | - | 439 | -25.2% | 504 | -27.2% | 8 s |
+| 7 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 494 | -15.8% | 588 | -15.1% | 8 s |
+| 8 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 481 | -18.1% | 547 | -21.0% | 0 s |
+| 9 | *Fire* | community simulator | - | 439 | -25.2% | 504 | -27.2% | 8 s |
+| 10 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 438 | -25.3% | 501 | -27.7% | 0 s |
 | 11 | *FFB* | community simulator | - | 387 | -34.1% | 443 | -36.1% | 2 s |
 
 ## Rotation (community simulator, training dummy)
@@ -103,15 +103,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 |---|---|---|
 | 1 | if mana % ≤ 60% and mana % ≥ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Fingers of Frost is up: cast Ice Lance | 2.4 |
-| 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.8 |
-| 5 | if Arcane Wrath is ready: cast Presence of Mind | 0.4 |
-| 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 18.3 |
-| 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
-| 8 | cast Robe of the Archmage | as ready |
-| 9 | cast Frost Blast | 0.4 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 2.3 |
+| 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.7 |
+| 5 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 18.3 |
+| 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 |
+| 7 | cast Robe of the Archmage | as ready |
+| 8 | cast Frost Blast | 0.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Blast (needs the Arcane Blast talent); cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Blast (needs the Arcane Blast talent); cast Presence of Mind, cast Evocation (its condition never held in these fights).
 
 Damage by ability:
 
@@ -121,8 +120,8 @@ Damage by ability:
 | Arcane Missiles | 25% |
 | Ice Lance | 9% |
 | Demonic Rune | 2% |
-| Frost Blast | 0% |
 | Fire Blast | 0% |
+| Frost Blast | 0% |
 
 ## Notes
 

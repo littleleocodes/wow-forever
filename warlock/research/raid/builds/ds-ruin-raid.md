@@ -67,21 +67,19 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 11** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
-| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
-| 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
-| 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |
-| 8 | *Deep Affliction 35/0/16* | community simulator | - | 527 | -17.7% | 581 | -19.6% | 1 s |
-| 9 | *Demonic Pact 2/31/18* | community simulator | - | 522 | -18.4% | 587 | -18.7% | 1 s |
-| 10 | *Affliction* | community simulator | - | 520 | -18.8% | 573 | -20.7% | 1 s |
-| 11 | *Demonic Pact* | community simulator | - | 517 | -19.3% | 580 | -19.8% | 0 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 21/11/19 | 700 | +0.0% | 795 | +0.0% | 0 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 697 | -0.5% | 786 | -1.1% | 0 s |
+| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 696 | -0.6% | 789 | -0.7% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 686 | -2.0% | 772 | -2.9% | 0 s |
+| 5 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 681 | -2.7% | 770 | -3.1% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 671 | -4.2% | 752 | -5.4% | 0 s |
+| 7 | *Destro* | community simulator | - | 615 | -12.3% | 683 | -14.0% | 0 s |
+| 8 | *Demo (Shadow Brand)* | community simulator | - | 593 | -15.4% | 674 | -15.1% | 0 s |
+| 9 | *Demo (Fire Brand)* | community simulator | - | 579 | -17.3% | 646 | -18.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,7 +90,7 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
   4. insert before the filler: cast Talisman of Ephemeral Power (+0.6%, pass 6)
   5. only above 25% mana: cast Talisman of Ephemeral Power (+0.4%, pass 6)
   6. insert before the filler: cast Eureka! (+0.2%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-11, 7 changes to the base rotation; third-seed check: open winner 732 -> 731 DPS (-0.2%), opt-sb-raid-raid-dps 727 -> 726 DPS (-0.1%), sim preset: DS/Ruin Pandemic 24/11/16 690 -> 686 DPS (-0.6%), ds-ruin-raid 724 -> 725 DPS (+0.1%), destruction-ml-raid 679 -> 712 DPS (+4.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-28, 7 changes to the base rotation; third-seed check: open winner 788 -> 794 DPS (+0.7%), ds-ruin-raid 784 -> 789 DPS (+0.7%), sim preset: SM/Ruin 769 -> 773 DPS (+0.5%), opt-sb-raid-raid-dps 787 -> 787 DPS (+0.1%), destruction-ml-raid 731 -> 764 DPS (+4.5%), shadow-bolt-hybrid-open-raid 787 -> 785 DPS (-0.2%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
@@ -109,14 +107,14 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
-| 6 | if mana % < 10%: cast Life Tap | 7.5 |
-| 7 | cast Amplify Curse | 0.6 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 6 | if mana % < 10%: cast Life Tap | 7.7 |
+| 7 | cast Amplify Curse | 0.5 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 12 | cast Shadow Bolt | 14.1 |
+| 12 | cast Shadow Bolt | 14.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 
@@ -124,10 +122,11 @@ Damage by ability:
 
 | Ability | [`ds-ruin-raid`](ds-ruin-raid.md) |
 |---|---|
-| Shadow Bolt | 52% |
+| Shadow Bolt | 51% |
 | Bane of Agony | 19% |
 | Corruption | 17% |
-| Immolate | 11% |
+| Immolate | 10% |
+| Demonic Rune | 1% |
 | Searing Pain | 0% |
 
 ## Notes

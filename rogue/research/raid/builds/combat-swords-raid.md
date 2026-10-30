@@ -71,19 +71,18 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 8** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 336 | +0.0% | 625 | -2.5% | 0 s |
-| 2 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 327 | -2.7% | 629 | -1.9% | 0 s |
-| 3 | `combat-swords-open-raid` | ours | 18/33/0 | 325 | -3.3% | 641 | +0.0% | 0 s |
-| 4 | *Combat SS* | community simulator | - | 321 | -4.5% | 635 | -1.0% | 0 s |
-| 5 | *Combat BS* | community simulator | - | 315 | -6.4% | 626 | -2.3% | 0 s |
-| 6 | *Asn Muti* | community simulator | - | 292 | -13.3% | 575 | -10.3% | 0 s |
-| 7 | *Combat Muti* | community simulator | - | 287 | -14.8% | 585 | -8.8% | 0 s |
-| 8 | *Subtlety Hemo* | community simulator | - | 286 | -14.9% | 494 | -23.0% | 0 s |
-| 9 | *Subtlety BS* | community simulator | - | 270 | -19.7% | 473 | -26.2% | 0 s |
+| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 336 | +0.0% | 625 | -1.6% | 0 s |
+| 2 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 327 | -2.7% | 629 | -0.9% | 0 s |
+| 3 | *Combat SS* | community simulator | - | 321 | -4.5% | 635 | +0.0% | 0 s |
+| 4 | *Combat BS* | community simulator | - | 315 | -6.4% | 626 | -1.3% | 0 s |
+| 5 | *Asn Muti* | community simulator | - | 292 | -13.3% | 575 | -9.4% | 0 s |
+| 6 | *Combat Muti* | community simulator | - | 287 | -14.8% | 585 | -7.9% | 0 s |
+| 7 | *Subtlety Hemo* | community simulator | - | 286 | -14.9% | 494 | -22.2% | 0 s |
+| 8 | *Subtlety BS* | community simulator | - | 270 | -19.7% | 473 | -25.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

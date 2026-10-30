@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +91.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +89.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -40,21 +40,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 | **Aftermath** | 2/5 | changed | Increases the initial damage of your Immolate spell by 20% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
 | **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
-| **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
+| **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
 | **Fire and Brimstone** | 3/3 | **NEW** | Increases the critical strike chance of your Conflagrate spell by 25%. |
 | **Shadow and Flame** | 5/5 | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 10% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 10% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 26.5 points of score in this model.
-2. **Shadow and Flame** — Removing it costs 20.0 points of score in this model.
-3. **Bane** — Removing it costs 19.7 points of score in this model.
-4. **Conflagrate** — Removing it costs 13.3 points of score in this model.
-5. **Shadowburn** — Removing it costs 13.1 points of score in this model.
-6. **Agonizing Flames** — Removing it costs 10.7 points of score in this model.
-7. **Suppression** — Removing it costs 10.7 points of score in this model.
-8. **Ruin** — Removing it costs 8.3 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 26.6 points of score in this model.
+2. **Bane** — Removing it costs 19.5 points of score in this model.
+3. **Shadow and Flame** — Removing it costs 19.5 points of score in this model.
+4. **Shadowburn** — Removing it costs 13.2 points of score in this model.
+5. **Agonizing Flames** — Removing it costs 10.8 points of score in this model.
+6. **Suppression** — Removing it costs 10.6 points of score in this model.
+7. **Ruin** — Removing it costs 10.6 points of score in this model.
+8. **Conflagrate** — Removing it costs 8.9 points of score in this model.
 
 ## Rotation
 

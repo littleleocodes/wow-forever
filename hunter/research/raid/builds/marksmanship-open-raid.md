@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Marksmanship raid build the open talent search found on 2026-10-23: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
+The Marksmanship raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.1% over marksmanship-with-a-pet-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -134,7 +134,7 @@ Damage by ability:
 ## Notes
 
 - +2.8% over the best hand draft of the spec, mm-lone-wolf-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 780.7 DPS; bm-mm-full-buffs-raid 715.4, opt-mm-raid-raid-dps 715.3, bm-mm-raid 713.8 in the same fights; 9,021 builds simulated, 3 independent runs reached the top.
+- Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 780.7 DPS; marksmanship-with-a-pet-open-raid 779.9, bm-mm-full-buffs-raid 715.4, opt-mm-raid-raid-dps 715.3, bm-mm-raid 713.8 in the same fights; 9,021 builds simulated, 3 independent runs reached the top.
 - The spec's other builds on the pages (their best entry, full raid): mm-lone-wolf-raid 759.5, marksmanship-ml-parse 723.9, opt-mm-lonewolf-raid-raid-dps 705.9, marksmanship-ml-raid 683.7.
 - Sibling rotations tried on it (10,000 fights): mm-lonewolf-raid -0.4%, bm-raid -0.2%, melee-dps -50.7%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Rapid Killing.

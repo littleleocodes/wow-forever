@@ -1,55 +1,55 @@
-# Elemental-Enhancement — Raid (machine-learning search) — 15/24/12
+# Elemental-Enhancement — Raid (machine-learning search) — 17/29/5
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 15/24/12 (Elemental / Enhancement / Restoration) |
+| **Build** | 17/29/5 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-15 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
-### Elemental (15)
+### Elemental (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
-| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Devastation** | 3/3 | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
 | **Reverberation** | 3/5 | changed | Reduces the cooldown of your Shock spells by 0.6 sec. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Trial by Fire** | 2/2 | **NEW** | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec. |
 
-### Enhancement (24)
+### Enhancement (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
+| **Ancestral Knowledge** | 3/5 | changed | Increases your Intellect by 6%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
-| **Elemental Weapons** | 1/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%. |
+| **Elemental Weapons** | 3/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 5/5 | changed | Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
 | **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
-| **Improved Stormstrike** | 1/2 | **NEW** | When you Stormstrike, you have a 50% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 50% chance to reset each time you Dodge or Parry. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
+| **Improved Stormstrike** | 2/2 | **NEW** | When you Stormstrike, you have a 100% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry. |
+| **Maelstrom Weapon** | 4/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to 5 times. Lasts 30 sec. |
 
-### Restoration (12)
+### Restoration (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
-| **Mindfulness** | 2/3 | **NEW** | Allows 33% of your Mana regeneration to continue while casting. |
-| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
 
 ## Rank among our builds and the community simulator's
 
-**6 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -57,8 +57,8 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
 | 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 398 | -1.0% | 722 | -1.6% | 5 s |
 | 3 | *Standard* | community simulator | - | 396 | -1.5% | 726 | -1.1% | 13 s |
 | 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 386 | -4.0% | 672 | -8.4% | 18 s |
-| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
-| 6 | **[`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md)** | ours: derived (ML search) | 15/24/12 | 255 | -36.7% | 437 | -40.4% | 29 s |
+| 5 | **[`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md)** | ours: derived (ML search) | 17/29/5 | 386 | -4.1% | 695 | -5.3% | 8 s |
+| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,31 +88,31 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 6.6 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 16.1 |
-| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 0.7 |
-| 7 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 0.7 |
-
-Lines of the simulator's rotation these builds never cast: cast Flame Shock, cast Earth Shock (its condition never held in these fights).
+| 4 | cast Stormstrike | 7.4 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.3 |
+| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.8 |
+| 8 | cast Earth Shock | 7.1 |
+| 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) |
 |---|---|
-| Lightning Bolt | 62% |
-| Auto Attack | 17% |
-| Stormstrike | 14% |
+| Auto Attack | 41% |
+| Earth Shock | 17% |
+| Flame Shock | 12% |
+| Lightning Bolt | 12% |
+| Stormstrike | 10% |
 | Searing Totem | 7% |
 
 ## Notes
 
-- Against the best hand draft elemental-raid-dps in a full raid, same gear and fights (100,000, one seed): +38.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
-- Where the simulator measured no difference, the points follow elemental-raid-dps: Reverberation → Ancestral Knowledge (within 0.03% of the search winner 18/25/8 on one seed, 30,000 fights).
-- Search result (full raid): 18/25/8 at 718.6 ± 0.14 DPS over 100,000 fights; runner-up 18/25/8 (+0.09%; the winner takes Convection 5; the runner-up Concussion 1, Convection 4); 2,428 builds simulated; certificate: the neighbours ahead on the short run (of 200) did not hold on the longer one.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 17/25/9 at 690.8 DPS in a full raid (other talents: _reference/dps-rankings.md).
-- Alone on the training dummy (only your own buffs) the search's best is 29/22/0 at 379.9 DPS.
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 17/26/8 -> 15/24/12; Improved Fire Nova -> Trial by Fire (renamed); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); -1 Trial by Fire (over 51); -1 Trial by Fire (over 51); -1 Elemental Weapons (over 51); -1 Improved Stormstrike (over 51) (refill: the enhancement-dps model, raid-dps).
+- Search result (full raid): 17/29/5 at 711.8 ± 0.12 DPS over 100,000 fights; runner-up 17/29/5 (+0.02%; the winner takes Concussion 4, Convection 1; the runner-up Concussion 2, Convection 3); 1,660 builds simulated; certificate: none of its 250 one-move and chain-move neighbours was 0.1% ahead.
+- Where the simulator measured no difference, the points follow elemental-enhancement-ml-raid: Concussion → Convection (4 points) (within 0.02% of the search winner 17/29/5 on one seed, 30,000 fights).
+- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 17/29/5 at 697.9 DPS in a full raid (other talents: _reference/dps-rankings.md).
+- Alone on the training dummy (only your own buffs) the search's best is 16/29/6 at 391.7 DPS.
 
 ## Open questions (verify in the live game)
 
@@ -120,7 +120,7 @@ Damage by ability:
 
 ## Sources
 
-- <https://github.com/ElliotWood/Forever>
+- <https://github.com/wowsims/forever>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

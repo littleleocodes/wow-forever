@@ -15,7 +15,7 @@
 3. **Amplify Curse**
 4. **Bane of Agony**: keep it on the target
 5. **Corruption**: keep it on the target
-6. **Immolate**: keep it on the target
+6. **Immolate**: keep it on the target, until the last 10 seconds of the fight
 7. **Shadow Bolt**
 
 **Shadow Bolt** is your filler: cast it whenever nothing above is ready.
@@ -52,18 +52,20 @@ Affliction in a raid keeps **Curse of the Elements** and three damage-over-time 
 - A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss.
 - When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 752 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 836 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 727 | this build |
-| Phase 1 BiS | 766 | this build |
+| Pre-BiS | 802 | this build |
+| Phase 1 BiS | 837 | this build |
 
 **The gear** (average item level: Pre-BiS 62.4; Phase 1 BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -87,12 +89,12 @@ Affliction in a raid keeps **Curse of the Elements** and three damage-over-time 
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzEVFFIe2UU3/nu3fZ5/qbXT8Lrp8FtMVuDK9/uuOp82fRJogfpKfAhN7e1DdnGtgd7MzKKqEkZhUswKikjRXoo6SUVhPkSPvWQSGJIEUFS4GPEd3c3I3voxf7n4Zxzz/n9zj3nfB8fDlPQQAcDQjAPOSjDMsBrAB8AfArAup0skdkJ4LuUKloXr6GPbhb1qweo0sv3AFX6yztSv3+qoY+eFPUfe9BPj7ZAP+tBhR4VUaVXq4A+euCw/HTvc9BX/ajS77cksf6rhir98lTqt77R0E9/2wW92Y8q/eNdCdje6A1YWjMf+rYO4iY1++aH8DqQlfzbQG5SDfD+NLW5BZ+B/5MN2Jup5/fgo8IFrOSnu2+HS8DXZNiybSGEJSJR2xJC2KYpbFtEhS1EtEmUU/Lgkuz4sB8p96FKr+sQ8KMXFdOussf4EPYFevGRLwBRpQevzjKieR2c9C0uMMRGsC/cS32MPO3hDjNiV52QykjKDY3bQa4i0XUW5ZH/yBkTQe5FRbtJMZWTSU+rm1bdDm3Udrr5ag3+LR110y+/AawBLJssLz5fKtcMS1hjpoiZ1viksZBLFl/IpI1SxUim05m0kXrRqOUyRqVUS9bypaJRzSQrCzkjVM1kjGQ2u5hfkGGzksynzTbIbIFGC9VS8Sku8EkWdHpRbseJiCBq4R53aB+qSMaqckC6PceQd7bPAtzAgfCjVGX+gkwfznHaIK7XMizIn8DB8ABVGS1I3g/HwLsapO269g7scK0Dk65r78DOb6udu9XOj4G98s8NRoQpYveywaH2/Whvz7KDckHayhqwyv/WRutQdn5/pnNAZ8egKz+TJlwT6yXF40gs0SAUJVIxSOBP0iWDnuVsYrCxLuUk/njWke/i1gXRVSMe3ieehyK1RNu7VxnZubf/xBz97MeJKTeQmJdv9zo4H56LeFih+wPTf3viBUxAAmZgFp6DHJRhCZbIXwMAT54T8A==); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzEVEFoM1UQzrzdZF/n/233fz/S/d//C2skvzGw5WXDtk0vSXsq4qF4EnqwSZOYhJKEJEK9VYwooi00VmgsVNSiFavFgxZPtlBIEaQnLyVYlKJ4sSj0WORtNqlYD16qc5iZ/eab2Zl5j4cPKOhggAlhmIM8VGAJ4HWA9wA+BmC33SiR0XHgn1Oq6AP8RQzQzZJxdgtVerkKqNJf35b63WMdA/SoZPw0iBo92ALjZBAVelBClZ6tAGq0swYyTaO7n4KxoqFKv12Dvm40pf7yWEeN/vYZGO27qNI/3pHg9sZQ0NbbhfB3yyAu0jNvvQ9vAGkUVoFcpFvg/3lycws+Ae2jDdidXi7swgfFU2gUpm5fTZeEr8kD23GEELaIxhxbCOFYlnAcEROOELE2UY7JrR/JTgDvIuUBVOn5MgQ19KNiOTX2GL+Pd4JD+MgXgKjSb16bYUT3uzzp21xgmD3EO5EhGmDkaR93M6NOzYVURtIeNOaEuIrEMFiMR/9lzqgIcT8q+kWaqZxM+LrddOv200Yct5uvmvBP4ZgXfuVNYC1guVRl4flypW7awh61RNyyxybM+Xyq9EI2Y5arZiqTyWbM9EtmPZ81q+V6ql4ol8xaNlWdz5vhWjZrpnK5hcK8hK1qqpCxeiSrSxop1sqlp7jAJ1nI7UW5GicqQqhHBr2hA6giGa3JAen2LEPe3z4LchOHI49SlWlFGd6f5bRFPK9rWIg/gfciw1RltCjzfjgEPtAiPdez12j7zT5Nup69RutcVet41TqHwF79+wajwhLxG9ng/d796G3PdkJyQXqjCaz6n7XRPZSd35/pH9DJIRjKL6QN58R+WfG5Ek+2CEXJVEwSvCQDEvQt5ZL3WutSjhKP51z5PmGfEkM1E5E94vtfpJ7seTcqD3du7D9xVz/7YXLSA5Jz8vFeB/fDd5qIKHRveOovb7yAcUjCNMzAc5CHCizCIvlzAGa2E78=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzEVUFoK0UYzj+7Sab/e7b75iHdN+8JayQ1BrZMNmxteknaUxEPxZPQg02axCSUJCQ51FvFiiKaopWWxkJFW7RipXjQ4sW2UEgv0pMHS7FUiiKCRaFHkdlsUqU9eEn9DzN//u/7s98388PgIwoa6GBACKYgB2WYA3gT4EOATwHYXQclEh0GvoxU0Xp4DX10raif30GVni0DqvTX9+X6wZGGPnpY1H/qRT/d3wD9uBcVul9ElZ4vAPrortPlp9ufg77gR5X+sCEb679pqNKvjuT67rca+unvX4DevI8q/XNJEjZX+wKW1syHvquDuExNvPMRvAVkPv8ekMtUA7w/j65twGfg/2QVtsfr+W34uHAK8/mxu1fmEvANeWTZthDCEpGobQkhbNMUti2iwhYi2iTKEblzRpYo3kfKfajSizoE/OhFxbSr7An+EO8F+vCxLwFRpbtvTDCieR2ezBvAssnyzEulcs2whDVkRoRpDY8Y07lk8eVM2ihVjGQ6nUkbqVeMWi5jVEq1ZC1fKhrVTLIynTNC1UzGSGazM/lpWTYryXzabJPMFmmwUC0Vn+ECQ2wA74X7qI+R5zzckRixq05JZSTllobsIFeR6DqL8sh/7RFB7kVFu0wxlZMRT8t26387bYO2Y/vrRbgJjrrwa2/D9VMRMdN6tkun8jQLOlqUKzsREUQt3Oua9qGKZKgqDdLNSYa8c80swA3sDz9OVeYvSHhvktMGcbPWxoL8KXwQ7qcqowXZ9+MB8J4Gaafufo22t9ihydTd2frtDcwICjb4L00nV9JPDuDaXIgqdyH2+g0yRawrMh+2dbRvz7KDUoc2vwiscmsyWkOx9cfznQE5PgBd+YU04YJYryoeJ2KJBqEomYpBAn+RHln0zGUTDxorMg7jT2ad+D5unRJdNeLhHeL5X6KWaGddjYGtrn0n5qwvrCdG3UJiSj5SK+D88JzGwwrd6R/7x1smYBgSMA4T8CLkoAyzMEv+HgD1oV8y); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzEVUFoI2UUzvtnkvn7dm1n/0U6++8KYyRrDEz5M2Fq00uye1rEQ/Ek7MFNmsQklCQkEeqtYkQRbaGxxcZCRVu0YqV40OLJFgopgvTkpRSLUhQvFoUei/yTSaq0By/pvsN7L+99L/N9///gxzsUdDDAhDA8gjxUYAbgHYCPAT4HYNfdLpHdMeAfIlX0Af4aBuhKyTi+hio9mwdU6R8fSP/Rvo4Bulcyfh1Eje6sgXEwiArdKaFKj+cANXq4AHJMo5tfgjGnoUp/WICebzSl/2ZfR43++RUY7Zuo0r8XZXF9eSho6+1C+MdZEKfpifc/gXeBNArzQE7TLfD/dm9lDb4A7bNl2HwwW9iET4tH0Cjcv36uLgnfkTu24wghbBGNObYQwrEs4TgiJhwhYm2i7JNrv5BFijeR8gCq9GQWghr6UbGcGnuK38YbwSF84mtAVOn3b08wovtdnMxbwHKpytQr5UrdtIU9akWFZY+Nm5P5VOnVbMYsV81UJpPNmOnXzXo+a1bL9VS9UC6ZtWyqOpk3w7Vs1kzlclOFSVm2qqlCxuqCrA5opFgrl57jAsPsLt6IDNEAIy/4uEsx6tTckspI2iuNOiGuIjEMFuPR/zsjQtyPin6aZion476O7M7/9sZGHFf2t024rB3z2m++BxdPRcQt+/k+ncqzLORyUc7lREUI9cigJzqAKpLRmhRI1x8y5L1rZkFu4nDkSaoyrSjb2w85bREv6wQW4s/grcgwVRktyrmfd4EPtEg39eIF2HazB5OpF9nq1S3MOAo28h9Oh+fUD3fhwl6IGvda7K1LaIp4X2je7vLo3p7thCQPvdEEVr0yGp2l2Pjrxd6CHOyCofxO2nBC7DcUn2vxZItQlEjFJMEzMiCLvplc8lZrSdpe4umcaz8l7CNiqGYiskV8j8XqyW7WV7u70bfvxF3/0mrynldIPpKv1BK4P3xHiYhCt4bv/+sxEzAGSXgAE/Ay5KEC0zBN/hkA4AtfAQ==).
 
 ## Other builds of this spec
 
-- [Affliction — DoT / Malevolence / Nightfall](../research/raid/builds/affliction-dot-raid.md) (30/0/21, 748 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550035003-7)
+- [Affliction — DoT / Malevolence / Nightfall](../research/raid/builds/affliction-dot-raid.md) (30/0/21, 830 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550035003-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

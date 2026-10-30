@@ -66,7 +66,7 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**6 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -74,8 +74,8 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 | 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 398 | -1.0% | 722 | -1.6% | 5 s |
 | 3 | *Standard* | community simulator | - | 396 | -1.5% | 726 | -1.1% | 13 s |
 | 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 386 | -4.0% | 672 | -8.4% | 18 s |
-| 5 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
-| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 15/24/12 | 255 | -36.7% | 437 | -40.4% | 29 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 386 | -4.1% | 695 | -5.3% | 8 s |
+| 6 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 

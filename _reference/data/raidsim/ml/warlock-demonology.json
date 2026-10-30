@@ -2547,5 +2547,323 @@
   "date": "2026-10-29",
   "setting": "raid",
   "why": "confirms demonology-ml-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Improved Life Tap",
+      1
+     ],
+     [
+      "Improved Corruption",
+      1
+     ]
+    ],
+    "Demonology": [
+     [
+      "Unholy Power",
+      5
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Improved Sayaad",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Master Summoner",
+      2
+     ],
+     [
+      "Decimation",
+      2
+     ],
+     [
+      "Demonic Brand",
+      3
+     ],
+     [
+      "Soul Link",
+      1
+     ],
+     [
+      "Demonic Knowledge",
+      3
+     ],
+     [
+      "Master Demonologist",
+      5
+     ],
+     [
+      "Demonic Pact",
+      1
+     ],
+     [
+      "Demonic Embrace",
+      2
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ]
+    ]
+   },
+   "split": "2/31/18",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice",
+    "Soul Link"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": null,
+  "prebis-dummy": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Improved Life Tap",
+      1
+     ],
+     [
+      "Improved Corruption",
+      1
+     ]
+    ],
+    "Demonology": [
+     [
+      "Unholy Power",
+      5
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Improved Sayaad",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Master Summoner",
+      2
+     ],
+     [
+      "Decimation",
+      2
+     ],
+     [
+      "Demonic Brand",
+      3
+     ],
+     [
+      "Soul Link",
+      1
+     ],
+     [
+      "Demonic Knowledge",
+      3
+     ],
+     [
+      "Master Demonologist",
+      5
+     ],
+     [
+      "Demonic Pact",
+      1
+     ],
+     [
+      "Demonic Embrace",
+      2
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ]
+    ]
+   },
+   "split": "2/31/18",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice",
+    "Soul Link"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Suppression",
+      1
+     ],
+     [
+      "Improved Corruption",
+      1
+     ]
+    ],
+    "Demonology": [
+     [
+      "Demonic Embrace",
+      2
+     ],
+     [
+      "Unholy Power",
+      5
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Improved Sayaad",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Master Summoner",
+      2
+     ],
+     [
+      "Decimation",
+      2
+     ],
+     [
+      "Demonic Brand",
+      3
+     ],
+     [
+      "Soul Link",
+      1
+     ],
+     [
+      "Demonic Knowledge",
+      3
+     ],
+     [
+      "Master Demonologist",
+      5
+     ],
+     [
+      "Demonic Pact",
+      1
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ]
+    ]
+   },
+   "split": "2/31/18",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Demonic Embrace",
+     "to": "Master Summoner",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice",
+    "Soul Link"
+   ],
+   "final_seed3": 0.0
+  }
  }
 }

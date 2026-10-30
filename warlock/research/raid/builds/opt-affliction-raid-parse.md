@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +61.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +68.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -19,12 +19,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
-| **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
-| **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec. |
-| **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
+| **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
+| **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec. |
 | **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
 | **Nightfall** | 2/2 | changed | Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%. |
 | **Shadow Mastery** | 5/5 | changed | Increases the damage dealt or life drained by your Shadow spells by 10%. |
@@ -45,14 +45,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 ## Core talents (priority order)
 
-1. **Bane** — Removing it costs 14.4 points of score in this model.
-2. **Agonizing Flames** — Removing it costs 9.5 points of score in this model.
-3. **Improved Shadow Bolt** — Removing it costs 7.9 points of score in this model.
-4. **Suppression** — Removing it costs 7.0 points of score in this model.
-5. **Ruin** — Removing it costs 7.0 points of score in this model.
-6. **Malevolence** — Removing it costs 6.5 points of score in this model.
-7. **Shadow Mastery** — Removing it costs 6.4 points of score in this model.
-8. **Improved Corruption** — Removing it costs 6.1 points of score in this model.
+1. **Bane** — Removing it costs 14.8 points of score in this model.
+2. **Shadow Mastery** — Removing it costs 13.1 points of score in this model.
+3. **Agonizing Flames** — Removing it costs 9.9 points of score in this model.
+4. **Improved Shadow Bolt** — Removing it costs 8.5 points of score in this model.
+5. **Suppression** — Removing it costs 7.3 points of score in this model.
+6. **Ruin** — Removing it costs 7.3 points of score in this model.
+7. **Malevolence** — Removing it costs 6.9 points of score in this model.
+8. **Improved Corruption** — Removing it costs 6.5 points of score in this model.
 
 ## Rotation
 
@@ -61,7 +61,6 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 ## Notes
 
 - Report: warlock/research/talents/forever/optimizer/affliction-raid-parse.md
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Malediction 2 gone; +1 Nightfall (tier gating for Shadow Mastery); +1 Nightfall (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

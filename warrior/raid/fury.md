@@ -2,28 +2,34 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Fury
 
-**[Fury (optimized, two-handed)](../research/raid/builds/opt-arms-2h-raid-raid-dps.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/warrior/60/35310003131-25050034102210501--7)
+**✅ Recommended** for raid (the best warrior spec here, or within 3% of it).
 
-**Other setups of this spec.** This build is the Two-handed setup. The spec's best build for each other setup, in a full raid:
+**[Fury — Raid](../research/raid/builds/fury-open-raid.md)** (18/31/2) — [open the talent tree](https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7)
 
-- Dual-wield: [Fury — Raid](../research/raid/builds/fury-open-raid.md) (18/31/2, 883 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7)
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Fury — Dual Wield), which stays below as the alternative. A model of the beta, to check at launch.
+
+**Other setups of this spec.** This build is the Dual-wield setup. The spec's best build for each other setup, in a full raid:
+
+- Two-handed: [Fury (optimized, two-handed)](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 845 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-25050034102210501--7)
 
 ## How to play
 
 **Press the first one that is ready**, top to bottom:
 
-1. **Whirlwind**
-2. **Bloodthirst**
-3. **Death Wish**: a big cooldown, save it for the last 45 seconds of the fight
+1. **Bloodthirst**
+2. **Death Wish**: a big cooldown, save it for the last 45 seconds of the fight
+3. **Whirlwind**
 4. **Execute** when the target is below 20% health
 5. **Hamstring**
-6. **Bloodrage** when you have less than 90 rage
+6. **Bloodrage** when you have less than 23 rage
+7. **Heroic Strike** when you have 68+ rage
+8. **Bloodrage** when you have less than 90 rage
 
 Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Recklessness**: once a fight, in the last 33.75 seconds of the fight
+- **Recklessness**: once a fight, in the last 45 seconds of the fight
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -55,30 +61,32 @@ Fury in a raid fights in **Berserker Stance** with a weapon in each hand: **Bloo
 - Before a boss's fear, press **Berserker Rage** (30-second cooldown, 10 seconds of fear immunity); **Death Wish** also makes you immune. The simulator's boss never fears, so the list leaves it out.
 - With a two-hander (the page's two-handed option), drop **Heroic Strike** and cast **Hamstring** whenever nothing else is ready: in the simulator's two-handed raid rotation those two changes were worth 5.3% and 6.8%. That rotation also uses **Bloodrage** under 90 rage and puts **Whirlwind** before **Bloodthirst** when **Bloodthirst** is more than 1.5 seconds away.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 881 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 925 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 887 | [18/31/2](https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7) |
-| Phase 1 BiS | 903 | [18/31/2](https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7) |
+| Pre-BiS | 919 | this build |
+| Phase 1 BiS | 923 | this build |
 
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 62.9; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.6; Phase 1 BiS 62.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Lionheart Helm](https://www.wowhead.com/forever/item=12640) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Lionheart Helm](https://www.wowhead.com/forever/item=12640) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
-| Neck | [Beads of Ogre Might](https://www.wowhead.com/forever/item=22150) | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
+| Neck | [Amulet of the Darkmoon](https://www.wowhead.com/forever/item=19491) | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) |
-| Back | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Deeprock Bracers](https://www.wowhead.com/forever/item=21184)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Deeprock Bracers](https://www.wowhead.com/forever/item=21184)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Theramore Gauntlets](https://www.wowhead.com/forever/item=271940)<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) | [Stormshroud Gloves](https://www.wowhead.com/forever/item=21278) · *Leatherworking*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) |
+| Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Timbermaw Tunic](https://www.wowhead.com/forever/item=252484) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Timbermaw Tunic](https://www.wowhead.com/forever/item=252484) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
+| Hands | [Gauntlets of Heroism](https://www.wowhead.com/forever/item=21998)<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) | [Gauntlets of Heroism](https://www.wowhead.com/forever/item=21998)<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) |
 | Waist | [Belt of Preserved Heads](https://www.wowhead.com/forever/item=20216) | [Belt of Preserved Heads](https://www.wowhead.com/forever/item=20216) |
 | Legs | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
 | Feet | [Boots of Heroism](https://www.wowhead.com/forever/item=21995)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Boots of Heroism](https://www.wowhead.com/forever/item=21995)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
@@ -87,17 +95,17 @@ Fury in a raid fights in **Berserker Stance** with a weapon in each hand: **Bloo
 | Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
 | Trinket | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
 | Main hand | [Premier High Warlord's Blade](https://www.wowhead.com/forever/item=272452)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Premier High Warlord's Blade](https://www.wowhead.com/forever/item=272452)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
-| Off hand | [Persuader](https://www.wowhead.com/forever/item=22384) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Persuader](https://www.wowhead.com/forever/item=22384) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Off hand | [Premier High Warlord's Cleaver](https://www.wowhead.com/forever/item=272592)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Premier High Warlord's Cleaver](https://www.wowhead.com/forever/item=272592)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHNUX33N3ZufkJN1OblIyufn37xikTkY23pndSZMWzaYgVF8s+mDxxWyzG7MiSdiJ2IIPaR5EVEp9sNhITfyIhNjWWqqWIkVsLVVaSBQCimKIgkJ9iOCDiF/cyW6jaxAJTTwPy93zMff3O/s7Z4f+h2CCBTY40AsDMAyjAE8BTAJMA/C6KMpUtBPE6yZqJohRoAQu7LMWa0nDJ08AafjpFZMMfGnWtOYSZOCFM5utr5Nk4PtTYH2pDhevmNaEQRr+dAzIwB9Ogio38NobYH2VJA2Pn6onDX89op729qxJGp56XmVenDWt79UTlk6COmj4yZzZ6piXis43E7Bn/hDs/bH3aWBjxXGoeTV3PPd5z8QUzAB7trgEY8VddSv8snCO3ZT20jKQXlpKPyUDGaRlOvCkLz3lTfmXmbbIJpK8TpBASjgazp8DnhV3Upp71OI2Y5wnP4Ba0h0drz7ImakLneIEHvFWk5Kny6HzD0Qho5JXIwyVZx65n5NAkSDNnHsO+IvA+3LDjz40NDxi+9LvSHkyJf0ddt9AbvDhQt4eKtm5fL6Qt/cdsEcGCnZpaCQ3UhwatMNCrtQ3YDthoWD3P1Y6kMo/nirlivlUJSO1nNH+SDg02CYydJtoo3p3M2qc3RMTBukUzwQhNbocE5GLCCnhe157ECqkON3L/48gRHWVV46/u4m/sBr6rhuP3qM2cWs1jrQMibtmGT1SgjQvI0OhEbME3y6C1Sj78m+UvUxEOUEafjEJfKtoqS7qkKH6wfDaeeCBSP9bMOnlMvO9qbWU4Svfrum2g2fWXPbExmhxSzWuTBDuiPHhjdFSjbrTBjy8iTeIetI/ZgxBNcPR8Z2XoTKd+Nb0yvnQL/fyZzZoUm+hZrcJdV47A9f3jwJETIYr0HtEN3n8djLdJOo8vgixyhZqEc2RN8FZKbZcmJEVmkRog6PjZ5PA31yNUOeNJ7Sb7uA7aavbUk1qefraPT8ISbgW6pxmoMKwLE81mWqHxvFqFx+rRiy7Uv46IG6JpiQeNTCC4fvtgeov/t7I70YQd9FO3hX9GVRRug76HwkpSV04DPwYbIzkO8jh2yJRwF+kUt4FFZYd29uDskIQL30IvElsobpWIjwNivx4Q9SD8QYr/h27DEvMPxiPRdaYnWG1VEMGxh2QP0Prb6xG+WOj/dnm8aPKPuq+uT+y+W5/gVma3e2eZbH/xEayldO62rYT63ZPV/R532vZnrIj26ve2Y5C9CW20O3G8WzTrj+92knohCzshj2wFwZgGPbDfvbHAKuF+nM=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHNUX33N3ZufkJN1OblIyufn37xikTkY23pndSZMWzaYgVF8s+mDxxWyzG7MiSdiJ2IIPaZ5EpdYHi420iR8pIdZaS9VSpIjVUsVCohBQFEMsKNSHCD6I+MWd7Da6BpHQxPOw3D0fc3+/s79zduh/CCZYYIMDvTAAwzAK8CTAJMA0AK+LokxFO0GcMFEzQYwCJXBhn7VYSxpefRZIw88+McnA47OmNZcgAy+e3Wx9kyQD35sC6yt1OH4CrAmDNPzpGJCBP5wCVW7gtdfA+jpJGp48XU8a/npEPe2tWZM0PP28yvxg1rS+V09YOgXqoOGnc2arY14qOlcnYM/8Idj7Y+9TwMaK41DzSu5k7oueiSmYAfZMcQnGirvqVvhl4Ty7Ke2lZSC9tJR+SgYySMt04Elfesqb8i8zbZFNJHmdIIGUcDScPw88K+6kNPeoxW3GOE++D7WkOzpeeZAzUxc6xQk84q0mJc+UQxceiEJGJa9GGCrPPHI/J4EiQZo59xzwF4H35YYffWhoeMT2pd+R8mRK+jvsvoHc4MOFvD1UsnP5fCFv7ztgjwwU7NLQSG6kODRoh4VcqW/AdsJCwe5/rHQglX88VcoV86lKRmo5o/2RcGiwTWToNtFG9e5m1Di7JyYM0imeCUJqdDkmIhcRUsL3vPYgVEhxupf/H0GI6iqvHH9nE39hNfRdNx69R23i1mocaRkSd80yeqQEaV5GhkIjZgm+XQSrUfbl3yh7mYhygjT8chL4VtFSXdQhQ/WD4bULwAOR/rdg0stl5rtTaynDl79d020Hz6657ImN0eKWalyZINwR48Mbo6UadacNeHgTbxD1pH/MGIJqhqPj2y9BZTrxzemV86Ff7uVPb9Ck3kLNbhPqvHYGru8fBYiYDFeg94hu8vjtZLpJ1Hl8EWKVLdQimiNvgrNSbLkwIys0idAGR8fPJ4G/sRqhzhtPaDfdwXfSVrelmtTy9LV7fhCScC3UOc1AhWFZnmoy1Q6N45UuPlaNWHal/HVA3BJNSTxqYATD99sD1V/8vZHfjSDuop28K/ozqKJ0HfQ/ElKSungY+DHYGMl3kMO3RaKAv0ilvAsqLDu2twdlhSBe+hB4k9hCda1EeAYU+fGGqAfjDVb8O3YZlph/MB6LrDE7w2qphgyMOyB/htbfWI3yx0b7s83jR5V91H1zf2Tz3f4CszS72z3HYv+JjWQrp3W1ba+v2z1d0ed9r2Z7yo5sr3pnOwrRl9hCtxvHc027/vRqJ6ETsrAb9sBeGIBh2A/72R8DALMX+lg=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHFUU3jM/OycnaTq5Sc3kxuoYpE5GNt6Z3UmyFcymoKgvFn2w+GK22Y1ZkSTsRGzBhzS+iEqpD5YmUhKtwZC2UkvVUqQPtpYqFhKFgKIYoqBQkQo+iPjHnd1tdM2DhHQ9D8vd8zP3+85+5+zQzQgmWGCDAwMwDGMwAfA8wCzAPABriKKKjPYCf7MJNRP4BFAcV/Zaq/Wk4bEjQBp+9olJBl6YA2spTgZePLPV+qaRDHxuCqyv5OHH42DNGKThL0eBDPzpLZDlBl49DtbXjaThiVNNpOHvh+XT3lk0ScNTr8jMi4um9YN8wuJSdNDw0yWzwzEvFZxvZ2D38kHY8/PAC6BMFqah7lj2RPaL/pk5WADlpcI1mCzsaljjl4Fzyq1JLykC4SWF8BMiEEFSJANP+MKT3oR/WdFWldmtrIETR4o7Gi6fA5bh91CSedTutqHKGj+AetIdHa88xhRT5zqpBB6xDpMaT5dD5x+NQkYlr44bMs88/AgjjjxOmrn0MrBXgQ1mx556fHRs3PaF353wREL4O+3B4ezIE/mcPVq0s7lcPmfv3W+PD+ft4uh4drwwOmKH+WxxcNh2wnzeHnq6uD+ReyZRzBZyiUpGopTR9WQ4OtLJU3Qn76QmdytqTHkwxg3SSU0FIbW4DOORiwgp7nteVxBKpDg/wG5B4Ly6yivH39vCjqyHPr356D3q5HdU40iKkJhrltEjxUnzUiLkGikWZz08WI+yL/5F2UtFlOOk4ZezwLbz9uqibhHKHwyvngcW8OR/BZMslZnvz22kDF//bkO3HTiz4bJna6PFbdW4UkG4M8bGaqOlOnmnDXhoC2vmTaR/rCgIshmOju++BpXpxLfn184Hf3uIvVijSb2d2txW1Fn9AlzfPxIQKSJcg97P+8hjd5HpNqLO1FWIVbZQO2+LvHGmFGOlwpSo0CRCGxwdP58FdnIdQn7P5hO6j+5madrutleTKk1fl+cHIVnuTagzWoAKwxJyL6LsqHglzSar8Yp0wu/dfLzt0YyoUfuiQfb9rkB2F/9sYQ8g8HsjQvKvoIpQlC2XCXHXqqJzPSaJ4YVDwI5CbQTfTQ7bEUkC/iGU8iaosOzu6QrK+kC89CGwiRrpoyRXdU2uaVHpdivfRg0dRHgapGe6OQpMN1vq98pluKb4B9RYZC2ZBaWe6shA1QHxK3T8odRJf2xiKNM2PSXto77bhiJb7vNXFEuz+9yzSux/sfFM5XRDbcfJG3ZPOvp8+I1Mf9mRGZAvjVMQfYmt9Lkqnm3d9bd3SwG9kIH7YTfsgWEYg32wT/lrAJibIBg=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHFUU3jM/OycnaTK5Sc3kxuoYpE5GNt6Z3UmyFcymoKgvFn2w+GK22Y1ZkSTsRGzBhzS+iEqtDxYTqYk/xZC2UkvVUqQPWksVC4lCQFEMsaBQkQo+iPjHnd1tdM2DhHQ9D8vd8zP3+85+5+zQ9QgmWGCDA4MwAuMwCfA0wBzAPABriKKKjPYBf7MZNRP4JFAcV/ZYq/Wk4aXngTT8/FOTDHxl0bSW4mTguVNN1reNZOBT02B9LQ8/HgVr1iANfzkMZOBPb4EsN/DyUbC+aSQNj51oJg1/PySf9s6iSRqeeFFmnls0rR/kExaXooOGny2ZnY55vuBcmoVdywdg98+Dz4AyVZiButezx7JfDswegQVQnitcganCzoY1fhk4o9yY9JIiEF5SCD8hAhEkRTLwhC886U34FxRtVZlrYg2cOFLc0XD5DLAMv4OSzKMOtx1V1vgB1JPu6HjxIaaYOtdJJfCIdZrUeLIcOvtgFDIqeXXckHnmoQcYceRx0sylF4C9DGwoO/7Yw2PjE7Yv/J6EJxLC32EPjWRHH8nn7LGinc3l8jl7zz57YiRvF8cmshOFsVE7zGeLQyO2E+bz9vDjxX2J3BOJYraQS1QyEqWM7kfDsdEunqJbeRc1u02oMeXeGDdIJzUVhNTqMoxHLiKkuO953UEokeL8ILsBgfPqKq8cf28Le2k99OnNR+9RF7+lGkdShMRcs4weKU6alxIh10ixOOvlwXqUffEvyl4qohwnDb+aA7aNd1QX9YhQ/mB4+SywgCf/K5hkqcx8/8hGyvC17zZ02/5TGy57sjZa3FqNKxWEO2JsvDZaqpN32oAHt7AW3kz6J4qCIJvh6Pjuq1CZTnx7fu184Lf72LM1mtSbqd1tQ53VL8DV/SMBkSLCNegDvJ88dhuZbiPqTF2FWGULdfD2yBtnSjFWKkyJCk0itMHR8Ys5YMfXIeT3bj6hu+h2lqZtbkc1qdL0dXt+EJLlXoc6owWoMCwh9yLKjooX02yqGq9IJ/y+zcfbEc2IGrUvGmTf7w5kd/HPVnYPAr8zIiT/CqoIRdlymRB3rSo6V2OSGH54ENhhqI3ge8hh2yNJwD+EUt4EFZY9vd1BWR+I5z8CNlkjfZTkqq7JNS0q3W7jW6mhkwhPgvTMtESBmRZL/V65AFcUf78ai6w1s6DUUx0ZqDogfoXOP5Q66Y9NDmfaZ6alfdx/03Bky/3+imJpdr97Won9LzaRqZyuqW0/fs3uSUef97+RGSg7MoPypXEaoi+xlX5XxdNtO//2bimgDzJwN+yC3TAC47AX9ip/DQCrSyBl).
 
 ## Other builds of this spec
 
-- [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 870 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-55350000052010501--7)
-- [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 839 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--7)
-- [Fury (optimized, dual-wield)](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (18/33/0) — [open the talent tree](https://talentsforever.com/warrior/60/35310003102-05053035102210501--7)
+- [Fury (optimized, dual-wield)](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (18/33/0, 914 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013102-05053035102210501--7)
+- [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 875 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--7)
+- [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 828 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-55350000052010501--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

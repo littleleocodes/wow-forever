@@ -1,79 +1,77 @@
-# Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps) — 10/11/30
+# Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps) — 22/11/18
 
 *[Warlock](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 10/11/30 (Affliction / Demonology / Destruction) |
+| **Build** | 22/11/18 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +106.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +98.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Affliction (10)
+### Affliction (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
-| **Improved Corruption** | 3/5 | changed | Reduces the casting time of your Corruption spell by 1.2 sec and increases the damage it deals by 6%. |
+| **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
+| **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec. |
+| **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
+| **Improved Bane of Agony** | 1/2 | **NEW** | Increases the damage done by your Bane of Agony by 5%. |
+| **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
 
 ### Demonology (11)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
+| **Improved Health Funnel** | 2/2 | changed | Increases the amount of health transferred by your Health Funnel spell by 40%, reduces its health cost by 30%, and reduces all threat your Health Funnel generates by 100%. Allows Health Funnel to be used regardless of your demon's health. |
+| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
 
-### Destruction (30)
+### Destruction (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Bane** | 5/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec. |
 | **Improved Shadow Bolt** | 5/5 | changed | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for 12 sec. |
-| **Aftermath** | 2/5 | changed | Increases the initial damage of your Immolate spell by 20% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
-| **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
-| **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
-| **Fire and Brimstone** | 3/3 | **NEW** | Increases the critical strike chance of your Conflagrate spell by 25%. |
-| **Shadow and Flame** | 5/5 | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 10% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 10% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
 
 ## Core talents (priority order)
 
-1. **Conflagrate** — Removing it costs 27.2 points of score in this model.
-2. **Demonic Sacrifice** — Removing it costs 27.0 points of score in this model.
-3. **Shadow and Flame** — Removing it costs 26.3 points of score in this model.
-4. **Bane** — Removing it costs 21.2 points of score in this model.
-5. **Agonizing Flames** — Removing it costs 13.9 points of score in this model.
-6. **Suppression** — Removing it costs 11.6 points of score in this model.
-7. **Improved Shadow Bolt** — Removing it costs 11.0 points of score in this model.
-8. **Fel Vitality** — Removing it costs 8.5 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 26.2 points of score in this model.
+2. **Conflagrate** — Removing it costs 25.9 points of score in this model.
+3. **Shadow and Flame** — Removing it costs 25.1 points of score in this model.
+4. **Bane** — Removing it costs 20.4 points of score in this model.
+5. **Agonizing Flames** — Removing it costs 13.4 points of score in this model.
+6. **Suppression** — Removing it costs 11.2 points of score in this model.
+7. **Improved Shadow Bolt** — Removing it costs 10.6 points of score in this model.
+8. **Ruin** — Removing it costs 7.6 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 11** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
-| 2 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
-| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
-| 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
-| 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |
-| 8 | *Deep Affliction 35/0/16* | community simulator | - | 527 | -17.7% | 581 | -19.6% | 1 s |
-| 9 | *Demonic Pact 2/31/18* | community simulator | - | 522 | -18.4% | 587 | -18.7% | 1 s |
-| 10 | *Affliction* | community simulator | - | 520 | -18.8% | 573 | -20.7% | 1 s |
-| 11 | *Demonic Pact* | community simulator | - | 517 | -19.3% | 580 | -19.8% | 0 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 21/11/19 | 700 | +0.0% | 795 | +0.0% | 0 s |
+| 2 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 697 | -0.5% | 786 | -1.1% | 0 s |
+| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 696 | -0.6% | 789 | -0.7% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 686 | -2.0% | 772 | -2.9% | 0 s |
+| 5 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 681 | -2.7% | 770 | -3.1% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 671 | -4.2% | 752 | -5.4% | 0 s |
+| 7 | *Destro* | community simulator | - | 615 | -12.3% | 683 | -14.0% | 0 s |
+| 8 | *Demo (Shadow Brand)* | community simulator | - | 593 | -15.4% | 674 | -15.1% | 0 s |
+| 9 | *Demo (Fire Brand)* | community simulator | - | 579 | -17.3% | 646 | -18.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,7 +82,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
   4. insert before the filler: cast Talisman of Ephemeral Power (+0.6%, pass 6)
   5. only above 25% mana: cast Talisman of Ephemeral Power (+0.4%, pass 6)
   6. insert before the filler: cast Eureka! (+0.2%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-11, 7 changes to the base rotation; third-seed check: open winner 732 -> 731 DPS (-0.2%), opt-sb-raid-raid-dps 727 -> 726 DPS (-0.1%), sim preset: DS/Ruin Pandemic 24/11/16 690 -> 686 DPS (-0.6%), ds-ruin-raid 724 -> 725 DPS (+0.1%), destruction-ml-raid 679 -> 712 DPS (+4.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-28, 7 changes to the base rotation; third-seed check: open winner 788 -> 794 DPS (+0.7%), ds-ruin-raid 784 -> 789 DPS (+0.7%), sim preset: SM/Ruin 769 -> 773 DPS (+0.5%), opt-sb-raid-raid-dps 787 -> 787 DPS (+0.1%), destruction-ml-raid 731 -> 764 DPS (+4.5%), shadow-bolt-hybrid-open-raid 787 -> 785 DPS (-0.2%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
@@ -102,27 +100,30 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
-| 6 | if mana % < 10%: cast Life Tap | 7.0 |
-| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 11 | cast Shadow Bolt | 14.3 |
+| 6 | if mana % < 10%: cast Life Tap | 7.2 |
+| 7 | cast Amplify Curse | 0.6 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
+| 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 12 | cast Shadow Bolt | 14.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) |
 |---|---|
-| Shadow Bolt | 53% |
+| Shadow Bolt | 52% |
 | Bane of Agony | 18% |
 | Corruption | 17% |
 | Immolate | 11% |
+| Demonic Rune | 1% |
 | Searing Pain | 0% |
 
 ## Notes
 
+- Allocation taken from cand-sb-raid-r6 on 2026-10-28: the optimizer's earlier round beat its last export in the community simulator (697 vs 672 DPS; the calibration moved the model past the better build).
 - Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

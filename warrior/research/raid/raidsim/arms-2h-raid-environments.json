@@ -2,7 +2,7 @@
  "class": "warrior",
  "spec": "arms-2h-raid",
  "game": "forever",
- "date": "2026-10-27",
+ "date": "2026-10-29",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
   "commit": "30f67f5d2",
@@ -95,28 +95,28 @@
     "max60": 905.5902408047983
    },
    "raid_spell_casts": {
-    "12328": 1.0,
-    "2687": 1.894,
+    "412609": 80.62066666666666,
     "7373": 59.025333333333336,
     "1680": 13.965666666666667,
-    "412609": 80.62066666666666,
-    "20662": 13.925666666666666,
+    "12328": 1.0,
     "1719": 1.0,
+    "2687": 1.894,
+    "20662": 13.925666666666666,
     "23894": 26.226
    },
    "raid_casts": {
-    "Death Wish": 1.0,
-    "Bloodrage": 1.894,
-    "Hamstring": 59.025333333333336,
-    "Whirlwind": 13.965666666666667,
-    "item 274759": 1.0,
     "Deep Wound": 80.62066666666666,
+    "Hamstring": 59.025333333333336,
+    "item 274759": 1.0,
+    "Whirlwind": 13.965666666666667,
+    "OtherActionRageGain": 107.331,
+    "Death Wish": 1.0,
+    "Recklessness": 1.0,
+    "Bloodrage": 1.894,
     "Execute": 13.925666666666666,
     "Auto Attack": 97.423,
-    "OtherActionRageGain": 107.331,
-    "Mighty Rage Potion": 2.0,
-    "Recklessness": 1.0,
-    "Bloodthirst": 26.226
+    "Bloodthirst": 26.226,
+    "Mighty Rage Potion": 2.0
    },
    "raid_shares": {
     "Auto Attack": 0.4948,
@@ -150,29 +150,29 @@
    },
    "raid_spell_casts": {
     "7373": 58.691,
-    "412609": 80.85833333333333,
-    "20662": 13.830333333333334,
-    "23894": 26.7,
-    "1719": 1.0,
     "18499": 0.7846666666666666,
     "2687": 1.726,
     "1680": 14.224,
-    "12328": 1.0
+    "20662": 13.830333333333334,
+    "1719": 1.0,
+    "412609": 80.85833333333333,
+    "12328": 1.0,
+    "23894": 26.7
    },
    "raid_casts": {
     "Hamstring": 58.691,
-    "Auto Attack": 97.44133333333333,
-    "Deep Wound": 80.85833333333333,
-    "Execute": 13.830333333333334,
-    "Bloodthirst": 26.7,
-    "Recklessness": 1.0,
-    "item 274759": 1.0,
-    "Mighty Rage Potion": 2.0,
     "Berserker Rage": 0.7846666666666666,
     "Bloodrage": 1.726,
     "Whirlwind": 14.224,
+    "Execute": 13.830333333333334,
+    "Auto Attack": 97.44133333333333,
+    "Recklessness": 1.0,
+    "Deep Wound": 80.85833333333333,
+    "Death Wish": 1.0,
+    "Mighty Rage Potion": 2.0,
     "OtherActionRageGain": 104.68466666666667,
-    "Death Wish": 1.0
+    "item 274759": 1.0,
+    "Bloodthirst": 26.7
    },
    "raid_shares": {
     "Auto Attack": 0.4855,
@@ -205,29 +205,29 @@
     "max60": 921.7442322384687
    },
    "raid_spell_casts": {
-    "1680": 14.224,
-    "23894": 26.7,
-    "2687": 1.726,
+    "412609": 80.85833333333333,
     "12328": 1.0,
     "1719": 1.0,
+    "23894": 26.7,
+    "7373": 58.691,
     "20662": 13.830333333333334,
-    "412609": 80.85833333333333,
+    "2687": 1.726,
     "18499": 0.7846666666666666,
-    "7373": 58.691
+    "1680": 14.224
    },
    "raid_casts": {
-    "Mighty Rage Potion": 2.0,
-    "Auto Attack": 97.44133333333333,
-    "Whirlwind": 14.224,
-    "Bloodthirst": 26.7,
-    "Bloodrage": 1.726,
-    "Death Wish": 1.0,
-    "Recklessness": 1.0,
-    "Execute": 13.830333333333334,
     "Deep Wound": 80.85833333333333,
+    "Death Wish": 1.0,
     "OtherActionRageGain": 104.68466666666667,
-    "Berserker Rage": 0.7846666666666666,
+    "Auto Attack": 97.44133333333333,
+    "Recklessness": 1.0,
+    "Bloodthirst": 26.7,
     "Hamstring": 58.691,
+    "Execute": 13.830333333333334,
+    "Mighty Rage Potion": 2.0,
+    "Bloodrage": 1.726,
+    "Berserker Rage": 0.7846666666666666,
+    "Whirlwind": 14.224,
     "item 274759": 1.0
    },
    "raid_shares": {
@@ -261,28 +261,28 @@
     "max60": 891.0004643989607
    },
    "raid_spell_casts": {
+    "7373": 59.025333333333336,
+    "412609": 80.62066666666666,
+    "1719": 1.0,
+    "2687": 1.894,
     "20662": 13.925666666666666,
     "12328": 1.0,
-    "1719": 1.0,
-    "7373": 59.025333333333336,
-    "1680": 13.965666666666667,
     "23894": 26.226,
-    "412609": 80.62066666666666,
-    "2687": 1.894
+    "1680": 13.965666666666667
    },
    "raid_casts": {
     "OtherActionRageGain": 107.331,
-    "Execute": 13.925666666666666,
-    "Auto Attack": 97.423,
-    "item 274759": 1.0,
-    "Death Wish": 1.0,
-    "Recklessness": 1.0,
     "Hamstring": 59.025333333333336,
-    "Whirlwind": 13.965666666666667,
-    "Bloodthirst": 26.226,
     "Deep Wound": 80.62066666666666,
     "Mighty Rage Potion": 2.0,
-    "Bloodrage": 1.894
+    "Auto Attack": 97.423,
+    "Recklessness": 1.0,
+    "Bloodrage": 1.894,
+    "item 274759": 1.0,
+    "Execute": 13.925666666666666,
+    "Death Wish": 1.0,
+    "Bloodthirst": 26.226,
+    "Whirlwind": 13.965666666666667
    },
    "raid_shares": {
     "Auto Attack": 0.4883,
@@ -316,25 +316,25 @@
    },
    "raid_spell_casts": {
     "20662": 12.813,
-    "2687": 2.644,
-    "7373": 60.833666666666666,
-    "21553": 18.879333333333335,
-    "1719": 1.0,
     "412609": 72.63,
-    "1680": 15.923666666666668
+    "7373": 60.833666666666666,
+    "1680": 15.923666666666668,
+    "1719": 1.0,
+    "2687": 2.644,
+    "21553": 18.879333333333335
    },
    "raid_casts": {
-    "OtherActionRageGain": 111.97633333333333,
     "Execute": 12.813,
     "item 274759": 1.0,
-    "Bloodrage": 2.644,
-    "Hamstring": 60.833666666666666,
-    "Mortal Strike": 18.879333333333335,
-    "Recklessness": 1.0,
-    "Auto Attack": 82.274,
-    "Mighty Rage Potion": 2.0,
     "Deep Wound": 72.63,
-    "Whirlwind": 15.923666666666668
+    "Hamstring": 60.833666666666666,
+    "Whirlwind": 15.923666666666668,
+    "Mighty Rage Potion": 2.0,
+    "Recklessness": 1.0,
+    "Bloodrage": 2.644,
+    "Auto Attack": 82.274,
+    "OtherActionRageGain": 111.97633333333333,
+    "Mortal Strike": 18.879333333333335
    },
    "raid_shares": {
     "Auto Attack": 0.4972,

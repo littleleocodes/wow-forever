@@ -69,7 +69,7 @@ The Fire raid build the open talent search found on 2026-10-24: every legal 51-p
 | 2 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 646 | -0.4% | 850 | +0.0% | 29 s |
 | 3 | *Fire* | community simulator | - | 642 | -0.9% | 848 | -0.2% | 29 s |
 | 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/34/3 | 623 | -3.9% | 830 | -2.3% | 33 s |
-| 5 | *FFB* | community simulator | - | 393 | -39.3% | 546 | -35.8% | 59 s |
+| 5 | *FFB* | community simulator | - | 462 | -28.8% | 621 | -27.0% | 64 s |
 | 6 | *Arcane Fire* | community simulator | - | 379 | -41.6% | 619 | -27.1% | 12 s |
 | 7 | *Arcane Frost* | community simulator | - | 340 | -47.5% | 436 | -48.7% | 12 s |
 

@@ -69,15 +69,14 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.4% | 52 s |
-| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 6/32/13 | 489 | -5.2% | 760 | -5.3% | 62 s |
-| 3 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: derived (open search) | 0/29/22 | 470 | -8.9% | 802 | +0.0% | 64 s |
-| 4 | *FFB* | community simulator | - | 464 | -10.1% | 792 | -1.3% | 67 s |
-| 5 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 464 | -10.1% | 764 | -4.8% | 58 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.1% | 52 s |
+| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 498 | -3.5% | 799 | +0.0% | 61 s |
+| 3 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 486 | -5.7% | 764 | -4.5% | 58 s |
+| 4 | *FFB* | community simulator | - | 480 | -7.0% | 792 | -0.9% | 67 s |
 
 ## Rotation (community simulator, training dummy)
 

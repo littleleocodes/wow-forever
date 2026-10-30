@@ -118,7 +118,7 @@
 | forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Cold Snap** | Frost | 1 | +0.16% | manual | safety (from frost-aoe) | 'A second shot at fixing a pull that is going wrong' - a second Nova and Ice Block. |
 | forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Ice Barrier** | Frost | 1 | +0.16% | manual | safety (from frost-aoe) | 'Run around gathering mobs on your fresh mount without being in danger of being dazed and dismounted'; an escape when running. |
 
-## Paladin - 29 flagged of 73 taken talents, 2 without a documented reason
+## Paladin - 30 flagged of 75 taken talents, 3 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -150,9 +150,10 @@
 | forever-draft | `leveling-retribution` | ret-dps / leveling-st | **Purifying Power** | Holy | 2 | +0.08% | manual | utility (from prot-tank) | Cheaper Cleanse / Purify and -33% Exorcism / Holy Wrath cooldown (beta): dispels and undead / demon threat; two points on the Holy path. |
 | forever-draft | `prot-tank` | prot-tank / raid-tank | **Improved Judgement** | Retribution | 2 | +0.00% | manual | utility (from holy-heal) | Judgement cooldown -2 s (beta): keeps Judgement of Light / Wisdom up for the raid when the healer judges; Retribution tier-2 path of the For |
 | forever-draft | `prot-tank` | prot-tank / raid-tank | **Eye for an Eye** | Retribution | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `prot-tank` | prot-tank / raid-tank | **Vindication** | Retribution | 2 | +0.19% | manual | OPEN |  |
 | forever-draft | `ret-raid-dps` | ret-dps / raid-dps | **Divine Favor** | Holy | 1 | +0.00% | manual | OPEN |  |
 
-## Priest - 24 flagged of 58 taken talents, 3 without a documented reason
+## Priest - 23 flagged of 60 taken talents, 3 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -176,7 +177,6 @@
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Improved Power Word: Shield** | Discipline | 3 | +0.11% | manual | safety (from shadow-dps) | Bigger shield on every pull. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Improved Power Word: Shield** | Discipline | 3 | +0.00% | manual | safety | Bigger shield on every pull. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Blackout** | Shadow | 3 | +0.00% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
-| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Shadow Reach** | Shadow | 2 | +0.00% | manual | control | +20% range: one more cast before melee. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Spirit Tap** | Shadow | 5 | +0.00% | manual | sustain | +100% Spirit for 15 s after a kill with 50% regen while casting (beta): the leveling mana loop; nothing in a raid, where nothing dies. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Martyrdom** | Discipline | 2 | +0.00% | manual | utility | Pushback immunity after being crit (beta): a leveling safety point of the leveling build; nothing in a raid. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
@@ -250,7 +250,7 @@
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Ancestral Knowledge** | Enhancement | 5 | +0.01% | manual | sustain | +5% mana: shocks and totems. |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Totemic Focus** | Restoration | 5 | +0.07% | manual | sustain | Totem mana: the support half of the spec. |
 
-## Warlock - 20 flagged of 67 taken talents, 5 without a documented reason
+## Warlock - 23 flagged of 64 taken talents, 6 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -267,6 +267,9 @@
 | classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Unholy Power** | Demonology | 5 | +0.28% | parsed | enabler | Voidwalker damage = Voidwalker threat. |
 | classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Demonic Embrace** | Demonology | 5 | +0.37% | manual | safety (from sb-raid) | Stamina: survivability on AoE mechanics; no DPS. |
 | classic | `leveling-affliction-demo` | affliction-leveling / leveling-st | **Fel Stamina** | Demonology | 5 | +0.40% | manual | filler (from sb-raid) | 'Fel Stamina & Unholy Power... provide no benefits' - Demonology tier filler on the way to Demonic Sacrifice. |
+| forever-draft | `destruction-fire-raid` | fire-destro-raid / raid-dps | **Amplify Curse** | Affliction | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `destruction-fire-raid` | fire-destro-raid / raid-dps | **Demonic Embrace** | Demonology | 5 | +0.00% | manual | safety (from sb-raid) | Stamina: survivability on AoE mechanics; no DPS. |
+| forever-draft | `ds-ruin-raid` | sb-raid / raid-dps | **Demonic Embrace** | Demonology | 5 | +0.00% | manual | safety | Stamina: survivability on AoE mechanics; no DPS. |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Curse of Exhaustion** | Affliction | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Health Funnel** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Sayaad** | Demonology | 3 | +0.00% | manual | OPEN |  |
@@ -275,12 +278,11 @@
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 
-## Warrior - 21 flagged of 79 taken talents, 6 without a documented reason
+## Warrior - 18 flagged of 76 taken talents, 4 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
 | classic | `fury-2h-raid` | arms-2h-raid / raid-dps | **Improved Heroic Strike** | Arms | 3 | +0.00% | manual | sustain | Cheaper rage dump: more Heroic Strikes per pull. |
-| classic | `fury-2h-raid` | arms-2h-raid / raid-dps | **Tactical Mastery** | Arms | 5 | +0.38% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Tactical Mastery** | Arms | 5 | +0.00% | manual | enabler | 'Required for stance swapping to work. Without points in it, you would struggle to retain any Rage when stance swapping.' |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Rend** | Arms | 3 | +0.05% | parsed | throughput (from arms-2h-raid) | Rend is applied every pull; Blood Craze/Enrage synergy. |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Unbridled Wrath** | Fury | 5 | +0.16% | manual | throughput | 'Suits dual wielding well, as the more often you attack, the more often you activate this talent.' |
@@ -290,14 +292,12 @@
 | classic | `leveling-arms` | arms-2h-raid / leveling-st | **Tactical Mastery** | Arms | 5 | +0.09% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
 | classic | `leveling-arms` | arms-2h-raid / leveling-st | **Unbridled Wrath** | Fury | 5 | +0.28% | manual | throughput | Extra rage per hit (half as often with a two-hander). |
 | classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Charge** | Arms | 2 | +0.36% | manual | sustain | Opening rage on every pull. |
-| classic | `prot-raid-tank` | prot-tank / raid-tank | **Improved Sunder Armor** | Protection | 3 | +0.00% | parsed | sustain | -1 rage/rank on Sunder Armor, the tank's threat filler (35% of the threat split): rage economy the threat model does not carry beyond the ab |
 | classic | `prot-raid-tank` | prot-tank / raid-tank | **Anticipation** | Protection | 5 | +0.30% | manual | safety | 'Not quite as good as it might look at first glance. While 10 Defense is a strong defensive boost, it comes at the cost of 5 precious talent |
-| forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Improved Tactical Mastery** | Arms | 5 | +0.00% | manual | OPEN |  |
 | forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Lingering Rage** | Fury | 3 | +0.00% | missing | OPEN |  |
 | forever-draft | `arms-2h-raid` | arms-2h-raid / raid-dps | **Enrage** | Fury | 5 | +0.00% | manual | filler (from fury-dw-raid) | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
-| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Tactical Mastery** | Arms | 5 | +0.00% | manual | OPEN |  |
+| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Heroic Strike** | Arms | 2 | +0.00% | manual | sustain (from arms-2h-raid) | Cheaper rage dump: more Heroic Strikes per pull. |
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Booming Voice** | Fury | 5 | +0.00% | manual | OPEN |  |
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Enrage** | Fury | 5 | +0.00% | manual | filler | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
-| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Bloodrage** | Protection | 1 | +0.27% | manual | OPEN |  |
-| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Tactical Mastery** | Arms | 5 | +0.38% | manual | OPEN |  |
+| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Thunder Clap** | Protection | 3 | +0.00% | manual | OPEN |  |
+| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Tactical Mastery** | Arms | 5 | +0.09% | manual | OPEN |  |
 

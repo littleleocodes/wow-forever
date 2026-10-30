@@ -4,35 +4,37 @@ Every spec of every class, by the build its raid page recommends. Tiers by how f
 
 ## Damage
 
-DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off for druid, hunter, mage, priest, rogue, shaman, warlock, warrior; on for paladin. The community's combat simulator (the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450); the ElliotWood/Forever fork (deleted 2026-10-18) at b7083fa (client 1.60.1.70425, its spell data of 14-15 Oct) and 2ce8265 (client 1.60.1.70291)) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
+DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off. The community's combat simulator (the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
 
 | Tier | Spec | Build | Full raid DPS | Behind the best |
 |---|---|---|---|---|
-| **S** | [Warrior: Arms](warrior/raid/arms.md) | 37/14/0 | 964 | best |
-| **S** | [Paladin: Retribution](paladin/raid/retribution.md) | 10/8/33 | 952 | 1.3% |
-| **A** | [Warrior: Fury](warrior/raid/fury.md) | 20/31/0 | 881 | 8.6% |
-| **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 850 | 11.8% |
-| **B** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 835 | 13.3% |
-| **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 822 | 14.7% |
-| **B** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 802 | 16.8% |
-| **B** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 781 | 18.9% |
-| **C** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 768 | 20.3% |
-| **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/33/9 | 754 | 21.7% |
-| **C** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 752 | 22.0% |
-| **C** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/31/3 | 734 | 23.9% |
-| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 20/11/20 | 723 | 25.0% |
-| **C** | [Mage: Arcane](mage/raid/arcane.md) | 35/13/3 | 717 | 25.6% |
-| **C** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 22/29/0 | 715 | 25.8% |
-| **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 10/11/30 | 705 | 26.9% |
-| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 29/0/22 | 693 | 28.2% |
-| **C** | [Rogue: Combat](rogue/raid/combat.md) | 16/33/2 | 683 | 29.1% |
-| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 28/21/2 | 664 | 31.1% |
-| **C** | [Druid: Balance](druid/raid/balance.md) | 33/5/13 | 624 | 35.2% |
-| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 29/22/0 | 619 | 35.8% |
-| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 20/0/31 | 609 | 36.8% |
-| **C** | [Priest: Smite](priest/raid/smite.md) | 31/17/3 | 597 | 38.1% |
-| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 544 | 43.5% |
-| **C** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 15/24/12 | 437 | 54.6% |
+| **S** | [Warrior: Fury](warrior/raid/fury.md) | 18/31/2 | 925 | best |
+| **A** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 870 | 5.9% |
+| **A** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 850 | 8.1% |
+| **A** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 836 | 9.5% |
+| **A** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 835 | 9.7% |
+| **B** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 799 | 13.6% |
+| **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 799 | 13.6% |
+| **B** | [Priest: Shadow](priest/raid/shadow.md) | 20/0/31 | 796 | 13.9% |
+| **B** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 21/11/19 | 795 | 14.1% |
+| **B** | [Paladin: Retribution](paladin/raid/retribution.md) | 17/0/34 | 785 | 15.2% |
+| **B** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 781 | 15.5% |
+| **B** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 770 | 16.7% |
+| **B** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 768 | 17.0% |
+| **B** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 28/20/3 | 759 | 17.9% |
+| **B** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/33/9 | 754 | 18.4% |
+| **C** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/31/3 | 734 | 20.6% |
+| **C** | [Mage: Arcane](mage/raid/arcane.md) | 35/13/3 | 717 | 22.5% |
+| **C** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 695 | 24.8% |
+| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 29/0/22 | 693 | 25.1% |
+| **C** | [Rogue: Combat](rogue/raid/combat.md) | 16/33/2 | 683 | 26.1% |
+| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 28/21/2 | 664 | 28.2% |
+| **C** | [Rogue: Assassination](rogue/raid/assassination.md) | 30/21/0 | 662 | 28.4% |
+| **C** | [Druid: Balance](druid/raid/balance.md) | 33/5/13 | 624 | 32.5% |
+| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 29/22/0 | 619 | 33.0% |
+| **C** | [Priest: Smite](priest/raid/smite.md) | 17/17/17 | 611 | 33.9% |
+| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 20/0/31 | 609 | 34.1% |
+| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 588 | 36.4% |
 
 ## Healing
 
@@ -52,41 +54,43 @@ Not tiered: each tank's tank value is measured against its own class's hand-made
 
 | Spec | Build | Threat per second | Damage taken per second | Tank value (own class's hand draft = 1.00) |
 |---|---|---|---|---|
-| [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/42/0 | 3139 | 360 | 1.05 |
-| [Paladin: Protection](paladin/raid/protection.md) | 0/32/19 | 469 | 518 | 1.04 |
-| [Warrior: Protection](warrior/raid/protection.md) | 17/3/31 | 700 | 672 | 1.01 |
+| [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/35/7 | 4045 | 364 | 1.06 |
+| [Paladin: Protection](paladin/raid/protection.md) | 0/35/16 | 826 | 321 | 1.07 |
+| [Warrior: Protection](warrior/raid/protection.md) | 17/3/31 | 1261 | 277 | 1.02 |
 
 ## Race
 
-The tiers above run with racials off for druid, hunter, mage, priest, rogue, shaman, warlock, warrior; on for paladin. With them on, the race matters by this much in a full raid (the community simulator's Forever racials, the spec's simulator entry with its best build, two seeds; [every race and setting](_reference/race-sweep.md)). Weapon racials count only with the weapon type of the spec's gear set.
+The tiers above run with racials off. With them on, the race matters by this much in a full raid (the community simulator's Forever racials, the spec's simulator entry with its best build, two seeds; [every race and setting](_reference/race-sweep.md)). Weapon racials count only with the weapon type of the spec's gear set.
 
 | Spec | Best race | Worst race behind it |
 |---|---|---|
-| [Warrior: Arms](warrior/raid/arms.md) | Skyborne (Windshaper) | 5.0% (Gnome) |
-| [Paladin: Retribution](paladin/raid/retribution.md) | Human | 1.9% (Dwarf) |
-| [Warrior: Fury](warrior/raid/fury.md) | Skyborne (Windshaper) | 5.1% (Dwarf) |
-| [Mage: Fire](mage/raid/fire.md) | Skyborne (High Order) | 4.1% (Troll) |
-| [Hunter: Survival](hunter/raid/survival.md) | Skyborne (Windshaper) | 5.4% (Dwarf) |
-| [Warlock: Demonology](warlock/raid/demonology.md) | Human | 1.7% (Troll) |
-| [Mage: Frostfire](mage/raid/frostfire.md) | Skyborne (High Order) | 5.2% (Troll) |
-| [Hunter: Marksmanship](hunter/raid/marksmanship.md) | Skyborne (Windshaper) | 4.9% (Tauren) |
-| [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | Skyborne (Windshaper) | 4.6% (Tauren) |
-| [Druid: Feral Combat](druid/raid/feral-combat.md) | Skyborne (Windshaper) | 4.4% (Night Elf) |
-| [Warlock: Affliction](warlock/raid/affliction.md) | Human | 1.7% (Troll) |
-| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 5.3% (Tauren) |
+| [Warrior: Fury](warrior/raid/fury.md) | Skyborne (Windshaper) | 6.7% (Dwarf) |
+| [Warlock: Demonology](warlock/raid/demonology.md) | Human | 1.8% (Troll) |
+| [Mage: Fire](mage/raid/fire.md) | Skyborne (High Order) | 6.8% (Troll) |
+| [Warlock: Affliction](warlock/raid/affliction.md) | Human | 2.0% (Troll) |
+| [Hunter: Survival](hunter/raid/survival.md) | Skyborne (Windshaper) | 6.6% (Dwarf) |
+| [Mage: Frostfire](mage/raid/frostfire.md) | Skyborne (High Order) | 4.8% (Troll) |
+| [Warrior: Arms](warrior/raid/arms.md) | Skyborne (Windshaper) | 6.1% (Gnome) |
+| [Priest: Shadow](priest/raid/shadow.md) | Human | 1.7% (Dwarf) |
 | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | Human | 2.0% (Troll) |
-| [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.0% (Troll) |
-| [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | Skyborne (Windshaper) | 4.6% (Tauren) |
+| [Paladin: Retribution](paladin/raid/retribution.md) | Human | 0.7% (Undead) |
+| [Hunter: Marksmanship](hunter/raid/marksmanship.md) | Skyborne (Windshaper) | 4.5% (Dwarf) |
 | [Warlock: Destruction](warlock/raid/destruction.md) | Human | 2.0% (Troll) |
-| [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | Skyborne (High Order) | 5.2% (Troll) |
-| [Rogue: Combat](rogue/raid/combat.md) | Skyborne (Windshaper) | 5.5% (Dwarf) |
-| [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | Skyborne (Windshaper) | 5.4% (Dwarf) |
-| [Druid: Balance](druid/raid/balance.md) | Skyborne (Windshaper) | 4.6% (Night Elf) |
-| [Shaman: Elemental](shaman/raid/elemental.md) | Skyborne (Windshaper) | 5.7% (Dwarf) |
-| [Rogue: Subtlety](rogue/raid/subtlety.md) | Skyborne (Windshaper) | 5.3% (Dwarf) |
-| [Priest: Smite](priest/raid/smite.md) | Undead | 1.5% (Human) |
-| [Mage: Frost](mage/raid/frost.md) | Skyborne (High Order) | 5.2% (Troll) |
-| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | Skyborne (Windshaper) | 5.3% (Tauren) |
+| [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | Skyborne (Windshaper) | 4.9% (Dwarf) |
+| [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | Skyborne (Windshaper) | 4.9% (Dwarf) |
+| [Druid: Feral Combat](druid/raid/feral-combat.md) | Skyborne (Windshaper) | 5.0% (Night Elf) |
+| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
+| [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.6% (Troll) |
+| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
+| [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | Skyborne (High Order) | 7.1% (Troll) |
+| [Rogue: Combat](rogue/raid/combat.md) | Skyborne (Windshaper) | 6.4% (Dwarf) |
+| [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | Skyborne (Windshaper) | 6.3% (Dwarf) |
+| [Rogue: Assassination](rogue/raid/assassination.md) | Skyborne (Windshaper) | 6.3% (Dwarf) |
+| [Druid: Balance](druid/raid/balance.md) | Skyborne (Windshaper) | 6.2% (Night Elf) |
+| [Shaman: Elemental](shaman/raid/elemental.md) | Skyborne (Windshaper) | 6.8% (Dwarf) |
+| [Priest: Smite](priest/raid/smite.md) | Undead | 1.1% (Dwarf) |
+| [Rogue: Subtlety](rogue/raid/subtlety.md) | Skyborne (Windshaper) | 6.4% (Dwarf) |
+| [Mage: Frost](mage/raid/frost.md) | Skyborne (High Order) | 7.1% (Troll) |
 
 ## Trinkets
 
@@ -109,15 +113,16 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Mage: Frostfire](mage/raid/frostfire.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Alchemist's Stone](https://www.wowhead.com/forever/item=13503) | [Alchemist's Stone](https://www.wowhead.com/forever/item=13503), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Paladin: Holy](paladin/raid/holy.md) | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659), [Serenity Field](https://www.wowhead.com/forever/item=272439) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
 | [Paladin: Protection](paladin/raid/protection.md) (tank) | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440), [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904) | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440), [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904) |
-| [Paladin: Retribution](paladin/raid/retribution.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| [Paladin: Retribution](paladin/raid/retribution.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Priest: Discipline](priest/raid/discipline.md) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
 | [Priest: Holy](priest/raid/holy.md) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
-| [Priest: Smite](priest/raid/smite.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Alchemist's Stone](https://www.wowhead.com/forever/item=13503) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| [Priest: Smite](priest/raid/smite.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
 | [Priest: Shadow](priest/raid/shadow.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| [Rogue: Assassination](rogue/raid/assassination.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
 | [Rogue: Combat](rogue/raid/combat.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
 | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
 | [Rogue: Subtlety](rogue/raid/subtlety.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
-| [Shaman: Elemental](shaman/raid/elemental.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Alchemist's Stone](https://www.wowhead.com/forever/item=13503) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| [Shaman: Elemental](shaman/raid/elemental.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
 | [Shaman: Enhancement](shaman/raid/enhancement.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Shaman: Restoration](shaman/raid/restoration.md) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Serenity Field](https://www.wowhead.com/forever/item=272439), [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
@@ -125,10 +130,10 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Warlock: Demonology](warlock/raid/demonology.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Warlock: Destruction](warlock/raid/destruction.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
 | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| [Warrior: Arms](warrior/raid/arms.md) | [Everlook Pathcarver](https://www.wowhead.com/forever/item=274759), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Everlook Pathcarver](https://www.wowhead.com/forever/item=274759), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) |
+| [Warrior: Arms](warrior/raid/arms.md) | [Everlook Pathcarver](https://www.wowhead.com/forever/item=274759), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Everlook Delivery Bot](https://www.wowhead.com/forever/item=274760), [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) |
 | [Warrior: Fury](warrior/raid/fury.md) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
 | [Warrior: Protection](warrior/raid/protection.md) (tank) | [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440), [Arena Grand Master](https://www.wowhead.com/forever/item=19024) |
 
 ---
-*Generated by `_reference/data/render_tier_list.py` on 2026-10-26 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70425; raid numbers: wowsims/forever at 30f67f5 (client 70450); ElliotWood/Forever fork at b7083fa (client 70425) and 2ce8265 (client 70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_tier_list.py` on 2026-10-30 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70425; raid numbers: wowsims/forever at 30f67f5 (client 70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

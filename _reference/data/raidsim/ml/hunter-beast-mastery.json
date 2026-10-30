@@ -2489,5 +2489,110 @@
   "date": "2026-10-29",
   "setting": "raid",
   "why": "confirms beast-mastery-ml-raid (+0.44% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ],
+     [
+      "Endurance Training",
+      4
+     ],
+     [
+      "Focused Fire",
+      2
+     ],
+     [
+      "Bestial Swiftness",
+      1
+     ],
+     [
+      "Unleashed Fury",
+      5
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Intimidation",
+      1
+     ],
+     [
+      "Bestial Discipline",
+      2
+     ],
+     [
+      "Frenzy",
+      5
+     ],
+     [
+      "Bestial Wrath",
+      1
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Improved Stings",
+      3
+     ],
+     [
+      "Efficiency",
+      2
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ]
+    ],
+    "Survival": [
+     [
+      "Improved Tracking",
+      4
+     ]
+    ]
+   },
+   "split": "31/16/4",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "gain",
+     "from": "Rapid Killing",
+     "to": "Efficiency",
+     "seed1": 0.005118503717472356,
+     "seed2": 0.00488420608020812,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Revive Pet",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Intimidation",
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.004851856611309158
+  },
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

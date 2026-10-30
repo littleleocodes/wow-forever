@@ -4,9 +4,9 @@
 
 *Damage from Smite and Holy Fire, carried by Discipline talents.* (a hybrid: Discipline/Holy).
 
-**✅ Recommended** for raid (the best priest spec here, or within 3% of it).
+**[Smite — Raid](../research/raid/builds/smite-open-raid.md)** (17/17/17) — [open the talent tree](https://talentsforever.com/priest/60/50203003103-30505101002-502520010002-7)
 
-**[Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/priest/60/505235231030001001-30505101002-3-7)
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Discipline/Holy — Smite), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -16,16 +16,14 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Penance** (rank 3)
-2. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
+1. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
+2. **Mind Blast**
 3. **Inner Focus**, then straight away **Devouring Plague**
-4. **Holy Fire**: keep it on the target
+4. **Holy Fire**: keep it on the target, when you have at least 40% mana
 5. **Inner Focus**, then straight away **Smite**
 6. **Shadow Word: Death** (rank 3)
-7. **Power Infusion**
-8. **Smite**
-
-**Smite** is your filler: cast it whenever nothing above is ready.
+7. **Smite** when you have at least 25% mana
+8. **Smite** when you have at least 20% mana
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -54,47 +52,49 @@ Smite in a raid keeps two burns up, **Shadow Word: Pain** and **Holy Fire**, fir
 - If healing is tight, cast **Shadow Word: Death** only in the last 20% of the boss's health, as the simulator's rotation for fighting alone does. You give up a little damage.
 - When you must move, use the instants: **Shadow Word: Death**, and **Shadow Word: Pain** if it fell off. **Holy Fire**, **Smite** and **Penance** all need you to stand still.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 597 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 611 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 603 | [21/23/7](https://talentsforever.com/priest/60/505031021030001-305151001121003-50002-7) |
-| Phase 1 BiS | 632 | [21/23/7](https://talentsforever.com/priest/60/505031021030001-305151001121003-50002-7) |
+| Pre-BiS | 613 | [17/17/17](https://talentsforever.com/priest/60/50203003103-30505101002-503520000002-7) |
+| Phase 1 BiS | 627 | [17/17/17](https://talentsforever.com/priest/60/50503000103-30515100002-502520010002-7) (ties this build) |
 
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Dreadmist Mask](https://www.wowhead.com/forever/item=16698) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Dreadmist Mask](https://www.wowhead.com/forever/item=16698) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Spellpower Goggles Xtreme Plus](https://www.wowhead.com/forever/item=15999) · *Engineering*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Dreadmist Mask](https://www.wowhead.com/forever/item=16698) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
-| Shoulders | [Theramore Shoulderpads](https://www.wowhead.com/forever/item=271953) | [Theramore Shoulderpads](https://www.wowhead.com/forever/item=271953) |
+| Shoulders | [Argent Shoulders](https://www.wowhead.com/forever/item=19059) · *Tailoring* | [Theramore Shoulderpads](https://www.wowhead.com/forever/item=271953) |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) |
 | Chest | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Sandworm Skin Gloves](https://www.wowhead.com/forever/item=20716) | [Theramore Handwraps](https://www.wowhead.com/forever/item=271945) |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Dreadmist Leggings](https://www.wowhead.com/forever/item=16699) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Legs | [Ghostweave Pants](https://www.wowhead.com/forever/item=14144) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
 | Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Alchemist's Stone](https://www.wowhead.com/forever/item=13503) · *Alchemy* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
 | Main hand | [Sageclaw](https://www.wowhead.com/forever/item=20070)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageclaw](https://www.wowhead.com/forever/item=20070)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk9oI2UUn/fNJPPyErPxc93ODovMxq3EyNRvJhtp1kOye5BFUYsQ8GaTTdZk3SahE9iql1X3sAhmtYeVXSv+waIuCvVgKfVQaC9RisaLB0UolaoHD/6jPQgik5mYUntM4zvMn/fex+/3fvObj4+OIcRAAwMSMAkVaMBlgKsAbwN8AMAj3Spzq+Og/xlFjAX0S6Ti8ougbYVJwc3XgRT8ej1GCr7RiZGKK/Og/RAlFVfnQfsuSgr+8o7bs3UNSMXPvIUqLnwE2jWVFPx23q1+0e1Z7MRIxpUqqfjjHGjtO0jBP667lQ/nDsXvi7WriS9bILaLE6+8Cy8Du1KdBbZdvAnsp9O3QH1/DhbOtqobcKV6JtIfLAfLbDQt0iJlCdsSKSGEZaZE2kpbQliWbQmRMtNCCLvNoMPCm+z3CB2mkK5SIIH45qW4SgGSzZTDa3yy0Lj4VL3RNGxhP2BawhTjp4xzlULt6XLJqE8bhVKpXDKKzxrNStmYrjcLzWq9ZjjlwvS5ipFwymXDmao2y2ap4Zi9sumVxy449dq9OulIwYSMr33/CFd0dkris7AHVmRMe9CwY3Q3P063xcMUsr3BW3mKJaMY5OxhSQ+SQswSviatPH9+CJxG7DtJ1QMk41sOeboEsXMd+NVhKHKCjiZHUOahCz0juAxIscbSzr/e4Jp+xD7cZ9lzzWKeR/xPqeBLn0zw2hAY96yztvM4f2YIVvWmXn+MT+0Dlhkw2C5lLf1+OsHje916e/KQ69ai5HaSnBKj/pJWnt8ahmMeogd5Zi8NW4x2U3I/lfZT3q/lk/U8xfArhU8NgasnZwjX8vwu/dg+pPtyh/1mFT/N84tD8BW62w2++tej+7rYGjCa5+LfZvhz/wWzTg4Y7AhF4kRouwPuzILu3zX5Z9aGX5n9gix142RuFRSdkRT/m4XchHT5fO7ozRtufJ49fr4b32TtDaYpRja5xKT/JZq53tOBxj0fHxhOpnt94r3caT+Rm3RPQDeg+yJtZJMyLo2c2XVQEjAOOTgLE/AkVKABMzDD/hkAi2o3LA==); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk9oI1UYn+/NJPPyJWbjc93ODovMxq3EyNQ3k4006yHZPciiqEUIeLPJJmuybpPQCRj1UrWHIphqpIXWiiIWtSjUg6X0IrSXFIvWiwelUJSqR/9gexCKzJ+YUntMs9/hzcz3vfd+v+83vxkeXqAQAQU0iMEolKAGEwBTAB8AfALAQk6V2NVhUP8OUxrxqQ2U6dproOwFUaKHLUCJfrcVQYm+ux1BmX61CMrPYZTp+iIoP4ZRoptOdW8aUKY7M85CmS5/Bsq0jBL9YdHe4esZe5x8xx5XnH1+WQClfQ9K9K9ZO/npwpnoQ5F2OfZNE/h+fuTND+ENIJPlFpD9/DyQX68ugfzxAixfb5Z3YbJ8LdTtLANrZDDJkzxhcNPgCc65oSd40kganBuGaXCe0JOcc7NNYJsEfyJ/hvAsBlQZfTFK33sxKqMPRT1hsQobzdVuP1et1TWTm4/oBtf58BXtRilXeb5Y0KrjWq5QKBa0/EtavVTUxqv1XL1crWhWMTd+o6TFrGJRs8bK9aJeqFl6p6y75aFbVrXyoIoqRX9MpG/vPMEklVwRWAuOwfKUbvYadgjvZxfxrmgQA6bbeDOLkXiY+hl5XFD9KCExuKdJM8te6QOnAfNelFUfivR9C11d/HR7FthUPxS5hOfjA1RkgVsdI9gMUDKGktZ/3mCKes4822XZcc1KloW8VynR178YYZU+MO5YZ+PgafZCH6zqdr31FBs7ASzVY7Ajyhrqw3iJRY+79e74GdutecGeiWKCD3pLmlm21A/HPIaPstRxGiYfdFJiN5X0Uu6n5ZF1PUXotxIb6wNXV84A3ciy+9QLJ5Duyh30Jsv0yyy73QdfUft3Q9/658kTXWz0GM118R8N9vL/wYzLPQY7h6EoIjXtBg9aoHpXRfyNtOF3Yr4qCk5czqyDpBIUoockYCeEiZuZ8/NzdmymL9504vu0uUsUSUvHV4lwR6Ke6dydajzw+anhpJzxmY8yV71EZtQ+As2B8yDspuMiXR24duSkxGEYMnAdRuBZKEENGtAg/w4ASaY3dw==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk1MK1UUnnNn2rk95fHq9fmYN3kx8+rT1Jqpd6bUAC5aWBESlZhM4k5aWmwR2oZpFH8WmLAwJhYlBgNiUCPxJ5qwsSFuMLCpxmhXLnRDMKgLFxoDLEzU3P6AKSxL31nc3t5v7j3f+c43k4s3KQRAAwNCMAFZKMICwKsA7wF8DMB66igR6ADoR1coDXj059BL/31ZO/SjQg/eBlToX2+J8Z1aAFW6swnaz72o0t1N0H7qRYX+/r5AD5cAvfSrvNin0q3PQFtSUaE/bgrwm/ojlVoAFfrmjjjml3XQqneLs1cE9Mn61eBDgWou9F0Z+HFq/PUP4DUgi7llIMepNSC/Dn8K6kfrsDVazu3DYm6k56yuBHxJbse4zaOcRy0eNaM8xmMWtzi3zRiPxmxeD7tKoEb8B+TIj9fQp6voCVH67vNBFT0om1GXLQObSBZnni4US4bN7UdMPmjaA0PGZDaZfyaTNgpzRjKdzqSN1AtGKZsx5gqlZClXyBtuJjk3mTVCbiZjuLO5UsZMF12zBZsNODLtFvIP6hG8j93CK0E/+uwGhbKDgXAv9TIyJuleVJBYvMmu7LDZLnBqiOGjew57qQvp+ux7UNU9KNMNF1Gn6A15aW0FmKKTIYlttLfB4qY92GEOjyJnEbwR7qMy8023vCC4oMIjMRfvCl8VLUlJQhuU+/n9p45hmn7dvnZWQstLFYfluyBfQzGZ7p08wZ49LxXvdL5Gnd8+zha60Zib7crbsZbyFYdZ+sN4mwXb35+2LdHTZpWdLrMea1KwuCsmIUK/V9i9F1R1SrHiML/esJBKv3DYTBdaSsV3hr7x92MXGsjqcLaGgf6cZy+eT2b1dzjZdewJIlJbFHiyDHrzV5N/I1X4g9ivyFI9+hO7oOgEpeA/xCcWpIWpxI21VRFfx29N1eOHuL1PNMWIh7eJdEeilGjNLjUe+PzS8gzWxyc/TAw3FxIT4gqyCvU/0n48LNPtvpH/3VQ4DEACRmEcnoIsFGEe5sl/AwDNbRB+); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk9oI2UUn/fNJPPlpduNn+t2dlhkNq4SIxO/mXSkXQ/J7qkU1CIMeLNJk5rUNgmdgFEvVXoQwVQiLbRWKmLxDwq9GEovQntJsWi9eFCEolQ9KmJ7EIrMJGkl7THNvsObb97j+97v/d5vhg9vUgiBAhpEYBxyUII5gLcAPgT4FID1eVniZodAPb5CacinVlCmW2+CchhEiZ7UACX6/V4IJfr+fghl+vU6KL/2o0y310H5qR8luutlDxcAZfrzordRphtfgLIgo0R/XHdP+GbR9fPvub7unfPbKiiNB1Gify+5wc9Wr4afCDXykW+rwI/SY+98BG8Dmc/XgBylV4D8fvdzkD9ZhY2Rav4A5vP3+s46S8IWuW1xi8c55waP63FuGZbBOeembnHTMt0w52aDwD4J/kL+CeI1DKgy+iKUfvBKWEYfinrcYTVg46nS9IvFUlkzufmUzod1c+iONpFLFV7KZrTirJbKZLIZLf2qVs5ltdliOVXOFwuak03NTuS0iJPNas5MvpzVMyVHb6f1Zjo25RQLj6sxfITdwivhIAbMJoSqjaFoP/UzMiqofpSQGLyFrmqzmR5gapIRoDs2e70H5QbMh1BWfSjSNQdRpeiP+On+EjBJJXcEttY5BoPr5nCXMTyNnMXwRnSAiiww1daCiwUlHrMcfCB61R1JWnC5QXGQP3qqGKao181rZy20tVS3WaEH9DUZE+nO8XPs5fNU8W7Xa/a59yyb68VgbnYyb1pt5us2M9Qn8TYLd34/HVvip8Oq2j1GPdqCYHDHXUQI/U5iD1/Q1SnEus2CalNCMv3KZtM9GCl1/zP03X+fuVBARperNQX0V4W9dr6YMdjlYtexL4xITbfB4xqoraci/kEa8Ccx3xAFzwaT2yCpBIXwCQm4AWFuMnljZdm13cStSc9+SJgHRJG0RHSTCPfFysn26lLtsS8vrc6w55//OHm3FUiOu5eQZfBehINEVKSbA/f+d1fhMARJGIExeAFyUIIKVMh/AwBg9BCL).
 
 ## Other builds of this spec
 
-- [Smite — Raid](../research/raid/builds/smite-open-raid.md) (21/23/7, 597 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/505031021030001-305151000221003-50002-7)
+- [Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md) (31/17/3, 594 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/505235231030001001-30505101002-3-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

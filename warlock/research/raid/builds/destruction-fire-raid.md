@@ -69,20 +69,17 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 10** for `fire-destro-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever fork 2ce8265 (client 70291)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 7** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
-| 2 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 613 | -0.8% | 689 | -1.5% | 8 s |
-| 3 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 613 | -0.8% | 685 | -2.1% | 2 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -5.1% | 657 | -6.1% | 5 s |
-| 5 | *DS/Ruin* | community simulator | - | 578 | -6.4% | 650 | -7.2% | 3 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 536 | -13.2% | 596 | -14.9% | 5 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 513 | -17.0% | 567 | -19.0% | 4 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 509 | -17.6% | 572 | -18.3% | 4 s |
-| 9 | *Affliction* | community simulator | - | 507 | -18.0% | 559 | -20.2% | 4 s |
-| 10 | *Demonic Pact* | community simulator | - | 503 | -18.6% | 562 | -19.7% | 4 s |
+| 1 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 20/11/20 | 674 | +0.0% | 756 | +0.0% | 1 s |
+| 2 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 668 | -0.9% | 749 | -0.9% | 2 s |
+| 3 | *SM/Ruin* | community simulator | - | 664 | -1.5% | 742 | -1.8% | 3 s |
+| 4 | *Aff (Wrack)* | community simulator | - | 649 | -3.7% | 722 | -4.5% | 3 s |
+| 5 | *Destro* | community simulator | - | 600 | -10.9% | 662 | -12.4% | 2 s |
+| 6 | *Demo (Shadow Brand)* | community simulator | - | 581 | -13.8% | 658 | -13.0% | 3 s |
+| 7 | *Demo (Fire Brand)* | community simulator | - | 568 | -15.7% | 633 | -16.3% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -102,7 +99,7 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
   13. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 5)
   14. only with 20s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
   15. only with 10s or more of the fight left: if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 7 passes, the last 2026-10-11, 10 changes to the base rotation; third-seed check: open winner 707 -> 709 DPS (+0.2%), destruction-fire-raid 691 -> 697 DPS (+0.8%), sim preset: DS/Ruin Pandemic 24/11/16 661 -> 667 DPS (+0.9%), opt-fire-destro-raid-raid-dps 663 -> 693 DPS (+4.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-28, 11 changes to the base rotation; third-seed check: shadow-bolt-hybrid-fire-open-raid 768 -> 767 DPS (-0.1%), sim preset: DS/Ruin Pandemic 24/11/16 714 -> 709 DPS (-0.6%), destruction-fire-raid 754 -> 749 DPS (-0.6%), opt-fire-destro-raid-raid-dps 714 -> 745 DPS (+4.3%)):
   1. drop: cast Shadowburn (+0.8%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
@@ -113,6 +110,7 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
   8. threshold 3.5 -> 5.25: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%, pass 7)
   9. only above 10% mana: cast Talisman of Ephemeral Power + threshold 10% -> 15%: if mana % ≥ 10%: cast Talisman of Ephemeral Power (+0.3%, pass 7)
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + move down below 'if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption': if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 7)
+  11. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.3%, pass 8)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -121,16 +119,15 @@ Before the pull: at -1.5s: cast Life Tap.
 | 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.3 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.2 |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.5 |
-| 7 | if mana % < 10%: cast Life Tap | 7.0 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 11 | cast Shadow Bolt | 14.4 |
+| 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
+| 6 | if mana % < 10%: cast Life Tap | 7.2 |
+| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
+| 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 10 | cast Shadow Bolt | 14.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn, cast Eureka! (its condition never held in these fights); cast Conflagrate (needs the Conflagrate talent).
 
 Damage by ability:
 
@@ -138,9 +135,9 @@ Damage by ability:
 |---|---|
 | Shadow Bolt | 52% |
 | Corruption | 18% |
-| Bane of Agony | 18% |
-| Immolate | 12% |
-| Shadowburn | 1% |
+| Bane of Agony | 17% |
+| Immolate | 11% |
+| Demonic Rune | 2% |
 | Searing Pain | 0% |
 
 ## Notes

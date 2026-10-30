@@ -49,7 +49,7 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**4 of 6** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -57,8 +57,7 @@ The Survival build the machine-learning talent search found in a full raid (ever
 | 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 380 | -3.9% | 801 | -4.1% | 0 s |
 | 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 357 | -9.6% | 796 | -4.8% | 0 s |
 | 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 275 | -30.4% | 797 | -4.7% | 103 s |
-| 5 | `beast-survival-open-raid` | ours | 16/11/24 | 267 | -32.4% | 823 | -1.5% | 120 s |
-| 6 | *SV Melee* | community simulator | - | 215 | -45.4% | 672 | -19.6% | 122 s |
+| 5 | *SV Melee* | community simulator | - | 215 | -45.4% | 672 | -19.6% | 122 s |
 
 ## Rotation (community simulator, training dummy)
 

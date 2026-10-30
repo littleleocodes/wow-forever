@@ -4,17 +4,17 @@
 
 *Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames, points in all three trees.* (a hybrid: Affliction/Destruction).
 
-**[Shadow Bolt hybrid — Raid](../research/raid/builds/shadow-bolt-hybrid-open-raid.md)** (20/11/20) — [open the talent tree](https://talentsforever.com/warlock/60/25300020035-0050203001-0550105103-7)
+**[Shadow Bolt hybrid — Raid](../research/raid/builds/shadow-bolt-hybrid-open-raid.md)** (21/11/19) — [open the talent tree](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (DS/Ruin — Demonic Sacrifice + Ruin), which stays below as the alternative. A model of the beta, to check at launch.
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Fire: [Shadow Bolt hybrid — Fire](../research/raid/builds/shadow-bolt-hybrid-fire-open-raid.md) (20/11/20, 700 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7)
+- Fire: [Shadow Bolt hybrid (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (20/11/20, 756 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/25500000035-2300203001-0550304003-7)
 
 ## How to play
 
-**Before the pull:** **Life Tap**.
+**Before the pull:** **Amplify Curse**, **Life Tap**.
 
 **Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
 
@@ -22,16 +22,16 @@
 
 1. **Curse of the Elements**: keep it on the target
 2. **Life Tap** when your mana is below 5%
-3. **Bane of Agony**: keep it on the target
-4. **Corruption**: keep it on the target, until the last 10 seconds of the fight
-5. **Immolate**: keep it on the target, until the last 20 seconds of the fight
-6. **Shadow Bolt**
+3. **Amplify Curse**
+4. **Bane of Agony**: keep it on the target
+5. **Corruption**: keep it on the target, until the last 10 seconds of the fight
+6. **Immolate**: keep it on the target, until the last 20 seconds of the fight
+7. **Shadow Bolt**
 
 **Shadow Bolt** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Shadowburn**: in the last 1.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
 - **Searing Pain**: in the last 3.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -66,14 +66,14 @@ The Shadow Bolt hybrid is the classic DS/Ruin warlock (**Demonic Sacrifice** plu
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 723 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 795 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 696 | this build |
-| Phase 1 BiS | 739 | this build |
+| Pre-BiS | 761 | this build |
+| Phase 1 BiS | 794 | this build |
 
 **The gear** (average item level: Pre-BiS 62.4; Phase 1 BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -97,13 +97,14 @@ The Shadow Bolt hybrid is the classic DS/Ruin warlock (**Demonic Sacrifice** plu
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9oK1UUxnPu3GRuznu28+5TOh0V5gX6iIEJdyaMTbrJtKviqrgSCtqkSU2CJCGTRcVNxYIimqIRpbFQUYtW/FNcaHFjLRTSjXTlwlIslaKIYEHpUmQm01baLlykeBY3J+ebM/f3zblw8REGCqigQxxmoAR1WAB4BeA9gI8B+G1fJZ6aBu0LZJIS1ZoYYatV9fgWUnb0DiBlv73lre/uKRhhu1X15wGU2fYaqPsDKLHtKlJ2vAQYYVt+l8w2PgV1SUbKflzzGlu/K0jZV3ve+sa3Csrsj89B7d5Fyv5823tgfWUwZindcvz7FojT/NTr78OrQBbLbwI5zXcg/Mv46hp8AvJHK7Ax2SpvwAeVQ1gsT9y+MOfAN+SeZaeEEJYQKdsQwhaWSAlhGsK2hSlsU6S6RNojt47IOsO7yLQIUnbSgpiMYZQM28UHUdbCKLH16VgUZQwbZtJ2+aPaw3gnNogPfAmIlG29PMWJEva7vdzSBMb5fbyTGGQRTp4Iaf77TNv1S5STfFAatUc0ikRVeRv407n6c8/U6k3dEtbjhikMYY3ps6Vc9dliQa819FyhUCzo+ef1ZqmoN2rNXLNcq+puMdeYLelxt1jU3bzRyJULxplo9MRkxa1VH9PM/wiVFiOeZ+U0z6lGxkI9uz3w87ak7dv9ug3XyalAfuk14C9cMiYyhjXaV2PDqCQGmOR/1ghSJPZIMDSO2vlQeUzTcSjxEKNcrnjyd9Ma65Ag6/3wlctj8GjTfaUdQ8GTOJwYYpSzigf30w5o0Q4J0isTEq4WSNfjjd4w3sEF3sFVPCvAO9gBXrlE551hs690vWn+1b5+r0z/91IW23B+ivZ3QJV+JV04IdaLUsiPjNMhDCNIdeJA7G8S9YqhhTlnuLPsxW723pwfP2StQ6JSPZvYJKH/JZrOWXajcf+zG9sn469PfuiMBwVnxru8lsH/EzrMJiS2OTTxrztOQBocmIQpeApKUId5mCf/DADWZGsg); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoM0UUx/NmN9nJ+z7b/eZTul0VtoGWGNgwu2Ft0ku2PRVPxZNQ0CZNahIkCdkIFS8VA4poC40VGgsVtWhFJXjQ4kkLhRRBevJSgkUpihcLSo9FdrNNpe3BQ4rv8Pbt+zM7v/++gcEnKMiggAZRWIACVGEF4E2ADwA+BWD3PZW4ahLUNlJBDqsvY4hul5XTeyjSi3VAkf7xrpvfP5IxRA/Lyq9DKNH9HVCOh1Cg+2UU6ekaoES7G+Auk2j7c1DWJBTpDxvQz42mm78+klGif34JSuchivSv99zm7tZwxJQ7xeiPq8DPs3PvfAhvAWkU14GcZ1sQ/G16ewc+A+mTLWjPrhbb8FHpBBrFmftX7mz4loyZVoJzbnKesHTOLW7yBOeGzi2LG9wyeKJDhCNy7xeyS/EhUjWEIj1bhYiEQRR0y8FHUVKDKNDd+UgYJQzqRtxy2JPq4/ggMoyPfAWIIv3ujTlG5KC32q1NlWOUTeCD2DANMfJMQPW+Z1iO1xIZyfqtSWtcFZEoCmsCez5TfemFSrWumdx8Wje4zs0pbbGQKb+Yz2mVmpbJ5fI5LfuKVi/ktVqlnqkXK2XNyWdqiwUt6uTzmpPVa5liTr8U9Z4YLzmV8lOq8R+hknzc9SyfZ5mokqlAz24PvL8sbnl2v2nCbXLCl19/G9ir14zxlG5ODtTYKMqxISp4vzWEIhJr3B8aQ7U/VBZRNRyJPUZFJpVc+ft5lbaIX/UebOv6GFza5EBpp5CzOI7GRqjIaMmF+/kA1HCL+OWNCXFH9aXb8SbvGK97hde9iWf6eN0DYKVrdO4ZNgZK15vm383b90oNfi+50YT+KTo+AEX4nXTgjJivCQEvUnaLUAyhqBEbIhck7DYDK0v2aGvTjcP02JIXP6XNE6KIWjq2RwL/S9Tty+pOY+KLO9sn5eVnP7an/Ya94N5em+C9BE7SMYHujcz865LjkAQbZmEOnoMCVGEZlsk/AwC8Tmrv).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9oK1UUxnPu3GRuznu28+5TOh0V5gX6iIEJdyaMTbrJtKviqrgSCtqkSU2CJCGTRcVNxYIimqIRpbFQUYtW/FNcaHFjLRTSjXTlwlIslaKIYEHpUmQm01baLlykeBY3J+ebM/f3zblw8REGCqigQxxmoAR1WAB4BeA9gI8B+G1fJZ6aBu0LZJIS1ZoYYatV9fgWUnb0DiBlv73lre/uKRhhu1X15wGU2fYaqPsDKLHtKlJ2vAQYYVt+l8w2PgV1SUbKflzzGlu/K0jZV3ve+sa3Csrsj89B7d5Fyv5823tgfWUwZindcvz7FojT/NTr78OrQBbLbwI5zXcg/Mv46hp8AvJHK7Ax2SpvwAeVQ1gsT9y+MOfAN+SeZaeEEJYwU7YhhC0skRLCNIRtC1PYQqS6RNojt47IOsO7yLQIUnbSgpiMYZQM28UHUdbCKLH16VgUZQwbZtJ2+aPaw3gnNogPfAmIlG29PMWJEva7vdzSBMb5fbyTGGQRTp4Iaf77TNv1S5STfFAatUc0ikRVeRv407n6c8/U6k3dEtbjhikMYY3ps6Vc9dliQa819FyhUCzo+ef1ZqmoN2rNXLNcq+puMdeYLelxt1jU3bzRyJULxplo9MRkxa1VH9PM/wiVFiOeZ+U0z6lGxkI9uz3w87ak7dv9ug3XyalAfuk14C9cMiYyhjXaV2PDqCQGmOR/1ghSJPZIMDSO2vlQeUzTcSjxEKNcrnjyd9Ma65Ag6/3wlctj8GjTfaUdQ8GTOJwYYpSzigf30w5o0Q4J0isTEq4WSNfjjd4w3sEF3sFVPCvAO9gBXrlE551hs690vWn+1b5+r0z/91IW23B+ivZ3QJV+JV04IdaLUsiPjNMhDCNIdeJA7G8S9YqhhTlnuLPsxW723pwfP2StQ6JSPZvYJKH/JZrOWXajcf+zG9sn469PfuiMBwVnxru8lsH/EzrMJiS2OTTxrztOQBocmIQpeApKUId5mCf/DADWemsg); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoM0UUx/NmN9nJ+z7b/eZTul0VtoGWGNgwu2Ft0ku2PRVPxZNQ0CZNahIkCdkIFS8VA4poC40VGgsVtWhFJXjQ4kkLhRRBevJSgkUpihcLSo9FdrNNpe3BQ4rv8Pbt+zM7v/++gcEnKMiggAZRWIACVGEF4E2ADwA+BWD3PZW4ahLUNlJBDqsvY4hul5XTeyjSi3VAkf7xrpvfP5IxRA/Lyq9DKNH9HVCOh1Cg+2UU6ekaoES7G+Auk2j7c1DWJBTpDxvQz42mm78+klGif34JSuchivSv99zm7tZwxJQ7xeiPq8DPs3PvfAhvAWkU14GcZ1sQ/G16ewc+A+mTLWjPrhbb8FHpBBrFmftX7mz4loyZVoJzbnIjYemcW9zkCc4NnVsWN7jFeaJDhCNy7xeyS/EhUjWEIj1bhYiEQRR0y8FHUVKDKNDd+UgYJQzqRtxy2JPq4/ggMoyPfAWIIv3ujTlG5KC32q1NlWOUTeCD2DANMfJMQPW+Z1iO1xIZyfqtSWtcFZEoCmsCez5TfemFSrWumdx8Wje4zs0pbbGQKb+Yz2mVmpbJ5fI5LfuKVi/ktVqlnqkXK2XNyWdqiwUt6uTzmpPVa5liTr8U9Z4YLzmV8lOq8R+hknzc9SyfZ5mokqlAz24PvL8sbnl2v2nCbXLCl19/G9ir14zxlG5ODtTYKMqxISp4vzWEIhJr3B8aQ7U/VBZRNRyJPUZFJpVc+ft5lbaIX/UebOv6GFza5EBpp5CzOI7GRqjIaMmF+/kA1HCL+OWNCXFH9aXb8SbvGK97hde9iWf6eN0DYKVrdO4ZNgZK15vm383b90oNfi+50YT+KTo+AEX4nXTgjJivCQEvUnaLUAyhqBEbIhck7DYDK0v2aGvTjcP02JIXP6XNE6KIWjq2RwL/S9Tty+pOY+KLO9sn5eVnP7an/Ya94N5em+C9BE7SMYHujcz865LjkAQbZmEOnoMCVGEZlsk/AwC8ZGrv).
 
 ## Other builds of this spec
 
-- [DS/Ruin — Demonic Sacrifice + Ruin](../research/raid/builds/ds-ruin-raid.md) (22/11/18, 716 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/15500020135-0050203001-0550005003-7)
-- [Affliction/Destruction — Shadow Bolt / Ruin / Shadowburn](../research/raid/builds/destruction-fire-raid.md) (22/11/18, 689 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-0050203001-0550004103-7)
+- [DS/Ruin — Demonic Sacrifice + Ruin](../research/raid/builds/ds-ruin-raid.md) (22/11/18, 789 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/15500020135-0050203001-0550005003-7)
+- [Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-sb-raid-raid-dps.md) (22/11/18, 786 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550005003-7)
+- [Affliction/Destruction — Shadow Bolt / Ruin / Shadowburn](../research/raid/builds/destruction-fire-raid.md) (22/11/18, 749 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-0050203001-0550004103-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at 2ce8265 (client 1.60.1.70291)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

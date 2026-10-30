@@ -53,8 +53,8 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 |---|---|---|---|---|---|---|---|---|
 | 1 | *BM* | community simulator | - | 407 | +0.0% | 749 | -2.4% | 25 s |
 | 2 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 388 | -4.7% | 768 | +0.0% | 38 s |
-| 3 | `beast-marks-open-raid` | ours | 27/21/3 | 386 | -5.1% | 757 | -1.4% | 5 s |
-| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 379 | -6.9% | 715 | -6.9% | 22 s |
+| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 379 | -6.9% | 715 | -6.9% | 22 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/20/3 | 373 | -8.3% | 759 | -1.1% | 39 s |
 
 ## Rotation (community simulator, training dummy)
 

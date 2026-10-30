@@ -2,7 +2,7 @@
 
 [Mage](../README.md) > [Raid (group)](README.md) > Frost
 
-**[Frost — Raid](../research/raid/builds/frost-ml-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/mage/60/0531005003000301--05350003012130025-7)
+**[Frost — Raid](../research/raid/builds/frost-ml-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/mage/60/05512030031000001--2535300301203012-7)
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Frost — Winter's Chill), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -11,16 +11,15 @@
 **Press the first one that is ready**, top to bottom:
 
 1. **Arcane Missiles** (rank 7) when Missile Barrage is active
-2. **Ice Lance** when Fingers of Frost is active
-3. **Frostbolt**
+2. **Arcane Blast**: keep it on the target
+3. **Ice Lance** when Fingers of Frost is active
+4. **Frostbolt**
 
 **Frostbolt** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Frostbolt**
-- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -55,14 +54,14 @@ Frost in a raid is a **Frostbolt** caster that cashes in two procs: free **Arcan
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 544 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 588 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 579 | [21/0/30](https://talentsforever.com/mage/60/05212050031001001--25353000110030124-7) |
-| Phase 1 BiS | 594 | [21/0/30](https://talentsforever.com/mage/60/05212050031001001--05353002110030124-7) |
+| Phase 1 BiS | 594 | [21/0/30](https://talentsforever.com/mage/60/05212050031001001--05353002010030125-7) |
 
 **The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.5; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -86,12 +85,12 @@ Frost in a raid is a **Frostbolt** caster that cashes in two procs: free **Arcan
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElV1oHFUUx/fcmezePS3Jeqt1es3DbTElLh25M5staR7MJE9qkASfxAft3d1JdiTMLDOTfrxILBUkYAtalMYIWgx+1Q/6IO2CLwFhLSh50Yp9CdWi+FJBKL4ocmd3TaGvNh6Gy7nnf//M75wZZnCYQgksEDAKR6EJLVgGeAXgHYAPANjuTCVaHQd+nVJaovwYFmj7FFg3d6FJb7wJaNLfzun1rc0S5mkntH4axALdWAfr+iAadCNEk948C1ign3VtBfr5RbDOFtCkP65r59V39frFZglN+tfaEBborU/B6uxBk/7xhpY+XBs6cKjUCUa/PQPydm3u1QuwAuR08BqQ27VVIL9MfQT0/TW4uAJngi04HUzv3m7MgzZ5WFZdx5VVKSuOlPqybbdaqVaklI4jZUU67liHwCbZdYP8kGcfA3sZVKPhN4Qr3cO2PGK74xNiKq6r0BdPBUkSLPqJiEKh+jsxreJYLfiiFUf1Q2JhScXaXjsp1FKsnkhmwuh4KJJIKFFbChYb4niQNqOl9C5/6B/zY1FXSZqIIOX70WJ7sXjVzKNJv7liYfES9FI+gAb9eZatA1Oqtfh81Eq7uI603cqEqDdVuOA3RBSLbi+1kyJt+iKOUpUGUSgSX8X1phhNfF/Mx1GS2rEKGnZft7v6oy8kUfgI9/AwH0NetqjBiu2M4csrFi+uEp2e+24G95bv19rGv9oAGggu7+lsmHO8rzxETUZqOV7AATTG5YjuotR5jJmcTORYhTs4yg5m54ztc64cyUoDjDzZL1UTbaWvP8eWd2QAD2UE+TsIZJL1durPOfYA39N/Mm+3rax869oMe/FuMOn+12D7sFQe7IHl0URS6U7mq1m2AjsBMILDZa4Bns1xdokMUWN7SI4jM5hrs5bxK+nA78R9ychlMeZd0K8KEgoH/iZFXcotz3v7Vs/r+Hpy/3wW30+6W8QyxWT5Msn9L5F6/eyexsFP7tl9jmTr0+95U72Cd1R/6M9DtsltTZYNevnB6Tv+BxLGwYPHYQ6egSa04AScIP8MABKIR/8=); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElV1oHFUUx/fcmd29e1uS9Vbr9JqH22LKunTkzmy2bPPgTvKkBknwSXzQ3t2dZEfCzDIz248XiSWCBGyhrUJjBSkGv+oHfZB2wZeAsCpKXrRiX4JaFF8iCMGnIHd21wTyauJhONz7/9/D/M6ZYYaMYMiDARwKcBqa0IIFgNcA3gF4H4AeTFyk3AqwexjjPGZnSBZ3LoBx/wDR8dZlIDr+46rKb63lSQZ3feOXIZLFqytg3BsiGl71iY7vXwKSxZ/2yrL4s5tgXMoSHf+0oiq/eUPlxSsqf76WJ1m88QkY3UNEx3+9qcQPrg8fO5HveoXvLoLYrM28fgOWAC16lwFt1pYB/TbxIeD3rsPNJbjorcOiN3lwuzEHOuhRUbYtW5SFKFlCqMs0RblULglhW5YQJWHZY10Ea+jAz+jHDP0I6KsgGw23wW1hnzTFKdOujPOJsC59lz/jRZE370Y88Lkc7PikDEM55/JWGNRP8Lm2DFV57TyX7VA+FU35wVmfRwGXvNb25hv8rBc3g3a8q953z7ghr8sojrgXs6PEoIdJ7ms9Q3T87R2D5G5Bf8nSRMO/TtMVoFK25l8MWnEP1xKmXRrn9ab059wGD0Le66V2nsdNl4dBLGMv8HnkyrDe5IXIdflsGESxGUqvYQ58s+c//lIU+I8xh5xkY4QVDazRXCdh+OKOwXLLSC2vfj9FDhcfVN7qv16aaARs1vfpCGPkgeIw1imqpViWpIlWEaOqi3z3CaozNJ6iJWaRAj2enNO2z9liNJHSFD09kMqRKsVXXqAL+zKARxKCzA4CESW9Xfh7hj7EDg2ezNsdI5E37k7Rl3eDCfu/BjtC8sWhPliG6ASVepP5cpouwX4AjJKRIlMAz6cYvYWGsbY9JMsSCczdaUP7HXXhT2S/oqWSGHNuqFeFIAzHtlBOSamFWefI8jUVX1WPzibxQ9VeR4bOq8XbKPW/ROwMVnsaxz/es/ucSvKz7zoTfcE5rT701yDZpNarRQ3ffnhyx/9AQAUceBJm4DloQgvOwTn0zwAxdUd7).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElV1oHFUUx/fcmezePS3Jeqt1es3DbTElLh25M5staR7MJE9qkASfxAft3d1JdiTMLDOTfrxILBUkYAtalMYIWgx+1Q/6IO2CLwFhLSh50Yp9CdWi+FJBKL4ocmd3TaGvNh6Gy7nnf//M75wZZnCYQgksEDAKR6EJLVgGeAXgHYAPANjuTCVaHQd+nVJaovwYFmj7FFg3d6FJb7wJaNLfzun1rc0S5mkntH4axALdWAfr+iAadCNEk948C1ign3VtBfr5RbDOFtCkP65r59V39frFZglN+tfaEBborU/B6uxBk/7xhpY+XBs6cKjUCUa/PQPydm3u1QuwAuR08BqQ27VVIL9MfQT0/TW4uAJngi04HUzv3m7MgzZ5WFZdx5VVKSuOlPqybbdaqVaklI4jZUU67liHwCbZdYP8kGcfA3sZVKPhN4Qr3cO2PGK74xNiKq6r0BdPBUkSLPqJiEKh+jsxreJYLfiiFUf1Q2JhScXaXjsp1FKsnkhmwuh4KJJIKFFbChYb4niQNqOl9C5/6B/zY1FXSZqIIOX70WJ7sXjVzKNJv7liYfES9FI+gAb9eZatA1Oqtfh81Eq7uI603cqEqDdVuOA3RBSLbi+1kyJt+iKOUpUGUSgSX8X1phhNfF/Mx1GS2rEKGnZft7v6oy8kUfgI9/AwH0NetqjBiu2M4csrFi+uEp2e+24G95bv19rGv9oAGggu7+lsmHO8rzxETUZqOV7AATTG5YjuotR5jJmcTORYhTs4yg5m54ztc64cyUoDjDzZL1UTbaWvP8eWd2QAD2UE+TsIZJL1durPOfYA39N/Mm+3rax869oMe/FuMOn+12D7sFQe7IHl0URS6U7mq1m2AjsBMILDZa4Bns1xdokMUWN7SI4jM5hrs5bxK+nA78R9ychlMeZd0K8KEgoH/iZFXcotz3v7Vs/r+Hpy/3wW30+6W8QyxWT5Msn9L5F6/eyexsFP7tl9jmTr0+95U72Cd1R/6M9DtsltTZYNevnB6Tv+BxLGwYPHYQ6egSa04AScIP8MABKIR/8=); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVV1oHFUU3nNndvfubUnWW63Tax5uiynr0pG7s92yzYM7yZMaJMEn8UF7d3eSHQkzy8xsf14klggSsIW2Co0VpBj8qz/0QZIFXwLCqih50Yh5CWpQfIkgBJ+C3NldE8iriYfhcM733Y/5zplhhgxhyIIBHHJwARrQhFmA1wDeAXgfgB6NWaTYMrB1jHEWs4skjdtXwdg8QnS8cwOIjv+4pfJbq1mSwh3P+GWApPHKIhjrA0TDKx7R8eZ1IGn8aVeWxp/dA+N6muj4p0Wl/OYNleduqvz5apak8dYnYHSOER3/9aYCP7gzeOpMtuPmvrsGYrs6+fpdmAc0594AtF1dAPTb6IeA37sD9+bhmrsBc+7Y0d3BbGijR0XJKliiJESxIIS6TFOUiqWiEJZqi6JglToIVtGRn9GPKfoR0FdB1utOnVvCOmeK86ZVHuGjQU16Dn/GDUN3xgm573HZ7/iYDAI57fBm4NfO8OmWDJS8eoXLViCfCsc9/5LHQ59LXm25M3V+yY0afivap/eci07AazKMQu5G7CQx6HGS+VpPER1/u2yQzH3olSxJNPzrBF0EKmVz5kW/GXXtFoRpFUd4rSG9aafO/YB3Z6le4VHD4YEfycj1PR46Mqg1eC50HD4V+GFkBtKtm33e7PKPvxT63mPMJufYWcLyBtZoph17+GLZYJkFpMpb34+T4/kHFbfyL5ckGgGL9Xg6xBh5ID+IdYqqCZYmSaKVxbCaItt5guoMjSRokRVIjp6Oz2m75ywxHENJip7uQ6VQSfHNF+jsoSzgkdhBao8DEcazXf17kj7EjvWfzNttI4a31sbpy/uNCeu/NnaCZPMDPWMpohNU7G7mywk6D4dhYJgM5Zky8HyC0ftoEGu7SyoURGxmbcLQfkcd+BNZr2iJOM7ad9WrQhCGUzsoo6DE7JR9YuG2iq8qJ6fi+KFibSBD55X8Ekr8LxHZ/epA4/THB3af83F+9l17tAfYF9SH/jbETWKjktfw0sNje/4HAspgw5MwCc9BA5pwGS6jfwYAMW1Hew==).
 
 ## Other builds of this spec
 
 - [Frost — Winter's Chill](../research/raid/builds/frost-winters-chill-raid.md) (21/0/30, 501 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0541005003000201--25353003002100105-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -4,13 +4,15 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**[Frostfire — Raid](../research/raid/builds/frostfire-open-raid.md)** (0/29/22) — [open the talent tree](https://talentsforever.com/mage/60/-2255000013012503-2135000301203002-7)
+**[Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md)** (0/29/22) — [open the talent tree](https://talentsforever.com/mage/60/-1355000013012503-2135000301113002-7)
 
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Frostfire — Fingers of Frost / Ice Lance), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Frostfire — Fingers of Frost / Ice Lance), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Press the first one that is ready**, top to bottom:
+**Talents with no line below:** **Ice Lance**: taken because Fingers of Frost requires it.
+
+**Then press the first one that is ready**, top to bottom:
 
 1. **Pyroblast** when Heating Up has 3 stacks
 2. **Fire Blast**
@@ -56,14 +58,14 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 802 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 799 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 789 | [0/29/22](https://talentsforever.com/mage/60/-2355000013011503-2035020301013002-7) |
-| Phase 1 BiS | 793 | [0/29/22](https://talentsforever.com/mage/60/-2355000013011503-1135001321003002-7) |
+| Pre-BiS | 789 | [0/29/22](https://talentsforever.com/mage/60/-1355000013012503-2035010301113002-7) |
+| Phase 1 BiS | 793 | this build |
 
 **The gear** (average item level: Pre-BiS 62.7; Phase 1 BiS 63.5; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -87,14 +89,13 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVV1oI1UUzrkzzZyc/o3XouO0hTFQicGUm5mmthWbtE+CYIpP+qJNmokZkSQkEepblVKkYAtFlNY+SLFUpVpRkNoXMS9mF3bp0y7sPrR0t+yyLOwuC4V9WZaZtLTL5jXd83CZe77v8p3zceZe6kFQQQMDQjAJOSjCDMDXAD8C/AzA2zyUuegQ6HOtiCrqn5OCO1+BdthKMh58DyTjnW/d9YddlfxYy2s3OkjB6jpo1ztIwmqeZDxcBFJwq35MwT82QVtUSMZr6+7Jhbsqyfj3rkoS/uuQgvd+B632Isn48DsX/2W1M/iGWnNClxdAHKUnvlmDeWCzzhKwo/QKsFtjvwJurMLmPCw4+zDrjLed9pWAHRaMmFYsJoQQUUtEozFhRUxhxYQpLBF1c8KsMdhlrQdsLsCL3E4VP/u4UKwYpjAHI1ERMa0RYyqXyn9iZ4xCyUhlMnbGSH9hVHK2USpUUhWnkDfKdqo0lTNCZds2sqVCuZJ1SnaklHIykRNOpM7p/7RcyL+uK3oLSepRupFidKBpijj/EQ/qBr0U7kLggSr4ScYH/2huNQSW7m4fLUGjqkSseVVdTfIqPCtpNsWID2mCv0ftF2UiGbf+As7UFnpbf4v0sIYSb6/CGaBuTIx6w90o8/adpzAkP8lv9sfKLgv3krxH1+mFcCfKnKV9ukItJA2JPhdVa6MNTR1smqnq/6Nc1tmIj881sFYMN0O41+teOu3eEn06kj/E8L/qu7xX7/YI/lNCVPR5Q+fCXTqnwJ/eSF6qjyTeTPLSebkWcCsKMdxInvc1UMvzwPGfsJfUpNusBveZ+aXk82IgseZ6Qgwh+JgF3JRvJpt4ZWXZjQvxV7NeXImb+0yTjXh4m/meS1QSJ19Njdd+a5rOsLe+/1Ni7DiRmHTfxGXwNr79eFjC7ZfHzzydAoYgAe/ABHwAOSjCNEyzJwMAWr6v3g==); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1oK1UUzrkzTU5O/8Zr0XHawhioxGDKnZmmthWbtCtBMMWVbrRJMzEjkoQkQt1VKUUKtlCl0NqFFEtVqhXd1G7EbIyC0pWCLlrUorjRx4PC25THnbS0j5dt+s7iMud+3+U75+PMvTSAoIEOJkRhFgpQhgWAdwE+AvgEgHf5KJPoGBhLnYgaGm9SCA/fAf20k1Q8XwNS8d8P5PrhkUZBbBT1P3sohPUd0H/vIQXrRVLxdBUohPvNYyH8cg/01RCp+NuOPLl+pJGC33qk4uL7kvjfF6A3HiYVb69L/NOt3shTWsOL/rwC4iw78942LANb9NaAnWU3gf099Rng7hbsLcOKdwKL3nTXVV8pOGSRuO0kEkIIYTnCshLCiVuWk5CpbQnhCGE3GByxzj/YUpiXuZspv/FqqVwzbWGPxi0Rt50Jc66QKb7m5sxSxczkcm7OzL5l1gquWSnVMjWvVDSrbqYyVzCjVdc185VStZb3Km68kvFy8UtOvMkZfr1aKj5phIwOUrSzbCtFa6Rtirj8Co8YJj0S60Pg4ToEScVb3+iyGgLHkOmdNWhVlUi0r6pf07wO90vabTHiZZrhL1D3jyqRivtfA2daBz1rPENGTEeFd9fhGtA0JkGDsX5UeffhPRhSkNSnhxNVycLjNB8wDHoo1osqZ9mAEaIOUsbEkES1xmRLU0fbZqr2/SRXDTYR4EstrBXj7RAe9LtXrrp3xJCBFIwy/K7+PB80+n1C8IpgiSF/6CTcZ3AKf+WP5E/NkcS/0rxyU66FZUVRhrvpm74GGkUevvgTjtO68g9rwP/MflsJ+DGS2paeEEOInLOw3Aos5FOPbW7I+CH5eN6PX5L2CdNVMxk7YIEHErXU5Vdb44nP26Yz7q8vfpyauthIzco3cQP8JHCSjCl48Oj0tadTwBik4DmYgZegAGWYh3l2dwAd9a9j).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU9oI1UYz/dmmvny9d/4LDpOWxgDlRhMeTPT1LZik/YkCKZ40os2aSZmRJKQRKi3KqVIwRaKKK09SLFUpVpRkNqLmItRUHpS0ENLd8suy8LuslDYy7LMpKVdNtd0f4dH3vv9Hr/v+/FlHvUhqKCBARGYhjyUYA7gY4AvAb4G4B0+yzx2BPSFdkQV9fdJwb2PQDtuJxmPPgeS8can3vrFvkpBrBe0K12kYG0TtP+7SMJagWQ8XgZScKdxTcEftkFbVkjG/za9m0s3VZLx532VJPzVJQVvfQ9a/UmS8e5nHv/Nenf4BbXuRv5eAnGSmfpkAxaBzbsrwE4ya8CuTXwLuLUO24uw5B7CvDvZcd5XEvZYOGba8bgQQpi2MK24sGOWsOPCFLYwTdMWwqoz2GftR2whxEvcSZfee7tYqhqWsIZjpohZ9pgxk08X3nGyRrFspLNZJ2tkPjCqeccoF6vpqlssGBUnXZ7JG5GK4xi5crFSzbllJ1ZOu9nYmSbW0Ay+WykWntcVvY0k9STTzNEcapkjLr7Fw7pBT0V7EHioBkGS8c4vmlcNga1723sr0KwqEW9dVf+meA0etbRaEsSbNMVfo84/ZSIZd34CztQ2ell/ifSohhLvrMEFohFMnPqjvSjzzr2HOKQgyS8OxiueCg9SvE/X6YloN8qcZQK6Qm0kjYgBj1Xr401DHW5ZqOrv41zW2ViALzSJVoy2wrjf7146794WAzpSMMLwt9qrvF/v9QXBc4EpBvyh8+genVPoR38k/2qMJF5N8fJlpRbyKoow3Epd9megXuCh03/CQUqTrrM63GbWh1LAx1Byw8uEGEL4Pgt5R4G5XPKZtVUPfySezfn4J2EdMk02EtFdFngsqCbPfrUUz33XMp9Rf339q+TE6UFy2nsTV8HfBA4TUQl3n5688HQKGIEkvAJT8AbkoQSzMMseDABara/e); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1oK1UUzrkzTU5O/8Zr0XHawhioxGDKnZmmthWbtCtBMMWVbrRJMzEjkoQkQt1VKUUKtlCl0NqFFEtVqhXd1G7EbIyC0pWCLlrUorjRx4PC25THnbS0j5dt+s7iMvd83+U75+PMvTSAoIEOJkRhFgpQhgWAdwE+AvgEgHf5KJPoGBhLnYgaGm9SCA/fAf20k1Q8XwNS8d8P5PrhkUZBbBT1P3sohPUd0H/vIQXrRVLxdBUohPvNYyH8cg/01RCp+NuOPLl+pJGC33qk4uL7kvjfF6A3HiYVb69L/NOt3shTWsOL/rwC4iw78942LANb9NaAnWU3gf099Rng7hbsLcOKdwKL3nTXVV8pOGSRuOUkEkIIYTnCshPCiduWIxOOsCzLEcJuMDhinX+wpTAvczdTfuPVUrlm2sIejVsibjsT5lwhU3zNzZmlipnJ5dycmX3LrBVcs1KqZWpeqWhW3UxlrmBGq65r5iulai3vVdx4JePl4peceJMz/Hq1VHzSCBkdpGhn2VaK1kjbFHH5FR4xTHok1ofAw3UIkoq3vtFlNQSOIbd31qBVVSLRvqp+TfM63C9pt8WIl2mGv0DdP6pEKu5/DZxpHfSs8QwZMR0V3l2Ha0DTmAQNxvpR5d2H92BIQVKfHk5UJQuP03zAMOihWC+qnGUDRog6SBkTQxLVGpMtTR1tm6na95NcNdhEgC+1sFaMt0N40O9euereEUMGUjDK8Lv683zQ6PcJwSuCJYb8oZNwn8Ep/JU/kj81RxL/SvPKTbkWlhVFGe6mb/oaaBR5+OJPOE7ryj+sAf8z+20l4MdIalt6Qgwhcs7CMhVYyKce29yQ8UPy8bwfvyTtE6arZjJ2wAIPJGqpy6+2xhOft01n3F9f/Dg1dZFIzco3cQP8TeAkGVPw4NHpa0+ngDFIwXMwAy9BAcowD/Ps7gAd6q9j).
 
 ## Other builds of this spec
 
 - [Frostfire — Fingers of Frost / Ice Lance](../research/raid/builds/frostfire-fingers-of-frost-raid.md) (0/29/22, 764 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/-1355100013013303-2135000301113002-7)
-- [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (6/32/13, 760 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0042-20552030130115031-20350003-7)
 - [Frostfire — Frostfire Bolt](../research/raid/builds/frostfire-raid.md) (5/33/13, 743 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0041-23251030130135031-20350003-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 

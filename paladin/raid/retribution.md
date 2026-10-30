@@ -4,20 +4,20 @@
 
 **✅ Recommended** for raid (the best paladin spec here, or within 3% of it).
 
-**[Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md)** (10/8/33) — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-7)
+**[Retribution (optimized)](../research/raid/builds/opt-ret-dps-raid-dps.md)** (17/0/34) — [open the talent tree](https://talentsforever.com/paladin/60/55003003001--05225331001330321-7)
 
 ## How to play
 
 **Before the pull:** **Seal of Command**.
 
-**Keep up all fight:** **Seal of Righteousness**.
+**Keep up all fight:** **Seal of Righteousness**, **Concentration Aura**.
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Hammer of Wrath** when the target is below 20% health
-2. **Judgement** when Seal of Righteousness is active
-3. **Consecration** when you have at least 25% mana
-4. **Holy Strike**
+1. **Holy Strike**
+2. **Hammer of Wrath** when the target is below 20% health
+3. **Judgement** when Seal of Righteousness is active
+4. **Consecration** when you have at least 25% mana
 
 Between these, your white swings do the rest.
 
@@ -54,22 +54,24 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 - Against an Undead or Demon boss, add **Exorcism** on cooldown (15 seconds, 40% cheaper with **Holy Conduit**): it hits harder than **Holy Strike**. The simulator's target is an Elemental, so where it fits best was not measured.
 - When you have to leave melee range, keep pressing **Judgement** (10 yards) and, under 20%, **Hammer of Wrath** (30 yards); your seals only work on swings.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 952 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 785 |
 
 > Note: Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, ElliotWood/Forever fork 2ce8265 (client 70291); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 929 | [12/7/32](https://talentsforever.com/paladin/60/52003002-502-05225131001330321-7) |
-| Phase 1 BiS | 954 | [11/8/32](https://talentsforever.com/paladin/60/52003001-503-05225131001330321-7) |
+| Pre-BiS | 771 | this build |
+| Phase 1 BiS | 790 | [9/8/34](https://talentsforever.com/paladin/60/51003-503-05225331001330321-7) |
 
-**The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 65.1; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -77,27 +79,27 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 | Neck | [Beads of Ogre Might](https://www.wowhead.com/forever/item=22150) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Hermit's Pauldron](https://www.wowhead.com/forever/item=275737) | [Theramore Shoulderguards](https://www.wowhead.com/forever/item=272957) |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Darkmantle Tunic](https://www.wowhead.com/forever/item=22009)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Soulforge Breastplate](https://www.wowhead.com/forever/item=22089)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Chest | [Darkmantle Tunic](https://www.wowhead.com/forever/item=22009)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
 | Hands | [Storm Gauntlets](https://www.wowhead.com/forever/item=12632) · *Leatherworking*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) | [Soulforge Gauntlets](https://www.wowhead.com/forever/item=22090)<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) |
 | Waist | [Belt of Preserved Heads](https://www.wowhead.com/forever/item=20216) | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
+| Legs | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Ironfeather Leggings](https://www.wowhead.com/forever/item=252486) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
 | Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) |
 | Finger | [Band of the Better Half](https://www.wowhead.com/forever/item=284716) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
-| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Main hand | [Fist of Cenarius](https://www.wowhead.com/forever/item=21188)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Fist of Cenarius](https://www.wowhead.com/forever/item=21188)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Libram of Law](https://www.wowhead.com/forever/item=272435) | [Libram of Law](https://www.wowhead.com/forever/item=272435) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzsmEFoHFUYx/d7O9l5+VLS7dOS6VLDM7A62WaWN7MdjRHZTU+il1AvnrSz3dnu1HVnmZmV5FaxqIgU8SAkYhTWQGlTWyxoCHowtBAPpfFgkUIx1INFPFgPRRFFZrJJl0TRBYM07HfYffvet+9932/+b77Hw/0UkqAABxWOQAXqcALgdYAPAE4DsF3RKAlHRyH1yiCVkiQ1iTL9fm63crMPJfrqOUCJTv+QRJm+u5JUvkqgTH89C8p3/SjTpTlQbvRjgn5TVN6XUaK/vAco09sfQfhvmV6YB+XbfpTo7++E08xf2IMS/WQliXHafAZlemkOlB/7MYYSvbiSHMomlx315xfEneLEtVPwBpCTzttA7hRnING05q3r42dAftM5cxpOOatw0jm0625yBVgkg6YhRE4IQzOFoQnTMEw9pwuh53IiZ+jLRLpJXtuPA4gpigm1hy40YagXZezR9KzpsxVgX4Bv2yW7xA1hPKLpQhMmL3vui9y3rarmlrVyw5vSPMspPezz8It7bmAFjlvjalCxuVu3a6Gvd7TCPVsLGjW7xJ2AuzVu8cN24DnFRuRdbDjV0vAYP6BnR9M8cPkBI6unedn1uP2S7U1tdeZOOEe5Ua2uLazqYkQIwcvOsUrgj/AwcK7nhlNr2cXp+c+B/UbYWXLPp/Q4t+rV59160JbDGD9asWrH7BJ3PW6VwmdWnOJhwBvht4JWfdvemqy27qatuWWP+25tOPU05tkTuCezmyYYKcZSMvZgXDfTuDdzH42zniVCKAkBoySyB/3IM37X0xTpcFCV6aVZYLe69DujP4ojLPPv6YctldLLs8Aud1F3hnov9n0MG/xSCZTo+VlgV7ocO+P4wGa5Gma6VV4+awK7ujNqSm+Ym0rpjQl2nD23Ga5+sEO4nh1opbr/N0hppMalJrDlnUGPjMXY7e7G6mxjjaPJcn9VC9rfW5vrb65Vfwm92AT2FmzVqnj0P9VqFocY/6coo5Ak+mkT2PWuDDqTQQY5G8TeGWhVqHXWT7VYG8LfKF476gAP9MpVYF939dKZXtK4LzNAJda32Lb/Eigh0dvOi0r8FlmGn4jxcjwW2f2FRZCQYGzoD9IbdsROlAv7ZqZD+zL/YDmya3ljlSgSz2cWSOx/saCw3tpWe+jctq3zWPR5+MPCeKujcCS8kJiG6EdsNZ+J04WBQ233FgJGoQBPwgQ8CxWowyRMkj8HAK4pqOg=); Phase 1 BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzsmFFoW1UYx/Od3Oaefh1dPDp6F2Y5FqJp1hvOvdnVWpGkexJ9KXvySZcsN8udMTfceyOrTxMqisiUCcIqVCEWxqxOHGgp7sGyQSeMRdA9FIZlIu7BB+fDXoQh5zbtQqtowCEr+R5uTs75cs73/fI/9zsc3EchDhpwSMFhqEAdTgC8CfARwBkAtiscJXJ0HBKvD1MlThKvokp/md+t3RhAhd45BajQC9/HUaUftOLadzFU6eUF0H4aRJUuz4N2XTa+XQDtQxUV+vM7gCq99RnIn6v08wXQfhxEhb7fiqNCV+flbDPvyeeXLTnnxXnQfh3ECCr0fCs+komvOKnfXxK3i1PXTsJbQGacU0BuF2ch1iwsFFYnz4L6tnP2DJx01mDGObjrbnp5WCLDlilEVghDt0RWF5ZpWkbWEMLIZkXWNFaIcoO8sQ+HEBMUY6k+utiEkX5UsU83MpbPWsC+Ad+2S3aJm8J8XDeELixe9tyXuW8Xqrpb1ssNb1r3Ck7pMZ/LD+65QSFw3BpPBRWbu3W7Jn29IxXu2XrQqNkl7gTcrfECP2QHnlNshN7FhlMtjU7w/UZmPMkDl+83M0aSl12P26/Y3vR2Z+7IOcqNanV94ZQhxoQQvOwcrQT+GJeBcyM7mljPLkrPXQD2B2GfkPs+pad4oV590a0HHTlM8COVQu2oXeKuxwsl+Z8Vp7kMeDP8dtAp37a3J6tvuOnrbpljvlsbTTyHOfY0PpDeTWOMFCMJFfswalhJ3JN+kEZZ3zIhlEjAqIjMAT/0jN71tERSDqZUenEO2M0e/e7oj+MYS/97+rKVovTSHLBLPdTdod6DA1/AJr9EDBV6bg7YlR7H7jg+vFWuppVsl5evm8Cu7oya0i9zS1F6fYodYy9shWsc6BKuZwd6qe7/DVIaqnG5CWxlZ9AjExF2q7exuttYk2ix7F/Vgs731tb6m23XX0LPN4G9C9u1Kp74T7WawRHG/ynKMCSFftUEttqTQXcySCNnw9g/C+0KtcH62TZrU/ibxWtHHeCBXrkK7IeeXrrTSxL3poeowgaWOvZfDBUkRsd5UYveJCvwGzFfi0ZCeyi/BAoSjIzcIf2yI3KinN87e1ra5dwj5dCu5cw1oik8l14kkf/FgvxG657ao5/es3WeDJ+HPs5Ptjvyh+WVxGkIv0TWcukoXRw62HFzIWAc8vAMTMHzUIE6HIfj5M8BAHAJqV0=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzsWF9oHEUYv29uczv5UtLraMn2tGUMnF6u2WN2t1tjRHLpk+hLqC8+afd6e72N5+2xuyfJW4UiIqWID0Iixj9noLSpLRY0BH0wtBAfSuODRYRiqA8W8cH6UBRRZDeX9EgqetAgDfdx3O3NfDvz+37zm+8bBh+mkAQFOGTgCJShBscBXgd4H+A0ANsR9ZKwdwhSH+ylUpKkJlCmP87uVG70oERfOwco0amfkijTd5aTytcJlOnvZ0H5oRdlujgLyvVeTNBvC8p7Mkr0t3cBZXrrYwjflumFOVC+70WJ/vl2OMzchV0o0U+XkxinjedQppdmQfm5F2Mo0YvLyf5ccsnJ/PqSuF0Yu3YK3gBywnkLyO3CNCQa1pz13egZkE86Z07DKWcFTjiHdtwJLg8LZJ9pCmFEH01VhanrpmFoQmiGIQxdWyLSDTL7EPYhpigmMl10vgH93Shjl6rlTJ9dBfYl+LZdtItcF/pBVROqMHnJc1/mvm1VVLeklurepOpZTvExn4c/3HMDK3DcKs8EZZu7Nbsa+npHy9yz1aBetYvcCbhb5RY/bAeeU6hH3oW6UykODPP9Wm4ozQOX79dzWpqXXI/br9je5GZn7oRjlOqVyurEGU0MCiF4yTlWDvxBHgLnmjGQ6k7J2JWh9PoYW94eEa2uV5ye/wLYH4SdJfd9SE9yq1Z50a0FLTEM86Nlq3rMLnLX41YxVGFhkoeA1+E3QWd8294crLrmpq665cZ9tzqQehZH2FO4K7uTJhgpxEJxYFwz07g7+wCNs65FQigJCUZJ5A74kWf8jqcp0mFnRqaXZoDd7LDfHvtDOMiy/5398ClD6eUZYJc7VLdH9W7s+QTW+UslUKLnZ4Bd6fDYHo97N8pVN9PNgvl5A9g4e2EjFO1Am1A8O1CLNf8fANBo7RYbwJa2R/0iwzF2qyPD9mQ4iiYz7pY5W3f5xmplNKsVoRcbwN6EzVoVj99Treawn/F/QxlBkuhnDWAn7wJJP3hPIWWRs33YPQ3NDLiG7pl1jvz15LitDohAr1wF9k1no7W30dK4J9tHJdaz0KLYBEpItNbzyPiWC3c17384DUr8JlmCX4j+ajwW2YP5BZCQYKz/L9IdNsSOl/J7pqdC+2rkkVJk10b0FaJIfCQ7T2L/iwX5tacttUfPbdk8T0Tfhz/KjzYb8kfC64IpiP7EVkaycTrfd6jlVkHAEOThaRiD56EMNZiACfL3APDLiGo=); Phase 1 BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzsWEFoHFUY3v/tZOflT0nXpyXTrZVnYHWzzSxvZjo1RiSbnkQvoSdP2tnubHfiurPMzErjqUIOIqVKBaERYnFdKDVSsaIhWMTQShRKI2gPhWKoiD14UA+9CEVmskmXpKILDWLY/7D777xvZ77/m+/9/zD4MIUkKMAhA4ehDDU4DvA6wBmAswBsR7RKwtURSJ3ZS6UkSb2KMv2luVO52YcSvXMKUKIXv0+iTN9dTirfJVCmXzZB+akfZbrYBOVGmHw7B8p7Mkr05zcBZfr1p9HfZfrxHCg/9qNE31lOokSvN8OzfRbl02+HyEtNUH7txxhK9MJycjCXXHIyf7wkbhcmrp2EN4BMO6eA3C7MQKJhzVnXx8+BfMI5dxZOOisw7Rzccbe8PCyQPaYmhKGawlCFqeumYWhCaIYhDF1bItJN0tyDA4gpiolMD51vwGAvytijajnTZ1eBfQW+bRftIteFfkDVhCpMXvLcl7lvWxXVLamlujelepZTfNzn4Rf33MAKHLfKM0HZ5m7NroZY70iZe7Ya1Kt2kTsBd6vc4ofswHMK9QhdqDuV4tAo36flRtI8cPk+Paelecn1uP2K7U1tBnMnPEepXqmsXjijiWEhBC85R8uBP8xD4lwzhlK9KRl7MpTemGDL26Oi1fsVp+cvAvuTsA/J/76kp7hVq7zo1oK2Gkb5kbJVPWoXuetxqxi6sDDFQ8Lr9FukM75tby5WXYOpq7DcpO9Wh1LP4Rh7Gh/I7qQJRgqx0BwY18w07so+SOOsZ5EQSkKBURK5/X6EjN9FmiIdLmZkemkW2K2u+p2pP4LDLPvv1Q+zDKWXZ4Fd7krdmdS7sO8TWNcvlUCJnp8FdqWrY2c67t1oV91MtwbmFw1gk+yFjVS0/R1S8exALdb8vyFAo3u32AC2tD3mFxmNsd+7NuzMhuNoMuNenbN9l2+cVkZrWhF6oQHsLdjsVfHEffVqDgcZ/yeWESWJft4AduIelPQD95VSFjl7BHtnoNUB19g9u66Rv94ct9UDItArV4H90N1onW20NO7ODlCJ9S20OTaBEhKt/XlkcsuNu9r3358BJX6LLMFvRH8tHoviofwCSEgwNniH9IYHYsdL+d0zp8P4ZuzRUhTXxvQVokh8LDtPYv9JBPm1bEvjsY+27DpPRp+HPsiPtw7kD4dvC05D9CO2MpaN0/mBg20vFQSMQB6egQl4HspQg2NwjPw1ADRKiCE=).
 
 ## Other builds of this spec
 
-- [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (11/8/32, 952 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-7)
-- [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 925 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-7)
-- [Retribution (optimized)](../research/raid/builds/opt-ret-dps-raid-dps.md) (17/0/34) — [open the talent tree](https://talentsforever.com/paladin/60/55003013--05225331001330321-7)
+- [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 784 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-7)
+- [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md) (10/8/33, 778 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-7)
+- [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (11/8/32, 770 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-26 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the ElliotWood/Forever fork (deleted 2026-10-18) at b7083fa (client 1.60.1.70425, its spell data of 14-15 Oct)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
 
