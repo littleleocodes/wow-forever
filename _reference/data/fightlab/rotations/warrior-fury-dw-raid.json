@@ -2,7 +2,7 @@
  "eat_below": 0.4,
  "class": "warrior",
  "spec": "fury-dw-raid",
- "build": "opt-fury-dw-raid-leveling-st",
+ "build": "warrior/research/leveling/fightlab/candidates/unr-fury-dw-raid.json",
  "levels": [
   20,
   30,
@@ -10,7 +10,8 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-10-30",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -22,40 +23,40 @@
     null,
     0.4
    ],
-   "gain_seed1": 0.030677786549779595,
-   "gain_seed2": 0.02526769056605671
+   "gain_seed1": 0.014314857223876154,
+   "gain_seed2": 0.010878589248834447
   }
  ],
- "weighted_before": 27.111466026312588,
- "weighted_after": 26.408288333364872,
+ "weighted_before": 25.392212255774446,
+ "weighted_after": 25.255948333322724,
  "per_level": {
   "20": {
-   "before": 20.798666666537564,
-   "after": 20.798666666537564,
+   "before": 20.611599999873114,
+   "after": 20.611599999873114,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 24.09528038928896,
-   "after": 23.8534333332586,
+   "before": 23.48497517593405,
+   "after": 23.3056999999063,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.098993641466116,
-   "after": 25.47716666665401,
+   "before": 25.000604472781678,
+   "after": 24.663599999955768,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.438957757336205,
-   "after": 26.57233333336129,
+   "before": 25.684533301797934,
+   "after": 25.616733333328177,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.125897112127372,
-   "after": 30.039633333504,
+   "before": 27.956839197970684,
+   "after": 27.873433333420895,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

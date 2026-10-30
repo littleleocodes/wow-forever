@@ -1,0 +1,216 @@
+{
+ "id": "unr-fury-dw-raid",
+ "name": "Unrestricted start (fury-dw-raid)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Charge",
+    2
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Furious Precision",
+    3
+   ],
+   [
+    "Blood Craze",
+    2
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Gore Drinker",
+    1
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Fury",
+   "talent": "Furious Precision",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 2
+  },
+  {
+   "levels": "25-26",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 2
+  },
+  {
+   "levels": "27-29",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Fury",
+   "talent": "Death Wish",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 2
+  },
+  {
+   "levels": "33-37",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 5
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Fury",
+   "talent": "Bloodthirst",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fury",
+   "talent": "Gore Drinker",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 2
+  },
+  {
+   "levels": "44-45",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "47-49",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "50-51",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "52-54",
+   "tree": "Arms",
+   "talent": "Improved Heroic Strike",
+   "points": 3
+  },
+  {
+   "levels": "55-57",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "58-59",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the fury-dw-raid open-search winner 16/35/0 (stats model), the start of the unrestricted search"
+ ]
+}
