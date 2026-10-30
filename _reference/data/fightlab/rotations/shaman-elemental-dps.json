@@ -3,7 +3,7 @@
  "eat_below": 0.8,
  "class": "shaman",
  "spec": "elemental-dps",
- "build": "opt-elemental-dps-leveling-st",
+ "build": "shaman/research/leveling/fightlab/candidates/unr-elemental-dps.json",
  "levels": [
   20,
   30,
@@ -11,7 +11,8 @@
   50,
   60
  ],
- "date": "2026-10-20",
+ "date": "2026-10-30",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -23,8 +24,8 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.009665525963754917,
-   "gain_seed2": 0.0061224835198663285
+   "gain_seed1": 0.007953182738682063,
+   "gain_seed2": 0.006416273007283757
   },
   {
    "round": 2,
@@ -34,42 +35,42 @@
     null,
     0.8
    ],
-   "gain_seed1": 0.005926977049322324,
-   "gain_seed2": 0.005801690901052314
+   "gain_seed1": 0.00523619941425435,
+   "gain_seed2": 0.0062889071543922315
   }
  ],
- "weighted_before": 37.642234061642235,
- "weighted_after": 37.19058421199385,
+ "weighted_before": 35.378077686799784,
+ "weighted_after": 34.93441546877891,
  "per_level": {
   "20": {
-   "before": 29.912597889371998,
-   "after": 29.617179643522707,
+   "before": 29.684208891189638,
+   "after": 29.291410484781018,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 37.08924347493585,
-   "after": 36.73390821729008,
+   "before": 36.36024764467844,
+   "after": 36.08660178169,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 39.20550688174575,
-   "after": 38.46451234116905,
+   "before": 36.155014282955364,
+   "after": 35.54630440848113,
    "deaths_before": 0.0,
-   "deaths_after": 0.03333333333333333
+   "deaths_after": 0.0
   },
   "50": {
-   "before": 39.2576204183921,
-   "after": 38.8647277797615,
+   "before": 36.05236352200323,
+   "after": 35.51572205986659,
    "deaths_before": 0.0,
-   "deaths_after": 0.06666666666666667
+   "deaths_after": 0.0
   },
   "60": {
-   "before": 38.106937568391594,
-   "after": 37.698985339579615,
+   "before": 35.7050863796239,
+   "after": 35.34697585461479,
    "deaths_before": 0.0,
-   "deaths_after": 0.13333333333333333
+   "deaths_after": 0.03333333333333333
   }
  }
 }

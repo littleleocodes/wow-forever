@@ -1,0 +1,233 @@
+{
+ "id": "unr-enhancement-dps",
+ "name": "Unrestricted start (enhancement-dps)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    3
+   ],
+   [
+    "Call of Flame",
+    2
+   ],
+   [
+    "Elemental Focus",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Improved Lightning Shield",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    2
+   ],
+   [
+    "Totemic Focus",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "22-24",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 3
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-30",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "31-34",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "35-36",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "37-38",
+   "tree": "Restoration",
+   "talent": "Mindfulness",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Enhancement",
+   "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  },
+  {
+   "levels": "47",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "48-50",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 3
+  },
+  {
+   "levels": "51-52",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 2
+  },
+  {
+   "levels": "53-54",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 2
+  },
+  {
+   "levels": "55-57",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the enhancement-dps open-search winner 11/32/8 (polished from the stats model order), the start of the unrestricted search"
+ ]
+}
