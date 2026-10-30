@@ -17,7 +17,7 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [warrior](../warrior/research/leveling/open-search.md) | prot-leveling | [0/20/31](https://talentsforever.com/warrior/60/-1525200005-251133020101201351-7) | Protection | 26.04 | +6.6% |
 | [warrior](../warrior/research/leveling/open-search.md) | arms-2h-raid | [32/19/0](https://talentsforever.com/warrior/60/05320203032514101-1505103004--7) | Arms | 26.36 | +0.2% |
 | [priest](../priest/research/leveling/open-search.md) | discipline-leveling | [16/4/31](https://talentsforever.com/priest/60/325010020021-31-40541001041302051-7) | Shadow | 27.66 | +18.9% |
-| [druid](../druid/research/leveling/open-search.md) | feral-cat-dps | [11/31/9](https://talentsforever.com/druid/60/15002201-55200102020032012051-50202-7) | Feral Combat | 27.80 | +0.1% |
+| [druid](../druid/research/leveling/open-search.md) | feral-cat-dps | [11/31/9](https://talentsforever.com/druid/60/15002201-54200202020032012051-50202-7) | Feral Combat | 27.81 | +0.4% |
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [8/10/33](https://talentsforever.com/paladin/60/50003-50311-5022533100133032-7) | Retribution | 28.18 | +1.4% |
 | [mage](../mage/research/leveling/open-search.md) | barrage-frost-leveling | [18/3/30](https://talentsforever.com/mage/60/22120051011003-03-0525323301103002-7) | Frost | 28.71 | +0.2% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/3/30](https://talentsforever.com/mage/60/22210051011003-03-1425323301103002-7) | Frost | 29.98 | +0.1% |
@@ -32,4 +32,4 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [mage](../mage/research/leveling/open-search.md) | fire-leveling | [0/31/20](https://talentsforever.com/mage/60/-23151030111135031-2034022301003-7) | Fire | 34.24 | -1.1% |
 | [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [21/22/8](https://talentsforever.com/shaman/60/5013321023001-054030321200002-053-7) | Hybrid Elemental/Enhancement | 34.88 | +5.0% |
 | [warlock](../warlock/research/leveling/open-search.md) | affliction-leveling | [37/14/0](https://talentsforever.com/warlock/60/25500322134001351-0025030211--7) | Affliction | 36.24 | -0.3% |
-| [druid](../druid/research/leveling/open-search.md) | balance-dps | [38/0/13](https://talentsforever.com/druid/60/5432200115501351--505003-7) | Balance | 43.03 | +2.2% |
+| [druid](../druid/research/leveling/open-search.md) | balance-dps | [36/0/15](https://talentsforever.com/druid/60/5132201115501351--505023-7) | Balance | 43.16 | -0.3% |

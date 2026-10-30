@@ -11,7 +11,7 @@
    ],
    [
     "Genesis",
-    4
+    1
    ],
    [
     "Moonglow",
@@ -24,6 +24,10 @@
    [
     "Nature's Majesty",
     2
+   ],
+   [
+    "Improved Entangling Roots",
+    1
    ],
    [
     "Nature's Splendor",
@@ -69,6 +73,10 @@
     5
    ],
    [
+    "Natural Shapeshifter",
+    2
+   ],
+   [
     "Reflection",
     3
    ]
@@ -106,10 +114,16 @@
    "points": 1
   },
   {
-   "levels": "23-24",
+   "levels": "23",
+   "tree": "Balance",
+   "talent": "Improved Entangling Roots",
+   "points": 1
+  },
+  {
+   "levels": "24",
    "tree": "Balance",
    "talent": "Genesis",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "25",
@@ -191,12 +205,12 @@
   },
   {
    "levels": "59-60",
-   "tree": "Balance",
-   "talent": "Genesis",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
    "points": 2
   }
  ],
  "notes": [
-  "the balance-dps open-search winner 38/0/13 (stats model), the start of the unrestricted search"
+  "the balance-dps open-search winner 36/0/15 (stats model), the start of the unrestricted search"
  ]
 }

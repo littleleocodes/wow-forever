@@ -22,6 +22,17 @@
  "confirm": 3000,
  "changes": [
   {
+   "round": 1,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.004121439341834066,
+   "gain_seed2": 0.004660747209939697
+  },
+  {
    "round": "final",
    "change": "kept the saved rules (faster on seed 3 than the fresh re-tune)",
    "rule": [],
@@ -29,8 +40,8 @@
    "gain_seed2": null
   }
  ],
- "weighted_before": 28.214041109667907,
- "weighted_after": 28.021604836843142,
+ "weighted_before": 28.23596260561834,
+ "weighted_after": 28.024817788471974,
  "per_level": {
   "15": {
    "before": 30.917500000204814,
@@ -51,20 +62,20 @@
    "deaths_after": 0.0
   },
   "40": {
-   "before": 28.197652632441187,
-   "after": 28.159300000084784,
+   "before": 28.207966274371447,
+   "after": 28.200966666753676,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.038598365268346,
-   "after": 28.781106023522277,
+   "before": 29.09226605072799,
+   "after": 28.791616613989007,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.47263858363041,
-   "after": 30.413759534595602,
+   "before": 30.49959177828291,
+   "after": 30.38873600809739,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -24088,5 +24088,37 @@
    "done": true,
    "date": "2026-10-29"
   }
+ },
+ "cross": {
+  "balance-dps": {
+   "own": 43.16,
+   "tested": {
+    "feral-cat-dps": 36.0
+   },
+   "best": "feral-cat-dps",
+   "best_seconds": 36.0,
+   "levels": {
+    "20": 22.38,
+    "30": 29.03,
+    "40": 35.08,
+    "50": 39.78,
+    "60": 41.49
+   }
+  },
+  "feral-cat-dps": {
+   "own": 27.81,
+   "tested": {
+    "balance-dps": 87.04
+   },
+   "best": "feral-cat-dps",
+   "best_seconds": 27.81,
+   "levels": {
+    "20": 21.32,
+    "30": 24.81,
+    "40": 28.2,
+    "50": 28.79,
+    "60": 30.39
+   }
+  }
  }
 }
