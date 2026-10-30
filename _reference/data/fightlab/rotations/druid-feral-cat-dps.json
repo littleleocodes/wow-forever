@@ -7,7 +7,7 @@
  },
  "class": "druid",
  "spec": "feral-cat-dps",
- "build": "leveling-feral",
+ "build": "druid/research/leveling/fightlab/candidates/unr-feral-cat-dps.json",
  "levels": [
   15,
   20,
@@ -16,69 +16,55 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-10-29",
+ "signature": null,
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
-   "round": 1,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.007269206254845284,
-   "gain_seed2": 0.005030886694856962
-  },
-  {
-   "round": 2,
-   "change": "never cast Shred",
-   "rule": [
-    "off",
-    "Shred",
-    true
-   ],
-   "gain_seed1": 0.0031647161320311756,
-   "gain_seed2": 0.004024752771470963
+   "round": "final",
+   "change": "kept the saved rules (faster on seed 3 than the fresh re-tune)",
+   "rule": [],
+   "gain_seed1": null,
+   "gain_seed2": null
   }
  ],
- "weighted_before": 29.18375033780904,
- "weighted_after": 28.903310717094907,
+ "weighted_before": 28.214041109667907,
+ "weighted_after": 28.021604836843142,
  "per_level": {
   "15": {
-   "before": 30.80563333353309,
-   "after": 30.80563333353309,
+   "before": 30.917500000204814,
+   "after": 30.917500000204814,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "20": {
-   "before": 22.106066666539792,
-   "after": 21.610899999867904,
+   "before": 21.844599999865675,
+   "after": 21.323833333204853,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.51353333332028,
-   "after": 25.089733333305936,
+   "before": 25.238999999977494,
+   "after": 24.80509999996217,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 29.01111026549155,
-   "after": 28.984086038086293,
+   "before": 28.197652632441187,
+   "after": 28.159300000084784,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.097048467742642,
-   "after": 29.80685769854697,
+   "before": 29.038598365268346,
+   "after": 28.781106023522277,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 32.32662758814582,
-   "after": 31.958516295417876,
+   "before": 30.47263858363041,
+   "after": 30.413759534595602,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
