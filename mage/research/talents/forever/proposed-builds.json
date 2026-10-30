@@ -918,89 +918,6 @@
       "order_label": "own tree last"
     },
     {
-      "id": "frost-ml-raid",
-      "name": "Frost — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Frost",
-      "generated": "2026-10-02",
-      "derived": "raid",
-      "summary": "The Frost build the machine-learning talent search found on the training dummy (only your own buffs) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry frost-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Improved Channeling", 3],
-          ["Missile Barrage", 1],
-          ["Arcane Concentration", 5],
-          ["Arcane Impact", 3],
-          ["Arcane Meditation", 3],
-          ["Presence of Mind", 1]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Elemental Precision", 3],
-          ["Improved Frostbolt", 5],
-          ["Ice Shards", 5],
-          ["Frost Channeling", 3],
-          ["Ice Lance", 1],
-          ["Arctic Reach", 2],
-          ["Ice Block", 1],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Winter's Chill", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft frost-winters-chill-raid in the same gear and fights (100,000, one seed): +13.7% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Search result: 21/0/30 at 647.4 ± 0.12 DPS over 100,000 fights; runner-up 21/0/30 (+0.00%; the winner takes Improved Channeling 2; the runner-up Arcane Resilience 1, Improved Channeling 1); 1,483 builds simulated; certificate: none of its 270 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 21/0/30 at 627.1 DPS on the dummy (other talents: _reference/dps-rankings.md).", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Blast -> Improved Channeling (interrupt). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Frost: its full-raid winner is +0.15% against it, under the 0.5% bar for a new build.", "2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps)."],
-      "open_questions": ["A machine-searched Frost build: check it against the community's Frost builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"],
-      "replaces": "frost-winters-chill-raid"
-    },
-    {
-      "id": "frostfire-ml-raid",
-      "name": "Frostfire — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Fire/Frost",
-      "generated": "2026-10-03",
-      "derived": "raid",
-      "summary": "The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 4],
-          ["Missile Barrage", 2]
-        ],
-        "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 5],
-          ["Flame Throwing", 2],
-          ["Ignite", 5],
-          ["Burning Soul", 3],
-          ["Pyroblast", 1],
-          ["Heating Up", 1],
-          ["Improved Scorch", 3],
-          ["Master of Elements", 1],
-          ["Critical Mass", 5],
-          ["Fire Power", 3],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 3],
-          ["Frost Warding", 2],
-          ["Ice Shards", 5],
-          ["Frost Channeling", 3]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft frostfire-raid in a full raid, same gear and fights (100,000, one seed): +1.6% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow frostfire-raid: Improved Fireball → Burning Soul, Flame Throwing → Burning Soul, Impact → Burning Soul, Frostbite → Improved Channeling, Ice Lance → Improved Channeling, Arctic Reach → Improved Channeling (the same DPS as the search winner 1/31/19 on one seed, 30,000 fights).", "Search result (full raid): 1/31/19 at 739.6 ± 0.23 DPS over 100,000 fights; runner-up 3/31/17 (+0.00%; the winner takes Flame Throwing 2, Frostbite 1, Ice Lance 1, Impact 3, Improved Channeling 1, Improved Flamestrike 1; the runner-up Blast Wave 1, Burning Soul 1, Improved Channeling 3, Improved Fire Ward 2, Improved Flamestrike 2); 1,942 builds simulated; certificate: none of its 311 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 3/31/17 at 721.6 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 1/34/16 at 627.1 DPS.", "2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-16 (repair_builds.py, client build 70425 trees): 4/31/16 -> 4/31/16; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Impact (over 51); -1 Improved Flamestrike (over 51) (refill: the fire-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 4/31/16 -> 6/32/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +2 Missile Barrage, +1 Master of Elements (refill: the fire-raid model, raid-dps)."],
-      "open_questions": ["A machine-searched Frostfire build: check it against the community's Frostfire builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"]
-    },
-    {
       "id": "frostfire-fingers-of-frost-raid",
       "name": "Frostfire — Fingers of Frost / Ice Lance (user build)",
       "role": "dps",
@@ -2080,20 +1997,63 @@
       "replaces": "arcane-blast-raid"
     },
     {
-      "id": "frostfire-open-raid",
-      "name": "Frostfire — Raid (open talent search)",
+      "id": "frost-ml-raid",
+      "name": "Frost — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Frost",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Frost build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frost-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Improved Channeling", 5],
+          ["Missile Barrage", 1],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 3],
+          ["Arcane Impact", 3],
+          ["Arcane Blast", 1],
+          ["Arcane Mind", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Frostbite", 3],
+          ["Frost Channeling", 3],
+          ["Ice Lance", 1],
+          ["Shatter", 3],
+          ["Cold Snap", 1],
+          ["Fingers of Frost", 2],
+          ["Arctic Reach", 2],
+          ["Frost Warding", 2]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft frost-winters-chill-raid in a full raid, same gear and fights (100,000, one seed): +18.7% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frost-winters-chill-raid: Improved Blizzard → Winter's Chill (the same DPS as the search winner 21/0/30 on one seed, 30,000 fights).", "Search result (full raid): 21/0/30 at 593.6 ± 0.10 DPS over 100,000 fights; runner-up 21/0/30 (+0.16%; the winner takes Frostbite 3; the runner-up Frost Warding 1, Frostbite 2); 2,127 builds simulated; certificate: 1 confirmed move first, then none of its 261 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 21/0/30 at 579.4 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 21/0/30 at 514.9 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Winter's Chill -> Frost Channeling (threat); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Frost Warding (survival); Winter's Chill -> Frost Warding (survival). Net -0.02% on a third seed."],
+      "open_questions": ["A machine-searched Frost build: check it against the community's Frost builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "frost-winters-chill-raid"
+    },
+    {
+      "id": "frostfire-ml-raid",
+      "name": "Frostfire — Raid (machine-learning search)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "spec": "Hybrid Fire/Frost",
-      "generated": "2026-10-24",
+      "generated": "2026-10-29",
       "derived": "raid",
-      "summary": "The Frostfire (a Fire/Frost hybrid) raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's frostfire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +5.1% over frostfire-fingers-of-frost-raid, the best of our builds in that rotation.",
+      "summary": "The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Incineration", 2],
+          ["Improved Fire Blast", 1],
+          ["Incineration", 3],
           ["Improved Fireball", 5],
           ["Ignite", 5],
           ["Pyroblast", 1],
@@ -2104,31 +2064,23 @@
           ["Fire Power", 3]
         ],
         "Frost": [
+          ["Frost Warding", 2],
           ["Improved Frostbolt", 1],
           ["Elemental Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
-          ["Arctic Reach", 2],
+          ["Arctic Reach", 1],
+          ["Ice Block", 1],
           ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Frost Warding", 2]
+          ["Fingers of Frost", 2]
         ]
       },
-      "core": [
-        {"talent": "Heating Up", "why": "467 DPS lost without it (58% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Pyroblast", "why": "135 DPS lost without it (17% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ignite", "why": "121 DPS lost without it (15% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Scorch", "why": "109 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Critical Mass", "why": "88 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Elemental Precision", "why": "64 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shatter", "why": "55 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Fingers of Frost", "why": "54 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."}
-      ],
+      "core": [],
       "flex": [],
-      "notes": ["+5.1% over the best hand draft of the spec, frostfire-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frostfire-raid, full raid): 0/29/22 (Frostfire (a Fire/Frost hybrid)) at 801.8 DPS; frostfire-fingers-of-frost-raid 762.8, frostfire-ml-raid 757.9, frostfire-raid 743.0 in the same fights; 4,511 builds simulated, 2 independent runs reached the top.", "The frostfire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -41.1%, fire-raid -31.8%, arcane-dps -52.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Frostbolt, Improved Frost Nova, Improved Blizzard, Ice Lance, Arctic Reach.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Blizzard -> Arctic Reach (range); Improved Frost Nova -> Frost Warding (survival); Improved Frostbolt -> Frost Warding (survival). Net +0.00% on a third seed."],
-      "open_questions": ["An open-search Frostfire build: check it against the community's Frostfire builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/-2255000013012503-0235010311103002-7"],
+      "notes": ["Against the best hand draft frostfire-fingers-of-frost-raid in a full raid, same gear and fights (100,000, one seed): +6.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frostfire-fingers-of-frost-raid: Permafrost → Frost Warding, Improved Blizzard → Arctic Reach, Improved Blizzard → Ice Block (the same DPS as the search winner 0/29/22 on one seed, 30,000 fights).", "Search result (full raid): 0/29/22 at 793.4 ± 0.17 DPS over 100,000 fights; runner-up 0/29/22 (+0.15%; the winner takes Permafrost 1; the runner-up Frostbite 1); 2,324 builds simulated; certificate: 1 confirmed move first, then none of its 347 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 0/29/22 at 789.2 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 10/28/13 at 497.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Fire Blast -> Master of Elements (+0.7% DPS). Net +0.65% on a third seed."],
+      "open_questions": ["A machine-searched Frostfire build: check it against the community's Frostfire builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
       "replaces": "frostfire-fingers-of-frost-raid"
     }
   ]

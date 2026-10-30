@@ -1,0 +1,181 @@
+{
+ "class": "warlock",
+ "spec": "sb-raid",
+ "build": "destruction-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-29",
+ "tank": false,
+ "removal": {
+  "Aftermath": 0.0029177107671907176,
+  "Agonizing Flames": 0.06339168578573284,
+  "Bane": 0.09406383958502684,
+  "Cataclysm": 0.019383411181673416,
+  "Conflagrate": 0.05551116891182295,
+  "Demonic Aegis": -0.0,
+  "Demonic Embrace": -0.0,
+  "Demonic Sacrifice": 0.10397119172057256,
+  "Fel Vitality": 0.00954951065674814,
+  "Fire and Brimstone": 0.015235151661248447,
+  "Improved Corruption": 0.029731621928419494,
+  "Improved Life Tap": 0.009683956829765417,
+  "Improved Shadow Bolt": 0.049346719519943294,
+  "Ruin": 0.055249791115469904,
+  "Shadow and Flame": 0.12319157279073012,
+  "Suppression": 0.05231994521461536
+ },
+ "free": [
+  "Demonic Aegis",
+  "Demonic Embrace"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Demonic Sacrifice"
+ ],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Aftermath",
+    1
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Aftermath",
+    1
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ]
+  ]
+ }
+}

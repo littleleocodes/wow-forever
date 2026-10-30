@@ -2267,5 +2267,132 @@
   "best_hand": "balance-moonkin-raid",
   "gain_vs_hand": 0.0,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "balance-dps",
+    "dps": 631.03,
+    "se": 0.104
+   },
+   "balance-moonkin-raid": {
+    "entry": "balance-dps",
+    "dps": 631.03,
+    "se": 0.104
+   },
+   "opt-balance-dps-raid-dps": {
+    "entry": "balance-dps",
+    "dps": 631.03,
+    "se": 0.104
+   }
+  },
+  "best_hand": "balance-moonkin-raid",
+  "gain_vs_hand": 0.0
+ },
+ "signature_check": {
+  "spec": "Balance",
+  "ok": true,
+  "core_share": 1.0,
+  "min_share": 0.7,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "balance-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 632.0,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Starfire": 0.6523,
+   "Moonfire": 0.1827,
+   "Insect Swarm": 0.165
+  },
+  "casts": {
+   "Innervate": 0.05,
+   "Starfire": 48.94,
+   "Insect Swarm": 11.87,
+   "Moonfire": 12.42
+  },
+  "allocation": {
+   "Balance": [
+    [
+     "Genesis",
+     5
+    ],
+    [
+     "Moonglow",
+     3
+    ],
+    [
+     "Improved Moonfire",
+     2
+    ],
+    [
+     "Nature's Majesty",
+     2
+    ],
+    [
+     "Nature's Reach",
+     2
+    ],
+    [
+     "Nature's Splendor",
+     1
+    ],
+    [
+     "Insect Swarm",
+     1
+    ],
+    [
+     "Vengeance",
+     5
+    ],
+    [
+     "Improved Starfire",
+     5
+    ],
+    [
+     "Nature's Grace",
+     1
+    ],
+    [
+     "Moonfury",
+     5
+    ],
+    [
+     "Moonkin Form",
+     1
+    ]
+   ],
+   "Feral Combat": [
+    [
+     "Heart of the Wild",
+     5
+    ]
+   ],
+   "Restoration": [
+    [
+     "Nature's Focus",
+     5
+    ],
+    [
+     "Naturalist",
+     5
+    ],
+    [
+     "Reflection",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms balance-moonkin-raid (+0.00% in a full raid)"
  }
 }

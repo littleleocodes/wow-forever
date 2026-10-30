@@ -2430,38 +2430,36 @@
  ],
  "signature_check": {
   "spec": "Assassination",
-  "ok": false,
-  "core_share": 0.7158,
+  "ok": true,
+  "core_share": 0.9804,
   "min_share": 0.6,
   "uncast": [],
-  "missing_talents": [
-   "Mutilate"
-  ],
-  "why": "lacks Mutilate",
+  "missing_talents": [],
+  "why": "",
   "entry": "assassination-raid",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 669.4,
-  "date": "2026-10-24",
+  "dps": 673.6,
+  "date": "2026-10-29",
   "commit": "30f67f5d2",
   "shares": {
-   "Auto Attack": 0.4837,
-   "Backstab": 0.2636,
-   "Eviscerate": 0.1312,
-   "Deadly Poison V": 0.0569,
-   "Instant Poison VI": 0.044,
-   "Garrote": 0.0108,
+   "Auto Attack": 0.4987,
+   "Mutilate": 0.1822,
+   "Eviscerate": 0.1747,
+   "Deadly Poison V": 0.0695,
+   "Instant Poison VI": 0.0553,
+   "Garrote": 0.0098,
    "Goblin Sapper Charge": 0.0098
   },
   "casts": {
-   "Slice and Dice": 8.25,
-   "Cold Blood": 1.0,
-   "spell 11337": 45.97,
-   "Backstab": 29.88,
-   "Eviscerate": 11.04,
    "Garrote": 1.0,
-   "spell 25349": 36.24,
-   "Vanish": 1.0
+   "Slice and Dice": 7.74,
+   "spell 11337": 55.99,
+   "Mutilate": 31.08,
+   "Eviscerate": 14.95,
+   "Vanish": 1.0,
+   "spell 25349": 48.05,
+   "Cold Blood": 1.0
   },
   "allocation": {
    "Assassination": [
@@ -2483,11 +2481,11 @@
     ],
     [
      "Lethality",
-     5
+     3
     ],
     [
      "Vile Poisons",
-     2
+     3
     ],
     [
      "Cold Blood",
@@ -2496,6 +2494,172 @@
     [
      "Improved Poisons",
      5
+    ],
+    [
+     "Mutilate",
+     1
+    ],
+    [
+     "Seal Fate",
+     5
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Improved Sinister Strike",
+     1
+    ],
+    [
+     "Lightning Reflexes",
+     1
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Endurance",
+     1
+    ],
+    [
+     "Improved Sprint",
+     2
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ]
+   ],
+   "Subtlety": []
+  }
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "assassination-raid",
+    "dps": 384.56,
+    "se": 0.063
+   },
+   "assassination-seal-fate-raid": {
+    "entry": "assassination-raid",
+    "dps": 378.77,
+    "se": 0.062
+   },
+   "assassination-mutilate-raid": {
+    "entry": "assassination-raid",
+    "dps": 376.28,
+    "se": 0.064
+   }
+  },
+  "best_hand": "assassination-seal-fate-raid",
+  "gain_vs_hand": 0.0153,
+  "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "assassination-raid",
+    "dps": 673.85,
+    "se": 0.09
+   },
+   "assassination-seal-fate-raid": {
+    "entry": "assassination-raid",
+    "dps": 664.24,
+    "se": 0.095
+   },
+   "assassination-mutilate-raid": {
+    "entry": "assassination-raid",
+    "dps": 650.83,
+    "se": 0.094
+   },
+   "assassination-ml-raid": {
+    "entry": "assassination-raid",
+    "dps": 669.52,
+    "se": 0.096
+   }
+  },
+  "best_hand": "assassination-seal-fate-raid",
+  "gain_vs_hand": 0.0145
+ },
+ "aligned_raid": {
+  "target": "assassination-seal-fate-raid",
+  "moves": [
+   {
+    "from": "Improved Sinister Strike",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   },
+   {
+    "from": "Endurance",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Sprint",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Sprint",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Vile Poisons",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     5
+    ],
+    [
+     "Mutilate",
+     1
     ],
     [
      "Seal Fate",
@@ -2529,38 +2693,20 @@
     ],
     [
      "Dual Wield Specialization",
-     3
+     5
     ]
    ],
-   "Subtlety": [
-    [
-     "Opportunity",
-     2
-    ]
-   ]
-  }
- },
- "compare": {
-  "setting": "dummy",
-  "dps": {
-   "winner": {
-    "entry": "assassination-raid",
-    "dps": 384.56,
-    "se": 0.063
-   },
-   "assassination-seal-fate-raid": {
-    "entry": "assassination-raid",
-    "dps": 378.77,
-    "se": 0.062
-   },
-   "assassination-mutilate-raid": {
-    "entry": "assassination-raid",
-    "dps": 376.28,
-    "se": 0.064
-   }
+   "Subtlety": []
   },
-  "best_hand": "assassination-seal-fate-raid",
-  "gain_vs_hand": 0.0153,
-  "commit": "30f67f5d2"
+  "split": "30/21/0",
+  "ratio": 1.0
+ },
+ "builds": {
+  "written": [
+   "assassination-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

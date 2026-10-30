@@ -1,0 +1,227 @@
+{
+ "class": "warrior",
+ "spec": "arms-battle-raid",
+ "build": "arms-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-29",
+ "tank": false,
+ "removal": {
+  "Anger Management": 0.009228124899461343,
+  "Bloodthrill": 0.09447402493598578,
+  "Booming Voice": -0.0,
+  "Cruelty": 0.05423492726611312,
+  "Deep Wounds": 0.06646992652781358,
+  "Deflection": -0.0,
+  "Impale": 0.02943075161677744,
+  "Improved Bloodrage": 0.007546541486378788,
+  "Improved Hamstring": 0.0009112362278999031,
+  "Improved Overpower": 0.050998857460288094,
+  "Improved Rend": 0.011080002321858906,
+  "Improved Slam": 0.09981088124030613,
+  "Improved Tactical Mastery": -0.0,
+  "Mortal Strike": 0.11200803077206045,
+  "Spearing Strike": 0.0076090445919413385,
+  "Sweeping Strikes": -0.0,
+  "Two-Handed Weapon Specialization": 0.028491783968120243,
+  "Unbridled Wrath": 0.007908167970581803,
+  "Weaponmaster": 0.019718813707189198
+ },
+ "free": [
+  "Booming Voice",
+  "Deflection",
+  "Improved Hamstring",
+  "Improved Tactical Mastery"
+ ],
+ "kept_for_rotation": [
+  "Mortal Strike"
+ ],
+ "active_never_worth": [
+  "Sweeping Strikes"
+ ],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Booming Voice",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Booming Voice",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    2
+   ],
+   [
+    "Improved Hamstring",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Improved Bloodrage",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    4
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    2
+   ],
+   [
+    "Improved Hamstring",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Improved Bloodrage",
+    2
+   ]
+  ]
+ }
+}

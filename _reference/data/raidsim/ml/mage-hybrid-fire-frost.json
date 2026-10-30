@@ -2597,5 +2597,273 @@
   "best_hand": "frostfire-raid",
   "gain_vs_hand": -0.0217,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frostfire-raid",
+    "dps": 793.43,
+    "se": 0.173
+   },
+   "frostfire-fingers-of-frost-raid": {
+    "entry": "frostfire-raid",
+    "dps": 745.46,
+    "se": 0.174
+   },
+   "frostfire-raid": {
+    "entry": "frostfire-raid",
+    "dps": 725.49,
+    "se": 0.151
+   },
+   "frostfire-open-raid": {
+    "entry": "frostfire-raid",
+    "dps": 788.25,
+    "se": 0.172
+   },
+   "frostfire-ml-raid": {
+    "entry": "frostfire-raid",
+    "dps": 747.92,
+    "se": 0.154
+   }
+  },
+  "best_hand": "frostfire-fingers-of-frost-raid",
+  "gain_vs_hand": 0.0643
+ },
+ "signature_check": {
+  "spec": "Hybrid Fire/Frost",
+  "ok": true,
+  "core_share": 0.3703,
+  "min_share": 0.3,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "frostfire-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 794.2,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Frostfire Bolt": 0.3703,
+   "Pyroblast": 0.2338,
+   "Fire Blast": 0.1874,
+   "Ignite": 0.1446,
+   "Scorch": 0.0534,
+   "Demonic Rune": 0.0105
+  },
+  "casts": {
+   "Scorch": 11.92,
+   "Pyroblast": 13.45,
+   "Frostfire Bolt": 38.26,
+   "Evocation": 1.0,
+   "Fire Blast": 24.84
+  },
+  "allocation": {
+   "Arcane": [],
+   "Fire": [
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Incineration",
+     3
+    ],
+    [
+     "Improved Fireball",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     1
+    ],
+    [
+     "Critical Mass",
+     5
+    ],
+    [
+     "Fire Power",
+     3
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     1
+    ],
+    [
+     "Improved Frostbolt",
+     1
+    ],
+    [
+     "Elemental Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Permafrost",
+     1
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Improved Blizzard",
+     2
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "frostfire-fingers-of-frost-raid",
+  "moves": [
+   {
+    "from": "Permafrost",
+    "to": "Frost Warding",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Blizzard",
+    "to": "Arctic Reach",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Blizzard",
+    "to": "Ice Block",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Arcane": [],
+   "Fire": [
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Incineration",
+     3
+    ],
+    [
+     "Improved Fireball",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     1
+    ],
+    [
+     "Critical Mass",
+     5
+    ],
+    [
+     "Fire Power",
+     3
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     1
+    ],
+    [
+     "Elemental Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     1
+    ],
+    [
+     "Ice Block",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  },
+  "split": "0/29/22",
+  "ratio": 1.0
+ },
+ "builds": {
+  "written": [
+   "frostfire-ml-raid"
+  ],
+  "superseded": [
+   "frostfire-open-raid"
+  ],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

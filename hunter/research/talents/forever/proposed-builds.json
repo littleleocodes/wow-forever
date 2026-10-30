@@ -2111,6 +2111,46 @@
       "open_questions": ["An open-search Marksmanship build: check it against the community's Marksmanship builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/502-0053352501522051-5-7"],
       "replaces": "mm-lone-wolf-raid"
+    },
+    {
+      "id": "beast-marks-ml-raid",
+      "name": "Beast-Marks — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Marksmanship",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Beast-Marks build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 3],
+          ["Intimidation", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Improved Arcane Shot", 5],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 3]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft mm-hawk-raid in a full raid, same gear and fights (100,000, one seed): +6.0% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow mm-hawk-raid: Improved Aspect of the Monkey → Endurance Training (3 points), Improved Revive Pet → Summon Hawk (the same DPS as the search winner 28/20/3 on one seed, 30,000 fights).", "Search result (full raid): 28/20/3 at 761.8 ± 0.08 DPS over 100,000 fights; runner-up 28/20/3 (+0.00%; the winner takes Improved Aspect of the Monkey 3, Improved Revive Pet 1; the runner-up Improved Aspect of the Monkey 2, Pathfinding 2); 5,204 builds simulated; certificate: none of its 219 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 28/20/3 at 748.3 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 29/17/5 at 405.9 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Intimidation (threat). Net +0.00% on a third seed."],
+      "open_questions": ["A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "mm-hawk-raid"
     }
   ]
 }

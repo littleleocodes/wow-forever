@@ -270,3 +270,13 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   first search's "certificate +10.92%" was a build leaving the penalty, not DPS. The written build (24/0/27, 759.1, passes the final
   check) is right; the higher 23/0/28 (792.4) fails the rule. Open idea: measure the core share once per build on the check seed
   (or with a small hysteresis) so the race's stages agree.
+- 2026-10-29 (raid queue 2, ml-builds): the filler audit's local search took any legal move and never checked the signature rule, so
+  its tidy of the new `frost-ml-raid` (21/0/30, spec Frost) moved seven Frost points into Arcane (Winter's Chill and Frost Channeling
+  into Arcane Mind and Arcane Instability, +17% in a full raid), leaving a 28/0/23 Arcane/Frost hybrid under the Frost spec field;
+  with the tree fix alone, its second pass took Missile Barrage's second point (+5.7%), which puts Frostbolt and the Frost spells at 52%
+  of the damage (the rule: 60%; the ML search had penalized it, it did not miss it). Fixed in `filler_audit.audit`: a move may not
+  change the spec the points make (`spec_modes.spec_of` without the `spec` field), and a candidate whose run fails the signature check
+  (`raid_signature.check` on its own casts, seed 1 and seed 2) is dropped. frost-ml-raid restored and tidied again (utility moves only,
+  -0.02%) and frost-raid re-raced (the queue had raced it mid-repair). No other filler record changed its build's spec; the queue's
+  sig-audit step re-checks every build's signature share. Rule: every step that edits a build keeps both the tree rule and the
+  signature rule, not only the searches.

@@ -1439,6 +1439,49 @@
       "notes": ["Final race over 100,000 fights: tank value 1.129 ± 0.000 (relative to prot-raid-tank over 20,000 fights); protection-ml-tank 1.126, opt-prot-tank-raid-tank 1.115, prot-raid-tank 1.109.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 193 one-move and 17,130 two-move builds, none better."],
       "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
       "sources": []
+    },
+    {
+      "id": "arms-ml-raid",
+      "name": "Arms — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Arms",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Arms build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry arms-battle-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 4],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Improved Overpower", 2],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Spearing Strike", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2],
+          ["Bloodthrill", 5],
+          ["Sweeping Strikes", 1],
+          ["Weaponmaster", 5],
+          ["Improved Slam", 2],
+          ["Improved Hamstring", 1],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5]
+        ],
+        "Protection": [
+          ["Improved Bloodrage", 2]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft arms-battle-raid in a full raid, same gear and fights (100,000, one seed): +0.8% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow arms-battle-raid: Improved Heroic Strike → Deflection (2 points), Improved Charge → Booming Voice (2 points) (the same DPS as the search winner 39/10/2 on one seed, 30,000 fights).", "Search result (full raid): 39/10/2 at 793.2 ± 0.17 DPS over 100,000 fights; runner-up 39/10/2 (+0.00%; the winner takes Improved Charge 2; the runner-up Deflection 1, Improved Charge 1); 2,087 builds simulated; certificate: none of its 477 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 38/10/3 at 786.0 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 34/17/0 at 368.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Deflection (survival). Net +0.00% on a third seed."],
+      "open_questions": ["A machine-searched Arms build: check it against the community's Arms builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "arms-battle-raid"
     }
   ]
 }

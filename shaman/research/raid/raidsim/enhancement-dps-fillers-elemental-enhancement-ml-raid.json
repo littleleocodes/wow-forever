@@ -3,30 +3,32 @@
  "spec": "enhancement-dps",
  "build": "elemental-enhancement-ml-raid",
  "setting": "raid",
- "date": "2026-10-15",
+ "date": "2026-10-29",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.01363062931762049,
-  "Call of Flame": 0.03038751115814342,
-  "Convection": 0.014758007835255382,
-  "Elemental Devastation": 0.027564027855950024,
-  "Elemental Focus": 0.022488645645638683,
-  "Elemental Weapons": 0.00579452349524523,
-  "Flurry": 0.08769187094610664,
-  "Improved Fire Nova": 0.058760664892510306,
-  "Improved Stormstrike": 0.02474377639940828,
-  "Mental Dexterity": 0.06478149403345201,
-  "Mental Quickness": 0.02272644443832772,
-  "Mindfulness": 0.0180027706815179,
-  "Reverberation": 0.01236160471525316,
-  "Shamanistic Focus": 0.0800606862934734,
-  "Stormstrike": 0.1722888037967798,
-  "Thundering Strikes": 0.04321975285669266,
-  "Tidal Focus": 0.002895481582283699,
-  "Totemic Focus": 0.0035046662033715315
+  "Ancestral Knowledge": 0.008978099613767387,
+  "Call of Flame": 0.04540831853968663,
+  "Convection": 0.010840908304430963,
+  "Elemental Devastation": 0.0244687715087456,
+  "Elemental Focus": 0.019577713971996147,
+  "Elemental Weapons": 0.023415086973298194,
+  "Flurry": 0.08319912433084697,
+  "Improved Stormstrike": 0.04806845141705396,
+  "Maelstrom Weapon": 0.017850564756020648,
+  "Mental Dexterity": 0.05534875427064412,
+  "Mental Quickness": 0.027938679572653502,
+  "Reverberation": 0.017972935548387636,
+  "Shamanistic Focus": 0.06918347956337523,
+  "Stormstrike": 0.20114320699870814,
+  "Thundering Strikes": 0.0469636690748213,
+  "Tidal Focus": 0.028055130064012723,
+  "Trial by Fire": 0.042195621792763593
  },
  "free": [],
- "kept_for_rotation": [],
+ "kept_for_rotation": [
+  "Maelstrom Weapon",
+  "Stormstrike"
+ ],
  "active_never_worth": [],
  "abilities_never_cast": [],
  "moves": [],
@@ -38,6 +40,10 @@
     5
    ],
    [
+    "Elemental Devastation",
+    3
+   ],
+   [
     "Reverberation",
     3
    ],
@@ -46,15 +52,11 @@
     3
    ],
    [
-    "Elemental Devastation",
-    3
-   ],
-   [
     "Elemental Focus",
     1
    ],
    [
-    "Improved Fire Nova",
+    "Trial by Fire",
     2
    ]
   ],
@@ -65,7 +67,7 @@
    ],
    [
     "Ancestral Knowledge",
-    5
+    3
    ],
    [
     "Mental Dexterity",
@@ -73,7 +75,7 @@
    ],
    [
     "Elemental Weapons",
-    2
+    3
    ],
    [
     "Shamanistic Focus",
@@ -94,20 +96,16 @@
    [
     "Improved Stormstrike",
     2
+   ],
+   [
+    "Maelstrom Weapon",
+    4
    ]
   ],
   "Restoration": [
    [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    2
-   ],
-   [
     "Tidal Focus",
-    1
+    5
    ]
   ]
  },
@@ -118,6 +116,10 @@
     5
    ],
    [
+    "Elemental Devastation",
+    3
+   ],
+   [
     "Reverberation",
     3
    ],
@@ -126,15 +128,11 @@
     3
    ],
    [
-    "Elemental Devastation",
-    3
-   ],
-   [
     "Elemental Focus",
     1
    ],
    [
-    "Improved Fire Nova",
+    "Trial by Fire",
     2
    ]
   ],
@@ -145,7 +143,7 @@
    ],
    [
     "Ancestral Knowledge",
-    5
+    3
    ],
    [
     "Mental Dexterity",
@@ -153,7 +151,7 @@
    ],
    [
     "Elemental Weapons",
-    2
+    3
    ],
    [
     "Shamanistic Focus",
@@ -174,20 +172,16 @@
    [
     "Improved Stormstrike",
     2
+   ],
+   [
+    "Maelstrom Weapon",
+    4
    ]
   ],
   "Restoration": [
    [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    2
-   ],
-   [
     "Tidal Focus",
-    1
+    5
    ]
   ]
  }

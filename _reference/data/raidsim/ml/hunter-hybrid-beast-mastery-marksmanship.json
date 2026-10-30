@@ -2651,5 +2651,231 @@
   "best_hand": "mm-hawk-raid",
   "gain_vs_hand": 0.0821,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 761.6,
+    "se": 0.078
+   },
+   "mm-hawk-raid": {
+    "entry": "bm-raid",
+    "dps": 718.3,
+    "se": 0.073
+   },
+   "bm-mm-raid": {
+    "entry": "mm-raid",
+    "dps": 716.9,
+    "se": 0.071
+   }
+  },
+  "best_hand": "mm-hawk-raid",
+  "gain_vs_hand": 0.0603
+ },
+ "signature_check": {
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "ok": true,
+  "core_share": 1.0,
+  "min_share": 0.7,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 761.5,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Shot": 0.342,
+   "Pet: Auto Attack": 0.2362,
+   "Arcane Shot": 0.1684,
+   "Aimed Shot": 0.124,
+   "Serpent Sting": 0.0928,
+   "Pet: Bite": 0.0203,
+   "Pet: Claw": 0.0158,
+   "Multi-Shot": 0.0005
+  },
+  "casts": {
+   "Aimed Shot": 21.19,
+   "Multi-Shot": 0.11,
+   "Rapid Fire": 0.86,
+   "Serpent Sting": 11.96,
+   "Aspect of the Hawk": 1.0,
+   "Arcane Shot": 38.12
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Improved Aspect of the Monkey",
+     3
+    ],
+    [
+     "Improved Revive Pet",
+     1
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Improved Mend Pet",
+     1
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     3
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Improved Arcane Shot",
+     5
+    ],
+    [
+     "Mortal Shots",
+     5
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     3
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "mm-hawk-raid",
+  "moves": [
+   {
+    "from": "Improved Aspect of the Monkey",
+    "to": "Endurance Training",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Aspect of the Monkey",
+    "to": "Endurance Training",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Aspect of the Monkey",
+    "to": "Endurance Training",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Revive Pet",
+    "to": "Summon Hawk",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Improved Mend Pet",
+     1
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Summon Hawk",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     3
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Improved Arcane Shot",
+     5
+    ],
+    [
+     "Mortal Shots",
+     5
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     3
+    ]
+   ]
+  },
+  "split": "28/20/3",
+  "ratio": 1.0
+ },
+ "builds": {
+  "written": [
+   "beast-marks-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

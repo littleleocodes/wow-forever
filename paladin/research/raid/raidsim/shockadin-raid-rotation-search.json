@@ -10,12 +10,12 @@
   "start": "_reference\\data\\raidsim\\apls\\paladin\\shockadin-sig-raid.base.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "553030030001012--1421533000133002"
+    "label": "shockadin-open-raid",
+    "talents": "550030132001112--0522523000123011"
    }
   ],
   "tuned_on": [
-   "open winner"
+   "shockadin-open-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -75,18 +75,26 @@
     "gain_seed2": 0.006314105077684262,
     "candidates": 368,
     "pass": 2
+   },
+   {
+    "round": 8,
+    "change": "insert at the top: cast Weakness Analyzer",
+    "gain_seed1": 0.018040040013697745,
+    "gain_seed2": 0.01837870865046809,
+    "candidates": 358,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 741.7452703568501,
-     "after": 792.4268164943281,
-     "base": 741.7452703568501,
+    "shockadin-open-raid": {
+     "before": 723.8242126099766,
+     "after": 777.9057493776392,
+     "base": 723.8242126099766,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.27114569834360747,
-     "oom_after": 0.04339649980834979
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
@@ -105,6 +113,6 @@
    "on": true
   },
   "first_date": "2026-10-29",
-  "passes": 2
+  "passes": 3
  }
 }

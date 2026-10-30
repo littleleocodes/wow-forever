@@ -2473,5 +2473,151 @@
   "best_hand": "fire-raid",
   "gain_vs_hand": 0.0475,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "fire-raid",
+    "dps": 857.48,
+    "se": 0.156
+   },
+   "fire-raid": {
+    "entry": "fire-raid",
+    "dps": 846.66,
+    "se": 0.167
+   },
+   "fire-open-raid": {
+    "entry": "fire-raid",
+    "dps": 856.94,
+    "se": 0.156
+   },
+   "opt-fire-raid-raid-dps": {
+    "entry": "fire-raid",
+    "dps": 816.13,
+    "se": 0.158
+   }
+  },
+  "best_hand": "fire-raid",
+  "gain_vs_hand": 0.0128
+ },
+ "signature_check": {
+  "spec": "Fire",
+  "ok": true,
+  "core_share": 0.9205,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "fire-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 858.2,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Fireball": 0.3328,
+   "Pyroblast": 0.2222,
+   "Fire Blast": 0.1924,
+   "Ignite": 0.1168,
+   "Arcane Missiles": 0.073,
+   "Scorch": 0.0564,
+   "Demonic Rune": 0.0065
+  },
+  "casts": {
+   "Pyroblast": 12.83,
+   "Scorch": 12.84,
+   "Fireball": 29.24,
+   "Fire Blast": 26.08,
+   "Arcane Missiles": 10.99,
+   "Combustion": 1.0
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Arcane Focus",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Arcane Impact",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     2
+    ]
+   ],
+   "Fire": [
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Incineration",
+     3
+    ],
+    [
+     "Improved Fireball",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     2
+    ],
+    [
+     "Critical Mass",
+     5
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Elemental Precision",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms fire-open-raid (+0.06% in a full raid)"
  }
 }

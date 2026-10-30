@@ -2403,5 +2403,149 @@
   "best_hand": "demonology-pact-raid",
   "gain_vs_hand": 0.0016,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "demonology-raid",
+    "dps": 868.91,
+    "se": 0.159
+   },
+   "demonology-pact-raid": {
+    "entry": "demonology-raid",
+    "dps": 864.16,
+    "se": 0.162
+   },
+   "demonology-ml-raid": {
+    "entry": "demonology-raid",
+    "dps": 868.91,
+    "se": 0.159
+   }
+  },
+  "best_hand": "demonology-pact-raid",
+  "gain_vs_hand": 0.0055
+ },
+ "signature_check": {
+  "spec": "Demonology",
+  "ok": true,
+  "core_share": 0.0829,
+  "min_share": 0.0,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "demonology-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 869.1,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Shadow Bolt": 0.5183,
+   "Bane of Agony": 0.1457,
+   "Corruption": 0.1414,
+   "Immolate": 0.0954,
+   "Pet: Auto Attack": 0.0647,
+   "Pet: Lash of Pain": 0.0181,
+   "Demonic Rune": 0.0124,
+   "Searing Pain": 0.0039,
+   "Pet: spell 1293697": 0.0002
+  },
+  "casts": {
+   "Curse of the Elements": 1.15,
+   "Life Tap": 13.14,
+   "Shadow Bolt": 45.99,
+   "Bane of Agony": 8.15,
+   "Immolate": 10.79,
+   "Corruption": 10.3,
+   "Searing Pain": 0.97
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Suppression",
+     1
+    ],
+    [
+     "Improved Corruption",
+     1
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     2
+    ],
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Improved Sayaad",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ],
+    [
+     "Master Summoner",
+     2
+    ],
+    [
+     "Decimation",
+     2
+    ],
+    [
+     "Demonic Brand",
+     3
+    ],
+    [
+     "Soul Link",
+     1
+    ],
+    [
+     "Demonic Knowledge",
+     3
+    ],
+    [
+     "Master Demonologist",
+     5
+    ],
+    [
+     "Demonic Pact",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms demonology-ml-raid (+0.00% in a full raid)"
  }
 }

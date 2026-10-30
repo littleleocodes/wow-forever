@@ -2323,5 +2323,142 @@
   "best_hand": "elemental-raid-dps",
   "gain_vs_hand": 0.0555,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "elemental-dps",
+    "dps": 617.38,
+    "se": 0.09
+   },
+   "elemental-raid-dps": {
+    "entry": "elemental-dps",
+    "dps": 626.55,
+    "se": 0.104
+   },
+   "opt-elemental-dps-raid-dps": {
+    "entry": "elemental-dps",
+    "dps": 616.79,
+    "se": 0.091
+   },
+   "elemental-raid": {
+    "entry": "elemental-dps",
+    "dps": 599.61,
+    "se": 0.089
+   }
+  },
+  "best_hand": "elemental-raid-dps",
+  "gain_vs_hand": -0.0146
+ },
+ "signature_check": {
+  "spec": "Elemental",
+  "ok": true,
+  "core_share": 0.9277,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "elemental-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 617.5,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Lightning Bolt": 0.5951,
+   "Lava Burst": 0.1891,
+   "Flame Shock": 0.126,
+   "Searing Totem": 0.0605,
+   "Chain Lightning": 0.0175,
+   "Demonic Rune": 0.0119
+  },
+  "casts": {
+   "Flame Shock": 9.26,
+   "Lava Burst": 14.0,
+   "Elemental Mastery": 1.0,
+   "Searing Totem": 4.0,
+   "Chain Lightning": 2.83,
+   "Lightning Bolt": 67.97
+  },
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Reverberation",
+     5
+    ],
+    [
+     "Elemental Alacrity",
+     3
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Lava Burst",
+     1
+    ],
+    [
+     "Lightning Overload",
+     3
+    ],
+    [
+     "Elemental Fury",
+     5
+    ],
+    [
+     "Elemental Mastery",
+     1
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     5
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     5
+    ],
+    [
+     "Mindfulness",
+     2
+    ],
+    [
+     "Totemic Focus",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms elemental-raid-dps (-1.46% in a full raid)"
  }
 }

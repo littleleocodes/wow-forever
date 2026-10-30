@@ -905,47 +905,6 @@
       "sources": ["https://talentsforever.com/rogue"]
     },
     {
-      "id": "assassination-ml-raid",
-      "name": "Assassination — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Assassination",
-      "generated": "2026-10-03",
-      "derived": "raid",
-      "summary": "The Assassination build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry assassination-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Ruthlessness", 3],
-          ["Improved Slice and Dice", 3],
-          ["Relentless Strikes", 1],
-          ["Lethality", 5],
-          ["Vile Poisons", 2],
-          ["Cold Blood", 1],
-          ["Improved Poisons", 5],
-          ["Seal Fate", 5]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Puncturing Wounds", 3],
-          ["Deflection", 1],
-          ["Precision", 3],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 3]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft assassination-seal-fate-raid in a full raid, same gear and fights (100,000, one seed): +0.8% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow assassination-seal-fate-raid: Endurance → Lightning Reflexes (the same DPS as the search winner 30/19/2 on one seed, 30,000 fights).", "Search result (full raid): 30/19/2 at 703.4 ± 0.10 DPS over 100,000 fights; runner-up 30/19/2 (+0.00%; the winner takes Endurance 1, Lightning Reflexes 4; the runner-up Endurance 2, Lightning Reflexes 3); 1,680 builds simulated; certificate: none of its 265 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 30/19/2 at 647.4 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 30/19/2 at 410.8 DPS.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Assassination: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build."],
-      "open_questions": ["A machine-searched Assassination build: check it against the community's Assassination builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"]
-    },
-    {
       "id": "combat-ml-raid",
       "name": "Combat — Raid (machine-learning search)",
       "role": "dps",
@@ -1950,6 +1909,47 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.40; subtlety-leveling 25.64. The search simulated 41,965 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Subtlety leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/rogue/60/0243201-302013-422302331221300101-7"]
+    },
+    {
+      "id": "assassination-ml-raid",
+      "name": "Assassination — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Assassination",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Assassination build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry assassination-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Ruthlessness", 3],
+          ["Improved Slice and Dice", 3],
+          ["Relentless Strikes", 1],
+          ["Lethality", 3],
+          ["Vile Poisons", 3],
+          ["Cold Blood", 1],
+          ["Improved Poisons", 5],
+          ["Mutilate", 1],
+          ["Seal Fate", 5]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Puncturing Wounds", 3],
+          ["Deflection", 1],
+          ["Precision", 3],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 5]
+        ],
+        "Subtlety": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft assassination-seal-fate-raid in a full raid, same gear and fights (100,000, one seed): +1.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow assassination-seal-fate-raid: Improved Sinister Strike → Lightning Reflexes, Endurance → Lightning Reflexes, Improved Sprint → Lightning Reflexes (2 points) (the same DPS as the search winner 30/21/0 on one seed, 30,000 fights).", "Search result (full raid): 30/21/0 at 673.8 ± 0.09 DPS over 100,000 fights; runner-up 30/21/0 (+0.00%; the winner takes Improved Sinister Strike 1, Lightning Reflexes 1; the runner-up Improved Sinister Strike 2); 1,782 builds simulated; certificate: none of its 182 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 30/21/0 at 667.9 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 38/11/2 at 192.3 DPS."],
+      "open_questions": ["A machine-searched Assassination build: check it against the community's Assassination builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "assassination-seal-fate-raid"
     }
   ]
 }

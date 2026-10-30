@@ -2442,7 +2442,7 @@
  "signature_check": {
   "spec": "Shadow",
   "ok": true,
-  "core_share": 0.8999,
+  "core_share": 0.8944,
   "min_share": 0.6,
   "uncast": [],
   "missing_talents": [],
@@ -2450,62 +2450,57 @@
   "entry": "shadow-dps",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 798.3,
-  "date": "2026-10-24",
+  "dps": 800.2,
+  "date": "2026-10-29",
   "commit": "30f67f5d2",
   "shares": {
-   "Mind Flay": 0.4091,
-   "Shadow Word: Pain": 0.1978,
-   "Mind Blast": 0.1808,
-   "Devouring Plague": 0.1122,
-   "Shadow Word: Death": 0.0934,
-   "Demonic Rune": 0.0067
+   "Mind Flay": 0.3973,
+   "Shadow Word: Pain": 0.1964,
+   "Mind Blast": 0.1847,
+   "Devouring Plague": 0.1161,
+   "Shadow Word: Death": 0.0926,
+   "Demonic Rune": 0.013
   },
   "casts": {
-   "Mind Flay": 38.89,
-   "Mind Blast": 20.47,
-   "Shadow Word: Pain": 7.79,
-   "Shadow Word: Death": 10.0,
-   "Devouring Plague": 7.02,
+   "Mind Flay": 38.07,
    "Shadowform": 1.0,
-   "Berserking": 1.0,
-   "Inner Focus": 1.0
+   "Shadow Word: Death": 9.99,
+   "Mind Blast": 21.06,
+   "Devouring Plague": 7.91,
+   "Shadow Word: Pain": 7.78
   },
   "allocation": {
    "Discipline": [
+    [
+     "Power in Light",
+     1
+    ],
     [
      "Twin Disciplines",
      5
     ],
     [
-     "Martyrdom",
-     1
-    ],
-    [
      "Mental Strength",
-     3
+     5
     ],
     [
-     "Silent Resolve",
-     3
-    ],
-    [
-     "Improved Power Word: Shield",
-     2
-    ],
-    [
-     "Inner Focus",
+     "Mental Agility",
      1
-    ],
-    [
-     "Meditation",
-     3
     ]
    ],
-   "Holy": [],
+   "Holy": [
+    [
+     "Twilight Focus",
+     1
+    ]
+   ],
    "Shadow": [
     [
      "Shadow Focus",
+     5
+    ],
+    [
+     "Blackout",
      5
     ],
     [
@@ -2517,40 +2512,36 @@
      2
     ],
     [
-     "Improved Mind Flay",
-     2
+     "Improved Psychic Scream",
+     1
     ],
     [
      "Mind Flay",
      1
     ],
     [
-     "Dark Inspiration",
-     3
+     "Improved Mind Flay",
+     2
     ],
     [
-     "Shadow Weaving",
-     3
+     "Dark Inspiration",
+     5
     ],
     [
      "Vampiric Embrace",
      1
     ],
     [
-     "Devouring Contagion",
-     2
-    ],
-    [
-     "Silence",
-     1
-    ],
-    [
-     "Darkness",
-     5
+     "Shadow Weaving",
+     3
     ],
     [
      "Early Demise",
      2
+    ],
+    [
+     "Darkness",
+     5
     ],
     [
      "Shadowform",
@@ -2576,5 +2567,29 @@
   "best_hand": null,
   "gain_vs_hand": null,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "shadow-dps",
+    "dps": 800.42,
+    "se": 0.089
+   },
+   "opt-shadow-dps-raid-dps": {
+    "entry": "shadow-dps",
+    "dps": 796.87,
+    "se": 0.088
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms opt-shadow-dps-raid-dps (+0.45% in a full raid)"
  }
 }

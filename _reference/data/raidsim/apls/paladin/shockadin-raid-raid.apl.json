@@ -20,6 +20,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 272438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-29: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    },
    "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13)"

@@ -2512,5 +2512,246 @@
   "best_hand": "frost-winters-chill-raid",
   "gain_vs_hand": 0.1689,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 593.56,
+    "se": 0.095
+   },
+   "frost-winters-chill-raid": {
+    "entry": "frost-raid",
+    "dps": 499.93,
+    "se": 0.078
+   },
+   "frost-ml-raid": {
+    "entry": "frost-raid",
+    "dps": 543.73,
+    "se": 0.093
+   }
+  },
+  "best_hand": "frost-winters-chill-raid",
+  "gain_vs_hand": 0.1873
+ },
+ "signature_check": {
+  "spec": "Frost",
+  "ok": true,
+  "core_share": 0.6538,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 593.5,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Frostbolt": 0.5325,
+   "Arcane Missiles": 0.197,
+   "Arcane Blast": 0.1445,
+   "Ice Lance": 0.1212,
+   "Fire Blast": 0.0047
+  },
+  "casts": {
+   "Ice Lance": 9.2,
+   "Fire Blast": 0.55,
+   "Arcane Blast": 23.45,
+   "Frostbolt": 42.95,
+   "Arcane Missiles": 17.97
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Arcane Focus",
+     5
+    ],
+    [
+     "Improved Channeling",
+     2
+    ],
+    [
+     "Missile Barrage",
+     1
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     1
+    ],
+    [
+     "Arcane Mind",
+     1
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Improved Frostbolt",
+     5
+    ],
+    [
+     "Elemental Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frostbite",
+     3
+    ],
+    [
+     "Frost Channeling",
+     2
+    ],
+    [
+     "Improved Blizzard",
+     1
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Cold Snap",
+     1
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ],
+    [
+     "Winter's Chill",
+     4
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "frost-winters-chill-raid",
+  "moves": [
+   {
+    "from": "Improved Blizzard",
+    "to": "Winter's Chill",
+    "ratio": 1.00004
+   }
+  ],
+  "allocation": {
+   "Arcane": [
+    [
+     "Arcane Focus",
+     5
+    ],
+    [
+     "Improved Channeling",
+     2
+    ],
+    [
+     "Missile Barrage",
+     1
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     1
+    ],
+    [
+     "Arcane Mind",
+     1
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Improved Frostbolt",
+     5
+    ],
+    [
+     "Elemental Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frostbite",
+     3
+    ],
+    [
+     "Frost Channeling",
+     2
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Cold Snap",
+     1
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ],
+    [
+     "Winter's Chill",
+     5
+    ]
+   ]
+  },
+  "split": "21/0/30",
+  "ratio": 1.00004
+ },
+ "builds": {
+  "written": [
+   "frost-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

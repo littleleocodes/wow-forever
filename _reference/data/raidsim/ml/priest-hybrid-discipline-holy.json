@@ -2445,7 +2445,7 @@
  "signature_check": {
   "spec": "Hybrid Discipline/Holy",
   "ok": true,
-  "core_share": 0.603,
+  "core_share": 0.5467,
   "min_share": 0.5,
   "uncast": [],
   "missing_talents": [],
@@ -2453,27 +2453,28 @@
   "entry": "smite-dps",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 593.8,
-  "date": "2026-10-24",
+  "dps": 627.2,
+  "date": "2026-10-29",
   "commit": "30f67f5d2",
   "shares": {
-   "Smite": 0.416,
-   "Holy Fire": 0.187,
-   "Shadow Word: Pain": 0.1761,
-   "Penance": 0.1335,
-   "Shadow Word: Death": 0.0581,
-   "Devouring Plague": 0.0156,
-   "Demonic Rune": 0.0138
+   "Smite": 0.4701,
+   "Shadow Word: Pain": 0.1792,
+   "Mind Blast": 0.1762,
+   "Holy Fire": 0.0766,
+   "Shadow Word: Death": 0.0687,
+   "Devouring Plague": 0.0157,
+   "Demonic Rune": 0.0133,
+   "Mind Flay": 0.0002
   },
   "casts": {
-   "Smite": 40.55,
-   "Penance": 14.13,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death": 8.99,
+   "Mind Blast": 22.01,
+   "Smite": 60.78,
    "Devouring Plague": 1.0,
-   "Holy Fire": 13.8,
-   "Shadow Word: Pain": 7.66,
-   "Shadow Word: Death": 7.54,
-   "Berserking": 1.0,
-   "Inner Focus": 1.0
+   "Shadow Word: Pain": 7.77,
+   "Mind Flay": 0.06,
+   "Holy Fire": 6.01
   },
   "allocation": {
    "Discipline": [
@@ -2490,24 +2491,12 @@
      3
     ],
     [
-     "Mental Agility",
-     2
-    ],
-    [
      "Inner Focus",
      1
     ],
     [
      "Meditation",
      3
-    ],
-    [
-     "Mental Strength",
-     1
-    ],
-    [
-     "Penance",
-     1
     ]
    ],
    "Holy": [
@@ -2521,7 +2510,7 @@
     ],
     [
      "Spell Warding",
-     2
+     1
     ],
     [
      "Divine Fury",
@@ -2532,20 +2521,12 @@
      1
     ],
     [
-     "Blessed Recovery",
-     3
+     "Inspiration",
+     2
     ],
     [
      "Searing Light",
      2
-    ],
-    [
-     "Binding Heal",
-     1
-    ],
-    [
-     "Spiritual Guidance",
-     3
     ]
    ],
    "Shadow": [
@@ -2554,7 +2535,23 @@
      5
     ],
     [
+     "Improved Mind Blast",
+     5
+    ],
+    [
      "Improved Shadow Word: Pain",
+     2
+    ],
+    [
+     "Shadow Reach",
+     2
+    ],
+    [
+     "Mind Flay",
+     1
+    ],
+    [
+     "Shadow Weaving",
      2
     ]
    ]
@@ -2577,5 +2574,34 @@
   "best_hand": "smite-discipline-raid",
   "gain_vs_hand": 0.102,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "smite-dps",
+    "dps": 627.31,
+    "se": 0.051
+   },
+   "smite-discipline-raid": {
+    "entry": "smite-dps",
+    "dps": 610.49,
+    "se": 0.051
+   },
+   "smite-open-raid": {
+    "entry": "smite-dps",
+    "dps": 626.85,
+    "se": 0.05
+   }
+  },
+  "best_hand": "smite-discipline-raid",
+  "gain_vs_hand": 0.0276
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms smite-open-raid (+0.07% in a full raid)"
  }
 }

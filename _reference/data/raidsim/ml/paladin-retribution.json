@@ -2440,5 +2440,155 @@
   "best_hand": "ret-full-buffs-raid",
   "gain_vs_hand": 0.014,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "ret-dps",
+    "dps": 789.69,
+    "se": 0.134
+   },
+   "ret-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 760.45,
+    "se": 0.137
+   },
+   "ret-full-buffs-raid": {
+    "entry": "ret-dps",
+    "dps": 788.13,
+    "se": 0.133
+   },
+   "opt-ret-dps-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 760.51,
+    "se": 0.137
+   }
+  },
+  "best_hand": "ret-full-buffs-raid",
+  "gain_vs_hand": 0.002
+ },
+ "signature_check": {
+  "spec": "Retribution",
+  "ok": true,
+  "core_share": 0.8552,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "ret-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 789.6,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Attack": 0.3036,
+   "Seal of Command": 0.1514,
+   "Seal of Righteousness": 0.1326,
+   "Holy Strike": 0.1145,
+   "Consecration": 0.0841,
+   "Judgement of Command": 0.0781,
+   "Judgement of Righteousness": 0.0751,
+   "Hammer of Wrath": 0.0498,
+   "Demonic Rune": 0.0109
+  },
+  "casts": {
+   "Judgement of Command": 12.0,
+   "Concentration Aura": 0.01,
+   "Consecration": 17.0,
+   "Judgement of Righteousness": 11.0,
+   "Seal of Command": 41.0,
+   "Seal of Righteousness": 40.99,
+   "Holy Strike": 18.0,
+   "Hammer of Wrath": 6.0
+  },
+  "allocation": {
+   "Holy": [
+    [
+     "Divine Strength",
+     5
+    ],
+    [
+     "Divine Intellect",
+     1
+    ],
+    [
+     "Improved Seals",
+     3
+    ]
+   ],
+   "Protection": [
+    [
+     "Toughness",
+     5
+    ],
+    [
+     "Precision",
+     3
+    ]
+   ],
+   "Retribution": [
+    [
+     "Benediction",
+     5
+    ],
+    [
+     "Improved Judgement",
+     2
+    ],
+    [
+     "Holy Conduit",
+     2
+    ],
+    [
+     "Conviction",
+     5
+    ],
+    [
+     "Vindication",
+     3
+    ],
+    [
+     "Sanctified Judgement",
+     3
+    ],
+    [
+     "Seal of Command",
+     1
+    ],
+    [
+     "Sacred Arbiter",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Vengeance",
+     3
+    ],
+    [
+     "Champion of the Light",
+     3
+    ],
+    [
+     "Instrument of Law",
+     2
+    ],
+    [
+     "Twist of Light",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms ret-full-buffs-raid (+0.20% in a full raid)"
  }
 }

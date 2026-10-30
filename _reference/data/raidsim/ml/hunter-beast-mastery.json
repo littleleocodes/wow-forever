@@ -2360,5 +2360,134 @@
   "best_hand": null,
   "gain_vs_hand": null,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 769.61,
+    "se": 0.077
+   },
+   "beast-mastery-ml-raid": {
+    "entry": "bm-raid",
+    "dps": 766.26,
+    "se": 0.076
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "signature_check": {
+  "spec": "Beast Mastery",
+  "ok": true,
+  "core_share": 0.3109,
+  "min_share": 0.3,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 769.8,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Shot": 0.3234,
+   "Pet: Auto Attack": 0.2709,
+   "Arcane Shot": 0.1411,
+   "Aimed Shot": 0.1275,
+   "Serpent Sting": 0.0971,
+   "Pet: Bite": 0.0219,
+   "Pet: Claw": 0.0182,
+   "Multi-Shot": 0.0
+  },
+  "casts": {
+   "Arcane Shot": 33.7,
+   "Rapid Fire": 0.97,
+   "Multi-Shot": 0.01,
+   "Bestial Wrath": 2.0,
+   "Aimed Shot": 22.97,
+   "Serpent Sting": 11.96,
+   "Aspect of the Hawk": 1.0
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Summon Hawk",
+     1
+    ],
+    [
+     "Intimidation",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     5
+    ],
+    [
+     "Bestial Wrath",
+     1
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     2
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Improved Arcane Shot",
+     3
+    ],
+    [
+     "Mortal Shots",
+     5
+    ]
+   ],
+   "Survival": []
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms beast-mastery-ml-raid (+0.44% in a full raid)"
  }
 }

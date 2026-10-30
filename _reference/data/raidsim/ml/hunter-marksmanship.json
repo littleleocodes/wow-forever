@@ -2347,5 +2347,148 @@
   "best_hand": "bm-mm-full-buffs-raid",
   "gain_vs_hand": 0.0088,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "mm-raid",
+    "dps": 776.9,
+    "se": 0.08
+   },
+   "mm-lone-wolf-raid": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 754.64,
+    "se": 0.093
+   },
+   "bm-mm-full-buffs-raid": {
+    "entry": "mm-raid",
+    "dps": 711.46,
+    "se": 0.073
+   },
+   "marksmanship-open-raid": {
+    "entry": "mm-raid",
+    "dps": 776.9,
+    "se": 0.08
+   },
+   "marksmanship-ml-parse": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 719.08,
+    "se": 0.089
+   }
+  },
+  "best_hand": "mm-lone-wolf-raid",
+  "gain_vs_hand": 0.0295
+ },
+ "signature_check": {
+  "spec": "Marksmanship",
+  "ok": true,
+  "core_share": 0.8228,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "mm-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 777.5,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Shot": 0.3541,
+   "Arcane Shot": 0.1612,
+   "Pet: Auto Attack": 0.1497,
+   "Aimed Shot": 0.1399,
+   "Serpent Sting": 0.1075,
+   "Sniper Shot": 0.0591,
+   "Pet: Bite": 0.014,
+   "Pet: Claw": 0.0101,
+   "spell 1295633": 0.0035,
+   "Multi-Shot": 0.0011
+  },
+  "casts": {
+   "Arcane Shot": 35.3,
+   "Aspect of the Hawk": 1.0,
+   "Multi-Shot": 0.22,
+   "Sniper Shot": 7.91,
+   "Serpent Sting": 10.98,
+   "Aimed Shot": 21.65,
+   "Rapid Fire": 1.0
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Focused Fire",
+     2
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     3
+    ],
+    [
+     "Efficiency",
+     3
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Rapid Killing",
+     2
+    ],
+    [
+     "Improved Arcane Shot",
+     5
+    ],
+    [
+     "Trueshot Aura",
+     1
+    ],
+    [
+     "Mortal Shots",
+     5
+    ],
+    [
+     "Rapid Recuperation",
+     2
+    ],
+    [
+     "Barrage",
+     2
+    ],
+    [
+     "Ranged Weapon Specialization",
+     5
+    ],
+    [
+     "Sniper Shot",
+     1
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     5
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms marksmanship-open-raid (+0.00% in a full raid)"
  }
 }

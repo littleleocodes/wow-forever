@@ -932,47 +932,6 @@
       "order_label": "stats model"
     },
     {
-      "id": "destruction-ml-raid",
-      "name": "Destruction — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Destruction",
-      "generated": "2026-10-02",
-      "derived": "raid",
-      "summary": "The Destruction build the machine-learning talent search found on the training dummy (only your own buffs) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry sb-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Affliction": [
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Corruption", 3]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Demonic Aegis", 2],
-          ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Improved Shadow Bolt", 5],
-          ["Bane", 5],
-          ["Cataclysm", 2],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Agonizing Flames", 3],
-          ["Conflagrate", 1],
-          ["Fire and Brimstone", 3],
-          ["Shadow and Flame", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft destruction-incinerate-raid in the same gear and fights (100,000, one seed): +12.0% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow destruction-incinerate-raid: Demonic Energies → Demonic Aegis (2 points) (the same DPS as the search winner 10/11/30 on one seed, 30,000 fights).", "Search result: 10/11/30 at 627.7 ± 0.10 DPS over 100,000 fights; runner-up 10/11/30 (+0.00%; the winner takes Demonic Energies 2; the runner-up Demonic Energies 1, Improved Voidwalker 1); 3,993 builds simulated; certificate: the neighbours ahead on the short run (of 392) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 10/11/30 at 597.9 DPS on the dummy (other talents: _reference/dps-rankings.md).", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Destruction: its full-raid winner is +0.46% against it, under the 0.5% bar for a new build."],
-      "open_questions": ["A machine-searched Destruction build: check it against the community's Destruction builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"],
-      "replaces": "destruction-incinerate-raid"
-    },
-    {
       "id": "demonology-ml-raid",
       "name": "Demonology — Raid (machine-learning search)",
       "role": "dps",
@@ -1862,6 +1821,47 @@
       "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7"],
       "replaces": "ds-ruin-raid"
+    },
+    {
+      "id": "destruction-ml-raid",
+      "name": "Destruction — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Destruction build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry sb-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 2]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5],
+          ["Bane", 5],
+          ["Cataclysm", 3],
+          ["Aftermath", 1],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Fire and Brimstone", 3],
+          ["Shadow and Flame", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft destruction-incinerate-raid in a full raid, same gear and fights (100,000, one seed): +7.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow destruction-incinerate-raid: Unholy Power → Demonic Embrace (5 points), Improved Voidwalker → Demonic Aegis (the same DPS as the search winner 9/11/31 on one seed, 30,000 fights).", "Search result (full raid): 9/11/31 at 769.9 ± 0.13 DPS over 100,000 fights; runner-up 9/11/31 (+0.00%; the winner takes Demonic Aegis 1; the runner-up Improved Health Funnel 1); 4,208 builds simulated; certificate: none of its 200 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 9/11/31 at 736.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 10/11/30 at 681.5 DPS."],
+      "open_questions": ["A machine-searched Destruction build: check it against the community's Destruction builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "destruction-incinerate-raid"
     }
   ]
 }

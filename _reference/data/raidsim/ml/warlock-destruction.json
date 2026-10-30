@@ -2576,5 +2576,254 @@
   "best_hand": "destruction-incinerate-raid",
   "gain_vs_hand": 0.0616,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 770.04,
+    "se": 0.134
+   },
+   "destruction-incinerate-raid": {
+    "entry": "incinerate-raid",
+    "dps": 716.22,
+    "se": 0.094
+   },
+   "destruction-ml-raid": {
+    "entry": "sb-raid",
+    "dps": 763.88,
+    "se": 0.132
+   }
+  },
+  "best_hand": "destruction-incinerate-raid",
+  "gain_vs_hand": 0.0751
+ },
+ "signature_check": {
+  "spec": "Destruction",
+  "ok": true,
+  "core_share": 0.6838,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 770.3,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Shadow Bolt": 0.4835,
+   "Corruption": 0.1516,
+   "Bane of Agony": 0.1511,
+   "Immolate": 0.1031,
+   "Conflagrate": 0.0925,
+   "Demonic Rune": 0.0135,
+   "Searing Pain": 0.0046
+  },
+  "casts": {
+   "Conflagrate": 14.03,
+   "Immolate": 10.4,
+   "Searing Pain": 1.12,
+   "Bane of Agony": 8.16,
+   "Life Tap": 10.24,
+   "Curse of the Elements": 1.1,
+   "Shadow Bolt": 40.78,
+   "Corruption": 9.9
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     1
+    ],
+    [
+     "Improved Voidwalker",
+     1
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "destruction-incinerate-raid",
+  "moves": [
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Voidwalker",
+    "to": "Demonic Aegis",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  },
+  "split": "9/11/31",
+  "ratio": 1.0
+ },
+ "builds": {
+  "written": [
+   "destruction-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

@@ -2506,7 +2506,7 @@
  "signature_check": {
   "spec": "Combat",
   "ok": true,
-  "core_share": 0.9069,
+  "core_share": 0.8966,
   "min_share": 0.7,
   "uncast": [],
   "missing_talents": [],
@@ -2514,29 +2514,28 @@
   "entry": "combat-daggers-raid",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 680.6,
-  "date": "2026-10-24",
+  "dps": 681.3,
+  "date": "2026-10-29",
   "commit": "30f67f5d2",
   "shares": {
-   "Auto Attack": 0.5245,
-   "Backstab": 0.2837,
-   "Eviscerate": 0.0987,
-   "Deadly Poison V": 0.0453,
-   "Instant Poison VI": 0.0273,
-   "Garrote": 0.0109,
+   "Auto Attack": 0.5226,
+   "Backstab": 0.2816,
+   "Eviscerate": 0.0924,
+   "Deadly Poison V": 0.0503,
+   "Instant Poison VI": 0.0327,
+   "Garrote": 0.0108,
    "Goblin Sapper Charge": 0.0096
   },
   "casts": {
-   "Vanish": 1.0,
-   "Eviscerate": 7.65,
-   "Blade Flurry": 2.0,
-   "Slice and Dice": 9.3,
-   "Adrenaline Rush": 1.0,
-   "Cold Blood": 1.0,
-   "spell 11337": 31.38,
-   "spell 25349": 30.21,
+   "Slice and Dice": 9.31,
    "Garrote": 1.0,
-   "Backstab": 30.95
+   "Adrenaline Rush": 1.0,
+   "Blade Flurry": 2.0,
+   "spell 25349": 34.14,
+   "spell 11337": 37.64,
+   "Vanish": 1.0,
+   "Backstab": 30.95,
+   "Eviscerate": 7.65
   },
   "allocation": {
    "Assassination": [
@@ -2561,8 +2560,8 @@
      3
     ],
     [
-     "Cold Blood",
-     1
+     "Improved Poisons",
+     2
     ]
    ],
    "Combat": [
@@ -2600,7 +2599,7 @@
     ],
     [
      "Hack and Slash",
-     5
+     4
     ],
     [
      "Weapon Expertise",
@@ -2650,5 +2649,44 @@
   "best_hand": "combat-daggers-raid",
   "gain_vs_hand": 0.074,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "combat-daggers-raid",
+    "dps": 681.82,
+    "se": 0.089
+   },
+   "combat-daggers-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 674.26,
+    "se": 0.088
+   },
+   "combat-swords-raid": {
+    "entry": "combat-swords-raid",
+    "dps": 606.87,
+    "se": 0.085
+   },
+   "combat-ml-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 680.74,
+    "se": 0.088
+   },
+   "opt-combat-daggers-raid-raid-dps": {
+    "entry": "combat-daggers-raid",
+    "dps": 659.0,
+    "se": 0.086
+   }
+  },
+  "best_hand": "combat-daggers-raid",
+  "gain_vs_hand": 0.0112
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms combat-ml-raid (+0.16% in a full raid)"
  }
 }

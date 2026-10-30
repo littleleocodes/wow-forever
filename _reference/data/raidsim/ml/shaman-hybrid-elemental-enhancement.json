@@ -2495,5 +2495,250 @@
   "best_hand": null,
   "gain_vs_hand": null,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "enhancement-dps",
+    "dps": 711.92,
+    "se": 0.116
+   },
+   "elemental-enhancement-ml-raid": {
+    "entry": "enhancement-dps",
+    "dps": 668.7,
+    "se": 0.109
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "signature_check": {
+  "spec": "Hybrid Elemental/Enhancement",
+  "ok": true,
+  "core_share": 0.7765,
+  "min_share": 0.45,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "enhancement-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 711.9,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Attack": 0.4484,
+   "Stormstrike": 0.1395,
+   "Earth Shock": 0.1115,
+   "Fire Nova": 0.09,
+   "Flame Shock": 0.0771,
+   "Magma Totem": 0.0697,
+   "Lightning Bolt": 0.059,
+   "Searing Totem": 0.0047
+  },
+  "casts": {
+   "Earth Shock": 21.53,
+   "Magma Totem": 3.99,
+   "Lightning Bolt": 9.6,
+   "Grace of Air Totem": 1.0,
+   "Stormstrike": 21.98,
+   "Fire Nova": 22.63,
+   "Flame Shock": 8.12,
+   "Rockbiter Weapon": 1.0,
+   "Searing Totem": 2.3,
+   "Strength of Earth Totem": 1.0
+  },
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     1
+    ],
+    [
+     "Concussion",
+     4
+    ],
+    [
+     "Elemental Devastation",
+     3
+    ],
+    [
+     "Reverberation",
+     3
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Trial by Fire",
+     2
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     3
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Elemental Weapons",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Stormstrike",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ],
+    [
+     "Improved Stormstrike",
+     2
+    ],
+    [
+     "Maelstrom Weapon",
+     4
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     5
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "elemental-enhancement-ml-raid",
+  "moves": [
+   {
+    "from": "Concussion",
+    "to": "Convection",
+    "ratio": 1.00018
+   },
+   {
+    "from": "Concussion",
+    "to": "Convection",
+    "ratio": 1.00001
+   },
+   {
+    "from": "Concussion",
+    "to": "Convection",
+    "ratio": 1.00023
+   },
+   {
+    "from": "Concussion",
+    "to": "Convection",
+    "ratio": 0.99984
+   }
+  ],
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Elemental Devastation",
+     3
+    ],
+    [
+     "Reverberation",
+     3
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Trial by Fire",
+     2
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     3
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Elemental Weapons",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Stormstrike",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ],
+    [
+     "Improved Stormstrike",
+     2
+    ],
+    [
+     "Maelstrom Weapon",
+     4
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     5
+    ]
+   ]
+  },
+  "split": "17/29/5",
+  "ratio": 0.99984
+ },
+ "builds": {
+  "written": [
+   "elemental-enhancement-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

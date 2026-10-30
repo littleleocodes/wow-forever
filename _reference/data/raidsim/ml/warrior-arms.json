@@ -2564,5 +2564,268 @@
   "best_hand": "arms-battle-raid",
   "gain_vs_hand": 0.0051,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "arms-battle-raid",
+    "dps": 793.36,
+    "se": 0.169
+   },
+   "arms-battle-raid": {
+    "entry": "arms-battle-raid",
+    "dps": 786.83,
+    "se": 0.172
+   },
+   "arms-community-parse": {
+    "entry": "arms-battle-raid",
+    "dps": 787.7,
+    "se": 0.171
+   }
+  },
+  "best_hand": "arms-battle-raid",
+  "gain_vs_hand": 0.0083
+ },
+ "signature_check": {
+  "spec": "Arms",
+  "ok": true,
+  "core_share": 0.9668,
+  "min_share": 0.8,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "arms-battle-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 793.3,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Auto Attack": 0.4011,
+   "Overpower": 0.1571,
+   "Mortal Strike": 0.1486,
+   "Deep Wound": 0.0766,
+   "Slam": 0.0693,
+   "Execute": 0.0673,
+   "Rend": 0.0468,
+   "Hamstring": 0.0183,
+   "Spearing Strike": 0.0149
+  },
+  "casts": {
+   "Hamstring": 40.8,
+   "Battle Stance": 1.0,
+   "Mortal Strike": 22.47,
+   "Slam": 11.19,
+   "Execute": 9.51,
+   "Bloodrage": 1.98,
+   "Spearing Strike": 6.94,
+   "Rend": 8.45,
+   "Deep Wound": 75.87,
+   "Overpower": 18.79
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Charge",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     5
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Bloodthrill",
+     5
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Improved Hamstring",
+     1
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "arms-battle-raid",
+  "moves": [
+   {
+    "from": "Improved Heroic Strike",
+    "to": "Deflection",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Heroic Strike",
+    "to": "Deflection",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Charge",
+    "to": "Booming Voice",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Charge",
+    "to": "Booming Voice",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     5
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Bloodthrill",
+     5
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Improved Hamstring",
+     1
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     2
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  },
+  "split": "37/12/2",
+  "ratio": 1.0
+ },
+ "builds": {
+  "written": [
+   "arms-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid"
  }
 }

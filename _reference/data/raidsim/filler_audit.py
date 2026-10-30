@@ -40,6 +40,7 @@ sys.path.insert(0, str(HERE))
 import paths  # noqa: E402
 import talent_opt as T  # noqa: E402  (valid, by_tree, the run/apl_opt loaders)
 import validate_builds as VB  # noqa: E402
+import spec_modes as SM  # noqa: E402
 from fmt_json import dumps  # noqa: E402
 
 R, A = T.R, T.A
@@ -138,6 +139,24 @@ def audit(cls, spec, bid, iterations, confirm, alloc=None, setting=None):
     listed = apl_spell_ids(R.apl_path(entry, repo, where), "priorityList")
     use = dict(utility(cls, tank))
     tag = f"fillers-{cls}-{spec}"
+    # a move keeps the spec the points make (2026-10-29 self-audit: the tidy of frost-ml-raid, 21/0/30 labelled Frost, moved seven Frost
+    # points into Arcane, +17% in a full raid, and left a 28/0/23 Arcane/Frost hybrid on the Frost page): the build's tree spec read from
+    # its points alone (spec_modes.spec_of without the `spec` field: 30+ points in a tree, else its two biggest trees) may not change
+    role = (bd or {}).get("role") if alloc is None else ("tank" if tank else None)
+
+    def tree_spec(al):
+        return SM.spec_of(cls, {"role": role, "allocation": {t: list(v.items()) for t, v in T.by_tree(trees, al).items()}})
+    keep_spec = tree_spec(cur)
+    # and the signature rule (user 2026-10-22): the same self-audit's second finding, the re-tidied frost-ml-raid's second Missile Barrage
+    # point (+5.7%) took Frostbolt and the Frost spells to 52% of its damage (the rule: 60%), a build the ML search had penalized; a move
+    # whose run fails the spec's signature check (raid_signature.check on the run's own casts) is not a candidate
+    sig_spec = SIG.entry_spec(cls, spec, cur, bd)
+    sig_names = R.spell_names(repo, cls)
+    sig_trees = SIG._entry_trees(cls, spec)
+
+    def sig_ok(row, al):
+        chk = SIG.check(cls, sig_spec, (row or {}).get("actions"), sig_names, al, trees=sig_trees)
+        return chk is None or chk.get("ok", True)
 
     def run(allocs, its, seed):
         bl = [{"label": str(i), "talents": R.talents_string(sim_trees, al)} for i, al in enumerate(allocs)]
@@ -180,13 +199,13 @@ def audit(cls, spec, bid, iterations, confirm, alloc=None, setting=None):
                 if not new[a]:
                     del new[a]
                 new[b] = new.get(b, 0) + 1
-                if T.valid(trees, new):
+                if T.valid(trees, new) and tree_spec(new) == keep_spec:
                     cands.append((a, b, new))
         if not cands:
             break
         rows = run([cur] + [c[2] for c in cands], iterations, 1)
         ref = rows[0]
-        scored = [(val(r, ref), a, b, new) for r, (a, b, new) in zip(rows[1:], cands) if r and not r.get("error")]
+        scored = [(val(r, ref), a, b, new) for r, (a, b, new) in zip(rows[1:], cands) if r and not r.get("error") and sig_ok(r, new)]
         gains = sorted([s for s in scored if s[0] > GAIN], key=lambda s: -s[0])[:5]
         # utility moves: no loss, into a strictly more useful talent (a lower rank of usefulness than the point's old talent)
         utils = sorted([s for s in scored if s[0] >= -LOSS and use.get(s[2], NONE) < use.get(s[1], NONE)],
@@ -198,6 +217,8 @@ def audit(cls, spec, bid, iterations, confirm, alloc=None, setting=None):
             conf = run([cur] + [s[3] for s in pool], confirm, 2)
             for s, r in zip(pool, conf[1:]):
                 v2 = val(r, conf[0])
+                if not sig_ok(r, s[3]):
+                    continue
                 if (kind == "gain" and v2 > GAIN) or (kind == "utility" and v2 >= -LOSS):
                     took = (kind, s, v2)
                     break

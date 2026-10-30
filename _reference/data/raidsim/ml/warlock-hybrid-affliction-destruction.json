@@ -2319,5 +2319,149 @@
   "best_hand": "ds-ruin-raid",
   "gain_vs_hand": 0.008,
   "commit": "30f67f5d2"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 794.44,
+    "se": 0.144
+   },
+   "ds-ruin-raid": {
+    "entry": "sb-raid",
+    "dps": 789.77,
+    "se": 0.143
+   },
+   "destruction-fire-raid": {
+    "entry": "fire-destro-raid",
+    "dps": 749.09,
+    "se": 0.13
+   },
+   "shadow-bolt-hybrid-open-raid": {
+    "entry": "sb-raid",
+    "dps": 794.44,
+    "se": 0.144
+   },
+   "opt-sb-raid-raid-dps": {
+    "entry": "sb-raid",
+    "dps": 787.97,
+    "se": 0.143
+   }
+  },
+  "best_hand": "ds-ruin-raid",
+  "gain_vs_hand": 0.0059
+ },
+ "signature_check": {
+  "spec": "Hybrid Affliction/Destruction",
+  "ok": true,
+  "core_share": 0.5457,
+  "min_share": 0.35,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 795.1,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Shadow Bolt": 0.5457,
+   "Bane of Agony": 0.1806,
+   "Corruption": 0.1576,
+   "Immolate": 0.0997,
+   "Demonic Rune": 0.012,
+   "Searing Pain": 0.0044
+  },
+  "casts": {
+   "Corruption": 9.87,
+   "Searing Pain": 1.1,
+   "Life Tap": 11.79,
+   "Amplify Curse": 1.64,
+   "Curse of the Elements": 1.1,
+   "Shadow Bolt": 48.29,
+   "Bane of Agony": 7.95,
+   "Immolate": 10.67
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     3
+    ],
+    [
+     "Improved Bane of Agony",
+     2
+    ],
+    [
+     "Amplify Curse",
+     1
+    ],
+    [
+     "Pandemic",
+     3
+    ],
+    [
+     "Malevolence",
+     5
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-29",
+  "setting": "raid",
+  "why": "confirms shadow-bolt-hybrid-open-raid (+0.00% in a full raid)"
  }
 }

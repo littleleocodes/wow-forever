@@ -594,47 +594,6 @@
       "replaces": "enhancement-raid-dps"
     },
     {
-      "id": "elemental-enhancement-ml-raid",
-      "name": "Elemental-Enhancement — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Elemental/Enhancement",
-      "generated": "2026-10-15",
-      "derived": "raid",
-      "summary": "The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-15 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 5],
-          ["Call of Flame", 3],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 3],
-          ["Elemental Focus", 1]
-        ],
-        "Enhancement": [
-          ["Ancestral Knowledge", 5],
-          ["Thundering Strikes", 5],
-          ["Mental Dexterity", 3],
-          ["Elemental Weapons", 1],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Improved Stormstrike", 1],
-          ["Mental Quickness", 2]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 5],
-          ["Mindfulness", 2],
-          ["Totemic Focus", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft elemental-raid-dps in a full raid, same gear and fights (100,000, one seed): +38.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow elemental-raid-dps: Reverberation → Ancestral Knowledge (within 0.03% of the search winner 18/25/8 on one seed, 30,000 fights).", "Search result (full raid): 18/25/8 at 718.6 ± 0.14 DPS over 100,000 fights; runner-up 18/25/8 (+0.09%; the winner takes Convection 5; the runner-up Concussion 1, Convection 4); 2,428 builds simulated; certificate: the neighbours ahead on the short run (of 200) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/25/9 at 690.8 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 29/22/0 at 379.9 DPS.", "2026-10-16 (repair_builds.py, client build 70425 trees): 17/26/8 -> 15/24/12; Improved Fire Nova -> Trial by Fire (renamed); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); -1 Trial by Fire (over 51); -1 Trial by Fire (over 51); -1 Elemental Weapons (over 51); -1 Improved Stormstrike (over 51) (refill: the enhancement-dps model, raid-dps)."],
-      "open_questions": ["A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"]
-    },
-    {
       "id": "opt-enhancement-dps-leveling-st",
       "name": "Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (leveling-st)",
       "role": "dps",
@@ -1504,6 +1463,47 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.87; opt-elemental-dps-leveling-st 36.61. The search simulated 24,342 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Elemental leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/530333100301135-050032101-053-7"]
+    },
+    {
+      "id": "elemental-enhancement-ml-raid",
+      "name": "Elemental-Enhancement — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Elemental/Enhancement",
+      "generated": "2026-10-29",
+      "derived": "raid",
+      "summary": "The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Elemental Devastation", 3],
+          ["Reverberation", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Trial by Fire", 2]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 3],
+          ["Mental Dexterity", 3],
+          ["Elemental Weapons", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 4]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Search result (full raid): 17/29/5 at 711.8 ± 0.12 DPS over 100,000 fights; runner-up 17/29/5 (+0.02%; the winner takes Concussion 4, Convection 1; the runner-up Concussion 2, Convection 3); 1,660 builds simulated; certificate: none of its 250 one-move and chain-move neighbours was 0.1% ahead.", "Where the simulator measured no difference, the points follow elemental-enhancement-ml-raid: Concussion → Convection (4 points) (within 0.02% of the search winner 17/29/5 on one seed, 30,000 fights).", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/29/5 at 697.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 16/29/6 at 391.7 DPS."],
+      "open_questions": ["A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"]
     }
   ]
 }

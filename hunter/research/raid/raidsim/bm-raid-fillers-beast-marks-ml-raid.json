@@ -3,46 +3,44 @@
  "spec": "bm-raid",
  "build": "beast-marks-ml-raid",
  "setting": "raid",
- "date": "2026-10-04",
+ "date": "2026-10-29",
  "tank": false,
  "removal": {
-  "Barrage": 0.011968319644962477,
-  "Bestial Discipline": 0.02617766100273422,
+  "Bestial Discipline": 0.030271782101919276,
   "Bestial Swiftness": -0.0,
-  "Careful Aim": 0.046163171909336054,
-  "Deadly Aspects": 0.038504624545680044,
-  "Efficiency": 0.006205172709354612,
+  "Careful Aim": 0.056805001508854924,
+  "Deadly Aspects": 0.030957537898115395,
   "Endurance Training": -0.0,
-  "Ferocity": 0.02960957616000026,
-  "Focused Fire": 0.019048117714450585,
-  "Frenzy": 0.029532968414539007,
-  "Improved Stings": 0.022734661282725277,
-  "Intimidation": 0.0017236649888083821,
-  "Lethal Attacks": 0.047380387456729456,
-  "Mortal Shots": 0.036268607967751554,
-  "Pathfinding": -0.0,
-  "Summon Hawk": 0.06482767286009872,
-  "Unleashed Fury": 0.04031576703358364
+  "Ferocity": 0.032038445163078855,
+  "Focused Fire": 0.019272404169917712,
+  "Frenzy": 0.04409503381684898,
+  "Improved Arcane Shot": 0.03688667868371365,
+  "Improved Mend Pet": -0.0,
+  "Improved Tracking": 0.020991367887863266,
+  "Lethal Attacks": 0.051537397996925804,
+  "Mortal Shots": 0.03944319471192892,
+  "Summon Hawk": -0.0,
+  "Unleashed Fury": 0.034198562849911296
  },
  "free": [
   "Bestial Swiftness",
   "Endurance Training",
-  "Pathfinding"
+  "Improved Mend Pet"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [
-  "Intimidation"
+  "Summon Hawk"
  ],
  "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Pathfinding",
-   "to": "Endurance Training",
+   "from": "Improved Mend Pet",
+   "to": "Intimidation",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "survival"
+   "utility": "threat"
   }
  ],
  "final_seed3": 0.0,
@@ -54,15 +52,11 @@
    ],
    [
     "Endurance Training",
-    2
+    3
    ],
    [
     "Focused Fire",
     2
-   ],
-   [
-    "Pathfinding",
-    1
    ],
    [
     "Bestial Swiftness",
@@ -73,15 +67,15 @@
     5
    ],
    [
+    "Improved Mend Pet",
+    1
+   ],
+   [
     "Ferocity",
     5
    ],
    [
     "Summon Hawk",
-    1
-   ],
-   [
-    "Intimidation",
     1
    ],
    [
@@ -99,27 +93,24 @@
     5
    ],
    [
-    "Improved Stings",
-    3
-   ],
-   [
-    "Efficiency",
-    2
-   ],
-   [
     "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
     5
    ],
    [
     "Mortal Shots",
     5
-   ],
-   [
-    "Barrage",
-    3
    ]
   ],
-  "Survival": []
+  "Survival": [
+   [
+    "Improved Tracking",
+    3
+   ]
+  ]
  },
  "allocation": {
   "Beast Mastery": [
@@ -152,16 +143,16 @@
     1
    ],
    [
-    "Intimidation",
-    1
-   ],
-   [
     "Bestial Discipline",
     2
    ],
    [
     "Frenzy",
     3
+   ],
+   [
+    "Intimidation",
+    1
    ]
   ],
   "Marksmanship": [
@@ -170,26 +161,23 @@
     5
    ],
    [
-    "Improved Stings",
-    3
-   ],
-   [
-    "Efficiency",
-    2
-   ],
-   [
     "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
     5
    ],
    [
     "Mortal Shots",
     5
-   ],
-   [
-    "Barrage",
-    3
    ]
   ],
-  "Survival": []
+  "Survival": [
+   [
+    "Improved Tracking",
+    3
+   ]
+  ]
  }
 }

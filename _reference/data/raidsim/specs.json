@@ -131,7 +131,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frostfire-raid", "frostfire-ml-raid", "frostfire-fingers-of-frost-raid", "frostfire-open-raid"],
+      "builds": ["frostfire-raid", "frostfire-ml-raid", "frostfire-fingers-of-frost-raid"],
       "rotation_only": true,
       "preset_names": ["FFB"],
       "rotation_note": "Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built on Frostfire Bolt, which counts as both schools. The community simulator ships Frostfire Bolt as a stub: this target runs on our implementation of it (_reference/data/raidsim/patches/), so its numbers are our model of the beta, not the community's."
@@ -494,7 +494,7 @@
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["mm-hawk-raid", "beast-mastery-ml-raid"],
+      "builds": ["mm-hawk-raid", "beast-mastery-ml-raid", "beast-marks-ml-raid"],
       "rotation_only": true,
       "preset_names": ["BM"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
@@ -823,7 +823,7 @@
       },
       "rotation_only": true,
       "preset_names": ["Arms"],
-      "builds": ["arms-battle-raid", "arms-community-parse"],
+      "builds": ["arms-battle-raid", "arms-community-parse", "arms-ml-raid"],
       "rotation_note": "Arms in Battle Stance (2026-09-29, the overnight audit): the warrior rotations never left Berserker Stance, so Overpower and Rend (Battle Stance abilities; Forever's Bloodthrill makes Rend open Overpower) were never cast. Our base: the arms-2h-raid rotation with Battle Stance instead of Berserker Stance, Overpower and Rend (only when not ticking) after Mortal Strike, Slam before the shout. With the simulator's Arms 39/12/0 preset: 167 -> 198 dummy DPS, 377 -> 454 raid."
     }
   },
