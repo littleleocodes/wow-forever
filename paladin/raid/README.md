@@ -7,6 +7,7 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Retribution](retribution.md) (optimized) | 785 | best |
+| 2 | [Shockadin](shockadin.md) 🔬 | 778 | -0.9% |
 
 **Tanking**: [Protection](protection.md) — Raid tank 🔬.
 

@@ -54,6 +54,12 @@ def positive_alloc(p):
     return {n: r for n, r in (p.get("allocation") or {}).items() if r}
 
 
+def stale(cls, pos):
+    """Talents of a positive the current trees no longer have (2026-10-30: the Frostfire positive's Piercing Ice, removed in 70425,
+    made run.py exit and the whole check fail): reported as STALE instead of stopping the check."""
+    return sorted(set(pos) - set(MLT.Space(cls, "any", any_split=True).names))
+
+
 def check_raid(p, repo):
     rp = HERE / "families" / f"{p['class']}.json"
     if not rp.exists():
@@ -65,6 +71,8 @@ def check_raid(p, repo):
     pos = positive_alloc(p)
     if not pos:
         return {"status": "SKIP", "why": "the positive's build is missing"}
+    if stale(p["class"], pos):
+        return {"status": "STALE", "why": "talents the trees no longer have: " + ", ".join(stale(p["class"], pos)) + "; repair the positive"}
     sim = MLT.Sim(p["class"], p["entry"], "raid", None, repo, f"check-{p['class']}")
     (wd, _), (pd, _) = sim.run([flat_of(w["allocation"]), pos], 30000, 47)
     gap = wd / pd - 1 if pd else 0.0
@@ -83,6 +91,8 @@ def check_leveling(p, pool):
     pos = positive_alloc(p)
     if not pos:
         return {"status": "SKIP", "why": "the positive's build is missing"}
+    if stale(p["class"], pos):
+        return {"status": "STALE", "why": "talents the trees no longer have: " + ", ".join(stale(p["class"], pos)) + "; repair the positive"}
     sp = MLT.Space(p["class"], "any", any_split=True)
     pb = {"id": "positive", "allocation": {t: [[n, pos[n]] for n in sp.by_tree[t] if pos.get(n)] for t in sp.tree_names},
           "order": FT.order_of(p["class"], r["model"], pos)}

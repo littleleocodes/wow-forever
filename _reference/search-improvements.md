@@ -280,3 +280,18 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   -0.02%) and frost-raid re-raced (the queue had raced it mid-repair). No other filler record changed its build's spec; the queue's
   sig-audit step re-checks every build's signature share. Rule: every step that edits a build keeps both the tree rule and the
   signature rule, not only the searches.
+- 2026-10-30 (raid queue 2 done, page audit by a read-only subagent): (1) `search_check.py` exited rc=1: the Frostfire known positive
+  (0/29/22) still held Piercing Ice (removed in 70425) and run.py stops on an unknown talent. The positive now names the page build it
+  became (`build: frostfire-fingers-of-frost-raid`, repaired by repair_builds.py), and a positive holding talents the trees lack reports
+  STALE instead of stopping the check; all four pass (Frostfire's winner +5.0% over it). Rule: after a tree refresh, repair
+  known-positives.json with the builds. (2) The new Shockadin page recommended `opt-ret-dps-parse` (a Retribution export filed under
+  Shockadin by its 24/0/27 split, no full-raid number, no signature check) over the measured `shockadin-open-raid`: render_modes'
+  raid ranking now puts builds without a full-raid number after the measured ones. (3) `shockadin-open-raid` fails the signature check
+  at 11.8% Holy Shock against 12% since the 2026-10-29 rotation re-tune (Weakness Analyzer used at the top: +1.8% DPS, a stat buff that
+  dilutes Holy Shock's share; Holy Shock is still cast on every cooldown, 18 casts in 180 s). The 12% is our stand-in for "Holy Shock on
+  every cooldown" (signature_spells.json note): open question to the user (a cast-based rule for one-cooldown signatures, or keep 12%
+  and re-search Shockadin under the new rotation). "12% under 12%" now prints one decimal. (4) Cosmetic: `arms-ml-raid` and
+  `survival-raid` carry `replaces` flags though the replaced build leads its page (the pages enforce the bar; the flag does not). (5)
+  Lead: Subtlety's pre-BiS full-raid DPS (641) is above its BiS (618): gear_tiers' BiS search should race the pre-BiS set as a
+  candidate (every pre-BiS item is in the BiS pool). (6) The Assassination hand draft (no Mutilate) fails the signature rule and is
+  hidden, while Shockadin's failing build is listed with a note: both follow render_modes (missing required talent = not the spec).

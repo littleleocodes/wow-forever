@@ -334,7 +334,8 @@ def check_shares(cls, spec, shares, casts, held=None, mode="raid", trees=None):
     if uncast:
         why.append("never casts " + ", ".join(uncast))
     if low:
-        why.append(f"core share {cs:.0%} under {r['min_share']:.0%} ({', '.join(r['core'])})")
+        f = ".1%" if f"{cs:.0%}" == f"{r['min_share']:.0%}" else ".0%"   # "12% under 12%" read as no failure (2026-10-30)
+        why.append(f"core share {cs:{f}} under {r['min_share']:{f}} ({', '.join(r['core'])})")
     return {"spec": spec, "ok": not (missing or uncast or low) and cs is not None, "core_share": cs, "min_share": r["min_share"],
             "uncast": uncast, "missing_talents": missing, "why": "; ".join(why) if why else ("no damage shares" if cs is None else "")}
 

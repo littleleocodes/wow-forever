@@ -625,7 +625,9 @@ def rank_builds(cls, mode, builds, nums, signature=True):
             if b.get("role") == "healer":
                 return (0, -(H.get(bid, {}).get("capacity") or 0), gen)
             r = R.get(bid) or {}
-            return (0, sig_fail(b), -(r.get("group") or 0), gen)
+            # a build with no full-raid number ranks after the measured ones (2026-10-30 self-audit: the Shockadin page recommended
+            # opt-ret-dps-parse, a Retribution export with no number and no signature check, over the measured shockadin-open-raid)
+            return (0 if r.get("group") else 1, sig_fail(b), -(r.get("group") or 0), gen)
         if mode == "leveling":
             w = weighted(L.get(bid) or {})
             return (0 if w else 1, sig_fail(b), w or 0, gen)

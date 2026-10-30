@@ -70,26 +70,9 @@
    "kind": "raid",
    "entry": "frostfire-raid",
    "name": "Frostfire with Fingers of Frost and Ice Lance (0/29/22)",
-   "allocation": {
-    "Incineration": 3,
-    "Improved Fireball": 5,
-    "Ignite": 5,
-    "Flame Throwing": 1,
-    "Pyroblast": 1,
-    "Improved Scorch": 3,
-    "Heating Up": 1,
-    "Master of Elements": 3,
-    "Critical Mass": 3,
-    "Fire Power": 4,
-    "Elemental Precision": 5,
-    "Ice Shards": 5,
-    "Piercing Ice": 3,
-    "Frost Channeling": 3,
-    "Ice Lance": 1,
-    "Shatter": 3,
-    "Fingers of Frost": 2
-   },
-   "found": "the user's talentsforever.com link, 2026-10-06; 698 against 684 DPS for the open search's 0/34/17 winner in the Frostfire rotation (full raid, 30,000 fights, seed 2) on b0f0df3; the family search of 2026-10-06 missed it"
+   "found": "the user's talentsforever.com link, 2026-10-06; 698 against 684 DPS for the open search's 0/34/17 winner in the Frostfire rotation (full raid, 30,000 fights, seed 2) on b0f0df3; the family search of 2026-10-06 missed it",
+   "build": "frostfire-fingers-of-frost-raid",
+   "note": "2026-10-30: the saved allocation still held Piercing Ice (removed in client build 70425) and stopped search_check.py (run.py: talents unknown to the simulator); the positive is now the page build it became, repaired by repair_builds.py (2026-10-16 and 2026-10-22), so later tree repairs carry over"
   }
  ]
 }
