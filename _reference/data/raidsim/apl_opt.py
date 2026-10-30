@@ -656,6 +656,10 @@ class Signature:
                 if cs0 is not None and cs1 is not None and cs1 < min(rl["min_share"], cs0) - SIG.SHARE_TOL:
                     self.rejected["core_share"] += 1
                     return f"build {bi} ({self.spec[bi]}): core share {cs0:.1%} -> {cs1:.1%} (min {rl['min_share']:.0%})"
+                u0, u1 = SIG.cd_use(rl, SIG.casts_of(r0["actions"], self.names)), SIG.cd_use(rl, c1)
+                if u0 is not None and u1 is not None and u1 < min(float(rl.get("min_cd_use") or 0.0), u0) - SIG.SHARE_TOL:
+                    self.rejected["core_share"] += 1
+                    return f"build {bi} ({self.spec[bi]}): cooldown use {u0:.1%} -> {u1:.1%} (min {float(rl['min_cd_use']):.0%})"
         return None
 
     def record(self):

@@ -172,6 +172,8 @@ def write(res):
                         continue
                     ok = "ok" if c["ok"] else "**FAIL**"
                     cs = f"{c['core_share']:.0%} / {c['min_share']:.0%}" if c.get("core_share") is not None else "-"
+                    if c.get("cd_use") is not None:
+                        cs = f"cooldowns used {c['cd_use']:.0%} / {c['min_cd_use']:.0%}"
                     o.append(f"| `{b}` | {x['spec']} | {x.get('page_entry') or '-'} | {ok} | {cs} | {src} | {c['why'] or '-'} |")
                     if not c["ok"]:
                         fails.append((cls, entry, b, x["spec"], c, src, x.get("page_entry") == entry))

@@ -248,7 +248,8 @@ def sig_check(cls, entry, repo, flat):
     open_builds.py writes no build from it: in a hybrid family it does not count as that hybrid."""
     chk, _ = SIG.measure(cls, entry, flat, repo, R, A, iterations=6000, seed=9)
     log(f"  {cls} {entry}: signature check of the winner ({chk['spec']}): " + ("ok" if chk["ok"] else "FAILS: " + chk["why"])
-        + (f", core share {chk['core_share']:.0%} (needs {chk['min_share']:.0%})" if chk.get("core_share") is not None and chk.get("min_share") else ""))
+        + (f", core share {chk['core_share']:.0%} (needs {chk['min_share']:.0%})" if chk.get("core_share") is not None and chk.get("min_share") else "")
+        + (f", cooldown use {chk['cd_use']:.0%} (needs {chk['min_cd_use']:.0%})" if chk.get("cd_use") is not None else ""))
     return chk
 
 
@@ -613,7 +614,8 @@ def write_class(cls, st):
         if sc:   # raid_signature: the spec's signature spells (user rule 2026-10-22)
             o += [f"Signature spells ({sc['spec']}, full raid, {sc.get('iterations', 0):,} fights): "
                   + ("plays them" if sc["ok"] else f"**fails: {sc['why']}** (no build is written from this winner)")
-                  + (f"; core share {sc['core_share']:.0%} (needs {sc['min_share']:.0%})" if sc.get("core_share") is not None and sc.get("min_share") else "") + ".", ""]
+                  + (f"; core share {sc['core_share']:.0%} (needs {sc['min_share']:.0%})" if sc.get("core_share") is not None and sc.get("min_share") else "")
+                  + (f"; cooldown use {sc['cd_use']:.0%} (needs {sc['min_cd_use']:.0%})" if sc.get("cd_use") is not None else "") + ".", ""]
         o += table(e["values"], e["values_base"])
         if e.get("values_ours"):
             own = e["ours_best"] in ((e.get("builds") or {}).get("written") or [])

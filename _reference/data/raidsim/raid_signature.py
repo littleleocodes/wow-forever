@@ -51,7 +51,7 @@ def rule(cls, spec, mode="raid"):
     r = (table().get(cls) or {}).get(spec)
     if not isinstance(r, dict):
         return None
-    out = {k: r[k] for k in ("required", "core", "min_share", "note") if k in r}
+    out = {k: r[k] for k in ("required", "core", "min_share", "note", "on_cooldown", "min_cd_use") if k in r}
     out.update((r.get("modes") or {}).get(mode) or {})
     out.setdefault("required", [])
     out.setdefault("core", [])
@@ -287,6 +287,33 @@ def core_share(cls, spec, shares, mode="raid"):
     return round(sum(v for k, v in shares.items() if any(matches(c, k) for c in r["core"])), 4)
 
 
+def fight_seconds():
+    """The bench's fight length (run.FIGHT, 180 s since 2026-09-29)."""
+    import sys
+    sys.path.insert(0, str(HERE))
+    try:
+        import run
+        return float(run.FIGHT)
+    except Exception:
+        return 180.0
+
+
+def cd_use(rl, casts):
+    """The 'on every cooldown' test (user decision 2026-10-30, Shockadin: Holy Shock on every cooldown rather than a damage share, which
+    gear and trinkets move): for each spell in the rule's `on_cooldown` ({spell: cooldown seconds}), its casts per fight (every rank) over
+    the casts the fight allows (fight / cooldown); the lowest of them, capped at 1. None when the rule has none or the casts are unknown."""
+    oc = (rl or {}).get("on_cooldown") or {}
+    if not oc or casts is None:
+        return None
+    cast = {_strip(k): v for k, v in casts.items()}
+    f = fight_seconds()
+    out = []
+    for s, cd in oc.items():
+        n = sum(v for k, v in cast.items() if k == s or k.startswith(s + " "))
+        out.append(min(1.0, n * float(cd) / f))
+    return round(min(out), 4)
+
+
 def rule_specs(cls, spec, trees=None, mode="raid"):
     """The specs whose rule a build filed under `spec` must pass (any one): its own; a hybrid without a rule of its own, its trees' (only
     those the entry is built for when `trees` names any; 2026-10-23, the paladin's 17/17/17 Holy/Protection leveling winner without Holy
@@ -328,6 +355,8 @@ def check_shares(cls, spec, shares, casts, held=None, mode="raid", trees=None):
         (k == s or k.startswith(s + " ")) and v >= 0.5 for k, v in cast.items()))
     cs = core_share(cls, spec, shares or {}, mode) if shares else None
     low = cs is not None and cs < r["min_share"]
+    cdu = cd_use(r, casts)
+    low_cd = cdu is not None and cdu < float(r.get("min_cd_use") or 0.0)
     why = []
     if missing:
         why.append("lacks " + ", ".join(missing))
@@ -336,7 +365,10 @@ def check_shares(cls, spec, shares, casts, held=None, mode="raid", trees=None):
     if low:
         f = ".1%" if f"{cs:.0%}" == f"{r['min_share']:.0%}" else ".0%"   # "12% under 12%" read as no failure (2026-10-30)
         why.append(f"core share {cs:{f}} under {r['min_share']:{f}} ({', '.join(r['core'])})")
-    return {"spec": spec, "ok": not (missing or uncast or low) and cs is not None, "core_share": cs, "min_share": r["min_share"],
+    if low_cd:
+        why.append(f"{', '.join(r['on_cooldown'])} cast on {cdu:.0%} of its cooldowns, under {float(r['min_cd_use']):.0%}")
+    return {"spec": spec, "ok": not (missing or uncast or low or low_cd) and cs is not None, "core_share": cs, "min_share": r["min_share"],
+            **({"cd_use": cdu, "min_cd_use": float(r.get("min_cd_use") or 0.0)} if r.get("on_cooldown") else {}),
             "uncast": uncast, "missing_talents": missing, "why": "; ".join(why) if why else ("no damage shares" if cs is None else "")}
 
 
@@ -354,7 +386,9 @@ def penalty(chk):
     """The search objective's factor for a build (1 when it passes or has no rule)."""
     if not chk or chk.get("ok") or chk.get("core_share") is None:
         return 1.0
-    f = FAIL_STEP * (min(1.0, chk["core_share"] / chk["min_share"]) if chk["min_share"] else 1.0)   # 2026-10-26 audit (fl_signature):
+    f = FAIL_STEP * (min(1.0, chk["core_share"] / chk["min_share"]) if chk["min_share"] else 1.0)
+    if chk.get("cd_use") is not None and chk.get("min_cd_use"):   # an on-cooldown rule: the share of the cooldowns used instead
+        f = FAIL_STEP * min(1.0, chk["cd_use"] / chk["min_cd_use"])   # 2026-10-26 audit (fl_signature):
     if chk.get("uncast") or chk.get("missing_talents"):   # a near miss (49.5% of 50%, x0.99) had beaten passing builds 2% slower
         f *= 0.5
     return max(0.05, f)

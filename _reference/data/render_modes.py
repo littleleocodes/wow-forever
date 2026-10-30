@@ -518,7 +518,7 @@ def raid_sig_check(cls, spec, b, entry):
 def sig_text(cls, spec, chk):
     rl = _RAID_SIG["mod"].rule(cls, spec) or {}
     parts = ([", ".join(f"**{x}**" for x in rl["required"]) + " cast every fight"] if rl.get("required") else []) \
-        + ([f"{', '.join(rl['core'])} carrying {rl['min_share']:.0%} of the damage"] if rl.get("core") else [])
+        + ([f"{', '.join(rl['core'])} carrying {rl['min_share']:.0%} of the damage"] if rl.get("core") and rl.get("min_share") else [])         + ([f"{', '.join(rl['on_cooldown'])} cast on at least {float(rl.get('min_cd_use') or 0):.0%} of its cooldowns"] if rl.get("on_cooldown") else [])
     return f"{chk['why']}; {SM.spec_name(cls, spec)} is defined by " + " and ".join(parts) if parts else chk["why"]
 
 

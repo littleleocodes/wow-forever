@@ -305,7 +305,16 @@
     "Holy Shock"
    ],
    "min_share": 0.12,
-   "note": "Shockadin: Holy Shock on cooldown, first in the priority (one spell on a cooldown cannot be most of the damage; 12% is about one Holy Shock per cooldown)"
+   "note": "Shockadin: Holy Shock on cooldown, first in the priority. Raid (user decision 2026-10-30): cast on at least 90% of its cooldowns (10 s: 18 casts in the 180 s fight), not a damage share (gear and trinkets move the share; the 12% stand-in failed shockadin-open-raid at 11.8% with Holy Shock on every cooldown). Leveling keeps the 12% share.",
+   "modes": {
+    "raid": {
+     "min_share": 0.0,
+     "on_cooldown": {
+      "Holy Shock": 10
+     },
+     "min_cd_use": 0.9
+    }
+   }
   },
   "Hybrid Protection/Retribution": {
    "required": [

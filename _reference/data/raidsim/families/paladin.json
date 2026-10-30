@@ -10351,8 +10351,50 @@
     "spec": "Retribution",
     "date": "2026-10-29"
    }
+  }
+ },
+ "cross": {
+  "ret-dps": {
+   "tested": {},
+   "faster_sibling": null,
+   "adopted": null
   },
   "shockadin-raid": {
+   "tested": {},
+   "adopted": null,
+   "skipped": "no builds of ours"
+  }
+ },
+ "own_gear": {
+  "ret-dps": null,
+  "shockadin-raid": {
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
+   "ilvl": 64.6,
+   "names": [
+    "Stalwart Helm",
+    "Choker of the Fire Lord",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Earthpower Vest",
+    "Rockfury Bracers",
+    "Soulforge Gauntlets",
+    "Belt of the Archmage",
+    "Ironfeather Leggings",
+    "Sorcerer's Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer",
+    "Fist of Cenarius",
+    null,
+    "Libram of Law"
+   ],
+   "dps_standard": 759.2,
+   "dps_own_bis": 764.9
+  }
+ },
+ "archived": {
+  "shockadin-raid-2026-10-29": {
    "signature": "0c878bd269c0",
    "first": {
     "winner": {
@@ -20407,47 +20449,8 @@
     "why": null,
     "spec": "Hybrid Holy/Retribution",
     "date": "2026-10-29"
-   }
-  }
- },
- "cross": {
-  "ret-dps": {
-   "tested": {},
-   "faster_sibling": null,
-   "adopted": null
-  },
-  "shockadin-raid": {
-   "tested": {},
-   "adopted": null,
-   "skipped": "no builds of ours"
-  }
- },
- "own_gear": {
-  "ret-dps": null,
-  "shockadin-raid": {
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
-   "ilvl": 64.6,
-   "names": [
-    "Stalwart Helm",
-    "Choker of the Fire Lord",
-    "Mantle of the Timbermaw",
-    "Arcanoweave Cloak",
-    "Earthpower Vest",
-    "Rockfury Bracers",
-    "Soulforge Gauntlets",
-    "Belt of the Archmage",
-    "Ironfeather Leggings",
-    "Sorcerer's Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
-    "Talisman of Ephemeral Power",
-    "Weakness Analyzer",
-    "Fist of Cenarius",
-    null,
-    "Libram of Law"
-   ],
-   "dps_standard": 759.2,
-   "dps_own_bis": 764.9
+   },
+   "archived_why": "re-searched 2026-10-30 under the on-cooldown signature rule (user decision)"
   }
  }
 }
