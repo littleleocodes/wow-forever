@@ -1,0 +1,215 @@
+{
+ "id": "unr-elemental-dps",
+ "name": "Unrestricted start (elemental-dps)",
+ "role": "dps",
+ "content": "leveling",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Elemental Devastation",
+    1
+   ],
+   [
+    "Reverberation",
+    3
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Flame",
+    2
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Trial by Fire",
+    2
+   ],
+   [
+    "Eye of the Storm",
+    3
+   ],
+   [
+    "Lava Burst",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    4
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Improved Lightning Shield",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Anticipation",
+    2
+   ],
+   [
+    "Mental Quickness",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-18",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 4
+  },
+  {
+   "levels": "19",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 2
+  },
+  {
+   "levels": "25-27",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "32-36",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "37-39",
+   "tree": "Restoration",
+   "talent": "Mindfulness",
+   "points": 3
+  },
+  {
+   "levels": "40-44",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "45-47",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Elemental",
+   "talent": "Elemental Devastation",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 3
+  },
+  {
+   "levels": "55-57",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 3
+  },
+  {
+   "levels": "58-59",
+   "tree": "Elemental",
+   "talent": "Trial by Fire",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Elemental",
+   "talent": "Lava Burst",
+   "points": 1
+  }
+ ],
+ "notes": [
+  "the elemental-dps open-search winner 21/22/8 (own tree first), the start of the unrestricted search"
+ ]
+}

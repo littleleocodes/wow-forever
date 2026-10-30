@@ -2,7 +2,7 @@
  "raid": {
   "class": "druid",
   "spec": "feral-bear-tank",
-  "date": "2026-10-27",
+  "date": "2026-10-29",
   "commit": "30f67f5d2",
   "setting": "raid",
   "tank": true,
@@ -10,12 +10,18 @@
   "start": "ui\\specs\\druid\\feralbear\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "deep: tank",
+    "talents": "050022-5020033202003201255-052"
+   },
+   {
     "label": "opt-feral-bear-tank-raid-tank",
-    "talents": "050022-5520033212013201255"
+    "talents": "050022-5520033212013201255",
+    "protect_only": true
    },
    {
     "label": "sim preset: Hybrid",
-    "talents": "050022-35230332121132212051-"
+    "talents": "050022-35230332121132212051-",
+    "protect_only": true
    },
    {
     "label": "feral-bear-tank",
@@ -29,8 +35,7 @@
    }
   ],
   "tuned_on": [
-   "opt-feral-bear-tank-raid-tank",
-   "sim preset: Hybrid"
+   "deep: tank"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -102,39 +107,48 @@
   ],
   "final": {
    "raid": {
-    "opt-feral-bear-tank-raid-tank": {
-     "before": 600.9948429391923,
-     "after": 2586.540600187666,
-     "base": 600.9948429391923,
+    "deep: tank": {
+     "before": 542.26173307563,
+     "after": 2609.8540486688776,
+     "base": 542.26173307563,
      "before_value": 1.0,
-     "after_value": 1.1177406438850461,
+     "after_value": 1.0,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-feral-bear-tank-raid-tank": {
+     "before": 593.6387719418711,
+     "after": 2554.242314735209,
+     "base": 593.6387719418711,
+     "before_value": 1.0,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Hybrid": {
-     "before": 586.6600926304598,
-     "after": 1954.3438404202,
-     "base": 586.6600926304598,
+     "before": 579.194096606406,
+     "after": 1929.9436869971125,
+     "base": 579.194096606406,
      "before_value": 1.0,
-     "after_value": 1.103502700524598,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "feral-bear-tank": {
-     "before": 519.2625942628741,
-     "after": 2377.0670127594713,
-     "base": 519.2625942628741,
+     "before": 513.2481922533066,
+     "after": 2348.850204821731,
+     "base": 513.2481922533066,
      "before_value": 1.0,
-     "after_value": 1.1144789019387482,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "feral-combat-ml-tank": {
-     "before": 548.6357850088643,
-     "after": 2641.383605031672,
-     "base": 548.6357850088643,
+     "before": 541.7817593808787,
+     "after": 2608.4144609121363,
+     "base": 541.7817593808787,
      "before_value": 1.0,
-     "after_value": 1.1105922743225685,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     }
@@ -156,6 +170,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

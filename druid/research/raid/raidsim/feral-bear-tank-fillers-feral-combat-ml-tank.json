@@ -3,28 +3,29 @@
  "spec": "feral-bear-tank",
  "build": "feral-combat-ml-tank",
  "setting": "raid",
- "date": "2026-10-26",
+ "date": "2026-10-29",
  "tank": true,
  "removal": {
-  "Blood Frenzy": 0.17724135344918612,
-  "Feral Swiftness": 0.016564849825019712,
-  "Ferocity": 0.1847416597834588,
-  "Furor": 0.0026383578350349657,
-  "Genesis": 0.00011590033739439232,
-  "Leader of the Pack": 0.037255209782087295,
-  "Natural Instinct": 0.020683384077256894,
-  "Natural Reaction": 0.047156857494668025,
-  "Naturalist": 0.009255602672839647,
-  "Nature's Majesty": 0.04909050637540613,
-  "Nature's Reach": 0.024925016293534608,
-  "Predatory Strikes": 0.015261545972902635,
-  "Rend and Tear": 0.03513070738870705,
-  "Savage Fury": 0.03204421496191323,
-  "Sharpened Claws": 0.07157637758271762,
-  "Shredding Attacks": 0.05697505262086777,
-  "Thick Hide": 0.028817082950109985
+  "Blood Frenzy": 0.15811953662580513,
+  "Feral Swiftness": 0.018221078663673063,
+  "Ferocity": 0.21499779785211148,
+  "Furor": 0.00189530412411687,
+  "Genesis": 0.0002666132723030401,
+  "Leader of the Pack": 0.03349748423674159,
+  "Natural Instinct": 0.021476971772429243,
+  "Natural Reaction": 0.04648210308199763,
+  "Naturalist": 0.009303150443553676,
+  "Nature's Majesty": 0.04700993279184518,
+  "Nature's Reach": 0.02481540991075004,
+  "Predatory Strikes": 0.014804292700539512,
+  "Rend and Tear": 0.03607431959256879,
+  "Savage Fury": 0.0357772301271414,
+  "Sharpened Claws": 0.0686505700477138,
+  "Shredding Attacks": 0.007532793989698527,
+  "Thick Hide": 0.029064669428195078
  },
  "free": [
+  "Furor",
   "Genesis"
  ],
  "kept_for_rotation": [],
@@ -36,8 +37,8 @@
    "kind": "utility",
    "from": "Genesis",
    "to": "Improved Wrath",
-   "seed1": -2.318006747836776e-05,
-   "seed2": -2.3261206901104003e-05,
+   "seed1": -5.33226544600085e-05,
+   "seed2": -5.317756842138088e-05,
    "utility": "range"
   },
   {
@@ -45,8 +46,8 @@
    "kind": "utility",
    "from": "Genesis",
    "to": "Improved Wrath",
-   "seed1": -2.3181142159600654e-05,
-   "seed2": -2.3262289114422963e-05,
+   "seed1": -5.3328341678371416e-05,
+   "seed2": -5.3183224732689105e-05,
    "utility": "range"
   },
   {
@@ -54,8 +55,8 @@
    "kind": "utility",
    "from": "Genesis",
    "to": "Improved Wrath",
-   "seed1": -2.3182216940198508e-05,
-   "seed2": -2.326337143854218e-05,
+   "seed1": -5.333403010754356e-05,
+   "seed2": -5.3188882245480684e-05,
    "utility": "range"
   },
   {
@@ -63,8 +64,8 @@
    "kind": "utility",
    "from": "Genesis",
    "to": "Improved Wrath",
-   "seed1": -2.318329182238177e-05,
-   "seed2": -2.3264453858473644e-05,
+   "seed1": -5.33397197552965e-05,
+   "seed2": -5.31945409606438e-05,
    "utility": "range"
   },
   {
@@ -72,12 +73,12 @@
    "kind": "utility",
    "from": "Genesis",
    "to": "Improved Wrath",
-   "seed1": -2.3184366799267053e-05,
-   "seed2": -2.3265536375993712e-05,
+   "seed1": -5.3345410611305155e-05,
+   "seed2": -5.320020087773436e-05,
    "utility": "range"
   }
  ],
- "final_seed3": -0.00011667678607962806,
+ "final_seed3": -0.0002664431768231168,
  "start": {
   "Balance": [
    [
