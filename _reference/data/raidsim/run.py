@@ -426,7 +426,8 @@ FIGHT = 180.0
 LADDER = [
     ("mana", {"mana_spring_totem": "TristateEffectImproved", "mana_tide_totems": 1, "greater_blessing_of_wisdom": True}, {"judgement_of_wisdom": True}),
     ("armor", {}, {"sunder_armor": True, "expose_armor": True, "faerie_fire": True, "curse_of_recklessness": True}),
-    ("physical", {"battle_shout": "TristateEffectRegular", "greater_blessing_of_might": True, "windfury_totem": True, "strength_of_earth_totem": True,
+    ("physical", {"battle_shout": 1,   # 1 = rank 6, as the full raid (b90e2b9 made it a rank number: 1 trainer rank, 2 book rank, 3 book + T2)
+                   "greater_blessing_of_might": True, "windfury_totem": True, "strength_of_earth_totem": True,
                   "leader_of_the_pack": True, "trueshot_aura": True}, {"hunters_mark": True, "gift_of_arthas": True}),
     ("spell", {"arcane_brilliance": True, "moonkin_aura": True}, {"curse_of_elements": True, "judgement_of_the_crusader": True}),
 ]

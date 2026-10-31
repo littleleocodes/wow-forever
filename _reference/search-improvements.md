@@ -295,3 +295,8 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   Lead: Subtlety's pre-BiS full-raid DPS (641) is above its BiS (618): gear_tiers' BiS search should race the pre-BiS set as a
   candidate (every pre-BiS item is in the BiS pool). (6) The Assassination hand draft (no Mutilate) fails the signature rule and is
   hidden, while Shockadin's failing build is listed with a note: both follow render_modes (missing required talent = not the spec).
+- 2026-10-30 (live-client re-pin to b90e2b9): upstream turned the raid's Battle Shout into a rank number (`RaidBuffs.battle_shout` int32:
+  1 trainer rank 6, 2 book rank 7, 3 book rank plus the T2 bonus; "Fold the raid's Battle Shout rank into one four-state input"), so the
+  buff ladder's `"battle_shout": "TristateEffectRegular"` failed every environments run ("buff battle_shout: not a number"; the mage's
+  four races rc=1, the searches unaffected: the full raid clones the simulator's own FullRaidBuffs, rank 6). The ladder now sends 1, as the
+  full raid. The pre-queue smoke test ran only the dummy race: after a re-pin, smoke-test `--env environments` too.
