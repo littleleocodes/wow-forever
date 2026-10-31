@@ -830,8 +830,6 @@
   "paladin": {
     "ret-dps": {
       "numbers_note": "Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.",
-      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/paladin/ret-dps.apl.json",
       "sim_class": "ClassPaladin",
       "sim_spec": "paladin/retribution",
       "profile": "raid-dps",
@@ -839,7 +837,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/paladin/retribution/apls/default.apl.json",
+      "apl": "ui/specs/paladin/retribution/apls/default.apl.json",
       "spec": {
         "retributionPaladin": {
           "options": {
@@ -866,7 +864,6 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "prot-tank": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
       "sim_class": "ClassPaladin",
       "sim_spec": "paladin/protection",
       "profile": "raid-tank",
@@ -899,7 +896,6 @@
       "builds": ["prot-tank", "opt-prot-tank-raid-tank", "protection-ml-tank"]
     },
     "shockadin-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
       "sim_class": "ClassPaladin",
       "sim_spec": "paladin/retribution",
       "profile": "raid-dps",
@@ -907,7 +903,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/paladin/shockadin-sig-raid.base.apl.json",
+      "apl": "ui/specs/paladin/retribution/apls/holy_shock.apl.json",
       "spec": {
         "retributionPaladin": {
           "options": {
@@ -934,7 +930,7 @@
       "builds": ["shockadin-open-raid"],
       "rotation_only": true,
       "preset_names": [],
-      "rotation_note": "2026-10-24 (signature rule, user 2026-10-22): Shockadin plays Holy Shock as its main damage; base rotation shockadin-sig-raid.base.apl.json; gear, consumables and self-buffs as ret-dps"
+      "rotation_note": "2026-10-31 (stage 2, hotfix push 113554): the official simulator's Holy Shock rotation (ui/specs/paladin/retribution/apls/holy_shock.apl.json at 54ceac638, written for the reworked tree; 783 against our signature rotation's 740 DPS for its Holy Shock preset in a full raid) is the base; Shockadin still plays Holy Shock as its main damage (signature rule, user 2026-10-22). Our rotations of the old tree are archived in apls/paladin/pre-113554/. Gear, consumables and self-buffs as ret-dps"
     }
   },
   "shaman": {

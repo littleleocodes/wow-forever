@@ -806,60 +806,9 @@
   }
  },
  "paladin": {
-  "ret-dps:ret-dps.apl.json": {
-   "priority[0]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   }
-  },
-  "ret-dps:ret-dps-raid.apl.json": {
-   "priority[6]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   }
-  },
-  "ret-dps:default.apl.json": {
-   "priority[8]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 407632}"
-    ],
-    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 407632}}}"
-   }
-  },
+  "ret-dps:default.apl.json": {},
   "prot-tank:default.apl.json": {},
-  "prot-tank:prot-tank-raid.apl.json": {},
-  "shockadin-raid:shockadin-sig-raid.base.apl.json": {
-   "priority[0]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   },
-   "priority[7]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   }
-  },
-  "shockadin-raid:shockadin-raid-raid.apl.json": {
-   "priority[3]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   },
-   "priority[8]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20930}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
-   }
-  }
+  "shockadin-raid:holy_shock.apl.json": {}
  },
  "shaman": {
   "elemental-dps:elemental-dps.apl.json": {},

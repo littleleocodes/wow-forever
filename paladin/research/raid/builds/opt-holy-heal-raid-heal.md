@@ -1,13 +1,13 @@
-# Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal) — 31/7/13
+# Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal) — 31/10/10
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/7/13 (Holy / Protection / Retribution) |
+| **Build** | 31/10/10 (Holy / Protection / Retribution) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,32 +19,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-hea
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
-| **Divine Strength** | 1/5 | unchanged | Increases your Strength by 2%. |
+| **Divine Strength** | 3/5 | unchanged | Increases your Strength by 6%. |
+| **Spiritual Focus** | 5/5 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
 | **Healing Light** | 3/3 | changed | Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%. |
-| **Spiritual Focus** | 2/2 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
-| **Reverence** | 3/3 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
 | **Purifying Power** | 2/2 | **NEW** | Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by 33%. |
+| **Reverence** | 2/2 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
 | **Divine Favor** | 1/1 | moved | When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance. |
 | **Illumination** | 5/5 | changed | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell. |
 | **Infusion of Light** | 2/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec. |
+| **Boundless Light** | 1/2 | **NEW** | Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light. |
 | **Holy Shock** | 1/1 | changed | Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally. |
-| **Holy Power** | 5/5 | changed | Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%. |
+| **Holy Power** | 5/5 | changed | Increases the critical strike healing bonus of your Holy spells by 50%. |
 | **Light's Vigil** | 1/1 | **NEW** | Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. You may only have one Light's Vigil active per party. |
 
-### Protection (7)
+### Protection (10)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Toughness** | 5/5 | moved | Increases your armor value from items by 10%. |
+| **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
+| **Redoubt** | 1/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks. |
 | **Guardian's Favor** | 2/2 | changed | Reduces the cooldown of your Blessing of Protection by 2 min and increases the duration of your Blessing of Freedom by 6 sec. |
+| **Sacred Duty** | 2/2 | **NEW** | Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec, and reduces the duration of Forbearance by 10 sec. |
 
-### Retribution (13)
+### Retribution (10)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
-| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
+| **Deflection** | 2/5 | moved | Increases your Parry chance by 2%. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 
 ## Core talents (priority order)
@@ -65,6 +67,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 ## Notes
 
 - Report: paladin/research/talents/forever/optimizer/holy-heal-raid-heal.md
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/7/13 -> 31/10/10; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); +1 Redoubt (tier gating for Toughness); +1 Spiritual Focus (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Deflection (over 51); -1 Deflection (over 51); -1 Deflection (over 51) (refill: the holy-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

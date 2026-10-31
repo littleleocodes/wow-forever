@@ -72,21 +72,21 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
-| Holy | Divine Strength | 3 | unchanged | tier 1, max 5 |
-| Holy | Divine Intellect | 5 | unchanged | tier 1, max 5 |
-| Holy | Spiritual Focus | 5 | changed | tier 2, max 2 — max rank 5 → 2; tooltip changed |
+| Holy | Divine Strength | 3 | unchanged | tier 1, max 5 — moved in build 1.60.1.70707: was row 1, col 2 |
+| Holy | Divine Intellect | 5 | moved-tree | now in Protection, tier 1 |
+| Holy | Spiritual Focus | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; moved in build 1.60.1.70707: was row 2, col 2; max rank 2 -> 5 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
 | Holy | Healing Light | 3 | changed | tier 2, max 3 — tooltip changed; was Holy row 3, col 1 |
 | Holy | Consecration | 1 | **REMOVED** | removed from Classic |
-| Holy | Unyielding Faith | 2 | changed | tier 2, max 2 — tooltip changed; was Holy row 3, col 4 |
-| Holy | Illumination | 5 | changed | tier 4, max 5 — tooltip changed |
-| Holy | Divine Favor | 1 | moved | tier 4, max 1 — was Holy row 5, col 2 |
-| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed |
+| Holy | Unyielding Faith | 2 | moved-tree | now in Retribution, tier 3 |
+| Holy | Illumination | 5 | changed | tier 3, max 5 — tooltip changed; moved in build 1.60.1.70707: was row 4, col 2 |
+| Holy | Divine Favor | 1 | moved | tier 3, max 1 — was Holy row 5, col 2; moved in build 1.60.1.70707: was row 4, col 3 |
+| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
 | Holy | Holy Shock | 1 | changed | tier 5, max 1 — tooltip changed; was Holy row 7, col 2 |
 | Retribution | Improved Blessing of Might | 5 | **REMOVED** | removed from Classic |
 | Retribution | Benediction | 5 | changed | tier 1, max 5 — tooltip changed |
 | Retribution | Improved Judgement | 2 | changed | tier 2, max 2 — tooltip changed |
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
-| Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
+| Retribution | Conviction | 5 | changed | tier 2, max 3 — tooltip changed; was Retribution row 3, col 2; moved in build 1.60.1.70707: was row 2, col 3; max rank 5 -> 3 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
 
 **9 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

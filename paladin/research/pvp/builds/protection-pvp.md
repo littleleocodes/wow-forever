@@ -1,13 +1,13 @@
-# Protection — PvP (derived) — 0/30/21
+# Protection — PvP (derived) — 5/25/21
 
 *[Paladin](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/30/21 (Holy / Protection / Retribution) |
+| **Build** | 5/25/21 (Holy / Protection / Retribution) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,39 +15,39 @@ The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 
 ## Point allocation
 
-### Holy (0)
-
-*No points.*
-
-### Protection (30)
+### Holy (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 20%. Lasts 10 sec or 5 blocks. |
-| **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
+| **Spiritual Focus** | 5/5 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
+
+### Protection (25)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. |
 | **Guardian's Favor** | 2/2 | changed | Reduces the cooldown of your Blessing of Protection by 2 min and increases the duration of your Blessing of Freedom by 6 sec. |
-| **Improved Seal of Fury** | 1/1 | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. |
-| **Improved Righteous Fury** | 3/3 | changed | While Righteous Fury is active, all damage taken is reduced by 6%. |
-| **Shield Specialization** | 3/3 | changed | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. |
-| **Sacred Duty** | 2/2 | **NEW** | Increases your total Stamina by 4% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec. |
-| **Swift Judgement** | 1/1 | **NEW** | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. |
-| **One-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with one-handed melee weapons by 10%. |
+| **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
+| **Sacred Duty** | 2/2 | **NEW** | Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec, and reduces the duration of Forbearance by 10 sec. |
 | **Improved Hammer of Justice** | 3/3 | moved | Decreases the cooldown of your Hammer of Justice spell by 15 sec. |
+| **Shield Specialization** | 2/2 | changed | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown. |
 | **Templar's Bulwark** | 1/1 | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. |
+| **Improved Righteous Fury** | 3/3 | changed | While Righteous Fury is active, all damage taken is reduced by 9%. |
+| **Swift Judgement** | 1/1 | **NEW** | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. |
 | **Reckoning** | 3/5 | changed | Gives you a 24% chance after Blocking and a 60% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec. |
 
 ### Retribution (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
 | **Benediction** | 1/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 2%. |
+| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
-| **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
-| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
-| **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
+| **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
+| **Unyielding Faith** | 2/2 | changed | Reduces the duration of Fear and Disorient effects on you by 30%. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204 for 30 sec. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Repentance** | 1/1 | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. |
 
@@ -67,6 +67,7 @@ The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 - PvP values are assumptions: no simulator plays PvP.
 - Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved):  out;  in; to be re-optimized.
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/30/21 -> 5/25/21; Improved Seal of Fury 1 gone; Shield Specialization 3 -> 2 (rank cap); One-Handed Weapon Specialization 3 gone; Holy Conduit 2 gone (moved to Holy); +1 Unyielding Faith (tier gating for Repentance); +1 Unyielding Faith (tier gating for Repentance); refill +5 Spiritual Focus (refill: the ret-dps model, pvp).
 
 ## Open questions (verify in the live game)
 

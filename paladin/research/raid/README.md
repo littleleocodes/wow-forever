@@ -10,28 +10,28 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Holy — Raid Healer (33/0/18)](builds/holy-raid-healer.md) | 33/0/18 | HEALER | [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md) |
-| [Retribution — Seal of Command / Twist of Light (simulator winner adopted 2026-09-27)](builds/ret-raid-dps.md) | 17/0/34 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
-| [Retribution — Seal of Command / Twist of Light (full raid buffs, 10/8/33)](builds/ret-full-buffs-raid.md) | 10/8/33 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
-| [Protection — Tank (simulator winner adopted 2026-09-28)](builds/prot-tank.md) | 0/31/20 | TANK | [prot-tank](../talents/classic-baseline/prot-tank.md) |
+| [Holy — Raid Healer (33/0/18)](builds/holy-raid-healer.md) | 31/2/18 | HEALER | [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md) |
+| [Retribution — Seal of Command / Twist of Light (simulator winner adopted 2026-09-27)](builds/ret-raid-dps.md) | 17/6/28 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
+| [Retribution — Seal of Command / Twist of Light (full raid buffs, 10/8/33)](builds/ret-full-buffs-raid.md) | 8/15/28 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
+| [Protection — Tank (simulator winner adopted 2026-09-28)](builds/prot-tank.md) | 0/33/18 | TANK | [prot-tank](../talents/classic-baseline/prot-tank.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) 🔬 | 11/8/32 | DPS |
-| [Holy — Raid healing (machine-learning search)](builds/holy-ml-heal.md) 🔬 | 33/12/6 | HEALER |
+| [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) 🔬 | 9/14/28 | DPS |
+| [Holy — Raid healing (machine-learning search)](builds/holy-ml-heal.md) 🔬 | 30/16/5 | HEALER |
 | [Protection — Raid tank (machine-learning search)](builds/protection-ml-tank.md) 🔬 | 0/35/16 | TANK |
-| [Shockadin — Raid (open talent search)](builds/shockadin-open-raid.md) 🔬 | 24/0/27 | DPS |
+| [Shockadin — Raid (open talent search)](builds/shockadin-open-raid.md) 🔬 | 23/0/28 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 31/7/13 | raid-heal |
-| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 17/0/34 | raid-dps |
-| [opt-ret-dps-parse](builds/opt-ret-dps-parse.md) | 24/0/27 | parse |
-| [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 0/35/16 | raid-tank |
+| [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 31/10/10 | raid-heal |
+| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 17/6/28 | raid-dps |
+| [opt-ret-dps-parse](builds/opt-ret-dps-parse.md) | 21/2/28 | parse |
+| [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 1/34/16 | raid-tank |
 
 Classic Era reference builds: [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md), [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md), [prot-tank](../talents/classic-baseline/prot-tank.md).
 

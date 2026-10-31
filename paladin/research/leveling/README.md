@@ -10,25 +10,25 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 15/0/36 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
+| [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 12/9/30 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 0/32/19 | DPS |
-| [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 8/10/33 | DPS |
+| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 0/31/20 | DPS |
+| [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 8/15/28 | DPS |
 | [Holy — Leveling (open talent search)](builds/holy-open-leveling.md) 🔬 | 30/0/21 | DPS |
-| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 33/12/6 | DPS |
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/35/16 | DPS |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 30/16/5 | DPS |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/34/17 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-ret-dps-leveling-st](builds/opt-ret-dps-leveling-st.md) | 15/0/36 | leveling-st |
-| [opt-ret-dps-solo-60](builds/opt-ret-dps-solo-60.md) | 8/16/27 | solo-60 |
-| [opt-ret-dps-leveling-aoe](builds/opt-ret-dps-leveling-aoe.md) | 10/8/33 | leveling-aoe |
+| [opt-ret-dps-leveling-st](builds/opt-ret-dps-leveling-st.md) | 10/11/30 | leveling-st |
+| [opt-ret-dps-solo-60](builds/opt-ret-dps-solo-60.md) | 8/19/24 | solo-60 |
+| [opt-ret-dps-leveling-aoe](builds/opt-ret-dps-leveling-aoe.md) | 8/14/29 | leveling-aoe |
 
 Classic Era reference builds: [leveling-retribution](../talents/classic-baseline/leveling-retribution.md).
 

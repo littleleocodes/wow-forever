@@ -39,7 +39,8 @@ RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire"},
 def model_for(cls, b, lead):
     """(scorer model, profile) for refilling a build."""
     content, role = b.get("content"), b.get("role")
-    profile = {"leveling": "leveling-st", "solo": "solo-60", "pvp": "pvp"}.get(content, "raid-heal" if role == "healer" else "raid-dps")
+    profile = {"leveling": "leveling-st", "solo": "solo-60", "pvp": "pvp"}.get(content, "raid-heal" if role == "healer" else
+                                                                             "raid-tank" if role == "tank" else "raid-dps")
     if b["id"].startswith("opt-"):
         import importlib.util
         s = importlib.util.spec_from_file_location("fl_run", HERE / "fightlab" / "run.py")   # not scorer/run.py
@@ -57,7 +58,9 @@ def model_for(cls, b, lead):
          "druid": "resto-heal" if role == "healer" else "feral-bear-tank" if role == "tank" else "balance-dps" if lead == "Balance"
                   else "resto-heal" if lead == "Restoration" else "feral-cat-dps",
          "hunter": "bm-leveling" if lev and lead == "Beast Mastery" else "melee-dps" if lead == "Survival" or "melee" in b["id"]
-                   else "mm-raid"}
+                   else "mm-raid",
+         # 70707 hotfix 113554 (ported 2026-10-31): the paladin's reworked tree; leveling builds refill with the Retribution model
+         "paladin": "ret-dps" if lev else "holy-heal" if role == "healer" else "prot-tank" if role == "tank" else "ret-dps"}
     return M[cls], profile
 
 
@@ -65,7 +68,7 @@ def repair(cls, b, opt):
     tree = opt.tree
     ren = RENAMES.get(cls, {})
     flat, log = {}, []
-    for items in b["allocation"].values():
+    for tname, items in b["allocation"].items():
         for n, r in items:
             if not r:
                 continue
@@ -74,6 +77,9 @@ def repair(cls, b, opt):
                 log.append(f"{n} -> {n2} (renamed)")
             if n2 not in tree.info:
                 log.append(f"{n} {r} gone")
+                continue
+            if tree.info[n2][0] != tname:   # moved to another tree (70707 paladin: Holy Conduit to Holy): following it would buy that tree's tiers
+                log.append(f"{n} {r} gone (moved to {tree.info[n2][0]})")
                 continue
             mx = tree.info[n2][2]
             if r > mx:

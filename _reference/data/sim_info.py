@@ -29,11 +29,12 @@ PORT_DATE = "2026-10-18"
 FORK_COMMITS = {"40be98e": None, "b0f0df3": "1.60.1.70205", "2ce8265": "1.60.1.70291", "b7083fa": "1.60.1.70425"}
 CLIENT_NOTE = {"b7083fa": "its spell data of 14-15 Oct"}
 OFFICIAL_COMMITS = {"09e7398": "1.60.1.70450", "30f67f5": "1.60.1.70450",   # 30f67f5: 2026-10-22 master (mage hotfix of 10-20, items of 10-22)
-                    "b90e2b9": "1.60.1.70707"}   # b90e2b9: 2026-10-30 master (live client, hotfix pushes 113531/113554; paladin, priest not yet)
+                    "b90e2b9": "1.60.1.70707",   # b90e2b9: 2026-10-30 master (live client, hotfix pushes 113531/113554; paladin, priest not yet)
+                    "54ceac6": "1.60.1.70707"}   # 54ceac6: 2026-10-31 master (the paladin and priest ports of push 113554, items of 10-31)
 # Racials of records written before run.py recorded them (audit 2026-10-18 rows 79 and 96): the final 2ce8265 races of 2026-10-15/16 ran
 # race-neutral (WOW_FOREVER_NO_RACIALS=1, HANDOFF.md), the b7083fa confirm runs of 2026-10-16/17 did not (sweep_70425.sh).
 RACIALS_BY_COMMIT = {"2ce8265": ("2026-10-15", "off"), "b7083fa": ("2026-10-16", "on")}
-DIRS = {"wowsims-forever": OFFICIAL, "forever-repo": FORK, "forever-upstream": FORK, "classic-repo": CLASSIC}
+DIRS = {"wowsims-forever": OFFICIAL, "wowsims-forever-next": OFFICIAL, "forever-repo": FORK, "forever-upstream": FORK, "classic-repo": CLASSIC}
 
 
 def _tools():

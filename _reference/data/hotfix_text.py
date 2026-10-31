@@ -29,6 +29,11 @@ TALENTS = {
     ("druid", "Leader of the Pack"): [_sub(r"the melee and ranged Critical Strike chance", lambda i, m: "the Critical Strike chance (melee, ranged and spell)")],
     ("druid", "Moonkin Form"): [_sub(r"their spell Critical Strike chance increased by 3%",
                                      lambda i, m: "their Critical Strike chance (melee, ranged and spell) increased by 3%")],
+    # paladin (hotfix push 113554, ported 2026-10-31): Wowhead's tooltips read 0 for these; the numbers are the simulator's spell store
+    # (sim/core/spelldata: 1328550 15/30; oath_of_light.go: 400/115/229 at level 60)
+    ("paladin", "Boundless Light"): [_sub(r"by \d+%", lambda i, m: f"by {15 * (i + 1)}%")],
+    ("paladin", "Oath of Light"): [_sub(r"Holy Light on them by up to \d+, your Flash of Light by up to \d+, and your Holy Shock by up to \d+",
+                                        lambda i, m: "Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229")],
     ("mage", "Ice Barrier"): [_sub(r"increasing your Frost damage by 3%", lambda i, m: "increasing your Frost damage by 15%"),
                               _sub(r"an additional 3%", lambda i, m: "an additional 5%")],
     ("mage", "Winter's Chill"): [_sub(r"your next Cone of Cold by 5%", lambda i, m: "your next Cone of Cold by 20%")],

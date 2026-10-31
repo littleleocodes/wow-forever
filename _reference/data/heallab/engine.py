@@ -272,15 +272,23 @@ class BaseHealer:
     def heal_mult_hook(self, spell, target, sim):
         return 1.0
 
-    def crit_chance(self, spell, sim):
+    def crit_chance(self, spell, sim, target=None):
         c = self.crit_base
         for ch, scope, v in self.effects:
             if ch == "crit" and matches(scope, spell.tags):
                 c += v
-        return min(1.0, c + self.crit_hook(spell, sim))
+        return min(1.0, c + self.crit_hook(spell, sim) + self.crit_target_hook(spell, sim, target))
 
     def crit_hook(self, spell, sim):
         return 0.0
+
+    def crit_target_hook(self, spell, sim, target):
+        """Crit that depends on the heal's target (2026-10-31: the paladin's Boundless Light); 0 without a target."""
+        return 0.0
+
+    def crit_mult(self, spell):
+        """A critical heal's multiplier (2026-10-31: the paladin's Holy Power raises it)."""
+        return T.CRIT_MULT
 
     def cost(self, spell, sim):
         c = spell.cost * (T.class_base_mana(self.CLASS, T.LEVEL) / 100.0 if spell.cost_pct else 1.0)
@@ -520,7 +528,7 @@ class Sim:
     def land(self, spell, target):
         """A cast completes (or an instant is used)."""
         h = self.h
-        crit_c = h.crit_chance(spell, self) + self.temp_crit
+        crit_c = h.crit_chance(spell, self, target) + self.temp_crit
         self.temp_crit = 0.0
         mult = h.heal_mult(spell, target, self)
         targets = [target]
@@ -534,7 +542,7 @@ class Sim:
             if spell.heal_min > 0:
                 amt = self.rng.uniform(spell.heal_min, spell.heal_max) + spell.coef * h.healing
                 crit = self.rng.random() < crit_c
-                amt *= f * (T.CRIT_MULT if crit else 1.0)
+                amt *= f * (h.crit_mult(spell) if crit else 1.0)
                 self.apply_heal(spell, tg, amt, crit)
             if spell.hot > 0:
                 ticks = max(1, int(round(spell.hot_dur / spell.tick_every)))
@@ -542,7 +550,7 @@ class Sim:
                 # the expected crit bonus of a HoT whose ticks can crit (T.HOT_CRIT), from the crit chance at the cast (no temporary crit:
                 # Inner Focus no longer reaches periodic effects, notes post 4); kept apart from per so Swiftmend and the deficit
                 # forecasts read the plain tick
-                fc = 1 + min(1.0, h.crit_chance(spell, self)) * (T.CRIT_MULT - 1) if spell.name in T.HOT_CRIT else 1.0
+                fc = 1 + min(1.0, h.crit_chance(spell, self)) * (h.crit_mult(spell) - 1) if spell.name in T.HOT_CRIT else 1.0
                 tg.hots[spell.name] = [per, ticks, self.t + spell.tick_every, per * ticks, fc]
             if spell.absorb > 0:
                 tg.absorb = spell.absorb * f

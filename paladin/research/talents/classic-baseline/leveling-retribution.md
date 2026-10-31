@@ -91,22 +91,22 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
-| Holy | Divine Strength | 5 | unchanged | tier 1, max 5 |
-| Holy | Divine Intellect | 5 | unchanged | tier 1, max 5 |
+| Holy | Divine Strength | 5 | unchanged | tier 1, max 5 — moved in build 1.60.1.70707: was row 1, col 2 |
+| Holy | Divine Intellect | 5 | moved-tree | now in Protection, tier 1 |
 | Holy | Consecration | 1 | **REMOVED** | removed from Classic |
 | Retribution | Improved Blessing of Might | 5 | **REMOVED** | removed from Classic |
 | Retribution | Benediction | 5 | changed | tier 1, max 5 — tooltip changed |
 | Retribution | Improved Judgement | 2 | changed | tier 2, max 2 — tooltip changed |
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
 | Retribution | Deflection | 5 | moved | tier 1, max 5 — was Retribution row 2, col 3 |
-| Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
-| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Retribution | Conviction | 5 | changed | tier 2, max 3 — tooltip changed; was Retribution row 3, col 2; moved in build 1.60.1.70707: was row 2, col 3; max rank 5 -> 3 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
+| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1) |
 | Retribution | Pursuit of Justice | 2 | changed | tier 3, max 2 — tooltip changed |
 | Retribution | Improved Retribution Aura | 2 | **REMOVED** | removed from Classic |
-| Retribution | Two-Handed Weapon Specialization | 3 | unchanged | tier 5, max 3 |
+| Retribution | Two-Handed Weapon Specialization | 3 | unchanged | tier 4, max 3 — moved in build 1.60.1.70707: was row 5, col 1; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
 | Retribution | Sanctity Aura | 1 | **REMOVED** | removed from Classic |
-| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2 |
-| Retribution | Repentance | 1 | moved | tier 5, max 1 — was Retribution row 7, col 2 |
+| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; moved in build 1.60.1.70707: was row 5, col 2; prerequisite changed in build 1.60.1.70707: was sanctified judgement |
+| Retribution | Repentance | 1 | moved | tier 5, max 1 — was Retribution row 7, col 2; moved in build 1.60.1.70707: was row 5, col 3 |
 
 **12 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

@@ -6,12 +6,6 @@
   "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"
  },
  {
-  "file": "sim/paladin/talents_retribution.go",
-  "replace": "\tspelldata.ParseStatic(&paladin.Character, spellData.ChampionOfTheLight.Rank(paladin.Talents.ChampionOfTheLight))\n",
-  "with": "\t// wow-forever patch: 10% of Intellect a rank as spell damage (client 70425's tooltip and Blizzard's 16 Oct notes; user decision\n\t// 2026-10-18). The official spell store's curve for 1311084 reads 20/40/60%, which a 70450 hotfix may have restored (audit 2 row 2).\n\tpaladin.AddStatDependency(stats.Intellect, stats.SpellDamage, 0.10*float64(paladin.Talents.ChampionOfTheLight))\n",
-  "why": "Champion of the Light 10/20/30% of Intellect (70425 tooltip, 16 Oct notes); the official store reads 20/40/60%"
- },
- {
   "file": "sim/core/buffs/debuffs_auto_gen.go",
   "replace": "var huntersMarkSpell = spelldata.MustFind(14325)\n",
   "with": "var huntersMarkSpell = spelldata.MustFind(14324) // wow-forever patch: rank 3 (+98 ranged attack power) outvalues rank 4 (+71) in the client data; a hunter casts the stronger (audit 2 row 13)\n",

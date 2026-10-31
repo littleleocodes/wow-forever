@@ -7,7 +7,7 @@
 | **Build** | 9/30/12 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -64,12 +64,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 376 | +0.0% | 768 | +0.0% | 61 s |
-| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | -1.8% | 754 | -1.8% | 61 s |
-| 3 | *Cat* | community simulator | - | 352 | -6.2% | 750 | -2.3% | 62 s |
-| 4 | *Hybrid* | community simulator | - | 341 | -9.1% | 698 | -9.1% | 61 s |
-| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/30/12 | 335 | -10.9% | 643 | -16.3% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -12.6% | 636 | -17.2% | 0 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | +0.0% | 754 | -1.8% | 61 s |
+| 2 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.1% | 768 | +0.0% | 61 s |
+| 3 | *Cat* | community simulator | - | 352 | -4.4% | 750 | -2.3% | 62 s |
+| 4 | *Hybrid* | community simulator | - | 341 | -7.4% | 698 | -9.1% | 61 s |
+| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/30/12 | 335 | -9.3% | 643 | -16.3% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.0% | 636 | -17.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

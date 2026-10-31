@@ -27,7 +27,7 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 20930
+      "spellId": 25902
      }
     }
    }
@@ -128,7 +128,7 @@
          },
          "rhs": {
           "const": {
-           "val": "0.9s"
+           "val": "0.3s"
           }
          }
         }
@@ -150,7 +150,8 @@
       "rank": 8
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -171,21 +172,6 @@
         }
        },
        {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "autoTimeToNext": {
-           "autoType": "MeleeAuto"
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.2s"
-          }
-         }
-        }
-       },
-       {
         "auraIsActive": {
          "auraId": {
           "spellId": 20293,
@@ -201,7 +187,7 @@
          },
          "rhs": {
           "const": {
-           "val": "60%"
+           "val": "25%"
           }
          }
         }
@@ -215,7 +201,8 @@
       "rank": 5
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
   },
   {
    "action": {

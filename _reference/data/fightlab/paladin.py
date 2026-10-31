@@ -213,30 +213,27 @@ MECHANICS = {
     "Divine Strength": "+2%/rank Strength",
     "Divine Intellect": "+2%/rank Intellect",
     "Healing Light": "+4%/rank Holy Light / Flash of Light",
-    "Spiritual Focus": "35%/rank chance to ignore pushback on heals",
-    "Improved Seals": "+5%/rank seal and judgement damage (seal procs and judgements roll on the melee table: miss, crit x2.0)",
+    "Spiritual Focus": "14%/rank chance to ignore pushback on heals",
+    "Improved Seals": "+3%/rank seal and judgement damage (seal procs and judgements roll on the melee table: miss, crit x2.0)",
     "Unyielding Faith": "PvP",
-    "Voice of Truth": "casters only",
-    "Reverence": "10%/rank mana regen while casting",
+    "Reverence": "15%/rank mana regen while casting",
     "Purifying Power": "Exorcism / Holy Wrath (Undead and Demons): not used",
     "Infusion of Light": "healers",
     "Illumination": "20%/rank: crit heals refund 50% of base mana",
     "Divine Favor": "not used",
-    "Divine Precision": "+6%/rank hit with Consecration, Exorcism, Holy Shock, Holy Strike, Holy Wrath (the client's class mask; not judgements)",
+    "Divine Precision": "+4%/rank hit with Consecration, Exorcism, Holy Shock, Holy Strike, Holy Wrath (the client's class mask; not judgements)",
     "Holy Shock": "not used (Retribution)",
     "Consecrated Ground": "+5%/rank to every Holy spell against a mob standing in your Consecration (Consecration's own ticks after the first)",
-    "Holy Power": "+3%/rank Holy Strike crit, +1%/rank spell crit",
+    "Holy Power": "heal crits x(1 + 10%/rank) (hotfix 113554: the critical heal bonus, no damage crit)",
     "Toughness": "+2%/rank armor",
     "Redoubt": "no shield",
     "Precision": "+1%/rank hit",
     "Guardian's Favor": "not used",
     "Anticipation": "+20 Defense: ~-1.6% chance to be hit (assumed)",
-    "Improved Seal of Fury": "no shield",
     "Improved Righteous Fury": "not used",
     "Shield Specialization": "no shield",
-    "Sacred Duty": "+2%/rank Stamina, -30 s/rank Divine Protection / Shield cooldown",
+    "Sacred Duty": "-30 s/rank Divine Protection / Divine Shield / Templar's Bulwark cooldown (no Stamina since hotfix 113554)",
     "Swift Judgement": "not used",
-    "One-Handed Weapon Specialization": "two-hander build",
     "Improved Hammer of Justice": "-5 s/rank Hammer of Justice cooldown",
     "Templar's Bulwark": "not used",
     "Reckoning": "20%/rank chance after a crit taken to store an extra attack (up to 4, one per 1.5 s); the next auto attack releases them all (client 70425)",
@@ -245,9 +242,9 @@ MECHANICS = {
     "Deflection": "+1%/rank parry",
     "Benediction": "-2%/rank mana on instants",
     "Improved Judgement": "-1 s/rank Judgement cooldown",
-    "Holy Conduit": "-20%/rank Consecration / Hammer of Wrath mana",
-    "Conviction": "+1%/rank melee crit (white, Holy Strike, seal procs and judgements: all on the melee table)",
-    "Vindication": "every landed melee attack: +1%/rank attack power for 30 s (client and fork: 100% chance; the mob's attack power loss is not modelled)",
+    "Holy Conduit": "-20%/rank Consecration / Holy Wrath / Exorcism / Hammer of Wrath mana",
+    "Conviction": "+2%/rank crit with every spell and attack (hotfix 113554: melee, seal procs, judgements and spells)",
+    "Vindication": "the target's attack power -68/rank: not modelled (hotfix 113554 dropped the paladin's own attack power gain)",
     "Sanctified Judgement": "33%/rank chance per Judgement to refund 20%/rank of the seal's mana",
     "Seal of Command": "unlocks Seal of Command (7 procs per minute: 70% of weapon damage + 0.29 x spell power as Holy, hit and crit on the melee table; judgement 169..187, doubled on a stunned mob)",
     "Pursuit of Justice": "travel speed only",
@@ -256,9 +253,13 @@ MECHANICS = {
     "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning; not Holy Strike, seals or judgements)",
     "Vengeance": "+1%/rank Physical and Holy damage per stack after any non-periodic crit (melee, seal, judgement, spell; 3 stacks, 30 s)",
     "Repentance": "Humanoids only: not used",
-    "Champion of the Light": "+10%/rank of Intellect as spell damage (seals, judgements, Consecration, Holy Shock); not healing (notes, 1 Oct)",
-    "Instrument of Law": "-0.5 s/rank Hammer of Wrath cast",
-    "Twist of Light": "-20% seal mana",
+    "Champion of the Light": "+12%/rank of Intellect as spell damage (seals, judgements, Consecration, Holy Shock; not healing), -0.2 s/rank Hammer of Wrath cast",
+    "Unsealed Wrath": "not modelled: stored seal copies pay only when a different seal lands (the lab keeps one seal up)",
+    "Shieldsworn": "no shield",
+    "Oath of Light": "healers (an ally's heals)",
+    "Boundless Light": "healers (Holy Shock on allies)",
+    "Stoicism": "PvP",
+    "Turn Evil": "Turn Undead: not used",
 }
 FIT = {
     "Divine Strength": "scale", "Divine Intellect": "scale", "Improved Seals": "scale", "Reverence": "scale", "Illumination": "scale", "Holy Power": "scale",
@@ -267,7 +268,7 @@ FIT = {
     "Holy Conduit": "scale", "Conviction": "scale", "Vindication": "scale", "Sanctified Judgement": "scale",
     "Seal of Command": ("replace", [{"channel": "dmg", "scope": ["type:melee"], "values": [0.15]}]),
     "Eye for an Eye": "scale", "Sacred Arbiter": "scale", "Two-Handed Weapon Specialization": "scale", "Vengeance": "scale", "Champion of the Light": "scale",
-    "Instrument of Law": "scale", "Twist of Light": "scale", "Spiritual Focus": "scale", "Repentance": "scale", "Voice of Truth": "scale",
+    "Spiritual Focus": "scale", "Repentance": "scale",
 }
 SHARE_SOURCE = {"Melee": "white", "Seal of Command": "seal", "Seal of Righteousness": "seal", "Judgement": "judgement", "Consecration": "consecration",
                 "Holy Strike": "holy_strike", "Hammer of Wrath": "hammer_of_wrath", "Retribution Aura": "ret_aura"}
@@ -307,26 +308,25 @@ CONSEC_MARKED_TICKS = 7.0 / 8.0
 DIVINE_PRECISION_SPELLS = ("Consecration", "Exorcism", "Holy Shock", "Holy Strike", "Holy Wrath", "Light's Vigil")
 MECHANICS_ALT = dict(MECHANICS, **{
     "Holy Shock": "offensive Holy Shock (Forever tooltip: damage to an enemy or healing to an ally; 10 s cooldown), a heal when low",
-    "Holy Power": "+3%/rank Holy Shock and Holy Strike crit, +1%/rank other spells",
+    "Holy Power": "heal crits x(1 + 10%/rank) (hotfix 113554: no Holy Shock or Holy Strike damage crit)",
     "Divine Favor": "off the global cooldown before the next Holy Shock or heal: 100% crit",
     "Illumination": "20%/rank on a heal crit: 50% of the spell's base cost back (in-combat heals rolled, between fights the expected value)",
     "Infusion of Light": "Holy Shock / Flash of Light crit: -0.5 s/rank on the next Holy Light",
-    "Spiritual Focus": "35%/rank chance to ignore pushback on Holy Light / Flash of Light",
+    "Spiritual Focus": "14%/rank chance to ignore pushback on Holy Light / Flash of Light",
     "Light's Vigil": "not used (1,340 mana at 60 for one free Holy Shock and 75% back: net mana loss for a solo leveler)",
     "Toughness": "+2%/rank armor from items (shield included)",
-    "Redoubt": "2%/rank of melee hits taken: +4%/rank block for 10 s or 5 blocks",
+    "Redoubt": "10% of melee hits taken: +6%/rank block for 10 s or 5 blocks",
     "Anticipation": "+4 Defense/rank: +0.04% dodge, parry and block per point (mob hit and crit chance unchanged)",
-    "Improved Seal of Fury": "60 mana when a Seal of Fury shield is fully absorbed",
-    "Improved Righteous Fury": "-2%/rank damage taken (Righteous Fury assumed always up)",
-    "Shield Specialization": "+10%/rank block value; blocks restore 4% max mana at 33%/rank chance, once per 3 s",
+    "Improved Righteous Fury": "-3%/rank damage taken (Righteous Fury assumed always up)",
+    "Shield Specialization": "+15%/rank block value; blocks restore 4% max mana at 50%/rank chance, once per 3 s",
     "Swift Judgement": "off the global cooldown: resets Judgement and makes it free when it has 3+ s left",
-    "One-Handed Weapon Specialization": "+3/6/10% Physical damage with a one-hander (white swings, Reckoning)",
     "Templar's Bulwark": "emergency absorb of 100% max health for 8 s (Forbearance 1 min)",
     "Reckoning": "8%/rank after a block and 20%/rank after a crit taken (one 1.5 s proc cooldown for both): an extra attack stored (up to 4), "
                  "all released on the next auto attack (client 70425, notes of 16 Oct)",
     "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
     "Holy Shield": "+30% block (the 70291 tooltip) for 10 s or 4 blocks, Holy damage per block, recast when down",
     "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning)",
+    "Shieldsworn": "-4 s Holy Strike cooldown with a shield (its shield strike's Holy Shield charges, Shield Specialization roll and spell block not modelled)",
 })
 
 
@@ -398,7 +398,7 @@ class PaladinModule(BaseModule):
         g = gear_stats(level, self.gear, "paladin")
         strength = (base["strength"] + g["strength"]) * (1 + self.tv("Divine Strength", 0) / 100)
         agility = base["agility"] + g["agility"]
-        stamina = (base["stamina"] + g["stamina"]) * (1 + self.tv("Sacred Duty", 0) / 100)
+        stamina = base["stamina"] + g["stamina"]
         intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Divine Intellect", 0) / 100)
         spirit = base["spirit"] + g["spirit"]
         dev = self.book.get("Devotion Aura")
@@ -408,7 +408,7 @@ class PaladinModule(BaseModule):
         self._cotl = intellect * self.tv("Champion of the Light", 0) / 100   # spell damage only (heal_multiplier takes it back out of heals)
         p = Player(level=level, hp_max=class_base_health("paladin", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"] + self._cotl, armor=armor,
-                   spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Holy Power", 1) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
+                   spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Conviction", 0) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
         self._sp_total = p.spell_power
         self._reck = 0
         self._reck_block_ready = -1.0
@@ -438,8 +438,6 @@ class PaladinModule(BaseModule):
             cost *= 1 - self.tv("Benediction", 0) / 100
         if spell.name in ("Consecration", "Hammer of Wrath", "Exorcism", "Holy Wrath"):
             cost *= 1 - self.tv("Holy Conduit", 0) / 100
-        if spell.name in SEALS and self.rank("Twist of Light"):
-            cost *= 0.8
         return cost
 
     def cast_time(self, spell):
@@ -447,7 +445,7 @@ class PaladinModule(BaseModule):
             return max(0.0, spell.cast - 0.5 * self.rank("Infusion of Light"))
         c = spell.cast
         if spell.name == "Hammer of Wrath":
-            c = max(0.0, c - 0.5 * self.rank("Instrument of Law"))
+            c = max(0.0, c - self.tv("Champion of the Light", 1))   # hotfix 113554: -0.2 s/rank (Instrument of Law's -0.5 s/rank is gone)
         return c
 
     def hit_bonus(self, spell):
@@ -463,7 +461,7 @@ class PaladinModule(BaseModule):
         """Two- or One-Handed Weapon Specialization: the client rows (20111 / 20196, A_MOD_DAMAGE_PERCENT_DONE, Misc 1) are Physical
         damage only: white swings and Reckoning's extra attacks, not Holy Strike (a Holy-school strike), seals, judgements or spells (audit
         2026-10-18 #5)."""
-        return self.tv("Two-Handed Weapon Specialization" if kind == "2h" else "One-Handed Weapon Specialization", 0) / 100
+        return self.tv("Two-Handed Weapon Specialization", 0) / 100 if kind == "2h" else 0.0   # One-Handed: removed by hotfix 113554
 
     def _holy_marks(self, spell):
         """Consecrated Ground: +X% to every Holy spell against a mob standing in your Consecration (its dot ticking on the mob)."""
@@ -476,11 +474,9 @@ class PaladinModule(BaseModule):
         return 1 + bonus if (f is not None and f.dot_active("Consecration")) else 1.0
 
     def _vind_gain(self, fight):
-        """Vindication's attack power gain while its buff is up: +1/2/3% of attack power (read from the buff, never written into the player)."""
-        p = fight.p
-        if not self.rank("Vindication") or not p.buff("Vindication", fight.t):
-            return 0.0
-        return p.attack_power * self.tv("Vindication", 1) / 100
+        """Vindication's attack power gain: none since hotfix 113554 (the talent only lowers the target's attack power by 68/136/204, which
+        the lab does not model; until then +1/2/3% of the paladin's attack power)."""
+        return 0.0
 
     def _vind_factor(self, spell):
         """Vindication on the attacks the engine resolves: the expected weapon damage with the extra attack power over the one without
@@ -517,7 +513,7 @@ class PaladinModule(BaseModule):
             if r < miss:
                 return "miss"
             r -= miss
-        return "crit" if r < p.melee_crit + self.tv("Holy Power", 1) / 100 else "hit"
+        return "crit" if r < p.melee_crit else "hit"
 
     def _seal_hit(self, fight, seal, dmg, can_miss=False):
         """Deal a seal's proc on the melee table; a crit doubles it and stacks Vengeance."""
@@ -557,8 +553,6 @@ class PaladinModule(BaseModule):
     def crit_bonus(self, spell, frozen):
         if self.path != "ret":
             return self._crit_bonus_alt(spell)
-        if spell.name == "Holy Strike":
-            return self.tv("Holy Power", 0) / 100
         return 0.0
 
     def damage_multiplier(self, spell, frozen):
@@ -727,7 +721,7 @@ class PaladinModule(BaseModule):
         if spell.name == "Hammer of Justice":
             cd = max(10.0, cd - self.tv("Improved Hammer of Justice", 0))
         if spell.name in ("Divine Protection", "Divine Shield"):
-            cd = max(60.0, cd - self.tv("Sacred Duty", 1))
+            cd = max(60.0, cd - self.tv("Sacred Duty", 0))
         if cd > 0:
             p.cooldowns[spell.name] = t + cd
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
@@ -867,7 +861,7 @@ class PaladinModule(BaseModule):
         sh_sta = _interp(SHIELD_STAMINA, level) if self.shield else 0.0
         strength = (base["strength"] + g["strength"]) * (1 + self.tv("Divine Strength", 0) / 100) * kings
         agility = (base["agility"] + g["agility"]) * kings
-        stamina = (base["stamina"] + g["stamina"] + sh_sta) * (1 + self.tv("Sacred Duty", 0) / 100) * kings
+        stamina = (base["stamina"] + g["stamina"] + sh_sta) * kings
         intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Divine Intellect", 0) / 100) * kings
         spirit = (base["spirit"] + g["spirit"]) * kings
         dev = self.book.get("Devotion Aura")
@@ -877,7 +871,7 @@ class PaladinModule(BaseModule):
         self._cotl = intellect * self.tv("Champion of the Light", 0) / 100   # spell damage only (heal_multiplier takes it back out of heals)
         p = Player(level=level, hp_max=class_base_health("paladin", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"] + self._cotl, armor=armor,
-                   spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Holy Power", 1) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
+                   spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Conviction", 0) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
         self._sp_total = p.spell_power
         self._reck = 0
         self._reck_block_ready = -1.0
@@ -904,10 +898,6 @@ class PaladinModule(BaseModule):
 
     def _crit_bonus_alt(self, spell):
         b = 0.0
-        if spell.name == "Holy Strike":
-            b += self.tv("Holy Power", 0) / 100
-        if spell.name in ("Holy Shock", "Holy Shock (heal)"):
-            b += (self.tv("Holy Power", 0) - self.tv("Holy Power", 1)) / 100   # 3%/rank instead of the 1%/rank already in spell crit
         f = self._fight
         if f is not None and f.p.buff("Divine Favor", f.t) and (spell.name == "Holy Shock" or getattr(spell, "selfheal", False)):
             b += 1.0
@@ -971,20 +961,13 @@ class PaladinModule(BaseModule):
                 dmg -= blocked
                 fight.note(f"blocked {blocked:.0f}")
                 self.on_block(fight)
-            # 2%/rank (the client's talent curve; the fork reads it: talents_protection.go); the tooltip's 10% is rank 5's on every rank
-            if self.rank("Redoubt") and fight.rng.random() < 0.02 * self.rank("Redoubt"):
+            # 10% on every rank since hotfix 113554 (spell 20127's ProcChance; until then 2%/rank)
+            if self.rank("Redoubt") and fight.rng.random() < self.tv("Redoubt", 0) / 100:
                 p.buffs["Redoubt"] = {"until": t + 10.0, "charges": 5}
         if self.rf:
             dmg *= 1 - self.tv("Improved Righteous Fury", 0) / 100
             if p.buff("Iron Creed", t):
                 dmg *= 1 - self.tv("Iron Creed", 1) / 100
-        if self._sof_live:   # Improved Seal of Fury: the seal's shield was used up
-            if t >= p.absorb_until:
-                self._sof_live = False
-            elif p.absorb <= 1e-6:
-                self._sof_live = False
-                if self.rank("Improved Seal of Fury"):
-                    p.mana = min(p.mana_max, p.mana + 60.0)
         return dmg
 
     # ---------------------------------------------------------------- events
@@ -1034,6 +1017,11 @@ class PaladinModule(BaseModule):
         if outcome == "crit":
             self._vengeance(fight)
 
+    def _heal_crit(self):
+        """A heal crit's multiplier: 150%, times Holy Power's 10%/rank (hotfix 113554: the whole critical heal, so 5/5 is 225%; the
+        simulator's applyHolyPower)."""
+        return 1.5 * (1 + self.tv("Holy Power", 0) / 100)
+
     def _self_heal(self, fight, spell):
         p, t = fight.p, fight.t
         amount = (fight.rng.uniform(spell.heal_min, spell.heal_max) + spell.heal_coef * p.spell_power) * self.heal_multiplier(spell)
@@ -1042,7 +1030,7 @@ class PaladinModule(BaseModule):
         if spell.name == "Holy Light":
             p.buffs.pop("Infusion of Light", None)
         if crit:
-            amount *= 1.5
+            amount *= self._heal_crit()
             if self.rank("Illumination") and fight.rng.random() < self.tv("Illumination", 0) / 100:
                 p.mana = min(p.mana_max, p.mana + 0.5 * spell.cost)
             if spell.name in ("Flash of Light", "Holy Shock (heal)") and self.rank("Infusion of Light"):
@@ -1110,7 +1098,9 @@ class PaladinModule(BaseModule):
         if name == "Hammer of Justice":
             cd = max(10.0, cd - self.tv("Improved Hammer of Justice", 0))
         if name in ("Divine Protection", "Divine Shield", "Templar's Bulwark"):
-            cd = max(60.0, cd - self.tv("Sacred Duty", 1))
+            cd = max(60.0, cd - self.tv("Sacred Duty", 0))
+        if name == "Holy Strike" and self.shield and self.rank("Shieldsworn"):
+            cd = max(GCD, cd - self.tv("Shieldsworn", 0))   # hotfix 113554: -4 s (its shield strike's Holy Shield and spell block not modelled)
         if cd > 0:
             p.cooldowns[name] = t + cd
 
@@ -1129,7 +1119,7 @@ class PaladinModule(BaseModule):
                 break
             p.mana -= self.mana_cost(heal)
             p.mana = min(p.mana_max, p.mana + cc * illum * 0.5 * heal.cost)
-            amount = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power) * self.heal_multiplier(heal) * (1 + 0.5 * cc)
+            amount = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power) * self.heal_multiplier(heal) * (1 + (self._heal_crit() - 1) * cc)
             p.hp = min(p.hp_max, p.hp + amount)
             spent += max(GCD, heal.cast)
         return spent

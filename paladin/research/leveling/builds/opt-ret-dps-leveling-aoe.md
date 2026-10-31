@@ -1,13 +1,13 @@
-# Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-aoe) — 10/8/33
+# Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-aoe) — 8/14/29
 
 *[Paladin](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 10/8/33 (Holy / Protection / Retribution) |
+| **Build** | 8/14/29 (Holy / Protection / Retribution) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,66 +15,37 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Point allocation
 
-### Holy (10)
+### Holy (8)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Divine Strength** | 5/5 | unchanged | Increases your Strength by 10%. |
-| **Divine Intellect** | 2/5 | unchanged | Increases your total Intellect by 4%. |
-| **Improved Seals** | 3/3 | **NEW** | Increases the damage done by your Seals and Judgements by 15%. |
+| **Improved Seals** | 3/5 | **NEW** | Increases the damage done by your Seals and Judgements by 9%. |
 
-### Protection (8)
+### Protection (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Toughness** | 5/5 | moved | Increases your armor value from items by 10%. |
+| **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
+| **Sacred Duty** | 2/2 | **NEW** | Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec, and reduces the duration of Forbearance by 10 sec. |
+| **Toughness** | 4/5 | moved | Increases your armor value from items by 8%. |
 
-### Retribution (33)
+### Retribution (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
-| **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
+| **Conviction** | 3/3 | changed | Improves your chance to get a critical strike with all spells and attacks by 6%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
-| **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
-| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
+| **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204 for 30 sec. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 6%. |
-| **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 30% of your Intellect. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Retribution | Deflection | 5 | 0/0/5 |
-| 15-19 | Retribution | Conviction | 5 | 0/0/10 |
-| 20 | Retribution | Seal of Command | 1 | 0/0/11 |
-| 21-22 | Retribution | Sanctified Judgement | 2 | 0/0/13 |
-| 23-24 | Retribution | Improved Judgement | 2 | 0/0/15 |
-| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
-| 26 | Retribution | Sanctified Judgement | 1 | 0/0/17 |
-| 27-28 | Retribution | Vindication | 2 | 0/0/19 |
-| 29 | Retribution | Pursuit of Justice | 1 | 0/0/20 |
-| 30-32 | Retribution | Vengeance | 3 | 0/0/23 |
-| 33-34 | Retribution | Two-Handed Weapon Specialization | 2 | 0/0/25 |
-| 35-36 | Retribution | Instrument of Law | 2 | 0/0/27 |
-| 37-41 | Holy | Divine Strength | 5 | 5/0/27 |
-| 42-44 | Holy | Improved Seals | 3 | 8/0/27 |
-| 45-47 | Protection | Toughness | 3 | 8/3/27 |
-| 48 | Retribution | Two-Handed Weapon Specialization | 1 | 8/3/28 |
-| 49-50 | Protection | Toughness | 2 | 8/5/28 |
-| 51-53 | Protection | Precision | 3 | 8/8/28 |
-| 54 | Retribution | Vindication | 1 | 8/8/29 |
-| 55 | Retribution | Pursuit of Justice | 1 | 8/8/30 |
-| 56 | Holy | Divine Intellect | 1 | 9/8/30 |
-| 57-58 | Retribution | Champion of the Light | 2 | 9/8/32 |
-| 59 | Holy | Divine Intellect | 1 | 10/8/32 |
-| 60 | Retribution | Champion of the Light | 1 | 10/8/33 |
+| **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
 
 ## Core talents (priority order)
 
@@ -111,6 +82,7 @@ What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveli
 ## Notes
 
 - Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/14/29; Divine Intellect 2 gone (moved to Protection); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); -1 Toughness (over 51); order dropped (order_repair.py) (refill: the ret-dps model, leveling-aoe).
 
 ## Open questions (verify in the live game)
 

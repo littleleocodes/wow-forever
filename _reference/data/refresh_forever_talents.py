@@ -154,7 +154,39 @@ def scale_text(txt, k):
     return re.sub(r"\d+(?:\.\d+)?", f, txt)
 
 
-def sim_sources(cls, tf, sim_dir, raw_dir):
+def sim_comment_texts(repo, cls):
+    """{talent: [rank texts]} from the official simulator's talent comments (sim/<class>/talents_*.go: "// Name - text with 1/2/3%
+    steps", one slash list per changing number; 2026-10-31, the paladin's hotfix push 113554 reworked tree, whose numbers neither the
+    talentsforever export of 10-29 nor Wowhead carries). The comment's first paragraph, up to a sentence about the simulator itself."""
+    out = {}
+    for f in sorted((repo / "sim" / cls).glob("talents_*.go")):
+        lines = f.read_text(encoding="utf-8").splitlines()
+        for i, l in enumerate(lines):
+            m = re.match(r"// ([A-Z][A-Za-z' :-]*?) - (.*)", l)
+            if not m:
+                continue
+            txt = [m.group(2)]
+            for l2 in lines[i + 1:]:
+                if not l2.startswith("// ") or not l2[3:].strip():
+                    break
+                txt.append(l2[3:].strip())
+            s = " ".join(txt)
+            sents = re.split(r"(?<=\.)\s+", s)
+            keep = []
+            for x in sents:
+                if re.search(r"\b(sim|TODO|row|aura)\b", x, flags=re.I):
+                    break
+                keep.append(x)
+            s = " ".join(keep).strip()
+            lists = re.findall(r"\d+(?:\.\d+)?(?:/\d+(?:\.\d+)?)+", s)
+            n = max([len(x.split("/")) for x in lists] or [1])
+            if any(len(x.split("/")) != n for x in lists):
+                continue   # steps of different lengths: not a per-rank list
+            out[m.group(1)] = [re.sub(r"\d+(?:\.\d+)?(?:/\d+(?:\.\d+)?)+", lambda mm: mm.group(0).split("/")[k], s) for k in range(n)]
+    return out
+
+
+def sim_sources(cls, tf, sim_dir, raw_dir, sim_text=False):
     """The official simulator's trees (ui/sim/talents/trees/<class>.json, extracted from the live game files with the hotfix caches;
     2026-10-30: the live hotfixes of 27-30 Oct reworked the druid and mage trees, and the fan sites' reads stopped at 70532) as the
     tree structure: names, positions, rank caps and prerequisite arrows (at the required talent's full rank, as the client's arrows ask).
@@ -164,6 +196,7 @@ def sim_sources(cls, tf, sim_dir, raw_dir):
     sim = json.load(open(sim_dir / f"{cls}.json", encoding="utf-8"))
     tf_trees = {TREE_RENAMES.get(tr["name"], tr["name"]): tr for tr in tf["trees"]}
     tf_out, wd_out, est, notes = [], [], {}, []
+    comments = sim_comment_texts(sim_dir.parents[3], cls) if sim_text else {}
     for tr in sim:
         tname = TREE_RENAMES.get(tr["name"], tr["name"])
         # by name across the class's trees: a talent that changed trees keeps its text (70707: Furor to Feral Combat, Heart of the Wild
@@ -192,6 +225,14 @@ def sim_sources(cls, tf, sim_dir, raw_dir):
                 est[(tname, n)] = list(range(1, mx))
                 notes.append(f"{tname}/{n}: tooltip from Wowhead's spell {t['spellId']} ({'new talent' if not o else 'rank cap ' + str(o['max']) + ' -> ' + str(mx)})"
                              + (f"; ranks 2-{mx} scaled from rank 1 (estimated)" if mx > 1 else ""))
+            cm = comments.get(n)
+            nums = lambda xs: [re.findall(r"\d+(?:\.\d+)?", x) for x in xs]
+            if cm and len(cm) == mx and (est.get((tname, n)) is not None or nums(cm) != nums(ranks)):
+                # the simulator's per-rank numbers (the live hotfix) where the export's are estimated, missing or different
+                ranks = list(cm)
+                est.pop((tname, n), None)
+                notes[:] = [x for x in notes if not x.startswith(f"{tname}/{n}:")]
+                notes.append(f"{tname}/{n}: per-rank text from the simulator's talent comment (sim/{cls}/talents_*.go, the live hotfix numbers)")
             tts.append({"name": n, "row": r + 1, "col": c + 1, "max": mx, "desc": ranks, "icon": (o or {}).get("icon"),
                         **({"req": pre["fancyName"]} if pre else {})})
             nodes.append({"id": f"sim:{tname}:{n}", "name": n, "row": r, "col": c, "maxRanks": mx, "iconName": (o or {}).get("icon"),
@@ -362,6 +403,8 @@ def main():
     ap.add_argument("--previous", default=None, help="raw folder holding the snapshot to diff against (default: the file being replaced)")
     ap.add_argument("--sim-trees", default=None, help="the official simulator's ui/sim/talents/trees folder: its trees give the structure "
                     "(2026-10-30, live hotfixes the fan sites had not read yet); tooltips from the export, else Wowhead")
+    ap.add_argument("--sim-text", nargs="*", default=[], help="classes whose per-rank tooltips come from the simulator's talent comments "
+                    "where the export's are estimated, missing or carry other numbers (2026-10-31: the paladin's reworked tree)")
     a = ap.parse_args()
     raw_dir = RAW / a.raw
     if a.fetch:
@@ -379,7 +422,7 @@ def main():
                    "warcraftforever": {"url": URL_WF.format(cls=cls), "build": wf.get("build"), "captured": wf.get("captured")}}
         est, sim_notes = {}, []
         if a.sim_trees:
-            tf, wd, est, sim_notes = sim_sources(cls, tf, pathlib.Path(a.sim_trees), raw_dir)
+            tf, wd, est, sim_notes = sim_sources(cls, tf, pathlib.Path(a.sim_trees), raw_dir, cls in a.sim_text)
             sources["simulator_trees"] = {"path": "wowsims/forever ui/sim/talents/trees", "build": build,
                                           "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"}
         obj, tooltip_changes = merge_class(cls, wf, tf, wd, build, a.captured, sources)

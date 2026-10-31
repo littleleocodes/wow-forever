@@ -17,8 +17,8 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Holy — PvP (derived)](builds/holy-pvp.md) 🔬 | 31/18/2 | HEALER |
-| [Protection — PvP (derived)](builds/protection-pvp.md) 🔬 | 0/30/21 | DPS |
-| [Retribution — PvP (derived)](builds/retribution-pvp.md) 🔬 | 21/0/30 | DPS |
+| [Protection — PvP (derived)](builds/protection-pvp.md) 🔬 | 5/25/21 | DPS |
+| [Retribution — PvP (derived)](builds/retribution-pvp.md) 🔬 | 22/0/29 | DPS |
 
 Classic Era reference builds: [pvp-shockadin](../talents/classic-baseline/pvp-shockadin.md).
 

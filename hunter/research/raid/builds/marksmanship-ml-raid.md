@@ -7,7 +7,7 @@
 | **Build** | 11/40/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -45,21 +45,14 @@ The Marksmanship build the machine-learning talent search found on the training 
 
 ## Rank among our builds and the community simulator's
 
-**5 of 11** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 371 | +0.0% | 723 | -4.8% | 45 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 361 | -2.7% | 706 | -7.1% | 28 s |
-| 3 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 360 | -3.0% | 759 | +0.0% | 53 s |
-| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 354 | -4.5% | 724 | -4.7% | 45 s |
-| 5 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/40/0 | 341 | -8.0% | 684 | -10.0% | 47 s |
-| 6 | *SV* | community simulator | - | 329 | -11.2% | 630 | -17.0% | 37 s |
-| 7 | *SV Weave* | community simulator | - | 320 | -13.6% | 624 | -17.8% | 43 s |
-| 8 | *MM Weave* | community simulator | - | 313 | -15.6% | 641 | -15.6% | 51 s |
-| 9 | *BM Weave* | community simulator | - | 250 | -32.7% | 506 | -33.4% | 30 s |
-| 10 | *BM* | community simulator | - | 250 | -32.7% | 506 | -33.4% | 30 s |
-| 11 | *SV Melee* | community simulator | - | 219 | -40.8% | 474 | -37.6% | 50 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 357 | +0.0% | 712 | -6.8% | 32 s |
+| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 356 | -0.2% | 764 | +0.0% | 55 s |
+| 3 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 351 | -1.8% | 731 | -4.4% | 48 s |
+| 4 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/40/0 | 339 | -5.2% | 691 | -9.6% | 51 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,7 +66,7 @@ The Marksmanship build the machine-learning talent search found on the training 
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 13 passes, the last 2026-10-22, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 697 -> 760 DPS (+8.9%), sim preset: Marksmanship 540 -> 590 DPS (+9.3%), opt-mm-lonewolf-raid-raid-dps 671 -> 727 DPS (+8.5%), marksmanship-ml-parse 667 -> 724 DPS (+8.5%), marksmanship-ml-raid 639 -> 684 DPS (+7.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 14 passes, the last 2026-10-31, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 701 -> 764 DPS (+9.0%), sim preset: MM 670 -> 731 DPS (+9.0%), opt-mm-lonewolf-raid-raid-dps 689 -> 713 DPS (+3.4%), marksmanship-ml-parse 670 -> 730 DPS (+9.0%), marksmanship-ml-raid 642 -> 691 DPS (+7.5%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
@@ -95,9 +88,9 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 9.1 |
-| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.7 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
+| 3 | cast Arcane Shot | 8.8 |
+| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.6 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 
@@ -105,9 +98,9 @@ Damage by ability:
 
 | Ability | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) |
 |---|---|
-| Auto Shot | 51% |
-| Arcane Shot | 25% |
-| Serpent Sting | 14% |
+| Auto Shot | 50% |
+| Arcane Shot | 24% |
+| Serpent Sting | 15% |
 | Aimed Shot | 10% |
 | spell 1295633 | 1% |
 

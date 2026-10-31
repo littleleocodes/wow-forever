@@ -59,7 +59,13 @@ BLESSING_OF_LIGHT = {"Holy Light": _num(re.search(r"Holy Light spells used on th
 ILLUMINATION = [(c / 100, s / 100) for c, s in _talent_ranks("Illumination", r"(\d+)% chance to gain Mana equal to (\d+)% of the base cost")]
 ILLUMINATION_SPELLS = ("Holy Light", "Flash of Light", "Holy Shock", "Light's Vigil")
 INFUSION = [s for (s,) in _talent_ranks("Infusion of Light", r"by ([\d.]+) sec")]
-HOLY_POWER = [(a / 100, b / 100) for a, b in _talent_ranks("Holy Power", r"Holy Shock and Holy Strike spells by (\d+)%, and all other spells by (\d+)%")]
+# hotfix 113554 (ported 2026-10-31): Holy Power multiplies the whole critical heal (the simulator's applyHolyPower: 5/5 makes a heal crit
+# 225%); until then +3%/rank Holy Shock crit and +1%/rank on other heals
+HOLY_POWER = [v / 100 for (v,) in _talent_ranks("Holy Power", r"critical strike healing bonus of your Holy spells by (\d+)%")]
+# Oath of Light (one ally, 5 min: sworn on the tank before the pull) and Boundless Light (Holy Shock crit on allies without the Oath)
+OATH_OF_LIGHT = dict(zip(("Holy Light", "Flash of Light", "Holy Shock"), _talent_ranks(
+    "Oath of Light", r"Holy Light on them by up to (\d+), your Flash of Light by up to (\d+), and your Holy Shock by up to (\d+)")[0]))
+BOUNDLESS_LIGHT = [v / 100 for (v,) in _talent_ranks("Boundless Light", r"Holy Shock spell by (\d+)%")]
 BENEDICTION = [v / 100 for (v,) in _talent_ranks("Benediction", r"by (\d+)%")]
 # Light's Vigil (talent, top rank): "Your next Holy Shock cast on them triggers no cooldown and causes ... allied targets to heal their
 # party for X to Y"; the healing coefficient is the spellbook's "(heal)" one
@@ -83,7 +89,9 @@ class Healer(E.BaseHealer):
                         "cost (20%/rank chance; once per spell per cast)",
         "Divine Favor": "a sure critical top-rank Holy Light on the tank every 2 min (its mana paid)",
         "Holy Shock": "instant 307-333 heal on a 10 s cooldown: the emergency heal, and the trigger of Light's Vigil",
-        "Holy Power": "+3%/rank critical chance with Holy Shock, +1%/rank with every other heal",
+        "Holy Power": "a critical heal heals x(1 + 10%/rank) more (hotfix 113554: 150% -> 225% at 5/5)",
+        "Oath of Light": "sworn on the tank before the pull (5 min): +400 Holy Light, +115 Flash of Light, +229 Holy Shock on the tank",
+        "Boundless Light": "+15%/rank critical chance with Holy Shock on a raid member without the Oath (everyone but the tank with Oath of Light)",
         "Infusion of Light": "a critical Holy Shock or Flash of Light makes the next Holy Light within 15 s 0.5 s/rank faster",
         "Benediction": "-2%/rank mana cost of the instants (Holy Shock, Divine Favor)",
         "Light's Vigil": "the group heal: Light's Vigil (1.5 s, 1,340 mana) on the lowest raid member when enough of the group is hurt "
@@ -93,7 +101,8 @@ class Healer(E.BaseHealer):
                         "a raid member's; the lab gives the healer no health of its own) and drains all mana",
     }
     SIMULATED = {"Illumination", "Divine Favor", "Holy Shock", "Holy Power", "Infusion of Light", "Healing Light", "Divine Intellect", "Reverence",
-                 "Light's Vigil", "Benediction"}
+                 "Light's Vigil", "Benediction",
+                 "Oath of Light", "Boundless Light"}
     SHARE_SOURCE = {"Holy Light": "holy_light", "Flash of Light": "flash", "Holy Shock": "holy_shock", "Lay on Hands": "loh"}
 
     def __init__(self, allocation, game="forever"):
@@ -109,12 +118,19 @@ class Healer(E.BaseHealer):
             self.vigil_shock.vigil = True
 
     # ---------------------------------------------------------------- numbers
-    def crit_hook(self, spell, sim):
+    def crit_mult(self, spell):
         r = self.rank("Holy Power")
-        if not r:
+        return T.CRIT_MULT * (1 + HOLY_POWER[min(r, len(HOLY_POWER)) - 1]) if r else T.CRIT_MULT
+
+    def crit_target_hook(self, spell, sim, target):
+        r = self.rank("Boundless Light")
+        if not r or spell.name != "Holy Shock" or target is None or (target.tank and self.rank("Oath of Light")):
             return 0.0
-        shock, other = HOLY_POWER[min(r, len(HOLY_POWER)) - 1]
-        return shock if spell.name == "Holy Shock" else other
+        return BOUNDLESS_LIGHT[min(r, len(BOUNDLESS_LIGHT)) - 1]
+
+    def _oath(self, spell, target):
+        """Oath of Light's flat bonus on the tank (sworn there before the pull; "up to": the full bonus, as the simulator reads it)."""
+        return OATH_OF_LIGHT.get(spell.name, 0.0) if self.rank("Oath of Light") and (target is None or target.tank) else 0.0
 
     def cost_hook(self, spell, sim):
         r = self.rank("Benediction")
@@ -135,7 +151,7 @@ class Healer(E.BaseHealer):
         """Blessing of Light adds to Holy Light and Flash of Light on the tank only. The engine's rank choice asks without a target,
         so choice() below passes the target along."""
         target = target if target is not None else self._pick_target
-        return super().expected(spell) + (BLESSING_OF_LIGHT.get(spell.name, 0.0) if target is None or target.tank else 0.0)
+        return super().expected(spell) + (BLESSING_OF_LIGHT.get(spell.name, 0.0) if target is None or target.tank else 0.0) + self._oath(spell, target)
 
     def choice(self, name, deficit, target, sim, max_rank=False):
         self._pick_target = target
@@ -164,6 +180,8 @@ class Healer(E.BaseHealer):
     def on_cast_done(self, sim, spell, target):
         if target.tank and spell.name in BLESSING_OF_LIGHT:
             sim.apply_heal(spell, target, BLESSING_OF_LIGHT[spell.name] * self.heal_mult(spell, target, sim), False, label=spell.name)
+        if target.tank and self._oath(spell, target):
+            sim.apply_heal(spell, target, self._oath(spell, target) * self.heal_mult(spell, target, sim), False, label=spell.name)
         if spell.name == "Light's Vigil":
             sim.vigil_target = target
         elif getattr(spell, "vigil", False):
@@ -173,7 +191,7 @@ class Healer(E.BaseHealer):
                 if x.hp > 0:
                     amt = (sim.rng.uniform(*VIGIL["heal"]) + VIGIL["coef"] * self.healing) * self.heal_mult(lv, x, sim)
                     crit = sim.rng.random() < crit_c
-                    sim.apply_heal(lv, x, amt * (T.CRIT_MULT if crit else 1.0), crit, label="Light's Vigil")
+                    sim.apply_heal(lv, x, amt * (self.crit_mult(lv) if crit else 1.0), crit, label="Light's Vigil")
             sim.vigil_target = None
         sim.illum_seen.clear()
 

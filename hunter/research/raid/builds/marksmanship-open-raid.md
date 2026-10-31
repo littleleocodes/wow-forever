@@ -7,11 +7,11 @@
 | **Build** | 7/39/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Marksmanship raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.1% over marksmanship-with-a-pet-open-raid, the best of our builds in that rotation.
+The Marksmanship raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.1% over marksmanship-with-a-pet-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -58,21 +58,14 @@ The Marksmanship raid build the open talent search found on 2026-10-29: every le
 
 ## Rank among our builds and the community simulator's
 
-**5 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 417 | +0.0% | 731 | -6.4% | 36 s |
-| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 395 | -5.2% | 715 | -8.5% | 27 s |
-| 3 | *BM Weave* | community simulator | - | 395 | -5.2% | 744 | -4.7% | 41 s |
-| 4 | *BM* | community simulator | - | 395 | -5.2% | 744 | -4.7% | 41 s |
-| 5 | **[`marksmanship-open-raid`](marksmanship-open-raid.md)** | ours: derived (open search) | 7/39/5 | 389 | -6.7% | 781 | +0.0% | 49 s |
-| 6 | *MM* | community simulator | - | 376 | -9.8% | 707 | -9.5% | 43 s |
-| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 376 | -9.8% | 714 | -8.6% | 21 s |
-| 8 | *SV* | community simulator | - | 340 | -18.3% | 648 | -17.0% | 34 s |
-| 9 | *SV Weave* | community simulator | - | 338 | -18.9% | 647 | -17.2% | 41 s |
-| 10 | *MM Weave* | community simulator | - | 330 | -20.8% | 629 | -19.5% | 49 s |
-| 11 | *SV Melee* | community simulator | - | 322 | -22.7% | 640 | -18.1% | 46 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 413 | +0.0% | 735 | -6.3% | 38 s |
+| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 392 | -5.0% | 719 | -8.4% | 31 s |
+| 3 | **[`marksmanship-open-raid`](marksmanship-open-raid.md)** | ours: derived (open search) | 7/39/5 | 386 | -6.6% | 785 | +0.0% | 53 s |
+| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 375 | -9.3% | 719 | -8.4% | 25 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,7 +82,7 @@ The Marksmanship raid build the open talent search found on 2026-10-29: every le
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-10-22, 13 changes to the base rotation; third-seed check: marksmanship-with-a-pet-open-raid 729 -> 780 DPS (+7.0%), sim preset: Marksmanship 708 -> 757 DPS (+6.9%), bm-mm-raid 699 -> 714 DPS (+2.1%), bm-mm-full-buffs-raid 705 -> 715 DPS (+1.5%), opt-mm-raid-raid-dps 725 -> 735 DPS (+1.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 13 passes, the last 2026-10-31, 14 changes to the base rotation; third-seed check: marksmanship-open-raid 729 -> 785 DPS (+7.7%), sim preset: BM Weave 738 -> 750 DPS (+1.6%), bm-mm-raid 703 -> 719 DPS (+2.3%), bm-mm-full-buffs-raid 707 -> 719 DPS (+1.8%), opt-mm-raid-raid-dps 724 -> 736 DPS (+1.6%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -103,16 +96,17 @@ The Marksmanship raid build the open talent search found on 2026-10-29: every le
   11. threshold 1 -> 3: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.7%, pass 12)
   12. move to the top: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.5%, pass 12)
   13. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 12)
+  14. insert at the end: cast Major Mana Potion (+0.2%, pass 13)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`marksmanship-open-raid`](marksmanship-open-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 9.6 |
+| 1 | cast Arcane Shot | 9.3 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.3 |
-| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.2 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 |
 | 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
@@ -124,7 +118,7 @@ Damage by ability:
 | Auto Shot | 40% |
 | Arcane Shot | 20% |
 | Pet: Auto Attack | 19% |
-| Serpent Sting | 10% |
+| Serpent Sting | 11% |
 | Aimed Shot | 7% |
 | Pet: Bite | 2% |
 | Pet: Claw | 1% |
@@ -133,12 +127,12 @@ Damage by ability:
 
 ## Notes
 
-- +2.8% over the best hand draft of the spec, mm-lone-wolf-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- +2.1% over the best hand draft of the spec, mm-lone-wolf-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
 - Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 780.7 DPS; marksmanship-with-a-pet-open-raid 779.9, bm-mm-full-buffs-raid 715.4, opt-mm-raid-raid-dps 715.3, bm-mm-raid 713.8 in the same fights; 9,021 builds simulated, 3 independent runs reached the top.
-- The spec's other builds on the pages (their best entry, full raid): mm-lone-wolf-raid 759.5, marksmanship-ml-parse 723.9, opt-mm-lonewolf-raid-raid-dps 705.9, marksmanship-ml-raid 683.7.
+- The spec's other builds on the pages (their best entry, full raid): mm-lone-wolf-raid 764.3, marksmanship-ml-parse 730.6, opt-mm-lonewolf-raid-raid-dps 712.3, marksmanship-ml-raid 690.7.
 - Sibling rotations tried on it (10,000 fights): mm-lonewolf-raid -0.4%, bm-raid -0.2%, melee-dps -50.7%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Rapid Killing.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
+- Simulator numbers are the community's model of the beta (wowsims/forever b90e2b9 (client 70707) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 

@@ -7,7 +7,7 @@
 | **Build** | 31/20/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Solo/farming |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `bm-solo-farm` |
 
 ## Summary

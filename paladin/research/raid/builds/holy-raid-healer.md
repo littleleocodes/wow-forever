@@ -1,13 +1,13 @@
-# Holy — Raid Healer (33/0/18) — 33/0/18
+# Holy — Raid Healer (33/0/18) — 31/2/18
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 33/0/18 (Holy / Protection / Retribution) |
+| **Build** | 31/2/18 (Holy / Protection / Retribution) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `holy-raid-healer` |
 
 ## Summary
@@ -16,36 +16,37 @@ Illumination (now requiring Reverence, the new regen-while-casting talent), Divi
 
 ## Point allocation
 
-### Holy (33)
+### Holy (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
+| **Divine Strength** | 3/5 | unchanged | Increases your Strength by 6%. |
+| **Spiritual Focus** | 5/5 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
 | **Healing Light** | 3/3 | changed | Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%. |
-| **Spiritual Focus** | 2/2 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
-| **Unyielding Faith** | 2/2 | changed | Reduces the duration of Fear and Disorient effects on you by 30%. |
-| **Voice of Truth** | 1/1 | **NEW** | Grants you immunity to Silence and Interrupt effects for 6 sec. |
-| **Reverence** | 3/3 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
 | **Purifying Power** | 2/2 | **NEW** | Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by 33%. |
-| **Infusion of Light** | 2/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec. |
-| **Illumination** | 5/5 | changed | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell. |
+| **Reverence** | 2/2 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
 | **Divine Favor** | 1/1 | moved | When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance. |
+| **Illumination** | 5/5 | changed | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell. |
+| **Infusion of Light** | 2/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec. |
+| **Boundless Light** | 1/2 | **NEW** | Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light. |
 | **Holy Shock** | 1/1 | changed | Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally. |
-| **Holy Power** | 5/5 | changed | Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%. |
+| **Holy Power** | 5/5 | changed | Increases the critical strike healing bonus of your Holy spells by 50%. |
 | **Light's Vigil** | 1/1 | **NEW** | Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. You may only have one Light's Vigil active per party. |
 
-### Protection (0)
+### Protection (2)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Divine Intellect** | 2/5 | unchanged | Increases your total Intellect by 4%. |
 
 ### Retribution (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 3/5 | moved | Increases your Parry chance by 3%. |
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
+| **Deflection** | 3/5 | moved | Increases your Parry chance by 3%. |
+| **Conviction** | 3/3 | changed | Improves your chance to get a critical strike with all spells and attacks by 6%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
-| **Conviction** | 3/5 | changed | Improves your chance to get a critical strike with melee attacks by 3%. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
 
@@ -84,6 +85,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 - Divine Precision (+6% Holy hit at rank 1?) only matters if Forever lets heals miss; not taken.
 - Build 1.60.1.70009 removed Crusade: its 2 points go to Conviction (3/5).
 - 2026-09-27 scenario audit: Holy Conduit 2 -> Purifying Power 2. Holy Conduit returns mana on Consecration, Exorcism, Holy Wrath and Hammer of Wrath, none of which a raid healer casts. Purifying Power's cheaper Cleanse is mana spent on dispels every raid fight (scorer +0.5 points).
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 33/0/18 -> 31/2/18; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Boundless Light (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); refill +2 Divine Intellect (refill: the holy-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

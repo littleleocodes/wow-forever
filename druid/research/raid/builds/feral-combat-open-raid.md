@@ -7,11 +7,11 @@
 | **Build** | 9/32/10 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Feral Combat raid build the open talent search found on 2026-10-26: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
+The Feral Combat raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -29,16 +29,16 @@ The Feral Combat raid build the open talent search found on 2026-10-26: every le
 |---|---|---|---|
 | **Ferocity** | 5/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
 | **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
+| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
-| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
-| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
-| **Predatory Discipline** | 1/1 | **NEW** | Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%. |
+| **Predatory Discipline** | 1/1 | **NEW** | Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy. |
+| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
 | **Shifting Power** | 1/1 | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. |
+| **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy. |
 
 ### Restoration (10)
 
@@ -49,27 +49,27 @@ The Feral Combat raid build the open talent search found on 2026-10-26: every le
 
 ## Core talents (priority order)
 
-1. **Shifting Power** — 124 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights).
-2. **Shredding Attacks** — 70 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
-3. **Improved Shifting Power** — 56 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
-4. **Rend and Tear** — 41 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-5. **Sharpened Claws** — 34 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-6. **Natural Instinct** — 29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-7. **Naturalist** — 28 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-8. **Savage Fury** — 25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+1. **Shifting Power** — 120 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights).
+2. **Naturalist** — 68 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+3. **Shredding Attacks** — 64 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
+4. **Rend and Tear** — 42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+5. **Sharpened Claws** — 38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+6. **Natural Instinct** — 28 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+7. **Genesis** — 25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+8. **Nature's Majesty** — 25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`feral-combat-open-raid`](feral-combat-open-raid.md)** | ours: derived (open search) | 9/32/10 | 376 | +0.0% | 768 | +0.0% | 61 s |
-| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | -1.8% | 754 | -1.8% | 61 s |
-| 3 | *Cat* | community simulator | - | 352 | -6.2% | 750 | -2.3% | 62 s |
-| 4 | *Hybrid* | community simulator | - | 341 | -9.1% | 698 | -9.1% | 61 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 335 | -10.9% | 643 | -16.3% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -12.6% | 636 | -17.2% | 0 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | +0.0% | 754 | -1.8% | 61 s |
+| 2 | **[`feral-combat-open-raid`](feral-combat-open-raid.md)** | ours: derived (open search) | 9/32/10 | 365 | -1.1% | 768 | +0.0% | 61 s |
+| 3 | *Cat* | community simulator | - | 352 | -4.4% | 750 | -2.3% | 62 s |
+| 4 | *Hybrid* | community simulator | - | 341 | -7.4% | 698 | -9.1% | 61 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 335 | -9.3% | 643 | -16.3% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.0% | 636 | -17.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 |---|---|---|
 | 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 8.8 |
 | 2 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.8 |
+| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 |
 | 4 | cast Shred | 17.8 |
 | 5 | if Shifting Power is known and energy ≤ 60: cast Shifting Power | 3.7 |
 | 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 8.8 |
@@ -122,11 +122,12 @@ Damage by ability:
 
 ## Notes
 
-- +19.7% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (feral-cat-dps, full raid): 9/33/9 (Feral Combat) at 753.7 DPS; feral-combat-shifting-power-raid 743.2, opt-feral-cat-dps-raid-dps 643.1, feral-cat-dps 629.8 in the same fights; 4,989 builds simulated, 2 independent runs reached the top.
-- Sibling rotations tried on it (10,000 fights): balance-dps -65.6%; none adopted.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
-- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/33/9 -> 9/32/10; Improved Shifting Power 2 gone; Berserk 1 gone; +1 Blood Frenzy (tier gating for Rend and Tear); +1 Predatory Discipline (prerequisite of Shifting Power); refill +1 Naturalist (refill: the feral-cat-dps model, raid-dps).
+- +20.8% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (feral-cat-dps, full raid): 9/32/10 (Feral Combat) at 767.7 DPS; feral-combat-shifting-power-raid 754.3, opt-feral-cat-dps-raid-dps 642.6, feral-cat-dps 635.3 in the same fights; 4,174 builds simulated, 2 independent runs reached the top.
+- Sibling rotations tried on it (10,000 fights): balance-dps -66.1%; none adopted.
+- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Leader of the Pack.
+- Simulator numbers are the community's model of the beta (wowsims/forever b90e2b9 (client 70707) with this project's patches), not in-game measurements.
+- 2026-10-31 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Leader of the Pack -> Feral Charge (interrupt). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -135,7 +136,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/druid/60/050022-55000032021031212051-054-7>
+- <https://talentsforever.com/druid/60/050022-55000032023012125001-055-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*
