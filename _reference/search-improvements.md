@@ -300,3 +300,11 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   buff ladder's `"battle_shout": "TristateEffectRegular"` failed every environments run ("buff battle_shout: not a number"; the mage's
   four races rc=1, the searches unaffected: the full raid clones the simulator's own FullRaidBuffs, rank 6). The ladder now sends 1, as the
   full raid. The pre-queue smoke test ran only the dummy race: after a re-pin, smoke-test `--env environments` too.
+- 2026-10-31 (stage 1, mage): the ML `final` step starts from the record's stored talent-search winner (`bis-dummy-1`), made on the old
+  trees; all five mage final steps stopped at once ("talents unknown to the simulator: Arcane Focus, Improved Fireball, Elemental
+  Precision"). `ml_pipeline.sig_start` now also rejects a stored winner the current trees do not allow (unknown talent or illegal
+  gating) and takes the same fallbacks (the spec's best open-search winner, else our raid build of the spec with the best full-raid
+  number; that fallback used to take the first build listed). Audit the same day: every confirm class's (hunter, warrior, warlock, rogue,
+  shaman) open winners are legal on the live trees; the druid's Feral winner is not (Berserk, Improved Shifting Power), but the druid
+  runs a fresh search, which skips illegal starts. Lesson: after a tree change, check every stored start a later step reads (ML records,
+  family winners, known positives), not only the builds the validator sees.
