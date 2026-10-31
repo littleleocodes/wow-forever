@@ -7,7 +7,7 @@
 | **Build** | 20/11/20 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -114,7 +114,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 |
 | 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 10 | cast Shadow Bolt | 14.6 |
+| 10 | cast Shadow Bolt (rank 9) | 14.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 

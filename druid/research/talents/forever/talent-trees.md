@@ -1,6 +1,6 @@
-# Druid — WoW: Forever talent trees (beta client 1.60.1.70425)
+# Druid — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -74,7 +74,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Ferocity** | 5 | — | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy. | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
-| **Heart of the Wild** | 5 | — | changed | Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%. | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
+| **Furor** | 5 | — | changed | Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy. | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 
 ### Tier 2 — requires 5 points in Feral Combat
 
@@ -98,16 +98,15 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Shifting Power** | 1 | Shredding Attacks (3) | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. | — |
-| **Primal Bite** | 1 | Savage Fury (2) | **NEW** | Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat. | — |
 | **Predatory Strikes** | 3 | — | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level. | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
+| **Lacerate** | 1 | Savage Fury (2) | **NEW** | Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target. | — |
+| **Predatory Discipline** | 1 | — | **NEW** | Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy. | — |
 | **Blood Frenzy** | 2 | Sharpened Claws (2) | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 
 ### Tier 5 — requires 20 points in Feral Combat
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Shifting Power** | 2 | Shifting Power (1) | **NEW** | Reduces the cooldown of your Shifting Power spell by 4 sec. | Reduces the cooldown of your Shifting Power spell by 8 sec. |
 | **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. | — |
 | **Natural Instinct** | 2 | — | **NEW** | Increases the critical strike damage bonus of your melee abilities by 10% and increases your spell healing by 12% of your Intellect. | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 
@@ -115,14 +114,15 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Natural Reaction** | 5 | — | **NEW** | Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge. | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
 | **Rend and Tear** | 5 | Predatory Strikes (3) | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 2%. | Increases damage done by your melee abilities on Bleeding targets by 10%. |
+| **Natural Reaction** | 5 | — | **NEW** | Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge. | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
 
 ### Tier 7 — requires 30 points in Feral Combat
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Berserk** | 1 | Leader of the Pack (1) | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. | — |
+| **Primal Bite** | 1 | Leader of the Pack (1) | **NEW** | Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat. | — |
+| **Shifting Power** | 1 | Predatory Discipline (1) | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. | — |
 
 **Removed from Classic Feral Combat:** Feral Aggression, Feline Swiftness, Improved Shred, Primal Fury, Faerie Fire (Feral)
 
@@ -132,24 +132,24 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Nature's Focus** | 5 | — | changed | Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells. | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
-| **Furor** | 5 | — | changed | Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy. | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
+| **Nature's Focus** | 5 | — | changed | Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage. | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
+| **Heart of the Wild** | 5 | — | changed | Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%. | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
 
 ### Tier 2 — requires 5 points in Restoration
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Naturalist** | 5 | — | **NEW** | Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%. | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
-| **Subtlety** | 3 | — | changed | Reduces the threat generated by your Nature and Arcane spells by 10%. | Reduces the threat generated by your Nature and Arcane spells by 30%. |
+| **Reflection** | 3 | — | changed | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
 | **Natural Shapeshifter** | 3 | — | moved | Reduces the mana cost of all shapeshifting by 10%. | Reduces the mana cost of all shapeshifting by 30%. |
 
 ### Tier 3 — requires 10 points in Restoration
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Reflection** | 3 | — | changed | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
+| **Subtlety** | 3 | — | changed | Reduces the threat generated by your Nature and Arcane spells by 10%. | Reduces the threat generated by your Nature and Arcane spells by 30%. |
 | **Gift of Nature** | 5 | — | changed | Increases the effect of all your healing spells by 2%. | Increases the effect of all your healing spells by 10%. |
-| **Gift of the Earthmother** | 1 | — | **NEW** | Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells. | — |
+| **Bloom** | 1 | — | **NEW** | When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead. | — |
 
 ### Tier 4 — requires 15 points in Restoration
 
@@ -217,7 +217,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Moonfury** (tooltip changed)
   - Classic: Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%. .
   - Forever: Increases the damage done by your Arcane and Nature spells by 2%.
-- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 0 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
   - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 
@@ -226,9 +226,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Ferocity** (tooltip changed)
   - Classic: Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
   - Forever: Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
-- **Heart of the Wild** (tooltip changed, was Feral Combat row 6, col 2)
-  - Classic: Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.
-  - Forever: Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.
+- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
+  - Classic: Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.
+  - Forever: Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.
 - **Feral Instinct** (max rank 5 → 3, tooltip changed, was Feral Combat row 2, col 1)
   - Classic: Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling.
   - Forever: Increases damage done by your Swipe ability by 10% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher.
@@ -241,36 +241,36 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Savage Fury** (tooltip changed, was Feral Combat row 5, col 1)
   - Classic: Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%.
   - Forever: Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.
-- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.
   - Forever: Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy.
 - **Sharpened Claws** (max rank 3 → 2, tooltip changed, was Feral Combat row 3, col 3)
   - Classic: Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%.
   - Forever: Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.
-- **Predatory Strikes** (tooltip changed, was Feral Combat row 4, col 2)
+- **Predatory Strikes** (tooltip changed, was Feral Combat row 4, col 2, moved in build 1.60.1.70707: was row 4, col 3)
   - Classic: Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level.
   - Forever: Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level.
 - **Blood Frenzy** (tooltip changed, was Feral Combat row 4, col 3)
   - Classic: Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.
   - Forever: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
-- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 0 yards by 3%.
   - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.
 
 ### Restoration
 
-- **Nature's Focus** (tooltip changed, was Restoration row 2, col 2)
+- **Nature's Focus** (tooltip changed, was Restoration row 2, col 2, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.
-  - Forever: Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
-- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
-  - Classic: Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.
-  - Forever: Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.
-- **Subtlety** (max rank 5 → 3, tooltip changed, was Restoration row 3, col 4)
-  - Classic: Reduces the threat generated by your Healing spells by 4%.
-  - Forever: Reduces the threat generated by your Nature and Arcane spells by 10%.
-- **Reflection** (tooltip changed)
+  - Forever: Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage.
+- **Heart of the Wild** (tooltip changed, was Feral Combat row 6, col 2)
+  - Classic: Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.
+  - Forever: Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.
+- **Reflection** (tooltip changed, moved in build 1.60.1.70707: was row 3, col 2)
   - Classic: Allows 5% of your Mana regeneration to continue while casting.
   - Forever: Allows 17% of your Mana regeneration to continue while casting.
+- **Subtlety** (max rank 5 → 3, tooltip changed, was Restoration row 3, col 4, moved in build 1.60.1.70707: was row 2, col 2)
+  - Classic: Reduces the threat generated by your Healing spells by 4%.
+  - Forever: Reduces the threat generated by your Nature and Arcane spells by 10%.
 - **Gift of Nature** (tooltip changed, was Restoration row 5, col 3)
   - Classic: Increases the effect of all healing spells by 2%.
   - Forever: Increases the effect of all your healing spells by 2%.

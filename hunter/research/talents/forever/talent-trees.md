@@ -1,6 +1,6 @@
-# Hunter — WoW: Forever talent trees (beta client 1.60.1.70425)
+# Hunter — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -27,13 +27,13 @@
 |---|---|---|---|---|---|
 | **Focused Fire** | 2 | — | **NEW** | Increases all damage you and your pet deal by 1% while your pet is active. | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Improved Aspect of the Monkey** | 3 | — | changed | Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. | Increases the Dodge bonus of your Aspect of the Monkey by 6%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
-| **Pathfinding** | 2 | — | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%. | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Improved Revive Pet** | 2 | — | unchanged | Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%. | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 
 ### Tier 3 — requires 10 points in Beast Mastery
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
+| **Pathfinding** | 2 | — | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%. | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Bestial Swiftness** | 1 | — | changed | Increases the movement speed of your pets by 30%. | — |
 | **Unleashed Fury** | 5 | — | changed | Increases the damage done by your pets and hawks by 3%. | Increases the damage done by your pets and hawks by 15%. |
 
@@ -97,7 +97,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. | — |
+| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. | — |
 | **Mortal Shots** | 5 | Careful Aim (5) | changed | Increases the critical strike damage bonus on all ranged abilities by 6%. | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 
 ### Tier 5 — requires 20 points in Marksmanship
@@ -218,9 +218,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Arcane Shot** (tooltip changed)
   - Classic: Reduces the cooldown of your Arcane Shot by 0 sec.
   - Forever: Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.
-- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Increases the attack power of party members within 0 yards by 50. Lasts 30 min.
-  - Forever: Increases the Ranged Attack Power of party or raid members within 45 yds by 30.
+  - Forever: Increases the Ranged Attack Power of party or raid members within 45 yds by 15.
 - **Mortal Shots** (tooltip changed)
   - Classic: Increases your ranged weapon critical strike damage bonus by 6%.
   - Forever: Increases the critical strike damage bonus on all ranged abilities by 6%.
@@ -245,7 +245,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Surefooted** (tooltip changed, was Survival row 4, col 2)
   - Classic: Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%.
   - Forever: Increases your hit chance by 1% and reduces the duration of movement impairing effects on you by 10%.
-- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
   - Forever: A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
 - **Lightning Reflexes** (tooltip changed)

@@ -7,7 +7,7 @@
 | **Build** | 29/0/22 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,15 +19,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
-| **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
+| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
-| **Arcane Concentration** | 1/5 | unchanged | Gives you a 2% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
-| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
+| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 
 ### Fire (0)
@@ -39,12 +39,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Frost Channeling** | 2/3 | moved | Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%. |
-| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
+| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
+| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
 ## Core talents (priority order)
@@ -108,9 +108,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 | 5 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 18.3 |
 | 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 |
 | 7 | cast Robe of the Archmage | as ready |
-| 8 | cast Frost Blast | 0.4 |
+| 8 | cast spell 1326055 | 0.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Blast (needs the Arcane Blast talent); cast Presence of Mind, cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Blast, cast Evocation (its condition never held in these fights); cast Presence of Mind (needs the Presence of Mind talent).
 
 Damage by ability:
 
@@ -126,6 +126,7 @@ Damage by ability:
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 29/0/22 -> 29/0/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Blast (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

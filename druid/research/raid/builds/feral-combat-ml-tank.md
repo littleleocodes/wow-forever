@@ -7,7 +7,7 @@
 | **Build** | 9/35/7 (Balance / Feral Combat / Restoration) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,22 +19,21 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Improved Wrath** | 5/5 | changed | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
-| **Improved Wrath** | 5/5 | changed | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
 
 ### Feral Combat (35)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Ferocity** | 5/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
-| **Feral Swiftness** | 2/2 | **NEW** | Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%. |
+| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 | **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
-| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
-| **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
+| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
+| **Blood Frenzy** | 1/2 | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Natural Reaction** | 5/5 | **NEW** | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
@@ -44,7 +43,7 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
+| **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
 | **Naturalist** | 2/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%. |
 
 ## Rank among our builds and the community simulator's
@@ -100,6 +99,7 @@ Damage by ability (threat for tanks):
 - Final race over 100,000 fights: tank value 1.055 ± 0.000 (relative to feral-bear-tank over 20,000 fights); feral-combat-ml-tank 1.055, opt-feral-bear-tank-raid-tank 1.044, feral-bear-tank 1.000.
 - Independent runs agreeing in the last cycle: 3/3; two-move check: 350 one-move and 47,117 two-move builds, none better.
 - 2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range). Net -0.03% on a third seed.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/35/7 -> 9/35/7; +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); -1 Feral Swiftness (over 51); -1 Feral Swiftness (over 51); -1 Savage Fury (over 51); -1 Savage Fury (over 51); -1 Blood Frenzy (over 51) (refill: the feral-bear-tank model, raid-dps).
 
 ## Open questions (verify in the live game)
 

@@ -7,7 +7,7 @@
 | **Build** | 7/35/9 (Balance / Feral Combat / Restoration) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `feral-bear-tank` |
 
 ## Summary
@@ -28,13 +28,12 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Ferocity** | 5/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
+| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 | **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
-| **Feral Swiftness** | 2/2 | **NEW** | Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%. |
-| **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy. |
-| **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
-| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
+| **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
+| **Blood Frenzy** | 1/2 | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Natural Reaction** | 5/5 | **NEW** | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
@@ -44,7 +43,7 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
+| **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
 | **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 
 ## Core talents (priority order)
@@ -120,6 +119,7 @@ Damage by ability (threat for tanks):
 - Adopted from the community simulator on 2026-09-27: opt-feral-bear-tank-raid-tank beat the previous draft by +10.4% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-26: cand-feral-bear-tank-r1 beat the previous draft by +7.4% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Faerie Fire (Feral) is baseline now; Lacerate (a bear bleed) exists in Forever (Shredding Attacks names it).
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/35/9 -> 7/35/9; +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); -1 Feral Swiftness (over 51); -1 Feral Swiftness (over 51); -1 Savage Fury (over 51); -1 Savage Fury (over 51); -1 Blood Frenzy (over 51) (refill: the feral-bear-tank model, raid-dps).
 
 ## Open questions (verify in the live game)
 

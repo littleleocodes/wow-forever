@@ -10,31 +10,31 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Restoration — Raid Healer (healer lab winner adopted 2026-09-28)](builds/resto-raid-healer.md) | 11/5/35 | HEALER | [resto-swiftmend-healer](../talents/classic-baseline/resto-swiftmend-healer.md) |
+| [Restoration — Raid Healer (healer lab winner adopted 2026-09-28)](builds/resto-raid-healer.md) | 11/0/40 | HEALER | [resto-swiftmend-healer](../talents/classic-baseline/resto-swiftmend-healer.md) |
 | [Restoration — Regrowth / Nature's Grace, with a Balance dip (21/0/30)](builds/resto-regrowth-natures-grace.md) | 21/0/30 | HEALER | [resto-regrowth-natures-grace](../talents/classic-baseline/resto-regrowth-natures-grace.md) |
 | [Feral — Cat DPS (simulator winner adopted 2026-09-26)](builds/feral-cat-dps.md) | 9/32/10 | DPS | [feral-cat-dps](../talents/classic-baseline/feral-cat-dps.md) |
 | [Feral — Bear Tank (simulator winner adopted 2026-09-27)](builds/feral-bear-tank.md) | 7/35/9 | TANK | [feral-bear-tank](../talents/classic-baseline/feral-bear-tank.md) |
-| [Balance — Moonkin / Nature's Grace (simulator winner adopted 2026-09-26)](builds/balance-moonkin-raid.md) | 33/5/13 | DPS | [balance-moonkin-raid](../talents/classic-baseline/balance-moonkin-raid.md) |
+| [Balance — Moonkin / Nature's Grace (simulator winner adopted 2026-09-26)](builds/balance-moonkin-raid.md) | 33/0/18 | DPS | [balance-moonkin-raid](../talents/classic-baseline/balance-moonkin-raid.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) 🔬 | 9/35/7 | DPS |
-| [Restoration — Raid healing (machine-learning search)](builds/restoration-ml-heal.md) 🔬 | 11/5/35 | HEALER |
-| [Feral Combat — Raid (open talent search)](builds/feral-combat-open-raid.md) 🔬 | 9/33/9 | DPS |
+| [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) 🔬 | 9/33/9 | DPS |
+| [Restoration — Raid healing (machine-learning search)](builds/restoration-ml-heal.md) 🔬 | 11/4/36 | HEALER |
+| [Feral Combat — Raid (open talent search)](builds/feral-combat-open-raid.md) 🔬 | 9/32/10 | DPS |
 | [Feral Combat — Raid tank (machine-learning search)](builds/feral-combat-ml-tank.md) 🔬 | 9/35/7 | TANK |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 11/5/35 | raid-heal |
-| [opt-balance-dps-raid-dps](builds/opt-balance-dps-raid-dps.md) | 33/5/13 | raid-dps |
-| [opt-balance-dps-parse](builds/opt-balance-dps-parse.md) | 33/5/13 | parse |
-| [opt-feral-cat-dps-raid-dps](builds/opt-feral-cat-dps-raid-dps.md) | 9/31/11 | raid-dps |
-| [opt-feral-cat-dps-parse](builds/opt-feral-cat-dps-parse.md) | 9/31/11 | parse |
-| [opt-feral-bear-tank-raid-tank](builds/opt-feral-bear-tank-raid-tank.md) | 9/42/0 | raid-tank |
+| [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 11/0/40 | raid-heal |
+| [opt-balance-dps-raid-dps](builds/opt-balance-dps-raid-dps.md) | 33/0/18 | raid-dps |
+| [opt-balance-dps-parse](builds/opt-balance-dps-parse.md) | 33/0/18 | parse |
+| [opt-feral-cat-dps-raid-dps](builds/opt-feral-cat-dps-raid-dps.md) | 9/30/12 | raid-dps |
+| [opt-feral-cat-dps-parse](builds/opt-feral-cat-dps-parse.md) | 9/30/12 | parse |
+| [opt-feral-bear-tank-raid-tank](builds/opt-feral-bear-tank-raid-tank.md) | 9/37/5 | raid-tank |
 
 Classic Era reference builds: [resto-swiftmend-healer](../talents/classic-baseline/resto-swiftmend-healer.md), [resto-regrowth-natures-grace](../talents/classic-baseline/resto-regrowth-natures-grace.md), [feral-cat-dps](../talents/classic-baseline/feral-cat-dps.md), [feral-bear-tank](../talents/classic-baseline/feral-bear-tank.md), [balance-moonkin-raid](../talents/classic-baseline/balance-moonkin-raid.md).
 

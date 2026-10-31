@@ -1,13 +1,13 @@
-# Leveling — Feral cat (fight-lab winner adopted 2026-09-27) — 9/31/11
+# Leveling — Feral cat (fight-lab winner adopted 2026-09-27) — 9/30/12
 
 *[Druid](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 9/31/11 (Balance / Feral Combat / Restoration) |
+| **Build** | 9/30/12 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `leveling-feral` |
 
 ## Summary
@@ -24,53 +24,30 @@ Allocation and order adopted on 2026-09-27 from `cand-cat-r4`, the fastest build
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 
-### Feral Combat (31)
+### Feral Combat (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Ferocity** | 5/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
-| **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
+| **Furor** | 3/5 | changed | Gives you a 60% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 60% of the Energy you had when last in Cat Form, plus 6 Energy per second spent outside Bear Form or Dire Bear Form, up to 60 Energy. |
 | **Feral Swiftness** | 2/2 | **NEW** | Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%. |
 | **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
+| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
-| **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
-### Restoration (11)
+### Restoration (12)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Nature's Focus** | 5/5 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
-| **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
+| **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
+| **Nature's Focus** | 1/5 | changed | Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage. |
 | **Natural Shapeshifter** | 2/3 | moved | Reduces the mana cost of all shapeshifting by 20%. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Feral Combat | Ferocity | 5 | 0/5/0 |
-| 15-17 | Feral Combat | Thick Hide | 3 | 0/8/0 |
-| 18-19 | Feral Combat | Feral Swiftness | 2 | 0/10/0 |
-| 20-21 | Feral Combat | Savage Fury | 2 | 0/12/0 |
-| 22-23 | Feral Combat | Sharpened Claws | 2 | 0/14/0 |
-| 24 | Feral Combat | Heart of the Wild | 1 | 0/15/0 |
-| 25-27 | Feral Combat | Predatory Strikes | 3 | 0/18/0 |
-| 28-29 | Feral Combat | Heart of the Wild | 2 | 0/20/0 |
-| 30 | Feral Combat | Leader of the Pack | 1 | 0/21/0 |
-| 31-32 | Feral Combat | Natural Instinct | 2 | 0/23/0 |
-| 33-34 | Feral Combat | Heart of the Wild | 2 | 0/25/0 |
-| 35-39 | Feral Combat | Rend and Tear | 5 | 0/30/0 |
-| 40 | Feral Combat | Berserk | 1 | 0/31/0 |
-| 41-45 | Balance | Genesis | 5 | 5/31/0 |
-| 46-47 | Balance | Nature's Reach | 2 | 7/31/0 |
-| 48-49 | Balance | Nature's Majesty | 2 | 9/31/0 |
-| 50-54 | Restoration | Nature's Focus | 5 | 9/31/5 |
-| 55-58 | Restoration | Naturalist | 4 | 9/31/9 |
-| 59-60 | Restoration | Natural Shapeshifter | 2 | 9/31/11 |
+| **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 
 ## Core talents (priority order)
 
@@ -119,6 +96,7 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Thick Hide 3, Rend and Tear 5 in; to be re-optimized.
 - 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the feral-cat-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 29.6 s per kill; own tree first 29.6 s; own tree last 30.4 s.
 - Fight lab (leveling/fightlab/feral-cat-dps.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L15/20/30/40/50/60 = 31/22/25/29/29/32 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-feral-cat-dps-leveling-st is -4% at 60 and -1% at 30 (negative = faster); race winner over the leveling: cand-cat-r6; top talents at 60: Blood Frenzy +5%, Sharpened Claws +5%, Nature's Reach +4%, Naturalist +4%; about zero: Nature's Focus, Thick Hide. See the Fight lab section of leveling/README.md.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/31/11 -> 9/30/12; Berserk 1 gone; +1 Furor (tier gating for Predatory Strikes); +1 Blood Frenzy (tier gating for Leader of the Pack); +1 Blood Frenzy (tier gating for Leader of the Pack); +1 Furor (tier gating for Rend and Tear); +1 Furor (tier gating for Rend and Tear); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); order dropped (order_repair.py) (refill: the feral-cat-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

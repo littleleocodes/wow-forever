@@ -1,13 +1,13 @@
-# Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe) — 5/3/43
+# Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe) — 7/3/41
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 5/3/43 (Arcane / Fire / Frost) |
+| **Build** | 7/3/41 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,27 +15,28 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ao
 
 ## Point allocation
 
-### Arcane (5)
+### Arcane (7)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Focus** | 1/5 | changed | Improves your chance to hit with Arcane spells by 1%. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 100% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Improved Channeling** | 1/5 | **NEW** | Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 
 ### Fire (3)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
+| **Incineration** | 3/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 
-### Frost (43)
+### Frost (41)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
-| **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
-| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
+| **Frost Warding** | 2/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 30%, gives your Frost Ward a 20% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 20%. |
+| **Improved Frostbolt** | 4/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.4 sec. |
+| **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
 | **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
@@ -48,42 +49,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ao
 | **Cold Snap** | 1/1 | changed | Finishes the remaining cooldown on all your other Frost spells. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 | **Improved Cone of Cold** | 3/3 | changed | Increases the damage dealt by your Cone of Cold spell by 35%. |
-| **Winter's Chill** | 3/5 | changed | Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
-| **Ice Barrier** | 1/1 | changed | Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10 | Frost | Frost Warding | 1 | 0/0/1 |
-| 11 | Frost | Elemental Precision | 1 | 0/0/2 |
-| 12 | Frost | Improved Frostbolt | 1 | 0/0/3 |
-| 13 | Frost | Frost Warding | 1 | 0/0/4 |
-| 14-15 | Frost | Elemental Precision | 2 | 0/0/6 |
-| 16-18 | Frost | Permafrost | 3 | 0/0/9 |
-| 19 | Frost | Improved Frostbolt | 1 | 0/0/10 |
-| 20-22 | Frost | Improved Blizzard | 3 | 0/0/13 |
-| 23 | Frost | Ice Lance | 1 | 0/0/14 |
-| 24 | Frost | Frost Channeling | 1 | 0/0/15 |
-| 25 | Frost | Ice Block | 1 | 0/0/16 |
-| 26-27 | Frost | Shatter | 2 | 0/0/18 |
-| 28 | Frost | Arctic Reach | 1 | 0/0/19 |
-| 29 | Frost | Shatter | 1 | 0/0/20 |
-| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
-| 32 | Frost | Arctic Reach | 1 | 0/0/23 |
-| 33-35 | Frost | Improved Cone of Cold | 3 | 0/0/26 |
-| 36-38 | Frost | Ice Shards | 3 | 0/0/29 |
-| 39 | Frost | Cold Snap | 1 | 0/0/30 |
-| 40 | Frost | Ice Barrier | 1 | 0/0/31 |
-| 41-42 | Frost | Ice Shards | 2 | 0/0/33 |
-| 43-44 | Arcane | Missile Barrage | 2 | 2/0/33 |
-| 45-47 | Frost | Winter's Chill | 3 | 2/0/36 |
-| 48-50 | Frost | Improved Frostbolt | 3 | 2/0/39 |
-| 51-52 | Frost | Frost Channeling | 2 | 2/0/41 |
-| 53-55 | Fire | Incineration | 3 | 2/3/41 |
-| 56 | Arcane | Arcane Focus | 1 | 3/3/41 |
-| 57-58 | Arcane | Wand Specialization | 2 | 5/3/41 |
-| 59-60 | Frost | Improved Frost Nova | 2 | 5/3/43 |
+| **Winter's Chill** | 3/5 | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
+| **Ice Barrier** | 1/1 | changed | Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage. |
 
 ## Core talents (priority order)
 
@@ -118,6 +85,7 @@ What this build casts per kill ([report](../fightlab/frost-aoe.md), all leveling
 
 - Allocation and order taken from cand-aoe-r8 on 2026-10-22: an earlier optimizer round beat the last export in the fight lab (31.8s vs 33.9s per kill, level-weighted).
 - Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/3/43 -> 7/3/41; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Precision (over 51); -1 Improved Frostbolt (over 51); order dropped (order_repair.py) (refill: the frost-aoe model, leveling-aoe).
 
 ## Open questions (verify in the live game)
 

@@ -7,7 +7,7 @@
 | **Build** | 5/24/22 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -46,7 +46,7 @@ The Demonology/Destruction hybrid (a Demonology/Destruction hybrid) leveling bui
 | **Cataclysm** | 3/3 | changed | Reduces the Mana cost of your Destruction spells by 10%. |
 | **Ruin** | 4/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 80%. |
 | **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
-| **Intensity** | 2/3 | changed | Gives you a 47% chance to resist interruption caused by damage while casting or channeling any Destruction spell. |
+| **Intensity** | 2/3 | changed | Gives your Destruction spells a 47% chance to not lose casting time when you take damage. |
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
 
 ## Leveling order

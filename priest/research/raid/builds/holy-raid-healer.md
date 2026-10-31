@@ -7,7 +7,7 @@
 | **Build** | 22/29/0 (Discipline / Holy / Shadow) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `holy-raid-healer` |
 
 ## Summary

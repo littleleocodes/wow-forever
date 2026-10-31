@@ -38,16 +38,16 @@
   "text": "Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability.",
   "effects": []
  },
- "Pathfinding": {
-  "tree": "Beast Mastery",
-  "max": 2,
-  "text": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%.",
-  "effects": []
- },
  "Improved Revive Pet": {
   "tree": "Beast Mastery",
   "max": 2,
   "text": "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%.",
+  "effects": []
+ },
+ "Pathfinding": {
+  "tree": "Beast Mastery",
+  "max": 2,
+  "text": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%.",
   "effects": []
  },
  "Bestial Swiftness": {
@@ -306,7 +306,7 @@
  "Trueshot Aura": {
   "tree": "Marksmanship",
   "max": 1,
-  "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 30.",
+  "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 15.",
   "effects": []
  },
  "Mortal Shots": {

@@ -121,6 +121,75 @@ def tf_ranks(t):
     return None
 
 
+URL_WH = "https://nether.wowhead.com/forever/tooltip/spell/{id}"
+
+
+def wowhead_text(raw_dir, spell_id):
+    """A spell's tooltip text from Wowhead's Forever database (cached under the pull's wowhead-com/), or ''."""
+    d = raw_dir / "wowhead-com"
+    d.mkdir(parents=True, exist_ok=True)
+    p = d / f"{spell_id}.json"
+    if not p.exists():
+        try:
+            p.write_text(fetch(URL_WH.format(id=spell_id)), encoding="utf-8")
+        except Exception as e:
+            print(f"  wowhead {spell_id}: {e}")
+            return ""
+    try:
+        html = json.loads(p.read_text(encoding="utf-8")).get("tooltip") or ""
+    except ValueError:
+        return ""
+    qs = re.findall(r'<div class="q">(.*?)</div>', html, flags=re.S)
+    txt = re.sub(r"<[^>]+>", "", qs[-1] if qs else "").replace("&nbsp;", " ")
+    return re.sub(r"\s+", " ", txt).strip()
+
+
+def scale_text(txt, k):
+    """Rank k+1 of a rank-1 tooltip by scaling its numbers (an estimate: the client's own ranks are not always linear)."""
+    def f(m):
+        v = float(m.group(0)) * (k + 1)
+        return f"{v:g}"
+    return re.sub(r"\d+(?:\.\d+)?", f, txt)
+
+
+def sim_sources(cls, tf, sim_dir, raw_dir):
+    """The official simulator's trees (ui/sim/talents/trees/<class>.json, extracted from the live game files with the hotfix caches;
+    2026-10-30: the live hotfixes of 27-30 Oct reworked the druid and mage trees, and the fan sites' reads stopped at 70532) as the
+    tree structure: names, positions, rank caps and prerequisite arrows (at the required talent's full rank, as the client's arrows ask).
+    Tooltip text comes from the talentsforever export by name where its rank count matches, else from Wowhead's Forever tooltip of the
+    talent's spell (rank 1; higher ranks scaled from it and marked `estimated`). Returns (tf-shaped trees, wd-shaped snapshot,
+    {(tree, talent): estimated rank indices}, notes)."""
+    sim = json.load(open(sim_dir / f"{cls}.json", encoding="utf-8"))
+    tf_trees = {TREE_RENAMES.get(tr["name"], tr["name"]): tr for tr in tf["trees"]}
+    tf_out, wd_out, est, notes = [], [], {}, []
+    for tr in sim:
+        tname = TREE_RENAMES.get(tr["name"], tr["name"])
+        # by name across the class's trees: a talent that changed trees keeps its text (70707: Furor to Feral Combat, Heart of the Wild
+        # to Restoration)
+        old = {t["name"]: t for x in tf_trees.values() for t in x["talents"]}
+        old.update({t["name"]: t for t in (tf_trees.get(tname) or {}).get("talents", [])})
+        at = {(t["location"]["rowIdx"], t["location"]["colIdx"]): t for t in tr["talents"]}
+        tts, nodes = [], []
+        for t in tr["talents"]:
+            n, r, c, mx = t["fancyName"], t["location"]["rowIdx"], t["location"]["colIdx"], t["maxPoints"]
+            pre = at.get((t["prereqLocation"]["rowIdx"], t["prereqLocation"]["colIdx"])) if t.get("prereqLocation") else None
+            o = old.get(n)
+            ranks = tf_ranks(o) if o else None
+            if ranks is None or len(ranks) != mx:
+                first = wowhead_text(raw_dir, t["spellId"]) or (ranks or [""])[0]
+                ranks = [first] + [scale_text(first, k) for k in range(1, mx)]
+                est[(tname, n)] = list(range(1, mx))
+                notes.append(f"{tname}/{n}: tooltip from Wowhead's spell {t['spellId']} ({'new talent' if not o else 'rank cap ' + str(o['max']) + ' -> ' + str(mx)})"
+                             + (f"; ranks 2-{mx} scaled from rank 1 (estimated)" if mx > 1 else ""))
+            tts.append({"name": n, "row": r + 1, "col": c + 1, "max": mx, "desc": ranks, "icon": (o or {}).get("icon"),
+                        **({"req": pre["fancyName"]} if pre else {})})
+            nodes.append({"id": f"sim:{tname}:{n}", "name": n, "row": r, "col": c, "maxRanks": mx, "iconName": (o or {}).get("icon"),
+                          "requires": [{"id": f"sim:{tname}:{pre['fancyName']}", "rank": pre["maxPoints"]}] if pre else []})
+        tf_out.append({"name": tname, "talents": tts})
+        wd_out.append({"name": tname, "nodes": nodes})
+    return {"trees": tf_out}, {"trees": wd_out}, est, notes
+
+
 def merge_class(cls, wf, tf, wd, build, captured, sources):
     wf_trees = {TREE_RENAMES.get(tr["name"], tr["name"]): tr for tr in wf["trees"]}
     tf_trees = {TREE_RENAMES.get(tr["name"], tr["name"]): tr for tr in tf["trees"]}
@@ -154,14 +223,21 @@ def merge_class(cls, wf, tf, wd, build, captured, sources):
                                    "requires": [{"id": f"tf:{tname}:{t['req']}", "rank": mx.get(t["req"], 1)}] if t.get("req") else []}
         # renames: a 70009 talent missing from 69893 whose grid cell held a 69893 talent missing from 70009
         wf_only = {n: t for n, t in wmap.items() if n not in tmap}
+        tf_all_names = {t["name"] for x in tf_trees.values() for t in x["talents"]}
+        wf_all = {t["name"]: t for x in wf_trees.values() for t in x["talents"]}
         for n, t in tmap.items():
             if n in wmap:
+                continue
+            if n in wf_all:   # 70707: a talent that changed trees (Furor, Heart of the Wild) is a move, not a rename
+                wmap[n] = dict(wf_all[n])
                 continue
             old = [on for on, ot in wf_only.items() if (ot["row"], ot["col"]) == (t["row"] - 1, t["col"] - 1)]
             if old:
                 renamed_now.append({"tree": tname, "from": old[0], "to": n, "build": build})
                 wmap[n] = dict(wf_only.pop(old[0]), _renamed_from=old[0])
         for n, t in wf_only.items():
+            if n in tf_all_names:   # moved to another tree of the class
+                continue
             removed_now.append({"tree": tname, "name": n, "build": build, "row": t["row"] + 1, "col": t["col"] + 1, "maxRank": t["maxRank"], "rank1": t["ranks"][0]})
         # rebuild id map for prerequisites after renames
         new_id = {n: f"{tslug}/{slug(n)}" for n in tmap}
@@ -273,6 +349,8 @@ def main():
     ap.add_argument("--build", default=None, help="client build the merged data represents (default: thewowdb snapshot's)")
     ap.add_argument("--captured", default=dt.date.today().isoformat())
     ap.add_argument("--previous", default=None, help="raw folder holding the snapshot to diff against (default: the file being replaced)")
+    ap.add_argument("--sim-trees", default=None, help="the official simulator's ui/sim/talents/trees folder: its trees give the structure "
+                    "(2026-10-30, live hotfixes the fan sites had not read yet); tooltips from the export, else Wowhead")
     a = ap.parse_args()
     raw_dir = RAW / a.raw
     if a.fetch:
@@ -288,7 +366,20 @@ def main():
         sources = {"talentsforever": {"url": URL_TF, "generated": tf_all.get("generated"), "build": build, "license": tf_all.get("license"), "attribution": tf_all.get("attribution")},
                    "thewowdb": {"url": URL_WD.format(cls=cls), "build": wd["build"], "evidence": [e.get("url") for e in wd.get("evidence", [])]},
                    "warcraftforever": {"url": URL_WF.format(cls=cls), "build": wf.get("build"), "captured": wf.get("captured")}}
+        est, sim_notes = {}, []
+        if a.sim_trees:
+            tf, wd, est, sim_notes = sim_sources(cls, tf, pathlib.Path(a.sim_trees), raw_dir)
+            sources["simulator_trees"] = {"path": "wowsims/forever ui/sim/talents/trees", "build": build,
+                                          "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"}
         obj, tooltip_changes = merge_class(cls, wf, tf, wd, build, a.captured, sources)
+        if a.sim_trees:
+            obj["merge_notes"] = sim_notes + [x for x in obj["merge_notes"] if "Trait-edge snapshot disagrees" not in x]
+            obj["source"] += (f" Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees "
+                              f"(extracted from the live client {build} with its hotfix caches); talents the export lacks take Wowhead's tooltip.")
+            for tr in obj["trees"]:
+                for t in tr["talents"]:
+                    if (tr["name"], t["name"]) in est and est[(tr["name"], t["name"])]:
+                        t["estimated"] = est[(tr["name"], t["name"])]
         out = OUT / f"{cls}.json"
         prev_path = (RAW / a.previous / f"{cls}.json") if a.previous else out
         prev = json.load(open(prev_path, encoding="utf-8")) if prev_path.exists() else None

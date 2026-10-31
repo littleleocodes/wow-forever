@@ -7,7 +7,7 @@
 | **Build** | 14/36/1 (Arms / Fury / Protection) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -48,7 +48,7 @@ The Fury PvP build derived on 2026-10-03 (derive_pvp.py): the stats model's PvP 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Iron Will** | 1/5 | **NEW** | Reduces the duration of Stun and Fear effects inflicted on you by 3%. |
+| **Iron Will** | 1/5 | changed | Reduces the duration of Stun and Fear effects inflicted on you by 3%. |
 
 ## Core talents (priority order)
 

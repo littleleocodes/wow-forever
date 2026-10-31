@@ -1,13 +1,13 @@
-# Optimizer — Pet-first leveling (leveling-aoe) — 7/12/32
+# Optimizer — Pet-first leveling (leveling-aoe) — 8/12/31
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 7/12/32 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 8/12/31 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,31 +15,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 ## Point allocation
 
-### Beast Mastery (7)
+### Beast Mastery (8)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
+| **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 
 ### Marksmanship (12)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Hawk Eye** | 3/3 | moved | Increases the range of your ranged weapons by 6 yards. |
 | **Improved Concussive Shot** | 1/5 | unchanged | Gives your Concussive Shot a 4% chance to stun the target for 3 sec. |
+| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 1/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 3%. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 
-### Survival (32)
+### Survival (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Improved Wing Clip** | 3/3 | changed | Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec. |
-| **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Entrapment** | 4/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 4 sec. |
+| **Improved Wing Clip** | 3/3 | changed | Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec. |
+| **Savage Strikes** | 1/2 | changed | Increases the critical strike chance of all your melee abilities by 2%. |
 | **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Counterattack** | 1/1 | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. |
@@ -49,33 +50,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
-| 15-17 | Survival | Improved Wing Clip | 3 | 0/0/8 |
-| 18-19 | Survival | Savage Strikes | 2 | 0/0/10 |
-| 20 | Survival | Deterrence | 1 | 0/0/11 |
-| 21-23 | Survival | Surefooted | 3 | 0/0/14 |
-| 24 | Survival | Entrapment | 1 | 0/0/15 |
-| 25 | Survival | Counterattack | 1 | 0/0/16 |
-| 26-27 | Survival | Survival Tactics | 2 | 0/0/18 |
-| 28-29 | Survival | Entrapment | 2 | 0/0/20 |
-| 30 | Survival | Strider Kick | 1 | 0/0/21 |
-| 31-32 | Survival | Expose Prey | 2 | 0/0/23 |
-| 33-34 | Survival | Survivalist's Discipline | 2 | 0/0/25 |
-| 35-39 | Survival | Lightning Reflexes | 5 | 0/0/30 |
-| 40 | Survival | Lacerating Strikes | 1 | 0/0/31 |
-| 41-45 | Marksmanship | Lethal Attacks | 5 | 0/5/31 |
-| 46-48 | Marksmanship | Hawk Eye | 3 | 0/8/31 |
-| 49 | Marksmanship | Efficiency | 1 | 0/9/31 |
-| 50 | Marksmanship | Improved Concussive Shot | 1 | 0/10/31 |
-| 51-52 | Marksmanship | Rapid Killing | 2 | 0/12/31 |
-| 53-57 | Beast Mastery | Deadly Aspects | 5 | 5/12/31 |
-| 58-59 | Beast Mastery | Pathfinding | 2 | 7/12/31 |
-| 60 | Survival | Entrapment | 1 | 7/12/32 |
 
 ## Core talents (priority order)
 
@@ -116,6 +90,7 @@ What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all le
 
 - Allocation and order taken from cand-aoe-r2 on 2026-10-18: an earlier optimizer round beat the last export in the fight lab (40.0s vs 49.3s per kill, level-weighted).
 - Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-aoe.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/12/32 -> 8/12/31; +1 Focused Fire (tier gating for Pathfinding); +1 Focused Fire (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Savage Strikes (over 51); -1 Pathfinding (over 51); -1 Pathfinding (over 51); -1 Endurance Training (over 51); -1 Endurance Training (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-aoe).
 
 ## Open questions (verify in the live game)
 

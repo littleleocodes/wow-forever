@@ -13,10 +13,10 @@
       "summary": "The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Presence of Mind, Arcane Instability and a stronger Arcane Mind (+10% Intellect and +100% Arcane crit damage) with Arcane Concentration and Arcane Meditation, plus Improved Frostbolt, Ice Shards, Piercing Ice and Elemental Precision — which is now 5 ranks, so Frost Channeling drops to 2.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
           ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
           ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
           ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
@@ -26,10 +26,12 @@
           ["Arcane Instability", 3],
           ["Arcane Power", 1]
         ],
-        "Fire": [],
+        "Fire": [
+          ["Incineration", 3]
+        ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Improved Frostbolt", 5],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 2],
           ["Ice Block", 1]
@@ -73,7 +75,7 @@
           "why": "Mana/threat vs. the fifth point of hit."
         }
       ],
-      "notes": ["Missile Barrage (Frostbolt 20% chance to make the next Arcane Missiles fast and free) could add a filler cast; treat it as a curiosity until tested.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt). Net +1.80% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Blast -> Frost Channeling (threat). Net -0.01% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 32/0/19 -> 35/0/16; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Missile Barrage, +1 Frost Channeling, +1 Arcane Blast, +1 Arcane Wrath, +1 Ice Block (refill: the frost-raid model, raid-dps)."],
+      "notes": ["Missile Barrage (Frostbolt 20% chance to make the next Arcane Missiles fast and free) could add a filler cast; treat it as a curiosity until tested.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt). Net +1.80% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Blast -> Frost Channeling (threat). Net -0.01% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 32/0/19 -> 35/0/16; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Missile Barrage, +1 Frost Channeling, +1 Arcane Blast, +1 Arcane Wrath, +1 Ice Block (refill: the frost-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 35/0/16 -> 32/3/16; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Subtlety (tier gating for Arcane Power); refill +1 Arcane Subtlety, +3 Incineration (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Is Arcane Instability's crit 'with all attacks' also spell crit? Demo wording is ambiguous.", "Whether the deep Frost Fingers of Frost build out-damages this — see frost-fingers-of-frost-raid."],
       "sources": ["https://warcraftforever.games/talents/mage"],
       "spec": "Hybrid Arcane/Frost"
@@ -88,19 +90,21 @@
       "summary": "Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks once — likely a transcription artefact; Classic stacked to 5), Ice Block moved to tier 4 and Cold Snap to tier 5, Shatter is 3 ranks. The 17/0/34 shape still fits with Elemental Precision at 5 ranks.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
+          ["Arcane Resilience", 1],
           ["Improved Channeling", 4],
-          ["Missile Barrage", 1],
           ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 1],
+          ["Missile Barrage", 2],
           ["Arcane Impact", 3],
           ["Arcane Meditation", 2],
           ["Presence of Mind", 1]
         ],
         "Fire": [],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
           ["Improved Frostbolt", 5],
+          ["Precision", 3],
           ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
@@ -128,7 +132,7 @@
           "why": "Regen vs. filler."
         }
       ],
-      "notes": ["Ice Lance + Fingers of Frost are not taken here; they need 3 more Frost points (see the Fingers of Frost build).", "2026-09-27 scenario audit: Improved Frost Nova 2 -> Arctic Reach 2. Improved Frost Nova shortens a root's cooldown: control a raid boss ignores (simulator 0.0%). Arctic Reach 2/2 adds range. This draft is superseded in Forever: the beta Winter's Chill raises only your own Frostbolt and Ice Lance crit, so the raid-support reason for skipping Fingers of Frost is gone, and frost-fingers-of-frost-raid simulates about 14% higher (645 vs 559 DPS).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arctic Reach -> Missile Barrage (+7.6% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arctic Reach -> Arcane Impact (+0.2% DPS); Shatter -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Shatter -> Arctic Reach (range); Shatter -> Arctic Reach (range). Net +8.80% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast, Ice Barrier was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Ice Barrier -> Presence of Mind (+1.1% DPS); Arcane Blast -> Improved Channeling (interrupt). Net +1.11% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Cold Snap); +1 Frost Warding (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps)."],
+      "notes": ["Ice Lance + Fingers of Frost are not taken here; they need 3 more Frost points (see the Fingers of Frost build).", "2026-09-27 scenario audit: Improved Frost Nova 2 -> Arctic Reach 2. Improved Frost Nova shortens a root's cooldown: control a raid boss ignores (simulator 0.0%). Arctic Reach 2/2 adds range. This draft is superseded in Forever: the beta Winter's Chill raises only your own Frostbolt and Ice Lance crit, so the raid-support reason for skipping Fingers of Frost is gone, and frost-fingers-of-frost-raid simulates about 14% higher (645 vs 559 DPS).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arctic Reach -> Missile Barrage (+7.6% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arctic Reach -> Arcane Impact (+0.2% DPS); Shatter -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Shatter -> Arctic Reach (range); Shatter -> Arctic Reach (range). Net +8.80% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast, Ice Barrier was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Ice Barrier -> Presence of Mind (+1.1% DPS); Arcane Blast -> Improved Channeling (interrupt). Net +1.11% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Cold Snap); +1 Frost Warding (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 21/0/30; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Arcane Subtlety (tier gating for Presence of Mind); +1 Arcane Subtlety (tier gating for Presence of Mind); +1 Magic Absorption (tier gating for Presence of Mind) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Winter's Chill stack count (demo says 1; Classic was 5) — decides whether one dedicated WC mage is still worth it."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -141,10 +145,11 @@
       "summary": "Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build in the community simulator (+3.8% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-27 from `opt-frost-raid-raid-dps`, the best build in the community simulator (+6.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: A new deep-Frost design the demo tree clearly invites: Frostbite and Fingers of Frost turn chills into Frozen states, Shatter (est. +51% crit vs. Frozen) and Ice Shards make those Frostbolts/Ice Lances crit for double, Winter's Chill adds crit on top, and Ice Barrier/Ice Block/Cold Snap come for free. Arcane only for Arcane Concentration. No Classic baseline.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
+          ["Arcane Resilience", 2],
           ["Improved Channeling", 3],
-          ["Missile Barrage", 1],
           ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
           ["Arcane Mind", 1],
@@ -152,8 +157,8 @@
         ],
         "Fire": [],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Improved Frostbolt", 5],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
@@ -224,7 +229,7 @@
           "why": "Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.", "2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt). Net +0.00% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 22/0/29 -> 22/0/29; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps)."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.", "2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt). Net +0.00% on a third seed.", "2026-10-22 (repair_builds.py, client build 70425 trees): 22/0/29 -> 22/0/29; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 22/0/29 -> 22/0/29; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Arcane Subtlety (tier gating for Arcane Mind); +1 Arcane Subtlety (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Do Fingers of Frost procs apply to bosses (they only need a chill, not a freeze)?", "Fingers of Frost rank-2 value (extrapolated) and whether Winter's Chill stacks.", "Mana: no Arcane Meditation — is Frost Channeling + Clearcasting enough for a 5-minute fight?"],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -239,26 +244,28 @@
       "allocation": {
         "Arcane": [
           ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
           ["Arcane Concentration", 5],
-          ["Arcane Subtlety", 2]
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 1],
+          ["Missile Barrage", 2],
+          ["Arcane Meditation", 1]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 5],
+          ["Accelerant", 5],
           ["Incineration", 3],
           ["Ignite", 5],
           ["Burning Soul", 2],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
           ["Heating Up", 1],
           ["Improved Scorch", 3],
           ["Master of Elements", 3],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3]
+          ["Precision", 3]
         ]
       },
       "core": [
@@ -297,7 +304,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Fire: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 12/34/5 -> 12/34/5; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion) (refill: the fire-raid model, raid-dps).", "2026-10-17 (audit of 2026-10-17, finding 26): flex default Wake of Fire -> Improved Fire Blast (renamed in 70425).", "2026-10-22 (repair_builds.py, client build 70425 trees): 12/34/5 -> 14/34/3; Elemental Precision 5 -> 3 (rank cap); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps)."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Fire: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 12/34/5 -> 12/34/5; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion) (refill: the fire-raid model, raid-dps).", "2026-10-17 (audit of 2026-10-17, finding 26): flex default Wake of Fire -> Improved Fire Blast (renamed in 70425).", "2026-10-22 (repair_builds.py, client build 70425 trees): 12/34/5 -> 14/34/3; Elemental Precision 5 -> 3 (rank cap); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 14/34/3 -> 16/32/3; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); refill +1 Magic Absorption, +1 Arcane Meditation (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Does a 3-stack Hot Streak Pyroblast (1.5s cast) beat Fireball per cast time? If yes, Pyroblast enters the rotation.", "Incineration (Scorch/Fire Blast/Arcane Blast crit) vs. Flame Throwing.", "Whether Arcane Meditation 3/3 (est. 51% regen while casting) is worth 5 Arcane filler points and 2 hit."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -311,27 +318,29 @@
       "summary": "A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 and 60; it counts as both Fire and Frost, so Fire Power and Piercing Ice, Critical Mass and Ice Shards all apply to it, and Improved Fireball names it). Deep Fire for Improved Fireball, Ignite, Improved Scorch and Critical Mass, and 16 Frost points for Elemental Precision, Ice Shards, Piercing Ice and Frost Channeling. Found by the simulator talent search (raidsim/talent_opt.py) from four starts, on our implementation of Frostfire Bolt (the community simulator ships the spell as a stub: raidsim/patches/). Best Frostfire build found, not a recommendation: Frostfire Bolt rank 3 hits for 270-314 plus 57 over 9 s, against Frostbolt rank 11's 457-493 and Fireball rank 12's 425-541, and the two trees' talents on one spell do not close that gap (see the rank table).",
       "allocation": {
         "Arcane": [
+          ["Arcane Resilience", 1],
           ["Improved Channeling", 4],
+          ["Arcane Concentration", 1],
           ["Missile Barrage", 1]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 2],
+          ["Accelerant", 2],
           ["Incineration", 3],
           ["Flame Throwing", 1],
           ["Ignite", 5],
           ["Burning Soul", 3],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
           ["Heating Up", 1],
           ["Improved Scorch", 3],
           ["Master of Elements", 3],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3]
         ]
@@ -359,7 +368,7 @@
           "why": "Tier fillers on the way to the Fire capstones."
         }
       ],
-      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Blast Wave was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blast Wave -> Improved Channeling (interrupt); Wake of Fire -> Improved Channeling (interrupt); Wake of Fire -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Flame Throwing (range). Net -0.04% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-16 (repair_builds.py, client build 70425 trees): 4/31/16 -> 4/32/15; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); -1 Piercing Ice (over 51) (refill: the fire-raid model, raid-dps).", "2026-10-17 (audit of 2026-10-17, finding 26): core Heating Up dropped and the name changed: the allocation has not held Heating Up since the simulator searches of 2026-10 (Hot Streak was renamed Heating Up in 70170).", "2026-10-22 (repair_builds.py, client build 70425 trees): 4/32/15 -> 5/33/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 2 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +1 Heating Up, +1 Missile Barrage (refill: the fire-raid model, raid-dps)."],
+      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Blast Wave was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blast Wave -> Improved Channeling (interrupt); Wake of Fire -> Improved Channeling (interrupt); Wake of Fire -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Flame Throwing (range). Net -0.04% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-16 (repair_builds.py, client build 70425 trees): 4/31/16 -> 4/32/15; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); -1 Piercing Ice (over 51) (refill: the fire-raid model, raid-dps).", "2026-10-17 (audit of 2026-10-17, finding 26): core Heating Up dropped and the name changed: the allocation has not held Heating Up since the simulator searches of 2026-10 (Hot Streak was renamed Heating Up in 70170).", "2026-10-22 (repair_builds.py, client build 70425 trees): 4/32/15 -> 5/33/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 2 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +1 Heating Up, +1 Missile Barrage (refill: the fire-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/33/13 -> 7/31/13; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); refill +1 Arcane Concentration (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Does Frostfire Bolt take both schools' bonuses in the live game (Fire Power and Piercing Ice, Critical Mass and Ice Shards)? The tooltip says it counts as both Frost and Fire damage.", "Are the rank-3 numbers (270-314 + 57 over 9 s, 370 mana) final? A stronger Frostfire Bolt would move this build up the ranking.", "Frostfire Bolt's slow: the tooltip gives 40% without a duration (9 s assumed in the fight lab)."],
       "sources": ["https://warcraftforever.games/talents/mage", "_reference/data/raidsim/patches/README.md"],
       "spec": "Hybrid Fire/Frost"
@@ -373,11 +382,10 @@
       "summary": "Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast, as the core of an Arcane build: Arcane Blast stacks, Arcane Missiles on Missile Barrage procs, Frostbolt while the stacks fall off, Arcane Power and Presence of Mind. Talents from the simulator talent search from the simulator's Arcane presets, keeping Arcane Blast.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
           ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
           ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
           ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
@@ -387,14 +395,14 @@
           ["Arcane Power", 1]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Incineration", 3],
+          ["Incineration", 5],
           ["Ignite", 5],
-          ["Burning Soul", 1]
+          ["Burning Soul", 1],
+          ["Improved Fire Blast", 2]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
-          ["Improved Frostbolt", 1]
+          ["Improved Frostbolt", 4],
+          ["Precision", 3]
         ]
       },
       "core": [
@@ -440,7 +448,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Arcane DPS`: 3 points Master of Elements -> Elemental Precision, 2 points Improved Scorch -> Elemental Precision.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Improved Flamestrike -> Arcane Subtlety (threat); Improved Flamestrike -> Arcane Subtlety (threat); Magic Absorption -> Burning Soul (threat). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arcane: its full-raid winner is +0.36% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 35/11/5 -> 35/11/5; Wake of Fire -> Improved Fire Blast (renamed) (refill: the frost-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 35/11/5 -> 36/11/4; Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps)."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Arcane DPS`: 3 points Master of Elements -> Elemental Precision, 2 points Improved Scorch -> Elemental Precision.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Improved Flamestrike -> Arcane Subtlety (threat); Improved Flamestrike -> Arcane Subtlety (threat); Magic Absorption -> Burning Soul (threat). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arcane: its full-raid winner is +0.36% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 35/11/5 -> 35/11/5; Wake of Fire -> Improved Fire Blast (renamed) (refill: the frost-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 35/11/5 -> 36/11/4; Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/11/4 -> 31/13/7; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Incineration (tier gating for Ignite); +1 Incineration (tier gating for Ignite); refill +3 Improved Frostbolt (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Arcane Blast's stacking cost against a mage's mana in long fights (the simulator's fights last 120 s)."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/mage/dps/presets.ts", "https://warcraftforever.games/talents/mage"]
     },
@@ -454,11 +462,12 @@
       "summary": "Shatter (3 ranks), Ice Lance + Fingers of Frost, Frostbite, Permafrost, Improved Cone of Cold, Ice Block (tier 4), Cold Snap and Ice Barrier, with Improved Counterspell and Arcane Meditation from Arcane. Same 20/0/31 shape as Classic with Ice Lance replacing a Piercing Ice/Arctic Reach point.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 3],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
           ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
-          ["Arcane Resilience", 2],
           ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
           ["Arcane Meditation", 3],
           ["Improved Counterspell", 2]
@@ -505,7 +514,7 @@
           "why": "Arcane gating filler."
         }
       ],
-      "notes": ["Frostbite 3 in place of Piercing Ice is probably the better PvP choice now that freezes feed Fingers of Frost + Shatter + Ice Lance.", "2026-10-22 (repair_builds.py, client build 70425 trees): 20/0/31 -> 20/0/31; Piercing Ice 3 gone; +1 Frostbite (tier gating for Ice Barrier); +1 Frostbite (tier gating for Ice Barrier); +1 Frostbite (tier gating for Ice Barrier) (refill: the frost-raid model, pvp)."],
+      "notes": ["Frostbite 3 in place of Piercing Ice is probably the better PvP choice now that freezes feed Fingers of Frost + Shatter + Ice Lance.", "2026-10-22 (repair_builds.py, client build 70425 trees): 20/0/31 -> 20/0/31; Piercing Ice 3 gone; +1 Frostbite (tier gating for Ice Barrier); +1 Frostbite (tier gating for Ice Barrier); +1 Frostbite (tier gating for Ice Barrier) (refill: the frost-raid model, pvp).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/0/31 -> 20/0/31; Arcane Focus 3 gone; +1 Improved Channeling (tier gating for Arcane Concentration); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Missile Barrage (tier gating for Arcane Meditation) (refill: the frost-raid model, pvp)."],
       "open_questions": ["Improved Counterspell's demo silence is 2s (Classic 4s) — check the final value."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -519,19 +528,20 @@
       "summary": "Classic Frost leveling was Frostbolt/Ice Shards early, Shatter at 30, Ice Block at 34 and Ice Barrier at 43. Forever pulls the burst forward: Ice Lance arrives at 20 (Frost Nova -> step back -> Ice Lance, 4x damage on a Frozen target and ~60% of all leveling damage in the fight lab), Shatter at 25-27, Fingers of Frost at 30, Ice Block at 32 and Ice Barrier at 40. Ends in the Forever Fingers of Frost raid build (12/0/39) — no respec.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 3],
-          ["Missile Barrage", 2],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
           ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
           ["Arcane Meditation", 1],
           ["Arcane Wrath", 1]
         ],
         "Fire": [],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Improved Frostbolt", 5],
+          ["Precision", 3],
           ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
@@ -571,39 +581,9 @@
           "why": "Mana vs. longer slows."
         }
       ],
-      "notes": ["Rotation: Frostbolt -> Frost Nova when the mob reaches you -> Ice Lance (x2 if Fingers of Frost procs) -> Frostbolt; Cone of Cold to re-snare.", "Arcane Concentration and the Arcane fillers are left for 49-60 because nothing in Arcane speeds up a kill.", "Order revised 2026-09-26 from the fight lab (fightlab/candidates/cand-hand-revised.json raced against the old order with the same seeds): Elemental Precision, Frostbite and Ice Shards first so that Ice Lance lands at 20 and Shatter at 25-27 — 7% faster per kill at 20, 13% at 25, 6% at 30, the same from 40 on. Improved Frostbolt first instead (cand-hand-revised-2) ties within noise.", "The optimizer's opt-frost-leveling-leveling-st (12/3/36, same Arcane points) ends 2-3% faster at 50-60 in the sim by swapping Arctic Reach and four Winter's Chill points for Incineration and Improved Cone of Cold, and is 6% slower at 30 because its order buys Frost Channeling before Ice Shards.", "2026-10-22 (repair_builds.py, client build 70425 trees): 12/0/39 -> 17/0/34; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Arcane Blast, +2 Missile Barrage, +1 Arcane Wrath, +1 Arcane Meditation; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the frost-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 31.2 s per kill; stats model 31.6 s; own tree last 37.2 s.", "Fight lab (leveling/fightlab/frost-leveling.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 27/34/36/31/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-frost-leveling-leveling-st is -4% at 60 and +0% at 30 (negative = faster); race winner over the leveling: cand-frost-r4; top talents at 60: Ice Lance +16%, Shatter +16%, Ice Shards +8%, Frostbite +6%; about zero: Arcane Blast, Arcane Focus, Arcane Resilience, Arcane Subtlety, Arcane Wrath, Ice Block. See the Fight lab section of leveling/README.md."],
+      "notes": ["Rotation: Frostbolt -> Frost Nova when the mob reaches you -> Ice Lance (x2 if Fingers of Frost procs) -> Frostbolt; Cone of Cold to re-snare.", "Arcane Concentration and the Arcane fillers are left for 49-60 because nothing in Arcane speeds up a kill.", "Order revised 2026-09-26 from the fight lab (fightlab/candidates/cand-hand-revised.json raced against the old order with the same seeds): Elemental Precision, Frostbite and Ice Shards first so that Ice Lance lands at 20 and Shatter at 25-27 — 7% faster per kill at 20, 13% at 25, 6% at 30, the same from 40 on. Improved Frostbolt first instead (cand-hand-revised-2) ties within noise.", "The optimizer's opt-frost-leveling-leveling-st (12/3/36, same Arcane points) ends 2-3% faster at 50-60 in the sim by swapping Arctic Reach and four Winter's Chill points for Incineration and Improved Cone of Cold, and is 6% slower at 30 because its order buys Frost Channeling before Ice Shards.", "2026-10-22 (repair_builds.py, client build 70425 trees): 12/0/39 -> 17/0/34; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Arcane Blast, +2 Missile Barrage, +1 Arcane Wrath, +1 Arcane Meditation; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the frost-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 31.2 s per kill; stats model 31.6 s; own tree last 37.2 s.", "Fight lab (leveling/fightlab/frost-leveling.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 27/34/36/31/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-frost-leveling-leveling-st is -4% at 60 and +0% at 30 (negative = faster); race winner over the leveling: cand-frost-r4; top talents at 60: Ice Lance +16%, Shatter +16%, Ice Shards +8%, Frostbite +6%; about zero: Arcane Blast, Arcane Focus, Arcane Resilience, Arcane Subtlety, Arcane Wrath, Ice Block. See the Fight lab section of leveling/README.md.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 17/0/34 -> 17/0/34; Arcane Focus 3 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["Fingers of Frost proc rate at rank 2 (extrapolated) and whether it triggers off Frostbolt's own chill.", "Ice Lance base damage at each rank (demo shows 28-33 at level 38 — low; its value is the 300% Frozen multiplier).", "Fight lab (2026-09-25, beta numbers): Ice Lance on a Frozen target (Frost Nova, Frostbite, Fingers of Frost) is 4x damage for an instant, so Nova -> step back -> Ice Lance x2 makes Ice Lance ~40-55% of all leveling damage from 30 on and Shatter/Fingers of Frost/Frostbite the best talents; testable at the level-20 cap now: does Ice Lance rank 1 hit a Frost-Nova'd mob for ~120 (4 x 28-32) and how often do the first two Ice Lances break the root?"],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "26-27", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "28", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "29", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-35", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "36", "tree": "Frost", "talent": "Arctic Reach", "points": 1},
-        {"levels": "37", "tree": "Frost", "talent": "Cold Snap", "points": 1},
-        {"levels": "38-39", "tree": "Frost", "talent": "Winter's Chill", "points": 2},
-        {"levels": "40", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
-        {"levels": "41-43", "tree": "Frost", "talent": "Winter's Chill", "points": 3},
-        {"levels": "44-45", "tree": "Arcane", "talent": "Missile Barrage", "points": 2},
-        {"levels": "46-47", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "48", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "49-52", "tree": "Arcane", "talent": "Arcane Concentration", "points": 4},
-        {"levels": "53-54", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
-        {"levels": "55", "tree": "Arcane", "talent": "Arcane Concentration", "points": 1},
-        {"levels": "56-57", "tree": "Arcane", "talent": "Arcane Focus", "points": 2},
-        {"levels": "58", "tree": "Arcane", "talent": "Arcane Blast", "points": 1},
-        {"levels": "59", "tree": "Arcane", "talent": "Arcane Wrath", "points": 1},
-        {"levels": "60", "tree": "Arcane", "talent": "Arcane Meditation", "points": 1}
-      ],
-      "order_label": "own tree first"
+      "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
       "id": "arcane-pvp",
@@ -617,18 +597,20 @@
       "summary": "The Arcane PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Arcane (model frost-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Arcane builds agree with (5513 builds).",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
+          ["Wand Specialization", 2],
+          ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Resilience", 1],
+          ["Missile Barrage", 1],
+          ["Arcane Blast", 1],
           ["Arcane Geometry", 2],
           ["Arcane Impact", 1],
-          ["Arcane Blast", 1],
-          ["Arcane Shielding", 1],
-          ["Improved Counterspell", 2],
           ["Arcane Meditation", 3],
-          ["Missile Barrage", 1],
+          ["Arcane Shielding", 1],
+          ["Arcane Wrath", 1],
+          ["Improved Counterspell", 2],
           ["Presence of Mind", 1],
           ["Arcane Instability", 3],
           ["Arcane Power", 1]
@@ -636,9 +618,9 @@
         "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
+          ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
-          ["Frostbite", 3],
           ["Ice Lance", 1],
           ["Ice Block", 1],
           ["Shatter", 3]
@@ -653,7 +635,7 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +6.3% of its score (model frost-leveling)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 1 point Arcane Shielding -> Missile Barrage; 1 point Arcane Mind -> Arcane Blast; 1 point Arcane Mind -> Arcane Impact.", "Where we disagree with the community: most Arcane builds take Arcane Mind (96% take it), Incineration (71% take it), which the model values below this build's weakest point; this build takes Frostbite (15%), Ice Block (20%), Ice Lance (19%), Improved Frost Nova (19%), Shatter (14%), which few Arcane builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list)."],
+      "notes": ["Community tie-break moves: 1 point Arcane Shielding -> Missile Barrage; 1 point Arcane Mind -> Arcane Blast; 1 point Arcane Mind -> Arcane Impact.", "Where we disagree with the community: most Arcane builds take Arcane Mind (96% take it), Incineration (71% take it), which the model values below this build's weakest point; this build takes Frostbite (15%), Ice Block (20%), Ice Lance (19%), Improved Frost Nova (19%), Shatter (14%), which few Arcane builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 31/0/20 -> 31/0/20; Arcane Focus 5 gone; +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); +1 Arcane Wrath (tier gating for Arcane Power) (refill: the frost-raid model, pvp)."],
       "open_questions": ["A derived Arcane PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"]
     },
@@ -670,22 +652,23 @@
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 4],
+          ["Accelerant", 5],
           ["Flame Throwing", 2],
           ["Ignite", 5],
           ["Impact", 3],
           ["Burning Soul", 3],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
+          ["Heating Up", 1],
           ["Improved Scorch", 2],
           ["Blast Wave", 1],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
+          ["Precision", 3],
           ["Frostbite", 3],
           ["Ice Shards", 1],
           ["Improved Frost Nova", 2],
@@ -704,7 +687,7 @@
         {"talent": "Shatter", "why": "The scorer's value in this build: +6.0% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 1 point Arctic Reach -> Improved Scorch; 1 point Frost Warding -> Ice Shards; 2 points Improved Fireball -> Wake of Fire.", "Where we disagree with the community: most Fire builds take Master of Elements (83% take it), which the model values below this build's weakest point; this build takes Frostbite (11%), Improved Frost Nova (13%), Permafrost (7%), which few Fire builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51) (refill: the fire-raid model, pvp).", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite) (refill: the fire-raid model, pvp)."],
+      "notes": ["Community tie-break moves: 1 point Arctic Reach -> Improved Scorch; 1 point Frost Warding -> Ice Shards; 2 points Improved Fireball -> Wake of Fire.", "Where we disagree with the community: most Fire builds take Master of Elements (83% take it), which the model values below this build's weakest point; this build takes Frostbite (11%), Improved Frost Nova (13%), Permafrost (7%), which few Fire builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51) (refill: the fire-raid model, pvp).", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite) (refill: the fire-raid model, pvp).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Accelerant (tier gating for Flame Throwing); refill +1 Heating Up (refill: the fire-raid model, pvp)."],
       "open_questions": ["A derived Fire PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"]
     },
@@ -720,19 +703,21 @@
       "summary": "The Frost PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Frost (model frost-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Frost builds agree with (9200 builds).",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
-          ["Missile Barrage", 2],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
+          ["Wand Specialization", 2],
           ["Arcane Concentration", 3],
-          ["Arcane Resilience", 1],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 2],
+          ["Missile Barrage", 2],
           ["Arcane Geometry", 2],
+          ["Arcane Shielding", 1],
           ["Improved Counterspell", 2]
         ],
         "Fire": [],
         "Frost": [
-          ["Elemental Precision", 2],
           ["Improved Frostbolt", 5],
+          ["Precision", 2],
           ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
@@ -756,7 +741,7 @@
         {"talent": "Fingers of Frost", "why": "The scorer's value in this build: +10.0% of its score (model frost-leveling)."}
       ],
       "flex": [],
-      "notes": ["Scores +13.3% of the optimum's talent value above the hand draft pvp-frost, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Precision -> Missile Barrage; 1 point Elemental Precision -> Frost Channeling.", "Where we disagree with the community: most Frost builds take none, which the model values below this build's weakest point; this build takes none, which few Frost builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-22 (repair_builds.py, client build 70425 trees): 18/0/33 -> 19/0/32; Piercing Ice 3 gone; +1 Elemental Precision (tier gating for Ice Barrier); refill +1 Missile Barrage, +1 Elemental Precision (refill: the frost-raid model, pvp)."],
+      "notes": ["Scores +13.3% of the optimum's talent value above the hand draft pvp-frost, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Precision -> Missile Barrage; 1 point Elemental Precision -> Frost Channeling.", "Where we disagree with the community: most Frost builds take none, which the model values below this build's weakest point; this build takes none, which few Frost builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-22 (repair_builds.py, client build 70425 trees): 18/0/33 -> 19/0/32; Piercing Ice 3 gone; +1 Elemental Precision (tier gating for Ice Barrier); refill +1 Missile Barrage, +1 Elemental Precision (refill: the frost-raid model, pvp).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 19/0/32 -> 19/0/32; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); refill +1 Arcane Shielding (refill: the frost-raid model, pvp)."],
       "open_questions": ["A derived Frost PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"],
       "replaces": "pvp-frost"
@@ -773,10 +758,10 @@
       "summary": "The Arcane leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Arcane build, 30+ points kept in Arcane, playing the arcane-leveling rotation; the talent order is the stats model's (frost-leveling).",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 3],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
           ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
-          ["Arcane Resilience", 1],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 1],
           ["Arcane Impact", 3],
@@ -788,14 +773,14 @@
         ],
         "Fire": [],
         "Frost": [
-          ["Elemental Precision", 2],
           ["Improved Frostbolt", 5],
+          ["Precision", 2],
           ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Ice Lance", 1],
           ["Ice Block", 1],
           ["Shatter", 3],
-          ["Fingers of Frost", 1]
+          ["Fingers of Frost", 2]
         ]
       },
       "core": [
@@ -807,37 +792,9 @@
         {"talent": "Fingers of Frost", "why": "The scorer's value in this build: +2.7% of its score (model frost-leveling)."}
       ],
       "flex": [],
-      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start arcane-leveling, moves: 2 points Improved Counterspell -> Arcane Impact; 1 point Magic Absorption -> Arcane Impact. Race against arcane-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.3% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-22 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Piercing Ice 2 gone; +1 Elemental Precision (tier gating for Ice Block); +1 Elemental Precision (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 36.1 s per kill; own tree first 38.0 s; own tree last 36.1 s."],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start arcane-leveling, moves: 2 points Improved Counterspell -> Arcane Impact; 1 point Magic Absorption -> Arcane Impact. Race against arcane-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.3% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-22 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Piercing Ice 2 gone; +1 Elemental Precision (tier gating for Ice Block); +1 Elemental Precision (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 36.1 s per kill; own tree first 38.0 s; own tree last 36.1 s.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/0/21 -> 29/0/22; Arcane Focus 3 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); refill +1 Fingers of Frost; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["A derived Arcane leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/mage"],
-      "order": [
-        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-24", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "25", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "26", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "27", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "28-29", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "30", "tree": "Frost", "talent": "Fingers of Frost", "points": 1},
-        {"levels": "31-32", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "33-35", "tree": "Arcane", "talent": "Arcane Focus", "points": 3},
-        {"levels": "36-40", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
-        {"levels": "41-42", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
-        {"levels": "43", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
-        {"levels": "44", "tree": "Arcane", "talent": "Magic Absorption", "points": 1},
-        {"levels": "45", "tree": "Arcane", "talent": "Arcane Impact", "points": 1},
-        {"levels": "46-48", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "49", "tree": "Arcane", "talent": "Arcane Shielding", "points": 1},
-        {"levels": "50", "tree": "Arcane", "talent": "Arcane Impact", "points": 1},
-        {"levels": "51", "tree": "Arcane", "talent": "Presence of Mind", "points": 1},
-        {"levels": "52", "tree": "Arcane", "talent": "Arcane Impact", "points": 1},
-        {"levels": "53-55", "tree": "Arcane", "talent": "Arcane Mind", "points": 3},
-        {"levels": "56-58", "tree": "Arcane", "talent": "Arcane Instability", "points": 3},
-        {"levels": "59-60", "tree": "Arcane", "talent": "Arcane Mind", "points": 2}
-      ],
-      "order_label": "stats model"
+      "sources": ["https://talentsforever.com/mage"]
     },
     {
       "id": "fire-leveling",
@@ -852,22 +809,23 @@
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 1],
-          ["Improved Fireball", 5],
+          ["Accelerant", 5],
           ["Ignite", 5],
           ["Impact", 1],
           ["Burning Soul", 3],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
+          ["Heating Up", 1],
           ["Improved Scorch", 3],
           ["Master of Elements", 3],
           ["Blast Wave", 1],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
+          ["Precision", 3],
           ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Permafrost", 1],
@@ -885,37 +843,10 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +1.7% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 34.4 s per kill; stats model 36.4 s; own tree first 39.7 s.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-17 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 37.9 s per kill; stats model 40.1 s; own tree first 42.2 s.", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s."],
+      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 34.4 s per kill; stats model 36.4 s; own tree first 39.7 s.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-17 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 37.9 s per kill; stats model 40.1 s; own tree first 42.2 s.", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Heating Up (tier gating for Combustion); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st)."],
       "open_questions": ["A derived Fire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage"],
-      "replaces": "opt-fire-leveling-leveling-st",
-      "order": [
-        {"levels": "10-12", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
-        {"levels": "13-14", "tree": "Frost", "talent": "Frost Warding", "points": 2},
-        {"levels": "15", "tree": "Frost", "talent": "Permafrost", "points": 1},
-        {"levels": "16-18", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "19", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-24", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "26-28", "tree": "Frost", "talent": "Shatter", "points": 3},
-        {"levels": "29", "tree": "Fire", "talent": "Improved Fire Blast", "points": 1},
-        {"levels": "30-33", "tree": "Fire", "talent": "Improved Fireball", "points": 4},
-        {"levels": "34-38", "tree": "Fire", "talent": "Ignite", "points": 5},
-        {"levels": "39-41", "tree": "Fire", "talent": "Burning Soul", "points": 3},
-        {"levels": "42", "tree": "Fire", "talent": "Impact", "points": 1},
-        {"levels": "43", "tree": "Fire", "talent": "Improved Fireball", "points": 1},
-        {"levels": "44-46", "tree": "Fire", "talent": "Improved Scorch", "points": 3},
-        {"levels": "47-48", "tree": "Fire", "talent": "Master of Elements", "points": 2},
-        {"levels": "49", "tree": "Fire", "talent": "Blast Wave", "points": 1},
-        {"levels": "50-53", "tree": "Fire", "talent": "Critical Mass", "points": 4},
-        {"levels": "54-56", "tree": "Fire", "talent": "Fire Power", "points": 3},
-        {"levels": "57", "tree": "Fire", "talent": "Master of Elements", "points": 1},
-        {"levels": "58", "tree": "Fire", "talent": "Critical Mass", "points": 1},
-        {"levels": "59", "tree": "Fire", "talent": "Combustion", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Pyroblast", "points": 1}
-      ],
-      "order_label": "own tree last"
+      "replaces": "opt-fire-leveling-leveling-st"
     },
     {
       "id": "frostfire-fingers-of-frost-raid",
@@ -928,11 +859,11 @@
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 1],
-          ["Improved Fireball", 5],
+          ["Accelerant", 5],
           ["Incineration", 3],
           ["Flame Throwing", 1],
           ["Ignite", 5],
+          ["Improved Fire Blast", 1],
           ["Pyroblast", 1],
           ["Heating Up", 1],
           ["Improved Scorch", 3],
@@ -941,9 +872,9 @@
           ["Fire Power", 3]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
           ["Improved Frostbolt", 1],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
@@ -961,7 +892,7 @@
         {"talent": "Master of Elements", "why": "Mana back from crits; the build has no Arcane mana talents."}
       ],
       "flex": [],
-      "notes": ["Added 2026-10-06 from the user's link; the open talent search of the same day found 0/34/17 at 684 DPS in the Frostfire rotation and missed this build (698): recorded in raidsim/known-positives.json so later searches start from it.", "Alone on a training dummy (own buffs only) it is 2% behind the 0/34/17 build; in a full raid 2% ahead. Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Fire/Frost: its full-raid winner is +0.07% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Fire Power 4 -> 3 (rank cap); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Arctic Reach (tier gating for Fingers of Frost) (refill: the fire-raid model, raid-dps)."],
+      "notes": ["Added 2026-10-06 from the user's link; the open talent search of the same day found 0/34/17 at 684 DPS in the Frostfire rotation and missed this build (698): recorded in raidsim/known-positives.json so later searches start from it.", "Alone on a training dummy (own buffs only) it is 2% behind the 0/34/17 build; in a full raid 2% ahead. Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Fire/Frost: its full-raid winner is +0.07% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Fire Power 4 -> 3 (rank cap); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps).", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Arctic Reach (tier gating for Fingers of Frost) (refill: the fire-raid model, raid-dps).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/29/22 -> 0/29/22; Improved Fireball -> Accelerant (renamed); Elemental Precision -> Precision (renamed) (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?"],
       "sources": ["https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-TUV4WaVbdeflmqrswzh-6"]
     },
@@ -974,30 +905,31 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-leveling` and profile `leveling-st`: score +68.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2]
+          ["Arcane Resilience", 2],
+          ["Wand Specialization", 2]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
-          ["Improved Fireball", 3],
+          ["Accelerant", 5],
+          ["Flame Throwing", 2],
           ["Ignite", 5],
           ["Impact", 3],
-          ["Flame Throwing", 2],
           ["Burning Soul", 3],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
           ["Heating Up", 1],
-          ["Improved Scorch", 3],
-          ["Critical Mass", 5],
+          ["Improved Scorch", 1],
           ["Blast Wave", 1],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
-          ["Permafrost", 3],
+          ["Precision", 3],
           ["Frostbite", 3],
-          ["Ice Lance", 1],
+          ["Permafrost", 3],
           ["Frost Channeling", 3],
+          ["Ice Lance", 1],
           ["Ice Block", 1]
         ]
       },
@@ -1012,39 +944,9 @@
         {"talent": "Elemental Precision", "why": "Removing it costs 1.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-leveling-leveling-st.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-leveling-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 2/33/16 -> 4/31/16; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Accelerant (tier gating for Flame Throwing); +1 Accelerant (tier gating for Flame Throwing); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Improved Scorch (over 51); -1 Improved Scorch (over 51); -1 Missile Barrage (over 51); -1 Missile Barrage (over 51); -1 Improved Channeling (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10-11", "tree": "Fire", "talent": "Improved Fire Blast", "points": 2},
-        {"levels": "12-14", "tree": "Fire", "talent": "Improved Fireball", "points": 3},
-        {"levels": "15-18", "tree": "Fire", "talent": "Ignite", "points": 4},
-        {"levels": "19-21", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
-        {"levels": "22-23", "tree": "Frost", "talent": "Frost Warding", "points": 2},
-        {"levels": "24-26", "tree": "Frost", "talent": "Permafrost", "points": 3},
-        {"levels": "27-28", "tree": "Frost", "talent": "Frostbite", "points": 2},
-        {"levels": "29", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "30", "tree": "Fire", "talent": "Ignite", "points": 1},
-        {"levels": "31-33", "tree": "Fire", "talent": "Burning Soul", "points": 3},
-        {"levels": "34", "tree": "Fire", "talent": "Impact", "points": 1},
-        {"levels": "35", "tree": "Fire", "talent": "Pyroblast", "points": 1},
-        {"levels": "36", "tree": "Fire", "talent": "Heating Up", "points": 1},
-        {"levels": "37", "tree": "Arcane", "talent": "Missile Barrage", "points": 1},
-        {"levels": "38-39", "tree": "Fire", "talent": "Impact", "points": 2},
-        {"levels": "40-41", "tree": "Fire", "talent": "Flame Throwing", "points": 2},
-        {"levels": "42", "tree": "Fire", "talent": "Blast Wave", "points": 1},
-        {"levels": "43-44", "tree": "Fire", "talent": "Critical Mass", "points": 2},
-        {"levels": "45-46", "tree": "Fire", "talent": "Improved Scorch", "points": 2},
-        {"levels": "47-48", "tree": "Fire", "talent": "Fire Power", "points": 2},
-        {"levels": "49-51", "tree": "Fire", "talent": "Critical Mass", "points": 3},
-        {"levels": "52", "tree": "Fire", "talent": "Combustion", "points": 1},
-        {"levels": "53", "tree": "Fire", "talent": "Fire Power", "points": 1},
-        {"levels": "54", "tree": "Arcane", "talent": "Missile Barrage", "points": 1},
-        {"levels": "55", "tree": "Frost", "talent": "Frostbite", "points": 1},
-        {"levels": "56-58", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "59", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Improved Scorch", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
       "id": "opt-frost-leveling-leveling-st",
@@ -1055,16 +957,16 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-leveling` and profile `leveling-st`: score +57.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
           ["Wand Specialization", 2],
-          ["Arcane Focus", 1],
           ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 2],
-          ["Arcane Resilience", 1],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
-          ["Arcane Wrath", 1],
           ["Arcane Meditation", 3],
+          ["Arcane Wrath", 1],
           ["Presence of Mind", 1]
         ],
         "Fire": [
@@ -1072,14 +974,14 @@
         ],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
+          ["Precision", 2],
           ["Frostbite", 3],
           ["Ice Shards", 5],
-          ["Ice Lance", 1],
           ["Frost Channeling", 3],
-          ["Shatter", 3],
-          ["Ice Block", 1],
+          ["Ice Lance", 1],
           ["Arctic Reach", 1],
+          ["Ice Block", 1],
+          ["Shatter", 3],
           ["Fingers of Frost", 2]
         ]
       },
@@ -1094,36 +996,9 @@
         {"talent": "Improved Frostbolt", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-leveling-leveling-st.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-leveling-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/3/27 -> 22/3/26; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); -1 Precision (over 51); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "26-27", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "28", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "29", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-35", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "36-37", "tree": "Arcane", "talent": "Missile Barrage", "points": 2},
-        {"levels": "38-39", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "40", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "41-45", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
-        {"levels": "46", "tree": "Arcane", "talent": "Arcane Blast", "points": 1},
-        {"levels": "47-48", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
-        {"levels": "49-50", "tree": "Arcane", "talent": "Magic Absorption", "points": 2},
-        {"levels": "51", "tree": "Arcane", "talent": "Arcane Wrath", "points": 1},
-        {"levels": "52-54", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "55", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
-        {"levels": "56", "tree": "Arcane", "talent": "Presence of Mind", "points": 1},
-        {"levels": "57-59", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "60", "tree": "Frost", "talent": "Arctic Reach", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
       "id": "opt-frost-raid-raid-dps-extwc",
@@ -1134,16 +1009,17 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps-extwc`: score +87.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
-          ["Arcane Focus", 5],
+          ["Arcane Resilience", 3],
+          ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
           ["Arcane Impact", 3],
-          ["Arcane Wrath", 1],
           ["Arcane Meditation", 1],
-          ["Presence of Mind", 1],
+          ["Arcane Wrath", 1],
           ["Arcane Mind", 4],
+          ["Presence of Mind", 1],
           ["Arcane Instability", 3]
         ],
         "Fire": [
@@ -1151,10 +1027,10 @@
         ],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
+          ["Precision", 3],
           ["Ice Shards", 5],
-          ["Ice Lance", 1],
           ["Frost Channeling", 3],
+          ["Ice Lance", 1],
           ["Shatter", 3],
           ["Fingers of Frost", 2]
         ]
@@ -1170,7 +1046,7 @@
         {"talent": "Arcane Instability", "why": "Removing it costs 9.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps-extwc.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps-extwc.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 28/1/22 -> 28/1/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration) (refill: the frost-raid model, raid-dps-extwc)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1183,17 +1059,18 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-aoe` and profile `leveling-aoe`: score +72.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 1],
-          ["Missile Barrage", 2],
-          ["Wand Specialization", 2]
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 1],
+          ["Wand Specialization", 2],
+          ["Missile Barrage", 2]
         ],
         "Fire": [
           ["Incineration", 3]
         ],
         "Frost": [
-          ["Elemental Precision", 3],
           ["Frost Warding", 2],
-          ["Improved Frostbolt", 5],
+          ["Improved Frostbolt", 4],
+          ["Precision", 2],
           ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
           ["Permafrost", 3],
@@ -1221,40 +1098,9 @@
         {"talent": "Ice Shards", "why": "Removing it costs 1.8 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r8 on 2026-10-22: an earlier optimizer round beat the last export in the fight lab (31.8s vs 33.9s per kill, level-weighted).", "Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md"],
+      "notes": ["Allocation and order taken from cand-aoe-r8 on 2026-10-22: an earlier optimizer round beat the last export in the fight lab (31.8s vs 33.9s per kill, level-weighted).", "Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/3/43 -> 7/3/41; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Precision (over 51); -1 Improved Frostbolt (over 51); order dropped (order_repair.py) (refill: the frost-aoe model, leveling-aoe)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "11", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
-        {"levels": "12", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
-        {"levels": "13", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "14-15", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "16-18", "tree": "Frost", "talent": "Permafrost", "points": 3},
-        {"levels": "19", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
-        {"levels": "20-22", "tree": "Frost", "talent": "Improved Blizzard", "points": 3},
-        {"levels": "23", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "24", "tree": "Frost", "talent": "Frost Channeling", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "26-27", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "28", "tree": "Frost", "talent": "Arctic Reach", "points": 1},
-        {"levels": "29", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32", "tree": "Frost", "talent": "Arctic Reach", "points": 1},
-        {"levels": "33-35", "tree": "Frost", "talent": "Improved Cone of Cold", "points": 3},
-        {"levels": "36-38", "tree": "Frost", "talent": "Ice Shards", "points": 3},
-        {"levels": "39", "tree": "Frost", "talent": "Cold Snap", "points": 1},
-        {"levels": "40", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
-        {"levels": "41-42", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "43-44", "tree": "Arcane", "talent": "Missile Barrage", "points": 2},
-        {"levels": "45-47", "tree": "Frost", "talent": "Winter's Chill", "points": 3},
-        {"levels": "48-50", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
-        {"levels": "51-52", "tree": "Frost", "talent": "Frost Channeling", "points": 2},
-        {"levels": "53-55", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "56", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "57-58", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "59-60", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2}
-      ]
+      "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
       "id": "arcane-open-leveling",
@@ -1268,55 +1114,33 @@
       "summary": "The Arcane leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +31.0% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 4],
           ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
           ["Arcane Concentration", 5],
-          ["Arcane Impact", 3],
+          ["Arcane Subtlety", 1],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
+          ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
           ["Arcane Wrath", 1],
-          ["Presence of Mind", 1],
           ["Arcane Mind", 5],
+          ["Presence of Mind", 1],
           ["Arcane Instability", 3],
           ["Arcane Power", 1]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
+          ["Accelerant", 4],
           ["Incineration", 3],
-          ["Improved Fireball", 4],
           ["Flame Throwing", 2],
           ["Impact", 3],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
           ["Master of Elements", 2]
         ],
-        "Frost": []
+        "Frost": [
+          ["Improved Frostbolt", 1],
+          ["Precision", 2]
+        ]
       },
-      "order": [
-        {"levels": "10-11", "tree": "Arcane", "talent": "Missile Barrage", "points": 2},
-        {"levels": "12-14", "tree": "Arcane", "talent": "Arcane Focus", "points": 3},
-        {"levels": "15-19", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
-        {"levels": "20", "tree": "Arcane", "talent": "Arcane Blast", "points": 1},
-        {"levels": "21", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "22-24", "tree": "Arcane", "talent": "Improved Channeling", "points": 3},
-        {"levels": "25", "tree": "Arcane", "talent": "Arcane Wrath", "points": 1},
-        {"levels": "26-28", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "29", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
-        {"levels": "30", "tree": "Arcane", "talent": "Presence of Mind", "points": 1},
-        {"levels": "31", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
-        {"levels": "32-34", "tree": "Arcane", "talent": "Arcane Impact", "points": 3},
-        {"levels": "35-37", "tree": "Arcane", "talent": "Arcane Instability", "points": 3},
-        {"levels": "38-39", "tree": "Arcane", "talent": "Arcane Mind", "points": 2},
-        {"levels": "40", "tree": "Arcane", "talent": "Arcane Power", "points": 1},
-        {"levels": "41-43", "tree": "Arcane", "talent": "Arcane Mind", "points": 3},
-        {"levels": "44-45", "tree": "Fire", "talent": "Improved Fire Blast", "points": 2},
-        {"levels": "46-48", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "49-52", "tree": "Fire", "talent": "Improved Fireball", "points": 4},
-        {"levels": "53-54", "tree": "Fire", "talent": "Flame Throwing", "points": 2},
-        {"levels": "55-57", "tree": "Fire", "talent": "Impact", "points": 3},
-        {"levels": "58", "tree": "Fire", "talent": "Pyroblast", "points": 1},
-        {"levels": "59-60", "tree": "Fire", "talent": "Master of Elements", "points": 2}
-      ],
       "core": [
         {"talent": "Missile Barrage", "why": "+4.3 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Arcane Blast", "why": "+4.1 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1328,7 +1152,7 @@
         {"talent": "Arcane Meditation", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.45; arcane-leveling 42.52. The search simulated 55,377 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.45; arcane-leveling 42.52. The search simulated 55,377 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 34/17/0 -> 31/17/3; Arcane Focus 4 gone; Improved Fireball -> Accelerant (renamed); +1 Arcane Subtlety (tier gating for Arcane Power); refill +2 Precision, +1 Improved Frostbolt; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["An open-search Arcane leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/0452005003100311531-2340230010002--7"]
     },
@@ -1345,25 +1169,25 @@
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 2],
+          ["Accelerant", 3],
           ["Incineration", 3],
-          ["Improved Fireball", 1],
-          ["Ignite", 5],
           ["Flame Throwing", 1],
+          ["Ignite", 5],
           ["Burning Soul", 3],
+          ["Improved Fire Blast", 2],
           ["Improved Flamestrike", 1],
           ["Pyroblast", 1],
-          ["Improved Scorch", 1],
           ["Heating Up", 1],
+          ["Improved Scorch", 1],
           ["Master of Elements", 3],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
           ["Frost Warding", 1],
           ["Improved Frostbolt", 2],
-          ["Elemental Precision", 3],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
           ["Frost Channeling", 3],
@@ -1371,34 +1195,6 @@
           ["Shatter", 3]
         ]
       },
-      "order": [
-        {"levels": "10-12", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
-        {"levels": "13", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
-        {"levels": "15-16", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "17-19", "tree": "Frost", "talent": "Ice Shards", "points": 3},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "25-27", "tree": "Frost", "talent": "Shatter", "points": 3},
-        {"levels": "28", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "29", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
-        {"levels": "30-31", "tree": "Fire", "talent": "Improved Fire Blast", "points": 2},
-        {"levels": "32", "tree": "Fire", "talent": "Improved Fireball", "points": 1},
-        {"levels": "33-34", "tree": "Fire", "talent": "Incineration", "points": 2},
-        {"levels": "35", "tree": "Fire", "talent": "Flame Throwing", "points": 1},
-        {"levels": "36-40", "tree": "Fire", "talent": "Ignite", "points": 5},
-        {"levels": "41-43", "tree": "Fire", "talent": "Burning Soul", "points": 3},
-        {"levels": "44", "tree": "Fire", "talent": "Pyroblast", "points": 1},
-        {"levels": "45", "tree": "Fire", "talent": "Heating Up", "points": 1},
-        {"levels": "46", "tree": "Fire", "talent": "Improved Scorch", "points": 1},
-        {"levels": "47-49", "tree": "Fire", "talent": "Master of Elements", "points": 3},
-        {"levels": "50-54", "tree": "Fire", "talent": "Critical Mass", "points": 5},
-        {"levels": "55-57", "tree": "Fire", "talent": "Fire Power", "points": 3},
-        {"levels": "58", "tree": "Fire", "talent": "Incineration", "points": 1},
-        {"levels": "59", "tree": "Fire", "talent": "Improved Flamestrike", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Combustion", "points": 1}
-      ],
       "core": [
         {"talent": "Ice Lance", "why": "+4.3 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Shatter", "why": "+2.8 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1410,7 +1206,7 @@
         {"talent": "Combustion", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.21; fire-leveling 36.06, opt-fire-leveling-leveling-st 39.05. The search simulated 42,634 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.21; fire-leveling 36.06, opt-fire-leveling-leveling-st 39.05. The search simulated 42,634 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/31/20 -> 0/31/20; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Accelerant (tier gating for Flame Throwing); +1 Accelerant (tier gating for Combustion); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st)."],
       "open_questions": ["An open-search Fire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/-23151031110135031-1235020301003-7"]
     },
@@ -1426,13 +1222,13 @@
       "summary": "The Frost leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 2],
+          ["Arcane Resilience", 2],
           ["Improved Channeling", 1],
+          ["Wand Specialization", 2],
+          ["Arcane Concentration", 5],
           ["Arcane Subtlety", 1],
           ["Magic Absorption", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Resilience", 2],
+          ["Missile Barrage", 2],
           ["Arcane Meditation", 3]
         ],
         "Fire": [
@@ -1441,9 +1237,9 @@
         "Frost": [
           ["Frost Warding", 1],
           ["Improved Frostbolt", 3],
-          ["Elemental Precision", 2],
-          ["Ice Shards", 5],
+          ["Precision", 2],
           ["Frostbite", 3],
+          ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
           ["Permafrost", 2],
           ["Frost Channeling", 3],
@@ -1454,33 +1250,6 @@
           ["Winter's Chill", 1]
         ]
       },
-      "order": [
-        {"levels": "10-12", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
-        {"levels": "13-14", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "26-27", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "28-29", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-33", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "34-35", "tree": "Arcane", "talent": "Arcane Focus", "points": 2},
-        {"levels": "36", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
-        {"levels": "37-41", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
-        {"levels": "42", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 1},
-        {"levels": "43-44", "tree": "Arcane", "talent": "Magic Absorption", "points": 2},
-        {"levels": "45-46", "tree": "Arcane", "talent": "Arcane Resilience", "points": 2},
-        {"levels": "47-49", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "50-52", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "53-54", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
-        {"levels": "55-56", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "57", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "58-59", "tree": "Frost", "talent": "Permafrost", "points": 2},
-        {"levels": "60", "tree": "Frost", "talent": "Winter's Chill", "points": 1}
-      ],
       "core": [
         {"talent": "Ice Lance", "why": "+5.6 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Shatter", "why": "+4.2 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1492,7 +1261,7 @@
         {"talent": "Arcane Concentration", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+4.0% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.24; leveling-frost 31.44, opt-frost-aoe-leveling-aoe 34.85. The search simulated 48,237 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["+4.0% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.24; leveling-frost 31.44, opt-frost-aoe-leveling-aoe 34.85. The search simulated 48,237 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 18/3/30 -> 18/3/30; Arcane Focus 2 gone; Elemental Precision -> Precision (renamed); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Missile Barrage (tier gating for Arcane Meditation); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["An open-search Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/22101252000003-03-13253223012030021-7"],
       "replaces": "leveling-frost"
@@ -1509,13 +1278,14 @@
       "summary": "The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +4.3% faster per kill than opt-frost-leveling-leveling-st, the fastest of our leveling builds in that race.",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 2],
+          ["Arcane Resilience", 1],
           ["Improved Channeling", 2],
-          ["Missile Barrage", 2],
+          ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
-          ["Arcane Impact", 1],
+          ["Arcane Subtlety", 1],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
+          ["Arcane Impact", 1],
           ["Arcane Meditation", 3]
         ],
         "Fire": [
@@ -1523,9 +1293,9 @@
         ],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 2],
-          ["Ice Shards", 5],
+          ["Precision", 2],
           ["Frostbite", 3],
+          ["Ice Shards", 5],
           ["Improved Frost Nova", 2],
           ["Permafrost", 3],
           ["Frost Channeling", 3],
@@ -1536,34 +1306,6 @@
           ["Winter's Chill", 1]
         ]
       },
-      "order": [
-        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "26-27", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "28-29", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-33", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "34", "tree": "Frost", "talent": "Arctic Reach", "points": 1},
-        {"levels": "35-36", "tree": "Arcane", "talent": "Missile Barrage", "points": 2},
-        {"levels": "37-38", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "39-41", "tree": "Frost", "talent": "Permafrost", "points": 3},
-        {"levels": "42", "tree": "Frost", "talent": "Winter's Chill", "points": 1},
-        {"levels": "43-44", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
-        {"levels": "45", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "46-50", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
-        {"levels": "51", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
-        {"levels": "52", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
-        {"levels": "53", "tree": "Arcane", "talent": "Arcane Impact", "points": 1},
-        {"levels": "54", "tree": "Arcane", "talent": "Arcane Blast", "points": 1},
-        {"levels": "55", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
-        {"levels": "56-58", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "59-60", "tree": "Fire", "talent": "Incineration", "points": 2}
-      ],
       "core": [
         {"talent": "Shatter", "why": "+3.7 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Lance", "why": "+2.9 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1575,7 +1317,7 @@
         {"talent": "Arcane Meditation", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.74; opt-frost-leveling-leveling-st 29.99. The search simulated 56,114 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.74; opt-frost-leveling-leveling-st 29.99. The search simulated 56,114 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 18/2/31 -> 18/2/31; Arcane Focus 2 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Subtlety (tier gating for Arcane Meditation); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st)."],
       "open_questions": ["An open-search Arcane-Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/22220050011003-02-05253233011030021-7"]
     },
@@ -1594,51 +1336,30 @@
           ["Wand Specialization", 1]
         ],
         "Fire": [
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fireball", 5],
           ["Ignite", 5],
           ["Impact", 1],
           ["Burning Soul", 1],
+          ["Pyroblast", 1],
+          ["Heating Up", 1],
           ["Improved Fire Ward", 2],
           ["Master of Elements", 3],
-          ["Critical Mass", 5]
+          ["Critical Mass", 3]
         ],
         "Frost": [
           ["Frost Warding", 2],
-          ["Elemental Precision", 3],
-          ["Ice Shards", 5],
+          ["Precision", 3],
           ["Frostbite", 3],
+          ["Ice Shards", 5],
           ["Frost Channeling", 3],
-          ["Improved Blizzard", 2],
           ["Ice Lance", 1],
+          ["Improved Blizzard", 2],
           ["Shatter", 3],
-          ["Improved Cone of Cold", 1],
-          ["Fingers of Frost", 2]
+          ["Fingers of Frost", 2],
+          ["Improved Cone of Cold", 1]
         ]
       },
-      "order": [
-        {"levels": "10-12", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
-        {"levels": "13-14", "tree": "Frost", "talent": "Frost Warding", "points": 2},
-        {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "25-27", "tree": "Frost", "talent": "Shatter", "points": 3},
-        {"levels": "28-29", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-33", "tree": "Frost", "talent": "Improved Blizzard", "points": 2},
-        {"levels": "34", "tree": "Arcane", "talent": "Wand Specialization", "points": 1},
-        {"levels": "35", "tree": "Frost", "talent": "Improved Cone of Cold", "points": 1},
-        {"levels": "36-40", "tree": "Fire", "talent": "Improved Fireball", "points": 5},
-        {"levels": "41-45", "tree": "Fire", "talent": "Ignite", "points": 5},
-        {"levels": "46", "tree": "Fire", "talent": "Burning Soul", "points": 1},
-        {"levels": "47", "tree": "Fire", "talent": "Impact", "points": 1},
-        {"levels": "48-50", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "51-53", "tree": "Fire", "talent": "Master of Elements", "points": 3},
-        {"levels": "54-55", "tree": "Fire", "talent": "Improved Fire Ward", "points": 2},
-        {"levels": "56-60", "tree": "Fire", "talent": "Critical Mass", "points": 5}
-      ],
       "core": [
         {"talent": "Shatter", "why": "+7.3 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Lance", "why": "+7.2 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1650,7 +1371,7 @@
         {"talent": "Improved Fireball", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.41; . The search simulated 76,952 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.41; . The search simulated 76,952 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 1/25/25 -> 1/25/25; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); refill +1 Pyroblast, +1 Heating Up; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st)."],
       "open_questions": ["An open-search Frostfire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-7"]
     },
@@ -1663,26 +1384,26 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +70.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
-          ["Arcane Focus", 5],
           ["Improved Channeling", 5],
+          ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 2],
-          ["Arcane Concentration", 1],
+          ["Missile Barrage", 2],
+          ["Arcane Blast", 1],
           ["Arcane Impact", 3],
-          ["Presence of Mind", 1],
           ["Arcane Mind", 5],
+          ["Presence of Mind", 1],
           ["Arcane Instability", 3]
         ],
         "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
+          ["Precision", 3],
           ["Ice Shards", 5],
-          ["Ice Lance", 1],
           ["Frost Channeling", 2],
-          ["Shatter", 3],
+          ["Ice Lance", 1],
           ["Ice Block", 1],
+          ["Shatter", 3],
           ["Fingers of Frost", 2]
         ]
       },
@@ -1697,7 +1418,7 @@
         {"talent": "Ice Lance", "why": "Removing it costs 8.6 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 29/0/22 -> 29/0/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Blast (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1710,10 +1431,11 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +73.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
-          ["Arcane Focus", 5],
-          ["Arcane Subtlety", 2],
+          ["Arcane Resilience", 3],
+          ["Wand Specialization", 2],
           ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
           ["Arcane Mind", 5],
@@ -1723,7 +1445,7 @@
         "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
@@ -1742,7 +1464,7 @@
         {"talent": "Ice Lance", "why": "Removing it costs 8.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 29/0/22 -> 29/0/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1755,28 +1477,29 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +280.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
           ["Improved Channeling", 5],
           ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 1],
+          ["Missile Barrage", 2],
           ["Arcane Meditation", 3]
         ],
         "Fire": [
-          ["Improved Fireball", 5],
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fire Blast", 1],
           ["Ignite", 5],
+          ["Burning Soul", 1],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
+          ["Heating Up", 1],
           ["Improved Scorch", 3],
           ["Master of Elements", 3],
-          ["Heating Up", 1],
-          ["Critical Mass", 5],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 2]
+          ["Precision", 2]
         ]
       },
       "core": [
@@ -1790,7 +1513,7 @@
         {"talent": "Fire Power", "why": "Removing it costs 26.6 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 18/31/2 -> 18/31/2; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Improved Fire Blast (tier gating for Combustion); +1 Burning Soul (tier gating for Combustion) (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1803,28 +1526,29 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +205.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Missile Barrage", 2],
           ["Improved Channeling", 5],
-          ["Arcane Subtlety", 2],
           ["Arcane Concentration", 5],
+          ["Arcane Subtlety", 2],
           ["Magic Absorption", 1],
+          ["Missile Barrage", 2],
           ["Arcane Meditation", 2]
         ],
         "Fire": [
-          ["Improved Fireball", 5],
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fire Blast", 2],
           ["Ignite", 5],
+          ["Burning Soul", 1],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
-          ["Improved Scorch", 3],
           ["Heating Up", 1],
-          ["Master of Elements", 2],
-          ["Critical Mass", 5],
+          ["Improved Scorch", 3],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3]
+          ["Precision", 3]
         ]
       },
       "core": [
@@ -1838,7 +1562,7 @@
         {"talent": "Combustion", "why": "Removing it costs 11.2 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md"],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 17/31/3 -> 17/31/3; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Master of Elements (tier gating for Combustion); +1 Burning Soul (tier gating for Combustion) (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1854,27 +1578,27 @@
       "summary": "The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over arcane-frost-open-raid, the best of our builds in that rotation.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
           ["Improved Channeling", 5],
-          ["Missile Barrage", 2],
+          ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
           ["Magic Absorption", 2],
-          ["Arcane Impact", 3],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
-          ["Presence of Mind", 1],
+          ["Arcane Impact", 3],
           ["Arcane Mind", 5],
+          ["Presence of Mind", 1],
           ["Arcane Instability", 3]
         ],
         "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
-          ["Ice Shards", 5],
+          ["Precision", 3],
           ["Frostbite", 1],
+          ["Ice Shards", 5],
           ["Ice Lance", 1],
+          ["Arctic Reach", 2],
           ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Arctic Reach", 2]
+          ["Fingers of Frost", 2]
         ]
       },
       "core": [
@@ -1888,7 +1612,7 @@
         {"talent": "Elemental Precision", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+2.3% over the best hand draft of the spec, frost-arcane-power-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 29/0/22 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.1 DPS; arcane-frost-open-raid 687.8, opt-frost-raid-raid-dps-extwc 680.3, frost-arcane-power-raid 676.5, opt-frost-raid-raid-dps 662.6, frost-fingers-of-frost-raid 546.6, frost-ml-raid 544.9, frost-winters-chill-raid 500.9 in the same fights; 4,517 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -41.2%, arcane-dps -13.5%, frostfire-raid -40.2%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Magic Absorption, Arcane Resilience, Arcane Shielding, Improved Counterspell, Improved Frost Nova.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Concentration -> Improved Channeling (interrupt); Arcane Resilience -> Improved Channeling (interrupt); Arcane Shielding -> Improved Channeling (interrupt); Improved Counterspell -> Improved Channeling (interrupt); Improved Counterspell -> Magic Absorption (mana); Frostbite -> Arctic Reach (range); Improved Frost Nova -> Arctic Reach (range). Net +0.07% on a third seed."],
+      "notes": ["+2.3% over the best hand draft of the spec, frost-arcane-power-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 29/0/22 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.1 DPS; arcane-frost-open-raid 687.8, opt-frost-raid-raid-dps-extwc 680.3, frost-arcane-power-raid 676.5, opt-frost-raid-raid-dps 662.6, frost-fingers-of-frost-raid 546.6, frost-ml-raid 544.9, frost-winters-chill-raid 500.9 in the same fights; 4,517 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -41.2%, arcane-dps -13.5%, frostfire-raid -40.2%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Magic Absorption, Arcane Resilience, Arcane Shielding, Improved Counterspell, Improved Frost Nova.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Concentration -> Improved Channeling (interrupt); Arcane Resilience -> Improved Channeling (interrupt); Arcane Shielding -> Improved Channeling (interrupt); Improved Counterspell -> Improved Channeling (interrupt); Improved Counterspell -> Magic Absorption (mana); Frostbite -> Arctic Reach (range); Improved Frost Nova -> Arctic Reach (range). Net +0.07% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 29/0/22 -> 29/0/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/051221110311200153--0535210001003002-7"],
       "replaces": "frost-arcane-power-raid"
@@ -1905,28 +1629,31 @@
       "summary": "The Fire raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +2.3% over fire-raid, the best of our builds in that rotation.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
-          ["Missile Barrage", 2],
-          ["Arcane Subtlety", 2],
+          ["Arcane Resilience", 3],
+          ["Improved Channeling", 1],
+          ["Wand Specialization", 1],
           ["Arcane Concentration", 5],
-          ["Arcane Meditation", 2],
-          ["Improved Channeling", 1]
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 1],
+          ["Missile Barrage", 2],
+          ["Arcane Meditation", 2]
         ],
         "Fire": [
-          ["Improved Fire Blast", 2],
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fireball", 5],
           ["Ignite", 5],
+          ["Burning Soul", 1],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
-          ["Improved Scorch", 3],
           ["Heating Up", 1],
-          ["Master of Elements", 2],
-          ["Critical Mass", 5],
+          ["Improved Scorch", 3],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
         ],
         "Frost": [
-          ["Elemental Precision", 3]
+          ["Precision", 3]
         ]
       },
       "core": [
@@ -1940,7 +1667,7 @@
         {"talent": "Fire Power", "why": "61 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+2.3% over the best hand draft of the spec, fire-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fire-raid, full raid): 17/31/3 (Fire) at 849.9 DPS; fire-raid 830.4, opt-fire-raid-raid-dps 815.6 in the same fights; 4,304 builds simulated, 2 independent runs reached the top.", "The fire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -49.0%, arcane-dps -26.6%, frostfire-raid -12.0%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Impact -> Improved Channeling (interrupt). Net -0.07% on a third seed."],
+      "notes": ["+2.3% over the best hand draft of the spec, fire-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fire-raid, full raid): 17/31/3 (Fire) at 849.9 DPS; fire-raid 830.4, opt-fire-raid-raid-dps 815.6 in the same fights; 4,304 builds simulated, 2 independent runs reached the top.", "The fire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -49.0%, arcane-dps -26.6%, frostfire-raid -12.0%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Impact -> Improved Channeling (interrupt). Net -0.07% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 17/31/3 -> 17/31/3; Arcane Focus 5 gone; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Magic Absorption (tier gating for Arcane Meditation); +1 Master of Elements (tier gating for Combustion); +1 Burning Soul (tier gating for Combustion) (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["An open-search Fire build: check it against the community's Fire builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05022050010002-23550000130125031-003-7"],
       "replaces": "fire-raid"
@@ -1957,27 +1684,28 @@
       "summary": "The Arcane raid build the open talent search found on 2026-10-24: every legal 51-point build with no tree rule, searched in the community simulator's arcane-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +6.9% over arcane-blast-raid, the best of our builds in that rotation.",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
-          ["Missile Barrage", 2],
-          ["Arcane Subtlety", 2],
+          ["Arcane Resilience", 2],
+          ["Improved Channeling", 3],
           ["Arcane Concentration", 5],
-          ["Arcane Impact", 3],
+          ["Arcane Subtlety", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
+          ["Arcane Impact", 3],
           ["Arcane Meditation", 3],
           ["Arcane Wrath", 1],
-          ["Presence of Mind", 1],
           ["Arcane Mind", 5],
+          ["Presence of Mind", 1],
           ["Arcane Instability", 3],
-          ["Arcane Power", 1],
-          ["Improved Channeling", 3]
+          ["Arcane Power", 1]
         ],
         "Fire": [
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fireball", 5],
           ["Ignite", 5]
         ],
         "Frost": [
-          ["Elemental Precision", 3]
+          ["Improved Frostbolt", 3],
+          ["Precision", 3]
         ]
       },
       "core": [
@@ -1991,7 +1719,7 @@
         {"talent": "Arcane Power", "why": "19 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+6.9% over the best hand draft of the spec, arcane-blast-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (arcane-dps, full raid): 32/16/3 (Arcane) at 717.4 DPS; arcane-blast-raid 671.4 in the same fights; 4,438 builds simulated, 2 independent runs reached the top.", "The arcane-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -10.0%, fire-raid -54.7%, frostfire-raid -53.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Pyroblast.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Pyroblast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Master of Elements -> Improved Channeling (interrupt); Improved Fire Blast -> Improved Channeling (interrupt); Pyroblast -> Improved Channeling (interrupt). Net -0.11% on a third seed."],
+      "notes": ["+6.9% over the best hand draft of the spec, arcane-blast-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (arcane-dps, full raid): 32/16/3 (Arcane) at 717.4 DPS; arcane-blast-raid 671.4 in the same fights; 4,438 builds simulated, 2 independent runs reached the top.", "The arcane-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): frost-raid -10.0%, fire-raid -54.7%, frostfire-raid -53.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Pyroblast.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-24 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Pyroblast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Master of Elements -> Improved Channeling (interrupt); Improved Fire Blast -> Improved Channeling (interrupt); Pyroblast -> Improved Channeling (interrupt). Net -0.11% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 35/13/3 -> 32/13/6; Arcane Focus 5 gone; Improved Fireball -> Accelerant (renamed); Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); refill +3 Improved Frostbolt (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["An open-search Arcane build: check it against the community's Arcane builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/0502205003100311531-1355000010001-003-7"],
       "replaces": "arcane-blast-raid"
@@ -2008,33 +1736,33 @@
       "summary": "The Frost build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frost-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
       "allocation": {
         "Arcane": [
-          ["Arcane Focus", 5],
           ["Improved Channeling", 5],
-          ["Missile Barrage", 1],
+          ["Arcane Concentration", 5],
           ["Arcane Subtlety", 2],
-          ["Arcane Concentration", 3],
-          ["Arcane Impact", 3],
+          ["Magic Absorption", 2],
+          ["Missile Barrage", 2],
           ["Arcane Blast", 1],
+          ["Arcane Impact", 3],
           ["Arcane Mind", 1]
         ],
         "Fire": [],
         "Frost": [
+          ["Frost Warding", 2],
           ["Improved Frostbolt", 5],
-          ["Elemental Precision", 3],
-          ["Ice Shards", 5],
+          ["Precision", 3],
           ["Frostbite", 3],
+          ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
+          ["Arctic Reach", 2],
           ["Shatter", 3],
           ["Cold Snap", 1],
-          ["Fingers of Frost", 2],
-          ["Arctic Reach", 2],
-          ["Frost Warding", 2]
+          ["Fingers of Frost", 2]
         ]
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft frost-winters-chill-raid in a full raid, same gear and fights (100,000, one seed): +18.7% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frost-winters-chill-raid: Improved Blizzard → Winter's Chill (the same DPS as the search winner 21/0/30 on one seed, 30,000 fights).", "Search result (full raid): 21/0/30 at 593.6 ± 0.10 DPS over 100,000 fights; runner-up 21/0/30 (+0.16%; the winner takes Frostbite 3; the runner-up Frost Warding 1, Frostbite 2); 2,127 builds simulated; certificate: 1 confirmed move first, then none of its 261 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 21/0/30 at 579.4 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 21/0/30 at 514.9 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Winter's Chill -> Frost Channeling (threat); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Frost Warding (survival); Winter's Chill -> Frost Warding (survival). Net -0.02% on a third seed."],
+      "notes": ["Against the best hand draft frost-winters-chill-raid in a full raid, same gear and fights (100,000, one seed): +18.7% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frost-winters-chill-raid: Improved Blizzard → Winter's Chill (the same DPS as the search winner 21/0/30 on one seed, 30,000 fights).", "Search result (full raid): 21/0/30 at 593.6 ± 0.10 DPS over 100,000 fights; runner-up 21/0/30 (+0.16%; the winner takes Frostbite 3; the runner-up Frost Warding 1, Frostbite 2); 2,127 builds simulated; certificate: 1 confirmed move first, then none of its 261 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 21/0/30 at 579.4 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 21/0/30 at 514.9 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Arcane Concentration -> Improved Channeling (interrupt); Winter's Chill -> Frost Channeling (threat); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Arctic Reach (range); Winter's Chill -> Frost Warding (survival); Winter's Chill -> Frost Warding (survival). Net -0.02% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 21/0/30; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Missile Barrage (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Arcane Concentration (tier gating for Arcane Mind); +1 Magic Absorption (tier gating for Arcane Mind); +1 Magic Absorption (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps)."],
       "open_questions": ["A machine-searched Frost build: check it against the community's Frost builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "frost-winters-chill-raid"
@@ -2052,21 +1780,21 @@
       "allocation": {
         "Arcane": [],
         "Fire": [
-          ["Improved Fire Blast", 1],
+          ["Accelerant", 5],
           ["Incineration", 3],
-          ["Improved Fireball", 5],
           ["Ignite", 5],
+          ["Improved Fire Blast", 2],
           ["Pyroblast", 1],
-          ["Improved Scorch", 3],
           ["Heating Up", 1],
-          ["Master of Elements", 2],
-          ["Critical Mass", 5],
+          ["Improved Scorch", 3],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
           ["Fire Power", 3]
         ],
         "Frost": [
           ["Frost Warding", 2],
           ["Improved Frostbolt", 1],
-          ["Elemental Precision", 3],
+          ["Precision", 3],
           ["Ice Shards", 5],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
@@ -2078,7 +1806,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft frostfire-fingers-of-frost-raid in a full raid, same gear and fights (100,000, one seed): +6.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frostfire-fingers-of-frost-raid: Permafrost → Frost Warding, Improved Blizzard → Arctic Reach, Improved Blizzard → Ice Block (the same DPS as the search winner 0/29/22 on one seed, 30,000 fights).", "Search result (full raid): 0/29/22 at 793.4 ± 0.17 DPS over 100,000 fights; runner-up 0/29/22 (+0.15%; the winner takes Permafrost 1; the runner-up Frostbite 1); 2,324 builds simulated; certificate: 1 confirmed move first, then none of its 347 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 0/29/22 at 789.2 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 10/28/13 at 497.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Fire Blast -> Master of Elements (+0.7% DPS). Net +0.65% on a third seed."],
+      "notes": ["Against the best hand draft frostfire-fingers-of-frost-raid in a full raid, same gear and fights (100,000, one seed): +6.4% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow frostfire-fingers-of-frost-raid: Permafrost → Frost Warding, Improved Blizzard → Arctic Reach, Improved Blizzard → Ice Block (the same DPS as the search winner 0/29/22 on one seed, 30,000 fights).", "Search result (full raid): 0/29/22 at 793.4 ± 0.17 DPS over 100,000 fights; runner-up 0/29/22 (+0.15%; the winner takes Permafrost 1; the runner-up Frostbite 1); 2,324 builds simulated; certificate: 1 confirmed move first, then none of its 347 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 0/29/22 at 789.2 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 10/28/13 at 497.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Fire Blast -> Master of Elements (+0.7% DPS). Net +0.65% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/29/22 -> 0/29/22; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Master of Elements (tier gating for Fire Power); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps)."],
       "open_questions": ["A machine-searched Frostfire build: check it against the community's Frostfire builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "frostfire-fingers-of-frost-raid"

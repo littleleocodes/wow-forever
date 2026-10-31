@@ -1,6 +1,6 @@
-# Shaman — WoW: Forever talent trees (beta client 1.60.1.70425)
+# Shaman — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -42,7 +42,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Trial by Fire** | 2 | — | **NEW** | Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec. | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec. |
-| **Eye of the Storm** | 3 | — | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%. | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 70%. |
+| **Eye of the Storm** | 3 | — | changed | Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 23% chance to not lose casting time when you take damage. | Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 70% chance to not lose casting time when you take damage. |
 | **Earthbound** | 1 | — | **NEW** | Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast. | — |
 
 ### Tier 5 — requires 20 points in Elemental
@@ -147,7 +147,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Ancestral Healing** | 3 | — | moved | Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells. | Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells. |
-| **Healing Focus** | 3 | — | changed | Gives you a 23% chance to avoid interruption caused by damage while casting any healing spell. | Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell. |
+| **Healing Focus** | 3 | — | changed | Gives your healing spells a 23% chance to not lose casting time when you take damage. | Gives your healing spells a 70% chance to not lose casting time when you take damage. |
 | **Water Shield** | 1 | — | **NEW** | The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time. | — |
 
 ### Tier 4 — requires 15 points in Restoration
@@ -191,22 +191,22 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Concussion** (tooltip changed)
   - Classic: Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 1%.
   - Forever: Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 1%.
-- **Elemental Devastation** (tooltip changed, was Elemental row 4, col 4, moved in build 1.60.1.70425: was row 2, col 4, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
+- **Elemental Devastation** (tooltip changed, was Elemental row 4, col 4, moved in build 1.60.1.70707: was row 2, col 4, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.
   - Forever: Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.
 - **Reverberation** (tooltip changed, was Elemental row 3, col 2)
   - Classic: Reduces the cooldown of your Shock spells by 0 sec.
   - Forever: Reduces the cooldown of your Shock spells by 0.2 sec.
-- **Call of Flame** (tooltip changed, moved in build 1.60.1.70425: was row 2, col 3, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
+- **Call of Flame** (tooltip changed, moved in build 1.60.1.70707: was row 2, col 3, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Increases the damage done by your Fire Totems by 5%.
   - Forever: Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.
-- **Elemental Warding** (tooltip changed, was Elemental row 2, col 2, moved in build 1.60.1.70425: was row 2, col 1)
+- **Elemental Warding** (tooltip changed, was Elemental row 2, col 2, moved in build 1.60.1.70707: was row 2, col 1)
   - Classic: Reduces damage taken from Fire, Frost and Nature effects by 4%.
   - Forever: Reduces damage taken from Fire, Frost, and Nature effects by 3%.
-- **Eye of the Storm** (tooltip changed)
+- **Eye of the Storm** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Gives you a 33% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage.
-  - Forever: Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.
-- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2, prerequisite changed in build 1.60.1.70425: was call of thunder)
+  - Forever: Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 23% chance to not lose casting time when you take damage.
+- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2, prerequisite changed in build 1.60.1.70707: was call of thunder)
   - Classic: Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%.
 
@@ -239,25 +239,25 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Healing Wave** (tooltip changed)
   - Classic: Reduces the casting time of your Healing Wave spell by 0 sec.
   - Forever: Reduces the casting time of your Healing Wave spell by 0.1 sec.
-- **Tidal Focus** (tooltip changed, was Restoration row 1, col 3, moved in build 1.60.1.70425: was row 2, col 3)
+- **Tidal Focus** (tooltip changed, was Restoration row 1, col 3, moved in build 1.60.1.70707: was row 2, col 3)
   - Classic: Reduces the Mana cost of your healing spells by 1%.
   - Forever: Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.
-- **Totemic Focus** (tooltip changed, was Restoration row 2, col 3, moved in build 1.60.1.70425: was row 1, col 3)
+- **Totemic Focus** (tooltip changed, was Restoration row 2, col 3, moved in build 1.60.1.70707: was row 1, col 3)
   - Classic: Reduces the Mana cost of your totems by 5%.
   - Forever: Reduces the Mana cost of your totems and any spells that summon or move them by 5%.
 - **Improved Reincarnation** (tooltip changed, was Restoration row 2, col 1)
   - Classic: Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%.
   - Forever: Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%.
-- **Healing Focus** (max rank 5 → 3, tooltip changed)
+- **Healing Focus** (max rank 5 → 3, tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while casting any healing spell.
-  - Forever: Gives you a 23% chance to avoid interruption caused by damage while casting any healing spell.
+  - Forever: Gives your healing spells a 23% chance to not lose casting time when you take damage.
 - **Tidal Mastery** (tooltip changed, was Restoration row 4, col 3)
   - Classic: Increases the critical effect chance of your healing and lightning spells by 1%.
   - Forever: Increases the critical effect chance of your healing spells by 1%.
 - **Restorative Totems** (tooltip changed)
   - Classic: Increases the effect of your Mana Spring and Healing Stream Totems by 5%.
   - Forever: Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%.
-- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Summons a Mana Tide Totem with 5 health at the feet of the caster for 13 sec-1 sec that restores 170 mana every 3 seconds to group members within 0 yards.
   - Forever: Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.
 - **Healing Way** (tooltip changed, was Restoration row 5, col 1)

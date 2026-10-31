@@ -1,13 +1,13 @@
-# Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal) — 11/5/35
+# Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal) — 11/0/40
 
 *[Druid](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 11/5/35 (Balance / Feral Combat / Restoration) |
+| **Build** | 11/0/40 (Balance / Feral Combat / Restoration) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -24,27 +24,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `resto-he
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Splendor** | 1/1 | **NEW** | Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec. |
 
-### Feral Combat (5)
+### Feral Combat (0)
+
+*No points.*
+
+### Restoration (40)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
-
-### Restoration (35)
-
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Nature's Focus** | 5/5 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
+| **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Gift of Nature** | 5/5 | changed | Increases the effect of all your healing spells by 10%. |
-| **Gift of the Earthmother** | 1/1 | **NEW** | Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells. |
 | **Improved Rejuvenation** | 3/3 | moved | Increases the effect of your Rejuvenation spell by 15%. |
-| **Tranquil Spirit** | 5/5 | unchanged | Reduces the mana cost of your Healing Touch and Tranquility spells by 10%. |
 | **Swiftmend** | 1/1 | changed | Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells. |
+| **Tranquil Spirit** | 5/5 | unchanged | Reduces the mana cost of your Healing Touch and Tranquility spells by 10%. |
 | **Living Spirit** | 3/3 | **NEW** | Increases your Spirit by 15%. |
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell becomes an instant cast spell. |
-| **Improved Regrowth** | 2/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 20%. |
+| **Improved Regrowth** | 3/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 30%. |
 | **Wild Growth** | 1/1 | **NEW** | Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration. |
 
 ## Core talents (priority order)
@@ -65,6 +63,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 ## Notes
 
 - Report: druid/research/talents/forever/optimizer/resto-heal-raid-heal.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 11/5/35 -> 11/0/40; Gift of the Earthmother 1 gone; refill +1 Improved Regrowth (refill: the resto-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

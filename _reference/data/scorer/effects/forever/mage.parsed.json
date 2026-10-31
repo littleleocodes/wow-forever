@@ -17,31 +17,10 @@
    }
   ]
  },
- "Arcane Focus": {
-  "tree": "Arcane",
-  "max": 5,
-  "text": "Improves your chance to hit with Arcane spells by 1%.",
-  "effects": [
-   {
-    "channel": "hit",
-    "scope": [
-     "school:arcane"
-    ],
-    "values": [
-     0.01,
-     0.02,
-     0.03,
-     0.04,
-     0.05
-    ],
-    "source": "parsed"
-   }
-  ]
- },
  "Improved Channeling": {
   "tree": "Arcane",
   "max": 5,
-  "text": "Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath.",
+  "text": "Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",
@@ -49,20 +28,20 @@
      "all"
     ],
     "values": [
-     0.2,
-     0.4,
-     0.6,
-     0.8,
-     1.0
+     0.14,
+     0.28,
+     0.42,
+     0.56,
+     0.7
     ],
     "source": "parsed"
    }
   ]
  },
- "Missile Barrage": {
+ "Arcane Resilience": {
   "tree": "Arcane",
-  "max": 2,
-  "text": "Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Mi",
+  "max": 3,
+  "text": "Increases your Armor by an amount equal to 50% of your Intellect.",
   "effects": []
  },
  "Arcane Subtlety": {
@@ -110,10 +89,10 @@
    }
   ]
  },
- "Arcane Resilience": {
+ "Missile Barrage": {
   "tree": "Arcane",
   "max": 2,
-  "text": "Increases your Armor by an amount equal to 25% of your Intellect.",
+  "text": "Gives your Arcane Blast spell a 20% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, redu",
   "effects": []
  },
  "Arcane Geometry": {
@@ -262,27 +241,9 @@
   "text": "For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast.",
   "effects": []
  },
- "Improved Fire Blast": {
-  "tree": "Fire",
-  "max": 2,
-  "text": "Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards.",
-  "effects": [
-   {
-    "channel": "cooldown",
-    "scope": [
-     "ability:Fire Blast"
-    ],
-    "values": [
-     1.0,
-     2.0
-    ],
-    "source": "parsed"
-   }
-  ]
- },
  "Incineration": {
   "tree": "Fire",
-  "max": 3,
+  "max": 5,
   "text": "Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 2%.",
   "effects": [
    {
@@ -296,22 +257,25 @@
     "values": [
      0.02,
      0.04,
-     0.06
+     0.06,
+     0.08,
+     0.1
     ],
     "source": "parsed"
    }
   ]
  },
- "Improved Fireball": {
+ "Accelerant": {
   "tree": "Fire",
   "max": 5,
-  "text": "Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.1 sec.",
+  "text": "Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.1 sec.",
   "effects": [
    {
     "channel": "cast_time",
     "scope": [
      "ability:Fireball",
-     "ability:Frostfire Bolt"
+     "ability:Frostfire Bolt",
+     "ability:Arcane Wrath"
     ],
     "values": [
      0.1,
@@ -410,6 +374,24 @@
   "text": "Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec.",
   "effects": []
  },
+ "Improved Fire Blast": {
+  "tree": "Fire",
+  "max": 2,
+  "text": "Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Fire Blast"
+    ],
+    "values": [
+     1.0,
+     2.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
  "Improved Scorch": {
   "tree": "Fire",
   "max": 3,
@@ -436,7 +418,7 @@
  },
  "Critical Mass": {
   "tree": "Fire",
-  "max": 5,
+  "max": 3,
   "text": "Increases the critical strike chance of your Fire spells by 2%.",
   "effects": [
    {
@@ -447,9 +429,7 @@
     "values": [
      0.02,
      0.04,
-     0.06,
-     0.08,
-     0.1
+     0.06
     ],
     "source": "parsed"
    }
@@ -489,7 +469,7 @@
  "Frost Warding": {
   "tree": "Frost",
   "max": 2,
-  "text": "Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active.",
+  "text": "Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and",
   "effects": []
  },
  "Improved Frostbolt": {
@@ -514,16 +494,15 @@
    }
   ]
  },
- "Elemental Precision": {
+ "Precision": {
   "tree": "Frost",
   "max": 3,
-  "text": "Improves your chance to hit with Frost and Fire spells by 2%.",
+  "text": "Improves your chance to hit with all spells by 2%.",
   "effects": [
    {
     "channel": "hit",
     "scope": [
-     "school:fire",
-     "school:frost"
+     "type:spell"
     ],
     "values": [
      0.02,
@@ -708,28 +687,13 @@
  "Winter's Chill": {
   "tree": "Frost",
   "max": 5,
-  "text": "Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
-  "effects": [
-   {
-    "channel": "dmg",
-    "scope": [
-     "type:spell"
-    ],
-    "values": [
-     0.4,
-     0.4,
-     0.4,
-     0.4,
-     0.4
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7",
+  "effects": []
  },
  "Ice Barrier": {
   "tree": "Frost",
   "max": 1,
-  "text": "Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+  "text": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
   "effects": []
  }
 }

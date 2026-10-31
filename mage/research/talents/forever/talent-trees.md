@@ -1,6 +1,6 @@
-# Mage — WoW: Forever talent trees (beta client 1.60.1.70425)
+# Mage — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-20. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-20, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -8,7 +8,7 @@
 
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
-| Arcane | 19 | 7 | 9 | 1 | 2 | 4 |
+| Arcane | 18 | 7 | 8 | 1 | 2 | 4 |
 | Fire | 17 | 3 | 8 | 0 | 6 | 1 |
 | Frost | 18 | 2 | 10 | 3 | 3 | 0 |
 
@@ -19,9 +19,8 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Wand Specialization** | 2 | — | moved | Increases your damage with Wands by 13%. | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 5 | — | changed | Improves your chance to hit with Arcane spells by 1%. | Improves your chance to hit with Arcane spells by 5%. |
-| **Improved Channeling** | 5 | — | **NEW** | Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath. | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
-| **Missile Barrage** | 2 | — | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Improved Channeling** | 5 | — | **NEW** | Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage. | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
+| **Arcane Resilience** | 3 | — | changed | Increases your Armor by an amount equal to 50% of your Intellect. | Increases your Armor by an amount equal to 150% of your Intellect. *(est.)* |
 
 ### Tier 2 — requires 5 points in Arcane
 
@@ -30,7 +29,7 @@
 | **Arcane Subtlety** | 2 | — | changed | Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%. | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 2 | — | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Concentration** | 5 | — | unchanged | Gives you a 2% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Resilience** | 2 | — | changed | Increases your Armor by an amount equal to 25% of your Intellect. | Increases your Armor by an amount equal to 50% of your Intellect. |
+| **Missile Barrage** | 2 | — | **NEW** | Gives your Arcane Blast spell a 20% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 
 ### Tier 3 — requires 10 points in Arcane
 
@@ -76,9 +75,8 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Fire Blast** | 2 | — | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
-| **Incineration** | 3 | — | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 2%. | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
-| **Improved Fireball** | 5 | — | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.1 sec. | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
+| **Incineration** | 5 | — | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 2%. | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%. |
+| **Accelerant** | 5 | — | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.1 sec. | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.5 sec. |
 
 ### Tier 2 — requires 5 points in Fire
 
@@ -95,6 +93,7 @@
 | **Burning Soul** | 3 | — | changed | Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%. | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
 | **Improved Flamestrike** | 3 | — | unchanged | Increases the critical strike chance of your Flamestrike spell by 5%. | Increases the critical strike chance of your Flamestrike spell by 15%. |
 | **Pyroblast** | 1 | — | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. | — |
+| **Improved Fire Blast** | 2 | — | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
 
 ### Tier 4 — requires 15 points in Fire
 
@@ -109,7 +108,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Critical Mass** | 5 | — | unchanged | Increases the critical strike chance of your Fire spells by 2%. | Increases the critical strike chance of your Fire spells by 10%. |
+| **Critical Mass** | 3 | — | unchanged | Increases the critical strike chance of your Fire spells by 2%. | Increases the critical strike chance of your Fire spells by 6%. |
 | **Blast Wave** | 1 | — | changed | A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec. | — |
 
 ### Tier 6 — requires 25 points in Fire
@@ -122,7 +121,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Combustion** | 1 | Critical Mass (5) | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. | — |
+| **Combustion** | 1 | Critical Mass (3) | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. | — |
 
 **Removed from Classic Fire:** Incinerate
 
@@ -132,9 +131,9 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Frost Warding** | 2 | — | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active. | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
+| **Frost Warding** | 2 | — | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 10%. | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 30%, gives your Frost Ward a 20% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 20%. |
 | **Improved Frostbolt** | 5 | — | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 3 | — | changed | Improves your chance to hit with Frost and Fire spells by 2%. | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Precision** | 3 | — | changed | Improves your chance to hit with all spells by 2%. | Improves your chance to hit with all spells by 6%. |
 
 ### Tier 2 — requires 5 points in Frost
 
@@ -173,13 +172,13 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Winter's Chill** | 5 | — | changed | Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. | Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
+| **Winter's Chill** | 5 | — | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times. | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
 
 ### Tier 7 — requires 30 points in Frost
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Ice Barrier** | 1 | Cold Snap (1) | changed | Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage. | — |
+| **Ice Barrier** | 1 | Cold Snap (1) | changed | Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage. | — |
 
 ## Changes vs Classic Era (talent by talent)
 
@@ -187,18 +186,15 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Arcane
 
-- **Arcane Focus** (tooltip changed)
-  - Classic: Reduces the chance that the opponent can resist your Arcane spells by 2%.
-  - Forever: Improves your chance to hit with Arcane spells by 1%.
+- **Arcane Resilience** (max rank 1 → 2, tooltip changed, was Arcane row 3, col 3, moved in build 1.60.1.70707: was row 2, col 4, max rank 2 -> 3 in build 1.60.1.70707, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
+  - Classic: Increases your armor by an amount equal to 50% of your Intellect.
+  - Forever: Increases your Armor by an amount equal to 50% of your Intellect.
 - **Arcane Subtlety** (tooltip changed, was Arcane row 1, col 1)
   - Classic: Reduces your target's resistance to all your spells by 5 and reduces the threat caused by your Arcane spells by 20%.
   - Forever: Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%.
 - **Magic Absorption** (max rank 5 → 2, tooltip changed)
   - Classic: Increases all resistances by 2 and causes all spells you fully resist to restore 1% of your total mana. 1 sec. cooldown.
   - Forever: Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec.
-- **Arcane Resilience** (max rank 1 → 2, tooltip changed, was Arcane row 3, col 3)
-  - Classic: Increases your armor by an amount equal to 50% of your Intellect.
-  - Forever: Increases your Armor by an amount equal to 25% of your Intellect.
 - **Improved Counterspell** (tooltip changed)
   - Classic: Gives your Counterspell a 50% chance to silence the target for 4 sec.
   - Forever: Your Counterspell also Silences the target for 2 sec.
@@ -217,16 +213,16 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Fire
 
-- **Improved Fireball** (tooltip changed, was Fire row 1, col 2)
+- **Accelerant** (tooltip changed, was Fire row 1, col 2, renamed from Improved Fireball in build 1.60.1.70707, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Reduces the casting time of your Fireball spell by 0 sec.
-  - Forever: Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.1 sec.
+  - Forever: Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.1 sec.
 - **Impact** (max rank 5 → 3, tooltip changed, was Fire row 1, col 3)
   - Classic: Gives your Fire spells a 2% chance to stun the target for 2 sec.
   - Forever: Gives your Fire spells a 3% chance to stun the target for 2 sec.
 - **Burning Soul** (max rank 2 → 3, tooltip changed, was Fire row 3, col 4)
   - Classic: Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%.
   - Forever: Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%.
-- **Pyroblast** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Pyroblast** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Hurls an immense fiery boulder that causes 187 Fire damage and an additional 56 Fire damage over 12 sec.
   - Forever: Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec.
 - **Improved Scorch** (tooltip changed)
@@ -235,7 +231,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Master of Elements** (tooltip changed)
   - Classic: Your Fire and Frost spell criticals will refund 10% of their base mana cost.
   - Forever: Your Fire and Frost critical strikes will refund 10% of their base mana cost.
-- **Blast Wave** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
+- **Blast Wave** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 186 Fire damage, and dazing them for 6 sec.
   - Forever: A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.
 - **Combustion** (tooltip changed)
@@ -244,19 +240,19 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Frost
 
-- **Frost Warding** (tooltip changed)
+- **Frost Warding** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2))
   - Classic: Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active.
-  - Forever: Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active.
-- **Improved Frostbolt** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
+  - Forever: Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 10%.
+- **Improved Frostbolt** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Reduces the casting time of your Frostbolt spell by 0 sec.
   - Forever: Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec.
-- **Elemental Precision** (max rank 3 → 5, tooltip changed, max rank 5 -> 3 in build 1.60.1.70425, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
+- **Precision** (max rank 3 → 5, tooltip changed, renamed from Elemental Precision in build 1.60.1.70707, max rank 5 -> 3 in build 1.60.1.70707, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Reduces the chance that the opponent can resist your Frost and Fire spells by 2%.
-  - Forever: Improves your chance to hit with Frost and Fire spells by 2%.
-- **Permafrost** (tooltip changed, was Frost row 2, col 4, moved in build 1.60.1.70425: was row 2, col 2)
+  - Forever: Improves your chance to hit with all spells by 2%.
+- **Permafrost** (tooltip changed, was Frost row 2, col 4, moved in build 1.60.1.70707: was row 2, col 2)
   - Classic: Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%.
   - Forever: Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%.
-- **Improved Blizzard** (tooltip changed, moved in build 1.60.1.70425: was row 3, col 4)
+- **Improved Blizzard** (tooltip changed, moved in build 1.60.1.70707: was row 3, col 4)
   - Classic: Adds a chill effect to your Blizzard spell. This effect lowers the target's movement speed by 30%. Lasts 1.5 sec.
   - Forever: Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 15% for 1.5 sec.
 - **Shatter** (max rank 5 → 3, tooltip changed, was Frost row 4, col 3)
@@ -268,12 +264,12 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Cold Snap** (tooltip changed, was Frost row 3, col 2)
   - Classic: When activated, this spell finishes the cooldown on all of your Frost spells.
   - Forever: Finishes the remaining cooldown on all your other Frost spells.
-- **Winter's Chill** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
+- **Winter's Chill** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec. Stacks up to 5 times.
-  - Forever: Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.
-- **Ice Barrier** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
+  - Forever: Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.
+- **Ice Barrier** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Instantly shields you, absorbing 438 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.
-  - Forever: Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
+  - Forever: Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.
 
 ---
 

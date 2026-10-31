@@ -36,9 +36,10 @@ PROTOC_VERSION = "36.2"
 REPO_URL = "https://github.com/wowsims/forever"
 SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
 GAMES = {"forever": {"url": "https://github.com/wowsims/forever", "dir": "wowsims-forever", "module": "github.com/wowsims/forever", "bench": "foreverbench",
-                     # 09e7398 (wowsims/forever master, 2026-10-18 19:55 +0200; spell data and items client 1.60.1.70450). Before 2026-10-18
-                     # the ElliotWood/Forever fork: b7083fa (70425) from 2026-10-16, 2ce8265 (70291) from 2026-10-09, b0f0df3 (70205), 40be98e
-                     "commit": "30f67f5d20d38d8aeeac5e3b82bf27e8227940ec"},
+                     # b90e2b9 (master 2026-10-30 23:28 +0100: the live client 1.60.1.70707 with hotfix pushes 113531 and 113554, every class
+                     # but paladin and priest; trees from the live files) since 2026-10-30; 30f67f5 (10-22, 70450) and 09e7398 (10-18) before.
+                     # Before 2026-10-18 the ElliotWood/Forever fork: b7083fa (70425) from 2026-10-16, 2ce8265 (70291) from 2026-10-09, b0f0df3, 40be98e
+                     "commit": "b90e2b9581712cefe6efd4dd471ab948963713d9"},
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 

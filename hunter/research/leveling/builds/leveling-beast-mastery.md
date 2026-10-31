@@ -7,7 +7,7 @@
 | **Build** | 20/31/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `leveling-beast-mastery` |
 
 ## Summary
@@ -20,60 +20,35 @@ Allocation and order adopted on 2026-09-26 from `cand-bm-r2`, the fastest build 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Deadly Aspects** | 4/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 8% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
+| **Improved Revive Pet** | 1/2 | unchanged | Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%. |
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
+| **Ferocity** | 2/5 | changed | Increases the critical strike chance of your pets and hawks by 4%. |
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
-| **Ferocity** | 3/5 | changed | Increases the critical strike chance of your pets and hawks by 6%. |
 
 ### Marksmanship (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Hawk Eye** | 3/3 | moved | Increases the range of your ranged weapons by 6 yards. |
+| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
+| **Careful Aim** | 1/5 | **NEW** | Increases your Attack Power by 20% of your Intellect. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Careful Aim** | 1/5 | **NEW** | Increases your Attack Power by 20% of your Intellect. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
 | **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
-| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
 
 ### Survival (0)
 
 *No points.*
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-11 | Beast Mastery | Deadly Aspects | 2 | 2/0/0 |
-| 12-14 | Beast Mastery | Endurance Training | 3 | 5/0/0 |
-| 15-16 | Beast Mastery | Focused Fire | 2 | 7/0/0 |
-| 17 | Beast Mastery | Deadly Aspects | 1 | 8/0/0 |
-| 18-19 | Beast Mastery | Pathfinding | 2 | 10/0/0 |
-| 20-24 | Beast Mastery | Unleashed Fury | 5 | 15/0/0 |
-| 25 | Beast Mastery | Summon Hawk | 1 | 16/0/0 |
-| 26-30 | Marksmanship | Lethal Attacks | 5 | 16/5/0 |
-| 31-35 | Marksmanship | Efficiency | 5 | 16/10/0 |
-| 36-37 | Marksmanship | Rapid Killing | 2 | 16/12/0 |
-| 38-40 | Marksmanship | Improved Stings | 3 | 16/15/0 |
-| 41 | Marksmanship | Trueshot Aura | 1 | 16/16/0 |
-| 42-44 | Marksmanship | Hawk Eye | 3 | 16/19/0 |
-| 45 | Marksmanship | Careful Aim | 1 | 16/20/0 |
-| 46-47 | Marksmanship | Rapid Recuperation | 2 | 16/22/0 |
-| 48 | Marksmanship | Scatter Shot | 1 | 16/23/0 |
-| 49-50 | Marksmanship | Barrage | 2 | 16/25/0 |
-| 51-55 | Marksmanship | Ranged Weapon Specialization | 5 | 16/30/0 |
-| 56 | Marksmanship | Sniper Shot | 1 | 16/31/0 |
-| 57-59 | Beast Mastery | Ferocity | 3 | 19/31/0 |
-| 60 | Beast Mastery | Deadly Aspects | 1 | 20/31/0 |
 
 ## Core talents (priority order)
 
@@ -130,6 +105,7 @@ What this build casts per kill ([report](../fightlab/bm-leveling.md), all leveli
 - 2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.
 - 2026-09-30: renamed from "Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 - Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 17/21/25/27/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -2% at 60 and -1% at 30 (negative = faster); race winner over the leveling: cand-bm-r6; top talents at 60: Unleashed Fury +5%, Efficiency +3%, Lethal Attacks +3%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Improved Revive Pet (tier gating for Pathfinding); -1 Ferocity (over 51); order dropped (order_repair.py) (refill: the mm-raid model, leveling-st).
 
 ## Open questions (verify in the live game)
 

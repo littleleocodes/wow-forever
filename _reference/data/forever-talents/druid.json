@@ -1,42 +1,74 @@
 {
   "slug": "druid",
   "name": "Druid",
-  "build": "1.60.1.70425",
-  "captured": "2026-10-16",
+  "build": "1.60.1.70707",
+  "captured": "2026-10-30",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-16",
-      "build": "1.60.1.70425",
+      "generated": "2026-10-29",
+      "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/druid/",
-      "build": "1.60.1.70291",
+      "build": "1.60.1.70532",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70532"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/druid",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
+    },
+    "simulator_trees": {
+      "path": "wowsims/forever ui/sim/talents/trees",
+      "build": "1.60.1.70707",
+      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
-  "removed_since_demo": [],
+  "removed_since_demo": [
+    {
+      "tree": "Feral Combat",
+      "name": "Improved Shifting Power",
+      "build": "1.60.1.70707",
+      "row": 5,
+      "col": 1,
+      "maxRank": 2,
+      "rank1": "Reduces the cooldown of your Shifting Power spell by 4 sec."
+    },
+    {
+      "tree": "Feral Combat",
+      "name": "Berserk",
+      "build": "1.60.1.70707",
+      "row": 7,
+      "col": 2,
+      "maxRank": 1,
+      "rank1": "Requires Cat Form, Bear Form, Dire Bear Form.\nCauses your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec."
+    }
+  ],
   "renamed_since_demo": [
     {
       "tree": "Feral Combat",
       "from": "Predatory Instincts",
       "to": "Natural Instinct",
-      "build": "1.60.1.70425"
+      "build": "1.60.1.70707"
+    },
+    {
+      "tree": "Restoration",
+      "from": "Gift of the Earthmother",
+      "to": "Bloom",
+      "build": "1.60.1.70707"
     }
   ],
   "merge_notes": [
-    "Balance/Nature's Splendor: Trait-edge snapshot has no prerequisite arrow, but the 69893 payload and the 70009 export both require Nature's Majesty rank 2 (kept)"
+    "Feral Combat/Lacerate: tooltip from Wowhead's spell 1328617 (new talent)",
+    "Feral Combat/Predatory Discipline: tooltip from Wowhead's spell 1328613 (new talent)",
+    "Restoration/Bloom: tooltip from Wowhead's spell 1328621 (new talent)"
   ],
   "trees": [
     {
@@ -395,7 +427,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         }
       ],
@@ -441,31 +473,39 @@
           ]
         },
         {
-          "id": "feral-combat/heart-of-the-wild",
+          "id": "feral-combat/furor",
           "row": 0,
           "col": 2,
-          "name": "Heart of the Wild",
-          "icon": "spell_holy_blessingofagility",
+          "name": "Furor",
+          "icon": "spell_holy_blessingofstamina",
           "maxRank": 5,
           "ranks": [
-            "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
-            "Increases your Intellect by 4%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 4%.",
-            "Increases your Intellect by 6%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 6%.",
-            "Increases your Intellect by 8%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 8%.",
-            "Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%."
+            "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.",
+            "Gives you a 40% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 40% of the Energy you had when last in Cat Form, plus 4 Energy per second spent outside Bear Form or Dire Bear Form, up to 40 Energy.",
+            "Gives you a 60% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 60% of the Energy you had when last in Cat Form, plus 6 Energy per second spent outside Bear Form or Dire Bear Form, up to 60 Energy.",
+            "Gives you a 80% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 80% of the Energy you had when last in Cat Form, plus 8 Energy per second spent outside Bear Form or Dire Bear Form, up to 80 Energy.",
+            "Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy."
           ],
           "status": "changed",
           "classic": [
-            "Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.",
-            "Increases your Intellect by 8%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 8%.",
-            "Increases your Intellect by 12%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 12%.",
-            "Increases your Intellect by 16%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%.",
-            "Increases your Intellect by 20%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%."
+            "Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
+            "Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
+            "Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
+            "Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
+            "Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
           ],
-          "evidence": "druid/19-druid-feral-combat-heart-of-the-wild.png",
+          "evidence": "druid/38-druid-restoration-furor.png",
+          "ranks_prev": [
+            "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy.",
+            "Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy.",
+            "Gives you a 60% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 60% of the Energy you had when you were last in Cat Form, plus 6 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 60 Energy.",
+            "Gives you a 80% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 80% of the Energy you had when you were last in Cat Form, plus 8 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 80 Energy.",
+            "Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Feral Combat row 6, col 2"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -619,7 +659,7 @@
           "diff": [
             "tooltip changed",
             "was Feral Combat row 3, col 2",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -647,49 +687,9 @@
           ]
         },
         {
-          "id": "feral-combat/shifting-power",
-          "row": 3,
-          "col": 0,
-          "name": "Shifting Power",
-          "icon": "spell_druid_displacement",
-          "maxRank": 1,
-          "ranks": [
-            "Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting."
-          ],
-          "status": "new",
-          "ranks_prev": [
-            "Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting."
-          ],
-          "ranks_prev_build": "1.60.1.70205",
-          "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
-          ],
-          "prereq": {
-            "id": "feral-combat/shredding-attacks",
-            "rank": 3
-          }
-        },
-        {
-          "id": "feral-combat/primal-bite",
-          "row": 3,
-          "col": 1,
-          "name": "Primal Bite",
-          "icon": "ability_racial_cannibalize",
-          "maxRank": 1,
-          "ranks": [
-            "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat."
-          ],
-          "status": "new",
-          "diff": [],
-          "prereq": {
-            "id": "feral-combat/savage-fury",
-            "rank": 2
-          }
-        },
-        {
           "id": "feral-combat/predatory-strikes",
           "row": 3,
-          "col": 2,
+          "col": 0,
           "name": "Predatory Strikes",
           "icon": "ability_hunter_pet_cat",
           "maxRank": 3,
@@ -707,7 +707,42 @@
           "evidence": "druid/29-druid-feral-combat-predatory-strikes.png",
           "diff": [
             "tooltip changed",
-            "was Feral Combat row 4, col 2"
+            "was Feral Combat row 4, col 2",
+            "moved in build 1.60.1.70707: was row 4, col 3"
+          ]
+        },
+        {
+          "id": "feral-combat/lacerate",
+          "row": 3,
+          "col": 1,
+          "name": "Lacerate",
+          "icon": null,
+          "maxRank": 1,
+          "ranks": [
+            "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target."
+          ],
+          "status": "new",
+          "diff": [
+            "added in build 1.60.1.70707"
+          ],
+          "prereq": {
+            "id": "feral-combat/savage-fury",
+            "rank": 2
+          }
+        },
+        {
+          "id": "feral-combat/predatory-discipline",
+          "row": 3,
+          "col": 2,
+          "name": "Predatory Discipline",
+          "icon": null,
+          "maxRank": 1,
+          "ranks": [
+            "Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy."
+          ],
+          "status": "new",
+          "diff": [
+            "added in build 1.60.1.70707"
           ]
         },
         {
@@ -736,24 +771,6 @@
           }
         },
         {
-          "id": "feral-combat/improved-shifting-power",
-          "row": 4,
-          "col": 0,
-          "name": "Improved Shifting Power",
-          "icon": "ability_hunter_aspectmastery",
-          "maxRank": 2,
-          "ranks": [
-            "Reduces the cooldown of your Shifting Power spell by 4 sec.",
-            "Reduces the cooldown of your Shifting Power spell by 8 sec."
-          ],
-          "status": "new",
-          "diff": [],
-          "prereq": {
-            "id": "feral-combat/shifting-power",
-            "rank": 1
-          }
-        },
-        {
           "id": "feral-combat/leader-of-the-pack",
           "row": 4,
           "col": 1,
@@ -775,7 +792,7 @@
           "diff": [
             "tooltip changed",
             "was Feral Combat row 7, col 2",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -797,32 +814,14 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "renamed from Predatory Instincts in build 1.60.1.70425",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "renamed from Predatory Instincts in build 1.60.1.70707",
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ]
-        },
-        {
-          "id": "feral-combat/natural-reaction",
-          "row": 5,
-          "col": 0,
-          "name": "Natural Reaction",
-          "icon": "ability_bullrush",
-          "maxRank": 5,
-          "ranks": [
-            "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
-            "Increases your dodge chance by 2%, and gives you a 40% chance to gain 5 Rage each time you dodge.",
-            "Increases your dodge chance by 3%, and gives you a 60% chance to gain 5 Rage each time you dodge.",
-            "Increases your dodge chance by 4%, and gives you a 80% chance to gain 5 Rage each time you dodge.",
-            "Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge."
-          ],
-          "status": "new",
-          "evidence": "druid/34-druid-feral-combat-natural-reaction.png",
-          "diff": []
         },
         {
           "id": "feral-combat/rend-and-tear",
           "row": 5,
-          "col": 2,
+          "col": 0,
           "name": "Rend and Tear",
           "icon": "ability_druid_primalagression",
           "maxRank": 5,
@@ -835,33 +834,76 @@
           ],
           "status": "new",
           "evidence": "druid/35-druid-feral-combat-rend-and-tear.png",
-          "diff": [],
+          "diff": [
+            "moved in build 1.60.1.70707: was row 6, col 3"
+          ],
           "prereq": {
             "id": "feral-combat/predatory-strikes",
             "rank": 3
           }
         },
         {
-          "id": "feral-combat/berserk",
-          "row": 6,
-          "col": 1,
-          "name": "Berserk",
-          "icon": "ability_druid_berserk",
-          "maxRank": 1,
+          "id": "feral-combat/natural-reaction",
+          "row": 5,
+          "col": 3,
+          "name": "Natural Reaction",
+          "icon": "ability_bullrush",
+          "maxRank": 5,
           "ranks": [
-            "Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec."
+            "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 2%, and gives you a 40% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 3%, and gives you a 60% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 4%, and gives you a 80% chance to gain 5 Rage each time you dodge.",
+            "Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge."
           ],
           "status": "new",
-          "evidence": "druid/36-druid-feral-combat-berserk.png",
-          "ranks_prev": [
-            "Requires Cat Form, Bear Form, Dire Bear Form.\nCauses your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec."
-          ],
-          "ranks_prev_build": "1.60.1.70205",
+          "evidence": "druid/34-druid-feral-combat-natural-reaction.png",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "moved in build 1.60.1.70707: was row 6, col 1"
+          ]
+        },
+        {
+          "id": "feral-combat/primal-bite",
+          "row": 6,
+          "col": 1,
+          "name": "Primal Bite",
+          "icon": "ability_racial_cannibalize",
+          "maxRank": 1,
+          "ranks": [
+            "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat."
+          ],
+          "status": "new",
+          "diff": [
+            "moved in build 1.60.1.70707: was row 4, col 2",
+            "prerequisite changed in build 1.60.1.70707: was savage fury"
           ],
           "prereq": {
             "id": "feral-combat/leader-of-the-pack",
+            "rank": 1
+          }
+        },
+        {
+          "id": "feral-combat/shifting-power",
+          "row": 6,
+          "col": 2,
+          "name": "Shifting Power",
+          "icon": "spell_druid_displacement",
+          "maxRank": 1,
+          "ranks": [
+            "Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting."
+          ],
+          "status": "new",
+          "ranks_prev": [
+            "Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "moved in build 1.60.1.70707: was row 4, col 1",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70707: was shredding attacks"
+          ],
+          "prereq": {
+            "id": "feral-combat/predatory-discipline",
             "rank": 1
           }
         }
@@ -888,11 +930,11 @@
           "icon": "spell_nature_healingwavegreater",
           "maxRank": 5,
           "ranks": [
-            "Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
-            "Gives you a 28% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
-            "Gives you a 42% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
-            "Gives you a 56% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
-            "Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells."
+            "Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage.",
+            "Gives your Arcane and Nature spells a 28% chance to not lose casting time when you take damage.",
+            "Gives your Arcane and Nature spells a 42% chance to not lose casting time when you take damage.",
+            "Gives your Arcane and Nature spells a 56% chance to not lose casting time when you take damage.",
+            "Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage."
           ],
           "status": "changed",
           "classic": [
@@ -903,45 +945,46 @@
             "Gives you a 70% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
           ],
           "evidence": "druid/37-druid-restoration-natures-focus.png",
-          "diff": [
-            "tooltip changed",
-            "was Restoration row 2, col 2"
-          ]
-        },
-        {
-          "id": "restoration/furor",
-          "row": 0,
-          "col": 2,
-          "name": "Furor",
-          "icon": "spell_holy_blessingofstamina",
-          "maxRank": 5,
-          "ranks": [
-            "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.",
-            "Gives you a 40% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 40% of the Energy you had when last in Cat Form, plus 4 Energy per second spent outside Bear Form or Dire Bear Form, up to 40 Energy.",
-            "Gives you a 60% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 60% of the Energy you had when last in Cat Form, plus 6 Energy per second spent outside Bear Form or Dire Bear Form, up to 60 Energy.",
-            "Gives you a 80% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 80% of the Energy you had when last in Cat Form, plus 8 Energy per second spent outside Bear Form or Dire Bear Form, up to 80 Energy.",
-            "Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy."
-          ],
-          "status": "changed",
-          "classic": [
-            "Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
-            "Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
-            "Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
-            "Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.",
-            "Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-          ],
-          "evidence": "druid/38-druid-restoration-furor.png",
           "ranks_prev": [
-            "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy.",
-            "Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy.",
-            "Gives you a 60% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 60% of the Energy you had when you were last in Cat Form, plus 6 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 60 Energy.",
-            "Gives you a 80% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 80% of the Energy you had when you were last in Cat Form, plus 8 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 80 Energy.",
-            "Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy."
+            "Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 28% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 42% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 56% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+            "Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells."
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
+            "was Restoration row 2, col 2",
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+          ]
+        },
+        {
+          "id": "restoration/heart-of-the-wild",
+          "row": 0,
+          "col": 2,
+          "name": "Heart of the Wild",
+          "icon": "spell_holy_blessingofagility",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
+            "Increases your Intellect by 4%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 4%.",
+            "Increases your Intellect by 6%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 6%.",
+            "Increases your Intellect by 8%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 8%.",
+            "Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%."
+          ],
+          "status": "changed",
+          "classic": [
+            "Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.",
+            "Increases your Intellect by 8%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 8%.",
+            "Increases your Intellect by 12%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 12%.",
+            "Increases your Intellect by 16%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%.",
+            "Increases your Intellect by 20%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%."
+          ],
+          "evidence": "druid/19-druid-feral-combat-heart-of-the-wild.png",
+          "diff": [
+            "tooltip changed",
+            "was Feral Combat row 6, col 2"
           ]
         },
         {
@@ -963,30 +1006,27 @@
           "diff": []
         },
         {
-          "id": "restoration/subtlety",
+          "id": "restoration/reflection",
           "row": 1,
           "col": 1,
-          "name": "Subtlety",
-          "icon": "ability_eyeoftheowl",
+          "name": "Reflection",
+          "icon": "spell_frost_windwalkon",
           "maxRank": 3,
           "ranks": [
-            "Reduces the threat generated by your Nature and Arcane spells by 10%.",
-            "Reduces the threat generated by your Nature and Arcane spells by 20%.",
-            "Reduces the threat generated by your Nature and Arcane spells by 30%."
+            "Allows 17% of your Mana regeneration to continue while casting.",
+            "Allows 33% of your Mana regeneration to continue while casting.",
+            "Allows 50% of your Mana regeneration to continue while casting."
           ],
           "status": "changed",
           "classic": [
-            "Reduces the threat generated by your Healing spells by 4%.",
-            "Reduces the threat generated by your Healing spells by 8%.",
-            "Reduces the threat generated by your Healing spells by 12%.",
-            "Reduces the threat generated by your Healing spells by 16%.",
-            "Reduces the threat generated by your Healing spells by 20%."
+            "Allows 5% of your Mana regeneration to continue while casting.",
+            "Allows 10% of your Mana regeneration to continue while casting.",
+            "Allows 15% of your Mana regeneration to continue while casting."
           ],
-          "evidence": "druid/40-druid-restoration-subtlety.png",
+          "evidence": "druid/42-druid-restoration-reflection.png",
           "diff": [
-            "max rank 5 → 3",
             "tooltip changed",
-            "was Restoration row 3, col 4"
+            "moved in build 1.60.1.70707: was row 3, col 2"
           ]
         },
         {
@@ -1008,26 +1048,31 @@
           ]
         },
         {
-          "id": "restoration/reflection",
+          "id": "restoration/subtlety",
           "row": 2,
           "col": 1,
-          "name": "Reflection",
-          "icon": "spell_frost_windwalkon",
+          "name": "Subtlety",
+          "icon": "ability_eyeoftheowl",
           "maxRank": 3,
           "ranks": [
-            "Allows 17% of your Mana regeneration to continue while casting.",
-            "Allows 33% of your Mana regeneration to continue while casting.",
-            "Allows 50% of your Mana regeneration to continue while casting."
+            "Reduces the threat generated by your Nature and Arcane spells by 10%.",
+            "Reduces the threat generated by your Nature and Arcane spells by 20%.",
+            "Reduces the threat generated by your Nature and Arcane spells by 30%."
           ],
           "status": "changed",
           "classic": [
-            "Allows 5% of your Mana regeneration to continue while casting.",
-            "Allows 10% of your Mana regeneration to continue while casting.",
-            "Allows 15% of your Mana regeneration to continue while casting."
+            "Reduces the threat generated by your Healing spells by 4%.",
+            "Reduces the threat generated by your Healing spells by 8%.",
+            "Reduces the threat generated by your Healing spells by 12%.",
+            "Reduces the threat generated by your Healing spells by 16%.",
+            "Reduces the threat generated by your Healing spells by 20%."
           ],
-          "evidence": "druid/42-druid-restoration-reflection.png",
+          "evidence": "druid/40-druid-restoration-subtlety.png",
           "diff": [
-            "tooltip changed"
+            "max rank 5 → 3",
+            "tooltip changed",
+            "was Restoration row 3, col 4",
+            "moved in build 1.60.1.70707: was row 2, col 2"
           ]
         },
         {
@@ -1059,18 +1104,25 @@
           ]
         },
         {
-          "id": "restoration/gift-of-the-earthmother",
+          "id": "restoration/bloom",
           "row": 2,
           "col": 3,
-          "name": "Gift of the Earthmother",
+          "name": "Bloom",
           "icon": "spell_nature_spiritarmor",
           "maxRank": 1,
           "ranks": [
-            "Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells."
+            "When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead."
           ],
           "status": "new",
           "evidence": "druid/44-druid-restoration-gift-of-the-earthmother.png",
-          "diff": []
+          "ranks_prev": [
+            "Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "renamed from Gift of the Earthmother in build 1.60.1.70707",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+          ]
         },
         {
           "id": "restoration/tranquil-spirit",

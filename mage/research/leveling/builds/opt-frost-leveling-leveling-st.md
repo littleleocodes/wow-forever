@@ -1,13 +1,13 @@
-# Optimizer — Single-target Frostbolt leveling: Frostbolt ~70%, Fire Blast/Frost Nova instants, wand finishes (leveling-st) — 21/3/27
+# Optimizer — Single-target Frostbolt leveling: Frostbolt ~70%, Fire Blast/Frost Nova instants, wand finishes (leveling-st) — 22/3/26
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 21/3/27 (Arcane / Fire / Frost) |
+| **Build** | 22/3/26 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,72 +15,42 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 
 ## Point allocation
 
-### Arcane (21)
+### Arcane (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 100% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Improved Channeling** | 1/5 | **NEW** | Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 1/5 | changed | Improves your chance to hit with Arcane spells by 1%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
-| **Arcane Resilience** | 1/2 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
-| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 
 ### Fire (3)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
+| **Incineration** | 3/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 
-### Frost (27)
+### Frost (26)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
-| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
-| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
+| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
+| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
+| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
-| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
-| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
-| 20 | Frost | Ice Lance | 1 | 0/0/11 |
-| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
-| 24 | Frost | Elemental Precision | 1 | 0/0/15 |
-| 25 | Frost | Ice Block | 1 | 0/0/16 |
-| 26-27 | Frost | Shatter | 2 | 0/0/18 |
-| 28 | Frost | Ice Shards | 1 | 0/0/19 |
-| 29 | Frost | Shatter | 1 | 0/0/20 |
-| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
-| 32-35 | Frost | Ice Shards | 4 | 0/0/26 |
-| 36-37 | Arcane | Missile Barrage | 2 | 2/0/26 |
-| 38-39 | Arcane | Wand Specialization | 2 | 4/0/26 |
-| 40 | Arcane | Arcane Focus | 1 | 5/0/26 |
-| 41-45 | Arcane | Arcane Concentration | 5 | 10/0/26 |
-| 46 | Arcane | Arcane Blast | 1 | 11/0/26 |
-| 47-48 | Arcane | Arcane Subtlety | 2 | 13/0/26 |
-| 49-50 | Arcane | Magic Absorption | 2 | 15/0/26 |
-| 51 | Arcane | Arcane Wrath | 1 | 16/0/26 |
-| 52-54 | Arcane | Arcane Meditation | 3 | 19/0/26 |
-| 55 | Arcane | Arcane Resilience | 1 | 20/0/26 |
-| 56 | Arcane | Presence of Mind | 1 | 21/0/26 |
-| 57-59 | Fire | Incineration | 3 | 21/3/26 |
-| 60 | Frost | Arctic Reach | 1 | 21/3/27 |
 
 ## Core talents (priority order)
 
@@ -113,6 +83,7 @@ What this build casts per kill ([report](../fightlab/frost-leveling.md), all lev
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/frost-leveling-leveling-st.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/3/27 -> 22/3/26; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); -1 Precision (over 51); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

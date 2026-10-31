@@ -1,29 +1,34 @@
 {
   "slug": "hunter",
   "name": "Hunter",
-  "build": "1.60.1.70425",
-  "captured": "2026-10-16",
+  "build": "1.60.1.70707",
+  "captured": "2026-10-30",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-16",
-      "build": "1.60.1.70425",
+      "generated": "2026-10-29",
+      "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/hunter/",
-      "build": "1.60.1.70291",
+      "build": "1.60.1.70532",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70532"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/hunter",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
+    },
+    "simulator_trees": {
+      "path": "wowsims/forever ui/sim/talents/trees",
+      "build": "1.60.1.70707",
+      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
   "removed_since_demo": [],
@@ -123,9 +128,26 @@
           ]
         },
         {
-          "id": "beast-mastery/pathfinding",
+          "id": "beast-mastery/improved-revive-pet",
           "row": 1,
           "col": 2,
+          "name": "Improved Revive Pet",
+          "icon": "ability_hunter_beastsoothe",
+          "maxRank": 2,
+          "ranks": [
+            "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%.",
+            "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
+          ],
+          "status": "same",
+          "evidence": "hunter/06-hunter-beast-mastery-improved-revive-pet.jpg",
+          "diff": [
+            "moved in build 1.60.1.70707: was row 2, col 4"
+          ]
+        },
+        {
+          "id": "beast-mastery/pathfinding",
+          "row": 2,
+          "col": 0,
           "name": "Pathfinding",
           "icon": "ability_mount_jungletiger",
           "maxRank": 2,
@@ -136,23 +158,9 @@
           "status": "moved",
           "evidence": "hunter/05-hunter-beast-mastery-pathfinding.jpg",
           "diff": [
-            "was Beast Mastery row 3, col 1"
+            "was Beast Mastery row 3, col 1",
+            "moved in build 1.60.1.70707: was row 2, col 3"
           ]
-        },
-        {
-          "id": "beast-mastery/improved-revive-pet",
-          "row": 1,
-          "col": 3,
-          "name": "Improved Revive Pet",
-          "icon": "ability_hunter_beastsoothe",
-          "maxRank": 2,
-          "ranks": [
-            "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%.",
-            "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
-          ],
-          "status": "same",
-          "evidence": "hunter/06-hunter-beast-mastery-improved-revive-pet.jpg",
-          "diff": []
         },
         {
           "id": "beast-mastery/bestial-swiftness",
@@ -266,7 +274,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -561,7 +569,7 @@
           "icon": "ability_trueshot",
           "maxRank": 1,
           "ranks": [
-            "Increases the Ranged Attack Power of party or raid members within 45 yds by 30."
+            "Increases the Ranged Attack Power of party or raid members within 45 yds by 15."
           ],
           "status": "changed",
           "classic": [
@@ -575,7 +583,7 @@
           "diff": [
             "tooltip changed",
             "was Marksmanship row 7, col 2",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -628,7 +636,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ],
           "prereq": {
             "id": "marksmanship/rapid-killing",
@@ -958,7 +966,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -983,7 +991,7 @@
           "diff": [
             "tooltip changed",
             "was Survival row 5, col 3",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ],
           "prereq": {
             "id": "survival/deterrence",
@@ -1009,7 +1017,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ]
         },
         {
@@ -1031,7 +1039,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ]
         },
         {

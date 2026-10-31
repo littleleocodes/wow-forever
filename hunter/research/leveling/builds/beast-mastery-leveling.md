@@ -7,7 +7,7 @@
 | **Build** | 30/21/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -34,40 +34,15 @@ The best Beast Mastery leveling build with at least 30 points in Beast Mastery, 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
+| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Rapid Recuperation** | 1/2 | **NEW** | Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed. |
 
 ### Survival (0)
 
 *No points.*
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Beast Mastery | Deadly Aspects | 5 | 5/0/0 |
-| 15-16 | Beast Mastery | Focused Fire | 2 | 7/0/0 |
-| 17-18 | Beast Mastery | Pathfinding | 2 | 9/0/0 |
-| 19 | Beast Mastery | Endurance Training | 1 | 10/0/0 |
-| 20-24 | Beast Mastery | Unleashed Fury | 5 | 15/0/0 |
-| 25 | Beast Mastery | Summon Hawk | 1 | 16/0/0 |
-| 26-29 | Beast Mastery | Ferocity | 4 | 20/0/0 |
-| 30 | Beast Mastery | Bestial Discipline | 1 | 21/0/0 |
-| 31-35 | Marksmanship | Lethal Attacks | 5 | 21/5/0 |
-| 36-38 | Marksmanship | Efficiency | 3 | 21/8/0 |
-| 39-43 | Marksmanship | Careful Aim | 5 | 21/13/0 |
-| 44 | Marksmanship | Efficiency | 1 | 21/14/0 |
-| 45-47 | Marksmanship | Improved Stings | 3 | 21/17/0 |
-| 48 | Marksmanship | Efficiency | 1 | 21/18/0 |
-| 49-50 | Marksmanship | Rapid Killing | 2 | 21/20/0 |
-| 51 | Marksmanship | Rapid Recuperation | 1 | 21/21/0 |
-| 52 | Beast Mastery | Ferocity | 1 | 22/21/0 |
-| 53 | Beast Mastery | Bestial Discipline | 1 | 23/21/0 |
-| 54-55 | Beast Mastery | Endurance Training | 2 | 25/21/0 |
-| 56-60 | Beast Mastery | Frenzy | 5 | 30/21/0 |
 
 ## Core talents (priority order)
 
@@ -85,6 +60,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model bm-leveling, profile leveling-st.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/21/0 -> 30/21/0; order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

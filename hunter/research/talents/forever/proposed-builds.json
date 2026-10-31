@@ -460,53 +460,31 @@
       "summary": "Allocation and order adopted on 2026-09-26 from `cand-bm-r2`, the fastest build in the fight-lab race over levels 20/30/40/50/60 (+3.8% vs the previous draft, level-weighted time per kill; the previous draft is kept under leveling/fightlab/candidates/). Core talents are ranked by the sim's removal cost at 60. Previous summary: The Classic pet-first path, re-mapped: Deadly Aspects replaces Improved Aspect of the Hawk as the first five points, Endurance Training 5/5 at 15-19 (now +15% pet health AND armor — better than Classic), Unleashed Fury at 20-24, Summon Hawk (new 16-pt) at 25, Ferocity, Bestial Swiftness -> Intimidation (now a prerequisite chain), then Focused Fire is backfilled into tier 2 at 33-34 because nothing in tiers 5-6 beats +2% damage until Frenzy, and Bestial Wrath at 40. Marksmanship afterwards: Lethal Attacks, Careful Aim (Mortal Shots prerequisite), Efficiency, Mortal Shots. Ends in the Forever BM solo/farming build.",
       "allocation": {
         "Beast Mastery": [
-          ["Endurance Training", 3],
           ["Deadly Aspects", 4],
+          ["Endurance Training", 3],
           ["Focused Fire", 2],
+          ["Improved Revive Pet", 1],
           ["Pathfinding", 2],
           ["Unleashed Fury", 5],
-          ["Summon Hawk", 1],
-          ["Ferocity", 3]
+          ["Ferocity", 2],
+          ["Summon Hawk", 1]
         ],
         "Marksmanship": [
-          ["Lethal Attacks", 5],
           ["Hawk Eye", 3],
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 1],
           ["Efficiency", 5],
           ["Improved Stings", 3],
-          ["Careful Aim", 1],
           ["Rapid Killing", 2],
           ["Trueshot Aura", 1],
+          ["Barrage", 2],
           ["Rapid Recuperation", 2],
           ["Scatter Shot", 1],
-          ["Barrage", 2],
           ["Ranged Weapon Specialization", 5],
           ["Sniper Shot", 1]
         ],
         "Survival": []
       },
-      "order": [
-        {"levels": "10-11", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 2},
-        {"levels": "12-14", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
-        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "17", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
-        {"levels": "18-19", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
-        {"levels": "26-30", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "31-35", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
-        {"levels": "36-37", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "38-40", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "41", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "42-44", "tree": "Marksmanship", "talent": "Hawk Eye", "points": 3},
-        {"levels": "45", "tree": "Marksmanship", "talent": "Careful Aim", "points": 1},
-        {"levels": "46-47", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
-        {"levels": "48", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
-        {"levels": "49-50", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
-        {"levels": "51-55", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
-        {"levels": "56", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
-        {"levels": "57-59", "tree": "Beast Mastery", "talent": "Ferocity", "points": 3},
-        {"levels": "60", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1}
-      ],
       "core": [
         {"talent": "Summon Hawk", "why": "New 16-pt at 25: a second attacker for 18s that Unleashed Fury/Ferocity also buff. Demo damage is low (53 at level 38), so it is valued as 'an extra pet on pulls', not a burst cooldown. Fight lab (2026-09-26): removing it costs +8% time per kill at 60, +2% at 30."},
         {"talent": "Efficiency", "why": "Fight lab (2026-09-26): removing it costs +5% time per kill at 60."},
@@ -562,7 +540,7 @@
           "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 17/21/25/27/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -2% at 60 and -1% at 30 (negative = faster); race winner over the leveling: cand-bm-r6; top talents at 60: Unleashed Fury +5%, Efficiency +3%, Lethal Attacks +3%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 17/21/25/27/29 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -2% at 60 and -1% at 30 (negative = faster); race winner over the leveling: cand-bm-r6; top talents at 60: Unleashed Fury +5%, Efficiency +3%, Lethal Attacks +3%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Improved Revive Pet (tier gating for Pathfinding); -1 Ferocity (over 51); order dropped (order_repair.py) (refill: the mm-raid model, leveling-st)."],
       "open_questions": ["Summon Hawk damage at 60 and whether the 'only 2 hawks' text means two can be up at once.", "Deadly Aspects rank scaling (extrapolated from 2%)."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -643,7 +621,9 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
           ["Focused Fire", 2],
+          ["Improved Revive Pet", 2],
           ["Pathfinding", 2]
         ],
         "Marksmanship": [
@@ -651,42 +631,18 @@
           ["Careful Aim", 5]
         ],
         "Survival": [
-          ["Improved Tracking", 5],
           ["Deflection", 4],
+          ["Improved Tracking", 5],
           ["Savage Strikes", 2],
-          ["Surefooted", 3],
           ["Deterrence", 1],
+          ["Surefooted", 3],
           ["Predator's Edge", 5],
-          ["Counterattack", 1],
-          ["Strider Kick", 1],
           ["Expose Prey", 2],
           ["Resourcefulness", 2],
-          ["Lightning Reflexes", 5],
-          ["Lacerating Strikes", 1]
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 4]
         ]
       },
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
-        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
-        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
-        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "31-32", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "33", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "34-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "39", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "40-44", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
-        {"levels": "45-48", "tree": "Marksmanship", "talent": "Careful Aim", "points": 4},
-        {"levels": "49-53", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "54-55", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "56", "tree": "Marksmanship", "talent": "Careful Aim", "points": 1},
-        {"levels": "57", "tree": "Survival", "talent": "Counterattack", "points": 1},
-        {"levels": "58", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1},
-        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2}
-      ],
       "core": [
         {"talent": "Strider Kick", "why": "100% weapon damage every 8 s: the biggest single talent at 60 (fight lab: +10.9% time per kill without it)."},
         {"talent": "Resourcefulness", "why": "-60% mana on melee abilities and regen on crits: the melee loop runs out of mana without it (fight lab +11.5% at 60, almost all downtime)."},
@@ -719,7 +675,7 @@
           "why": "+run speed between pulls; the fight lab uses a fixed 6 s travel, so only the scorer's travel value counts it."
         }
       ],
-      "notes": ["Pull with Hunter's Mark and Serpent Sting and send the pet; the pet holds the mob while you strike beside it: Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.", "Why no Improved Wing Clip, Improved Aspect of the Monkey or Lone Wolf (2026-09-27 scenario audit): a melee hunter stands next to the mob, so a root to open distance does nothing (fight lab 0.0% at 30 and 60); the pet keeps the mob off you, so dodge talents add nothing (0.0%); and dropping the pet at 51 made the hunter take every hit (downtime 3.4 s -> 10.3 s per kill at 60).", "Fight lab: hunter/leveling/fightlab/melee-dps.md compares this build with the Beast Mastery and Marksmanship leveling builds under their own models."],
+      "notes": ["Pull with Hunter's Mark and Serpent Sting and send the pet; the pet holds the mob while you strike beside it: Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.", "Why no Improved Wing Clip, Improved Aspect of the Monkey or Lone Wolf (2026-09-27 scenario audit): a melee hunter stands next to the mob, so a root to open distance does nothing (fight lab 0.0% at 30 and 60); the pet keeps the mob off you, so dodge talents add nothing (0.0%); and dropping the pet at 51 made the hunter take every hit (downtime 3.4 s -> 10.3 s per kill at 60).", "Fight lab: hunter/leveling/fightlab/melee-dps.md compares this build with the Beast Mastery and Marksmanship leveling builds under their own models.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/10/32 -> 12/10/29; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Lacerating Strikes (over 51); -1 Counterattack (over 51); -1 Lightning Reflexes (over 51); order dropped (order_repair.py) (refill: the melee-dps model, leveling-st)."],
       "open_questions": ["Melee hunter numbers are the scorer's assumptions and the fight lab's rotation, not measurements: the community simulator has no melee hunter rotation, so the raid build has no simulator DPS.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Counterattack after a parry: the base parry chance of a hunter in the beta (5% assumed, +2%/rank Deflection).", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack.", "Whether the pet holds melee-hunter threat as well as the fight lab assumes (it Growls every 5 s and loses the mob when your threat passes 130% of its own)."],
       "sources": ["https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/optimizer/melee-dps-raid-dps.md", "hunter/leveling/optimizer/melee-dps-leveling-st.md"]
     },
@@ -746,9 +702,9 @@
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 5],
           ["Careful Aim", 5],
+          ["Efficiency", 5],
+          ["Improved Stings", 3],
           ["Rapid Killing", 2],
           ["Rapid Recuperation", 1]
         ],
@@ -763,31 +719,9 @@
         {"talent": "Ferocity", "why": "The scorer's value in this build: +5.8% of its score (model bm-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model bm-leveling, profile leveling-st."],
+      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model bm-leveling, profile leveling-st.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/21/0 -> 30/21/0; order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st)."],
       "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "19", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
-        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
-        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
-        {"levels": "30", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
-        {"levels": "31-35", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "36-38", "tree": "Marksmanship", "talent": "Efficiency", "points": 3},
-        {"levels": "39-43", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "44", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
-        {"levels": "45-47", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "48", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
-        {"levels": "49-50", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "51", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 1},
-        {"levels": "52", "tree": "Beast Mastery", "talent": "Ferocity", "points": 1},
-        {"levels": "53", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
-        {"levels": "54-55", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 2},
-        {"levels": "56-60", "tree": "Beast Mastery", "talent": "Frenzy", "points": 5}
-      ]
+      "sources": ["https://talentsforever.com/hunter"]
     },
     {
       "id": "beast-mastery-pvp",
@@ -1148,22 +1082,21 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
+          ["Endurance Training", 3],
           ["Focused Fire", 2],
-          ["Pathfinding", 2],
           ["Unleashed Fury", 5],
           ["Ferocity", 5]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
           ["Efficiency", 5],
           ["Improved Stings", 3],
-          ["Careful Aim", 5],
           ["Rapid Killing", 2],
           ["Trueshot Aura", 1],
-          ["Scatter Shot", 1],
           ["Barrage", 1],
           ["Rapid Recuperation", 2],
+          ["Scatter Shot", 1],
           ["Ranged Weapon Specialization", 5],
           ["Sniper Shot", 1]
         ],
@@ -1180,30 +1113,9 @@
         {"talent": "Improved Stings", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-st.md"],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "15-19", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
-        {"levels": "20-22", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "23-24", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
-        {"levels": "25", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "26-28", "tree": "Marksmanship", "talent": "Careful Aim", "points": 3},
-        {"levels": "29", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 1},
-        {"levels": "30", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
-        {"levels": "31", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 1},
-        {"levels": "32-33", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
-        {"levels": "34", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
-        {"levels": "35-39", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
-        {"levels": "40", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
-        {"levels": "41-45", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "46-47", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "48-49", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "50", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
-        {"levels": "51-55", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "56-60", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-bm-leveling-solo-60",
@@ -1215,22 +1127,22 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
+          ["Endurance Training", 3],
           ["Focused Fire", 2],
           ["Pathfinding", 2],
           ["Unleashed Fury", 5],
-          ["Ferocity", 5]
+          ["Ferocity", 3]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
+          ["Careful Aim", 4],
           ["Efficiency", 5],
           ["Improved Stings", 3],
-          ["Careful Aim", 4],
           ["Rapid Killing", 2],
           ["Trueshot Aura", 1],
-          ["Scatter Shot", 1],
           ["Barrage", 2],
           ["Rapid Recuperation", 2],
+          ["Scatter Shot", 1],
           ["Ranged Weapon Specialization", 5],
           ["Sniper Shot", 1]
         ],
@@ -1247,29 +1159,9 @@
         {"talent": "Improved Stings", "why": "Removing it costs 1.2 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/bm-leveling-solo-60.md"],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/bm-leveling-solo-60.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Ferocity (over 51); -1 Ferocity (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, solo-60)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "15-19", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
-        {"levels": "20-22", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "23-24", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
-        {"levels": "25", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "26-27", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
-        {"levels": "28-29", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "30-31", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
-        {"levels": "32", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
-        {"levels": "33-34", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
-        {"levels": "35-39", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
-        {"levels": "40", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
-        {"levels": "41-45", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "46-47", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "48-49", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "50", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
-        {"levels": "51-55", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "56-60", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-melee-dps-solo-60",
@@ -1281,9 +1173,9 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
           ["Focused Fire", 2],
-          ["Pathfinding", 2],
-          ["Improved Revive Pet", 1],
+          ["Improved Revive Pet", 2],
           ["Unleashed Fury", 5]
         ],
         "Marksmanship": [
@@ -1291,15 +1183,15 @@
           ["Careful Aim", 5]
         ],
         "Survival": [
-          ["Improved Tracking", 5],
           ["Deflection", 4],
+          ["Improved Tracking", 5],
           ["Savage Strikes", 2],
-          ["Surefooted", 3],
           ["Deterrence", 1],
+          ["Surefooted", 3],
           ["Predator's Edge", 5],
-          ["Strider Kick", 1],
-          ["Resourcefulness", 2],
           ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Strider Kick", 1],
           ["Survivalist's Discipline", 1]
         ]
       },
@@ -1314,30 +1206,9 @@
         {"talent": "Improved Tracking", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/melee-dps-solo-60.md"],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/melee-dps-solo-60.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 15/10/26 -> 15/10/26; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the melee-dps model, solo-60)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
-        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
-        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
-        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "31", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "32-33", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "34", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "35-39", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "40-44", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "45-49", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "50-51", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "52-53", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "54", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
-        {"levels": "55-59", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "60", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-mm-raid-leveling-st",
@@ -1349,22 +1220,23 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
           ["Focused Fire", 2],
           ["Improved Revive Pet", 2],
-          ["Pathfinding", 2],
-          ["Bestial Swiftness", 1]
+          ["Bestial Swiftness", 1],
+          ["Pathfinding", 2]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
           ["Careful Aim", 5],
-          ["Improved Stings", 3],
           ["Efficiency", 5],
+          ["Improved Stings", 3],
           ["Rapid Killing", 2],
+          ["Mortal Shots", 1],
           ["Trueshot Aura", 1],
-          ["Mortal Shots", 2],
-          ["Scatter Shot", 1],
-          ["Rapid Recuperation", 2],
           ["Barrage", 2],
+          ["Rapid Recuperation", 2],
+          ["Scatter Shot", 1],
           ["Ranged Weapon Specialization", 5],
           ["Sniper Shot", 1]
         ],
@@ -1383,36 +1255,9 @@
         {"talent": "Trueshot Aura", "why": "Removing it costs 1.6 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/mm-raid-leveling-st.md"],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/mm-raid-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 12/34/5 -> 13/33/5; +1 Endurance Training (tier gating for Bestial Swiftness); -1 Mortal Shots (over 51); order dropped (order_repair.py) (refill: the mm-raid model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
-        {"levels": "11-15", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "16-18", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "19-23", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "24-25", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "26", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "27-30", "tree": "Marksmanship", "talent": "Efficiency", "points": 4},
-        {"levels": "31", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
-        {"levels": "32-33", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
-        {"levels": "34", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
-        {"levels": "35", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
-        {"levels": "36-40", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
-        {"levels": "41", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
-        {"levels": "42-44", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 3},
-        {"levels": "45-46", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
-        {"levels": "47", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
-        {"levels": "48-49", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "50-51", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
-        {"levels": "52-53", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 2},
-        {"levels": "54", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
-        {"levels": "55", "tree": "Beast Mastery", "talent": "Bestial Swiftness", "points": 1},
-        {"levels": "56", "tree": "Survival", "talent": "Improved Tracking", "points": 1},
-        {"levels": "57", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
-        {"levels": "58", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
-        {"levels": "59-60", "tree": "Marksmanship", "talent": "Mortal Shots", "points": 2}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-melee-dps-raid-dps",
@@ -1469,20 +1314,21 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Pathfinding", 2]
+          ["Endurance Training", 1],
+          ["Focused Fire", 2]
         ],
         "Marksmanship": [
-          ["Lethal Attacks", 5],
           ["Hawk Eye", 3],
           ["Improved Concussive Shot", 1],
+          ["Lethal Attacks", 5],
           ["Efficiency", 1],
           ["Rapid Killing", 2]
         ],
         "Survival": [
           ["Improved Tracking", 5],
-          ["Improved Wing Clip", 3],
-          ["Savage Strikes", 2],
           ["Entrapment", 4],
+          ["Improved Wing Clip", 3],
+          ["Savage Strikes", 1],
           ["Deterrence", 1],
           ["Surefooted", 3],
           ["Counterattack", 1],
@@ -1505,33 +1351,9 @@
         {"talent": "Rapid Killing", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r2 on 2026-10-18: an earlier optimizer round beat the last export in the fight lab (40.0s vs 49.3s per kill, level-weighted).", "Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-aoe.md"],
+      "notes": ["Allocation and order taken from cand-aoe-r2 on 2026-10-18: an earlier optimizer round beat the last export in the fight lab (40.0s vs 49.3s per kill, level-weighted).", "Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-aoe.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/12/32 -> 8/12/31; +1 Focused Fire (tier gating for Pathfinding); +1 Focused Fire (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Savage Strikes (over 51); -1 Pathfinding (over 51); -1 Pathfinding (over 51); -1 Endurance Training (over 51); -1 Endurance Training (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-aoe)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-17", "tree": "Survival", "talent": "Improved Wing Clip", "points": 3},
-        {"levels": "18-19", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "20", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "21-23", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "24", "tree": "Survival", "talent": "Entrapment", "points": 1},
-        {"levels": "25", "tree": "Survival", "talent": "Counterattack", "points": 1},
-        {"levels": "26-27", "tree": "Survival", "talent": "Survival Tactics", "points": 2},
-        {"levels": "28-29", "tree": "Survival", "talent": "Entrapment", "points": 2},
-        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "31-32", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "33-34", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
-        {"levels": "35-39", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
-        {"levels": "40", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1},
-        {"levels": "41-45", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "46-48", "tree": "Marksmanship", "talent": "Hawk Eye", "points": 3},
-        {"levels": "49", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
-        {"levels": "50", "tree": "Marksmanship", "talent": "Improved Concussive Shot", "points": 1},
-        {"levels": "51-52", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "53-57", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "58-59", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "60", "tree": "Survival", "talent": "Entrapment", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-melee-dps-leveling-st",
@@ -1543,9 +1365,9 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
           ["Focused Fire", 2],
-          ["Pathfinding", 2],
-          ["Improved Revive Pet", 1],
+          ["Improved Revive Pet", 2],
           ["Unleashed Fury", 5]
         ],
         "Marksmanship": [
@@ -1553,15 +1375,15 @@
           ["Careful Aim", 5]
         ],
         "Survival": [
-          ["Improved Tracking", 5],
           ["Deflection", 4],
+          ["Improved Tracking", 5],
           ["Savage Strikes", 2],
-          ["Surefooted", 3],
           ["Deterrence", 1],
+          ["Surefooted", 3],
           ["Predator's Edge", 5],
-          ["Strider Kick", 1],
-          ["Resourcefulness", 2],
           ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Strider Kick", 1],
           ["Survivalist's Discipline", 1]
         ]
       },
@@ -1576,30 +1398,9 @@
         {"talent": "Improved Tracking", "why": "Removing it costs 1.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/melee-dps-leveling-st.md"],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/melee-dps-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 15/10/26 -> 15/10/26; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the melee-dps model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
-        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
-        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
-        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "31", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "32-33", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "34", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "35-39", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "40-44", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "45-49", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "50-51", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "52-53", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "54", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
-        {"levels": "55-59", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "60", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "opt-mm-raid-raid-dps",
@@ -1792,48 +1593,27 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
+          ["Endurance Training", 2],
           ["Focused Fire", 2],
-          ["Pathfinding", 1],
           ["Improved Revive Pet", 1],
+          ["Pathfinding", 1],
           ["Unleashed Fury", 5],
           ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Spirit Bond", 2],
           ["Bestial Discipline", 2],
+          ["Spirit Bond", 2],
           ["Frenzy", 3]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 5],
           ["Careful Aim", 5],
+          ["Efficiency", 5],
+          ["Improved Stings", 3],
           ["Trueshot Aura", 1]
         ],
         "Survival": [
           ["Improved Tracking", 4]
         ]
       },
-      "order": [
-        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "17", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
-        {"levels": "18", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
-        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
-        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "25-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
-        {"levels": "30-31", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 2},
-        {"levels": "32-33", "tree": "Beast Mastery", "talent": "Spirit Bond", "points": 2},
-        {"levels": "34", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
-        {"levels": "35-37", "tree": "Beast Mastery", "talent": "Frenzy", "points": 3},
-        {"levels": "38-42", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "43-47", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
-        {"levels": "48-50", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "51-52", "tree": "Marksmanship", "talent": "Careful Aim", "points": 2},
-        {"levels": "53", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
-        {"levels": "54-56", "tree": "Marksmanship", "talent": "Careful Aim", "points": 3},
-        {"levels": "57-60", "tree": "Survival", "talent": "Improved Tracking", "points": 4}
-      ],
       "core": [
         {"talent": "Unleashed Fury", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Bestial Discipline", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1845,7 +1625,7 @@
         {"talent": "Frenzy", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.03; beast-mastery-leveling 24.59, bm-solo-farm 25.13. The search simulated 25,096 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.03; beast-mastery-leveling 24.59, bm-solo-farm 25.13. The search simulated 25,096 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 28/19/4 -> 28/19/4; +1 Endurance Training (tier gating for Pathfinding); -1 Summon Hawk (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st)."],
       "open_questions": ["An open-search Beast-Marks leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512011050512023-0053550001-4-7"]
     },

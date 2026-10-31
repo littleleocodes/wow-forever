@@ -7,7 +7,7 @@
 | **Build** | 2/31/18 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -92,7 +92,7 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 | 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
 | 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.8 |
 | 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.8 |
-| 10 | cast Shadow Bolt | 13.1 |
+| 10 | cast Shadow Bolt (rank 9) | 13.1 |
 
 Damage by ability:
 

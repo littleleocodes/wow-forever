@@ -23,12 +23,16 @@ import spec_modes as SM  # noqa: E402
 from fmt_json import dumps  # noqa: E402
 from optimize import Optimizer, TOTAL  # noqa: E402
 import validate_builds as VB  # noqa: E402
+import data_build as DB  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 # old name -> new name: the client renamed the talent in place and kept what it does (70425: Improved Fire Nova -> Trial by Fire adds
 # Magma Totem duration; Wake of Fire -> Improved Fire Blast keeps the cooldown and drops the on-kill crit). Malediction -> Grim Reach and
 # Improved Fade -> Dark Inspiration share a cell but not an effect: not renames.
-RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire"}, "mage": {"Wake of Fire": "Improved Fire Blast"}}
+# 70707 (live hotfixes of 28-30 Oct): Improved Fireball -> Accelerant (same cell, still the Fireball cast time, plus Arcane Wrath), Elemental
+# Precision -> Precision (same cell, hit for every school); Gift of the Earthmother's cell now holds Bloom, a different effect: not a rename.
+RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire"},
+           "mage": {"Wake of Fire": "Improved Fire Blast", "Improved Fireball": "Accelerant", "Elemental Precision": "Precision"}}
 
 
 def model_for(cls, b, lead):
@@ -48,7 +52,11 @@ def model_for(cls, b, lead):
          "shaman": "resto-heal" if role == "healer" else "elemental-dps" if lead == "Elemental" else "enhancement-dps",
          "mage": ("fire-leveling" if lead == "Fire" else "frost-leveling") if lev else ("fire-raid" if lead == "Fire" else "frost-raid"),
          "warlock": "affliction-leveling" if lev else ("affliction-raid" if lead == "Affliction" else
-                                                         "fire-destro-raid" if "fire" in b["id"] else "sb-raid")}
+                                                         "fire-destro-raid" if "fire" in b["id"] else "sb-raid"),
+         "druid": "resto-heal" if role == "healer" else "feral-bear-tank" if role == "tank" else "balance-dps" if lead == "Balance"
+                  else "resto-heal" if lead == "Restoration" else "feral-cat-dps",
+         "hunter": "bm-leveling" if lev and lead == "Beast Mastery" else "melee-dps" if lead == "Survival" or "melee" in b["id"]
+                   else "mm-raid"}
     return M[cls], profile
 
 
@@ -144,7 +152,7 @@ def main():
                 b.pop("order", None)
                 b.pop("order_label", None)
                 log.append("order dropped (order_repair.py)")
-            b.setdefault("notes", []).append(f"{TODAY} (repair_builds.py, client build 70425 trees): {old} -> {opt.tree.split(flat)}; "
+            b.setdefault("notes", []).append(f"{TODAY} (repair_builds.py, client build {DB.BUILD} trees): {old} -> {opt.tree.split(flat)}; "
                                              + "; ".join(log) + f" (refill: the {mp[0]} model, {mp[1]}).")
             errs = VB.validate_build(trees, b, b["id"])
             print(f"{cls} {b['id']}: {old} -> {opt.tree.split(flat)} [{mp[0]} {mp[1]}] {'; '.join(log)}"

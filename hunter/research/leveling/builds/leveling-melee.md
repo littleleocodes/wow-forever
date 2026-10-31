@@ -1,13 +1,13 @@
-# Melee Survival leveling (dual wield, pet kept) — 9/10/32
+# Melee Survival leveling (dual wield, pet kept) — 12/10/29
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 9/10/32 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 12/10/29 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,12 +15,14 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 
 ## Point allocation
 
-### Beast Mastery (9)
+### Beast Mastery (12)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
+| **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 
 ### Marksmanship (10)
@@ -30,47 +32,20 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 
-### Survival (32)
+### Survival (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Deflection** | 4/5 | unchanged | Increases your Parry chance by 4%. |
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
-| **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
+| **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%. |
-| **Counterattack** | 1/1 | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. |
-| **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
-| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
-| **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
-| 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
-| 17-19 | Survival | Deflection | 3 | 0/0/10 |
-| 20-22 | Survival | Surefooted | 3 | 0/0/13 |
-| 23 | Survival | Deterrence | 1 | 0/0/14 |
-| 24 | Survival | Deflection | 1 | 0/0/15 |
-| 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
-| 30 | Survival | Strider Kick | 1 | 0/0/21 |
-| 31-32 | Survival | Expose Prey | 2 | 0/0/23 |
-| 33 | Survival | Resourcefulness | 1 | 0/0/24 |
-| 34-38 | Marksmanship | Lethal Attacks | 5 | 0/5/24 |
-| 39 | Survival | Resourcefulness | 1 | 0/5/25 |
-| 40-44 | Survival | Lightning Reflexes | 5 | 0/5/30 |
-| 45-48 | Marksmanship | Careful Aim | 4 | 0/9/30 |
-| 49-53 | Beast Mastery | Deadly Aspects | 5 | 5/9/30 |
-| 54-55 | Beast Mastery | Focused Fire | 2 | 7/9/30 |
-| 56 | Marksmanship | Careful Aim | 1 | 7/10/30 |
-| 57 | Survival | Counterattack | 1 | 7/10/31 |
-| 58 | Survival | Lacerating Strikes | 1 | 7/10/32 |
-| 59-60 | Beast Mastery | Pathfinding | 2 | 9/10/32 |
+| **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
+| **Lightning Reflexes** | 4/5 | changed | Increases your Agility by 8%. |
 
 ## Core talents (priority order)
 
@@ -122,6 +97,7 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 - Pull with Hunter's Mark and Serpent Sting and send the pet; the pet holds the mob while you strike beside it: Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.
 - Why no Improved Wing Clip, Improved Aspect of the Monkey or Lone Wolf (2026-09-27 scenario audit): a melee hunter stands next to the mob, so a root to open distance does nothing (fight lab 0.0% at 30 and 60); the pet keeps the mob off you, so dodge talents add nothing (0.0%); and dropping the pet at 51 made the hunter take every hit (downtime 3.4 s -> 10.3 s per kill at 60).
 - Fight lab: hunter/leveling/fightlab/melee-dps.md compares this build with the Beast Mastery and Marksmanship leveling builds under their own models.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/10/32 -> 12/10/29; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Lacerating Strikes (over 51); -1 Counterattack (over 51); -1 Lightning Reflexes (over 51); order dropped (order_repair.py) (refill: the melee-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

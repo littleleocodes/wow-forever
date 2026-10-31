@@ -1,13 +1,13 @@
-# Arcane — Arcane Blast (raid) — 36/11/4
+# Arcane — Arcane Blast (raid) — 31/13/7
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 36/11/4 (Arcane / Fire / Frost) |
+| **Build** | 31/13/7 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,15 +15,14 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Point allocation
 
-### Arcane (36)
+### Arcane (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
@@ -32,21 +31,21 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 | **Arcane Power** | 1/1 | changed | For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast. |
 
-### Fire (11)
+### Fire (13)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
-| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
+| **Incineration** | 5/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Burning Soul** | 1/3 | changed | Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%. |
+| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
 
-### Frost (4)
+### Frost (7)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
-| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. |
+| **Improved Frostbolt** | 4/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.4 sec. |
+| **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 
 ## Core talents (priority order)
 
@@ -134,9 +133,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | 7 | cast Fireball (rank 11) | 0.1 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |
-| 10 | cast Frost Blast | 0.3 |
+| 10 | cast spell 1326055 | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Wrath (needs the Arcane Wrath talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Wrath (its condition never held in these fights).
 
 Damage by ability:
 
@@ -159,6 +158,7 @@ Damage by ability:
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arcane: its full-raid winner is +0.36% against it, under the 0.5% bar for a new build.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 35/11/5 -> 35/11/5; Wake of Fire -> Improved Fire Blast (renamed) (refill: the frost-raid model, raid-dps).
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 35/11/5 -> 36/11/4; Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps).
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/11/4 -> 31/13/7; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Incineration (tier gating for Ignite); +1 Incineration (tier gating for Ignite); refill +3 Improved Frostbolt (refill: the frost-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

@@ -7,7 +7,7 @@
 | **Build** | 0/20/31 (Elemental / Enhancement / Restoration) |
 | **Role** | HEALER — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -41,7 +41,7 @@ The Restoration PvP build derived on 2026-09-30 (derive_pvp.py): the stats model
 | **Tidal Focus** | 4/5 | changed | Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%. |
 | **Improved Reincarnation** | 2/2 | changed | Reduces the cooldown of your Reincarnation spell by 20 min, increases your maximum health by 4%, and increases the amount of health and Mana you reincarnate with by an additional 20%. |
 | **Ancestral Healing** | 3/3 | moved | Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells. |
-| **Healing Focus** | 3/3 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell. |
+| **Healing Focus** | 3/3 | changed | Gives your healing spells a 70% chance to not lose casting time when you take damage. |
 | **Restorative Totems** | 1/5 | changed | Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%. |
 | **Mana Tide Totem** | 1/1 | changed | Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards. |
 | **Healing Way** | 3/3 | changed | Increases the amount healed by your Healing Wave spell by 25%. |

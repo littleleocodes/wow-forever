@@ -7,7 +7,7 @@
 | **Build** | 21/0/30 (Balance / Feral Combat / Restoration) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `resto-regrowth-natures-grace` |
 
 ## Summary
@@ -20,10 +20,10 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Wrath** | 1/5 | changed | Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%. |
 | **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
-| **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
+| **Improved Wrath** | 1/5 | changed | Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
+| **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 | **Improved Entangling Roots** | 3/3 | changed | Increases the damage done by your Entangling Roots spell by 75%, and its victims can take up to 75% more damage without interrupting the effect. |
@@ -39,15 +39,14 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Nature's Focus** | 5/5 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
+| **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Gift of Nature** | 5/5 | changed | Increases the effect of all your healing spells by 10%. |
-| **Gift of the Earthmother** | 1/1 | **NEW** | Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells. |
 | **Improved Rejuvenation** | 3/3 | moved | Increases the effect of your Rejuvenation spell by 15%. |
 | **Swiftmend** | 1/1 | changed | Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells. |
+| **Living Spirit** | 2/3 | **NEW** | Increases your Spirit by 10%. |
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell becomes an instant cast spell. |
-| **Living Spirit** | 1/3 | **NEW** | Increases your Spirit by 5%. |
 | **Improved Regrowth** | 5/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 50%. |
 
 ## Core talents (priority order)
@@ -75,6 +74,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 - Loses Wild Growth, Living Spirit 3 and Tranquil Spirit versus the deep Restoration build.
 - Beta client 1.60.1.69893 removed Balance of Nature: its 1 gating point moved to Improved Wrath.
 - 2026-09-30: renamed from "Restoration / Balance — Regrowth / Nature's Grace (21/0/30)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 21/0/30; Gift of the Earthmother 1 gone; +1 Living Spirit (tier gating for Improved Regrowth) (refill: the resto-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

@@ -7,7 +7,7 @@
 | **Build** | 9/11/31 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -112,7 +112,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 10 | if Immolate is on the target: cast Conflagrate | 4.5 |
-| 11 | cast Shadow Bolt | 11.3 |
+| 11 | cast Shadow Bolt (rank 9) | 11.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn, cast Incinerate (its condition never held in these fights).
 

@@ -1,13 +1,13 @@
-# Arcane — Leveling (derived) — 30/0/21
+# Arcane — Leveling (derived) — 29/0/22
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 30/0/21 (Arcane / Fire / Frost) |
+| **Build** | 29/0/22 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,14 +15,14 @@ The Arcane leveling build derived on 2026-09-30 (derive_leveling.py): searched i
 
 ## Point allocation
 
-### Arcane (30)
+### Arcane (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Focus** | 3/5 | changed | Improves your chance to hit with Arcane spells by 3%. |
+| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 100% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Improved Channeling** | 1/5 | **NEW** | Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Resilience** | 1/2 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 1/2 | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
@@ -36,48 +36,18 @@ The Arcane leveling build derived on 2026-09-30 (derive_leveling.py): searched i
 
 *No points.*
 
-### Frost (21)
+### Frost (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 2/3 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
+| **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
-| **Fingers of Frost** | 1/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 1 spell cast as if the target were Frozen. Lasts 15 sec. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
-| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
-| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
-| 20 | Frost | Ice Lance | 1 | 0/0/11 |
-| 21-24 | Frost | Ice Shards | 4 | 0/0/15 |
-| 25 | Frost | Shatter | 1 | 0/0/16 |
-| 26 | Frost | Ice Block | 1 | 0/0/17 |
-| 27 | Frost | Ice Shards | 1 | 0/0/18 |
-| 28-29 | Frost | Shatter | 2 | 0/0/20 |
-| 30 | Frost | Fingers of Frost | 1 | 0/0/21 |
-| 31-32 | Arcane | Wand Specialization | 2 | 2/0/21 |
-| 33-35 | Arcane | Arcane Focus | 3 | 5/0/21 |
-| 36-40 | Arcane | Arcane Concentration | 5 | 10/0/21 |
-| 41-42 | Arcane | Arcane Subtlety | 2 | 12/0/21 |
-| 43 | Arcane | Arcane Resilience | 1 | 13/0/21 |
-| 44 | Arcane | Magic Absorption | 1 | 14/0/21 |
-| 45 | Arcane | Arcane Impact | 1 | 15/0/21 |
-| 46-48 | Arcane | Arcane Meditation | 3 | 18/0/21 |
-| 49 | Arcane | Arcane Shielding | 1 | 19/0/21 |
-| 50 | Arcane | Arcane Impact | 1 | 20/0/21 |
-| 51 | Arcane | Presence of Mind | 1 | 21/0/21 |
-| 52 | Arcane | Arcane Impact | 1 | 22/0/21 |
-| 53-55 | Arcane | Arcane Mind | 3 | 25/0/21 |
-| 56-58 | Arcane | Arcane Instability | 3 | 28/0/21 |
-| 59-60 | Arcane | Arcane Mind | 2 | 30/0/21 |
+| **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
 ## Core talents (priority order)
 
@@ -98,6 +68,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Piercing Ice 2 gone; +1 Elemental Precision (tier gating for Ice Block); +1 Elemental Precision (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 - 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 36.1 s per kill; own tree first 38.0 s; own tree last 36.1 s.
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/0/21 -> 29/0/22; Arcane Focus 3 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); refill +1 Fingers of Frost; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

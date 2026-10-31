@@ -7,7 +7,7 @@
 | **Build** | 15/10/26 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Solo/farming |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -20,9 +20,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
-| **Improved Revive Pet** | 1/2 | unchanged | Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%. |
+| **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 
 ### Marksmanship (10)
@@ -36,40 +36,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Deflection** | 4/5 | unchanged | Increases your Parry chance by 4%. |
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
-| **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
+| **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%. |
-| **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Resourcefulness** | 2/2 | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
+| **Resourcefulness** | 2/2 | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
+| **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Survivalist's Discipline** | 1/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 20%. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
-| 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
-| 17-19 | Survival | Deflection | 3 | 0/0/10 |
-| 20-22 | Survival | Surefooted | 3 | 0/0/13 |
-| 23 | Survival | Deterrence | 1 | 0/0/14 |
-| 24 | Survival | Deflection | 1 | 0/0/15 |
-| 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
-| 30 | Survival | Strider Kick | 1 | 0/0/21 |
-| 31 | Survival | Resourcefulness | 1 | 0/0/22 |
-| 32-33 | Survival | Expose Prey | 2 | 0/0/24 |
-| 34 | Survival | Resourcefulness | 1 | 0/0/25 |
-| 35-39 | Marksmanship | Lethal Attacks | 5 | 0/5/25 |
-| 40-44 | Marksmanship | Careful Aim | 5 | 0/10/25 |
-| 45-49 | Beast Mastery | Deadly Aspects | 5 | 5/10/25 |
-| 50-51 | Beast Mastery | Focused Fire | 2 | 7/10/25 |
-| 52-53 | Beast Mastery | Pathfinding | 2 | 9/10/25 |
-| 54 | Beast Mastery | Improved Revive Pet | 1 | 10/10/25 |
-| 55-59 | Beast Mastery | Unleashed Fury | 5 | 15/10/25 |
-| 60 | Survival | Survivalist's Discipline | 1 | 15/10/26 |
 
 ## Core talents (priority order)
 
@@ -89,6 +65,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - Report: hunter/research/talents/forever/optimizer/melee-dps-solo-60.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 15/10/26 -> 15/10/26; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the melee-dps model, solo-60).
 
 ## Open questions (verify in the live game)
 

@@ -280,56 +280,11 @@
    }
   ]
  },
- "Heart of the Wild": {
+ "Furor": {
   "tree": "Feral Combat",
   "max": 5,
-  "text": "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
-  "effects": [
-   {
-    "channel": "stat",
-    "scope": [
-     "stat:intellect"
-    ],
-    "values": [
-     0.02,
-     0.04,
-     0.06,
-     0.08,
-     0.1
-    ],
-    "source": "parsed"
-   },
-   {
-    "channel": "stat",
-    "scope": [
-     "stat:stamina",
-     "form:bear"
-    ],
-    "values": [
-     0.04,
-     0.08,
-     0.12,
-     0.16,
-     0.2
-    ],
-    "source": "parsed"
-   },
-   {
-    "channel": "stat",
-    "scope": [
-     "stat:strength",
-     "form:cat"
-    ],
-    "values": [
-     0.02,
-     0.04,
-     0.06,
-     0.08,
-     0.1
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bea",
+  "effects": []
  },
  "Feral Swiftness": {
   "tree": "Feral Combat",
@@ -441,22 +396,22 @@
   "text": "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.",
   "effects": []
  },
- "Shifting Power": {
-  "tree": "Feral Combat",
-  "max": 1,
-  "text": "Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
-  "effects": []
- },
- "Primal Bite": {
-  "tree": "Feral Combat",
-  "max": 1,
-  "text": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
-  "effects": []
- },
  "Predatory Strikes": {
   "tree": "Feral Combat",
   "max": 3,
   "text": "Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level.",
+  "effects": []
+ },
+ "Lacerate": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the s",
+  "effects": []
+ },
+ "Predatory Discipline": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy.",
   "effects": []
  },
  "Blood Frenzy": {
@@ -464,24 +419,6 @@
   "max": 2,
   "text": "Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Poi",
   "effects": []
- },
- "Improved Shifting Power": {
-  "tree": "Feral Combat",
-  "max": 2,
-  "text": "Reduces the cooldown of your Shifting Power spell by 4 sec.",
-  "effects": [
-   {
-    "channel": "cooldown",
-    "scope": [
-     "ability:Shifting Power"
-    ],
-    "values": [
-     4.0,
-     8.0
-    ],
-    "source": "parsed"
-   }
-  ]
  },
  "Leader of the Pack": {
   "tree": "Feral Combat",
@@ -502,27 +439,6 @@
     "values": [
      0.1,
      0.2
-    ],
-    "source": "parsed"
-   }
-  ]
- },
- "Natural Reaction": {
-  "tree": "Feral Combat",
-  "max": 5,
-  "text": "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
-  "effects": [
-   {
-    "channel": "surv",
-    "scope": [
-     "surv:dodge"
-    ],
-    "values": [
-     0.012,
-     0.024,
-     0.036,
-     0.048,
-     0.06
     ],
     "source": "parsed"
    }
@@ -549,27 +465,43 @@
    }
   ]
  },
- "Berserk": {
+ "Natural Reaction": {
   "tree": "Feral Combat",
-  "max": 1,
-  "text": "Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for t",
+  "max": 5,
+  "text": "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge.",
   "effects": [
    {
-    "channel": "crit",
+    "channel": "surv",
     "scope": [
-     "ability:Combo Point-generating"
+     "surv:dodge"
     ],
     "values": [
-     1.0
+     0.012,
+     0.024,
+     0.036,
+     0.048,
+     0.06
     ],
     "source": "parsed"
    }
   ]
  },
+ "Primal Bite": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
+  "effects": []
+ },
+ "Shifting Power": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
+  "effects": []
+ },
  "Nature's Focus": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.",
+  "text": "Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",
@@ -587,11 +519,56 @@
    }
   ]
  },
- "Furor": {
+ "Heart of the Wild": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bea",
-  "effects": []
+  "text": "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:intellect"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:stamina",
+     "form:bear"
+    ],
+    "values": [
+     0.04,
+     0.08,
+     0.12,
+     0.16,
+     0.2
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:strength",
+     "form:cat"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Naturalist": {
   "tree": "Restoration",
@@ -628,21 +605,20 @@
    }
   ]
  },
- "Subtlety": {
+ "Reflection": {
   "tree": "Restoration",
   "max": 3,
-  "text": "Reduces the threat generated by your Nature and Arcane spells by 10%.",
+  "text": "Allows 17% of your Mana regeneration to continue while casting.",
   "effects": [
    {
-    "channel": "threat",
+    "channel": "regen",
     "scope": [
-     "school:arcane",
-     "school:nature"
+     "all"
     ],
     "values": [
-     0.1,
-     0.2,
-     0.3
+     0.17,
+     0.33,
+     0.5
     ],
     "source": "parsed"
    }
@@ -667,20 +643,21 @@
    }
   ]
  },
- "Reflection": {
+ "Subtlety": {
   "tree": "Restoration",
   "max": 3,
-  "text": "Allows 17% of your Mana regeneration to continue while casting.",
+  "text": "Reduces the threat generated by your Nature and Arcane spells by 10%.",
   "effects": [
    {
-    "channel": "regen",
+    "channel": "threat",
     "scope": [
-     "all"
+     "school:arcane",
+     "school:nature"
     ],
     "values": [
-     0.17,
-     0.33,
-     0.5
+     0.1,
+     0.2,
+     0.3
     ],
     "source": "parsed"
    }
@@ -708,10 +685,10 @@
    }
   ]
  },
- "Gift of the Earthmother": {
+ "Bloom": {
   "tree": "Restoration",
   "max": 1,
-  "text": "Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells.",
+  "text": "When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50",
   "effects": []
  },
  "Tranquil Spirit": {

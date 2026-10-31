@@ -10,7 +10,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Restoration — PvP healer with a Balance dip (14/0/37)](builds/pvp-resto.md) | 14/0/37 | HEALER | [pvp-resto-feral-hybrid](../talents/classic-baseline/pvp-resto-feral-hybrid.md) |
+| [Restoration — PvP healer with a Balance dip (14/0/37)](builds/pvp-resto.md) | 14/6/31 | HEALER | [pvp-resto-feral-hybrid](../talents/classic-baseline/pvp-resto-feral-hybrid.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 

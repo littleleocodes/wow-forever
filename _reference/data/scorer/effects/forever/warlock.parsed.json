@@ -112,7 +112,7 @@
  "Fel Concentration": {
   "tree": "Affliction",
   "max": 3,
-  "text": "Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.",
+  "text": "Gives your Drain Life, Drain Mana, Drain Soul, and Wrack spells a 23% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",
@@ -131,7 +131,7 @@
  "Amplify Curse": {
   "tree": "Affliction",
   "max": 1,
-  "text": "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec.",
+  "text": "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.",
   "effects": [
    {
     "channel": "heal",
@@ -620,7 +620,7 @@
  "Intensity": {
   "tree": "Destruction",
   "max": 3,
-  "text": "Gives you a 23% chance to resist interruption caused by damage while casting or channeling any Destruction spell.",
+  "text": "Gives your Destruction spells a 23% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",

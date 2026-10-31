@@ -1,13 +1,13 @@
-# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (leveling-st) — 12/34/5
+# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (leveling-st) — 13/33/5
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 12/34/5 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 13/33/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,30 +15,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Point allocation
 
-### Beast Mastery (12)
+### Beast Mastery (13)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
-| **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
+| **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 
-### Marksmanship (34)
+### Marksmanship (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
-| **Mortal Shots** | 2/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 12%. |
-| **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
-| **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
+| **Mortal Shots** | 1/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 6%. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
 | **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
+| **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
+| **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
 
@@ -47,36 +48,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10 | Beast Mastery | Deadly Aspects | 1 | 1/0/0 |
-| 11-15 | Marksmanship | Lethal Attacks | 5 | 1/5/0 |
-| 16-18 | Marksmanship | Improved Stings | 3 | 1/8/0 |
-| 19-23 | Marksmanship | Careful Aim | 5 | 1/13/0 |
-| 24-25 | Marksmanship | Rapid Killing | 2 | 1/15/0 |
-| 26 | Marksmanship | Trueshot Aura | 1 | 1/16/0 |
-| 27-30 | Marksmanship | Efficiency | 4 | 1/20/0 |
-| 31 | Marksmanship | Scatter Shot | 1 | 1/21/0 |
-| 32-33 | Marksmanship | Rapid Recuperation | 2 | 1/23/0 |
-| 34 | Marksmanship | Efficiency | 1 | 1/24/0 |
-| 35 | Marksmanship | Barrage | 1 | 1/25/0 |
-| 36-40 | Marksmanship | Ranged Weapon Specialization | 5 | 1/30/0 |
-| 41 | Marksmanship | Sniper Shot | 1 | 1/31/0 |
-| 42-44 | Beast Mastery | Deadly Aspects | 3 | 4/31/0 |
-| 45-46 | Survival | Improved Tracking | 2 | 4/31/2 |
-| 47 | Beast Mastery | Deadly Aspects | 1 | 5/31/2 |
-| 48-49 | Beast Mastery | Focused Fire | 2 | 7/31/2 |
-| 50-51 | Survival | Improved Tracking | 2 | 7/31/4 |
-| 52-53 | Beast Mastery | Improved Revive Pet | 2 | 9/31/4 |
-| 54 | Beast Mastery | Pathfinding | 1 | 10/31/4 |
-| 55 | Beast Mastery | Bestial Swiftness | 1 | 11/31/4 |
-| 56 | Survival | Improved Tracking | 1 | 11/31/5 |
-| 57 | Beast Mastery | Pathfinding | 1 | 12/31/5 |
-| 58 | Marksmanship | Barrage | 1 | 12/32/5 |
-| 59-60 | Marksmanship | Mortal Shots | 2 | 12/34/5 |
 
 ## Core talents (priority order)
 
@@ -115,6 +86,7 @@ What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling b
 ## Notes
 
 - Report: hunter/research/talents/forever/optimizer/mm-raid-leveling-st.md
+- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 12/34/5 -> 13/33/5; +1 Endurance Training (tier gating for Bestial Swiftness); -1 Mortal Shots (over 51); order dropped (order_repair.py) (refill: the mm-raid model, leveling-st).
 
 ## Open questions (verify in the live game)
 
