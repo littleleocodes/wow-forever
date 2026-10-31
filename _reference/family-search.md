@@ -18,7 +18,7 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [paladin](../paladin/research/raid/family-search.md) | ret-dps | [17/0/34](https://talentsforever.com/paladin/60/55003003001--05225331001330321-7) | Retribution | 784.7 | -0.0% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% |
-| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/32/10](https://talentsforever.com/druid/60/050022-55000032023012125001-055-7) | Feral Combat | 767.7 | +0.0% |
+| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/32/10](https://talentsforever.com/druid/60/050022-55000032023012125001-055-7) | Feral Combat | 767.7 | +1.8% |
 | [warlock](../warlock/research/raid/family-search.md) | fire-destro-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.3 | +0.0% |
 | [warlock](../warlock/research/raid/family-search.md) | incinerate-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.2 | +7.0% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% |
