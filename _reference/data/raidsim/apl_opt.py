@@ -304,7 +304,9 @@ def neighbors(apl, pool, N):
         for r in lower:
             rid = next(i2 for x, i2 in ranks if x == r)
             low = copy.deepcopy(it)
-            low["action"][kind]["spellId"] = {"spellId": rid, "rank": r}
+            # keep the action id's other fields (2026-10-31): Heroic Strike, Cleave, Maul and Raptor Strike are cast as tag 1 (the
+            # on-next-swing queue); an untagged rank was cast as an instant extra attack on b90e2b9 (Fury +17%, 32 casts a fight, not 14)
+            low["action"][kind]["spellId"] = {**it["action"][kind]["spellId"], "spellId": rid, "rank": r}
             new = list(lst)
             new[i] = low
             with_list(new, f"always rank {r} instead of rank {rk}: {t if False else text(it, N)}")
@@ -400,6 +402,7 @@ def new_spell_pool(cls):
                 for unit in ("CurrentTarget", "Self"):
                     out.append({"action": {"condition": {"auraIsInactive": {"sourceUnit": {"type": unit}, "auraId": {"spellId": sid}}},
                                            "castSpell": {"spellId": {"spellId": sid}}}})
+    R.queue_tag(out, R.queue_ids(cls))   # Heroic Strike, Cleave, Maul, Raptor Strike: cast through the queue (run.QUEUE_SPELLS)
     return out
 
 

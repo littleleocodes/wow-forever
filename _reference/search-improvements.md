@@ -327,3 +327,14 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   a record whose family lost its build (the hunter's Beast-Survival, `beast-survival-open-raid` dropped when melee Survival passed it) passes
   with rc=0 in seconds and nothing searched, while `ml_builds --rank` and `gear_links` keep rendering its old gear section. Moved to
   `raidsim/ml/retired/`. Check at every audit: an `ml-<class>-<spec>` marker written within a minute of the previous one is a no-op.
+- **On-next-swing attacks cast as instant extra attacks** (2026-10-31, warrior audit: a Fury rotation edit read +17.17% on both seeds).
+  The simulator casts Heroic Strike, Cleave, Maul and Raptor Strike through their tag 1 spell (the queue); an untagged id falls back to
+  the plain spell (`core/apl_helpers.go`), an instant attack on top of the swings with no validation warning. Two ways in: the rotation
+  search's lower-rank edit rebuilt the spell id without its tag (Heroic Strike rank 8 untagged: 32.6 casts a fight instead of 14, 809 ->
+  956 DPS; the search was stopped before it wrote), and the melee hunter rotations (our base rotation of 2026-09-28, written for the fork)
+  cast Raptor Strike untagged, which the official simulator has queued since the port: melee Survival 819 -> 735 (-10%), the Beast
+  Mastery pick in the melee entry 496 -> 438, in a full raid. Every melee hunter raid number from 2026-10-18 to 2026-10-31 is inflated by
+  about 11%. Fixed: `run.QUEUE_SPELLS` / `queue_tag` (the spellbook pool tags them, the rank edit keeps the id's fields), the three
+  melee hunter rotation files tagged, the entry re-tuned, raced and searched again (`deep-runs/queue_tag_redo.sh`). Check at every audit:
+  a single rotation edit worth more than 5%, or the same gain to the hundredth on two seeds, is a mechanics hole until shown otherwise;
+  `queue_tag` over `raidsim/apls/` must change nothing. Open: the unrestricted worktrees hold their own copies of the hunter files.

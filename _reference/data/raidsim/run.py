@@ -113,6 +113,39 @@ def apl_key(entry, where=None):
     return "apl_opt_raid" if where in RAID_SETTINGS else "apl_opt"
 
 
+# On-next-swing attacks (2026-10-31): the simulator casts them through their tag 1 spell (the queue: the next main-hand swing becomes the
+# attack). An untagged id falls back to the plain spell (core/apl_helpers.go "fallback to unmarked spells"), an instant extra attack on
+# top of the swings: the melee hunter rotations cast Raptor Strike so from the port (2026-10-18) to 2026-10-31 (melee Survival +11.5% in a
+# full raid), and the rotation search's lower-rank edit dropped Heroic Strike's tag (Fury +17%). Their spell texts have no cast time.
+QUEUE_SPELLS = ("Heroic Strike", "Cleave", "Maul", "Raptor Strike")
+
+
+def queue_ids(cls):
+    """Every rank's spell id of the class's on-next-swing attacks (forever-spells/<class>.json)."""
+    p = HERE.parent / "forever-spells" / f"{cls}.json"
+    if not p.exists():
+        return set()
+    return {int(r["id"]) for tab in json.load(open(p, encoding="utf-8")).get("tabs", []) for sp in tab.get("spells", [])
+            if sp.get("name") in QUEUE_SPELLS for r in sp.get("ranks", []) if r.get("id")}
+
+
+def queue_tag(apl, ids):
+    """Tags every cast of an on-next-swing attack in a rotation (or one of its lines) as 1, in place; returns how many it changed."""
+    n = 0
+    if isinstance(apl, dict):
+        for k, v in apl.items():
+            if k in ("castSpell", "channelSpell") and isinstance(v, dict):
+                sid = v.get("spellId") or {}
+                if sid.get("spellId") in ids and sid.get("tag") != 1:
+                    sid["tag"] = 1
+                    n += 1
+            n += queue_tag(v, ids)
+    elif isinstance(apl, list):
+        for v in apl:
+            n += queue_tag(v, ids)
+    return n
+
+
 def apl_path(entry, repo, where=None):
     """The rotation a spec runs in a setting: ours when specs.json names one for that kind of setting (written by apl_opt.py,
     the rotation search, 2026-09-27) and the file exists, else the simulator's own (`apl`, relative to the simulator repository)."""
