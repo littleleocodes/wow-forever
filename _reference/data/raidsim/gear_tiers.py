@@ -200,9 +200,11 @@ def set_path(cls, spec, tier):
     return SETS / f"{cls}-{SM.slug(spec)}-{tier}.gear.json"
 
 
-def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None):
+def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid"):
     """The tier's set for one spec: written to its gear file (`path`: another file, e.g. the full-raid winner's set of a spec whose
-    full-raid winner plays another entry; ml_pipeline.final), returned as the record."""
+    full-raid winner plays another entry; ml_pipeline.final), returned as the record. Chosen in a full raid (`setting`, since
+    2026-10-31: the pages rank by full-raid DPS; sets chosen on the training dummy, short of mana, had weighed haste below zero for the
+    Frostfire mage, and its full-raid set measured +2.7% over the dummy's, confirmed on seed 2)."""
     e = R.SPECS[cls][entry_name]
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
     pool = pool_of(tier, zones)
@@ -216,7 +218,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     prev = json.load(open(p, encoding="utf-8"))["items"] if p.exists() else None   # the tier's last set competes (optimize_set's `extra`)
     if prev and tmpl:
         FE.fill(prev, tmpl)
-    r = optimize_set(cls, [(entry_name, e, "dummy", talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
+    r = optimize_set(cls, [(entry_name, e, setting, talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
                      extra={"previous": prev} if prev else None)
     if tmpl:
         FE.fill(r["items"], tmpl)
@@ -225,7 +227,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
         r["enchants_dropped"] = dropped
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
-    return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY)
+    return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
 
 
 def load_db(repo):

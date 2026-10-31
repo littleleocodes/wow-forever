@@ -312,3 +312,10 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   `adaptive.apl.json`); our tuned rotations hid it until the bear's environments run fell back to the entry's `apl` ("cannot read ...
   default.apl.json"). specs.json points at the new files; the bear race was re-run by hand. After a re-pin, check that every path in
   specs.json exists in the clone (a two-line script found exactly these two).
+- 2026-10-31 (stage 1, mage audit): the ML records' gear tier sets were chosen on the training dummy (`gear_tiers.make` passed "dummy"
+  to optimize_set) while the pages rank by full-raid DPS; on the dummy a caster runs short of mana, so its stat weights differ (the
+  Frostfire BiS set weighed haste at -0.14). Symptom: pre-BiS beat BiS in a full raid (Frostfire 742.9 vs 729.1, Arcane 728.0 vs 725.4).
+  Test: the Frostfire BiS set chosen in a full raid measured +2.7% over the dummy's set (seed 2 confirmed) and +1.4% over the pre-BiS set
+  competing in the same pick. `make` now chooses in the raid setting (`setting="raid"`, recorded in the gear record); the five mage and
+  the druid Balance final steps run again (`deep-runs/ml_gear_raid_redo.sh`). Every class after them picks its sets in a full raid.
+  Check at every audit: a pre-BiS number above the BiS number for the same build means the BiS set was chosen in the wrong setting.

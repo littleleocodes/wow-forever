@@ -157,7 +157,7 @@ def gear(rec, tier, alloc, label, entry, repo, db, zones, raid=False):
     trees = R.load_trees(repo, rec["class"])
     path = GT.SETS / f"{rec['class']}-{rec['slug']}-{tier}-raid.gear.json" if raid else None
     g = GT.make(rec["class"], rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, GT.args_ns(), path=path)
-    keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "names", "race_seed1", "confirm_seed2", "weights", "evaluated_on")
+    keep = ("entry", "gear", "date", "setting", "chosen", "ilvl", "trinkets", "names", "race_seed1", "confirm_seed2", "weights", "evaluated_on")
     return {k: g[k] for k in keep if k in g}
 
 
