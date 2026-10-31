@@ -162,8 +162,8 @@
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-10-26",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
@@ -171,7 +171,7 @@
   "builds": [
    {
     "label": "feral-combat-open-raid",
-    "talents": "050022-55000032021031212051-144"
+    "talents": "050022-55000032021031212051-054"
    },
    {
     "label": "feral-combat-shifting-power-raid",
@@ -179,12 +179,22 @@
    },
    {
     "label": "feral-cat-dps",
-    "talents": "050022-55000332120032012021-055",
+    "talents": "050022-55000332123002123-055",
     "protect_only": true
    },
    {
     "label": "opt-feral-cat-dps-raid-dps",
-    "talents": "050022-25000332020032012051-055001",
+    "talents": "050022-25000332023002125-0552",
+    "protect_only": true
+   },
+   {
+    "label": "feral-combat-shifting-power-raid",
+    "talents": "050022-55000032123012125001-054",
+    "protect_only": true
+   },
+   {
+    "label": "feral-combat-open-raid",
+    "talents": "050022-55000032023012125001-055",
     "protect_only": true
    }
   ],
@@ -271,36 +281,36 @@
   "final": {
    "raid": {
     "feral-combat-open-raid": {
-     "before": 756.6130659899477,
-     "after": 753.5150382945889,
-     "base": 756.6130659899477,
+     "before": 767.9555329527112,
+     "after": 767.9555329527112,
+     "base": 767.9555329527112,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "feral-combat-shifting-power-raid": {
-     "before": 750.1167242564006,
-     "after": 743.3683878511413,
-     "base": 750.1167242564006,
+     "before": 754.4575161997144,
+     "after": 754.4575161997144,
+     "base": 754.4575161997144,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "feral-cat-dps": {
-     "before": 634.6099002587414,
-     "after": 629.9968311018864,
-     "base": 634.6099002587414,
+     "before": 635.2117556080366,
+     "after": 635.2117556080366,
+     "base": 635.2117556080366,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-feral-cat-dps-raid-dps": {
-     "before": 643.8693888257909,
-     "after": 643.3387255547798,
-     "base": 643.8693888257909,
+     "before": 643.0079499870393,
+     "after": 643.0079499870393,
+     "base": 643.0079499870393,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -317,13 +327,13 @@
     "Shred"
    ],
    "rejected": {
-    "structure": 57,
+    "structure": 35,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

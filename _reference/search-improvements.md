@@ -308,3 +308,7 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   shaman) open winners are legal on the live trees; the druid's Feral winner is not (Berserk, Improved Shifting Power), but the druid
   runs a fresh search, which skips illegal starts. Lesson: after a tree change, check every stored start a later step reads (ML records,
   family winners, known positives), not only the builds the validator sees.
+- 2026-10-31 (stage 1, druid): b90e2b9 renamed the feral rotations (`ui/specs/druid/feral{cat,bear}/apls/default.apl.json` ->
+  `adaptive.apl.json`); our tuned rotations hid it until the bear's environments run fell back to the entry's `apl` ("cannot read ...
+  default.apl.json"). specs.json points at the new files; the bear race was re-run by hand. After a re-pin, check that every path in
+  specs.json exists in the clone (a two-line script found exactly these two).

@@ -1100,7 +1100,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
-      "apl": "ui/specs/druid/feralcat/apls/default.apl.json",
+      "apl": "ui/specs/druid/feralcat/apls/adaptive.apl.json",
       "spec": {
         "feralCatDruid": {
           "options": {}
@@ -1137,7 +1137,7 @@
       "tank": true,
       "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
       "gear_note": "2026-10-22 (the port to wowsims/forever, _reference/sim-port.md): the official simulator's Level 60 preset (it carries no idol); the fork's launch preset (vendored under raidsim/presets/elliotwood-b7083fa/) held five items the official database lacks (Glowing Mantle of the Dawn, Blood Guard's Dragonhide Grips, Fine Dawn Treaders, Blackhand's Breadth, Idol of Ferocity).",
-      "apl": "ui/specs/druid/feralbear/apls/default.apl.json",
+      "apl": "ui/specs/druid/feralbear/apls/adaptive.apl.json",
       "spec": {
         "feralBearDruid": {
           "options": {"startingRage": 0}
