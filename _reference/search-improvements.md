@@ -319,3 +319,7 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   competing in the same pick. `make` now chooses in the raid setting (`setting="raid"`, recorded in the gear record); the five mage and
   the druid Balance final steps run again (`deep-runs/ml_gear_raid_redo.sh`). Every class after them picks its sets in a full raid.
   Check at every audit: a pre-BiS number above the BiS number for the same build means the BiS set was chosen in the wrong setting.
+  Open (same cause, larger scope): the entries' standard sets (`gear_opt.py`, the `p1opt` sets in specs.json, the gear of every race,
+  search and the pages' main full-raid number) are chosen in `R.setting(e)`, the training dummy for damage entries. Re-choosing them in
+  a full raid would move casters' page numbers by up to ~3% (the Frostfire test) but changes the gear every search of this sweep ran in;
+  candidate for the launch-data run (gear_opt.py with the raid setting, then the searches), not mid-sweep.
