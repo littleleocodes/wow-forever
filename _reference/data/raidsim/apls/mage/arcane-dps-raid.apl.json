@@ -48,48 +48,6 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15%"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "80s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 12051
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
      "or": {
       "vals": [
        {
@@ -133,40 +91,86 @@
   {
    "action": {
     "condition": {
-     "or": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "auraRemainingTime": {
+        "auraId": {
+         "spellId": 400573
+        }
+       }
+      },
+      "rhs": {
+       "spellCastTime": {
+        "spellId": {
+         "spellId": 1239700
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
       "vals": [
        {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "auraRemainingTime": {
-           "auraId": {
-            "spellId": 400573
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "auraRemainingTime": {
+              "auraId": {
+               "spellId": 400573
+              }
+             }
+            },
+            "rhs": {
+             "spellCastTime": {
+              "spellId": {
+               "spellId": 1239700
+              }
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "auraNumStacks": {
+              "auraId": {
+               "spellId": 400573
+              }
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "2"
+             }
+            }
            }
           }
-         },
-         "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 1239700
-           }
-          }
-         }
+         ]
         }
        },
        {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "auraNumStacks": {
-           "auraId": {
-            "spellId": 400573
+        "not": {
+         "val": {
+          "spellIsCasting": {
+           "spellId": {
+            "spellId": 1239700
            }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "2"
           }
          }
         }
@@ -180,7 +184,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
   },
   {
    "action": {

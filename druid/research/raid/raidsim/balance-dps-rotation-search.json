@@ -99,8 +99,8 @@
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-10-26",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
@@ -111,13 +111,18 @@
     "talents": "0532220115501051-05-505003"
    },
    {
-    "label": "sim preset: Moonkin 38/0/13",
-    "talents": "5502220115501351--055003"
+    "label": "sim preset: Moonkin",
+    "talents": "5232220115501351--505003"
+   },
+   {
+    "label": "balance-moonkin-raid",
+    "talents": "0532220115501051--5553",
+    "protect_only": true
    }
   ],
   "tuned_on": [
    "balance-moonkin-raid",
-   "sim preset: Moonkin 38/0/13"
+   "sim preset: Moonkin"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -145,27 +150,35 @@
     "gain_seed2": 0.005338598001350947,
     "candidates": 332,
     "pass": 4
+   },
+   {
+    "round": 4,
+    "change": "threshold 30% -> 10%: if mana % \u2264 30%: cast Innervate",
+    "gain_seed1": 0.00152521204833711,
+    "gain_seed2": 0.002212389254375502,
+    "candidates": 288,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
     "balance-moonkin-raid": {
-     "before": 609.3453785811513,
-     "after": 623.0374578388207,
-     "base": 609.3453785811513,
+     "before": 525.638117470495,
+     "after": 645.2110966611825,
+     "base": 525.638117470495,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Moonkin 38/0/13": {
-     "before": 663.1304418713158,
-     "after": 616.0235732957334,
-     "base": 663.1304418713158,
+    "sim preset: Moonkin": {
+     "before": 673.5277287021283,
+     "after": 628.2040366255153,
+     "base": 673.5277287021283,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.07080080000000008,
-     "oom_after": 0.10099275000000005
+     "oom_before": 0,
+     "oom_after": 0.0045633
     }
    }
   },
@@ -178,13 +191,13 @@
     "Starfire"
    ],
    "rejected": {
-    "structure": 61,
+    "structure": 78,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-01",
-  "passes": 4
+  "passes": 5
  }
 }

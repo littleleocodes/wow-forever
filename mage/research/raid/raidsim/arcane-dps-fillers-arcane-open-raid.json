@@ -3,80 +3,65 @@
  "spec": "arcane-dps",
  "build": "arcane-open-raid",
  "setting": "raid",
- "date": "2026-10-24",
+ "date": "2026-10-31",
  "tank": false,
  "removal": {
-  "Arcane Blast": 0.11559953514360177,
-  "Arcane Concentration": 0.017380100696207212,
-  "Arcane Focus": 0.04743930780039962,
-  "Arcane Impact": 0.039929894496321006,
-  "Arcane Instability": 0.05235974945257471,
-  "Arcane Meditation": 0.020371856619578632,
-  "Arcane Mind": 0.10652743102492102,
-  "Arcane Power": 0.026993456059645093,
-  "Arcane Subtlety": 0.02649799571096023,
-  "Arcane Wrath": 0.04465259761269402,
-  "Elemental Precision": 0.010411611494429374,
-  "Ignite": 0.01577027179674273,
-  "Improved Fire Blast": -0.0004728742771129557,
-  "Improved Fireball": 0.0067594974827908105,
-  "Incineration": 0.014855691155854167,
-  "Master of Elements": 0.0008273784001634477,
-  "Missile Barrage": 0.29620423023544573,
-  "Presence of Mind": 0.015398317940805262,
-  "Pyroblast": -0.0
+  "Accelerant": 0.0473702960028648,
+  "Arcane Blast": 0.10998678107449833,
+  "Arcane Concentration": 0.010815729229409654,
+  "Arcane Impact": 0.04033677333865382,
+  "Arcane Instability": 0.05164533329800913,
+  "Arcane Meditation": 0.014170159894797196,
+  "Arcane Mind": 0.10990819548692965,
+  "Arcane Power": 0.027256142557096186,
+  "Arcane Resilience": -0.0,
+  "Arcane Subtlety": 0.024641315536199526,
+  "Arcane Wrath": 0.07610500981610135,
+  "Ignite": 0.015882897148742026,
+  "Improved Channeling": -0.0,
+  "Improved Fire Blast": 0.0010474822012728202,
+  "Incineration": 0.02829551745327341,
+  "Missile Barrage": 0.24940159774574922,
+  "Precision": 0.06610619621759528,
+  "Presence of Mind": 0.013561981452201777,
+  "Wand Specialization": -0.0
  },
  "free": [
+  "Arcane Resilience",
+  "Improved Channeling",
   "Improved Fire Blast",
-  "Master of Elements",
-  "Pyroblast"
+  "Wand Specialization"
  ],
  "kept_for_rotation": [
   "Arcane Blast",
   "Missile Barrage"
  ],
  "active_never_worth": [],
- "abilities_never_cast": [
-  "Pyroblast"
- ],
+ "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Master of Elements",
-   "to": "Improved Channeling",
-   "seed1": -0.0008273784001634477,
-   "seed2": -0.0008747674873897937,
-   "utility": "interrupt"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Improved Fire Blast",
-   "to": "Improved Channeling",
-   "seed1": 0.0009872480994845834,
-   "seed2": -0.00016940844801038857,
-   "utility": "interrupt"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Pyroblast",
-   "to": "Improved Channeling",
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "interrupt"
+   "utility": "survival"
   }
  ],
- "final_seed3": -0.001119783181663725,
+ "final_seed3": 0.0,
  "start": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
+    "Wand Specialization",
+    2
    ],
    [
-    "Missile Barrage",
+    "Improved Channeling",
+    1
+   ],
+   [
+    "Arcane Resilience",
     2
    ],
    [
@@ -86,6 +71,10 @@
    [
     "Arcane Concentration",
     5
+   ],
+   [
+    "Missile Barrage",
+    2
    ],
    [
     "Arcane Impact",
@@ -122,15 +111,11 @@
   ],
   "Fire": [
    [
-    "Improved Fire Blast",
-    1
-   ],
-   [
     "Incineration",
-    3
+    5
    ],
    [
-    "Improved Fireball",
+    "Accelerant",
     5
    ],
    [
@@ -138,17 +123,13 @@
     5
    ],
    [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Master of Elements",
+    "Improved Fire Blast",
     1
    ]
   ],
   "Frost": [
    [
-    "Elemental Precision",
+    "Precision",
     3
    ]
   ]
@@ -156,12 +137,12 @@
  "allocation": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
+    "Wand Specialization",
+    2
    ],
    [
-    "Missile Barrage",
-    2
+    "Arcane Resilience",
+    3
    ],
    [
     "Arcane Subtlety",
@@ -170,6 +151,10 @@
    [
     "Arcane Concentration",
     5
+   ],
+   [
+    "Missile Barrage",
+    2
    ],
    [
     "Arcane Impact",
@@ -202,29 +187,29 @@
    [
     "Arcane Power",
     1
-   ],
-   [
-    "Improved Channeling",
-    3
    ]
   ],
   "Fire": [
    [
     "Incineration",
-    3
+    5
    ],
    [
-    "Improved Fireball",
+    "Accelerant",
     5
    ],
    [
     "Ignite",
     5
+   ],
+   [
+    "Improved Fire Blast",
+    1
    ]
   ],
   "Frost": [
    [
-    "Elemental Precision",
+    "Precision",
     3
    ]
   ]

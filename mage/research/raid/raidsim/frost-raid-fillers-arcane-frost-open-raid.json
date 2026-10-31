@@ -3,90 +3,52 @@
  "spec": "frost-raid",
  "build": "arcane-frost-open-raid",
  "setting": "raid",
- "date": "2026-10-24",
+ "date": "2026-10-31",
  "tank": false,
  "removal": {
-  "Arcane Blast": 0.09322910448133237,
-  "Arcane Concentration": -4.94145696499082e-05,
-  "Arcane Focus": 0.028076676566283654,
-  "Arcane Impact": 0.023122574883143954,
-  "Arcane Instability": 0.05213587564024491,
-  "Arcane Mind": 0.06413893199984799,
+  "Accelerant": 0.0300581151546917,
+  "Arcane Blast": 0.10474792914019115,
+  "Arcane Concentration": 0.001814557962280916,
+  "Arcane Geometry": -0.0,
+  "Arcane Impact": 0.031660078493501165,
+  "Arcane Instability": 0.052116581530161854,
+  "Arcane Mind": 0.08645479931436728,
   "Arcane Resilience": -0.0,
-  "Arcane Shielding": -0.0,
-  "Arcane Subtlety": 0.026024309085676767,
-  "Elemental Precision": 0.03512451382478632,
-  "Fingers of Frost": 0.4457414463355649,
-  "Frostbite": 0.0017662597188659035,
-  "Ice Lance": -0.0010427598153164297,
-  "Ice Shards": 0.050510778261617095,
+  "Arcane Subtlety": 0.026069630301227886,
+  "Arcane Wrath": 0.048246226623817945,
+  "Ice Shards": 0.024504095623335775,
   "Improved Channeling": -0.0,
   "Improved Counterspell": -0.0,
-  "Improved Frost Nova": -0.0,
-  "Improved Frostbolt": 0.10025286270767952,
-  "Magic Absorption": -0.0,
-  "Missile Barrage": 0.17553520262903455,
-  "Presence of Mind": 0.006173258082581623,
-  "Shatter": 0.032870658989691215
+  "Improved Frostbolt": 0.05522355283841429,
+  "Incineration": 0.011569342362168222,
+  "Missile Barrage": 0.161853615605156,
+  "Precision": 0.06539917661738737
  },
  "free": [
   "Arcane Concentration",
+  "Arcane Geometry",
   "Arcane Resilience",
-  "Arcane Shielding",
-  "Frostbite",
   "Improved Channeling",
-  "Improved Counterspell",
-  "Improved Frost Nova",
-  "Magic Absorption"
+  "Improved Counterspell"
  ],
  "kept_for_rotation": [
   "Arcane Blast",
-  "Fingers of Frost",
   "Missile Barrage"
  ],
- "active_never_worth": [
-  "Ice Lance"
- ],
+ "active_never_worth": [],
  "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Arcane Concentration",
-   "to": "Improved Channeling",
-   "seed1": 4.94145696499082e-05,
-   "seed2": 0.00038352971687394266,
-   "utility": "interrupt"
+   "from": "Arcane Geometry",
+   "to": "Magic Absorption",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
   },
   {
    "round": 2,
-   "kind": "utility",
-   "from": "Arcane Resilience",
-   "to": "Improved Channeling",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Arcane Shielding",
-   "to": "Improved Channeling",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Improved Counterspell",
-   "to": "Improved Channeling",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 5,
    "kind": "utility",
    "from": "Improved Counterspell",
    "to": "Magic Absorption",
@@ -95,37 +57,24 @@
    "utility": "mana"
   },
   {
-   "round": 6,
+   "round": 3,
    "kind": "utility",
-   "from": "Frostbite",
-   "to": "Arctic Reach",
-   "seed1": 1.3976622605937905e-05,
-   "seed2": -0.0003553681972138234,
-   "utility": "range"
-  },
-  {
-   "round": 7,
-   "kind": "utility",
-   "from": "Improved Frost Nova",
-   "to": "Arctic Reach",
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "range"
+   "utility": "survival"
   }
  ],
- "final_seed3": 0.0007439549427987746,
+ "final_seed3": 0.0,
  "start": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
-   ],
-   [
     "Improved Channeling",
-    1
+    3
    ],
    [
-    "Missile Barrage",
+    "Arcane Resilience",
     2
    ],
    [
@@ -133,15 +82,15 @@
     2
    ],
    [
-    "Magic Absorption",
-    1
-   ],
-   [
     "Arcane Concentration",
-    1
+    4
    ],
    [
-    "Arcane Resilience",
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Arcane Geometry",
     1
    ],
    [
@@ -153,15 +102,11 @@
     1
    ],
    [
-    "Arcane Shielding",
+    "Improved Counterspell",
     1
    ],
    [
-    "Improved Counterspell",
-    2
-   ],
-   [
-    "Presence of Mind",
+    "Arcane Wrath",
     1
    ],
    [
@@ -173,62 +118,51 @@
     3
    ]
   ],
-  "Fire": [],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ],
+   [
+    "Accelerant",
+    5
+   ]
+  ],
   "Frost": [
    [
     "Improved Frostbolt",
     5
    ],
    [
-    "Elemental Precision",
+    "Precision",
     3
    ],
    [
     "Ice Shards",
     5
-   ],
-   [
-    "Frostbite",
-    2
-   ],
-   [
-    "Improved Frost Nova",
-    1
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
    ]
   ]
  },
  "allocation": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
-   ],
-   [
     "Improved Channeling",
-    5
+    2
    ],
    [
-    "Missile Barrage",
-    2
+    "Arcane Resilience",
+    3
    ],
    [
     "Arcane Subtlety",
     2
    ],
    [
-    "Magic Absorption",
+    "Arcane Concentration",
+    4
+   ],
+   [
+    "Missile Barrage",
     2
    ],
    [
@@ -240,7 +174,7 @@
     1
    ],
    [
-    "Presence of Mind",
+    "Arcane Wrath",
     1
    ],
    [
@@ -250,41 +184,34 @@
    [
     "Arcane Instability",
     3
+   ],
+   [
+    "Magic Absorption",
+    2
    ]
   ],
-  "Fire": [],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ],
+   [
+    "Accelerant",
+    5
+   ]
+  ],
   "Frost": [
    [
     "Improved Frostbolt",
     5
    ],
    [
-    "Elemental Precision",
+    "Precision",
     3
    ],
    [
     "Ice Shards",
     5
-   ],
-   [
-    "Frostbite",
-    1
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Arctic Reach",
-    2
    ]
   ]
  }

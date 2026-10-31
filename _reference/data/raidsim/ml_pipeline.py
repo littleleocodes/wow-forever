@@ -242,8 +242,21 @@ def sig_start(rec, first, repo=None):
     would have started from a build the space rejects): the best open-search winner of the class filed under the spec with the talents
     (families/<class>.json), else the spec's raid build of ours with them. The stored winner when it passes or nothing else does."""
     import raid_signature as SIG
+    import talent_opt as TO
     cls, spec = rec["class"], rec["spec"]
-    if SIG.talents_ok(cls, spec, first):
+    # 2026-10-31 (live trees 70707): a stored winner can also hold talents the current trees no longer have (the mage records' Arcane
+    # Focus, Improved Fireball, Elemental Precision): the bench refuses it, so it is replaced by the same fallbacks
+    import validate_builds as VB
+    trees_now = VB.load_forever()[cls]
+    known = {n for t in trees_now.values() for n in t["talents"]}
+
+    def legal(al):
+        return all(n in known for n, r in al.items() if r) and TO.valid(trees_now, {n: r for n, r in al.items() if r})
+
+    def fits(al):
+        return SIG.talents_ok(cls, spec, al) and legal(al)
+    why = "lacks {spec}'s signature talents" if legal(first) else "is not legal on the current talent trees"
+    if fits(first):
         return first, None
     best = None
     for fp in (HERE / "families" / f"{cls}.json", HERE / "families" / f"{cls}.prev.json"):   # the current search, else the last one
@@ -251,16 +264,18 @@ def sig_start(rec, first, repo=None):
             w = ((e.get("again") or e.get("first") or {}).get("winner") or {})
             al = flat_of(w.get("allocation") or {})
             dps = ((e.get("race") or {}).get("open winner") or {}).get("dps") or 0
-            if al and SIG.entry_spec(cls, entry, al) == spec and SIG.talents_ok(cls, spec, al) and (best is None or dps > best[0]):
+            if al and SIG.entry_spec(cls, entry, al) == spec and fits(al) and (best is None or dps > best[0]):
                 best = (dps, al, f"the {entry} open-search winner ({fp.name})")
         if best is not None:
             break
     if best is None:
         pb = ROOT / cls / "research/talents/forever/proposed-builds.json"
+        nums = rm().raid_numbers(cls)   # 2026-10-31: the spec's best by the pages' full-raid number, not the first listed
         for b in json.load(open(pb, encoding="utf-8"))["builds"]:
-            if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and SM.spec_of(cls, b) == spec and SIG.talents_ok(cls, spec, b["allocation"]):
-                best = (0, flat_of(b["allocation"]), f"our raid build {b['id']}")
-                break
+            if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and SM.spec_of(cls, b) == spec and fits(flat_of(b["allocation"])):
+                dps = float((nums.get(b["id"]) or {}).get("dps") or 0)
+                if best is None or dps > best[0]:
+                    best = (dps, flat_of(b["allocation"]), f"our raid build {b['id']}")
     if best is None and repo is not None:
         # 2026-10-25 audit: no Assassination build of ours or open winner holds Mutilate (the entry's winner is the Daggers split); the
         # simulator's presets raced in the class's entries (race reports' "sim preset: X" rows) are the last starts with the talents
@@ -273,11 +288,11 @@ def sig_start(rec, first, repo=None):
                     continue
                 al = flat_of(R.preset_allocation(trees, row["talents"]))
                 dps = float(row.get("dps") or 0)
-                if al and SIG.entry_spec(cls, ent, al) == spec and SIG.talents_ok(cls, spec, al) and (best is None or dps > best[0]):
+                if al and SIG.entry_spec(cls, ent, al) == spec and fits(al) and (best is None or dps > best[0]):
                     best = (dps, al, f"the simulator's {row['label'][len('sim preset: '):]} preset (raced in {ent})")
     if best is None:
         return first, None
-    return best[1], f"{TODAY}: the stored winner lacks {spec}'s signature talents; the final step starts from {best[2]}"
+    return best[1], f"{TODAY}: the stored winner {why.format(spec=spec)}; the final step starts from {best[2]}"
 
 
 def final(rec, repo, db, zones):

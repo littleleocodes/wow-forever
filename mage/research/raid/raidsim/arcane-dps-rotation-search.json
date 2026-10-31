@@ -194,8 +194,8 @@
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-24",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
@@ -203,16 +203,21 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "0502205003100311531-1335021000002-002"
+    "talents": "212205203100311531-555000001-003"
    },
    {
-    "label": "arcane-blast-raid",
-    "talents": "0552205003100301531-2305001-013",
+    "label": "arcane-open-raid",
+    "talents": "032205203100311531-355-033",
     "protect_only": true
    },
    {
     "label": "sim preset: Arcane Fire",
-    "talents": "0502205003100311531-230510301001-003",
+    "talents": "050205203100311531-525000012001-003",
+    "protect_only": true
+   },
+   {
+    "label": "arcane-blast-raid",
+    "talents": "050205203100301531-505001002-043",
     "protect_only": true
    }
   ],
@@ -405,36 +410,69 @@
     "gain_seed2": 0.0017961471162475373,
     "candidates": 423,
     "pass": 9
+   },
+   {
+    "round": 24,
+    "change": "drop: if mana % < 15% and time left in the fight > 80s: cast Evocation",
+    "gain_seed1": 0.03752266845810226,
+    "gain_seed2": 0.03759621825826365,
+    "candidates": 475,
+    "pass": 10
+   },
+   {
+    "round": 25,
+    "change": "insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast \u2264 2) and not spellIsCasting: cast Arcane Blast",
+    "gain_seed1": 0.0016548328590477723,
+    "gain_seed2": 0.001884093481529403,
+    "candidates": 447,
+    "pass": 11
+   },
+   {
+    "round": 26,
+    "change": "drop 'stacks of Arcane Blast < 2' from the condition: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast",
+    "gain_seed1": 0.004102408911242916,
+    "gain_seed2": 0.0051399799245006594,
+    "candidates": 472,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 620.3709077214431,
-     "after": 714.3911393938214,
-     "base": 620.3709077214431,
+     "before": 709.6104211833662,
+     "after": 720.9455952318061,
+     "base": 709.6104211833662,
      "before_value": null,
      "after_value": null,
-     "oom_before": 49.701239999846536,
-     "oom_after": 5.398797499987587
+     "oom_before": 0.5598624999968516,
+     "oom_after": 0.49038250000080164
     },
-    "arcane-blast-raid": {
-     "before": 606.7252097783171,
-     "after": 670.6615559890802,
-     "base": 606.7252097783171,
+    "arcane-open-raid": {
+     "before": 705.0455998764838,
+     "after": 711.441414054809,
+     "base": 705.0455998764838,
      "before_value": null,
      "after_value": null,
-     "oom_before": 48.17633249968277,
-     "oom_after": 17.398445000001015
+     "oom_before": 0.572239999995551,
+     "oom_after": 0.5244049999994025
     },
     "sim preset: Arcane Fire": {
-     "before": 616.1884572541745,
-     "after": 711.6742538675416,
-     "base": 616.1884572541745,
+     "before": 695.6636727516716,
+     "after": 699.6739575230011,
+     "base": 695.6636727516716,
      "before_value": null,
      "after_value": null,
-     "oom_before": 48.11384499970402,
-     "oom_after": 5.300310000000549
+     "oom_before": 0.30913999999679903,
+     "oom_after": 0.2426799999990499
+    },
+    "arcane-blast-raid": {
+     "before": 631.4784856395141,
+     "after": 658.1910185601139,
+     "base": 631.4784856395141,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 7.898344999937475,
+     "oom_after": 9.012659999985376
     }
    }
   },
@@ -446,13 +484,13 @@
     "Arcane Blast"
    ],
    "rejected": {
-    "structure": 388,
-    "casts": 1,
+    "structure": 115,
+    "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 11
  }
 }

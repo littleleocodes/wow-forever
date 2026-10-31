@@ -193,8 +193,8 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-10-23",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
@@ -202,21 +202,26 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "05022050010002-22550000130135031-003"
+    "talents": "2032052010002-55500001130133031-003"
    },
    {
-    "label": "fire-raid",
-    "talents": "0052205-23550020130135031-003",
+    "label": "fire-open-raid",
+    "talents": "1132152000002-35500101230133031-003",
     "protect_only": true
    },
    {
     "label": "sim preset: Fire",
-    "talents": "05022050001001-23550000130135031-003",
+    "talents": "0502052001001-55500001230133031-003",
+    "protect_only": true
+   },
+   {
+    "label": "fire-raid",
+    "talents": "0502152000001-35500201230133031-003",
     "protect_only": true
    },
    {
     "label": "opt-fire-raid-raid-dps",
-    "talents": "00522150000003-13550000130135031-002",
+    "talents": "0502152000003-35500101230133031-002",
     "protect_only": true
    }
   ],
@@ -385,45 +390,118 @@
     "gain_seed2": 0.0020405375880103716,
     "candidates": 426,
     "pass": 8
+   },
+   {
+    "round": 21,
+    "change": "drop: if mana % \u2265 10%: cast Evocation",
+    "gain_seed1": 0.12237730151136494,
+    "gain_seed2": 0.12380398679179172,
+    "candidates": 478,
+    "pass": 9
+   },
+   {
+    "round": 22,
+    "change": "threshold 3s -> 4s: if time left in the fight \u2265 3s: cast Fireball (rank 11)",
+    "gain_seed1": 0.0036213187622204934,
+    "gain_seed2": 0.0035721292488197776,
+    "candidates": 461,
+    "pass": 9
+   },
+   {
+    "round": 23,
+    "change": "insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch",
+    "gain_seed1": 0.019607940849010186,
+    "gain_seed2": 0.02059516025124175,
+    "candidates": 460,
+    "pass": 10
+   },
+   {
+    "round": 24,
+    "change": "drop '(stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5)' from the condition: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch",
+    "gain_seed1": 0.09153975237632439,
+    "gain_seed2": 0.09149852576798789,
+    "candidates": 502,
+    "pass": 10
+   },
+   {
+    "round": 25,
+    "change": "insert at the top: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast",
+    "gain_seed1": 0.019652864110063728,
+    "gain_seed2": 0.021965515010760495,
+    "candidates": 490,
+    "pass": 10
+   },
+   {
+    "round": 26,
+    "change": "move to the top: cast Fire Blast",
+    "gain_seed1": 0.015774242709470032,
+    "gain_seed2": 0.011584772410868638,
+    "candidates": 518,
+    "pass": 10
+   },
+   {
+    "round": 27,
+    "change": "drop: cast Robe of the Archmage",
+    "gain_seed1": 0.004340986537008984,
+    "gain_seed2": 0.00583889718854369,
+    "candidates": 518,
+    "pass": 10
+   },
+   {
+    "round": 28,
+    "change": "insert before the filler: if (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready)",
+    "gain_seed1": 0.0022355282696169265,
+    "gain_seed2": 0.004236953671214572,
+    "candidates": 507,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 809.6431531530247,
-     "after": 848.614097747012,
-     "base": 809.6431531530247,
+     "before": 672.8309951220776,
+     "after": 781.0134969802248,
+     "base": 672.8309951220776,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.3518724999993001,
-     "oom_after": 4.923635000005455
+     "oom_before": 0.0005525,
+     "oom_after": 1.2940100000059642
     },
-    "fire-raid": {
-     "before": 812.5572140566107,
-     "after": 830.619033564554,
-     "base": 812.5572140566107,
+    "fire-open-raid": {
+     "before": 669.5979869438144,
+     "after": 775.984119296274,
+     "base": 669.5979869438144,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.743939999999948,
-     "oom_after": 17.029887500026657
+     "oom_before": 0.0034575,
+     "oom_after": 2.9766625000082527
     },
     "sim preset: Fire": {
-     "before": 813.9791832057821,
-     "after": 847.6357134979693,
-     "base": 813.9791832057821,
+     "before": 673.8916206055268,
+     "after": 778.896478640347,
+     "base": 673.8916206055268,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.6014124999996487,
-     "oom_after": 9.765872500020233
+     "oom_before": 0.014892500000000005,
+     "oom_after": 7.565485000012003
+    },
+    "fire-raid": {
+     "before": 665.6584884192213,
+     "after": 762.9533495466449,
+     "base": 665.6584884192213,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.016540000000000006,
+     "oom_after": 7.872480000012579
     },
     "opt-fire-raid-raid-dps": {
-     "before": 785.802360552425,
-     "after": 815.5486586576765,
-     "base": 785.802360552425,
+     "before": 655.9982536736899,
+     "after": 762.5230229417194,
+     "base": 655.9982536736899,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0789174999999,
-     "oom_after": 0.7704524999987994
+     "oom_before": 0.00011999999999999999,
+     "oom_after": 0.7559625000032529
     }
    }
   },
@@ -436,13 +514,13 @@
     "Pyroblast"
    ],
    "rejected": {
-    "structure": 215,
+    "structure": 272,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 10
  }
 }

@@ -3,30 +3,33 @@
  "spec": "fire-raid",
  "build": "fire-open-raid",
  "setting": "raid",
- "date": "2026-10-24",
+ "date": "2026-10-31",
  "tank": false,
  "removal": {
-  "Arcane Concentration": 0.0446206186503566,
-  "Arcane Focus": 0.004078962570186584,
-  "Arcane Impact": 0.0006712825970242031,
-  "Arcane Meditation": 0.03530307693734824,
-  "Arcane Subtlety": 0.024476129508312128,
-  "Combustion": 0.027618258230053816,
-  "Critical Mass": 0.08857097566430239,
-  "Elemental Precision": 0.07245724669029352,
-  "Fire Power": 0.07146044624070946,
-  "Heating Up": 0.5947460362661403,
-  "Ignite": 0.12289462220140013,
-  "Improved Fire Blast": 0.0357799623465197,
-  "Improved Fireball": 0.06982784014971122,
-  "Improved Scorch": 0.22520496989725214,
-  "Incineration": 0.019276225940441538,
-  "Master of Elements": 0.023641020948992675,
-  "Missile Barrage": 0.21506238943344613,
-  "Pyroblast": 0.1653351445393263
+  "Accelerant": 0.03861880126235728,
+  "Arcane Concentration": 0.048818194252499336,
+  "Arcane Impact": 0.00047571402169810373,
+  "Arcane Meditation": 0.04490042176909015,
+  "Arcane Resilience": -0.0,
+  "Arcane Subtlety": 0.024641252112082013,
+  "Combustion": 0.016758598012875603,
+  "Critical Mass": 0.057920304568175984,
+  "Fire Power": 0.07030696996570918,
+  "Heating Up": 0.1714775958694028,
+  "Ignite": 0.12057497494961633,
+  "Improved Fire Blast": 0.04104005473082595,
+  "Improved Scorch": 0.15148861419183923,
+  "Incineration": 0.04818360920349296,
+  "Master of Elements": 0.041670339487627994,
+  "Missile Barrage": 0.03394735245462144,
+  "Precision": 0.0783936079796621,
+  "Pyroblast": 0.1714775958694028,
+  "Wand Specialization": -0.0
  },
  "free": [
-  "Arcane Impact"
+  "Arcane Impact",
+  "Arcane Resilience",
+  "Wand Specialization"
  ],
  "kept_for_rotation": [
   "Heating Up",
@@ -40,22 +43,22 @@
    "round": 1,
    "kind": "utility",
    "from": "Arcane Impact",
-   "to": "Improved Channeling",
-   "seed1": -0.0006712825970242031,
-   "seed2": -0.0006548283019455203,
-   "utility": "interrupt"
+   "to": "Magic Absorption",
+   "seed1": -0.00047571402169810373,
+   "seed2": -0.0004586258418266542,
+   "utility": "mana"
   }
  ],
- "final_seed3": -0.0006720701275328977,
+ "final_seed3": -0.0004559095491443177,
  "start": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
+    "Wand Specialization",
+    2
    ],
    [
-    "Missile Barrage",
-    2
+    "Arcane Resilience",
+    3
    ],
    [
     "Arcane Subtlety",
@@ -64,6 +67,10 @@
    [
     "Arcane Concentration",
     5
+   ],
+   [
+    "Missile Barrage",
+    2
    ],
    [
     "Arcane Impact",
@@ -76,15 +83,11 @@
   ],
   "Fire": [
    [
-    "Improved Fire Blast",
-    2
-   ],
-   [
     "Incineration",
-    3
+    5
    ],
    [
-    "Improved Fireball",
+    "Accelerant",
     5
    ],
    [
@@ -96,8 +99,12 @@
     1
    ],
    [
+    "Improved Fire Blast",
+    2
+   ],
+   [
     "Improved Scorch",
-    3
+    2
    ],
    [
     "Heating Up",
@@ -105,11 +112,11 @@
    ],
    [
     "Master of Elements",
-    2
+    3
    ],
    [
     "Critical Mass",
-    5
+    3
    ],
    [
     "Fire Power",
@@ -122,7 +129,7 @@
   ],
   "Frost": [
    [
-    "Elemental Precision",
+    "Precision",
     3
    ]
   ]
@@ -130,12 +137,12 @@
  "allocation": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
+    "Wand Specialization",
+    2
    ],
    [
-    "Missile Barrage",
-    2
+    "Arcane Resilience",
+    3
    ],
    [
     "Arcane Subtlety",
@@ -146,25 +153,25 @@
     5
    ],
    [
+    "Missile Barrage",
+    2
+   ],
+   [
     "Arcane Meditation",
     2
    ],
    [
-    "Improved Channeling",
+    "Magic Absorption",
     1
    ]
   ],
   "Fire": [
    [
-    "Improved Fire Blast",
-    2
-   ],
-   [
     "Incineration",
-    3
+    5
    ],
    [
-    "Improved Fireball",
+    "Accelerant",
     5
    ],
    [
@@ -176,8 +183,12 @@
     1
    ],
    [
+    "Improved Fire Blast",
+    2
+   ],
+   [
     "Improved Scorch",
-    3
+    2
    ],
    [
     "Heating Up",
@@ -185,11 +196,11 @@
    ],
    [
     "Master of Elements",
-    2
+    3
    ],
    [
     "Critical Mass",
-    5
+    3
    ],
    [
     "Fire Power",
@@ -202,7 +213,7 @@
   ],
   "Frost": [
    [
-    "Elemental Precision",
+    "Precision",
     3
    ]
   ]

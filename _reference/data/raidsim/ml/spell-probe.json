@@ -5319,8 +5319,8 @@
   "spec": "any",
   "entry": "fire-raid",
   "setting": "raid",
-  "date": "2026-10-23",
-  "base_dps": 830.12,
+  "date": "2026-10-30",
+  "base_dps": 673.37,
   "abilities": [
    {
     "ability": "Combustion",
@@ -5331,7 +5331,7 @@
     "lines_tried": 4,
     "best": {
      "line": "plain",
-     "spot": "in the middle",
+     "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "17/31/3",
      "vs_spec_build": 0.0
@@ -5345,8 +5345,8 @@
   "spec": "any",
   "entry": "arcane-dps",
   "setting": "raid",
-  "date": "2026-10-23",
-  "base_dps": 618.93,
+  "date": "2026-10-30",
+  "base_dps": 715.88,
   "abilities": [
    {
     "ability": "Arcane Power",
@@ -5357,10 +5357,10 @@
     "lines_tried": 4,
     "best": {
      "line": "plain",
-     "spot": "in the middle",
-     "gain_seed1": -0.0003,
-     "split": "32/17/2",
-     "vs_spec_build": -0.0003
+     "spot": "at the top",
+     "gain_seed1": -0.0,
+     "split": "32/16/3",
+     "vs_spec_build": -0.0
     },
     "kept": false
    }
@@ -5371,8 +5371,8 @@
   "spec": "any",
   "entry": "frostfire-raid",
   "setting": "raid",
-  "date": "2026-10-23",
-  "base_dps": 800.12,
+  "date": "2026-10-30",
+  "base_dps": 627.2,
   "abilities": [
    {
     "ability": "Ice Lance",
@@ -5384,9 +5384,9 @@
     "best": {
      "line": "plain",
      "spot": "at the end",
-     "gain_seed1": -0.0002,
+     "gain_seed1": 0.0,
      "split": "0/29/22",
-     "vs_spec_build": -0.0002
+     "vs_spec_build": 0.0
     },
     "kept": false
    }

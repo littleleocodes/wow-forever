@@ -62,7 +62,7 @@
       },
       "rhs": {
        "const": {
-        "val": "30%"
+        "val": "10%"
        }
       }
      }
@@ -72,7 +72,8 @@
       "spellId": 29166
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see balance-dps-rotation-search.json)"
   },
   {
    "action": {
