@@ -14,9 +14,10 @@
   "bis": {
    "entry": "melee-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-   "date": "2026-10-23",
+   "date": "2026-10-31",
+   "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 64.2,
+   "ilvl": 63.6,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
@@ -25,15 +26,15 @@
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
-    "Howler's Furs",
+    "Earthweave Cloak",
     "Dawn Armor",
     "Forest Stalker's Bracers",
-    "Theramore Gloves",
+    "Devilsaur Gauntlets",
     "Belt of Preserved Heads",
     "Outrider's Chain Leggings",
     "Scalegut Treaders",
-    "Don Julio's Band",
     "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain",
     "Premier High Warlord's Razor",
@@ -42,52 +43,52 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9970754520631023,
-    "previous": 0.9970825616016904
+    "keep-sets-and-effects": 0.9932828010675188
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 1.0003409731075448
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.008808977549804
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.4467,
-    "PseudoStatOffHandDps": 0.5692,
-    "StatAgility": 0.2322,
-    "StatArmorPenetration": 0.0327,
-    "StatAttackPower": 0.1402,
-    "StatCritRating": 0.2642,
-    "StatExpertiseRating": 0.3769,
-    "StatHasteRating": 0.2213,
-    "StatHitRating": 0.3394,
-    "StatIntellect": 0.1553,
-    "StatRangedAttackPower": 0.0092,
-    "StatSpellPiercing": 0.013,
-    "StatStrength": 0.1402
+    "PseudoStatMainHandDps": 2.778,
+    "PseudoStatOffHandDps": 0.92,
+    "StatAgility": 0.4834,
+    "StatArmorPenetration": 0.1043,
+    "StatAttackPower": 0.2582,
+    "StatCritRating": 0.5472,
+    "StatExpertiseRating": 1.009,
+    "StatHasteRating": 0.5308,
+    "StatHitRating": 0.6132,
+    "StatIntellect": 0.3147,
+    "StatRangedAttackPower": 0.0213,
+    "StatSpellPiercing": 0.0917,
+    "StatStrength": 0.2841
    },
    "evaluated_on": [
     "melee-dps: ml winner"
    ],
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   },
   "bis2": true,
   "prebis": {
    "entry": "melee-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-   "date": "2026-10-23",
+   "date": "2026-10-31",
+   "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 64.1,
+   "ilvl": 63.6,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
    ],
    "names": [
     "Black Dragonscale Helm",
-    "Beads of Ogre Might",
+    "Amulet of the Darkmoon",
     "Theramore Pauldrons",
-    "Howler's Furs",
+    "Earthweave Cloak",
     "Dawn Armor",
     "Forest Stalker's Bracers",
-    "Theramore Gloves",
+    "Devilsaur Gauntlets",
     "Belt of Preserved Heads",
     "Outrider's Chain Leggings",
     "Scalegut Treaders",
@@ -101,34 +102,31 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9976413401920067,
-    "previous": 0.9964901476477301,
-    "previous+trinkets": 0.9976413401920067
+    "keep-sets-and-effects": 0.9949816431553006
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 1.001505229961979
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0040904824063548
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.5116,
-    "PseudoStatOffHandDps": 0.5646,
-    "StatAgility": 0.2559,
-    "StatArmorPenetration": 0.0343,
-    "StatAttackPower": 0.1438,
-    "StatCritRating": 0.2848,
-    "StatExpertiseRating": 0.4028,
-    "StatHasteRating": 0.238,
-    "StatHitRating": 0.3447,
-    "StatIntellect": 0.1576,
-    "StatRangedAttackPower": 0.0091,
-    "StatSpellPiercing": 0.0129,
-    "StatSpirit": 0.0002,
-    "StatStrength": 0.1438
+    "PseudoStatMainHandDps": 2.8719,
+    "PseudoStatOffHandDps": 0.9076,
+    "StatAgility": 0.5472,
+    "StatArmorPenetration": 0.1102,
+    "StatAttackPower": 0.2627,
+    "StatCritRating": 0.5928,
+    "StatExpertiseRating": 0.9621,
+    "StatHasteRating": 0.5225,
+    "StatHitRating": 0.6339,
+    "StatIntellect": 0.3204,
+    "StatRangedAttackPower": 0.0212,
+    "StatSpellPiercing": 0.0924,
+    "StatStrength": 0.289
    },
    "evaluated_on": [
     "melee-dps: ml winner (bis)"
    ],
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
  "search": {
@@ -610,7 +608,7 @@
    "spec": "Survival",
    "setting": "dummy",
    "entry": "melee-dps",
-   "date": "2026-10-23",
+   "date": "2026-10-31",
    "constraint": "Survival 30+",
    "protected": [],
    "entries_screened": {},
@@ -629,10 +627,6 @@
       [
        "Lethal Attacks",
        5
-      ],
-      [
-       "Efficiency",
-       1
       ],
       [
        "Careful Aim",
@@ -666,7 +660,7 @@
       ],
       [
        "Survival Tactics",
-       1
+       2
       ],
       [
        "Predator's Edge",
@@ -698,26 +692,1331 @@
       ]
      ]
     },
-    "split": "5/12/34",
-    "dps": 394.12,
-    "se": 0.0543,
+    "split": "5/11/35",
+    "dps": 398.44,
+    "se": 0.0507,
     "iterations": 100000
    },
    "runner_up": {
     "split": "5/11/35",
-    "dps": 394.12,
-    "se": 0.0543,
+    "dps": 398.44,
+    "se": 0.0507,
     "differs": [
      [
-      "Efficiency",
+      "Entrapment",
+      3
+     ],
+     [
+      "Survivalist",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        3
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/11/35",
+     "dps": 398.44,
+     "se": 0.0507
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        3
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/11/35",
+     "dps": 398.44,
+     "se": 0.0507
+    }
+   ],
+   "runs": [
+    {
+     "entry": "melee-dps",
+     "run": 1,
+     "simulated": 1188,
+     "best_screen": 399.03,
+     "best_split": "5/11/35",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 388,
+       "best": 399.03
+      },
+      {
+       "round": 1,
+       "simulated": 588,
+       "best": 399.03,
+       "predicted_top": 394.64
+      },
+      {
+       "round": 2,
+       "simulated": 788,
+       "best": 399.03,
+       "predicted_top": 396.65
+      },
+      {
+       "round": 3,
+       "simulated": 988,
+       "best": 399.03,
+       "predicted_top": 397.68
+      },
+      {
+       "round": 4,
+       "simulated": 1188,
+       "best": 399.03,
+       "predicted_top": 398.04
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      398.3,
+      398.3,
+      398.3,
+      398.3,
+      398.3,
+      398.3
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      398.46,
+      398.46,
+      398.46,
+      398.46,
+      398.46
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      398.44,
+      398.44
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 412,
+     "best_gap": 0.0,
+     "best_move": "3 Survivalist -> Improved Wing Clip"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.3738
+    },
+    {
+     "feature": "Resourcefulness",
+     "importance": 0.1955
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.1515
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.0948
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0309
+    },
+    {
+     "feature": "Lacerating Strikes",
+     "importance": 0.0291
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0187
+    },
+    {
+     "feature": "Improved Wing Clip",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Survivalist's Discipline",
+     "importance": 0.0111
+    },
+    {
+     "feature": "Endurance Training",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0092
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.009
+    }
+   ],
+   "simulated_builds": 1614,
+   "signature_check": {
+    "spec": "Survival",
+    "ok": true,
+    "core_share": 0.7052,
+    "min_share": 0.5,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2837000,
+   "minutes": 4.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "bis-raid": {
+   "class": "hunter",
+   "spec": "Survival",
+   "setting": "raid",
+   "entry": "melee-dps",
+   "date": "2026-10-31",
+   "constraint": "Survival 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "melee-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Lone Wolf",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       3
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Deterrence",
+       1
+      ],
+      [
+       "Survival Tactics",
+       2
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Counterattack",
+       1
+      ],
+      [
+       "Expose Prey",
+       2
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Strider Kick",
+       1
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ],
+      [
+       "Lacerating Strikes",
+       1
+      ]
+     ]
+    },
+    "split": "5/11/35",
+    "dps": 839.8,
+    "se": 0.121,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "5/12/34",
+    "dps": 839.8,
+    "se": 0.121,
+    "differs": [
+     [
+      "Counterattack",
       1
      ],
      [
-      "Survival Tactics",
+      "Deterrence",
       1
      ],
      [
-      "Survival Tactics",
+      "Entrapment",
+      1
+     ],
+     [
+      "Improved Arcane Shot",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        3
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Deterrence",
+        1
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Counterattack",
+        1
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/11/35",
+     "dps": 839.8,
+     "se": 0.121
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Improved Arcane Shot",
+        1
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        1
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        3
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/12/34",
+     "dps": 839.8,
+     "se": 0.121
+    }
+   ],
+   "runs": [
+    {
+     "entry": "melee-dps",
+     "run": 1,
+     "simulated": 1591,
+     "best_screen": 841.2,
+     "best_split": "5/11/35",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 391,
+       "best": 839.4
+      },
+      {
+       "round": 1,
+       "simulated": 591,
+       "best": 839.4,
+       "predicted_top": 832.38
+      },
+      {
+       "round": 2,
+       "simulated": 791,
+       "best": 841.2,
+       "predicted_top": 835.83
+      },
+      {
+       "round": 3,
+       "simulated": 991,
+       "best": 841.2,
+       "predicted_top": 840.25
+      },
+      {
+       "round": 4,
+       "simulated": 1191,
+       "best": 841.2,
+       "predicted_top": 841.08
+      },
+      {
+       "round": 5,
+       "simulated": 1391,
+       "best": 841.2,
+       "predicted_top": 841.17
+      },
+      {
+       "round": 6,
+       "simulated": 1591,
+       "best": 841.2,
+       "predicted_top": 841.2
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      839.89,
+      839.89,
+      839.89,
+      839.89,
+      839.89,
+      839.89
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      839.81,
+      839.81,
+      839.81,
+      839.81,
+      839.81
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      839.8,
+      839.8
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 350,
+     "best_gap": 0.0,
+     "best_move": "1 Counterattack -> Improved Wing Clip"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.4157
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.2167
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.1162
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0572
+    },
+    {
+     "feature": "Lacerating Strikes",
+     "importance": 0.0537
+    },
+    {
+     "feature": "Deadly Aspects",
+     "importance": 0.0197
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0158
+    },
+    {
+     "feature": "Improved Wing Clip",
+     "importance": 0.0148
+    },
+    {
+     "feature": "Expose Prey",
+     "importance": 0.0113
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0098
+    },
+    {
+     "feature": "Survivalist",
+     "importance": 0.0084
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0083
+    }
+   ],
+   "simulated_builds": 1955,
+   "signature_check": {
+    "spec": "Survival",
+    "ok": true,
+    "core_share": 0.7944,
+    "min_share": 0.5,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3054000,
+   "minutes": 6.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "prebis-dummy": {
+   "class": "hunter",
+   "spec": "Survival",
+   "setting": "dummy",
+   "entry": "melee-dps",
+   "date": "2026-10-31",
+   "constraint": "Survival 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "melee-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Lone Wolf",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       3
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Survival Tactics",
+       2
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Resourcefulness",
+       2
+      ],
+      [
+       "Expose Prey",
+       2
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Strider Kick",
+       1
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ],
+      [
+       "Lacerating Strikes",
+       1
+      ]
+     ]
+    },
+    "split": "5/11/35",
+    "dps": 396.42,
+    "se": 0.0507,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "5/11/35",
+    "dps": 396.42,
+    "se": 0.0507,
+    "differs": [
+     [
+      "Entrapment",
+      3
+     ],
+     [
+      "Survivalist",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        3
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/11/35",
+     "dps": 396.42,
+     "se": 0.0507
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        3
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ],
+       [
+        "Lacerating Strikes",
+        1
+       ]
+      ]
+     },
+     "split": "5/11/35",
+     "dps": 396.42,
+     "se": 0.0507
+    }
+   ],
+   "runs": [
+    {
+     "entry": "melee-dps",
+     "run": 1,
+     "simulated": 1189,
+     "best_screen": 396.92,
+     "best_split": "5/11/35",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 389,
+       "best": 396.92
+      },
+      {
+       "round": 1,
+       "simulated": 589,
+       "best": 396.92,
+       "predicted_top": 391.4
+      },
+      {
+       "round": 2,
+       "simulated": 789,
+       "best": 396.92,
+       "predicted_top": 394.27
+      },
+      {
+       "round": 3,
+       "simulated": 989,
+       "best": 396.92,
+       "predicted_top": 395.15
+      },
+      {
+       "round": 4,
+       "simulated": 1189,
+       "best": 396.92,
+       "predicted_top": 395.14
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      396.19,
+      396.19,
+      396.19,
+      396.19,
+      396.19,
+      396.19
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      396.45,
+      396.45,
+      396.45,
+      396.45,
+      396.45
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      396.42,
+      396.42
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 412,
+     "best_gap": 0.0,
+     "best_move": "3 Survivalist -> Improved Wing Clip"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.3647
+    },
+    {
+     "feature": "Resourcefulness",
+     "importance": 0.1998
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.1507
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.0775
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0503
+    },
+    {
+     "feature": "Lacerating Strikes",
+     "importance": 0.0421
+    },
+    {
+     "feature": "Improved Wing Clip",
+     "importance": 0.0235
+    },
+    {
+     "feature": "Survivalist's Discipline",
+     "importance": 0.0117
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0083
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0083
+    },
+    {
+     "feature": "Survivalist",
+     "importance": 0.0079
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0071
+    }
+   ],
+   "simulated_builds": 1615,
+   "signature_check": {
+    "spec": "Survival",
+    "ok": true,
+    "core_share": 0.7039,
+    "min_share": 0.5,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2838000,
+   "minutes": 3.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "prebis-raid": {
+   "class": "hunter",
+   "spec": "Survival",
+   "setting": "raid",
+   "entry": "melee-dps",
+   "date": "2026-10-31",
+   "constraint": "Survival 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "melee-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Lone Wolf",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       3
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Deterrence",
+       1
+      ],
+      [
+       "Survival Tactics",
+       2
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Counterattack",
+       1
+      ],
+      [
+       "Expose Prey",
+       2
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Strider Kick",
+       1
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ],
+      [
+       "Lacerating Strikes",
+       1
+      ]
+     ]
+    },
+    "split": "5/11/35",
+    "dps": 834.74,
+    "se": 0.1221,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/11/33",
+    "dps": 834.74,
+    "se": 0.1221,
+    "differs": [
+     [
+      "Counterattack",
+      1
+     ],
+     [
+      "Deterrence",
+      1
+     ],
+     [
+      "Endurance Training",
       2
      ]
     ]
@@ -738,10 +2037,6 @@
         5
        ],
        [
-        "Efficiency",
-        1
-       ],
-       [
         "Careful Aim",
         5
        ],
@@ -772,16 +2067,20 @@
         3
        ],
        [
-        "Survival Tactics",
+        "Deterrence",
         1
+       ],
+       [
+        "Survival Tactics",
+        2
        ],
        [
         "Predator's Edge",
         5
        ],
        [
-        "Resourcefulness",
-        2
+        "Counterattack",
+        1
        ],
        [
         "Expose Prey",
@@ -805,9 +2104,9 @@
        ]
       ]
      },
-     "split": "5/12/34",
-     "dps": 394.12,
-     "se": 0.0543
+     "split": "5/11/35",
+     "dps": 834.74,
+     "se": 0.1221
     },
     {
      "allocation": {
@@ -815,6 +2114,10 @@
        [
         "Deadly Aspects",
         5
+       ],
+       [
+        "Endurance Training",
+        2
        ]
       ],
       "Marksmanship": [
@@ -861,10 +2164,6 @@
         5
        ],
        [
-        "Resourcefulness",
-        2
-       ],
-       [
         "Expose Prey",
         2
        ],
@@ -886,470 +2185,47 @@
        ]
       ]
      },
-     "split": "5/11/35",
-     "dps": 394.12,
-     "se": 0.0543
+     "split": "7/11/33",
+     "dps": 834.74,
+     "se": 0.1221
     }
    ],
    "runs": [
     {
      "entry": "melee-dps",
      "run": 1,
-     "simulated": 1189,
-     "best_screen": 394.0,
-     "best_split": "5/12/34",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 389,
-       "best": 394.0
-      },
-      {
-       "round": 1,
-       "simulated": 589,
-       "best": 394.0,
-       "predicted_top": 390.72
-      },
-      {
-       "round": 2,
-       "simulated": 789,
-       "best": 394.0,
-       "predicted_top": 393.66
-      },
-      {
-       "round": 3,
-       "simulated": 989,
-       "best": 394.0,
-       "predicted_top": 393.95
-      },
-      {
-       "round": 4,
-       "simulated": 1189,
-       "best": 394.0,
-       "predicted_top": 393.98
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      393.96,
-      393.96,
-      393.96,
-      393.96,
-      393.96,
-      393.96
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      394.09,
-      394.08,
-      394.08,
-      394.08,
-      394.08
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      394.12,
-      394.12
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 482,
-     "best_gap": 0.0,
-     "best_move": "1 Survival Tactics -> Deterrence"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Lone Wolf",
-     "importance": 0.2906
-    },
-    {
-     "feature": "Expose Prey",
-     "importance": 0.2435
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.1377
-    },
-    {
-     "feature": "Careful Aim",
-     "importance": 0.102
-    },
-    {
-     "feature": "Resourcefulness",
-     "importance": 0.086
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0269
-    },
-    {
-     "feature": "Improved Wing Clip",
-     "importance": 0.0209
-    },
-    {
-     "feature": "Lacerating Strikes",
-     "importance": 0.0161
-    },
-    {
-     "feature": "Deadly Aspects",
-     "importance": 0.0103
-    },
-    {
-     "feature": "Survivalist's Discipline",
-     "importance": 0.0081
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.0072
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0066
-    }
-   ],
-   "simulated_builds": 1685,
-   "signature_check": {
-    "spec": "Survival",
-    "ok": true,
-    "core_share": 0.7153,
-    "min_share": 0.5,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 3048000,
-   "minutes": 3.7,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "bis-raid": {
-   "class": "hunter",
-   "spec": "Survival",
-   "setting": "raid",
-   "entry": "melee-dps",
-   "date": "2026-10-23",
-   "constraint": "Survival 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "melee-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Lone Wolf",
-       1
-      ]
-     ],
-     "Survival": [
-      [
-       "Improved Tracking",
-       5
-      ],
-      [
-       "Savage Strikes",
-       2
-      ],
-      [
-       "Survivalist",
-       3
-      ],
-      [
-       "Clever Traps",
-       2
-      ],
-      [
-       "Surefooted",
-       3
-      ],
-      [
-       "Survival Tactics",
-       2
-      ],
-      [
-       "Predator's Edge",
-       5
-      ],
-      [
-       "Resourcefulness",
-       2
-      ],
-      [
-       "Expose Prey",
-       2
-      ],
-      [
-       "Survivalist's Discipline",
-       2
-      ],
-      [
-       "Strider Kick",
-       1
-      ],
-      [
-       "Lightning Reflexes",
-       5
-      ],
-      [
-       "Lacerating Strikes",
-       1
-      ]
-     ]
-    },
-    "split": "5/11/35",
-    "dps": 841.09,
-    "se": 0.1232,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "5/11/35",
-    "dps": 841.09,
-    "se": 0.1232,
-    "differs": [
-     [
-      "Entrapment",
-      3
-     ],
-     [
-      "Survivalist",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Survivalist",
-        3
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        2
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/11/35",
-     "dps": 841.09,
-     "se": 0.1232
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Entrapment",
-        3
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        2
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/11/35",
-     "dps": 841.09,
-     "se": 0.1232
-    }
-   ],
-   "runs": [
-    {
-     "entry": "melee-dps",
-     "run": 1,
-     "simulated": 1210,
-     "best_screen": 841.77,
+     "simulated": 1193,
+     "best_screen": 836.66,
      "best_split": "5/11/35",
      "trace": [
       {
        "round": 0,
-       "simulated": 410,
-       "best": 841.77
+       "simulated": 393,
+       "best": 836.66
       },
       {
        "round": 1,
-       "simulated": 610,
-       "best": 841.77,
-       "predicted_top": 835.45
+       "simulated": 593,
+       "best": 836.66,
+       "predicted_top": 829.24
       },
       {
        "round": 2,
-       "simulated": 810,
-       "best": 841.77,
-       "predicted_top": 840.74
+       "simulated": 793,
+       "best": 836.66,
+       "predicted_top": 836.0
       },
       {
        "round": 3,
-       "simulated": 1010,
-       "best": 841.77,
-       "predicted_top": 841.65
+       "simulated": 993,
+       "best": 836.66,
+       "predicted_top": 836.57
       },
       {
        "round": 4,
-       "simulated": 1210,
-       "best": 841.77,
-       "predicted_top": 841.77
+       "simulated": 1193,
+       "best": 836.66,
+       "predicted_top": 836.66
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1362,975 +2238,109 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      840.18,
-      840.18,
-      840.18,
-      840.18,
-      840.18,
-      840.18
+      835.41,
+      835.41,
+      835.41,
+      835.41,
+      835.41,
+      835.41
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      841.17,
-      841.17,
-      841.17,
-      841.17,
-      841.17
+      834.45,
+      834.45,
+      834.45,
+      834.45,
+      834.45
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      841.09,
-      841.09
+      834.74,
+      834.74
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 425,
-     "best_gap": 0.0006,
-     "best_move": "1 Survival Tactics + 1 Resourcefulness -> 1 Deterrence + 1 Counterattack"
+     "neighbours": 350,
+     "best_gap": 0.0,
+     "best_move": "1 Counterattack -> Improved Wing Clip"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.3504
-    },
-    {
-     "feature": "Expose Prey",
-     "importance": 0.304
+     "importance": 0.4502
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.1106
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0541
+     "importance": 0.2264
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0362
+     "importance": 0.0999
     },
     {
-     "feature": "Lacerating Strikes",
-     "importance": 0.0321
-    },
-    {
-     "feature": "Improved Wing Clip",
-     "importance": 0.0224
+     "feature": "Deflection",
+     "importance": 0.0747
     },
     {
      "feature": "Deadly Aspects",
-     "importance": 0.0152
-    },
-    {
-     "feature": "Lightning Reflexes",
-     "importance": 0.0125
+     "importance": 0.0201
     },
     {
      "feature": "Lethal Attacks",
-     "importance": 0.0104
-    },
-    {
-     "feature": "Predator's Edge",
-     "importance": 0.0103
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.0093
-    }
-   ],
-   "simulated_builds": 1649,
-   "signature_check": {
-    "spec": "Survival",
-    "ok": true,
-    "core_share": 0.8011,
-    "min_share": 0.5,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2898000,
-   "minutes": 9.6,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "prebis-dummy": {
-   "class": "hunter",
-   "spec": "Survival",
-   "setting": "dummy",
-   "entry": "melee-dps",
-   "date": "2026-10-23",
-   "constraint": "Survival 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "melee-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Efficiency",
-       1
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Lone Wolf",
-       1
-      ]
-     ],
-     "Survival": [
-      [
-       "Improved Tracking",
-       5
-      ],
-      [
-       "Savage Strikes",
-       2
-      ],
-      [
-       "Survivalist",
-       3
-      ],
-      [
-       "Clever Traps",
-       2
-      ],
-      [
-       "Surefooted",
-       3
-      ],
-      [
-       "Survival Tactics",
-       1
-      ],
-      [
-       "Predator's Edge",
-       5
-      ],
-      [
-       "Resourcefulness",
-       2
-      ],
-      [
-       "Expose Prey",
-       2
-      ],
-      [
-       "Survivalist's Discipline",
-       2
-      ],
-      [
-       "Strider Kick",
-       1
-      ],
-      [
-       "Lightning Reflexes",
-       5
-      ],
-      [
-       "Lacerating Strikes",
-       1
-      ]
-     ]
-    },
-    "split": "5/12/34",
-    "dps": 391.81,
-    "se": 0.0538,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "5/13/33",
-    "dps": 391.81,
-    "se": 0.0538,
-    "differs": [
-     [
-      "Entrapment",
-      3
-     ],
-     [
-      "Rapid Killing",
-      1
-     ],
-     [
-      "Survival Tactics",
-      1
-     ],
-     [
-      "Survivalist",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Efficiency",
-        1
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Survivalist",
-        3
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        1
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/12/34",
-     "dps": 391.81,
-     "se": 0.0538
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Efficiency",
-        1
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Rapid Killing",
-        1
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Entrapment",
-        3
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/13/33",
-     "dps": 391.81,
-     "se": 0.0538
-    }
-   ],
-   "runs": [
-    {
-     "entry": "melee-dps",
-     "run": 1,
-     "simulated": 1187,
-     "best_screen": 391.7,
-     "best_split": "5/12/34",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 387,
-       "best": 391.7
-      },
-      {
-       "round": 1,
-       "simulated": 587,
-       "best": 391.7,
-       "predicted_top": 388.9
-      },
-      {
-       "round": 2,
-       "simulated": 787,
-       "best": 391.7,
-       "predicted_top": 391.34
-      },
-      {
-       "round": 3,
-       "simulated": 987,
-       "best": 391.7,
-       "predicted_top": 391.57
-      },
-      {
-       "round": 4,
-       "simulated": 1187,
-       "best": 391.7,
-       "predicted_top": 391.66
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      391.65,
-      391.65,
-      391.65,
-      391.65,
-      391.65,
-      391.65
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      391.78,
-      391.78,
-      391.78,
-      391.78,
-      391.78
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      391.81,
-      391.81
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 482,
-     "best_gap": 0.0,
-     "best_move": "1 Survival Tactics -> Deterrence"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Lone Wolf",
-     "importance": 0.3165
-    },
-    {
-     "feature": "Expose Prey",
-     "importance": 0.2664
-    },
-    {
-     "feature": "Careful Aim",
-     "importance": 0.0918
-    },
-    {
-     "feature": "Resourcefulness",
-     "importance": 0.0845
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0829
+     "importance": 0.0166
     },
     {
      "feature": "Lacerating Strikes",
-     "importance": 0.0369
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0316
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0123
-    },
-    {
-     "feature": "Improved Wing Clip",
-     "importance": 0.0099
-    },
-    {
-     "feature": "Predator's Edge",
-     "importance": 0.0081
-    },
-    {
-     "feature": "Survivalist's Discipline",
-     "importance": 0.0077
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.0063
-    }
-   ],
-   "simulated_builds": 1683,
-   "signature_check": {
-    "spec": "Survival",
-    "ok": true,
-    "core_share": 0.7156,
-    "min_share": 0.5,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 3046000,
-   "minutes": 9.5,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "prebis-raid": {
-   "class": "hunter",
-   "spec": "Survival",
-   "setting": "raid",
-   "entry": "melee-dps",
-   "date": "2026-10-23",
-   "constraint": "Survival 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "melee-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Lone Wolf",
-       1
-      ]
-     ],
-     "Survival": [
-      [
-       "Improved Tracking",
-       5
-      ],
-      [
-       "Savage Strikes",
-       2
-      ],
-      [
-       "Survivalist",
-       3
-      ],
-      [
-       "Clever Traps",
-       2
-      ],
-      [
-       "Surefooted",
-       3
-      ],
-      [
-       "Survival Tactics",
-       2
-      ],
-      [
-       "Predator's Edge",
-       5
-      ],
-      [
-       "Resourcefulness",
-       2
-      ],
-      [
-       "Expose Prey",
-       2
-      ],
-      [
-       "Survivalist's Discipline",
-       2
-      ],
-      [
-       "Strider Kick",
-       1
-      ],
-      [
-       "Lightning Reflexes",
-       5
-      ],
-      [
-       "Lacerating Strikes",
-       1
-      ]
-     ]
-    },
-    "split": "5/11/35",
-    "dps": 834.91,
-    "se": 0.1222,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "5/11/35",
-    "dps": 834.91,
-    "se": 0.1222,
-    "differs": [
-     [
-      "Entrapment",
-      3
-     ],
-     [
-      "Survivalist",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Survivalist",
-        3
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        2
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/11/35",
-     "dps": 834.91,
-     "se": 0.1222
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ],
-       [
-        "Entrapment",
-        3
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        2
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Resourcefulness",
-        2
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "5/11/35",
-     "dps": 834.91,
-     "se": 0.1222
-    }
-   ],
-   "runs": [
-    {
-     "entry": "melee-dps",
-     "run": 1,
-     "simulated": 1199,
-     "best_screen": 835.54,
-     "best_split": "5/11/35",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 399,
-       "best": 835.54
-      },
-      {
-       "round": 1,
-       "simulated": 599,
-       "best": 835.54,
-       "predicted_top": 830.2
-      },
-      {
-       "round": 2,
-       "simulated": 799,
-       "best": 835.54,
-       "predicted_top": 835.17
-      },
-      {
-       "round": 3,
-       "simulated": 999,
-       "best": 835.54,
-       "predicted_top": 835.33
-      },
-      {
-       "round": 4,
-       "simulated": 1199,
-       "best": 835.54,
-       "predicted_top": 835.54
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      833.98,
-      833.98,
-      833.98,
-      833.98,
-      833.98,
-      833.98
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      835.03,
-      835.03,
-      835.03,
-      835.03,
-      835.03
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      834.91,
-      834.91
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 425,
-     "best_gap": 0.0006,
-     "best_move": "2 Resourcefulness -> 1 Deterrence + 1 Counterattack"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Lone Wolf",
-     "importance": 0.3306
+     "importance": 0.0164
     },
     {
      "feature": "Expose Prey",
-     "importance": 0.3115
-    },
-    {
-     "feature": "Careful Aim",
-     "importance": 0.1286
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0548
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.044
-    },
-    {
-     "feature": "Deadly Aspects",
-     "importance": 0.022
-    },
-    {
-     "feature": "Lacerating Strikes",
-     "importance": 0.0193
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.0151
+     "importance": 0.0162
     },
     {
      "feature": "Improved Wing Clip",
-     "importance": 0.0148
+     "importance": 0.0124
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0114
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.0072
     },
     {
      "feature": "Lightning Reflexes",
-     "importance": 0.0088
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.0071
-    },
-    {
-     "feature": "Predator's Edge",
      "importance": 0.0069
     }
    ],
-   "simulated_builds": 1638,
+   "simulated_builds": 1557,
    "signature_check": {
     "spec": "Survival",
     "ok": true,
-    "core_share": 0.8014,
+    "core_share": 0.7926,
     "min_share": 0.5,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2887000,
-   "minutes": 14.0,
+   "simulated_fights": 2656000,
+   "minutes": 5.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
- "commit": "30f67f5d2",
+ "commit": "b90e2b958",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2343,172 +2353,22 @@
   "dps": {
    "winner": {
     "entry": "melee-dps",
-    "dps": 394.17,
-    "se": 0.054
+    "dps": 398.45,
+    "se": 0.051
    },
    "melee-survival-raid": {
     "entry": "melee-dps",
-    "dps": 394.17,
-    "se": 0.054
+    "dps": 398.45,
+    "se": 0.051
    },
    "survival-raid": {
     "entry": "melee-dps",
-    "dps": 379.11,
+    "dps": 378.3,
     "se": 0.051
    }
   },
   "best_hand": "melee-survival-raid",
   "gain_vs_hand": 0.0,
-  "commit": "30f67f5d2"
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "melee-dps",
-    "dps": 840.96,
-    "se": 0.123
-   },
-   "melee-survival-raid": {
-    "entry": "melee-dps",
-    "dps": 840.96,
-    "se": 0.123
-   },
-   "survival-raid": {
-    "entry": "melee-dps",
-    "dps": 806.02,
-    "se": 0.117
-   },
-   "survival-ml-parse": {
-    "entry": "melee-dps",
-    "dps": 801.77,
-    "se": 0.118
-   }
-  },
-  "best_hand": "melee-survival-raid",
-  "gain_vs_hand": 0.0
- },
- "signature_check": {
-  "spec": "Survival",
-  "ok": true,
-  "core_share": 0.8014,
-  "min_share": 0.5,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "melee-dps",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 841.1,
-  "date": "2026-10-29",
-  "commit": "30f67f5d2",
-  "shares": {
-   "Auto Attack": 0.5837,
-   "Raptor Strike": 0.1241,
-   "Explosive Trap": 0.1076,
-   "Strider Kick": 0.0619,
-   "Mongoose Bite": 0.0527,
-   "Wing Clip": 0.0409,
-   "Lacerating Strikes": 0.0292
-  },
-  "casts": {
-   "Strider Kick": 19.86,
-   "Raptor Strike": 30.0,
-   "Aspect of the Beast": 1.0,
-   "Rapid Fire": 1.0,
-   "Hunter's Mark": 1.0,
-   "Explosive Trap": 10.0,
-   "Wing Clip": 74.75,
-   "Mongoose Bite": 14.39
-  },
-  "allocation": {
-   "Beast Mastery": [
-    [
-     "Deadly Aspects",
-     5
-    ]
-   ],
-   "Marksmanship": [
-    [
-     "Lethal Attacks",
-     5
-    ],
-    [
-     "Careful Aim",
-     5
-    ],
-    [
-     "Lone Wolf",
-     1
-    ]
-   ],
-   "Survival": [
-    [
-     "Improved Tracking",
-     5
-    ],
-    [
-     "Savage Strikes",
-     2
-    ],
-    [
-     "Survivalist",
-     3
-    ],
-    [
-     "Clever Traps",
-     2
-    ],
-    [
-     "Surefooted",
-     3
-    ],
-    [
-     "Survival Tactics",
-     2
-    ],
-    [
-     "Predator's Edge",
-     5
-    ],
-    [
-     "Resourcefulness",
-     2
-    ],
-    [
-     "Expose Prey",
-     2
-    ],
-    [
-     "Survivalist's Discipline",
-     2
-    ],
-    [
-     "Strider Kick",
-     1
-    ],
-    [
-     "Lightning Reflexes",
-     5
-    ],
-    [
-     "Lacerating Strikes",
-     1
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-29",
-  "setting": "raid",
-  "why": "confirms melee-survival-raid (+0.00% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "commit": "b90e2b958"
  }
 }

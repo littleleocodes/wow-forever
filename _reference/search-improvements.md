@@ -323,3 +323,7 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   search and the pages' main full-raid number) are chosen in `R.setting(e)`, the training dummy for damage entries. Re-choosing them in
   a full raid would move casters' page numbers by up to ~3% (the Frostfire test) but changes the gear every search of this sweep ran in;
   candidate for the launch-data run (gear_opt.py with the raid setting, then the searches), not mid-sweep.
+- **ML records outlive their target** (2026-10-31, hunter audit): `ml_pipeline.py --steps final` only runs specs `targets(cls)` still lists, so
+  a record whose family lost its build (the hunter's Beast-Survival, `beast-survival-open-raid` dropped when melee Survival passed it) passes
+  with rc=0 in seconds and nothing searched, while `ml_builds --rank` and `gear_links` keep rendering its old gear section. Moved to
+  `raidsim/ml/retired/`. Check at every audit: an `ml-<class>-<spec>` marker written within a minute of the previous one is a no-op.

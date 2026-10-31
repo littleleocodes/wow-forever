@@ -161,8 +161,8 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-22",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
@@ -173,17 +173,17 @@
     "talents": "5-0053452511513051-5"
    },
    {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
+    "label": "sim preset: MM",
+    "talents": "5-005355251152205-5"
    },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
-    "talents": "5-005355051150305-50003",
+    "talents": "50002-3053552011523051-3",
     "protect_only": true
    },
    {
     "label": "marksmanship-ml-parse",
-    "talents": "510001-1053552511523051",
+    "talents": "51001-1053552511523051",
     "protect_only": true
    },
    {
@@ -194,7 +194,7 @@
   ],
   "tuned_on": [
    "mm-lone-wolf-raid",
-   "sim preset: Marksmanship"
+   "sim preset: MM"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -315,53 +315,67 @@
   "final": {
    "raid": {
     "mm-lone-wolf-raid": {
-     "before": 697.4340937031064,
-     "after": 759.6506018407057,
-     "base": 697.4340937031064,
+     "before": 700.780032690868,
+     "after": 764.0725602126013,
+     "base": 700.780032690868,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.3915333525022993,
-     "oom_after": 0.3690342309523999
+     "oom_before": 2.705710440708452,
+     "oom_after": 2.705710440708452
     },
-    "sim preset: Marksmanship": {
-     "before": 539.5777416482327,
-     "after": 589.5894095147638,
-     "base": 539.5777416482327,
+    "sim preset: MM": {
+     "before": 670.30296705161,
+     "after": 730.7388831101168,
+     "base": 670.30296705161,
      "before_value": null,
      "after_value": null,
-     "oom_before": 6.956396429513051,
-     "oom_after": 1.8846258796773998
-    },
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 670.5106512160743,
-     "after": 727.2896207392399,
-     "base": 670.5106512160743,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.02698082416625,
-     "oom_after": 0.00123417582475
-    },
-    "marksmanship-ml-parse": {
-     "before": 667.3406302083372,
-     "after": 723.9871539509569,
-     "base": 667.3406302083372,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0013113186809000001,
+     "oom_before": 0,
      "oom_after": 0
     },
-    "marksmanship-ml-raid": {
-     "before": 638.8343382938593,
-     "after": 683.5706009730593,
-     "base": 638.8343382938593,
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "before": 689.280096605324,
+     "after": 712.7633157076524,
+     "base": 689.280096605324,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.006288791176199999,
-     "oom_after": 0.0002550549453
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "marksmanship-ml-parse": {
+     "before": 670.0662232014128,
+     "after": 730.3296573445717,
+     "base": 670.0662232014128,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00031675824225,
+     "oom_after": 0.00031675824225
+    },
+    "marksmanship-ml-raid": {
+     "before": 642.3237253928336,
+     "after": 690.5801415785321,
+     "base": 642.3237253928336,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0048984615185500005,
+     "oom_after": 0.0048984615185500005
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Marksmanship"
+   ],
+   "required": [
+    "Aimed Shot"
+   ],
+   "rejected": {
+    "structure": 10,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-27",
-  "passes": 13
+  "passes": 14
  }
 }

@@ -230,20 +230,20 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-22",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "beast-marks-open-raid",
-    "talents": "552100050500022-00530503005-3"
+    "label": "beast-mastery-ml-raid",
+    "talents": "5320001505101251-00530502005"
    },
    {
-    "label": "sim preset: Beast Mastery 35/16/0",
-    "talents": "5520001505121251-0050551"
+    "label": "sim preset: BM",
+    "talents": "5320001505101251-0053250001-4"
    },
    {
     "label": "mm-hawk-raid",
@@ -251,14 +251,14 @@
     "protect_only": true
    },
    {
-    "label": "beast-mastery-ml-raid",
-    "talents": "5320001505101251-00530502005",
+    "label": "beast-marks-ml-raid",
+    "talents": "532000150510123-00500505005-3",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "beast-marks-open-raid",
-   "sim preset: Beast Mastery 35/16/0"
+   "beast-mastery-ml-raid",
+   "sim preset: BM"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -378,45 +378,61 @@
   ],
   "final": {
    "raid": {
-    "beast-marks-open-raid": {
-     "before": 637.2472621632246,
-     "after": 756.4204143308996,
-     "base": 637.2472621632246,
+    "beast-mastery-ml-raid": {
+     "before": 739.5852392614244,
+     "after": 773.295744456381,
+     "base": 739.5852392614244,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.01021593404675,
-     "oom_after": 0.01021593404675
+     "oom_before": 0.13454604342645018,
+     "oom_after": 0.13454604342645018
     },
-    "sim preset: Beast Mastery 35/16/0": {
-     "before": 700.6781057192826,
-     "after": 716.9397991084375,
-     "base": 700.6781057192826,
+    "sim preset: BM": {
+     "before": 734.8610655230888,
+     "after": 754.9088624675284,
+     "base": 734.8610655230888,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "mm-hawk-raid": {
-     "before": 689.0463609124697,
-     "after": 715.1404808738423,
-     "base": 689.0463609124697,
+     "before": 693.4714480053809,
+     "after": 720.9290267610266,
+     "base": 693.4714480053809,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "beast-mastery-ml-raid": {
-     "before": 735.682573210256,
-     "after": 768.4099220238508,
-     "base": 735.682573210256,
+    "beast-marks-ml-raid": {
+     "before": 710.8108542208765,
+     "after": 761.5486366777146,
+     "base": 710.8108542208765,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0118252197144,
-     "oom_after": 0.0118252197144
+     "oom_before": 1.3044843399720991,
+     "oom_after": 1.3044843399720991
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Beast Mastery",
+    "Hybrid Beast Mastery/Marksmanship"
+   ],
+   "required": [
+    "Aimed Shot",
+    "Bestial Wrath"
+   ],
+   "rejected": {
+    "structure": 20,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 14
+  "passes": 15
  }
 }

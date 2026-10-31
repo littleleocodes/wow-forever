@@ -23,8 +23,22 @@
      "spellId": {
       "spellId": 14317
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "60%"
+       }
+      }
+     }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see melee-dps-rotation-search.json)"
   },
   {
    "action": {

@@ -1,0 +1,774 @@
+{
+ "class": "hunter",
+ "spec": "Hybrid Beast Mastery/Survival",
+ "slug": "hybrid-beast-mastery-survival",
+ "entries": [
+  "melee-dps"
+ ],
+ "best": "beast-survival-open-raid",
+ "best_entry": "melee-dps",
+ "best_dps": 360.49,
+ "any_split": true,
+ "date": "2026-10-14",
+ "gear": {
+  "bis": {
+   "entry": "melee-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json",
+   "date": "2026-10-22",
+   "chosen": "all-slots",
+   "ilvl": 64.6,
+   "trinkets": [
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain"
+   ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.023,
+    "Rune of the Guard Captain (19120)": 1.0131,
+    "Cleansed Vilebranch Medallion (270275)": 1.0131,
+    "Molten Heart of the Mountain (249470)": 1.0113,
+    "Frozen Heart of the Mountain (249469)": 1.009,
+    "Everlook Delivery Bot (274760)": 1.0083,
+    "Everlook Pathcarver (274759)": 1.0079,
+    "Jewel of the Guard Captain (270225)": 1.0052,
+    "Weakness Analyzer (272438)": 1.0012,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Stormpike Insignia Rank 6 (17904)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
+   "names": [
+    "Black Dragonscale Helm",
+    "Onyxia Tooth Pendant",
+    "Theramore Pauldrons",
+    "Howler's Furs",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Belt of Preserved Heads",
+    "Outrider's Chain Leggings",
+    "Scalegut Treaders",
+    "Signet Ring of the Bronze Dragonflight",
+    "Quick Strike Ring",
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain",
+    "Premier High Warlord's Razor",
+    "Premier High Warlord's Blade",
+    "Premier High Warlord's Recurve"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.999008355982533
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0006502190787196
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.4686,
+    "PseudoStatOffHandDps": 0.575,
+    "StatAgility": 0.2418,
+    "StatArmorPenetration": 0.0336,
+    "StatAttackPower": 0.1422,
+    "StatCritRating": 0.2613,
+    "StatExpertiseRating": 0.351,
+    "StatHasteRating": 0.2005,
+    "StatHitRating": 0.2876,
+    "StatIntellect": 0.1515,
+    "StatRangedAttackPower": 0.0056,
+    "StatSpellPiercing": 0.0078,
+    "StatStrength": 0.1422
+   },
+   "evaluated_on": [
+    "melee-dps: ml winner"
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Giantstalker's Helmet (not in the database)",
+     "to": "Black Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Giantstalker's Epaulets (not in the database)",
+     "to": "Theramore Pauldrons"
+    },
+    {
+     "slot": 4,
+     "from": "Giantstalker's Breastplate (not in the database)",
+     "to": "Dawn Armor"
+    },
+    {
+     "slot": 5,
+     "from": "Giantstalker's Bracers (not in the database)",
+     "to": "Forest Stalker's Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Giantstalker's Gloves (not in the database)",
+     "to": "Theramore Gloves"
+    },
+    {
+     "slot": 7,
+     "from": "Giantstalker's Belt (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 8,
+     "from": "Giantstalker's Leggings (not in the database)",
+     "to": "Outrider's Chain Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Giantstalker's Boots (not in the database)",
+     "to": "Scalegut Treaders"
+    },
+    {
+     "slot": 10,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Quick Strike Ring"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Deathbringer (not in the database)",
+     "to": "Premier High Warlord's Razor"
+    },
+    {
+     "slot": 15,
+     "from": "Brutality Blade (not in the database)",
+     "to": "Premier High Warlord's Blade"
+    },
+    {
+     "slot": 16,
+     "from": "Striker's Mark (not in the database)",
+     "to": "Premier High Warlord's Recurve"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16846",
+     "item:16848",
+     "item:16845",
+     "item:16850",
+     "item:16852",
+     "item:16851",
+     "item:16847",
+     "item:16849",
+     "item:17063",
+     "item:13965",
+     "item:17068",
+     "item:18832",
+     "item:17069"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.3
+   }
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "hunter",
+   "spec": "Hybrid Beast Mastery/Survival",
+   "setting": "dummy",
+   "entry": "melee-dps",
+   "date": "2026-10-14",
+   "constraint": "spec field (entry rotation)",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "melee-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Efficiency",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Lone Wolf",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Entrapment",
+       1
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       2
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Survival Tactics",
+       1
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Resourcefulness",
+       2
+      ],
+      [
+       "Expose Prey",
+       2
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Strider Kick",
+       1
+      ],
+      [
+       "Lightning Reflexes",
+       2
+      ]
+     ]
+    },
+    "split": "5/16/30",
+    "dps": 486.51,
+    "se": 0.0697,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "5/16/30",
+    "dps": 485.67,
+    "se": 0.0718,
+    "differs": [
+     [
+      "Lightning Reflexes",
+      2
+     ],
+     [
+      "Lightning Reflexes",
+      3
+     ],
+     [
+      "Survival Tactics",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0017,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        1
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        1
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        2
+       ]
+      ]
+     },
+     "split": "5/16/30",
+     "dps": 486.51,
+     "se": 0.0697
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        1
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ],
+       [
+        "Strider Kick",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        3
+       ]
+      ]
+     },
+     "split": "5/16/30",
+     "dps": 485.67,
+     "se": 0.0718
+    }
+   ],
+   "runs": [
+    {
+     "entry": "melee-dps",
+     "run": 1,
+     "simulated": 2406,
+     "best_screen": 486.19,
+     "best_split": "5/16/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 406,
+       "best": 471.38
+      },
+      {
+       "round": 1,
+       "simulated": 606,
+       "best": 476.05,
+       "predicted_top": 464.27
+      },
+      {
+       "round": 2,
+       "simulated": 806,
+       "best": 479.86,
+       "predicted_top": 471.63
+      },
+      {
+       "round": 3,
+       "simulated": 1006,
+       "best": 481.97,
+       "predicted_top": 476.09
+      },
+      {
+       "round": 4,
+       "simulated": 1206,
+       "best": 481.99,
+       "predicted_top": 479.29
+      },
+      {
+       "round": 5,
+       "simulated": 1406,
+       "best": 482.43,
+       "predicted_top": 480.37
+      },
+      {
+       "round": 6,
+       "simulated": 1606,
+       "best": 486.19,
+       "predicted_top": 481.5
+      },
+      {
+       "round": 7,
+       "simulated": 1806,
+       "best": 486.19,
+       "predicted_top": 482.58
+      },
+      {
+       "round": 8,
+       "simulated": 2006,
+       "best": 486.19,
+       "predicted_top": 485.62
+      },
+      {
+       "round": 9,
+       "simulated": 2206,
+       "best": 486.19,
+       "predicted_top": 485.59
+      },
+      {
+       "round": 10,
+       "simulated": 2406,
+       "best": 486.19,
+       "predicted_top": 485.57
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "melee-dps",
+     "run": 2,
+     "simulated": 1801,
+     "best_screen": 486.19,
+     "best_split": "5/16/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 401,
+       "best": 471.0
+      },
+      {
+       "round": 1,
+       "simulated": 601,
+       "best": 475.06,
+       "predicted_top": 464.93
+      },
+      {
+       "round": 2,
+       "simulated": 801,
+       "best": 483.76,
+       "predicted_top": 471.63
+      },
+      {
+       "round": 3,
+       "simulated": 1001,
+       "best": 486.19,
+       "predicted_top": 478.44
+      },
+      {
+       "round": 4,
+       "simulated": 1201,
+       "best": 486.19,
+       "predicted_top": 482.95
+      },
+      {
+       "round": 5,
+       "simulated": 1401,
+       "best": 486.19,
+       "predicted_top": 484.13
+      },
+      {
+       "round": 6,
+       "simulated": 1601,
+       "best": 486.19,
+       "predicted_top": 485.12
+      },
+      {
+       "round": 7,
+       "simulated": 1801,
+       "best": 486.19,
+       "predicted_top": 485.53
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      485.37,
+      485.37,
+      485.37,
+      485.37,
+      485.37,
+      485.37,
+      485.37,
+      485.37,
+      485.37
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      485.77,
+      485.77,
+      485.77,
+      485.77,
+      485.77
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      485.67,
+      485.67
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      486.51,
+      485.67
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 480,
+     "best_gap": 0.0012,
+     "best_move": "1 Lightning Reflexes -> Survival Tactics",
+     "raced": [
+      "1 Lightning Reflexes -> Survival Tactics"
+     ],
+     "confirmed_gap": 0.0016
+    },
+    {
+     "neighbours": 549,
+     "best_gap": 0.0,
+     "best_move": "2 Survivalist -> Improved Wing Clip"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.3764
+    },
+    {
+     "feature": "Resourcefulness",
+     "importance": 0.242
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0887
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0865
+    },
+    {
+     "feature": "Expose Prey",
+     "importance": 0.0539
+    },
+    {
+     "feature": "Efficiency",
+     "importance": 0.0326
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0162
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0151
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.0109
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0071
+    },
+    {
+     "feature": "Strider Kick",
+     "importance": 0.0069
+    }
+   ],
+   "simulated_builds": 5110,
+   "simulated_fights": 7753000,
+   "minutes": 7.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json"
+  }
+ },
+ "commit": "2ce8265",
+ "spells_done": {
+  "date": "2026-10-14",
+  "lines_kept": 0
+ },
+ "notes": [
+  "2026-10-15: full-raid searches cleared and re-run after the Windfury Totem main-hand patch (they had run with off-hand procs)",
+  "2026-10-31: retired (out of ml/ so ml_builds --rank and gear_links no longer render it): no longer an ml_pipeline target, its build beast-survival-open-raid was dropped when the melee Survival pick passed it; no searches since 2026-10-14 (commit 2ce8265)"
+ ]
+}

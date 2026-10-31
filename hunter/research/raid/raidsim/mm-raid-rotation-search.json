@@ -178,20 +178,20 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-22",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "b90e2b958",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "marksmanship-with-a-pet-open-raid",
-    "talents": "502-0053252501523051-5"
+    "label": "marksmanship-open-raid",
+    "talents": "502-0053352501522051-5"
    },
    {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
+    "label": "sim preset: BM Weave",
+    "talents": "5320001505101251-0053250001-4"
    },
    {
     "label": "bm-mm-raid",
@@ -205,13 +205,13 @@
    },
    {
     "label": "opt-mm-raid-raid-dps",
-    "talents": "5320001505101251-00505500014",
+    "talents": "5420001505001251-0050550001-4",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "marksmanship-with-a-pet-open-raid",
-   "sim preset: Marksmanship"
+   "marksmanship-open-raid",
+   "sim preset: BM Weave"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -319,50 +319,58 @@
     "gain_seed2": 0.005283124801204853,
     "candidates": 399,
     "pass": 12
+   },
+   {
+    "round": 14,
+    "change": "insert at the end: cast Major Mana Potion",
+    "gain_seed1": 0.001888777288590715,
+    "gain_seed2": 0.0020652165478489692,
+    "candidates": 355,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
-    "marksmanship-with-a-pet-open-raid": {
-     "before": 728.8120090382251,
-     "after": 779.8516918392975,
-     "base": 728.8120090382251,
+    "marksmanship-open-raid": {
+     "before": 729.3642111344469,
+     "after": 785.2853131296123,
+     "base": 729.3642111344469,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.090717472126896,
-     "oom_after": 4.906051042749098
+     "oom_before": 4.734446098127083,
+     "oom_after": 2.821176263174444
     },
-    "sim preset: Marksmanship": {
-     "before": 707.6813641107724,
-     "after": 756.6434359955608,
-     "base": 707.6813641107724,
+    "sim preset: BM Weave": {
+     "before": 738.2177417675763,
+     "after": 750.262120316724,
+     "base": 738.2177417675763,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.849063681109847,
-     "oom_after": 6.5856951634075
+     "oom_before": 0,
+     "oom_after": 0
     },
     "bm-mm-raid": {
-     "before": 699.4955208518887,
-     "after": 714.0412492096393,
-     "base": 699.4955208518887,
+     "before": 702.7719061992751,
+     "after": 718.7357533059464,
+     "base": 702.7719061992751,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "bm-mm-full-buffs-raid": {
-     "before": 704.6334822817298,
-     "after": 715.1229295234558,
-     "base": 704.6334822817298,
+     "before": 707.0586850856179,
+     "after": 719.4770525408455,
+     "base": 707.0586850856179,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-mm-raid-raid-dps": {
-     "before": 725.0004891413331,
-     "after": 734.8297772655327,
-     "base": 725.0004891413331,
+     "before": 724.2042200818006,
+     "after": 736.0641853897808,
+     "base": 724.2042200818006,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -370,7 +378,22 @@
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Hybrid Beast Mastery/Marksmanship",
+    "Marksmanship"
+   ],
+   "required": [
+    "Aimed Shot"
+   ],
+   "rejected": {
+    "structure": 20,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-27",
-  "passes": 12
+  "passes": 13
  }
 }
