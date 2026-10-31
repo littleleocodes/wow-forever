@@ -29,7 +29,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 1/3 | **NEW** | Gives you a 23% chance to avoid interruption caused by damage while casting any spell. |
+| **Twilight Focus** | 1/3 | **NEW** | Gives your spells a 23% chance to not lose casting time when you take damage. |
 
 ### Shadow (33)
 

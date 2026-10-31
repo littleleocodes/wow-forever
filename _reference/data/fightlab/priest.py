@@ -49,12 +49,12 @@ FEAR = re.compile(r"flee for (\d+) sec")
 COEF = re.compile(r"([\d.]+)% of spell power \((\w+(?: \w+)?)\)")
 
 TALENT_SPELLS = {"Mind Flay": "Mind Flay", "Vampiric Embrace": "Vampiric Embrace", "Shadowform": "Shadowform", "Silence": "Silence",
-                 "Holy Nova": "Holy Nova", "Penance": "Penance", "Binding Heal": "Binding Heal", "Prayer of Mending": "Prayer of Mending",
+                 "Holy Nova": "Holy Nova", "Penance": "Penance", "Prayer of Mending": "Prayer of Mending",
                  "Inner Focus": "Inner Focus", "Power Infusion": "Power Infusion"}
 CHANNEL_TICKS = {"Mind Flay": 3, "Starshards": 6, "Penance": 3}
 DOT_TICKS = {"Holy Fire": 5}   # Holy Fire's burn ticks every 2 s for 10 s (the tooltip gives only the total and the duration)
 PENANCE = re.compile(r"causing (\d[\d,]*) Holy damage to an enemy")
-SELF_ONLY = {"Renew", "Flash Heal", "Lesser Heal", "Heal", "Greater Heal", "Power Word: Shield", "Desperate Prayer", "Binding Heal"}
+SELF_ONLY = {"Renew", "Flash Heal", "Lesser Heal", "Heal", "Greater Heal", "Power Word: Shield", "Desperate Prayer"}
 # Forever's racial priest spells (talentsforever.com's 70291 export, class_racials; Blizzard's 2026-10-08 notes list Dark Sacrifice under
 # Undead). The player pages are race-neutral, so a racial spell is cast only when PriestModule.RACE names its race (default: none).
 RACIAL_SPELLS = {"Divine Grace": "Human", "Feedback": "Human", "Chastise": "Dwarf", "Desperate Prayer": "Dwarf", "Elune's Grace": "Night Elf",
@@ -150,6 +150,20 @@ def talent_numbers():
 
 TNUM = talent_numbers()
 
+
+def swd_backlash():
+    """Shadow Word: Death's backlash as a share of maximum health, from the spell's text (10% until the 2026-10-30 hotfix, 30% since)."""
+    for tab in SPELLBOOK.get("tabs", []):
+        for sp in tab["spells"]:
+            if sp["name"] == "Shadow Word: Death":
+                m = re.search(r"backlash damage equal to (\d+)% of your maximum health", sp["ranks"][-1].get("text", ""))
+                if m:
+                    return int(m.group(1)) / 100
+    return 0.10
+
+
+SWD_BACKLASH = swd_backlash()
+
 MECHANICS = {
     "Shadow Focus": "+1% Shadow hit per rank",
     "Blackout": "2% per rank: a Shadow damage hit or tick stuns the mob 3s",
@@ -202,7 +216,7 @@ HOLY_MECHANICS = {
     "Power Infusion": "+20% spell damage and healing for 15 s, cast on yourself as a pull starts (3 min cooldown, 20% of base mana)",
     "Holy Reach": "+10%/rank Smite and Holy Fire range: longer pulls",
     "Blessed Recovery": "after a melee crit or a hit above 30% of your health: heal 8/16/25% of that hit over 6 s (the rest carries over)",
-    "Renewed Hope": "+2%/rank crit on Flash Heal, Lesser Heal, Heal, Greater Heal, Binding Heal under Weakened Soul; each such heal "
+    "Renewed Hope": "+2%/rank crit on Flash Heal, Lesser Heal, Heal, Greater Heal under Weakened Soul; each such heal "
                     "shortens Weakened Soul by 1 s/rank (the next Power Word: Shield comes sooner)",
     "Improved Healing": "-5%/rank mana on Lesser Heal, Heal, Greater Heal and Penance",
     "Spirit of Redemption": "no effect: the priest still dies",
@@ -211,9 +225,9 @@ HOLY_MECHANICS = {
     "Inspiration": "not modelled (armor after a critical non-periodic heal on yourself; rare in leveling fights)",
     "Divine Aegis": "not modelled (a 5%/rank absorb after a critical non-periodic heal, at most 1,200; rare in leveling fights)",
     "Litany of Light": "not modelled (mana back when alternating heals; leveling fights cast few heals)",
-    "Binding Heal": "not cast (Flash Heal heals more per mana on yourself)",
+    "Holy Binding": "not modelled (heals you when Flash Heal heals another target; solo you heal only yourself)",
 }
-RENEWED_HOPE_HEALS = ("Flash Heal", "Binding Heal", "Lesser Heal", "Heal", "Greater Heal")
+RENEWED_HOPE_HEALS = ("Flash Heal", "Lesser Heal", "Heal", "Greater Heal")
 HOLY_DESCRIPTION = ("Holy / Discipline leveling (spec strings holy-leveling, discipline-leveling): Power Word: Shield, Inner Fire and Power "
                     "Infusion before the pull, Holy Fire as the opener at 30 yd, Shadow Word: Pain, Penance and Mind Blast on cooldown, Smite as the "
                     "filler (in melee too: the shield stops pushback while it holds), wand to finish without overkill; Power Word: Shield again, "
@@ -583,7 +597,7 @@ class PriestModule(BaseModule):
         if spell.name == "Mind Blast" and amount > 0 and self.rank("Dark Inspiration"):   # client 70425
             p.buffs["Dark Inspiration"] = {"until": t + 10.0}
         if spell.name == "Shadow Word: Death" and m.hp > 0:
-            back = 0.10 * p.hp_max
+            back = SWD_BACKLASH * p.hp_max   # the spell's text: 10% until the 2026-10-30 hotfix, 30% since
             p.hp -= back
             fight.note(f"Shadow Word: Death backlash {back:.0f}")
 

@@ -33,10 +33,10 @@ def _spell_text(name):
     return (ranks[-1].get("text") or "").replace("\n", " ")
 
 
-# Renewed Hope's heals, from its tooltip: "Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain ..."
+# Renewed Hope's heals, from its tooltip: "Your heals from Flash Heal, Lesser Heal, Heal, Greater Heal, and Penance gain ..."
 _rh = re.search(r"heals from (.+?) gain", _TALENT_TEXT.get("Renewed Hope", ""))
 RENEWED_HOPE_HEALS = tuple(x.strip() for x in re.split(r",\s*(?:and\s+)?|\s+and\s+", _rh.group(1)) if x.strip()) if _rh else \
-    ("Flash Heal", "Binding Heal", "Lesser Heal", "Heal", "Greater Heal", "Penance")
+    ("Flash Heal", "Lesser Heal", "Heal", "Greater Heal", "Penance")
 _m = re.search(r"every \d+ sec for (\d+) sec", _spell_text("Penance"))
 PENANCE_CHANNEL = float(_m.group(1)) if _m else 2.0          # "instantly and every 1 sec for 2 sec": a 2 s channel
 _m = re.search(r"by (\d+)% for (\d+) sec", _spell_text("Power Infusion"))
@@ -47,7 +47,7 @@ class Healer(E.BaseHealer):
     CLASS = "priest"
     SPEC = "holy-heal"
     ROLES = {"big": "Greater Heal", "fast": "Flash Heal", "hot": "Renew", "group": "Prayer of Healing", "shield": "Power Word: Shield", "instant": "Penance"}
-    TALENT_SPELLS = {"Penance": "Penance", "Prayer of Mending": "Prayer of Mending", "Inner Focus": "Inner Focus", "Power Infusion": "Power Infusion", "Binding Heal": "Binding Heal"}
+    TALENT_SPELLS = {"Penance": "Penance", "Prayer of Mending": "Prayer of Mending", "Inner Focus": "Inner Focus", "Power Infusion": "Power Infusion"}
     MECHANICS = {
         "Inner Focus": "next Greater Heal free and +25% crit, every 3 min",
         "Power Infusion": "+20% healing for 15 s every 3 min, cast on yourself (20% of base mana and a global cooldown)",
@@ -60,10 +60,10 @@ class Healer(E.BaseHealer):
         "Penance": "an instant 3-pulse heal on a 12 s cooldown that keeps the healer busy for its 2 s channel: on the tank whenever it is "
                    "ready and he misses 80% of its heal, and the emergency heal",
         "Prayer of Mending": "kept on the tank: heals 413 when he is hit, then jumps (5 charges, 10 s cooldown, a global cooldown to place)",
-        "Binding Heal": "never cast: Flash Heal fills its role (its self-heal would be idle, the healer takes no damage here)",
+        "Holy Binding": "not modelled: it heals the priest when Flash Heal heals another target, and the healer takes no damage here",
         "Divine Aegis": "a critical non-periodic heal leaves an absorb of 5%/rank of the amount healed on the target for 12 s, the Aegis "
                         "part at most 1,200 (client 70425's cap; it joins the target's shield; a new Power Word: Shield replaces it)",
-        "Renewed Hope": "+2%/rank crit for Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened "
+        "Renewed Hope": "+2%/rank crit for Flash Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened "
                         "Soul; each such heal takes 1 s/rank off its Weakened Soul",
         "Litany of Light": "a heal unlike your previous one returns 5%/rank of its base mana cost",
     }
@@ -71,7 +71,7 @@ class Healer(E.BaseHealer):
                  "Penance", "Prayer of Mending", "Meditation", "Holy Specialization", "Improved Renew", "Improved Healing", "Divine Fury", "Spiritual Healing", "Mental Strength",
                  "Divine Aegis", "Renewed Hope", "Litany of Light"}
     SHARE_SOURCE = {"Greater Heal": "greater_heal", "Flash Heal": "flash_heal", "Renew": "renew", "Prayer of Healing": "prayer_of_healing", "Power Word: Shield": "shield",
-                    "Heal": "heal", "Lesser Heal": "heal", "Binding Heal": "flash_heal"}
+                    "Heal": "heal", "Lesser Heal": "heal"}
     # heal-choice policies of this module (heallab/rotation_opt.py tunes tables.py's knobs only, not these). 2026-10-09, 20 seeds and a
     # 40-seed confirmation on fresh seeds: Penance on the tank at 0.8 of its heal +6.4% capacity (Holy) and +4.3% (Discipline) over
     # emergencies only (Blizzard, 2026-10-08: Penance now heals more per mana than Heal and Greater Heal); on the 20 seeds 0.5 gave Holy

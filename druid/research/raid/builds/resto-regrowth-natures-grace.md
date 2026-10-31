@@ -20,7 +20,7 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
+| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 10%. |
 | **Improved Wrath** | 1/5 | changed | Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
@@ -40,7 +40,7 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Gift of Nature** | 5/5 | changed | Increases the effect of all your healing spells by 10%. |
 | **Improved Rejuvenation** | 3/3 | moved | Increases the effect of your Rejuvenation spell by 15%. |

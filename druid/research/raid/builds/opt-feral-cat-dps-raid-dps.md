@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
+| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 
@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. |
+| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
 
@@ -44,7 +44,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
 
 ## Core talents (priority order)
@@ -60,16 +60,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 361 | +0.0% | 743 | -1.5% | 66 s |
-| 2 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/33/9 | 358 | -0.8% | 754 | +0.0% | 66 s |
-| 3 | *Hybrid* | community simulator | - | 352 | -2.4% | 722 | -4.2% | 65 s |
-| 4 | *Cat* | community simulator | - | 351 | -2.7% | 736 | -2.5% | 66 s |
-| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/31/11 | 334 | -7.3% | 643 | -14.7% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 325 | -10.0% | 630 | -16.5% | 0 s |
+| 1 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 376 | +0.0% | 768 | +0.0% | 61 s |
+| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | -1.8% | 754 | -1.8% | 61 s |
+| 3 | *Cat* | community simulator | - | 352 | -6.2% | 750 | -2.3% | 62 s |
+| 4 | *Hybrid* | community simulator | - | 341 | -9.1% | 698 | -9.1% | 61 s |
+| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/30/12 | 335 | -10.9% | 643 | -16.3% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -12.6% | 636 | -17.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,7 +84,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-26, 9 changes to the base rotation; third-seed check: feral-combat-open-raid 757 -> 754 DPS (-0.4%), feral-combat-shifting-power-raid 750 -> 743 DPS (-0.9%), feral-cat-dps 635 -> 630 DPS (-0.7%), opt-feral-cat-dps-raid-dps 644 -> 643 DPS (-0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-31, 9 changes to the base rotation; third-seed check: feral-combat-open-raid 768 -> 768 DPS (+0.0%), feral-combat-shifting-power-raid 754 -> 754 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 643 -> 643 DPS (+0.0%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
@@ -101,23 +101,22 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 |---|---|---|
 | 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 9.6 |
 | 2 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.5 |
-| 4 | cast Shred | 14.2 |
+| 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.3 |
+| 4 | cast Shred | 14.3 |
 | 5 | if time left in the fight ≥ 6s: cast Faerie Fire | 9.6 |
 | 6 | cast Goblin Sapper Charge | as ready |
 | 7 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 8 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
-| 9 | if not Cat Form is up: cast Cat Form | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Tiger's Fury, cast Haste, cast Shifting Power, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Tiger's Fury, cast Haste, cast Metamorphosis Rune, cast Innervate, cast Cat Form (its condition never held in these fights); cast Shifting Power (needs the Shifting Power talent).
 
 Damage by ability:
 
 | Ability | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) |
 |---|---|
-| Rip | 37% |
+| Rip | 38% |
 | Auto Attack | 33% |
-| Shred | 27% |
+| Shred | 26% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes

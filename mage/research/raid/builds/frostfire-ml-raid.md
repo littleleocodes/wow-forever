@@ -44,21 +44,21 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
-| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
+| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.1% | 52 s |
-| 2 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 498 | -3.5% | 799 | +0.0% | 61 s |
-| 3 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 486 | -5.7% | 764 | -4.5% | 58 s |
-| 4 | *FFB* | community simulator | - | 480 | -7.0% | 792 | -0.9% | 67 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 446 | +0.0% | 599 | -4.0% | 33 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.1% | 618 | -0.9% | 40 s |
+| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 618 | -1.0% | 41 s |
+| 4 | *FFB* | community simulator | - | 423 | -5.3% | 624 | +0.0% | 47 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -81,7 +81,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
   17. spell probe: insert in the middle: cast Arcane Blast (+1.8%, pass 9)
   18. spell probe: insert at the top: cast Arcane Power (+1.2%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-10-24, 27 changes to the base rotation; third-seed check: open winner 779 -> 801 DPS (+2.8%), frostfire-fingers-of-frost-raid 749 -> 763 DPS (+1.9%), sim preset: FFB 766 -> 794 DPS (+3.7%), frostfire-raid 726 -> 743 DPS (+2.4%), frostfire-ml-raid 732 -> 758 DPS (+3.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 18 passes, the last 2026-10-31, 32 changes to the base rotation; third-seed check: open winner 629 -> 732 DPS (+16.3%), frostfire-fingers-of-frost-raid 628 -> 730 DPS (+16.2%), sim preset: FFB 639 -> 733 DPS (+14.8%), frostfire-raid 600 -> 681 DPS (+13.4%), frostfire-ml-raid 633 -> 742 DPS (+17.2%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -109,22 +109,27 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   25. insert at the top: cast Demonic Rune (+0.4%, pass 14)
   26. insert before the filler: cast Robe of the Archmage (+0.3%, pass 14)
   27. threshold 15s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 15s): cast Scorch (+0.4%, pass 15)
+  28. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.3%, pass 17)
+  29. move down below 'cast Fire Blast': if stacks of Heating Up = 3: cast Pyroblast (+1.4%, pass 18)
+  30. insert at the top: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast (+1.9%, pass 18)
+  31. drop: if stacks of Heating Up = 3: cast Pyroblast (+10.1%, pass 18)
+  32. drop: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.5%, pass 18)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.3 |
-| 2 | cast Fire Blast | 5.1 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.3 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.4 |
+| 2 | cast Fire Blast | 4.9 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.4 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 3.3 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 3.3 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 4.9 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 4.9 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 5.3 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.9 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.3 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.0 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 6.3 |
+| 13 | cast Scorch | 7.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 
@@ -132,13 +137,12 @@ Damage by ability:
 
 | Ability | [`frostfire-ml-raid`](frostfire-ml-raid.md) |
 |---|---|
-| Pyroblast | 25% |
-| Frostfire Bolt | 23% |
-| Fire Blast | 17% |
-| Scorch | 13% |
-| Ignite | 12% |
-| Fireball | 10% |
-| Demonic Rune | 0% |
+| Pyroblast | 39% |
+| Fire Blast | 18% |
+| Scorch | 17% |
+| Frostfire Bolt | 11% |
+| Ignite | 10% |
+| Fireball | 6% |
 
 ## Notes
 

@@ -20,7 +20,7 @@ The Balance leveling build the open leveling search found on 2026-10-19: every l
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Wrath** | 5/5 | changed | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
-| **Genesis** | 4/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 4%. |
+| **Genesis** | 4/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 8%. |
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
@@ -31,7 +31,7 @@ The Balance leveling build the open leveling search found on 2026-10-19: every l
 | **Nature's Grace** | 1/1 | changed | All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec. |
 | **Eclipse** | 3/3 | **NEW** | Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.50 sec. Stores up to 4 charges. Lasts 15 sec. |
 | **Moonfury** | 5/5 | changed | Increases the damage done by your Arcane and Nature spells by 10%. |
-| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
+| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged and spell) increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
 
 ### Feral Combat (0)
 
@@ -42,7 +42,7 @@ The Balance leveling build the open leveling search found on 2026-10-19: every l
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ## Leveling order

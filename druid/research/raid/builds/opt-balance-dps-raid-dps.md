@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
+| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 10%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
@@ -30,7 +30,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | **Vengeance** | 5/5 | changed | Increases the critical strike damage bonus of your Arcane and Nature spells by 100%. |
 | **Nature's Grace** | 1/1 | changed | All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec. |
 | **Moonfury** | 5/5 | changed | Increases the damage done by your Arcane and Nature spells by 10%. |
-| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
+| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged and spell) increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
 
 ### Feral Combat (0)
 
@@ -42,7 +42,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 |---|---|---|---|
 | **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
 | **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ## Core talents (priority order)
@@ -58,13 +58,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 550 | +0.0% | 624 | +0.0% | 3 s |
-| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 550 | +0.0% | 624 | +0.0% | 3 s |
-| 3 | *Moonkin* | community simulator | - | 545 | -1.0% | 615 | -1.5% | 8 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/0/18 | 567 | +0.0% | 647 | +0.0% | 3 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/0/18 | 567 | +0.0% | 647 | +0.0% | 3 s |
+| 3 | *Moonkin* | community simulator | - | 558 | -1.6% | 632 | -2.3% | 5 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,10 +75,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
   4. move down below 'cast Starfire': if mana % < 15%: cast Starfire (+0.3%, pass 1)
   5. only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 2)
   6. insert at the end: cast Wrath (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 4 passes, the last 2026-10-26, 3 changes to the base rotation; third-seed check: balance-moonkin-raid 609 -> 623 DPS (+2.2%), sim preset: Moonkin 38/0/13 663 -> 616 DPS (-7.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 5 passes, the last 2026-10-31, 4 changes to the base rotation; third-seed check: balance-moonkin-raid 526 -> 645 DPS (+22.7%), sim preset: Moonkin 674 -> 628 DPS (-6.7%)):
   1. move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms) (+0.3%, pass 1)
   2. move to the top: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 3)
   3. move to the top: keep Moonfire on up to 1 targets (refresh under 0ms) (+0.5%, pass 4)
+  4. threshold 30% -> 10%: if mana % ≤ 30%: cast Innervate (+0.2%, pass 5)
 
 Before the pull: at -10s: activate Moonkin Form.
 
@@ -86,10 +87,10 @@ Before the pull: at -10s: activate Moonkin Form.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
-| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.7 |
+| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.8 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.0 |
-| 5 | cast Starfire | 16.0 |
-| 6 | cast Wrath | 0.3 |
+| 5 | cast Starfire | 15.8 |
+| 6 | cast Wrath | 0.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Starfire (rank 6) (its condition never held in these fights).
 
@@ -97,10 +98,10 @@ Damage by ability:
 
 | Ability | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) |
 |---|---|
-| Starfire | 65% |
+| Starfire | 63% |
 | Moonfire | 18% |
 | Insect Swarm | 17% |
-| Wrath | 0% |
+| Wrath | 1% |
 
 ## Notes
 

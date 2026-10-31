@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
+| **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 
@@ -36,7 +36,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. |
+| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Natural Reaction** | 5/5 | **NEW** | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
@@ -61,15 +61,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.056 | +0.0% | 4045 | 364 |
-| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/42/0 | 1.044 | -1.1% | 3964 | 364 |
-| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -5.3% | 3641 | 364 |
-| 4 | *Hybrid* | community simulator | - | 0.880 | -16.7% | 2997 | 389 |
-| 5 | *Bear* | community simulator | - | 0.800 | -24.3% | 2421 | 390 |
+| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 3627 | 370 |
+| 2 | *Hybrid* | community simulator | - | 1.143 | -1.3% | 3749 | 396 |
+| 3 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.006 | -13.1% | 2917 | 390 |
+| 4 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 2881 | 390 |
+| 5 | *Bear* | community simulator | - | 0.984 | -15.0% | 2829 | 395 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -86,22 +86,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if time left on Lacerate ≤ 4.5s: cast Lacerate | 5.6 |
-| 3 | cast Maul | 170.2 |
-| 4 | cast Barkskin | 1.0 |
-| 5 | if rage < 20: cast Enrage | 1.0 |
-| 6 | if time left in the fight ≥ 20s: cast Lacerate | 5.6 |
+| 2 | cast Maul | 172.9 |
+| 3 | cast Barkskin | 1.0 |
+| 4 | if rage < 20: cast Enrage | 1.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Lacerate (needs the Lacerate talent).
 
 Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
 | Maul | 80% |
-| Auto Attack | 14% |
+| Auto Attack | 16% |
 | Judgement of Light | 2% |
-| Lacerate | 2% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 0% |
 | Thorns | 0% |

@@ -39,6 +39,8 @@ TALENTS = {
 SPELLS = {
     ("mage", "Ice Lance"): ([_sub(r"Deals 200% increased damage to Frozen targets", lambda i, m: "Deals 300% increased damage to Frozen targets")],
                            {"cooldown": "8 sec cooldown"}),   # 300% (was 200%); the 8 s cooldown on every rank (70685 gave it rank 1 only)
+    ("priest", "Shadow Word: Death"): ([_sub(r"backlash damage equal to 10% of your maximum health",
+                                             lambda i, m: "backlash damage equal to 30% of your maximum health")], {}),   # 10% -> 30% (sim ac6387f)
     ("mage", "Arcane Blast"): ([_sub(r"you gain 15% of your Intellect", lambda i, m: "you gain 12% of your Intellect"),
                                _sub(r"increased by 175%", lambda i, m: "increased by 100%"),
                                _sub(r"lasts 15 sec", lambda i, m: "lasts 18 sec")], {}),

@@ -4438,7 +4438,7 @@
       {
        "rank": "Rank 1",
        "id": 1309595,
-       "text": "A word of dark binding that inflicts 293 to 311 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "text": "A word of dark binding that inflicts 293 to 311 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 30% of your maximum health.",
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4451,12 +4451,27 @@
        "level": 32,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A word of dark binding that inflicts 293 to 311 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 1309633,
-       "text": "A word of dark binding that inflicts 368 to 390 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "text": "A word of dark binding that inflicts 368 to 390 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 30% of your maximum health.",
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4469,12 +4484,27 @@
        "level": 40,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A word of dark binding that inflicts 368 to 390 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 1309635,
-       "text": "A word of dark binding that inflicts 402 to 426 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "text": "A word of dark binding that inflicts 402 to 426 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 30% of your maximum health.",
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4487,12 +4517,27 @@
        "level": 48,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A word of dark binding that inflicts 402 to 426 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 1309636,
-       "text": "A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "text": "A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 30% of your maximum health.",
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4505,6 +4550,21 @@
        "level": 56,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
+         }
+        }
        }
       }
      ]

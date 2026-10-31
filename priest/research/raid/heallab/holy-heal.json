@@ -314,7 +314,7 @@
  "deltas": {
   "holy-raid-healer": [
    {
-    "talent": "Binding Heal",
+    "talent": "Holy Binding",
     "ranks": 1,
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
@@ -506,7 +506,7 @@
   "Mental Agility": "-3/7/10% mana cost of instant casts",
   "Penance": "an instant 3-pulse heal on a 12 s cooldown that keeps the healer busy for its 2 s channel: on the tank whenever it is ready and he misses 80% of its heal, and the emergency heal",
   "Prayer of Mending": "kept on the tank: heals 413 when he is hit, then jumps (5 charges, 10 s cooldown, a global cooldown to place)",
-  "Binding Heal": "never cast: Flash Heal fills its role (its self-heal would be idle, the healer takes no damage here)",
+  "Holy Binding": "never cast: Flash Heal fills its role (its self-heal would be idle, the healer takes no damage here)",
   "Divine Aegis": "a critical non-periodic heal leaves an absorb of 5%/rank of the amount healed on the target for 12 s, the Aegis part at most 1,200 (client 70425's cap; it joins the target's shield; a new Power Word: Shield replaces it)",
   "Renewed Hope": "+2%/rank crit for Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened Soul; each such heal takes 1 s/rank off its Weakened Soul",
   "Litany of Light": "a heal unlike your previous one returns 5%/rank of its base mana cost"

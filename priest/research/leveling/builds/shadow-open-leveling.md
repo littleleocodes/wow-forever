@@ -28,7 +28,7 @@ The Shadow leveling build the open leveling search found on 2026-10-23: every le
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 
 ### Shadow (35)
 

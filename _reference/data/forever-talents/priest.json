@@ -1,36 +1,41 @@
 {
   "slug": "priest",
   "name": "Priest",
-  "build": "1.60.1.70425",
-  "captured": "2026-10-16",
+  "build": "1.60.1.70707",
+  "captured": "2026-10-30",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-16",
-      "build": "1.60.1.70425",
+      "generated": "2026-10-29",
+      "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/priest/",
-      "build": "1.60.1.70291",
+      "build": "1.60.1.70532",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70532"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/priest",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
+    },
+    "simulator_trees": {
+      "path": "wowsims/forever ui/sim/talents/trees",
+      "build": "1.60.1.70707",
+      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
   "removed_since_demo": [
     {
       "tree": "Shadow",
       "name": "Shadow Affinity",
-      "build": "1.60.1.70425",
+      "build": "1.60.1.70707",
       "row": 2,
       "col": 1,
       "maxRank": 3,
@@ -39,15 +44,20 @@
   ],
   "renamed_since_demo": [
     {
+      "tree": "Holy",
+      "from": "Binding Heal",
+      "to": "Holy Binding",
+      "build": "1.60.1.70707"
+    },
+    {
       "tree": "Shadow",
       "from": "Improved Fade",
       "to": "Dark Inspiration",
-      "build": "1.60.1.70425"
+      "build": "1.60.1.70707"
     }
   ],
   "merge_notes": [
-    "Discipline: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Improved Mana Burn, Improved Power Word: Shield, Mental Strength); the export's positions, rank caps and prerequisites used for this tree",
-    "Shadow: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Improved Fade, Shadow Affinity; only in the export: Dark Inspiration; moved or re-capped: Improved Mind Blast); the export's positions, rank caps and prerequisites used for this tree"
+    "Holy/Holy Binding: tooltip from Wowhead's spell 1328569 (new talent)"
   ],
   "trees": [
     {
@@ -81,7 +91,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -158,7 +168,7 @@
           "diff": [
             "max rank 5 → 3",
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -211,8 +221,8 @@
           "diff": [
             "tooltip changed",
             "was Discipline row 5, col 2",
-            "moved in build 1.60.1.70425: was row 4, col 2",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
+            "moved in build 1.60.1.70707: was row 4, col 2",
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -303,7 +313,7 @@
           "evidence": "priest/06-priest-discipline-improved-power-word-shield.jpg",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70425: was row 2, col 3"
+            "moved in build 1.60.1.70707: was row 2, col 3"
           ]
         },
         {
@@ -372,7 +382,7 @@
           "evidence": "priest/14-priest-discipline-improved-mana-burn.jpg",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70425: was row 4, col 4"
+            "moved in build 1.60.1.70707: was row 4, col 4"
           ]
         },
         {
@@ -410,7 +420,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -456,7 +466,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -504,13 +514,21 @@
           "icon": "spell_holy_healingfocus",
           "maxRank": 3,
           "ranks": [
+            "Gives your spells a 23% chance to not lose casting time when you take damage.",
+            "Gives your spells a 47% chance to not lose casting time when you take damage.",
+            "Gives your spells a 70% chance to not lose casting time when you take damage."
+          ],
+          "status": "new",
+          "evidence": "priest/19-priest-holy-twilight-focus.jpg",
+          "ranks_prev": [
             "Gives you a 23% chance to avoid interruption caused by damage while casting any spell.",
             "Gives you a 47% chance to avoid interruption caused by damage while casting any spell.",
             "Gives you a 70% chance to avoid interruption caused by damage while casting any spell."
           ],
-          "status": "new",
-          "evidence": "priest/19-priest-holy-twilight-focus.jpg",
-          "diff": []
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+          ]
         },
         {
           "id": "holy/improved-renew",
@@ -612,7 +630,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -725,14 +743,14 @@
           }
         },
         {
-          "id": "holy/binding-heal",
+          "id": "holy/holy-binding",
           "row": 3,
           "col": 3,
-          "name": "Binding Heal",
+          "name": "Holy Binding",
           "icon": "spell_holy_blindingheal",
           "maxRank": 1,
           "ranks": [
-            "Heals a friendly target and the caster for 236 to 284. Low threat."
+            "Each time you heal a target other than yourself with Flash Heal, you are healed for 50% as much. This healing generates no threat."
           ],
           "status": "new",
           "evidence": "priest/30-priest-holy-binding-heal.jpg",
@@ -741,7 +759,8 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "renamed from Binding Heal in build 1.60.1.70707",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -848,7 +867,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ],
           "prereq": {
             "id": "holy/spirit-of-redemption",
@@ -970,7 +989,7 @@
           "diff": [
             "tooltip changed",
             "was Shadow row 3, col 2",
-            "moved in build 1.60.1.70425: was row 3, col 1"
+            "moved in build 1.60.1.70707: was row 3, col 1"
           ]
         },
         {
@@ -1073,7 +1092,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ],
           "prereq": {
             "id": "shadow/mind-flay",
@@ -1103,9 +1122,9 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "was Shadow row 4, col 2",
-            "renamed from Improved Fade in build 1.60.1.70425",
-            "max rank 2 -> 5 in build 1.60.1.70425",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
+            "renamed from Improved Fade in build 1.60.1.70707",
+            "max rank 2 -> 5 in build 1.60.1.70707",
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -1159,7 +1178,7 @@
             "max rank 5 → 3",
             "tooltip changed",
             "was Shadow row 4, col 4",
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -1200,7 +1219,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
           ]
         },
         {

@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 100% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 50% of your Intellect. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 
 ### Fire (31)

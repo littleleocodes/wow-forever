@@ -23,15 +23,15 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
 | **Holy Specialization** | 3/5 | unchanged | Increases the critical effect chance of your Holy spells by 3%. |
-| **Spell Warding** | 4/5 | unchanged | Reduces all spell damage taken by 8%. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 | **Divine Fury** | 5/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.5 sec. |
-| **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
+| **Spell Warding** | 4/5 | unchanged | Reduces all spell damage taken by 8%. |
 | **Blessed Recovery** | 3/3 | changed | After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 25% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing. |
+| **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
 | **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
+| **Holy Binding** | 1/1 | **NEW** | Each time you heal a target other than yourself with Flash Heal, you are healed for 50% as much. This healing generates no threat. |
 | **Holy Reach** | 1/2 | unchanged | Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 10%. |
-| **Binding Heal** | 1/1 | **NEW** | Heals a friendly target and the caster for 236 to 284. Low threat. |
 | **Litany of Light** | 1/2 | **NEW** | When you cast a healing spell, gain Mana equal to 5% of the base cost of the spell if your previous heal was a different spell. |
 | **Spirit of Redemption** | 1/1 | changed | Upon death, the priest becomes the Spirit of Redemption for 15 sec. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost. When the effect ends, the priest dies. |
 | **Spiritual Guidance** | 5/5 | changed | Increases your spell healing by up to 25% of your total Spirit and your spell damage by up to 8% of your total Spirit. |
@@ -46,9 +46,9 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 | **Spirit Tap** | 1/5 | changed | Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting. |
 | **Improved Shadow Word: Pain** | 2/2 | moved | Increases the duration of your Shadow Word: Pain spell by 6 sec. |
 | **Shadow Reach** | 2/2 | changed | Increases the range of your offensive Shadow spells by 20%. |
+| **Improved Mind Flay** | 2/2 | **NEW** | Each instance of damage of Mind Flay deals 20% more damage than its previous instance of damage. |
 | **Improved Psychic Scream** | 2/2 | moved | Reduces the cooldown of your Psychic Scream spell by 4 sec. |
 | **Mind Flay** | 1/1 | changed | Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%. |
-| **Improved Mind Flay** | 2/2 | **NEW** | Each instance of damage of Mind Flay deals 20% more damage than its previous instance of damage. |
 | **Vampiric Embrace** | 1/1 | changed | Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. |
 
 ## Core talents (priority order)
@@ -65,6 +65,7 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 - Community tie-break moves: 1 point Spell Warding -> Litany of Light; 1 point Holy Specialization -> Holy Reach; 1 point Shadow Focus -> Spirit Tap.
 - Where we disagree with the community: most Holy builds take Meditation (91% take it), Twin Disciplines (86% take it), Inner Focus (84% take it), Improved Healing (83% take it), Improved Power Word: Shield (79% take it), Improved Renew (72% take it), which the model values below this build's weakest point; this build takes Blackout (2%), Improved Mind Flay (1%), Improved Psychic Scream (0%), Improved Shadow Word: Pain (2%), Mind Flay (1%), Shadow Reach (1%), Spell Warding (15%), Spirit Tap (13%), Vampiric Embrace (2%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/35/16 -> 0/35/16; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, pvp).
 
 ## Open questions (verify in the live game)
 

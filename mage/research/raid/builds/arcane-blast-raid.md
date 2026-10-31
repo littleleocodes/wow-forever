@@ -71,14 +71,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Frost* | community simulator | - | 566 | +0.0% | 702 | -2.1% | 5 s |
-| 2 | *Arcane Fire* | community simulator | - | 563 | -0.5% | 711 | -0.8% | 8 s |
-| 3 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 35/13/3 | 562 | -0.8% | 717 | +0.0% | 4 s |
-| 4 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 36/11/4 | 538 | -5.0% | 671 | -6.3% | 5 s |
+| 1 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 32/16/3 | 543 | +0.0% | 720 | +0.0% | 15 s |
+| 2 | *Arcane Fire* | community simulator | - | 536 | -1.3% | 700 | -2.8% | 14 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -4.7% | 657 | -8.7% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,7 +96,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
   12. move down below 'if Missile Barrage is up: cast Arcane Missiles (rank 7)': cast Fire Blast (+0.2%, pass 6)
   13. only with 10s or more of the fight left: if stacks of Arcane Blast ≥ 1.5: cast Frostbolt (rank 10) (+0.2%, pass 6)
   14. insert before the filler: cast Mana Citrine (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-24, 23 changes to the base rotation; third-seed check: open winner 620 -> 714 DPS (+15.2%), arcane-blast-raid 607 -> 671 DPS (+10.5%), sim preset: Arcane Fire 616 -> 712 DPS (+15.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-31, 26 changes to the base rotation; third-seed check: open winner 710 -> 721 DPS (+1.6%), arcane-open-raid 705 -> 711 DPS (+0.9%), sim preset: Arcane Fire 696 -> 700 DPS (+0.6%), arcane-blast-raid 631 -> 658 DPS (+4.2%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
@@ -121,34 +120,34 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
   21. threshold 40s -> 80s: if mana % < 15% and time left in the fight > 40s: cast Evocation (+0.3%, pass 9)
   22. insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast (+0.2%, pass 9)
   23. only above 25% mana: if time left in the fight ≥ 3s: cast Arcane Blast (+0.2%, pass 9)
+  24. drop: if mana % < 15% and time left in the fight > 80s: cast Evocation (+3.8%, pass 10)
+  25. insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast ≤ 2) and not spellIsCasting: cast Arcane Blast (+0.2%, pass 11)
+  26. drop 'stacks of Arcane Blast < 2' from the condition: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast (+0.5%, pass 11)
 
 | # | Priority (the first line whose condition holds is cast) | [`arcane-blast-raid`](arcane-blast-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.4 |
-| 3 | cast Fire Blast | 7.8 |
-| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 7.1 |
-| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.7 |
-| 6 | cast Arcane Blast | 7.1 |
-| 7 | cast Fireball (rank 11) | 0.1 |
-| 8 | cast Robe of the Archmage | as ready |
-| 9 | cast Mana Citrine | as ready |
-| 10 | cast spell 1326055 | 0.3 |
+| 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.8 |
+| 3 | cast Fire Blast | 7.7 |
+| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 7.5 |
+| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.8 |
+| 6 | cast Arcane Blast | 7.5 |
+| 7 | cast Robe of the Archmage | as ready |
+| 8 | cast Mana Citrine | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Wrath (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Wrath (needs the Arcane Wrath talent); cast Fireball (rank 11), cast spell 1326055 (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`arcane-blast-raid`](arcane-blast-raid.md) |
 |---|---|
-| Arcane Missiles | 32% |
-| Frostbolt | 27% |
-| Fire Blast | 21% |
-| Arcane Blast | 15% |
-| Ignite | 2% |
+| Arcane Missiles | 29% |
+| Frostbolt | 28% |
+| Fire Blast | 22% |
+| Arcane Blast | 17% |
+| Ignite | 3% |
 | Demonic Rune | 1% |
 | Fireball | 0% |
-| Frost Blast | 0% |
 
 ## Notes
 

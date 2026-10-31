@@ -22,11 +22,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) 🔬 | 29/0/22 | DPS |
-| [Fire — Raid (open talent search)](builds/fire-open-raid.md) 🔬 | 17/31/3 | DPS |
-| [Arcane — Raid (open talent search)](builds/arcane-open-raid.md) 🔬 | 32/13/6 | DPS |
 | [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) 🔬 | 21/0/30 | DPS |
 | [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) 🔬 | 0/29/22 | DPS |
+| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) 🔬 | 28/10/13 | DPS |
+| [Fire — Raid (open talent search)](builds/fire-open-raid.md) 🔬 | 17/31/3 | DPS |
+| [Arcane — Raid (open talent search)](builds/arcane-open-raid.md) 🔬 | 32/16/3 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

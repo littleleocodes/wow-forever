@@ -13,25 +13,25 @@
       "summary": "Allocation adopted on 2026-09-26 from `cand-holy-r1`, the build with the highest healing capacity in the healer lab (+4.4% vs the previous draft; kept under raid/heallab/candidates/). Previous summary: Divine Spirit, Unbreakable Will, Improved Fortitude and Healing Focus are gone, so the Discipline dip is rebuilt around Twin Disciplines (instant heals), Improved Power Word: Shield + Soul Warding, Inner Focus, Meditation (now 51% regen while casting) and Mental Agility. Holy keeps Spiritual Guidance, Spiritual Healing, Inspiration, Divine Fury and Improved Healing, adds Twilight Focus (the Healing Focus replacement), Binding Heal and the Prayer of Mending capstone.",
       "allocation": {
         "Discipline": [
-          ["Twin Disciplines", 5],
           ["Power in Light", 2],
-          ["Improved Power Word: Shield", 3],
-          ["Meditation", 3],
-          ["Inner Focus", 1],
-          ["Mental Agility", 1],
+          ["Twin Disciplines", 5],
           ["Mental Strength", 5],
+          ["Improved Power Word: Shield", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Agility", 1],
           ["Soul Warding", 1],
           ["Penance", 1]
         ],
         "Holy": [
           ["Holy Specialization", 5],
-          ["Twilight Focus", 3],
           ["Improved Renew", 3],
+          ["Twilight Focus", 3],
           ["Divine Fury", 1],
-          ["Inspiration", 3],
           ["Holy Nova", 1],
+          ["Inspiration", 3],
+          ["Holy Binding", 1],
           ["Improved Healing", 3],
-          ["Binding Heal", 1],
           ["Litany of Light", 2],
           ["Spiritual Guidance", 4],
           ["Spiritual Healing", 3]
@@ -75,7 +75,7 @@
         },
         {
           "points": 1,
-          "default": "Binding Heal",
+          "default": "Holy Binding",
           "alternatives": ["any utility talent legal at that tier"],
           "why": "Measures +0.0% healing capacity in the healer lab (noise): these points are free to move."
         },
@@ -92,7 +92,7 @@
           "why": "Measures -0.7% healing capacity in the healer lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the healer lab on 2026-09-26: cand-holy-r1 beat the previous draft by +4.4% healing capacity.", "Divine Spirit does not exist as a talent in the demo tree; it is presumably baseline or removed — check at launch.", "Tier-1 Discipline has no other healer talent besides Twin Disciplines (Wand Specialization and Power in Light are the alternatives)."],
+      "notes": ["Adopted from the healer lab on 2026-09-26: cand-holy-r1 beat the previous draft by +4.4% healing capacity.", "Divine Spirit does not exist as a talent in the demo tree; it is presumably baseline or removed — check at launch.", "Tier-1 Discipline has no other healer talent besides Twin Disciplines (Wand Specialization and Power in Light are the alternatives).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 22/29/0 -> 22/29/0; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, raid-heal)."],
       "open_questions": ["Divine Spirit: baseline, removed, or elsewhere?", "Prayer of Mending numbers at 60 and its healing-per-mana vs. Renew.", "Whether Penance (Discipline tier 5) is worth a 21+ Discipline build for a raid healer — see the Discipline build."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -107,12 +107,12 @@
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
+          ["Mental Strength", 3],
           ["Silent Resolve", 2],
           ["Improved Power Word: Shield", 3],
-          ["Mental Agility", 3],
           ["Inner Focus", 1],
           ["Meditation", 3],
-          ["Mental Strength", 3],
+          ["Mental Agility", 3],
           ["Soul Warding", 1],
           ["Penance", 1],
           ["Renewed Hope", 5],
@@ -120,13 +120,13 @@
           ["Power Infusion", 1]
         ],
         "Holy": [
-          ["Twilight Focus", 2],
-          ["Improved Renew", 1],
           ["Holy Specialization", 5],
+          ["Improved Renew", 1],
+          ["Twilight Focus", 2],
           ["Divine Fury", 5],
           ["Inspiration", 3],
-          ["Improved Healing", 3],
-          ["Binding Heal", 1]
+          ["Holy Binding", 1],
+          ["Improved Healing", 3]
         ],
         "Shadow": []
       },
@@ -156,7 +156,7 @@
           "why": "Tier-1 Holy filler."
         }
       ],
-      "notes": ["Gives up Spiritual Guidance, Spiritual Healing and Prayer of Mending — throughput vs. mitigation is the launch test."],
+      "notes": ["Gives up Spiritual Guidance, Spiritual Healing and Prayer of Mending — throughput vs. mitigation is the launch test.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/20/0 -> 31/20/0; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, raid-heal)."],
       "open_questions": ["Penance healing at 60 and whether it can crit (feeds Divine Aegis/Inspiration)."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -475,15 +475,15 @@
       "allocation": {
         "Discipline": [],
         "Holy": [
-          ["Twilight Focus", 3],
           ["Holy Specialization", 3],
-          ["Spell Warding", 4],
+          ["Twilight Focus", 3],
           ["Divine Fury", 5],
-          ["Holy Nova", 1],
+          ["Spell Warding", 4],
           ["Blessed Recovery", 3],
+          ["Holy Nova", 1],
           ["Inspiration", 3],
+          ["Holy Binding", 1],
           ["Holy Reach", 1],
-          ["Binding Heal", 1],
           ["Litany of Light", 1],
           ["Spirit of Redemption", 1],
           ["Spiritual Guidance", 5],
@@ -495,9 +495,9 @@
           ["Spirit Tap", 1],
           ["Improved Shadow Word: Pain", 2],
           ["Shadow Reach", 2],
+          ["Improved Mind Flay", 2],
           ["Improved Psychic Scream", 2],
           ["Mind Flay", 1],
-          ["Improved Mind Flay", 2],
           ["Vampiric Embrace", 1]
         ]
       },
@@ -510,7 +510,7 @@
         {"talent": "Mind Flay", "why": "The scorer's value in this build: +8.4% of its score (model holy-heal)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 1 point Spell Warding -> Litany of Light; 1 point Holy Specialization -> Holy Reach; 1 point Shadow Focus -> Spirit Tap.", "Where we disagree with the community: most Holy builds take Meditation (91% take it), Twin Disciplines (86% take it), Inner Focus (84% take it), Improved Healing (83% take it), Improved Power Word: Shield (79% take it), Improved Renew (72% take it), which the model values below this build's weakest point; this build takes Blackout (2%), Improved Mind Flay (1%), Improved Psychic Scream (0%), Improved Shadow Word: Pain (2%), Mind Flay (1%), Shadow Reach (1%), Spell Warding (15%), Spirit Tap (13%), Vampiric Embrace (2%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Community tie-break moves: 1 point Spell Warding -> Litany of Light; 1 point Holy Specialization -> Holy Reach; 1 point Shadow Focus -> Spirit Tap.", "Where we disagree with the community: most Holy builds take Meditation (91% take it), Twin Disciplines (86% take it), Inner Focus (84% take it), Improved Healing (83% take it), Improved Power Word: Shield (79% take it), Improved Renew (72% take it), which the model values below this build's weakest point; this build takes Blackout (2%), Improved Mind Flay (1%), Improved Psychic Scream (0%), Improved Shadow Word: Pain (2%), Mind Flay (1%), Shadow Reach (1%), Spell Warding (15%), Spirit Tap (13%), Vampiric Embrace (2%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/35/16 -> 0/35/16; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, pvp)."],
       "open_questions": ["A derived Holy PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/popular.js"]
     },
@@ -714,22 +714,22 @@
           ["Twin Disciplines", 5],
           ["Mental Strength", 5],
           ["Silent Resolve", 3],
-          ["Meditation", 3],
           ["Inner Focus", 1],
+          ["Meditation", 3],
           ["Mental Agility", 3],
           ["Penance", 1]
         ],
         "Holy": [
           ["Holy Specialization", 5],
-          ["Twilight Focus", 3],
           ["Improved Renew", 3],
+          ["Twilight Focus", 3],
           ["Spell Warding", 1],
-          ["Inspiration", 3],
           ["Holy Nova", 1],
+          ["Inspiration", 3],
+          ["Holy Binding", 1],
           ["Improved Healing", 3],
-          ["Binding Heal", 1],
-          ["Spiritual Guidance", 5],
           ["Litany of Light", 2],
+          ["Spiritual Guidance", 5],
           ["Spiritual Healing", 3]
         ],
         "Shadow": []
@@ -745,7 +745,7 @@
         {"talent": "Inspiration", "why": "Removing it costs 3.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: priest/research/talents/forever/optimizer/holy-heal-raid-heal.md"],
+      "notes": ["Report: priest/research/talents/forever/optimizer/holy-heal-raid-heal.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 21/30/0 -> 21/30/0; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, raid-heal)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -1186,25 +1186,25 @@
       "summary": "Level with the talents of the Holy raid build (holy-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree last: 56 s per kill over levels 20-60, the holy-leveling rotation).",
       "allocation": {
         "Discipline": [
-          ["Twin Disciplines", 5],
           ["Power in Light", 2],
-          ["Improved Power Word: Shield", 3],
-          ["Meditation", 3],
-          ["Inner Focus", 1],
-          ["Mental Agility", 1],
+          ["Twin Disciplines", 5],
           ["Mental Strength", 5],
+          ["Improved Power Word: Shield", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Agility", 1],
           ["Soul Warding", 1],
           ["Penance", 1]
         ],
         "Holy": [
           ["Holy Specialization", 5],
-          ["Twilight Focus", 3],
           ["Improved Renew", 3],
+          ["Twilight Focus", 3],
           ["Divine Fury", 1],
-          ["Inspiration", 3],
           ["Holy Nova", 1],
+          ["Inspiration", 3],
+          ["Holy Binding", 1],
           ["Improved Healing", 3],
-          ["Binding Heal", 1],
           ["Litany of Light", 2],
           ["Spiritual Guidance", 4],
           ["Spiritual Healing", 3]
@@ -1229,7 +1229,7 @@
         {"levels": "44", "tree": "Holy", "talent": "Divine Fury", "points": 1},
         {"levels": "45-47", "tree": "Holy", "talent": "Inspiration", "points": 3},
         {"levels": "48-50", "tree": "Holy", "talent": "Improved Healing", "points": 3},
-        {"levels": "51", "tree": "Holy", "talent": "Binding Heal", "points": 1},
+        {"levels": "51", "tree": "Holy", "talent": "Holy Binding", "points": 1},
         {"levels": "52-53", "tree": "Holy", "talent": "Litany of Light", "points": 2},
         {"levels": "54-57", "tree": "Holy", "talent": "Spiritual Guidance", "points": 4},
         {"levels": "58-60", "tree": "Holy", "talent": "Spiritual Healing", "points": 3}
@@ -1245,7 +1245,7 @@
         {"talent": "Mental Agility", "why": "Healer lab (2026-09-26): removing it costs +1% healing capacity."}
       ],
       "flex": [],
-      "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 22/29/0 -> 22/29/0; Binding Heal -> Holy Binding (renamed); order kept, renamed (refill: the shadow-dps model, leveling-st)."],
       "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },

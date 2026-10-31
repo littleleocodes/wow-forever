@@ -19,13 +19,13 @@ Level with the talents of the Holy raid build (holy-raid-healer) so you arrive a
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Power in Light** | 2/5 | **NEW** | Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain. |
-| **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
-| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
-| **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
-| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
+| **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Mental Strength** | 5/5 | changed | Increases your total Intellect by 10%. |
+| **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
+| **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
+| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
 | **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
 | **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. |
 
@@ -34,13 +34,13 @@ Level with the talents of the Holy raid build (holy-raid-healer) so you arrive a
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Holy Specialization** | 5/5 | unchanged | Increases the critical effect chance of your Holy spells by 5%. |
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
 | **Improved Renew** | 3/3 | unchanged | Increases the amount healed by your Renew spell by 15%. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 | **Divine Fury** | 1/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec. |
-| **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
 | **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
+| **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
+| **Holy Binding** | 1/1 | **NEW** | Each time you heal a target other than yourself with Flash Heal, you are healed for 50% as much. This healing generates no threat. |
 | **Improved Healing** | 3/3 | changed | Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%. |
-| **Binding Heal** | 1/1 | **NEW** | Heals a friendly target and the caster for 236 to 284. Low threat. |
 | **Litany of Light** | 2/2 | **NEW** | When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell. |
 | **Spiritual Guidance** | 4/5 | changed | Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 6% of your total Spirit. |
 | **Spiritual Healing** | 3/3 | changed | Increases the amount healed by your spells by 10%. |
@@ -70,7 +70,7 @@ Level with the talents of the Holy raid build (holy-raid-healer) so you arrive a
 | 44 | Holy | Divine Fury | 1 | 22/13/0 |
 | 45-47 | Holy | Inspiration | 3 | 22/16/0 |
 | 48-50 | Holy | Improved Healing | 3 | 22/19/0 |
-| 51 | Holy | Binding Heal | 1 | 22/20/0 |
+| 51 | Holy | Holy Binding | 1 | 22/20/0 |
 | 52-53 | Holy | Litany of Light | 2 | 22/22/0 |
 | 54-57 | Holy | Spiritual Guidance | 4 | 22/26/0 |
 | 58-60 | Holy | Spiritual Healing | 3 | 22/29/0 |
@@ -94,6 +94,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - 2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 22/29/0 -> 22/29/0; Binding Heal -> Holy Binding (renamed); order kept, renamed (refill: the shadow-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

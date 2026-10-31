@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 150% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. *(est. — extrapolated from rank 1)* |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |

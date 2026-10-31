@@ -62,17 +62,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 648 | +0.0% | 815 | -4.1% | 17 s |
-| 2 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 646 | -0.4% | 850 | +0.0% | 29 s |
-| 3 | *Fire* | community simulator | - | 642 | -0.9% | 848 | -0.2% | 29 s |
-| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/34/3 | 623 | -3.9% | 830 | -2.3% | 33 s |
-| 5 | *FFB* | community simulator | - | 462 | -28.8% | 621 | -27.0% | 64 s |
-| 6 | *Arcane Fire* | community simulator | - | 379 | -41.6% | 619 | -27.1% | 12 s |
-| 7 | *Arcane Frost* | community simulator | - | 340 | -47.5% | 436 | -48.7% | 12 s |
+| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 540 | +0.0% | 787 | +0.0% | 9 s |
+| 2 | *Fire* | community simulator | - | 540 | -0.1% | 780 | -0.9% | 15 s |
+| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 537 | -0.5% | 762 | -3.1% | 9 s |
+| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 531 | -1.7% | 763 | -3.0% | 15 s |
+| 5 | *FFB* | community simulator | - | 442 | -18.1% | 578 | -26.5% | 41 s |
+| 6 | *Arcane Fire* | community simulator | - | 388 | -28.1% | 641 | -18.5% | 1 s |
+| 7 | *Arcane* | community simulator | - | 343 | -36.5% | 437 | -44.4% | 1 s |
+| 8 | *Frost* | community simulator | - | 304 | -43.8% | 390 | -50.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,7 +90,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
   10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
   11. insert at the end: cast Frost Blast (+0.5%, pass 5)
   12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-23, 20 changes to the base rotation; third-seed check: open winner 810 -> 849 DPS (+4.8%), fire-raid 813 -> 831 DPS (+2.2%), sim preset: Fire 814 -> 848 DPS (+4.1%), opt-fire-raid-raid-dps 786 -> 816 DPS (+3.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-31, 28 changes to the base rotation; third-seed check: open winner 673 -> 781 DPS (+16.1%), fire-open-raid 670 -> 776 DPS (+15.9%), sim preset: Fire 674 -> 779 DPS (+15.6%), fire-raid 666 -> 763 DPS (+14.6%), opt-fire-raid-raid-dps 656 -> 763 DPS (+16.2%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -110,35 +111,41 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
   18. insert before the filler: cast Robe of the Archmage (+0.4%, pass 8)
   19. threshold 80% -> 75%: if mana % ≤ 80%: cast Mana Ruby (+0.3%, pass 8)
   20. only above 10% mana: cast Evocation (+0.2%, pass 8)
+  21. drop: if mana % ≥ 10%: cast Evocation (+12.4%, pass 9)
+  22. threshold 3s -> 4s: if time left in the fight ≥ 3s: cast Fireball (rank 11) (+0.4%, pass 9)
+  23. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+2.1%, pass 10)
+  24. drop '(stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5)' from the condition: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+9.1%, pass 10)
+  25. insert at the top: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast (+2.2%, pass 10)
+  26. move to the top: cast Fire Blast (+1.2%, pass 10)
+  27. drop: cast Robe of the Archmage (+0.6%, pass 10)
+  28. insert before the filler: if (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) (+0.4%, pass 10)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.9 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 7.1 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 3.0 |
-| 6 | cast Fire Blast | 6.4 |
-| 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 2.1 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 9.1 |
+| 5 | if stacks of Heating Up = 3: cast Pyroblast | 4.8 |
+| 6 | cast Fire Blast | 5.8 |
+| 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.8 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
 | 9 | cast Robe of the Archmage | as ready |
-| 10 | cast Scorch | 4.9 |
-| 11 | cast spell 1326055 | 1.3 |
+| 10 | cast Scorch | 7.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10), cast spell 1326055 (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) |
 |---|---|
-| Fireball | 36% |
-| Pyroblast | 19% |
-| Fire Blast | 16% |
-| Ignite | 10% |
-| Arcane Missiles | 9% |
-| Scorch | 7% |
-| Demonic Rune | 1% |
-| Frost Blast | 1% |
+| Pyroblast | 31% |
+| Fireball | 24% |
+| Fire Blast | 17% |
+| Scorch | 14% |
+| Ignite | 9% |
+| Arcane Missiles | 4% |
+| Demonic Rune | 2% |
 
 ## Notes
 

@@ -20,7 +20,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Resilience** | 1/3 | changed | Increases your Armor by an amount equal to 50% of your Intellect. |
+| **Arcane Resilience** | 1/3 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
 | **Improved Channeling** | 4/5 | **NEW** | Gives your Arcane Missiles spell a 80% chance and your Arcane Blast and Arcane Wrath spells a 56% chance to not lose casting time when you take damage. |
 | **Arcane Concentration** | 1/5 | unchanged | Gives you a 2% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
@@ -71,14 +71,14 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 5/33/13 | 516 | +0.0% | 743 | -7.1% | 52 s |
-| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 498 | -3.5% | 799 | +0.0% | 61 s |
-| 3 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 486 | -5.7% | 764 | -4.5% | 58 s |
-| 4 | *FFB* | community simulator | - | 480 | -7.0% | 792 | -0.9% | 67 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 446 | +0.0% | 599 | -4.0% | 33 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.1% | 618 | -0.9% | 40 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 618 | -1.0% | 41 s |
+| 4 | *FFB* | community simulator | - | 423 | -5.3% | 624 | +0.0% | 47 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
   17. spell probe: insert in the middle: cast Arcane Blast (+1.8%, pass 9)
   18. spell probe: insert at the top: cast Arcane Power (+1.2%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-10-24, 27 changes to the base rotation; third-seed check: open winner 779 -> 801 DPS (+2.8%), frostfire-fingers-of-frost-raid 749 -> 763 DPS (+1.9%), sim preset: FFB 766 -> 794 DPS (+3.7%), frostfire-raid 726 -> 743 DPS (+2.4%), frostfire-ml-raid 732 -> 758 DPS (+3.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 18 passes, the last 2026-10-31, 32 changes to the base rotation; third-seed check: open winner 629 -> 732 DPS (+16.3%), frostfire-fingers-of-frost-raid 628 -> 730 DPS (+16.2%), sim preset: FFB 639 -> 733 DPS (+14.8%), frostfire-raid 600 -> 681 DPS (+13.4%), frostfire-ml-raid 633 -> 742 DPS (+17.2%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -129,24 +129,29 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   25. insert at the top: cast Demonic Rune (+0.4%, pass 14)
   26. insert before the filler: cast Robe of the Archmage (+0.3%, pass 14)
   27. threshold 15s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 15s): cast Scorch (+0.4%, pass 15)
+  28. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.3%, pass 17)
+  29. move down below 'cast Fire Blast': if stacks of Heating Up = 3: cast Pyroblast (+1.4%, pass 18)
+  30. insert at the top: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast (+1.9%, pass 18)
+  31. drop: if stacks of Heating Up = 3: cast Pyroblast (+10.1%, pass 18)
+  32. drop: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.5%, pass 18)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.0 |
-| 2 | cast Fire Blast | 6.1 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.0 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.2 |
+| 2 | cast Fire Blast | 5.1 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.2 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 3.7 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 3.7 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.1 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.1 |
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
-| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 4.4 |
-| 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.3 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.8 |
+| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.4 |
+| 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.1 |
+| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.1 |
 | 14 | cast Robe of the Archmage | as ready |
-| 15 | cast Scorch | 6.0 |
+| 15 | cast Scorch | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
@@ -154,13 +159,13 @@ Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Pyroblast | 27% |
-| Fire Blast | 20% |
-| Frostfire Bolt | 18% |
-| Ignite | 12% |
-| Scorch | 12% |
-| Fireball | 9% |
-| Arcane Missiles | 2% |
+| Pyroblast | 39% |
+| Fire Blast | 18% |
+| Scorch | 16% |
+| Frostfire Bolt | 10% |
+| Ignite | 10% |
+| Fireball | 6% |
+| Arcane Missiles | 1% |
 | Demonic Rune | 0% |
 
 ## Notes

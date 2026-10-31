@@ -37,7 +37,7 @@ The Discipline PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 
 ### Shadow (16)
 

@@ -36,7 +36,7 @@ Level with the talents of the Discipline raid build (discipline-ml-heal) so you 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 | **Improved Renew** | 1/3 | unchanged | Increases the amount healed by your Renew spell by 5%. |
 | **Holy Specialization** | 5/5 | unchanged | Increases the critical effect chance of your Holy spells by 5%. |
 | **Divine Fury** | 1/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec. |

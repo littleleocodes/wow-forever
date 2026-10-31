@@ -224,7 +224,7 @@
  "Twilight Focus": {
   "tree": "Holy",
   "max": 3,
-  "text": "Gives you a 23% chance to avoid interruption caused by damage while casting any spell.",
+  "text": "Gives your spells a 23% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",
@@ -391,10 +391,10 @@
    }
   ]
  },
- "Binding Heal": {
+ "Holy Binding": {
   "tree": "Holy",
   "max": 1,
-  "text": "Heals a friendly target and the caster for 236 to 284. Low threat.",
+  "text": "Each time you heal a target other than yourself with Flash Heal, you are healed for 50% as much. This healing generates no threat.",
   "effects": []
  },
  "Litany of Light": {

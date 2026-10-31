@@ -20,13 +20,13 @@ Allocation adopted on 2026-09-26 from `cand-holy-r1`, the build with the highest
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Power in Light** | 2/5 | **NEW** | Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain. |
-| **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
-| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
-| **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
-| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
+| **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Mental Strength** | 5/5 | changed | Increases your total Intellect by 10%. |
+| **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
+| **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
+| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
 | **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
 | **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. |
 
@@ -35,13 +35,13 @@ Allocation adopted on 2026-09-26 from `cand-holy-r1`, the build with the highest
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Holy Specialization** | 5/5 | unchanged | Increases the critical effect chance of your Holy spells by 5%. |
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
 | **Improved Renew** | 3/3 | unchanged | Increases the amount healed by your Renew spell by 15%. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 | **Divine Fury** | 1/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec. |
-| **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
 | **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
+| **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
+| **Holy Binding** | 1/1 | **NEW** | Each time you heal a target other than yourself with Flash Heal, you are healed for 50% as much. This healing generates no threat. |
 | **Improved Healing** | 3/3 | changed | Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%. |
-| **Binding Heal** | 1/1 | **NEW** | Heals a friendly target and the caster for 236 to 284. Low threat. |
 | **Litany of Light** | 2/2 | **NEW** | When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell. |
 | **Spiritual Guidance** | 4/5 | changed | Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 6% of your total Spirit. |
 | **Spiritual Healing** | 3/3 | changed | Increases the amount healed by your spells by 10%. |
@@ -69,7 +69,7 @@ Allocation adopted on 2026-09-26 from `cand-holy-r1`, the build with the highest
 | 3 | Improved Power Word: Shield | any utility talent legal at that tier | Measures +0.5% healing capacity in the healer lab (noise): these points are free to move. |
 | 1 | Divine Fury | any utility talent legal at that tier | Measures +0.4% healing capacity in the healer lab (noise): these points are free to move. |
 | 3 | Twilight Focus | any utility talent legal at that tier | Measures +0.0% healing capacity in the healer lab (noise): these points are free to move. |
-| 1 | Binding Heal | any utility talent legal at that tier | Measures +0.0% healing capacity in the healer lab (noise): these points are free to move. |
+| 1 | Holy Binding | any utility talent legal at that tier | Measures +0.0% healing capacity in the healer lab (noise): these points are free to move. |
 | 5 | Twin Disciplines | any utility talent legal at that tier | Measures -0.4% healing capacity in the healer lab (noise): these points are free to move. |
 | 3 | Improved Renew | any utility talent legal at that tier | Measures -0.7% healing capacity in the healer lab (noise): these points are free to move. |
 
@@ -82,6 +82,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 - Adopted from the healer lab on 2026-09-26: cand-holy-r1 beat the previous draft by +4.4% healing capacity.
 - Divine Spirit does not exist as a talent in the demo tree; it is presumably baseline or removed — check at launch.
 - Tier-1 Discipline has no other healer talent besides Twin Disciplines (Wand Specialization and Power in Light are the alternatives).
+- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 22/29/0 -> 22/29/0; Binding Heal -> Holy Binding (renamed) (refill: the holy-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

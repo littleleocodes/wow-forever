@@ -32,6 +32,7 @@ TODAY = datetime.date.today().isoformat()
 # 70707 (live hotfixes of 28-30 Oct): Improved Fireball -> Accelerant (same cell, still the Fireball cast time, plus Arcane Wrath), Elemental
 # Precision -> Precision (same cell, hit for every school); Gift of the Earthmother's cell now holds Bloom, a different effect: not a rename.
 RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire"},
+           "priest": {"Binding Heal": "Holy Binding"},   # 70707 hotfix 113554: the same Holy slot, 1 rank
            "mage": {"Wake of Fire": "Improved Fire Blast", "Improved Fireball": "Accelerant", "Elemental Precision": "Precision"}}
 
 
@@ -148,7 +149,12 @@ def main():
                 alloc[opt.tree.info[name][0]].append([name, flat[name]])
             old = "/".join(str(v) for v in tree_pts.values())
             b["allocation"] = alloc
-            if b.get("order"):
+            ren = RENAMES.get(cls, {})
+            if b.get("order") and all(x.endswith("(renamed)") for x in log):   # a pure rename keeps the order, renamed (2026-10-31)
+                for st in b["order"]:
+                    st["talent"] = ren.get(st["talent"], st["talent"])
+                log.append("order kept, renamed")
+            elif b.get("order"):
                 b.pop("order", None)
                 b.pop("order_label", None)
                 log.append("order dropped (order_repair.py)")

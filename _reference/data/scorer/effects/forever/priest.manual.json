@@ -740,14 +740,9 @@
       }
     ]
   },
-  "Binding Heal": {
-    "note": "1.5s heal on target and self, low threat: replaces Flash Heals when you are taking damage -> ~+3% throughput. PvP (2026-09-27): low, defensive: Heals you and an ally in one 1.5 s cast: self-healing while keeping a trained teammate up. Healer only.",
+  "Holy Binding": {
+    "note": "Live hotfix 113554 (2026-10-30, the official simulator's ac6387f): replaces Binding Heal in the same slot; each Flash Heal on another target heals you for 50% as much, no threat, not in Shadowform. Healing throughput 0: it heals only the priest, and the healer lab's healer takes no damage. PvP (2026-10-31, carried from Binding Heal): low, defensive: self-healing while keeping a teammate up. Healer only.",
     "effects": [
-      {
-        "channel": "heal",
-        "scope": ["heal"],
-        "values": [0.03]
-      },
       {
         "channel": "utility",
         "scope": ["mode:pvp"],
