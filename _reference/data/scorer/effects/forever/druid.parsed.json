@@ -23,7 +23,7 @@
  "Genesis": {
   "tree": "Balance",
   "max": 5,
-  "text": "Increases the periodic damage and healing done by your spells and abilities by 1%.",
+  "text": "Increases the periodic damage and healing done by your spells and abilities by 2%.",
   "effects": []
  },
  "Moonglow": {
@@ -252,7 +252,7 @@
  "Moonkin Form": {
   "tree": "Balance",
   "max": 1,
-  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased",
+  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged ",
   "effects": []
  },
  "Ferocity": {
@@ -423,7 +423,7 @@
  "Leader of the Pack": {
   "tree": "Feral Combat",
   "max": 1,
-  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.",
+  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%.",
   "effects": []
  },
  "Natural Instinct": {
@@ -573,7 +573,7 @@
  "Naturalist": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
+  "text": "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.1 sec and increases all damage you deal by 2%.",
   "effects": [
    {
     "channel": "dmg",
@@ -581,18 +581,19 @@
      "all"
     ],
     "values": [
-     0.01,
      0.02,
-     0.03,
      0.04,
-     0.05
+     0.06,
+     0.08,
+     0.1
     ],
     "source": "parsed"
    },
    {
     "channel": "cast_time",
     "scope": [
-     "ability:Healing Touch"
+     "ability:Healing Touch",
+     "ability:Wild Growth"
     ],
     "values": [
      0.1,

@@ -6,7 +6,7 @@
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
 0 removed, 0 added, 0 moved, 0 rank-cap changes, 0 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
@@ -29,11 +29,9 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
-0 removed, 0 added, 2 moved, 0 rank-cap changes, 1 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
-- moved: Beast Mastery / Improved Revive Pet row 2 col 4 -> row 2 col 3
-- moved: Beast Mastery / Pathfinding row 2 col 3 -> row 3 col 1
+0 removed, 0 added, 0 moved, 0 rank-cap changes, 0 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
 Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older text kept in `ranks_prev`):
 
@@ -49,7 +47,7 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
 0 removed, 0 added, 0 moved, 0 rank-cap changes, 0 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
@@ -62,9 +60,9 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
-0 removed, 0 added, 0 moved, 0 rank-cap changes, 2 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
+0 removed, 0 added, 0 moved, 0 rank-cap changes, 0 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
 Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older text kept in `ranks_prev`):
 
@@ -83,26 +81,14 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-20):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
-3 removed, 2 added, 4 moved, 3 rank-cap changes, 6 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
-- removed: Arcane / Arcane Focus (was row 1, 5 ranks)
-- removed: Fire / Improved Fireball (was row 1, 5 ranks)
-- removed: Frost / Elemental Precision (was row 1, 3 ranks)
-- added: Fire / Accelerant (row 1, 5 ranks): Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.1 sec.
-- added: Frost / Precision (row 1, 3 ranks): Improves your chance to hit with all spells by 2%.
-- moved: Arcane / Arcane Resilience row 2 col 4 -> row 1 col 3
-- rank cap: Arcane / Arcane Resilience 2 -> 3
-- moved: Arcane / Improved Channeling row 1 col 3 -> row 1 col 2
-- moved: Arcane / Missile Barrage row 1 col 4 -> row 2 col 4
-- rank cap: Fire / Critical Mass 5 -> 3
-- moved: Fire / Improved Fire Blast row 1 col 1 -> row 3 col 4
-- rank cap: Fire / Incineration 3 -> 5
+0 removed, 0 added, 0 moved, 0 rank-cap changes, 4 talents whose previously real tooltip text changed, 1 talents whose extrapolated ranks are now real.
 
 Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older text kept in `ranks_prev`):
 
 - Arcane / Improved Channeling (rank 5): Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. -> Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damag
-- Arcane / Arcane Resilience (rank 3): (had 2 ranks) -> Increases your Armor by an amount equal to 150% of your Intellect.
+- Arcane / Arcane Resilience (rank 3): (had 2 ranks) -> Increases your Armor by an amount equal to 75% of your Intellect.
 - Arcane / Missile Barrage (rank 2): (had 1 ranks) -> Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce 
 - Arcane / Arcane Blast (rank 1): Blasts the target with energy, dealing 57 to 66 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10 -> Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the
 - Fire / Incineration (rank 5): (had 3 ranks) -> Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%.
@@ -115,21 +101,22 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 - Frost / Improved Frostbolt (rank 5): Reduces the casting time of your Frostbolt spell by 0.5 sec. -> Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec.
 - Frost / Precision (rank 3): Improves your chance to hit with Frost and Fire spells by 3%. -> Improves your chance to hit with all spells by 6%.
 - Frost / Ice Lance (rank 1): Deals 28 to 33 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. -> Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.
-- Frost / Arctic Reach (rank 2): Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. -> Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%.
+- Frost / Arctic Reach (rank 2): Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. -> Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%.
 - Frost / Winter's Chill (rank 5): Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will c -> Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's dama
-- Frost / Ice Barrier (rank 1): Instantly shields you, absorbing 448 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damag -> Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additiona
+- Frost / Ice Barrier (rank 1): Instantly shields you, absorbing 448 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damag -> Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an addition
 
 Merge notes:
 
-- Arcane/Arcane Resilience: tooltip from Wowhead's spell 28574 (rank cap 2 -> 3); ranks 2-3 scaled from rank 1 (estimated)
+- Arcane/Arcane Resilience: rank cap 2 -> 3; ranks 3-3 extended from the export's rank-1 step (estimated)
+- live hotfix numbers of 2026-10-30 written into Arctic Reach, Winter's Chill, Ice Barrier (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)
 
 ## Warlock: 52 talents, build 1.60.1.70707
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
-0 removed, 0 added, 0 moved, 0 rank-cap changes, 3 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
+0 removed, 0 added, 0 moved, 0 rank-cap changes, 0 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
 Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older text kept in `ranks_prev`):
 
@@ -148,26 +135,9 @@ Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older tex
 
 Source: World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.
 
-Against the previous file (1.60.1.70425, captured 2026-10-16):
+Against the previous file (1.60.1.70707, captured 2026-10-30):
 
-5 removed, 5 added, 7 moved, 0 rank-cap changes, 1 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
-- removed: Feral Combat / Berserk (was row 7, 1 ranks)
-- removed: Feral Combat / Heart of the Wild (was row 1, 5 ranks)
-- removed: Feral Combat / Improved Shifting Power (was row 5, 2 ranks)
-- removed: Restoration / Furor (was row 1, 5 ranks)
-- removed: Restoration / Gift of the Earthmother (was row 3, 1 ranks)
-- added: Feral Combat / Furor (row 1, 5 ranks): Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form 
-- added: Feral Combat / Lacerate (row 4, 1 ranks): Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application 
-- added: Feral Combat / Predatory Discipline (row 4, 1 ranks): Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your exce
-- added: Restoration / Bloom (row 3, 1 ranks): When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal
-- added: Restoration / Heart of the Wild (row 1, 5 ranks): Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and wh
-- moved: Feral Combat / Natural Reaction row 6 col 1 -> row 6 col 4
-- moved: Feral Combat / Predatory Strikes row 4 col 3 -> row 4 col 1
-- moved: Feral Combat / Primal Bite row 4 col 2 -> row 7 col 2
-- moved: Feral Combat / Rend and Tear row 6 col 3 -> row 6 col 1
-- moved: Feral Combat / Shifting Power row 4 col 1 -> row 7 col 3
-- moved: Restoration / Reflection row 3 col 2 -> row 2 col 2
-- moved: Restoration / Subtlety row 2 col 2 -> row 3 col 2
+0 removed, 0 added, 0 moved, 0 rank-cap changes, 4 talents whose previously real tooltip text changed, 0 talents whose extrapolated ranks are now real.
 
 Tooltips that changed between the 1.60.1.70205 and 1.60.1.70707 reads (older text kept in `ranks_prev`):
 
@@ -179,7 +149,7 @@ Charge an enemy, immobilizing them and interrupting any spell they are casting f
 Feral Charge (Cat): Lea -> Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.
 
 Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown
-- Feral Combat / Leader of the Pack (rank 1): While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3 -> While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid mem
+- Feral Combat / Leader of the Pack (rank 1): While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3 -> While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or
 - Feral Combat / Natural Instinct (rank 2): Increases the critical strike damage bonus of your melee abilities by 20%. -> Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect.
 - Feral Combat / Shifting Power (rank 1): Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. -> Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.
 - Restoration / Nature's Focus (rank 5): Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. -> Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage.
@@ -190,4 +160,5 @@ Merge notes:
 - Feral Combat/Lacerate: tooltip from Wowhead's spell 1328617 (new talent)
 - Feral Combat/Predatory Discipline: tooltip from Wowhead's spell 1328613 (new talent)
 - Restoration/Bloom: tooltip from Wowhead's spell 1328621 (new talent)
+- live hotfix numbers of 2026-10-30 written into Genesis, Moonkin Form, Leader of the Pack, Naturalist (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)
 

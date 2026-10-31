@@ -208,7 +208,7 @@ TNUM = talent_numbers()
 MECHANICS = {
     "Improved Frostbolt": "Frostbolt (and Frost Blast, client 70425) cast time -0.1s per rank",
     "Improved Counterspell": "Counterspell also silences: +2/4 s lockout on a caster mob (tables.MOB_CASTER_SHARE of pulls)",
-    "Elemental Precision": "+2% hit per rank with Frost and Fire spells (3 ranks since the 2026-10-20 hotfix of 70425; 5 x 1% before)",
+    "Precision": "+2% hit per rank with every spell (70707; Elemental Precision until then: Frost and Fire only, 3 ranks since 2026-10-20)",
     "Ice Shards": "Frost crit damage bonus +20% per rank of the 50% spell bonus (x2.0 at 5/5)",
     "Permafrost": "chill duration +11/22/33%, extra slow +3/6/10%",
     "Improved Frost Nova": "Frost Nova cooldown -2s per rank",
@@ -239,8 +239,7 @@ MECHANICS = {
     "Master of Elements": "Fire/Frost crits refund 10% per rank of the spell's base mana",
     "Fire Power": "+1% Fire damage per rank per Fire effect of yours on the target (burns, Ignite, Improved Scorch, Impact's stun), up to 4 "
                   "effects (client 70425; the 16 Oct notes list the effects)",
-    "Arcane Focus": "+1% hit per rank with Arcane spells (neither loop casts Arcane spells)",
-    "Improved Fireball": "Fireball cast time -0.1s per rank",
+    "Accelerant": "Fireball and Frostfire Bolt cast time -0.1s per rank (Improved Fireball until 70707)",
     "Flame Throwing": "+3 yd Fire range per rank (longer pull for the Fire loop)",
     "Ignite": "Fire crits burn for 8% per rank of the crit's damage over 4s",
     "Impact": "Fire spell hits have 3/7/10% chance to stun 2s (no movement, no swings)",
@@ -249,7 +248,7 @@ MECHANICS = {
     "Improved Scorch": "Scorch's chance (the rank) to stack +3% Fire damage taken, up to 5 stacks at every rank, 30s",
     "Heating Up": ("Fireball/Fire Blast/Scorch crits stack, Fire Blast adds one more whenever it hits (3 = Pyroblast cast -75%), 20s; a Presence "
                    "of Mind Pyroblast keeps them (client 70425 and the beta notes of 16 Oct)"),
-    "Critical Mass": "+2% Fire crit per rank (5 ranks since client 70425)",
+    "Critical Mass": "+2% Fire crit per rank (3 ranks since client 70707; 5 in 70425)",
     "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, not a Chill effect, 45s cooldown; ranks 1-5 from the 70425 spellbook): a snare "
                   "when the mob is on us",
     "Combustion": "on the pull every 3 min (shared with Presence of Mind): +10% Fire crit per Fire hit until 3 crits",
@@ -269,7 +268,6 @@ ARCANE_MECHANICS = {
     "Arcane Impact": "+2% crit per rank with Arcane spells",
     "Arcane Geometry": "+3 yd Arcane range per rank (longer Arcane Blast pull)",
     "Presence of Mind": "an instant Arcane Blast (Frostbolt without it) opener every 3 min",
-    "Arcane Focus": "+1% hit per rank with Arcane spells",
 }
 
 # ------------------------------------------------------------ calibration and report metadata (read by calibrate.py / run.py)
@@ -285,7 +283,7 @@ FIT = {"Improved Counterspell": "scale",
     "Frostbite": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.04}]),
     "Permafrost": ("replace", [{"channel": "surv", "scope": ["all"], "per_rank": 0.10}, {"channel": "sustain", "scope": ["all"], "per_rank": 0.08}]),
     "Ice Barrier": ("replace", [{"channel": "sustain", "scope": ["all"], "values": [0.15]}, {"channel": "surv", "scope": ["all"], "values": [0.30]}, {"channel": "dmg", "scope": ["type:spell"], "values": [0.02]}]),
-    "Elemental Precision": ("replace", [{"channel": "hit", "scope": ["school:frost", "school:fire"], "per_rank": 0.02}, {"channel": "dmg", "scope": ["school:frost", "school:fire"], "per_rank": 0.01}]),   # 3 ranks since 2026-10-20
+    "Precision": ("replace", [{"channel": "hit", "scope": ["type:spell"], "per_rank": 0.02}, {"channel": "dmg", "scope": ["type:spell"], "per_rank": 0.01}]),   # 70707: every spell (Elemental Precision before)
     "Cold Snap": "scale",
     "Winter's Chill": "scale",
     "Improved Frostbolt": "scale",
@@ -297,7 +295,7 @@ FIT = {"Improved Counterspell": "scale",
     "Presence of Mind": "scale",
     "Arcane Concentration": "scale",
     # Fire loop
-    "Improved Fireball": "scale",
+    "Accelerant": "scale",
     "Ignite": "scale",
     "Fire Power": "scale",
     "Critical Mass": "scale",
@@ -470,7 +468,7 @@ class MageModule(BaseModule):
         if spell.name in ("Frostbolt", "Frost Blast"):   # Frost Blast: client 70425
             c = max(GCD, c - 0.1 * self.rank("Improved Frostbolt"))
         if spell.name in ("Fireball", "Frostfire Bolt"):
-            c = max(GCD, c - 0.1 * self.rank("Improved Fireball"))
+            c = max(GCD, c - 0.1 * self.rank("Accelerant"))   # Improved Fireball until 70707 (renamed in place, adds Arcane Wrath)
         if spell.name == "Pyroblast" and self._fight:
             hs = self._fight.p.buff("Heating Up", self._fight.t)
             if hs:
@@ -501,11 +499,8 @@ class MageModule(BaseModule):
         return cost
 
     def hit_bonus(self, spell):
-        if (self.sch(spell, "frost") or self.sch(spell, "fire")):
-            return self.tv("Elemental Precision", 0) / 100
-        if self.sch(spell, "arcane"):
-            return self.tv("Arcane Focus", 0) / 100
-        return 0.0
+        # 70707: Precision (Elemental Precision until then, Frost and Fire) gives hit with every spell; Arcane Focus is gone
+        return self.tv("Precision", 0) / 100
 
     def crit_bonus(self, spell, frozen):
         c = 0.0

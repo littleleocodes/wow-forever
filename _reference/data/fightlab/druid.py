@@ -224,6 +224,7 @@ RIP_EARLY_HP = 0.4
 # 33.9: solo, the mana comes back as drinking time (about 600 mana a cast) and costs more than the 40 energy saves. A raid's mana
 # buffs change that (the raid rotation casts it at 60 energy or less).
 SHIFTING_POWER_ABOVE = 1.01
+SHIFTING_POWER_CD = 8.0   # 70707 hotfix of 2026-10-30 (foreverchanges.pro, wowforever.be): 8 s, was 16 s
 # Omen of Clarity: the client states no rate; the ElliotWood/Forever simulator fits beta logs at 2 procs a minute (4% a hit in Cat Form,
 # 8% in Bear Form; spells by their cast time, instants by a 1.5 s global cooldown) outside the client's 10 s internal cooldown, which
 # Moonkin Form halves (and doubles the chance: its tooltip). Clearcasting lasts 15 s.
@@ -260,10 +261,9 @@ MECHANICS = {
     "Blood Frenzy": "bear: 50%/rank chance of 5 rage on a critical strike; cat: 50%/rank chance of an extra combo point on a critical Claw, Rake, Shred or Ravage",
     "Natural Instinct": "+10%/rank crit damage bonus on abilities; healing power +12/25% of Intellect",
     "Leader of the Pack": "+3% crit in forms",
-    "Shifting Power": "cat: 40 energy for 55% of base mana (less with Natural Shapeshifter) every 16 s, at 60 energy or less, above "
+    "Shifting Power": "cat: 40 energy for 55% of base mana (less with Natural Shapeshifter) every 8 s (the 70707 hotfix; 16 s before, Improved Shifting Power took 4 s a rank off until it was removed), at 60 energy or less, above "
                       "SHIFTING_POWER_ABOVE of mana (default never: solo its mana costs more drinking time than the energy saves) and "
                       "keeping the mana for an emergency heal and the way back (70170 put it where King of the Jungle was)",
-    "Improved Shifting Power": "-4 s/rank Shifting Power cooldown",
     "Natural Reaction": "+1%/rank dodge",
     "Rend and Tear": "+2%/rank ability damage on a bleeding mob (Rake, Rip, Pounce)",
     "Berserk": "+100% crit on combo-point abilities for 15 s every 3 min",
@@ -299,7 +299,7 @@ MECHANICS = {
 FIT = {
     "Ferocity": "scale", "Heart of the Wild": "scale", "Feral Swiftness": "scale", "Brutal Impact": "scale", "Thick Hide": "scale", "Savage Fury": "scale",
     "Sharpened Claws": "scale", "Shredding Attacks": "scale", "Predatory Strikes": "scale", "Natural Instinct": "scale", "Leader of the Pack": "scale",
-    "Shifting Power": "scale", "Improved Shifting Power": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
+    "Shifting Power": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
     "Nature's Reach": "scale", "Furor": "scale", "Naturalist": "scale", "Natural Shapeshifter": "scale", "Reflection": "scale", "Gift of Nature": "scale",
     "Improved Rejuvenation": "scale", "Tranquil Spirit": "scale", "Nature's Swiftness": "scale", "Living Spirit": "scale", "Swiftmend": "scale", "Blood Frenzy": "scale",
     "Feral Charge": "scale", "Feral Instinct": "scale", "Moonglow": "scale", "Improved Moonfire": "scale", "Improved Wrath": "scale", "Nature's Focus": "scale",
@@ -788,9 +788,10 @@ class DruidModule(BaseModule):
 
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
-        if spell.cooldown > 0:
-            cut = 15.0 * self.rank("Brutal Impact") if spell.name == "Bash" else (self.tv("Improved Shifting Power", 0) if spell.name == "Shifting Power" else 0.0)
-            p.cooldowns[spell.name] = t + spell.cooldown - cut
+        if spell.cooldown > 0 or spell.name == "Shifting Power":
+            cd = SHIFTING_POWER_CD if spell.name == "Shifting Power" else spell.cooldown
+            cut = 15.0 * self.rank("Brutal Impact") if spell.name == "Bash" else 0.0
+            p.cooldowns[spell.name] = t + cd - cut
         if spell.name in ("Cat Form", "Bear Form"):
             self.shift_in(fight, p, t)
         if self.balance and self.rank("Eclipse"):

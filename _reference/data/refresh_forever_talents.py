@@ -31,6 +31,8 @@ import ssl
 import sys
 import urllib.request
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE / "forever-talents"
 RAW = HERE / "raw"
@@ -175,6 +177,15 @@ def sim_sources(cls, tf, sim_dir, raw_dir):
             pre = at.get((t["prereqLocation"]["rowIdx"], t["prereqLocation"]["colIdx"])) if t.get("prereqLocation") else None
             o = old.get(n)
             ranks = tf_ranks(o) if o else None
+            if ranks and len(ranks) > mx:   # a lower rank cap: the export's first ranks (an estimate when the steps changed)
+                ranks = ranks[:mx]
+                est[(tname, n)] = []
+                notes.append(f"{tname}/{n}: rank cap {len(tf_ranks(o))} -> {mx}; the export's first {mx} ranks kept")
+            elif ranks and len(ranks) < mx:   # a higher cap: the export's ranks, then its rank-1 step (Arcane Resilience 25/50 -> 25/50/75)
+                k0 = len(ranks)
+                ranks = ranks + [scale_text(ranks[0], k) for k in range(k0, mx)]
+                est[(tname, n)] = list(range(k0, mx))
+                notes.append(f"{tname}/{n}: rank cap {k0} -> {mx}; ranks {k0 + 1}-{mx} extended from the export's rank-1 step (estimated)")
             if ranks is None or len(ranks) != mx:
                 first = wowhead_text(raw_dir, t["spellId"]) or (ranks or [""])[0]
                 ranks = [first] + [scale_text(first, k) for k in range(1, mx)]
@@ -380,6 +391,10 @@ def main():
                 for t in tr["talents"]:
                     if (tr["name"], t["name"]) in est and est[(tr["name"], t["name"])]:
                         t["estimated"] = est[(tr["name"], t["name"])]
+        import hotfix_text as HT   # live hotfix numbers the export has not read yet (2026-10-30)
+        hf = HT.apply_talents(cls, obj)
+        if hf:
+            obj["merge_notes"].append(f"live hotfix numbers of {HT.DATE} written into {', '.join(hf)} (hotfix_text.py; sources {', '.join(HT.SOURCES)})")
         out = OUT / f"{cls}.json"
         prev_path = (RAW / a.previous / f"{cls}.json") if a.previous else out
         prev = json.load(open(prev_path, encoding="utf-8")) if prev_path.exists() else None

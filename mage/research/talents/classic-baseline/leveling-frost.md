@@ -91,21 +91,21 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
 | Arcane | Arcane Subtlety | 2 | changed | tier 2, max 2 — tooltip changed; was Arcane row 1, col 1 |
-| Arcane | Arcane Focus | 5 | changed | tier 1, max 5 — tooltip changed |
+| Arcane | Arcane Focus | 5 | unknown | not found in Forever data |
 | Arcane | Arcane Concentration | 5 | unchanged | tier 2, max 5 |
 | Arcane | Improved Arcane Explosion | 3 | **REMOVED** | removed from Classic |
 | Arcane | Arcane Meditation | 2 | changed | tier 4, max 3 — tooltip changed; was Arcane row 4, col 4 |
-| Frost | Improved Frostbolt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
-| Frost | Elemental Precision | 3 | changed | tier 1, max 3 — max rank 3 → 5; tooltip changed; max rank 5 -> 3 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
+| Frost | Improved Frostbolt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Frost | Elemental Precision | 3 | unknown | not found in Forever data |
 | Frost | Ice Shards | 5 | unchanged | tier 2, max 5 |
 | Frost | Improved Frost Nova | 2 | unchanged | tier 2, max 2 |
 | Frost | Piercing Ice | 3 | unknown | not found in Forever data |
 | Frost | Cold Snap | 1 | changed | tier 5, max 1 — tooltip changed; was Frost row 3, col 2 |
-| Frost | Frost Channeling | 3 | moved | tier 3, max 3 — was Frost row 4, col 2; moved in build 1.60.1.70425: was row 3, col 2 |
+| Frost | Frost Channeling | 3 | moved | tier 3, max 3 — was Frost row 4, col 2; moved in build 1.60.1.70707: was row 3, col 2 |
 | Frost | Shatter | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Frost row 4, col 3 |
 | Frost | Ice Block | 1 | moved | tier 4, max 1 — was Frost row 5, col 2 |
-| Frost | Winter's Chill | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
-| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Frost | Winter's Chill | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1) |
 
 **3 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

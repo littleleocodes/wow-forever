@@ -83,23 +83,23 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
 | Arcane | Arcane Subtlety | 2 | changed | tier 2, max 2 — tooltip changed; was Arcane row 1, col 1 |
-| Arcane | Arcane Focus | 3 | changed | tier 1, max 5 — tooltip changed |
+| Arcane | Arcane Focus | 3 | unknown | not found in Forever data |
 | Arcane | Arcane Concentration | 5 | unchanged | tier 2, max 5 |
 | Arcane | Improved Arcane Explosion | 3 | **REMOVED** | removed from Classic |
 | Arcane | Magic Attunement | 2 | **REMOVED** | removed from Classic |
 | Arcane | Arcane Meditation | 2 | changed | tier 4, max 3 — tooltip changed; was Arcane row 4, col 4 |
-| Fire | Improved Fireball | 5 | changed | tier 1, max 5 — tooltip changed; was Fire row 1, col 2 |
+| Fire | Improved Fireball | 5 | unknown | not found in Forever data |
 | Fire | Ignite | 5 | unchanged | tier 2, max 5 |
 | Fire | Flame Throwing | 2 | unchanged | tier 2, max 2 |
 | Fire | Incinerate | 1 | **REMOVED** | removed from Classic |
-| Fire | Pyroblast | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Fire | Pyroblast | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1) |
 | Fire | Burning Soul | 2 | changed | tier 3, max 3 — max rank 2 → 3; tooltip changed; was Fire row 3, col 4 |
 | Fire | Improved Scorch | 3 | changed | tier 4, max 3 — tooltip changed |
 | Fire | Master of Elements | 3 | changed | tier 4, max 3 — tooltip changed |
-| Fire | Critical Mass | 3 | unchanged | tier 5, max 5 — max rank 3 -> 5 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
-| Fire | Fire Power | 5 | unchanged | tier 6, max 3 — max rank 5 -> 3 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
+| Fire | Critical Mass | 3 | unchanged | tier 5, max 3 |
+| Fire | Fire Power | 5 | unchanged | tier 6, max 3 — max rank 5 -> 3 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
 | Fire | Combustion | 1 | changed | tier 7, max 1 — tooltip changed |
-| Frost | Elemental Precision | 3 | changed | tier 1, max 3 — max rank 3 → 5; tooltip changed; max rank 5 -> 3 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
+| Frost | Elemental Precision | 3 | unknown | not found in Forever data |
 
 **6 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

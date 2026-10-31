@@ -41,7 +41,7 @@
  "Arcane Resilience": {
   "tree": "Arcane",
   "max": 3,
-  "text": "Increases your Armor by an amount equal to 50% of your Intellect.",
+  "text": "Increases your Armor by an amount equal to 25% of your Intellect.",
   "effects": []
  },
  "Arcane Subtlety": {
@@ -610,7 +610,7 @@
  "Arctic Reach": {
   "tree": "Frost",
   "max": 2,
-  "text": "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+  "text": "Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
   "effects": [
    {
     "channel": "range",
@@ -618,6 +618,7 @@
      "school:frost",
      "ability:Frostbolt",
      "ability:Frost Blast",
+     "ability:Ice Lance",
      "ability:Cone of Cold"
     ],
     "values": [
@@ -687,13 +688,13 @@
  "Winter's Chill": {
   "tree": "Frost",
   "max": 5,
-  "text": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7",
+  "text": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional ",
   "effects": []
  },
  "Ice Barrier": {
   "tree": "Frost",
   "max": 1,
-  "text": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
+  "text": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.",
   "effects": []
  }
 }

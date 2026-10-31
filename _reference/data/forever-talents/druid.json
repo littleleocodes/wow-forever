@@ -68,7 +68,8 @@
   "merge_notes": [
     "Feral Combat/Lacerate: tooltip from Wowhead's spell 1328617 (new talent)",
     "Feral Combat/Predatory Discipline: tooltip from Wowhead's spell 1328613 (new talent)",
-    "Restoration/Bloom: tooltip from Wowhead's spell 1328621 (new talent)"
+    "Restoration/Bloom: tooltip from Wowhead's spell 1328621 (new talent)",
+    "live hotfix numbers of 2026-10-30 written into Genesis, Moonkin Form, Leader of the Pack, Naturalist (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
   ],
   "trees": [
     {
@@ -113,15 +114,36 @@
           "icon": "spell_arcane_arcane03",
           "maxRank": 5,
           "ranks": [
-            "Increases the periodic damage and healing done by your spells and abilities by 1%.",
             "Increases the periodic damage and healing done by your spells and abilities by 2%.",
-            "Increases the periodic damage and healing done by your spells and abilities by 3%.",
             "Increases the periodic damage and healing done by your spells and abilities by 4%.",
-            "Increases the periodic damage and healing done by your spells and abilities by 5%."
+            "Increases the periodic damage and healing done by your spells and abilities by 6%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 8%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 10%."
           ],
           "status": "new",
           "evidence": "druid/02-druid-balance-genesis.png",
-          "diff": []
+          "diff": [],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "before": {
+              "1": "Increases the periodic damage and healing done by your spells and abilities by 1%.",
+              "2": "Increases the periodic damage and healing done by your spells and abilities by 2%.",
+              "3": "Increases the periodic damage and healing done by your spells and abilities by 3%.",
+              "4": "Increases the periodic damage and healing done by your spells and abilities by 4%.",
+              "5": "Increases the periodic damage and healing done by your spells and abilities by 5%."
+            }
+          }
         },
         {
           "id": "balance/moonglow",
@@ -414,7 +436,7 @@
           "icon": "spell_nature_forceofnature",
           "maxRank": 1,
           "ranks": [
-            "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+            "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged and spell) increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
           ],
           "status": "changed",
           "classic": [
@@ -428,7 +450,20 @@
           "diff": [
             "tooltip changed",
             "tooltip changed in build 1.60.1.70707 (ranks 1)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1
+            ],
+            "before": {
+              "1": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+            }
+          }
         }
       ],
       "removed": [
@@ -778,7 +813,7 @@
           "icon": "spell_nature_unyeildingstamina",
           "maxRank": 1,
           "ranks": [
-            "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%."
+            "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%."
           ],
           "status": "changed",
           "classic": [
@@ -793,7 +828,20 @@
             "tooltip changed",
             "was Feral Combat row 7, col 2",
             "tooltip changed in build 1.60.1.70707 (ranks 1)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1
+            ],
+            "before": {
+              "1": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%."
+            }
+          }
         },
         {
           "id": "feral-combat/natural-instinct",
@@ -995,15 +1043,36 @@
           "icon": "spell_nature_healingtouch",
           "maxRank": 5,
           "ranks": [
-            "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
-            "Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.",
-            "Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.",
-            "Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.",
-            "Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%."
+            "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.1 sec and increases all damage you deal by 2%.",
+            "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.2 sec and increases all damage you deal by 4%.",
+            "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.3 sec and increases all damage you deal by 6%.",
+            "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.4 sec and increases all damage you deal by 8%.",
+            "Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%."
           ],
           "status": "new",
           "evidence": "druid/39-druid-restoration-naturalist.png",
-          "diff": []
+          "diff": [],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "before": {
+              "1": "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
+              "2": "Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.",
+              "3": "Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.",
+              "4": "Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.",
+              "5": "Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%."
+            }
+          }
         },
         {
           "id": "restoration/reflection",

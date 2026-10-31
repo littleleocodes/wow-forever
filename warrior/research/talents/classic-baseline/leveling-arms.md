@@ -106,8 +106,8 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Arms | Improved Hamstring | 1 | unchanged | tier 6, max 3 |
 | Arms | Mortal Strike | 1 | unchanged | tier 7, max 1 |
 | Fury | Cruelty | 5 | changed | tier 1, max 5 — tooltip changed |
-| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
-| Fury | Piercing Howl | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Fury | Piercing Howl | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1) |
 | Fury | Improved Battle Shout | 4 | **REMOVED** | removed from Classic |
 | Fury | Enrage | 5 | changed | tier 4, max 5 — tooltip changed |
 

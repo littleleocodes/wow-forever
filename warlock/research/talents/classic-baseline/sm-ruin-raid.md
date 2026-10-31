@@ -85,18 +85,18 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Affliction | Improved Life Tap | 2 | moved | tier 1, max 2 — was Affliction row 2, col 3 |
 | Affliction | Improved Drain Soul | 2 | **REMOVED** | removed from Classic |
 | Affliction | Improved Curse of Agony | 3 | **REMOVED** | removed from Classic |
-| Affliction | Amplify Curse | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Affliction | Amplify Curse | 1 | changed | tier 3, max 1 — tooltip changed |
 | Affliction | Nightfall | 2 | changed | tier 4, max 2 — tooltip changed |
-| Affliction | Grim Reach | 2 | new | tier 2, max 2 — renamed from Malediction in build 1.60.1.70425; max rank 5 -> 2 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2) |
+| Affliction | Grim Reach | 2 | new | tier 2, max 2 — renamed from Malediction in build 1.60.1.70707; max rank 5 -> 2 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2) |
 | Affliction | Siphon Life | 1 | changed | tier 5, max 1 — tooltip changed |
 | Affliction | Improved Curse of Weakness | 2 | **REMOVED** | removed from Classic |
-| Affliction | Shadow Mastery | 5 | changed | tier 6, max 5 — tooltip changed; was Affliction row 6, col 2; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
+| Affliction | Shadow Mastery | 5 | changed | tier 6, max 5 — tooltip changed; was Affliction row 6, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
 | Destruction | Improved Shadow Bolt | 5 | changed | tier 1, max 5 — tooltip changed |
 | Destruction | Cataclysm | 2 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Destruction row 1, col 3 |
 | Destruction | Bane | 5 | changed | tier 1, max 5 — tooltip changed; was Destruction row 2, col 2 |
 | Destruction | Devastation | 5 | **REMOVED** | removed from Classic |
-| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70425 (ranks 1) |
-| Destruction | Destructive Reach | 2 | changed | tier 1, max 2 — tooltip changed; was Destruction row 4, col 2; tooltip changed in build 1.60.1.70425 (ranks 1, 2) |
+| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Destruction | Destructive Reach | 2 | changed | tier 1, max 2 — tooltip changed; was Destruction row 4, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2) |
 | Destruction | Ruin | 1 | changed | tier 3, max 5 — max rank 1 → 5; tooltip changed; was Destruction row 5, col 3 |
 
 **12 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.

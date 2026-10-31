@@ -80,10 +80,10 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Balance | Improved Wrath | 5 | changed | tier 1, max 5 — tooltip changed; was Balance row 1, col 1 |
 | Restoration | Improved Mark of the Wild | 5 | **REMOVED** | removed from Classic |
 | Restoration | Improved Healing Touch | 5 | **REMOVED** | removed from Classic |
-| Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2 |
-| Restoration | Reflection | 3 | changed | tier 3, max 3 — tooltip changed |
+| Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Restoration | Reflection | 3 | changed | tier 2, max 3 — tooltip changed; moved in build 1.60.1.70707: was row 3, col 2 |
 | Restoration | Insect Swarm | 1 | moved-tree | now in Balance, tier 4 |
-| Restoration | Subtlety | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Restoration row 3, col 4 |
+| Restoration | Subtlety | 5 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; was Restoration row 3, col 4; moved in build 1.60.1.70707: was row 2, col 2 |
 | Restoration | Tranquil Spirit | 5 | unchanged | tier 4, max 5 |
 | Restoration | Improved Rejuvenation | 3 | moved | tier 4, max 3 — was Restoration row 4, col 4 |
 | Restoration | Nature's Swiftness | 1 | unchanged | tier 5, max 1 |

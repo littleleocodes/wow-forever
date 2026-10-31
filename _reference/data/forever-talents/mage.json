@@ -75,7 +75,8 @@
     }
   ],
   "merge_notes": [
-    "Arcane/Arcane Resilience: tooltip from Wowhead's spell 28574 (rank cap 2 -> 3); ranks 2-3 scaled from rank 1 (estimated)"
+    "Arcane/Arcane Resilience: rank cap 2 -> 3; ranks 3-3 extended from the export's rank-1 step (estimated)",
+    "live hotfix numbers of 2026-10-30 written into Arctic Reach, Winter's Chill, Ice Barrier (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
   ],
   "trees": [
     {
@@ -138,9 +139,9 @@
           "icon": "spell_arcane_arcaneresilience",
           "maxRank": 3,
           "ranks": [
+            "Increases your Armor by an amount equal to 25% of your Intellect.",
             "Increases your Armor by an amount equal to 50% of your Intellect.",
-            "Increases your Armor by an amount equal to 100% of your Intellect.",
-            "Increases your Armor by an amount equal to 150% of your Intellect."
+            "Increases your Armor by an amount equal to 75% of your Intellect."
           ],
           "status": "changed",
           "classic": [
@@ -161,7 +162,6 @@
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
           ],
           "estimated": [
-            1,
             2
           ]
         },
@@ -1122,8 +1122,8 @@
           "icon": "spell_shadow_darkritual",
           "maxRank": 2,
           "ranks": [
-            "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
-            "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+            "Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+            "Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
           ],
           "status": "same",
           "evidence": "mage/47-mage-frost-arctic-reach.jpg",
@@ -1134,7 +1134,22 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1,
+              2
+            ],
+            "before": {
+              "1": "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+              "2": "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+            }
+          }
         },
         {
           "id": "frost/ice-block",
@@ -1250,11 +1265,11 @@
           "icon": "spell_frost_chillingblast",
           "maxRank": 5,
           "ranks": [
-            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 40% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times."
+            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 40% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+            "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times."
           ],
           "status": "changed",
           "classic": [
@@ -1276,7 +1291,28 @@
           "diff": [
             "tooltip changed",
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "before": {
+              "1": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+              "2": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 40% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+              "3": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+              "4": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
+              "5": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times."
+            }
+          }
         },
         {
           "id": "frost/ice-barrier",
@@ -1286,7 +1322,7 @@
           "icon": "spell_ice_lament",
           "maxRank": 1,
           "ranks": [
-            "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage."
+            "Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage."
           ],
           "status": "changed",
           "classic": [
@@ -1304,6 +1340,19 @@
           "prereq": {
             "id": "frost/cold-snap",
             "rank": 1
+          },
+          "hotfix": {
+            "date": "2026-10-30",
+            "sources": [
+              "https://foreverchanges.pro/patch-notes",
+              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+            ],
+            "ranks": [
+              1
+            ],
+            "before": {
+              "1": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage."
+            }
           }
         }
       ],

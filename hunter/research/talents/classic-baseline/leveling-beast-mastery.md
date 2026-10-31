@@ -92,7 +92,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 |---|---|---|---|---|
 | Beast Mastery | Improved Aspect of the Hawk | 5 | **REMOVED** | removed from Classic |
 | Beast Mastery | Endurance Training | 5 | changed | tier 1, max 5 — tooltip changed |
-| Beast Mastery | Improved Revive Pet | 2 | unchanged | tier 2, max 2 |
+| Beast Mastery | Improved Revive Pet | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70707: was row 2, col 4 |
 | Beast Mastery | Bestial Swiftness | 1 | changed | tier 3, max 1 — tooltip changed |
 | Beast Mastery | Unleashed Fury | 5 | changed | tier 3, max 5 — tooltip changed |
 | Beast Mastery | Ferocity | 5 | changed | tier 4, max 5 — tooltip changed |

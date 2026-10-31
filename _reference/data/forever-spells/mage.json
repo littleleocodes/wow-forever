@@ -111,7 +111,7 @@
       {
        "rank": "Rank 1",
        "id": 400574,
-       "text": "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
+       "text": "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application.",
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -125,12 +125,27 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 1239696,
-       "text": "Blasts the target with energy, dealing 78 to 90 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
+       "text": "Blasts the target with energy, dealing 78 to 90 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application.",
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -143,12 +158,27 @@
        "level": 30,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Blasts the target with energy, dealing 78 to 90 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 1239697,
-       "text": "Blasts the target with energy, dealing 101 to 117 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
+       "text": "Blasts the target with energy, dealing 101 to 117 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application.",
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -161,12 +191,27 @@
        "level": 40,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Blasts the target with energy, dealing 101 to 117 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 1239699,
-       "text": "Blasts the target with energy, dealing 165 to 191 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
+       "text": "Blasts the target with energy, dealing 165 to 191 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application.",
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -179,12 +224,27 @@
        "level": 50,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Blasts the target with energy, dealing 165 to 191 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+         }
+        }
        }
       },
       {
        "rank": "Rank 5",
        "id": 1239700,
-       "text": "Blasts the target with energy, dealing 218 to 254 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.",
+       "text": "Blasts the target with energy, dealing 218 to 254 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application.",
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -197,6 +257,21 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Blasts the target with energy, dealing 218 to 254 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+         }
+        }
        }
       }
      ]
@@ -4019,7 +4094,7 @@
       {
        "rank": "Rank 1",
        "id": 1312002,
-       "text": "Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4033,12 +4108,28 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": "8 sec cooldown"
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 400640,
-       "text": "Deals 34 to 40 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 34 to 40 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4046,17 +4137,33 @@
        "cost": "55 Mana",
        "range": "30 yd range",
        "cast": "Instant",
-       "cooldown": "",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 28,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 34 to 40 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": ""
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 1240044,
-       "text": "Deals 44 to 52 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 44 to 52 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4064,17 +4171,33 @@
        "cost": "70 Mana",
        "range": "30 yd range",
        "cast": "Instant",
-       "cooldown": "",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 34,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 44 to 52 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": ""
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 1240045,
-       "text": "Deals 76 to 90 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 76 to 90 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4082,17 +4205,33 @@
        "cost": "105 Mana",
        "range": "30 yd range",
        "cast": "Instant",
-       "cooldown": "",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 42,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 76 to 90 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": ""
+         }
+        }
        }
       },
       {
        "rank": "Rank 5",
        "id": 1240046,
-       "text": "Deals 95 to 111 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 95 to 111 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4100,17 +4239,33 @@
        "cost": "120 Mana",
        "range": "30 yd range",
        "cast": "Instant",
-       "cooldown": "",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 48,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 95 to 111 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": ""
+         }
+        }
        }
       },
       {
        "rank": "Rank 6",
        "id": 1240047,
-       "text": "Deals 136 to 160 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+       "text": "Deals 136 to 160 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -4118,11 +4273,27 @@
        "cost": "160 Mana",
        "range": "30 yd range",
        "cast": "Instant",
-       "cooldown": "",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 56,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-10-30",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Deals 136 to 160 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
+          "cooldown": ""
+         }
+        }
        }
       }
      ]

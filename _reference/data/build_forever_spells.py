@@ -18,11 +18,13 @@ import datetime as dt
 import json
 import pathlib
 import re
+import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 RAW = HERE / "raw"
 OUT = HERE / "forever-spells"
+sys.path.insert(0, str(HERE))
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
 STATUS_WORDS = {"new": "new in Forever", "changed": "changed", "same": "as Classic", "removed": "removed"}
 
@@ -35,8 +37,9 @@ def find_raw(raw_dir, sub_prefix, name):
 
 
 def newest_raw():
-    """The newest raw/<date>-beta-<build> folder with a talentsforever.com data.json (folder names sort by date)."""
-    for d in sorted(RAW.glob("*-beta-*"), reverse=True):
+    """The newest raw/<date>-beta-<build> or <date>-live folder with a talentsforever.com data.json (folder names sort by date; the live
+    client's pulls since 2026-10-30 are named <date>-live)."""
+    for d in sorted([*RAW.glob("*-beta-*"), *RAW.glob("*-live*")], key=lambda x: x.name, reverse=True):
         if any(x.is_dir() and x.name.startswith("talentsforever-com") and (x / "data.json").exists() for x in d.iterdir()):
             return d.name
     raise SystemExit(f"no *-beta-* folder with a talentsforever.com export under {RAW}")
@@ -231,6 +234,9 @@ def main():
         for name, r in keep_dropped_ranks(cls, obj):
             print(f"  {cls}: KEPT {name} {r.get('rank')} (id {r.get('id')}, level {r.get('level')}): the export lacks it; "
                   f"the previous file had it ({r.get('source')})")
+        import hotfix_text as HT   # live hotfix numbers the export has not read yet (2026-10-30)
+        for name in HT.apply_spells(cls, obj):
+            print(f"  {cls}: {name}: live hotfix numbers of {HT.DATE} written in (hotfix_text.py)")
         (OUT / f"{cls}.json").write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
         d = ROOT / cls / "research" / "spells"
         d.mkdir(exist_ok=True)
