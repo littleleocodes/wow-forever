@@ -1248,57 +1248,6 @@
       "sources": ["https://warcraftforever.games/talents/druid"]
     },
     {
-      "id": "feral-combat-open-raid",
-      "name": "Feral Combat — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Feral Combat",
-      "generated": "2026-10-26",
-      "derived": "raid",
-      "summary": "The Feral Combat raid build the open talent search found on 2026-10-26: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
-      "allocation": {
-        "Balance": [
-          ["Genesis", 5],
-          ["Nature's Majesty", 2],
-          ["Nature's Reach", 2]
-        ],
-        "Feral Combat": [
-          ["Ferocity", 5],
-          ["Furor", 5],
-          ["Savage Fury", 2],
-          ["Sharpened Claws", 2],
-          ["Shredding Attacks", 3],
-          ["Blood Frenzy", 2],
-          ["Predatory Discipline", 1],
-          ["Predatory Strikes", 3],
-          ["Leader of the Pack", 1],
-          ["Natural Instinct", 2],
-          ["Rend and Tear", 5],
-          ["Shifting Power", 1]
-        ],
-        "Restoration": [
-          ["Heart of the Wild", 5],
-          ["Naturalist", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Shifting Power", "why": "124 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shredding Attacks", "why": "70 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Shifting Power", "why": "56 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Rend and Tear", "why": "41 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Sharpened Claws", "why": "34 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Natural Instinct", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Naturalist", "why": "28 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Savage Fury", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+19.7% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (feral-cat-dps, full raid): 9/33/9 (Feral Combat) at 753.7 DPS; feral-combat-shifting-power-raid 743.2, opt-feral-cat-dps-raid-dps 643.1, feral-cat-dps 629.8 in the same fights; 4,989 builds simulated, 2 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): balance-dps -65.6%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/33/9 -> 9/32/10; Improved Shifting Power 2 gone; Berserk 1 gone; +1 Blood Frenzy (tier gating for Rend and Tear); +1 Predatory Discipline (prerequisite of Shifting Power); refill +1 Naturalist (refill: the feral-cat-dps model, raid-dps)."],
-      "open_questions": ["An open-search Feral Combat build: check it against the community's Feral Combat builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/druid/60/050022-55000032021031212051-054-7"],
-      "replaces": "feral-cat-dps"
-    },
-    {
       "id": "feral-combat-ml-tank",
       "name": "Feral Combat — Raid tank (machine-learning search)",
       "role": "tank",
@@ -1338,6 +1287,57 @@
       "open_questions": ["A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
       "sources": [],
       "replaces": "feral-bear-tank"
+    },
+    {
+      "id": "feral-combat-open-raid",
+      "name": "Feral Combat — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Feral Combat",
+      "generated": "2026-10-31",
+      "derived": "raid",
+      "summary": "The Feral Combat raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's feral-cat-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Balance": [
+          ["Genesis", 5],
+          ["Nature's Majesty", 2],
+          ["Nature's Reach", 2]
+        ],
+        "Feral Combat": [
+          ["Ferocity", 5],
+          ["Furor", 5],
+          ["Shredding Attacks", 3],
+          ["Savage Fury", 2],
+          ["Sharpened Claws", 2],
+          ["Predatory Strikes", 3],
+          ["Predatory Discipline", 1],
+          ["Blood Frenzy", 2],
+          ["Natural Instinct", 2],
+          ["Rend and Tear", 5],
+          ["Shifting Power", 1],
+          ["Feral Charge", 1]
+        ],
+        "Restoration": [
+          ["Heart of the Wild", 5],
+          ["Naturalist", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Shifting Power", "why": "120 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Naturalist", "why": "68 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shredding Attacks", "why": "64 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Rend and Tear", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Sharpened Claws", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Natural Instinct", "why": "28 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Genesis", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Nature's Majesty", "why": "25 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+20.8% over the best hand draft of the spec, feral-cat-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (feral-cat-dps, full raid): 9/32/10 (Feral Combat) at 767.7 DPS; feral-combat-shifting-power-raid 754.3, opt-feral-cat-dps-raid-dps 642.6, feral-cat-dps 635.3 in the same fights; 4,174 builds simulated, 2 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): balance-dps -66.1%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Leader of the Pack.", "Simulator numbers are the community's model of the beta (wowsims/forever b90e2b9 (client 70707) with this project's patches), not in-game measurements.", "2026-10-31 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Leader of the Pack -> Feral Charge (interrupt). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Feral Combat build: check it against the community's Feral Combat builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/druid/60/050022-55000032023012125001-055-7"],
+      "replaces": "feral-cat-dps"
     }
   ]
 }

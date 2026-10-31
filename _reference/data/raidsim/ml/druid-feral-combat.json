@@ -14,9 +14,10 @@
   "bis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "date": "2026-10-26",
-   "chosen": "all-slots",
-   "ilvl": 63.5,
+   "date": "2026-10-31",
+   "setting": "raid",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 63.2,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
@@ -28,7 +29,7 @@
     "Earthweave Cloak",
     "Timbermaw Tunic",
     "Forest Stalker's Bracers",
-    "Theramore Gloves",
+    "Timbermaw Brawlers",
     "Shifter's Belt",
     "Warbear Woolies",
     "Dunestalker's Boots",
@@ -41,45 +42,44 @@
     "Idol of the Moon"
    ],
    "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0005933584208397,
-    "keep-sets-and-effects": 1.0005933584208397,
-    "previous": 1.0005933584208397
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.000045883006503
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.2936,
-    "StatAgility": 0.2863,
-    "StatArmorPenetration": 0.0259,
-    "StatAttackPower": 0.1234,
-    "StatCritRating": 0.2379,
-    "StatExpertiseRating": 0.1615,
-    "StatFeralAttackPower": 0.1234,
-    "StatHasteRating": 0.1276,
-    "StatHitRating": 0.166,
-    "StatIntellect": 0.1013,
-    "StatSpellPiercing": 0.0066,
-    "StatSpirit": 0.1001,
-    "StatStrength": 0.2714
+    "PseudoStatMainHandDps": 2.1261,
+    "StatAgility": 0.5883,
+    "StatArmorPenetration": 0.0715,
+    "StatAttackPower": 0.2245,
+    "StatCritRating": 0.448,
+    "StatExpertiseRating": 0.4119,
+    "StatFeralAttackPower": 0.2244,
+    "StatHasteRating": 0.235,
+    "StatHitRating": 0.4139,
+    "StatIntellect": 0.0005,
+    "StatSpellPiercing": 0.0063,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.5388
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner"
    ],
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   },
   "bis2": true,
   "prebis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "date": "2026-10-26",
-   "chosen": "previous",
-   "ilvl": 63.9,
+   "date": "2026-10-31",
+   "setting": "raid",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.8,
    "trinkets": [
     "Adaptive Combat Assistant",
-    "Molten Heart of the Mountain"
+    "Rune of the Guard Captain"
    ],
    "names": [
     "Darkmantle Cap",
@@ -88,46 +88,44 @@
     "Earthweave Cloak",
     "Timbermaw Tunic",
     "Forest Stalker's Bracers",
-    "Theramore Gloves",
+    "Timbermaw Brawlers",
     "Shifter's Belt",
     "Warbear Woolies",
     "Dunestalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Band of the Better Half",
+    "Don Julio's Band",
     "Adaptive Combat Assistant",
-    "Molten Heart of the Mountain",
+    "Rune of the Guard Captain",
     "Premier High Warlord's Razor",
     null,
     "Idol of the Moon"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0,
-    "previous": 1.0
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "previous": 1.0,
+    "keep-sets-and-effects": 1.0,
     "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.2898,
-    "StatAgility": 0.287,
-    "StatArmorPenetration": 0.0259,
-    "StatAttackPower": 0.1231,
-    "StatCritRating": 0.2352,
-    "StatExpertiseRating": 0.1851,
-    "StatFeralAttackPower": 0.1231,
-    "StatHasteRating": 0.13,
-    "StatHitRating": 0.1897,
-    "StatIntellect": 0.0733,
-    "StatSpellPiercing": 0.0065,
-    "StatSpirit": 0.071,
-    "StatStrength": 0.2708
+    "PseudoStatMainHandDps": 2.0578,
+    "StatAgility": 0.5702,
+    "StatArmorPenetration": 0.0684,
+    "StatAttackPower": 0.218,
+    "StatCritRating": 0.4357,
+    "StatExpertiseRating": 0.4032,
+    "StatFeralAttackPower": 0.218,
+    "StatHasteRating": 0.2339,
+    "StatHitRating": 0.4069,
+    "StatIntellect": 0.0004,
+    "StatSpellPiercing": 0.0057,
+    "StatStrength": 0.5232
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner (bis)"
    ],
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
  "search": {
@@ -638,14 +636,15 @@
    "simulated_fights": 4614000,
    "minutes": 5.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "30f67f5d2",
+   "sig_start": "2026-10-31: the stored winner is not legal on the current talent trees; the final step starts from the feral-cat-dps open-search winner (druid.json)"
   },
   "bis-dummy": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "dummy",
    "entry": "feral-cat-dps",
-   "date": "2026-10-26",
+   "date": "2026-10-31",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -661,501 +660,6 @@
       ],
       [
        "Nature's Majesty",
-       2
-      ],
-      [
-       "Nature's Reach",
-       2
-      ]
-     ],
-     "Feral Combat": [
-      [
-       "Heart of the Wild",
-       5
-      ],
-      [
-       "Feral Swiftness",
-       2
-      ],
-      [
-       "Feral Instinct",
-       1
-      ],
-      [
-       "Thick Hide",
-       2
-      ],
-      [
-       "Shredding Attacks",
-       3
-      ],
-      [
-       "Savage Fury",
-       2
-      ],
-      [
-       "Sharpened Claws",
-       2
-      ],
-      [
-       "Shifting Power",
-       1
-      ],
-      [
-       "Predatory Strikes",
-       3
-      ],
-      [
-       "Blood Frenzy",
-       2
-      ],
-      [
-       "Leader of the Pack",
-       1
-      ],
-      [
-       "Natural Instinct",
-       2
-      ],
-      [
-       "Rend and Tear",
-       5
-      ],
-      [
-       "Berserk",
-       1
-      ]
-     ],
-     "Restoration": [
-      [
-       "Nature's Focus",
-       1
-      ],
-      [
-       "Furor",
-       4
-      ],
-      [
-       "Naturalist",
-       4
-      ],
-      [
-       "Natural Shapeshifter",
-       1
-      ]
-     ]
-    },
-    "split": "9/32/10",
-    "dps": 373.13,
-    "se": 0.0437,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "9/32/10",
-    "dps": 373.13,
-    "se": 0.0437,
-    "differs": [
-     [
-      "Feral Swiftness",
-      2
-     ],
-     [
-      "Ferocity",
-      1
-     ],
-     [
-      "Thick Hide",
-      2
-     ],
-     [
-      "Thick Hide",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ]
-      ],
-      "Feral Combat": [
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Feral Swiftness",
-        2
-       ],
-       [
-        "Feral Instinct",
-        1
-       ],
-       [
-        "Thick Hide",
-        2
-       ],
-       [
-        "Shredding Attacks",
-        3
-       ],
-       [
-        "Savage Fury",
-        2
-       ],
-       [
-        "Sharpened Claws",
-        2
-       ],
-       [
-        "Shifting Power",
-        1
-       ],
-       [
-        "Predatory Strikes",
-        3
-       ],
-       [
-        "Blood Frenzy",
-        2
-       ],
-       [
-        "Leader of the Pack",
-        1
-       ],
-       [
-        "Natural Instinct",
-        2
-       ],
-       [
-        "Rend and Tear",
-        5
-       ],
-       [
-        "Berserk",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
-       ],
-       [
-        "Naturalist",
-        4
-       ],
-       [
-        "Natural Shapeshifter",
-        1
-       ]
-      ]
-     },
-     "split": "9/32/10",
-     "dps": 373.13,
-     "se": 0.0437
-    },
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ]
-      ],
-      "Feral Combat": [
-       [
-        "Ferocity",
-        1
-       ],
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Feral Instinct",
-        1
-       ],
-       [
-        "Thick Hide",
-        3
-       ],
-       [
-        "Shredding Attacks",
-        3
-       ],
-       [
-        "Savage Fury",
-        2
-       ],
-       [
-        "Sharpened Claws",
-        2
-       ],
-       [
-        "Shifting Power",
-        1
-       ],
-       [
-        "Predatory Strikes",
-        3
-       ],
-       [
-        "Blood Frenzy",
-        2
-       ],
-       [
-        "Leader of the Pack",
-        1
-       ],
-       [
-        "Natural Instinct",
-        2
-       ],
-       [
-        "Rend and Tear",
-        5
-       ],
-       [
-        "Berserk",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
-       ],
-       [
-        "Naturalist",
-        4
-       ],
-       [
-        "Natural Shapeshifter",
-        1
-       ]
-      ]
-     },
-     "split": "9/32/10",
-     "dps": 373.13,
-     "se": 0.0437
-    }
-   ],
-   "runs": [
-    {
-     "entry": "feral-cat-dps",
-     "run": 1,
-     "simulated": 1592,
-     "best_screen": 373.66,
-     "best_split": "9/32/10",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 392,
-       "best": 372.28
-      },
-      {
-       "round": 1,
-       "simulated": 592,
-       "best": 372.77,
-       "predicted_top": 368.27
-      },
-      {
-       "round": 2,
-       "simulated": 792,
-       "best": 372.77,
-       "predicted_top": 371.34
-      },
-      {
-       "round": 3,
-       "simulated": 992,
-       "best": 373.66,
-       "predicted_top": 372.2
-      },
-      {
-       "round": 4,
-       "simulated": 1192,
-       "best": 373.66,
-       "predicted_top": 373.15
-      },
-      {
-       "round": 5,
-       "simulated": 1392,
-       "best": 373.66,
-       "predicted_top": 373.56
-      },
-      {
-       "round": 6,
-       "simulated": 1592,
-       "best": 373.66,
-       "predicted_top": 373.62
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      372.99,
-      372.99,
-      372.99,
-      372.99,
-      372.99,
-      372.99
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      373.0,
-      373.0,
-      373.0,
-      373.0,
-      373.0
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      373.13,
-      373.13
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 305,
-     "best_gap": 0.0,
-     "best_move": "1 Feral Instinct -> Thick Hide"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Shifting Power",
-     "importance": 0.2973
-    },
-    {
-     "feature": "Rend and Tear",
-     "importance": 0.2721
-    },
-    {
-     "feature": "Shredding Attacks",
-     "importance": 0.0746
-    },
-    {
-     "feature": "Ferocity",
-     "importance": 0.0689
-    },
-    {
-     "feature": "Naturalist",
-     "importance": 0.0578
-    },
-    {
-     "feature": "Feral Charge",
-     "importance": 0.0333
-    },
-    {
-     "feature": "Blood Frenzy",
-     "importance": 0.0276
-    },
-    {
-     "feature": "Nature's Majesty",
-     "importance": 0.0246
-    },
-    {
-     "feature": "Feral Instinct",
-     "importance": 0.0212
-    },
-    {
-     "feature": "Berserk",
-     "importance": 0.0173
-    },
-    {
-     "feature": "Feral Combat points",
-     "importance": 0.014
-    },
-    {
-     "feature": "Balance points",
-     "importance": 0.0139
-    }
-   ],
-   "simulated_builds": 1911,
-   "signature_check": {
-    "spec": "Feral Combat",
-    "ok": true,
-    "core_share": 0.9831,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2920000,
-   "minutes": 12.5,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "bis-raid": {
-   "class": "druid",
-   "spec": "Feral Combat",
-   "setting": "raid",
-   "entry": "feral-cat-dps",
-   "date": "2026-10-26",
-   "constraint": "Feral Combat 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "feral-cat-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Balance": [
-      [
-       "Genesis",
-       5
-      ],
-      [
-       "Nature's Majesty",
-       2
-      ],
-      [
-       "Nature's Reach",
        2
       ]
      ],
@@ -1165,8 +669,16 @@
        5
       ],
       [
-       "Heart of the Wild",
-       5
+       "Furor",
+       2
+      ],
+      [
+       "Feral Instinct",
+       2
+      ],
+      [
+       "Thick Hide",
+       1
       ],
       [
        "Shredding Attacks",
@@ -1181,19 +693,15 @@
        2
       ],
       [
-       "Shifting Power",
-       1
-      ],
-      [
        "Predatory Strikes",
        3
       ],
       [
-       "Blood Frenzy",
+       "Predatory Discipline",
        1
       ],
       [
-       "Improved Shifting Power",
+       "Blood Frenzy",
        2
       ],
       [
@@ -1206,57 +714,57 @@
       ],
       [
        "Rend and Tear",
-       5
+       4
       ],
       [
-       "Berserk",
+       "Shifting Power",
        1
       ]
      ],
      "Restoration": [
       [
-       "Nature's Focus",
-       1
-      ],
-      [
-       "Furor",
-       4
+       "Heart of the Wild",
+       5
       ],
       [
        "Naturalist",
-       4
+       5
+      ],
+      [
+       "Natural Shapeshifter",
+       3
       ]
      ]
     },
-    "split": "9/33/9",
-    "dps": 753.93,
-    "se": 0.0719,
+    "split": "7/31/13",
+    "dps": 390.27,
+    "se": 0.0468,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "9/33/9",
-    "dps": 753.73,
-    "se": 0.0719,
+    "split": "7/32/12",
+    "dps": 388.44,
+    "se": 0.0482,
     "differs": [
      [
-      "Furor",
+      "Natural Shapeshifter",
+      2
+     ],
+     [
+      "Natural Shapeshifter",
       3
      ],
      [
-      "Furor",
+      "Rend and Tear",
       4
      ],
      [
-      "Nature's Focus",
-      1
-     ],
-     [
-      "Nature's Focus",
-      2
+      "Rend and Tear",
+      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0003,
+   "gap_to_runner_up": 0.0047,
    "finalists": [
     {
      "allocation": {
@@ -1268,10 +776,6 @@
        [
         "Nature's Majesty",
         2
-       ],
-       [
-        "Nature's Reach",
-        2
        ]
       ],
       "Feral Combat": [
@@ -1280,8 +784,16 @@
         5
        ],
        [
-        "Heart of the Wild",
-        5
+        "Furor",
+        2
+       ],
+       [
+        "Feral Instinct",
+        2
+       ],
+       [
+        "Thick Hide",
+        1
        ],
        [
         "Shredding Attacks",
@@ -1296,19 +808,15 @@
         2
        ],
        [
-        "Shifting Power",
-        1
-       ],
-       [
         "Predatory Strikes",
         3
        ],
        [
-        "Blood Frenzy",
+        "Predatory Discipline",
         1
        ],
        [
-        "Improved Shifting Power",
+        "Blood Frenzy",
         2
        ],
        [
@@ -1321,31 +829,31 @@
        ],
        [
         "Rend and Tear",
-        5
+        4
        ],
        [
-        "Berserk",
+        "Shifting Power",
         1
        ]
       ],
       "Restoration": [
        [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
+        "Heart of the Wild",
+        5
        ],
        [
         "Naturalist",
-        4
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        3
        ]
       ]
      },
-     "split": "9/33/9",
-     "dps": 753.93,
-     "se": 0.0719
+     "split": "7/31/13",
+     "dps": 390.27,
+     "se": 0.0468
     },
     {
      "allocation": {
@@ -1357,10 +865,6 @@
        [
         "Nature's Majesty",
         2
-       ],
-       [
-        "Nature's Reach",
-        2
        ]
       ],
       "Feral Combat": [
@@ -1369,8 +873,16 @@
         5
        ],
        [
-        "Heart of the Wild",
-        5
+        "Furor",
+        2
+       ],
+       [
+        "Feral Instinct",
+        2
+       ],
+       [
+        "Thick Hide",
+        1
        ],
        [
         "Shredding Attacks",
@@ -1385,19 +897,15 @@
         2
        ],
        [
-        "Shifting Power",
-        1
-       ],
-       [
         "Predatory Strikes",
         3
        ],
        [
-        "Blood Frenzy",
+        "Predatory Discipline",
         1
        ],
        [
-        "Improved Shifting Power",
+        "Blood Frenzy",
         2
        ],
        [
@@ -1413,28 +921,28 @@
         5
        ],
        [
-        "Berserk",
+        "Shifting Power",
         1
        ]
       ],
       "Restoration": [
        [
-        "Nature's Focus",
-        2
-       ],
-       [
-        "Furor",
-        3
+        "Heart of the Wild",
+        5
        ],
        [
         "Naturalist",
-        4
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        2
        ]
       ]
      },
-     "split": "9/33/9",
-     "dps": 753.73,
-     "se": 0.0719
+     "split": "7/32/12",
+     "dps": 388.44,
+     "se": 0.0482
     }
    ],
    "runs": [
@@ -1442,43 +950,43 @@
      "entry": "feral-cat-dps",
      "run": 1,
      "simulated": 1389,
-     "best_screen": 754.41,
-     "best_split": "9/33/9",
+     "best_screen": 388.74,
+     "best_split": "7/32/12",
      "trace": [
       {
        "round": 0,
        "simulated": 389,
-       "best": 752.46
+       "best": 387.8
       },
       {
        "round": 1,
        "simulated": 589,
-       "best": 754.03,
-       "predicted_top": 740.31
+       "best": 388.74,
+       "predicted_top": 381.41
       },
       {
        "round": 2,
        "simulated": 789,
-       "best": 754.41,
-       "predicted_top": 746.97
+       "best": 388.74,
+       "predicted_top": 385.75
       },
       {
        "round": 3,
        "simulated": 989,
-       "best": 754.41,
-       "predicted_top": 750.24
+       "best": 388.74,
+       "predicted_top": 387.11
       },
       {
        "round": 4,
        "simulated": 1189,
-       "best": 754.41,
-       "predicted_top": 750.83
+       "best": 388.74,
+       "predicted_top": 388.17
       },
       {
        "round": 5,
        "simulated": 1389,
-       "best": 754.41,
-       "predicted_top": 751.16
+       "best": 388.74,
+       "predicted_top": 388.67
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1491,584 +999,131 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      754.51,
-      754.06,
-      753.49,
-      753.21,
-      752.96,
-      752.28
+      388.55,
+      388.55,
+      388.55,
+      388.55,
+      388.55,
+      388.55
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      753.92,
-      753.87,
-      753.36,
-      753.15,
-      752.91
+      388.51,
+      388.51,
+      388.51,
+      388.51,
+      388.51
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      753.93,
-      753.73
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 555,
-     "best_gap": 0.0006,
-     "best_move": "1 Nature's Focus -> Furor"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Shifting Power",
-     "importance": 0.3125
-    },
-    {
-     "feature": "Shifting Power",
-     "importance": 0.2048
-    },
-    {
-     "feature": "Rend and Tear",
-     "importance": 0.1283
-    },
-    {
-     "feature": "Thick Hide",
-     "importance": 0.0967
-    },
-    {
-     "feature": "Feral Instinct",
-     "importance": 0.0534
-    },
-    {
-     "feature": "Nature's Majesty",
-     "importance": 0.032
-    },
-    {
-     "feature": "Naturalist",
-     "importance": 0.0292
-    },
-    {
-     "feature": "Brutal Impact",
-     "importance": 0.0286
-    },
-    {
-     "feature": "Feral Swiftness",
-     "importance": 0.0165
-    },
-    {
-     "feature": "Berserk",
-     "importance": 0.0165
-    },
-    {
-     "feature": "Feral Combat points",
-     "importance": 0.012
-    },
-    {
-     "feature": "Shredding Attacks",
-     "importance": 0.0089
-    }
-   ],
-   "simulated_builds": 1958,
-   "signature_check": {
-    "spec": "Feral Combat",
-    "ok": true,
-    "core_share": 0.9908,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 3467000,
-   "minutes": 16.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "prebis-dummy": {
-   "class": "druid",
-   "spec": "Feral Combat",
-   "setting": "dummy",
-   "entry": "feral-cat-dps",
-   "date": "2026-10-26",
-   "constraint": "Feral Combat 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "feral-cat-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Balance": [
-      [
-       "Genesis",
-       5
-      ],
-      [
-       "Nature's Majesty",
-       2
-      ],
-      [
-       "Nature's Reach",
-       2
-      ]
-     ],
-     "Feral Combat": [
-      [
-       "Heart of the Wild",
-       5
-      ],
-      [
-       "Feral Swiftness",
-       2
-      ],
-      [
-       "Feral Instinct",
-       1
-      ],
-      [
-       "Thick Hide",
-       2
-      ],
-      [
-       "Shredding Attacks",
-       3
-      ],
-      [
-       "Savage Fury",
-       2
-      ],
-      [
-       "Sharpened Claws",
-       2
-      ],
-      [
-       "Shifting Power",
-       1
-      ],
-      [
-       "Predatory Strikes",
-       3
-      ],
-      [
-       "Blood Frenzy",
-       2
-      ],
-      [
-       "Leader of the Pack",
-       1
-      ],
-      [
-       "Natural Instinct",
-       2
-      ],
-      [
-       "Rend and Tear",
-       5
-      ],
-      [
-       "Berserk",
-       1
-      ]
-     ],
-     "Restoration": [
-      [
-       "Nature's Focus",
-       1
-      ],
-      [
-       "Furor",
-       4
-      ],
-      [
-       "Naturalist",
-       4
-      ],
-      [
-       "Natural Shapeshifter",
-       1
-      ]
-     ]
-    },
-    "split": "9/32/10",
-    "dps": 371.49,
-    "se": 0.0435,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "9/32/10",
-    "dps": 371.49,
-    "se": 0.0435,
-    "differs": [
-     [
-      "Feral Instinct",
-      1
-     ],
-     [
-      "Ferocity",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ]
-      ],
-      "Feral Combat": [
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Feral Swiftness",
-        2
-       ],
-       [
-        "Feral Instinct",
-        1
-       ],
-       [
-        "Thick Hide",
-        2
-       ],
-       [
-        "Shredding Attacks",
-        3
-       ],
-       [
-        "Savage Fury",
-        2
-       ],
-       [
-        "Sharpened Claws",
-        2
-       ],
-       [
-        "Shifting Power",
-        1
-       ],
-       [
-        "Predatory Strikes",
-        3
-       ],
-       [
-        "Blood Frenzy",
-        2
-       ],
-       [
-        "Leader of the Pack",
-        1
-       ],
-       [
-        "Natural Instinct",
-        2
-       ],
-       [
-        "Rend and Tear",
-        5
-       ],
-       [
-        "Berserk",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
-       ],
-       [
-        "Naturalist",
-        4
-       ],
-       [
-        "Natural Shapeshifter",
-        1
-       ]
-      ]
-     },
-     "split": "9/32/10",
-     "dps": 371.49,
-     "se": 0.0435
-    },
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ]
-      ],
-      "Feral Combat": [
-       [
-        "Ferocity",
-        1
-       ],
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Feral Swiftness",
-        2
-       ],
-       [
-        "Thick Hide",
-        2
-       ],
-       [
-        "Shredding Attacks",
-        3
-       ],
-       [
-        "Savage Fury",
-        2
-       ],
-       [
-        "Sharpened Claws",
-        2
-       ],
-       [
-        "Shifting Power",
-        1
-       ],
-       [
-        "Predatory Strikes",
-        3
-       ],
-       [
-        "Blood Frenzy",
-        2
-       ],
-       [
-        "Leader of the Pack",
-        1
-       ],
-       [
-        "Natural Instinct",
-        2
-       ],
-       [
-        "Rend and Tear",
-        5
-       ],
-       [
-        "Berserk",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
-       ],
-       [
-        "Naturalist",
-        4
-       ],
-       [
-        "Natural Shapeshifter",
-        1
-       ]
-      ]
-     },
-     "split": "9/32/10",
-     "dps": 371.49,
-     "se": 0.0435
-    }
-   ],
-   "runs": [
-    {
-     "entry": "feral-cat-dps",
-     "run": 1,
-     "simulated": 1188,
-     "best_screen": 371.65,
-     "best_split": "9/32/10",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 388,
-       "best": 371.65
-      },
-      {
-       "round": 1,
-       "simulated": 588,
-       "best": 371.65,
-       "predicted_top": 365.91
-      },
-      {
-       "round": 2,
-       "simulated": 788,
-       "best": 371.65,
-       "predicted_top": 369.54
-      },
-      {
-       "round": 3,
-       "simulated": 988,
-       "best": 371.65,
-       "predicted_top": 370.57
-      },
-      {
-       "round": 4,
-       "simulated": 1188,
-       "best": 371.65,
-       "predicted_top": 371.23
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      371.44,
-      371.44,
-      371.44,
-      371.44,
-      371.44,
-      371.44
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      371.43,
-      371.43,
-      371.43,
-      371.43,
-      371.43
+      388.44,
+      388.44
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      371.49,
-      371.49
+      390.27,
+      388.44
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 305,
+     "neighbours": 333,
+     "best_gap": 0.0051,
+     "best_move": "1 Rend and Tear -> Natural Shapeshifter",
+     "raced": [
+      "1 Rend and Tear -> Natural Shapeshifter",
+      "1 Savage Fury -> Natural Shapeshifter"
+     ],
+     "confirmed_gap": 0.0045
+    },
+    {
+     "neighbours": 263,
      "best_gap": 0.0,
-     "best_move": "2 Thick Hide -> Brutal Impact"
+     "best_move": "2 Feral Instinct -> Thick Hide"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shifting Power",
-     "importance": 0.3008
-    },
-    {
-     "feature": "Ferocity",
-     "importance": 0.195
-    },
-    {
-     "feature": "Rend and Tear",
-     "importance": 0.1653
-    },
-    {
-     "feature": "Shredding Attacks",
-     "importance": 0.0568
+     "importance": 0.3496
     },
     {
      "feature": "Naturalist",
-     "importance": 0.0495
+     "importance": 0.2052
     },
     {
-     "feature": "Blood Frenzy",
-     "importance": 0.0464
-    },
-    {
-     "feature": "Berserk",
-     "importance": 0.0234
+     "feature": "Rend and Tear",
+     "importance": 0.1818
     },
     {
      "feature": "Brutal Impact",
-     "importance": 0.0228
+     "importance": 0.0421
     },
     {
      "feature": "Nature's Majesty",
-     "importance": 0.0161
+     "importance": 0.0277
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.0267
     },
     {
      "feature": "Feral Charge",
-     "importance": 0.016
+     "importance": 0.026
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0176
     },
     {
      "feature": "Feral Instinct",
-     "importance": 0.0155
+     "importance": 0.0164
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0126
+     "importance": 0.0146
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0131
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0107
     }
    ],
-   "simulated_builds": 1507,
+   "simulated_builds": 2004,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
-    "core_share": 0.9833,
+    "core_share": 0.9827,
     "min_share": 0.8,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2516000,
-   "minutes": 8.6,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "commit": "30f67f5d2"
+   "simulated_fights": 3783000,
+   "minutes": 8.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
+   "commit": "b90e2b958"
   },
-  "prebis-raid": {
+  "bis-raid": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "raid",
    "entry": "feral-cat-dps",
-   "date": "2026-10-26",
+   "date": "2026-10-31",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -2097,8 +1152,12 @@
        5
       ],
       [
-       "Heart of the Wild",
-       5
+       "Furor",
+       3
+      ],
+      [
+       "Feral Instinct",
+       2
       ],
       [
        "Shredding Attacks",
@@ -2113,24 +1172,16 @@
        2
       ],
       [
-       "Shifting Power",
-       1
-      ],
-      [
        "Predatory Strikes",
        3
       ],
       [
+       "Predatory Discipline",
+       1
+      ],
+      [
        "Blood Frenzy",
-       1
-      ],
-      [
-       "Improved Shifting Power",
        2
-      ],
-      [
-       "Leader of the Pack",
-       1
       ],
       [
        "Natural Instinct",
@@ -2141,46 +1192,50 @@
        5
       ],
       [
-       "Berserk",
+       "Shifting Power",
        1
       ]
      ],
      "Restoration": [
       [
-       "Furor",
+       "Heart of the Wild",
        5
       ],
       [
        "Naturalist",
-       4
+       5
+      ],
+      [
+       "Natural Shapeshifter",
+       1
       ]
      ]
     },
-    "split": "9/33/9",
-    "dps": 753.38,
-    "se": 0.072,
+    "split": "9/31/11",
+    "dps": 792.24,
+    "se": 0.0775,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "9/33/9",
-    "dps": 752.95,
-    "se": 0.0718,
+    "split": "9/31/11",
+    "dps": 792.24,
+    "se": 0.0775,
     "differs": [
      [
-      "Furor",
-      4
+      "Feral Instinct",
+      1
      ],
      [
-      "Furor",
-      5
+      "Feral Instinct",
+      2
      ],
      [
-      "Nature's Focus",
+      "Feral Swiftness",
       1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0006,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
@@ -2204,8 +1259,12 @@
         5
        ],
        [
-        "Heart of the Wild",
-        5
+        "Furor",
+        3
+       ],
+       [
+        "Feral Instinct",
+        2
        ],
        [
         "Shredding Attacks",
@@ -2220,24 +1279,16 @@
         2
        ],
        [
-        "Shifting Power",
-        1
-       ],
-       [
         "Predatory Strikes",
         3
        ],
        [
+        "Predatory Discipline",
+        1
+       ],
+       [
         "Blood Frenzy",
-        1
-       ],
-       [
-        "Improved Shifting Power",
         2
-       ],
-       [
-        "Leader of the Pack",
-        1
        ],
        [
         "Natural Instinct",
@@ -2248,24 +1299,28 @@
         5
        ],
        [
-        "Berserk",
+        "Shifting Power",
         1
        ]
       ],
       "Restoration": [
        [
-        "Furor",
+        "Heart of the Wild",
         5
        ],
        [
         "Naturalist",
-        4
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        1
        ]
       ]
      },
-     "split": "9/33/9",
-     "dps": 753.38,
-     "se": 0.072
+     "split": "9/31/11",
+     "dps": 792.24,
+     "se": 0.0775
     },
     {
      "allocation": {
@@ -2289,7 +1344,893 @@
         5
        ],
        [
+        "Furor",
+        3
+       ],
+       [
+        "Feral Swiftness",
+        1
+       ],
+       [
+        "Feral Instinct",
+        1
+       ],
+       [
+        "Shredding Attacks",
+        3
+       ],
+       [
+        "Savage Fury",
+        2
+       ],
+       [
+        "Sharpened Claws",
+        2
+       ],
+       [
+        "Predatory Strikes",
+        3
+       ],
+       [
+        "Predatory Discipline",
+        1
+       ],
+       [
+        "Blood Frenzy",
+        2
+       ],
+       [
+        "Natural Instinct",
+        2
+       ],
+       [
+        "Rend and Tear",
+        5
+       ],
+       [
+        "Shifting Power",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
         "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        1
+       ]
+      ]
+     },
+     "split": "9/31/11",
+     "dps": 792.24,
+     "se": 0.0775
+    }
+   ],
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1198,
+     "best_screen": 793.33,
+     "best_split": "9/31/11",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 398,
+       "best": 792.54
+      },
+      {
+       "round": 1,
+       "simulated": 598,
+       "best": 792.73,
+       "predicted_top": 785.22
+      },
+      {
+       "round": 2,
+       "simulated": 798,
+       "best": 793.08,
+       "predicted_top": 791.08
+      },
+      {
+       "round": 3,
+       "simulated": 998,
+       "best": 793.33,
+       "predicted_top": 792.44
+      },
+      {
+       "round": 4,
+       "simulated": 1198,
+       "best": 793.33,
+       "predicted_top": 793.06
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      792.06,
+      792.06,
+      792.06,
+      792.06,
+      792.06,
+      792.06
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      792.09,
+      792.09,
+      792.09,
+      792.09,
+      792.09
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      792.24,
+      792.24
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 294,
+     "best_gap": 0.0,
+     "best_move": "1 Natural Shapeshifter -> Reflection"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Shifting Power",
+     "importance": 0.3837
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.2065
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.1263
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0644
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0333
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.0303
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0262
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.0187
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0162
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0147
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0139
+    },
+    {
+     "feature": "Nature's Focus",
+     "importance": 0.0101
+    }
+   ],
+   "simulated_builds": 1506,
+   "signature_check": {
+    "spec": "Feral Combat",
+    "ok": true,
+    "core_share": 0.9924,
+    "min_share": 0.8,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2493000,
+   "minutes": 9.2,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "prebis-dummy": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "dummy",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-31",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Furor",
+       2
+      ],
+      [
+       "Feral Instinct",
+       2
+      ],
+      [
+       "Thick Hide",
+       1
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Predatory Discipline",
+       1
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Rend and Tear",
+       4
+      ],
+      [
+       "Shifting Power",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Natural Shapeshifter",
+       3
+      ]
+     ]
+    },
+    "split": "7/31/13",
+    "dps": 388.57,
+    "se": 0.0464,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/31/13",
+    "dps": 388.57,
+    "se": 0.0464,
+    "differs": [
+     [
+      "Ferocity",
+      4
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Thick Hide",
+      1
+     ],
+     [
+      "Thick Hide",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ]
+      ],
+      "Feral Combat": [
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Furor",
+        2
+       ],
+       [
+        "Feral Instinct",
+        2
+       ],
+       [
+        "Thick Hide",
+        1
+       ],
+       [
+        "Shredding Attacks",
+        3
+       ],
+       [
+        "Savage Fury",
+        2
+       ],
+       [
+        "Sharpened Claws",
+        2
+       ],
+       [
+        "Predatory Strikes",
+        3
+       ],
+       [
+        "Predatory Discipline",
+        1
+       ],
+       [
+        "Blood Frenzy",
+        2
+       ],
+       [
+        "Leader of the Pack",
+        1
+       ],
+       [
+        "Natural Instinct",
+        2
+       ],
+       [
+        "Rend and Tear",
+        4
+       ],
+       [
+        "Shifting Power",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        3
+       ]
+      ]
+     },
+     "split": "7/31/13",
+     "dps": 388.57,
+     "se": 0.0464
+    },
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ]
+      ],
+      "Feral Combat": [
+       [
+        "Ferocity",
+        4
+       ],
+       [
+        "Furor",
+        2
+       ],
+       [
+        "Feral Instinct",
+        2
+       ],
+       [
+        "Thick Hide",
+        2
+       ],
+       [
+        "Shredding Attacks",
+        3
+       ],
+       [
+        "Savage Fury",
+        2
+       ],
+       [
+        "Sharpened Claws",
+        2
+       ],
+       [
+        "Predatory Strikes",
+        3
+       ],
+       [
+        "Predatory Discipline",
+        1
+       ],
+       [
+        "Blood Frenzy",
+        2
+       ],
+       [
+        "Leader of the Pack",
+        1
+       ],
+       [
+        "Natural Instinct",
+        2
+       ],
+       [
+        "Rend and Tear",
+        4
+       ],
+       [
+        "Shifting Power",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ],
+       [
+        "Natural Shapeshifter",
+        3
+       ]
+      ]
+     },
+     "split": "7/31/13",
+     "dps": 388.57,
+     "se": 0.0464
+    }
+   ],
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 389.02,
+     "best_split": "7/31/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 389.02
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 389.02,
+       "predicted_top": 381.88
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 389.02,
+       "predicted_top": 385.66
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 389.02,
+       "predicted_top": 387.99
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 389.02,
+       "predicted_top": 388.99
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      388.44,
+      388.44,
+      388.44,
+      388.44,
+      388.44,
+      388.44
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      388.44,
+      388.44,
+      388.44,
+      388.44,
+      388.44
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      388.57,
+      388.57
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 263,
+     "best_gap": 0.0,
+     "best_move": "1 Thick Hide -> Brutal Impact"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Naturalist",
+     "importance": 0.3279
+    },
+    {
+     "feature": "Shifting Power",
+     "importance": 0.2867
+    },
+    {
+     "feature": "Furor",
+     "importance": 0.071
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.0622
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0313
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.029
+    },
+    {
+     "feature": "Feral Charge",
+     "importance": 0.0239
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0235
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0214
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0197
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.0124
+    }
+   ],
+   "simulated_builds": 1477,
+   "signature_check": {
+    "spec": "Feral Combat",
+    "ok": true,
+    "core_share": 0.9827,
+    "min_share": 0.8,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2402000,
+   "minutes": 6.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "prebis-raid": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "raid",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-31",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Predatory Discipline",
+       1
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Shifting Power",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ]
+     ]
+    },
+    "split": "9/32/10",
+    "dps": 790.53,
+    "se": 0.0766,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/32/10",
+    "dps": 790.53,
+    "se": 0.0766,
+    "differs": [
+     [
+      "Feral Charge",
+      1
+     ],
+     [
+      "Natural Reaction",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ],
+       [
+        "Nature's Reach",
+        2
+       ]
+      ],
+      "Feral Combat": [
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Furor",
+        5
+       ],
+       [
+        "Shredding Attacks",
+        3
+       ],
+       [
+        "Savage Fury",
+        2
+       ],
+       [
+        "Feral Charge",
+        1
+       ],
+       [
+        "Sharpened Claws",
+        2
+       ],
+       [
+        "Predatory Strikes",
+        3
+       ],
+       [
+        "Predatory Discipline",
+        1
+       ],
+       [
+        "Blood Frenzy",
+        2
+       ],
+       [
+        "Natural Instinct",
+        2
+       ],
+       [
+        "Rend and Tear",
+        5
+       ],
+       [
+        "Shifting Power",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ]
+      ]
+     },
+     "split": "9/32/10",
+     "dps": 790.53,
+     "se": 0.0766
+    },
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ],
+       [
+        "Nature's Reach",
+        2
+       ]
+      ],
+      "Feral Combat": [
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Furor",
         5
        ],
        [
@@ -2305,24 +2246,16 @@
         2
        ],
        [
-        "Shifting Power",
-        1
-       ],
-       [
         "Predatory Strikes",
         3
        ],
        [
+        "Predatory Discipline",
+        1
+       ],
+       [
         "Blood Frenzy",
-        1
-       ],
-       [
-        "Improved Shifting Power",
         2
-       ],
-       [
-        "Leader of the Pack",
-        1
        ],
        [
         "Natural Instinct",
@@ -2333,66 +2266,66 @@
         5
        ],
        [
-        "Berserk",
+        "Natural Reaction",
+        1
+       ],
+       [
+        "Shifting Power",
         1
        ]
       ],
       "Restoration": [
        [
-        "Nature's Focus",
-        1
-       ],
-       [
-        "Furor",
-        4
+        "Heart of the Wild",
+        5
        ],
        [
         "Naturalist",
-        4
+        5
        ]
       ]
      },
-     "split": "9/33/9",
-     "dps": 752.95,
-     "se": 0.0718
+     "split": "9/32/10",
+     "dps": 790.53,
+     "se": 0.0766
     }
    ],
    "runs": [
     {
      "entry": "feral-cat-dps",
      "run": 1,
-     "simulated": 1181,
-     "best_screen": 752.99,
-     "best_split": "9/33/9",
+     "simulated": 1197,
+     "best_screen": 790.45,
+     "best_split": "9/32/10",
      "trace": [
       {
        "round": 0,
-       "simulated": 381,
-       "best": 752.99
+       "simulated": 397,
+       "best": 790.45
       },
       {
        "round": 1,
-       "simulated": 581,
-       "best": 752.99,
-       "predicted_top": 746.15
+       "simulated": 597,
+       "best": 790.45,
+       "predicted_top": 783.67
       },
       {
        "round": 2,
-       "simulated": 781,
-       "best": 752.99,
-       "predicted_top": 747.37
+       "simulated": 797,
+       "best": 790.45,
+       "predicted_top": 788.46
       },
       {
        "round": 3,
-       "simulated": 981,
-       "best": 752.99,
-       "predicted_top": 749.42
+       "simulated": 997,
+       "best": 790.45,
+       "predicted_top": 789.98
       },
       {
        "round": 4,
-       "simulated": 1181,
-       "best": 752.99,
-       "predicted_top": 750.66
+       "simulated": 1197,
+       "best": 790.45,
+       "predicted_top": 790.17
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2405,93 +2338,93 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      753.65,
-      753.23,
-      753.1,
-      752.27,
-      751.95,
-      751.23
+      790.51,
+      790.51,
+      790.51,
+      790.51,
+      790.51,
+      790.51
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      753.48,
-      753.12,
-      752.86,
-      752.05,
-      751.96
+      790.7,
+      790.7,
+      790.7,
+      790.7,
+      790.7
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      753.38,
-      752.95
+      790.53,
+      790.53
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 498,
-     "best_gap": -0.0001,
-     "best_move": "1 Furor -> Nature's Focus"
+     "neighbours": 334,
+     "best_gap": 0.0001,
+     "best_move": "1 Feral Charge -> Reflection"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Improved Shifting Power",
-     "importance": 0.4015
-    },
-    {
      "feature": "Shifting Power",
-     "importance": 0.1784
-    },
-    {
-     "feature": "Rend and Tear",
-     "importance": 0.1482
-    },
-    {
-     "feature": "Feral Instinct",
-     "importance": 0.0445
-    },
-    {
-     "feature": "Thick Hide",
-     "importance": 0.0419
-    },
-    {
-     "feature": "Feral Charge",
-     "importance": 0.0306
+     "importance": 0.4224
     },
     {
      "feature": "Naturalist",
-     "importance": 0.0225
+     "importance": 0.2216
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.1095
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0455
     },
     {
      "feature": "Brutal Impact",
-     "importance": 0.0186
+     "importance": 0.0323
     },
     {
-     "feature": "Nature's Majesty",
-     "importance": 0.0147
+     "feature": "Feral Instinct",
+     "importance": 0.0295
     },
     {
      "feature": "Feral Swiftness",
-     "importance": 0.0126
+     "importance": 0.0227
     },
     {
-     "feature": "Berserk",
-     "importance": 0.01
+     "feature": "Feral Combat points",
+     "importance": 0.0224
     },
     {
-     "feature": "Balance points",
-     "importance": 0.01
+     "feature": "Heart of the Wild",
+     "importance": 0.0107
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.009
+    },
+    {
+     "feature": "Nature's Reach",
+     "importance": 0.0084
+    },
+    {
+     "feature": "Genesis",
+     "importance": 0.0079
     }
    ],
-   "simulated_builds": 1693,
+   "simulated_builds": 1545,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
@@ -2501,13 +2434,13 @@
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 3088000,
-   "minutes": 13.8,
+   "simulated_fights": 2612000,
+   "minutes": 10.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
- "commit": "30f67f5d2",
+ "commit": "b90e2b958",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2517,185 +2450,22 @@
   "dps": {
    "winner": {
     "entry": "feral-cat-dps",
-    "dps": 373.04,
-    "se": 0.044
+    "dps": 390.23,
+    "se": 0.047
    },
    "feral-cat-dps": {
     "entry": "feral-cat-dps",
-    "dps": 324.88,
-    "se": 0.044
+    "dps": 339.51,
+    "se": 0.049
    },
    "feral-combat-shifting-power-raid": {
     "entry": "feral-cat-dps",
-    "dps": 360.39,
-    "se": 0.043
+    "dps": 381.18,
+    "se": 0.047
    }
   },
   "best_hand": "feral-cat-dps",
-  "gain_vs_hand": 0.1482,
-  "commit": "30f67f5d2"
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "feral-cat-dps",
-    "dps": 753.97,
-    "se": 0.072
-   },
-   "feral-cat-dps": {
-    "entry": "feral-cat-dps",
-    "dps": 630.56,
-    "se": 0.071
-   },
-   "feral-combat-open-raid": {
-    "entry": "feral-cat-dps",
-    "dps": 754.47,
-    "se": 0.072
-   },
-   "feral-combat-shifting-power-raid": {
-    "entry": "feral-cat-dps",
-    "dps": 743.93,
-    "se": 0.071
-   },
-   "opt-feral-cat-dps-raid-dps": {
-    "entry": "feral-cat-dps",
-    "dps": 643.82,
-    "se": 0.074
-   }
-  },
-  "best_hand": "feral-cat-dps",
-  "gain_vs_hand": 0.1957
- },
- "signature_check": {
-  "spec": "Feral Combat",
-  "ok": true,
-  "core_share": 0.9908,
-  "min_share": 0.8,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "feral-cat-dps",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 753.7,
-  "date": "2026-10-29",
-  "commit": "30f67f5d2",
-  "shares": {
-   "Auto Attack": 0.3672,
-   "Shred": 0.2423,
-   "Rip": 0.2371,
-   "Rake": 0.1365,
-   "Ferocious Bite": 0.0077,
-   "Goblin Sapper Charge": 0.0074,
-   "Demonic Rune": 0.0018
-  },
-  "casts": {
-   "Cat Form": 1.62,
-   "Shifting Power": 22.15,
-   "Faerie Fire": 1.0,
-   "Shred": 48.08,
-   "Ferocious Bite": 0.79,
-   "Rake": 18.56,
-   "Rip": 14.15,
-   "Berserk": 1.0
-  },
-  "allocation": {
-   "Balance": [
-    [
-     "Genesis",
-     5
-    ],
-    [
-     "Nature's Majesty",
-     2
-    ],
-    [
-     "Nature's Reach",
-     2
-    ]
-   ],
-   "Feral Combat": [
-    [
-     "Ferocity",
-     5
-    ],
-    [
-     "Heart of the Wild",
-     5
-    ],
-    [
-     "Shredding Attacks",
-     3
-    ],
-    [
-     "Savage Fury",
-     2
-    ],
-    [
-     "Sharpened Claws",
-     2
-    ],
-    [
-     "Shifting Power",
-     1
-    ],
-    [
-     "Predatory Strikes",
-     3
-    ],
-    [
-     "Blood Frenzy",
-     1
-    ],
-    [
-     "Improved Shifting Power",
-     2
-    ],
-    [
-     "Leader of the Pack",
-     1
-    ],
-    [
-     "Natural Instinct",
-     2
-    ],
-    [
-     "Rend and Tear",
-     5
-    ],
-    [
-     "Berserk",
-     1
-    ]
-   ],
-   "Restoration": [
-    [
-     "Nature's Focus",
-     1
-    ],
-    [
-     "Furor",
-     4
-    ],
-    [
-     "Naturalist",
-     4
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-29",
-  "setting": "raid",
-  "why": "confirms feral-combat-open-raid (-0.07% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "gain_vs_hand": 0.1494,
+  "commit": "b90e2b958"
  }
 }

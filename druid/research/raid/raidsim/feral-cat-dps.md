@@ -4,14 +4,14 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `feral-combat-open-raid` | 9/32/10 | 376 | 15 | +0.0% | 267 | 61 | +84.7% |
-| feral-combat-shifting-power-raid | 9/33/9 | 369 | 15 | -1.8% | 262 | 61 | +82.9% |
-| sim preset: Cat | - | 352 | 13 | -6.2% | 250 | 62 | - |
-| sim preset: Hybrid | - | 341 | 14 | -9.1% | 242 | 61 | - |
-| `opt-feral-cat-dps-raid-dps` | 9/30/12 | 335 | 15 | -10.9% | 238 | 0 | +87.2% |
-| `feral-cat-dps` | 9/32/10 | 328 | 15 | -12.6% | 233 | 0 | +81.0% |
+| feral-combat-shifting-power-raid | 9/33/9 | 369 | 15 | +0.0% | 262 | 61 | +82.9% |
+| `feral-combat-open-raid` | 9/32/10 | 365 | 15 | -1.1% | 259 | 61 | +79.8% |
+| sim preset: Cat | - | 352 | 13 | -4.4% | 250 | 62 | - |
+| sim preset: Hybrid | - | 341 | 14 | -7.4% | 242 | 61 | - |
+| `opt-feral-cat-dps-raid-dps` | 9/30/12 | 335 | 15 | -9.3% | 238 | 0 | +87.2% |
+| `feral-cat-dps` | 9/32/10 | 328 | 15 | -11.0% | 233 | 0 | +81.0% |
 
-## Damage shares (`feral-combat-open-raid`, simulator actions)
+## Damage shares (`feral-combat-shifting-power-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
@@ -25,8 +25,8 @@ Mapped onto the spec model's sources: `rip` 40%, `white` 30%, `shred` 30%; 2% of
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- feral-combat-open-raid: `050022-55000032023012125001-055`
 - feral-combat-shifting-power-raid: `050022-55000032123012125001-054`
+- feral-combat-open-raid: `050022-55000032123012025001-055`
 - sim preset: Cat: `050022-35200032123010125011-055`
 - sim preset: Hybrid: `050022-50220332123112125011-05`
 - opt-feral-cat-dps-raid-dps: `050022-25000332023002125-0552`

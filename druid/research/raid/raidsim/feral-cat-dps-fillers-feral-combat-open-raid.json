@@ -3,35 +3,47 @@
  "spec": "feral-cat-dps",
  "build": "feral-combat-open-raid",
  "setting": "raid",
- "date": "2026-10-26",
+ "date": "2026-10-31",
  "tank": false,
  "removal": {
-  "Berserk": 0.01943179326040334,
-  "Blood Frenzy": 0.01287131512706019,
-  "Ferocity": 0.013685939479418652,
-  "Furor": 0.005458182396472,
-  "Genesis": 0.016437230676047965,
-  "Heart of the Wild": 0.02188500361287915,
-  "Improved Shifting Power": 0.0751654572801782,
-  "Leader of the Pack": 0.0226763573176485,
-  "Natural Instinct": 0.03885216150359938,
-  "Naturalist": 0.037123189712192195,
-  "Nature's Majesty": 0.029878007164506615,
-  "Nature's Reach": 0.023776759365077837,
-  "Predatory Strikes": 0.025574776191792492,
-  "Rend and Tear": 0.05413811063920315,
-  "Savage Fury": 0.0336736683918738,
-  "Sharpened Claws": 0.0451382819459859,
-  "Shifting Power": 0.16568798310881216,
-  "Shredding Attacks": 0.0953244916680347
+  "Blood Frenzy": 0.017110705144732674,
+  "Ferocity": 0.012336799041051227,
+  "Furor": 0.003951483391799959,
+  "Genesis": 0.03276302043583945,
+  "Heart of the Wild": 0.02179291830512675,
+  "Leader of the Pack": -0.0,
+  "Natural Instinct": 0.03626193173101688,
+  "Naturalist": 0.0878832324008697,
+  "Nature's Majesty": 0.032833676529509304,
+  "Nature's Reach": 0.021208094572501168,
+  "Predatory Discipline": 0.0018073429842438982,
+  "Predatory Strikes": 0.026158310375942517,
+  "Rend and Tear": 0.05457189746678082,
+  "Savage Fury": 0.03254642494449633,
+  "Sharpened Claws": 0.04924415828729023,
+  "Shifting Power": 0.15515263901011223,
+  "Shredding Attacks": 0.08284501759005414
  },
- "free": [],
+ "free": [
+  "Leader of the Pack",
+  "Predatory Discipline"
+ ],
  "kept_for_rotation": [
   "Shifting Power"
  ],
  "active_never_worth": [],
  "abilities_never_cast": [],
- "moves": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Leader of the Pack",
+   "to": "Feral Charge",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  }
+ ],
  "final_seed3": 0.0,
  "start": {
   "Balance": [
@@ -54,7 +66,7 @@
     5
    ],
    [
-    "Heart of the Wild",
+    "Furor",
     5
    ],
    [
@@ -70,19 +82,15 @@
     2
    ],
    [
-    "Shifting Power",
-    1
-   ],
-   [
     "Predatory Strikes",
     3
    ],
    [
-    "Blood Frenzy",
+    "Predatory Discipline",
     1
    ],
    [
-    "Improved Shifting Power",
+    "Blood Frenzy",
     2
    ],
    [
@@ -98,18 +106,18 @@
     5
    ],
    [
-    "Berserk",
+    "Shifting Power",
     1
    ]
   ],
   "Restoration": [
    [
-    "Furor",
+    "Heart of the Wild",
     5
    ],
    [
     "Naturalist",
-    4
+    5
    ]
   ]
  },
@@ -134,7 +142,7 @@
     5
    ],
    [
-    "Heart of the Wild",
+    "Furor",
     5
    ],
    [
@@ -150,24 +158,16 @@
     2
    ],
    [
-    "Shifting Power",
-    1
-   ],
-   [
     "Predatory Strikes",
     3
    ],
    [
+    "Predatory Discipline",
+    1
+   ],
+   [
     "Blood Frenzy",
-    1
-   ],
-   [
-    "Improved Shifting Power",
     2
-   ],
-   [
-    "Leader of the Pack",
-    1
    ],
    [
     "Natural Instinct",
@@ -178,18 +178,22 @@
     5
    ],
    [
-    "Berserk",
+    "Shifting Power",
+    1
+   ],
+   [
+    "Feral Charge",
     1
    ]
   ],
   "Restoration": [
    [
-    "Furor",
+    "Heart of the Wild",
     5
    ],
    [
     "Naturalist",
-    4
+    5
    ]
   ]
  }

@@ -4,8 +4,8 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `feral-combat-open-raid` | 9/32/10 | 376 | 413 | 768 | 768 | 779 |
 | `feral-combat-shifting-power-raid` | 9/33/9 | 369 | 406 | 754 | 754 | 765 |
+| `feral-combat-open-raid` | 9/32/10 | 365 | 402 | 768 | 768 | 779 |
 | sim preset: Cat | - | 352 | 386 | 750 | 750 | 752 |
 | sim preset: Hybrid | - | 341 | 376 | 698 | 698 | 707 |
 | `opt-feral-cat-dps-raid-dps` | 9/30/12 | 335 | 371 | 643 | 643 | 656 |
@@ -24,8 +24,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `feral-combat-open-raid` | 376 | +10% | +23% | +37% | +0% | +34% | 768 |
 | `feral-combat-shifting-power-raid` | 369 | +10% | +23% | +37% | +0% | +34% | 754 |
+| `feral-combat-open-raid` | 365 | +10% | +23% | +37% | +5% | +35% | 768 |
 | sim preset: Cat | 352 | +12% | +24% | +39% | +0% | +36% | 750 |
 | sim preset: Hybrid | 341 | +10% | +23% | +38% | +0% | +33% | 698 |
 | `opt-feral-cat-dps-raid-dps` | 335 | -0% | +21% | +37% | +0% | +34% | 643 |
@@ -40,8 +40,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `feral-combat-open-raid` | 413 | 387 | 376 | 368 | 366 |
 | `feral-combat-shifting-power-raid` | 406 | 380 | 369 | 362 | 359 |
+| `feral-combat-open-raid` | 402 | 376 | 365 | 358 | 355 |
 | sim preset: Cat | 396 | 366 | 352 | 344 | 341 |
 | sim preset: Hybrid | 376 | 352 | 341 | 335 | 333 |
 | `opt-feral-cat-dps-raid-dps` | 342 | 336 | 335 | 334 | 335 |
