@@ -338,3 +338,11 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   melee hunter rotation files tagged, the entry re-tuned, raced and searched again (`deep-runs/queue_tag_redo.sh`). Check at every audit:
   a single rotation edit worth more than 5%, or the same gain to the hundredth on two seeds, is a mechanics hole until shown otherwise;
   `queue_tag` over `raidsim/apls/` must change nothing. Open: the unrestricted worktrees hold their own copies of the hunter files.
+- **Rotation lines the simulator update orphaned** (2026-10-31, same audit). b90e2b9 gives Whirlwind's strikes their hand as the action tag
+  (main hand 14, off hand 15; `ActionID.WithHand`), so every warrior rotation's `1680 tag 1` line named a spell that no longer exists and
+  the simulator dropped it with a warning: no Whirlwind since the re-pin (fury-open-raid 813 -> 861, arms-2h-raid 754 -> 786 in a full
+  raid once re-tagged; the Arms re-tune's +4.8% "insert Whirlwind" was the search finding its way back). `raidsim/apl_validate.py
+  --all-talents --write` lists exactly this, but no re-pin step ran it. Now in the re-pin checklist (CLAUDE.md): run it right after the
+  pin, diff against the committed record and act on every new warning before any search. Left as they are: Frost Blast (1326055, gone
+  from the live spell data: dead lines), racials (race-neutral runs), the archived fork preset `dps_no_reck`, paladin's Holy Shock 20930
+  (stage 2).

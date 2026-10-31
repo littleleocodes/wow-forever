@@ -824,8 +824,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   2026-10-18, spell data and items client 1.60.1.70450; before, the fork: b7083fa from 2026-10-16 (marked client 70425, but its spell store
   is the 14-15 Oct data: a commit that only bumps the client build file is not a new simulator; read `git show --stat` before pinning),
   2ce8265 (70291) from 2026-10-09, b0f0df3 (70205) from 2026-10-03, 40be98e before) so every machine and cloud session simulates the same
-  code; after a simulator update (`setup.py --update`) set the new pin, add it to `sim_info.OFFICIAL_COMMITS` with its client build, and
-  re-run `rebuild.py --steps raid,regen`. `raidsim/repin_rehearsal.py` builds the patched bench on another commit in a worktree first.
+  code; after a simulator update (`setup.py --update`) set the new pin, add it to `sim_info.OFFICIAL_COMMITS` with its client build, run
+  `raidsim/apl_validate.py --all-talents --write` and act on every warning the committed record lacks (an id the update renamed drops its
+  line silently: Whirlwind's main-hand tag 1 -> 14 at b90e2b9 left every warrior rotation without Whirlwind), check every specs.json path
+  exists, and re-run `rebuild.py --steps raid,regen`. `raidsim/repin_rehearsal.py` builds the patched bench on another commit in a worktree first.
 
 ## Writing style
 
