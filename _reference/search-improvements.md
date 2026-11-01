@@ -105,6 +105,7 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-31 | Simulator talent comments as a tooltip source (`refresh_forever_talents --sim-text`) | The paladin export's rank texts were estimates (Spiritual Focus 175%, Champion "100%"); a fight-lab regex read Sacred Duty as +30% Stamina | Per-rank numbers match what the simulator plays |
 | 2026-10-31 | `family_search --reuse-polish`: a restarted first search reuses the entry's polished families when the cache is newer than its raid rotation | The pause at 20:33 stopped the melee hunter search after its 168-minute polish | Saves the polish on a resume |
 | 2026-10-31 | Pausing a queue: stop the bash wrappers and their subshells before the python and simulator processes | Stopped searches returned an error and the scripts ran the next step (the warrior's open builds before its structural ranking) | Steps run in order after a pause |
+| 2026-11-01 | Structural ranking pads short splits to 51 with dead talents when the exact splits give fewer than `--top` legal structures (`structural._pad`, `MAX_PAD` 30) | Every druid ranking since the first raid pass ended "no legal structure": the live talents plus the minimum tier fillers never summed to 51 (Balance entry: 12 live in Balance, 2 in Restoration, 0 in Feral), so neither druid entry was ever checked | Balance: 300 legal structures, model-simulation correlation +0.92, confirms 33/0/18 (85 min); classes that reached `--top` at 51 are unchanged |
 
 ## Tested and rejected
 

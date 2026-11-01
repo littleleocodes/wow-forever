@@ -40,6 +40,7 @@ SY = _load("synergy_st", HERE / "synergy.py")
 FS, MLT, R = SY.FS, SY.MLT, SY.R
 TODAY = datetime.date.today().isoformat()
 DEAD_MAIN, DEAD_PAIR = 0.001, 0.002
+MAX_PAD = 30   # how far below 51 a padded split may start
 KEEP_PER_TREE_POINTS = 8     # subsets kept per (tree, points)
 SCREEN, RACE, CONFIRM = 1500, 10000, 30000
 LEAD_BAR = 0.005
@@ -260,13 +261,63 @@ def rank_structures(space, model, top):
             lst.sort(key=lambda x: -x[0])
             del lst[KEEP_PER_TREE_POINTS:]
         log(f"   {t}: {len(subs):,} subsets scored")
-    # combine: every split of 51 (a tree may hold more points than its subset needs only through dead filler room, ignored: exact splits)
+    # combine: every split of 51 over the trees' subsets; when the exact splits give fewer than `top` legal structures, smaller sums are
+    # padded to 51 with dead talents (2026-11-01: the druid's live talents never reached 51 points, so every druid ranking since the first
+    # raid pass had ended with "no legal structure"; dead talents are worth nothing to the model, so padding leaves the score unchanged)
     pts_lists = {t: sorted({p for (tt, p) in best if tt == t}) for t in space.tree_names}
     T = space.tree_names
+    out, seen = [], set()
+    total_cands = 0
+    for S in range(51, 51 - MAX_PAD - 1, -1):
+        cands = _combine(space, model, best, by_tree, live, pts_lists, T, S)
+        total_cands += len(cands)
+        cands.sort(key=lambda x: -x[0])
+        for sc, b in cands:
+            if S < 51:
+                b = _pad(space, b, live)
+                if b is None:
+                    continue
+            k = tuple(sorted(b.items()))
+            if k in seen or not space.valid(b):
+                continue
+            seen.add(k)
+            out.append((sc, b))
+            if len(out) >= top:
+                break
+        if len(out) >= top:
+            break
+    out.sort(key=lambda x: -x[0])
+    log(f"   {total_cands:,} structures combined, {len(out)} legal kept for simulation (model's best {out[0][0]:+.2%})" if out else "   no legal structure")
+    return out
+
+
+def _pad(space, build, live):
+    """The build filled to 51 points with dead talents: the trees with the most points first, lowest rows first (a lower row never breaks
+    tier gating), prerequisites respected; None when no legal fill is found."""
+    b = {n: r for n, r in build.items() if r}
+    need = 51 - sum(b.values())
+    pts = {t: sum(b.get(n, 0) for n in space.by_tree[t]) for t in space.tree_names}
+    for t in sorted(space.tree_names, key=lambda t: -pts[t]):
+        for n in sorted(space.by_tree[t], key=lambda n: space.row[n]):
+            if need <= 0:
+                break
+            if n in live:
+                continue
+            room = space.max[n] - b.get(n, 0)
+            for add in range(min(room, need), 0, -1):
+                trial = dict(b, **{n: b.get(n, 0) + add})
+                if space.ok_partial(trial):
+                    b, need = trial, need - add
+                    break
+    return b if need == 0 else None
+
+
+def _combine(space, model, best, by_tree, live, pts_lists, T, S):
+    """Every combination of the trees' kept subsets whose points sum to S, scored with the cross-tree pair terms."""
     cands = []
     for p1 in pts_lists[T[0]]:
         for p2 in pts_lists[T[1]]:
-            p3 = 51 - p1 - p2
+            p3 = S - p1 - p2
             if p3 < 0 or (T[2], p3) not in best:
                 continue
             for s1, b1, st1 in best[(T[0], p1)]:
@@ -281,18 +332,7 @@ def rank_structures(space, model, top):
                                     continue
                                 cross += model.state_pair(a, states[a], b, states[b])
                         cands.append((s1 + s2 + s3 + cross, build))
-    cands.sort(key=lambda x: -x[0])
-    out, seen = [], set()
-    for sc, b in cands:
-        k = tuple(sorted(b.items()))
-        if k in seen or not space.valid(b):
-            continue
-        seen.add(k)
-        out.append((sc, b))
-        if len(out) >= top:
-            break
-    log(f"   {len(cands):,} structures combined, {len(out)} legal kept for simulation (model's best {out[0][0]:+.2%})" if out else "   no legal structure")
-    return out
+    return cands
 
 
 def structural(cls, entry, e, repo, save, a):
