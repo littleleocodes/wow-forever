@@ -293,6 +293,7 @@ def main():
     ap.add_argument("--smoke", action="store_true", help="tiny budgets, a separate record, nothing else written (a test)")
     ap.add_argument("--report", action="store_true", help="write the cross-class page from the records and stop")
     ap.add_argument("--no-known", action="store_true", help="leave out the known builds (candidate files, earlier winners): a clean test of the search")
+    ap.add_argument("--reuse-polish", action="store_true", help="the first search reuses an entry's polished-family cache when it is newer than the entry's raid rotation (a run stopped after its polish; 2026-10-31)")
     a = ap.parse_args()
     global OUT, SEARCH, AGAIN, RACE, VALUES, SMOKE, POLISH
     if a.report:
@@ -357,7 +358,9 @@ def main():
             save()
             continue
         if "first" not in e:
-            sp, rec = run_search(cls, entry, repo, SEARCH, starts + MLT.preset_allocs(cls, R.SPECS[cls][entry], repo), 71)
+            fp, ap_ = family_cache(cls, entry), R.apl_path(R.SPECS[cls][entry], repo, "raid")
+            reuse = bool(a.reuse_polish and fp.exists() and fp.stat().st_mtime > pathlib.Path(ap_).stat().st_mtime)
+            sp, rec = run_search(cls, entry, repo, SEARCH, starts + MLT.preset_allocs(cls, R.SPECS[cls][entry], repo), 71, reuse=reuse)
             e["first"] = {"winner": rec["winner"], "family": sp.classify(flat_of(rec["winner"]["allocation"])), "runs_agree": rec["runs_agree"],
                           "important_features": rec.get("important_features"), "simulated_builds": rec["simulated_builds"], "protected": sorted(sp.protect),
                           "families": rec.get("families")}

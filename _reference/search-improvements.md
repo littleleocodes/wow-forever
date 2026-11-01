@@ -99,6 +99,12 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-06/07 | Synergy certificate and exhaustive structural ranking after every search; multi-rank proc talents as keystones; tier-chain moves | Every miss was a package worth nothing alone (the user's 0/29/22 Frostfire) | All known misses are found from the old winners |
 | 2026-10-06 | Bench target is an Elemental | Creature-type effects read 0 (Improved Tracking, +4.9% for the melee hunter) | Hunter records re-run |
 | 2026-10-07 | `low_priority.py` for side jobs; never stop a waiter with TaskStop alone | A stopped waiter's child fired a 3-hour pipeline that halved the queue's speed | The queue keeps the CPU |
+| 2026-10-31 | `apl_opt` drops a tuning build the simulator rejects, and says so | A stale race report named an old-tree paladin preset: every candidate scored None, three rotation searches tried nothing ("no candidates") | Searches after a tree rework tune on real builds |
+| 2026-10-31 | Rotation-lag audit after a re-pin: our tuned rotation raced against every upstream rotation of the spec folder (full raid, two seeds) | Upstream's new rotations beat ours: Fire +2.8-4.5%, Frostfire +1.1-2.2%, Feral Cat to +1.0%, Combat daggers +0.6-0.8%, paladin 5-6% | Adopted as the entries' base, re-tuned as a pass |
+| 2026-10-31 | `repair_builds` drops a talent that moved trees instead of following it | Following Holy Conduit into Holy bought 9 useless Holy points in the paladin tank build | Repaired builds stay in their trees |
+| 2026-10-31 | Simulator talent comments as a tooltip source (`refresh_forever_talents --sim-text`) | The paladin export's rank texts were estimates (Spiritual Focus 175%, Champion "100%"); a fight-lab regex read Sacred Duty as +30% Stamina | Per-rank numbers match what the simulator plays |
+| 2026-10-31 | `family_search --reuse-polish`: a restarted first search reuses the entry's polished families when the cache is newer than its raid rotation | The pause at 20:33 stopped the melee hunter search after its 168-minute polish | Saves the polish on a resume |
+| 2026-10-31 | Pausing a queue: stop the bash wrappers and their subshells before the python and simulator processes | Stopped searches returned an error and the scripts ran the next step (the warrior's open builds before its structural ranking) | Steps run in order after a pause |
 
 ## Tested and rejected
 
