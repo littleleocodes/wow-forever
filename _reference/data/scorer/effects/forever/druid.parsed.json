@@ -252,7 +252,7 @@
  "Moonkin Form": {
   "tree": "Balance",
   "max": 1,
-  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged ",
+  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%",
   "effects": []
  },
  "Ferocity": {
@@ -423,8 +423,19 @@
  "Leader of the Pack": {
   "tree": "Feral Combat",
   "max": 1,
-  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%.",
-  "effects": []
+  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "unknown:all party or raid members within 45 yard"
+    ],
+    "values": [
+     0.03
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Natural Instinct": {
   "tree": "Feral Combat",
@@ -489,7 +500,7 @@
  "Primal Bite": {
   "tree": "Feral Combat",
   "max": 1,
-  "text": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
+  "text": "Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat.",
   "effects": []
  },
  "Shifting Power": {
@@ -736,7 +747,7 @@
  "Swiftmend": {
   "tree": "Restoration",
   "max": 1,
-  "text": "Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.",
+  "text": "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.",
   "effects": []
  },
  "Nature's Swiftness": {
@@ -806,7 +817,7 @@
  "Wild Growth": {
   "tree": "Restoration",
   "max": 1,
-  "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+  "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
   "effects": []
  }
 }

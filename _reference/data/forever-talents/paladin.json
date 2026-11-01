@@ -2,13 +2,13 @@
   "slug": "paladin",
   "name": "Paladin",
   "build": "1.60.1.70707",
-  "captured": "2026-10-30",
+  "captured": "2026-10-31",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-29",
+      "generated": "2026-10-30",
       "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
@@ -78,27 +78,7 @@
     }
   ],
   "merge_notes": [
-    "Holy/Spiritual Focus: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Holy/Reverence: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Holy/Improved Seals: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Holy/Divine Precision: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Holy/Oath of Light: tooltip from Wowhead's spell 1328548 (new talent)",
-    "Holy/Boundless Light: tooltip from Wowhead's spell 1328550 (new talent); ranks 2-2 scaled from rank 1 (estimated)",
-    "Holy/Holy Power: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Redoubt: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Sacred Duty: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Shield Specialization: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Improved Righteous Fury: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Stoicism: tooltip from Wowhead's spell 1328546 (new talent); ranks 2-2 scaled from rank 1 (estimated)",
-    "Protection/Iron Creed: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Protection/Shieldsworn: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Retribution/Conviction: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Retribution/Vindication: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Retribution/Two-Handed Weapon Specialization: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Retribution/Turn Evil: tooltip from Wowhead's spell 1328370 (new talent); ranks 2-2 scaled from rank 1 (estimated)",
-    "Retribution/Champion of the Light: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "Retribution/Unsealed Wrath: per-rank text from the simulator's talent comment (sim/paladin/talents_*.go, the live hotfix numbers)",
-    "live hotfix numbers of 2026-10-30 written into Oath of Light, Boundless Light (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
+    "live hotfix numbers of 2026-10-30 written into Oath of Light (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
   ],
   "trees": [
     {
@@ -370,7 +350,7 @@
           "row": 3,
           "col": 2,
           "name": "Oath of Light",
-          "icon": null,
+          "icon": "spell_holy_greaterblessingoflight",
           "maxRank": 1,
           "ranks": [
             "Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229. Only one Oath of Light may be sworn by the Paladin at any one time."
@@ -389,7 +369,7 @@
               1
             ],
             "before": {
-              "1": "Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 0, your Flash of Light by up to 0, and your Holy Shock by up to 0. Only one Oath of Light may be sworn by the Paladin at any one time."
+              "1": "Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light, Flash of Light, and Holy Shock on them. Only one Oath of Light may be sworn by the Paladin at any one time."
             }
           }
         },
@@ -435,7 +415,7 @@
           "row": 4,
           "col": 2,
           "name": "Boundless Light",
-          "icon": null,
+          "icon": "ability_paladin_sacredcleansing",
           "maxRank": 2,
           "ranks": [
             "Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light.",
@@ -448,24 +428,6 @@
           "prereq": {
             "id": "holy/holy-shock",
             "rank": 1
-          },
-          "estimated": [
-            1
-          ],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1,
-              2
-            ],
-            "before": {
-              "1": "Increases the critical strike chance of your Holy Shock spell by 0% when cast on allies not affected by your Oath of Light.",
-              "2": "Increases the critical strike chance of your Holy Shock spell by 0% when cast on allies not affected by your Oath of Light."
-            }
           }
         },
         {
@@ -512,7 +474,7 @@
           "icon": "ability_paladin_judgementofthepure",
           "maxRank": 1,
           "ranks": [
-            "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. You may only have one Light's Vigil active per party."
+            "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 343. Only one Vigil per Paladin may be active in each party."
           ],
           "status": "new",
           "evidence": "paladin/18-paladin-holy-lights-vigil.jpg",
@@ -709,8 +671,8 @@
           "icon": "inv_shield_06",
           "maxRank": 2,
           "ranks": [
-            "Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown.",
-            "Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown."
+            "Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
+            "Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec."
           ],
           "status": "changed",
           "classic": [
@@ -764,11 +726,16 @@
           "icon": "ability_paladin_judgementred",
           "maxRank": 1,
           "ranks": [
-            "Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%."
+            "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability."
           ],
           "status": "new",
           "evidence": "paladin/28-paladin-protection-swift-judgement.jpg",
+          "ranks_prev": [
+            "Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
+            "tooltip changed in build 1.60.1.70707 (ranks 1)",
             "prerequisite changed in build 1.60.1.70707: was improved seal of fury"
           ],
           "prereq": {
@@ -841,18 +808,15 @@
           "row": 4,
           "col": 0,
           "name": "Stoicism",
-          "icon": null,
+          "icon": "spell_holy_stoicism",
           "maxRank": 2,
           "ranks": [
-            "Reduces the duration of Stun and Charm effects on you by 20%.",
-            "Reduces the duration of Stun and Charm effects on you by 40%."
+            "Reduces the duration of Stun and Charm effects on you by 10%.",
+            "Reduces the duration of Stun and Charm effects on you by 20%."
           ],
           "status": "new",
           "diff": [
             "added in build 1.60.1.70707"
-          ],
-          "estimated": [
-            1
           ]
         },
         {
@@ -863,16 +827,21 @@
           "icon": "spell_holy_blessingofprotection",
           "maxRank": 1,
           "ranks": [
-            "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
+            "Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
           ],
           "status": "changed",
           "classic": [
             "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
           ],
           "evidence": "paladin/34-paladin-protection-holy-shield.jpg",
+          "ranks_prev": [
+            "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
             "moved in build 1.60.1.70707: was row 7, col 2",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)",
             "prerequisite changed in build 1.60.1.70707: was templar s bulwark"
           ]
         },
@@ -944,7 +913,7 @@
           "row": 6,
           "col": 1,
           "name": "Shieldsworn",
-          "icon": null,
+          "icon": "spell_holy_greaterblessingofsanctuary",
           "maxRank": 1,
           "ranks": [
             "Reduces the cooldown of your Holy Strike ability by 4 sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or triggering their cooldowns, and allowing you to Block spells for 6 sec."
@@ -1260,18 +1229,15 @@
           "row": 4,
           "col": 0,
           "name": "Turn Evil",
-          "icon": null,
+          "icon": "spell_holy_turnundead",
           "maxRank": 2,
           "ranks": [
-            "Reduces the cast time of your Turn Undead spell by 1.5 sec, its cooldown by 2 sec, and allows it to affect Demons.",
-            "Reduces the cast time of your Turn Undead spell by 3 sec, its cooldown by 4 sec, and allows it to affect Demons."
+            "Reduces the cast time of your Turn Undead spell by 0.5 sec, its cooldown by 5 sec, and allows it to affect Demons.",
+            "Reduces the cast time of your Turn Undead spell by 1.0 sec, its cooldown by 10 sec, and allows it to affect Demons."
           ],
           "status": "new",
           "diff": [
             "added in build 1.60.1.70707"
-          ],
-          "estimated": [
-            1
           ]
         },
         {

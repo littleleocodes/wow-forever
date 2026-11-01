@@ -266,7 +266,6 @@ MECHANICS = {
                       "keeping the mana for an emergency heal and the way back (70170 put it where King of the Jungle was)",
     "Natural Reaction": "+1%/rank dodge",
     "Rend and Tear": "+2%/rank ability damage on a bleeding mob (Rake, Rip, Pounce)",
-    "Berserk": "+100% crit on combo-point abilities for 15 s every 3 min",
     "Genesis": "+1%/rank periodic damage (Rake, Rip, Pounce, Moonfire) and healing",
     "Nature's Majesty": "+2%/rank crit with spells and melee",
     "Nature's Reach": "+2%/rank hit",
@@ -299,7 +298,7 @@ MECHANICS = {
 FIT = {
     "Ferocity": "scale", "Heart of the Wild": "scale", "Feral Swiftness": "scale", "Brutal Impact": "scale", "Thick Hide": "scale", "Savage Fury": "scale",
     "Sharpened Claws": "scale", "Shredding Attacks": "scale", "Predatory Strikes": "scale", "Natural Instinct": "scale", "Leader of the Pack": "scale",
-    "Shifting Power": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
+    "Shifting Power": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
     "Nature's Reach": "scale", "Furor": "scale", "Naturalist": "scale", "Natural Shapeshifter": "scale", "Reflection": "scale", "Gift of Nature": "scale",
     "Improved Rejuvenation": "scale", "Tranquil Spirit": "scale", "Nature's Swiftness": "scale", "Living Spirit": "scale", "Swiftmend": "scale", "Blood Frenzy": "scale",
     "Feral Charge": "scale", "Feral Instinct": "scale", "Moonglow": "scale", "Improved Moonfire": "scale", "Improved Wrath": "scale", "Nature's Focus": "scale",

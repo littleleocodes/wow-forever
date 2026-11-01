@@ -233,7 +233,7 @@ MECHANICS = {
     "Improved Righteous Fury": "not used",
     "Shield Specialization": "no shield",
     "Sacred Duty": "-30 s/rank Divine Protection / Divine Shield / Templar's Bulwark cooldown (no Stamina since hotfix 113554)",
-    "Swift Judgement": "not used",
+    "Swift Judgement": "the seal's judgement, free and off the global cooldown, every 60 s on a mob above 25% health (30 Oct hotfix; it reset Judgement before)",
     "Improved Hammer of Justice": "-5 s/rank Hammer of Justice cooldown",
     "Templar's Bulwark": "not used",
     "Reckoning": "20%/rank chance after a crit taken to store an extra attack (up to 4, one per 1.5 s); the next auto attack releases them all (client 70425)",
@@ -319,7 +319,7 @@ MECHANICS_ALT = dict(MECHANICS, **{
     "Anticipation": "+4 Defense/rank: +0.04% dodge, parry and block per point (mob hit and crit chance unchanged)",
     "Improved Righteous Fury": "-3%/rank damage taken (Righteous Fury assumed always up)",
     "Shield Specialization": "+15%/rank block value; blocks restore 4% max mana at 50%/rank chance, once per 3 s",
-    "Swift Judgement": "off the global cooldown: resets Judgement and makes it free when it has 3+ s left",
+    "Swift Judgement": "the seal's judgement, free and off the global cooldown, every 60 s on a mob above 25% health (30 Oct hotfix; it reset Judgement before)",
     "Templar's Bulwark": "emergency absorb of 100% max health for 8 s (Forbearance 1 min)",
     "Reckoning": "8%/rank after a block and 20%/rank after a crit taken (one 1.5 s proc cooldown for both): an extra attack stored (up to 4), "
                  "all released on the next auto attack (client 70425, notes of 16 Oct)",
@@ -789,6 +789,7 @@ class PaladinModule(BaseModule):
         # Hammer of Justice into a doubled Seal of Command judgement
         if hoj and can(hoj) and judge and p.ready("Judgement", t) and seal is not None and getattr(seal, "judge_stunned", None) and hp > 0.3 * m.hp_max and not m.stunned(t):
             return hoj
+        self._swift(fight, sp.get("Swift Judgement"), judge)
         if judge and can(judge) and p.buff("Seal", t):
             return judge
         if hs and can(hs):
@@ -1125,7 +1126,7 @@ class PaladinModule(BaseModule):
         return spent
 
     def _off_gcd(self, fight, s):
-        """Divine Favor and Swift Judgement: used off the global cooldown (assumption), paid and counted here."""
+        """Divine Favor and Swift Judgement: used off the global cooldown (Divine Favor an assumption; Swift Judgement per the simulator), paid and counted here."""
         p, t = fight.p, fight.t
         cost = self.mana_cost(s)
         if s is None or not p.ready(s.name, t) or p.mana < cost:
@@ -1136,6 +1137,17 @@ class PaladinModule(BaseModule):
         p.cooldowns[s.name] = t + s.cooldown
         fight.casts[s.name] = fight.casts.get(s.name, 0) + 1
         return True
+
+    def _swift(self, fight, swift, judge):
+        """Swift Judgement (the 30 Oct hotfix, talentsforever's 70685 export; the official simulator's swift_judgement.go): the active seal's
+        judgement, free and off the global cooldown, on its own 60 s cooldown; Judgement's cooldown is untouched and the seal stays.
+        Used whenever ready with a seal up on a mob above 25% health (the judgement counts under Judgement's casts and damage).
+        Until 2026-10-31 it reset Judgement's cooldown and made the next Judgement free."""
+        p, m, t = fight.p, fight.m, fight.t
+        if swift is None or judge is None or not p.buff("Seal", t) or m.hp <= 0.25 * m.hp_max:
+            return
+        if self._off_gcd(fight, swift):
+            fight.resolve_spell(judge)
 
     def _favor(self, fight):
         df = self.spells.get("Divine Favor")
@@ -1201,10 +1213,7 @@ class PaladinModule(BaseModule):
                 return hshield
         if hoj and can(hoj) and judge and p.ready("Judgement", t) and seal is not None and getattr(seal, "judge_stunned", None) and m.hp > 0.3 * m.hp_max and not m.stunned(t):
             return hoj
-        if swift and judge and p.buff("Seal", t) and not p.ready("Judgement", t) and p.cooldowns.get("Judgement", 0.0) - t >= 3.0 and m.hp > 0.25 * m.hp_max:
-            if self._off_gcd(fight, swift):
-                p.cooldowns["Judgement"] = t
-                self._free_judge = True
+        self._swift(fight, swift, judge)
         if judge and can(judge) and p.buff("Seal", t):
             return judge
         if hs and can(hs):

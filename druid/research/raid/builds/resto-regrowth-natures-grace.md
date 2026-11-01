@@ -7,7 +7,7 @@
 | **Build** | 21/0/30 (Balance / Feral Combat / Restoration) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `resto-regrowth-natures-grace` |
 
 ## Summary
@@ -44,7 +44,7 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Gift of Nature** | 5/5 | changed | Increases the effect of all your healing spells by 10%. |
 | **Improved Rejuvenation** | 3/3 | moved | Increases the effect of your Rejuvenation spell by 15%. |
-| **Swiftmend** | 1/1 | changed | Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells. |
+| **Swiftmend** | 1/1 | changed | Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell. |
 | **Living Spirit** | 2/3 | **NEW** | Increases your Spirit by 10%. |
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell becomes an instant cast spell. |
 | **Improved Regrowth** | 5/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 50%. |

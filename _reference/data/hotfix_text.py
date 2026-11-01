@@ -22,34 +22,20 @@ def _sub(pat, rep):
 
 
 # (class, talent) -> [edits applied to every rank's text]
+# 2026-10-31: talentsforever's export of 30 Oct (launch build 70685 = client 70630 + the hotfixes of 28 and 30 Oct) carries every
+# number below that was listed here (druid Genesis, Naturalist, Leader of the Pack, Moonkin Form; paladin Boundless Light; mage Ice
+# Barrier, Winter's Chill, Arctic Reach; spells: Ice Lance 300% and its 8 s cooldown on every rank, Shadow Word: Death's 30% backlash,
+# Arcane Blast 12%/100%/18 s): those entries are removed. Oath of Light stays: the export words it without numbers.
 TALENTS = {
-    ("druid", "Genesis"): [_sub(r"by \d+%\.", lambda i, m: f"by {2 * (i + 1)}%.")],   # 2-10% (was 1-5%)
-    ("druid", "Naturalist"): [_sub(r"increases all damage you deal by \d+%", lambda i, m: f"increases all damage you deal by {2 * (i + 1)}%"),
-                              _sub(r"your Healing Touch spell", lambda i, m: "your Healing Touch and Wild Growth spells")],
-    ("druid", "Leader of the Pack"): [_sub(r"the melee and ranged Critical Strike chance", lambda i, m: "the Critical Strike chance (melee, ranged and spell)")],
-    ("druid", "Moonkin Form"): [_sub(r"their spell Critical Strike chance increased by 3%",
-                                     lambda i, m: "their Critical Strike chance (melee, ranged and spell) increased by 3%")],
-    # paladin (hotfix push 113554, ported 2026-10-31): Wowhead's tooltips read 0 for these; the numbers are the simulator's spell store
-    # (sim/core/spelldata: 1328550 15/30; oath_of_light.go: 400/115/229 at level 60)
-    ("paladin", "Boundless Light"): [_sub(r"by \d+%", lambda i, m: f"by {15 * (i + 1)}%")],
-    ("paladin", "Oath of Light"): [_sub(r"Holy Light on them by up to \d+, your Flash of Light by up to \d+, and your Holy Shock by up to \d+",
+    # paladin (hotfix push 113554): the numbers are the simulator's (oath_of_light.go: 400/115/229 at level 60); the heal lab reads them.
+    # The 70685 export words it "your Holy Light, Flash of Light, and Holy Shock on them".
+    ("paladin", "Oath of Light"): [_sub(r"Holy Light on them by up to \d+, your Flash of Light by up to \d+, and your Holy Shock by up to \d+"
+                                        r"|Holy Light, Flash of Light, and Holy Shock on them",
                                         lambda i, m: "Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229")],
-    ("mage", "Ice Barrier"): [_sub(r"increasing your Frost damage by 3%", lambda i, m: "increasing your Frost damage by 15%"),
-                              _sub(r"an additional 3%", lambda i, m: "an additional 5%")],
-    ("mage", "Winter's Chill"): [_sub(r"your next Cone of Cold by 5%", lambda i, m: "your next Cone of Cold by 20%")],
-    ("mage", "Arctic Reach"): [_sub(r"Frostbolt, Frost Blast, and Blizzard spells", lambda i, m: "Frostbolt, Frost Blast, Ice Lance and Blizzard spells")],
 }
 
 # (class, spell) -> ([edits of every rank's text], {field: value} for every rank)
-SPELLS = {
-    ("mage", "Ice Lance"): ([_sub(r"Deals 200% increased damage to Frozen targets", lambda i, m: "Deals 300% increased damage to Frozen targets")],
-                           {"cooldown": "8 sec cooldown"}),   # 300% (was 200%); the 8 s cooldown on every rank (70685 gave it rank 1 only)
-    ("priest", "Shadow Word: Death"): ([_sub(r"backlash damage equal to 10% of your maximum health",
-                                             lambda i, m: "backlash damage equal to 30% of your maximum health")], {}),   # 10% -> 30% (sim ac6387f)
-    ("mage", "Arcane Blast"): ([_sub(r"you gain 15% of your Intellect", lambda i, m: "you gain 12% of your Intellect"),
-                               _sub(r"increased by 175%", lambda i, m: "increased by 100%"),
-                               _sub(r"lasts 15 sec", lambda i, m: "lasts 18 sec")], {}),
-}
+SPELLS = {}
 
 
 def _mark(rec, i, old):

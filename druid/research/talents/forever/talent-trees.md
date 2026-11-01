@@ -1,6 +1,6 @@
 # Druid — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-31. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -19,7 +19,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Wrath** | 5 | — | changed | Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%. | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
-| **Genesis** | 5 | — | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 1%. | Increases the periodic damage and healing done by your spells and abilities by 5%. |
+| **Genesis** | 5 | — | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 2%. | Increases the periodic damage and healing done by your spells and abilities by 10%. |
 
 ### Tier 2 — requires 5 points in Balance
 
@@ -63,7 +63,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
+| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
 
 **Removed from Classic Balance:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity
 
@@ -107,7 +107,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. | — |
+| **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%. | — |
 | **Natural Instinct** | 2 | — | **NEW** | Increases the critical strike damage bonus of your melee abilities by 10% and increases your spell healing by 12% of your Intellect. | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 
 ### Tier 6 — requires 25 points in Feral Combat
@@ -121,7 +121,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Primal Bite** | 1 | Leader of the Pack (1) | **NEW** | Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat. | — |
+| **Primal Bite** | 1 | Leader of the Pack (1) | **NEW** | Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat. | — |
 | **Shifting Power** | 1 | Predatory Discipline (1) | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. | — |
 
 **Removed from Classic Feral Combat:** Feral Aggression, Feline Swiftness, Improved Shred, Primal Fury, Faerie Fire (Feral)
@@ -139,7 +139,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Naturalist** | 5 | — | **NEW** | Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%. | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 5 | — | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.1 sec and increases all damage you deal by 2%. | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3 | — | changed | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
 | **Natural Shapeshifter** | 3 | — | moved | Reduces the mana cost of all shapeshifting by 10%. | Reduces the mana cost of all shapeshifting by 30%. |
 
@@ -157,7 +157,7 @@
 |---|---|---|---|---|---|
 | **Tranquil Spirit** | 5 | — | unchanged | Reduces the mana cost of your Healing Touch and Tranquility spells by 2%. | Reduces the mana cost of your Healing Touch and Tranquility spells by 10%. |
 | **Improved Rejuvenation** | 3 | — | moved | Increases the effect of your Rejuvenation spell by 5%. | Increases the effect of your Rejuvenation spell by 15%. |
-| **Swiftmend** | 1 | — | changed | Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells. | — |
+| **Swiftmend** | 1 | — | changed | Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell. | — |
 
 ### Tier 5 — requires 20 points in Restoration
 
@@ -177,7 +177,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Wild Growth** | 1 | Living Spirit (3) | **NEW** | Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration. | — |
+| **Wild Growth** | 1 | Living Spirit (3) | **NEW** | Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration. | — |
 
 **Removed from Classic Restoration:** Improved Mark of the Wild, Improved Healing Touch, Improved Enrage
 
@@ -219,7 +219,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
   - Forever: Increases the damage done by your Arcane and Nature spells by 2%.
 - **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 0 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 
 ### Feral Combat
 
@@ -255,7 +255,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
   - Forever: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
 - **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 0 yards by 3%.
-  - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.
+  - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%.
 
 ### Restoration
 
@@ -274,9 +274,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Gift of Nature** (tooltip changed, was Restoration row 5, col 3)
   - Classic: Increases the effect of all healing spells by 2%.
   - Forever: Increases the effect of all your healing spells by 2%.
-- **Swiftmend** (tooltip changed, was Restoration row 7, col 2)
+- **Swiftmend** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them. an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.
-  - Forever: Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.
+  - Forever: Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
 - **Improved Tranquility** (tooltip changed)
   - Classic: Reduces threat caused by Tranquility by 50%.
   - Forever: Reduces threat caused by Tranquility by 50% and its cooldown by 30%.

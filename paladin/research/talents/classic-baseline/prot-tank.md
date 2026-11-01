@@ -90,7 +90,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Protection | Blessing of Sanctuary | 1 | **REMOVED** | removed from Classic |
 | Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
 | Protection | One-Handed Weapon Specialization | 5 | unknown | not found in Forever data |
-| Protection | Holy Shield | 1 | changed | tier 5, max 1 — tooltip changed; moved in build 1.60.1.70707: was row 7, col 2; prerequisite changed in build 1.60.1.70707: was templar s bulwark |
+| Protection | Holy Shield | 1 | changed | tier 5, max 1 — tooltip changed; moved in build 1.60.1.70707: was row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1); prerequisite changed in build 1.60.1.70707: was templar s bulwark |
 
 **8 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

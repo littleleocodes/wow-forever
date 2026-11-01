@@ -7,7 +7,7 @@
 | **Build** | 5/14/32 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -49,14 +49,14 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 355 | +0.0% | 736 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 694 | -5.6% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 694 | -5.7% | 0 s |
 | 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 310 | -12.8% | 685 | -6.9% | 0 s |
-| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 695 | -5.5% | 99 s |
+| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 696 | -5.4% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -70,7 +70,7 @@ The Survival build the machine-learning talent search found in a full raid (ever
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 14 passes, the last 2026-10-31, 7 changes to the base rotation; third-seed check: melee-survival-raid 475 -> 735 DPS (+54.8%), opt-melee-dps-raid-dps 475 -> 685 DPS (+44.2%), survival-raid 453 -> 695 DPS (+53.5%), survival-ml-parse 453 -> 697 DPS (+53.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 14 passes, the last 2026-10-31, 7 changes to the base rotation; third-seed check: melee-survival-raid 475 -> 735 DPS (+54.8%), opt-melee-dps-raid-dps 475 -> 685 DPS (+44.2%), survival-raid 453 -> 695 DPS (+53.6%), survival-ml-parse 453 -> 697 DPS (+53.9%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
   3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)

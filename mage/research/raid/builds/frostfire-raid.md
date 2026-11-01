@@ -7,7 +7,7 @@
 | **Build** | 7/31/13 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `fire-raid` |
 
 ## Summary
@@ -71,14 +71,14 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 446 | +0.0% | 599 | -4.0% | 33 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.1% | 618 | -0.9% | 40 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 618 | -1.0% | 41 s |
-| 4 | *FFB* | community simulator | - | 423 | -5.3% | 624 | +0.0% | 47 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 446 | +0.0% | 695 | -9.5% | 33 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.1% | 751 | -2.1% | 40 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 759 | -1.1% | 41 s |
+| 4 | *FFB* | community simulator | - | 423 | -5.3% | 768 | +0.0% | 47 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
   17. spell probe: insert in the middle: cast Arcane Blast (+1.8%, pass 9)
   18. spell probe: insert at the top: cast Arcane Power (+1.2%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 18 passes, the last 2026-10-31, 32 changes to the base rotation; third-seed check: open winner 629 -> 732 DPS (+16.3%), frostfire-fingers-of-frost-raid 628 -> 730 DPS (+16.2%), sim preset: FFB 639 -> 733 DPS (+14.8%), frostfire-raid 600 -> 681 DPS (+13.4%), frostfire-ml-raid 633 -> 742 DPS (+17.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 20 passes, the last 2026-10-31, 37 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 628 -> 751 DPS (+19.6%), sim preset: FFB 639 -> 767 DPS (+20.0%), frostfire-raid 600 -> 694 DPS (+15.7%), frostfire-ml-raid 633 -> 761 DPS (+20.2%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -134,6 +134,11 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   30. insert at the top: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast (+1.9%, pass 18)
   31. drop: if stacks of Heating Up = 3: cast Pyroblast (+10.1%, pass 18)
   32. drop: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.5%, pass 18)
+  33. rotation replaced by the official simulator's ffb.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+2.0%, pass 19)
+  34. insert at the top: cast Mana Citrine (+1.1%, pass 20)
+  35. threshold 5 -> 10: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.2%, pass 20)
+  36. insert at the end: cast Scorch (+0.2%, pass 20)
+  37. only with 3s or more of the fight left: cast Frostfire Bolt (+0.2%, pass 20)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|

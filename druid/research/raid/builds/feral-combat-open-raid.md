@@ -7,7 +7,7 @@
 | **Build** | 9/32/10 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -84,7 +84,7 @@ The Feral Combat raid build the open talent search found on 2026-10-31: every le
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-31, 9 changes to the base rotation; third-seed check: feral-combat-open-raid 768 -> 768 DPS (+0.0%), feral-combat-shifting-power-raid 754 -> 754 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 643 -> 643 DPS (+0.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-31, 10 changes to the base rotation; third-seed check: feral-combat-open-raid 768 -> 768 DPS (+0.0%), feral-combat-shifting-power-raid 754 -> 754 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 643 -> 643 DPS (+0.0%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
@@ -94,6 +94,7 @@ The Feral Combat raid build the open talent search found on 2026-10-31: every le
   7. insert at the top: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+7.5%, pass 7)
   8. drop 'combo points < 5' from the condition: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake (+0.5%, pass 7)
   9. insert at the top: if (combo points ≥ 5 and not time left in the fight ≥ 10s or combo points ≥ 3 and time left in the fight < 3s): cast Ferocious Bite (rank 4) (+0.2%, pass 8)
+  10. rotation replaced by the official simulator's adaptive.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+1.0%, pass 10)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 

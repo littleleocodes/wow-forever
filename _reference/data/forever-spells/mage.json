@@ -2,10 +2,10 @@
  "class": "Mage",
  "slug": "mage",
  "build": "1.60.1.70630",
- "captured": "2026-10-30",
- "export_generated": "2026-10-29",
+ "captured": "2026-10-31",
+ "export_generated": "2026-10-30",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-29, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
   "beta": 195,
   "demo": 0,
@@ -115,7 +115,7 @@
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "15% of base mana",
        "range": "30 yd range",
        "cast": "1.5 sec cast",
@@ -125,21 +125,6 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
-         }
-        }
        }
       },
       {
@@ -149,7 +134,7 @@
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "15% of base mana",
        "range": "30 yd range",
        "cast": "1.5 sec cast",
@@ -158,21 +143,6 @@
        "level": 30,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Blasts the target with energy, dealing 78 to 90 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
-         }
-        }
        }
       },
       {
@@ -182,7 +152,7 @@
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "15% of base mana",
        "range": "30 yd range",
        "cast": "1.5 sec cast",
@@ -191,21 +161,6 @@
        "level": 40,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Blasts the target with energy, dealing 101 to 117 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
-         }
-        }
        }
       },
       {
@@ -215,7 +170,7 @@
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "15% of base mana",
        "range": "30 yd range",
        "cast": "1.5 sec cast",
@@ -224,21 +179,6 @@
        "level": 50,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Blasts the target with energy, dealing 165 to 191 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
-         }
-        }
        }
       },
       {
@@ -248,7 +188,7 @@
        "school": "Arcane",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "15% of base mana",
        "range": "30 yd range",
        "cast": "1.5 sec cast",
@@ -257,21 +197,6 @@
        "level": 60,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Blasts the target with energy, dealing 218 to 254 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
-         }
-        }
        }
       }
      ]
@@ -3984,11 +3909,11 @@
       {
        "rank": "Rank 1",
        "id": 11426,
-       "text": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
+       "text": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "305 Mana",
        "range": "",
        "cast": "Instant",
@@ -4005,11 +3930,11 @@
       {
        "rank": "Rank 2",
        "id": 13031,
-       "text": "Shield yourself, absorbing 561 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
+       "text": "Shield yourself, absorbing 561 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "360 Mana",
        "range": "",
        "cast": "Instant",
@@ -4025,11 +3950,11 @@
       {
        "rank": "Rank 3",
        "id": 13032,
-       "text": "Shield yourself, absorbing 692 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
+       "text": "Shield yourself, absorbing 692 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "420 Mana",
        "range": "",
        "cast": "Instant",
@@ -4045,11 +3970,11 @@
       {
        "rank": "Rank 4",
        "id": 13033,
-       "text": "Shield yourself, absorbing 819 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.",
+       "text": "Shield yourself, absorbing 819 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.",
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "480 Mana",
        "range": "",
        "cast": "Instant",
@@ -4098,7 +4023,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "45 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4108,22 +4033,6 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": "8 sec cooldown"
-         }
-        }
        }
       },
       {
@@ -4133,7 +4042,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "55 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4142,22 +4051,6 @@
        "level": 28,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 34 to 40 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": ""
-         }
-        }
        }
       },
       {
@@ -4167,7 +4060,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "70 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4176,22 +4069,6 @@
        "level": 34,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 44 to 52 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": ""
-         }
-        }
        }
       },
       {
@@ -4201,7 +4078,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "105 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4210,22 +4087,6 @@
        "level": 42,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 76 to 90 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": ""
-         }
-        }
        }
       },
       {
@@ -4235,7 +4096,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "120 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4244,22 +4105,6 @@
        "level": 48,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 95 to 111 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": ""
-         }
-        }
        }
       },
       {
@@ -4269,7 +4114,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "160 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4278,22 +4123,6 @@
        "level": 56,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "Deals 136 to 160 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets.",
-          "cooldown": ""
-         }
-        }
        }
       }
      ]

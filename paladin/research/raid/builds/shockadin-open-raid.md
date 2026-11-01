@@ -7,7 +7,7 @@
 | **Build** | 23/0/28 (Holy / Protection / Retribution) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -62,56 +62,48 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 24/0/27 | 355 | +0.0% | 778 | +0.0% | 80 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 418 | +0.0% | 784 | +0.0% | 70 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-29, 3 passes, the last 2026-10-29, 8 changes to the base rotation; third-seed check: shockadin-open-raid 724 -> 778 DPS (+7.5%)):
-  1. insert at the top: cast Consecration (+3.1%, pass 1)
-  2. drop: if mana % ≥ 15% and time to the next auto attack < 0.4s and mana % < 50%: cast Seal of Righteousness (rank 7) (+0.8%, pass 1)
-  3. insert at the top: if time left on Seal of Righteousness < time to the next auto attack and auraIsInactive: cast Seal of Righteousness (+1.5%, pass 1)
-  4. drop: if mana % ≥ 15% and time to the next auto attack < 0.4s: cast Seal of Righteousness (+0.4%, pass 1)
-  5. drop: if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness (+0.5%, pass 1)
-  6. move to the top: use every other cooldown when ready (+0.3%, pass 1)
-  7. drop: cast Consecration (+0.6%, pass 2)
-  8. insert at the top: cast Weakness Analyzer (+1.8%, pass 3)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 2 changes to the base rotation; third-seed check: shockadin-open-raid 772 -> 784 DPS (+1.6%)):
+  1. threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+1.0%)
+  2. move to the top: if variableRef: groupReference (+0.5%)
 
-Before the pull: at -1.5s: cast Seal of Command.
+Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -1.5s: if not variableRef: groupReference; at -1.5s: if variableRef: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | [`shockadin-open-raid`](shockadin-open-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Holy Shock | 3.7 |
-| 2 | cast Hammer of Wrath | 1.3 |
-| 3 | if mana % ≥ 15% and time to the next auto attack < 0.4s and mana % < 50%: cast Seal of Righteousness (rank 7) | 1.4 |
-| 4 | if mana % ≥ 15% and time to the next auto attack < 0.4s: cast Seal of Righteousness | 3.6 |
-| 5 | if Seal of Righteousness is up: cast Judgement | 4.9 |
-| 6 | if mana % ≥ 25%: cast Consecration | 3.0 |
-| 7 | cast Holy Strike | 5.8 |
-| 8 | cast Holy Shock | 3.7 |
-| 9 | use every other cooldown when ready | as ready |
-| 10 | if Judgement can be cast and time left in the fight ≥ 20s: cast Judgement | 4.9 |
-| 11 | cast Consecration (rank 1) | 3.1 |
-| 12 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 3.6 |
+| 1 | groupReference | as ready |
+| 2 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready |
+| 3 | groupReference | as ready |
+| 4 | cast Judgement | 6.5 |
+| 5 | cast Consecration | 4.7 |
+| 6 | if variableRef: groupReference | as ready |
+| 7 | cast Holy Strike | 5.9 |
+| 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
+| 9 | cast Holy Shock | 3.8 |
+| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Command (rank 2), cast Seal of Command (rank 4) (needs the Seal of Command talent).
+Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`shockadin-open-raid`](shockadin-open-raid.md) |
 |---|---|
-| Auto Attack | 24% |
+| Auto Attack | 22% |
+| Judgement of Righteousness | 18% |
 | Holy Strike | 17% |
-| Judgement of Righteousness | 15% |
+| Seal of Righteousness | 14% |
 | Holy Shock | 13% |
 | Consecration | 12% |
-| Seal of Righteousness | 12% |
-| Hammer of Wrath | 5% |
-| Demonic Rune | 3% |
+| Demonic Rune | 2% |
+| Hammer of Wrath | 2% |
 | spell 16614 | 0% |
 
 ## Notes

@@ -2,10 +2,10 @@
  "class": "Warrior",
  "slug": "warrior",
  "build": "1.60.1.70630",
- "captured": "2026-10-30",
- "export_generated": "2026-10-29",
+ "captured": "2026-10-31",
+ "export_generated": "2026-10-30",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-29, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
   "beta": 117,
   "demo": 0,
@@ -2076,11 +2076,11 @@
       {
        "rank": "Rank 1",
        "id": 6572,
-       "text": "Instantly counterattack an enemy for 20 to 24 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 20 to 24 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2090,17 +2090,17 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 12 to 14 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6574,
-       "text": "Instantly counterattack an enemy for 31 to 37 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 31 to 37 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2110,17 +2110,17 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 18 to 22 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       },
       {
        "rank": "Rank 3",
        "id": 7379,
-       "text": "Instantly counterattack an enemy for 43 to 53 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 43 to 53 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2130,17 +2130,17 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 25 to 31 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       },
       {
        "rank": "Rank 4",
        "id": 11600,
-       "text": "Instantly counterattack an enemy for 73 to 91 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 73 to 91 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2150,17 +2150,17 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 43 to 53 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       },
       {
        "rank": "Rank 5",
        "id": 11601,
-       "text": "Instantly counterattack an enemy for 109 to 133 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 109 to 133 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2170,17 +2170,17 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 64 to 78 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       },
       {
        "rank": "Rank 6",
        "id": 25288,
-       "text": "Instantly counterattack an enemy for 138 to 168 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "text": "Instantly counterattack an enemy for 138 to 168 plus 25% of your Attack Power damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "5 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2190,7 +2190,7 @@
        "classic": {
         "status": "changed",
         "text": "Instantly counterattack an enemy for 81 to 99 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
-        "change_kind": "numbers"
+        "change_kind": "reworded"
        }
       }
      ]

@@ -1,6 +1,6 @@
 # Mage — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-31. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -20,7 +20,7 @@
 |---|---|---|---|---|---|
 | **Wand Specialization** | 2 | — | moved | Increases your damage with Wands by 13%. | Increases your damage with Wands by 25%. |
 | **Improved Channeling** | 5 | — | **NEW** | Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage. | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
-| **Arcane Resilience** | 3 | — | changed | Increases your Armor by an amount equal to 50% of your Intellect. | Increases your Armor by an amount equal to 150% of your Intellect. *(est.)* |
+| **Arcane Resilience** | 3 | — | changed | Increases your Armor by an amount equal to 25% of your Intellect. | Increases your Armor by an amount equal to 75% of your Intellect. |
 
 ### Tier 2 — requires 5 points in Arcane
 
@@ -37,7 +37,7 @@
 |---|---|---|---|---|---|
 | **Arcane Geometry** | 2 | — | **NEW** | Increases the range of your Arcane spells by 3 yards. | Increases the range of your Arcane spells by 6 yards. |
 | **Arcane Impact** | 3 | — | **NEW** | Increases the critical strike chance of your Arcane spells by 2%. | Increases the critical strike chance of your Arcane spells by 6%. |
-| **Arcane Blast** | 1 | — | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. | — |
+| **Arcane Blast** | 1 | — | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. | — |
 
 ### Tier 4 — requires 15 points in Arcane
 
@@ -150,13 +150,13 @@
 |---|---|---|---|---|---|
 | **Frost Channeling** | 3 | — | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Improved Blizzard** | 3 | — | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 15% for 1.5 sec. | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 40% for 1.5 sec. |
-| **Ice Lance** | 1 | — | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. | — |
+| **Ice Lance** | 1 | — | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. | — |
 
 ### Tier 4 — requires 15 points in Frost
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Arctic Reach** | 2 | — | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
+| **Arctic Reach** | 2 | — | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. | Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 | **Ice Block** | 1 | — | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. | — |
 | **Shatter** | 3 | — | changed | Increases the critical strike chance of all your spells against Frozen targets by 17%. | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
@@ -172,13 +172,13 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Winter's Chill** | 5 | — | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times. | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
+| **Winter's Chill** | 5 | — | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
 
 ### Tier 7 — requires 30 points in Frost
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Ice Barrier** | 1 | Cold Snap (1) | changed | Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage. | — |
+| **Ice Barrier** | 1 | Cold Snap (1) | changed | Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage. | — |
 
 ## Changes vs Classic Era (talent by talent)
 
@@ -188,7 +188,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 - **Arcane Resilience** (max rank 1 → 2, tooltip changed, was Arcane row 3, col 3, moved in build 1.60.1.70707: was row 2, col 4, max rank 2 -> 3 in build 1.60.1.70707, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Increases your armor by an amount equal to 50% of your Intellect.
-  - Forever: Increases your Armor by an amount equal to 50% of your Intellect.
+  - Forever: Increases your Armor by an amount equal to 25% of your Intellect.
 - **Arcane Subtlety** (tooltip changed, was Arcane row 1, col 1)
   - Classic: Reduces your target's resistance to all your spells by 5 and reduces the threat caused by your Arcane spells by 20%.
   - Forever: Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%.
@@ -266,10 +266,10 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
   - Forever: Finishes the remaining cooldown on all your other Frost spells.
 - **Winter's Chill** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec. Stacks up to 5 times.
-  - Forever: Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.
+  - Forever: Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times.
 - **Ice Barrier** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
   - Classic: Instantly shields you, absorbing 438 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.
-  - Forever: Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage.
+  - Forever: Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage.
 
 ---
 

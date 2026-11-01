@@ -1,6 +1,6 @@
 # Paladin — WoW: Forever talent trees (beta client 1.60.1.70707)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-30. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-31. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -52,7 +52,7 @@
 |---|---|---|---|---|---|
 | **Consecrated Ground** | 2 | — | **NEW** | Gives your Holy spells 5% increased damage against the first 4 enemies that enter your Consecration. | Gives your Holy spells 10% increased damage against the first 4 enemies that enter your Consecration. |
 | **Holy Shock** | 1 | — | changed | Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally. | — |
-| **Boundless Light** | 2 | Holy Shock (1) | **NEW** | Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light. | Increases the critical strike chance of your Holy Shock spell by 30% when cast on allies not affected by your Oath of Light. *(est.)* |
+| **Boundless Light** | 2 | Holy Shock (1) | **NEW** | Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light. | Increases the critical strike chance of your Holy Shock spell by 30% when cast on allies not affected by your Oath of Light. |
 
 ### Tier 6 — requires 25 points in Holy
 
@@ -64,7 +64,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Light's Vigil** | 1 | Holy Shock (1) | **NEW** | Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. You may only have one Light's Vigil active per party. | — |
+| **Light's Vigil** | 1 | Holy Shock (1) | **NEW** | Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 343. Only one Vigil per Paladin may be active in each party. | — |
 
 **Removed from Classic Holy:** Improved Seal of Righteousness, Consecration, Improved Lay on Hands, Improved Blessing of Wisdom, Lasting Judgement
 
@@ -91,14 +91,14 @@
 |---|---|---|---|---|---|
 | **Templar's Bulwark** | 1 | — | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. | — |
 | **Improved Hammer of Justice** | 3 | — | moved | Decreases the cooldown of your Hammer of Justice spell by 5 sec. | Decreases the cooldown of your Hammer of Justice spell by 15 sec. |
-| **Shield Specialization** | 2 | Redoubt (5) | changed | Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown. | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown. |
+| **Shield Specialization** | 2 | Redoubt (5) | changed | Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. |
 | **Toughness** | 5 | — | moved | Increases your armor value from items by 2%. | Increases your armor value from items by 10%. |
 
 ### Tier 4 — requires 15 points in Protection
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Swift Judgement** | 1 | Templar's Bulwark (1) | **NEW** | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. | — |
+| **Swift Judgement** | 1 | Templar's Bulwark (1) | **NEW** | Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability. | — |
 | **Improved Righteous Fury** | 3 | — | changed | While Righteous Fury is active, all damage taken is reduced by 3%. | While Righteous Fury is active, all damage taken is reduced by 9%. |
 | **Anticipation** | 5 | — | changed | Increases your Defense Skill by 4. | Increases your Defense Skill by 20. |
 
@@ -106,8 +106,8 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Stoicism** | 2 | — | **NEW** | Reduces the duration of Stun and Charm effects on you by 20%. | Reduces the duration of Stun and Charm effects on you by 40%. *(est.)* |
-| **Holy Shield** | 1 | — | changed | Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges. | — |
+| **Stoicism** | 2 | — | **NEW** | Reduces the duration of Stun and Charm effects on you by 10%. | Reduces the duration of Stun and Charm effects on you by 20%. |
+| **Holy Shield** | 1 | — | changed | Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges. | — |
 | **Reckoning** | 5 | — | changed | Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec. | Gives you a 40% chance after Blocking and a 100% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec. |
 
 ### Tier 6 — requires 25 points in Protection
@@ -162,7 +162,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Turn Evil** | 2 | — | **NEW** | Reduces the cast time of your Turn Undead spell by 1.5 sec, its cooldown by 2 sec, and allows it to affect Demons. | Reduces the cast time of your Turn Undead spell by 3 sec, its cooldown by 4 sec, and allows it to affect Demons. *(est.)* |
+| **Turn Evil** | 2 | — | **NEW** | Reduces the cast time of your Turn Undead spell by 0.5 sec, its cooldown by 5 sec, and allows it to affect Demons. | Reduces the cast time of your Turn Undead spell by 1.0 sec, its cooldown by 10 sec, and allows it to affect Demons. |
 | **Repentance** | 1 | — | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. | — |
 | **Vengeance** | 3 | Seal of Command (1) | changed | Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 
@@ -215,16 +215,16 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
   - Forever: Reduces the cooldown of your Blessing of Protection by 1 min and increases the duration of your Blessing of Freedom by 3 sec.
 - **Shield Specialization** (tooltip changed, max rank 3 -> 2 in build 1.60.1.70707, tooltip changed in build 1.60.1.70707 (ranks 1, 2))
   - Classic: Increases the amount of damage absorbed by your shield by 10%.
-  - Forever: Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shield rolls the same chance without the cooldown.
+  - Forever: Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.
 - **Improved Righteous Fury** (tooltip changed, moved in build 1.60.1.70707: was row 3, col 2, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
   - Classic: Increases the amount of threat generated by your Righteous Fury spell by 16%.
   - Forever: While Righteous Fury is active, all damage taken is reduced by 3%.
 - **Anticipation** (tooltip changed, was Protection row 3, col 4, moved in build 1.60.1.70707: was row 2, col 4)
   - Classic: Increases your Defense skill by 2.
   - Forever: Increases your Defense Skill by 4.
-- **Holy Shield** (tooltip changed, moved in build 1.60.1.70707: was row 7, col 2, prerequisite changed in build 1.60.1.70707: was templar s bulwark)
+- **Holy Shield** (tooltip changed, moved in build 1.60.1.70707: was row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1), prerequisite changed in build 1.60.1.70707: was templar s bulwark)
   - Classic: Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
-  - Forever: Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
+  - Forever: Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
 - **Reckoning** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 20% chance to gain an extra attack after being the victim of a critical strike.
   - Forever: Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.

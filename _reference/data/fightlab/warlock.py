@@ -180,7 +180,7 @@ MECHANICS = {
                    "(`pet_threat_bonus`; audit 2026-10-18 #25)",
     "Improved Corruption": "-0.4s/rank Corruption cast (instant at 5/5), +2%/rank damage",
     "Soul Harvest": "not used (Drain Soul kills are not part of the loop)",
-    "Improved Drains": "+7/13/20% Drain Life, Drain Soul, Wrack",
+    "Improved Drains": "+7/13/20% Drain Life, Drain Soul (Wrack until the 30 Oct hotfix; Drain Mana not cast)",
     "Improved Bane of Agony": "+5%/rank Bane of Agony",
     "Fel Concentration": "23%/rank chance to ignore pushback on drains and Wrack",
     "Amplify Curse": "+50% on the next Bane of Agony every 3 min",
@@ -494,8 +494,9 @@ class WarlockModule(BaseModule):
             m *= 1 + self.tv("Improved Bane of Agony", 0) / 100
             if self._fight and self._fight.p.buff("Amplify Curse", self._fight.t):
                 m *= 1.5
-        if spell.name in ("Drain Life", "Drain Soul", "Wrack"):
+        if spell.name in ("Drain Life", "Drain Soul"):   # the 30 Oct hotfix took Wrack out of Improved Drains (Drain Mana in; the simulator's masks agree)
             m *= 1 + self.tv("Improved Drains", 0) / 100
+        if spell.name in ("Drain Life", "Drain Soul", "Wrack"):   # Soul Siphon still names Wrack
             if self._fight:
                 others = sum(1 for n in ("Corruption", "Bane of Agony", "Siphon Life") if self._fight.dot_active(n))
                 m *= 1 + min(3, others) * self.tv("Soul Siphon", 0) / 100

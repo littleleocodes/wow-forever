@@ -4,13 +4,30 @@
 
 77 guides. Problems:
 
+- druid Feral Combat raid: **Berserk** is not a spell or talent of the class
 - druid Feral Combat raid: **Improved Shifting Power** is not a spell or talent of the class
+- druid Feral Combat leveling: **Berserk** is not a spell or talent of the class
+- druid Restoration leveling: **Berserk** is not a spell or talent of the class
 - mage Hybrid Arcane/Frost raid: **Arcane Focus** is not a spell or talent of the class
 - mage Arcane leveling: **Improved Fireball** is not a spell or talent of the class
 - mage Fire raid: **Improved Fireball** is not a spell or talent of the class
 - mage Fire leveling: **Elemental Precision** is not a spell or talent of the class
 - mage Hybrid Fire/Frost raid: **Improved Fireball** is not a spell or talent of the class
 - mage Hybrid Fire/Frost leveling: **Improved Fireball** is not a spell or talent of the class
+- paladin Retribution raid: **Twist of Light** is not a spell or talent of the class
+- paladin Retribution raid: **Instrument of Law** is not a spell or talent of the class
+- paladin Retribution raid: **Twist of Light** is not a spell or talent of the class
+- paladin Retribution raid: **Twist of Light** is not a spell or talent of the class
+- paladin Retribution leveling: **Twist of Light** is not a spell or talent of the class
+- paladin Retribution leveling: **Instrument of Law** is not a spell or talent of the class
+- paladin Protection leveling: **Improved Seal of Fury** is not a spell or talent of the class
+- paladin Protection leveling: **Instrument of Law** is not a spell or talent of the class
+- paladin Protection leveling: **One-Handed Weapon Specialization** is not a spell or talent of the class
+- paladin Holy raid: **Blessing of Light** is not a spell or talent of the class
+- paladin Holy leveling: **Instrument of Law** is not a spell or talent of the class
+- paladin Hybrid Protection/Retribution leveling: **Instrument of Law** is not a spell or talent of the class
+- paladin Hybrid Protection/Retribution leveling: **Instrument of Law** is not a spell or talent of the class
+- paladin Hybrid Protection/Retribution leveling: **Improved Seal of Fury** is not a spell or talent of the class
 
 Guides whose rotation changed since they were stamped (28; rewrite or confirm, then `--stamp`):
 

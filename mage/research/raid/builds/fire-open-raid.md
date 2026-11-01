@@ -7,7 +7,7 @@
 | **Build** | 17/31/3 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -20,7 +20,7 @@ The Fire raid build the open talent search found on 2026-10-31: every legal 51-p
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. *(est. — extrapolated from rank 1)* |
+| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
@@ -62,18 +62,19 @@ The Fire raid build the open talent search found on 2026-10-31: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**1 of 8** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 540 | +0.0% | 787 | +0.0% | 9 s |
-| 2 | *Fire* | community simulator | - | 540 | -0.1% | 780 | -0.9% | 15 s |
-| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 537 | -0.5% | 762 | -3.1% | 9 s |
-| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 531 | -1.7% | 763 | -3.0% | 15 s |
-| 5 | *FFB* | community simulator | - | 442 | -18.1% | 578 | -26.5% | 41 s |
-| 6 | *Arcane Fire* | community simulator | - | 388 | -28.1% | 641 | -18.5% | 1 s |
-| 7 | *Arcane* | community simulator | - | 343 | -36.5% | 437 | -44.4% | 1 s |
-| 8 | *Frost* | community simulator | - | 304 | -43.8% | 390 | -50.4% | 0 s |
+| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 540 | +0.0% | 810 | -1.6% | 9 s |
+| 2 | *Fire* | community simulator | - | 540 | -0.1% | 824 | +0.0% | 15 s |
+| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 537 | -0.5% | 793 | -3.8% | 9 s |
+| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 531 | -1.7% | 798 | -3.1% | 15 s |
+| 5 | *FFB* | community simulator | - | 442 | -18.1% | 738 | -10.4% | 41 s |
+| 6 | *Arcane Fire* | community simulator | - | 388 | -28.1% | 578 | -29.8% | 1 s |
+| 7 | *Arcane* | community simulator | - | 343 | -36.5% | 397 | -51.8% | 1 s |
+| 8 | *Frost Incin* | community simulator | - | 317 | -41.3% | 302 | -63.3% | 0 s |
+| 9 | *Frost Med* | community simulator | - | 304 | -43.8% | 353 | -57.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +91,7 @@ The Fire raid build the open talent search found on 2026-10-31: every legal 51-p
   10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
   11. insert at the end: cast Frost Blast (+0.5%, pass 5)
   12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-31, 28 changes to the base rotation; third-seed check: open winner 673 -> 781 DPS (+16.1%), fire-open-raid 670 -> 776 DPS (+15.9%), sim preset: Fire 674 -> 779 DPS (+15.6%), fire-raid 666 -> 763 DPS (+14.6%), opt-fire-raid-raid-dps 656 -> 763 DPS (+16.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-10-31, 29 changes to the base rotation; third-seed check: fire-open-raid 667 -> 809 DPS (+21.3%), sim preset: Fire 674 -> 821 DPS (+21.9%), fire-raid 666 -> 797 DPS (+19.7%), opt-fire-raid-raid-dps 656 -> 792 DPS (+20.8%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -119,6 +120,7 @@ The Fire raid build the open talent search found on 2026-10-31: every legal 51-p
   26. move to the top: cast Fire Blast (+1.2%, pass 10)
   27. drop: cast Robe of the Archmage (+0.6%, pass 10)
   28. insert before the filler: if (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) (+0.4%, pass 10)
+  29. rotation replaced by the official simulator's deepFire.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+2.8%, pass 11)
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-open-raid`](fire-open-raid.md) casts/min |
 |---|---|---|

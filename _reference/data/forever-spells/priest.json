@@ -2,10 +2,10 @@
  "class": "Priest",
  "slug": "priest",
  "build": "1.60.1.70630",
- "captured": "2026-10-30",
- "export_generated": "2026-10-29",
+ "captured": "2026-10-31",
+ "export_generated": "2026-10-30",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-29, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
   "beta": 238,
   "demo": 0,
@@ -1439,7 +1439,6 @@
        "cooldown": "",
        "requires": "",
        "level": 25,
-       "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
        }
@@ -4442,7 +4441,7 @@
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "175 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4451,21 +4450,6 @@
        "level": 32,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "A word of dark binding that inflicts 293 to 311 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
-         }
-        }
        }
       },
       {
@@ -4475,7 +4459,7 @@
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "205 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4484,21 +4468,6 @@
        "level": 40,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "A word of dark binding that inflicts 368 to 390 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
-         }
-        }
        }
       },
       {
@@ -4508,7 +4477,7 @@
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "250 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4517,21 +4486,6 @@
        "level": 48,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "A word of dark binding that inflicts 402 to 426 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
-         }
-        }
        }
       },
       {
@@ -4541,7 +4495,7 @@
        "school": "Shadow",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "340 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4550,21 +4504,6 @@
        "level": 56,
        "classic": {
         "status": "new"
-       },
-       "hotfix": {
-        "date": "2026-10-30",
-        "sources": [
-         "https://foreverchanges.pro/patch-notes",
-         "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-        ],
-        "ranks": [
-         1
-        ],
-        "before": {
-         "1": {
-          "text": "A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health."
-         }
-        }
        }
       }
      ]

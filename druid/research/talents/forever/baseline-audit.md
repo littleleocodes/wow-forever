@@ -19,7 +19,7 @@
 | Restoration | Gift of Nature | 5 | changed | tier 3, max 5 — tooltip changed; was Restoration row 5, col 3 |
 | Restoration | Improved Tranquility | 2 | changed | tier 5, max 2 — tooltip changed |
 | Restoration | Improved Regrowth | 5 | unchanged | tier 6, max 5 |
-| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2 |
+| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
 
 **Orphaned points to re-spend: 10.** Points in changed/moved talents to re-evaluate: 30.
 
@@ -136,7 +136,7 @@
 | Restoration | Nature's Swiftness | 1 | unchanged | tier 5, max 1 |
 | Restoration | Gift of Nature | 5 | changed | tier 3, max 5 — tooltip changed; was Restoration row 5, col 3 |
 | Restoration | Improved Regrowth | 5 | unchanged | tier 6, max 5 |
-| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2 |
+| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
 
 **Orphaned points to re-spend: 12.** Points in changed/moved talents to re-evaluate: 28.
 

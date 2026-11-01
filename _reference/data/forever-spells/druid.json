@@ -2,12 +2,12 @@
  "class": "Druid",
  "slug": "druid",
  "build": "1.60.1.70630",
- "captured": "2026-10-30",
- "export_generated": "2026-10-29",
+ "captured": "2026-10-31",
+ "export_generated": "2026-10-30",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-29, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
-  "beta": 209,
+  "beta": 211,
   "demo": 0,
   "classic": 0
  },
@@ -15,7 +15,7 @@
   "changed": 127,
   "note": 9,
   "same": 56,
-  "new": 17
+  "new": 19
  },
  "tabs": [
   {
@@ -712,11 +712,11 @@
       {
        "rank": "Shapeshift",
        "id": 24858,
-       "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "35% of base mana",
        "range": "",
        "cast": "Instant",
@@ -1537,30 +1537,6 @@
      ]
     },
     {
-     "name": "Berserk",
-     "ranks": [
-      {
-       "rank": "",
-       "id": 417141,
-       "text": "Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.",
-       "school": "Physical",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "",
-       "range": "",
-       "cast": "Instant",
-       "cooldown": "3 min cooldown",
-       "requires": "Requires Cat Form, Bear Form, Dire Bear Form",
-       "level": 40,
-       "not_from_class_trainer": "talent-taught",
-       "classic": {
-        "status": "new"
-       }
-      }
-     ]
-    },
-    {
      "name": "Cat Form",
      "ranks": [
       {
@@ -2022,6 +1998,24 @@
      "ranks": [
       {
        "rank": "Rank 1",
+       "id": 1328618,
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.6 additional damage. Damage is increased by your Attack Power.\n 1 point : 33-43 damage\n 2 points: 57-67 damage\n 3 points: 81-91 damage\n 4 points: 105-115 damage\n 5 points: 129-139 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "1 to 5 Combo Points; Requires Cat Form",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
        "id": 22568,
        "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 50-66 damage\n 2 points: 86-102 damage\n 3 points: 122-138 damage\n 4 points: 158-174 damage\n 5 points: 194-210 damage",
        "school": "Physical",
@@ -2039,7 +2033,7 @@
        }
       },
       {
-       "rank": "Rank 2",
+       "rank": "Rank 3",
        "id": 22827,
        "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 79-103 damage\n 2 points: 138-162 damage\n 3 points: 197-221 damage\n 4 points: 256-280 damage\n 5 points: 315-339 damage",
        "school": "Physical",
@@ -2057,7 +2051,7 @@
        }
       },
       {
-       "rank": "Rank 3",
+       "rank": "Rank 4",
        "id": 22828,
        "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 122-162 damage\n 2 points: 214-254 damage\n 3 points: 306-346 damage\n 4 points: 398-438 damage\n 5 points: 490-530 damage",
        "school": "Physical",
@@ -2075,7 +2069,7 @@
        }
       },
       {
-       "rank": "Rank 4",
+       "rank": "Rank 5",
        "id": 22829,
        "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 173-223 damage\n 2 points: 301-351 damage\n 3 points: 429-479 damage\n 4 points: 557-607 damage\n 5 points: 685-735 damage",
        "school": "Physical",
@@ -2093,7 +2087,7 @@
        }
       },
       {
-       "rank": "Rank 5",
+       "rank": "Rank 6",
        "id": 31018,
        "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.7 additional damage. Damage is increased by your Attack Power.\n 1 point : 199-259 damage\n 2 points: 346-406 damage\n 3 points: 493-553 damage\n 4 points: 640-700 damage\n 5 points: 787-847 damage",
        "school": "Physical",
@@ -2170,6 +2164,43 @@
      "ranks": [
       {
        "rank": "Rank 1",
+       "id": 1328617,
+       "text": "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Bear Form, Dire Bear Form",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1328616,
+       "text": "Lacerates the enemy target, making them bleed for 30 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Bear Form, Dire Bear Form",
+       "level": 34,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
        "id": 414644,
        "text": "Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
        "school": "Physical",
@@ -2187,7 +2218,7 @@
        }
       },
       {
-       "rank": "Rank 2",
+       "rank": "Rank 4",
        "id": 1235826,
        "text": "Lacerates the enemy target, making them bleed for 60 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
        "school": "Physical",
@@ -2205,7 +2236,7 @@
        }
       },
       {
-       "rank": "Rank 3",
+       "rank": "Rank 5",
        "id": 1235827,
        "text": "Lacerates the enemy target, making them bleed for 75 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
        "school": "Physical",
@@ -2420,17 +2451,17 @@
       {
        "rank": "Rank 1",
        "id": 407995,
-       "text": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
+       "text": "Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "20 Rage",
        "range": "Melee Range",
        "cast": "Instant",
        "cooldown": "6 sec cooldown",
        "requires": "Requires Bear Form, Dire Bear Form",
-       "level": 25,
+       "level": 40,
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
@@ -2439,17 +2470,17 @@
       {
        "rank": "Rank 2",
        "id": 1238069,
-       "text": "Bite the target, dealing 100% normal damage plus 38 and generating a high amount of threat.",
+       "text": "Bite the target, dealing 100% normal damage plus 62 and generating a high amount of threat.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "20 Rage",
        "range": "Melee Range",
        "cast": "Instant",
        "cooldown": "6 sec cooldown",
        "requires": "Requires Bear Form, Dire Bear Form",
-       "level": 36,
+       "level": 50,
        "classic": {
         "status": "new"
        }
@@ -2457,17 +2488,17 @@
       {
        "rank": "Rank 3",
        "id": 1238070,
-       "text": "Bite the target, dealing 100% normal damage plus 59 and generating a high amount of threat.",
+       "text": "Bite the target, dealing 100% normal damage plus 77 and generating a high amount of threat.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "20 Rage",
        "range": "Melee Range",
        "cast": "Instant",
        "cooldown": "6 sec cooldown",
        "requires": "Requires Bear Form, Dire Bear Form",
-       "level": 48,
+       "level": 60,
        "classic": {
         "status": "new"
        }
@@ -2479,7 +2510,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630 (missing from the 1.60.1.70630 export; kept from the previous forever-spells file by build_forever_spells.py's guard)",
        "cost": "20 Rage",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2848,13 +2879,13 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "55% of base mana",
        "range": "",
        "cast": "Instant",
-       "cooldown": "16 sec cooldown",
+       "cooldown": "8 sec cooldown",
        "requires": "Requires Cat Form",
-       "level": 25,
+       "level": 40,
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
@@ -4311,11 +4342,11 @@
       {
        "rank": "",
        "id": 18562,
-       "text": "Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells.",
+       "text": "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "20% of base mana",
        "range": "40 yd range",
        "cast": "Instant",
@@ -4422,14 +4453,14 @@
       {
        "rank": "Rank 1",
        "id": 408120,
-       "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+       "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
        "coefficient": "3.3% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "550 Mana",
        "range": "40 yd range",
-       "cast": "Instant",
+       "cast": "3 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
        "level": 40,
@@ -4441,14 +4472,14 @@
       {
        "rank": "Rank 2",
        "id": 1238214,
-       "text": "Heals the target and their party for 490 over 7 sec. Party members must be within 43 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+       "text": "Heals the target and their party for 490 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
        "coefficient": "3.3% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "755 Mana",
        "range": "40 yd range",
-       "cast": "Instant",
+       "cast": "3 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
        "level": 50,
@@ -4459,14 +4490,14 @@
       {
        "rank": "Rank 3",
        "id": 1238215,
-       "text": "Heals the target and their party for 679 over 7 sec. Party members must be within 43 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+       "text": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
        "coefficient": "3.3% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "1,050 Mana",
        "range": "40 yd range",
-       "cast": "Instant",
+       "cast": "3 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
        "level": 60,

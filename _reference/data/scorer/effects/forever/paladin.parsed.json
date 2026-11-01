@@ -223,7 +223,7 @@
  "Light's Vigil": {
   "tree": "Holy",
   "max": 1,
-  "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targ",
+  "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 343. Only one Vigil per Paladin may be active in each p",
   "effects": []
  },
  "Divine Intellect": {
@@ -338,7 +338,7 @@
  "Shield Specialization": {
   "tree": "Protection",
   "max": 2,
-  "text": "Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. With Shieldsworn, a Holy Strike that lands with a shi",
+  "text": "Increases the amount of damage absorbed by your shield by 15%, and gives your blocks a 50% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
   "effects": []
  },
  "Toughness": {
@@ -365,19 +365,8 @@
  "Swift Judgement": {
   "tree": "Protection",
   "max": 1,
-  "text": "Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%.",
-  "effects": [
-   {
-    "channel": "mana_cost",
-    "scope": [
-     "unknown:next Judgement"
-    ],
-    "values": [
-     1.0
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.",
+  "effects": []
  },
  "Improved Righteous Fury": {
   "tree": "Protection",
@@ -409,13 +398,13 @@
  "Stoicism": {
   "tree": "Protection",
   "max": 2,
-  "text": "Reduces the duration of Stun and Charm effects on you by 20%.",
+  "text": "Reduces the duration of Stun and Charm effects on you by 10%.",
   "effects": []
  },
  "Holy Shield": {
   "tree": "Protection",
   "max": 1,
-  "text": "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+  "text": "Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
   "effects": []
  },
  "Reckoning": {
@@ -616,7 +605,7 @@
  "Turn Evil": {
   "tree": "Retribution",
   "max": 2,
-  "text": "Reduces the cast time of your Turn Undead spell by 1.5 sec, its cooldown by 2 sec, and allows it to affect Demons.",
+  "text": "Reduces the cast time of your Turn Undead spell by 0.5 sec, its cooldown by 5 sec, and allows it to affect Demons.",
   "effects": [
    {
     "channel": "cast_time",
@@ -624,8 +613,8 @@
      "ability:Turn Undead"
     ],
     "values": [
-     1.5,
-     3.0
+     0.5,
+     1.0
     ],
     "source": "parsed"
    }

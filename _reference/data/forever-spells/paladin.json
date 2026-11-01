@@ -2,17 +2,17 @@
  "class": "Paladin",
  "slug": "paladin",
  "build": "1.60.1.70630",
- "captured": "2026-10-30",
- "export_generated": "2026-10-29",
+ "captured": "2026-10-31",
+ "export_generated": "2026-10-30",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-29, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
-  "beta": 167,
+  "beta": 161,
   "demo": 0,
   "classic": 0
  },
  "classic_status_counts": {
-  "changed": 102,
+  "changed": 96,
   "same": 41,
   "new": 23,
   "note": 1
@@ -21,71 +21,6 @@
   {
    "name": "Holy",
    "spells": [
-    {
-     "name": "Blessing of Light",
-     "ranks": [
-      {
-       "rank": "Rank 1",
-       "id": 19977,
-       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 210 and the effect Flash of Light spells used on the target by up to 60. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "85 Mana",
-       "range": "30 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "",
-       "level": 40,
-       "classic": {
-        "status": "changed",
-        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 210 and the effect Flash of Light spells used on the target by up to 60. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
-        "change_kind": "reworded"
-       }
-      },
-      {
-       "rank": "Rank 2",
-       "id": 19978,
-       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 300 and the effect Flash of Light spells used on the target by up to 85. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "110 Mana",
-       "range": "30 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "",
-       "level": 50,
-       "classic": {
-        "status": "changed",
-        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 300 and the effect Flash of Light spells used on the target by up to 85. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
-        "change_kind": "reworded"
-       }
-      },
-      {
-       "rank": "Rank 3",
-       "id": 19979,
-       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "135 Mana",
-       "range": "30 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "",
-       "level": 60,
-       "classic": {
-        "status": "changed",
-        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
-        "change_kind": "reworded"
-       }
-      }
-     ]
-    },
     {
      "name": "Blessing of Wisdom",
      "ranks": [
@@ -355,7 +290,7 @@
        "cast": "Instant",
        "cooldown": "2 min cooldown",
        "requires": "",
-       "level": 25,
+       "level": 20,
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "same"
@@ -609,31 +544,6 @@
         "status": "changed",
         "text": "Heals a friendly target for 348 to 388.",
         "change_kind": "numbers"
-       }
-      }
-     ]
-    },
-    {
-     "name": "Greater Blessing of Light",
-     "ranks": [
-      {
-       "rank": "",
-       "id": 25890,
-       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "260 Mana",
-       "range": "40 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "Reagents: Symbol of Kings",
-       "level": 60,
-       "classic": {
-        "status": "changed",
-        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 15 min. Players may only have one Blessing on them per Paladin at any one time.",
-        "change_kind": "reworded"
        }
       }
      ]
@@ -1150,13 +1060,13 @@
       {
        "rank": "Rank 1",
        "id": 1310911,
-       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. You may only have one Light's Vigil active per party.",
+       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 343. Only one Vigil per Paladin may be active in each party.",
        "school": "Holy",
        "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "730 Mana",
-       "range": "Friendly: 40 yd range",
+       "range": "40 yd range",
        "cast": "1.5 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
@@ -1169,13 +1079,13 @@
       {
        "rank": "Rank 2",
        "id": 1311590,
-       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 268 to 288 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 486 to 514. You may only have one Light's Vigil active per party.",
+       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 486 to 514. Only one Vigil per Paladin may be active in each party.",
        "school": "Holy",
        "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "1,000 Mana",
-       "range": "Friendly: 40 yd range",
+       "range": "40 yd range",
        "cast": "1.5 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
@@ -1187,17 +1097,41 @@
       {
        "rank": "Rank 3",
        "id": 1311595,
-       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 380 to 410 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 684 to 724. You may only have one Light's Vigil active per party.",
+       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 684 to 724. Only one Vigil per Paladin may be active in each party.",
        "school": "Holy",
        "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "1,340 Mana",
-       "range": "Friendly: 40 yd range",
+       "range": "40 yd range",
        "cast": "1.5 sec cast",
        "cooldown": "6 sec cooldown",
        "requires": "",
        "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Oath of Light",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1328548,
+       "text": "Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light, Flash of Light, and Holy Shock on them. Only one Oath of Light may be sworn by the Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "8% of base mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
        }
@@ -1740,7 +1674,6 @@
        "cooldown": "3 min cooldown",
        "requires": "",
        "level": 20,
-       "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
        }
@@ -2411,32 +2344,58 @@
       {
        "rank": "Rank 1",
        "id": 20925,
-       "text": "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+       "text": "Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "150 Mana",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "100 Mana",
        "range": "",
        "cast": "Instant",
        "cooldown": "10 sec cooldown",
        "requires": "Requires Shields",
-       "level": 40,
+       "level": 30,
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "changed",
         "text": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "classic_cost": "150 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
         "change_kind": "numbers"
        }
       },
       {
        "rank": "Rank 2",
        "id": 20927,
+       "text": "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
+       "cost": "150 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Shields",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Increases chance to block by 30% for 10 sec, and deals 95 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "classic_cost": "195 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20928,
        "text": "Increases chance to block by 30% for 10 sec, and deals 153 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "195 Mana",
        "range": "",
        "cast": "Instant",
@@ -2445,76 +2404,11 @@
        "level": 50,
        "classic": {
         "status": "changed",
-        "text": "Increases chance to block by 30% for 10 sec, and deals 95 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
-        "change_kind": "reworded"
-       }
-      },
-      {
-       "rank": "Rank 3",
-       "id": 20928,
-       "text": "Increases chance to block by 30% for 10 sec, and deals 221 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "240 Mana",
-       "range": "",
-       "cast": "Instant",
-       "cooldown": "10 sec cooldown",
-       "requires": "Requires Shields",
-       "level": 60,
-       "classic": {
-        "status": "changed",
         "text": "Increases chance to block by 30% for 10 sec, and deals 130 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "classic_cost": "240 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
         "change_kind": "reworded"
-       }
-      }
-     ]
-    },
-    {
-     "name": "Mass Salvation",
-     "ranks": [
-      {
-       "rank": "",
-       "id": 25895,
-       "text": "Gives all members of the raid or group that share the same class with the target a reduction to all threat generated by 30% for 1 hour.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "16% of base mana",
-       "range": "40 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "Reagents: Symbol of Kings",
-       "level": 60,
-       "classic": {
-        "status": "changed",
-        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salvation, reducing the amount of all threat generated by 30% for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
-        "change_kind": "reworded"
-       }
-      }
-     ]
-    },
-    {
-     "name": "Revoke",
-     "ranks": [
-      {
-       "rank": "",
-       "id": 1325499,
-       "text": "Remove target party or raid member's Salvation or Mass Salvation.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "",
-       "range": "40 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "",
-       "level": 26,
-       "classic": {
-        "status": "new"
        }
       }
      ]
@@ -2525,45 +2419,20 @@
       {
        "rank": "",
        "id": 25780,
-       "text": "Increases the threat generated by your Holy attacks by 90%. Lasts 30 min.",
+       "text": "Increases all threat generated by 33%, and all threat generated by your Holy attacks by an additional 90%. Lasts 30 min.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "30% of base mana",
        "range": "",
        "cast": "Instant",
        "cooldown": "",
        "requires": "",
-       "level": 16,
+       "level": 10,
        "classic": {
         "status": "changed",
         "text": "Increases the threat generated by your Holy attacks by 60%. Lasts 30 min.",
-        "change_kind": "numbers"
-       }
-      }
-     ]
-    },
-    {
-     "name": "Salvation",
-     "ranks": [
-      {
-       "rank": "",
-       "id": 1038,
-       "text": "Reduces all threat generated by target party member by 30% for 1 hour.",
-       "school": "Holy",
-       "coefficient": null,
-       "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
-       "cost": "8% of base mana",
-       "range": "30 yd range",
-       "cast": "Instant",
-       "cooldown": "",
-       "requires": "",
-       "level": 26,
-       "classic": {
-        "status": "changed",
-        "text": "Places a Blessing on the party member, reducing the amount of all threat generated by 30% for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
         "change_kind": "reworded"
        }
       }
@@ -2575,11 +2444,11 @@
       {
        "rank": "Rank 1",
        "id": 1311649,
-       "text": "Fills you with divine fury for 30 sec, causing melee attacks to deal an additional 6 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 32 to 34 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills you with divine fury for 30 sec, causing melee attacks to deal an additional 6 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 32 to 34 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "40 Mana",
        "range": "",
        "cast": "Instant",
@@ -2593,11 +2462,11 @@
       {
        "rank": "Rank 2",
        "id": 1311656,
-       "text": "Fills you with divine fury for 30 sec, causing melee attacks to inflict an additional 9 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 47 to 51 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills you with divine fury for 30 sec, causing melee attacks to inflict an additional 9 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 47 to 51 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "60 Mana",
        "range": "",
        "cast": "Instant",
@@ -2611,11 +2480,11 @@
       {
        "rank": "Rank 3",
        "id": 20163,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 14 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 66 to 72 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 14 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 66 to 72 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "90 Mana",
        "range": "",
        "cast": "Instant",
@@ -2629,11 +2498,11 @@
       {
        "rank": "Rank 4",
        "id": 20419,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 19 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 86 to 94 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 19 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 86 to 94 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "120 Mana",
        "range": "",
        "cast": "Instant",
@@ -2647,11 +2516,11 @@
       {
        "rank": "Rank 5",
        "id": 20421,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 25 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 111 to 121 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 25 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 111 to 121 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "140 Mana",
        "range": "",
        "cast": "Instant",
@@ -2665,11 +2534,11 @@
       {
        "rank": "Rank 6",
        "id": 20422,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 32 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 140 to 150 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 32 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 140 to 150 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "170 Mana",
        "range": "",
        "cast": "Instant",
@@ -2683,11 +2552,11 @@
       {
        "rank": "Rank 7",
        "id": 20423,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "200 Mana",
        "range": "",
        "cast": "Instant",
@@ -2794,13 +2663,13 @@
       {
        "rank": "",
        "id": 1310994,
-       "text": "Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%.",
+       "text": "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70630, server hotfix 2026-10-30",
        "cost": "",
-       "range": "",
+       "range": "10 yd range",
        "cast": "Instant",
        "cooldown": "1 min cooldown",
        "requires": "",
@@ -2828,7 +2697,7 @@
        "cast": "Instant",
        "cooldown": "5 min cooldown",
        "requires": "",
-       "level": 30,
+       "level": 20,
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"

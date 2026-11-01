@@ -7,7 +7,7 @@
 | **Build** | 31/13/7 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
-| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
+| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
@@ -71,13 +71,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 32/16/3 | 543 | +0.0% | 720 | +0.0% | 15 s |
-| 2 | *Arcane Fire* | community simulator | - | 536 | -1.3% | 700 | -2.8% | 14 s |
-| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -4.7% | 657 | -8.7% | 16 s |
+| 1 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 32/16/3 | 543 | +0.0% | 720 | -0.8% | 15 s |
+| 2 | *Arcane Fire* | community simulator | - | 536 | -1.3% | 726 | +0.0% | 14 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -4.7% | 657 | -9.5% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,7 +96,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
   12. move down below 'if Missile Barrage is up: cast Arcane Missiles (rank 7)': cast Fire Blast (+0.2%, pass 6)
   13. only with 10s or more of the fight left: if stacks of Arcane Blast ≥ 1.5: cast Frostbolt (rank 10) (+0.2%, pass 6)
   14. insert before the filler: cast Mana Citrine (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-31, 26 changes to the base rotation; third-seed check: open winner 710 -> 721 DPS (+1.6%), arcane-open-raid 705 -> 711 DPS (+0.9%), sim preset: Arcane Fire 696 -> 700 DPS (+0.6%), arcane-blast-raid 631 -> 658 DPS (+4.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-31, 27 changes to the base rotation; third-seed check: arcane-open-raid 734 -> 721 DPS (-1.8%), sim preset: Arcane Fire 717 -> 726 DPS (+1.3%), arcane-blast-raid 577 -> 658 DPS (+14.1%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
@@ -123,6 +123,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
   24. drop: if mana % < 15% and time left in the fight > 80s: cast Evocation (+3.8%, pass 10)
   25. insert in the middle: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast ≤ 2) and not spellIsCasting: cast Arcane Blast (+0.2%, pass 11)
   26. drop 'stacks of Arcane Blast < 2' from the condition: if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast (+0.5%, pass 11)
+  27. insert in the middle: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast (+1.9%, pass 12)
 
 | # | Priority (the first line whose condition holds is cast) | [`arcane-blast-raid`](arcane-blast-raid.md) casts/min |
 |---|---|---|

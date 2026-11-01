@@ -7,11 +7,11 @@
 | **Build** | 18/31/2 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Fury raid build the open talent search found on 2026-10-28: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
+The Fury raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -61,15 +61,15 @@ The Fury raid build the open talent search found on 2026-10-28: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 18/31/2 | 501 | +0.0% | 925 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 497 | -0.7% | 914 | -1.2% | 0 s |
-| 3 | *Fury* | community simulator | - | 493 | -1.6% | 911 | -1.5% | 0 s |
-| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 474 | -5.3% | 875 | -5.4% | 0 s |
-| 5 | *Arms* | community simulator | - | 344 | -31.3% | 653 | -29.4% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 18/31/2 | 468 | +0.0% | 864 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 464 | -0.9% | 857 | -0.8% | 0 s |
+| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 464 | -1.0% | 854 | -1.2% | 0 s |
+| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 443 | -5.5% | 816 | -5.6% | 0 s |
+| 5 | *Arms* | community simulator | - | 326 | -30.5% | 611 | -29.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,7 +95,7 @@ The Fury raid build the open talent search found on 2026-10-28: every legal 51-p
   19. threshold 30s -> 45s: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+1.2%, pass 5)
   20. threshold 22.5s -> 33.75s: if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready (+0.4%, pass 5)
   21. drop: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-27, 18 changes to the base rotation; third-seed check: fury-open-raid 833 -> 924 DPS (+10.9%), sim preset: DPS 788 -> 874 DPS (+10.8%), fury-dw-raid 792 -> 874 DPS (+10.4%), opt-fury-dw-raid-raid-dps 819 -> 910 DPS (+11.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-31, 19 changes to the base rotation; third-seed check: fury-open-raid 736 -> 862 DPS (+17.2%), sim preset: Fury 733 -> 851 DPS (+16.1%), fury-dw-raid 697 -> 815 DPS (+16.8%), opt-fury-dw-raid-raid-dps 722 -> 852 DPS (+18.0%)):
   1. drop: if false: cast Recklessness (+11.1%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+2.5%, pass 1)
   3. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.7%, pass 1)
@@ -114,12 +114,13 @@ The Fury raid build the open talent search found on 2026-10-28: every legal 51-p
   16. drop the condition: if number of targets > 1: cast Whirlwind (+0.3%, pass 7)
   17. threshold 1.5s -> 1s: if time until Bloodthirst is ready > 1.125s and time until Whirlwind is ready > 1.5s: cast Hamstring (+0.3%, pass 8)
   18. insert before the filler: if rage < 90: cast Bloodrage (+0.2%, pass 8)
+  19. insert in the middle: if (selectedPotion or selectedPotion or selectedPotion) and rage ≤ 15: cast OffensivePotion (+0.2%, pass 9)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](fury-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 7.0 |
-| 3 | cast Bloodthirst | 7.4 |
+| 2 | if execute phase (E20): cast Execute | 6.9 |
+| 3 | cast Bloodthirst | 7.1 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -141,8 +142,8 @@ Damage by ability:
 | Ability | [`fury-open-raid`](fury-open-raid.md) |
 |---|---|
 | Auto Attack | 43% |
-| Execute | 25% |
-| Bloodthirst | 17% |
+| Execute | 26% |
+| Bloodthirst | 16% |
 | Whirlwind | 9% |
 | Deep Wound | 6% |
 
@@ -150,10 +151,10 @@ Damage by ability:
 
 - +5.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
 - Open search result (fury-dw-raid, full raid): 18/31/2 (Fury) at 924.2 DPS; opt-fury-dw-raid-raid-dps 913.9, fury-dw-raid 873.9 in the same fights; 5,742 builds simulated, 2 independent runs reached the top.
-- The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 845.0, arms-2h-raid 827.9.
+- The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 816.4, arms-2h-raid 798.3.
 - Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.5%, arms-battle-raid -18.8%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Blood Craze.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
+- Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 

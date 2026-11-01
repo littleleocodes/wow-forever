@@ -51,10 +51,15 @@ def _talent_ranks(name, pattern):
     raise ValueError(f"heallab/paladin.py: no talent {name} in forever-talents/paladin.json")
 
 
-# Blessing of Light on the tank (its top rank, a baseline spell): bonus healing of each Holy Light and Flash of Light he receives
-_bol = (_top_rank("Blessing of Light").get("text") or "").replace("\n", " ")
-BLESSING_OF_LIGHT = {"Holy Light": _num(re.search(r"Holy Light spells used on the target by up to (\d[\d,]*)", _bol).group(1)),
-                     "Flash of Light": _num(re.search(r"Flash of Light spells used on the target by up to (\d[\d,]*)", _bol).group(1))}
+# Blessing of Light on the tank (its top rank, a baseline spell): bonus healing of each Holy Light and Flash of Light he receives.
+# The 30 Oct hotfix took it out of the spellbook (talentsforever's 70685 export, 2026-10-31: "Gone from the spellbook"; Oath of Light,
+# a one-ally bonus to the same heals, came in): no bonus when the spellbook lacks it.
+try:
+    _bol = (_top_rank("Blessing of Light").get("text") or "").replace("\n", " ")
+    BLESSING_OF_LIGHT = {"Holy Light": _num(re.search(r"Holy Light spells used on the target by up to (\d[\d,]*)", _bol).group(1)),
+                         "Flash of Light": _num(re.search(r"Flash of Light spells used on the target by up to (\d[\d,]*)", _bol).group(1))}
+except ValueError:
+    BLESSING_OF_LIGHT = {}
 # per rank, from the 70291 tooltips
 ILLUMINATION = [(c / 100, s / 100) for c, s in _talent_ranks("Illumination", r"(\d+)% chance to gain Mana equal to (\d+)% of the base cost")]
 ILLUMINATION_SPELLS = ("Holy Light", "Flash of Light", "Holy Shock", "Light's Vigil")
@@ -71,7 +76,8 @@ BENEDICTION = [v / 100 for (v,) in _talent_ranks("Benediction", r"by (\d+)%")]
 # party for X to Y"; the healing coefficient is the spellbook's "(heal)" one
 _lv = _top_rank("Light's Vigil")
 _lv_text = (_lv.get("text") or "").replace("\n", " ")
-_lv_heal = re.search(r"heal their party for (\d[\d,]*) to (\d[\d,]*)", _lv_text)
+# 70685 export (30 Oct hotfix): "heals the target and their party for X to Y" (the damage half is gone); before: "heal their party for"
+_lv_heal = re.search(r"heals? (?:the target and )?their party for (\d[\d,]*) to (\d[\d,]*)", _lv_text)
 _lv_coef = re.search(r"([\d.]+)% of spell power \(heal\)", _lv.get("coefficient") or "")
 VIGIL = {"rank": int(re.search(r"\d+", _lv.get("rank") or "1").group(0)), "level": int(_lv.get("level") or 60),
          "cost": _num(re.search(r"(\d[\d,]*)", _lv.get("cost") or "0").group(1)), "cast": E._seconds(_lv.get("cast")),

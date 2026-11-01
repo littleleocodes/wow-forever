@@ -7,7 +7,7 @@
 | **Build** | 32/3/16 (Discipline / Holy / Shadow) |
 | **Role** | HEALER — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -29,7 +29,7 @@ The Discipline PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 | **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
 | **Improved Mana Burn** | 2/2 | changed | Reduces the casting time of your Mana Burn spell by 1.0 sec. |
 | **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. |
-| **Renewed Hope** | 5/5 | **NEW** | Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec. |
+| **Renewed Hope** | 5/5 | **NEW** | Your heals from Flash Heal, Lesser Heal, Heal, Greater Heal, and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec. |
 | **Divine Aegis** | 3/3 | **NEW** | Your non-periodic critical heals create a protective shield on the target, absorbing 15% of the amount healed. Shields up to 1,200 damage and lasts 12 sec. |
 | **Power Infusion** | 1/1 | changed | Infuses the target with power, increasing their spell damage and healing done by 20% for 15 sec. |
 

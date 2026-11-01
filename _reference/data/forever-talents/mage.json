@@ -2,13 +2,13 @@
   "slug": "mage",
   "name": "Mage",
   "build": "1.60.1.70707",
-  "captured": "2026-10-30",
+  "captured": "2026-10-31",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-29",
+      "generated": "2026-10-30",
       "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
@@ -74,10 +74,7 @@
       "build": "1.60.1.70707"
     }
   ],
-  "merge_notes": [
-    "Arcane/Arcane Resilience: rank cap 2 -> 3; ranks 3-3 extended from the export's rank-1 step (estimated)",
-    "live hotfix numbers of 2026-10-30 written into Arctic Reach, Winter's Chill, Ice Barrier (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
-  ],
+  "merge_notes": [],
   "trees": [
     {
       "id": "arcane",
@@ -160,9 +157,6 @@
             "moved in build 1.60.1.70707: was row 2, col 4",
             "max rank 2 -> 3 in build 1.60.1.70707",
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
-          ],
-          "estimated": [
-            2
           ]
         },
         {
@@ -292,7 +286,7 @@
           "icon": "spell_arcane_blast",
           "maxRank": 1,
           "ranks": [
-            "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
+            "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application."
           ],
           "status": "new",
           "evidence": "mage/10-mage-arcane-arcane-blast.jpg",
@@ -1102,7 +1096,7 @@
           "icon": "spell_frost_frostblast",
           "maxRank": 1,
           "ranks": [
-            "Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets."
+            "Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets."
           ],
           "status": "new",
           "evidence": "mage/45-mage-frost-ice-lance.jpg",
@@ -1122,8 +1116,8 @@
           "icon": "spell_shadow_darkritual",
           "maxRank": 2,
           "ranks": [
-            "Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
-            "Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+            "Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+            "Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
           ],
           "status": "same",
           "evidence": "mage/47-mage-frost-arctic-reach.jpg",
@@ -1134,22 +1128,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
-          ],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1,
-              2
-            ],
-            "before": {
-              "1": "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
-              "2": "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
-            }
-          }
+          ]
         },
         {
           "id": "frost/ice-block",
@@ -1291,28 +1270,7 @@
           "diff": [
             "tooltip changed",
             "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
-          ],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ],
-            "before": {
-              "1": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-              "2": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 40% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-              "3": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-              "4": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.",
-              "5": "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times."
-            }
-          }
+          ]
         },
         {
           "id": "frost/ice-barrier",
@@ -1340,19 +1298,6 @@
           "prereq": {
             "id": "frost/cold-snap",
             "rank": 1
-          },
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1
-            ],
-            "before": {
-              "1": "Shield yourself, absorbing 447 damage and increasing your Frost damage by 3% for 1 min. While shielded, your Frost damage is increased by an additional 3% and you do not lose casting time when you take damage."
-            }
           }
         }
       ],

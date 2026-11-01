@@ -7,7 +7,7 @@
 | **Build** | 37/14/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -49,14 +49,14 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 372 | +0.0% | 799 | +0.0% | 0 s |
-| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 369 | -0.8% | 797 | -0.2% | 0 s |
-| 3 | *Arms* | community simulator | - | 369 | -0.8% | 796 | -0.3% | 0 s |
-| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 368 | -1.1% | 790 | -1.0% | 0 s |
+| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 367 | +0.0% | 775 | -0.6% | 0 s |
+| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 779 | -0.0% | 0 s |
+| 3 | *Arms* | community simulator | - | 363 | -0.9% | 779 | +0.0% | 0 s |
+| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 774 | -0.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,7 +73,7 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
   10. insert before the filler: if time until Bloodthirst is ready > 1.5s: cast Whirlwind (+0.5%, pass 2)
   11. move to the top: if not Battle Stance is up: cast Battle Stance (+0.2%, pass 2)
   12. threshold 24.5s -> 36.75s: if time left in the fight ≤ 24.5s: use every other cooldown when ready (+0.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 4 passes, the last 2026-10-27, 14 changes to the base rotation; third-seed check: arms-community-parse 719 -> 792 DPS (+10.2%), sim preset: Arms 39/12/0 717 -> 788 DPS (+9.8%), arms-battle-raid 723 -> 796 DPS (+10.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 5 passes, the last 2026-10-31, 17 changes to the base rotation; third-seed check: arms-battle-raid 708 -> 778 DPS (+10.0%), sim preset: Arms 707 -> 780 DPS (+10.3%), arms-community-parse 704 -> 775 DPS (+10.1%), arms-ml-raid 707 -> 780 DPS (+10.4%)):
   1. move to the top: cast Overpower (+2.0%, pass 1)
   2. drop: if (time left in the fight ≤ 30s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.2%, pass 1)
   3. drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.4%, pass 1)
@@ -88,14 +88,17 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
   12. insert before the filler: cast Mighty Rage Potion (+0.3%, pass 3)
   13. insert before the filler: cast Everlook Pathcarver (+0.4%, pass 4)
   14. only with 6s or more of the fight left: if not Rend is on the target: cast Rend (+0.3%, pass 4)
+  15. drop: cast Mighty Rage Potion (+0.8%, pass 5)
+  16. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.6%, pass 5)
+  17. insert in the middle: if (selectedPotion or selectedPotion or selectedPotion) and rage ≤ 15: cast OffensivePotion (+0.2%, pass 5)
 
 Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-community-parse`](arms-community-parse.md) casts/min |
 |---|---|---|
-| 1 | if not Battle Stance is up: cast Battle Stance | 26.7 |
-| 2 | cast Overpower | 3.4 |
-| 3 | if execute phase (E20): cast Execute | 3.7 |
+| 1 | if not Battle Stance is up: cast Battle Stance | 26.6 |
+| 2 | cast Overpower | 3.7 |
+| 3 | if execute phase (E20): cast Execute | 3.6 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -105,15 +108,15 @@ Before the pull: at -1s: cast Battle Stance.
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
 | 12 | if number of targets > 1: cast Whirlwind | 1.0 |
-| 13 | cast Mortal Strike | 2.4 |
-| 14 | if not Rend is on the target: cast Rend | 2.3 |
+| 13 | cast Mortal Strike | 2.5 |
+| 14 | if not Rend is on the target: cast Rend | 2.4 |
 | 15 | cast Slam | 2.7 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.9 |
-| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.5 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.0 |
+| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.4 |
 | 19 | cast Spearing Strike | 1.3 |
 | 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.0 |
-| 21 | cast Sunder Armor | 5.9 |
+| 21 | cast Sunder Armor | 6.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -121,14 +124,14 @@ Damage by ability:
 
 | Ability | [`arms-community-parse`](arms-community-parse.md) |
 |---|---|
-| Auto Attack | 38% |
+| Auto Attack | 37% |
 | Execute | 16% |
-| Overpower | 13% |
-| Slam | 8% |
-| Mortal Strike | 7% |
-| Rend | 7% |
-| Deep Wound | 6% |
-| Whirlwind | 3% |
+| Overpower | 15% |
+| Mortal Strike | 8% |
+| Slam | 7% |
+| Deep Wound | 7% |
+| Rend | 6% |
+| Whirlwind | 2% |
 | Spearing Strike | 1% |
 | item 274759 | 1% |
 

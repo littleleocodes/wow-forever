@@ -2,13 +2,13 @@
   "slug": "druid",
   "name": "Druid",
   "build": "1.60.1.70707",
-  "captured": "2026-10-30",
+  "captured": "2026-10-31",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-29, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-29",
+      "generated": "2026-10-30",
       "build": "1.60.1.70707",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
@@ -65,12 +65,7 @@
       "build": "1.60.1.70707"
     }
   ],
-  "merge_notes": [
-    "Feral Combat/Lacerate: tooltip from Wowhead's spell 1328617 (new talent)",
-    "Feral Combat/Predatory Discipline: tooltip from Wowhead's spell 1328613 (new talent)",
-    "Restoration/Bloom: tooltip from Wowhead's spell 1328621 (new talent)",
-    "live hotfix numbers of 2026-10-30 written into Genesis, Moonkin Form, Leader of the Pack, Naturalist (hotfix_text.py; sources https://foreverchanges.pro/patch-notes, https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/)"
-  ],
+  "merge_notes": [],
   "trees": [
     {
       "id": "balance",
@@ -122,28 +117,17 @@
           ],
           "status": "new",
           "evidence": "druid/02-druid-balance-genesis.png",
-          "diff": [],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ],
-            "before": {
-              "1": "Increases the periodic damage and healing done by your spells and abilities by 1%.",
-              "2": "Increases the periodic damage and healing done by your spells and abilities by 2%.",
-              "3": "Increases the periodic damage and healing done by your spells and abilities by 3%.",
-              "4": "Increases the periodic damage and healing done by your spells and abilities by 4%.",
-              "5": "Increases the periodic damage and healing done by your spells and abilities by 5%."
-            }
-          }
+          "ranks_prev": [
+            "Increases the periodic damage and healing done by your spells and abilities by 1%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 2%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 3%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 4%.",
+            "Increases the periodic damage and healing done by your spells and abilities by 5%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+          ]
         },
         {
           "id": "balance/moonglow",
@@ -436,7 +420,7 @@
           "icon": "spell_nature_forceofnature",
           "maxRank": 1,
           "ranks": [
-            "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance (melee, ranged and spell) increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+            "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
           ],
           "status": "changed",
           "classic": [
@@ -450,20 +434,7 @@
           "diff": [
             "tooltip changed",
             "tooltip changed in build 1.60.1.70707 (ranks 1)"
-          ],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1
-            ],
-            "before": {
-              "1": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
-            }
-          }
+          ]
         }
       ],
       "removed": [
@@ -751,7 +722,7 @@
           "row": 3,
           "col": 1,
           "name": "Lacerate",
-          "icon": null,
+          "icon": "ability_druid_lacerate",
           "maxRank": 1,
           "ranks": [
             "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target."
@@ -770,7 +741,7 @@
           "row": 3,
           "col": 2,
           "name": "Predatory Discipline",
-          "icon": null,
+          "icon": "spell_druid_savagery",
           "maxRank": 1,
           "ranks": [
             "Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy."
@@ -813,7 +784,7 @@
           "icon": "spell_nature_unyeildingstamina",
           "maxRank": 1,
           "ranks": [
-            "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance (melee, ranged and spell) of all party or raid members within 45 yards by 3%."
+            "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%."
           ],
           "status": "changed",
           "classic": [
@@ -828,20 +799,7 @@
             "tooltip changed",
             "was Feral Combat row 7, col 2",
             "tooltip changed in build 1.60.1.70707 (ranks 1)"
-          ],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1
-            ],
-            "before": {
-              "1": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%."
-            }
-          }
+          ]
         },
         {
           "id": "feral-combat/natural-instinct",
@@ -918,11 +876,16 @@
           "icon": "ability_racial_cannibalize",
           "maxRank": 1,
           "ranks": [
-            "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat."
+            "Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat."
           ],
           "status": "new",
+          "ranks_prev": [
+            "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "moved in build 1.60.1.70707: was row 4, col 2",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)",
             "prerequisite changed in build 1.60.1.70707: was savage fury"
           ],
           "prereq": {
@@ -1051,28 +1014,17 @@
           ],
           "status": "new",
           "evidence": "druid/39-druid-restoration-naturalist.png",
-          "diff": [],
-          "hotfix": {
-            "date": "2026-10-30",
-            "sources": [
-              "https://foreverchanges.pro/patch-notes",
-              "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
-            ],
-            "ranks": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ],
-            "before": {
-              "1": "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
-              "2": "Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.",
-              "3": "Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.",
-              "4": "Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.",
-              "5": "Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%."
-            }
-          }
+          "ranks_prev": [
+            "Reduces the cast time of your Healing Touch spell by 0.1 sec and increases all damage you deal by 1%.",
+            "Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.",
+            "Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.",
+            "Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.",
+            "Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+          ]
         },
         {
           "id": "restoration/reflection",
@@ -1237,16 +1189,21 @@
           "icon": "inv_relics_idolofrejuvenation",
           "maxRank": 1,
           "ranks": [
-            "Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells."
+            "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell."
           ],
           "status": "changed",
           "classic": [
             "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them. an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
           ],
           "evidence": "druid/47-druid-restoration-swiftmend.png",
+          "ranks_prev": [
+            "Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Restoration row 7, col 2"
+            "was Restoration row 7, col 2",
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
           ]
         },
         {
@@ -1334,11 +1291,17 @@
           "icon": "ability_druid_flourish",
           "maxRank": 1,
           "ranks": [
-            "Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration."
+            "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration."
           ],
           "status": "new",
           "evidence": "druid/52-druid-restoration-wild-growth.png",
-          "diff": [],
+          "ranks_prev": [
+            "Heals the target and their party for 336 over 7 sec. Party members must be within 43 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+          ],
           "prereq": {
             "id": "restoration/living-spirit",
             "rank": 3

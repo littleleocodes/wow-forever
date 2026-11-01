@@ -7,7 +7,7 @@
 | **Build** | 21/0/30 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `frost-winters-chill-raid` |
 
 ## Summary
@@ -44,7 +44,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
-| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
+| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Cold Snap** | 1/1 | changed | Finishes the remaining cooldown on all your other Frost spells. |
 | **Winter's Chill** | 5/5 | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 100% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
@@ -68,7 +68,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 ## Rank among our builds and the community simulator's
 
-**10 of 12** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**9 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -78,12 +78,13 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 | 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 671 | +0.0% | 4 s |
 | 5 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 506 | -8.4% | 572 | -14.7% | 0 s |
 | 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -11.0% | 5 s |
-| 7 | *Frost* | community simulator | - | 497 | -10.0% | 586 | -12.5% | 8 s |
-| 8 | *Arcane Fire* | community simulator | - | 482 | -12.7% | 619 | -7.7% | 6 s |
-| 9 | *Arcane* | community simulator | - | 482 | -12.7% | 631 | -5.9% | 6 s |
-| 10 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 21/0/30 | 457 | -17.2% | 519 | -22.6% | 0 s |
-| 11 | *Fire* | community simulator | - | 408 | -26.0% | 487 | -27.4% | 8 s |
-| 12 | *FFB* | community simulator | - | 387 | -30.0% | 447 | -33.4% | 2 s |
+| 7 | *Arcane Fire* | community simulator | - | 482 | -12.7% | 619 | -7.7% | 6 s |
+| 8 | *Arcane* | community simulator | - | 482 | -12.7% | 631 | -5.9% | 6 s |
+| 9 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 21/0/30 | 457 | -17.2% | 519 | -22.6% | 0 s |
+| 10 | *Frost Incin* | community simulator | - | 454 | -17.9% | 544 | -18.9% | 4 s |
+| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 539 | -19.5% | 9 s |
+| 12 | *Fire* | community simulator | - | 408 | -26.0% | 487 | -27.4% | 8 s |
+| 13 | *FFB* | community simulator | - | 387 | -30.0% | 447 | -33.4% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,7 +101,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
   10. insert in the middle: if Arcane Wrath is ready: cast Presence of Mind (+0.7%, pass 5)
   11. move down below 'if Fingers of Frost is up: cast Ice Lance': if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) (+0.2%, pass 5)
   12. only above 60% mana: if mana % ≤ 60%: cast Mana Ruby + insert at the end: cast Frost Blast (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 9 passes, the last 2026-10-30, 6 changes to the base rotation; third-seed check: open winner 558 -> 670 DPS (+20.2%), opt-frost-raid-raid-dps 618 -> 661 DPS (+6.9%), sim preset: Arcane 464 -> 632 DPS (+36.3%), frost-arcane-power-raid 575 -> 660 DPS (+14.7%), frost-winters-chill-raid 515 -> 520 DPS (+0.8%), frost-fingers-of-frost-raid 574 -> 573 DPS (-0.3%), opt-frost-raid-raid-dps-extwc 616 -> 650 DPS (+5.5%), frost-ml-raid 569 -> 597 DPS (+5.0%), arcane-frost-open-raid 618 -> 661 DPS (+6.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 10 passes, the last 2026-10-31, 6 changes to the base rotation; third-seed check: arcane-frost-open-raid 558 -> 671 DPS (+20.3%), sim preset: Arcane 464 -> 632 DPS (+36.3%), frost-arcane-power-raid 575 -> 660 DPS (+14.7%), frost-winters-chill-raid 515 -> 520 DPS (+0.8%), frost-fingers-of-frost-raid 574 -> 573 DPS (-0.3%), opt-frost-raid-raid-dps 618 -> 661 DPS (+6.9%), opt-frost-raid-raid-dps-extwc 616 -> 650 DPS (+5.5%), frost-ml-raid 569 -> 597 DPS (+5.0%)):
   1. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
   2. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.5%, pass 1)
   3. spell probe: insert in the middle: cast Arcane Wrath (+1.0%, pass 6)

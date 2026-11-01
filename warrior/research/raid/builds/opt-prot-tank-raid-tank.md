@@ -7,7 +7,7 @@
 | **Build** | 8/5/38 (Arms / Fury / Protection) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-30 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -60,14 +60,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.020 | +0.0% | 1261 | 277 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.006 | -1.4% | 1229 | 278 |
-| 3 | *Protection* | community simulator | - | 1.005 | -1.4% | 1227 | 278 |
-| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -1.9% | 1218 | 278 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.016 | +0.0% | 1139 | 274 |
+| 2 | *Protection* | community simulator | - | 1.009 | -0.7% | 1118 | 272 |
+| 3 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.006 | -1.0% | 1108 | 272 |
+| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -1.6% | 1095 | 272 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -91,10 +91,10 @@ Before the pull: at -1s: cast Battle Shout.
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Revenge | 10.9 |
 | 5 | if rage < 90: cast Bloodrage | 1.0 |
-| 6 | cast Shield Slam | 8.8 |
+| 6 | cast Shield Slam | 8.7 |
 | 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 14.9 |
-| 8 | if rage ≥ 33.75: cast Heroic Strike | 16.3 |
-| 9 | if not Rend is on the target: cast Rend | 2.9 |
+| 8 | if rage ≥ 33.75: cast Heroic Strike | 14.7 |
+| 9 | if not Rend is on the target: cast Rend | 3.0 |
 | 10 | cast Sunder Armor | 14.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance (its condition never held in these fights).
@@ -103,15 +103,15 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Revenge | 43% |
-| Heroic Strike | 21% |
-| Shield Slam | 12% |
-| Auto Attack | 11% |
+| Revenge | 40% |
+| Heroic Strike | 20% |
+| Shield Slam | 13% |
+| Auto Attack | 12% |
 | Sunder Armor | 8% |
-| Rend | 2% |
-| Judgement of Light | 1% |
-| OtherActionRageGain | 1% |
-| Retribution Aura | 0% |
+| Rend | 3% |
+| Judgement of Light | 2% |
+| OtherActionRageGain | 2% |
+| Retribution Aura | 1% |
 | Thorns | 0% |
 
 ## Notes
