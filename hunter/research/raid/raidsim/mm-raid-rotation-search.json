@@ -178,8 +178,8 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
@@ -188,10 +188,6 @@
    {
     "label": "marksmanship-open-raid",
     "talents": "502-0053352501522051-5"
-   },
-   {
-    "label": "sim preset: BM Weave",
-    "talents": "5320001505101251-0053250001-4"
    },
    {
     "label": "bm-mm-raid",
@@ -210,8 +206,7 @@
    }
   ],
   "tuned_on": [
-   "marksmanship-open-raid",
-   "sim preset: BM Weave"
+   "marksmanship-open-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -332,45 +327,36 @@
   "final": {
    "raid": {
     "marksmanship-open-raid": {
-     "before": 729.3642111344469,
-     "after": 785.2853131296123,
-     "base": 729.3642111344469,
+     "before": 730.1906425983814,
+     "after": 785.702294317799,
+     "base": 730.1906425983814,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.734446098127083,
-     "oom_after": 2.821176263174444
-    },
-    "sim preset: BM Weave": {
-     "before": 738.2177417675763,
-     "after": 750.262120316724,
-     "base": 738.2177417675763,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 2.9309225146397,
+     "oom_after": 2.9309225146397
     },
     "bm-mm-raid": {
-     "before": 702.7719061992751,
-     "after": 718.7357533059464,
-     "base": 702.7719061992751,
+     "before": 702.8145973515427,
+     "after": 718.9451776279963,
+     "base": 702.8145973515427,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "bm-mm-full-buffs-raid": {
-     "before": 707.0586850856179,
-     "after": 719.4770525408455,
-     "base": 707.0586850856179,
+     "before": 707.8963867250221,
+     "after": 719.7495574086178,
+     "base": 707.8963867250221,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-mm-raid-raid-dps": {
-     "before": 724.2042200818006,
-     "after": 736.0641853897808,
-     "base": 724.2042200818006,
+     "before": 724.7145117999307,
+     "after": 736.1103170046737,
+     "base": 724.7145117999307,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -387,13 +373,13 @@
     "Aimed Shot"
    ],
    "rejected": {
-    "structure": 20,
+    "structure": 10,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 13
+  "passes": 14
  }
 }

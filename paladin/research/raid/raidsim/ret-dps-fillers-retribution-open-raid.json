@@ -1,0 +1,291 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "build": "retribution-open-raid",
+ "setting": "raid",
+ "date": "2026-11-01",
+ "tank": false,
+ "removal": {
+  "Benediction": -1.1044988720287918e-05,
+  "Champion of the Light": 0.0640459695511918,
+  "Conviction": 0.047091990970775766,
+  "Deflection": -0.0,
+  "Divine Intellect": 0.003233359848154871,
+  "Divine Precision": 0.00647431578299662,
+  "Divine Strength": 0.019319040819973154,
+  "Holy Conduit": 0.04167436678389502,
+  "Illumination": -0.0,
+  "Improved Judgement": 0.04195762761558397,
+  "Improved Seals": 0.052975634524600856,
+  "Pursuit of Justice": 0.001994761138522372,
+  "Repentance": -0.0,
+  "Reverence": 0.0014698485767534741,
+  "Sacred Arbiter": 0.01535612621809146,
+  "Sanctified Judgement": 0.0012268194802927956,
+  "Seal of Command": 0.19244372280715238,
+  "Two-Handed Weapon Specialization": 0.04542880444113928,
+  "Unsealed Wrath": 0.16324481136980207,
+  "Unyielding Faith": -0.0,
+  "Vengeance": 0.07671640614732023
+ },
+ "free": [
+  "Benediction",
+  "Deflection",
+  "Illumination",
+  "Pursuit of Justice",
+  "Repentance",
+  "Reverence",
+  "Sanctified Judgement",
+  "Unyielding Faith"
+ ],
+ "kept_for_rotation": [
+  "Seal of Command",
+  "Unsealed Wrath"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Repentance"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Illumination",
+   "to": "Purifying Power",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Pursuit of Justice",
+   "to": "Sanctified Judgement",
+   "seed1": -0.0001665494531887246,
+   "seed2": 0.0013272081442514683,
+   "utility": "mana"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Pursuit of Justice",
+   "to": "Benediction",
+   "seed1": 4.7775090507462536e-05,
+   "seed2": 0.00020521968561948434,
+   "utility": "mana"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": 0.000492166198045263,
+   "seed2": -0.00015059019824492648,
+   "utility": "mana"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": 3.3279183672352275e-05,
+   "seed2": -4.1970880611974515e-05,
+   "utility": "mana"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Unyielding Faith",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Unyielding Faith",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": -2.924130864112584e-05,
+ "start": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Reverence",
+    2
+   ],
+   [
+    "Improved Seals",
+    5
+   ],
+   [
+    "Illumination",
+    1
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Divine Precision",
+    1
+   ]
+  ],
+  "Protection": [
+   [
+    "Divine Intellect",
+    4
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Benediction",
+    2
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    2
+   ],
+   [
+    "Unyielding Faith",
+    2
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Pursuit of Justice",
+    2
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Repentance",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    5
+   ],
+   [
+    "Unsealed Wrath",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Reverence",
+    2
+   ],
+   [
+    "Improved Seals",
+    5
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Divine Precision",
+    1
+   ],
+   [
+    "Purifying Power",
+    1
+   ]
+  ],
+  "Protection": [
+   [
+    "Divine Intellect",
+    4
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Repentance",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    5
+   ],
+   [
+    "Unsealed Wrath",
+    1
+   ]
+  ]
+ }
+}

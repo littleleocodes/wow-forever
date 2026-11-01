@@ -31,6 +31,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 13444
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-01: changed or added by the rotation search (see fire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpLt",

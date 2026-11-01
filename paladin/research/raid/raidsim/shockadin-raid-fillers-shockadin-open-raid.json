@@ -3,217 +3,194 @@
  "spec": "shockadin-raid",
  "build": "shockadin-open-raid",
  "setting": "raid",
- "date": "2026-10-29",
+ "date": "2026-11-01",
  "tank": false,
  "removal": {
-  "Benediction": 0.00014310709035203484,
-  "Champion of the Light": 0.009614595950692473,
-  "Consecrated Ground": 0.061256892328172,
-  "Conviction": 0.029533951238307266,
+  "Benediction": 0.001231924811906926,
+  "Champion of the Light": 0.03694634696657961,
+  "Consecrated Ground": 0.06278246495603457,
+  "Conviction": 0.04349899057499618,
   "Deflection": -0.0,
-  "Divine Favor": 0.005046042712158361,
-  "Divine Intellect": 0.0012358468262875233,
-  "Divine Precision": 0.010017433210966376,
-  "Divine Strength": 0.010595752613334564,
-  "Healing Light": -0.0,
-  "Holy Conduit": 0.013080886199852926,
-  "Holy Shock": 0.10966411693151268,
-  "Improved Judgement": 0.04763740719909626,
-  "Improved Seals": 0.0355337291225134,
-  "Instrument of Law": 0.017026050628234257,
-  "Pursuit of Justice": -0.0,
-  "Reverence": 0.0008003140303743939,
-  "Sacred Arbiter": 0.018659735699224522,
-  "Sanctified Judgement": 0.002019453856992204,
+  "Divine Favor": 0.004612397113743616,
+  "Divine Precision": 0.013783035228944196,
+  "Divine Strength": 0.01331875146905137,
+  "Holy Conduit": 0.057447762635786326,
+  "Holy Shock": 0.12436326232099082,
+  "Improved Judgement": 0.05022566774733428,
+  "Improved Seals": 0.036488667925360985,
+  "Infusion of Light": -0.0,
+  "Purifying Power": -0.0,
+  "Reverence": 0.0015326571583600401,
+  "Sacred Arbiter": 0.01841232333257592,
+  "Sanctified Judgement": 0.021809905681241082,
+  "Seal of Command": -0.0,
   "Spiritual Focus": -0.0,
-  "Two-Handed Weapon Specialization": 0.025841270011374595,
+  "Turn Evil": -0.0,
+  "Two-Handed Weapon Specialization": 0.03879551152991012,
   "Unyielding Faith": -0.0,
-  "Vengeance": 0.07639771947352403
+  "Vengeance": 0.07658570462243441
  },
  "free": [
   "Benediction",
   "Deflection",
-  "Divine Intellect",
-  "Healing Light",
-  "Pursuit of Justice",
+  "Infusion of Light",
+  "Purifying Power",
   "Reverence",
   "Spiritual Focus",
+  "Turn Evil",
   "Unyielding Faith"
  ],
  "kept_for_rotation": [
   "Holy Shock"
  ],
- "active_never_worth": [],
- "abilities_never_cast": [],
+ "active_never_worth": [
+  "Seal of Command"
+ ],
+ "abilities_never_cast": [
+  "Holy Shock"
+ ],
  "moves": [
   {
    "round": 1,
-   "kind": "gain",
-   "from": "Healing Light",
-   "to": "Divine Strength",
-   "seed1": 0.00245670672231868,
-   "seed2": 0.0024548170723548424,
-   "utility": null
+   "kind": "utility",
+   "from": "Infusion of Light",
+   "to": "Purifying Power",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Spiritual Focus",
-   "to": "Voice of Truth",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": -0.0004899796823090163,
+   "seed2": 0.00012081787727669102,
+   "utility": "mana"
   },
   {
    "round": 3,
    "kind": "utility",
    "from": "Deflection",
    "to": "Benediction",
-   "seed1": 0.0002827599700365724,
-   "seed2": -0.00013627443291452934,
+   "seed1": -0.00023787991851920154,
+   "seed2": 0.00012744072136783302,
    "utility": "mana"
   },
   {
    "round": 4,
    "kind": "utility",
-   "from": "Spiritual Focus",
-   "to": "Purifying Power",
-   "seed1": 0.0,
-   "seed2": 0.0,
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": 0.00020172350669955819,
+   "seed2": 0.00010986780223953829,
    "utility": "mana"
   },
   {
    "round": 5,
    "kind": "utility",
-   "from": "Unyielding Faith",
-   "to": "Purifying Power",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "mana"
-  },
-  {
-   "round": 6,
-   "kind": "utility",
-   "from": "Deflection",
-   "to": "Benediction",
-   "seed1": -0.0005028595666302094,
-   "seed2": 0.0003044557370601719,
-   "utility": "mana"
-  },
-  {
-   "round": 7,
-   "kind": "utility",
-   "from": "Pursuit of Justice",
+   "from": "Turn Evil",
    "to": "Deflection",
    "seed1": 0.0,
    "seed2": 0.0,
    "utility": "survival"
   },
   {
-   "round": 8,
-   "kind": "gain",
-   "from": "Benediction",
-   "to": "Vindication",
-   "seed1": 0.0015729127011976374,
-   "seed2": 0.0021542703872601265,
-   "utility": null
-  },
-  {
-   "round": 9,
-   "kind": "gain",
-   "from": "Pursuit of Justice",
-   "to": "Vindication",
-   "seed1": 0.002178668455332655,
-   "seed2": 0.002182622120485478,
-   "utility": null
-  },
-  {
-   "round": 10,
+   "round": 6,
    "kind": "utility",
-   "from": "Deflection",
-   "to": "Benediction",
-   "seed1": -0.0002098613824222939,
-   "seed2": -1.9099165183722455e-05,
-   "utility": "mana"
+   "from": "Unyielding Faith",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Unyielding Faith",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   }
  ],
- "final_seed3": 0.007280340776412153,
+ "final_seed3": -0.0001361874026333254,
  "start": {
   "Holy": [
    [
-    "Divine Strength",
-    4
-   ],
-   [
-    "Divine Intellect",
-    5
-   ],
-   [
-    "Healing Light",
+    "Spiritual Focus",
     1
    ],
    [
-    "Spiritual Focus",
+    "Divine Strength",
+    5
+   ],
+   [
+    "Reverence",
     2
    ],
    [
     "Improved Seals",
-    3
+    5
    ],
    [
-    "Unyielding Faith",
+    "Purifying Power",
     1
-   ],
-   [
-    "Reverence",
-    3
    ],
    [
     "Divine Favor",
     1
    ],
    [
-    "Divine Precision",
-    1
+    "Holy Conduit",
+    2
    ],
    [
-    "Holy Shock",
+    "Divine Precision",
+    2
+   ],
+   [
+    "Infusion of Light",
     1
    ],
    [
     "Consecrated Ground",
     2
+   ],
+   [
+    "Holy Shock",
+    1
    ]
   ],
   "Protection": [],
   "Retribution": [
    [
     "Deflection",
-    2
+    4
    ],
    [
     "Benediction",
-    3
+    2
    ],
    [
     "Improved Judgement",
     2
    ],
    [
-    "Holy Conduit",
-    2
-   ],
-   [
     "Conviction",
-    5
+    3
    ],
    [
     "Sanctified Judgement",
     3
    ],
    [
-    "Pursuit of Justice",
+    "Unyielding Faith",
     2
+   ],
+   [
+    "Seal of Command",
+    1
    ],
    [
     "Sacred Arbiter",
@@ -221,7 +198,11 @@
    ],
    [
     "Two-Handed Weapon Specialization",
-    2
+    3
+   ],
+   [
+    "Turn Evil",
+    1
    ],
    [
     "Vengeance",
@@ -229,59 +210,59 @@
    ],
    [
     "Champion of the Light",
-    1
-   ],
-   [
-    "Instrument of Law",
-    1
+    3
    ]
   ]
  },
  "allocation": {
   "Holy": [
    [
+    "Spiritual Focus",
+    1
+   ],
+   [
     "Divine Strength",
     5
    ],
    [
-    "Divine Intellect",
-    5
+    "Reverence",
+    2
    ],
    [
     "Improved Seals",
-    3
+    5
    ],
    [
-    "Reverence",
-    3
+    "Purifying Power",
+    2
    ],
    [
     "Divine Favor",
     1
    ],
    [
-    "Divine Precision",
-    1
+    "Holy Conduit",
+    2
    ],
    [
-    "Holy Shock",
-    1
+    "Divine Precision",
+    2
    ],
    [
     "Consecrated Ground",
     2
    ],
    [
-    "Voice of Truth",
+    "Holy Shock",
     1
-   ],
-   [
-    "Purifying Power",
-    2
    ]
   ],
   "Protection": [],
   "Retribution": [
+   [
+    "Deflection",
+    4
+   ],
    [
     "Benediction",
     5
@@ -291,16 +272,16 @@
     2
    ],
    [
-    "Holy Conduit",
-    2
-   ],
-   [
     "Conviction",
-    5
+    3
    ],
    [
     "Sanctified Judgement",
     3
+   ],
+   [
+    "Seal of Command",
+    1
    ],
    [
     "Sacred Arbiter",
@@ -308,7 +289,7 @@
    ],
    [
     "Two-Handed Weapon Specialization",
-    2
+    3
    ],
    [
     "Vengeance",
@@ -316,15 +297,7 @@
    ],
    [
     "Champion of the Light",
-    1
-   ],
-   [
-    "Instrument of Law",
-    1
-   ],
-   [
-    "Vindication",
-    2
+    3
    ]
   ]
  }

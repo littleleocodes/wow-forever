@@ -20,9 +20,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Arms — Full raid (the community's #2 Arms build)](builds/arms-community-parse.md) 🔬 | 37/14/0 | DPS |
-| [Fury — Raid (open talent search)](builds/fury-open-raid.md) 🔬 | 18/31/2 | DPS |
 | [Protection — Raid tank (machine-learning search)](builds/protection-ml-tank.md) 🔬 | 17/3/31 | TANK |
 | [Arms — Raid (machine-learning search)](builds/arms-ml-raid.md) 🔬 | 39/10/2 | DPS |
+| [Fury — Raid (open talent search)](builds/fury-open-raid.md) 🔬 | 18/31/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

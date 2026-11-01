@@ -161,8 +161,8 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
@@ -171,10 +171,6 @@
    {
     "label": "mm-lone-wolf-raid",
     "talents": "5-0053452511513051-5"
-   },
-   {
-    "label": "sim preset: MM",
-    "talents": "5-005355251152205-5"
    },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
@@ -193,8 +189,7 @@
    }
   ],
   "tuned_on": [
-   "mm-lone-wolf-raid",
-   "sim preset: MM"
+   "mm-lone-wolf-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -315,49 +310,40 @@
   "final": {
    "raid": {
     "mm-lone-wolf-raid": {
-     "before": 700.780032690868,
-     "after": 764.0725602126013,
-     "base": 700.780032690868,
+     "before": 701.7729977524317,
+     "after": 763.777987813039,
+     "base": 701.7729977524317,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.705710440708452,
-     "oom_after": 2.705710440708452
-    },
-    "sim preset: MM": {
-     "before": 670.30296705161,
-     "after": 730.7388831101168,
-     "base": 670.30296705161,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 2.6030758252498924,
+     "oom_after": 2.6030758252498924
     },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 689.280096605324,
-     "after": 712.7633157076524,
-     "base": 689.280096605324,
+     "before": 689.8637398483294,
+     "after": 712.4545230427698,
+     "base": 689.8637398483294,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "marksmanship-ml-parse": {
-     "before": 670.0662232014128,
-     "after": 730.3296573445717,
-     "base": 670.0662232014128,
+     "before": 671.1271414661336,
+     "after": 729.9385661167413,
+     "base": 671.1271414661336,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00031675824225,
-     "oom_after": 0.00031675824225
+     "oom_before": 0.0002359890116,
+     "oom_after": 0.0002359890116
     },
     "marksmanship-ml-raid": {
-     "before": 642.3237253928336,
-     "after": 690.5801415785321,
-     "base": 642.3237253928336,
+     "before": 643.0821970148005,
+     "after": 690.5755555792251,
+     "base": 643.0821970148005,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0048984615185500005,
-     "oom_after": 0.0048984615185500005
+     "oom_before": 0.004662417564550001,
+     "oom_after": 0.004662417564550001
     }
    }
   },
@@ -376,6 +362,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 14
+  "passes": 15
  }
 }

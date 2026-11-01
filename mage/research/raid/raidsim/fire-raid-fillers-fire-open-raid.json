@@ -3,35 +3,35 @@
  "spec": "fire-raid",
  "build": "fire-open-raid",
  "setting": "raid",
- "date": "2026-10-31",
+ "date": "2026-11-01",
  "tank": false,
  "removal": {
-  "Accelerant": 0.03861880126235728,
-  "Arcane Concentration": 0.048818194252499336,
-  "Arcane Impact": 0.00047571402169810373,
-  "Arcane Meditation": 0.04490042176909015,
-  "Arcane Resilience": -0.0,
-  "Arcane Subtlety": 0.024641252112082013,
-  "Combustion": 0.016758598012875603,
-  "Critical Mass": 0.057920304568175984,
-  "Fire Power": 0.07030696996570918,
-  "Heating Up": 0.1714775958694028,
-  "Ignite": 0.12057497494961633,
-  "Improved Fire Blast": 0.04104005473082595,
-  "Improved Scorch": 0.15148861419183923,
-  "Incineration": 0.04818360920349296,
-  "Master of Elements": 0.041670339487627994,
-  "Missile Barrage": 0.03394735245462144,
-  "Precision": 0.0783936079796621,
-  "Pyroblast": 0.1714775958694028,
+  "Accelerant": 0.02071511850455432,
+  "Arcane Blast": 0.02115684786152805,
+  "Arcane Concentration": 0.030760512815474206,
+  "Arcane Meditation": 0.025641930813887104,
+  "Arcane Subtlety": 0.02446961351658583,
+  "Combustion": 0.019397140296291693,
+  "Critical Mass": 0.053199542620312124,
+  "Fire Power": 0.06336421419000537,
+  "Heating Up": 0.1751912289781815,
+  "Ignite": 0.11408496688580949,
+  "Improved Channeling": -0.0,
+  "Improved Fire Blast": 0.05836108160547837,
+  "Improved Scorch": 0.22927259685014212,
+  "Incineration": 0.05177828468662338,
+  "Master of Elements": 0.024717751214149986,
+  "Missile Barrage": 0.03650785602394535,
+  "Precision": 0.08005774804136856,
+  "Pyroblast": 0.196486329512785,
   "Wand Specialization": -0.0
  },
  "free": [
-  "Arcane Impact",
-  "Arcane Resilience",
+  "Improved Channeling",
   "Wand Specialization"
  ],
  "kept_for_rotation": [
+  "Arcane Blast",
   "Heating Up",
   "Missile Barrage",
   "Pyroblast"
@@ -42,14 +42,32 @@
   {
    "round": 1,
    "kind": "utility",
-   "from": "Arcane Impact",
-   "to": "Magic Absorption",
-   "seed1": -0.00047571402169810373,
-   "seed2": -0.0004586258418266542,
-   "utility": "mana"
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   }
  ],
- "final_seed3": -0.0004559095491443177,
+ "final_seed3": 0.0,
  "start": {
   "Arcane": [
    [
@@ -57,7 +75,7 @@
     2
    ],
    [
-    "Arcane Resilience",
+    "Improved Channeling",
     3
    ],
    [
@@ -73,7 +91,7 @@
     2
    ],
    [
-    "Arcane Impact",
+    "Arcane Blast",
     1
    ],
    [
@@ -88,7 +106,7 @@
    ],
    [
     "Accelerant",
-    5
+    4
    ],
    [
     "Ignite",
@@ -104,7 +122,7 @@
    ],
    [
     "Improved Scorch",
-    2
+    3
    ],
    [
     "Heating Up",
@@ -141,10 +159,6 @@
     2
    ],
    [
-    "Arcane Resilience",
-    3
-   ],
-   [
     "Arcane Subtlety",
     2
    ],
@@ -157,12 +171,16 @@
     2
    ],
    [
+    "Arcane Blast",
+    1
+   ],
+   [
     "Arcane Meditation",
     2
    ],
    [
-    "Magic Absorption",
-    1
+    "Arcane Resilience",
+    3
    ]
   ],
   "Fire": [
@@ -172,7 +190,7 @@
    ],
    [
     "Accelerant",
-    5
+    4
    ],
    [
     "Ignite",
@@ -188,7 +206,7 @@
    ],
    [
     "Improved Scorch",
-    2
+    3
    ],
    [
     "Heating Up",

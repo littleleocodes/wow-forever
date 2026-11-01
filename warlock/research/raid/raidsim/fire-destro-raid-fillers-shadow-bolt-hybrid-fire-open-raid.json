@@ -3,101 +3,41 @@
  "spec": "fire-destro-raid",
  "build": "shadow-bolt-hybrid-fire-open-raid",
  "setting": "raid",
- "date": "2026-10-12",
+ "date": "2026-11-01",
  "tank": false,
  "removal": {
-  "Agonizing Flames": 0.06217588902029536,
-  "Bane": 0.11103000202300728,
-  "Cataclysm": 0.010824908840365466,
+  "Agonizing Flames": 0.06112265610422274,
+  "Bane": 0.10713818517960005,
+  "Cataclysm": 0.011429893191290397,
   "Demonic Aegis": -0.0,
-  "Demonic Sacrifice": 0.11468660224342464,
-  "Fel Vitality": 0.012494452018958602,
-  "Improved Bane of Agony": 0.015273146853482023,
-  "Improved Corruption": 0.0281819094478285,
-  "Improved Health Funnel": -0.0,
-  "Improved Imp": -0.0,
-  "Improved Life Tap": 0.004430217773616296,
-  "Improved Shadow Bolt": 0.08046130423803988,
-  "Malediction": 0.00791549313534945,
-  "Malevolence": 0.049514732000063955,
-  "Pandemic": 0.03002544443031052,
-  "Ruin": 0.06066844092201151,
-  "Suppression": 0.050247676138720054,
-  "Unholy Power": -0.0
+  "Demonic Embrace": -0.0,
+  "Demonic Sacrifice": 0.11492337941963504,
+  "Fel Vitality": 0.013574422665832642,
+  "Improved Bane of Agony": 0.015720813752753027,
+  "Improved Corruption": 0.03312340133335556,
+  "Improved Life Tap": 0.011694956850700988,
+  "Improved Shadow Bolt": 0.0757711845158705,
+  "Malevolence": 0.05000781591935177,
+  "Pandemic": 0.029262914266563356,
+  "Ruin": 0.05592003451421901,
+  "Suppression": 0.048832560058133745
  },
  "free": [
   "Demonic Aegis",
-  "Improved Health Funnel",
-  "Improved Imp",
-  "Unholy Power"
+  "Demonic Embrace"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
  "abilities_never_cast": [
   "Demonic Sacrifice"
  ],
- "moves": [
-  {
-   "round": 1,
-   "kind": "utility",
-   "from": "Improved Health Funnel",
-   "to": "Demonic Aegis",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Improved Health Funnel",
-   "to": "Demonic Embrace",
-   "seed1": -0.00012517775159592848,
-   "seed2": -0.0003046243225623968,
-   "utility": "survival"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Improved Imp",
-   "to": "Demonic Embrace",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Unholy Power",
-   "to": "Demonic Embrace",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 5,
-   "kind": "utility",
-   "from": "Unholy Power",
-   "to": "Demonic Embrace",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 6,
-   "kind": "utility",
-   "from": "Unholy Power",
-   "to": "Demonic Embrace",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  }
- ],
- "final_seed3": 5.0141703263228976e-05,
+ "moves": [],
+ "final_seed3": 0.0,
  "start": {
   "Affliction": [
    [
     "Improved Life Tap",
-    1
+    2
    ],
    [
     "Suppression",
@@ -105,11 +45,7 @@
    ],
    [
     "Improved Corruption",
-    2
-   ],
-   [
-    "Malediction",
-    2
+    3
    ],
    [
     "Improved Bane of Agony",
@@ -126,20 +62,12 @@
   ],
   "Demonology": [
    [
-    "Improved Health Funnel",
-    2
-   ],
-   [
-    "Improved Imp",
-    1
-   ],
-   [
-    "Unholy Power",
-    3
+    "Demonic Embrace",
+    5
    ],
    [
     "Demonic Aegis",
-    1
+    2
    ],
    [
     "Fel Vitality",
@@ -177,7 +105,7 @@
   "Affliction": [
    [
     "Improved Life Tap",
-    1
+    2
    ],
    [
     "Suppression",
@@ -185,11 +113,7 @@
    ],
    [
     "Improved Corruption",
-    2
-   ],
-   [
-    "Malediction",
-    2
+    3
    ],
    [
     "Improved Bane of Agony",
@@ -206,6 +130,10 @@
   ],
   "Demonology": [
    [
+    "Demonic Embrace",
+    5
+   ],
+   [
     "Demonic Aegis",
     2
    ],
@@ -216,10 +144,6 @@
    [
     "Demonic Sacrifice",
     1
-   ],
-   [
-    "Demonic Embrace",
-    5
    ]
   ],
   "Destruction": [

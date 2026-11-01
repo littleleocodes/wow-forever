@@ -193,7 +193,7 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
@@ -201,12 +201,18 @@
   "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "2302052001002-54500001230133031-003"
+   },
+   {
     "label": "fire-open-raid",
-    "talents": "2032152000002-55500001220133031-003"
+    "talents": "2032152000002-55500001220133031-003",
+    "protect_only": true
    },
    {
     "label": "sim preset: Fire",
-    "talents": "0502052001001-55500001230133031-003"
+    "talents": "0502052001001-55500001230133031-003",
+    "protect_only": true
    },
    {
     "label": "fire-raid",
@@ -220,8 +226,7 @@
    }
   ],
   "tuned_on": [
-   "fire-open-raid",
-   "sim preset: Fire"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -458,13 +463,30 @@
     "gain_seed1": null,
     "gain_seed2": 0.028,
     "candidates": 1
+   },
+   {
+    "round": 30,
+    "change": "insert at the top: cast Major Mana Potion",
+    "gain_seed1": 0.004080512335518982,
+    "gain_seed2": 0.0032702500561589964,
+    "candidates": 374,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 671.9651980993441,
+     "after": 827.8486454552695,
+     "base": 671.9651980993441,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "fire-open-raid": {
      "before": 667.0523532405111,
-     "after": 809.4481499854206,
+     "after": 811.8988112390582,
      "base": 667.0523532405111,
      "before_value": null,
      "after_value": null,
@@ -473,25 +495,25 @@
     },
     "sim preset: Fire": {
      "before": 673.8916206055268,
-     "after": 821.4209617629522,
+     "after": 822.6951935667613,
      "base": 673.8916206055268,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.0010550000000000002,
-     "oom_after": 0.0010550000000000002
+     "oom_after": 0
     },
     "fire-raid": {
      "before": 665.6584884192213,
-     "after": 796.7318732154691,
+     "after": 796.9742304869297,
      "base": 665.6584884192213,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.0016575,
-     "oom_after": 0.0016575
+     "oom_after": 0.0006525
     },
     "opt-fire-raid-raid-dps": {
      "before": 655.9982536736899,
-     "after": 792.4333705561438,
+     "after": 794.4298417168426,
      "base": 655.9982536736899,
      "before_value": null,
      "after_value": null,
@@ -509,13 +531,13 @@
     "Pyroblast"
    ],
    "rejected": {
-    "structure": 35,
+    "structure": 70,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 12
+  "passes": 13
  }
 }

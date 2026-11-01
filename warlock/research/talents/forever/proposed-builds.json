@@ -1773,56 +1773,6 @@
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
     {
-      "id": "shadow-bolt-hybrid-open-raid",
-      "name": "Shadow Bolt hybrid — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Affliction/Destruction",
-      "generated": "2026-10-28",
-      "derived": "raid",
-      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-28: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over ds-ruin-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Life Tap", 2],
-          ["Suppression", 5],
-          ["Improved Corruption", 3],
-          ["Improved Bane of Agony", 2],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Malevolence", 5]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Demonic Aegis", 2],
-          ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
-        ],
-        "Destruction": [
-          ["Improved Shadow Bolt", 5],
-          ["Bane", 5],
-          ["Cataclysm", 1],
-          ["Ruin", 5],
-          ["Agonizing Flames", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Demonic Sacrifice", "why": "93 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Bane", "why": "84 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Shadow Bolt", "why": "62 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Agonizing Flames", "why": "48 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ruin", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Malevolence", "why": "40 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Suppression", "why": "39 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Corruption", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+0.6% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 21/11/19 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 794.8 DPS; ds-ruin-raid 790.3, opt-sb-raid-raid-dps 788.1, shadow-bolt-hybrid-open-raid 786.0, destruction-ml-raid 763.7 in the same fights; 2,636 builds simulated, 1 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-fire-destro-raid-raid-dps 755.8, destruction-fire-raid 749.0.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.1%, fire-destro-raid -1.0%, demonology-raid -1.2%, incinerate-raid -1.0%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Demonic Embrace, Demonic Aegis.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements."],
-      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7"],
-      "replaces": "ds-ruin-raid"
-    },
-    {
       "id": "destruction-ml-raid",
       "name": "Destruction — Raid (machine-learning search)",
       "role": "dps",
@@ -1862,6 +1812,104 @@
       "open_questions": ["A machine-searched Destruction build: check it against the community's Destruction builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "destruction-incinerate-raid"
+    },
+    {
+      "id": "shadow-bolt-hybrid-fire-open-raid",
+      "name": "Shadow Bolt hybrid — Fire (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Affliction/Destruction",
+      "generated": "2026-11-01",
+      "derived": "raid",
+      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-11-01: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 3],
+          ["Improved Bane of Agony", 2],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5],
+          ["Bane", 5],
+          ["Cataclysm", 2],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "88 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bane", "why": "84 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Shadow Bolt", "why": "59 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Agonizing Flames", "why": "47 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ruin", "why": "43 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Malevolence", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Suppression", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Corruption", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["The best fire build: +1.4% over opt-fire-destro-raid-raid-dps, the best of our builds in fire-destro-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (fire-destro-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 767.3 DPS; opt-fire-destro-raid-raid-dps 756.5, destruction-fire-raid 749.2 in the same fights; 5,529 builds simulated, 2 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.3%, sb-raid -0.1%, demonology-raid -0.3%, incinerate-raid -0.1%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Demonic Embrace, Demonic Aegis.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7"]
+    },
+    {
+      "id": "shadow-bolt-hybrid-open-raid",
+      "name": "Shadow Bolt hybrid — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Affliction/Destruction",
+      "generated": "2026-11-01",
+      "derived": "raid",
+      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-11-01: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over ds-ruin-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5],
+          ["Bane", 5],
+          ["Cataclysm", 1],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "93 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bane", "why": "84 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Shadow Bolt", "why": "62 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Agonizing Flames", "why": "48 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ruin", "why": "44 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Malevolence", "why": "40 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Suppression", "why": "39 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Corruption", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+0.6% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 21/11/19 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 794.8 DPS; ds-ruin-raid 790.3, opt-sb-raid-raid-dps 788.1, shadow-bolt-hybrid-open-raid 786.0, destruction-ml-raid 763.7 in the same fights; 2,636 builds simulated, 1 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-fire-destro-raid-raid-dps 735.2, destruction-fire-raid 726.8.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.1%, fire-destro-raid -1.0%, demonology-raid -1.2%, incinerate-raid -1.0%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Demonic Embrace, Demonic Aegis.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7"],
+      "replaces": "ds-ruin-raid"
     }
   ]
 }

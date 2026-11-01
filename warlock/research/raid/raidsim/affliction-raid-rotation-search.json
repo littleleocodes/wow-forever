@@ -96,8 +96,8 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-10-28",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
@@ -105,26 +105,21 @@
   "builds": [
    {
     "label": "opt-affliction-raid-raid-dps",
-    "talents": "2552002013500005--0550305003"
+    "talents": "2550002013520005--0550305003"
    },
    {
-    "label": "sim preset: Demonic Pact 2/31/18",
-    "talents": "113-0005003221220311351-0550005"
+    "label": "sim preset: SM/Ruin",
+    "talents": "2540002013520105--0550305003"
    },
    {
     "label": "affliction-dot-raid",
     "talents": "2550002013520005--0550035003",
     "protect_only": true
-   },
-   {
-    "label": "opt-affliction-raid-raid-dps",
-    "talents": "2550002013520005--0550305003",
-    "protect_only": true
    }
   ],
   "tuned_on": [
    "opt-affliction-raid-raid-dps",
-   "sim preset: Demonic Pact 2/31/18"
+   "sim preset: SM/Ruin"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -184,36 +179,44 @@
     "gain_seed2": 0.002015335441609256,
     "candidates": 467,
     "pass": 7
+   },
+   {
+    "round": 8,
+    "change": "drop: if time left on Siphon Life \u2264 cast time of Siphon Life: cast Siphon Life",
+    "gain_seed1": 0.0027660567202933972,
+    "gain_seed2": 0.003601518455975894,
+    "candidates": 478,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "opt-affliction-raid-raid-dps": {
-     "before": 831.8210164073337,
-     "after": 836.7556906521661,
-     "base": 831.8210164073337,
+     "before": 811.1607881488452,
+     "after": 814.8011339566019,
+     "base": 811.1607881488452,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.37261869990694463,
-     "oom_after": 0.25303949993325303
+     "oom_before": 0.26903014992680074,
+     "oom_after": 0.26903014992680074
     },
-    "sim preset: Demonic Pact 2/31/18": {
-     "before": 751.6698411859855,
-     "after": 744.4149430619267,
-     "base": 751.6698411859855,
+    "sim preset: SM/Ruin": {
+     "before": 804.4267898959102,
+     "after": 812.5472792664767,
+     "base": 804.4267898959102,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.31522324991670037,
-     "oom_after": 0.23649739993400562
+     "oom_before": 0.30952554990434245,
+     "oom_after": 0.26931274992475157
     },
     "affliction-dot-raid": {
-     "before": 825.029229549851,
-     "after": 829.4129552257201,
-     "base": 825.029229549851,
+     "before": 805.008496227479,
+     "after": 807.7461708373139,
+     "base": 805.008496227479,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5483100998963005,
-     "oom_after": 0.43628399990344596
+     "oom_before": 0.4582069498956968,
+     "oom_after": 0.4582069498956968
     }
    }
   },
@@ -226,13 +229,13 @@
     "Corruption"
    ],
    "rejected": {
-    "structure": 111,
+    "structure": 74,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 7
+  "passes": 8
  }
 }

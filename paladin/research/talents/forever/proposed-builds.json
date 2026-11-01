@@ -1323,22 +1323,74 @@
       "replaces": "prot-tank"
     },
     {
+      "id": "retribution-open-raid",
+      "name": "Retribution — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Retribution",
+      "generated": "2026-11-01",
+      "derived": "raid",
+      "summary": "The Retribution raid build the open talent search found on 2026-11-01: every legal 51-point build with no tree rule, searched in the community simulator's ret-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +24.6% over ret-raid-dps, the best of our builds in that rotation.",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Reverence", 2],
+          ["Improved Seals", 5],
+          ["Holy Conduit", 2],
+          ["Divine Precision", 1],
+          ["Purifying Power", 1]
+        ],
+        "Protection": [
+          ["Divine Intellect", 4]
+        ],
+        "Retribution": [
+          ["Deflection", 3],
+          ["Benediction", 5],
+          ["Improved Judgement", 2],
+          ["Conviction", 3],
+          ["Sanctified Judgement", 3],
+          ["Seal of Command", 1],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Repentance", 1],
+          ["Vengeance", 3],
+          ["Champion of the Light", 5],
+          ["Unsealed Wrath", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Seal of Command", "why": "160 DPS lost without it (19% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Unsealed Wrath", "why": "138 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Vengeance", "why": "64 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Champion of the Light", "why": "54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Seals", "why": "44 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Conviction", "why": "39 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Judgement", "why": "34 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Open search result (ret-dps, full raid): 16/4/31 (Retribution) at 839.0 DPS; ret-raid-dps 673.5, opt-ret-dps-raid-dps 673.5, ret-full-buffs-raid 671.4, retribution-ml-raid 671.3 in the same fights; 2,050 builds simulated, 1 independent runs reached the top.", "The ret-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shockadin-raid -17.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Illumination, Deflection, Sanctified Judgement, Unyielding Faith, Repentance.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.", "2026-11-01 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Illumination -> Purifying Power (mana); Pursuit of Justice -> Sanctified Judgement (mana); Pursuit of Justice -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.00% on a third seed."],
+      "open_questions": ["An open-search Retribution build: check it against the community's Retribution builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-7"]
+    },
+    {
       "id": "shockadin-open-raid",
       "name": "Shockadin — Raid (open talent search)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "spec": "Hybrid Holy/Retribution",
-      "generated": "2026-10-29",
+      "generated": "2026-11-01",
       "derived": "raid",
-      "summary": "The Shockadin (a Holy/Retribution hybrid) raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "summary": "The Shockadin (a Holy/Retribution hybrid) raid build the open talent search found on 2026-11-01: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over shockadin-open-raid, the best of our builds in that rotation.",
       "allocation": {
         "Holy": [
+          ["Spiritual Focus", 1],
           ["Divine Strength", 5],
-          ["Spiritual Focus", 3],
-          ["Improved Seals", 3],
-          ["Purifying Power", 2],
           ["Reverence", 2],
+          ["Improved Seals", 5],
+          ["Purifying Power", 2],
           ["Divine Favor", 1],
           ["Holy Conduit", 2],
           ["Divine Precision", 2],
@@ -1347,13 +1399,12 @@
         ],
         "Protection": [],
         "Retribution": [
+          ["Deflection", 4],
           ["Benediction", 5],
-          ["Deflection", 1],
-          ["Conviction", 3],
           ["Improved Judgement", 2],
+          ["Conviction", 3],
           ["Sanctified Judgement", 3],
           ["Seal of Command", 1],
-          ["Vindication", 3],
           ["Sacred Arbiter", 1],
           ["Two-Handed Weapon Specialization", 3],
           ["Vengeance", 3],
@@ -1361,18 +1412,19 @@
         ]
       },
       "core": [
-        {"talent": "Holy Shock", "why": "83 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Vengeance", "why": "58 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Consecrated Ground", "why": "46 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Judgement", "why": "36 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Seals", "why": "27 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Conviction", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Two-Handed Weapon Specialization", "why": "20 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+        {"talent": "Holy Shock", "why": "98 DPS lost without it (12% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Vengeance", "why": "61 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Consecrated Ground", "why": "50 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Holy Conduit", "why": "46 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Judgement", "why": "40 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Conviction", "why": "35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Champion of the Light", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Open search result (shockadin-raid, full raid): 24/0/27 (Shockadin (a Holy/Retribution hybrid)) at 759.1 DPS;  in the same fights; 2,349 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.6): 764.9 DPS against 759.2 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Healing Light, Spiritual Focus, Unyielding Faith, Deflection, Pursuit of Justice.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Healing Light -> Divine Strength (+0.2% DPS); Spiritual Focus -> Voice of Truth (interrupt); Deflection -> Benediction (mana); Spiritual Focus -> Purifying Power (mana); Unyielding Faith -> Purifying Power (mana); Deflection -> Benediction (mana); Pursuit of Justice -> Deflection (survival); Benediction -> Vindication (+0.2% DPS); Pursuit of Justice -> Vindication (+0.2% DPS); Deflection -> Benediction (mana). Net +0.73% on a third seed.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 24/0/27 -> 23/0/28; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Voice of Truth 1 gone; Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 1 gone; +1 Holy Conduit (tier gating for Divine Precision); +1 Holy Conduit (tier gating for Divine Precision); +1 Divine Precision (tier gating for Consecrated Ground); +1 Spiritual Focus (tier gating for Consecrated Ground); +1 Spiritual Focus (tier gating for Consecrated Ground); +1 Spiritual Focus (tier gating for Consecrated Ground); +1 Seal of Command (tier gating for Vengeance); +1 Two-Handed Weapon Specialization (tier gating for Vengeance); +1 Vindication (tier gating for Champion of the Light); +1 Deflection (tier gating for Champion of the Light); refill +2 Champion of the Light (refill: the ret-dps model, raid-dps)."],
+      "notes": ["Open search result (shockadin-raid, full raid): 23/0/28 (Shockadin (a Holy/Retribution hybrid)) at 796.2 DPS; shockadin-open-raid 784.3 in the same fights; 2,020 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps -8.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.0): 815.0 DPS against 796.5 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.", "2026-11-01 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed."],
       "open_questions": ["An open-search Shockadin build: check it against the community's Shockadin builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/451231030001112--2322503020123011-7"]
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7"]
     }
   ]
 }

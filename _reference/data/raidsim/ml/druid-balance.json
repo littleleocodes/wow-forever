@@ -14,9 +14,9 @@
   "bis": {
    "entry": "balance-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "setting": "raid",
-   "chosen": "previous+trinkets",
+   "chosen": "previous",
    "ilvl": 63.9,
    "trinkets": [
     "Talisman of Ephemeral Power",
@@ -44,43 +44,41 @@
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 0.9899887975310934,
-    "previous+trinkets": 1.004084989532365
+    "previous": 1.0021201267430484
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "previous+trinkets": 1.0130726026678776
+    "previous": 1.0
    },
    "weights": {
-    "StatArcaneDamage": 0.4893,
-    "StatCritRating": 0.4281,
-    "StatHasteRating": 0.6904,
-    "StatHitRating": 0.6224,
-    "StatIntellect": 0.1072,
-    "StatNatureDamage": 0.1259,
-    "StatSpellDamage": 0.6152,
-    "StatSpellPiercing": 1.072,
-    "StatSpirit": -0.0002
+    "StatArcaneDamage": 0.4855,
+    "StatCritRating": 0.4113,
+    "StatHasteRating": 0.6658,
+    "StatHitRating": 0.6252,
+    "StatIntellect": 0.1099,
+    "StatNatureDamage": 0.125,
+    "StatSpellDamage": 0.6106,
+    "StatSpellPiercing": 1.0765,
+    "StatSpirit": -0.0004
    },
    "evaluated_on": [
     "balance-dps: ml winner"
    ],
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "bis2": true,
   "prebis": {
    "entry": "balance-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 61.5,
+   "ilvl": 63.4,
    "trinkets": [
     "Weakness Analyzer",
     "Jewel of the Guard Captain"
    ],
    "names": [
-    "Living Crown",
+    "Field Marshal's Dragonhide Helmet",
     "Orb of the Darkmoon",
     "Mantle of the Timbermaw",
     "Hide of the Wild",
@@ -94,34 +92,34 @@
     "Warden's Signet of Brilliance",
     "Weakness Analyzer",
     "Jewel of the Guard Captain",
-    "Ironbark Staff",
+    "High Warlord's War Staff",
     null,
     "Swarming Idol"
    ],
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 0.9994323978004895
+    "previous": 0.9969280170162482
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0003022707971616
+    "all-slots": 1.0037683891517681
    },
    "weights": {
-    "StatArcaneDamage": 0.4935,
-    "StatCritRating": 0.4022,
-    "StatHasteRating": 0.6698,
-    "StatHitRating": 0.6117,
-    "StatIntellect": 0.1023,
-    "StatNatureDamage": 0.1268,
-    "StatSpellDamage": 0.6203,
-    "StatSpellPiercing": 1.0587,
-    "StatSpirit": -0.0006
+    "StatArcaneDamage": 0.4892,
+    "StatCritRating": 0.4214,
+    "StatHasteRating": 0.6801,
+    "StatHitRating": 0.6099,
+    "StatIntellect": 0.1032,
+    "StatNatureDamage": 0.1259,
+    "StatSpellDamage": 0.6151,
+    "StatSpellPiercing": 1.0548,
+    "StatSpirit": 0.0
    },
    "evaluated_on": [
     "balance-dps: ml winner (bis)"
    ],
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   }
  },
  "search": {
@@ -572,7 +570,7 @@
    "spec": "Balance",
    "setting": "dummy",
    "entry": "balance-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -991,16 +989,16 @@
     "why": ""
    },
    "simulated_fights": 3516000,
-   "minutes": 5.3,
+   "minutes": 7.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "bis-raid": {
    "class": "druid",
    "spec": "Balance",
    "setting": "raid",
    "entry": "balance-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -1406,16 +1404,16 @@
     "why": ""
    },
    "simulated_fights": 2656000,
-   "minutes": 4.3,
+   "minutes": 6.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "prebis-dummy": {
    "class": "druid",
    "spec": "Balance",
    "setting": "dummy",
    "entry": "balance-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -1495,14 +1493,14 @@
      ]
     },
     "split": "38/0/13",
-    "dps": 563.89,
-    "se": 0.1009,
+    "dps": 568.39,
+    "se": 0.099,
     "iterations": 100000
    },
    "runner_up": {
     "split": "38/0/13",
-    "dps": 562.82,
-    "se": 0.1025,
+    "dps": 567.81,
+    "se": 0.1001,
     "differs": [
      [
       "Eclipse",
@@ -1518,7 +1516,7 @@
      ]
     ]
    },
-   "gap_to_runner_up": 0.0019,
+   "gap_to_runner_up": 0.001,
    "finalists": [
     {
      "allocation": {
@@ -1593,8 +1591,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 563.89,
-     "se": 0.1009
+     "dps": 568.39,
+     "se": 0.099
     },
     {
      "allocation": {
@@ -1673,8 +1671,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 562.82,
-     "se": 0.1025
+     "dps": 567.81,
+     "se": 0.1001
     }
    ],
    "runs": [
@@ -1682,37 +1680,37 @@
      "entry": "balance-dps",
      "run": 1,
      "simulated": 1194,
-     "best_screen": 562.66,
+     "best_screen": 567.88,
      "best_split": "38/0/13",
      "trace": [
       {
        "round": 0,
        "simulated": 394,
-       "best": 562.47
+       "best": 567.88
       },
       {
        "round": 1,
        "simulated": 594,
-       "best": 562.66,
-       "predicted_top": 555.88
+       "best": 567.88,
+       "predicted_top": 560.58
       },
       {
        "round": 2,
        "simulated": 794,
-       "best": 562.66,
-       "predicted_top": 559.92
+       "best": 567.88,
+       "predicted_top": 564.89
       },
       {
        "round": 3,
        "simulated": 994,
-       "best": 562.66,
-       "predicted_top": 559.86
+       "best": 567.88,
+       "predicted_top": 565.66
       },
       {
        "round": 4,
        "simulated": 1194,
-       "best": 562.66,
-       "predicted_top": 559.34
+       "best": 567.88,
+       "predicted_top": 565.18
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1725,38 +1723,38 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      563.51,
-      562.43,
-      561.43,
-      561.43,
-      561.43,
-      561.43
+      568.26,
+      567.68,
+      567.27,
+      566.95,
+      566.95,
+      566.95
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      563.61,
-      562.46,
-      561.45,
-      561.45,
-      561.45
+      567.98,
+      567.51,
+      567.09,
+      566.71,
+      566.71
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      563.89,
-      562.82
+      568.39,
+      567.81
      ]
     }
    ],
    "certificate": [
     {
      "neighbours": 506,
-     "best_gap": -0.0023,
+     "best_gap": -0.0008,
      "best_move": "1 Improved Wrath -> Eclipse"
     }
    ],
@@ -1764,51 +1762,51 @@
    "important_features": [
     {
      "feature": "Naturalist",
-     "importance": 0.3473
+     "importance": 0.3
     },
     {
      "feature": "Moonkin Form",
-     "importance": 0.1637
+     "importance": 0.1825
     },
     {
      "feature": "Reflection",
-     "importance": 0.1444
+     "importance": 0.1606
     },
     {
      "feature": "Moonfury",
-     "importance": 0.081
+     "importance": 0.0875
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0656
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0367
-    },
-    {
-     "feature": "Moonglow",
-     "importance": 0.029
-    },
-    {
-     "feature": "Insect Swarm",
-     "importance": 0.0266
+     "importance": 0.0563
     },
     {
      "feature": "Improved Entangling Roots",
-     "importance": 0.0234
+     "importance": 0.0553
     },
     {
-     "feature": "Balance points",
-     "importance": 0.02
+     "feature": "Restoration points",
+     "importance": 0.0251
     },
     {
      "feature": "Vengeance",
-     "importance": 0.0138
+     "importance": 0.0214
+    },
+    {
+     "feature": "Moonglow",
+     "importance": 0.0199
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0198
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0188
     },
     {
      "feature": "Improved Wrath",
-     "importance": 0.0073
+     "importance": 0.0106
     }
    ],
    "simulated_builds": 1714,
@@ -1822,16 +1820,16 @@
     "why": ""
    },
    "simulated_fights": 3125000,
-   "minutes": 4.5,
+   "minutes": 7.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "prebis-raid": {
    "class": "druid",
    "spec": "Balance",
    "setting": "raid",
    "entry": "balance-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -1911,14 +1909,14 @@
      ]
     },
     "split": "33/0/18",
-    "dps": 640.01,
-    "se": 0.1068,
+    "dps": 642.07,
+    "se": 0.1066,
     "iterations": 100000
    },
    "runner_up": {
     "split": "38/0/13",
-    "dps": 640.01,
-    "se": 0.1068,
+    "dps": 642.07,
+    "se": 0.1066,
     "differs": [
      [
       "Improved Wrath",
@@ -2005,8 +2003,8 @@
       ]
      },
      "split": "33/0/18",
-     "dps": 640.01,
-     "se": 0.1068
+     "dps": 642.07,
+     "se": 0.1066
     },
     {
      "allocation": {
@@ -2081,8 +2079,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 640.01,
-     "se": 0.1068
+     "dps": 642.07,
+     "se": 0.1066
     }
    ],
    "runs": [
@@ -2090,37 +2088,37 @@
      "entry": "balance-dps",
      "run": 1,
      "simulated": 1188,
-     "best_screen": 641.77,
+     "best_screen": 644.11,
      "best_split": "33/0/18",
      "trace": [
       {
        "round": 0,
        "simulated": 388,
-       "best": 641.77
+       "best": 644.11
       },
       {
        "round": 1,
        "simulated": 588,
-       "best": 641.77,
-       "predicted_top": 640.28
+       "best": 644.11,
+       "predicted_top": 642.97
       },
       {
        "round": 2,
        "simulated": 788,
-       "best": 641.77,
-       "predicted_top": 641.61
+       "best": 644.11,
+       "predicted_top": 644.04
       },
       {
        "round": 3,
        "simulated": 988,
-       "best": 641.77,
-       "predicted_top": 641.77
+       "best": 644.11,
+       "predicted_top": 644.09
       },
       {
        "round": 4,
        "simulated": 1188,
-       "best": 641.77,
-       "predicted_top": 641.77
+       "best": 644.11,
+       "predicted_top": 644.08
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2133,31 +2131,31 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      639.88,
-      639.88,
-      639.88,
-      639.88,
-      639.88,
-      639.88
+      642.3,
+      642.3,
+      642.3,
+      642.3,
+      642.3,
+      642.3
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      639.59,
-      639.59,
-      639.59,
-      639.59,
-      639.59
+      641.75,
+      641.75,
+      641.75,
+      641.75,
+      641.75
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      640.01,
-      640.01
+      642.07,
+      642.07
      ]
     }
    ],
@@ -2172,51 +2170,51 @@
    "important_features": [
     {
      "feature": "Naturalist",
-     "importance": 0.4188
-    },
-    {
-     "feature": "Moonfury",
-     "importance": 0.1489
+     "importance": 0.3723
     },
     {
      "feature": "Improved Wrath",
-     "importance": 0.1312
+     "importance": 0.1436
     },
     {
-     "feature": "Vengeance",
-     "importance": 0.0718
-    },
-    {
-     "feature": "Feral Combat points",
-     "importance": 0.0484
+     "feature": "Moonfury",
+     "importance": 0.0897
     },
     {
      "feature": "Insect Swarm",
-     "importance": 0.0357
+     "importance": 0.074
     },
     {
-     "feature": "Restoration points",
-     "importance": 0.0336
+     "feature": "Feral Combat points",
+     "importance": 0.0673
     },
     {
-     "feature": "Balance points",
-     "importance": 0.0281
-    },
-    {
-     "feature": "Improved Starfire",
-     "importance": 0.0183
-    },
-    {
-     "feature": "Ferocity",
-     "importance": 0.0127
+     "feature": "Vengeance",
+     "importance": 0.0597
     },
     {
      "feature": "Improved Entangling Roots",
-     "importance": 0.0127
+     "importance": 0.052
     },
     {
-     "feature": "Moonkin Form",
-     "importance": 0.0061
+     "feature": "Balance points",
+     "importance": 0.0339
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0299
+    },
+    {
+     "feature": "Improved Starfire",
+     "importance": 0.0233
+    },
+    {
+     "feature": "Furor",
+     "importance": 0.0081
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0069
     }
    ],
    "simulated_builds": 1504,
@@ -2230,12 +2228,12 @@
     "why": ""
    },
    "simulated_fights": 2507000,
-   "minutes": 3.3,
+   "minutes": 6.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   }
  },
- "commit": "b90e2b958",
+ "commit": "54ceac638",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2259,6 +2257,6 @@
   },
   "best_hand": "balance-moonkin-raid",
   "gain_vs_hand": 0.0117,
-  "commit": "b90e2b958"
+  "commit": "54ceac638"
  }
 }

@@ -2,7 +2,7 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
@@ -10,12 +10,18 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "1510501021-4-50233111101301351"
+   },
+   {
     "label": "ret-full-buffs-raid",
-    "talents": "05003-053020005-1523330100130033"
+    "talents": "05003-053020005-1523330100130033",
+    "protect_only": true
    },
    {
     "label": "sim preset: Unsealed Wrath",
-    "talents": "050250002-501-05233011201301351"
+    "talents": "050250002-501-05233011201301351",
+    "protect_only": true
    },
    {
     "label": "ret-raid-dps",
@@ -34,8 +40,7 @@
    }
   ],
   "tuned_on": [
-   "ret-full-buffs-raid",
-   "sim preset: Unsealed Wrath"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -45,18 +50,28 @@
     "change": "insert in the middle: cast Consecration",
     "gain_seed1": 0.010459960087783271,
     "gain_seed2": 0.012155232483979983,
-    "candidates": 316
+    "candidates": 316,
+    "pass": 1
    }
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 830.8333939931714,
+     "after": 838.7742762789569,
+     "base": 830.8333939931714,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.028207999827599996,
+     "oom_after": 0.028207999827599996
+    },
     "ret-full-buffs-raid": {
      "before": 661.7106074032811,
      "after": 671.7135815267058,
      "base": 661.7106074032811,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.00019849999915,
      "oom_after": 0.00019849999915
     },
     "sim preset: Unsealed Wrath": {
@@ -108,11 +123,13 @@
     "Judgement"
    ],
    "rejected": {
-    "structure": 12,
+    "structure": 7,
     "casts": 0,
     "core_share": 0
    },
    "on": true
-  }
+  },
+  "first_date": "2026-10-31",
+  "passes": 2
  }
 }

@@ -282,34 +282,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 18881
-        }
-       }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 18881
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 18881
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "and": {
       "vals": [
        {

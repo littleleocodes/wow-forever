@@ -144,25 +144,24 @@
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-10-28",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/ds_ruin.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
-    "label": "open winner",
+    "label": "shadow-bolt-hybrid-open-raid",
     "talents": "25300020135-0050203001-0550105003"
+   },
+   {
+    "label": "sim preset: SM/Ruin",
+    "talents": "2540002013520105--0550305003"
    },
    {
     "label": "ds-ruin-raid",
     "talents": "15500020135-0050203001-0550005003",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: SM/Ruin",
-    "talents": "2540002013520105--0550305003",
     "protect_only": true
    },
    {
@@ -172,17 +171,13 @@
    },
    {
     "label": "destruction-ml-raid",
-    "talents": "253-0050203001-055020510310035",
-    "protect_only": true
-   },
-   {
-    "label": "shadow-bolt-hybrid-open-raid",
-    "talents": "25300020035-0050203001-0550105103",
+    "talents": "252-0050203001-055031500310035",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "shadow-bolt-hybrid-open-raid",
+   "sim preset: SM/Ruin"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -246,59 +241,50 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 788.2834435687646,
-     "after": 793.9674115094922,
-     "base": 788.2834435687646,
+    "shadow-bolt-hybrid-open-raid": {
+     "before": 767.7445590677623,
+     "after": 770.9738473197184,
+     "base": 767.7445590677623,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.19322469994580488,
-     "oom_after": 0.19322469994580488
-    },
-    "ds-ruin-raid": {
-     "before": 784.2702500387028,
-     "after": 789.45274151399,
-     "base": 784.2702500387028,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.2769457999240326,
-     "oom_after": 0.2769457999240326
+     "oom_before": 0.008439999999999954,
+     "oom_after": 0.008439999999999954
     },
     "sim preset: SM/Ruin": {
-     "before": 769.4436147061224,
-     "after": 772.9588909066666,
-     "base": 769.4436147061224,
+     "before": 749.6270762667978,
+     "after": 750.7412607924317,
+     "base": 749.6270762667978,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5592620499379803,
-     "oom_after": 0.5592620499379803
+     "oom_before": 0.5631780500008502,
+     "oom_after": 0.5631780500008502
+    },
+    "ds-ruin-raid": {
+     "before": 763.7045641373631,
+     "after": 766.4385393744026,
+     "base": 763.7045641373631,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.198202750000147,
+     "oom_after": 0.198202750000147
     },
     "opt-sb-raid-raid-dps": {
-     "before": 786.767651538516,
-     "after": 787.4688395094745,
-     "base": 786.767651538516,
+     "before": 766.3510114384238,
+     "after": 764.0490135264001,
+     "base": 766.3510114384238,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2566441499389866,
-     "oom_after": 0.2566441499389866
+     "oom_before": 0.17864175000024857,
+     "oom_after": 0.17864175000024857
     },
     "destruction-ml-raid": {
-     "before": 730.6593295364768,
-     "after": 763.6368798386277,
-     "base": 730.6593295364768,
+     "before": 716.8188674861086,
+     "after": 748.2774412754752,
+     "base": 716.8188674861086,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18269769990819867,
-     "oom_after": 0.18269769990819867
-    },
-    "shadow-bolt-hybrid-open-raid": {
-     "before": 787.1938305340274,
-     "after": 785.2569931706023,
-     "base": 787.1938305340274,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.1938772999456551,
-     "oom_after": 0.1938772999456551
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
@@ -311,13 +297,13 @@
     "Shadow Bolt"
    ],
    "rejected": {
-    "structure": 208,
+    "structure": 52,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 10
+  "passes": 11
  }
 }

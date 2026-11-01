@@ -80,30 +80,25 @@
  "raid": {
   "class": "warlock",
   "spec": "incinerate-raid",
-  "date": "2026-10-28",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\warlock\\incinerate-raid-raid.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "25300020035-0050203001-0550205003"
-   },
-   {
     "label": "destruction-incinerate-raid",
-    "talents": "153-0050203001-0050245103101351",
-    "protect_only": true
+    "talents": "153-0050203001-0050245103101351"
    },
    {
     "label": "sim preset: Destro",
-    "talents": "2530000013-0004-0050355103101351",
-    "protect_only": true
+    "talents": "2530000013-0004-0050355103101351"
    }
   ],
   "tuned_on": [
-   "open winner"
+   "destruction-incinerate-raid",
+   "sim preset: Destro"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -191,51 +186,39 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 339.8927751269838,
-     "after": 766.56900562794,
-     "base": 339.8927751269838,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.26869269997239104,
-     "oom_after": 0.21043049997845356
-    },
     "destruction-incinerate-raid": {
-     "before": 695.648268330335,
-     "after": 715.9611269471216,
-     "base": 695.648268330335,
+     "before": 676.5632501166838,
+     "after": 696.0283101800503,
+     "base": 676.5632501166838,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.30319389992793244,
-     "oom_after": 0.24313139994753982
+     "oom_before": 0.26810069995583646,
+     "oom_after": 0.26810069995583646
     },
     "sim preset: Destro": {
-     "before": 687.0137201556487,
-     "after": 662.2480106476785,
-     "base": 687.0137201556487,
+     "before": 667.7044830557605,
+     "after": 643.5396642916119,
+     "base": 667.7044830557605,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.44470769990701536,
-     "oom_after": 0.4063075499214737
+     "oom_before": 0.4697806999641699,
+     "oom_after": 0.4697806999641699
     }
    }
   },
   "signature": {
    "specs": [
-    "Destruction",
-    "Hybrid Affliction/Destruction"
+    "Destruction"
    ],
-   "required": [
-    "Shadow Bolt"
-   ],
+   "required": [],
    "rejected": {
-    "structure": 190,
+    "structure": 0,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-09",
-  "passes": 4
+  "passes": 5
  }
 }

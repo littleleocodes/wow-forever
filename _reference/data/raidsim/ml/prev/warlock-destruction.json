@@ -16,69 +16,15 @@
   "bis": {
    "entry": "sb-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "all-slots",
-   "ilvl": 64.2,
+   "date": "2026-10-28",
+   "chosen": "current",
+   "ilvl": 63.9,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Weakness Analyzer"
    ],
-   "trinket_screen": {
-    "Talisman of Ephemeral Power (18820)": 1.0243,
-    "Weakness Analyzer (272438)": 1.021,
-    "Serenity Field (272439)": 1.011,
-    "Frozen Heart of the Mountain (249469)": 1.0091,
-    "Jewel of the Guard Captain (270225)": 1.0086,
-    "Rune of the Guard Captain (19120)": 1.0048,
-    "Cleansed Vilebranch Medallion (270275)": 1.0048,
-    "Everlook Delivery Bot (274760)": 1.0,
-    "Ankh of Life (1713)": 1.0,
-    "Shard of the Splithooves (10659)": 0.9991,
-    "Enriched Seal (271905)": 0.9986,
-    "Darkspear Voodoo Seal (272059)": 0.9986,
-    "Enriched Seal (271903)": 0.9984,
-    "Darkspear Voodoo Seal (272061)": 0.9984,
-    "Alchemist's Stone (13503)": 0.998,
-    "Dog Whistle (3456)": 0.997,
-    "Minor Recombobulator (4381)": 0.997,
-    "Gnomish Universal Remote (7506)": 0.997,
-    "Demon's Blood (10779)": 0.997,
-    "Smoking Heart of the Mountain (11811)": 0.997,
-    "Heart of the Scale (13164)": 0.997,
-    "Arcanite Dragonling (16022)": 0.997,
-    "Stormpike Insignia Rank 6 (17904)": 0.997,
-    "Gyrofreeze Ice Reflector (18634)": 0.997,
-    "Major Recombobulator (18637)": 0.997,
-    "Hyper-Radiant Flame Reflector (18638)": 0.997,
-    "Ultra-Flash Shadow Reflector (18639)": 0.997,
-    "Essence of the Pure Flame (18815)": 0.997,
-    "Arena Grand Master (19024)": 0.997,
-    "Talisman of Arathor (20071)": 0.997,
-    "Defiler's Talisman (20072)": 0.997,
-    "Defiler's Talisman (21115)": 0.997,
-    "Defiler's Talisman (21116)": 0.997,
-    "Talisman of Arathor (21117)": 0.997,
-    "Talisman of Arathor (21118)": 0.997,
-    "Talisman of Arathor (21119)": 0.997,
-    "Defiler's Talisman (21120)": 0.997,
-    "Defender of the Timbermaw (21326)": 0.997,
-    "Molten Heart of the Mountain (249470)": 0.997,
-    "Dormant Heart of the Mountain (249473)": 0.997,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.997,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.997,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.997,
-    "Gnomish Poultryizer (260824)": 0.997,
-    "Volunteer's Lucky Seal (271904)": 0.997,
-    "Volunteer's Lucky Seal (271906)": 0.997,
-    "Relentless Raider's Seal (272060)": 0.997,
-    "Relentless Raider's Seal (272062)": 0.997,
-    "Adaptive Combat Assistant (272437)": 0.997,
-    "Defender's Grip Stabilizer (272440)": 0.997,
-    "Everlook Pathcarver (274759)": 0.997,
-    "Parachute-Priest Pager (274761)": 0.997
-   },
    "names": [
-    "Red Mageweave Headband",
+    "Felcloth Hood",
     "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
@@ -88,7 +34,7 @@
     "Belt of the Archmage",
     "Flarecore Leggings",
     "Sorcerer's Boots",
-    "Signet Ring of the Bronze Dragonflight",
+    "Ring of Spell Power",
     "Ring of Spell Power",
     "Talisman of Ephemeral Power",
     "Weakness Analyzer",
@@ -98,172 +44,40 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.002065345947479,
-    "keep-sets-and-effects": 1.002065345947479
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0,
+    "previous": 0.9985135876078339
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.002192911171916
+    "current": 1.0
    },
    "weights": {
-    "StatCritRating": 0.4345,
-    "StatFireDamage": 0.1113,
-    "StatHasteRating": 0.4934,
-    "StatHitRating": 0.6302,
-    "StatIntellect": 0.3023,
-    "StatShadowDamage": 0.4256,
-    "StatSpellDamage": 0.5369,
-    "StatSpellPiercing": 0.7333,
-    "StatSpirit": 0.0867
+    "StatCritRating": 0.478,
+    "StatFireDamage": 0.1091,
+    "StatHasteRating": 0.5633,
+    "StatHitRating": 0.661,
+    "StatIntellect": 0.2032,
+    "StatShadowDamage": 0.4645,
+    "StatSpellDamage": 0.5736,
+    "StatSpellPiercing": 0.7883,
+    "StatSpirit": 0.0958
    },
    "evaluated_on": [
     "sb-raid: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Spellweaver's Turban (not in the database)",
-     "to": "Red Mageweave Headband"
-    },
-    {
-     "slot": 2,
-     "from": "Rugged Mantle of the Timbermaw (not in the database)",
-     "to": "Mantle of the Timbermaw"
-    },
-    {
-     "slot": 3,
-     "from": "Crystalline Threaded Cape (not in the database)",
-     "to": "Arcanoweave Cloak"
-    },
-    {
-     "slot": 4,
-     "from": "Robe of Volatile Power (not in the database)",
-     "to": "Robe of the Void"
-    },
-    {
-     "slot": 6,
-     "from": "Hands of Power (not in the database)",
-     "to": "Gloves of Spell Mastery"
-    },
-    {
-     "slot": 7,
-     "from": "Mana Igniting Cord (not in the database)",
-     "to": "Belt of the Archmage"
-    },
-    {
-     "slot": 8,
-     "from": "Nemesis Leggings (not in the database)",
-     "to": "Flarecore Leggings"
-    },
-    {
-     "slot": 10,
-     "from": "Ring of Spell Power",
-     "to": "Signet Ring of the Bronze Dragonflight"
-    },
-    {
-     "slot": 13,
-     "from": "Briarwood Reed (not in the database)",
-     "to": "Weakness Analyzer"
-    },
-    {
-     "slot": 14,
-     "from": "Azuresong Mageblade (not in the database)",
-     "to": "Sageblade"
-    },
-    {
-     "slot": 15,
-     "from": "Scepter of Interminable Focus (not in the database)",
-     "to": "Therazane's Touch"
-    },
-    {
-     "slot": 16,
-     "from": "Bonecreeper Stylus (not in the database)",
-     "to": "Brilliant Wand"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 09e739807",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22267",
-     "item:227808",
-     "item:20697",
-     "item:19145",
-     "item:13253",
-     "item:19136",
-     "item:16930",
-     "item:12930",
-     "item:17103",
-     "item:22329",
-     "item:13938"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 1.3
-   }
+   "commit": "30f67f5d2"
   },
   "bis2": true,
   "prebis": {
    "entry": "sb-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "all-slots",
+   "date": "2026-10-28",
+   "chosen": "previous",
    "ilvl": 62.4,
    "trinkets": [
     "Weakness Analyzer",
     "Jewel of the Guard Captain"
    ],
-   "trinket_screen": {
-    "Weakness Analyzer (272438)": 1.0219,
-    "Serenity Field (272439)": 1.0123,
-    "Jewel of the Guard Captain (270225)": 1.009,
-    "Frozen Heart of the Mountain (249469)": 1.0079,
-    "Rune of the Guard Captain (19120)": 1.0048,
-    "Cleansed Vilebranch Medallion (270275)": 1.0048,
-    "Everlook Delivery Bot (274760)": 1.001,
-    "Ankh of Life (1713)": 1.0,
-    "Shard of the Splithooves (10659)": 0.9987,
-    "Enriched Seal (271903)": 0.9985,
-    "Darkspear Voodoo Seal (272061)": 0.9985,
-    "Alchemist's Stone (13503)": 0.998,
-    "Enriched Seal (271905)": 0.9978,
-    "Darkspear Voodoo Seal (272059)": 0.9978,
-    "Dog Whistle (3456)": 0.9971,
-    "Minor Recombobulator (4381)": 0.9971,
-    "Gnomish Universal Remote (7506)": 0.9971,
-    "Demon's Blood (10779)": 0.9971,
-    "Smoking Heart of the Mountain (11811)": 0.9971,
-    "Heart of the Scale (13164)": 0.9971,
-    "Arcanite Dragonling (16022)": 0.9971,
-    "Stormpike Insignia Rank 6 (17904)": 0.9971,
-    "Gyrofreeze Ice Reflector (18634)": 0.9971,
-    "Major Recombobulator (18637)": 0.9971,
-    "Hyper-Radiant Flame Reflector (18638)": 0.9971,
-    "Ultra-Flash Shadow Reflector (18639)": 0.9971,
-    "Talisman of Arathor (20071)": 0.9971,
-    "Defiler's Talisman (20072)": 0.9971,
-    "Defiler's Talisman (21115)": 0.9971,
-    "Defiler's Talisman (21116)": 0.9971,
-    "Talisman of Arathor (21117)": 0.9971,
-    "Talisman of Arathor (21118)": 0.9971,
-    "Talisman of Arathor (21119)": 0.9971,
-    "Defiler's Talisman (21120)": 0.9971,
-    "Defender of the Timbermaw (21326)": 0.9971,
-    "Molten Heart of the Mountain (249470)": 0.9971,
-    "Dormant Heart of the Mountain (249473)": 0.9971,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9971,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.9971,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9971,
-    "Gnomish Poultryizer (260824)": 0.9971,
-    "Volunteer's Lucky Seal (271904)": 0.9971,
-    "Volunteer's Lucky Seal (271906)": 0.9971,
-    "Relentless Raider's Seal (272060)": 0.9971,
-    "Relentless Raider's Seal (272062)": 0.9971,
-    "Adaptive Combat Assistant (272437)": 0.9971,
-    "Defender's Grip Stabilizer (272440)": 0.9971,
-    "Everlook Pathcarver (274759)": 0.9971,
-    "Parachute-Priest Pager (274761)": 0.9971
-   },
    "names": [
     "Felcloth Hood",
     "Orb of the Darkmoon",
@@ -285,120 +99,28 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9991086003084252
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0012597664663008
+    "previous": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "StatCritRating": 0.4234,
-    "StatFireDamage": 0.1139,
-    "StatHasteRating": 0.5501,
-    "StatHitRating": 0.6442,
-    "StatIntellect": 0.2334,
-    "StatShadowDamage": 0.4396,
-    "StatSpellDamage": 0.5536,
-    "StatSpellPiercing": 0.7154,
-    "StatSpirit": 0.0854
+    "StatCritRating": 0.4694,
+    "StatFireDamage": 0.1107,
+    "StatHasteRating": 0.4991,
+    "StatHitRating": 0.6824,
+    "StatIntellect": 0.2232,
+    "StatShadowDamage": 0.4745,
+    "StatSpellDamage": 0.5853,
+    "StatSpellPiercing": 0.7687,
+    "StatSpirit": 0.1305
    },
    "evaluated_on": [
     "sb-raid: ml winner (bis)"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Spellweaver's Turban (not in the database)",
-     "to": "Felcloth Hood"
-    },
-    {
-     "slot": 1,
-     "from": "Nacreous Shell Necklace (not in the database)",
-     "to": "Orb of the Darkmoon"
-    },
-    {
-     "slot": 2,
-     "from": "Rugged Mantle of the Timbermaw (not in the database)",
-     "to": "Mantle of the Timbermaw"
-    },
-    {
-     "slot": 3,
-     "from": "Crystalline Threaded Cape (not in the database)",
-     "to": "Arcanoweave Cloak"
-    },
-    {
-     "slot": 6,
-     "from": "Hands of Power (not in the database)",
-     "to": "Gloves of Spell Mastery"
-    },
-    {
-     "slot": 7,
-     "from": "Knowledge of the Timbermaw (not in the database)",
-     "to": "Belt of the Archmage"
-    },
-    {
-     "slot": 8,
-     "from": "Skyshroud Leggings (not in the database)",
-     "to": "Ghostweave Pants"
-    },
-    {
-     "slot": 10,
-     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
-     "to": "Signet Ring of the Bronze Dragonflight"
-    },
-    {
-     "slot": 11,
-     "from": "Elemental Focus Band",
-     "to": "Brilliant Watcher's Signet"
-    },
-    {
-     "slot": 12,
-     "from": "Briarwood Reed (not in the database)",
-     "to": "Weakness Analyzer"
-    },
-    {
-     "slot": 13,
-     "from": "Royal Seal of Eldre'Thalas (not in the database)",
-     "to": "Jewel of the Guard Captain"
-    },
-    {
-     "slot": 14,
-     "from": "Elemental Attuned Blade (not in the database)",
-     "to": "Sageblade"
-    },
-    {
-     "slot": 15,
-     "from": "Scepter of Interminable Focus (not in the database)",
-     "to": "Therazane's Touch"
-    },
-    {
-     "slot": 16,
-     "from": "Bonecreeper Stylus (not in the database)",
-     "to": "Brilliant Wand"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 09e739807",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22267",
-     "item:22403",
-     "item:227808",
-     "item:20697",
-     "item:13253",
-     "item:228190",
-     "item:13170",
-     "item:234439",
-     "item:12930",
-     "item:18467",
-     "item:20698",
-     "item:22329",
-     "item:13938"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 1.1
-   }
+   "commit": "30f67f5d2"
   }
  },
  "search": {
@@ -897,20 +619,569 @@
    "simulated_builds": 5867,
    "simulated_fights": 7506000,
    "minutes": 4.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
+   "commit": "30f67f5d2"
   },
   "bis-dummy": {
    "class": "warlock",
    "spec": "Destruction",
    "setting": "dummy",
    "entry": "sb-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-28",
    "constraint": "Destruction 30+",
    "protected": [],
    "entries_screened": {
-    "sb-raid": 646.47,
-    "fire-destro-raid": 631.04,
-    "incinerate-raid": 624.04
+    "sb-raid": 680.52,
+    "fire-destro-raid": 670.58,
+    "incinerate-raid": 667.18
+   },
+   "entries_searched": [
+    "sb-raid",
+    "fire-destro-raid",
+    "incinerate-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       3
+      ]
+     ],
+     "Demonology": [
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Demonic Aegis",
+       2
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "10/11/30",
+    "dps": 681.52,
+    "se": 0.1124,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "10/11/30",
+    "dps": 681.52,
+    "se": 0.1124,
+    "differs": [
+     [
+      "Demonic Aegis",
+      1
+     ],
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Demonic Embrace",
+      5
+     ],
+     [
+      "Improved Health Funnel",
+      2
+     ],
+     [
+      "Improved Voidwalker",
+      1
+     ],
+     [
+      "Unholy Power",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Improved Life Tap",
+        2
+       ],
+       [
+        "Suppression",
+        5
+       ],
+       [
+        "Improved Corruption",
+        3
+       ]
+      ],
+      "Demonology": [
+       [
+        "Demonic Embrace",
+        5
+       ],
+       [
+        "Demonic Aegis",
+        2
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Cataclysm",
+        3
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ],
+       [
+        "Conflagrate",
+        1
+       ],
+       [
+        "Fire and Brimstone",
+        3
+       ],
+       [
+        "Shadow and Flame",
+        5
+       ]
+      ]
+     },
+     "split": "10/11/30",
+     "dps": 681.52,
+     "se": 0.1124
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Improved Life Tap",
+        2
+       ],
+       [
+        "Suppression",
+        5
+       ],
+       [
+        "Improved Corruption",
+        3
+       ]
+      ],
+      "Demonology": [
+       [
+        "Improved Health Funnel",
+        2
+       ],
+       [
+        "Unholy Power",
+        3
+       ],
+       [
+        "Demonic Aegis",
+        1
+       ],
+       [
+        "Improved Voidwalker",
+        1
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Cataclysm",
+        3
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ],
+       [
+        "Conflagrate",
+        1
+       ],
+       [
+        "Fire and Brimstone",
+        3
+       ],
+       [
+        "Shadow and Flame",
+        5
+       ]
+      ]
+     },
+     "split": "10/11/30",
+     "dps": 681.52,
+     "se": 0.1124
+    }
+   ],
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1401,
+     "best_screen": 680.52,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 401,
+       "best": 678.19
+      },
+      {
+       "round": 1,
+       "simulated": 601,
+       "best": 680.52,
+       "predicted_top": 671.22
+      },
+      {
+       "round": 2,
+       "simulated": 801,
+       "best": 680.52,
+       "predicted_top": 677.41
+      },
+      {
+       "round": 3,
+       "simulated": 1001,
+       "best": 680.52,
+       "predicted_top": 680.18
+      },
+      {
+       "round": 4,
+       "simulated": 1201,
+       "best": 680.52,
+       "predicted_top": 680.51
+      },
+      {
+       "round": 5,
+       "simulated": 1401,
+       "best": 680.52,
+       "predicted_top": 680.5
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "fire-destro-raid",
+     "run": 1,
+     "simulated": 1602,
+     "best_screen": 672.63,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 402,
+       "best": 670.45
+      },
+      {
+       "round": 1,
+       "simulated": 602,
+       "best": 670.58,
+       "predicted_top": 664.64
+      },
+      {
+       "round": 2,
+       "simulated": 802,
+       "best": 672.63,
+       "predicted_top": 669.41
+      },
+      {
+       "round": 3,
+       "simulated": 1002,
+       "best": 672.63,
+       "predicted_top": 670.37
+      },
+      {
+       "round": 4,
+       "simulated": 1202,
+       "best": 672.63,
+       "predicted_top": 672.39
+      },
+      {
+       "round": 5,
+       "simulated": 1402,
+       "best": 672.63,
+       "predicted_top": 672.6
+      },
+      {
+       "round": 6,
+       "simulated": 1602,
+       "best": 672.63,
+       "predicted_top": 672.63
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    },
+    {
+     "entry": "incinerate-raid",
+     "run": 1,
+     "simulated": 1405,
+     "best_screen": 667.18,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 405,
+       "best": 664.25
+      },
+      {
+       "round": 1,
+       "simulated": 605,
+       "best": 667.18,
+       "predicted_top": 659.35
+      },
+      {
+       "round": 2,
+       "simulated": 805,
+       "best": 667.18,
+       "predicted_top": 664.62
+      },
+      {
+       "round": 3,
+       "simulated": 1005,
+       "best": 667.18,
+       "predicted_top": 666.85
+      },
+      {
+       "round": 4,
+       "simulated": 1205,
+       "best": 667.18,
+       "predicted_top": 667.14
+      },
+      {
+       "round": 5,
+       "simulated": 1405,
+       "best": 667.18,
+       "predicted_top": 667.18
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      680.86,
+      680.86,
+      680.86,
+      680.86,
+      680.86,
+      680.86
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      681.52,
+      681.52,
+      681.52,
+      681.52,
+      681.52
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      681.52,
+      681.52
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 392,
+     "best_gap": 0.0018,
+     "best_move": "1 Improved Corruption -> Aftermath",
+     "raced": [
+      "1 Improved Corruption -> Aftermath"
+     ],
+     "confirmed_gap": -0.0007
+    }
+   ],
+   "other_entries": [
+    {
+     "entry": "fire-destro-raid",
+     "dps": 669.79,
+     "split": "9/11/31"
+    },
+    {
+     "entry": "incinerate-raid",
+     "dps": 664.66,
+     "split": "10/11/30"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.3843
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.1921
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.1027
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0844
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0437
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0401
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0255
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0228
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.015
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0098
+    }
+   ],
+   "simulated_builds": 8306,
+   "signature_check": {
+    "spec": "Destruction",
+    "ok": true,
+    "core_share": 0.6581,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 11376500,
+   "minutes": 28.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "bis-raid": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "raid",
+   "entry": "sb-raid",
+   "date": "2026-10-28",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "sb-raid": 770.4,
+    "fire-destro-raid": 749.96,
+    "incinerate-raid": 753.81
    },
    "entries_searched": [
     "sb-raid"
@@ -967,12 +1238,12 @@
        3
       ],
       [
-       "Ruin",
-       5
+       "Aftermath",
+       1
       ],
       [
-       "Shadowburn",
-       1
+       "Ruin",
+       5
       ],
       [
        "Agonizing Flames",
@@ -993,21 +1264,21 @@
      ]
     },
     "split": "9/11/31",
-    "dps": 645.46,
-    "se": 0.1131,
+    "dps": 769.87,
+    "se": 0.1344,
     "iterations": 100000
    },
    "runner_up": {
     "split": "9/11/31",
-    "dps": 645.46,
-    "se": 0.1131,
+    "dps": 769.87,
+    "se": 0.1344,
     "differs": [
      [
-      "Improved Imp",
+      "Demonic Aegis",
       1
      ],
      [
-      "Improved Voidwalker",
+      "Improved Health Funnel",
       1
      ]
     ]
@@ -1066,12 +1337,12 @@
         3
        ],
        [
-        "Ruin",
-        5
+        "Aftermath",
+        1
        ],
        [
-        "Shadowburn",
-        1
+        "Ruin",
+        5
        ],
        [
         "Agonizing Flames",
@@ -1092,8 +1363,8 @@
       ]
      },
      "split": "9/11/31",
-     "dps": 645.46,
-     "se": 0.1131
+     "dps": 769.87,
+     "se": 0.1344
     },
     {
      "allocation": {
@@ -1113,7 +1384,7 @@
       ],
       "Demonology": [
        [
-        "Improved Imp",
+        "Improved Health Funnel",
         1
        ],
        [
@@ -1121,7 +1392,7 @@
         5
        ],
        [
-        "Demonic Aegis",
+        "Improved Voidwalker",
         1
        ],
        [
@@ -1147,12 +1418,12 @@
         3
        ],
        [
-        "Ruin",
-        5
+        "Aftermath",
+        1
        ],
        [
-        "Shadowburn",
-        1
+        "Ruin",
+        5
        ],
        [
         "Agonizing Flames",
@@ -1173,46 +1444,52 @@
       ]
      },
      "split": "9/11/31",
-     "dps": 645.46,
-     "se": 0.1131
+     "dps": 769.87,
+     "se": 0.1344
     }
    ],
    "runs": [
     {
      "entry": "sb-raid",
      "run": 1,
-     "simulated": 1197,
-     "best_screen": 646.47,
+     "simulated": 1405,
+     "best_screen": 771.95,
      "best_split": "9/11/31",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 646.47
+       "simulated": 405,
+       "best": 770.4
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 646.47,
-       "predicted_top": 642.04
+       "simulated": 605,
+       "best": 771.95,
+       "predicted_top": 765.29
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 646.47,
-       "predicted_top": 645.43
+       "simulated": 805,
+       "best": 771.95,
+       "predicted_top": 769.55
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 646.47,
-       "predicted_top": 646.34
+       "simulated": 1005,
+       "best": 771.95,
+       "predicted_top": 770.26
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 646.47,
-       "predicted_top": 646.37
+       "simulated": 1205,
+       "best": 771.95,
+       "predicted_top": 770.39
+      },
+      {
+       "round": 5,
+       "simulated": 1405,
+       "best": 771.95,
+       "predicted_top": 771.85
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1225,109 +1502,633 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      645.51,
-      645.51,
-      645.51,
-      645.51,
-      645.51,
-      645.51
+      770.05,
+      770.05,
+      770.05,
+      770.05,
+      770.05,
+      770.05
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      645.88,
-      645.88,
-      645.88,
-      645.88,
-      645.88
+      769.65,
+      769.65,
+      769.65,
+      769.65,
+      769.65
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      645.46,
-      645.46
+      769.87,
+      769.87
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 593,
-     "best_gap": 0.0,
-     "best_move": "1 Improved Voidwalker -> Demonic Energies"
+     "neighbours": 200,
+     "best_gap": 0.0003,
+     "best_move": "1 Aftermath -> Improved Corruption"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Demonic Sacrifice",
-     "importance": 0.3521
+     "importance": 0.3386
     },
     {
      "feature": "Shadow and Flame",
-     "importance": 0.1801
-    },
-    {
-     "feature": "Destructive Reach",
-     "importance": 0.1522
-    },
-    {
-     "feature": "Molten Skin",
-     "importance": 0.0967
+     "importance": 0.2639
     },
     {
      "feature": "Aftermath",
-     "importance": 0.0472
+     "importance": 0.0681
     },
     {
-     "feature": "Demonology points",
-     "importance": 0.0324
+     "feature": "Molten Skin",
+     "importance": 0.0645
     },
     {
-     "feature": "Affliction points",
-     "importance": 0.0296
+     "feature": "Destructive Reach",
+     "importance": 0.0613
     },
     {
      "feature": "Fel Vitality",
-     "importance": 0.0223
+     "importance": 0.0516
     },
     {
-     "feature": "Destruction points",
-     "importance": 0.0144
-    },
-    {
-     "feature": "Suppression",
-     "importance": 0.014
-    },
-    {
-     "feature": "Agonizing Flames",
-     "importance": 0.0075
+     "feature": "Demonology points",
+     "importance": 0.0334
     },
     {
      "feature": "Intensity",
-     "importance": 0.0067
+     "importance": 0.0233
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0169
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0118
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0093
     }
    ],
-   "simulated_builds": 3759,
-   "simulated_fights": 5344000,
-   "minutes": 2.6,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+   "simulated_builds": 4208,
+   "signature_check": {
+    "spec": "Destruction",
+    "ok": true,
+    "core_share": 0.6839,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 4854000,
+   "minutes": 14.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
+   "commit": "30f67f5d2"
   },
-  "bis-raid": {
+  "prebis-dummy": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "dummy",
+   "entry": "sb-raid",
+   "date": "2026-10-28",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "sb-raid": 651.41,
+    "fire-destro-raid": 642.85,
+    "incinerate-raid": 639.5
+   },
+   "entries_searched": [
+    "sb-raid",
+    "fire-destro-raid",
+    "incinerate-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ]
+     ],
+     "Demonology": [
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Demonic Aegis",
+       2
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Aftermath",
+       1
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "9/11/31",
+    "dps": 652.89,
+    "se": 0.1085,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/11/31",
+    "dps": 652.89,
+    "se": 0.1085,
+    "differs": [
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Improved Imp",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Improved Life Tap",
+        2
+       ],
+       [
+        "Suppression",
+        5
+       ],
+       [
+        "Improved Corruption",
+        2
+       ]
+      ],
+      "Demonology": [
+       [
+        "Demonic Embrace",
+        5
+       ],
+       [
+        "Demonic Aegis",
+        2
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Cataclysm",
+        3
+       ],
+       [
+        "Aftermath",
+        1
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ],
+       [
+        "Conflagrate",
+        1
+       ],
+       [
+        "Fire and Brimstone",
+        3
+       ],
+       [
+        "Shadow and Flame",
+        5
+       ]
+      ]
+     },
+     "split": "9/11/31",
+     "dps": 652.89,
+     "se": 0.1085
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Improved Life Tap",
+        2
+       ],
+       [
+        "Suppression",
+        5
+       ],
+       [
+        "Improved Corruption",
+        2
+       ]
+      ],
+      "Demonology": [
+       [
+        "Improved Imp",
+        2
+       ],
+       [
+        "Demonic Embrace",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Cataclysm",
+        3
+       ],
+       [
+        "Aftermath",
+        1
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ],
+       [
+        "Conflagrate",
+        1
+       ],
+       [
+        "Fire and Brimstone",
+        3
+       ],
+       [
+        "Shadow and Flame",
+        5
+       ]
+      ]
+     },
+     "split": "9/11/31",
+     "dps": 652.89,
+     "se": 0.1085
+    }
+   ],
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1192,
+     "best_screen": 652.03,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 392,
+       "best": 651.41
+      },
+      {
+       "round": 1,
+       "simulated": 592,
+       "best": 651.41,
+       "predicted_top": 646.04
+      },
+      {
+       "round": 2,
+       "simulated": 792,
+       "best": 652.03,
+       "predicted_top": 648.95
+      },
+      {
+       "round": 3,
+       "simulated": 992,
+       "best": 652.03,
+       "predicted_top": 651.1
+      },
+      {
+       "round": 4,
+       "simulated": 1192,
+       "best": 652.03,
+       "predicted_top": 651.85
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "fire-destro-raid",
+     "run": 1,
+     "simulated": 1399,
+     "best_screen": 642.85,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 641.88
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 641.88,
+       "predicted_top": 634.83
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 642.85,
+       "predicted_top": 640.51
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 642.85,
+       "predicted_top": 641.64
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 642.85,
+       "predicted_top": 642.82
+      },
+      {
+       "round": 5,
+       "simulated": 1399,
+       "best": 642.85,
+       "predicted_top": 642.81
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    },
+    {
+     "entry": "incinerate-raid",
+     "run": 1,
+     "simulated": 1196,
+     "best_screen": 639.5,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 396,
+       "best": 639.5
+      },
+      {
+       "round": 1,
+       "simulated": 596,
+       "best": 639.5,
+       "predicted_top": 636.67
+      },
+      {
+       "round": 2,
+       "simulated": 796,
+       "best": 639.5,
+       "predicted_top": 638.93
+      },
+      {
+       "round": 3,
+       "simulated": 996,
+       "best": 639.5,
+       "predicted_top": 639.44
+      },
+      {
+       "round": 4,
+       "simulated": 1196,
+       "best": 639.5,
+       "predicted_top": 639.48
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      652.98,
+      652.98,
+      652.98,
+      652.98,
+      652.98,
+      652.98
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      652.93,
+      652.93,
+      652.93,
+      652.93,
+      652.93
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      652.89,
+      652.89
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 567,
+     "best_gap": 0.0003,
+     "best_move": "1 Aftermath -> Improved Corruption"
+    }
+   ],
+   "other_entries": [
+    {
+     "entry": "fire-destro-raid",
+     "dps": 639.63,
+     "split": "9/11/31"
+    },
+    {
+     "entry": "incinerate-raid",
+     "dps": 637.77,
+     "split": "10/11/30"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.3667
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.2189
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0991
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.081
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0386
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0345
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0256
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0242
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0231
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0116
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0113
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0081
+    }
+   ],
+   "simulated_builds": 7427,
+   "signature_check": {
+    "spec": "Destruction",
+    "ok": true,
+    "core_share": 0.6613,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 11696000,
+   "minutes": 28.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-raid": {
    "class": "warlock",
    "spec": "Destruction",
    "setting": "raid",
    "entry": "sb-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-28",
    "constraint": "Destruction 30+",
    "protected": [],
    "entries_screened": {
-    "sb-raid": 722.38,
-    "fire-destro-raid": 703.72,
-    "incinerate-raid": 705.82
+    "sb-raid": 737.75,
+    "fire-destro-raid": 717.18,
+    "incinerate-raid": 717.79
    },
    "entries_searched": [
     "sb-raid"
@@ -1380,12 +2181,12 @@
        3
       ],
       [
-       "Ruin",
-       5
+       "Aftermath",
+       1
       ],
       [
-       "Shadowburn",
-       1
+       "Ruin",
+       5
       ],
       [
        "Agonizing Flames",
@@ -1406,22 +2207,22 @@
      ]
     },
     "split": "9/11/31",
-    "dps": 722.02,
-    "se": 0.1305,
+    "dps": 736.9,
+    "se": 0.1296,
     "iterations": 100000
    },
    "runner_up": {
     "split": "9/11/31",
-    "dps": 722.02,
-    "se": 0.1305,
+    "dps": 736.9,
+    "se": 0.1296,
     "differs": [
      [
       "Demonic Aegis",
-      2
+      1
      ],
      [
-      "Demonic Embrace",
-      1
+      "Demonic Aegis",
+      2
      ],
      [
       "Demonic Embrace",
@@ -1487,12 +2288,12 @@
         3
        ],
        [
-        "Ruin",
-        5
+        "Aftermath",
+        1
        ],
        [
-        "Shadowburn",
-        1
+        "Ruin",
+        5
        ],
        [
         "Agonizing Flames",
@@ -1513,8 +2314,8 @@
       ]
      },
      "split": "9/11/31",
-     "dps": 722.02,
-     "se": 0.1305
+     "dps": 736.9,
+     "se": 0.1296
     },
     {
      "allocation": {
@@ -1534,12 +2335,12 @@
       ],
       "Demonology": [
        [
-        "Demonic Embrace",
-        1
-       ],
-       [
         "Unholy Power",
         5
+       ],
+       [
+        "Demonic Aegis",
+        1
        ],
        [
         "Improved Voidwalker",
@@ -1568,12 +2369,12 @@
         3
        ],
        [
-        "Ruin",
-        5
+        "Aftermath",
+        1
        ],
        [
-        "Shadowburn",
-        1
+        "Ruin",
+        5
        ],
        [
         "Agonizing Flames",
@@ -1594,46 +2395,46 @@
       ]
      },
      "split": "9/11/31",
-     "dps": 722.02,
-     "se": 0.1305
+     "dps": 736.9,
+     "se": 0.1296
     }
    ],
    "runs": [
     {
      "entry": "sb-raid",
      "run": 1,
-     "simulated": 1196,
-     "best_screen": 722.38,
+     "simulated": 1201,
+     "best_screen": 737.75,
      "best_split": "9/11/31",
      "trace": [
       {
        "round": 0,
-       "simulated": 396,
-       "best": 722.38
+       "simulated": 401,
+       "best": 737.75
       },
       {
        "round": 1,
-       "simulated": 596,
-       "best": 722.38,
-       "predicted_top": 718.44
+       "simulated": 601,
+       "best": 737.75,
+       "predicted_top": 732.42
       },
       {
        "round": 2,
-       "simulated": 796,
-       "best": 722.38,
-       "predicted_top": 721.59
+       "simulated": 801,
+       "best": 737.75,
+       "predicted_top": 736.46
       },
       {
        "round": 3,
-       "simulated": 996,
-       "best": 722.38,
-       "predicted_top": 722.25
+       "simulated": 1001,
+       "best": 737.75,
+       "predicted_top": 737.68
       },
       {
        "round": 4,
-       "simulated": 1196,
-       "best": 722.38,
-       "predicted_top": 722.37
+       "simulated": 1201,
+       "best": 737.75,
+       "predicted_top": 737.75
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1646,996 +2447,109 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      721.27,
-      721.27,
-      721.27,
-      721.27,
-      721.27,
-      721.27
+      736.78,
+      736.78,
+      736.78,
+      736.78,
+      736.78,
+      736.78
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      721.96,
-      721.96,
-      721.96,
-      721.96,
-      721.96
+      736.84,
+      736.84,
+      736.84,
+      736.84,
+      736.84
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      722.02,
-      722.02
+      736.9,
+      736.9
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 549,
-     "best_gap": 0.0002,
-     "best_move": "5 Demonic Embrace -> Unholy Power"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Demonic Sacrifice",
-     "importance": 0.423
-    },
-    {
-     "feature": "Destructive Reach",
-     "importance": 0.1409
-    },
-    {
-     "feature": "Shadow and Flame",
-     "importance": 0.1283
-    },
-    {
-     "feature": "Molten Skin",
-     "importance": 0.0798
-    },
-    {
-     "feature": "Demonology points",
-     "importance": 0.0665
-    },
-    {
-     "feature": "Aftermath",
-     "importance": 0.0472
-    },
-    {
-     "feature": "Affliction points",
-     "importance": 0.0217
-    },
-    {
-     "feature": "Suppression",
-     "importance": 0.02
-    },
-    {
-     "feature": "Fel Vitality",
-     "importance": 0.0113
-    },
-    {
-     "feature": "Agonizing Flames",
-     "importance": 0.0092
-    },
-    {
-     "feature": "Intensity",
-     "importance": 0.0069
-    },
-    {
-     "feature": "Destruction points",
-     "importance": 0.0059
-    }
-   ],
-   "simulated_builds": 3893,
-   "simulated_fights": 5390000,
-   "minutes": 3.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
-  },
-  "prebis-dummy": {
-   "class": "warlock",
-   "spec": "Destruction",
-   "setting": "dummy",
-   "entry": "sb-raid",
-   "date": "2026-10-14",
-   "constraint": "Destruction 30+",
-   "protected": [],
-   "entries_screened": {
-    "sb-raid": 605.34,
-    "fire-destro-raid": 592.18,
-    "incinerate-raid": 589.88
-   },
-   "entries_searched": [
-    "sb-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Affliction": [
-      [
-       "Improved Life Tap",
-       2
-      ],
-      [
-       "Suppression",
-       5
-      ],
-      [
-       "Improved Corruption",
-       2
-      ]
-     ],
-     "Demonology": [
-      [
-       "Improved Health Funnel",
-       2
-      ],
-      [
-       "Unholy Power",
-       4
-      ],
-      [
-       "Improved Voidwalker",
-       2
-      ],
-      [
-       "Fel Vitality",
-       2
-      ],
-      [
-       "Demonic Sacrifice",
-       1
-      ]
-     ],
-     "Destruction": [
-      [
-       "Improved Shadow Bolt",
-       5
-      ],
-      [
-       "Bane",
-       5
-      ],
-      [
-       "Cataclysm",
-       3
-      ],
-      [
-       "Ruin",
-       5
-      ],
-      [
-       "Shadowburn",
-       1
-      ],
-      [
-       "Agonizing Flames",
-       3
-      ],
-      [
-       "Conflagrate",
-       1
-      ],
-      [
-       "Fire and Brimstone",
-       3
-      ],
-      [
-       "Shadow and Flame",
-       5
-      ]
-     ]
-    },
-    "split": "9/11/31",
-    "dps": 605.12,
-    "se": 0.0948,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "9/11/31",
-    "dps": 605.12,
-    "se": 0.0948,
-    "differs": [
-     [
-      "Improved Health Funnel",
-      1
-     ],
-     [
-      "Improved Health Funnel",
-      2
-     ],
-     [
-      "Improved Imp",
-      2
-     ],
-     [
-      "Improved Voidwalker",
-      1
-     ],
-     [
-      "Improved Voidwalker",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Affliction": [
-       [
-        "Improved Life Tap",
-        2
-       ],
-       [
-        "Suppression",
-        5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ]
-      ],
-      "Demonology": [
-       [
-        "Improved Health Funnel",
-        2
-       ],
-       [
-        "Unholy Power",
-        4
-       ],
-       [
-        "Improved Voidwalker",
-        2
-       ],
-       [
-        "Fel Vitality",
-        2
-       ],
-       [
-        "Demonic Sacrifice",
-        1
-       ]
-      ],
-      "Destruction": [
-       [
-        "Improved Shadow Bolt",
-        5
-       ],
-       [
-        "Bane",
-        5
-       ],
-       [
-        "Cataclysm",
-        3
-       ],
-       [
-        "Ruin",
-        5
-       ],
-       [
-        "Shadowburn",
-        1
-       ],
-       [
-        "Agonizing Flames",
-        3
-       ],
-       [
-        "Conflagrate",
-        1
-       ],
-       [
-        "Fire and Brimstone",
-        3
-       ],
-       [
-        "Shadow and Flame",
-        5
-       ]
-      ]
-     },
-     "split": "9/11/31",
-     "dps": 605.12,
-     "se": 0.0948
-    },
-    {
-     "allocation": {
-      "Affliction": [
-       [
-        "Improved Life Tap",
-        2
-       ],
-       [
-        "Suppression",
-        5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ]
-      ],
-      "Demonology": [
-       [
-        "Improved Health Funnel",
-        1
-       ],
-       [
-        "Improved Imp",
-        2
-       ],
-       [
-        "Unholy Power",
-        4
-       ],
-       [
-        "Improved Voidwalker",
-        1
-       ],
-       [
-        "Fel Vitality",
-        2
-       ],
-       [
-        "Demonic Sacrifice",
-        1
-       ]
-      ],
-      "Destruction": [
-       [
-        "Improved Shadow Bolt",
-        5
-       ],
-       [
-        "Bane",
-        5
-       ],
-       [
-        "Cataclysm",
-        3
-       ],
-       [
-        "Ruin",
-        5
-       ],
-       [
-        "Shadowburn",
-        1
-       ],
-       [
-        "Agonizing Flames",
-        3
-       ],
-       [
-        "Conflagrate",
-        1
-       ],
-       [
-        "Fire and Brimstone",
-        3
-       ],
-       [
-        "Shadow and Flame",
-        5
-       ]
-      ]
-     },
-     "split": "9/11/31",
-     "dps": 605.12,
-     "se": 0.0948
-    }
-   ],
-   "runs": [
-    {
-     "entry": "sb-raid",
-     "run": 1,
-     "simulated": 1196,
-     "best_screen": 605.5,
-     "best_split": "9/11/31",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 396,
-       "best": 605.34
-      },
-      {
-       "round": 1,
-       "simulated": 596,
-       "best": 605.34,
-       "predicted_top": 602.7
-      },
-      {
-       "round": 2,
-       "simulated": 796,
-       "best": 605.34,
-       "predicted_top": 604.35
-      },
-      {
-       "round": 3,
-       "simulated": 996,
-       "best": 605.34,
-       "predicted_top": 604.97
-      },
-      {
-       "round": 4,
-       "simulated": 1196,
-       "best": 605.5,
-       "predicted_top": 605.24
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      605.35,
-      605.35,
-      605.35,
-      605.35,
-      605.35,
-      605.35
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      605.32,
-      605.32,
-      605.32,
-      605.32,
-      605.32
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      605.12,
-      605.12
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 589,
-     "best_gap": 0.0004,
-     "best_move": "2 Improved Voidwalker -> Demonic Embrace"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Demonic Sacrifice",
-     "importance": 0.358
-    },
-    {
-     "feature": "Shadow and Flame",
-     "importance": 0.2395
-    },
-    {
-     "feature": "Destructive Reach",
-     "importance": 0.1059
-    },
-    {
-     "feature": "Molten Skin",
-     "importance": 0.0626
-    },
-    {
-     "feature": "Suppression",
-     "importance": 0.0422
-    },
-    {
-     "feature": "Fel Vitality",
-     "importance": 0.037
-    },
-    {
-     "feature": "Demonology points",
-     "importance": 0.0353
-    },
-    {
-     "feature": "Affliction points",
-     "importance": 0.033
-    },
-    {
-     "feature": "Intensity",
-     "importance": 0.0205
-    },
-    {
-     "feature": "Aftermath",
-     "importance": 0.0142
-    },
-    {
-     "feature": "Agonizing Flames",
-     "importance": 0.0088
-    },
-    {
-     "feature": "Destruction points",
-     "importance": 0.0065
-    }
-   ],
-   "simulated_builds": 4123,
-   "simulated_fights": 5700000,
-   "minutes": 2.8,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json"
-  },
-  "prebis-raid": {
-   "class": "warlock",
-   "spec": "Destruction",
-   "setting": "raid",
-   "entry": "sb-raid",
-   "date": "2026-10-14",
-   "constraint": "Destruction 30+",
-   "protected": [],
-   "entries_screened": {
-    "sb-raid": 683.91,
-    "fire-destro-raid": 662.66,
-    "incinerate-raid": 671.13
-   },
-   "entries_searched": [
-    "sb-raid",
-    "incinerate-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Affliction": [
-      [
-       "Improved Life Tap",
-       2
-      ],
-      [
-       "Suppression",
-       5
-      ],
-      [
-       "Improved Corruption",
-       2
-      ]
-     ],
-     "Demonology": [
-      [
-       "Improved Health Funnel",
-       1
-      ],
-      [
-       "Unholy Power",
-       4
-      ],
-      [
-       "Improved Voidwalker",
-       2
-      ],
-      [
-       "Fel Vitality",
-       3
-      ],
-      [
-       "Demonic Sacrifice",
-       1
-      ]
-     ],
-     "Destruction": [
-      [
-       "Improved Shadow Bolt",
-       5
-      ],
-      [
-       "Bane",
-       5
-      ],
-      [
-       "Cataclysm",
-       3
-      ],
-      [
-       "Ruin",
-       5
-      ],
-      [
-       "Shadowburn",
-       1
-      ],
-      [
-       "Agonizing Flames",
-       3
-      ],
-      [
-       "Conflagrate",
-       1
-      ],
-      [
-       "Fire and Brimstone",
-       3
-      ],
-      [
-       "Shadow and Flame",
-       5
-      ]
-     ]
-    },
-    "split": "9/11/31",
-    "dps": 683.29,
-    "se": 0.1146,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "9/11/31",
-    "dps": 683.29,
-    "se": 0.1146,
-    "differs": [
-     [
-      "Improved Health Funnel",
-      1
-     ],
-     [
-      "Unholy Power",
-      4
-     ],
-     [
-      "Unholy Power",
-      5
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Affliction": [
-       [
-        "Improved Life Tap",
-        2
-       ],
-       [
-        "Suppression",
-        5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ]
-      ],
-      "Demonology": [
-       [
-        "Improved Health Funnel",
-        1
-       ],
-       [
-        "Unholy Power",
-        4
-       ],
-       [
-        "Improved Voidwalker",
-        2
-       ],
-       [
-        "Fel Vitality",
-        3
-       ],
-       [
-        "Demonic Sacrifice",
-        1
-       ]
-      ],
-      "Destruction": [
-       [
-        "Improved Shadow Bolt",
-        5
-       ],
-       [
-        "Bane",
-        5
-       ],
-       [
-        "Cataclysm",
-        3
-       ],
-       [
-        "Ruin",
-        5
-       ],
-       [
-        "Shadowburn",
-        1
-       ],
-       [
-        "Agonizing Flames",
-        3
-       ],
-       [
-        "Conflagrate",
-        1
-       ],
-       [
-        "Fire and Brimstone",
-        3
-       ],
-       [
-        "Shadow and Flame",
-        5
-       ]
-      ]
-     },
-     "split": "9/11/31",
-     "dps": 683.29,
-     "se": 0.1146
-    },
-    {
-     "allocation": {
-      "Affliction": [
-       [
-        "Improved Life Tap",
-        2
-       ],
-       [
-        "Suppression",
-        5
-       ],
-       [
-        "Improved Corruption",
-        2
-       ]
-      ],
-      "Demonology": [
-       [
-        "Unholy Power",
-        5
-       ],
-       [
-        "Improved Voidwalker",
-        2
-       ],
-       [
-        "Fel Vitality",
-        3
-       ],
-       [
-        "Demonic Sacrifice",
-        1
-       ]
-      ],
-      "Destruction": [
-       [
-        "Improved Shadow Bolt",
-        5
-       ],
-       [
-        "Bane",
-        5
-       ],
-       [
-        "Cataclysm",
-        3
-       ],
-       [
-        "Ruin",
-        5
-       ],
-       [
-        "Shadowburn",
-        1
-       ],
-       [
-        "Agonizing Flames",
-        3
-       ],
-       [
-        "Conflagrate",
-        1
-       ],
-       [
-        "Fire and Brimstone",
-        3
-       ],
-       [
-        "Shadow and Flame",
-        5
-       ]
-      ]
-     },
-     "split": "9/11/31",
-     "dps": 683.29,
-     "se": 0.1146
-    }
-   ],
-   "runs": [
-    {
-     "entry": "sb-raid",
-     "run": 1,
-     "simulated": 1195,
-     "best_screen": 684.14,
-     "best_split": "9/11/31",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 395,
-       "best": 683.91
-      },
-      {
-       "round": 1,
-       "simulated": 595,
-       "best": 684.14,
-       "predicted_top": 679.53
-      },
-      {
-       "round": 2,
-       "simulated": 795,
-       "best": 684.14,
-       "predicted_top": 682.77
-      },
-      {
-       "round": 3,
-       "simulated": 995,
-       "best": 684.14,
-       "predicted_top": 683.95
-      },
-      {
-       "round": 4,
-       "simulated": 1195,
-       "best": 684.14,
-       "predicted_top": 684.08
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "incinerate-raid",
-     "run": 1,
-     "simulated": 1191,
-     "best_screen": 671.62,
-     "best_split": "9/11/31",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 391,
-       "best": 671.13
-      },
-      {
-       "round": 1,
-       "simulated": 591,
-       "best": 671.62,
-       "predicted_top": 666.78
-      },
-      {
-       "round": 2,
-       "simulated": 791,
-       "best": 671.62,
-       "predicted_top": 670.9
-      },
-      {
-       "round": 3,
-       "simulated": 991,
-       "best": 671.62,
-       "predicted_top": 671.45
-      },
-      {
-       "round": 4,
-       "simulated": 1191,
-       "best": 671.62,
-       "predicted_top": 671.51
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": false
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      683.48,
-      683.48,
-      683.48,
-      683.48,
-      683.48,
-      683.48
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      683.36,
-      683.36,
-      683.36,
-      683.36,
-      683.36
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      683.29,
-      683.29
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 570,
+     "neighbours": 567,
      "best_gap": 0.0,
-     "best_move": "2 Improved Voidwalker -> Demonic Energies"
+     "best_move": "2 Demonic Aegis -> Demonic Energies"
     }
    ],
-   "other_entries": [
-    {
-     "entry": "incinerate-raid",
-     "dps": 670.89,
-     "split": "9/11/31"
-    }
-   ],
+   "other_entries": [],
    "important_features": [
     {
      "feature": "Demonic Sacrifice",
-     "importance": 0.3997
+     "importance": 0.3926
     },
     {
      "feature": "Shadow and Flame",
-     "importance": 0.174
-    },
-    {
-     "feature": "Destructive Reach",
-     "importance": 0.1428
-    },
-    {
-     "feature": "Aftermath",
-     "importance": 0.0632
+     "importance": 0.2224
     },
     {
      "feature": "Molten Skin",
-     "importance": 0.063
+     "importance": 0.1014
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0661
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0554
     },
     {
      "feature": "Demonology points",
-     "importance": 0.0352
-    },
-    {
-     "feature": "Affliction points",
-     "importance": 0.0239
-    },
-    {
-     "feature": "Intensity",
-     "importance": 0.0205
-    },
-    {
-     "feature": "Suppression",
-     "importance": 0.0202
+     "importance": 0.0354
     },
     {
      "feature": "Fel Vitality",
-     "importance": 0.0094
+     "importance": 0.0173
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0165
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0119
+    },
+    {
+     "feature": "Shadowburn",
+     "importance": 0.0115
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0102
     },
     {
      "feature": "Agonizing Flames",
-     "importance": 0.0086
-    },
-    {
-     "feature": "Destruction points",
-     "importance": 0.0037
+     "importance": 0.0083
     }
    ],
-   "simulated_builds": 5913,
-   "simulated_fights": 8099500,
-   "minutes": 5.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json"
+   "simulated_builds": 3759,
+   "signature_check": {
+    "spec": "Destruction",
+    "ok": true,
+    "core_share": 0.6866,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 5292000,
+   "minutes": 13.5,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
+   "commit": "30f67f5d2"
   }
  },
- "commit": "2ce8265",
+ "commit": "30f67f5d2",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2645,490 +2559,277 @@
   "dps": {
    "winner": {
     "entry": "sb-raid",
-    "dps": 645.48,
-    "se": 0.113
+    "dps": 681.25,
+    "se": 0.112
    },
    "destruction-incinerate-raid": {
     "entry": "incinerate-raid",
-    "dps": 599.75,
-    "se": 0.082
+    "dps": 641.72,
+    "se": 0.081
    },
    "destruction-ml-raid": {
     "entry": "sb-raid",
-    "dps": 641.89,
+    "dps": 676.41,
     "se": 0.112
    }
   },
   "best_hand": "destruction-incinerate-raid",
-  "gain_vs_hand": 0.0762
+  "gain_vs_hand": 0.0616,
+  "commit": "30f67f5d2"
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "sb-raid",
-    "dps": 721.95,
-    "se": 0.131
+    "dps": 770.04,
+    "se": 0.134
    },
    "destruction-incinerate-raid": {
     "entry": "incinerate-raid",
-    "dps": 677.63,
-    "se": 0.095
+    "dps": 716.22,
+    "se": 0.094
    },
    "destruction-ml-raid": {
     "entry": "sb-raid",
-    "dps": 718.65,
-    "se": 0.131
-   },
-   "opt-fire-destro-raid-raid-dps": {
-    "entry": "fire-destro-raid",
-    "dps": 700.47,
-    "se": 0.125
+    "dps": 763.88,
+    "se": 0.132
    }
   },
   "best_hand": "destruction-incinerate-raid",
-  "gain_vs_hand": 0.0654
+  "gain_vs_hand": 0.0751
+ },
+ "signature_check": {
+  "spec": "Destruction",
+  "ok": true,
+  "core_share": 0.6838,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 770.3,
+  "date": "2026-10-29",
+  "commit": "30f67f5d2",
+  "shares": {
+   "Shadow Bolt": 0.4835,
+   "Corruption": 0.1516,
+   "Bane of Agony": 0.1511,
+   "Immolate": 0.1031,
+   "Conflagrate": 0.0925,
+   "Demonic Rune": 0.0135,
+   "Searing Pain": 0.0046
+  },
+  "casts": {
+   "Conflagrate": 14.03,
+   "Immolate": 10.4,
+   "Searing Pain": 1.12,
+   "Bane of Agony": 8.16,
+   "Life Tap": 10.24,
+   "Curse of the Elements": 1.1,
+   "Shadow Bolt": 40.78,
+   "Corruption": 9.9
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     1
+    ],
+    [
+     "Improved Voidwalker",
+     1
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "destruction-incinerate-raid",
+  "moves": [
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Unholy Power",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Voidwalker",
+    "to": "Demonic Aegis",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  },
+  "split": "9/11/31",
+  "ratio": 1.0
  },
  "builds": {
-  "written": [],
+  "written": [
+   "destruction-ml-raid"
+  ],
   "superseded": [],
-  "date": "2026-10-15",
-  "setting": "raid",
-  "why": "confirms destruction-ml-raid (+0.46% in a full raid)"
+  "date": "2026-10-29",
+  "setting": "raid"
  },
  "tidied": {
-  "bis-dummy": {
-   "allocation": {
-    "Affliction": [
-     [
-      "Improved Life Tap",
-      2
-     ],
-     [
-      "Suppression",
-      5
-     ],
-     [
-      "Improved Corruption",
-      2
-     ]
-    ],
-    "Demonology": [
-     [
-      "Demonic Aegis",
-      2
-     ],
-     [
-      "Fel Vitality",
-      3
-     ],
-     [
-      "Demonic Sacrifice",
-      1
-     ],
-     [
-      "Demonic Embrace",
-      5
-     ]
-    ],
-    "Destruction": [
-     [
-      "Improved Shadow Bolt",
-      5
-     ],
-     [
-      "Bane",
-      5
-     ],
-     [
-      "Cataclysm",
-      3
-     ],
-     [
-      "Ruin",
-      5
-     ],
-     [
-      "Shadowburn",
-      1
-     ],
-     [
-      "Agonizing Flames",
-      3
-     ],
-     [
-      "Conflagrate",
-      1
-     ],
-     [
-      "Fire and Brimstone",
-      3
-     ],
-     [
-      "Shadow and Flame",
-      5
-     ]
-    ]
-   },
-   "split": "9/11/31",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Improved Voidwalker",
-     "to": "Demonic Aegis",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": -0.0009875232978640014,
-     "seed2": -0.0008342745459828382,
-     "utility": "survival"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Demonic Sacrifice"
-   ],
-   "final_seed3": -0.0006785106639123351
-  },
+  "bis-dummy": null,
   "bis-raid": null,
-  "prebis-dummy": {
-   "allocation": {
-    "Affliction": [
-     [
-      "Improved Life Tap",
-      2
-     ],
-     [
-      "Suppression",
-      5
-     ],
-     [
-      "Improved Corruption",
-      2
-     ]
-    ],
-    "Demonology": [
-     [
-      "Fel Vitality",
-      3
-     ],
-     [
-      "Demonic Sacrifice",
-      1
-     ],
-     [
-      "Demonic Aegis",
-      2
-     ],
-     [
-      "Demonic Embrace",
-      5
-     ]
-    ],
-    "Destruction": [
-     [
-      "Improved Shadow Bolt",
-      5
-     ],
-     [
-      "Bane",
-      5
-     ],
-     [
-      "Cataclysm",
-      3
-     ],
-     [
-      "Ruin",
-      5
-     ],
-     [
-      "Shadowburn",
-      1
-     ],
-     [
-      "Agonizing Flames",
-      3
-     ],
-     [
-      "Conflagrate",
-      1
-     ],
-     [
-      "Fire and Brimstone",
-      3
-     ],
-     [
-      "Shadow and Flame",
-      5
-     ]
-    ]
-   },
-   "split": "9/11/31",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "gain",
-     "from": "Improved Health Funnel",
-     "to": "Fel Vitality",
-     "seed1": 0.009535020721061827,
-     "seed2": 0.008051282563043882,
-     "utility": "survival"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Improved Voidwalker",
-     "to": "Demonic Aegis",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Improved Voidwalker",
-     "to": "Demonic Aegis",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Improved Health Funnel",
-     "to": "Demonic Embrace",
-     "seed1": -0.0009875232978640014,
-     "seed2": -0.0008342745459828382,
-     "utility": "survival"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 8,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Demonic Sacrifice"
-   ],
-   "final_seed3": 0.006718551079811563
-  },
-  "prebis-raid": {
-   "allocation": {
-    "Affliction": [
-     [
-      "Improved Life Tap",
-      2
-     ],
-     [
-      "Suppression",
-      5
-     ],
-     [
-      "Improved Corruption",
-      2
-     ]
-    ],
-    "Demonology": [
-     [
-      "Fel Vitality",
-      3
-     ],
-     [
-      "Demonic Sacrifice",
-      1
-     ],
-     [
-      "Demonic Embrace",
-      5
-     ],
-     [
-      "Demonic Aegis",
-      2
-     ]
-    ],
-    "Destruction": [
-     [
-      "Improved Shadow Bolt",
-      5
-     ],
-     [
-      "Bane",
-      5
-     ],
-     [
-      "Cataclysm",
-      3
-     ],
-     [
-      "Ruin",
-      5
-     ],
-     [
-      "Shadowburn",
-      1
-     ],
-     [
-      "Agonizing Flames",
-      3
-     ],
-     [
-      "Conflagrate",
-      1
-     ],
-     [
-      "Fire and Brimstone",
-      3
-     ],
-     [
-      "Shadow and Flame",
-      5
-     ]
-    ]
-   },
-   "split": "9/11/31",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Improved Health Funnel",
-     "to": "Demonic Embrace",
-     "seed1": 0.0001050836442728631,
-     "seed2": -0.0002386702109017369,
-     "utility": "survival"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Improved Voidwalker",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Improved Voidwalker",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Aegis",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Unholy Power",
-     "to": "Demonic Aegis",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Demonic Sacrifice"
-   ],
-   "final_seed3": -0.00014666679681174521
-  }
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

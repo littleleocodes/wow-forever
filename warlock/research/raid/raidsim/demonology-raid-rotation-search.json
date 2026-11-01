@@ -144,8 +144,8 @@
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-10-28",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
@@ -156,8 +156,8 @@
     "talents": "011-0025003031220301351-0550005003"
    },
    {
-    "label": "sim preset: Demonic Pact 2/31/18",
-    "talents": "113-0005003221220311351-0550005"
+    "label": "sim preset: Demo (Shadow Brand)",
+    "talents": "011-0005003231220301351-0550005003"
    },
    {
     "label": "demonology-pact-raid",
@@ -167,7 +167,7 @@
   ],
   "tuned_on": [
    "demonology-ml-raid",
-   "sim preset: Demonic Pact 2/31/18"
+   "sim preset: Demo (Shadow Brand)"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -232,31 +232,31 @@
   "final": {
    "raid": {
     "demonology-ml-raid": {
-     "before": 876.6078005282508,
-     "after": 868.3172704591246,
-     "base": 876.6078005282508,
+     "before": 853.8989797578979,
+     "after": 843.7993587675813,
+     "base": 853.8989797578979,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.33611804992567296,
-     "oom_after": 0.33611804992567296
+     "oom_before": 0.18260165000014794,
+     "oom_after": 0.18260165000014794
     },
-    "sim preset: Demonic Pact 2/31/18": {
-     "before": 840.866115658927,
-     "after": 832.8026640740935,
-     "base": 840.866115658927,
+    "sim preset: Demo (Shadow Brand)": {
+     "before": 853.8989797578979,
+     "after": 843.7993587675813,
+     "base": 853.8989797578979,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.29309564992907894,
-     "oom_after": 0.29309564992907894
+     "oom_before": 0.18260165000014794,
+     "oom_after": 0.18260165000014794
     },
     "demonology-pact-raid": {
-     "before": 872.9347754177181,
-     "after": 864.1100635334822,
-     "base": 872.9347754177181,
+     "before": 849.1698257779392,
+     "after": 838.5514557681367,
+     "base": 849.1698257779392,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.3158359999329254,
-     "oom_after": 0.3158359999329254
+     "oom_before": 0.18783720000019707,
+     "oom_after": 0.18783720000019707
     }
    }
   },
@@ -273,6 +273,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

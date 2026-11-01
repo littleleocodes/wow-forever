@@ -2,7 +2,7 @@
  "raid": {
   "class": "paladin",
   "spec": "shockadin-raid",
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
@@ -10,12 +10,17 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\holy_shock.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "15125110220021--3323301102130033"
+   },
+   {
     "label": "shockadin-open-raid",
-    "talents": "35023210220021--1523330100130033"
+    "talents": "35023210220021--1523330100130033",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "shockadin-open-raid"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -25,18 +30,29 @@
     "change": "threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath",
     "gain_seed1": 0.010009827141164385,
     "gain_seed2": 0.010214682000814879,
-    "candidates": 281
+    "candidates": 281,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "move to the top: if variableRef: groupReference",
     "gain_seed1": 0.006029520893886531,
     "gain_seed2": 0.005269731748670292,
-    "candidates": 287
+    "candidates": 287,
+    "pass": 1
    }
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 783.9483859210164,
+     "after": 796.3666675005933,
+     "base": 783.9483859210164,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0009079999974499999,
+     "oom_after": 0.0009079999974499999
+    },
     "shockadin-open-raid": {
      "before": 772.4286154944599,
      "after": 784.4925071391141,
@@ -56,11 +72,13 @@
     "Holy Shock"
    ],
    "rejected": {
-    "structure": 33,
+    "structure": 52,
     "casts": 0,
     "core_share": 0
    },
    "on": true
-  }
+  },
+  "first_date": "2026-10-31",
+  "passes": 2
  }
 }

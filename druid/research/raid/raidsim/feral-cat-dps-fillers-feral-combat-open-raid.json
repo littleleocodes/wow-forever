@@ -3,34 +3,32 @@
  "spec": "feral-cat-dps",
  "build": "feral-combat-open-raid",
  "setting": "raid",
- "date": "2026-10-31",
+ "date": "2026-11-01",
  "tank": false,
  "removal": {
-  "Blood Frenzy": 0.017110705144732674,
-  "Ferocity": 0.012336799041051227,
-  "Furor": 0.003951483391799959,
-  "Genesis": 0.03276302043583945,
-  "Heart of the Wild": 0.02179291830512675,
+  "Blood Frenzy": 0.022088766975801755,
+  "Ferocity": 0.014863787674894158,
+  "Furor": -0.0,
+  "Genesis": 0.03033366921073788,
+  "Heart of the Wild": 0.021533746646605567,
   "Leader of the Pack": -0.0,
-  "Natural Instinct": 0.03626193173101688,
-  "Naturalist": 0.0878832324008697,
-  "Nature's Majesty": 0.032833676529509304,
-  "Nature's Reach": 0.021208094572501168,
-  "Predatory Discipline": 0.0018073429842438982,
-  "Predatory Strikes": 0.026158310375942517,
-  "Rend and Tear": 0.05457189746678082,
-  "Savage Fury": 0.03254642494449633,
-  "Sharpened Claws": 0.04924415828729023,
-  "Shifting Power": 0.15515263901011223,
-  "Shredding Attacks": 0.08284501759005414
+  "Natural Instinct": 0.036355623843090545,
+  "Naturalist": 0.0879648679039623,
+  "Nature's Majesty": 0.033293067486147576,
+  "Nature's Reach": 0.024655416988389134,
+  "Predatory Discipline": 0.007168133784163255,
+  "Predatory Strikes": 0.025805366524818685,
+  "Rend and Tear": 0.05317224618848615,
+  "Savage Fury": 0.03089106206980452,
+  "Sharpened Claws": 0.05017288932715769,
+  "Shifting Power": 0.16640463557061813,
+  "Shredding Attacks": 0.08268628128216449
  },
  "free": [
-  "Leader of the Pack",
-  "Predatory Discipline"
+  "Furor",
+  "Leader of the Pack"
  ],
- "kept_for_rotation": [
-  "Shifting Power"
- ],
+ "kept_for_rotation": [],
  "active_never_worth": [],
  "abilities_never_cast": [],
  "moves": [
@@ -42,6 +40,33 @@
    "seed1": 0.0,
    "seed2": 0.0,
    "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Thick Hide",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Thick Hide",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Thick Hide",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   }
  ],
  "final_seed3": 0.0,
@@ -143,7 +168,7 @@
    ],
    [
     "Furor",
-    5
+    2
    ],
    [
     "Shredding Attacks",
@@ -184,6 +209,10 @@
    [
     "Feral Charge",
     1
+   ],
+   [
+    "Thick Hide",
+    3
    ]
   ],
   "Restoration": [

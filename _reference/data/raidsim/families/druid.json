@@ -459,7 +459,7 @@
    "values_ours_base": 645.5,
    "ours_best": "balance-moonkin-raid",
    "synergy": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "winner": "33/0/18",
     "relevant": 42,
     "missing": 27,
@@ -11558,7 +11558,7 @@
       "gain": -0.09288
      }
     },
-    "minutes": 1.1
+    "minutes": 1.7
    },
    "sig_check": {
     "spec": "Balance",
@@ -11598,7 +11598,80 @@
     "written": [],
     "why": "confirms balance-moonkin-raid (+0.00% in a full raid, raced together)",
     "spec": "Balance",
-    "date": "2026-10-31"
+    "date": "2026-11-01"
+   },
+   "structural": {
+    "date": "2026-11-01",
+    "winner": "33/0/18",
+    "live": 14,
+    "screened": 300,
+    "correlation": 0.924,
+    "screen_best": [
+     {
+      "split": "38/0/13",
+      "simulated": -0.0054,
+      "model": 0.0
+     },
+     {
+      "split": "39/0/12",
+      "simulated": -0.0067,
+      "model": 0.001
+     },
+     {
+      "split": "38/0/13",
+      "simulated": -0.0076,
+      "model": -0.0025
+     },
+     {
+      "split": "40/0/11",
+      "simulated": -0.0085,
+      "model": -0.0005
+     },
+     {
+      "split": "38/0/13",
+      "simulated": -0.0095,
+      "model": -0.0005
+     },
+     {
+      "split": "39/0/12",
+      "simulated": -0.0105,
+      "model": -0.0023
+     },
+     {
+      "split": "38/0/13",
+      "simulated": -0.0111,
+      "model": -0.0057
+     },
+     {
+      "split": "41/0/10",
+      "simulated": -0.0117,
+      "model": -0.0022
+     }
+    ],
+    "raced": [
+     {
+      "split": "38/0/13",
+      "gain": -0.0052
+     },
+     {
+      "split": "38/0/13",
+      "gain": -0.0053
+     },
+     {
+      "split": "39/0/12",
+      "gain": -0.0055
+     },
+     {
+      "split": "38/0/13",
+      "gain": -0.0068
+     },
+     {
+      "split": "40/0/11",
+      "gain": -0.0082
+     }
+    ],
+    "leads": [],
+    "minutes": 85.4
    }
   },
   "feral-cat-dps": {
@@ -12091,13 +12164,15 @@
    "values_ours_base": 768.2,
    "ours_best": "feral-combat-open-raid",
    "synergy": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "winner": "9/32/10",
     "relevant": 42,
     "missing": 26,
     "pairs": 745,
     "screen_fights": 1500,
     "singles": {
+     "Reflection": 0.0007,
+     "Natural Shapeshifter": 0.0007,
      "Improved Wrath": 0.0,
      "Moonglow": 0.0,
      "Improved Moonfire": 0.0,
@@ -12107,11 +12182,71 @@
      "Vengeance": 0.0,
      "Improved Starfire": 0.0,
      "Nature's Grace": 0.0,
-     "Eclipse": 0.0,
-     "Moonfury": 0.0,
-     "Moonkin Form": 0.0
+     "Eclipse": 0.0
     },
     "top_pairs": [
+     {
+      "pair": "Improved Wrath + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Improved Wrath + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Moonglow + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Moonglow + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Improved Moonfire + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Improved Moonfire + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Improved Entangling Roots + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Improved Entangling Roots + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Nature's Splendor + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Nature's Splendor + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     },
+     {
+      "pair": "Insect Swarm + Reflection",
+      "gain": 0.0007,
+      "interaction": -0.0
+     },
+     {
+      "pair": "Insect Swarm + Natural Shapeshifter",
+      "gain": 0.0007,
+      "interaction": 0.0
+     }
+    ],
+    "top_interactions": [
      {
       "pair": "Improved Wrath + Moonglow",
       "gain": 0.0,
@@ -12173,76 +12308,8 @@
       "interaction": 0.0
      }
     ],
-    "top_interactions": [
-     {
-      "pair": "Reflection + Nature's Reach",
-      "gain": -0.0225,
-      "interaction": 0.0003,
-      "kind": "swap"
-     },
-     {
-      "pair": "Reflection + Blood Frenzy",
-      "gain": -0.0179,
-      "interaction": 0.0002,
-      "kind": "swap"
-     },
-     {
-      "pair": "Reflection + Natural Shapeshifter",
-      "gain": -0.0,
-      "interaction": 0.0001
-     },
-     {
-      "pair": "Reflection + Shredding Attacks",
-      "gain": -0.0825,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     {
-      "pair": "Reflection + Shifting Power",
-      "gain": -0.1568,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     {
-      "pair": "Natural Shapeshifter + Nature's Majesty",
-      "gain": -0.0325,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     {
-      "pair": "Natural Shapeshifter + Blood Frenzy",
-      "gain": -0.0179,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     {
-      "pair": "Improved Wrath + Moonglow",
-      "gain": 0.0,
-      "interaction": 0.0
-     },
-     {
-      "pair": "Improved Wrath + Improved Moonfire",
-      "gain": 0.0,
-      "interaction": 0.0
-     },
-     {
-      "pair": "Improved Wrath + Improved Entangling Roots",
-      "gain": 0.0,
-      "interaction": 0.0
-     },
-     {
-      "pair": "Improved Wrath + Nature's Splendor",
-      "gain": 0.0,
-      "interaction": 0.0
-     },
-     {
-      "pair": "Improved Wrath + Insect Swarm",
-      "gain": 0.0,
-      "interaction": 0.0
-     }
-    ],
     "leads": [],
-    "base": 767.9,
+    "base": 773.4,
     "winner_allocation": {
      "Balance": [
       [
@@ -12339,47 +12406,47 @@
      "Natural Reaction": 0.0,
      "Primal Bite": 0.0,
      "Nature's Focus": 0.0,
-     "Reflection": -0.0001,
-     "Natural Shapeshifter": -0.0,
+     "Reflection": 0.0007,
+     "Natural Shapeshifter": 0.0007,
      "Subtlety": 0.0,
      "Improved Rejuvenation": 0.0,
      "Nature's Swiftness": 0.0,
      "Improved Tranquility": 0.0,
      "Improved Regrowth": 0.0,
-     "-Genesis": -0.0327,
-     "Genesis -1": -0.0065,
-     "Genesis -2": -0.0131,
-     "-Nature's Majesty": -0.0326,
-     "Nature's Majesty -1": -0.0162,
-     "-Nature's Reach": -0.0227,
-     "Nature's Reach -1": -0.0104,
-     "-Ferocity": -0.011,
-     "Ferocity -1": -0.0021,
-     "Ferocity -2": -0.0053,
-     "-Furor": -0.0045,
-     "Furor -1": -0.0009,
-     "Furor -2": -0.0006,
-     "-Shredding Attacks": -0.0825,
-     "Shredding Attacks -1": -0.0312,
-     "Shredding Attacks -2": -0.0598,
-     "-Savage Fury": -0.0325,
-     "Savage Fury -1": -0.0163,
-     "-Sharpened Claws": -0.0493,
-     "Sharpened Claws -1": -0.0245,
-     "-Predatory Strikes": -0.0262,
-     "Predatory Strikes -1": -0.0087,
-     "Predatory Strikes -2": -0.0174,
-     "-Predatory Discipline": -0.0017,
-     "-Blood Frenzy": -0.018,
-     "Blood Frenzy -1": -0.0072,
+     "-Genesis": -0.0303,
+     "Genesis -1": -0.0061,
+     "Genesis -2": -0.0121,
+     "-Nature's Majesty": -0.0328,
+     "Nature's Majesty -1": -0.0159,
+     "-Nature's Reach": -0.021,
+     "Nature's Reach -1": -0.0093,
+     "-Ferocity": -0.0131,
+     "Ferocity -1": -0.0028,
+     "Ferocity -2": -0.0044,
+     "-Furor": 0.0,
+     "Furor -1": 0.0,
+     "Furor -2": 0.0,
+     "-Shredding Attacks": -0.081,
+     "Shredding Attacks -1": -0.0305,
+     "Shredding Attacks -2": -0.0571,
+     "-Savage Fury": -0.0309,
+     "Savage Fury -1": -0.0155,
+     "-Sharpened Claws": -0.0498,
+     "Sharpened Claws -1": -0.0244,
+     "-Predatory Strikes": -0.0258,
+     "Predatory Strikes -1": -0.0086,
+     "Predatory Strikes -2": -0.0172,
+     "-Predatory Discipline": -0.0037,
+     "-Blood Frenzy": -0.0193,
+     "Blood Frenzy -1": -0.0064,
      "-Leader of the Pack": 0.0,
-     "-Natural Instinct": -0.0362,
-     "Natural Instinct -1": -0.0181,
-     "-Rend and Tear": -0.0545,
-     "Rend and Tear -1": -0.0109,
-     "Rend and Tear -2": -0.0218,
-     "-Shifting Power": -0.1568,
-     "-Naturalist": -0.0879,
+     "-Natural Instinct": -0.0361,
+     "Natural Instinct -1": -0.018,
+     "-Rend and Tear": -0.0531,
+     "Rend and Tear -1": -0.0106,
+     "Rend and Tear -2": -0.0212,
+     "-Shifting Power": -0.1626,
+     "-Naturalist": -0.088,
      "Naturalist -1": -0.0176,
      "Naturalist -2": -0.0352
     },
@@ -12457,12 +12524,12 @@
       "interaction": 0.0
      },
      "Improved Wrath + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Improved Wrath + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Improved Wrath + Subtlety": {
       "gain": 0.0,
@@ -12553,12 +12620,12 @@
       "interaction": 0.0
      },
      "Moonglow + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Moonglow + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Moonglow + Subtlety": {
       "gain": 0.0,
@@ -12645,12 +12712,12 @@
       "interaction": 0.0
      },
      "Improved Moonfire + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Improved Moonfire + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Improved Moonfire + Subtlety": {
       "gain": 0.0,
@@ -12733,12 +12800,12 @@
       "interaction": 0.0
      },
      "Improved Entangling Roots + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Improved Entangling Roots + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Improved Entangling Roots + Subtlety": {
       "gain": 0.0,
@@ -12817,12 +12884,12 @@
       "interaction": 0.0
      },
      "Nature's Splendor + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Nature's Splendor + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Nature's Splendor + Subtlety": {
       "gain": 0.0,
@@ -12897,12 +12964,12 @@
       "interaction": 0.0
      },
      "Insect Swarm + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Insect Swarm + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Insect Swarm + Subtlety": {
       "gain": 0.0,
@@ -12973,12 +13040,12 @@
       "interaction": 0.0
      },
      "Vengeance + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Vengeance + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Vengeance + Subtlety": {
       "gain": 0.0,
@@ -13045,12 +13112,12 @@
       "interaction": 0.0
      },
      "Improved Starfire + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Improved Starfire + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Improved Starfire + Subtlety": {
       "gain": 0.0,
@@ -13113,12 +13180,12 @@
       "interaction": 0.0
      },
      "Nature's Grace + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Nature's Grace + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Nature's Grace + Subtlety": {
       "gain": 0.0,
@@ -13177,12 +13244,12 @@
       "interaction": 0.0
      },
      "Eclipse + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Eclipse + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Eclipse + Subtlety": {
       "gain": 0.0,
@@ -13237,12 +13304,12 @@
       "interaction": 0.0
      },
      "Moonfury + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Moonfury + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Moonfury + Subtlety": {
       "gain": 0.0,
@@ -13293,12 +13360,12 @@
       "interaction": 0.0
      },
      "Moonkin Form + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Moonkin Form + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Moonkin Form + Subtlety": {
       "gain": 0.0,
@@ -13345,12 +13412,12 @@
       "interaction": 0.0
      },
      "Feral Instinct + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Feral Instinct + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Feral Instinct + Subtlety": {
       "gain": 0.0,
@@ -13393,12 +13460,12 @@
       "interaction": 0.0
      },
      "Brutal Impact + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Brutal Impact + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Brutal Impact + Subtlety": {
       "gain": 0.0,
@@ -13437,12 +13504,12 @@
       "interaction": 0.0
      },
      "Feral Charge + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Feral Charge + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Feral Charge + Subtlety": {
       "gain": 0.0,
@@ -13477,12 +13544,12 @@
       "interaction": 0.0
      },
      "Lacerate + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Lacerate + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Lacerate + Subtlety": {
       "gain": 0.0,
@@ -13513,12 +13580,12 @@
       "interaction": 0.0
      },
      "Natural Reaction + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Natural Reaction + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Natural Reaction + Subtlety": {
       "gain": 0.0,
@@ -13545,12 +13612,12 @@
       "interaction": 0.0
      },
      "Primal Bite + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Primal Bite + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Primal Bite + Subtlety": {
       "gain": 0.0,
@@ -13573,12 +13640,12 @@
       "interaction": 0.0
      },
      "Nature's Focus + Reflection": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Nature's Focus + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Nature's Focus + Subtlety": {
       "gain": 0.0,
@@ -13601,48 +13668,48 @@
       "interaction": 0.0
      },
      "Reflection + Natural Shapeshifter": {
-      "gain": -0.0,
-      "interaction": 0.0001
+      "gain": 0.0007,
+      "interaction": -0.0007
      },
      "Reflection + Subtlety": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Reflection + Improved Rejuvenation": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Reflection + Nature's Swiftness": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Reflection + Improved Tranquility": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Reflection + Improved Regrowth": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0
      },
      "Natural Shapeshifter + Subtlety": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Natural Shapeshifter + Improved Rejuvenation": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Natural Shapeshifter + Nature's Swiftness": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Natural Shapeshifter + Improved Tranquility": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Natural Shapeshifter + Improved Regrowth": {
-      "gain": -0.0,
-      "interaction": -0.0
+      "gain": 0.0007,
+      "interaction": 0.0
      },
      "Subtlety + Improved Rejuvenation": {
       "gain": 0.0,
@@ -13685,43 +13752,43 @@
       "interaction": 0.0
      },
      "Improved Wrath + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Wrath + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Wrath + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Wrath + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Wrath + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Wrath + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Wrath + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Wrath + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Wrath + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Wrath + Leader of the Pack": {
@@ -13730,63 +13797,63 @@
       "kind": "swap"
      },
      "Improved Wrath + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Wrath + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Wrath + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Wrath + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonglow + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Moonglow + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Moonglow + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Moonglow + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonglow + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Moonglow + Leader of the Pack": {
@@ -13795,63 +13862,63 @@
       "kind": "swap"
      },
      "Moonglow + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonglow + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonglow + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Moonfire + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Moonfire + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Moonfire + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Leader of the Pack": {
@@ -13860,63 +13927,63 @@
       "kind": "swap"
      },
      "Improved Moonfire + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Moonfire + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Entangling Roots + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Entangling Roots + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Entangling Roots + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Leader of the Pack": {
@@ -13925,63 +13992,63 @@
       "kind": "swap"
      },
      "Improved Entangling Roots + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Entangling Roots + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Nature's Splendor + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Nature's Splendor + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Nature's Splendor + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Leader of the Pack": {
@@ -13990,63 +14057,63 @@
       "kind": "swap"
      },
      "Nature's Splendor + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Splendor + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Insect Swarm + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Insect Swarm + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Insect Swarm + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Insect Swarm + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Insect Swarm + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Insect Swarm + Leader of the Pack": {
@@ -14055,63 +14122,63 @@
       "kind": "swap"
      },
      "Insect Swarm + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Insect Swarm + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Insect Swarm + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Vengeance + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Vengeance + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Vengeance + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Vengeance + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Vengeance + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Vengeance + Leader of the Pack": {
@@ -14120,63 +14187,63 @@
       "kind": "swap"
      },
      "Vengeance + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Vengeance + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Vengeance + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Starfire + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Starfire + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Starfire + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Starfire + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Starfire + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Starfire + Leader of the Pack": {
@@ -14185,63 +14252,63 @@
       "kind": "swap"
      },
      "Improved Starfire + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Starfire + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Starfire + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Grace + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Nature's Grace + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Nature's Grace + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Nature's Grace + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Grace + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Grace + Leader of the Pack": {
@@ -14250,63 +14317,63 @@
       "kind": "swap"
      },
      "Nature's Grace + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Grace + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Grace + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Eclipse + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Eclipse + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Eclipse + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Eclipse + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Eclipse + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Eclipse + Leader of the Pack": {
@@ -14315,63 +14382,63 @@
       "kind": "swap"
      },
      "Eclipse + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Eclipse + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Eclipse + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonfury + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Moonfury + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Moonfury + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Moonfury + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonfury + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Moonfury + Leader of the Pack": {
@@ -14380,63 +14447,63 @@
       "kind": "swap"
      },
      "Moonfury + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonfury + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonfury + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonkin Form + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Moonkin Form + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Moonkin Form + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Moonkin Form + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonkin Form + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Moonkin Form + Leader of the Pack": {
@@ -14445,198 +14512,198 @@
       "kind": "swap"
      },
      "Moonkin Form + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Moonkin Form + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Moonkin Form + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Instinct + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Instinct + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Instinct + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Instinct + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Brutal Impact + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Brutal Impact + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Brutal Impact + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Brutal Impact + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Charge + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Charge + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Charge + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Feral Charge + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Lacerate + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Lacerate + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Lacerate + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Lacerate + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Reaction + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Reaction + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Reaction + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Reaction + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Primal Bite + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Primal Bite + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Primal Bite + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Primal Bite + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Focus + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Nature's Focus + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Nature's Focus + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Nature's Focus + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Focus + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Focus + Leader of the Pack": {
@@ -14645,223 +14712,223 @@
       "kind": "swap"
      },
      "Nature's Focus + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Focus + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Focus + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Reflection + Genesis": {
-      "gain": -0.0329,
-      "interaction": -0.0001,
-      "kind": "swap"
-     },
-     "Reflection + Nature's Majesty": {
-      "gain": -0.0327,
+      "gain": -0.1626,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Reflection + Genesis": {
+      "gain": -0.0296,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Reflection + Nature's Majesty": {
+      "gain": -0.0325,
+      "interaction": -0.0004,
+      "kind": "swap"
+     },
      "Reflection + Nature's Reach": {
-      "gain": -0.0225,
-      "interaction": 0.0003,
+      "gain": -0.0208,
+      "interaction": -0.0005,
       "kind": "swap"
      },
      "Reflection + Ferocity": {
-      "gain": -0.0114,
+      "gain": -0.0127,
       "interaction": -0.0003,
       "kind": "swap"
      },
      "Reflection + Furor": {
-      "gain": -0.0048,
-      "interaction": -0.0002,
+      "gain": 0.0007,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Reflection + Shredding Attacks": {
-      "gain": -0.0825,
-      "interaction": 0.0001,
+      "gain": -0.0819,
+      "interaction": -0.0016,
       "kind": "swap"
      },
      "Reflection + Savage Fury": {
-      "gain": -0.0327,
+      "gain": -0.0303,
       "interaction": -0.0001,
       "kind": "swap"
      },
      "Reflection + Sharpened Claws": {
-      "gain": -0.0494,
-      "interaction": 0.0,
-      "kind": "swap"
-     },
-     "Reflection + Predatory Strikes": {
-      "gain": -0.0263,
-      "interaction": 0.0,
-      "kind": "swap"
-     },
-     "Reflection + Predatory Discipline": {
-      "gain": -0.002,
+      "gain": -0.0493,
       "interaction": -0.0002,
       "kind": "swap"
      },
+     "Reflection + Predatory Strikes": {
+      "gain": -0.0252,
+      "interaction": -0.0001,
+      "kind": "swap"
+     },
+     "Reflection + Predatory Discipline": {
+      "gain": -0.0039,
+      "interaction": -0.0009,
+      "kind": "swap"
+     },
      "Reflection + Blood Frenzy": {
-      "gain": -0.0179,
-      "interaction": 0.0002,
+      "gain": -0.0192,
+      "interaction": -0.0006,
       "kind": "swap"
      },
      "Reflection + Leader of the Pack": {
-      "gain": -0.0001,
+      "gain": 0.0007,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Reflection + Natural Instinct": {
-      "gain": -0.0363,
-      "interaction": 0.0,
-      "kind": "swap"
-     },
-     "Reflection + Rend and Tear": {
-      "gain": -0.0546,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Reflection + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     "Natural Shapeshifter + Genesis": {
-      "gain": -0.0328,
+      "gain": -0.0355,
       "interaction": -0.0001,
       "kind": "swap"
      },
-     "Natural Shapeshifter + Nature's Majesty": {
-      "gain": -0.0325,
-      "interaction": 0.0001,
+     "Reflection + Rend and Tear": {
+      "gain": -0.0525,
+      "interaction": -0.0001,
       "kind": "swap"
      },
-     "Natural Shapeshifter + Nature's Reach": {
-      "gain": -0.0227,
+     "Reflection + Shifting Power": {
+      "gain": -0.1626,
+      "interaction": -0.0007,
+      "kind": "swap"
+     },
+     "Natural Shapeshifter + Genesis": {
+      "gain": -0.0296,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Natural Shapeshifter + Nature's Majesty": {
+      "gain": -0.0324,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Natural Shapeshifter + Nature's Reach": {
+      "gain": -0.0208,
+      "interaction": -0.0005,
+      "kind": "swap"
+     },
      "Natural Shapeshifter + Ferocity": {
-      "gain": -0.0115,
+      "gain": -0.0129,
       "interaction": -0.0005,
       "kind": "swap"
      },
      "Natural Shapeshifter + Furor": {
-      "gain": -0.0048,
-      "interaction": -0.0003,
+      "gain": 0.0007,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Shapeshifter + Shredding Attacks": {
-      "gain": -0.0826,
-      "interaction": -0.0001,
+      "gain": -0.082,
+      "interaction": -0.0017,
       "kind": "swap"
      },
      "Natural Shapeshifter + Savage Fury": {
-      "gain": -0.0326,
+      "gain": -0.0303,
       "interaction": -0.0001,
       "kind": "swap"
      },
      "Natural Shapeshifter + Sharpened Claws": {
       "gain": -0.0493,
-      "interaction": 0.0,
+      "interaction": -0.0002,
       "kind": "swap"
      },
      "Natural Shapeshifter + Predatory Strikes": {
-      "gain": -0.0262,
-      "interaction": 0.0,
-      "kind": "swap"
-     },
-     "Natural Shapeshifter + Predatory Discipline": {
-      "gain": -0.0018,
-      "interaction": -0.0001,
-      "kind": "swap"
-     },
-     "Natural Shapeshifter + Blood Frenzy": {
-      "gain": -0.0179,
-      "interaction": 0.0001,
-      "kind": "swap"
-     },
-     "Natural Shapeshifter + Leader of the Pack": {
-      "gain": -0.0,
+      "gain": -0.0251,
       "interaction": -0.0,
       "kind": "swap"
      },
+     "Natural Shapeshifter + Predatory Discipline": {
+      "gain": -0.0038,
+      "interaction": -0.0008,
+      "kind": "swap"
+     },
+     "Natural Shapeshifter + Blood Frenzy": {
+      "gain": -0.0189,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Natural Shapeshifter + Leader of the Pack": {
+      "gain": 0.0007,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
      "Natural Shapeshifter + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0354,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Natural Shapeshifter + Rend and Tear": {
-      "gain": -0.0546,
-      "interaction": -0.0001,
+      "gain": -0.0524,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Natural Shapeshifter + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": -0.0007,
       "kind": "swap"
      },
      "Subtlety + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Subtlety + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Subtlety + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Subtlety + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Subtlety + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Subtlety + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Subtlety + Leader of the Pack": {
@@ -14870,73 +14937,73 @@
       "kind": "swap"
      },
      "Subtlety + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Subtlety + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Subtlety + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Rejuvenation + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Rejuvenation + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Rejuvenation + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Leader of the Pack": {
@@ -14945,73 +15012,73 @@
       "kind": "swap"
      },
      "Improved Rejuvenation + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Rejuvenation + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Nature's Swiftness + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Nature's Swiftness + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Nature's Swiftness + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Leader of the Pack": {
@@ -15020,73 +15087,73 @@
       "kind": "swap"
      },
      "Nature's Swiftness + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Tranquility + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Tranquility + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Tranquility + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Leader of the Pack": {
@@ -15095,73 +15162,73 @@
       "kind": "swap"
      },
      "Improved Tranquility + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Tranquility + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Genesis": {
-      "gain": -0.0327,
-      "interaction": -0.0,
+      "gain": -0.0303,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Nature's Majesty": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Nature's Reach": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Ferocity": {
-      "gain": -0.011,
-      "interaction": -0.0,
+      "gain": -0.0131,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Furor": {
-      "gain": -0.0045,
-      "interaction": -0.0,
+      "gain": 0.0,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Shredding Attacks": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Savage Fury": {
-      "gain": -0.0325,
+      "gain": -0.0309,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Sharpened Claws": {
-      "gain": -0.0493,
-      "interaction": -0.0,
-      "kind": "swap"
-     },
-     "Improved Regrowth + Predatory Strikes": {
-      "gain": -0.0262,
+      "gain": -0.0498,
       "interaction": 0.0,
       "kind": "swap"
      },
+     "Improved Regrowth + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
      "Improved Regrowth + Predatory Discipline": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Blood Frenzy": {
-      "gain": -0.018,
-      "interaction": 0.0,
+      "gain": -0.0193,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Leader of the Pack": {
@@ -15170,501 +15237,501 @@
       "kind": "swap"
      },
      "Improved Regrowth + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0,
       "kind": "swap"
      },
      "Improved Regrowth + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0,
+      "gain": -0.1626,
+      "interaction": 0.0,
       "kind": "swap"
      }
     },
     "removed_pairs_all": {
      "Genesis + Nature's Majesty": {
-      "gain": -0.0642,
-      "interaction": 0.0011
+      "gain": -0.0622,
+      "interaction": 0.0009
      },
      "Genesis + Nature's Reach": {
-      "gain": -0.0553,
-      "interaction": 0.0001
+      "gain": -0.0513,
+      "interaction": 0.0
      },
      "Genesis + Ferocity": {
-      "gain": -0.0436,
+      "gain": -0.0433,
       "interaction": 0.0001
      },
      "Genesis + Furor": {
-      "gain": -0.0372,
+      "gain": -0.0303,
       "interaction": 0.0
      },
      "Genesis + Shredding Attacks": {
-      "gain": -0.1144,
-      "interaction": 0.0008
+      "gain": -0.1109,
+      "interaction": 0.0004
      },
      "Genesis + Savage Fury": {
-      "gain": -0.0643,
-      "interaction": 0.0009
+      "gain": -0.0604,
+      "interaction": 0.0008
      },
      "Genesis + Sharpened Claws": {
-      "gain": -0.0804,
-      "interaction": 0.0016
+      "gain": -0.0787,
+      "interaction": 0.0014
      },
      "Genesis + Predatory Strikes": {
-      "gain": -0.0582,
+      "gain": -0.0554,
       "interaction": 0.0007
      },
      "Genesis + Predatory Discipline": {
-      "gain": -0.0344,
-      "interaction": -0.0
+      "gain": -0.035,
+      "interaction": -0.001
      },
      "Genesis + Blood Frenzy": {
-      "gain": -0.0494,
-      "interaction": 0.0013
-     },
-     "Genesis + Leader of the Pack": {
-      "gain": -0.0327,
-      "interaction": -0.0
-     },
-     "Genesis + Natural Instinct": {
-      "gain": -0.067,
-      "interaction": 0.0019
-     },
-     "Genesis + Rend and Tear": {
-      "gain": -0.0844,
-      "interaction": 0.0028
-     },
-     "Genesis + Shifting Power": {
-      "gain": -0.1854,
-      "interaction": 0.0041
-     },
-     "Genesis + Naturalist": {
-      "gain": -0.1177,
-      "interaction": 0.0029
-     },
-     "Nature's Majesty + Nature's Reach": {
-      "gain": -0.0551,
-      "interaction": 0.0002
-     },
-     "Nature's Majesty + Ferocity": {
-      "gain": -0.0431,
-      "interaction": 0.0005
-     },
-     "Nature's Majesty + Furor": {
-      "gain": -0.0367,
+      "gain": -0.0492,
       "interaction": 0.0004
      },
+     "Genesis + Leader of the Pack": {
+      "gain": -0.0303,
+      "interaction": 0.0
+     },
+     "Genesis + Natural Instinct": {
+      "gain": -0.0647,
+      "interaction": 0.0017
+     },
+     "Genesis + Rend and Tear": {
+      "gain": -0.0807,
+      "interaction": 0.0027
+     },
+     "Genesis + Shifting Power": {
+      "gain": -0.1894,
+      "interaction": 0.0035
+     },
+     "Genesis + Naturalist": {
+      "gain": -0.1155,
+      "interaction": 0.0028
+     },
+     "Nature's Majesty + Nature's Reach": {
+      "gain": -0.055,
+      "interaction": -0.0012
+     },
+     "Nature's Majesty + Ferocity": {
+      "gain": -0.046,
+      "interaction": -0.0001
+     },
+     "Nature's Majesty + Furor": {
+      "gain": -0.0328,
+      "interaction": 0.0
+     },
      "Nature's Majesty + Shredding Attacks": {
-      "gain": -0.1144,
-      "interaction": 0.0007
+      "gain": -0.1134,
+      "interaction": 0.0004
      },
      "Nature's Majesty + Savage Fury": {
-      "gain": -0.0641,
-      "interaction": 0.001
-     },
-     "Nature's Majesty + Sharpened Claws": {
-      "gain": -0.0824,
-      "interaction": -0.0005
-     },
-     "Nature's Majesty + Predatory Strikes": {
-      "gain": -0.0579,
+      "gain": -0.0628,
       "interaction": 0.0009
      },
+     "Nature's Majesty + Sharpened Claws": {
+      "gain": -0.0821,
+      "interaction": 0.0005
+     },
+     "Nature's Majesty + Predatory Strikes": {
+      "gain": -0.0578,
+      "interaction": 0.0008
+     },
      "Nature's Majesty + Predatory Discipline": {
-      "gain": -0.0341,
-      "interaction": 0.0002
+      "gain": -0.0361,
+      "interaction": 0.0004
      },
      "Nature's Majesty + Blood Frenzy": {
-      "gain": -0.0495,
-      "interaction": 0.0011
+      "gain": -0.0506,
+      "interaction": 0.0015
      },
      "Nature's Majesty + Leader of the Pack": {
-      "gain": -0.0326,
+      "gain": -0.0328,
       "interaction": 0.0
      },
      "Nature's Majesty + Natural Instinct": {
-      "gain": -0.0654,
+      "gain": -0.0655,
       "interaction": 0.0034
      },
      "Nature's Majesty + Rend and Tear": {
-      "gain": -0.0853,
+      "gain": -0.0841,
       "interaction": 0.0018
      },
      "Nature's Majesty + Shifting Power": {
-      "gain": -0.187,
-      "interaction": 0.0024
+      "gain": -0.1921,
+      "interaction": 0.0033
      },
      "Nature's Majesty + Naturalist": {
-      "gain": -0.1176,
-      "interaction": 0.0029
+      "gain": -0.1178,
+      "interaction": 0.003
      },
      "Nature's Reach + Ferocity": {
-      "gain": -0.0326,
-      "interaction": 0.0011
+      "gain": -0.0349,
+      "interaction": -0.0008
      },
      "Nature's Reach + Furor": {
-      "gain": -0.0261,
-      "interaction": 0.0011
+      "gain": -0.021,
+      "interaction": 0.0
      },
      "Nature's Reach + Shredding Attacks": {
-      "gain": -0.1047,
-      "interaction": 0.0005
+      "gain": -0.1054,
+      "interaction": -0.0034
      },
      "Nature's Reach + Savage Fury": {
-      "gain": -0.0547,
-      "interaction": 0.0005
-     },
-     "Nature's Reach + Sharpened Claws": {
-      "gain": -0.0716,
+      "gain": -0.0515,
       "interaction": 0.0004
      },
+     "Nature's Reach + Sharpened Claws": {
+      "gain": -0.0715,
+      "interaction": -0.0007
+     },
      "Nature's Reach + Predatory Strikes": {
-      "gain": -0.0482,
-      "interaction": 0.0007
+      "gain": -0.0462,
+      "interaction": 0.0006
      },
      "Nature's Reach + Predatory Discipline": {
-      "gain": -0.0244,
-      "interaction": -0.0
+      "gain": -0.0273,
+      "interaction": -0.0026
      },
      "Nature's Reach + Blood Frenzy": {
-      "gain": -0.0411,
-      "interaction": -0.0004
+      "gain": -0.0426,
+      "interaction": -0.0023
      },
      "Nature's Reach + Leader of the Pack": {
-      "gain": -0.0227,
+      "gain": -0.021,
       "interaction": 0.0
      },
      "Nature's Reach + Natural Instinct": {
-      "gain": -0.0585,
-      "interaction": 0.0004
+      "gain": -0.0568,
+      "interaction": 0.0003
      },
      "Nature's Reach + Rend and Tear": {
-      "gain": -0.0766,
+      "gain": -0.0735,
       "interaction": 0.0006
      },
      "Nature's Reach + Shifting Power": {
-      "gain": -0.1782,
-      "interaction": 0.0013
+      "gain": -0.1845,
+      "interaction": -0.0009
      },
      "Nature's Reach + Naturalist": {
-      "gain": -0.1086,
-      "interaction": 0.002
+      "gain": -0.1071,
+      "interaction": 0.0019
      },
      "Ferocity + Furor": {
-      "gain": -0.0155,
-      "interaction": -0.0
+      "gain": -0.0131,
+      "interaction": 0.0
      },
      "Ferocity + Shredding Attacks": {
-      "gain": -0.0957,
-      "interaction": -0.0022
+      "gain": -0.0946,
+      "interaction": -0.0005
      },
      "Ferocity + Savage Fury": {
-      "gain": -0.0425,
-      "interaction": 0.001
+      "gain": -0.0432,
+      "interaction": 0.0008
      },
      "Ferocity + Sharpened Claws": {
-      "gain": -0.0593,
-      "interaction": 0.001
+      "gain": -0.0623,
+      "interaction": 0.0006
      },
      "Ferocity + Predatory Strikes": {
-      "gain": -0.0369,
+      "gain": -0.0386,
       "interaction": 0.0003
      },
      "Ferocity + Predatory Discipline": {
-      "gain": -0.0125,
-      "interaction": 0.0002
+      "gain": -0.0171,
+      "interaction": -0.0003
      },
      "Ferocity + Blood Frenzy": {
-      "gain": -0.0331,
-      "interaction": -0.0041
+      "gain": -0.0349,
+      "interaction": -0.0025
      },
      "Ferocity + Leader of the Pack": {
-      "gain": -0.011,
-      "interaction": -0.0
+      "gain": -0.0131,
+      "interaction": 0.0
      },
      "Ferocity + Natural Instinct": {
-      "gain": -0.0466,
+      "gain": -0.0486,
       "interaction": 0.0006
      },
      "Ferocity + Rend and Tear": {
-      "gain": -0.0644,
+      "gain": -0.0651,
       "interaction": 0.0011
      },
      "Ferocity + Shifting Power": {
-      "gain": -0.1702,
-      "interaction": -0.0024
+      "gain": -0.1719,
+      "interaction": 0.0038
      },
      "Ferocity + Naturalist": {
-      "gain": -0.0979,
-      "interaction": 0.001
+      "gain": -0.0999,
+      "interaction": 0.0012
      },
      "Furor + Shredding Attacks": {
-      "gain": -0.0841,
-      "interaction": 0.0029
+      "gain": -0.081,
+      "interaction": 0.0
      },
      "Furor + Savage Fury": {
-      "gain": -0.0368,
-      "interaction": 0.0002
-     },
-     "Furor + Sharpened Claws": {
-      "gain": -0.0531,
-      "interaction": 0.0007
-     },
-     "Furor + Predatory Strikes": {
-      "gain": -0.0306,
-      "interaction": 0.0001
-     },
-     "Furor + Predatory Discipline": {
-      "gain": -0.0064,
-      "interaction": -0.0002
-     },
-     "Furor + Blood Frenzy": {
-      "gain": -0.0218,
-      "interaction": 0.0007
-     },
-     "Furor + Leader of the Pack": {
-      "gain": -0.0045,
+      "gain": -0.0309,
       "interaction": -0.0
      },
+     "Furor + Sharpened Claws": {
+      "gain": -0.0498,
+      "interaction": 0.0
+     },
+     "Furor + Predatory Strikes": {
+      "gain": -0.0258,
+      "interaction": -0.0
+     },
+     "Furor + Predatory Discipline": {
+      "gain": -0.0037,
+      "interaction": -0.0
+     },
+     "Furor + Blood Frenzy": {
+      "gain": -0.0193,
+      "interaction": -0.0
+     },
+     "Furor + Leader of the Pack": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
      "Furor + Natural Instinct": {
-      "gain": -0.0405,
-      "interaction": 0.0002
+      "gain": -0.0361,
+      "interaction": 0.0
      },
      "Furor + Rend and Tear": {
-      "gain": -0.0587,
-      "interaction": 0.0003
+      "gain": -0.0531,
+      "interaction": -0.0
      },
      "Furor + Shifting Power": {
-      "gain": -0.1604,
-      "interaction": 0.0009
+      "gain": -0.1626,
+      "interaction": 0.0
      },
      "Furor + Naturalist": {
-      "gain": -0.092,
-      "interaction": 0.0004
+      "gain": -0.088,
+      "interaction": 0.0
      },
      "Shredding Attacks + Savage Fury": {
-      "gain": -0.1094,
-      "interaction": 0.0056
+      "gain": -0.1072,
+      "interaction": 0.0047
      },
      "Shredding Attacks + Sharpened Claws": {
-      "gain": -0.1307,
-      "interaction": 0.0011
+      "gain": -0.1283,
+      "interaction": 0.0025
      },
      "Shredding Attacks + Predatory Strikes": {
-      "gain": -0.1069,
-      "interaction": 0.0018
+      "gain": -0.1053,
+      "interaction": 0.0015
      },
      "Shredding Attacks + Predatory Discipline": {
-      "gain": -0.0833,
-      "interaction": 0.0009
+      "gain": -0.08,
+      "interaction": 0.0047
      },
      "Shredding Attacks + Blood Frenzy": {
-      "gain": -0.1259,
-      "interaction": -0.0254
+      "gain": -0.12,
+      "interaction": -0.0197
      },
      "Shredding Attacks + Leader of the Pack": {
-      "gain": -0.0825,
+      "gain": -0.081,
       "interaction": 0.0
      },
      "Shredding Attacks + Natural Instinct": {
-      "gain": -0.1143,
-      "interaction": 0.0044
+      "gain": -0.1128,
+      "interaction": 0.0043
      },
      "Shredding Attacks + Rend and Tear": {
-      "gain": -0.1299,
+      "gain": -0.127,
       "interaction": 0.0071
      },
      "Shredding Attacks + Shifting Power": {
-      "gain": -0.2018,
-      "interaction": 0.0375
+      "gain": -0.2088,
+      "interaction": 0.0348
      },
      "Shredding Attacks + Naturalist": {
-      "gain": -0.163,
-      "interaction": 0.0074
+      "gain": -0.1617,
+      "interaction": 0.0073
      },
      "Savage Fury + Sharpened Claws": {
-      "gain": -0.0803,
-      "interaction": 0.0015
-     },
-     "Savage Fury + Predatory Strikes": {
-      "gain": -0.0578,
-      "interaction": 0.0009
-     },
-     "Savage Fury + Predatory Discipline": {
-      "gain": -0.0341,
-      "interaction": 0.0001
-     },
-     "Savage Fury + Blood Frenzy": {
-      "gain": -0.0507,
-      "interaction": -0.0002
-     },
-     "Savage Fury + Leader of the Pack": {
-      "gain": -0.0325,
-      "interaction": -0.0
-     },
-     "Savage Fury + Natural Instinct": {
-      "gain": -0.0669,
-      "interaction": 0.0018
-     },
-     "Savage Fury + Rend and Tear": {
-      "gain": -0.0842,
-      "interaction": 0.0028
-     },
-     "Savage Fury + Shifting Power": {
-      "gain": -0.1796,
-      "interaction": 0.0097
-     },
-     "Savage Fury + Naturalist": {
-      "gain": -0.1175,
-      "interaction": 0.0029
-     },
-     "Sharpened Claws + Predatory Strikes": {
-      "gain": -0.0742,
-      "interaction": 0.0013
-     },
-     "Sharpened Claws + Predatory Discipline": {
-      "gain": -0.0507,
-      "interaction": 0.0003
-     },
-     "Sharpened Claws + Blood Frenzy": {
-      "gain": -0.0649,
-      "interaction": 0.0024
-     },
-     "Sharpened Claws + Leader of the Pack": {
-      "gain": -0.0493,
-      "interaction": -0.0
-     },
-     "Sharpened Claws + Natural Instinct": {
-      "gain": -0.0805,
-      "interaction": 0.005
-     },
-     "Sharpened Claws + Rend and Tear": {
-      "gain": -0.1012,
-      "interaction": 0.0026
-     },
-     "Sharpened Claws + Shifting Power": {
-      "gain": -0.2013,
-      "interaction": 0.0048
-     },
-     "Sharpened Claws + Naturalist": {
-      "gain": -0.1329,
-      "interaction": 0.0043
-     },
-     "Predatory Strikes + Predatory Discipline": {
-      "gain": -0.0278,
-      "interaction": 0.0001
-     },
-     "Predatory Strikes + Blood Frenzy": {
-      "gain": -0.0441,
-      "interaction": 0.0001
-     },
-     "Predatory Strikes + Leader of the Pack": {
-      "gain": -0.0262,
-      "interaction": 0.0
-     },
-     "Predatory Strikes + Natural Instinct": {
-      "gain": -0.0615,
-      "interaction": 0.0009
-     },
-     "Predatory Strikes + Rend and Tear": {
       "gain": -0.0794,
       "interaction": 0.0013
      },
+     "Savage Fury + Predatory Strikes": {
+      "gain": -0.056,
+      "interaction": 0.0007
+     },
+     "Savage Fury + Predatory Discipline": {
+      "gain": -0.0355,
+      "interaction": -0.0009
+     },
+     "Savage Fury + Blood Frenzy": {
+      "gain": -0.0514,
+      "interaction": -0.0012
+     },
+     "Savage Fury + Leader of the Pack": {
+      "gain": -0.0309,
+      "interaction": -0.0
+     },
+     "Savage Fury + Natural Instinct": {
+      "gain": -0.0653,
+      "interaction": 0.0017
+     },
+     "Savage Fury + Rend and Tear": {
+      "gain": -0.0814,
+      "interaction": 0.0026
+     },
+     "Savage Fury + Shifting Power": {
+      "gain": -0.1844,
+      "interaction": 0.0091
+     },
+     "Savage Fury + Naturalist": {
+      "gain": -0.1161,
+      "interaction": 0.0028
+     },
+     "Sharpened Claws + Predatory Strikes": {
+      "gain": -0.0744,
+      "interaction": 0.0012
+     },
+     "Sharpened Claws + Predatory Discipline": {
+      "gain": -0.0522,
+      "interaction": 0.0013
+     },
+     "Sharpened Claws + Blood Frenzy": {
+      "gain": -0.0663,
+      "interaction": 0.0028
+     },
+     "Sharpened Claws + Leader of the Pack": {
+      "gain": -0.0498,
+      "interaction": 0.0
+     },
+     "Sharpened Claws + Natural Instinct": {
+      "gain": -0.0808,
+      "interaction": 0.0051
+     },
+     "Sharpened Claws + Rend and Tear": {
+      "gain": -0.1002,
+      "interaction": 0.0027
+     },
+     "Sharpened Claws + Shifting Power": {
+      "gain": -0.207,
+      "interaction": 0.0054
+     },
+     "Sharpened Claws + Naturalist": {
+      "gain": -0.1334,
+      "interaction": 0.0044
+     },
+     "Predatory Strikes + Predatory Discipline": {
+      "gain": -0.0296,
+      "interaction": -0.0001
+     },
+     "Predatory Strikes + Blood Frenzy": {
+      "gain": -0.0452,
+      "interaction": -0.0001
+     },
+     "Predatory Strikes + Leader of the Pack": {
+      "gain": -0.0258,
+      "interaction": -0.0
+     },
+     "Predatory Strikes + Natural Instinct": {
+      "gain": -0.0612,
+      "interaction": 0.0007
+     },
+     "Predatory Strikes + Rend and Tear": {
+      "gain": -0.0778,
+      "interaction": 0.0011
+     },
      "Predatory Strikes + Shifting Power": {
-      "gain": -0.1795,
-      "interaction": 0.0035
+      "gain": -0.185,
+      "interaction": 0.0034
      },
      "Predatory Strikes + Naturalist": {
-      "gain": -0.1117,
-      "interaction": 0.0024
+      "gain": -0.1115,
+      "interaction": 0.0023
      },
      "Predatory Discipline + Blood Frenzy": {
-      "gain": -0.0187,
-      "interaction": 0.001
+      "gain": -0.0199,
+      "interaction": 0.0031
      },
      "Predatory Discipline + Leader of the Pack": {
-      "gain": -0.0017,
+      "gain": -0.0037,
       "interaction": -0.0
      },
      "Predatory Discipline + Natural Instinct": {
-      "gain": -0.0378,
+      "gain": -0.0397,
       "interaction": 0.0001
      },
      "Predatory Discipline + Rend and Tear": {
-      "gain": -0.0561,
-      "interaction": 0.0001
+      "gain": -0.0564,
+      "interaction": 0.0004
      },
      "Predatory Discipline + Shifting Power": {
-      "gain": -0.157,
-      "interaction": 0.0015
+      "gain": -0.1633,
+      "interaction": 0.003
      },
      "Predatory Discipline + Naturalist": {
-      "gain": -0.0894,
-      "interaction": 0.0002
+      "gain": -0.0913,
+      "interaction": 0.0004
      },
      "Blood Frenzy + Leader of the Pack": {
-      "gain": -0.018,
-      "interaction": 0.0
+      "gain": -0.0193,
+      "interaction": -0.0
      },
      "Blood Frenzy + Natural Instinct": {
-      "gain": -0.0531,
-      "interaction": 0.0011
+      "gain": -0.0544,
+      "interaction": 0.001
      },
      "Blood Frenzy + Rend and Tear": {
-      "gain": -0.071,
-      "interaction": 0.0015
+      "gain": -0.0705,
+      "interaction": 0.0019
      },
      "Blood Frenzy + Shifting Power": {
-      "gain": -0.194,
-      "interaction": -0.0192
+      "gain": -0.1965,
+      "interaction": -0.0146
      },
      "Blood Frenzy + Naturalist": {
-      "gain": -0.1042,
-      "interaction": 0.0017
+      "gain": -0.1055,
+      "interaction": 0.0018
      },
      "Leader of the Pack + Natural Instinct": {
-      "gain": -0.0362,
+      "gain": -0.0361,
       "interaction": 0.0
      },
      "Leader of the Pack + Rend and Tear": {
-      "gain": -0.0545,
+      "gain": -0.0531,
       "interaction": -0.0
      },
      "Leader of the Pack + Shifting Power": {
-      "gain": -0.1568,
-      "interaction": -0.0
+      "gain": -0.1626,
+      "interaction": 0.0
      },
      "Leader of the Pack + Naturalist": {
-      "gain": -0.0879,
+      "gain": -0.088,
       "interaction": 0.0
      },
      "Natural Instinct + Rend and Tear": {
-      "gain": -0.0876,
-      "interaction": 0.0031
+      "gain": -0.0862,
+      "interaction": 0.003
      },
      "Natural Instinct + Shifting Power": {
-      "gain": -0.1845,
-      "interaction": 0.0085
+      "gain": -0.1899,
+      "interaction": 0.0088
      },
      "Natural Instinct + Naturalist": {
       "gain": -0.1209,
       "interaction": 0.0032
      },
      "Rend and Tear + Shifting Power": {
-      "gain": -0.1977,
-      "interaction": 0.0136
+      "gain": -0.201,
+      "interaction": 0.0147
      },
      "Rend and Tear + Naturalist": {
-      "gain": -0.1375,
+      "gain": -0.1362,
       "interaction": 0.0049
      },
      "Shifting Power + Naturalist": {
-      "gain": -0.2307,
-      "interaction": 0.014
+      "gain": -0.2361,
+      "interaction": 0.0145
      }
     },
     "builds_all": {
@@ -15806,14 +15873,14 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Natural Shapeshifter": {
       "added": {
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Subtlety": {
       "added": {
@@ -15855,77 +15922,77 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "-Nature's Majesty": {
       "added": {},
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "-Nature's Reach": {
       "added": {},
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "-Ferocity": {
       "added": {},
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "-Furor": {
       "added": {},
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "-Shredding Attacks": {
       "added": {},
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "-Savage Fury": {
       "added": {},
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "-Sharpened Claws": {
       "added": {},
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "-Predatory Strikes": {
       "added": {},
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "-Predatory Discipline": {
       "added": {},
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "-Blood Frenzy": {
       "added": {},
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "-Leader of the Pack": {
       "added": {},
@@ -15939,168 +16006,168 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "-Rend and Tear": {
       "added": {},
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "-Shifting Power": {
       "added": {},
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "-Naturalist": {
       "added": {},
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Genesis -1": {
       "added": {},
       "removed": {
        "Genesis": 1
       },
-      "gain": -0.00655
+      "gain": -0.00606
      },
      "Genesis -2": {
       "added": {},
       "removed": {
        "Genesis": 2
       },
-      "gain": -0.0131
+      "gain": -0.01212
      },
      "Nature's Majesty -1": {
       "added": {},
       "removed": {
        "Nature's Majesty": 1
       },
-      "gain": -0.01621
+      "gain": -0.01587
      },
      "Nature's Reach -1": {
       "added": {},
       "removed": {
        "Nature's Reach": 1
       },
-      "gain": -0.01039
+      "gain": -0.00931
      },
      "Ferocity -1": {
       "added": {},
       "removed": {
        "Ferocity": 1
       },
-      "gain": -0.00206
+      "gain": -0.00278
      },
      "Ferocity -2": {
       "added": {},
       "removed": {
        "Ferocity": 2
       },
-      "gain": -0.00534
+      "gain": -0.00437
      },
      "Furor -1": {
       "added": {},
       "removed": {
        "Furor": 1
       },
-      "gain": -0.00087
+      "gain": 0.0
      },
      "Furor -2": {
       "added": {},
       "removed": {
        "Furor": 2
       },
-      "gain": -0.00063
+      "gain": 0.0
      },
      "Shredding Attacks -1": {
       "added": {},
       "removed": {
        "Shredding Attacks": 1
       },
-      "gain": -0.03121
+      "gain": -0.03046
      },
      "Shredding Attacks -2": {
       "added": {},
       "removed": {
        "Shredding Attacks": 2
       },
-      "gain": -0.05981
+      "gain": -0.05706
      },
      "Savage Fury -1": {
       "added": {},
       "removed": {
        "Savage Fury": 1
       },
-      "gain": -0.01627
+      "gain": -0.01547
      },
      "Sharpened Claws -1": {
       "added": {},
       "removed": {
        "Sharpened Claws": 1
       },
-      "gain": -0.02453
+      "gain": -0.02442
      },
      "Predatory Strikes -1": {
       "added": {},
       "removed": {
        "Predatory Strikes": 1
       },
-      "gain": -0.00872
+      "gain": -0.00861
      },
      "Predatory Strikes -2": {
       "added": {},
       "removed": {
        "Predatory Strikes": 2
       },
-      "gain": -0.01745
+      "gain": -0.01723
      },
      "Blood Frenzy -1": {
       "added": {},
       "removed": {
        "Blood Frenzy": 1
       },
-      "gain": -0.00719
+      "gain": -0.00643
      },
      "Natural Instinct -1": {
       "added": {},
       "removed": {
        "Natural Instinct": 1
       },
-      "gain": -0.01809
+      "gain": -0.01805
      },
      "Rend and Tear -1": {
       "added": {},
       "removed": {
        "Rend and Tear": 1
       },
-      "gain": -0.01091
+      "gain": -0.01062
      },
      "Rend and Tear -2": {
       "added": {},
       "removed": {
        "Rend and Tear": 2
       },
-      "gain": -0.02181
+      "gain": -0.02124
      },
      "Naturalist -1": {
       "added": {},
       "removed": {
        "Naturalist": 1
       },
-      "gain": -0.01758
+      "gain": -0.01759
      },
      "Naturalist -2": {
       "added": {},
       "removed": {
        "Naturalist": 2
       },
-      "gain": -0.03515
+      "gain": -0.03518
      },
      "Improved Wrath + Moonglow": {
       "added": {
@@ -16252,7 +16319,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Improved Wrath + Natural Shapeshifter": {
       "added": {
@@ -16260,7 +16327,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Improved Wrath + Subtlety": {
       "added": {
@@ -16444,7 +16511,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Moonglow + Natural Shapeshifter": {
       "added": {
@@ -16452,7 +16519,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Moonglow + Subtlety": {
       "added": {
@@ -16628,7 +16695,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Improved Moonfire + Natural Shapeshifter": {
       "added": {
@@ -16636,7 +16703,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Improved Moonfire + Subtlety": {
       "added": {
@@ -16804,7 +16871,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Improved Entangling Roots + Natural Shapeshifter": {
       "added": {
@@ -16812,7 +16879,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Improved Entangling Roots + Subtlety": {
       "added": {
@@ -16972,7 +17039,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Nature's Splendor + Natural Shapeshifter": {
       "added": {
@@ -16980,7 +17047,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Nature's Splendor + Subtlety": {
       "added": {
@@ -17132,7 +17199,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Insect Swarm + Natural Shapeshifter": {
       "added": {
@@ -17140,7 +17207,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Insect Swarm + Subtlety": {
       "added": {
@@ -17284,7 +17351,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Vengeance + Natural Shapeshifter": {
       "added": {
@@ -17292,7 +17359,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Vengeance + Subtlety": {
       "added": {
@@ -17428,7 +17495,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Improved Starfire + Natural Shapeshifter": {
       "added": {
@@ -17436,7 +17503,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Improved Starfire + Subtlety": {
       "added": {
@@ -17564,7 +17631,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Nature's Grace + Natural Shapeshifter": {
       "added": {
@@ -17572,7 +17639,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Nature's Grace + Subtlety": {
       "added": {
@@ -17692,7 +17759,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Eclipse + Natural Shapeshifter": {
       "added": {
@@ -17700,7 +17767,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Eclipse + Subtlety": {
       "added": {
@@ -17812,7 +17879,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Moonfury + Natural Shapeshifter": {
       "added": {
@@ -17820,7 +17887,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Moonfury + Subtlety": {
       "added": {
@@ -17924,7 +17991,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Moonkin Form + Natural Shapeshifter": {
       "added": {
@@ -17932,7 +17999,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Moonkin Form + Subtlety": {
       "added": {
@@ -18028,7 +18095,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Feral Instinct + Natural Shapeshifter": {
       "added": {
@@ -18036,7 +18103,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Feral Instinct + Subtlety": {
       "added": {
@@ -18124,7 +18191,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Brutal Impact + Natural Shapeshifter": {
       "added": {
@@ -18132,7 +18199,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Brutal Impact + Subtlety": {
       "added": {
@@ -18212,7 +18279,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Feral Charge + Natural Shapeshifter": {
       "added": {
@@ -18220,7 +18287,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Feral Charge + Subtlety": {
       "added": {
@@ -18292,7 +18359,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Lacerate + Natural Shapeshifter": {
       "added": {
@@ -18300,7 +18367,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Lacerate + Subtlety": {
       "added": {
@@ -18364,7 +18431,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Natural Reaction + Natural Shapeshifter": {
       "added": {
@@ -18372,7 +18439,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Reaction + Subtlety": {
       "added": {
@@ -18428,7 +18495,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Primal Bite + Natural Shapeshifter": {
       "added": {
@@ -18436,7 +18503,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Primal Bite + Subtlety": {
       "added": {
@@ -18484,7 +18551,7 @@
        "Reflection": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Nature's Focus + Natural Shapeshifter": {
       "added": {
@@ -18492,7 +18559,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Nature's Focus + Subtlety": {
       "added": {
@@ -18540,7 +18607,7 @@
        "Natural Shapeshifter": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Reflection + Subtlety": {
       "added": {
@@ -18548,7 +18615,7 @@
        "Subtlety": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Reflection + Improved Rejuvenation": {
       "added": {
@@ -18556,7 +18623,7 @@
        "Improved Rejuvenation": 3
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Reflection + Nature's Swiftness": {
       "added": {
@@ -18564,7 +18631,7 @@
        "Nature's Swiftness": 1
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Reflection + Improved Tranquility": {
       "added": {
@@ -18572,7 +18639,7 @@
        "Improved Tranquility": 2
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Reflection + Improved Regrowth": {
       "added": {
@@ -18580,7 +18647,7 @@
        "Improved Regrowth": 5
       },
       "removed": {},
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Natural Shapeshifter + Subtlety": {
       "added": {
@@ -18588,7 +18655,7 @@
        "Subtlety": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Shapeshifter + Improved Rejuvenation": {
       "added": {
@@ -18596,7 +18663,7 @@
        "Improved Rejuvenation": 3
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Shapeshifter + Nature's Swiftness": {
       "added": {
@@ -18604,7 +18671,7 @@
        "Nature's Swiftness": 1
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Shapeshifter + Improved Tranquility": {
       "added": {
@@ -18612,7 +18679,7 @@
        "Improved Tranquility": 2
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Shapeshifter + Improved Regrowth": {
       "added": {
@@ -18620,7 +18687,7 @@
        "Improved Regrowth": 5
       },
       "removed": {},
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Subtlety + Improved Rejuvenation": {
       "added": {
@@ -18709,7 +18776,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Wrath - Furor": {
       "added": {
@@ -18718,7 +18785,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Wrath - Shredding Attacks": {
       "added": {
@@ -18727,7 +18794,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Wrath - Savage Fury": {
       "added": {
@@ -18736,7 +18803,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Wrath - Sharpened Claws": {
       "added": {
@@ -18745,7 +18812,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Wrath - Predatory Strikes": {
       "added": {
@@ -18754,7 +18821,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Wrath - Predatory Discipline": {
       "added": {
@@ -18763,7 +18830,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Wrath - Blood Frenzy": {
       "added": {
@@ -18772,7 +18839,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Wrath - Leader of the Pack": {
       "added": {
@@ -18790,7 +18857,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Wrath - Rend and Tear": {
       "added": {
@@ -18799,7 +18866,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Wrath - Shifting Power": {
       "added": {
@@ -18808,7 +18875,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Wrath - Naturalist": {
       "added": {
@@ -18817,7 +18884,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Moonglow - Ferocity": {
       "added": {
@@ -18826,7 +18893,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Moonglow - Furor": {
       "added": {
@@ -18835,7 +18902,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Moonglow - Shredding Attacks": {
       "added": {
@@ -18844,7 +18911,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Moonglow - Savage Fury": {
       "added": {
@@ -18853,7 +18920,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Moonglow - Sharpened Claws": {
       "added": {
@@ -18862,7 +18929,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Moonglow - Predatory Strikes": {
       "added": {
@@ -18871,7 +18938,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Moonglow - Predatory Discipline": {
       "added": {
@@ -18880,7 +18947,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Moonglow - Blood Frenzy": {
       "added": {
@@ -18889,7 +18956,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Moonglow - Leader of the Pack": {
       "added": {
@@ -18907,7 +18974,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Moonglow - Rend and Tear": {
       "added": {
@@ -18916,7 +18983,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Moonglow - Shifting Power": {
       "added": {
@@ -18925,7 +18992,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Moonglow - Naturalist": {
       "added": {
@@ -18934,7 +19001,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Improved Moonfire - Ferocity": {
       "added": {
@@ -18943,7 +19010,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Moonfire - Furor": {
       "added": {
@@ -18952,7 +19019,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Moonfire - Shredding Attacks": {
       "added": {
@@ -18961,7 +19028,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Moonfire - Savage Fury": {
       "added": {
@@ -18970,7 +19037,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Moonfire - Sharpened Claws": {
       "added": {
@@ -18979,7 +19046,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Moonfire - Predatory Strikes": {
       "added": {
@@ -18988,7 +19055,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Moonfire - Predatory Discipline": {
       "added": {
@@ -18997,7 +19064,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Moonfire - Blood Frenzy": {
       "added": {
@@ -19006,7 +19073,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Moonfire - Leader of the Pack": {
       "added": {
@@ -19024,7 +19091,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Moonfire - Rend and Tear": {
       "added": {
@@ -19033,7 +19100,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Moonfire - Shifting Power": {
       "added": {
@@ -19042,7 +19109,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Moonfire - Naturalist": {
       "added": {
@@ -19051,7 +19118,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Improved Entangling Roots - Ferocity": {
       "added": {
@@ -19060,7 +19127,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Entangling Roots - Furor": {
       "added": {
@@ -19069,7 +19136,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Entangling Roots - Shredding Attacks": {
       "added": {
@@ -19078,7 +19145,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Entangling Roots - Savage Fury": {
       "added": {
@@ -19087,7 +19154,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Entangling Roots - Sharpened Claws": {
       "added": {
@@ -19096,7 +19163,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Entangling Roots - Predatory Strikes": {
       "added": {
@@ -19105,7 +19172,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Entangling Roots - Predatory Discipline": {
       "added": {
@@ -19114,7 +19181,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Entangling Roots - Blood Frenzy": {
       "added": {
@@ -19123,7 +19190,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Entangling Roots - Leader of the Pack": {
       "added": {
@@ -19141,7 +19208,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Entangling Roots - Rend and Tear": {
       "added": {
@@ -19150,7 +19217,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Entangling Roots - Shifting Power": {
       "added": {
@@ -19159,7 +19226,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Entangling Roots - Naturalist": {
       "added": {
@@ -19168,7 +19235,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Nature's Splendor - Ferocity": {
       "added": {
@@ -19177,7 +19244,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Nature's Splendor - Furor": {
       "added": {
@@ -19186,7 +19253,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Nature's Splendor - Shredding Attacks": {
       "added": {
@@ -19195,7 +19262,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Nature's Splendor - Savage Fury": {
       "added": {
@@ -19204,7 +19271,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Nature's Splendor - Sharpened Claws": {
       "added": {
@@ -19213,7 +19280,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Nature's Splendor - Predatory Strikes": {
       "added": {
@@ -19222,7 +19289,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Nature's Splendor - Predatory Discipline": {
       "added": {
@@ -19231,7 +19298,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Nature's Splendor - Blood Frenzy": {
       "added": {
@@ -19240,7 +19307,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Nature's Splendor - Leader of the Pack": {
       "added": {
@@ -19258,7 +19325,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Nature's Splendor - Rend and Tear": {
       "added": {
@@ -19267,7 +19334,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Nature's Splendor - Shifting Power": {
       "added": {
@@ -19276,7 +19343,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Nature's Splendor - Naturalist": {
       "added": {
@@ -19285,7 +19352,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Insect Swarm - Ferocity": {
       "added": {
@@ -19294,7 +19361,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Insect Swarm - Furor": {
       "added": {
@@ -19303,7 +19370,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Insect Swarm - Shredding Attacks": {
       "added": {
@@ -19312,7 +19379,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Insect Swarm - Savage Fury": {
       "added": {
@@ -19321,7 +19388,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Insect Swarm - Sharpened Claws": {
       "added": {
@@ -19330,7 +19397,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Insect Swarm - Predatory Strikes": {
       "added": {
@@ -19339,7 +19406,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Insect Swarm - Predatory Discipline": {
       "added": {
@@ -19348,7 +19415,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Insect Swarm - Blood Frenzy": {
       "added": {
@@ -19357,7 +19424,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Insect Swarm - Leader of the Pack": {
       "added": {
@@ -19375,7 +19442,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Insect Swarm - Rend and Tear": {
       "added": {
@@ -19384,7 +19451,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Insect Swarm - Shifting Power": {
       "added": {
@@ -19393,7 +19460,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Insect Swarm - Naturalist": {
       "added": {
@@ -19402,7 +19469,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Vengeance - Ferocity": {
       "added": {
@@ -19411,7 +19478,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Vengeance - Furor": {
       "added": {
@@ -19420,7 +19487,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Vengeance - Shredding Attacks": {
       "added": {
@@ -19429,7 +19496,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Vengeance - Savage Fury": {
       "added": {
@@ -19438,7 +19505,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Vengeance - Sharpened Claws": {
       "added": {
@@ -19447,7 +19514,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Vengeance - Predatory Strikes": {
       "added": {
@@ -19456,7 +19523,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Vengeance - Predatory Discipline": {
       "added": {
@@ -19465,7 +19532,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Vengeance - Blood Frenzy": {
       "added": {
@@ -19474,7 +19541,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Vengeance - Leader of the Pack": {
       "added": {
@@ -19492,7 +19559,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Vengeance - Rend and Tear": {
       "added": {
@@ -19501,7 +19568,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Vengeance - Shifting Power": {
       "added": {
@@ -19510,7 +19577,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Vengeance - Naturalist": {
       "added": {
@@ -19519,7 +19586,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Improved Starfire - Ferocity": {
       "added": {
@@ -19528,7 +19595,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Starfire - Furor": {
       "added": {
@@ -19537,7 +19604,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Starfire - Shredding Attacks": {
       "added": {
@@ -19546,7 +19613,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Starfire - Savage Fury": {
       "added": {
@@ -19555,7 +19622,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Starfire - Sharpened Claws": {
       "added": {
@@ -19564,7 +19631,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Starfire - Predatory Strikes": {
       "added": {
@@ -19573,7 +19640,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Starfire - Predatory Discipline": {
       "added": {
@@ -19582,7 +19649,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Starfire - Blood Frenzy": {
       "added": {
@@ -19591,7 +19658,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Starfire - Leader of the Pack": {
       "added": {
@@ -19609,7 +19676,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Starfire - Rend and Tear": {
       "added": {
@@ -19618,7 +19685,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Starfire - Shifting Power": {
       "added": {
@@ -19627,7 +19694,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Starfire - Naturalist": {
       "added": {
@@ -19636,7 +19703,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Nature's Grace - Ferocity": {
       "added": {
@@ -19645,7 +19712,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Nature's Grace - Furor": {
       "added": {
@@ -19654,7 +19721,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Nature's Grace - Shredding Attacks": {
       "added": {
@@ -19663,7 +19730,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Nature's Grace - Savage Fury": {
       "added": {
@@ -19672,7 +19739,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Nature's Grace - Sharpened Claws": {
       "added": {
@@ -19681,7 +19748,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Nature's Grace - Predatory Strikes": {
       "added": {
@@ -19690,7 +19757,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Nature's Grace - Predatory Discipline": {
       "added": {
@@ -19699,7 +19766,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Nature's Grace - Blood Frenzy": {
       "added": {
@@ -19708,7 +19775,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Nature's Grace - Leader of the Pack": {
       "added": {
@@ -19726,7 +19793,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Nature's Grace - Rend and Tear": {
       "added": {
@@ -19735,7 +19802,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Nature's Grace - Shifting Power": {
       "added": {
@@ -19744,7 +19811,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Nature's Grace - Naturalist": {
       "added": {
@@ -19753,7 +19820,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Eclipse - Ferocity": {
       "added": {
@@ -19762,7 +19829,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Eclipse - Furor": {
       "added": {
@@ -19771,7 +19838,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Eclipse - Shredding Attacks": {
       "added": {
@@ -19780,7 +19847,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Eclipse - Savage Fury": {
       "added": {
@@ -19789,7 +19856,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Eclipse - Sharpened Claws": {
       "added": {
@@ -19798,7 +19865,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Eclipse - Predatory Strikes": {
       "added": {
@@ -19807,7 +19874,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Eclipse - Predatory Discipline": {
       "added": {
@@ -19816,7 +19883,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Eclipse - Blood Frenzy": {
       "added": {
@@ -19825,7 +19892,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Eclipse - Leader of the Pack": {
       "added": {
@@ -19843,7 +19910,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Eclipse - Rend and Tear": {
       "added": {
@@ -19852,7 +19919,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Eclipse - Shifting Power": {
       "added": {
@@ -19861,7 +19928,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Eclipse - Naturalist": {
       "added": {
@@ -19870,7 +19937,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Moonfury - Ferocity": {
       "added": {
@@ -19879,7 +19946,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Moonfury - Furor": {
       "added": {
@@ -19888,7 +19955,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Moonfury - Shredding Attacks": {
       "added": {
@@ -19897,7 +19964,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Moonfury - Savage Fury": {
       "added": {
@@ -19906,7 +19973,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Moonfury - Sharpened Claws": {
       "added": {
@@ -19915,7 +19982,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Moonfury - Predatory Strikes": {
       "added": {
@@ -19924,7 +19991,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Moonfury - Predatory Discipline": {
       "added": {
@@ -19933,7 +20000,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Moonfury - Blood Frenzy": {
       "added": {
@@ -19942,7 +20009,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Moonfury - Leader of the Pack": {
       "added": {
@@ -19960,7 +20027,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Moonfury - Rend and Tear": {
       "added": {
@@ -19969,7 +20036,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Moonfury - Shifting Power": {
       "added": {
@@ -19978,7 +20045,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Moonfury - Naturalist": {
       "added": {
@@ -19987,7 +20054,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Moonkin Form - Ferocity": {
       "added": {
@@ -19996,7 +20063,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Moonkin Form - Furor": {
       "added": {
@@ -20005,7 +20072,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Moonkin Form - Shredding Attacks": {
       "added": {
@@ -20014,7 +20081,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Moonkin Form - Savage Fury": {
       "added": {
@@ -20023,7 +20090,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Moonkin Form - Sharpened Claws": {
       "added": {
@@ -20032,7 +20099,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Moonkin Form - Predatory Strikes": {
       "added": {
@@ -20041,7 +20108,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Moonkin Form - Predatory Discipline": {
       "added": {
@@ -20050,7 +20117,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Moonkin Form - Blood Frenzy": {
       "added": {
@@ -20059,7 +20126,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Moonkin Form - Leader of the Pack": {
       "added": {
@@ -20077,7 +20144,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Moonkin Form - Rend and Tear": {
       "added": {
@@ -20086,7 +20153,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Moonkin Form - Shifting Power": {
       "added": {
@@ -20095,7 +20162,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Moonkin Form - Naturalist": {
       "added": {
@@ -20104,7 +20171,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Feral Instinct - Genesis": {
       "added": {
@@ -20113,7 +20180,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Feral Instinct - Nature's Majesty": {
       "added": {
@@ -20122,7 +20189,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Feral Instinct - Nature's Reach": {
       "added": {
@@ -20131,7 +20198,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Feral Instinct - Naturalist": {
       "added": {
@@ -20140,7 +20207,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Brutal Impact - Genesis": {
       "added": {
@@ -20149,7 +20216,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Brutal Impact - Nature's Majesty": {
       "added": {
@@ -20158,7 +20225,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Brutal Impact - Nature's Reach": {
       "added": {
@@ -20167,7 +20234,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Brutal Impact - Naturalist": {
       "added": {
@@ -20176,7 +20243,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Feral Charge - Genesis": {
       "added": {
@@ -20185,7 +20252,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Feral Charge - Nature's Majesty": {
       "added": {
@@ -20194,7 +20261,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Feral Charge - Nature's Reach": {
       "added": {
@@ -20203,7 +20270,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Feral Charge - Naturalist": {
       "added": {
@@ -20212,7 +20279,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Lacerate - Genesis": {
       "added": {
@@ -20221,7 +20288,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Lacerate - Nature's Majesty": {
       "added": {
@@ -20230,7 +20297,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Lacerate - Nature's Reach": {
       "added": {
@@ -20239,7 +20306,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Lacerate - Naturalist": {
       "added": {
@@ -20248,7 +20315,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Natural Reaction - Genesis": {
       "added": {
@@ -20257,7 +20324,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Natural Reaction - Nature's Majesty": {
       "added": {
@@ -20266,7 +20333,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Natural Reaction - Nature's Reach": {
       "added": {
@@ -20275,7 +20342,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Natural Reaction - Naturalist": {
       "added": {
@@ -20284,7 +20351,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Primal Bite - Genesis": {
       "added": {
@@ -20293,7 +20360,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Primal Bite - Nature's Majesty": {
       "added": {
@@ -20302,7 +20369,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Primal Bite - Nature's Reach": {
       "added": {
@@ -20311,7 +20378,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Primal Bite - Naturalist": {
       "added": {
@@ -20320,7 +20387,7 @@
       "removed": {
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "Nature's Focus - Genesis": {
       "added": {
@@ -20329,7 +20396,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Nature's Focus - Nature's Majesty": {
       "added": {
@@ -20338,7 +20405,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Nature's Focus - Nature's Reach": {
       "added": {
@@ -20347,7 +20414,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Nature's Focus - Ferocity": {
       "added": {
@@ -20356,7 +20423,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Nature's Focus - Furor": {
       "added": {
@@ -20365,7 +20432,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Nature's Focus - Shredding Attacks": {
       "added": {
@@ -20374,7 +20441,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Nature's Focus - Savage Fury": {
       "added": {
@@ -20383,7 +20450,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Nature's Focus - Sharpened Claws": {
       "added": {
@@ -20392,7 +20459,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Nature's Focus - Predatory Strikes": {
       "added": {
@@ -20401,7 +20468,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Nature's Focus - Predatory Discipline": {
       "added": {
@@ -20410,7 +20477,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Nature's Focus - Blood Frenzy": {
       "added": {
@@ -20419,7 +20486,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Nature's Focus - Leader of the Pack": {
       "added": {
@@ -20437,7 +20504,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Nature's Focus - Rend and Tear": {
       "added": {
@@ -20446,7 +20513,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Nature's Focus - Shifting Power": {
       "added": {
@@ -20455,7 +20522,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Reflection - Genesis": {
       "added": {
@@ -20464,7 +20531,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03288
+      "gain": -0.02963
      },
      "Reflection - Nature's Majesty": {
       "added": {
@@ -20473,7 +20540,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03266
+      "gain": -0.03249
      },
      "Reflection - Nature's Reach": {
       "added": {
@@ -20482,7 +20549,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02252
+      "gain": -0.02076
      },
      "Reflection - Ferocity": {
       "added": {
@@ -20491,7 +20558,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01143
+      "gain": -0.01266
      },
      "Reflection - Furor": {
       "added": {
@@ -20500,7 +20567,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00484
+      "gain": 0.00067
      },
      "Reflection - Shredding Attacks": {
       "added": {
@@ -20509,7 +20576,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08245
+      "gain": -0.0819
      },
      "Reflection - Savage Fury": {
       "added": {
@@ -20518,7 +20585,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03265
+      "gain": -0.03031
      },
      "Reflection - Sharpened Claws": {
       "added": {
@@ -20527,7 +20594,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04939
+      "gain": -0.04932
      },
      "Reflection - Predatory Strikes": {
       "added": {
@@ -20536,7 +20603,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02628
+      "gain": -0.02518
      },
      "Reflection - Predatory Discipline": {
       "added": {
@@ -20545,7 +20612,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00195
+      "gain": -0.00392
      },
      "Reflection - Blood Frenzy": {
       "added": {
@@ -20554,7 +20621,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01794
+      "gain": -0.01918
      },
      "Reflection - Leader of the Pack": {
       "added": {
@@ -20563,7 +20630,7 @@
       "removed": {
        "Leader of the Pack": 1
       },
-      "gain": -0.00011
+      "gain": 0.00067
      },
      "Reflection - Natural Instinct": {
       "added": {
@@ -20572,7 +20639,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.0363
+      "gain": -0.03546
      },
      "Reflection - Rend and Tear": {
       "added": {
@@ -20581,7 +20648,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05464
+      "gain": -0.05247
      },
      "Reflection - Shifting Power": {
       "added": {
@@ -20590,7 +20657,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Natural Shapeshifter - Genesis": {
       "added": {
@@ -20599,7 +20666,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03279
+      "gain": -0.02959
      },
      "Natural Shapeshifter - Nature's Majesty": {
       "added": {
@@ -20608,7 +20675,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03252
+      "gain": -0.03242
      },
      "Natural Shapeshifter - Nature's Reach": {
       "added": {
@@ -20617,7 +20684,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02268
+      "gain": -0.02085
      },
      "Natural Shapeshifter - Ferocity": {
       "added": {
@@ -20626,7 +20693,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.0115
+      "gain": -0.0129
      },
      "Natural Shapeshifter - Furor": {
       "added": {
@@ -20635,7 +20702,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00485
+      "gain": 0.00071
      },
      "Natural Shapeshifter - Shredding Attacks": {
       "added": {
@@ -20644,7 +20711,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08262
+      "gain": -0.08196
      },
      "Natural Shapeshifter - Savage Fury": {
       "added": {
@@ -20653,7 +20720,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03256
+      "gain": -0.03028
      },
      "Natural Shapeshifter - Sharpened Claws": {
       "added": {
@@ -20662,7 +20729,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04929
+      "gain": -0.04927
      },
      "Natural Shapeshifter - Predatory Strikes": {
       "added": {
@@ -20671,7 +20738,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02619
+      "gain": -0.02515
      },
      "Natural Shapeshifter - Predatory Discipline": {
       "added": {
@@ -20680,7 +20747,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00183
+      "gain": -0.0038
      },
      "Natural Shapeshifter - Blood Frenzy": {
       "added": {
@@ -20689,7 +20756,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01791
+      "gain": -0.01894
      },
      "Natural Shapeshifter - Leader of the Pack": {
       "added": {
@@ -20698,7 +20765,7 @@
       "removed": {
        "Leader of the Pack": 1
       },
-      "gain": -2e-05
+      "gain": 0.00071
      },
      "Natural Shapeshifter - Natural Instinct": {
       "added": {
@@ -20707,7 +20774,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03621
+      "gain": -0.03541
      },
      "Natural Shapeshifter - Rend and Tear": {
       "added": {
@@ -20716,7 +20783,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05455
+      "gain": -0.05243
      },
      "Natural Shapeshifter - Shifting Power": {
       "added": {
@@ -20725,7 +20792,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Subtlety - Genesis": {
       "added": {
@@ -20734,7 +20801,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Subtlety - Nature's Majesty": {
       "added": {
@@ -20743,7 +20810,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Subtlety - Nature's Reach": {
       "added": {
@@ -20752,7 +20819,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Subtlety - Ferocity": {
       "added": {
@@ -20761,7 +20828,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Subtlety - Furor": {
       "added": {
@@ -20770,7 +20837,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Subtlety - Shredding Attacks": {
       "added": {
@@ -20779,7 +20846,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Subtlety - Savage Fury": {
       "added": {
@@ -20788,7 +20855,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Subtlety - Sharpened Claws": {
       "added": {
@@ -20797,7 +20864,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Subtlety - Predatory Strikes": {
       "added": {
@@ -20806,7 +20873,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Subtlety - Predatory Discipline": {
       "added": {
@@ -20815,7 +20882,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Subtlety - Blood Frenzy": {
       "added": {
@@ -20824,7 +20891,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Subtlety - Leader of the Pack": {
       "added": {
@@ -20842,7 +20909,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Subtlety - Rend and Tear": {
       "added": {
@@ -20851,7 +20918,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Subtlety - Shifting Power": {
       "added": {
@@ -20860,7 +20927,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Rejuvenation - Genesis": {
       "added": {
@@ -20869,7 +20936,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Improved Rejuvenation - Nature's Majesty": {
       "added": {
@@ -20878,7 +20945,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Improved Rejuvenation - Nature's Reach": {
       "added": {
@@ -20887,7 +20954,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Improved Rejuvenation - Ferocity": {
       "added": {
@@ -20896,7 +20963,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Rejuvenation - Furor": {
       "added": {
@@ -20905,7 +20972,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Rejuvenation - Shredding Attacks": {
       "added": {
@@ -20914,7 +20981,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Rejuvenation - Savage Fury": {
       "added": {
@@ -20923,7 +20990,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Rejuvenation - Sharpened Claws": {
       "added": {
@@ -20932,7 +20999,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Rejuvenation - Predatory Strikes": {
       "added": {
@@ -20941,7 +21008,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Rejuvenation - Predatory Discipline": {
       "added": {
@@ -20950,7 +21017,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Rejuvenation - Blood Frenzy": {
       "added": {
@@ -20959,7 +21026,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Rejuvenation - Leader of the Pack": {
       "added": {
@@ -20977,7 +21044,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Rejuvenation - Rend and Tear": {
       "added": {
@@ -20986,7 +21053,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Rejuvenation - Shifting Power": {
       "added": {
@@ -20995,7 +21062,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Nature's Swiftness - Genesis": {
       "added": {
@@ -21004,7 +21071,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Nature's Swiftness - Nature's Majesty": {
       "added": {
@@ -21013,7 +21080,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Nature's Swiftness - Nature's Reach": {
       "added": {
@@ -21022,7 +21089,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Nature's Swiftness - Ferocity": {
       "added": {
@@ -21031,7 +21098,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Nature's Swiftness - Furor": {
       "added": {
@@ -21040,7 +21107,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Nature's Swiftness - Shredding Attacks": {
       "added": {
@@ -21049,7 +21116,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Nature's Swiftness - Savage Fury": {
       "added": {
@@ -21058,7 +21125,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Nature's Swiftness - Sharpened Claws": {
       "added": {
@@ -21067,7 +21134,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Nature's Swiftness - Predatory Strikes": {
       "added": {
@@ -21076,7 +21143,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Nature's Swiftness - Predatory Discipline": {
       "added": {
@@ -21085,7 +21152,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Nature's Swiftness - Blood Frenzy": {
       "added": {
@@ -21094,7 +21161,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Nature's Swiftness - Leader of the Pack": {
       "added": {
@@ -21112,7 +21179,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Nature's Swiftness - Rend and Tear": {
       "added": {
@@ -21121,7 +21188,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Nature's Swiftness - Shifting Power": {
       "added": {
@@ -21130,7 +21197,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Tranquility - Genesis": {
       "added": {
@@ -21139,7 +21206,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Improved Tranquility - Nature's Majesty": {
       "added": {
@@ -21148,7 +21215,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Improved Tranquility - Nature's Reach": {
       "added": {
@@ -21157,7 +21224,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Improved Tranquility - Ferocity": {
       "added": {
@@ -21166,7 +21233,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Tranquility - Furor": {
       "added": {
@@ -21175,7 +21242,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Tranquility - Shredding Attacks": {
       "added": {
@@ -21184,7 +21251,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Tranquility - Savage Fury": {
       "added": {
@@ -21193,7 +21260,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Tranquility - Sharpened Claws": {
       "added": {
@@ -21202,7 +21269,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Tranquility - Predatory Strikes": {
       "added": {
@@ -21211,7 +21278,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Tranquility - Predatory Discipline": {
       "added": {
@@ -21220,7 +21287,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Tranquility - Blood Frenzy": {
       "added": {
@@ -21229,7 +21296,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Tranquility - Leader of the Pack": {
       "added": {
@@ -21247,7 +21314,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Tranquility - Rend and Tear": {
       "added": {
@@ -21256,7 +21323,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Tranquility - Shifting Power": {
       "added": {
@@ -21265,7 +21332,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "Improved Regrowth - Genesis": {
       "added": {
@@ -21274,7 +21341,7 @@
       "removed": {
        "Genesis": 5
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "Improved Regrowth - Nature's Majesty": {
       "added": {
@@ -21283,7 +21350,7 @@
       "removed": {
        "Nature's Majesty": 2
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "Improved Regrowth - Nature's Reach": {
       "added": {
@@ -21292,7 +21359,7 @@
       "removed": {
        "Nature's Reach": 2
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "Improved Regrowth - Ferocity": {
       "added": {
@@ -21301,7 +21368,7 @@
       "removed": {
        "Ferocity": 5
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "Improved Regrowth - Furor": {
       "added": {
@@ -21310,7 +21377,7 @@
       "removed": {
        "Furor": 5
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "Improved Regrowth - Shredding Attacks": {
       "added": {
@@ -21319,7 +21386,7 @@
       "removed": {
        "Shredding Attacks": 3
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "Improved Regrowth - Savage Fury": {
       "added": {
@@ -21328,7 +21395,7 @@
       "removed": {
        "Savage Fury": 2
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "Improved Regrowth - Sharpened Claws": {
       "added": {
@@ -21337,7 +21404,7 @@
       "removed": {
        "Sharpened Claws": 2
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "Improved Regrowth - Predatory Strikes": {
       "added": {
@@ -21346,7 +21413,7 @@
       "removed": {
        "Predatory Strikes": 3
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "Improved Regrowth - Predatory Discipline": {
       "added": {
@@ -21355,7 +21422,7 @@
       "removed": {
        "Predatory Discipline": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "Improved Regrowth - Blood Frenzy": {
       "added": {
@@ -21364,7 +21431,7 @@
       "removed": {
        "Blood Frenzy": 2
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "Improved Regrowth - Leader of the Pack": {
       "added": {
@@ -21382,7 +21449,7 @@
       "removed": {
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "Improved Regrowth - Rend and Tear": {
       "added": {
@@ -21391,7 +21458,7 @@
       "removed": {
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "Improved Regrowth - Shifting Power": {
       "added": {
@@ -21400,7 +21467,7 @@
       "removed": {
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "-Genesis - Nature's Majesty": {
       "added": {},
@@ -21408,7 +21475,7 @@
        "Genesis": 5,
        "Nature's Majesty": 2
       },
-      "gain": -0.06424
+      "gain": -0.06217
      },
      "-Genesis - Nature's Reach": {
       "added": {},
@@ -21416,7 +21483,7 @@
        "Genesis": 5,
        "Nature's Reach": 2
       },
-      "gain": -0.05532
+      "gain": -0.05128
      },
      "-Genesis - Ferocity": {
       "added": {},
@@ -21424,7 +21491,7 @@
        "Genesis": 5,
        "Ferocity": 5
       },
-      "gain": -0.04359
+      "gain": -0.04331
      },
      "-Genesis - Furor": {
       "added": {},
@@ -21432,7 +21499,7 @@
        "Genesis": 5,
        "Furor": 5
       },
-      "gain": -0.03719
+      "gain": -0.03029
      },
      "-Genesis - Shredding Attacks": {
       "added": {},
@@ -21440,7 +21507,7 @@
        "Genesis": 5,
        "Shredding Attacks": 3
       },
-      "gain": -0.1144
+      "gain": -0.1109
      },
      "-Genesis - Savage Fury": {
       "added": {},
@@ -21448,7 +21515,7 @@
        "Genesis": 5,
        "Savage Fury": 2
       },
-      "gain": -0.06435
+      "gain": -0.06037
      },
      "-Genesis - Sharpened Claws": {
       "added": {},
@@ -21456,7 +21523,7 @@
        "Genesis": 5,
        "Sharpened Claws": 2
       },
-      "gain": -0.08044
+      "gain": -0.07873
      },
      "-Genesis - Predatory Strikes": {
       "added": {},
@@ -21464,7 +21531,7 @@
        "Genesis": 5,
        "Predatory Strikes": 3
       },
-      "gain": -0.05816
+      "gain": -0.05544
      },
      "-Genesis - Predatory Discipline": {
       "added": {},
@@ -21472,7 +21539,7 @@
        "Genesis": 5,
        "Predatory Discipline": 1
       },
-      "gain": -0.03445
+      "gain": -0.03497
      },
      "-Genesis - Blood Frenzy": {
       "added": {},
@@ -21480,7 +21547,7 @@
        "Genesis": 5,
        "Blood Frenzy": 2
       },
-      "gain": -0.04943
+      "gain": -0.04917
      },
      "-Genesis - Leader of the Pack": {
       "added": {},
@@ -21488,7 +21555,7 @@
        "Genesis": 5,
        "Leader of the Pack": 1
       },
-      "gain": -0.03275
+      "gain": -0.03029
      },
      "-Genesis - Natural Instinct": {
       "added": {},
@@ -21496,7 +21563,7 @@
        "Genesis": 5,
        "Natural Instinct": 2
       },
-      "gain": -0.06705
+      "gain": -0.06466
      },
      "-Genesis - Rend and Tear": {
       "added": {},
@@ -21504,7 +21571,7 @@
        "Genesis": 5,
        "Rend and Tear": 5
       },
-      "gain": -0.08436
+      "gain": -0.08074
      },
      "-Genesis - Shifting Power": {
       "added": {},
@@ -21512,7 +21579,7 @@
        "Genesis": 5,
        "Shifting Power": 1
       },
-      "gain": -0.18537
+      "gain": -0.18936
      },
      "-Genesis - Naturalist": {
       "added": {},
@@ -21520,7 +21587,7 @@
        "Genesis": 5,
        "Naturalist": 5
       },
-      "gain": -0.11765
+      "gain": -0.1155
      },
      "-Nature's Majesty - Nature's Reach": {
       "added": {},
@@ -21528,7 +21595,7 @@
        "Nature's Majesty": 2,
        "Nature's Reach": 2
       },
-      "gain": -0.05508
+      "gain": -0.05498
      },
      "-Nature's Majesty - Ferocity": {
       "added": {},
@@ -21536,7 +21603,7 @@
        "Nature's Majesty": 2,
        "Ferocity": 5
       },
-      "gain": -0.04306
+      "gain": -0.04601
      },
      "-Nature's Majesty - Furor": {
       "added": {},
@@ -21544,7 +21611,7 @@
        "Nature's Majesty": 2,
        "Furor": 5
       },
-      "gain": -0.03669
+      "gain": -0.03275
      },
      "-Nature's Majesty - Shredding Attacks": {
       "added": {},
@@ -21552,7 +21619,7 @@
        "Nature's Majesty": 2,
        "Shredding Attacks": 3
       },
-      "gain": -0.11436
+      "gain": -0.11345
      },
      "-Nature's Majesty - Savage Fury": {
       "added": {},
@@ -21560,7 +21627,7 @@
        "Nature's Majesty": 2,
        "Savage Fury": 2
       },
-      "gain": -0.06409
+      "gain": -0.06284
      },
      "-Nature's Majesty - Sharpened Claws": {
       "added": {},
@@ -21568,7 +21635,7 @@
        "Nature's Majesty": 2,
        "Sharpened Claws": 2
       },
-      "gain": -0.08243
+      "gain": -0.08214
      },
      "-Nature's Majesty - Predatory Strikes": {
       "added": {},
@@ -21576,7 +21643,7 @@
        "Nature's Majesty": 2,
        "Predatory Strikes": 3
       },
-      "gain": -0.05789
+      "gain": -0.05779
      },
      "-Nature's Majesty - Predatory Discipline": {
       "added": {},
@@ -21584,7 +21651,7 @@
        "Nature's Majesty": 2,
        "Predatory Discipline": 1
       },
-      "gain": -0.0341
+      "gain": -0.03612
      },
      "-Nature's Majesty - Blood Frenzy": {
       "added": {},
@@ -21592,7 +21659,7 @@
        "Nature's Majesty": 2,
        "Blood Frenzy": 2
       },
-      "gain": -0.04948
+      "gain": -0.05061
      },
      "-Nature's Majesty - Leader of the Pack": {
       "added": {},
@@ -21600,7 +21667,7 @@
        "Nature's Majesty": 2,
        "Leader of the Pack": 1
       },
-      "gain": -0.03256
+      "gain": -0.03275
      },
      "-Nature's Majesty - Natural Instinct": {
       "added": {},
@@ -21608,7 +21675,7 @@
        "Nature's Majesty": 2,
        "Natural Instinct": 2
       },
-      "gain": -0.06544
+      "gain": -0.06551
      },
      "-Nature's Majesty - Rend and Tear": {
       "added": {},
@@ -21616,7 +21683,7 @@
        "Nature's Majesty": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.08534
+      "gain": -0.08411
      },
      "-Nature's Majesty - Shifting Power": {
       "added": {},
@@ -21624,7 +21691,7 @@
        "Nature's Majesty": 2,
        "Shifting Power": 1
       },
-      "gain": -0.18697
+      "gain": -0.19209
      },
      "-Nature's Majesty - Naturalist": {
       "added": {},
@@ -21632,7 +21699,7 @@
        "Nature's Majesty": 2,
        "Naturalist": 5
       },
-      "gain": -0.11758
+      "gain": -0.11783
      },
      "-Nature's Reach - Ferocity": {
       "added": {},
@@ -21640,7 +21707,7 @@
        "Nature's Reach": 2,
        "Ferocity": 5
       },
-      "gain": -0.0326
+      "gain": -0.0349
      },
      "-Nature's Reach - Furor": {
       "added": {},
@@ -21648,7 +21715,7 @@
        "Nature's Reach": 2,
        "Furor": 5
       },
-      "gain": -0.02608
+      "gain": -0.02098
      },
      "-Nature's Reach - Shredding Attacks": {
       "added": {},
@@ -21656,7 +21723,7 @@
        "Nature's Reach": 2,
        "Shredding Attacks": 3
       },
-      "gain": -0.10471
+      "gain": -0.10542
      },
      "-Nature's Reach - Savage Fury": {
       "added": {},
@@ -21664,7 +21731,7 @@
        "Nature's Reach": 2,
        "Savage Fury": 2
       },
-      "gain": -0.05469
+      "gain": -0.05153
      },
      "-Nature's Reach - Sharpened Claws": {
       "added": {},
@@ -21672,7 +21739,7 @@
        "Nature's Reach": 2,
        "Sharpened Claws": 2
       },
-      "gain": -0.07163
+      "gain": -0.07154
      },
      "-Nature's Reach - Predatory Strikes": {
       "added": {},
@@ -21680,7 +21747,7 @@
        "Nature's Reach": 2,
        "Predatory Strikes": 3
       },
-      "gain": -0.04817
+      "gain": -0.04623
      },
      "-Nature's Reach - Predatory Discipline": {
       "added": {},
@@ -21688,7 +21755,7 @@
        "Nature's Reach": 2,
        "Predatory Discipline": 1
       },
-      "gain": -0.02442
+      "gain": -0.02733
      },
      "-Nature's Reach - Blood Frenzy": {
       "added": {},
@@ -21696,7 +21763,7 @@
        "Nature's Reach": 2,
        "Blood Frenzy": 2
       },
-      "gain": -0.04115
+      "gain": -0.04262
      },
      "-Nature's Reach - Leader of the Pack": {
       "added": {},
@@ -21704,7 +21771,7 @@
        "Nature's Reach": 2,
        "Leader of the Pack": 1
       },
-      "gain": -0.02266
+      "gain": -0.02098
      },
      "-Nature's Reach - Natural Instinct": {
       "added": {},
@@ -21712,7 +21779,7 @@
        "Nature's Reach": 2,
        "Natural Instinct": 2
       },
-      "gain": -0.05847
+      "gain": -0.05684
      },
      "-Nature's Reach - Rend and Tear": {
       "added": {},
@@ -21720,7 +21787,7 @@
        "Nature's Reach": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.07659
+      "gain": -0.0735
      },
      "-Nature's Reach - Shifting Power": {
       "added": {},
@@ -21728,7 +21795,7 @@
        "Nature's Reach": 2,
        "Shifting Power": 1
       },
-      "gain": -0.17823
+      "gain": -0.1845
      },
      "-Nature's Reach - Naturalist": {
       "added": {},
@@ -21736,7 +21803,7 @@
        "Nature's Reach": 2,
        "Naturalist": 5
       },
-      "gain": -0.10856
+      "gain": -0.1071
      },
      "-Ferocity - Furor": {
       "added": {},
@@ -21744,7 +21811,7 @@
        "Ferocity": 5,
        "Furor": 5
       },
-      "gain": -0.01552
+      "gain": -0.01307
      },
      "-Ferocity - Shredding Attacks": {
       "added": {},
@@ -21752,7 +21819,7 @@
        "Ferocity": 5,
        "Shredding Attacks": 3
       },
-      "gain": -0.09566
+      "gain": -0.09461
      },
      "-Ferocity - Savage Fury": {
       "added": {},
@@ -21760,7 +21827,7 @@
        "Ferocity": 5,
        "Savage Fury": 2
       },
-      "gain": -0.04246
+      "gain": -0.04321
      },
      "-Ferocity - Sharpened Claws": {
       "added": {},
@@ -21768,7 +21835,7 @@
        "Ferocity": 5,
        "Sharpened Claws": 2
       },
-      "gain": -0.05933
+      "gain": -0.06235
      },
      "-Ferocity - Predatory Strikes": {
       "added": {},
@@ -21776,7 +21843,7 @@
        "Ferocity": 5,
        "Predatory Strikes": 3
       },
-      "gain": -0.03688
+      "gain": -0.03863
      },
      "-Ferocity - Predatory Discipline": {
       "added": {},
@@ -21784,7 +21851,7 @@
        "Ferocity": 5,
        "Predatory Discipline": 1
       },
-      "gain": -0.01253
+      "gain": -0.01708
      },
      "-Ferocity - Blood Frenzy": {
       "added": {},
@@ -21792,7 +21859,7 @@
        "Ferocity": 5,
        "Blood Frenzy": 2
       },
-      "gain": -0.03306
+      "gain": -0.03494
      },
      "-Ferocity - Leader of the Pack": {
       "added": {},
@@ -21800,7 +21867,7 @@
        "Ferocity": 5,
        "Leader of the Pack": 1
       },
-      "gain": -0.01101
+      "gain": -0.01307
      },
      "-Ferocity - Natural Instinct": {
       "added": {},
@@ -21808,7 +21875,7 @@
        "Ferocity": 5,
        "Natural Instinct": 2
       },
-      "gain": -0.04657
+      "gain": -0.04856
      },
      "-Ferocity - Rend and Tear": {
       "added": {},
@@ -21816,7 +21883,7 @@
        "Ferocity": 5,
        "Rend and Tear": 5
       },
-      "gain": -0.06443
+      "gain": -0.0651
      },
      "-Ferocity - Shifting Power": {
       "added": {},
@@ -21824,7 +21891,7 @@
        "Ferocity": 5,
        "Shifting Power": 1
       },
-      "gain": -0.17024
+      "gain": -0.17194
      },
      "-Ferocity - Naturalist": {
       "added": {},
@@ -21832,7 +21899,7 @@
        "Ferocity": 5,
        "Naturalist": 5
       },
-      "gain": -0.09791
+      "gain": -0.09987
      },
      "-Furor - Shredding Attacks": {
       "added": {},
@@ -21840,7 +21907,7 @@
        "Furor": 5,
        "Shredding Attacks": 3
       },
-      "gain": -0.08405
+      "gain": -0.08099
      },
      "-Furor - Savage Fury": {
       "added": {},
@@ -21848,7 +21915,7 @@
        "Furor": 5,
        "Savage Fury": 2
       },
-      "gain": -0.03682
+      "gain": -0.03095
      },
      "-Furor - Sharpened Claws": {
       "added": {},
@@ -21856,7 +21923,7 @@
        "Furor": 5,
        "Sharpened Claws": 2
       },
-      "gain": -0.05314
+      "gain": -0.04978
      },
      "-Furor - Predatory Strikes": {
       "added": {},
@@ -21864,7 +21931,7 @@
        "Furor": 5,
        "Predatory Strikes": 3
       },
-      "gain": -0.03061
+      "gain": -0.02584
      },
      "-Furor - Predatory Discipline": {
       "added": {},
@@ -21872,7 +21939,7 @@
        "Furor": 5,
        "Predatory Discipline": 1
       },
-      "gain": -0.00635
+      "gain": -0.00372
      },
      "-Furor - Blood Frenzy": {
       "added": {},
@@ -21880,7 +21947,7 @@
        "Furor": 5,
        "Blood Frenzy": 2
       },
-      "gain": -0.02184
+      "gain": -0.01933
      },
      "-Furor - Leader of the Pack": {
       "added": {},
@@ -21888,7 +21955,7 @@
        "Furor": 5,
        "Leader of the Pack": 1
       },
-      "gain": -0.00454
+      "gain": 0.0
      },
      "-Furor - Natural Instinct": {
       "added": {},
@@ -21896,7 +21963,7 @@
        "Furor": 5,
        "Natural Instinct": 2
       },
-      "gain": -0.04047
+      "gain": -0.0361
      },
      "-Furor - Rend and Tear": {
       "added": {},
@@ -21904,7 +21971,7 @@
        "Furor": 5,
        "Rend and Tear": 5
       },
-      "gain": -0.05873
+      "gain": -0.0531
      },
      "-Furor - Shifting Power": {
       "added": {},
@@ -21912,7 +21979,7 @@
        "Furor": 5,
        "Shifting Power": 1
       },
-      "gain": -0.16039
+      "gain": -0.16258
      },
      "-Furor - Naturalist": {
       "added": {},
@@ -21920,7 +21987,7 @@
        "Furor": 5,
        "Naturalist": 5
       },
-      "gain": -0.09201
+      "gain": -0.08796
      },
      "-Shredding Attacks - Savage Fury": {
       "added": {},
@@ -21928,7 +21995,7 @@
        "Shredding Attacks": 3,
        "Savage Fury": 2
       },
-      "gain": -0.10942
+      "gain": -0.10719
      },
      "-Shredding Attacks - Sharpened Claws": {
       "added": {},
@@ -21936,7 +22003,7 @@
        "Shredding Attacks": 3,
        "Sharpened Claws": 2
       },
-      "gain": -0.1307
+      "gain": -0.12835
      },
      "-Shredding Attacks - Predatory Strikes": {
       "added": {},
@@ -21944,7 +22011,7 @@
        "Shredding Attacks": 3,
        "Predatory Strikes": 3
       },
-      "gain": -0.1069
+      "gain": -0.10525
      },
      "-Shredding Attacks - Predatory Discipline": {
       "added": {},
@@ -21952,7 +22019,7 @@
        "Shredding Attacks": 3,
        "Predatory Discipline": 1
       },
-      "gain": -0.08326
+      "gain": -0.08002
      },
      "-Shredding Attacks - Blood Frenzy": {
       "added": {},
@@ -21960,7 +22027,7 @@
        "Shredding Attacks": 3,
        "Blood Frenzy": 2
       },
-      "gain": -0.12586
+      "gain": -0.12002
      },
      "-Shredding Attacks - Leader of the Pack": {
       "added": {},
@@ -21968,7 +22035,7 @@
        "Shredding Attacks": 3,
        "Leader of the Pack": 1
       },
-      "gain": -0.08249
+      "gain": -0.08099
      },
      "-Shredding Attacks - Natural Instinct": {
       "added": {},
@@ -21976,7 +22043,7 @@
        "Shredding Attacks": 3,
        "Natural Instinct": 2
       },
-      "gain": -0.11428
+      "gain": -0.11282
      },
      "-Shredding Attacks - Rend and Tear": {
       "added": {},
@@ -21984,7 +22051,7 @@
        "Shredding Attacks": 3,
        "Rend and Tear": 5
       },
-      "gain": -0.12987
+      "gain": -0.127
      },
      "-Shredding Attacks - Shifting Power": {
       "added": {},
@@ -21992,7 +22059,7 @@
        "Shredding Attacks": 3,
        "Shifting Power": 1
       },
-      "gain": -0.20179
+      "gain": -0.20882
      },
      "-Shredding Attacks - Naturalist": {
       "added": {},
@@ -22000,7 +22067,7 @@
        "Shredding Attacks": 3,
        "Naturalist": 5
       },
-      "gain": -0.163
+      "gain": -0.16169
      },
      "-Savage Fury - Sharpened Claws": {
       "added": {},
@@ -22008,7 +22075,7 @@
        "Savage Fury": 2,
        "Sharpened Claws": 2
       },
-      "gain": -0.08033
+      "gain": -0.07942
      },
      "-Savage Fury - Predatory Strikes": {
       "added": {},
@@ -22016,7 +22083,7 @@
        "Savage Fury": 2,
        "Predatory Strikes": 3
       },
-      "gain": -0.05783
+      "gain": -0.05595
      },
      "-Savage Fury - Predatory Discipline": {
       "added": {},
@@ -22024,7 +22091,7 @@
        "Savage Fury": 2,
        "Predatory Discipline": 1
       },
-      "gain": -0.03414
+      "gain": -0.0355
      },
      "-Savage Fury - Blood Frenzy": {
       "added": {},
@@ -22032,7 +22099,7 @@
        "Savage Fury": 2,
        "Blood Frenzy": 2
       },
-      "gain": -0.05073
+      "gain": -0.05139
      },
      "-Savage Fury - Leader of the Pack": {
       "added": {},
@@ -22040,7 +22107,7 @@
        "Savage Fury": 2,
        "Leader of the Pack": 1
       },
-      "gain": -0.03255
+      "gain": -0.03095
      },
      "-Savage Fury - Natural Instinct": {
       "added": {},
@@ -22048,7 +22115,7 @@
        "Savage Fury": 2,
        "Natural Instinct": 2
       },
-      "gain": -0.06686
+      "gain": -0.06528
      },
      "-Savage Fury - Rend and Tear": {
       "added": {},
@@ -22056,7 +22123,7 @@
        "Savage Fury": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.0842
+      "gain": -0.08135
      },
      "-Savage Fury - Shifting Power": {
       "added": {},
@@ -22064,7 +22131,7 @@
        "Savage Fury": 2,
        "Shifting Power": 1
       },
-      "gain": -0.17962
+      "gain": -0.18439
      },
      "-Savage Fury - Naturalist": {
       "added": {},
@@ -22072,7 +22139,7 @@
        "Savage Fury": 2,
        "Naturalist": 5
       },
-      "gain": -0.11747
+      "gain": -0.1161
      },
      "-Sharpened Claws - Predatory Strikes": {
       "added": {},
@@ -22080,7 +22147,7 @@
        "Sharpened Claws": 2,
        "Predatory Strikes": 3
       },
-      "gain": -0.0742
+      "gain": -0.07439
      },
      "-Sharpened Claws - Predatory Discipline": {
       "added": {},
@@ -22088,7 +22155,7 @@
        "Sharpened Claws": 2,
        "Predatory Discipline": 1
       },
-      "gain": -0.0507
+      "gain": -0.05225
      },
      "-Sharpened Claws - Blood Frenzy": {
       "added": {},
@@ -22096,7 +22163,7 @@
        "Sharpened Claws": 2,
        "Blood Frenzy": 2
       },
-      "gain": -0.06491
+      "gain": -0.06627
      },
      "-Sharpened Claws - Leader of the Pack": {
       "added": {},
@@ -22104,7 +22171,7 @@
        "Sharpened Claws": 2,
        "Leader of the Pack": 1
       },
-      "gain": -0.04931
+      "gain": -0.04978
      },
      "-Sharpened Claws - Natural Instinct": {
       "added": {},
@@ -22112,7 +22179,7 @@
        "Sharpened Claws": 2,
        "Natural Instinct": 2
       },
-      "gain": -0.08047
+      "gain": -0.0808
      },
      "-Sharpened Claws - Rend and Tear": {
       "added": {},
@@ -22120,7 +22187,7 @@
        "Sharpened Claws": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.10118
+      "gain": -0.10022
      },
      "-Sharpened Claws - Shifting Power": {
       "added": {},
@@ -22128,7 +22195,7 @@
        "Sharpened Claws": 2,
        "Shifting Power": 1
       },
-      "gain": -0.20133
+      "gain": -0.20703
      },
      "-Sharpened Claws - Naturalist": {
       "added": {},
@@ -22136,7 +22203,7 @@
        "Sharpened Claws": 2,
        "Naturalist": 5
       },
-      "gain": -0.13285
+      "gain": -0.13335
      },
      "-Predatory Strikes - Predatory Discipline": {
       "added": {},
@@ -22144,7 +22211,7 @@
        "Predatory Strikes": 3,
        "Predatory Discipline": 1
       },
-      "gain": -0.02785
+      "gain": -0.02965
      },
      "-Predatory Strikes - Blood Frenzy": {
       "added": {},
@@ -22152,7 +22219,7 @@
        "Predatory Strikes": 3,
        "Blood Frenzy": 2
       },
-      "gain": -0.04408
+      "gain": -0.04517
      },
      "-Predatory Strikes - Leader of the Pack": {
       "added": {},
@@ -22160,7 +22227,7 @@
        "Predatory Strikes": 3,
        "Leader of the Pack": 1
       },
-      "gain": -0.02617
+      "gain": -0.02584
      },
      "-Predatory Strikes - Natural Instinct": {
       "added": {},
@@ -22168,7 +22235,7 @@
        "Predatory Strikes": 3,
        "Natural Instinct": 2
       },
-      "gain": -0.06154
+      "gain": -0.06116
      },
      "-Predatory Strikes - Rend and Tear": {
       "added": {},
@@ -22176,7 +22243,7 @@
        "Predatory Strikes": 3,
        "Rend and Tear": 5
       },
-      "gain": -0.07944
+      "gain": -0.07776
      },
      "-Predatory Strikes - Shifting Power": {
       "added": {},
@@ -22184,7 +22251,7 @@
        "Predatory Strikes": 3,
        "Shifting Power": 1
       },
-      "gain": -0.1795
+      "gain": -0.18503
      },
      "-Predatory Strikes - Naturalist": {
       "added": {},
@@ -22192,7 +22259,7 @@
        "Predatory Strikes": 3,
        "Naturalist": 5
       },
-      "gain": -0.11167
+      "gain": -0.11145
      },
      "-Predatory Discipline - Blood Frenzy": {
       "added": {},
@@ -22200,7 +22267,7 @@
        "Predatory Discipline": 1,
        "Blood Frenzy": 2
       },
-      "gain": -0.01871
+      "gain": -0.0199
      },
      "-Predatory Discipline - Leader of the Pack": {
       "added": {},
@@ -22208,7 +22275,7 @@
        "Predatory Discipline": 1,
        "Leader of the Pack": 1
       },
-      "gain": -0.00172
+      "gain": -0.00372
      },
      "-Predatory Discipline - Natural Instinct": {
       "added": {},
@@ -22216,7 +22283,7 @@
        "Predatory Discipline": 1,
        "Natural Instinct": 2
       },
-      "gain": -0.03779
+      "gain": -0.03973
      },
      "-Predatory Discipline - Rend and Tear": {
       "added": {},
@@ -22224,7 +22291,7 @@
        "Predatory Discipline": 1,
        "Rend and Tear": 5
       },
-      "gain": -0.05609
+      "gain": -0.05636
      },
      "-Predatory Discipline - Shifting Power": {
       "added": {},
@@ -22232,7 +22299,7 @@
        "Predatory Discipline": 1,
        "Shifting Power": 1
       },
-      "gain": -0.15697
+      "gain": -0.16332
      },
      "-Predatory Discipline - Naturalist": {
       "added": {},
@@ -22240,7 +22307,7 @@
        "Predatory Discipline": 1,
        "Naturalist": 5
       },
-      "gain": -0.08945
+      "gain": -0.09133
      },
      "-Blood Frenzy - Leader of the Pack": {
       "added": {},
@@ -22248,7 +22315,7 @@
        "Blood Frenzy": 2,
        "Leader of the Pack": 1
       },
-      "gain": -0.01798
+      "gain": -0.01933
      },
      "-Blood Frenzy - Natural Instinct": {
       "added": {},
@@ -22256,7 +22323,7 @@
        "Blood Frenzy": 2,
        "Natural Instinct": 2
       },
-      "gain": -0.05309
+      "gain": -0.05444
      },
      "-Blood Frenzy - Rend and Tear": {
       "added": {},
@@ -22264,7 +22331,7 @@
        "Blood Frenzy": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.07102
+      "gain": -0.07053
      },
      "-Blood Frenzy - Shifting Power": {
       "added": {},
@@ -22272,7 +22339,7 @@
        "Blood Frenzy": 2,
        "Shifting Power": 1
       },
-      "gain": -0.19403
+      "gain": -0.19654
      },
      "-Blood Frenzy - Naturalist": {
       "added": {},
@@ -22280,7 +22347,7 @@
        "Blood Frenzy": 2,
        "Naturalist": 5
       },
-      "gain": -0.10423
+      "gain": -0.10554
      },
      "-Leader of the Pack - Natural Instinct": {
       "added": {},
@@ -22288,7 +22355,7 @@
        "Leader of the Pack": 1,
        "Natural Instinct": 2
       },
-      "gain": -0.03618
+      "gain": -0.0361
      },
      "-Leader of the Pack - Rend and Tear": {
       "added": {},
@@ -22296,7 +22363,7 @@
        "Leader of the Pack": 1,
        "Rend and Tear": 5
       },
-      "gain": -0.05453
+      "gain": -0.0531
      },
      "-Leader of the Pack - Shifting Power": {
       "added": {},
@@ -22304,7 +22371,7 @@
        "Leader of the Pack": 1,
        "Shifting Power": 1
       },
-      "gain": -0.1568
+      "gain": -0.16258
      },
      "-Leader of the Pack - Naturalist": {
       "added": {},
@@ -22312,7 +22379,7 @@
        "Leader of the Pack": 1,
        "Naturalist": 5
       },
-      "gain": -0.08788
+      "gain": -0.08796
      },
      "-Natural Instinct - Rend and Tear": {
       "added": {},
@@ -22320,7 +22387,7 @@
        "Natural Instinct": 2,
        "Rend and Tear": 5
       },
-      "gain": -0.08758
+      "gain": -0.08617
      },
      "-Natural Instinct - Shifting Power": {
       "added": {},
@@ -22328,7 +22395,7 @@
        "Natural Instinct": 2,
        "Shifting Power": 1
       },
-      "gain": -0.18452
+      "gain": -0.1899
      },
      "-Natural Instinct - Naturalist": {
       "added": {},
@@ -22344,7 +22411,7 @@
        "Rend and Tear": 5,
        "Shifting Power": 1
       },
-      "gain": -0.1977
+      "gain": -0.20096
      },
      "-Rend and Tear - Naturalist": {
       "added": {},
@@ -22352,7 +22419,7 @@
        "Rend and Tear": 5,
        "Naturalist": 5
       },
-      "gain": -0.13745
+      "gain": -0.13624
      },
      "-Shifting Power - Naturalist": {
       "added": {},
@@ -22360,10 +22427,10 @@
        "Shifting Power": 1,
        "Naturalist": 5
       },
-      "gain": -0.23074
+      "gain": -0.23605
      }
     },
-    "minutes": 3.3
+    "minutes": 7.0
    },
    "sig_check": {
     "spec": "Feral Combat",
@@ -22412,7 +22479,7 @@
     ],
     "why": null,
     "spec": "Feral Combat",
-    "date": "2026-10-31"
+    "date": "2026-11-01"
    }
   }
  },

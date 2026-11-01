@@ -99,8 +99,8 @@
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
@@ -108,16 +108,11 @@
   "builds": [
    {
     "label": "balance-moonkin-raid",
-    "talents": "0532220115501051-05-505003"
+    "talents": "0532220115501051--5553"
    },
    {
     "label": "sim preset: Moonkin",
-    "talents": "5232220115501351--505003"
-   },
-   {
-    "label": "balance-moonkin-raid",
-    "talents": "0532220115501051--5553",
-    "protect_only": true
+    "talents": "5232220115501351--5053"
    }
   ],
   "tuned_on": [
@@ -172,13 +167,13 @@
      "oom_after": 0
     },
     "sim preset: Moonkin": {
-     "before": 673.5277287021283,
-     "after": 628.2040366255153,
-     "base": 673.5277287021283,
+     "before": 677.442911086602,
+     "after": 630.777486983464,
+     "base": 677.442911086602,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0.0045633
+     "oom_after": 0
     }
    }
   },
@@ -191,13 +186,13 @@
     "Starfire"
    ],
    "rejected": {
-    "structure": 78,
+    "structure": 39,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-01",
-  "passes": 5
+  "passes": 6
  }
 }

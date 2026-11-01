@@ -9,7 +9,7 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% (marksmanship-with-a-pet-open-raid) | no |
 | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% (mm-lone-wolf-raid) | no |
 | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% (beast-mastery-ml-raid) | no |
-| melee-dps | [5/12/34](https://talentsforever.com/hunter/60/5-005005101-502220230150122151-7) | Survival | 835.2 | -0.0% (melee-survival-raid) | no |
+| melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-7) | Survival | 735.5 | +0.0% (melee-survival-raid) | no |
 
 ## mm-raid
 
@@ -80,7 +80,7 @@ The search model's most important talents (random-forest importance): Sniper Sho
 
 **Synergy certificate** (2026-10-31, raidsim/synergy.py): 36 relevant talents, 21 the winner lacks; 569 pairs measured around 7/39/5 on 1500 fights. Largest interactions (DPS of both against the two alone): Bestial Discipline + Rapid Recuperation +5.1% (build +0.8%), Resourcefulness + Rapid Recuperation +4.9% (build +0.0%), Bestial Discipline + Efficiency +4.5% (build +1.0%), Resourcefulness + Efficiency +4.4% (build +0.3%), Ferocity + Frenzy +0.8% (build +6.0%), Unleashed Fury + Frenzy +0.5% (build +6.6%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-10-29, open_builds.py): `marksmanship-open-raid`.
+Build (2026-10-31, open_builds.py): `marksmanship-open-raid`.
 
 ## mm-lonewolf-raid
 
@@ -151,7 +151,7 @@ The search model's most important talents (random-forest importance): Lone Wolf 
 
 **Synergy certificate** (2026-10-31, raidsim/synergy.py): 36 relevant talents, 21 the winner lacks; 585 pairs measured around 5/41/5 on 1500 fights. Largest interactions (DPS of both against the two alone): Bestial Discipline + Rapid Recuperation +4.6% (build +0.0%), Resourcefulness + Rapid Recuperation +4.6% (build -0.0%), Bestial Discipline + Efficiency +3.7% (build +0.1%), Resourcefulness + Efficiency +3.7% (build +0.0%), Summon Hawk + Improved Arcane Shot +3.1% (build -5.3%), Summon Hawk + Efficiency +1.3% (build -5.5%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-10-29, open_builds.py): confirms mm-lone-wolf-raid (+0.03% in a full raid, raced together).
+Build (2026-10-31, open_builds.py): confirms mm-lone-wolf-raid (+0.03% in a full raid, raced together).
 
 ## bm-raid
 
@@ -225,7 +225,7 @@ The search model's most important talents (random-forest importance): Frenzy 0.3
 
 **Synergy certificate** (2026-10-31, raidsim/synergy.py): 36 relevant talents, 23 the winner lacks; 572 pairs measured around 31/20/0 on 1500 fights. Largest interactions (DPS of both against the two alone): Efficiency + Bestial Discipline +2.2% (build -0.6%), Rapid Recuperation + Bestial Discipline +1.9% (build -0.8%), Resourcefulness + Bestial Discipline +1.8% (build -0.9%), Efficiency + Sniper Shot +1.0% (build +2.7%), Rapid Recuperation + Sniper Shot +1.0% (build +2.7%), Lone Wolf + Frenzy +0.9% (build -9.6%). Leads polished and raced: Summon Hawk + Improved Tracking -> 31/18/2 -0.2%. The certificate confirms the winner.
 
-Build (2026-10-29, open_builds.py): confirms beast-mastery-ml-raid (+0.40% in a full raid, raced together).
+Build (2026-10-31, open_builds.py): confirms beast-mastery-ml-raid (+0.40% in a full raid, raced together).
 
 ## melee-dps
 
@@ -233,74 +233,72 @@ Build (2026-10-29, open_builds.py): confirms beast-mastery-ml-raid (+0.40% in a 
 
 | Keystones | Build | Family | DPS |
 |---|---|---|---|
-| Rapid Killing + Survival Tactics | 5/12/34 | Survival | 837.6 |
-| Rapid Killing + Resourcefulness | 5/13/33 | Survival | 837.6 |
-| Rapid Killing + Expose Prey | 5/12/34 | Survival | 837.6 |
-| Rapid Killing + Strider Kick | 5/12/34 | Survival | 837.6 |
-| Rapid Killing + Lacerating Strikes | 5/14/32 | Survival | 837.6 |
-| Lone Wolf + Survival Tactics | 7/11/33 | Survival | 837.4 |
-| Lone Wolf + Resourcefulness | 5/11/35 | Survival | 837.4 |
-| Lone Wolf + Expose Prey | 5/11/35 | Survival | 837.4 |
-| Lone Wolf + Lacerating Strikes | 5/14/32 | Survival | 837.4 |
-| Lone Wolf + Counterattack | 5/15/31 | Survival | 824.7 |
+| Rapid Killing + Expose Prey | 5/13/33 | Survival | 735.2 |
+| Rapid Killing + Lacerating Strikes | 6/12/33 | Survival | 735.2 |
+| Lone Wolf + Survival Tactics | 5/11/35 | Survival | 735.2 |
+| Lone Wolf + Counterattack | 5/11/35 | Survival | 735.2 |
+| Rapid Killing + Survival Tactics | 5/13/33 | Survival | 735.0 |
+| Lone Wolf + Strider Kick | 5/12/34 | Survival | 735.9 |
+| Rapid Killing + Resourcefulness | 5/13/33 | Survival | 732.3 |
+| Rapid Killing + Counterattack | 5/12/34 | Survival | 731.7 |
+| Lone Wolf + Lacerating Strikes | 5/14/32 | Survival | 729.8 |
+| Rapid Killing + Strider Kick | 5/14/32 | Survival | 729.1 |
 
-**Open winner 5/12/34** (Survival):
+**Open winner 5/13/33** (Survival):
 
-Signature spells (Survival, full raid, 6,000 fights): plays them; core share 80% (needs 50%).
+Signature spells (Survival, full raid, 6,000 fights): plays them; core share 77% (needs 50%).
 
 | Talent | Ranks | DPS lost without it | Per point | Share of the build |
 |---|---|---|---|---|
-| Lone Wolf | 1 | +136.2 | +136.2 | +16.3% |
-| Deadly Aspects | 5 | +75.5 | +15.1 | +9.0% |
-| Predator's Edge | 5 | +74.3 | +14.9 | +8.9% |
-| Expose Prey | 2 | +61.1 | +30.5 | +7.3% |
-| Careful Aim | 5 | +45.8 | +9.2 | +5.5% |
-| Strider Kick | 1 | +43.4 | +43.4 | +5.2% |
-| Lethal Attacks | 5 | +41.8 | +8.4 | +5.0% |
-| Improved Tracking | 5 | +38.9 | +7.8 | +4.7% |
-| Surefooted | 3 | +33.5 | +11.2 | +4.0% |
-| Survivalist's Discipline | 2 | +27.9 | +14.0 | +3.4% |
-| Lightning Reflexes | 5 | +24.3 | +4.9 | +2.9% |
-| Lacerating Strikes | 1 | +24.1 | +24.1 | +2.9% |
-| Clever Traps | 2 | +20.0 | +10.0 | +2.4% |
-| Savage Strikes | 2 | +10.2 | +5.1 | +1.2% |
+| Lone Wolf | 1 | +120.0 | +120.0 | +16.3% |
+| Predator's Edge | 5 | +69.5 | +13.9 | +9.4% |
+| Deadly Aspects | 5 | +69.2 | +13.8 | +9.4% |
+| Expose Prey | 2 | +57.4 | +28.7 | +7.8% |
+| Strider Kick | 1 | +42.1 | +42.1 | +5.7% |
+| Careful Aim | 5 | +40.1 | +8.0 | +5.5% |
+| Lethal Attacks | 5 | +36.5 | +7.3 | +5.0% |
+| Improved Tracking | 5 | +34.3 | +6.9 | +4.7% |
+| Survivalist's Discipline | 2 | +33.0 | +16.5 | +4.5% |
+| Surefooted | 3 | +31.1 | +10.4 | +4.2% |
+| Lacerating Strikes | 1 | +23.7 | +23.7 | +3.2% |
+| Clever Traps | 2 | +22.2 | +11.1 | +3.0% |
+| Lightning Reflexes | 5 | +21.1 | +4.2 | +2.9% |
+| Survival Tactics | 2 | +11.1 | +5.6 | +1.5% |
+| Savage Strikes | 2 | +9.4 | +4.7 | +1.3% |
+| Efficiency | 1 | +0.4 | +0.4 | +0.1% |
 | Rapid Killing | 1 | +0.0 | +0.0 | +0.0% |
-| Entrapment | 2 | +0.0 | +0.0 | +0.0% |
-| Survivalist | 2 | +0.0 | +0.0 | +0.0% |
-| Survival Tactics | 1 | +0.0 | +0.0 | +0.0% |
-| Resourcefulness | 1 | -0.3 | -0.3 | -0.0% |
+| Deflection | 2 | +0.0 | +0.0 | +0.0% |
+| Entrapment | 1 | +0.0 | +0.0 | +0.0% |
 
-(the build: 835.2 DPS in a full raid; removal values do not add up to the build: talents interact)
+(the build: 736.2 DPS in a full raid; removal values do not add up to the build: talents interact)
 
 **Our best build there, melee-survival-raid:**
 
 | Talent | Ranks | DPS lost without it | Per point | Share of the build |
 |---|---|---|---|---|
-| Lone Wolf | 1 | +136.2 | +136.2 | +16.3% |
-| Deadly Aspects | 5 | +76.1 | +15.2 | +9.1% |
-| Predator's Edge | 5 | +74.2 | +14.8 | +8.9% |
-| Expose Prey | 2 | +61.7 | +30.8 | +7.4% |
-| Careful Aim | 5 | +45.8 | +9.2 | +5.5% |
-| Strider Kick | 1 | +44.0 | +44.0 | +5.3% |
-| Lethal Attacks | 5 | +41.8 | +8.4 | +5.0% |
-| Improved Tracking | 5 | +38.9 | +7.8 | +4.7% |
-| Surefooted | 3 | +34.3 | +11.4 | +4.1% |
-| Survivalist's Discipline | 2 | +28.1 | +14.0 | +3.4% |
-| Lacerating Strikes | 1 | +24.8 | +24.8 | +3.0% |
-| Lightning Reflexes | 5 | +24.5 | +4.9 | +2.9% |
-| Clever Traps | 2 | +20.0 | +10.0 | +2.4% |
-| Savage Strikes | 2 | +10.5 | +5.2 | +1.2% |
-| Resourcefulness | 2 | +0.1 | +0.1 | +0.0% |
+| Lone Wolf | 1 | +119.9 | +119.9 | +16.3% |
+| Predator's Edge | 5 | +69.5 | +13.9 | +9.4% |
+| Deadly Aspects | 5 | +69.1 | +13.8 | +9.4% |
+| Expose Prey | 2 | +57.1 | +28.6 | +7.8% |
+| Strider Kick | 1 | +41.8 | +41.8 | +5.7% |
+| Careful Aim | 5 | +40.3 | +8.1 | +5.5% |
+| Lethal Attacks | 5 | +36.5 | +7.3 | +5.0% |
+| Improved Tracking | 5 | +34.3 | +6.9 | +4.7% |
+| Survivalist's Discipline | 2 | +32.6 | +16.3 | +4.4% |
+| Surefooted | 3 | +30.9 | +10.3 | +4.2% |
+| Lacerating Strikes | 1 | +23.6 | +23.6 | +3.2% |
+| Clever Traps | 2 | +22.2 | +11.1 | +3.0% |
+| Lightning Reflexes | 5 | +21.2 | +4.2 | +2.9% |
+| Survival Tactics | 2 | +10.8 | +5.4 | +1.5% |
+| Savage Strikes | 2 | +9.3 | +4.7 | +1.3% |
+| Resourcefulness | 2 | +0.1 | +0.0 | +0.0% |
 | Survivalist | 3 | +0.0 | +0.0 | +0.0% |
-| Survival Tactics | 2 | +0.0 | +0.0 | +0.0% |
 
-(the build: 835.6 DPS in a full raid; removal values do not add up to the build: talents interact)
+(the build: 735.9 DPS in a full raid; removal values do not add up to the build: talents interact)
 
 Sibling rotations (the entry's best build under each, 10,000 fights): mm-raid -60.0%, mm-lonewolf-raid -60.0%, bm-raid -60.0%; none adopted.
 
-The search model's most important talents (random-forest importance): Lone Wolf 0.35, Lacerating Strikes 0.17, Predator's Edge 0.15, Lightning Reflexes 0.07, Expose Prey 0.05, Survivalist's Discipline 0.03, Careful Aim 0.03, Strider Kick 0.02, Deflection 0.02, Deadly Aspects 0.02.
+The search model's most important talents (random-forest importance): Lone Wolf 0.38, Lacerating Strikes 0.15, Predator's Edge 0.10, Lightning Reflexes 0.09, Expose Prey 0.07, Strider Kick 0.03, Careful Aim 0.03, Survivalist's Discipline 0.03, Deflection 0.02, Deadly Aspects 0.02.
 
-**Synergy certificate** (2026-10-31, raidsim/synergy.py): 36 relevant talents, 20 the winner lacks; 567 pairs measured around 5/12/34 on 1500 fights. Largest interactions (DPS of both against the two alone): Unleashed Fury + Summon Hawk +0.9% (build +6.8%), Ferocity + Summon Hawk +0.7% (build +6.6%), Summon Hawk + Ranged Weapon Specialization +0.2% (build +6.2%), Summon Hawk + Predator's Edge +0.2% (build -2.7%), Summon Hawk + Expose Prey +0.1% (build -1.4%), Summon Hawk + Savage Strikes +0.1% (build +4.8%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Build (2026-10-29, open_builds.py): confirms melee-survival-raid (-0.04% in a full raid, raced together).
+**Synergy certificate** (2026-11-01, raidsim/synergy.py): 36 relevant talents, 20 the winner lacks; 552 pairs measured around 5/13/33 on 1500 fights. Largest interactions (DPS of both against the two alone): Unleashed Fury + Summon Hawk +1.0% (build +7.4%), Ferocity + Summon Hawk +0.8% (build +7.1%), Summon Hawk + Expose Prey +0.3% (build -1.1%), Summon Hawk + Lacerating Strikes +0.3% (build +3.5%), Summon Hawk + Ranged Weapon Specialization +0.3% (build +6.7%), Summon Hawk + Survival Tactics +0.3% (build +5.2%). No pair build within 1% of the winner. The certificate confirms the winner.
 

@@ -1,7 +1,7 @@
 {
  "class": "paladin",
  "spec": "Holy",
- "date": "2026-10-21",
+ "date": "2026-11-01",
  "cycles": [
   {
    "cycle": 1,
@@ -9,44 +9,48 @@
     "allocation": {
      "Holy": [
       [
-       "Divine Strength",
-       2
+       "Spiritual Focus",
+       4
       ],
       [
-       "Divine Intellect",
-       5
+       "Divine Strength",
+       2
       ],
       [
        "Healing Light",
        3
       ],
       [
-       "Spiritual Focus",
-       1
-      ],
-      [
-       "Improved Seals",
-       3
-      ],
-      [
-       "Unyielding Faith",
+       "Reverence",
        2
       ],
       [
-       "Reverence",
-       3
-      ],
-      [
-       "Illumination",
-       5
+       "Purifying Power",
+       2
       ],
       [
        "Divine Favor",
        1
       ],
       [
-       "Consecrated Ground",
+       "Illumination",
+       5
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Oath of Light",
        1
+      ],
+      [
+       "Holy Shock",
+       1
+      ],
+      [
+       "Boundless Light",
+       2
       ],
       [
        "Holy Power",
@@ -55,70 +59,50 @@
      ],
      "Protection": [
       [
-       "Toughness",
-       1
-      ],
-      [
-       "Redoubt",
+       "Divine Intellect",
        5
       ],
       [
        "Guardian's Favor",
-       1
-      ],
-      [
-       "Anticipation",
-       3
-      ],
-      [
-       "Improved Righteous Fury",
-       1
-      ],
-      [
-       "Sacred Duty",
-       1
+       2
       ]
      ],
      "Retribution": [
       [
        "Deflection",
-       2
+       3
       ],
       [
        "Benediction",
        5
       ],
       [
-       "Holy Conduit",
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
        1
       ]
      ]
     },
-    "split": "31/12/8",
-    "dps": 0.5824,
-    "se": 0.0015,
+    "split": "30/7/14",
+    "dps": 0.5999,
+    "se": 0.0019,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "30/12/9",
-    "dps": 0.5719,
-    "se": 0.0016,
+    "split": "30/7/14",
+    "dps": 0.5885,
+    "se": 0.0015,
     "differs": [
      [
-      "Conviction",
-      1
-     ],
-     [
-      "Healing Light",
-      2
-     ],
-     [
-      "Healing Light",
-      3
-     ],
-     [
       "Holy Power",
-      4
+      3
      ],
      [
       "Holy Power",
@@ -126,837 +110,181 @@
      ],
      [
       "Infusion of Light",
-      1
+      2
      ]
     ]
    },
-   "gap_to_runner_up": 0.0183,
+   "gap_to_runner_up": 0.0194,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 2248,
-     "best_screen": 0.5921,
-     "best_split": "30/12/9",
+     "simulated": 2036,
+     "best_screen": 0.6012,
+     "best_split": "30/7/14",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 2051,
-     "best_screen": 0.589,
-     "best_split": "39/11/1",
-     "best_stage1_gap": -0.0066,
-     "agrees_with_winner": false
+     "simulated": 2233,
+     "best_screen": 0.6012,
+     "best_split": "30/9/12",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 3,
-     "simulated": 1845,
-     "best_screen": 0.589,
-     "best_split": "33/7/11",
-     "best_stage1_gap": -0.0066,
+     "simulated": 2028,
+     "best_screen": 0.6012,
+     "best_split": "30/8/13",
+     "best_stage1_gap": -0.0236,
      "agrees_with_winner": false
     },
     {
      "entry": "heal",
      "run": 4,
-     "simulated": 2248,
-     "best_screen": 0.589,
-     "best_split": "36/12/3",
-     "best_stage1_gap": -0.0066,
+     "simulated": 1639,
+     "best_screen": 0.6043,
+     "best_split": "31/3/17",
+     "best_stage1_gap": -0.0107,
      "agrees_with_winner": false
     }
    ],
-   "runs_agree": 1,
+   "runs_agree": 2,
    "race": [
     {
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697
+      0.5913,
+      0.5913,
+      0.5913,
+      0.5875,
+      0.5875,
+      0.5875,
+      0.5875,
+      0.5875,
+      0.585,
+      0.585,
+      0.585,
+      0.585,
+      0.585,
+      0.585,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773,
+      0.5773
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5729,
-      0.5729
+      0.5926,
+      0.5926,
+      0.5926,
+      0.5907,
+      0.5907
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.5719,
-      0.5719
+      0.5885,
+      0.5885
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.5824,
-      0.5719
+      0.5999,
+      0.5885
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 573,
-     "best_gap": 0.0165,
-     "best_move": "1 Infusion of Light -> Healing Light",
+     "neighbours": 302,
+     "best_gap": 0.0196,
+     "best_move": "2 Infusion of Light -> Holy Power",
      "raced": [
-      "1 Infusion of Light -> Healing Light",
-      "1 Holy Power -> Consecrated Ground",
-      "1 Holy Power -> Purifying Power",
-      "1 Holy Power -> Voice of Truth"
+      "2 Infusion of Light -> Holy Power",
+      "1 Illumination -> Holy Power",
+      "1 Infusion of Light -> Holy Power",
+      "1 Illumination -> Consecrated Ground"
      ],
-     "confirmed_gap": 0.0083
+     "confirmed_gap": 0.0214
     },
     {
-     "neighbours": 549,
-     "best_gap": 0.0261,
-     "best_move": "1 Deflection -> Holy Power",
-     "raced": [
-      "1 Deflection -> Holy Power",
-      "1 Sacred Duty -> Holy Power",
-      "1 Improved Seals -> Holy Power",
-      "1 Conviction -> Holy Power"
-     ],
-     "confirmed_gap": 0.0099
-    },
-    {
-     "neighbours": 200,
+     "neighbours": 294,
      "best_gap": 0.0,
-     "best_move": "1 Guardian's Favor + 1 Improved Righteous Fury + 1 Sacred Duty -> 2 Improved Judgement + 1 Vindication (tier chain)"
+     "best_move": "2 Guardian's Favor -> 1 Pursuit of Justice + 1 Two-Handed Weapon Specialization (tier chain)"
     }
    ],
    "important_features": [
     {
+     "feature": "Oath of Light",
+     "importance": 0.5413
+    },
+    {
+     "feature": "Conviction",
+     "importance": 0.1588
+    },
+    {
      "feature": "Illumination",
-     "importance": 0.4271
-    },
-    {
-     "feature": "Holy Power",
-     "importance": 0.1471
-    },
-    {
-     "feature": "Reverence",
-     "importance": 0.1299
-    },
-    {
-     "feature": "Healing Light",
-     "importance": 0.0754
-    },
-    {
-     "feature": "Holy Shock",
-     "importance": 0.051
-    },
-    {
-     "feature": "Divine Intellect",
-     "importance": 0.0274
-    },
-    {
-     "feature": "Divine Strength",
-     "importance": 0.0237
-    },
-    {
-     "feature": "Infusion of Light",
-     "importance": 0.0213
-    },
-    {
-     "feature": "Divine Precision",
-     "importance": 0.0204
+     "importance": 0.0957
     },
     {
      "feature": "Improved Seals",
-     "importance": 0.0091
-    },
-    {
-     "feature": "Consecrated Ground",
-     "importance": 0.0074
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0073
-    }
-   ],
-   "simulated_builds": 10464,
-   "minutes": 140.1,
-   "policy_changed": true
-  },
-  {
-   "cycle": 2,
-   "winner": {
-    "allocation": {
-     "Holy": [
-      [
-       "Divine Strength",
-       5
-      ],
-      [
-       "Divine Intellect",
-       5
-      ],
-      [
-       "Healing Light",
-       2
-      ],
-      [
-       "Spiritual Focus",
-       1
-      ],
-      [
-       "Unyielding Faith",
-       2
-      ],
-      [
-       "Reverence",
-       3
-      ],
-      [
-       "Purifying Power",
-       2
-      ],
-      [
-       "Infusion of Light",
-       1
-      ],
-      [
-       "Illumination",
-       5
-      ],
-      [
-       "Divine Favor",
-       1
-      ],
-      [
-       "Consecrated Ground",
-       2
-      ],
-      [
-       "Holy Power",
-       4
-      ]
-     ],
-     "Protection": [
-      [
-       "Toughness",
-       1
-      ],
-      [
-       "Redoubt",
-       5
-      ],
-      [
-       "Guardian's Favor",
-       1
-      ],
-      [
-       "Anticipation",
-       3
-      ],
-      [
-       "Improved Righteous Fury",
-       1
-      ],
-      [
-       "Sacred Duty",
-       1
-      ]
-     ],
-     "Retribution": [
-      [
-       "Benediction",
-       5
-      ],
-      [
-       "Holy Conduit",
-       1
-      ]
-     ]
-    },
-    "split": "33/12/6",
-    "dps": 0.5719,
-    "se": 0.0016,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "32/12/7",
-    "dps": 0.5719,
-    "se": 0.0016,
-    "differs": [
-     [
-      "Consecrated Ground",
-      1
-     ],
-     [
-      "Consecrated Ground",
-      2
-     ],
-     [
-      "Deflection",
-      2
-     ],
-     [
-      "Holy Conduit",
-      1
-     ],
-     [
-      "Improved Seals",
-      3
-     ],
-     [
-      "Purifying Power",
-      2
-     ],
-     [
-      "Spiritual Focus",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "heal",
-     "run": 1,
-     "simulated": 1506,
-     "best_screen": 0.5921,
-     "best_split": "33/12/6",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "heal",
-     "run": 2,
-     "simulated": 1504,
-     "best_screen": 0.5921,
-     "best_split": "32/12/7",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 2,
-   "race": [
-    {
-     "iterations": 60,
-     "seed": 2,
-     "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735
-     ]
-    },
-    {
-     "iterations": 120,
-     "seed": 3,
-     "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735
-     ]
-    },
-    {
-     "iterations": 240,
-     "seed": 4,
-     "dps": [
-      0.5719,
-      0.5719
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 200,
-     "best_gap": 0.0165,
-     "best_move": "1 Holy Power -> Conviction",
-     "raced": [
-      "1 Holy Power -> Conviction",
-      "1 Holy Power -> Holy Conduit",
-      "1 Holy Power -> Improved Judgement",
-      "1 Holy Power -> Deflection"
-     ],
-     "confirmed_gap": -0.0017
-    }
-   ],
-   "important_features": [
-    {
-     "feature": "Illumination",
-     "importance": 0.3749
-    },
-    {
-     "feature": "Holy Power",
-     "importance": 0.1379
-    },
-    {
-     "feature": "Divine Favor",
-     "importance": 0.0762
+     "importance": 0.0362
     },
     {
      "feature": "Healing Light",
-     "importance": 0.0757
-    },
-    {
-     "feature": "Holy Shock",
-     "importance": 0.0706
-    },
-    {
-     "feature": "Reverence",
-     "importance": 0.0684
-    },
-    {
-     "feature": "Infusion of Light",
-     "importance": 0.0344
-    },
-    {
-     "feature": "Divine Strength",
-     "importance": 0.0287
-    },
-    {
-     "feature": "Voice of Truth",
-     "importance": 0.0186
+     "importance": 0.0218
     },
     {
      "feature": "Divine Intellect",
-     "importance": 0.0171
-    },
-    {
-     "feature": "Improved Seals",
-     "importance": 0.0144
-    },
-    {
-     "feature": "Divine Precision",
-     "importance": 0.0117
-    }
-   ],
-   "simulated_builds": 3943,
-   "minutes": 102.0,
-   "policy_changed": true
-  },
-  {
-   "cycle": 3,
-   "winner": {
-    "allocation": {
-     "Holy": [
-      [
-       "Divine Strength",
-       5
-      ],
-      [
-       "Divine Intellect",
-       5
-      ],
-      [
-       "Healing Light",
-       3
-      ],
-      [
-       "Spiritual Focus",
-       1
-      ],
-      [
-       "Unyielding Faith",
-       2
-      ],
-      [
-       "Reverence",
-       3
-      ],
-      [
-       "Purifying Power",
-       2
-      ],
-      [
-       "Infusion of Light",
-       1
-      ],
-      [
-       "Illumination",
-       5
-      ],
-      [
-       "Divine Favor",
-       1
-      ],
-      [
-       "Holy Power",
-       5
-      ]
-     ],
-     "Protection": [
-      [
-       "Toughness",
-       1
-      ],
-      [
-       "Redoubt",
-       5
-      ],
-      [
-       "Guardian's Favor",
-       1
-      ],
-      [
-       "Anticipation",
-       3
-      ],
-      [
-       "Improved Righteous Fury",
-       1
-      ],
-      [
-       "Sacred Duty",
-       1
-      ]
-     ],
-     "Retribution": [
-      [
-       "Benediction",
-       5
-      ],
-      [
-       "Holy Conduit",
-       1
-      ]
-     ]
-    },
-    "split": "33/12/6",
-    "dps": 0.5719,
-    "se": 0.0016,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/14/6",
-    "dps": 0.5719,
-    "se": 0.0016,
-    "differs": [
-     [
-      "Anticipation",
-      3
-     ],
-     [
-      "Anticipation",
-      5
-     ],
-     [
-      "Divine Strength",
-      3
-     ],
-     [
-      "Divine Strength",
-      5
-     ],
-     [
-      "Precision",
-      1
-     ],
-     [
-      "Toughness",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "heal",
-     "run": 1,
-     "simulated": 1302,
-     "best_screen": 0.5921,
-     "best_split": "33/12/6",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "heal",
-     "run": 2,
-     "simulated": 1305,
-     "best_screen": 0.5921,
-     "best_split": "33/12/6",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 2,
-   "race": [
-    {
-     "iterations": 60,
-     "seed": 2,
-     "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735
-     ]
-    },
-    {
-     "iterations": 120,
-     "seed": 3,
-     "dps": [
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735,
-      0.5735
-     ]
-    },
-    {
-     "iterations": 240,
-     "seed": 4,
-     "dps": [
-      0.5719,
-      0.5719
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 200,
-     "best_gap": 0.0165,
-     "best_move": "1 Holy Power -> Conviction",
-     "raced": [
-      "1 Holy Power -> Conviction",
-      "1 Holy Power -> Holy Conduit",
-      "1 Holy Power -> Improved Judgement",
-      "1 Holy Power -> Deflection"
-     ],
-     "confirmed_gap": -0.0017
-    }
-   ],
-   "important_features": [
-    {
-     "feature": "Illumination",
-     "importance": 0.387
-    },
-    {
-     "feature": "Holy Shock",
-     "importance": 0.117
+     "importance": 0.0214
     },
     {
      "feature": "Reverence",
-     "importance": 0.1101
-    },
-    {
-     "feature": "Holy Power",
-     "importance": 0.0873
-    },
-    {
-     "feature": "Healing Light",
-     "importance": 0.0792
-    },
-    {
-     "feature": "Improved Seals",
-     "importance": 0.0509
-    },
-    {
-     "feature": "Infusion of Light",
-     "importance": 0.0367
-    },
-    {
-     "feature": "Divine Intellect",
-     "importance": 0.0282
-    },
-    {
-     "feature": "Divine Favor",
-     "importance": 0.0233
-    },
-    {
-     "feature": "Divine Precision",
-     "importance": 0.0121
+     "importance": 0.0178
     },
     {
      "feature": "Spiritual Focus",
-     "importance": 0.0114
+     "importance": 0.0176
     },
     {
-     "feature": "Divine Strength",
-     "importance": 0.0082
+     "feature": "Holy Power",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.011
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0098
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.0087
     }
    ],
-   "simulated_builds": 3539,
-   "minutes": 100.3,
+   "simulated_builds": 8572,
+   "minutes": 93.2,
    "policy_changed": true
   }
- ],
- "converged": 3,
- "two_move": {
-  "steps": [
-   {
-    "one_move": 707,
-    "two_move": 12195,
-    "expanded": 25,
-    "screen": 24,
-    "screen_best": [
-     [
-      "1 Holy Power -> Healing Light; then 2 Consecrated Ground -> Holy Power",
-      0.0319
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Holy Conduit -> Holy Power",
-      0.0319
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Sacred Duty -> Holy Power",
-      0.0319
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Improved Righteous Fury -> Holy Power",
-      0.0319
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Consecrated Ground -> Holy Power",
-      0.0319
-     ]
-    ],
-    "raced": 30,
-    "confirmed": [
-     [
-      "1 Holy Power -> Healing Light; then 2 Consecrated Ground -> Holy Power",
-      0.0213
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Holy Conduit -> Holy Power",
-      0.0213
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Sacred Duty -> Holy Power",
-      0.0213
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Improved Righteous Fury -> Holy Power",
-      0.0213
-     ],
-     [
-      "1 Purifying Power -> Healing Light; then 1 Consecrated Ground -> Holy Power",
-      0.0213
-     ]
-    ],
-    "minutes": 72.4
-   },
-   {
-    "one_move": 616,
-    "two_move": 9521,
-    "expanded": 25,
-    "screen": 24,
-    "screen_best": [
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Illumination -> Infusion of Light",
-      0.0211
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Consecrated Ground",
-      0.0211
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Voice of Truth",
-      0.0211
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Unyielding Faith",
-      0.0211
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Improved Seals",
-      0.0211
-     ]
-    ],
-    "raced": 30,
-    "confirmed": [
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Consecrated Ground",
-      -0.0029
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Voice of Truth",
-      -0.0029
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Unyielding Faith",
-      -0.0029
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Improved Seals",
-      -0.0029
-     ],
-     [
-      "2 Unyielding Faith + 1 Infusion of Light + 1 Holy Conduit -> 3 Precision + 1 Improved Hammer of Justice (tier chain); then 1 Divine Intellect -> Spiritual Focus",
-      -0.0029
-     ]
-    ],
-    "minutes": 55.2
-   }
-  ],
-  "moved": true
- },
- "final": {
-  "deep winner": {
-   "capacity": 0.5856,
-   "se": 0.0012
-  },
-  "holy-raid-healer": {
-   "capacity": 0.574,
-   "se": 0.0011
-  },
-  "holy-ml-heal": {
-   "capacity": 0.5833,
-   "se": 0.0011
-  },
-  "opt-holy-heal-raid-heal": {
-   "capacity": 0.574,
-   "se": 0.0011
-  }
- },
- "minutes": 482.2,
- "build": {
-  "written": "holy-ml-heal",
-  "gain_vs_hand": 0.020209059233449622
- }
+ ]
 }

@@ -14,115 +14,115 @@
   "bis": {
    "entry": "fire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
-   "date": "2026-10-24",
+   "date": "2026-10-31",
+   "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 64.4,
+   "ilvl": 63.3,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Weakness Analyzer"
    ],
    "names": [
-    "Dreadmist Mask",
+    "Dreamweave Circlet",
     "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
-    "Arcanoweave Cloak",
+    "Hide of the Wild",
     "Robe of the Archmage",
     "Rockfury Bracers",
     "Gloves of Spell Mastery",
     "Belt of the Archmage",
-    "Magister's Leggings",
+    "Flarecore Leggings",
     "Sorcerer's Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Channeler's Ring",
+    "Ring of Spell Power",
+    "Ring of Spell Power",
     "Talisman of Ephemeral Power",
     "Weakness Analyzer",
-    "Sageblade",
-    "Therazane's Touch",
-    "Brilliant Wand"
-   ],
-   "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0563412593564097,
-    "keep-sets-and-effects": 1.0563412593564097,
-    "previous": 1.0563412593564097
-   },
-   "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.057641034448734
-   },
-   "weights": {
-    "StatArcaneDamage": 0.0255,
-    "StatCritRating": 0.4877,
-    "StatFireDamage": 0.4968,
-    "StatFrostDamage": 0.0032,
-    "StatHasteRating": 0.3826,
-    "StatHitRating": 0.8773,
-    "StatIntellect": 0.3781,
-    "StatSpellDamage": 0.5255,
-    "StatSpellPiercing": 1.0805,
-    "StatSpirit": 0.4497
-   },
-   "evaluated_on": [
-    "fire-raid: ml winner"
-   ],
-   "commit": "30f67f5d2"
-  },
-  "bis2": true,
-  "prebis": {
-   "entry": "fire-raid",
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
-   "date": "2026-10-24",
-   "chosen": "previous+trinkets",
-   "ilvl": 63.0,
-   "trinkets": [
-    "Weakness Analyzer",
-    "Frozen Heart of the Mountain"
-   ],
-   "names": [
-    "Dreadmist Mask",
-    "Orb of the Darkmoon",
-    "Mantle of the Timbermaw",
-    "Arcanoweave Cloak",
-    "Robe of the Archmage",
-    "Rockfury Bracers",
-    "Gloves of Spell Mastery",
-    "Belt of the Archmage",
-    "Magister's Leggings",
-    "Sorcerer's Boots",
-    "Channeler's Ring",
-    "Signet Ring of the Bronze Dragonflight",
-    "Weakness Analyzer",
-    "Frozen Heart of the Mountain",
     "Sageblade",
     "Therazane's Touch",
     "Brilliant Wand"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0,
-    "previous": 0.9974653425614216,
-    "previous+trinkets": 1.000248258587404
+    "keep-sets-and-effects": 0.999922984629117,
+    "previous": 0.9847446323843023,
+    "previous+trinkets": 0.9863942479013875
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "previous+trinkets": 1.0029979618433673
+    "all-slots": 1.0163244458125427
    },
    "weights": {
-    "StatArcaneDamage": 0.0461,
-    "StatCritRating": 0.4337,
-    "StatFireDamage": 0.5057,
-    "StatFrostDamage": 0.0027,
-    "StatHasteRating": 0.2518,
-    "StatHitRating": 0.7702,
-    "StatIntellect": 0.3793,
-    "StatSpellDamage": 0.5544,
-    "StatSpellPiercing": 1.0757,
-    "StatSpirit": 0.4401
+    "StatArcaneDamage": 0.0309,
+    "StatCritRating": 0.5659,
+    "StatFireDamage": 0.5838,
+    "StatHasteRating": 0.4968,
+    "StatHitRating": 0.9745,
+    "StatIntellect": 0.2624,
+    "StatSpellDamage": 0.6147,
+    "StatSpellPiercing": 1.2874,
+    "StatSpirit": 0.1441
+   },
+   "evaluated_on": [
+    "fire-raid: ml winner"
+   ],
+   "commit": "b90e2b958"
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "fire-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
+   "date": "2026-10-31",
+   "setting": "raid",
+   "chosen": "previous+trinkets",
+   "ilvl": 61.8,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Jewel of the Guard Captain"
+   ],
+   "names": [
+    "Spellpower Goggles Xtreme Plus",
+    "Orb of the Darkmoon",
+    "Mantle of the Timbermaw",
+    "Hide of the Wild",
+    "Robe of the Archmage",
+    "Rockfury Bracers",
+    "Inferno Gloves",
+    "Belt of the Archmage",
+    "Cindercloth Pants",
+    "Sorcerer's Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Warden's Signet of Brilliance",
+    "Weakness Analyzer",
+    "Jewel of the Guard Captain",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9950368138423079,
+    "previous": 0.9908809747207066,
+    "previous+trinkets": 1.0004397943174361
+   },
+   "confirm_seed2": {
+    "previous": 1.0,
+    "previous+trinkets": 1.008699972909382
+   },
+   "weights": {
+    "StatArcaneDamage": 0.0322,
+    "StatCritRating": 0.5947,
+    "StatFireDamage": 0.5942,
+    "StatHasteRating": 0.6853,
+    "StatHitRating": 1.0649,
+    "StatIntellect": 0.1136,
+    "StatSpellDamage": 0.6264,
+    "StatSpellPiercing": 1.2279,
+    "StatSpirit": -0.029
    },
    "evaluated_on": [
     "fire-raid: ml winner (bis)"
    ],
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
  "search": {
@@ -653,14 +653,15 @@
    "simulated_fights": 5106000,
    "minutes": 3.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "30f67f5d2",
+   "sig_start": "2026-10-31: the stored winner is not legal on the current talent trees; the final step starts from the fire-raid open-search winner (mage.json)"
   },
   "bis-dummy": {
    "class": "mage",
    "spec": "Fire",
    "setting": "dummy",
    "entry": "fire-raid",
-   "date": "2026-10-24",
+   "date": "2026-10-31",
    "constraint": "Fire 30+",
    "protected": [
     "Heating Up",
@@ -675,12 +676,12 @@
     "allocation": {
      "Arcane": [
       [
-       "Arcane Focus",
-       4
+       "Wand Specialization",
+       2
       ],
       [
-       "Missile Barrage",
-       2
+       "Arcane Resilience",
+       3
       ],
       [
        "Arcane Subtlety",
@@ -691,8 +692,8 @@
        5
       ],
       [
-       "Arcane Geometry",
-       1
+       "Missile Barrage",
+       2
       ],
       [
        "Arcane Impact",
@@ -700,20 +701,16 @@
       ],
       [
        "Arcane Meditation",
-       2
+       3
       ]
      ],
      "Fire": [
       [
-       "Improved Fire Blast",
-       2
-      ],
-      [
        "Incineration",
-       2
+       5
       ],
       [
-       "Improved Fireball",
+       "Accelerant",
        5
       ],
       [
@@ -722,6 +719,10 @@
       ],
       [
        "Pyroblast",
+       1
+      ],
+      [
+       "Improved Fire Blast",
        1
       ],
       [
@@ -738,7 +739,475 @@
       ],
       [
        "Critical Mass",
+       3
+      ],
+      [
+       "Fire Power",
+       3
+      ]
+     ],
+     "Frost": [
+      [
+       "Precision",
+       3
+      ]
+     ]
+    },
+    "split": "18/30/3",
+    "dps": 574.72,
+    "se": 0.1328,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "17/31/3",
+    "dps": 574.1,
+    "se": 0.1376,
+    "differs": [
+     [
+      "Arcane Meditation",
+      2
+     ],
+     [
+      "Arcane Meditation",
+      3
+     ],
+     [
+      "Combustion",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0011,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Resilience",
+        3
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Impact",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        5
+       ],
+       [
+        "Accelerant",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        3
+       ]
+      ],
+      "Frost": [
+       [
+        "Precision",
+        3
+       ]
+      ]
+     },
+     "split": "18/30/3",
+     "dps": 574.72,
+     "se": 0.1328
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Resilience",
+        3
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Impact",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        5
+       ],
+       [
+        "Accelerant",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
+        1
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        3
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Precision",
+        3
+       ]
+      ]
+     },
+     "split": "17/31/3",
+     "dps": 574.1,
+     "se": 0.1376
+    }
+   ],
+   "runs": [
+    {
+     "entry": "fire-raid",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 575.17,
+     "best_split": "17/31/3",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 575.17
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 575.17,
+       "predicted_top": 566.36
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 575.17,
+       "predicted_top": 573.09
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 575.17,
+       "predicted_top": 574.55
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 575.17,
+       "predicted_top": 574.93
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      574.91,
+      574.91,
+      574.91,
+      574.91,
+      574.91,
+      574.91
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      574.08,
+      574.08,
+      574.08,
+      574.08,
+      574.08
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      574.1,
+      574.1
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      574.72,
+      574.1
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 242,
+     "best_gap": 0.0014,
+     "best_move": "1 Combustion -> Arcane Meditation",
+     "raced": [
+      "1 Combustion -> Arcane Meditation"
+     ],
+     "confirmed_gap": 0.0013
+    },
+    {
+     "neighbours": 233,
+     "best_gap": 0.0015,
+     "best_move": "1 Arcane Impact -> Magic Absorption",
+     "raced": [
+      "1 Arcane Impact -> Magic Absorption"
+     ],
+     "confirmed_gap": -0.0004
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Scorch",
+     "importance": 0.5189
+    },
+    {
+     "feature": "Arcane Concentration",
+     "importance": 0.2184
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0929
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.036
+    },
+    {
+     "feature": "Impact",
+     "importance": 0.0249
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Flame Throwing",
+     "importance": 0.0099
+    },
+    {
+     "feature": "Precision",
+     "importance": 0.0094
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0088
+    },
+    {
+     "feature": "Burning Soul",
+     "importance": 0.0075
+    },
+    {
+     "feature": "Fire Power",
+     "importance": 0.0067
+    }
+   ],
+   "simulated_builds": 1692,
+   "signature_check": {
+    "spec": "Fire",
+    "ok": true,
+    "core_share": 0.9439,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3258000,
+   "minutes": 6.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "bis-raid": {
+   "class": "mage",
+   "spec": "Fire",
+   "setting": "raid",
+   "entry": "fire-raid",
+   "date": "2026-10-31",
+   "constraint": "Fire 30+",
+   "protected": [
+    "Heating Up",
+    "Missile Barrage",
+    "Pyroblast"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "fire-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Arcane Resilience",
+       3
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
        5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Impact",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       2
+      ]
+     ],
+     "Fire": [
+      [
+       "Incineration",
+       5
+      ],
+      [
+       "Accelerant",
+       5
+      ],
+      [
+       "Ignite",
+       5
+      ],
+      [
+       "Pyroblast",
+       1
+      ],
+      [
+       "Improved Fire Blast",
+       2
+      ],
+      [
+       "Improved Scorch",
+       2
+      ],
+      [
+       "Heating Up",
+       1
+      ],
+      [
+       "Master of Elements",
+       3
+      ],
+      [
+       "Critical Mass",
+       3
       ],
       [
        "Fire Power",
@@ -751,28 +1220,510 @@
      ],
      "Frost": [
       [
-       "Elemental Precision",
+       "Precision",
        3
       ]
      ]
     },
     "split": "17/31/3",
-    "dps": 686.54,
-    "se": 0.1527,
+    "dps": 818.92,
+    "se": 0.176,
     "iterations": 100000
    },
    "runner_up": {
     "split": "17/31/3",
-    "dps": 686.54,
-    "se": 0.1527,
+    "dps": 817.53,
+    "se": 0.1715,
     "differs": [
      [
-      "Arcane Blast",
-      1
+      "Accelerant",
+      4
      ],
      [
-      "Arcane Geometry",
-      1
+      "Accelerant",
+      5
+     ],
+     [
+      "Improved Scorch",
+      2
+     ],
+     [
+      "Improved Scorch",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0017,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Resilience",
+        3
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Impact",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        5
+       ],
+       [
+        "Accelerant",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
+        2
+       ],
+       [
+        "Improved Scorch",
+        2
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        3
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Precision",
+        3
+       ]
+      ]
+     },
+     "split": "17/31/3",
+     "dps": 818.92,
+     "se": 0.176
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Resilience",
+        3
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Missile Barrage",
+        2
+       ],
+       [
+        "Arcane Impact",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        2
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        5
+       ],
+       [
+        "Accelerant",
+        4
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
+        2
+       ],
+       [
+        "Improved Scorch",
+        3
+       ],
+       [
+        "Heating Up",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Fire Power",
+        3
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Precision",
+        3
+       ]
+      ]
+     },
+     "split": "17/31/3",
+     "dps": 817.53,
+     "se": 0.1715
+    }
+   ],
+   "runs": [
+    {
+     "entry": "fire-raid",
+     "run": 1,
+     "simulated": 1397,
+     "best_screen": 820.89,
+     "best_split": "17/31/3",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 818.96
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 820.89,
+       "predicted_top": 812.22
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 820.89,
+       "predicted_top": 817.9
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 820.89,
+       "predicted_top": 820.19
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 820.89,
+       "predicted_top": 820.56
+      },
+      {
+       "round": 5,
+       "simulated": 1397,
+       "best": 820.89,
+       "predicted_top": 820.48
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      817.2,
+      817.2,
+      817.2,
+      817.2,
+      817.2,
+      817.2
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      817.74,
+      817.74,
+      817.74,
+      817.74,
+      817.74
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      817.53,
+      817.53
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      818.92,
+      817.53
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 247,
+     "best_gap": 0.0019,
+     "best_move": "1 Improved Scorch -> Accelerant",
+     "raced": [
+      "1 Improved Scorch -> Accelerant"
+     ],
+     "confirmed_gap": 0.0024
+    },
+    {
+     "neighbours": 244,
+     "best_gap": 0.0,
+     "best_move": "3 Arcane Resilience -> Improved Channeling"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Scorch",
+     "importance": 0.4327
+    },
+    {
+     "feature": "Arcane Concentration",
+     "importance": 0.2733
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0963
+    },
+    {
+     "feature": "Flame Throwing",
+     "importance": 0.0622
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.0224
+    },
+    {
+     "feature": "Impact",
+     "importance": 0.0183
+    },
+    {
+     "feature": "Fire Power",
+     "importance": 0.0156
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0126
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.0089
+    },
+    {
+     "feature": "Precision",
+     "importance": 0.0088
+    },
+    {
+     "feature": "Burning Soul",
+     "importance": 0.0049
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0042
+    }
+   ],
+   "simulated_builds": 1906,
+   "signature_check": {
+    "spec": "Fire",
+    "ok": true,
+    "core_share": 0.9428,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3446000,
+   "minutes": 8.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
+   "commit": "b90e2b958"
+  },
+  "prebis-dummy": {
+   "class": "mage",
+   "spec": "Fire",
+   "setting": "dummy",
+   "entry": "fire-raid",
+   "date": "2026-10-31",
+   "constraint": "Fire 30+",
+   "protected": [
+    "Heating Up",
+    "Missile Barrage",
+    "Pyroblast"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "fire-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Arcane Resilience",
+       3
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Magic Absorption",
+       1
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Missile Barrage",
+       2
+      ],
+      [
+       "Arcane Meditation",
+       3
+      ]
+     ],
+     "Fire": [
+      [
+       "Incineration",
+       5
+      ],
+      [
+       "Accelerant",
+       5
+      ],
+      [
+       "Ignite",
+       5
+      ],
+      [
+       "Pyroblast",
+       1
+      ],
+      [
+       "Improved Fire Blast",
+       1
+      ],
+      [
+       "Improved Scorch",
+       3
+      ],
+      [
+       "Heating Up",
+       1
+      ],
+      [
+       "Master of Elements",
+       3
+      ],
+      [
+       "Critical Mass",
+       3
+      ],
+      [
+       "Fire Power",
+       3
+      ]
+     ],
+     "Frost": [
+      [
+       "Precision",
+       3
+      ]
+     ]
+    },
+    "split": "18/30/3",
+    "dps": 556.5,
+    "se": 0.128,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "18/30/3",
+    "dps": 556.5,
+    "se": 0.128,
+    "differs": [
+     [
+      "Arcane Resilience",
+      3
+     ],
+     [
+      "Improved Channeling",
+      5
+     ],
+     [
+      "Wand Specialization",
+      2
      ]
     ]
    },
@@ -782,45 +1733,41 @@
      "allocation": {
       "Arcane": [
        [
-        "Arcane Focus",
-        4
+        "Wand Specialization",
+        2
        ],
        [
-        "Missile Barrage",
-        2
+        "Arcane Resilience",
+        3
        ],
        [
         "Arcane Subtlety",
         2
        ],
        [
+        "Magic Absorption",
+        1
+       ],
+       [
         "Arcane Concentration",
         5
        ],
        [
-        "Arcane Geometry",
-        1
-       ],
-       [
-        "Arcane Impact",
-        1
+        "Missile Barrage",
+        2
        ],
        [
         "Arcane Meditation",
-        2
+        3
        ]
       ],
       "Fire": [
        [
-        "Improved Fire Blast",
-        2
-       ],
-       [
         "Incineration",
-        2
+        5
        ],
        [
-        "Improved Fireball",
+        "Accelerant",
         5
        ],
        [
@@ -829,6 +1776,10 @@
        ],
        [
         "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
         1
        ],
        [
@@ -845,71 +1796,59 @@
        ],
        [
         "Critical Mass",
-        5
+        3
        ],
        [
         "Fire Power",
         3
-       ],
-       [
-        "Combustion",
-        1
        ]
       ],
       "Frost": [
        [
-        "Elemental Precision",
+        "Precision",
         3
        ]
       ]
      },
-     "split": "17/31/3",
-     "dps": 686.54,
-     "se": 0.1527
+     "split": "18/30/3",
+     "dps": 556.5,
+     "se": 0.128
     },
     {
      "allocation": {
       "Arcane": [
        [
-        "Arcane Focus",
-        4
-       ],
-       [
-        "Missile Barrage",
-        2
+        "Improved Channeling",
+        5
        ],
        [
         "Arcane Subtlety",
         2
        ],
        [
+        "Magic Absorption",
+        1
+       ],
+       [
         "Arcane Concentration",
         5
        ],
        [
-        "Arcane Impact",
-        1
-       ],
-       [
-        "Arcane Blast",
-        1
+        "Missile Barrage",
+        2
        ],
        [
         "Arcane Meditation",
-        2
+        3
        ]
       ],
       "Fire": [
        [
-        "Improved Fire Blast",
-        2
-       ],
-       [
         "Incineration",
-        2
+        5
        ],
        [
-        "Improved Fireball",
+        "Accelerant",
         5
        ],
        [
@@ -918,6 +1857,10 @@
        ],
        [
         "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Blast",
         1
        ],
        [
@@ -934,65 +1877,67 @@
        ],
        [
         "Critical Mass",
-        5
+        3
        ],
        [
         "Fire Power",
         3
-       ],
-       [
-        "Combustion",
-        1
        ]
       ],
       "Frost": [
        [
-        "Elemental Precision",
+        "Precision",
         3
        ]
       ]
      },
-     "split": "17/31/3",
-     "dps": 686.54,
-     "se": 0.1527
+     "split": "18/30/3",
+     "dps": 556.5,
+     "se": 0.128
     }
    ],
    "runs": [
     {
      "entry": "fire-raid",
      "run": 1,
-     "simulated": 1188,
-     "best_screen": 687.17,
-     "best_split": "17/31/3",
+     "simulated": 1398,
+     "best_screen": 557.48,
+     "best_split": "18/30/3",
      "trace": [
       {
        "round": 0,
-       "simulated": 388,
-       "best": 685.83
+       "simulated": 398,
+       "best": 556.81
       },
       {
        "round": 1,
-       "simulated": 588,
-       "best": 686.38,
-       "predicted_top": 675.51
+       "simulated": 598,
+       "best": 557.48,
+       "predicted_top": 548.78
       },
       {
        "round": 2,
-       "simulated": 788,
-       "best": 686.68,
-       "predicted_top": 683.64
+       "simulated": 798,
+       "best": 557.48,
+       "predicted_top": 553.64
       },
       {
        "round": 3,
-       "simulated": 988,
-       "best": 686.68,
-       "predicted_top": 685.55
+       "simulated": 998,
+       "best": 557.48,
+       "predicted_top": 555.51
       },
       {
        "round": 4,
-       "simulated": 1188,
-       "best": 687.17,
-       "predicted_top": 686.27
+       "simulated": 1198,
+       "best": 557.48,
+       "predicted_top": 556.44
+      },
+      {
+       "round": 5,
+       "simulated": 1398,
+       "best": 557.48,
+       "predicted_top": 556.58
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1005,1007 +1950,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      685.85,
-      685.85,
-      685.85,
-      685.85,
-      685.55,
-      685.55
+      556.33,
+      556.33,
+      556.33,
+      556.33,
+      556.33,
+      556.33
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      686.64,
-      686.64,
-      686.64,
-      686.64,
-      686.63
+      556.08,
+      556.08,
+      556.08,
+      556.08,
+      556.08
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      686.54,
-      686.54
+      556.5,
+      556.5
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 287,
-     "best_gap": 0.0009,
-     "best_move": "1 Arcane Geometry -> Arcane Focus"
+     "neighbours": 230,
+     "best_gap": 0.0,
+     "best_move": "3 Arcane Resilience -> Improved Channeling"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Improved Scorch",
-     "importance": 0.5309
+     "importance": 0.613
     },
     {
      "feature": "Arcane Concentration",
-     "importance": 0.1642
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.047
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.0431
+     "importance": 0.1553
     },
     {
      "feature": "Arcane Meditation",
-     "importance": 0.0379
+     "importance": 0.0719
     },
     {
-     "feature": "Critical Mass",
-     "importance": 0.0363
+     "feature": "Arcane points",
+     "importance": 0.0395
+    },
+    {
+     "feature": "Impact",
+     "importance": 0.0171
     },
     {
      "feature": "Flame Throwing",
-     "importance": 0.0257
-    },
-    {
-     "feature": "Improved Flamestrike",
-     "importance": 0.0212
-    },
-    {
-     "feature": "Improved Frostbolt",
-     "importance": 0.0138
-    },
-    {
-     "feature": "Combustion",
-     "importance": 0.011
-    },
-    {
-     "feature": "Burning Soul",
-     "importance": 0.0105
+     "importance": 0.0155
     },
     {
      "feature": "Frost points",
-     "importance": 0.0089
-    }
-   ],
-   "simulated_builds": 1489,
-   "signature_check": {
-    "spec": "Fire",
-    "ok": true,
-    "core_share": 0.8966,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2462000,
-   "minutes": 7.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "bis-raid": {
-   "class": "mage",
-   "spec": "Fire",
-   "setting": "raid",
-   "entry": "fire-raid",
-   "date": "2026-10-24",
-   "constraint": "Fire 30+",
-   "protected": [
-    "Heating Up",
-    "Missile Barrage",
-    "Pyroblast"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "fire-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       5
-      ],
-      [
-       "Missile Barrage",
-       2
-      ],
-      [
-       "Arcane Subtlety",
-       2
-      ],
-      [
-       "Arcane Concentration",
-       5
-      ],
-      [
-       "Arcane Impact",
-       1
-      ],
-      [
-       "Arcane Meditation",
-       2
-      ]
-     ],
-     "Fire": [
-      [
-       "Improved Fire Blast",
-       2
-      ],
-      [
-       "Incineration",
-       3
-      ],
-      [
-       "Improved Fireball",
-       5
-      ],
-      [
-       "Ignite",
-       5
-      ],
-      [
-       "Pyroblast",
-       1
-      ],
-      [
-       "Improved Scorch",
-       3
-      ],
-      [
-       "Heating Up",
-       1
-      ],
-      [
-       "Master of Elements",
-       2
-      ],
-      [
-       "Critical Mass",
-       5
-      ],
-      [
-       "Fire Power",
-       3
-      ],
-      [
-       "Combustion",
-       1
-      ]
-     ],
-     "Frost": [
-      [
-       "Elemental Precision",
-       3
-      ]
-     ]
-    },
-    "split": "17/31/3",
-    "dps": 857.16,
-    "se": 0.1552,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "16/32/3",
-    "dps": 856.58,
-    "se": 0.1565,
-    "differs": [
-     [
-      "Arcane Meditation",
-      1
-     ],
-     [
-      "Arcane Meditation",
-      2
-     ],
-     [
-      "Master of Elements",
-      2
-     ],
-     [
-      "Master of Elements",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0007,
-   "finalists": [
-    {
-     "allocation": {
-      "Arcane": [
-       [
-        "Arcane Focus",
-        5
-       ],
-       [
-        "Missile Barrage",
-        2
-       ],
-       [
-        "Arcane Subtlety",
-        2
-       ],
-       [
-        "Arcane Concentration",
-        5
-       ],
-       [
-        "Arcane Impact",
-        1
-       ],
-       [
-        "Arcane Meditation",
-        2
-       ]
-      ],
-      "Fire": [
-       [
-        "Improved Fire Blast",
-        2
-       ],
-       [
-        "Incineration",
-        3
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        2
-       ],
-       [
-        "Critical Mass",
-        5
-       ],
-       [
-        "Fire Power",
-        3
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Elemental Precision",
-        3
-       ]
-      ]
-     },
-     "split": "17/31/3",
-     "dps": 857.16,
-     "se": 0.1552
-    },
-    {
-     "allocation": {
-      "Arcane": [
-       [
-        "Arcane Focus",
-        5
-       ],
-       [
-        "Missile Barrage",
-        2
-       ],
-       [
-        "Arcane Subtlety",
-        2
-       ],
-       [
-        "Arcane Concentration",
-        5
-       ],
-       [
-        "Arcane Impact",
-        1
-       ],
-       [
-        "Arcane Meditation",
-        1
-       ]
-      ],
-      "Fire": [
-       [
-        "Improved Fire Blast",
-        2
-       ],
-       [
-        "Incineration",
-        3
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        3
-       ],
-       [
-        "Critical Mass",
-        5
-       ],
-       [
-        "Fire Power",
-        3
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Elemental Precision",
-        3
-       ]
-      ]
-     },
-     "split": "16/32/3",
-     "dps": 856.58,
-     "se": 0.1565
-    }
-   ],
-   "runs": [
-    {
-     "entry": "fire-raid",
-     "run": 1,
-     "simulated": 1196,
-     "best_screen": 857.52,
-     "best_split": "16/32/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 396,
-       "best": 856.99
-      },
-      {
-       "round": 1,
-       "simulated": 596,
-       "best": 857.24,
-       "predicted_top": 853.34
-      },
-      {
-       "round": 2,
-       "simulated": 796,
-       "best": 857.52,
-       "predicted_top": 856.05
-      },
-      {
-       "round": 3,
-       "simulated": 996,
-       "best": 857.52,
-       "predicted_top": 856.81
-      },
-      {
-       "round": 4,
-       "simulated": 1196,
-       "best": 857.52,
-       "predicted_top": 856.65
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      857.1,
-      856.19,
-      855.64,
-      855.64,
-      855.64,
-      855.64
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      856.87,
-      855.98,
-      855.34,
-      855.34,
-      855.34
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      857.16,
-      856.58
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 271,
-     "best_gap": 0.0001,
-     "best_move": "2 Arcane Focus -> Arcane Impact"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Scorch",
-     "importance": 0.4308
-    },
-    {
-     "feature": "Arcane Concentration",
-     "importance": 0.1816
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.0646
-    },
-    {
-     "feature": "Critical Mass",
-     "importance": 0.0531
-    },
-    {
-     "feature": "Combustion",
-     "importance": 0.04
-    },
-    {
-     "feature": "Burning Soul",
-     "importance": 0.0362
+     "importance": 0.0143
     },
     {
      "feature": "Improved Flamestrike",
-     "importance": 0.0358
+     "importance": 0.0123
     },
     {
-     "feature": "Flame Throwing",
-     "importance": 0.0254
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.022
+     "feature": "Precision",
+     "importance": 0.0069
     },
     {
      "feature": "Fire Power",
-     "importance": 0.0157
-    },
-    {
-     "feature": "Arcane Subtlety",
-     "importance": 0.0106
-    },
-    {
-     "feature": "Elemental Precision",
-     "importance": 0.0096
-    }
-   ],
-   "simulated_builds": 1481,
-   "signature_check": {
-    "spec": "Fire",
-    "ok": true,
-    "core_share": 0.92,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2422000,
-   "minutes": 8.1,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
-   "commit": "30f67f5d2"
-  },
-  "prebis-dummy": {
-   "class": "mage",
-   "spec": "Fire",
-   "setting": "dummy",
-   "entry": "fire-raid",
-   "date": "2026-10-24",
-   "constraint": "Fire 30+",
-   "protected": [
-    "Heating Up",
-    "Missile Barrage",
-    "Pyroblast"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "fire-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       5
-      ],
-      [
-       "Missile Barrage",
-       2
-      ],
-      [
-       "Arcane Subtlety",
-       2
-      ],
-      [
-       "Arcane Concentration",
-       5
-      ],
-      [
-       "Arcane Impact",
-       1
-      ],
-      [
-       "Arcane Meditation",
-       2
-      ]
-     ],
-     "Fire": [
-      [
-       "Improved Fire Blast",
-       2
-      ],
-      [
-       "Incineration",
-       2
-      ],
-      [
-       "Improved Fireball",
-       5
-      ],
-      [
-       "Ignite",
-       5
-      ],
-      [
-       "Pyroblast",
-       1
-      ],
-      [
-       "Improved Scorch",
-       3
-      ],
-      [
-       "Heating Up",
-       1
-      ],
-      [
-       "Master of Elements",
-       3
-      ],
-      [
-       "Critical Mass",
-       5
-      ],
-      [
-       "Fire Power",
-       3
-      ],
-      [
-       "Combustion",
-       1
-      ]
-     ],
-     "Frost": [
-      [
-       "Elemental Precision",
-       3
-      ]
-     ]
-    },
-    "split": "17/31/3",
-    "dps": 672.63,
-    "se": 0.1459,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "17/31/3",
-    "dps": 672.36,
-    "se": 0.1458,
-    "differs": [
-     [
-      "Arcane Focus",
-      4
-     ],
-     [
-      "Arcane Focus",
-      5
-     ],
-     [
-      "Arcane Impact",
-      1
-     ],
-     [
-      "Arcane Impact",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0004,
-   "finalists": [
-    {
-     "allocation": {
-      "Arcane": [
-       [
-        "Arcane Focus",
-        5
-       ],
-       [
-        "Missile Barrage",
-        2
-       ],
-       [
-        "Arcane Subtlety",
-        2
-       ],
-       [
-        "Arcane Concentration",
-        5
-       ],
-       [
-        "Arcane Impact",
-        1
-       ],
-       [
-        "Arcane Meditation",
-        2
-       ]
-      ],
-      "Fire": [
-       [
-        "Improved Fire Blast",
-        2
-       ],
-       [
-        "Incineration",
-        2
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        3
-       ],
-       [
-        "Critical Mass",
-        5
-       ],
-       [
-        "Fire Power",
-        3
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Elemental Precision",
-        3
-       ]
-      ]
-     },
-     "split": "17/31/3",
-     "dps": 672.63,
-     "se": 0.1459
-    },
-    {
-     "allocation": {
-      "Arcane": [
-       [
-        "Arcane Focus",
-        4
-       ],
-       [
-        "Missile Barrage",
-        2
-       ],
-       [
-        "Arcane Subtlety",
-        2
-       ],
-       [
-        "Arcane Concentration",
-        5
-       ],
-       [
-        "Arcane Impact",
-        2
-       ],
-       [
-        "Arcane Meditation",
-        2
-       ]
-      ],
-      "Fire": [
-       [
-        "Improved Fire Blast",
-        2
-       ],
-       [
-        "Incineration",
-        2
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        3
-       ],
-       [
-        "Critical Mass",
-        5
-       ],
-       [
-        "Fire Power",
-        3
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Elemental Precision",
-        3
-       ]
-      ]
-     },
-     "split": "17/31/3",
-     "dps": 672.36,
-     "se": 0.1458
-    }
-   ],
-   "runs": [
-    {
-     "entry": "fire-raid",
-     "run": 1,
-     "simulated": 1196,
-     "best_screen": 673.62,
-     "best_split": "17/31/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 396,
-       "best": 672.83
-      },
-      {
-       "round": 1,
-       "simulated": 596,
-       "best": 673.09,
-       "predicted_top": 665.98
-      },
-      {
-       "round": 2,
-       "simulated": 796,
-       "best": 673.62,
-       "predicted_top": 671.12
-      },
-      {
-       "round": 3,
-       "simulated": 996,
-       "best": 673.62,
-       "predicted_top": 672.2
-      },
-      {
-       "round": 4,
-       "simulated": 1196,
-       "best": 673.62,
-       "predicted_top": 672.51
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      672.5,
-      672.5,
-      671.95,
-      671.95,
-      671.95,
-      671.95
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      672.59,
-      672.29,
-      672.07,
-      672.07,
-      672.07
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      672.63,
-      672.36
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 263,
-     "best_gap": -0.0004,
-     "best_move": "1 Arcane Focus -> Arcane Impact"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Scorch",
-     "importance": 0.4691
-    },
-    {
-     "feature": "Arcane Concentration",
-     "importance": 0.2305
-    },
-    {
-     "feature": "Arcane Meditation",
-     "importance": 0.0712
+     "importance": 0.0064
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.0494
-    },
-    {
-     "feature": "Flame Throwing",
-     "importance": 0.0409
-    },
-    {
-     "feature": "Combustion",
-     "importance": 0.0292
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.0223
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.0182
-    },
-    {
-     "feature": "Fire Power",
-     "importance": 0.0084
+     "importance": 0.0064
     },
     {
      "feature": "Fire points",
-     "importance": 0.0076
-    },
-    {
-     "feature": "Improved Flamestrike",
-     "importance": 0.0062
-    },
-    {
-     "feature": "Elemental Precision",
-     "importance": 0.006
+     "importance": 0.0044
     }
    ],
-   "simulated_builds": 1473,
+   "simulated_builds": 1642,
    "signature_check": {
     "spec": "Fire",
     "ok": true,
-    "core_share": 0.8968,
+    "core_share": 0.9444,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2398000,
-   "minutes": 6.6,
+   "simulated_fights": 2501000,
+   "minutes": 6.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   },
   "prebis-raid": {
    "class": "mage",
    "spec": "Fire",
    "setting": "raid",
    "entry": "fire-raid",
-   "date": "2026-10-24",
+   "date": "2026-10-31",
    "constraint": "Fire 30+",
    "protected": [
     "Heating Up",
@@ -2020,12 +2071,12 @@
     "allocation": {
      "Arcane": [
       [
-       "Arcane Focus",
-       5
+       "Wand Specialization",
+       2
       ],
       [
-       "Missile Barrage",
-       2
+       "Arcane Resilience",
+       3
       ],
       [
        "Arcane Subtlety",
@@ -2034,6 +2085,10 @@
       [
        "Arcane Concentration",
        5
+      ],
+      [
+       "Missile Barrage",
+       2
       ],
       [
        "Arcane Impact",
@@ -2046,15 +2101,11 @@
      ],
      "Fire": [
       [
-       "Improved Fire Blast",
-       2
-      ],
-      [
        "Incineration",
-       3
+       5
       ],
       [
-       "Improved Fireball",
+       "Accelerant",
        5
       ],
       [
@@ -2066,8 +2117,12 @@
        1
       ],
       [
+       "Improved Fire Blast",
+       2
+      ],
+      [
        "Improved Scorch",
-       3
+       2
       ],
       [
        "Heating Up",
@@ -2075,11 +2130,11 @@
       ],
       [
        "Master of Elements",
-       2
+       3
       ],
       [
        "Critical Mass",
-       5
+       3
       ],
       [
        "Fire Power",
@@ -2092,51 +2147,47 @@
      ],
      "Frost": [
       [
-       "Elemental Precision",
+       "Precision",
        3
       ]
      ]
     },
     "split": "17/31/3",
-    "dps": 836.56,
-    "se": 0.1479,
+    "dps": 790.83,
+    "se": 0.1679,
     "iterations": 100000
    },
    "runner_up": {
     "split": "17/31/3",
-    "dps": 836.45,
-    "se": 0.1476,
+    "dps": 790.83,
+    "se": 0.1679,
     "differs": [
      [
-      "Arcane Focus",
-      4
-     ],
-     [
-      "Arcane Focus",
-      5
-     ],
-     [
-      "Arcane Impact",
+      "Arcane Resilience",
       1
      ],
      [
-      "Arcane Impact",
+      "Arcane Resilience",
+      3
+     ],
+     [
+      "Improved Channeling",
       2
      ]
     ]
    },
-   "gap_to_runner_up": 0.0001,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
       "Arcane": [
        [
-        "Arcane Focus",
-        5
+        "Wand Specialization",
+        2
        ],
        [
-        "Missile Barrage",
-        2
+        "Arcane Resilience",
+        3
        ],
        [
         "Arcane Subtlety",
@@ -2145,6 +2196,10 @@
        [
         "Arcane Concentration",
         5
+       ],
+       [
+        "Missile Barrage",
+        2
        ],
        [
         "Arcane Impact",
@@ -2157,15 +2212,11 @@
       ],
       "Fire": [
        [
-        "Improved Fire Blast",
-        2
-       ],
-       [
         "Incineration",
-        3
+        5
        ],
        [
-        "Improved Fireball",
+        "Accelerant",
         5
        ],
        [
@@ -2177,8 +2228,12 @@
         1
        ],
        [
+        "Improved Fire Blast",
+        2
+       ],
+       [
         "Improved Scorch",
-        3
+        2
        ],
        [
         "Heating Up",
@@ -2186,11 +2241,11 @@
        ],
        [
         "Master of Elements",
-        2
+        3
        ],
        [
         "Critical Mass",
-        5
+        3
        ],
        [
         "Fire Power",
@@ -2203,25 +2258,29 @@
       ],
       "Frost": [
        [
-        "Elemental Precision",
+        "Precision",
         3
        ]
       ]
      },
      "split": "17/31/3",
-     "dps": 836.56,
-     "se": 0.1479
+     "dps": 790.83,
+     "se": 0.1679
     },
     {
      "allocation": {
       "Arcane": [
        [
-        "Arcane Focus",
-        4
+        "Wand Specialization",
+        2
        ],
        [
-        "Missile Barrage",
+        "Improved Channeling",
         2
+       ],
+       [
+        "Arcane Resilience",
+        1
        ],
        [
         "Arcane Subtlety",
@@ -2232,8 +2291,12 @@
         5
        ],
        [
-        "Arcane Impact",
+        "Missile Barrage",
         2
+       ],
+       [
+        "Arcane Impact",
+        1
        ],
        [
         "Arcane Meditation",
@@ -2242,15 +2305,11 @@
       ],
       "Fire": [
        [
-        "Improved Fire Blast",
-        2
-       ],
-       [
         "Incineration",
-        3
+        5
        ],
        [
-        "Improved Fireball",
+        "Accelerant",
         5
        ],
        [
@@ -2262,8 +2321,12 @@
         1
        ],
        [
+        "Improved Fire Blast",
+        2
+       ],
+       [
         "Improved Scorch",
-        3
+        2
        ],
        [
         "Heating Up",
@@ -2271,11 +2334,11 @@
        ],
        [
         "Master of Elements",
-        2
+        3
        ],
        [
         "Critical Mass",
-        5
+        3
        ],
        [
         "Fire Power",
@@ -2288,52 +2351,52 @@
       ],
       "Frost": [
        [
-        "Elemental Precision",
+        "Precision",
         3
        ]
       ]
      },
      "split": "17/31/3",
-     "dps": 836.45,
-     "se": 0.1476
+     "dps": 790.83,
+     "se": 0.1679
     }
    ],
    "runs": [
     {
      "entry": "fire-raid",
      "run": 1,
-     "simulated": 1187,
-     "best_screen": 838.38,
+     "simulated": 1190,
+     "best_screen": 791.52,
      "best_split": "17/31/3",
      "trace": [
       {
        "round": 0,
-       "simulated": 387,
-       "best": 838.09
+       "simulated": 390,
+       "best": 791.52
       },
       {
        "round": 1,
-       "simulated": 587,
-       "best": 838.09,
-       "predicted_top": 832.71
+       "simulated": 590,
+       "best": 791.52,
+       "predicted_top": 785.17
       },
       {
        "round": 2,
-       "simulated": 787,
-       "best": 838.38,
-       "predicted_top": 836.84
+       "simulated": 790,
+       "best": 791.52,
+       "predicted_top": 788.51
       },
       {
        "round": 3,
-       "simulated": 987,
-       "best": 838.38,
-       "predicted_top": 837.4
+       "simulated": 990,
+       "best": 791.52,
+       "predicted_top": 790.71
       },
       {
        "round": 4,
-       "simulated": 1187,
-       "best": 838.38,
-       "predicted_top": 837.34
+       "simulated": 1190,
+       "best": 791.52,
+       "predicted_top": 791.28
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2346,109 +2409,109 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      835.78,
-      835.7,
-      835.45,
-      835.17,
-      835.17,
-      835.17
+      790.47,
+      790.47,
+      790.47,
+      790.47,
+      790.47,
+      790.47
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      836.56,
-      836.13,
-      835.95,
-      835.61,
-      835.61
+      790.42,
+      790.42,
+      790.42,
+      790.42,
+      790.42
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      836.56,
-      836.45
+      790.83,
+      790.83
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 271,
-     "best_gap": -0.0005,
-     "best_move": "1 Arcane Focus -> Arcane Impact"
+     "neighbours": 244,
+     "best_gap": 0.0,
+     "best_move": "3 Arcane Resilience -> Improved Channeling"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Improved Scorch",
-     "importance": 0.4466
+     "importance": 0.4233
     },
     {
      "feature": "Arcane Concentration",
-     "importance": 0.1785
-    },
-    {
-     "feature": "Critical Mass",
-     "importance": 0.1107
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.0527
-    },
-    {
-     "feature": "Flame Throwing",
-     "importance": 0.0394
-    },
-    {
-     "feature": "Combustion",
-     "importance": 0.0239
-    },
-    {
-     "feature": "Improved Flamestrike",
-     "importance": 0.0218
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.0188
-    },
-    {
-     "feature": "Fire Power",
-     "importance": 0.0146
+     "importance": 0.2588
     },
     {
      "feature": "Arcane Meditation",
-     "importance": 0.0107
+     "importance": 0.0995
     },
     {
-     "feature": "Elemental Precision",
-     "importance": 0.0105
+     "feature": "Flame Throwing",
+     "importance": 0.0501
     },
     {
-     "feature": "Fire points",
-     "importance": 0.0104
+     "feature": "Impact",
+     "importance": 0.0355
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.023
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0184
+    },
+    {
+     "feature": "Burning Soul",
+     "importance": 0.016
+    },
+    {
+     "feature": "Precision",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Fire Power",
+     "importance": 0.0087
+    },
+    {
+     "feature": "Arcane Subtlety",
+     "importance": 0.0087
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.0084
     }
    ],
-   "simulated_builds": 1472,
+   "simulated_builds": 1448,
    "signature_check": {
     "spec": "Fire",
     "ok": true,
-    "core_share": 0.9198,
+    "core_share": 0.9434,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2413000,
-   "minutes": 5.7,
+   "simulated_fights": 2335000,
+   "minutes": 7.3,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
-   "commit": "30f67f5d2"
+   "commit": "b90e2b958"
   }
  },
- "commit": "30f67f5d2",
+ "commit": "b90e2b958",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2461,169 +2524,17 @@
   "dps": {
    "winner": {
     "entry": "fire-raid",
-    "dps": 686.54,
-    "se": 0.153
+    "dps": 574.69,
+    "se": 0.132
    },
    "fire-raid": {
     "entry": "fire-raid",
-    "dps": 655.43,
-    "se": 0.168
+    "dps": 555.65,
+    "se": 0.142
    }
   },
   "best_hand": "fire-raid",
-  "gain_vs_hand": 0.0475,
-  "commit": "30f67f5d2"
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "fire-raid",
-    "dps": 857.48,
-    "se": 0.156
-   },
-   "fire-raid": {
-    "entry": "fire-raid",
-    "dps": 846.66,
-    "se": 0.167
-   },
-   "fire-open-raid": {
-    "entry": "fire-raid",
-    "dps": 856.94,
-    "se": 0.156
-   },
-   "opt-fire-raid-raid-dps": {
-    "entry": "fire-raid",
-    "dps": 816.13,
-    "se": 0.158
-   }
-  },
-  "best_hand": "fire-raid",
-  "gain_vs_hand": 0.0128
- },
- "signature_check": {
-  "spec": "Fire",
-  "ok": true,
-  "core_share": 0.9205,
-  "min_share": 0.6,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "fire-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 858.2,
-  "date": "2026-10-29",
-  "commit": "30f67f5d2",
-  "shares": {
-   "Fireball": 0.3328,
-   "Pyroblast": 0.2222,
-   "Fire Blast": 0.1924,
-   "Ignite": 0.1168,
-   "Arcane Missiles": 0.073,
-   "Scorch": 0.0564,
-   "Demonic Rune": 0.0065
-  },
-  "casts": {
-   "Pyroblast": 12.83,
-   "Scorch": 12.84,
-   "Fireball": 29.24,
-   "Fire Blast": 26.08,
-   "Arcane Missiles": 10.99,
-   "Combustion": 1.0
-  },
-  "allocation": {
-   "Arcane": [
-    [
-     "Arcane Focus",
-     5
-    ],
-    [
-     "Missile Barrage",
-     2
-    ],
-    [
-     "Arcane Subtlety",
-     2
-    ],
-    [
-     "Arcane Concentration",
-     5
-    ],
-    [
-     "Arcane Impact",
-     1
-    ],
-    [
-     "Arcane Meditation",
-     2
-    ]
-   ],
-   "Fire": [
-    [
-     "Improved Fire Blast",
-     2
-    ],
-    [
-     "Incineration",
-     3
-    ],
-    [
-     "Improved Fireball",
-     5
-    ],
-    [
-     "Ignite",
-     5
-    ],
-    [
-     "Pyroblast",
-     1
-    ],
-    [
-     "Improved Scorch",
-     3
-    ],
-    [
-     "Heating Up",
-     1
-    ],
-    [
-     "Master of Elements",
-     2
-    ],
-    [
-     "Critical Mass",
-     5
-    ],
-    [
-     "Fire Power",
-     3
-    ],
-    [
-     "Combustion",
-     1
-    ]
-   ],
-   "Frost": [
-    [
-     "Elemental Precision",
-     3
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-29",
-  "setting": "raid",
-  "why": "confirms fire-open-raid (+0.06% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "gain_vs_hand": 0.0343,
+  "commit": "b90e2b958"
  }
 }
