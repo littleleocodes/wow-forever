@@ -187,6 +187,15 @@
     "gain_seed2": 0.0031682728780209057,
     "candidates": 454,
     "pass": 8
+   },
+   {
+    "round": 8,
+    "pass": 9,
+    "date": "2026-10-31",
+    "change": "rotation replaced by the official simulator's default.apl.json at 54ceac638 (rotation-lag audit after the re-pin)",
+    "gain_seed1": null,
+    "gain_seed2": 0.007,
+    "candidates": 1
    }
   ],
   "final": {
@@ -242,6 +251,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

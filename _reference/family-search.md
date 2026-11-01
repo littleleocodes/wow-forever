@@ -15,12 +15,14 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [warrior](../warrior/research/raid/family-search.md) | arms-battle-raid | [34/17/0](https://talentsforever.com/warrior/60/02305213132514101-55050000002--7) | Arms | 795.9 | +0.0% |
 | [warlock](../warlock/research/raid/family-search.md) | sb-raid | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7) | Hybrid Affliction/Destruction | 794.8 | +0.6% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [17/31/3](https://talentsforever.com/mage/60/2032052010002-55500001220133031-003-7) | Fire | 787.7 | +3.3% |
-| [paladin](../paladin/research/raid/family-search.md) | ret-dps | [17/0/34](https://talentsforever.com/paladin/60/55003003001--05225331001330321-7) | Retribution | 784.7 | -0.0% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% |
+| [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% |
 | [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/32/10](https://talentsforever.com/druid/60/050022-55000032023012125001-055-7) | Feral Combat | 767.7 | +1.8% |
 | [warlock](../warlock/research/raid/family-search.md) | fire-destro-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.3 | +0.0% |
 | [warlock](../warlock/research/raid/family-search.md) | incinerate-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.2 | +7.0% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-7) | Hybrid Fire/Frost | 742.1 | +0.0% |
 | [shaman](../shaman/research/raid/family-search.md) | enhancement-dps | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030031005102251-03-7) | Enhancement | 733.5 | +1.5% |

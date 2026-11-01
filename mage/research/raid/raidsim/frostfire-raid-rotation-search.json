@@ -255,25 +255,19 @@
   "class": "mage",
   "spec": "frostfire-raid",
   "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "-5550200103011303-2335000301003002"
-   },
-   {
     "label": "frostfire-fingers-of-frost-raid",
-    "talents": "-3551000113013303-2135000301113002",
-    "protect_only": true
+    "talents": "-3551000113013303-2135000301113002"
    },
    {
     "label": "sim preset: FFB",
-    "talents": "-5550000123011303-2035010311013002",
-    "protect_only": true
+    "talents": "-5550000123011303-2035010311013002"
    },
    {
     "label": "frostfire-raid",
@@ -287,7 +281,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "frostfire-fingers-of-frost-raid",
+   "sim preset: FFB"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -547,54 +542,86 @@
     "gain_seed2": 0.004931957222156447,
     "candidates": 513,
     "pass": 18
+   },
+   {
+    "round": 33,
+    "pass": 19,
+    "date": "2026-10-31",
+    "change": "rotation replaced by the official simulator's ffb.apl.json at 54ceac638 (rotation-lag audit after the re-pin)",
+    "gain_seed1": null,
+    "gain_seed2": 0.02,
+    "candidates": 1
+   },
+   {
+    "round": 34,
+    "change": "insert at the top: cast Mana Citrine",
+    "gain_seed1": 0.011680870408550703,
+    "gain_seed2": 0.011336766057754577,
+    "candidates": 304,
+    "pass": 20
+   },
+   {
+    "round": 35,
+    "change": "threshold 5 -> 10: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch",
+    "gain_seed1": 0.002954756484346621,
+    "gain_seed2": 0.0023860520999023915,
+    "candidates": 311,
+    "pass": 20
+   },
+   {
+    "round": 36,
+    "change": "insert at the end: cast Scorch",
+    "gain_seed1": 0.0014684682718366648,
+    "gain_seed2": 0.0016244182299378629,
+    "candidates": 315,
+    "pass": 20
+   },
+   {
+    "round": 37,
+    "change": "only with 3s or more of the fight left: cast Frostfire Bolt",
+    "gain_seed1": 0.00190656019456803,
+    "gain_seed2": 0.0018706881023882183,
+    "candidates": 348,
+    "pass": 20
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 629.2694448762692,
-     "after": 731.8384919870499,
-     "base": 629.2694448762692,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.07102999999999977,
-     "oom_after": 1.9462399999993918
-    },
     "frostfire-fingers-of-frost-raid": {
      "before": 627.9958772657523,
-     "after": 729.9410887589023,
+     "after": 751.3466422546729,
      "base": 627.9958772657523,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.045632499999999916,
-     "oom_after": 0.09867750000000028
+     "oom_before": 0.2152549999999967,
+     "oom_after": 0.14109499999999936
     },
     "sim preset: FFB": {
      "before": 638.5694888830635,
-     "after": 733.2894451473887,
+     "after": 766.5592140851878,
      "base": 638.5694888830635,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.12603750000000014,
-     "oom_after": 9.111827499998535
+     "oom_before": 7.163220000000235,
+     "oom_after": 2.38550749999861
     },
     "frostfire-raid": {
      "before": 599.8922857015574,
-     "after": 680.5072944379094,
+     "after": 693.7848639016496,
      "base": 599.8922857015574,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0687374999999998,
-     "oom_after": 0.11367249999909977
+     "oom_before": 0.0563125,
+     "oom_after": 0.13859000000000002
     },
     "frostfire-ml-raid": {
      "before": 632.9600495419594,
-     "after": 741.5534828065349,
+     "after": 760.6358421991475,
      "base": 632.9600495419594,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.07991249999999973,
-     "oom_after": 0.6486824999998767
+     "oom_before": 1.0362675000004244,
+     "oom_after": 0.24682749999994916
     }
    }
   },
@@ -606,13 +633,13 @@
     "Frostfire Bolt"
    ],
    "rejected": {
-    "structure": 180,
-    "casts": 1,
-    "core_share": 27
+    "structure": 197,
+    "casts": 0,
+    "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 18
+  "passes": 20
  }
 }

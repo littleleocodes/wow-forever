@@ -424,6 +424,65 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 5631
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          },
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 5633
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          },
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 13442
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentRage": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "otherId": "OtherActionOffensivePotion"
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpGt",
       "lhs": {
@@ -613,7 +672,7 @@
       },
       "rhs": {
        "const": {
-        "val": "90"
+        "val": "45"
        }
       }
      }
@@ -623,7 +682,8 @@
       "spellId": 2687
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
   },
   {
    "hide": true,
@@ -686,16 +746,6 @@
     }
    },
    "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "itemId": 13442
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
   },
   {
    "action": {

@@ -1,0 +1,115 @@
+{
+ "raid": {
+  "class": "paladin",
+  "spec": "prot-tank",
+  "date": "2026-10-31",
+  "commit": "54ceac638",
+  "setting": "raid",
+  "tank": true,
+  "simulator_apl": "ui/specs/paladin/protection/apls/default.apl.json",
+  "start": "ui\\specs\\paladin\\protection\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "protection-ml-tank",
+    "talents": "-25300102403501531-50233200001"
+   },
+   {
+    "label": "sim preset: Default",
+    "talents": "050050002-05302102213301531-502"
+   },
+   {
+    "label": "prot-tank",
+    "talents": "-15310112513501031-50233300011",
+    "protect_only": true
+   },
+   {
+    "label": "opt-prot-tank-raid-tank",
+    "talents": "01-25300132503501031-50033310001",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "protection-ml-tank",
+   "sim preset: Default"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Lay on Hands",
+    "gain_seed1": 0.019875723052231287,
+    "gain_seed2": 0.01890933308195253,
+    "candidates": 275
+   },
+   {
+    "round": 2,
+    "change": "insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath",
+    "gain_seed1": 0.008243333193731495,
+    "gain_seed2": 0.00795536383568507,
+    "candidates": 284
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: if autoTimeSinceLast \u2265 0.1s and time to the next auto attack \u2265 0.1s and not Judgement is ready and time until Judgement is ready \u2264 (spellFullCooldown \u2212 inputDelay): cast Holy Strike",
+    "gain_seed1": 0.004434174557826243,
+    "gain_seed2": 0.006156063850411453,
+    "candidates": 305
+   }
+  ],
+  "final": {
+   "raid": {
+    "protection-ml-tank": {
+     "before": 473.06735129172455,
+     "after": 479.08430826522687,
+     "base": 473.06735129172455,
+     "before_value": 1.0,
+     "after_value": 1.032719431641464,
+     "oom_before": 0.0009875000002,
+     "oom_after": 9.34352565193339
+    },
+    "sim preset: Default": {
+     "before": 471.1242839058877,
+     "after": 480.86035535725614,
+     "base": 471.1242839058877,
+     "before_value": 1.0,
+     "after_value": 1.0347897464343636,
+     "oom_before": 0,
+     "oom_after": 2.5287554888539634
+    },
+    "prot-tank": {
+     "before": 450.42669739559886,
+     "after": 456.71323899016437,
+     "base": 450.42669739559886,
+     "before_value": 1.0,
+     "after_value": 1.0331630165076036,
+     "oom_before": 0.0006830000003000001,
+     "oom_after": 10.805625590149608
+    },
+    "opt-prot-tank-raid-tank": {
+     "before": 430.0086674707327,
+     "after": 433.08417151717356,
+     "base": 430.0086674707327,
+     "before_value": 1.0,
+     "after_value": 1.0328403225206622,
+     "oom_before": 0.013652110769450002,
+     "oom_after": 15.294712029329173
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Protection"
+   ],
+   "required": [
+    "Holy Shield"
+   ],
+   "rejected": {
+    "structure": 48,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  }
+ }
+}

@@ -147,30 +147,35 @@
  "raid": {
   "class": "warrior",
   "spec": "arms-battle-raid",
-  "date": "2026-10-27",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
   "start": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
   "builds": [
    {
-    "label": "arms-community-parse",
-    "talents": "30305213132515201-350501"
-   },
-   {
-    "label": "sim preset: Arms 39/12/0",
-    "talents": "32305213132515201-5502"
-   },
-   {
     "label": "arms-battle-raid",
-    "talents": "02305213132514101-55050000002",
+    "talents": "02305213132514101-55050000002"
+   },
+   {
+    "label": "sim preset: Arms",
+    "talents": "30325213132515201-0505-2"
+   },
+   {
+    "label": "arms-community-parse",
+    "talents": "30305213132515201-350501",
+    "protect_only": true
+   },
+   {
+    "label": "arms-ml-raid",
+    "talents": "04305213132515211-0505-2",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "arms-community-parse",
-   "sim preset: Arms 39/12/0"
+   "arms-battle-raid",
+   "sim preset: Arms"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -286,32 +291,65 @@
     "gain_seed2": 0.0030314694785684715,
     "candidates": 948,
     "pass": 4
+   },
+   {
+    "round": 15,
+    "change": "drop: cast Mighty Rage Potion",
+    "gain_seed1": 0.007285964162091929,
+    "gain_seed2": 0.007646761832358351,
+    "candidates": 995,
+    "pass": 5
+   },
+   {
+    "round": 16,
+    "change": "threshold 90 -> 45: if rage < 90: cast Bloodrage",
+    "gain_seed1": 0.004762916503164849,
+    "gain_seed2": 0.005601122333315889,
+    "candidates": 984,
+    "pass": 5
+   },
+   {
+    "round": 17,
+    "change": "insert in the middle: if (selectedPotion or selectedPotion or selectedPotion) and rage \u2264 15: cast OffensivePotion",
+    "gain_seed1": 0.0013965151115031826,
+    "gain_seed2": 0.0018252760895540732,
+    "candidates": 988,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "arms-community-parse": {
-     "before": 718.6682944632473,
-     "after": 792.237257531255,
-     "base": 718.6682944632473,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Arms 39/12/0": {
-     "before": 717.4105542829103,
-     "after": 787.8551686543082,
-     "base": 717.4105542829103,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "arms-battle-raid": {
-     "before": 723.4347196628169,
-     "after": 796.3363995872733,
-     "base": 723.4347196628169,
+     "before": 707.9082059921003,
+     "after": 778.3744816932143,
+     "base": 707.9082059921003,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Arms": {
+     "before": 706.5946754621153,
+     "after": 779.5852563423288,
+     "base": 706.5946754621153,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "arms-community-parse": {
+     "before": 704.1306382395752,
+     "after": 775.0364428005731,
+     "base": 704.1306382395752,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "arms-ml-raid": {
+     "before": 706.5946754621153,
+     "after": 779.9609040987132,
+     "base": 706.5946754621153,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -327,13 +365,13 @@
     "Mortal Strike"
    ],
    "rejected": {
-    "structure": 12,
+    "structure": 16,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-29",
-  "passes": 4
+  "passes": 5
  }
 }

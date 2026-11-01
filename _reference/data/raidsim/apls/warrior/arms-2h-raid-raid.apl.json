@@ -405,6 +405,57 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "isExecutePhase": {
+           "threshold": "E20"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentRage": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "90"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "talentIsKnown": {
+           "talentId": {
+            "spellId": 12862,
+            "rank": 1
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25286,
+      "tag": 1
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "or": {
       "vals": [
        {

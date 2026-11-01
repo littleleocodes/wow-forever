@@ -194,25 +194,19 @@
   "class": "mage",
   "spec": "fire-raid",
   "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "2032052010002-55500001130133031-003"
-   },
-   {
     "label": "fire-open-raid",
-    "talents": "1132152000002-35500101230133031-003",
-    "protect_only": true
+    "talents": "2032152000002-55500001220133031-003"
    },
    {
     "label": "sim preset: Fire",
-    "talents": "0502052001001-55500001230133031-003",
-    "protect_only": true
+    "talents": "0502052001001-55500001230133031-003"
    },
    {
     "label": "fire-raid",
@@ -226,7 +220,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "fire-open-raid",
+   "sim preset: Fire"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -454,54 +449,54 @@
     "gain_seed2": 0.004236953671214572,
     "candidates": 507,
     "pass": 10
+   },
+   {
+    "round": 29,
+    "pass": 11,
+    "date": "2026-10-31",
+    "change": "rotation replaced by the official simulator's deepFire.apl.json at 54ceac638 (rotation-lag audit after the re-pin)",
+    "gain_seed1": null,
+    "gain_seed2": 0.028,
+    "candidates": 1
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 672.8309951220776,
-     "after": 781.0134969802248,
-     "base": 672.8309951220776,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0005525,
-     "oom_after": 1.2940100000059642
-    },
     "fire-open-raid": {
-     "before": 669.5979869438144,
-     "after": 775.984119296274,
-     "base": 669.5979869438144,
+     "before": 667.0523532405111,
+     "after": 809.4481499854206,
+     "base": 667.0523532405111,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0034575,
-     "oom_after": 2.9766625000082527
+     "oom_before": 0,
+     "oom_after": 0
     },
     "sim preset: Fire": {
      "before": 673.8916206055268,
-     "after": 778.896478640347,
+     "after": 821.4209617629522,
      "base": 673.8916206055268,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.014892500000000005,
-     "oom_after": 7.565485000012003
+     "oom_before": 0.0010550000000000002,
+     "oom_after": 0.0010550000000000002
     },
     "fire-raid": {
      "before": 665.6584884192213,
-     "after": 762.9533495466449,
+     "after": 796.7318732154691,
      "base": 665.6584884192213,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.016540000000000006,
-     "oom_after": 7.872480000012579
+     "oom_before": 0.0016575,
+     "oom_after": 0.0016575
     },
     "opt-fire-raid-raid-dps": {
      "before": 655.9982536736899,
-     "after": 762.5230229417194,
+     "after": 792.4333705561438,
      "base": 655.9982536736899,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00011999999999999999,
-     "oom_after": 0.7559625000032529
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
@@ -514,13 +509,13 @@
     "Pyroblast"
    ],
    "rejected": {
-    "structure": 272,
+    "structure": 35,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 10
+  "passes": 12
  }
 }

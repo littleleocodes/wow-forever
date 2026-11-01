@@ -149,7 +149,7 @@
   "class": "hunter",
   "spec": "melee-dps",
   "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
@@ -158,10 +158,6 @@
    {
     "label": "melee-survival-raid",
     "talents": "5-005005001-500230230250222151"
-   },
-   {
-    "label": "sim preset: SV Melee",
-    "talents": "53200005021-005003-5502000300500221"
    },
    {
     "label": "opt-melee-dps-raid-dps",
@@ -180,8 +176,7 @@
    }
   ],
   "tuned_on": [
-   "melee-survival-raid",
-   "sim preset: SV Melee"
+   "melee-survival-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -233,50 +228,49 @@
     "gain_seed2": 0.0019685851049335845,
     "candidates": 271,
     "pass": 13
+   },
+   {
+    "round": 7,
+    "change": "only with 20s or more of the fight left: if mana % \u2265 60%: cast Explosive Trap",
+    "gain_seed1": 0.0016552312889654974,
+    "gain_seed2": 0.001713550461067026,
+    "candidates": 278,
+    "pass": 14
    }
   ],
   "final": {
    "raid": {
     "melee-survival-raid": {
-     "before": 556.8570170499122,
-     "after": 818.2496092376323,
-     "base": 556.8570170499122,
+     "before": 474.7364349412572,
+     "after": 734.7620656297253,
+     "base": 474.7364349412572,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: SV Melee": {
-     "before": 424.58006988958977,
-     "after": 653.9011230166799,
-     "base": 424.58006988958977,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 2.684785395304596,
-     "oom_after": 0.04068545767964998
-    },
     "opt-melee-dps-raid-dps": {
-     "before": 556.8570170499122,
-     "after": 768.787195191822,
-     "base": 556.8570170499122,
+     "before": 474.7364349412572,
+     "after": 684.7263816117478,
+     "base": 474.7364349412572,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-raid": {
-     "before": 531.3501672881758,
-     "after": 776.1187396624409,
-     "base": 531.3501672881758,
+     "before": 452.88826214192744,
+     "after": 695.4125640064977,
+     "base": 452.88826214192744,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-ml-parse": {
-     "before": 530.8866032776011,
-     "after": 776.571282646685,
-     "base": 530.8866032776011,
+     "before": 452.59837718956265,
+     "after": 696.5887123082063,
+     "base": 452.59837718956265,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -286,7 +280,6 @@
   },
   "signature": {
    "specs": [
-    "Hybrid Beast Mastery/Survival",
     "Survival"
    ],
    "required": [],
@@ -298,6 +291,6 @@
    "on": true
   },
   "first_date": "2026-09-29",
-  "passes": 13
+  "passes": 14
  }
 }

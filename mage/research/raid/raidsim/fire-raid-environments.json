@@ -5,7 +5,7 @@
  "date": "2026-10-31",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "b90e2b958",
+  "commit": "54ceac638",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
@@ -85,48 +85,49 @@
     "ladder-armor": 579.5286646244595,
     "ladder-physical": 595.9787334366214,
     "ladder-spell": 655.576606780284,
-    "raid": 762.8536855320557,
+    "raid": 797.8077847096052,
     "curve60": 585.3893018473889,
     "curve120": 551.7465430547629,
     "curve180": 531.0191818303616,
     "curve240": 463.47120631367727,
     "curve360": 404.8960302793986,
-    "max": 762.8536855320557,
-    "max60": 775.9384017600605
+    "max": 797.8077847096052,
+    "max60": 862.6529077278107
    },
    "raid_spell_casts": {
-    "12051": 1.0,
-    "10151": 18.127666666666666,
-    "10212": 3.627666666666667,
-    "10207": 36.346333333333334,
-    "18809": 11.825666666666667,
     "11129": 1.0,
-    "10274": 3.627666666666667,
-    "10199": 26.167
+    "10212": 4.068666666666667,
+    "10151": 21.04,
+    "10199": 28.441666666666666,
+    "10274": 4.068666666666667,
+    "10207": 24.750666666666667,
+    "12051": 0.9246666666666666,
+    "18809": 13.737333333333334
    },
    "raid_casts": {
-    "Robe of the Archmage": 1.0,
-    "Evocation": 1.0,
-    "Fireball": 18.127666666666666,
-    "OtherActionManaGain": 78.733,
-    "Major Mana Potion": 2.0,
-    "Arcane Missiles": 7.255333333333334,
-    "Mana Ruby": 0.3923333333333333,
-    "Scorch": 36.346333333333334,
-    "Pyroblast": 11.825666666666667,
+    "Mana Citrine": 0.051,
+    "Talisman of Ephemeral Power": 2.0,
     "Combustion": 1.0,
-    "Demonic Rune": 1.5623333333333334,
-    "Fire Blast": 26.167,
-    "Talisman of Ephemeral Power": 2.0
+    "Arcane Missiles": 8.137333333333334,
+    "Robe of the Archmage": 1.0,
+    "Fireball": 21.04,
+    "OtherActionManaGain": 75.70366666666666,
+    "Fire Blast": 28.441666666666666,
+    "Demonic Rune": 1.0016666666666667,
+    "Scorch": 24.750666666666667,
+    "Evocation": 0.9246666666666666,
+    "Mana Ruby": 0.947,
+    "Pyroblast": 13.737333333333334,
+    "Major Mana Potion": 1.0593333333333332
    },
    "raid_shares": {
-    "Pyroblast": 0.2234,
-    "Fireball": 0.2198,
-    "Fire Blast": 0.2064,
-    "Scorch": 0.1844,
-    "Ignite": 0.1041,
-    "Arcane Missiles": 0.0533,
-    "Demonic Rune": 0.0086
+    "Fireball": 0.2487,
+    "Pyroblast": 0.2477,
+    "Fire Blast": 0.2178,
+    "Scorch": 0.1185,
+    "Ignite": 0.1047,
+    "Arcane Missiles": 0.0572,
+    "Demonic Rune": 0.0053
    }
   },
   {
@@ -140,48 +141,49 @@
     "ladder-armor": 576.9716983385928,
     "ladder-physical": 591.3754100468857,
     "ladder-spell": 650.5129510515728,
-    "raid": 762.4437625608655,
+    "raid": 792.7080825592317,
     "curve60": 572.4244885383853,
     "curve120": 551.3599767238524,
     "curve180": 537.1045200898103,
     "curve240": 489.2295204028698,
     "curve360": 432.1289630818989,
-    "max": 762.4437625608655,
-    "max60": 754.0039623323344
+    "max": 792.7080825592317,
+    "max60": 840.4651844766331
    },
    "raid_spell_casts": {
-    "10199": 27.467666666666666,
-    "10274": 3.8506666666666667,
-    "10212": 3.8506666666666667,
-    "10207": 33.11666666666667,
-    "10151": 19.552,
-    "12051": 1.0,
-    "18809": 12.259,
-    "11129": 1.0
+    "10151": 21.616666666666667,
+    "12051": 0.4776666666666667,
+    "10199": 28.89666666666667,
+    "11129": 1.0,
+    "10274": 4.200333333333333,
+    "10212": 4.200333333333333,
+    "18809": 13.702666666666667,
+    "10207": 25.596
    },
    "raid_casts": {
-    "Demonic Rune": 1.21,
-    "Fire Blast": 27.467666666666666,
-    "Major Mana Potion": 2.0,
-    "Arcane Missiles": 7.701333333333333,
-    "Scorch": 33.11666666666667,
-    "OtherActionManaGain": 77.37633333333333,
-    "Fireball": 19.552,
+    "Mana Ruby": 0.982,
+    "Mana Citrine": 0.024333333333333332,
     "Robe of the Archmage": 1.0,
-    "Evocation": 1.0,
-    "Mana Ruby": 0.6303333333333333,
-    "Pyroblast": 12.259,
+    "Fireball": 21.616666666666667,
+    "Evocation": 0.4776666666666667,
+    "Fire Blast": 28.89666666666667,
+    "Demonic Rune": 0.991,
+    "OtherActionManaGain": 75.62566666666666,
     "Talisman of Ephemeral Power": 2.0,
-    "Combustion": 1.0
+    "Combustion": 1.0,
+    "Arcane Missiles": 8.400666666666666,
+    "Pyroblast": 13.702666666666667,
+    "Major Mana Potion": 1.002,
+    "Scorch": 25.596
    },
    "raid_shares": {
-    "Fireball": 0.2326,
-    "Pyroblast": 0.2248,
-    "Fire Blast": 0.212,
-    "Scorch": 0.1653,
-    "Ignite": 0.1033,
-    "Arcane Missiles": 0.0552,
-    "Demonic Rune": 0.0067
+    "Fireball": 0.2504,
+    "Pyroblast": 0.2432,
+    "Fire Blast": 0.2178,
+    "Scorch": 0.1207,
+    "Ignite": 0.1041,
+    "Arcane Missiles": 0.0586,
+    "Demonic Rune": 0.0053
    }
   },
   {
@@ -195,49 +197,49 @@
     "ladder-armor": 578.8624831580058,
     "ladder-physical": 594.4206938701321,
     "ladder-spell": 653.8627632571454,
-    "raid": 786.5185144844747,
+    "raid": 810.2265504223722,
     "curve60": 572.5526796645145,
     "curve120": 554.0445797149241,
     "curve180": 540.0529604826352,
     "curve240": 488.9305301671625,
     "curve360": 430.26176594223074,
-    "max": 786.5185144844747,
-    "max60": 775.7963827968058
+    "max": 810.2265504223722,
+    "max60": 863.4262673924317
    },
    "raid_spell_casts": {
+    "10199": 28.651666666666667,
     "11129": 1.0,
-    "10274": 3.502666666666667,
-    "10199": 27.13233333333333,
-    "18809": 12.857666666666667,
-    "10212": 3.502666666666667,
-    "10151": 17.698333333333334,
-    "12051": 1.0,
-    "10207": 36.748666666666665
+    "12051": 0.7403333333333333,
+    "10151": 19.316333333333333,
+    "18809": 14.472,
+    "10212": 3.711333333333333,
+    "10207": 28.978666666666665,
+    "10274": 3.711333333333333
    },
    "raid_casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "Combustion": 1.0,
+    "Fire Blast": 28.651666666666667,
     "Robe of the Archmage": 1.0,
-    "Arcane Missiles": 7.005333333333334,
-    "Demonic Rune": 1.449,
-    "Fire Blast": 27.13233333333333,
-    "Mana Ruby": 0.479,
-    "Pyroblast": 12.857666666666667,
-    "Fireball": 17.698333333333334,
-    "Evocation": 1.0,
-    "Scorch": 36.748666666666665,
-    "Major Mana Potion": 2.0,
-    "OtherActionManaGain": 81.53266666666667,
-    "Mana Citrine": 0.0003333333333333333
+    "Combustion": 1.0,
+    "Evocation": 0.7403333333333333,
+    "Fireball": 19.316333333333333,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 1.0173333333333334,
+    "Demonic Rune": 1.2373333333333334,
+    "Pyroblast": 14.472,
+    "Mana Ruby": 0.71,
+    "Mana Citrine": 0.036,
+    "OtherActionManaGain": 78.786,
+    "Arcane Missiles": 7.422666666666666,
+    "Scorch": 28.978666666666665
    },
    "raid_shares": {
-    "Pyroblast": 0.2312,
-    "Fire Blast": 0.2099,
-    "Fireball": 0.209,
-    "Scorch": 0.1828,
-    "Ignite": 0.1098,
-    "Arcane Missiles": 0.0496,
-    "Demonic Rune": 0.0078
+    "Pyroblast": 0.2532,
+    "Fireball": 0.2237,
+    "Fire Blast": 0.2181,
+    "Scorch": 0.1361,
+    "Ignite": 0.1107,
+    "Arcane Missiles": 0.0517,
+    "Demonic Rune": 0.0064
    }
   },
   {
@@ -251,49 +253,49 @@
     "ladder-armor": 585.1808385576747,
     "ladder-physical": 602.3479727163317,
     "ladder-spell": 662.5827699879635,
-    "raid": 776.7993361754271,
+    "raid": 804.7497499236786,
     "curve60": 585.2713419095791,
     "curve120": 557.7295262723242,
     "curve180": 542.3173564474803,
     "curve240": 483.5304770046385,
     "curve360": 424.23007748693703,
-    "max": 776.7993361754271,
-    "max60": 774.5505364364353
+    "max": 804.7497499236786,
+    "max60": 862.5977815686954
    },
    "raid_spell_casts": {
-    "10207": 34.43666666666667,
-    "10274": 3.765,
-    "10199": 26.950333333333333,
-    "12051": 1.0,
-    "18809": 12.244,
+    "10212": 4.124333333333333,
+    "10274": 4.124333333333333,
+    "10199": 28.615666666666666,
+    "18809": 13.817666666666666,
+    "12051": 0.7553333333333333,
+    "10207": 24.995333333333335,
     "11129": 1.0,
-    "10212": 3.765,
-    "10151": 19.00733333333333
+    "10151": 21.311
    },
    "raid_casts": {
-    "Scorch": 34.43666666666667,
-    "Major Mana Potion": 2.0,
-    "Arcane Missiles": 7.53,
-    "OtherActionManaGain": 79.16,
-    "Mana Ruby": 0.5073333333333333,
-    "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 1.4083333333333334,
-    "Fire Blast": 26.950333333333333,
-    "Mana Citrine": 0.0003333333333333333,
-    "Evocation": 1.0,
-    "Pyroblast": 12.244,
+    "Demonic Rune": 0.9813333333333333,
+    "Arcane Missiles": 8.248666666666667,
+    "Major Mana Potion": 1.013,
+    "Mana Citrine": 0.042333333333333334,
     "Robe of the Archmage": 1.0,
+    "Fire Blast": 28.615666666666666,
+    "Pyroblast": 13.817666666666666,
+    "Evocation": 0.7553333333333333,
+    "Scorch": 24.995333333333335,
     "Combustion": 1.0,
-    "Fireball": 19.00733333333333
+    "Fireball": 21.311,
+    "Mana Ruby": 0.9743333333333334,
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionManaGain": 76.28566666666667
    },
    "raid_shares": {
-    "Pyroblast": 0.2268,
-    "Fireball": 0.2265,
-    "Fire Blast": 0.2087,
-    "Scorch": 0.1725,
-    "Ignite": 0.1038,
-    "Arcane Missiles": 0.054,
-    "Demonic Rune": 0.0077
+    "Fireball": 0.2492,
+    "Pyroblast": 0.2472,
+    "Fire Blast": 0.2177,
+    "Scorch": 0.1188,
+    "Ignite": 0.1043,
+    "Arcane Missiles": 0.0577,
+    "Demonic Rune": 0.0052
    }
   },
   {
@@ -307,40 +309,29 @@
     "ladder-armor": 357.37799995391504,
     "ladder-physical": 362.022156630432,
     "ladder-spell": 398.224372293475,
-    "raid": 437.2117619064869,
+    "raid": 396.65020413794076,
     "curve60": 379.07114507002564,
     "curve120": 365.7069708331103,
     "curve180": 342.89322324475864,
     "curve240": 348.9554447191474,
     "curve360": 317.22274760345147,
-    "max": 437.2117619064869,
-    "max60": 449.84250111019617
+    "max": 396.65020413794076,
+    "max60": 409.43907968840693
    },
    "raid_spell_casts": {
-    "10207": 99.0,
-    "12042": 1.0,
-    "10199": 21.0,
-    "12043": 1.0,
-    "12051": 1.0
+    "12051": 1.0,
+    "10207": 96.354,
+    "10199": 18.264
    },
    "raid_casts": {
-    "OtherActionManaGain": 57.093666666666664,
-    "Talisman of Ephemeral Power": 2.0,
-    "Scorch": 99.0,
-    "Robe of the Archmage": 1.0,
-    "Arcane Power": 1.0,
-    "Fire Blast": 21.0,
-    "Mana Ruby": 0.03766666666666667,
-    "Major Mana Potion": 2.0,
-    "Demonic Rune": 1.123,
-    "Mana Citrine": 0.003,
-    "Presence of Mind": 1.0,
-    "Evocation": 1.0
+    "Evocation": 1.0,
+    "Scorch": 96.354,
+    "Fire Blast": 18.264,
+    "OtherActionManaGain": 51.92466666666667
    },
    "raid_shares": {
-    "Scorch": 0.7453,
-    "Fire Blast": 0.2435,
-    "Demonic Rune": 0.0112
+    "Scorch": 0.7704,
+    "Fire Blast": 0.2296
    }
   },
   {
@@ -354,43 +345,33 @@
     "ladder-armor": 404.08601744691765,
     "ladder-physical": 414.25159427223525,
     "ladder-spell": 455.676753699457,
-    "raid": 640.9244279828697,
+    "raid": 578.1302285516805,
     "curve60": 426.5868074299844,
     "curve120": 413.1103797389537,
     "curve180": 388.081928299251,
     "curve240": 395.181223570526,
     "curve360": 359.6523448015605,
-    "max": 640.9244279828697,
-    "max60": 679.897906727728
+    "max": 578.1302285516805,
+    "max60": 662.0168358649429
    },
    "raid_spell_casts": {
-    "12043": 1.0,
-    "10199": 29.170333333333332,
-    "18809": 14.367666666666667,
     "12051": 1.0,
-    "12042": 1.0,
-    "10207": 74.12033333333333
+    "10207": 71.39233333333334,
+    "10199": 24.93166666666667,
+    "18809": 14.202666666666667
    },
    "raid_casts": {
-    "Presence of Mind": 1.0,
-    "Fire Blast": 29.170333333333332,
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 1.9726666666666666,
-    "Pyroblast": 14.367666666666667,
-    "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionManaGain": 50.404333333333334,
     "Evocation": 1.0,
-    "Mana Ruby": 0.020666666666666667,
-    "Arcane Power": 1.0,
-    "Scorch": 74.12033333333333,
-    "OtherActionManaGain": 57.657
+    "Scorch": 71.39233333333334,
+    "Fire Blast": 24.93166666666667,
+    "Pyroblast": 14.202666666666667
    },
    "raid_shares": {
-    "Scorch": 0.3787,
-    "Pyroblast": 0.265,
-    "Fire Blast": 0.2324,
-    "Ignite": 0.1105,
-    "Demonic Rune": 0.0134
+    "Scorch": 0.3919,
+    "Pyroblast": 0.2799,
+    "Fire Blast": 0.2163,
+    "Ignite": 0.1119
    }
   },
   {
@@ -404,42 +385,42 @@
     "ladder-armor": 524.1970037972815,
     "ladder-physical": 539.757780451966,
     "ladder-spell": 593.7335584971617,
-    "raid": 578.2859592104911,
+    "raid": 738.1405710178848,
     "curve60": 544.9729857922972,
     "curve120": 509.0637559416191,
     "curve180": 442.23513228748374,
     "curve240": 355.2256629105482,
     "curve360": 310.051525949683,
-    "max": 578.2859592104911,
-    "max60": 732.0871258312791
+    "max": 738.1405710178848,
+    "max60": 803.404436446162
    },
    "raid_spell_casts": {
-    "10151": 13.611333333333333,
-    "18809": 8.322,
-    "10199": 18.234,
-    "10207": 43.018,
-    "12051": 1.0
+    "10151": 22.908666666666665,
+    "18809": 13.282333333333334,
+    "12051": 1.0,
+    "10199": 27.003333333333334,
+    "10207": 25.816333333333333
    },
    "raid_casts": {
-    "Fireball": 13.611333333333333,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Pyroblast": 8.322,
-    "Fire Blast": 18.234,
-    "Scorch": 43.018,
-    "OtherActionManaGain": 63.70166666666667,
+    "Fireball": 22.908666666666665,
+    "Major Mana Potion": 2.0,
+    "Pyroblast": 13.282333333333334,
     "Evocation": 1.0,
-    "Demonic Rune": 1.6203333333333334,
-    "Mana Ruby": 0.37966666666666665,
-    "Major Mana Potion": 2.0
+    "Talisman of Ephemeral Power": 2.0,
+    "Demonic Rune": 1.325,
+    "Robe of the Archmage": 1.0,
+    "Fire Blast": 27.003333333333334,
+    "OtherActionManaGain": 66.55733333333333,
+    "Mana Ruby": 0.675,
+    "Scorch": 25.816333333333333
    },
    "raid_shares": {
-    "Scorch": 0.2789,
-    "Fireball": 0.2101,
-    "Pyroblast": 0.2013,
-    "Fire Blast": 0.1836,
-    "Ignite": 0.1144,
-    "Demonic Rune": 0.0116
+    "Fireball": 0.2824,
+    "Pyroblast": 0.2528,
+    "Fire Blast": 0.2189,
+    "Scorch": 0.1305,
+    "Ignite": 0.108,
+    "Demonic Rune": 0.0074
    }
   },
   {
@@ -453,91 +434,124 @@
     "ladder-armor": 585.9496204122323,
     "ladder-physical": 601.2444539882723,
     "ladder-spell": 661.3688993871004,
-    "raid": 779.7035409864523,
+    "raid": 823.6245341753913,
     "curve60": 589.9884599638312,
     "curve120": 559.5745277903596,
     "curve180": 539.5279158196587,
     "curve240": 472.66053067253404,
     "curve360": 413.5322031835693,
-    "max": 779.7035409864523,
-    "max60": 789.3768632156889
+    "max": 823.6245341753913,
+    "max60": 878.0416457241085
    },
    "raid_spell_casts": {
-    "10151": 18.116666666666667,
-    "10207": 36.08433333333333,
+    "12051": 0.769,
+    "10151": 16.993333333333332,
+    "18809": 13.825666666666667,
     "11129": 1.0,
-    "10274": 3.635,
-    "10199": 26.176,
-    "18809": 12.260666666666667,
-    "10212": 3.635,
-    "12051": 1.0
+    "10274": 5.881666666666667,
+    "10199": 28.376333333333335,
+    "10207": 22.432,
+    "1239700": 8.483,
+    "10212": 5.881666666666667
    },
    "raid_casts": {
-    "Fireball": 18.116666666666667,
-    "Mana Ruby": 0.389,
-    "Scorch": 36.08433333333333,
-    "Combustion": 1.0,
-    "Arcane Missiles": 7.27,
-    "Fire Blast": 26.176,
-    "Demonic Rune": 1.5663333333333334,
-    "OtherActionManaGain": 80.951,
-    "Robe of the Archmage": 1.0,
-    "Pyroblast": 12.260666666666667,
-    "Major Mana Potion": 2.0,
+    "Evocation": 0.769,
+    "Fireball": 16.993333333333332,
     "Talisman of Ephemeral Power": 2.0,
-    "Evocation": 1.0
+    "OtherActionManaGain": 81.73733333333334,
+    "Pyroblast": 13.825666666666667,
+    "Combustion": 1.0,
+    "Arcane Missiles": 11.763333333333334,
+    "Fire Blast": 28.376333333333335,
+    "Scorch": 22.432,
+    "Arcane Blast": 8.483,
+    "Major Mana Potion": 1.029,
+    "Demonic Rune": 1.0106666666666666,
+    "Mana Ruby": 0.9536666666666667,
+    "Robe of the Archmage": 1.0,
+    "Mana Citrine": 0.034
    },
    "raid_shares": {
-    "Pyroblast": 0.2257,
-    "Fireball": 0.2154,
-    "Fire Blast": 0.2057,
-    "Scorch": 0.1825,
-    "Ignite": 0.1099,
-    "Arcane Missiles": 0.0523,
-    "Demonic Rune": 0.0085
+    "Pyroblast": 0.2471,
+    "Fire Blast": 0.2183,
+    "Fireball": 0.1993,
+    "Scorch": 0.1086,
+    "Ignite": 0.1028,
+    "Arcane Missiles": 0.0833,
+    "Arcane Blast": 0.0354,
+    "Demonic Rune": 0.0053
    }
   },
   {
-   "label": "sim preset: Frost",
+   "label": "sim preset: Frost Incin",
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 303.7600812018429,
-    "dummy60": 333.96548067937636,
-    "ladder-mana": 317.8728319092357,
-    "ladder-armor": 317.8728319092357,
-    "ladder-physical": 322.4214553878373,
-    "ladder-spell": 354.6636009266191,
-    "raid": 390.4159072660092,
-    "curve60": 322.23909957146196,
-    "curve120": 322.1915578732597,
-    "curve180": 303.7600812018429,
-    "curve240": 307.0927186250618,
-    "curve360": 284.0937319439882,
-    "max": 390.4159072660092,
-    "max60": 385.24873687514304
+    "dummy": 316.94999472560977,
+    "dummy60": 347.88535825375067,
+    "ladder-mana": 332.89676366241576,
+    "ladder-armor": 332.89676366241576,
+    "ladder-physical": 337.44009067634363,
+    "ladder-spell": 371.184099743977,
+    "raid": 302.4672929864555,
+    "curve60": 337.44770508044917,
+    "curve120": 331.4818774413133,
+    "curve180": 316.94999472560977,
+    "curve240": 295.4430445319011,
+    "curve360": 257.34405558169146,
+    "max": 302.4672929864555,
+    "max60": 391.28838651913895
    },
    "raid_spell_casts": {
-    "10199": 21.0,
-    "12051": 1.0,
-    "10207": 99.0
+    "10199": 13.369,
+    "10207": 78.81033333333333,
+    "12051": 1.0
    },
    "raid_casts": {
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 0.31133333333333335,
-    "OtherActionManaGain": 56.89566666666666,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 2.0,
-    "Mana Ruby": 0.72,
-    "Fire Blast": 21.0,
-    "Evocation": 1.0,
-    "Mana Citrine": 0.0013333333333333333,
-    "Scorch": 99.0
+    "Fire Blast": 13.369,
+    "OtherActionManaGain": 41.85366666666667,
+    "Scorch": 78.81033333333333,
+    "Evocation": 1.0
    },
    "raid_shares": {
-    "Scorch": 0.7495,
-    "Fire Blast": 0.247,
-    "Demonic Rune": 0.0034
+    "Scorch": 0.7893,
+    "Fire Blast": 0.2107
+   }
+  },
+  {
+   "label": "sim preset: Frost Med",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 303.70271169033225,
+    "dummy60": 334.1849049412734,
+    "ladder-mana": 317.6412696464262,
+    "ladder-armor": 317.6412696464262,
+    "ladder-physical": 322.3310307761866,
+    "ladder-spell": 354.5641338538052,
+    "raid": 352.90826209781926,
+    "curve60": 321.6035458131241,
+    "curve120": 321.969977989259,
+    "curve180": 303.70271169033225,
+    "curve240": 307.0613357521266,
+    "curve360": 284.08702829249626,
+    "max": 352.90826209781926,
+    "max60": 373.78000922542617
+   },
+   "raid_spell_casts": {
+    "12051": 1.0,
+    "10199": 17.267333333333333,
+    "10207": 94.77
+   },
+   "raid_casts": {
+    "OtherActionManaGain": 50.80266666666667,
+    "Evocation": 1.0,
+    "Fire Blast": 17.267333333333333,
+    "Scorch": 94.77
+   },
+   "raid_shares": {
+    "Scorch": 0.7774,
+    "Fire Blast": 0.2226
    }
   }
  ]

@@ -250,8 +250,8 @@
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-10-27",
-  "commit": "30f67f5d2",
+  "date": "2026-10-31",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
@@ -262,8 +262,8 @@
     "talents": "31305013002-05053035102010501-2"
    },
    {
-    "label": "sim preset: DPS",
-    "talents": "30305013-05553005150010501"
+    "label": "sim preset: Fury",
+    "talents": "30305013002-25053005052010501"
    },
    {
     "label": "fury-dw-raid",
@@ -272,13 +272,13 @@
    },
    {
     "label": "opt-fury-dw-raid-raid-dps",
-    "talents": "35310003102-05053035102210501",
+    "talents": "03305013102-05053035102210501",
     "protect_only": true
    }
   ],
   "tuned_on": [
    "fury-open-raid",
-   "sim preset: DPS"
+   "sim preset: Fury"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -426,41 +426,49 @@
     "gain_seed2": 0.0018359860120522598,
     "candidates": 939,
     "pass": 8
+   },
+   {
+    "round": 19,
+    "change": "insert in the middle: if (selectedPotion or selectedPotion or selectedPotion) and rage \u2264 15: cast OffensivePotion",
+    "gain_seed1": 0.0023081203788333227,
+    "gain_seed2": 0.002307275778901108,
+    "candidates": 991,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
     "fury-open-raid": {
-     "before": 833.3563562976998,
-     "after": 924.3539806580455,
-     "base": 833.3563562976998,
+     "before": 735.5200942452772,
+     "after": 862.3606552908511,
+     "base": 735.5200942452772,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: DPS": {
-     "before": 788.2604499590157,
-     "after": 873.5056935835719,
-     "base": 788.2604499590157,
+    "sim preset: Fury": {
+     "before": 732.8547670552795,
+     "after": 850.6314664130846,
+     "base": 732.8547670552795,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "fury-dw-raid": {
-     "before": 791.8939341251391,
-     "after": 873.9930460762914,
-     "base": 791.8939341251391,
+     "before": 697.199574891188,
+     "after": 814.5690639239493,
+     "base": 697.199574891188,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-fury-dw-raid-raid-dps": {
-     "before": 818.6784180014413,
-     "after": 909.5616361900081,
-     "base": 818.6784180014413,
+     "before": 722.4692376293334,
+     "after": 852.4849982036868,
+     "base": 722.4692376293334,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -478,13 +486,13 @@
     "Mortal Strike"
    ],
    "rejected": {
-    "structure": 12,
+    "structure": 8,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

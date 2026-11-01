@@ -1,0 +1,118 @@
+{
+ "raid": {
+  "class": "paladin",
+  "spec": "ret-dps",
+  "date": "2026-10-31",
+  "commit": "54ceac638",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+  "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "ret-full-buffs-raid",
+    "talents": "05003-053020005-1523330100130033"
+   },
+   {
+    "label": "sim preset: Unsealed Wrath",
+    "talents": "050250002-501-05233011201301351"
+   },
+   {
+    "label": "ret-raid-dps",
+    "talents": "0502321022-051-1523330100130033",
+    "protect_only": true
+   },
+   {
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "0502320122-051-1523330100130033",
+    "protect_only": true
+   },
+   {
+    "label": "retribution-ml-raid",
+    "talents": "05013-053020004-1523330100130033",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "ret-full-buffs-raid",
+   "sim preset: Unsealed Wrath"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert in the middle: cast Consecration",
+    "gain_seed1": 0.010459960087783271,
+    "gain_seed2": 0.012155232483979983,
+    "candidates": 316
+   }
+  ],
+  "final": {
+   "raid": {
+    "ret-full-buffs-raid": {
+     "before": 661.7106074032811,
+     "after": 671.7135815267058,
+     "base": 661.7106074032811,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.00019849999915
+    },
+    "sim preset: Unsealed Wrath": {
+     "before": 828.5274221160781,
+     "after": 837.087074156041,
+     "base": 828.5274221160781,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "ret-raid-dps": {
+     "before": 662.9985973079159,
+     "after": 673.7520399362512,
+     "base": 662.9985973079159,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-ret-dps-raid-dps": {
+     "before": 662.9985973079159,
+     "after": 673.7520399362512,
+     "base": 662.9985973079159,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "retribution-ml-raid": {
+     "before": 661.6806050697797,
+     "after": 672.2939019241054,
+     "base": 661.6806050697797,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Holy/Retribution",
+    "Hybrid Protection/Retribution",
+    "Retribution"
+   ],
+   "required": [
+    "Holy Shock",
+    "Judgement"
+   ],
+   "rejected": {
+    "structure": 12,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  }
+ }
+}

@@ -681,6 +681,13 @@ def search(cls, spec, a, repo, N, where=None):
         extra = tune_builds(a.tune, cls, trees)
         builds = extra + [dict(b, protect_only=True) for b in builds if b["talents"] not in {x["talents"] for x in extra}]
     builds = [{k: v for k, v in b.items() if k != "protect_only"} if not b.get("protect_only") else b for b in builds]
+    # A build the simulator rejects (2026-10-31: the paladin's stale race report named "sim preset: Twist of Light", a talent string of the
+    # tree before hotfix 113554) makes every candidate's score None, and the search ended "no candidates" without trying one: drop it.
+    chk = bench(entry, repo, [{"label": str(i), "talents": b["talents"], **gear_of(b)} for i, b in enumerate(builds)], 50, 1, setting, f"{cls}-{spec}-chk")
+    bad = [i for i in range(len(builds)) if not chk.get(str(i)) or chk[str(i)].get("error")]
+    if bad:
+        print(f"  dropped {len(bad)} build(s) the simulator rejects: " + "; ".join(f"{builds[i]['label']} ({(chk.get(str(i)) or {}).get('error', 'no row')})"[:160] for i in bad), flush=True)
+        builds = [b for i, b in enumerate(builds) if i not in bad]
     # Tuning builds and protected builds (2026-10-07): candidates are scored on the tuning builds only (the --tune builds, else our best
     # build, the simulator's best preset and the entry's tune_builds) and run on them alone on seed 1; the protected builds (every
     # other build the entry lists) are run only for the confirmed few on seed 2, where no change may cost any build --max-loss against

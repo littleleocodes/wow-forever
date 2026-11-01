@@ -418,6 +418,65 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 5631
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          },
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 5633
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          },
+          {
+           "selectedPotion": {
+            "potionId": {
+             "itemId": 13442
+            },
+            "slot": "OtherActionOffensivePotion"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentRage": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "otherId": "OtherActionOffensivePotion"
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-31: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpLe",
       "lhs": {

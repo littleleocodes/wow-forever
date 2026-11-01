@@ -195,25 +195,19 @@
   "class": "mage",
   "spec": "arcane-dps",
   "date": "2026-10-31",
-  "commit": "b90e2b958",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "212205203100311531-555000001-003"
-   },
-   {
     "label": "arcane-open-raid",
-    "talents": "032205203100311531-355-033",
-    "protect_only": true
+    "talents": "203205203100311531-555000001-003"
    },
    {
     "label": "sim preset: Arcane Fire",
-    "talents": "050205203100311531-525000012001-003",
-    "protect_only": true
+    "talents": "050205203100311531-525000012001-003"
    },
    {
     "label": "arcane-blast-raid",
@@ -222,7 +216,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "arcane-open-raid",
+   "sim preset: Arcane Fire"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -434,44 +429,43 @@
     "gain_seed2": 0.0051399799245006594,
     "candidates": 472,
     "pass": 11
+   },
+   {
+    "round": 27,
+    "change": "insert in the middle: if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast",
+    "gain_seed1": 0.01876582188665088,
+    "gain_seed2": 0.01894068504783397,
+    "candidates": 446,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 709.6104211833662,
+    "arcane-open-raid": {
+     "before": 734.0645356767167,
      "after": 720.9455952318061,
-     "base": 709.6104211833662,
+     "base": 734.0645356767167,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5598624999968516,
+     "oom_before": 0.49038250000080164,
      "oom_after": 0.49038250000080164
     },
-    "arcane-open-raid": {
-     "before": 705.0455998764838,
-     "after": 711.441414054809,
-     "base": 705.0455998764838,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.572239999995551,
-     "oom_after": 0.5244049999994025
-    },
     "sim preset: Arcane Fire": {
-     "before": 695.6636727516716,
-     "after": 699.6739575230011,
-     "base": 695.6636727516716,
+     "before": 716.9466111484942,
+     "after": 726.1966980481756,
+     "base": 716.9466111484942,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.30913999999679903,
-     "oom_after": 0.2426799999990499
+     "oom_before": 0.2426799999990499,
+     "oom_after": 0.21801999999944993
     },
     "arcane-blast-raid": {
-     "before": 631.4784856395141,
+     "before": 576.8595531590505,
      "after": 658.1910185601139,
-     "base": 631.4784856395141,
+     "base": 576.8595531590505,
      "before_value": null,
      "after_value": null,
-     "oom_before": 7.898344999937475,
+     "oom_before": 9.012659999985376,
      "oom_after": 9.012659999985376
     }
    }
@@ -484,13 +478,13 @@
     "Arcane Blast"
    ],
    "rejected": {
-    "structure": 115,
+    "structure": 77,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }
