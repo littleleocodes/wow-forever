@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Marksmanship leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). +0.9% faster per kill than opt-bm-leveling-solo-60, the fastest of our leveling builds in that race.
+The Marksmanship leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). +0.9% faster per kill than opt-bm-leveling-solo-60, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -87,6 +87,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- +4.8% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.32; opt-bm-leveling-solo-60 24.53, opt-bm-leveling-leveling-st 24.69, opt-mm-raid-leveling-st 25.11, leveling-beast-mastery 25.48. The search simulated 22,836 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

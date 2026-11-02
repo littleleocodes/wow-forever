@@ -67,21 +67,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health. Together +2.3% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health; Pyroblast only while the mob has more than 35% health; drink below 15% mana. Together +5.1% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/fire-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 0.0 | 2.8 | 3.1 | 2.5 | 2.2 | 24% |
-| Fire Blast | 2.0 | 2.3 | 2.6 | 2.1 | 1.9 | 27% |
-| Fireball | 3.1 | 1.1 | 1.2 | 1.4 | 1.4 | 21% |
-| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 1% |
-| Pyroblast | 0.0 | 0.0 | 0.7 | 0.6 | 0.6 | 12% |
-| Wand | 1.8 | 1.0 | 1.6 | 0.8 | 0.6 | 1% |
-| Blast Wave | 0.0 | 0.0 | 0.0 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 1.0 | 0.7 | 0.2 | 0.1 | 1% |
-| Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Wand | 0.8 | 1.1 | 1.8 | 1.9 | 2.1 | 5% |
+| Fire Blast | 1.4 | 1.7 | 2.0 | 1.9 | 1.9 | 26% |
+| Fireball | 2.6 | 1.5 | 1.8 | 1.7 | 1.6 | 25% |
+| Ice Lance | 0.8 | 0.9 | 1.1 | 1.2 | 1.1 | 16% |
+| Frost Nova | 0.5 | 0.6 | 0.8 | 0.7 | 0.7 | 1% |
+| Pyroblast | 0.0 | 0.6 | 0.7 | 0.6 | 0.6 | 11% |
+| Blast Wave | 0.0 | 0.2 | 0.3 | 0.3 | 0.3 | 4% |
+| Scorch | 0.0 | 0.1 | 0.2 | 0.2 | 0.2 | 1% |
+| Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
 

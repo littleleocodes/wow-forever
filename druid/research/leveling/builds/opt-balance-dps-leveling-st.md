@@ -60,15 +60,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): eat below 50% health. Together +0.3% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): eat below 40% health; Starfire only while the mob has more than 10% health. Together +1.2% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/balance-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 0.0 | 4.9 | 5.7 | 5.2 | 4.8 | 66% |
-| Wrath | 8.3 | 9.5 | 2.4 | 2.7 | 2.5 | 2.3 | 10% |
-| Moonfire | 1.6 | 2.1 | 1.8 | 1.8 | 1.6 | 1.5 | 21% |
+| Starfire | 0.0 | 2.9 | 3.9 | 4.9 | 4.5 | 4.4 | 64% |
+| Wrath | 6.4 | 1.4 | 1.9 | 2.5 | 2.3 | 2.3 | 10% |
+| Moonfire | 1.5 | 1.3 | 1.5 | 1.7 | 1.6 | 1.6 | 22% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Entangling Roots | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Moonkin Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

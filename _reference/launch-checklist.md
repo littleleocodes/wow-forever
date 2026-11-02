@@ -80,9 +80,6 @@
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)** (`druid/research/leveling/builds/opt-balance-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
-- [ ] An open-search Balance leveling build: check it while leveling at launch.
-
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -109,6 +106,12 @@
 
 **Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
 - [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
+
+**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
+- [ ] An open-search Balance leveling build: check it while leveling at launch.
+
+**Feral Combat/Restoration hybrid — Leveling (open talent search)** (`druid/research/leveling/builds/hybrid-feral-combat-restoration-open-leveling.md`)
+- [ ] An open-search Feral Combat/Restoration hybrid leveling build: check it while leveling at launch.
 
 ### Hunter
 
@@ -213,6 +216,12 @@
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
+**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
+- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
+
 **Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
 - [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
 
@@ -224,12 +233,6 @@
 
 **Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
 - [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
-
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
-
-**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
 ### Mage
 
@@ -296,21 +299,6 @@
 **Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
-- [ ] An open-search Arcane leveling build: check it while leveling at launch.
-
-**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
-- [ ] An open-search Fire leveling build: check it while leveling at launch.
-
-**Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
-- [ ] An open-search Frost leveling build: check it while leveling at launch.
-
-**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
-- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
-
-**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
-- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
-
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -337,6 +325,18 @@
 
 **Arcane — Raid (open talent search)** (`mage/research/raid/builds/arcane-open-raid.md`)
 - [ ] An open-search Arcane build: check it against the community's Arcane builds at launch.
+
+**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
+- [ ] An open-search Arcane leveling build: check it while leveling at launch.
+
+**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
+- [ ] An open-search Fire leveling build: check it while leveling at launch.
+
+**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
+- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
+
+**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
+- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
 
 ### Paladin
 
@@ -562,6 +562,15 @@
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
+- [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
+
+**Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
+- [ ] An open-search Combat build: check it against the community's Combat builds at launch.
+
+**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
+- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
+
 **Combat — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-open-leveling.md`)
 - [ ] An open-search Combat leveling build: check it while leveling at launch.
 
@@ -576,15 +585,6 @@
 
 **Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/subtlety-open-leveling.md`)
 - [ ] An open-search Subtlety leveling build: check it while leveling at launch.
-
-**Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
-- [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
-
-**Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
-- [ ] An open-search Combat build: check it against the community's Combat builds at launch.
-
-**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
-- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
 
 ### Shaman
 
@@ -653,6 +653,12 @@
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
+- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
+
+**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
+- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
+
 **Elemental-Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-enhancement-open-leveling.md`)
 - [ ] An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 
@@ -661,12 +667,6 @@
 
 **Elemental — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-open-leveling.md`)
 - [ ] An open-search Elemental leveling build: check it while leveling at launch.
-
-**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
-- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
-
-**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
-- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
 
 ### Warlock
 
@@ -729,18 +729,6 @@
 **Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)** (`warlock/research/leveling/builds/opt-affliction-leveling-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
-- [ ] An open-search Affliction leveling build: check it while leveling at launch.
-
-**Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
-- [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
-
-**Demonology/Destruction hybrid — Leveling (open talent search)** (`warlock/research/leveling/builds/hybrid-demonology-destruction-open-leveling.md`)
-- [ ] An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
-
-**Destruction — Leveling (open talent search)** (`warlock/research/leveling/builds/destruction-open-leveling.md`)
-- [ ] An open-search Destruction leveling build: check it while leveling at launch.
-
 **Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-affliction-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -767,6 +755,18 @@
 
 **Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
 - [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
+
+**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
+- [ ] An open-search Affliction leveling build: check it while leveling at launch.
+
+**Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
+- [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
+
+**Demonology/Destruction hybrid — Leveling (open talent search)** (`warlock/research/leveling/builds/hybrid-demonology-destruction-open-leveling.md`)
+- [ ] An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
+
+**Destruction — Leveling (open talent search)** (`warlock/research/leveling/builds/destruction-open-leveling.md`)
+- [ ] An open-search Destruction leveling build: check it while leveling at launch.
 
 ### Warrior
 
@@ -818,12 +818,6 @@
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Fury — Leveling (open talent search)** (`warrior/research/leveling/builds/fury-open-leveling.md`)
-- [ ] An open-search Fury leveling build: check it while leveling at launch.
-
-**Protection — Leveling (open talent search)** (`warrior/research/leveling/builds/protection-open-leveling.md`)
-- [ ] An open-search Protection leveling build: check it while leveling at launch.
-
 **Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
 - [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -850,4 +844,10 @@
 
 **Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
 - [ ] An open-search Fury build: check it against the community's Fury builds at launch.
+
+**Fury — Leveling (open talent search)** (`warrior/research/leveling/builds/fury-open-leveling.md`)
+- [ ] An open-search Fury leveling build: check it while leveling at launch.
+
+**Protection — Leveling (open talent search)** (`warrior/research/leveling/builds/protection-open-leveling.md`)
+- [ ] An open-search Protection leveling build: check it while leveling at launch.
 

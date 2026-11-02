@@ -34,10 +34,10 @@ Classic Era reference builds: [leveling-enhancement](../talents/classic-baseline
 
 ## Guide, rotation and respec plan
 
-- [Leveling guide](guide.md): the recommended build (Enhancement, `enhancement-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
+- [Leveling guide](guide.md): the recommended build (Enhancement, `leveling-enhancement`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
 - [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**57.9 h** (35.7% faster than talentless), no respec).
-- Recommended build: [enhancement-open-leveling](builds/enhancement-open-leveling.md) (Enhancement; player page: [Enhancement leveling](../../leveling/enhancement.md)).
+- Recommended build: [leveling-enhancement](builds/leveling-enhancement.md) (Enhancement; player page: [Enhancement leveling](../../leveling/enhancement.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
 
@@ -47,10 +47,10 @@ Classic Era reference builds: [leveling-enhancement](../talents/classic-baseline
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Elemental](../../leveling/elemental.md) | `opt-elemental-dps-leveling-st` | - | - |
-| [Enhancement](../../leveling/enhancement.md) | `leveling-enhancement` | - | - |
+| [Enhancement](../../leveling/enhancement.md) ✅ | `leveling-enhancement` | enhancement-dps | 31.0 |
+| [Elemental](../../leveling/elemental.md) | `opt-elemental-dps-leveling-st` | elemental-dps | 36.7 |
 | [Restoration](../../leveling/restoration.md) | `restoration-leveling` | - | - |
-| [Elemental-Enhancement](../../leveling/elemental-enhancement.md) | `elemental-enhancement-open-leveling` | - | - |
+| [Elemental-Enhancement](../../leveling/elemental-enhancement.md) | `opt-enhancement-dps-leveling-aoe` | - | - |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -67,7 +67,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-enhancement-dps-leveling-st` at level 60): Shamanistic Focus +13% (L30 +12%), Stormstrike +8% (L30 +9%), Tidal Focus +4% (L30 +4%), Mental Dexterity +4% (L30 +6%), Thundering Strikes +4% (L30 +3%), Mindfulness +3%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Anticipation, Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf, Maelstrom Weapon.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.20 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-26, mean time per kill over levels 20/30/40/50/60): leveling-enhancement 31.0s, cand-enh-r7 31.7s, cand-enh-r6 32.6s, cand-enh-r2 32.7s, cand-enh-r5 32.9s, cand-enh-r1 32.9s, cand-enh-r4 34.2s, cand-enh-r3 34.5s — fastest: **leveling-enhancement**.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-02, mean time per kill over levels 20/30/40/50/60): leveling-enhancement 31.0s, cand-enh-r7 31.7s, cand-enh-r6 32.6s, cand-enh-r2 32.7s, cand-enh-r5 32.9s, cand-enh-r1 32.9s, cand-enh-r4 34.2s, cand-enh-r3 34.5s — fastest: **leveling-enhancement**.
 - **Calibration:** the scorer's `enhancement-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `elemental-dps` with `opt-elemental-dps-leveling-st` ([report](fightlab/elemental-dps.md)): L30 36.1s (+31% vs `opt-enhancement-dps-leveling-st`), L60 37.9s (+8% vs `opt-enhancement-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **AoE grinding, 3 mobs per pull:** `enhancement-dps` with `opt-enhancement-dps-leveling-aoe` ([report](fightlab/enhancement-dps-aoe.md)): L40 64.1s per mob in pulls of 2 (single-target build 31.0s), 30.7 deaths/100; L60 59.2s per mob in pulls of 2 (single-target build 35.1s), 34.7 deaths/100.

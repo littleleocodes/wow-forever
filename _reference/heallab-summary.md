@@ -6,7 +6,7 @@ Each row is the build a healer spec's raid page picks (2026-10-15 page audit A6:
 
 | Class | Spec | Spec model | Page build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |
 |---|---|---|---|---|---|---|---|---|
-| druid | Restoration | `resto-heal` | `restoration-ml-heal` (11/5/35) | 0.653 | 380 | 14% | Healing Touch 57%, Rejuvenation 28%, Regrowth 9%, Tranquility 4% | not measured for this build |
+| druid | Restoration | `resto-heal` | `restoration-ml-heal` (12/1/38) | 0.662 | 390 | 14% | Healing Touch 57%, Rejuvenation 29%, Regrowth 8%, Tranquility 6% | not measured for this build |
 | paladin | Holy | `holy-heal` | `holy-ml-heal` (32/5/14) | 0.630 | 369 | 13% | Holy Light 45%, Flash of Light 38%, Light's Vigil 13%, Holy Shock 2% | not measured for this build |
 | priest | Discipline | `holy-heal` | `discipline-ml-heal` (30/21/0) | 0.629 | 344 | 7% | Greater Heal 44%, Penance 24%, Prayer of Healing 14%, Flash Heal 13% | not measured for this build |
 | priest | Holy | `holy-heal` | `holy-raid-healer` (22/29/0) | 0.691 | 391 | 10% | Greater Heal 46%, Penance 24%, Prayer of Healing 16%, Flash Heal 11% | Meditation +25%, Improved Healing +9%, Penance +7%, Litany of Light +7%, Spiritual Healing +4% |

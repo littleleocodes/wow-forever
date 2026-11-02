@@ -254,10 +254,8 @@ def write_build(cls, spec, entry, hand, st, data, ours, space):
     if gain is not None and gain >= 0.02:
         b["replaces"] = hand
         b["notes"].insert(0, f"{gain:+.1%} tank value over the hand draft {hand} (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).")
-    bp = paths.builds_json("forever", cls)
-    d = json.load(open(bp, encoding="utf-8"))
-    d["builds"] = [x for x in d["builds"] if x["id"] != bid] + [b]
-    bp.write_text(dumps(d) + "\n", encoding="utf-8")
+    import builds_io as BIO   # locked, on the file as it is now (2026-11-02: other steps of the class may write the same file in parallel)
+    BIO.update(cls, add=[b])
     SB = _load("spec_builds_tank", ROOT / "_reference/data/spec_builds.py")
     SB.add_to_entry(cls, entry, bid)
     MB = _load("ml_builds_tank", HERE / "ml_builds.py")

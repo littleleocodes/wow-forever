@@ -16,8 +16,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 38/0/13 | DPS |
 | [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/4/36 | DPS |
+| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 38/0/13 | DPS |
+| [Feral Combat/Restoration hybrid — Leveling (open talent search)](builds/hybrid-feral-combat-restoration-open-leveling.md) 🔬 | 11/31/9 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -31,10 +32,10 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 ## Guide, rotation and respec plan
 
-- [Leveling guide](guide.md): the recommended build (Feral Combat, `opt-feral-cat-dps-solo-60`) level by level, what each bracket feels like and what the fight lab does not model.
+- [Leveling guide](guide.md): the recommended build (Feral Combat, `opt-feral-cat-dps-leveling-st`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
 - [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**67.1 h** (25.4% faster than talentless), 1 respec).
-- Recommended build: [opt-feral-cat-dps-solo-60](builds/opt-feral-cat-dps-solo-60.md) (Feral Combat; player page: [Feral Combat leveling](../../leveling/feral-combat.md)).
+- Recommended build: [opt-feral-cat-dps-leveling-st](builds/opt-feral-cat-dps-leveling-st.md) (Feral Combat; player page: [Feral Combat leveling](../../leveling/feral-combat.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
 
@@ -44,9 +45,10 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Balance](../../leveling/balance.md) | `opt-balance-dps-leveling-st` | - | - |
-| [Feral Combat](../../leveling/feral-combat.md) | `leveling-feral` | - | - |
+| [Feral Combat](../../leveling/feral-combat.md) ✅ | `opt-feral-cat-dps-leveling-st` | feral-cat-dps | 25.8 |
+| [Balance](../../leveling/balance.md) | `opt-balance-dps-leveling-st` | balance-dps | 34.3 |
 | [Restoration](../../leveling/restoration.md) | `restoration-leveling` | - | - |
+| [Feral Combat/Restoration hybrid](../../leveling/hybrid-feral-combat-restoration.md) | `hybrid-feral-combat-restoration-open-leveling` | - | - |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -54,21 +56,21 @@ The `feral-cat-dps` report below is the fight-lab pipeline's (research): its opt
 
 | Build | L15 | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|---|
-| `opt-feral-cat-dps-leveling-st` (optimizer) | 31.0s | 21.4s | 24.8s | 28.4s | 28.7s | 30.8s | 0.0 | 2.8s |
-| `leveling-feral` (hand draft) | 31.0s (+0%) | 21.7s (+1%) | 25.1s (+1%) | 29.1s (+2%) | 29.5s (+3%) | 32.1s (+4%) | 0.0 | 2.6s |
-| `opt-feral-cat-dps-leveling-st` in blues (dungeon blues from the item database) | 26.8s (-13%) | 19.4s (-9%) | 22.5s (-9%) | 26.1s (-8%) | 27.3s (-5%) | 28.8s (-7%) | 0.0 | 2.0s |
+| `opt-feral-cat-dps-leveling-st` (optimizer) | 23.6s | 16.7s | 21.4s | 25.3s | 27.3s | 30.7s | 0.0 | 2.8s |
+| `leveling-feral` (hand draft) | 23.8s (+1%) | 16.9s (+1%) | 21.7s (+1%) | 25.6s (+1%) | 27.5s (+1%) | 30.7s (-0%) | 0.0 | 2.4s |
+| `opt-feral-cat-dps-leveling-st` in blues (dungeon blues from the item database) | 20.8s (-12%) | 15.3s (-8%) | 19.4s (-9%) | 23.3s (-8%) | 25.9s (-5%) | 28.4s (-7%) | 0.0 | 1.9s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-feral-cat-dps-leveling-st` at level 60): Blood Frenzy +5% (L30 +1%), Sharpened Claws +5% (L30 +4%), Nature's Reach +4%, Naturalist +4%, Berserk +3%, Predatory Strikes +3% (L30 +4%).
-- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Nature's Focus, Thick Hide.
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-feral-cat-dps-leveling-st` at level 60): Naturalist +7% (L30 +7%), Sharpened Claws +5% (L30 +5%), Blood Frenzy +4% (L30 +3%), Nature's Reach +4% (L30 +3%), Nature's Majesty +3% (L30 +3%), Ferocity +3% (L30 +5%).
+- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Furor, Nature's Focus.
 - **Caster mobs:** 19% of pulls at level 20 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-26, mean time per kill over levels 15/20/30/40/50/60): cand-cat-r6 28.2s, cand-cat-hand-2026-09-26 28.8s, leveling-feral 29.0s, cand-cat-r2 29.1s, cand-cat-r1 29.1s, cand-cat-r4 29.1s, cand-cat-r5 29.2s, cand-cat-r3 29.2s — fastest: **cand-cat-r6**.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-02, mean time per kill over levels 15/20/30/40/50/60): leveling-feral 26.1s, cand-cat-r6 28.6s, cand-cat-r2 28.8s, cand-cat-r1 29.0s, cand-cat-hand-2026-09-26 29.1s, cand-cat-r4 29.3s, cand-cat-r3 29.3s, cand-cat-r5 29.3s — fastest: **leveling-feral**.
 - **Calibration:** the scorer's `feral-cat-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (2 rounds, converged: the optimizer build repeats).
-- **Other spec, same module:** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps.md)): L30 50.3s (+103% vs `opt-feral-cat-dps-leveling-st`), L60 37.4s (+21% vs `opt-feral-cat-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Balance (its own rotation):** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps-opt.md)): L40 52.8s per mob in pulls of 1 (single-target build 28.4s), 0.0 deaths/100; L60 37.4s per mob in pulls of 1 (single-target build 30.8s), 0.0 deaths/100.
+- **Other spec, same module:** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps.md)): L30 33.2s (+55% vs `opt-feral-cat-dps-leveling-st`), L60 35.7s (+16% vs `opt-feral-cat-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **Balance (its own rotation):** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps-opt.md)): L40 52.8s per mob in pulls of 1 (single-target build 25.3s), 0.0 deaths/100; L60 37.4s per mob in pulls of 1 (single-target build 30.7s), 0.0 deaths/100.
 - **Not simulated:** levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, Hurricane, Lacerate's stacks, adds, gear upgrades within a level bracket.
-- **Pipeline result:** `cand-cat-r6` beats the hand draft by more than the 2% margin but has not been adopted (`rebuild.py druid --steps race,adopt,report,regen`). The player pages pick by their own races (the table at the top of this section).
+- **Pipeline result:** the hand draft `leveling-feral` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
 ## Optimizer (stats model) — builds derived from talent numbers
 

@@ -11,8 +11,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Elemental** | [Elemental (optimized)](leveling/elemental.md) | [Elemental — Lightning Overload / Elemental Fury](raid/elemental.md)<br>564 DPS (raid) |
-| **Enhancement** | [Leveling — Enhancement](leveling/enhancement.md) | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>720 DPS (raid) |
+| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>37 s/kill | [Elemental — Lightning Overload / Elemental Fury](raid/elemental.md)<br>564 DPS (raid) |
+| **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>31 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>720 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬 | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -31,7 +31,12 @@ Builds that spend their points across two trees, each made for a particular job.
 
 ### Leveling (solo)
 
-No leveling numbers yet.
+Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
+
+| # | Spec and build | Seconds per kill | Behind the fastest |
+|---|---|---|---|
+| 1 | [Enhancement](leveling/enhancement.md) — Leveling — Enhancement | 31 | fastest |
+| 2 | [Elemental](leveling/elemental.md) (optimized) | 37 | +18% |
 
 ### Raid (group)
 

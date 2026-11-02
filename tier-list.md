@@ -46,7 +46,7 @@ Healing capacity in this project's healer lab: how much of the lab's standard ra
 |---|---|---|---|---|
 | **S** | [Shaman: Restoration](shaman/raid/restoration.md) | 0/10/41 | 0.69 | best |
 | **S** | [Priest: Holy](priest/raid/holy.md) | 22/29/0 | 0.69 | 0.5% |
-| **A** | [Druid: Restoration](druid/raid/restoration.md) | 11/4/36 | 0.65 | 6.1% |
+| **A** | [Druid: Restoration](druid/raid/restoration.md) | 12/1/38 | 0.66 | 4.7% |
 | **A** | [Paladin: Holy](paladin/raid/holy.md) | 32/5/14 | 0.63 | 9.3% |
 | **A** | [Priest: Discipline](priest/raid/discipline.md) | 30/21/0 | 0.63 | 9.5% |
 

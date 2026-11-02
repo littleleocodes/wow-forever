@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Restoration
 
-**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (11/4/36) — [open the talent tree](https://talentsforever.com/druid/60/05302001-04-153311505310305-7)
+**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (12/1/38) — [open the talent tree](https://talentsforever.com/druid/60/25022001-01-155310505311305-7)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Restoration — Raid Healer), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -37,7 +37,7 @@ Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank
 
 ## The numbers
 
-Healing capacity 0.65 (the raid damage it heals through in this project's healer lab), 380 healing per second. Healers are not in the community simulator.
+Healing capacity 0.66 (the raid damage it heals through in this project's healer lab), 390 healing per second. Healers are not in the community simulator.
 
 **The gear** (average item level: Pre-BiS 59.1; Phase 1 BiS 62.8; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 

@@ -266,10 +266,8 @@ def write_build(cls, spec, hand, st, data, ours, healers, paths, SM):
     if gain is not None and gain >= 0.02:
         b["replaces"] = hand
         b["notes"].insert(0, f"{gain:+.1%} capacity over the hand draft {hand} (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).")
-    bp = paths.builds_json("forever", cls)
-    d = json.load(open(bp, encoding="utf-8"))
-    d["builds"] = [x for x in d["builds"] if x["id"] != bid] + [b]
-    bp.write_text(dumps(d) + "\n", encoding="utf-8")
+    import builds_io as BIO   # locked, on the file as it is now (2026-11-02: the priest's raid steps write the same file in parallel)
+    BIO.update(cls, add=[b])
     st["build"] = {"written": bid, "gain_vs_hand": gain}
     log(f"  wrote {bid}" + (f" ({gain:+.1%} vs {hand})" if gain is not None else ""))
     rewrite_lab_report(cls)

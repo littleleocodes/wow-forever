@@ -75,9 +75,9 @@ Planned per-class addition: `professions/`.
 
 | Class | Classic baseline builds | Forever tree (beta client 1.60.1.70707) | Forever builds | Scenario folders |
 |---|---|---|---|---|
-| [Druid](../druid/README.md) | 7 | 52 talents | 7 hand drafts + 9 derived + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
+| [Druid](../druid/README.md) | 7 | 52 talents | 7 hand drafts + 10 derived + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
 | [Hunter](../hunter/README.md) | 5 | 50 talents | 10 hand drafts + 13 derived + 11 optimizer builds | [leveling](../hunter/research/leveling/README.md) · [raid](../hunter/research/raid/README.md) · [pvp](../hunter/research/pvp/README.md) |
-| [Mage](../mage/README.md) | 7 | 53 talents | 9 hand drafts + 15 derived + 8 optimizer builds | [leveling](../mage/research/leveling/README.md) · [raid](../mage/research/raid/README.md) · [pvp](../mage/research/pvp/README.md) |
+| [Mage](../mage/README.md) | 7 | 53 talents | 9 hand drafts + 14 derived + 8 optimizer builds | [leveling](../mage/research/leveling/README.md) · [raid](../mage/research/raid/README.md) · [pvp](../mage/research/pvp/README.md) |
 | [Paladin](../paladin/README.md) | 5 | 51 talents | 6 hand drafts + 12 derived + 7 optimizer builds | [leveling](../paladin/research/leveling/README.md) · [raid](../paladin/research/raid/README.md) · [pvp](../paladin/research/pvp/README.md) |
 | [Priest](../priest/README.md) | 4 | 52 talents | 5 hand drafts + 10 derived + 6 optimizer builds | [leveling](../priest/research/leveling/README.md) · [raid](../priest/research/raid/README.md) · [pvp](../priest/research/pvp/README.md) |
 | [Rogue](../rogue/README.md) | 5 | 53 talents | 8 hand drafts + 13 derived + 8 optimizer builds | [leveling](../rogue/research/leveling/README.md) · [raid](../rogue/research/raid/README.md) · [pvp](../rogue/research/pvp/README.md) |

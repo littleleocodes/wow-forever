@@ -2,28 +2,28 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > Fury
 
+**✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
+
 **[Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-05053035052011521--7)
 
-**Signature spells:** 85% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
+**Signature spells:** 86% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Bloodthrill**, **Improved Slam**, **Mortal Strike**, **Spearing Strike**, **Sweeping Strikes** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
-
-**Before the fight:** **Battle Stance**, a two-handed weapon.
+**Before the fight:** **Battle Stance**, a weapon in each hand.
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
+1. **Bloodrage** (above 45% health) and **Death Wish** when it is ready, then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
 2. **Battle Shout**: keep it up (it lasts 3 minutes).
 3. **Execute** first once the mob is below 20% health.
-4. **Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.
-5. **Mortal Strike** whenever ready.
+4. **Overpower** whenever it lights up (after a dodge).
+5. **Bloodthirst** whenever ready.
 6. **Rend** once, while the mob has more than a third of its health.
-7. Spare rage: **Slam** (only with **Improved Slam**), then **Spearing Strike**, then **Heroic Strike**; keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
-8. Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
+7. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
+8. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
 
-**Between fights:** Bandage below 60% health, eat below 50%.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
@@ -77,6 +77,16 @@ One point per level from 10, in this order:
 | 55-56 | Improved Rend (Arms) | 2 |
 | 57-59 | Deep Wounds (Arms) | 3 |
 | 60 | Improved Intercept (Fury) | 1 |
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 21 |
+| 30 | 23 |
+| 40 | 25 |
+| 50 | 26 |
+| 60 | 29 |
 
 ## Other builds of this spec
 

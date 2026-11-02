@@ -21,9 +21,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) 🔬 | 9/33/9 | DPS |
-| [Restoration — Raid healing (machine-learning search)](builds/restoration-ml-heal.md) 🔬 | 11/4/36 | HEALER |
 | [Feral Combat — Raid tank (machine-learning search)](builds/feral-combat-ml-tank.md) 🔬 | 9/35/7 | TANK |
 | [Feral Combat — Raid (open talent search)](builds/feral-combat-open-raid.md) 🔬 | 9/32/10 | DPS |
+| [Restoration — Raid healing (machine-learning search)](builds/restoration-ml-heal.md) 🔬 | 12/1/38 | HEALER |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -88,7 +88,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
-| Ferocious Bite | Feral Combat | 60 | - | Finishing move that causes damage per combo point and converts each extra point of energy into 2.7 additional damage. | not cast by any raced build | feral-cat-dps (training dummy): drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost (+2.2%); feral-cat-dps (raid): drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost (+1.0%); feral-cat-dps (raid): insert at the top: if (combo points ≥ 5 and not time left in the fight ≥ 10s or combo poin (+0.2%) | 15% of the damage, 0.9 casts a kill: `opt-feral-cat-dps-leveling-st` at 60 (feral-cat-dps) |  |
+| Ferocious Bite | Feral Combat | 60 | - | Finishing move that causes damage per combo point and converts each extra point of energy into 2.7 additional damage. | not cast by any raced build | feral-cat-dps (training dummy): drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost (+2.2%); feral-cat-dps (raid): drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost (+1.0%); feral-cat-dps (raid): insert at the top: if (combo points ≥ 5 and not time left in the fight ≥ 10s or combo poin (+0.2%) | 16% of the damage, 1.0 casts a kill: `opt-feral-cat-dps-leveling-st` at 60 (feral-cat-dps) |  |
 | Lacerate | Feral Combat | 58 | - | Lacerates the enemy target, making them bleed for 75 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. | 3% of the damage, 5.5 casts/min: *Bear* (feral-bear-tank) | feral-bear-tank (raid): only with 20s or more of the fight left: cast Lacerate (+1.2%); feral-bear-tank (raid): drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left  (+0.3%) | not cast | Bear bleed; the simulator's Bear rotation casts it. |
 | Primal Bite | Feral Combat | 60 | 6 sec | Bite the target, dealing 100% normal damage plus 77 and generating a high amount of threat. | not cast by any raced build | feral-bear-tank (raid): drop: cast Primal Bite (+2.2%); feral-bear-tank (raid): move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerat (+0.6%) | not cast | Forever's Mangle, a Feral talent. Bear and Dire Bear only (the client's shapeshift mask, which the simulator follows), so no Cat build can use it; the simulator's Bear rotation casts it. |
 | Shifting Power | Feral Combat | 40 | 8 sec | Instantly convert 55% of base Mana into 40 Energy. | no damage of its own, 3.7 casts/min: *Cat* (feral-cat-dps) | feral-cat-dps (training dummy): insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%); feral-cat-dps (raid): insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%) | not cast |  |
@@ -169,15 +169,15 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Build | Split | Capacity | Effective HPS | Overheal | Out of mana | Healing split |
 |---|---|---|---|---|---|---|---|
-| `resto-heal` | `restoration-ml-heal` ✅ Restoration page | 11/5/35 | 0.653 | 380 | 14% | 26 s | Healing Touch 57%, Rejuvenation 28%, Regrowth 9%, Tranquility 4%, Swiftmend 1% |
-| `resto-heal` | `resto-raid-healer` | 11/5/35 | 0.637 | 374 | 14% | 35 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 10%, Wild Growth 3%, Swiftmend 1% |
-| `resto-heal` | `opt-resto-heal-raid-heal` | 11/5/35 | 0.637 | 374 | 14% | 35 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 10%, Wild Growth 3%, Swiftmend 1% |
-| `resto-heal` | `cand-resto-r2` | 11/5/35 | 0.637 | 374 | 14% | 35 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 10%, Wild Growth 3%, Swiftmend 1% |
-| `resto-heal` | `cand-resto-r1` | 11/5/35 | 0.634 | 371 | 14% | 33 s | Healing Touch 56%, Rejuvenation 30%, Regrowth 9%, Wild Growth 4%, Swiftmend 1% |
-| `resto-heal` | `cand-resto-heal-hand-2026-09-28` | 11/0/40 | 0.633 | 367 | 14% | 39 s | Healing Touch 56%, Rejuvenation 28%, Regrowth 10%, Wild Growth 4%, Swiftmend 1% |
-| `resto-heal` | `resto-regrowth-natures-grace` | 21/0/30 | 0.594 | 347 | 14% | 42 s | Healing Touch 54%, Rejuvenation 28%, Regrowth 11%, Tranquility 6%, Swiftmend 1% |
+| `resto-heal` | `restoration-ml-heal` ✅ Restoration page | 12/1/38 | 0.662 | 390 | 14% | 28 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 8%, Tranquility 6%, Swiftmend 1% |
+| `resto-heal` | `resto-raid-healer` | 11/0/40 | 0.645 | 379 | 14% | 34 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 9%, Wild Growth 4%, Swiftmend 1% |
+| `resto-heal` | `opt-resto-heal-raid-heal` | 11/0/40 | 0.645 | 379 | 14% | 34 s | Healing Touch 57%, Rejuvenation 29%, Regrowth 9%, Wild Growth 4%, Swiftmend 1% |
+| `resto-heal` | `cand-resto-r2` | 11/5/35 | 0.636 | 378 | 15% | 32 s | Healing Touch 56%, Rejuvenation 31%, Regrowth 9%, Wild Growth 3%, Swiftmend 1% |
+| `resto-heal` | `cand-resto-r1` | 11/5/35 | 0.636 | 378 | 14% | 30 s | Healing Touch 56%, Rejuvenation 31%, Regrowth 8%, Wild Growth 3%, Swiftmend 1% |
+| `resto-heal` | `cand-resto-heal-hand-2026-09-28` | 11/0/40 | 0.628 | 367 | 15% | 33 s | Healing Touch 56%, Rejuvenation 30%, Regrowth 8%, Wild Growth 4%, Swiftmend 1% |
+| `resto-heal` | `resto-regrowth-natures-grace` | 21/0/30 | 0.602 | 356 | 14% | 37 s | Healing Touch 54%, Rejuvenation 29%, Regrowth 10%, Tranquility 6%, Swiftmend 1% |
 
-Talents that matter most for `resto-raid-healer` (capacity lost when removed): Reflection +16.0%, Gift of Nature +5.9%, Living Spirit +5.9%, Nature's Splendor +5.5%, Tranquil Spirit +5.0%, Improved Rejuvenation +2.8%, Swiftmend +2.6%, Genesis +2.3%.
+Talents that matter most for `resto-raid-healer` (capacity lost when removed): Reflection +17.3%, Gift of Nature +6.9%, Nature's Splendor +6.8%, Tranquil Spirit +5.1%, Living Spirit +4.8%, Genesis +3.6%, Heart of the Wild +3.1%, Improved Rejuvenation +3.1%.
 
 ## Rotation, gear and consumables
 

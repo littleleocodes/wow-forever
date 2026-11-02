@@ -6,15 +6,15 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking |
 |---|---|---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | - | [Feral Combat](druid/raid/feral-combat.md) (776 DPS) | [Restoration](druid/raid/restoration.md) | [Feral Combat](druid/raid/feral-combat.md) (Feral Combat (optimized, tank)) |
-| [**Hunter**](hunter/README.md) | damage | - | [Marksmanship](hunter/raid/marksmanship.md) (782 DPS), [Beast Mastery](hunter/raid/beast-mastery.md) (773 DPS), [Beast-Marks](hunter/raid/beast-marks.md) (763 DPS) | - | - |
-| [**Mage**](mage/README.md) | damage | - | [Fire](mage/raid/fire.md) (828 DPS) | - | - |
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (26 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (776 DPS) | [Restoration](druid/raid/restoration.md) | [Feral Combat](druid/raid/feral-combat.md) (Feral Combat (optimized, tank)) |
+| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (22 s/kill) | [Marksmanship](hunter/raid/marksmanship.md) (782 DPS), [Beast Mastery](hunter/raid/beast-mastery.md) (773 DPS), [Beast-Marks](hunter/raid/beast-marks.md) (763 DPS) | - | - |
+| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (29 s/kill) | [Fire](mage/raid/fire.md) (828 DPS) | - | - |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (27 s/kill), [Prot-Ret](paladin/leveling/prot-ret.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (840 DPS) | [Holy](paladin/raid/holy.md) | [Protection](paladin/raid/protection.md) |
 | [**Priest**](priest/README.md) | damage, healer | - | [Shadow](priest/raid/shadow.md) (796 DPS) | [Holy](priest/raid/holy.md) (capacity 0.69), [Discipline](priest/raid/discipline.md) (capacity 0.63) | - |
 | [**Rogue**](rogue/README.md) | damage | - | [Combat](rogue/raid/combat.md) (651 DPS) | - | - |
-| [**Shaman**](shaman/README.md) | damage, healer | - | [Enhancement](shaman/raid/enhancement.md) (720 DPS) | [Restoration](shaman/raid/restoration.md) | - |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (31 s/kill) | [Enhancement](shaman/raid/enhancement.md) (720 DPS) | [Restoration](shaman/raid/restoration.md) | - |
 | [**Warlock**](warlock/README.md) | damage | - | [Demonology](warlock/raid/demonology.md) (845 DPS) | - | - |
-| [**Warrior**](warrior/README.md) | damage, tank | - | [Fury](warrior/raid/fury.md) (864 DPS) | - | [Protection](warrior/raid/protection.md) |
+| [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (26 s/kill) | [Fury](warrior/raid/fury.md) (864 DPS) | - | [Protection](warrior/raid/protection.md) |
 
 Several specs in one damage or leveling cell share the recommendation: each is within 3% of the class's best spec in that column, a tie in the simulations. Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage. Healers are ranked within their class by the healer lab's capacity (this project's healing model; healers are not in the community simulator); tanks are listed, not ranked.
 

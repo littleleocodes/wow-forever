@@ -20,7 +20,7 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [12/16/23](https://talentsforever.com/paladin/60/05025-5230111021-502331010113003-7) | Hybrid Protection/Retribution | 27.83 | +2.1% |
 | [mage](../mage/research/leveling/open-search.md) | barrage-frost-leveling | [18/2/31](https://talentsforever.com/mage/60/2200052011003-2-05053233011030021-7) | Frost | 28.74 | +4.3% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [21/16/14](https://talentsforever.com/paladin/60/05025014210001-5131011031-23233001-7) | Hybrid Holy/Protection | 29.47 | +2.8% |
-| [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/3/30](https://talentsforever.com/mage/60/2121250000003-3-13053223012030021-7) | Frost | 30.24 | +4.0% |
+| [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/3/30](https://talentsforever.com/mage/60/2121250000003-3-13053223012030021-7) | Frost | 30.24 | -0.3% |
 | [warlock](../warlock/research/leveling/open-search.md) | demonology-leveling | [27/24/0](https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--7) | Hybrid Affliction/Demonology | 30.42 | +2.4% |
 | [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [13/32/6](https://talentsforever.com/shaman/60/5322001-050130321005112251-05001-7) | Enhancement | 30.49 | +1.4% |
 | [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [13/25/13](https://talentsforever.com/paladin/60/050240002-353001021113014-05233-7) | Hybrid Holy/Protection | 32.03 | +7.7% |

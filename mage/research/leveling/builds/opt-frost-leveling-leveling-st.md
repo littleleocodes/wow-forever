@@ -67,17 +67,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): never cast Cone of Cold; Frostbolt only while the mob has more than 20% health; Fire Blast only while the mob has more than 10% health. Together +3.7% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): Frostbolt only while the mob has more than 20% health; never cast Cone of Cold; Fire Blast only when the mob is below 20% health; drink below 15% mana; Fire Blast only while the mob has more than 10% health. Together +5.5% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/frost-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 2.7 | 3.5 | 4.2 | 3.5 | 3.2 | 55% |
-| Frostbolt | 2.7 | 2.0 | 1.8 | 1.8 | 1.9 | 28% |
-| Fire Blast | 0.9 | 1.6 | 1.6 | 1.3 | 1.1 | 14% |
-| Wand | 0.3 | 0.7 | 1.0 | 0.7 | 0.9 | 2% |
-| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
+| Frostbolt | 2.8 | 3.7 | 4.1 | 3.5 | 3.2 | 52% |
+| Wand | 0.7 | 1.2 | 1.6 | 1.5 | 1.7 | 4% |
+| Ice Lance | 1.1 | 1.6 | 1.8 | 1.6 | 1.6 | 36% |
+| Frost Nova | 0.4 | 0.7 | 0.8 | 0.7 | 0.6 | 1% |
+| Fire Blast | 0.4 | 0.5 | 0.5 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes

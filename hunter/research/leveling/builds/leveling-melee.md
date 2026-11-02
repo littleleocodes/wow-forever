@@ -78,18 +78,17 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.6 | 5.7 | 6.6 | 7.8 | 13% |
-| Claw | 4.8 | 5.7 | 6.4 | 6.9 | 7.7 | 8% |
-| Melee | 1.8 | 2.7 | 3.5 | 4.1 | 4.9 | 13% |
-| Growl | 1.9 | 2.5 | 3.2 | 3.5 | 3.9 | 0% |
-| Raptor Strike | 1.4 | 1.9 | 2.2 | 2.5 | 2.8 | 14% |
-| Bite | 1.0 | 1.4 | 1.8 | 1.9 | 2.0 | 4% |
-| Mongoose Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.3 | 6% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
-| Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Immolation Trap | 0.5 | 0.5 | 0.6 | 0.7 | 0.8 | 10% |
-| Lacerate | 0.0 | 0.3 | 0.7 | 0.8 | 0.7 | 5% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee (off-hand) | 2.4 | 3.8 | 5.6 | 6.6 | 7.9 | 13% |
+| Claw | 4.1 | 5.1 | 6.1 | 6.7 | 7.7 | 8% |
+| Melee | 1.3 | 2.1 | 3.4 | 4.1 | 5.0 | 13% |
+| Growl | 1.5 | 2.1 | 2.9 | 3.4 | 3.9 | 0% |
+| Raptor Strike | 1.1 | 1.6 | 2.1 | 2.4 | 2.8 | 14% |
+| Bite | 1.0 | 1.1 | 1.6 | 1.9 | 2.0 | 4% |
+| Mongoose Bite | 0.2 | 0.4 | 0.8 | 1.1 | 1.3 | 6% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 5% |
+| Hunter's Mark | 0.8 | 0.9 | 1.0 | 1.0 | 1.0 | 0% |
+| Immolation Trap | 0.4 | 0.5 | 0.5 | 0.6 | 0.8 | 10% |
+| Lacerate | 0.0 | 1.0 | 0.7 | 0.7 | 0.6 | 4% |
 | Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

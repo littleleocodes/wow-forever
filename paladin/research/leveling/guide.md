@@ -20,7 +20,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 21.8 | 26.6 | 34.5 | 36.7 | 42.1 | 34.9 |
 | [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | prot-leveling | 22.7 | 30.5 | 38.7 | 37.6 | 38.1 | 35.4 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **62.3 h** (30.8% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **62.5 h** (30.5% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

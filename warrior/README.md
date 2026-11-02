@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Arms** | [Leveling — Arms two-hander](leveling/arms.md) | [Arms — Raid](raid/arms.md) 🔬<br>779 DPS (raid) |
-| **Fury** | [Fury (optimized)](leveling/fury.md) | **✅ Recommended**<br>[Fury — Raid](raid/fury.md) 🔬<br>864 DPS (raid) |
-| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬 | [Protection — Raid tank](raid/protection.md) 🔬<br>tank |
+| **Arms** | [Arms (optimized)](leveling/arms.md)<br>27 s/kill | [Arms — Raid](raid/arms.md) 🔬<br>779 DPS (raid) |
+| **Fury** | **✅ Recommended**<br>[Fury (optimized)](leveling/fury.md)<br>26 s/kill | **✅ Recommended**<br>[Fury — Raid](raid/fury.md) 🔬<br>864 DPS (raid) |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬 | [Protection — Raid tank](raid/protection.md) 🔬<br>tank |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -22,7 +22,12 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 ### Leveling (solo)
 
-No leveling numbers yet.
+Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
+
+| # | Spec and build | Seconds per kill | Behind the fastest |
+|---|---|---|---|
+| 1 | [Fury](leveling/fury.md) (optimized) | 26 | fastest |
+| 2 | [Arms](leveling/arms.md) (optimized) | 27 | +3% |
 
 ### Raid (group)
 

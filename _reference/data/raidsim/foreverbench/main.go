@@ -183,7 +183,18 @@ func clearField(m gproto.Message, name string) bool {
 	return true
 }
 
+// fieldAliases: raid buff fields upstream renamed at the 2026-11-01 rank work (b6657d382: the group buffs became one input reading the
+// single-target spell's top rank, whose amounts match the group spell's top rank), so specs.json and run.py run on both sides of the re-pin.
+var fieldAliases = map[string]string{
+	"gift_of_the_wild": "mark_of_the_wild", "mark_of_the_wild": "gift_of_the_wild",
+	"prayer_of_fortitude": "power_word_fortitude", "power_word_fortitude": "prayer_of_fortitude",
+	"arcane_brilliance": "arcane_intellect", "arcane_intellect": "arcane_brilliance",
+	"prayer_of_shadow_protection": "shadow_protection", "shadow_protection": "prayer_of_shadow_protection",
+}
+
 // setField sets one field of a buff or debuff message from a JSON value: true/false, a number, or an enum value name.
+// A rank select (int32 since b6657d382: 0 off, 1 the trainer's top rank, 2+ book ranks) takes true as 1 and false as 0, and a bool
+// field takes a number as on (non-zero) or off, so a config written for either side of that change reads the same.
 func setField(m gproto.Message, name string, raw json.RawMessage) bool {
 	r := m.ProtoReflect()
 	fd := r.Descriptor().Fields().ByName(protoreflect.Name(name))
@@ -191,17 +202,27 @@ func setField(m gproto.Message, name string, raw json.RawMessage) bool {
 		fd = r.Descriptor().Fields().ByJSONName(name)
 	}
 	if fd == nil {
+		if alt, ok := fieldAliases[name]; ok {
+			fd = r.Descriptor().Fields().ByName(protoreflect.Name(alt))
+		}
+	}
+	if fd == nil {
 		return false
 	}
 	var num float64
 	isNum := json.Unmarshal(raw, &num) == nil
+	var flag bool
+	isBool := json.Unmarshal(raw, &flag) == nil
 	switch fd.Kind() {
 	case protoreflect.BoolKind:
-		var b bool
-		if err := json.Unmarshal(raw, &b); err != nil {
-			die("buff %s: %v", name, err)
+		if isNum {
+			r.Set(fd, protoreflect.ValueOfBool(num != 0))
+			break
 		}
-		r.Set(fd, protoreflect.ValueOfBool(b))
+		if !isBool {
+			die("buff %s: not true/false", name)
+		}
+		r.Set(fd, protoreflect.ValueOfBool(flag))
 	case protoreflect.EnumKind:
 		if isNum {
 			r.Set(fd, protoreflect.ValueOfEnum(protoreflect.EnumNumber(int32(num))))
@@ -217,7 +238,12 @@ func setField(m gproto.Message, name string, raw json.RawMessage) bool {
 			r.Set(fd, protoreflect.ValueOfEnum(ev.Number()))
 		}
 	case protoreflect.Int32Kind:
-		if !isNum {
+		if !isNum && isBool {
+			num = 0
+			if flag {
+				num = 1
+			}
+		} else if !isNum {
 			die("buff %s: not a number", name)
 		}
 		r.Set(fd, protoreflect.ValueOfInt32(int32(num)))

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +4.3% faster per kill than opt-frost-leveling-leveling-st, the fastest of our leveling builds in that race.
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +4.3% faster per kill than opt-frost-leveling-leveling-st, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -19,14 +19,13 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Resilience** | 1/3 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
-| **Improved Channeling** | 2/5 | **NEW** | Gives your Arcane Missiles spell a 40% chance and your Arcane Blast and Arcane Wrath spells a 28% chance to not lose casting time when you take damage. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Subtlety** | 1/2 | changed | Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%. |
+| **Arcane Focus** | 2/? | ? |  |
+| **Improved Channeling** | 2/5 | **NEW** | Gives your Arcane Missiles spell a 40% chance and your Arcane Blast and Arcane Wrath spells a 28% chance to not lose casting time when you take damage. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
-| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
+| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Impact** | 1/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 2%. |
+| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Fire (2)
@@ -40,9 +39,9 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
-| **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
+| **Elemental Precision** | 2/? | ? |  |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
+| **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
 | **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
@@ -51,6 +50,37 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 | **Winter's Chill** | 1/5 | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
+
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
+| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
+| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
+| 24 | Frost | Ice Shards | 1 | 0/0/15 |
+| 25 | Frost | Shatter | 1 | 0/0/16 |
+| 26-27 | Frost | Ice Shards | 2 | 0/0/18 |
+| 28-29 | Frost | Shatter | 2 | 0/0/20 |
+| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
+| 32-33 | Frost | Ice Shards | 2 | 0/0/24 |
+| 34 | Frost | Arctic Reach | 1 | 0/0/25 |
+| 35-36 | Arcane | Missile Barrage | 2 | 2/0/25 |
+| 37-38 | Frost | Improved Frost Nova | 2 | 2/0/27 |
+| 39-41 | Frost | Permafrost | 3 | 2/0/30 |
+| 42 | Frost | Winter's Chill | 1 | 2/0/31 |
+| 43-44 | Arcane | Wand Specialization | 2 | 4/0/31 |
+| 45 | Arcane | Arcane Focus | 1 | 5/0/31 |
+| 46-50 | Arcane | Arcane Concentration | 5 | 10/0/31 |
+| 51 | Arcane | Arcane Focus | 1 | 11/0/31 |
+| 52 | Arcane | Improved Channeling | 1 | 12/0/31 |
+| 53 | Arcane | Arcane Impact | 1 | 13/0/31 |
+| 54 | Arcane | Arcane Blast | 1 | 14/0/31 |
+| 55 | Arcane | Improved Channeling | 1 | 15/0/31 |
+| 56-58 | Arcane | Arcane Meditation | 3 | 18/0/31 |
+| 59-60 | Fire | Incineration | 2 | 18/2/31 |
 
 ## Core talents (priority order)
 
@@ -71,7 +101,6 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.74; opt-frost-leveling-leveling-st 29.99. The search simulated 56,114 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
-- 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 18/2/31 -> 18/2/31; Arcane Focus 2 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Subtlety (tier gating for Arcane Meditation); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

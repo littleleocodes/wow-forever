@@ -2,24 +2,22 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Marksmanship
 
-**[Leveling — Marksmanship with a pet](../research/leveling/builds/leveling-beast-mastery.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/43201205021-3053512001022151--7)
+**[Marksmanship (optimized)](../research/leveling/builds/opt-mm-raid-leveling-st.md)** (13/33/5) — [open the talent tree](https://talentsforever.com/hunter/60/5120221-0053552001122151-5-7)
 
-**Signature spells:** 66% of the damage at level 60 in the fight lab comes from Auto Shot, Aimed Shot, Arcane Shot, Multi-Shot, Sniper Shot, Barrage, Serpent Sting (the spec's rule: at least 60%; **Aimed Shot** cast in every fight).
+**Signature spells:** 70% of the damage at level 60 in the fight lab comes from Auto Shot, Aimed Shot, Arcane Shot, Multi-Shot, Sniper Shot, Barrage, Serpent Sting (the spec's rule: at least 60%; **Aimed Shot** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Bestial Wrath**, **Intimidation** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
-
-**Before the fight:** Pet out (a cat), **Aspect of the Hawk** up. Send the pet in first and let it hold the mob.
+**Before the fight:** Pet out (a cat), **Aspect of the Hawk** and **Trueshot Aura** up. Send the pet in first and let it hold the mob.
 
 **In the fight**, top to bottom:
 
 1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
-2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
+2. **Rapid Fire** at the start when it is ready.
 3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
-4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
+4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot and Multi-Shot and keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
 
 **Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
 
@@ -50,11 +48,19 @@ Marksmanship levels with the pet tanking, but more of the damage is your own: **
 - Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
 - A mob on you while the pet is down: **Scatter Shot** disorients it for 4 seconds (any damage breaks it), so step back past 8 yards and shoot.
 
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 14 |
+| 30 | 19 |
+| 40 | 24 |
+| 50 | 27 |
+| 60 | 29 |
+
 ## Other builds of this spec
 
-- [Marksmanship (optimized)](../research/leveling/builds/opt-bm-leveling-leveling-st.md) (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/5320000505-0053552001021151--7)
 - [Marksmanship (optimized, solo at 60)](../research/leveling/builds/opt-bm-leveling-solo-60.md) (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/5320020503-0053542001022151--7)
-- [Marksmanship (optimized)](../research/leveling/builds/opt-mm-raid-leveling-st.md) (13/33/5) — [open the talent tree](https://talentsforever.com/hunter/60/5120221-0053552001122151-5-7)
 - [Marksmanship — Leveling](../research/leveling/builds/marksmanship-open-leveling.md) (21/30/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-015355200101214--7)
 
 ---

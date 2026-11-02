@@ -857,7 +857,7 @@
    "ours_best": "opt-elemental-dps-leveling-st",
    "gain_vs_ours": 0.0496,
    "synergy": {
-    "date": "2026-10-20",
+    "date": "2026-11-02",
     "winner": "21/22/8",
     "relevant": 36,
     "missing": 20,
@@ -1003,9 +1003,9 @@
       "kind": "swap"
      },
      {
-      "pair": "Flurry + Maelstrom Weapon",
-      "gain": 0.0157,
-      "interaction": 0.0105
+      "pair": "Elemental Mastery + Maelstrom Weapon",
+      "gain": 0.0186,
+      "interaction": 0.0097
      }
     ],
     "leads": [],
@@ -1706,8 +1706,8 @@
       "interaction": 0.0
      },
      "Flurry + Maelstrom Weapon": {
-      "gain": 0.0157,
-      "interaction": 0.0105
+      "gain": -0.72,
+      "interaction": -0.7252
      },
      "Flurry + Rage of the Farseer": {
       "gain": 0.0005,
@@ -4919,7 +4919,7 @@
        "Maelstrom Weapon": 5
       },
       "removed": {},
-      "gain": 0.01565
+      "gain": -0.71996
      },
      "Flurry + Rage of the Farseer": {
       "added": {
@@ -8137,7 +8137,7 @@
     ],
     "why": null,
     "spec": "Hybrid Elemental/Enhancement",
-    "date": "2026-10-26"
+    "date": "2026-11-02"
    },
    "signature": {
     "spec": "Hybrid Elemental/Enhancement",
@@ -9132,7 +9132,7 @@
    },
    "values_base": 32.96,
    "synergy": {
-    "date": "2026-10-20",
+    "date": "2026-11-02",
     "winner": "13/32/6",
     "relevant": 36,
     "missing": 17,
@@ -9216,21 +9216,51 @@
     ],
     "top_interactions": [
      {
+      "pair": "Water Shield + Mental Dexterity",
+      "gain": -0.4345,
+      "interaction": 0.0634,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Flurry",
+      "gain": -0.4401,
+      "interaction": 0.0615,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Thundering Strikes",
+      "gain": -0.4601,
+      "interaction": 0.0524,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Improved Lightning Shield",
+      "gain": -0.4441,
+      "interaction": 0.0519,
+      "kind": "swap"
+     },
+     {
+      "pair": "Water Shield + Maelstrom Weapon",
+      "gain": -0.7552,
+      "interaction": 0.0459,
+      "kind": "swap"
+     },
+     {
       "pair": "Mindfulness + Improved Stormstrike",
       "gain": 0.0026,
       "interaction": 0.0452,
       "kind": "swap"
      },
      {
-      "pair": "Mindfulness + Stormstrike",
-      "gain": -0.0855,
-      "interaction": 0.0284,
-      "kind": "swap"
-     },
-     {
       "pair": "Water Shield + Improved Stormstrike",
       "gain": -0.0489,
       "interaction": 0.0153,
+      "kind": "swap"
+     },
+     {
+      "pair": "Mindfulness + Stormstrike",
+      "gain": -0.5885,
+      "interaction": 0.0122,
       "kind": "swap"
      },
      {
@@ -9246,45 +9276,15 @@
       "kind": "swap"
      },
      {
-      "pair": "Lightning Overload + Mental Quickness",
-      "gain": -0.0123,
-      "interaction": 0.0084,
+      "pair": "Elemental Fury + Mental Dexterity",
+      "gain": -0.4515,
+      "interaction": 0.0107,
       "kind": "swap"
      },
      {
-      "pair": "Lightning Overload + Rage of the Farseer",
-      "gain": -0.0064,
-      "interaction": 0.008,
-      "kind": "swap"
-     },
-     {
-      "pair": "Mindfulness + Spirit Weapons",
-      "gain": 0.0061,
-      "interaction": 0.0072,
-      "kind": "swap"
-     },
-     {
-      "pair": "Elemental Reach + Totemic Focus",
-      "gain": 0.0003,
-      "interaction": 0.007,
-      "kind": "swap"
-     },
-     {
-      "pair": "Mindfulness + Reverberation",
-      "gain": 0.0001,
-      "interaction": 0.006,
-      "kind": "swap"
-     },
-     {
-      "pair": "Water Shield + Maelstrom Weapon",
-      "gain": -0.0565,
-      "interaction": 0.0059,
-      "kind": "swap"
-     },
-     {
-      "pair": "Mindfulness + Rage of the Farseer",
-      "gain": -0.0114,
-      "interaction": 0.0056,
+      "pair": "Water Shield + Stormstrike",
+      "gain": -0.6127,
+      "interaction": 0.0096,
       "kind": "swap"
      }
     ],
@@ -9908,29 +9908,29 @@
      "-Reverberation": -0.0069,
      "Reverberation -1": -0.0018,
      "-Elemental Focus": -0.0095,
-     "-Thundering Strikes": -0.0235,
+     "-Thundering Strikes": -0.4919,
      "Thundering Strikes -1": -0.0014,
      "Thundering Strikes -2": -0.014,
      "-Guardian Totems": 0.0,
-     "-Mental Dexterity": -0.034,
+     "-Mental Dexterity": -0.4773,
      "Mental Dexterity -1": -0.0197,
      "Mental Dexterity -2": -0.0289,
-     "-Improved Lightning Shield": -0.0119,
+     "-Improved Lightning Shield": -0.4754,
      "Improved Lightning Shield -1": -0.0192,
      "Improved Lightning Shield -2": -0.0159,
      "-Elemental Weapons": -0.0043,
      "Elemental Weapons -1": 0.0018,
      "-Shamanistic Focus": -0.1123,
-     "-Flurry": -0.0146,
+     "-Flurry": -0.481,
      "Flurry -1": -0.0024,
      "Flurry -2": -0.0091,
-     "-Stormstrike": -0.1149,
+     "-Stormstrike": -0.6017,
      "-Spirit Weapons": -0.0021,
      "-Mental Quickness": -0.0243,
      "Mental Quickness -1": -0.0151,
      "-Improved Stormstrike": -0.0436,
      "Improved Stormstrike -1": -0.0168,
-     "-Maelstrom Weapon": -0.0418,
+     "-Maelstrom Weapon": -0.7805,
      "Maelstrom Weapon -1": -0.0241,
      "Maelstrom Weapon -2": -0.021,
      "-Rage of the Farseer": -0.018,
@@ -10482,7 +10482,7 @@
       "interaction": -0.0
      },
      "Elemental Alacrity + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10492,13 +10492,13 @@
       "kind": "swap"
      },
      "Elemental Alacrity + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Alacrity + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Alacrity + Elemental Weapons": {
@@ -10512,12 +10512,12 @@
       "kind": "swap"
      },
      "Elemental Alacrity + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Elemental Alacrity + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10537,7 +10537,7 @@
       "kind": "swap"
      },
      "Elemental Alacrity + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10552,8 +10552,8 @@
       "kind": "swap"
      },
      "Call of Flame + Thundering Strikes": {
-      "gain": -0.0301,
-      "interaction": -0.014,
+      "gain": -0.493,
+      "interaction": -0.0085,
       "kind": "swap"
      },
      "Call of Flame + Guardian Totems": {
@@ -10562,13 +10562,13 @@
       "kind": "swap"
      },
      "Call of Flame + Mental Dexterity": {
-      "gain": -0.0277,
-      "interaction": -0.0011,
+      "gain": -0.4805,
+      "interaction": -0.0106,
       "kind": "swap"
      },
      "Call of Flame + Improved Lightning Shield": {
-      "gain": -0.0022,
-      "interaction": 0.0023,
+      "gain": -0.4804,
+      "interaction": -0.0124,
       "kind": "swap"
      },
      "Call of Flame + Elemental Weapons": {
@@ -10582,13 +10582,13 @@
       "kind": "swap"
      },
      "Call of Flame + Flurry": {
-      "gain": -0.0249,
-      "interaction": -0.0177,
+      "gain": -0.4844,
+      "interaction": -0.0108,
       "kind": "swap"
      },
      "Call of Flame + Stormstrike": {
-      "gain": -0.1101,
-      "interaction": -0.0026,
+      "gain": -0.5996,
+      "interaction": -0.0053,
       "kind": "swap"
      },
      "Call of Flame + Spirit Weapons": {
@@ -10607,8 +10607,8 @@
       "kind": "swap"
      },
      "Call of Flame + Maelstrom Weapon": {
-      "gain": -0.0432,
-      "interaction": -0.0088,
+      "gain": -0.7807,
+      "interaction": -0.0076,
       "kind": "swap"
      },
      "Call of Flame + Rage of the Farseer": {
@@ -10622,7 +10622,7 @@
       "kind": "swap"
      },
      "Elemental Warding + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10632,13 +10632,13 @@
       "kind": "swap"
      },
      "Elemental Warding + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Warding + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Warding + Elemental Weapons": {
@@ -10652,12 +10652,12 @@
       "kind": "swap"
      },
      "Elemental Warding + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Elemental Warding + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10677,7 +10677,7 @@
       "kind": "swap"
      },
      "Elemental Warding + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10692,7 +10692,7 @@
       "kind": "swap"
      },
      "Trial by Fire + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10702,13 +10702,13 @@
       "kind": "swap"
      },
      "Trial by Fire + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Trial by Fire + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Trial by Fire + Elemental Weapons": {
@@ -10722,12 +10722,12 @@
       "kind": "swap"
      },
      "Trial by Fire + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Trial by Fire + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10747,7 +10747,7 @@
       "kind": "swap"
      },
      "Trial by Fire + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10762,7 +10762,7 @@
       "kind": "swap"
      },
      "Eye of the Storm + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10772,13 +10772,13 @@
       "kind": "swap"
      },
      "Eye of the Storm + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Eye of the Storm + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Eye of the Storm + Elemental Weapons": {
@@ -10792,12 +10792,12 @@
       "kind": "swap"
      },
      "Eye of the Storm + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Eye of the Storm + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10817,7 +10817,7 @@
       "kind": "swap"
      },
      "Eye of the Storm + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10832,7 +10832,7 @@
       "kind": "swap"
      },
      "Earthbound + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10842,13 +10842,13 @@
       "kind": "swap"
      },
      "Earthbound + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Earthbound + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Earthbound + Elemental Weapons": {
@@ -10862,12 +10862,12 @@
       "kind": "swap"
      },
      "Earthbound + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Earthbound + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10887,7 +10887,7 @@
       "kind": "swap"
      },
      "Earthbound + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -10902,8 +10902,8 @@
       "kind": "swap"
      },
      "Elemental Reach + Thundering Strikes": {
-      "gain": -0.048,
-      "interaction": -0.0211,
+      "gain": -0.4913,
+      "interaction": 0.004,
       "kind": "swap"
      },
      "Elemental Reach + Guardian Totems": {
@@ -10912,13 +10912,13 @@
       "kind": "swap"
      },
      "Elemental Reach + Mental Dexterity": {
-      "gain": -0.0396,
-      "interaction": -0.0022,
+      "gain": -0.4759,
+      "interaction": 0.0048,
       "kind": "swap"
      },
      "Elemental Reach + Improved Lightning Shield": {
-      "gain": -0.0216,
-      "interaction": -0.0063,
+      "gain": -0.4876,
+      "interaction": -0.0088,
       "kind": "swap"
      },
      "Elemental Reach + Elemental Weapons": {
@@ -10932,13 +10932,13 @@
       "kind": "swap"
      },
      "Elemental Reach + Flurry": {
-      "gain": -0.0343,
-      "interaction": -0.0163,
+      "gain": -0.4786,
+      "interaction": 0.0058,
       "kind": "swap"
      },
      "Elemental Reach + Stormstrike": {
-      "gain": -0.1225,
-      "interaction": -0.0042,
+      "gain": -0.6051,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Reach + Spirit Weapons": {
@@ -10957,8 +10957,8 @@
       "kind": "swap"
      },
      "Elemental Reach + Maelstrom Weapon": {
-      "gain": -0.051,
-      "interaction": -0.0058,
+      "gain": -0.7795,
+      "interaction": 0.0044,
       "kind": "swap"
      },
      "Elemental Reach + Rage of the Farseer": {
@@ -10972,7 +10972,7 @@
       "kind": "swap"
      },
      "Lava Burst + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -10982,13 +10982,13 @@
       "kind": "swap"
      },
      "Lava Burst + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Lava Burst + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Lava Burst + Elemental Weapons": {
@@ -11002,12 +11002,12 @@
       "kind": "swap"
      },
      "Lava Burst + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Lava Burst + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11027,7 +11027,7 @@
       "kind": "swap"
      },
      "Lava Burst + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11042,8 +11042,8 @@
       "kind": "swap"
      },
      "Lightning Overload + Thundering Strikes": {
-      "gain": -0.0405,
-      "interaction": -0.0206,
+      "gain": -0.49,
+      "interaction": -0.0017,
       "kind": "swap"
      },
      "Lightning Overload + Guardian Totems": {
@@ -11052,13 +11052,13 @@
       "kind": "swap"
      },
      "Lightning Overload + Mental Dexterity": {
-      "gain": -0.0311,
-      "interaction": -0.0007,
+      "gain": -0.4805,
+      "interaction": -0.0068,
       "kind": "swap"
      },
      "Lightning Overload + Improved Lightning Shield": {
-      "gain": -0.0136,
-      "interaction": -0.0053,
+      "gain": -0.4697,
+      "interaction": 0.0021,
       "kind": "swap"
      },
      "Lightning Overload + Elemental Weapons": {
@@ -11072,13 +11072,13 @@
       "kind": "swap"
      },
      "Lightning Overload + Flurry": {
-      "gain": -0.0155,
-      "interaction": -0.0045,
+      "gain": -0.4827,
+      "interaction": -0.0053,
       "kind": "swap"
      },
      "Lightning Overload + Stormstrike": {
-      "gain": -0.1234,
-      "interaction": -0.0121,
+      "gain": -0.6055,
+      "interaction": -0.0074,
       "kind": "swap"
      },
      "Lightning Overload + Spirit Weapons": {
@@ -11097,7 +11097,7 @@
       "kind": "swap"
      },
      "Lightning Overload + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0036,
       "kind": "swap"
      },
@@ -11112,8 +11112,8 @@
       "kind": "swap"
      },
      "Elemental Fury + Thundering Strikes": {
-      "gain": -0.0284,
-      "interaction": -0.02,
+      "gain": -0.4885,
+      "interaction": -0.0117,
       "kind": "swap"
      },
      "Elemental Fury + Guardian Totems": {
@@ -11122,13 +11122,13 @@
       "kind": "swap"
      },
      "Elemental Fury + Mental Dexterity": {
-      "gain": -0.0151,
-      "interaction": 0.0038,
+      "gain": -0.4515,
+      "interaction": 0.0107,
       "kind": "swap"
      },
      "Elemental Fury + Improved Lightning Shield": {
-      "gain": 0.0006,
-      "interaction": -0.0026,
+      "gain": -0.4576,
+      "interaction": 0.0027,
       "kind": "swap"
      },
      "Elemental Fury + Elemental Weapons": {
@@ -11142,13 +11142,13 @@
       "kind": "swap"
      },
      "Elemental Fury + Flurry": {
-      "gain": 0.0011,
-      "interaction": 0.0006,
+      "gain": -0.4669,
+      "interaction": -0.001,
       "kind": "swap"
      },
      "Elemental Fury + Stormstrike": {
-      "gain": -0.0987,
-      "interaction": 0.0011,
+      "gain": -0.5944,
+      "interaction": -0.0078,
       "kind": "swap"
      },
      "Elemental Fury + Spirit Weapons": {
@@ -11167,8 +11167,8 @@
       "kind": "swap"
      },
      "Elemental Fury + Maelstrom Weapon": {
-      "gain": -0.033,
-      "interaction": -0.0063,
+      "gain": -0.7737,
+      "interaction": -0.0083,
       "kind": "swap"
      },
      "Elemental Fury + Rage of the Farseer": {
@@ -11182,7 +11182,7 @@
       "kind": "swap"
      },
      "Elemental Mastery + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -11192,13 +11192,13 @@
       "kind": "swap"
      },
      "Elemental Mastery + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Mastery + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Elemental Mastery + Elemental Weapons": {
@@ -11212,12 +11212,12 @@
       "kind": "swap"
      },
      "Elemental Mastery + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Elemental Mastery + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11237,7 +11237,7 @@
       "kind": "swap"
      },
      "Elemental Mastery + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11307,8 +11307,8 @@
       "kind": "swap"
      },
      "Mindfulness + Thundering Strikes": {
-      "gain": -0.0258,
-      "interaction": -0.0033,
+      "gain": -0.4913,
+      "interaction": -0.0004,
       "kind": "swap"
      },
      "Mindfulness + Guardian Totems": {
@@ -11317,13 +11317,13 @@
       "kind": "swap"
      },
      "Mindfulness + Mental Dexterity": {
-      "gain": -0.0323,
+      "gain": -0.4756,
       "interaction": 0.0007,
       "kind": "swap"
      },
      "Mindfulness + Improved Lightning Shield": {
-      "gain": -0.0113,
-      "interaction": -0.0004,
+      "gain": -0.4764,
+      "interaction": -0.002,
       "kind": "swap"
      },
      "Mindfulness + Elemental Weapons": {
@@ -11337,13 +11337,13 @@
       "kind": "swap"
      },
      "Mindfulness + Flurry": {
-      "gain": -0.0157,
-      "interaction": -0.0021,
+      "gain": -0.4749,
+      "interaction": 0.0051,
       "kind": "swap"
      },
      "Mindfulness + Stormstrike": {
-      "gain": -0.0855,
-      "interaction": 0.0284,
+      "gain": -0.5885,
+      "interaction": 0.0122,
       "kind": "swap"
      },
      "Mindfulness + Spirit Weapons": {
@@ -11362,8 +11362,8 @@
       "kind": "swap"
      },
      "Mindfulness + Maelstrom Weapon": {
-      "gain": -0.0432,
-      "interaction": -0.0024,
+      "gain": -0.7804,
+      "interaction": -0.0009,
       "kind": "swap"
      },
      "Mindfulness + Rage of the Farseer": {
@@ -11397,7 +11397,7 @@
       "kind": "swap"
      },
      "Natural Grace + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -11407,13 +11407,13 @@
       "kind": "swap"
      },
      "Natural Grace + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Natural Grace + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Natural Grace + Elemental Weapons": {
@@ -11427,12 +11427,12 @@
       "kind": "swap"
      },
      "Natural Grace + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Natural Grace + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11452,7 +11452,7 @@
       "kind": "swap"
      },
      "Natural Grace + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11487,7 +11487,7 @@
       "kind": "swap"
      },
      "Healing Focus + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -11497,13 +11497,13 @@
       "kind": "swap"
      },
      "Healing Focus + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Healing Focus + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Healing Focus + Elemental Weapons": {
@@ -11517,12 +11517,12 @@
       "kind": "swap"
      },
      "Healing Focus + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Healing Focus + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11542,7 +11542,7 @@
       "kind": "swap"
      },
      "Healing Focus + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11577,8 +11577,8 @@
       "kind": "swap"
      },
      "Water Shield + Thundering Strikes": {
-      "gain": -0.077,
-      "interaction": -0.0329,
+      "gain": -0.4601,
+      "interaction": 0.0524,
       "kind": "swap"
      },
      "Water Shield + Guardian Totems": {
@@ -11587,13 +11587,13 @@
       "kind": "swap"
      },
      "Water Shield + Mental Dexterity": {
-      "gain": -0.0539,
-      "interaction": 0.0007,
+      "gain": -0.4345,
+      "interaction": 0.0634,
       "kind": "swap"
      },
      "Water Shield + Improved Lightning Shield": {
-      "gain": -0.0385,
-      "interaction": -0.006,
+      "gain": -0.4441,
+      "interaction": 0.0519,
       "kind": "swap"
      },
      "Water Shield + Elemental Weapons": {
@@ -11607,13 +11607,13 @@
       "kind": "swap"
      },
      "Water Shield + Flurry": {
-      "gain": -0.0494,
-      "interaction": -0.0142,
+      "gain": -0.4401,
+      "interaction": 0.0615,
       "kind": "swap"
      },
      "Water Shield + Stormstrike": {
-      "gain": -0.1393,
-      "interaction": -0.0038,
+      "gain": -0.6127,
+      "interaction": 0.0096,
       "kind": "swap"
      },
      "Water Shield + Spirit Weapons": {
@@ -11632,8 +11632,8 @@
       "kind": "swap"
      },
      "Water Shield + Maelstrom Weapon": {
-      "gain": -0.0565,
-      "interaction": 0.0059,
+      "gain": -0.7552,
+      "interaction": 0.0459,
       "kind": "swap"
      },
      "Water Shield + Rage of the Farseer": {
@@ -11667,7 +11667,7 @@
       "kind": "swap"
      },
      "Nature's Swiftness + Thundering Strikes": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0,
       "kind": "swap"
      },
@@ -11677,13 +11677,13 @@
       "kind": "swap"
      },
      "Nature's Swiftness + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0,
+      "gain": -0.4773,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0,
+      "gain": -0.4754,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Elemental Weapons": {
@@ -11697,12 +11697,12 @@
       "kind": "swap"
      },
      "Nature's Swiftness + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0,
+      "gain": -0.481,
+      "interaction": 0.0,
       "kind": "swap"
      },
      "Nature's Swiftness + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11722,7 +11722,7 @@
       "kind": "swap"
      },
      "Nature's Swiftness + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -11750,20 +11750,20 @@
       "interaction": -0.0049
      },
      "Convection + Thundering Strikes": {
-      "gain": -0.0516,
-      "interaction": -0.0124
+      "gain": -0.5078,
+      "interaction": -0.0002
      },
      "Convection + Guardian Totems": {
       "gain": -0.0157,
       "interaction": 0.0
      },
      "Convection + Mental Dexterity": {
-      "gain": -0.0521,
-      "interaction": -0.0024
+      "gain": -0.499,
+      "interaction": -0.006
      },
      "Convection + Improved Lightning Shield": {
-      "gain": -0.025,
-      "interaction": 0.0026
+      "gain": -0.4953,
+      "interaction": -0.0042
      },
      "Convection + Elemental Weapons": {
       "gain": -0.0252,
@@ -11774,12 +11774,12 @@
       "interaction": -0.0041
      },
      "Convection + Flurry": {
-      "gain": -0.0287,
-      "interaction": 0.0016
+      "gain": -0.5029,
+      "interaction": -0.0062
      },
      "Convection + Stormstrike": {
-      "gain": -0.1299,
-      "interaction": 0.0007
+      "gain": -0.6085,
+      "interaction": 0.0089
      },
      "Convection + Spirit Weapons": {
       "gain": -0.0137,
@@ -11794,8 +11794,8 @@
       "interaction": 0.0027
      },
      "Convection + Maelstrom Weapon": {
-      "gain": -0.0706,
-      "interaction": -0.0131
+      "gain": -0.79,
+      "interaction": 0.0062
      },
      "Convection + Rage of the Farseer": {
       "gain": -0.0202,
@@ -11818,20 +11818,20 @@
       "interaction": 0.0019
      },
      "Concussion + Thundering Strikes": {
-      "gain": -0.0386,
-      "interaction": 0.003
+      "gain": -0.4992,
+      "interaction": 0.0108
      },
      "Concussion + Guardian Totems": {
       "gain": -0.0181,
       "interaction": -0.0
      },
      "Concussion + Mental Dexterity": {
-      "gain": -0.0452,
-      "interaction": 0.0069
+      "gain": -0.5031,
+      "interaction": -0.0077
      },
      "Concussion + Improved Lightning Shield": {
-      "gain": -0.0261,
-      "interaction": 0.0039
+      "gain": -0.4998,
+      "interaction": -0.0063
      },
      "Concussion + Elemental Weapons": {
       "gain": -0.0163,
@@ -11842,12 +11842,12 @@
       "interaction": 0.0156
      },
      "Concussion + Flurry": {
-      "gain": -0.0273,
-      "interaction": 0.0054
+      "gain": -0.494,
+      "interaction": 0.0051
      },
      "Concussion + Stormstrike": {
-      "gain": -0.122,
-      "interaction": 0.011
+      "gain": -0.6049,
+      "interaction": 0.0149
      },
      "Concussion + Spirit Weapons": {
       "gain": 0.0032,
@@ -11862,8 +11862,8 @@
       "interaction": 0.015
      },
      "Concussion + Maelstrom Weapon": {
-      "gain": -0.0511,
-      "interaction": 0.0088
+      "gain": -0.7858,
+      "interaction": 0.0128
      },
      "Concussion + Rage of the Farseer": {
       "gain": -0.0237,
@@ -11882,20 +11882,20 @@
       "interaction": 0.0025
      },
      "Elemental Devastation + Thundering Strikes": {
-      "gain": -0.0297,
-      "interaction": -0.0007
+      "gain": -0.4982,
+      "interaction": -0.0008
      },
      "Elemental Devastation + Guardian Totems": {
       "gain": -0.0055,
       "interaction": -0.0
      },
      "Elemental Devastation + Mental Dexterity": {
-      "gain": -0.0371,
-      "interaction": 0.0024
+      "gain": -0.477,
+      "interaction": 0.0058
      },
      "Elemental Devastation + Improved Lightning Shield": {
-      "gain": -0.016,
-      "interaction": 0.0014
+      "gain": -0.477,
+      "interaction": 0.0039
      },
      "Elemental Devastation + Elemental Weapons": {
       "gain": -0.0063,
@@ -11906,12 +11906,12 @@
       "interaction": 0.004
      },
      "Elemental Devastation + Flurry": {
-      "gain": -0.0163,
-      "interaction": 0.0038
+      "gain": -0.4819,
+      "interaction": 0.0046
      },
      "Elemental Devastation + Stormstrike": {
-      "gain": -0.1169,
-      "interaction": 0.0035
+      "gain": -0.6026,
+      "interaction": 0.0046
      },
      "Elemental Devastation + Spirit Weapons": {
       "gain": -0.0034,
@@ -11926,8 +11926,8 @@
       "interaction": 0.0013
      },
      "Elemental Devastation + Maelstrom Weapon": {
-      "gain": -0.0477,
-      "interaction": -0.0004
+      "gain": -0.7812,
+      "interaction": 0.0048
      },
      "Elemental Devastation + Rage of the Farseer": {
       "gain": -0.0206,
@@ -11942,20 +11942,20 @@
       "interaction": -0.0072
      },
      "Reverberation + Thundering Strikes": {
-      "gain": -0.04,
-      "interaction": -0.0096
+      "gain": -0.5009,
+      "interaction": -0.0021
      },
      "Reverberation + Guardian Totems": {
       "gain": -0.0069,
       "interaction": -0.0
      },
      "Reverberation + Mental Dexterity": {
-      "gain": -0.045,
-      "interaction": -0.0041
+      "gain": -0.4894,
+      "interaction": -0.0052
      },
      "Reverberation + Improved Lightning Shield": {
-      "gain": -0.0291,
-      "interaction": -0.0103
+      "gain": -0.4845,
+      "interaction": -0.0022
      },
      "Reverberation + Elemental Weapons": {
       "gain": -0.008,
@@ -11966,12 +11966,12 @@
       "interaction": 0.0022
      },
      "Reverberation + Flurry": {
-      "gain": -0.016,
-      "interaction": 0.0055
+      "gain": -0.4825,
+      "interaction": 0.0054
      },
      "Reverberation + Stormstrike": {
-      "gain": -0.1201,
-      "interaction": 0.0017
+      "gain": -0.6041,
+      "interaction": 0.0045
      },
      "Reverberation + Spirit Weapons": {
       "gain": -0.0126,
@@ -11986,8 +11986,8 @@
       "interaction": 0.0069
      },
      "Reverberation + Maelstrom Weapon": {
-      "gain": -0.0511,
-      "interaction": -0.0024
+      "gain": -0.787,
+      "interaction": 0.0004
      },
      "Reverberation + Rage of the Farseer": {
       "gain": -0.0171,
@@ -11998,20 +11998,20 @@
       "interaction": 0.0055
      },
      "Elemental Focus + Thundering Strikes": {
-      "gain": -0.0554,
-      "interaction": -0.0224
+      "gain": -0.5098,
+      "interaction": -0.0084
      },
      "Elemental Focus + Guardian Totems": {
       "gain": -0.0095,
       "interaction": -0.0
      },
      "Elemental Focus + Mental Dexterity": {
-      "gain": -0.0487,
-      "interaction": -0.0052
+      "gain": -0.4926,
+      "interaction": -0.0058
      },
      "Elemental Focus + Improved Lightning Shield": {
-      "gain": -0.0327,
-      "interaction": -0.0113
+      "gain": -0.4876,
+      "interaction": -0.0027
      },
      "Elemental Focus + Elemental Weapons": {
       "gain": -0.0224,
@@ -12022,12 +12022,12 @@
       "interaction": 0.0083
      },
      "Elemental Focus + Flurry": {
-      "gain": -0.0267,
-      "interaction": -0.0026
+      "gain": -0.486,
+      "interaction": 0.0045
      },
      "Elemental Focus + Stormstrike": {
-      "gain": -0.1355,
-      "interaction": -0.0111
+      "gain": -0.611,
+      "interaction": 0.0002
      },
      "Elemental Focus + Spirit Weapons": {
       "gain": -0.0133,
@@ -12042,8 +12042,8 @@
       "interaction": -0.0034
      },
      "Elemental Focus + Maelstrom Weapon": {
-      "gain": -0.0601,
-      "interaction": -0.0088
+      "gain": -0.7835,
+      "interaction": 0.0065
      },
      "Elemental Focus + Rage of the Farseer": {
       "gain": -0.0299,
@@ -12054,79 +12054,79 @@
       "interaction": 0.0059
      },
      "Thundering Strikes + Guardian Totems": {
-      "gain": -0.0235,
+      "gain": -0.4919,
       "interaction": 0.0
      },
      "Thundering Strikes + Mental Dexterity": {
-      "gain": -0.0759,
-      "interaction": -0.0184
+      "gain": -0.4909,
+      "interaction": 0.4783
      },
      "Thundering Strikes + Improved Lightning Shield": {
-      "gain": -0.0564,
-      "interaction": -0.021
+      "gain": -0.4957,
+      "interaction": 0.4716
      },
      "Thundering Strikes + Elemental Weapons": {
-      "gain": -0.0487,
-      "interaction": -0.0209
+      "gain": -0.4905,
+      "interaction": 0.0057
      },
      "Thundering Strikes + Shamanistic Focus": {
-      "gain": -0.148,
-      "interaction": -0.0122
+      "gain": -0.5963,
+      "interaction": 0.0079
      },
      "Thundering Strikes + Flurry": {
-      "gain": -0.0511,
-      "interaction": -0.013
+      "gain": -0.4917,
+      "interaction": 0.4812
      },
      "Thundering Strikes + Stormstrike": {
-      "gain": -0.1559,
-      "interaction": -0.0175
+      "gain": -0.4761,
+      "interaction": 0.6175
      },
      "Thundering Strikes + Spirit Weapons": {
-      "gain": -0.0465,
-      "interaction": -0.0209
+      "gain": -0.4974,
+      "interaction": -0.0034
      },
      "Thundering Strikes + Mental Quickness": {
-      "gain": -0.0583,
-      "interaction": -0.0105
+      "gain": -0.5174,
+      "interaction": -0.0012
      },
      "Thundering Strikes + Improved Stormstrike": {
-      "gain": -0.0805,
-      "interaction": -0.0134
+      "gain": -0.5242,
+      "interaction": 0.0113
      },
      "Thundering Strikes + Maelstrom Weapon": {
-      "gain": -0.0866,
-      "interaction": -0.0213
+      "gain": -0.7829,
+      "interaction": 0.4895
      },
      "Thundering Strikes + Rage of the Farseer": {
-      "gain": -0.0577,
-      "interaction": -0.0162
+      "gain": -0.4979,
+      "interaction": 0.012
      },
      "Thundering Strikes + Totemic Focus": {
-      "gain": -0.03,
-      "interaction": -0.0032
+      "gain": -0.4905,
+      "interaction": 0.0047
      },
      "Guardian Totems + Mental Dexterity": {
-      "gain": -0.034,
-      "interaction": 0.0
+      "gain": -0.4773,
+      "interaction": -0.0
      },
      "Guardian Totems + Improved Lightning Shield": {
-      "gain": -0.0119,
-      "interaction": 0.0
+      "gain": -0.4754,
+      "interaction": -0.0
      },
      "Guardian Totems + Elemental Weapons": {
-      "gain": -0.0043,
-      "interaction": -0.0
+      "gain": -0.4794,
+      "interaction": -0.4751
      },
      "Guardian Totems + Shamanistic Focus": {
       "gain": -0.1123,
       "interaction": -0.0
      },
      "Guardian Totems + Flurry": {
-      "gain": -0.0146,
-      "interaction": -0.0
+      "gain": -0.481,
+      "interaction": 0.0
      },
      "Guardian Totems + Stormstrike": {
-      "gain": -0.1149,
+      "gain": -0.6017,
       "interaction": -0.0
      },
      "Guardian Totems + Spirit Weapons": {
@@ -12134,15 +12134,15 @@
       "interaction": 0.0
      },
      "Guardian Totems + Mental Quickness": {
-      "gain": -0.0243,
-      "interaction": -0.0
+      "gain": -0.5035,
+      "interaction": -0.4792
      },
      "Guardian Totems + Improved Stormstrike": {
-      "gain": -0.0436,
-      "interaction": 0.0
+      "gain": -0.508,
+      "interaction": -0.4644
      },
      "Guardian Totems + Maelstrom Weapon": {
-      "gain": -0.0418,
+      "gain": -0.7805,
       "interaction": -0.0
      },
      "Guardian Totems + Rage of the Farseer": {
@@ -12154,148 +12154,148 @@
       "interaction": 0.0
      },
      "Mental Dexterity + Improved Lightning Shield": {
-      "gain": -0.0562,
-      "interaction": -0.0103
+      "gain": -0.4847,
+      "interaction": 0.468
      },
      "Mental Dexterity + Elemental Weapons": {
-      "gain": -0.0406,
-      "interaction": -0.0023
+      "gain": -0.4769,
+      "interaction": 0.0047
      },
      "Mental Dexterity + Shamanistic Focus": {
-      "gain": -0.1416,
-      "interaction": 0.0047
+      "gain": -0.5821,
+      "interaction": 0.0075
      },
      "Mental Dexterity + Flurry": {
-      "gain": -0.0521,
-      "interaction": -0.0035
+      "gain": -0.4768,
+      "interaction": 0.4815
      },
      "Mental Dexterity + Stormstrike": {
-      "gain": -0.1397,
-      "interaction": 0.0092
+      "gain": -0.4635,
+      "interaction": 0.6155
      },
      "Mental Dexterity + Spirit Weapons": {
-      "gain": -0.0398,
-      "interaction": -0.0037
+      "gain": -0.4761,
+      "interaction": 0.0033
      },
      "Mental Dexterity + Mental Quickness": {
-      "gain": -0.0612,
-      "interaction": -0.0029
+      "gain": -0.5166,
+      "interaction": -0.015
      },
      "Mental Dexterity + Improved Stormstrike": {
-      "gain": -0.0749,
-      "interaction": 0.0027
+      "gain": -0.5073,
+      "interaction": 0.0136
      },
      "Mental Dexterity + Maelstrom Weapon": {
-      "gain": -0.0913,
-      "interaction": -0.0155
+      "gain": -0.7789,
+      "interaction": 0.4789
      },
      "Mental Dexterity + Rage of the Farseer": {
-      "gain": -0.0514,
-      "interaction": 0.0006
+      "gain": -0.4837,
+      "interaction": 0.0116
      },
      "Mental Dexterity + Totemic Focus": {
-      "gain": -0.0373,
-      "interaction": -0.0
-     },
-     "Improved Lightning Shield + Elemental Weapons": {
-      "gain": -0.0191,
-      "interaction": -0.0029
-     },
-     "Improved Lightning Shield + Shamanistic Focus": {
-      "gain": -0.1247,
+      "gain": -0.4811,
       "interaction": -0.0005
      },
+     "Improved Lightning Shield + Elemental Weapons": {
+      "gain": -0.4772,
+      "interaction": 0.0025
+     },
+     "Improved Lightning Shield + Shamanistic Focus": {
+      "gain": -0.5788,
+      "interaction": 0.0089
+     },
      "Improved Lightning Shield + Flurry": {
-      "gain": -0.0485,
-      "interaction": -0.022
+      "gain": -0.4842,
+      "interaction": 0.4722
      },
      "Improved Lightning Shield + Stormstrike": {
-      "gain": -0.1351,
-      "interaction": -0.0083
+      "gain": -0.4581,
+      "interaction": 0.619
      },
      "Improved Lightning Shield + Spirit Weapons": {
-      "gain": -0.0109,
-      "interaction": 0.0031
+      "gain": -0.4779,
+      "interaction": -0.0004
      },
      "Improved Lightning Shield + Mental Quickness": {
-      "gain": -0.0363,
-      "interaction": -0.0001
+      "gain": -0.5111,
+      "interaction": -0.0114
      },
      "Improved Lightning Shield + Improved Stormstrike": {
-      "gain": -0.0616,
-      "interaction": -0.0061
+      "gain": -0.5065,
+      "interaction": 0.0125
      },
      "Improved Lightning Shield + Maelstrom Weapon": {
-      "gain": -0.0634,
-      "interaction": -0.0097
+      "gain": -0.7775,
+      "interaction": 0.4784
      },
      "Improved Lightning Shield + Rage of the Farseer": {
-      "gain": -0.0313,
-      "interaction": -0.0014
+      "gain": -0.4859,
+      "interaction": 0.0075
      },
      "Improved Lightning Shield + Totemic Focus": {
-      "gain": -0.0129,
-      "interaction": 0.0023
-     },
-     "Elemental Weapons + Shamanistic Focus": {
-      "gain": -0.1191,
-      "interaction": -0.0025
-     },
-     "Elemental Weapons + Flurry": {
-      "gain": -0.0262,
-      "interaction": -0.0073
-     },
-     "Elemental Weapons + Stormstrike": {
-      "gain": -0.1186,
-      "interaction": 0.0006
-     },
-     "Elemental Weapons + Spirit Weapons": {
-      "gain": -0.0088,
-      "interaction": -0.0024
-     },
-     "Elemental Weapons + Mental Quickness": {
-      "gain": -0.0309,
+      "gain": -0.481,
       "interaction": -0.0023
      },
+     "Elemental Weapons + Shamanistic Focus": {
+      "gain": -0.5796,
+      "interaction": -0.463
+     },
+     "Elemental Weapons + Flurry": {
+      "gain": -0.4808,
+      "interaction": 0.0045
+     },
+     "Elemental Weapons + Stormstrike": {
+      "gain": -0.4601,
+      "interaction": 0.1459
+     },
+     "Elemental Weapons + Spirit Weapons": {
+      "gain": -0.4837,
+      "interaction": -0.4773
+     },
+     "Elemental Weapons + Mental Quickness": {
+      "gain": -0.5024,
+      "interaction": -0.4738
+     },
      "Elemental Weapons + Improved Stormstrike": {
-      "gain": -0.0432,
-      "interaction": 0.0047
+      "gain": -0.507,
+      "interaction": -0.4591
      },
      "Elemental Weapons + Maelstrom Weapon": {
-      "gain": -0.0531,
-      "interaction": -0.007
+      "gain": -0.7802,
+      "interaction": 0.0046
      },
      "Elemental Weapons + Rage of the Farseer": {
-      "gain": -0.0212,
-      "interaction": 0.0011
+      "gain": -0.4822,
+      "interaction": -0.4599
      },
      "Elemental Weapons + Totemic Focus": {
       "gain": -0.0074,
       "interaction": 0.0002
      },
      "Shamanistic Focus + Flurry": {
-      "gain": -0.1271,
-      "interaction": -0.0002
+      "gain": -0.5806,
+      "interaction": 0.0127
      },
      "Shamanistic Focus + Stormstrike": {
-      "gain": -0.2277,
-      "interaction": -0.0005
+      "gain": -0.6524,
+      "interaction": 0.0616
      },
      "Shamanistic Focus + Spirit Weapons": {
       "gain": -0.1227,
       "interaction": -0.0083
      },
      "Shamanistic Focus + Mental Quickness": {
-      "gain": -0.1291,
-      "interaction": 0.0075
+      "gain": -0.6024,
+      "interaction": -0.4658
      },
      "Shamanistic Focus + Improved Stormstrike": {
-      "gain": -0.1424,
-      "interaction": 0.0135
+      "gain": -0.5986,
+      "interaction": -0.4427
      },
      "Shamanistic Focus + Maelstrom Weapon": {
-      "gain": -0.1554,
-      "interaction": -0.0013
+      "gain": -0.8262,
+      "interaction": 0.0666
      },
      "Shamanistic Focus + Rage of the Farseer": {
       "gain": -0.1194,
@@ -12306,68 +12306,68 @@
       "interaction": 0.0003
      },
      "Flurry + Stormstrike": {
-      "gain": -0.1378,
-      "interaction": -0.0083
+      "gain": -0.4687,
+      "interaction": 0.614
      },
      "Flurry + Spirit Weapons": {
-      "gain": -0.0224,
-      "interaction": -0.0057
+      "gain": -0.4793,
+      "interaction": 0.0038
      },
      "Flurry + Mental Quickness": {
-      "gain": -0.0446,
-      "interaction": -0.0057
+      "gain": -0.5114,
+      "interaction": -0.0061
      },
      "Flurry + Improved Stormstrike": {
-      "gain": -0.053,
-      "interaction": 0.0052
+      "gain": -0.5032,
+      "interaction": 0.0214
      },
      "Flurry + Maelstrom Weapon": {
-      "gain": -0.0724,
-      "interaction": -0.016
+      "gain": -0.7781,
+      "interaction": 0.4834
      },
      "Flurry + Rage of the Farseer": {
-      "gain": -0.0338,
-      "interaction": -0.0012
+      "gain": -0.4816,
+      "interaction": 0.0174
      },
      "Flurry + Totemic Focus": {
-      "gain": -0.0171,
-      "interaction": 0.0008
+      "gain": -0.4886,
+      "interaction": -0.0043
      },
      "Stormstrike + Spirit Weapons": {
-      "gain": -0.1323,
-      "interaction": -0.0153
+      "gain": -0.6095,
+      "interaction": -0.0057
      },
      "Stormstrike + Mental Quickness": {
-      "gain": -0.128,
-      "interaction": 0.0112
+      "gain": -0.4816,
+      "interaction": 0.1444
      },
      "Stormstrike + Improved Stormstrike": {
-      "gain": -0.1149,
-      "interaction": 0.0436
+      "gain": -0.4637,
+      "interaction": 0.1816
      },
      "Stormstrike + Maelstrom Weapon": {
-      "gain": -0.1414,
-      "interaction": 0.0153
+      "gain": -0.758,
+      "interaction": 0.6242
      },
      "Stormstrike + Rage of the Farseer": {
-      "gain": -0.1451,
-      "interaction": -0.0122
+      "gain": -0.6153,
+      "interaction": 0.0044
      },
      "Stormstrike + Totemic Focus": {
-      "gain": -0.1143,
-      "interaction": 0.0039
+      "gain": -0.6014,
+      "interaction": 0.0036
      },
      "Spirit Weapons + Mental Quickness": {
-      "gain": -0.0216,
-      "interaction": 0.0048
+      "gain": -0.5082,
+      "interaction": -0.4818
      },
      "Spirit Weapons + Improved Stormstrike": {
-      "gain": -0.0364,
-      "interaction": 0.0093
+      "gain": -0.5096,
+      "interaction": -0.4639
      },
      "Spirit Weapons + Maelstrom Weapon": {
-      "gain": -0.0529,
-      "interaction": -0.009
+      "gain": -0.7783,
+      "interaction": 0.0043
      },
      "Spirit Weapons + Rage of the Farseer": {
       "gain": -0.0134,
@@ -12378,40 +12378,40 @@
       "interaction": -0.003
      },
      "Mental Quickness + Improved Stormstrike": {
-      "gain": -0.0592,
-      "interaction": 0.0087
+      "gain": -0.53,
+      "interaction": -0.4621
      },
      "Mental Quickness + Maelstrom Weapon": {
-      "gain": -0.0622,
-      "interaction": 0.0039
+      "gain": -0.79,
+      "interaction": 0.0148
      },
      "Mental Quickness + Rage of the Farseer": {
-      "gain": -0.0361,
-      "interaction": 0.0062
+      "gain": -0.5123,
+      "interaction": -0.47
      },
      "Mental Quickness + Totemic Focus": {
       "gain": -0.0217,
       "interaction": 0.0059
      },
      "Improved Stormstrike + Maelstrom Weapon": {
-      "gain": -0.0785,
-      "interaction": 0.0069
+      "gain": -0.7897,
+      "interaction": 0.0344
      },
      "Improved Stormstrike + Rage of the Farseer": {
-      "gain": -0.0545,
-      "interaction": 0.0071
+      "gain": -0.5151,
+      "interaction": -0.4535
      },
      "Improved Stormstrike + Totemic Focus": {
       "gain": -0.0453,
       "interaction": 0.0016
      },
      "Maelstrom Weapon + Rage of the Farseer": {
-      "gain": -0.0569,
-      "interaction": 0.0029
+      "gain": -0.7827,
+      "interaction": 0.0158
      },
      "Maelstrom Weapon + Totemic Focus": {
-      "gain": -0.0445,
-      "interaction": 0.0006
+      "gain": -0.7804,
+      "interaction": 0.0034
      },
      "Rage of the Farseer + Totemic Focus": {
       "gain": -0.0145,
@@ -12620,7 +12620,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Thundering Strikes -1": {
       "added": {},
@@ -12648,7 +12648,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Mental Dexterity -1": {
       "added": {},
@@ -12669,7 +12669,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Improved Lightning Shield -1": {
       "added": {},
@@ -12711,7 +12711,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Flurry -1": {
       "added": {},
@@ -12732,7 +12732,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "-Spirit Weapons": {
       "added": {},
@@ -12774,7 +12774,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Maelstrom Weapon -1": {
       "added": {},
@@ -13899,7 +13899,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Elemental Alacrity - Guardian Totems": {
       "added": {
@@ -13917,7 +13917,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Elemental Alacrity - Improved Lightning Shield": {
       "added": {
@@ -13926,7 +13926,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Elemental Alacrity - Elemental Weapons": {
       "added": {
@@ -13953,7 +13953,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Elemental Alacrity - Stormstrike": {
       "added": {
@@ -13962,7 +13962,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Elemental Alacrity - Spirit Weapons": {
       "added": {
@@ -13998,7 +13998,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Elemental Alacrity - Rage of the Farseer": {
       "added": {
@@ -14025,7 +14025,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.03008
+      "gain": -0.49296
      },
      "Call of Flame - Guardian Totems": {
       "added": {
@@ -14043,7 +14043,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.0277
+      "gain": -0.48052
      },
      "Call of Flame - Improved Lightning Shield": {
       "added": {
@@ -14052,7 +14052,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.00216
+      "gain": -0.48039
      },
      "Call of Flame - Elemental Weapons": {
       "added": {
@@ -14079,7 +14079,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.02487
+      "gain": -0.48439
      },
      "Call of Flame - Stormstrike": {
       "added": {
@@ -14088,7 +14088,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11014
+      "gain": -0.59956
      },
      "Call of Flame - Spirit Weapons": {
       "added": {
@@ -14124,7 +14124,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04316
+      "gain": -0.78068
      },
      "Call of Flame - Rage of the Farseer": {
       "added": {
@@ -14151,7 +14151,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Elemental Warding - Guardian Totems": {
       "added": {
@@ -14169,7 +14169,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Elemental Warding - Improved Lightning Shield": {
       "added": {
@@ -14178,7 +14178,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Elemental Warding - Elemental Weapons": {
       "added": {
@@ -14205,7 +14205,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Elemental Warding - Stormstrike": {
       "added": {
@@ -14214,7 +14214,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Elemental Warding - Spirit Weapons": {
       "added": {
@@ -14250,7 +14250,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Elemental Warding - Rage of the Farseer": {
       "added": {
@@ -14277,7 +14277,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Trial by Fire - Guardian Totems": {
       "added": {
@@ -14295,7 +14295,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Trial by Fire - Improved Lightning Shield": {
       "added": {
@@ -14304,7 +14304,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Trial by Fire - Elemental Weapons": {
       "added": {
@@ -14331,7 +14331,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Trial by Fire - Stormstrike": {
       "added": {
@@ -14340,7 +14340,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Trial by Fire - Spirit Weapons": {
       "added": {
@@ -14376,7 +14376,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Trial by Fire - Rage of the Farseer": {
       "added": {
@@ -14403,7 +14403,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Eye of the Storm - Guardian Totems": {
       "added": {
@@ -14421,7 +14421,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Eye of the Storm - Improved Lightning Shield": {
       "added": {
@@ -14430,7 +14430,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Eye of the Storm - Elemental Weapons": {
       "added": {
@@ -14457,7 +14457,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Eye of the Storm - Stormstrike": {
       "added": {
@@ -14466,7 +14466,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Eye of the Storm - Spirit Weapons": {
       "added": {
@@ -14502,7 +14502,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Eye of the Storm - Rage of the Farseer": {
       "added": {
@@ -14529,7 +14529,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Earthbound - Guardian Totems": {
       "added": {
@@ -14547,7 +14547,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Earthbound - Improved Lightning Shield": {
       "added": {
@@ -14556,7 +14556,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Earthbound - Elemental Weapons": {
       "added": {
@@ -14583,7 +14583,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Earthbound - Stormstrike": {
       "added": {
@@ -14592,7 +14592,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Earthbound - Spirit Weapons": {
       "added": {
@@ -14628,7 +14628,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Earthbound - Rage of the Farseer": {
       "added": {
@@ -14655,7 +14655,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.048
+      "gain": -0.4913
      },
      "Elemental Reach - Guardian Totems": {
       "added": {
@@ -14673,7 +14673,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03965
+      "gain": -0.47592
      },
      "Elemental Reach - Improved Lightning Shield": {
       "added": {
@@ -14682,7 +14682,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.02155
+      "gain": -0.48759
      },
      "Elemental Reach - Elemental Weapons": {
       "added": {
@@ -14709,7 +14709,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.03433
+      "gain": -0.47862
      },
      "Elemental Reach - Stormstrike": {
       "added": {
@@ -14718,7 +14718,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.12253
+      "gain": -0.60514
      },
      "Elemental Reach - Spirit Weapons": {
       "added": {
@@ -14754,7 +14754,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.05099
+      "gain": -0.7795
      },
      "Elemental Reach - Rage of the Farseer": {
       "added": {
@@ -14781,7 +14781,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Lava Burst - Guardian Totems": {
       "added": {
@@ -14799,7 +14799,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Lava Burst - Improved Lightning Shield": {
       "added": {
@@ -14808,7 +14808,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Lava Burst - Elemental Weapons": {
       "added": {
@@ -14835,7 +14835,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Lava Burst - Stormstrike": {
       "added": {
@@ -14844,7 +14844,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Lava Burst - Spirit Weapons": {
       "added": {
@@ -14880,7 +14880,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Lava Burst - Rage of the Farseer": {
       "added": {
@@ -14907,7 +14907,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.04053
+      "gain": -0.49001
      },
      "Lightning Overload - Guardian Totems": {
       "added": {
@@ -14925,7 +14925,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03113
+      "gain": -0.48052
      },
      "Lightning Overload - Improved Lightning Shield": {
       "added": {
@@ -14934,7 +14934,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.0136
+      "gain": -0.46974
      },
      "Lightning Overload - Elemental Weapons": {
       "added": {
@@ -14961,7 +14961,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01545
+      "gain": -0.48266
      },
      "Lightning Overload - Stormstrike": {
       "added": {
@@ -14970,7 +14970,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.12341
+      "gain": -0.60554
      },
      "Lightning Overload - Spirit Weapons": {
       "added": {
@@ -15006,7 +15006,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Lightning Overload - Rage of the Farseer": {
       "added": {
@@ -15033,7 +15033,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02837
+      "gain": -0.48852
      },
      "Elemental Fury - Guardian Totems": {
       "added": {
@@ -15051,7 +15051,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.01513
+      "gain": -0.45148
      },
      "Elemental Fury - Improved Lightning Shield": {
       "added": {
@@ -15060,7 +15060,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": 0.00059
+      "gain": -0.4576
      },
      "Elemental Fury - Elemental Weapons": {
       "added": {
@@ -15087,7 +15087,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": 0.00114
+      "gain": -0.46685
      },
      "Elemental Fury - Stormstrike": {
       "added": {
@@ -15096,7 +15096,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.09871
+      "gain": -0.59442
      },
      "Elemental Fury - Spirit Weapons": {
       "added": {
@@ -15132,7 +15132,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.03302
+      "gain": -0.77374
      },
      "Elemental Fury - Rage of the Farseer": {
       "added": {
@@ -15159,7 +15159,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Elemental Mastery - Guardian Totems": {
       "added": {
@@ -15177,7 +15177,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Elemental Mastery - Improved Lightning Shield": {
       "added": {
@@ -15186,7 +15186,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Elemental Mastery - Elemental Weapons": {
       "added": {
@@ -15213,7 +15213,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Elemental Mastery - Stormstrike": {
       "added": {
@@ -15222,7 +15222,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Elemental Mastery - Spirit Weapons": {
       "added": {
@@ -15258,7 +15258,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Elemental Mastery - Rage of the Farseer": {
       "added": {
@@ -15384,7 +15384,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02582
+      "gain": -0.49129
      },
      "Mindfulness - Guardian Totems": {
       "added": {
@@ -15402,7 +15402,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03225
+      "gain": -0.47558
      },
      "Mindfulness - Improved Lightning Shield": {
       "added": {
@@ -15411,7 +15411,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01135
+      "gain": -0.47641
      },
      "Mindfulness - Elemental Weapons": {
       "added": {
@@ -15438,7 +15438,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.0157
+      "gain": -0.47494
      },
      "Mindfulness - Stormstrike": {
       "added": {
@@ -15447,7 +15447,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.08555
+      "gain": -0.5885
      },
      "Mindfulness - Spirit Weapons": {
       "added": {
@@ -15483,7 +15483,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04323
+      "gain": -0.78042
      },
      "Mindfulness - Rage of the Farseer": {
       "added": {
@@ -15546,7 +15546,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Natural Grace - Guardian Totems": {
       "added": {
@@ -15564,7 +15564,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Natural Grace - Improved Lightning Shield": {
       "added": {
@@ -15573,7 +15573,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Natural Grace - Elemental Weapons": {
       "added": {
@@ -15600,7 +15600,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Natural Grace - Stormstrike": {
       "added": {
@@ -15609,7 +15609,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Natural Grace - Spirit Weapons": {
       "added": {
@@ -15645,7 +15645,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Natural Grace - Rage of the Farseer": {
       "added": {
@@ -15708,7 +15708,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Healing Focus - Guardian Totems": {
       "added": {
@@ -15726,7 +15726,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Healing Focus - Improved Lightning Shield": {
       "added": {
@@ -15735,7 +15735,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Healing Focus - Elemental Weapons": {
       "added": {
@@ -15762,7 +15762,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Healing Focus - Stormstrike": {
       "added": {
@@ -15771,7 +15771,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Healing Focus - Spirit Weapons": {
       "added": {
@@ -15807,7 +15807,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Healing Focus - Rage of the Farseer": {
       "added": {
@@ -15870,7 +15870,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.07705
+      "gain": -0.46015
      },
      "Water Shield - Guardian Totems": {
       "added": {
@@ -15888,7 +15888,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.05392
+      "gain": -0.43447
      },
      "Water Shield - Improved Lightning Shield": {
       "added": {
@@ -15897,7 +15897,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.03846
+      "gain": -0.44415
      },
      "Water Shield - Elemental Weapons": {
       "added": {
@@ -15924,7 +15924,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.04936
+      "gain": -0.44014
      },
      "Water Shield - Stormstrike": {
       "added": {
@@ -15933,7 +15933,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.13933
+      "gain": -0.6127
      },
      "Water Shield - Spirit Weapons": {
       "added": {
@@ -15969,7 +15969,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.05652
+      "gain": -0.75524
      },
      "Water Shield - Rage of the Farseer": {
       "added": {
@@ -16032,7 +16032,7 @@
       "removed": {
        "Thundering Strikes": 5
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "Nature's Swiftness - Guardian Totems": {
       "added": {
@@ -16050,7 +16050,7 @@
       "removed": {
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "Nature's Swiftness - Improved Lightning Shield": {
       "added": {
@@ -16059,7 +16059,7 @@
       "removed": {
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "Nature's Swiftness - Elemental Weapons": {
       "added": {
@@ -16086,7 +16086,7 @@
       "removed": {
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "Nature's Swiftness - Stormstrike": {
       "added": {
@@ -16095,7 +16095,7 @@
       "removed": {
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "Nature's Swiftness - Spirit Weapons": {
       "added": {
@@ -16131,7 +16131,7 @@
       "removed": {
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "Nature's Swiftness - Rage of the Farseer": {
       "added": {
@@ -16180,7 +16180,7 @@
        "Convection": 5,
        "Thundering Strikes": 5
       },
-      "gain": -0.05156
+      "gain": -0.50781
      },
      "-Convection - Guardian Totems": {
       "added": {},
@@ -16196,7 +16196,7 @@
        "Convection": 5,
        "Mental Dexterity": 3
       },
-      "gain": -0.05206
+      "gain": -0.49895
      },
      "-Convection - Improved Lightning Shield": {
       "added": {},
@@ -16204,7 +16204,7 @@
        "Convection": 5,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.02499
+      "gain": -0.49529
      },
      "-Convection - Elemental Weapons": {
       "added": {},
@@ -16228,7 +16228,7 @@
        "Convection": 5,
        "Flurry": 5
       },
-      "gain": -0.02874
+      "gain": -0.5029
      },
      "-Convection - Stormstrike": {
       "added": {},
@@ -16236,7 +16236,7 @@
        "Convection": 5,
        "Stormstrike": 1
       },
-      "gain": -0.12994
+      "gain": -0.60847
      },
      "-Convection - Spirit Weapons": {
       "added": {},
@@ -16268,7 +16268,7 @@
        "Convection": 5,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.07062
+      "gain": -0.78995
      },
      "-Convection - Rage of the Farseer": {
       "added": {},
@@ -16316,7 +16316,7 @@
        "Concussion": 3,
        "Thundering Strikes": 5
       },
-      "gain": -0.03862
+      "gain": -0.49922
      },
      "-Concussion - Guardian Totems": {
       "added": {},
@@ -16332,7 +16332,7 @@
        "Concussion": 3,
        "Mental Dexterity": 3
       },
-      "gain": -0.04519
+      "gain": -0.50312
      },
      "-Concussion - Improved Lightning Shield": {
       "added": {},
@@ -16340,7 +16340,7 @@
        "Concussion": 3,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.02608
+      "gain": -0.49983
      },
      "-Concussion - Elemental Weapons": {
       "added": {},
@@ -16364,7 +16364,7 @@
        "Concussion": 3,
        "Flurry": 5
       },
-      "gain": -0.02727
+      "gain": -0.49403
      },
      "-Concussion - Stormstrike": {
       "added": {},
@@ -16372,7 +16372,7 @@
        "Concussion": 3,
        "Stormstrike": 1
       },
-      "gain": -0.12199
+      "gain": -0.6049
      },
      "-Concussion - Spirit Weapons": {
       "added": {},
@@ -16404,7 +16404,7 @@
        "Concussion": 3,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.0511
+      "gain": -0.7858
      },
      "-Concussion - Rage of the Farseer": {
       "added": {},
@@ -16444,7 +16444,7 @@
        "Elemental Devastation": 2,
        "Thundering Strikes": 5
       },
-      "gain": -0.0297
+      "gain": -0.49819
      },
      "-Elemental Devastation - Guardian Totems": {
       "added": {},
@@ -16460,7 +16460,7 @@
        "Elemental Devastation": 2,
        "Mental Dexterity": 3
       },
-      "gain": -0.03708
+      "gain": -0.47704
      },
      "-Elemental Devastation - Improved Lightning Shield": {
       "added": {},
@@ -16468,7 +16468,7 @@
        "Elemental Devastation": 2,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01597
+      "gain": -0.47699
      },
      "-Elemental Devastation - Elemental Weapons": {
       "added": {},
@@ -16492,7 +16492,7 @@
        "Elemental Devastation": 2,
        "Flurry": 5
       },
-      "gain": -0.01626
+      "gain": -0.48189
      },
      "-Elemental Devastation - Stormstrike": {
       "added": {},
@@ -16500,7 +16500,7 @@
        "Elemental Devastation": 2,
        "Stormstrike": 1
       },
-      "gain": -0.11694
+      "gain": -0.60262
      },
      "-Elemental Devastation - Spirit Weapons": {
       "added": {},
@@ -16532,7 +16532,7 @@
        "Elemental Devastation": 2,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04774
+      "gain": -0.78123
      },
      "-Elemental Devastation - Rage of the Farseer": {
       "added": {},
@@ -16564,7 +16564,7 @@
        "Reverberation": 2,
        "Thundering Strikes": 5
       },
-      "gain": -0.04
+      "gain": -0.50091
      },
      "-Reverberation - Guardian Totems": {
       "added": {},
@@ -16580,7 +16580,7 @@
        "Reverberation": 2,
        "Mental Dexterity": 3
       },
-      "gain": -0.04503
+      "gain": -0.48935
      },
      "-Reverberation - Improved Lightning Shield": {
       "added": {},
@@ -16588,7 +16588,7 @@
        "Reverberation": 2,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.02914
+      "gain": -0.48451
      },
      "-Reverberation - Elemental Weapons": {
       "added": {},
@@ -16612,7 +16612,7 @@
        "Reverberation": 2,
        "Flurry": 5
       },
-      "gain": -0.01599
+      "gain": -0.4825
      },
      "-Reverberation - Stormstrike": {
       "added": {},
@@ -16620,7 +16620,7 @@
        "Reverberation": 2,
        "Stormstrike": 1
       },
-      "gain": -0.12013
+      "gain": -0.60406
      },
      "-Reverberation - Spirit Weapons": {
       "added": {},
@@ -16652,7 +16652,7 @@
        "Reverberation": 2,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.05112
+      "gain": -0.78699
      },
      "-Reverberation - Rage of the Farseer": {
       "added": {},
@@ -16676,7 +16676,7 @@
        "Elemental Focus": 1,
        "Thundering Strikes": 5
       },
-      "gain": -0.0554
+      "gain": -0.50981
      },
      "-Elemental Focus - Guardian Totems": {
       "added": {},
@@ -16692,7 +16692,7 @@
        "Elemental Focus": 1,
        "Mental Dexterity": 3
       },
-      "gain": -0.0487
+      "gain": -0.49263
      },
      "-Elemental Focus - Improved Lightning Shield": {
       "added": {},
@@ -16700,7 +16700,7 @@
        "Elemental Focus": 1,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.03271
+      "gain": -0.48762
      },
      "-Elemental Focus - Elemental Weapons": {
       "added": {},
@@ -16724,7 +16724,7 @@
        "Elemental Focus": 1,
        "Flurry": 5
       },
-      "gain": -0.02668
+      "gain": -0.48599
      },
      "-Elemental Focus - Stormstrike": {
       "added": {},
@@ -16732,7 +16732,7 @@
        "Elemental Focus": 1,
        "Stormstrike": 1
       },
-      "gain": -0.13555
+      "gain": -0.611
      },
      "-Elemental Focus - Spirit Weapons": {
       "added": {},
@@ -16764,7 +16764,7 @@
        "Elemental Focus": 1,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.06009
+      "gain": -0.78349
      },
      "-Elemental Focus - Rage of the Farseer": {
       "added": {},
@@ -16788,7 +16788,7 @@
        "Thundering Strikes": 5,
        "Guardian Totems": 1
       },
-      "gain": -0.02348
+      "gain": -0.49189
      },
      "-Thundering Strikes - Mental Dexterity": {
       "added": {},
@@ -16796,7 +16796,7 @@
        "Thundering Strikes": 5,
        "Mental Dexterity": 3
       },
-      "gain": -0.07592
+      "gain": -0.49088
      },
      "-Thundering Strikes - Improved Lightning Shield": {
       "added": {},
@@ -16804,7 +16804,7 @@
        "Thundering Strikes": 5,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.05635
+      "gain": -0.4957
      },
      "-Thundering Strikes - Elemental Weapons": {
       "added": {},
@@ -16812,7 +16812,7 @@
        "Thundering Strikes": 5,
        "Elemental Weapons": 2
       },
-      "gain": -0.04866
+      "gain": -0.49051
      },
      "-Thundering Strikes - Shamanistic Focus": {
       "added": {},
@@ -16820,7 +16820,7 @@
        "Thundering Strikes": 5,
        "Shamanistic Focus": 1
       },
-      "gain": -0.14804
+      "gain": -0.59633
      },
      "-Thundering Strikes - Flurry": {
       "added": {},
@@ -16828,7 +16828,7 @@
        "Thundering Strikes": 5,
        "Flurry": 5
       },
-      "gain": -0.05109
+      "gain": -0.49173
      },
      "-Thundering Strikes - Stormstrike": {
       "added": {},
@@ -16836,7 +16836,7 @@
        "Thundering Strikes": 5,
        "Stormstrike": 1
       },
-      "gain": -0.15588
+      "gain": -0.47609
      },
      "-Thundering Strikes - Spirit Weapons": {
       "added": {},
@@ -16844,7 +16844,7 @@
        "Thundering Strikes": 5,
        "Spirit Weapons": 1
       },
-      "gain": -0.04649
+      "gain": -0.49742
      },
      "-Thundering Strikes - Mental Quickness": {
       "added": {},
@@ -16852,7 +16852,7 @@
        "Thundering Strikes": 5,
        "Mental Quickness": 2
       },
-      "gain": -0.05831
+      "gain": -0.51744
      },
      "-Thundering Strikes - Improved Stormstrike": {
       "added": {},
@@ -16860,7 +16860,7 @@
        "Thundering Strikes": 5,
        "Improved Stormstrike": 2
       },
-      "gain": -0.08046
+      "gain": -0.52423
      },
      "-Thundering Strikes - Maelstrom Weapon": {
       "added": {},
@@ -16868,7 +16868,7 @@
        "Thundering Strikes": 5,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.08655
+      "gain": -0.78287
      },
      "-Thundering Strikes - Rage of the Farseer": {
       "added": {},
@@ -16876,7 +16876,7 @@
        "Thundering Strikes": 5,
        "Rage of the Farseer": 1
       },
-      "gain": -0.05772
+      "gain": -0.49787
      },
      "-Thundering Strikes - Totemic Focus": {
       "added": {},
@@ -16884,7 +16884,7 @@
        "Thundering Strikes": 5,
        "Totemic Focus": 1
       },
-      "gain": -0.02998
+      "gain": -0.49049
      },
      "-Guardian Totems - Mental Dexterity": {
       "added": {},
@@ -16892,7 +16892,7 @@
        "Guardian Totems": 1,
        "Mental Dexterity": 3
       },
-      "gain": -0.03399
+      "gain": -0.47732
      },
      "-Guardian Totems - Improved Lightning Shield": {
       "added": {},
@@ -16900,7 +16900,7 @@
        "Guardian Totems": 1,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.01189
+      "gain": -0.47544
      },
      "-Guardian Totems - Elemental Weapons": {
       "added": {},
@@ -16908,7 +16908,7 @@
        "Guardian Totems": 1,
        "Elemental Weapons": 2
       },
-      "gain": -0.00435
+      "gain": -0.47938
      },
      "-Guardian Totems - Shamanistic Focus": {
       "added": {},
@@ -16924,7 +16924,7 @@
        "Guardian Totems": 1,
        "Flurry": 5
       },
-      "gain": -0.01463
+      "gain": -0.48099
      },
      "-Guardian Totems - Stormstrike": {
       "added": {},
@@ -16932,7 +16932,7 @@
        "Guardian Totems": 1,
        "Stormstrike": 1
       },
-      "gain": -0.11491
+      "gain": -0.60171
      },
      "-Guardian Totems - Spirit Weapons": {
       "added": {},
@@ -16948,7 +16948,7 @@
        "Guardian Totems": 1,
        "Mental Quickness": 2
       },
-      "gain": -0.02434
+      "gain": -0.50347
      },
      "-Guardian Totems - Improved Stormstrike": {
       "added": {},
@@ -16956,7 +16956,7 @@
        "Guardian Totems": 1,
        "Improved Stormstrike": 2
       },
-      "gain": -0.04359
+      "gain": -0.50804
      },
      "-Guardian Totems - Maelstrom Weapon": {
       "added": {},
@@ -16964,7 +16964,7 @@
        "Guardian Totems": 1,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.04183
+      "gain": -0.78053
      },
      "-Guardian Totems - Rage of the Farseer": {
       "added": {},
@@ -16988,7 +16988,7 @@
        "Mental Dexterity": 3,
        "Improved Lightning Shield": 3
       },
-      "gain": -0.05618
+      "gain": -0.48466
      },
      "-Mental Dexterity - Elemental Weapons": {
       "added": {},
@@ -16996,7 +16996,7 @@
        "Mental Dexterity": 3,
        "Elemental Weapons": 2
       },
-      "gain": -0.04064
+      "gain": -0.4769
      },
      "-Mental Dexterity - Shamanistic Focus": {
       "added": {},
@@ -17004,7 +17004,7 @@
        "Mental Dexterity": 3,
        "Shamanistic Focus": 1
       },
-      "gain": -0.14156
+      "gain": -0.58207
      },
      "-Mental Dexterity - Flurry": {
       "added": {},
@@ -17012,7 +17012,7 @@
        "Mental Dexterity": 3,
        "Flurry": 5
       },
-      "gain": -0.05211
+      "gain": -0.47681
      },
      "-Mental Dexterity - Stormstrike": {
       "added": {},
@@ -17020,7 +17020,7 @@
        "Mental Dexterity": 3,
        "Stormstrike": 1
       },
-      "gain": -0.13968
+      "gain": -0.46355
      },
      "-Mental Dexterity - Spirit Weapons": {
       "added": {},
@@ -17028,7 +17028,7 @@
        "Mental Dexterity": 3,
        "Spirit Weapons": 1
       },
-      "gain": -0.03976
+      "gain": -0.4761
      },
      "-Mental Dexterity - Mental Quickness": {
       "added": {},
@@ -17036,7 +17036,7 @@
        "Mental Dexterity": 3,
        "Mental Quickness": 2
       },
-      "gain": -0.06117
+      "gain": -0.51662
      },
      "-Mental Dexterity - Improved Stormstrike": {
       "added": {},
@@ -17044,7 +17044,7 @@
        "Mental Dexterity": 3,
        "Improved Stormstrike": 2
       },
-      "gain": -0.07495
+      "gain": -0.50726
      },
      "-Mental Dexterity - Maelstrom Weapon": {
       "added": {},
@@ -17052,7 +17052,7 @@
        "Mental Dexterity": 3,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.09126
+      "gain": -0.77891
      },
      "-Mental Dexterity - Rage of the Farseer": {
       "added": {},
@@ -17060,7 +17060,7 @@
        "Mental Dexterity": 3,
        "Rage of the Farseer": 1
       },
-      "gain": -0.05137
+      "gain": -0.48371
      },
      "-Mental Dexterity - Totemic Focus": {
       "added": {},
@@ -17068,7 +17068,7 @@
        "Mental Dexterity": 3,
        "Totemic Focus": 1
       },
-      "gain": -0.03734
+      "gain": -0.48115
      },
      "-Improved Lightning Shield - Elemental Weapons": {
       "added": {},
@@ -17076,7 +17076,7 @@
        "Improved Lightning Shield": 3,
        "Elemental Weapons": 2
       },
-      "gain": -0.01906
+      "gain": -0.47723
      },
      "-Improved Lightning Shield - Shamanistic Focus": {
       "added": {},
@@ -17084,7 +17084,7 @@
        "Improved Lightning Shield": 3,
        "Shamanistic Focus": 1
       },
-      "gain": -0.12468
+      "gain": -0.57885
      },
      "-Improved Lightning Shield - Flurry": {
       "added": {},
@@ -17092,7 +17092,7 @@
        "Improved Lightning Shield": 3,
        "Flurry": 5
       },
-      "gain": -0.04847
+      "gain": -0.48422
      },
      "-Improved Lightning Shield - Stormstrike": {
       "added": {},
@@ -17100,7 +17100,7 @@
        "Improved Lightning Shield": 3,
        "Stormstrike": 1
       },
-      "gain": -0.13509
+      "gain": -0.45814
      },
      "-Improved Lightning Shield - Spirit Weapons": {
       "added": {},
@@ -17108,7 +17108,7 @@
        "Improved Lightning Shield": 3,
        "Spirit Weapons": 1
       },
-      "gain": -0.01094
+      "gain": -0.47789
      },
      "-Improved Lightning Shield - Mental Quickness": {
       "added": {},
@@ -17116,7 +17116,7 @@
        "Improved Lightning Shield": 3,
        "Mental Quickness": 2
       },
-      "gain": -0.03631
+      "gain": -0.51112
      },
      "-Improved Lightning Shield - Improved Stormstrike": {
       "added": {},
@@ -17124,7 +17124,7 @@
        "Improved Lightning Shield": 3,
        "Improved Stormstrike": 2
       },
-      "gain": -0.06155
+      "gain": -0.50647
      },
      "-Improved Lightning Shield - Maelstrom Weapon": {
       "added": {},
@@ -17132,7 +17132,7 @@
        "Improved Lightning Shield": 3,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.06344
+      "gain": -0.7775
      },
      "-Improved Lightning Shield - Rage of the Farseer": {
       "added": {},
@@ -17140,7 +17140,7 @@
        "Improved Lightning Shield": 3,
        "Rage of the Farseer": 1
       },
-      "gain": -0.03133
+      "gain": -0.48592
      },
      "-Improved Lightning Shield - Totemic Focus": {
       "added": {},
@@ -17148,7 +17148,7 @@
        "Improved Lightning Shield": 3,
        "Totemic Focus": 1
       },
-      "gain": -0.01292
+      "gain": -0.48096
      },
      "-Elemental Weapons - Shamanistic Focus": {
       "added": {},
@@ -17156,7 +17156,7 @@
        "Elemental Weapons": 2,
        "Shamanistic Focus": 1
       },
-      "gain": -0.11912
+      "gain": -0.57958
      },
      "-Elemental Weapons - Flurry": {
       "added": {},
@@ -17164,7 +17164,7 @@
        "Elemental Weapons": 2,
        "Flurry": 5
       },
-      "gain": -0.02623
+      "gain": -0.48076
      },
      "-Elemental Weapons - Stormstrike": {
       "added": {},
@@ -17172,7 +17172,7 @@
        "Elemental Weapons": 2,
        "Stormstrike": 1
       },
-      "gain": -0.1186
+      "gain": -0.46009
      },
      "-Elemental Weapons - Spirit Weapons": {
       "added": {},
@@ -17180,7 +17180,7 @@
        "Elemental Weapons": 2,
        "Spirit Weapons": 1
       },
-      "gain": -0.00884
+      "gain": -0.48367
      },
      "-Elemental Weapons - Mental Quickness": {
       "added": {},
@@ -17188,7 +17188,7 @@
        "Elemental Weapons": 2,
        "Mental Quickness": 2
       },
-      "gain": -0.03086
+      "gain": -0.50236
      },
      "-Elemental Weapons - Improved Stormstrike": {
       "added": {},
@@ -17196,7 +17196,7 @@
        "Elemental Weapons": 2,
        "Improved Stormstrike": 2
       },
-      "gain": -0.04318
+      "gain": -0.50702
      },
      "-Elemental Weapons - Maelstrom Weapon": {
       "added": {},
@@ -17204,7 +17204,7 @@
        "Elemental Weapons": 2,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.0531
+      "gain": -0.78025
      },
      "-Elemental Weapons - Rage of the Farseer": {
       "added": {},
@@ -17212,7 +17212,7 @@
        "Elemental Weapons": 2,
        "Rage of the Farseer": 1
       },
-      "gain": -0.02121
+      "gain": -0.48221
      },
      "-Elemental Weapons - Totemic Focus": {
       "added": {},
@@ -17228,7 +17228,7 @@
        "Shamanistic Focus": 1,
        "Flurry": 5
       },
-      "gain": -0.12708
+      "gain": -0.5806
      },
      "-Shamanistic Focus - Stormstrike": {
       "added": {},
@@ -17236,7 +17236,7 @@
        "Shamanistic Focus": 1,
        "Stormstrike": 1
       },
-      "gain": -0.22766
+      "gain": -0.65245
      },
      "-Shamanistic Focus - Spirit Weapons": {
       "added": {},
@@ -17252,7 +17252,7 @@
        "Shamanistic Focus": 1,
        "Mental Quickness": 2
       },
-      "gain": -0.12909
+      "gain": -0.60236
      },
      "-Shamanistic Focus - Improved Stormstrike": {
       "added": {},
@@ -17260,7 +17260,7 @@
        "Shamanistic Focus": 1,
        "Improved Stormstrike": 2
       },
-      "gain": -0.14237
+      "gain": -0.59865
      },
      "-Shamanistic Focus - Maelstrom Weapon": {
       "added": {},
@@ -17268,7 +17268,7 @@
        "Shamanistic Focus": 1,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.15537
+      "gain": -0.82617
      },
      "-Shamanistic Focus - Rage of the Farseer": {
       "added": {},
@@ -17292,7 +17292,7 @@
        "Flurry": 5,
        "Stormstrike": 1
       },
-      "gain": -0.13781
+      "gain": -0.46872
      },
      "-Flurry - Spirit Weapons": {
       "added": {},
@@ -17300,7 +17300,7 @@
        "Flurry": 5,
        "Spirit Weapons": 1
       },
-      "gain": -0.02238
+      "gain": -0.47933
      },
      "-Flurry - Mental Quickness": {
       "added": {},
@@ -17308,7 +17308,7 @@
        "Flurry": 5,
        "Mental Quickness": 2
       },
-      "gain": -0.04456
+      "gain": -0.51141
      },
      "-Flurry - Improved Stormstrike": {
       "added": {},
@@ -17316,7 +17316,7 @@
        "Flurry": 5,
        "Improved Stormstrike": 2
       },
-      "gain": -0.05297
+      "gain": -0.50315
      },
      "-Flurry - Maelstrom Weapon": {
       "added": {},
@@ -17324,7 +17324,7 @@
        "Flurry": 5,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.07245
+      "gain": -0.77812
      },
      "-Flurry - Rage of the Farseer": {
       "added": {},
@@ -17332,7 +17332,7 @@
        "Flurry": 5,
        "Rage of the Farseer": 1
       },
-      "gain": -0.03383
+      "gain": -0.48158
      },
      "-Flurry - Totemic Focus": {
       "added": {},
@@ -17340,7 +17340,7 @@
        "Flurry": 5,
        "Totemic Focus": 1
       },
-      "gain": -0.01707
+      "gain": -0.4886
      },
      "-Stormstrike - Spirit Weapons": {
       "added": {},
@@ -17348,7 +17348,7 @@
        "Stormstrike": 1,
        "Spirit Weapons": 1
       },
-      "gain": -0.13229
+      "gain": -0.60953
      },
      "-Stormstrike - Mental Quickness": {
       "added": {},
@@ -17356,7 +17356,7 @@
        "Stormstrike": 1,
        "Mental Quickness": 2
       },
-      "gain": -0.12801
+      "gain": -0.48155
      },
      "-Stormstrike - Improved Stormstrike": {
       "added": {},
@@ -17364,7 +17364,7 @@
        "Stormstrike": 1,
        "Improved Stormstrike": 2
       },
-      "gain": -0.11491
+      "gain": -0.46369
      },
      "-Stormstrike - Maelstrom Weapon": {
       "added": {},
@@ -17372,7 +17372,7 @@
        "Stormstrike": 1,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.14145
+      "gain": -0.75803
      },
      "-Stormstrike - Rage of the Farseer": {
       "added": {},
@@ -17380,7 +17380,7 @@
        "Stormstrike": 1,
        "Rage of the Farseer": 1
       },
-      "gain": -0.14509
+      "gain": -0.61529
      },
      "-Stormstrike - Totemic Focus": {
       "added": {},
@@ -17388,7 +17388,7 @@
        "Stormstrike": 1,
        "Totemic Focus": 1
       },
-      "gain": -0.11428
+      "gain": -0.60142
      },
      "-Spirit Weapons - Mental Quickness": {
       "added": {},
@@ -17396,7 +17396,7 @@
        "Spirit Weapons": 1,
        "Mental Quickness": 2
       },
-      "gain": -0.02161
+      "gain": -0.50823
      },
      "-Spirit Weapons - Improved Stormstrike": {
       "added": {},
@@ -17404,7 +17404,7 @@
        "Spirit Weapons": 1,
        "Improved Stormstrike": 2
       },
-      "gain": -0.03643
+      "gain": -0.50958
      },
      "-Spirit Weapons - Maelstrom Weapon": {
       "added": {},
@@ -17412,7 +17412,7 @@
        "Spirit Weapons": 1,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.05291
+      "gain": -0.77832
      },
      "-Spirit Weapons - Rage of the Farseer": {
       "added": {},
@@ -17436,7 +17436,7 @@
        "Mental Quickness": 2,
        "Improved Stormstrike": 2
       },
-      "gain": -0.05924
+      "gain": -0.52997
      },
      "-Mental Quickness - Maelstrom Weapon": {
       "added": {},
@@ -17444,7 +17444,7 @@
        "Mental Quickness": 2,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.06223
+      "gain": -0.79001
      },
      "-Mental Quickness - Rage of the Farseer": {
       "added": {},
@@ -17452,7 +17452,7 @@
        "Mental Quickness": 2,
        "Rage of the Farseer": 1
       },
-      "gain": -0.03611
+      "gain": -0.51232
      },
      "-Mental Quickness - Totemic Focus": {
       "added": {},
@@ -17468,7 +17468,7 @@
        "Improved Stormstrike": 2,
        "Maelstrom Weapon": 5
       },
-      "gain": -0.0785
+      "gain": -0.78969
      },
      "-Improved Stormstrike - Rage of the Farseer": {
       "added": {},
@@ -17476,7 +17476,7 @@
        "Improved Stormstrike": 2,
        "Rage of the Farseer": 1
       },
-      "gain": -0.05454
+      "gain": -0.51511
      },
      "-Improved Stormstrike - Totemic Focus": {
       "added": {},
@@ -17492,7 +17492,7 @@
        "Maelstrom Weapon": 5,
        "Rage of the Farseer": 1
       },
-      "gain": -0.05692
+      "gain": -0.78267
      },
      "-Maelstrom Weapon - Totemic Focus": {
       "added": {},
@@ -17500,7 +17500,7 @@
        "Maelstrom Weapon": 5,
        "Totemic Focus": 1
       },
-      "gain": -0.04451
+      "gain": -0.78039
      },
      "-Rage of the Farseer - Totemic Focus": {
       "added": {},
@@ -17522,7 +17522,7 @@
     ],
     "why": null,
     "spec": "Enhancement",
-    "date": "2026-10-26"
+    "date": "2026-11-02"
    },
    "signature": {
     "spec": "Enhancement",

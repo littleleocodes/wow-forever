@@ -1,5 +1,10 @@
 {
- "eat_below": 0.5,
+ "eat_below": 0.4,
+ "veto": {
+  "Starfire": {
+   "min_hp": 0.1
+  }
+ },
  "class": "druid",
  "spec": "balance-dps",
  "build": "opt-balance-dps-leveling-st",
@@ -11,58 +16,81 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-11-02",
+ "signature": {
+  "required": [
+   "Moonfire",
+   "Starfire"
+  ],
+  "build_spec": "Balance",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.9643020098516747,
+  "core_share_after": 0.963863919403232,
+  "min_share": 0.7,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "eat below 50% health",
+   "change": "eat below 40% health",
    "rule": [
     "eat_below",
     null,
-    0.5
+    0.4
    ],
-   "gain_seed1": 0.006218759850763034,
-   "gain_seed2": 0.006415749930829828
+   "gain_seed1": 0.00996918207005204,
+   "gain_seed2": 0.007926605306845746
+  },
+  {
+   "round": 2,
+   "change": "Starfire only while the mob has more than 10% health",
+   "rule": [
+    "min_hp",
+    "Starfire",
+    0.1
+   ],
+   "gain_seed1": 0.0036067680421963955,
+   "gain_seed2": 0.004025227779950624
   }
  ],
- "weighted_before": 43.4688657038942,
- "weighted_after": 43.32859814806738,
+ "weighted_before": 34.96643006728271,
+ "weighted_after": 34.55654670080905,
  "per_level": {
   "15": {
-   "before": 34.44632922685828,
-   "after": 34.44632922685828,
+   "before": 20.362871675556725,
+   "after": 20.362871675556725,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "20": {
-   "before": 36.558736598259095,
-   "after": 36.558736598259095,
+   "before": 23.92556174720881,
+   "after": 23.87267129403419,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 50.13823090894724,
-   "after": 50.15371861786247,
+   "before": 33.465067469756335,
+   "after": 33.22805927372658,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 53.59117097966955,
-   "after": 53.22408582369045,
+   "before": 40.83600384018438,
+   "after": 40.21358164354949,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 43.92432853296,
-   "after": 43.98032697019942,
+   "before": 38.40722881089182,
+   "after": 37.76014478101858,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 37.5654377144333,
-   "after": 37.25312652454945,
+   "before": 36.26790893572664,
+   "after": 35.88947927758676,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

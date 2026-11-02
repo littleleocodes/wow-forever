@@ -973,7 +973,7 @@
    },
    "values_base": 26.16,
    "synergy": {
-    "date": "2026-10-23",
+    "date": "2026-11-02",
     "winner": "12/31/8",
     "relevant": 42,
     "missing": 23,
@@ -3851,18 +3851,18 @@
       "kind": "swap"
      },
      "Quietus + Improved Eviscerate": {
-      "gain": -0.517,
-      "interaction": -0.4852,
+      "gain": -0.5653,
+      "interaction": -0.5335,
       "kind": "swap"
      },
      "Quietus + Improved Sinister Strike": {
-      "gain": -0.5112,
-      "interaction": -0.4784,
+      "gain": -0.5601,
+      "interaction": -0.5273,
       "kind": "swap"
      },
      "Quietus + Precision": {
-      "gain": -0.518,
-      "interaction": -0.4875,
+      "gain": -0.5662,
+      "interaction": -0.5357,
       "kind": "swap"
      },
      "Quietus + Riposte": {
@@ -3876,8 +3876,8 @@
       "kind": "swap"
      },
      "Quietus + Dual Wield Specialization": {
-      "gain": -0.5081,
-      "interaction": -0.4958,
+      "gain": -0.5573,
+      "interaction": -0.545,
       "kind": "swap"
      },
      "Quietus + Blade Flurry": {
@@ -3886,18 +3886,18 @@
       "kind": "swap"
      },
      "Quietus + Hack and Slash": {
-      "gain": -0.507,
-      "interaction": -0.4919,
+      "gain": -0.5563,
+      "interaction": -0.5412,
       "kind": "swap"
      },
      "Quietus + Weapon Expertise": {
-      "gain": -0.5181,
-      "interaction": -0.4824,
+      "gain": -0.5663,
+      "interaction": -0.5306,
       "kind": "swap"
      },
      "Quietus + Aggression": {
-      "gain": -0.5088,
-      "interaction": -0.4944,
+      "gain": -0.5579,
+      "interaction": -0.5435,
       "kind": "swap"
      },
      "Quietus + Adrenaline Rush": {
@@ -4072,16 +4072,16 @@
       "interaction": 0.0031
      },
      "Malice + Improved Eviscerate": {
-      "gain": -0.5306,
-      "interaction": -0.4666
+      "gain": -0.5776,
+      "interaction": -0.5136
      },
      "Malice + Improved Sinister Strike": {
-      "gain": -0.5311,
-      "interaction": -0.4661
+      "gain": -0.578,
+      "interaction": -0.513
      },
      "Malice + Precision": {
-      "gain": -0.5342,
-      "interaction": -0.4715
+      "gain": -0.5807,
+      "interaction": -0.518
      },
      "Malice + Riposte": {
       "gain": -0.0314,
@@ -4092,24 +4092,24 @@
       "interaction": -0.004
      },
      "Malice + Dual Wield Specialization": {
-      "gain": -0.527,
-      "interaction": -0.4825
+      "gain": -0.5743,
+      "interaction": -0.5298
      },
      "Malice + Blade Flurry": {
       "gain": -0.0336,
       "interaction": -0.0072
      },
      "Malice + Hack and Slash": {
-      "gain": -0.5233,
-      "interaction": -0.476
+      "gain": -0.571,
+      "interaction": -0.5237
      },
      "Malice + Weapon Expertise": {
-      "gain": -0.5308,
-      "interaction": -0.4629
+      "gain": -0.5777,
+      "interaction": -0.5098
      },
      "Malice + Aggression": {
-      "gain": -0.5216,
-      "interaction": -0.475
+      "gain": -0.5695,
+      "interaction": -0.5229
      },
      "Malice + Adrenaline Rush": {
       "gain": -0.0488,
@@ -9912,7 +9912,7 @@
       "removed": {
        "Improved Eviscerate": 3
       },
-      "gain": -0.51697
+      "gain": -0.56528
      },
      "Quietus - Improved Sinister Strike": {
       "added": {
@@ -9921,7 +9921,7 @@
       "removed": {
        "Improved Sinister Strike": 2
       },
-      "gain": -0.51122
+      "gain": -0.56009
      },
      "Quietus - Precision": {
       "added": {
@@ -9930,7 +9930,7 @@
       "removed": {
        "Precision": 3
       },
-      "gain": -0.51796
+      "gain": -0.56616
      },
      "Quietus - Riposte": {
       "added": {
@@ -9957,7 +9957,7 @@
       "removed": {
        "Dual Wield Specialization": 5
       },
-      "gain": -0.50812
+      "gain": -0.55731
      },
      "Quietus - Blade Flurry": {
       "added": {
@@ -9975,7 +9975,7 @@
       "removed": {
        "Hack and Slash": 3
       },
-      "gain": -0.50704
+      "gain": -0.55633
      },
      "Quietus - Weapon Expertise": {
       "added": {
@@ -9984,7 +9984,7 @@
       "removed": {
        "Weapon Expertise": 2
       },
-      "gain": -0.51806
+      "gain": -0.56626
      },
      "Quietus - Aggression": {
       "added": {
@@ -9993,7 +9993,7 @@
       "removed": {
        "Aggression": 3
       },
-      "gain": -0.50875
+      "gain": -0.55788
      },
      "Quietus - Adrenaline Rush": {
       "added": {
@@ -10322,7 +10322,7 @@
        "Malice": 5,
        "Improved Eviscerate": 3
       },
-      "gain": -0.53062
+      "gain": -0.57755
      },
      "-Malice - Improved Sinister Strike": {
       "added": {},
@@ -10330,7 +10330,7 @@
        "Malice": 5,
        "Improved Sinister Strike": 2
       },
-      "gain": -0.53112
+      "gain": -0.57801
      },
      "-Malice - Precision": {
       "added": {},
@@ -10338,7 +10338,7 @@
        "Malice": 5,
        "Precision": 3
       },
-      "gain": -0.53416
+      "gain": -0.58074
      },
      "-Malice - Riposte": {
       "added": {},
@@ -10362,7 +10362,7 @@
        "Malice": 5,
        "Dual Wield Specialization": 5
       },
-      "gain": -0.52701
+      "gain": -0.57431
      },
      "-Malice - Blade Flurry": {
       "added": {},
@@ -10378,7 +10378,7 @@
        "Malice": 5,
        "Hack and Slash": 3
       },
-      "gain": -0.52333
+      "gain": -0.571
      },
      "-Malice - Weapon Expertise": {
       "added": {},
@@ -10386,7 +10386,7 @@
        "Malice": 5,
        "Weapon Expertise": 2
       },
-      "gain": -0.53076
+      "gain": -0.57768
      },
      "-Malice - Aggression": {
       "added": {},
@@ -10394,7 +10394,7 @@
        "Malice": 5,
        "Aggression": 3
       },
-      "gain": -0.52164
+      "gain": -0.56948
      },
      "-Malice - Adrenaline Rush": {
       "added": {},
@@ -11517,7 +11517,7 @@
       "gain": -0.08668
      }
     },
-    "minutes": 2.1
+    "minutes": 1.5
    },
    "signature": {
     "spec": "Combat",
@@ -11551,7 +11551,7 @@
     ],
     "why": null,
     "spec": "Combat",
-    "date": "2026-10-26"
+    "date": "2026-11-02"
    }
   },
   "subtlety-leveling": {
@@ -12523,7 +12523,7 @@
    },
    "values_base": 24.56,
    "synergy": {
-    "date": "2026-10-24",
+    "date": "2026-11-02",
     "winner": "13/17/21",
     "relevant": 42,
     "missing": 24,
@@ -12609,19 +12609,19 @@
      {
       "pair": "Vile Poisons + Ghostly Strike",
       "gain": -0.0058,
-      "interaction": 0.4934,
+      "interaction": 0.5425,
       "kind": "swap"
      },
      {
       "pair": "Lethality + Ghostly Strike",
       "gain": -0.0152,
-      "interaction": 0.487,
+      "interaction": 0.5361,
       "kind": "swap"
      },
      {
       "pair": "Seal Fate + Ghostly Strike",
       "gain": 0.0504,
-      "interaction": 0.4821,
+      "interaction": 0.5312,
       "kind": "swap"
      },
      {
@@ -12828,7 +12828,7 @@
      "-Initiative": -0.0281,
      "Initiative -1": -0.0171,
      "Initiative -2": -0.0223,
-     "-Ghostly Strike": -0.5092,
+     "-Ghostly Strike": -0.5583,
      "-Premeditation": -0.009,
      "-Serrated Blades": -0.0304,
      "Serrated Blades -1": -0.0118,
@@ -13991,7 +13991,7 @@
       "kind": "swap"
      },
      "Improved Expose Armor + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14036,8 +14036,8 @@
       "kind": "swap"
      },
      "Lethality + Camouflage": {
-      "gain": -0.0332,
-      "interaction": -0.0402,
+      "gain": -0.1299,
+      "interaction": -0.1369,
       "kind": "swap"
      },
      "Lethality + Opportunity": {
@@ -14062,7 +14062,7 @@
      },
      "Lethality + Ghostly Strike": {
       "gain": -0.0152,
-      "interaction": 0.487,
+      "interaction": 0.5361,
       "kind": "swap"
      },
      "Lethality + Premeditation": {
@@ -14076,8 +14076,8 @@
       "kind": "swap"
      },
      "Lethality + Hemorrhage": {
-      "gain": -0.5148,
-      "interaction": -0.4907,
+      "gain": -0.5633,
+      "interaction": -0.5392,
       "kind": "swap"
      },
      "Vile Poisons + Improved Eviscerate": {
@@ -14106,8 +14106,8 @@
       "kind": "swap"
      },
      "Vile Poisons + Camouflage": {
-      "gain": -0.0491,
-      "interaction": -0.0591,
+      "gain": -0.1442,
+      "interaction": -0.1542,
       "kind": "swap"
      },
      "Vile Poisons + Opportunity": {
@@ -14132,7 +14132,7 @@
      },
      "Vile Poisons + Ghostly Strike": {
       "gain": -0.0058,
-      "interaction": 0.4934,
+      "interaction": 0.5425,
       "kind": "swap"
      },
      "Vile Poisons + Premeditation": {
@@ -14146,8 +14146,8 @@
       "kind": "swap"
      },
      "Vile Poisons + Hemorrhage": {
-      "gain": -0.51,
-      "interaction": -0.4889,
+      "gain": -0.559,
+      "interaction": -0.5379,
       "kind": "swap"
      },
      "Cold Blood + Improved Eviscerate": {
@@ -14201,8 +14201,8 @@
       "kind": "swap"
      },
      "Cold Blood + Ghostly Strike": {
-      "gain": -0.498,
-      "interaction": -0.0112,
+      "gain": -0.5482,
+      "interaction": -0.0123,
       "kind": "swap"
      },
      "Cold Blood + Premeditation": {
@@ -14271,8 +14271,8 @@
       "kind": "swap"
      },
      "Vigor + Ghostly Strike": {
-      "gain": -0.4998,
-      "interaction": -0.011,
+      "gain": -0.5499,
+      "interaction": -0.012,
       "kind": "swap"
      },
      "Vigor + Premeditation": {
@@ -14341,7 +14341,7 @@
       "kind": "swap"
      },
      "Mutilate + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14411,7 +14411,7 @@
       "kind": "swap"
      },
      "Improved Kidney Shot + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14456,8 +14456,8 @@
       "kind": "swap"
      },
      "Seal Fate + Camouflage": {
-      "gain": 0.0711,
-      "interaction": -0.0064,
+      "gain": -0.0361,
+      "interaction": -0.1136,
       "kind": "swap"
      },
      "Seal Fate + Opportunity": {
@@ -14482,7 +14482,7 @@
      },
      "Seal Fate + Ghostly Strike": {
       "gain": 0.0504,
-      "interaction": 0.4821,
+      "interaction": 0.5312,
       "kind": "swap"
      },
      "Seal Fate + Premeditation": {
@@ -14496,8 +14496,8 @@
       "kind": "swap"
      },
      "Seal Fate + Hemorrhage": {
-      "gain": -0.4883,
-      "interaction": -0.5347,
+      "gain": -0.5395,
+      "interaction": -0.5859,
       "kind": "swap"
      },
      "Venom + Improved Eviscerate": {
@@ -14551,7 +14551,7 @@
       "kind": "swap"
      },
      "Venom + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14616,7 +14616,7 @@
       "kind": "swap"
      },
      "Improved Sinister Strike + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14681,7 +14681,7 @@
       "kind": "swap"
      },
      "Puncturing Wounds + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14746,7 +14746,7 @@
       "kind": "swap"
      },
      "Endurance + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0,
       "kind": "swap"
      },
@@ -14811,8 +14811,8 @@
       "kind": "swap"
      },
      "Blade Flurry + Ghostly Strike": {
-      "gain": -0.5077,
-      "interaction": 0.0081,
+      "gain": -0.557,
+      "interaction": 0.0079,
       "kind": "swap"
      },
      "Blade Flurry + Premeditation": {
@@ -14876,8 +14876,8 @@
       "kind": "swap"
      },
      "Hack and Slash + Ghostly Strike": {
-      "gain": -0.4929,
-      "interaction": -0.0125,
+      "gain": -0.5436,
+      "interaction": -0.0141,
       "kind": "swap"
      },
      "Hack and Slash + Premeditation": {
@@ -14941,8 +14941,8 @@
       "kind": "swap"
      },
      "Weapon Expertise + Ghostly Strike": {
-      "gain": -0.489,
-      "interaction": -0.0117,
+      "gain": -0.5401,
+      "interaction": -0.0137,
       "kind": "swap"
      },
      "Weapon Expertise + Premeditation": {
@@ -15006,8 +15006,8 @@
       "kind": "swap"
      },
      "Aggression + Ghostly Strike": {
-      "gain": -0.5036,
-      "interaction": -0.0078,
+      "gain": -0.5532,
+      "interaction": -0.0083,
       "kind": "swap"
      },
      "Aggression + Premeditation": {
@@ -15071,8 +15071,8 @@
       "kind": "swap"
      },
      "Adrenaline Rush + Ghostly Strike": {
-      "gain": -0.4974,
-      "interaction": -0.0074,
+      "gain": -0.5477,
+      "interaction": -0.0086,
       "kind": "swap"
      },
      "Adrenaline Rush + Premeditation": {
@@ -15460,8 +15460,8 @@
       "interaction": 0.002
      },
      "Remorseless Attacks + Ghostly Strike": {
-      "gain": -0.5352,
-      "interaction": 0.0403
+      "gain": -0.5817,
+      "interaction": 0.0429
      },
      "Remorseless Attacks + Premeditation": {
       "gain": -0.0833,
@@ -15524,8 +15524,8 @@
       "interaction": -0.0056
      },
      "Malice + Ghostly Strike": {
-      "gain": -0.5238,
-      "interaction": 0.0164
+      "gain": -0.5714,
+      "interaction": 0.0179
      },
      "Malice + Premeditation": {
       "gain": -0.0419,
@@ -15584,8 +15584,8 @@
       "interaction": 0.0065
      },
      "Murder + Ghostly Strike": {
-      "gain": -0.5184,
-      "interaction": 0.0102
+      "gain": -0.5666,
+      "interaction": 0.0111
      },
      "Murder + Premeditation": {
       "gain": -0.0303,
@@ -15640,8 +15640,8 @@
       "interaction": 0.0099
      },
      "Relentless Strikes + Ghostly Strike": {
-      "gain": -0.5284,
-      "interaction": 0.0251
+      "gain": -0.5756,
+      "interaction": 0.027
      },
      "Relentless Strikes + Premeditation": {
       "gain": -0.0562,
@@ -15692,8 +15692,8 @@
       "interaction": -0.0039
      },
      "Improved Eviscerate + Ghostly Strike": {
-      "gain": -0.5322,
-      "interaction": 0.0247
+      "gain": -0.579,
+      "interaction": 0.027
      },
      "Improved Eviscerate + Premeditation": {
       "gain": -0.0567,
@@ -15740,8 +15740,8 @@
       "interaction": 0.0003
      },
      "Precision + Ghostly Strike": {
-      "gain": -0.5246,
-      "interaction": 0.024
+      "gain": -0.5722,
+      "interaction": 0.0255
      },
      "Precision + Premeditation": {
       "gain": -0.0424,
@@ -15784,7 +15784,7 @@
       "interaction": -0.0061
      },
      "Riposte + Ghostly Strike": {
-      "gain": -0.5095,
+      "gain": -0.5586,
       "interaction": 0.0117
      },
      "Riposte + Premeditation": {
@@ -15824,8 +15824,8 @@
       "interaction": -0.0131
      },
      "Flawless Execution + Ghostly Strike": {
-      "gain": -0.5347,
-      "interaction": 0.0245
+      "gain": -0.5812,
+      "interaction": 0.0271
      },
      "Flawless Execution + Premeditation": {
       "gain": -0.0668,
@@ -15860,7 +15860,7 @@
       "interaction": -0.004
      },
      "Dual Wield Specialization + Ghostly Strike": {
-      "gain": -0.5094,
+      "gain": -0.5585,
       "interaction": -0.0008
      },
      "Dual Wield Specialization + Premeditation": {
@@ -15892,7 +15892,7 @@
       "interaction": -0.0
      },
      "Camouflage + Ghostly Strike": {
-      "gain": -0.5092,
+      "gain": -0.5583,
       "interaction": -0.0
      },
      "Camouflage + Premeditation": {
@@ -15920,8 +15920,8 @@
       "interaction": 0.0041
      },
      "Opportunity + Ghostly Strike": {
-      "gain": -0.5176,
-      "interaction": 0.0108
+      "gain": -0.5658,
+      "interaction": 0.0117
      },
      "Opportunity + Premeditation": {
       "gain": -0.0346,
@@ -15944,8 +15944,8 @@
       "interaction": -0.0185
      },
      "Setup + Ghostly Strike": {
-      "gain": -0.5423,
-      "interaction": 0.0547
+      "gain": -0.588,
+      "interaction": 0.0581
      },
      "Setup + Premeditation": {
       "gain": -0.1048,
@@ -15964,8 +15964,8 @@
       "interaction": 0.0062
      },
      "Improved Ambush + Ghostly Strike": {
-      "gain": -0.5352,
-      "interaction": 0.0322
+      "gain": -0.5817,
+      "interaction": 0.0348
      },
      "Improved Ambush + Premeditation": {
       "gain": -0.0703,
@@ -15980,8 +15980,8 @@
       "interaction": 0.0002
      },
      "Initiative + Ghostly Strike": {
-      "gain": -0.5302,
-      "interaction": 0.0071
+      "gain": -0.5772,
+      "interaction": 0.0092
      },
      "Initiative + Premeditation": {
       "gain": -0.0495,
@@ -15996,16 +15996,16 @@
       "interaction": -0.0252
      },
      "Ghostly Strike + Premeditation": {
-      "gain": -0.5168,
-      "interaction": 0.0014
+      "gain": -0.5652,
+      "interaction": 0.0021
      },
      "Ghostly Strike + Serrated Blades": {
-      "gain": -0.5197,
-      "interaction": 0.0199
+      "gain": -0.5678,
+      "interaction": 0.0209
      },
      "Ghostly Strike + Hemorrhage": {
-      "gain": -0.5378,
-      "interaction": 0.0025
+      "gain": -0.584,
+      "interaction": 0.0054
      },
      "Premeditation + Serrated Blades": {
       "gain": -0.043,
@@ -16411,7 +16411,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "-Premeditation": {
       "added": {},
@@ -18753,7 +18753,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Improved Expose Armor - Premeditation": {
       "added": {
@@ -18834,7 +18834,7 @@
       "removed": {
        "Camouflage": 4
       },
-      "gain": -0.03321
+      "gain": -0.12989
      },
      "Lethality - Opportunity": {
       "added": {
@@ -18906,7 +18906,7 @@
       "removed": {
        "Hemorrhage": 1
       },
-      "gain": -0.51482
+      "gain": -0.56334
      },
      "Vile Poisons - Improved Eviscerate": {
       "added": {
@@ -18960,7 +18960,7 @@
       "removed": {
        "Camouflage": 4
       },
-      "gain": -0.04913
+      "gain": -0.14422
      },
      "Vile Poisons - Opportunity": {
       "added": {
@@ -19032,7 +19032,7 @@
       "removed": {
        "Hemorrhage": 1
       },
-      "gain": -0.50996
+      "gain": -0.55897
      },
      "Cold Blood - Improved Eviscerate": {
       "added": {
@@ -19131,7 +19131,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.49805
+      "gain": -0.54824
      },
      "Cold Blood - Premeditation": {
       "added": {
@@ -19257,7 +19257,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.49984
+      "gain": -0.54985
      },
      "Vigor - Premeditation": {
       "added": {
@@ -19383,7 +19383,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Mutilate - Premeditation": {
       "added": {
@@ -19509,7 +19509,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Improved Kidney Shot - Premeditation": {
       "added": {
@@ -19590,7 +19590,7 @@
       "removed": {
        "Camouflage": 4
       },
-      "gain": 0.07105
+      "gain": -0.03605
      },
      "Seal Fate - Opportunity": {
       "added": {
@@ -19662,7 +19662,7 @@
       "removed": {
        "Hemorrhage": 1
       },
-      "gain": -0.48832
+      "gain": -0.53949
      },
      "Venom - Improved Eviscerate": {
       "added": {
@@ -19761,7 +19761,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Venom - Premeditation": {
       "added": {
@@ -19878,7 +19878,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Improved Sinister Strike - Premeditation": {
       "added": {
@@ -19995,7 +19995,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Puncturing Wounds - Premeditation": {
       "added": {
@@ -20112,7 +20112,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "Endurance - Premeditation": {
       "added": {
@@ -20229,7 +20229,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50772
+      "gain": -0.55695
      },
      "Blade Flurry - Premeditation": {
       "added": {
@@ -20346,7 +20346,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.49291
+      "gain": -0.54362
      },
      "Hack and Slash - Premeditation": {
       "added": {
@@ -20463,7 +20463,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.48898
+      "gain": -0.54009
      },
      "Weapon Expertise - Premeditation": {
       "added": {
@@ -20580,7 +20580,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.50356
+      "gain": -0.55321
      },
      "Aggression - Premeditation": {
       "added": {
@@ -20697,7 +20697,7 @@
       "removed": {
        "Ghostly Strike": 1
       },
-      "gain": -0.4974
+      "gain": -0.54766
      },
      "Adrenaline Rush - Premeditation": {
       "added": {
@@ -21403,7 +21403,7 @@
        "Remorseless Attacks": 2,
        "Ghostly Strike": 1
       },
-      "gain": -0.53524
+      "gain": -0.58171
      },
      "-Remorseless Attacks - Premeditation": {
       "added": {},
@@ -21531,7 +21531,7 @@
        "Malice": 5,
        "Ghostly Strike": 1
       },
-      "gain": -0.52375
+      "gain": -0.57138
      },
      "-Malice - Premeditation": {
       "added": {},
@@ -21651,7 +21651,7 @@
        "Murder": 2,
        "Ghostly Strike": 1
       },
-      "gain": -0.5184
+      "gain": -0.56656
      },
      "-Murder - Premeditation": {
       "added": {},
@@ -21763,7 +21763,7 @@
        "Relentless Strikes": 1,
        "Ghostly Strike": 1
       },
-      "gain": -0.5284
+      "gain": -0.57556
      },
      "-Relentless Strikes - Premeditation": {
       "added": {},
@@ -21867,7 +21867,7 @@
        "Improved Eviscerate": 3,
        "Ghostly Strike": 1
       },
-      "gain": -0.53219
+      "gain": -0.57897
      },
      "-Improved Eviscerate - Premeditation": {
       "added": {},
@@ -21963,7 +21963,7 @@
        "Precision": 3,
        "Ghostly Strike": 1
       },
-      "gain": -0.52463
+      "gain": -0.57217
      },
      "-Precision - Premeditation": {
       "added": {},
@@ -22051,7 +22051,7 @@
        "Riposte": 1,
        "Ghostly Strike": 1
       },
-      "gain": -0.5095
+      "gain": -0.55855
      },
      "-Riposte - Premeditation": {
       "added": {},
@@ -22131,7 +22131,7 @@
        "Flawless Execution": 1,
        "Ghostly Strike": 1
       },
-      "gain": -0.53468
+      "gain": -0.58121
      },
      "-Flawless Execution - Premeditation": {
       "added": {},
@@ -22203,7 +22203,7 @@
        "Dual Wield Specialization": 1,
        "Ghostly Strike": 1
       },
-      "gain": -0.50945
+      "gain": -0.5585
      },
      "-Dual Wield Specialization - Premeditation": {
       "added": {},
@@ -22267,7 +22267,7 @@
        "Camouflage": 4,
        "Ghostly Strike": 1
       },
-      "gain": -0.50924
+      "gain": -0.55831
      },
      "-Camouflage - Premeditation": {
       "added": {},
@@ -22323,7 +22323,7 @@
        "Opportunity": 2,
        "Ghostly Strike": 1
       },
-      "gain": -0.51759
+      "gain": -0.56583
      },
      "-Opportunity - Premeditation": {
       "added": {},
@@ -22371,7 +22371,7 @@
        "Setup": 3,
        "Ghostly Strike": 1
       },
-      "gain": -0.54227
+      "gain": -0.58805
      },
      "-Setup - Premeditation": {
       "added": {},
@@ -22411,7 +22411,7 @@
        "Improved Ambush": 3,
        "Ghostly Strike": 1
       },
-      "gain": -0.53523
+      "gain": -0.58171
      },
      "-Improved Ambush - Premeditation": {
       "added": {},
@@ -22443,7 +22443,7 @@
        "Initiative": 3,
        "Ghostly Strike": 1
       },
-      "gain": -0.5302
+      "gain": -0.57718
      },
      "-Initiative - Premeditation": {
       "added": {},
@@ -22475,7 +22475,7 @@
        "Ghostly Strike": 1,
        "Premeditation": 1
       },
-      "gain": -0.51685
+      "gain": -0.56516
      },
      "-Ghostly Strike - Serrated Blades": {
       "added": {},
@@ -22483,7 +22483,7 @@
        "Ghostly Strike": 1,
        "Serrated Blades": 3
       },
-      "gain": -0.51974
+      "gain": -0.56776
      },
      "-Ghostly Strike - Hemorrhage": {
       "added": {},
@@ -22491,7 +22491,7 @@
        "Ghostly Strike": 1,
        "Hemorrhage": 1
       },
-      "gain": -0.53783
+      "gain": -0.58405
      },
      "-Premeditation - Serrated Blades": {
       "added": {},
@@ -22518,7 +22518,7 @@
       "gain": -0.05463
      }
     },
-    "minutes": 1.8
+    "minutes": 1.2
    },
    "signature": {
     "spec": "Hybrid Combat/Subtlety",
@@ -22563,7 +22563,7 @@
     ],
     "why": null,
     "spec": "Hybrid Combat/Subtlety",
-    "date": "2026-10-26"
+    "date": "2026-11-02"
    }
   },
   "combat-daggers-raid": {
@@ -23557,7 +23557,7 @@
    },
    "values_base": 26.37,
    "synergy": {
-    "date": "2026-10-26",
+    "date": "2026-11-02",
     "winner": "22/16/13",
     "relevant": 42,
     "missing": 24,
@@ -25826,8 +25826,8 @@
       "kind": "swap"
      },
      "Camouflage + Mutilate": {
-      "gain": -0.5143,
-      "interaction": -0.4856,
+      "gain": -0.5629,
+      "interaction": -0.5342,
       "kind": "swap"
      },
      "Camouflage + Improved Eviscerate": {
@@ -26411,8 +26411,8 @@
       "kind": "swap"
      },
      "Quietus + Mutilate": {
-      "gain": -0.5137,
-      "interaction": -0.485,
+      "gain": -0.5624,
+      "interaction": -0.5337,
       "kind": "swap"
      },
      "Quietus + Improved Eviscerate": {
@@ -31246,7 +31246,7 @@
       "removed": {
        "Mutilate": 1
       },
-      "gain": -0.51434
+      "gain": -0.56291
      },
      "Camouflage - Improved Eviscerate": {
       "added": {
@@ -32299,7 +32299,7 @@
       "removed": {
        "Mutilate": 1
       },
-      "gain": -0.51372
+      "gain": -0.56235
      },
      "Quietus - Improved Eviscerate": {
       "added": {
@@ -33679,7 +33679,7 @@
       "gain": -0.04304
      }
     },
-    "minutes": 1.7
+    "minutes": 1.6
    },
    "signature": {
     "spec": "Hybrid Assassination/Combat",
@@ -33713,7 +33713,7 @@
     ],
     "why": null,
     "spec": "Hybrid Assassination/Combat",
-    "date": "2026-10-26"
+    "date": "2026-11-02"
    }
   }
  },

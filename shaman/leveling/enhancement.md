@@ -2,6 +2,8 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Enhancement
 
+**✅ Recommended** for leveling (the best shaman spec here, or within 3% of it).
+
 **[Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md)** (7/34/10) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030031005112251-05005-7)
 
 **Signature spells:** 76% of the damage at level 60 in the fight lab comes from melee, Stormstrike, Windfury Weapon, Flametongue Weapon, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Stormstrike** cast in every fight).
@@ -75,9 +77,19 @@ One point per level from 10, in this order:
 | 54-58 | Concussion (Elemental) | 5 |
 | 59-60 | Reverberation (Elemental) | 2 |
 
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 23 |
+| 30 | 28 |
+| 40 | 31 |
+| 50 | 32 |
+| 60 | 34 |
+
 ## Other builds of this spec
 
-- [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250232301305102011-053-7)
+- [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8, 32 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250232301305102011-053-7)
 - [Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md) (13/32/6) — [open the talent tree](https://talentsforever.com/shaman/60/5322001-050130321005112251-05001-7)
 
 ---

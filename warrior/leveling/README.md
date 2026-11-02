@@ -2,7 +2,12 @@
 
 [Warrior](../README.md) > Leveling (solo)
 
-No leveling numbers yet.
+Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
+
+| # | Spec and build | Seconds per kill | Behind the fastest |
+|---|---|---|---|
+| 1 | [Fury](fury.md) (optimized) | 26 | fastest |
+| 2 | [Arms](arms.md) (optimized) | 27 | +3% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

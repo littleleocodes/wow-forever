@@ -6,19 +6,93 @@
 
 The build each spec's [leveling page](../../leveling/README.md) shows first, the fight-lab rotation it plays and its time per kill (seconds; the level-weighted mean counts higher levels more). Each spec plays a rotation built for its own tree.
 
-| Spec | Page build | Rotation |  | Weighted |
-|---|---|---|---|
-| [Balance](../../leveling/balance.md) | [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) | - |  | - |
-| [Feral Combat](../../leveling/feral-combat.md) | [`leveling-feral`](builds/leveling-feral.md) | - |  | - |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | - |  | - |
+| Spec | Page build | Rotation | L15 | L20 | L30 | L40 | L50 | L60 | Weighted |
+|---|---|---|---|---|---|---|---|---|---|
+| [Feral Combat](../../leveling/feral-combat.md) ✅ | [`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md) | [feral-cat-dps](#feral-cat-dps) | 23.6 | 16.7 | 21.4 | 25.3 | 27.3 | 30.7 | 25.8 |
+| [Balance](../../leveling/balance.md) | [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) | [balance-dps](#balance-dps) | 20.5 | 23.9 | 33.2 | 39.8 | 37.3 | 35.7 | 34.3 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | - | - | - | - | - | - | - | - |
+| [Feral Combat/Restoration hybrid](../../leveling/hybrid-feral-combat-restoration.md) | [`hybrid-feral-combat-restoration-open-leveling`](builds/hybrid-feral-combat-restoration-open-leveling.md) | - | - | - | - | - | - | - | - |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
+## feral-cat-dps
+
+Played by the page build of [Feral Combat](../../leveling/feral-combat.md) ([`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md)).
+
+Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
+
+The priority in the player page's words:
+
+Before the fight: **Mark of the Wild** and **Thorns** up. Levels 10-19: **Bear Form**. From 20: **Cat Form**, then **Prowl** (stealth) up behind the mob.
+
+1. Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage; **Bash** a mob that starts casting.
+2. From 20 (cat), open from **Prowl** with **Ravage** (from 32; **Claw** before that).
+3. **Rake** whenever it is not on the mob and the mob has more than 30% of its health.
+4. **Claw** to build combo points.
+5. **Ferocious Bite** (from 32) whenever it will kill the mob, at any number of points.
+6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-31): **Rip** at 2 points while the mob has more than 40% of its health.
+7. **Berserk** on the pull whenever it is ready.
+8. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
+
+Between fights: Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below 15%: it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
+
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Shred. Together +0.5% time per kill saved for `leveling-feral` (level-weighted, a third seed of 3000 fights per level).
+
+Report: [fightlab/feral-cat-dps.md](fightlab/feral-cat-dps.md).
+
+### [`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md)
+
+| Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|---|---|
+| Melee | 3.3 | 7.9 | 11.6 | 14.7 | 15.9 | 18.5 | 32% |
+| Claw | 0.0 | 3.5 | 3.4 | 2.7 | 2.9 | 3.3 | 18% |
+| Rake | 0.0 | 0.0 | 1.4 | 1.4 | 1.5 | 1.8 | 8% |
+| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
+| Ferocious Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.0 | 1.0 | 16% |
+| Rip | 0.0 | 0.9 | 0.0 | 0.1 | 0.1 | 0.4 | 10% |
+| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+
+### [`leveling-feral`](builds/leveling-feral.md)
+
+| Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|---|---|
+| Melee | 3.3 | 8.0 | 11.9 | 15.0 | 16.2 | 18.8 | 31% |
+| Claw | 0.0 | 3.6 | 3.5 | 2.7 | 2.9 | 3.4 | 18% |
+| Rake | 0.0 | 0.0 | 1.4 | 1.5 | 1.6 | 1.9 | 8% |
+| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 13% |
+| Ferocious Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.0 | 0.9 | 15% |
+| Rip | 0.0 | 0.9 | 0.0 | 0.1 | 0.1 | 0.4 | 11% |
+| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+
 ## balance-dps
+
+Played by the page build of [Balance](../../leveling/balance.md) ([`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md)).
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): eat below 50% health. Together +0.3% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+The priority in the player page's words:
+
+Before the fight: **Mark of the Wild** and **Thorns** up; **Moonkin Form** once you have it (40).
+
+1. **Moonfire** on a mob above a third of its health, **Insect Swarm** above 40%.
+2. **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.
+3. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
+4. A nearly dead mob: finish it with **Moonfire** or **Wrath**.
+5. Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while you have half your health and the mob still has half of its own).
+
+Between fights: In **Moonkin Form**, stay in it and eat when your health is below half. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%. Drink when your mana is below about a third (35%).
+
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): eat below 40% health; Starfire only while the mob has more than 10% health. Together +1.2% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/balance-dps-opt.md](fightlab/balance-dps-opt.md).
 
@@ -48,7 +122,7 @@ Report: [fightlab/balance-dps-opt.md](fightlab/balance-dps-opt.md).
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): eat below 50% health. Together +0.3% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): eat below 40% health; Starfire only while the mob has more than 10% health. Together +1.2% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/balance-dps.md](fightlab/balance-dps.md).
 
@@ -56,9 +130,9 @@ Report: [fightlab/balance-dps.md](fightlab/balance-dps.md).
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 0.0 | 4.9 | 5.7 | 5.2 | 4.8 | 66% |
-| Wrath | 8.3 | 9.5 | 2.4 | 2.7 | 2.5 | 2.3 | 10% |
-| Moonfire | 1.6 | 2.1 | 1.8 | 1.8 | 1.6 | 1.5 | 21% |
+| Starfire | 0.0 | 2.9 | 3.9 | 4.9 | 4.5 | 4.4 | 64% |
+| Wrath | 6.4 | 1.4 | 1.9 | 2.5 | 2.3 | 2.3 | 10% |
+| Moonfire | 1.5 | 1.3 | 1.5 | 1.7 | 1.6 | 1.6 | 22% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Entangling Roots | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Moonkin Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
@@ -67,51 +141,15 @@ Report: [fightlab/balance-dps.md](fightlab/balance-dps.md).
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 5.0 | 11.8 | 14.6 | 17.3 | 17.0 | 18.6 | 30% |
-| Claw | 0.0 | 4.6 | 3.8 | 3.1 | 3.1 | 3.3 | 18% |
-| Rake | 0.0 | 0.0 | 1.9 | 1.7 | 1.6 | 1.8 | 8% |
+| Melee | 3.3 | 7.9 | 11.6 | 14.7 | 15.9 | 18.5 | 32% |
+| Claw | 0.0 | 3.5 | 3.4 | 2.7 | 2.9 | 3.3 | 18% |
+| Rake | 0.0 | 0.0 | 1.4 | 1.4 | 1.5 | 1.8 | 8% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.1 | 0.9 | 15% |
-| Rip | 0.0 | 0.9 | 1.1 | 0.1 | 0.2 | 0.4 | 11% |
-| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Ferocious Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.0 | 1.0 | 16% |
+| Rip | 0.0 | 0.9 | 0.0 | 0.1 | 0.1 | 0.4 | 10% |
+| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-
-## feral-cat-dps
-
-Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
-
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): drink below 15% mana; never cast Shred. Together +1.0% time per kill saved for `leveling-feral` (level-weighted, a third seed of 3000 fights per level).
-
-Report: [fightlab/feral-cat-dps.md](fightlab/feral-cat-dps.md).
-
-### [`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md)
-
-| Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|---|---|
-| Melee | 5.0 | 11.8 | 14.6 | 17.3 | 17.0 | 18.6 | 30% |
-| Claw | 0.0 | 4.6 | 3.8 | 3.1 | 3.1 | 3.3 | 18% |
-| Rake | 0.0 | 0.0 | 1.9 | 1.7 | 1.6 | 1.8 | 8% |
-| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.1 | 0.9 | 15% |
-| Rip | 0.0 | 0.9 | 1.1 | 0.1 | 0.2 | 0.4 | 11% |
-| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-
-### [`leveling-feral`](builds/leveling-feral.md)
-
-| Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|---|---|
-| Melee | 5.0 | 12.0 | 14.8 | 17.9 | 17.7 | 20.0 | 32% |
-| Claw | 0.0 | 4.7 | 3.8 | 3.3 | 3.3 | 3.7 | 20% |
-| Rake | 0.0 | 0.0 | 2.0 | 1.8 | 1.7 | 2.0 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
-| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.2 | 4% |
-| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

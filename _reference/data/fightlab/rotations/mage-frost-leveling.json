@@ -1,15 +1,17 @@
 {
  "veto": {
-  "Cone of Cold": {
-   "off": true
-  },
   "Frostbolt": {
    "min_hp": 0.2
   },
+  "Cone of Cold": {
+   "off": true
+  },
   "Fire Blast": {
+   "max_hp": 0.2,
    "min_hp": 0.1
   }
  },
+ "drink_below": 0.15,
  "class": "mage",
  "spec": "frost-leveling",
  "build": "leveling-frost",
@@ -20,15 +22,15 @@
   50,
   60
  ],
- "date": "2026-10-22",
+ "date": "2026-11-02",
  "signature": {
   "required": [
    "Frostbolt"
   ],
   "build_spec": "Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7966525764671126,
-  "core_share_after": 0.8196980758708402,
+  "core_share_before": 0.800265103986192,
+  "core_share_after": 0.8850983670242358,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -37,68 +39,90 @@
  "changes": [
   {
    "round": 1,
-   "change": "never cast Cone of Cold",
-   "rule": [
-    "off",
-    "Cone of Cold",
-    true
-   ],
-   "gain_seed1": 0.0236832063427711,
-   "gain_seed2": 0.019748820703130776
-  },
-  {
-   "round": 2,
    "change": "Frostbolt only while the mob has more than 20% health",
    "rule": [
     "min_hp",
     "Frostbolt",
     0.2
    ],
-   "gain_seed1": 0.005955318584899172,
-   "gain_seed2": 0.007343348124209226
+   "gain_seed1": 0.011373451355389808,
+   "gain_seed2": 0.011602595304194385
+  },
+  {
+   "round": 2,
+   "change": "never cast Cone of Cold",
+   "rule": [
+    "off",
+    "Cone of Cold",
+    true
+   ],
+   "gain_seed1": 0.01417244829655695,
+   "gain_seed2": 0.012059485868135766
   },
   {
    "round": 3,
+   "change": "Fire Blast only when the mob is below 20% health",
+   "rule": [
+    "max_hp",
+    "Fire Blast",
+    0.2
+   ],
+   "gain_seed1": 0.007264353345365904,
+   "gain_seed2": 0.013626685701309427
+  },
+  {
+   "round": 4,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.008293428385061752,
+   "gain_seed2": 0.010886699882862394
+  },
+  {
+   "round": 5,
    "change": "Fire Blast only while the mob has more than 10% health",
    "rule": [
     "min_hp",
     "Fire Blast",
     0.1
    ],
-   "gain_seed1": 0.010547550062322109,
-   "gain_seed2": 0.0097905724258881
+   "gain_seed1": 0.011231960843822497,
+   "gain_seed2": 0.00906766991116581
   }
  ],
- "weighted_before": 32.63571162559479,
- "weighted_after": 31.43561900876482,
+ "weighted_before": 30.735682044677283,
+ "weighted_after": 29.041545898006074,
  "per_level": {
   "20": {
-   "before": 27.616194531113926,
-   "after": 27.063894599939623,
+   "before": 20.0996749636721,
+   "after": 18.78729213414639,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 35.22802324905813,
-   "after": 33.86094853557025,
+   "before": 30.344533959183877,
+   "after": 28.8372003455995,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 38.008067298317584,
-   "after": 36.37371440011066,
+   "before": 35.6747682659569,
+   "after": 33.55561198201526,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.30420516621274,
-   "after": 31.082769656085933,
+   "before": 31.81769723157139,
+   "after": 29.855709344986966,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.707413113026576,
-   "after": 28.682173247972358,
+   "before": 30.282188311160876,
+   "after": 28.873956333672382,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

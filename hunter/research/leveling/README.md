@@ -39,10 +39,10 @@ Classic Era reference builds: [bm-solo-farm](../talents/classic-baseline/bm-solo
 
 ## Guide, rotation and respec plan
 
-- [Leveling guide](guide.md): the recommended build (Beast-Survival, `beast-survival-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
+- [Leveling guide](guide.md): the recommended build (Beast-Survival, `opt-melee-dps-leveling-st`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**46.5 h** (48.4% faster than talentless), no respec).
-- Recommended build: [beast-survival-open-leveling](builds/beast-survival-open-leveling.md) (Beast-Survival; player page: [Beast-Survival leveling](../../leveling/beast-survival.md)).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**46.6 h** (48.2% faster than talentless), no respec).
+- Recommended build: [opt-melee-dps-leveling-st](builds/opt-melee-dps-leveling-st.md) (Beast-Survival; player page: [Beast-Survival leveling](../../leveling/beast-survival.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
 
@@ -52,11 +52,11 @@ Classic Era reference builds: [bm-solo-farm](../talents/classic-baseline/bm-solo
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
+| [Beast-Survival](../../leveling/beast-survival.md) ✅ | `opt-melee-dps-leveling-st` | melee-dps | 22.3 |
+| [Marksmanship](../../leveling/marksmanship.md) | `opt-mm-raid-leveling-st` | mm-raid | 24.5 |
 | [Beast Mastery](../../leveling/beast-mastery.md) | `bm-solo-farm` | - | - |
-| [Marksmanship](../../leveling/marksmanship.md) | `leveling-beast-mastery` | - | - |
 | [Survival](../../leveling/survival.md) | `opt-bm-leveling-leveling-aoe` | - | - |
 | [Beast-Marks](../../leveling/beast-marks.md) | `beast-marks-open-leveling` | - | - |
-| [Beast-Survival](../../leveling/beast-survival.md) | `leveling-melee` | - | - |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -64,21 +64,21 @@ The `bm-leveling` report below is the fight-lab pipeline's (research): its optim
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-bm-leveling-leveling-st` (optimizer) | 16.1s | 20.5s | 24.6s | 27.1s | 28.1s | 0.0 | 3.9s |
-| `leveling-beast-mastery` (hand draft) | 16.8s (+4%) | 20.7s (+1%) | 25.2s (+2%) | 26.8s (-1%) | 28.7s (+2%) | 0.0 | 3.9s |
-| `opt-bm-leveling-leveling-st` in blues (dungeon blues from the item database) | 15.6s (-3%) | 20.0s (-2%) | 23.9s (-3%) | 26.3s (-3%) | 26.9s (-4%) | 0.0 | 3.6s |
+| `opt-bm-leveling-leveling-st` (optimizer) | 13.7s | 17.9s | 22.6s | 25.6s | 28.0s | 0.0 | 3.9s |
+| `leveling-beast-mastery` (hand draft) | 14.2s (+3%) | 18.4s (+3%) | 23.3s (+3%) | 26.4s (+3%) | 28.9s (+3%) | 0.0 | 4.1s |
+| `opt-bm-leveling-leveling-st` in blues (dungeon blues from the item database) | 13.5s (-2%) | 17.4s (-2%) | 22.0s (-3%) | 25.0s (-3%) | 26.9s (-4%) | 0.0 | 3.7s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-bm-leveling-leveling-st` at level 60): Unleashed Fury +5%, Efficiency +3% (L30 +4%), Lethal Attacks +3% (L30 +2%), Rapid Recuperation +3%, Ferocity +3%, Ranged Weapon Specialization +2%.
-- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot.
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-bm-leveling-leveling-st` at level 60): Unleashed Fury +4% (L30 +3%), Efficiency +3% (L30 +4%), Lethal Attacks +3% (L30 +2%), Rapid Recuperation +3% (L30 +6%), Ferocity +3% (L30 +2%), Deadly Aspects +2% (L30 +1%).
+- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Barrage, Rapid Killing, Scatter Shot, Sniper Shot.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-24, mean time per kill over levels 20/30/40/50/60): cand-bm-r6 24.6s, cand-bm-r7 24.8s, cand-bm-r5 24.9s, leveling-beast-mastery 25.1s, cand-bm-r3 25.1s, cand-bm-r4 25.1s, cand-bm-r2 25.3s, cand-bm-r1 25.4s, cand-bm-hand-2026-09-26 25.6s — fastest: **cand-bm-r6**.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-02, mean time per kill over levels 20/30/40/50/60): leveling-beast-mastery 24.0s, cand-bm-r6 24.9s, cand-bm-r7 25.0s, cand-bm-r5 25.1s, cand-bm-r3 25.4s, cand-bm-r4 25.5s, cand-bm-r2 25.5s, cand-bm-r1 25.7s, cand-bm-hand-2026-09-26 25.7s — fastest: **leveling-beast-mastery**.
 - **Calibration:** the scorer's `bm-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **Other spec, same module:** `mm-raid` with `opt-mm-raid-leveling-st` ([report](fightlab/mm-raid.md)): L30 20.7s (+1% vs `opt-bm-leveling-leveling-st`), L60 29.5s (+5% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Other spec, same module:** `melee-dps` with `leveling-melee` ([report](fightlab/melee-dps.md)): L30 20.0s (-2% vs `opt-bm-leveling-leveling-st`), L60 28.2s (+0% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **AoE grinding, 3 mobs per pull:** `bm-leveling` with `opt-bm-leveling-leveling-aoe` ([report](fightlab/bm-leveling-aoe.md)): L40 47.6s per mob in pulls of 3 (single-target build 24.6s), 13.9 deaths/100; L60 33.5s per mob in pulls of 3 (single-target build 28.1s), 5.5 deaths/100.
-- **Melee hunter (dual wield, Survival):** `melee-dps` with `opt-melee-dps-leveling-st` ([report](fightlab/melee-dps-opt.md)): L40 22.6s per mob in pulls of 1 (single-target build 24.6s), 0.0 deaths/100; L60 26.5s per mob in pulls of 1 (single-target build 28.1s), 0.0 deaths/100.
+- **Other spec, same module:** `mm-raid` with `opt-mm-raid-leveling-st` ([report](fightlab/mm-raid.md)): L30 18.7s (+5% vs `opt-bm-leveling-leveling-st`), L60 29.4s (+5% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **Other spec, same module:** `melee-dps` with `leveling-melee` ([report](fightlab/melee-dps.md)): L30 17.4s (-2% vs `opt-bm-leveling-leveling-st`), L60 28.5s (+2% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **AoE grinding, 3 mobs per pull:** `bm-leveling` with `opt-bm-leveling-leveling-aoe` ([report](fightlab/bm-leveling-aoe.md)): L40 47.6s per mob in pulls of 3 (single-target build 22.6s), 13.9 deaths/100; L60 33.5s per mob in pulls of 3 (single-target build 28.0s), 5.5 deaths/100.
+- **Melee hunter (dual wield, Survival):** `melee-dps` with `opt-melee-dps-leveling-st` ([report](fightlab/melee-dps-opt.md)): L40 22.6s per mob in pulls of 1 (single-target build 22.6s), 0.0 deaths/100; L60 26.5s per mob in pulls of 1 (single-target build 28.0s), 0.0 deaths/100.
 - **Not simulated:** runners, adds (Volley only in the AoE variant), the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, the pet's movement speed (Bestial Swiftness), pet happiness and feeding, gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-beast-mastery` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 

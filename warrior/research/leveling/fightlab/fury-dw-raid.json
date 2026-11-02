@@ -35,6 +35,7 @@
     "Overpower": 0.05850914799326235,
     "Victory Rush": 0.01551295594583784
    },
+   "pet_sources": [],
    "healing_per_kill": {
     "Victory Rush": 39.569267796610255
    },
@@ -152,6 +153,7 @@
     "Overpower": 0.054099881178175685,
     "Victory Rush": 0.022108363673253216
    },
+   "pet_sources": [],
    "healing_per_kill": {
     "Blood Craze": 7.596730535525769,
     "Victory Rush": 98.42224830508334
@@ -280,6 +282,7 @@
     "Overpower": 0.044207250894086884,
     "Victory Rush": 0.016302108863296784
    },
+   "pet_sources": [],
    "healing_per_kill": {
     "Blood Craze": 10.930763039914936,
     "Victory Rush": 142.80257796610343
@@ -414,6 +417,7 @@
     "Overpower": 0.047286946166165036,
     "Victory Rush": 0.003969672920249609
    },
+   "pet_sources": [],
    "healing_per_kill": {
     "Gore Drinker": 291.35354218624377,
     "Blood Craze": 12.957755280855613,
@@ -552,6 +556,7 @@
     "Deep Wounds": 0.016143482150090472,
     "Victory Rush": 0.0036762757777317173
    },
+   "pet_sources": [],
    "healing_per_kill": {
     "Gore Drinker": 449.21761463713773,
     "Blood Craze": 35.137517367892144,
@@ -694,6 +699,7 @@
      "Victory Rush": 0.017519688982766846,
      "Deep Wounds": 0.003585899485206953
     },
+    "pet_sources": [],
     "healing_per_kill": {
      "Victory Rush": 47.32368474576282
     },
@@ -813,6 +819,7 @@
      "Victory Rush": 0.022139599379658464,
      "Deep Wounds": 0.013273304962222739
     },
+    "pet_sources": [],
     "healing_per_kill": {
      "Victory Rush": 107.12143983050686
     },
@@ -944,6 +951,7 @@
      "Spearing Strike": 0.001589550068622337,
      "Heroic Strike": 5.25006231401386e-05
     },
+    "pet_sources": [],
     "healing_per_kill": {
      "Victory Rush": 148.5575084745781
     },
@@ -1084,6 +1092,7 @@
      "Spearing Strike": 0.003906834263918469,
      "Heroic Strike": 0.0003384835968431141
     },
+    "pet_sources": [],
     "healing_per_kill": {
      "Victory Rush": 184.54457627118663
     },
@@ -1226,6 +1235,7 @@
      "Spearing Strike": 0.005935353384256856,
      "Heroic Strike": 0.0010289263256505524
     },
+    "pet_sources": [],
     "healing_per_kill": {
      "Victory Rush": 257.9535500000056
     },
@@ -1350,7 +1360,7 @@
      "sim_delta": 0.001346381119891335,
      "sim_delta_per_point": 0.0006731905599456675,
      "fight_se": 0.005120435765513566,
-     "ev_delta": 0.0059923665150499695,
+     "ev_delta": 0.00600142677884223,
      "sim_fight_delta": -0.0008187031087960252,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1361,7 +1371,7 @@
      "sim_delta": 0.04219729398739507,
      "sim_delta_per_point": 0.008439458797479014,
      "fight_se": 0.005490854179286578,
-     "ev_delta": 0.029628902973803682,
+     "ev_delta": 0.029603702415751568,
      "sim_fight_delta": 0.06125536659863659,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1372,7 +1382,7 @@
      "sim_delta": 0.01885360990412326,
      "sim_delta_per_point": 0.01885360990412326,
      "fight_se": 0.004941506147504734,
-     "ev_delta": 0.021119482039727234,
+     "ev_delta": 0.021101519081947698,
      "sim_fight_delta": 0.02627054535440639,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1383,7 +1393,7 @@
      "sim_delta": 0.021324112403460396,
      "sim_delta_per_point": 0.007108037467820132,
      "fight_se": 0.006469627943377136,
-     "ev_delta": 0.034559152428644775,
+     "ev_delta": 0.034529758497732745,
      "sim_fight_delta": 0.03136615350344731,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1394,7 +1404,7 @@
      "sim_delta": 0.02541454647243425,
      "sim_delta_per_point": 0.008471515490811416,
      "fight_se": 0.005897018765625936,
-     "ev_delta": 0.017400789545325455,
+     "ev_delta": 0.016716646352660815,
      "sim_fight_delta": 0.03711017451461986,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1405,7 +1415,7 @@
      "sim_delta": 0.00943749051651579,
      "sim_delta_per_point": 0.004718745258257895,
      "fight_se": 0.004901968659415791,
-     "ev_delta": 0.05545559480567029,
+     "ev_delta": 0.05883151345373941,
      "sim_fight_delta": 0.012889661744583218,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1416,13 +1426,13 @@
      "sim_delta": 0.01005725325421822,
      "sim_delta_per_point": 0.002011450650843644,
      "fight_se": 0.006426115887307462,
-     "ev_delta": 0.028023287345220728,
+     "ev_delta": 0.026904898563278084,
      "sim_fight_delta": 0.015673252314414292,
      "deaths_with": 0.0,
      "deaths_without": 0.0
     }
    ],
-   "ev_base": 0.18034592426609763
+   "ev_base": 0.18158334370287754
   },
   "60": {
    "rows": [
@@ -1432,7 +1442,7 @@
      "sim_delta": -0.001233552631577761,
      "sim_delta_per_point": -0.0004111842105259203,
      "fight_se": 0.004449656921848225,
-     "ev_delta": 0.011243876788981937,
+     "ev_delta": 0.011344495274970392,
      "sim_fight_delta": -0.0018919971133443175,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1443,7 +1453,7 @@
      "sim_delta": 0.04528531711048796,
      "sim_delta_per_point": 0.04528531711048796,
      "fight_se": 0.00582212566942273,
-     "ev_delta": 0.15677196283695455,
+     "ev_delta": 0.16919497749822218,
      "sim_fight_delta": 0.06191602096604661,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1454,7 +1464,7 @@
      "sim_delta": 0.08005532922212694,
      "sim_delta_per_point": 0.01601106584442539,
      "fight_se": 0.005485279634311405,
-     "ev_delta": 0.024585208644378617,
+     "ev_delta": 0.024434329165767325,
      "sim_fight_delta": 0.11027233363678146,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1465,7 +1475,7 @@
      "sim_delta": 0.0158383340672783,
      "sim_delta_per_point": 0.0158383340672783,
      "fight_se": 0.0043533265092495005,
-     "ev_delta": 0.018148670202290964,
+     "ev_delta": 0.01801576957137817,
      "sim_fight_delta": 0.021854109693012342,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1476,7 +1486,7 @@
      "sim_delta": 0.014291662078745484,
      "sim_delta_per_point": 0.004763887359581828,
      "fight_se": 0.004529749127339178,
-     "ev_delta": 0.031196002411172527,
+     "ev_delta": 0.029615256975902123,
      "sim_fight_delta": 0.019719974931557957,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1487,7 +1497,7 @@
      "sim_delta": -0.0008911858621452113,
      "sim_delta_per_point": -0.00017823717242904227,
      "fight_se": 0.005036403374142791,
-     "ev_delta": 0.0076592126380479065,
+     "ev_delta": 0.007727752910586341,
      "sim_fight_delta": -0.0012296794287488327,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1498,7 +1508,7 @@
      "sim_delta": 0.07346089792950743,
      "sim_delta_per_point": 0.014692179585901485,
      "fight_se": 0.005640454148542379,
-     "ev_delta": 0.026080477407703917,
+     "ev_delta": 0.024668568875412154,
      "sim_fight_delta": 0.10136309252470026,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1509,7 +1519,7 @@
      "sim_delta": 0.03763109722504418,
      "sim_delta_per_point": 0.007526219445008836,
      "fight_se": 0.006136575925834271,
-     "ev_delta": 0.04949637327897531,
+     "ev_delta": 0.049133917012849096,
      "sim_fight_delta": 0.05097472272845754,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1520,7 +1530,7 @@
      "sim_delta": 0.05396835774023402,
      "sim_delta_per_point": 0.010793671548046804,
      "fight_se": 0.005534958187997512,
-     "ev_delta": 0.022788000707097276,
+     "ev_delta": 0.02135503026280672,
      "sim_fight_delta": 0.07427691051323443,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1531,7 +1541,7 @@
      "sim_delta": 0.03422635432702275,
      "sim_delta_per_point": 0.01140878477567425,
      "fight_se": 0.006057297039943412,
-     "ev_delta": 0.013652356980347339,
+     "ev_delta": 0.012805234818972677,
      "sim_fight_delta": 0.04722633697946741,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1542,7 +1552,7 @@
      "sim_delta": 0.021588031270744427,
      "sim_delta_per_point": 0.010794015635372214,
      "fight_se": 0.005086775420564717,
-     "ev_delta": 0.010402279489813973,
+     "ev_delta": 0.010495366743680127,
      "sim_fight_delta": -0.00895434518399569,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1553,7 +1563,7 @@
      "sim_delta": 0.011834879431762776,
      "sim_delta_per_point": 0.005917439715881388,
      "fight_se": 0.005138491102263079,
-     "ev_delta": 0.006326069020982596,
+     "ev_delta": 0.006634229081737711,
      "sim_fight_delta": 0.016330047857726817,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1564,7 +1574,7 @@
      "sim_delta": 0.014215962893536906,
      "sim_delta_per_point": 0.007107981446768453,
      "fight_se": 0.00484051843142893,
-     "ev_delta": 0.030702951414550705,
+     "ev_delta": 0.03172381077560475,
      "sim_fight_delta": 0.019615523397059884,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1575,7 +1585,7 @@
      "sim_delta": 0.0,
      "sim_delta_per_point": 0.0,
      "fight_se": 0.0,
-     "ev_delta": 0.003228932567885022,
+     "ev_delta": 0.003257827433280412,
      "sim_fight_delta": 0.0,
      "deaths_with": 0.0,
      "deaths_without": 0.0
@@ -1597,13 +1607,13 @@
      "sim_delta": 0.014876610328022408,
      "sim_delta_per_point": 0.0029753220656044818,
      "fight_se": 0.006368474528031488,
-     "ev_delta": 0.019132070062849085,
+     "ev_delta": 0.01793540196013526,
      "sim_fight_delta": 0.020527100425320827,
      "deaths_with": 0.0,
      "deaths_without": 0.0
     }
    ],
-   "ev_base": 0.3806002578400023
+   "ev_base": 0.3860939411434273
   }
  },
  "gear_tiers": {},

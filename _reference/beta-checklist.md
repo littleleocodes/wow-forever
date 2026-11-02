@@ -26,7 +26,7 @@ Global checks: respec cost schedule in Forever (the planner assumes 1g then +5g,
 
 Plan: **feral-cat-dps -> level-30 build (0/21/0)** (from `druid/leveling/respec-plan.md`)
 
-- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2; 30 Leader of the Pack
+- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -43,8 +43,9 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Balance leveling build: check it while leveling at launch.
 - Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Balance leveling build: check it while leveling at launch.
+- An open-search Feral Combat/Restoration hybrid leveling build: check it while leveling at launch.
 
 ## Hunter
 
@@ -148,7 +149,6 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Arcane leveling build: check it while leveling at launch.
 - An open-search Fire leveling build: check it while leveling at launch.
-- An open-search Frost leveling build: check it while leveling at launch.
 - An open-search Arcane-Frost leveling build: check it while leveling at launch.
 - An open-search Frostfire leveling build: check it while leveling at launch.
 
@@ -430,7 +430,7 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Fury leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 

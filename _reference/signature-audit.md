@@ -8,12 +8,13 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Balance | page | opt-balance-dps-leveling-st (36/0/15) | feral-cat-dps | - | Starfire 0.00, Moonfire 0.00 | 0% (min 70%) | 34.5 | FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70% |
-| Balance | slot | balance-open-leveling (38/0/13) | feral-cat-dps | - | Starfire 0.00, Moonfire 0.00 | 0% (min 70%) | 36.0 | FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70% |
-| Feral Combat | page | leveling-feral (9/30/12) | feral-cat-dps | - | Claw 3.36, Ferocious Bite 0.84 | 83% (min 80%) | 25.9 | OK |
-| Feral Combat | slot | opt-feral-cat-dps-leveling-st (9/30/12) | feral-cat-dps | - | Claw 3.29, Ferocious Bite 0.82 | 83% (min 80%) | 25.8 | OK |
-| Feral Combat | slot | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 3.29, Ferocious Bite 0.82 | 83% (min 80%) | 25.6 | OK |
-| Restoration | page | restoration-leveling (11/4/36) | feral-cat-dps | - | - | - (min -) | 33.7 | no rule |
+| Balance | page | opt-balance-dps-leveling-st (36/0/15) | balance-dps | - | Starfire 4.31, Moonfire 1.58 | 96% (min 70%) | 35.8 | OK |
+| Balance | slot | balance-open-leveling (38/0/13) | feral-cat-dps | - | Starfire 0.00, Moonfire 0.00 | 0% (min 70%) | 36.7 | FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70% |
+| Feral Combat | page | opt-feral-cat-dps-leveling-st (9/30/12) | feral-cat-dps | - | Claw 3.29, Ferocious Bite 0.82 | 83% (min 80%) | 25.9 | OK |
+| Feral Combat | slot | leveling-feral (9/30/12) | feral-cat-dps | - | Claw 3.36, Ferocious Bite 0.83 | 83% (min 80%) | 26.1 | OK |
+| Feral Combat | slot | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 3.29, Ferocious Bite 0.82 | 83% (min 80%) | 25.8 | OK |
+| Restoration | page | restoration-leveling (11/4/36) | feral-cat-dps | - | - | - (min -) | 33.8 | no rule |
+| Feral Combat/Restoration hybrid | page | hybrid-feral-combat-restoration-open-leveling (11/31/9) | feral-cat-dps | - | - | - (min -) | 28.7 | no rule |
 
 ## Hunter
 
@@ -22,36 +23,31 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Beast Mastery | page | bm-solo-farm (31/20/0) | bm-leveling | - | Bestial Wrath 0.21 | 42% (min 35%) | 24.5 | OK |
 | Beast Mastery | slot | beast-mastery-leveling (30/21/0) | bm-leveling | - | Bestial Wrath 0.00 | 39% (min 35%) | 23.3 | FAIL: lacks Bestial Wrath |
 | Beast Mastery | slot | beast-mastery-open-leveling (31/16/4) | bm-leveling | - | Bestial Wrath 0.20 | 40% (min 35%) | 24.2 | OK |
-| Marksmanship | page | leveling-beast-mastery (20/31/0) | bm-leveling | - | Aimed Shot 1.69 | 66% (min 60%) | 24.1 | OK |
-| Marksmanship | slot | opt-bm-leveling-leveling-st (20/31/0) | bm-leveling | - | Aimed Shot 1.62 | 66% (min 60%) | 23.3 | OK |
+| Marksmanship | page | opt-mm-raid-leveling-st (13/33/5) | mm-raid | - | Aimed Shot 1.64 | 70% (min 60%) | 24.4 | OK |
 | Marksmanship | slot | opt-bm-leveling-solo-60 (20/31/0) | bm-leveling | - | Aimed Shot 1.68 | 67% (min 60%) | 23.5 | OK |
-| Marksmanship | slot | opt-mm-raid-leveling-st (13/33/5) | bm-leveling | - | Aimed Shot 1.64 | 70% (min 60%) | 24.4 | OK |
 | Marksmanship | slot | marksmanship-open-leveling (21/30/0) | bm-leveling | - | Aimed Shot 1.59 | 65% (min 60%) | 24.6 | OK |
 | Survival | page | opt-bm-leveling-leveling-aoe (8/12/31) | bm-leveling | - | - | 1% (min 50%) | 26.8 | FAIL: core share 1% < 50% |
-| Beast-Marks | page | beast-marks-open-leveling (28/19/4) | bm-leveling | - | Aimed Shot 1.55 | 100% (min 70%) | 22.8 | OK |
-| Beast-Survival | page | leveling-melee (12/10/29) | bm-leveling | - | - | 31% (min 50%) | 26.4 | FAIL: core share 31% < 50% |
+| Beast-Marks | page | beast-marks-open-leveling (28/19/4) | bm-leveling | - | Aimed Shot 1.55 | 100% (min 70%) | 24.0 | OK |
+| Beast-Survival | page | opt-melee-dps-leveling-st (15/10/26) | melee-dps | - | - | 82% (min 50%) | 22.4 | OK |
+| Beast-Survival | slot | leveling-melee (12/10/29) | melee-dps | - | - | 85% (min 50%) | 23.0 | OK |
 | Beast-Survival | slot | opt-melee-dps-solo-60 (15/10/26) | bm-leveling | - | - | 35% (min 50%) | 25.5 | FAIL: core share 35% < 50% |
-| Beast-Survival | slot | opt-melee-dps-leveling-st (15/10/26) | bm-leveling | - | - | 35% (min 50%) | 25.5 | FAIL: core share 35% < 50% |
 | Beast-Survival | slot | beast-survival-open-leveling (23/3/25) | bm-leveling | - | - | 38% (min 50%) | 26.5 | FAIL: core share 38% < 50% |
-| Beast-Survival | mapped | leveling-melee (12/10/29) | melee-dps | - | - | 85% (min 50%) | 23.0 | OK |
 
 ## Mage
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arcane | page | arcane-leveling (29/0/22) | frost-leveling | - | Arcane Blast 0.00 | 0% (min 50%) | 28.9 | FAIL: lacks Arcane Blast; core share 0% < 50% |
-| Arcane | slot | arcane-open-leveling (31/17/3) | frost-leveling | - | Arcane Blast 0.00 | 0% (min 50%) | 40.6 | FAIL: Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50% |
-| Fire | page | opt-fire-leveling-leveling-st (4/31/16) | frost-leveling | - | Fireball 0.00, Pyroblast 0.00 | 25% (min 60%) | 39.6 | FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 25% < 60% |
-| Fire | slot | fire-leveling (0/32/19) | frost-leveling | - | Fireball 0.00, Pyroblast 0.00 | 21% (min 60%) | 35.5 | FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 21% < 60% |
-| Fire | slot | fire-open-leveling (0/31/20) | frost-leveling | - | Fireball 0.00, Pyroblast 0.00 | 26% (min 60%) | 34.1 | FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 26% < 60% |
-| Frost | page | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 2.74 | 79% (min 60%) | 29.6 | OK |
-| Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 2.98 | 80% (min 60%) | 31.9 | OK |
-| Frost | slot | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 2.91 | 83% (min 60%) | 27.6 | OK |
-| Arcane-Frost | page | opt-frost-leveling-leveling-st (22/3/26) | frost-leveling | - | Frostbolt 2.70, Arcane Missiles 0.00 | 79% (min 60%) | 27.9 | FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25) |
-| Arcane-Frost | slot | arcane-frost-open-leveling (18/2/31) | frost-leveling | - | Frostbolt 2.90, Arcane Missiles 0.00 | 82% (min 60%) | 27.2 | FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25) |
-| Arcane-Frost | mapped | opt-frost-leveling-leveling-st (22/3/26) | barrage-frost-leveling | - | Frostbolt 2.09, Arcane Missiles 0.92 | 85% (min 60%) | 28.6 | OK |
-| Frostfire | page | frostfire-open-leveling (1/25/25) | frost-leveling | - | Frostfire Bolt 0.00 | 0% (min 30%) | 31.2 | FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30% |
-| Frostfire | mapped | frostfire-open-leveling (1/25/25) | frostfire-leveling | - | Frostfire Bolt 4.11 | 50% (min 30%) | 34.4 | OK |
+| Arcane | page | arcane-leveling (29/0/22) | frost-leveling | - | Arcane Blast 0.00 | 0% (min 50%) | 28.4 | FAIL: lacks Arcane Blast; core share 0% < 50% |
+| Arcane | slot | arcane-open-leveling (34/17/0) | frost-leveling | - | Arcane Blast 0.00 | 0% (min 50%) | 48.4 | FAIL: Arcane Blast 0.00/kill at 20 (needs 0.50); Arcane Blast 0.00/kill at 30 (needs 0.50); Arcane Blast 0.00/kill at 40 (needs 0.50); Arcane Blast 0.00/kill at 50 (needs 0.50); Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50% |
+| Fire | page | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.61, Pyroblast 0.57 | 73% (min 60%) | 35.7 | OK |
+| Fire | slot | fire-leveling (0/32/19) | frost-leveling | - | Fireball 0.00, Pyroblast 0.00 | 6% (min 60%) | 37.1 | FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 6% < 60% |
+| Fire | slot | fire-open-leveling (0/31/20) | frost-leveling | - | Fireball 0.00, Pyroblast 0.00 | 8% (min 60%) | 40.4 | FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 50 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 8% < 60% |
+| Frost | page | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 3.16 | 90% (min 60%) | 28.8 | OK |
+| Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.41 | 88% (min 60%) | 31.5 | OK |
+| Arcane-Frost | page | arcane-frost-open-leveling (18/2/31) | frost-leveling | - | Frostbolt 3.44, Arcane Missiles 0.00 | 89% (min 60%) | 32.0 | FAIL: Arcane Missiles 0.00/kill at 40 (needs 0.25); Arcane Missiles 0.00/kill at 50 (needs 0.25); Arcane Missiles 0.00/kill at 60 (needs 0.25) |
+| Arcane-Frost | mapped | arcane-frost-open-leveling (18/2/31) | barrage-frost-leveling | - | Frostbolt 2.22, Arcane Missiles 0.96 | 86% (min 60%) | 33.0 | OK |
+| Frostfire | page | frostfire-open-leveling (1/25/25) | frost-leveling | - | Frostfire Bolt 0.00 | 0% (min 30%) | 35.3 | FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30% |
+| Frostfire | mapped | frostfire-open-leveling (1/25/25) | frostfire-leveling | - | Frostfire Bolt 3.04 | 34% (min 30%) | 40.8 | OK |
 
 ## Paladin
 
@@ -104,7 +100,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Elemental | page | opt-elemental-dps-leveling-st (31/12/8) | enhancement-dps | Lightning Bolt only below 35% mob health | Lightning Bolt 0.00 | 36% (min 60%) | 37.3 | FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 36% < 60% |
+| Elemental | page | opt-elemental-dps-leveling-st (31/12/8) | elemental-dps | - | Lightning Bolt 4.17 | 66% (min 60%) | 36.5 | OK |
 | Elemental | slot | elemental-open-leveling (31/12/8) | enhancement-dps | Lightning Bolt only below 35% mob health | Lightning Bolt 0.00 | 35% (min 60%) | 35.1 | FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 35% < 60% |
 | Enhancement | page | leveling-enhancement (7/34/10) | enhancement-dps | - | Stormstrike 2.55 | 76% (min 60%) | 31.2 | OK |
 | Enhancement | slot | opt-enhancement-dps-leveling-st (12/31/8) | enhancement-dps | - | Stormstrike 2.48 | 79% (min 60%) | 31.6 | OK |
@@ -136,12 +132,12 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arms | page | leveling-arms (31/20/0) | arms-2h-raid | - | Mortal Strike 2.42 | 97% (min 80%) | 27.2 | OK |
-| Arms | slot | opt-arms-2h-raid-leveling-st (44/7/0) | arms-2h-raid | - | Mortal Strike 2.41 | 98% (min 80%) | 26.9 | OK |
-| Fury | page | opt-fury-dw-raid-leveling-st (13/38/0) | arms-2h-raid | - | Bloodthirst 3.08 | 85% (min 80%) | 28.8 | OK |
+| Arms | page | opt-arms-2h-raid-leveling-st (44/7/0) | arms-2h-raid | - | Mortal Strike 2.41 | 98% (min 80%) | 26.9 | OK |
+| Arms | slot | leveling-arms (31/20/0) | arms-2h-raid | - | Mortal Strike 2.42 | 97% (min 80%) | 27.2 | OK |
+| Fury | page | opt-fury-dw-raid-leveling-st (13/38/0) | fury-dw-raid | - | Bloodthirst 2.87 | 86% (min 80%) | 26.1 | OK |
 | Fury | slot | opt-fury-dw-raid-solo-60 (13/38/0) | arms-2h-raid | - | Bloodthirst 3.24 | 89% (min 80%) | 29.2 | OK |
 | Fury | slot | opt-arms-2h-raid-leveling-aoe (20/31/0) | arms-2h-raid | - | Bloodthirst 2.52 | 79% (min 80%) | 29.7 | FAIL: core share 79% < 80% |
 | Fury | slot | fury-open-leveling (16/35/0) | arms-2h-raid | - | Bloodthirst 2.73 | 82% (min 80%) | 28.8 | OK |
-| Protection | page | protection-open-leveling (0/20/31) | arms-2h-raid | - | Shield Slam 0.00 | 71% (min 70%) | 37.3 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50) |
-| Protection | slot | protection-leveling (17/3/31) | arms-2h-raid | - | Shield Slam 0.00 | 68% (min 70%) | 37.1 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70% |
+| Protection | page | protection-leveling (17/3/31) | arms-2h-raid | - | Shield Slam 0.00 | 68% (min 70%) | 37.1 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70% |
+| Protection | slot | protection-open-leveling (0/20/31) | arms-2h-raid | - | Shield Slam 0.00 | 71% (min 70%) | 37.3 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50) |
 

@@ -2,7 +2,9 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Feral Combat
 
-**[Leveling — Feral cat](../research/leveling/builds/leveling-feral.md)** (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-7)
+**✅ Recommended** for leveling (the best druid spec here, or within 3% of it).
+
+**[Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md)** (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-7)
 
 **Signature spells:** 83% of the damage at level 60 in the fight lab comes from melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast in every fight).
 
@@ -49,9 +51,22 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 - Under 30% health with the mob still above a quarter of its health: shift out, cast **Regrowth**, then **Cat Form** again. If the mob is lower than that, finish it instead.
 - In the bear levels, **Bash** a mob that starts casting, or when you are low: the fight lab does both.
 
+*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 15 | 24 |
+| 20 | 17 |
+| 30 | 21 |
+| 40 | 25 |
+| 50 | 27 |
+| 60 | 31 |
+
 ## Other builds of this spec
 
-- [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-7)
+- [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-7)
 - [Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-7)
 
 ---

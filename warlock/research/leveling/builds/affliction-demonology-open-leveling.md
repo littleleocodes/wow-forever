@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.4% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
+The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.4% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -99,9 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +6.7% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.42; demonology-leveling 31.15. The search simulated 34,237 builds.
-- The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 32.27 s, leveling-affliction 32.46 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
