@@ -110,20 +110,20 @@
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-24",
-  "commit": "30f67f5d2",
+  "date": "2026-11-02",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "assassination-ml-raid",
-    "talents": "0053031052150005-305313000013-002"
+    "label": "daggers-split-open-raid",
+    "talents": "0053031033150103-303333000015-002"
    },
    {
-    "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004"
+    "label": "sim preset: Asn Muti",
+    "talents": "00532310151501031-302303202014"
    },
    {
     "label": "assassination-mutilate-raid",
@@ -136,14 +136,14 @@
     "protect_only": true
    },
    {
-    "label": "daggers-split-open-raid",
-    "talents": "00530310311301-303333000015142-002",
+    "label": "assassination-ml-raid",
+    "talents": "0053031033150105-305313000015",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "assassination-ml-raid",
-   "sim preset: Mutilate"
+   "daggers-split-open-raid",
+   "sim preset: Asn Muti"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -203,50 +203,58 @@
     "gain_seed2": 0.002391429817604429,
     "candidates": 416,
     "pass": 12
+   },
+   {
+    "round": 8,
+    "change": "insert in the middle: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not time left on Slice and Dice \u2264 2s or combo points \u2265 3 and time left in the fight \u2264 6s) and (not talentIsKnown or time left on Rupture \u2265 4 or energy \u2265 75 or time left in the fight \u2264 6s) and not false and false and (not Expose Armor is up or time left on Expose Armor \u2264 16s): cast Eviscerate (rank 8)",
+    "gain_seed1": 0.002700687639114463,
+    "gain_seed2": 0.002713901642679817,
+    "candidates": 435,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
-    "assassination-ml-raid": {
-     "before": 285.33589052347185,
-     "after": 662.3066001130422,
-     "base": 285.33589052347185,
+    "daggers-split-open-raid": {
+     "before": 610.5319389635793,
+     "after": 630.8317943427295,
+     "base": 610.5319389635793,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Mutilate": {
-     "before": 621.1451285087876,
-     "after": 624.3437970607151,
-     "base": 621.1451285087876,
+    "sim preset: Asn Muti": {
+     "before": 596.9949225354849,
+     "after": 616.6875457774524,
+     "base": 596.9949225354849,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-mutilate-raid": {
-     "before": 279.89020713041384,
-     "after": 643.1732183171521,
-     "base": 279.89020713041384,
+     "before": 261.6742626792377,
+     "after": 607.2685481423918,
+     "base": 261.6742626792377,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-seal-fate-raid": {
-     "before": 285.33589052347185,
-     "after": 657.1938317628684,
-     "base": 285.33589052347185,
+     "before": 267.24702549710685,
+     "after": 621.6560859805397,
+     "base": 267.24702549710685,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "daggers-split-open-raid": {
-     "before": 635.4370371166891,
-     "after": 656.6531450012026,
-     "base": 635.4370371166891,
+    "assassination-ml-raid": {
+     "before": 610.6555990493442,
+     "after": 630.5821883483607,
+     "base": 610.6555990493442,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -263,13 +271,13 @@
     "Mutilate"
    ],
    "rejected": {
-    "structure": 43,
+    "structure": 31,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

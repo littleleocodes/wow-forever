@@ -22480,6 +22480,79 @@
     "why": null,
     "spec": "Feral Combat",
     "date": "2026-11-01"
+   },
+   "structural": {
+    "date": "2026-11-01",
+    "winner": "9/32/10",
+    "live": 14,
+    "screened": 300,
+    "correlation": 0.999,
+    "screen_best": [
+     {
+      "split": "9/32/10",
+      "simulated": -0.0215,
+      "model": 0.0
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0236,
+      "model": -0.0028
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0274,
+      "model": -0.0061
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0275,
+      "model": -0.0044
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0294,
+      "model": -0.0064
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0295,
+      "model": -0.0088
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0319,
+      "model": -0.0106
+     },
+     {
+      "split": "9/32/10",
+      "simulated": -0.0322,
+      "model": -0.0095
+     }
+    ],
+    "raced": [
+     {
+      "split": "9/32/10",
+      "gain": -0.0215
+     },
+     {
+      "split": "9/32/10",
+      "gain": -0.0241
+     },
+     {
+      "split": "9/32/10",
+      "gain": -0.0274
+     },
+     {
+      "split": "9/32/10",
+      "gain": -0.0276
+     },
+     {
+      "split": "9/32/10",
+      "gain": -0.0301
+     }
+    ],
+    "leads": [],
+    "minutes": 364.7
    }
   }
  },

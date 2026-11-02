@@ -1123,7 +1123,7 @@
                },
                "rhs": {
                 "const": {
-                 "val": "3"
+                 "val": "1"
                 }
                }
               }
@@ -1202,7 +1202,7 @@
      }
     }
    },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   "notes": "apl_opt 2026-11-01: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
   },
   {
    "action": {

@@ -99,8 +99,8 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-10-24",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
@@ -111,8 +111,8 @@
     "talents": "00530310301-30531300001515231-002"
    },
    {
-    "label": "sim preset: Combat Dual-Wield 15/33/3",
-    "talents": "1053231-22530300001515231-012"
+    "label": "sim preset: Combat BS",
+    "talents": "00532310101-32030320201515231-002"
    },
    {
     "label": "combat-daggers-raid",
@@ -127,7 +127,7 @@
   ],
   "tuned_on": [
    "combat-ml-raid",
-   "sim preset: Combat Dual-Wield 15/33/3"
+   "sim preset: Combat BS"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -196,41 +196,49 @@
     "gain_seed1": null,
     "gain_seed2": 0.007,
     "candidates": 1
+   },
+   {
+    "round": 9,
+    "change": "threshold 3 -> 1: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and (not talentIsKnown or time left on Rupture \u2265 4 or variableRef or variableRef) and not variableRef: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.002877752657867383,
+    "gain_seed2": 0.0032420661919361216,
+    "candidates": 730,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
     "combat-ml-raid": {
-     "before": 659.3738009453654,
-     "after": 683.0865648444399,
-     "base": 659.3738009453654,
+     "before": 622.2178066001942,
+     "after": 652.4239570244159,
+     "base": 622.2178066001942,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 646.3492087071237,
-     "after": 666.8999259092736,
-     "base": 646.3492087071237,
+    "sim preset: Combat BS": {
+     "before": 616.294643125627,
+     "after": 646.9246198560196,
+     "base": 616.294643125627,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-daggers-raid": {
-     "before": 655.0965326323301,
-     "after": 676.6068295708142,
-     "base": 655.0965326323301,
+     "before": 618.132636558174,
+     "after": 645.6419726883902,
+     "base": 618.132636558174,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-combat-daggers-raid-raid-dps": {
-     "before": 643.1412039262163,
-     "after": 661.5485249757887,
-     "base": 643.1412039262163,
+     "before": 607.2506952706872,
+     "after": 630.6113329221328,
+     "base": 607.2506952706872,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -251,6 +259,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

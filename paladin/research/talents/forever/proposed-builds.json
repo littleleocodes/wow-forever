@@ -837,48 +837,6 @@
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
-      "id": "holy-ml-heal",
-      "name": "Holy — Raid healing (machine-learning search)",
-      "role": "healer",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Holy",
-      "generated": "2026-10-21",
-      "derived": "raid",
-      "summary": "The Holy build the machine-learning talent search found in the healer lab on 2026-10-21 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
-      "allocation": {
-        "Holy": [
-          ["Divine Strength", 5],
-          ["Spiritual Focus", 5],
-          ["Healing Light", 3],
-          ["Purifying Power", 2],
-          ["Reverence", 2],
-          ["Divine Favor", 1],
-          ["Illumination", 5],
-          ["Infusion of Light", 2],
-          ["Holy Power", 5]
-        ],
-        "Protection": [
-          ["Divine Intellect", 5],
-          ["Redoubt", 5],
-          ["Guardian's Favor", 2],
-          ["Sacred Duty", 1],
-          ["Templar's Bulwark", 1],
-          ["Toughness", 1],
-          ["Improved Righteous Fury", 1]
-        ],
-        "Retribution": [
-          ["Benediction", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["+2.0% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.586 ± 0.001; holy-raid-healer 0.574, opt-holy-heal-raid-heal 0.574.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 616 one-move and 9,521 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 33/12/6 -> 30/16/5; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Reverence 3 -> 2 (rank cap); Holy Conduit 1 gone (moved to Holy); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Anticipation); +1 Divine Intellect (tier gating for Anticipation); +1 Guardian's Favor (tier gating for Anticipation); +1 Templar's Bulwark (tier gating for Anticipation); +1 Infusion of Light (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); -1 Anticipation (over 51); -1 Anticipation (over 51); -1 Anticipation (over 51) (refill: the holy-heal model, raid-heal)."],
-      "open_questions": ["A machine-searched Holy build: check it against the community's healing builds at launch."],
-      "sources": [],
-      "replaces": "holy-raid-healer"
-    },
-    {
       "id": "protection-open-leveling",
       "name": "Protection — Leveling (open talent search)",
       "role": "dps",
@@ -1425,6 +1383,53 @@
       "notes": ["Open search result (shockadin-raid, full raid): 23/0/28 (Shockadin (a Holy/Retribution hybrid)) at 796.2 DPS; shockadin-open-raid 784.3 in the same fights; 2,020 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps -8.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.0): 815.0 DPS against 796.5 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.", "2026-11-01 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed."],
       "open_questions": ["An open-search Shockadin build: check it against the community's Shockadin builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7"]
+    },
+    {
+      "id": "holy-ml-heal",
+      "name": "Holy — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Holy",
+      "generated": "2026-11-01",
+      "derived": "raid",
+      "summary": "The Holy build the machine-learning talent search found in the healer lab on 2026-11-01 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Holy": [
+          ["Spiritual Focus", 5],
+          ["Divine Strength", 5],
+          ["Healing Light", 3],
+          ["Reverence", 2],
+          ["Divine Favor", 1],
+          ["Illumination", 5],
+          ["Holy Conduit", 1],
+          ["Infusion of Light", 1],
+          ["Oath of Light", 1],
+          ["Consecrated Ground", 1],
+          ["Holy Shock", 1],
+          ["Boundless Light", 1],
+          ["Holy Power", 4],
+          ["Light's Vigil", 1]
+        ],
+        "Protection": [
+          ["Divine Intellect", 5]
+        ],
+        "Retribution": [
+          ["Deflection", 2],
+          ["Benediction", 5],
+          ["Improved Judgement", 1],
+          ["Conviction", 3],
+          ["Sanctified Judgement", 1],
+          ["Unyielding Faith", 1],
+          ["Pursuit of Justice", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+24.7% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.629 ± 0.002; holy-raid-healer 0.505, opt-holy-heal-raid-heal 0.495.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 595 one-move and 7,633 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Holy build: check it against the community's healing builds at launch."],
+      "sources": [],
+      "replaces": "holy-raid-healer"
     }
   ]
 }

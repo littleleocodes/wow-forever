@@ -7,6 +7,55 @@
      "and": {
       "vals": [
        {
+        "const": {
+         "val": "true"
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "auraIsActive": {
+           "sourceUnit": {
+            "type": "CurrentTarget"
+           },
+           "auraId": {
+            "spellId": 16511
+           },
+           "includeReactionTime": true
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentComboPoints": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "5"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 16511
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
         "cmp": {
          "op": "OpGe",
          "lhs": {
@@ -128,24 +177,13 @@
   },
   {
    "action": {
-    "condition": {
-     "not": {
-      "val": {
-       "dotIsActive": {
-        "spellId": {
-         "spellId": 11290
-        }
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 11290
      }
     }
    },
-   "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -512,6 +550,34 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "spellIsReady": {
+           "spellId": {
+            "spellId": 1857,
+            "rank": 2
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 14185
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   }
  ]
 }

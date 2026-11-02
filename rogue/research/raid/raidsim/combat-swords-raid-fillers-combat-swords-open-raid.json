@@ -3,36 +3,79 @@
  "spec": "combat-swords-raid",
  "build": "combat-swords-open-raid",
  "setting": "raid",
- "date": "2026-10-10",
+ "date": "2026-11-02",
  "tank": false,
  "removal": {
-  "Adrenaline Rush": 0.03591503318060263,
-  "Aggression": 0.01670705912689463,
-  "Blade Flurry": 0.01158450350678486,
+  "Adrenaline Rush": 0.03273700002294799,
+  "Aggression": 0.011974319462675465,
+  "Blade Flurry": 0.006900377419464809,
   "Deflection": -0.0,
-  "Dual Wield Specialization": 0.03434601177643137,
-  "Flawless Execution": 0.01822217951932159,
-  "Hack and Slash": 0.028482024628754488,
-  "Improved Eviscerate": 0.01466386190770741,
-  "Improved Poisons": 0.016377987575827313,
-  "Improved Sinister Strike": 0.04693678686955882,
-  "Improved Slice and Dice": 0.03474474311202125,
-  "Lethality": 0.006668261688734023,
-  "Lightning Reflexes": -0.0,
-  "Malice": 0.04401770285427198,
-  "Precision": 0.02885318985262275,
-  "Relentless Strikes": 0.05480121951601513,
-  "Ruthlessness": 0.02987356412657305,
-  "Weapon Expertise": 0.019816249696194554
+  "Dual Wield Specialization": 0.03388769220912369,
+  "Endurance": -0.0,
+  "Flawless Execution": 0.017877823810709348,
+  "Hack and Slash": 0.035306670366673565,
+  "Improved Eviscerate": 0.01728049244556895,
+  "Improved Poisons": 0.027019685337677513,
+  "Improved Sinister Strike": 0.046566389358997706,
+  "Improved Slice and Dice": 0.03781453848300964,
+  "Lethality": 0.006165360732238723,
+  "Malice": 0.043779671609915694,
+  "Precision": 0.02677214857351995,
+  "Puncturing Wounds": -0.0,
+  "Relentless Strikes": 0.05576877928067603,
+  "Riposte": -0.0,
+  "Ruthlessness": 0.030141449862592262,
+  "Weapon Expertise": 0.018176217500823544
  },
  "free": [
   "Deflection",
-  "Lightning Reflexes"
+  "Endurance",
+  "Puncturing Wounds",
+  "Riposte"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
- "abilities_never_cast": [],
- "moves": [],
+ "abilities_never_cast": [
+  "Riposte"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Puncturing Wounds",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Puncturing Wounds",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Riposte",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
  "final_seed3": 0.0,
  "start": {
   "Assassination": [
@@ -58,7 +101,7 @@
    ],
    [
     "Improved Poisons",
-    3
+    4
    ]
   ],
   "Combat": [
@@ -71,8 +114,8 @@
     2
    ],
    [
-    "Lightning Reflexes",
-    4
+    "Puncturing Wounds",
+    2
    ],
    [
     "Deflection",
@@ -81,6 +124,14 @@
    [
     "Precision",
     3
+   ],
+   [
+    "Endurance",
+    1
+   ],
+   [
+    "Riposte",
+    1
    ],
    [
     "Flawless Execution",
@@ -104,7 +155,7 @@
    ],
    [
     "Aggression",
-    3
+    2
    ],
    [
     "Adrenaline Rush",
@@ -137,7 +188,7 @@
    ],
    [
     "Improved Poisons",
-    3
+    4
    ]
   ],
   "Combat": [
@@ -148,10 +199,6 @@
    [
     "Improved Sinister Strike",
     2
-   ],
-   [
-    "Lightning Reflexes",
-    4
    ],
    [
     "Deflection",
@@ -183,11 +230,15 @@
    ],
    [
     "Aggression",
-    3
+    2
    ],
    [
     "Adrenaline Rush",
     1
+   ],
+   [
+    "Lightning Reflexes",
+    4
    ]
   ],
   "Subtlety": []

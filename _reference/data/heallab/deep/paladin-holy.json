@@ -285,6 +285,426 @@
    "simulated_builds": 8572,
    "minutes": 93.2,
    "policy_changed": true
+  },
+  {
+   "cycle": 2,
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Spiritual Focus",
+       5
+      ],
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Healing Light",
+       3
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Illumination",
+       5
+      ],
+      [
+       "Holy Conduit",
+       1
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Oath of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       1
+      ],
+      [
+       "Holy Shock",
+       1
+      ],
+      [
+       "Boundless Light",
+       1
+      ],
+      [
+       "Holy Power",
+       4
+      ],
+      [
+       "Light's Vigil",
+       1
+      ]
+     ],
+     "Protection": [
+      [
+       "Divine Intellect",
+       5
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       2
+      ],
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       1
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       1
+      ],
+      [
+       "Unyielding Faith",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ]
+     ]
+    },
+    "split": "32/5/14",
+    "dps": 0.6145,
+    "se": 0.0027,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "32/5/14",
+    "dps": 0.6053,
+    "se": 0.0027,
+    "differs": [
+     [
+      "Deflection",
+      2
+     ],
+     [
+      "Deflection",
+      3
+     ],
+     [
+      "Divine Favor",
+      1
+     ],
+     [
+      "Divine Strength",
+      2
+     ],
+     [
+      "Divine Strength",
+      5
+     ],
+     [
+      "Holy Power",
+      4
+     ],
+     [
+      "Holy Power",
+      5
+     ],
+     [
+      "Infusion of Light",
+      1
+     ],
+     [
+      "Infusion of Light",
+      2
+     ],
+     [
+      "Purifying Power",
+      2
+     ],
+     [
+      "Unyielding Faith",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0152,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1696,
+     "best_screen": 0.6256,
+     "best_split": "32/5/14",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1694,
+     "best_screen": 0.6256,
+     "best_split": "31/10/10",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065,
+      0.6065
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6072,
+      0.6072,
+      0.6072,
+      0.6072,
+      0.6072
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6053,
+      0.6053
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6145,
+      0.6053
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 540,
+     "best_gap": 0.0279,
+     "best_move": "1 Pursuit of Justice -> Divine Favor",
+     "raced": [
+      "1 Pursuit of Justice -> Divine Favor",
+      "1 Sanctified Judgement -> Divine Favor",
+      "1 Improved Judgement -> Divine Favor",
+      "1 Deflection -> Divine Favor"
+     ],
+     "confirmed_gap": 0.0149
+    },
+    {
+     "neighbours": 200,
+     "best_gap": 0.0244,
+     "best_move": "1 Infusion of Light -> Boundless Light",
+     "raced": [
+      "1 Infusion of Light -> Boundless Light",
+      "1 Infusion of Light -> Pursuit of Justice",
+      "1 Infusion of Light -> Seal of Command",
+      "1 Infusion of Light -> Unyielding Faith"
+     ],
+     "confirmed_gap": 0.0076
+    },
+    {
+     "neighbours": 597,
+     "best_gap": 0.0121,
+     "best_move": "3 Holy Power -> Improved Seals",
+     "raced": [
+      "3 Holy Power -> Improved Seals",
+      "3 Holy Power -> Divine Strength",
+      "1 Boundless Light -> Pursuit of Justice",
+      "1 Boundless Light -> Seal of Command"
+     ],
+     "confirmed_gap": 0.0038
+    },
+    {
+     "neighbours": 599,
+     "best_gap": 0.0217,
+     "best_move": "3 Divine Strength -> Holy Power",
+     "raced": [
+      "3 Divine Strength -> Holy Power",
+      "3 Spiritual Focus -> Holy Power",
+      "2 Deflection -> Holy Power",
+      "2 Purifying Power -> Holy Power"
+     ],
+     "confirmed_gap": 0.0169
+    },
+    {
+     "neighbours": 595,
+     "best_gap": 0.0061,
+     "best_move": "1 Unyielding Faith -> Holy Power",
+     "raced": [
+      "1 Unyielding Faith -> Holy Power",
+      "1 Pursuit of Justice -> Holy Power",
+      "1 Sanctified Judgement -> Holy Power",
+      "1 Improved Judgement -> Holy Power"
+     ],
+     "confirmed_gap": 0.0
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Oath of Light",
+     "importance": 0.4242
+    },
+    {
+     "feature": "Conviction",
+     "importance": 0.1742
+    },
+    {
+     "feature": "Illumination",
+     "importance": 0.1123
+    },
+    {
+     "feature": "Divine Favor",
+     "importance": 0.0776
+    },
+    {
+     "feature": "Light's Vigil",
+     "importance": 0.0359
+    },
+    {
+     "feature": "Holy Power",
+     "importance": 0.0327
+    },
+    {
+     "feature": "Healing Light",
+     "importance": 0.0138
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0136
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.0133
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0133
+    },
+    {
+     "feature": "Divine Intellect",
+     "importance": 0.0127
+    },
+    {
+     "feature": "Redoubt",
+     "importance": 0.0113
+    }
+   ],
+   "simulated_builds": 6612,
+   "minutes": 262.4,
+   "policy_changed": true
   }
- ]
+ ],
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 595,
+    "two_move": 7633,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Seal of Command",
+      0.0095
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Unyielding Faith",
+      0.0095
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Vindication",
+      0.0095
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Sanctified Judgement",
+      0.0095
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Improved Judgement",
+      0.0095
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Seal of Command",
+      0.0
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Unyielding Faith",
+      0.0
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Vindication",
+      0.0
+     ],
+     [
+      "1 Pursuit of Justice -> Holy Power; then 1 Benediction -> Boundless Light",
+      0.0
+     ],
+     [
+      "1 Unyielding Faith -> Holy Power; then 1 Benediction -> Boundless Light",
+      0.0
+     ]
+    ],
+    "minutes": 85.4
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "capacity": 0.6294,
+   "se": 0.0019
+  },
+  "holy-raid-healer": {
+   "capacity": 0.5049,
+   "se": 0.0017
+  },
+  "opt-holy-heal-raid-heal": {
+   "capacity": 0.495,
+   "se": 0.0014
+  },
+  "holy-ml-heal": {
+   "capacity": 0.4881,
+   "se": 0.0014
+  }
+ },
+ "minutes": 360.2,
+ "build": {
+  "written": "holy-ml-heal",
+  "gain_vs_hand": 0.24658348187759938
+ }
 }

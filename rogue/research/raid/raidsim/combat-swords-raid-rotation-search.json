@@ -154,35 +154,30 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-10-24",
-  "commit": "30f67f5d2",
+  "date": "2026-11-01",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
-    "label": "combat-swords-open-raid",
-    "talents": "005303103003-32403300001515231"
+    "label": "opt-combat-swords-raid-raid-dps",
+    "talents": "005323101005-32502300000514231"
    },
    {
-    "label": "sim preset: Sinister Strike",
-    "talents": "00530310501-32003311201515231"
+    "label": "sim preset: Combat SS",
+    "talents": "005323101012-32030320201515231"
    },
    {
     "label": "combat-swords-raid",
     "talents": "005303125-32403300001515131",
     "protect_only": true
-   },
-   {
-    "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "005323101005-32502300000514231",
-    "protect_only": true
    }
   ],
   "tuned_on": [
-   "combat-swords-open-raid",
-   "sim preset: Sinister Strike"
+   "opt-combat-swords-raid-raid-dps",
+   "sim preset: Combat SS"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -234,41 +229,64 @@
     "gain_seed2": 0.020790222033995054,
     "candidates": 365,
     "pass": 9
+   },
+   {
+    "round": 7,
+    "change": "insert at the end: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not time left on Slice and Dice \u2264 2s or combo points \u2265 3 and time left in the fight \u2264 6s) and (not talentIsKnown or time left on Rupture \u2265 4 or energy \u2265 75 or time left in the fight \u2264 6s) and not false and false and (not Expose Armor is up or time left on Expose Armor \u2264 16s): cast Eviscerate (rank 8)",
+    "gain_seed1": 0.001897258960071202,
+    "gain_seed2": 0.001869809496389374,
+    "candidates": 403,
+    "pass": 10
+   },
+   {
+    "round": 8,
+    "change": "drop: if combo points \u2265 3.75 and (Slice and Dice is up or energy \u2265 79 or time left in the fight < 6): cast Eviscerate (rank 8)",
+    "gain_seed1": 0.002486997955270853,
+    "gain_seed2": 0.002172544088940187,
+    "candidates": 507,
+    "pass": 10
+   },
+   {
+    "round": 9,
+    "change": "insert at the end: if combo points = 5 and not time left on Slice and Dice \u2264 2s and energy \u2265 current cost and not false and false and (not Expose Armor is up or time left on Expose Armor \u2264 16s) and not Elune's Light is up: cast Cold Blood",
+    "gain_seed1": 0.002529073730759279,
+    "gain_seed2": 0.002531331478480059,
+    "candidates": 461,
+    "pass": 10
+   },
+   {
+    "round": 10,
+    "change": "threshold 3 -> 1: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not time left on Slice and Dice \u2264 2s or combo points \u2265 3 and time left in the fight \u2264 6s) and (not talentIsKnown or time left on Rupture \u2265 4 or energy \u2265 75 or time left in the fight \u2264 6s) and not false and false and (not Expose Armor is up or time left on Expose Armor \u2264 16s): cast Eviscerate (rank 8)",
+    "gain_seed1": 0.002291191142832716,
+    "gain_seed2": 0.0023406895907345238,
+    "candidates": 497,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "combat-swords-open-raid": {
-     "before": 626.1779748900005,
-     "after": 641.2688477973483,
-     "base": 626.1779748900005,
+    "opt-combat-swords-raid-raid-dps": {
+     "before": 583.6939630279367,
+     "after": 597.4962170285132,
+     "base": 583.6939630279367,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Sinister Strike": {
-     "before": 617.8972957912388,
-     "after": 632.8282588544841,
-     "base": 617.8972957912388,
+    "sim preset: Combat SS": {
+     "before": 584.1882237263862,
+     "after": 605.1529582529537,
+     "base": 584.1882237263862,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-swords-raid": {
-     "before": 610.7816333558002,
-     "after": 625.3325624348304,
-     "base": 610.7816333558002,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "opt-combat-swords-raid-raid-dps": {
-     "before": 619.3904849441384,
-     "after": 630.4779266255534,
-     "base": 619.3904849441384,
+     "before": 574.4789183163103,
+     "after": 592.3721763456027,
+     "base": 574.4789183163103,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -289,6 +307,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }
