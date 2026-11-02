@@ -2380,5 +2380,154 @@
   "best_hand": "assassination-seal-fate-raid",
   "gain_vs_hand": 0.0141,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "assassination-raid",
+    "dps": 718.98,
+    "se": 0.091
+   },
+   "assassination-seal-fate-raid": {
+    "entry": "assassination-raid",
+    "dps": 708.11,
+    "se": 0.096
+   },
+   "assassination-mutilate-raid": {
+    "entry": "assassination-raid",
+    "dps": 695.13,
+    "se": 0.096
+   },
+   "assassination-ml-raid": {
+    "entry": "assassination-raid",
+    "dps": 719.82,
+    "se": 0.091
+   }
+  },
+  "best_hand": "assassination-seal-fate-raid",
+  "gain_vs_hand": 0.0154
+ },
+ "signature_check": {
+  "spec": "Assassination",
+  "ok": true,
+  "core_share": 0.9814,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "assassination-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 718.5,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.5132,
+   "Mutilate": 0.1788,
+   "Eviscerate": 0.1663,
+   "Deadly Poison V": 0.0687,
+   "Instant Poison VI": 0.0543,
+   "Goblin Sapper Charge": 0.0094,
+   "Garrote": 0.0092
+  },
+  "casts": {
+   "Eviscerate": 15.49,
+   "spell 25349": 47.53,
+   "spell 11337": 54.26,
+   "Garrote": 1.0,
+   "Slice and Dice": 7.73,
+   "Vanish": 1.0,
+   "Cold Blood": 1.0,
+   "Mutilate": 31.0
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Vile Poisons",
+     4
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     4
+    ],
+    [
+     "Mutilate",
+     1
+    ],
+    [
+     "Seal Fate",
+     5
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     3
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     3
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ]
+   ],
+   "Subtlety": []
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms assassination-ml-raid (-0.12% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

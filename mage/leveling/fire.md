@@ -2,27 +2,23 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Fire
 
-**[Fire — Leveling](../research/leveling/builds/fire-open-leveling.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/mage/60/-23151031110135031-1235020301003-7)
+**[Fire (optimized)](../research/leveling/builds/opt-fire-leveling-leveling-st.md)** (4/31/16) — [open the talent tree](https://talentsforever.com/mage/60/202-05523301210103131-203030330101-7)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
-
-**Signature spells:** 63% of the damage at level 60 in the fight lab comes from Fireball, Pyroblast, Fire Blast, Scorch, Ignite, Flamestrike (the spec's rule: at least 60%; **Fireball**, **Pyroblast** cast in every fight).
+> **Signature spells: this build fails the check** in the fight lab (Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 25% < 60%). Fire is defined by **Fireball**, **Pyroblast** cast in every fight and Fireball, Pyroblast, Fire Blast, Scorch, Ignite, Flamestrike carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Not in this build:** **Blast Wave** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Cold Snap**, **Fingers of Frost**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third (35%) of its health.
-2. **Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill.
-3. **Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.
-4. **Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.
-5. Mob on you and no control left: **Scorch** (a short cast, pushed back less), while the mob has more than about a third of its health.
-6. Below about a third of the mob's health, no **Fireball** or **Scorch**: finish with **Fire Blast**, an **Ice Lance** or your wand.
-7. **Counterspell** a mob that casts spells.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
+2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
+3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
+4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
+5. **Counterspell** a mob that casts spells.
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
@@ -52,54 +48,11 @@ Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows 
 - On a nearly dead mob (below about a third), finish with an instant that will kill (**Fire Blast**, an **Ice Lance**) or the wand rather than start a **Fireball** or **Scorch**.
 - If you run low on mana in a fight, keep **Fire Blast** and **Ice Lance** for the freeze and let the wand finish; the fight lab's list has no mana limit of its own and drinks below a third between fights.
 
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-12 | Elemental Precision (Frost) | 3 |
-| 13 | Frost Warding (Frost) | 1 |
-| 14 | Improved Frostbolt (Frost) | 1 |
-| 15-16 | Improved Frost Nova (Frost) | 2 |
-| 17-19 | Ice Shards (Frost) | 3 |
-| 20 | Ice Lance (Frost) | 1 |
-| 21-23 | Frost Channeling (Frost) | 3 |
-| 24 | Ice Shards (Frost) | 1 |
-| 25-27 | Shatter (Frost) | 3 |
-| 28 | Ice Shards (Frost) | 1 |
-| 29 | Improved Frostbolt (Frost) | 1 |
-| 30-31 | Improved Fire Blast (Fire) | 2 |
-| 32 | Improved Fireball (Fire) | 1 |
-| 33-34 | Incineration (Fire) | 2 |
-| 35 | Flame Throwing (Fire) | 1 |
-| 36-40 | Ignite (Fire) | 5 |
-| 41-43 | Burning Soul (Fire) | 3 |
-| 44 | Pyroblast (Fire) | 1 |
-| 45 | Heating Up (Fire) | 1 |
-| 46 | Improved Scorch (Fire) | 1 |
-| 47-49 | Master of Elements (Fire) | 3 |
-| 50-54 | Critical Mass (Fire) | 5 |
-| 55-57 | Fire Power (Fire) | 3 |
-| 58 | Incineration (Fire) | 1 |
-| 59 | Improved Flamestrike (Fire) | 1 |
-| 60 | Combustion (Fire) | 1 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 31 |
-| 30 | 35 |
-| 40 | 41 |
-| 50 | 34 |
-| 60 | 31 |
-
 ## Other builds of this spec
 
-- [Fire (optimized)](../research/leveling/builds/opt-fire-leveling-leveling-st.md) (2/33/16, 39 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/0002-20352330130105131-203030330101-7)
-- [Fire — Leveling](../research/leveling/builds/fire-leveling.md) (0/32/19, 36 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/-10550130130035131-2035301001013-7)
+- [Fire — Leveling](../research/leveling/builds/fire-leveling.md) (0/32/19) — [open the talent tree](https://talentsforever.com/mage/60/-05501301230133131-2035301001013-7)
+- [Fire — Leveling](../research/leveling/builds/fire-open-leveling.md) (0/31/20) — [open the talent tree](https://talentsforever.com/mage/60/-33510311210133031-1235020301003-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -4,8 +4,6 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
-
 **[Daggers — Raid](../research/raid/builds/daggers-split-open-raid.md)** (28/21/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031033150103-303333000015-002-7)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
@@ -18,8 +16,9 @@
 
 1. **Garrote**: keep it on the target
 2. **Cold Blood** right before your finisher
-3. **Eviscerate** (rank 8) when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
-4. **Mutilate**
+3. **Eviscerate** (rank 8) when you have 5 combo points and 75+ energy and either Expose Armor is not active or Expose Armor has under 16 seconds left
+4. **Eviscerate** (rank 8) when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
+5. **Mutilate**
 
 **Mutilate** is your filler: cast it whenever nothing above is ready.
 
@@ -59,39 +58,39 @@ Daggers (split) plays the Assassination raid list with Combat's dagger talents: 
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 664 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 630 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 669 | [29/21/1](https://talentsforever.com/rogue/60/0053031033150104-303333000015-001-7) |
-| Phase 1 BiS | 675 | [29/21/1](https://talentsforever.com/rogue/60/0053031033150104-303333000015-001-7) (ties this build) |
+| Pre-BiS | 717 | this build |
+| Phase 1 BiS | 721 | this build |
 
-**The gear** (average item level: Pre-BiS 63.3; Phase 1 BiS 64.0; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 66.5; Phase 1 BiS 66.5; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Darkmantle Cap](https://www.wowhead.com/forever/item=22005)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Darkmantle Cap](https://www.wowhead.com/forever/item=22005)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Head | [Field Marshal's Leather Mask](https://www.wowhead.com/forever/item=16455)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Field Marshal's Leather Mask](https://www.wowhead.com/forever/item=16455)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
 | Neck | [Amulet of the Darkmoon](https://www.wowhead.com/forever/item=19491) | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) |
-| Back | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
+| Hands | [Marshal's Leather Handgrips](https://www.wowhead.com/forever/item=16454)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Marshal's Leather Handgrips](https://www.wowhead.com/forever/item=16454)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Assassin's Waistguard](https://www.wowhead.com/forever/item=272395) | [Assassin's Waistguard](https://www.wowhead.com/forever/item=272395) |
-| Legs | [Devilsaur Leggings](https://www.wowhead.com/forever/item=15062) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Sentinel's Leather Pants](https://www.wowhead.com/forever/item=22749)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Legs | [Marshal's Leather Leggings](https://www.wowhead.com/forever/item=16456)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Marshal's Leather Leggings](https://www.wowhead.com/forever/item=16456)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
 | Feet | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) |
-| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
+| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) |
 | Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
 | Trinket | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
-| Main hand | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
-| Off hand | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Main hand | [Grand Marshal's Dirk](https://www.wowhead.com/forever/item=18838)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Grand Marshal's Dirk](https://www.wowhead.com/forever/item=18838)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Off hand | [High Warlord's Razor](https://www.wowhead.com/forever/item=18840)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [High Warlord's Razor](https://www.wowhead.com/forever/item=18840)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/rogue/dps/#eJzEVU9oI1UYn+/NNPPyJWaHxy47DqLTHCQbnfXNTLI2WzGzhUVRD2W95GbHTXYTd0lCksWtp7QKFhRRwWJ7ELEVxD9QipbSq1Ar9NBW7UGUVuuhSA9F1FP9w5s0bWx7Tf0O7735vt/vfb/vfW94eB8FDXQwIQFDUIQqNAHGAN4H+AiARYMoEdE+MN6MUKIpRhNQpX98AvovEVTo1LuACv1mWUOVvrei6ashVOmXn5/Rt2Ko0pcnQP9RLJaXNX0jhgp9bUXDEF2/I9gq/WoUWu7vPhTb/DUuxi9WNFTozDsiz7ermr4TO1wodG1Vi1/UlkqJ7dt8r39w/Q3I/T70NpC9/kmgU/6n/g9Xxp/9GMjrpRnYvDoPOx/AQPSwSg8WSC/naZe7NnddO81tnrJc7rquyznndtri3F4iys9kLMxGgJX86u3nKtWG6XDnkmVzy0ldNq8X/fLNQt6s1Ew/ny/kzeeHzUaxYNYqDb9RqpTNesGvXS+aiXqhYPr1ul+vl8pBxKr5pbzVxlkt3MUX6pXyBeMsRuJhVJ0elOlkzmhNbONUNdSwxG7igOGhloxRhZGXJCOEChI7jQ+zJIbXlBAqdPq3Z44CnDRGZoG2gjpgr/FAAJGZPAqSqAbB/Q9E+LS9fvYqGK8ADhsvYpq5ASfUwbExFo8izoKKPQlC/0zhmeQ9NMTIU/uAS/g4e+wYLY3nk+eozHDhgNjWIPg9h/yM0QYwzYh1ZrossYeMC2iy+49tn+rEiX3oT2U2ekKruN2tVp3D6PehMMp0scLEjylELFZOFGGnui5i7taBiLlb7JoxiE+wqyccm2080nl0+4iDW/RoJmiv3NFeMdHpHEODiptGd7eeZo0jNfKM5fR1q0Y1UPBWjt05zfa2iv2nCbq8TZZglzgjshTYWe9XUJCgFP+bhIVDat7w7p2cEPZ1tvdGYOtZZ5PoiplNzhPpf7GG11511R78rGt5MsF4bdq7su/whsTrOAHBh7SZTcp0/vxAxyPKoQ88eBIGIQdFqMJduEv+HQAnqI8d); Phase 1 BiS: [full raid](https://wowsims.com/forever/rogue/dps/#eJzEVU9oI1UYn+/NNPPyJWaHxy47DqLTHCQbnfXNTLI2WzGzhUVRD2W95GbHTXYTd0lCEnHrqa2KBUWpotAeRLSC+Adq0VJ6FWqFHtqqPYil1fZQpIci6qmovEnTxrbXdL/De2++7/d73+973xse3kdBAx1MSMAAFKEKQwCjAB8CfArAokGUiGgPGGMRSjTFGAZU6V+fg74VQYVuvQ2o0B8WNVTpB0uavhxClX779Rl9M4YqfWUc9DWxWFzU9PUYKvSNJYFc+yqgq/S7EWj6f/pE7PPau2L8ZklDhU69JxL9uKzpO7HDhUJXlrX4RW2hlNi+zfd6+1ffgtyfA+8A2eudAPqx/4X/y5X3n/0MyJulKdi4Ogs7H0Ff9LBMD+ZIN+dpl7s2d107zW2eslzuuq7LOed22uLcXiDKb2Q0zIaBlfzq7ecq1YbpcOeSZXPLSV02rxf98s1C3qzUTD+fL+TN5wfNRrFg1ioNv1GqlM16wa9dL5qJeqFg+vW6X6+XykHEqvmlvNXCWU3cxRfqlfIF4yxG4mFUnS6U6UTOaE5s/VQ11LDEbmKf4aGWjFGFkZclI4QKEjuND7MkhleUECp08o9njgKcNEamgTaDOmC38UAAkZk8ApKoBsH9H0T4tL1e9joYrwIOGi9hmrkBJ9TGsTEWjyJOg4pdCUL/TuGZ5D00xMhT+4BL+Dh77BgtjeeT56jMcO6A2NIg+F2H/IzRAjDNiLVnuiyxh4wLaLL7j22faseJfeivZTZyQqu43alWncPoz6EwynS+wsSfKUTMV04UYac6LmLm1oGImVvsmtGPT7CrJxybbTzSfnT7iINb9GgmaK/c1l4x0ckcQ4OKm0Z3N59mjSM18ozl9HSqRjVQMJZjL55me5vF/jsEurxNFmCXOMOyFNhZ73dQkKAU/4eEhUMauuHdOzEu7Pts943AVrPOBtEVM5ucJdJdsYbXWnXUHvyyY3kywXht0ruy7/AGxPM4DsGHtJFNynT2fF/bK8qhBzx4EvohB0Wowh24Q/4bAHR6jyE=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/rogue/dps/#eJzEVk1sG1UQ9rzd2M9j11k9pXT7QLCxUOUaXN7u2iZpULONVKhaKkJ7wDey1E7tNrIjrxEtJycggVSEBIioyQnRVKAKpCqCKsqBC1IapB6aAEVChYaWQ4V6qBDqKfzorePWTXx1mcPu25lvZr55MyMtPkZBAx0MSMAIFGEc6gDvAnwC8DkAi/pWIq19wK/FKNFUPgEYopfqoP8eQZWePQOo0u8vaxii354DfTkoD1916zdjGKJvTYP+izws1kG/HkOVnr4ikUsN9xC9NLmu//GcjPP3lHx+fUVDlV74WCaa+gj02zLCmcZBpSvLWnyXtlRK3BoTawPDV9+H3F8jHwJZG5gBetb9wr22d+rIeSDvlS7A6r55uP0pDFG/EHBggfQKkbGFbQrbNjPCFHbKFrZt20IIYWZSQlhLRL1BfoqyCWAld3zs1cp4zbCElU2ZImWldxtHi275WCFvVKqGm88X8sZrp4xasWBUKzW3VqqUDa/gVo8WjYRXKBiu57meVyr7llTVLeVTTVyqgdt13KuUd/IejMTDGLK6UKEzOd54sesPlUMVS+wYDnEHtWSMqoy8GeBBVJGYGXyaJTG8ogZRpbN/vrgRYGUwMge0YdQBe/kTPkRhyiQEZDUI9gMQqdPWBtg7wN8GPMXfwAyzfZ9gi4+JsXgUcQ5C2JUg9G4au5NbaJCRA+uALO5hz21yy+C25FaqMFy459jkIP277vv38yaAaTzWmml3gD3Fd6LBHt8UPt2Kk3Hob2V2WdnYKjMlrE616leCPxC2TPA88M+gzQX0skYH4AHekRWVYjCh0js3D+J+9nyb0h5J9lCV0QWQdd1NN/qb9ZDH9fY2y8Md7MlNkezmjBxYn5Gsh4f4QeyOb8HIDSppAJ2oD2NPktEgCx2X+U7nmjSkc/D+gD2baRPuSPxlfIkdwjCGsGvUHfMK6LA9rZ8mfwa1eAyjcxBGhX7zCiNaFz6a3E5VFl1o0ckxQMXMejI/nc2xyTabJ8xOtXMrRn8OSjaLFUY01SexWGlLwkx3nMTFE/dIXDzBDvNhfIHtazMq8nZbNmFTz/r9bVVatrV5u8ipxMgxZLUNNYr+lNXXqRpDPoMPcuz1h9neRrH/1kFXbpEluEOsCSXgS4/zB6hIMBD/h4SlIlAfdbbPTEv5brB31Jerg9Yq0VVjMDlPAv+L1JzmqaOy48uO5en3n4dnnb3rCmdE/ulMg/8RWB1MKnR+21DLD5GAPnBgPwxDDoowDifhJPlvABhu4sM=); Phase 1 BiS: [full raid](https://wowsims.com/forever/rogue/dps/#eJzEVk1sG1UQ9rzd2M9j11k9pXT7QLCxUOUaXN7u2iZpULONVKhaKkJ7wDey1E7tNrIjrxEtJycggVQEAkREckKQClSBVEVQRTlwQUqD1EMToEio0ND2UKEeKoR6Cj9667h1E19d5rD7duabmW/ezEiLj1DQQAcDEjACRRiHOsDbAJ8AfAHAor6VSGsf8CsxSjSVTwCG6IU66DciqNIb7wGq9IeLGobod2dAXw7Kw9fd+vUYhugb06D/Kg+LddCvxlClpy9J5FLDPUQvTK7rfzoj4/w9JZ/fXNJQpec+kommPgT9lozwceOg0pVlLb5LWyolbo6JtYHhy+9C7q+RD4CsDcwA/cz90r2yd+rIWSDvlM7B6r55uPUpDFG/EHBggfQKkbGFbQrbNjPCFHbKFrZt20IIYWZSQlhLRL1Gfo6yCWAld3zs5cp4zbCElU2ZImWldxtHi275WCFvVKqGm88X8sYrp4xasWBUKzW3VqqUDa/gVo8WjYRXKBiu57meVyr7llTVLeVTTVyqgdt13KuUd/IejMTDGLK6UKEzOd54sasPlEMVS+wYDnEHtWSMqoy8HuBBVJGYGXySJTG8ogZRpbN/Pr8RYGUwMge0YdQBe/ljPkRhyiQEZDUI9n0QqdPWBthbwN8EPMVfwwyzfZ9gi4+JsXgUcQ5C2JUg9E4au5NbaJCRA+uALO5hz2xyy+C25FaqMFy469jkIP277vn38yaAaTzWmml3gD3Bd6LBHt0UPt2Kk3Ho72V2UdnYKjMlrE616jeCPxK2TPAs8M+hzQX0skYH4D7ekRWVYjCh0tvXD+J+9myb0h5K9lCV0QWQdd1JN/qb9ZDH9fY2y8Md7PFNkezmjBxYn5Gsh4f4QeyOb8HINSppAJ2oD2NPktEgCx2X+U7nmjSkc/DegD2daRPuSPxFfIEdwjCGsGvUHfMK6LA9rZ8mfwq1eAyjcxBGhX77EiNaFz6c3E5VFl1o0ckxQMXMejI/nc2xyTabJ8xOtXMrRn8JSjaLFUY01SexWGlLwkx3nMT5E3dJnD/BDvNhfI7tazMq8nZbNmFTz/r9bVVatrV5u8ipxMgxZLUNNYr+lNXXqRpDPoP3c+zVB9neRrH/1kFXbpIluE2sCSXgS4/zB6hIMBD/h4SlIlAfdbbPTEv5frB31JfLg9Yq0VVjMDlPAv+L1JzmqaOy46uO5en3n4dnnb3rCmdE/ulMg/8RWB1MKnR+21DLD5GAPnBgPwxDDoowDifhJPlvAAzd4vs=).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

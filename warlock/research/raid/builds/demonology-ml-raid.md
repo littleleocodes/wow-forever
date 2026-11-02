@@ -50,14 +50,14 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 749 | +0.0% | 865 | -0.6% | 1 s |
-| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 747 | -0.3% | 870 | +0.0% | 1 s |
-| 3 | *Demo (Shadow Brand)* | community simulator | - | 747 | -0.3% | 870 | +0.0% | 1 s |
-| 4 | *Demo (Fire Brand)* | community simulator | - | 728 | -2.7% | 831 | -4.4% | 1 s |
+| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 728 | +0.0% | 840 | -0.6% | 0 s |
+| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 728 | -0.1% | 845 | +0.0% | 0 s |
+| 3 | *Demo (Shadow Brand)* | community simulator | - | 728 | -0.1% | 845 | +0.0% | 0 s |
+| 4 | *Demo (Fire Brand)* | community simulator | - | 710 | -2.5% | 808 | -4.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -72,7 +72,7 @@ The Demonology build the machine-learning talent search found in a full raid (ev
   8. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 5)
   9. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 5)
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-28, 7 changes to the base rotation; third-seed check: demonology-ml-raid 877 -> 868 DPS (-0.9%), sim preset: Demonic Pact 2/31/18 841 -> 833 DPS (-1.0%), demonology-pact-raid 873 -> 864 DPS (-1.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-11-01, 7 changes to the base rotation; third-seed check: demonology-ml-raid 854 -> 844 DPS (-1.2%), sim preset: Demo (Shadow Brand) 854 -> 844 DPS (-1.2%), demonology-pact-raid 849 -> 839 DPS (-1.3%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
   3. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
@@ -89,17 +89,17 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
-| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
+| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.5 |
 | 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.8 |
 | 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.8 |
-| 10 | cast Shadow Bolt (rank 9) | 13.1 |
+| 10 | cast Shadow Bolt (rank 9) | 13.0 |
 
 Damage by ability:
 
 | Ability | [`demonology-ml-raid`](demonology-ml-raid.md) |
 |---|---|
 | Shadow Bolt | 48% |
-| Bane of Agony | 16% |
+| Bane of Agony | 17% |
 | Corruption | 16% |
 | Immolate | 11% |
 | Pet: Auto Attack | 5% |

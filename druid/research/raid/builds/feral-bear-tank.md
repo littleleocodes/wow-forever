@@ -69,15 +69,15 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 3627 | 370 |
-| 2 | *Hybrid* | community simulator | - | 1.143 | -1.3% | 3749 | 396 |
-| 3 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.006 | -13.1% | 2917 | 390 |
-| 4 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 2881 | 390 |
-| 5 | *Bear* | community simulator | - | 0.984 | -15.0% | 2829 | 395 |
+| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.159 | +0.0% | 3808 | 371 |
+| 2 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.005 | -13.3% | 3051 | 392 |
+| 3 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | -13.7% | 3018 | 391 |
+| 4 | *Bear* | community simulator | - | 0.982 | -15.3% | 2951 | 397 |
+| 5 | *Hybrid* | community simulator | - | 0.957 | -17.4% | 2792 | 396 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -94,7 +94,7 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](feral-bear-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Maul | 142.9 |
+| 2 | cast Maul | 150.7 |
 | 3 | cast Barkskin | 1.0 |
 | 4 | if rage < 20: cast Enrage | 1.0 |
 
@@ -104,7 +104,7 @@ Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Maul | 78% |
+| Maul | 79% |
 | Auto Attack | 18% |
 | Judgement of Light | 2% |
 | OtherActionRageGain | 1% |

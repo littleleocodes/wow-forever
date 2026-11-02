@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Enhancement raid build the open talent search found on 2026-10-26: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over enhancement-ml-raid, the best of our builds in that rotation.
+The Enhancement raid build the open talent search found on 2026-11-02: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over enhancement-ml-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -61,16 +61,16 @@ The Enhancement raid build the open talent search found on 2026-10-26: every leg
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/31/3 | 402 | +0.0% | 734 | +0.0% | 10 s |
-| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 398 | -1.0% | 722 | -1.6% | 5 s |
-| 3 | *Standard* | community simulator | - | 396 | -1.5% | 726 | -1.1% | 13 s |
-| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 386 | -4.0% | 672 | -8.4% | 18 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 386 | -4.1% | 695 | -5.3% | 8 s |
-| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
+| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/31/3 | 394 | +0.0% | 720 | +0.0% | 12 s |
+| 2 | *Standard* | community simulator | - | 394 | +0.0% | 720 | +0.0% | 12 s |
+| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 387 | -1.9% | 704 | -2.2% | 7 s |
+| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 378 | -4.0% | 658 | -8.6% | 20 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 378 | -4.2% | 682 | -5.3% | 11 s |
+| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 365 | -7.4% | 655 | -9.0% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -80,7 +80,7 @@ The Enhancement raid build the open talent search found on 2026-10-26: every leg
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-26, 11 changes to the base rotation; third-seed check: open winner 661 -> 734 DPS (+11.0%), enhancement-ml-raid 647 -> 722 DPS (+11.6%), sim preset: Standard 652 -> 725 DPS (+11.2%), enhancement-raid-dps 615 -> 668 DPS (+8.6%), opt-enhancement-dps-raid-dps 619 -> 671 DPS (+8.3%), elemental-enhancement-ml-raid 345 -> 437 DPS (+26.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-02, 11 changes to the base rotation; third-seed check: enhancement-open-raid 648 -> 720 DPS (+11.1%), sim preset: Standard 634 -> 705 DPS (+11.2%), enhancement-raid-dps 603 -> 656 DPS (+8.7%), opt-enhancement-dps-raid-dps 607 -> 658 DPS (+8.3%), enhancement-ml-raid 629 -> 703 DPS (+11.8%), elemental-enhancement-ml-raid 605 -> 681 DPS (+12.5%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -104,14 +104,14 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock | 2.8 |
-| 8 | cast Earth Shock | 6.9 |
+| 8 | cast Earth Shock | 6.7 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`enhancement-open-raid`](enhancement-open-raid.md) |
 |---|---|
-| Auto Attack | 42% |
+| Auto Attack | 43% |
 | Earth Shock | 16% |
 | Lightning Bolt | 13% |
 | Flame Shock | 12% |
@@ -124,7 +124,7 @@ Damage by ability:
 - Open search result (enhancement-dps, full raid): 17/31/3 (Enhancement) at 733.5 DPS; enhancement-ml-raid 722.4, opt-enhancement-dps-raid-dps 670.8, enhancement-raid-dps 667.7, elemental-enhancement-ml-raid 437.2 in the same fights; 2,330 builds simulated, 1 independent runs reached the top.
 - The enhancement-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): elemental-dps -54.4%, stormcaller-dps -55.0%; none adopted.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
+- Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 

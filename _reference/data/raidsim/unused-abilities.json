@@ -1,5 +1,5 @@
 {
- "date": "2026-10-30",
+ "date": "2026-11-02",
  "rows": [
   {
    "class": "hunter",
@@ -9,7 +9,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0138,
+   "removal_loss": 0.0142,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -22,25 +22,10 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0136,
+   "removal_loss": 0.0139,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
-  },
-  {
-   "class": "hunter",
-   "entry": "mm-raid",
-   "build": "opt-mm-raid-raid-dps",
-   "spec": "Beast Mastery",
-   "talent": "Intimidation",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Bestial Wrath"
-   ],
-   "advice": "taken because Bestial Wrath requires it"
   },
   {
    "class": "hunter",
@@ -50,7 +35,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0125,
+   "removal_loss": 0.0127,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -58,12 +43,12 @@
   {
    "class": "hunter",
    "entry": "mm-raid",
-   "build": "marksmanship-open-raid",
+   "build": "marksmanship-ml-raid",
    "spec": "Marksmanship",
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0142,
+   "removal_loss": 0.0145,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
@@ -78,7 +63,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0171,
+   "removal_loss": 0.0175,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
@@ -93,22 +78,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0169,
-   "kind": "automatic",
-   "needed_by": [
-    "Sniper Shot"
-   ],
-   "advice": "turn it on before the pull"
-  },
-  {
-   "class": "hunter",
-   "entry": "mm-lonewolf-raid",
-   "build": "marksmanship-ml-parse",
-   "spec": "Marksmanship",
-   "talent": "Trueshot Aura",
-   "ranks": 1,
-   "setting": "raid",
-   "removal_loss": 0.0144,
+   "removal_loss": 0.0174,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
@@ -123,9 +93,11 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0171,
+   "removal_loss": 0.0174,
    "kind": "automatic",
-   "needed_by": [],
+   "needed_by": [
+    "Sniper Shot"
+   ],
    "advice": "turn it on before the pull"
   },
   {
@@ -136,38 +108,10 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0131,
+   "removal_loss": 0.0136,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
-  },
-  {
-   "class": "hunter",
-   "entry": "bm-raid",
-   "build": "beast-mastery-ml-raid",
-   "spec": "Beast Mastery",
-   "talent": "Intimidation",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Bestial Wrath"
-   ],
-   "advice": "taken because Bestial Wrath requires it"
-  },
-  {
-   "class": "hunter",
-   "entry": "bm-raid",
-   "build": "beast-marks-ml-raid",
-   "spec": "Hybrid Beast Mastery/Marksmanship",
-   "talent": "Intimidation",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "wasted",
-   "needed_by": [],
-   "advice": "not cast by the rotation"
   },
   {
    "class": "mage",
@@ -198,6 +142,36 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it"
+  },
+  {
+   "class": "paladin",
+   "entry": "ret-dps",
+   "build": "retribution-open-raid",
+   "spec": "Retribution",
+   "talent": "Repentance",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Unsealed Wrath"
+   ],
+   "advice": "taken because Unsealed Wrath requires it"
+  },
+  {
+   "class": "paladin",
+   "entry": "shockadin-raid",
+   "build": "shockadin-open-raid",
+   "spec": "Hybrid Holy/Retribution",
+   "talent": "Seal of Command",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Vengeance"
+   ],
+   "advice": "taken because Vengeance requires it"
   },
   {
    "class": "priest",
@@ -261,7 +235,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.115,
+   "removal_loss": 0.1151,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -287,7 +261,20 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1149,
+   "removal_loss": 0.115,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "shadow-bolt-hybrid-fire-open-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1151,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -300,7 +287,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.116,
+   "removal_loss": 0.1159,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -313,7 +300,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1158,
+   "removal_loss": 0.1157,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -326,7 +313,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1028,
+   "removal_loss": 0.1037,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -427,7 +414,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0986,
+   "removal_loss": 0.1,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"

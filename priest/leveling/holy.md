@@ -6,24 +6,24 @@
 
 > 🔬 These are your **raid talents** ([Holy — Raid Healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 56 s per kill; stats model's order: 57 s per kill; own tree first: 60 s per kill). A model of the beta, to check at launch.
 
-**Signature spells:** 41% of the damage at level 60 in the fight lab comes from Smite, Holy Fire (the spec's rule: at least 40%; **Smite**, **Holy Fire** cast in every fight).
-
-**Leveling as Holy or as Shadow?** This build takes 56 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 24 s: Holy is about 2.3 times as slow. The fastest order puts its first point into Holy at level 32: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+> **Signature spells: this build fails the check** in the fight lab (Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%). Holy is defined by **Smite**, **Holy Fire** cast in every fight and Smite, Holy Fire carrying 40% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before every pull: while it holds, damage does not push your casts back. **Inner Focus** when it is ready, as the pull starts: your first spell (from level 20 the opening **Holy Fire**) is free and 25% more likely to crit.
+**Not in this build:** **Early Demise**, **Mind Flay**, **Shadowform**, **Vampiric Embrace** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free).
 
 **In the fight**, top to bottom:
 
-1. Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).
-2. **Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.
-3. **Penance** whenever it is ready; **Mind Blast** whenever it is ready while you have more than 30% mana (also to finish a mob one cast will kill).
-4. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.
-5. Skip Devouring Plague: the tuned rules never cast it.
-6. Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
+1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
+2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
+3. **Shadow Word: Death** when one cast will kill the mob, and below 20% health once you have **Early Demise**.
+4. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
+5. Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).
+6. Below a third of your health outside **Shadowform**: **Flash Heal**.
 
-**Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%.
+**Between fights:** Drink only below 15% mana, eat below two thirds of your health (**Renew** yourself instead outside **Shadowform**).
 
 ## Why this rotation
 
@@ -40,7 +40,7 @@ You level with your raid talents, Discipline first: the first Holy point comes a
 
 **Caveats**
 
-- Most of your Holy points are for healing (**Spiritual Healing**, **Improved Renew**, **Inspiration**, **Litany of Light**, **Binding Heal**), so this is a slow way to level: 56 seconds per kill in the fight lab (level-weighted), against 24 for Shadow; kills slow from 51 seconds at 30 to 63 at 40.
+- Most of your Holy points are for healing (**Spiritual Healing**, **Improved Renew**, **Inspiration**, **Litany of Light**, **Holy Binding**), so this is a slow way to level: 56 seconds per kill in the fight lab (level-weighted), against 24 for Shadow; kills slow from 51 seconds at 30 to 63 at 40.
 - The tuned rules (2026-10-23) never cast Devouring Plague and hold **Mind Blast** below 30% mana: the gate keeps **Smite** and **Holy Fire** your main damage (the spec's rule) and cost about 2% speed in the tuning run.
 - **Holy Nova** (level 42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.
 - After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule).
@@ -73,21 +73,11 @@ One point per level from 10, in this order:
 | 44 | Divine Fury (Holy) | 1 |
 | 45-47 | Inspiration (Holy) | 3 |
 | 48-50 | Improved Healing (Holy) | 3 |
-| 51 | Binding Heal (Holy) | 1 |
+| 51 | Holy Binding (Holy) | 1 |
 | 52-53 | Litany of Light (Holy) | 2 |
 | 54-57 | Spiritual Guidance (Holy) | 4 |
 | 58-60 | Spiritual Healing (Holy) | 3 |
 
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 44 |
-| 30 | 51 |
-| 40 | 63 |
-| 50 | 58 |
-| 60 | 56 |
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

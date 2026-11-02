@@ -2551,5 +2551,162 @@
   "best_hand": "frostfire-raid",
   "gain_vs_hand": 0.0077,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frostfire-raid",
+    "dps": 842.06,
+    "se": 0.198
+   },
+   "frostfire-fingers-of-frost-raid": {
+    "entry": "frostfire-raid",
+    "dps": 832.21,
+    "se": 0.202
+   },
+   "frostfire-raid": {
+    "entry": "frostfire-raid",
+    "dps": 760.78,
+    "se": 0.167
+   },
+   "frostfire-ml-raid": {
+    "entry": "frostfire-raid",
+    "dps": 839.85,
+    "se": 0.197
+   }
+  },
+  "best_hand": "frostfire-fingers-of-frost-raid",
+  "gain_vs_hand": 0.0118
+ },
+ "signature_check": {
+  "spec": "Hybrid Fire/Frost",
+  "ok": true,
+  "core_share": 0.3967,
+  "min_share": 0.3,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "frostfire-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 841.8,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Frostfire Bolt": 0.3967,
+   "Pyroblast": 0.2282,
+   "Fire Blast": 0.1575,
+   "Ignite": 0.1462,
+   "Scorch": 0.0663,
+   "Demonic Rune": 0.005
+  },
+  "casts": {
+   "Scorch": 14.33,
+   "Pyroblast": 13.07,
+   "Fire Blast": 20.91,
+   "Evocation": 1.0,
+   "Frostfire Bolt": 40.02
+  },
+  "allocation": {
+   "Arcane": [],
+   "Fire": [
+    [
+     "Incineration",
+     4
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     2
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     1
+    ],
+    [
+     "Ice Block",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms frostfire-ml-raid (+0.26% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

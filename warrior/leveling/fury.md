@@ -2,30 +2,28 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > Fury
 
-**✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
+**[Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-05053035052011521--7)
 
-**[Fury — Leveling](../research/leveling/builds/fury-open-leveling.md)** (16/35/0) — [open the talent tree](https://talentsforever.com/warrior/60/32320203001-05053025052010511--7)
-
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
-
-**Signature spells:** 84% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
+**Signature spells:** 85% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
 
 ## How to play
 
-**Before the fight:** **Battle Stance**, a weapon in each hand.
+**Not in this build:** **Bloodthrill**, **Improved Slam**, **Mortal Strike**, **Spearing Strike**, **Sweeping Strikes** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
+**Before the fight:** **Battle Stance**, a two-handed weapon.
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage** (above 45% health) and **Death Wish** when it is ready, then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
+1. **Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
 2. **Battle Shout**: keep it up (it lasts 3 minutes).
 3. **Execute** first once the mob is below 20% health.
-4. **Overpower** whenever it lights up (after a dodge).
-5. **Bloodthirst** whenever ready.
+4. **Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.
+5. **Mortal Strike** whenever ready.
 6. **Rend** once, while the mob has more than a third of its health.
-7. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
-8. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
+7. Spare rage: **Slam** (only with **Improved Slam**), then **Spearing Strike**, then **Heroic Strike**; keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
+8. Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
 
-**Between fights:** Bandage below 60% health, eat below 40%.
+**Between fights:** Bandage below 60% health, eat below 50%.
 
 ## Why this rotation
 
@@ -69,33 +67,23 @@ One point per level from 10, in this order:
 | 33-37 | Dual Wield Specialization (Fury) | 5 |
 | 38-39 | Flurry (Fury) | 2 |
 | 40 | Bloodthirst (Fury) | 1 |
-| 41 | Gore Drinker (Fury) | 1 |
-| 42-43 | Flurry (Fury) | 2 |
-| 44-45 | Deflection (Arms) | 2 |
-| 46 | Flurry (Fury) | 1 |
-| 47-49 | Improved Rend (Arms) | 3 |
-| 50-51 | Improved Charge (Arms) | 2 |
-| 52-54 | Improved Heroic Strike (Arms) | 3 |
-| 55-57 | Deep Wounds (Arms) | 3 |
-| 58-59 | Improved Overpower (Arms) | 2 |
-| 60 | Impale (Arms) | 1 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 21 |
-| 30 | 23 |
-| 40 | 25 |
-| 50 | 26 |
-| 60 | 28 |
+| 41-42 | Gore Drinker (Fury) | 2 |
+| 43-45 | Flurry (Fury) | 3 |
+| 46-50 | Deflection (Arms) | 5 |
+| 51 | Blood Craze (Fury) | 1 |
+| 52 | Improved Charge (Arms) | 1 |
+| 53 | Improved Rend (Arms) | 1 |
+| 54 | Improved Charge (Arms) | 1 |
+| 55-56 | Improved Rend (Arms) | 2 |
+| 57-59 | Deep Wounds (Arms) | 3 |
+| 60 | Improved Intercept (Fury) | 1 |
 
 ## Other builds of this spec
 
-- [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-05053035052011521--7)
-- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/0502501-05053035152010521--7)
-- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-15050130052012501--7)
+- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/0502501-05053035152010521--7)
+- [Fury — Leveling](../research/leveling/builds/fury-open-leveling.md) (16/35/0) — [open the talent tree](https://talentsforever.com/warrior/60/32320203001-05053025052010511--7)
+- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-15050130052012501--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

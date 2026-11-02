@@ -62,7 +62,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-23, on top of the priority below): never cast Consecration; drink below 15% mana. Together +6.1% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Consecration; never cast Hammer of Wrath; drink below 15% mana. Together +11.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 

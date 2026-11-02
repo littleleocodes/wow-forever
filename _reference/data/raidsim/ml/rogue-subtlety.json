@@ -2667,5 +2667,164 @@
   "best_hand": "subtlety-hemo-raid",
   "gain_vs_hand": 0.0029,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "subtlety-raid",
+    "dps": 683.01,
+    "se": 0.099
+   },
+   "subtlety-hemo-raid": {
+    "entry": "subtlety-raid",
+    "dps": 679.64,
+    "se": 0.099
+   }
+  },
+  "best_hand": "subtlety-hemo-raid",
+  "gain_vs_hand": 0.005
+ },
+ "signature_check": {
+  "spec": "Subtlety",
+  "ok": true,
+  "core_share": 0.7647,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "subtlety-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 683.3,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.5062,
+   "Hemorrhage": 0.234,
+   "Rupture": 0.1337,
+   "Instant Poison VI": 0.0373,
+   "Deadly Poison V": 0.0372,
+   "Eviscerate": 0.0245,
+   "Garrote": 0.0174,
+   "Goblin Sapper Charge": 0.0097
+  },
+  "casts": {
+   "Garrote": 1.75,
+   "Rupture": 13.79,
+   "Slice and Dice": 9.32,
+   "Eviscerate": 1.89,
+   "Hemorrhage": 55.67,
+   "Preparation": 0.98,
+   "spell 11337": 42.56,
+   "Premeditation": 2.93,
+   "spell 25349": 23.9,
+   "Cold Blood": 1.99,
+   "Vanish": 1.75
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     4
+    ]
+   ],
+   "Combat": [],
+   "Subtlety": [
+    [
+     "Camouflage",
+     4
+    ],
+    [
+     "Master of Deception",
+     3
+    ],
+    [
+     "Opportunity",
+     2
+    ],
+    [
+     "Improved Ambush",
+     3
+    ],
+    [
+     "Initiative",
+     3
+    ],
+    [
+     "Ghostly Strike",
+     1
+    ],
+    [
+     "Improved Distract",
+     1
+    ],
+    [
+     "Premeditation",
+     1
+    ],
+    [
+     "Serrated Blades",
+     3
+    ],
+    [
+     "Dirty Deeds",
+     2
+    ],
+    [
+     "Preparation",
+     1
+    ],
+    [
+     "Hemorrhage",
+     1
+    ],
+    [
+     "Quietus",
+     5
+    ],
+    [
+     "Thousand Cuts",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms subtlety-hemo-raid (+0.50% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

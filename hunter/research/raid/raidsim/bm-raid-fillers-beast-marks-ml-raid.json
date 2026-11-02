@@ -3,46 +3,37 @@
  "spec": "bm-raid",
  "build": "beast-marks-ml-raid",
  "setting": "raid",
- "date": "2026-10-29",
+ "date": "2026-11-02",
  "tank": false,
  "removal": {
-  "Bestial Discipline": 0.030271782101919276,
+  "Bestial Discipline": 0.029023650659885103,
   "Bestial Swiftness": -0.0,
-  "Careful Aim": 0.056805001508854924,
-  "Deadly Aspects": 0.030957537898115395,
+  "Careful Aim": 0.0535282468920415,
+  "Deadly Aspects": 0.041843621810720766,
   "Endurance Training": -0.0,
-  "Ferocity": 0.032038445163078855,
-  "Focused Fire": 0.019272404169917712,
-  "Frenzy": 0.04409503381684898,
-  "Improved Arcane Shot": 0.03688667868371365,
-  "Improved Mend Pet": -0.0,
-  "Improved Tracking": 0.020991367887863266,
-  "Lethal Attacks": 0.051537397996925804,
-  "Mortal Shots": 0.03944319471192892,
+  "Ferocity": 0.030658915011414933,
+  "Focused Fire": 0.019272186275108405,
+  "Frenzy": 0.04332280660710919,
+  "Improved Arcane Shot": 0.023732952373371585,
+  "Improved Stings": 0.019847273205692573,
+  "Improved Tracking": 0.01418573357139552,
+  "Intimidation": -0.0,
+  "Lethal Attacks": 0.05181372343982593,
+  "Mortal Shots": 0.03961071170337238,
   "Summon Hawk": -0.0,
-  "Unleashed Fury": 0.034198562849911296
+  "Unleashed Fury": 0.033835967985580195
  },
  "free": [
   "Bestial Swiftness",
-  "Endurance Training",
-  "Improved Mend Pet"
+  "Endurance Training"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [
+  "Intimidation",
   "Summon Hawk"
  ],
  "abilities_never_cast": [],
- "moves": [
-  {
-   "round": 1,
-   "kind": "utility",
-   "from": "Improved Mend Pet",
-   "to": "Intimidation",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "threat"
-  }
- ],
+ "moves": [],
  "final_seed3": 0.0,
  "start": {
   "Beast Mastery": [
@@ -67,15 +58,15 @@
     5
    ],
    [
-    "Improved Mend Pet",
-    1
-   ],
-   [
     "Ferocity",
     5
    ],
    [
     "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
     1
    ],
    [
@@ -93,12 +84,16 @@
     5
    ],
    [
+    "Improved Stings",
+    3
+   ],
+   [
     "Careful Aim",
     5
    ],
    [
     "Improved Arcane Shot",
-    5
+    3
    ],
    [
     "Mortal Shots",
@@ -108,7 +103,7 @@
   "Survival": [
    [
     "Improved Tracking",
-    3
+    2
    ]
   ]
  },
@@ -143,16 +138,16 @@
     1
    ],
    [
+    "Intimidation",
+    1
+   ],
+   [
     "Bestial Discipline",
     2
    ],
    [
     "Frenzy",
     3
-   ],
-   [
-    "Intimidation",
-    1
    ]
   ],
   "Marksmanship": [
@@ -161,12 +156,16 @@
     5
    ],
    [
+    "Improved Stings",
+    3
+   ],
+   [
     "Careful Aim",
     5
    ],
    [
     "Improved Arcane Shot",
-    5
+    3
    ],
    [
     "Mortal Shots",
@@ -176,7 +175,7 @@
   "Survival": [
    [
     "Improved Tracking",
-    3
+    2
    ]
   ]
  }

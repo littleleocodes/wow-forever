@@ -1,51 +1,56 @@
-# Holy — Raid healing (machine-learning search) — 30/16/5
+# Holy — Raid healing (machine-learning search) — 32/5/14
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 30/16/5 (Holy / Protection / Retribution) |
+| **Build** | 32/5/14 (Holy / Protection / Retribution) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Holy build the machine-learning talent search found in the healer lab on 2026-10-21 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.
+The Holy build the machine-learning talent search found in the healer lab on 2026-11-01 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.
 
 ## Point allocation
 
-### Holy (30)
+### Holy (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Divine Strength** | 5/5 | unchanged | Increases your Strength by 10%. |
 | **Spiritual Focus** | 5/5 | changed | Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage. |
+| **Divine Strength** | 5/5 | unchanged | Increases your Strength by 10%. |
 | **Healing Light** | 3/3 | changed | Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%. |
-| **Purifying Power** | 2/2 | **NEW** | Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by 33%. |
 | **Reverence** | 2/2 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
 | **Divine Favor** | 1/1 | moved | When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance. |
 | **Illumination** | 5/5 | changed | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell. |
-| **Infusion of Light** | 2/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec. |
-| **Holy Power** | 5/5 | changed | Increases the critical strike healing bonus of your Holy spells by 50%. |
+| **Holy Conduit** | 1/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 20%. |
+| **Infusion of Light** | 1/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec. |
+| **Oath of Light** | 1/1 | **NEW** | Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229. Only one Oath of Light may be sworn by the Paladin at any one time. |
+| **Consecrated Ground** | 1/2 | **NEW** | Gives your Holy spells 5% increased damage against the first 4 enemies that enter your Consecration. |
+| **Holy Shock** | 1/1 | changed | Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally. |
+| **Boundless Light** | 1/2 | **NEW** | Increases the critical strike chance of your Holy Shock spell by 15% when cast on allies not affected by your Oath of Light. |
+| **Holy Power** | 4/5 | changed | Increases the critical strike healing bonus of your Holy spells by 40%. |
+| **Light's Vigil** | 1/1 | **NEW** | Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 343. Only one Vigil per Paladin may be active in each party. |
 
-### Protection (16)
+### Protection (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
-| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. |
-| **Guardian's Favor** | 2/2 | changed | Reduces the cooldown of your Blessing of Protection by 2 min and increases the duration of your Blessing of Freedom by 6 sec. |
-| **Sacred Duty** | 1/2 | **NEW** | Reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 30 sec, and reduces the duration of Forbearance by 5 sec. |
-| **Templar's Bulwark** | 1/1 | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. |
-| **Toughness** | 1/5 | moved | Increases your armor value from items by 2%. |
-| **Improved Righteous Fury** | 1/3 | changed | While Righteous Fury is active, all damage taken is reduced by 3%. |
 
-### Retribution (5)
+### Retribution (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Deflection** | 2/5 | moved | Increases your Parry chance by 2%. |
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
+| **Improved Judgement** | 1/2 | changed | Decreases the cooldown of your Judgement ability by 1 sec. |
+| **Conviction** | 3/3 | changed | Improves your chance to get a critical strike with all spells and attacks by 6%. |
+| **Sanctified Judgement** | 1/3 | **NEW** | Gives your Judgement ability a 33% chance to return 20% of the Mana cost of the judged seal. |
+| **Unyielding Faith** | 1/2 | changed | Reduces the duration of Fear and Disorient effects on you by 15%. |
+| **Pursuit of Justice** | 1/2 | changed | Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects. |
 
 ## Rotation
 
@@ -53,11 +58,10 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 ## Notes
 
-- +2.0% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).
-- Final race over 400 fresh seeds: capacity 0.586 ± 0.001; holy-raid-healer 0.574, opt-holy-heal-raid-heal 0.574.
-- Independent runs agreeing in the last cycle: 2/2; two-move check: 616 one-move and 9,521 two-move builds, none better.
+- +24.7% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).
+- Final race over 400 fresh seeds: capacity 0.629 ± 0.002; holy-raid-healer 0.505, opt-holy-heal-raid-heal 0.495.
+- Independent runs agreeing in the last cycle: 2/2; two-move check: 595 one-move and 7,633 two-move builds, none better.
 - The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement.
-- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 33/12/6 -> 30/16/5; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Reverence 3 -> 2 (rank cap); Holy Conduit 1 gone (moved to Holy); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Toughness); +1 Divine Intellect (tier gating for Anticipation); +1 Divine Intellect (tier gating for Anticipation); +1 Guardian's Favor (tier gating for Anticipation); +1 Templar's Bulwark (tier gating for Anticipation); +1 Infusion of Light (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); +1 Spiritual Focus (tier gating for Holy Power); -1 Anticipation (over 51); -1 Anticipation (over 51); -1 Anticipation (over 51) (refill: the holy-heal model, raid-heal).
 
 ## Open questions (verify in the live game)
 

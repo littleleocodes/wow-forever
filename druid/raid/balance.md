@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Balance
 
-**[Balance — Moonkin / Nature's Grace](../research/raid/builds/balance-moonkin-raid.md)** (33/5/13) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-7)
+**[Balance — Moonkin / Nature's Grace](../research/raid/builds/balance-moonkin-raid.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051--5553-7)
 
 ## How to play
 
@@ -15,10 +15,6 @@
 3. **Starfire**
 
 **Starfire** is your filler: cast it whenever nothing above is ready.
-
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Innervate**: when you run out of mana (needed in about 1 of 10 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -55,38 +51,38 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 624 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 647 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 608 | this build |
-| Phase 1 BiS | 631 | this build |
+| Pre-BiS | 642 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) |
+| Phase 1 BiS | 666 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) (ties this build) |
 
-**The gear** (average item level: Pre-BiS 63.2; Phase 1 BiS 65.0; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 63.4; Phase 1 BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Field Marshal's Dragonhide Helmet](https://www.wowhead.com/forever/item=16451)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
-| Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) |
+| Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
 | Chest | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Gloves of Earthen Power](https://www.wowhead.com/forever/item=21178) | [Gloves of Earthen Power](https://www.wowhead.com/forever/item=21178) |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
 | Legs | [Ironfeather Leggings](https://www.wowhead.com/forever/item=252486) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Ironfeather Leggings](https://www.wowhead.com/forever/item=252486) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Feet | [Earthen Silk Slippers](https://www.wowhead.com/forever/item=254013) · *Tailoring*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Finger | [Brilliant Watcher's Signet](https://www.wowhead.com/forever/item=275982) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
+| Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| Main hand | [Ironbark Staff](https://www.wowhead.com/forever/item=20069)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Ironbark Staff](https://www.wowhead.com/forever/item=20069)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Main hand | [High Warlord's War Staff](https://www.wowhead.com/forever/item=18874)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Ironbark Staff](https://www.wowhead.com/forever/item=20069)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Ranged/relic | [Swarming Idol](https://www.wowhead.com/forever/item=272430) | [Swarming Idol](https://www.wowhead.com/forever/item=272430) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEkrFrFEEUxvd7O7l9vgvJZhNxMyokB0o4OJndYyHa3OYqC4tgZRlShJwgBBIkZYQUInghIEjOFCIegqhYqIQ0gYhyNnJYWGizJByKivgXiMyqxH8g+BUfb74f82YePBll+AgxhgnMYB4LWAGuA3eBoD9HZNEkdEbs+UW9JB6vPx8Me0VRvHcbovjLLet3ur54vNNGuD8gHu+2EX4cEMXbbUt7axCPXz/LL3r89BHCNU8Uf8hp85svil90ra/v2D69TYSdYXFE8ZOuXxr3O42Jt01M37yHG6DVRgv0aeoh+h5sotnIsNqo9x8MkmKbtEmqcRybKEoSE5kkqpikkpjEmGqH0KXiHl2VEeHLBVHc2kWJpSCqEpnFYEQHdV9c/nrBh/akT1xzZTE4qofrQ/Z/L/FvrDSdc4KT+rgMlQdZBTTr/IZVc0rb3t/3EYjmvH73CqH7mTr4QfE118l1Jp0taCUkTuknHbGJszKXjrY2rN7Uxudyva/FGYVqrFbeIue/aCn9Wx2qTj8+tHfO5n7xfjr1J0hn7KpvID84Wa3s8tax+omDRTKYRIrzmMYlzGMBy1imXwMAP4Jo8Q==); Phase 1 BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEkj9rFFEUxefcedm53g3JZBJx8lRIFpSwsPJmloFos5OtLCyClWVIEbKCEEiQlBG2EMGE+KfImkLERRAVC5WQRogoK4IsFhbaLIZFURA/QZB5KvELLDnF4b7ze+8+LlwZZfgIMYYJzGAeC1gBrgJ3gaDfIsrQJHSH2PPzekk8Xn8+GHbzonjvBkTx91uZ32n74vHLJsLdAfF4p4nw84Ao3m5mtLsG8fjNM/vQ46ePEK55ovjd7Yx+snfqNzN/Yft0NxG2hsURxU/afmHcb9Um3q9i+vo9XAPVaw3Q16mH6HuwidVaB/VatX9/kBTbpE1SjuPYRFGSmMgkUckkpcQkxpRbhDblv9BlGRG+mBPFjR0UWHKiSpFZDEZ0UPXF5R/nfGhP+sQ1lxaDw3q4OiSK11/h/1hpOuMEx/VRGSoOsgpo1vkDy+aEznr/3EUgmm394TVC9xu18IviK65jdSqdzWklJE5hjw5libMyl442NjK9rYzPWX2sxB0K1ViluEXOgWgp/Vf1VCcf9+yf09bP30+n/gbpTLbqG7AHp1Mpurx1pHpsf5EMJpHiLKZxAfNYwDKW6fcAVelolw==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEk0FLFV8Yxuc5c3TO//WPjqPROLU4CoUJIzNzmTA3d7yrFi2kVbuc6x27V+zeizML2ym4iCAtCkJpEZEEQa0iRAhFKW4bkRYtcnNRpKiIPkHEjEl9AelZvLzn+b2H85zFSz0COkxI9GMMZdQxC9wEHgHG/xliKRqCtaEKTW+zEtLE1izMgzbiYu8BiIsv99O6fQekifUVmPvtpInNFZi77cTF2kpKDxZT+vZlR3pRE683OsxFjbj4mNGFbzpx8WonrXfXddLE2j2YjS5SiIsXO3pfr96o9G8vYPT2Y9wCm68sg30aeYaWpw+xUGlivlIQWVoEWGOm4+c8z8u5ru87ruO7tu34fs7xGgw7rG2P7YK6SUy2EhfLm+gT1Ercdp3Y6LaMgk6q+HpJh6VRC6nO9dg4YXUVOtNoW/jb5hYbVow5GMWwPnW1Vk+k53jnbdexc+6wHC+H1WtRSdamZVgqRSVZvCGTciSna0mYVGpVGUfh9HhZ9sdRJIvhVFgdj+xSPbaPBuzDgcHJuFY9Z52izoEOwQ1WVA4TuM4ZK/3A930YZImsf/8GpvqZNfCDeXOqkmkwKLZanBgpfT/Zf6mjzE4EPctLqd7leycyfch7TWZymR9YZco/URIcdceqs8+P7Z0LWb38JBj5bQRj6SotITsozfyAKlZPFk7/2TgHQwhwEaO4gjLqmMEM+zUAB2CLDg==); Phase 1 BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEk89LFV8Yxuc5c3TO9/WLjqPROLU4CoUJIzNzmTA3d7yrFi2kVbuc6x27V+zeizML2ym4iCDNfiwUFxFJEBUtKsRNYRQ3ApEWbdxIIkVB9BdIzJjVPyB9Fg/veZ73cN6zeKlLQIcJiV6MoIw6poGrwF3A+D+LWBoNwHqlCk1vsRLSxMLzNnO3hbjYuwni4uvtVDdugDTxcgXmTitpYn0F5lYrcbG2kqa782n69ll2URNPH8Gc14iL93fwW2dvpfpiUydN7C7DbHSQQlw82dR7uvVGpXdjDsPX7+Ea2GxlCezz0EM0PVjGXGUbs5WCyKZFgDVmOn7O87yc6/q+4zq+a9uO7+ccr8GwyVo+sS1QJ4nxZuJiaR09gpqJ264TG52WUdBJFd/O6bA0aiLVuRwbR6yOQjtxsfAaf9vcYoOKMQOjGNYnLtbqifQc77TtOnbOHZSj5bB6KSrJ2qQMS6WoJItXZFKO5GQtCZNKrSrjKJwcLcveOIpkMZwIq6ORXarH9kGDvd/QPx7XqqesY9Te1ya4wYrK/gSuc8JKP/B9BwZZIqs/vIGpfmEN/GDejKpk9AfFZosTI6Vnj/2XOsr0WNC1tJjyLt89lvEx720zk8t83ypT/glJcFAdKicfH9o7ZzI9fz8Y+mUEI+kqLSI7KNv5PlWsHi0c/7NxDgYQ4CyGcQFl1DGFKfZzAN9qiqs=).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

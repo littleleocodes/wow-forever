@@ -8,30 +8,30 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 - **Levels 10-60: bm-leveling -> level-40 build (0/31/0)**
   - at level 10: **Marksmanship**: Lethal Attacks 1
-  - at level 60: **Marksmanship**: Lethal Attacks 5, Efficiency 5, Improved Stings 3, Careful Aim 4, Trueshot Aura 1, Rapid Killing 2, Rapid Recuperation 2, Scatter Shot 1, Barrage 2, Ranged Weapon Specialization 5, Sniper Shot 1; **Beast Mastery**: Deadly Aspects 5, Focused Fire 2, Pathfinding 2, Endurance Training 1, Unleashed Fury 5, Ferocity 5
-  - order: 10-14 Lethal Attacks x5, 15-19 Efficiency x5, 20-22 Improved Stings x3, 23-24 Careful Aim x2, 25 Trueshot Aura, 26-27 Careful Aim x2, 28-29 Rapid Killing x2, 30-31 Rapid Recuperation x2, 32 Scatter Shot, 33-34 Barrage x2, 35-39 Ranged Weapon Specialization x5, 40 Sniper Shot, 41-45 Deadly Aspects x5, 46-47 Focused Fire x2, 48-49 Pathfinding x2, 50 Endurance Training, 51-55 Unleashed Fury x5, 56-60 Ferocity x5
+  - at level 60: **Marksmanship**: Lethal Attacks 5, Efficiency 5, Improved Stings 3, Careful Aim 4, Trueshot Aura 1, Rapid Killing 2, Rapid Recuperation 2, Scatter Shot 1, Barrage 2, Ranged Weapon Specialization 5, Sniper Shot 1; **Beast Mastery**: Deadly Aspects 5, Focused Fire 2, Endurance Training 3, Unleashed Fury 5, Ferocity 5
+  - order: 10-14 Lethal Attacks x5, 15-19 Efficiency x5, 20-22 Improved Stings x3, 23-24 Careful Aim x2, 25 Trueshot Aura, 26-27 Careful Aim x2, 28-29 Rapid Killing x2, 30-31 Rapid Recuperation x2, 32 Scatter Shot, 33-34 Barrage x2, 35-39 Ranged Weapon Specialization x5, 40 Sniper Shot, 41-45 Deadly Aspects x5, 46-47 Focused Fire x2, 48-50 Endurance Training x3, 51-55 Unleashed Fury x5, 56-60 Ferocity x5
 
-Total: **46.5 h** (48.4% faster than talentless), no respec.
+Total: **46.6 h** (48.2% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| bm-leveling -> level-40 build (0/31/0) | 46.5 | +0.0 h |
-| bm-leveling -> level-60 build (20/31/0) | 46.5 | +0.0 h |
-| bm-leveling -> level-50 build (9/32/0) | 46.5 | +0.1 h |
-| bm-leveling -> level-20 build (1/10/0) | 46.6 | +0.1 h |
-| bm-leveling -> level-30 build (5/16/0) | 46.8 | +0.3 h |
+| bm-leveling -> level-40 build (0/31/0) | 46.6 | +0.0 h |
+| bm-leveling -> level-60 build (20/31/0) | 46.6 | +0.0 h |
+| bm-leveling -> level-20 build (1/10/0) | 46.7 | +0.1 h |
+| bm-leveling -> level-50 build (7/32/2) | 46.7 | +0.1 h |
+| bm-leveling -> level-30 build (5/16/0) | 47.0 | +0.4 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| bm-leveling -> level-20 build (1/10/0) | +0.8% | +2.0% | +6.6% | +8.8% | +10.9% | +13.5% | +16.2% | +20.9% | +22.5% | +25.2% | +27.0% |
-| bm-leveling -> level-30 build (5/16/0) | +0.8% | +3.2% | +5.0% | +8.8% | +11.7% | +13.1% | +15.7% | +20.9% | +22.5% | +25.2% | +27.0% |
-| bm-leveling -> level-40 build (0/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +21.0% | +22.3% | +25.6% | +27.3% |
-| bm-leveling -> level-50 build (9/32/0) | +0.3% | +2.4% | +6.5% | +9.5% | +10.6% | +13.6% | +19.0% | +20.9% | +22.5% | +25.2% | +27.2% |
-| bm-leveling -> level-60 build (20/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +20.9% | +22.3% | +25.6% | +27.3% |
+| bm-leveling -> level-20 build (1/10/0) | +0.8% | +2.0% | +6.6% | +8.8% | +10.9% | +13.5% | +16.2% | +20.9% | +22.2% | +24.3% | +26.5% |
+| bm-leveling -> level-30 build (5/16/0) | +0.8% | +3.2% | +5.0% | +8.8% | +11.7% | +13.1% | +15.7% | +20.9% | +22.2% | +24.3% | +26.5% |
+| bm-leveling -> level-40 build (0/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +21.0% | +21.8% | +25.1% | +26.7% |
+| bm-leveling -> level-50 build (7/32/2) | +0.3% | +2.4% | +6.5% | +9.5% | +10.6% | +13.6% | +19.0% | +20.9% | +22.4% | +23.8% | +26.4% |
+| bm-leveling -> level-60 build (20/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +20.9% | +21.8% | +25.1% | +26.7% |
 
 ## Reading it
 

@@ -83,9 +83,6 @@
 **Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
 - [ ] An open-search Balance leveling build: check it while leveling at launch.
 
-**Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
-- [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
-
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -104,11 +101,14 @@
 **Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Feral Combat — Raid tank (machine-learning search)** (`druid/research/raid/builds/feral-combat-ml-tank.md`)
+- [ ] A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+
 **Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
 - [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
 
-**Feral Combat — Raid tank (machine-learning search)** (`druid/research/raid/builds/feral-combat-ml-tank.md`)
-- [ ] A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+**Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
+- [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
 
 ### Hunter
 
@@ -174,12 +174,6 @@
 **Survival — Raid (derived)** (`hunter/research/raid/builds/survival-raid.md`)
 - [ ] A derived Survival raid build: check it against the community's Survival builds at launch.
 
-**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
-
-**Marksmanship — Full raid (parse) (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-parse.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
-
 **Survival — Full raid (parse) (machine-learning search)** (`hunter/research/raid/builds/survival-ml-parse.md`)
 - [ ] A machine-searched Survival build: check it against the community's Survival builds at launch.
 
@@ -231,11 +225,11 @@
 **Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
 - [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
 
-**Marksmanship — Raid (open talent search)** (`hunter/research/raid/builds/marksmanship-open-raid.md`)
-- [ ] An open-search Marksmanship build: check it against the community's Marksmanship builds at launch.
-
 **Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
 - [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
+**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
+- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
 ### Mage
 
@@ -329,6 +323,12 @@
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
+- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
+
+**Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
+- [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
+
 **Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
 - [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
 
@@ -337,12 +337,6 @@
 
 **Arcane — Raid (open talent search)** (`mage/research/raid/builds/arcane-open-raid.md`)
 - [ ] An open-search Arcane build: check it against the community's Arcane builds at launch.
-
-**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
-- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
-
-**Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
-- [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
 
 ### Paladin
 
@@ -397,18 +391,6 @@
 **Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-aoe)** (`paladin/research/leveling/builds/opt-ret-dps-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
-- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
-
-**Protection — Leveling (open talent search)** (`paladin/research/leveling/builds/protection-open-leveling.md`)
-- [ ] An open-search Protection leveling build: check it while leveling at launch.
-
-**Retribution — Leveling (open talent search)** (`paladin/research/leveling/builds/retribution-open-leveling.md`)
-- [ ] An open-search Retribution leveling build: check it while leveling at launch.
-
-**Holy — Leveling (open talent search)** (`paladin/research/leveling/builds/holy-open-leveling.md`)
-- [ ] An open-search Holy leveling build: check it while leveling at launch.
-
 **Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
 - [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -424,11 +406,23 @@
 **Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Protection — Raid tank (machine-learning search)** (`paladin/research/raid/builds/protection-ml-tank.md`)
-- [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+**Retribution — Raid (open talent search)** (`paladin/research/raid/builds/retribution-open-raid.md`)
+- [ ] An open-search Retribution build: check it against the community's Retribution builds at launch.
 
 **Shockadin — Raid (open talent search)** (`paladin/research/raid/builds/shockadin-open-raid.md`)
 - [ ] An open-search Shockadin build: check it against the community's Shockadin builds at launch.
+
+**Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
+- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
+
+**Protection — Raid tank (machine-learning search)** (`paladin/research/raid/builds/protection-ml-tank.md`)
+- [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+
+**Holy/Protection hybrid — Leveling (open talent search)** (`paladin/research/leveling/builds/hybrid-holy-protection-open-leveling.md`)
+- [ ] An open-search Holy/Protection hybrid leveling build: check it while leveling at launch.
+
+**Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
+- [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
 
 ### Priest
 
@@ -568,9 +562,6 @@
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
-- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
-
 **Combat — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-open-leveling.md`)
 - [ ] An open-search Combat leveling build: check it while leveling at launch.
 
@@ -588,6 +579,12 @@
 
 **Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
 - [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
+
+**Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
+- [ ] An open-search Combat build: check it against the community's Combat builds at launch.
+
+**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
+- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
 
 ### Shaman
 
@@ -656,9 +653,6 @@
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
-- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
-
 **Elemental-Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-enhancement-open-leveling.md`)
 - [ ] An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 
@@ -670,6 +664,9 @@
 
 **Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
 - [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
+
+**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
+- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
 
 ### Warlock
 
@@ -762,11 +759,14 @@
 **Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
-- [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
-
 **Destruction — Raid (machine-learning search)** (`warlock/research/raid/builds/destruction-ml-raid.md`)
 - [ ] A machine-searched Destruction build: check it against the community's Destruction builds at launch.
+
+**Shadow Bolt hybrid — Fire (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-fire-open-raid.md`)
+- [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
+
+**Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
+- [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
 
 ### Warrior
 
@@ -842,12 +842,12 @@
 **Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)** (`warrior/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
-- [ ] An open-search Fury build: check it against the community's Fury builds at launch.
-
 **Protection — Raid tank (machine-learning search)** (`warrior/research/raid/builds/protection-ml-tank.md`)
 - [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
 
 **Arms — Raid (machine-learning search)** (`warrior/research/raid/builds/arms-ml-raid.md`)
 - [ ] A machine-searched Arms build: check it against the community's Arms builds at launch.
+
+**Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
+- [ ] An open-search Fury build: check it against the community's Fury builds at launch.
 

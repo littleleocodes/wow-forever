@@ -2618,5 +2618,419 @@
   "best_hand": "bm-mm-raid",
   "gain_vs_hand": 0.0794,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 798.13,
+    "se": 0.082
+   },
+   "mm-hawk-raid": {
+    "entry": "bm-raid",
+    "dps": 755.64,
+    "se": 0.077
+   },
+   "bm-mm-raid": {
+    "entry": "mm-raid",
+    "dps": 753.48,
+    "se": 0.075
+   },
+   "beast-marks-ml-raid": {
+    "entry": "bm-raid",
+    "dps": 791.42,
+    "se": 0.083
+   }
+  },
+  "best_hand": "mm-hawk-raid",
+  "gain_vs_hand": 0.0562
+ },
+ "signature_check": {
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "ok": true,
+  "core_share": 1.0,
+  "min_share": 0.7,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 799.0,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Shot": 0.3418,
+   "Pet: Auto Attack": 0.2341,
+   "Arcane Shot": 0.1453,
+   "Aimed Shot": 0.13,
+   "Serpent Sting": 0.1121,
+   "Pet: Bite": 0.0199,
+   "Pet: Claw": 0.0155,
+   "Multi-Shot": 0.0013
+  },
+  "casts": {
+   "Serpent Sting": 11.65,
+   "Rapid Fire": 0.97,
+   "Aspect of the Hawk": 1.0,
+   "Arcane Shot": 33.41,
+   "Multi-Shot": 0.28,
+   "Aimed Shot": 22.41
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Improved Mend Pet",
+     1
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Intimidation",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     3
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     2
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Improved Arcane Shot",
+     3
+    ],
+    [
+     "Mortal Shots",
+     5
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     3
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "mm-hawk-raid",
+  "moves": [
+   {
+    "from": "Improved Mend Pet",
+    "to": "Summon Hawk",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Tracking",
+    "to": "Improved Stings",
+    "ratio": 0.99985
+   }
+  ],
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Summon Hawk",
+     1
+    ],
+    [
+     "Intimidation",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     3
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     3
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Improved Arcane Shot",
+     3
+    ],
+    [
+     "Mortal Shots",
+     5
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     2
+    ]
+   ]
+  },
+  "split": "28/21/2",
+  "ratio": 0.99985
+ },
+ "builds": {
+  "written": [
+   "beast-marks-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ],
+     [
+      "Endurance Training",
+      3
+     ],
+     [
+      "Focused Fire",
+      2
+     ],
+     [
+      "Improved Aspect of the Monkey",
+      3
+     ],
+     [
+      "Unleashed Fury",
+      5
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Bestial Discipline",
+      2
+     ],
+     [
+      "Frenzy",
+      4
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Efficiency",
+      5
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ],
+     [
+      "Mortal Shots",
+      2
+     ]
+    ],
+    "Survival": [
+     [
+      "Improved Tracking",
+      4
+     ]
+    ]
+   },
+   "split": "29/18/4",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Bestial Swiftness",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": null,
+  "prebis-dummy": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ],
+     [
+      "Focused Fire",
+      2
+     ],
+     [
+      "Improved Aspect of the Monkey",
+      3
+     ],
+     [
+      "Unleashed Fury",
+      5
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Spirit Bond",
+      1
+     ],
+     [
+      "Bestial Discipline",
+      2
+     ],
+     [
+      "Frenzy",
+      4
+     ],
+     [
+      "Endurance Training",
+      2
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Improved Stings",
+      3
+     ],
+     [
+      "Efficiency",
+      2
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ],
+     [
+      "Mortal Shots",
+      1
+     ]
+    ],
+    "Survival": [
+     [
+      "Improved Tracking",
+      5
+     ]
+    ]
+   },
+   "split": "29/17/5",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Bestial Swiftness",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Pathfinding",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": null
  }
 }

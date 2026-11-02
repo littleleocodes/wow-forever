@@ -2,27 +2,28 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Subtlety
 
-**[Subtlety — Leveling](../research/leveling/builds/subtlety-open-leveling.md)** (12/9/30) — [open the talent tree](https://talentsforever.com/rogue/60/0243201-302013-422302331221300101-7)
+**[Subtlety — Leveling](../research/leveling/builds/subtlety-leveling.md)** (5/16/30) — [open the talent tree](https://talentsforever.com/rogue/60/023-32303301001-23232003102132105-7)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+> 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-**Signature spells:** 91% of the damage at level 60 in the fight lab comes from melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate (the spec's rule: at least 60%; **Hemorrhage** cast in every fight).
+> **Signature spells: this build fails the check** in the fight lab (lacks Hemorrhage; core share 57% < 60%). Subtlety is defined by **Hemorrhage** cast in every fight and melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Not in this build:** **Preparation**, **Riposte** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Adrenaline Rush**, **Blade Flurry**, **Cold Blood** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob. **Premeditation** for two free combo points.
+**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
 
 **In the fight**, top to bottom:
 
-1. Open with **Ambush**; once fights last long enough for its bleed to pay (the Subtlety build from about level 40), **Garrote** instead.
-2. **Ghostly Strike** whenever it is ready (it also makes you dodge more).
-3. **Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.
-4. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
+1. Open with **Garrote**.
+2. **Sinister Strike** until you have 5 combo points.
+3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
+4. **Cold Blood** right before an **Eviscerate** at 5 points.
 5. **Riposte** after you parry.
-6. **Kick** a caster mob's spell.
-7. **Evasion** below half health while the mob still has more than 30% of its health; if it is on cooldown, **Preparation** resets it.
+6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
+7. Do not interrupt a caster mob: let it cast and walk in.
+8. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -59,48 +60,38 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-11 | Remorseless Attacks (Assassination) | 2 |
-| 12-14 | Improved Eviscerate (Combat) | 3 |
-| 15 | Malice (Assassination) | 1 |
-| 16-17 | Lightning Reflexes (Combat) | 2 |
-| 18-20 | Precision (Combat) | 3 |
-| 21-23 | Malice (Assassination) | 3 |
-| 24-25 | Murder (Assassination) | 2 |
-| 26-27 | Ruthlessness (Assassination) | 2 |
-| 28 | Relentless Strikes (Assassination) | 1 |
-| 29-30 | Opportunity (Subtlety) | 2 |
-| 31-32 | Master of Deception (Subtlety) | 2 |
-| 33 | Camouflage (Subtlety) | 1 |
-| 34-36 | Setup (Subtlety) | 3 |
-| 37-38 | Camouflage (Subtlety) | 2 |
-| 39 | Ghostly Strike (Subtlety) | 1 |
-| 40-42 | Initiative (Subtlety) | 3 |
-| 43 | Camouflage (Subtlety) | 1 |
-| 44-46 | Serrated Blades (Subtlety) | 3 |
-| 47 | Premeditation (Subtlety) | 1 |
-| 48-50 | Improved Ambush (Subtlety) | 3 |
-| 51-52 | Heightened Senses (Subtlety) | 2 |
-| 53 | Ruthlessness (Assassination) | 1 |
-| 54 | Deflection (Combat) | 1 |
-| 55-56 | Dirty Tricks (Subtlety) | 2 |
-| 57-58 | Improved Distract (Subtlety) | 2 |
-| 59 | Hemorrhage (Subtlety) | 1 |
-| 60 | Cutthroat (Subtlety) | 1 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 18 |
-| 30 | 24 |
-| 40 | 27 |
-| 50 | 26 |
-| 60 | 27 |
+| 10 | Improved Sinister Strike (Combat) | 1 |
+| 11-12 | Remorseless Attacks (Assassination) | 2 |
+| 13 | Improved Sinister Strike (Combat) | 1 |
+| 14-16 | Improved Eviscerate (Combat) | 3 |
+| 17 | Deflection (Combat) | 1 |
+| 18-19 | Precision (Combat) | 2 |
+| 20-21 | Deflection (Combat) | 2 |
+| 22 | Riposte (Combat) | 1 |
+| 23 | Precision (Combat) | 1 |
+| 24-26 | Lightning Reflexes (Combat) | 3 |
+| 27 | Flawless Execution (Combat) | 1 |
+| 28-30 | Malice (Assassination) | 3 |
+| 31-32 | Opportunity (Subtlety) | 2 |
+| 33-35 | Master of Deception (Subtlety) | 3 |
+| 36-38 | Setup (Subtlety) | 3 |
+| 39-40 | Elusiveness (Subtlety) | 2 |
+| 41 | Ghostly Strike (Subtlety) | 1 |
+| 42-44 | Initiative (Subtlety) | 3 |
+| 45 | Camouflage (Subtlety) | 1 |
+| 46-48 | Serrated Blades (Subtlety) | 3 |
+| 49 | Premeditation (Subtlety) | 1 |
+| 50 | Heightened Senses (Subtlety) | 1 |
+| 51 | Preparation (Subtlety) | 1 |
+| 52-53 | Dirty Deeds (Subtlety) | 2 |
+| 54 | Heightened Senses (Subtlety) | 1 |
+| 55 | Camouflage (Subtlety) | 1 |
+| 56-60 | Quietus (Subtlety) | 5 |
 
 ## Other builds of this spec
 
-- [Subtlety — Leveling](../research/leveling/builds/subtlety-leveling.md) (5/16/30, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/023-32303301001-23232003102132105-7)
+- [Subtlety — Leveling](../research/leveling/builds/subtlety-open-leveling.md) (12/9/30) — [open the talent tree](https://talentsforever.com/rogue/60/0243201-302013-422302331221300101-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

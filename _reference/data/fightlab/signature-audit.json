@@ -1,5 +1,5 @@
 {
- "date": "2026-10-30",
+ "date": "2026-11-02",
  "fights": 300,
  "levels": [
   20,
@@ -10,39 +10,12 @@
  ],
  "builds": {
   "druid": {
-   "balance-open-leveling": {
-    "spec": "Balance",
-    "rotation": "balance-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9629,
-    "min_share": 0.7,
-    "required": [
-     "Starfire",
-     "Moonfire"
-    ],
-    "core": [
-     "Wrath",
-     "Starfire",
-     "Moonfire",
-     "Insect Swarm"
-    ],
-    "casts_60": {
-     "Starfire": 4.17,
-     "Moonfire": 1.44
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "1974ee531963",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "opt-balance-dps-leveling-st": {
     "spec": "Balance",
-    "rotation": "balance-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9632,
+    "rotation": "feral-cat-dps",
+    "ok": false,
+    "verdict": "FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70%",
+    "core_share": 0,
     "min_share": 0.7,
     "required": [
      "Starfire",
@@ -55,73 +28,150 @@
      "Insect Swarm"
     ],
     "casts_60": {
-     "Starfire": 4.64,
-     "Moonfire": 1.56
+     "Starfire": 0.0,
+     "Moonfire": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "7f5a60497e90",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Starfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "5d0c08fd645f",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "opt-feral-cat-dps-solo-60": {
-    "spec": "Feral Combat",
+   "balance-open-leveling": {
+    "spec": "Balance",
     "rotation": "feral-cat-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8196,
-    "min_share": 0.8,
+    "ok": false,
+    "verdict": "FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70%",
+    "core_share": 0,
+    "min_share": 0.7,
     "required": [
-     "Claw",
-     "Ferocious Bite"
+     "Starfire",
+     "Moonfire"
     ],
     "core": [
-     "melee",
-     "Claw",
-     "Rake",
-     "Rip",
-     "Ferocious Bite",
-     "Shred",
-     "Primal Bite"
+     "Wrath",
+     "Starfire",
+     "Moonfire",
+     "Insect Swarm"
     ],
     "casts_60": {
-     "Claw": 3.23,
-     "Ferocious Bite": 0.89
+     "Starfire": 0.0,
+     "Moonfire": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "f89fbde46e57",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-feral-cat-dps-leveling-st": {
-    "spec": "Feral Combat",
-    "rotation": "feral-cat-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8196,
-    "min_share": 0.8,
-    "required": [
-     "Claw",
-     "Ferocious Bite"
+    "uncast": [
+     [
+      "Starfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "core": [
-     "melee",
-     "Claw",
-     "Rake",
-     "Rip",
-     "Ferocious Bite",
-     "Shred",
-     "Primal Bite"
-    ],
-    "casts_60": {
-     "Claw": 3.23,
-     "Ferocious Bite": 0.89
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "02a5131b2df3",
-    "date": "2026-10-30",
+    "fingerprint": "ac97f6d02067",
+    "date": "2026-11-02",
     "fights": 300
    },
    "leveling-feral": {
@@ -129,7 +179,7 @@
     "rotation": "feral-cat-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.816,
+    "core_share": 0.8282,
     "min_share": 0.8,
     "required": [
      "Claw",
@@ -145,13 +195,73 @@
      "Primal Bite"
     ],
     "casts_60": {
-     "Claw": 3.72,
-     "Ferocious Bite": 1.06
+     "Claw": 3.36,
+     "Ferocious Bite": 0.84
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "227c2fc7e7a4",
-    "date": "2026-10-30",
+    "fingerprint": "66be398b1b7b",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-feral-cat-dps-leveling-st": {
+    "spec": "Feral Combat",
+    "rotation": "feral-cat-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8258,
+    "min_share": 0.8,
+    "required": [
+     "Claw",
+     "Ferocious Bite"
+    ],
+    "core": [
+     "melee",
+     "Claw",
+     "Rake",
+     "Rip",
+     "Ferocious Bite",
+     "Shred",
+     "Primal Bite"
+    ],
+    "casts_60": {
+     "Claw": 3.29,
+     "Ferocious Bite": 0.82
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "d36ac3bd6771",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-feral-cat-dps-solo-60": {
+    "spec": "Feral Combat",
+    "rotation": "feral-cat-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8258,
+    "min_share": 0.8,
+    "required": [
+     "Claw",
+     "Ferocious Bite"
+    ],
+    "core": [
+     "melee",
+     "Claw",
+     "Rake",
+     "Rip",
+     "Ferocious Bite",
+     "Shred",
+     "Primal Bite"
+    ],
+    "casts_60": {
+     "Claw": 3.29,
+     "Ferocious Bite": 0.82
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "d3d8e7eefd65",
+    "date": "2026-11-02",
     "fights": 300
    },
    "restoration-leveling": {
@@ -166,18 +276,18 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d80fa3653c58",
-    "date": "2026-10-30",
+    "fingerprint": "f8d8b9894a34",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "hunter": {
-   "beast-mastery-open-leveling": {
+   "bm-solo-farm": {
     "spec": "Beast Mastery",
     "rotation": "bm-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.4064,
+    "core_share": 0.4168,
     "min_share": 0.35,
     "required": [
      "Bestial Wrath"
@@ -186,12 +296,12 @@
      "pet"
     ],
     "casts_60": {
-     "Bestial Wrath": 0.19
+     "Bestial Wrath": 0.21
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "be1ab6848107",
-    "date": "2026-10-30",
+    "fingerprint": "021695ebb7ad",
+    "date": "2026-11-02",
     "fights": 300
    },
    "beast-mastery-leveling": {
@@ -199,7 +309,7 @@
     "rotation": "bm-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Bestial Wrath",
-    "core_share": 0.3891,
+    "core_share": 0.389,
     "min_share": 0.35,
     "required": [
      "Bestial Wrath"
@@ -214,16 +324,16 @@
      "Bestial Wrath"
     ],
     "uncast": [],
-    "fingerprint": "fe3b4928863d",
-    "date": "2026-10-30",
+    "fingerprint": "45cd5fd0a093",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "bm-solo-farm": {
+   "beast-mastery-open-leveling": {
     "spec": "Beast Mastery",
     "rotation": "bm-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.4159,
+    "core_share": 0.401,
     "min_share": 0.35,
     "required": [
      "Bestial Wrath"
@@ -232,20 +342,132 @@
      "pet"
     ],
     "casts_60": {
-     "Bestial Wrath": 0.21
+     "Bestial Wrath": 0.2
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "021695ebb7ad",
-    "date": "2026-10-30",
+    "fingerprint": "be1ab6848107",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "leveling-beast-mastery": {
+    "spec": "Marksmanship",
+    "rotation": "bm-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.664,
+    "min_share": 0.6,
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "casts_60": {
+     "Aimed Shot": 1.69
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "1e9f35c76841",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-bm-leveling-leveling-st": {
+    "spec": "Marksmanship",
+    "rotation": "bm-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6571,
+    "min_share": 0.6,
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "casts_60": {
+     "Aimed Shot": 1.62
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "76f9077d0f99",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-bm-leveling-solo-60": {
+    "spec": "Marksmanship",
+    "rotation": "bm-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6679,
+    "min_share": 0.6,
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "casts_60": {
+     "Aimed Shot": 1.68
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "ac8ef9f13243",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-mm-raid-leveling-st": {
+    "spec": "Marksmanship",
+    "rotation": "bm-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7041,
+    "min_share": 0.6,
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "casts_60": {
+     "Aimed Shot": 1.64
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "7e04122fe858",
+    "date": "2026-11-02",
     "fights": 300
    },
    "marksmanship-open-leveling": {
     "spec": "Marksmanship",
-    "rotation": "mm-raid",
+    "rotation": "bm-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.6461,
+    "core_share": 0.6502,
     "min_share": 0.6,
     "required": [
      "Aimed Shot"
@@ -264,150 +486,16 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "60164fcfa050",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-bm-leveling-solo-60": {
-    "spec": "Marksmanship",
-    "rotation": "mm-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.656,
-    "min_share": 0.6,
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "casts_60": {
-     "Aimed Shot": 1.63
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "eebec99b6152",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-bm-leveling-leveling-st": {
-    "spec": "Marksmanship",
-    "rotation": "mm-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6554,
-    "min_share": 0.6,
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "casts_60": {
-     "Aimed Shot": 1.63
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "b42bb15a701b",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-mm-raid-leveling-st": {
-    "spec": "Marksmanship",
-    "rotation": "mm-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7046,
-    "min_share": 0.6,
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "casts_60": {
-     "Aimed Shot": 1.65
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "5e859e1d590f",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "leveling-beast-mastery": {
-    "spec": "Marksmanship",
-    "rotation": "mm-raid",
-    "ok": false,
-    "verdict": "FAIL: core share 58% < 60%",
-    "core_share": 0.5837,
-    "min_share": 0.6,
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "casts_60": {
-     "Aimed Shot": 1.12
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "7dbe303326c8",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "leveling-melee": {
-    "spec": "Survival",
-    "rotation": "melee-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.5017,
-    "min_share": 0.5,
-    "required": [],
-    "core": [
-     "melee",
-     "Raptor Strike",
-     "Mongoose Bite",
-     "Lacerate",
-     "Wing Clip"
-    ],
-    "casts_60": {},
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "74dc2722d1fc",
-    "date": "2026-10-30",
+    "fingerprint": "7997e091ab5b",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-bm-leveling-leveling-aoe": {
     "spec": "Survival",
-    "rotation": "melee-dps",
+    "rotation": "bm-leveling",
     "ok": false,
-    "verdict": "FAIL: core share 45% < 50%",
-    "core_share": 0.4477,
+    "verdict": "FAIL: core share 1% < 50%",
+    "core_share": 0.0052,
     "min_share": 0.5,
     "required": [],
     "core": [
@@ -420,8 +508,8 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "03463a1d1897",
-    "date": "2026-10-30",
+    "fingerprint": "5d112bc1d645",
+    "date": "2026-11-02",
     "fights": 300
    },
    "beast-marks-open-leveling": {
@@ -429,7 +517,7 @@
     "rotation": "bm-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9972,
+    "core_share": 0.9979,
     "min_share": 0.7,
     "required": [
      "Aimed Shot"
@@ -445,20 +533,20 @@
      "Serpent Sting"
     ],
     "casts_60": {
-     "Aimed Shot": 1.57
+     "Aimed Shot": 1.55
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "9b6b184a1ef7",
-    "date": "2026-10-30",
+    "fingerprint": "6adf45331789",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "beast-survival-open-leveling": {
+   "leveling-melee": {
     "spec": "Hybrid Beast Mastery/Survival",
-    "rotation": "melee-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.754,
+    "rotation": "bm-leveling",
+    "ok": false,
+    "verdict": "FAIL: core share 31% < 50%",
+    "core_share": 0.3148,
     "min_share": 0.5,
     "required": [],
     "core": [
@@ -471,30 +559,8 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "562d9b86b2f0",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-melee-dps-leveling-st": {
-    "spec": "Hybrid Beast Mastery/Survival",
-    "rotation": "melee-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8205,
-    "min_share": 0.5,
-    "required": [],
-    "core": [
-     "melee",
-     "Raptor Strike",
-     "Mongoose Bite",
-     "Lacerate",
-     "pet"
-    ],
-    "casts_60": {},
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "36f5748e86d7",
-    "date": "2026-10-30",
+    "fingerprint": "8742e969a39a",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-melee-dps-solo-60": {
@@ -502,7 +568,7 @@
     "rotation": "bm-leveling",
     "ok": false,
     "verdict": "FAIL: core share 35% < 50%",
-    "core_share": 0.3482,
+    "core_share": 0.3462,
     "min_share": 0.5,
     "required": [],
     "core": [
@@ -515,42 +581,62 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "daece1a80378",
-    "date": "2026-10-30",
+    "fingerprint": "d82064af972c",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-melee-dps-leveling-st": {
+    "spec": "Hybrid Beast Mastery/Survival",
+    "rotation": "bm-leveling",
+    "ok": false,
+    "verdict": "FAIL: core share 35% < 50%",
+    "core_share": 0.3462,
+    "min_share": 0.5,
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "pet"
+    ],
+    "casts_60": {},
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "d82064af972c",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "beast-survival-open-leveling": {
+    "spec": "Hybrid Beast Mastery/Survival",
+    "rotation": "bm-leveling",
+    "ok": false,
+    "verdict": "FAIL: core share 38% < 50%",
+    "core_share": 0.3812,
+    "min_share": 0.5,
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "pet"
+    ],
+    "casts_60": {},
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "00c8ee01463a",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "mage": {
-   "arcane-open-leveling": {
-    "spec": "Arcane",
-    "rotation": "arcane-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9145,
-    "min_share": 0.5,
-    "required": [
-     "Arcane Blast"
-    ],
-    "core": [
-     "Arcane Blast",
-     "Arcane Missiles",
-     "Arcane Wrath"
-    ],
-    "casts_60": {
-     "Arcane Blast": 1.78
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "0336dcdd8223",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "arcane-leveling": {
     "spec": "Arcane",
-    "rotation": "arcane-leveling",
+    "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: lacks Arcane Blast",
-    "core_share": 0.7407,
+    "verdict": "FAIL: lacks Arcane Blast; core share 0% < 50%",
+    "core_share": 0,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -567,45 +653,47 @@
      "Arcane Blast"
     ],
     "uncast": [],
-    "fingerprint": "b13d54703507",
-    "date": "2026-10-30",
+    "fingerprint": "773b118d598b",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "fire-open-leveling": {
-    "spec": "Fire",
-    "rotation": "fire-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6285,
-    "min_share": 0.6,
+   "arcane-open-leveling": {
+    "spec": "Arcane",
+    "rotation": "frost-leveling",
+    "ok": false,
+    "verdict": "FAIL: Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
+    "core_share": 0,
+    "min_share": 0.5,
     "required": [
-     "Fireball",
-     "Pyroblast"
+     "Arcane Blast"
     ],
     "core": [
-     "Fireball",
-     "Pyroblast",
-     "Fire Blast",
-     "Scorch",
-     "Ignite",
-     "Flamestrike"
+     "Arcane Blast",
+     "Arcane Missiles",
+     "Arcane Wrath"
     ],
     "casts_60": {
-     "Fireball": 1.04,
-     "Pyroblast": 0.65
+     "Arcane Blast": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "d14ad496caef",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Arcane Blast",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "4deaa49b373f",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "fire-leveling": {
+   "opt-fire-leveling-leveling-st": {
     "spec": "Fire",
-    "rotation": "fire-leveling",
+    "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: Pyroblast 0.00/kill at 60 (needs 0.50); core share 56% < 60%",
-    "core_share": 0.5605,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 25% < 60%",
+    "core_share": 0.2535,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -620,11 +708,41 @@
      "Flamestrike"
     ],
     "casts_60": {
-     "Fireball": 1.41,
+     "Fireball": 0.0,
      "Pyroblast": 0.0
     },
     "missing_talents": [],
     "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
      [
       "Pyroblast",
       60,
@@ -632,16 +750,16 @@
       0.5
      ]
     ],
-    "fingerprint": "4306c81a32e3",
-    "date": "2026-10-30",
+    "fingerprint": "68ba260a78ec",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "opt-fire-leveling-leveling-st": {
+   "fire-leveling": {
     "spec": "Fire",
-    "rotation": "fire-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6884,
+    "rotation": "frost-leveling",
+    "ok": false,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 21% < 60%",
+    "core_share": 0.2116,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -656,39 +774,116 @@
      "Flamestrike"
     ],
     "casts_60": {
-     "Fireball": 1.34,
-     "Pyroblast": 0.62
+     "Fireball": 0.0,
+     "Pyroblast": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "5d5fb39acf1b",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Pyroblast",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "773e8e6c1a34",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "frost-open-leveling": {
-    "spec": "Frost",
+   "fire-open-leveling": {
+    "spec": "Fire",
     "rotation": "frost-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8645,
+    "ok": false,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 26% < 60%",
+    "core_share": 0.2586,
     "min_share": 0.6,
     "required": [
-     "Frostbolt"
+     "Fireball",
+     "Pyroblast"
     ],
     "core": [
-     "Frostbolt",
-     "Ice Lance",
-     "Frost Blast",
-     "Cone of Cold",
-     "Blizzard"
+     "Fireball",
+     "Pyroblast",
+     "Fire Blast",
+     "Scorch",
+     "Ignite",
+     "Flamestrike"
     ],
     "casts_60": {
-     "Frostbolt": 2.04
+     "Fireball": 0.0,
+     "Pyroblast": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "6f0dabd7146b",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Pyroblast",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "aa894dfab0e1",
+    "date": "2026-11-02",
     "fights": 300
    },
    "leveling-frost": {
@@ -696,7 +891,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8154,
+    "core_share": 0.7873,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -709,12 +904,12 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 1.88
+     "Frostbolt": 2.74
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "1480b34598e9",
-    "date": "2026-10-30",
+    "fingerprint": "e3986040dafa",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-frost-aoe-leveling-aoe": {
@@ -722,7 +917,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.844,
+    "core_share": 0.8025,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -735,47 +930,46 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 2.36
+     "Frostbolt": 2.98
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "1194cd37c919",
-    "date": "2026-10-30",
+    "fingerprint": "e16b8997be94",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "arcane-frost-open-leveling": {
-    "spec": "Hybrid Arcane/Frost",
-    "rotation": "barrage-frost-leveling",
+   "frost-open-leveling": {
+    "spec": "Frost",
+    "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8821,
+    "core_share": 0.8318,
     "min_share": 0.6,
     "required": [
-     "Frostbolt",
-     "Arcane Missiles"
+     "Frostbolt"
     ],
     "core": [
      "Frostbolt",
-     "Arcane Missiles",
      "Ice Lance",
-     "Arcane Blast"
+     "Frost Blast",
+     "Cone of Cold",
+     "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 1.85,
-     "Arcane Missiles": 0.34
+     "Frostbolt": 2.91
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "f6f4c7507512",
-    "date": "2026-10-30",
+    "fingerprint": "4ef007f07eec",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-frost-leveling-leveling-st": {
     "spec": "Hybrid Arcane/Frost",
-    "rotation": "barrage-frost-leveling",
+    "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: Arcane Missiles 0.24/kill at 50 (needs 0.25)",
-    "core_share": 0.8455,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
+    "core_share": 0.7896,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -788,28 +982,62 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 1.87,
-     "Arcane Missiles": 0.27
+     "Frostbolt": 2.7,
+     "Arcane Missiles": 0.0
     },
     "missing_talents": [],
     "uncast": [
      [
       "Arcane Missiles",
-      50,
-      0.24,
+      60,
+      0.0,
       0.25
      ]
     ],
-    "fingerprint": "de18a4c43a69",
-    "date": "2026-10-30",
+    "fingerprint": "799ac4c1d643",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "arcane-frost-open-leveling": {
+    "spec": "Hybrid Arcane/Frost",
+    "rotation": "frost-leveling",
+    "ok": false,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
+    "core_share": 0.8209,
+    "min_share": 0.6,
+    "required": [
+     "Frostbolt",
+     "Arcane Missiles"
+    ],
+    "core": [
+     "Frostbolt",
+     "Arcane Missiles",
+     "Ice Lance",
+     "Arcane Blast"
+    ],
+    "casts_60": {
+     "Frostbolt": 2.9,
+     "Arcane Missiles": 0.0
+    },
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Arcane Missiles",
+      60,
+      0.0,
+      0.25
+     ]
+    ],
+    "fingerprint": "242f1938a5b1",
+    "date": "2026-11-02",
     "fights": 300
    },
    "frostfire-open-leveling": {
     "spec": "Hybrid Fire/Frost",
-    "rotation": "frostfire-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.3084,
+    "rotation": "frost-leveling",
+    "ok": false,
+    "verdict": "FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%",
+    "core_share": 0,
     "min_share": 0.3,
     "required": [
      "Frostfire Bolt"
@@ -818,49 +1046,41 @@
      "Frostfire Bolt"
     ],
     "casts_60": {
-     "Frostfire Bolt": 2.67
+     "Frostfire Bolt": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "23ae6d1bd300",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Frostfire Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Frostfire Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Frostfire Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "dc0450cebb11",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "paladin": {
-   "holy-open-leveling": {
-    "spec": "Holy",
-    "rotation": "holy-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7137,
-    "min_share": 0.6,
-    "required": [
-     "Holy Shock"
-    ],
-    "core": [
-     "Holy Shock",
-     "Exorcism",
-     "Judgement",
-     "melee",
-     "Seal of Righteousness",
-     "Seal of Command"
-    ],
-    "casts_60": {
-     "Holy Shock": 0.61
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "b9b2cd5e7eac",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "holy-leveling": {
     "spec": "Holy",
     "rotation": "holy-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Holy Shock",
-    "core_share": 0.7041,
+    "core_share": 0.728,
     "min_share": 0.6,
     "required": [
      "Holy Shock"
@@ -880,35 +1100,8 @@
      "Holy Shock"
     ],
     "uncast": [],
-    "fingerprint": "4d02cb951987",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "protection-open-leveling": {
-    "spec": "Protection",
-    "rotation": "prot-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7107,
-    "min_share": 0.6,
-    "required": [
-     "Holy Shield"
-    ],
-    "core": [
-     "Holy Shield",
-     "Seal of Fury",
-     "Judgement",
-     "melee",
-     "Consecration",
-     "Seal of Righteousness"
-    ],
-    "casts_60": {
-     "Holy Shield": 2.23
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "02e7c1524d4f",
-    "date": "2026-10-30",
+    "fingerprint": "c7030a89beaa",
+    "date": "2026-11-02",
     "fights": 300
    },
    "protection-leveling": {
@@ -916,7 +1109,7 @@
     "rotation": "prot-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7212,
+    "core_share": 0.6716,
     "min_share": 0.6,
     "required": [
      "Holy Shield"
@@ -930,39 +1123,12 @@
      "Seal of Righteousness"
     ],
     "casts_60": {
-     "Holy Shield": 2.15
+     "Holy Shield": 2.14
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "1eb5510fbc53",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "retribution-open-leveling": {
-    "spec": "Retribution",
-    "rotation": "ret-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8707,
-    "min_share": 0.6,
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Judgement",
-     "Holy Strike",
-     "Vengeance"
-    ],
-    "casts_60": {
-     "Judgement": 2.7
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "3ce774dbaf36",
-    "date": "2026-10-30",
+    "fingerprint": "7edf80329a5b",
+    "date": "2026-11-02",
     "fights": 300
    },
    "leveling-retribution": {
@@ -970,7 +1136,7 @@
     "rotation": "ret-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.875,
+    "core_share": 1.0,
     "min_share": 0.6,
     "required": [
      "Judgement"
@@ -984,39 +1150,12 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.76
+     "Judgement": 3.01
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "11d0e3b55f65",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-ret-dps-leveling-aoe": {
-    "spec": "Retribution",
-    "rotation": "ret-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8941,
-    "min_share": 0.6,
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Judgement",
-     "Holy Strike",
-     "Vengeance"
-    ],
-    "casts_60": {
-     "Judgement": 2.7
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "5fb6cbf8701b",
-    "date": "2026-10-30",
+    "fingerprint": "176e2ac050df",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-ret-dps-leveling-st": {
@@ -1024,7 +1163,7 @@
     "rotation": "ret-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8747,
+    "core_share": 1.0,
     "min_share": 0.6,
     "required": [
      "Judgement"
@@ -1038,20 +1177,36 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.76
+     "Judgement": 3.01
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "5097dd42abd6",
-    "date": "2026-10-30",
+    "fingerprint": "63cda90db314",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "opt-ret-dps-solo-60": {
+   "hybrid-holy-protection-open-leveling": {
+    "spec": "Hybrid Holy/Protection",
+    "rotation": "holy-leveling",
+    "ok": true,
+    "verdict": "no rule",
+    "core_share": null,
+    "min_share": null,
+    "required": [],
+    "core": [],
+    "casts_60": {},
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "52adfc29083e",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "prot-ret-open-leveling": {
     "spec": "Hybrid Protection/Retribution",
     "rotation": "ret-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8805,
+    "core_share": 0.9994,
     "min_share": 0.6,
     "required": [
      "Judgement"
@@ -1065,22 +1220,76 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 2.75
+     "Judgement": 3.37
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "69cc285ce7af",
-    "date": "2026-10-30",
+    "fingerprint": "64e48a8ed9df",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-ret-dps-solo-60": {
+    "spec": "Hybrid Protection/Retribution",
+    "rotation": "ret-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "casts_60": {
+     "Judgement": 3.54
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "ebfb007e8c67",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-ret-dps-leveling-aoe": {
+    "spec": "Hybrid Protection/Retribution",
+    "rotation": "ret-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "casts_60": {
+     "Judgement": 3.1
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "80e6ad788b07",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "priest": {
    "discipline-open-leveling": {
     "spec": "Discipline",
-    "rotation": "discipline-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.4561,
+    "rotation": "shadow-dps",
+    "ok": false,
+    "verdict": "FAIL: Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
+    "core_share": 0.3792,
     "min_share": 0.4,
     "required": [
      "Penance",
@@ -1093,21 +1302,58 @@
      "Mind Blast"
     ],
     "casts_60": {
-     "Penance": 1.0,
-     "Smite": 1.23
+     "Penance": 0.0,
+     "Smite": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "b71c1acc215f",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Penance",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "044cc4583c87",
+    "date": "2026-11-02",
     "fights": 300
    },
    "discipline-leveling": {
     "spec": "Discipline",
-    "rotation": "discipline-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.4352,
+    "rotation": "shadow-dps",
+    "ok": false,
+    "verdict": "FAIL: Penance 0.00/kill at 40 (needs 0.50); Penance 0.00/kill at 50 (needs 0.50); Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
+    "core_share": 0.3796,
     "min_share": 0.4,
     "required": [
      "Penance",
@@ -1120,21 +1366,70 @@
      "Mind Blast"
     ],
     "casts_60": {
-     "Penance": 1.03,
-     "Smite": 1.24
+     "Penance": 0.0,
+     "Smite": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "0b213a74c433",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Penance",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Penance",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Penance",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "3075106bb00b",
+    "date": "2026-11-02",
     "fights": 300
    },
    "holy-leveling": {
     "spec": "Holy",
-    "rotation": "holy-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.4135,
+    "rotation": "shadow-dps",
+    "ok": false,
+    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%",
+    "core_share": 0,
     "min_share": 0.4,
     "required": [
      "Smite",
@@ -1145,13 +1440,190 @@
      "Holy Fire"
     ],
     "casts_60": {
-     "Smite": 4.19,
-     "Holy Fire": 1.55
+     "Smite": 0.0,
+     "Holy Fire": 0.0
+    },
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "663f66f62cd5",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "leveling-shadow": {
+    "spec": "Shadow",
+    "rotation": "shadow-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8308,
+    "min_share": 0.6,
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.22,
+     "Mind Flay": 2.69
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "71f4d0e70cc4",
-    "date": "2026-10-30",
+    "fingerprint": "303223acdfd8",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-shadow-dps-leveling-st": {
+    "spec": "Shadow",
+    "rotation": "shadow-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8164,
+    "min_share": 0.6,
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.21,
+     "Mind Flay": 2.63
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "349e27f56ff4",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-shadow-dps-solo-60": {
+    "spec": "Shadow",
+    "rotation": "shadow-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8164,
+    "min_share": 0.6,
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.21,
+     "Mind Flay": 2.63
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "8cdca41c0cbb",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-shadow-dps-leveling-aoe": {
+    "spec": "Shadow",
+    "rotation": "shadow-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8202,
+    "min_share": 0.6,
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.27,
+     "Mind Flay": 2.71
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "a2f59c90defa",
+    "date": "2026-11-02",
     "fights": 300
    },
    "shadow-open-leveling": {
@@ -1159,7 +1631,7 @@
     "rotation": "shadow-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8376,
+    "core_share": 0.8372,
     "min_share": 0.6,
     "required": [
      "Shadow Word: Pain",
@@ -1175,136 +1647,20 @@
     "casts_60": {
      "Shadow Word: Pain": 1.0,
      "Mind Blast": 1.94,
-     "Mind Flay": 2.09
+     "Mind Flay": 2.06
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "0ce9298df496",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-shadow-dps-solo-60": {
-    "spec": "Shadow",
-    "rotation": "shadow-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8174,
-    "min_share": 0.6,
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.22,
-     "Mind Flay": 2.64
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "8cdca41c0cbb",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "leveling-shadow": {
-    "spec": "Shadow",
-    "rotation": "shadow-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8254,
-    "min_share": 0.6,
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.2,
-     "Mind Flay": 2.67
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "303223acdfd8",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-shadow-dps-leveling-aoe": {
-    "spec": "Shadow",
-    "rotation": "shadow-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8177,
-    "min_share": 0.6,
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.28,
-     "Mind Flay": 2.71
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "a2f59c90defa",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-shadow-dps-leveling-st": {
-    "spec": "Shadow",
-    "rotation": "shadow-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8174,
-    "min_share": 0.6,
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.22,
-     "Mind Flay": 2.64
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "349e27f56ff4",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
    "smite-open-leveling": {
     "spec": "Hybrid Discipline/Holy",
-    "rotation": "holy-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.5571,
+    "rotation": "shadow-dps",
+    "ok": false,
+    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
+    "core_share": 0,
     "min_share": 0.5,
     "required": [
      "Smite",
@@ -1315,51 +1671,84 @@
      "Holy Fire"
     ],
     "casts_60": {
-     "Smite": 6.02,
-     "Holy Fire": 1.39
+     "Smite": 0.0,
+     "Holy Fire": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "4d6fbc39f29b",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "d0dd1e5ac424",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "rogue": {
-   "assassination-open-leveling": {
+   "leveling-combat-swords": {
     "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8462,
-    "min_share": 0.6,
-    "required": [
-     "Mutilate"
-    ],
-    "core": [
-     "melee",
-     "Mutilate",
-     "Eviscerate",
-     "Venom",
-     "Rupture",
-     "Deadly Poison",
-     "Instant Poison"
-    ],
-    "casts_60": {
-     "Mutilate": 2.9
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "602dae9bee15",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-combat-swords-raid-solo-60": {
-    "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
+    "rotation": "combat-swords-raid",
     "ok": false,
-    "verdict": "FAIL: lacks Mutilate",
-    "core_share": 0.6752,
+    "verdict": "FAIL: Mutilate 0.00/kill at 50 (needs 0.50); Mutilate 0.00/kill at 60 (needs 0.50)",
+    "core_share": 0.6457,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1376,20 +1765,31 @@
     "casts_60": {
      "Mutilate": 0.0
     },
-    "missing_talents": [
-     "Mutilate"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Mutilate",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "uncast": [],
-    "fingerprint": "42be225aaee3",
-    "date": "2026-10-30",
+    "fingerprint": "79201120a3fe",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-combat-swords-raid-leveling-st": {
     "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
+    "rotation": "combat-swords-raid",
     "ok": false,
     "verdict": "FAIL: lacks Mutilate",
-    "core_share": 0.6752,
+    "core_share": 0.6359,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1410,16 +1810,16 @@
      "Mutilate"
     ],
     "uncast": [],
-    "fingerprint": "42be225aaee3",
-    "date": "2026-10-30",
+    "fingerprint": "062ae3ea7934",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "leveling-combat-swords": {
+   "opt-combat-swords-raid-solo-60": {
     "spec": "Assassination",
-    "rotation": "combat-daggers-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8535,
+    "rotation": "combat-swords-raid",
+    "ok": false,
+    "verdict": "FAIL: lacks Mutilate",
+    "core_share": 0.6359,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1434,34 +1834,61 @@
      "Instant Poison"
     ],
     "casts_60": {
-     "Mutilate": 3.04
+     "Mutilate": 0.0
     },
-    "missing_talents": [],
+    "missing_talents": [
+     "Mutilate"
+    ],
     "uncast": [],
-    "fingerprint": "60e004c0d68d",
-    "date": "2026-10-30",
+    "fingerprint": "062ae3ea7934",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "combat-open-leveling": {
-    "spec": "Combat",
+   "assassination-open-leveling": {
+    "spec": "Assassination",
     "rotation": "combat-swords-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7765,
-    "min_share": 0.7,
-    "required": [],
+    "ok": false,
+    "verdict": "FAIL: Mutilate 0.00/kill at 40 (needs 0.50); Mutilate 0.00/kill at 50 (needs 0.50); Mutilate 0.00/kill at 60 (needs 0.50)",
+    "core_share": 0.6468,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
     "core": [
      "melee",
-     "Sinister Strike",
-     "Backstab",
+     "Mutilate",
      "Eviscerate",
-     "Blade Flurry"
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
     ],
-    "casts_60": {},
+    "casts_60": {
+     "Mutilate": 0.0
+    },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "c27763fcd460",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Mutilate",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "282256f9b22d",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-combat-swords-raid-leveling-aoe": {
@@ -1483,7 +1910,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "4a06897e4bc6",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
    "combat-leveling": {
@@ -1505,41 +1932,37 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "9741e770d2cd",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "subtlety-open-leveling": {
-    "spec": "Subtlety",
-    "rotation": "subtlety-leveling",
+   "combat-open-leveling": {
+    "spec": "Combat",
+    "rotation": "combat-swords-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9125,
-    "min_share": 0.6,
-    "required": [
-     "Hemorrhage"
-    ],
+    "core_share": 0.7765,
+    "min_share": 0.7,
+    "required": [],
     "core": [
      "melee",
-     "Hemorrhage",
-     "Ghostly Strike",
-     "Ambush",
-     "Eviscerate"
+     "Sinister Strike",
+     "Backstab",
+     "Eviscerate",
+     "Blade Flurry"
     ],
-    "casts_60": {
-     "Hemorrhage": 3.13
-    },
+    "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "0de74b12c40d",
-    "date": "2026-10-30",
+    "fingerprint": "c27763fcd460",
+    "date": "2026-11-02",
     "fights": 300
    },
    "subtlety-leveling": {
     "spec": "Subtlety",
-    "rotation": "subtlety-leveling",
+    "rotation": "combat-swords-raid",
     "ok": false,
-    "verdict": "FAIL: lacks Hemorrhage",
-    "core_share": 0.639,
+    "verdict": "FAIL: lacks Hemorrhage; core share 57% < 60%",
+    "core_share": 0.568,
     "min_share": 0.6,
     "required": [
      "Hemorrhage"
@@ -1558,38 +1981,49 @@
      "Hemorrhage"
     ],
     "uncast": [],
-    "fingerprint": "5c43f712b91d",
-    "date": "2026-10-30",
+    "fingerprint": "b807870fac10",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "daggers-split-open-leveling": {
-    "spec": "Hybrid Assassination/Combat",
-    "rotation": "combat-daggers-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7344,
+   "subtlety-open-leveling": {
+    "spec": "Subtlety",
+    "rotation": "combat-swords-raid",
+    "ok": false,
+    "verdict": "FAIL: Hemorrhage 0.00/kill at 60 (needs 0.50)",
+    "core_share": 0.6111,
     "min_share": 0.6,
-    "required": [],
+    "required": [
+     "Hemorrhage"
+    ],
     "core": [
      "melee",
-     "Backstab",
-     "Mutilate",
-     "Sinister Strike",
+     "Hemorrhage",
+     "Ghostly Strike",
+     "Ambush",
      "Eviscerate"
     ],
-    "casts_60": {},
+    "casts_60": {
+     "Hemorrhage": 0.0
+    },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "3462d722a1c5",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Hemorrhage",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "22c17fa2256f",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-combat-daggers-raid-leveling-st": {
     "spec": "Hybrid Assassination/Combat",
-    "rotation": "combat-daggers-raid",
+    "rotation": "combat-swords-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7191,
+    "core_share": 0.7229,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -1602,16 +2036,38 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "f5d28ee55c9c",
-    "date": "2026-10-30",
+    "fingerprint": "9c804bb2ebc5",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "daggers-split-open-leveling": {
+    "spec": "Hybrid Assassination/Combat",
+    "rotation": "combat-swords-raid",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7452,
+    "min_share": 0.6,
+    "required": [],
+    "core": [
+     "melee",
+     "Backstab",
+     "Mutilate",
+     "Sinister Strike",
+     "Eviscerate"
+    ],
+    "casts_60": {},
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "cd3a7c398124",
+    "date": "2026-11-02",
     "fights": 300
    },
    "combat-subtlety-open-leveling": {
     "spec": "Hybrid Combat/Subtlety",
-    "rotation": "subtlety-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8919,
+    "rotation": "combat-swords-raid",
+    "ok": false,
+    "verdict": "FAIL: Ghostly Strike 0.00/kill at 20 (needs 0.49); Ghostly Strike 0.00/kill at 30 (needs 0.50); Ghostly Strike 0.00/kill at 40 (needs 0.50); Ghostly Strike 0.00/kill at 50 (needs 0.50); Ghostly Strike 0.00/kill at 60 (needs 0.50)",
+    "core_share": 0.7714,
     "min_share": 0.6,
     "required": [
      "Ghostly Strike"
@@ -1625,48 +2081,53 @@
      "Eviscerate"
     ],
     "casts_60": {
-     "Ghostly Strike": 0.97
+     "Ghostly Strike": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "5db1d94baa25",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Ghostly Strike",
+      20,
+      0.0,
+      0.489
+     ],
+     [
+      "Ghostly Strike",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "850ba373831a",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "shaman": {
-   "elemental-open-leveling": {
-    "spec": "Elemental",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6286,
-    "min_share": 0.6,
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Lava Burst",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Lightning Bolt": 3.77
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "89dd5149a537",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "opt-elemental-dps-leveling-st": {
     "spec": "Elemental",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6638,
+    "rotation": "enhancement-dps",
+    "ok": false,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 36% < 60%",
+    "core_share": 0.3557,
     "min_share": 0.6,
     "required": [
      "Lightning Bolt"
@@ -1679,39 +2140,100 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Lightning Bolt": 4.17
+     "Lightning Bolt": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "b1aba8518e9e",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "b6ada4d20b2a",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "enhancement-open-leveling": {
-    "spec": "Enhancement",
+   "elemental-open-leveling": {
+    "spec": "Elemental",
     "rotation": "enhancement-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7544,
+    "ok": false,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 35% < 60%",
+    "core_share": 0.3454,
     "min_share": 0.6,
     "required": [
-     "Stormstrike"
+     "Lightning Bolt"
     ],
     "core": [
-     "melee",
-     "Stormstrike",
-     "Windfury Weapon",
-     "Flametongue Weapon",
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
      "Earth Shock",
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 2.63
+     "Lightning Bolt": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "07893712e1ef",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "4c2066a5a137",
+    "date": "2026-11-02",
     "fights": 300
    },
    "leveling-enhancement": {
@@ -1738,34 +2260,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "379c3fce5972",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-enhancement-dps-solo-60": {
-    "spec": "Enhancement",
-    "rotation": "enhancement-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7882,
-    "min_share": 0.6,
-    "required": [
-     "Stormstrike"
-    ],
-    "core": [
-     "melee",
-     "Stormstrike",
-     "Windfury Weapon",
-     "Flametongue Weapon",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Stormstrike": 2.48
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "a56055fd5fd6",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-enhancement-dps-leveling-st": {
@@ -1792,7 +2287,61 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "a56055fd5fd6",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-enhancement-dps-solo-60": {
+    "spec": "Enhancement",
+    "rotation": "enhancement-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7882,
+    "min_share": 0.6,
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "casts_60": {
+     "Stormstrike": 2.48
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "a56055fd5fd6",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "enhancement-open-leveling": {
+    "spec": "Enhancement",
+    "rotation": "enhancement-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7544,
+    "min_share": 0.6,
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "casts_60": {
+     "Stormstrike": 2.63
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "07893712e1ef",
+    "date": "2026-11-02",
     "fights": 300
    },
    "restoration-leveling": {
@@ -1808,33 +2357,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "21b75afbbdf4",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "elemental-enhancement-open-leveling": {
-    "spec": "Hybrid Elemental/Enhancement",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6318,
-    "min_share": 0.5,
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Lava Burst",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Lightning Bolt": 3.64
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "01b3e2a09897",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-enhancement-dps-leveling-aoe": {
@@ -1891,40 +2414,68 @@
      ]
     ],
     "fingerprint": "0b0c57b62633",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "elemental-enhancement-open-leveling": {
+    "spec": "Hybrid Elemental/Enhancement",
+    "rotation": "enhancement-dps",
+    "ok": false,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 34% < 50%",
+    "core_share": 0.3368,
+    "min_share": 0.5,
+    "required": [
+     "Lightning Bolt"
+    ],
+    "core": [
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "casts_60": {
+     "Lightning Bolt": 0.0
+    },
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "2da415697153",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "warlock": {
-   "affliction-open-leveling": {
-    "spec": "Affliction",
-    "rotation": "affliction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7064,
-    "min_share": 0.5,
-    "required": [
-     "Corruption",
-     "Bane of Agony"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "Drain Soul"
-    ],
-    "casts_60": {
-     "Corruption": 1.0,
-     "Bane of Agony": 1.0
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "38f53c24afec",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "affliction-leveling": {
     "spec": "Affliction",
     "rotation": "affliction-leveling",
@@ -1950,16 +2501,45 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "52c11da1d3ed",
-    "date": "2026-10-30",
+    "fingerprint": "68550b86ace5",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "affliction-open-leveling": {
+    "spec": "Affliction",
+    "rotation": "affliction-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6889,
+    "min_share": 0.5,
+    "required": [
+     "Corruption",
+     "Bane of Agony"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "Drain Soul"
+    ],
+    "casts_60": {
+     "Corruption": 1.01,
+     "Bane of Agony": 1.0
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "007fa1303365",
+    "date": "2026-11-02",
     "fights": 300
    },
    "demonology-leveling": {
     "spec": "Demonology",
-    "rotation": "demonology-leveling",
+    "rotation": "affliction-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.1998,
+    "core_share": 0.1249,
     "min_share": 0.0,
     "required": [],
     "core": [
@@ -1968,40 +2548,16 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "244a17015280",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "destruction-open-leveling": {
-    "spec": "Destruction",
-    "rotation": "destruction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8182,
-    "min_share": 0.6,
-    "required": [],
-    "core": [
-     "Shadow Bolt",
-     "Immolate",
-     "Conflagrate",
-     "Incinerate",
-     "Searing Pain",
-     "Soul Fire",
-     "Shadowburn"
-    ],
-    "casts_60": {},
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "9895bfde9649",
-    "date": "2026-10-30",
+    "fingerprint": "5f473007afa1",
+    "date": "2026-11-02",
     "fights": 300
    },
    "destruction-leveling": {
     "spec": "Destruction",
-    "rotation": "destruction-leveling",
+    "rotation": "affliction-leveling",
     "ok": false,
-    "verdict": "FAIL: core share 60% < 60%",
-    "core_share": 0.5993,
+    "verdict": "FAIL: core share 23% < 60%",
+    "core_share": 0.2321,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -2016,70 +2572,40 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "a29358872994",
-    "date": "2026-10-30",
+    "fingerprint": "88bd895f22cc",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "affliction-demonology-open-leveling": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "demonology-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7186,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
+   "destruction-open-leveling": {
+    "spec": "Destruction",
+    "rotation": "affliction-leveling",
+    "ok": false,
+    "verdict": "FAIL: core share 47% < 60%",
+    "core_share": 0.4692,
+    "min_share": 0.6,
+    "required": [],
     "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
+     "Shadow Bolt",
+     "Immolate",
+     "Conflagrate",
+     "Incinerate",
+     "Searing Pain",
+     "Soul Fire",
+     "Shadowburn"
     ],
-    "casts_60": {
-     "Corruption": 1.07
-    },
+    "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "cf037c792e37",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-affliction-leveling-leveling-st": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "demonology-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6833,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "casts_60": {
-     "Corruption": 1.14
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "faa56a4f0eb9",
-    "date": "2026-10-30",
+    "fingerprint": "c746b226bce9",
+    "date": "2026-11-02",
     "fights": 300
    },
    "leveling-affliction": {
     "spec": "Hybrid Affliction/Demonology",
-    "rotation": "demonology-leveling",
+    "rotation": "affliction-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.6877,
+    "core_share": 0.6597,
     "min_share": 0.5,
     "required": [
      "Corruption"
@@ -2093,12 +2619,39 @@
      "pet"
     ],
     "casts_60": {
-     "Corruption": 1.26
+     "Corruption": 1.06
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "c2b57361c3ba",
-    "date": "2026-10-30",
+    "fingerprint": "2156954b48b9",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-affliction-leveling-leveling-st": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "affliction-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6493,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.02
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "ce0b0724dc69",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-affliction-leveling-solo-60": {
@@ -2124,8 +2677,8 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "100208e9f166",
-    "date": "2026-10-30",
+    "fingerprint": "26398e4c6c78",
+    "date": "2026-11-02",
     "fights": 300
    },
    "opt-affliction-leveling-leveling-aoe": {
@@ -2151,13 +2704,40 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "54e622b87dc6",
-    "date": "2026-10-30",
+    "fingerprint": "0d30133743b3",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "affliction-demonology-open-leveling": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "affliction-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6469,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.03
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "dfcbc2324b74",
+    "date": "2026-11-02",
     "fights": 300
    },
    "hybrid-demonology-destruction-open-leveling": {
     "spec": "Hybrid Demonology/Destruction",
-    "rotation": "destruction-leveling",
+    "rotation": "affliction-leveling",
     "ok": true,
     "verdict": "no rule",
     "core_share": null,
@@ -2167,42 +2747,12 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "fb7c78a72033",
-    "date": "2026-10-30",
+    "fingerprint": "5f6ed47f87c7",
+    "date": "2026-11-02",
     "fights": 300
    }
   },
   "warrior": {
-   "opt-arms-2h-raid-leveling-st": {
-    "spec": "Arms",
-    "rotation": "arms-2h-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9798,
-    "min_share": 0.8,
-    "required": [
-     "Mortal Strike"
-    ],
-    "core": [
-     "melee",
-     "Mortal Strike",
-     "Overpower",
-     "Slam",
-     "Execute",
-     "Rend",
-     "Whirlwind",
-     "Heroic Strike",
-     "Deep Wounds"
-    ],
-    "casts_60": {
-     "Mortal Strike": 2.41
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "b19381e4d294",
-    "date": "2026-10-30",
-    "fights": 300
-   },
    "leveling-arms": {
     "spec": "Arms",
     "rotation": "arms-2h-raid",
@@ -2230,15 +2780,99 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "68492a8ba333",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "fury-open-leveling": {
-    "spec": "Fury",
-    "rotation": "fury-dw-raid",
+   "opt-arms-2h-raid-leveling-st": {
+    "spec": "Arms",
+    "rotation": "arms-2h-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8371,
+    "core_share": 0.9798,
+    "min_share": 0.8,
+    "required": [
+     "Mortal Strike"
+    ],
+    "core": [
+     "melee",
+     "Mortal Strike",
+     "Overpower",
+     "Slam",
+     "Execute",
+     "Rend",
+     "Whirlwind",
+     "Heroic Strike",
+     "Deep Wounds"
+    ],
+    "casts_60": {
+     "Mortal Strike": 2.41
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "b19381e4d294",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-fury-dw-raid-leveling-st": {
+    "spec": "Fury",
+    "rotation": "arms-2h-raid",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8522,
+    "min_share": 0.8,
+    "required": [
+     "Bloodthirst"
+    ],
+    "core": [
+     "melee",
+     "Bloodthirst",
+     "Whirlwind",
+     "Heroic Strike",
+     "Execute",
+     "Slam"
+    ],
+    "casts_60": {
+     "Bloodthirst": 3.08
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "798a9dab0643",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-fury-dw-raid-solo-60": {
+    "spec": "Fury",
+    "rotation": "arms-2h-raid",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8861,
+    "min_share": 0.8,
+    "required": [
+     "Bloodthirst"
+    ],
+    "core": [
+     "melee",
+     "Bloodthirst",
+     "Whirlwind",
+     "Heroic Strike",
+     "Execute",
+     "Slam"
+    ],
+    "casts_60": {
+     "Bloodthirst": 3.24
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "df9b13851c26",
+    "date": "2026-11-02",
+    "fights": 300
+   },
+   "opt-arms-2h-raid-leveling-aoe": {
+    "spec": "Fury",
+    "rotation": "arms-2h-raid",
+    "ok": false,
+    "verdict": "FAIL: core share 79% < 80%",
+    "core_share": 0.7938,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2256,16 +2890,16 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "6fdd554ae2f7",
-    "date": "2026-10-30",
+    "fingerprint": "e9cccab89921",
+    "date": "2026-11-02",
     "fights": 300
    },
-   "opt-fury-dw-raid-leveling-st": {
+   "fury-open-leveling": {
     "spec": "Fury",
-    "rotation": "fury-dw-raid",
+    "rotation": "arms-2h-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.864,
+    "core_share": 0.8228,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2279,74 +2913,20 @@
      "Slam"
     ],
     "casts_60": {
-     "Bloodthirst": 2.87
+     "Bloodthirst": 2.73
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "e5c12fa55458",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-fury-dw-raid-solo-60": {
-    "spec": "Fury",
-    "rotation": "fury-dw-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8958,
-    "min_share": 0.8,
-    "required": [
-     "Bloodthirst"
-    ],
-    "core": [
-     "melee",
-     "Bloodthirst",
-     "Whirlwind",
-     "Heroic Strike",
-     "Execute",
-     "Slam"
-    ],
-    "casts_60": {
-     "Bloodthirst": 2.99
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "c36ca4911b0f",
-    "date": "2026-10-30",
-    "fights": 300
-   },
-   "opt-arms-2h-raid-leveling-aoe": {
-    "spec": "Fury",
-    "rotation": "fury-dw-raid",
-    "ok": false,
-    "verdict": "FAIL: core share 79% < 80%",
-    "core_share": 0.7906,
-    "min_share": 0.8,
-    "required": [
-     "Bloodthirst"
-    ],
-    "core": [
-     "melee",
-     "Bloodthirst",
-     "Whirlwind",
-     "Heroic Strike",
-     "Execute",
-     "Slam"
-    ],
-    "casts_60": {
-     "Bloodthirst": 2.45
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "661157b24486",
-    "date": "2026-10-30",
+    "fingerprint": "689d52bb82fd",
+    "date": "2026-11-02",
     "fights": 300
    },
    "protection-open-leveling": {
     "spec": "Protection",
-    "rotation": "prot-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9533,
+    "rotation": "arms-2h-raid",
+    "ok": false,
+    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50)",
+    "core_share": 0.7141,
     "min_share": 0.7,
     "required": [
      "Shield Slam"
@@ -2359,20 +2939,39 @@
      "Thunder Clap"
     ],
     "casts_60": {
-     "Shield Slam": 2.76
+     "Shield Slam": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "d0fdae8f58e6",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Shield Slam",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "61019c0b4c8b",
+    "date": "2026-11-02",
     "fights": 300
    },
    "protection-leveling": {
     "spec": "Protection",
-    "rotation": "prot-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9126,
+    "rotation": "arms-2h-raid",
+    "ok": false,
+    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70%",
+    "core_share": 0.6752,
     "min_share": 0.7,
     "required": [
      "Shield Slam"
@@ -2385,12 +2984,31 @@
      "Thunder Clap"
     ],
     "casts_60": {
-     "Shield Slam": 3.09
+     "Shield Slam": 0.0
     },
     "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "2d066e85ef5b",
-    "date": "2026-10-30",
+    "uncast": [
+     [
+      "Shield Slam",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "fingerprint": "bcf53dfe3f3e",
+    "date": "2026-11-02",
     "fights": 300
    }
   }
@@ -2400,9 +3018,9 @@
    {
     "spec": "Balance",
     "name": "Balance",
-    "build": "balance-open-leveling",
-    "split": "38/0/13",
-    "rotation": "balance-dps",
+    "build": "opt-balance-dps-leveling-st",
+    "split": "36/0/15",
+    "rotation": "feral-cat-dps",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -2417,30 +3035,86 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Starfire": 4.17,
-     "Moonfire": 1.44
+     "Starfire": 0.0,
+     "Moonfire": 0.0
     },
-    "core_share": 0.9629,
+    "core_share": 0,
     "min_share": 0.7,
-    "weighted": 43.52,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 34.47,
+    "verdict": "FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Starfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Starfire": 0.572,
-     "Moonfire": 0.212,
-     "Insect Swarm": 0.091,
-     "Wrath": 0.088,
-     "Thorns": 0.037
+     "Melee": 0.374,
+     "Ferocious Bite": 0.145,
+     "Claw": 0.144,
+     "Ravage": 0.107,
+     "Rake": 0.09,
+     "Rip": 0.07
     }
    },
    {
     "spec": "Balance",
     "name": "Balance",
-    "build": "opt-balance-dps-leveling-st",
-    "split": "36/2/13",
-    "rotation": "balance-dps",
+    "build": "balance-open-leveling",
+    "split": "38/0/13",
+    "rotation": "feral-cat-dps",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -2455,113 +3129,127 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Starfire": 4.64,
-     "Moonfire": 1.56
+     "Starfire": 0.0,
+     "Moonfire": 0.0
     },
-    "core_share": 0.9632,
+    "core_share": 0,
     "min_share": 0.7,
-    "weighted": 44.38,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 36.01,
+    "verdict": "FAIL: Starfire 0.00/kill at 30 (needs 0.50); Starfire 0.00/kill at 40 (needs 0.50); Starfire 0.00/kill at 50 (needs 0.50); Starfire 0.00/kill at 60 (needs 0.50); Moonfire 0.00/kill at 20 (needs 0.50); Moonfire 0.00/kill at 30 (needs 0.50); Moonfire 0.00/kill at 40 (needs 0.50); Moonfire 0.00/kill at 50 (needs 0.50); Moonfire 0.00/kill at 60 (needs 0.50); core share 0% < 70%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Starfire": 0.652,
-     "Moonfire": 0.215,
-     "Wrath": 0.096,
-     "Thorns": 0.037,
-     "Entangling Roots": 0.0
-    }
-   },
-   {
-    "spec": "Feral Combat",
-    "name": "Feral Combat",
-    "build": "opt-feral-cat-dps-solo-60",
-    "split": "9/31/11",
-    "rotation": "feral-cat-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Claw",
-     "Ferocious Bite"
+    "uncast": [
+     [
+      "Starfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Starfire",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Moonfire",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "core": [
-     "melee",
-     "Claw",
-     "Rake",
-     "Rip",
-     "Ferocious Bite",
-     "Shred",
-     "Primal Bite"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Claw": 3.23,
-     "Ferocious Bite": 0.89
-    },
-    "core_share": 0.8196,
-    "min_share": 0.8,
-    "weighted": 28.03,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
     "top_shares": {
-     "Melee": 0.306,
-     "Claw": 0.176,
+     "Melee": 0.369,
      "Ferocious Bite": 0.146,
-     "Ravage": 0.141,
-     "Rip": 0.116,
-     "Rake": 0.075
-    }
-   },
-   {
-    "spec": "Feral Combat",
-    "name": "Feral Combat",
-    "build": "opt-feral-cat-dps-leveling-st",
-    "split": "9/31/11",
-    "rotation": "feral-cat-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Claw",
-     "Ferocious Bite"
-    ],
-    "core": [
-     "melee",
-     "Claw",
-     "Rake",
-     "Rip",
-     "Ferocious Bite",
-     "Shred",
-     "Primal Bite"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Claw": 3.23,
-     "Ferocious Bite": 0.89
-    },
-    "core_share": 0.8196,
-    "min_share": 0.8,
-    "weighted": 28.03,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.306,
-     "Claw": 0.176,
-     "Ferocious Bite": 0.146,
-     "Ravage": 0.141,
-     "Rip": 0.116,
-     "Rake": 0.075
+     "Claw": 0.143,
+     "Ravage": 0.106,
+     "Rake": 0.094,
+     "Rip": 0.072
     }
    },
    {
     "spec": "Feral Combat",
     "name": "Feral Combat",
     "build": "leveling-feral",
-    "split": "9/31/11",
+    "split": "9/30/12",
+    "rotation": "feral-cat-dps",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [
+     "Claw",
+     "Ferocious Bite"
+    ],
+    "core": [
+     "melee",
+     "Claw",
+     "Rake",
+     "Rip",
+     "Ferocious Bite",
+     "Shred",
+     "Primal Bite"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Claw": 3.36,
+     "Ferocious Bite": 0.84
+    },
+    "core_share": 0.8282,
+    "min_share": 0.8,
+    "weighted": 25.94,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.319,
+     "Claw": 0.174,
+     "Ferocious Bite": 0.146,
+     "Ravage": 0.131,
+     "Rip": 0.114,
+     "Rake": 0.076
+    }
+   },
+   {
+    "spec": "Feral Combat",
+    "name": "Feral Combat",
+    "build": "opt-feral-cat-dps-leveling-st",
+    "split": "9/30/12",
     "rotation": "feral-cat-dps",
     "rules": "tuned",
     "kind": "slot",
@@ -2580,30 +3268,72 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Claw": 3.72,
-     "Ferocious Bite": 1.06
+     "Claw": 3.29,
+     "Ferocious Bite": 0.82
     },
-    "core_share": 0.816,
+    "core_share": 0.8258,
     "min_share": 0.8,
-    "weighted": 29.04,
+    "weighted": 25.8,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.331,
-     "Claw": 0.194,
-     "Ferocious Bite": 0.174,
-     "Ravage": 0.141,
-     "Rake": 0.082,
-     "Thorns": 0.043
+     "Melee": 0.318,
+     "Claw": 0.176,
+     "Ferocious Bite": 0.148,
+     "Ravage": 0.134,
+     "Rip": 0.108,
+     "Rake": 0.075
+    }
+   },
+   {
+    "spec": "Feral Combat",
+    "name": "Feral Combat",
+    "build": "opt-feral-cat-dps-solo-60",
+    "split": "9/30/12",
+    "rotation": "feral-cat-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Claw",
+     "Ferocious Bite"
+    ],
+    "core": [
+     "melee",
+     "Claw",
+     "Rake",
+     "Rip",
+     "Ferocious Bite",
+     "Shred",
+     "Primal Bite"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Claw": 3.29,
+     "Ferocious Bite": 0.82
+    },
+    "core_share": 0.8258,
+    "min_share": 0.8,
+    "weighted": 25.64,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.318,
+     "Claw": 0.176,
+     "Ferocious Bite": 0.149,
+     "Ravage": 0.134,
+     "Rip": 0.107,
+     "Rake": 0.076
     }
    },
    {
     "spec": "Restoration",
     "name": "Restoration",
     "build": "restoration-leveling",
-    "split": "11/5/35",
+    "split": "11/4/36",
     "rotation": "feral-cat-dps",
     "rules": "tuned",
     "kind": "page",
@@ -2613,18 +3343,18 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 34.72,
+    "weighted": 33.7,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.377,
-     "Claw": 0.146,
-     "Ferocious Bite": 0.13,
-     "Ravage": 0.1,
-     "Rip": 0.092,
-     "Rake": 0.092
+     "Melee": 0.374,
+     "Claw": 0.145,
+     "Ferocious Bite": 0.135,
+     "Ravage": 0.104,
+     "Rake": 0.095,
+     "Rip": 0.085
     }
    }
   ],
@@ -2632,8 +3362,8 @@
    {
     "spec": "Beast Mastery",
     "name": "Beast Mastery",
-    "build": "beast-mastery-open-leveling",
-    "split": "31/16/4",
+    "build": "bm-solo-farm",
+    "split": "31/20/0",
     "rotation": "bm-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -2645,22 +3375,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bestial Wrath": 0.19
+     "Bestial Wrath": 0.21
     },
-    "core_share": 0.4064,
+    "core_share": 0.4168,
     "min_share": 0.35,
-    "weighted": 24.04,
+    "weighted": 24.5,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.328,
-     "Cat melee": 0.257,
-     "Serpent Sting": 0.146,
-     "Claw": 0.122,
-     "Aimed Shot": 0.119,
-     "Bite": 0.027
+     "Auto Shot": 0.339,
+     "Cat melee": 0.275,
+     "Aimed Shot": 0.123,
+     "Serpent Sting": 0.121,
+     "Claw": 0.093,
+     "Bite": 0.048
     }
    },
    {
@@ -2681,9 +3411,9 @@
     "casts_60": {
      "Bestial Wrath": 0.0
     },
-    "core_share": 0.3891,
+    "core_share": 0.389,
     "min_share": 0.35,
-    "weighted": 24.47,
+    "weighted": 23.33,
     "verdict": "FAIL: lacks Bestial Wrath",
     "ok": false,
     "missing_talents": [
@@ -2702,8 +3432,8 @@
    {
     "spec": "Beast Mastery",
     "name": "Beast Mastery",
-    "build": "bm-solo-farm",
-    "split": "31/20/0",
+    "build": "beast-mastery-open-leveling",
+    "split": "31/16/4",
     "rotation": "bm-leveling",
     "rules": "tuned",
     "kind": "slot",
@@ -2715,22 +3445,182 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bestial Wrath": 0.21
+     "Bestial Wrath": 0.2
     },
-    "core_share": 0.4159,
+    "core_share": 0.401,
     "min_share": 0.35,
+    "weighted": 24.22,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.332,
+     "Cat melee": 0.253,
+     "Serpent Sting": 0.146,
+     "Claw": 0.122,
+     "Aimed Shot": 0.12,
+     "Bite": 0.026
+    }
+   },
+   {
+    "spec": "Marksmanship",
+    "name": "Marksmanship",
+    "build": "leveling-beast-mastery",
+    "split": "20/31/0",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Aimed Shot": 1.69
+    },
+    "core_share": 0.664,
+    "min_share": 0.6,
+    "weighted": 24.06,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.361,
+     "Cat melee": 0.21,
+     "Serpent Sting": 0.162,
+     "Aimed Shot": 0.141,
+     "Claw": 0.081,
+     "Bite": 0.041
+    }
+   },
+   {
+    "spec": "Marksmanship",
+    "name": "Marksmanship",
+    "build": "opt-bm-leveling-leveling-st",
+    "split": "20/31/0",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Aimed Shot": 1.62
+    },
+    "core_share": 0.6571,
+    "min_share": 0.6,
+    "weighted": 23.34,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.363,
+     "Cat melee": 0.214,
+     "Serpent Sting": 0.156,
+     "Aimed Shot": 0.138,
+     "Claw": 0.082,
+     "Bite": 0.043
+    }
+   },
+   {
+    "spec": "Marksmanship",
+    "name": "Marksmanship",
+    "build": "opt-bm-leveling-solo-60",
+    "split": "20/31/0",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Aimed Shot": 1.68
+    },
+    "core_share": 0.6679,
+    "min_share": 0.6,
+    "weighted": 23.53,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.365,
+     "Cat melee": 0.208,
+     "Serpent Sting": 0.158,
+     "Aimed Shot": 0.145,
+     "Claw": 0.079,
+     "Bite": 0.042
+    }
+   },
+   {
+    "spec": "Marksmanship",
+    "name": "Marksmanship",
+    "build": "opt-mm-raid-leveling-st",
+    "split": "13/33/5",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Aimed Shot"
+    ],
+    "core": [
+     "Auto Shot",
+     "Aimed Shot",
+     "Arcane Shot",
+     "Multi-Shot",
+     "Sniper Shot",
+     "Barrage",
+     "Serpent Sting"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Aimed Shot": 1.64
+    },
+    "core_share": 0.7041,
+    "min_share": 0.6,
     "weighted": 24.4,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.337,
-     "Cat melee": 0.274,
-     "Aimed Shot": 0.126,
-     "Serpent Sting": 0.121,
-     "Claw": 0.093,
-     "Bite": 0.049
+     "Auto Shot": 0.383,
+     "Cat melee": 0.176,
+     "Serpent Sting": 0.171,
+     "Aimed Shot": 0.15,
+     "Claw": 0.067,
+     "Bite": 0.035
     }
    },
    {
@@ -2738,9 +3628,9 @@
     "name": "Marksmanship",
     "build": "marksmanship-open-leveling",
     "split": "21/30/0",
-    "rotation": "mm-raid",
+    "rotation": "bm-leveling",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "slot",
     "required": [
      "Aimed Shot"
     ],
@@ -2757,188 +3647,28 @@
     "casts_60": {
      "Aimed Shot": 1.59
     },
-    "core_share": 0.6461,
+    "core_share": 0.6502,
     "min_share": 0.6,
-    "weighted": 24.33,
+    "weighted": 24.62,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.353,
-     "Cat melee": 0.216,
+     "Auto Shot": 0.356,
+     "Cat melee": 0.212,
      "Serpent Sting": 0.155,
-     "Aimed Shot": 0.138,
-     "Claw": 0.095,
-     "Bite": 0.04
-    }
-   },
-   {
-    "spec": "Marksmanship",
-    "name": "Marksmanship",
-    "build": "opt-bm-leveling-solo-60",
-    "split": "20/31/0",
-    "rotation": "mm-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Aimed Shot": 1.63
-    },
-    "core_share": 0.656,
-    "min_share": 0.6,
-    "weighted": 24.55,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Auto Shot": 0.36,
-     "Cat melee": 0.217,
-     "Serpent Sting": 0.157,
-     "Aimed Shot": 0.14,
-     "Claw": 0.082,
-     "Bite": 0.043
-    }
-   },
-   {
-    "spec": "Marksmanship",
-    "name": "Marksmanship",
-    "build": "opt-bm-leveling-leveling-st",
-    "split": "20/31/0",
-    "rotation": "mm-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Aimed Shot": 1.63
-    },
-    "core_share": 0.6554,
-    "min_share": 0.6,
-    "weighted": 24.75,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Auto Shot": 0.364,
-     "Cat melee": 0.216,
-     "Serpent Sting": 0.156,
-     "Aimed Shot": 0.135,
-     "Claw": 0.083,
-     "Bite": 0.042
-    }
-   },
-   {
-    "spec": "Marksmanship",
-    "name": "Marksmanship",
-    "build": "opt-mm-raid-leveling-st",
-    "split": "12/34/5",
-    "rotation": "mm-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Aimed Shot": 1.65
-    },
-    "core_share": 0.7046,
-    "min_share": 0.6,
-    "weighted": 25.06,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Auto Shot": 0.381,
-     "Cat melee": 0.172,
-     "Serpent Sting": 0.17,
-     "Aimed Shot": 0.154,
-     "Claw": 0.067,
-     "Bite": 0.034
-    }
-   },
-   {
-    "spec": "Marksmanship",
-    "name": "Marksmanship",
-    "build": "leveling-beast-mastery",
-    "split": "20/31/0",
-    "rotation": "mm-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Aimed Shot"
-    ],
-    "core": [
-     "Auto Shot",
-     "Aimed Shot",
-     "Arcane Shot",
-     "Multi-Shot",
-     "Sniper Shot",
-     "Barrage",
-     "Serpent Sting"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Aimed Shot": 1.12
-    },
-    "core_share": 0.5837,
-    "min_share": 0.6,
-    "weighted": 25.28,
-    "verdict": "FAIL: core share 58% < 60%",
-    "ok": false,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Auto Shot": 0.336,
-     "Cat melee": 0.193,
-     "Serpent Sting": 0.152,
-     "Summon Hawk": 0.104,
-     "Aimed Shot": 0.096,
-     "Claw": 0.077
+     "Aimed Shot": 0.139,
+     "Claw": 0.094,
+     "Bite": 0.039
     }
    },
    {
     "spec": "Survival",
     "name": "Survival",
-    "build": "leveling-melee",
-    "split": "9/10/32",
-    "rotation": "melee-dps",
+    "build": "opt-bm-leveling-leveling-aoe",
+    "split": "8/12/31",
+    "rotation": "bm-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -2951,54 +3681,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.5017,
+    "core_share": 0.0052,
     "min_share": 0.5,
-    "weighted": 24.29,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Cat melee": 0.222,
-     "Melee": 0.139,
-     "Raptor Strike": 0.134,
-     "Melee (off-hand)": 0.125,
-     "Immolation Trap": 0.103,
-     "Claw": 0.082
-    }
-   },
-   {
-    "spec": "Survival",
-    "name": "Survival",
-    "build": "opt-bm-leveling-leveling-aoe",
-    "split": "7/12/32",
-    "rotation": "melee-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [],
-    "core": [
-     "melee",
-     "Raptor Strike",
-     "Mongoose Bite",
-     "Lacerate",
-     "Wing Clip"
-    ],
-    "rule_issues": [],
-    "casts_60": {},
-    "core_share": 0.4477,
-    "min_share": 0.5,
-    "weighted": 28.32,
-    "verdict": "FAIL: core share 45% < 50%",
+    "weighted": 26.84,
+    "verdict": "FAIL: core share 1% < 50%",
     "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Cat melee": 0.217,
-     "Immolation Trap": 0.168,
-     "Melee": 0.132,
-     "Raptor Strike": 0.123,
-     "Melee (off-hand)": 0.098,
-     "Claw": 0.082
+     "Auto Shot": 0.403,
+     "Cat melee": 0.197,
+     "Serpent Sting": 0.141,
+     "Aimed Shot": 0.14,
+     "Claw": 0.077,
+     "Bite": 0.037
     }
    },
    {
@@ -3024,30 +3720,30 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Aimed Shot": 1.57
+     "Aimed Shot": 1.55
     },
-    "core_share": 0.9972,
+    "core_share": 0.9979,
     "min_share": 0.7,
-    "weighted": 23.87,
+    "weighted": 22.77,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.349,
-     "Cat melee": 0.231,
+     "Auto Shot": 0.351,
+     "Cat melee": 0.23,
      "Serpent Sting": 0.152,
-     "Aimed Shot": 0.128,
-     "Claw": 0.114,
+     "Aimed Shot": 0.127,
+     "Claw": 0.113,
      "Bite": 0.023
     }
    },
    {
     "spec": "Hybrid Beast Mastery/Survival",
     "name": "Beast-Survival",
-    "build": "beast-survival-open-leveling",
-    "split": "23/3/25",
-    "rotation": "melee-dps",
+    "build": "leveling-melee",
+    "split": "12/10/29",
+    "rotation": "bm-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -3060,54 +3756,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.754,
+    "core_share": 0.3148,
     "min_share": 0.5,
-    "weighted": 22.44,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 26.36,
+    "verdict": "FAIL: core share 31% < 50%",
+    "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Cat melee": 0.239,
-     "Immolation Trap": 0.203,
-     "Claw": 0.126,
-     "Raptor Strike": 0.107,
-     "Melee": 0.102,
-     "Melee (off-hand)": 0.098
-    }
-   },
-   {
-    "spec": "Hybrid Beast Mastery/Survival",
-    "name": "Beast-Survival",
-    "build": "opt-melee-dps-leveling-st",
-    "split": "15/10/26",
-    "rotation": "melee-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [],
-    "core": [
-     "melee",
-     "Raptor Strike",
-     "Mongoose Bite",
-     "Lacerate",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {},
-    "core_share": 0.8205,
-    "min_share": 0.5,
-    "weighted": 23.87,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Cat melee": 0.235,
-     "Immolation Trap": 0.132,
-     "Raptor Strike": 0.124,
-     "Melee": 0.12,
-     "Melee (off-hand)": 0.115,
-     "Claw": 0.088
+     "Auto Shot": 0.404,
+     "Cat melee": 0.196,
+     "Aimed Shot": 0.141,
+     "Serpent Sting": 0.139,
+     "Claw": 0.075,
+     "Bite": 0.036
     }
    },
    {
@@ -3128,20 +3790,122 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.3482,
+    "core_share": 0.3462,
     "min_share": 0.5,
-    "weighted": 26.81,
+    "weighted": 25.52,
     "verdict": "FAIL: core share 35% < 50%",
     "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.379,
-     "Cat melee": 0.222,
-     "Serpent Sting": 0.137,
+     "Auto Shot": 0.382,
+     "Cat melee": 0.22,
+     "Serpent Sting": 0.136,
      "Aimed Shot": 0.135,
      "Claw": 0.083,
      "Bite": 0.042
+    }
+   },
+   {
+    "spec": "Hybrid Beast Mastery/Survival",
+    "name": "Beast-Survival",
+    "build": "opt-melee-dps-leveling-st",
+    "split": "15/10/26",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.3462,
+    "min_share": 0.5,
+    "weighted": 25.52,
+    "verdict": "FAIL: core share 35% < 50%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.382,
+     "Cat melee": 0.22,
+     "Serpent Sting": 0.136,
+     "Aimed Shot": 0.135,
+     "Claw": 0.083,
+     "Bite": 0.042
+    }
+   },
+   {
+    "spec": "Hybrid Beast Mastery/Survival",
+    "name": "Beast-Survival",
+    "build": "beast-survival-open-leveling",
+    "split": "23/3/25",
+    "rotation": "bm-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.3812,
+    "min_share": 0.5,
+    "weighted": 26.46,
+    "verdict": "FAIL: core share 38% < 50%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Auto Shot": 0.354,
+     "Cat melee": 0.235,
+     "Serpent Sting": 0.136,
+     "Aimed Shot": 0.129,
+     "Claw": 0.122,
+     "Bite": 0.024
+    }
+   },
+   {
+    "spec": "Hybrid Beast Mastery/Survival",
+    "name": "Beast-Survival",
+    "build": "leveling-melee",
+    "split": "12/10/29",
+    "rotation": "melee-dps",
+    "rules": "tuned",
+    "kind": "mapped",
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.8513,
+    "min_share": 0.5,
+    "weighted": 23.01,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Cat melee": 0.223,
+     "Melee": 0.139,
+     "Raptor Strike": 0.136,
+     "Melee (off-hand)": 0.126,
+     "Immolation Trap": 0.099,
+     "Claw": 0.082
     }
    }
   ],
@@ -3149,9 +3913,9 @@
    {
     "spec": "Arcane",
     "name": "Arcane",
-    "build": "arcane-open-leveling",
-    "split": "34/17/0",
-    "rotation": "arcane-leveling",
+    "build": "arcane-leveling",
+    "split": "29/0/22",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3164,30 +3928,31 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Arcane Blast": 1.78
+     "Arcane Blast": 0.0
     },
-    "core_share": 0.9145,
+    "core_share": 0,
     "min_share": 0.5,
-    "weighted": 32.43,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
+    "weighted": 28.94,
+    "verdict": "FAIL: lacks Arcane Blast; core share 0% < 50%",
+    "ok": false,
+    "missing_talents": [
+     "Arcane Blast"
+    ],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.711,
-     "Arcane Blast": 0.157,
-     "Fire Blast": 0.07,
-     "Arcane Wrath": 0.046,
-     "Cone of Cold": 0.015,
-     "Wand": 0.0
+     "Frostbolt": 0.454,
+     "Ice Lance": 0.345,
+     "Fire Blast": 0.165,
+     "Wand": 0.023,
+     "Frost Nova": 0.013
     }
    },
    {
     "spec": "Arcane",
     "name": "Arcane",
-    "build": "arcane-leveling",
-    "split": "30/0/21",
-    "rotation": "arcane-leveling",
+    "build": "arcane-open-leveling",
+    "split": "31/17/3",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -3202,30 +3967,33 @@
     "casts_60": {
      "Arcane Blast": 0.0
     },
-    "core_share": 0.7407,
+    "core_share": 0,
     "min_share": 0.5,
-    "weighted": 42.47,
-    "verdict": "FAIL: lacks Arcane Blast",
+    "weighted": 40.64,
+    "verdict": "FAIL: Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
     "ok": false,
-    "missing_talents": [
-     "Arcane Blast"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Arcane Blast",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.741,
-     "Ice Lance": 0.143,
-     "Fire Blast": 0.087,
-     "Cone of Cold": 0.028,
-     "Frostbolt": 0.001,
-     "Wand": 0.0
+     "Frostbolt": 0.631,
+     "Fire Blast": 0.282,
+     "Wand": 0.066,
+     "Frost Nova": 0.021
     }
    },
    {
     "spec": "Fire",
     "name": "Fire",
-    "build": "fire-open-leveling",
-    "split": "0/31/20",
-    "rotation": "fire-leveling",
+    "build": "opt-fire-leveling-leveling-st",
+    "split": "4/31/16",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3242,57 +4010,46 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Fireball": 1.04,
-     "Pyroblast": 0.65
-    },
-    "core_share": 0.6285,
-    "min_share": 0.6,
-    "weighted": 34.58,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Ice Lance": 0.344,
-     "Fire Blast": 0.238,
-     "Fireball": 0.158,
-     "Pyroblast": 0.12,
-     "Ignite": 0.05,
-     "Scorch": 0.035
-    }
-   },
-   {
-    "spec": "Fire",
-    "name": "Fire",
-    "build": "fire-leveling",
-    "split": "0/32/19",
-    "rotation": "fire-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Fireball",
-     "Pyroblast"
-    ],
-    "core": [
-     "Fireball",
-     "Pyroblast",
-     "Fire Blast",
-     "Scorch",
-     "Ignite",
-     "Flamestrike"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Fireball": 1.41,
+     "Fireball": 0.0,
      "Pyroblast": 0.0
     },
-    "core_share": 0.5605,
+    "core_share": 0.2535,
     "min_share": 0.6,
-    "weighted": 36.1,
-    "verdict": "FAIL: Pyroblast 0.00/kill at 60 (needs 0.50); core share 56% < 60%",
+    "weighted": 39.63,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 25% < 60%",
     "ok": false,
     "missing_talents": [],
     "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
      [
       "Pyroblast",
       60,
@@ -3301,20 +4058,20 @@
      ]
     ],
     "top_shares": {
-     "Ice Lance": 0.362,
-     "Fire Blast": 0.251,
-     "Fireball": 0.216,
-     "Ignite": 0.051,
-     "Blast Wave": 0.049,
-     "Scorch": 0.026
+     "Frostbolt": 0.441,
+     "Ice Lance": 0.246,
+     "Fire Blast": 0.245,
+     "Wand": 0.042,
+     "Frost Nova": 0.018,
+     "Ignite": 0.009
     }
    },
    {
     "spec": "Fire",
     "name": "Fire",
-    "build": "opt-fire-leveling-leveling-st",
-    "split": "2/33/16",
-    "rotation": "fire-leveling",
+    "build": "fire-leveling",
+    "split": "0/32/19",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -3331,60 +4088,138 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Fireball": 1.34,
-     "Pyroblast": 0.62
+     "Fireball": 0.0,
+     "Pyroblast": 0.0
     },
-    "core_share": 0.6884,
+    "core_share": 0.2116,
     "min_share": 0.6,
-    "weighted": 39.35,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 35.51,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 21% < 60%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Pyroblast",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Fire Blast": 0.268,
-     "Ice Lance": 0.247,
-     "Fireball": 0.208,
-     "Pyroblast": 0.119,
-     "Ignite": 0.054,
-     "Blast Wave": 0.041
+     "Frostbolt": 0.431,
+     "Ice Lance": 0.318,
+     "Fire Blast": 0.204,
+     "Wand": 0.023,
+     "Frost Nova": 0.016,
+     "Ignite": 0.007
     }
    },
    {
-    "spec": "Frost",
-    "name": "Frost",
-    "build": "frost-open-leveling",
-    "split": "18/3/30",
+    "spec": "Fire",
+    "name": "Fire",
+    "build": "fire-open-leveling",
+    "split": "0/31/20",
     "rotation": "frost-leveling",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "slot",
     "required": [
-     "Frostbolt"
+     "Fireball",
+     "Pyroblast"
     ],
     "core": [
-     "Frostbolt",
-     "Ice Lance",
-     "Frost Blast",
-     "Cone of Cold",
-     "Blizzard"
+     "Fireball",
+     "Pyroblast",
+     "Fire Blast",
+     "Scorch",
+     "Ignite",
+     "Flamestrike"
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.04
+     "Fireball": 0.0,
+     "Pyroblast": 0.0
     },
-    "core_share": 0.8645,
+    "core_share": 0.2586,
     "min_share": 0.6,
-    "weighted": 30.05,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 34.09,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 26% < 60%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Fireball",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Fireball",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Pyroblast",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Ice Lance": 0.576,
-     "Frostbolt": 0.289,
-     "Fire Blast": 0.111,
-     "Frost Nova": 0.014,
-     "Wand": 0.01
+     "Frostbolt": 0.413,
+     "Ice Lance": 0.273,
+     "Fire Blast": 0.245,
+     "Wand": 0.035,
+     "Frost Nova": 0.02,
+     "Ignite": 0.014
     }
    },
    {
@@ -3394,7 +4229,7 @@
     "split": "17/0/34",
     "rotation": "frost-leveling",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Frostbolt"
     ],
@@ -3407,28 +4242,28 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 1.88
+     "Frostbolt": 2.74
     },
-    "core_share": 0.8154,
+    "core_share": 0.7873,
     "min_share": 0.6,
-    "weighted": 31.38,
+    "weighted": 29.63,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.544,
-     "Frostbolt": 0.272,
-     "Fire Blast": 0.151,
-     "Wand": 0.02,
-     "Frost Nova": 0.014
+     "Frostbolt": 0.452,
+     "Ice Lance": 0.336,
+     "Fire Blast": 0.163,
+     "Wand": 0.036,
+     "Frost Nova": 0.015
     }
    },
    {
     "spec": "Frost",
     "name": "Frost",
     "build": "opt-frost-aoe-leveling-aoe",
-    "split": "5/3/43",
+    "split": "7/3/41",
     "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "slot",
@@ -3444,29 +4279,66 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.36
+     "Frostbolt": 2.98
     },
-    "core_share": 0.844,
+    "core_share": 0.8025,
     "min_share": 0.6,
-    "weighted": 34.54,
+    "weighted": 31.89,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.517,
-     "Frostbolt": 0.327,
-     "Fire Blast": 0.126,
-     "Frost Nova": 0.02,
-     "Wand": 0.01
+     "Frostbolt": 0.47,
+     "Ice Lance": 0.332,
+     "Fire Blast": 0.152,
+     "Wand": 0.025,
+     "Frost Nova": 0.021
+    }
+   },
+   {
+    "spec": "Frost",
+    "name": "Frost",
+    "build": "frost-open-leveling",
+    "split": "18/3/30",
+    "rotation": "frost-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Frostbolt"
+    ],
+    "core": [
+     "Frostbolt",
+     "Ice Lance",
+     "Frost Blast",
+     "Cone of Cold",
+     "Blizzard"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Frostbolt": 2.91
+    },
+    "core_share": 0.8318,
+    "min_share": 0.6,
+    "weighted": 27.62,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Frostbolt": 0.473,
+     "Ice Lance": 0.358,
+     "Fire Blast": 0.129,
+     "Wand": 0.025,
+     "Frost Nova": 0.014
     }
    },
    {
     "spec": "Hybrid Arcane/Frost",
     "name": "Arcane-Frost",
-    "build": "arcane-frost-open-leveling",
-    "split": "18/2/31",
-    "rotation": "barrage-frost-leveling",
+    "build": "opt-frost-leveling-leveling-st",
+    "split": "22/3/26",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3481,31 +4353,37 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 1.85,
-     "Arcane Missiles": 0.34
+     "Frostbolt": 2.7,
+     "Arcane Missiles": 0.0
     },
-    "core_share": 0.8821,
+    "core_share": 0.7896,
     "min_share": 0.6,
-    "weighted": 28.65,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 27.9,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Arcane Missiles",
+      60,
+      0.0,
+      0.25
+     ]
+    ],
     "top_shares": {
-     "Ice Lance": 0.532,
-     "Frostbolt": 0.261,
-     "Fire Blast": 0.095,
-     "Arcane Missiles": 0.089,
-     "Frost Nova": 0.014,
-     "Wand": 0.008
+     "Frostbolt": 0.432,
+     "Ice Lance": 0.358,
+     "Fire Blast": 0.163,
+     "Wand": 0.034,
+     "Frost Nova": 0.013
     }
    },
    {
     "spec": "Hybrid Arcane/Frost",
     "name": "Arcane-Frost",
-    "build": "opt-frost-leveling-leveling-st",
-    "split": "21/3/27",
-    "rotation": "barrage-frost-leveling",
+    "build": "arcane-frost-open-leveling",
+    "split": "18/2/31",
+    "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -3520,30 +4398,121 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 1.87,
-     "Arcane Missiles": 0.27
+     "Frostbolt": 2.9,
+     "Arcane Missiles": 0.0
     },
-    "core_share": 0.8455,
+    "core_share": 0.8209,
     "min_share": 0.6,
-    "weighted": 30.07,
-    "verdict": "FAIL: Arcane Missiles 0.24/kill at 50 (needs 0.25)",
+    "weighted": 27.22,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
     "ok": false,
     "missing_talents": [],
     "uncast": [
      [
       "Arcane Missiles",
-      50,
-      0.24,
+      60,
+      0.0,
       0.25
      ]
     ],
     "top_shares": {
-     "Ice Lance": 0.503,
-     "Frostbolt": 0.268,
-     "Fire Blast": 0.126,
-     "Arcane Missiles": 0.075,
-     "Wand": 0.016,
+     "Frostbolt": 0.47,
+     "Ice Lance": 0.351,
+     "Fire Blast": 0.134,
+     "Wand": 0.029,
+     "Frost Nova": 0.015
+    }
+   },
+   {
+    "spec": "Hybrid Arcane/Frost",
+    "name": "Arcane-Frost",
+    "build": "opt-frost-leveling-leveling-st",
+    "split": "22/3/26",
+    "rotation": "barrage-frost-leveling",
+    "rules": "tuned",
+    "kind": "mapped",
+    "required": [
+     "Frostbolt",
+     "Arcane Missiles"
+    ],
+    "core": [
+     "Frostbolt",
+     "Arcane Missiles",
+     "Ice Lance",
+     "Arcane Blast"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Frostbolt": 2.09,
+     "Arcane Missiles": 0.92
+    },
+    "core_share": 0.8469,
+    "min_share": 0.6,
+    "weighted": 28.6,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Frostbolt": 0.342,
+     "Ice Lance": 0.282,
+     "Arcane Missiles": 0.223,
+     "Fire Blast": 0.12,
+     "Wand": 0.021,
      "Frost Nova": 0.012
+    }
+   },
+   {
+    "spec": "Hybrid Fire/Frost",
+    "name": "Frostfire",
+    "build": "frostfire-open-leveling",
+    "split": "1/25/25",
+    "rotation": "frost-leveling",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [
+     "Frostfire Bolt"
+    ],
+    "core": [
+     "Frostfire Bolt"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Frostfire Bolt": 0.0
+    },
+    "core_share": 0,
+    "min_share": 0.3,
+    "weighted": 31.2,
+    "verdict": "FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Frostfire Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Frostfire Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Frostfire Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "top_shares": {
+     "Frostbolt": 0.414,
+     "Ice Lance": 0.376,
+     "Fire Blast": 0.163,
+     "Wand": 0.024,
+     "Frost Nova": 0.016,
+     "Ignite": 0.008
     }
    },
    {
@@ -3553,7 +4522,7 @@
     "split": "1/25/25",
     "rotation": "frostfire-leveling",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "mapped",
     "required": [
      "Frostfire Bolt"
     ],
@@ -3562,22 +4531,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostfire Bolt": 2.67
+     "Frostfire Bolt": 4.11
     },
-    "core_share": 0.3084,
+    "core_share": 0.5031,
     "min_share": 0.3,
-    "weighted": 33.92,
+    "weighted": 34.35,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.6,
-     "Frostfire Bolt": 0.28,
-     "Fire Blast": 0.033,
-     "Ignite": 0.03,
-     "Frostfire Bolt burn": 0.028,
-     "Frost Nova": 0.014
+     "Frostfire Bolt": 0.465,
+     "Ice Lance": 0.377,
+     "Ignite": 0.055,
+     "Frostfire Bolt burn": 0.038,
+     "Fire Blast": 0.025,
+     "Wand": 0.023
     }
    }
   ],
@@ -3585,50 +4554,11 @@
    {
     "spec": "Holy",
     "name": "Holy",
-    "build": "holy-open-leveling",
-    "split": "30/0/21",
+    "build": "holy-leveling",
+    "split": "30/16/5",
     "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
-    "required": [
-     "Holy Shock"
-    ],
-    "core": [
-     "Holy Shock",
-     "Exorcism",
-     "Judgement",
-     "melee",
-     "Seal of Righteousness",
-     "Seal of Command"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Holy Shock": 0.61
-    },
-    "core_share": 0.7137,
-    "min_share": 0.6,
-    "weighted": 30.48,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.257,
-     "Judgement": 0.239,
-     "Holy Strike": 0.154,
-     "Seal of Command": 0.147,
-     "Hammer of Wrath": 0.132,
-     "Holy Shock": 0.071
-    }
-   },
-   {
-    "spec": "Holy",
-    "name": "Holy",
-    "build": "holy-leveling",
-    "split": "33/12/6",
-    "rotation": "holy-leveling",
-    "rules": "tuned",
-    "kind": "slot",
     "required": [
      "Holy Shock"
     ],
@@ -3644,9 +4574,9 @@
     "casts_60": {
      "Holy Shock": 0.0
     },
-    "core_share": 0.7041,
+    "core_share": 0.728,
     "min_share": 0.6,
-    "weighted": 36.2,
+    "weighted": 35.17,
     "verdict": "FAIL: lacks Holy Shock",
     "ok": false,
     "missing_talents": [
@@ -3654,60 +4584,21 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.383,
-     "Seal of Righteousness": 0.165,
-     "Holy Strike": 0.165,
-     "Judgement": 0.156,
-     "Hammer of Wrath": 0.131
-    }
-   },
-   {
-    "spec": "Protection",
-    "name": "Protection",
-    "build": "protection-open-leveling",
-    "split": "0/32/19",
-    "rotation": "prot-leveling",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Holy Shield"
-    ],
-    "core": [
-     "Holy Shield",
-     "Seal of Fury",
-     "Judgement",
-     "melee",
-     "Consecration",
-     "Seal of Righteousness"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Holy Shield": 2.23
-    },
-    "core_share": 0.7107,
-    "min_share": 0.6,
-    "weighted": 30.95,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.307,
-     "Holy Shield": 0.178,
-     "Judgement": 0.126,
-     "Hammer of Wrath": 0.123,
-     "Holy Strike": 0.102,
-     "Seal of Fury": 0.072
+     "Melee": 0.388,
+     "Seal of Righteousness": 0.173,
+     "Judgement": 0.167,
+     "Holy Strike": 0.139,
+     "Hammer of Wrath": 0.133
     }
    },
    {
     "spec": "Protection",
     "name": "Protection",
     "build": "protection-leveling",
-    "split": "0/35/16",
+    "split": "0/34/17",
     "rotation": "prot-leveling",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Holy Shield"
     ],
@@ -3721,29 +4612,29 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shield": 2.15
+     "Holy Shield": 2.14
     },
-    "core_share": 0.7212,
+    "core_share": 0.6716,
     "min_share": 0.6,
-    "weighted": 31.92,
+    "weighted": 31.73,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.299,
-     "Holy Shield": 0.173,
-     "Judgement": 0.142,
-     "Hammer of Wrath": 0.121,
-     "Holy Strike": 0.102,
-     "Seal of Fury": 0.072
+     "Melee": 0.285,
+     "Holy Strike": 0.154,
+     "Judgement": 0.141,
+     "Holy Shield": 0.13,
+     "Hammer of Wrath": 0.117,
+     "Seal of Fury": 0.074
     }
    },
    {
     "spec": "Retribution",
     "name": "Retribution",
-    "build": "retribution-open-leveling",
-    "split": "8/10/33",
+    "build": "leveling-retribution",
+    "split": "12/9/30",
     "rotation": "ret-dps",
     "rules": "tuned",
     "kind": "page",
@@ -3760,104 +4651,27 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.7
+     "Judgement": 3.01
     },
-    "core_share": 0.8707,
+    "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 28.56,
+    "weighted": 27.18,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.356,
-     "Judgement": 0.199,
-     "Seal of Command": 0.171,
-     "Holy Strike": 0.145,
-     "Hammer of Wrath": 0.129
-    }
-   },
-   {
-    "spec": "Retribution",
-    "name": "Retribution",
-    "build": "leveling-retribution",
-    "split": "15/0/36",
-    "rotation": "ret-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Judgement",
-     "Holy Strike",
-     "Vengeance"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Judgement": 2.76
-    },
-    "core_share": 0.875,
-    "min_share": 0.6,
-    "weighted": 28.99,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.353,
-     "Judgement": 0.203,
-     "Seal of Command": 0.172,
-     "Holy Strike": 0.148,
-     "Hammer of Wrath": 0.125
-    }
-   },
-   {
-    "spec": "Retribution",
-    "name": "Retribution",
-    "build": "opt-ret-dps-leveling-aoe",
-    "split": "10/8/33",
-    "rotation": "ret-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Judgement",
-     "Holy Strike",
-     "Vengeance"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Judgement": 2.7
-    },
-    "core_share": 0.8941,
-    "min_share": 0.6,
-    "weighted": 29.18,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.367,
-     "Judgement": 0.198,
-     "Seal of Command": 0.183,
-     "Holy Strike": 0.146,
-     "Hammer of Wrath": 0.106
+     "Melee": 0.415,
+     "Judgement": 0.214,
+     "Seal of Command": 0.199,
+     "Holy Strike": 0.172
     }
    },
    {
     "spec": "Retribution",
     "name": "Retribution",
     "build": "opt-ret-dps-leveling-st",
-    "split": "15/0/36",
+    "split": "10/11/30",
     "rotation": "ret-dps",
     "rules": "tuned",
     "kind": "slot",
@@ -3874,28 +4688,55 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.76
+     "Judgement": 3.01
     },
-    "core_share": 0.8747,
+    "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 29.17,
+    "weighted": 27.18,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.352,
-     "Judgement": 0.202,
-     "Seal of Command": 0.171,
-     "Holy Strike": 0.149,
-     "Hammer of Wrath": 0.125
+     "Melee": 0.415,
+     "Judgement": 0.214,
+     "Seal of Command": 0.199,
+     "Holy Strike": 0.172
+    }
+   },
+   {
+    "spec": "Hybrid Holy/Protection",
+    "name": "Holy/Protection hybrid",
+    "build": "hybrid-holy-protection-open-leveling",
+    "split": "21/16/14",
+    "rotation": "holy-leveling",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [],
+    "core": [],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": null,
+    "min_share": null,
+    "weighted": 29.53,
+    "verdict": "no rule",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Judgement": 0.287,
+     "Melee": 0.262,
+     "Seal of Command": 0.144,
+     "Hammer of Wrath": 0.137,
+     "Holy Strike": 0.107,
+     "Holy Shock": 0.063
     }
    },
    {
     "spec": "Hybrid Protection/Retribution",
     "name": "Prot-Ret",
-    "build": "opt-ret-dps-solo-60",
-    "split": "8/16/27",
+    "build": "prot-ret-open-leveling",
+    "split": "12/16/23",
     "rotation": "ret-dps",
     "rules": "tuned",
     "kind": "page",
@@ -3912,21 +4753,95 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.75
+     "Judgement": 3.37
     },
-    "core_share": 0.8805,
+    "core_share": 0.9994,
     "min_share": 0.6,
-    "weighted": 29.62,
+    "weighted": 28.17,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.357,
-     "Judgement": 0.195,
-     "Seal of Command": 0.173,
-     "Holy Strike": 0.155,
-     "Hammer of Wrath": 0.12
+     "Melee": 0.39,
+     "Judgement": 0.25,
+     "Seal of Command": 0.193,
+     "Holy Strike": 0.167,
+     "Eye for an Eye": 0.001
+    }
+   },
+   {
+    "spec": "Hybrid Protection/Retribution",
+    "name": "Prot-Ret",
+    "build": "opt-ret-dps-solo-60",
+    "split": "8/19/24",
+    "rotation": "ret-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Judgement": 3.54
+    },
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "weighted": 27.09,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.404,
+     "Judgement": 0.248,
+     "Seal of Command": 0.182,
+     "Holy Strike": 0.167
+    }
+   },
+   {
+    "spec": "Hybrid Protection/Retribution",
+    "name": "Prot-Ret",
+    "build": "opt-ret-dps-leveling-aoe",
+    "split": "8/14/29",
+    "rotation": "ret-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Judgement": 3.1
+    },
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "weighted": 27.91,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.418,
+     "Judgement": 0.219,
+     "Seal of Command": 0.187,
+     "Holy Strike": 0.176
     }
    }
   ],
@@ -3936,7 +4851,7 @@
     "name": "Discipline",
     "build": "discipline-open-leveling",
     "split": "30/0/21",
-    "rotation": "discipline-leveling",
+    "rotation": "shadow-dps",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3949,25 +4864,62 @@
      "Holy Fire",
      "Mind Blast"
     ],
-    "rule_issues": [],
+    "rule_issues": [
+     "Smite off"
+    ],
     "casts_60": {
-     "Penance": 1.0,
-     "Smite": 1.23
+     "Penance": 0.0,
+     "Smite": 0.0
     },
-    "core_share": 0.4561,
+    "core_share": 0.3792,
     "min_share": 0.4,
-    "weighted": 39.66,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 34.8,
+    "verdict": "FAIL: Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Penance",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Mind Blast": 0.281,
-     "Shadow Word: Pain": 0.239,
-     "Devouring Plague": 0.176,
-     "Wand": 0.128,
-     "Penance": 0.096,
-     "Smite": 0.079
+     "Mind Blast": 0.379,
+     "Wand": 0.256,
+     "Shadow Word: Pain": 0.245,
+     "Shadow Word: Death": 0.12
     }
    },
    {
@@ -3975,7 +4927,7 @@
     "name": "Discipline",
     "build": "discipline-leveling",
     "split": "30/21/0",
-    "rotation": "discipline-leveling",
+    "rotation": "shadow-dps",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -3988,25 +4940,74 @@
      "Holy Fire",
      "Mind Blast"
     ],
-    "rule_issues": [],
+    "rule_issues": [
+     "Smite off"
+    ],
     "casts_60": {
-     "Penance": 1.03,
-     "Smite": 1.24
+     "Penance": 0.0,
+     "Smite": 0.0
     },
-    "core_share": 0.4352,
+    "core_share": 0.3796,
     "min_share": 0.4,
-    "weighted": 46.3,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 42.55,
+    "verdict": "FAIL: Penance 0.00/kill at 40 (needs 0.50); Penance 0.00/kill at 50 (needs 0.50); Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Penance",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Penance",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Penance",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Mind Blast": 0.263,
-     "Shadow Word: Pain": 0.23,
-     "Devouring Plague": 0.172,
-     "Wand": 0.163,
-     "Penance": 0.095,
-     "Smite": 0.077
+     "Mind Blast": 0.38,
+     "Shadow Word: Pain": 0.276,
+     "Wand": 0.23,
+     "Shadow Word: Death": 0.114
     }
    },
    {
@@ -4014,7 +5015,7 @@
     "name": "Holy",
     "build": "holy-leveling",
     "split": "22/29/0",
-    "rotation": "holy-leveling",
+    "rotation": "shadow-dps",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -4025,75 +5026,96 @@
      "Smite",
      "Holy Fire"
     ],
-    "rule_issues": [],
+    "rule_issues": [
+     "Smite off"
+    ],
     "casts_60": {
-     "Smite": 4.19,
-     "Holy Fire": 1.55
+     "Smite": 0.0,
+     "Holy Fire": 0.0
     },
-    "core_share": 0.4135,
+    "core_share": 0,
     "min_share": 0.4,
-    "weighted": 56.03,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 42.8,
+    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Smite": 0.268,
-     "Shadow Word: Pain": 0.225,
-     "Holy Fire": 0.146,
-     "Penance": 0.137,
-     "Mind Blast": 0.131,
-     "Wand": 0.093
+     "Mind Blast": 0.38,
+     "Shadow Word: Pain": 0.276,
+     "Wand": 0.226,
+     "Shadow Word: Death": 0.117
     }
    },
    {
     "spec": "Shadow",
     "name": "Shadow",
-    "build": "shadow-open-leveling",
-    "split": "13/3/35",
+    "build": "leveling-shadow",
+    "split": "18/0/33",
     "rotation": "shadow-dps",
     "rules": "tuned",
     "kind": "page",
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.94,
-     "Mind Flay": 2.09
-    },
-    "core_share": 0.8376,
-    "min_share": 0.6,
-    "weighted": 24.5,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Mind Flay": 0.369,
-     "Mind Blast": 0.319,
-     "Shadow Word: Death": 0.155,
-     "Shadow Word: Pain": 0.15,
-     "Wand": 0.007
-    }
-   },
-   {
-    "spec": "Shadow",
-    "name": "Shadow",
-    "build": "opt-shadow-dps-solo-60",
-    "split": "16/2/33",
-    "rotation": "shadow-dps",
-    "rules": "tuned",
-    "kind": "slot",
     "required": [
      "Shadow Word: Pain",
      "Mind Blast",
@@ -4109,101 +5131,21 @@
     "casts_60": {
      "Shadow Word: Pain": 1.0,
      "Mind Blast": 1.22,
-     "Mind Flay": 2.64
+     "Mind Flay": 2.69
     },
-    "core_share": 0.8174,
+    "core_share": 0.8308,
     "min_share": 0.6,
-    "weighted": 24.93,
+    "weighted": 25.67,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Mind Flay": 0.46,
-     "Mind Blast": 0.194,
-     "Shadow Word: Death": 0.172,
-     "Shadow Word: Pain": 0.163,
-     "Wand": 0.01
-    }
-   },
-   {
-    "spec": "Shadow",
-    "name": "Shadow",
-    "build": "leveling-shadow",
-    "split": "18/0/33",
-    "rotation": "shadow-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.2,
-     "Mind Flay": 2.67
-    },
-    "core_share": 0.8254,
-    "min_share": 0.6,
-    "weighted": 25.45,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Mind Flay": 0.467,
-     "Mind Blast": 0.191,
-     "Shadow Word: Pain": 0.167,
-     "Shadow Word: Death": 0.166,
+     "Mind Flay": 0.47,
+     "Mind Blast": 0.193,
+     "Shadow Word: Pain": 0.168,
+     "Shadow Word: Death": 0.161,
      "Wand": 0.008
-    }
-   },
-   {
-    "spec": "Shadow",
-    "name": "Shadow",
-    "build": "opt-shadow-dps-leveling-aoe",
-    "split": "20/0/31",
-    "rotation": "shadow-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay"
-    ],
-    "core": [
-     "Shadow Word: Pain",
-     "Mind Blast",
-     "Mind Flay",
-     "Devouring Plague"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.28,
-     "Mind Flay": 2.71
-    },
-    "core_share": 0.8177,
-    "min_share": 0.6,
-    "weighted": 28.7,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Mind Flay": 0.454,
-     "Mind Blast": 0.2,
-     "Shadow Word: Death": 0.172,
-     "Shadow Word: Pain": 0.164,
-     "Wand": 0.01
     }
    },
    {
@@ -4228,22 +5170,240 @@
     "rule_issues": [],
     "casts_60": {
      "Shadow Word: Pain": 1.0,
-     "Mind Blast": 1.22,
-     "Mind Flay": 2.64
+     "Mind Blast": 1.21,
+     "Mind Flay": 2.63
     },
-    "core_share": 0.8174,
+    "core_share": 0.8164,
     "min_share": 0.6,
-    "weighted": 30.77,
+    "weighted": 30.96,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Mind Flay": 0.46,
-     "Mind Blast": 0.194,
-     "Shadow Word: Death": 0.172,
-     "Shadow Word: Pain": 0.163,
+     "Mind Flay": 0.457,
+     "Mind Blast": 0.197,
+     "Shadow Word: Death": 0.173,
+     "Shadow Word: Pain": 0.162,
      "Wand": 0.01
+    }
+   },
+   {
+    "spec": "Shadow",
+    "name": "Shadow",
+    "build": "opt-shadow-dps-solo-60",
+    "split": "16/2/33",
+    "rotation": "shadow-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.21,
+     "Mind Flay": 2.63
+    },
+    "core_share": 0.8164,
+    "min_share": 0.6,
+    "weighted": 25.12,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Mind Flay": 0.457,
+     "Mind Blast": 0.197,
+     "Shadow Word: Death": 0.173,
+     "Shadow Word: Pain": 0.162,
+     "Wand": 0.01
+    }
+   },
+   {
+    "spec": "Shadow",
+    "name": "Shadow",
+    "build": "opt-shadow-dps-leveling-aoe",
+    "split": "20/0/31",
+    "rotation": "shadow-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.27,
+     "Mind Flay": 2.71
+    },
+    "core_share": 0.8202,
+    "min_share": 0.6,
+    "weighted": 28.8,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Mind Flay": 0.456,
+     "Mind Blast": 0.199,
+     "Shadow Word: Death": 0.17,
+     "Shadow Word: Pain": 0.165,
+     "Wand": 0.01
+    }
+   },
+   {
+    "spec": "Shadow",
+    "name": "Shadow",
+    "build": "shadow-open-leveling",
+    "split": "13/3/35",
+    "rotation": "shadow-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay"
+    ],
+    "core": [
+     "Shadow Word: Pain",
+     "Mind Blast",
+     "Mind Flay",
+     "Devouring Plague"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Shadow Word: Pain": 1.0,
+     "Mind Blast": 1.94,
+     "Mind Flay": 2.06
+    },
+    "core_share": 0.8372,
+    "min_share": 0.6,
+    "weighted": 24.81,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Mind Flay": 0.365,
+     "Mind Blast": 0.322,
+     "Shadow Word: Death": 0.155,
+     "Shadow Word: Pain": 0.15,
+     "Wand": 0.008
+    }
+   },
+   {
+    "spec": "Hybrid Discipline/Holy",
+    "name": "Smite",
+    "build": "smite-open-leveling",
+    "split": "22/21/8",
+    "rotation": "shadow-dps",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [
+     "Smite",
+     "Holy Fire"
+    ],
+    "core": [
+     "Smite",
+     "Holy Fire"
+    ],
+    "rule_issues": [
+     "Smite off"
+    ],
+    "casts_60": {
+     "Smite": 0.0,
+     "Holy Fire": 0.0
+    },
+    "core_share": 0,
+    "min_share": 0.5,
+    "weighted": 37.54,
+    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Smite",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Smite",
+      60,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Holy Fire",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "top_shares": {
+     "Mind Blast": 0.367,
+     "Wand": 0.272,
+     "Shadow Word: Pain": 0.258,
+     "Shadow Word: Death": 0.103
     }
    },
    {
@@ -4253,7 +5413,7 @@
     "split": "22/21/8",
     "rotation": "holy-leveling",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "mapped",
     "required": [
      "Smite",
      "Holy Fire"
@@ -4269,7 +5429,7 @@
     },
     "core_share": 0.5571,
     "min_share": 0.5,
-    "weighted": 51.73,
+    "weighted": 51.74,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
@@ -4287,9 +5447,9 @@
    {
     "spec": "Assassination",
     "name": "Assassination",
-    "build": "assassination-open-leveling",
-    "split": "30/19/2",
-    "rotation": "combat-daggers-raid",
+    "build": "leveling-combat-swords",
+    "split": "31/20/0",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -4306,64 +5466,35 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 2.9
-    },
-    "core_share": 0.8462,
-    "min_share": 0.6,
-    "weighted": 26.31,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Eviscerate": 0.314,
-     "Melee": 0.161,
-     "Mutilate": 0.149,
-     "Garrote": 0.118,
-     "Instant Poison": 0.095,
-     "Melee (off-hand)": 0.083
-    }
-   },
-   {
-    "spec": "Assassination",
-    "name": "Assassination",
-    "build": "opt-combat-swords-raid-solo-60",
-    "split": "33/16/2",
-    "rotation": "combat-daggers-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Mutilate"
-    ],
-    "core": [
-     "melee",
-     "Mutilate",
-     "Eviscerate",
-     "Venom",
-     "Rupture",
-     "Deadly Poison",
-     "Instant Poison"
-    ],
-    "rule_issues": [],
-    "casts_60": {
      "Mutilate": 0.0
     },
-    "core_share": 0.6752,
+    "core_share": 0.6457,
     "min_share": 0.6,
-    "weighted": 26.62,
-    "verdict": "FAIL: lacks Mutilate",
+    "weighted": 25.77,
+    "verdict": "FAIL: Mutilate 0.00/kill at 50 (needs 0.50); Mutilate 0.00/kill at 60 (needs 0.50)",
     "ok": false,
-    "missing_talents": [
-     "Mutilate"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Mutilate",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.265,
-     "Melee": 0.166,
-     "Sinister Strike": 0.164,
-     "Instant Poison": 0.125,
-     "Garrote": 0.123,
-     "Melee (off-hand)": 0.079
+     "Eviscerate": 0.274,
+     "Sinister Strike": 0.207,
+     "Melee": 0.167,
+     "Garrote": 0.108,
+     "Instant Poison": 0.092,
+     "Melee (off-hand)": 0.091
     }
    },
    {
@@ -4371,7 +5502,7 @@
     "name": "Assassination",
     "build": "opt-combat-swords-raid-leveling-st",
     "split": "33/16/2",
-    "rotation": "combat-daggers-raid",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -4390,9 +5521,9 @@
     "casts_60": {
      "Mutilate": 0.0
     },
-    "core_share": 0.6752,
+    "core_share": 0.6359,
     "min_share": 0.6,
-    "weighted": 26.62,
+    "weighted": 25.36,
     "verdict": "FAIL: lacks Mutilate",
     "ok": false,
     "missing_talents": [
@@ -4400,20 +5531,20 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.265,
-     "Melee": 0.166,
-     "Sinister Strike": 0.164,
-     "Instant Poison": 0.125,
-     "Garrote": 0.123,
-     "Melee (off-hand)": 0.079
+     "Eviscerate": 0.271,
+     "Sinister Strike": 0.208,
+     "Melee": 0.162,
+     "Garrote": 0.117,
+     "Instant Poison": 0.104,
+     "Melee (off-hand)": 0.075
     }
    },
    {
     "spec": "Assassination",
     "name": "Assassination",
-    "build": "leveling-combat-swords",
-    "split": "31/20/0",
-    "rotation": "combat-daggers-raid",
+    "build": "opt-combat-swords-raid-solo-60",
+    "split": "33/16/2",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -4430,56 +5561,83 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 3.04
+     "Mutilate": 0.0
     },
-    "core_share": 0.8535,
+    "core_share": 0.6359,
     "min_share": 0.6,
-    "weighted": 26.85,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
+    "weighted": 25.36,
+    "verdict": "FAIL: lacks Mutilate",
+    "ok": false,
+    "missing_talents": [
+     "Mutilate"
+    ],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.307,
-     "Melee": 0.165,
-     "Mutilate": 0.144,
-     "Garrote": 0.111,
-     "Instant Poison": 0.095,
-     "Melee (off-hand)": 0.094
+     "Eviscerate": 0.271,
+     "Sinister Strike": 0.208,
+     "Melee": 0.162,
+     "Garrote": 0.117,
+     "Instant Poison": 0.104,
+     "Melee (off-hand)": 0.075
     }
    },
    {
-    "spec": "Combat",
-    "name": "Combat",
-    "build": "combat-open-leveling",
-    "split": "12/31/8",
+    "spec": "Assassination",
+    "name": "Assassination",
+    "build": "assassination-open-leveling",
+    "split": "30/19/2",
     "rotation": "combat-swords-raid",
     "rules": "tuned",
-    "kind": "page",
-    "required": [],
+    "kind": "slot",
+    "required": [
+     "Mutilate"
+    ],
     "core": [
      "melee",
-     "Sinister Strike",
-     "Backstab",
+     "Mutilate",
      "Eviscerate",
-     "Blade Flurry"
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
     ],
     "rule_issues": [],
-    "casts_60": {},
-    "core_share": 0.7765,
-    "min_share": 0.7,
-    "weighted": 25.08,
-    "verdict": "OK",
-    "ok": true,
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "core_share": 0.6468,
+    "min_share": 0.6,
+    "weighted": 27.1,
+    "verdict": "FAIL: Mutilate 0.00/kill at 40 (needs 0.50); Mutilate 0.00/kill at 50 (needs 0.50); Mutilate 0.00/kill at 60 (needs 0.50)",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Mutilate",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Mutilate",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Eviscerate": 0.291,
-     "Sinister Strike": 0.21,
-     "Melee": 0.166,
-     "Garrote": 0.12,
-     "Melee (off-hand)": 0.098,
-     "Instant Poison": 0.059
+     "Eviscerate": 0.266,
+     "Sinister Strike": 0.188,
+     "Melee": 0.172,
+     "Garrote": 0.124,
+     "Melee (off-hand)": 0.095,
+     "Instant Poison": 0.089
     }
    },
    {
@@ -4489,7 +5647,7 @@
     "split": "12/31/8",
     "rotation": "combat-swords-raid",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [],
     "core": [
      "melee",
@@ -4551,11 +5709,45 @@
     }
    },
    {
+    "spec": "Combat",
+    "name": "Combat",
+    "build": "combat-open-leveling",
+    "split": "12/31/8",
+    "rotation": "combat-swords-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [],
+    "core": [
+     "melee",
+     "Sinister Strike",
+     "Backstab",
+     "Eviscerate",
+     "Blade Flurry"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.7765,
+    "min_share": 0.7,
+    "weighted": 25.08,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Eviscerate": 0.291,
+     "Sinister Strike": 0.21,
+     "Melee": 0.166,
+     "Garrote": 0.12,
+     "Melee (off-hand)": 0.098,
+     "Instant Poison": 0.059
+    }
+   },
+   {
     "spec": "Subtlety",
     "name": "Subtlety",
-    "build": "subtlety-open-leveling",
-    "split": "12/9/30",
-    "rotation": "subtlety-leveling",
+    "build": "subtlety-leveling",
+    "split": "5/16/30",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -4570,30 +5762,32 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Hemorrhage": 3.13
+     "Hemorrhage": 0.0
     },
-    "core_share": 0.9125,
+    "core_share": 0.568,
     "min_share": 0.6,
-    "weighted": 25.47,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
+    "weighted": 25.6,
+    "verdict": "FAIL: lacks Hemorrhage; core share 57% < 60%",
+    "ok": false,
+    "missing_talents": [
+     "Hemorrhage"
+    ],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.358,
-     "Ambush": 0.194,
-     "Melee": 0.156,
-     "Hemorrhage": 0.092,
-     "Melee (off-hand)": 0.077,
-     "Instant Poison": 0.061
+     "Eviscerate": 0.319,
+     "Sinister Strike": 0.192,
+     "Melee": 0.17,
+     "Garrote": 0.122,
+     "Melee (off-hand)": 0.079,
+     "Instant Poison": 0.057
     }
    },
    {
     "spec": "Subtlety",
     "name": "Subtlety",
-    "build": "subtlety-leveling",
-    "split": "5/16/30",
-    "rotation": "subtlety-leveling",
+    "build": "subtlety-open-leveling",
+    "split": "12/9/30",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -4610,30 +5804,35 @@
     "casts_60": {
      "Hemorrhage": 0.0
     },
-    "core_share": 0.639,
+    "core_share": 0.6111,
     "min_share": 0.6,
-    "weighted": 25.96,
-    "verdict": "FAIL: lacks Hemorrhage",
+    "weighted": 26.89,
+    "verdict": "FAIL: Hemorrhage 0.00/kill at 60 (needs 0.50)",
     "ok": false,
-    "missing_talents": [
-     "Hemorrhage"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Hemorrhage",
+      60,
+      0.0,
+      0.5
+     ]
     ],
-    "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.341,
-     "Melee": 0.168,
-     "Garrote": 0.123,
-     "Sinister Strike": 0.106,
-     "Melee (off-hand)": 0.08,
-     "Instant Poison": 0.067
+     "Eviscerate": 0.339,
+     "Sinister Strike": 0.186,
+     "Melee": 0.182,
+     "Garrote": 0.13,
+     "Melee (off-hand)": 0.09,
+     "Instant Poison": 0.051
     }
    },
    {
     "spec": "Hybrid Assassination/Combat",
     "name": "Daggers (split)",
-    "build": "daggers-split-open-leveling",
-    "split": "22/16/13",
-    "rotation": "combat-daggers-raid",
+    "build": "opt-combat-daggers-raid-leveling-st",
+    "split": "21/28/2",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -4646,20 +5845,54 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.7344,
+    "core_share": 0.7229,
     "min_share": 0.6,
-    "weighted": 26.17,
+    "weighted": 27.96,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.383,
-     "Melee": 0.152,
-     "Mutilate": 0.127,
-     "Garrote": 0.115,
-     "Instant Poison": 0.082,
-     "Melee (off-hand)": 0.073
+     "Eviscerate": 0.205,
+     "Sinister Strike": 0.201,
+     "Melee": 0.195,
+     "Garrote": 0.137,
+     "Melee (off-hand)": 0.099,
+     "Instant Poison": 0.067
+    }
+   },
+   {
+    "spec": "Hybrid Assassination/Combat",
+    "name": "Daggers (split)",
+    "build": "daggers-split-open-leveling",
+    "split": "22/16/13",
+    "rotation": "combat-swords-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [],
+    "core": [
+     "melee",
+     "Backstab",
+     "Mutilate",
+     "Sinister Strike",
+     "Eviscerate"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.7452,
+    "min_share": 0.6,
+    "weighted": 26.65,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Eviscerate": 0.338,
+     "Sinister Strike": 0.17,
+     "Melee": 0.16,
+     "Garrote": 0.118,
+     "Melee (off-hand)": 0.077,
+     "Instant Poison": 0.076
     }
    },
    {
@@ -4669,7 +5902,7 @@
     "split": "21/28/2",
     "rotation": "combat-daggers-raid",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "mapped",
     "required": [],
     "core": [
      "melee",
@@ -4701,9 +5934,79 @@
     "name": "Combat-Subtlety",
     "build": "combat-subtlety-open-leveling",
     "split": "13/17/21",
-    "rotation": "subtlety-leveling",
+    "rotation": "combat-swords-raid",
     "rules": "tuned",
     "kind": "page",
+    "required": [
+     "Ghostly Strike"
+    ],
+    "core": [
+     "melee",
+     "Sinister Strike",
+     "Hemorrhage",
+     "Ghostly Strike",
+     "Ambush",
+     "Eviscerate"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Ghostly Strike": 0.0
+    },
+    "core_share": 0.7714,
+    "min_share": 0.6,
+    "weighted": 26.46,
+    "verdict": "FAIL: Ghostly Strike 0.00/kill at 20 (needs 0.49); Ghostly Strike 0.00/kill at 30 (needs 0.50); Ghostly Strike 0.00/kill at 40 (needs 0.50); Ghostly Strike 0.00/kill at 50 (needs 0.50); Ghostly Strike 0.00/kill at 60 (needs 0.50)",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Ghostly Strike",
+      20,
+      0.0,
+      0.489
+     ],
+     [
+      "Ghostly Strike",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Ghostly Strike",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "top_shares": {
+     "Eviscerate": 0.341,
+     "Sinister Strike": 0.177,
+     "Melee": 0.168,
+     "Garrote": 0.12,
+     "Melee (off-hand)": 0.086,
+     "Instant Poison": 0.053
+    }
+   },
+   {
+    "spec": "Hybrid Combat/Subtlety",
+    "name": "Combat-Subtlety",
+    "build": "combat-subtlety-open-leveling",
+    "split": "13/17/21",
+    "rotation": "subtlety-leveling",
+    "rules": "tuned",
+    "kind": "mapped",
     "required": [
      "Ghostly Strike"
     ],
@@ -4740,9 +6043,9 @@
    {
     "spec": "Elemental",
     "name": "Elemental",
-    "build": "elemental-open-leveling",
+    "build": "opt-elemental-dps-leveling-st",
     "split": "31/12/8",
-    "rotation": "elemental-dps",
+    "rotation": "enhancement-dps",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -4755,32 +6058,64 @@
      "Earth Shock",
      "Flame Shock"
     ],
-    "rule_issues": [],
+    "rule_issues": [
+     "Lightning Bolt only below 35% mob health"
+    ],
     "casts_60": {
-     "Lightning Bolt": 3.77
+     "Lightning Bolt": 0.0
     },
-    "core_share": 0.6286,
+    "core_share": 0.3557,
     "min_share": 0.6,
-    "weighted": 35.46,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 37.27,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 36% < 60%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Lightning Bolt": 0.287,
-     "Lightning Shield": 0.156,
-     "Earth Shock": 0.131,
-     "Melee": 0.11,
-     "Flame Shock": 0.107,
-     "Lava Burst": 0.103
+     "Earth Shock": 0.356,
+     "Melee": 0.284,
+     "Lightning Shield": 0.149,
+     "Windfury": 0.128,
+     "Searing Totem": 0.084
     }
    },
    {
     "spec": "Elemental",
     "name": "Elemental",
-    "build": "opt-elemental-dps-leveling-st",
+    "build": "elemental-open-leveling",
     "split": "31/12/8",
-    "rotation": "elemental-dps",
+    "rotation": "enhancement-dps",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -4793,63 +6128,56 @@
      "Earth Shock",
      "Flame Shock"
     ],
-    "rule_issues": [],
-    "casts_60": {
-     "Lightning Bolt": 4.17
-    },
-    "core_share": 0.6638,
-    "min_share": 0.6,
-    "weighted": 36.47,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Lightning Bolt": 0.33,
-     "Lightning Shield": 0.147,
-     "Earth Shock": 0.113,
-     "Flame Shock": 0.111,
-     "Lava Burst": 0.109,
-     "Melee": 0.087
-    }
-   },
-   {
-    "spec": "Enhancement",
-    "name": "Enhancement",
-    "build": "enhancement-open-leveling",
-    "split": "13/32/6",
-    "rotation": "enhancement-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Stormstrike"
+    "rule_issues": [
+     "Lightning Bolt only below 35% mob health"
     ],
-    "core": [
-     "melee",
-     "Stormstrike",
-     "Windfury Weapon",
-     "Flametongue Weapon",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.63
+     "Lightning Bolt": 0.0
     },
-    "core_share": 0.7544,
+    "core_share": 0.3454,
     "min_share": 0.6,
-    "weighted": 30.88,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 35.08,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 35% < 60%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Earth Shock": 0.243,
-     "Melee": 0.241,
-     "Windfury": 0.156,
-     "Lightning Shield": 0.153,
-     "Stormstrike": 0.115,
-     "Searing Totem": 0.047
+     "Earth Shock": 0.345,
+     "Melee": 0.289,
+     "Lightning Shield": 0.151,
+     "Windfury": 0.138,
+     "Searing Totem": 0.076
     }
    },
    {
@@ -4859,7 +6187,7 @@
     "split": "7/34/10",
     "rotation": "enhancement-dps",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Stormstrike"
     ],
@@ -4889,6 +6217,45 @@
      "Lightning Shield": 0.136,
      "Stormstrike": 0.111,
      "Lightning Bolt": 0.053
+    }
+   },
+   {
+    "spec": "Enhancement",
+    "name": "Enhancement",
+    "build": "opt-enhancement-dps-leveling-st",
+    "split": "12/31/8",
+    "rotation": "enhancement-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Stormstrike": 2.48
+    },
+    "core_share": 0.7882,
+    "min_share": 0.6,
+    "weighted": 31.64,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Earth Shock": 0.266,
+     "Melee": 0.254,
+     "Lightning Shield": 0.158,
+     "Windfury": 0.158,
+     "Stormstrike": 0.11,
+     "Searing Totem": 0.051
     }
    },
    {
@@ -4933,8 +6300,8 @@
    {
     "spec": "Enhancement",
     "name": "Enhancement",
-    "build": "opt-enhancement-dps-leveling-st",
-    "split": "12/31/8",
+    "build": "enhancement-open-leveling",
+    "split": "13/32/6",
     "rotation": "enhancement-dps",
     "rules": "tuned",
     "kind": "slot",
@@ -4951,22 +6318,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.48
+     "Stormstrike": 2.63
     },
-    "core_share": 0.7882,
+    "core_share": 0.7544,
     "min_share": 0.6,
-    "weighted": 31.64,
+    "weighted": 30.88,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.266,
-     "Melee": 0.254,
-     "Lightning Shield": 0.158,
-     "Windfury": 0.158,
-     "Stormstrike": 0.11,
-     "Searing Totem": 0.051
+     "Earth Shock": 0.243,
+     "Melee": 0.241,
+     "Windfury": 0.156,
+     "Lightning Shield": 0.153,
+     "Stormstrike": 0.115,
+     "Searing Totem": 0.047
     }
    },
    {
@@ -4999,49 +6366,11 @@
    {
     "spec": "Hybrid Elemental/Enhancement",
     "name": "Elemental-Enhancement",
-    "build": "elemental-enhancement-open-leveling",
-    "split": "21/22/8",
-    "rotation": "elemental-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Lava Burst",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Lightning Bolt": 3.64
-    },
-    "core_share": 0.6318,
-    "min_share": 0.5,
-    "weighted": 34.65,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Lightning Bolt": 0.292,
-     "Lightning Shield": 0.167,
-     "Earth Shock": 0.127,
-     "Lava Burst": 0.11,
-     "Flame Shock": 0.103,
-     "Melee": 0.103
-    }
-   },
-   {
-    "spec": "Hybrid Elemental/Enhancement",
-    "name": "Elemental-Enhancement",
     "build": "opt-enhancement-dps-leveling-aoe",
     "split": "29/22/0",
     "rotation": "enhancement-dps",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Lightning Bolt"
     ],
@@ -5104,50 +6433,117 @@
      "Stormstrike": 0.118,
      "Searing Totem": 0.058
     }
-   }
-  ],
-  "warlock": [
+   },
    {
-    "spec": "Affliction",
-    "name": "Affliction",
-    "build": "affliction-open-leveling",
-    "split": "37/14/0",
-    "rotation": "affliction-leveling",
+    "spec": "Hybrid Elemental/Enhancement",
+    "name": "Elemental-Enhancement",
+    "build": "elemental-enhancement-open-leveling",
+    "split": "21/22/8",
+    "rotation": "enhancement-dps",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "slot",
     "required": [
-     "Corruption",
-     "Bane of Agony"
+     "Lightning Bolt"
     ],
     "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "Drain Soul"
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "rule_issues": [
+     "Lightning Bolt only below 35% mob health"
+    ],
+    "casts_60": {
+     "Lightning Bolt": 0.0
+    },
+    "core_share": 0.3368,
+    "min_share": 0.5,
+    "weighted": 34.81,
+    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 34% < 50%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Lightning Bolt",
+      20,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      30,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Lightning Bolt",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
+    "top_shares": {
+     "Earth Shock": 0.337,
+     "Melee": 0.288,
+     "Lightning Shield": 0.17,
+     "Windfury": 0.137,
+     "Searing Totem": 0.069
+    }
+   },
+   {
+    "spec": "Hybrid Elemental/Enhancement",
+    "name": "Elemental-Enhancement",
+    "build": "opt-enhancement-dps-leveling-aoe",
+    "split": "29/22/0",
+    "rotation": "elemental-dps",
+    "rules": "tuned",
+    "kind": "mapped",
+    "required": [
+     "Lightning Bolt"
+    ],
+    "core": [
+     "Lightning Bolt",
+     "Chain Lightning",
+     "Lava Burst",
+     "Earth Shock",
+     "Flame Shock"
     ],
     "rule_issues": [],
     "casts_60": {
-     "Corruption": 1.0,
-     "Bane of Agony": 1.0
+     "Lightning Bolt": 4.04
     },
-    "core_share": 0.7064,
+    "core_share": 0.5921,
     "min_share": 0.5,
-    "weighted": 37.41,
+    "weighted": 39.77,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Wrack": 0.215,
-     "Bane of Agony": 0.199,
-     "Corruption": 0.192,
-     "Voidwalker melee": 0.113,
-     "Siphon Life": 0.089,
-     "Wand": 0.069
+     "Lightning Bolt": 0.349,
+     "Lightning Shield": 0.174,
+     "Melee": 0.125,
+     "Earth Shock": 0.124,
+     "Flame Shock": 0.119,
+     "Windfury": 0.055
     }
-   },
+   }
+  ],
+  "warlock": [
    {
     "spec": "Affliction",
     "name": "Affliction",
@@ -5155,7 +6551,7 @@
     "split": "33/6/12",
     "rotation": "affliction-leveling",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Corruption",
      "Bane of Agony"
@@ -5190,11 +6586,52 @@
     }
    },
    {
+    "spec": "Affliction",
+    "name": "Affliction",
+    "build": "affliction-open-leveling",
+    "split": "37/14/0",
+    "rotation": "affliction-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption",
+     "Bane of Agony"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "Drain Soul"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.01,
+     "Bane of Agony": 1.0
+    },
+    "core_share": 0.6889,
+    "min_share": 0.5,
+    "weighted": 37.68,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Bane of Agony": 0.208,
+     "Corruption": 0.193,
+     "Wrack": 0.185,
+     "Voidwalker melee": 0.119,
+     "Siphon Life": 0.094,
+     "Wand": 0.076
+    }
+   },
+   {
     "spec": "Demonology",
     "name": "Demonology",
     "build": "demonology-leveling",
     "split": "21/30/0",
-    "rotation": "demonology-leveling",
+    "rotation": "affliction-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -5203,56 +6640,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.1998,
+    "core_share": 0.1249,
     "min_share": 0.0,
-    "weighted": 31.16,
+    "weighted": 39.04,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Wand": 0.246,
-     "Bane of Agony": 0.21,
-     "Corruption": 0.207,
-     "Voidwalker melee": 0.139,
-     "Siphon Life": 0.091,
-     "Demonic Brand": 0.061
-    }
-   },
-   {
-    "spec": "Destruction",
-    "name": "Destruction",
-    "build": "destruction-open-leveling",
-    "split": "6/11/34",
-    "rotation": "destruction-leveling",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [],
-    "core": [
-     "Shadow Bolt",
-     "Immolate",
-     "Conflagrate",
-     "Incinerate",
-     "Searing Pain",
-     "Soul Fire",
-     "Shadowburn"
-    ],
-    "rule_issues": [],
-    "casts_60": {},
-    "core_share": 0.8182,
-    "min_share": 0.6,
-    "weighted": 46.05,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Incinerate": 0.317,
-     "Conflagrate": 0.15,
-     "Immolate": 0.143,
-     "Shadow Bolt": 0.122,
-     "Wand": 0.087,
-     "Shadowburn": 0.087
+     "Bane of Agony": 0.212,
+     "Corruption": 0.199,
+     "Wand": 0.177,
+     "Shadow Bolt": 0.137,
+     "Voidwalker melee": 0.125,
+     "Siphon Life": 0.092
     }
    },
    {
@@ -5260,7 +6661,43 @@
     "name": "Destruction",
     "build": "destruction-leveling",
     "split": "21/0/30",
-    "rotation": "destruction-leveling",
+    "rotation": "affliction-leveling",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [],
+    "core": [
+     "Shadow Bolt",
+     "Immolate",
+     "Conflagrate",
+     "Incinerate",
+     "Searing Pain",
+     "Soul Fire",
+     "Shadowburn"
+    ],
+    "rule_issues": [],
+    "casts_60": {},
+    "core_share": 0.2321,
+    "min_share": 0.6,
+    "weighted": 41.16,
+    "verdict": "FAIL: core share 23% < 60%",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Bane of Agony": 0.194,
+     "Shadow Bolt": 0.178,
+     "Corruption": 0.172,
+     "Wand": 0.161,
+     "Voidwalker melee": 0.094,
+     "Siphon Life": 0.091
+    }
+   },
+   {
+    "spec": "Destruction",
+    "name": "Destruction",
+    "build": "destruction-open-leveling",
+    "split": "6/11/34",
+    "rotation": "affliction-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [],
@@ -5275,28 +6712,28 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.5993,
+    "core_share": 0.4692,
     "min_share": 0.6,
-    "weighted": 50.9,
-    "verdict": "FAIL: core share 60% < 60%",
+    "weighted": 46.8,
+    "verdict": "FAIL: core share 47% < 60%",
     "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Shadow Bolt": 0.372,
-     "Wand": 0.256,
-     "Immolate": 0.156,
-     "Voidwalker melee": 0.114,
-     "Conflagrate": 0.071,
-     "Death Coil": 0.031
+     "Shadow Bolt": 0.305,
+     "Bane of Agony": 0.135,
+     "Corruption": 0.131,
+     "Wand": 0.11,
+     "Voidwalker melee": 0.109,
+     "Immolate": 0.085
     }
    },
    {
     "spec": "Hybrid Affliction/Demonology",
     "name": "Affliction-Demonology",
-    "build": "affliction-demonology-open-leveling",
-    "split": "27/24/0",
-    "rotation": "demonology-leveling",
+    "build": "leveling-affliction",
+    "split": "23/26/2",
+    "rotation": "affliction-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -5312,22 +6749,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Corruption": 1.07
+     "Corruption": 1.06
     },
-    "core_share": 0.7186,
+    "core_share": 0.6597,
     "min_share": 0.5,
-    "weighted": 30.47,
+    "weighted": 38.9,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Wand": 0.23,
-     "Bane of Agony": 0.212,
-     "Corruption": 0.211,
-     "Voidwalker melee": 0.135,
-     "Siphon Life": 0.09,
-     "Demonic Brand": 0.07
+     "Bane of Agony": 0.214,
+     "Corruption": 0.2,
+     "Wand": 0.176,
+     "Shadow Bolt": 0.134,
+     "Voidwalker melee": 0.122,
+     "Siphon Life": 0.094
     }
    },
    {
@@ -5335,7 +6772,7 @@
     "name": "Affliction-Demonology",
     "build": "opt-affliction-leveling-leveling-st",
     "split": "27/24/0",
-    "rotation": "demonology-leveling",
+    "rotation": "affliction-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5351,61 +6788,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Corruption": 1.14
+     "Corruption": 1.02
     },
-    "core_share": 0.6833,
+    "core_share": 0.6493,
     "min_share": 0.5,
-    "weighted": 32.42,
+    "weighted": 38.04,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Wand": 0.255,
-     "Bane of Agony": 0.225,
-     "Corruption": 0.219,
-     "Voidwalker melee": 0.138,
-     "Siphon Life": 0.098,
-     "Immolate": 0.061
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "leveling-affliction",
-    "split": "23/26/2",
-    "rotation": "demonology-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.26
-    },
-    "core_share": 0.6877,
-    "min_share": 0.5,
-    "weighted": 32.64,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Wand": 0.265,
-     "Corruption": 0.223,
-     "Bane of Agony": 0.22,
-     "Voidwalker melee": 0.138,
-     "Siphon Life": 0.1,
-     "Immolate": 0.046
+     "Bane of Agony": 0.21,
+     "Corruption": 0.205,
+     "Wand": 0.172,
+     "Shadow Bolt": 0.15,
+     "Voidwalker melee": 0.124,
+     "Siphon Life": 0.092
     }
    },
    {
@@ -5487,11 +6885,89 @@
     }
    },
    {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "affliction-demonology-open-leveling",
+    "split": "27/24/0",
+    "rotation": "affliction-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.03
+    },
+    "core_share": 0.6469,
+    "min_share": 0.5,
+    "weighted": 38.05,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Bane of Agony": 0.21,
+     "Corruption": 0.204,
+     "Wand": 0.165,
+     "Shadow Bolt": 0.155,
+     "Voidwalker melee": 0.119,
+     "Siphon Life": 0.092
+    }
+   },
+   {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "leveling-affliction",
+    "split": "23/26/2",
+    "rotation": "demonology-leveling",
+    "rules": "tuned",
+    "kind": "mapped",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.26
+    },
+    "core_share": 0.6877,
+    "min_share": 0.5,
+    "weighted": 32.64,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Wand": 0.265,
+     "Corruption": 0.223,
+     "Bane of Agony": 0.22,
+     "Voidwalker melee": 0.138,
+     "Siphon Life": 0.1,
+     "Immolate": 0.046
+    }
+   },
+   {
     "spec": "Hybrid Demonology/Destruction",
     "name": "Demonology/Destruction hybrid",
     "build": "hybrid-demonology-destruction-open-leveling",
     "split": "5/24/22",
-    "rotation": "destruction-leveling",
+    "rotation": "affliction-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -5500,18 +6976,18 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 44.77,
+    "weighted": 41.34,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Shadow Bolt": 0.44,
-     "Immolate": 0.147,
-     "Soul Fire": 0.129,
-     "Wand": 0.099,
+     "Shadow Bolt": 0.315,
+     "Corruption": 0.148,
+     "Bane of Agony": 0.139,
      "Voidwalker melee": 0.097,
-     "Shadowburn": 0.075
+     "Immolate": 0.092,
+     "Wand": 0.08
     }
    }
   ],
@@ -5519,53 +6995,11 @@
    {
     "spec": "Arms",
     "name": "Arms",
-    "build": "opt-arms-2h-raid-leveling-st",
-    "split": "44/7/0",
-    "rotation": "arms-2h-raid",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Mortal Strike"
-    ],
-    "core": [
-     "melee",
-     "Mortal Strike",
-     "Overpower",
-     "Slam",
-     "Execute",
-     "Rend",
-     "Whirlwind",
-     "Heroic Strike",
-     "Deep Wounds"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Mortal Strike": 2.41
-    },
-    "core_share": 0.9798,
-    "min_share": 0.8,
-    "weighted": 26.9,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.375,
-     "Mortal Strike": 0.199,
-     "Overpower": 0.144,
-     "Execute": 0.129,
-     "Rend": 0.056,
-     "Slam": 0.045
-    }
-   },
-   {
-    "spec": "Arms",
-    "name": "Arms",
     "build": "leveling-arms",
     "split": "31/20/0",
     "rotation": "arms-2h-raid",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Mortal Strike"
     ],
@@ -5601,13 +7035,133 @@
     }
    },
    {
+    "spec": "Arms",
+    "name": "Arms",
+    "build": "opt-arms-2h-raid-leveling-st",
+    "split": "44/7/0",
+    "rotation": "arms-2h-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Mortal Strike"
+    ],
+    "core": [
+     "melee",
+     "Mortal Strike",
+     "Overpower",
+     "Slam",
+     "Execute",
+     "Rend",
+     "Whirlwind",
+     "Heroic Strike",
+     "Deep Wounds"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Mortal Strike": 2.41
+    },
+    "core_share": 0.9798,
+    "min_share": 0.8,
+    "weighted": 26.9,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.375,
+     "Mortal Strike": 0.199,
+     "Overpower": 0.144,
+     "Execute": 0.129,
+     "Rend": 0.056,
+     "Slam": 0.045
+    }
+   },
+   {
     "spec": "Fury",
     "name": "Fury",
-    "build": "fury-open-leveling",
-    "split": "16/35/0",
-    "rotation": "fury-dw-raid",
+    "build": "opt-fury-dw-raid-leveling-st",
+    "split": "13/38/0",
+    "rotation": "arms-2h-raid",
     "rules": "tuned",
     "kind": "page",
+    "required": [
+     "Bloodthirst"
+    ],
+    "core": [
+     "melee",
+     "Bloodthirst",
+     "Whirlwind",
+     "Heroic Strike",
+     "Execute",
+     "Slam"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Bloodthirst": 3.08
+    },
+    "core_share": 0.8522,
+    "min_share": 0.8,
+    "weighted": 28.81,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.46,
+     "Bloodthirst": 0.201,
+     "Execute": 0.149,
+     "Rend": 0.078,
+     "Heroic Strike": 0.042,
+     "Overpower": 0.041
+    }
+   },
+   {
+    "spec": "Fury",
+    "name": "Fury",
+    "build": "opt-fury-dw-raid-solo-60",
+    "split": "13/38/0",
+    "rotation": "arms-2h-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Bloodthirst"
+    ],
+    "core": [
+     "melee",
+     "Bloodthirst",
+     "Whirlwind",
+     "Heroic Strike",
+     "Execute",
+     "Slam"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Bloodthirst": 3.24
+    },
+    "core_share": 0.8861,
+    "min_share": 0.8,
+    "weighted": 29.2,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.458,
+     "Bloodthirst": 0.214,
+     "Execute": 0.155,
+     "Rend": 0.06,
+     "Heroic Strike": 0.059,
+     "Overpower": 0.042
+    }
+   },
+   {
+    "spec": "Fury",
+    "name": "Fury",
+    "build": "opt-arms-2h-raid-leveling-aoe",
+    "split": "20/31/0",
+    "rotation": "arms-2h-raid",
+    "rules": "tuned",
+    "kind": "slot",
     "required": [
      "Bloodthirst"
     ],
@@ -5623,137 +7177,59 @@
     "casts_60": {
      "Bloodthirst": 2.52
     },
-    "core_share": 0.8371,
+    "core_share": 0.7938,
     "min_share": 0.8,
-    "weighted": 25.51,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.233,
-     "Melee (off-hand)": 0.198,
-     "Bloodthirst": 0.171,
-     "Execute": 0.142,
-     "Heroic Strike": 0.093,
-     "Overpower": 0.07
-    }
-   },
-   {
-    "spec": "Fury",
-    "name": "Fury",
-    "build": "opt-fury-dw-raid-leveling-st",
-    "split": "13/38/0",
-    "rotation": "fury-dw-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Bloodthirst"
-    ],
-    "core": [
-     "melee",
-     "Bloodthirst",
-     "Whirlwind",
-     "Heroic Strike",
-     "Execute",
-     "Slam"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Bloodthirst": 2.87
-    },
-    "core_share": 0.864,
-    "min_share": 0.8,
-    "weighted": 26.07,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.257,
-     "Melee (off-hand)": 0.205,
-     "Bloodthirst": 0.192,
-     "Execute": 0.147,
-     "Rend": 0.071,
-     "Heroic Strike": 0.062
-    }
-   },
-   {
-    "spec": "Fury",
-    "name": "Fury",
-    "build": "opt-fury-dw-raid-solo-60",
-    "split": "13/38/0",
-    "rotation": "fury-dw-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Bloodthirst"
-    ],
-    "core": [
-     "melee",
-     "Bloodthirst",
-     "Whirlwind",
-     "Heroic Strike",
-     "Execute",
-     "Slam"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Bloodthirst": 2.99
-    },
-    "core_share": 0.8958,
-    "min_share": 0.8,
-    "weighted": 26.28,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.26,
-     "Melee (off-hand)": 0.207,
-     "Bloodthirst": 0.204,
-     "Execute": 0.151,
-     "Heroic Strike": 0.074,
-     "Rend": 0.054
-    }
-   },
-   {
-    "spec": "Fury",
-    "name": "Fury",
-    "build": "opt-arms-2h-raid-leveling-aoe",
-    "split": "20/31/0",
-    "rotation": "fury-dw-raid",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Bloodthirst"
-    ],
-    "core": [
-     "melee",
-     "Bloodthirst",
-     "Whirlwind",
-     "Heroic Strike",
-     "Execute",
-     "Slam"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Bloodthirst": 2.45
-    },
-    "core_share": 0.7906,
-    "min_share": 0.8,
-    "weighted": 28.29,
+    "weighted": 29.66,
     "verdict": "FAIL: core share 79% < 80%",
     "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.307,
-     "Bloodthirst": 0.16,
-     "Melee (off-hand)": 0.158,
-     "Execute": 0.146,
-     "Overpower": 0.082,
-     "Rend": 0.072
+     "Melee": 0.447,
+     "Bloodthirst": 0.168,
+     "Execute": 0.158,
+     "Overpower": 0.072,
+     "Rend": 0.07,
+     "Spearing Strike": 0.026
+    }
+   },
+   {
+    "spec": "Fury",
+    "name": "Fury",
+    "build": "fury-open-leveling",
+    "split": "16/35/0",
+    "rotation": "arms-2h-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Bloodthirst"
+    ],
+    "core": [
+     "melee",
+     "Bloodthirst",
+     "Whirlwind",
+     "Heroic Strike",
+     "Execute",
+     "Slam"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Bloodthirst": 2.73
+    },
+    "core_share": 0.8228,
+    "min_share": 0.8,
+    "weighted": 28.81,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.425,
+     "Bloodthirst": 0.179,
+     "Execute": 0.142,
+     "Heroic Strike": 0.077,
+     "Rend": 0.075,
+     "Overpower": 0.064
     }
    },
    {
@@ -5761,7 +7237,7 @@
     "name": "Protection",
     "build": "protection-open-leveling",
     "split": "0/20/31",
-    "rotation": "prot-leveling",
+    "rotation": "arms-2h-raid",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -5776,22 +7252,41 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Shield Slam": 2.76
+     "Shield Slam": 0.0
     },
-    "core_share": 0.9533,
+    "core_share": 0.7141,
     "min_share": 0.7,
-    "weighted": 26.03,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 37.3,
+    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50)",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Shield Slam",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Revenge": 0.316,
-     "Shield Slam": 0.306,
-     "Melee": 0.246,
-     "Heroic Strike": 0.086,
-     "Rend": 0.042,
-     "Victory Rush": 0.004
+     "Heroic Strike": 0.415,
+     "Melee": 0.299,
+     "Execute": 0.152,
+     "Rend": 0.085,
+     "Overpower": 0.037,
+     "Victory Rush": 0.012
     }
    },
    {
@@ -5799,7 +7294,7 @@
     "name": "Protection",
     "build": "protection-leveling",
     "split": "17/3/31",
-    "rotation": "prot-leveling",
+    "rotation": "arms-2h-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5814,22 +7309,41 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Shield Slam": 3.09
+     "Shield Slam": 0.0
     },
-    "core_share": 0.9126,
+    "core_share": 0.6752,
     "min_share": 0.7,
-    "weighted": 26.44,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 37.08,
+    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70%",
+    "ok": false,
     "missing_talents": [],
-    "uncast": [],
+    "uncast": [
+     [
+      "Shield Slam",
+      40,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      50,
+      0.0,
+      0.5
+     ],
+     [
+      "Shield Slam",
+      60,
+      0.0,
+      0.5
+     ]
+    ],
     "top_shares": {
-     "Shield Slam": 0.321,
-     "Revenge": 0.277,
-     "Melee": 0.273,
-     "Rend": 0.071,
-     "Heroic Strike": 0.042,
-     "Deep Wounds": 0.009
+     "Heroic Strike": 0.427,
+     "Melee": 0.248,
+     "Execute": 0.152,
+     "Rend": 0.109,
+     "Overpower": 0.035,
+     "Deep Wounds": 0.015
     }
    }
   ]

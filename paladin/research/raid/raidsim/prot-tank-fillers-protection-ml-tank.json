@@ -3,43 +3,46 @@
  "spec": "prot-tank",
  "build": "protection-ml-tank",
  "setting": "raid",
- "date": "2026-10-27",
+ "date": "2026-11-02",
  "tank": true,
  "removal": {
-  "Anticipation": 0.024103897706748256,
-  "Conviction": 0.008503291787686607,
-  "Deflection": 0.03644336992303698,
-  "Holy Conduit": 0.026786742033902855,
-  "Holy Shield": 0.08866444845465793,
-  "Improved Judgement": 0.014795076882241132,
-  "Improved Righteous Fury": 0.031279279318392694,
-  "Iron Creed": 0.04234218377768917,
-  "One-Handed Weapon Specialization": 0.025024821215388737,
-  "Precision": 0.016550676826316613,
-  "Reckoning": 0.021263466216562943,
-  "Redoubt": 0.0195105301234082,
-  "Sacred Arbiter": 0.007738872957564702,
-  "Sanctified Judgement": 0.023450497081292987,
-  "Shield Specialization": 0.020991339234451845,
-  "Templar's Bulwark": 0.020240141169738157,
-  "Toughness": 0.008837721235342544
+  "Anticipation": 0.01178575080308164,
+  "Benediction": 0.0038009495670439097,
+  "Conviction": 0.020664731854612484,
+  "Deflection": 0.03173992257674052,
+  "Guardian's Favor": -0.0,
+  "Holy Shield": 0.10708401537626955,
+  "Improved Judgement": 0.015392819609532982,
+  "Improved Righteous Fury": 0.04875636787409965,
+  "Iron Creed": 0.05379983224719975,
+  "Precision": 0.020266318031524788,
+  "Reckoning": 0.02307823702211642,
+  "Redoubt": 0.026132154959111475,
+  "Sacred Arbiter": 0.012604326250127973,
+  "Sacred Duty": -0.0,
+  "Sanctified Judgement": 0.014268352377664106,
+  "Shield Specialization": 0.04321004958684882,
+  "Shieldsworn": 0.10113947001740176,
+  "Swift Judgement": 0.008189691353196027,
+  "Templar's Bulwark": 0.012068259734226316,
+  "Toughness": 0.024261573660497082
  },
- "free": [],
+ "free": [
+  "Guardian's Favor",
+  "Sacred Duty"
+ ],
  "kept_for_rotation": [
-  "Holy Shield",
-  "Redoubt"
+  "Holy Shield"
  ],
  "active_never_worth": [],
- "abilities_never_cast": [],
+ "abilities_never_cast": [
+  "Swift Judgement"
+ ],
  "moves": [],
  "final_seed3": 0.0,
  "start": {
   "Holy": [],
   "Protection": [
-   [
-    "Toughness",
-    2
-   ],
    [
     "Redoubt",
     5
@@ -49,23 +52,39 @@
     3
    ],
    [
-    "Anticipation",
-    5
+    "Guardian's Favor",
+    1
    ],
    [
-    "Improved Righteous Fury",
-    3
+    "Sacred Duty",
+    1
+   ],
+   [
+    "Templar's Bulwark",
+    1
    ],
    [
     "Shield Specialization",
     2
    ],
    [
-    "One-Handed Weapon Specialization",
+    "Toughness",
+    5
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "Improved Righteous Fury",
     3
    ],
    [
-    "Templar's Bulwark",
+    "Anticipation",
+    3
+   ],
+   [
+    "Holy Shield",
     1
    ],
    [
@@ -74,10 +93,10 @@
    ],
    [
     "Iron Creed",
-    5
+    3
    ],
    [
-    "Holy Shield",
+    "Shieldsworn",
     1
    ]
   ],
@@ -87,11 +106,11 @@
     5
    ],
    [
-    "Improved Judgement",
+    "Benediction",
     2
    ],
    [
-    "Holy Conduit",
+    "Improved Judgement",
     2
    ],
    [
@@ -112,10 +131,6 @@
   "Holy": [],
   "Protection": [
    [
-    "Toughness",
-    2
-   ],
-   [
     "Redoubt",
     5
    ],
@@ -124,23 +139,39 @@
     3
    ],
    [
-    "Anticipation",
-    5
+    "Guardian's Favor",
+    1
    ],
    [
-    "Improved Righteous Fury",
-    3
+    "Sacred Duty",
+    1
+   ],
+   [
+    "Templar's Bulwark",
+    1
    ],
    [
     "Shield Specialization",
     2
    ],
    [
-    "One-Handed Weapon Specialization",
+    "Toughness",
+    5
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "Improved Righteous Fury",
     3
    ],
    [
-    "Templar's Bulwark",
+    "Anticipation",
+    3
+   ],
+   [
+    "Holy Shield",
     1
    ],
    [
@@ -149,10 +180,10 @@
    ],
    [
     "Iron Creed",
-    5
+    3
    ],
    [
-    "Holy Shield",
+    "Shieldsworn",
     1
    ]
   ],
@@ -162,11 +193,11 @@
     5
    ],
    [
-    "Improved Judgement",
+    "Benediction",
     2
    ],
    [
-    "Holy Conduit",
+    "Improved Judgement",
     2
    ],
    [

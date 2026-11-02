@@ -2470,5 +2470,170 @@
   "best_hand": "fury-dw-raid",
   "gain_vs_hand": 0.0605,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "fury-dw-raid",
+    "dps": 980.84,
+    "se": 0.176
+   },
+   "fury-dw-raid": {
+    "entry": "fury-dw-raid",
+    "dps": 923.59,
+    "se": 0.164
+   },
+   "arms-2h-raid": {
+    "entry": "arms-2h-raid",
+    "dps": 863.69,
+    "se": 0.17
+   },
+   "fury-open-raid": {
+    "entry": "fury-dw-raid",
+    "dps": 982.47,
+    "se": 0.177
+   },
+   "opt-fury-dw-raid-raid-dps": {
+    "entry": "fury-dw-raid",
+    "dps": 969.38,
+    "se": 0.174
+   },
+   "opt-arms-2h-raid-raid-dps": {
+    "entry": "arms-2h-raid",
+    "dps": 918.94,
+    "se": 0.171
+   }
+  },
+  "best_hand": "fury-dw-raid",
+  "gain_vs_hand": 0.062
+ },
+ "signature_check": {
+  "spec": "Fury",
+  "ok": true,
+  "core_share": 0.9038,
+  "min_share": 0.8,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "fury-dw-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 981.9,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.4233,
+   "Bloodthirst": 0.1623,
+   "Execute": 0.1271,
+   "Heroic Strike": 0.0991,
+   "Whirlwind": 0.092,
+   "Deep Wound": 0.0762,
+   "Hamstring": 0.0199
+  },
+  "casts": {
+   "Recklessness": 1.0,
+   "Heroic Strike": 19.94,
+   "Execute": 16.98,
+   "Bloodthirst": 26.86,
+   "Bloodrage": 2.95,
+   "Death Wish": 1.0,
+   "Whirlwind": 16.08,
+   "Deep Wound": 127.01,
+   "Hamstring": 53.52
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     5
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     3
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Raging Blows",
+     1
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms fury-open-raid (-0.17% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

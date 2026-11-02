@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Restoration
 
-**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-143113505310305-7)
+**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (11/4/36) — [open the talent tree](https://talentsforever.com/druid/60/05302001-04-153311505310305-7)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Restoration — Raid Healer), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -33,6 +33,8 @@ Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank
 - Curses and poisons: **Remove Curse** and **Abolish Poison** are yours to cast. The lab does not model them, so dispel when the debuff would cost more health than your next heal restores.
 - If your raid's damage comes in bursts on whole parties, the hand-made build under Other builds takes **Wild Growth** and **Nature's Swiftness**; in the lab's steady damage this build heals more (capacity 0.65 against 0.63).
 
+*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 Healing capacity 0.65 (the raid damage it heals through in this project's healer lab), 380 healing per second. Healers are not in the community simulator.
@@ -51,18 +53,18 @@ Healing capacity 0.65 (the raid damage it heals through in this project's healer
 | Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* | [Corehound Belt](https://www.wowhead.com/forever/item=19162) · *Leatherworking* |
 | Legs | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
-| Finger | [Vigilant Watcher's Signet](https://www.wowhead.com/forever/item=275983) | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
+| Finger | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
 | Trinket | [Serenity Field](https://www.wowhead.com/forever/item=272439) | [Serenity Field](https://www.wowhead.com/forever/item=272439) |
-| Trinket | [Ankh of Life](https://www.wowhead.com/forever/item=1713) | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
-| Main hand | [Hand of Righteousness](https://www.wowhead.com/forever/item=7721) · *High Inquisitor Whitemane, Scarlet Monastery*<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [Hand of Righteousness](https://www.wowhead.com/forever/item=7721) · *High Inquisitor Whitemane, Scarlet Monastery*<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) |
+| Trinket | [item 1713](https://www.wowhead.com/forever/item=1713) | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) |
+| Main hand | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) |
 | Off hand | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* |
 
 ## Other builds of this spec
 
-- [Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-7)
-- [Restoration — Regrowth / Nature's Grace, with a Balance dip](../research/raid/builds/resto-regrowth-natures-grace.md) (21/0/30) — [open the talent tree](https://talentsforever.com/druid/60/1532223110001--505003510311105-7)
+- [Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md) (11/0/40) — [open the talent tree](https://talentsforever.com/druid/60/05302001--5553005053113031-7)
+- [Restoration — Regrowth / Nature's Grace, with a Balance dip](../research/raid/builds/resto-regrowth-natures-grace.md) (21/0/30) — [open the talent tree](https://talentsforever.com/druid/60/1532223110001--505300500311205-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

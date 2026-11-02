@@ -2533,5 +2533,164 @@
   "best_hand": "fire-raid",
   "gain_vs_hand": 0.0283,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "fire-raid",
+    "dps": 903.2,
+    "se": 0.17
+   },
+   "fire-raid": {
+    "entry": "fire-raid",
+    "dps": 871.07,
+    "se": 0.178
+   },
+   "fire-open-raid": {
+    "entry": "fire-raid",
+    "dps": 903.2,
+    "se": 0.17
+   },
+   "opt-fire-raid-raid-dps": {
+    "entry": "fire-raid",
+    "dps": 868.66,
+    "se": 0.183
+   }
+  },
+  "best_hand": "fire-raid",
+  "gain_vs_hand": 0.0369
+ },
+ "signature_check": {
+  "spec": "Fire",
+  "ok": true,
+  "core_share": 0.8857,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "fire-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 903.1,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Pyroblast": 0.2645,
+   "Fire Blast": 0.2142,
+   "Scorch": 0.1727,
+   "Fireball": 0.1227,
+   "Ignite": 0.1115,
+   "Arcane Missiles": 0.0729,
+   "Arcane Blast": 0.0367,
+   "Demonic Rune": 0.0047
+  },
+  "casts": {
+   "Arcane Blast": 8.98,
+   "Pyroblast": 15.28,
+   "Arcane Missiles": 10.44,
+   "Fire Blast": 28.66,
+   "Evocation": 0.24,
+   "Combustion": 1.0,
+   "Fireball": 10.8,
+   "Scorch": 35.58
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Arcane Resilience",
+     3
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     2
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     4
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     3
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Precision",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms fire-open-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

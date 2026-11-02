@@ -60,16 +60,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | +0.0% | 754 | -1.8% | 61 s |
-| 2 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.1% | 768 | +0.0% | 61 s |
-| 3 | *Cat* | community simulator | - | 352 | -4.4% | 750 | -2.3% | 62 s |
-| 4 | *Hybrid* | community simulator | - | 341 | -7.4% | 698 | -9.1% | 61 s |
-| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/30/12 | 335 | -9.3% | 643 | -16.3% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.0% | 636 | -17.2% | 0 s |
+| 1 | *Cat* | community simulator | - | 372 | +0.0% | 768 | -1.1% | 61 s |
+| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 369 | -0.8% | 763 | -1.8% | 61 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.9% | 776 | +0.0% | 61 s |
+| 4 | *Hybrid* | community simulator | - | 339 | -8.9% | 727 | -6.3% | 62 s |
+| 5 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/30/12 | 335 | -9.9% | 646 | -16.8% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.7% | 635 | -18.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,7 +84,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-31, 10 changes to the base rotation; third-seed check: feral-combat-open-raid 768 -> 768 DPS (+0.0%), feral-combat-shifting-power-raid 754 -> 754 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 643 -> 643 DPS (+0.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-01, 10 changes to the base rotation; third-seed check: feral-combat-open-raid 776 -> 776 DPS (+0.0%), feral-combat-shifting-power-raid 762 -> 762 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 646 -> 646 DPS (+0.0%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)

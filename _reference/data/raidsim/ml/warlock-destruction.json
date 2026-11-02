@@ -2432,5 +2432,388 @@
   "best_hand": "destruction-incinerate-raid",
   "gain_vs_hand": 0.0684,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 782.56,
+    "se": 0.145
+   },
+   "destruction-incinerate-raid": {
+    "entry": "incinerate-raid",
+    "dps": 723.02,
+    "se": 0.105
+   },
+   "destruction-ml-raid": {
+    "entry": "sb-raid",
+    "dps": 782.56,
+    "se": 0.145
+   }
+  },
+  "best_hand": "destruction-incinerate-raid",
+  "gain_vs_hand": 0.0823
+ },
+ "signature_check": {
+  "spec": "Destruction",
+  "ok": true,
+  "core_share": 0.6827,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 783.1,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Shadow Bolt": 0.4874,
+   "Corruption": 0.1524,
+   "Bane of Agony": 0.1516,
+   "Immolate": 0.1065,
+   "Conflagrate": 0.084,
+   "Demonic Rune": 0.0133,
+   "Searing Pain": 0.0047
+  },
+  "casts": {
+   "Life Tap": 9.89,
+   "Bane of Agony": 8.03,
+   "Corruption": 10.12,
+   "Searing Pain": 1.14,
+   "Curse of the Elements": 1.12,
+   "Immolate": 10.7,
+   "Shadow Bolt": 41.41,
+   "Conflagrate": 12.72
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms destruction-ml-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Improved Life Tap",
+      2
+     ],
+     [
+      "Suppression",
+      5
+     ],
+     [
+      "Improved Corruption",
+      3
+     ]
+    ],
+    "Demonology": [
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Demonic Embrace",
+      5
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Cataclysm",
+      3
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ],
+     [
+      "Conflagrate",
+      1
+     ],
+     [
+      "Fire and Brimstone",
+      3
+     ],
+     [
+      "Shadow and Flame",
+      5
+     ]
+    ]
+   },
+   "split": "10/11/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": null,
+  "prebis-dummy": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Improved Life Tap",
+      2
+     ],
+     [
+      "Suppression",
+      5
+     ],
+     [
+      "Improved Corruption",
+      3
+     ]
+    ],
+    "Demonology": [
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Demonic Embrace",
+      5
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Cataclysm",
+      3
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ],
+     [
+      "Conflagrate",
+      1
+     ],
+     [
+      "Fire and Brimstone",
+      3
+     ],
+     [
+      "Shadow and Flame",
+      5
+     ]
+    ]
+   },
+   "split": "10/11/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Unholy Power",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": null
  }
 }

@@ -4,31 +4,26 @@
 
 *Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points.* (a hybrid: Beast Mastery/Survival).
 
-**✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
+**[Melee Survival leveling](../research/leveling/builds/leveling-melee.md)** (12/10/29) — [open the talent tree](https://talentsforever.com/hunter/60/512022-005005-54020003105022014-7)
 
-**[Beast-Survival — Leveling](../research/leveling/builds/beast-survival-open-leveling.md)** (23/3/25) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050102-003-501220230140212-7)
-
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
-
-**Signature spells:** 75% of the damage at level 60 in the fight lab comes from melee, Raptor Strike, Mongoose Bite, Lacerate, pet (the spec's rule: at least 50%).
+> **Signature spells: this build fails the check** in the fight lab (core share 31% < 50%). Beast-Survival is defined by melee, Raptor Strike, Mongoose Bite, Lacerate, pet carrying 50% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Not in this build:** **Counterattack**, **Deterrence** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Bestial Wrath**, **Intimidation** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). Send the pet in and walk in behind it. No sting from range: the fight lab levels faster without it.
+**Before the fight:** Pet out (a cat), **Aspect of the Hawk** up. Send the pet in first and let it hold the mob.
 
 **In the fight**, top to bottom:
 
-1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
-2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
-3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
-4. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
-5. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
-6. With **Expose Prey**: **Hunter's Mark** in a free global cooldown while the mob has more than 30% of its health, so your hits can light up **Mongoose Bite**.
-7. **Mend Pet** when the pet drops below a third of its health.
+1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
+2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
+3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
+5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below 60% of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
 
 ## Why this rotation
 
@@ -55,47 +50,11 @@ Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and
 - Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
 - Low on health with no **Deterrence**: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you.
 
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-14 | Improved Tracking (Survival) | 5 |
-| 15-16 | Savage Strikes (Survival) | 2 |
-| 17-18 | Survivalist (Survival) | 2 |
-| 19 | Entrapment (Survival) | 1 |
-| 20-22 | Surefooted (Survival) | 3 |
-| 23-24 | Clever Traps (Survival) | 2 |
-| 25-28 | Predator's Edge (Survival) | 4 |
-| 29 | Survival Tactics (Survival) | 1 |
-| 30 | Resourcefulness (Survival) | 1 |
-| 31 | Expose Prey (Survival) | 1 |
-| 32 | Resourcefulness (Survival) | 1 |
-| 33-34 | Survivalist's Discipline (Survival) | 2 |
-| 35-37 | Lethal Attacks (Marksmanship) | 3 |
-| 38-42 | Deadly Aspects (Beast Mastery) | 5 |
-| 43-44 | Focused Fire (Beast Mastery) | 2 |
-| 45-47 | Endurance Training (Beast Mastery) | 3 |
-| 48-52 | Unleashed Fury (Beast Mastery) | 5 |
-| 53-57 | Ferocity (Beast Mastery) | 5 |
-| 58-59 | Bestial Discipline (Beast Mastery) | 2 |
-| 60 | Spirit Bond (Beast Mastery) | 1 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 16 |
-| 30 | 19 |
-| 40 | 22 |
-| 50 | 23 |
-| 60 | 25 |
-
 ## Other builds of this spec
 
-- [Beast-Survival (optimized)](../research/leveling/builds/opt-melee-dps-leveling-st.md) (15/10/26, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/50202105-005005-5402000310502211-7)
+- [Beast-Survival (optimized, solo at 60)](../research/leveling/builds/opt-melee-dps-solo-60.md) (15/10/26) — [open the talent tree](https://talentsforever.com/hunter/60/51202005-005005-5402000310502211-7)
+- [Beast-Survival — Leveling](../research/leveling/builds/beast-survival-open-leveling.md) (23/3/25) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050102-003-501220230140212-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

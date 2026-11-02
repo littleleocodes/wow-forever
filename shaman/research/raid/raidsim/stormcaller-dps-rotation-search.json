@@ -150,25 +150,20 @@
  "raid": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-10-26",
-  "commit": "30f67f5d2",
+  "date": "2026-11-02",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "350533100001134-255202201000102"
-   },
-   {
     "label": "sim preset: Stormcaller 28/23/0",
-    "talents": "150533130010303-055030030004102",
-    "protect_only": true
+    "talents": "150533130010303-055030030004102"
    }
   ],
   "tuned_on": [
-   "open winner"
+   "sim preset: Stormcaller 28/23/0"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -244,27 +239,26 @@
     "gain_seed2": 0.0019814047104329546,
     "candidates": 339,
     "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: cast Demonic Rune",
+    "gain_seed1": 0.008670278746121252,
+    "gain_seed2": 0.006660858554633942,
+    "candidates": 325,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 617.3445903420044,
-     "after": 612.0713177373109,
-     "base": 617.3445903420044,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "sim preset: Stormcaller 28/23/0": {
-     "before": 539.9865248645539,
-     "after": 540.3060246148216,
-     "base": 539.9865248645539,
+     "before": 506.0400834347308,
+     "after": 509.0593747645348,
+     "base": 506.0400834347308,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.405375000000001,
-     "oom_after": 0.405375000000001
+     "oom_before": 3.646849999999942,
+     "oom_after": 1.3563749999999466
     }
    }
   },
@@ -278,13 +272,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 24,
+    "structure": 52,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

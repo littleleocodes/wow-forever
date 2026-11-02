@@ -34,8 +34,8 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-7) | Hybrid Arcane/Frost | 670.9 | +1.5% |
 | [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [28/21/2](https://talentsforever.com/rogue/60/0053031033150103-311333100015-002-7) | Hybrid Assassination/Combat | 663.4 | +0.2% |
 | [druid](../druid/research/raid/family-search.md) | balance-dps | [33/0/18](https://talentsforever.com/druid/60/0532220115501051--5553-7) | Balance | 645.7 | +0.0% |
-| [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [19/32/0](https://talentsforever.com/rogue/60/005303103004-32023311001515221--7) | Combat | 641.2 | +0.0% |
+| [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [19/32/0](https://talentsforever.com/rogue/60/005303103004-32023311001515221--7) | Combat | 641.2 | +1.8% |
 | [priest](../priest/research/raid/family-search.md) | smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7) | Hybrid Discipline/Holy | 611.1 | +2.9% |
 | [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/005303103014--3021013312113211501-7) | Subtlety | 610.9 | +0.0% |
-| [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [32/13/6](https://talentsforever.com/shaman/60/0522331321001351-255000001-0501-7) | Elemental | 602.6 | -2.6% |
-| [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [35/11/5](https://talentsforever.com/shaman/60/5505331100021351-055000001-05-7) | Elemental | 593.1 | - |
+| [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [31/11/9](https://talentsforever.com/shaman/60/2523331100011351-055000001-05202-7) | Elemental | 554.1 | -1.8% |
+| [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [32/11/8](https://talentsforever.com/shaman/60/2534331100001351-055000001-1502-7) | Elemental | 541.6 | - |

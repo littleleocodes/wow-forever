@@ -137,8 +137,8 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-10-26",
-  "commit": "30f67f5d2",
+  "date": "2026-11-02",
+  "commit": "54ceac638",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
@@ -146,7 +146,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "450533100000134-255201301000102"
+    "talents": "251233112100134-255202201000102"
    },
    {
     "label": "elemental-raid-dps",
@@ -238,54 +238,70 @@
     "gain_seed2": 0.002920953753875466,
     "candidates": 346,
     "pass": 10
+   },
+   {
+    "round": 9,
+    "change": "insert in the middle: cast Lava Burst",
+    "gain_seed1": 0.0027676557008100566,
+    "gain_seed2": 0.0032943217580339024,
+    "candidates": 335,
+    "pass": 11
+   },
+   {
+    "round": 10,
+    "change": "threshold 1s -> 2s: if number of targets = 1 and time left on the totem \u2264 1s and time left in the fight \u2265 10s: cast Searing Totem",
+    "gain_seed1": 0.0017359726812471443,
+    "gain_seed2": 0.0018046062307672806,
+    "candidates": 344,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 617.6324908106303,
-     "after": 621.8473988431805,
-     "base": 617.6324908106303,
+     "before": 555.3957079304826,
+     "after": 563.8598380055166,
+     "base": 555.3957079304826,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.001385,
-     "oom_after": 0.001335
+     "oom_before": 0.42615499992110106,
+     "oom_after": 0.42615499992110106
     },
     "elemental-raid-dps": {
-     "before": 615.5736778513243,
-     "after": 618.7963877240812,
-     "base": 615.5736778513243,
+     "before": 560.1027864952248,
+     "after": 564.3822832473385,
+     "base": 560.1027864952248,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.00046999999985
+     "oom_before": 0.02086499999419999,
+     "oom_after": 0.02086499999419999
     },
     "sim preset: Standard": {
-     "before": 595.6249330499116,
-     "after": 601.8812160873823,
-     "base": 595.6249330499116,
+     "before": 546.5015762782116,
+     "after": 551.0955410758762,
+     "base": 546.5015762782116,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-elemental-dps-raid-dps": {
-     "before": 596.8907331142964,
-     "after": 603.3738737627851,
-     "base": 596.8907331142964,
+     "before": 547.5896278841652,
+     "after": 552.1307948263003,
+     "base": 547.5896278841652,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "elemental-raid": {
-     "before": 583.1969261001911,
-     "after": 586.0968208908142,
-     "base": 583.1969261001911,
+     "before": 534.5480183170397,
+     "after": 539.0876607091225,
+     "base": 534.5480183170397,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.00015,
+     "oom_after": 0.00015
     }
    }
   },
@@ -299,13 +315,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 48,
+    "structure": 26,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 12
  }
 }

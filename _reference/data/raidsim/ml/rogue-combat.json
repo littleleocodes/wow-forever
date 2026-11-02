@@ -2522,5 +2522,171 @@
   "best_hand": "combat-daggers-raid",
   "gain_vs_hand": 0.0693,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "combat-daggers-raid",
+    "dps": 743.77,
+    "se": 0.091
+   },
+   "combat-daggers-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 736.87,
+    "se": 0.091
+   },
+   "combat-swords-raid": {
+    "entry": "combat-swords-raid",
+    "dps": 669.35,
+    "se": 0.087
+   },
+   "combat-ml-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 743.77,
+    "se": 0.091
+   },
+   "opt-combat-daggers-raid-raid-dps": {
+    "entry": "combat-daggers-raid",
+    "dps": 720.46,
+    "se": 0.089
+   }
+  },
+  "best_hand": "combat-daggers-raid",
+  "gain_vs_hand": 0.0094
+ },
+ "signature_check": {
+  "spec": "Combat",
+  "ok": true,
+  "core_share": 0.9011,
+  "min_share": 0.7,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "combat-daggers-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 744.3,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.5441,
+   "Backstab": 0.2611,
+   "Eviscerate": 0.0959,
+   "Deadly Poison V": 0.0423,
+   "Instant Poison VI": 0.0276,
+   "Garrote": 0.02,
+   "Goblin Sapper Charge": 0.009
+  },
+  "casts": {
+   "Slice and Dice": 9.88,
+   "Eviscerate": 9.02,
+   "Cold Blood": 1.0,
+   "spell 11337": 33.08,
+   "Stealth": 1.0,
+   "Garrote": 2.0,
+   "Vanish": 1.0,
+   "Blade Flurry": 2.0,
+   "Backstab": 30.48,
+   "Adrenaline Rush": 1.0,
+   "spell 25349": 30.26
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     5
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Blade Flurry",
+     1
+    ],
+    [
+     "Hack and Slash",
+     5
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     3
+    ],
+    [
+     "Adrenaline Rush",
+     1
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Opportunity",
+     2
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms combat-ml-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

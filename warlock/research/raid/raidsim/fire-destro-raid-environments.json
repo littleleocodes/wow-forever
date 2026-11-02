@@ -2,7 +2,7 @@
  "class": "warlock",
  "spec": "fire-destro-raid",
  "game": "forever",
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
   "commit": "54ceac638",
@@ -96,26 +96,26 @@
    },
    "raid_spell_casts": {
     "25311": 10.016,
-    "25309": 11.066333333333333,
-    "25307": 46.835,
-    "1311680": 1.1186666666666667,
     "11689": 12.555333333333333,
+    "1311680": 1.1186666666666667,
     "11713": 7.899666666666667,
-    "17923": 2.1513333333333335
+    "25309": 11.066333333333333,
+    "17923": 2.1513333333333335,
+    "25307": 46.835
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
     "Corruption": 10.016,
-    "Immolate": 11.066333333333333,
-    "Shadow Bolt": 46.835,
-    "Demonic Rune": 2.0,
-    "Curse of the Elements": 1.1186666666666667,
     "Life Tap": 12.555333333333333,
+    "Curse of the Elements": 1.1186666666666667,
     "Bane of Agony": 7.899666666666667,
-    "Talisman of Ephemeral Power": 2.0,
+    "Immolate": 11.066333333333333,
     "OtherActionManaGain": 50.64566666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
+    "Demonic Rune": 2.0,
+    "Searing Pain": 2.1513333333333335,
     "item 272438": 2.0,
-    "Searing Pain": 2.1513333333333335
+    "Shadow Bolt": 46.835
    },
    "raid_shares": {
     "Shadow Bolt": 0.5324,
@@ -147,27 +147,27 @@
     "max60": 750.2875726156235
    },
    "raid_spell_casts": {
-    "1311680": 1.1186666666666667,
-    "25309": 11.146333333333333,
     "17923": 2.263,
-    "25307": 48.24133333333333,
-    "25311": 9.989333333333333,
+    "1311680": 1.1186666666666667,
+    "11713": 7.8486666666666665,
     "11689": 10.185666666666666,
-    "11713": 7.8486666666666665
+    "25311": 9.989333333333333,
+    "25309": 11.146333333333333,
+    "25307": 48.24133333333333
    },
    "raid_casts": {
-    "Curse of the Elements": 1.1186666666666667,
-    "Immolate": 11.146333333333333,
     "Searing Pain": 2.263,
-    "Talisman of Ephemeral Power": 2.0,
-    "item 272438": 2.0,
-    "Major Mana Potion": 2.0,
-    "Shadow Bolt": 48.24133333333333,
-    "Corruption": 9.989333333333333,
+    "Curse of the Elements": 1.1186666666666667,
+    "Bane of Agony": 7.8486666666666665,
     "Life Tap": 10.185666666666666,
-    "Demonic Rune": 1.9943333333333333,
     "OtherActionManaGain": 49.02,
-    "Bane of Agony": 7.8486666666666665
+    "item 272438": 2.0,
+    "Demonic Rune": 1.9943333333333333,
+    "Major Mana Potion": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Corruption": 9.989333333333333,
+    "Immolate": 11.146333333333333,
+    "Shadow Bolt": 48.24133333333333
    },
    "raid_shares": {
     "Shadow Bolt": 0.5432,
@@ -199,27 +199,27 @@
     "max60": 767.0047101196611
    },
    "raid_spell_casts": {
-    "11689": 11.153333333333334,
     "1311680": 1.12,
+    "11689": 11.153333333333334,
+    "11713": 7.859333333333334,
     "25307": 47.696333333333335,
     "17923": 2.23,
     "25311": 10.007333333333333,
-    "25309": 11.088,
-    "11713": 7.859333333333334
+    "25309": 11.088
    },
    "raid_casts": {
-    "Life Tap": 11.153333333333334,
-    "Major Mana Potion": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
     "Demonic Rune": 2.0,
     "Curse of the Elements": 1.12,
+    "Life Tap": 11.153333333333334,
+    "Bane of Agony": 7.859333333333334,
     "Shadow Bolt": 47.696333333333335,
+    "Major Mana Potion": 2.0,
     "Searing Pain": 2.23,
-    "item 272438": 2.0,
     "OtherActionManaGain": 49.60966666666667,
-    "Talisman of Ephemeral Power": 2.0,
     "Corruption": 10.007333333333333,
     "Immolate": 11.088,
-    "Bane of Agony": 7.859333333333334
+    "item 272438": 2.0
    },
    "raid_shares": {
     "Shadow Bolt": 0.5391,
@@ -251,29 +251,29 @@
     "max60": 751.3047382818794
    },
    "raid_spell_casts": {
-    "18932": 14.409,
-    "1311680": 1.1186666666666667,
-    "11689": 14.340666666666667,
-    "25309": 10.633333333333333,
-    "25307": 37.300333333333334,
-    "25311": 9.980666666666666,
+    "17923": 2.0116666666666667,
     "11713": 7.943666666666667,
-    "17923": 2.0116666666666667
+    "11689": 14.340666666666667,
+    "25311": 9.980666666666666,
+    "25307": 37.300333333333334,
+    "25309": 10.633333333333333,
+    "18932": 14.409,
+    "1311680": 1.1186666666666667
    },
    "raid_casts": {
+    "Searing Pain": 2.0116666666666667,
+    "Bane of Agony": 7.943666666666667,
+    "Life Tap": 14.340666666666667,
     "Talisman of Ephemeral Power": 1.9996666666666667,
+    "Corruption": 9.980666666666666,
+    "Demonic Rune": 2.0,
+    "Shadow Bolt": 37.300333333333334,
+    "Immolate": 10.633333333333333,
+    "Major Mana Potion": 2.0,
+    "item 272438": 2.0,
     "Conflagrate": 14.409,
     "Curse of the Elements": 1.1186666666666667,
-    "Life Tap": 14.340666666666667,
-    "Immolate": 10.633333333333333,
-    "Shadow Bolt": 37.300333333333334,
-    "Demonic Rune": 2.0,
-    "Corruption": 9.980666666666666,
-    "OtherActionManaGain": 54.404333333333334,
-    "Bane of Agony": 7.943666666666667,
-    "Searing Pain": 2.0116666666666667,
-    "item 272438": 2.0,
-    "Major Mana Potion": 2.0
+    "OtherActionManaGain": 54.404333333333334
    },
    "raid_shares": {
     "Shadow Bolt": 0.4465,
@@ -307,25 +307,25 @@
    },
    "raid_spell_casts": {
     "25309": 11.306333333333333,
-    "25311": 10.373666666666667,
-    "17923": 2.004,
-    "11689": 14.223,
     "11713": 8.229666666666667,
+    "25311": 10.373666666666667,
+    "11689": 14.223,
+    "17923": 2.004,
     "1311680": 1.159,
     "25307": 44.89566666666666
    },
    "raid_casts": {
     "Immolate": 11.306333333333333,
-    "Major Mana Potion": 2.0,
-    "Corruption": 10.373666666666667,
-    "Searing Pain": 2.004,
-    "item 272438": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Life Tap": 14.223,
     "Bane of Agony": 8.229666666666667,
-    "OtherActionManaGain": 50.36366666666667,
-    "Curse of the Elements": 1.159,
     "Demonic Rune": 2.0,
+    "item 272438": 2.0,
+    "Corruption": 10.373666666666667,
+    "Life Tap": 14.223,
+    "Searing Pain": 2.004,
+    "OtherActionManaGain": 50.36366666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
+    "Curse of the Elements": 1.159,
     "Shadow Bolt": 44.89566666666666
    },
    "raid_shares": {
@@ -358,27 +358,27 @@
     "max60": 672.5365404576231
    },
    "raid_spell_casts": {
+    "17923": 2.004,
     "25309": 11.306333333333333,
+    "11713": 8.229666666666667,
     "11689": 14.223,
     "25311": 10.373666666666667,
     "25307": 44.89566666666666,
-    "17923": 2.004,
-    "1311680": 1.159,
-    "11713": 8.229666666666667
+    "1311680": 1.159
    },
    "raid_casts": {
-    "OtherActionManaGain": 50.36366666666667,
-    "Immolate": 11.306333333333333,
-    "Life Tap": 14.223,
-    "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Corruption": 10.373666666666667,
-    "Demonic Rune": 2.0,
-    "Shadow Bolt": 44.89566666666666,
     "Searing Pain": 2.004,
+    "Immolate": 11.306333333333333,
     "item 272438": 2.0,
+    "Major Mana Potion": 2.0,
+    "Bane of Agony": 8.229666666666667,
+    "Life Tap": 14.223,
+    "OtherActionManaGain": 50.36366666666667,
+    "Demonic Rune": 2.0,
+    "Corruption": 10.373666666666667,
+    "Shadow Bolt": 44.89566666666666,
     "Curse of the Elements": 1.159,
-    "Bane of Agony": 8.229666666666667
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
     "Shadow Bolt": 0.5423,
@@ -410,29 +410,29 @@
     "max60": 674.6028767544273
    },
    "raid_spell_casts": {
+    "11689": 11.226666666666667,
     "25307": 38.897666666666666,
     "18932": 14.525333333333334,
-    "17923": 2.115,
     "25311": 9.995666666666667,
-    "11689": 11.226666666666667,
     "1311680": 1.1186666666666667,
-    "25309": 10.655666666666667,
-    "11713": 7.934333333333333
+    "11713": 7.934333333333333,
+    "17923": 2.115,
+    "25309": 10.655666666666667
    },
    "raid_casts": {
-    "item 272438": 2.0,
-    "Shadow Bolt": 38.897666666666666,
-    "Talisman of Ephemeral Power": 2.0,
-    "Conflagrate": 14.525333333333334,
-    "Major Mana Potion": 2.0,
-    "Searing Pain": 2.115,
-    "Corruption": 9.995666666666667,
     "Life Tap": 11.226666666666667,
+    "Shadow Bolt": 38.897666666666666,
+    "Conflagrate": 14.525333333333334,
     "Demonic Rune": 2.0,
-    "Curse of the Elements": 1.1186666666666667,
-    "Immolate": 10.655666666666667,
+    "Corruption": 9.995666666666667,
     "OtherActionManaGain": 52.218666666666664,
-    "Bane of Agony": 7.934333333333333
+    "Curse of the Elements": 1.1186666666666667,
+    "Bane of Agony": 7.934333333333333,
+    "Major Mana Potion": 2.0,
+    "item 272438": 2.0,
+    "Searing Pain": 2.115,
+    "Talisman of Ephemeral Power": 2.0,
+    "Immolate": 10.655666666666667
    },
    "raid_shares": {
     "Shadow Bolt": 0.4149,
@@ -465,27 +465,27 @@
     "max60": 748.1651768583863
    },
    "raid_spell_casts": {
-    "17923": 2.1456666666666666,
-    "25309": 11.022666666666666,
-    "1311680": 1.1183333333333334,
     "25307": 47.46933333333333,
     "25311": 10.004666666666667,
+    "17923": 2.1456666666666666,
+    "25309": 11.022666666666666,
     "11689": 12.291333333333334,
+    "1311680": 1.1183333333333334,
     "11713": 7.890333333333333
    },
    "raid_casts": {
-    "Demonic Rune": 2.0,
-    "item 272438": 2.0,
-    "Searing Pain": 2.1456666666666666,
-    "Immolate": 11.022666666666666,
-    "Curse of the Elements": 1.1183333333333334,
-    "OtherActionManaGain": 50.65233333333333,
-    "Talisman of Ephemeral Power": 2.0,
     "Shadow Bolt": 47.46933333333333,
+    "item 272438": 2.0,
     "Corruption": 10.004666666666667,
+    "Searing Pain": 2.1456666666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Immolate": 11.022666666666666,
+    "OtherActionManaGain": 50.65233333333333,
     "Life Tap": 12.291333333333334,
-    "Bane of Agony": 7.890333333333333,
-    "Major Mana Potion": 2.0
+    "Demonic Rune": 2.0,
+    "Major Mana Potion": 2.0,
+    "Curse of the Elements": 1.1183333333333334,
+    "Bane of Agony": 7.890333333333333
    },
    "raid_shares": {
     "Shadow Bolt": 0.533,
@@ -517,27 +517,27 @@
     "max60": 742.5385018875754
    },
    "raid_spell_casts": {
+    "25307": 46.068333333333335,
     "11713": 7.890333333333333,
     "25311": 10.026,
-    "17923": 2.0816666666666666,
     "25309": 10.962333333333333,
-    "1311680": 1.1196666666666666,
-    "25307": 46.068333333333335,
-    "11689": 13.435
+    "17923": 2.0816666666666666,
+    "11689": 13.435,
+    "1311680": 1.1196666666666666
    },
    "raid_casts": {
-    "Demonic Rune": 2.0,
-    "item 272438": 2.0,
-    "Bane of Agony": 7.890333333333333,
-    "Talisman of Ephemeral Power": 2.0,
-    "Corruption": 10.026,
-    "Searing Pain": 2.0816666666666666,
-    "Immolate": 10.962333333333333,
-    "Curse of the Elements": 1.1196666666666666,
     "Shadow Bolt": 46.068333333333335,
     "OtherActionManaGain": 50.921,
     "Major Mana Potion": 2.0,
-    "Life Tap": 13.435
+    "Bane of Agony": 7.890333333333333,
+    "Corruption": 10.026,
+    "Immolate": 10.962333333333333,
+    "Searing Pain": 2.0816666666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Life Tap": 13.435,
+    "item 272438": 2.0,
+    "Demonic Rune": 2.0,
+    "Curse of the Elements": 1.1196666666666666
    },
    "raid_shares": {
     "Shadow Bolt": 0.529,

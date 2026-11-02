@@ -76,15 +76,15 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 540 | +0.0% | 810 | -1.6% | 9 s |
-| 2 | *Fire* | community simulator | - | 540 | -0.1% | 824 | +0.0% | 15 s |
-| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 537 | -0.5% | 793 | -3.8% | 9 s |
-| 4 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 16/32/3 | 531 | -1.7% | 798 | -3.1% | 15 s |
-| 5 | *FFB* | community simulator | - | 442 | -18.1% | 738 | -10.4% | 41 s |
-| 6 | *Arcane Fire* | community simulator | - | 388 | -28.1% | 578 | -29.8% | 1 s |
-| 7 | *Arcane* | community simulator | - | 343 | -36.5% | 397 | -51.8% | 1 s |
-| 8 | *Frost Incin* | community simulator | - | 317 | -41.3% | 302 | -63.3% | 0 s |
-| 9 | *Frost Med* | community simulator | - | 304 | -43.8% | 353 | -57.2% | 0 s |
+| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 548 | +0.0% | 828 | +0.0% | 10 s |
+| 2 | *Fire* | community simulator | - | 540 | -1.5% | 822 | -0.7% | 15 s |
+| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 537 | -2.0% | 795 | -4.1% | 9 s |
+| 4 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 16/32/3 | 531 | -3.1% | 798 | -3.7% | 15 s |
+| 5 | *FFB* | community simulator | - | 442 | -19.3% | 697 | -15.8% | 41 s |
+| 6 | *Arcane Fire* | community simulator | - | 388 | -29.2% | 616 | -25.7% | 1 s |
+| 7 | *Arcane* | community simulator | - | 343 | -37.4% | 414 | -50.0% | 1 s |
+| 8 | *Frost Incin* | community simulator | - | 317 | -42.1% | 348 | -58.0% | 0 s |
+| 9 | *Frost Med* | community simulator | - | 304 | -44.6% | 378 | -54.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
   10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
   11. insert at the end: cast Frost Blast (+0.5%, pass 5)
   12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-10-31, 29 changes to the base rotation; third-seed check: fire-open-raid 667 -> 809 DPS (+21.3%), sim preset: Fire 674 -> 821 DPS (+21.9%), fire-raid 666 -> 797 DPS (+19.7%), opt-fire-raid-raid-dps 656 -> 792 DPS (+20.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 13 passes, the last 2026-11-01, 30 changes to the base rotation; third-seed check: open winner 672 -> 828 DPS (+23.2%), fire-open-raid 667 -> 812 DPS (+21.7%), sim preset: Fire 674 -> 823 DPS (+22.1%), fire-raid 666 -> 797 DPS (+19.7%), opt-fire-raid-raid-dps 656 -> 794 DPS (+21.1%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -131,6 +131,7 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
   27. drop: cast Robe of the Archmage (+0.6%, pass 10)
   28. insert before the filler: if (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) (+0.4%, pass 10)
   29. rotation replaced by the official simulator's deepFire.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+2.8%, pass 11)
+  30. insert at the top: cast Major Mana Potion (+0.3%, pass 13)
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-raid`](fire-raid.md) casts/min |
 |---|---|---|

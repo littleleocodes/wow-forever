@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "results": [
   {
    "label": "balance-moonkin-raid",
@@ -39,23 +39,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9835": 12.015333333333333,
-    "9912": 1.302,
-    "24977": 11.325666666666667,
-    "25298": 47.27166666666667,
     "9876": 0.058,
-    "29166": 1.0
+    "9912": 1.302,
+    "9835": 12.015333333333333,
+    "29166": 1.0,
+    "25298": 47.27166666666667,
+    "24977": 11.325666666666667
    },
    "casts": {
-    "Moonfire": 12.015333333333333,
-    "Wrath": 1.302,
-    "Insect Swarm": 11.325666666666667,
     "Starfire": 47.32966666666667,
+    "Wrath": 1.302,
+    "Moonfire": 12.015333333333333,
     "Serenity Field": 2.0,
     "Talisman of Ephemeral Power": 2.0,
     "Major Mana Potion": 2.0,
+    "Innervate": 1.0,
     "OtherActionManaGain": 2.0,
-    "Innervate": 1.0
+    "Insect Swarm": 11.325666666666667
    },
    "dps": 566.6969602268002,
    "dps_stdev": 32.821370901347834,
@@ -87,23 +87,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "25298": 47.27166666666667,
     "29166": 1.0,
     "9835": 12.015333333333333,
-    "25298": 47.27166666666667,
+    "24977": 11.325666666666667,
     "9876": 0.058,
-    "9912": 1.302,
-    "24977": 11.325666666666667
+    "9912": 1.302
    },
    "casts": {
     "OtherActionManaGain": 2.0,
-    "Innervate": 1.0,
-    "Moonfire": 12.015333333333333,
-    "Talisman of Ephemeral Power": 2.0,
     "Major Mana Potion": 2.0,
     "Starfire": 47.32966666666667,
+    "Innervate": 1.0,
     "Serenity Field": 2.0,
-    "Wrath": 1.302,
-    "Insect Swarm": 11.325666666666667
+    "Talisman of Ephemeral Power": 2.0,
+    "Moonfire": 12.015333333333333,
+    "Insect Swarm": 11.325666666666667,
+    "Wrath": 1.302
    },
    "dps": 566.6969602268002,
    "dps_stdev": 32.821370901347834,
@@ -134,23 +134,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25298": 46.10433333333334,
-    "9912": 5.2316666666666665,
-    "29166": 1.0,
     "9876": 0.10833333333333334,
+    "25298": 46.10433333333334,
+    "9835": 11.686333333333334,
     "24977": 11.259333333333334,
-    "9835": 11.686333333333334
+    "29166": 1.0,
+    "9912": 5.2316666666666665
    },
    "casts": {
     "OtherActionManaGain": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
     "Starfire": 46.21266666666667,
-    "Wrath": 5.2316666666666665,
-    "Innervate": 1.0,
+    "Moonfire": 11.686333333333334,
     "Serenity Field": 2.0,
     "Insect Swarm": 11.259333333333334,
     "Major Mana Potion": 2.0,
-    "Moonfire": 11.686333333333334
+    "Talisman of Ephemeral Power": 2.0,
+    "Innervate": 1.0,
+    "Wrath": 5.2316666666666665
    },
    "dps": 557.6625695369519,
    "dps_stdev": 32.19834409627845,

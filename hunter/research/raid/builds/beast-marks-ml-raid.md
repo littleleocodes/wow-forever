@@ -1,17 +1,17 @@
-# Beast-Marks — Raid (machine-learning search) — 28/20/3
+# Beast-Marks — Raid (machine-learning search) — 28/21/2
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 28/20/3 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 28/21/2 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Beast-Marks build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Beast-Marks build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-02 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
@@ -26,34 +26,35 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 | **Frenzy** | 3/5 | unchanged | Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
-| **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 
-### Marksmanship (20)
+### Marksmanship (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
+| **Improved Arcane Shot** | 3/5 | changed | Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 
-### Survival (3)
+### Survival (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 3/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 3%. |
+| **Improved Tracking** | 2/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 2%. |
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 387 | +0.0% | 773 | +0.0% | 43 s |
-| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 378 | -2.2% | 721 | -6.7% | 28 s |
-| 3 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: derived (ML search) | 28/20/3 | 371 | -4.3% | 762 | -1.3% | 46 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 379 | -2.0% | 721 | -6.7% | 28 s |
+| 3 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: derived (ML search) | 28/21/2 | 372 | -3.8% | 763 | -1.2% | 41 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,7 +74,7 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
   13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
   14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
   15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-10-31, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 740 -> 773 DPS (+4.6%), sim preset: BM 735 -> 755 DPS (+2.7%), mm-hawk-raid 693 -> 721 DPS (+4.0%), beast-marks-ml-raid 711 -> 762 DPS (+7.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 16 passes, the last 2026-11-01, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 740 -> 773 DPS (+4.5%), mm-hawk-raid 694 -> 721 DPS (+4.0%), beast-marks-ml-raid 711 -> 762 DPS (+7.2%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -93,21 +94,21 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 4.3 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 3.5 |
 | 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 5.3 |
+| 3 | cast Summon Hawk | 5.9 |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 3.8 |
+| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 3.9 |
 | 6 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.3 |
 
 Damage by ability:
 
 | Ability | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) |
 |---|---|
-| Auto Shot | 38% |
+| Auto Shot | 37% |
 | Pet: Auto Attack | 34% |
-| Serpent Sting | 11% |
-| Arcane Shot | 9% |
+| Serpent Sting | 13% |
+| Arcane Shot | 7% |
 | Summon Hawk | 4% |
 | Pet: Bite | 3% |
 | Pet: Claw | 2% |
@@ -115,13 +116,12 @@ Damage by ability:
 
 ## Notes
 
-- Against the best hand draft mm-hawk-raid in a full raid, same gear and fights (100,000, one seed): +6.0% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
-- Where the simulator measured no difference, the points follow mm-hawk-raid: Improved Aspect of the Monkey → Endurance Training (3 points), Improved Revive Pet → Summon Hawk (the same DPS as the search winner 28/20/3 on one seed, 30,000 fights).
-- Search result (full raid): 28/20/3 at 761.8 ± 0.08 DPS over 100,000 fights; runner-up 28/20/3 (+0.00%; the winner takes Improved Aspect of the Monkey 3, Improved Revive Pet 1; the runner-up Improved Aspect of the Monkey 2, Pathfinding 2); 5,204 builds simulated; certificate: none of its 219 one-move and chain-move neighbours was 0.1% ahead.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 28/20/3 at 748.3 DPS in a full raid (other talents: _reference/dps-rankings.md).
-- Alone on the training dummy (only your own buffs) the search's best is 29/17/5 at 405.9 DPS.
-- 2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Intimidation (threat). Net +0.00% on a third seed.
+- Against the best hand draft mm-hawk-raid in a full raid, same gear and fights (100,000, one seed): +5.6% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
+- Where the simulator measured no difference, the points follow mm-hawk-raid: Improved Mend Pet → Summon Hawk, Improved Tracking → Improved Stings (within 0.01% of the search winner 28/20/3 on one seed, 30,000 fights).
+- Search result (full raid): 28/20/3 at 798.1 ± 0.08 DPS over 100,000 fights; runner-up 28/20/3 (+0.00%; the winner takes Endurance Training 3, Improved Mend Pet 1; the runner-up Endurance Training 2, Improved Aspect of the Monkey 1, Pathfinding 1); 4,870 builds simulated; certificate: none of its 223 one-move and chain-move neighbours was 0.1% ahead.
+- Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 28/20/3 at 798.8 DPS in a full raid (the same talents).
+- Alone on the training dummy (only your own buffs) the search's best is 29/18/4 at 415.0 DPS.
 
 ## Open questions (verify in the live game)
 

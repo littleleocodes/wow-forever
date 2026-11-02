@@ -6,26 +6,24 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 46% of the damage at level 60 in the fight lab comes from Penance, Smite, Holy Fire, Mind Blast (the spec's rule: at least 40%; **Penance**, **Smite** cast in every fight).
-
-**Leveling as Discipline or as Shadow?** This build takes 40 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 24 s: Discipline is about 1.6 times as slow. Your first Discipline point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+> **Signature spells: this build fails the check** in the fight lab (Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%). Discipline is defined by **Penance**, **Smite** cast in every fight and Penance, Smite, Holy Fire, Mind Blast carrying 40% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Not in this build:** **Power Infusion**, **Renewed Hope** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Early Demise**, **Mind Flay**, **Shadowform**, **Vampiric Embrace** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free); **Power Infusion** on yourself when it is ready.
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free).
 
 **In the fight**, top to bottom:
 
-1. **Shadow Word: Pain** to pull, then **Devouring Plague**; each again when it runs out while the mob has more than 30% of its health.
-2. **Penance** whenever it is ready while the mob has more than 35% of its health.
-3. **Mind Blast** whenever it is ready, at any mana, while the mob has more than 10% of its health (also to finish a mob one cast will kill).
-4. **Smite** in between while the mob has more than 35% of its health and you have more than 30% mana; your wand otherwise, and for the last hit or two.
-5. Skip Holy Fire: the tuned rules never cast it.
-6. Hurt: **Power Word: Shield** in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
+1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
+2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
+3. **Shadow Word: Death** when one cast will kill the mob, and below 20% health once you have **Early Demise**.
+4. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
+5. Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).
+6. Below a third of your health outside **Shadowform**: **Flash Heal**.
 
-**Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat only if you are still below two thirds.
+**Between fights:** Drink only below 15% mana, eat below two thirds of your health (**Renew** yourself instead outside **Shadowform**).
 
 ## Why this rotation
 
@@ -86,20 +84,10 @@ One point per level from 10, in this order:
 | 57-58 | Martyrdom (Discipline) | 2 |
 | 59-60 | Improved Mana Burn (Discipline) | 2 |
 
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 39 |
-| 30 | 38 |
-| 40 | 42 |
-| 50 | 38 |
-| 60 | 40 |
-
 ## Other builds of this spec
 
-- [Discipline — Leveling into the raid build](../research/leveling/builds/discipline-leveling.md) (30/21/0, 46 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/10531503133001103-3150102323001--7)
+- [Discipline — Leveling into the raid build](../research/leveling/builds/discipline-leveling.md) (30/21/0) — [open the talent tree](https://talentsforever.com/priest/60/10531503133001103-3150102323001--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

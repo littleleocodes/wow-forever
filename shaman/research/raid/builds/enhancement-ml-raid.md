@@ -48,16 +48,16 @@ The Enhancement build the machine-learning talent search found in a full raid (e
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/31/3 | 402 | +0.0% | 734 | +0.0% | 10 s |
-| 2 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: derived (ML search) | 19/32/0 | 398 | -1.0% | 722 | -1.6% | 5 s |
-| 3 | *Standard* | community simulator | - | 396 | -1.5% | 726 | -1.1% | 13 s |
-| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 386 | -4.0% | 672 | -8.4% | 18 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 386 | -4.1% | 695 | -5.3% | 8 s |
-| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 373 | -7.3% | 668 | -8.9% | 12 s |
+| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/31/3 | 394 | +0.0% | 720 | +0.0% | 12 s |
+| 2 | *Standard* | community simulator | - | 394 | +0.0% | 720 | +0.0% | 12 s |
+| 3 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: derived (ML search) | 19/32/0 | 387 | -1.9% | 704 | -2.2% | 7 s |
+| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 378 | -4.0% | 658 | -8.6% | 20 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 378 | -4.2% | 682 | -5.3% | 11 s |
+| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 365 | -7.4% | 655 | -9.0% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -67,7 +67,7 @@ The Enhancement build the machine-learning talent search found in a full raid (e
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-26, 11 changes to the base rotation; third-seed check: open winner 661 -> 734 DPS (+11.0%), enhancement-ml-raid 647 -> 722 DPS (+11.6%), sim preset: Standard 652 -> 725 DPS (+11.2%), enhancement-raid-dps 615 -> 668 DPS (+8.6%), opt-enhancement-dps-raid-dps 619 -> 671 DPS (+8.3%), elemental-enhancement-ml-raid 345 -> 437 DPS (+26.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-02, 11 changes to the base rotation; third-seed check: enhancement-open-raid 648 -> 720 DPS (+11.1%), sim preset: Standard 634 -> 705 DPS (+11.2%), enhancement-raid-dps 603 -> 656 DPS (+8.7%), opt-enhancement-dps-raid-dps 607 -> 658 DPS (+8.3%), enhancement-ml-raid 629 -> 703 DPS (+11.8%), elemental-enhancement-ml-raid 605 -> 681 DPS (+12.5%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -88,10 +88,10 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 7.6 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.5 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock | 2.9 |
-| 8 | cast Earth Shock | 7.5 |
+| 8 | cast Earth Shock | 7.4 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
@@ -99,9 +99,9 @@ Damage by ability:
 | Ability | [`enhancement-ml-raid`](enhancement-ml-raid.md) |
 |---|---|
 | Auto Attack | 42% |
-| Earth Shock | 17% |
-| Lightning Bolt | 12% |
+| Earth Shock | 16% |
 | Flame Shock | 12% |
+| Lightning Bolt | 12% |
 | Stormstrike | 10% |
 | Searing Totem | 7% |
 

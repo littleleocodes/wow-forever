@@ -4,27 +4,29 @@
 
 **✅ Recommended** for raid (the best mage spec here, or within 3% of it).
 
-**[Fire — Raid](../research/raid/builds/fire-open-raid.md)** (17/31/3) — [open the talent tree](https://talentsforever.com/mage/60/05122050000002-23550000130125031-003-7)
+**[Fire — Raid](../research/raid/builds/fire-open-raid.md)** (17/31/3) — [open the talent tree](https://talentsforever.com/mage/60/2032052001002-54500001230133031-003-7)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Fire — Ignite / Heating Up), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Press the first one that is ready**, top to bottom:
+**Before the pull:** **Pyroblast**.
+
+**Then press the first one that is ready**, top to bottom:
 
 1. **Pyroblast** when Heating Up has 3 stacks
 2. **Fire Blast**
-3. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 7.5 seconds left
-4. **Arcane Missiles** (rank 7) when Missile Barrage is active
-5. **Pyroblast** when Heating Up has 2 or more stacks and Heating Up has under 3.5 seconds left
-6. **Fireball**
+3. **Scorch** when either the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 5 seconds left and the target has fewer than 4 stacks of Fire Vulnerability
+4. **Arcane Blast**: keep it on the target
+5. **Arcane Missiles** (rank 7) when Missile Barrage is active
+6. **Fireball** (rank 11)
 
 **Fireball** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Scorch**: in the last 3 seconds of the fight, when there is no time left for another **Fireball**
 - **Combustion**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Evocation**: when you run out of mana (needed in about 3 of 10 fights)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -59,44 +61,44 @@ Fire keeps its own **Improved Scorch** debuff at 5 stacks, fires **Fire Blast** 
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 850 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 828 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 837 | [17/31/3](https://talentsforever.com/mage/60/05022050010002-23550000130125031-003-7) |
-| Phase 1 BiS | 857 | [17/31/3](https://talentsforever.com/mage/60/05022050010002-23550000130125031-003-7) (ties this build) |
+| Pre-BiS | 885 | [17/31/3](https://talentsforever.com/mage/60/2032052001002-55500001230123031-003-7) |
+| Phase 1 BiS | 903 | this build |
 
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.4; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 66.1; Phase 1 BiS 67.0; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Dreadmist Mask](https://www.wowhead.com/forever/item=16698) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Dreadmist Mask](https://www.wowhead.com/forever/item=16698) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Field Marshal's Coronet](https://www.wowhead.com/forever/item=16441)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Field Marshal's Coronet](https://www.wowhead.com/forever/item=16441)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
-| Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
-| Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) |
+| Shoulders | [Field Marshal's Silk Spaulders](https://www.wowhead.com/forever/item=16444) | [Field Marshal's Silk Spaulders](https://www.wowhead.com/forever/item=16444) |
+| Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187) |
 | Chest | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Magister's Leggings](https://www.wowhead.com/forever/item=16687) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Magister's Leggings](https://www.wowhead.com/forever/item=16687) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) |
+| Legs | [Marshal's Silk Leggings](https://www.wowhead.com/forever/item=16442)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Marshal's Silk Leggings](https://www.wowhead.com/forever/item=16442)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Marshal's Silk Footwraps](https://www.wowhead.com/forever/item=16437)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Marshal's Silk Footwraps](https://www.wowhead.com/forever/item=16437)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Frozen Heart of the Mountain](https://www.wowhead.com/forever/item=249469) · *Enchanting* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
+| Main hand | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1oK1UUzrkzzZycvNeO14dvOiqMRaWOzPPOjPP6I5q0C/FnkSIIrrRJk5pRSUISpC6UKl2IYAtVKq1dSLFUi1pRkDbLrOJC6UpBFw3VorhREQouFLnT1mrbZdp3Fpd773cv3zdzv49DtyHoYIAF/TAORajANMDrAO8BfADAL0Uok+ggmLtJRB3NF0nDxmtg7CVJxd13gFT85W05vrutUxxbJeOHbtKwuQrG992kYLNEKu7NAWm4cXBNw08/AmNOIxUXtnVS8btVef+LaP7Xcg9p+OsnYLRuJhX/WJDQh8s9fffqrbD/61kQ+7mxN1fgDWAz4Tyw/dwSsJ9G1kFbW4Y9dzZsw0w4eun4u9LQYHeKQHieCIRwhRCe4/lBIIQQri9cLxC+6wjhtxhss+Quayd4n2nRLfYVBJ5oQpxU/H3LMLtIIfBNufxzHvjzfDxbeeGZcqVuecK77oghxxsYtiaK2dKzhbxVrlrZfL6Qt3IvWfViwaqW69l6WC5ZtUK2OlG0+muFgjUZVgtONRvmnSPYOYCvPVcrl+4xNUmK32b4OpzBNthhtofpQfMBMm0DFX65CUQqbnwOnOldUgZBQLfbt6LKLzf+hyHFSR24FtTkKdzJcNVkwzH+ygnFrnA8v8OKTbrJ7kGVs1zM1KiLlIHgLqlCbz3Epy6A/wolPwMkFb/aMgyQzPhj5pQzXOGIoQ4zR87QZ0K+ddIZkq3TzniSHuePRomIn0qER/eZDul2NyqcPRaT+SB2vUa99lVUeKLx7+nIJ770yVGEXr6AH9UbSYsfS/MPfLqW4YnDfO2c+WQdN0tEprdKF5iM+HEyXBElA9962lB+Zi34jXmvKrGo7k+vyEcihtD3N0vIrdj0ZLp3aVHWl6k7JqP6JuW1maFaKXuTxW5I1dNHs3Otuz8+N56haHzi/fTI4UZ6XPbbRYgWsXbKVnDz6uh/2rKAQUjDIzAGT0ERKjAFU+yfAQABSMTh); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU9oI1UYz/dmmvnyZbc7Phd3OiqMRaWOzPpmxtm2K5rsHsQ/hyyC4EmbbFIzKklIgtSDUiUHEWyhlUJrD1Is1aJWFKTNMad4UHJS0ENDtSheVISClyJv2lpte0y73+Hx3vd7j99v5v1+PLoLQQcDLBiCMShCBSYB3gb4AOAjAH4uQplER8DcSiLqaL5KGjbfAmM7SSruzgCp+Nt7cny/o1Mc2yXjp37SsLUMxo/9pGCrRCpuTwNpuLZ3TMPPPwFjWiMVf1iWJ+c6OqnYmJXzrzo6afj7Z2C0bycV/5qTzY8XLww+qLfDoW+nQOzkbry7BO8Aa4QzwHZyC8B+ubYK2soibLtTYRca4fVzh9+Vhia7VwTC80QghCuE8BzPDwIhhHB94XqB8F1HCL/NoMOSW6yb4IOmRXfYFxF4ogVxUvHPDcPsI4XAN+Xy7xngL/OxbOWVF8qVuuUJ74ojRh1v+Kp1s5gtvVjIW+Wqlc3nC3kr95pVLxasarmerYflklUrZKs3i9ZQrVCwxsNqwalmw7xzADt78OWXauXSA6YmSfH7DF+FE9hGesz2OD1qPkKmbaDCz7eASMW1L4EzvU/KIAjobvtOVPn55v8wpDipw5eDmtyFmxmumuxqjL9xRLErHM/vsWKTbrMvoMpZLmZq1EfKcHCfVKG3H+MTZ8B/kZJfAJKK32wYBkhm/DlzzBmucMRoj5kjZ+iNkG8cdYZk67UznqWn+ZNRIuLHEuHRQ6ZDut2PCmdPxWQ+iF2p0YB9CRWeaP67O/KJL31yEKHXz+BHDUTS4ofS/D2frmR4Yj9fmydeWc/NEpHp7dIZJiN+mAxXRMnA2ecN5VfWhj+Y96YSi+rh9JK8JGIIg7ssIVuxyfH0wMK8rK9T94xH9V3K6zJDtVL2OovdkqqnD2anWvd/emo8o9H4zIfpa/uN9Jh8b+chWsS6KVvB9UvX//MsCxiBNDwBN+A5KEIFJmCC/TMApdjEaA==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzkl09sG8UXx/1mt/H4uX/caX/tdn85TFNKEidO1uu4SiJE3EpAoEWuOCEOkLV3HW/Zei3vpmpvocoBIZFAqUBNogpFVIFKgBQE1BEVUriYA1WFVCqVQ6JABAcOTZAicUFo1k6bA+qt4uAneXZ2nr/v2Z+debODrRRioACHDhiBIpRhHOBNgA8BPgZgOwMvEd5+UGcOURqj6jkM0+o4KGtRlOnqB4Ay/WZctLfeAWyhtZLyy24M06VroPy8GyW6VEKZrk0BhuliXRamX46DMhVGmd67JpSTf8RQpl/dFu2738YwTGe+BqW2D2X65/viC5/M7mnritXsjluToG3mTr89B28BmbAvAdnMTQP57fh1CM/Pwlpy0l6BCfsEDX45ZGCRHNG1lK6ldU1LapqeSKfTmqZpST0VfFLJhKalagRuk+gquXoQn0CqtqBM/7oEbcoC+R+VWGSaNEaEB0kiyV5nI0bZec0t+1zX9GOJZDKhJQd5vmiURi2TuxVumKZl8twF7hctXnF9w7fdEvcso5Iv8g7PsnjBrliJimGbiS13ou7uOeO5pU41rO5AKTZhs6uEbUI9jZZIJQeDkG6hYOdtw+GefXbMMXy30u7xs8ao1WuWvV6j7Hi9pmWVn7UrVo9RdoKY3PB5ui9vGfljqX5umG7Zt0ze8SC9Y4xyY8y0fW4UfKsS5KlYibJdGuRdek//UV5w66NWya9caPd4zvJ8nhuzHZPbJW7wwpjjcPGfuhsC3+VdfT3putL2Pe7YnkgaaLxuntS6NU3jBXu06Hs8IGSZHte5UTJ5qlM9gvvie6nEyCshNbIhNZ7DKkQx8sw5Nx9QZZ81MaAUdrJ2PBDfT4FFlkAAWq8qYuogpHBXWxQjG7Bt+ooru9jEwIJlRe9m2f0mhjCGDjuDg2o/qnGFSmzXEiDK9PMvgJEYEYQQ0lu+xX/zdavxR2j7cGcbIt0AwXo5K0R0Octmmhg5x9a4SoHtWYKdD3Ep0AA6GGLfNTGdYXyaPYVdaidG77VQlOnNqqJAY4ZFFoMKdrOqqI29+PKdk9tr2+U7J9XGlU01McX9GF0AQe8HQU/MLPprls02MZHDqMQP0BZGrwel6G5WpdNE9ObrRWk+2+SbodgMl7OKFJ+D7a9Uz6vPYStT64tsIVh+i7UXMfKjLLrV9VN6e+NFubp+Cv9/ERSU6Huvqnvje2gLI7mQGsYdKA0MHGUvqMPBwg5CPdDXI8/B1u3DJI+I9TupwX2ivyGFAuvLBHokFNr+JhExFBovZA5NXxH2/dDhQmA/DekrRJH5UPwGCf0n5me2eo/Vnvz0seUZCNqXPsocbwxkRsRB8QoEN6GVobhEbxw8se08qUE/ZGAYTsPLUIQynIfz5J8BAL+wyGY=); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzkl0FsG0UXx/3Gbjx+bht32q/d7pfDNKUkceJkvI6rJELErQQEWuSKE+IAWXvX8Zat1/JuqvYWqhwQEo2UFqQmUYUiqkAlQAoC6ohe0osRAlVIpRIcEhUiODZBisSlQrN20hxQbxUHv8Ps7Hv6v2f/dubNLrZRiIECHDphFIpQhgmAdwE+AvgEgO32o0RGB0CdPUxpjKrnMUyrE6CsRTFEH00Dhui3E3K8cwOwhdZKym97MUyXb4Dy614M0uUShujaFGCYLtVlYfrVBChTYQzR7z+A7XHyihy/vhvDMJ39BpTafgzRvz6Uzk/nWtu7YzWr88fLIDZzZ96fh/eATFrTQDZzM0D+OHETwgtzsJa8bK3CpHWS+r8cMrBEjmoipYm0JkRSCC2R7k8LIURSS4lkKiVSyYQQqRqBuyT6gFw/hM8gVVswRP+ehnZlkfyPBllkhjQ8MoIkkWRvs1G9bL/llD2uCe14IplMiOQQzxf10phpcKfCdcMwDZ67yL2iySuOp3uWU+KuqVfyRd7pmiYvWBUzUdEtI7EVTtTDvWddp9SlhtVdGIxNWuw6YZtQLyMSqeSQn9IpFKy8pdvctc6N27rnVDpcfk4fM/uMstunl223zzDN8otWxezVy7afk+seT/fnTT1/PDXAdcMpe6bBO7fL2/oY18cNy+N6wTMrfp2KmShbpSHerfUOHOMFp+41S17lYofLc6br8dy4ZRvcKnGdF8Ztm8v/1NMQeA7v7u9N15WW53LbcmVRX+P28KToEULwgjVW9FzuEzINl2tcLxk81aUexf3xfTTIyBsBNbIRbDyHBxDFyAvnnbxPlX3exIBS2MU68GD8AAUWWQYJaL2qyKWDkMI97VGMbMCO5Suv7FITA/O3Fb2fZQ+bGMI42uwsDqkDqMYVGmR7lgExRL/4EhiJEUkIIb0VW/q3WI8af4K2H3e3I9INkKxXslJEV7JstomRc2yLqxRY6zLsfoxLgQbQoQC708R0RvB59hx2q10Y/aWFYojerioKNFZYZMnvYLerito4i6/eO7Wzt129d0ptXNlUE1M8gNFFkPR+kPTkyqK/Z9lcExM5gkr8IG1h9Kbfiu5nVTpD5Gyh3pQWsk1+GMrDcCWrBOPzsPOV6mX1JWxjan2TLfrbb6n2KkZ+Cslpdf201tF4Ua6un8b/XwIFg/TKm+q+eCttYSQXUMO4C4ODg8fYK+qIv7H9VNv6euZ52Lp9XOQJuf4kNXhItHeCAd/6M74eCYX2RyQiXYGJQubwzDVp3w0fKfj287C2SpQQH47fIoH/xLzM1uyp2rOfPbU6g/742seZEw1HZlR+KF4D/yawOhwP0luHTu74nhQwABkYgTPwOhShDBfgAvlnAMBDx/c=).
 
 ## Other builds of this spec
 
-- [Fire — Ignite / Heating Up](../research/raid/builds/fire-raid.md) (14/34/3, 830 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0052205-23550020130135031-003-7)
-- [Fire (optimized)](../research/raid/builds/opt-fire-raid-raid-dps.md) (18/31/2, 815 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/00522150000003-13550000130135031-002-7)
+- [Fire — Ignite / Heating Up](../research/raid/builds/fire-raid.md) (16/32/3, 798 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0502152000001-35500201230133031-003-7)
+- [Fire (optimized)](../research/raid/builds/opt-fire-raid-raid-dps.md) (18/31/2, 795 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0502152000003-35500101230133031-002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

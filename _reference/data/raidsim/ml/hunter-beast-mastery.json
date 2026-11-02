@@ -2396,5 +2396,152 @@
   "best_hand": null,
   "gain_vs_hand": null,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 795.85,
+    "se": 0.071
+   },
+   "beast-mastery-ml-raid": {
+    "entry": "bm-raid",
+    "dps": 815.95,
+    "se": 0.076
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "signature_check": {
+  "spec": "Beast Mastery",
+  "ok": true,
+  "core_share": 0.3003,
+  "min_share": 0.3,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 795.7,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Shot": 0.3467,
+   "Pet: Auto Attack": 0.2623,
+   "Arcane Shot": 0.1409,
+   "Aimed Shot": 0.1166,
+   "Serpent Sting": 0.0955,
+   "Pet: Bite": 0.0208,
+   "Pet: Claw": 0.0172,
+   "Multi-Shot": 0.0
+  },
+  "casts": {
+   "Aimed Shot": 23.0,
+   "Serpent Sting": 12.0,
+   "Aspect of the Hawk": 1.0,
+   "Bestial Wrath": 2.0,
+   "Arcane Shot": 33.97,
+   "Multi-Shot": 0.0,
+   "Rapid Fire": 0.99
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     2
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Improved Revive Pet",
+     1
+    ],
+    [
+     "Pathfinding",
+     1
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Intimidation",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     5
+    ],
+    [
+     "Bestial Wrath",
+     1
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Hawk Eye",
+     2
+    ],
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Efficiency",
+     1
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Rapid Killing",
+     1
+    ],
+    [
+     "Improved Arcane Shot",
+     3
+    ],
+    [
+     "Mortal Shots",
+     3
+    ]
+   ],
+   "Survival": []
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms beast-mastery-ml-raid (-2.46% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

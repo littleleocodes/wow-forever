@@ -2558,5 +2558,149 @@
   "best_hand": null,
   "gain_vs_hand": null,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "assassination-raid",
+    "dps": 720.76,
+    "se": 0.091
+   },
+   "daggers-split-open-raid": {
+    "entry": "assassination-raid",
+    "dps": 720.76,
+    "se": 0.091
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "signature_check": {
+  "spec": "Hybrid Assassination/Combat",
+  "ok": true,
+  "core_share": 0.8576,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "assassination-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 720.9,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.5115,
+   "Mutilate": 0.1963,
+   "Eviscerate": 0.1498,
+   "Deadly Poison V": 0.0674,
+   "Instant Poison VI": 0.0556,
+   "Garrote": 0.01,
+   "Goblin Sapper Charge": 0.0094
+  },
+  "casts": {
+   "Slice and Dice": 7.87,
+   "Cold Blood": 1.0,
+   "Garrote": 1.0,
+   "Eviscerate": 13.74,
+   "spell 11337": 57.67,
+   "Vanish": 1.0,
+   "Mutilate": 31.15,
+   "spell 25349": 49.98
+  },
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Vile Poisons",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     5
+    ],
+    [
+     "Mutilate",
+     1
+    ],
+    [
+     "Seal Fate",
+     3
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     3
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     3
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Opportunity",
+     2
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms daggers-split-open-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

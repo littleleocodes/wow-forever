@@ -2395,5 +2395,152 @@
   "best_hand": "frost-arcane-power-raid",
   "gain_vs_hand": 0.0361,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 732.49,
+    "se": 0.122
+   },
+   "frost-arcane-power-raid": {
+    "entry": "frost-raid",
+    "dps": 720.62,
+    "se": 0.123
+   },
+   "frost-fingers-of-frost-raid": {
+    "entry": "frost-raid",
+    "dps": 610.89,
+    "se": 0.111
+   },
+   "arcane-frost-open-raid": {
+    "entry": "frost-raid",
+    "dps": 732.5,
+    "se": 0.122
+   },
+   "opt-frost-raid-raid-dps": {
+    "entry": "frost-raid",
+    "dps": 715.74,
+    "se": 0.119
+   }
+  },
+  "best_hand": "frost-arcane-power-raid",
+  "gain_vs_hand": 0.0165
+ },
+ "signature_check": {
+  "spec": "Hybrid Arcane/Frost",
+  "ok": true,
+  "core_share": 0.7561,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 733.0,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Frostbolt": 0.3016,
+   "Arcane Missiles": 0.2956,
+   "Arcane Wrath": 0.2373,
+   "Arcane Blast": 0.1589,
+   "Fire Blast": 0.0037,
+   "Demonic Rune": 0.003
+  },
+  "casts": {
+   "Arcane Missiles": 27.43,
+   "Fire Blast": 0.47,
+   "Frostbolt": 26.97,
+   "Arcane Blast": 24.61,
+   "Arcane Wrath": 13.32
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Improved Channeling",
+     2
+    ],
+    [
+     "Arcane Resilience",
+     3
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     1
+    ],
+    [
+     "Arcane Wrath",
+     1
+    ],
+    [
+     "Arcane Mind",
+     5
+    ],
+    [
+     "Arcane Instability",
+     3
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ]
+   ],
+   "Frost": [
+    [
+     "Improved Frostbolt",
+     5
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms arcane-frost-open-raid (-0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

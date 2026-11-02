@@ -13,3 +13,13 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era community-standard builds. The raid build is Beast Mastery/Marksmanship (Improved Aspect of the Hawk + Trueshot Aura); Marksmanship/Survival with Surefooted is the low-hit variant. Allocations validated against the Classic tree data.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/bm-leveling-leveling-st.md](optimizer/bm-leveling-leveling-st.md): hunter / classic-era / spec bm-leveling / profile leveling-st
+- [optimizer/mm-raid-raid-dps.md](optimizer/mm-raid-raid-dps.md): hunter / classic-era / spec mm-raid / profile raid-dps
+- [raidsim/mm-raid-environments.md](raidsim/mm-raid-environments.md): DPS by environment — hunter mm-raid (Classic Era)
+- [raidsim/mm-raid.md](raidsim/mm-raid.md): Raid sim — hunter mm-raid (Classic Era)
+- [respec-plan.md](respec-plan.md): Hunter / classic-era: respec plan for `leveling-st`

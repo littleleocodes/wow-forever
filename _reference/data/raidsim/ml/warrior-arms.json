@@ -2586,5 +2586,167 @@
   "best_hand": "arms-battle-raid",
   "gain_vs_hand": 0.0019,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "arms-battle-raid",
+    "dps": 885.7,
+    "se": 0.183
+   },
+   "arms-battle-raid": {
+    "entry": "arms-battle-raid",
+    "dps": 879.8,
+    "se": 0.183
+   },
+   "arms-ml-raid": {
+    "entry": "arms-battle-raid",
+    "dps": 886.12,
+    "se": 0.183
+   },
+   "arms-community-parse": {
+    "entry": "arms-battle-raid",
+    "dps": 881.73,
+    "se": 0.185
+   }
+  },
+  "best_hand": "arms-battle-raid",
+  "gain_vs_hand": 0.0067
+ },
+ "signature_check": {
+  "spec": "Arms",
+  "ok": true,
+  "core_share": 0.9678,
+  "min_share": 0.8,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "arms-battle-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 885.2,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.3979,
+   "Mortal Strike": 0.1576,
+   "Overpower": 0.1426,
+   "Deep Wound": 0.0907,
+   "Slam": 0.072,
+   "Execute": 0.0644,
+   "Rend": 0.0427,
+   "Hamstring": 0.0171,
+   "Spearing Strike": 0.015
+  },
+  "casts": {
+   "Slam": 11.24,
+   "Battle Stance": 1.0,
+   "Execute": 9.05,
+   "Bloodrage": 2.19,
+   "Hamstring": 41.02,
+   "Deep Wound": 80.62,
+   "Mortal Strike": 24.1,
+   "Rend": 8.37,
+   "Overpower": 17.35,
+   "Spearing Strike": 6.97
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Charge",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     5
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Bloodthrill",
+     5
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     4
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ],
+    [
+     "Shield Specialization",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms arms-ml-raid (-0.05% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

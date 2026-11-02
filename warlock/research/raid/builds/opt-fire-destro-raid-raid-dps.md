@@ -58,17 +58,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 674 | +0.0% | 756 | +0.0% | 1 s |
-| 2 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 668 | -0.9% | 749 | -0.9% | 2 s |
-| 3 | *SM/Ruin* | community simulator | - | 664 | -1.5% | 742 | -1.8% | 3 s |
-| 4 | *Aff (Wrack)* | community simulator | - | 649 | -3.7% | 722 | -4.5% | 3 s |
-| 5 | *Destro* | community simulator | - | 600 | -10.9% | 662 | -12.4% | 2 s |
-| 6 | *Demo (Shadow Brand)* | community simulator | - | 581 | -13.8% | 658 | -13.0% | 3 s |
-| 7 | *Demo (Fire Brand)* | community simulator | - | 568 | -15.7% | 633 | -16.3% | 3 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 664 | +0.0% | 746 | +0.0% | 1 s |
+| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 655 | -1.3% | 735 | -1.4% | 1 s |
+| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 649 | -2.2% | 727 | -2.5% | 1 s |
+| 4 | *SM/Ruin* | community simulator | - | 642 | -3.3% | 718 | -3.8% | 1 s |
+| 5 | *Aff (Wrack)* | community simulator | - | 632 | -4.9% | 700 | -6.1% | 1 s |
+| 6 | *Destro* | community simulator | - | 594 | -10.4% | 656 | -12.0% | 1 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 564 | -15.1% | 638 | -14.5% | 1 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 551 | -16.9% | 614 | -17.7% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +89,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
   13. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 5)
   14. only with 20s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
   15. only with 10s or more of the fight left: if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-28, 11 changes to the base rotation; third-seed check: shadow-bolt-hybrid-fire-open-raid 768 -> 767 DPS (-0.1%), sim preset: DS/Ruin Pandemic 24/11/16 714 -> 709 DPS (-0.6%), destruction-fire-raid 754 -> 749 DPS (-0.6%), opt-fire-destro-raid-raid-dps 714 -> 745 DPS (+4.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-11-01, 11 changes to the base rotation; third-seed check: opt-fire-destro-raid-raid-dps 745 -> 735 DPS (-1.3%), sim preset: SM/Ruin 726 -> 722 DPS (-0.6%), destruction-fire-raid 734 -> 727 DPS (-0.9%)):
   1. drop: cast Shadowburn (+0.8%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
@@ -110,9 +111,9 @@ Before the pull: at -1.5s: cast Life Tap.
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
 | 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
-| 6 | if mana % < 10%: cast Life Tap | 6.4 |
+| 6 | if mana % < 10%: cast Life Tap | 6.5 |
 | 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 |
+| 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 10 | cast Shadow Bolt (rank 9) | 14.6 |
 
@@ -124,7 +125,7 @@ Damage by ability:
 |---|---|
 | Shadow Bolt | 53% |
 | Corruption | 18% |
-| Bane of Agony | 16% |
+| Bane of Agony | 17% |
 | Immolate | 11% |
 | Demonic Rune | 2% |
 | Searing Pain | 0% |

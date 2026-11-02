@@ -4,22 +4,24 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (1/25/25) — [open the talent tree](https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-7)
+**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (1/25/25) — [open the talent tree](https://talentsforever.com/mage/60/1-35501101002133-2035300321003102-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 31% of the damage at level 60 in the fight lab comes from Frostfire Bolt (the spec's rule: at least 30%; **Frostfire Bolt** cast in every fight).
+> **Signature spells: this build fails the check** in the fight lab (Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%). Frostfire is defined by **Frostfire Bolt** cast in every fight and Frostfire Bolt carrying 30% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 
 ## How to play
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
+**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. Your bolt: **Frostbolt** until level 40, only while the mob has more than a third of its health; from level 40 **Frostfire Bolt**, while the mob has more than a tenth of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
-2. **Frost Nova** when it reaches you, then step back.
-3. **Ice Lance** while the mob is frozen and you have more than 30% of your mana.
-4. **Fire Blast** only while the mob is between a tenth and a fifth of its health and you have more than 30% of your mana; an **Ice Lance** that will kill, or your wand, finishes it. No Cone of Cold.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
+2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
+3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
+4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
@@ -50,44 +52,6 @@ The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **F
 - On a nearly dead mob (below a tenth of its health), start no bolt: an **Ice Lance** that will kill, or the wand.
 - Mob on you with **Frost Nova** down: keep casting the bolt (**Burning Soul** sometimes keeps a hit from pushing it back); **Fire Blast** only inside its window.
 
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-12 | Elemental Precision (Frost) | 3 |
-| 13-14 | Frost Warding (Frost) | 2 |
-| 15-17 | Frostbite (Frost) | 3 |
-| 18-19 | Ice Shards (Frost) | 2 |
-| 20 | Ice Lance (Frost) | 1 |
-| 21-23 | Frost Channeling (Frost) | 3 |
-| 24 | Ice Shards (Frost) | 1 |
-| 25-27 | Shatter (Frost) | 3 |
-| 28-29 | Ice Shards (Frost) | 2 |
-| 30-31 | Fingers of Frost (Frost) | 2 |
-| 32-33 | Improved Blizzard (Frost) | 2 |
-| 34 | Wand Specialization (Arcane) | 1 |
-| 35 | Improved Cone of Cold (Frost) | 1 |
-| 36-40 | Improved Fireball (Fire) | 5 |
-| 41-45 | Ignite (Fire) | 5 |
-| 46 | Burning Soul (Fire) | 1 |
-| 47 | Impact (Fire) | 1 |
-| 48-50 | Incineration (Fire) | 3 |
-| 51-53 | Master of Elements (Fire) | 3 |
-| 54-55 | Improved Fire Ward (Fire) | 2 |
-| 56-60 | Critical Mass (Fire) | 5 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 29 |
-| 30 | 33 |
-| 40 | 44 |
-| 50 | 35 |
-| 60 | 30 |
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

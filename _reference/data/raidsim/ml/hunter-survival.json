@@ -2372,5 +2372,161 @@
   "best_hand": "melee-survival-raid",
   "gain_vs_hand": 0.0,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "melee-dps",
+    "dps": 825.26,
+    "se": 0.12
+   },
+   "melee-survival-raid": {
+    "entry": "melee-dps",
+    "dps": 825.31,
+    "se": 0.121
+   },
+   "survival-ml-parse": {
+    "entry": "melee-dps",
+    "dps": 786.93,
+    "se": 0.116
+   },
+   "survival-raid": {
+    "entry": "melee-dps",
+    "dps": 784.55,
+    "se": 0.114
+   }
+  },
+  "best_hand": "melee-survival-raid",
+  "gain_vs_hand": -0.0001
+ },
+ "signature_check": {
+  "spec": "Survival",
+  "ok": true,
+  "core_share": 0.7792,
+  "min_share": 0.5,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "melee-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 825.5,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.5711,
+   "Explosive Trap": 0.1099,
+   "Raptor Strike": 0.1087,
+   "Strider Kick": 0.0668,
+   "Mongoose Bite": 0.0572,
+   "Wing Clip": 0.0422,
+   "Lacerating Strikes": 0.0321,
+   "Immolation Trap": 0.0119
+  },
+  "casts": {
+   "Strider Kick": 19.86,
+   "Mongoose Bite": 14.6,
+   "Aspect of the Beast": 1.0,
+   "Hunter's Mark": 1.0,
+   "Wing Clip": 74.54,
+   "Immolation Trap": 1.0,
+   "Explosive Trap": 9.0,
+   "Rapid Fire": 1.0,
+   "Raptor Strike": 24.46
+  },
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     1
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Lone Wolf",
+     1
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     5
+    ],
+    [
+     "Savage Strikes",
+     2
+    ],
+    [
+     "Survivalist",
+     3
+    ],
+    [
+     "Clever Traps",
+     2
+    ],
+    [
+     "Surefooted",
+     3
+    ],
+    [
+     "Survival Tactics",
+     2
+    ],
+    [
+     "Predator's Edge",
+     5
+    ],
+    [
+     "Resourcefulness",
+     1
+    ],
+    [
+     "Expose Prey",
+     2
+    ],
+    [
+     "Survivalist's Discipline",
+     2
+    ],
+    [
+     "Strider Kick",
+     1
+    ],
+    [
+     "Lightning Reflexes",
+     5
+    ],
+    [
+     "Lacerating Strikes",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms melee-survival-raid (-0.01% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

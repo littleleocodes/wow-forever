@@ -48,15 +48,15 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 
 ## Rank among our builds and the community simulator's
 
-**3 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 3627 | 370 |
-| 2 | *Hybrid* | community simulator | - | 1.143 | -1.3% | 3749 | 396 |
-| 3 | **[`feral-combat-ml-tank`](feral-combat-ml-tank.md)** | ours: derived (ML search) | 9/35/7 | 1.006 | -13.1% | 2917 | 390 |
-| 4 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 2881 | 390 |
-| 5 | *Bear* | community simulator | - | 0.984 | -15.0% | 2829 | 395 |
+| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.159 | +0.0% | 3808 | 371 |
+| 2 | **[`feral-combat-ml-tank`](feral-combat-ml-tank.md)** | ours: derived (ML search) | 9/35/7 | 1.005 | -13.3% | 3051 | 392 |
+| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.7% | 3018 | 391 |
+| 4 | *Bear* | community simulator | - | 0.982 | -15.3% | 2951 | 397 |
+| 5 | *Hybrid* | community simulator | - | 0.957 | -17.4% | 2792 | 396 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -73,7 +73,7 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 | # | Priority (the first line whose condition holds is cast) | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Maul | 143.1 |
+| 2 | cast Maul | 150.6 |
 | 3 | cast Barkskin | 1.0 |
 | 4 | if rage < 20: cast Enrage | 1.0 |
 

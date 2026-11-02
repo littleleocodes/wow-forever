@@ -2621,5 +2621,161 @@
   "best_hand": "frost-winters-chill-raid",
   "gain_vs_hand": 0.1032,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 620.15,
+    "se": 0.108
+   },
+   "frost-winters-chill-raid": {
+    "entry": "frost-raid",
+    "dps": 559.09,
+    "se": 0.091
+   },
+   "frost-ml-raid": {
+    "entry": "frost-raid",
+    "dps": 644.55,
+    "se": 0.102
+   }
+  },
+  "best_hand": "frost-winters-chill-raid",
+  "gain_vs_hand": 0.1092
+ },
+ "signature_check": {
+  "spec": "Frost",
+  "ok": true,
+  "core_share": 0.6195,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 620.4,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Frostbolt": 0.5705,
+   "Arcane Missiles": 0.1949,
+   "Arcane Blast": 0.1765,
+   "Ice Lance": 0.049,
+   "Fire Blast": 0.0052,
+   "Demonic Rune": 0.0039
+  },
+  "casts": {
+   "Ice Lance": 2.83,
+   "Arcane Missiles": 17.41,
+   "Frostbolt": 44.45,
+   "Fire Blast": 0.63,
+   "Arcane Blast": 27.77
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Improved Channeling",
+     5
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Magic Absorption",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     1
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     1
+    ],
+    [
+     "Arcane Mind",
+     1
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     5
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frostbite",
+     1
+    ],
+    [
+     "Improved Frost Nova",
+     2
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     2
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Cold Snap",
+     1
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms frost-ml-raid (-3.79% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

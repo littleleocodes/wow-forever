@@ -2,27 +2,32 @@
 
 [Paladin](../README.md) > [Raid (group)](README.md) > Protection
 
-**[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (0/35/16) — [open the talent tree](https://talentsforever.com/paladin/60/-2530503200301551-50223030001-7)
+**[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (0/35/16) — [open the talent tree](https://talentsforever.com/paladin/60/-05311102513301531-52233000001-7)
 
-> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds; it beat the hand-made build (Protection — Tank), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
 
 ## How to play
 
-**Before the pull:** **Righteous Fury**, **Seal of Righteousness**, **Holy Shield**.
+**Before the pull:** **Righteous Fury**, **Retribution Aura**, **Seal of the Crusader**.
 
-**Keep up all fight:** **Seal of Righteousness**, **Righteous Fury**.
+**Keep up all fight:** **Righteous Fury**, **Retribution Aura**.
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Lay on Hands**
-2. **Templar's Bulwark** when you have at least 25% mana
+1. **Judgement**
+2. **Consecration**
 3. **Holy Shield**
-4. **Judgement**
-5. **Consecration**
-6. **Holy Strike**
-7. **Hammer of Wrath** when the target is below 20% health
+4. **Holy Strike**
+5. **Lay on Hands**
+6. **Hammer of Wrath** when the target is below 20% health
 
 Between these, your white swings do the rest.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Seal of Fury**: a cooldown, use it at the start of the fight and again whenever it is ready (about 6 times a fight)
+- **Templar's Bulwark**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -55,7 +60,7 @@ Most of your threat is Holy damage, and **Righteous Fury** makes it 90% more thr
 
 ## The numbers
 
-Tank value 1.068 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.021 (threat and damage taken under a boss, relative to our reference tank build).
 
 **The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 63.2; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -72,20 +77,20 @@ Tank value 1.068 (threat and damage taken under a boss, relative to our referenc
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
 | Feet | [Warder's Sabatons](https://www.wowhead.com/forever/item=250563) · *Blacksmithing*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Warder's Sabatons](https://www.wowhead.com/forever/item=250563) · *Blacksmithing*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) |
-| Finger | [Stalwart Watcher's Signet](https://www.wowhead.com/forever/item=275984) | [Stalwart Watcher's Signet](https://www.wowhead.com/forever/item=275984) |
+| Finger | [Warden's Signet of Vigilance](https://www.wowhead.com/forever/item=275984) | [Warden's Signet of Vigilance](https://www.wowhead.com/forever/item=275984) |
 | Trinket | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440) | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440) |
 | Trinket | [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904) | [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904) |
 | Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Blackguard](https://www.wowhead.com/forever/item=19168) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) |
 | Ranged/relic | [Libram of Fervor](https://www.wowhead.com/forever/item=23203) | [Libram of Fervor](https://www.wowhead.com/forever/item=23203) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/paladin/protection/#eJzEVN9LHFcU3nNndufuWXHXW2XHaYVxwXa7MHJ31m3Vlx196uPSp77V0V2729rdZWcf7FO1IBRain0p1bYqrEvF/JBIAkYiBEJEn5KXJCDEmGggBCEmf0AId1yjJK9qvofLnfOdud93zz0c/IRCCFTQIQoDkIMSjAH8CjAHsADAGlyWCLYbtL8olUNEGwdU6NNaUN0LoEyrfwPKdOtfEbwzCerjRlTobi2o7orNg1pQ/UdBhV6vBdVHjSjT5xdE5p9XQPyu0FtH8Xs1cc7kfghlunJXrAe/icwXl0HdF0dtTzSp2yKzeg0i7aH1fHRvFqbBX7Uv2lt9szVYhMDv+ZdtiwvwR34i34+ud4iCBaukzTCTCZ7kCZPzBI8nk3EjyU0zwROc8/gGkZ+QOR82I9V8KNOrmxCh6EPZSHAHw4gaRV+U0tszEPGjgl4j0Zl0sKVOSPRmFSIKelEyTIf9yAbs0si3xVJFN7n5hRHnRryrVx/K2YXvshm9WNbtTCab0Qd/0iu5rF4uVuxKvljQnaxdHsrpUSeb1UvlYsWo2IUfjCPaOKQ7v3eKhc81v6agNyrR9TT7+X0588tTlvsYm2JB6mNk0COEUTKTHW6l/v8lzQrvGOA9htl9ygZOFJrJGun1sJFzUD3shqUZYJ9pHdgaC1OZBVbhbTMIGkncOW4P1lC36qU3qsAC9Yei9GGazcM5vJSFXZrpWgUWmCbCikSX1upWuYMtsY+oxLyvFEIl4RRl3mk69fIurQELay3oXwZx87n/4LjuqvSMbMABMcclj4tmaxlkJOiJvCZ+EfCMDVut01MCm6n2YRf3U+YOUWU9FVshng+CinW0O1N8eunMdHrc9et5q68esAbEjJ4C98Ozk4pJdCXcS0LQf2Kcc+gGC76CNHwDOSjBKIySNwMA7wc1lw==); Phase 1 BiS: [full raid](https://wowsims.com/forever/paladin/protection/#eJzEVNFLW1cYz3fuTe7JFzHxTMn1bsI14JYFrpzcmE19ydWnPYY97W1eTVyyuSTk5sE9TQfCYGO4h43pWhViqNgWqbRgpUKhVPSpfWkLQq2tFkrxwfYPKOVcY5X2Ve3v4XDu9/vu+f3Odz4+/IxCCFTQIQoDkIMSjAH8DjAHsADAGlyWCLYbtH8plUNEGwdU6PNaUN0LoEyr/wHKdOuCCN6bBPVpIyp0txZUd8XmUS2o/q+gQm/WguqTRpTpy8si8+9rIH5X6J2j+IOaOGdyP4QyXbkv1oM/RObOP6Dui6O2J5rUbZFZvQGR9tB6Pro3C9Pgr9pX7K2+2RosQuDP/Ku2xQX4Kz+R70fXO0TBglXSZpjJBE/yhMl5gseTybiR5KaZ4AnOeXyDyM/InA+bkWo+lOn1TYhQ9KFsJLiDYUSNoi9K6d0ZiPhRQa+R6Ew62FInJHq7ChEFvSgZpsN+ZgN2aeT7Yqmim9z8yohzI97Vqw/l7MIP2YxeLOt2JpPN6IO/6JVcVi8XK3YlXyzoTtYuD+X0qJPN6qVysWJU7MJPxhFtHNKdPzrFwpeaX1PQG5Xoepr9+qGc+fUpy32KTbEg9TEy6BHCKJnJDrdSl35Ls8J7BniPYXafsoEThWayRno9bOQcVA+7YWkG2BdaB7bGwlRmgVV41wyCRhJ3jtuDNdSteumtKrBA/aEofZxm83AOL2Vhl2a6VoEFpomwItGltbpV7mBL7BMqMe9rhVBJOEWZd5pOvbxLa8DCWgv6l0HcfO4iHNddlV6QDTgg5rjkcdFsLYOMBD2RN8QvAp6xYat1ekpgM9U+7OJhytwhqqynYivE81FQsY52Z4rPr56ZTo+7fjtv9dUD1oCY0VPgfnh2UjGJroR7SQj6T4xzDt1gwTeQhu8gByUYhVHydgAbGDVv).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/paladin/protection/#eJzEVd+LG1UUzrlzM3PmTLeJ19adXlSmg9Q0MGFmYnS7Lzvtk08SfPLNHZvUxJUkJEHqW1coCIrUPtlVstI0UNYfwUVhu7ggirXtiyL+gEBrfwkiBat/gMidNI0WH3xp/R4u537fPXfOfOcwQw8iZMEGB3KwCDVowRGAVwHeBTgNILYlKlPqHMhvEXmWyWUgA38eZOzrFnHsvwXEcfSOIr8+BvaV7WTgtUHGvqaCHwcZ+22DDDwzyNg/bSeOv76nTr75Eah0A7+Y8N8P1D3HbmSJ48Y3ar35mjr524dg31BXXTp6n31Jnex/Au7u7Nl67voqrIDZj9+PR/tXB7AG1uv13x9aOw1v1I/WD2BSO0SwyR72/FIxCAI/LAXFoh+UioFXCsNi0VcIzjF+lV3UaQeh1Injx+fBRdKJe6HfoVkypUHpXBq3yi4Rku4Fc4WSEkgi6Tkdv+uBa5JBaS8olDpiBGIxbr34bLPVdUI/fNwLfK8YzDsHa3Hj+WrFabaduFKpVpznXna6tarTbnbjbr3ZcDrVuH2w5uQ61arTaje7XjduLHkT2RvLhRc6zcZe+RItiTr5okA78/ejLtJ/GAw1VRBxvxB0JvTn7J/0jGuReRLUew57QHvyjyAX5tqEkDvXmUAmzJPGhNE2eSpxAPFiWXDJ5lOC5NiqYQ9EKP3/fI3aHH+lLJ6QJdorHiU7/wBqwtoEZaSBX62CHFdM1kifcrcjsQ/h31IRv+zdmTrmbkdimxz3K42f9kH4skCudCjjzpB1FZUAeGa5TDPrQMTxyvGnBMumkwyOwwvTfA0/64OwpDk1ZekeNNyQadLwbFmcuhfjFdFjMqRd+VkEYa0w5YKGwy1QXSfmj8dLu2Pqws4tg4ZbU4N0vFC2tV/YObjJwmUtlWBHtA6cGKXcP5mpiNSRQ9GulRMK5xd2H0rww0J4mdncWchvsNT/gm40ie4q9nxw156zL1mfPhXtv0VEi+r7fgKSTeryQl7Djdl5loUDf/sV+DAHETwJZXgGatCCw3CY/TUAuzocpg==); Phase 1 BiS: [full raid](https://wowsims.com/forever/paladin/protection/#eJzEVd+LG1UUzrlzM3PmTLeJ19adXlSmg9Q0MGFmYnS7Lzvtk08SfPLNHbupiStJSILUt65QEBSpBcGukpWmgbIqwUVhu7ggirXtiyL+gEDr9ocg0ofqHyByJ02jxQdfuv0eLud+3z13znznMEMPI2TBBgdyMA9VaMIxgNcBPgA4CyB2JCpT6gzI7xF5lsklIAN/7WfsGxZx7L0LxHH4viK/PQH21Z1k4PV+xr6ugp/7Gfs9gww818/Yv+wkjr9/qE6+/QmodAO/GvM/9tU9J25mieP6d2q99YY6ufUO2DfVVVeOP2BfUSd7n4G7N3u+lruxAstg9uKP4uHBlT6sgvVm7Y9HVs/CW7XjtUOY1A4RbLBHPb9UDILAD0tBsegHpWLglcKwWPQVgguMX2OXddpFKHXi+OlFcJF04l7ot2maTGlQOpfGzbJLhKR7wUyhpASSSHpOxx+64JpkUNoLCqW2GIKYj5svP99odpzQD5/0At8rBrPO4Wpcf7Gy4DRaTrywUFlwXnjV6VQrTqvRiTu1Rt1pV+LW4aqTa1cqTrPV6HiduL7ojWVvJBdeajfq++UrtChq5IsC7c4/iLpI/2kw1FRBxP1C0B7TX7J/01OuReZpUO856ALtyz+GXJirY0LuXmMCmTBPG2NG2+CpxAHEy2XBJZtNCZIjqwZdEKH0//c1anPytbJ4SpZov3ic7PxDqAlrA5SRBn6zAnJUMVlDfcLdicQBhP9KRfy6e3fqiLsTiR1y1K80ft4D4csCudKhjDtF1jVUAuC5pTJNrQERx6snnxEsm04yOA4uTfI1/KIHwpLmxJTFbWi4IdOk4fmyOLMd4xXREzKkPflpBGEtM+WChoNNUF0n5o/GS7tr6sL2bYMGmxODdLxUtrXf2AW4xcIlLZVgV7QGnBil3L+YqYjUsSPRnuVTChfn9h5J8NNcuMVs7szl11nqvqATjaN7in0f37PnHEjWZ89EB28T0bz6vp+CZJPamstruD49y7Jw6B+/Ah9mIIKnoQzPQRWacBSOsr8HAN3cHH4=).
 
 ## Other builds of this spec
 
-- [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (0/35/16) — [open the talent tree](https://talentsforever.com/paladin/60/-5530513300301051-50025030001-7)
-- [Protection — Tank](../research/raid/builds/prot-tank.md) (0/31/20) — [open the talent tree](https://talentsforever.com/paladin/60/-5531513101301011-50225220011-7)
+- [Protection — Tank](../research/raid/builds/prot-tank.md) (0/33/18) — [open the talent tree](https://talentsforever.com/paladin/60/-15310112513501031-50233300011-7)
+- [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (1/34/16) — [open the talent tree](https://talentsforever.com/paladin/60/01-25300132503501031-50033310001-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

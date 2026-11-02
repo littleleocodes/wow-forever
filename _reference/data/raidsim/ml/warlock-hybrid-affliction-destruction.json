@@ -2364,5 +2364,284 @@
   "best_hand": "ds-ruin-raid",
   "gain_vs_hand": 0.0081,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 808.79,
+    "se": 0.154
+   },
+   "ds-ruin-raid": {
+    "entry": "sb-raid",
+    "dps": 804.95,
+    "se": 0.152
+   },
+   "destruction-fire-raid": {
+    "entry": "fire-destro-raid",
+    "dps": 762.62,
+    "se": 0.138
+   },
+   "shadow-bolt-hybrid-open-raid": {
+    "entry": "sb-raid",
+    "dps": 808.79,
+    "se": 0.154
+   },
+   "opt-sb-raid-raid-dps": {
+    "entry": "sb-raid",
+    "dps": 802.57,
+    "se": 0.152
+   }
+  },
+  "best_hand": "ds-ruin-raid",
+  "gain_vs_hand": 0.0048
+ },
+ "signature_check": {
+  "spec": "Hybrid Affliction/Destruction",
+  "ok": true,
+  "core_share": 0.5416,
+  "min_share": 0.35,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 810.0,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Shadow Bolt": 0.5416,
+   "Bane of Agony": 0.1824,
+   "Corruption": 0.1599,
+   "Immolate": 0.0998,
+   "Demonic Rune": 0.0119,
+   "Searing Pain": 0.0044
+  },
+  "casts": {
+   "Corruption": 10.1,
+   "Bane of Agony": 8.06,
+   "Amplify Curse": 2.0,
+   "Curse of the Elements": 1.12,
+   "Searing Pain": 1.09,
+   "Life Tap": 11.46,
+   "Shadow Bolt": 48.27,
+   "Immolate": 10.66
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     3
+    ],
+    [
+     "Improved Bane of Agony",
+     2
+    ],
+    [
+     "Amplify Curse",
+     1
+    ],
+    [
+     "Pandemic",
+     3
+    ],
+    [
+     "Malevolence",
+     5
+    ]
+   ],
+   "Demonology": [
+    [
+     "Improved Health Funnel",
+     2
+    ],
+    [
+     "Improved Imp",
+     3
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     1
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms shadow-bolt-hybrid-open-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Improved Life Tap",
+      2
+     ],
+     [
+      "Suppression",
+      5
+     ],
+     [
+      "Improved Corruption",
+      3
+     ],
+     [
+      "Improved Bane of Agony",
+      2
+     ],
+     [
+      "Amplify Curse",
+      1
+     ],
+     [
+      "Pandemic",
+      3
+     ],
+     [
+      "Malevolence",
+      5
+     ]
+    ],
+    "Demonology": [
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Demonic Embrace",
+      5
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Cataclysm",
+      1
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ]
+    ]
+   },
+   "split": "21/11/19",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Health Funnel",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Health Funnel",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Imp",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Improved Imp",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Improved Imp",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

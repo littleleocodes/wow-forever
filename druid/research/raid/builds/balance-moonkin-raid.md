@@ -69,7 +69,7 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever b90e2b9 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -86,7 +86,7 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
   4. move down below 'cast Starfire': if mana % < 15%: cast Starfire (+0.3%, pass 1)
   5. only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 2)
   6. insert at the end: cast Wrath (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 5 passes, the last 2026-10-31, 4 changes to the base rotation; third-seed check: balance-moonkin-raid 526 -> 645 DPS (+22.7%), sim preset: Moonkin 674 -> 628 DPS (-6.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 6 passes, the last 2026-11-01, 4 changes to the base rotation; third-seed check: balance-moonkin-raid 526 -> 645 DPS (+22.7%), sim preset: Moonkin 677 -> 631 DPS (-6.9%)):
   1. move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms) (+0.3%, pass 1)
   2. move to the top: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 3)
   3. move to the top: keep Moonfire on up to 1 targets (refresh under 0ms) (+0.5%, pass 4)

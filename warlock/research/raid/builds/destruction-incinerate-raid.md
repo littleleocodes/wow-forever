@@ -72,12 +72,12 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 2** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 642 | +0.0% | 717 | +0.0% | 1 s |
-| 2 | *Destro* | community simulator | - | 596 | -7.1% | 663 | -7.4% | 2 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 623 | +0.0% | 695 | +0.0% | 1 s |
+| 2 | *Destro* | community simulator | - | 591 | -5.2% | 658 | -5.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +86,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
   2. move to the top: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.8%)
   3. threshold 3.5 -> 5.25: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + threshold 5.25 -> 3.938: if time left in the fight ≤ 5.25: cast Searing Pain (+0.2%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 4 passes, the last 2026-10-28, 10 changes to the base rotation; third-seed check: open winner 340 -> 767 DPS (+125.5%), destruction-incinerate-raid 696 -> 716 DPS (+2.9%), sim preset: Destro 687 -> 662 DPS (-3.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 5 passes, the last 2026-11-01, 10 changes to the base rotation; third-seed check: destruction-incinerate-raid 677 -> 696 DPS (+2.9%), sim preset: Destro 668 -> 644 DPS (-3.6%)):
   1. insert before the filler: cast Shadowburn (+6.9%, pass 1)
   2. insert before the filler: cast Shadow Bolt (+1.8%, pass 1)
   3. insert at the top: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.4%, pass 1)
@@ -102,17 +102,17 @@ Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 7 | if mana % < 10%: cast Life Tap | 7.3 |
+| 7 | if mana % < 10%: cast Life Tap | 7.4 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 10 | if Immolate is on the target: cast Conflagrate | 4.5 |
-| 11 | cast Shadow Bolt (rank 9) | 11.3 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
+| 10 | if Immolate is on the target: cast Conflagrate | 4.0 |
+| 11 | cast Shadow Bolt (rank 9) | 11.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn, cast Incinerate (its condition never held in these fights).
 
@@ -120,11 +120,11 @@ Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
-| Shadow Bolt | 42% |
+| Shadow Bolt | 43% |
 | Corruption | 17% |
 | Bane of Agony | 16% |
 | Immolate | 13% |
-| Conflagrate | 10% |
+| Conflagrate | 9% |
 | Demonic Rune | 2% |
 | Searing Pain | 1% |
 

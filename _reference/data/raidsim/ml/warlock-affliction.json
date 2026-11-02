@@ -2185,5 +2185,138 @@
   "best_hand": "affliction-dot-raid",
   "gain_vs_hand": 0.0086,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "affliction-raid",
+    "dps": 852.4,
+    "se": 0.149
+   },
+   "affliction-dot-raid": {
+    "entry": "affliction-raid",
+    "dps": 845.4,
+    "se": 0.147
+   },
+   "opt-affliction-raid-raid-dps": {
+    "entry": "affliction-raid",
+    "dps": 852.4,
+    "se": 0.149
+   }
+  },
+  "best_hand": "affliction-dot-raid",
+  "gain_vs_hand": 0.0083
+ },
+ "signature_check": {
+  "spec": "Affliction",
+  "ok": true,
+  "core_share": 0.3188,
+  "min_share": 0.3,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "affliction-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 852.9,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Shadow Bolt": 0.4979,
+   "Bane of Agony": 0.1664,
+   "Corruption": 0.1525,
+   "Immolate": 0.0993,
+   "Pet: Auto Attack": 0.0605,
+   "Demonic Rune": 0.0099,
+   "Pet: Lash of Pain": 0.0091,
+   "Searing Pain": 0.0045
+  },
+  "casts": {
+   "Corruption": 10.47,
+   "Life Tap": 10.07,
+   "Amplify Curse": 2.0,
+   "Bane of Agony": 8.12,
+   "Shadow Bolt": 48.58,
+   "Searing Pain": 1.17,
+   "Curse of the Elements": 1.12,
+   "Immolate": 11.25
+  },
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     5
+    ],
+    [
+     "Improved Bane of Agony",
+     2
+    ],
+    [
+     "Amplify Curse",
+     1
+    ],
+    [
+     "Pandemic",
+     3
+    ],
+    [
+     "Malevolence",
+     5
+    ],
+    [
+     "Nightfall",
+     2
+    ],
+    [
+     "Shadow Mastery",
+     5
+    ]
+   ],
+   "Demonology": [],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms opt-affliction-raid-raid-dps (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

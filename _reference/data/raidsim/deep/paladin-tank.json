@@ -251,5 +251,85 @@
   "threat": 1138.5295826533659,
   "dtps": 282.84102273167434,
   "fights": 20000
+ },
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 299,
+    "two_move": 37253,
+    "expanded": null,
+    "screen": 1000,
+    "screen_best": [
+     [
+      "1 Sacred Duty -> Divine Intellect; then 1 Reckoning -> Anticipation",
+      0.0014
+     ],
+     [
+      "1 Guardian's Favor -> Divine Intellect; then 1 Reckoning -> Anticipation",
+      0.0014
+     ],
+     [
+      "1 Sacred Duty -> Guardian's Favor; then 2 Reckoning -> Anticipation",
+      0.0004
+     ],
+     [
+      "1 Guardian's Favor -> Sacred Duty; then 2 Reckoning -> Anticipation",
+      0.0004
+     ],
+     [
+      "2 Reckoning -> Anticipation",
+      0.0004
+     ]
+    ],
+    "raced": 60,
+    "confirmed": [
+     [
+      "1 Sacred Duty -> Divine Intellect",
+      0.0004
+     ],
+     [
+      "1 Guardian's Favor -> Divine Intellect",
+      0.0004
+     ],
+     [
+      "1 Guardian's Favor -> Divine Intellect; then 1 Sacred Duty -> Divine Intellect",
+      0.0004
+     ],
+     [
+      "1 Sacred Duty -> Guardian's Favor",
+      0.0
+     ],
+     [
+      "1 Guardian's Favor -> Sacred Duty",
+      0.0
+     ]
+    ],
+    "minutes": 173.2
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "value": 1.0184,
+   "se": 0.0002
+  },
+  "prot-tank": {
+   "value": 0.9999,
+   "se": 0.0002
+  },
+  "opt-prot-tank-raid-tank": {
+   "value": 0.9738,
+   "se": 0.0002
+  },
+  "protection-ml-tank": {
+   "value": 1.0099,
+   "se": 0.0002
+  }
+ },
+ "minutes": 302.5,
+ "build": {
+  "written": "protection-ml-tank",
+  "gain_vs_hand": 0.018501850185018487
  }
 }

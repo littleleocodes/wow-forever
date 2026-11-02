@@ -64,18 +64,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-23, on top of the priority below): never cast Consecration; drink below 15% mana. Together +6.1% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Consecration; never cast Hammer of Wrath; drink below 15% mana. Together +11.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.6 | 4.5 | 5.7 | 5.2 | 6.2 | 35% |
-| Judgement | 1.6 | 2.2 | 2.6 | 2.4 | 2.8 | 20% |
-| Holy Strike | 1.3 | 1.6 | 2.1 | 1.9 | 2.2 | 15% |
-| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
-| Hammer of Wrath | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 13% |
-| Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
+| Melee | 2.8 | 3.8 | 5.1 | 5.7 | 7.0 | 41% |
+| Judgement | 1.4 | 1.8 | 2.4 | 2.6 | 3.1 | 22% |
+| Holy Strike | 1.0 | 1.3 | 1.8 | 2.1 | 2.5 | 17% |
+| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
+| Hammer of Justice | 0.2 | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
 
 ## Notes
 

@@ -75,9 +75,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 32/16/3 | 543 | +0.0% | 720 | -0.8% | 15 s |
-| 2 | *Arcane Fire* | community simulator | - | 536 | -1.3% | 726 | +0.0% | 14 s |
-| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -4.7% | 657 | -9.5% | 16 s |
+| 1 | *Arcane Fire* | community simulator | - | 536 | +0.0% | 726 | -2.2% | 14 s |
+| 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 528 | -1.5% | 742 | +0.0% | 20 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -3.4% | 657 | -11.5% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 

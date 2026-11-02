@@ -2467,5 +2467,161 @@
   "best_hand": "feral-cat-dps",
   "gain_vs_hand": 0.1494,
   "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "feral-cat-dps",
+    "dps": 835.9,
+    "se": 0.086
+   },
+   "feral-cat-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 686.89,
+    "se": 0.078
+   },
+   "feral-combat-open-raid": {
+    "entry": "feral-cat-dps",
+    "dps": 835.89,
+    "se": 0.086
+   },
+   "feral-combat-shifting-power-raid": {
+    "entry": "feral-cat-dps",
+    "dps": 821.16,
+    "se": 0.084
+   },
+   "opt-feral-cat-dps-raid-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 698.33,
+    "se": 0.082
+   }
+  },
+  "best_hand": "feral-cat-dps",
+  "gain_vs_hand": 0.2169
+ },
+ "signature_check": {
+  "spec": "Feral Combat",
+  "ok": true,
+  "core_share": 0.979,
+  "min_share": 0.8,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "feral-cat-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 835.8,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.3722,
+   "Shred": 0.224,
+   "Rip": 0.2236,
+   "Rake": 0.1203,
+   "Ferocious Bite": 0.039,
+   "Ravage": 0.0098,
+   "Goblin Sapper Charge": 0.0088,
+   "Demonic Rune": 0.0024
+  },
+  "casts": {
+   "Shred": 46.87,
+   "Prowl": 1.0,
+   "Rip": 13.17,
+   "Rake": 17.28,
+   "Ferocious Bite": 3.96,
+   "Ravage": 1.0,
+   "Shifting Power": 22.91,
+   "Dash": 1.0
+  },
+  "allocation": {
+   "Balance": [
+    [
+     "Genesis",
+     5
+    ],
+    [
+     "Nature's Majesty",
+     2
+    ],
+    [
+     "Nature's Reach",
+     2
+    ]
+   ],
+   "Feral Combat": [
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Furor",
+     5
+    ],
+    [
+     "Shredding Attacks",
+     3
+    ],
+    [
+     "Savage Fury",
+     2
+    ],
+    [
+     "Sharpened Claws",
+     2
+    ],
+    [
+     "Predatory Strikes",
+     3
+    ],
+    [
+     "Predatory Discipline",
+     1
+    ],
+    [
+     "Blood Frenzy",
+     2
+    ],
+    [
+     "Natural Instinct",
+     2
+    ],
+    [
+     "Rend and Tear",
+     5
+    ],
+    [
+     "Shifting Power",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Heart of the Wild",
+     5
+    ],
+    [
+     "Naturalist",
+     5
+    ],
+    [
+     "Reflection",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-02",
+  "setting": "raid",
+  "why": "confirms feral-combat-open-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

@@ -2,7 +2,7 @@
  "class": "druid",
  "spec": "balance-dps",
  "game": "forever",
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
   "commit": "54ceac638",
@@ -101,12 +101,12 @@
    },
    "raid_casts": {
     "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.0036666666666667,
-    "OtherActionManaGain": 33.21666666666667,
-    "Serenity Field": 2.0,
     "Insect Swarm": 11.941333333333333,
+    "Major Mana Potion": 1.0036666666666667,
     "Starfire": 48.762,
-    "Moonfire": 12.599666666666666
+    "Serenity Field": 2.0,
+    "Moonfire": 12.599666666666666,
+    "OtherActionManaGain": 33.21666666666667
    },
    "raid_shares": {
     "Starfire": 0.6401,
@@ -135,17 +135,17 @@
     "max60": 635.785577153334
    },
    "raid_spell_casts": {
+    "9835": 12.599666666666666,
     "24977": 11.941333333333333,
-    "25298": 48.762,
-    "9835": 12.599666666666666
+    "25298": 48.762
    },
    "raid_casts": {
-    "Insect Swarm": 11.941333333333333,
+    "Moonfire": 12.599666666666666,
     "OtherActionManaGain": 33.21666666666667,
     "Talisman of Ephemeral Power": 2.0,
     "Major Mana Potion": 1.0036666666666667,
+    "Insect Swarm": 11.941333333333333,
     "Starfire": 48.762,
-    "Moonfire": 12.599666666666666,
     "Serenity Field": 2.0
    },
    "raid_shares": {
@@ -175,18 +175,18 @@
     "max60": 635.785577153334
    },
    "raid_spell_casts": {
+    "25298": 48.762,
     "24977": 11.941333333333333,
-    "9835": 12.599666666666666,
-    "25298": 48.762
+    "9835": 12.599666666666666
    },
    "raid_casts": {
     "Major Mana Potion": 1.0036666666666667,
+    "Starfire": 48.762,
+    "Serenity Field": 2.0,
     "Insect Swarm": 11.941333333333333,
     "Moonfire": 12.599666666666666,
-    "Talisman of Ephemeral Power": 2.0,
-    "Starfire": 48.762,
     "OtherActionManaGain": 33.21666666666667,
-    "Serenity Field": 2.0
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
     "Starfire": 0.6401,
@@ -221,13 +221,13 @@
     "24977": 11.928333333333333
    },
    "raid_casts": {
-    "Moonfire": 12.616333333333333,
-    "Major Mana Potion": 1.0036666666666667,
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 33.186,
-    "Innervate": 0.0026666666666666666,
-    "Starfire": 48.730333333333334,
     "Serenity Field": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 1.0036666666666667,
+    "Moonfire": 12.616333333333333,
+    "Innervate": 0.0026666666666666666,
+    "OtherActionManaGain": 33.186,
+    "Starfire": 48.730333333333334,
     "Insect Swarm": 11.928333333333333
    },
    "raid_shares": {

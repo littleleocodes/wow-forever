@@ -2,17 +2,11 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > Shadow
 
-**✅ Recommended** for leveling (the best priest spec here, or within 3% of it).
+**[Leveling — Shadow](../research/leveling/builds/leveling-shadow.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-7)
 
-**[Shadow — Leveling](../research/leveling/builds/shadow-open-leveling.md)** (13/3/35) — [open the talent tree](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7)
-
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Shadow), which stays below as the alternative. A model of the beta, to check at launch.
-
-**Signature spells:** 84% of the damage at level 60 in the fight lab comes from Shadow Word: Pain, Mind Blast, Mind Flay, Devouring Plague (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast in every fight).
+**Signature spells:** 83% of the damage at level 60 in the fight lab comes from Shadow Word: Pain, Mind Blast, Mind Flay, Devouring Plague (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast in every fight).
 
 ## How to play
-
-**Not in this build:** **Inner Focus** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
 **Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free).
 
@@ -59,45 +53,36 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Spirit Tap (Shadow) | 5 |
-| 15-18 | Shadow Focus (Shadow) | 4 |
-| 19 | Shadow Reach (Shadow) | 1 |
+| 10-12 | Blackout (Shadow) | 3 |
+| 13-14 | Shadow Focus (Shadow) | 2 |
+| 15-16 | Shadow Reach (Shadow) | 2 |
+| 17-19 | Shadow Focus (Shadow) | 3 |
 | 20 | Mind Flay (Shadow) | 1 |
 | 21-22 | Improved Mind Flay (Shadow) | 2 |
-| 23 | Shadow Reach (Shadow) | 1 |
-| 24 | Improved Mind Blast (Shadow) | 1 |
-| 25-26 | Dark Inspiration (Shadow) | 2 |
-| 27-29 | Shadow Weaving (Shadow) | 3 |
-| 30-33 | Improved Mind Blast (Shadow) | 4 |
-| 34 | Dark Inspiration (Shadow) | 1 |
-| 35 | Early Demise (Shadow) | 1 |
-| 36-38 | Darkness (Shadow) | 3 |
-| 39 | Vampiric Embrace (Shadow) | 1 |
+| 23-24 | Spirit Tap (Shadow) | 2 |
+| 25 | Vampiric Embrace (Shadow) | 1 |
+| 26-28 | Shadow Weaving (Shadow) | 3 |
+| 29-31 | Spirit Tap (Shadow) | 3 |
+| 32-33 | Improved Shadow Word: Pain (Shadow) | 2 |
+| 34 | Silence (Shadow) | 1 |
+| 35-36 | Early Demise (Shadow) | 2 |
+| 37-39 | Darkness (Shadow) | 3 |
 | 40 | Shadowform (Shadow) | 1 |
 | 41-42 | Darkness (Shadow) | 2 |
-| 43-44 | Dark Inspiration (Shadow) | 2 |
-| 45-49 | Twin Disciplines (Discipline) | 5 |
-| 50-52 | Twilight Focus (Holy) | 3 |
-| 53-55 | Mental Strength (Discipline) | 3 |
-| 56-57 | Power in Light (Discipline) | 2 |
-| 58-60 | Meditation (Discipline) | 3 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 32 |
-| 30 | 35 |
-| 40 | 22 |
-| 50 | 21 |
-| 60 | 20 |
+| 43-47 | Twin Disciplines (Discipline) | 5 |
+| 48-50 | Mental Strength (Discipline) | 3 |
+| 51-52 | Martyrdom (Discipline) | 2 |
+| 53 | Inner Focus (Discipline) | 1 |
+| 54-56 | Improved Power Word: Shield (Discipline) | 3 |
+| 57 | Meditation (Discipline) | 1 |
+| 58-60 | Mental Agility (Discipline) | 3 |
 
 ## Other builds of this spec
 
-- [Shadow (optimized, solo at 60)](../research/leveling/builds/opt-shadow-dps-solo-60.md) (16/2/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02500302103-2-55510201201300251-7)
-- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-7)
-- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 29 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-7)
+- [Shadow (optimized)](../research/leveling/builds/opt-shadow-dps-leveling-st.md) (16/2/33) — [open the talent tree](https://talentsforever.com/priest/60/02500302103-2-55510201201300251-7)
+- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-7)
+- [Shadow — Leveling](../research/leveling/builds/shadow-open-leveling.md) (13/3/35) — [open the talent tree](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-30 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
 

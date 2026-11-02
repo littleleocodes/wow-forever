@@ -66,17 +66,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.011 | +0.0% | 1172 | 287 |
-| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -1.1% | 1140 | 285 |
-| 3 | *Default* | community simulator | - | 0.993 | -1.8% | 1173 | 298 |
-| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.975 | -3.5% | 1079 | 284 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.021 | +0.0% | 1203 | 289 |
+| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -2.0% | 1140 | 285 |
+| 3 | *Default* | community simulator | - | 0.993 | -2.7% | 1173 | 298 |
+| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.975 | -4.5% | 1079 | 284 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 changes to the base rotation; third-seed check: protection-ml-tank 473 -> 479 DPS (+1.3%), sim preset: Default 471 -> 481 DPS (+2.1%), prot-tank 450 -> 457 DPS (+1.4%), opt-prot-tank-raid-tank 430 -> 433 DPS (+0.7%)):
-  1. insert before the filler: cast Lay on Hands (+1.9%)
-  2. insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+0.8%)
-  3. insert at the top: if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike (+0.6%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 2 passes, the last 2026-11-02, 3 changes to the base rotation; third-seed check: deep: tank 482 -> 491 DPS (+2.0%), protection-ml-tank 473 -> 479 DPS (+1.3%), sim preset: Default 471 -> 481 DPS (+2.1%), prot-tank 450 -> 457 DPS (+1.4%), opt-prot-tank-raid-tank 430 -> 433 DPS (+0.7%)):
+  1. insert before the filler: cast Lay on Hands (+1.9%, pass 1)
+  2. insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+0.8%, pass 1)
+  3. insert at the top: if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike (+0.6%, pass 1)
 
 Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura; at -1.5s: cast Seal of the Crusader.
 

@@ -233,6 +233,16 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "itemId": 12662
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 10392,
       "rank": 2
      }
