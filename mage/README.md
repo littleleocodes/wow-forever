@@ -88,7 +88,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (10 builds) | [leveling-frost](research/leveling/builds/leveling-frost.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (11 builds) | [leveling-frost](research/leveling/builds/leveling-frost.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (17 builds) | [frost-arcane-power-raid](research/raid/builds/frost-arcane-power-raid.md), [frost-winters-chill-raid](research/raid/builds/frost-winters-chill-raid.md), [frost-fingers-of-frost-raid](research/raid/builds/frost-fingers-of-frost-raid.md), [fire-raid](research/raid/builds/fire-raid.md), [frostfire-raid](research/raid/builds/frostfire-raid.md), [arcane-blast-raid](research/raid/builds/arcane-blast-raid.md), [frostfire-fingers-of-frost-raid](research/raid/builds/frostfire-fingers-of-frost-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-frost](research/pvp/builds/pvp-frost.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +8.2% faster per kill than leveling-melee, the fastest of our leveling builds in that race.
+The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-10-26: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +8.2% faster per kill than leveling-melee, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -92,6 +92,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.31; leveling-melee 24.14, opt-bm-leveling-leveling-aoe 28.19. The search simulated 57,358 builds.
+- The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 23.74 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -10,7 +10,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 |---|---|---|---|---|---|---|---|---|
 | [Frost](../../leveling/frost.md) ✅ | [`leveling-frost`](builds/leveling-frost.md) | [frost-leveling](#frost-leveling) | 19.0 | 29.0 | 33.8 | 30.0 | 28.9 | 29.2 |
 | [Fire](../../leveling/fire.md) | [`opt-fire-leveling-leveling-st`](builds/opt-fire-leveling-leveling-st.md) | [fire-leveling](#fire-leveling) | 26.6 | 32.6 | 39.8 | 37.7 | 36.1 | 35.8 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-leveling`](builds/arcane-leveling.md) | [frost-leveling](#frost-leveling) | - | - | - | - | - | - |
+| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | - | - | - | - | - | - | - |
 | [Arcane-Frost](../../leveling/arcane-frost.md) | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | - | - | - | - | - | - | - |
 | [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | - | - | - | - | - | - | - |
 
@@ -18,7 +18,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 ## frost-leveling
 
-Played by the page builds of [Frost](../../leveling/frost.md) ([`leveling-frost`](builds/leveling-frost.md)), [Arcane](../../leveling/arcane.md) ([`arcane-leveling`](builds/arcane-leveling.md)).
+Played by the page build of [Frost](../../leveling/frost.md) ([`leveling-frost`](builds/leveling-frost.md)).
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
@@ -73,8 +73,6 @@ Report: [fightlab/frost-leveling.md](fightlab/frost-leveling.md).
 | Blast Wave | 0.0 | 0.2 | 0.3 | 0.3 | 0.3 | 4% |
 | Scorch | 0.0 | 0.1 | 0.2 | 0.2 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-
-Casts per kill of [`arcane-leveling`](builds/arcane-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
 ## fire-leveling
 

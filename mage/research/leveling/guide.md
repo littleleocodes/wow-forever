@@ -16,7 +16,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 |---|---|---|---|---|---|---|---|---|
 | [Frost](../../leveling/frost.md) ✅ | [`leveling-frost`](builds/leveling-frost.md) | frost-leveling | 19.0 | 29.0 | 33.8 | 30.0 | 28.9 | 29.2 |
 | [Fire](../../leveling/fire.md) | [`opt-fire-leveling-leveling-st`](builds/opt-fire-leveling-leveling-st.md) | fire-leveling | 26.6 | 32.6 | 39.8 | 37.7 | 36.1 | 35.8 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-leveling`](builds/arcane-leveling.md) | frost-leveling | - | - | - | - | - | - |
+| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | - | - | - | - | - | - | - |
 | [Arcane-Frost](../../leveling/arcane-frost.md) | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | - | - | - | - | - | - | - |
 | [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | - | - | - | - | - | - | - |
 

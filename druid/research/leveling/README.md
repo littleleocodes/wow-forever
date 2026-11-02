@@ -16,9 +16,8 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/4/36 | DPS |
 | [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 38/0/13 | DPS |
-| [Feral Combat/Restoration hybrid — Leveling (open talent search)](builds/hybrid-feral-combat-restoration-open-leveling.md) 🔬 | 11/31/9 | DPS |
+| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/4/36 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -34,7 +33,7 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 - [Leveling guide](guide.md): the recommended build (Feral Combat, `opt-feral-cat-dps-leveling-st`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**67.1 h** (25.4% faster than talentless), 1 respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**61.3 h** (31.9% faster than talentless), 1 respec).
 - Recommended build: [opt-feral-cat-dps-leveling-st](builds/opt-feral-cat-dps-leveling-st.md) (Feral Combat; player page: [Feral Combat leveling](../../leveling/feral-combat.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
@@ -48,7 +47,6 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 | [Feral Combat](../../leveling/feral-combat.md) ✅ | `opt-feral-cat-dps-leveling-st` | feral-cat-dps | 25.8 |
 | [Balance](../../leveling/balance.md) | `opt-balance-dps-leveling-st` | balance-dps | 34.3 |
 | [Restoration](../../leveling/restoration.md) | `restoration-leveling` | - | - |
-| [Feral Combat/Restoration hybrid](../../leveling/hybrid-feral-combat-restoration.md) | `hybrid-feral-combat-restoration-open-leveling` | - | - |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 

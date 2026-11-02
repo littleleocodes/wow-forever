@@ -11,7 +11,6 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | [Feral Combat](../../leveling/feral-combat.md) ✅ | [`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md) | [feral-cat-dps](#feral-cat-dps) | 23.6 | 16.7 | 21.4 | 25.3 | 27.3 | 30.7 | 25.8 |
 | [Balance](../../leveling/balance.md) | [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) | [balance-dps](#balance-dps) | 20.5 | 23.9 | 33.2 | 39.8 | 37.3 | 35.7 | 34.3 |
 | [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | - | - | - | - | - | - | - | - |
-| [Feral Combat/Restoration hybrid](../../leveling/hybrid-feral-combat-restoration.md) | [`hybrid-feral-combat-restoration-open-leveling`](builds/hybrid-feral-combat-restoration-open-leveling.md) | - | - | - | - | - | - | - | - |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 

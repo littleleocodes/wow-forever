@@ -18,8 +18,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Arcane — Leveling (derived)](builds/arcane-leveling.md) 🔬 | 29/0/22 | DPS |
 | [Fire — Leveling (derived)](builds/fire-leveling.md) 🔬 | 0/32/19 | DPS |
-| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 34/17/0 | DPS |
+| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 31/17/3 | DPS |
 | [Fire — Leveling (open talent search)](builds/fire-open-leveling.md) 🔬 | 0/31/20 | DPS |
+| [Frost — Leveling (open talent search)](builds/frost-open-leveling.md) 🔬 | 18/3/30 | DPS |
 | [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) 🔬 | 18/2/31 | DPS |
 | [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 1/25/25 | DPS |
 
@@ -50,7 +51,7 @@ Classic Era reference builds: [aoe-grinding-frost](../talents/classic-baseline/a
 |---|---|---|---|
 | [Frost](../../leveling/frost.md) ✅ | `leveling-frost` | frost-leveling | 29.2 |
 | [Fire](../../leveling/fire.md) | `opt-fire-leveling-leveling-st` | fire-leveling | 35.8 |
-| [Arcane](../../leveling/arcane.md) | `arcane-leveling` | frost-leveling | - |
+| [Arcane](../../leveling/arcane.md) | `arcane-open-leveling` | - | - |
 | [Arcane-Frost](../../leveling/arcane-frost.md) | `arcane-frost-open-leveling` | - | - |
 | [Frostfire](../../leveling/frostfire.md) | `frostfire-open-leveling` | - | - |
 

@@ -43,9 +43,8 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Balance leveling build: check it while leveling at launch.
-- An open-search Feral Combat/Restoration hybrid leveling build: check it while leveling at launch.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Hunter
 
@@ -149,6 +148,7 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Arcane leveling build: check it while leveling at launch.
 - An open-search Fire leveling build: check it while leveling at launch.
+- An open-search Frost leveling build: check it while leveling at launch.
 - An open-search Arcane-Frost leveling build: check it while leveling at launch.
 - An open-search Frostfire leveling build: check it while leveling at launch.
 

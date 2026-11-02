@@ -80,6 +80,9 @@
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)** (`druid/research/leveling/builds/opt-balance-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
+- [ ] An open-search Balance leveling build: check it while leveling at launch.
+
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -106,12 +109,6 @@
 
 **Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
 - [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
-
-**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
-- [ ] An open-search Balance leveling build: check it while leveling at launch.
-
-**Feral Combat/Restoration hybrid — Leveling (open talent search)** (`druid/research/leveling/builds/hybrid-feral-combat-restoration-open-leveling.md`)
-- [ ] An open-search Feral Combat/Restoration hybrid leveling build: check it while leveling at launch.
 
 ### Hunter
 
@@ -216,12 +213,6 @@
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
-
-**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
-
 **Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
 - [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
 
@@ -233,6 +224,12 @@
 
 **Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
 - [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
+
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
+**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
+- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
 ### Mage
 
@@ -299,6 +296,21 @@
 **Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
+- [ ] An open-search Arcane leveling build: check it while leveling at launch.
+
+**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
+- [ ] An open-search Fire leveling build: check it while leveling at launch.
+
+**Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
+- [ ] An open-search Frost leveling build: check it while leveling at launch.
+
+**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
+- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
+
+**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
+- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
+
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -325,18 +337,6 @@
 
 **Arcane — Raid (open talent search)** (`mage/research/raid/builds/arcane-open-raid.md`)
 - [ ] An open-search Arcane build: check it against the community's Arcane builds at launch.
-
-**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
-- [ ] An open-search Arcane leveling build: check it while leveling at launch.
-
-**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
-- [ ] An open-search Fire leveling build: check it while leveling at launch.
-
-**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
-- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
-
-**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
-- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
 
 ### Paladin
 

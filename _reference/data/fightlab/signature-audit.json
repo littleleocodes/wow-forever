@@ -224,22 +224,6 @@
     "fingerprint": "5f7a087b581a",
     "date": "2026-11-02",
     "fights": 300
-   },
-   "hybrid-feral-combat-restoration-open-leveling": {
-    "spec": "Hybrid Feral Combat/Restoration",
-    "rotation": "feral-cat-dps",
-    "ok": true,
-    "verdict": "no rule",
-    "core_share": null,
-    "min_share": null,
-    "required": [],
-    "core": [],
-    "casts_60": {},
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "e4141f1c59c8",
-    "date": "2026-11-02",
-    "fights": 300
    }
   },
   "hunter": {
@@ -442,7 +426,7 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "9b6b184a1ef7",
+    "fingerprint": "6adf45331789",
     "date": "2026-11-02",
     "fights": 300
    },
@@ -566,7 +550,7 @@
     "spec": "Arcane",
     "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: Arcane Blast 0.00/kill at 20 (needs 0.50); Arcane Blast 0.00/kill at 30 (needs 0.50); Arcane Blast 0.00/kill at 40 (needs 0.50); Arcane Blast 0.00/kill at 50 (needs 0.50); Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
+    "verdict": "FAIL: Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
     "core_share": 0,
     "min_share": 0.5,
     "required": [
@@ -584,36 +568,12 @@
     "uncast": [
      [
       "Arcane Blast",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
       60,
       0.0,
       0.5
      ]
     ],
-    "fingerprint": "d0bb7da42a63",
+    "fingerprint": "77e529d1489c",
     "date": "2026-11-02",
     "fights": 300
    },
@@ -716,8 +676,8 @@
     "spec": "Fire",
     "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 50 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 8% < 60%",
-    "core_share": 0.0795,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 9% < 60%",
+    "core_share": 0.0854,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -769,18 +729,12 @@
      ],
      [
       "Pyroblast",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Pyroblast",
       60,
       0.0,
       0.5
      ]
     ],
-    "fingerprint": "e2dfeab069a8",
+    "fingerprint": "8dc58a91c1a3",
     "date": "2026-11-02",
     "fights": 300
    },
@@ -836,12 +790,38 @@
     "date": "2026-11-02",
     "fights": 300
    },
+   "frost-open-leveling": {
+    "spec": "Frost",
+    "rotation": "frost-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.9029,
+    "min_share": 0.6,
+    "required": [
+     "Frostbolt"
+    ],
+    "core": [
+     "Frostbolt",
+     "Ice Lance",
+     "Frost Blast",
+     "Cone of Cold",
+     "Blizzard"
+    ],
+    "casts_60": {
+     "Frostbolt": 3.28
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "cfc741c1e922",
+    "date": "2026-11-02",
+    "fights": 300
+   },
    "arcane-frost-open-leveling": {
     "spec": "Hybrid Arcane/Frost",
     "rotation": "frost-leveling",
     "ok": false,
-    "verdict": "FAIL: Arcane Missiles 0.00/kill at 40 (needs 0.25); Arcane Missiles 0.00/kill at 50 (needs 0.25); Arcane Missiles 0.00/kill at 60 (needs 0.25)",
-    "core_share": 0.8935,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
+    "core_share": 0.9021,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -854,23 +834,11 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 3.44,
+     "Frostbolt": 3.32,
      "Arcane Missiles": 0.0
     },
     "missing_talents": [],
     "uncast": [
-     [
-      "Arcane Missiles",
-      40,
-      0.0,
-      0.25
-     ],
-     [
-      "Arcane Missiles",
-      50,
-      0.0,
-      0.25
-     ],
      [
       "Arcane Missiles",
       60,
@@ -878,7 +846,7 @@
       0.25
      ]
     ],
-    "fingerprint": "01f4e4a0c53f",
+    "fingerprint": "a4533f61bb0d",
     "date": "2026-11-02",
     "fights": 300
    },
@@ -919,7 +887,7 @@
       0.5
      ]
     ],
-    "fingerprint": "fb2185d567b8",
+    "fingerprint": "cab7d360dedc",
     "date": "2026-11-02",
     "fights": 300
    }
@@ -3119,34 +3087,6 @@
      "Rake": 0.095,
      "Rip": 0.085
     }
-   },
-   {
-    "spec": "Hybrid Feral Combat/Restoration",
-    "name": "Feral Combat/Restoration hybrid",
-    "build": "hybrid-feral-combat-restoration-open-leveling",
-    "split": "11/31/9",
-    "rotation": "feral-cat-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [],
-    "core": [],
-    "rule_issues": [],
-    "casts_60": {},
-    "core_share": null,
-    "min_share": null,
-    "weighted": 28.71,
-    "verdict": "no rule",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.32,
-     "Claw": 0.173,
-     "Ferocious Bite": 0.133,
-     "Rip": 0.132,
-     "Ravage": 0.126,
-     "Rake": 0.076
-    }
    }
   ],
   "hunter": [
@@ -3435,7 +3375,7 @@
     },
     "core_share": 0.9979,
     "min_share": 0.7,
-    "weighted": 24.0,
+    "weighted": 22.77,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
@@ -3628,7 +3568,7 @@
     "spec": "Arcane",
     "name": "Arcane",
     "build": "arcane-open-leveling",
-    "split": "34/17/0",
+    "split": "31/17/3",
     "rotation": "frost-leveling",
     "rules": "tuned",
     "kind": "slot",
@@ -3646,35 +3586,11 @@
     },
     "core_share": 0,
     "min_share": 0.5,
-    "weighted": 48.35,
-    "verdict": "FAIL: Arcane Blast 0.00/kill at 20 (needs 0.50); Arcane Blast 0.00/kill at 30 (needs 0.50); Arcane Blast 0.00/kill at 40 (needs 0.50); Arcane Blast 0.00/kill at 50 (needs 0.50); Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
+    "weighted": 44.27,
+    "verdict": "FAIL: Arcane Blast 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
     "ok": false,
     "missing_talents": [],
     "uncast": [
-     [
-      "Arcane Blast",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Arcane Blast",
-      50,
-      0.0,
-      0.5
-     ],
      [
       "Arcane Blast",
       60,
@@ -3683,10 +3599,10 @@
      ]
     ],
     "top_shares": {
-     "Frostbolt": 0.815,
-     "Fire Blast": 0.09,
-     "Wand": 0.074,
-     "Frost Nova": 0.021
+     "Frostbolt": 0.819,
+     "Fire Blast": 0.088,
+     "Wand": 0.072,
+     "Frost Nova": 0.022
     }
    },
    {
@@ -3833,10 +3749,10 @@
      "Fireball": 0.0,
      "Pyroblast": 0.0
     },
-    "core_share": 0.0795,
+    "core_share": 0.0854,
     "min_share": 0.6,
-    "weighted": 40.38,
-    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 50 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 8% < 60%",
+    "weighted": 36.57,
+    "verdict": "FAIL: Fireball 0.00/kill at 20 (needs 0.50); Fireball 0.00/kill at 30 (needs 0.50); Fireball 0.00/kill at 40 (needs 0.50); Fireball 0.00/kill at 50 (needs 0.50); Fireball 0.00/kill at 60 (needs 0.50); Pyroblast 0.00/kill at 60 (needs 0.50); core share 9% < 60%",
     "ok": false,
     "missing_talents": [],
     "uncast": [
@@ -3872,23 +3788,17 @@
      ],
      [
       "Pyroblast",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Pyroblast",
       60,
       0.0,
       0.5
      ]
     ],
     "top_shares": {
-     "Frostbolt": 0.588,
-     "Ice Lance": 0.263,
-     "Fire Blast": 0.079,
-     "Wand": 0.049,
-     "Frost Nova": 0.02,
+     "Frostbolt": 0.568,
+     "Ice Lance": 0.283,
+     "Fire Blast": 0.085,
+     "Wand": 0.043,
+     "Frost Nova": 0.021,
      "Ignite": 0.0
     }
    },
@@ -3967,6 +3877,43 @@
     }
    },
    {
+    "spec": "Frost",
+    "name": "Frost",
+    "build": "frost-open-leveling",
+    "split": "18/3/30",
+    "rotation": "frost-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Frostbolt"
+    ],
+    "core": [
+     "Frostbolt",
+     "Ice Lance",
+     "Frost Blast",
+     "Cone of Cold",
+     "Blizzard"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Frostbolt": 3.28
+    },
+    "core_share": 0.9029,
+    "min_share": 0.6,
+    "weighted": 27.6,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Frostbolt": 0.541,
+     "Ice Lance": 0.362,
+     "Fire Blast": 0.056,
+     "Wand": 0.025,
+     "Frost Nova": 0.016
+    }
+   },
+   {
     "spec": "Hybrid Arcane/Frost",
     "name": "Arcane-Frost",
     "build": "arcane-frost-open-leveling",
@@ -3986,28 +3933,16 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.44,
+     "Frostbolt": 3.32,
      "Arcane Missiles": 0.0
     },
-    "core_share": 0.8935,
+    "core_share": 0.9021,
     "min_share": 0.6,
-    "weighted": 32.0,
-    "verdict": "FAIL: Arcane Missiles 0.00/kill at 40 (needs 0.25); Arcane Missiles 0.00/kill at 50 (needs 0.25); Arcane Missiles 0.00/kill at 60 (needs 0.25)",
+    "weighted": 26.85,
+    "verdict": "FAIL: Arcane Missiles 0.00/kill at 60 (needs 0.25)",
     "ok": false,
     "missing_talents": [],
     "uncast": [
-     [
-      "Arcane Missiles",
-      40,
-      0.0,
-      0.25
-     ],
-     [
-      "Arcane Missiles",
-      50,
-      0.0,
-      0.25
-     ],
      [
       "Arcane Missiles",
       60,
@@ -4016,10 +3951,10 @@
      ]
     ],
     "top_shares": {
-     "Frostbolt": 0.548,
-     "Ice Lance": 0.346,
-     "Fire Blast": 0.065,
-     "Wand": 0.026,
+     "Frostbolt": 0.545,
+     "Ice Lance": 0.358,
+     "Fire Blast": 0.06,
+     "Wand": 0.023,
      "Frost Nova": 0.015
     }
    },
@@ -4043,22 +3978,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.22,
-     "Arcane Missiles": 0.96
+     "Frostbolt": 2.1,
+     "Arcane Missiles": 0.91
     },
-    "core_share": 0.8601,
+    "core_share": 0.8648,
     "min_share": 0.6,
-    "weighted": 32.96,
+    "weighted": 28.57,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.344,
-     "Ice Lance": 0.295,
-     "Arcane Missiles": 0.222,
-     "Fire Blast": 0.101,
-     "Wand": 0.024,
+     "Frostbolt": 0.338,
+     "Ice Lance": 0.298,
+     "Arcane Missiles": 0.228,
+     "Fire Blast": 0.098,
+     "Wand": 0.022,
      "Frost Nova": 0.015
     }
    },
@@ -4082,7 +4017,7 @@
     },
     "core_share": 0,
     "min_share": 0.3,
-    "weighted": 35.26,
+    "weighted": 31.5,
     "verdict": "FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%",
     "ok": false,
     "missing_talents": [],
@@ -4107,10 +4042,10 @@
      ]
     ],
     "top_shares": {
-     "Frostbolt": 0.509,
-     "Ice Lance": 0.388,
-     "Fire Blast": 0.054,
-     "Wand": 0.03,
+     "Frostbolt": 0.514,
+     "Ice Lance": 0.382,
+     "Fire Blast": 0.06,
+     "Wand": 0.026,
      "Frost Nova": 0.017,
      "Ignite": 0.001
     }
@@ -4131,22 +4066,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostfire Bolt": 3.04
+     "Frostfire Bolt": 3.05
     },
-    "core_share": 0.3402,
+    "core_share": 0.3677,
     "min_share": 0.3,
-    "weighted": 40.83,
+    "weighted": 33.89,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.504,
-     "Frostfire Bolt": 0.306,
-     "Wand": 0.095,
-     "Ignite": 0.042,
-     "Frostfire Bolt burn": 0.034,
-     "Frost Nova": 0.019
+     "Ice Lance": 0.474,
+     "Frostfire Bolt": 0.333,
+     "Wand": 0.077,
+     "Ignite": 0.049,
+     "Frostfire Bolt burn": 0.035,
+     "Frost Nova": 0.017
     }
    }
   ],
