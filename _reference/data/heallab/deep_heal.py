@@ -127,6 +127,13 @@ def run_spec(cls, spec, a):
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    if a.fresh and rp.exists():
+        # 2026-11-02: move the old record aside now, not at the first save: a --fresh run killed before its first cycle
+        # left the old record in place, and the queue's resume (no --fresh) took it as done and rewrote its stale build
+        # (the druid's 10-21 Restoration winner, in the trees before the 10-30 rework).
+        rp.replace(rp.with_name(rp.stem + ".prev.json"))
+        save()
+
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     space = MLT.Space(cls, spec)
     healers = [bid for bid, b in data.items() if b.get("role") == "healer" and SM.mode_of(b) == "raid"]

@@ -196,6 +196,11 @@ def main():
     repo = R.repo_path(argparse.Namespace(repo=None))
     db, zones = GT.load_db(repo)
     st = {"class": cls, "date": TODAY, "specs": {}, "cycles": []} if a.fresh else load(cls)
+    if a.fresh and rec_path(cls).exists():
+        # 2026-11-02: move the old record aside at start (a --fresh run killed before its first save left it in place, and a resume
+        # without --fresh took it as done; deep_heal.py hit this with the druid's 10-21 record)
+        rec_path(cls).replace(rec_path(cls).with_name(rec_path(cls).stem + ".prev.json"))
+        save(st)
     entries = damage_entries(cls)
     recs = {r["spec"]: r for r in (MP.load(cls, t["spec"]) for t in MP.targets(cls)) if r and (not a.spec or r["spec"] in a.spec)}
     log(f"== deep optimisation of {cls}: specs {', '.join(recs)}; entries {', '.join(entries)}")
