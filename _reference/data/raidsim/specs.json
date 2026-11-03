@@ -838,7 +838,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+      "apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-default.apl.json",
       "spec": {
         "retributionPaladin": {
           "options": {
@@ -873,8 +873,8 @@
       "distance": 5,
       "profession1": "Engineering",
       "tank": true,
-      "gear": "ui/specs/paladin/protection/gear_sets/default.gear.json",
-      "apl": "ui/specs/paladin/protection/apls/default.apl.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json",
+      "apl": "_reference/data/raidsim/apls/paladin/sim-presets/protection-default.apl.json",
       "spec": {
         "protectionPaladin": {
           "options": {
@@ -906,7 +906,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "ui/specs/paladin/retribution/apls/holy_shock.apl.json",
+      "apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-holy_shock.apl.json",
       "spec": {
         "retributionPaladin": {
           "options": {

@@ -32,7 +32,8 @@ OFFICIAL_COMMITS = {"09e7398": "1.60.1.70450", "30f67f5": "1.60.1.70450",   # 30
                     "b90e2b9": "1.60.1.70707",   # b90e2b9: 2026-10-30 master (live client, hotfix pushes 113531/113554; paladin, priest not yet)
                     "54ceac6": "1.60.1.70707",   # 54ceac6: 2026-10-31 master (the paladin and priest ports of push 113554, items of 10-31)
                     "bac92db": "1.60.1.70707",   # bac92db: 2026-11-02 master (same game data; book ranks registered, raid buffs as rank selects at the trainer's rank, Ferocious Bite attack power, Seal of Command, hunter pet attack power, Omen per Hurricane tick)
-                    "5ad0894": "1.60.1.70707"}   # 5ad0894: 2026-11-03 master (spell data still 70707; the mage's 11-02 notes: Clearcasting kept under Missile Barrage, Arcane Missiles procs Clearcasting (#831); items of 11-03 (#819), warrior Whirlwind/Cleave APL (#818), rogue Riposte/Setup (#802))
+                    "5ad0894": "1.60.1.70707",   # 5ad0894: 2026-11-03 master (spell data still 70707; the mage's 11-02 notes: Clearcasting kept under Missile Barrage, Arcane Missiles procs Clearcasting (#831); items of 11-03 (#819), warrior Whirlwind/Cleave APL (#818), rogue Riposte/Setup (#802))
+                    "d97252f": "1.60.1.70755"}   # d97252f: 2026-11-03 master (the paladin on 70755: Vengeance 5 stacks, Two-Handed Weapon Specialization on Holy, Holy Shield Rank 4 (#834); the druid's Poised (#836), the mage's Missile Barrage tooltip (#833), items of 11-03 (#832, #837); the other classes' spell data still 70707)
 # Racials of records written before run.py recorded them (audit 2026-10-18 rows 79 and 96): the final 2ce8265 races of 2026-10-15/16 ran
 # race-neutral (WOW_FOREVER_NO_RACIALS=1, HANDOFF.md), the b7083fa confirm runs of 2026-10-16/17 did not (sweep_70425.sh).
 RACIALS_BY_COMMIT = {"2ce8265": ("2026-10-15", "off"), "b7083fa": ("2026-10-16", "on")}

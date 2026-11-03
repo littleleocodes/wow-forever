@@ -176,13 +176,25 @@ def sim_presets(repo, entry):
     if not path.exists():
         return []
     s = path.read_text(encoding="utf-8")
-    imports = {m.group(1): path.parent / m.group(2) for m in re.finditer(r"import\s+(\w+)\s+from\s+'(\.[^']+\.json)'", s)}
+    imports = {m.group(1): path.parent / m.group(2) for m in re.finditer(r"import\s+(\w+)\s+from\s+'(\.[^']+\.(?:json|siml))'", s)}
+    # SIML presets (2026-11-03, wowsims/forever #812: the paladin first): a build or defaults file holds `talents "..."`;
+    # `const Defaults = PresetUtils.specDefaultsFromSettings(Spec.X, DefaultsJson)` makes `Defaults.talents` that file's string
+    consts = {m.group(1): m.group(2) for m in re.finditer(r"const\s+(\w+)\s*=\s*PresetUtils\.specDefaultsFromSettings\(\s*[\w.]+\s*,\s*(\w+)\s*\)", s)}
+
+    def siml_talents(f):
+        m = re.search(r'^talents\s+"([^"]*)"', f.read_text(encoding="utf-8"), re.M) if f.exists() else None
+        return m.group(1) if m else None
 
     def value(expr):
         expr = expr.strip()
         m = re.fullmatch(r"'([^']*)'", expr)
         if m:
             return m.group(1)
+        m = re.fullmatch(r"(\w+)(?:\.talents)?", expr)
+        if m and consts.get(m.group(1)) in imports:
+            return siml_talents(imports[consts[m.group(1)]])
+        if m and m.group(1) in imports and imports[m.group(1)].suffix == ".siml":
+            return siml_talents(imports[m.group(1)])
         m = re.fullmatch(r"(\w+)(?:\.player\.talentsString)?", expr)
         if m and m.group(1) in imports and imports[m.group(1)].exists():
             return (json.load(open(imports[m.group(1)], encoding="utf-8")).get("player") or {}).get("talentsString")
@@ -191,7 +203,10 @@ def sim_presets(repo, entry):
     pats = [r"makePresetTalents\(\s*'([^']+)'\s*,\s*SavedTalents\.create\(\{\s*talentsString:\s*([^}]+?)\s*,?\s*\}\)",
             r"\btalentsOf\(\s*'([^']+)'\s*,\s*(\w+)\s*\)",
             r"\btalents\(\s*'([^']+)'\s*,\s*('[^']*')\s*\)",
-            r"\{\s*name:\s*'([^']+)'\s*,\s*data:\s*SavedTalents\.create\(\{\s*talentsString:\s*([^}]+?)\s*,?\s*\}\)"]
+            r"\{\s*name:\s*'([^']+)'\s*,\s*data:\s*SavedTalents\.create\(\{\s*talentsString:\s*([^}]+?)\s*,?\s*\}\)",
+            r"makePresetTalents\(\s*'([^']+)'\s*,\s*(\w+\.talents)\s*\)",   # SIML: a defaults file's talents
+            r"\bbuild\(\s*'([^']+)'\s*,\s*(\w+)\s*[,)]",   # SIML: a local build(name, <siml import>, ...) helper
+            r"makePresetBuildFromSiml\(\s*'([^']+)'\s*,\s*[\w.]+\s*,\s*(\w+)\s*[,)]"]
     for pat in pats:
         for m in re.finditer(pat, s, re.S):
             v = value(m.group(2))

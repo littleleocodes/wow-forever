@@ -53,6 +53,7 @@ import (
 	"github.com/wowsims/forever/sim"
 	"github.com/wowsims/forever/sim/core"
 	"github.com/wowsims/forever/sim/core/proto"
+	"github.com/wowsims/forever/sim/siml"
 	"google.golang.org/protobuf/encoding/protojson"
 	gproto "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
@@ -261,7 +262,28 @@ func setField(m gproto.Message, name string, raw json.RawMessage) bool {
 func main() {
 	cfgPath := flag.String("config", "bench.json", "bench config (see the file header)")
 	root := flag.String("root", ".", "simulator repository root that gear/apl paths are relative to")
+	simlPath := flag.String("siml2json", "", "print a .siml file (2026-11-03: the simulator's presets moved to SIML, #812) as the JSON of "+
+		"its message: an x.apl.siml as an APLRotation, an x.gear.siml as an EquipmentSpec, any other as IndividualSimSettings")
 	flag.Parse()
+	if *simlPath != "" {
+		f, err := siml.ReadFile(*simlPath)
+		if err != nil {
+			die("cannot read %s: %v", *simlPath, err)
+		}
+		var m gproto.Message = f.Settings
+		switch {
+		case strings.HasSuffix(*simlPath, ".apl.siml"):
+			m = f.Rotation()
+		case strings.HasSuffix(*simlPath, ".gear.siml"):
+			m = f.Settings.GetPlayer().GetEquipment()
+		}
+		out, err := protojson.MarshalOptions{Multiline: true, Indent: "  "}.Marshal(m)
+		if err != nil {
+			die("cannot print %s: %v", *simlPath, err)
+		}
+		fmt.Println(string(out))
+		return
+	}
 	raw, err := os.ReadFile(*cfgPath)
 	if err != nil {
 		die("cannot read config: %v", err)

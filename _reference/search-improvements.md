@@ -121,6 +121,10 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0b. **The hunter's simulator presets are not read (found 2026-11-03)**: `run.sim_presets` finds no preset in `ui/specs/hunter/dps/presets.ts`
+   (bac92dbd5 and later: one `Builds` list of preset builds, `Builds.map(build => build.talents!)`), so no hunter entry races or seeds from
+   the simulator's builds. Add that form (and the SIML builds the paladin moved to with #812, read since 2026-11-03).
+
 0. **The any-split leveling search loses to its own one-tree search (2026-11-03, patch_1103.sh)**: the shaman's fresh open search in the
    Elemental rotation (warm start, 70753) picked the 26/22/3 hybrid at 29.48 s per kill (20-60); the one-tree Elemental search run right
    after (`fl_open_search.py shaman --tree Elemental`) found 32/11/8 at 28.99 s, 1.7% faster, a build the any-split space contains. Same
