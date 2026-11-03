@@ -38,6 +38,7 @@ sys.path[:0] = [str(HERE / "scorer"), str(HERE)]
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 import sim_info as SI  # noqa: E402  (which simulator a record ran on)
+import data_build as DB  # noqa: E402  (the talent data's capture date: older one-tree records are skipped)
 import spec_builds as SB  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 from filelock import locked  # noqa: E402
@@ -548,6 +549,12 @@ def main():
         if a.only != "raid":   # the one-tree searches (fl_open_search.py --tree, 2026-10-25): a pure spec whose rotation a hybrid won
             for pf in sorted(x for x in (OPEN / "pure").glob(f"{cls}-*.json") if not x.stem.endswith((".pre-mutilate", ".pre-fix", ".prev"))):
                 pr = load_record(pf)
+                if pr and str(pr.get("date", "")) < DB.CAPTURED:
+                    # 2026-11-03: a one-tree record from before the current data (the shaman's 10-26 Elemental record wrote a build
+                    # holding Lava Burst after the 11-02 patch): re-run fl_open_search.py --tree first
+                    print(f"  {pf.stem}: one-tree record of {pr.get('date')}, before the data of {DB.CAPTURED} ({DB.BUILD}): skipped "
+                          f"(fl_open_search.py {cls} --tree {pr.get('tree')} --fresh)")
+                    continue
                 if pr and (complete(pr, "rotations") or (a.partial and pr.get("rotations"))):
                     # only the record's own tree (2026-10-26 audit: the Survival search's finalists race let in the 17/10/24 Beast-Survival
                     # known positive, which won and was filed under the hybrid)
