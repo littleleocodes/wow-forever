@@ -1,6 +1,6 @@
-# Druid — WoW: Forever talent trees (beta client 1.60.1.70707)
+# Druid — WoW: Forever talent trees (beta client 1.60.1.70753)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-31. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70753, captured 2026-11-03. World of Warcraft: Forever beta client, build 1.60.1.70753: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -63,7 +63,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
+| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
 
 **Removed from Classic Balance:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity
 
@@ -114,7 +114,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Rend and Tear** | 5 | Predatory Strikes (3) | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 2%. | Increases damage done by your melee abilities on Bleeding targets by 10%. |
+| **Rend and Tear** | 5 | Predatory Strikes (3) | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 3%. | Increases damage done by your melee abilities on Bleeding targets by 15%. |
 | **Natural Reaction** | 5 | — | **NEW** | Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge. | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
 
 ### Tier 7 — requires 30 points in Feral Combat
@@ -217,16 +217,16 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Moonfury** (tooltip changed)
   - Classic: Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%. .
   - Forever: Increases the damage done by your Arcane and Nature spells by 2%.
-- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 0 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 
 ### Feral Combat
 
 - **Ferocity** (tooltip changed)
   - Classic: Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
   - Forever: Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
-- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
+- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.
   - Forever: Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.
 - **Feral Instinct** (max rank 5 → 3, tooltip changed, was Feral Combat row 2, col 1)
@@ -241,40 +241,40 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Savage Fury** (tooltip changed, was Feral Combat row 5, col 1)
   - Classic: Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%.
   - Forever: Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.
-- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.
   - Forever: Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy.
 - **Sharpened Claws** (max rank 3 → 2, tooltip changed, was Feral Combat row 3, col 3)
   - Classic: Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%.
   - Forever: Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.
-- **Predatory Strikes** (tooltip changed, was Feral Combat row 4, col 2, moved in build 1.60.1.70707: was row 4, col 3)
+- **Predatory Strikes** (tooltip changed, was Feral Combat row 4, col 2, moved in build 1.60.1.70753: was row 4, col 3)
   - Classic: Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level.
   - Forever: Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level.
 - **Blood Frenzy** (tooltip changed, was Feral Combat row 4, col 3)
   - Classic: Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.
   - Forever: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
-- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 0 yards by 3%.
   - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%.
 
 ### Restoration
 
-- **Nature's Focus** (tooltip changed, was Restoration row 2, col 2, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
+- **Nature's Focus** (tooltip changed, was Restoration row 2, col 2, tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.
   - Forever: Gives your Arcane and Nature spells a 14% chance to not lose casting time when you take damage.
 - **Heart of the Wild** (tooltip changed, was Feral Combat row 6, col 2)
   - Classic: Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.
   - Forever: Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%.
-- **Reflection** (tooltip changed, moved in build 1.60.1.70707: was row 3, col 2)
+- **Reflection** (tooltip changed, moved in build 1.60.1.70753: was row 3, col 2)
   - Classic: Allows 5% of your Mana regeneration to continue while casting.
   - Forever: Allows 17% of your Mana regeneration to continue while casting.
-- **Subtlety** (max rank 5 → 3, tooltip changed, was Restoration row 3, col 4, moved in build 1.60.1.70707: was row 2, col 2)
+- **Subtlety** (max rank 5 → 3, tooltip changed, was Restoration row 3, col 4, moved in build 1.60.1.70753: was row 2, col 2)
   - Classic: Reduces the threat generated by your Healing spells by 4%.
   - Forever: Reduces the threat generated by your Nature and Arcane spells by 10%.
 - **Gift of Nature** (tooltip changed, was Restoration row 5, col 3)
   - Classic: Increases the effect of all healing spells by 2%.
   - Forever: Increases the effect of all your healing spells by 2%.
-- **Swiftmend** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Swiftmend** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them. an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.
   - Forever: Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
 - **Improved Tranquility** (tooltip changed)

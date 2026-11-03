@@ -212,6 +212,49 @@ if TIGERS_FURY and "Tiger's Fury" not in BOOK:
     _tf.interrupt = parse_interrupt(_tf.text)
     BOOK["Tiger's Fury"] = [_tf]
 
+# Blizzard's 2 Nov notes (client 70753): "Rip / Rake / Ferocious Bite / Pounce: Base points and attack power scaling increased by about
+# 25%", "Starfire: Base damage points increased by about 40%". The client's tooltips (talentsforever's 70753 export, 2026-11-03) still
+# carry the numbers they have had since 70291 (foreverchanges.pro lists them as what these spells "dealt"; the raid simulator's spell
+# store the same), so the change is server-side: scale every rank by the notes' factor while the top rank still reads the old number
+# (OLD_TOP). A data refresh that brings the new tooltips switches the scaling off by itself. "About": the factors are the notes' round
+# numbers, an assumption until in-game numbers or client data confirm them.
+BASE_70753 = {"Rip": 1.25, "Rake": 1.25, "Ferocious Bite": 1.25, "Pounce": 1.25, "Starfire": 1.40}
+OLD_TOP = {"Rip": (243.0, 243.0), "Ferocious Bite": (199.0, 259.0), "Rake": (61.0, 61.0), "Pounce": (150.0, 150.0), "Starfire": (350.0, 412.0)}
+# Attack power shares (never in a tooltip): the raid simulator's spell store before 70753 (Rip 1% a tick a combo point over 6 ticks, at
+# most 4 points; Ferocious Bite 3% a combo point; Rake 5.5% a tick over 3 ticks, which this lab lacked until 2026-11-03; Pounce none), times
+# the notes' 1.25.
+RIP_AP_PER_CP = 0.06 * 1.25
+BITE_AP_PER_CP = 0.03 * 1.25
+RAKE_AP_PER_TICK = 0.055 * 1.25
+# Poised (baseline passive from 32, client 70753): "When you are not in combat and have your maximum Energy, you will gain Poised. Poised
+# reduces the Energy cost of your next Energy ability by 10." The druid starts a fight in Cat Form at full energy after resting: the opener
+# costs 10 less (final_cost).
+POISED_CUT = 10.0
+
+
+def _apply_70753(book):
+    for name, f in BASE_70753.items():
+        ranks = book.get(name) or []
+        if not ranks:
+            continue
+        top = ranks[-1]
+        old = OLD_TOP[name]
+        cur = getattr(top, "one", None) if name in ("Rip", "Ferocious Bite") else ((top.dot, top.dot) if name == "Pounce" else (top.dmg_min, top.dmg_max))
+        if cur is None or (round(cur[0]), round(cur[1])) != (round(old[0]), round(old[1])):
+            continue   # the tooltip moved: the data carries the change (or another one): no scaling
+        for r in ranks:
+            r.dmg_min, r.dmg_max, r.dot = r.dmg_min * f, r.dmg_max * f, r.dot * f
+            if getattr(r, "one", None):
+                r.one = (r.one[0] * f, r.one[1] * f)
+            if getattr(r, "five", None):
+                r.five = (r.five[0] * f, r.five[1] * f)
+            r.scaled_70753 = f
+    for r in book.get("Rake") or []:
+        r.dot_coef = RAKE_AP_PER_TICK   # engine.apply_periodic: dot_coef x attack power x ticks for a melee dot
+
+
+_apply_70753(BOOK)
+
 # Rip before Ferocious Bite (levels 20-31): the only finisher, so it goes on at this many combo points while the mob has more than
 # this share of its health left. The old rule (5 points above half health) never fired at 20 or 30. 2026-10-09 smoke test (1,500
 # fights, seed 1, tuned drink rule): 2 points above 40% was the best of 1-5 points and 0-60% health, and against the old rule 3% faster
@@ -265,7 +308,7 @@ MECHANICS = {
                       "SHIFTING_POWER_ABOVE of mana (default never: solo its mana costs more drinking time than the energy saves) and "
                       "keeping the mana for an emergency heal and the way back (70170 put it where King of the Jungle was)",
     "Natural Reaction": "+1%/rank dodge",
-    "Rend and Tear": "+2%/rank ability damage on a bleeding mob (Rake, Rip, Pounce)",
+    "Rend and Tear": "+3%/rank ability damage on a bleeding mob (Rake, Rip, Pounce; the tooltip's number, 3% a rank since client 70753)",
     "Genesis": "+1%/rank periodic damage (Rake, Rip, Pounce, Moonfire) and healing",
     "Nature's Majesty": "+2%/rank crit with spells and melee",
     "Nature's Reach": "+2%/rank hit",
@@ -551,6 +594,8 @@ class DruidModule(BaseModule):
         if fight.p.buff("Clearcasting", fight.t) and spell.kind in ("melee", "heal", "spell") and cost > 0 and spell.name != "Wrath":
             del fight.p.buffs["Clearcasting"]
             return 0.0
+        if spell.resource == "energy" and cost > 0 and fight.p.buffs.pop("Poised", None) is not None:
+            return max(0.0, cost - POISED_CUT)
         return cost
 
     def cast_time(self, spell):
@@ -602,7 +647,7 @@ class DruidModule(BaseModule):
             cp = max(1, f.last_combo)
             lo1, hi1 = spell.one
             lo5, hi5 = spell.five
-            avg = (lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4 + 0.03 * cp * f.p.attack_power + getattr(spell, "extra_energy", 0.0) * getattr(f, "_bite_extra", 0.0)
+            avg = (lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4 + BITE_AP_PER_CP * cp * f.p.attack_power + getattr(spell, "extra_energy", 0.0) * getattr(f, "_bite_extra", 0.0)
             m *= avg / ((lo5 + hi5) / 2)
         return m
 
@@ -722,6 +767,9 @@ class DruidModule(BaseModule):
         if not self.in_cat:
             if not self.shift_in(fight, p, t):
                 self.in_cat = False
+        p.buffs.pop("Poised", None)
+        if self.in_cat and self.form == "cat" and self.book.get("Poised") is not None and p.energy >= p.energy_max > 0:
+            p.buffs["Poised"] = {"until": t + 3600.0}   # rested to full energy out of combat: the opener costs 10 less
         if self.in_cat and self.form == "cat":
             m.dist = MELEE_RANGE          # prowled up behind the mob
             m.in_melee = True
@@ -753,8 +801,9 @@ class DruidModule(BaseModule):
             cp = max(1, fight.last_combo)
             lo1, _ = spell.one
             lo5, _ = spell.five
-            # attack power: 1% a combo point a tick over 6 ticks, no more above 4 points (Classic's rule, as the raid simulator has it)
-            total = (lo1 + (lo5 - lo1) * (cp - 1) / 4 + 0.06 * min(cp, 4) * p.attack_power) * self.periodic_multiplier(spell)
+            # attack power: 1% a combo point a tick over 6 ticks, no more above 4 points (Classic's rule, as the raid simulator has it), x1.25
+            # since the 2 Nov notes (RIP_AP_PER_CP)
+            total = (lo1 + (lo5 - lo1) * (cp - 1) / 4 + RIP_AP_PER_CP * min(cp, 4) * p.attack_power) * self.periodic_multiplier(spell)
             fight.refresh_dot("Rip", total, 6, spell.dot_dur / 6.0, p.melee_crit, 2.0)
 
     def on_hit(self, fight, spell, amount, crit, frozen):

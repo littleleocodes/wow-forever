@@ -2,16 +2,8 @@
  "veto": {
   "Serpent Sting": {
    "off": true
-  },
-  "Immolation Trap": {
-   "min_mana": 0.5
-  },
-  "Strider Kick": {
-   "min_hp": 0.35,
-   "off": true
   }
  },
- "drink_below": 0.6,
  "class": "hunter",
  "spec": "melee-dps",
  "build": "leveling-melee",
@@ -22,119 +14,61 @@
   50,
   60
  ],
- "date": "2026-10-24",
+ "date": "2026-11-02",
  "signature": {
-  "required": [
-   "Raptor Strike"
-  ],
-  "build_spec": "Survival",
+  "required": [],
+  "build_spec": "Hybrid Beast Mastery/Survival",
   "dropped_saved_rules": [],
-  "core_share_before": 0.3802132474721401,
-  "core_share_after": 0.5061835334228724,
+  "core_share_before": 0.6705170669684807,
+  "core_share_after": 0.7790856060164738,
   "min_share": 0.5,
-  "floor_reached": true
+  "floor_reached": null
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "phase": "floor",
    "change": "never cast Serpent Sting",
    "rule": [
     "off",
     "Serpent Sting",
     true
    ],
-   "share_seed1": 0.4458,
-   "share_seed2": 0.4518,
-   "seconds_seed2": 23.57,
-   "seconds_before_seed2": 24.21
-  },
-  {
-   "round": 2,
-   "phase": "floor",
-   "change": "Immolation Trap only above 50% mana",
-   "rule": [
-    "min_mana",
-    "Immolation Trap",
-    0.5
-   ],
-   "share_seed1": 0.4583,
-   "share_seed2": 0.4652,
-   "seconds_seed2": 23.75,
-   "seconds_before_seed2": 23.57
-  },
-  {
-   "round": 3,
-   "phase": "floor",
-   "change": "Strider Kick only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Strider Kick",
-    0.35
-   ],
-   "share_seed1": 0.4735,
-   "share_seed2": 0.4788,
-   "seconds_seed2": 23.96,
-   "seconds_before_seed2": 23.75
-  },
-  {
-   "round": 4,
-   "phase": "floor",
-   "change": "never cast Strider Kick",
-   "rule": [
-    "off",
-    "Strider Kick",
-    true
-   ],
-   "share_seed1": 0.5048,
-   "share_seed2": 0.5043,
-   "seconds_seed2": 24.4,
-   "seconds_before_seed2": 23.96
-  },
-  {
-   "round": 1,
-   "change": "drink below 60% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.6
-   ],
-   "gain_seed1": 0.0056021634060609005,
-   "gain_seed2": 0.008984912626875174
+   "gain_seed1": 0.020021265485806516,
+   "gain_seed2": 0.024740320705899266
   }
  ],
- "weighted_before": 24.18499040767148,
- "weighted_after": 24.135735588912272,
+ "weighted_before": 22.916614087878187,
+ "weighted_after": 22.37211056372643,
  "per_level": {
   "20": {
-   "before": 16.85940313928401,
-   "after": 16.487166666590756,
+   "before": 14.316699999948915,
+   "after": 14.482899999946948,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.000016523588677,
-   "after": 19.97902235624673,
+   "before": 17.33042180532887,
+   "after": 16.684599999921726,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 23.889159383964813,
-   "after": 23.413186498119458,
+   "before": 22.56611704338211,
+   "after": 21.110526337503632,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 25.28467282193385,
-   "after": 25.43363074452526,
+   "before": 24.697050334188535,
+   "after": 23.719290078131127,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 27.00015844309451,
-   "after": 28.163735276869936,
+   "before": 27.326316082868033,
+   "after": 27.564009255699897,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

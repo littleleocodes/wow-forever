@@ -250,8 +250,8 @@ MECHANICS = {
     "Pursuit of Justice": "travel speed only",
     "Eye for an Eye": "10%/rank of crits taken dealt back",
     "Sacred Arbiter": "+20% Holy Strike",
-    "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning; not Holy Strike, seals or judgements)",
-    "Vengeance": "+1%/rank Physical and Holy damage per stack after any non-periodic crit (melee, seal, judgement, spell; 3 stacks, 30 s)",
+    "Two-Handed Weapon Specialization": "+2%/rank Physical and Holy damage with a two-hander (white swings, Reckoning, Holy Strike, seals, judgements, Holy spells; client 70753)",
+    "Vengeance": "+1%/rank Physical and Holy damage per stack after any non-periodic crit (melee, seal, judgement, spell; 5 stacks since client 70753, 30 s)",
     "Repentance": "Humanoids only: not used",
     "Champion of the Light": "+12%/rank of Intellect as spell damage (seals, judgements, Consecration, Holy Shock; not healing), -0.2 s/rank Hammer of Wrath cast",
     "Unsealed Wrath": "not modelled: stored seal copies pay only when a different seal lands (the lab keeps one seal up)",
@@ -325,7 +325,7 @@ MECHANICS_ALT = dict(MECHANICS, **{
                  "all released on the next auto attack (client 70425, notes of 16 Oct)",
     "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
     "Holy Shield": "+30% block (the 70291 tooltip) for 10 s or 4 blocks, Holy damage per block, recast when down",
-    "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning)",
+    "Two-Handed Weapon Specialization": "+2%/rank Physical and Holy damage with a two-hander (client 70753)",
     "Shieldsworn": "-4 s Holy Strike cooldown with a shield (its shield strike's Holy Shield charges, Shield Specialization roll and spell block not modelled)",
 })
 
@@ -458,9 +458,10 @@ class PaladinModule(BaseModule):
 
     # ------------------------------------------------------------ shared mechanics (both paths)
     def _weapon_spec(self, kind):
-        """Two- or One-Handed Weapon Specialization: the client rows (20111 / 20196, A_MOD_DAMAGE_PERCENT_DONE, Misc 1) are Physical
-        damage only: white swings and Reckoning's extra attacks, not Holy Strike (a Holy-school strike), seals, judgements or spells (audit
-        2026-10-18 #5)."""
+        """Two-Handed Weapon Specialization: Physical and Holy damage since client 70753 (Blizzard's 2 Nov notes: "changed to increase both
+        Holy and Physical damage by 2/4/6%"; the tooltip says so): white swings, Reckoning, Holy Strike, seals, judgements and Holy spells
+        while a two-hander is equipped (damage_multiplier). Until 2026-11-03 Physical only (the client rows 20111, audit 2026-10-18 #5).
+        Its threat reduction (7/14/20%) is not modelled: no solo fight here turns on the player's threat."""
         return self.tv("Two-Handed Weapon Specialization", 0) / 100 if kind == "2h" else 0.0   # One-Handed: removed by hotfix 113554
 
     def _holy_marks(self, spell):
@@ -558,12 +559,12 @@ class PaladinModule(BaseModule):
     def damage_multiplier(self, spell, frozen):
         if self.path != "ret":
             return self._damage_multiplier_alt(spell)
-        m = (1 + self._weapon_spec("2h")) if spell.school == "physical" else 1.0
+        m = (1 + self._weapon_spec("2h")) if spell.school in ("physical", "holy") else 1.0
         f = self._fight
         if f:
             v = f.p.buff("Vengeance", f.t)
-            if v:
-                m *= 1 + 0.01 * self.rank("Vengeance") * v["stacks"]
+            if v and spell.school in ("physical", "holy"):   # "your Physical and Holy damage"
+                m *= 1 + self.tv("Vengeance", 0) / 100 * v["stacks"]   # the tooltip's 1/2/3% a stack
         if spell.name in SEALS or spell.name == "Judgement":
             m *= 1 + self.tv("Improved Seals", 0) / 100
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
@@ -586,7 +587,8 @@ class PaladinModule(BaseModule):
         if self.rank("Vengeance"):
             p, t = fight.p, fight.t
             v = p.buffs.get("Vengeance")
-            stacks = min(3, (v["stacks"] if v and v["until"] > t else 0) + 1)
+            # stacks up to the tooltip's number (5 since client 70753, Blizzard's 2 Nov notes; 3 before)
+            stacks = min(int(self.tv("Vengeance", 2)) or 5, (v["stacks"] if v and v["until"] > t else 0) + 1)
             p.buffs["Vengeance"] = {"until": t + 30.0, "stacks": stacks}
 
     def _reckoning_gain(self, fight, chance):
@@ -905,12 +907,12 @@ class PaladinModule(BaseModule):
         return b
 
     def _damage_multiplier_alt(self, spell):
-        m = (1 + self._weapon_spec(self.weapon_kind)) if spell.school == "physical" else 1.0
+        m = (1 + self._weapon_spec(self.weapon_kind)) if spell.school in ("physical", "holy") else 1.0
         f = self._fight
         if f:
             v = f.p.buff("Vengeance", f.t)
-            if v:
-                m *= 1 + 0.01 * self.rank("Vengeance") * v["stacks"]
+            if v and spell.school in ("physical", "holy"):   # "your Physical and Holy damage"
+                m *= 1 + self.tv("Vengeance", 0) / 100 * v["stacks"]   # the tooltip's 1/2/3% a stack
         if spell.name in SEALS or spell.name == "Judgement":
             m *= 1 + self.tv("Improved Seals", 0) / 100
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):

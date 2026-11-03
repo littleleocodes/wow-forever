@@ -7,7 +7,7 @@
 | **Build** | 2/31/18 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -74,14 +74,14 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 728 | +0.0% | 840 | -0.6% | 0 s |
-| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 728 | -0.1% | 845 | +0.0% | 0 s |
-| 3 | *Demo (Shadow Brand)* | community simulator | - | 728 | -0.1% | 845 | +0.0% | 0 s |
-| 4 | *Demo (Fire Brand)* | community simulator | - | 710 | -2.5% | 808 | -4.4% | 0 s |
+| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 728 | +0.0% | 839 | -0.4% | 0 s |
+| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 728 | -0.1% | 843 | +0.0% | 0 s |
+| 3 | *Demo (Shadow Brand)* | community simulator | - | 728 | -0.1% | 843 | +0.0% | 0 s |
+| 4 | *Demo (Fire Brand)* | community simulator | - | 710 | -2.5% | 806 | -4.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -1,13 +1,13 @@
-# Assassination — Seal Fate daggers (raid) — 30/19/2
+# Assassination — Seal Fate daggers (raid) — 28/21/2
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 30/19/2 (Assassination / Combat / Subtlety) |
+| **Build** | 28/21/2 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,38 +15,41 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Point allocation
 
-### Assassination (30)
+### Assassination (28)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
-| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
-| **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
-| **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
-| **Lethality** | 3/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%. |
-| **Vile Poisons** | 2/5 | moved | Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects. |
-| **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Seal Fate** | 5/5 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
+| **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
+| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
+| **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
+| **Vigor** | 1/2 | changed | Increases your maximum Energy by 5. |
+| **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 | **Improved Poisons** | 5/5 | changed | Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. |
+| **Vile Poisons** | 2/5 | moved | Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects. |
+| **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
+| **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 
-### Combat (19)
+### Combat (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
+| **Coup de Grace** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. |
 | **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
-| **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
-| **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Dual Wield Specialization** | 3/5 | changed | Increases the damage done by your off-hand weapon by 15%. |
-| **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
 | **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
+| **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
+| **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
+| **Aggression** | 2/3 | changed | Increases the damage of Sinister Strike and Eviscerate by 10%. |
+| **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 15. |
+| **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
+| **Dual Wield Specialization** | 1/2 | changed | Increases the damage done by your off-hand weapon by 25%. |
 
 ### Subtlety (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
+| **Opportunity** | 2/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 8%. |
 
 ## Core talents (priority order)
 
@@ -70,15 +73,15 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 353 | +0.0% | 621 | -1.5% | 0 s |
-| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 351 | -0.6% | 608 | -3.6% | 0 s |
-| 3 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 338 | -4.4% | 630 | -0.1% | 0 s |
-| 4 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/21/0 | 337 | -4.5% | 631 | +0.0% | 0 s |
-| 5 | *Asn Muti* | community simulator | - | 328 | -7.2% | 616 | -2.3% | 0 s |
+| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 353 | +0.0% | 609 | -1.5% | 0 s |
+| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 351 | -0.6% | 596 | -3.7% | 0 s |
+| 3 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 338 | -4.4% | 619 | -0.0% | 0 s |
+| 4 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/21/0 | 337 | -4.5% | 619 | +0.0% | 0 s |
+| 5 | *Asn Muti* | community simulator | - | 328 | -7.2% | 605 | -2.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -132,6 +135,7 @@ Damage by ability:
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed.
 - 2026-09-30: renamed from "Assassination/Combat — Seal Fate daggers (raid)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/19/2 -> 28/21/2; Lethality 3 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 3 -> 2 (rank cap); +1 Weapon Expertise (tier gating for Dual Wield Specialization); +1 Weapon Expertise (tier gating for Dual Wield Specialization); +1 Aggression (tier gating for Dual Wield Specialization); +1 Aggression (tier gating for Dual Wield Specialization); +1 Vigor (tier gating for Seal Fate); -1 Dual Wield Specialization (over 51) (refill: the combat-daggers-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

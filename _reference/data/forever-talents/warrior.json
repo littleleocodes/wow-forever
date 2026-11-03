@@ -1,15 +1,15 @@
 {
   "slug": "warrior",
   "name": "Warrior",
-  "build": "1.60.1.70707",
-  "captured": "2026-10-31",
+  "build": "1.60.1.70753",
+  "captured": "2026-11-03",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70753: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-30",
-      "build": "1.60.1.70707",
+      "generated": "2026-11-03",
+      "build": "1.60.1.70753",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
@@ -24,18 +24,13 @@
       "url": "https://warcraftforever.games/talents/warrior",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
-    },
-    "simulator_trees": {
-      "path": "wowsims/forever ui/sim/talents/trees",
-      "build": "1.60.1.70707",
-      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
   "removed_since_demo": [
     {
       "tree": "Fury",
       "name": "Boundless Rage",
-      "build": "1.60.1.70707",
+      "build": "1.60.1.70753",
       "row": 3,
       "col": 4,
       "maxRank": 3,
@@ -44,7 +39,7 @@
     {
       "tree": "Fury",
       "name": "Precision",
-      "build": "1.60.1.70707",
+      "build": "1.60.1.70753",
       "row": 5,
       "col": 1,
       "maxRank": 3,
@@ -53,7 +48,7 @@
     {
       "tree": "Protection",
       "name": "Toughness",
-      "build": "1.60.1.70707",
+      "build": "1.60.1.70753",
       "row": 2,
       "col": 3,
       "maxRank": 5,
@@ -65,16 +60,19 @@
       "tree": "Fury",
       "from": "Iron Will",
       "to": "Lingering Rage",
-      "build": "1.60.1.70707"
+      "build": "1.60.1.70753"
     },
     {
       "tree": "Fury",
       "from": "Improved Cleave",
       "to": "Furious Precision",
-      "build": "1.60.1.70707"
+      "build": "1.60.1.70753"
     }
   ],
-  "merge_notes": [],
+  "merge_notes": [
+    "Arms: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Bloodthrill, Improved Tactical Mastery); the export's positions, rank caps and prerequisites used for this tree",
+    "Fury: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: Improved Whirlwind, Reckless Swings; moved or re-capped: Enrage, Flurry, Gore Drinker); the export's positions, rank caps and prerequisites used for this tree"
+  ],
   "trees": [
     {
       "id": "arms",
@@ -173,17 +171,26 @@
           "col": 1,
           "name": "Improved Tactical Mastery",
           "icon": "spell_nature_enchantarmor",
-          "maxRank": 5,
+          "maxRank": 3,
           "ranks": [
+            "Tactical Mastery lets you retain up to an additional 5 Rage when you change stances.",
+            "Tactical Mastery lets you retain up to an additional 10 Rage when you change stances.",
+            "Tactical Mastery lets you retain up to an additional 15 Rage when you change stances."
+          ],
+          "status": "new",
+          "evidence": "warrior/05-warrior-arms-improved-tactical-mastery.png",
+          "ranks_prev": [
             "Tactical Mastery lets you retain up to an additional 3 Rage when you change stances.",
             "Tactical Mastery lets you retain up to an additional 6 Rage when you change stances.",
             "Tactical Mastery lets you retain up to an additional 9 Rage when you change stances.",
             "Tactical Mastery lets you retain up to an additional 12 Rage when you change stances.",
             "Tactical Mastery lets you retain up to an additional 15 Rage when you change stances."
           ],
-          "status": "new",
-          "evidence": "warrior/05-warrior-arms-improved-tactical-mastery.png",
-          "diff": []
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "max rank 5 -> 3 in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+          ]
         },
         {
           "id": "arms/improved-overpower",
@@ -222,7 +229,7 @@
           ],
           "prereq": {
             "id": "arms/improved-tactical-mastery",
-            "rank": 5
+            "rank": 3
           }
         },
         {
@@ -269,7 +276,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ]
         },
         {
@@ -280,9 +287,9 @@
           "icon": "inv_axe_09",
           "maxRank": 3,
           "ranks": [
-            "Increases the damage you deal with two-handed melee weapons by 1%.",
             "Increases the damage you deal with two-handed melee weapons by 2%.",
-            "Increases the damage you deal with two-handed melee weapons by 3%."
+            "Increases the damage you deal with two-handed melee weapons by 4%.",
+            "Increases the damage you deal with two-handed melee weapons by 6%."
           ],
           "status": "changed",
           "classic": [
@@ -293,8 +300,15 @@
             "Increases the damage you deal with two-handed melee weapons by 5%."
           ],
           "evidence": "warrior/10-warrior-arms-two-handed-weapon-specialization.png",
+          "ranks_prev": [
+            "Increases the damage you deal with two-handed melee weapons by 1%.",
+            "Increases the damage you deal with two-handed melee weapons by 2%.",
+            "Increases the damage you deal with two-handed melee weapons by 3%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "max rank 5 → 3"
+            "max rank 5 → 3",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -328,12 +342,9 @@
           "col": 0,
           "name": "Bloodthrill",
           "icon": "inv_sword_01",
-          "maxRank": 5,
+          "maxRank": 2,
           "ranks": [
-            "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 4% chance to allow an activation of Overpower.",
-            "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 8% chance to allow an activation of Overpower.",
-            "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 12% chance to allow an activation of Overpower.",
-            "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 16% chance to allow an activation of Overpower.",
+            "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 10% chance to allow an activation of Overpower.",
             "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower."
           ],
           "status": "new",
@@ -347,7 +358,8 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+            "max rank 5 -> 2 in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
           ]
         },
         {
@@ -390,8 +402,8 @@
           "icon": "ability_warrior_decisivestrike",
           "maxRank": 2,
           "ranks": [
-            "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.",
-            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
+            "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 2.5 sec.",
+            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 5.0 sec."
           ],
           "status": "changed",
           "classic": [
@@ -411,7 +423,7 @@
             "max rank 5 → 2",
             "tooltip changed",
             "was Fury row 5, col 1",
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
           ]
         },
         {
@@ -471,11 +483,11 @@
           "icon": "spell_nature_purge",
           "maxRank": 5,
           "ranks": [
-            "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.",
-            "Increases the area of effect of your Shouts by 20% and reduces their Rage cost by 10%.",
-            "Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%.",
-            "Increases the area of effect of your Shouts by 40% and reduces their Rage cost by 20%.",
-            "Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%."
+            "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. Also reduces the Rage cost of Piercing Howl by 5%.",
+            "Increases the area of effect of your Shouts by 20% and reduces their Rage cost by 10%. Also reduces the Rage cost of Piercing Howl by 10%.",
+            "Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%. Also reduces the Rage cost of Piercing Howl by 15%.",
+            "Increases the area of effect of your Shouts by 40% and reduces their Rage cost by 20%. Also reduces the Rage cost of Piercing Howl by 20%.",
+            "Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. Also reduces the Rage cost of Piercing Howl by 25%."
           ],
           "status": "changed",
           "classic": [
@@ -496,7 +508,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -560,8 +572,8 @@
           "diff": [
             "tooltip changed",
             "was Protection row 2, col 4",
-            "renamed from Iron Will in build 1.60.1.70707",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+            "renamed from Iron Will in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -597,7 +609,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -627,8 +639,8 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "renamed from Improved Cleave in build 1.60.1.70707",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "renamed from Improved Cleave in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -652,7 +664,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ]
         },
         {
@@ -682,7 +694,35 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+          ]
+        },
+        {
+          "id": "fury/enrage",
+          "row": 2,
+          "col": 3,
+          "name": "Enrage",
+          "icon": "spell_shadow_unholyfrenzy",
+          "maxRank": 5,
+          "ranks": [
+            "Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+            "Gives you a 30% chance to deal 4% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+            "Gives you a 30% chance to deal 6% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+            "Gives you a 30% chance to deal 8% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+            "Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack."
+          ],
+          "status": "changed",
+          "classic": [
+            "Gives you a 5% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
+            "Gives you a 10% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
+            "Gives you a 15% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
+            "Gives you a 20% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
+            "Gives you a 25% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
+          ],
+          "evidence": "warrior/28-warrior-fury-enrage.png",
+          "diff": [
+            "tooltip changed",
+            "moved in build 1.60.1.70753: was row 4, col 3"
           ]
         },
         {
@@ -718,7 +758,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -738,34 +778,22 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ]
         },
         {
-          "id": "fury/enrage",
+          "id": "fury/reckless-swings",
           "row": 3,
           "col": 2,
-          "name": "Enrage",
-          "icon": "spell_shadow_unholyfrenzy",
-          "maxRank": 5,
+          "name": "Reckless Swings",
+          "icon": "ability_warrior_endlessrage",
+          "maxRank": 1,
           "ranks": [
-            "Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack.",
-            "Gives you a 30% chance to deal 4% increased Physical damage for 12 sec after being the victim of any damaging attack.",
-            "Gives you a 30% chance to deal 6% increased Physical damage for 12 sec after being the victim of any damaging attack.",
-            "Gives you a 30% chance to deal 8% increased Physical damage for 12 sec after being the victim of any damaging attack.",
-            "Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack."
+            "Your next 4 melee attacks generate 5 additional Rage. Lasts 8 seconds."
           ],
-          "status": "changed",
-          "classic": [
-            "Gives you a 5% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
-            "Gives you a 10% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
-            "Gives you a 15% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
-            "Gives you a 20% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.",
-            "Gives you a 25% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
-          ],
-          "evidence": "warrior/28-warrior-fury-enrage.png",
+          "status": "new",
           "diff": [
-            "tooltip changed"
+            "added in build 1.60.1.70753"
           ]
         },
         {
@@ -809,7 +837,7 @@
           "evidence": "warrior/33-warrior-fury-improved-berserker-rage.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 6, col 1"
+            "moved in build 1.60.1.70753: was row 6, col 1"
           ]
         },
         {
@@ -832,6 +860,26 @@
           ]
         },
         {
+          "id": "fury/gore-drinker",
+          "row": 4,
+          "col": 2,
+          "name": "Gore Drinker",
+          "icon": "racial_troll_berserk",
+          "maxRank": 2,
+          "ranks": [
+            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
+            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
+          ],
+          "status": "new",
+          "diff": [
+            "added in build 1.60.1.70753"
+          ],
+          "prereq": {
+            "id": "fury/blood-craze",
+            "rank": 3
+          }
+        },
+        {
           "id": "fury/improved-intercept",
           "row": 4,
           "col": 3,
@@ -852,13 +900,11 @@
           "col": 1,
           "name": "Flurry",
           "icon": "ability_ghoulfrenzy",
-          "maxRank": 5,
+          "maxRank": 3,
           "ranks": [
-            "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
             "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your melee attack speed by 15% for your next 3 swings after dealing a melee critical strike.",
             "Increases your melee attack speed by 20% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike."
+            "Increases your melee attack speed by 30% for your next 3 swings after dealing a melee critical strike."
           ],
           "status": "changed",
           "classic": [
@@ -869,35 +915,37 @@
             "Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike."
           ],
           "evidence": "warrior/34-warrior-fury-flurry.png",
+          "ranks_prev": [
+            "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your melee attack speed by 15% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your melee attack speed by 20% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 6, col 3",
-            "prerequisite changed in build 1.60.1.70707: was enrage"
-          ],
-          "prereq": {
-            "id": "fury/death-wish",
-            "rank": 1
-          }
+            "moved in build 1.60.1.70753: was row 6, col 3",
+            "max rank 5 -> 3 in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)",
+            "prerequisite changed in build 1.60.1.70753: was enrage"
+          ]
         },
         {
-          "id": "fury/gore-drinker",
+          "id": "fury/improved-whirlwind",
           "row": 5,
           "col": 2,
-          "name": "Gore Drinker",
-          "icon": "racial_troll_berserk",
+          "name": "Improved Whirlwind",
+          "icon": "ability_warrior_bladestorm",
           "maxRank": 2,
           "ranks": [
-            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
-            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
+            "Reduces the cooldown of your Whirlwind ability by 1 second and increases the damage it deals to the closest enemy by 15%.",
+            "Reduces the cooldown of your Whirlwind ability by 2 seconds and increases the damage it deals to the closest enemy by 30%."
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70707"
-          ],
-          "prereq": {
-            "id": "fury/enrage",
-            "rank": 5
-          }
+            "added in build 1.60.1.70753"
+          ]
         },
         {
           "id": "fury/bloodthirst",
@@ -920,9 +968,12 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1)",
-            "prerequisite changed in build 1.60.1.70707: was death wish"
-          ]
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
+          ],
+          "prereq": {
+            "id": "fury/death-wish",
+            "rank": 1
+          }
         }
       ],
       "removed": [
@@ -955,7 +1006,7 @@
           "evidence": "warrior/38-warrior-protection-improved-bloodrage.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 2, col 1"
+            "moved in build 1.60.1.70753: was row 2, col 1"
           ]
         },
         {
@@ -1011,7 +1062,7 @@
           "diff": [
             "tooltip changed",
             "was Protection row 2, col 4",
-            "moved in build 1.60.1.70707: was row 2, col 2"
+            "moved in build 1.60.1.70753: was row 2, col 2"
           ]
         },
         {
@@ -1039,7 +1090,7 @@
           "evidence": "warrior/37-warrior-protection-anticipation.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 1, col 3"
+            "moved in build 1.60.1.70753: was row 1, col 3"
           ]
         },
         {
@@ -1063,7 +1114,7 @@
           "evidence": "warrior/43-warrior-protection-improved-revenge.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 3, col 3"
+            "moved in build 1.60.1.70753: was row 3, col 3"
           ]
         },
         {
@@ -1107,7 +1158,7 @@
           "evidence": "warrior/41-warrior-protection-last-stand.png",
           "diff": [
             "tooltip changed",
-            "prerequisite changed in build 1.60.1.70707: was improved bloodrage"
+            "prerequisite changed in build 1.60.1.70753: was improved bloodrage"
           ]
         },
         {
@@ -1150,7 +1201,7 @@
           "evidence": "warrior/46-warrior-protection-improved-disarm.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 4, col 2"
+            "moved in build 1.60.1.70753: was row 4, col 2"
           ]
         },
         {
@@ -1161,9 +1212,9 @@
           "icon": "ability_warrior_innerrage",
           "maxRank": 3,
           "ranks": [
-            "Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped.",
-            "Increases all threat generated in Defensive stance by an additional 10% while a shield is equipped.",
-            "Increases all threat generated in Defensive stance by an additional 15% while a shield is equipped."
+            "Increases all threat generated in Defensive stance by an additional 7% while a shield is equipped.",
+            "Increases all threat generated in Defensive stance by an additional 13% while a shield is equipped.",
+            "Increases all threat generated in Defensive stance by an additional 20% while a shield is equipped."
           ],
           "status": "changed",
           "classic": [
@@ -1174,9 +1225,16 @@
             "Increases the threat generated by your attacks by 15% while in Defensive Stance."
           ],
           "evidence": "warrior/44-warrior-protection-defiance.png",
+          "ranks_prev": [
+            "Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped.",
+            "Increases all threat generated in Defensive stance by an additional 10% while a shield is equipped.",
+            "Increases all threat generated in Defensive stance by an additional 15% while a shield is equipped."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "max rank 5 → 3",
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -1215,7 +1273,7 @@
           "status": "new",
           "evidence": "warrior/47-warrior-protection-vanguard.png",
           "diff": [
-            "moved in build 1.60.1.70707: was row 4, col 3"
+            "moved in build 1.60.1.70753: was row 4, col 3"
           ]
         },
         {
@@ -1232,7 +1290,7 @@
           "status": "same",
           "evidence": "warrior/50-warrior-protection-improved-shield-bash.png",
           "diff": [
-            "moved in build 1.60.1.70707: was row 5, col 3"
+            "moved in build 1.60.1.70753: was row 5, col 3"
           ]
         },
         {
@@ -1290,7 +1348,7 @@
           "status": "new",
           "evidence": "warrior/52-warrior-protection-focused-rage.png",
           "diff": [
-            "moved in build 1.60.1.70707: was row 6, col 3"
+            "moved in build 1.60.1.70753: was row 6, col 3"
           ]
         },
         {
@@ -1310,7 +1368,7 @@
           "status": "new",
           "evidence": "warrior/53-warrior-protection-bastion.png",
           "diff": [
-            "moved in build 1.60.1.70707: was row 5, col 4"
+            "moved in build 1.60.1.70753: was row 5, col 4"
           ]
         },
         {

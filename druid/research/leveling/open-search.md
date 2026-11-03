@@ -6,76 +6,75 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| balance-dps | Balance | [38/0/13](https://talentsforever.com/druid/60/5432200115501351--5053-7) | Balance | 43.03 | +2.2% faster than opt-balance-dps-leveling-st |
-| feral-cat-dps | Feral Combat, Restoration | [11/31/9](https://talentsforever.com/druid/60/15002201-50200102023002125-55202-7) | Feral Combat | 27.80 | +0.1% faster than feral-combat-open-leveling |
+| balance-dps | Balance | [33/2/16](https://talentsforever.com/druid/60/5432200113201351-02-505303-7) | Balance | 42.24 | +0.2% faster than balance-open-leveling |
+| feral-cat-dps | Feral Combat, Restoration | [11/27/13](https://talentsforever.com/druid/60/05012201-51201302123002122-05503-7) | Hybrid Feral Combat/Restoration | 27.64 | +1.2% faster than opt-feral-cat-dps-solo-60 |
 
 ## balance-dps
 
-**Open winner 38/0/13** (Balance): talent values at level 60 (seconds per kill lost without the talent; the build: 36.91 s):
+**Open winner 33/2/16** (Balance): talent values at level 60 (seconds per kill lost without the talent; the build: 36.95 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Eclipse | 3 | +5.90 | +1.97 |
-| Moonglow | 3 | +3.61 | +1.20 |
-| Moonfury | 5 | +3.09 | +0.62 |
-| Moonkin Form | 1 | +2.62 | +2.62 |
-| Nature's Focus | 5 | +2.37 | +0.47 |
-| Improved Starfire | 5 | +2.05 | +0.41 |
-| Reflection | 3 | +1.80 | +0.60 |
-| Vengeance | 5 | +1.73 | +0.35 |
-| Improved Wrath | 5 | +1.55 | +0.31 |
-| Naturalist | 5 | +1.33 | +0.27 |
-| Improved Moonfire | 2 | +1.06 | +0.53 |
-| Nature's Majesty | 2 | +0.93 | +0.46 |
-| Nature's Splendor | 1 | +0.85 | +0.85 |
-| Insect Swarm | 1 | +0.39 | +0.39 |
-| Nature's Grace | 1 | +0.36 | +0.36 |
-| Genesis | 4 | +0.27 | +0.07 |
+| Eclipse | 3 | +4.28 | +1.43 |
+| Moonglow | 3 | +3.72 | +1.24 |
+| Moonfury | 5 | +2.92 | +0.58 |
+| Naturalist | 5 | +2.92 | +0.58 |
+| Nature's Focus | 5 | +2.50 | +0.50 |
+| Moonkin Form | 1 | +2.43 | +2.43 |
+| Reflection | 3 | +1.78 | +0.59 |
+| Improved Wrath | 5 | +1.54 | +0.31 |
+| Nature's Splendor | 1 | +0.99 | +0.99 |
+| Vengeance | 3 | +0.93 | +0.31 |
+| Improved Moonfire | 2 | +0.87 | +0.43 |
+| Improved Starfire | 2 | +0.73 | +0.36 |
+| Insect Swarm | 1 | +0.70 | +0.70 |
+| Nature's Majesty | 2 | +0.57 | +0.29 |
+| Genesis | 4 | +0.45 | +0.11 |
+| Nature's Grace | 1 | +0.12 | +0.12 |
+| Furor | 2 | +0.00 | +0.00 |
+| Subtlety | 3 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): balance-open-leveling (the build this search wrote) 43.01, open winner 43.03, finalist 38/0/13 (own tree last order) 43.20, finalist 38/0/13 (own tree first order) 43.27, finalist 37/1/13 43.63, opt-balance-dps-leveling-st 43.99.
+Race at levels 20-60 (seconds per kill): open winner 42.24, finalist 33/2/16 (stats model order, before the order polish) 42.31, balance-open-leveling 42.32, finalist 38/0/13 (before the 20-60 polish) 42.32, finalist 33/2/16 (own tree first order) 42.54, finalist 36/0/15 42.96, opt-balance-dps-leveling-st 43.57, finalist 33/2/16 (own tree last order) 44.29.
 
-**Signature spells** (Balance, levels 20-60, 2026-11-02): OK; core share at 60 96% (rule 70%: Wrath, Starfire, Moonfire, Insect Swarm).
+**Signature spells** (Balance, levels 20-60, 2026-11-03): OK; core share at 60 96% (rule 70%: Wrath, Starfire, Moonfire, Insect Swarm).
 
-**Synergy certificate** (2026-11-02, fightlab/fl_synergy.py): 42 relevant talents, 26 the winner lacks; 817 pairs measured around 38/0/13 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Natural Reaction + Nature's Splendor +1.9% (build -1.5%), Nature's Swiftness + Moonglow +1.6% (build -9.7%), Nature's Swiftness + Nature's Splendor +1.2% (build -3.0%), Natural Instinct + Nature's Swiftness +1.1% (build -0.1%), Natural Instinct + Nature's Focus +1.1% (build -5.2%), Natural Reaction + Nature's Swiftness +1.1% (build +0.4%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-11-02, fightlab/fl_synergy.py): 42 relevant talents, 24 the winner lacks; 798 pairs measured around 33/2/16 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Natural Reaction + Improved Moonfire +1.8% (build -2.1%), Natural Reaction + Nature's Majesty +1.6% (build -2.5%), Natural Reaction + Nature's Grace +1.4% (build -0.4%), Natural Reaction + Genesis +1.3% (build -1.8%), Natural Reaction + Improved Wrath +1.2% (build -4.4%), Nature's Swiftness + Nature's Grace +1.1% (build -1.0%). Leads polished and raced at 20-60: Natural Shapeshifter + Improved Starfire -> 32/1/18 -0.4%, Natural Shapeshifter + Nature's Grace -> 32/0/19 -0.4%. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): feral-cat-dps 36.28; feral-cat-dps plays it faster (36.28 s against 43.03 s). Research only: the pages keep each spec on its own rotation.
-
-Build (2026-10-19, open_builds.py): `balance-open-leveling`.
+Under the other leveling rotations (seconds per kill, 20-60): feral-cat-dps 35.96; feral-cat-dps plays it faster (35.96 s against 42.24 s). Research only: the pages keep each spec on its own rotation.
 
 ## feral-cat-dps
 
-**Open winner 11/31/9** (Feral Combat): talent values at level 60 (seconds per kill lost without the talent; the build: 30.18 s):
+**Open winner 11/27/13** (Hybrid Feral Combat/Restoration): talent values at level 60 (seconds per kill lost without the talent; the build: 29.56 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Sharpened Claws | 2 | +1.53 | +0.76 |
-| Blood Frenzy | 2 | +1.50 | +0.75 |
-| Nature's Reach | 2 | +1.30 | +0.65 |
-| Ferocity | 5 | +1.09 | +0.22 |
-| Nature's Majesty | 2 | +0.96 | +0.48 |
-| Berserk | 1 | +0.96 | +0.96 |
-| Predatory Strikes | 3 | +0.94 | +0.31 |
-| Leader of the Pack | 1 | +0.76 | +0.76 |
-| Nature's Splendor | 1 | +0.74 | +0.74 |
-| Rend and Tear | 5 | +0.70 | +0.14 |
-| Savage Fury | 2 | +0.69 | +0.35 |
-| Natural Instinct | 2 | +0.67 | +0.33 |
-| Natural Shapeshifter | 2 | +0.56 | +0.28 |
-| Naturalist | 2 | +0.46 | +0.23 |
-| Feral Swiftness | 2 | +0.30 | +0.15 |
-| Heart of the Wild | 5 | +0.25 | +0.05 |
-| Genesis | 5 | +0.21 | +0.04 |
-| Thick Hide | 1 | +0.05 | +0.05 |
-| Improved Wrath | 1 | +0.00 | +0.00 |
-| Nature's Focus | 5 | -0.04 | -0.01 |
+| Naturalist | 5 | +1.99 | +0.40 |
+| Sharpened Claws | 2 | +1.46 | +0.73 |
+| Blood Frenzy | 2 | +1.36 | +0.68 |
+| Nature's Reach | 2 | +1.25 | +0.63 |
+| Ferocity | 5 | +1.13 | +0.23 |
+| Nature's Majesty | 2 | +0.97 | +0.48 |
+| Predatory Strikes | 3 | +0.81 | +0.27 |
+| Leader of the Pack | 1 | +0.74 | +0.74 |
+| Nature's Splendor | 1 | +0.55 | +0.55 |
+| Natural Shapeshifter | 3 | +0.53 | +0.18 |
+| Natural Instinct | 2 | +0.48 | +0.24 |
+| Savage Fury | 2 | +0.45 | +0.23 |
+| Genesis | 5 | +0.43 | +0.09 |
+| Rend and Tear | 2 | +0.23 | +0.12 |
+| Heart of the Wild | 5 | +0.23 | +0.05 |
+| Feral Swiftness | 2 | +0.11 | +0.06 |
+| Thick Hide | 3 | +0.07 | +0.02 |
+| Improved Moonfire | 1 | +0.00 | +0.00 |
+| Furor | 1 | +0.00 | +0.00 |
+| Brutal Impact | 1 | +0.00 | +0.00 |
+| Feral Charge | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.80, finalist 11/31/9 (own tree first order) 27.80, feral-combat-open-leveling 27.84, opt-feral-cat-dps-leveling-st 27.91, opt-feral-cat-dps-solo-60 27.91, leveling-feral 28.76, finalist 11/31/9 (own tree last order) 29.05, restoration-leveling 34.37.
+Race at levels 20-60 (seconds per kill): open winner 27.64, finalist 11/27/13 (stats model order, before the order polish) 27.67, opt-feral-cat-dps-solo-60 27.98, leveling-feral 28.00, opt-feral-cat-dps-leveling-st 28.01, finalist 11/27/13 (own tree last order) 28.32, finalist 11/27/13 (own tree first order) 28.38, restoration-leveling 33.76.
 
-**Signature spells** (Feral Combat, levels 20-60, 2026-11-02): OK; core share at 60 83% (rule 80%: melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite).
+**Signature spells** (Feral Combat, levels 20-60, 2026-11-03): OK; core share at 60 82% (rule 80%: melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite).
 
-**Synergy certificate** (2026-11-02, fightlab/fl_synergy.py): 42 relevant talents, 26 the winner lacks; 713 pairs measured around 11/25/14 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Natural Reaction + Nature's Majesty +1.0% (build -2.4%), Natural Reaction + Natural Shapeshifter +0.7% (build -1.8%), Improved Rejuvenation + Genesis +0.7% (build -0.4%), Improved Rejuvenation + Nature's Splendor +0.6% (build -1.5%), Improved Rejuvenation + Natural Instinct +0.6% (build -0.7%), Natural Reaction + Nature's Splendor +0.6% (build -2.2%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-11-03, fightlab/fl_synergy.py): 42 relevant talents, 24 the winner lacks; 720 pairs measured around 11/27/13 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Improved Rejuvenation + Nature's Splendor +1.6% (build -0.2%), Improved Rejuvenation + Ferocity +0.5% (build -3.4%), Natural Reaction + Nature's Splendor +0.5% (build -1.7%), Natural Reaction + Natural Shapeshifter +0.5% (build -2.0%), Moonfury + Natural Instinct +0.5% (build -1.0%), Moonfury + Rend and Tear +0.4% (build -0.4%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): balance-dps 86.0; its own rotation plays it best (27.8 s).
-
-Build (2026-10-19, open_builds.py): confirms opt-feral-cat-dps-leveling-st (+0.40% faster per kill, levels 20-60, raced together); the spec's open build no longer clears the bar.
+Under the other leveling rotations (seconds per kill, 20-60): balance-dps 80.85; its own rotation plays it best (27.64 s).
 

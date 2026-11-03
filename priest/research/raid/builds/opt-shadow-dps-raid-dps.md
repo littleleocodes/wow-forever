@@ -7,7 +7,7 @@
 | **Build** | 20/0/31 (Discipline / Holy / Shadow) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -59,13 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 695 | +0.0% | 796 | +0.0% | 2 s |
-| 2 | *Standard* | community simulator | - | 652 | -6.2% | 793 | -0.4% | 0 s |
-| 3 | *Smite* | community simulator | - | 233 | -66.5% | 319 | -59.9% | 9 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 680 | +0.0% | 783 | -0.6% | 3 s |
+| 2 | *Standard* | community simulator | - | 640 | -5.9% | 783 | -0.7% | 0 s |
+| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 608 | -10.6% | 788 | +0.0% | 17 s |
+| 4 | *Smite* | community simulator | - | 227 | -66.6% | 309 | -60.8% | 11 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,10 +74,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
   1. always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%, pass 1)
   2. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.3%, pass 1)
   3. insert in the middle: cast Shadow Word: Death (+1.1%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 7 passes, the last 2026-10-29, 3 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 800 -> 798 DPS (-0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-11-02, 4 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 782 -> 783 DPS (+0.2%), sim preset: Standard 780 -> 782 DPS (+0.3%)):
   1. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.4%, pass 1)
   2. insert before the filler: cast Devouring Plague (+2.5%, pass 5)
   3. insert at the end: cast Dark Sacrifice (+0.3%, pass 5)
+  4. move to the top: cast Mind Blast (+0.3%, pass 8)
 
 Before the pull: at -1s: cast Shadowform.
 
@@ -86,7 +88,7 @@ Before the pull: at -1s: cast Shadowform.
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 2.6 |
 | 4 | cast Shadow Word: Death | 3.3 |
-| 5 | cast Mind Blast | 7.0 |
+| 5 | cast Mind Blast | 6.9 |
 | 6 | channel Mind Flay | as ready |
 
 Lines of the simulator's rotation these builds never cast: Death (rank 2) (its condition never held in these fights).

@@ -458,7 +458,7 @@
  "Rend and Tear": {
   "tree": "Feral Combat",
   "max": 5,
-  "text": "Increases damage done by your melee abilities on Bleeding targets by 2%.",
+  "text": "Increases damage done by your melee abilities on Bleeding targets by 3%.",
   "effects": [
    {
     "channel": "dmg",
@@ -466,11 +466,11 @@
      "type:melee"
     ],
     "values": [
-     0.02,
-     0.04,
+     0.03,
      0.06,
-     0.08,
-     0.1
+     0.09,
+     0.12,
+     0.15
     ],
     "source": "parsed"
    }

@@ -1,15 +1,15 @@
 {
   "slug": "shaman",
   "name": "Shaman",
-  "build": "1.60.1.70707",
-  "captured": "2026-10-31",
+  "build": "1.60.1.70753",
+  "captured": "2026-11-03",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70753: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-30",
-      "build": "1.60.1.70707",
+      "generated": "2026-11-03",
+      "build": "1.60.1.70753",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
@@ -24,33 +24,27 @@
       "url": "https://warcraftforever.games/talents/shaman",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
-    },
-    "simulator_trees": {
-      "path": "wowsims/forever ui/sim/talents/trees",
-      "build": "1.60.1.70707",
-      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
-  "removed_since_demo": [
-    {
-      "tree": "Elemental",
-      "name": "Call of Thunder",
-      "build": "1.60.1.70707",
-      "row": 4,
-      "col": 3,
-      "maxRank": 1,
-      "rank1": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
-    }
-  ],
+  "removed_since_demo": [],
   "renamed_since_demo": [
     {
       "tree": "Elemental",
       "from": "Improved Fire Nova",
       "to": "Trial by Fire",
-      "build": "1.60.1.70707"
+      "build": "1.60.1.70753"
+    },
+    {
+      "tree": "Elemental",
+      "from": "Lava Burst",
+      "to": "Lightning Mastery",
+      "build": "1.60.1.70753"
     }
   ],
-  "merge_notes": [],
+  "merge_notes": [
+    "Elemental: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Elemental Mastery, Lava Burst; only in the export: Call of Thunder, Lightning Mastery; moved or re-capped: none); the export's positions, rank caps and prerequisites used for this tree",
+    "Enhancement: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Improved Ghost Wolf); the export's positions, rank caps and prerequisites used for this tree"
+  ],
   "trees": [
     {
       "id": "elemental",
@@ -66,11 +60,11 @@
           "icon": "spell_nature_wispsplode",
           "maxRank": 5,
           "ranks": [
-            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%.",
-            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 4%.",
-            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 6%.",
-            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 8%.",
-            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%."
+            "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 2%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 4%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 6%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 8%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 10%."
           ],
           "status": "changed",
           "classic": [
@@ -81,8 +75,17 @@
             "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 10%."
           ],
           "evidence": "shaman/01-shaman-elemental-convection.jpg",
+          "ranks_prev": [
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 4%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 6%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 8%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -140,8 +143,8 @@
           "diff": [
             "tooltip changed",
             "was Elemental row 4, col 4",
-            "moved in build 1.60.1.70707: was row 2, col 4",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "moved in build 1.60.1.70753: was row 2, col 4",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -180,14 +183,21 @@
           "icon": "spell_lightning_lightningbolt01",
           "maxRank": 3,
           "ranks": [
+            "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.17 sec.",
+            "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.33 sec.",
+            "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.50 sec."
+          ],
+          "status": "new",
+          "evidence": "shaman/15-shaman-elemental-elemental-alacrity.jpg",
+          "ranks_prev": [
             "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec.",
             "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.33 sec.",
             "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec."
           ],
-          "status": "new",
-          "evidence": "shaman/15-shaman-elemental-elemental-alacrity.jpg",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70707: was row 3, col 3"
+            "moved in build 1.60.1.70753: was row 3, col 3",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -198,9 +208,9 @@
           "icon": "spell_fire_immolation",
           "maxRank": 3,
           "ranks": [
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec.",
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
+            "Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
           ],
           "status": "changed",
           "classic": [
@@ -217,8 +227,8 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70707: was row 2, col 3",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "moved in build 1.60.1.70753: was row 2, col 3",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -235,7 +245,7 @@
           "evidence": "shaman/07-shaman-elemental-elemental-focus.jpg",
           "diff": [
             "was Elemental row 3, col 1",
-            "moved in build 1.60.1.70707: was row 3, col 2"
+            "moved in build 1.60.1.70753: was row 3, col 2"
           ]
         },
         {
@@ -260,7 +270,7 @@
           "diff": [
             "tooltip changed",
             "was Elemental row 2, col 2",
-            "moved in build 1.60.1.70707: was row 2, col 1"
+            "moved in build 1.60.1.70753: was row 2, col 1"
           ]
         },
         {
@@ -282,8 +292,8 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "renamed from Improved Fire Nova in build 1.60.1.70707",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
+            "renamed from Improved Fire Nova in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
           ]
         },
         {
@@ -294,9 +304,9 @@
           "icon": "spell_nature_eyeofthestorm",
           "maxRank": 3,
           "ranks": [
-            "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 23% chance to not lose casting time when you take damage.",
-            "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 47% chance to not lose casting time when you take damage.",
-            "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 70% chance to not lose casting time when you take damage."
+            "Gives your Lightning Bolt and Chain Lightning spells a 23% chance to not lose casting time when you take damage.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 47% chance to not lose casting time when you take damage.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 70% chance to not lose casting time when you take damage."
           ],
           "status": "changed",
           "classic": [
@@ -313,7 +323,7 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -329,7 +339,7 @@
           "status": "new",
           "evidence": "shaman/14-shaman-elemental-earthbound.jpg",
           "diff": [
-            "moved in build 1.60.1.70707: was row 5, col 4"
+            "moved in build 1.60.1.70753: was row 5, col 4"
           ]
         },
         {
@@ -340,8 +350,8 @@
           "icon": "spell_nature_stormreach",
           "maxRank": 2,
           "ranks": [
-            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.",
-            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards and reduces the cooldown of Totemic Projection by 20 sec."
+            "Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 3 yards.",
+            "Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 6 yards."
           ],
           "status": "new",
           "evidence": "shaman/12-shaman-elemental-elemental-reach.jpg",
@@ -351,29 +361,39 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
           ]
         },
         {
-          "id": "elemental/lava-burst",
+          "id": "elemental/call-of-thunder",
           "row": 4,
           "col": 1,
-          "name": "Lava Burst",
-          "icon": "spell_shaman_lavaburst",
+          "name": "Call of Thunder",
+          "icon": "spell_nature_callstorm",
           "maxRank": 1,
           "ranks": [
-            "You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+            "Increases critical strike chance of Lightning Bolt and Chain Lightning by 5%."
           ],
-          "status": "new",
-          "evidence": "shaman/16-shaman-elemental-lava-burst.jpg",
+          "status": "changed",
+          "classic": [
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 2%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 3%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 4%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 6%."
+          ],
+          "evidence": "shaman/11-shaman-elemental-call-of-thunder.jpg",
           "ranks_prev": [
-            "You hurl molten lava at the target, dealing 150 to 193 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70707: was row 7, col 2",
-            "tooltip changed in build 1.60.1.70707 (ranks 1)",
-            "prerequisite changed in build 1.60.1.70707: was lightning overload"
+            "max rank 5 → 1",
+            "tooltip changed",
+            "was Elemental row 3, col 3",
+            "moved in build 1.60.1.70753: was row 4, col 3",
+            "tooltip changed in build 1.60.1.70753 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70753: was elemental alacrity"
           ]
         },
         {
@@ -384,14 +404,21 @@
           "icon": "spell_nature_lightningoverload",
           "maxRank": 3,
           "ranks": [
+            "Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 20% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 30% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat."
+          ],
+          "status": "new",
+          "evidence": "shaman/13-shaman-elemental-lightning-overload.jpg",
+          "ranks_prev": [
             "Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
             "Gives your Lightning Bolt and Chain Lightning spells a 7% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
             "Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat."
           ],
-          "status": "new",
-          "evidence": "shaman/13-shaman-elemental-lightning-overload.jpg",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70707: was row 5, col 2"
+            "moved in build 1.60.1.70753: was row 5, col 2",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ],
           "prereq": {
             "id": "elemental/elemental-alacrity",
@@ -421,7 +448,7 @@
             "max rank 1 → 5",
             "tooltip changed",
             "was Elemental row 5, col 2",
-            "prerequisite changed in build 1.60.1.70707: was call of thunder"
+            "prerequisite changed in build 1.60.1.70753: was call of thunder"
           ],
           "prereq": {
             "id": "elemental/lightning-overload",
@@ -429,21 +456,28 @@
           }
         },
         {
-          "id": "elemental/elemental-mastery",
+          "id": "elemental/lightning-mastery",
           "row": 6,
           "col": 1,
-          "name": "Elemental Mastery",
-          "icon": "spell_nature_wispheal",
+          "name": "Lightning Mastery",
+          "icon": "spell_shaman_lavaburst",
           "maxRank": 1,
           "ranks": [
-            "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
+            "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
           ],
           "status": "new",
+          "evidence": "shaman/16-shaman-elemental-lava-burst.jpg",
+          "ranks_prev": [
+            "You hurl molten lava at the target, dealing 150 to 193 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "added in build 1.60.1.70707"
+            "renamed from Lava Burst in build 1.60.1.70753",
+            "tooltip changed in build 1.60.1.70753 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70753: was lightning overload"
           ],
           "prereq": {
-            "id": "elemental/lava-burst",
+            "id": "elemental/call-of-thunder",
             "rank": 1
           }
         }
@@ -451,7 +485,7 @@
       "removed": [
         "Improved Fire Totems",
         "Storm Reach",
-        "Lightning Mastery"
+        "Elemental Mastery"
       ]
     },
     {
@@ -556,33 +590,20 @@
           "icon": "spell_nature_mentalquickness",
           "maxRank": 3,
           "ranks": [
+            "Increases your Attack Power by an amount equal to 50% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 100% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 150% of your Intellect."
+          ],
+          "status": "new",
+          "evidence": "shaman/21-shaman-enhancement-mental-dexterity.jpg",
+          "ranks_prev": [
             "Increases your Attack Power by an amount equal to 33% of your Intellect.",
             "Increases your Attack Power by an amount equal to 67% of your Intellect.",
             "Increases your Attack Power by an amount equal to 100% of your Intellect."
           ],
-          "status": "new",
-          "evidence": "shaman/21-shaman-enhancement-mental-dexterity.jpg",
-          "diff": []
-        },
-        {
-          "id": "enhancement/improved-ghost-wolf",
-          "row": 1,
-          "col": 2,
-          "name": "Improved Ghost Wolf",
-          "icon": "spell_nature_spiritwolf",
-          "maxRank": 2,
-          "ranks": [
-            "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
-            "Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors."
-          ],
-          "status": "changed",
-          "classic": [
-            "Reduces the cast time of your Ghost Wolf spell by 1 sec.",
-            "Reduces the cast time of your Ghost Wolf spell by 2 sec."
-          ],
-          "evidence": "shaman/22-shaman-enhancement-improved-ghost-wolf.jpg",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -695,11 +716,11 @@
           "icon": "ability_ghoulfrenzy",
           "maxRank": 5,
           "ranks": [
-            "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your attack speed by 15% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your attack speed by 20% for your next 3 swings after dealing a melee critical strike.",
-            "Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike."
+            "Increases your attack speed by 6% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 12% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 18% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 24% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike."
           ],
           "status": "changed",
           "classic": [
@@ -710,8 +731,17 @@
             "Increases your attack speed by 30% for your next 3 swings after dealing a critical strike."
           ],
           "evidence": "shaman/28-shaman-enhancement-flurry.jpg",
+          "ranks_prev": [
+            "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 15% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 20% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
           ],
           "prereq": {
             "id": "enhancement/mental-dexterity",
@@ -726,16 +756,43 @@
           "icon": "ability_shaman_stormstrike",
           "maxRank": 1,
           "ranks": [
-            "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+            "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
           ],
           "status": "changed",
           "classic": [
             "Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec."
           ],
           "evidence": "shaman/29-shaman-enhancement-stormstrike.jpg",
+          "ranks_prev": [
+            "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Enhancement row 7, col 2"
+            "was Enhancement row 7, col 2",
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
+          ]
+        },
+        {
+          "id": "enhancement/improved-ghost-wolf",
+          "row": 3,
+          "col": 3,
+          "name": "Improved Ghost Wolf",
+          "icon": "spell_nature_spiritwolf",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
+            "Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors."
+          ],
+          "status": "changed",
+          "classic": [
+            "Reduces the cast time of your Ghost Wolf spell by 1 sec.",
+            "Reduces the cast time of your Ghost Wolf spell by 2 sec."
+          ],
+          "evidence": "shaman/22-shaman-enhancement-improved-ghost-wolf.jpg",
+          "diff": [
+            "tooltip changed",
+            "moved in build 1.60.1.70753: was row 2, col 3"
           ]
         },
         {
@@ -891,7 +948,7 @@
           "diff": [
             "tooltip changed",
             "was Restoration row 1, col 3",
-            "moved in build 1.60.1.70707: was row 2, col 3"
+            "moved in build 1.60.1.70753: was row 2, col 3"
           ]
         },
         {
@@ -952,7 +1009,7 @@
           "diff": [
             "tooltip changed",
             "was Restoration row 2, col 3",
-            "moved in build 1.60.1.70707: was row 1, col 3"
+            "moved in build 1.60.1.70753: was row 1, col 3"
           ]
         },
         {
@@ -1025,7 +1082,7 @@
           "diff": [
             "max rank 5 → 3",
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -1045,7 +1102,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ]
         },
         {
@@ -1125,7 +1182,7 @@
           "diff": [
             "tooltip changed",
             "was Restoration row 7, col 2",
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ]
         },
         {
@@ -1192,7 +1249,7 @@
           "icon": "spell_nature_riptide",
           "maxRank": 1,
           "ranks": [
-            "Heals a friendly target for 485 to 533, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
+            "Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
           ],
           "status": "new",
           "evidence": "shaman/50-shaman-restoration-riptide.jpg",
@@ -1201,7 +1258,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70707 (ranks 1)"
+            "tooltip changed in build 1.60.1.70753 (ranks 1)"
           ],
           "prereq": {
             "id": "restoration/healing-way",

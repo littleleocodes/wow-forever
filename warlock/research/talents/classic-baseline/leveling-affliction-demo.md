@@ -99,12 +99,12 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Affliction | Improved Life Tap | 2 | moved | tier 1, max 2 — was Affliction row 2, col 3 |
 | Affliction | Improved Drain Life | 5 | **REMOVED** | removed from Classic |
 | Affliction | Improved Curse of Agony | 3 | **REMOVED** | removed from Classic |
-| Affliction | Fel Concentration | 2 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
+| Affliction | Fel Concentration | 2 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Affliction | Amplify Curse | 1 | changed | tier 3, max 1 — tooltip changed |
 | Affliction | Nightfall | 2 | changed | tier 4, max 2 — tooltip changed |
-| Affliction | Grim Reach | 2 | new | tier 2, max 2 — renamed from Malediction in build 1.60.1.70707; max rank 5 -> 2 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2) |
+| Affliction | Grim Reach | 2 | new | tier 2, max 2 — renamed from Malediction in build 1.60.1.70753; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
 | Affliction | Siphon Life | 1 | changed | tier 5, max 1 — tooltip changed |
-| Affliction | Shadow Mastery | 5 | changed | tier 6, max 5 — tooltip changed; was Affliction row 6, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Affliction | Shadow Mastery | 5 | changed | tier 6, max 5 — tooltip changed; was Affliction row 6, col 2; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Demonology | Demonic Embrace | 5 | changed | tier 1, max 5 — tooltip changed |
 | Demonology | Improved Voidwalker | 3 | unchanged | tier 2, max 3 |
 | Demonology | Fel Intellect | 2 | **REMOVED** | removed from Classic |

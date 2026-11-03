@@ -76,21 +76,21 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
-| Holy | Divine Strength | 5 | unchanged | tier 1, max 5 — moved in build 1.60.1.70707: was row 1, col 2 |
+| Holy | Divine Strength | 5 | unchanged | tier 1, max 5 — moved in build 1.60.1.70753: was row 1, col 2 |
 | Holy | Divine Intellect | 5 | moved-tree | now in Protection, tier 1 |
 | Holy | Consecration | 1 | **REMOVED** | removed from Classic |
 | Protection | Improved Devotion Aura | 5 | **REMOVED** | removed from Classic |
-| Protection | Redoubt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Protection | Redoubt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Protection | Precision | 3 | changed | tier 2, max 3 — tooltip changed |
-| Protection | Toughness | 5 | moved | tier 3, max 5 — was Protection row 2, col 4; moved in build 1.60.1.70707: was row 1, col 2 |
-| Protection | Improved Righteous Fury | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70707: was row 3, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
-| Protection | Shield Specialization | 3 | changed | tier 3, max 2 — tooltip changed; max rank 3 -> 2 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2) |
-| Protection | Anticipation | 5 | changed | tier 4, max 5 — tooltip changed; was Protection row 3, col 4; moved in build 1.60.1.70707: was row 2, col 4 |
+| Protection | Toughness | 5 | moved | tier 3, max 5 — was Protection row 2, col 4; moved in build 1.60.1.70753: was row 1, col 2 |
+| Protection | Improved Righteous Fury | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 3, col 2; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Protection | Shield Specialization | 3 | changed | tier 3, max 2 — tooltip changed; max rank 3 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Protection | Anticipation | 5 | changed | tier 4, max 5 — tooltip changed; was Protection row 3, col 4; moved in build 1.60.1.70753: was row 2, col 4 |
 | Protection | Blessing of Kings | 1 | **REMOVED** | removed from Classic |
 | Protection | Blessing of Sanctuary | 1 | **REMOVED** | removed from Classic |
-| Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Protection | One-Handed Weapon Specialization | 5 | unknown | not found in Forever data |
-| Protection | Holy Shield | 1 | changed | tier 5, max 1 — tooltip changed; moved in build 1.60.1.70707: was row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1); prerequisite changed in build 1.60.1.70707: was templar s bulwark |
+| Protection | Holy Shield | 1 | changed | tier 5, max 1 — tooltip changed; moved in build 1.60.1.70753: was row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1); prerequisite changed in build 1.60.1.70753: was templar s bulwark |
 
 **8 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

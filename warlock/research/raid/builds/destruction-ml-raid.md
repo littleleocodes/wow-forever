@@ -7,7 +7,7 @@
 | **Build** | 9/11/31 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -44,22 +44,22 @@ The Destruction build the machine-learning talent search found in a full raid (e
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
 | **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
 | **Fire and Brimstone** | 3/3 | **NEW** | Increases the critical strike chance of your Conflagrate spell by 25%. |
-| **Shadow and Flame** | 5/5 | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 10% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 10% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
+| **Shadow and Flame** | 5/5 | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 20% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 20% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
 
 ## Rank among our builds and the community simulator's
 
-**5 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 21/11/19 | 682 | +0.0% | 771 | +0.0% | 0 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 677 | -0.8% | 763 | -1.0% | 0 s |
-| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 676 | -0.9% | 766 | -0.8% | 0 s |
-| 4 | *SM/Ruin* | community simulator | - | 665 | -2.6% | 746 | -3.3% | 0 s |
-| 5 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 664 | -2.8% | 748 | -3.0% | 0 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 653 | -4.3% | 728 | -5.7% | 0 s |
-| 7 | *Destro* | community simulator | - | 612 | -10.4% | 677 | -12.3% | 0 s |
-| 8 | *Demo (Shadow Brand)* | community simulator | - | 575 | -15.8% | 654 | -15.2% | 0 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 677 | -0.8% | 762 | -1.1% | 0 s |
+| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 676 | -0.9% | 764 | -0.9% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 665 | -2.6% | 745 | -3.4% | 0 s |
+| 5 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 664 | -2.8% | 747 | -3.1% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 653 | -4.3% | 726 | -5.8% | 0 s |
+| 7 | *Destro* | community simulator | - | 612 | -10.4% | 676 | -12.3% | 0 s |
+| 8 | *Demo (Shadow Brand)* | community simulator | - | 575 | -15.8% | 653 | -15.2% | 0 s |
 | 9 | *Demo (Fire Brand)* | community simulator | - | 562 | -17.7% | 627 | -18.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)

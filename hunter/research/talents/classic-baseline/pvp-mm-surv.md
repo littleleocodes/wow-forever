@@ -82,9 +82,9 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Marksmanship | Hawk Eye | 3 | moved | tier 1, max 3 — was Marksmanship row 3, col 4 |
 | Marksmanship | Mortal Shots | 5 | changed | tier 4, max 5 — tooltip changed |
 | Marksmanship | Scatter Shot | 1 | moved | tier 5, max 1 — was Marksmanship row 5, col 1 |
-| Marksmanship | Barrage | 3 | changed | tier 5, max 3 — tooltip changed; was Marksmanship row 5, col 2 |
+| Marksmanship | Barrage | 3 | changed | tier 5, max 3 — tooltip changed; was Marksmanship row 5, col 2; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Marksmanship | Ranged Weapon Specialization | 5 | unchanged | tier 6, max 5 |
-| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
 | Survival | Humanoid Slaying | 3 | **REMOVED** | removed from Classic |
 | Survival | Monster Slaying | 2 | **REMOVED** | removed from Classic |
 | Survival | Improved Wing Clip | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Survival row 2, col 3 |

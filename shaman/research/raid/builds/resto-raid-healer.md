@@ -7,7 +7,7 @@
 | **Build** | 0/10/41 (Elemental / Enhancement / Restoration) |
 | **Role** | HEALER — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `resto-raid-healer` |
 
 ## Summary
@@ -43,7 +43,7 @@ Allocation adopted on 2026-09-26 from `cand-resto-r1`, the build with the highes
 | **Healing Way** | 3/3 | changed | Increases the amount healed by your Healing Wave spell by 25%. |
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell. |
 | **Purification** | 5/5 | unchanged | Increases the effectiveness of your healing spells by 10%. |
-| **Riptide** | 1/1 | **NEW** | Heals a friendly target for 485 to 533, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%. |
+| **Riptide** | 1/1 | **NEW** | Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%. |
 
 ## Core talents (priority order)
 

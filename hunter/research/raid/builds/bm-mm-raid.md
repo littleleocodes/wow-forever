@@ -7,7 +7,7 @@
 | **Build** | 22/29/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `bm-mm-raid` |
 
 ## Summary
@@ -37,7 +37,7 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
@@ -65,14 +65,14 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 414 | +0.0% | 736 | -5.9% | 37 s |
-| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 393 | -5.0% | 720 | -7.9% | 31 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 392 | -5.2% | 782 | +0.0% | 47 s |
-| 4 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 375 | -9.2% | 719 | -8.1% | 25 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 388 | +0.0% | 691 | -8.3% | 37 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 377 | -2.6% | 753 | +0.0% | 47 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 374 | -3.5% | 686 | -8.9% | 31 s |
+| 4 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 357 | -7.9% | 685 | -9.0% | 25 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,15 +123,15 @@ Damage by ability:
 
 | Ability | [`bm-mm-raid`](bm-mm-raid.md) |
 |---|---|
-| Auto Shot | 38% |
-| Pet: Auto Attack | 29% |
-| Serpent Sting | 12% |
-| Aimed Shot | 7% |
+| Auto Shot | 40% |
+| Pet: Auto Attack | 25% |
+| Serpent Sting | 13% |
+| Aimed Shot | 8% |
 | Summon Hawk | 5% |
 | Pet: Bite | 3% |
 | Pet: Claw | 2% |
 | Arcane Shot | 2% |
-| Multi-Shot | 1% |
+| Multi-Shot | 2% |
 | spell 1295633 | 1% |
 
 ## Notes

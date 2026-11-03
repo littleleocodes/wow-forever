@@ -21,6 +21,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Holy — Raid healing (machine-learning search)](builds/holy-ml-heal.md) 🔬 | 21/30/0 | HEALER |
 | [Discipline — Raid healing (machine-learning search)](builds/discipline-ml-heal.md) 🔬 | 30/21/0 | HEALER |
 | [Smite — Raid (open talent search)](builds/smite-open-raid.md) 🔬 | 17/17/17 | DPS |
+| [Shadow — Raid (machine-learning search)](builds/shadow-ml-raid.md) 🔬 | 16/0/35 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -1,6 +1,6 @@
-# Warlock — WoW: Forever talent trees (beta client 1.60.1.70707)
+# Warlock — WoW: Forever talent trees (beta client 1.60.1.70753)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70707, captured 2026-10-31. World of Warcraft: Forever beta client, build 1.60.1.70707: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-30, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70707 with its hotfix caches); talents the export lacks take Wowhead's tooltip. Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70753, captured 2026-11-03. World of Warcraft: Forever beta client, build 1.60.1.70753: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -64,7 +64,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Wrack** | 1 | Siphon Life (1) | **NEW** | Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec. | — |
+| **Wrack** | 1 | Siphon Life (1) | **NEW** | Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec. | — |
 
 **Removed from Classic Affliction:** Improved Curse of Weakness, Improved Drain Soul, Improved Drain Life, Improved Curse of Agony, Improved Drain Mana, Improved Curse of Exhaustion, Dark Pact
 
@@ -171,7 +171,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Shadow and Flame** | 5 | — | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 20% chance not to consume Immolate, and Shadowburn has a 20% chance to instantly refund a Soul Shard. | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 10% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 10% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
+| **Shadow and Flame** | 5 | — | **NEW** | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 4% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 4% for 20 sec. In addition, Conflagrate has a 20% chance not to consume Immolate, and Shadowburn has a 20% chance to instantly refund a Soul Shard. | Hitting an enemy with Conflagrate increases all Shadow damage you deal by 20% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 20% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard. |
 
 ### Tier 7 — requires 30 points in Destruction
 
@@ -193,7 +193,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Corruption** (tooltip changed)
   - Classic: Reduces the casting time of your Corruption spell by 0 sec.
   - Forever: Reduces the casting time of your Corruption spell by 0.4 sec and increases the damage it deals by 2%.
-- **Fel Concentration** (max rank 5 → 3, tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
+- **Fel Concentration** (max rank 5 → 3, tooltip changed, tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3))
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.
   - Forever: Gives your Drain Life, Drain Mana, Drain Soul, and Wrack spells a 23% chance to not lose casting time when you take damage.
 - **Amplify Curse** (tooltip changed)
@@ -208,7 +208,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Siphon Life** (tooltip changed)
   - Classic: Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.
   - Forever: Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec.
-- **Shadow Mastery** (tooltip changed, was Affliction row 6, col 2, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5))
+- **Shadow Mastery** (tooltip changed, was Affliction row 6, col 2, tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the damage dealt or life drained by your Shadow spells by 2%.
   - Forever: Increases the damage dealt or life drained by your Shadow spells by 2%.
 
@@ -226,7 +226,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Unholy Power** (tooltip changed, was Demonology row 4, col 3)
   - Classic: Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 4%.
   - Forever: Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 2%.
-- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.  Imp: Increases your Fire damage by 15%.  Voidwalker: Restores 3% of total Health every 4 sec.  Succubus/Incubus: Increases your Shadow damage by 15%.  Felhunter: Restores 2% of total Mana every 4 sec.
   - Forever: When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec.
 - **Fel Domination** (tooltip changed, was Demonology row 3, col 2)
@@ -241,7 +241,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Destruction
 
-- **Destructive Reach** (tooltip changed, was Destruction row 4, col 2, tooltip changed in build 1.60.1.70707 (ranks 1, 2))
+- **Destructive Reach** (tooltip changed, was Destruction row 4, col 2, tooltip changed in build 1.60.1.70753 (ranks 1, 2))
   - Classic: Increases the range of your Destruction spells by 10%.
   - Forever: Increases the range of your Destruction spells by 10%.
 - **Improved Shadow Bolt** (tooltip changed)
@@ -259,13 +259,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Ruin** (max rank 1 → 5, tooltip changed, was Destruction row 5, col 3)
   - Classic: Increases the critical strike damage bonus of your Destruction spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Destruction spells by 20%.
-- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Instantly blasts the target for 99 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
   - Forever: Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.
-- **Intensity** (max rank 2 → 3, tooltip changed, tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3))
+- **Intensity** (max rank 2 → 3, tooltip changed, tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3))
   - Classic: Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.
   - Forever: Gives your Destruction spells a 23% chance to not lose casting time when you take damage.
-- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70707 (ranks 1))
+- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Ignites a target that is already afflicted by Immolate, dealing 306 Fire damage and consuming the Immolate spell.
   - Forever: Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect.
 - **Pyroclasm** (tooltip changed)

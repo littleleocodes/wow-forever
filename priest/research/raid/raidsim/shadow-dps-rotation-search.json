@@ -88,8 +88,8 @@
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-10-29",
-  "commit": "30f67f5d2",
+  "date": "2026-11-02",
+  "commit": "bac92dbd5",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/shadow.apl.json",
@@ -97,21 +97,16 @@
   "builds": [
    {
     "label": "opt-shadow-dps-raid-dps",
-    "talents": "005300231103--500320501201312251"
+    "talents": "52500500003--50052101231302051"
    },
    {
-    "label": "sim preset: Shadow",
-    "talents": "005300231303--505120501201300051"
-   },
-   {
-    "label": "opt-shadow-dps-raid-dps",
-    "talents": "00500503103--50052001251302251",
-    "protect_only": true
+    "label": "sim preset: Standard",
+    "talents": "00530300103-3-50042201251302051"
    }
   ],
   "tuned_on": [
    "opt-shadow-dps-raid-dps",
-   "sim preset: Shadow"
+   "sim preset: Standard"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -139,27 +134,35 @@
     "gain_seed2": 0.0033603680002762815,
     "candidates": 269,
     "pass": 5
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Mind Blast",
+    "gain_seed1": 0.003269866699502799,
+    "gain_seed2": 0.002845705300023482,
+    "candidates": 234,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "opt-shadow-dps-raid-dps": {
-     "before": 799.5146248367683,
-     "after": 798.3237705618631,
-     "base": 799.5146248367683,
+     "before": 781.9702939036912,
+     "after": 783.2281632800276,
+     "base": 781.9702939036912,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Shadow": {
-     "before": null,
-     "after": null,
-     "base": null,
+    "sim preset: Standard": {
+     "before": 779.9341064225488,
+     "after": 782.0914246449473,
+     "base": 779.9341064225488,
      "before_value": null,
      "after_value": null,
-     "oom_before": null,
-     "oom_after": null
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
@@ -173,13 +176,13 @@
     "Shadow Word: Pain"
    ],
    "rejected": {
-    "structure": 21,
+    "structure": 42,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 7
+  "passes": 8
  }
 }

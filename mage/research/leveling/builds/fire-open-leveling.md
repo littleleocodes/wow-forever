@@ -7,7 +7,7 @@
 | **Build** | 0/31/20 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -43,7 +43,7 @@ The Fire leveling build the open leveling search found on 2026-10-23: every lega
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Frost Warding** | 1/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 10%. |
-| **Improved Frostbolt** | 2/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.2 sec. |
+| **Improved Frostbolt** | 2/5 | changed | Reduces the casting time of your Frostbolt spell by 0.2 sec. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |

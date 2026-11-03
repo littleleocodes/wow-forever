@@ -79,9 +79,16 @@ MELEE = {"Raptor Strike", "Mongoose Bite", "Wing Clip", "Counterattack", "Stride
 # Survival bleed's name, audit 2 #24)
 LS_BLEED = "Lacerating Strikes"
 RANGED = {"Arcane Shot", "Multi-Shot", "Aimed Shot", "Serpent Sting", "Concussive Shot", "Scatter Shot", "Sniper Shot", "Summon Hawk", "Scorpid Sting", "Viper Sting"}
-SHARED_CD = {"Multi-Shot": ("Aimed Shot",), "Aimed Shot": ("Multi-Shot",), "Arcane Shot": ("Summon Hawk",), "Summon Hawk": ("Arcane Shot",),
-             "Immolation Trap": ("Explosive Trap",), "Explosive Trap": ("Immolation Trap",)}   # fire traps share their cooldown
 TRAPS = ("Immolation Trap", "Explosive Trap")
+# Every trap shares one 30 s cooldown since client 70753 (Blizzard's 2 Nov notes: "All types of Hunter traps now have the same shared 30 second
+# cooldown"; the fire traps had shared theirs before). Only Immolation Trap is cast (the melee hunter), so the frost traps change nothing here.
+ALL_TRAPS = ("Immolation Trap", "Explosive Trap", "Freezing Trap", "Frost Trap")
+SHARED_CD = {"Multi-Shot": ("Aimed Shot",), "Aimed Shot": ("Multi-Shot",), "Arcane Shot": ("Summon Hawk",), "Summon Hawk": ("Arcane Shot",),
+             **{tr: tuple(o for o in ALL_TRAPS if o != tr) for tr in ALL_TRAPS}}
+# Attack power scaling the tooltips do not print (Blizzard's 2 Nov notes, client 70753): Arcane Shot 0.15 of ranged attack power (was 0.1),
+# Serpent Sting 5% per tick (was 3%; 5 ticks over 15 s). Never modelled before 2026-11-03: both had read their base damage only.
+ARCANE_SHOT_RAP = 0.15
+SERPENT_RAP_PER_TICK = 0.05
 
 
 def _num(s):
@@ -133,6 +140,8 @@ def load_spellbook():
                         s.dmg_min = s.dmg_max = _num(sn.group(1)) if sn else 0.0
                     if rp:
                         s.dmg_min = s.dmg_max = _num(rp.group(1))
+                    if name == "Arcane Shot":   # resolve_attack adds coef x ranged attack power
+                        s.coef = ARCANE_SHOT_RAP
                     if name == "Summon Hawk":   # the dive bomb: the rank's base plus a share of ranged attack power (resolve_attack adds coef x RAP)
                         hm, lm, cm = HAWK.search(txt), HAWK_LIFE.search(txt), HAWK_CAP.search(txt)
                         if hm:
@@ -228,10 +237,10 @@ MECHANICS = {
     "Rapid Killing": "-1 min/rank Rapid Fire cooldown",
     "Improved Arcane Shot": "-0.3s/rank Arcane Shot cooldown",
     "Lone Wolf": "+20% damage with no pet: the pet is not summoned when the talent is taken (the melee build's choice)",
-    "Trueshot Aura": "+30/40/50/75 ranged attack power by rank (levels 25/32/40/50; rank 5 at 60 reads 50 in the client, so rank 4's 75 is cast)",
+    "Trueshot Aura": "+ranged attack power by rank from each rank's tooltip (the strongest rank known is cast: BEST_RAP_RANK)",
     "Mortal Shots": "+6%/rank ranged crit damage bonus",
     "Rapid Recuperation": "50% mana regen while casting for 15s after Serpent Sting",
-    "Barrage": "+3.3%/rank Multi-Shot and Aimed Shot",
+    "Barrage": "+5%/rank Multi-Shot and Aimed Shot (the tooltip's number; 5/10/15% since the 2026-11-03 hotfix)",
     "Scatter Shot": "not used (the pet holds the mob)",
     "Ranged Weapon Specialization": "+1%/rank ranged damage",
     "Sniper Shot": "a full ranged hit plus the rank's flat damage (4 s cast, 15 s cooldown), cast from range on cooldown while the mob has more than 30% health, before Multi-Shot / Aimed Shot, when the SNIPER_SHOT rotation knob is on (off by default; the bonus range for the next 3 Shots is not modelled)",
@@ -248,9 +257,8 @@ MECHANICS = {
                     "(the tuned rules veto the mark: it measured slower per kill even with Expose Prey)"),
     "Lacerating Strikes": "Mongoose Bite adds a bleed of 40% of its damage over 21 s (ticks crit like melee, x2)",
     "Strider Kick": "unlocks Strider Kick (a weapon hit, 8 s cooldown), cast on cooldown by the melee list",
-    "Improved Wing Clip": ("7/13/20% root 5s on Wing Clip, rank 1 of Wing Clip (level 12, the rank at 12-37) at 0.7 of it (Blizzard's 8 Oct notes: "
-                           "a reduced chance with ranks substantially below your level; the size is our assumption, the downranking rule the "
-                           "healer lab and the raid patch use)"),
+    "Improved Wing Clip": ("7/13/20% root 5s on Wing Clip at every rank of Wing Clip (Blizzard's 2 Nov notes, client 70753: the low-rank "
+                           "penalty of 8 Oct is gone; until 2026-11-03 rank 1 at 12-37 rolled at 0.7 of it)"),
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
     "Survivalist's Discipline": "-20%/rank Deterrence and trap cooldown (the melee hunter's Immolation Trap)",
     "Resourcefulness": "-30%/rank mana on melee abilities; a melee or ranged ability crit has a 50%/rank chance to let 50% of mana regen continue while casting for 30 s (70425: abilities only)",
@@ -509,6 +517,14 @@ class HunterModule(BaseModule):
             m *= 1 + self.tv("Clever Traps", 1) / 100
         return m
 
+    def periodic_multiplier(self, spell):
+        """The engine's periodic damage reads melee attack power for a ranged dot (dot_coef x attack_power), so Serpent Sting's ranged attack
+        power share is folded in here: (base + 5% of ranged attack power per tick) x the damage multiplier, snapshot when it is applied."""
+        m = self.damage_multiplier(spell, False)
+        if spell.name == "Serpent Sting" and spell.dot > 0 and self._fight is not None:
+            m *= 1 + SERPENT_RAP_PER_TICK * self._fight.p.ranged_ap * max(1, spell.dot_ticks) / spell.dot
+        return m
+
     def periodic_can_crit(self, spell):
         return False
 
@@ -650,14 +666,16 @@ class HunterModule(BaseModule):
             p.buffs["Rapid Recuperation"] = {"until": t + 15.0}
         if spell.name == "Concussive Shot" and self.rank("Improved Concussive Shot") and fight.rng.random() < self.tv("Improved Concussive Shot", 0) / 100:
             m.stun_until = max(m.stun_until, t + 3.0)
-        if spell.name == "Wing Clip" and self.rank("Improved Wing Clip") and fight.rng.random() < self.tv("Improved Wing Clip", 0) / 100 * self.low_rank_factor(spell):
+        if spell.name == "Wing Clip" and self.rank("Improved Wing Clip") and fight.rng.random() < self.tv("Improved Wing Clip", 0) / 100:
+            # no low-rank penalty since client 70753 (Blizzard's 2 Nov notes: "Various talents no longer have a penalty to their chance to
+            # trigger when casting spells of a low rank"; only Blizzard keeps one); low_rank_factor stays for reference, unused
             m.root_until = max(m.root_until, t + 5.0)
 
     def is_melee(self):
         return self.spec == "melee-dps"
 
     def low_rank_factor(self, spell):
-        """Blizzard's 8 Oct notes: "Improved Wing Clip now has ... reduced chance to activate if using ranks substantially below your current
+        """Unused since 2026-11-03 (Blizzard's 2 Nov notes removed the penalty). Blizzard's 8 Oct notes: "Improved Wing Clip now has ... reduced chance to activate if using ranks substantially below your current
         level". The size is not published: the downranking rule the healer lab and the raid patch assume (heallab/engine.downrank_multiplier,
         TBC's): x (last level before the next rank + 6) / your level once that level is 5 below yours, and x (1 - 0.0375 per level below 20)
         for a rank learned below 20. Wing Clip rank 1 (12, used to 37): 0.7; ranks 2-3 (38, 60): 1.0 in this lab (the top rank is cast)."""
@@ -789,12 +807,12 @@ class HunterModule(BaseModule):
         cd = spell.cooldown
         if spell.name == "Arcane Shot":
             cd = max(GCD, cd - 0.3 * self.rank("Improved Arcane Shot"))
-        if spell.name == "Deterrence" or spell.name in TRAPS:
+        if spell.name == "Deterrence" or spell.name in ALL_TRAPS:
             cd *= 1 - self.tv("Survivalist's Discipline", 0) / 100
         if cd > 0:
             p.cooldowns[spell.name] = t + cd
             for other in SHARED_CD.get(spell.name, ()):
-                p.cooldowns[other] = max(p.cooldowns.get(other, 0.0), t + (cd if spell.name in TRAPS else spell.cooldown))
+                p.cooldowns[other] = max(p.cooldowns.get(other, 0.0), t + (cd if spell.name in ALL_TRAPS else spell.cooldown))
         if spell.name == "Bestial Wrath":
             pass
 

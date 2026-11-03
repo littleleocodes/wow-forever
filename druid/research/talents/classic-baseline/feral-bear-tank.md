@@ -89,14 +89,14 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed |
 | Feral Combat | Feral Instinct | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 1 |
 | Feral Combat | Thick Hide | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 3 |
-| Feral Combat | Feral Charge | 1 | changed | tier 3, max 1 — tooltip changed; was Feral Combat row 3, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Feral Combat | Feral Charge | 1 | changed | tier 3, max 1 — tooltip changed; was Feral Combat row 3, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
 | Feral Combat | Sharpened Claws | 3 | changed | tier 3, max 2 — max rank 3 → 2; tooltip changed; was Feral Combat row 3, col 3 |
-| Feral Combat | Predatory Strikes | 3 | changed | tier 4, max 3 — tooltip changed; was Feral Combat row 4, col 2; moved in build 1.60.1.70707: was row 4, col 3 |
+| Feral Combat | Predatory Strikes | 3 | changed | tier 4, max 3 — tooltip changed; was Feral Combat row 4, col 2; moved in build 1.60.1.70753: was row 4, col 3 |
 | Feral Combat | Primal Fury | 1 | **REMOVED** | removed from Classic |
 | Feral Combat | Savage Fury | 2 | changed | tier 3, max 2 — tooltip changed; was Feral Combat row 5, col 1 |
 | Feral Combat | Faerie Fire (Feral) | 1 | **REMOVED** | removed from Classic |
 | Feral Combat | Heart of the Wild | 5 | moved-tree | now in Restoration, tier 1 |
-| Feral Combat | Leader of the Pack | 1 | changed | tier 5, max 1 — tooltip changed; was Feral Combat row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Feral Combat | Leader of the Pack | 1 | changed | tier 5, max 1 — tooltip changed; was Feral Combat row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
 | Restoration | Furor | 5 | moved-tree | now in Feral Combat, tier 1 |
 
 **13 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.

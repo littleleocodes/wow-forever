@@ -10,15 +10,15 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Seal Fate / Mutilate Daggers (PvP)](builds/pvp-seal-fate-daggers.md) | 30/8/13 | DPS | [pvp-seal-fate-daggers](../talents/classic-baseline/pvp-seal-fate-daggers.md) |
-| [Hemorrhage / Preparation / Thousand Cuts (PvP)](builds/pvp-hemo-prep.md) | 20/0/31 | DPS | [pvp-hemo-prep](../talents/classic-baseline/pvp-hemo-prep.md) |
+| [Seal Fate / Mutilate Daggers (PvP)](builds/pvp-seal-fate-daggers.md) | 31/8/12 | DPS | [pvp-seal-fate-daggers](../talents/classic-baseline/pvp-seal-fate-daggers.md) |
+| [Hemorrhage / Preparation / Thousand Cuts (PvP)](builds/pvp-hemo-prep.md) | 21/0/30 | DPS | [pvp-hemo-prep](../talents/classic-baseline/pvp-hemo-prep.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Assassination — PvP (derived)](builds/assassination-pvp.md) 🔬 | 30/0/21 | DPS |
-| [Combat — PvP (derived)](builds/combat-pvp.md) 🔬 | 3/31/17 | DPS |
+| [Assassination — PvP (derived)](builds/assassination-pvp.md) 🔬 | 31/0/20 | DPS |
+| [Combat — PvP (derived)](builds/combat-pvp.md) 🔬 | 2/31/18 | DPS |
 
 Classic Era reference builds: [pvp-seal-fate-daggers](../talents/classic-baseline/pvp-seal-fate-daggers.md), [pvp-hemo-prep](../talents/classic-baseline/pvp-hemo-prep.md).
 

@@ -7,7 +7,7 @@
 | **Build** | 28/10/13 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 | **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 4/5 | unchanged | Gives you a 8% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
@@ -42,7 +42,7 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
+| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt spell by 0.5 sec. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 
@@ -59,23 +59,23 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**4 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 552 | +0.0% | 661 | -1.5% | 5 s |
 | 2 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 546 | -1.0% | 650 | -3.0% | 9 s |
-| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 544 | -1.4% | 659 | -1.7% | 7 s |
-| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 671 | +0.0% | 4 s |
+| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 544 | -1.4% | 660 | -1.6% | 7 s |
+| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 670 | +0.0% | 4 s |
 | 5 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 506 | -8.4% | 572 | -14.7% | 0 s |
-| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -11.0% | 5 s |
+| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -10.9% | 5 s |
 | 7 | *Arcane Fire* | community simulator | - | 482 | -12.7% | 619 | -7.7% | 6 s |
 | 8 | *Arcane* | community simulator | - | 482 | -12.7% | 631 | -5.9% | 6 s |
 | 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 457 | -17.2% | 519 | -22.6% | 0 s |
 | 10 | *Frost Incin* | community simulator | - | 454 | -17.9% | 544 | -18.9% | 4 s |
-| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 539 | -19.5% | 9 s |
+| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 540 | -19.5% | 9 s |
 | 12 | *Fire* | community simulator | - | 408 | -26.0% | 487 | -27.4% | 8 s |
-| 13 | *FFB* | community simulator | - | 387 | -30.0% | 447 | -33.4% | 2 s |
+| 13 | *FFB* | community simulator | - | 387 | -30.0% | 446 | -33.4% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 

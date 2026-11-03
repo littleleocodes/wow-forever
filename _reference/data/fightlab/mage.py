@@ -67,8 +67,17 @@ WC_SOURCES = ("Frostbolt", "Frost Blast")
 # Arcane Wrath, Fireball, Frostbolt, Frostfire Bolt (index 2). The hotfixes read from the 70450 hotfix cache (fan site's decode, quoted in
 # _reference/audit-2026-10-18.md) take the missile hits out of the text (70425's own hotfix) and add Frost Blast to the index-2 list
 # (70450). We follow the hotfixed text; the raid simulator (db4d14a) still procs from missiles at a quarter of the Arcane Blast chance.
-MB_OTHERS = ("Arcane Wrath", "Frostbolt", "Fireball", "Frostfire Bolt", "Frost Blast")
+MB_OTHERS = ("Arcane Wrath", "Frostbolt", "Fireball", "Frostfire Bolt", "Frost Blast")   # fallback when the tooltip's list does not parse
 MB_MISSILE_PROCS = False   # True: the 70425 file text (each missile 5%/rank)
+# Missile Barrage read by wording, not by number position (2026-11-03): the text lost the missile-hit number at the 70707 refresh
+# (2026-10-30: "Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce
+# the channeled duration ... by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec"), and the 70425 positions this module
+# read from then on gave the other spells a 50% chance, cut the proc's channel by 100% (to 0 s) and its cost by 0.5% (so Clearcasting was
+# spent on it). Client 70753 (Blizzard's 2 Nov notes) also drops Frost Blast from the list.
+MB_AB = re.compile(r"Arcane Blast spell a (\d+)% chance")
+MB_MISSILE = re.compile(r"Arcane Missile hits a (\d+)% chance")
+MB_LIST = re.compile(r"and your ([^.%]+?) spells a (\d+)% chance")
+MB_CUT = re.compile(r"channeled duration of your next Arcane Missiles spell by (\d+)%, reduce the Mana cost by (\d+)%")
 AW_MANA = re.compile(r"Spell Damage equal to (\d+)% of your maximum Mana")   # Arcane Wrath (client 70425)
 LANCE_FROZEN = re.compile(r"Deals (\d+)% increased damage to Frozen targets")   # Ice Lance: 200% since 70425 (300% before)
 
@@ -257,10 +266,10 @@ MECHANICS = {
 # and Frostfire playstyles keep MECHANICS as it is (they never cast Arcane Blast or Arcane Missiles, so these are worth nothing there).
 ARCANE_MECHANICS = {
     "Arcane Blast": "unlocks Arcane Blast (ranks by level, 15% of base mana, 1.5 s): each cast 15% of Intellect as spell damage and "
-                    "+175% to its own cost per stack, up to 4 stacks, 15 s from the first (client 70425)",
+                    "+175% to its own cost per stack, up to 4 stacks, 15 s from the first (client 70425; 12% of Intellect, +100% and 18 s since client 70753: parsed from the tooltip, AB_STACK)",
     "Arcane Wrath": "unlocks Arcane Wrath (ranks by level, 3.5 s, 6 s cooldown; spell damage +5% of maximum mana): cast after the Arcane "
                     "Blast stacks while it can finish before the mob reaches you (client 70425)",
-    "Missile Barrage": "Arcane Blast 20%/rank, Arcane Wrath, Frostbolt, Frost Blast, Fireball, Frostfire Bolt 10%/rank (the hotfixed text: no "
+    "Missile Barrage": "Arcane Blast 20%/rank, Arcane Wrath, Frostbolt, Fireball, Frostfire Bolt 10%/rank (client 70753's list, read by wording; the hotfixed text: no "
                        "missile procs, Frost Blast added; MB_MISSILE_PROCS): the "
                        "next Arcane Missiles is free and fires its missiles every 0.5 s (half the channel), 15 s (duration assumed; client 70425)",
     "Improved Channeling": "20%/rank to lose no channel time to a hit during Arcane Missiles, 14%/rank no pushback on Arcane Blast and Arcane Wrath",
@@ -693,9 +702,10 @@ class MageModule(BaseModule):
         return False
 
     def on_hit(self, fight, spell, amount, crit, frozen):
-        if amount > 0 and (self.is_arcane() or self.is_barrage()) and self.rank("Missile Barrage") and (spell.name == "Arcane Blast" or spell.name in MB_OTHERS):
-            # client 70425 numbers: Arcane Blast 20%/rank (index 0), each missile 5%/rank (1, on_tick; off since the hotfix), the others 10%/rank (2)
-            chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 2)
+        if amount > 0 and (self.is_arcane() or self.is_barrage()) and self.rank("Missile Barrage") and (spell.name == "Arcane Blast" or spell.name in self.mb()["others"]):
+            # Arcane Blast 20%/rank, the listed spells 10%/rank (mb(): the tooltip's wording; client 70753 lists Arcane Wrath, Fireball,
+            # Frostbolt and Frostfire Bolt)
+            chance = self.mb()["ab"] if spell.name == "Arcane Blast" else self.mb()["other"]
             if chance and fight.rng.random() < chance / 100:
                 fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
                 fight.note("Missile Barrage")
@@ -754,7 +764,7 @@ class MageModule(BaseModule):
                 fight.p.buffs["Clearcasting"] = {"until": fight.t + 15.0}
         # client 70425 file text: each Arcane Missile hit has 5%/rank to proc Missile Barrage for the next channel (hotfixed out: MB_MISSILE_PROCS)
         if MB_MISSILE_PROCS and spell.name == "Arcane Missiles" and amount > 0 and self.is_arcane() and self.rank("Missile Barrage") \
-                and fight.rng.random() < self.tv("Missile Barrage", 1) / 100:
+                and fight.rng.random() < self.mb()["missile"] / 100:
             fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
 
     def on_miss(self, fight, spell):
@@ -942,6 +952,22 @@ class MageModule(BaseModule):
             return blast
         return "wand"
 
+    def mb(self):
+        """Missile Barrage at this rank, by wording: {"ab", "missile", "others", "other", "dur", "cost"} (chances and cuts in %)."""
+        if getattr(self, "_mb", None) is not None:
+            return self._mb
+        r = self.rank("Missile Barrage")
+        txt = ""
+        for tr in TREE["trees"]:
+            for tal in tr["talents"]:
+                if tal["name"] == "Missile Barrage" and r and r - 1 < len(tal["ranks"]):
+                    txt = tal["ranks"][r - 1] or ""
+        a, mi, li, cu = MB_AB.search(txt), MB_MISSILE.search(txt), MB_LIST.search(txt), MB_CUT.search(txt)
+        others = tuple(x.strip() for x in re.split(r",\s*(?:and\s+)?|\s+and\s+", li.group(1)) if x.strip()) if li else MB_OTHERS
+        self._mb = {"ab": float(a.group(1)) if a else 0.0, "missile": float(mi.group(1)) if mi else 0.0, "others": others,
+                    "other": float(li.group(2)) if li else 0.0, "dur": float(cu.group(1)) if cu else 50.0, "cost": float(cu.group(2)) if cu else 100.0}
+        return self._mb
+
     def missiles(self, fight):
         """Arcane Missiles to cast now: on a Missile Barrage proc a free copy that fires every 0.5 s (half the channel)."""
         am = self.spells.get("Arcane Missiles")
@@ -952,8 +978,9 @@ class MageModule(BaseModule):
             # client 70425 rank text numbers: [20/40 Arcane Blast, 5/10 per missile, 10/20 others, 50 duration, 100 cost, 0.5 s]
             # (70291's [40, 20, 50, 100, 0.5] had the cut at index 2 and the cost at 3: until 2026-10-17 a proc read the 70291 indices,
             # cutting the channel 20% and the cost 50%, so decide_arcane, which knows a proc by its zero cost, never saw one)
-            fast.channel = am.channel * (1 - self.tv("Missile Barrage", 3) / 100)
-            fast.cost = am.cost * (1 - self.tv("Missile Barrage", 4) / 100)
+            # (read by wording since 2026-11-03: mb())
+            fast.channel = am.channel * (1 - self.mb()["dur"] / 100)
+            fast.cost = am.cost * (1 - self.mb()["cost"] / 100)
             return fast
         return am
 

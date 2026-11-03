@@ -7,7 +7,7 @@
 | **Build** | 0/20/31 (Arms / Fury / Protection) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ The Protection leveling build the open leveling search found on 2026-11-02: ever
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Booming Voice** | 1/5 | changed | Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. |
+| **Booming Voice** | 1/5 | changed | Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. Also reduces the Rage cost of Piercing Howl by 5%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Lingering Rage** | 2/5 | changed | Increases the time before your Rage begins to decay after leaving combat by 4 sec. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
@@ -41,7 +41,7 @@ The Protection leveling build the open leveling search found on 2026-11-02: ever
 | **Improved Revenge** | 3/3 | changed | Increases damage dealt by your Revenge ability by 60%. |
 | **Improved Thunder Clap** | 3/3 | changed | Reduces the Rage cost of your Thunder Clap ability by 6. |
 | **Master of Defense** | 2/2 | **NEW** | Grants you a 100% chance to generate 5 Rage when you Dodge or Parry while a shield is equipped. |
-| **Defiance** | 1/3 | changed | Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped. |
+| **Defiance** | 1/3 | changed | Increases all threat generated in Defensive stance by an additional 7% while a shield is equipped. |
 | **Vanguard** | 1/1 | **NEW** | Your Charge ability is now usable while in Defensive Stance. |
 | **Improved Shield Bash** | 2/2 | unchanged | Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec. |
 | **Concussion Blow** | 1/1 | changed | Stuns the target for 5 sec. |

@@ -7,7 +7,7 @@
 | **Build** | 0/32/19 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -36,7 +36,7 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
-| **Rend and Tear** | 1/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 2%. |
+| **Rend and Tear** | 1/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 3%. |
 | **Primal Bite** | 1/1 | **NEW** | Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat. |
 
 ### Restoration (19)

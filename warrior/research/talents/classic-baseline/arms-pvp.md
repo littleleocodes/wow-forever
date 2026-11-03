@@ -83,17 +83,17 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Arms | Improved Overpower | 2 | moved | tier 2, max 2 — was Arms row 3, col 1 |
 | Arms | Anger Management | 1 | changed | tier 3, max 1 — tooltip changed |
 | Arms | Deep Wounds | 3 | changed | tier 3, max 3 — tooltip changed |
-| Arms | Two-Handed Weapon Specialization | 5 | changed | tier 4, max 3 — max rank 5 → 3 |
+| Arms | Two-Handed Weapon Specialization | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Arms | Impale | 2 | changed | tier 4, max 2 — tooltip changed |
 | Arms | Sweeping Strikes | 1 | unchanged | tier 5, max 1 |
 | Arms | Improved Hamstring | 3 | unchanged | tier 6, max 3 |
 | Arms | Mortal Strike | 1 | unchanged | tier 7, max 1 |
 | Fury | Cruelty | 5 | changed | tier 1, max 5 — tooltip changed |
-| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
-| Fury | Piercing Howl | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1) |
-| Fury | Blood Craze | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3) |
+| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
+| Fury | Piercing Howl | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1) |
+| Fury | Blood Craze | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Fury | Improved Battle Shout | 1 | **REMOVED** | removed from Classic |
-| Fury | Enrage | 5 | changed | tier 4, max 5 — tooltip changed |
+| Fury | Enrage | 5 | changed | tier 3, max 5 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3 |
 
 **6 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

@@ -1351,9 +1351,9 @@
       "content": "raid",
       "tier": "draft",
       "spec": "Hybrid Discipline/Holy",
-      "generated": "2026-10-29",
+      "generated": "2026-11-03",
       "derived": "raid",
-      "summary": "The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over smite-open-raid, the best of our builds in that rotation.",
+      "summary": "The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-11-03: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over smite-open-raid, the best of our builds in that rotation.",
       "allocation": {
         "Discipline": [
           ["Power in Light", 5],
@@ -1364,12 +1364,13 @@
           ["Meditation", 3]
         ],
         "Holy": [
-          ["Twilight Focus", 3],
           ["Holy Specialization", 5],
           ["Divine Fury", 5],
           ["Holy Nova", 1],
+          ["Blessed Recovery", 2],
           ["Inspiration", 1],
-          ["Searing Light", 2]
+          ["Searing Light", 2],
+          ["Spell Warding", 1]
         ],
         "Shadow": [
           ["Shadow Focus", 5],
@@ -1391,10 +1392,51 @@
         {"talent": "Searing Light", "why": "13 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+2.9% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 17/17/17 (Smite (a Discipline/Holy hybrid)) at 611.1 DPS; smite-open-raid 605.0, smite-discipline-raid 593.7 in the same fights; 2,354 builds simulated, 1 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blessed Recovery -> Twilight Focus (interrupt); Blessed Recovery -> Twilight Focus (interrupt); Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana). Net -0.00% on a third seed."],
+      "notes": ["+2.9% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 17/17/17 (Smite (a Discipline/Holy hybrid)) at 611.1 DPS; smite-open-raid 605.0, smite-discipline-raid 593.7 in the same fights; 2,354 builds simulated, 1 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.", "Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements.", "2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana); Twilight Focus -> Spell Warding (survival). Net -0.00% on a third seed."],
       "open_questions": ["An open-search Smite build: check it against the community's Smite builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7"],
       "replaces": "smite-discipline-raid"
+    },
+    {
+      "id": "shadow-ml-raid",
+      "name": "Shadow — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Shadow",
+      "generated": "2026-11-03",
+      "derived": "raid",
+      "summary": "The Shadow build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry shadow-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Mental Strength", 5],
+          ["Inner Focus", 1],
+          ["Martyrdom", 2],
+          ["Silent Resolve", 3]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Mind Blast", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Devouring Contagion", 2],
+          ["Early Demise", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1],
+          ["Silence", 1],
+          ["Spirit Tap", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Search result (full raid): 11/6/34 at 850.2 ± 0.09 DPS over 100,000 fights; runner-up 16/0/35 (+0.00%; the winner takes Holy Specialization 5, Silence 1, Spell Warding 1, Spirit Tap 2; the runner-up Holy Precision 1, Improved Inner Fire 1, Silent Resolve 2, Spirit Tap 4, Wand Specialization 1); 1,623 builds simulated; certificate: none of its 401 one-move and chain-move neighbours was 0.1% ahead.", "Where the simulator measured no difference, the points follow opt-shadow-dps-raid-dps: Spell Warding → Devouring Contagion, Holy Specialization → Power in Light (5 points), Spirit Tap → Wand Specialization (2 points), Silence → Shadow Reach (the same DPS as the search winner 11/6/34 on one seed, 30,000 fights).", "Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/0/34 at 837.3 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 18/0/33 at 743.0 DPS.", "2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Dark Inspiration -> Silence (interrupt); Power in Light -> Martyrdom (interrupt); Power in Light -> Martyrdom (interrupt); Power in Light -> Silent Resolve (threat); Power in Light -> Silent Resolve (threat); Power in Light -> Silent Resolve (threat); Dark Inspiration -> Spirit Tap (mana); Dark Inspiration -> Spirit Tap (mana); Shadow Reach -> Spirit Tap (mana); Wand Specialization -> Spirit Tap (mana); Wand Specialization -> Spirit Tap (mana). Net +0.00% on a third seed."],
+      "open_questions": ["A machine-searched Shadow build: check it against the community's Shadow builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"]
     }
   ]
 }

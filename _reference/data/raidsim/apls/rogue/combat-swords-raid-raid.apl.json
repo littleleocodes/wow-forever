@@ -574,21 +574,6 @@
         }
        },
        {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentEnergy": {}
-         },
-         "rhs": {
-          "spellCurrentCost": {
-           "spellId": {
-            "spellId": 31016
-           }
-          }
-         }
-        }
-       },
-       {
         "not": {
          "val": {
           "and": {
@@ -675,7 +660,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-11-01: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
   }
  ]
 }

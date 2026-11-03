@@ -306,7 +306,7 @@
  "Trueshot Aura": {
   "tree": "Marksmanship",
   "max": 1,
-  "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 15.",
+  "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 20.",
   "effects": []
  },
  "Mortal Shots": {
@@ -351,7 +351,7 @@
  "Barrage": {
   "tree": "Marksmanship",
   "max": 3,
-  "text": "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 3%.",
+  "text": "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 5%.",
   "effects": [
    {
     "channel": "dmg",
@@ -361,9 +361,9 @@
      "ability:Volley"
     ],
     "values": [
-     0.03,
-     0.07,
-     0.1
+     0.05,
+     0.1,
+     0.15
     ],
     "source": "parsed"
    }
@@ -608,7 +608,7 @@
  "Lightning Reflexes": {
   "tree": "Survival",
   "max": 5,
-  "text": "Increases your Agility by 2%.",
+  "text": "Increases your Agility by 3%.",
   "effects": [
    {
     "channel": "stat",
@@ -616,11 +616,11 @@
      "stat:agility"
     ],
     "values": [
-     0.02,
-     0.04,
+     0.03,
      0.06,
-     0.08,
-     0.1
+     0.09,
+     0.12,
+     0.15
     ],
     "source": "parsed"
    }

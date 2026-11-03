@@ -7,7 +7,7 @@
 | **Build** | 31/17/3 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ The Arcane raid build the open talent search found on 2026-11-01: every legal 51
 | **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
@@ -63,13 +63,13 @@ The Arcane raid build the open talent search found on 2026-11-01: every legal 51
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | *Arcane Fire* | community simulator | - | 536 | +0.0% | 726 | -2.2% | 14 s |
 | 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 528 | -1.5% | 742 | +0.0% | 20 s |
-| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 517 | -3.4% | 657 | -11.5% | 16 s |
+| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 517 | -3.4% | 656 | -11.5% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 

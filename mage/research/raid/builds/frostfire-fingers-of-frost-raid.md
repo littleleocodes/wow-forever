@@ -7,7 +7,7 @@
 | **Build** | 0/29/22 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -40,12 +40,12 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Frost Warding** | 2/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 30%, gives your Frost Ward a 20% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 20%. |
-| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. |
+| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt spell by 0.1 sec. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
-| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
+| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
@@ -60,14 +60,14 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 446 | +0.0% | 695 | -9.5% | 33 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 437 | -2.1% | 751 | -2.1% | 40 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 759 | -1.1% | 41 s |
-| 4 | *FFB* | community simulator | - | 423 | -5.3% | 768 | +0.0% | 47 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 446 | +0.0% | 694 | -9.4% | 33 s |
+| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 437 | -2.1% | 751 | -2.0% | 40 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.8% | 759 | -0.9% | 41 s |
+| 4 | *FFB* | community simulator | - | 423 | -5.3% | 766 | +0.0% | 47 s |
 
 ## Rotation (community simulator, training dummy)
 

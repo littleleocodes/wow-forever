@@ -2,30 +2,29 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-02",
+  "commit": "bac92dbd5",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "1510501021-4-50233111101301351"
-   },
-   {
-    "label": "ret-full-buffs-raid",
-    "talents": "05003-053020005-1523330100130033",
-    "protect_only": true
+    "label": "retribution-open-raid",
+    "talents": "0502510021-4-35233001001301351"
    },
    {
     "label": "sim preset: Unsealed Wrath",
-    "talents": "050250002-501-05233011201301351",
-    "protect_only": true
+    "talents": "050250002-501-05233011201301351"
    },
    {
     "label": "ret-raid-dps",
     "talents": "0502321022-051-1523330100130033",
+    "protect_only": true
+   },
+   {
+    "label": "ret-full-buffs-raid",
+    "talents": "05003-053020005-1523330100130033",
     "protect_only": true
    },
    {
@@ -40,7 +39,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "retribution-open-raid",
+   "sim preset: Unsealed Wrath"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -56,55 +56,55 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 830.8333939931714,
-     "after": 838.7742762789569,
-     "base": 830.8333939931714,
+    "retribution-open-raid": {
+     "before": 818.0190523411395,
+     "after": 825.51406330027,
+     "base": 818.0190523411395,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.028207999827599996,
-     "oom_after": 0.028207999827599996
-    },
-    "ret-full-buffs-raid": {
-     "before": 661.7106074032811,
-     "after": 671.7135815267058,
-     "base": 661.7106074032811,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00019849999915,
-     "oom_after": 0.00019849999915
+     "oom_before": 0,
+     "oom_after": 0
     },
     "sim preset: Unsealed Wrath": {
-     "before": 828.5274221160781,
-     "after": 837.087074156041,
-     "base": 828.5274221160781,
+     "before": 815.5583897085472,
+     "after": 824.4549942208257,
+     "base": 815.5583897085472,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "ret-raid-dps": {
-     "before": 662.9985973079159,
-     "after": 673.7520399362512,
-     "base": 662.9985973079159,
+     "before": 652.0245002392963,
+     "after": 662.7410914354144,
+     "base": 652.0245002392963,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
+    "ret-full-buffs-raid": {
+     "before": 650.8129669774703,
+     "after": 660.5428776300453,
+     "base": 650.8129669774703,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0003089999991,
+     "oom_after": 0.0003089999991
+    },
     "opt-ret-dps-raid-dps": {
-     "before": 662.9985973079159,
-     "after": 673.7520399362512,
-     "base": 662.9985973079159,
+     "before": 652.0245002392963,
+     "after": 662.7418636051909,
+     "base": 652.0245002392963,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "retribution-ml-raid": {
-     "before": 661.6806050697797,
-     "after": 672.2939019241054,
-     "base": 661.6806050697797,
+     "before": 650.8195107147252,
+     "after": 661.3514610327071,
+     "base": 650.8195107147252,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -130,6 +130,6 @@
    "on": true
   },
   "first_date": "2026-10-31",
-  "passes": 2
+  "passes": 3
  }
 }

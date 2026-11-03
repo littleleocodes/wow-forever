@@ -13,9 +13,10 @@
       "summary": "Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best build in the community simulator (+5.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 17/34/0 survives almost intact: Improved Tactical Mastery stands in for Tactical Mastery (still the gate to Anger Management), and the five orphaned Improved Battle Shout points become the new tier-3 fillers (Boundless Rage, Piercing Howl) plus Raging Blows (off-hand Whirlwind) and a point of Precision (hit); Boundless Rage and Precision were removed in build 70170.",
       "allocation": {
         "Arms": [
+          ["Deflection", 2],
           ["Improved Heroic Strike", 2],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 2]
         ],
@@ -23,13 +24,14 @@
           ["Booming Voice", 5],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
+          ["Enrage", 5],
           ["Furious Precision", 3],
           ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
-          ["Enrage", 5],
           ["Improved Execute", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -81,7 +83,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Furious Precision 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170)."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Furious Precision 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/38/0 -> 13/38/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Anger Management); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury) (refill: the fury-dw-raid model, raid-dps)."],
       "open_questions": ["Enrage uptime for a DPS warrior who rarely takes damage — is 5/5 still the best path to Flurry?", "Real max-rank values for Flurry, Unbridled Wrath and Dual Wield Specialization (demo shows rank 1 only).", "Does Raging Blows' off-hand Whirlwind beat 2 more points of Precision?"],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -95,13 +97,13 @@
       "summary": "Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best build in the community simulator (+8.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Improved Slam moved from Fury to Arms tier 6 and no longer resets the swing timer, so the two-hander build becomes an Arms build: Mortal Strike, Weaponmaster (crit/armor/extra attacks by weapon type), Bloodthrill (Overpower procs from Rend) and Improved Slam, with Cruelty, Unbridled Wrath and Improved Execute from Fury. Replaces the Classic 2H Fury/Bloodthirst build, which can no longer reach Improved Slam.",
       "allocation": {
         "Arms": [
-          ["Deflection", 3],
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 1]
+          ["Impale", 1],
+          ["Two-Handed Weapon Specialization", 3]
         ],
         "Fury": [
           ["Booming Voice", 5],
@@ -110,8 +112,10 @@
           ["Unbridled Wrath", 5],
           ["Enrage", 5],
           ["Improved Execute", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 1],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -169,7 +173,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.", "2026-09-30: renamed from \"Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170)."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.", "2026-09-30: renamed from \"Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Raging Blows (tier gating for Bloodthirst); +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["Does Improved Slam really remove the swing reset at rank 1 (demo text says so)? If yes Slam may be the primary filler.", "Weaponmaster proc/crit values at max rank; which weapon type wins.", "Whether a Bloodthirst dual-wield build still out-damages this — Classic history says DW wins with hit and weapon skill, but Improved Slam's rework may change that."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -182,19 +186,19 @@
       "summary": "Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill opens Overpower, Mortal Strike on cooldown, Overpower whenever it lights up, Slam (with Improved Slam) as the filler, Execute under 20%. The warrior rotations had never left Berserker Stance, so Overpower and Rend were never cast. Talents from the simulator talent search from the simulator's Arms 39/12/0 preset. Ties the best raid warrior builds in a full raid; behind Fury on the training dummy.",
       "allocation": {
         "Arms": [
-          ["Deflection", 2],
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
           ["Improved Overpower", 2],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
-          ["Two-Handed Weapon Specialization", 3],
           ["Impale", 2],
-          ["Bloodthrill", 5],
-          ["Weaponmaster", 4],
-          ["Improved Slam", 1],
           ["Spearing Strike", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Bloodthrill", 2],
           ["Sweeping Strikes", 1],
+          ["Weaponmaster", 5],
+          ["Improved Slam", 2],
           ["Mortal Strike", 1]
         ],
         "Fury": [
@@ -236,7 +240,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed.", "2026-10-22 (signature-spell rule, user 2026-10-22: Arms plays Mortal Strike): 1 Weaponmaster and 1 Improved Slam moved to Sweeping Strikes and Mortal Strike (34/17/0 kept); +11.7% in a full raid over the previous draft on the official simulator 30f67f5 (20,000 fights, seed 2)."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed.", "2026-10-22 (signature-spell rule, user 2026-10-22: Arms plays Mortal Strike): 1 Weaponmaster and 1 Improved Slam moved to Sweeping Strikes and Mortal Strike (34/17/0 kept); +11.7% in a full raid over the previous draft on the official simulator 30f67f5 (20,000 fights, seed 2).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 34/17/0 -> 34/17/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Deflection (tier gating for Impale); +1 Weaponmaster (tier gating for Mortal Strike); +1 Improved Slam (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.", "Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model)."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warrior/dps/presets.ts", "https://warcraftforever.games/talents/warrior"]
     },
@@ -252,24 +256,26 @@
         "Arms": [
           ["Deflection", 5],
           ["Improved Heroic Strike", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1]
         ],
         "Fury": [
           ["Cruelty", 5]
         ],
         "Protection": [
-          ["Anticipation", 5],
+          ["Improved Bloodrage", 1],
           ["Shield Specialization", 5],
+          ["Anticipation", 5],
+          ["Improved Revenge", 3],
           ["Improved Thunder Clap", 3],
           ["Defiance", 3],
-          ["Improved Revenge", 3],
           ["Master of Defense", 2],
+          ["Improved Sunder Armor", 1],
+          ["Vanguard", 1],
           ["Concussion Blow", 1],
-          ["Bastion", 5],
           ["Focused Rage", 3],
-          ["Shield Slam", 1],
-          ["Improved Bloodrage", 1]
+          ["Bastion", 5],
+          ["Shield Slam", 1]
         ]
       },
       "core": [
@@ -314,7 +320,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-27: opt-prot-tank-raid-tank beat the previous draft by +8.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-prot-tank-raid-tank beat the previous draft by +9.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Shield Block is gone: check whether Shield Block itself gained the extra charge baseline.", "Improved Thunder Clap moved into Protection (tier 2) — a dungeon/AoE tank can take it over Improved Bloodrage's partner Toughness.", "Beta client 1.60.1.69893 removed Vitality (5 points): re-spent as Focused Rage 3 (-3 Rage on offensive abilities) and Improved Revenge 2.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Vanguard -> Improved Bloodrage (+0.2% DPS). Net +0.19% on a third seed."],
+      "notes": ["Adopted from the community simulator on 2026-09-27: opt-prot-tank-raid-tank beat the previous draft by +8.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-prot-tank-raid-tank beat the previous draft by +9.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Shield Block is gone: check whether Shield Block itself gained the extra charge baseline.", "Improved Thunder Clap moved into Protection (tier 2) — a dungeon/AoE tank can take it over Improved Bloodrage's partner Toughness.", "Beta client 1.60.1.69893 removed Vitality (5 points): re-spent as Focused Rage 3 (-3 Rage on offensive abilities) and Improved Revenge 2.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Vanguard -> Improved Bloodrage (+0.2% DPS). Net +0.19% on a third seed.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 14/5/32 -> 12/5/34; Improved Tactical Mastery 5 -> 3 (rank cap); refill +1 Vanguard, +1 Improved Sunder Armor (refill: the prot-tank model, raid-tank)."],
       "open_questions": ["Is Bastion's +10% damage worth more threat than Anger Management + Improved Tactical Mastery (the Classic Arms dip)?", "Does Shield Block still block an extra attack without Improved Shield Block?", "Vitality max rank (only rank 1 seen)."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -331,23 +337,25 @@
           ["Improved Heroic Strike", 2],
           ["Improved Rend", 3],
           ["Improved Charge", 2],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Overpower", 1],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
-          ["Two-Handed Weapon Specialization", 3],
           ["Impale", 2],
+          ["Two-Handed Weapon Specialization", 3],
           ["Sweeping Strikes", 1],
           ["Weaponmaster", 5],
           ["Improved Hamstring", 3],
+          ["Improved Slam", 1],
           ["Mortal Strike", 1]
         ],
         "Fury": [
           ["Booming Voice", 1],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Piercing Howl", 1],
           ["Blood Craze", 3],
-          ["Enrage", 5]
+          ["Enrage", 5],
+          ["Piercing Howl", 1]
         ],
         "Protection": []
       },
@@ -380,7 +388,7 @@
           "why": "Rage vs. crowd-control resistance."
         }
       ],
-      "notes": ["Bloodthrill (Overpower procs from Rend) competes with Weaponmaster at tier 5; Rend uptime in PvP is unreliable, so Weaponmaster is the default.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Blood Craze 3, Booming Voice 1 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Improved Cleave replaced (removed in 70170)."],
+      "notes": ["Bloodthrill (Overpower procs from Rend) competes with Weaponmaster at tier 5; Rend uptime in PvP is unreliable, so Weaponmaster is the default.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Blood Craze 3, Booming Voice 1 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Improved Cleave replaced (removed in 70170).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/20/0 -> 31/20/0; Improved Tactical Mastery 5 -> 3 (rank cap); +1 Improved Overpower (tier gating for Impale); +1 Improved Slam (tier gating for Mortal Strike) (refill: the arms-2h-raid model, pvp)."],
       "open_questions": ["Iron Will's max-rank value; if it is 15%+ it likely beats Unbridled Wrath for PvP.", "Whether Improved Overpower (now tier 2) should replace Improved Charge."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -399,21 +407,22 @@
           ["Improved Charge", 2],
           ["Improved Overpower", 2],
           ["Deep Wounds", 3],
+          ["Impale", 2],
           ["Spearing Strike", 1],
           ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2],
-          ["Bloodthrill", 5],
+          ["Bloodthrill", 2],
           ["Sweeping Strikes", 1],
-          ["Weaponmaster", 3],
+          ["Weaponmaster", 4],
+          ["Improved Slam", 2],
           ["Mortal Strike", 1]
         ],
         "Fury": [
           ["Booming Voice", 1],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Piercing Howl", 1],
           ["Blood Craze", 3],
-          ["Enrage", 5]
+          ["Enrage", 5],
+          ["Piercing Howl", 1]
         ],
         "Protection": []
       },
@@ -443,32 +452,9 @@
           "why": "A tier filler on the way to Mortal Strike: none of the three does anything measurable single-target."
         }
       ],
-      "notes": ["Tier unlock levels: tier 2 at 15, tier 3 at 20, tier 4 at 25, tier 5 at 30, tier 6 at 35, tier 7 at 40.", "Spearing Strike (16-pt, extra damage vs. Giants/Dragonkin, dismounts) is skipped: leveling mobs are mostly Beasts/Humanoids.", "This allocation is the optimizer's (opt-arms-2h-raid-leveling-st) with the order fixed by hand: the optimizer buys Cruelty first and reaches Mortal Strike at 45, which is 14% slower at 40 in the sim; Arms first with Mortal Strike at 40 is within 2% of it at 20-30 and 3% faster at 40. The previous hand draft (Improved Heroic Strike, Improved Slam, Improved Execute, Boundless Rage instead of Deflection 5, Weaponmaster 3, Enrage 5, Blood Craze 3) was 7% slower at 60.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 1 out; Booming Voice 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 27.2 s per kill; stats model 27.6 s; own tree last 29.8 s.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in 70170).", "Fight lab (leveling/fightlab/arms-2h-raid.md, 2026-11-02, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 23/26/26/27/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-arms-2h-raid-leveling-st is -2% at 60 and -4% at 30 (negative = faster); race winner over the leveling: cand-arms-r5; top talents at 60: Bloodthrill +6%, Mortal Strike +6%, Cruelty +5%, Weaponmaster +5%; about zero: Improved Hamstring, Improved Tactical Mastery, Spearing Strike, Sweeping Strikes, Unbridled Wrath. See the Fight lab section of leveling/README.md."],
+      "notes": ["Tier unlock levels: tier 2 at 15, tier 3 at 20, tier 4 at 25, tier 5 at 30, tier 6 at 35, tier 7 at 40.", "Spearing Strike (16-pt, extra damage vs. Giants/Dragonkin, dismounts) is skipped: leveling mobs are mostly Beasts/Humanoids.", "This allocation is the optimizer's (opt-arms-2h-raid-leveling-st) with the order fixed by hand: the optimizer buys Cruelty first and reaches Mortal Strike at 45, which is 14% slower at 40 in the sim; Arms first with Mortal Strike at 40 is within 2% of it at 20-30 and 3% faster at 40. The previous hand draft (Improved Heroic Strike, Improved Slam, Improved Execute, Boundless Rage instead of Deflection 5, Weaponmaster 3, Enrage 5, Blood Craze 3) was 7% slower at 60.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 1 out; Booming Voice 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 27.2 s per kill; stats model 27.6 s; own tree last 29.8 s.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in 70170).", "Fight lab (leveling/fightlab/arms-2h-raid.md, 2026-11-02, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 23/26/26/27/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-arms-2h-raid-leveling-st is -2% at 60 and -4% at 30 (negative = faster); race winner over the leveling: cand-arms-r5; top talents at 60: Bloodthrill +6%, Mortal Strike +6%, Cruelty +5%, Weaponmaster +5%; about zero: Improved Hamstring, Improved Tactical Mastery, Spearing Strike, Sweeping Strikes, Unbridled Wrath. See the Fight lab section of leveling/README.md.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/20/0 -> 31/20/0; Bloodthrill 5 -> 2 (rank cap); +1 Improved Slam (tier gating for Mortal Strike); +1 Improved Slam (tier gating for Mortal Strike); +1 Weaponmaster (tier gating for Mortal Strike); order dropped (order_repair.py) (refill: the arms-2h-raid model, leveling-st)."],
       "open_questions": ["Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.", "Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring."],
-      "sources": ["https://warcraftforever.games/talents/warrior"],
-      "order": [
-        {"levels": "10-12", "tree": "Arms", "talent": "Improved Rend", "points": 3},
-        {"levels": "13-14", "tree": "Arms", "talent": "Deflection", "points": 2},
-        {"levels": "15-16", "tree": "Arms", "talent": "Improved Overpower", "points": 2},
-        {"levels": "17-18", "tree": "Arms", "talent": "Improved Charge", "points": 2},
-        {"levels": "19", "tree": "Arms", "talent": "Deflection", "points": 1},
-        {"levels": "20-22", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
-        {"levels": "23-24", "tree": "Arms", "talent": "Deflection", "points": 2},
-        {"levels": "25-27", "tree": "Arms", "talent": "Two-Handed Weapon Specialization", "points": 3},
-        {"levels": "28-29", "tree": "Arms", "talent": "Impale", "points": 2},
-        {"levels": "30-32", "tree": "Arms", "talent": "Weaponmaster", "points": 3},
-        {"levels": "33-37", "tree": "Arms", "talent": "Bloodthrill", "points": 5},
-        {"levels": "38", "tree": "Arms", "talent": "Spearing Strike", "points": 1},
-        {"levels": "39", "tree": "Arms", "talent": "Sweeping Strikes", "points": 1},
-        {"levels": "40", "tree": "Arms", "talent": "Mortal Strike", "points": 1},
-        {"levels": "41-45", "tree": "Fury", "talent": "Cruelty", "points": 5},
-        {"levels": "46-50", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
-        {"levels": "51-53", "tree": "Fury", "talent": "Blood Craze", "points": 3},
-        {"levels": "54", "tree": "Fury", "talent": "Piercing Howl", "points": 1},
-        {"levels": "55", "tree": "Fury", "talent": "Booming Voice", "points": 1},
-        {"levels": "56-60", "tree": "Fury", "talent": "Enrage", "points": 5}
-      ],
-      "order_label": "own tree first"
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
       "id": "arms-community-parse",
@@ -482,16 +468,17 @@
       "summary": "Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 2026-09-30 snapshot). In the community simulator's full-raid setting (every raid buff and debuff, the equal-tier phase-1 gear) it does 13.9% more than our best Arms build (704 vs 618 DPS, 20,000 iterations, seed 3); on the training dummy it ties it (-0.9%). A talent search from it found no better build.",
       "allocation": {
         "Arms": [
+          ["Deflection", 5],
           ["Improved Heroic Strike", 3],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
           ["Improved Overpower", 2],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
+          ["Impale", 2],
           ["Spearing Strike", 1],
           ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2],
-          ["Bloodthrill", 5],
+          ["Bloodthrill", 2],
           ["Sweeping Strikes", 1],
           ["Weaponmaster", 5],
           ["Improved Slam", 2],
@@ -507,7 +494,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Booming Voice 3 in; to be re-optimized.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arms: its full-raid winner is +0.40% against it, under the 0.5% bar for a new build."],
+      "notes": ["2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Booming Voice 3 in; to be re-optimized.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arms: its full-raid winner is +0.40% against it, under the 0.5% bar for a new build.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 37/14/0 -> 37/14/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model."],
       "sources": ["https://talentsforever.com/warrior/60/30305213132515201-05050103--4", "https://talentsforever.com/popular.js"]
     },
@@ -526,21 +513,22 @@
           ["Deflection", 5],
           ["Improved Rend", 1],
           ["Improved Charge", 2],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1]
         ],
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
+          ["Blood Craze", 3],
+          ["Enrage", 5],
           ["Furious Precision", 1],
           ["Piercing Howl", 1],
-          ["Blood Craze", 3],
           ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
-          ["Enrage", 5],
           ["Improved Execute", 2],
-          ["Improved Berserker Rage", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
+          ["Gore Drinker", 2],
+          ["Improved Berserker Rage", 2],
           ["Improved Intercept", 2],
           ["Flurry", 2],
           ["Bloodthirst", 1]
@@ -558,7 +546,7 @@
         {"talent": "Piercing Howl", "why": "The scorer's value in this build: +7.7% of its score (model fury-dw-raid)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 1 point Iron Will -> Improved Rend; 1 point Booming Voice -> Furious Precision; 2 points Iron Will -> Flurry.", "Where we disagree with the community: most Fury builds take Deep Wounds (71% take it), which the model values below this build's weakest point; this build takes Flurry (18%), Improved Berserker Rage (20%), Improved Charge (18%), Iron Will (15%), which few Fury builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Community tie-break moves: 1 point Iron Will -> Improved Rend; 1 point Booming Voice -> Furious Precision; 2 points Iron Will -> Flurry.", "Where we disagree with the community: most Fury builds take Deep Wounds (71% take it), which the model values below this build's weakest point; this build takes Flurry (18%), Improved Berserker Rage (20%), Improved Charge (18%), Iron Will (15%), which few Fury builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 14/36/1 -> 12/38/1; Improved Tactical Mastery 5 -> 3 (rank cap); refill +2 Gore Drinker (refill: the fury-dw-raid model, pvp)."],
       "open_questions": ["A derived Fury PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"]
     },
@@ -621,26 +609,27 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `leveling-st`: score +40.3% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
-          ["Improved Rend", 3],
           ["Deflection", 5],
-          ["Improved Overpower", 2],
+          ["Improved Heroic Strike", 3],
+          ["Improved Rend", 3],
           ["Improved Charge", 2],
-          ["Improved Tactical Mastery", 5],
-          ["Deep Wounds", 3],
+          ["Improved Overpower", 2],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2],
           ["Spearing Strike", 1],
           ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2],
+          ["Bloodthrill", 2],
           ["Sweeping Strikes", 1],
-          ["Bloodthrill", 5],
           ["Weaponmaster", 5],
-          ["Improved Slam", 2],
           ["Improved Hamstring", 3],
+          ["Improved Slam", 2],
           ["Mortal Strike", 1]
         ],
         "Fury": [
           ["Cruelty", 5],
-          ["Unbridled Wrath", 2]
+          ["Unbridled Wrath", 4]
         ],
         "Protection": []
       },
@@ -655,39 +644,9 @@
         {"talent": "Deep Wounds", "why": "Removing it costs 1.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-st.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 44/7/0 -> 42/9/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); refill +2 Unbridled Wrath; order dropped (order_repair.py) (refill: the arms-2h-raid model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"],
-      "order": [
-        {"levels": "10-12", "tree": "Arms", "talent": "Improved Rend", "points": 3},
-        {"levels": "13-14", "tree": "Arms", "talent": "Deflection", "points": 2},
-        {"levels": "15-16", "tree": "Arms", "talent": "Improved Overpower", "points": 2},
-        {"levels": "17-18", "tree": "Arms", "talent": "Improved Charge", "points": 2},
-        {"levels": "19", "tree": "Arms", "talent": "Improved Tactical Mastery", "points": 1},
-        {"levels": "20-22", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
-        {"levels": "23-24", "tree": "Arms", "talent": "Improved Tactical Mastery", "points": 2},
-        {"levels": "25", "tree": "Arms", "talent": "Spearing Strike", "points": 1},
-        {"levels": "26-28", "tree": "Arms", "talent": "Two-Handed Weapon Specialization", "points": 3},
-        {"levels": "29", "tree": "Arms", "talent": "Impale", "points": 1},
-        {"levels": "30-34", "tree": "Arms", "talent": "Bloodthrill", "points": 5},
-        {"levels": "35-36", "tree": "Arms", "talent": "Improved Slam", "points": 2},
-        {"levels": "37-38", "tree": "Arms", "talent": "Weaponmaster", "points": 2},
-        {"levels": "39", "tree": "Arms", "talent": "Sweeping Strikes", "points": 1},
-        {"levels": "40", "tree": "Arms", "talent": "Mortal Strike", "points": 1},
-        {"levels": "41-42", "tree": "Fury", "talent": "Cruelty", "points": 2},
-        {"levels": "43", "tree": "Arms", "talent": "Weaponmaster", "points": 1},
-        {"levels": "44", "tree": "Fury", "talent": "Cruelty", "points": 1},
-        {"levels": "45", "tree": "Arms", "talent": "Weaponmaster", "points": 1},
-        {"levels": "46", "tree": "Fury", "talent": "Cruelty", "points": 1},
-        {"levels": "47", "tree": "Arms", "talent": "Weaponmaster", "points": 1},
-        {"levels": "48", "tree": "Fury", "talent": "Cruelty", "points": 1},
-        {"levels": "49", "tree": "Arms", "talent": "Impale", "points": 1},
-        {"levels": "50-51", "tree": "Arms", "talent": "Improved Tactical Mastery", "points": 2},
-        {"levels": "52", "tree": "Arms", "talent": "Anger Management", "points": 1},
-        {"levels": "53-55", "tree": "Arms", "talent": "Deflection", "points": 3},
-        {"levels": "56-58", "tree": "Arms", "talent": "Improved Hamstring", "points": 3},
-        {"levels": "59-60", "tree": "Fury", "talent": "Unbridled Wrath", "points": 2}
-      ]
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
       "id": "opt-fury-dw-raid-leveling-st",
@@ -698,23 +657,24 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `leveling-st`: score +38.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
-          ["Improved Rend", 3],
           ["Deflection", 5],
+          ["Improved Rend", 3],
           ["Improved Charge", 2],
           ["Deep Wounds", 3]
         ],
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
           ["Blood Craze", 3],
-          ["Improved Execute", 2],
-          ["Dual Wield Specialization", 5],
           ["Enrage", 5],
+          ["Furious Precision", 3],
+          ["Dual Wield Specialization", 5],
+          ["Improved Execute", 2],
           ["Death Wish", 1],
-          ["Improved Intercept", 1],
           ["Gore Drinker", 2],
-          ["Flurry", 5],
+          ["Improved Intercept", 1],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -730,32 +690,9 @@
         {"talent": "Unbridled Wrath", "why": "Removing it costs 1.2 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-leveling-st.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/38/0 -> 13/38/0; Flurry 5 -> 3 (rank cap); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury); order dropped (order_repair.py) (refill: the fury-dw-raid model, leveling-st)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"],
-      "order": [
-        {"levels": "10-14", "tree": "Fury", "talent": "Cruelty", "points": 5},
-        {"levels": "15-19", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
-        {"levels": "20-22", "tree": "Fury", "talent": "Furious Precision", "points": 3},
-        {"levels": "23-24", "tree": "Fury", "talent": "Blood Craze", "points": 2},
-        {"levels": "25-26", "tree": "Fury", "talent": "Improved Execute", "points": 2},
-        {"levels": "27-29", "tree": "Fury", "talent": "Enrage", "points": 3},
-        {"levels": "30", "tree": "Fury", "talent": "Death Wish", "points": 1},
-        {"levels": "31-32", "tree": "Fury", "talent": "Enrage", "points": 2},
-        {"levels": "33-37", "tree": "Fury", "talent": "Dual Wield Specialization", "points": 5},
-        {"levels": "38-39", "tree": "Fury", "talent": "Flurry", "points": 2},
-        {"levels": "40", "tree": "Fury", "talent": "Bloodthirst", "points": 1},
-        {"levels": "41-42", "tree": "Fury", "talent": "Gore Drinker", "points": 2},
-        {"levels": "43-45", "tree": "Fury", "talent": "Flurry", "points": 3},
-        {"levels": "46-50", "tree": "Arms", "talent": "Deflection", "points": 5},
-        {"levels": "51", "tree": "Fury", "talent": "Blood Craze", "points": 1},
-        {"levels": "52", "tree": "Arms", "talent": "Improved Charge", "points": 1},
-        {"levels": "53", "tree": "Arms", "talent": "Improved Rend", "points": 1},
-        {"levels": "54", "tree": "Arms", "talent": "Improved Charge", "points": 1},
-        {"levels": "55-56", "tree": "Arms", "talent": "Improved Rend", "points": 2},
-        {"levels": "57-59", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
-        {"levels": "60", "tree": "Fury", "talent": "Improved Intercept", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
       "id": "opt-fury-dw-raid-solo-60",
@@ -767,22 +704,24 @@
       "allocation": {
         "Arms": [
           ["Deflection", 5],
-          ["Improved Tactical Mastery", 5],
           ["Improved Charge", 2],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1]
         ],
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
           ["Blood Craze", 3],
-          ["Improved Execute", 2],
           ["Enrage", 5],
+          ["Furious Precision", 3],
           ["Dual Wield Specialization", 5],
+          ["Improved Execute", 2],
           ["Raging Blows", 1],
           ["Death Wish", 1],
-          ["Flurry", 5],
           ["Gore Drinker", 2],
+          ["Improved Intercept", 2],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -798,30 +737,9 @@
         {"talent": "Death Wish", "why": "Removing it costs 1.2 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-solo-60.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-solo-60.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/38/0 -> 11/40/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury); refill +2 Improved Intercept; order dropped (order_repair.py) (refill: the fury-dw-raid model, solo-60)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"],
-      "order": [
-        {"levels": "10-14", "tree": "Fury", "talent": "Cruelty", "points": 5},
-        {"levels": "15-19", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
-        {"levels": "20-22", "tree": "Fury", "talent": "Furious Precision", "points": 3},
-        {"levels": "23-24", "tree": "Fury", "talent": "Blood Craze", "points": 2},
-        {"levels": "25-26", "tree": "Fury", "talent": "Improved Execute", "points": 2},
-        {"levels": "27-29", "tree": "Fury", "talent": "Enrage", "points": 3},
-        {"levels": "30", "tree": "Fury", "talent": "Death Wish", "points": 1},
-        {"levels": "31-32", "tree": "Fury", "talent": "Enrage", "points": 2},
-        {"levels": "33-37", "tree": "Fury", "talent": "Dual Wield Specialization", "points": 5},
-        {"levels": "38-39", "tree": "Fury", "talent": "Flurry", "points": 2},
-        {"levels": "40", "tree": "Fury", "talent": "Bloodthirst", "points": 1},
-        {"levels": "41-42", "tree": "Fury", "talent": "Gore Drinker", "points": 2},
-        {"levels": "43-45", "tree": "Fury", "talent": "Flurry", "points": 3},
-        {"levels": "46", "tree": "Fury", "talent": "Raging Blows", "points": 1},
-        {"levels": "47-51", "tree": "Arms", "talent": "Deflection", "points": 5},
-        {"levels": "52-53", "tree": "Arms", "talent": "Improved Charge", "points": 2},
-        {"levels": "54", "tree": "Fury", "talent": "Blood Craze", "points": 1},
-        {"levels": "55-59", "tree": "Arms", "talent": "Improved Tactical Mastery", "points": 5},
-        {"levels": "60", "tree": "Arms", "talent": "Anger Management", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
       "id": "opt-arms-2h-raid-leveling-aoe",
@@ -837,21 +755,22 @@
           ["Improved Charge", 2],
           ["Improved Overpower", 2],
           ["Deep Wounds", 3],
+          ["Impale", 1],
           ["Spearing Strike", 1],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 1]
+          ["Two-Handed Weapon Specialization", 3]
         ],
         "Fury": [
           ["Booming Voice", 1],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Piercing Howl", 1],
           ["Blood Craze", 3],
           ["Enrage", 5],
+          ["Piercing Howl", 1],
           ["Improved Execute", 2],
           ["Death Wish", 1],
+          ["Gore Drinker", 2],
           ["Improved Intercept", 2],
-          ["Flurry", 5],
+          ["Flurry", 3],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -867,35 +786,9 @@
         {"talent": "Two-Handed Weapon Specialization", "why": "Removing it costs 1.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r1 on 2026-10-19: an earlier optimizer round beat the last export in the fight lab (41.7s vs 42.3s per kill, level-weighted).", "Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-aoe.md", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (arms-2h-raid)."],
+      "notes": ["Allocation and order taken from cand-aoe-r1 on 2026-10-19: an earlier optimizer round beat the last export in the fight lab (41.7s vs 42.3s per kill, level-weighted).", "Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-aoe.md", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (arms-2h-raid).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/31/0 -> 20/31/0; Flurry 5 -> 3 (rank cap); +1 Gore Drinker (tier gating for Bloodthirst); +1 Gore Drinker (tier gating for Bloodthirst); order dropped (order_repair.py) (refill: the arms-2h-raid model, leveling-aoe)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"],
-      "order": [
-        {"levels": "10-11", "tree": "Arms", "talent": "Deflection", "points": 2},
-        {"levels": "12-13", "tree": "Fury", "talent": "Cruelty", "points": 2},
-        {"levels": "14", "tree": "Arms", "talent": "Deflection", "points": 1},
-        {"levels": "15-17", "tree": "Fury", "talent": "Cruelty", "points": 3},
-        {"levels": "18", "tree": "Arms", "talent": "Deflection", "points": 1},
-        {"levels": "19-23", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
-        {"levels": "24-26", "tree": "Fury", "talent": "Blood Craze", "points": 3},
-        {"levels": "27", "tree": "Fury", "talent": "Piercing Howl", "points": 1},
-        {"levels": "28", "tree": "Fury", "talent": "Booming Voice", "points": 1},
-        {"levels": "29-33", "tree": "Fury", "talent": "Enrage", "points": 5},
-        {"levels": "34", "tree": "Fury", "talent": "Death Wish", "points": 1},
-        {"levels": "35-36", "tree": "Fury", "talent": "Improved Execute", "points": 2},
-        {"levels": "37-38", "tree": "Fury", "talent": "Improved Intercept", "points": 2},
-        {"levels": "39-43", "tree": "Fury", "talent": "Flurry", "points": 5},
-        {"levels": "44", "tree": "Fury", "talent": "Bloodthirst", "points": 1},
-        {"levels": "45", "tree": "Arms", "talent": "Deflection", "points": 1},
-        {"levels": "46-47", "tree": "Arms", "talent": "Improved Overpower", "points": 2},
-        {"levels": "48-50", "tree": "Arms", "talent": "Improved Rend", "points": 3},
-        {"levels": "51-53", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
-        {"levels": "54-55", "tree": "Arms", "talent": "Improved Charge", "points": 2},
-        {"levels": "56", "tree": "Arms", "talent": "Spearing Strike", "points": 1},
-        {"levels": "57-59", "tree": "Arms", "talent": "Two-Handed Weapon Specialization", "points": 3},
-        {"levels": "60", "tree": "Arms", "talent": "Impale", "points": 1}
-      ],
-      "order_label": "stats model"
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
       "id": "protection-leveling",
@@ -972,25 +865,26 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +105.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
-          ["Deflection", 3],
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Deep Wounds", 3],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2]
+          ["Deep Wounds", 3],
+          ["Impale", 2],
+          ["Two-Handed Weapon Specialization", 3]
         ],
         "Fury": [
           ["Booming Voice", 2],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
           ["Blood Craze", 3],
+          ["Dual Wield Specialization", 4],
           ["Improved Execute", 2],
           ["Raging Blows", 1],
-          ["Dual Wield Specialization", 4],
           ["Death Wish", 1],
           ["Improved Berserker Rage", 2],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -1006,7 +900,7 @@
         {"talent": "Improved Berserker Rage", "why": "Removing it costs 4.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-raid-dps.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-raid-dps.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/31/0 -> 20/31/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (tier gating for Bloodthirst); +1 Improved Whirlwind (tier gating for Bloodthirst) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -1019,25 +913,26 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `parse`: score +104.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
-          ["Deflection", 3],
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Deep Wounds", 3],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2]
+          ["Deep Wounds", 3],
+          ["Impale", 2],
+          ["Two-Handed Weapon Specialization", 3]
         ],
         "Fury": [
           ["Booming Voice", 2],
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
           ["Blood Craze", 3],
+          ["Dual Wield Specialization", 4],
           ["Improved Execute", 2],
           ["Raging Blows", 1],
-          ["Dual Wield Specialization", 4],
           ["Death Wish", 1],
           ["Improved Berserker Rage", 2],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -1053,7 +948,7 @@
         {"talent": "Improved Berserker Rage", "why": "Removing it costs 4.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-parse.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-parse.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/31/0 -> 20/31/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (tier gating for Bloodthirst); +1 Improved Whirlwind (tier gating for Bloodthirst) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -1066,9 +961,9 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +132.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Deflection", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
           ["Impale", 2],
@@ -1077,14 +972,15 @@
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
           ["Blood Craze", 3],
+          ["Furious Precision", 3],
           ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
           ["Improved Execute", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
           ["Improved Berserker Rage", 2],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -1100,7 +996,7 @@
         {"talent": "Furious Precision", "why": "Removing it costs 6.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-raid-dps.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-raid-dps.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/33/0 -> 18/33/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury) (refill: the fury-dw-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -1113,9 +1009,9 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `parse`: score +132.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arms": [
+          ["Deflection", 5],
           ["Improved Rend", 3],
-          ["Deflection", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
           ["Impale", 2],
@@ -1124,14 +1020,15 @@
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
           ["Blood Craze", 3],
+          ["Furious Precision", 3],
           ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
           ["Improved Execute", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
           ["Improved Berserker Rage", 2],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": []
@@ -1147,7 +1044,7 @@
         {"talent": "Furious Precision", "why": "Removing it costs 6.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-parse.md"],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-parse.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/33/0 -> 18/33/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury) (refill: the fury-dw-raid model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -1251,20 +1148,22 @@
       "summary": "The Arms build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry arms-battle-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
       "allocation": {
         "Arms": [
-          ["Deflection", 4],
+          ["Deflection", 5],
+          ["Improved Heroic Strike", 3],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Charge", 1],
           ["Improved Overpower", 2],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
+          ["Impale", 2],
           ["Spearing Strike", 1],
           ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 2],
-          ["Bloodthrill", 5],
+          ["Bloodthrill", 2],
           ["Sweeping Strikes", 1],
           ["Weaponmaster", 5],
-          ["Improved Slam", 2],
           ["Improved Hamstring", 1],
+          ["Improved Slam", 2],
           ["Mortal Strike", 1]
         ],
         "Fury": [
@@ -1277,7 +1176,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft arms-battle-raid in a full raid, same gear and fights (100,000, one seed): +0.8% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow arms-battle-raid: Improved Heroic Strike → Deflection (2 points), Improved Charge → Booming Voice (2 points) (the same DPS as the search winner 39/10/2 on one seed, 30,000 fights).", "Search result (full raid): 39/10/2 at 793.2 ± 0.17 DPS over 100,000 fights; runner-up 39/10/2 (+0.00%; the winner takes Improved Charge 2; the runner-up Deflection 1, Improved Charge 1); 2,087 builds simulated; certificate: none of its 477 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 38/10/3 at 786.0 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 34/17/0 at 368.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Deflection (survival). Net +0.00% on a third seed."],
+      "notes": ["Against the best hand draft arms-battle-raid in a full raid, same gear and fights (100,000, one seed): +0.8% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow arms-battle-raid: Improved Heroic Strike → Deflection (2 points), Improved Charge → Booming Voice (2 points) (the same DPS as the search winner 39/10/2 on one seed, 30,000 fights).", "Search result (full raid): 39/10/2 at 793.2 ± 0.17 DPS over 100,000 fights; runner-up 39/10/2 (+0.00%; the winner takes Improved Charge 2; the runner-up Deflection 1, Improved Charge 1); 2,087 builds simulated; certificate: none of its 477 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 38/10/3 at 786.0 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 34/17/0 at 368.0 DPS.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Deflection (survival). Net +0.00% on a third seed.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 39/10/2 -> 39/10/2; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Deflection (back into Arms); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); +1 Improved Charge (back into Arms) (refill: the arms-2h-raid model, raid-dps)."],
       "open_questions": ["A machine-searched Arms build: check it against the community's Arms builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "arms-battle-raid"
@@ -1294,24 +1193,26 @@
       "summary": "The Fury raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
       "allocation": {
         "Arms": [
+          ["Deflection", 2],
           ["Improved Heroic Strike", 3],
-          ["Deflection", 1],
           ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 5],
+          ["Improved Tactical Mastery", 3],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
-          ["Impale", 2]
+          ["Impale", 2],
+          ["Spearing Strike", 1]
         ],
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
           ["Blood Craze", 3],
+          ["Furious Precision", 3],
           ["Dual Wield Specialization", 5],
-          ["Raging Blows", 1],
           ["Improved Execute", 2],
+          ["Raging Blows", 1],
           ["Death Wish", 1],
-          ["Flurry", 5],
+          ["Flurry", 3],
+          ["Improved Whirlwind", 2],
           ["Bloodthirst", 1]
         ],
         "Protection": [
@@ -1329,7 +1230,7 @@
         {"talent": "Furious Precision", "why": "26 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+5.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fury-dw-raid, full raid): 18/31/2 (Fury) at 924.2 DPS; opt-fury-dw-raid-raid-dps 913.9, fury-dw-raid 873.9 in the same fights; 5,742 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 816.4, arms-2h-raid 798.3.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.5%, arms-battle-raid -18.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Blood Craze.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements."],
+      "notes": ["+5.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fury-dw-raid, full raid): 18/31/2 (Fury) at 924.2 DPS; opt-fury-dw-raid-raid-dps 913.9, fury-dw-raid 873.9 in the same fights; 5,742 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 816.4, arms-2h-raid 798.3.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.5%, arms-battle-raid -18.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Blood Craze.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/31/2 -> 18/31/2; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (tier gating for Bloodthirst); +1 Improved Whirlwind (tier gating for Bloodthirst); refill +1 Spearing Strike (refill: the fury-dw-raid model, raid-dps)."],
       "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7"],
       "replaces": "fury-dw-raid"
@@ -1346,8 +1247,8 @@
       "summary": "The Fury leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fury-dw-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fury-dw-raid). ",
       "allocation": {
         "Arms": [
-          ["Improved Heroic Strike", 3],
           ["Deflection", 2],
+          ["Improved Heroic Strike", 3],
           ["Improved Rend", 3],
           ["Improved Charge", 2],
           ["Improved Overpower", 2],
@@ -1357,41 +1258,18 @@
         "Fury": [
           ["Cruelty", 5],
           ["Unbridled Wrath", 5],
-          ["Furious Precision", 3],
-          ["Blood Craze", 2],
-          ["Dual Wield Specialization", 5],
+          ["Blood Craze", 3],
           ["Enrage", 5],
+          ["Furious Precision", 3],
+          ["Dual Wield Specialization", 5],
           ["Improved Execute", 2],
           ["Death Wish", 1],
-          ["Flurry", 5],
-          ["Gore Drinker", 1],
+          ["Gore Drinker", 2],
+          ["Flurry", 3],
           ["Bloodthirst", 1]
         ],
         "Protection": []
       },
-      "order": [
-        {"levels": "10-14", "tree": "Fury", "talent": "Cruelty", "points": 5},
-        {"levels": "15-19", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
-        {"levels": "20-22", "tree": "Fury", "talent": "Furious Precision", "points": 3},
-        {"levels": "23-24", "tree": "Fury", "talent": "Blood Craze", "points": 2},
-        {"levels": "25-26", "tree": "Fury", "talent": "Improved Execute", "points": 2},
-        {"levels": "27-29", "tree": "Fury", "talent": "Enrage", "points": 3},
-        {"levels": "30", "tree": "Fury", "talent": "Death Wish", "points": 1},
-        {"levels": "31-32", "tree": "Fury", "talent": "Enrage", "points": 2},
-        {"levels": "33-37", "tree": "Fury", "talent": "Dual Wield Specialization", "points": 5},
-        {"levels": "38-39", "tree": "Fury", "talent": "Flurry", "points": 2},
-        {"levels": "40", "tree": "Fury", "talent": "Bloodthirst", "points": 1},
-        {"levels": "41", "tree": "Fury", "talent": "Gore Drinker", "points": 1},
-        {"levels": "42-43", "tree": "Fury", "talent": "Flurry", "points": 2},
-        {"levels": "44-45", "tree": "Arms", "talent": "Deflection", "points": 2},
-        {"levels": "46", "tree": "Fury", "talent": "Flurry", "points": 1},
-        {"levels": "47-49", "tree": "Arms", "talent": "Improved Rend", "points": 3},
-        {"levels": "50-51", "tree": "Arms", "talent": "Improved Charge", "points": 2},
-        {"levels": "52-54", "tree": "Arms", "talent": "Improved Heroic Strike", "points": 3},
-        {"levels": "55-57", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
-        {"levels": "58-59", "tree": "Arms", "talent": "Improved Overpower", "points": 2},
-        {"levels": "60", "tree": "Arms", "talent": "Impale", "points": 1}
-      ],
       "core": [
         {"talent": "Cruelty", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Dual Wield Specialization", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1403,7 +1281,7 @@
         {"talent": "Improved Overpower", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.26; opt-fury-dw-raid-leveling-st 25.71, opt-fury-dw-raid-solo-60 25.90, opt-arms-2h-raid-leveling-aoe 27.23. The search simulated 42,447 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.26; opt-fury-dw-raid-leveling-st 25.71, opt-fury-dw-raid-solo-60 25.90, opt-arms-2h-raid-leveling-aoe 27.23. The search simulated 42,447 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 16/35/0 -> 16/35/0; Flurry 5 -> 3 (rank cap); +1 Blood Craze (prerequisite of Gore Drinker); +1 Gore Drinker (back into Fury); order dropped (order_repair.py) (refill: the fury-dw-raid model, leveling-st)."],
       "open_questions": ["An open-search Fury leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/warrior/60/32320203001-05053025052010511--7"]
     },

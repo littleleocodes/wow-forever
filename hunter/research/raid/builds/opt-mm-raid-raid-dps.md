@@ -7,7 +7,7 @@
 | **Build** | 31/16/4 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -37,7 +37,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 
 ### Survival (4)
 
@@ -58,14 +58,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 414 | +0.0% | 736 | -5.9% | 37 s |
-| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 393 | -5.0% | 720 | -7.9% | 31 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 392 | -5.2% | 782 | +0.0% | 47 s |
-| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 375 | -9.2% | 719 | -8.1% | 25 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 388 | +0.0% | 691 | -8.3% | 37 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 377 | -2.6% | 753 | +0.0% | 47 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 374 | -3.5% | 686 | -8.9% | 31 s |
+| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 357 | -7.9% | 685 | -9.0% | 25 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,11 +116,11 @@ Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 33% |
-| Pet: Auto Attack | 31% |
-| Arcane Shot | 15% |
-| Serpent Sting | 8% |
-| Aimed Shot | 6% |
+| Auto Shot | 35% |
+| Pet: Auto Attack | 26% |
+| Arcane Shot | 16% |
+| Serpent Sting | 9% |
+| Aimed Shot | 7% |
 | Pet: Bite | 3% |
 | Pet: Claw | 2% |
 | Multi-Shot | 1% |

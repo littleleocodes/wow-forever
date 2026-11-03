@@ -34,12 +34,29 @@ TALENTS = {
                                         lambda i, m: "Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229")],
 }
 
-# (class, spell) -> ([edits of every rank's text], {field: value} for every rank)
-SPELLS = {}
+
+def _per_rank(pat, values):
+    """Replace the number the pattern's group captures with values[rank index] (a spell's ranks are its list order)."""
+    return lambda i, s: re.sub(pat, lambda m: m.group(0).replace(m.group(1), str(values[i])), s, count=1) if i < len(values) else s
 
 
-def _mark(rec, i, old):
-    h = rec.setdefault("hotfix", {"date": DATE, "sources": SOURCES, "ranks": [], "before": {}})
+# 2026-11-03: the hunter hotfix first seen in the launch realms' hotfix cache on 3 Nov, applied over the 2 Nov build (no Blizzard notes;
+# per-rank numbers from foreverchanges.pro; the official simulator's draft PR #824 "Take the live hotfix's shot buffs" takes the same
+# change). talentsforever's export of 2026-11-03 already carries the talent half (Lightning Reflexes 3%, Barrage 5/10/15%, Trueshot Aura)
+# and Aspect of the Hawk; the shots below still had the 2 Nov numbers.
+HUNTER_1103 = ("2026-11-03", ["https://foreverchanges.pro/patch-notes", "https://github.com/wowsims/forever/pull/824"])
+
+# (class, spell) -> ([edits of every rank's text], {field: value} for every rank[, (date, sources)])
+SPELLS = {
+    ("hunter", "Aimed Shot"): ([_per_rank(r"increases ranged damage by (\d+)", [40, 70, 115, 185, 260, 350])], {}, HUNTER_1103),
+    ("hunter", "Arcane Shot"): ([_per_rank(r"causes (\d+) Arcane damage", [25, 35, 50, 85, 120, 175, 220, 280])], {}, HUNTER_1103),
+    ("hunter", "Serpent Sting"): ([_per_rank(r"causing (\d+) Nature damage", [15, 35, 70, 130, 200, 290, 375, 500, 675])], {}, HUNTER_1103),
+    ("hunter", "Sniper Shot"): ([_per_rank(r"ranged damage plus (\d+)", [320, 450, 590])], {}, HUNTER_1103),
+}
+
+
+def _mark(rec, i, old, date=None, sources=None):
+    h = rec.setdefault("hotfix", {"date": date or DATE, "sources": sources or SOURCES, "ranks": [], "before": {}})
     if i + 1 not in h["ranks"]:
         h["ranks"].append(i + 1)
         h["before"][str(i + 1)] = old
@@ -73,14 +90,15 @@ def apply_spells(cls, obj):
             x = SPELLS.get((cls, sp["name"]))
             if not x:
                 continue
-            eds, fields = x
+            eds, fields = x[0], x[1]
+            date, sources = x[2] if len(x) > 2 else (None, None)
             for i, r in enumerate(sp["ranks"]):
                 new = r.get("text", "")
                 for e in eds:
                     new = e(i, new)
                 changed = new != r.get("text", "") or any(r.get(k) != v for k, v in fields.items())
                 if changed:
-                    _mark(r, 0, {"text": r.get("text", ""), **{k: r.get(k) for k in fields}})
+                    _mark(r, 0, {"text": r.get("text", ""), **{k: r.get(k) for k in fields}}, date, sources)
                     r["text"] = new
                     r.update(fields)
             if any(r.get("hotfix") for r in sp["ranks"]):

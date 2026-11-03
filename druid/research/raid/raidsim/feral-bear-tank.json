@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "54ceac638",
+  "commit": "bac92dbd5",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
@@ -33,7 +33,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "results": [
   {
    "label": "feral-bear-tank",
@@ -42,40 +42,40 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "22812": 3.009333333333333,
     "5229": 3.009333333333333,
-    "9881": 452.01366666666667,
-    "22812": 3.009333333333333
+    "9881": 449.222
    },
    "casts": {
+    "Auto Attack": 150.24433333333334,
+    "Barkskin": 3.009333333333333,
     "Enrage": 3.009333333333333,
-    "Auto Attack": 150.60333333333335,
-    "OtherActionRageGain": 159.61066666666667,
-    "Maul": 452.01366666666667,
-    "Barkskin": 3.009333333333333
+    "Maul": 449.222,
+    "OtherActionRageGain": 156.68533333333335
    },
-   "dps": 1947.710629715273,
-   "dps_stdev": 152.25747125794783,
-   "threat": 3018.0676388909797,
-   "dtps": 391.37944788657876,
+   "dps": 1895.5514517442348,
+   "dps_stdev": 147.8288080440496,
+   "threat": 2938.9276353858486,
+   "dtps": 396.1274387944926,
    "tmi": 0,
-   "hps": 89.97612962962988,
+   "hps": 89.55217962962969,
    "oom_seconds": 0,
    "error": null,
    "scorer": 1.054654982612242,
    "shares": {
-    "Maul": 0.7864199363231189,
-    "Auto Attack": 0.176599666988662,
-    "Judgement of Light": 0.021991729673688787,
-    "OtherActionRageGain": 0.009982932880105353,
-    "Retribution Aura": 0.002630121968676912,
-    "Thorns": 0.0023756121657480624
+    "Maul": 0.7861833413628325,
+    "Auto Attack": 0.17608761038350793,
+    "Judgement of Light": 0.02248464193252858,
+    "OtherActionRageGain": 0.010044385532598059,
+    "Retribution Aura": 0.0027360020380169598,
+    "Thorns": 0.002464018750515855
    },
    "source_shares": {
-    "maul": 0.8146,
-    "white": 0.1829,
-    "thorns": 0.0025
+    "maul": 0.8149,
+    "white": 0.1825,
+    "thorns": 0.0026
    },
-   "unmatched_share": 0.0346,
+   "unmatched_share": 0.0353,
    "value": 1.0
   },
   {
@@ -85,41 +85,41 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9881": 547.366,
+    "22812": 3.009333333333333,
     "5229": 3.009333333333333,
-    "22812": 3.009333333333333
+    "9881": 543.1973333333333
    },
    "casts": {
-    "Auto Attack": 168.2,
-    "Maul": 547.366,
+    "OtherActionRageGain": 305.9986666666667,
+    "Auto Attack": 167.94133333333335,
+    "Barkskin": 3.009333333333333,
     "Enrage": 3.009333333333333,
-    "OtherActionRageGain": 312.54766666666666,
-    "Barkskin": 3.009333333333333
+    "Maul": 543.1973333333333
    },
-   "dps": 2442.2549944634925,
-   "dps_stdev": 200.3735249735091,
-   "threat": 3807.8139944971554,
-   "dtps": 370.8155970960128,
+   "dps": 2375.173132166565,
+   "dps_stdev": 193.898517468343,
+   "threat": 3705.0838785997057,
+   "dtps": 375.80558865744325,
    "tmi": 0,
-   "hps": 111.93161111111105,
+   "hps": 110.88421851851824,
    "oom_seconds": 0,
    "error": null,
    "scorer": 1.5565232938852083,
    "shares": {
-    "Maul": 0.8076039484387383,
-    "Auto Attack": 0.15086496290823295,
-    "Judgement of Light": 0.021650338292363742,
-    "OtherActionRageGain": 0.01627995531195919,
-    "Retribution Aura": 0.001895307330717136,
-    "Thorns": 0.0017054877179885925
+    "Maul": 0.8069784243146331,
+    "Auto Attack": 0.15086109822570565,
+    "Judgement of Light": 0.02205011178156305,
+    "OtherActionRageGain": 0.01636310233537273,
+    "Retribution Aura": 0.0019726813857618626,
+    "Thorns": 0.0017745819569636716
    },
    "source_shares": {
-    "maul": 0.8411,
-    "white": 0.1571,
+    "maul": 0.8409,
+    "white": 0.1572,
     "thorns": 0.0018
    },
-   "unmatched_share": 0.0398,
-   "value": 1.1585642907407983
+   "unmatched_share": 0.0404,
+   "value": 1.1573839413618416
   },
   {
    "label": "feral-combat-ml-tank",
@@ -129,40 +129,40 @@
    "measured": true,
    "spell_casts": {
     "22812": 3.009333333333333,
-    "9881": 451.91366666666664,
+    "9881": 448.94533333333334,
     "5229": 3.009333333333333
    },
    "casts": {
     "Barkskin": 3.009333333333333,
-    "Auto Attack": 154.20600000000002,
-    "OtherActionRageGain": 163.554,
-    "Maul": 451.91366666666664,
+    "Auto Attack": 153.62633333333332,
+    "OtherActionRageGain": 160.741,
+    "Maul": 448.94533333333334,
     "Enrage": 3.009333333333333
    },
-   "dps": 1966.9968452547325,
-   "dps_stdev": 147.5548191820321,
-   "threat": 3051.1752453711747,
-   "dtps": 391.80618299563355,
+   "dps": 1913.173861411474,
+   "dps_stdev": 144.09677436955315,
+   "threat": 2969.513455142053,
+   "dtps": 395.16405844946274,
    "tmi": 0,
-   "hps": 94.54220555555537,
+   "hps": 94.06245185185188,
    "oom_seconds": 0,
    "error": null,
    "scorer": 1.1519671381847643,
    "shares": {
-    "Maul": 0.7835863344900422,
-    "Auto Attack": 0.17842654170380823,
-    "Judgement of Light": 0.022853254053631235,
-    "OtherActionRageGain": 0.010143859973758836,
-    "Retribution Aura": 0.002627603617089452,
-    "Thorns": 0.0023624061616700697
+    "Maul": 0.7833170814552078,
+    "Auto Attack": 0.1779143100289782,
+    "Judgement of Light": 0.02336679435714057,
+    "OtherActionRageGain": 0.010225463947704261,
+    "Retribution Aura": 0.002722742335448761,
+    "Thorns": 0.0024536078755203043
    },
    "source_shares": {
-    "maul": 0.8125,
-    "white": 0.185,
-    "thorns": 0.0024
+    "maul": 0.8128,
+    "white": 0.1846,
+    "thorns": 0.0025
    },
-   "unmatched_share": 0.0356,
-   "value": 1.0049403271006063
+   "unmatched_share": 0.0363,
+   "value": 1.0064225305372334
   },
   {
    "label": "sim preset: Bear",
@@ -170,45 +170,45 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "1235827": 16.491333333333333,
-    "5229": 3.0083333333333333,
     "22812": 3.005333333333333,
-    "9881": 332.90066666666667
+    "1235827": 16.500666666666667,
+    "5229": 3.0076666666666667,
+    "9881": 330.90133333333335
    },
    "casts": {
-    "Lacerate": 16.491333333333333,
-    "Enrage": 3.0083333333333333,
-    "Auto Attack": 140.25733333333335,
+    "OtherActionRageGain": 203.038,
     "Barkskin": 3.005333333333333,
-    "Maul": 332.90066666666667,
-    "OtherActionRageGain": 206.78866666666667
+    "Lacerate": 16.500666666666667,
+    "Enrage": 3.0076666666666667,
+    "Auto Attack": 140.096,
+    "Maul": 330.90133333333335
    },
-   "dps": 1902.7668102514172,
-   "dps_stdev": 157.44940971356147,
-   "threat": 2950.6685965642223,
-   "dtps": 397.01756051802937,
+   "dps": 1854.1048555079833,
+   "dps_stdev": 153.43975628552596,
+   "threat": 2876.6545071166674,
+   "dtps": 399.73476672254924,
    "tmi": 0,
-   "hps": 76.56640925925905,
+   "hps": 76.22797222222214,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Maul": 0.7579356404773333,
-    "Auto Attack": 0.17611019544630344,
-    "Lacerate": 0.027694192106055667,
-    "Judgement of Light": 0.01916876497741189,
-    "OtherActionRageGain": 0.013541916696392221,
-    "Retribution Aura": 0.002921499256523998,
-    "Thorns": 0.0026277910399793805
+    "Maul": 0.7568012532726037,
+    "Auto Attack": 0.17616241166501248,
+    "Lacerate": 0.028105762791380454,
+    "Judgement of Light": 0.01957866096181843,
+    "OtherActionRageGain": 0.013618660307880582,
+    "Retribution Aura": 0.0030225591261733987,
+    "Thorns": 0.0027106918751309645
    },
    "source_shares": {
-    "maul": 0.7859,
-    "white": 0.1826,
-    "lacerate": 0.0287,
-    "thorns": 0.0027
+    "maul": 0.7852,
+    "white": 0.1828,
+    "lacerate": 0.0292,
+    "thorns": 0.0028
    },
-   "unmatched_share": 0.0356,
-   "value": 0.9817334901473342
+   "unmatched_share": 0.0362,
+   "value": 0.9848933157305733
   },
   {
    "label": "sim preset: Hybrid",
@@ -216,45 +216,45 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "1235827": 16.471666666666668,
-    "5229": 3.007,
-    "9881": 339.64666666666665,
-    "22812": 3.0033333333333334
+    "1235827": 16.482,
+    "22812": 3.0043333333333333,
+    "5229": 3.0073333333333334,
+    "9881": 340.07233333333335
    },
    "casts": {
-    "Lacerate": 16.471666666666668,
-    "Enrage": 3.007,
-    "Auto Attack": 139.09733333333332,
-    "Maul": 339.64666666666665,
-    "OtherActionRageGain": 33.007,
-    "Barkskin": 3.0033333333333334
+    "Lacerate": 16.482,
+    "Barkskin": 3.0043333333333333,
+    "Enrage": 3.0073333333333334,
+    "Auto Attack": 139.45933333333335,
+    "Maul": 340.07233333333335,
+    "OtherActionRageGain": 33.007333333333335
    },
-   "dps": 1820.7003762537456,
-   "dps_stdev": 133.1474357867778,
-   "threat": 2791.8812685788985,
-   "dtps": 395.53449928107773,
+   "dps": 1785.4898903894284,
+   "dps_stdev": 133.3310838890622,
+   "threat": 2739.25587460876,
+   "dtps": 400.19022875647084,
    "tmi": 0,
-   "hps": 77.32224444444445,
+   "hps": 77.55890185185181,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Maul": 0.7598930319831576,
-    "Auto Attack": 0.184903338249397,
-    "Lacerate": 0.027582202771029192,
-    "Judgement of Light": 0.02044420304472909,
-    "Retribution Aura": 0.003069166852072504,
-    "Thorns": 0.002763832075111036,
-    "OtherActionRageGain": 0.0013442250245036284
+    "Maul": 0.7598595623028331,
+    "Auto Attack": 0.184145837999156,
+    "Lacerate": 0.027694908684652214,
+    "Judgement of Light": 0.020906401625312182,
+    "Retribution Aura": 0.0031712967794854567,
+    "Thorns": 0.0028518922136530267,
+    "OtherActionRageGain": 0.0013701003949080149
    },
    "source_shares": {
-    "maul": 0.7793,
-    "white": 0.1896,
-    "lacerate": 0.0283,
-    "thorns": 0.0028
+    "maul": 0.7797,
+    "white": 0.189,
+    "lacerate": 0.0284,
+    "thorns": 0.0029
    },
-   "unmatched_share": 0.0249,
-   "value": 0.9572754974721516
+   "unmatched_share": 0.0254,
+   "value": 0.9609537535241119
   }
  ],
  "deltas": {}

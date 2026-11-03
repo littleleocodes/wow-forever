@@ -19,6 +19,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10947,
+      "rank": 9
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -92,16 +102,6 @@
      "spellId": {
       "spellId": 1309636,
       "rank": 4
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 10947,
-      "rank": 9
      }
     }
    }

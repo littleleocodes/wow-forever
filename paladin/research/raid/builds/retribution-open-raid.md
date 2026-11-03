@@ -7,7 +7,7 @@
 | **Build** | 16/4/31 (Holy / Protection / Retribution) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -43,9 +43,9 @@ The Retribution raid build the open talent search found on 2026-11-01: every leg
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
-| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Repentance** | 1/1 | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. |
-| **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
+| **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 | **Champion of the Light** | 5/5 | **NEW** | Increases your spell damage by up to 60% of your Intellect, and reduces the cast time of your Hammer of Wrath by 1.0 sec. |
 | **Unsealed Wrath** | 1/1 | **NEW** | Your melee attacks store a copy of your active Seal for 15 sec, stacking up to 3 times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack. |
 
@@ -62,22 +62,22 @@ The Retribution raid build the open talent search found on 2026-11-01: every leg
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 447 | +0.0% | 840 | +0.0% | 32 s |
-| 2 | *Unsealed Wrath* | community simulator | - | 447 | -0.1% | 837 | -0.5% | 32 s |
-| 3 | *Holy Shock* | community simulator | - | 437 | -2.4% | 728 | -13.4% | 1 s |
-| 4 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 402 | -10.1% | 675 | -19.7% | 0 s |
-| 5 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 401 | -10.3% | 675 | -19.7% | 1 s |
-| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 358 | -20.0% | 670 | -20.3% | 22 s |
-| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 355 | -20.6% | 670 | -20.3% | 24 s |
+| 1 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 445 | +0.0% | 828 | +0.0% | 32 s |
+| 2 | *Unsealed Wrath* | community simulator | - | 445 | -0.1% | 824 | -0.5% | 32 s |
+| 3 | *Holy Shock* | community simulator | - | 435 | -2.4% | 717 | -13.4% | 1 s |
+| 4 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 400 | -10.1% | 664 | -19.8% | 0 s |
+| 5 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 399 | -10.3% | 664 | -19.8% | 1 s |
+| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 356 | -20.0% | 659 | -20.4% | 22 s |
+| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 353 | -20.7% | 659 | -20.4% | 24 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 2 passes, the last 2026-11-01, 1 changes to the base rotation; third-seed check: open winner 831 -> 839 DPS (+1.0%), ret-full-buffs-raid 662 -> 672 DPS (+1.5%), sim preset: Unsealed Wrath 829 -> 837 DPS (+1.0%), ret-raid-dps 663 -> 674 DPS (+1.6%), opt-ret-dps-raid-dps 663 -> 674 DPS (+1.6%), retribution-ml-raid 662 -> 672 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 passes, the last 2026-11-02, 1 changes to the base rotation; third-seed check: retribution-open-raid 818 -> 826 DPS (+0.9%), sim preset: Unsealed Wrath 816 -> 824 DPS (+1.1%), ret-raid-dps 652 -> 663 DPS (+1.6%), ret-full-buffs-raid 651 -> 661 DPS (+1.5%), opt-ret-dps-raid-dps 652 -> 663 DPS (+1.6%), retribution-ml-raid 651 -> 661 DPS (+1.6%)):
   1. insert in the middle: cast Consecration (+1.2%, pass 1)
 
 Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.

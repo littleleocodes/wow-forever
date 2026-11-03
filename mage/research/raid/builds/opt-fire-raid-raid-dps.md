@@ -7,7 +7,7 @@
 | **Build** | 18/31/2 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 1/2 | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Fire (31)
@@ -62,19 +62,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Rank among our builds and the community simulator's
 
-**3 of 9** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 9** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 548 | +0.0% | 828 | +0.0% | 10 s |
-| 2 | *Fire* | community simulator | - | 540 | -1.5% | 822 | -0.7% | 15 s |
-| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 537 | -2.0% | 795 | -4.1% | 9 s |
-| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 531 | -3.1% | 798 | -3.7% | 15 s |
-| 5 | *FFB* | community simulator | - | 442 | -19.3% | 697 | -15.8% | 41 s |
-| 6 | *Arcane Fire* | community simulator | - | 388 | -29.2% | 616 | -25.7% | 1 s |
-| 7 | *Arcane* | community simulator | - | 343 | -37.4% | 414 | -50.0% | 1 s |
-| 8 | *Frost Incin* | community simulator | - | 317 | -42.1% | 348 | -58.0% | 0 s |
-| 9 | *Frost Med* | community simulator | - | 304 | -44.6% | 378 | -54.4% | 0 s |
+| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 548 | +0.0% | 827 | +0.0% | 10 s |
+| 2 | *Fire* | community simulator | - | 540 | -1.5% | 821 | -0.7% | 15 s |
+| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 537 | -2.0% | 793 | -4.1% | 9 s |
+| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 531 | -3.1% | 797 | -3.5% | 15 s |
+| 5 | *FFB* | community simulator | - | 442 | -19.3% | 693 | -16.1% | 41 s |
+| 6 | *Arcane Fire* | community simulator | - | 388 | -29.2% | 615 | -25.6% | 1 s |
+| 7 | *Arcane* | community simulator | - | 343 | -37.4% | 414 | -49.9% | 1 s |
+| 8 | *Frost Incin* | community simulator | - | 317 | -42.1% | 345 | -58.3% | 0 s |
+| 9 | *Frost Med* | community simulator | - | 304 | -44.6% | 377 | -54.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

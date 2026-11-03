@@ -7,7 +7,7 @@
 | **Build** | 19/32/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `fury-2h-raid` |
 
 ## Summary
@@ -20,26 +20,28 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 3/5 | unchanged | Increases your Parry chance by 3%. |
+| **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
-| **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
+| **Improved Tactical Mastery** | 3/3 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
-| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 1/2 | changed | Increases the critical strike damage bonus of your abilities by 10%. |
+| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
 
 ### Fury (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Booming Voice** | 5/5 | changed | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. |
+| **Booming Voice** | 5/5 | changed | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. Also reduces the Rage cost of Piercing Howl by 25%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Lingering Rage** | 3/5 | changed | Increases the time before your Rage begins to decay after leaving combat by 6 sec. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 | **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
+| **Raging Blows** | 1/1 | **NEW** | Reduces the Rage cost of your Cleave and Whirlwind abilities by 3. |
 | **Death Wish** | 1/1 | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. |
-| **Flurry** | 5/5 | changed | Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
+| **Flurry** | 3/3 | changed | Increases your melee attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
+| **Improved Whirlwind** | 1/2 | **NEW** | Reduces the cooldown of your Whirlwind ability by 1 second and increases the damage it deals to the closest enemy by 15%. |
 | **Bloodthirst** | 1/1 | changed | Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. |
 
 ### Protection (0)
@@ -70,14 +72,14 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 364 | +0.0% | 816 | +0.0% | 0 s |
-| 2 | *Fury* | community simulator | - | 353 | -3.0% | 792 | -3.0% | 0 s |
-| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 350 | -3.9% | 798 | -2.2% | 0 s |
-| 4 | *Arms* | community simulator | - | 304 | -16.6% | 673 | -17.6% | 0 s |
+| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 364 | +0.0% | 798 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 353 | -3.0% | 776 | -2.8% | 0 s |
+| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 350 | -3.9% | 780 | -2.2% | 0 s |
+| 4 | *Arms* | community simulator | - | 304 | -16.6% | 660 | -17.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -160,6 +162,7 @@ Damage by ability:
 - 2026-09-30: renamed from "Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized.
 - 2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Raging Blows (tier gating for Bloodthirst); +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

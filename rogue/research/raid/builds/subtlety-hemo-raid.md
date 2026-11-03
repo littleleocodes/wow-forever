@@ -1,13 +1,13 @@
-# Subtlety — Hemorrhage (raid) — 20/0/31
+# Subtlety — Hemorrhage (raid) — 21/0/30
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 20/0/31 (Assassination / Combat / Subtlety) |
+| **Build** | 21/0/30 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,40 +15,40 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Point allocation
 
-### Assassination (20)
+### Assassination (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
-| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
-| **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
-| **Lethality** | 1/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 4%. |
 | **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
-| **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
+| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
+| **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
+| **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
+| **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
 
 ### Combat (0)
 
 *No points.*
 
-### Subtlety (31)
+### Subtlety (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Camouflage** | 5/5 | changed | Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 6 sec. |
 | **Master of Deception** | 3/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. |
-| **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
+| **Opportunity** | 5/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%. |
+| **Setup** | 3/3 | changed | Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
+| **Camouflage** | 3/3 | changed | Grants 15% increased movement speed in stealth and reduces stealth's cooldown by 6 seconds. |
+| **Dirty Deeds** | 2/2 | changed | Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target. |
+| **Dirty Tricks** | 1/2 | **NEW** | Reduces the Energy cost of your Sap and Blind abilities by 25%. |
 | **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
-| **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. |
 | **Premeditation** | 1/1 | changed | Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. |
 | **Serrated Blades** | 3/3 | changed | Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%. |
-| **Dirty Deeds** | 2/2 | changed | Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target. |
+| **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Also causes your next Ambush or Garrote cast within 7 seconds to not require Stealth. |
+| **Hemorrhage** | 1/1 | changed | An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and increases the damage of the caster's Rupture and Garrote abilities by 15%. Lasts 15 sec. Awards 1 Combo Point. |
 | **Preparation** | 1/1 | unchanged | When activated, this ability immediately finishes the cooldown on your other Rogue abilities. |
-| **Hemorrhage** | 1/1 | changed | An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point. |
-| **Quietus** | 5/5 | **NEW** | Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 10% more damage against targets below 35% health. |
-| **Thousand Cuts** | 1/1 | **NEW** | When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within 10 sec is reduced by 3, stacking up to 5 times. |
 
 ## Core talents (priority order)
 
@@ -78,13 +78,13 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 319 | +0.0% | 576 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 298 | -6.7% | 576 | +0.0% | 0 s |
-| 3 | *Subtlety BS* | community simulator | - | 283 | -11.4% | 554 | -3.8% | 0 s |
+| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 319 | +0.0% | 563 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 298 | -6.7% | 563 | +0.0% | 0 s |
+| 3 | *Subtlety BS* | community simulator | - | 283 | -11.4% | 541 | -3.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -160,6 +160,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Subtlety Hemo 15/0/36`: 2 points Remorseless Attacks -> Improved Expose Armor, 5 points Cutthroat -> Improved Poisons, 2 points Murder -> Improved Slice and Dice, 1 point Improved Gouge -> Lethality, 1 point Improved Poisons -> Cold Blood, 1 point Lethality -> Improved Slice and Dice.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/0/31 -> 21/0/30; Camouflage 5 -> 3 (rank cap); Quietus 5 gone; Thousand Cuts 1 gone; +1 Lethality (tier gating for Cold Blood); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Dirty Tricks (back into Subtlety) (refill: the combat-daggers-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

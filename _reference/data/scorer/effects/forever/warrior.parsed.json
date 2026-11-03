@@ -67,8 +67,8 @@
  },
  "Improved Tactical Mastery": {
   "tree": "Arms",
-  "max": 5,
-  "text": "Tactical Mastery lets you retain up to an additional 3 Rage when you change stances.",
+  "max": 3,
+  "text": "Tactical Mastery lets you retain up to an additional 5 Rage when you change stances.",
   "effects": []
  },
  "Improved Overpower": {
@@ -110,7 +110,7 @@
  "Two-Handed Weapon Specialization": {
   "tree": "Arms",
   "max": 3,
-  "text": "Increases the damage you deal with two-handed melee weapons by 1%.",
+  "text": "Increases the damage you deal with two-handed melee weapons by 2%.",
   "effects": [
    {
     "channel": "dmg",
@@ -118,9 +118,9 @@
      "weapon:2h"
     ],
     "values": [
-     0.01,
      0.02,
-     0.03
+     0.04,
+     0.06
     ],
     "source": "parsed"
    }
@@ -146,8 +146,8 @@
  },
  "Bloodthrill": {
   "tree": "Arms",
-  "max": 5,
-  "text": "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 4% chance to allow an activation of Overpower.",
+  "max": 2,
+  "text": "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 10% chance to allow an activation of Overpower.",
   "effects": []
  },
  "Sweeping Strikes": {
@@ -180,7 +180,7 @@
  "Improved Slam": {
   "tree": "Arms",
   "max": 2,
-  "text": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.",
+  "text": "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 2.5 sec.",
   "effects": []
  },
  "Improved Hamstring": {
@@ -198,7 +198,7 @@
  "Booming Voice": {
   "tree": "Fury",
   "max": 5,
-  "text": "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.",
+  "text": "Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. Also reduces the Rage cost of Piercing Howl by 5%.",
   "effects": []
  },
  "Cruelty": {
@@ -265,6 +265,12 @@
   "text": "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.",
   "effects": []
  },
+ "Enrage": {
+  "tree": "Fury",
+  "max": 5,
+  "text": "Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+  "effects": []
+ },
  "Dual Wield Specialization": {
   "tree": "Fury",
   "max": 5,
@@ -304,10 +310,10 @@
    }
   ]
  },
- "Enrage": {
+ "Reckless Swings": {
   "tree": "Fury",
-  "max": 5,
-  "text": "Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack.",
+  "max": 1,
+  "text": "Your next 4 melee attacks generate 5 additional Rage. Lasts 8 seconds.",
   "effects": []
  },
  "Improved Execute": {
@@ -351,6 +357,12 @@
    }
   ]
  },
+ "Gore Drinker": {
+  "tree": "Fury",
+  "max": 2,
+  "text": "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
+  "effects": []
+ },
  "Improved Intercept": {
   "tree": "Fury",
   "max": 2,
@@ -371,15 +383,27 @@
  },
  "Flurry": {
   "tree": "Fury",
-  "max": 5,
-  "text": "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+  "max": 3,
+  "text": "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
   "effects": []
  },
- "Gore Drinker": {
+ "Improved Whirlwind": {
   "tree": "Fury",
   "max": 2,
-  "text": "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
-  "effects": []
+  "text": "Reduces the cooldown of your Whirlwind ability by 1 second and increases the damage it deals to the closest enemy by 15%.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Whirlwind"
+    ],
+    "values": [
+     1.0,
+     2.0
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Bloodthirst": {
   "tree": "Fury",
@@ -498,7 +522,7 @@
  "Defiance": {
   "tree": "Protection",
   "max": 3,
-  "text": "Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped.",
+  "text": "Increases all threat generated in Defensive stance by an additional 7% while a shield is equipped.",
   "effects": [
    {
     "channel": "threat_up",
@@ -506,9 +530,9 @@
      "unknown:Defensive stance"
     ],
     "values": [
-     0.05,
-     0.1,
-     0.15
+     0.07,
+     0.13,
+     0.2
     ],
     "source": "parsed"
    }

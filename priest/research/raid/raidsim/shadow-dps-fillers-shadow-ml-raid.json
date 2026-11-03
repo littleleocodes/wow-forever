@@ -1,0 +1,306 @@
+{
+ "class": "priest",
+ "spec": "shadow-dps",
+ "build": "shadow-ml-raid",
+ "setting": "raid",
+ "date": "2026-11-03",
+ "tank": false,
+ "removal": {
+  "Dark Inspiration": -1.7555164716576144e-05,
+  "Darkness": 0.09090909090909194,
+  "Devouring Contagion": 0.0008423856947973318,
+  "Early Demise": 0.004103790047985445,
+  "Improved Mind Blast": 0.03079442215040329,
+  "Improved Mind Flay": 0.07066882777532424,
+  "Improved Shadow Word: Pain": 0.02154785760505551,
+  "Inner Focus": 0.0008160475168680348,
+  "Mental Strength": 0.00508916973484963,
+  "Mind Flay": 0.36930148274887786,
+  "Power in Light": -0.0,
+  "Shadow Focus": 0.03754556229609418,
+  "Shadow Reach": -0.0,
+  "Shadow Weaving": 0.08944089876252337,
+  "Shadowform": 0.33668776180722515,
+  "Twin Disciplines": 0.03829315692553359,
+  "Vampiric Embrace": -0.0,
+  "Wand Specialization": -0.0
+ },
+ "free": [
+  "Dark Inspiration",
+  "Devouring Contagion",
+  "Power in Light",
+  "Shadow Reach",
+  "Vampiric Embrace",
+  "Wand Specialization"
+ ],
+ "kept_for_rotation": [
+  "Inner Focus",
+  "Mind Flay"
+ ],
+ "active_never_worth": [
+  "Inner Focus"
+ ],
+ "abilities_never_cast": [
+  "Vampiric Embrace"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Dark Inspiration",
+   "to": "Silence",
+   "seed1": 1.726467646689933e-05,
+   "seed2": 2.6542677544760807e-06,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Power in Light",
+   "to": "Martyrdom",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Power in Light",
+   "to": "Martyrdom",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Dark Inspiration",
+   "to": "Spirit Tap",
+   "seed1": 2.90483234355321e-07,
+   "seed2": -2.924610600363309e-07,
+   "utility": "mana"
+  },
+  {
+   "round": 8,
+   "kind": "utility",
+   "from": "Dark Inspiration",
+   "to": "Spirit Tap",
+   "seed1": 0.0,
+   "seed2": -6.626131786591216e-07,
+   "utility": "mana"
+  },
+  {
+   "round": 9,
+   "kind": "utility",
+   "from": "Shadow Reach",
+   "to": "Spirit Tap",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  },
+  {
+   "round": 10,
+   "kind": "utility",
+   "from": "Wand Specialization",
+   "to": "Spirit Tap",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  },
+  {
+   "round": 11,
+   "kind": "utility",
+   "from": "Wand Specialization",
+   "to": "Spirit Tap",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  }
+ ],
+ "final_seed3": 1.2208978377392654e-05,
+ "start": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Inner Focus",
+    1
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    1
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Dark Inspiration",
+    3
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Early Demise",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Silent Resolve",
+    3
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Early Demise",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ],
+   [
+    "Silence",
+    1
+   ],
+   [
+    "Spirit Tap",
+    5
+   ]
+  ]
+ }
+}

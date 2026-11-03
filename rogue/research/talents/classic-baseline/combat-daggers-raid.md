@@ -80,24 +80,24 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
-| Assassination | Improved Eviscerate | 1 | moved-tree | now in Combat, tier 1 |
+| Assassination | Improved Eviscerate | 1 | unknown | not found in Forever data |
 | Assassination | Malice | 5 | changed | tier 1, max 5 — tooltip changed |
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
-| Assassination | Murder | 2 | changed | tier 2, max 2 — tooltip changed |
+| Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 3 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 3, max 1 |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Combat | Improved Gouge | 3 | moved-tree | now in Assassination, tier 1 |
 | Combat | Lightning Reflexes | 2 | unchanged | tier 1, max 5 |
 | Combat | Improved Backstab | 3 | **REMOVED** | removed from Classic |
 | Combat | Precision | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
-| Combat | Improved Sprint | 2 | unchanged | tier 3, max 2 |
+| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70753: was row 3, col 4 |
 | Combat | Dagger Specialization | 5 | **REMOVED** | removed from Classic |
-| Combat | Dual Wield Specialization | 5 | changed | tier 4, max 5 — tooltip changed |
+| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
 | Combat | Blade Flurry | 1 | changed | tier 5, max 1 — tooltip changed |
-| Combat | Weapon Expertise | 2 | changed | tier 6, max 2 — tooltip changed |
-| Combat | Aggression | 2 | changed | tier 6, max 3 — tooltip changed |
+| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 2; prerequisite changed in build 1.60.1.70753: was blade flurry |
+| Combat | Aggression | 2 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 3; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Combat | Adrenaline Rush | 1 | unchanged | tier 7, max 1 |
-| Subtlety | Opportunity | 5 | changed | tier 1, max 2 — max rank 5 → 2; tooltip changed |
+| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 
 **8 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

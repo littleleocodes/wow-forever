@@ -7,7 +7,7 @@
 | **Build** | 5/16/30 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -42,20 +42,20 @@ The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the commu
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Lightning Reflexes** | 3/5 | changed | Increases your Agility by 6%. |
+| **Lightning Reflexes** | 3/5 | changed | Increases your Agility by 9%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 355 | +0.0% | 736 | +0.0% | 0 s |
-| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 694 | -5.7% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 310 | -12.8% | 685 | -6.9% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 696 | -5.4% | 99 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 355 | +0.0% | 723 | +0.0% | 0 s |
+| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 682 | -5.7% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 310 | -12.8% | 672 | -7.0% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 683 | -5.5% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 

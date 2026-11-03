@@ -7,7 +7,7 @@
 | **Build** | 30/8/13 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -20,14 +20,14 @@ The best Elemental raid build with at least 30 points in Elemental, generated on
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
-| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
-| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
-| **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
+| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 10%. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
+| **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.50 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Eye of the Storm** | 3/3 | changed | Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 70% chance to not lose casting time when you take damage. |
-| **Elemental Reach** | 1/2 | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec. |
-| **Lava Burst** | 1/1 | **NEW** | You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. |
-| **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
+| **Eye of the Storm** | 3/3 | changed | Gives your Lightning Bolt and Chain Lightning spells a 70% chance to not lose casting time when you take damage. |
+| **Call of Thunder** | 1/1 | changed | Increases critical strike chance of Lightning Bolt and Chain Lightning by 5%. |
+| **Elemental Reach** | 1/2 | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 3 yards. |
+| **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 30% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 | **Elemental Fury** | 5/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
 
 ### Enhancement (8)
@@ -56,7 +56,7 @@ The best Elemental raid build with at least 30 points in Elemental, generated on
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 1 | if number of targets = 1 and time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 3.0 |
-| 4 | cast Lava Burst (rank 3) | 4.3 |
+| 4 | cast Lava Burst | 4.3 |
 | 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 1.9 |
 | 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 19.1 |
 | 7 | cast Lightning Bolt (rank 8) | 19.1 |
@@ -115,6 +115,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Devastation -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Elemental Reach (range). Net +0.00% on a third seed.
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Elemental: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 31/7/13 -> 30/8/13; Call of Thunder 1 gone; refill +1 Ancestral Knowledge (refill: the elemental-dps model, raid-dps).
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/8/13 -> 30/8/13; Lava Burst 1 gone; +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).
 
 ## Open questions (verify in the live game)
 

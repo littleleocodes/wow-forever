@@ -7,7 +7,7 @@
 | **Build** | 9/37/5 (Balance / Feral Combat / Restoration) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -39,7 +39,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Natural Reaction** | 5/5 | **NEW** | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
-| **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
+| **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 15%. |
 | **Primal Bite** | 1/1 | **NEW** | Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat. |
 
 ### Restoration (5)
@@ -61,15 +61,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/37/5 | 1.159 | +0.0% | 3808 | 371 |
-| 2 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.005 | -13.3% | 3051 | 392 |
-| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.7% | 3018 | 391 |
-| 4 | *Bear* | community simulator | - | 0.982 | -15.3% | 2951 | 397 |
-| 5 | *Hybrid* | community simulator | - | 0.957 | -17.4% | 2792 | 396 |
+| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 3705 | 376 |
+| 2 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.006 | -13.0% | 2970 | 395 |
+| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 2939 | 396 |
+| 4 | *Bear* | community simulator | - | 0.985 | -14.9% | 2877 | 400 |
+| 5 | *Hybrid* | community simulator | - | 0.961 | -17.0% | 2739 | 400 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -86,7 +86,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Maul | 182.5 |
+| 2 | cast Maul | 181.1 |
 | 3 | cast Barkskin | 1.0 |
 | 4 | if rage < 20: cast Enrage | 1.0 |
 

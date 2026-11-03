@@ -31,7 +31,12 @@ TODAY = datetime.date.today().isoformat()
 # Improved Fade -> Dark Inspiration share a cell but not an effect: not renames.
 # 70707 (live hotfixes of 28-30 Oct): Improved Fireball -> Accelerant (same cell, still the Fireball cast time, plus Arcane Wrath), Elemental
 # Precision -> Precision (same cell, hit for every school); Gift of the Earthmother's cell now holds Bloom, a different effect: not a rename.
-RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire"},
+# 70753 (Blizzard's notes of 2026-11-02): Improved Sinister Strike -> Efficient Strikes (same cell, still the Sinister Strike cost, plus
+# Hemorrhage) and Improved Eviscerate -> Coup de Grace (same cell, still 7/13/20% Eviscerate, plus Death Mark), Elemental Mastery ->
+# Lightning Mastery (the notes call it a rename; now a 15 s Lightning Bolt and Chain Lightning cooldown). Lava Burst's cell holds Call of
+# Thunder, a different effect: not a rename.
+RENAMES = {"shaman": {"Improved Fire Nova": "Trial by Fire", "Elemental Mastery": "Lightning Mastery"},
+           "rogue": {"Improved Sinister Strike": "Efficient Strikes", "Improved Eviscerate": "Coup de Grace"},
            "priest": {"Binding Heal": "Holy Binding"},   # 70707 hotfix 113554: the same Holy slot, 1 rank
            "mage": {"Wake of Fire": "Improved Fire Blast", "Improved Fireball": "Accelerant", "Elemental Precision": "Precision"}}
 
@@ -60,7 +65,11 @@ def model_for(cls, b, lead):
          "hunter": "bm-leveling" if lev and lead == "Beast Mastery" else "melee-dps" if lead == "Survival" or "melee" in b["id"]
                    else "mm-raid",
          # 70707 hotfix 113554 (ported 2026-10-31): the paladin's reworked tree; leveling builds refill with the Retribution model
-         "paladin": "ret-dps" if lev else "holy-heal" if role == "healer" else "prot-tank" if role == "tank" else "ret-dps"}
+         "paladin": "ret-dps" if lev else "holy-heal" if role == "healer" else "prot-tank" if role == "tank" else "ret-dps",
+         # 70753 (notes of 2026-11-02): the warrior's Fury and Arms changes and the rogue's reworked trees
+         "warrior": "prot-tank" if role == "tank" or lead == "Protection" else "arms-2h-raid" if "arms" in b["id"]
+                    else "fury-dw-raid" if lead == "Fury" else "arms-2h-raid",
+         "rogue": "combat-daggers-raid" if "dagger" in b["id"] or lead != "Combat" else "combat-swords-raid"}
     return M[cls], profile
 
 
@@ -121,6 +130,25 @@ def repair(cls, b, opt):
                or any(flat.get(rn, 0) < rr for rn, rr in tree.info[n][3])]
         n = max(off, key=lambda x: tree.info[x][1])
         log.append(f"{n} {flat.pop(n)} dropped (illegal)")
+    # 70753 (2026-11-03): the points a gone talent leaves go back into its tree first, so a 31-point build keeps its spec (the rogue's
+    # Subtlety lost Quietus and Thousand Cuts: the greedy refill had moved them to Assassination and Subtlety builds fell to 23 points)
+    orig = {}
+    for tname, items in b["allocation"].items():
+        orig[tname] = sum(r for _, r in items)
+    for _ in range(TOTAL):
+        if sum(flat.values()) >= TOTAL:
+            break
+        short = [t for t in opt.tree.order if orig.get(t, 0) >= 21 and sum(r for n, r in flat.items() if tree.info[n][0] == t) < orig[t]]
+        if not short:
+            break
+        t = short[0]
+        cands = [m for m, (tt, rw, mx, req) in tree.info.items() if tt == t and tree.can_add(flat, m)]
+        if not cands:
+            break
+        base = opt.score(flat)
+        best = max(cands, key=lambda m: (round(opt.score({**flat, m: flat.get(m, 0) + 1}) - base, 9), -tree.info[m][1]))
+        flat[best] = flat.get(best, 0) + 1
+        log.append(f"+1 {best} (back into {t})")
     before = dict(flat)
     flat = opt.refill(flat)
     added = {n: flat[n] - before.get(n, 0) for n in flat if flat[n] != before.get(n, 0)}
@@ -159,7 +187,12 @@ def main():
             if b.get("order") and all(x.endswith("(renamed)") for x in log):   # a pure rename keeps the order, renamed (2026-10-31)
                 for st in b["order"]:
                     st["talent"] = ren.get(st["talent"], st["talent"])
-                log.append("order kept, renamed")
+                if VB.validate_build(trees, b, b["id"]):   # 70753: a talent moved down a tier (Improved Ghost Wolf) breaks the order alone
+                    b.pop("order", None)
+                    b.pop("order_label", None)
+                    log.append("order dropped: a moved talent breaks it (order_repair.py)")
+                else:
+                    log.append("order kept" + (", renamed" if log else ""))
             elif b.get("order"):
                 b.pop("order", None)
                 b.pop("order_label", None)

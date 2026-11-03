@@ -7,7 +7,7 @@
 | **Build** | 8/12/31 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -48,7 +48,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
-| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
+| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
 
 ## Core talents (priority order)
@@ -66,7 +66,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-24, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; never cast Summon Hawk; drink below 15% mana. Together +8.5% time per kill saved for `bm-solo-farm` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Multi-Shot; Arcane Shot only when the mob is below 20% health; never cast Summon Hawk; never cast Arcane Shot; drink below 15% mana. Together +8.2% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 

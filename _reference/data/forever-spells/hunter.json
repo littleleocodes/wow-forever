@@ -1,20 +1,20 @@
 {
  "class": "Hunter",
  "slug": "hunter",
- "build": "1.60.1.70630",
- "captured": "2026-10-31",
- "export_generated": "2026-10-30",
+ "build": "1.60.1.70753",
+ "captured": "2026-11-03",
+ "export_generated": "2026-11-03",
  "tooltip_level": 60,
- "source": "talentsforever.com data export (generated 2026-10-30, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70630; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "source": "talentsforever.com data export (generated 2026-11-03, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70753; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
   "beta": 298,
   "demo": 0,
   "classic": 0
  },
  "classic_status_counts": {
-  "changed": 113,
+  "changed": 107,
   "new": 66,
-  "same": 119
+  "same": 125
  },
  "tabs": [
   {
@@ -30,7 +30,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "",
        "cast": "Instant",
@@ -50,7 +50,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "70 Mana",
        "range": "",
        "cast": "Instant",
@@ -68,7 +68,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "90 Mana",
        "range": "",
        "cast": "Instant",
@@ -86,7 +86,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "110 Mana",
        "range": "",
        "cast": "Instant",
@@ -109,7 +109,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "40 Mana",
        "range": "",
        "cast": "Instant",
@@ -128,11 +128,11 @@
       {
        "rank": "Rank 1",
        "id": 13165,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 15. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "20 Mana",
        "range": "",
        "cast": "Instant",
@@ -140,19 +140,17 @@
        "requires": "",
        "level": 10,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
        "rank": "Rank 2",
        "id": 14318,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 22. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 35. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "35 Mana",
        "range": "",
        "cast": "Instant",
@@ -160,19 +158,17 @@
        "requires": "",
        "level": 18,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 35. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
        "rank": "Rank 3",
        "id": 14319,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 30. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 50. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "50 Mana",
        "range": "",
        "cast": "Instant",
@@ -180,19 +176,17 @@
        "requires": "",
        "level": 28,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 50. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
        "rank": "Rank 4",
        "id": 14320,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 38. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 70. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "70 Mana",
        "range": "",
        "cast": "Instant",
@@ -200,19 +194,17 @@
        "requires": "",
        "level": 38,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 70. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
        "rank": "Rank 5",
        "id": 14321,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 47. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 90. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "90 Mana",
        "range": "",
        "cast": "Instant",
@@ -220,19 +212,17 @@
        "requires": "",
        "level": 48,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 90. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
        "rank": "Rank 6",
        "id": 14322,
-       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 55. Only one Aspect can be active at a time.",
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 110. Only one Aspect can be active at a time.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "110 Mana",
        "range": "",
        "cast": "Instant",
@@ -240,9 +230,7 @@
        "requires": "",
        "level": 58,
        "classic": {
-        "status": "changed",
-        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 110. Only one Aspect can be active at a time.",
-        "change_kind": "numbers"
+        "status": "same"
        }
       },
       {
@@ -252,7 +240,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "120 Mana",
        "range": "",
        "cast": "Instant",
@@ -275,7 +263,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "20 Mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -301,7 +289,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100 Mana",
        "range": "",
        "cast": "Instant",
@@ -324,7 +312,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "90 Mana",
        "range": "",
        "cast": "Instant",
@@ -344,7 +332,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "115 Mana",
        "range": "",
        "cast": "Instant",
@@ -369,7 +357,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "40 Mana",
        "range": "40 yd range",
        "cast": "Instant",
@@ -392,7 +380,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "12% of base mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -416,7 +404,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -439,7 +427,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "10 yd range",
        "cast": "5 sec cast",
@@ -462,7 +450,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "25 Mana",
        "range": "Unlimited range",
        "cast": "Channeled",
@@ -485,7 +473,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "20 Mana",
        "range": "Unlimited range",
        "cast": "2 sec cast",
@@ -510,7 +498,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "10 yd range",
        "cast": "Instant",
@@ -533,7 +521,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "8% of base mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -559,7 +547,7 @@
        "school": "Nature",
        "coefficient": "14% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -577,7 +565,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "90 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -595,7 +583,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "155 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -613,7 +601,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "225 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -631,7 +619,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "300 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -649,7 +637,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "385 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -667,7 +655,7 @@
        "school": "Nature",
        "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "480 Mana",
        "range": "20 yd range",
        "cast": "Channeled",
@@ -690,7 +678,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100% of base mana",
        "range": "",
        "cast": "10 sec cast",
@@ -713,7 +701,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "35 Mana",
        "range": "10 yd range",
        "cast": "1.5 sec cast",
@@ -731,7 +719,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "10 yd range",
        "cast": "1.5 sec cast",
@@ -749,7 +737,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "75 Mana",
        "range": "10 yd range",
        "cast": "1.5 sec cast",
@@ -772,7 +760,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "35 yd range",
        "cast": "Instant",
@@ -791,7 +779,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "105 Mana",
        "range": "35 yd range",
        "cast": "Instant",
@@ -809,7 +797,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "135 Mana",
        "range": "35 yd range",
        "cast": "Instant",
@@ -827,7 +815,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "190 Mana",
        "range": "35 yd range",
        "cast": "Instant",
@@ -850,7 +838,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "60% of base mana",
        "range": "30 yd range",
        "cast": "Channeled",
@@ -873,7 +861,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "270 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -897,11 +885,11 @@
       {
        "rank": "Rank 1",
        "id": 19434,
-       "text": "An aimed shot that increases ranged damage by 20. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 40. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "75 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -916,16 +904,31 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 20. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 20900,
-       "text": "An aimed shot that increases ranged damage by 34. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 70. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "115 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -940,16 +943,31 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 34. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 20901,
-       "text": "An aimed shot that increases ranged damage by 55. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 115. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "160 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -964,16 +982,31 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 55. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 20902,
-       "text": "An aimed shot that increases ranged damage by 89. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 185. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "210 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -988,16 +1021,31 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 89. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       },
       {
        "rank": "Rank 5",
        "id": 20903,
-       "text": "An aimed shot that increases ranged damage by 125. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 260. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "260 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -1012,16 +1060,31 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 125. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       },
       {
        "rank": "Rank 6",
        "id": 20904,
-       "text": "An aimed shot that increases ranged damage by 166. Aimed Shot shares its cooldown with Multi-Shot.",
+       "text": "An aimed shot that increases ranged damage by 350. Aimed Shot shares its cooldown with Multi-Shot.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "310 Mana",
        "range": "8-35 yd range",
        "cast": "2 sec cast",
@@ -1036,6 +1099,21 @@
         "classic_cast": "3 sec cast",
         "classic_cooldown": "6 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An aimed shot that increases ranged damage by 166. Aimed Shot shares its cooldown with Multi-Shot."
+         }
+        }
        }
       }
      ]
@@ -1046,11 +1124,11 @@
       {
        "rank": "Rank 1",
        "id": 3044,
-       "text": "An instant shot that causes 20 Arcane damage.",
+       "text": "An instant shot that causes 25 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "25 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1061,16 +1139,31 @@
         "status": "changed",
         "text": "An instant shot that causes 13 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 20 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 14281,
-       "text": "An instant shot that causes 26 Arcane damage.",
+       "text": "An instant shot that causes 35 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "35 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1081,16 +1174,31 @@
         "status": "changed",
         "text": "An instant shot that causes 21 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 26 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 14282,
-       "text": "An instant shot that causes 39 Arcane damage.",
+       "text": "An instant shot that causes 50 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1101,16 +1209,31 @@
         "status": "changed",
         "text": "An instant shot that causes 33 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 39 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 14283,
-       "text": "An instant shot that causes 65 Arcane damage.",
+       "text": "An instant shot that causes 85 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1121,16 +1244,31 @@
         "status": "changed",
         "text": "An instant shot that causes 59 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 65 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 5",
        "id": 14284,
-       "text": "An instant shot that causes 94 Arcane damage.",
+       "text": "An instant shot that causes 120 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "105 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1141,16 +1279,31 @@
         "status": "changed",
         "text": "An instant shot that causes 83 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 94 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 6",
        "id": 14285,
-       "text": "An instant shot that causes 134 Arcane damage.",
+       "text": "An instant shot that causes 175 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "135 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1161,16 +1314,31 @@
         "status": "changed",
         "text": "An instant shot that causes 115 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 134 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 7",
        "id": 14286,
-       "text": "An instant shot that causes 170 Arcane damage.",
+       "text": "An instant shot that causes 220 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "160 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1181,16 +1349,31 @@
         "status": "changed",
         "text": "An instant shot that causes 145 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 170 Arcane damage."
+         }
+        }
        }
       },
       {
        "rank": "Rank 8",
        "id": 14287,
-       "text": "An instant shot that causes 217 Arcane damage.",
+       "text": "An instant shot that causes 280 Arcane damage.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "190 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1201,6 +1384,21 @@
         "status": "changed",
         "text": "An instant shot that causes 183 Arcane damage.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "An instant shot that causes 217 Arcane damage."
+         }
+        }
        }
       }
      ]
@@ -1215,7 +1413,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1238,7 +1436,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "8% of base mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1261,7 +1459,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "20 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1279,7 +1477,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "30 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1297,7 +1495,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1315,7 +1513,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "70 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1333,7 +1531,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "90 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1351,7 +1549,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "110 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1374,7 +1572,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -1397,7 +1595,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "30 yd range",
        "cast": "Instant",
@@ -1420,7 +1618,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "15 Mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -1440,7 +1638,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "30 Mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -1460,7 +1658,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "45 Mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -1480,7 +1678,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "60 Mana",
        "range": "100 yd range",
        "cast": "Instant",
@@ -1505,7 +1703,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "13.9% of base mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1534,7 +1732,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100 Mana",
        "range": "",
        "cast": "Instant",
@@ -1559,7 +1757,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "8% of base mana",
        "range": "15 yd range",
        "cast": "Instant",
@@ -1583,7 +1781,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "9% of base mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1607,11 +1805,11 @@
       {
        "rank": "Rank 1",
        "id": 1978,
-       "text": "Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 15 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "15 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1622,16 +1820,31 @@
         "status": "changed",
         "text": "Stings the target, causing 20 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 13549,
-       "text": "Stings the target, causing 30 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 35 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "30 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1642,16 +1855,31 @@
         "status": "changed",
         "text": "Stings the target, causing 40 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 30 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 13550,
-       "text": "Stings the target, causing 60 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 70 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1662,16 +1890,31 @@
         "status": "changed",
         "text": "Stings the target, causing 80 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 60 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 4",
        "id": 13551,
-       "text": "Stings the target, causing 110 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 130 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1682,16 +1925,31 @@
         "status": "changed",
         "text": "Stings the target, causing 140 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 110 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 5",
        "id": 13552,
-       "text": "Stings the target, causing 170 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 200 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "115 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1702,16 +1960,31 @@
         "status": "changed",
         "text": "Stings the target, causing 210 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 170 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 6",
        "id": 13553,
-       "text": "Stings the target, causing 240 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 290 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "150 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1722,16 +1995,31 @@
         "status": "changed",
         "text": "Stings the target, causing 290 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 240 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 7",
        "id": 13554,
-       "text": "Stings the target, causing 320 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 375 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "190 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1742,16 +2030,31 @@
         "status": "changed",
         "text": "Stings the target, causing 385 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 320 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 8",
        "id": 13555,
-       "text": "Stings the target, causing 415 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 500 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "230 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1762,16 +2065,31 @@
         "status": "changed",
         "text": "Stings the target, causing 490 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
         "change_kind": "numbers"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 415 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       },
       {
        "rank": "Rank 9",
        "id": 25295,
-       "text": "Stings the target, causing 555 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "text": "Stings the target, causing 675 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "250 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1780,6 +2098,21 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Stings the target, causing 555 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+         }
+        }
        }
       }
      ]
@@ -1790,11 +2123,11 @@
       {
        "rank": "Rank 1",
        "id": 1310687,
-       "text": "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
+       "text": "A long-range shot that deals ranged damage plus 320 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "365 Mana",
        "range": "8-45 yd range",
        "cast": "4 sec cast",
@@ -1804,16 +2137,31 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec."
+         }
+        }
        }
       },
       {
        "rank": "Rank 2",
        "id": 1310785,
-       "text": "A long-range shot that deals ranged damage plus 225 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
+       "text": "A long-range shot that deals ranged damage plus 450 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "365 Mana",
        "range": "8-45 yd range",
        "cast": "4 sec cast",
@@ -1822,16 +2170,31 @@
        "level": 48,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A long-range shot that deals ranged damage plus 225 and increases the range of your next 3 Shots by 10 yards for 10 sec."
+         }
+        }
        }
       },
       {
        "rank": "Rank 3",
        "id": 1310786,
-       "text": "A long-range shot that deals ranged damage plus 295 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
+       "text": "A long-range shot that deals ranged damage plus 590 and increases the range of your next 3 Shots by 10 yards for 10 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "365 Mana",
        "range": "8-45 yd range",
        "cast": "4 sec cast",
@@ -1840,6 +2203,21 @@
        "level": 58,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-03",
+        "sources": [
+         "https://foreverchanges.pro/patch-notes",
+         "https://github.com/wowsims/forever/pull/824"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "A long-range shot that deals ranged damage plus 295 and increases the range of your next 3 Shots by 10 yards for 10 sec."
+         }
+        }
        }
       }
      ]
@@ -1850,11 +2228,11 @@
       {
        "rank": "Rank 1",
        "id": 1299346,
-       "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 15.",
+       "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 20.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "180 Mana",
        "range": "",
        "cast": "Instant",
@@ -1869,11 +2247,11 @@
       {
        "rank": "Rank 2",
        "id": 1299348,
-       "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 22.",
+       "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 35.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "245 Mana",
        "range": "",
        "cast": "Instant",
@@ -1887,11 +2265,11 @@
       {
        "rank": "Rank 3",
        "id": 19506,
-       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 30. Lasts 30 min.",
+       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 50. Lasts 30 min.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "325 Mana",
        "range": "",
        "cast": "Instant",
@@ -1907,11 +2285,11 @@
       {
        "rank": "Rank 4",
        "id": 20905,
-       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 40. Lasts 30 min.",
+       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 75. Lasts 30 min.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630, server hotfix 2026-10-28",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "425 Mana",
        "range": "",
        "cast": "Instant",
@@ -1927,11 +2305,11 @@
       {
        "rank": "Rank 5",
        "id": 20906,
-       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 50. Lasts 30 min.",
+       "text": "Increases the Ranged Attack Power of party or raid members within 45 yards by 100. Lasts 30 min.",
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "525 Mana",
        "range": "",
        "cast": "Instant",
@@ -1956,7 +2334,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "135 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -1978,7 +2356,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "175 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -2000,7 +2378,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "215 Mana",
        "range": "8-35 yd range",
        "cast": "Instant",
@@ -2027,7 +2405,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "350 Mana",
        "range": "35 yd range",
        "cast": "Channeled",
@@ -2051,7 +2429,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "420 Mana",
        "range": "35 yd range",
        "cast": "Channeled",
@@ -2075,7 +2453,7 @@
        "school": "Arcane",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "490 Mana",
        "range": "35 yd range",
        "cast": "Channeled",
@@ -2109,7 +2487,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "30 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2134,7 +2512,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "45 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2152,7 +2530,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "65 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2172,7 +2550,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "85 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2197,7 +2575,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -2221,7 +2599,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2241,7 +2619,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2261,7 +2639,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "150 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2286,7 +2664,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "275 Mana",
        "range": "",
        "cast": "Instant",
@@ -2309,7 +2687,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "395 Mana",
        "range": "",
        "cast": "Instant",
@@ -2332,7 +2710,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "520 Mana",
        "range": "",
        "cast": "Instant",
@@ -2360,7 +2738,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "",
        "cast": "Instant",
@@ -2385,7 +2763,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "",
        "cast": "Instant",
@@ -2408,7 +2786,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "75 Mana",
        "range": "",
        "cast": "Instant",
@@ -2431,7 +2809,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100 Mana",
        "range": "",
        "cast": "Instant",
@@ -2459,7 +2837,7 @@
        "school": "Frost",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "60 Mana",
        "range": "",
        "cast": "Instant",
@@ -2487,7 +2865,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "",
        "cast": "Instant",
@@ -2510,7 +2888,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "90 Mana",
        "range": "",
        "cast": "Instant",
@@ -2533,7 +2911,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "135 Mana",
        "range": "",
        "cast": "Instant",
@@ -2556,7 +2934,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "190 Mana",
        "range": "",
        "cast": "Instant",
@@ -2579,7 +2957,7 @@
        "school": "Fire",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "245 Mana",
        "range": "",
        "cast": "Instant",
@@ -2607,7 +2985,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "40 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2625,7 +3003,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "65 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2643,7 +3021,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2661,7 +3039,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "95 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2684,7 +3062,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "30 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2704,7 +3082,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "40 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2724,7 +3102,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "50 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2744,7 +3122,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "65 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2769,7 +3147,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "10 Mana",
        "range": "",
        "cast": "",
@@ -2792,7 +3170,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "25 Mana",
        "range": "",
        "cast": "",
@@ -2812,7 +3190,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "35 Mana",
        "range": "",
        "cast": "",
@@ -2832,7 +3210,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "45 Mana",
        "range": "",
        "cast": "",
@@ -2852,7 +3230,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "55 Mana",
        "range": "",
        "cast": "",
@@ -2872,7 +3250,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "70 Mana",
        "range": "",
        "cast": "",
@@ -2892,7 +3270,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "85 Mana",
        "range": "",
        "cast": "",
@@ -2912,7 +3290,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "100 Mana",
        "range": "",
        "cast": "",
@@ -2937,7 +3315,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "5.81% of base mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -2961,7 +3339,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -2984,7 +3362,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3007,7 +3385,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3030,7 +3408,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3053,7 +3431,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3076,7 +3454,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3099,7 +3477,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3122,7 +3500,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3145,7 +3523,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "40 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3163,7 +3541,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "60 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3181,7 +3559,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "80 Mana",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3209,7 +3587,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -3227,7 +3605,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -3245,7 +3623,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -3263,7 +3641,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -3286,7 +3664,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3304,7 +3682,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3322,7 +3700,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3340,7 +3718,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3358,7 +3736,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3376,7 +3754,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3394,7 +3772,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3412,7 +3790,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3435,7 +3813,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3455,7 +3833,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3475,7 +3853,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3495,7 +3873,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3515,7 +3893,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3535,7 +3913,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "8-25 yd range",
        "cast": "Instant",
@@ -3560,7 +3938,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3578,7 +3956,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3596,7 +3974,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3614,7 +3992,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3632,7 +4010,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3650,7 +4028,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3668,7 +4046,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3686,7 +4064,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3709,7 +4087,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3727,7 +4105,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3745,7 +4123,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3763,7 +4141,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3781,7 +4159,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3799,7 +4177,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3822,7 +4200,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3844,7 +4222,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3866,7 +4244,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -3893,7 +4271,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3916,7 +4294,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3939,7 +4317,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3962,7 +4340,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -3990,7 +4368,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4008,7 +4386,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4026,7 +4404,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4044,7 +4422,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4062,7 +4440,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4085,7 +4463,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4107,7 +4485,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4125,7 +4503,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4148,7 +4526,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4166,7 +4544,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4184,7 +4562,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4202,7 +4580,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4220,7 +4598,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4243,7 +4621,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4261,7 +4639,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4279,7 +4657,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4297,7 +4675,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4320,7 +4698,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4338,7 +4716,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4356,7 +4734,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4374,7 +4752,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4397,7 +4775,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4420,7 +4798,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4443,7 +4821,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -4466,7 +4844,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "30 yd range",
        "cast": "Instant",
@@ -4495,7 +4873,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4513,7 +4891,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4531,7 +4909,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4549,7 +4927,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4567,7 +4945,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4585,7 +4963,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4603,7 +4981,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4621,7 +4999,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4639,7 +5017,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4657,7 +5035,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -4680,7 +5058,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4698,7 +5076,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4716,7 +5094,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4734,7 +5112,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4752,7 +5130,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4770,7 +5148,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4788,7 +5166,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4811,7 +5189,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4831,7 +5209,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4851,7 +5229,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4871,7 +5249,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4891,7 +5269,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4911,7 +5289,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -4936,7 +5314,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4954,7 +5332,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4972,7 +5350,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -4990,7 +5368,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5008,7 +5386,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5031,7 +5409,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5049,7 +5427,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5067,7 +5445,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5085,7 +5463,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5103,7 +5481,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5121,7 +5499,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5139,7 +5517,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5157,7 +5535,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5175,7 +5553,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5193,7 +5571,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5216,7 +5594,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5234,7 +5612,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5252,7 +5630,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5270,7 +5648,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5293,7 +5671,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5311,7 +5689,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5329,7 +5707,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5347,7 +5725,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5365,7 +5743,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5388,7 +5766,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -5406,7 +5784,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -5424,7 +5802,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -5447,7 +5825,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5465,7 +5843,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5483,7 +5861,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5501,7 +5879,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5519,7 +5897,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5542,7 +5920,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5562,7 +5940,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5582,7 +5960,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5602,7 +5980,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5627,7 +6005,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5645,7 +6023,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5663,7 +6041,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5681,7 +6059,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "",
@@ -5704,7 +6082,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -5729,7 +6107,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5747,7 +6125,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5765,7 +6143,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5783,7 +6161,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5801,7 +6179,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5824,7 +6202,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5842,7 +6220,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5860,7 +6238,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5878,7 +6256,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5896,7 +6274,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5919,7 +6297,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5937,7 +6315,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5955,7 +6333,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5973,7 +6351,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -5991,7 +6369,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "Melee Range",
        "cast": "Instant",
@@ -6014,7 +6392,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -6034,7 +6412,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -6054,7 +6432,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -6074,7 +6452,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -6097,7 +6475,7 @@
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "",
        "cast": "Instant",
@@ -6120,7 +6498,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -6138,7 +6516,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -6156,7 +6534,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -6174,7 +6552,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",
@@ -6192,7 +6570,7 @@
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
-       "source": "beta client 1.60.1.70630",
+       "source": "beta client 1.60.1.70753",
        "cost": "",
        "range": "20 yd range",
        "cast": "Instant",

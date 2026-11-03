@@ -1,6 +1,7 @@
 """Restoration shaman raid healer for the healer lab: Healing Wave on the tank (downranked to the deficit), Lesser Healing Wave
-when it must land fast, Chain Heal when the group is hurt, Riptide when talented, Healing Stream Totem ticking on the group,
-Nature's Swiftness for an instant Healing Wave, Mana Tide when mana runs low; Ancestral Healing armors the tank after a crit."""
+when it must land fast, Chain Heal when the group is hurt, Riptide (a heal over time, 12 s cooldown) when talented, Healing Stream
+Totem ticking on the group, Nature's Swiftness for an instant Healing Wave, Mana Tide when mana runs low; Ancestral Healing armors the
+tank after a crit."""
 import json
 import pathlib
 import re
@@ -46,6 +47,47 @@ def _water_shield():
     return 3, 0.02
 
 
+def _riptide_ranks():
+    """Riptide's ranks as heals over time. Blizzard's notes of 2026-11-02 (client 70753): "Riptide: Mana cost reduced by about 40%. Cooldown
+    increased to 12 seconds from 6 seconds. Riptide no longer deals any initial healing, just healing over time." The 2026-11-03 export has
+    the new text ("Heals a friendly target for 805 over 15 sec, and increases ...") and cooldown, which the engine's heal patterns do not
+    read (engine.HOT wants "heals the target for N over T sec"; the spell fell out of the book), and the old mana (245/300/385): a rank whose
+    cost is still the pre-notes one pays RIPTIDE_MANA of it (147/180/231). Ticks every RIPTIDE_TICK s (the client's 3 s, as Renew; the
+    tooltip names none), 10% of healing a tick by the export's coefficient field (its 21.4% direct part went with the direct heal)."""
+    out = []
+    for tab in json.load(open(_DATA / "forever-spells" / "shaman.json", encoding="utf-8"))["tabs"]:
+        for sp in tab["spells"]:
+            if sp["name"] != "Riptide":
+                continue
+            for r in sp["ranks"]:
+                text = (r.get("text") or "").replace("\n", " ")
+                m = re.search(r"Heals a friendly target for (\d[\d,]*) over (\d+) sec", text)
+                if not m:
+                    continue
+                cost = float(re.search(r"(\d[\d,]*)", r.get("cost") or "0").group(1).replace(",", ""))
+                if cost in RIPTIDE_OLD_COST:
+                    cost = round(cost * RIPTIDE_MANA)
+                cd = re.search(r"(\d+) sec cooldown", r.get("cooldown") or "")
+                coefs = {k: float(v) / 100 for v, k in re.findall(r"([\d.]+)% of spell power \((heal|per tick|direct)\)", r.get("coefficient") or "")}
+                h = E.Heal("Riptide", int(re.search(r"(\d+)", r.get("rank") or "1").group(1)) if re.search(r"\d", r.get("rank") or "") else 1,
+                           int(r.get("level") or 1), cost, 0.0, float(cd.group(1)) if cd else 12.0, "nature", text, {})
+                h.heal_min = h.heal_max = 0.0
+                h.coef = 0.0
+                h.hot, h.hot_dur, h.tick_every = float(m.group(1).replace(",", "")), float(m.group(2)), RIPTIDE_TICK
+                h.hot_coef = coefs.get("per tick", 0.0)
+                h.tags = ["type:spell", "heal", "school:nature", "ability:Riptide", "instant", "hot"]
+                out.append(h)
+    out.sort(key=lambda x: (x.level, x.rank))
+    if T.DOWNRANK_PENALTY:   # as engine.load_book
+        for i, h in enumerate(out):
+            nxt = next((x.level for x in out[i + 1:] if x.level > h.level), None)
+            h.hot_coef *= E.downrank_multiplier(h.level, nxt)
+    return out
+
+
+RIPTIDE_OLD_COST = (245.0, 300.0, 385.0)   # the export's Riptide mana before and after the notes of 2026-11-02 (ranks 1-3)
+RIPTIDE_MANA = 0.6                         # "Mana cost reduced by about 40%"
+RIPTIDE_TICK = 3.0
 RIPTIDE_CHAIN_HEAL = _riptide_chain_heal_bonus()
 WATER_SHIELD_GLOBES, WATER_SHIELD_MANA = _water_shield()
 # "every few seconds": 3.5 s, the client value the community simulator pins for spell 408510 (sim/shaman/shields.go at db4d14a; one timer
@@ -58,7 +100,8 @@ ENGINE_ARMOR_BUFF = 0.25   # engine.Sim.boss_swing gives the tank +25% armor whi
 class Healer(E.BaseHealer):
     CLASS = "shaman"
     SPEC = "resto-heal"
-    ROLES = {"big": "Healing Wave", "fast": "Lesser Healing Wave", "group": "Chain Heal", "hot": "Riptide", "instant": "Riptide"}
+    # Riptide heals over time only since 2026-11-02 (no initial heal): the tank's HoT, no longer the emergency heal ("instant" until then)
+    ROLES = {"big": "Healing Wave", "fast": "Lesser Healing Wave", "group": "Chain Heal", "hot": "Riptide"}
     TALENT_SPELLS = {"Riptide": "Riptide", "Mana Tide Totem": "Mana Tide Totem", "Nature's Swiftness": "Nature's Swiftness", "Water Shield": "Water Shield"}
     MECHANICS = {
         "Nature's Swiftness": "instant Healing Wave on a tank under 35%, every 3 min",
@@ -70,13 +113,27 @@ class Healer(E.BaseHealer):
                         "and the tank is not in danger (2026-10-17: the lab had unlimited globes every 3 s)",
         "Totemic Focus": "totem mana only: nothing for heals",
         "Elemental Focus": "clearcasting from damage spells, for the next damage spell: nothing for heals",
-        "Riptide": "instant heal plus a 15 s HoT on a 6 s cooldown: the emergency heal and the tank's HoT; a Chain Heal cast on a target with "
-                   "your Riptide heals 25% more (every jump: the cast's effectiveness), and Chain Heal starts on a hurt member with your Riptide",
+        "Riptide": "a 15 s HoT (805 at rank 3, a tick every 3 s) on a 12 s cooldown for 231 mana (70753: no initial heal, about 40% less mana, "
+                   "6 s before): the tank's HoT, kept up while the cooldown allows; a Chain Heal cast on a target with your Riptide heals 25% more "
+                   "(every jump: the cast's effectiveness), and Chain Heal starts on a hurt member with your Riptide",
         "Healing Stream Totem": "placed at the pull: 11 (+Restorative Totems) every 2 s on the group",
     }
     SIMULATED = {"Nature's Swiftness", "Mana Tide Totem", "Ancestral Healing", "Water Shield", "Riptide", "Healing Way", "Improved Healing Wave", "Tidal Mastery", "Purification",
                  "Tidal Focus", "Restorative Totems", "Ancestral Knowledge", "Mindfulness", "Thundering Strikes"}
     SHARE_SOURCE = {"Chain Heal": "chain_heal", "Healing Wave": "healing_wave", "Lesser Healing Wave": "lesser_hw", "Healing Stream Totem": "healing_stream"}
+
+    def __init__(self, allocation, game="forever"):
+        super().__init__(allocation, game)
+        if self.alloc.get("Riptide") and "Riptide" not in self.book:   # the engine's patterns miss the HoT-only text (_riptide_ranks)
+            ranks = _riptide_ranks()
+            if ranks:
+                self.book["Riptide"] = ranks
+
+    def hot_ok(self, sim, target):
+        """Riptide's 12 s cooldown (engine.BaseHealer.decide's HoT branch checks no cooldown: with the 6 s one Riptide went out on every
+        GCD a target lacked it until 2026-11-03)."""
+        s = self.book.get("Riptide", [None])[-1]
+        return s is None or not s.cooldown or self.cooldown_ready(sim, "Riptide", s.cooldown)
 
     def on_fight_start(self, sim):
         sim.mana -= 80.0   # Healing Stream Totem

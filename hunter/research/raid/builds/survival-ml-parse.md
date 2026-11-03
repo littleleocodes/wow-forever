@@ -7,7 +7,7 @@
 | **Build** | 5/14/32 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -44,19 +44,19 @@ The Survival build the machine-learning talent search found in a full raid (ever
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
+| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 355 | +0.0% | 736 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 694 | -5.7% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 310 | -12.8% | 685 | -6.9% | 0 s |
-| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 696 | -5.4% | 99 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 355 | +0.0% | 723 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 334 | -5.9% | 682 | -5.7% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 310 | -12.8% | 672 | -7.0% | 0 s |
+| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 256 | -27.8% | 683 | -5.5% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 

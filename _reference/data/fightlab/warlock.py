@@ -19,6 +19,7 @@ Demonologist (Voidwalker) reduce damage taken under every spec string. MECHANICS
 rotation since 2026-09-28, but they only took effect in the two new ones, so the Affliction rotation measured them at zero and
 the calibration fitted them to zero.
 """
+import copy
 import json
 import pathlib
 import re
@@ -191,7 +192,7 @@ MECHANICS = {
     "Siphon Life": "unlocks Siphon Life (instant 30s drain DoT, heals you per tick)",
     "Soul Siphon": "+4%/rank drains and Wrack per other Affliction effect on the target (up to 3)",
     "Shadow Mastery": "+2%/rank Shadow damage and drains (client 70425; was 1%/rank), read from the tooltip",
-    "Wrack": "unlocks Wrack (6s channel, 36/s at 60, 14.3% of spell power a tick; +10% to the ticks of your other Shadow DoTs for 6 s from the "
+    "Wrack": "unlocks Wrack (6s channel, 86/s at 60 and 2.5 less a level below (client 70753; 36/s before), 28.6% of spell power a tick; +10% to the ticks of your other Shadow DoTs for 6 s from the "
              "channel's start; parsed since 2026-10-17, before that a channel of nothing)",
     "Improved Health Funnel": "+20%/rank Health Funnel healing, -15%/rank health cost",
     "Improved Imp": "+10%/rank Firebolt (levels 1-9)",
@@ -231,7 +232,7 @@ NEW_MECHANICS = {
     "Conflagrate": "unlocks Conflagrate (instant, 10 s cooldown, needs Immolate, consumes it)",
     "Incinerate": "unlocks Incinerate (2.5 s cast, +25% on an Immolated target)",
     "Fire and Brimstone": "+8/17/25% Conflagrate crit",
-    "Shadow and Flame": "Conflagrate: +2%/rank Shadow damage 20 s and 20%/rank chance to keep Immolate; Shadowburn: +2%/rank Fire damage 20 s",
+    "Shadow and Flame": "Conflagrate: +4%/rank Shadow damage 20 s and 20%/rank chance to keep Immolate; Shadowburn: +4%/rank Fire damage 20 s (the tooltip's numbers: 4% a rank since client 70753)",
     "Aftermath": "+10%/rank Immolate direct damage; Conflagrate dazes (50% slow, 5 s) at 20%/rank",
     "Ruin": "+20%/rank of the 50% crit bonus on Destruction spells (x2.0 crits at 5/5)",
     "Pandemic": "+33%/rank of the 50% crit bonus on Corruption, Agony, drains, Siphon Life, Wrack (x2.0 crits at 3/3)",
@@ -276,6 +277,13 @@ PETS = {
 }
 
 
+# Health a demon gets per point of the warlock's Stamina (tables.PET_SCALING inheritance): 2 since client 70753 (Blizzard's 2 Nov notes:
+# "Pets now gain 2 Health per point of Master's Stamina (was 7.5 ...)"; the hunter's pet already had 2). 7.5 from 2026-10-08 (client 70291 UI).
+DEMON_HP_PER_STAMINA = 2.0
+# Wrack's base per second grows this much a level (Blizzard's 2 Nov notes; 86 at 60): _scale_wrack
+WRACK_PER_LEVEL = 2.5
+
+
 def pet_health(level):
     """Pet base health by level (Classic Voidwalker ~250 at 10, ~1,000 at 30, ~1,800 at 40, ~3,200 at 60: 0.85 L^2 + 8 L + 100)."""
     return 0.85 * level * level + 8 * level + 100
@@ -315,6 +323,20 @@ class WarlockModule(BaseModule):
         self.destro = str(spec).startswith("destruction")
         self.new_rot = self.demo or self.destro
         self._pet_armor = 0.0
+        self._scale_wrack()
+
+    def _scale_wrack(self):
+        """Wrack's tooltip is the level-60 text (86 a second since client 70753); Blizzard's 2 Nov notes: "Base damage grows 2.5 per level"
+        (foreverchanges.pro: 86 at 60, was 36), so a level-L warlock's Wrack does 86 - 2.5 x (60 - L) a second. The lab had cast the
+        level-60 number at every level (Wrack is a talent spell: tables.rank_level_factor has no row for it)."""
+        s = self.spells.get("Wrack")
+        if s is None or self.level >= 60 or s.dot <= 0:
+            return
+        ticks = max(1, s.dot_ticks)
+        per = max(0.0, s.dot / ticks - WRACK_PER_LEVEL * (60 - self.level))
+        s = copy.copy(s)
+        s.dot = per * ticks
+        self.spells["Wrack"] = self.book["Wrack"] = s
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -362,14 +384,14 @@ class WarlockModule(BaseModule):
 
     def make_pet(self, level, p=None, stamina=0.0):
         """The demon. Since 2026-10-08 it inherits from the warlock (`tables.PET_SCALING`: 17% of the spell damage as attack power, 10% as
-        spell damage, 35% of the armor, 7.5 health per Stamina, the spell crit chance in place of its own: the patch sets the demon's crit to
+        spell damage, 35% of the armor, DEMON_HP_PER_STAMINA health per Stamina (2 since client 70753, 7.5 before), the spell crit chance in place of its own: the patch sets the demon's crit to
         the warlock's, audit 2026-10-18 #67), as the raid simulator's demon_scaling patch."""
         cfg = PETS[self.pet_name]
         f = (level - 1) / 59.0
         stat = {k: 20 + (cfg[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
         k = tables.PET_SCALING if p is not None else 0.0
         sp = p.spell_power if p is not None else 0.0
-        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5 + k * 7.5 * stamina) * cfg["hp_mult"] * (1 + self.tv("Fel Vitality", 0) / 100)
+        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5 + k * DEMON_HP_PER_STAMINA * stamina) * cfg["hp_mult"] * (1 + self.tv("Fel Vitality", 0) / 100)
         pet = Pet(name=self.pet_name, hp_max=hp, hp=hp, armor=cfg["armor_per_level"] * level + k * 0.35 * (p.armor if p is not None else 0.0),
                   dmg_min=cfg["dmg"][0] * level / 60.0, dmg_max=cfg["dmg"][1] * level / 60.0, speed=cfg["speed"],
                   attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.17 * sp,

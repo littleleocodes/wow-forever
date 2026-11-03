@@ -2,14 +2,13 @@
  "Convection": {
   "tree": "Elemental",
   "max": 5,
-  "text": "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%.",
+  "text": "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 2%.",
   "effects": [
    {
     "channel": "mana_cost",
     "scope": [
      "ability:Shock",
      "ability:Lightning Bolt",
-     "ability:Lava Burst",
      "ability:Chain Lightning"
     ],
     "values": [
@@ -76,14 +75,13 @@
  "Elemental Alacrity": {
   "tree": "Elemental",
   "max": 3,
-  "text": "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec.",
+  "text": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.17 sec.",
   "effects": [
    {
     "channel": "cast_time",
     "scope": [
      "ability:Lightning Bolt",
-     "ability:Chain Lightning",
-     "ability:Lava Burst"
+     "ability:Chain Lightning"
     ],
     "values": [
      0.17,
@@ -97,14 +95,13 @@
  "Call of Flame": {
   "tree": "Elemental",
   "max": 3,
-  "text": "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
+  "text": "Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
   "effects": [
    {
     "channel": "dmg",
     "scope": [
      "ability:Fire Totems",
-     "ability:Fire Nova",
-     "ability:Lava Burst"
+     "ability:Fire Nova"
     ],
     "values": [
      0.05,
@@ -159,7 +156,7 @@
  "Eye of the Storm": {
   "tree": "Elemental",
   "max": 3,
-  "text": "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 23% chance to not lose casting time when you take damage.",
+  "text": "Gives your Lightning Bolt and Chain Lightning spells a 23% chance to not lose casting time when you take damage.",
   "effects": [
    {
     "channel": "pushback",
@@ -184,26 +181,14 @@
  "Elemental Reach": {
   "tree": "Elemental",
   "max": 2,
-  "text": "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.",
+  "text": "Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 3 yards.",
   "effects": [
-   {
-    "channel": "cooldown",
-    "scope": [
-     "ability:Totemic Projection"
-    ],
-    "values": [
-     10.0,
-     20.0
-    ],
-    "source": "parsed"
-   },
    {
     "channel": "range",
     "scope": [
      "ability:Lightning Bolt",
      "ability:Chain Lightning",
-     "ability:Fire Nova",
-     "ability:Lava Burst"
+     "ability:Fire Nova"
     ],
     "values": [
      3.0,
@@ -213,16 +198,28 @@
    }
   ]
  },
- "Lava Burst": {
+ "Call of Thunder": {
   "tree": "Elemental",
   "max": 1,
-  "text": "You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.",
-  "effects": []
+  "text": "Increases critical strike chance of Lightning Bolt and Chain Lightning by 5%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "ability:Lightning Bolt",
+     "ability:Chain Lightning"
+    ],
+    "values": [
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Lightning Overload": {
   "tree": "Elemental",
   "max": 3,
-  "text": "Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+  "text": "Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
   "effects": []
  },
  "Elemental Fury": {
@@ -250,10 +247,10 @@
    }
   ]
  },
- "Elemental Mastery": {
+ "Lightning Mastery": {
   "tree": "Elemental",
   "max": 1,
-  "text": "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec.",
+  "text": "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec.",
   "effects": []
  },
  "Earth's Grasp": {
@@ -326,26 +323,8 @@
  "Mental Dexterity": {
   "tree": "Enhancement",
   "max": 3,
-  "text": "Increases your Attack Power by an amount equal to 33% of your Intellect.",
+  "text": "Increases your Attack Power by an amount equal to 50% of your Intellect.",
   "effects": []
- },
- "Improved Ghost Wolf": {
-  "tree": "Enhancement",
-  "max": 2,
-  "text": "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
-  "effects": [
-   {
-    "channel": "cast_time",
-    "scope": [
-     "ability:Ghost Wolf"
-    ],
-    "values": [
-     1.0,
-     3.0
-    ],
-    "source": "parsed"
-   }
-  ]
  },
  "Improved Lightning Shield": {
   "tree": "Enhancement",
@@ -420,14 +399,32 @@
  "Flurry": {
   "tree": "Enhancement",
   "max": 5,
-  "text": "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+  "text": "Increases your attack speed by 6% for your next 3 swings after dealing a melee critical strike.",
   "effects": []
  },
  "Stormstrike": {
   "tree": "Enhancement",
   "max": 1,
-  "text": "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+  "text": "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
   "effects": []
+ },
+ "Improved Ghost Wolf": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Ghost Wolf"
+    ],
+    "values": [
+     1.0,
+     3.0
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Spirit Weapons": {
   "tree": "Enhancement",
@@ -758,7 +755,7 @@
  "Riptide": {
   "tree": "Restoration",
   "max": 1,
-  "text": "Heals a friendly target for 485 to 533, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+  "text": "Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
   "effects": [
    {
     "channel": "heal",

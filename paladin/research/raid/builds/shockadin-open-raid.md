@@ -7,7 +7,7 @@
 | **Build** | 23/0/28 (Holy / Protection / Retribution) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -45,8 +45,8 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
-| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
-| **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
+| **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 | **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
 
 ## Core talents (priority order)
@@ -62,11 +62,11 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 425 | +0.0% | 797 | +0.0% | 70 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 423 | +0.0% | 787 | +0.0% | 70 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,7 +75,7 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
   1. threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+1.0%, pass 1)
   2. move to the top: if variableRef: groupReference (+0.5%, pass 1)
 
-Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -1.5s: if not variableRef: groupReference; at -1.5s: if variableRef: groupReference.
+Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -20s: move to variableRef yd; at -1.5s: if not variableRef: groupReference; at -1.5s: if variableRef: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | [`shockadin-open-raid`](shockadin-open-raid.md) casts/min |
 |---|---|---|

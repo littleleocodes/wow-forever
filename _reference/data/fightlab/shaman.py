@@ -1,7 +1,9 @@
 """Shaman module for the fight lab (Enhancement leveling with a slow two-hander).
 
-Spell ranks are read from `_reference/data/forever-spells/shaman.json` (beta client build 1.60.1.70009); talent numbers from
-each rank's tooltip in `_reference/data/forever-talents/shaman.json`. Weapon damage uses a quest-green two-hander by level,
+Spell ranks are read from `_reference/data/forever-spells/shaman.json` (the snapshot `data_build.BUILD` names); talent numbers from
+each rank's tooltip in `_reference/data/forever-talents/shaman.json`. Blizzard's notes of 2026-11-02 (client 1.60.1.70753) raised
+Lightning Bolt and Chain Lightning without numbers per rank and the export kept the old texts: `lightning_1102` fills them in
+(LB_CLASSIC_SHARE, CL_LB_DAMAGE, CL_LB_MANA below). Weapon damage uses a quest-green two-hander by level,
 attack power from the client's base stats (2 AP per Strength) plus the weapon imbue (Rockbiter's attack power, or Windfury's
 extra attacks from 30).
 
@@ -33,6 +35,7 @@ DMG = re.compile(r"(?:for|causing|dealing|inflicts) (\d[\d,]*) to (\d[\d,]*) (\w
 MAGMA = re.compile(r"for (\d+) sec that causes (\d+) Fire damage to creatures within (\d+) yards every (\d+) seconds")
 FLAME = re.compile(r"causing (\d[\d,]*) Fire damage immediately and (\d[\d,]*) Fire damage over (\d+) sec")
 HEAL = re.compile(r"Heals (?:a|the) friendly target for (\d[\d,]*) to (\d[\d,]*)")
+HOT = re.compile(r"Heals a friendly target for (\d[\d,]*) over (\d+) sec")   # Riptide since 2026-11-02 (heal over time only; not cast solo)
 ROCK = re.compile(r"increasing melee attack power by (\d+)")
 # Windfury Weapon's proc aura (439431) has a 1.5 sec ProcCategoryRecovery (the old fork's weapon_imbues.go, from the client data; the
 # tooltip does not say): no second proc within 1.5 s (audit 2026-10-18 #73; before, every landed hit rolled)
@@ -44,6 +47,21 @@ SEARING = re.compile(r"for (\d+) sec that repeatedly attacks an enemy within (\d
 CLAW = re.compile(r"Stoneclaw Totem with (\d+) health at the feet of the caster for (\d+) sec")
 SLOW = re.compile(r"slowing movement speed by (\d+)%\. Lasts (\d+) sec")
 COEF = re.compile(r"([\d.]+)% of spell power \((\w+(?: \w+)?)\)")
+NORM = re.compile(r"(\d+)% normalized weapon damage")
+NORMALIZED_2H = 3.3   # Classic's normalized speed of a two-hander (the client's rule for "normalized weapon damage")
+BOLT = re.compile(r"for (\d[\d,]*) to (\d[\d,]*) Nature damage")
+# Lightning Bolt and Chain Lightning, Blizzard's notes of 2026-11-02 (client 70753): "Lightning Bolt: Base damage of all ranks increased, with
+# larger percentage increases on the higher ranks. Max rank was increased by 80%. Each rank's new base damage is roughly 78% of the base
+# damage as the Classic Era version (but cast time is lower than Classic Era)"; "Chain Lightning cast time increased to 2.5 seconds. Primary
+# target base damage increased to approximately 145% of comparable rank Lightning Bolt base damage. Mana cost increased to approximately 225%
+# of comparable rank Lightning Bolt Mana cost." No per-rank numbers: talentsforever.com's 2026-11-03 export keeps the old texts (Lightning
+# Bolt rank 10 189 to 211, Chain Lightning rank 4 119 to 133 for 315 mana) and changed only Chain Lightning's cast. Our reading: each
+# Lightning Bolt rank deals 78% of its Classic Era damage (from the export's Classic text) or its old Forever damage, whichever is higher
+# (ranks 1-3 keep theirs; rank 10 334 to 371, +76% where the notes say 80%); a Chain Lightning rank deals 145% and costs 225% of the
+# highest Lightning Bolt rank taught at its level (rank 4 at 56: 484 to 538 for 495 mana). max() keeps a later export's real numbers.
+LB_CLASSIC_SHARE = 0.78
+CL_LB_DAMAGE = 1.45
+CL_LB_MANA = 2.25
 
 # Lightning and Water Shield: "Only one ball/globe will fire every few seconds": 3.5 s, as the healer lab (heallab/shaman.py
 # WATER_SHIELD_ICD) and the raid simulator (sim/shaman/shields.go at db4d14a); 3.0 s before 2026-10-18 (audit 2026-10-18 #73).
@@ -52,7 +70,9 @@ SHIELD_ICD = 3.5
 # it returns a quarter of one Searing Totem's cost (about 40 mana at 60) for a global cooldown; drinking restores more in that time
 # (audit 2026-10-18 #25).
 TALENT_SPELLS = {"Stormstrike": "Stormstrike", "Rage of the Farseer": "Rage of the Farseer", "Water Shield": "Water Shield", "Mana Tide Totem": "Mana Tide Totem",
-                 "Nature's Swiftness": "Nature's Swiftness", "Lava Burst": "Lava Burst", "Riptide": "Riptide", "Elemental Mastery": "Elemental Mastery"}
+                 "Nature's Swiftness": "Nature's Swiftness", "Riptide": "Riptide", "Lightning Mastery": "Lightning Mastery"}
+# 2026-11-02 notes (client 70753): Lava Burst left the game (Call of Thunder, +5% crit for Lightning Bolt and Chain Lightning, takes its
+# cell) and Elemental Mastery is Lightning Mastery (same effect: 15 s of Lightning Bolt 0.5 s faster and no Chain Lightning cooldown).
 
 
 def _num(s):
@@ -84,14 +104,23 @@ def load_spellbook():
                           range=_num(rm.group(1)) if rm else 0.0, coef=coefs.get("direct", 0.0), tags=("cost_pct",) if "base mana" in cost_txt else ())
                 s.text = txt
                 s.interrupt = parse_interrupt(txt)
+                s.classic_text = ((r.get("classic") or {}).get("text") or "").replace("\n", " ")
                 dm, fs, he, rk, wf, ft, sh, se, cl, sl, mg = (rx.search(txt) for rx in (DMG, FLAME, HEAL, ROCK, WIND, FLAME_W, SHIELD, SEARING, CLAW, SLOW, MAGMA))
-                if name == "Stormstrike":
-                    s.kind, s.weapon_pct, s.school = "melee", 1.0, "physical"
+                if name == "Stormstrike":   # 70753: "Instantly strike for 150% normalized weapon damage" (100% unnormalized before)
+                    nm = NORM.search(txt)
+                    pct = float(nm.group(1)) / 100 if nm else 1.0
+                    s.kind, s.weapon_pct, s.school = "melee", pct, "physical"
+                    if nm:   # normalized: the attack power part counts NORMALIZED_2H s, not the weapon's speed (engine.weapon_damage uses
+                        #       the speed): the difference comes off through the attack power coefficient
+                        s.coef = -pct * (WEAPON_SPEED["2h"] - NORMALIZED_2H) / 14.0
                 elif fs:
                     s.dmg_min = s.dmg_max = _num(fs.group(1))
                     s.dot, s.dot_dur, s.dot_ticks, s.dot_coef = _num(fs.group(2)), float(fs.group(3)), 4, coefs.get("per tick", 0.0)
                 elif dm:
                     s.dmg_min, s.dmg_max = _num(dm.group(1)), _num(dm.group(2))
+                elif HOT.search(txt):
+                    ho = HOT.search(txt)
+                    s.kind, s.hot, s.hot_dur, s.heal_coef = "heal", _num(ho.group(1)), float(ho.group(2)), coefs.get("per tick", 0.0)
                 elif he:
                     s.kind, s.heal_min, s.heal_max, s.heal_coef = "heal", _num(he.group(1)), _num(he.group(2)), coefs.get("heal", 0.0)
                 if rk:
@@ -113,13 +142,31 @@ def load_spellbook():
                     s.needs_fire_totem = True
                 if sl:
                     s.daze, s.chill_dur = float(sl.group(1)) / 100, float(sl.group(2))
-                if name in ("Water Shield", "Nature's Swiftness", "Rage of the Farseer", "Elemental Mastery", "Mana Tide Totem", "Strength of Earth Totem", "Stoneskin Totem",
+                if name in ("Water Shield", "Nature's Swiftness", "Rage of the Farseer", "Lightning Mastery", "Mana Tide Totem", "Strength of Earth Totem", "Stoneskin Totem",
                             "Grace of Air Totem", "Windfury Totem", "Healing Stream Totem", "Mana Spring Totem", "Ghost Wolf", "Reincarnation", "Totemic Recall"):
                     s.kind = "buff"
                 book.setdefault(name, []).append(s)
     for name in book:
         book[name].sort(key=lambda x: (x.level, x.rank))
+    lightning_1102(book)
     return book
+
+
+def lightning_1102(book):
+    """Lightning Bolt and Chain Lightning by Blizzard's notes of 2026-11-02 (LB_CLASSIC_SHARE above): in place on the loaded ranks."""
+    for lb in book.get("Lightning Bolt", []):
+        m = BOLT.search(lb.classic_text or "")
+        if m:
+            lb.dmg_min = max(lb.dmg_min, round(LB_CLASSIC_SHARE * _num(m.group(1))))
+            lb.dmg_max = max(lb.dmg_max, round(LB_CLASSIC_SHARE * _num(m.group(2))))
+    for cl in book.get("Chain Lightning", []):
+        bolts = [x for x in book.get("Lightning Bolt", []) if x.level <= cl.level]
+        if not bolts:
+            continue
+        lb = bolts[-1]
+        cl.dmg_min = max(cl.dmg_min, round(CL_LB_DAMAGE * lb.dmg_min))
+        cl.dmg_max = max(cl.dmg_max, round(CL_LB_DAMAGE * lb.dmg_max))
+        cl.cost = max(cl.cost, round(CL_LB_MANA * lb.cost))
 
 
 BOOK = load_spellbook()
@@ -136,42 +183,43 @@ def talent_numbers():
 TNUM = talent_numbers()
 
 MECHANICS = {
-    "Convection": "-2%/rank mana on shocks, Lightning Bolt, Lava Burst, Chain Lightning",
+    "Convection": "-2%/rank mana on shocks, Lightning Bolt, Chain Lightning",
     "Concussion": "+1%/rank Lightning Bolt, Chain Lightning, Earth Shock",
     "Elemental Warding": "no caster mobs here",
     "Reverberation": "-0.2 s/rank shock cooldown",
-    "Call of Flame": "+5%/rank Searing and Magma Totem, Flame Shock, Fire Nova and Lava Burst; +3 s/rank Flame Shock (more ticks, client 70425)",
+    "Call of Flame": "+5%/rank Searing and Magma Totem, Flame Shock and Fire Nova; +3 s/rank Flame Shock (more ticks, client 70425)",
     "Elemental Devastation": "direct damage spell crits (client 70425; was any spell crit): +3%/rank melee crit for 10 s",
     "Elemental Focus": "10% chance after any Fire, Frost or Nature damage spell cast, hit or miss: Clearcasting, the next damage spell is free",
-    "Elemental Alacrity": "-0.17 s/rank Lightning Bolt, Chain Lightning and Lava Burst cast",
+    "Elemental Alacrity": "-0.17 s/rank Lightning Bolt and Chain Lightning cast (0.50 s at 3/3)",
     "Trial by Fire": "+10%/rank Fire Nova damage, -2 s/rank cooldown, +10 s/rank Magma Totem (client 70425's Improved Fire Nova; pulls of several mobs: "
                      "single targets never use Fire Nova or Magma Totem)",
-    "Eye of the Storm": "a 23%/rank chance to ignore a pushback on Lightning Bolt, Chain Lightning and Lava Burst (tooltip: 70% less pushback at 3/3)",
-    "Elemental Reach": "+3 yd/rank Lightning Bolt (longer pulls); its Fire Nova, Lava Burst and Totemic Projection parts are not used",
-    "Lightning Overload": "3/7/10%: a free half-damage copy of Lightning Bolt or Chain Lightning (the chain's jumps too)",
+    "Eye of the Storm": "a 23%/rank chance to ignore a pushback on Lightning Bolt and Chain Lightning (tooltip: 70% at 3/3)",
+    "Elemental Reach": "+3 yd/rank Lightning Bolt (longer pulls); its Chain Lightning and Fire Nova range is not used",
+    "Call of Thunder": "+5% crit for Lightning Bolt and Chain Lightning (70753: back in Lava Burst's cell)",
+    "Lightning Overload": "10/20/30% (70753; 3/7/10% before): a free half-damage copy of Lightning Bolt or Chain Lightning (the chain's jumps too)",
     "Earthbound": "not used",
     "Elemental Fury": "spell, Searing and Magma Totem crit damage bonus +20% per rank of the 50% bonus (x2.0 at 5/5)",
-    "Lava Burst": "Elemental: cast on cooldown (20% more damage on a Flame Shocked target: the 70425 tooltip; Wrath's guaranteed crit until 2026-10-09)",
-    "Elemental Mastery": "Elemental: cast at the start of a fight when ready (3 min cooldown, a global cooldown assumed): 15 s of Lightning Bolt and Lava Burst "
-                         "0.5 s faster and no Chain Lightning cooldown (client 70425)",
+    "Lightning Mastery": "Elemental: cast at the start of a fight when ready (3 min cooldown, a global cooldown assumed): 15 s of Lightning Bolt 0.5 s "
+                         "faster and no Chain Lightning cooldown (70753; Elemental Mastery before, which also sped up Lava Burst)",
     "Earth's Grasp": "+25%/rank Stoneclaw Totem health",
     "Thundering Strikes": "+1%/rank crit with spells and attacks",
     "Ancestral Knowledge": "+2%/rank Intellect",
     "Guardian Totems": "not used (Stoneskin Totem is not dropped per fight)",
-    "Mental Dexterity": "+33%/rank of Intellect as attack power",
+    "Mental Dexterity": "+50%/rank of Intellect as attack power (70753; 33% before)",
     "Improved Ghost Wolf": "travel only",
     "Improved Lightning Shield": "+5%/rank Lightning Shield damage",
     "Elemental Weapons": "+6.7%/rank Rockbiter attack power, +13%/rank Windfury attack power, +? Flametongue",
     "Shamanistic Focus": "-45% mana on shocks and Lightning Shield",
     "Anticipation": "+2%/rank dodge",
     "Toughness": "+2%/rank Stamina",
-    "Flurry": "crits: +5%/rank attack speed for the next 3 swings",
-    "Stormstrike": "unlocks Stormstrike (weapon damage, +20% on the next Lightning Bolt / Earth Shock, 8 s cooldown)",
+    "Flurry": "crits: +6%/rank attack speed for the next 3 swings (70753; 5% before)",
+    "Stormstrike": "unlocks Stormstrike (150% normalized weapon damage, +20% on the next Lightning Bolt / Chain Lightning / Earth Shock, 6 s cooldown: 70753)",
     "Spirit Weapons": "+5% parry",
     "Mental Quickness": "+15%/rank of Intellect as spell damage",
     "Improved Stormstrike": "Stormstrike: a 50%/rank chance of 50% mana regen while casting for 15 s; a 50%/rank chance to reset Stormstrike when you dodge or parry",
-    "Maelstrom Weapon": "-4%/rank cast time and mana per stack on the next Lightning Bolt (5 stacks at 5/5: instant and free); stacks come at 2 procs per minute per "
-                        "point on landed melee hits (the raid simulator's assumption: the client gives no rate)",
+    "Maelstrom Weapon": "-4%/rank cast time and mana per stack on the next Lightning Bolt (5 stacks at 5/5: instant and free); stacks come at 4 procs per minute per "
+                        "point on landed melee hits (the raid simulator's 2 per point, doubled by the 2026-11-02 notes; a stack on every landed hit at 5/5 "
+                        "with the lab's 3.4 s two-hander)",
     "Rage of the Farseer": "+30% attack speed for 25 s (on the pull, every 3 min assumed)",
     "Improved Healing Wave": "-0.1 s/rank Healing Wave cast",
     "Totemic Focus": "-5%/rank totem mana",
@@ -196,14 +244,14 @@ FIT = {
     "Stormstrike": ("replace", [{"channel": "dmg", "scope": ["type:melee"], "values": [0.10]}]),
     "Spirit Weapons": "scale", "Mental Quickness": "scale", "Improved Stormstrike": "scale", "Maelstrom Weapon": "scale", "Rage of the Farseer": "scale",
     "Convection": "scale", "Concussion": "scale", "Reverberation": "scale", "Call of Flame": "scale", "Elemental Devastation": "scale", "Elemental Focus": "scale",
-    "Elemental Alacrity": "scale", "Eye of the Storm": "scale", "Trial by Fire": "scale", "Elemental Mastery": "scale", "Elemental Reach": "scale", "Lightning Overload": "scale", "Elemental Fury": "scale",
+    "Elemental Alacrity": "scale", "Eye of the Storm": "scale", "Trial by Fire": "scale", "Lightning Mastery": "scale", "Call of Thunder": "scale", "Elemental Reach": "scale", "Lightning Overload": "scale", "Elemental Fury": "scale",
     "Improved Healing Wave": "scale", "Totemic Focus": "scale", "Mindfulness": "scale", "Tidal Focus": "scale", "Improved Reincarnation": "scale", "Healing Focus": "scale",
     "Water Shield": "scale", "Tidal Mastery": "scale", "Restorative Totems": "scale", "Mana Tide Totem": "scale", "Healing Way": "scale", "Nature's Swiftness": "scale",
     "Purification": "scale",
 }
 SHARE_SOURCE = {'Chain Lightning': 'chain_lightning', 'Fire Nova': 'fire_nova', 'Magma Totem': 'magma', "Melee": "white", "Windfury": "windfury", "Earth Shock": "earth_shock", "Lightning Bolt": "lightning_bolt", "Flame Shock": "flame_shock",
                 "Lightning Shield": "lightning_shield", "Stormstrike": "stormstrike", "Searing Totem": "searing_totem", "Flametongue Weapon": "rockbiter"}
-NEW_SOURCES = {'chain_lightning': {'id': 'chain_lightning', 'share': 0.0, 'min_level': 32, 'tags': ['type:spell', 'school:nature', 'aoe', 'ability:Chain Lightning', 'enh-nature'], 'cast': 2.0, 'min_cast': 1.5}, 'fire_nova': {'id': 'fire_nova', 'share': 0.0, 'min_level': 12, 'tags': ['type:spell', 'school:fire', 'instant', 'aoe', 'ability:Fire Nova', 'ability:Fire Nova Totem', 'totem']}, 'magma': {'id': 'magma', 'share': 0.0, 'min_level': 26, 'tags': ['type:spell', 'school:fire', 'dot', 'aoe', 'ability:Magma Totem', 'totem']}, "stormstrike": {"id": "stormstrike", "share": 0.0, "min_level": 25, "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"], "cooldown": 8},
+NEW_SOURCES = {'chain_lightning': {'id': 'chain_lightning', 'share': 0.0, 'min_level': 32, 'tags': ['type:spell', 'school:nature', 'aoe', 'ability:Chain Lightning', 'enh-nature'], 'cast': 2.5, 'min_cast': 2.0}, 'fire_nova': {'id': 'fire_nova', 'share': 0.0, 'min_level': 12, 'tags': ['type:spell', 'school:fire', 'instant', 'aoe', 'ability:Fire Nova', 'ability:Fire Nova Totem', 'totem']}, 'magma': {'id': 'magma', 'share': 0.0, 'min_level': 26, 'tags': ['type:spell', 'school:fire', 'dot', 'aoe', 'ability:Magma Totem', 'totem']}, "stormstrike": {"id": "stormstrike", "share": 0.0, "min_level": 25, "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"], "cooldown": 6},
                "searing_totem": {"id": "searing_totem", "share": 0.0, "min_level": 10, "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"], "can_crit": True}}
 KEY_TALENTS = ["Stormstrike", "Flurry", "Maelstrom Weapon"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and "
@@ -211,8 +259,8 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; "
                "Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s "
                "instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.")
-NOT_MODELLED = ("runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Chain Lightning on "
-                "single targets, Ghost Wolf travel, gear upgrades within a level bracket, where a Fire totem stands (Fire Nova and Magma Totem reach the mobs around you).")
+NOT_MODELLED = ("runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Totemic Call, "
+                "Ghost Wolf travel, gear upgrades within a level bracket, where a Fire totem stands (Fire Nova and Magma Totem reach the mobs around you).")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'enhancement-dps', 'opt': 'opt-enhancement-dps-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'},
                           {'spec': 'elemental-dps', 'opt': 'opt-elemental-dps-leveling-st', 'tag': 'ele', 'profile': 'leveling-st', 'lookahead': 16, 'sets': [],
@@ -221,36 +269,29 @@ PIPELINE = {"variants": [{'spec': 'enhancement-dps', 'opt': 'opt-enhancement-dps
             "extra_reports": [{"spec": "elemental-dps", "build": "opt-elemental-dps-leveling-st", "compare": ["opt-enhancement-dps-leveling-st"]}]}
 
 
-def _lava_burst_flame_shock():
-    """Lava Burst's bonus on a Flame Shocked target, from the beta spellbook ("Lava Burst deals 20% increased damage")."""
-    import json
-    import pathlib
-    import re
-    book = json.load(open(pathlib.Path(__file__).resolve().parent.parent / "forever-spells" / "shaman.json", encoding="utf-8"))
-    for tab in book["tabs"]:
-        for sp in tab["spells"]:
-            if sp["name"] == "Lava Burst":
-                m = re.search(r"Lava Burst deals (\d+)% increased damage", sp["ranks"][-1].get("text") or "")
-                if m:
-                    return float(m.group(1))
-    return 20.0
-
-
-LAVA_BURST_FLAME_SHOCK = _lava_burst_flame_shock()
+# Lightning Mastery (70753's tooltip): "reducing the cast time of Lightning Bolt by 0.5 sec, and removing the cooldown from Chain Lightning.
+# Lasts 15 sec."
+LIGHTNING_MASTERY_CAST = 0.5
+LIGHTNING_MASTERY_DUR = 15.0
 
 # Searing Totem shoots every 2.435 s: the raid simulator's value from beta logs (sim/shaman/fire_totems.go: the 2.2 s pulse cast plus a
 # 0.23 s wait, the median of 1,267 attacks); the fight lab used 2.2 s until 2026-10-09
 SEARING_INTERVAL = 2.435
 # Maelstrom Weapon's proc rate: the client gives none, so the raid simulator's assumption, 2 procs per minute per talent point on landed
-# melee hits (sim/shaman/talents_enhancement.go: a full stack about every 30 s at 5/5); the per-hit chance is rate x weapon speed / 60
-# (0.57 a hit with the lab's 3.4 s two-hander at 5/5). The fight lab used 4% a hit per point until 2026-10-09.
-MW_PPM_PER_POINT = 2.0
+# melee hits (sim/shaman/talents_enhancement.go: a full stack about every 30 s at 5/5; 10 a minute at any rank in the official simulator at
+# bac92dbd5), doubled by Blizzard's notes of 2026-11-02 ("Maelstrom Weapon: Chance to trigger doubled"): 4 per point. The per-hit chance is
+# rate x weapon speed / 60, capped at 1 (1.13 with the lab's 3.4 s two-hander at 5/5: every landed hit; 0.57 before 2026-11-03). The fight
+# lab used 4% a hit per point until 2026-10-09.
+MW_PPM_PER_POINT = 4.0
 
 
 class ShamanModule(BaseModule):
     resource = "mana"
     melee = True
     IMBUE = "auto"   # "auto" = Windfury from 30, Rockbiter before; "rockbiter" / "windfury" / "flametongue" to test
+    CL_SINGLE = 0          # Elemental: Chain Lightning on a single mob (0 never, 1 under Lightning Mastery, 2 whenever ready)
+    CL_SINGLE_MANA = 0.5   # ... only above this share of the mana
+    ROTATION_KNOBS = {"CL_SINGLE": [0, 1, 2], "CL_SINGLE_MANA": [0.0, 0.3, 0.5, 0.7]}   # tuned by rotation_opt.py ("knobs" in rotations/shaman-<spec>.json)
 
     AOE = {'direct': ['Chain Lightning', 'Fire Nova', 'Magma Totem'], 'dots': ['Flame Shock'], 'min_near': 2}
 
@@ -349,7 +390,7 @@ class ShamanModule(BaseModule):
         cost = spell.cost
         if "cost_pct" in spell.tags:
             cost = cost / 100 * self._base_mana
-        if spell.name in ("Earth Shock", "Flame Shock", "Frost Shock", "Lightning Bolt", "Lava Burst", "Chain Lightning"):
+        if spell.name in ("Earth Shock", "Flame Shock", "Frost Shock", "Lightning Bolt", "Chain Lightning"):
             cost *= 1 - self.tv("Convection", 0) / 100
         if spell.name in ("Earth Shock", "Flame Shock", "Frost Shock", "Lightning Shield") and self.rank("Shamanistic Focus"):
             cost *= 0.55
@@ -380,10 +421,10 @@ class ShamanModule(BaseModule):
     def cast_time(self, spell):
         c = spell.cast
         f = self._fight
-        if spell.name in ("Lightning Bolt", "Chain Lightning", "Lava Burst"):
+        if spell.name in ("Lightning Bolt", "Chain Lightning"):
             c = max(GCD, c - self.tv("Elemental Alacrity", 0))
-            if spell.name in ("Lightning Bolt", "Lava Burst") and f and f.p.buff("Elemental Mastery", f.t):
-                c = max(GCD, c - 0.5)
+            if spell.name == "Lightning Bolt" and f and f.p.buff("Lightning Mastery", f.t):   # "reducing the cast time of Lightning Bolt by 0.5 sec"
+                c = max(GCD, c - LIGHTNING_MASTERY_CAST)
             if spell.name == "Lightning Bolt" and f:
                 mw = f.p.buff("Maelstrom Weapon", f.t)
                 if mw:
@@ -410,6 +451,8 @@ class ShamanModule(BaseModule):
             c += self.tv("Elemental Devastation", 0) / 100
         if spell.kind == "heal":   # Tidal Mastery: "critical effect chance of your healing spells by 1-5%" (until 2026-10-17 never applied)
             c += self.tv("Tidal Mastery", 0) / 100
+        if spell.name in ("Lightning Bolt", "Chain Lightning"):   # Call of Thunder (70753): "critical strike chance of Lightning Bolt and Chain Lightning by 5%"
+            c += self.tv("Call of Thunder", 0) / 100
         return c
 
     def crit_damage_bonus(self, spell):
@@ -424,10 +467,8 @@ class ShamanModule(BaseModule):
             m *= 1 + self.tv("Concussion", 0) / 100
             if f and f.p.buff("Stormstrike", f.t):
                 m *= 1.20
-        if spell.name in ("Flame Shock", "Searing Totem", "Magma Totem", "Fire Nova", "Lava Burst"):   # Call of Flame names Lava Burst
+        if spell.name in ("Flame Shock", "Searing Totem", "Magma Totem", "Fire Nova"):
             m *= 1 + self.tv("Call of Flame", 0) / 100
-        if spell.name == "Lava Burst" and f is not None and f.dot_active("Flame Shock"):
-            m *= 1 + LAVA_BURST_FLAME_SHOCK / 100
         if spell.name == "Fire Nova":
             m *= 1 + self.tv("Trial by Fire", 0) / 100
         if spell.name == "Lightning Shield":
@@ -457,7 +498,7 @@ class ShamanModule(BaseModule):
         return class_health_regen_tick("shaman", p.spirit)
 
     def pushback_resisted(self, fight, spell):
-        if spell.name in ("Lightning Bolt", "Chain Lightning", "Lava Burst") and self.rank("Eye of the Storm"):
+        if spell.name in ("Lightning Bolt", "Chain Lightning") and self.rank("Eye of the Storm"):
             return fight.rng.random() < self.tv("Eye of the Storm", 0) / 100
         if spell.kind == "heal" and self.rank("Healing Focus"):
             return fight.rng.random() < self.tv("Healing Focus", 0) / 100
@@ -526,7 +567,7 @@ class ShamanModule(BaseModule):
             elif getattr(imb, "ft_max", 0.0):
                 dmg = fight.rng.uniform(imb.ft_min, imb.ft_max) * (1 + self.tv("Elemental Weapons", 2) / 100)
                 fight.deal(Spell("Flametongue Weapon", "fire"), dmg, False)
-        if self.rank("Maelstrom Weapon") and fight.rng.random() < MW_PPM_PER_POINT * self.rank("Maelstrom Weapon") * p.mh.speed / 60.0:
+        if self.rank("Maelstrom Weapon") and fight.rng.random() < min(1.0, MW_PPM_PER_POINT * self.rank("Maelstrom Weapon") * p.mh.speed / 60.0):
             b = p.buffs.get("Maelstrom Weapon")
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             p.buffs["Maelstrom Weapon"] = {"until": t + 30.0, "stacks": stacks}
@@ -565,8 +606,8 @@ class ShamanModule(BaseModule):
             p.buffs["Elemental Devastation"] = {"until": t + 10.0}
         if crit and spell.kind in ("spell", "heal"):   # Water Shield: "when one of the caster's spells gets a critical result" (70425)
             self.water_globe(p, t)
-        if spell.name == "Elemental Mastery":
-            p.buffs["Elemental Mastery"] = {"until": t + 15.0}
+        if spell.name == "Lightning Mastery":
+            p.buffs["Lightning Mastery"] = {"until": t + LIGHTNING_MASTERY_DUR}
         if spell.name == "Nature's Swiftness":
             p.buffs["Nature's Swiftness"] = {"until": t + 60.0}
         if spell.name == "Stoneclaw Totem":
@@ -651,7 +692,7 @@ class ShamanModule(BaseModule):
         cd = spell.cooldown
         if spell.name == "Fire Nova":
             cd = max(0.0, cd - self.tv("Trial by Fire", 1))
-        if spell.name == "Chain Lightning" and p.buff("Elemental Mastery", t):   # "removing the cooldown from Chain Lightning"
+        if spell.name == "Chain Lightning" and p.buff("Lightning Mastery", t):   # "removing the cooldown from Chain Lightning"
             cd = 0.0
         if spell.name in ("Earth Shock", "Flame Shock", "Frost Shock"):
             cd = max(GCD, cd - self.tv("Reverberation", 0))
@@ -680,18 +721,24 @@ class ShamanModule(BaseModule):
 
     # ------------------------------------------------------------ priority list
     def decide_elemental(self, fight, can, in_melee):
-        """Elemental: Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock, Earth Shock and
-        Lava Burst on cooldown with Lightning Bolts between them while mana lasts; a bolt in melee eats pushback (Eye of the
-        Storm resists it); the weapon swings whenever nothing is cast."""
+        """Elemental: Lightning Mastery on a fresh mob when ready, Lightning Bolts from range (the pull and while the mob walks in),
+        then Flame Shock and Earth Shock on cooldown with Lightning Bolts between them while mana lasts (Chain Lightning on a single
+        mob only as CL_SINGLE allows); a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever
+        nothing is cast. Lava Burst left the game on 2026-11-02 (it was cast on cooldown here)."""
         p, m, t = fight.p, fight.m, fight.t
         sp = self.spells
-        lb, es, fs, lvb = (sp.get(n) for n in ("Lightning Bolt", "Earth Shock", "Flame Shock", "Lava Burst"))
+        lb, es, fs, cl = (sp.get(n) for n in ("Lightning Bolt", "Earth Shock", "Flame Shock", "Chain Lightning"))
         hp = m.hp
         avg_lb = ((lb.dmg_min + lb.dmg_max) / 2 + lb.coef * p.spell_power) * self.damage_multiplier(lb, False) if lb else 0.0
         reserve = (self.mana_cost(es) if es else 0.0) + (self.mana_cost(fs) if fs else 0.0)
-        em = sp.get("Elemental Mastery")   # client 70425: at the start of a fight, before the bolts
-        if em and can(em) and hp > 0.6 * m.hp_max and not p.buff("Elemental Mastery", t):
-            return em
+        lm = sp.get("Lightning Mastery")   # at the start of a fight, before the bolts (Elemental Mastery's rule since client 70425)
+        if lm and can(lm) and hp > 0.6 * m.hp_max and not p.buff("Lightning Mastery", t):
+            return lm
+        # Chain Lightning on one mob (2026-11-02: 145% of a Lightning Bolt for 225% of its mana, a 2.5 s cast and a 6 s cooldown, none under
+        # Lightning Mastery): CL_SINGLE 0 never, 1 only under Lightning Mastery, 2 whenever ready; above CL_SINGLE_MANA of the mana only
+        if (cl and self.CL_SINGLE and can(cl) and (self.CL_SINGLE >= 2 or p.buff("Lightning Mastery", t)) and m.dist <= cl.range
+                and p.mana >= self.CL_SINGLE_MANA * p.mana_max and hp > avg_lb):
+            return cl
         if not in_melee:
             if lb and can(lb) and m.dist <= lb.range + self.tv("Elemental Reach", 0) and (m.dist - MELEE_RANGE) / max(0.1, m.speed(t)) >= self.cast_time(lb) - 0.6:
                 return lb
@@ -704,8 +751,6 @@ class ShamanModule(BaseModule):
             return es
         if fs and can(fs) and not fight.dot_active("Flame Shock") and hp > 0.3 * m.hp_max:
             return fs
-        if lvb and can(lvb) and hp > lvb.dmg_min * 0.5:
-            return lvb
         if es and can(es) and hp > es.dmg_min * 0.5:
             return es
         if lb and can(lb) and p.mana - self.mana_cost(lb) >= reserve and hp > avg_lb * 0.6:

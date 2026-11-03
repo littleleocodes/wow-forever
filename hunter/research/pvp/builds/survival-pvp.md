@@ -7,7 +7,7 @@
 | **Build** | 0/21/30 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -28,7 +28,7 @@ The Survival PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's 
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
 
 ### Survival (30)
@@ -47,7 +47,7 @@ The Survival PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's 
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Lightning Reflexes** | 1/5 | changed | Increases your Agility by 2%. |
+| **Lightning Reflexes** | 1/5 | changed | Increases your Agility by 3%. |
 
 ## Core talents (priority order)
 

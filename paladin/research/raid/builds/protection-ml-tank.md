@@ -7,7 +7,7 @@
 | **Build** | 0/35/16 (Holy / Protection / Retribution) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -51,14 +51,14 @@ The Protection tank build the machine-learning talent search found in the commun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 0/35/16 | 1.021 | +0.0% | 1203 | 289 |
-| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -2.0% | 1140 | 285 |
-| 3 | *Default* | community simulator | - | 0.993 | -2.7% | 1173 | 298 |
-| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.975 | -4.5% | 1079 | 284 |
+| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 0/35/16 | 1.019 | +0.0% | 1191 | 293 |
+| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -1.9% | 1125 | 287 |
+| 3 | *Default* | community simulator | - | 0.993 | -2.6% | 1159 | 301 |
+| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.976 | -4.3% | 1066 | 286 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -75,8 +75,8 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Judgement | 0.3 |
 | 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 |
-| 5 | cast Consecration | 6.8 |
-| 6 | cast Holy Shield | 5.6 |
+| 5 | cast Consecration | 6.7 |
+| 6 | cast Holy Shield (rank 3) | 5.6 |
 | 7 | cast Holy Strike | 9.6 |
 | 8 | cast Lay on Hands | 0.3 |
 | 9 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.0 |
@@ -93,7 +93,7 @@ Damage by ability (threat for tanks):
 | Judgement of Fury | 12% |
 | Seal of Fury | 11% |
 | Consecration | 11% |
-| Lay on Hands | 4% |
+| Lay on Hands | 5% |
 | Hammer of Wrath | 3% |
 | Judgement of Light | 3% |
 | Retribution Aura | 2% |

@@ -10,29 +10,29 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Combat Swords (simulator winner adopted 2026-09-28)](builds/combat-swords-raid.md) | 19/32/0 | DPS | [combat-swords-raid](../talents/classic-baseline/combat-swords-raid.md) |
-| [Combat Daggers (raid DPS)](builds/combat-daggers-raid.md) | 16/33/2 | DPS | [combat-daggers-raid](../talents/classic-baseline/combat-daggers-raid.md) |
-| [Assassination — Seal Fate / Vigor (raid DPS; formerly the Mutilate draft)](builds/assassination-mutilate-raid.md) | 30/21/0 | DPS | — |
-| [Assassination — Seal Fate daggers (raid)](builds/assassination-seal-fate-raid.md) | 30/19/2 | DPS | — |
-| [Subtlety — Hemorrhage (raid)](builds/subtlety-hemo-raid.md) | 20/0/31 | DPS | — |
+| [Combat Swords (simulator winner adopted 2026-09-28)](builds/combat-swords-raid.md) | 21/30/0 | DPS | [combat-swords-raid](../talents/classic-baseline/combat-swords-raid.md) |
+| [Combat Daggers (raid DPS)](builds/combat-daggers-raid.md) | 21/30/0 | DPS | [combat-daggers-raid](../talents/classic-baseline/combat-daggers-raid.md) |
+| [Assassination — Seal Fate / Vigor (raid DPS; formerly the Mutilate draft)](builds/assassination-mutilate-raid.md) | 29/22/0 | DPS | — |
+| [Assassination — Seal Fate daggers (raid)](builds/assassination-seal-fate-raid.md) | 28/21/2 | DPS | — |
+| [Subtlety — Hemorrhage (raid)](builds/subtlety-hemo-raid.md) | 21/0/30 | DPS | — |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Combat — Raid (machine-learning search)](builds/combat-ml-raid.md) 🔬 | 16/33/2 | DPS |
-| [Assassination — Raid (machine-learning search)](builds/assassination-ml-raid.md) 🔬 | 30/21/0 | DPS |
-| [Combat — Swords (open talent search)](builds/combat-swords-open-raid.md) 🔬 | 19/32/0 | DPS |
+| [Combat — Raid (machine-learning search)](builds/combat-ml-raid.md) 🔬 | 21/30/0 | DPS |
+| [Assassination — Raid (machine-learning search)](builds/assassination-ml-raid.md) 🔬 | 29/22/0 | DPS |
+| [Combat — Swords (open talent search)](builds/combat-swords-open-raid.md) 🔬 | 21/30/0 | DPS |
 | [Daggers (split) — Raid (open talent search)](builds/daggers-split-open-raid.md) 🔬 | 28/21/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-combat-swords-raid-raid-dps](builds/opt-combat-swords-raid-raid-dps.md) | 20/31/0 | raid-dps |
-| [opt-combat-swords-raid-parse](builds/opt-combat-swords-raid-parse.md) | 19/32/0 | parse |
-| [opt-combat-daggers-raid-raid-dps](builds/opt-combat-daggers-raid-raid-dps.md) | 17/32/2 | raid-dps |
-| [opt-combat-daggers-raid-parse](builds/opt-combat-daggers-raid-parse.md) | 17/32/2 | parse |
+| [opt-combat-swords-raid-raid-dps](builds/opt-combat-swords-raid-raid-dps.md) | 21/30/0 | raid-dps |
+| [opt-combat-swords-raid-parse](builds/opt-combat-swords-raid-parse.md) | 21/30/0 | parse |
+| [opt-combat-daggers-raid-raid-dps](builds/opt-combat-daggers-raid-raid-dps.md) | 21/30/0 | raid-dps |
+| [opt-combat-daggers-raid-parse](builds/opt-combat-daggers-raid-parse.md) | 21/30/0 | parse |
 
 Classic Era reference builds: [combat-swords-raid](../talents/classic-baseline/combat-swords-raid.md), [combat-daggers-raid](../talents/classic-baseline/combat-daggers-raid.md).
 

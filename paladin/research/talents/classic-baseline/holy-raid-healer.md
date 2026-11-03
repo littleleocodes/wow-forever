@@ -82,18 +82,18 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
 | Holy | Divine Intellect | 5 | moved-tree | now in Protection, tier 1 |
-| Holy | Spiritual Focus | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; moved in build 1.60.1.70707: was row 2, col 2; max rank 2 -> 5 in build 1.60.1.70707; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Holy | Spiritual Focus | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; moved in build 1.60.1.70753: was row 2, col 2; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Holy | Healing Light | 3 | changed | tier 2, max 3 — tooltip changed; was Holy row 3, col 1 |
 | Holy | Improved Lay on Hands | 2 | **REMOVED** | removed from Classic |
 | Holy | Unyielding Faith | 2 | moved-tree | now in Retribution, tier 3 |
-| Holy | Illumination | 5 | changed | tier 3, max 5 — tooltip changed; moved in build 1.60.1.70707: was row 4, col 2 |
+| Holy | Illumination | 5 | changed | tier 3, max 5 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 2 |
 | Holy | Improved Blessing of Wisdom | 2 | **REMOVED** | removed from Classic |
-| Holy | Divine Favor | 1 | moved | tier 3, max 1 — was Holy row 5, col 2; moved in build 1.60.1.70707: was row 4, col 3 |
-| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
+| Holy | Divine Favor | 1 | moved | tier 3, max 1 — was Holy row 5, col 2; moved in build 1.60.1.70753: was row 4, col 3 |
+| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Holy | Holy Shock | 1 | changed | tier 5, max 1 — tooltip changed; was Holy row 7, col 2 |
 | Protection | Improved Devotion Aura | 5 | **REMOVED** | removed from Classic |
 | Protection | Guardian's Favor | 2 | changed | tier 2, max 2 — tooltip changed |
-| Protection | Toughness | 3 | moved | tier 3, max 5 — was Protection row 2, col 4; moved in build 1.60.1.70707: was row 1, col 2 |
+| Protection | Toughness | 3 | moved | tier 3, max 5 — was Protection row 2, col 4; moved in build 1.60.1.70753: was row 1, col 2 |
 | Protection | Blessing of Kings | 1 | **REMOVED** | removed from Classic |
 | Retribution | Improved Blessing of Might | 5 | **REMOVED** | removed from Classic |
 | Retribution | Benediction | 4 | changed | tier 1, max 5 — tooltip changed |

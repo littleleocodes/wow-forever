@@ -7,7 +7,7 @@
 | **Build** | 22/0/29 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -23,7 +23,7 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | **Improved Channeling** | 3/5 | **NEW** | Gives your Arcane Missiles spell a 60% chance and your Arcane Blast and Arcane Wrath spells a 42% chance to not lose casting time when you take damage. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Arcane Mind** | 1/5 | changed | Increases your Intellect by 2% and increases the critical strike damage bonus of your Arcane spells by 20%. |
@@ -37,16 +37,16 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
+| **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt spell by 0.5 sec. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
-| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
+| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
-| **Winter's Chill** | 4/5 | changed | Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
+| **Winter's Chill** | 4/5 | changed | Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a 80% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
 
 ## Core talents (priority order)
 
@@ -74,23 +74,23 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**5 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 552 | +0.0% | 661 | -1.5% | 5 s |
 | 2 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 546 | -1.0% | 650 | -3.0% | 9 s |
-| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 544 | -1.4% | 659 | -1.7% | 7 s |
-| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 671 | +0.0% | 4 s |
+| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 544 | -1.4% | 660 | -1.6% | 7 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 670 | +0.0% | 4 s |
 | 5 | **[`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md)** | ours: hand draft | 22/0/29 | 506 | -8.4% | 572 | -14.7% | 0 s |
-| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -11.0% | 5 s |
+| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -10.9% | 5 s |
 | 7 | *Arcane Fire* | community simulator | - | 482 | -12.7% | 619 | -7.7% | 6 s |
 | 8 | *Arcane* | community simulator | - | 482 | -12.7% | 631 | -5.9% | 6 s |
 | 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 457 | -17.2% | 519 | -22.6% | 0 s |
 | 10 | *Frost Incin* | community simulator | - | 454 | -17.9% | 544 | -18.9% | 4 s |
-| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 539 | -19.5% | 9 s |
+| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 540 | -19.5% | 9 s |
 | 12 | *Fire* | community simulator | - | 408 | -26.0% | 487 | -27.4% | 8 s |
-| 13 | *FFB* | community simulator | - | 387 | -30.0% | 447 | -33.4% | 2 s |
+| 13 | *FFB* | community simulator | - | 387 | -30.0% | 446 | -33.4% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 

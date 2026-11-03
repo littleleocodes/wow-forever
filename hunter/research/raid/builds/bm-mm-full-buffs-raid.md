@@ -7,7 +7,7 @@
 | **Build** | 21/30/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `bm-mm-raid` |
 
 ## Summary
@@ -34,9 +34,9 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
+| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 15%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Improved Stings** | 1/3 | **NEW** | Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. |
 
@@ -68,14 +68,14 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 414 | +0.0% | 736 | -5.9% | 37 s |
-| 2 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 393 | -5.0% | 720 | -7.9% | 31 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 392 | -5.2% | 782 | +0.0% | 47 s |
-| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 375 | -9.2% | 719 | -8.1% | 25 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 388 | +0.0% | 691 | -8.3% | 37 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 377 | -2.6% | 753 | +0.0% | 47 s |
+| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 374 | -3.5% | 686 | -8.9% | 31 s |
+| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 357 | -7.9% | 685 | -9.0% | 25 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -125,11 +125,11 @@ Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 37% |
-| Pet: Auto Attack | 23% |
+| Auto Shot | 39% |
+| Pet: Auto Attack | 19% |
 | Arcane Shot | 17% |
 | Serpent Sting | 10% |
-| Aimed Shot | 7% |
+| Aimed Shot | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 2% |
 | Multi-Shot | 2% |

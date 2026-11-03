@@ -95,7 +95,7 @@ AOE_SPELLS = {   # area attacks: mobs hit at most (0 = all in reach), reach in y
 MOBS_PER_PULL = 1        # mobs per pull (the AoE grinding profile runs with 3-5); extra mobs are the same kind, arrive together and stay on the player
 # Pets (2026-10-08): Forever's pets take stats from their owner, the client's own UI text (build 70291, Camelot/PaperDollFrame.lua and
 # GlobalStrings): a hunter pet 10% of the higher attack power, 100% of the crit chance, 30% of the armor, 2 health per Stamina; a demon 17%
-# of the warlock's spell damage as attack power, 10% as spell damage, 35% of the armor, 7.5 health per Stamina, 100% of the spell crit.
+# of the warlock's spell damage as attack power, 10% as spell damage, 35% of the armor, 2 health per Stamina (client 70753; 7.5 from 70291 to 70707), 100% of the spell crit.
 # A pet's damage per hit does not depend on its attack speed (the Faster Attack passives raise a 2.0 s base; forum logs at levels 20 and
 # 30 put a 1.2 s cat 42% ahead of a 2.0 s pet), so a faster pet does more damage. Same rules as the raid simulator's patches.
 PET_SCALING = 1.0        # sensitivity knob: scales every stat a pet inherits (0 = pets inherit nothing, the model before 2026-10-08)

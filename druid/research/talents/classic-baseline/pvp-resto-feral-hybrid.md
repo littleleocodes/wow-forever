@@ -83,15 +83,15 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Balance | Nature's Reach | 2 | changed | tier 2, max 2 — tooltip changed; was Balance row 3, col 4 |
 | Restoration | Furor | 5 | moved-tree | now in Feral Combat, tier 1 |
 | Restoration | Improved Healing Touch | 5 | **REMOVED** | removed from Classic |
-| Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2; tooltip changed in build 1.60.1.70707 (ranks 1, 2, 3, 4, 5) |
-| Restoration | Reflection | 3 | changed | tier 2, max 3 — tooltip changed; moved in build 1.60.1.70707: was row 3, col 2 |
+| Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
+| Restoration | Reflection | 3 | changed | tier 2, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 3, col 2 |
 | Restoration | Insect Swarm | 1 | moved-tree | now in Balance, tier 4 |
 | Restoration | Tranquil Spirit | 5 | unchanged | tier 4, max 5 |
 | Restoration | Improved Rejuvenation | 1 | moved | tier 4, max 3 — was Restoration row 4, col 4 |
 | Restoration | Nature's Swiftness | 1 | unchanged | tier 5, max 1 |
 | Restoration | Gift of Nature | 5 | changed | tier 3, max 5 — tooltip changed; was Restoration row 5, col 3 |
 | Restoration | Improved Regrowth | 5 | unchanged | tier 6, max 5 |
-| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Restoration | Swiftmend | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
 
 **12 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

@@ -1,6 +1,6 @@
 {
  "knobs": {
-  "SHIELD_BELOW": 0.8
+  "SHIELD_BELOW": 0.5
  },
  "veto": {
   "Devouring Plague": {
@@ -10,6 +10,7 @@
    "off": true
   }
  },
+ "eat_below": 0.4,
  "drink_below": 0.15,
  "class": "priest",
  "spec": "shadow-dps",
@@ -21,7 +22,7 @@
   50,
   60
  ],
- "date": "2026-10-23",
+ "date": "2026-11-02",
  "signature": {
   "required": [
    "Mind Blast",
@@ -30,8 +31,8 @@
   ],
   "build_spec": "Shadow",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8302896985305876,
-  "core_share_after": 0.8238525953160157,
+  "core_share_before": 0.8292771881328852,
+  "core_share_after": 0.8243494978419328,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -40,14 +41,14 @@
  "changes": [
   {
    "round": 1,
-   "change": "SHIELD_BELOW = 0.8",
+   "change": "SHIELD_BELOW = 0.5",
    "rule": [
     "knob",
     "SHIELD_BELOW",
-    0.8
+    0.5
    ],
-   "gain_seed1": 0.1330270420739197,
-   "gain_seed2": 0.13252211497120614
+   "gain_seed1": 0.13201123919268898,
+   "gain_seed2": 0.1315472190785919
   },
   {
    "round": 2,
@@ -57,8 +58,8 @@
     "Devouring Plague",
     true
    ],
-   "gain_seed1": 0.11433645225372346,
-   "gain_seed2": 0.11616168638649771
+   "gain_seed1": 0.11172631500959829,
+   "gain_seed2": 0.11342210946223286
   },
   {
    "round": 3,
@@ -68,51 +69,62 @@
     "Smite",
     true
    ],
-   "gain_seed1": 0.07122586125060093,
-   "gain_seed2": 0.07000748951084002
+   "gain_seed1": 0.07032548826204255,
+   "gain_seed2": 0.06816911679296844
   },
   {
    "round": 4,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.005172011318282155,
+   "gain_seed2": 0.005694611299424279
+  },
+  {
+   "round": 5,
    "change": "drink below 15% mana",
    "rule": [
     "drink_below",
     null,
     0.15
    ],
-   "gain_seed1": 0.00526755952057556,
-   "gain_seed2": 0.005460315016901696
+   "gain_seed1": 0.005870112932803373,
+   "gain_seed2": 0.0056230162455526145
   }
  ],
- "weighted_before": 35.824857670600174,
- "weighted_after": 25.457534848070402,
+ "weighted_before": 35.84052314501552,
+ "weighted_after": 25.480782634595695,
  "per_level": {
   "20": {
    "before": 44.316905838646306,
-   "after": 35.010822422510095,
+   "after": 34.99889687213714,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
    "before": 49.50137494247149,
-   "after": 35.37536684653588,
+   "after": 35.44775508961821,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
    "before": 34.50317055530724,
-   "after": 23.000892430311588,
+   "after": 23.000003186901854,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.50312426992349,
-   "after": 22.278216898758206,
+   "before": 32.50187955764654,
+   "after": 22.263554081549394,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.80515222274166,
-   "after": 21.601382893623793,
+   "before": 29.858407731023597,
+   "after": 21.65946842057177,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

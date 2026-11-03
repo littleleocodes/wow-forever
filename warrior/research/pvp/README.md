@@ -16,7 +16,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Fury — PvP (derived)](builds/fury-pvp.md) 🔬 | 14/36/1 | DPS |
+| [Fury — PvP (derived)](builds/fury-pvp.md) 🔬 | 12/38/1 | DPS |
 | [Protection — PvP (derived)](builds/protection-pvp.md) 🔬 | 0/21/30 | DPS |
 
 Classic Era reference builds: [arms-pvp](../talents/classic-baseline/arms-pvp.md).

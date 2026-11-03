@@ -7,7 +7,7 @@
 | **Build** | 20/11/20 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -58,18 +58,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 664 | +0.0% | 746 | +0.0% | 1 s |
-| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 655 | -1.3% | 735 | -1.4% | 1 s |
-| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 649 | -2.2% | 727 | -2.5% | 1 s |
-| 4 | *SM/Ruin* | community simulator | - | 642 | -3.3% | 718 | -3.8% | 1 s |
-| 5 | *Aff (Wrack)* | community simulator | - | 632 | -4.9% | 700 | -6.1% | 1 s |
-| 6 | *Destro* | community simulator | - | 594 | -10.4% | 656 | -12.0% | 1 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 564 | -15.1% | 638 | -14.5% | 1 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 551 | -16.9% | 614 | -17.7% | 1 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 664 | +0.0% | 744 | +0.0% | 1 s |
+| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 655 | -1.3% | 734 | -1.3% | 1 s |
+| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 649 | -2.2% | 726 | -2.4% | 1 s |
+| 4 | *SM/Ruin* | community simulator | - | 642 | -3.3% | 717 | -3.6% | 1 s |
+| 5 | *Aff (Wrack)* | community simulator | - | 632 | -4.9% | 698 | -6.2% | 1 s |
+| 6 | *Destro* | community simulator | - | 594 | -10.4% | 656 | -11.9% | 1 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 564 | -15.1% | 636 | -14.5% | 1 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 551 | -16.9% | 613 | -17.7% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 

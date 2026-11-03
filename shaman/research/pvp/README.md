@@ -16,7 +16,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Elemental — PvP (derived)](builds/elemental-pvp.md) 🔬 | 35/16/0 | DPS |
+| [Elemental — PvP (derived)](builds/elemental-pvp.md) 🔬 | 33/18/0 | DPS |
 | [Enhancement — PvP (derived)](builds/enhancement-pvp.md) 🔬 | 18/33/0 | DPS |
 | [Restoration — PvP (derived)](builds/restoration-pvp.md) 🔬 | 0/20/31 | HEALER |
 

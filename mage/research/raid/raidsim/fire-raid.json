@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "54ceac638",
+  "commit": "bac92dbd5",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
@@ -32,7 +32,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "results": [
   {
    "label": "fire-raid",
@@ -41,29 +41,29 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "12051": 1.0,
+    "11129": 1.0,
     "10199": 16.716,
+    "10207": 21.313333333333333,
+    "10212": 2.1203333333333334,
     "18809": 14.02,
     "10274": 2.1203333333333334,
-    "11129": 1.0,
-    "12051": 1.0,
-    "10207": 21.313333333333333,
-    "10151": 15.987333333333334,
-    "10212": 2.1203333333333334
+    "10151": 15.987333333333334
    },
    "casts": {
-    "Fire Blast": 16.716,
-    "Robe of the Archmage": 1.0,
-    "Pyroblast": 14.02,
-    "Arcane Missiles": 4.240666666666667,
-    "Combustion": 1.0,
+    "Major Mana Potion": 1.9746666666666666,
     "Evocation": 1.0,
+    "Robe of the Archmage": 1.0,
+    "Combustion": 1.0,
+    "Fire Blast": 16.716,
+    "Talisman of Ephemeral Power": 2.0,
     "Mana Ruby": 0.033,
     "Scorch": 21.313333333333333,
     "OtherActionManaGain": 19.012,
+    "Arcane Missiles": 4.240666666666667,
     "Demonic Rune": 1.967,
-    "Fireball": 15.987333333333334,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.9746666666666666
+    "Pyroblast": 14.02,
+    "Fireball": 15.987333333333334
    },
    "dps": 531.0191818303616,
    "dps_stdev": 42.01825323334275,
@@ -101,28 +101,28 @@
    "measured": true,
    "spell_casts": {
     "10212": 2.271,
-    "12051": 0.9996666666666667,
     "10207": 21.38233333333333,
     "10151": 16.865666666666666,
     "10274": 2.271,
+    "12051": 0.9996666666666667,
+    "18809": 14.330333333333334,
     "10199": 17.322666666666667,
-    "11129": 1.0,
-    "18809": 14.330333333333334
+    "11129": 1.0
    },
    "casts": {
+    "Talisman of Ephemeral Power": 2.0,
     "Arcane Missiles": 4.542,
-    "Mana Ruby": 0.154,
     "Major Mana Potion": 1.9106666666666667,
-    "Evocation": 0.9996666666666667,
     "Scorch": 21.38233333333333,
     "Fireball": 16.865666666666666,
-    "Fire Blast": 17.322666666666667,
-    "Talisman of Ephemeral Power": 2.0,
-    "Combustion": 1.0,
-    "Demonic Rune": 1.846,
+    "Evocation": 0.9996666666666667,
     "OtherActionManaGain": 19.034,
+    "Pyroblast": 14.330333333333334,
+    "Demonic Rune": 1.846,
+    "Fire Blast": 17.322666666666667,
     "Robe of the Archmage": 1.0,
-    "Pyroblast": 14.330333333333334
+    "Combustion": 1.0,
+    "Mana Ruby": 0.154
    },
    "dps": 537.1045200898103,
    "dps_stdev": 40.883777833108674,
@@ -159,29 +159,29 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10199": 16.874333333333333,
-    "10274": 2.062666666666667,
-    "18809": 14.776333333333334,
     "11129": 1.0,
-    "10212": 2.062666666666667,
     "10151": 16.092333333333332,
+    "10199": 16.874333333333333,
+    "18809": 14.776333333333334,
+    "10212": 2.062666666666667,
+    "12051": 1.0,
     "10207": 20.872333333333334,
-    "12051": 1.0
+    "10274": 2.062666666666667
    },
    "casts": {
-    "Demonic Rune": 1.891,
-    "Fire Blast": 16.874333333333333,
-    "Arcane Missiles": 4.125333333333334,
-    "Robe of the Archmage": 1.0,
-    "Pyroblast": 14.776333333333334,
-    "Combustion": 1.0,
-    "Major Mana Potion": 1.9403333333333332,
-    "Fireball": 16.092333333333332,
-    "Scorch": 20.872333333333334,
     "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 1.9403333333333332,
+    "Combustion": 1.0,
     "Mana Ruby": 0.109,
     "OtherActionManaGain": 20.285,
-    "Evocation": 1.0
+    "Fireball": 16.092333333333332,
+    "Fire Blast": 16.874333333333333,
+    "Pyroblast": 14.776333333333334,
+    "Arcane Missiles": 4.125333333333334,
+    "Evocation": 1.0,
+    "Robe of the Archmage": 1.0,
+    "Demonic Rune": 1.891,
+    "Scorch": 20.872333333333334
    },
    "dps": 547.8654724421193,
    "dps_stdev": 41.05113480402213,
@@ -217,22 +217,22 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12043": 1.0,
     "12042": 1.0,
     "12051": 0.6823333333333333,
-    "10207": 114.95033333333333
+    "10207": 114.95033333333333,
+    "12043": 1.0
    },
    "casts": {
-    "Demonic Rune": 1.3856666666666666,
-    "OtherActionManaGain": 4.4896666666666665,
-    "Talisman of Ephemeral Power": 2.0,
-    "Presence of Mind": 1.0,
-    "Robe of the Archmage": 1.0,
-    "Arcane Power": 1.0,
     "Mana Ruby": 0.6143333333333333,
     "Major Mana Potion": 1.4896666666666667,
+    "Arcane Power": 1.0,
+    "Robe of the Archmage": 1.0,
     "Evocation": 0.6823333333333333,
-    "Scorch": 114.95033333333333
+    "Scorch": 114.95033333333333,
+    "Presence of Mind": 1.0,
+    "OtherActionManaGain": 4.4896666666666665,
+    "Talisman of Ephemeral Power": 2.0,
+    "Demonic Rune": 1.3856666666666666
    },
    "dps": 342.89322324475864,
    "dps_stdev": 13.331881610474847,
@@ -258,22 +258,22 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12043": 1.0,
-    "10207": 114.95033333333333,
     "12051": 0.6823333333333333,
-    "12042": 1.0
+    "12043": 1.0,
+    "12042": 1.0,
+    "10207": 114.95033333333333
    },
    "casts": {
+    "Robe of the Archmage": 1.0,
+    "Major Mana Potion": 1.4896666666666667,
+    "Evocation": 0.6823333333333333,
     "Presence of Mind": 1.0,
-    "Demonic Rune": 1.3856666666666666,
-    "Scorch": 114.95033333333333,
+    "Arcane Power": 1.0,
+    "Mana Ruby": 0.6143333333333333,
     "OtherActionManaGain": 4.4896666666666665,
     "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.4896666666666667,
-    "Robe of the Archmage": 1.0,
-    "Evocation": 0.6823333333333333,
-    "Arcane Power": 1.0,
-    "Mana Ruby": 0.6143333333333333
+    "Scorch": 114.95033333333333,
+    "Demonic Rune": 1.3856666666666666
    },
    "dps": 388.081928299251,
    "dps_stdev": 19.267507957688508,
@@ -302,22 +302,22 @@
    "ours": false,
    "spell_casts": {
     "10207": 21.273666666666667,
-    "12051": 1.0,
     "18809": 11.591666666666667,
+    "10199": 13.862333333333334,
     "10151": 14.791333333333334,
-    "10199": 13.862333333333334
+    "12051": 1.0
    },
    "casts": {
     "Scorch": 21.273666666666667,
-    "Evocation": 1.0,
-    "Demonic Rune": 2.0,
     "Pyroblast": 11.591666666666667,
-    "OtherActionManaGain": 17.587333333333333,
-    "Robe of the Archmage": 1.0,
     "Major Mana Potion": 2.0,
-    "Fireball": 14.791333333333334,
+    "Demonic Rune": 2.0,
     "Fire Blast": 13.862333333333334,
-    "Talisman of Ephemeral Power": 2.0
+    "Talisman of Ephemeral Power": 2.0,
+    "Fireball": 14.791333333333334,
+    "Robe of the Archmage": 1.0,
+    "Evocation": 1.0,
+    "OtherActionManaGain": 17.587333333333333
    },
    "dps": 442.23513228748374,
    "dps_stdev": 34.108660190558105,
@@ -351,29 +351,29 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "10212": 2.0303333333333335,
-    "10151": 15.788,
-    "10199": 16.627333333333333,
-    "10274": 2.0303333333333335,
     "11129": 1.0,
-    "12051": 1.0,
+    "10212": 2.0303333333333335,
     "10207": 21.211,
-    "18809": 14.492
+    "18809": 14.492,
+    "12051": 1.0,
+    "10151": 15.788,
+    "10274": 2.0303333333333335,
+    "10199": 16.627333333333333
    },
    "casts": {
-    "Arcane Missiles": 4.060666666666667,
-    "Demonic Rune": 1.9573333333333334,
-    "Fireball": 15.788,
-    "Fire Blast": 16.627333333333333,
-    "OtherActionManaGain": 20.219333333333335,
-    "Major Mana Potion": 1.9746666666666666,
-    "Mana Ruby": 0.042666666666666665,
     "Combustion": 1.0,
-    "Evocation": 1.0,
+    "Major Mana Potion": 1.9746666666666666,
+    "Arcane Missiles": 4.060666666666667,
+    "OtherActionManaGain": 20.219333333333335,
     "Scorch": 21.211,
+    "Pyroblast": 14.492,
+    "Demonic Rune": 1.9573333333333334,
+    "Evocation": 1.0,
+    "Fireball": 15.788,
     "Robe of the Archmage": 1.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Pyroblast": 14.492
+    "Mana Ruby": 0.042666666666666665,
+    "Fire Blast": 16.627333333333333
    },
    "dps": 539.5279158196587,
    "dps_stdev": 42.23433614103248,
@@ -409,18 +409,18 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "10207": 113.95933333333333,
-    "12051": 1.0
+    "12051": 1.0,
+    "10207": 113.95933333333333
    },
    "casts": {
-    "Demonic Rune": 1.0816666666666668,
-    "Scorch": 113.95933333333333,
+    "Evocation": 1.0,
     "Robe of the Archmage": 1.0,
     "Talisman of Ephemeral Power": 2.0,
+    "Scorch": 113.95933333333333,
     "Mana Ruby": 0.9183333333333333,
     "OtherActionManaGain": 4.888333333333334,
     "Major Mana Potion": 1.8883333333333334,
-    "Evocation": 1.0
+    "Demonic Rune": 1.0816666666666668
    },
    "dps": 316.94999472560977,
    "dps_stdev": 10.913896743899446,
@@ -446,18 +446,18 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12051": 0.8893333333333333,
-    "10207": 114.42733333333334
+    "10207": 114.42733333333334,
+    "12051": 0.8893333333333333
    },
    "casts": {
-    "Evocation": 0.8893333333333333,
-    "Mana Ruby": 0.45466666666666666,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.1043333333333334,
     "Demonic Rune": 1.5453333333333332,
+    "Mana Ruby": 0.45466666666666666,
     "OtherActionManaGain": 4.104333333333333,
     "Robe of the Archmage": 1.0,
-    "Scorch": 114.42733333333334
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 1.1043333333333334,
+    "Scorch": 114.42733333333334,
+    "Evocation": 0.8893333333333333
    },
    "dps": 303.70271169033225,
    "dps_stdev": 10.829986662003218,

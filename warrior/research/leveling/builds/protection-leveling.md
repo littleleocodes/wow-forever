@@ -7,7 +7,7 @@
 | **Build** | 17/3/31 (Arms / Fury / Protection) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -41,7 +41,7 @@ Level with the talents of the Protection raid build (protection-ml-tank) so you 
 | **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Improved Revenge** | 3/3 | changed | Increases damage dealt by your Revenge ability by 60%. |
 | **Master of Defense** | 2/2 | **NEW** | Grants you a 100% chance to generate 5 Rage when you Dodge or Parry while a shield is equipped. |
-| **Defiance** | 3/3 | changed | Increases all threat generated in Defensive stance by an additional 15% while a shield is equipped. |
+| **Defiance** | 3/3 | changed | Increases all threat generated in Defensive stance by an additional 20% while a shield is equipped. |
 | **Improved Sunder Armor** | 1/3 | changed | Reduces the Rage cost of your Sunder Armor ability by 1. |
 | **Concussion Blow** | 1/1 | changed | Stuns the target for 5 sec. |
 | **Focused Rage** | 3/3 | **NEW** | Reduces the Rage cost of your offensive abilities by 3. |

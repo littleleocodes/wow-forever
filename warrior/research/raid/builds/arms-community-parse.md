@@ -7,7 +7,7 @@
 | **Build** | 37/14/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,26 +19,27 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Improved Heroic Strike** | 3/3 | changed | Reduces the cost of your Heroic Strike ability by 3 Rage. |
 | **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
-| **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
+| **Improved Tactical Mastery** | 3/3 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
-| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
-| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
-| **Bloodthrill** | 5/5 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
+| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Bloodthrill** | 2/2 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
 | **Sweeping Strikes** | 1/1 | unchanged | Your next 5 melee attacks strike an additional nearby opponent. |
 | **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. |
+| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 5.0 sec. |
 | **Mortal Strike** | 1/1 | unchanged | A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec. |
 
 ### Fury (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Booming Voice** | 3/5 | changed | Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%. |
+| **Booming Voice** | 3/5 | changed | Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%. Also reduces the Rage cost of Piercing Howl by 15%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 | **Piercing Howl** | 1/1 | changed | Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec. |
@@ -49,14 +50,14 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 367 | +0.0% | 775 | -0.6% | 0 s |
-| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 779 | -0.0% | 0 s |
-| 3 | *Arms* | community simulator | - | 363 | -0.9% | 779 | +0.0% | 0 s |
-| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 774 | -0.7% | 0 s |
+| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 367 | +0.0% | 760 | -0.5% | 0 s |
+| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 764 | +0.0% | 0 s |
+| 3 | *Arms* | community simulator | - | 363 | -0.9% | 763 | -0.0% | 0 s |
+| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 759 | -0.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -140,6 +141,7 @@ Damage by ability:
 - 2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Booming Voice 3 in; to be re-optimized.
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arms: its full-raid winner is +0.40% against it, under the 0.5% bar for a new build.
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 37/14/0 -> 37/14/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms) (refill: the arms-2h-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

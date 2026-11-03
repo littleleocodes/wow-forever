@@ -1,0 +1,628 @@
+{
+ "class": "priest",
+ "spec": "Discipline",
+ "date": "2026-10-21",
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       1
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Silent Resolve",
+       3
+      ],
+      [
+       "Holy Precision",
+       1
+      ],
+      [
+       "Mental Strength",
+       5
+      ],
+      [
+       "Mental Agility",
+       3
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Soul Warding",
+       1
+      ],
+      [
+       "Penance",
+       1
+      ],
+      [
+       "Divine Aegis",
+       3
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       3
+      ],
+      [
+       "Improved Renew",
+       1
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Divine Fury",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Inspiration",
+       3
+      ],
+      [
+       "Holy Reach",
+       2
+      ],
+      [
+       "Improved Healing",
+       3
+      ],
+      [
+       "Litany of Light",
+       1
+      ]
+     ],
+     "Shadow": []
+    },
+    "split": "30/21/0",
+    "dps": 0.6281,
+    "se": 0.0022,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/21/0",
+    "dps": 0.6278,
+    "se": 0.0022,
+    "differs": [
+     [
+      "Blessed Recovery",
+      2
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Holy Precision",
+      1
+     ],
+     [
+      "Holy Precision",
+      2
+     ],
+     [
+      "Improved Inner Fire",
+      2
+     ],
+     [
+      "Improved Renew",
+      1
+     ],
+     [
+      "Improved Renew",
+      3
+     ],
+     [
+      "Power in Light",
+      1
+     ],
+     [
+      "Silent Resolve",
+      1
+     ],
+     [
+      "Silent Resolve",
+      3
+     ],
+     [
+      "Twilight Focus",
+      2
+     ],
+     [
+      "Twilight Focus",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0005,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1639,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 2022,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 3,
+     "simulated": 1430,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 4,
+     "simulated": 1620,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 4,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.637,
+      0.637,
+      0.637,
+      0.637,
+      0.637,
+      0.637,
+      0.637,
+      0.6294,
+      0.6281,
+      0.6269
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6281,
+      0.6278
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 215,
+     "best_gap": 0.0,
+     "best_move": "1 Blessed Recovery -> Holy Nova"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Improved Healing",
+     "importance": 0.3436
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.1694
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.1178
+    },
+    {
+     "feature": "Inspiration",
+     "importance": 0.1093
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.0675
+    },
+    {
+     "feature": "Shadow points",
+     "importance": 0.0619
+    },
+    {
+     "feature": "Penance",
+     "importance": 0.0274
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.0231
+    },
+    {
+     "feature": "Divine Fury",
+     "importance": 0.0164
+    },
+    {
+     "feature": "Shadow Focus",
+     "importance": 0.0077
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0071
+    },
+    {
+     "feature": "Inner Focus",
+     "importance": 0.0071
+    }
+   ],
+   "simulated_builds": 6958,
+   "minutes": 43.0,
+   "policy_changed": true
+  },
+  {
+   "cycle": 2,
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       1
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Silent Resolve",
+       3
+      ],
+      [
+       "Holy Precision",
+       1
+      ],
+      [
+       "Mental Strength",
+       5
+      ],
+      [
+       "Mental Agility",
+       3
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Soul Warding",
+       1
+      ],
+      [
+       "Penance",
+       1
+      ],
+      [
+       "Divine Aegis",
+       3
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       3
+      ],
+      [
+       "Improved Renew",
+       1
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Divine Fury",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Inspiration",
+       3
+      ],
+      [
+       "Holy Reach",
+       2
+      ],
+      [
+       "Improved Healing",
+       3
+      ],
+      [
+       "Litany of Light",
+       1
+      ]
+     ],
+     "Shadow": []
+    },
+    "split": "30/21/0",
+    "dps": 0.6281,
+    "se": 0.0022,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/21/0",
+    "dps": 0.6281,
+    "se": 0.0022,
+    "differs": [
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Silent Resolve",
+      1
+     ],
+     [
+      "Silent Resolve",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1278,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1287,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.637,
+      0.637,
+      0.637,
+      0.637,
+      0.637
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6281,
+      0.6281
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 215,
+     "best_gap": 0.0,
+     "best_move": "1 Holy Reach -> Binding Heal"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Improved Healing",
+     "importance": 0.3789
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.1765
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.1227
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.0706
+    },
+    {
+     "feature": "Shadow points",
+     "importance": 0.0606
+    },
+    {
+     "feature": "Inspiration",
+     "importance": 0.0444
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.0338
+    },
+    {
+     "feature": "Penance",
+     "importance": 0.0187
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0131
+    },
+    {
+     "feature": "Spirit Tap",
+     "importance": 0.0127
+    },
+    {
+     "feature": "Inner Focus",
+     "importance": 0.0111
+    },
+    {
+     "feature": "Wand Specialization",
+     "importance": 0.0087
+    }
+   ],
+   "simulated_builds": 2798,
+   "minutes": 18.1,
+   "policy_changed": true
+  }
+ ],
+ "converged": 2,
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 215,
+    "two_move": 4222,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Holy Precision -> Wand Specialization; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      0.0447
+     ],
+     [
+      "1 Holy Precision -> Power in Light; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      0.0447
+     ],
+     [
+      "3 Silent Resolve -> Renewed Hope; then 1 Divine Aegis -> Renewed Hope",
+      0.0447
+     ],
+     [
+      "3 Silent Resolve -> Renewed Hope; then 1 Divine Aegis -> Improved Mana Burn",
+      0.0447
+     ],
+     [
+      "3 Silent Resolve -> Renewed Hope; then 1 Divine Aegis -> Improved Inner Fire",
+      0.0447
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Holy Precision -> Wand Specialization; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      -0.0045
+     ],
+     [
+      "1 Holy Precision -> Power in Light; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      -0.0045
+     ],
+     [
+      "2 Silent Resolve -> Improved Mana Burn; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      -0.0045
+     ],
+     [
+      "2 Silent Resolve -> Renewed Hope; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      -0.0064
+     ],
+     [
+      "1 Silent Resolve -> Renewed Hope; then 3 Twilight Focus + 2 Holy Reach -> 4 Divine Fury + 1 Searing Light",
+      -0.007
+     ]
+    ],
+    "minutes": 26.7
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "capacity": 0.6269,
+   "se": 0.0019
+  },
+  "disc-penance-healer": {
+   "capacity": 0.5982,
+   "se": 0.0015
+  },
+  "discipline-ml-heal": {
+   "capacity": 0.6244,
+   "se": 0.002
+  }
+ },
+ "minutes": 94.2,
+ "build": {
+  "written": "discipline-ml-heal",
+  "gain_vs_hand": 0.04797726512871958
+ }
+}

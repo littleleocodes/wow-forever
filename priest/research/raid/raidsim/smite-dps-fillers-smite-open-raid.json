@@ -3,28 +3,28 @@
  "spec": "smite-dps",
  "build": "smite-open-raid",
  "setting": "raid",
- "date": "2026-10-29",
+ "date": "2026-11-03",
  "tank": false,
  "removal": {
   "Blessed Recovery": -0.0,
-  "Divine Fury": 0.10799658582634286,
+  "Divine Fury": 0.10707827272137227,
   "Holy Nova": -0.0,
-  "Holy Precision": 0.08295614839638932,
-  "Holy Specialization": 0.011927412768059531,
-  "Improved Mind Blast": 0.00265698110059176,
-  "Improved Mind Flay": 7.066239819164544e-06,
-  "Improved Shadow Word: Pain": 0.019960727088625396,
-  "Inner Focus": 0.04806948498237651,
+  "Holy Precision": 0.08821006926369368,
+  "Holy Specialization": 0.011805192062107728,
+  "Improved Mind Blast": 0.006222575478459502,
+  "Improved Mind Flay": 3.918092381871574e-06,
+  "Improved Shadow Word: Pain": 0.02649516895257964,
+  "Inner Focus": 0.09154879526091741,
   "Inspiration": -0.0,
-  "Meditation": 0.03382959482285186,
-  "Mental Agility": 0.010498242088325949,
-  "Mind Flay": 6.792701660929268e-06,
-  "Power in Light": 0.03799900111779608,
-  "Searing Light": 0.021683108761059944,
-  "Shadow Focus": 0.020978669105313874,
-  "Shadow Weaving": 0.02801896036260232,
+  "Meditation": 0.043563235990159654,
+  "Mental Agility": 0.012560377261399358,
+  "Mind Flay": 2.871951888194779e-06,
+  "Power in Light": 0.03758324784121325,
+  "Searing Light": 0.020567286378554317,
+  "Shadow Focus": 0.021754603876022904,
+  "Shadow Weaving": 0.029217174477200958,
   "Twilight Focus": -0.0,
-  "Twin Disciplines": 0.005362299156182693
+  "Twin Disciplines": 0.005530091432912054
  },
  "free": [
   "Blessed Recovery",
@@ -46,41 +46,32 @@
   {
    "round": 1,
    "kind": "utility",
-   "from": "Blessed Recovery",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
+   "from": "Improved Mind Flay",
+   "to": "Spirit Tap",
+   "seed1": -2.0071317106129527e-06,
+   "seed2": -3.5516460791251703e-06,
+   "utility": "mana"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Blessed Recovery",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
+   "from": "Improved Mind Flay",
+   "to": "Spirit Tap",
+   "seed1": -1.910964506857127e-06,
+   "seed2": -3.3562269871056927e-06,
+   "utility": "mana"
   },
   {
    "round": 3,
    "kind": "utility",
-   "from": "Improved Mind Flay",
-   "to": "Spirit Tap",
-   "seed1": -3.636054286770829e-06,
-   "seed2": -4.385717682908741e-06,
-   "utility": "mana"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Improved Mind Flay",
-   "to": "Spirit Tap",
-   "seed1": -3.4301980047501957e-06,
-   "seed2": -4.147167214529901e-06,
-   "utility": "mana"
+   "from": "Twilight Focus",
+   "to": "Spell Warding",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   }
  ],
- "final_seed3": -8.432803833446911e-06,
+ "final_seed3": -5.664695388762908e-06,
  "start": {
   "Discipline": [
    [
@@ -194,10 +185,6 @@
   ],
   "Holy": [
    [
-    "Twilight Focus",
-    3
-   ],
-   [
     "Holy Specialization",
     5
    ],
@@ -210,12 +197,20 @@
     1
    ],
    [
+    "Blessed Recovery",
+    2
+   ],
+   [
     "Inspiration",
     1
    ],
    [
     "Searing Light",
     2
+   ],
+   [
+    "Spell Warding",
+    1
    ]
   ],
   "Shadow": [

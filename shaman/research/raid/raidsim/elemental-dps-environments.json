@@ -2,10 +2,10 @@
  "class": "shaman",
  "spec": "elemental-dps",
  "game": "forever",
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "54ceac638",
+  "commit": "bac92dbd5",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
@@ -81,47 +81,46 @@
    "dps": {
     "dummy": 428.1014686276062,
     "dummy60": 492.54537807522445,
-    "ladder-mana": 468.4883941684969,
-    "ladder-armor": 468.4883941684969,
-    "ladder-physical": 479.9533453258687,
-    "ladder-spell": 534.9937359538709,
-    "raid": 564.0603902307382,
+    "ladder-mana": 468.3081031295978,
+    "ladder-armor": 468.3081031295978,
+    "ladder-physical": 479.9824326001464,
+    "ladder-spell": 535.0457096620102,
+    "raid": 564.0354340941484,
     "curve60": 473.685356974858,
     "curve120": 474.4533330943418,
     "curve180": 428.1014686276062,
     "curve240": 373.7566679705932,
     "curve360": 327.79452848914093,
-    "max": 564.0603902307382,
-    "max60": 569.5697658368287
+    "max": 564.0354340941484,
+    "max60": 569.5654407659363
    },
    "raid_spell_casts": {
-    "1326047": 14.000333333333334,
-    "10392": 0.008666666666666666,
-    "29228": 9.671666666666667,
-    "15208": 65.77,
     "10438": 4.0,
-    "1238300": 0.0013333333333333333,
-    "10605": 1.6556666666666666
+    "10392": 0.011,
+    "15208": 65.767,
+    "1326047": 14.000666666666667,
+    "29228": 9.674666666666667,
+    "10605": 1.641
    },
    "raid_casts": {
-    "Demonic Rune": 1.8076666666666668,
-    "OtherActionManaGain": 41.875,
-    "Talisman of Ephemeral Power": 2.0,
-    "Lava Burst": 14.001666666666667,
-    "Lightning Bolt": 65.77866666666667,
-    "Flame Shock": 9.671666666666667,
-    "item 272438": 2.0,
-    "Major Mana Potion": 1.797,
     "Searing Totem": 4.0,
-    "Chain Lightning": 1.6556666666666666
+    "OtherActionManaGain": 42.088,
+    "Lightning Bolt": 65.77799999999999,
+    "Demonic Rune": 1.8756666666666666,
+    "Major Mana Potion": 1.8126666666666666,
+    "Lava Burst": 14.000666666666667,
+    "Flame Shock": 9.674666666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "item 272438": 2.0,
+    "Chain Lightning": 1.641
    },
    "raid_shares": {
-    "Lightning Bolt": 0.6119,
+    "Lightning Bolt": 0.6116,
     "Lava Burst": 0.1616,
     "Flame Shock": 0.1393,
-    "Searing Totem": 0.062,
-    "Demonic Rune": 0.0142,
-    "Chain Lightning": 0.011
+    "Searing Totem": 0.0619,
+    "Demonic Rune": 0.0147,
+    "Chain Lightning": 0.0109
    }
   },
   {
@@ -131,47 +130,47 @@
    "dps": {
     "dummy": 445.9633565911115,
     "dummy60": 495.9842131462784,
-    "ladder-mana": 466.12142863422235,
-    "ladder-armor": 466.12142863422235,
-    "ladder-physical": 477.4212042383671,
-    "ladder-spell": 527.7451851385475,
-    "raid": 552.4558067538062,
+    "ladder-mana": 466.0598868266186,
+    "ladder-armor": 466.0598868266186,
+    "ladder-physical": 477.39245568071334,
+    "ladder-spell": 527.5219157614126,
+    "raid": 552.413869035447,
     "curve60": 492.27737852038786,
     "curve120": 477.29082440651536,
     "curve180": 445.9633565911115,
     "curve240": 394.7191323353956,
     "curve360": 347.8956764865565,
-    "max": 552.4558067538062,
-    "max60": 588.2405959656033
+    "max": 552.413869035447,
+    "max60": 588.5030524801718
    },
    "raid_spell_casts": {
-    "1326047": 14.002666666666666,
-    "29228": 9.342,
+    "29228": 9.340333333333334,
     "10438": 4.0,
-    "10605": 2.508,
-    "15208": 68.16066666666667,
-    "16166": 1.389
+    "10605": 2.467,
+    "16166": 1.4176666666666666,
+    "1326047": 14.002,
+    "15208": 68.20333333333333
    },
    "raid_casts": {
-    "OtherActionManaGain": 44.970333333333336,
-    "Lava Burst": 14.002666666666666,
-    "item 272438": 2.0,
-    "Flame Shock": 9.342,
-    "Major Mana Potion": 1.8956666666666666,
+    "Flame Shock": 9.340333333333334,
     "Searing Totem": 4.0,
-    "Demonic Rune": 1.4276666666666666,
-    "Chain Lightning": 2.508,
-    "Lightning Bolt": 68.16066666666667,
-    "Elemental Mastery": 1.389,
-    "Talisman of Ephemeral Power": 2.0006666666666666
+    "Chain Lightning": 2.467,
+    "OtherActionManaGain": 45.080666666666666,
+    "Talisman of Ephemeral Power": 2.0006666666666666,
+    "item 272438": 2.0,
+    "Elemental Mastery": 1.4176666666666666,
+    "Major Mana Potion": 1.883,
+    "Demonic Rune": 1.5356666666666667,
+    "Lava Burst": 14.002,
+    "Lightning Bolt": 68.20333333333333
    },
    "raid_shares": {
-    "Lightning Bolt": 0.6163,
-    "Lava Burst": 0.157,
+    "Lightning Bolt": 0.6157,
+    "Lava Burst": 0.1571,
     "Flame Shock": 0.1332,
     "Searing Totem": 0.0659,
-    "Chain Lightning": 0.0161,
-    "Demonic Rune": 0.0114
+    "Chain Lightning": 0.0157,
+    "Demonic Rune": 0.0123
    }
   },
   {
@@ -181,45 +180,45 @@
    "dps": {
     "dummy": 423.26385601157205,
     "dummy60": 471.8017006700346,
-    "ladder-mana": 454.7953945525948,
-    "ladder-armor": 454.7953945525948,
-    "ladder-physical": 466.36558967301,
-    "ladder-spell": 515.022517784952,
-    "raid": 539.0553083279467,
+    "ladder-mana": 455.1766875604001,
+    "ladder-armor": 455.1766875604001,
+    "ladder-physical": 466.19621274811067,
+    "ladder-spell": 515.1163959206639,
+    "raid": 539.2172286713121,
     "curve60": 462.21867780824385,
     "curve120": 461.13211968547967,
     "curve180": 423.26385601157205,
     "curve240": 378.6020129281943,
     "curve360": 337.98147714518245,
-    "max": 539.0553083279467,
-    "max60": 544.9289801629969
+    "max": 539.2172286713121,
+    "max60": 545.1229642266013
    },
    "raid_spell_casts": {
+    "15208": 65.98766666666667,
+    "10438": 4.0,
+    "10605": 2.194,
     "1326047": 14.0,
-    "10605": 2.2623333333333333,
-    "15208": 65.95133333333334,
-    "29228": 9.305,
-    "10438": 4.0
+    "29228": 9.297
    },
    "raid_casts": {
-    "Lava Burst": 14.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Chain Lightning": 2.2623333333333333,
     "item 272438": 2.0,
-    "Demonic Rune": 1.1753333333333333,
-    "Lightning Bolt": 65.95133333333334,
-    "Flame Shock": 9.305,
-    "OtherActionManaGain": 43.73866666666667,
+    "Major Mana Potion": 1.9146666666666667,
+    "Lightning Bolt": 65.98766666666667,
     "Searing Totem": 4.0,
-    "Major Mana Potion": 1.9103333333333334
+    "Chain Lightning": 2.194,
+    "Demonic Rune": 1.1936666666666667,
+    "Lava Burst": 14.0,
+    "Flame Shock": 9.297,
+    "OtherActionManaGain": 43.76733333333333
    },
    "raid_shares": {
-    "Lightning Bolt": 0.6106,
-    "Lava Burst": 0.161,
-    "Flame Shock": 0.1363,
+    "Lightning Bolt": 0.6111,
+    "Lava Burst": 0.1608,
+    "Flame Shock": 0.1362,
     "Searing Totem": 0.0677,
-    "Chain Lightning": 0.0148,
-    "Demonic Rune": 0.0097
+    "Chain Lightning": 0.0143,
+    "Demonic Rune": 0.0099
    }
   },
   {
@@ -229,47 +228,47 @@
    "dps": {
     "dummy": 456.78159403563996,
     "dummy60": 506.89102381733386,
-    "ladder-mana": 465.75175687887815,
-    "ladder-armor": 465.75175687887815,
-    "ladder-physical": 477.346842024261,
-    "ladder-spell": 527.5718177447529,
-    "raid": 551.9307140049084,
+    "ladder-mana": 465.8329998531502,
+    "ladder-armor": 465.8329998531502,
+    "ladder-physical": 477.08073497257845,
+    "ladder-spell": 527.6144435393311,
+    "raid": 552.2975222937001,
     "curve60": 491.4188521036189,
     "curve120": 477.7675966129869,
     "curve180": 456.78159403563996,
     "curve240": 412.35418146696173,
     "curve360": 364.7333268523006,
-    "max": 551.9307140049084,
-    "max60": 587.7592805362747
+    "max": 552.2975222937001,
+    "max60": 587.8150880622635
    },
    "raid_spell_casts": {
-    "10605": 2.937,
-    "15208": 67.76233333333333,
     "10438": 4.0,
-    "16166": 1.177,
-    "29228": 9.349666666666666,
-    "1326047": 14.001666666666667
+    "16166": 1.182,
+    "15208": 67.77833333333334,
+    "29228": 9.351333333333333,
+    "10605": 2.913666666666667,
+    "1326047": 14.002666666666666
    },
    "raid_casts": {
-    "item 272438": 2.0,
-    "Demonic Rune": 1.2453333333333334,
-    "Major Mana Potion": 1.8906666666666667,
-    "Chain Lightning": 2.937,
-    "OtherActionManaGain": 44.813,
-    "Talisman of Ephemeral Power": 2.0023333333333335,
-    "Lightning Bolt": 67.76233333333333,
     "Searing Totem": 4.0,
-    "Elemental Mastery": 1.177,
-    "Flame Shock": 9.349666666666666,
-    "Lava Burst": 14.001666666666667
+    "item 272438": 2.0,
+    "Elemental Mastery": 1.182,
+    "Lightning Bolt": 67.77833333333334,
+    "Demonic Rune": 1.1663333333333334,
+    "Flame Shock": 9.351333333333333,
+    "OtherActionManaGain": 44.76233333333333,
+    "Chain Lightning": 2.913666666666667,
+    "Major Mana Potion": 1.9316666666666666,
+    "Talisman of Ephemeral Power": 2.002666666666667,
+    "Lava Burst": 14.002666666666666
    },
    "raid_shares": {
-    "Lightning Bolt": 0.6141,
-    "Lava Burst": 0.1572,
+    "Lightning Bolt": 0.6145,
+    "Lava Burst": 0.1574,
     "Flame Shock": 0.1339,
-    "Searing Totem": 0.0661,
+    "Searing Totem": 0.0662,
     "Chain Lightning": 0.0187,
-    "Demonic Rune": 0.01
+    "Demonic Rune": 0.0093
    }
   },
   {
@@ -279,47 +278,47 @@
    "dps": {
     "dummy": 450.9362190659262,
     "dummy60": 500.737545013006,
-    "ladder-mana": 465.03752357612115,
-    "ladder-armor": 465.03752357612115,
-    "ladder-physical": 476.66855721822003,
-    "ladder-spell": 526.7207194357436,
-    "raid": 550.8957155993247,
+    "ladder-mana": 464.95657683120453,
+    "ladder-armor": 464.95657683120453,
+    "ladder-physical": 476.6069477461691,
+    "ladder-spell": 526.4851198815858,
+    "raid": 551.1299094937804,
     "curve60": 497.7760773841239,
     "curve120": 476.4980807482498,
     "curve180": 450.9362190659262,
     "curve240": 406.7178637556897,
     "curve360": 360.64162344057945,
-    "max": 550.8957155993247,
-    "max60": 586.8423925453842
+    "max": 551.1299094937804,
+    "max60": 586.69902412691
    },
    "raid_spell_casts": {
-    "10438": 4.0,
-    "1326047": 14.002333333333333,
-    "16166": 1.225,
-    "15208": 67.87,
-    "10605": 2.812,
-    "29228": 9.359666666666667
+    "1326047": 14.002666666666666,
+    "10605": 2.7436666666666665,
+    "29228": 9.365,
+    "16166": 1.2513333333333334,
+    "15208": 67.92566666666667,
+    "10438": 4.0
    },
    "raid_casts": {
-    "Demonic Rune": 1.0736666666666668,
-    "OtherActionManaGain": 44.68333333333333,
+    "OtherActionManaGain": 44.69266666666667,
+    "Major Mana Potion": 1.996,
+    "Lava Burst": 14.002666666666666,
+    "Demonic Rune": 1.0466666666666666,
     "Talisman of Ephemeral Power": 2.0023333333333335,
-    "Searing Totem": 4.0,
-    "Lava Burst": 14.002333333333333,
-    "Elemental Mastery": 1.225,
-    "Lightning Bolt": 67.87,
-    "Major Mana Potion": 1.9843333333333333,
-    "Chain Lightning": 2.812,
-    "Flame Shock": 9.359666666666667,
-    "item 272438": 2.0
+    "item 272438": 2.0,
+    "Chain Lightning": 2.7436666666666665,
+    "Flame Shock": 9.365,
+    "Elemental Mastery": 1.2513333333333334,
+    "Lightning Bolt": 67.92566666666667,
+    "Searing Totem": 4.0
    },
    "raid_shares": {
-    "Lightning Bolt": 0.6157,
-    "Lava Burst": 0.1573,
-    "Flame Shock": 0.1339,
+    "Lightning Bolt": 0.6166,
+    "Lava Burst": 0.1572,
+    "Flame Shock": 0.1338,
     "Searing Totem": 0.0664,
-    "Chain Lightning": 0.0181,
-    "Demonic Rune": 0.0086
+    "Chain Lightning": 0.0177,
+    "Demonic Rune": 0.0084
    }
   }
  ]

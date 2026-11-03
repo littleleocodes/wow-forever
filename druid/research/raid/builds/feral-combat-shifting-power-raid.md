@@ -7,7 +7,7 @@
 | **Build** | 9/33/9 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -38,7 +38,7 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the Critical Strike chance of all party or raid members within 45 yards by 3%. |
 | **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
-| **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
+| **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 15%. |
 | **Shifting Power** | 1/1 | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. |
 
 ### Restoration (9)
@@ -50,16 +50,16 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Cat* | community simulator | - | 372 | +0.0% | 768 | -1.1% | 61 s |
-| 2 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: derived (simulator preset) | 9/33/9 | 369 | -0.8% | 763 | -1.8% | 61 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.9% | 776 | +0.0% | 61 s |
-| 4 | *Hybrid* | community simulator | - | 339 | -8.9% | 727 | -6.3% | 62 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 335 | -9.9% | 646 | -16.8% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.7% | 635 | -18.2% | 0 s |
+| 1 | *Cat* | community simulator | - | 372 | +0.0% | 750 | -1.1% | 61 s |
+| 2 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: derived (simulator preset) | 9/33/9 | 369 | -0.8% | 745 | -1.8% | 61 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.9% | 758 | +0.0% | 61 s |
+| 4 | *Hybrid* | community simulator | - | 339 | -8.9% | 711 | -6.3% | 62 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 335 | -9.9% | 630 | -16.9% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.7% | 619 | -18.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -74,7 +74,7 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
   10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-01, 10 changes to the base rotation; third-seed check: feral-combat-open-raid 776 -> 776 DPS (+0.0%), feral-combat-shifting-power-raid 762 -> 762 DPS (+0.0%), feral-cat-dps 635 -> 635 DPS (+0.0%), opt-feral-cat-dps-raid-dps 646 -> 646 DPS (+0.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-02, 10 changes to the base rotation; third-seed check: feral-combat-open-raid 758 -> 758 DPS (+0.0%), sim preset: Cat 750 -> 750 DPS (+0.0%), feral-cat-dps 620 -> 620 DPS (+0.0%), opt-feral-cat-dps-raid-dps 630 -> 630 DPS (+0.0%), feral-combat-shifting-power-raid 745 -> 745 DPS (+0.0%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)

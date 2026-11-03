@@ -83,13 +83,13 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Enhancement | Enhancing Totems | 2 | **REMOVED** | removed from Classic |
 | Enhancement | Two-Handed Axes and Maces | 1 | **REMOVED** | removed from Classic |
 | Enhancement | Anticipation | 2 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed |
-| Enhancement | Flurry | 5 | changed | tier 4, max 5 — tooltip changed |
+| Enhancement | Flurry | 5 | changed | tier 4, max 5 — tooltip changed; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
 | Enhancement | Improved Weapon Totems | 2 | **REMOVED** | removed from Classic |
 | Enhancement | Elemental Weapons | 3 | moved | tier 3, max 3 — was Enhancement row 5, col 2 |
 | Enhancement | Weapon Mastery | 5 | **REMOVED** | removed from Classic |
-| Enhancement | Stormstrike | 1 | changed | tier 4, max 1 — tooltip changed; was Enhancement row 7, col 2 |
-| Restoration | Tidal Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 1, col 3; moved in build 1.60.1.70707: was row 2, col 3 |
-| Restoration | Totemic Focus | 5 | changed | tier 2, max 5 — tooltip changed; was Restoration row 2, col 3; moved in build 1.60.1.70707: was row 1, col 3 |
+| Enhancement | Stormstrike | 1 | changed | tier 4, max 1 — tooltip changed; was Enhancement row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
+| Restoration | Tidal Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 1, col 3; moved in build 1.60.1.70753: was row 2, col 3 |
+| Restoration | Totemic Focus | 5 | changed | tier 2, max 5 — tooltip changed; was Restoration row 2, col 3; moved in build 1.60.1.70753: was row 1, col 3 |
 | Restoration | Nature's Guidance | 3 | **REMOVED** | removed from Classic |
 | Restoration | Totemic Mastery | 1 | **REMOVED** | removed from Classic |
 | Restoration | Healing Grace | 1 | **REMOVED** | removed from Classic |

@@ -39,36 +39,6 @@
   "text": "Gives your finishing moves a 20% chance to add a Combo Point to your target.",
   "effects": []
  },
- "Murder": {
-  "tree": "Assassination",
-  "max": 2,
-  "text": "Increases all damage dealt by 2% against Humanoid and Giant targets.",
-  "effects": [
-   {
-    "channel": "dmg",
-    "scope": [
-     "all"
-    ],
-    "values": [
-     0.02,
-     0.04
-    ],
-    "source": "parsed"
-   }
-  ]
- },
- "Improved Slice and Dice": {
-  "tree": "Assassination",
-  "max": 3,
-  "text": "Increases the duration of your Slice and Dice ability by 15%.",
-  "effects": []
- },
- "Relentless Strikes": {
-  "tree": "Assassination",
-  "max": 1,
-  "text": "Your finishing moves have a 20% chance per Combo Point to restore 25 Energy.",
-  "effects": []
- },
  "Improved Expose Armor": {
   "tree": "Assassination",
   "max": 2,
@@ -87,31 +57,29 @@
    }
   ]
  },
+ "Improved Slice and Dice": {
+  "tree": "Assassination",
+  "max": 3,
+  "text": "Increases the duration of your Slice and Dice ability by 15%.",
+  "effects": []
+ },
+ "Vigor": {
+  "tree": "Assassination",
+  "max": 2,
+  "text": "Increases your maximum Energy by 5.",
+  "effects": []
+ },
+ "Blood Splatter": {
+  "tree": "Assassination",
+  "max": 1,
+  "text": "Increases the duration of your Rupture ability by 6 seconds and your Garrote ability by 9 seconds.",
+  "effects": []
+ },
  "Lethality": {
   "tree": "Assassination",
-  "max": 5,
-  "text": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 4%.",
-  "effects": [
-   {
-    "channel": "crit_bonus",
-    "scope": [
-     "ability:Sinister Strike",
-     "ability:Gouge",
-     "ability:Backstab",
-     "ability:Mutilate",
-     "ability:Ghostly Strike",
-     "ability:Hemorrhage"
-    ],
-    "values": [
-     0.04,
-     0.08,
-     0.12,
-     0.16,
-     0.2
-    ],
-    "source": "parsed"
-   }
-  ]
+  "max": 2,
+  "text": "Grants 10% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities.",
+  "effects": []
  },
  "Vile Poisons": {
   "tree": "Assassination",
@@ -159,16 +127,16 @@
   "text": "Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge.",
   "effects": []
  },
- "Vigor": {
+ "Relentless Strikes": {
   "tree": "Assassination",
-  "max": 2,
-  "text": "Increases your maximum Energy by 5.",
+  "max": 5,
+  "text": "Your finishing moves have a 4% chance per Combo Point to restore 25 Energy.",
   "effects": []
  },
- "Mutilate": {
+ "Venom": {
   "tree": "Assassination",
   "max": 1,
-  "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+  "text": "Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds.",
   "effects": []
  },
  "Improved Kidney Shot": {
@@ -179,31 +147,20 @@
  },
  "Seal Fate": {
   "tree": "Assassination",
-  "max": 5,
-  "text": "Your critical strikes from abilities that add Combo Points have a 20% chance to add an additional Combo Point.",
+  "max": 3,
+  "text": "Your critical strikes from abilities that add Combo Points have a 33% chance to add an additional Combo Point.",
   "effects": []
  },
- "Venom": {
+ "Mutilate": {
   "tree": "Assassination",
   "max": 1,
-  "text": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 sec  2 points: 12 sec  3 points: 15 sec  4 points: 18 sec  5 points: 21 ",
-  "effects": [
-   {
-    "channel": "dmg",
-    "scope": [
-     "ability:Poisons"
-    ],
-    "values": [
-     0.3
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Instantly attacks with both weapons for 90% weapon damage plus an additional amount with each weapon (Blizzard: the amount was also increased). Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+  "effects": []
  },
- "Improved Eviscerate": {
+ "Coup de Grace": {
   "tree": "Combat",
   "max": 3,
-  "text": "Increases the damage done by your Eviscerate ability by 7%.",
+  "text": "Increases the damage done by your Eviscerate ability by 7%, and the damage and storage rate of your Death Mark ability by 7%.",
   "effects": [
    {
     "channel": "dmg",
@@ -219,23 +176,11 @@
    }
   ]
  },
- "Improved Sinister Strike": {
+ "Efficient Strikes": {
   "tree": "Combat",
   "max": 2,
-  "text": "Reduces the Energy cost of your Sinister Strike ability by 3.",
-  "effects": [
-   {
-    "channel": "resource_cost",
-    "scope": [
-     "ability:Sinister Strike"
-    ],
-    "values": [
-     3.0,
-     5.0
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Reduces the Energy costs of Sinister Strike and Hemorrhage by 3.",
+  "effects": []
  },
  "Lightning Reflexes": {
   "tree": "Combat",
@@ -315,6 +260,12 @@
    }
   ]
  },
+ "Improved Sprint": {
+  "tree": "Combat",
+  "max": 2,
+  "text": "Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability.",
+  "effects": []
+ },
  "Endurance": {
   "tree": "Combat",
   "max": 2,
@@ -327,10 +278,10 @@
   "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.",
   "effects": []
  },
- "Improved Sprint": {
+ "Composure": {
   "tree": "Combat",
   "max": 2,
-  "text": "Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability.",
+  "text": "Increases the Energy cost reduction of your Poised ability by 5.",
   "effects": []
  },
  "Improved Kick": {
@@ -342,7 +293,7 @@
  "Flawless Execution": {
   "tree": "Combat",
   "max": 1,
-  "text": "Reduces the Energy cost of your Eviscerate ability by 10.",
+  "text": "Reduces the Energy cost of your Eviscerate ability by 15.",
   "effects": [
    {
     "channel": "resource_cost",
@@ -350,32 +301,37 @@
      "ability:Eviscerate"
     ],
     "values": [
-     10.0
+     15.0
     ],
     "source": "parsed"
    }
   ]
  },
- "Dual Wield Specialization": {
+ "Aggression": {
   "tree": "Combat",
-  "max": 5,
-  "text": "Increases the damage done by your off-hand weapon by 5%.",
+  "max": 3,
+  "text": "Increases the damage of Sinister Strike and Eviscerate by 5%.",
   "effects": [
    {
     "channel": "dmg",
     "scope": [
-     "offhand"
+     "ability:Sinister Strike",
+     "ability:Eviscerate"
     ],
     "values": [
      0.05,
      0.1,
-     0.15,
-     0.2,
-     0.25
+     0.15
     ],
     "source": "parsed"
    }
   ]
+ },
+ "Weapon Expertise": {
+  "tree": "Combat",
+  "max": 2,
+  "text": "Reduces the chance for your attacks to be Dodged or Parried by 1%.",
+  "effects": []
  },
  "Blade Flurry": {
   "tree": "Combat",
@@ -404,32 +360,29 @@
    }
   ]
  },
- "Weapon Expertise": {
+ "Dual Wield Specialization": {
   "tree": "Combat",
   "max": 2,
-  "text": "Reduces the chance for your attacks to be Dodged or Parried by 1%.",
-  "effects": []
- },
- "Aggression": {
-  "tree": "Combat",
-  "max": 3,
-  "text": "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 2%.",
+  "text": "Increases the damage done by your off-hand weapon by 25%.",
   "effects": [
    {
     "channel": "dmg",
     "scope": [
-     "ability:Sinister Strike",
-     "ability:Backstab",
-     "ability:Eviscerate"
+     "offhand"
     ],
     "values": [
-     0.02,
-     0.04,
-     0.06
+     0.25,
+     0.5
     ],
     "source": "parsed"
    }
   ]
+ },
+ "Flash of Steel": {
+  "tree": "Combat",
+  "max": 5,
+  "text": "Increases the energy generated by your Shank ability by 3 and reduces its cooldown by 0.4 seconds.",
+  "effects": []
  },
  "Adrenaline Rush": {
   "tree": "Combat",
@@ -437,10 +390,10 @@
   "text": "Increases your Energy regeneration rate by 100% for 15 sec.",
   "effects": []
  },
- "Camouflage": {
+ "Setup": {
   "tree": "Subtlety",
-  "max": 5,
-  "text": "Reduces your speed penalty from your Stealth ability by 3% and reduces its cooldown by 2 sec.",
+  "max": 3,
+  "text": "Gives you a 15% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells.",
   "effects": []
  },
  "Master of Deception": {
@@ -451,8 +404,8 @@
  },
  "Opportunity": {
   "tree": "Subtlety",
-  "max": 2,
-  "text": "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 5%.",
+  "max": 5,
+  "text": "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 4%.",
   "effects": [
    {
     "channel": "dmg",
@@ -463,33 +416,36 @@
      "ability:Mutilate"
     ],
     "values": [
-     0.05,
-     0.1
+     0.04,
+     0.08,
+     0.12,
+     0.16,
+     0.2
     ],
     "source": "parsed"
    }
   ]
  },
- "Setup": {
+ "Camouflage": {
   "tree": "Subtlety",
   "max": 3,
-  "text": "Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
+  "text": "Grants 5% increased movement speed in stealth and reduces stealth's cooldown by 2 seconds.",
   "effects": []
  },
- "Elusiveness": {
+ "Dirty Deeds": {
   "tree": "Subtlety",
   "max": 2,
-  "text": "Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
+  "text": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target.",
   "effects": [
    {
-    "channel": "cooldown",
+    "channel": "resource_cost",
     "scope": [
-     "ability:Vanish",
-     "ability:Blind"
+     "ability:Cheap Shot",
+     "ability:Garrote"
     ],
     "values": [
-     45.0,
-     90.0
+     10.0,
+     20.0
     ],
     "source": "parsed"
    }
@@ -526,35 +482,6 @@
   "text": "Gives you a 33% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
   "effects": []
  },
- "Ghostly Strike": {
-  "tree": "Subtlety",
-  "max": 1,
-  "text": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point.",
-  "effects": [
-   {
-    "channel": "surv",
-    "scope": [
-     "surv:dodge"
-    ],
-    "values": [
-     0.18
-    ],
-    "source": "parsed"
-   }
-  ]
- },
- "Improved Distract": {
-  "tree": "Subtlety",
-  "max": 2,
-  "text": "Increases the radius of your Distract ability by 3 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1 level lower.",
-  "effects": []
- },
- "Heightened Senses": {
-  "tree": "Subtlety",
-  "max": 2,
-  "text": "Increases your Stealth detection as if you were 1 level higher and reduces your chance to be hit by spells and ranged attacks by 2%.",
-  "effects": []
- },
  "Premeditation": {
   "tree": "Subtlety",
   "max": 1,
@@ -580,24 +507,53 @@
    }
   ]
  },
- "Dirty Deeds": {
+ "Ghostly Strike": {
   "tree": "Subtlety",
-  "max": 2,
-  "text": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target.",
+  "max": 1,
+  "text": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Also causes your next Ambush or Garrote cast within 7 sec",
   "effects": [
    {
-    "channel": "resource_cost",
+    "channel": "surv",
     "scope": [
-     "ability:Cheap Shot",
-     "ability:Garrote"
+     "surv:dodge"
     ],
     "values": [
-     10.0,
-     20.0
+     0.18
     ],
     "source": "parsed"
    }
   ]
+ },
+ "Elusiveness": {
+  "tree": "Subtlety",
+  "max": 2,
+  "text": "Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Vanish",
+     "ability:Blind"
+    ],
+    "values": [
+     45.0,
+     90.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Quick Getaway": {
+  "tree": "Subtlety",
+  "max": 2,
+  "text": "Increases the maximum number of targets you may have Sapped by 1 and increases your movement speed by 15% for 3 seconds after sapping a target.",
+  "effects": []
+ },
+ "Heightened Senses": {
+  "tree": "Subtlety",
+  "max": 2,
+  "text": "Increases your Stealth detection as if you were 1 level higher and reduces your chance to be hit by spells and ranged attacks by 2%.",
+  "effects": []
  },
  "Preparation": {
   "tree": "Subtlety",
@@ -608,25 +564,30 @@
  "Hemorrhage": {
   "tree": "Subtlety",
   "max": 1,
-  "text": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point.",
-  "effects": []
+  "text": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and increases the damage of the caster's Rupture and Garrote abilities by 15%. Lasts 15 sec. Awards 1 Combo Point.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Garrote"
+    ],
+    "values": [
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
  },
- "Quietus": {
+ "Boot Knife": {
   "tree": "Subtlety",
   "max": 5,
-  "text": "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 2% more damage against targets below 35% health.",
+  "text": "Gives your Shank ability a 20% chance to add 2 Combo Points to the target.",
   "effects": []
  },
- "Cutthroat": {
-  "tree": "Subtlety",
-  "max": 5,
-  "text": "Your Backstab has a 3% chance to cause your next Ambush within 10 sec to not require Stealth.",
-  "effects": []
- },
- "Thousand Cuts": {
+ "Death Mark": {
   "tree": "Subtlety",
   "max": 1,
-  "text": "When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within 10 sec is reduced by 3, stacking up to 5 times.",
+  "text": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After 6 sec, the stored damage is dealt up to a maximum",
   "effects": []
  }
 }

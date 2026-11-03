@@ -80,7 +80,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 |---|---|---|---|---|
 | Beast Mastery | Improved Aspect of the Hawk | 5 | **REMOVED** | removed from Classic |
 | Beast Mastery | Endurance Training | 3 | changed | tier 1, max 5 — tooltip changed |
-| Beast Mastery | Improved Revive Pet | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70707: was row 2, col 4 |
+| Beast Mastery | Improved Revive Pet | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70753: was row 2, col 4 |
 | Beast Mastery | Unleashed Fury | 5 | changed | tier 3, max 5 — tooltip changed |
 | Beast Mastery | Ferocity | 5 | changed | tier 4, max 5 — tooltip changed |
 | Marksmanship | Efficiency | 5 | changed | tier 2, max 5 — tooltip changed; was Marksmanship row 1, col 3 |
@@ -89,9 +89,9 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Marksmanship | Aimed Shot | 1 | **REMOVED** | removed from Classic |
 | Marksmanship | Hawk Eye | 3 | moved | tier 1, max 3 — was Marksmanship row 3, col 4 |
 | Marksmanship | Mortal Shots | 5 | changed | tier 4, max 5 — tooltip changed |
-| Marksmanship | Barrage | 3 | changed | tier 5, max 3 — tooltip changed; was Marksmanship row 5, col 2 |
+| Marksmanship | Barrage | 3 | changed | tier 5, max 3 — tooltip changed; was Marksmanship row 5, col 2; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
 | Marksmanship | Ranged Weapon Specialization | 5 | unchanged | tier 6, max 5 |
-| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2; tooltip changed in build 1.60.1.70707 (ranks 1) |
+| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2; tooltip changed in build 1.60.1.70753 (ranks 1) |
 
 **14 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

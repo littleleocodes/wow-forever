@@ -7,7 +7,7 @@
 | **Build** | 7/39/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -32,7 +32,7 @@ The Marksmanship build the machine-learning talent search found in a full raid (
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 15. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
@@ -46,14 +46,14 @@ The Marksmanship build the machine-learning talent search found in a full raid (
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 414 | +0.0% | 736 | -5.9% | 37 s |
-| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 393 | -5.0% | 720 | -7.9% | 31 s |
-| 3 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 7/39/5 | 392 | -5.2% | 782 | +0.0% | 47 s |
-| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 375 | -9.2% | 719 | -8.1% | 25 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 388 | +0.0% | 691 | -8.3% | 37 s |
+| 2 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 7/39/5 | 377 | -2.6% | 753 | +0.0% | 47 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 374 | -3.5% | 686 | -8.9% | 31 s |
+| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 357 | -7.9% | 685 | -9.0% | 25 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -103,9 +103,9 @@ Damage by ability:
 
 | Ability | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) |
 |---|---|
-| Auto Shot | 39% |
-| Arcane Shot | 20% |
-| Pet: Auto Attack | 18% |
+| Auto Shot | 40% |
+| Arcane Shot | 21% |
+| Pet: Auto Attack | 15% |
 | Serpent Sting | 12% |
 | Aimed Shot | 7% |
 | Pet: Bite | 2% |

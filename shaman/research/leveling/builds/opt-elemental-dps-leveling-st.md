@@ -1,13 +1,13 @@
-# Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st) — 31/12/8
+# Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st) — 26/17/8
 
 *[Shaman](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/12/8 (Elemental / Enhancement / Restoration) |
+| **Build** | 26/17/8 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,32 +15,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 ## Point allocation
 
-### Elemental (31)
+### Elemental (26)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
-| **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
-| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
+| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 10%. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
+| **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.50 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Earthbound** | 1/1 | **NEW** | Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast. |
-| **Eye of the Storm** | 3/3 | changed | Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 70% chance to not lose casting time when you take damage. |
-| **Lava Burst** | 1/1 | **NEW** | You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. |
-| **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
-| **Elemental Fury** | 5/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
-| **Elemental Mastery** | 1/1 | **NEW** | Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec. |
+| **Eye of the Storm** | 3/3 | changed | Gives your Lightning Bolt and Chain Lightning spells a 70% chance to not lose casting time when you take damage. |
+| **Call of Thunder** | 1/1 | changed | Increases critical strike chance of Lightning Bolt and Chain Lightning by 5%. |
+| **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 30% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
+| **Elemental Fury** | 1/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%. |
 
-### Enhancement (12)
+### Enhancement (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Ancestral Knowledge** | 2/5 | changed | Increases your Intellect by 4%. |
+| **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
-| **Earth's Grasp** | 1/2 | moved | Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%. |
-| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 | **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
+| **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
-| **Anticipation** | 1/3 | changed | Increases your chance to dodge by an additional 2%. |
+| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 
 ### Restoration (8)
 
@@ -48,33 +48,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 |---|---|---|---|
 | **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 | **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Restoration | Tidal Focus | 5 | 0/0/5 |
-| 15-17 | Restoration | Mindfulness | 3 | 0/0/8 |
-| 18-22 | Elemental | Convection | 5 | 5/0/8 |
-| 23-25 | Elemental | Elemental Alacrity | 3 | 8/0/8 |
-| 26-27 | Elemental | Call of Flame | 2 | 10/0/8 |
-| 28 | Elemental | Elemental Focus | 1 | 11/0/8 |
-| 29-33 | Enhancement | Thundering Strikes | 5 | 11/5/8 |
-| 34-35 | Enhancement | Improved Ghost Wolf | 2 | 11/7/8 |
-| 36-37 | Enhancement | Guardian Totems | 2 | 11/9/8 |
-| 38 | Enhancement | Earth's Grasp | 1 | 11/10/8 |
-| 39 | Enhancement | Shamanistic Focus | 1 | 11/11/8 |
-| 40 | Elemental | Call of Flame | 1 | 12/11/8 |
-| 41-43 | Elemental | Concussion | 3 | 15/11/8 |
-| 44 | Elemental | Earthbound | 1 | 16/11/8 |
-| 45-46 | Elemental | Concussion | 2 | 18/11/8 |
-| 47-48 | Elemental | Eye of the Storm | 2 | 20/11/8 |
-| 49 | Elemental | Lava Burst | 1 | 21/11/8 |
-| 50-52 | Elemental | Lightning Overload | 3 | 24/11/8 |
-| 53 | Elemental | Eye of the Storm | 1 | 25/11/8 |
-| 54-58 | Elemental | Elemental Fury | 5 | 30/11/8 |
-| 59 | Elemental | Elemental Mastery | 1 | 31/11/8 |
-| 60 | Enhancement | Anticipation | 1 | 31/12/8 |
 
 ## Core talents (priority order)
 
@@ -89,7 +62,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 ## Leveling rotation (fight lab)
 
-Elemental: Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock, Earth Shock and Lava Burst on cooldown with Lightning Bolts between them while mana lasts; a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast.
+Elemental: Lightning Mastery on a fresh mob when ready, Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock and Earth Shock on cooldown with Lightning Bolts between them while mana lasts (Chain Lightning on a single mob only as CL_SINGLE allows); a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast. Lava Burst left the game on 2026-11-02 (it was cast on cooldown here).
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-20, on top of the priority below): drink below 15% mana; eat below 80% health. Together +1.2% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
@@ -111,6 +84,7 @@ What this build casts per kill ([report](../fightlab/elemental-dps.md), all leve
 ## Notes
 
 - Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

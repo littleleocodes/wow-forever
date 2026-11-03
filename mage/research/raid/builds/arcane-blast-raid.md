@@ -7,7 +7,7 @@
 | **Build** | 31/13/7 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -22,7 +22,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | **Improved Channeling** | 5/5 | **NEW** | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
@@ -44,7 +44,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Frostbolt** | 4/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.4 sec. |
+| **Improved Frostbolt** | 4/5 | changed | Reduces the casting time of your Frostbolt spell by 0.4 sec. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 
 ## Core talents (priority order)
@@ -71,13 +71,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | *Arcane Fire* | community simulator | - | 536 | +0.0% | 726 | -2.2% | 14 s |
 | 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 528 | -1.5% | 742 | +0.0% | 20 s |
-| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -3.4% | 657 | -11.5% | 16 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 517 | -3.4% | 656 | -11.5% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 

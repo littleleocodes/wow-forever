@@ -7,7 +7,7 @@
 | **Build** | 34/17/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,26 +19,26 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 2/5 | unchanged | Increases your Parry chance by 2%. |
+| **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
-| **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
+| **Improved Tactical Mastery** | 3/3 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
-| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
-| **Bloodthrill** | 5/5 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
-| **Weaponmaster** | 4/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 4%.   Mace/Staff: Your attacks ignore  12% of your target's armor.   Sword: Your successful melee   attacks have a 4% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 1/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. |
 | **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
+| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Bloodthrill** | 2/2 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
 | **Sweeping Strikes** | 1/1 | unchanged | Your next 5 melee attacks strike an additional nearby opponent. |
+| **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
+| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 5.0 sec. |
 | **Mortal Strike** | 1/1 | unchanged | A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec. |
 
 ### Fury (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Booming Voice** | 5/5 | changed | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. |
+| **Booming Voice** | 5/5 | changed | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. Also reduces the Rage cost of Piercing Howl by 25%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
@@ -69,14 +69,14 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 367 | +0.0% | 775 | -0.6% | 0 s |
-| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 779 | -0.0% | 0 s |
-| 3 | *Arms* | community simulator | - | 363 | -0.9% | 779 | +0.0% | 0 s |
-| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 774 | -0.7% | 0 s |
+| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 367 | +0.0% | 760 | -0.5% | 0 s |
+| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 764 | +0.0% | 0 s |
+| 3 | *Arms* | community simulator | - | 363 | -0.9% | 763 | -0.0% | 0 s |
+| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 759 | -0.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -161,6 +161,7 @@ Damage by ability:
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed.
 - 2026-10-22 (signature-spell rule, user 2026-10-22: Arms plays Mortal Strike): 1 Weaponmaster and 1 Improved Slam moved to Sweeping Strikes and Mortal Strike (34/17/0 kept); +11.7% in a full raid over the previous draft on the official simulator 30f67f5 (20,000 fights, seed 2).
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 34/17/0 -> 34/17/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Deflection (tier gating for Impale); +1 Weaponmaster (tier gating for Mortal Strike); +1 Improved Slam (back into Arms); +1 Deflection (back into Arms); +1 Deflection (back into Arms) (refill: the arms-2h-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

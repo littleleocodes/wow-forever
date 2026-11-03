@@ -165,7 +165,7 @@
    ],
    "steps": [
     "With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.",
-    "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (15% of your Intellect) for 15 seconds.",
+    "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (12% of your Intellect) for 18 seconds.",
     "**Arcane Missiles** as your channel, also once the mob is on you (with **Improved Channeling**, hits do not cut it short), and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you).",
     "No Frost Nova: let the mob come and keep channeling. **Cone of Cold** only when the mob is on you and below a fifth of its health, then step back; **Ice Lance** if the mob is frozen.",
     "When you cannot afford **Arcane Missiles**: **Fire Blast** if the mob is on you, else **Frostbolt**; finish with a **Fire Blast** that will kill, or your wand.",
@@ -305,10 +305,11 @@
   "combat-swords-raid": {
    "before": [
     "**Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
-    "Stealth up behind the mob."
+    "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper."
    ],
    "steps": [
     "Open with **Garrote**.",
+    "**Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum.",
     "**Sinister Strike** until you have 5 combo points.",
     "At 5 points: **Eviscerate**; earlier when it would kill the mob.",
     "**Cold Blood** right before an **Eviscerate** at 5 points.",
@@ -324,11 +325,12 @@
   "combat-daggers-raid": {
    "before": [
     "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
-    "Stealth up behind the mob."
+    "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper."
    ],
    "steps": [
     "Open with **Garrote**.",
-    "**Sinister Strike** until you have 5 combo points; once your build has **Mutilate** (level 30 to 32), it replaces **Sinister Strike**: 2 points a press, so wait for its 60 energy. The mob faces you after the opener, so **Backstab** is out.",
+    "**Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Venom** it also strengthens your poisons for 6 seconds.",
+    "**Sinister Strike** until you have 5 combo points; once your build has **Mutilate** (from about level 40), it replaces **Sinister Strike**: 2 points a press, so wait for its 60 energy. The mob faces you after the opener, so **Backstab** is out.",
     "At 5 points: **Eviscerate**; earlier when it would kill the mob.",
     "**Cold Blood** right before an **Eviscerate** at 5 points.",
     "**Riposte** after you parry.",
@@ -342,13 +344,15 @@
   "subtlety-leveling": {
    "before": [
     "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
-    "Stealth up behind the mob.",
+    "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.",
     "**Premeditation** for two free combo points."
    ],
    "steps": [
     "Open with **Ambush**; once fights last long enough for its bleed to pay (the Subtlety build from about level 40), **Garrote** instead.",
-    "**Ghostly Strike** whenever it is ready (it also makes you dodge more).",
+    "**Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.",
+    "**Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.",
     "**Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.",
+    "Once you have **Death Mark** (level 40): at 5 points, **Death Mark** instead of **Eviscerate** while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.",
     "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.",
     "**Riposte** after you parry.",
     "**Kick** a caster mob's spell.",
@@ -383,11 +387,10 @@
     "Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**."
    ],
    "steps": [
-    "**Elemental Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** and **Lava Burst** cast 0.5 s faster for 15 s.",
+    "**Lightning Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** casts 0.5 s faster for 15 s.",
     "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.",
     "**Earth Shock** when it would kill the mob, or to interrupt a caster.",
     "**Flame Shock** while it is not on the mob and the mob has more than 30% health.",
-    "**Lava Burst** whenever it is ready (20% more damage with **Flame Shock** on the mob).",
     "**Earth Shock** whenever the shock cooldown is free.",
     "**Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.",
     "Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**."
@@ -467,6 +470,7 @@
     "**Battle Shout**: keep it up (it lasts 3 minutes).",
     "**Execute** first once the mob is below 20% health.",
     "**Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.",
+    "**Reckless Swings** (if your build has it) whenever it is ready while you are above 80% health and the mob above 30%: your next 4 hits give 5 more rage each.",
     "**Mortal Strike** whenever ready.",
     "**Rend** once, while the mob has more than a third of its health.",
     "Spare rage: **Slam** (only with **Improved Slam**), then **Spearing Strike**, then **Heroic Strike**; keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.",
@@ -485,6 +489,7 @@
     "**Battle Shout**: keep it up (it lasts 3 minutes).",
     "**Execute** first once the mob is below 20% health.",
     "**Overpower** whenever it lights up (after a dodge).",
+    "**Reckless Swings** (if your build has it) whenever it is ready while you are above 80% health and the mob above 30%: your next 4 hits give 5 more rage each.",
     "**Bloodthirst** whenever ready.",
     "**Rend** once, while the mob has more than a third of its health.",
     "**Heroic Strike** with spare rage: keep 15 for **Overpower**.",

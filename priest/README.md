@@ -81,7 +81,7 @@ The research behind the pages above: every build, report and simulation.
 | Folder | What is in it | Hand drafts |
 |---|---|---|
 | [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (9 builds) | [leveling-shadow](research/leveling/builds/leveling-shadow.md) |
-| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (9 builds) | [holy-raid-healer](research/raid/builds/holy-raid-healer.md), [disc-penance-healer](research/raid/builds/disc-penance-healer.md), [smite-discipline-raid](research/raid/builds/smite-discipline-raid.md) |
+| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (10 builds) | [holy-raid-healer](research/raid/builds/holy-raid-healer.md), [disc-penance-healer](research/raid/builds/disc-penance-healer.md), [smite-discipline-raid](research/raid/builds/smite-discipline-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (3 builds) | [shadow-pvp](research/pvp/builds/shadow-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |

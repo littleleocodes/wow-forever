@@ -7,7 +7,7 @@
 | **Build** | 31/20/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -47,13 +47,13 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 54ceac6 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 387 | +0.0% | 773 | +0.0% | 43 s |
-| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 379 | -2.0% | 721 | -6.7% | 28 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 372 | -3.8% | 763 | -1.2% | 41 s |
+| 1 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 361 | +0.0% | 727 | +0.0% | 43 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 360 | -0.1% | 687 | -5.5% | 28 s |
+| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 349 | -3.2% | 722 | -0.6% | 41 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -104,11 +104,11 @@ Damage by ability:
 
 | Ability | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) |
 |---|---|
-| Pet: Auto Attack | 37% |
-| Auto Shot | 35% |
+| Auto Shot | 37% |
+| Pet: Auto Attack | 32% |
 | Serpent Sting | 13% |
-| Arcane Shot | 7% |
-| Summon Hawk | 3% |
+| Arcane Shot | 8% |
+| Summon Hawk | 4% |
 | Pet: Bite | 3% |
 | Pet: Claw | 2% |
 | spell 1295633 | 1% |

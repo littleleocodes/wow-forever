@@ -7,11 +7,11 @@
 | **Build** | 17/17/17 (Discipline / Holy / Shadow) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70707 (2026-10-31 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-10-29: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over smite-open-raid, the best of our builds in that rotation.
+The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 2026-11-03: every legal 51-point build with no tree rule, searched in the community simulator's smite-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over smite-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -30,12 +30,13 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
 | **Holy Specialization** | 5/5 | unchanged | Increases the critical effect chance of your Holy spells by 5%. |
 | **Divine Fury** | 5/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.5 sec. |
 | **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
+| **Blessed Recovery** | 2/3 | changed | After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 17% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing. |
 | **Inspiration** | 1/3 | changed | Your non-periodic critical heals increase your target's Armor by 8% for 15 sec. |
 | **Searing Light** | 2/2 | changed | Increases your Holy damage done by 5%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana. |
+| **Spell Warding** | 1/5 | unchanged | Reduces all spell damage taken by 2%. |
 
 ### Shadow (17)
 
@@ -61,13 +62,13 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `smite-dps` by training-dummy DPS in the community simulator (wowsims/forever 30f67f5 (client 70450)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `smite-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 375 | +0.0% | 594 | -2.8% | 41 s |
-| 2 | *Smite* | community simulator | - | 375 | +0.0% | 594 | -2.8% | 41 s |
-| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 353 | -5.9% | 611 | +0.0% | 38 s |
+| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 363 | +0.0% | 582 | -3.3% | 42 s |
+| 2 | *Smite* | community simulator | - | 363 | +0.0% | 582 | -3.3% | 42 s |
+| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 343 | -5.6% | 602 | +0.0% | 40 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,7 +95,7 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
   20. rank 5 below 15% mana, above: cast Smite (+0.2%, pass 8)
   21. spell probe: insert in the middle: if auraIsInactive: cast Power Infusion (+0.6%, pass 9)
   22. spell probe: insert in the middle: if not Mind Flay is on the target: cast Mind Flay (+14.5%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-10-29, 38 changes to the base rotation; third-seed check: open winner 526 -> 606 DPS (+15.3%), smite-open-raid 544 -> 605 DPS (+11.2%), sim preset: Smite 540 -> 594 DPS (+9.9%), smite-discipline-raid 540 -> 594 DPS (+9.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-11-03, 39 changes to the base rotation; third-seed check: smite-open-raid 539 -> 602 DPS (+11.6%), sim preset: Smite 526 -> 582 DPS (+10.7%), smite-discipline-raid 526 -> 582 DPS (+10.7%)):
   1. rank 4 below 50% mana, above: if mana % ≥ 20%: cast Smite (+8.7%, pass 1)
   2. insert at the top: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+2.1%, pass 1)
   3. always rank 2 instead of rank 4: if mana % ≥ 20% and mana % < 50%: cast Smite (+1.2%, pass 1)
@@ -133,6 +134,7 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
   36. move to the top: cast Mind Blast (+0.8%, pass 14)
   37. threshold 1.5s -> 0.5s: if time left on Holy Fire < 1.5s and mana % ≥ 40%: cast Holy Fire (+0.2%, pass 14)
   38. move down below 'if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain': cast Mind Blast (+0.2%, pass 14)
+  39. insert before the filler: cast Demonic Rune (+0.4%, pass 15)
 
 Before the pull: at -3s: cast Holy Fire.
 
@@ -141,14 +143,14 @@ Before the pull: at -3s: cast Holy Fire.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.3 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.1 |
+| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.0 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
 | 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 |
 | 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.6 |
-| 8 | if not Mind Flay is on the target: cast Mind Flay | 11.0 |
+| 8 | if not Mind Flay is on the target: cast Mind Flay | 10.8 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.3 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.3 |
-| 11 | if mana % < 15%: cast Smite (rank 5) | 2.2 |
+| 11 | if mana % < 15%: cast Smite (rank 5) | 2.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Power Infusion (needs the Power Infusion talent); cast Penance (rank 3) (needs the Penance talent); cast Smite (rank 2), cast Smite (rank 7) (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
 
@@ -157,9 +159,9 @@ Damage by ability:
 | Ability | [`smite-open-raid`](smite-open-raid.md) |
 |---|---|
 | Mind Flay | 41% |
-| Shadow Word: Pain | 25% |
-| Holy Fire | 20% |
-| Smite | 6% |
+| Shadow Word: Pain | 26% |
+| Holy Fire | 19% |
+| Smite | 7% |
 | Demonic Rune | 3% |
 | Devouring Plague | 2% |
 | Shadow Word: Death | 2% |
@@ -171,8 +173,8 @@ Damage by ability:
 - The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.
-- Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements.
-- 2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blessed Recovery -> Twilight Focus (interrupt); Blessed Recovery -> Twilight Focus (interrupt); Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana). Net -0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements.
+- 2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana); Twilight Focus -> Spell Warding (survival). Net -0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

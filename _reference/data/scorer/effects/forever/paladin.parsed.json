@@ -586,7 +586,7 @@
  "Two-Handed Weapon Specialization": {
   "tree": "Retribution",
   "max": 3,
-  "text": "Increases the physical damage you deal by 2%, and reduces all threat you generate by 7% while a two-handed melee weapon is equipped.",
+  "text": "Increases the Holy and Physical damage you deal by 2%, and reduces all threat you generate by 7% while a two-handed melee weapon is equipped.",
   "effects": [
    {
     "channel": "threat",
@@ -629,7 +629,7 @@
  "Vengeance": {
   "tree": "Retribution",
   "max": 3,
-  "text": "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.",
+  "text": "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times.",
   "effects": [
    {
     "channel": "dmg",

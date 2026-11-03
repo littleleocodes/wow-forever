@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "54ceac638",
+  "commit": "bac92dbd5",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
@@ -34,7 +34,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "results": [
   {
    "label": "mm-lone-wolf-raid",
@@ -43,22 +43,22 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "20904": 10.377,
+    "14287": 27.545333333333332,
     "25295": 6.7523333333333335,
     "3045": 1.0,
-    "20904": 10.377,
-    "25296": 1.0,
-    "14287": 27.545333333333332
+    "25296": 1.0
    },
    "casts": {
-    "Serpent Sting": 6.7523333333333335,
-    "Rapid Fire": 1.0,
     "item 274760": 1.0,
-    "Auto Shot": 71.28233333333333,
-    "OtherActionManaGain": 2.0,
-    "Aimed Shot": 10.377,
-    "Aspect of the Hawk": 1.0,
     "Major Mana Potion": 2.0,
-    "Arcane Shot": 27.545333333333332
+    "Aimed Shot": 10.377,
+    "Arcane Shot": 27.545333333333332,
+    "Serpent Sting": 6.7523333333333335,
+    "OtherActionManaGain": 2.0,
+    "Rapid Fire": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Auto Shot": 71.28233333333333
    },
    "dps": 356.55747640966865,
    "dps_stdev": 15.464933433733592,
@@ -91,22 +91,22 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "3045": 1.0,
     "25296": 1.0,
     "20904": 13.211333333333334,
-    "14287": 24.468333333333334,
-    "25295": 7.969666666666667
+    "25295": 7.969666666666667,
+    "3045": 1.0,
+    "14287": 24.468333333333334
    },
    "casts": {
-    "OtherActionManaGain": 2.0,
-    "Rapid Fire": 1.0,
     "Aspect of the Hawk": 1.0,
-    "item 274760": 1.0,
-    "Aimed Shot": 13.211333333333334,
-    "Arcane Shot": 24.468333333333334,
-    "Major Mana Potion": 2.0,
     "Auto Shot": 71.30066666666667,
-    "Serpent Sting": 7.969666666666667
+    "OtherActionManaGain": 2.0,
+    "Aimed Shot": 13.211333333333334,
+    "Major Mana Potion": 2.0,
+    "Serpent Sting": 7.969666666666667,
+    "item 274760": 1.0,
+    "Rapid Fire": 1.0,
+    "Arcane Shot": 24.468333333333334
    },
    "dps": 357.1976525258438,
    "dps_stdev": 15.129328275836501,
@@ -140,21 +140,21 @@
    "measured": true,
    "spell_casts": {
     "25296": 1.0,
-    "14287": 29.222666666666665,
     "20904": 11.243666666666666,
     "25295": 7.409,
-    "3045": 1.0
+    "3045": 1.0,
+    "14287": 29.222666666666665
    },
    "casts": {
-    "Auto Shot": 71.23066666666666,
-    "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Arcane Shot": 29.222666666666665,
-    "OtherActionManaGain": 2.0,
-    "item 274760": 1.0,
+    "Major Mana Potion": 2.0,
     "Aimed Shot": 11.243666666666666,
     "Serpent Sting": 7.409,
-    "Rapid Fire": 1.0
+    "Rapid Fire": 1.0,
+    "item 274760": 1.0,
+    "Arcane Shot": 29.222666666666665,
+    "Auto Shot": 71.23066666666666,
+    "OtherActionManaGain": 2.0
    },
    "dps": 304.0383033806557,
    "dps_stdev": 13.325629899160344,
