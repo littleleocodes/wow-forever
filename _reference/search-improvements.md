@@ -121,6 +121,13 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0. **The any-split leveling search loses to its own one-tree search (2026-11-03, patch_1103.sh)**: the shaman's fresh open search in the
+   Elemental rotation (warm start, 70753) picked the 26/22/3 hybrid at 29.48 s per kill (20-60); the one-tree Elemental search run right
+   after (`fl_open_search.py shaman --tree Elemental`) found 32/11/8 at 28.99 s, 1.7% faster, a build the any-split space contains. Same
+   pattern as the shaman's lost 29/22/0 lead (2026-11-02). Lead: seed the any-split search with each one-tree winner (or run the one-tree
+   searches first) and race them in its finalists. Also fixed the same day: one-tree records older than the talent data were used by
+   `open_builds.py` (a Lava Burst build after the 11-02 patch); they are now skipped and re-run (deep-runs/pure_1103.sh).
+
 0a. **Fight-lab cast-path audit (2026-10-25, agent; read-only)**: spells a spec's leveling rotation never presses, so no search can value
    their talents. Being fixed: rogue Venom, hunter Sniper Shot, mage Pyroblast hard-cast (only Heating Up casts it), mage Frost Blast.
    Done the same day (cast paths, knobs off by default: every number unchanged, mage regression identical): Venom (`VENOM_HP`/`VENOM_CP`:
