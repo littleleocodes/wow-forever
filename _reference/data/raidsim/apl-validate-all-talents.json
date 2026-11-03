@@ -233,14 +233,7 @@
   }
  },
  "rogue": {
-  "combat-swords-raid:combat-swords-raid.apl.json": {
-   "priority[1]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 14278}"
-    ],
-    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
-   }
-  },
+  "combat-swords-raid:combat-swords-raid.apl.json": {},
   "combat-swords-raid:combat-swords-raid-raid.apl.json": {
    "priority[0]": {
     "messages": [
@@ -248,12 +241,6 @@
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
-   },
-   "priority[2]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 14278}"
-    ],
-    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
    },
    "priority[9]": {
     "messages": [
@@ -362,14 +349,7 @@
    }
   },
   "combat-daggers-raid:combat_backstab.apl.json": {},
-  "assassination-raid:assassination-raid.apl.json": {
-   "priority[1]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 14278}"
-    ],
-    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
-   }
-  },
+  "assassination-raid:assassination-raid.apl.json": {},
   "assassination-raid:assassination-raid-raid.apl.json": {
    "priority[1]": {
     "messages": [
@@ -377,12 +357,6 @@
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
-   },
-   "priority[6]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 14278}"
-    ],
-    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
    }
   },
   "assassination-raid:forever_mutilate.apl.json": {},
@@ -934,18 +908,7 @@
   }
  },
  "paladin": {
-  "ret-dps:default.apl.json": {},
   "ret-dps:ret-dps-raid.apl.json": {},
-  "prot-tank:default.apl.json": {},
-  "prot-tank:prot-tank-raid.apl.json": {},
-  "shockadin-raid:holy_shock.apl.json": {
-   "prepull[1]": {
-    "messages": [
-     "Warning: No swap set configured in Settings."
-    ],
-    "line": ""
-   }
-  },
   "shockadin-raid:shockadin-raid-raid.apl.json": {}
  },
  "shaman": {

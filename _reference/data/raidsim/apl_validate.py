@@ -41,9 +41,15 @@ def main():
             bid = next((b for b in entry.get("builds", []) if b in by_id), None)
             if not bid:
                 continue
-            talents = R.talents_string(trees, R.alloc_of(by_id[bid]))
-            if a.all_talents:
+            if a.all_talents:   # (2026-11-03: before the build's own string, which fails on a talent the simulator lacks: the rogue's 70753 renames)
                 talents = "-".join("".join(str(t["maxPoints"]) for t in tr["talents"]) for tr in trees)
+            else:
+                try:
+                    talents = R.talents_string(trees, R.alloc_of(by_id[bid]))
+                except Exception as e:   # the data's trees ahead of the simulator's: listed, not validated
+                    print(f"== {cls} {spec}: {bid} not validated ({e})")
+                    record.setdefault(cls, {})[f"{spec}:build"] = {"skipped": {"messages": [str(e)[:200]], "line": ""}}
+                    continue
             files = {}
             for where in ("dummy", "raid"):
                 files.setdefault(str(R.apl_path(entry, repo, where)), where)
