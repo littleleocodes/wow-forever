@@ -445,17 +445,26 @@
   },
   "Subtlety": {
    "required": [
-    "Hemorrhage"
+    "Hemorrhage",
+    "Death Mark"
    ],
    "core": [
     "melee",
     "Hemorrhage",
     "Ghostly Strike",
     "Ambush",
-    "Eviscerate"
+    "Eviscerate",
+    "Death Mark"
    ],
    "min_share": 0.6,
-   "note": "Hemorrhage as the builder"
+   "note": "Hemorrhage as the builder; Death Mark, the 31-point finisher of the 2026-11-02 tree (user, 2026-11-03: every spec plays its signature spell). Raid: Hemorrhage only until the raid simulator ports the rogue's 2026-11-02 tree (no Death Mark there yet)",
+   "modes": {
+    "raid": {
+     "required": [
+      "Hemorrhage"
+     ]
+    }
+   }
   },
   "Hybrid Assassination/Combat": {
    "required": [],
