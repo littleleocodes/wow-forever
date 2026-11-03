@@ -2,11 +2,11 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-11-02",
-  "commit": "bac92dbd5",
+  "date": "2026-11-03",
+  "commit": "d97252f2a",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-default.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
@@ -57,54 +57,54 @@
   "final": {
    "raid": {
     "retribution-open-raid": {
-     "before": 818.0190523411395,
-     "after": 825.51406330027,
-     "base": 818.0190523411395,
+     "before": 865.4942053453226,
+     "after": 874.2054420015396,
+     "base": 865.4942053453226,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Unsealed Wrath": {
-     "before": 815.5583897085472,
-     "after": 824.4549942208257,
-     "base": 815.5583897085472,
+     "before": 862.7359459989813,
+     "after": 872.946128671663,
+     "base": 862.7359459989813,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "ret-raid-dps": {
-     "before": 652.0245002392963,
-     "after": 662.7410914354144,
-     "base": 652.0245002392963,
+     "before": 690.0621839990109,
+     "after": 701.9003395770764,
+     "base": 690.0621839990109,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "ret-full-buffs-raid": {
-     "before": 650.8129669774703,
-     "after": 660.5428776300453,
-     "base": 650.8129669774703,
+     "before": 688.709367707071,
+     "after": 699.5031421621269,
+     "base": 688.709367707071,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.0003089999991,
      "oom_after": 0.0003089999991
     },
     "opt-ret-dps-raid-dps": {
-     "before": 652.0245002392963,
-     "after": 662.7418636051909,
-     "base": 652.0245002392963,
+     "before": 690.0621839990109,
+     "after": 701.9011508710427,
+     "base": 690.0621839990109,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "retribution-ml-raid": {
-     "before": 650.8195107147252,
-     "after": 661.3514610327071,
-     "base": 650.8195107147252,
+     "before": 688.7160613518059,
+     "after": 700.3576940846546,
+     "base": 688.7160613518059,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -123,13 +123,13 @@
     "Judgement"
    ],
    "rejected": {
-    "structure": 7,
+    "structure": 8,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-31",
-  "passes": 3
+  "passes": 4
  }
 }

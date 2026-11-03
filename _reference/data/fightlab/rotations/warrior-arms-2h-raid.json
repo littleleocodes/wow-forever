@@ -1,5 +1,5 @@
 {
- "eat_below": 0.5,
+ "eat_below": 0.4,
  "class": "warrior",
  "spec": "arms-2h-raid",
  "build": "leveling-arms",
@@ -10,52 +10,63 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-11-03",
+ "signature": {
+  "required": [
+   "Mortal Strike"
+  ],
+  "build_spec": "Arms",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.9807159463439408,
+  "core_share_after": 0.9813081852737295,
+  "min_share": 0.8,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "eat below 50% health",
+   "change": "eat below 40% health",
    "rule": [
     "eat_below",
     null,
-    0.5
+    0.4
    ],
-   "gain_seed1": 0.03594218921007952,
-   "gain_seed2": 0.026224785928890437
+   "gain_seed1": 0.023423445580986857,
+   "gain_seed2": 0.020390255137423985
   }
  ],
- "weighted_before": 27.645913032487755,
- "weighted_after": 26.912353333378025,
+ "weighted_before": 24.11851761845537,
+ "weighted_after": 23.682908333305168,
  "per_level": {
   "20": {
-   "before": 22.570613133157966,
-   "after": 22.566299999880837,
+   "before": 16.83136666658643,
+   "after": 16.83136666658643,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 26.301325955352798,
-   "after": 25.697566666661576,
+   "before": 18.758466666563265,
+   "after": 18.758466666563265,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.105167621944794,
-   "after": 25.73569999999696,
+   "before": 22.840882124265175,
+   "after": 22.72439999988689,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 28.239985757143927,
-   "after": 27.061833333380402,
+   "before": 25.452009065034325,
+   "after": 24.843966666629072,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.54207620731365,
-   "after": 29.628300000154034,
+   "before": 28.968107535668732,
+   "after": 28.100433333424622,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -2,5 +2,273 @@
  "class": "priest",
  "spec": "Discipline",
  "date": "2026-11-03",
- "cycles": []
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       1
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Silent Resolve",
+       3
+      ],
+      [
+       "Holy Precision",
+       1
+      ],
+      [
+       "Mental Strength",
+       5
+      ],
+      [
+       "Mental Agility",
+       3
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Soul Warding",
+       1
+      ],
+      [
+       "Penance",
+       1
+      ],
+      [
+       "Divine Aegis",
+       3
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       3
+      ],
+      [
+       "Improved Renew",
+       1
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Divine Fury",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Inspiration",
+       3
+      ],
+      [
+       "Holy Reach",
+       2
+      ],
+      [
+       "Improved Healing",
+       3
+      ],
+      [
+       "Litany of Light",
+       1
+      ]
+     ],
+     "Shadow": []
+    },
+    "split": "30/21/0",
+    "dps": 0.6281,
+    "se": 0.0022,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/21/0",
+    "dps": 0.6281,
+    "se": 0.0022,
+    "differs": [
+     [
+      "Improved Mana Burn",
+      1
+     ],
+     [
+      "Silent Resolve",
+      2
+     ],
+     [
+      "Silent Resolve",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1429,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1415,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 3,
+     "simulated": 1428,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 4,
+     "simulated": 1429,
+     "best_screen": 0.6408,
+     "best_split": "30/21/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 4,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6383,
+      0.637,
+      0.6294
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237,
+      0.6237
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6281,
+      0.6281
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 208,
+     "best_gap": 0.0,
+     "best_move": "1 Holy Reach -> Holy Binding"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Improved Healing",
+     "importance": 0.3908
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.1444
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.1263
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.1109
+    },
+    {
+     "feature": "Inspiration",
+     "importance": 0.0891
+    },
+    {
+     "feature": "Shadow points",
+     "importance": 0.0441
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.0166
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0105
+    },
+    {
+     "feature": "Blackout",
+     "importance": 0.0081
+    },
+    {
+     "feature": "Wand Specialization",
+     "importance": 0.0074
+    },
+    {
+     "feature": "Inner Focus",
+     "importance": 0.0047
+    },
+    {
+     "feature": "Divine Fury",
+     "importance": 0.0045
+    }
+   ],
+   "simulated_builds": 5938,
+   "minutes": 227.7,
+   "policy_changed": true
+  }
+ ]
 }

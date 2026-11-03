@@ -16,7 +16,18 @@
   50,
   60
  ],
- "date": "2026-10-20",
+ "date": "2026-11-03",
+ "signature": {
+  "required": [
+   "Stormstrike"
+  ],
+  "build_spec": "Enhancement",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.6144335415365954,
+  "core_share_after": 0.7614759962499975,
+  "min_share": 0.6,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -28,8 +39,8 @@
     "Lightning Bolt",
     0.35
    ],
-   "gain_seed1": 0.10428579045166253,
-   "gain_seed2": 0.09615165277269422
+   "gain_seed1": 0.09691573809191034,
+   "gain_seed2": 0.0928183005890365
   },
   {
    "round": 2,
@@ -39,8 +50,8 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.013381459424344877,
-   "gain_seed2": 0.00824220821500754
+   "gain_seed1": 0.01183339074345613,
+   "gain_seed2": 0.010858734355484012
   },
   {
    "round": 3,
@@ -50,40 +61,40 @@
     null,
     0.8
    ],
-   "gain_seed1": 0.01054967081350644,
-   "gain_seed2": 0.013146776637260493
+   "gain_seed1": 0.012538048566865356,
+   "gain_seed2": 0.010200742571649934
   }
  ],
- "weighted_before": 34.99666593904895,
- "weighted_after": 30.914629801835428,
+ "weighted_before": 28.59590502024355,
+ "weighted_after": 25.408199215192045,
  "per_level": {
   "20": {
-   "before": 25.540072483829707,
-   "after": 22.577983852828325,
+   "before": 23.597189314024412,
+   "after": 21.165517032768026,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 32.05358834745049,
-   "after": 27.851900820636313,
+   "before": 27.154101156192855,
+   "after": 23.218038404909414,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 35.59575201451203,
-   "after": 31.497173436873997,
+   "before": 30.096806551110888,
+   "after": 26.29448454446596,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 37.26523217787711,
-   "after": 32.07790357222394,
+   "before": 29.715475627201783,
+   "after": 25.930970716009,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 37.33053997058909,
-   "after": 33.86711904342121,
+   "before": 29.049468994631862,
+   "after": 26.89100721094463,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -4,9 +4,9 @@
  "build": "holy-raid-healer",
  "builds": [
   "holy-raid-healer",
-  "priest-holy-winner-1",
+  "priest-discipline-winner-1",
   "disc-penance-healer",
-  "priest-discipline-winner-3"
+  "priest-holy-winner-3"
  ],
  "date": "2026-11-03",
  "runs": 60,
@@ -35,17 +35,17 @@
    0.6954736328125001,
    0.6954736328125001
   ],
-  "priest-holy-winner-1": [
-   0.6975683593750001,
-   0.6975683593750001
+  "priest-discipline-winner-1": [
+   0.6322509765625,
+   0.6322509765625
   ],
   "disc-penance-healer": [
    0.6010205078124999,
    0.6010205078124999
   ],
-  "priest-discipline-winner-3": [
-   0.6309179687500001,
-   0.6309179687500001
+  "priest-holy-winner-3": [
+   0.69594970703125,
+   0.69594970703125
   ]
  }
 }

@@ -4,7 +4,10 @@
    "off": true
   },
   "Arcane Shot": {
-   "off": true
+   "max_hp": 0.35
+  },
+  "Feign Death": {
+   "min_hp": 0.35
   }
  },
  "drink_below": 0.15,
@@ -18,15 +21,15 @@
   50,
   60
  ],
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "signature": {
   "required": [
    "Aimed Shot"
   ],
   "build_spec": "Marksmanship",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7131042052350284,
-  "core_share_after": 0.7041081541828113,
+  "core_share_before": 0.7506913016694019,
+  "core_share_after": 0.7441838204067363,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -41,62 +44,73 @@
     "Multi-Shot",
     true
    ],
-   "gain_seed1": 0.048851537176549886,
-   "gain_seed2": 0.047451227823317454
+   "gain_seed1": 0.042425041088768545,
+   "gain_seed2": 0.04580246594988191
   },
   {
    "round": 2,
-   "change": "never cast Arcane Shot",
+   "change": "Arcane Shot only when the mob is below 35% health",
    "rule": [
-    "off",
+    "max_hp",
     "Arcane Shot",
-    true
+    0.35
    ],
-   "gain_seed1": 0.5158193924947301,
-   "gain_seed2": 0.51653581326217
+   "gain_seed1": 0.5002523228624285,
+   "gain_seed2": 0.49976544787047494
   },
   {
    "round": 3,
+   "change": "Feign Death only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Feign Death",
+    0.35
+   ],
+   "gain_seed1": 0.011050216079379616,
+   "gain_seed2": 0.01050850172709017
+  },
+  {
+   "round": 4,
    "change": "drink below 15% mana",
    "rule": [
     "drink_below",
     null,
     0.15
    ],
-   "gain_seed1": 0.006875078525215739,
-   "gain_seed2": 0.004480628319595947
+   "gain_seed1": 0.0076057548921179,
+   "gain_seed2": 0.006075007833161283
   }
  ],
- "weighted_before": 26.6747659226859,
- "weighted_after": 24.45433213624171,
+ "weighted_before": 23.78626720440066,
+ "weighted_after": 22.327875379486148,
  "per_level": {
   "20": {
-   "before": 14.986582477552295,
-   "after": 14.119401174924336,
+   "before": 13.879798429617306,
+   "after": 13.926941878931679,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 20.812439690342305,
-   "after": 18.653676161642,
+   "before": 19.208517004694475,
+   "after": 17.71229448654778,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.044563690123333,
-   "after": 23.733812762311732,
+   "before": 24.284692972159014,
+   "after": 22.138750360573216,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.24367018229577,
-   "after": 26.776348862370355,
+   "before": 25.905995416227956,
+   "after": 24.177897776555213,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.114704792602385,
-   "after": 29.34496942149348,
+   "before": 27.278574540819886,
+   "after": 26.020375007857883,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

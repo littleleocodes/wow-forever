@@ -21,15 +21,15 @@
   50,
   60
  ],
- "date": "2026-10-26",
+ "date": "2026-11-03",
  "signature": {
   "required": [
    "Mutilate"
   ],
-  "build_spec": "Hybrid Assassination/Combat",
+  "build_spec": "Assassination",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8056949862002718,
-  "core_share_after": 0.7180001548988105,
+  "core_share_before": 0.9495156284845359,
+  "core_share_after": 0.8545826786290472,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -44,8 +44,8 @@
     "Cheap Shot",
     true
    ],
-   "gain_seed1": 0.09572750578250677,
-   "gain_seed2": 0.10157413238021362
+   "gain_seed1": 0.07803886550902561,
+   "gain_seed2": 0.07916637571831242
   },
   {
    "round": 2,
@@ -55,8 +55,8 @@
     null,
     0.4
    ],
-   "gain_seed1": 0.042076725859605535,
-   "gain_seed2": 0.04258544611214976
+   "gain_seed1": 0.041568808148719216,
+   "gain_seed2": 0.04221065095269427
   },
   {
    "round": 3,
@@ -66,8 +66,8 @@
     "Slice and Dice",
     true
    ],
-   "gain_seed1": 0.012474988451637303,
-   "gain_seed2": 0.01291506407320231
+   "gain_seed1": 0.0331559909855913,
+   "gain_seed2": 0.02485328132126452
   },
   {
    "round": 4,
@@ -77,40 +77,40 @@
     "Kidney Shot",
     true
    ],
-   "gain_seed1": 0.012479194999302501,
-   "gain_seed2": 0.012776846393709573
+   "gain_seed1": 0.004189859101926707,
+   "gain_seed2": 0.004665264119300794
   }
  ],
- "weighted_before": 33.196893056749566,
- "weighted_after": 27.87967833341613,
+ "weighted_before": 26.154794378455694,
+ "weighted_after": 22.428534999919155,
  "per_level": {
   "20": {
-   "before": 22.409969391932076,
-   "after": 21.303233333201835,
+   "before": 17.641308186480057,
+   "after": 17.21616666658197,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 29.67568241744001,
-   "after": 23.736466666592115,
+   "before": 23.905102765143816,
+   "after": 19.879999999885676,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 35.51390575210602,
-   "after": 28.924333333452296,
+   "before": 26.59689623651266,
+   "after": 21.8511666665337,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 35.399247299900466,
-   "after": 29.661433333478183,
+   "before": 27.589580994375908,
+   "after": 23.65649999992658,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 35.17316926514678,
-   "after": 29.96220000015708,
+   "before": 28.62707883046537,
+   "after": 24.8018666666324,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

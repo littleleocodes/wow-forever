@@ -1,5 +1,4 @@
 {
- "eat_below": 0.4,
  "class": "warrior",
  "spec": "fury-dw-raid",
  "build": "opt-fury-dw-raid-leveling-st",
@@ -10,52 +9,51 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-11-03",
+ "signature": {
+  "required": [
+   "Bloodthirst"
+  ],
+  "build_spec": "Fury",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.8661301521499435,
+  "core_share_after": 0.8661301521499435,
+  "min_share": 0.8,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
- "changes": [
-  {
-   "round": 1,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.030677786549779595,
-   "gain_seed2": 0.02526769056605671
-  }
- ],
- "weighted_before": 27.111466026312588,
- "weighted_after": 26.408288333364872,
+ "changes": [],
+ "weighted_before": 24.435533781390987,
+ "weighted_after": 24.435533781390987,
  "per_level": {
   "20": {
-   "before": 20.798666666537564,
-   "after": 20.798666666537564,
+   "before": 17.99909999990585,
+   "after": 17.99909999990585,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 24.09528038928896,
-   "after": 23.8534333332586,
+   "before": 20.408366666542285,
+   "after": 20.408366666542285,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.098993641466116,
-   "after": 25.47716666665401,
+   "before": 23.208099999903933,
+   "after": 23.208099999903933,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.438957757336205,
-   "after": 26.57233333336129,
+   "before": 25.145755125599077,
+   "after": 25.145755125599077,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.125897112127372,
-   "after": 30.039633333504,
+   "before": 28.821033333461678,
+   "after": 28.821033333461678,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

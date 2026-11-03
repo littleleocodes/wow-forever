@@ -637,9 +637,37 @@
         {"talent": "Reverberation", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 12/31/8; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-st)."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 12/31/8; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-st).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the enhancement-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 26.4 s per kill; own tree first 26.7 s; own tree last 28.8 s."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
+      "sources": ["https://warcraftforever.games/talents/shaman"],
+      "order": [
+        {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "15-17", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "18-19", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
+        {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "21", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+        {"levels": "22-23", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "24", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+        {"levels": "26-27", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "28-31", "tree": "Restoration", "talent": "Tidal Focus", "points": 4},
+        {"levels": "32-33", "tree": "Enhancement", "talent": "Flurry", "points": 2},
+        {"levels": "34-35", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+        {"levels": "36", "tree": "Restoration", "talent": "Tidal Focus", "points": 1},
+        {"levels": "37", "tree": "Restoration", "talent": "Mindfulness", "points": 1},
+        {"levels": "38", "tree": "Enhancement", "talent": "Flurry", "points": 1},
+        {"levels": "39-40", "tree": "Restoration", "talent": "Mindfulness", "points": 2},
+        {"levels": "41-42", "tree": "Enhancement", "talent": "Flurry", "points": 2},
+        {"levels": "43-47", "tree": "Elemental", "talent": "Concussion", "points": 5},
+        {"levels": "48-52", "tree": "Elemental", "talent": "Reverberation", "points": 5},
+        {"levels": "53", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "54", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "55-57", "tree": "Enhancement", "talent": "Anticipation", "points": 3},
+        {"levels": "58", "tree": "Enhancement", "talent": "Maelstrom Weapon", "points": 1},
+        {"levels": "59", "tree": "Enhancement", "talent": "Rage of the Farseer", "points": 1},
+        {"levels": "60", "tree": "Elemental", "talent": "Call of Flame", "points": 1}
+      ],
+      "order_label": "stats model"
     },
     {
       "id": "opt-enhancement-dps-solo-60",
@@ -778,9 +806,32 @@
         {"talent": "Flurry", "why": "Removing it costs 1.1 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r9 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (54.1s vs 60.2s per kill, level-weighted).", "Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe)."],
+      "notes": ["Allocation and order taken from cand-aoe-r9 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (54.1s vs 60.2s per kill, level-weighted).", "Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
+      "sources": ["https://warcraftforever.games/talents/shaman"],
+      "order": [
+        {"levels": "10-14", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "15-17", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
+        {"levels": "18-22", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "23-25", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "26-28", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 3},
+        {"levels": "29-31", "tree": "Enhancement", "talent": "Anticipation", "points": 3},
+        {"levels": "32", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "33", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+        {"levels": "34-35", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "36-37", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "38-39", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+        {"levels": "40-41", "tree": "Elemental", "talent": "Concussion", "points": 2},
+        {"levels": "42", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "43-45", "tree": "Elemental", "talent": "Elemental Warding", "points": 3},
+        {"levels": "46", "tree": "Elemental", "talent": "Concussion", "points": 1},
+        {"levels": "47-48", "tree": "Elemental", "talent": "Trial by Fire", "points": 2},
+        {"levels": "49-51", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "52-54", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "55-56", "tree": "Elemental", "talent": "Concussion", "points": 2},
+        {"levels": "57-60", "tree": "Elemental", "talent": "Elemental Fury", "points": 4}
+      ],
+      "order_label": "stats model"
     },
     {
       "id": "opt-elemental-dps-leveling-st",
@@ -827,9 +878,35 @@
         {"talent": "Shamanistic Focus", "why": "Removing it costs 1.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st)."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the elemental-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 30.1 s per kill; own tree first 30.8 s; own tree last 30.6 s."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
+      "sources": ["https://warcraftforever.games/talents/shaman"],
+      "order": [
+        {"levels": "10-14", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+        {"levels": "15-17", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+        {"levels": "18-22", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "23-25", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "26-27", "tree": "Elemental", "talent": "Call of Flame", "points": 2},
+        {"levels": "28", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "29", "tree": "Elemental", "talent": "Call of Flame", "points": 1},
+        {"levels": "30-34", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "35-36", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "37-38", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 2},
+        {"levels": "39", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 1},
+        {"levels": "40", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "41-43", "tree": "Enhancement", "talent": "Anticipation", "points": 3},
+        {"levels": "44", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 1},
+        {"levels": "45-46", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "47-49", "tree": "Elemental", "talent": "Concussion", "points": 3},
+        {"levels": "50", "tree": "Elemental", "talent": "Earthbound", "points": 1},
+        {"levels": "51-52", "tree": "Elemental", "talent": "Concussion", "points": 2},
+        {"levels": "53-54", "tree": "Elemental", "talent": "Eye of the Storm", "points": 2},
+        {"levels": "55", "tree": "Elemental", "talent": "Call of Thunder", "points": 1},
+        {"levels": "56-58", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "59", "tree": "Elemental", "talent": "Eye of the Storm", "points": 1},
+        {"levels": "60", "tree": "Elemental", "talent": "Elemental Fury", "points": 1}
+      ],
+      "order_label": "stats model"
     },
     {
       "id": "restoration-leveling",
@@ -1187,49 +1264,75 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Elemental/Enhancement",
-      "generated": "2026-11-02",
+      "generated": "2026-11-03",
       "derived": "leveling",
-      "summary": "The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +5.0% faster per kill than opt-elemental-dps-leveling-st, the fastest of our leveling builds in that race.",
+      "summary": "The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +0.3% faster per kill than elemental-open-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Elemental": [
           ["Convection", 5],
-          ["Call of Flame", 2],
+          ["Concussion", 2],
+          ["Reverberation", 3],
           ["Elemental Alacrity", 3],
-          ["Elemental Devastation", 1],
-          ["Reverberation", 4],
+          ["Call of Flame", 3],
           ["Elemental Focus", 1],
           ["Eye of the Storm", 3],
-          ["Trial by Fire", 2]
+          ["Elemental Reach", 1],
+          ["Call of Thunder", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Fury", 1]
         ],
         "Enhancement": [
-          ["Ancestral Knowledge", 4],
           ["Thundering Strikes", 5],
-          ["Improved Lightning Shield", 3],
+          ["Ancestral Knowledge", 4],
           ["Mental Dexterity", 3],
-          ["Anticipation", 2],
-          ["Elemental Weapons", 2],
+          ["Improved Lightning Shield", 3],
           ["Shamanistic Focus", 1],
+          ["Toughness", 4],
           ["Mental Quickness", 2]
         ],
         "Restoration": [
-          ["Tidal Focus", 5],
-          ["Mindfulness", 3]
+          ["Tidal Focus", 3]
         ]
       },
+      "order": [
+        {"levels": "10-14", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "15-17", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "18-19", "tree": "Elemental", "talent": "Call of Flame", "points": 2},
+        {"levels": "20", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "21-23", "tree": "Restoration", "talent": "Tidal Focus", "points": 3},
+        {"levels": "24", "tree": "Elemental", "talent": "Call of Flame", "points": 1},
+        {"levels": "25-29", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "30", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 1},
+        {"levels": "31-34", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 4},
+        {"levels": "35", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "36-37", "tree": "Elemental", "talent": "Concussion", "points": 2},
+        {"levels": "38", "tree": "Elemental", "talent": "Reverberation", "points": 1},
+        {"levels": "39-41", "tree": "Elemental", "talent": "Eye of the Storm", "points": 3},
+        {"levels": "42-43", "tree": "Elemental", "talent": "Reverberation", "points": 2},
+        {"levels": "44", "tree": "Elemental", "talent": "Call of Thunder", "points": 1},
+        {"levels": "45-47", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "48-49", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 2},
+        {"levels": "50-51", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
+        {"levels": "52-55", "tree": "Enhancement", "talent": "Toughness", "points": 4},
+        {"levels": "56", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+        {"levels": "57-58", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+        {"levels": "59", "tree": "Elemental", "talent": "Elemental Reach", "points": 1},
+        {"levels": "60", "tree": "Elemental", "talent": "Elemental Fury", "points": 1}
+      ],
       "core": [
-        {"talent": "Shamanistic Focus", "why": "+3.9 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mental Quickness", "why": "+2.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Elemental Alacrity", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Convection", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mindfulness", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Tidal Focus", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Elemental Focus", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Eye of the Storm", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Shamanistic Focus", "why": "+3.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mental Quickness", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Lightning Overload", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Alacrity", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Convection", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Focus", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Eye of the Storm", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Reverberation", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.88; opt-elemental-dps-leveling-st 36.61. The search simulated 48,676 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 21/22/8 -> 21/22/8; Lava Burst 1 gone; +1 Reverberation (back into Elemental); order dropped (order_repair.py) (refill: the enhancement-dps model, leveling-st)."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.48; elemental-open-leveling 29.57. The search simulated 47,381 builds.", "The spec's other leveling builds on the pages: opt-elemental-dps-leveling-st 30.08 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Elemental-Enhancement leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/5013321023001-054030321200002-053-7"]
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/520333100301131-054033010400002-03-7"]
     },
     {
       "id": "enhancement-open-leveling",
@@ -1238,24 +1341,23 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Enhancement",
-      "generated": "2026-11-02",
+      "generated": "2026-11-03",
       "derived": "leveling",
-      "summary": "The Enhancement leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). ",
+      "summary": "The Enhancement leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). ",
       "allocation": {
         "Elemental": [
           ["Convection", 5],
-          ["Concussion", 3],
-          ["Elemental Devastation", 2],
-          ["Reverberation", 2],
-          ["Elemental Focus", 1]
+          ["Concussion", 5],
+          ["Elemental Focus", 1],
+          ["Elemental Warding", 1]
         ],
         "Enhancement": [
           ["Thundering Strikes", 5],
-          ["Guardian Totems", 1],
           ["Mental Dexterity", 3],
           ["Improved Lightning Shield", 3],
           ["Elemental Weapons", 2],
           ["Shamanistic Focus", 1],
+          ["Anticipation", 1],
           ["Flurry", 5],
           ["Stormstrike", 1],
           ["Spirit Weapons", 1],
@@ -1266,7 +1368,7 @@
         ],
         "Restoration": [
           ["Tidal Focus", 5],
-          ["Totemic Focus", 1]
+          ["Totemic Focus", 2]
         ]
       },
       "order": [
@@ -1275,7 +1377,7 @@
         {"levels": "18-19", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
         {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
         {"levels": "21", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
-        {"levels": "22", "tree": "Enhancement", "talent": "Guardian Totems", "points": 1},
+        {"levels": "22", "tree": "Enhancement", "talent": "Anticipation", "points": 1},
         {"levels": "23-24", "tree": "Enhancement", "talent": "Elemental Weapons", "points": 2},
         {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
         {"levels": "26-29", "tree": "Enhancement", "talent": "Flurry", "points": 4},
@@ -1287,29 +1389,26 @@
         {"levels": "40", "tree": "Enhancement", "talent": "Rage of the Farseer", "points": 1},
         {"levels": "41", "tree": "Enhancement", "talent": "Improved Stormstrike", "points": 1},
         {"levels": "42-46", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
-        {"levels": "47-49", "tree": "Elemental", "talent": "Concussion", "points": 3},
-        {"levels": "50-51", "tree": "Elemental", "talent": "Convection", "points": 2},
-        {"levels": "52-53", "tree": "Elemental", "talent": "Reverberation", "points": 2},
-        {"levels": "54-55", "tree": "Elemental", "talent": "Elemental Devastation", "points": 2},
-        {"levels": "56", "tree": "Elemental", "talent": "Convection", "points": 1},
+        {"levels": "47-51", "tree": "Elemental", "talent": "Concussion", "points": 5},
+        {"levels": "52-56", "tree": "Elemental", "talent": "Convection", "points": 5},
         {"levels": "57", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
-        {"levels": "58", "tree": "Restoration", "talent": "Totemic Focus", "points": 1},
-        {"levels": "59-60", "tree": "Elemental", "talent": "Convection", "points": 2}
+        {"levels": "58", "tree": "Elemental", "talent": "Elemental Warding", "points": 1},
+        {"levels": "59-60", "tree": "Restoration", "talent": "Totemic Focus", "points": 2}
       ],
       "core": [
-        {"talent": "Stormstrike", "why": "+4.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Shamanistic Focus", "why": "+4.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Tidal Focus", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Stormstrike", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Maelstrom Weapon", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Thundering Strikes", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mental Dexterity", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Flurry", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Stormstrike", "why": "+3.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shamanistic Focus", "why": "+3.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Maelstrom Weapon", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mental Dexterity", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Tidal Focus", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Stormstrike", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Thundering Strikes", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Flurry", "why": "+0.3 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+1.4% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.49; leveling-enhancement 30.91, opt-enhancement-dps-leveling-st 31.50, opt-enhancement-dps-solo-60 31.50, restoration-leveling 44.02. The search simulated 47,051 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["+1.7% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.99; leveling-enhancement 25.41, opt-enhancement-dps-leveling-st 26.35, opt-enhancement-dps-solo-60 26.35, restoration-leveling 37.81. The search simulated 40,377 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Enhancement leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/5322001-050130321005112251-05001-7"],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-7"],
       "replaces": "leveling-enhancement"
     },
     {
@@ -1319,50 +1418,68 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Elemental",
-      "generated": "2026-11-02",
+      "generated": "2026-11-03",
       "derived": "leveling",
-      "summary": "The Elemental leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +2.1% faster per kill than opt-elemental-dps-leveling-st, the fastest of our leveling builds in that race.",
+      "summary": "The Elemental leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +2.0% faster per kill than elemental-open-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Elemental": [
-          ["Concussion", 3],
           ["Convection", 5],
-          ["Call of Flame", 3],
-          ["Elemental Alacrity", 3],
+          ["Concussion", 4],
           ["Reverberation", 3],
+          ["Elemental Alacrity", 3],
+          ["Call of Flame", 2],
           ["Elemental Focus", 1],
           ["Eye of the Storm", 3],
-          ["Elemental Reach", 1],
+          ["Elemental Reach", 2],
+          ["Call of Thunder", 1],
           ["Lightning Overload", 3],
-          ["Elemental Fury", 1]
+          ["Elemental Fury", 5]
         ],
         "Enhancement": [
           ["Thundering Strikes", 5],
-          ["Guardian Totems", 2],
-          ["Improved Lightning Shield", 1],
+          ["Ancestral Knowledge", 2],
           ["Mental Dexterity", 3],
-          ["Anticipation", 3],
-          ["Shamanistic Focus", 1],
-          ["Improved Ghost Wolf", 2]
+          ["Shamanistic Focus", 1]
         ],
         "Restoration": [
           ["Tidal Focus", 5],
           ["Mindfulness", 3]
         ]
       },
+      "order": [
+        {"levels": "10-14", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+        {"levels": "15-17", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+        {"levels": "18-22", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "23-24", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 2},
+        {"levels": "25-27", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "28", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "29-33", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "34-36", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "37-38", "tree": "Elemental", "talent": "Call of Flame", "points": 2},
+        {"levels": "39", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "40-43", "tree": "Elemental", "talent": "Concussion", "points": 4},
+        {"levels": "44-46", "tree": "Elemental", "talent": "Eye of the Storm", "points": 3},
+        {"levels": "47-48", "tree": "Elemental", "talent": "Reverberation", "points": 2},
+        {"levels": "49", "tree": "Elemental", "talent": "Call of Thunder", "points": 1},
+        {"levels": "50-52", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "53", "tree": "Elemental", "talent": "Reverberation", "points": 1},
+        {"levels": "54-58", "tree": "Elemental", "talent": "Elemental Fury", "points": 5},
+        {"levels": "59-60", "tree": "Elemental", "talent": "Elemental Reach", "points": 2}
+      ],
       "core": [
-        {"talent": "Shamanistic Focus", "why": "+4.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Elemental Alacrity", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mindfulness", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Convection", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Tidal Focus", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Thundering Strikes", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Call of Flame", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Elemental Focus", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Shamanistic Focus", "why": "+3.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Alacrity", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Lightning Overload", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Elemental Fury", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Convection", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Thundering Strikes", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mindfulness", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Tidal Focus", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.87; opt-elemental-dps-leveling-st 36.61. The search simulated 24,342 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; +1 Guardian Totems (tier gating for Shamanistic Focus); +1 Guardian Totems (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st)."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.99; elemental-open-leveling 29.57. The search simulated 26,225 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Elemental leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/530333100301135-050032101-053-7"]
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/540332100302135-05203001-053-7"]
     }
   ]
 }

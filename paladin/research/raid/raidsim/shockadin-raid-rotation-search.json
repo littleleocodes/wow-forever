@@ -2,25 +2,20 @@
  "raid": {
   "class": "paladin",
   "spec": "shockadin-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-03",
+  "commit": "d97252f2a",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/paladin/retribution/apls/holy_shock.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-holy_shock.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\holy_shock.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "15125110220021--3323301102130033"
-   },
-   {
     "label": "shockadin-open-raid",
-    "talents": "35023210220021--1523330100130033",
-    "protect_only": true
+    "talents": "15025210220021--4523300100130033"
    }
   ],
   "tuned_on": [
-   "open winner"
+   "shockadin-open-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -44,19 +39,10 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 783.9483859210164,
-     "after": 796.3666675005933,
-     "base": 783.9483859210164,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0009079999974499999,
-     "oom_after": 0.0009079999974499999
-    },
     "shockadin-open-raid": {
-     "before": 772.4286154944599,
-     "after": 784.4925071391141,
-     "base": 772.4286154944599,
+     "before": 825.6169308577929,
+     "after": 839.1058557342442,
+     "base": 825.6169308577929,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -72,13 +58,13 @@
     "Holy Shock"
    ],
    "rejected": {
-    "structure": 52,
+    "structure": 15,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-31",
-  "passes": 2
+  "passes": 3
  }
 }

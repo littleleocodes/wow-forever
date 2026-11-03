@@ -194,8 +194,8 @@
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-31",
-  "commit": "54ceac638",
+  "date": "2026-11-03",
+  "commit": "5ad0894c9",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
@@ -203,7 +203,7 @@
   "builds": [
    {
     "label": "arcane-open-raid",
-    "talents": "203205203100311531-555000001-003"
+    "talents": "023205203100211531-554000011001-003"
    },
    {
     "label": "sim preset: Arcane Fire",
@@ -437,36 +437,52 @@
     "gain_seed2": 0.01894068504783397,
     "candidates": 446,
     "pass": 12
+   },
+   {
+    "round": 28,
+    "change": "drop the condition: if time left in the fight \u2265 40s: cast Fire Blast",
+    "gain_seed1": 0.005391388598717128,
+    "gain_seed2": 0.005442201269613145,
+    "candidates": 475,
+    "pass": 13
+   },
+   {
+    "round": 29,
+    "change": "drop: cast Mana Citrine",
+    "gain_seed1": 0.0037057918182674676,
+    "gain_seed2": 0.001775507178676472,
+    "candidates": 465,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
     "arcane-open-raid": {
-     "before": 734.0645356767167,
-     "after": 720.9455952318061,
-     "base": 734.0645356767167,
+     "before": 733.6670842086451,
+     "after": 754.5110038137095,
+     "base": 733.6670842086451,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.49038250000080164,
-     "oom_after": 0.49038250000080164
+     "oom_before": 0.31982750000075005,
+     "oom_after": 0.15098000000024983
     },
     "sim preset: Arcane Fire": {
-     "before": 716.9466111484942,
-     "after": 726.1966980481756,
-     "base": 716.9466111484942,
+     "before": 722.1483038515742,
+     "after": 741.5252181823274,
+     "base": 722.1483038515742,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2426799999990499,
-     "oom_after": 0.21801999999944993
+     "oom_before": 0.06395000000024993,
+     "oom_after": 0.029747500000249994
     },
     "arcane-blast-raid": {
-     "before": 576.8595531590505,
-     "after": 658.1910185601139,
-     "base": 576.8595531590505,
+     "before": 612.6294132601387,
+     "after": 681.7282458081323,
+     "base": 612.6294132601387,
      "before_value": null,
      "after_value": null,
-     "oom_before": 9.012659999985376,
-     "oom_after": 9.012659999985376
+     "oom_before": 4.2322225000026945,
+     "oom_after": 3.1056325000108864
     }
    }
   },
@@ -478,13 +494,13 @@
     "Arcane Blast"
    ],
    "rejected": {
-    "structure": 77,
+    "structure": 117,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

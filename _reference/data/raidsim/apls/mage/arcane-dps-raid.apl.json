@@ -236,19 +236,6 @@
      "spellId": {
       "spellId": 10199
      }
-    },
-    "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "remainingTime": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "40s"
-       }
-      }
-     }
     }
    },
    "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
@@ -323,16 +310,6 @@
     }
    },
    "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "itemId": 8007
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
   }
  ]
 }

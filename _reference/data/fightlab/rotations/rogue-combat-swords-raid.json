@@ -6,10 +6,10 @@
   "Slice and Dice": {
    "off": true
   },
-  "Kidney Shot": {
+  "Kick": {
    "off": true
   },
-  "Kick": {
+  "Kidney Shot": {
    "off": true
   }
  },
@@ -24,13 +24,13 @@
   50,
   60
  ],
- "date": "2026-10-23",
+ "date": "2026-11-03",
  "signature": {
   "required": [],
   "build_spec": "Assassination",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7412198222822708,
-  "core_share_after": 0.6427522216839067,
+  "core_share_before": 0.7193143041350272,
+  "core_share_after": 0.636317216631504,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -45,84 +45,84 @@
     "Cheap Shot",
     true
    ],
-   "gain_seed1": 0.07888079145108562,
-   "gain_seed2": 0.07836696282127886
+   "gain_seed1": 0.06648191272335224,
+   "gain_seed2": 0.05897036962718927
   },
   {
    "round": 2,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.05293450402196076,
-   "gain_seed2": 0.04648312197567539
-  },
-  {
-   "round": 3,
    "change": "never cast Slice and Dice",
    "rule": [
     "off",
     "Slice and Dice",
     true
    ],
-   "gain_seed1": 0.008580964363007038,
-   "gain_seed2": 0.014583308817201268
+   "gain_seed1": 0.044521016478027864,
+   "gain_seed2": 0.04689622894806289
+  },
+  {
+   "round": 3,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.04523147836371488,
+   "gain_seed2": 0.042138718825625365
   },
   {
    "round": 4,
-   "change": "never cast Kidney Shot",
-   "rule": [
-    "off",
-    "Kidney Shot",
-    true
-   ],
-   "gain_seed1": 0.014781567056848188,
-   "gain_seed2": 0.013430608565260127
-  },
-  {
-   "round": 5,
    "change": "never cast Kick",
    "rule": [
     "off",
     "Kick",
     true
    ],
-   "gain_seed1": 0.00446279634153135,
-   "gain_seed2": 0.008206957667655002
+   "gain_seed1": 0.005255488058203861,
+   "gain_seed2": 0.012722421934291406
+  },
+  {
+   "round": 5,
+   "change": "never cast Kidney Shot",
+   "rule": [
+    "off",
+    "Kidney Shot",
+    true
+   ],
+   "gain_seed1": 0.008892413832372492,
+   "gain_seed2": 0.007698261715310628
   }
  ],
- "weighted_before": 30.281676301561863,
- "weighted_after": 25.649040325815992,
+ "weighted_before": 25.591810922414737,
+ "weighted_after": 21.56670166658592,
  "per_level": {
   "20": {
-   "before": 18.887253911018362,
-   "after": 18.435066666567934,
+   "before": 15.825833333264997,
+   "after": 15.06466666660728,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 26.597215391240862,
-   "after": 22.270353729119957,
+   "before": 20.93698464665052,
+   "after": 17.624999999911726,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 32.581998546932404,
-   "after": 26.923433333372497,
+   "before": 26.600911786221612,
+   "after": 21.422399999872145,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.663296843099666,
-   "after": 27.303655732393192,
+   "before": 27.382901639151722,
+   "after": 22.94529999990353,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 32.40381560537501,
-   "after": 27.514600000061353,
+   "before": 29.00924041686135,
+   "after": 24.652266666627064,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

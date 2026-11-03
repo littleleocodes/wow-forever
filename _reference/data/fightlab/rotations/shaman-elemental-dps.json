@@ -11,7 +11,18 @@
   50,
   60
  ],
- "date": "2026-10-20",
+ "date": "2026-11-03",
+ "signature": {
+  "required": [
+   "Lightning Bolt"
+  ],
+  "build_spec": "Hybrid Elemental/Enhancement",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.799021098629068,
+  "core_share_after": 0.7951309973351677,
+  "min_share": 0.5,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -23,8 +34,8 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.009665525963754917,
-   "gain_seed2": 0.0061224835198663285
+   "gain_seed1": 0.007675986221402753,
+   "gain_seed2": 0.008180425181193551
   },
   {
    "round": 2,
@@ -34,42 +45,42 @@
     null,
     0.8
    ],
-   "gain_seed1": 0.005926977049322324,
-   "gain_seed2": 0.005801690901052314
+   "gain_seed1": 0.006064610591802855,
+   "gain_seed2": 0.0047949845358418175
   }
  ],
- "weighted_before": 37.642234061642235,
- "weighted_after": 37.19058421199385,
+ "weighted_before": 27.643687203596716,
+ "weighted_after": 27.296590982375044,
  "per_level": {
   "20": {
-   "before": 29.912597889371998,
-   "after": 29.617179643522707,
+   "before": 19.206247235213613,
+   "after": 19.091821844552747,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 37.08924347493585,
-   "after": 36.73390821729008,
+   "before": 25.2734395735698,
+   "after": 25.121706005592316,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 39.20550688174575,
-   "after": 38.46451234116905,
+   "before": 28.72674492637675,
+   "after": 28.35336494230215,
    "deaths_before": 0.0,
-   "deaths_after": 0.03333333333333333
+   "deaths_after": 0.0
   },
   "50": {
-   "before": 39.2576204183921,
-   "after": 38.8647277797615,
+   "before": 29.24798741177615,
+   "after": 28.763139872128928,
    "deaths_before": 0.0,
-   "deaths_after": 0.06666666666666667
+   "deaths_after": 0.0
   },
   "60": {
-   "before": 38.106937568391594,
-   "after": 37.698985339579615,
+   "before": 29.58233568606832,
+   "after": 29.192316468627535,
    "deaths_before": 0.0,
-   "deaths_after": 0.13333333333333333
+   "deaths_after": 0.0
   }
  }
 }

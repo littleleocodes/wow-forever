@@ -193,26 +193,20 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-03",
+  "commit": "5ad0894c9",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "2302052001002-54500001230133031-003"
-   },
-   {
     "label": "fire-open-raid",
-    "talents": "2032152000002-55500001220133031-003",
-    "protect_only": true
+    "talents": "2032052001002-54500001230133031-003"
    },
    {
     "label": "sim preset: Fire",
-    "talents": "0502052001001-55500001230133031-003",
-    "protect_only": true
+    "talents": "0502052001001-55500001230133031-003"
    },
    {
     "label": "fire-raid",
@@ -226,7 +220,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "fire-open-raid",
+   "sim preset: Fire"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -471,50 +466,49 @@
     "gain_seed2": 0.0032702500561589964,
     "candidates": 374,
     "pass": 13
+   },
+   {
+    "round": 31,
+    "change": "threshold 4 -> 2: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch",
+    "gain_seed1": 0.0019302459779726444,
+    "gain_seed2": 0.0018098100139312123,
+    "candidates": 381,
+    "pass": 14
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 671.9651980993441,
-     "after": 827.8486454552695,
-     "base": 671.9651980993441,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "fire-open-raid": {
-     "before": 667.0523532405111,
-     "after": 811.8988112390582,
-     "base": 667.0523532405111,
+     "before": 671.5560652151919,
+     "after": 829.961703148458,
+     "base": 671.5560652151919,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Fire": {
-     "before": 673.8916206055268,
-     "after": 822.6951935667613,
-     "base": 673.8916206055268,
+     "before": 673.1241282928893,
+     "after": 827.3160554263801,
+     "base": 673.1241282928893,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0010550000000000002,
+     "oom_before": 0,
      "oom_after": 0
     },
     "fire-raid": {
-     "before": 665.6584884192213,
-     "after": 796.9742304869297,
-     "base": 665.6584884192213,
+     "before": 664.6031177247792,
+     "after": 798.7286082552408,
+     "base": 664.6031177247792,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0016575,
-     "oom_after": 0.0006525
+     "oom_before": 0.0009125,
+     "oom_after": 0.0008399999999999998
     },
     "opt-fire-raid-raid-dps": {
-     "before": 655.9982536736899,
-     "after": 794.4298417168426,
-     "base": 655.9982536736899,
+     "before": 655.6635879620308,
+     "after": 794.9603702358046,
+     "base": 655.6635879620308,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -538,6 +532,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 13
+  "passes": 14
  }
 }
