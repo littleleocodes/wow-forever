@@ -4,17 +4,17 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| sim preset: MM | - | 434 | 457 | 919 | 919 | 940 |
-| `opt-mm-lonewolf-raid-raid-dps` | 7/41/3 | 428 | 452 | 854 | 854 | 882 |
-| `mm-lone-wolf-raid` | 5/41/5 | 426 | 449 | 921 | 921 | 947 |
-| `opt-mm-lonewolf-raid-parse` | 5/37/9 | 410 | 433 | 858 | 883 | 900 |
-| sim preset: SV | - | 388 | 408 | 769 | 769 | 794 |
-| sim preset: SV Weave | - | 385 | 406 | 761 | 761 | 789 |
-| sim preset: MM Weave | - | 369 | 391 | 773 | 773 | 795 |
-| `marksmanship-ml-raid` | 7/39/5 | 363 | 383 | 753 | 753 | 771 |
-| sim preset: BM Weave | - | 276 | 292 | 582 | 582 | 601 |
-| sim preset: BM | - | 265 | 280 | 588 | 588 | 617 |
-| sim preset: SV Melee | - | 239 | 253 | 547 | 564 | 584 |
+| sim preset: MM | - | 462 | 487 | 991 | 991 | 1011 |
+| `opt-mm-lonewolf-raid-raid-dps` | 7/41/3 | 455 | 479 | 927 | 927 | 955 |
+| `mm-lone-wolf-raid` | 5/41/5 | 454 | 479 | 984 | 984 | 1019 |
+| `opt-mm-lonewolf-raid-parse` | 5/37/9 | 437 | 460 | 913 | 940 | 963 |
+| sim preset: SV | - | 411 | 433 | 825 | 825 | 850 |
+| sim preset: SV Weave | - | 407 | 429 | 817 | 817 | 836 |
+| sim preset: MM Weave | - | 393 | 415 | 828 | 828 | 873 |
+| `marksmanship-ml-raid` | 7/39/5 | 388 | 409 | 814 | 814 | 831 |
+| sim preset: BM Weave | - | 298 | 315 | 631 | 631 | 658 |
+| sim preset: BM | - | 288 | 304 | 641 | 641 | 670 |
+| sim preset: SV Melee | - | 261 | 275 | 595 | 613 | 644 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -28,17 +28,17 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| sim preset: MM | 434 | +33% | +27% | +6% | +10% | +36% | 919 |
-| `opt-mm-lonewolf-raid-raid-dps` | 428 | +24% | +28% | +6% | +8% | +34% | 854 |
-| `mm-lone-wolf-raid` | 426 | +33% | +27% | +6% | +12% | +38% | 921 |
-| `opt-mm-lonewolf-raid-parse` | 410 | +33% | +27% | +6% | +12% | +31% | 858 |
-| sim preset: SV | 388 | +30% | +28% | +6% | +11% | +23% | 769 |
-| sim preset: SV Weave | 385 | +30% | +28% | +7% | +11% | +23% | 761 |
-| sim preset: MM Weave | 369 | +30% | +27% | +6% | +13% | +34% | 773 |
-| `marksmanship-ml-raid` | 363 | +31% | +26% | +6% | +9% | +35% | 753 |
-| sim preset: BM Weave | 276 | +26% | +38% | +9% | +6% | +33% | 582 |
-| sim preset: BM | 265 | +27% | +39% | +9% | +7% | +39% | 588 |
-| sim preset: SV Melee | 239 | +24% | +40% | +9% | +9% | +46% | 547 |
+| sim preset: MM | 462 | +31% | +28% | +6% | +9% | +40% | 991 |
+| `opt-mm-lonewolf-raid-raid-dps` | 455 | +24% | +29% | +6% | +7% | +37% | 927 |
+| `mm-lone-wolf-raid` | 454 | +32% | +28% | +6% | +11% | +39% | 984 |
+| `opt-mm-lonewolf-raid-parse` | 437 | +32% | +28% | +6% | +11% | +31% | 913 |
+| sim preset: SV | 411 | +30% | +29% | +6% | +10% | +25% | 825 |
+| sim preset: SV Weave | 407 | +30% | +29% | +6% | +10% | +26% | 817 |
+| sim preset: MM Weave | 393 | +31% | +28% | +7% | +12% | +33% | 828 |
+| `marksmanship-ml-raid` | 388 | +28% | +27% | +6% | +8% | +39% | 814 |
+| sim preset: BM Weave | 298 | +25% | +39% | +9% | +5% | +32% | 631 |
+| sim preset: BM | 288 | +27% | +40% | +9% | +7% | +40% | 641 |
+| sim preset: SV Melee | 261 | +25% | +41% | +10% | +8% | +44% | 595 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -48,17 +48,17 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| sim preset: MM | 597 | 460 | 434 | 388 | 364 |
-| `opt-mm-lonewolf-raid-raid-dps` | 551 | 463 | 428 | 388 | 363 |
-| `mm-lone-wolf-raid` | 601 | 451 | 426 | 382 | 359 |
-| `opt-mm-lonewolf-raid-parse` | 582 | 434 | 410 | 366 | 346 |
-| sim preset: SV | 532 | 410 | 388 | 348 | 330 |
-| sim preset: SV Weave | 522 | 407 | 385 | 344 | 326 |
-| sim preset: MM Weave | 523 | 394 | 369 | 331 | 313 |
-| `marksmanship-ml-raid` | 491 | 387 | 363 | 326 | 305 |
-| sim preset: BM Weave | 369 | 292 | 276 | 247 | 235 |
-| sim preset: BM | 365 | 279 | 265 | 239 | 228 |
-| sim preset: SV Melee | 342 | 252 | 239 | 217 | 208 |
+| sim preset: MM | 628 | 489 | 462 | 417 | 392 |
+| `opt-mm-lonewolf-raid-raid-dps` | 583 | 490 | 455 | 416 | 391 |
+| `mm-lone-wolf-raid` | 632 | 479 | 454 | 411 | 387 |
+| `opt-mm-lonewolf-raid-parse` | 611 | 461 | 437 | 392 | 373 |
+| sim preset: SV | 573 | 434 | 411 | 372 | 355 |
+| sim preset: SV Weave | 567 | 428 | 407 | 368 | 350 |
+| sim preset: MM Weave | 564 | 414 | 393 | 354 | 337 |
+| `marksmanship-ml-raid` | 516 | 410 | 388 | 350 | 329 |
+| sim preset: BM Weave | 391 | 315 | 298 | 270 | 259 |
+| sim preset: BM | 388 | 303 | 288 | 262 | 252 |
+| sim preset: SV Melee | 363 | 274 | 261 | 238 | 230 |
 
 Gear presets: raid `hunter-dps-p1.p1opt.gear.json`, maximum `hunter-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

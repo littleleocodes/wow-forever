@@ -4,18 +4,18 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 31/16/4 | 437 | 473 | 783 | 783 | 820 |
-| `marksmanship-ml-raid` | 7/39/5 | 437 | 470 | 890 | 890 | 930 |
-| `bm-mm-full-buffs-raid` | 21/30/0 | 428 | 461 | 795 | 795 | 825 |
-| `opt-mm-raid-parse` | 31/15/5 | 423 | 458 | 789 | 808 | 845 |
-| sim preset: MM | - | 417 | 447 | 867 | 867 | 907 |
-| sim preset: BM Weave | - | 392 | 429 | 802 | 802 | 839 |
-| `bm-mm-raid` | 22/29/0 | 389 | 423 | 791 | 791 | 815 |
-| sim preset: BM | - | 382 | 418 | 818 | 818 | 862 |
-| sim preset: SV | - | 381 | 408 | 755 | 755 | 766 |
-| sim preset: SV Weave | - | 379 | 406 | 749 | 749 | 753 |
-| sim preset: MM Weave | - | 364 | 391 | 729 | 729 | 774 |
-| sim preset: SV Melee | - | 322 | 349 | 704 | 723 | 750 |
+| `opt-mm-raid-raid-dps` | 31/16/4 | 530 | 580 | 937 | 937 | 971 |
+| `opt-mm-raid-parse` | 31/15/5 | 515 | 563 | 941 | 963 | 996 |
+| `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1001 | 1001 | 1029 |
+| `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 542 | 916 | 916 | 936 |
+| sim preset: BM Weave | - | 489 | 540 | 956 | 956 | 989 |
+| sim preset: BM | - | 477 | 527 | 982 | 982 | 1025 |
+| sim preset: MM | - | 471 | 508 | 967 | 967 | 994 |
+| `bm-mm-raid` | 22/29/0 | 461 | 506 | 906 | 906 | 928 |
+| sim preset: SV | - | 434 | 468 | 838 | 838 | 861 |
+| sim preset: SV Weave | - | 429 | 464 | 827 | 827 | 856 |
+| sim preset: MM Weave | - | 415 | 450 | 834 | 834 | 869 |
+| sim preset: SV Melee | - | 388 | 425 | 814 | 835 | 855 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -29,18 +29,18 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 437 | +15% | +32% | +7% | +5% | +20% | 783 |
-| `marksmanship-ml-raid` | 437 | +24% | +29% | +7% | +7% | +37% | 890 |
-| `bm-mm-full-buffs-raid` | 428 | +19% | +31% | +7% | +6% | +22% | 795 |
-| `opt-mm-raid-parse` | 423 | +20% | +32% | +7% | +6% | +22% | 789 |
-| sim preset: MM | 417 | +26% | +29% | +8% | +8% | +38% | 867 |
-| sim preset: BM Weave | 392 | +19% | +40% | +10% | +4% | +32% | 802 |
-| `bm-mm-raid` | 389 | +16% | +38% | +10% | +4% | +36% | 791 |
-| sim preset: BM | 382 | +19% | +41% | +10% | +6% | +39% | 818 |
-| sim preset: SV | 381 | +24% | +29% | +8% | +8% | +29% | 755 |
-| sim preset: SV Weave | 379 | +23% | +29% | +7% | +8% | +31% | 749 |
-| sim preset: MM Weave | 364 | +26% | +29% | +8% | +10% | +28% | 729 |
-| sim preset: SV Melee | 322 | +20% | +41% | +10% | +7% | +41% | 704 |
+| `opt-mm-raid-raid-dps` | 530 | +13% | +34% | +7% | +5% | +18% | 937 |
+| `opt-mm-raid-parse` | 515 | +17% | +34% | +7% | +5% | +19% | 941 |
+| `marksmanship-ml-raid` | 501 | +21% | +30% | +8% | +7% | +35% | 1001 |
+| `bm-mm-full-buffs-raid` | 499 | +17% | +33% | +8% | +5% | +20% | 916 |
+| sim preset: BM Weave | 489 | +16% | +41% | +9% | +4% | +26% | 956 |
+| sim preset: BM | 477 | +17% | +41% | +10% | +5% | +33% | 982 |
+| sim preset: MM | 471 | +24% | +31% | +8% | +7% | +36% | 967 |
+| `bm-mm-raid` | 461 | +14% | +39% | +10% | +4% | +30% | 906 |
+| sim preset: SV | 434 | +23% | +32% | +8% | +7% | +24% | 838 |
+| sim preset: SV Weave | 429 | +23% | +32% | +8% | +7% | +23% | 827 |
+| sim preset: MM Weave | 415 | +25% | +31% | +8% | +9% | +28% | 834 |
+| sim preset: SV Melee | 388 | +18% | +42% | +10% | +6% | +34% | 814 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -50,18 +50,18 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 519 | 457 | 437 | 405 | 391 |
-| `marksmanship-ml-raid` | 557 | 463 | 437 | 400 | 379 |
-| `bm-mm-full-buffs-raid` | 521 | 456 | 428 | 398 | 381 |
-| `opt-mm-raid-parse` | 523 | 440 | 423 | 390 | 376 |
-| sim preset: MM | 541 | 439 | 417 | 379 | 359 |
-| sim preset: BM Weave | 490 | 408 | 392 | 362 | 351 |
-| `bm-mm-raid` | 473 | 416 | 389 | 362 | 347 |
-| sim preset: BM | 488 | 395 | 382 | 354 | 343 |
-| sim preset: SV | 496 | 401 | 381 | 348 | 333 |
-| sim preset: SV Weave | 492 | 398 | 379 | 344 | 330 |
-| sim preset: MM Weave | 490 | 385 | 364 | 332 | 317 |
-| sim preset: SV Melee | 422 | 336 | 322 | 299 | 290 |
+| `opt-mm-raid-raid-dps` | 622 | 548 | 530 | 496 | 482 |
+| `opt-mm-raid-parse` | 625 | 531 | 515 | 481 | 467 |
+| `marksmanship-ml-raid` | 618 | 526 | 501 | 464 | 443 |
+| `bm-mm-full-buffs-raid` | 595 | 526 | 499 | 469 | 453 |
+| sim preset: BM Weave | 598 | 503 | 489 | 457 | 445 |
+| sim preset: BM | 594 | 490 | 477 | 447 | 437 |
+| sim preset: MM | 594 | 495 | 471 | 434 | 414 |
+| `bm-mm-raid` | 547 | 487 | 461 | 434 | 420 |
+| sim preset: SV | 558 | 453 | 434 | 400 | 386 |
+| sim preset: SV Weave | 554 | 447 | 429 | 397 | 382 |
+| sim preset: MM Weave | 547 | 433 | 415 | 383 | 369 |
+| sim preset: SV Melee | 492 | 402 | 388 | 365 | 357 |
 
 Gear presets: raid `hunter-dps-p1.p1opt.gear.json`, maximum `hunter-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

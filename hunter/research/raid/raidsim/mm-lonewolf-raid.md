@@ -4,28 +4,28 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| sim preset: MM | - | 434 | 19 | +0.0% | 444 | 52 | - |
-| `opt-mm-lonewolf-raid-raid-dps` | 7/41/3 | 428 | 19 | -1.3% | 438 | 32 | +78.8% |
-| `mm-lone-wolf-raid` | 5/41/5 | 426 | 19 | -1.7% | 436 | 56 | +74.0% |
-| sim preset: SV | - | 388 | 18 | -10.5% | 398 | 47 | - |
-| sim preset: SV Weave | - | 385 | 18 | -11.3% | 395 | 47 | - |
-| sim preset: MM Weave | - | 369 | 18 | -14.9% | 379 | 54 | - |
-| `marksmanship-ml-raid` | 7/39/5 | 363 | 16 | -16.3% | 373 | 48 | +51.7% |
-| sim preset: BM Weave | - | 276 | 11 | -36.5% | 267 | 35 | - |
-| sim preset: BM | - | 265 | 10 | -38.9% | 257 | 40 | - |
-| sim preset: SV Melee | - | 239 | 10 | -44.8% | 235 | 53 | - |
+| sim preset: MM | - | 462 | 20 | +0.0% | 472 | 52 | - |
+| `opt-mm-lonewolf-raid-raid-dps` | 7/41/3 | 455 | 20 | -1.5% | 465 | 34 | +78.8% |
+| `mm-lone-wolf-raid` | 5/41/5 | 454 | 19 | -1.7% | 465 | 56 | +74.0% |
+| sim preset: SV | - | 411 | 20 | -11.1% | 421 | 47 | - |
+| sim preset: SV Weave | - | 407 | 19 | -12.0% | 417 | 47 | - |
+| sim preset: MM Weave | - | 393 | 18 | -15.0% | 403 | 54 | - |
+| `marksmanship-ml-raid` | 7/39/5 | 388 | 17 | -16.0% | 398 | 48 | +51.7% |
+| sim preset: BM Weave | - | 298 | 12 | -35.4% | 287 | 36 | - |
+| sim preset: BM | - | 288 | 11 | -37.7% | 277 | 42 | - |
+| sim preset: SV Melee | - | 261 | 11 | -43.6% | 254 | 54 | - |
 
 ## Damage shares (`sim preset: MM`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Shot | 42.3% |
-| Arcane Shot | 29.4% |
-| Serpent Sting | 16.6% |
-| Aimed Shot | 11.1% |
-| spell 1295633 | 0.7% |
+| Auto Shot | 45.9% |
+| Arcane Shot | 27.6% |
+| Serpent Sting | 15.6% |
+| Aimed Shot | 10.4% |
+| spell 1295633 | 0.6% |
 
-Mapped onto the spec model's sources: `auto` 43%, `arcane` 30%, `serpent` 17%, `aimed` 11%; 1% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `auto` 46%, `arcane` 28%, `serpent` 16%, `aimed` 10%; 1% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:

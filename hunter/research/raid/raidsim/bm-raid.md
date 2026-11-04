@@ -4,31 +4,31 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `mm-hawk-raid` | 22/29/0 | 402 | 15 | +0.0% | 310 | 28 | - |
-| sim preset: BM | - | 393 | 14 | -2.3% | 266 | 43 | - |
-| `beast-mastery-ml-raid` | 31/20/0 | 387 | 14 | -3.5% | 263 | 43 | - |
-| `beast-marks-ml-raid` | 28/21/2 | 376 | 15 | -6.4% | 266 | 41 | - |
+| sim preset: BM | - | 496 | 14 | +0.0% | 300 | 42 | - |
+| `beast-mastery-ml-raid` | 31/20/0 | 486 | 14 | -2.1% | 292 | 41 | - |
+| `mm-hawk-raid` | 22/29/0 | 476 | 16 | -4.0% | 334 | 28 | - |
+| `beast-marks-ml-raid` | 28/21/2 | 470 | 15 | -5.3% | 298 | 43 | - |
 
-## Damage shares (`mm-hawk-raid`, simulator actions)
+## Damage shares (`sim preset: BM`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Shot | 36.6% |
-| Serpent Sting | 22.5% |
-| Pet: Auto Attack | 21.6% |
-| Arcane Shot | 11.8% |
-| Summon Hawk | 3.1% |
+| Pet: Auto Attack | 37.8% |
+| Auto Shot | 32.8% |
+| Serpent Sting | 12.5% |
+| Arcane Shot | 10.2% |
+| Summon Hawk | 2.4% |
+| Pet: Bite | 2.0% |
 | Pet: Claw | 1.9% |
-| Pet: Bite | 1.9% |
-| spell 1295633 | 0.6% |
+| spell 1295633 | 0.5% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- mm-hawk-raid: `53200005051001-105355000150004`
 - sim preset: BM: `5320001505101251-0052050301-4`
 - beast-mastery-ml-raid: `5320001505101251-00530502005`
+- mm-hawk-raid: `53200005051001-105355000150004`
 - beast-marks-ml-raid: `532000150510123-00530503005-2`
 

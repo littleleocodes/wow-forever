@@ -4,33 +4,33 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 31/16/4 | 437 | 14 | +0.0% | 327 | 37 | +56.0% |
-| `marksmanship-ml-raid` | 7/39/5 | 437 | 17 | -0.0% | 378 | 47 | +45.2% |
-| `bm-mm-full-buffs-raid` | 21/30/0 | 428 | 15 | -2.0% | 351 | 31 | +47.8% |
-| sim preset: MM | - | 417 | 16 | -4.6% | 371 | 50 | - |
-| sim preset: BM Weave | - | 392 | 13 | -10.4% | 263 | 45 | - |
-| `bm-mm-raid` | 22/29/0 | 389 | 13 | -11.1% | 292 | 25 | +49.3% |
-| sim preset: BM | - | 382 | 14 | -12.7% | 253 | 50 | - |
-| sim preset: SV | - | 381 | 16 | -12.7% | 334 | 45 | - |
-| sim preset: SV Weave | - | 379 | 16 | -13.3% | 331 | 45 | - |
-| sim preset: MM Weave | - | 364 | 15 | -16.8% | 317 | 53 | - |
-| sim preset: SV Melee | - | 322 | 10 | -26.4% | 238 | 49 | - |
+| `opt-mm-raid-raid-dps` | 31/16/4 | 530 | 15 | +0.0% | 349 | 38 | +56.0% |
+| `marksmanship-ml-raid` | 7/39/5 | 501 | 17 | -5.4% | 404 | 46 | +45.2% |
+| `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 16 | -5.9% | 372 | 32 | +47.8% |
+| sim preset: BM Weave | - | 489 | 15 | -7.8% | 286 | 46 | - |
+| sim preset: BM | - | 477 | 15 | -10.1% | 275 | 52 | - |
+| sim preset: MM | - | 471 | 16 | -11.1% | 394 | 50 | - |
+| `bm-mm-raid` | 22/29/0 | 461 | 15 | -13.0% | 314 | 26 | +49.3% |
+| sim preset: SV | - | 434 | 17 | -18.2% | 354 | 47 | - |
+| sim preset: SV Weave | - | 429 | 17 | -19.0% | 350 | 47 | - |
+| sim preset: MM Weave | - | 415 | 15 | -21.8% | 337 | 53 | - |
+| sim preset: SV Melee | - | 388 | 12 | -26.8% | 259 | 51 | - |
 
 ## Damage shares (`opt-mm-raid-raid-dps`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Shot | 32.1% |
-| Pet: Auto Attack | 23.2% |
-| Arcane Shot | 20.3% |
-| Serpent Sting | 10.9% |
-| Aimed Shot | 8.0% |
-| Pet: Bite | 2.4% |
-| Pet: Claw | 1.9% |
-| Multi-Shot | 0.6% |
-| spell 1295633 | 0.6% |
+| Pet: Auto Attack | 32.4% |
+| Auto Shot | 30.7% |
+| Arcane Shot | 16.5% |
+| Serpent Sting | 9.0% |
+| Aimed Shot | 6.8% |
+| Pet: Bite | 2.0% |
+| Pet: Claw | 1.7% |
+| Multi-Shot | 0.5% |
+| spell 1295633 | 0.5% |
 
-Mapped onto the spec model's sources: `auto` 32%, `pet` 28%, `arcane` 20%, `serpent` 11%, `aimed` 8%, `multi` 1%; 1% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `pet` 36%, `auto` 31%, `arcane` 17%, `serpent` 9%, `aimed` 7%, `multi` 1%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
@@ -38,10 +38,10 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - opt-mm-raid-raid-dps: `5420001505001251-0050550001-4`
 - marksmanship-ml-raid: `502-0053552501520051-5`
 - bm-mm-full-buffs-raid: `53200005050001-005155000150305`
-- sim preset: MM: `5-0053452511522051-5`
 - sim preset: BM Weave: `5320001505101251-0053250001-4`
-- bm-mm-raid: `53200005041002-005355010150004`
 - sim preset: BM: `5320001505101251-0052050301-4`
+- sim preset: MM: `5-0053452511522051-5`
+- bm-mm-raid: `53200005041002-005355010150004`
 - sim preset: SV: `1-00530501114-52225303000021005`
 - sim preset: SV Weave: `-00530501114-530200230050220151`
 - sim preset: MM Weave: `-205305031150001-5502000300502201`
