@@ -12,10 +12,13 @@
 # A reworked tree: the full raid search (as warrior and shaman). Runs on the fifth checkout ~/.wow-forever-tools/wowsims-forever-r at
 # 6ee3c30f3 (patched bench by repin_rehearsal.py).
 # Resume: the same command (markers deep-runs/r1103/rog-*; family_search resumes from its record without --fresh).
+# 2026-11-04 03:45: moved to ~/.wow-forever-tools/wowsims-forever-z at 92c4c35b9 (shared with the warlock lane): #851 doubled the poisons'
+# attack-power scaling (Instant 0.005 -> 0.01, Deadly 0.0045 -> 0.009 over the ticks) and #854 tuned the default rotation's Vanish line; the
+# races on 6ee3c30f3 (00:52-02:04) were discarded and the rotation search stopped in its second round.
 cd F:/wow-forever || exit 1
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
-export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-r"
+export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-z"
 L=_reference/data/deep-runs
 M=$L/r1103
 mkdir -p $M
@@ -34,9 +37,9 @@ run() {
 }
 fresh() { if [ -e "$M/$1.started" ]; then echo ""; else touch "$M/$1.started"; echo "--fresh"; fi; }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "6ee3c30f3" ] || { say "raid: rogue STOP, the fifth checkout is not at 6ee3c30f3"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "92c4c35b9" ] || { say "raid: rogue STOP, the checkout is not at 92c4c35b9"; exit 1; }
 
-say "raid: rogue start (6ee3c30f3 in wowsims-forever-r)"
+say "raid: rogue start (92c4c35b9 in wowsims-forever-z)"
 for e in $E; do run rog-race-$e $LG race rogue $e; done
 for e in $E; do
   run rog-apl-$e $LG python -u $R/apl_opt.py rogue --spec $e --write --setting raid --rounds 8 --lookahead 0
