@@ -567,8 +567,12 @@ def weighted(per):
 # ------------------------------------------------------------------------------------------------ picking builds
 def level_rotation(cls, b):
     """The fight-lab rotation a leveling build plays on the pages (LEVEL_MODEL after leveling_numbers; the generated record's model; the
-    class pipeline's spec)."""
-    return LEVEL_MODEL.get((cls, b["id"])) or (GEN.get(cls, {}).get(b["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
+    spec's own leveling rotation; the class pipeline's spec). 2026-11-04: a build without a current record had fallen through to the
+    class pipeline's spec, so the priest Holy, Discipline and Smite leveling pages printed the Shadow list and the Frostfire page the
+    Frost one (and the signature audit failed them for never casting Smite or Frostfire Bolt); the own-rotation rule (user, 2026-10-08)
+    says a spec plays its own rotation, so spec_modes.own_leveling_rotation comes before the class fallback."""
+    return (LEVEL_MODEL.get((cls, b["id"])) or (GEN.get(cls, {}).get(b["id"], {}) or {}).get("model")
+            or SM.own_leveling_rotation(cls, SM.spec_of(cls, b), b.get("allocation")) or rs.leveling_pick(cls)[1])
 
 
 _LEV_SIG = {}
@@ -848,7 +852,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
         if top.get("order"):
             talents += ["## Talents while leveling", "", "One point per level from 10, in this order:", "", "| Levels | Talent | Points |", "|---|---|---|"]
             talents += [f"| {s['levels']} | {s['talent']} ({s['tree']}) | {s['points']} |" for s in top["order"]] + [""]
-        spec_model = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
+        spec_model = level_rotation(cls, top)   # (2026-11-04: one rule for the steps, the signature lines and signature_audit.py)
         st = STEPS.get(cls, {}).get(spec_model)
         if st:
             play += ["## How to play", ""]

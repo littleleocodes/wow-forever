@@ -72,6 +72,8 @@ Beast Mastery in a raid is **Auto Shot** and your pet with a short list on top: 
 | Pre-BiS | 784 | [31/17/3](https://talentsforever.com/hunter/60/5420001505001251-225305-3-7) |
 | Phase 1 BiS | 796 | [31/20/0](https://talentsforever.com/hunter/60/5220111505001251-20501513003--7) (ties this build) |
 
+*From the previous search run (searched 2026-11-01); a new run is under way and will replace these numbers and the gear.*
+
 **The gear** (average item level: Pre-BiS 66.6; Phase 1 BiS 66.9; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |

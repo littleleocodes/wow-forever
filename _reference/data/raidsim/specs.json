@@ -417,7 +417,7 @@
         "foodId": 20452,
         "potId": 13444
       },
-      "builds": ["bm-mm-raid", "bm-mm-full-buffs-raid", "opt-mm-raid-raid-dps", "marksmanship-ml-raid"],
+      "builds": ["bm-mm-raid", "bm-mm-full-buffs-raid", "opt-mm-raid-raid-dps", "marksmanship-ml-raid", "marksmanship-with-a-pet-open-raid"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",

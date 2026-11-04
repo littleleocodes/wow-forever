@@ -7,6 +7,7 @@
 | `opt-mm-raid-raid-dps` | 31/16/4 | 530 | 15 | +0.0% | 349 | 38 | +56.0% |
 | `marksmanship-ml-raid` | 7/39/5 | 501 | 17 | -5.4% | 404 | 46 | +45.2% |
 | `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 16 | -5.9% | 372 | 32 | +47.8% |
+| `marksmanship-with-a-pet-open-raid` | 7/39/5 | 492 | 17 | -7.2% | 395 | 54 | +42.7% |
 | sim preset: BM Weave | - | 489 | 15 | -7.8% | 286 | 46 | - |
 | sim preset: BM | - | 477 | 15 | -10.1% | 275 | 52 | - |
 | sim preset: MM | - | 471 | 16 | -11.1% | 394 | 50 | - |
@@ -38,6 +39,7 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - opt-mm-raid-raid-dps: `5420001505001251-0050550001-4`
 - marksmanship-ml-raid: `502-0053552501520051-5`
 - bm-mm-full-buffs-raid: `53200005050001-005155000150305`
+- marksmanship-with-a-pet-open-raid: `502-0053352501522051-5`
 - sim preset: BM Weave: `5320001505101251-0053250001-4`
 - sim preset: BM: `5320001505101251-0052050301-4`
 - sim preset: MM: `5-0053452511522051-5`

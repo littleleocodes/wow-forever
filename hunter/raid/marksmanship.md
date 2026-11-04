@@ -4,9 +4,9 @@
 
 **✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
 
-**[Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md)** (7/39/5) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053552501520051-5-7)
+**[Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md)** (7/39/5) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053352501522051-5-7)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Marksmanship — Lone Wolf), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
 
 **Other setups of this spec.** This build is the With a pet setup. The spec's best build for each other setup, in a full raid:
 
@@ -23,8 +23,9 @@
 1. **Aimed Shot**
 2. **Arcane Shot**
 3. **Rapid Fire**
-4. **Serpent Sting**: keep it on the target
-5. **Sniper Shot**
+4. **Multi-Shot**
+5. **Serpent Sting**: keep it on the target
+6. **Sniper Shot**
 
 Between these, **Auto Shot** keeps firing on its own.
 
@@ -63,14 +64,16 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1004 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1008 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 821 | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-7) |
-| Phase 1 BiS | 812 | this build |
+| Phase 1 BiS | 812 | [7/39/5](https://talentsforever.com/hunter/60/502-0053552501520051-5-7) |
+
+*From the previous search run (searched 2026-11-02); a new run is under way and will replace these numbers and the gear.*
 
 **The gear** (average item level: Pre-BiS 66.6; Phase 1 BiS 66.0; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -97,6 +100,7 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 ## Other builds of this spec
 
+- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (7/39/5, 1004 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053552501520051-5-7)
 - [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 927 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/50002-3053552011523051-3-7)
 - [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 916 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--7)
 

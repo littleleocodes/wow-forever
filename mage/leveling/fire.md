@@ -28,31 +28,28 @@
 
 ## Why this rotation
 
-Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows the Frost tree's freeze: **Frost Nova**, step back, and **Ice Lance** the frozen mob; from level 45, **Heating Up** makes some **Pyroblast** casts fast. In the fight lab at level 60, **Ice Lance** is about 34% of this build's damage, **Fire Blast** 24%, **Fireball** 16% and **Pyroblast** 12%.
+Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows the Frost tree's freeze: **Frost Nova**, a step back, and **Ice Lance** into the frozen mob; from the mid 40s **Heating Up** makes some **Pyroblast** casts fast. In the fight lab at level 60 (2026-11-04 run), **Fire Blast** is about 29% of this build's damage, **Ice Lance** 22%, **Fireball** 15% and **Pyroblast** 13%; about 32 seconds per kill level-weighted, the slowest mage leveling page (Arcane-Frost: 25).
 
 **Why it works**
 
-- The first 20 points (levels 10-29) are Frost: **Ice Lance** (20), **Shatter** (25-27), **Ice Shards** and **Elemental Precision**. A frozen mob takes 200% more damage from **Ice Lance**, with 50% more crit chance; in the fight lab a kill at level 60 takes about 4.3 seconds longer without **Ice Lance** and 2.8 without **Shatter**. This build has no **Frostbite** or **Fingers of Frost**, so the freeze is **Frost Nova** (back 4 seconds sooner with **Improved Frost Nova**, levels 15-16).
-- **Fireball** from as far away as you can, and as the filler whenever nothing else applies, while the mob has more than 35% of its health. Below that the tuned rules (2026-10-22) start no **Fireball** or **Scorch** (each about 1% faster): a long cast overkills.
-- **Fire Blast** is your instant: when the mob would reach you before a **Fireball** lands, when it is on you and **Frost Nova** is down, and to finish a mob it will kill. **Improved Fire Blast** (levels 30-31) takes 2 seconds off its 8-second cooldown.
-- **Heating Up** (level 45; **Pyroblast** at 44): non-periodic crits with **Fireball**, **Fire Blast** and **Scorch**, and every **Fire Blast** that deals damage, each cut your next **Pyroblast**'s cast by 25%, up to 3 stacks. At 3 stacks its 6-second cast takes 1.5 seconds: cast it then, never without them.
-- **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen.
-- **Scorch** when the mob is on you and your control is down, above 35% of its health: its 1.5-second cast is pushed back less than a **Fireball**. It also covers the walk-in when **Fire Blast** is on cooldown and a **Fireball** would not land in time.
-- **Combustion** (level 60) goes at the pull.
+- The first 20 points are Frost: **Precision** (hit), **Improved Frost Nova**, **Frostbite** where the build takes it, **Ice Lance** at 20, **Ice Shards** and **Shatter**. A frozen mob takes 300% more damage from **Ice Lance**, which crits 50% more often there with **Shatter** and for double with **Ice Shards**; **Ice Lance** has an 8-second cooldown, one per freeze. In the fight lab a kill at 60 takes about 4.4 seconds longer without **Ice Lance** and 3.6 without **Shatter**.
+- **Fireball** from as far away as you can, and as the filler whenever nothing else applies, while the mob has more than about a third (35%) of its health. Below that the tuned rules (2026-11-03) start no **Fireball**, **Scorch** or **Pyroblast**: a long cast overkills. **Accelerant** takes half a second off its cast at 5 points.
+- **Fire Blast** is your instant: when the mob would reach you before a **Fireball** lands, when it is on you and **Frost Nova** is down, and to finish a mob it will kill. **Improved Fire Blast** takes 2 seconds off its cooldown, **Incineration** and **Critical Mass** add crit, and every hit adds a **Heating Up** stack.
+- **Heating Up** (**Pyroblast** first, then the talent, both in the mid 40s): crits with **Fireball**, **Fire Blast** and **Scorch**, and every **Fire Blast** hit, each cut your next **Pyroblast**'s cast by 25%, up to 3 stacks. At 3 stacks its 6-second cast takes 1.5 seconds: cast it then, never without them.
+- **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen; **Scorch** when the mob is on you and your control is down, above a third of its health (its 1.5-second cast is pushed back less than a **Fireball**), and during the walk-in when **Fire Blast** is on cooldown and a **Fireball** would not land in time.
+- **Ignite** (40% of every crit's damage over 4 seconds), **Master of Elements** (30% of the cost back on every Fire or Frost crit) and **Fire Power** (3% per Fire effect on the mob, up to 12%) are the Fire tree's passive half: in the fight lab **Ignite** is worth about 1.8 seconds per kill at 60 and **Master of Elements** 1.3. **Combustion** at 60 goes at the pull.
 
 **Caveats**
 
-- This build takes no **Blast Wave**: skip that line of the list. Before level 44 it has no **Pyroblast** either.
-- Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**; **Master of Elements** (levels 47-49) refunds 30% of a spell's base cost on each Fire or Frost crit (about 1.3 seconds per kill at level 60 in the fight lab). Drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana.
-- **Burning Soul** (levels 41-43) keeps 70% of your Fire casts from being pushed back when a mob reaches you.
+- This build takes no **Blast Wave**: skip that line of the list. Before the mid 40s it has no **Pyroblast** either.
+- Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**. Drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana; eat below two thirds of your health.
 - Pulls of several mobs: **Flamestrike** hits them all, but the fight lab only measured single pulls for Fire.
+- The open search's latest winner (0/31/20 with **Frostbite** and five points each in **Incineration** and **Accelerant**, 8% faster at levels 20-60) replaces this build when the running leveling queue writes it; the list is the same.
 
 **When to change it**
 
-- On a nearly dead mob (below about a third), finish with an instant that will kill (**Fire Blast**, an **Ice Lance**) or the wand rather than start a **Fireball** or **Scorch**.
-- If you run low on mana in a fight, keep **Fire Blast** and **Ice Lance** for the freeze and let the wand finish; the fight lab's list has no mana limit of its own and drinks below a third between fights.
-
-*This guide was written for the rotation of 2026-10-25; the list above was re-tuned since, so follow the list where the two differ.*
+- On a nearly dead mob (below about a third), finish with an instant that will kill (**Fire Blast**, an **Ice Lance** into a freeze) or the wand rather than start a **Fireball** or **Scorch**.
+- If you run low on mana in a fight, keep **Fire Blast** and **Ice Lance** for the freeze and let the wand finish.
 
 ## The numbers
 

@@ -6,22 +6,23 @@
 
 > 🔬 These are your **raid talents** ([Protection — Raid tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 32 s per kill; own tree last: 32 s per kill; own tree first: 33 s per kill). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (Holy Shield 0.00/kill at 60 (needs 0.50)). Protection is defined by **Holy Shield** cast in every fight and Holy Shield, Seal of Fury, Judgement, melee, Consecration, Seal of Righteousness carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 69% of the damage at level 60 in the fight lab comes from Holy Shield, Seal of Fury, Judgement, melee, Consecration, Seal of Righteousness (the spec's rule: at least 60%; **Holy Shield** cast in every fight).
 
 ## How to play
 
-**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a two-handed weapon. Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it).
+**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too: **Iron Creed** and **Improved Righteous Fury** cut your damage taken only while it is on (the fight lab keeps it up). **Seal of Fury** before each pull: with a shield it also gives you an absorb.
 
 **In the fight**, top to bottom:
 
-1. **Hammer of Justice** a mob that casts spells: it stands back and casts until you stop it.
-2. Keep your seal up: put it back if it runs out.
+1. **Hammer of Justice** a mob that casts spells.
+2. Keep **Seal of Fury** up.
 3. **Hammer of Wrath** when the mob is below 20% health.
-4. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.
-5. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the tuned rotation never casts it.
-6. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+4. **Holy Shield** whenever it is down.
+5. **Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.
+6. **Consecration** while your mana is above 60% and the mob has more than 30% health left.
+7. Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) or **Hammer of Justice**, and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana.
+**Between fights:** Drink below 15% of your mana; you rarely need to eat.
 
 ## Why this rotation
 

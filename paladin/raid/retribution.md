@@ -12,6 +12,8 @@
 
 **Keep up all fight:** **Seal of Command**, **Seal of Righteousness**.
 
+**Talents with no line below:** **Repentance**: taken because Unsealed Wrath requires it.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Judgement**
@@ -23,8 +25,8 @@ Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Retribution Aura**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Seal of the Crusader**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Retribution Aura**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -66,16 +68,14 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 
 > Note: Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever d97252f (client 70755); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 893 | [12/8/31](https://talentsforever.com/paladin/60/050150001-503-25233001011301351-7) |
-| Phase 1 BiS | 903 | [12/8/31](https://talentsforever.com/paladin/60/050150001-503-35233001001301351-7) (ties this build) |
+| Pre-BiS | 983 | [17/3/31](https://talentsforever.com/paladin/60/0501511022-3-35230101201301351-7) |
+| Phase 1 BiS | 990 | [17/3/31](https://talentsforever.com/paladin/60/0502510022-3-35233001001301351-7) (ties this build) |
 
-*From the previous search run (searched 2026-11-01); a new run is under way and will replace these numbers and the gear.*
-
-**The gear** (average item level: Pre-BiS 63.6; Phase 1 BiS 63.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 68.9; Phase 1 BiS 68.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|

@@ -76,6 +76,8 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 | Pre-BiS | 799 | [28/20/3](https://talentsforever.com/hunter/60/532000151500123-00520503005-3-7) |
 | Phase 1 BiS | 798 | this build |
 
+*From the previous search run (searched 2026-11-02); a new run is under way and will replace these numbers and the gear.*
+
 **The gear** (average item level: Pre-BiS 66.2; Phase 1 BiS 67.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |

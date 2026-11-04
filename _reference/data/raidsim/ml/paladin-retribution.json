@@ -2552,5 +2552,435 @@
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 2
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "ret-dps",
+    "dps": 554.89,
+    "se": 0.096
+   },
+   "opt-ret-dps-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 473.42,
+    "se": 0.077
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null,
+  "commit": "d97252f2a"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "ret-dps",
+    "dps": 990.54,
+    "se": 0.196
+   },
+   "retribution-open-raid": {
+    "entry": "ret-dps",
+    "dps": 986.99,
+    "se": 0.196
+   },
+   "retribution-ml-raid": {
+    "entry": "ret-dps",
+    "dps": 779.77,
+    "se": 0.15
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "signature_check": {
+  "spec": "Retribution",
+  "ok": true,
+  "core_share": 0.8485,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "ret-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 989.1,
+  "date": "2026-11-04",
+  "commit": "d97252f2a",
+  "shares": {
+   "Auto Attack": 0.3141,
+   "Seal of Command": 0.2406,
+   "Holy Strike": 0.1016,
+   "Consecration": 0.0992,
+   "Judgement of Command": 0.0805,
+   "Seal of Righteousness": 0.0747,
+   "Hammer of Wrath": 0.0451,
+   "Judgement of Righteousness": 0.0369,
+   "Demonic Rune": 0.0047,
+   "spell 16614": 0.0026
+  },
+  "casts": {
+   "Holy Strike": 17.01,
+   "Hammer of Wrath": 6.0,
+   "Judgement of the Crusader": 1.0,
+   "Judgement of Righteousness": 6.79,
+   "Seal of Command": 14.36,
+   "Seal of the Crusader": 1.0,
+   "Retribution Aura": 1.0,
+   "Seal of Righteousness": 13.66,
+   "Judgement of Command": 15.21,
+   "Consecration": 22.0
+  },
+  "allocation": {
+   "Holy": [
+    [
+     "Spiritual Focus",
+     1
+    ],
+    [
+     "Divine Strength",
+     5
+    ],
+    [
+     "Reverence",
+     2
+    ],
+    [
+     "Improved Seals",
+     5
+    ],
+    [
+     "Holy Conduit",
+     2
+    ],
+    [
+     "Divine Precision",
+     2
+    ]
+   ],
+   "Protection": [
+    [
+     "Divine Intellect",
+     3
+    ]
+   ],
+   "Retribution": [
+    [
+     "Deflection",
+     3
+    ],
+    [
+     "Benediction",
+     5
+    ],
+    [
+     "Improved Judgement",
+     2
+    ],
+    [
+     "Conviction",
+     3
+    ],
+    [
+     "Sanctified Judgement",
+     1
+    ],
+    [
+     "Seal of Command",
+     1
+    ],
+    [
+     "Pursuit of Justice",
+     1
+    ],
+    [
+     "Sacred Arbiter",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Turn Evil",
+     1
+    ],
+    [
+     "Repentance",
+     1
+    ],
+    [
+     "Vengeance",
+     3
+    ],
+    [
+     "Champion of the Light",
+     5
+    ],
+    [
+     "Unsealed Wrath",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-04",
+  "setting": "raid",
+  "why": "confirms retribution-open-raid (+0.36% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": {
+   "allocation": {
+    "Holy": [
+     [
+      "Divine Strength",
+      5
+     ],
+     [
+      "Reverence",
+      2
+     ],
+     [
+      "Improved Seals",
+      5
+     ],
+     [
+      "Holy Conduit",
+      2
+     ],
+     [
+      "Divine Precision",
+      2
+     ],
+     [
+      "Purifying Power",
+      1
+     ]
+    ],
+    "Protection": [
+     [
+      "Divine Intellect",
+      3
+     ]
+    ],
+    "Retribution": [
+     [
+      "Deflection",
+      3
+     ],
+     [
+      "Benediction",
+      5
+     ],
+     [
+      "Improved Judgement",
+      2
+     ],
+     [
+      "Conviction",
+      3
+     ],
+     [
+      "Sanctified Judgement",
+      3
+     ],
+     [
+      "Seal of Command",
+      1
+     ],
+     [
+      "Sacred Arbiter",
+      1
+     ],
+     [
+      "Two-Handed Weapon Specialization",
+      3
+     ],
+     [
+      "Repentance",
+      1
+     ],
+     [
+      "Vengeance",
+      3
+     ],
+     [
+      "Champion of the Light",
+      5
+     ],
+     [
+      "Unsealed Wrath",
+      1
+     ]
+    ]
+   },
+   "split": "17/3/31",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Pursuit of Justice",
+     "to": "Sanctified Judgement",
+     "seed1": 1.0800282108203163e-05,
+     "seed2": 0.0006426844538629517,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Deflection",
+     "to": "Sanctified Judgement",
+     "seed1": 0.0010262239595169032,
+     "seed2": -0.0005980023899498921,
+     "utility": "mana"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Spiritual Focus",
+     "to": "Purifying Power",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "mana"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Turn Evil",
+     "to": "Deflection",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Repentance"
+   ],
+   "final_seed3": -0.00046369410113100695
+  },
+  "prebis-dummy": null,
+  "prebis-raid": {
+   "allocation": {
+    "Holy": [
+     [
+      "Divine Strength",
+      5
+     ],
+     [
+      "Improved Seals",
+      5
+     ],
+     [
+      "Purifying Power",
+      1
+     ],
+     [
+      "Divine Favor",
+      1
+     ],
+     [
+      "Holy Conduit",
+      2
+     ],
+     [
+      "Divine Precision",
+      2
+     ],
+     [
+      "Reverence",
+      1
+     ]
+    ],
+    "Protection": [
+     [
+      "Divine Intellect",
+      3
+     ]
+    ],
+    "Retribution": [
+     [
+      "Deflection",
+      3
+     ],
+     [
+      "Benediction",
+      5
+     ],
+     [
+      "Improved Judgement",
+      2
+     ],
+     [
+      "Conviction",
+      3
+     ],
+     [
+      "Vindication",
+      1
+     ],
+     [
+      "Seal of Command",
+      1
+     ],
+     [
+      "Pursuit of Justice",
+      2
+     ],
+     [
+      "Sacred Arbiter",
+      1
+     ],
+     [
+      "Two-Handed Weapon Specialization",
+      3
+     ],
+     [
+      "Repentance",
+      1
+     ],
+     [
+      "Vengeance",
+      3
+     ],
+     [
+      "Champion of the Light",
+      5
+     ],
+     [
+      "Unsealed Wrath",
+      1
+     ]
+    ]
+   },
+   "split": "17/3/31",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Spiritual Focus",
+     "to": "Reverence",
+     "seed1": 0.0021197655195566156,
+     "seed2": 0.0012557767241425655,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Turn Evil",
+     "to": "Deflection",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Repentance"
+   ],
+   "final_seed3": 0.0009769251231379616
+  }
  }
 }

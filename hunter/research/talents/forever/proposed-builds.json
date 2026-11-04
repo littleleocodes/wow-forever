@@ -1951,6 +1951,54 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.24; opt-bm-leveling-leveling-aoe 24.61. The search simulated 60,489 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7"]
+    },
+    {
+      "id": "marksmanship-with-a-pet-open-raid",
+      "name": "Marksmanship — With a pet (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-11-04",
+      "derived": "raid",
+      "summary": "The Marksmanship raid build the open talent search found on 2026-11-04: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 3],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Improved Arcane Shot", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Rapid Recuperation", 2],
+          ["Barrage", 2],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Careful Aim", "why": "48 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "39 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Sniper Shot", "why": "38 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Mortal Shots", "why": "35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Tracking", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ranged Weapon Specialization", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Arcane Shot", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["The best with a pet build: +9.1% over bm-mm-full-buffs-raid, the best of our builds in mm-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 780.7 DPS; bm-mm-full-buffs-raid 715.4 in the same fights; 9,021 builds simulated, 3 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): mm-lonewolf-raid -0.4%, bm-raid -0.2%, melee-dps -50.7%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Rapid Killing.", "Simulator numbers are the community's model of the beta (wowsims/forever 5ad0894 (client 70707) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Marksmanship build: check it against the community's Marksmanship builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/502-0053352501522051-5-7"]
     }
   ]
 }

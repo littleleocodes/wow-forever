@@ -6,51 +6,47 @@
 
 > 🔬 These are your **raid talents** ([Holy — Raid Healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 56 s per kill; stats model's order: 57 s per kill; own tree first: 60 s per kill). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%). Holy is defined by **Smite**, **Holy Fire** cast in every fight and Smite, Holy Fire carrying 40% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 41% of the damage at level 60 in the fight lab comes from Smite, Holy Fire (the spec's rule: at least 40%; **Smite**, **Holy Fire** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Early Demise**, **Mind Flay**, **Shadowform**, **Vampiric Embrace** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
-
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below 80% health; **Inner Focus** when it is ready, as the pull starts (your first spell is free).
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before every pull: while it holds, damage does not push your casts back. **Inner Focus** when it is ready, as the pull starts: your first spell (from level 20 the opening **Holy Fire**) is free and 25% more likely to crit.
 
 **In the fight**, top to bottom:
 
-1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
-2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
-3. **Shadow Word: Death** when one cast will kill the mob, and below 20% health once you have **Early Demise**.
-4. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
-5. Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).
-6. Below a third of your health outside **Shadowform**: **Flash Heal**.
+1. Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).
+2. **Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.
+3. **Penance** whenever it is ready; **Mind Blast** whenever it is ready while you have more than 30% mana (also to finish a mob one cast will kill).
+4. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.
+5. Skip Devouring Plague: the tuned rules never cast it.
+6. Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
-**Between fights:** Drink only below 15% mana, eat below two thirds of your health (**Renew** yourself instead outside **Shadowform**).
+**Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%.
 
 ## Why this rotation
 
-You level with your raid talents, Discipline first: the first Holy point comes at level 32 (the fastest of the three orders the fight lab raced). The fight is a Smite priest's: **Holy Fire** to open, **Shadow Word: Pain**, **Penance** and **Mind Blast** whenever they are ready, **Smite** in every gap and your wand for the last hit.
+You level with your raid talents, Discipline first: the first Holy point comes at level 32 (the fastest of the three orders the fight lab raced, 56 seconds per kill level-weighted against 57 and 60). The fight is a Smite priest's: **Holy Fire** to open, **Shadow Word: Pain**, **Penance** and **Mind Blast** whenever they are ready, **Smite** in every gap and your wand for the last hit. At 60 in the fight lab (2026-11-04 run) **Smite** is 27% of the damage, **Shadow Word: Pain** 22%, **Holy Fire** 15%, **Penance** 14% and **Mind Blast** 13%.
 
 **Why it works**
 
-- **Holy Fire** (level 20) opens from range: a long cast (3.5 seconds before **Divine Fury**) that hits hard and burns for 10 seconds more. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your **Power Word: Shield** holds (damage would push the long cast back). **Inner Focus** (level 24) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.
-- **Shadow Word: Pain** is instant and ticks for the whole fight; while it or **Holy Fire** burns, **Power in Light** (levels 28-29) adds 4% to **Smite** and **Penance**.
-- **Penance** (level 30) goes out whenever it is ready: three Holy hits in 2 seconds on a 12-second cooldown, 15% cheaper with **Improved Healing** (48-50).
-- **Mind Blast** whenever it is ready while you have more than 30% of your mana; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes. At 60 the fight lab casts about 4.2 **Smite** and 1.6 **Holy Fire** per kill, 41% of your damage.
-- Mana: you drink only below 15%. **Meditation** (levels 20-22) keeps half your regeneration going while you cast and **Mental Strength** (15-19) adds 10% Intellect.
-- The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back, and **Twilight Focus** (levels 32-34) avoids most pushback after it breaks.
+- **Holy Fire** (level 20) opens from range: a 3.5-second cast (this build takes one point of **Divine Fury**) that hits hard and burns for 10 seconds more. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your **Power Word: Shield** holds (damage would push the long cast back). **Inner Focus** (24) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.
+- **Shadow Word: Pain** is instant and ticks for the whole fight; while it or **Holy Fire** burns, **Power in Light** (28-29) adds 4% to **Smite** and **Penance**.
+- **Penance** (30) goes out whenever it is ready: three Holy hits in 2 seconds on a 12-second cooldown, 15% cheaper with **Improved Healing** (48-50).
+- **Mind Blast** whenever it is ready while you have more than 30% of your mana; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes. At 60 the fight lab casts about 4.2 **Smite** and 1.6 **Holy Fire** per kill.
+- Mana: you drink only below 15%. **Meditation** (20-22) keeps half your regeneration going while you cast and **Mental Strength** (15-19) adds 10% Intellect.
+- The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back; **Soul Warding** (31) takes its 4-second cooldown away and **Twilight Focus** (32-34) avoids most pushback after it breaks.
 
 **Caveats**
 
-- Most of your Holy points are for healing (**Spiritual Healing**, **Improved Renew**, **Inspiration**, **Litany of Light**, **Holy Binding**), so this is a slow way to level: 56 seconds per kill in the fight lab (level-weighted), against 24 for Shadow; kills slow from 51 seconds at 30 to 63 at 40.
-- The tuned rules (2026-10-23) never cast Devouring Plague and hold **Mind Blast** below 30% mana: the gate keeps **Smite** and **Holy Fire** your main damage (the spec's rule) and cost about 2% speed in the tuning run.
-- **Holy Nova** (level 42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.
+- Most of your Holy points are for healing (**Improved Renew**, **Inspiration**, **Holy Binding**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**), so this is a slow way to level: 56 seconds per kill in the fight lab against 25 for Shadow.
+- The tuned rules never cast **Devouring Plague** and hold **Mind Blast** below 30% mana: the gate keeps **Smite** and **Holy Fire** your main damage (the spec's rule).
+- **Holy Nova** (42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.
 - After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule).
 
 **When to change it**
 
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
-- If you only want to reach 60, level as Shadow and respec: about 2.3 times as fast per kill in the fight lab.
-
-*This guide was written for the rotation of 2026-10-25; the list above was re-tuned since, so follow the list where the two differ.*
+- If you only want to reach 60, level as Shadow and respec: about 2.2 times as fast per kill in the fight lab.
 
 ## Talents while leveling
 

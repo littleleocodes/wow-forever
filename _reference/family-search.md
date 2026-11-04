@@ -29,7 +29,6 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-7) | Hybrid Fire/Frost | 742.1 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/17/3](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-7) | Arcane | 741.8 | +12.7% |
 | [hunter](../hunter/research/raid/family-search.md) | melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-7) | Survival | 735.5 | +0.0% |
-| [shaman](../shaman/research/raid/family-search.md) | enhancement-dps | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-7) | Enhancement | 733.5 | +1.5% |
 | [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-7) | Combat | 683.1 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-7) | Hybrid Arcane/Frost | 670.9 | +1.5% |
 | [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-001333010001002-002-7) | Hybrid Assassination/Combat | 663.4 | +0.2% |
@@ -37,5 +36,3 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [19/32/0](https://talentsforever.com/rogue/60/0053030020041-0002330110012221501--7) | Combat | 641.2 | +1.8% |
 | [priest](../priest/research/raid/family-search.md) | smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7) | Hybrid Discipline/Holy | 611.1 | +2.9% |
 | [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--1022331313010111-7) | Subtlety | 610.9 | +0.0% |
-| [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [31/11/9](https://talentsforever.com/shaman/60/252333110001035-05500001-05202-7) | Elemental | 554.1 | -1.8% |
-| [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [32/11/8](https://talentsforever.com/shaman/60/253433110000035-05500001-1502-7) | Elemental | 541.6 | - |

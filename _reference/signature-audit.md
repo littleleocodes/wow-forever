@@ -45,18 +45,17 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.41 | 88% (min 60%) | 31.5 | OK |
 | Arcane-Frost | page | arcane-frost-open-leveling (18/2/31) | barrage-frost-leveling | - | Frostbolt 2.61, Arcane Missiles 0.53 | 88% (min 60%) | 25.1 | OK |
 | Arcane-Frost | slot | opt-frost-leveling-leveling-st (22/3/26) | barrage-frost-leveling | - | Frostbolt 2.49, Arcane Missiles 0.41 | 85% (min 60%) | 25.6 | OK |
-| Frostfire | page | frostfire-open-leveling (1/25/25) | frost-leveling | - | Frostfire Bolt 0.00 | 0% (min 30%) | 31.5 | FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30% |
-| Frostfire | mapped | frostfire-open-leveling (1/25/25) | frostfire-leveling | - | Frostfire Bolt 3.05 | 37% (min 30%) | 33.9 | OK |
+| Frostfire | page | frostfire-open-leveling (1/25/25) | frostfire-leveling | - | Frostfire Bolt 3.05 | 37% (min 30%) | 33.9 | OK |
 
 ## Paladin
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Holy | page | holy-leveling (30/16/5) | ret-dps | - | Holy Shock 0.00 | 83% (min 60%) | 36.8 | FAIL: lacks Holy Shock |
-| Protection | page | protection-leveling (0/34/17) | ret-dps | - | Holy Shield 0.00 | 63% (min 60%) | 30.3 | FAIL: Holy Shield 0.00/kill at 60 (needs 0.50) |
+| Holy | page | holy-leveling (30/16/5) | holy-leveling | - | Holy Shock 0.00 | 73% (min 60%) | 35.2 | FAIL: lacks Holy Shock |
+| Protection | page | protection-leveling (0/34/17) | prot-leveling | - | Holy Shield 2.07 | 69% (min 60%) | 31.6 | OK |
 | Retribution | page | leveling-retribution (12/9/30) | ret-dps | - | Judgement 2.91 | 100% (min 60%) | 26.2 | OK |
 | Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.91 | 100% (min 60%) | 26.2 | OK |
-| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (21/16/14) | ret-dps | - | - | - (min -) | 29.0 | no rule |
+| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (21/16/14) | holy-leveling | - | - | - (min -) | 29.5 | no rule |
 | Prot-Ret | page | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.32 | 100% (min 60%) | 26.0 | OK |
 | Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.95 | 100% (min 60%) | 26.9 | OK |
 | Prot-Ret | slot | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.29 | 100% (min 60%) | 27.2 | OK |
@@ -65,16 +64,15 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Discipline | page | discipline-open-leveling (30/0/21) | shadow-dps | Smite off | Penance 0.00, Smite 0.00 | 38% (min 40%) | 34.9 | FAIL: Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40% |
-| Discipline | slot | discipline-leveling (30/21/0) | shadow-dps | Smite off | Penance 0.00, Smite 0.00 | 38% (min 40%) | 42.9 | FAIL: Penance 0.00/kill at 40 (needs 0.50); Penance 0.00/kill at 50 (needs 0.50); Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40% |
-| Holy | page | holy-leveling (22/29/0) | shadow-dps | Smite off | Smite 0.00, Holy Fire 0.00 | 0% (min 40%) | 43.1 | FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40% |
+| Discipline | page | discipline-open-leveling (30/0/21) | discipline-leveling | - | Penance 1.00, Smite 1.23 | 46% (min 40%) | 39.7 | OK |
+| Discipline | slot | discipline-leveling (30/21/0) | discipline-leveling | - | Penance 1.03, Smite 1.24 | 44% (min 40%) | 46.3 | OK |
+| Holy | page | holy-leveling (22/29/0) | holy-leveling | - | Smite 4.19, Holy Fire 1.55 | 41% (min 40%) | 56.1 | OK |
 | Shadow | page | leveling-shadow (18/0/33) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.19, Mind Flay 2.68 | 82% (min 60%) | 25.4 | OK |
 | Shadow | slot | opt-shadow-dps-leveling-st (16/2/33) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.20, Mind Flay 2.64 | 82% (min 60%) | 31.0 | OK |
 | Shadow | slot | opt-shadow-dps-solo-60 (16/2/33) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.20, Mind Flay 2.64 | 82% (min 60%) | 25.0 | OK |
 | Shadow | slot | opt-shadow-dps-leveling-aoe (20/0/31) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.27, Mind Flay 2.72 | 82% (min 60%) | 28.6 | OK |
 | Shadow | slot | shadow-open-leveling (13/3/35) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.93, Mind Flay 2.09 | 84% (min 60%) | 24.6 | OK |
-| Smite | page | smite-open-leveling (22/21/8) | shadow-dps | Smite off | Smite 0.00, Holy Fire 0.00 | 0% (min 50%) | 37.6 | FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 50% |
-| Smite | mapped | smite-open-leveling (22/21/8) | holy-leveling | - | Smite 6.02, Holy Fire 1.39 | 56% (min 50%) | 51.7 | OK |
+| Smite | page | smite-open-leveling (22/21/8) | holy-leveling | - | Smite 6.02, Holy Fire 1.39 | 56% (min 50%) | 51.7 | OK |
 
 ## Rogue
 
@@ -87,8 +85,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Combat | slot | combat-leveling (21/30/0) | combat-swords-raid | - | - | 77% (min 70%) | 22.2 | OK |
 | Subtlety | page | subtlety-open-leveling (0/20/31) | subtlety-leveling | - | Hemorrhage 3.96, Death Mark 0.98 | 81% (min 60%) | 22.7 | OK |
 | Subtlety | slot | subtlety-leveling (5/16/30) | subtlety-leveling | - | Hemorrhage 0.00, Death Mark 0.00 | 74% (min 60%) | 23.5 | FAIL: lacks Hemorrhage, Death Mark |
-| Daggers (split) | page | opt-combat-swords-raid-leveling-aoe (21/27/3) | combat-swords-raid | - | - | 76% (min 60%) | 22.8 | OK |
-| Daggers (split) | mapped | opt-combat-swords-raid-leveling-aoe (21/27/3) | combat-daggers-raid | - | - | 75% (min 60%) | 23.8 | OK |
+| Daggers (split) | page | opt-combat-swords-raid-leveling-aoe (21/27/3) | combat-daggers-raid | - | - | 75% (min 60%) | 23.8 | OK |
 | Combat-Subtlety | page | combat-subtlety-open-leveling (5/25/21) | subtlety-leveling | - | Ghostly Strike 0.84 | 89% (min 60%) | 21.7 | OK |
 
 ## Shaman
@@ -113,14 +110,13 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Affliction | slot | affliction-leveling (33/6/12) | affliction-leveling | - | Corruption 1.05, Bane of Agony 1.00 | 56% (min 50%) | 39.8 | OK |
 | Demonology | page | demonology-leveling (21/30/0) | affliction-leveling | - | - | 12% (min 0%) | 39.4 | OK |
 | Destruction | page | destruction-leveling (21/0/30) | affliction-leveling | - | - | 21% (min 60%) | 41.6 | FAIL: core share 21% < 60% |
-| Destruction | slot | destruction-open-leveling (6/11/34) | affliction-leveling | - | - | 46% (min 60%) | 46.9 | FAIL: core share 46% < 60% |
-| Affliction-Demonology | page | leveling-affliction (23/26/2) | affliction-leveling | - | Corruption 1.06 | 66% (min 50%) | 38.9 | OK |
-| Affliction-Demonology | slot | opt-affliction-leveling-leveling-st (27/24/0) | affliction-leveling | - | Corruption 1.02 | 65% (min 50%) | 38.5 | OK |
-| Affliction-Demonology | slot | opt-affliction-leveling-solo-60 (27/24/0) | affliction-leveling | - | Corruption 1.02 | 65% (min 50%) | 38.5 | OK |
-| Affliction-Demonology | slot | opt-affliction-leveling-leveling-aoe (21/24/6) | affliction-leveling | - | Corruption 1.01 | 64% (min 50%) | 41.7 | OK |
-| Affliction-Demonology | slot | affliction-demonology-open-leveling (27/24/0) | affliction-leveling | - | Corruption 1.03 | 65% (min 50%) | 38.5 | OK |
-| Affliction-Demonology | mapped | leveling-affliction (23/26/2) | demonology-leveling | - | Corruption 1.24 | 68% (min 50%) | 32.8 | OK |
-| Demonology/Destruction hybrid | page | hybrid-demonology-destruction-open-leveling (5/24/22) | affliction-leveling | - | - | - (min -) | 41.6 | no rule |
+| Destruction | slot | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 81% (min 60%) | 45.7 | OK |
+| Affliction-Demonology | page | leveling-affliction (23/26/2) | demonology-leveling | - | Corruption 1.24 | 68% (min 50%) | 32.8 | OK |
+| Affliction-Demonology | slot | opt-affliction-leveling-leveling-st (27/24/0) | demonology-leveling | - | Corruption 1.12 | 68% (min 50%) | 32.8 | OK |
+| Affliction-Demonology | slot | opt-affliction-leveling-solo-60 (27/24/0) | demonology-leveling | - | Corruption 1.12 | 68% (min 50%) | 32.8 | OK |
+| Affliction-Demonology | slot | opt-affliction-leveling-leveling-aoe (21/24/6) | demonology-leveling | - | Corruption 1.28 | 70% (min 50%) | 33.6 | OK |
+| Affliction-Demonology | slot | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.06 | 72% (min 50%) | 30.7 | OK |
+| Demonology/Destruction hybrid | page | hybrid-demonology-destruction-open-leveling (5/24/22) | demonology-leveling | - | - | - (min -) | 34.1 | no rule |
 
 ## Warrior
 
@@ -128,10 +124,10 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 |---|---|---|---|---|---|---|---|---|
 | Arms | page | opt-arms-2h-raid-leveling-st (42/9/0) | arms-2h-raid | - | Mortal Strike 2.43 | 98% (min 80%) | 24.1 | OK |
 | Arms | slot | leveling-arms (31/20/0) | arms-2h-raid | - | Mortal Strike 2.26 | 98% (min 80%) | 23.8 | OK |
-| Fury | page | opt-fury-dw-raid-leveling-st (13/38/0) | arms-2h-raid | - | Bloodthirst 3.03 | 85% (min 80%) | 27.8 | OK |
-| Fury | slot | opt-fury-dw-raid-solo-60 (11/40/0) | arms-2h-raid | - | Bloodthirst 3.27 | 89% (min 80%) | 28.4 | OK |
-| Fury | slot | opt-arms-2h-raid-leveling-aoe (20/31/0) | arms-2h-raid | - | Bloodthirst 2.52 | 81% (min 80%) | 25.8 | OK |
-| Fury | slot | fury-open-leveling (16/35/0) | arms-2h-raid | - | Bloodthirst 2.70 | 83% (min 80%) | 27.2 | OK |
-| Protection | page | protection-leveling (17/3/31) | arms-2h-raid | - | Shield Slam 0.00 | 68% (min 70%) | 37.0 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70% |
-| Protection | slot | protection-open-leveling (0/20/31) | arms-2h-raid | - | Shield Slam 0.00 | 71% (min 70%) | 37.1 | FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50) |
+| Fury | page | opt-fury-dw-raid-leveling-st (13/38/0) | fury-dw-raid | - | Bloodthirst 2.82 | 86% (min 80%) | 24.8 | OK |
+| Fury | slot | opt-fury-dw-raid-solo-60 (11/40/0) | fury-dw-raid | - | Bloodthirst 2.94 | 90% (min 80%) | 25.0 | OK |
+| Fury | slot | opt-arms-2h-raid-leveling-aoe (20/31/0) | fury-dw-raid | - | Bloodthirst 2.41 | 80% (min 80%) | 26.1 | FAIL: core share 80% < 80% |
+| Fury | slot | fury-open-leveling (16/35/0) | fury-dw-raid | - | Bloodthirst 2.56 | 85% (min 80%) | 24.0 | OK |
+| Protection | page | protection-leveling (17/3/31) | prot-leveling | - | Shield Slam 3.50 | 90% (min 70%) | 28.4 | OK |
+| Protection | slot | protection-open-leveling (0/20/31) | prot-leveling | - | Shield Slam 3.21 | 95% (min 70%) | 28.1 | OK |
 

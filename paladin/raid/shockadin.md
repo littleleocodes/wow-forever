@@ -10,7 +10,9 @@
 
 ## How to play
 
-**Press the first one that is ready**, top to bottom:
+**Talents with no line below:** **Seal of Command**: taken because Vengeance requires it.
+
+**Then press the first one that is ready**, top to bottom:
 
 1. **Judgement**
 2. **Consecration**

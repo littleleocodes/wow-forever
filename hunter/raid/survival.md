@@ -71,6 +71,8 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 | Pre-BiS | 819 | [6/12/33](https://talentsforever.com/hunter/60/51-005015001-500221230250022151-7) |
 | Phase 1 BiS | 825 | [5/12/34](https://talentsforever.com/hunter/60/5-005105001-500230230250122151-7) (ties this build) |
 
+*From the previous search run (searched 2026-11-01); a new run is under way and will replace these numbers and the gear.*
+
 **The gear** (average item level: Pre-BiS 67.2; Phase 1 BiS 67.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |

@@ -2,7 +2,7 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Arcane-Frost
 
-*Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost.* (a hybrid: Arcane/Frost).
+*Frost's Shatter and Fingers of Frost with Arcane's Missile Barrage: Frostbolt, Ice Lance into the freeze, free Arcane Missiles.* (a hybrid: Arcane/Frost).
 
 **✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
@@ -31,25 +31,26 @@
 
 ## Why this rotation
 
-This hybrid plays the Frost list with one Arcane addition: **Frostbolt** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the freeze, and a free, fast **Arcane Missiles** whenever **Missile Barrage** lights up. Its first 25 points (levels 10-34) are Frost; **Missile Barrage** comes at 35-36 and the rest of the Arcane half from 43. In the fight lab at level 60, **Ice Lance** is about 53% of its damage, **Frostbolt** 26%, **Fire Blast** 10% and **Arcane Missiles** 9%.
+This hybrid plays the Frost list with one Arcane addition: **Frostbolt** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the freeze, and a free, fast **Arcane Missiles** whenever **Missile Barrage** lights up. Its Frost points come first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31), the Arcane half after. The fastest mage leveling build in the fight lab: about 25 seconds per kill level-weighted (2026-11-04 run) and 26 at 60, where **Frostbolt** is 42% of the damage, **Ice Lance** 32%, **Arcane Missiles** 14% and **Fire Blast** 9%.
 
 **Why it works**
 
-- **Frostbolt** from as far away as you can and as the filler: its slow buys casts before the mob arrives, its chill rolls **Frostbite** (15% to freeze) and **Fingers of Frost** (15%: the next 2 spells count as cast on a frozen target), and with **Missile Barrage** (levels 35-36) each one has a 20% chance to light it up. **Improved Frostbolt** (levels 10-14) cuts its cast by half a second.
-- **Arcane Missiles** only on a **Missile Barrage** proc: the channel is half as long and costs nothing. Cast it at range or into a freeze, not while the mob is hitting you: **Improved Channeling** (2 points) gives only a 40% chance that a hit does not interrupt it. The fight lab casts it about once every three kills at level 60.
-- **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen: 200% more damage to a frozen target, 50% more crit chance from **Shatter** and bigger crits from **Ice Shards**. In the fight lab a kill at level 60 takes about 3.7 seconds longer without **Shatter**, 2.9 without **Ice Lance** and 1.3 without **Missile Barrage**.
-- **Fire Blast** when the mob would reach you before a **Frostbolt** lands, when it is on you and **Frost Nova** is down, and to finish one it will kill. The tuned rules (2026-10-23) start no **Frostbolt** or **Fire Blast** once the mob is below a tenth of its health: an **Ice Lance** that will kill, or the wand, finishes it.
-- **Arcane Blast** (level 54) is one of the points that open **Arcane Meditation**'s row; this list never casts it. **Arcane Concentration** (levels 46-50) and **Arcane Meditation** (56-58) are for mana.
+- **Frostbolt** from as far away as you can and as the filler while the mob has more than a tenth of its health: its slow buys casts before the mob arrives, its chill rolls **Frostbite** (15% to freeze) and **Fingers of Frost** (15%: the next 2 spells count as cast on a frozen target), and with **Missile Barrage** each one has a 20% chance to light up a free **Arcane Missiles**. If the mob would reach you before the cast ends, **Fire Blast** it instead.
+- **Arcane Missiles** only on a **Missile Barrage** proc: half the channel, no mana, missiles every half second. Cast it at range or into a freeze, not while the mob is hitting you unless it is frozen: hits can cut the channel short (**Improved Channeling** makes that less likely). The fight lab casts it about once every two kills at 60; without **Missile Barrage** a kill takes about 2.1 seconds longer there.
+- **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen: 300% more damage to a frozen target, 50% more crit chance from **Shatter** and bigger crits from **Ice Shards**. **Ice Lance** has an 8-second cooldown, one per freeze. At 60 the fight lab's winner loses about 3.5 seconds per kill without **Shatter**, 2.5 without **Ice Lance**, 1.8 without **Ice Shards** and 1.1 without **Fingers of Frost**.
+- **Fire Blast** when the mob would reach you before a **Frostbolt** lands, when it is on you and **Frost Nova** is down, and to finish one it will kill. The tuned rules (2026-11-03) start no **Frostbolt** or **Fire Blast** once the mob is below a tenth of its health: an **Ice Lance** that will kill, or the wand, finishes it.
+- The rest of the Arcane half is mana: **Arcane Concentration** makes one cast in ten free and **Arcane Meditation** keeps half your regeneration going while you cast; **Wand Specialization** makes the finishing wand hits 25% stronger. The tuned rules drink only below 15% of your mana and eat below 40% of your health, later than the other mage lists.
 
 **Caveats**
 
-- This build takes no **Cold Snap**: skip that part of the list. Before level 35 it is a plain Frost mage, with no **Missile Barrage** yet.
-- **Cone of Cold** stays out of single pulls: the tuned rules never cast it (about 1% faster kills in the fight lab). **Winter's Chill** (level 42) only helps **Cone of Cold**.
-- Rest: the tuned rules drink below 15% of your mana and eat below 40% of your health, later than the other mage lists (each a little faster per kill in the fight lab); **Evocation** between fights when it is ready and you are under 40% mana.
+- This build takes no **Cold Snap**: skip that part of the list. Before the Arcane half it is a plain Frost mage without **Missile Barrage**.
+- **Cone of Cold** stays out of single pulls: the tuned rules never cast it, so the single **Winter's Chill** point does nothing on one mob.
+- Rest: drink below 15% of your mana, **Evocation** between fights when it is ready and you are under 40% mana, eat below 40% of your health.
+- The open search's latest winner (23/0/28, about 1% faster at levels 20-60, with **Presence of Mind** and two points of **Arcane Mind** instead of **Arcane Blast** and the Fire points) replaces this build when the running leveling queue writes it; the list is the same.
 
 **When to change it**
 
-- On a nearly dead mob, skip even a free **Arcane Missiles** (the fight lab does not channel it into a mob a few wand hits from death): an **Ice Lance** or **Fire Blast** that will kill, or the wand.
+- On a nearly dead mob, skip even a free **Arcane Missiles**: an **Ice Lance** or **Fire Blast** that will kill, or the wand.
 - Mob on you with **Frost Nova** down: **Fire Blast**, then keep casting **Frostbolt**; the list does not use **Cone of Cold** here.
 
 ## The numbers

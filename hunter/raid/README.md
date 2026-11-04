@@ -6,8 +6,8 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Marksmanship](marksmanship.md) 🔬 | 1004 | best |
-| 2 | [Beast Mastery](beast-mastery.md) 🔬 | 995 | -0.9% |
+| 1 | [Marksmanship](marksmanship.md) — With a pet 🔬 | 1008 | best |
+| 2 | [Beast Mastery](beast-mastery.md) 🔬 | 995 | -1% |
 | 3 | [Beast-Marks](beast-marks.md) 🔬 | 986 | -2% |
 | 4 | [Survival](survival.md) — Melee Survival — Lone Wolf | 734 | -27% |
 

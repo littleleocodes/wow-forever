@@ -8,12 +8,6 @@
 - druid Feral Combat raid: **Improved Shifting Power** is not a spell or talent of the class
 - druid Feral Combat leveling: **Berserk** is not a spell or talent of the class
 - druid Restoration leveling: **Berserk** is not a spell or talent of the class
-- mage Hybrid Arcane/Frost raid: **Arcane Focus** is not a spell or talent of the class
-- mage Arcane leveling: **Improved Fireball** is not a spell or talent of the class
-- mage Fire raid: **Improved Fireball** is not a spell or talent of the class
-- mage Fire leveling: **Elemental Precision** is not a spell or talent of the class
-- mage Hybrid Fire/Frost raid: **Improved Fireball** is not a spell or talent of the class
-- mage Hybrid Fire/Frost leveling: **Improved Fireball** is not a spell or talent of the class
 - paladin Retribution raid: **Twist of Light** is not a spell or talent of the class
 - paladin Retribution raid: **Instrument of Law** is not a spell or talent of the class
 - paladin Retribution raid: **Twist of Light** is not a spell or talent of the class
@@ -44,7 +38,7 @@
 - shaman Hybrid Elemental/Enhancement leveling: **Lava Burst** is not a spell or talent of the class
 - warrior Fury raid: **Raging Blows** is not a spell or talent of the class
 
-Guides whose rotation changed since they were stamped (75; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (55; rewrite or confirm, then `--stamp`):
 
 - druid Balance raid: balance-dps
 - druid Balance leveling: leveling:balance-dps, leveling:feral-cat-dps
@@ -63,16 +57,6 @@ Guides whose rotation changed since they were stamped (75; rewrite or confirm, t
 - hunter Hybrid Marksmanship/Survival leveling: leveling:bm-leveling, leveling:melee-dps, leveling:mm-raid
 - hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
 - hunter Hybrid Beast Mastery/Survival leveling: leveling:bm-leveling, leveling:melee-dps, leveling:mm-raid
-- mage Frost raid: frost-raid
-- mage Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
-- mage Hybrid Arcane/Frost raid: arcane-dps, frost-raid
-- mage Hybrid Arcane/Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
-- mage Arcane raid: arcane-dps
-- mage Arcane leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
-- mage Fire raid: fire-raid
-- mage Fire leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
-- mage Hybrid Fire/Frost raid: fire-raid, frost-raid, frostfire-raid
-- mage Hybrid Fire/Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - paladin Retribution raid: ret-dps
 - paladin Retribution leveling: leveling:ret-dps
 - paladin Protection raid: prot-tank
@@ -80,16 +64,6 @@ Guides whose rotation changed since they were stamped (75; rewrite or confirm, t
 - paladin Holy raid: healer-policy
 - paladin Holy leveling: leveling:ret-dps
 - paladin Hybrid Protection/Retribution leveling: leveling:ret-dps
-- priest Shadow raid: shadow-dps
-- priest Shadow leveling: leveling:shadow-dps
-- priest Hybrid Discipline/Holy raid: smite-dps
-- priest Hybrid Discipline/Holy leveling: leveling:shadow-dps
-- priest Holy raid: healer-policy
-- priest Holy leveling: leveling:shadow-dps
-- priest Discipline raid: healer-policy
-- priest Discipline leveling: leveling:shadow-dps
-- priest Hybrid Discipline/Shadow leveling: leveling:shadow-dps
-- priest Hybrid Holy/Shadow leveling: leveling:shadow-dps
 - rogue Combat raid: combat-daggers-raid, combat-swords-raid
 - rogue Combat leveling: leveling:combat-daggers-raid, leveling:combat-swords-raid, leveling:subtlety-leveling
 - rogue Assassination raid: assassination-raid
@@ -122,10 +96,9 @@ Guides whose rotation changed since they were stamped (75; rewrite or confirm, t
 - warrior Protection raid: prot-tank
 - warrior Protection leveling: leveling:arms-2h-raid, leveling:fury-dw-raid
 
-Leveling steps that name a spell the tuned rules never cast (3; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
+Leveling steps that name a spell the tuned rules never cast (2; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
 
 - hunter melee-dps: **Hunter's Mark** (steps)
-- mage frostfire-leveling: **Fire Blast** (steps)
 - paladin ret-dps: **Hammer of Wrath** (steps)
 
 | Class | Spec | Mode | Written | Rotations stamped |
@@ -147,16 +120,16 @@ Leveling steps that name a spell the tuned rules never cast (3; `fightlab/rotati
 | hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-26 | leveling:bm-leveling e852aa153be5, leveling:melee-dps 8458d12d978e, leveling:mm-raid d33d788a1cf8 |
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-10-15 | bm-raid 8f87aee79821, melee-dps 15437c6a63dc |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-26 | leveling:bm-leveling e852aa153be5, leveling:melee-dps 8458d12d978e, leveling:mm-raid d33d788a1cf8 |
-| mage | Frost | raid | 2026-10-15 | frost-raid ceaa8ac62133 |
-| mage | Frost | leveling | 2026-10-25 | leveling:arcane-leveling 27e09b9f9858, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling cf21a8e991f8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling f000acfa7871, leveling:frostfire-leveling 3f77fbfd2a04 |
-| mage | Hybrid Arcane/Frost | raid | 2026-10-15 | arcane-dps 7bae7936e6c9, frost-raid ceaa8ac62133 |
-| mage | Hybrid Arcane/Frost | leveling | 2026-10-25 | leveling:arcane-leveling 27e09b9f9858, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling cf21a8e991f8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling f000acfa7871, leveling:frostfire-leveling 3f77fbfd2a04 |
-| mage | Arcane | raid | 2026-10-15 | arcane-dps 7bae7936e6c9 |
-| mage | Arcane | leveling | 2026-10-25 | leveling:arcane-leveling 27e09b9f9858, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling cf21a8e991f8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling f000acfa7871, leveling:frostfire-leveling 3f77fbfd2a04 |
-| mage | Fire | raid | 2026-10-15 | fire-raid 7334e0e47452 |
-| mage | Fire | leveling | 2026-10-25 | leveling:arcane-leveling 27e09b9f9858, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling cf21a8e991f8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling f000acfa7871, leveling:frostfire-leveling 3f77fbfd2a04 |
-| mage | Hybrid Fire/Frost | raid | 2026-10-15 | fire-raid 7334e0e47452, frost-raid ceaa8ac62133, frostfire-raid 6846a04e8427 |
-| mage | Hybrid Fire/Frost | leveling | 2026-10-25 | leveling:arcane-leveling 27e09b9f9858, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling cf21a8e991f8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling f000acfa7871, leveling:frostfire-leveling 3f77fbfd2a04 |
+| mage | Frost | raid | 2026-11-04 | frost-raid 9d92acd12c6d |
+| mage | Frost | leveling | 2026-11-04 | leveling:arcane-leveling 9d1ae9a522d8, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling c24e3c6c7850, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 3e9c29e27989, leveling:frostfire-leveling 9a85d8e88c92 |
+| mage | Hybrid Arcane/Frost | raid | 2026-11-04 | arcane-dps 2dde8eb89ed4, frost-raid 9d92acd12c6d |
+| mage | Hybrid Arcane/Frost | leveling | 2026-11-04 | leveling:arcane-leveling 9d1ae9a522d8, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling c24e3c6c7850, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 3e9c29e27989, leveling:frostfire-leveling 9a85d8e88c92 |
+| mage | Arcane | raid | 2026-11-04 | arcane-dps 2dde8eb89ed4 |
+| mage | Arcane | leveling | 2026-11-04 | leveling:arcane-leveling 9d1ae9a522d8, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling c24e3c6c7850, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 3e9c29e27989, leveling:frostfire-leveling 9a85d8e88c92 |
+| mage | Fire | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e |
+| mage | Fire | leveling | 2026-11-04 | leveling:arcane-leveling 9d1ae9a522d8, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling c24e3c6c7850, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 3e9c29e27989, leveling:frostfire-leveling 9a85d8e88c92 |
+| mage | Hybrid Fire/Frost | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
+| mage | Hybrid Fire/Frost | leveling | 2026-11-04 | leveling:arcane-leveling 9d1ae9a522d8, leveling:barrage-frost-leveling a329045fee8c, leveling:fire-leveling c24e3c6c7850, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 3e9c29e27989, leveling:frostfire-leveling 9a85d8e88c92 |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps 3cec859f35ba |
 | paladin | Retribution | leveling | 2026-10-25 | leveling:holy-leveling aef967206b4b, leveling:prot-leveling 087bc74a10c5, leveling:ret-dps ad51264a1c1f |
 | paladin | Protection | raid | 2026-10-15 | prot-tank 608ab285bedb |
@@ -164,16 +137,16 @@ Leveling steps that name a spell the tuned rules never cast (3; `fightlab/rotati
 | paladin | Holy | raid | 2026-10-22 | healer-policy 7cf1636a5c1f |
 | paladin | Holy | leveling | 2026-10-25 | leveling:holy-leveling aef967206b4b, leveling:prot-leveling 087bc74a10c5, leveling:ret-dps ad51264a1c1f |
 | paladin | Hybrid Protection/Retribution | leveling | 2026-10-25 | leveling:holy-leveling aef967206b4b, leveling:prot-leveling 087bc74a10c5, leveling:ret-dps ad51264a1c1f |
-| priest | Shadow | raid | 2026-10-15 | shadow-dps d5c2e2e6d230 |
-| priest | Shadow | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
-| priest | Hybrid Discipline/Holy | raid | 2026-10-15 | smite-dps 717a571c0573 |
-| priest | Hybrid Discipline/Holy | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
-| priest | Holy | raid | 2026-10-22 | healer-policy 19136378612a |
-| priest | Holy | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
-| priest | Discipline | raid | 2026-10-22 | healer-policy 19136378612a |
-| priest | Discipline | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
-| priest | Hybrid Discipline/Shadow | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
-| priest | Hybrid Holy/Shadow | leveling | 2026-10-25 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps c9fb4f710ad9 |
+| priest | Shadow | raid | 2026-11-04 | shadow-dps f98eed89871b |
+| priest | Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
+| priest | Hybrid Discipline/Holy | raid | 2026-11-04 | smite-dps 15055efffd77 |
+| priest | Hybrid Discipline/Holy | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
+| priest | Holy | raid | 2026-11-04 | healer-policy c4373309aaa3 |
+| priest | Holy | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
+| priest | Discipline | raid | 2026-11-04 | healer-policy c4373309aaa3 |
+| priest | Discipline | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
+| priest | Hybrid Discipline/Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
+| priest | Hybrid Holy/Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 3e9a00a0562d, leveling:holy-leveling efa767cc819b, leveling:shadow-dps f45b6cabae66 |
 | rogue | Combat | raid | 2026-10-15 | combat-daggers-raid e3e856fde9f1, combat-swords-raid a590fe6bed98 |
 | rogue | Combat | leveling | 2026-10-26 | leveling:combat-daggers-raid 1c8ea6be8e93, leveling:combat-swords-raid af9802b17d02, leveling:subtlety-leveling 508e6b48af2b |
 | rogue | Assassination | raid | 2026-10-15 | assassination-raid f681c6caf5d3 |

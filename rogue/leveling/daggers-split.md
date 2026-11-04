@@ -6,25 +6,24 @@
 
 **[Daggers (split, optimized, AoE pulls)](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (21/27/3) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-31203302100123015-3-7)
 
-**Signature spells:** 76% of the damage at level 60 in the fight lab comes from melee, Backstab, Mutilate, Sinister Strike, Eviscerate (the spec's rule: at least 60%).
+**Signature spells:** 75% of the damage at level 60 in the fight lab comes from melee, Backstab, Mutilate, Sinister Strike, Eviscerate (the spec's rule: at least 60%).
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Mutilate**, **Venom** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
+**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
 **In the fight**, top to bottom:
 
 1. Open with **Garrote**.
-2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum.
-3. **Sinister Strike** until you have 5 combo points.
+2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Venom** it also strengthens your poisons for 6 seconds.
+3. **Sinister Strike** until you have 5 combo points; once your build has **Mutilate** (from about level 40), it replaces **Sinister Strike**: 2 points a press, so wait for its 60 energy. The mob faces you after the opener, so **Backstab** is out.
 4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
 5. **Cold Blood** right before an **Eviscerate** at 5 points.
 6. **Riposte** after you parry.
-7. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-8. Do not interrupt a caster mob: let it cast and walk in.
-9. **Evasion** below half health while the mob still has more than 30% of its health.
+7. **Kick** a caster mob's spell.
+8. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 

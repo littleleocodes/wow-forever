@@ -6,27 +6,26 @@
 
 > 🔬 These are your **raid talents** ([Protection — Raid tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 26 s per kill; stats model's order: 30 s per kill; own tree last: 31 s per kill). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70%). Protection is defined by **Shield Slam** cast in every fight and melee, Shield Slam, Revenge, Heroic Strike, Thunder Clap carrying 70% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 90% of the damage at level 60 in the fight lab comes from melee, Shield Slam, Revenge, Heroic Strike, Thunder Clap (the spec's rule: at least 70%; **Shield Slam** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Bloodthrill**, **Improved Slam**, **Mortal Strike**, **Reckless Swings**, **Spearing Strike**, **Sweeping Strikes** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Vanguard** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Battle Stance**, a two-handed weapon.
+**Before the fight:** A one-handed weapon and a shield, **Defensive Stance**.
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
-2. **Battle Shout**: keep it up (it lasts 3 minutes).
-3. **Execute** first once the mob is below 20% health.
-4. **Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.
-5. **Reckless Swings** (if your build has it) whenever it is ready while you are above 80% health and the mob above 30%: your next 4 hits give 5 more rage each.
-6. **Mortal Strike** whenever ready.
-7. **Rend** once, while the mob has more than a third of its health.
-8. Spare rage: **Slam** (only with **Improved Slam**), then **Spearing Strike**, then **Heroic Strike**; keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
-9. Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
+1. **Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).
+2. **Shield Bash** a mob that is casting.
+3. **Shield Block** whenever the mob is hitting you.
+4. **Battle Shout**: keep it up (it lasts 3 minutes).
+5. **Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.
+6. **Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.
+7. **Rend** once, while the mob has more than half its health.
+8. **Heroic Strike** with spare rage, keeping enough for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
 
-**Between fights:** Bandage below 60% health, eat below 50%.
+**Between fights:** You rarely need to eat or bandage: the shield soaks most of the damage.
 
 ## Why this rotation
 

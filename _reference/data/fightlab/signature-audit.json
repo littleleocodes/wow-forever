@@ -714,10 +714,10 @@
    },
    "frostfire-open-leveling": {
     "spec": "Hybrid Fire/Frost",
-    "rotation": "frost-leveling",
-    "ok": false,
-    "verdict": "FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%",
-    "core_share": 0,
+    "rotation": "frostfire-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.3677,
     "min_share": 0.3,
     "required": [
      "Frostfire Bolt"
@@ -726,30 +726,11 @@
      "Frostfire Bolt"
     ],
     "casts_60": {
-     "Frostfire Bolt": 0.0
+     "Frostfire Bolt": 3.05
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Frostfire Bolt",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Frostfire Bolt",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Frostfire Bolt",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "3e35d82104de",
+    "uncast": [],
+    "fingerprint": "063ee76cb2fa",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -757,10 +738,10 @@
   "paladin": {
    "holy-leveling": {
     "spec": "Holy",
-    "rotation": "ret-dps",
+    "rotation": "holy-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Holy Shock",
-    "core_share": 0.8285,
+    "core_share": 0.728,
     "min_share": 0.6,
     "required": [
      "Holy Shock"
@@ -780,16 +761,16 @@
      "Holy Shock"
     ],
     "uncast": [],
-    "fingerprint": "12ab406c4886",
+    "fingerprint": "c7030a89beaa",
     "date": "2026-11-04",
     "fights": 300
    },
    "protection-leveling": {
     "spec": "Protection",
-    "rotation": "ret-dps",
-    "ok": false,
-    "verdict": "FAIL: Holy Shield 0.00/kill at 60 (needs 0.50)",
-    "core_share": 0.6314,
+    "rotation": "prot-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6922,
     "min_share": 0.6,
     "required": [
      "Holy Shield"
@@ -803,18 +784,11 @@
      "Seal of Righteousness"
     ],
     "casts_60": {
-     "Holy Shield": 0.0
+     "Holy Shield": 2.07
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Holy Shield",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "872f82007ccb",
+    "uncast": [],
+    "fingerprint": "7edf80329a5b",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -874,7 +848,7 @@
    },
    "hybrid-holy-protection-open-leveling": {
     "spec": "Hybrid Holy/Protection",
-    "rotation": "ret-dps",
+    "rotation": "holy-leveling",
     "ok": true,
     "verdict": "no rule",
     "core_share": null,
@@ -884,7 +858,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "949f12a43e2e",
+    "fingerprint": "52adfc29083e",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -973,10 +947,10 @@
   "priest": {
    "discipline-open-leveling": {
     "spec": "Discipline",
-    "rotation": "shadow-dps",
-    "ok": false,
-    "verdict": "FAIL: Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
-    "core_share": 0.379,
+    "rotation": "discipline-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.4561,
     "min_share": 0.4,
     "required": [
      "Penance",
@@ -989,58 +963,21 @@
      "Mind Blast"
     ],
     "casts_60": {
-     "Penance": 0.0,
-     "Smite": 0.0
+     "Penance": 1.0,
+     "Smite": 1.23
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Penance",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "e73955a68a30",
+    "uncast": [],
+    "fingerprint": "b71c1acc215f",
     "date": "2026-11-04",
     "fights": 300
    },
    "discipline-leveling": {
     "spec": "Discipline",
-    "rotation": "shadow-dps",
-    "ok": false,
-    "verdict": "FAIL: Penance 0.00/kill at 40 (needs 0.50); Penance 0.00/kill at 50 (needs 0.50); Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
-    "core_share": 0.3797,
+    "rotation": "discipline-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.4352,
     "min_share": 0.4,
     "required": [
      "Penance",
@@ -1053,70 +990,21 @@
      "Mind Blast"
     ],
     "casts_60": {
-     "Penance": 0.0,
-     "Smite": 0.0
+     "Penance": 1.03,
+     "Smite": 1.24
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Penance",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Penance",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Penance",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "b3bd80307a98",
+    "uncast": [],
+    "fingerprint": "0b213a74c433",
     "date": "2026-11-04",
     "fights": 300
    },
    "holy-leveling": {
     "spec": "Holy",
-    "rotation": "shadow-dps",
-    "ok": false,
-    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%",
-    "core_share": 0,
+    "rotation": "holy-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.4135,
     "min_share": 0.4,
     "required": [
      "Smite",
@@ -1127,73 +1015,12 @@
      "Holy Fire"
     ],
     "casts_60": {
-     "Smite": 0.0,
-     "Holy Fire": 0.0
+     "Smite": 4.19,
+     "Holy Fire": 1.55
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "d52a8370446a",
+    "uncast": [],
+    "fingerprint": "0c5317743076",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -1344,10 +1171,10 @@
    },
    "smite-open-leveling": {
     "spec": "Hybrid Discipline/Holy",
-    "rotation": "shadow-dps",
-    "ok": false,
-    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
-    "core_share": 0,
+    "rotation": "holy-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.5571,
     "min_share": 0.5,
     "required": [
      "Smite",
@@ -1358,73 +1185,12 @@
      "Holy Fire"
     ],
     "casts_60": {
-     "Smite": 0.0,
-     "Holy Fire": 0.0
+     "Smite": 6.02,
+     "Holy Fire": 1.39
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "c8ed1d9ebff4",
+    "uncast": [],
+    "fingerprint": "4d6fbc39f29b",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -1623,10 +1389,10 @@
    },
    "opt-combat-swords-raid-leveling-aoe": {
     "spec": "Hybrid Assassination/Combat",
-    "rotation": "combat-swords-raid",
+    "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7624,
+    "core_share": 0.7492,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -1639,7 +1405,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "f9eac4b92c0b",
+    "fingerprint": "c610395a8438",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -2031,10 +1797,10 @@
    },
    "destruction-open-leveling": {
     "spec": "Destruction",
-    "rotation": "affliction-leveling",
-    "ok": false,
-    "verdict": "FAIL: core share 46% < 60%",
-    "core_share": 0.463,
+    "rotation": "destruction-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8086,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -2049,16 +1815,124 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "2f6859c76c27",
+    "fingerprint": "9895bfde9649",
     "date": "2026-11-04",
     "fights": 300
    },
    "leveling-affliction": {
     "spec": "Hybrid Affliction/Demonology",
-    "rotation": "affliction-leveling",
+    "rotation": "demonology-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.6597,
+    "core_share": 0.685,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.24
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "c2b57361c3ba",
+    "date": "2026-11-04",
+    "fights": 300
+   },
+   "opt-affliction-leveling-leveling-st": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "demonology-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6806,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.12
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "faa56a4f0eb9",
+    "date": "2026-11-04",
+    "fights": 300
+   },
+   "opt-affliction-leveling-solo-60": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "demonology-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6806,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.12
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "1269ecc746e8",
+    "date": "2026-11-04",
+    "fights": 300
+   },
+   "opt-affliction-leveling-leveling-aoe": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "demonology-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6973,
+    "min_share": 0.5,
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "casts_60": {
+     "Corruption": 1.28
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "28df412f2329",
+    "date": "2026-11-04",
+    "fights": 300
+   },
+   "affliction-demonology-open-leveling": {
+    "spec": "Hybrid Affliction/Demonology",
+    "rotation": "demonology-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7188,
     "min_share": 0.5,
     "required": [
      "Corruption"
@@ -2076,121 +1950,13 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "139c689d4aa7",
-    "date": "2026-11-04",
-    "fights": 300
-   },
-   "opt-affliction-leveling-leveling-st": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "affliction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6493,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "casts_60": {
-     "Corruption": 1.02
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "19259fb5ce92",
-    "date": "2026-11-04",
-    "fights": 300
-   },
-   "opt-affliction-leveling-solo-60": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "affliction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6493,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "casts_60": {
-     "Corruption": 1.02
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "3b6599b76675",
-    "date": "2026-11-04",
-    "fights": 300
-   },
-   "opt-affliction-leveling-leveling-aoe": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "affliction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6446,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "casts_60": {
-     "Corruption": 1.01
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "e974ed7f63d1",
-    "date": "2026-11-04",
-    "fights": 300
-   },
-   "affliction-demonology-open-leveling": {
-    "spec": "Hybrid Affliction/Demonology",
-    "rotation": "affliction-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.6469,
-    "min_share": 0.5,
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "casts_60": {
-     "Corruption": 1.03
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "486e46c219de",
+    "fingerprint": "cf037c792e37",
     "date": "2026-11-04",
     "fights": 300
    },
    "hybrid-demonology-destruction-open-leveling": {
     "spec": "Hybrid Demonology/Destruction",
-    "rotation": "affliction-leveling",
+    "rotation": "demonology-leveling",
     "ok": true,
     "verdict": "no rule",
     "core_share": null,
@@ -2200,7 +1966,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "6974580adedb",
+    "fingerprint": "214eb5437598",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -2268,10 +2034,10 @@
    },
    "opt-fury-dw-raid-leveling-st": {
     "spec": "Fury",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8503,
+    "core_share": 0.8615,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2285,20 +2051,20 @@
      "Slam"
     ],
     "casts_60": {
-     "Bloodthirst": 3.03
+     "Bloodthirst": 2.82
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "71a53530644f",
+    "fingerprint": "eea7ef6d3de9",
     "date": "2026-11-04",
     "fights": 300
    },
    "opt-fury-dw-raid-solo-60": {
     "spec": "Fury",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8853,
+    "core_share": 0.8968,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2312,20 +2078,20 @@
      "Slam"
     ],
     "casts_60": {
-     "Bloodthirst": 3.27
+     "Bloodthirst": 2.94
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "7161c5ec4011",
+    "fingerprint": "b9cf9cd42425",
     "date": "2026-11-04",
     "fights": 300
    },
    "opt-arms-2h-raid-leveling-aoe": {
     "spec": "Fury",
-    "rotation": "arms-2h-raid",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8086,
+    "rotation": "fury-dw-raid",
+    "ok": false,
+    "verdict": "FAIL: core share 80% < 80%",
+    "core_share": 0.7974,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2339,20 +2105,20 @@
      "Slam"
     ],
     "casts_60": {
-     "Bloodthirst": 2.52
+     "Bloodthirst": 2.41
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "b25f5d7d9ab0",
+    "fingerprint": "0bcf136c931e",
     "date": "2026-11-04",
     "fights": 300
    },
    "fury-open-leveling": {
     "spec": "Fury",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.833,
+    "core_share": 0.8453,
     "min_share": 0.8,
     "required": [
      "Bloodthirst"
@@ -2366,20 +2132,20 @@
      "Slam"
     ],
     "casts_60": {
-     "Bloodthirst": 2.7
+     "Bloodthirst": 2.56
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "eabc025d90da",
+    "fingerprint": "356219526c2b",
     "date": "2026-11-04",
     "fights": 300
    },
    "protection-leveling": {
     "spec": "Protection",
-    "rotation": "arms-2h-raid",
-    "ok": false,
-    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70%",
-    "core_share": 0.6752,
+    "rotation": "prot-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8997,
     "min_share": 0.7,
     "required": [
      "Shield Slam"
@@ -2392,39 +2158,20 @@
      "Thunder Clap"
     ],
     "casts_60": {
-     "Shield Slam": 0.0
+     "Shield Slam": 3.5
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Shield Slam",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "30f90c83de4f",
+    "uncast": [],
+    "fingerprint": "2d066e85ef5b",
     "date": "2026-11-04",
     "fights": 300
    },
    "protection-open-leveling": {
     "spec": "Protection",
-    "rotation": "arms-2h-raid",
-    "ok": false,
-    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50)",
-    "core_share": 0.7129,
+    "rotation": "prot-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.9451,
     "min_share": 0.7,
     "required": [
      "Shield Slam"
@@ -2437,30 +2184,11 @@
      "Thunder Clap"
     ],
     "casts_60": {
-     "Shield Slam": 0.0
+     "Shield Slam": 3.21
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Shield Slam",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "5de94caf0ab2",
+    "uncast": [],
+    "fingerprint": "d0fdae8f58e6",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -3495,62 +3223,9 @@
     "name": "Frostfire",
     "build": "frostfire-open-leveling",
     "split": "1/25/25",
-    "rotation": "frost-leveling",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Frostfire Bolt"
-    ],
-    "core": [
-     "Frostfire Bolt"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Frostfire Bolt": 0.0
-    },
-    "core_share": 0,
-    "min_share": 0.3,
-    "weighted": 31.5,
-    "verdict": "FAIL: Frostfire Bolt 0.00/kill at 40 (needs 0.50); Frostfire Bolt 0.00/kill at 50 (needs 0.50); Frostfire Bolt 0.00/kill at 60 (needs 0.50); core share 0% < 30%",
-    "ok": false,
-    "missing_talents": [],
-    "uncast": [
-     [
-      "Frostfire Bolt",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Frostfire Bolt",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Frostfire Bolt",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "top_shares": {
-     "Frostbolt": 0.514,
-     "Ice Lance": 0.382,
-     "Fire Blast": 0.06,
-     "Wand": 0.026,
-     "Frost Nova": 0.017,
-     "Ignite": 0.001
-    }
-   },
-   {
-    "spec": "Hybrid Fire/Frost",
-    "name": "Frostfire",
-    "build": "frostfire-open-leveling",
-    "split": "1/25/25",
     "rotation": "frostfire-leveling",
     "rules": "tuned",
-    "kind": "mapped",
+    "kind": "page",
     "required": [
      "Frostfire Bolt"
     ],
@@ -3584,7 +3259,7 @@
     "name": "Holy",
     "build": "holy-leveling",
     "split": "30/16/5",
-    "rotation": "ret-dps",
+    "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3602,9 +3277,9 @@
     "casts_60": {
      "Holy Shock": 0.0
     },
-    "core_share": 0.8285,
+    "core_share": 0.728,
     "min_share": 0.6,
-    "weighted": 36.79,
+    "weighted": 35.17,
     "verdict": "FAIL: lacks Holy Shock",
     "ok": false,
     "missing_talents": [
@@ -3612,10 +3287,11 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.472,
-     "Seal of Righteousness": 0.187,
-     "Holy Strike": 0.172,
-     "Judgement": 0.17
+     "Melee": 0.388,
+     "Seal of Righteousness": 0.173,
+     "Judgement": 0.167,
+     "Holy Strike": 0.139,
+     "Hammer of Wrath": 0.133
     }
    },
    {
@@ -3623,7 +3299,7 @@
     "name": "Protection",
     "build": "protection-leveling",
     "split": "0/34/17",
-    "rotation": "ret-dps",
+    "rotation": "prot-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3639,28 +3315,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shield": 0.0
+     "Holy Shield": 2.07
     },
-    "core_share": 0.6314,
+    "core_share": 0.6922,
     "min_share": 0.6,
-    "weighted": 30.26,
-    "verdict": "FAIL: Holy Shield 0.00/kill at 60 (needs 0.50)",
-    "ok": false,
+    "weighted": 31.6,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Holy Shield",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Melee": 0.394,
-     "Judgement": 0.237,
-     "Holy Strike": 0.179,
-     "Seal of Command": 0.167,
-     "Reckoning": 0.023
+     "Melee": 0.273,
+     "Holy Shield": 0.176,
+     "Holy Strike": 0.148,
+     "Judgement": 0.132,
+     "Hammer of Wrath": 0.103,
+     "Seal of Fury": 0.071
     }
    },
    {
@@ -3742,7 +3412,7 @@
     "name": "Holy/Protection hybrid",
     "build": "hybrid-holy-protection-open-leveling",
     "split": "21/16/14",
-    "rotation": "ret-dps",
+    "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -3751,16 +3421,18 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 29.02,
+    "weighted": 29.53,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.388,
-     "Judgement": 0.267,
-     "Seal of Command": 0.201,
-     "Holy Strike": 0.144
+     "Judgement": 0.287,
+     "Melee": 0.262,
+     "Seal of Command": 0.144,
+     "Hammer of Wrath": 0.137,
+     "Holy Strike": 0.107,
+     "Holy Shock": 0.063
     }
    },
    {
@@ -3882,7 +3554,7 @@
     "name": "Discipline",
     "build": "discipline-open-leveling",
     "split": "30/0/21",
-    "rotation": "shadow-dps",
+    "rotation": "discipline-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -3895,62 +3567,25 @@
      "Holy Fire",
      "Mind Blast"
     ],
-    "rule_issues": [
-     "Smite off"
-    ],
+    "rule_issues": [],
     "casts_60": {
-     "Penance": 0.0,
-     "Smite": 0.0
+     "Penance": 1.0,
+     "Smite": 1.23
     },
-    "core_share": 0.379,
+    "core_share": 0.4561,
     "min_share": 0.4,
-    "weighted": 34.88,
-    "verdict": "FAIL: Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
-    "ok": false,
+    "weighted": 39.66,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Penance",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Mind Blast": 0.379,
-     "Wand": 0.256,
-     "Shadow Word: Pain": 0.245,
-     "Shadow Word: Death": 0.12
+     "Mind Blast": 0.281,
+     "Shadow Word: Pain": 0.239,
+     "Devouring Plague": 0.176,
+     "Wand": 0.128,
+     "Penance": 0.096,
+     "Smite": 0.079
     }
    },
    {
@@ -3958,7 +3593,7 @@
     "name": "Discipline",
     "build": "discipline-leveling",
     "split": "30/21/0",
-    "rotation": "shadow-dps",
+    "rotation": "discipline-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -3971,74 +3606,25 @@
      "Holy Fire",
      "Mind Blast"
     ],
-    "rule_issues": [
-     "Smite off"
-    ],
+    "rule_issues": [],
     "casts_60": {
-     "Penance": 0.0,
-     "Smite": 0.0
+     "Penance": 1.03,
+     "Smite": 1.24
     },
-    "core_share": 0.3797,
+    "core_share": 0.4352,
     "min_share": 0.4,
-    "weighted": 42.85,
-    "verdict": "FAIL: Penance 0.00/kill at 40 (needs 0.50); Penance 0.00/kill at 50 (needs 0.50); Penance 0.00/kill at 60 (needs 0.50); Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); core share 38% < 40%",
-    "ok": false,
+    "weighted": 46.3,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Penance",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Penance",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Penance",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Mind Blast": 0.38,
-     "Shadow Word: Pain": 0.279,
-     "Wand": 0.226,
-     "Shadow Word: Death": 0.116
+     "Mind Blast": 0.263,
+     "Shadow Word: Pain": 0.23,
+     "Devouring Plague": 0.172,
+     "Wand": 0.163,
+     "Penance": 0.095,
+     "Smite": 0.077
     }
    },
    {
@@ -4046,7 +3632,7 @@
     "name": "Holy",
     "build": "holy-leveling",
     "split": "22/29/0",
-    "rotation": "shadow-dps",
+    "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -4057,86 +3643,25 @@
      "Smite",
      "Holy Fire"
     ],
-    "rule_issues": [
-     "Smite off"
-    ],
+    "rule_issues": [],
     "casts_60": {
-     "Smite": 0.0,
-     "Holy Fire": 0.0
+     "Smite": 4.19,
+     "Holy Fire": 1.55
     },
-    "core_share": 0,
+    "core_share": 0.4135,
     "min_share": 0.4,
-    "weighted": 43.13,
-    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 40%",
-    "ok": false,
+    "weighted": 56.06,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Mind Blast": 0.381,
-     "Shadow Word: Pain": 0.277,
-     "Wand": 0.225,
-     "Shadow Word: Death": 0.116
+     "Smite": 0.268,
+     "Shadow Word: Pain": 0.225,
+     "Holy Fire": 0.146,
+     "Penance": 0.137,
+     "Mind Blast": 0.131,
+     "Wand": 0.093
     }
    },
    {
@@ -4344,107 +3869,9 @@
     "name": "Smite",
     "build": "smite-open-leveling",
     "split": "22/21/8",
-    "rotation": "shadow-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Smite",
-     "Holy Fire"
-    ],
-    "core": [
-     "Smite",
-     "Holy Fire"
-    ],
-    "rule_issues": [
-     "Smite off"
-    ],
-    "casts_60": {
-     "Smite": 0.0,
-     "Holy Fire": 0.0
-    },
-    "core_share": 0,
-    "min_share": 0.5,
-    "weighted": 37.62,
-    "verdict": "FAIL: Smite 0.00/kill at 20 (needs 0.50); Smite 0.00/kill at 30 (needs 0.50); Smite 0.00/kill at 40 (needs 0.50); Smite 0.00/kill at 50 (needs 0.50); Smite 0.00/kill at 60 (needs 0.50); Holy Fire 0.00/kill at 20 (needs 0.50); Holy Fire 0.00/kill at 30 (needs 0.50); Holy Fire 0.00/kill at 40 (needs 0.50); Holy Fire 0.00/kill at 50 (needs 0.50); Holy Fire 0.00/kill at 60 (needs 0.50); core share 0% < 50%",
-    "ok": false,
-    "missing_talents": [],
-    "uncast": [
-     [
-      "Smite",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Smite",
-      60,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Holy Fire",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "top_shares": {
-     "Mind Blast": 0.368,
-     "Wand": 0.271,
-     "Shadow Word: Pain": 0.258,
-     "Shadow Word: Death": 0.102
-    }
-   },
-   {
-    "spec": "Hybrid Discipline/Holy",
-    "name": "Smite",
-    "build": "smite-open-leveling",
-    "split": "22/21/8",
     "rotation": "holy-leveling",
     "rules": "tuned",
-    "kind": "mapped",
+    "kind": "page",
     "required": [
      "Smite",
      "Holy Fire"
@@ -4755,43 +4182,9 @@
     "name": "Daggers (split)",
     "build": "opt-combat-swords-raid-leveling-aoe",
     "split": "21/27/3",
-    "rotation": "combat-swords-raid",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [],
-    "core": [
-     "melee",
-     "Backstab",
-     "Mutilate",
-     "Sinister Strike",
-     "Eviscerate"
-    ],
-    "rule_issues": [],
-    "casts_60": {},
-    "core_share": 0.7624,
-    "min_share": 0.6,
-    "weighted": 22.75,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Eviscerate": 0.3,
-     "Sinister Strike": 0.226,
-     "Melee": 0.149,
-     "Garrote": 0.093,
-     "Instant Poison": 0.081,
-     "Melee (off-hand)": 0.068
-    }
-   },
-   {
-    "spec": "Hybrid Assassination/Combat",
-    "name": "Daggers (split)",
-    "build": "opt-combat-swords-raid-leveling-aoe",
-    "split": "21/27/3",
     "rotation": "combat-daggers-raid",
     "rules": "tuned",
-    "kind": "mapped",
+    "kind": "page",
     "required": [],
     "core": [
      "melee",
@@ -5378,7 +4771,7 @@
     "name": "Destruction",
     "build": "destruction-open-leveling",
     "split": "6/11/34",
-    "rotation": "affliction-leveling",
+    "rotation": "destruction-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [],
@@ -5393,215 +4786,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.463,
+    "core_share": 0.8086,
     "min_share": 0.6,
-    "weighted": 46.85,
-    "verdict": "FAIL: core share 46% < 60%",
-    "ok": false,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Shadow Bolt": 0.303,
-     "Bane of Agony": 0.136,
-     "Corruption": 0.132,
-     "Wand": 0.111,
-     "Voidwalker melee": 0.111,
-     "Immolate": 0.083
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "leveling-affliction",
-    "split": "23/26/2",
-    "rotation": "affliction-leveling",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.06
-    },
-    "core_share": 0.6597,
-    "min_share": 0.5,
-    "weighted": 38.86,
+    "weighted": 45.74,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Bane of Agony": 0.214,
-     "Corruption": 0.2,
-     "Wand": 0.176,
-     "Shadow Bolt": 0.134,
-     "Voidwalker melee": 0.122,
-     "Siphon Life": 0.094
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "opt-affliction-leveling-leveling-st",
-    "split": "27/24/0",
-    "rotation": "affliction-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.02
-    },
-    "core_share": 0.6493,
-    "min_share": 0.5,
-    "weighted": 38.47,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Bane of Agony": 0.21,
-     "Corruption": 0.205,
-     "Wand": 0.172,
-     "Shadow Bolt": 0.15,
-     "Voidwalker melee": 0.124,
-     "Siphon Life": 0.092
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "opt-affliction-leveling-solo-60",
-    "split": "27/24/0",
-    "rotation": "affliction-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.02
-    },
-    "core_share": 0.6493,
-    "min_share": 0.5,
-    "weighted": 38.53,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Bane of Agony": 0.21,
-     "Corruption": 0.205,
-     "Wand": 0.172,
-     "Shadow Bolt": 0.15,
-     "Voidwalker melee": 0.124,
-     "Siphon Life": 0.092
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "opt-affliction-leveling-leveling-aoe",
-    "split": "21/24/6",
-    "rotation": "affliction-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.01
-    },
-    "core_share": 0.6446,
-    "min_share": 0.5,
-    "weighted": 41.67,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Corruption": 0.196,
-     "Bane of Agony": 0.19,
-     "Shadow Bolt": 0.169,
-     "Wand": 0.133,
-     "Voidwalker melee": 0.096,
-     "Siphon Life": 0.094
-    }
-   },
-   {
-    "spec": "Hybrid Affliction/Demonology",
-    "name": "Affliction-Demonology",
-    "build": "affliction-demonology-open-leveling",
-    "split": "27/24/0",
-    "rotation": "affliction-leveling",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Corruption"
-    ],
-    "core": [
-     "Corruption",
-     "Bane of Agony",
-     "Siphon Life",
-     "Drain Life",
-     "Wrack",
-     "pet"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Corruption": 1.03
-    },
-    "core_share": 0.6469,
-    "min_share": 0.5,
-    "weighted": 38.53,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Bane of Agony": 0.21,
-     "Corruption": 0.204,
-     "Wand": 0.165,
-     "Shadow Bolt": 0.155,
-     "Voidwalker melee": 0.119,
-     "Siphon Life": 0.092
+     "Incinerate": 0.273,
+     "Shadow Bolt": 0.153,
+     "Conflagrate": 0.145,
+     "Immolate": 0.142,
+     "Shadowburn": 0.096,
+     "Wand": 0.09
     }
    },
    {
@@ -5611,7 +4809,7 @@
     "split": "23/26/2",
     "rotation": "demonology-leveling",
     "rules": "tuned",
-    "kind": "mapped",
+    "kind": "page",
     "required": [
      "Corruption"
     ],
@@ -5644,11 +4842,167 @@
     }
    },
    {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "opt-affliction-leveling-leveling-st",
+    "split": "27/24/0",
+    "rotation": "demonology-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.12
+    },
+    "core_share": 0.6806,
+    "min_share": 0.5,
+    "weighted": 32.75,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Wand": 0.254,
+     "Bane of Agony": 0.225,
+     "Corruption": 0.217,
+     "Voidwalker melee": 0.138,
+     "Siphon Life": 0.099,
+     "Immolate": 0.065
+    }
+   },
+   {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "opt-affliction-leveling-solo-60",
+    "split": "27/24/0",
+    "rotation": "demonology-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.12
+    },
+    "core_share": 0.6806,
+    "min_share": 0.5,
+    "weighted": 32.76,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Wand": 0.254,
+     "Bane of Agony": 0.225,
+     "Corruption": 0.217,
+     "Voidwalker melee": 0.138,
+     "Siphon Life": 0.099,
+     "Immolate": 0.065
+    }
+   },
+   {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "opt-affliction-leveling-leveling-aoe",
+    "split": "21/24/6",
+    "rotation": "demonology-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.28
+    },
+    "core_share": 0.6973,
+    "min_share": 0.5,
+    "weighted": 33.61,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Wand": 0.28,
+     "Corruption": 0.23,
+     "Bane of Agony": 0.212,
+     "Voidwalker melee": 0.133,
+     "Siphon Life": 0.106,
+     "Immolate": 0.021
+    }
+   },
+   {
+    "spec": "Hybrid Affliction/Demonology",
+    "name": "Affliction-Demonology",
+    "build": "affliction-demonology-open-leveling",
+    "split": "27/24/0",
+    "rotation": "demonology-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Corruption"
+    ],
+    "core": [
+     "Corruption",
+     "Bane of Agony",
+     "Siphon Life",
+     "Drain Life",
+     "Wrack",
+     "pet"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Corruption": 1.06
+    },
+    "core_share": 0.7188,
+    "min_share": 0.5,
+    "weighted": 30.7,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Wand": 0.231,
+     "Bane of Agony": 0.21,
+     "Corruption": 0.209,
+     "Voidwalker melee": 0.135,
+     "Siphon Life": 0.091,
+     "Demonic Brand": 0.074
+    }
+   },
+   {
     "spec": "Hybrid Demonology/Destruction",
     "name": "Demonology/Destruction hybrid",
     "build": "hybrid-demonology-destruction-open-leveling",
     "split": "5/24/22",
-    "rotation": "affliction-leveling",
+    "rotation": "demonology-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [],
@@ -5657,18 +5011,18 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 41.65,
+    "weighted": 34.13,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Shadow Bolt": 0.315,
-     "Corruption": 0.148,
-     "Bane of Agony": 0.139,
-     "Voidwalker melee": 0.097,
-     "Immolate": 0.092,
-     "Wand": 0.08
+     "Wand": 0.305,
+     "Corruption": 0.195,
+     "Bane of Agony": 0.177,
+     "Voidwalker melee": 0.161,
+     "Shadowburn": 0.098,
+     "Immolate": 0.047
     }
    }
   ],
@@ -5762,7 +5116,7 @@
     "name": "Fury",
     "build": "opt-fury-dw-raid-leveling-st",
     "split": "13/38/0",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -5778,22 +5132,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bloodthirst": 3.03
+     "Bloodthirst": 2.82
     },
-    "core_share": 0.8503,
+    "core_share": 0.8615,
     "min_share": 0.8,
-    "weighted": 27.79,
+    "weighted": 24.77,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.456,
-     "Bloodthirst": 0.194,
-     "Execute": 0.151,
-     "Rend": 0.078,
-     "Heroic Strike": 0.049,
-     "Overpower": 0.041
+     "Melee": 0.255,
+     "Melee (off-hand)": 0.208,
+     "Bloodthirst": 0.191,
+     "Execute": 0.146,
+     "Rend": 0.07,
+     "Heroic Strike": 0.062
     }
    },
    {
@@ -5801,7 +5155,7 @@
     "name": "Fury",
     "build": "opt-fury-dw-raid-solo-60",
     "split": "11/40/0",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5817,22 +5171,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bloodthirst": 3.27
+     "Bloodthirst": 2.94
     },
-    "core_share": 0.8853,
+    "core_share": 0.8968,
     "min_share": 0.8,
-    "weighted": 28.39,
+    "weighted": 25.02,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.461,
-     "Bloodthirst": 0.212,
+     "Melee": 0.256,
+     "Melee (off-hand)": 0.209,
+     "Bloodthirst": 0.196,
      "Execute": 0.156,
-     "Rend": 0.06,
-     "Heroic Strike": 0.056,
-     "Overpower": 0.042
+     "Heroic Strike": 0.079,
+     "Rend": 0.052
     }
    },
    {
@@ -5840,7 +5194,7 @@
     "name": "Fury",
     "build": "opt-arms-2h-raid-leveling-aoe",
     "split": "20/31/0",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5856,22 +5210,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bloodthirst": 2.52
+     "Bloodthirst": 2.41
     },
-    "core_share": 0.8086,
+    "core_share": 0.7974,
     "min_share": 0.8,
-    "weighted": 25.81,
-    "verdict": "OK",
-    "ok": true,
+    "weighted": 26.07,
+    "verdict": "FAIL: core share 80% < 80%",
+    "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.457,
-     "Bloodthirst": 0.173,
-     "Execute": 0.153,
-     "Rend": 0.069,
-     "Overpower": 0.064,
-     "Spearing Strike": 0.027
+     "Melee": 0.304,
+     "Bloodthirst": 0.169,
+     "Melee (off-hand)": 0.158,
+     "Execute": 0.146,
+     "Overpower": 0.082,
+     "Rend": 0.074
     }
    },
    {
@@ -5879,7 +5233,7 @@
     "name": "Fury",
     "build": "fury-open-leveling",
     "split": "16/35/0",
-    "rotation": "arms-2h-raid",
+    "rotation": "fury-dw-raid",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5895,22 +5249,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Bloodthirst": 2.7
+     "Bloodthirst": 2.56
     },
-    "core_share": 0.833,
+    "core_share": 0.8453,
     "min_share": 0.8,
-    "weighted": 27.16,
+    "weighted": 23.96,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.422,
-     "Bloodthirst": 0.187,
-     "Execute": 0.148,
-     "Heroic Strike": 0.077,
-     "Rend": 0.075,
-     "Overpower": 0.058
+     "Melee": 0.234,
+     "Melee (off-hand)": 0.197,
+     "Bloodthirst": 0.169,
+     "Execute": 0.146,
+     "Heroic Strike": 0.1,
+     "Overpower": 0.067
     }
    },
    {
@@ -5918,7 +5272,7 @@
     "name": "Protection",
     "build": "protection-leveling",
     "split": "17/3/31",
-    "rotation": "arms-2h-raid",
+    "rotation": "prot-leveling",
     "rules": "tuned",
     "kind": "page",
     "required": [
@@ -5933,41 +5287,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Shield Slam": 0.0
+     "Shield Slam": 3.5
     },
-    "core_share": 0.6752,
+    "core_share": 0.8997,
     "min_share": 0.7,
-    "weighted": 37.01,
-    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50); core share 68% < 70%",
-    "ok": false,
+    "weighted": 28.4,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Shield Slam",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Heroic Strike": 0.427,
-     "Melee": 0.248,
-     "Execute": 0.152,
-     "Rend": 0.109,
-     "Overpower": 0.035,
-     "Deep Wounds": 0.015
+     "Shield Slam": 0.362,
+     "Melee": 0.305,
+     "Revenge": 0.178,
+     "Rend": 0.081,
+     "Heroic Strike": 0.055,
+     "Deep Wounds": 0.011
     }
    },
    {
@@ -5975,7 +5310,7 @@
     "name": "Protection",
     "build": "protection-open-leveling",
     "split": "0/20/31",
-    "rotation": "arms-2h-raid",
+    "rotation": "prot-leveling",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -5990,41 +5325,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Shield Slam": 0.0
+     "Shield Slam": 3.21
     },
-    "core_share": 0.7129,
+    "core_share": 0.9451,
     "min_share": 0.7,
-    "weighted": 37.15,
-    "verdict": "FAIL: Shield Slam 0.00/kill at 40 (needs 0.50); Shield Slam 0.00/kill at 50 (needs 0.50); Shield Slam 0.00/kill at 60 (needs 0.50)",
-    "ok": false,
+    "weighted": 28.09,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Shield Slam",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Shield Slam",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Heroic Strike": 0.413,
-     "Melee": 0.3,
-     "Execute": 0.153,
-     "Rend": 0.084,
-     "Overpower": 0.038,
-     "Victory Rush": 0.012
+     "Shield Slam": 0.363,
+     "Melee": 0.284,
+     "Revenge": 0.203,
+     "Heroic Strike": 0.095,
+     "Rend": 0.048,
+     "Victory Rush": 0.006
     }
    }
   ]

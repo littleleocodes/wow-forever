@@ -6,30 +6,28 @@
 
 ## How to heal
 
-The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, heals the rest of the group only once they drop below 60% health (**Prayer of Healing** when two or more are that low), and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana.
+The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, heals the rest of the group only once they drop below 60% health (**Prayer of Healing** when two or more are that low), and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana. The heal-choice policy was re-tuned on 2026-11-03 and did not move.
 
 **Why it works**
 
-- **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 6% more capacity than keeping it for emergencies.
+- **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals: 425 healing at once and every second for 2 seconds, 385 mana less **Improved Healing**'s 15%, on a 12-second cooldown. It heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 6% more capacity than keeping it for emergencies.
 - **Greater Heal** is still your biggest heal. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.
-- **Prayer of Healing** when two or more of your group are below 60% health (the class's tuned heal policy since 2026-10-21: two, not three, and 60%, not 70%); one hurt member below 60% gets **Renew** or a **Flash Heal**. In Forever **Prayer of Healing** heals the target and the target's party, so aim it at the group that is hurt.
-- **Renew** goes on the tank once he is missing a fifth of his health (the tuned policy, rather than a tenth), and on a raid member below 60% before a direct heal. It can crit since the beta's 2026-10-08 build.
+- **Prayer of Healing** when two or more of your group are below 60% health (the class's tuned heal policy: two, not three, and 60%, not 70%); one hurt member below 60% gets **Renew** or a **Flash Heal**. In Forever **Prayer of Healing** heals the target and the target's party, so aim it at the group that is hurt.
+- **Renew** goes on the tank once he is missing a fifth of his health (the tuned policy, rather than a tenth), and on a raid member below 60% before a direct heal; **Improved Renew** adds 15% to it.
 - **Inner Focus** goes on a full-rank **Greater Heal** when the tank is missing more than half of one: the heal is free and 25% more likely to crit, and a critical heal gives the tank 25% more armor for 15 seconds through **Inspiration**.
-- In an emergency (anyone below 20% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. That threshold is the class's tuned heal policy (the default was 35%).
+- In an emergency (anyone below 20% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. That threshold is the class's tuned heal policy (the default was 35%); **Soul Warding** takes the shield's 4-second cooldown away and cuts its cost by 15%.
 
 **Caveats**
 
-- Mana runs out before healing power does: **Meditation** keeps half your regeneration going while you cast, and **Improved Healing** makes **Greater Heal** and **Penance** 15% cheaper. The tuned policy takes a mana potion below 40% of your mana.
-- This build has no **Prayer of Mending** (it needs 31 points in Holy). **Soul Warding**, where the build takes it, removes the shield's 4-second cooldown.
-- Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing and rank 1 about 15%, so downranking within **Greater Heal** still pays.
+- Mana runs out before healing power does: **Meditation** keeps half your regeneration going while you cast, **Improved Healing** makes **Greater Heal** and **Penance** 15% cheaper, and **Spiritual Guidance** at 4 points turns a fifth of your Spirit into healing. The tuned policy takes a mana potion below 40% of your mana.
+- This build has no **Prayer of Mending** (it needs 31 points in Holy).
+- Ranks far below your level get less from your healing power (a Forever change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing and rank 1 about 15%, so downranking within **Greater Heal** still pays.
 - The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels or other healers.
 
 **When to change it**
 
 - **Litany of Light** gives back 10% of a heal's base cost when it differs from your previous heal, so when two heals fit equally well, alternate them.
 - **Holy Nova** heals everyone around you; the lab never casts it, so use it only when your group stands together and is hurt.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 

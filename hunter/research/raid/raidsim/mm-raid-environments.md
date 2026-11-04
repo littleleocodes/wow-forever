@@ -8,6 +8,7 @@
 | `opt-mm-raid-parse` | 31/15/5 | 515 | 563 | 941 | 963 | 996 |
 | `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1004 | 1004 | 1043 |
 | `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 542 | 916 | 916 | 936 |
+| `marksmanship-with-a-pet-open-raid` | 7/39/5 | 492 | 534 | 1008 | 1008 | 1056 |
 | sim preset: BM Weave | - | 489 | 540 | 956 | 956 | 989 |
 | sim preset: BM | - | 477 | 527 | 982 | 982 | 1025 |
 | sim preset: MM | - | 471 | 508 | 969 | 969 | 1008 |
@@ -33,6 +34,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `opt-mm-raid-parse` | 515 | +17% | +34% | +7% | +5% | +19% | 941 |
 | `marksmanship-ml-raid` | 501 | +21% | +30% | +8% | +7% | +35% | 1004 |
 | `bm-mm-full-buffs-raid` | 499 | +17% | +33% | +8% | +5% | +20% | 916 |
+| `marksmanship-with-a-pet-open-raid` | 492 | +24% | +31% | +8% | +7% | +35% | 1008 |
 | sim preset: BM Weave | 489 | +16% | +41% | +9% | +4% | +26% | 956 |
 | sim preset: BM | 477 | +17% | +41% | +10% | +5% | +33% | 982 |
 | sim preset: MM | 471 | +24% | +31% | +8% | +7% | +37% | 969 |
@@ -54,6 +56,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | `opt-mm-raid-parse` | 625 | 531 | 515 | 481 | 467 |
 | `marksmanship-ml-raid` | 618 | 526 | 501 | 464 | 443 |
 | `bm-mm-full-buffs-raid` | 595 | 526 | 499 | 469 | 453 |
+| `marksmanship-with-a-pet-open-raid` | 624 | 516 | 492 | 456 | 435 |
 | sim preset: BM Weave | 598 | 503 | 489 | 457 | 445 |
 | sim preset: BM | 594 | 490 | 477 | 447 | 437 |
 | sim preset: MM | 594 | 495 | 471 | 434 | 414 |

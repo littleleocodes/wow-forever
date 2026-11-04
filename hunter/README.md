@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Beast Mastery** | [Beast Mastery](leveling/beast-mastery.md)<br>24 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) 🔬<br>995 DPS (raid) |
-| **Marksmanship** | [Marksmanship — Leveling](leveling/marksmanship.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Marksmanship — Raid](raid/marksmanship.md) 🔬<br>1004 DPS (raid) |
+| **Marksmanship** | [Marksmanship — Leveling](leveling/marksmanship.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Marksmanship — With a pet](raid/marksmanship.md) 🔬<br>1008 DPS (raid) |
 | **Survival** | [Survival (optimized, AoE pulls)](leveling/survival.md)<br>25 s/kill | [Melee Survival — Lone Wolf](raid/survival.md)<br>734 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -48,8 +48,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Marksmanship](raid/marksmanship.md) 🔬 | 1004 | best |
-| 2 | [Beast Mastery](raid/beast-mastery.md) 🔬 | 995 | -0.9% |
+| 1 | [Marksmanship](raid/marksmanship.md) — With a pet 🔬 | 1008 | best |
+| 2 | [Beast Mastery](raid/beast-mastery.md) 🔬 | 995 | -1% |
 | 3 | [Beast-Marks](raid/beast-marks.md) 🔬 | 986 | -2% |
 | 4 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 734 | -27% |
 

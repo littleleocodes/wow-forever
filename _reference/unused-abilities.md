@@ -6,7 +6,7 @@ A talent that grants an ability is only worth its point when the build uses it. 
 
 | Class | Entry | Build | Talent | Kind | Removal costs | What the player does |
 |---|---|---|---|---|---|---|
-| mage | frostfire-raid | frostfire-fingers-of-frost-raid | Ice Lance 1 | prerequisite | +0.0% | taken because Fingers of Frost requires it |
-| mage | frostfire-raid | frostfire-ml-raid | Ice Lance 1 | prerequisite | +0.0% | taken because Fingers of Frost requires it |
+| paladin | ret-dps | retribution-open-raid | Repentance 1 | prerequisite | +0.0% | taken because Unsealed Wrath requires it |
+| paladin | shockadin-raid | shockadin-open-raid | Seal of Command 1 | prerequisite | +0.0% | taken because Vengeance requires it |
 
 *0 wasted, 0 automatic, 2 prerequisite, 0 situational.*

@@ -6,22 +6,22 @@
 
 **[Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md)** (23/26/2) — [open the talent tree](https://talentsforever.com/warlock/60/23500020135011-20050302312110213-2-7)
 
-**Signature spells:** 66% of the damage at level 60 in the fight lab comes from Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, pet (the spec's rule: at least 50%; **Corruption** cast in every fight).
+**Signature spells:** 68% of the damage at level 60 in the fight lab comes from Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, pet (the spec's rule: at least 50%; **Corruption** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Wrack** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Demonic Brand** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
 **Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger. With **Soul Link**: turn it on once the Voidwalker is out.
 
 **In the fight**, top to bottom:
 
-1. **Corruption**, **Bane of Agony** and **Siphon Life** once each, none of them on a mob below about a third of its health; **Corruption** only while you have more than 15% mana.
-2. **Immolate** only on a mob above about half its health and while you have more than half your mana.
-3. With **Wrack**: channel it once **Corruption** is up.
-4. **Shadow Bolt** while the mob has more than about a third of its health and you keep the mana for **Fear** and **Drain Life**; your wand otherwise while the dots finish the mob.
-5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.
-6. **Life Tap** in a fight only when the next **Shadow Bolt** would eat into that mana reserve, you are above 60% health and the mob still has more health than one bolt takes.
+1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob and you have more than 30% of your mana.
+2. **Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only on a mob above 35% of its health; **Immolate** only above half your mana, and not on a mob below about a third of its health.
+3. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain**, above 30% of your mana, when the mob has too little health left for a bolt), which the dots and brands rarely leave you.
+4. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).
+5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
+6. With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.
 7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
 **Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).

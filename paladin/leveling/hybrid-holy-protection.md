@@ -8,16 +8,17 @@
 
 ## How to play
 
-**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a two-handed weapon. Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it).
+**Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull; **Seal of Command** instead once your build has it.
 
 **In the fight**, top to bottom:
 
-1. **Hammer of Justice** a mob that casts spells: it stands back and casts until you stop it.
-2. Keep your seal up: put it back if it runs out.
-3. **Hammer of Wrath** when the mob is below 20% health.
-4. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.
-5. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the tuned rotation never casts it.
-6. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+1. **Hammer of Justice** a mob that casts spells.
+2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
+3. Keep your seal up.
+4. **Hammer of Wrath** when the mob is below 20% health.
+5. With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).
+6. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
+7. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
 **Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana.
 

@@ -2,27 +2,27 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Destruction
 
-**[Destruction — Leveling](../research/leveling/builds/destruction-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/05500020134001--20550550331001-7)
+**[Destruction — Leveling](../research/leveling/builds/destruction-open-leveling.md)** (6/11/34) — [open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-7)
 
-> 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (core share 21% < 60%). Destruction is defined by Shadow Bolt, Immolate, Conflagrate, Incinerate, Searing Pain, Soul Fire, Shadowburn carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 81% of the damage at level 60 in the fight lab comes from Shadow Bolt, Immolate, Conflagrate, Incinerate, Searing Pain, Soul Fire, Shadowburn (the spec's rule: at least 60%).
 
 ## How to play
 
-**Not in this build:** **Soul Link**, **Wrack** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Decimation** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger. With **Soul Link**: turn it on once the Voidwalker is out.
+**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**.
 
 **In the fight**, top to bottom:
 
-1. **Corruption**, **Bane of Agony** and **Siphon Life** once each, none of them on a mob below about a third of its health; **Corruption** only while you have more than 15% mana.
-2. **Immolate** only on a mob above about half its health and while you have more than half your mana.
-3. With **Wrack**: channel it once **Corruption** is up.
-4. **Shadow Bolt** while the mob has more than about a third of its health and you keep the mana for **Fear** and **Drain Life**; your wand otherwise while the dots finish the mob.
-5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.
-6. **Life Tap** in a fight only when the next **Shadow Bolt** would eat into that mana reserve, you are above 60% health and the mob still has more health than one bolt takes.
-7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
+1. Finish first: **Shadowburn** on a mob it would kill, **Conflagrate** on a burning mob it would kill, your wand for the last sliver of health.
+2. **Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.
+3. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning).
+4. With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.
+5. The filler is **Shadow Bolt**, or **Incinerate** on a burning mob (from level 40), whenever you have mana to spare; **Shadow Bolt** only while the mob has more than a fifth of its health. The wand only when mana runs short. No Affliction dots, Searing Pain or Drain Life: the fight lab levels faster without them.
+6. **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it while you have half your mana or more, until **Torment** takes it back. Your Healthstone below 35% health.
 
 **Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).
 
@@ -58,26 +58,30 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Improved Corruption (Affliction) | 5 |
-| 15-19 | Suppression (Affliction) | 5 |
-| 20 | Amplify Curse (Affliction) | 1 |
-| 21-22 | Improved Bane of Agony (Affliction) | 2 |
-| 23-25 | Pandemic (Affliction) | 3 |
-| 26-29 | Malevolence (Affliction) | 4 |
-| 30 | Siphon Life (Affliction) | 1 |
-| 31-35 | Bane (Destruction) | 5 |
-| 36-40 | Molten Skin (Destruction) | 5 |
-| 41-45 | Aftermath (Destruction) | 5 |
-| 46-48 | Agonizing Flames (Destruction) | 3 |
-| 49-53 | Ruin (Destruction) | 5 |
-| 54-55 | Destructive Reach (Destruction) | 2 |
-| 56 | Conflagrate (Destruction) | 1 |
-| 57-59 | Intensity (Destruction) | 3 |
-| 60 | Fire and Brimstone (Destruction) | 1 |
+| 10-14 | Bane (Destruction) | 5 |
+| 15-16 | Aftermath (Destruction) | 2 |
+| 17-19 | Cataclysm (Destruction) | 3 |
+| 20-24 | Ruin (Destruction) | 5 |
+| 25-27 | Agonizing Flames (Destruction) | 3 |
+| 28 | Shadowburn (Destruction) | 1 |
+| 29-31 | Intensity (Destruction) | 3 |
+| 32 | Conflagrate (Destruction) | 1 |
+| 33 | Pyroclasm (Destruction) | 1 |
+| 34 | Bane of Havoc (Destruction) | 1 |
+| 35-39 | Shadow and Flame (Destruction) | 5 |
+| 40 | Incinerate (Destruction) | 1 |
+| 41-43 | Fire and Brimstone (Destruction) | 3 |
+| 44 | Improved Life Tap (Affliction) | 1 |
+| 45-48 | Suppression (Affliction) | 4 |
+| 49-53 | Unholy Power (Demonology) | 5 |
+| 54-56 | Improved Voidwalker (Demonology) | 3 |
+| 57 | Suppression (Affliction) | 1 |
+| 58 | Demonic Embrace (Demonology) | 1 |
+| 59-60 | Fel Vitality (Demonology) | 2 |
 
 ## Other builds of this spec
 
-- [Destruction — Leveling](../research/leveling/builds/destruction-open-leveling.md) (6/11/34) — [open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-7)
+- [Destruction — Leveling](../research/leveling/builds/destruction-leveling.md) (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/05500020134001--20550550331001-7)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*

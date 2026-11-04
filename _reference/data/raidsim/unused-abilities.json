@@ -2,34 +2,34 @@
  "date": "2026-11-04",
  "rows": [
   {
-   "class": "mage",
-   "entry": "frostfire-raid",
-   "build": "frostfire-ml-raid",
-   "spec": "Hybrid Fire/Frost",
-   "talent": "Ice Lance",
+   "class": "paladin",
+   "entry": "ret-dps",
+   "build": "retribution-open-raid",
+   "spec": "Retribution",
+   "talent": "Repentance",
    "ranks": 1,
    "setting": "dummy",
    "removal_loss": 0.0,
    "kind": "prerequisite",
    "needed_by": [
-    "Fingers of Frost"
+    "Unsealed Wrath"
    ],
-   "advice": "taken because Fingers of Frost requires it"
+   "advice": "taken because Unsealed Wrath requires it"
   },
   {
-   "class": "mage",
-   "entry": "frostfire-raid",
-   "build": "frostfire-fingers-of-frost-raid",
-   "spec": "Hybrid Fire/Frost",
-   "talent": "Ice Lance",
+   "class": "paladin",
+   "entry": "shockadin-raid",
+   "build": "shockadin-open-raid",
+   "spec": "Hybrid Holy/Retribution",
+   "talent": "Seal of Command",
    "ranks": 1,
    "setting": "dummy",
    "removal_loss": 0.0,
    "kind": "prerequisite",
    "needed_by": [
-    "Fingers of Frost"
+    "Vengeance"
    ],
-   "advice": "taken because Fingers of Frost requires it"
+   "advice": "taken because Vengeance requires it"
   }
  ]
 }
