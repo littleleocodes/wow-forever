@@ -38,10 +38,9 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 | **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
-| **Raging Blows** | 1/1 | **NEW** | Reduces the Rage cost of your Cleave and Whirlwind abilities by 3. |
 | **Death Wish** | 1/1 | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. |
 | **Flurry** | 3/3 | changed | Increases your melee attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
-| **Improved Whirlwind** | 1/2 | **NEW** | Reduces the cooldown of your Whirlwind ability by 1 second and increases the damage it deals to the closest enemy by 15%. |
+| **Improved Whirlwind** | 2/2 | **NEW** | Reduces the cooldown of your Whirlwind ability by 2 seconds and increases the damage it deals to the closest enemy by 30%. |
 | **Bloodthirst** | 1/1 | changed | Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. |
 
 ### Protection (0)
@@ -163,6 +162,7 @@ Damage by ability:
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized.
 - 2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Raging Blows (tier gating for Bloodthirst); +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps).
+- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Raging Blows 1 gone; +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

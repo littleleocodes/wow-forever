@@ -292,24 +292,6 @@
    }
   ]
  },
- "Raging Blows": {
-  "tree": "Fury",
-  "max": 1,
-  "text": "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3.",
-  "effects": [
-   {
-    "channel": "resource_cost",
-    "scope": [
-     "ability:Cleave",
-     "ability:Whirlwind"
-    ],
-    "values": [
-     3.0
-    ],
-    "source": "parsed"
-   }
-  ]
- },
  "Reckless Swings": {
   "tree": "Fury",
   "max": 1,
@@ -381,12 +363,6 @@
    }
   ]
  },
- "Flurry": {
-  "tree": "Fury",
-  "max": 3,
-  "text": "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
-  "effects": []
- },
  "Improved Whirlwind": {
   "tree": "Fury",
   "max": 2,
@@ -404,6 +380,12 @@
     "source": "parsed"
    }
   ]
+ },
+ "Flurry": {
+  "tree": "Fury",
+  "max": 3,
+  "text": "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
+  "effects": []
  },
  "Bloodthirst": {
   "tree": "Fury",

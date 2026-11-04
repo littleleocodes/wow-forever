@@ -50,14 +50,14 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 02bd77c (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 367 | +0.0% | 760 | -0.5% | 0 s |
-| 2 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 363 | -0.9% | 764 | +0.0% | 0 s |
-| 3 | *Arms* | community simulator | - | 363 | -0.9% | 763 | -0.0% | 0 s |
-| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 362 | -1.3% | 759 | -0.7% | 0 s |
+| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 391 | +0.0% | 813 | +0.0% | 0 s |
+| 2 | *Arms* | community simulator | - | 386 | -1.2% | 810 | -0.4% | 0 s |
+| 3 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 385 | -1.5% | 809 | -0.5% | 0 s |
+| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 383 | -2.0% | 804 | -1.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,7 +97,7 @@ Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-community-parse`](arms-community-parse.md) casts/min |
 |---|---|---|
-| 1 | if not Battle Stance is up: cast Battle Stance | 26.6 |
+| 1 | if not Battle Stance is up: cast Battle Stance | 26.4 |
 | 2 | cast Overpower | 3.7 |
 | 3 | if execute phase (E20): cast Execute | 3.6 |
 | 4 | cast Goblin Sapper Charge | as ready |
@@ -108,16 +108,16 @@ Before the pull: at -1s: cast Battle Stance.
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
-| 12 | if number of targets > 1: cast Whirlwind | 1.0 |
+| 12 | if number of targets > 1: cast Whirlwind | 0.9 |
 | 13 | cast Mortal Strike | 2.5 |
 | 14 | if not Rend is on the target: cast Rend | 2.4 |
-| 15 | cast Slam | 2.7 |
+| 15 | cast Slam | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.0 |
-| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.4 |
-| 19 | cast Spearing Strike | 1.3 |
-| 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.0 |
-| 21 | cast Sunder Armor | 6.0 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.4 |
+| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.3 |
+| 19 | cast Spearing Strike | 1.2 |
+| 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 0.9 |
+| 21 | cast Sunder Armor | 5.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -125,15 +125,15 @@ Damage by ability:
 
 | Ability | [`arms-community-parse`](arms-community-parse.md) |
 |---|---|
-| Auto Attack | 37% |
-| Execute | 16% |
-| Overpower | 15% |
-| Mortal Strike | 8% |
-| Slam | 7% |
+| Auto Attack | 36% |
+| Execute | 15% |
+| Overpower | 14% |
+| Slam | 10% |
+| Mortal Strike | 7% |
 | Deep Wound | 7% |
 | Rend | 6% |
+| Spearing Strike | 2% |
 | Whirlwind | 2% |
-| Spearing Strike | 1% |
 | item 274759 | 1% |
 
 ## Notes

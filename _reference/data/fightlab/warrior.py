@@ -237,7 +237,6 @@ MECHANICS = {
     "Piercing Howl": "not used (the mob stands and fights)",
     "Blood Craze": "1%/rank health over 6 s after being crit or losing 20% in one hit",
     "Dual Wield Specialization": "+5%/rank off-hand damage, +10%/rank off-hand rage (dual wield)",
-    "Raging Blows": "-3 rage Cleave (Whirlwind needs Berserker Stance)",
     "Enrage": "30% chance after any hit taken: +2%/rank physical damage for 12 s",
     "Improved Execute": "-2.5 rage/rank Execute",
     "Death Wish": "+20% physical damage and +5% damage taken for 30 s every 3 min (on the pull)",
@@ -277,8 +276,9 @@ FIT = {
     "Flurry": "scale", "Death Wish": "scale", "Improved Berserker Rage": "scale", "Improved Bloodrage": "scale",
     "Last Stand": "scale", "Concussion Blow": "scale", "Focused Rage": "scale", "Anticipation": "scale", "Iron Will": "scale", "Piercing Howl": "scale",
     "Spearing Strike": "scale", "Sweeping Strikes": "scale", "Improved Hamstring": "scale", "Reckless Swings": "scale",
-    # simulated since 2026-10-09 (70291 review): the off-hand talents, Gore Drinker, Raging Blows' Cleave cost
-    "Dual Wield Specialization": "scale", "Furious Precision": "scale", "Gore Drinker": "scale", "Raging Blows": "scale",
+    # simulated since 2026-10-09 (70291 review): the off-hand talents, Gore Drinker (Raging Blows' Cleave cost until the live game removed
+    # the talent: hotfix push 113583, 2026-11-03)
+    "Dual Wield Specialization": "scale", "Furious Precision": "scale", "Gore Drinker": "scale",
 }
 SHARE_SOURCE = {'Cleave': 'cleave', 'Thunder Clap': 'thunder_clap', "Melee": "white", "Heroic Strike": "heroic_strike", "Overpower": "overpower", "Execute": "execute", "Whirlwind": "whirlwind", "Rend": "rend",
                 "Mortal Strike": "mortal_strike", "Deep Wounds": "deep_wounds", "Victory Rush": "victory_rush", "Bloodthirst": "bloodthirst"}
@@ -455,8 +455,6 @@ class WarriorModule(BaseModule):
             cost = max(0.0, cost - self.tv("Improved Thunder Clap", 0))
         if spell.name == "Sunder Armor":
             cost = max(0.0, cost - self.tv("Improved Sunder Armor", 0))
-        if spell.name in ("Cleave", "Whirlwind"):   # Raging Blows: "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3"
-            cost = max(0.0, cost - self.tv("Raging Blows", 0))
         if spell.name in SHOUTS:   # Booming Voice: "reduces their Rage cost by 25%" (5% a rank)
             cost *= 1 - self.tv("Booming Voice", 1) / 100
         if spell.name == "Piercing Howl":   # Booming Voice (70753): "Also reduces the Rage cost of Piercing Howl by 25%"

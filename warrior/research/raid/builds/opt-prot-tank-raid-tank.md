@@ -60,14 +60,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 02bd77c (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.016 | +0.0% | 1115 | 277 |
-| 2 | *Protection* | community simulator | - | 1.009 | -0.7% | 1094 | 276 |
-| 3 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.005 | -1.0% | 1087 | 276 |
-| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -1.6% | 1075 | 276 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.014 | +0.0% | 1115 | 277 |
+| 2 | *Protection* | community simulator | - | 1.007 | -0.7% | 1094 | 276 |
+| 3 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.004 | -1.0% | 1087 | 276 |
+| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.4% | 1081 | 277 |
 
 ## Rotation (community simulator, raid setting)
 
