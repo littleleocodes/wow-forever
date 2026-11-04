@@ -374,3 +374,16 @@ races never tried it.
    the new trees resolve by name on the old tree: Elemental Precision 3 reads 3% hit, not 6%. No patch: the change spans the proto,
    the store and the mage code. The fix is a re-pin to master, once the gear agent's queue is done (also bringing the chili, the race
    offsets and the pet hit rule; retire our pet hit edit then).
+10. **Fork-era option names dropped silently (found 2026-11-04, fixed in specs.json)**: the bench reads an entry's spec fragment with
+   DiscardUnknown and only printed what the protos do not know (stderr, shown by the callers only when a bench died). The hunter
+   entries sent the fork's `petAttackSpeed: "OneTwo"` (official enum: PetAttackSpeedNone, SlowerAttackIII-II, FasterAttackI-VII at
+   +17/25/33/43/54/67/100% on the 2 s base) and `quiverBonus: "Speed15"` (official: the quiver item; Ancient Sinew Wrapped Lamina
+   15%, Quickdraw 13, Heavy 12, Night Watch 11, Hunting 10), the Enhancement entry two stray fields (`imbueOh`, `syncType`; no
+   official equivalent, the set has no off-hand). So every hunter raid number from the port (2026-10-18) to 2026-11-04 11:05 ran a
+   2 s pet with no Faster Attack passive (bm-raid, mm-raid) and no quiver haste (all four entries): the races, re-tunes, family and
+   synergy records, ML records, gear tiers' stat weights and the pages' hunter rankings of that period. Now `FasterAttackVI` (the
+   1.2 s cat) and `AncientSinewWrappedLamina` (15%, the fork setting's intent; the Lamina needs the Molten Core quest chain, so the
+   pre-BiS tier is 2 points optimistic against a Quickdraw Quiver: keep or give the tiers their own quiver). Safeguards:
+   `raidsim/spec_check.py [--all-checkouts]` (static: every entry's fragment against the proto files; clean on all six checkouts
+   on 2026-11-04) and `run.check_bench_stderr` (a `spec:` warning is fatal in run.py, apl_opt.bench and buff_value). To redo once
+   runs resume: the hunter raid lane from its races (markers `r1103/hun-*` removed on 2026-11-04).

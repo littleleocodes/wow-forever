@@ -95,6 +95,7 @@ def bench(repo, cls, entry, label, talents, off_key, field, on, iterations):
     r = subprocess.run([str(exe), "--config", str(p), "--root", str(repo)], capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(repo))
     if r.returncode:
         raise SystemExit(f"bench failed: {r.stderr[-800:]}")
+    raidrun.check_bench_stderr(r, f"buff_value {cls} {label}")
     for line in r.stdout.splitlines():
         if line.startswith("{"):
             row = json.loads(line)

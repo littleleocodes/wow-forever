@@ -79,6 +79,7 @@ def bench(entry, repo, builds, iterations, seed, setting, tag, extra=None):
     r = subprocess.run([str(bench_exe), "--config", str(p), "--root", str(repo)], capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode:
         raise SystemExit(f"bench failed: {r.stderr[-1500:]}")
+    R.check_bench_stderr(r, f"bench {tag}")
     if worker:
         p.unlink(missing_ok=True)
     rows = {}

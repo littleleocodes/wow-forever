@@ -43,6 +43,16 @@ def set_game(game):
     SPECS = json.load(open(HERE / GAMES[game]["specs"], encoding="utf-8"))
 
 
+def check_bench_stderr(r, what):
+    """A `spec:` warning from the bench is fatal (2026-11-04). The bench reads an entry's spec fragment with DiscardUnknown and only
+    printed what the protos do not know: the hunters' fork-era `petAttackSpeed: "OneTwo"` and `quiverBonus: "Speed15"` were dropped
+    silently from the port (2026-10-18) to 2026-11-04 (a 2 s pet with no Faster Attack passive, no quiver haste). Every bench caller
+    runs this after the return-code check; `raidsim/spec_check.py` lists such fields without a simulator run."""
+    bad = [l for l in r.stderr.splitlines() if l.startswith("spec: the simulator ignores")]
+    if bad:
+        raise SystemExit(f"{what}: {bad[0]} (fix the entry's spec fragment in specs.json; raidsim/spec_check.py lists every such field)")
+
+
 def repo_path(a):
     g = GAMES[GAME]
     p = pathlib.Path(a.repo) if a.repo else SETUP.checkout("forever" if GAME == "forever" else "classic")   # setup.py: env override or <tools>/<dir>
@@ -568,6 +578,7 @@ def run_spec(cls, spec, a, repo):
     if r.returncode:
         print(r.stderr[-2000:])
         raise SystemExit(f"bench failed for {cls} {spec}")
+    check_bench_stderr(r, f"{cls} {spec}")
     rows = {}
     for line in r.stdout.splitlines():
         if line.startswith("{"):
@@ -825,6 +836,7 @@ def run_environments(cls, spec, a, repo):
         if r.returncode:
             print(r.stderr[-1500:])
             raise SystemExit(f"bench failed for {cls} {spec} ({env})")
+        check_bench_stderr(r, f"{cls} {spec} ({env})")
         for line in r.stdout.splitlines():
             if line.startswith("{"):
                 d = json.loads(line)

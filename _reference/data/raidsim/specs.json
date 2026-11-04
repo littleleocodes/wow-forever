@@ -400,7 +400,7 @@
       "spec": {
         "hunter": {
           "options": {
-            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "Cat", "petAttackSpeed": "OneTwo", "petUptime": 1}
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "AncientSinewWrappedLamina", "petType": "Cat", "petAttackSpeed": "FasterAttackVI", "petUptime": 1}
           }
         }
       },
@@ -438,7 +438,7 @@
       "spec": {
         "hunter": {
           "options": {
-            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "PetNone", "petUptime": 0}
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "AncientSinewWrappedLamina", "petType": "PetNone", "petUptime": 0}
           }
         }
       },
@@ -475,7 +475,7 @@
       "spec": {
         "hunter": {
           "options": {
-            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "Cat", "petAttackSpeed": "OneTwo", "petUptime": 1}
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "AncientSinewWrappedLamina", "petType": "Cat", "petAttackSpeed": "FasterAttackVI", "petUptime": 1}
           }
         }
       },
@@ -513,7 +513,7 @@
       "spec": {
         "hunter": {
           "options": {
-            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "PetNone", "petUptime": 0}
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "AncientSinewWrappedLamina", "petType": "PetNone", "petUptime": 0}
           }
         }
       },
@@ -981,9 +981,7 @@
       "spec": {
         "enhancementShaman": {
           "options": {
-            "classOptions": {"shieldProcrate": 0, "imbueMh": "WindfuryWeapon"},
-            "imbueOh": "WindfuryWeapon",
-            "syncType": "Auto"
+            "classOptions": {"shieldProcrate": 0, "imbueMh": "WindfuryWeapon"}
           }
         }
       },
