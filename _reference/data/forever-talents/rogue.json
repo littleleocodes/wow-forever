@@ -1,15 +1,15 @@
 {
   "slug": "rogue",
   "name": "Rogue",
-  "build": "1.60.1.70753",
+  "build": "1.60.1.70755",
   "captured": "2026-11-03",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70753: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70755: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-11-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70532; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Tree structure (positions, rank caps, prerequisites) from the official wowsims/forever simulator's trees (extracted from the live client 1.60.1.70755 with its hotfix caches); talents the export lacks take Wowhead's tooltip.",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
       "generated": "2026-11-03",
-      "build": "1.60.1.70753",
+      "build": "1.60.1.70755",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
@@ -24,13 +24,18 @@
       "url": "https://warcraftforever.games/talents/rogue",
       "build": "1.60.1.70205",
       "captured": "2026-10-04"
+    },
+    "simulator_trees": {
+      "path": "wowsims/forever ui/sim/talents/trees",
+      "build": "1.60.1.70755",
+      "note": "tree structure (positions, rank caps, prerequisites) from the simulator's live-client trees"
     }
   },
   "removed_since_demo": [
     {
       "tree": "Assassination",
       "name": "Murder",
-      "build": "1.60.1.70753",
+      "build": "1.60.1.70755",
       "row": 2,
       "col": 2,
       "maxRank": 2,
@@ -39,7 +44,7 @@
     {
       "tree": "Subtlety",
       "name": "Improved Distract",
-      "build": "1.60.1.70753",
+      "build": "1.60.1.70755",
       "row": 3,
       "col": 3,
       "maxRank": 2,
@@ -48,7 +53,7 @@
     {
       "tree": "Subtlety",
       "name": "Quietus",
-      "build": "1.60.1.70753",
+      "build": "1.60.1.70755",
       "row": 6,
       "col": 1,
       "maxRank": 5,
@@ -60,32 +65,28 @@
       "tree": "Combat",
       "from": "Improved Eviscerate",
       "to": "Coup de Grace",
-      "build": "1.60.1.70753"
+      "build": "1.60.1.70755"
     },
     {
       "tree": "Combat",
       "from": "Improved Sinister Strike",
       "to": "Efficient Strikes",
-      "build": "1.60.1.70753"
+      "build": "1.60.1.70755"
     },
     {
       "tree": "Subtlety",
       "from": "Cutthroat",
       "to": "Boot Knife",
-      "build": "1.60.1.70753"
+      "build": "1.60.1.70755"
     },
     {
       "tree": "Subtlety",
       "from": "Thousand Cuts",
       "to": "Death Mark",
-      "build": "1.60.1.70753"
+      "build": "1.60.1.70755"
     }
   ],
-  "merge_notes": [
-    "Assassination: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Murder; only in the export: Blood Splatter; moved or re-capped: Improved Expose Armor, Lethality, Mutilate, Relentless Strikes, Seal Fate, Venom, Vigor); the export's positions, rank caps and prerequisites used for this tree",
-    "Combat: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Improved Eviscerate, Improved Sinister Strike; only in the export: Composure, Coup de Grace, Efficient Strikes, Flash of Steel; moved or re-capped: Aggression, Dual Wield Specialization, Improved Sprint, Weapon Expertise); the export's positions, rank caps and prerequisites used for this tree",
-    "Subtlety: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Cutthroat, Improved Distract, Quietus, Thousand Cuts; only in the export: Boot Knife, Death Mark, Quick Getaway; moved or re-capped: Camouflage, Dirty Deeds, Elusiveness, Ghostly Strike, Heightened Senses, Opportunity, Premeditation, Serrated Blades, Setup); the export's positions, rank caps and prerequisites used for this tree"
-  ],
+  "merge_notes": [],
   "trees": [
     {
       "id": "assassination",
@@ -200,7 +201,7 @@
           "evidence": "rogue/08-rogue-assassination-improved-expose-armor.jpg",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70753: was row 3, col 2"
+            "moved in build 1.60.1.70755: was row 3, col 2"
           ]
         },
         {
@@ -239,7 +240,7 @@
             "max rank 1 → 2",
             "tooltip changed",
             "was Assassination row 7, col 2",
-            "moved in build 1.60.1.70753: was row 5, col 1"
+            "moved in build 1.60.1.70755: was row 5, col 1"
           ]
         },
         {
@@ -254,7 +255,7 @@
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70753"
+            "added in build 1.60.1.70755"
           ]
         },
         {
@@ -287,8 +288,8 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "max rank 5 -> 2 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
+            "max rank 5 -> 2 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2)"
           ],
           "prereq": {
             "id": "assassination/malice",
@@ -383,9 +384,9 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70753: was row 3, col 1",
-            "max rank 1 -> 5 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
+            "moved in build 1.60.1.70755: was row 3, col 1",
+            "max rank 1 -> 5 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -405,9 +406,9 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70753: was row 7, col 2",
-            "tooltip changed in build 1.60.1.70753 (ranks 1)",
-            "prerequisite changed in build 1.60.1.70753: was mutilate"
+            "moved in build 1.60.1.70755: was row 7, col 2",
+            "tooltip changed in build 1.60.1.70755 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70755: was mutilate"
           ]
         },
         {
@@ -457,8 +458,8 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "was Assassination row 6, col 2",
-            "max rank 5 -> 3 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+            "max rank 5 -> 3 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -478,9 +479,13 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "moved in build 1.60.1.70753: was row 5, col 2",
-            "tooltip changed in build 1.60.1.70753 (ranks 1)"
-          ]
+            "moved in build 1.60.1.70755: was row 5, col 2",
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
+          ],
+          "prereq": {
+            "id": "assassination/venom",
+            "rank": 1
+          }
         }
       ],
       "removed": []
@@ -519,8 +524,8 @@
           "diff": [
             "tooltip changed",
             "was Assassination row 1, col 1",
-            "renamed from Improved Eviscerate in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+            "renamed from Improved Eviscerate in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -542,8 +547,8 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "renamed from Improved Sinister Strike in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
+            "renamed from Improved Sinister Strike in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2)"
           ]
         },
         {
@@ -646,7 +651,7 @@
           "status": "same",
           "evidence": "rogue/26-rogue-combat-improved-sprint.jpg",
           "diff": [
-            "moved in build 1.60.1.70753: was row 3, col 4"
+            "moved in build 1.60.1.70755: was row 3, col 4"
           ]
         },
         {
@@ -687,7 +692,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70753 (ranks 1)"
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
           ],
           "prereq": {
             "id": "combat/deflection",
@@ -707,7 +712,7 @@
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70753"
+            "added in build 1.60.1.70755"
           ]
         },
         {
@@ -741,13 +746,40 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70753 (ranks 1)"
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
           ]
+        },
+        {
+          "id": "combat/weapon-expertise",
+          "row": 3,
+          "col": 2,
+          "name": "Weapon Expertise",
+          "icon": "spell_holy_blessingofstrength",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the chance for your attacks to be Dodged or Parried by 1%.",
+            "Reduces the chance for your attacks to be Dodged or Parried by 2%."
+          ],
+          "status": "changed",
+          "classic": [
+            "Increases your skill with Sword, Fist and Dagger weapons by 3.",
+            "Increases your skill with Sword, Fist and Dagger weapons by 5."
+          ],
+          "evidence": "rogue/32-rogue-combat-weapon-expertise.jpg",
+          "diff": [
+            "tooltip changed",
+            "moved in build 1.60.1.70755: was row 6, col 2",
+            "prerequisite changed in build 1.60.1.70755: was blade flurry"
+          ],
+          "prereq": {
+            "id": "combat/precision",
+            "rank": 3
+          }
         },
         {
           "id": "combat/aggression",
           "row": 3,
-          "col": 2,
+          "col": 3,
           "name": "Aggression",
           "icon": "ability_racial_avatar",
           "maxRank": 3,
@@ -771,31 +803,44 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70753: was row 6, col 3",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+            "moved in build 1.60.1.70755: was row 6, col 3",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3)"
           ]
         },
         {
-          "id": "combat/weapon-expertise",
-          "row": 3,
-          "col": 3,
-          "name": "Weapon Expertise",
-          "icon": "spell_holy_blessingofstrength",
+          "id": "combat/dual-wield-specialization",
+          "row": 4,
+          "col": 0,
+          "name": "Dual Wield Specialization",
+          "icon": "ability_dualwield",
           "maxRank": 2,
           "ranks": [
-            "Reduces the chance for your attacks to be Dodged or Parried by 1%.",
-            "Reduces the chance for your attacks to be Dodged or Parried by 2%."
+            "Increases the damage done by your off-hand weapon by 25%.",
+            "Increases the damage done by your off-hand weapon by 50%."
           ],
           "status": "changed",
           "classic": [
-            "Increases your skill with Sword, Fist and Dagger weapons by 3.",
-            "Increases your skill with Sword, Fist and Dagger weapons by 5."
+            "Increases the damage done by your offhand weapon by 10%.",
+            "Increases the damage done by your offhand weapon by 20%.",
+            "Increases the damage done by your offhand weapon by 30%.",
+            "Increases the damage done by your offhand weapon by 40%.",
+            "Increases the damage done by your offhand weapon by 50%."
           ],
-          "evidence": "rogue/32-rogue-combat-weapon-expertise.jpg",
+          "evidence": "rogue/29-rogue-combat-dual-wield-specialization.jpg",
+          "ranks_prev": [
+            "Increases the damage done by your off-hand weapon by 5%.",
+            "Increases the damage done by your off-hand weapon by 10%.",
+            "Increases the damage done by your off-hand weapon by 15%.",
+            "Increases the damage done by your off-hand weapon by 20%.",
+            "Increases the damage done by your off-hand weapon by 25%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70753: was row 6, col 2",
-            "prerequisite changed in build 1.60.1.70753: was blade flurry"
+            "moved in build 1.60.1.70755: was row 4, col 3",
+            "max rank 5 -> 2 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2)",
+            "prerequisite changed in build 1.60.1.70755: was precision"
           ]
         },
         {
@@ -836,45 +881,6 @@
           "diff": []
         },
         {
-          "id": "combat/dual-wield-specialization",
-          "row": 4,
-          "col": 3,
-          "name": "Dual Wield Specialization",
-          "icon": "ability_dualwield",
-          "maxRank": 2,
-          "ranks": [
-            "Increases the damage done by your off-hand weapon by 25%.",
-            "Increases the damage done by your off-hand weapon by 50%."
-          ],
-          "status": "changed",
-          "classic": [
-            "Increases the damage done by your offhand weapon by 10%.",
-            "Increases the damage done by your offhand weapon by 20%.",
-            "Increases the damage done by your offhand weapon by 30%.",
-            "Increases the damage done by your offhand weapon by 40%.",
-            "Increases the damage done by your offhand weapon by 50%."
-          ],
-          "evidence": "rogue/29-rogue-combat-dual-wield-specialization.jpg",
-          "ranks_prev": [
-            "Increases the damage done by your off-hand weapon by 5%.",
-            "Increases the damage done by your off-hand weapon by 10%.",
-            "Increases the damage done by your off-hand weapon by 15%.",
-            "Increases the damage done by your off-hand weapon by 20%.",
-            "Increases the damage done by your off-hand weapon by 25%."
-          ],
-          "ranks_prev_build": "1.60.1.70205",
-          "diff": [
-            "tooltip changed",
-            "moved in build 1.60.1.70753: was row 4, col 3",
-            "max rank 5 -> 2 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2)"
-          ],
-          "prereq": {
-            "id": "combat/precision",
-            "rank": 3
-          }
-        },
-        {
           "id": "combat/flash-of-steel",
           "row": 5,
           "col": 2,
@@ -890,7 +896,7 @@
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70753"
+            "added in build 1.60.1.70755"
           ]
         },
         {
@@ -905,7 +911,11 @@
           ],
           "status": "same",
           "evidence": "rogue/34-rogue-combat-adrenaline-rush.jpg",
-          "diff": []
+          "diff": [],
+          "prereq": {
+            "id": "combat/blade-flurry",
+            "rank": 1
+          }
         }
       ],
       "removed": [
@@ -950,8 +960,8 @@
           "diff": [
             "tooltip changed",
             "was Subtlety row 4, col 1",
-            "moved in build 1.60.1.70753: was row 2, col 1",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+            "moved in build 1.60.1.70755: was row 2, col 1",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -1011,14 +1021,37 @@
           "diff": [
             "max rank 5 → 2",
             "tooltip changed",
-            "max rank 2 -> 5 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
+            "max rank 2 -> 5 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5)"
+          ]
+        },
+        {
+          "id": "subtlety/dirty-deeds",
+          "row": 1,
+          "col": 0,
+          "name": "Dirty Deeds",
+          "icon": "spell_shadow_summonsuccubus",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target.",
+            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target."
+          ],
+          "status": "changed",
+          "classic": [
+            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10.",
+            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20."
+          ],
+          "evidence": "rogue/48-rogue-subtlety-dirty-deeds.jpg",
+          "diff": [
+            "tooltip changed",
+            "was Subtlety row 5, col 3",
+            "moved in build 1.60.1.70755: was row 5, col 1"
           ]
         },
         {
           "id": "subtlety/camouflage",
           "row": 1,
-          "col": 0,
+          "col": 1,
           "name": "Camouflage",
           "icon": "ability_stealth",
           "maxRank": 3,
@@ -1047,53 +1080,15 @@
           "diff": [
             "tooltip changed",
             "was Subtlety row 2, col 3",
-            "moved in build 1.60.1.70753: was row 1, col 1",
-            "max rank 5 -> 3 in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
+            "moved in build 1.60.1.70755: was row 1, col 1",
+            "max rank 5 -> 3 in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3)"
           ]
-        },
-        {
-          "id": "subtlety/dirty-deeds",
-          "row": 1,
-          "col": 1,
-          "name": "Dirty Deeds",
-          "icon": "spell_shadow_summonsuccubus",
-          "maxRank": 2,
-          "ranks": [
-            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target.",
-            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target."
-          ],
-          "status": "changed",
-          "classic": [
-            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10.",
-            "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20."
-          ],
-          "evidence": "rogue/48-rogue-subtlety-dirty-deeds.jpg",
-          "diff": [
-            "tooltip changed",
-            "was Subtlety row 5, col 3",
-            "moved in build 1.60.1.70753: was row 5, col 1"
-          ]
-        },
-        {
-          "id": "subtlety/dirty-tricks",
-          "row": 1,
-          "col": 2,
-          "name": "Dirty Tricks",
-          "icon": "ability_sap",
-          "maxRank": 2,
-          "ranks": [
-            "Reduces the Energy cost of your Sap and Blind abilities by 25%.",
-            "Reduces the Energy cost of your Sap and Blind abilities by 50%."
-          ],
-          "status": "new",
-          "evidence": "rogue/40-rogue-subtlety-dirty-tricks.jpg",
-          "diff": []
         },
         {
           "id": "subtlety/improved-ambush",
           "row": 1,
-          "col": 3,
+          "col": 2,
           "name": "Improved Ambush",
           "icon": "ability_rogue_ambush",
           "maxRank": 3,
@@ -1105,7 +1100,25 @@
           "status": "moved",
           "evidence": "rogue/41-rogue-subtlety-improved-ambush.jpg",
           "diff": [
-            "was Subtlety row 3, col 3"
+            "was Subtlety row 3, col 3",
+            "moved in build 1.60.1.70755: was row 2, col 4"
+          ]
+        },
+        {
+          "id": "subtlety/dirty-tricks",
+          "row": 1,
+          "col": 3,
+          "name": "Dirty Tricks",
+          "icon": "ability_sap",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the Energy cost of your Sap and Blind abilities by 25%.",
+            "Reduces the Energy cost of your Sap and Blind abilities by 50%."
+          ],
+          "status": "new",
+          "evidence": "rogue/40-rogue-subtlety-dirty-tricks.jpg",
+          "diff": [
+            "moved in build 1.60.1.70755: was row 2, col 3"
           ]
         },
         {
@@ -1149,7 +1162,7 @@
           "diff": [
             "tooltip changed",
             "was Subtlety row 7, col 2",
-            "moved in build 1.60.1.70753: was row 4, col 2"
+            "moved in build 1.60.1.70755: was row 4, col 2"
           ]
         },
         {
@@ -1173,13 +1186,30 @@
           "evidence": "rogue/47-rogue-subtlety-serrated-blades.jpg",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70753: was row 4, col 3"
+            "moved in build 1.60.1.70755: was row 4, col 3"
+          ]
+        },
+        {
+          "id": "subtlety/elusiveness",
+          "row": 3,
+          "col": 0,
+          "name": "Elusiveness",
+          "icon": "spell_magic_lesserinvisibilty",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
+            "Reduces the cooldown of your Vanish and Blind abilities by 90 sec."
+          ],
+          "status": "same",
+          "evidence": "rogue/39-rogue-subtlety-elusiveness.jpg",
+          "diff": [
+            "moved in build 1.60.1.70755: was row 2, col 2"
           ]
         },
         {
           "id": "subtlety/ghostly-strike",
           "row": 3,
-          "col": 0,
+          "col": 1,
           "name": "Ghostly Strike",
           "icon": "spell_shadow_curse",
           "maxRank": 1,
@@ -1197,25 +1227,8 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70753: was row 3, col 2",
-            "tooltip changed in build 1.60.1.70753 (ranks 1)"
-          ]
-        },
-        {
-          "id": "subtlety/elusiveness",
-          "row": 3,
-          "col": 1,
-          "name": "Elusiveness",
-          "icon": "spell_magic_lesserinvisibilty",
-          "maxRank": 2,
-          "ranks": [
-            "Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
-            "Reduces the cooldown of your Vanish and Blind abilities by 90 sec."
-          ],
-          "status": "same",
-          "evidence": "rogue/39-rogue-subtlety-elusiveness.jpg",
-          "diff": [
-            "moved in build 1.60.1.70753: was row 2, col 2"
+            "moved in build 1.60.1.70755: was row 3, col 2",
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
           ]
         },
         {
@@ -1231,8 +1244,12 @@
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70753"
-          ]
+            "added in build 1.60.1.70755"
+          ],
+          "prereq": {
+            "id": "subtlety/dirty-tricks",
+            "rank": 2
+          }
         },
         {
           "id": "subtlety/heightened-senses",
@@ -1254,7 +1271,7 @@
           "diff": [
             "tooltip changed",
             "was Subtlety row 5, col 1",
-            "moved in build 1.60.1.70753: was row 4, col 1"
+            "moved in build 1.60.1.70755: was row 4, col 1"
           ]
         },
         {
@@ -1293,7 +1310,7 @@
           "diff": [
             "tooltip changed",
             "was Subtlety row 5, col 4",
-            "tooltip changed in build 1.60.1.70753 (ranks 1)"
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
           ],
           "prereq": {
             "id": "subtlety/serrated-blades",
@@ -1325,8 +1342,8 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "renamed from Cutthroat in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5)"
+            "renamed from Cutthroat in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -1346,10 +1363,13 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "renamed from Thousand Cuts in build 1.60.1.70753",
-            "tooltip changed in build 1.60.1.70753 (ranks 1)",
-            "prerequisite changed in build 1.60.1.70753: was preparation"
-          ]
+            "renamed from Thousand Cuts in build 1.60.1.70755",
+            "tooltip changed in build 1.60.1.70755 (ranks 1)"
+          ],
+          "prereq": {
+            "id": "subtlety/preparation",
+            "rank": 1
+          }
         }
       ],
       "removed": [

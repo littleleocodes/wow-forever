@@ -542,8 +542,6 @@
   },
   "rogue": {
     "combat-swords-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/combat-swords-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/rogue/combat-swords-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "profile": "raid-dps",
@@ -551,7 +549,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+      "apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -579,8 +577,6 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "combat-daggers-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/rogue/combat-daggers-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "profile": "raid-dps",
@@ -588,7 +584,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_backstab_p1_bis.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+      "apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -616,15 +612,13 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "assassination-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/rogue/assassination-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_backstab_p1_bis.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+      "apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -654,15 +648,13 @@
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there)."
     },
     "subtlety-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/rogue/subtlety-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
+      "apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
       "spec": {
         "rogue": {
           "options": {
