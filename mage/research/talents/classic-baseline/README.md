@@ -15,3 +15,18 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era community-standard builds. Frost is the raid spec while Molten Core and Blackwing Lair are full of fire-immune targets; Fire overtakes it from AQ40/Naxxramas. One mage per raid runs the Winter's Chill support build. Allocations validated against the Classic tree data.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/fire-raid-raid-dps.md](optimizer/fire-raid-raid-dps.md): mage / classic-era / spec fire-raid / profile raid-dps
+- [optimizer/frost-aoe-leveling-aoe.md](optimizer/frost-aoe-leveling-aoe.md): mage / classic-era / spec frost-aoe / profile leveling-aoe
+- [optimizer/frost-leveling-leveling-st.md](optimizer/frost-leveling-leveling-st.md): mage / classic-era / spec frost-leveling / profile leveling-st
+- [optimizer/frost-raid-raid-dps-extwc.md](optimizer/frost-raid-raid-dps-extwc.md): mage / classic-era / spec frost-raid / profile raid-dps-extwc
+- [optimizer/frost-raid-raid-dps.md](optimizer/frost-raid-raid-dps.md): mage / classic-era / spec frost-raid / profile raid-dps
+- [raidsim/fire-raid-environments.md](raidsim/fire-raid-environments.md): DPS by environment — mage fire-raid (Classic Era)
+- [raidsim/fire-raid.md](raidsim/fire-raid.md): Raid sim — mage fire-raid (Classic Era)
+- [raidsim/frost-raid-environments.md](raidsim/frost-raid-environments.md): DPS by environment — mage frost-raid (Classic Era)
+- [raidsim/frost-raid.md](raidsim/frost-raid.md): Raid sim — mage frost-raid (Classic Era)
+- [respec-plan.md](respec-plan.md): Mage / classic-era: respec plan for `leveling-st`

@@ -78,13 +78,12 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 319 | +0.0% | 563 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 298 | -6.7% | 563 | +0.0% | 0 s |
-| 3 | *Subtlety BS* | community simulator | - | 283 | -11.4% | 541 | -3.9% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 455 | +0.0% | 766 | +0.0% | 0 s |
+| 2 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 342 | -24.9% | 607 | -20.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -128,33 +127,45 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   19. insert at the top: if true and not Hemorrhage is up and combo points < 5: cast Hemorrhage (+0.2%, pass 11)
   20. drop the condition: if not Garrote is on the target: cast Garrote (+0.2%, pass 11)
 
+Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
+
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 160s: cast Slice and Dice | 0.7 |
-| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.7 |
-| 4 | cast Premeditation | 1.0 |
-| 5 | cast Garrote | 0.7 |
-| 6 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.1 |
-| 7 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 8 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 0.2 |
-| 9 | cast Hemorrhage | 19.9 |
-| 10 | cast Preparation | 0.3 |
+| 1 | if variableRef: groupReference | as ready |
+| 2 | if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote | 3.2 |
+| 3 | if not Garrote is on the target and energy ≥ current cost and not variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.7 |
+| 4 | if energy ≥ current cost and variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.7 |
+| 5 | if not Vanish is ready: cast Preparation | 0.3 |
+| 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 7 | groupReference | as ready |
+| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast spell 1329549 | 5.8 |
+| 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
+| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and spell 1325758 is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
+| 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
+| 12 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not variableRef and not variableRef and not talentIsKnown: cast Rupture | 3.5 |
+| 13 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.3 |
+| 14 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
+| 15 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 1.6 |
+| 16 | if variableRef and (not in front of the target or variableRef) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.7 |
+| 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.1 |
+| 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights); cast Blade Flurry (needs the Blade Flurry talent).
+Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast spell 1325758, cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
 | Ability | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) |
 |---|---|
-| Auto Attack | 38% |
-| Hemorrhage | 24% |
-| Rupture | 21% |
+| Auto Attack | 33% |
+| Garrote | 18% |
+| Rupture | 15% |
+| Hemorrhage | 9% |
 | spell 11337 | 7% |
-| spell 25349 | 5% |
-| Garrote | 3% |
+| spell 25349 | 6% |
+| Eviscerate | 6% |
+| Ghostly Strike | 3% |
 | Goblin Sapper Charge | 2% |
-| Eviscerate | 1% |
+| Shank | 2% |
 
 ## Notes
 

@@ -28,7 +28,8 @@ The Assassination PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 | **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
 | **Improved Kidney Shot** | 2/2 | changed | Enemies Stunned by your Kidney Shot ability take 10% increased damage from your poisons and attacks. |
-| **Relentless Strikes** | 5/5 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
+| **Relentless Strikes** | 4/5 | unchanged | Your finishing moves have a 16% chance per Combo Point to restore 25 Energy. |
+| **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 | **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 90% weapon damage plus an additional amount with each weapon (Blizzard: the amount was also increased). Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 
@@ -67,6 +68,7 @@ The Assassination PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 - Where we disagree with the community: most Assassination builds take Lethality (96% take it), Puncturing Wounds (72% take it), Vile Poisons (71% take it), which the model values below this build's weakest point; this build takes Dirty Tricks (19%), Ghostly Strike (13%), Heightened Senses (14%), Improved Ambush (16%), Preparation (16%), Setup (9%), which few Assassination builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/0/21 -> 31/0/20; Murder 2 gone; Seal Fate 5 -> 3 (rank cap); +1 Remorseless Attacks (tier gating for Cold Blood); +1 Dirty Deeds (tier gating for Heightened Senses); +1 Dirty Deeds (tier gating for Heightened Senses); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Mutilate); +1 Relentless Strikes (tier gating for Mutilate); -1 Heightened Senses (over 51); -1 Heightened Senses (over 51); -1 Preparation (over 51) (refill: the combat-daggers-raid model, pvp).
+- 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/0/20 -> 31/0/20; +1 Venom (prerequisite of Mutilate); -1 Relentless Strikes (over 51) (refill: the combat-daggers-raid model, pvp).
 
 ## Open questions (verify in the live game)
 

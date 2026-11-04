@@ -2,7 +2,7 @@
  "class": "mage",
  "spec": "fire-raid",
  "game": "forever",
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
   "commit": "5ad0894c9",
@@ -95,30 +95,30 @@
     "max60": 862.0469715405353
    },
    "raid_spell_casts": {
-    "12051": 0.8376666666666667,
-    "10274": 4.175,
     "10151": 21.216333333333335,
-    "10199": 28.490333333333332,
+    "11129": 1.0,
     "10207": 24.536,
-    "10212": 4.175,
     "18809": 13.785,
-    "11129": 1.0
+    "10274": 4.175,
+    "12051": 0.8376666666666667,
+    "10199": 28.490333333333332,
+    "10212": 4.175
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
-    "Evocation": 0.8376666666666667,
-    "Mana Citrine": 0.183,
-    "Arcane Missiles": 8.35,
     "Fireball": 21.216333333333335,
-    "Fire Blast": 28.490333333333332,
-    "Mana Ruby": 0.9343333333333333,
-    "Scorch": 24.536,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Pyroblast": 13.785,
-    "OtherActionManaGain": 76.792,
     "Combustion": 1.0,
-    "Demonic Rune": 0.8776666666666667
+    "Scorch": 24.536,
+    "Pyroblast": 13.785,
+    "Arcane Missiles": 8.35,
+    "Evocation": 0.8376666666666667,
+    "OtherActionManaGain": 76.792,
+    "Fire Blast": 28.490333333333332,
+    "Robe of the Archmage": 1.0,
+    "Major Mana Potion": 2.0,
+    "Mana Citrine": 0.183,
+    "Demonic Rune": 0.8776666666666667,
+    "Mana Ruby": 0.9343333333333333,
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
     "Fireball": 0.2491,
@@ -151,30 +151,30 @@
     "max60": 840.7498032601105
    },
    "raid_spell_casts": {
-    "10207": 25.285666666666668,
-    "11129": 1.0,
-    "10274": 4.287,
     "10151": 21.83566666666667,
-    "10212": 4.287,
+    "18809": 13.717333333333332,
     "12051": 0.39,
     "10199": 28.923666666666666,
-    "18809": 13.717333333333332
+    "10207": 25.285666666666668,
+    "11129": 1.0,
+    "10212": 4.287,
+    "10274": 4.287
    },
    "raid_casts": {
+    "Major Mana Potion": 2.0,
+    "Fireball": 21.83566666666667,
+    "Pyroblast": 13.717333333333332,
+    "Robe of the Archmage": 1.0,
+    "Evocation": 0.39,
+    "Fire Blast": 28.923666666666666,
+    "Mana Citrine": 0.09266666666666666,
     "Scorch": 25.285666666666668,
-    "Demonic Rune": 0.9056666666666666,
+    "Talisman of Ephemeral Power": 2.0,
     "Mana Ruby": 0.9783333333333334,
     "Combustion": 1.0,
     "Arcane Missiles": 8.574,
-    "Fireball": 21.83566666666667,
-    "OtherActionManaGain": 76.35266666666666,
-    "Robe of the Archmage": 1.0,
-    "Evocation": 0.39,
-    "Major Mana Potion": 2.0,
-    "Fire Blast": 28.923666666666666,
-    "Pyroblast": 13.717333333333332,
-    "Mana Citrine": 0.09266666666666666,
-    "Talisman of Ephemeral Power": 2.0
+    "Demonic Rune": 0.9056666666666666,
+    "OtherActionManaGain": 76.35266666666666
    },
    "raid_shares": {
     "Fireball": 0.2517,
@@ -207,32 +207,32 @@
     "max60": 861.0416655505392
    },
    "raid_spell_casts": {
-    "10199": 28.684666666666665,
-    "1239700": 9.024666666666667,
-    "11129": 1.0,
-    "18809": 14.671,
+    "12051": 0.24066666666666667,
     "10151": 11.122666666666667,
-    "10274": 5.391666666666667,
     "10207": 35.088,
+    "1239700": 9.024666666666667,
+    "18809": 14.671,
     "10212": 5.391666666666667,
-    "12051": 0.24066666666666667
+    "10199": 28.684666666666665,
+    "10274": 5.391666666666667,
+    "11129": 1.0
    },
    "raid_casts": {
-    "Fire Blast": 28.684666666666665,
+    "Evocation": 0.24066666666666667,
+    "Major Mana Potion": 2.0,
+    "Demonic Rune": 0.916,
+    "Mana Citrine": 0.064,
+    "Fireball": 11.122666666666667,
+    "Scorch": 35.088,
     "OtherActionManaGain": 87.07266666666666,
     "Arcane Blast": 9.024666666666667,
-    "Combustion": 1.0,
-    "Demonic Rune": 0.916,
-    "Talisman of Ephemeral Power": 2.0,
     "Pyroblast": 14.671,
-    "Fireball": 11.122666666666667,
     "Arcane Missiles": 10.783333333333333,
-    "Mana Citrine": 0.064,
-    "Scorch": 35.088,
+    "Fire Blast": 28.684666666666665,
+    "Mana Ruby": 0.9876666666666667,
     "Robe of the Archmage": 1.0,
-    "Major Mana Potion": 2.0,
-    "Evocation": 0.24066666666666667,
-    "Mana Ruby": 0.9876666666666667
+    "Talisman of Ephemeral Power": 2.0,
+    "Combustion": 1.0
    },
    "raid_shares": {
     "Pyroblast": 0.2579,
@@ -266,30 +266,30 @@
     "max60": 861.0930136674425
    },
    "raid_spell_casts": {
+    "10212": 4.207,
+    "10151": 21.564333333333334,
+    "10207": 24.737,
+    "18809": 13.868333333333334,
     "10274": 4.207,
     "12051": 0.635,
-    "18809": 13.868333333333334,
-    "10151": 21.564333333333334,
-    "10212": 4.207,
-    "10199": 28.685,
     "11129": 1.0,
-    "10207": 24.737
+    "10199": 28.685
    },
    "raid_casts": {
-    "OtherActionManaGain": 77.36233333333334,
     "Arcane Missiles": 8.414,
+    "Fireball": 21.564333333333334,
+    "Scorch": 24.737,
+    "Pyroblast": 13.868333333333334,
+    "Robe of the Archmage": 1.0,
+    "Major Mana Potion": 2.0,
+    "Evocation": 0.635,
+    "Demonic Rune": 0.8803333333333333,
+    "OtherActionManaGain": 77.36233333333334,
+    "Combustion": 1.0,
     "Mana Ruby": 0.966,
     "Mana Citrine": 0.141,
-    "Robe of the Archmage": 1.0,
-    "Evocation": 0.635,
-    "Pyroblast": 13.868333333333334,
-    "Fireball": 21.564333333333334,
-    "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
     "Fire Blast": 28.685,
-    "Combustion": 1.0,
-    "Demonic Rune": 0.8803333333333333,
-    "Scorch": 24.737
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
     "Fireball": 0.2507,
@@ -322,16 +322,16 @@
     "max60": 410.04620796454464
    },
    "raid_spell_casts": {
+    "10207": 98.971,
     "10199": 19.987333333333332,
-    "12051": 1.0,
-    "10207": 98.971
+    "12051": 1.0
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
+    "OtherActionManaGain": 54.72866666666667,
+    "Scorch": 98.971,
     "Fire Blast": 19.987333333333332,
     "Evocation": 1.0,
-    "OtherActionManaGain": 54.72866666666667,
-    "Scorch": 98.971
+    "Major Mana Potion": 2.0
    },
    "raid_shares": {
     "Scorch": 0.7585,
@@ -361,16 +361,16 @@
    "raid_spell_casts": {
     "10199": 28.604333333333333,
     "12051": 1.0,
-    "10207": 70.34933333333333,
-    "18809": 15.961666666666666
+    "18809": 15.961666666666666,
+    "10207": 70.34933333333333
    },
    "raid_casts": {
     "Fire Blast": 28.604333333333333,
-    "Evocation": 1.0,
-    "Major Mana Potion": 2.0,
-    "Scorch": 70.34933333333333,
     "OtherActionManaGain": 54.43633333333333,
-    "Pyroblast": 15.961666666666666
+    "Evocation": 1.0,
+    "Pyroblast": 15.961666666666666,
+    "Major Mana Potion": 2.0,
+    "Scorch": 70.34933333333333
    },
    "raid_shares": {
     "Scorch": 0.363,
@@ -400,24 +400,24 @@
     "max60": 801.798490550989
    },
    "raid_spell_casts": {
-    "10151": 21.272,
-    "12051": 1.0,
     "18809": 12.054666666666666,
+    "10151": 21.272,
     "10199": 24.657,
+    "12051": 1.0,
     "10207": 27.091
    },
    "raid_casts": {
     "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Fireball": 21.272,
-    "Evocation": 1.0,
-    "Pyroblast": 12.054666666666666,
     "OtherActionManaGain": 64.08833333333334,
+    "Pyroblast": 12.054666666666666,
+    "Fireball": 21.272,
+    "Robe of the Archmage": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
     "Fire Blast": 24.657,
-    "Scorch": 27.091,
     "Demonic Rune": 1.2873333333333334,
-    "Mana Ruby": 0.7126666666666667,
-    "Robe of the Archmage": 1.0
+    "Evocation": 1.0,
+    "Scorch": 27.091,
+    "Mana Ruby": 0.7126666666666667
    },
    "raid_shares": {
     "Fireball": 0.2791,
@@ -449,32 +449,32 @@
     "max60": 878.6345231541482
    },
    "raid_spell_casts": {
-    "10212": 6.1593333333333335,
+    "10207": 22.004666666666665,
     "12051": 0.5916666666666667,
+    "18809": 13.782333333333334,
+    "11129": 1.0,
     "1239700": 8.76,
     "10274": 6.1593333333333335,
-    "10151": 17.199333333333332,
     "10199": 28.489333333333335,
-    "10207": 22.004666666666665,
-    "11129": 1.0,
-    "18809": 13.782333333333334
+    "10212": 6.1593333333333335,
+    "10151": 17.199333333333332
    },
    "raid_casts": {
-    "OtherActionManaGain": 83.37,
-    "Demonic Rune": 0.9123333333333333,
-    "Arcane Missiles": 12.318666666666667,
-    "Evocation": 0.5916666666666667,
-    "Arcane Blast": 8.76,
-    "Fireball": 17.199333333333332,
-    "Fire Blast": 28.489333333333335,
     "Scorch": 22.004666666666665,
-    "Mana Citrine": 0.12333333333333334,
-    "Robe of the Archmage": 1.0,
+    "Evocation": 0.5916666666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "Pyroblast": 13.782333333333334,
+    "Demonic Rune": 0.9123333333333333,
     "Combustion": 1.0,
     "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
+    "Arcane Blast": 8.76,
+    "Arcane Missiles": 12.318666666666667,
+    "Fire Blast": 28.489333333333335,
+    "Mana Citrine": 0.12333333333333334,
+    "OtherActionManaGain": 83.37,
+    "Robe of the Archmage": 1.0,
     "Mana Ruby": 0.9446666666666667,
-    "Pyroblast": 13.782333333333334
+    "Fireball": 17.199333333333332
    },
    "raid_shares": {
     "Pyroblast": 0.2456,
@@ -508,16 +508,16 @@
     "max60": 391.8538277865376
    },
    "raid_spell_casts": {
-    "10207": 87.77166666666666,
+    "12051": 1.0,
     "10199": 16.485666666666667,
-    "12051": 1.0
+    "10207": 87.77166666666666
    },
    "raid_casts": {
+    "Evocation": 1.0,
+    "Fire Blast": 16.485666666666667,
     "OtherActionManaGain": 48.411,
     "Scorch": 87.77166666666666,
-    "Fire Blast": 16.485666666666667,
-    "Major Mana Potion": 2.0,
-    "Evocation": 1.0
+    "Major Mana Potion": 2.0
    },
    "raid_shares": {
     "Scorch": 0.7722,
@@ -550,10 +550,10 @@
     "12051": 1.0
    },
    "raid_casts": {
-    "OtherActionManaGain": 54.66833333333334,
-    "Major Mana Potion": 2.0,
     "Fire Blast": 19.892,
     "Scorch": 98.77666666666667,
+    "Major Mana Potion": 2.0,
+    "OtherActionManaGain": 54.66833333333334,
     "Evocation": 1.0
    },
    "raid_shares": {

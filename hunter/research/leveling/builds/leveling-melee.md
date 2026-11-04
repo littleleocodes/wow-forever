@@ -47,6 +47,30 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Lightning Reflexes** | 4/5 | changed | Increases your Agility by 12%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
+| 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
+| 17-19 | Survival | Deflection | 3 | 0/0/10 |
+| 20-22 | Survival | Surefooted | 3 | 0/0/13 |
+| 23 | Survival | Deterrence | 1 | 0/0/14 |
+| 24 | Survival | Deflection | 1 | 0/0/15 |
+| 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
+| 30 | Survival | Strider Kick | 1 | 0/0/21 |
+| 31 | Survival | Resourcefulness | 1 | 0/0/22 |
+| 32-33 | Survival | Expose Prey | 2 | 0/0/24 |
+| 34 | Survival | Resourcefulness | 1 | 0/0/25 |
+| 35-39 | Marksmanship | Lethal Attacks | 5 | 0/5/25 |
+| 40-44 | Marksmanship | Careful Aim | 5 | 0/10/25 |
+| 45-49 | Beast Mastery | Deadly Aspects | 5 | 5/10/25 |
+| 50-51 | Beast Mastery | Focused Fire | 2 | 7/10/25 |
+| 52-55 | Survival | Lightning Reflexes | 4 | 7/10/29 |
+| 56-57 | Beast Mastery | Improved Revive Pet | 2 | 9/10/29 |
+| 58 | Beast Mastery | Endurance Training | 1 | 10/10/29 |
+| 59-60 | Beast Mastery | Pathfinding | 2 | 12/10/29 |
+
 ## Core talents (priority order)
 
 1. **Strider Kick** — 100% weapon damage every 8 s: the biggest single talent at 60 (fight lab: +10.9% time per kill without it).
@@ -78,18 +102,18 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 2.4 | 3.8 | 5.6 | 6.6 | 7.9 | 13% |
-| Claw | 4.1 | 5.1 | 6.1 | 6.7 | 7.7 | 8% |
-| Melee | 1.3 | 2.1 | 3.4 | 4.1 | 5.0 | 13% |
-| Growl | 1.5 | 2.1 | 2.9 | 3.4 | 3.9 | 0% |
-| Raptor Strike | 1.1 | 1.6 | 2.1 | 2.4 | 2.8 | 14% |
-| Bite | 1.0 | 1.1 | 1.6 | 1.9 | 2.0 | 4% |
-| Mongoose Bite | 0.2 | 0.4 | 0.8 | 1.1 | 1.3 | 6% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 5% |
-| Hunter's Mark | 0.8 | 0.9 | 1.0 | 1.0 | 1.0 | 0% |
-| Immolation Trap | 0.4 | 0.5 | 0.5 | 0.6 | 0.8 | 10% |
-| Lacerate | 0.0 | 1.0 | 0.7 | 0.7 | 0.6 | 4% |
-| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Claw | 4.6 | 5.3 | 6.0 | 6.3 | 6.8 | 7% |
+| Melee (off-hand) | 2.8 | 3.8 | 5.2 | 6.0 | 6.7 | 11% |
+| Melee | 2.2 | 3.2 | 4.4 | 5.1 | 5.8 | 16% |
+| Growl | 1.8 | 2.2 | 2.9 | 3.1 | 3.4 | 0% |
+| Bite | 1.0 | 1.2 | 1.7 | 1.8 | 1.9 | 4% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 21% |
+| Strider Kick | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 4% |
+| Raptor Strike | 0.7 | 0.5 | 0.7 | 0.8 | 0.9 | 4% |
+| Immolation Trap | 0.5 | 0.5 | 0.6 | 0.6 | 0.7 | 8% |
+| Lacerate | 0.0 | 0.2 | 0.1 | 0.2 | 0.2 | 1% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 
 ## Notes
 
@@ -97,6 +121,7 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 - Why no Improved Wing Clip, Improved Aspect of the Monkey or Lone Wolf (2026-09-27 scenario audit): a melee hunter stands next to the mob, so a root to open distance does nothing (fight lab 0.0% at 30 and 60); the pet keeps the mob off you, so dodge talents add nothing (0.0%); and dropping the pet at 51 made the hunter take every hit (downtime 3.4 s -> 10.3 s per kill at 60).
 - Fight lab: hunter/leveling/fightlab/melee-dps.md compares this build with the Beast Mastery and Marksmanship leveling builds under their own models.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/10/32 -> 12/10/29; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Lacerating Strikes (over 51); -1 Counterattack (over 51); -1 Lightning Reflexes (over 51); order dropped (order_repair.py) (refill: the melee-dps model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the melee-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 22.6 s per kill; own tree first 22.7 s; own tree last 23.2 s.
 
 ## Open questions (verify in the live game)
 

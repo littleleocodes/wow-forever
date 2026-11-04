@@ -49,6 +49,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Marksmanship | Lethal Attacks | 5 | 0/5/0 |
+| 15-19 | Marksmanship | Careful Aim | 5 | 0/10/0 |
+| 20-22 | Marksmanship | Improved Stings | 3 | 0/13/0 |
+| 23-24 | Marksmanship | Rapid Killing | 2 | 0/15/0 |
+| 25 | Marksmanship | Trueshot Aura | 1 | 0/16/0 |
+| 26-29 | Marksmanship | Efficiency | 4 | 0/20/0 |
+| 30 | Marksmanship | Scatter Shot | 1 | 0/21/0 |
+| 31-32 | Marksmanship | Rapid Recuperation | 2 | 0/23/0 |
+| 33 | Marksmanship | Efficiency | 1 | 0/24/0 |
+| 34 | Marksmanship | Barrage | 1 | 0/25/0 |
+| 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
+| 40 | Marksmanship | Sniper Shot | 1 | 0/31/0 |
+| 41 | Marksmanship | Barrage | 1 | 0/32/0 |
+| 42 | Marksmanship | Mortal Shots | 1 | 0/33/0 |
+| 43-47 | Beast Mastery | Deadly Aspects | 5 | 5/33/0 |
+| 48-49 | Beast Mastery | Focused Fire | 2 | 7/33/0 |
+| 50 | Beast Mastery | Improved Revive Pet | 1 | 8/33/0 |
+| 51 | Survival | Improved Tracking | 1 | 8/33/1 |
+| 52 | Beast Mastery | Improved Revive Pet | 1 | 9/33/1 |
+| 53-56 | Survival | Improved Tracking | 4 | 9/33/5 |
+| 57 | Beast Mastery | Endurance Training | 1 | 10/33/5 |
+| 58 | Beast Mastery | Bestial Swiftness | 1 | 11/33/5 |
+| 59-60 | Beast Mastery | Pathfinding | 2 | 13/33/5 |
+
 ## Core talents (priority order)
 
 1. **Careful Aim** — Removing it costs 2.7 points of score in this model.
@@ -70,24 +98,25 @@ What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 2.9 | 4.3 | 5.9 | 6.7 | 6.9 | 38% |
-| Claw | 3.7 | 4.6 | 5.4 | 5.8 | 6.6 | 7% |
-| Growl | 1.2 | 1.8 | 2.6 | 2.9 | 3.2 | 0% |
-| Bite | 1.0 | 1.0 | 1.6 | 1.8 | 1.9 | 3% |
-| Aimed Shot | 0.9 | 1.0 | 1.3 | 1.5 | 1.6 | 15% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Claw | 3.4 | 4.0 | 5.0 | 5.2 | 5.7 | 6% |
+| Auto Shot | 2.3 | 3.3 | 4.4 | 5.0 | 4.9 | 28% |
+| Growl | 1.1 | 1.4 | 2.1 | 2.3 | 2.5 | 0% |
+| Bite | 1.0 | 1.0 | 1.3 | 1.4 | 1.6 | 3% |
+| Aimed Shot | 0.9 | 1.0 | 1.0 | 1.1 | 1.1 | 15% |
+| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 23% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Feign Death | 0.0 | 0.2 | 0.2 | 0.2 | 0.4 | 0% |
-| Melee | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 1% |
-| Wing Clip | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 1% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
-| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Arcane Shot | 0.8 | 1.0 | 1.0 | 0.9 | 0.7 | 9% |
+| Melee | 0.0 | 0.2 | 0.3 | 0.3 | 0.6 | 3% |
+| Feign Death | 0.0 | 0.0 | 0.2 | 0.3 | 0.5 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 1% |
 
 ## Notes
 
 - Report: hunter/research/talents/forever/optimizer/mm-raid-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 12/34/5 -> 13/33/5; +1 Endurance Training (tier gating for Bestial Swiftness); -1 Mortal Shots (over 51); order dropped (order_repair.py) (refill: the mm-raid model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the mm-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 23.2 s per kill; stats model 23.2 s; own tree last 23.9 s.
 
 ## Open questions (verify in the live game)
 

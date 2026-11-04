@@ -44,6 +44,28 @@ The best Beast Mastery leveling build with at least 30 points in Beast Mastery, 
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Marksmanship | Lethal Attacks | 5 | 0/5/0 |
+| 15-18 | Marksmanship | Efficiency | 4 | 0/9/0 |
+| 19 | Marksmanship | Improved Stings | 1 | 0/10/0 |
+| 20 | Marksmanship | Efficiency | 1 | 0/11/0 |
+| 21-22 | Marksmanship | Improved Stings | 2 | 0/13/0 |
+| 23-27 | Marksmanship | Careful Aim | 5 | 0/18/0 |
+| 28-29 | Marksmanship | Rapid Killing | 2 | 0/20/0 |
+| 30 | Marksmanship | Rapid Recuperation | 1 | 0/21/0 |
+| 31-35 | Beast Mastery | Deadly Aspects | 5 | 5/21/0 |
+| 36-37 | Beast Mastery | Focused Fire | 2 | 7/21/0 |
+| 38-40 | Beast Mastery | Endurance Training | 3 | 10/21/0 |
+| 41-45 | Beast Mastery | Unleashed Fury | 5 | 15/21/0 |
+| 46-50 | Beast Mastery | Ferocity | 5 | 20/21/0 |
+| 51-52 | Beast Mastery | Pathfinding | 2 | 22/21/0 |
+| 53-54 | Beast Mastery | Bestial Discipline | 2 | 24/21/0 |
+| 55 | Beast Mastery | Summon Hawk | 1 | 25/21/0 |
+| 56-60 | Beast Mastery | Frenzy | 5 | 30/21/0 |
+
 ## Core talents (priority order)
 
 1. **Summon Hawk** — The scorer's value in this build: +19.4% of its score (model bm-leveling).
@@ -61,6 +83,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model bm-leveling, profile leveling-st.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/21/0 -> 30/21/0; order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the bm-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 23.0 s per kill; stats model 23.4 s; own tree first 23.2 s.
 
 ## Open questions (verify in the live game)
 

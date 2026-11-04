@@ -4,27 +4,30 @@
 
 *Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost.* (a hybrid: Arcane/Frost).
 
+**✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
+
 **[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/2211052011003-2-05253233011030021-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (Arcane Missiles 0.00/kill at 60 (needs 0.25)). Arcane-Frost is defined by **Frostbolt**, **Arcane Missiles** cast in every fight and Frostbolt, Arcane Missiles, Ice Lance, Arcane Blast carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 88% of the damage at level 60 in the fight lab comes from Frostbolt, Arcane Missiles, Ice Lance, Arcane Blast (the spec's rule: at least 60%; **Frostbolt**, **Arcane Missiles** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Cold Snap** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
-2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
-3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
-4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
-5. **Counterspell** a mob that casts spells.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead.
+2. **Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.
+3. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**. No Cone of Cold.
+4. **Ice Lance** while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
+5. To finish: a **Fire Blast** (not below a tenth of the mob's health) or **Ice Lance** that will kill, or your wand.
+6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
 
 ## Why this rotation
 
@@ -49,8 +52,20 @@ This hybrid plays the Frost list with one Arcane addition: **Frostbolt** at rang
 - On a nearly dead mob, skip even a free **Arcane Missiles** (the fight lab does not channel it into a mob a few wand hits from death): an **Ice Lance** or **Fire Blast** that will kill, or the wand.
 - Mob on you with **Frost Nova** down: **Fire Blast**, then keep casting **Frostbolt**; the list does not use **Cone of Cold** here.
 
-*This guide was written for the rotation of 2026-10-25; the list above was re-tuned since, so follow the list where the two differ.*
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 28 |
+| 30 | 34 |
+| 40 | 37 |
+| 50 | 29 |
+| 60 | 26 |
+
+## Other builds of this spec
+
+- [Arcane-Frost (optimized)](../research/leveling/builds/opt-frost-leveling-leveling-st.md) (22/3/26, 31 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/212225200100311-3-0525300301113002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

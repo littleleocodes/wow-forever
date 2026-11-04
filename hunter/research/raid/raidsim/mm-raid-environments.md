@@ -6,11 +6,11 @@
 |---|---|---|---|---|---|---|
 | `opt-mm-raid-raid-dps` | 31/16/4 | 530 | 580 | 937 | 937 | 971 |
 | `opt-mm-raid-parse` | 31/15/5 | 515 | 563 | 941 | 963 | 996 |
-| `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1001 | 1001 | 1029 |
+| `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1004 | 1004 | 1043 |
 | `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 542 | 916 | 916 | 936 |
 | sim preset: BM Weave | - | 489 | 540 | 956 | 956 | 989 |
 | sim preset: BM | - | 477 | 527 | 982 | 982 | 1025 |
-| sim preset: MM | - | 471 | 508 | 967 | 967 | 994 |
+| sim preset: MM | - | 471 | 508 | 969 | 969 | 1008 |
 | `bm-mm-raid` | 22/29/0 | 461 | 506 | 906 | 906 | 928 |
 | sim preset: SV | - | 434 | 468 | 838 | 838 | 861 |
 | sim preset: SV Weave | - | 429 | 464 | 827 | 827 | 856 |
@@ -31,11 +31,11 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `opt-mm-raid-raid-dps` | 530 | +13% | +34% | +7% | +5% | +18% | 937 |
 | `opt-mm-raid-parse` | 515 | +17% | +34% | +7% | +5% | +19% | 941 |
-| `marksmanship-ml-raid` | 501 | +21% | +30% | +8% | +7% | +35% | 1001 |
+| `marksmanship-ml-raid` | 501 | +21% | +30% | +8% | +7% | +35% | 1004 |
 | `bm-mm-full-buffs-raid` | 499 | +17% | +33% | +8% | +5% | +20% | 916 |
 | sim preset: BM Weave | 489 | +16% | +41% | +9% | +4% | +26% | 956 |
 | sim preset: BM | 477 | +17% | +41% | +10% | +5% | +33% | 982 |
-| sim preset: MM | 471 | +24% | +31% | +8% | +7% | +36% | 967 |
+| sim preset: MM | 471 | +24% | +31% | +8% | +7% | +37% | 969 |
 | `bm-mm-raid` | 461 | +14% | +39% | +10% | +4% | +30% | 906 |
 | sim preset: SV | 434 | +23% | +32% | +8% | +7% | +24% | 838 |
 | sim preset: SV Weave | 429 | +23% | +32% | +8% | +7% | +23% | 827 |

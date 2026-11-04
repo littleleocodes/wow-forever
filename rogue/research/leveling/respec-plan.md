@@ -6,62 +6,62 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-60: combat-swords-raid -> level-30 build (5/16/0)**
-  - at level 10: **Combat**: Improved Sinister Strike 1
-  - at level 60: **Combat**: Improved Sinister Strike 2, Improved Eviscerate 3, Precision 3, Deflection 3, Riposte 1, Lightning Reflexes 3, Flawless Execution 1; **Assassination**: Remorseless Attacks 2, Malice 5, Murder 2, Improved Gouge 1, Relentless Strikes 1, Lethality 4, Cold Blood 1, Improved Poisons 5, Vigor 2, Vile Poisons 3, Seal Fate 5, Mutilate 1, Venom 1; **Subtlety**: Opportunity 2
-  - order: 10 Improved Sinister Strike, 11-12 Remorseless Attacks x2, 13 Improved Sinister Strike, 14-16 Improved Eviscerate x3, 17-18 Precision x2, 19-21 Deflection x3, 22 Riposte, 23-25 Malice x3, 26 Precision, 27-29 Lightning Reflexes x3, 30 Flawless Execution, 31-32 Malice x2, 33-34 Murder x2, 35 Improved Gouge, 36 Relentless Strikes, 37-40 Lethality x4, 41 Cold Blood, 42-45 Improved Poisons x4, 46-47 Vigor x2, 48 Improved Poisons, 49-50 Vile Poisons x2, 51-55 Seal Fate x5, 56-57 Opportunity x2, 58 Vile Poisons, 59 Mutilate, 60 Venom
+- **Levels 10-60: combat-swords-raid -> level-30 build (3/18/0)**
+  - at level 10: **Combat**: Coup de Grace 1
+  - at level 60: **Combat**: Coup de Grace 3, Lightning Reflexes 5, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Weapon Expertise 2, Aggression 3, Dual Wield Specialization 2; **Assassination**: Remorseless Attacks 2, Malice 5; **Subtlety**: Opportunity 2, Setup 3, Dirty Deeds 2, Master of Deception 3, Serrated Blades 3, Initiative 3, Premeditation 1, Ghostly Strike 1, Elusiveness 2, Preparation 1
+  - order: 10-12 Coup de Grace x3, 13-14 Remorseless Attacks x2, 15 Malice, 16-17 Lightning Reflexes x2, 18-19 Precision x2, 20-22 Deflection x3, 23 Riposte, 24 Precision, 25-27 Lightning Reflexes x3, 28 Flawless Execution, 29-30 Weapon Expertise x2, 31-34 Malice x4, 35-37 Aggression x3, 38-39 Opportunity x2, 40-42 Setup x3, 43-44 Dirty Deeds x2, 45-47 Master of Deception x3, 48-50 Serrated Blades x3, 51 Initiative, 52 Premeditation, 53 Ghostly Strike, 54-55 Initiative x2, 56-57 Dual Wield Specialization x2, 58-59 Elusiveness x2, 60 Preparation
 
-Total: **69.5 h** (22.7% faster than talentless), no respec.
+Total: **67.9 h** (24.5% faster than talentless), no respec.
 
 ## Best schedule if you stay in one spec model
 
 ### combat-swords-raid
 
-- **Levels 10-60: combat-swords-raid -> level-30 build (5/16/0)**
-  - at level 10: **Combat**: Improved Sinister Strike 1
-  - at level 60: **Combat**: Improved Sinister Strike 2, Improved Eviscerate 3, Precision 3, Deflection 3, Riposte 1, Lightning Reflexes 3, Flawless Execution 1; **Assassination**: Remorseless Attacks 2, Malice 5, Murder 2, Improved Gouge 1, Relentless Strikes 1, Lethality 4, Cold Blood 1, Improved Poisons 5, Vigor 2, Vile Poisons 3, Seal Fate 5, Mutilate 1, Venom 1; **Subtlety**: Opportunity 2
-  - order: 10 Improved Sinister Strike, 11-12 Remorseless Attacks x2, 13 Improved Sinister Strike, 14-16 Improved Eviscerate x3, 17-18 Precision x2, 19-21 Deflection x3, 22 Riposte, 23-25 Malice x3, 26 Precision, 27-29 Lightning Reflexes x3, 30 Flawless Execution, 31-32 Malice x2, 33-34 Murder x2, 35 Improved Gouge, 36 Relentless Strikes, 37-40 Lethality x4, 41 Cold Blood, 42-45 Improved Poisons x4, 46-47 Vigor x2, 48 Improved Poisons, 49-50 Vile Poisons x2, 51-55 Seal Fate x5, 56-57 Opportunity x2, 58 Vile Poisons, 59 Mutilate, 60 Venom
+- **Levels 10-60: combat-swords-raid -> level-30 build (3/18/0)**
+  - at level 10: **Combat**: Coup de Grace 1
+  - at level 60: **Combat**: Coup de Grace 3, Lightning Reflexes 5, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Weapon Expertise 2, Aggression 3, Dual Wield Specialization 2; **Assassination**: Remorseless Attacks 2, Malice 5; **Subtlety**: Opportunity 2, Setup 3, Dirty Deeds 2, Master of Deception 3, Serrated Blades 3, Initiative 3, Premeditation 1, Ghostly Strike 1, Elusiveness 2, Preparation 1
+  - order: 10-12 Coup de Grace x3, 13-14 Remorseless Attacks x2, 15 Malice, 16-17 Lightning Reflexes x2, 18-19 Precision x2, 20-22 Deflection x3, 23 Riposte, 24 Precision, 25-27 Lightning Reflexes x3, 28 Flawless Execution, 29-30 Weapon Expertise x2, 31-34 Malice x4, 35-37 Aggression x3, 38-39 Opportunity x2, 40-42 Setup x3, 43-44 Dirty Deeds x2, 45-47 Master of Deception x3, 48-50 Serrated Blades x3, 51 Initiative, 52 Premeditation, 53 Ghostly Strike, 54-55 Initiative x2, 56-57 Dual Wield Specialization x2, 58-59 Elusiveness x2, 60 Preparation
 
-Total: **69.5 h** (22.7% faster than talentless), no respec.
+Total: **67.9 h** (24.5% faster than talentless), no respec.
 
 ### combat-daggers-raid
 
-- **Levels 10-60: combat-daggers-raid -> level-20 build (0/9/2)**
+- **Levels 10-60: combat-daggers-raid -> level-30 build (0/19/2)**
   - at level 10: **Subtlety**: Opportunity 1
-  - at level 60: **Subtlety**: Opportunity 2; **Combat**: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Endurance 2, Dual Wield Specialization 2, Blade Flurry 1, Hack and Slash 4, Aggression 3; **Assassination**: Malice 5, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Remorseless Attacks 1, Improved Gouge 2, Mutilate 1
-  - order: 10-11 Opportunity x2, 12-16 Lightning Reflexes x5, 17-19 Puncturing Wounds x3, 20 Precision, 21-25 Malice x5, 26-28 Ruthlessness x3, 29-30 Murder x2, 31 Relentless Strikes, 32-36 Lethality x5, 37 Cold Blood, 38 Remorseless Attacks, 39-40 Improved Gouge x2, 41 Mutilate, 42-43 Precision x2, 44-46 Deflection x3, 47 Riposte, 48 Flawless Execution, 49-50 Endurance x2, 51-52 Dual Wield Specialization x2, 53 Blade Flurry, 54-57 Hack and Slash x4, 58-60 Aggression x3
+  - at level 60: **Subtlety**: Opportunity 2, Master of Deception 3, Dirty Deeds 2, Improved Ambush 3, Serrated Blades 2; **Combat**: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Aggression 3, Weapon Expertise 2, Blade Flurry 1, Hack and Slash 5, Dual Wield Specialization 2, Endurance 1, Adrenaline Rush 1; **Assassination**: Malice 5, Ruthlessness 3
+  - order: 10-11 Opportunity x2, 12-16 Lightning Reflexes x5, 17-19 Puncturing Wounds x3, 20-22 Precision x3, 23-25 Deflection x3, 26 Riposte, 27 Flawless Execution, 28-30 Aggression x3, 31-32 Weapon Expertise x2, 33 Blade Flurry, 34-38 Malice x5, 39-41 Ruthlessness x3, 42-46 Hack and Slash x5, 47-48 Dual Wield Specialization x2, 49 Endurance, 50 Adrenaline Rush, 51-53 Master of Deception x3, 54-55 Dirty Deeds x2, 56-58 Improved Ambush x3, 59-60 Serrated Blades x2
 
-Total: **73.9 h** (17.9% faster than talentless), no respec.
+Total: **70.6 h** (21.5% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| combat-swords-raid -> level-30 build (5/16/0) | 69.5 | +0.0 h |
-| combat-swords-raid -> level-20 build (0/11/0) | 69.7 | +0.1 h |
-| combat-swords-raid -> level-60 build (33/16/2) | 69.7 | +0.2 h |
-| combat-swords-raid -> level-40 build (11/18/2) | 70.1 | +0.5 h |
-| combat-swords-raid -> level-50 build (8/31/2) | 70.1 | +0.6 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 73.9 | +4.3 h |
-| combat-daggers-raid -> level-30 build (3/16/2) | 74.1 | +4.6 h |
-| combat-daggers-raid -> level-40 build (21/8/2) | 75.1 | +5.5 h |
-| combat-daggers-raid -> level-50 build (23/16/2) | 75.6 | +6.1 h |
-| combat-daggers-raid -> level-60 build (21/28/2) | 75.8 | +6.2 h |
+| combat-swords-raid -> level-30 build (3/18/0) | 67.9 | +0.0 h |
+| combat-swords-raid -> level-20 build (0/11/0) | 68.0 | +0.1 h |
+| combat-swords-raid -> level-40 build (7/21/3) | 68.2 | +0.3 h |
+| combat-swords-raid -> level-50 build (7/18/16) | 68.2 | +0.3 h |
+| combat-swords-raid -> level-60 build (28/21/2) | 68.4 | +0.5 h |
+| combat-daggers-raid -> level-30 build (0/19/2) | 70.6 | +2.7 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 70.9 | +3.0 h |
+| combat-daggers-raid -> level-50 build (8/31/2) | 71.0 | +3.1 h |
+| combat-daggers-raid -> level-40 build (8/21/2) | 71.5 | +3.6 h |
+| combat-daggers-raid -> level-60 build (31/18/2) | 74.8 | +6.9 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| combat-swords-raid -> level-20 build (0/11/0) | +1.8% | +5.8% | +10.7% | +14.5% | +17.3% | +20.2% | +22.7% | +24.9% | +26.9% | +29.6% | +31.3% |
-| combat-swords-raid -> level-30 build (5/16/0) | +1.8% | +6.7% | +8.8% | +14.5% | +17.8% | +19.7% | +22.0% | +24.8% | +26.8% | +30.2% | +31.3% |
-| combat-swords-raid -> level-40 build (11/18/2) | +1.8% | +6.7% | +9.5% | +14.5% | +17.3% | +20.2% | +22.9% | +24.6% | +26.4% | +28.3% | +31.0% |
-| combat-swords-raid -> level-50 build (8/31/2) | +1.8% | +6.7% | +9.2% | +14.5% | +17.0% | +20.2% | +21.3% | +23.1% | +27.2% | +29.5% | +31.4% |
-| combat-swords-raid -> level-60 build (33/16/2) | +1.8% | +6.7% | +9.5% | +14.5% | +17.3% | +20.2% | +22.7% | +24.9% | +26.9% | +29.6% | +31.9% |
-| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.6% | +14.1% | +16.2% | +19.1% | +22.2% | +23.5% | +30.0% | +33.6% | +35.0% | +37.0% |
-| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.0% | +8.8% | +16.6% | +20.8% | +23.3% | +26.5% | +28.0% | +33.7% | +35.0% | +37.0% |
-| combat-daggers-raid -> level-40 build (21/8/2) | +1.6% | +5.5% | +8.5% | +11.6% | +12.5% | +18.5% | +28.1% | +30.0% | +33.7% | +35.0% | +37.0% |
-| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.5% | +11.6% | +12.5% | +18.9% | +22.8% | +30.1% | +33.7% | +34.9% | +36.5% |
-| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.0% | +12.4% | +15.5% | +18.7% | +22.6% | +24.9% | +28.1% | +30.2% | +31.8% | +37.0% |
+| combat-swords-raid -> level-20 build (0/11/0) | +2.7% | +7.5% | +12.1% | +15.5% | +19.6% | +22.9% | +25.2% | +26.5% | +28.4% | +31.5% | +32.5% |
+| combat-swords-raid -> level-30 build (3/18/0) | +2.7% | +9.2% | +10.5% | +15.4% | +20.7% | +23.2% | +25.3% | +26.5% | +28.9% | +31.8% | +32.5% |
+| combat-swords-raid -> level-40 build (7/21/3) | +2.7% | +9.2% | +10.5% | +12.7% | +18.5% | +22.3% | +25.3% | +26.5% | +28.9% | +31.8% | +32.5% |
+| combat-swords-raid -> level-50 build (7/18/16) | +2.7% | +9.2% | +10.8% | +13.0% | +18.5% | +22.3% | +24.6% | +26.2% | +29.6% | +31.8% | +32.5% |
+| combat-swords-raid -> level-60 build (28/21/2) | +2.7% | +9.2% | +10.5% | +12.7% | +18.5% | +22.3% | +25.0% | +26.0% | +28.0% | +31.0% | +33.6% |
+| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.6% | +14.1% | +16.1% | +20.2% | +23.3% | +25.2% | +27.5% | +29.5% | +30.7% | +32.1% |
+| combat-daggers-raid -> level-30 build (0/19/2) | +1.6% | +3.6% | +14.1% | +15.9% | +21.4% | +23.6% | +25.8% | +27.6% | +29.5% | +30.7% | +32.3% |
+| combat-daggers-raid -> level-40 build (8/21/2) | +1.6% | +4.6% | +8.0% | +11.7% | +19.2% | +23.3% | +25.9% | +27.6% | +29.5% | +30.7% | +32.3% |
+| combat-daggers-raid -> level-50 build (8/31/2) | +0.1% | +4.0% | +12.4% | +15.4% | +19.4% | +23.5% | +25.3% | +27.6% | +29.5% | +30.7% | +32.3% |
+| combat-daggers-raid -> level-60 build (31/18/2) | +1.6% | +4.6% | +8.1% | +9.4% | +10.4% | +12.8% | +19.5% | +24.2% | +27.1% | +29.1% | +34.1% |
 
 ## Reading it
 

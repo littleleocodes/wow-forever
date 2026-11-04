@@ -2,24 +2,27 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Elemental
 
-**[Elemental (optimized)](../research/leveling/builds/opt-elemental-dps-leveling-st.md)** (31/12/8) — [open the talent tree](https://talentsforever.com/shaman/60/5500331003101351-1502020011-053-7)
+**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-7)
 
-**Signature spells:** 66% of the damage at level 60 in the fight lab comes from Lightning Bolt, Chain Lightning, Lava Burst, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Lightning Bolt** cast in every fight).
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+
+**Signature spells:** 76% of the damage at level 60 in the fight lab comes from Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Lightning Bolt** cast in every fight).
 
 ## How to play
+
+**Not in this build:** **Lightning Mastery** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
 **Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30): you swing it whenever nothing else is ready. Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**.
 
 **In the fight**, top to bottom:
 
-1. **Elemental Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** and **Lava Burst** cast 0.5 s faster for 15 s.
+1. **Lightning Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** casts 0.5 s faster for 15 s.
 2. **Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.
 3. **Earth Shock** when it would kill the mob, or to interrupt a caster.
 4. **Flame Shock** while it is not on the mob and the mob has more than 30% health.
-5. **Lava Burst** whenever it is ready (20% more damage with **Flame Shock** on the mob).
-6. **Earth Shock** whenever the shock cooldown is free.
-7. **Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.
-8. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
+5. **Earth Shock** whenever the shock cooldown is free.
+6. **Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.
+7. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
 
 **Between fights:** Heal back to 80% health with **Lesser Healing Wave** (eat if you cannot), drink below 15% of your mana.
 
@@ -50,6 +53,8 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 - A bad pull (you under 30% health): **Stoneclaw Totem** taunts the mob onto itself, then heal with **Lesser Healing Wave**; the fight lab does this for every shaman.
 - A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown).
 
+*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -58,41 +63,33 @@ One point per level from 10, in this order:
 |---|---|---|
 | 10-14 | Tidal Focus (Restoration) | 5 |
 | 15-17 | Mindfulness (Restoration) | 3 |
-| 18-22 | Convection (Elemental) | 5 |
-| 23-25 | Elemental Alacrity (Elemental) | 3 |
-| 26-27 | Call of Flame (Elemental) | 2 |
-| 28 | Elemental Focus (Elemental) | 1 |
-| 29-33 | Thundering Strikes (Enhancement) | 5 |
-| 34-35 | Improved Ghost Wolf (Enhancement) | 2 |
-| 36-37 | Guardian Totems (Enhancement) | 2 |
-| 38 | Earth's Grasp (Enhancement) | 1 |
-| 39 | Shamanistic Focus (Enhancement) | 1 |
-| 40 | Call of Flame (Elemental) | 1 |
-| 41-43 | Concussion (Elemental) | 3 |
-| 44 | Earthbound (Elemental) | 1 |
-| 45-46 | Concussion (Elemental) | 2 |
-| 47-48 | Eye of the Storm (Elemental) | 2 |
-| 49 | Lava Burst (Elemental) | 1 |
+| 18-22 | Thundering Strikes (Enhancement) | 5 |
+| 23-24 | Ancestral Knowledge (Enhancement) | 2 |
+| 25-27 | Mental Dexterity (Enhancement) | 3 |
+| 28 | Shamanistic Focus (Enhancement) | 1 |
+| 29-33 | Convection (Elemental) | 5 |
+| 34-36 | Elemental Alacrity (Elemental) | 3 |
+| 37-38 | Call of Flame (Elemental) | 2 |
+| 39 | Elemental Focus (Elemental) | 1 |
+| 40-43 | Concussion (Elemental) | 4 |
+| 44-46 | Eye of the Storm (Elemental) | 3 |
+| 47-48 | Reverberation (Elemental) | 2 |
+| 49 | Call of Thunder (Elemental) | 1 |
 | 50-52 | Lightning Overload (Elemental) | 3 |
-| 53 | Eye of the Storm (Elemental) | 1 |
+| 53 | Reverberation (Elemental) | 1 |
 | 54-58 | Elemental Fury (Elemental) | 5 |
-| 59 | Elemental Mastery (Elemental) | 1 |
-| 60 | Anticipation (Enhancement) | 1 |
+| 59-60 | Elemental Reach (Elemental) | 2 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 29 |
-| 30 | 36 |
-| 40 | 37 |
-| 50 | 38 |
-| 60 | 38 |
-
-## Other builds of this spec
-
-- [Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md) (31/12/8) — [open the talent tree](https://talentsforever.com/shaman/60/530333100301135-050032101-053-7)
+| 20 | 27 |
+| 30 | 30 |
+| 40 | 30 |
+| 50 | 30 |
+| 60 | 28 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

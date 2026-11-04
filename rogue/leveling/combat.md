@@ -2,26 +2,31 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Combat
 
-**[Combat (optimized, AoE pulls)](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (12/31/8) — [open the talent tree](https://talentsforever.com/rogue/60/125020101-32103321001414231-0323-7)
+**✅ Recommended** for leveling (the best rogue spec here, or within 3% of it).
 
-**Signature spells:** 78% of the damage at level 60 in the fight lab comes from melee, Sinister Strike, Backstab, Eviscerate, Blade Flurry (the spec's rule: at least 70%).
+**[Combat — Leveling](../research/leveling/builds/combat-open-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/rogue/60/02531320201101-321033001201232025--7)
+
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+
+**Signature spells:** 75% of the damage at level 60 in the fight lab comes from melee, Sinister Strike, Backstab, Eviscerate, Blade Flurry (the spec's rule: at least 70%).
 
 ## How to play
 
-**Not in this build:** **Cold Blood** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Adrenaline Rush**, **Blade Flurry** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
 **In the fight**, top to bottom:
 
 1. Open with **Garrote**.
-2. **Sinister Strike** until you have 5 combo points.
-3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
-4. **Cold Blood** right before an **Eviscerate** at 5 points.
-5. **Riposte** after you parry.
-6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-7. Do not interrupt a caster mob: let it cast and walk in.
-8. **Evasion** below half health while the mob still has more than 30% of its health.
+2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum.
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
+5. **Cold Blood** right before an **Eviscerate** at 5 points.
+6. **Riposte** after you parry.
+7. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
+8. Do not interrupt a caster mob: let it cast and walk in.
+9. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -53,48 +58,53 @@ Combat levels on short fights with two swords: open with **Garrote** from stealt
 - In long fights such as dungeon bosses, **Slice and Dice** pays again: the raid list keeps it up from the first point.
 - If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes.
 
+*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10 | Lightning Reflexes (Combat) | 1 |
-| 11-12 | Improved Sinister Strike (Combat) | 2 |
-| 13-14 | Improved Eviscerate (Combat) | 2 |
-| 15-17 | Deflection (Combat) | 3 |
-| 18 | Improved Eviscerate (Combat) | 1 |
-| 19 | Precision (Combat) | 1 |
-| 20 | Riposte (Combat) | 1 |
-| 21-22 | Precision (Combat) | 2 |
-| 23-24 | Endurance (Combat) | 2 |
+| 10-12 | Coup de Grace (Combat) | 3 |
+| 13 | Lightning Reflexes (Combat) | 1 |
+| 14 | Efficient Strikes (Combat) | 1 |
+| 15-17 | Precision (Combat) | 3 |
+| 18-20 | Deflection (Combat) | 3 |
+| 21 | Riposte (Combat) | 1 |
+| 22 | Efficient Strikes (Combat) | 1 |
+| 23-24 | Composure (Combat) | 2 |
 | 25 | Flawless Execution (Combat) | 1 |
-| 26-29 | Dual Wield Specialization (Combat) | 4 |
-| 30 | Blade Flurry (Combat) | 1 |
-| 31-33 | Master of Deception (Subtlety) | 3 |
-| 34-35 | Opportunity (Subtlety) | 2 |
-| 36-38 | Setup (Subtlety) | 3 |
-| 39-42 | Hack and Slash (Combat) | 4 |
-| 43-44 | Weapon Expertise (Combat) | 2 |
-| 45-47 | Aggression (Combat) | 3 |
-| 48 | Adrenaline Rush (Combat) | 1 |
-| 49-50 | Malice (Assassination) | 2 |
-| 51 | Remorseless Attacks (Assassination) | 1 |
-| 52 | Malice (Assassination) | 1 |
-| 53 | Remorseless Attacks (Assassination) | 1 |
-| 54 | Murder (Assassination) | 1 |
-| 55 | Malice (Assassination) | 1 |
-| 56 | Murder (Assassination) | 1 |
-| 57 | Malice (Assassination) | 1 |
-| 58 | Improved Gouge (Assassination) | 1 |
-| 59 | Relentless Strikes (Assassination) | 1 |
-| 60 | Lethality (Assassination) | 1 |
+| 26-27 | Weapon Expertise (Combat) | 2 |
+| 28-30 | Aggression (Combat) | 3 |
+| 31-32 | Dual Wield Specialization (Combat) | 2 |
+| 33-34 | Hack and Slash (Combat) | 2 |
+| 35-39 | Flash of Steel (Combat) | 5 |
+| 40-41 | Remorseless Attacks (Assassination) | 2 |
+| 42-46 | Malice (Assassination) | 5 |
+| 47-49 | Ruthlessness (Assassination) | 3 |
+| 50-51 | Vigor (Assassination) | 2 |
+| 52-53 | Lethality (Assassination) | 2 |
+| 54 | Improved Expose Armor (Assassination) | 1 |
+| 55 | Cold Blood (Assassination) | 1 |
+| 56 | Improved Poisons (Assassination) | 1 |
+| 57-59 | Improved Slice and Dice (Assassination) | 3 |
+| 60 | Venom (Assassination) | 1 |
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 19 |
+| 30 | 19 |
+| 40 | 21 |
+| 50 | 21 |
+| 60 | 21 |
 
 ## Other builds of this spec
 
-- [Combat — Leveling](../research/leveling/builds/combat-leveling.md) (18/31/2) — [open the talent tree](https://talentsforever.com/rogue/60/125020104012-32503301001511231-002-7)
-- [Combat — Leveling](../research/leveling/builds/combat-open-leveling.md) (12/31/8) — [open the talent tree](https://talentsforever.com/rogue/60/125020101-32303301001513231-1223-7)
+- [Combat — Leveling](../research/leveling/builds/combat-leveling.md) (21/30/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-32503300100123214--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

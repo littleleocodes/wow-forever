@@ -2,28 +2,29 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > Fury
 
-**✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
+**[Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-050530355020121231--7)
 
-**[Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-05053035052011521--7)
-
-**Signature spells:** 86% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
+**Signature spells:** 85% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
 
 ## How to play
 
-**Before the fight:** **Battle Stance**, a weapon in each hand.
+**Not in this build:** **Bloodthrill**, **Improved Slam**, **Mortal Strike**, **Reckless Swings**, **Spearing Strike**, **Sweeping Strikes** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
+**Before the fight:** **Battle Stance**, a two-handed weapon.
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage** (above 45% health) and **Death Wish** when it is ready, then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
+1. **Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
 2. **Battle Shout**: keep it up (it lasts 3 minutes).
 3. **Execute** first once the mob is below 20% health.
-4. **Overpower** whenever it lights up (after a dodge).
-5. **Bloodthirst** whenever ready.
-6. **Rend** once, while the mob has more than a third of its health.
-7. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
-8. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
+4. **Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.
+5. **Reckless Swings** (if your build has it) whenever it is ready while you are above 80% health and the mob above 30%: your next 4 hits give 5 more rage each.
+6. **Mortal Strike** whenever ready.
+7. **Rend** once, while the mob has more than a third of its health.
+8. Spare rage: **Slam** (only with **Improved Slam**), then **Spearing Strike**, then **Heroic Strike**; keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
+9. Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
 
-**Between fights:** Bandage below 60% health, eat below 40%.
+**Between fights:** Bandage below 60% health, eat below 50%.
 
 ## Why this rotation
 
@@ -50,50 +51,14 @@ Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodra
 - Fighting in **Berserker Stance** instead (3% more crit, 10% more damage taken) gives you **Whirlwind**, **Berserker Rage** and **Pummel** but costs **Overpower**; the fight lab has not measured that trade.
 - A mob that runs at low health: **Hamstring** it, or finish it with **Execute**.
 
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-14 | Cruelty (Fury) | 5 |
-| 15-19 | Unbridled Wrath (Fury) | 5 |
-| 20-22 | Furious Precision (Fury) | 3 |
-| 23-24 | Blood Craze (Fury) | 2 |
-| 25-26 | Improved Execute (Fury) | 2 |
-| 27-29 | Enrage (Fury) | 3 |
-| 30 | Death Wish (Fury) | 1 |
-| 31-32 | Enrage (Fury) | 2 |
-| 33-37 | Dual Wield Specialization (Fury) | 5 |
-| 38-39 | Flurry (Fury) | 2 |
-| 40 | Bloodthirst (Fury) | 1 |
-| 41-42 | Gore Drinker (Fury) | 2 |
-| 43-45 | Flurry (Fury) | 3 |
-| 46-50 | Deflection (Arms) | 5 |
-| 51 | Blood Craze (Fury) | 1 |
-| 52 | Improved Charge (Arms) | 1 |
-| 53 | Improved Rend (Arms) | 1 |
-| 54 | Improved Charge (Arms) | 1 |
-| 55-56 | Improved Rend (Arms) | 2 |
-| 57-59 | Deep Wounds (Arms) | 3 |
-| 60 | Improved Intercept (Fury) | 1 |
-
-## The numbers
-
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 21 |
-| 30 | 23 |
-| 40 | 25 |
-| 50 | 26 |
-| 60 | 29 |
+*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Other builds of this spec
 
-- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/0502501-05053035152010521--7)
-- [Fury — Leveling](../research/leveling/builds/fury-open-leveling.md) (16/35/0) — [open the talent tree](https://talentsforever.com/warrior/60/32320203001-05053025052010511--7)
-- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-15050130052012501--7)
+- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (11/40/0) — [open the talent tree](https://talentsforever.com/warrior/60/0502301-050530355021122231--7)
+- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-150501350020122031--7)
+- [Fury — Leveling](../research/leveling/builds/fury-open-leveling.md) (16/35/0) — [open the talent tree](https://talentsforever.com/warrior/60/32320203001-050530355020120031--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

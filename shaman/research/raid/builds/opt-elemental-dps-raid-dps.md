@@ -64,11 +64,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Standard* | community simulator | - | 571 | +0.0% | 727 | +0.0% | 6 s |
-| 2 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 561 | -1.7% | 725 | -0.4% | 10 s |
-| 3 | *Mana Tide* | community simulator | - | 531 | -6.9% | 706 | -2.9% | 17 s |
-| 4 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 531 | -6.9% | 707 | -2.8% | 16 s |
-| 5 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 528 | -7.5% | 719 | -1.1% | 20 s |
+| 1 | *Standard* | community simulator | - | 571 | +0.0% | 752 | +0.0% | 6 s |
+| 2 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 561 | -1.7% | 746 | -0.8% | 10 s |
+| 3 | *Mana Tide* | community simulator | - | 531 | -6.9% | 724 | -3.7% | 17 s |
+| 4 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 531 | -6.9% | 724 | -3.7% | 16 s |
+| 5 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 528 | -7.5% | 726 | -3.5% | 20 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -77,7 +77,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
   2. only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   3. always rank 8 instead of rank 10: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.3%, pass 1)
   4. always rank 7 instead of rank 8: if mana ≥ (time left in the fight × 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-02, 10 changes to the base rotation; third-seed check: open winner 555 -> 564 DPS (+1.5%), elemental-raid-dps 560 -> 564 DPS (+0.8%), sim preset: Standard 547 -> 551 DPS (+0.8%), opt-elemental-dps-raid-dps 548 -> 552 DPS (+0.8%), elemental-raid 535 -> 539 DPS (+0.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-04, 12 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 738 -> 746 DPS (+1.1%), sim preset: Standard 739 -> 752 DPS (+1.7%), elemental-raid-dps 724 -> 726 DPS (+0.3%), elemental-raid 718 -> 723 DPS (+0.7%)):
   1. only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   2. always rank 2 instead of rank 4: cast Lightning Bolt (+0.4%, pass 1)
   3. threshold 100 -> 200: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+0.2%, pass 2)
@@ -88,6 +88,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
   8. drop 'Clearcasting is up' from the condition: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 200)): cast Chain Lightning (+0.3%, pass 10)
   9. insert in the middle: cast Lava Burst (+0.3%, pass 11)
   10. threshold 1s -> 2s: if number of targets = 1 and time left on the totem ≤ 1s and time left in the fight ≥ 10s: cast Searing Totem (+0.2%, pass 11)
+  11. threshold 200 -> 100: if (number of targets ≥ 2 or mana ≥ (time left in the fight × 200)): cast Chain Lightning (+1.0%, pass 13)
+  12. threshold 100 -> 50: if (number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+2.2%, pass 13)
 
 Before the pull: at -2s: cast Lightning Bolt.
 

@@ -190,8 +190,8 @@
     "talents": "502-0053552501520051-5"
    },
    {
-    "label": "sim preset: MM",
-    "talents": "5-0053452511522051-5"
+    "label": "sim preset: BM",
+    "talents": "5320001505101251-0052050301-4"
    },
    {
     "label": "bm-mm-raid",
@@ -211,7 +211,7 @@
   ],
   "tuned_on": [
    "marksmanship-ml-raid",
-   "sim preset: MM"
+   "sim preset: BM"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -335,50 +335,58 @@
     "gain_seed2": 0.0016154644286698883,
     "candidates": 362,
     "pass": 15
+   },
+   {
+    "round": 16,
+    "change": "threshold 3 -> 2.25: if time until Aimed Shot is ready \u2265 3 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.00163643525784396,
+    "gain_seed2": 0.0016318877276526589,
+    "candidates": 365,
+    "pass": 16
    }
   ],
   "final": {
    "raid": {
     "marksmanship-ml-raid": {
-     "before": 801.3042963897702,
-     "after": 890.4824483130587,
-     "base": 801.3042963897702,
+     "before": 924.8316272292237,
+     "after": 1004.145964468411,
+     "base": 924.8316272292237,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.03495115382740004,
-     "oom_after": 0.04521076920535008
+     "oom_before": 0.024604765854349977,
+     "oom_after": 0.05380961769719996
     },
-    "sim preset: MM": {
-     "before": 779.0182349735043,
-     "after": 867.0971370124755,
-     "base": 779.0182349735043,
+    "sim preset: BM": {
+     "before": 936.1347025864239,
+     "after": 981.4474655891131,
+     "base": 936.1347025864239,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7124498501662038,
-     "oom_after": 0.8206316398530537
+     "oom_before": 0.04762253221089997,
+     "oom_after": 0.04762253221089997
     },
     "bm-mm-raid": {
-     "before": 759.9859509706442,
-     "after": 790.2484594010624,
-     "base": 759.9859509706442,
+     "before": 890.3786857866796,
+     "after": 905.3547595679485,
+     "base": 890.3786857866796,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "bm-mm-full-buffs-raid": {
-     "before": 769.6085256816299,
-     "after": 794.7003462754471,
-     "base": 769.6085256816299,
+     "before": 902.9337702624548,
+     "after": 915.7125077851728,
+     "base": 902.9337702624548,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-mm-raid-raid-dps": {
-     "before": 760.621620044423,
-     "after": 782.9722117741624,
-     "base": 760.621620044423,
+     "before": 924.2420776609459,
+     "after": 937.1115063289533,
+     "base": 924.2420776609459,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -402,6 +410,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 15
+  "passes": 16
  }
 }

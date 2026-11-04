@@ -2614,5 +2614,168 @@
   "best_hand": "arcane-blast-raid",
   "gain_vs_hand": 0.072,
   "commit": "5ad0894c9"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "arcane-dps",
+    "dps": 1002.73,
+    "se": 0.155
+   },
+   "arcane-blast-raid": {
+    "entry": "arcane-dps",
+    "dps": 889.29,
+    "se": 0.144
+   },
+   "arcane-open-raid": {
+    "entry": "arcane-dps",
+    "dps": 1000.56,
+    "se": 0.163
+   }
+  },
+  "best_hand": "arcane-blast-raid",
+  "gain_vs_hand": 0.1276
+ },
+ "signature_check": {
+  "spec": "Arcane",
+  "ok": true,
+  "core_share": 0.794,
+  "min_share": 0.5,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "arcane-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 1002.7,
+  "date": "2026-11-04",
+  "commit": "5ad0894c9",
+  "shares": {
+   "Arcane Missiles": 0.2895,
+   "Arcane Wrath": 0.2825,
+   "Arcane Blast": 0.222,
+   "Fire Blast": 0.0997,
+   "Pyroblast": 0.0808,
+   "Ignite": 0.0131,
+   "Fireball": 0.0077,
+   "Demonic Rune": 0.0046
+  },
+  "casts": {
+   "Fireball": 0.77,
+   "Arcane Wrath": 17.49,
+   "Presence of Mind": 1.01,
+   "Evocation": 0.24,
+   "Pyroblast": 4.84,
+   "Arcane Missiles": 30.21,
+   "Fire Blast": 14.56,
+   "Arcane Blast": 37.73,
+   "Arcane Power": 1.01
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     1
+    ],
+    [
+     "Improved Channeling",
+     3
+    ],
+    [
+     "Arcane Resilience",
+     1
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     3
+    ],
+    [
+     "Arcane Wrath",
+     1
+    ],
+    [
+     "Presence of Mind",
+     1
+    ],
+    [
+     "Arcane Mind",
+     5
+    ],
+    [
+     "Arcane Instability",
+     3
+    ],
+    [
+     "Arcane Power",
+     1
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     3
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     1
+    ],
+    [
+     "Heating Up",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Precision",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-04",
+  "setting": "raid",
+  "why": "confirms arcane-open-raid (+0.22% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

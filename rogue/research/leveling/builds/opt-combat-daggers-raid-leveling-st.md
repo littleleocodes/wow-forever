@@ -22,7 +22,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | **Improved Gouge** | 3/3 | changed | Increases the duration of your Gouge ability by 1.5 sec. |
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
 | **Remorseless Attacks** | 2/2 | changed | After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec. |
-| **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
+| **Improved Expose Armor** | 1/2 | changed | Reduces the Energy cost of your Expose Armor ability by 5, and refunds 1 Combo Point when cast with 5 Combo Points. |
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
 | **Blood Splatter** | 1/1 | **NEW** | Increases the duration of your Rupture ability by 6 seconds and your Garrote ability by 9 seconds. |
@@ -31,6 +31,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 | **Vile Poisons** | 2/5 | moved | Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects. |
 | **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
+| **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 | **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 90% weapon damage plus an additional amount with each weapon (Blizzard: the amount was also increased). Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 
@@ -67,8 +68,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | 28-29 | Assassination | Improved Slice and Dice | 2 | 20/0/0 |
 | 30 | Assassination | Relentless Strikes | 1 | 21/0/0 |
 | 31 | Assassination | Improved Slice and Dice | 1 | 22/0/0 |
-| 32-33 | Assassination | Improved Expose Armor | 2 | 24/0/0 |
-| 34 | Assassination | Blood Splatter | 1 | 25/0/0 |
+| 32 | Assassination | Improved Expose Armor | 1 | 23/0/0 |
+| 33 | Assassination | Blood Splatter | 1 | 24/0/0 |
+| 34 | Assassination | Venom | 1 | 25/0/0 |
 | 35-37 | Assassination | Seal Fate | 3 | 28/0/0 |
 | 38-39 | Assassination | Vile Poisons | 2 | 30/0/0 |
 | 40 | Assassination | Mutilate | 1 | 31/0/0 |
@@ -102,12 +104,12 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.1 | 8.2 | 9.0 | 9.1 | 8.4 | 14% |
-| Melee (off-hand) | 6.5 | 7.6 | 8.5 | 8.7 | 8.0 | 6% |
-| Mutilate | 0.0 | 0.0 | 2.9 | 3.1 | 3.1 | 23% |
-| Eviscerate | 0.4 | 0.5 | 1.5 | 1.7 | 2.0 | 32% |
-| Shank | 0.0 | 1.8 | 2.0 | 2.0 | 1.9 | 1% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 10% |
+| Melee | 7.1 | 8.2 | 8.6 | 8.6 | 7.8 | 13% |
+| Melee (off-hand) | 6.5 | 7.6 | 8.0 | 8.1 | 7.3 | 6% |
+| Mutilate | 0.0 | 0.0 | 2.7 | 2.9 | 2.8 | 22% |
+| Eviscerate | 0.4 | 0.5 | 1.5 | 1.7 | 1.8 | 30% |
+| Shank | 0.0 | 1.8 | 1.9 | 1.9 | 1.8 | 1% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 9% |
 | Riposte | 0.0 | 0.0 | 0.0 | 0.0 | 0.9 | 3% |
 | Kick | 0.2 | 0.2 | 0.2 | 0.3 | 0.1 | 0% |
 | Cold Blood | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
@@ -119,6 +121,8 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 - Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 21/28/2 -> 31/18/2; Murder 2 gone; Lethality 5 -> 2 (rank cap); +1 Vigor (tier gating for Cold Blood); +1 Vigor (tier gating for Cold Blood); +1 Remorseless Attacks (tier gating for Relentless Strikes); +1 Remorseless Attacks (tier gating for Relentless Strikes); +1 Improved Slice and Dice (tier gating for Relentless Strikes); +1 Improved Slice and Dice (tier gating for Relentless Strikes); +1 Improved Slice and Dice (tier gating for Mutilate); +1 Improved Expose Armor (tier gating for Mutilate); +1 Improved Expose Armor (tier gating for Mutilate); +1 Blood Splatter (tier gating for Mutilate); +1 Seal Fate (tier gating for Mutilate); +1 Seal Fate (tier gating for Mutilate); +1 Seal Fate (tier gating for Mutilate); +1 Vile Poisons (tier gating for Mutilate); +1 Vile Poisons (tier gating for Mutilate); -1 Dual Wield Specialization (over 51); -1 Dual Wield Specialization (over 51); -1 Endurance (over 51); -1 Hack and Slash (over 51); -1 Hack and Slash (over 51); -1 Hack and Slash (over 51); -1 Hack and Slash (over 51); -1 Hack and Slash (over 51); -1 Endurance (over 51); -1 Aggression (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-daggers-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 24.9 s per kill; stats model 25.1 s; own tree last 25.1 s.
+- 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/18/2 -> 31/18/2; +1 Venom (prerequisite of Mutilate); -1 Improved Expose Armor (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
+- 2026-11-04 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-daggers-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 24.0 s per kill; stats model 24.7 s; own tree last 24.7 s.
 
 ## Open questions (verify in the live game)
 

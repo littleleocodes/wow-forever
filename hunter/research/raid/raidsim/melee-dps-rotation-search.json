@@ -256,12 +256,12 @@
     },
     "sim preset: SV Melee": {
      "before": 363.8240733368905,
-     "after": 606.3610775793423,
+     "after": 610.3133895994106,
      "base": 363.8240733368905,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2829260826003998,
-     "oom_after": 0.2829260826003998
+     "oom_before": 0.2716511589918491,
+     "oom_after": 0.2716511589918491
     },
     "opt-melee-dps-raid-dps": {
      "before": 471.9938533374248,
@@ -306,6 +306,6 @@
    "on": true
   },
   "first_date": "2026-09-29",
-  "passes": 15
+  "passes": 16
  }
 }

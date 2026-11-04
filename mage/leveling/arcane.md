@@ -2,27 +2,28 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Arcane
 
-**[Arcane — Leveling](../research/leveling/builds/arcane-leveling.md)** (29/0/22) — [open the talent tree](https://talentsforever.com/mage/60/21221500301030153--0525300001013002-7)
+**[Arcane — Leveling](../research/leveling/builds/arcane-open-leveling.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/mage/60/050105203100311531-3402300120002-012-7)
 
-> 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (lacks Arcane Blast; core share 0% < 50%). Arcane is defined by **Arcane Blast** cast in every fight and Arcane Blast, Arcane Missiles, Arcane Wrath carrying 50% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 91% of the damage at level 60 in the fight lab comes from Arcane Blast, Arcane Missiles, Arcane Wrath (the spec's rule: at least 50%; **Arcane Blast** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Ice Lance** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly), and **Arcane Power** too while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
-2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
-3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
-4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
-5. **Counterspell** a mob that casts spells.
+1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
+2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (12% of your Intellect) for 18 seconds.
+3. **Arcane Missiles** as your channel, also once the mob is on you (with **Improved Channeling**, hits do not cut it short), and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you).
+4. No Frost Nova: let the mob come and keep channeling. **Cone of Cold** only when the mob is on you and below a fifth of its health, then step back; **Ice Lance** if the mob is frozen.
+5. When you cannot afford **Arcane Missiles**: **Fire Blast** if the mob is on you, else **Frostbolt**; finish with a **Fire Blast** that will kill, or your wand.
+6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
 
 ## Why this rotation
 
@@ -52,10 +53,20 @@ Arcane levels on its own spells: **Arcane Wrath** to open, two **Arcane Blast** 
 
 *This guide was written for the rotation of 2026-10-25; the list above was re-tuned since, so follow the list where the two differ.*
 
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 33 |
+| 30 | 36 |
+| 40 | 34 |
+| 50 | 32 |
+| 60 | 29 |
+
 ## Other builds of this spec
 
-- [Arcane — Leveling](../research/leveling/builds/arcane-open-leveling.md) (31/17/3) — [open the talent tree](https://talentsforever.com/mage/60/050105203100311531-3402300120002-012-7)
+- [Arcane — Leveling](../research/leveling/builds/arcane-leveling.md) (29/0/22, 41 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/21221500301030153--0525300001013002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

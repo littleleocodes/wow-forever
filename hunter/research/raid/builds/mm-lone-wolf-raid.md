@@ -70,13 +70,20 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 10** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 357 | +0.0% | 705 | -6.6% | 32 s |
-| 2 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 357 | -0.2% | 755 | +0.0% | 56 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 304 | -14.9% | 623 | -17.5% | 48 s |
+| 1 | *MM* | community simulator | - | 462 | +0.0% | 991 | +0.0% | 52 s |
+| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 455 | -1.5% | 927 | -6.5% | 34 s |
+| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 454 | -1.7% | 984 | -0.7% | 56 s |
+| 4 | *SV* | community simulator | - | 411 | -11.1% | 825 | -16.8% | 47 s |
+| 5 | *SV Weave* | community simulator | - | 407 | -12.0% | 817 | -17.6% | 47 s |
+| 6 | *MM Weave* | community simulator | - | 393 | -15.0% | 828 | -16.4% | 54 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 388 | -16.0% | 814 | -17.9% | 48 s |
+| 8 | *BM Weave* | community simulator | - | 298 | -35.4% | 631 | -36.4% | 36 s |
+| 9 | *BM* | community simulator | - | 288 | -37.7% | 641 | -35.3% | 42 s |
+| 10 | *SV Melee* | community simulator | - | 261 | -43.6% | 595 | -40.0% | 54 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +97,7 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 15 passes, the last 2026-11-01, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 702 -> 764 DPS (+8.8%), opt-mm-lonewolf-raid-raid-dps 690 -> 712 DPS (+3.3%), marksmanship-ml-parse 671 -> 730 DPS (+8.8%), marksmanship-ml-raid 643 -> 691 DPS (+7.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 17 passes, the last 2026-11-04, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 897 -> 984 DPS (+9.7%), sim preset: MM 894 -> 991 DPS (+10.8%), opt-mm-lonewolf-raid-raid-dps 885 -> 927 DPS (+4.7%), marksmanship-ml-raid 735 -> 814 DPS (+10.7%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
@@ -122,9 +129,9 @@ Damage by ability:
 
 | Ability | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) |
 |---|---|
-| Auto Shot | 50% |
-| Arcane Shot | 25% |
-| Serpent Sting | 14% |
+| Auto Shot | 47% |
+| Arcane Shot | 27% |
+| Serpent Sting | 15% |
 | Aimed Shot | 10% |
 | spell 1295633 | 1% |
 

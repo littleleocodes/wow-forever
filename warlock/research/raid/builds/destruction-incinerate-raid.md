@@ -72,12 +72,12 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 2** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 623 | +0.0% | 695 | +0.0% | 1 s |
-| 2 | *Destro* | community simulator | - | 591 | -5.2% | 657 | -5.5% | 1 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 659 | +0.0% | 738 | +0.0% | 1 s |
+| 2 | *Destro* | community simulator | - | 624 | -5.3% | 696 | -5.6% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,7 +123,7 @@ Damage by ability:
 | Shadow Bolt | 43% |
 | Corruption | 17% |
 | Bane of Agony | 16% |
-| Immolate | 13% |
+| Immolate | 12% |
 | Conflagrate | 9% |
 | Demonic Rune | 2% |
 | Searing Pain | 1% |

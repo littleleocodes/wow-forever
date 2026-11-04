@@ -4,28 +4,29 @@
 
 *Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search).* (a hybrid: Combat/Subtlety).
 
-**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (13/17/21) — [open the talent tree](https://talentsforever.com/rogue/60/0253201-305033010011-4023003310013001-7)
+**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-3051030313010001-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-> **Signature spells: this build fails the check** in the fight lab (Ghostly Strike 0.00/kill at 20 (needs 0.49); Ghostly Strike 0.00/kill at 30 (needs 0.50); Ghostly Strike 0.00/kill at 40 (needs 0.50); Ghostly Strike 0.00/kill at 50 (needs 0.50); Ghostly Strike 0.00/kill at 60 (needs 0.50)). Combat-Subtlety is defined by **Ghostly Strike** cast in every fight and melee, Sinister Strike, Hemorrhage, Ghostly Strike, Ambush, Eviscerate carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+**Signature spells:** 89% of the damage at level 60 in the fight lab comes from melee, Sinister Strike, Hemorrhage, Ghostly Strike, Ambush, Eviscerate (the spec's rule: at least 60%; **Ghostly Strike** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush**, **Blade Flurry**, **Cold Blood** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Boot Knife**, **Death Mark**, **Preparation**, **Riposte** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper. **Premeditation** for two free combo points.
 
 **In the fight**, top to bottom:
 
-1. Open with **Garrote**.
-2. **Sinister Strike** until you have 5 combo points.
-3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
-4. **Cold Blood** right before an **Eviscerate** at 5 points.
-5. **Riposte** after you parry.
-6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-7. Do not interrupt a caster mob: let it cast and walk in.
-8. **Evasion** below half health while the mob still has more than 30% of its health.
+1. Open with **Ambush**; once fights last long enough for its bleed to pay (the Subtlety build from about level 40), **Garrote** instead.
+2. **Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.
+3. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.
+4. **Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.
+5. Once you have **Death Mark** (level 40): at 5 points, **Death Mark** instead of **Eviscerate** while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.
+6. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
+7. **Riposte** after you parry.
+8. **Kick** a caster mob's spell.
+9. **Evasion** below half health while the mob still has more than 30% of its health; if it is on cooldown, **Preparation** resets it.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -55,41 +56,50 @@ Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditat
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
 - If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes.
 
+*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-11 | Opportunity (Subtlety) | 2 |
-| 12-14 | Camouflage (Subtlety) | 3 |
-| 15-17 | Setup (Subtlety) | 3 |
-| 18 | Camouflage (Subtlety) | 1 |
-| 19 | Improved Ambush (Subtlety) | 1 |
-| 20 | Ghostly Strike (Subtlety) | 1 |
-| 21-23 | Initiative (Subtlety) | 3 |
-| 24 | Improved Ambush (Subtlety) | 1 |
-| 25-27 | Serrated Blades (Subtlety) | 3 |
-| 28 | Premeditation (Subtlety) | 1 |
-| 29 | Improved Ambush (Subtlety) | 1 |
-| 30 | Hemorrhage (Subtlety) | 1 |
-| 31-32 | Remorseless Attacks (Assassination) | 2 |
-| 33-35 | Improved Eviscerate (Combat) | 3 |
-| 36-37 | Lightning Reflexes (Combat) | 2 |
-| 38 | Deflection (Combat) | 1 |
-| 39-40 | Precision (Combat) | 2 |
-| 41-42 | Deflection (Combat) | 2 |
-| 43 | Riposte (Combat) | 1 |
-| 44 | Precision (Combat) | 1 |
-| 45-47 | Lightning Reflexes (Combat) | 3 |
-| 48 | Flawless Execution (Combat) | 1 |
-| 49-53 | Malice (Assassination) | 5 |
-| 54-55 | Murder (Assassination) | 2 |
-| 56 | Ruthlessness (Assassination) | 1 |
-| 57 | Relentless Strikes (Assassination) | 1 |
-| 58 | Dual Wield Specialization (Combat) | 1 |
-| 59-60 | Ruthlessness (Assassination) | 2 |
+| 10-12 | Coup de Grace (Combat) | 3 |
+| 13-14 | Remorseless Attacks (Assassination) | 2 |
+| 15-17 | Malice (Assassination) | 3 |
+| 18-19 | Lightning Reflexes (Combat) | 2 |
+| 20-22 | Precision (Combat) | 3 |
+| 23-25 | Lightning Reflexes (Combat) | 3 |
+| 26-27 | Efficient Strikes (Combat) | 2 |
+| 28-29 | Composure (Combat) | 2 |
+| 30 | Flawless Execution (Combat) | 1 |
+| 31-32 | Weapon Expertise (Combat) | 2 |
+| 33-35 | Aggression (Combat) | 3 |
+| 36-37 | Opportunity (Subtlety) | 2 |
+| 38-40 | Setup (Subtlety) | 3 |
+| 41 | Dirty Deeds (Subtlety) | 1 |
+| 42-44 | Opportunity (Subtlety) | 3 |
+| 45 | Improved Ambush (Subtlety) | 1 |
+| 46-48 | Serrated Blades (Subtlety) | 3 |
+| 49 | Initiative (Subtlety) | 1 |
+| 50 | Premeditation (Subtlety) | 1 |
+| 51 | Ghostly Strike (Subtlety) | 1 |
+| 52-53 | Initiative (Subtlety) | 2 |
+| 54-55 | Dual Wield Specialization (Combat) | 2 |
+| 56-57 | Hack and Slash (Combat) | 2 |
+| 58-59 | Improved Ambush (Subtlety) | 2 |
+| 60 | Hemorrhage (Subtlety) | 1 |
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 17 |
+| 30 | 21 |
+| 40 | 24 |
+| 50 | 24 |
+| 60 | 20 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

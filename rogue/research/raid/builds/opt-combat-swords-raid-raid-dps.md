@@ -60,19 +60,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 8** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 317 | +0.0% | 579 | -2.5% | 0 s |
-| 2 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 309 | -2.7% | 585 | -1.5% | 0 s |
-| 3 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 19/32/0 | 308 | -2.9% | 594 | +0.0% | 0 s |
-| 4 | *Combat SS* | community simulator | - | 302 | -4.6% | 593 | -0.2% | 0 s |
-| 5 | *Combat BS* | community simulator | - | 297 | -6.4% | 583 | -1.8% | 0 s |
-| 6 | *Asn Muti* | community simulator | - | 275 | -13.3% | 534 | -10.1% | 0 s |
-| 7 | *Combat Muti* | community simulator | - | 270 | -14.8% | 540 | -9.1% | 0 s |
-| 8 | *Subtlety Hemo* | community simulator | - | 269 | -15.1% | 451 | -24.0% | 0 s |
-| 9 | *Subtlety BS* | community simulator | - | 253 | -20.1% | 432 | -27.2% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 455 | +0.0% | 766 | +0.0% | 0 s |
+| 2 | *Combat Venom* | community simulator | - | 392 | -14.0% | 751 | -2.0% | 0 s |
+| 3 | *Combat SS* | community simulator | - | 356 | -21.9% | 720 | -6.0% | 0 s |
+| 4 | *Combat BS* | community simulator | - | 344 | -24.4% | 698 | -8.8% | 0 s |
+| 5 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 334 | -26.7% | 666 | -13.0% | 0 s |
+| 6 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 21/30/0 | 334 | -26.7% | 667 | -12.8% | 0 s |
+| 7 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 21/30/0 | 320 | -29.8% | 649 | -15.2% | 0 s |
+| 8 | *Asn Muti* | community simulator | - | 136 | -70.1% | 272 | -64.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +85,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
   7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
   8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
   9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-02, 11 changes to the base rotation; third-seed check: combat-swords-open-raid 577 -> 595 DPS (+3.1%), sim preset: Combat SS 571 -> 592 DPS (+3.6%), combat-swords-raid 561 -> 579 DPS (+3.1%), opt-combat-swords-raid-raid-dps 571 -> 584 DPS (+2.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-04, 12 changes to the base rotation; third-seed check: combat-swords-open-raid 667 -> 670 DPS (+0.4%), sim preset: Subtlety Hemo 766 -> 766 DPS (+0.0%), combat-swords-raid 650 -> 652 DPS (+0.4%), opt-combat-swords-raid-raid-dps 667 -> 669 DPS (+0.4%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
   3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)
@@ -98,28 +97,40 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
   9. insert at the end: if combo points = 5 and not time left on Slice and Dice ≤ 2s and energy ≥ current cost and not false and false and (not Expose Armor is up or time left on Expose Armor ≤ 16s) and not Elune's Light is up: cast Cold Blood (+0.3%, pass 10)
   10. threshold 3 -> 1: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not time left on Slice and Dice ≤ 2s or combo points ≥ 3 and time left in the fight ≤ 6s) and (not talentIsKnown or time left on Rupture ≥ 4 or energy ≥ 75 or time left in the fight ≤ 6s) and not false and false and (not Expose Armor is up or time left on Expose Armor ≤ 16s): cast Eviscerate (rank 8) (+0.2%, pass 10)
   11. drop 'energy ≥ current cost' from the condition: if combo points = 5 and not time left on Slice and Dice ≤ 2s and energy ≥ current cost and not false and false and (not Expose Armor is up or time left on Expose Armor ≤ 16s) and not Elune's Light is up: cast Cold Blood (+0.4%, pass 11)
+  12. threshold 3 -> 1: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.2%, pass 12)
+
+Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 2 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
-| 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.8 |
-| 4 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 0.3 |
-| 6 | cast Sinister Strike | 15.8 |
+| 1 | if variableRef: groupReference | as ready |
+| 2 | if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote | 0.3 |
+| 3 | if not Garrote is on the target and energy ≥ current cost and not variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 4 | if energy ≥ current cost and variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 5 | if Blade Flurry is ready and Blood Fury is known: strict sequence: cast Blood Fury; cast Blade Flurry | 0.7 |
+| 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 7 | groupReference | as ready |
+| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast spell 1329549 | 6.0 |
+| 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
+| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and spell 1325758 is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
+| 11 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.3 |
+| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.2 |
+| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 16.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush, cast Elune's Light, cast Eureka!, cast spell 1325758, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); cast Premeditation (needs the Premeditation talent); cast Cold Blood (needs the Cold Blood talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
 | Ability | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 55% |
-| Sinister Strike | 25% |
+| Auto Attack | 44% |
+| Sinister Strike | 21% |
+| Eviscerate | 14% |
 | spell 11337 | 8% |
 | spell 25349 | 8% |
 | Goblin Sapper Charge | 2% |
-| Eviscerate | 2% |
+| Shank | 2% |
+| Garrote | 1% |
 
 ## Notes
 

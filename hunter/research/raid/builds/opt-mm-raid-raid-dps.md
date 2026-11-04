@@ -62,17 +62,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 437 | +0.0% | 691 | -8.3% | 37 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 437 | -0.0% | 753 | +0.0% | 47 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 428 | -2.0% | 686 | -8.9% | 31 s |
-| 4 | *MM* | community simulator | - | 417 | -4.6% | - | - | 50 s |
-| 5 | *BM Weave* | community simulator | - | 392 | -10.4% | - | - | 45 s |
-| 6 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 389 | -11.1% | 685 | -9.0% | 25 s |
-| 7 | *BM* | community simulator | - | 382 | -12.7% | - | - | 50 s |
-| 8 | *SV* | community simulator | - | 381 | -12.7% | - | - | 45 s |
-| 9 | *SV Weave* | community simulator | - | 379 | -13.3% | - | - | 45 s |
-| 10 | *MM Weave* | community simulator | - | 364 | -16.8% | - | - | 53 s |
-| 11 | *SV Melee* | community simulator | - | 322 | -26.4% | - | - | 49 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -6.3% | 38 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1001 | +0.0% | 46 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -8.5% | 32 s |
+| 4 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -4.4% | 46 s |
+| 5 | *BM* | community simulator | - | 477 | -10.1% | 982 | -1.9% | 52 s |
+| 6 | *MM* | community simulator | - | 471 | -11.1% | 967 | -3.4% | 50 s |
+| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -9.4% | 26 s |
+| 8 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.3% | 47 s |
+| 9 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -17.4% | 47 s |
+| 10 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -16.6% | 53 s |
+| 11 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -18.6% | 51 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,7 +89,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 14 passes, the last 2026-11-01, 14 changes to the base rotation; third-seed check: marksmanship-open-raid 730 -> 786 DPS (+7.6%), bm-mm-raid 703 -> 719 DPS (+2.3%), bm-mm-full-buffs-raid 708 -> 720 DPS (+1.7%), opt-mm-raid-raid-dps 725 -> 736 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 16 passes, the last 2026-11-04, 16 changes to the base rotation; third-seed check: marksmanship-ml-raid 925 -> 1004 DPS (+8.6%), sim preset: BM 936 -> 981 DPS (+4.8%), bm-mm-raid 890 -> 905 DPS (+1.7%), bm-mm-full-buffs-raid 903 -> 916 DPS (+1.4%), opt-mm-raid-raid-dps 924 -> 937 DPS (+1.4%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -104,16 +104,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
   12. move to the top: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.5%, pass 12)
   13. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 12)
   14. insert at the end: cast Major Mana Potion (+0.2%, pass 13)
+  15. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 15)
+  16. threshold 3 -> 2.25: if time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.2%, pass 16)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.6 |
+| 1 | cast Arcane Shot | 8.5 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if mana % ≥ 60%: cast Intimidation | 0.3 |
 | 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.8 |
+| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.9 |
 | 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.5 |
 | 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.4 |
 
@@ -123,15 +125,15 @@ Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 32% |
-| Pet: Auto Attack | 23% |
-| Arcane Shot | 20% |
-| Serpent Sting | 11% |
-| Aimed Shot | 8% |
+| Pet: Auto Attack | 32% |
+| Auto Shot | 31% |
+| Arcane Shot | 17% |
+| Serpent Sting | 9% |
+| Aimed Shot | 7% |
 | Pet: Bite | 2% |
 | Pet: Claw | 2% |
 | Multi-Shot | 1% |
-| spell 1295633 | 1% |
+| spell 1295633 | 0% |
 
 ## Notes
 

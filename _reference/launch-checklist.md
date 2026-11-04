@@ -213,6 +213,12 @@
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
+**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
+- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
+
 **Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
 - [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
 
@@ -221,15 +227,6 @@
 
 **Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
 - [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
-
-**Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
-- [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
-
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
-
-**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
 ### Mage
 
@@ -406,12 +403,6 @@
 **Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Retribution — Raid (open talent search)** (`paladin/research/raid/builds/retribution-open-raid.md`)
-- [ ] An open-search Retribution build: check it against the community's Retribution builds at launch.
-
-**Shockadin — Raid (open talent search)** (`paladin/research/raid/builds/shockadin-open-raid.md`)
-- [ ] An open-search Shockadin build: check it against the community's Shockadin builds at launch.
-
 **Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
 - [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
 
@@ -423,6 +414,12 @@
 
 **Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
 - [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
+
+**Retribution — Raid (open talent search)** (`paladin/research/raid/builds/retribution-open-raid.md`)
+- [ ] An open-search Retribution build: check it against the community's Retribution builds at launch.
+
+**Shockadin — Raid (open talent search)** (`paladin/research/raid/builds/shockadin-open-raid.md`)
+- [ ] An open-search Shockadin build: check it against the community's Shockadin builds at launch.
 
 ### Priest
 
@@ -491,6 +488,9 @@
 
 **Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
 - [ ] An open-search Smite build: check it against the community's Smite builds at launch.
+
+**Shadow — Raid (machine-learning search)** (`priest/research/raid/builds/shadow-ml-raid.md`)
+- [ ] A machine-searched Shadow build: check it against the community's Shadow builds at launch.
 
 ### Rogue
 
@@ -571,17 +571,14 @@
 **Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
 - [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
 
+**Assassination — Leveling (open talent search)** (`rogue/research/leveling/builds/assassination-open-leveling.md`)
+- [ ] An open-search Assassination leveling build: check it while leveling at launch.
+
 **Combat — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-open-leveling.md`)
 - [ ] An open-search Combat leveling build: check it while leveling at launch.
 
 **Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
 - [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
-
-**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
-- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
-
-**Assassination — Leveling (open talent search)** (`rogue/research/leveling/builds/assassination-open-leveling.md`)
-- [ ] An open-search Assassination leveling build: check it while leveling at launch.
 
 **Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/subtlety-open-leveling.md`)
 - [ ] An open-search Subtlety leveling build: check it while leveling at launch.

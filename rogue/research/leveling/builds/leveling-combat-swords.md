@@ -28,9 +28,10 @@ Allocation and order adopted on 2026-09-26 from `cand-combat-r6`, the fastest bu
 | **Lethality** | 1/2 | changed | Grants 10% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
 | **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Improved Poisons** | 5/5 | changed | Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. |
+| **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
 | **Vile Poisons** | 1/5 | moved | Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects. |
 | **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
+| **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 | **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 90% weapon damage plus an additional amount with each weapon (Blizzard: the amount was also increased). Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 
@@ -57,34 +58,34 @@ Allocation and order adopted on 2026-09-26 from `cand-combat-r6`, the fastest bu
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
-| 13-14 | Combat | Efficient Strikes | 2 | 0/5/0 |
-| 15-16 | Combat | Puncturing Wounds | 2 | 0/7/0 |
-| 17 | Combat | Deflection | 1 | 0/8/0 |
-| 18 | Combat | Puncturing Wounds | 1 | 0/9/0 |
-| 19-20 | Combat | Deflection | 2 | 0/11/0 |
-| 21 | Combat | Riposte | 1 | 0/12/0 |
-| 22-24 | Combat | Precision | 3 | 0/15/0 |
-| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
-| 26 | Combat | Aggression | 1 | 0/17/0 |
-| 27-31 | Assassination | Malice | 5 | 5/17/0 |
-| 32-34 | Assassination | Ruthlessness | 3 | 8/17/0 |
-| 35 | Assassination | Improved Gouge | 1 | 9/17/0 |
-| 36 | Combat | Endurance | 1 | 9/18/0 |
-| 37 | Assassination | Improved Gouge | 1 | 10/18/0 |
-| 38 | Assassination | Lethality | 1 | 11/18/0 |
-| 39-40 | Assassination | Vigor | 2 | 13/18/0 |
-| 41 | Assassination | Improved Gouge | 1 | 14/18/0 |
-| 42 | Assassination | Remorseless Attacks | 1 | 15/18/0 |
-| 43 | Assassination | Cold Blood | 1 | 16/18/0 |
-| 44 | Assassination | Remorseless Attacks | 1 | 17/18/0 |
-| 45-47 | Assassination | Improved Slice and Dice | 3 | 20/18/0 |
-| 48 | Assassination | Relentless Strikes | 1 | 21/18/0 |
-| 49-52 | Assassination | Improved Poisons | 4 | 25/18/0 |
-| 53-55 | Assassination | Seal Fate | 3 | 28/18/0 |
-| 56 | Assassination | Improved Poisons | 1 | 29/18/0 |
-| 57 | Assassination | Vile Poisons | 1 | 30/18/0 |
-| 58 | Assassination | Mutilate | 1 | 31/18/0 |
+| 10-14 | Assassination | Malice | 5 | 5/0/0 |
+| 15-17 | Assassination | Ruthlessness | 3 | 8/0/0 |
+| 18-19 | Assassination | Improved Gouge | 2 | 10/0/0 |
+| 20 | Assassination | Lethality | 1 | 11/0/0 |
+| 21-22 | Assassination | Vigor | 2 | 13/0/0 |
+| 23 | Assassination | Improved Gouge | 1 | 14/0/0 |
+| 24 | Assassination | Remorseless Attacks | 1 | 15/0/0 |
+| 25 | Assassination | Cold Blood | 1 | 16/0/0 |
+| 26 | Assassination | Remorseless Attacks | 1 | 17/0/0 |
+| 27-29 | Assassination | Improved Slice and Dice | 3 | 20/0/0 |
+| 30 | Assassination | Relentless Strikes | 1 | 21/0/0 |
+| 31-33 | Assassination | Improved Poisons | 3 | 24/0/0 |
+| 34 | Assassination | Venom | 1 | 25/0/0 |
+| 35-37 | Assassination | Seal Fate | 3 | 28/0/0 |
+| 38 | Assassination | Improved Poisons | 1 | 29/0/0 |
+| 39 | Assassination | Vile Poisons | 1 | 30/0/0 |
+| 40 | Assassination | Mutilate | 1 | 31/0/0 |
+| 41-43 | Combat | Coup de Grace | 3 | 31/3/0 |
+| 44-45 | Combat | Efficient Strikes | 2 | 31/5/0 |
+| 46-47 | Combat | Puncturing Wounds | 2 | 31/7/0 |
+| 48 | Combat | Deflection | 1 | 31/8/0 |
+| 49 | Combat | Puncturing Wounds | 1 | 31/9/0 |
+| 50-51 | Combat | Deflection | 2 | 31/11/0 |
+| 52 | Combat | Riposte | 1 | 31/12/0 |
+| 53-55 | Combat | Precision | 3 | 31/15/0 |
+| 56 | Combat | Flawless Execution | 1 | 31/16/0 |
+| 57 | Combat | Aggression | 1 | 31/17/0 |
+| 58 | Combat | Endurance | 1 | 31/18/0 |
 | 59-60 | Combat | Improved Sprint | 2 | 31/20/0 |
 
 ## Core talents (priority order)
@@ -120,14 +121,14 @@ What this build casts per kill ([report](../fightlab/combat-swords-raid.md), all
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.5 | 4.8 | 5.8 | 5.8 | 6.0 | 14% |
-| Melee (off-hand) | 3.9 | 4.3 | 5.4 | 5.4 | 5.5 | 7% |
-| Sinister Strike | 3.3 | 3.7 | 4.5 | 4.9 | 4.8 | 22% |
-| Shank | 0.0 | 1.5 | 1.8 | 1.8 | 1.9 | 1% |
-| Eviscerate | 0.5 | 0.8 | 1.2 | 1.4 | 1.8 | 31% |
+| Melee | 4.5 | 5.5 | 6.2 | 6.1 | 5.6 | 13% |
+| Melee (off-hand) | 4.0 | 5.0 | 5.8 | 5.6 | 5.2 | 6% |
+| Sinister Strike | 3.0 | 4.0 | 4.0 | 4.6 | 4.6 | 21% |
+| Shank | 0.0 | 1.7 | 1.9 | 2.0 | 1.8 | 1% |
+| Eviscerate | 0.3 | 0.5 | 1.3 | 1.5 | 1.7 | 30% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 9% |
-| Riposte | 0.0 | 0.7 | 0.8 | 0.8 | 0.9 | 4% |
-| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
+| Riposte | 0.0 | 0.0 | 0.0 | 0.0 | 0.8 | 3% |
+| Cold Blood | 0.0 | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
@@ -137,9 +138,11 @@ What this build casts per kill ([report](../fightlab/combat-swords-raid.md), all
 - Daggers leveling (Backstab/Ambush) would use Puncturing Wounds at 15-17 instead of Precision and Opportunity in Subtlety; not drafted.
 - 2026-09-27 scenario audit: Venom 1 -> Remorseless Attacks 1. Venom is a finisher that spends the combo points Eviscerate and Slice and Dice need, for more poison damage; the leveling loop never casts it. Remorseless Attacks 2/2 gives +40% crit on the next Sinister Strike after every kill. Fight lab race (1500 fights per level): equal at 20-50, 1.4% less time per kill at 60. Mutilate stays: the beta tooltip names no dagger requirement, though the fight lab's swords loop does not cast it.
 - 2026-09-30: renamed from "Leveling — Combat swords (fight-lab winner adopted 2026-09-26)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
-- Fight lab (leveling/fightlab/combat-swords-raid.md, 2026-11-02, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 19/22/27/27/28 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-combat-swords-raid-leveling-st is -2% at 60 and -3% at 30 (negative = faster); race winner over the leveling: cand-combat-r9; top talents at 60: Seal Fate +5%, Improved Sinister Strike +4%, Malice +4%, Improved Eviscerate +3%; about zero: Improved Gouge, Lightning Reflexes. See the Fight lab section of leveling/README.md.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/20/0 -> 31/20/0; Murder 2 gone; Seal Fate 5 -> 3 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 4 -> 2 (rank cap); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Aggression (tier gating for Dual Wield Specialization); +1 Ruthlessness (tier gating for Seal Fate); +1 Ruthlessness (tier gating for Seal Fate); +1 Ruthlessness (tier gating for Mutilate); +1 Lethality (tier gating for Mutilate); -1 Dual Wield Specialization (over 51); -1 Dual Wield Specialization (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-daggers-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 24.1 s per kill; own tree first 24.4 s; own tree last 24.3 s.
+- 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/20/0 -> 31/20/0; +1 Venom (prerequisite of Mutilate); -1 Improved Poisons (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
+- 2026-11-04 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-daggers-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 23.7 s per kill; stats model 23.8 s; own tree last 24.0 s.
+- Fight lab (leveling/fightlab/combat-swords-raid.md, 2026-11-04, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 19/22/25/25/24 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-combat-swords-raid-leveling-st is +4% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-combat-swords; top talents at 60: Flawless Execution +4%, Coup de Grace +4%, Malice +4%, Efficient Strikes +4%; about zero: Improved Expose Armor, Improved Gouge, Lightning Reflexes, Opportunity, Relentless Strikes, Ruthlessness. See the Fight lab section of leveling/README.md.
 
 ## Open questions (verify in the live game)
 

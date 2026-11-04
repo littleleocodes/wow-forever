@@ -59,19 +59,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 9** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 21/11/19 | 682 | +0.0% | 771 | +0.0% | 0 s |
-| 2 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 677 | -0.8% | 762 | -1.1% | 0 s |
-| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 676 | -0.9% | 764 | -0.9% | 0 s |
-| 4 | *SM/Ruin* | community simulator | - | 665 | -2.6% | 745 | -3.4% | 0 s |
-| 5 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 664 | -2.8% | 747 | -3.1% | 0 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 653 | -4.3% | 726 | -5.8% | 0 s |
-| 7 | *Destro* | community simulator | - | 612 | -10.4% | 676 | -12.3% | 0 s |
-| 8 | *Demo (Shadow Brand)* | community simulator | - | 575 | -15.8% | 653 | -15.2% | 0 s |
-| 9 | *Demo (Fire Brand)* | community simulator | - | 562 | -17.7% | 627 | -18.7% | 0 s |
+| 1 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 706 | +0.0% | 795 | +0.0% | 0 s |
+| 2 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 21/11/19 | 683 | -3.3% | 770 | -3.2% | 0 s |
+| 3 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 677 | -4.1% | 761 | -4.2% | 0 s |
+| 4 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 676 | -4.2% | 763 | -4.0% | 0 s |
+| 5 | *SM/Ruin* | community simulator | - | 665 | -5.9% | 744 | -6.4% | 0 s |
+| 6 | *Destro* | community simulator | - | 649 | -8.1% | 718 | -9.7% | 0 s |
+| 7 | *Aff (Wrack)* | community simulator | - | 622 | -12.0% | 683 | -14.1% | 0 s |
+| 8 | *Demo (Shadow Brand)* | community simulator | - | 574 | -18.7% | 652 | -17.9% | 0 s |
+| 9 | *Demo (Fire Brand)* | community simulator | - | 561 | -20.5% | 626 | -21.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

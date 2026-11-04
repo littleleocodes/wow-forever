@@ -4,10 +4,10 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `mm-hawk-raid` | 22/29/0 | 402 | 435 | 793 | 793 | 803 |
-| sim preset: BM | - | 393 | 429 | 826 | 826 | 843 |
-| `beast-mastery-ml-raid` | 31/20/0 | 387 | 426 | 833 | 833 | 863 |
-| `beast-marks-ml-raid` | 28/21/2 | 376 | 412 | 833 | 833 | 838 |
+| sim preset: BM | - | 496 | 546 | 986 | 986 | 1029 |
+| `beast-mastery-ml-raid` | 31/20/0 | 486 | 538 | 995 | 995 | 1030 |
+| `mm-hawk-raid` | 22/29/0 | 476 | 521 | 922 | 922 | 948 |
+| `beast-marks-ml-raid` | 28/21/2 | 470 | 520 | 986 | 986 | 1012 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -21,10 +21,10 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `mm-hawk-raid` | 402 | +7% | +27% | +8% | +6% | +50% | 793 |
-| sim preset: BM | 393 | +8% | +32% | +9% | +5% | +58% | 826 |
-| `beast-mastery-ml-raid` | 387 | +8% | +31% | +13% | +5% | +57% | 833 |
-| `beast-marks-ml-raid` | 376 | +8% | +31% | +13% | +5% | +64% | 833 |
+| sim preset: BM | 496 | +7% | +32% | +8% | +4% | +47% | 986 |
+| `beast-mastery-ml-raid` | 486 | +7% | +32% | +13% | +5% | +49% | 995 |
+| `mm-hawk-raid` | 476 | +5% | +30% | +8% | +5% | +45% | 922 |
+| `beast-marks-ml-raid` | 470 | +8% | +32% | +13% | +5% | +52% | 986 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -34,10 +34,10 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `mm-hawk-raid` | 434 | 430 | 402 | 392 | 372 |
-| sim preset: BM | 447 | 414 | 393 | 370 | 358 |
-| `beast-mastery-ml-raid` | 444 | 411 | 387 | 365 | 353 |
-| `beast-marks-ml-raid` | 425 | 404 | 376 | 360 | 347 |
+| sim preset: BM | 557 | 516 | 496 | 468 | 455 |
+| `beast-mastery-ml-raid` | 548 | 508 | 486 | 459 | 446 |
+| `mm-hawk-raid` | 514 | 505 | 476 | 467 | 447 |
+| `beast-marks-ml-raid` | 522 | 499 | 470 | 451 | 438 |
 
 Gear presets: raid `hunter-dps-p1.p1opt.gear.json`, maximum `hunter-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

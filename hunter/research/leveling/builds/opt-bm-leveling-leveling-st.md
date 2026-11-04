@@ -45,6 +45,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Marksmanship | Lethal Attacks | 5 | 0/5/0 |
+| 15-19 | Marksmanship | Efficiency | 5 | 0/10/0 |
+| 20-22 | Marksmanship | Improved Stings | 3 | 0/13/0 |
+| 23-24 | Marksmanship | Careful Aim | 2 | 0/15/0 |
+| 25 | Marksmanship | Trueshot Aura | 1 | 0/16/0 |
+| 26-28 | Marksmanship | Careful Aim | 3 | 0/19/0 |
+| 29 | Marksmanship | Rapid Killing | 1 | 0/20/0 |
+| 30 | Marksmanship | Scatter Shot | 1 | 0/21/0 |
+| 31 | Marksmanship | Rapid Killing | 1 | 0/22/0 |
+| 32-33 | Marksmanship | Rapid Recuperation | 2 | 0/24/0 |
+| 34 | Marksmanship | Barrage | 1 | 0/25/0 |
+| 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
+| 40 | Marksmanship | Sniper Shot | 1 | 0/31/0 |
+| 41-45 | Beast Mastery | Deadly Aspects | 5 | 5/31/0 |
+| 46-47 | Beast Mastery | Focused Fire | 2 | 7/31/0 |
+| 48-50 | Beast Mastery | Endurance Training | 3 | 10/31/0 |
+| 51-55 | Beast Mastery | Unleashed Fury | 5 | 15/31/0 |
+| 56-60 | Beast Mastery | Ferocity | 5 | 20/31/0 |
+
 ## Core talents (priority order)
 
 1. **Unleashed Fury** — Removing it costs 3.5 points of score in this model.
@@ -66,23 +89,24 @@ What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 2.7 | 4.0 | 5.6 | 6.5 | 7.0 | 37% |
-| Claw | 3.6 | 4.6 | 5.4 | 5.8 | 6.3 | 8% |
-| Growl | 1.1 | 1.8 | 2.5 | 2.9 | 3.2 | 0% |
-| Bite | 1.0 | 1.0 | 1.5 | 1.7 | 1.9 | 4% |
-| Aimed Shot | 0.9 | 1.0 | 1.2 | 1.5 | 1.6 | 14% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 16% |
+| Claw | 3.9 | 4.6 | 5.3 | 5.5 | 5.8 | 7% |
+| Auto Shot | 2.9 | 4.0 | 5.1 | 5.7 | 5.7 | 31% |
+| Growl | 1.3 | 1.8 | 2.4 | 2.6 | 2.7 | 0% |
+| Bite | 1.0 | 1.0 | 1.5 | 1.7 | 1.8 | 4% |
+| Aimed Shot | 1.0 | 1.0 | 1.1 | 1.3 | 1.3 | 16% |
+| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 23% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Feign Death | 0.0 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
-| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Feign Death | 0.0 | 0.2 | 0.3 | 0.4 | 0.4 | 0% |
+| Melee | 0.0 | 0.0 | 0.1 | 0.2 | 0.3 | 1% |
+| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.2 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.2 | 1% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 
 ## Notes
 
 - Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the bm-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 23.3 s per kill; own tree first 23.3 s; own tree last 23.3 s.
 
 ## Open questions (verify in the live game)
 

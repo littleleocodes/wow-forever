@@ -82,20 +82,20 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 1 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2) |
 | Assassination | Cold Blood | 1 | changed | tier 4, max 1 — tooltip changed; was Assassination row 5, col 2 |
 | Combat | Improved Gouge | 3 | moved-tree | now in Assassination, tier 1 |
 | Subtlety | Master of Deception | 5 | changed | tier 1, max 3 — max rank 5 → 3; tooltip changed |
-| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70753: was row 2, col 2 |
-| Subtlety | Camouflage | 2 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70753: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70755: was row 2, col 2 |
+| Subtlety | Camouflage | 2 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70755: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Subtlety | Initiative | 3 | changed | tier 3, max 3 — tooltip changed |
-| Subtlety | Improved Ambush | 3 | moved | tier 2, max 3 — was Subtlety row 3, col 3 |
-| Subtlety | Serrated Blades | 3 | changed | tier 3, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3 |
+| Subtlety | Improved Ambush | 3 | moved | tier 2, max 3 — was Subtlety row 3, col 3; moved in build 1.60.1.70755: was row 2, col 4 |
+| Subtlety | Serrated Blades | 3 | changed | tier 3, max 3 — tooltip changed; moved in build 1.60.1.70755: was row 4, col 3 |
 | Subtlety | Preparation | 1 | unchanged | tier 5, max 1 |
-| Subtlety | Dirty Deeds | 2 | changed | tier 2, max 2 — tooltip changed; was Subtlety row 5, col 3; moved in build 1.60.1.70753: was row 5, col 1 |
-| Subtlety | Hemorrhage | 1 | changed | tier 5, max 1 — tooltip changed; was Subtlety row 5, col 4; tooltip changed in build 1.60.1.70753 (ranks 1) |
+| Subtlety | Dirty Deeds | 2 | changed | tier 2, max 2 — tooltip changed; was Subtlety row 5, col 3; moved in build 1.60.1.70755: was row 5, col 1 |
+| Subtlety | Hemorrhage | 1 | changed | tier 5, max 1 — tooltip changed; was Subtlety row 5, col 4; tooltip changed in build 1.60.1.70755 (ranks 1) |
 
 **0 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

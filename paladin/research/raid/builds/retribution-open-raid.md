@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Retribution raid build the open talent search found on 2026-11-01: every legal 51-point build with no tree rule, searched in the community simulator's ret-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +24.6% over ret-raid-dps, the best of our builds in that rotation.
+The Retribution raid build the open talent search found on 2026-11-04: every legal 51-point build with no tree rule, searched in the community simulator's ret-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +24.6% over ret-raid-dps, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -115,8 +115,8 @@ Damage by ability:
 - The ret-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): shockadin-raid -17.8%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Illumination, Deflection, Sanctified Judgement, Unyielding Faith, Repentance.
-- Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.
-- 2026-11-01 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Illumination -> Purifying Power (mana); Pursuit of Justice -> Sanctified Judgement (mana); Pursuit of Justice -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever 5ad0894 (client 70707) with this project's patches), not in-game measurements.
+- 2026-11-04 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Illumination -> Purifying Power (mana); Deflection -> Benediction (mana); Pursuit of Justice -> Sanctified Judgement (mana); Pursuit of Justice -> Benediction (mana); Deflection -> Benediction (mana); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net +0.03% on a third seed.
 
 ## Open questions (verify in the live game)
 

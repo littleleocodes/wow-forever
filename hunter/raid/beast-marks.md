@@ -12,7 +12,7 @@
 
 **Other setups of this spec.** The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 719 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--7)
+- With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 906 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--7)
 
 ## How to play
 
@@ -28,6 +28,10 @@
 4. **Aimed Shot**
 
 Between these, **Auto Shot** keeps firing on its own.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Multi-Shot**: now and then (in about 1 of 10 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -63,7 +67,7 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 763 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 986 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
@@ -76,29 +80,29 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
-| Neck | [Amulet of the Darkmoon](https://www.wowhead.com/forever/item=19491) | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
+| Head | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Neck | [Amulet of the Darkmoon](https://www.wowhead.com/forever/item=19491) · *quest: 1200 Tickets - Amulet of the Darkmoon* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) · *quest: For All To See* |
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) |
 | Back | [Shifting Cloak](https://www.wowhead.com/forever/item=18511) · *Leatherworking*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Shifting Cloak](https://www.wowhead.com/forever/item=18511) · *Leatherworking*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Field Marshal's Chain Breastplate](https://www.wowhead.com/forever/item=16466)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Field Marshal's Chain Breastplate](https://www.wowhead.com/forever/item=16466)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Chest | [Field Marshal's Chain Breastplate](https://www.wowhead.com/forever/item=16466) · *sold by Sergeant Major Clate*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Field Marshal's Chain Breastplate](https://www.wowhead.com/forever/item=16466) · *sold by Sergeant Major Clate*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Marshal's Chain Bracers](https://www.wowhead.com/forever/item=16461)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Marshal's Chain Bracers](https://www.wowhead.com/forever/item=16461)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
+| Hands | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463) · *sold by Sergeant Major Clate*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463) · *sold by Sergeant Major Clate*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Marshal's Chain Girdle](https://www.wowhead.com/forever/item=16464) | [Molten Belt](https://www.wowhead.com/forever/item=19163) · *Leatherworking* |
-| Legs | [Marshal's Chain Legguards](https://www.wowhead.com/forever/item=16467)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Marshal's Chain Legguards](https://www.wowhead.com/forever/item=16467)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) |
-| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) |
-| Trinket | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
-| Trinket | [Cleansed Vilebranch Medallion](https://www.wowhead.com/forever/item=270275) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
+| Legs | [Marshal's Chain Legguards](https://www.wowhead.com/forever/item=16467) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Marshal's Chain Legguards](https://www.wowhead.com/forever/item=16467) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Feet | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) · *quest: The Qiraji Conqueror* | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) · *quest: The Qiraji Conqueror* |
+| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) · *sold by Gaelden Hammersmith* | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) · *sold by Pix Xizzix* |
+| Trinket | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) · *quest: Job Opening: Guard Captain of Revantusk Village* | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) · *quest: Job Opening: Guard Captain of Revantusk Village* |
+| Trinket | [Cleansed Vilebranch Medallion](https://www.wowhead.com/forever/item=270275) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* |
 | Main hand | [Thorium Poleaxe](https://www.wowhead.com/forever/item=250615) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Thorium Poleaxe](https://www.wowhead.com/forever/item=250615) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
-| Ranged/relic | [Grand Marshal's Bullseye](https://www.wowhead.com/forever/item=18833)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
+| Ranged/relic | [Grand Marshal's Bullseye](https://www.wowhead.com/forever/item=18833) · *sold by Lieutenant Jackspring*<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzEVEFIFG0Y3veb2Z1v3/9Pt09tx6Fi2kDWhVm+mW1EjdjVU6eQTp3K0V3bkXKX3T3oIZjAIESiiCIlMNgkkYKO0iUwBINqNamgjMQMOnTwFgVFzLgLkR2VnsPLO8/DfM/zzny8uJ9CCGRQIQq9kIU8OACXAe4AzACw/z2VuGo7KOsSpSFBuYASXXZA3vgPRVq+BSjSlWchlGjlKsjLAZToSwfkj3Uo0ecOyO/dpuKA/KEORbrkAEp0Zet1ib6o8a+m3XN+3HTrwxtuffLYPfPrdL38pQ59KNFr10F+1xBpCS3a0Y0pGAMyak9CsGzdt1a7pqZhFqRx+95tuGKvwajdTb3skIJH5ICZMDjnuqmbnOtGQuPcNLjJE5ybWmKRiEuErpNVPzYiVQJuygWIUAygqOm8iE1VdqYMkSBK6NeMuFlkl4CdtvLnzuTyJdXgRpumc01v61T7s9bQ2UxazRVUK53OpNW+EbWUzaiFXMkq2bkhtZixCv1ZNVrMZNS+81rBstNaTdS2xPhgMTfUqhzG5liYCowOuqkqC6B4/jxumEWlSjFRIZ0+Zm8Pwzt2NIyk+FGglRwb+cvcR3bUKox73gYQRTrv9DASEr1Z3f6YchQNxrExxqjA/POEUL8ioR8FHtdRju2jAgvOQvVv1RTTS/4pzAb/SM47NKN9R5Nv3ZQ3305s89K5xo1d8JopA1OVg9gUa6D+2ifxLi+Pm0Vv8pVGWfhMFmGTGBcFn4doagwacC/Wh76Pgxxo9XnYTEZ+kqDb+ZyBVPPkhIunyUMDHl4njTUii2oyNkd8/wSlVK3bVbQ82DWfDq+evJvqqhKpXnffToD34FtLxgQ6F+7+bS1zaIcUHIceOAVZyMMwDJNfAwDiAivy); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzEVEFIFFEY3v/N7M7bv9Ltqe04VEwbyLowy5vZRtSIXT11CunUqRzdtR0pd9ndgx6CCQxCpCIQUgIDk0QKugTSURAMql2TCtJIzKBDB29Rh4gZdyGyo9J3GL75PuZ93z/v8fAohRDIoEIUeiELeXAAbgI8AJgDYAc9l7huOyibEqUhQbmGEl1xQN46gCLdug0o0tWXIZRo+Q7IKwGU6BsH5M91KNFXDsgfXVJ2QP5UhyJdmwCU6OrO5xJ9XdPfzrrr3KuEUKRPJ1z+rOKu+X22Xv5Whz6U6ORdkNcaIi2hZTu6NQ1jQEbtKQjOWI+t9a7pWZgHadx+dB9u2RswandTrzuk4Dk5ZiYMzrluclPnupHQODcT3OQJzk3NWCZihdBNsu7HRqRKAEVaWYIIxQCKms6L2FRV52YgEkQJ/ZoRN4vsBrCLVv7KpVy+pBrcaNN0rultnWp/1hq6nEmruYJqpdOZtNo3opayGbWQK1klOzekFjNWoT+rRouZjNp3VStYdlqrmdqOGR8s5oZalZPYHAtTgdFBt1V5CRQvn8cNs6hUJSYqpNPH7N1leMeelpEUPwq0nGMj/5j71J5GhfHQhwCiSBedHkZCojery88op9FgHBtjjArMv0gI9SsS+lHgcR3l2BEqsOA8VHer5phe8y9hNvhXc96hGe172nznpLz/cW5Xls41buxD1twMMFU5jk2xBuqv/RLv8PK4WfQmX22Uha9kGbaJcV3weYimxqABD2N96Oc4yIFWn4ftZOQXCbrM5wykmqcmXbxInhjw8C5pbBBZVJOxBeL7Lyilamxf0fJk33I6vOf5h6muqpDqde/bSfBefBvJmEAXwt1/XMsc2iEFZ6EHLkAW8jAMw+T3AF6ELDg=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzEVE9IFFEY3+/N7M7br7Llqe04VEwbyLowy5vZRtSIXT11CunUqRzdtR0pd9ndgx6CCQxCJPpDkRIYbJJIQUfpEhiCQbWaVFBGUgYeOniLgiJm3IXIjkq/w8c3vx/zfr9v5vHhfgohkEGFKPRAFvLgAFwGuAswDcB2eypx1TZQ1iVKQ4JyASW65IC8tgtFWr4NKNLl5yGUaOUqyEsBlOgrB+TPdSjRFw7IH9ym4oD8sQ5FuugASnR583WJvqzxr6fcc37ecuujm259+sQ989vUXvlrHfpQotdugPy+PtIcWrCja5MwCmTEnoBg2XpgrXROTsEMSGP2/TtwxV6FEbuLetkhBY/JATNhcM51Uzc5142ExrlpcJMnODe1xAIRFwn9RFb82IBUCbgp5yFCMYCipvMiNlbZ6TJEgiihXzPiZpFdAnbayp87k8uXVIMbrZrONb21Q+3LWoNnM2k1V1CtdDqTVnuH1VI2oxZyJatk5wbVYsYq9GXVaDGTUXvPawXLTms1UdsU4wPF3GCLchibYmEqMDrgpqrMg+L587hhFpUqxUSFdPiYvTUMb9/WMJLiR4FWcmz4H3Mf2VarMO55F0AU6ZzTzUhI9GZ1+2PKUTQYx4YYowLzzxFC/YqEfhR4XEc5to8KLDgD1b9VU0wv+ZcwG/grOW/XjLZtTb55U95+P7HFS+caN3bAa7oMTFUOYmOsnvprn8S7vDxuFr3JlxtkYZ0swAYxLgo+D9HUKDRhGBvpxHUI/RgDOdDi87CR7KGRXyTo9j6nP9U0Me7iWfJQv4c3SWOVyKKajM0S339BKVXrdhTND3fMp92rJ++lOqtEqsfduuPgPfhWkzGBzoa7/ljOHNogBcehG05BFvIwBEPk9wBLPi2n); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzEVEFIFG0Y3veb2Z133////ZdR/x2Hv5g2kHVhlm9mG1EjdvXUKaRTp3J013ak3GV3D3oINjAIkQpBSAkMTBIp6BJIR0EwqHZNKkgjKQMPHbxFHSJm3IXIjkrPYXjmeZjved75Pj76HyEECmgQhT7IQh7KANcB7gIsAMh/ey5z3Q5QdyTEkKBeIQnXyqBs/0Uibt8EEnH9WYgkrNwCZS1AEr4sg/KxgSR8XgblnUsqZVDeN5CIG1NAEq7vfS7hi7r+at5d53Y1RCI+mnL546q75pf5f5XPDeQjCacnQdlojLSGVp3o9iyMAxtzZiA4Zz+wN7tn52ERpAnn/h244WzBmNODXndIwRN2xEqYnHPD4pbBDTOhc24luMUTnFu6ucrEKsMPbNNPTYRqgESsrkAEKUCibvAiNdfUhTmIBEkiv27GraJ8DeTzdv7ShVy+pJncbNcNrhvtXdpA1h6+mElruYJmp9OZtNY/qpWyGa2QK9klJzesFTN2YSCrRYuZjNZ/WS/YTlqvm/qeGR8q5obb1OPUEgujIOOQ26qyAqqXz+OmVVRrkiyqrMsnO/vL8M4DLSOpfhKwkpNHfzP3iQONCtM/bwNEIi6Xe2UWEr1ZXX5KPUmmzKkpJqMg+5cZQ78qkZ8EHjdIif2HghxchNpu1R3La/4pLA/90px36mbHgTbfOylvvp7Zl2VwnZuHkLUwB7KmHqXmWCP667/EO7w8bhW9ydebFGGHrcIuM68KPg/R1Di0UJiacWYSQt8mQAm0+TzsJvsw8p0FXe4rD6ZaZqZdPE0eG/TwOmluMUXUkrEl5vsjKKXq7FDR+vDQcjq959l7qe6akOpzb91p8F58W8mYgEvhnp8uZw4dkILT0AvnIAt5GIER9mMAyVUt7Q==).
 
 ## Other builds of this spec
 
-- [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 721 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--7)
+- [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 922 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 7c3453f (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
 

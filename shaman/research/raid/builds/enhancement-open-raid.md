@@ -65,12 +65,12 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/31/3 | 555 | +0.0% | 717 | +0.0% | 17 s |
-| 2 | *Standard* | community simulator | - | 555 | +0.0% | 717 | +0.0% | 17 s |
-| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 540 | -2.7% | 700 | -2.3% | 10 s |
-| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 525 | -5.4% | 654 | -8.8% | 24 s |
-| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 514 | -7.4% | 652 | -9.1% | 26 s |
-| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 514 | -7.4% | 678 | -5.5% | 20 s |
+| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/31/3 | 555 | +0.0% | 969 | +0.0% | 17 s |
+| 2 | *Standard* | community simulator | - | 555 | +0.0% | 969 | +0.0% | 17 s |
+| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 540 | -2.7% | 938 | -3.1% | 10 s |
+| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 525 | -5.4% | 889 | -8.2% | 24 s |
+| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 514 | -7.4% | 904 | -6.7% | 26 s |
+| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 514 | -7.4% | 893 | -7.8% | 20 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -80,7 +80,7 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-02, 11 changes to the base rotation; third-seed check: enhancement-open-raid 648 -> 720 DPS (+11.1%), sim preset: Standard 634 -> 705 DPS (+11.2%), enhancement-raid-dps 603 -> 656 DPS (+8.7%), opt-enhancement-dps-raid-dps 607 -> 658 DPS (+8.3%), enhancement-ml-raid 629 -> 703 DPS (+11.8%), elemental-enhancement-ml-raid 605 -> 681 DPS (+12.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-04, 13 changes to the base rotation; third-seed check: enhancement-open-raid 893 -> 968 DPS (+8.4%), enhancement-raid-dps 846 -> 904 DPS (+6.8%), opt-enhancement-dps-raid-dps 825 -> 890 DPS (+7.9%), enhancement-ml-raid 862 -> 938 DPS (+8.9%), elemental-enhancement-ml-raid 821 -> 894 DPS (+8.9%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -92,6 +92,8 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
   9. insert at the end: if auraIsInactive: cast Rockbiter Weapon (+3.5%, pass 10)
   10. insert in the middle: if auraIsInactive: cast Magma Totem (+1.4%, pass 10)
   11. only above 25% mana: if auraIsInactive: cast Magma Totem (+0.2%, pass 10)
+  12. only above 10% mana: cast Fire Nova (+0.4%, pass 13)
+  13. move to the top: if not Flame Shock is on the target and time left in the fight ≥ 10s: cast Flame Shock (+0.2%, pass 13)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 

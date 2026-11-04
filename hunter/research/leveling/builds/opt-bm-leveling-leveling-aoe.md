@@ -51,6 +51,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
+| 15-17 | Survival | Improved Wing Clip | 3 | 0/0/8 |
+| 18-19 | Survival | Entrapment | 2 | 0/0/10 |
+| 20 | Survival | Surefooted | 1 | 0/0/11 |
+| 21 | Survival | Deterrence | 1 | 0/0/12 |
+| 22-23 | Survival | Entrapment | 2 | 0/0/14 |
+| 24 | Survival | Savage Strikes | 1 | 0/0/15 |
+| 25 | Survival | Counterattack | 1 | 0/0/16 |
+| 26-27 | Survival | Survival Tactics | 2 | 0/0/18 |
+| 28-29 | Survival | Surefooted | 2 | 0/0/20 |
+| 30 | Survival | Strider Kick | 1 | 0/0/21 |
+| 31-32 | Survival | Expose Prey | 2 | 0/0/23 |
+| 33-37 | Beast Mastery | Deadly Aspects | 5 | 5/0/23 |
+| 38-39 | Beast Mastery | Focused Fire | 2 | 7/0/23 |
+| 40-44 | Marksmanship | Lethal Attacks | 5 | 7/5/23 |
+| 45 | Marksmanship | Efficiency | 1 | 7/6/23 |
+| 46-47 | Survival | Survivalist's Discipline | 2 | 7/6/25 |
+| 48-52 | Survival | Lightning Reflexes | 5 | 7/6/30 |
+| 53 | Survival | Lacerating Strikes | 1 | 7/6/31 |
+| 54-56 | Marksmanship | Hawk Eye | 3 | 7/9/31 |
+| 57 | Marksmanship | Improved Concussive Shot | 1 | 7/10/31 |
+| 58-59 | Marksmanship | Rapid Killing | 2 | 7/12/31 |
+| 60 | Beast Mastery | Endurance Training | 1 | 8/12/31 |
+
 ## Core talents (priority order)
 
 1. **Strider Kick** — Removing it costs 7.5 points of score in this model.
@@ -91,6 +119,7 @@ What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all le
 - Allocation and order taken from cand-aoe-r2 on 2026-10-18: an earlier optimizer round beat the last export in the fight lab (40.0s vs 49.3s per kill, level-weighted).
 - Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-aoe.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/12/32 -> 8/12/31; +1 Focused Fire (tier gating for Pathfinding); +1 Focused Fire (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Savage Strikes (over 51); -1 Pathfinding (over 51); -1 Pathfinding (over 51); -1 Endurance Training (over 51); -1 Endurance Training (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, leveling-aoe).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
 
 ## Open questions (verify in the live game)
 

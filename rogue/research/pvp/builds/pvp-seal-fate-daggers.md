@@ -30,7 +30,8 @@ The Classic 30/8/13 maps almost one-to-one: Seal Fate, Cold Blood and Improved K
 | **Improved Poisons** | 1/5 | changed | Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge. |
 | **Vile Poisons** | 1/5 | moved | Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects. |
 | **Improved Kidney Shot** | 2/2 | changed | Enemies Stunned by your Kidney Shot ability take 10% increased damage from your poisons and attacks. |
-| **Relentless Strikes** | 5/5 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
+| **Relentless Strikes** | 4/5 | unchanged | Your finishing moves have a 16% chance per Combo Point to restore 25 Energy. |
+| **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 | **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 90% weapon damage plus an additional amount with each weapon (Blizzard: the amount was also increased). Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 
@@ -77,6 +78,7 @@ The Classic 30/8/13 maps almost one-to-one: Seal Fate, Cold Blood and Improved K
 
 - Vigor moved from the Assassination capstone to tier 5 (2 ranks) — cheap +10 energy for every deep-Assassination build.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/8/13 -> 31/8/12; Murder 2 gone; Lethality 5 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); +1 Dirty Deeds (tier gating for Initiative); +1 Dirty Deeds (tier gating for Initiative); +1 Improved Gouge (tier gating for Cold Blood); +1 Premeditation (tier gating for Elusiveness); +1 Dirty Tricks (tier gating for Elusiveness); +1 Improved Gouge (tier gating for Improved Kidney Shot); +1 Improved Gouge (tier gating for Improved Kidney Shot); +1 Vile Poisons (tier gating for Improved Kidney Shot); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Mutilate); +1 Relentless Strikes (tier gating for Mutilate); -1 Elusiveness (over 51); -1 Elusiveness (over 51); -1 Dirty Deeds (over 51); -1 Initiative (over 51); -1 Initiative (over 51) (refill: the combat-daggers-raid model, pvp).
+- 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/8/12 -> 31/8/12; +1 Venom (prerequisite of Mutilate); -1 Relentless Strikes (over 51) (refill: the combat-daggers-raid model, pvp).
 
 ## Open questions (verify in the live game)
 

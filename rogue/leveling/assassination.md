@@ -2,25 +2,27 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Assassination
 
-**[Leveling — Assassination with Combat's weapon talents](../research/leveling/builds/leveling-combat-swords.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--7)
+**[Assassination — Leveling](../research/leveling/builds/assassination-open-leveling.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/02531020211451031-32212300020122--7)
 
-> **Signature spells: this build fails the check** in the fight lab (Mutilate 0.00/kill at 50 (needs 0.50); Mutilate 0.00/kill at 60 (needs 0.50)). Assassination is defined by **Mutilate** cast in every fight and melee, Mutilate, Eviscerate, Venom, Rupture, Deadly Poison, Instant Poison carrying 60% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Assassination with Combat's weapon talents). A model of the beta, to check at launch.
+
+**Signature spells:** 91% of the damage at level 60 in the fight lab comes from melee, Mutilate, Eviscerate, Venom, Rupture, Deadly Poison, Instant Poison (the spec's rule: at least 60%; **Mutilate** cast in every fight).
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush**, **Blade Flurry** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Riposte** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
 **In the fight**, top to bottom:
 
 1. Open with **Garrote**.
-2. **Sinister Strike** until you have 5 combo points.
-3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
-4. **Cold Blood** right before an **Eviscerate** at 5 points.
-5. **Riposte** after you parry.
-6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-7. Do not interrupt a caster mob: let it cast and walk in.
+2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Venom** it also strengthens your poisons for 6 seconds.
+3. **Sinister Strike** until you have 5 combo points; once your build has **Mutilate** (from about level 40), it replaces **Sinister Strike**: 2 points a press, so wait for its 60 energy. The mob faces you after the opener, so **Backstab** is out.
+4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
+5. **Cold Blood** right before an **Eviscerate** at 5 points.
+6. **Riposte** after you parry.
+7. **Kick** a caster mob's spell.
 8. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
@@ -53,42 +55,55 @@ Assassination levels with two daggers: **Garrote** from stealth, **Sinister Stri
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds).
 - In a dungeon, where the tank holds the mob, stand behind it: the raid list builds with **Backstab** and **Mutilate**; the fight lab only plays solo.
 
+*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-12 | Improved Eviscerate (Combat) | 3 |
-| 13-14 | Improved Sinister Strike (Combat) | 2 |
-| 15-16 | Precision (Combat) | 2 |
-| 17-19 | Deflection (Combat) | 3 |
-| 20 | Riposte (Combat) | 1 |
-| 21 | Precision (Combat) | 1 |
-| 22-26 | Malice (Assassination) | 5 |
-| 27-28 | Murder (Assassination) | 2 |
-| 29-31 | Improved Slice and Dice (Assassination) | 3 |
-| 32 | Relentless Strikes (Assassination) | 1 |
-| 33-35 | Improved Gouge (Assassination) | 3 |
-| 36 | Remorseless Attacks (Assassination) | 1 |
-| 37 | Cold Blood (Assassination) | 1 |
-| 38-41 | Improved Poisons (Assassination) | 4 |
-| 42-43 | Vigor (Assassination) | 2 |
-| 44 | Improved Poisons (Assassination) | 1 |
-| 45 | Vile Poisons (Assassination) | 1 |
-| 46 | Mutilate (Assassination) | 1 |
-| 47-51 | Seal Fate (Assassination) | 5 |
-| 52 | Remorseless Attacks (Assassination) | 1 |
-| 53-54 | Improved Sprint (Combat) | 2 |
-| 55 | Endurance (Combat) | 1 |
-| 56 | Flawless Execution (Combat) | 1 |
-| 57-60 | Dual Wield Specialization (Combat) | 4 |
+| 10-11 | Lightning Reflexes (Combat) | 2 |
+| 12-14 | Coup de Grace (Combat) | 3 |
+| 15 | Puncturing Wounds (Combat) | 1 |
+| 16-18 | Precision (Combat) | 3 |
+| 19 | Efficient Strikes (Combat) | 1 |
+| 20-21 | Deflection (Combat) | 2 |
+| 22-23 | Composure (Combat) | 2 |
+| 24 | Efficient Strikes (Combat) | 1 |
+| 25 | Flawless Execution (Combat) | 1 |
+| 26-27 | Aggression (Combat) | 2 |
+| 28-29 | Weapon Expertise (Combat) | 2 |
+| 30-34 | Malice (Assassination) | 5 |
+| 35-37 | Ruthlessness (Assassination) | 3 |
+| 38-39 | Remorseless Attacks (Assassination) | 2 |
+| 40-41 | Vigor (Assassination) | 2 |
+| 42-43 | Lethality (Assassination) | 2 |
+| 44 | Improved Expose Armor (Assassination) | 1 |
+| 45 | Cold Blood (Assassination) | 1 |
+| 46 | Vile Poisons (Assassination) | 1 |
+| 47-50 | Improved Poisons (Assassination) | 4 |
+| 51-54 | Relentless Strikes (Assassination) | 4 |
+| 55-57 | Seal Fate (Assassination) | 3 |
+| 58 | Relentless Strikes (Assassination) | 1 |
+| 59 | Venom (Assassination) | 1 |
+| 60 | Mutilate (Assassination) | 1 |
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 21 |
+| 30 | 21 |
+| 40 | 24 |
+| 50 | 24 |
+| 60 | 21 |
 
 ## Other builds of this spec
 
-- [Assassination (optimized)](../research/leveling/builds/opt-combat-swords-raid-leveling-st.md) (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-7)
-- [Assassination — Leveling](../research/leveling/builds/assassination-open-leveling.md) (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0253201021152105-303033012013-002-7)
+- [Assassination (optimized)](../research/leveling/builds/opt-combat-daggers-raid-leveling-st.md) (31/18/2, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/32531321221011031-00533300100102-002-7)
+- [Assassination (optimized, solo at 60)](../research/leveling/builds/opt-combat-swords-raid-solo-60.md) (33/16/2, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3253102025151003-323033001001-002-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

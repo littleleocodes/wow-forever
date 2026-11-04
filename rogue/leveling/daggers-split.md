@@ -4,26 +4,27 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**[Daggers (split, optimized)](../research/leveling/builds/opt-combat-daggers-raid-leveling-st.md)** (21/28/2) — [open the talent tree](https://talentsforever.com/rogue/60/30532010501001-0053332100120503-002-7)
+**[Daggers (split, optimized, AoE pulls)](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (21/27/3) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-31203302100123015-3-7)
 
-**Signature spells:** 72% of the damage at level 60 in the fight lab comes from melee, Backstab, Mutilate, Sinister Strike, Eviscerate (the spec's rule: at least 60%).
+**Signature spells:** 76% of the damage at level 60 in the fight lab comes from melee, Backstab, Mutilate, Sinister Strike, Eviscerate (the spec's rule: at least 60%).
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush**, **Blade Flurry** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Adrenaline Rush** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
 **In the fight**, top to bottom:
 
 1. Open with **Garrote**.
-2. **Sinister Strike** until you have 5 combo points.
-3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
-4. **Cold Blood** right before an **Eviscerate** at 5 points.
-5. **Riposte** after you parry.
-6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-7. Do not interrupt a caster mob: let it cast and walk in.
-8. **Evasion** below half health while the mob still has more than 30% of its health.
+2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum.
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
+5. **Cold Blood** right before an **Eviscerate** at 5 points.
+6. **Riposte** after you parry.
+7. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
+8. Do not interrupt a caster mob: let it cast and walk in.
+9. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -53,36 +54,40 @@ Daggers (split) plays the dagger leveling list: **Garrote** from stealth, **Sini
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
 - In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab**; the fight lab only plays solo.
 
+*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-11 | Opportunity (Subtlety) | 2 |
-| 12-16 | Lightning Reflexes (Combat) | 5 |
-| 17-19 | Puncturing Wounds (Combat) | 3 |
-| 20-22 | Deflection (Combat) | 3 |
+| 10-12 | Setup (Subtlety) | 3 |
+| 13-15 | Coup de Grace (Combat) | 3 |
+| 16-17 | Lightning Reflexes (Combat) | 2 |
+| 18 | Deflection (Combat) | 1 |
+| 19-20 | Precision (Combat) | 2 |
+| 21-22 | Deflection (Combat) | 2 |
 | 23 | Riposte (Combat) | 1 |
-| 24-26 | Precision (Combat) | 3 |
-| 27 | Flawless Execution (Combat) | 1 |
-| 28-32 | Malice (Assassination) | 5 |
-| 33-35 | Ruthlessness (Assassination) | 3 |
-| 36-37 | Murder (Assassination) | 2 |
-| 38 | Relentless Strikes (Assassination) | 1 |
-| 39-43 | Lethality (Assassination) | 5 |
-| 44 | Cold Blood (Assassination) | 1 |
-| 45-47 | Improved Gouge (Assassination) | 3 |
-| 48 | Mutilate (Assassination) | 1 |
-| 49-50 | Endurance (Combat) | 2 |
-| 51-52 | Dual Wield Specialization (Combat) | 2 |
-| 53-57 | Hack and Slash (Combat) | 5 |
-| 58-60 | Aggression (Combat) | 3 |
-
-## Other builds of this spec
-
-- [Daggers — Leveling](../research/leveling/builds/daggers-split-open-leveling.md) (22/16/13) — [open the talent tree](https://talentsforever.com/rogue/60/02532011101411-30503301001-03231013-7)
+| 24 | Precision (Combat) | 1 |
+| 25-26 | Endurance (Combat) | 2 |
+| 27 | Efficient Strikes (Combat) | 1 |
+| 28 | Flawless Execution (Combat) | 1 |
+| 29-30 | Weapon Expertise (Combat) | 2 |
+| 31-32 | Aggression (Combat) | 2 |
+| 33 | Blade Flurry (Combat) | 1 |
+| 34 | Aggression (Combat) | 1 |
+| 35-39 | Malice (Assassination) | 5 |
+| 40-41 | Remorseless Attacks (Assassination) | 2 |
+| 42-44 | Improved Gouge (Assassination) | 3 |
+| 45-46 | Vigor (Assassination) | 2 |
+| 47-48 | Lethality (Assassination) | 2 |
+| 49 | Ruthlessness (Assassination) | 1 |
+| 50 | Cold Blood (Assassination) | 1 |
+| 51-54 | Improved Poisons (Assassination) | 4 |
+| 55 | Relentless Strikes (Assassination) | 1 |
+| 56-60 | Hack and Slash (Combat) | 5 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

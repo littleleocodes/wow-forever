@@ -238,8 +238,8 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "beast-marks-ml-raid",
-    "talents": "532000150510123-00530503005-2"
+    "label": "beast-mastery-ml-raid",
+    "talents": "5320001505101251-00530502005"
    },
    {
     "label": "sim preset: BM",
@@ -251,13 +251,13 @@
     "protect_only": true
    },
    {
-    "label": "beast-mastery-ml-raid",
-    "talents": "5320001505101251-00530502005",
+    "label": "beast-marks-ml-raid",
+    "talents": "532000150510123-00530503005-2",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "beast-marks-ml-raid",
+   "beast-mastery-ml-raid",
    "sim preset: BM"
   ],
   "iterations": 3000,
@@ -378,41 +378,41 @@
   ],
   "final": {
    "raid": {
-    "beast-marks-ml-raid": {
-     "before": 736.6756858301383,
-     "after": 833.6301306998231,
-     "base": 736.6756858301383,
+    "beast-mastery-ml-raid": {
+     "before": 923.8764695725611,
+     "after": 994.8759943445666,
+     "base": 923.8764695725611,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.24446604404124955,
-     "oom_after": 0.24446604404124955
+     "oom_before": 0.3996410643305978,
+     "oom_after": 0.3996410643305978
     },
     "sim preset: BM": {
-     "before": 737.6516446908461,
-     "after": 825.2028934493917,
-     "base": 737.6516446908461,
+     "before": 909.7907294924978,
+     "after": 986.4351904278055,
+     "base": 909.7907294924978,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.4008006338737997,
-     "oom_after": 1.4008006338737997
+     "oom_before": 1.8412067987503051,
+     "oom_after": 1.8412067987503051
     },
     "mm-hawk-raid": {
-     "before": 718.0719766530344,
-     "after": 792.9585966618076,
-     "base": 718.0719766530344,
+     "before": 858.5673103105994,
+     "after": 922.3502850309467,
+     "base": 858.5673103105994,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "beast-mastery-ml-raid": {
-     "before": 750.6794987227894,
-     "after": 833.6198010650427,
-     "base": 750.6794987227894,
+    "beast-marks-ml-raid": {
+     "before": 901.8903474175571,
+     "after": 986.6377069893954,
+     "base": 901.8903474175571,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2886460978775495,
-     "oom_after": 0.2886460978775495
+     "oom_before": 0.4730483181347483,
+     "oom_after": 0.4730483181347483
     }
    }
   },
@@ -433,6 +433,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 17
+  "passes": 18
  }
 }

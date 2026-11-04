@@ -14,7 +14,7 @@
 2. **Arcane Wrath** until the last 10 seconds of the fight
 3. **Arcane Blast**: keep it on the target
 4. **Pyroblast** when Heating Up has 3 stacks
-5. **Fire Blast** until the last 40 seconds of the fight
+5. **Fire Blast**
 6. **Arcane Blast** when you have at least 25% mana
 7. **Fireball** (rank 11)
 
@@ -24,7 +24,7 @@
 
 - **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- **Evocation**: when you run low on mana (about 1 time a fight)
+- **Evocation**: when you run out of mana (needed in about 9 of 10 fights)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -60,43 +60,43 @@ Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane B
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 742 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 756 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 5ad0894 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 800 | [32/16/3](https://talentsforever.com/mage/60/023205203100311531-553000011001-003-7) |
-| Phase 1 BiS | 817 | [32/16/3](https://talentsforever.com/mage/60/023205203100311531-553000011001-003-7) (ties this build) |
+| Pre-BiS | 1000 | [32/16/3](https://talentsforever.com/mage/60/023205203100311531-553000011001-003-7) |
+| Phase 1 BiS | 1003 | [32/16/3](https://talentsforever.com/mage/60/131205203100311531-553000011001-003-7) (ties this build) |
 
-**The gear** (average item level: Pre-BiS 67.3; Phase 1 BiS 68.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 78.8; Phase 1 BiS 78.4; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Field Marshal's Coronet](https://www.wowhead.com/forever/item=16441)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Field Marshal's Coronet](https://www.wowhead.com/forever/item=16441)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Beads of Ogre Mojo](https://www.wowhead.com/forever/item=22149) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
-| Shoulders | [Field Marshal's Silk Spaulders](https://www.wowhead.com/forever/item=16444) | [Field Marshal's Silk Spaulders](https://www.wowhead.com/forever/item=16444) |
-| Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
-| Chest | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
-| Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
-| Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Marshal's Silk Leggings](https://www.wowhead.com/forever/item=16442)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Marshal's Silk Leggings](https://www.wowhead.com/forever/item=16442)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Marshal's Silk Footwraps](https://www.wowhead.com/forever/item=16437)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Marshal's Silk Footwraps](https://www.wowhead.com/forever/item=16437)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
-| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) |
-| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Frozen Heart of the Mountain](https://www.wowhead.com/forever/item=249469) · *Enchanting* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| Main hand | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Grand Marshal's Tome of Power](https://www.wowhead.com/forever/item=23452) | [Grand Marshal's Tome of Power](https://www.wowhead.com/forever/item=23452) |
+| Head | [Frostfire Circlet](https://www.wowhead.com/forever/item=22498) · *quest: Frostfire Circlet*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Frostfire Circlet](https://www.wowhead.com/forever/item=22498) · *quest: Frostfire Circlet*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Neck | [Charm of the Shifting Sands](https://www.wowhead.com/forever/item=21504) · *quest: The Fall of Ossirian* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Shoulders | [Frostfire Shoulderpads](https://www.wowhead.com/forever/item=22499) · *quest: Frostfire Shoulderpads* | [Frostfire Shoulderpads](https://www.wowhead.com/forever/item=22499) · *quest: Frostfire Shoulderpads* |
+| Back | [Drape of Vaulted Secrets](https://www.wowhead.com/forever/item=21415) · *quest: Drape of Vaulted Secrets* | [Drape of Vaulted Secrets](https://www.wowhead.com/forever/item=21415) · *quest: Drape of Vaulted Secrets* |
+| Chest | [Frostfire Robe](https://www.wowhead.com/forever/item=22496) · *quest: Frostfire Robe*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Frostfire Robe](https://www.wowhead.com/forever/item=22496) · *quest: Frostfire Robe*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Frostfire Bindings](https://www.wowhead.com/forever/item=22503) · *quest: Frostfire Bindings*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Frostfire Bindings](https://www.wowhead.com/forever/item=22503) · *quest: Frostfire Bindings*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
+| Hands | [Frostfire Gloves](https://www.wowhead.com/forever/item=22501) · *quest: Frostfire Gloves* | [Frostfire Gloves](https://www.wowhead.com/forever/item=22501) · *quest: Frostfire Gloves* |
+| Waist | [Frostfire Belt](https://www.wowhead.com/forever/item=22502) · *quest: Frostfire Belt* | [Frostfire Belt](https://www.wowhead.com/forever/item=22502) · *quest: Frostfire Belt* |
+| Legs | [Frostfire Leggings](https://www.wowhead.com/forever/item=22497) · *quest: Frostfire Leggings*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Frostfire Leggings](https://www.wowhead.com/forever/item=22497) · *quest: Frostfire Leggings*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Enigma Boots](https://www.wowhead.com/forever/item=21344) · *quest: Enigma Boots*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Enigma Boots](https://www.wowhead.com/forever/item=21344) · *quest: Enigma Boots*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Ring of the Fallen God](https://www.wowhead.com/forever/item=21709) · *quest: The Savior of Kalimdor* | [Ring of the Fallen God](https://www.wowhead.com/forever/item=21709) · *quest: The Savior of Kalimdor* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* |
+| Trinket | [Talisman of Ascendance](https://www.wowhead.com/forever/item=22678) · *quest: Epic Armaments of Battle - Friend of the Dawn* | [Talisman of Ascendance](https://www.wowhead.com/forever/item=22678) · *quest: Epic Armaments of Battle - Friend of the Dawn* |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
+| Main hand | [Blade of Vaulted Secrets](https://www.wowhead.com/forever/item=21413) · *quest: Blade of Vaulted Secrets*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Blade of Vaulted Secrets](https://www.wowhead.com/forever/item=21413) · *quest: Blade of Vaulted Secrets*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Off hand | [Master Dragonslayer's Orb](https://www.wowhead.com/forever/item=19366) · *quest: The Lord of Blackrock* | [Master Dragonslayer's Orb](https://www.wowhead.com/forever/item=19366) · *quest: The Lord of Blackrock* |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzE1k1MG0cUAGC/2cU7fi7gTlG7nfawpaWAW1ezuzaiHGrDpX8HrPbSW1ljU7uitmVbFT3VrajUIhUQqqri+tCiItoqXCIlYBQuXOJECuKSRCIXlASRY5IDSQ6Jol1shAiKcgDnHd6M52k034x3pMHXKfhABQ26YAiSkIUiwM8AfwH8C8BecKrErvYCn2ym1Ef5t6jQShHUbS/K9KdFQJmeK9p5fRrQTatp9UYLKnRtHtRrLSjRtTTKdHsKUKEre9MUeqYI6pSCMt2ct2de/NvOZzd8KNOH5VZU6J9LoFZfQpmWl+zSf+XW9nd91VTX+iSI3Vj01zmYADKemgGyGysB2en/H+hCGU5NwGRqC8ZTA9ShQwRWyJvCMA0RMoSpC2HqesjUA6GQKYQQui6EHhDCrBLYIN7rZNrLZE76XKyNM/ScBjfK9FJF5U0o0ZuDrAjMsrKjX2ayBc0QRk9AFwEj2KcNJ630V4m4lslpVjyeiGux77RCMqHlMgWrkMqktXzCyg0nta58IqFZuWErnQjEs/lAvR7Yq7/3dT6T7uav4Yv+Vupm5BMXV7AJJV3kuS358X6UlRpCCOE7vBu9m26KMl2tqCog96tUYp4V50xWKyr3lIjd/e3yp7zWsl+OwJn6cePeeibLckMsn+PH7EPs4cGnmfBlfxuVmWdtv9aEEoKBze1e9NyFw/Q/GkI3sZt1OjSo0+7UaeZB2oMZ4LWWff+kTPQet4wfvgBBkbdd9Oog+70h37+OnawDff6WmsKNMhIzX3fFai4j1LH/p3m4UjeOHkE0j5u4t9rCIPumEQdCnX3u3Is2cHO+8x+o0i1ShdvE+EFyORGMzNnXBQmF9kfEYw+5iiORV0uzdlwIvzHixJWwsUVUWQv7l4nruUQhUu+daLy9eGLrvO/kz/6J9NcGIkP222AWnB+urbBfosuvDBx4QgjohQh8BFH4ApKQhTEYI48HAMs+/GI=); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzE1j9MW0cYAHB/9x5+588F3CtqX68dXmkp4NbVvfdsRBlqw9J/A1a7dCvP2NSuqG3ZVkWnuhVDi1RAtKqKy5CgIJIoWSIlYBQWljiRgliSSGRBSRAZkwwkWVD0HjZCBEUZwPmG78736XS/O7+TDt+l4AMVNOiAAUhCFooAfwCcADgNwF5zqsSudgMfb6TUR/nPqNByEdRNL8p0ZwpQppeLdl6dBHTTSlq924QKXZkD9XYTSnQljTLdnABU6NLuNIVeLII6oaBM1+fsmddO2nn0bztfWvOhQv9fALXyBsp0ZsEePDPT3Pqxr5LqWB0HsR2L/jULY0BGU1NAtmMlIFu9Z4HOz8C5MRhPbcBoqo86dIjAEnlfGKYhQoYwdSFMXQ+ZeiAUMoUQQteF0ANCmBUCa8R7h0x6mcxJj4u1cIaeC+BGmV4vq7wBJXqvnxWBWVZ2+PtMtqAZwugK6CJgBHu0waSV/iER1zI5zYrHE3Et9otWSCa0XKZgFVKZtJZPWLnBpNaRTyQ0KzdopROBeDYfqNUDu/VPfsxn0p38HXzd30zdjHzl4go2oKSLPLclvz+JslJdCCH8iHeid91NUabLZVUF5H6VSsyz5JzJclnlnhKxu//c+JpXW/bnIThTP2rcBy9lWayL5Vv8kn2OXTz4IhO+6W+hMvOs7NUaUEIwsLHVi55HcJD+X13oJnaydocGNdrDGs3cT3s6Bbzasl+fl4nuo5bxgxcgKPK2i97qZ//W5fvXsZ21oc/fVFW4UUZi5muuWNVlhNr2/jQPV2rG4UOI5lETd1eb72c/1eNAqLPPrcfROm7Od+UzVbpPKvCAGL9JLieCkVn7uiCh0LpDPPaQqzgUebs0bcfV8HtDTtwMGxtElbWwf5G4XkkUIrXescaH549tnU+d/M2pSG91IDJgvw2mwfnh2gj7Jbr4Vt++J4SAbojAFxCF7yAJWRiBEfJsAF/3/DA=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElU9ME1sUxntuh87tKQ/67iPvzZv3FvN4jwf0vZo7M5QgmxY2/lvQ6MadTGmxNdg2bRe4q4aFkggJMSgNC0OEgtE0ujBAwsZVXWjYqAluKoi4VBeoG2NmaJEoMS6gfotz75wvk/nNuffk4J8U3CCBAi3QC1FIQhbgIsB1gFkAVmu5xHQ7QB6tpdRN5UEU6WoBpHUXCjQ7CyjQtYIZ83lAkZYKIK3VoUg3CiA9q0OBrlvuy4LpPt96UaSlGZBGRRTowznTXZk24/gdM95bdqNIp/MgFX9Bgc5cNZNzk/WN/7uLsZZHI8A3Q8HLUzAMZCg2BmQzlAOy0XUTaH4Sbg3DSKwEQ7FuasFDABbJ31zTNe7TuK5yrquqT1e9Pp/OOeeqyrnq5VwvElgmrlUyikyQSaeNNcgMnXfBYTIuSHIN2umLHpYFZhjJgVOJZEbRuNbuVblXa+tU+qJG/HQkrCRSihEOR8JK6JySiUaUVCJjZGKJuJKOGKm+qNKSjkQUI9VnxCPecDLtrfjeLf/AmXQi3ir/gT976qmDkaM2WcQatKs8LZskF94HWa4qCD78T25F14qDokCXFiQJUPZI1M6ci1ZNlhYk2Zkj5vbK42NyeWWXdoHT1b2G++e7WOarwnICj7BD2C63fYsJf/U0UIE57297NWhH0PCnRhc638KX6Neqgq5jK2u20KCC9qaCpu9E+zAGcnllA1+T8Y69JhNNCPq0h41X5bKr2Mya0O2pK/ecAwUkerrShaFyF2q+pu0Tcn5m3KUimr4/Fcn3sLPVKAi1/nPjXVCyvyJFeE2083abpbbAlHlbkVBo/EicZsqW7Q/8npsw9cD/V7+lJ36tRCRB8Xvmie2HKBOo7PZV/97et+8ctOLxG4GuciLQaw7nCbAebCW/x07nf+veMcM5dEAADkMQTkIUkjAIg+TTACDB2Go=); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElU9ME1sUxntuh/b2lAd995H35s17i3m8xwP6Xs2dGUqQTQsb/y1odONOprTYGmybtgvcoWGhJEKCBqVhYYhSMZpGV0DCxlVdaNioiW4qiLhUF6gbYu7QIlFiXED9FueeOd9M5jdn7snFPyl4QAYVWqAXYpCCIYDzANcAbgKwWsslwu0AZayWUg9VBtFJlwsgr7pRohvjgBJdKYiYzwM6aakA8kodOulaAeTndSjRVct9VRDui80HnbQ0A/KYEyX6cFa4E0seEe+KfPiSuPNGHuTiLyjRmSuiODtV3/i/pxhveTQKfD0cujgNI0CG4+NA1sM5IGtdt4Dmp+D2CIzGSzAc76YWPARhgfytGZrO/To3NM4NTfMbms/vNzjnXNM413ycG0UCS8S9TMaQSQrptLEGhaHrHjgE47ys1KCdvuxhQ8BMMzVwIpnKqjrX230a9+ltnWpfzEycjEbUZFo1I5FoRA2fUbOxqJpOZs1sPJlQM1Ez3RdTWzLRqGqm+8xE1BdJZXwV37fp7zuVSSZalT/wZ289dTBy2KY4sQbtGs8oguTchxDLVQXBj/8preh+5qAo0cV5WQZUvDK1M9eC1ZPFeVlx5YhILz8+opRXdmEHOEPbbbh/votlriosx/AQO4DtStu3mPBXbwOVmOv+lleDdgQdf2p0o+sdfIl+tSroBrayZgsNKmhvK2jGdrSP46CUVzbwNRnv2G0yp4CgT3vYRFU2u4bNrAk93rryzDlQQmJkKlMYLk+h7m/a+kOuz4w7dEQ39qYj+R52uhoNodZ3rr0PyfbXpAhviH7WbrPUFpwWuxUJhcYN4hIl21B/8PfcpNCDwF/9lp4E9BKRJTXgnSO2H6JssJLtqf69s2fv2W/Fo9eDXeVCsFcczpNgXdhKAa+dzv3Wve0M59ABQTgIITgOMUjBIAySTwMAWKXYSg==).
 
 ## Other builds of this spec
 
-- [Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md) (31/13/7, 657 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/050205203100301531-505001002-043-7)
+- [Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md) (31/13/7, 683 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/050205203100301531-505001002-043-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 5ad0894 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

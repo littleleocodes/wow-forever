@@ -4,20 +4,20 @@
 
 **✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
-**[Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/52500500003--50052101231302051-7)
+**[Shadow — Raid](../research/raid/builds/shadow-ml-raid.md)** (16/0/35) — [open the talent tree](https://talentsforever.com/priest/60/005305201--50552001201312251-7)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull, then keep up all fight:** **Shadowform**.
 
-**Talents with no line below:** **Vampiric Embrace**: taken because Shadowform requires it.
-
 **Then press the first one that is ready**, top to bottom:
 
-1. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
-2. **Inner Focus**, then straight away **Devouring Plague**
-3. **Shadow Word: Death**
-4. **Mind Blast**
+1. **Mind Blast**
+2. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
+3. **Inner Focus**, then straight away **Devouring Plague**
+4. **Shadow Word: Death**
 5. **Devouring Plague**
 6. **Mind Flay**
 
@@ -52,43 +52,49 @@ Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plag
 - **Vampiric Embrace** has no line because the simulator counts only damage. If your group takes damage, cast it on the boss: for 30 seconds your party heals for 20% of your Shadow damage, for 40 mana and one global cooldown a minute.
 - If your healers struggle, save **Shadow Word: Death** for the last 20% of the boss's health, where **Early Demise** makes it crit more. You give up some damage to stop the backlash.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 796 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 788 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 30f67f5 (client 70450); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever bac92db (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 780 | [15/3/33](https://talentsforever.com/priest/60/0053052-3-50552001201310251-7) |
-| Phase 1 BiS | 800 | [15/3/33](https://talentsforever.com/priest/60/0053052-3-50552001201310251-7) (ties this build) |
+| Pre-BiS | 837 | [17/0/34](https://talentsforever.com/priest/60/0053050010102--50252101221311251-7) |
+| Phase 1 BiS | 850 | [18/0/33](https://talentsforever.com/priest/60/525005001--50052101231302251-7) |
 
-**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 64.2; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 71.4; Phase 1 BiS 70.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Felcloth Hood](https://www.wowhead.com/forever/item=14111) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Felcloth Hood](https://www.wowhead.com/forever/item=14111) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Head | [Tiara of the Oracle](https://www.wowhead.com/forever/item=21348) · *quest: Tiara of the Oracle*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Tiara of the Oracle](https://www.wowhead.com/forever/item=21348) · *quest: Tiara of the Oracle*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Neck | [Charm of the Shifting Sands](https://www.wowhead.com/forever/item=21504) · *quest: The Fall of Ossirian* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
-| Back | [item 272411](https://www.wowhead.com/forever/item=272411) | [item 272411](https://www.wowhead.com/forever/item=272411) |
-| Chest | [Earthpower Vest](https://www.wowhead.com/forever/item=21183)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Winter Night](https://www.wowhead.com/forever/item=14136) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
+| Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Fel Cape](https://www.wowhead.com/forever/item=279269) · *Tailoring* |
+| Chest | [Vestments of the Oracle](https://www.wowhead.com/forever/item=21351) · *quest: Vestments of the Oracle*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Vestments of the Oracle](https://www.wowhead.com/forever/item=21351) · *quest: Vestments of the Oracle*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Felcloth Pants](https://www.wowhead.com/forever/item=14107) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) |
-| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| Main hand | [Sageclaw](https://www.wowhead.com/forever/item=20070)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageclaw](https://www.wowhead.com/forever/item=20070)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Tome of Shadow Force](https://www.wowhead.com/forever/item=19309) | [Tome of Shadow Force](https://www.wowhead.com/forever/item=19309) |
+| Legs | [Trousers of the Oracle](https://www.wowhead.com/forever/item=21352) · *quest: Trousers of the Oracle*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Marshal's Satin Sandals](https://www.wowhead.com/forever/item=17607) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Marshal's Satin Sandals](https://www.wowhead.com/forever/item=17607) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Ring of the Fallen God](https://www.wowhead.com/forever/item=21709) · *quest: The Savior of Kalimdor* | [Ring of the Fallen God](https://www.wowhead.com/forever/item=21709) · *quest: The Savior of Kalimdor* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Trinket | [Talisman of Ascendance](https://www.wowhead.com/forever/item=22678) · *quest: Epic Armaments of Battle - Friend of the Dawn* | [Talisman of Ascendance](https://www.wowhead.com/forever/item=22678) · *quest: Epic Armaments of Battle - Friend of the Dawn* |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
+| Main hand | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451) · *sold by Lieutenant Jackspring*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451) · *sold by Lieutenant Jackspring*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Off hand | [Master Dragonslayer's Orb](https://www.wowhead.com/forever/item=19366) · *quest: The Lord of Blackrock* | [Master Dragonslayer's Orb](https://www.wowhead.com/forever/item=19366) · *quest: The Lord of Blackrock* |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN9LFFEUx+fcnZ05e1ZtmQjHWw/jBrEZI3fGNsyXHX2SIJJA6C1Hd202amdzFrI3Cx8iaC0JQxOMSPpBgU8hvQjWw/YSPvVQL2ZYEQVFoA9BxIwu9A9Y34fLOefDOefLhXtpH0IKdDAgAwPgQRnGAK4C3AV4CKA1RJSFtBP4exkxFecXSMG5kr6eJBnXbgPJ+OUWkEQqLs2D/qGJVFyeB/1dE8VwuUQyrk8AKXgnalFx4QnoEyrJWP2aIhnfzocTnq2E8c2lFKn4cRb02m6S8dtUiB7N7kofStWKmddVEBuDfdfvwTVg48VJYBuDM8A+dT8G9cEsLPRWi6swXuzByDQ48JztFSLbIbK22WFmRTZrC2HZwuqwhJ21agxWWHKN/WSkkcrjFMMfo2mV4hQzrUCTOeuSNMHbab/WSo3pJCVsleIZxGo/pdqaUNHYMYkrJBOzBK8jrYU323u2580FRBxJySi4MgVaA9/KZHy5eUJL8kTUlcAX/ZqvuW753Gm/XDFsYR8xLWGKzi5jyHNLZwp5wx8x3Hy+kDcGLxkVr2CM+BW3UvRLRlBwR4Y8IxMUCkbguXn/opkvB2adm1u8/Wzglw5ub9/y0siTVyA0o+DmJGjn/8V+DG8Lb/w6rsc+sxp8Z/blmBTpsLMMMmckpX+zRFiQxoadlpnpUK9yrcOR3uTsVabLRq5tkUn/RRWnHu2oDjzdsT1Ho/Pkfad7u+AMhM99GqJEWs21xXCxueevX0FAJzjQC31wCjwowyiMsj8DAJz7ud0=); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVN9LFF0Ynvfs7My776rfMh/heOriuEFsxsiZsQ3zZkevJIgkELrL0V3bjdrZnIXszsKLCNKwFBTBiKQfFHgV0qV1sRGEV10UgRVWBEER6EUgMaML/QPWc/Ey7/PwzPNw4Bzah5ACEwRkYACKUIExgKsAtwHuAxgNkcpCtRP4exUxFecXSMOFsrmeJBW3poBU/HoLSCENl8vmxybScWURzLdNFMOVMqm4Pgmk47tpCC06Lj0Cc1InFV9Oh943i+EcvxnOJ6sp0vHTPJi1/0nFbzMh+WD+v/ShVK2UeTUBcmOw7/oduAZsvDQFbGNwDtjn7oeg35uHpd6J0hqMl3owKg0uPGV7pcx2yKxjdVhZmc06UtqOtDts6WTtGoNVlvzAfjIySOdxiuGP0bROcYpZdmConHUphuTttN9opcZ0khKOTvEM4kQ/pdqaUDPYMYVrpBKzJa9LRgtvdvbs/G8hIOJIWkbD1RkwGvj2puLzzRNGkiciVwKf9Ru+4XmVc6f9SlU40jli2dKSnV1iqOiVzxTywh8RXj5fyIvBS6JaLIgRv+pVS35ZBAVvZKgoMkGhIIKil/cvWvlKYNV1a1tvPxv45YM76dtdGnnyCoRlNNycAuP838jH8LTwxq/jZuwLq8F35lyOKREOuyugckZKeoslQkIZG3Zb5mZDvMi1Dkd4nXPWmKmKXNsyU/4Jqm79a1dx4PGu5RyN5sm7bvcO4Q6E130WokVZy7XFcLm5549XQUInuNALfXAKilCBURhlvwcA+Zy5rg==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElMFLVF8Ux+fceTPvzBn1N7wf4fPS4jpBTMaT+55NmJt5upIgkkBol09nbCZq3uAb0HYWLipIRcLQhCLSNAhqU9LSgqZF4qpFbaQSJVoUgS6CiDuj0D9gfRdf7jkfzv1eLtxLBxESYIKAFPRBHkowCnAN4B7AIoBRV6VM0XbgXzXERIQPk46fF8DciJOGo4tAGn65pXx1EkjHzQUwPzWQjivzYH5ooDCuFEnDjQkFt2pzOr6+DuaEThq+XVKj7+eVTz9V/mwtQTreeQ5m5X/ScOG2ai7N/Zc8mqgUUqvjILf7e27ehxvAxgpTwLb7Z4Ftdj4C/eEcPOkeL6zDWKELq0cHF14wIWW6TaaltKUtHctKSyft2NJ2HLvNtp20XWGwxuIf2Q9GBuk8QmH8PpLUKUJhyw6MOI9xnSKpGL7sNTTOOkKG5K10yGim+mScYo6CiOO9lGhpwKjBToZ4lDRituR7yGjijc6B3c3vBkQcKZqK4to0GHW8Vmn4aue04RueV7p4zi+VhSOd45YtLdneIQbyXvF8Liv8IeFls7ms6L8syvmcGPLLXrngF0WQ84YG8iIV5HIiyHtZf9jKlgJrj1s13noh8ItHdgNr8fU8fhVUfhR3psC49DfyUV0QTv48ZYa3WAW+MedKOFTVMXcFNM4olPzFYqoRGh10m2ZnlN5kmgerepdx1pmpiUzLMgv9E5XdvdW+6vDjfcs5UfUzD9zO3Ybbp17+DFSL0HqmJYzLjV1/fBAS2sGFbuiBs5CHEozACPs9AAEUvH8=); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElNFLFF8Ux+fcnd05e1b97W8iHC8+jBvEZozcGdswX3b0SYJIAqG3HN213aidxVnQ3iwMKkhD0tCEIsoyCOqlpEcL2ojCp14ikEqUnopAHwKJOyr0D1jfhy/nnA9nvsOFe6kRIQkGmJCGXihAGUYALgPcAXgIoNeElEnaBnxNRUxG+RBp+HUOjJUEqbg5AaTitxvSVy79TxquzoHxpY40XLwPxsc6iuBiScJxIA0/TYZ7Gr6+Asa4Riq+m5erbyelTz2V/mwpSRreeg5GdQ+pOHdTDudn/0sdTFaL6fdjINb7uq/dhavARosTwNb7ZoCtdjwC7cEsPOkaKy7DaLETw18HF16wxoyTESIjhG1ZsnBsYTutdqtwnIxdZbDEEp/ZT0Y6aTxKEfwxnNIoShHLDvQEj3ONouk4vuzRVc7aFV3wFtqnN1FtKkFxR0LEsR5KNtdhTGdHFR4jlZgt+A7SG3i9s3f747cDIo4US8dwaQr0Gr7Vqfhq47ju655XPnvKL1dMRziHLVtYoq3d7C94pdP5nOkPml4ul8+ZfefNSiFvDvoVr1L0S2aQ9wb7C2Y6yOfNoODl/CErVw6sHW5t8ZYzgV86sB24FV/LExdB5sdwYwL0c38jH+UB4fVfx4zIGqvCd+ZciCihDrmLoHJGSmqTxeVAGRlwG2ampd5kmwZCfcg6y8xQzWzzAlP+iSruTrWr2v9413KOhH7intuxPXB75a2fhrBRlrPNEVyo7/zjcRDQBi50QTechAKUYRiG2e8BAK3YvAA=).
+
+## Other builds of this spec
+
+- [Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md) (20/0/31, 783 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/52500500003--50052101231302051-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 30f67f5 (client 1.60.1.70450)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at bac92db (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

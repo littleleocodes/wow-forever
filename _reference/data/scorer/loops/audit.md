@@ -183,7 +183,7 @@
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Martyrdom** | Discipline | 2 | +0.00% | manual | utility | Pushback immunity after being crit (beta): a leveling safety point of the leveling build; nothing in a raid. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
 
-## Rogue - 22 flagged of 62 taken talents, 4 without a documented reason
+## Rogue - 22 flagged of 64 taken talents, 4 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -203,12 +203,12 @@
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lethality** | Assassination | 2 | +0.14% | manual | throughput | Crit damage on Sinister Strike/Backstab; small at leveling crit rates. |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.21% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Blade Flurry** | Combat | 1 | +0.35% | manual | OPEN |  |
-| forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Improved Expose Armor** | Assassination | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.00% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
+| forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Venom** | Assassination | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Mutilate** | Assassination | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Sprint** | Combat | 2 | +0.00% | manual | filler | PvP/utility filler. |
+| forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Puncturing Wounds** | Combat | 3 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Endurance** | Combat | 1 | +0.00% | manual | safety | Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler. |
-| forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.17% | manual | OPEN |  |
 
 ## Shaman - 37 flagged of 76 taken talents, 5 without a documented reason
 
@@ -280,7 +280,7 @@
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 
-## Warrior - 18 flagged of 76 taken talents, 4 without a documented reason
+## Warrior - 21 flagged of 76 taken talents, 7 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -300,6 +300,9 @@
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Heroic Strike** | Arms | 2 | +0.00% | manual | sustain (from arms-2h-raid) | Cheaper rage dump: more Heroic Strikes per pull. |
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Booming Voice** | Fury | 5 | +0.00% | manual | OPEN |  |
 | forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Enrage** | Fury | 5 | +0.00% | manual | filler | Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's optio |
+| forever-draft | `leveling-arms` | arms-2h-raid / leveling-st | **Booming Voice** | Fury | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `leveling-arms` | arms-2h-raid / leveling-st | **Piercing Howl** | Fury | 1 | +0.04% | manual | OPEN |  |
+| forever-draft | `leveling-arms` | arms-2h-raid / leveling-st | **Blood Craze** | Fury | 3 | +0.05% | manual | OPEN |  |
 | forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Thunder Clap** | Protection | 3 | +0.00% | manual | OPEN |  |
-| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Tactical Mastery** | Arms | 5 | +0.09% | manual | OPEN |  |
+| forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Tactical Mastery** | Arms | 3 | +0.15% | manual | OPEN |  |
 

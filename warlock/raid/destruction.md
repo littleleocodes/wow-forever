@@ -8,13 +8,11 @@
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 695 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-7)
+- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 738 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-7)
 
 ## How to play
 
 **Before the pull:** **Life Tap**.
-
-**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -63,7 +61,7 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 748 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 795 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
@@ -76,26 +74,26 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Field Marshal's Coronal](https://www.wowhead.com/forever/item=17578)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Field Marshal's Coronal](https://www.wowhead.com/forever/item=17578)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Head | [Field Marshal's Coronal](https://www.wowhead.com/forever/item=17578) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Field Marshal's Coronal](https://www.wowhead.com/forever/item=17578) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) · *quest: 1200 Tickets - Orb of the Darkmoon* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Fel Cape](https://www.wowhead.com/forever/item=279269) · *Tailoring* |
 | Chest | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Marshal's Dreadweave Leggings](https://www.wowhead.com/forever/item=17579)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Marshal's Dreadweave Leggings](https://www.wowhead.com/forever/item=17579)<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Marshal's Dreadweave Boots](https://www.wowhead.com/forever/item=17583)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Marshal's Dreadweave Boots](https://www.wowhead.com/forever/item=17583)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Legs | [Marshal's Dreadweave Leggings](https://www.wowhead.com/forever/item=17579) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Marshal's Dreadweave Leggings](https://www.wowhead.com/forever/item=17579) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Marshal's Dreadweave Boots](https://www.wowhead.com/forever/item=17583) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Marshal's Dreadweave Boots](https://www.wowhead.com/forever/item=17583) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
-| Main hand | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451)<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
+| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
+| Main hand | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451) · *sold by Lieutenant Jackspring*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Grand Marshal's Mageblade](https://www.wowhead.com/forever/item=23451) · *sold by Lieutenant Jackspring*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) · *sold by Gaelden Hammersmith* | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) · *sold by Gaelden Hammersmith* |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9oK1UUxnPu3GRuztN23n1Kp+MfxkAfMTDhzoSxSTeZ91bFVXElFLRJk5oESUImSMVNxYJWNFUjSmNBUYu2IhYXtrhRC4V0U7pyYSmWSlHERUHpUmQm0yptFy5S3lncnJxvztzfN+fCxYcZKKCCDnGYghLUYQ7gNYCPAD4H4Pf5KvHUNGhryCQlqr2AMltbAPX4BlJ29D4gZb+/6627bwFG2E5V/WUAZba1Aur+AEpsq4qUHS8CyuyLXpvMvloAdVFGyn5a8TpbfyhI2Td73vr2dwrK7IMNULu3kLI/3/MeWF0ejFlKtxzfbYE4zU+8+TG8DmS+/A6Q03wHwr/e+XAF1kD+bBnWx1vldfikcgjz5bvMNwAOfEsetWzLEMIWlkgJYRrCtkXKtIVImUKk7C6R9siNI7LK8BYyLYKUnbQgJmMYJcN28QGUtTBKbHUyFkUZw4aZtF3+iPYQ3owN4v1fAyJl3786wYkS9ru93NIExvltvJkYZBFOngxp/vtM2/VLlJN8UBq1RzSKRFV5G/gzufrzz9bqTd0S1hOGKQxhjenTpVz1uWJBrzX0XKFQLOj5F/Vmqag3as1cs1yr6m4x15gu6XG3WNTdvNHIlQvGmWj0xGTFrVUf18z/CZUWI55n5TTPqUbGQj27PfDztqTt291ow1VyKpBfeQP4SxeMiYxhjfbV2DAqiQEm+Z81ghSJPRIMjaN2PlQe03QcSjzIKJcrnvzDpMY6JMh6P3z54hg82nRfacdQ8CQOJ4YY5aziwf28DVq0Q4L00oSEqwXS1Xij14x38C/ewWU8K8A72AZeuUDnnWGzr3S9af7VvnqvTP/3UubbcH6K9rdBlX4jXTgh1stSyI+M0yEMI0h14kDsbxL1iqG5GWe4s+TFTvaxGT9+zFqHRKV6NrFJQvckms5Zdq1x+8tr2yfjr0996twJCs6Ud28tgf8ndJhNSGxz6O5/rjcBaXBgHCbgaShBHWZhlvwzAKbxaeE=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9oK1UUxnPuTDI3p9pOb5VOxz+MgZYYmHBnwtikm0y7Kq6KK6GgTZrUJEgSMkEqbipGtKItNCo0FhS1aCticWGLKy0UUgTpyk0pFqUorgpKl0VmMs17tF28Rco7izNnzsed+/vmXLj4JAUZFNAgCnNQgCosAbwL8BnA1wDsEU8lrpoEdRupIIfV11Ci28ugnPWhSC/XAEX6z4duPnt7EEP0sKz82Y8S3d8E5bgfBbpfdrVVQIl+01km0e+WQVmVUKS/fATd3Gi6+YcjGSX6yS4o7SEU6b8fu82tjYGIKbeL0V9XgF9kZz74HN4D0iiuAbnItiD41+Snm7AN0lcbsDO9UtyBL0qn0ChOUc8A2PAjedq0TJ1zi5s8wbmhc8viCcPiPGFwnrDaRDgifX+QLYpDSNUQivR8BSISBlHQLQcfQ0kNokC3ZiNhlDCoG3HLYU+pT+BgZAAf/R4QRfrTOzOMyEFvtVubKscoG8PB2AANMfJ8QPW+Z1iO1xIZyfqtcWtUFZEoCmsCeylTffXlSrWumdx8Tje4zs0Jbb6QKb+Sz2mVmpbJ5fI5Lfu6Vi/ktVqlnqkXK2XNyWdq8wUt6uTzmpPVa5liTr8S9Y4YLzmV8rOq8YBQST7qepYvskxUyUSgY7cD3l0Wtzy7u024TU748lvvA3vjmjGe0s3xnhobQTnWTwXvt4ZQRGKN+kNjqHaHyiKqhsOxx6nIpJIr/zyr0hbxq86DbVwfg0ub7CntBHIWx5HYMBUZLblwvx+AGm4Rv7wxIe6ovnQ73vgd453cwzu5iWf6eCcHwErX6NwzbPSUrjPN/5q375Xq/V5yowndU3R8AIrwN2nDOTHfFAJepOwWoRhCUSM2RC5J2G0Glhbskda6G4fpZxa8+C1tnhJF1NKxPRJ4KFG3r6o7jbFv72yflJdf+NKe9Bv2nHtvrYP3EjhNxwS6Nzx13/XGIQk2TMMMvAgFqMIiLJL/BwBaTmmE).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-02 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70707; raid numbers: the official wowsims/forever simulator at 54ceac6 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 92c4c35 (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
 

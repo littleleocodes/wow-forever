@@ -62,19 +62,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 8** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 17/32/2 | 356 | +0.0% | 618 | -3.3% | 0 s |
-| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 16/33/2 | 340 | -4.5% | 639 | +0.0% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 337 | -5.3% | 632 | -1.1% | 0 s |
-| 4 | *Combat BS* | community simulator | - | 336 | -5.5% | 633 | -0.8% | 0 s |
-| 5 | *Combat SS* | community simulator | - | 331 | -7.1% | 625 | -2.1% | 0 s |
-| 6 | *Asn Muti* | community simulator | - | 323 | -9.3% | 568 | -11.0% | 0 s |
-| 7 | *Combat Muti* | community simulator | - | 320 | -10.0% | 606 | -5.2% | 0 s |
-| 8 | *Subtlety BS* | community simulator | - | 290 | -18.6% | 593 | -7.2% | 0 s |
-| 9 | *Subtlety Hemo* | community simulator | - | 263 | -26.1% | 553 | -13.4% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 473 | +0.0% | 786 | -0.9% | 0 s |
+| 2 | *Asn Muti* | community simulator | - | 434 | -8.3% | 793 | +0.0% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 386 | -18.4% | 728 | -8.1% | 0 s |
+| 4 | *Combat SS* | community simulator | - | 353 | -25.3% | 701 | -11.6% | 0 s |
+| 5 | *Combat BS* | community simulator | - | 340 | -28.1% | 676 | -14.7% | 0 s |
+| 6 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
+| 7 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
+| 8 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,27 +95,39 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
   8. rotation replaced by the official simulator's default.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+0.7%, pass 9)
   9. threshold 3 -> 1: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and (not talentIsKnown or time left on Rupture ≥ 4 or variableRef or variableRef) and not variableRef: cast Eviscerate (rank 8) (+0.3%, pass 10)
 
+Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
+
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
-| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (rank 8) | 0.6 |
-| 6 | cast Backstab (rank 8) | 11.0 |
+| 1 | if variableRef: groupReference | as ready |
+| 2 | if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote | 0.3 |
+| 3 | if not Garrote is on the target and energy ≥ current cost and not variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 4 | if energy ≥ current cost and variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 5 | if Blade Flurry is ready and Blood Fury is known: strict sequence: cast Blood Fury; cast Blade Flurry | 0.7 |
+| 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 7 | groupReference | as ready |
+| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast spell 1329549 | 6.0 |
+| 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
+| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and spell 1325758 is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
+| 11 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.3 |
+| 12 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
+| 13 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 2.7 |
+| 14 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 14.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
+Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush, cast Elune's Light, cast Eureka!, cast spell 1325758, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); cast Premeditation (needs the Premeditation talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
 | Ability | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) |
 |---|---|
 | Auto Attack | 47% |
-| Backstab | 36% |
-| spell 25349 | 8% |
-| spell 11337 | 4% |
-| Eviscerate | 3% |
+| Sinister Strike | 19% |
+| Eviscerate | 15% |
+| spell 25349 | 9% |
+| spell 11337 | 5% |
 | Goblin Sapper Charge | 2% |
+| Garrote | 2% |
+| Shank | 1% |
 
 ## Notes
 

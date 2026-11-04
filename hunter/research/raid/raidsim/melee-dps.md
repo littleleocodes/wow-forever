@@ -8,7 +8,7 @@
 | `survival-raid` | 5/16/30 | 336 | 17 | -6.3% | 342 | 0 | +115.9% |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 313 | 17 | -12.7% | 319 | 0 | +126.0% |
 | `survival-ml-parse` | 5/14/32 | 260 | 16 | -27.7% | 267 | 99 | +99.9% |
-| sim preset: SV Melee | - | 210 | 13 | -41.4% | 213 | 120 | - |
+| sim preset: SV Melee | - | 211 | 13 | -41.1% | 213 | 120 | - |
 
 ## Damage shares (`melee-survival-raid`, simulator actions)
 
