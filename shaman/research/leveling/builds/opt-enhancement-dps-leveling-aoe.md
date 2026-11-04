@@ -47,6 +47,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Elemental | Convection | 5 | 5/0/0 |
+| 15-17 | Elemental | Call of Flame | 3 | 8/0/0 |
+| 18-22 | Enhancement | Thundering Strikes | 5 | 8/5/0 |
+| 23-25 | Enhancement | Mental Dexterity | 3 | 8/8/0 |
+| 26-28 | Enhancement | Improved Lightning Shield | 3 | 8/11/0 |
+| 29-31 | Enhancement | Anticipation | 3 | 8/14/0 |
+| 32 | Enhancement | Earth's Grasp | 1 | 8/15/0 |
+| 33 | Enhancement | Stormstrike | 1 | 8/16/0 |
+| 34-35 | Enhancement | Improved Ghost Wolf | 2 | 8/18/0 |
+| 36-37 | Enhancement | Guardian Totems | 2 | 8/20/0 |
+| 38-39 | Enhancement | Mental Quickness | 2 | 8/22/0 |
+| 40-41 | Elemental | Concussion | 2 | 10/22/0 |
+| 42 | Elemental | Elemental Focus | 1 | 11/22/0 |
+| 43-45 | Elemental | Elemental Warding | 3 | 14/22/0 |
+| 46 | Elemental | Concussion | 1 | 15/22/0 |
+| 47-48 | Elemental | Trial by Fire | 2 | 17/22/0 |
+| 49-51 | Elemental | Elemental Alacrity | 3 | 20/22/0 |
+| 52-54 | Elemental | Lightning Overload | 3 | 23/22/0 |
+| 55-56 | Elemental | Concussion | 2 | 25/22/0 |
+| 57-60 | Elemental | Elemental Fury | 4 | 29/22/0 |
+
 ## Core talents (priority order)
 
 1. **Call of Flame** — Removing it costs 13.9 points of score in this model.
@@ -62,7 +87,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-20, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health. Together +11.7% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health. Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 
@@ -86,6 +111,7 @@ What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), al
 - Allocation and order taken from cand-aoe-r9 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (54.1s vs 60.2s per kill, level-weighted).
 - Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
 
 ## Open questions (verify in the live game)
 

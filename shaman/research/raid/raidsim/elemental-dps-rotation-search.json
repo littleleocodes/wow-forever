@@ -137,30 +137,24 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-11-02",
-  "commit": "54ceac638",
+  "date": "2026-11-04",
+  "commit": "7c3453f5a",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "251233112100134-255202201000102"
-   },
-   {
-    "label": "elemental-raid-dps",
-    "talents": "550233100200134-255000001340002",
-    "protect_only": true
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5500331003011351-05500001-0522"
    },
    {
     "label": "sim preset: Standard",
-    "talents": "5500331023001351-053002001-053",
-    "protect_only": true
+    "talents": "5500331023001351-05500001-053"
    },
    {
-    "label": "opt-elemental-dps-raid-dps",
-    "talents": "5500331003011351-055000001-0522",
+    "label": "elemental-raid-dps",
+    "talents": "550233100200134-255000013400002",
     "protect_only": true
    },
    {
@@ -170,7 +164,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "opt-elemental-dps-raid-dps",
+   "sim preset: Standard"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -254,74 +249,79 @@
     "gain_seed2": 0.0018046062307672806,
     "candidates": 344,
     "pass": 11
+   },
+   {
+    "round": 11,
+    "change": "threshold 200 -> 100: if (number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 200)): cast Chain Lightning",
+    "gain_seed1": 0.008758925390466965,
+    "gain_seed2": 0.009505234895565984,
+    "candidates": 341,
+    "pass": 13
+   },
+   {
+    "round": 12,
+    "change": "threshold 100 -> 50: if (number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 100)): cast Chain Lightning",
+    "gain_seed1": 0.022642254968806785,
+    "gain_seed2": 0.022169339079157968,
+    "candidates": 341,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 555.3957079304826,
-     "after": 563.8598380055166,
-     "base": 555.3957079304826,
+    "opt-elemental-dps-raid-dps": {
+     "before": 737.6791462120551,
+     "after": 745.6162478760289,
+     "base": 737.6791462120551,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.42615499992110106,
-     "oom_after": 0.42615499992110106
-    },
-    "elemental-raid-dps": {
-     "before": 560.1027864952248,
-     "after": 564.3822832473385,
-     "base": 560.1027864952248,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.02086499999419999,
-     "oom_after": 0.02086499999419999
+     "oom_before": 0,
+     "oom_after": 1.8209000000062303
     },
     "sim preset: Standard": {
-     "before": 546.5015762782116,
-     "after": 551.0955410758762,
-     "base": 546.5015762782116,
+     "before": 739.1896923622945,
+     "after": 752.0628082549578,
+     "base": 739.1896923622945,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.8159250000012028
     },
-    "opt-elemental-dps-raid-dps": {
-     "before": 547.5896278841652,
-     "after": 552.1307948263003,
-     "base": 547.5896278841652,
+    "elemental-raid-dps": {
+     "before": 723.9679439476806,
+     "after": 726.0696326500092,
+     "base": 723.9679439476806,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.0050949999978,
+     "oom_after": 4.436114999739495
     },
     "elemental-raid": {
-     "before": 534.5480183170397,
-     "after": 539.0876607091225,
-     "base": 534.5480183170397,
+     "before": 718.2615597117654,
+     "after": 723.2771162331283,
+     "base": 718.2615597117654,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00015,
-     "oom_after": 0.00015
+     "oom_before": 0,
+     "oom_after": 2.341100000004741
     }
    }
   },
   "signature": {
    "specs": [
-    "Elemental",
-    "Hybrid Elemental/Enhancement"
+    "Elemental"
    ],
    "required": [
-    "Lightning Bolt",
-    "Stormstrike"
+    "Lightning Bolt"
    ],
    "rejected": {
-    "structure": 26,
+    "structure": 78,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

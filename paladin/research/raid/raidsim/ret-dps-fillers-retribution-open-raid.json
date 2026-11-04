@@ -3,30 +3,30 @@
  "spec": "ret-dps",
  "build": "retribution-open-raid",
  "setting": "raid",
- "date": "2026-11-01",
+ "date": "2026-11-04",
  "tank": false,
  "removal": {
-  "Benediction": -1.1044988720287918e-05,
-  "Champion of the Light": 0.0640459695511918,
-  "Conviction": 0.047091990970775766,
+  "Benediction": 0.001844296141375601,
+  "Champion of the Light": 0.06539902855627622,
+  "Conviction": 0.047907963963771394,
   "Deflection": -0.0,
-  "Divine Intellect": 0.003233359848154871,
-  "Divine Precision": 0.00647431578299662,
-  "Divine Strength": 0.019319040819973154,
-  "Holy Conduit": 0.04167436678389502,
+  "Divine Intellect": 0.0033272611659815876,
+  "Divine Precision": 0.006841570840671718,
+  "Divine Strength": 0.018925011672544456,
+  "Holy Conduit": 0.0467182357525987,
   "Illumination": -0.0,
-  "Improved Judgement": 0.04195762761558397,
-  "Improved Seals": 0.052975634524600856,
-  "Pursuit of Justice": 0.001994761138522372,
+  "Improved Judgement": 0.04313083236223891,
+  "Improved Seals": 0.052808742878980075,
+  "Pursuit of Justice": 0.001981983691586864,
   "Repentance": -0.0,
-  "Reverence": 0.0014698485767534741,
-  "Sacred Arbiter": 0.01535612621809146,
-  "Sanctified Judgement": 0.0012268194802927956,
-  "Seal of Command": 0.19244372280715238,
-  "Two-Handed Weapon Specialization": 0.04542880444113928,
-  "Unsealed Wrath": 0.16324481136980207,
+  "Reverence": 0.0028576554657282482,
+  "Sacred Arbiter": 0.015169503490442104,
+  "Sanctified Judgement": 0.0035128216090093423,
+  "Seal of Command": 0.1894281544834222,
+  "Two-Handed Weapon Specialization": 0.0538796578193258,
+  "Unsealed Wrath": 0.1631598290882923,
   "Unyielding Faith": -0.0,
-  "Vengeance": 0.07671640614732023
+  "Vengeance": 0.12035561522912341
  },
  "free": [
   "Benediction",
@@ -34,8 +34,6 @@
   "Illumination",
   "Pursuit of Justice",
   "Repentance",
-  "Reverence",
-  "Sanctified Judgement",
   "Unyielding Faith"
  ],
  "kept_for_rotation": [
@@ -59,28 +57,28 @@
   {
    "round": 2,
    "kind": "utility",
-   "from": "Pursuit of Justice",
-   "to": "Sanctified Judgement",
-   "seed1": -0.0001665494531887246,
-   "seed2": 0.0013272081442514683,
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": -0.0002115880838594597,
+   "seed2": -0.00023401122772104266,
    "utility": "mana"
   },
   {
    "round": 3,
    "kind": "utility",
    "from": "Pursuit of Justice",
-   "to": "Benediction",
-   "seed1": 4.7775090507462536e-05,
-   "seed2": 0.00020521968561948434,
+   "to": "Sanctified Judgement",
+   "seed1": -0.0002811445330191953,
+   "seed2": 0.0008699567795835694,
    "utility": "mana"
   },
   {
    "round": 4,
    "kind": "utility",
-   "from": "Deflection",
+   "from": "Pursuit of Justice",
    "to": "Benediction",
-   "seed1": 0.000492166198045263,
-   "seed2": -0.00015059019824492648,
+   "seed1": 0.0004432852814832966,
+   "seed2": 0.0003473187561742197,
    "utility": "mana"
   },
   {
@@ -88,8 +86,8 @@
    "kind": "utility",
    "from": "Deflection",
    "to": "Benediction",
-   "seed1": 3.3279183672352275e-05,
-   "seed2": -4.1970880611974515e-05,
+   "seed1": -4.450108237807893e-05,
+   "seed2": -0.0003516173957887059,
    "utility": "mana"
   },
   {
@@ -111,7 +109,7 @@
    "utility": "survival"
   }
  ],
- "final_seed3": -2.924130864112584e-05,
+ "final_seed3": 0.00029915318211526376,
  "start": {
   "Holy": [
    [

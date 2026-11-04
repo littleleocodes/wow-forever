@@ -48,6 +48,46 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 29228
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 29228
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpLe",
       "lhs": {
@@ -106,46 +146,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 29228
-           }
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 29228
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -253,9 +253,22 @@
      "spellId": {
       "spellId": 408345
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "10%"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   },
   {
    "action": {

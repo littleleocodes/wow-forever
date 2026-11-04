@@ -62,16 +62,16 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever d97252f (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 423 | +0.0% | 787 | +0.0% | 70 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 450 | +0.0% | 839 | +0.0% | 70 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 2 passes, the last 2026-11-01, 2 changes to the base rotation; third-seed check: open winner 784 -> 796 DPS (+1.6%), shockadin-open-raid 772 -> 784 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 passes, the last 2026-11-03, 2 changes to the base rotation; third-seed check: shockadin-open-raid 826 -> 839 DPS (+1.6%)):
   1. threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+1.0%, pass 1)
   2. move to the top: if variableRef: groupReference (+0.5%, pass 1)
 
@@ -100,10 +100,10 @@ Damage by ability:
 | Judgement of Righteousness | 18% |
 | Holy Strike | 16% |
 | Seal of Righteousness | 15% |
-| Holy Shock | 12% |
-| Consecration | 12% |
-| Demonic Rune | 2% |
+| Holy Shock | 13% |
+| Consecration | 13% |
 | Hammer of Wrath | 2% |
+| Demonic Rune | 2% |
 | spell 16614 | 0% |
 
 ## Notes

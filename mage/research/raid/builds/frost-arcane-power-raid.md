@@ -73,23 +73,23 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 
 ## Rank among our builds and the community simulator's
 
-**3 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 552 | +0.0% | 661 | -1.5% | 5 s |
-| 2 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 546 | -1.0% | 650 | -3.0% | 9 s |
-| 3 | **[`frost-arcane-power-raid`](frost-arcane-power-raid.md)** | ours: hand draft | 32/3/16 | 544 | -1.4% | 660 | -1.6% | 7 s |
-| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 525 | -4.9% | 670 | +0.0% | 4 s |
-| 5 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 506 | -8.4% | 572 | -14.7% | 0 s |
-| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 502 | -9.1% | 597 | -10.9% | 5 s |
-| 7 | *Arcane Fire* | community simulator | - | 482 | -12.7% | 619 | -7.7% | 6 s |
-| 8 | *Arcane* | community simulator | - | 482 | -12.7% | 631 | -5.9% | 6 s |
-| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 457 | -17.2% | 519 | -22.6% | 0 s |
-| 10 | *Frost Incin* | community simulator | - | 454 | -17.9% | 544 | -18.9% | 4 s |
-| 11 | *Frost Med* | community simulator | - | 444 | -19.6% | 540 | -19.5% | 9 s |
-| 12 | *Fire* | community simulator | - | 408 | -26.0% | 487 | -27.4% | 8 s |
-| 13 | *FFB* | community simulator | - | 387 | -30.0% | 446 | -33.4% | 2 s |
+| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 560 | +0.0% | 649 | -3.2% | 7 s |
+| 2 | **[`frost-arcane-power-raid`](frost-arcane-power-raid.md)** | ours: hand draft | 32/3/16 | 557 | -0.5% | 660 | -1.6% | 4 s |
+| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 556 | -0.7% | 661 | -1.4% | 7 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 526 | -6.1% | 671 | +0.0% | 5 s |
+| 5 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 507 | -9.5% | 573 | -14.5% | 0 s |
+| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 505 | -9.7% | 597 | -10.9% | 7 s |
+| 7 | *Arcane Fire* | community simulator | - | 492 | -12.2% | 619 | -7.7% | 2 s |
+| 8 | *Arcane* | community simulator | - | 492 | -12.2% | 632 | -5.8% | 2 s |
+| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 457 | -18.3% | 520 | -22.5% | 0 s |
+| 10 | *Frost Incin* | community simulator | - | 454 | -19.0% | 544 | -18.9% | 4 s |
+| 11 | *Frost Med* | community simulator | - | 444 | -20.7% | 540 | -19.5% | 9 s |
+| 12 | *Fire* | community simulator | - | 415 | -25.9% | 487 | -27.5% | 7 s |
+| 13 | *FFB* | community simulator | - | 387 | -30.9% | 446 | -33.4% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -118,23 +118,22 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 |---|---|---|
 | 1 | if mana % ≤ 60% and mana % ≥ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.6 |
-| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.1 |
+| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.7 |
+| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.2 |
 | 5 | if Arcane Wrath is ready: cast Presence of Mind | 0.3 |
-| 6 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.1 |
-| 7 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.4 |
-| 8 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
-| 9 | cast Arcane Blast | 8.1 |
-| 10 | cast Robe of the Archmage | as ready |
+| 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.8 |
+| 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
+| 8 | cast Arcane Blast | 8.2 |
+| 9 | cast Robe of the Archmage | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast spell 1326055 (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation, cast spell 1326055 (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) |
 |---|---|
 | Frostbolt | 49% |
-| Arcane Missiles | 33% |
+| Arcane Missiles | 32% |
 | Arcane Blast | 17% |
 | Demonic Rune | 2% |
 | Fire Blast | 0% |

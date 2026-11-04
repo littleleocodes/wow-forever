@@ -225,9 +225,22 @@
       "spellId": 15207,
       "rank": 9
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "25%"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {

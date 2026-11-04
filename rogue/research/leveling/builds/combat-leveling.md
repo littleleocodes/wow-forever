@@ -50,6 +50,34 @@ The best Combat leveling build with at least 30 points in Combat, generated on 2
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Combat | Lightning Reflexes | 2 | 0/5/0 |
+| 15-16 | Combat | Precision | 2 | 0/7/0 |
+| 17-19 | Combat | Deflection | 3 | 0/10/0 |
+| 20 | Combat | Riposte | 1 | 0/11/0 |
+| 21 | Combat | Precision | 1 | 0/12/0 |
+| 22-24 | Combat | Lightning Reflexes | 3 | 0/15/0 |
+| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
+| 26-27 | Combat | Weapon Expertise | 2 | 0/18/0 |
+| 28-30 | Combat | Aggression | 3 | 0/21/0 |
+| 31-32 | Combat | Dual Wield Specialization | 2 | 0/23/0 |
+| 33-36 | Combat | Hack and Slash | 4 | 0/27/0 |
+| 37-38 | Combat | Efficient Strikes | 2 | 0/29/0 |
+| 39 | Combat | Blade Flurry | 1 | 0/30/0 |
+| 40-41 | Assassination | Remorseless Attacks | 2 | 2/30/0 |
+| 42-46 | Assassination | Malice | 5 | 7/30/0 |
+| 47-49 | Assassination | Improved Gouge | 3 | 10/30/0 |
+| 50-51 | Assassination | Vigor | 2 | 12/30/0 |
+| 52-53 | Assassination | Lethality | 2 | 14/30/0 |
+| 54 | Assassination | Ruthlessness | 1 | 15/30/0 |
+| 55 | Assassination | Cold Blood | 1 | 16/30/0 |
+| 56-59 | Assassination | Improved Poisons | 4 | 20/30/0 |
+| 60 | Assassination | Relentless Strikes | 1 | 21/30/0 |
+
 ## Core talents (priority order)
 
 1. **Riposte** — The scorer's value in this build: +9.0% of its score (model combat-swords-raid).
@@ -67,6 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/31/2 -> 21/30/0; Murder 2 gone; Lethality 4 -> 2 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Vigor (tier gating for Cold Blood); +1 Vigor (tier gating for Cold Blood); +1 Ruthlessness (tier gating for Cold Blood); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Hack and Slash (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Adrenaline Rush (over 51); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-swords-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 21.9 s per kill; stats model 22.5 s; own tree last 23.3 s.
 
 ## Open questions (verify in the live game)
 

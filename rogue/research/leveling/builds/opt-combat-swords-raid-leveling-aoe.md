@@ -52,6 +52,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 |---|---|---|---|
 | **Setup** | 3/3 | changed | Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Subtlety | Setup | 3 | 0/0/3 |
+| 13-15 | Combat | Coup de Grace | 3 | 0/3/3 |
+| 16-17 | Combat | Lightning Reflexes | 2 | 0/5/3 |
+| 18 | Combat | Deflection | 1 | 0/6/3 |
+| 19-20 | Combat | Precision | 2 | 0/8/3 |
+| 21-22 | Combat | Deflection | 2 | 0/10/3 |
+| 23 | Combat | Riposte | 1 | 0/11/3 |
+| 24 | Combat | Precision | 1 | 0/12/3 |
+| 25-26 | Combat | Endurance | 2 | 0/14/3 |
+| 27 | Combat | Efficient Strikes | 1 | 0/15/3 |
+| 28 | Combat | Flawless Execution | 1 | 0/16/3 |
+| 29-30 | Combat | Weapon Expertise | 2 | 0/18/3 |
+| 31-32 | Combat | Aggression | 2 | 0/20/3 |
+| 33 | Combat | Blade Flurry | 1 | 0/21/3 |
+| 34 | Combat | Aggression | 1 | 0/22/3 |
+| 35-39 | Assassination | Malice | 5 | 5/22/3 |
+| 40-41 | Assassination | Remorseless Attacks | 2 | 7/22/3 |
+| 42-44 | Assassination | Improved Gouge | 3 | 10/22/3 |
+| 45-46 | Assassination | Vigor | 2 | 12/22/3 |
+| 47-48 | Assassination | Lethality | 2 | 14/22/3 |
+| 49 | Assassination | Ruthlessness | 1 | 15/22/3 |
+| 50 | Assassination | Cold Blood | 1 | 16/22/3 |
+| 51-54 | Assassination | Improved Poisons | 4 | 20/22/3 |
+| 55 | Assassination | Relentless Strikes | 1 | 21/22/3 |
+| 56-60 | Combat | Hack and Slash | 5 | 21/27/3 |
+
 ## Core talents (priority order)
 
 1. **Setup** — Removing it costs 4.9 points of score in this model.
@@ -67,7 +97,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on; Poised makes the opener 10 energy cheaper), Slice and Dice at 1-2 points when it is down, Shank whenever its energy would not overflow (from 24), Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-23, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.3% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): never cast Cheap Shot; never cast Slice and Dice; eat below 40% health; never cast Kick; never cast Kidney Shot. Together +15.7% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-swords-raid-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 
@@ -87,6 +117,7 @@ What this build casts per kill ([report](../fightlab/combat-swords-raid-aoe.md),
 - Allocation and order taken from cand-aoe-r7 on 2026-10-19: an earlier optimizer round beat the last export in the fight lab (27.3s vs 27.8s per kill, level-weighted).
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 21/27/3; Murder 2 gone; Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 4 -> 2 (rank cap); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Lethality (tier gating for Relentless Strikes); +1 Ruthlessness (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Lightning Reflexes (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Master of Deception (over 51); -1 Master of Deception (over 51); -1 Master of Deception (over 51); -1 Adrenaline Rush (over 51); -1 Efficient Strikes (over 51); -1 Dual Wield Specialization (over 51); -1 Dual Wield Specialization (over 51); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-aoe).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
 
 ## Open questions (verify in the live game)
 

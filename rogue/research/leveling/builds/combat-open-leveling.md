@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +0.6% faster per kill than opt-combat-swords-raid-leveling-aoe, the fastest of our leveling builds in that race.
+The Combat leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.1% faster per kill than combat-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -19,15 +19,16 @@ The Combat leveling build the open leveling search found on 2026-11-02: every le
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Gouge** | 3/3 | changed | Increases the duration of your Gouge ability by 1.5 sec. |
-| **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
 | **Remorseless Attacks** | 2/2 | changed | After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec. |
-| **Ruthlessness** | 1/3 | unchanged | Gives your finishing moves a 20% chance to add a Combo Point to your target. |
-| **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
+| **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
+| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
+| **Improved Expose Armor** | 1/2 | changed | Reduces the Energy cost of your Expose Armor ability by 5, and refunds 1 Combo Point when cast with 5 Combo Points. |
+| **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
+| **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
-| **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
+| **Improved Poisons** | 1/5 | changed | Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge. |
+| **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 
 ### Combat (30)
 
@@ -35,31 +36,61 @@ The Combat leveling build the open leveling search found on 2026-11-02: every le
 |---|---|---|---|
 | **Coup de Grace** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. |
 | **Efficient Strikes** | 2/2 | unchanged | Reduces the Energy costs of Sinister Strike and Hemorrhage by 5. |
-| **Lightning Reflexes** | 4/5 | unchanged | Increases your Dodge chance by 4%. |
+| **Lightning Reflexes** | 1/5 | unchanged | Increases your Dodge chance by 1%. |
 | **Deflection** | 3/3 | changed | Increases your Parry chance by 6%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Riposte** | 1/1 | unchanged | A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec. |
-| **Aggression** | 3/3 | changed | Increases the damage of Sinister Strike and Eviscerate by 15%. |
+| **Composure** | 2/2 | **NEW** | Increases the Energy cost reduction of your Poised ability by 10. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 15. |
+| **Aggression** | 3/3 | changed | Increases the damage of Sinister Strike and Eviscerate by 15%. |
 | **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
-| **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
+| **Hack and Slash** | 2/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 2% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 2%.   Mace: Your attacks ignore 6% of  your target's armor. |
 | **Dual Wield Specialization** | 2/2 | changed | Increases the damage done by your off-hand weapon by 50%. |
-| **Hack and Slash** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 5% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 5%.   Mace: Your attacks ignore 15% of  your target's armor. |
+| **Flash of Steel** | 5/5 | **NEW** | Increases the energy generated by your Shank ability by 15 and reduces its cooldown by 2.0 seconds. |
 
 ### Subtlety (0)
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13 | Combat | Lightning Reflexes | 1 | 0/4/0 |
+| 14 | Combat | Efficient Strikes | 1 | 0/5/0 |
+| 15-17 | Combat | Precision | 3 | 0/8/0 |
+| 18-20 | Combat | Deflection | 3 | 0/11/0 |
+| 21 | Combat | Riposte | 1 | 0/12/0 |
+| 22 | Combat | Efficient Strikes | 1 | 0/13/0 |
+| 23-24 | Combat | Composure | 2 | 0/15/0 |
+| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
+| 26-27 | Combat | Weapon Expertise | 2 | 0/18/0 |
+| 28-30 | Combat | Aggression | 3 | 0/21/0 |
+| 31-32 | Combat | Dual Wield Specialization | 2 | 0/23/0 |
+| 33-34 | Combat | Hack and Slash | 2 | 0/25/0 |
+| 35-39 | Combat | Flash of Steel | 5 | 0/30/0 |
+| 40-41 | Assassination | Remorseless Attacks | 2 | 2/30/0 |
+| 42-46 | Assassination | Malice | 5 | 7/30/0 |
+| 47-49 | Assassination | Ruthlessness | 3 | 10/30/0 |
+| 50-51 | Assassination | Vigor | 2 | 12/30/0 |
+| 52-53 | Assassination | Lethality | 2 | 14/30/0 |
+| 54 | Assassination | Improved Expose Armor | 1 | 15/30/0 |
+| 55 | Assassination | Cold Blood | 1 | 16/30/0 |
+| 56 | Assassination | Improved Poisons | 1 | 17/30/0 |
+| 57-59 | Assassination | Improved Slice and Dice | 3 | 20/30/0 |
+| 60 | Assassination | Venom | 1 | 21/30/0 |
+
 ## Core talents (priority order)
 
-1. **Setup** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Flawless Execution** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Improved Sinister Strike** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Improved Eviscerate** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Malice** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Precision** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Relentless Strikes** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Efficient Strikes** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Aggression** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Venom** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Flash of Steel** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Weapon Expertise** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Coup de Grace** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Malice** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Flawless Execution** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -67,9 +98,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.63; opt-combat-swords-raid-leveling-aoe 24.78, combat-leveling 25.35. The search simulated 37,275 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.64; combat-open-leveling 22.11, combat-leveling 22.55. The search simulated 42,177 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
-- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 21/30/0; Murder 2 gone; Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Lethality (tier gating for Relentless Strikes); +1 Ruthlessness (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Lightning Reflexes (tier gating for Adrenaline Rush); -1 Camouflage (over 51); -1 Master of Deception (over 51); -1 Master of Deception (over 51); -1 Setup (over 51); -1 Setup (over 51); -1 Setup (over 51); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Adrenaline Rush (over 51); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-st).
 
 ## Open questions (verify in the live game)
 
@@ -78,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/125020101-32303301001513231-1223-7>
+- <https://talentsforever.com/rogue/60/02531320201101-321033001201320225--7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

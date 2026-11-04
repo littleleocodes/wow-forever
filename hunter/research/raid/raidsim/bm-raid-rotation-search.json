@@ -230,16 +230,20 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-04",
+  "commit": "7c3453f5a",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "beast-mastery-ml-raid",
-    "talents": "5320001505101251-00530502005"
+    "label": "beast-marks-ml-raid",
+    "talents": "532000150510123-00530503005-2"
+   },
+   {
+    "label": "sim preset: BM",
+    "talents": "5320001505101251-0052050301-4"
    },
    {
     "label": "mm-hawk-raid",
@@ -247,13 +251,14 @@
     "protect_only": true
    },
    {
-    "label": "beast-marks-ml-raid",
-    "talents": "532000150510123-00500505005-3",
+    "label": "beast-mastery-ml-raid",
+    "talents": "5320001505101251-00530502005",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "beast-mastery-ml-raid"
+   "beast-marks-ml-raid",
+   "sim preset: BM"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -373,32 +378,41 @@
   ],
   "final": {
    "raid": {
-    "beast-mastery-ml-raid": {
-     "before": 739.8249636512975,
-     "after": 773.4493377912637,
-     "base": 739.8249636512975,
+    "beast-marks-ml-raid": {
+     "before": 736.6756858301383,
+     "after": 833.6301306998231,
+     "base": 736.6756858301383,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.12270609840050006,
-     "oom_after": 0.12270609840050006
+     "oom_before": 0.24446604404124955,
+     "oom_after": 0.24446604404124955
+    },
+    "sim preset: BM": {
+     "before": 737.6516446908461,
+     "after": 825.2028934493917,
+     "base": 737.6516446908461,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.4008006338737997,
+     "oom_after": 1.4008006338737997
     },
     "mm-hawk-raid": {
-     "before": 693.7332431563711,
-     "after": 721.2581717860305,
-     "base": 693.7332431563711,
+     "before": 718.0719766530344,
+     "after": 792.9585966618076,
+     "base": 718.0719766530344,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "beast-marks-ml-raid": {
-     "before": 711.0570815911474,
-     "after": 761.9340872514903,
-     "base": 711.0570815911474,
+    "beast-mastery-ml-raid": {
+     "before": 750.6794987227894,
+     "after": 833.6198010650427,
+     "base": 750.6794987227894,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.3246550247833486,
-     "oom_after": 1.3246550247833486
+     "oom_before": 0.2886460978775495,
+     "oom_after": 0.2886460978775495
     }
    }
   },
@@ -419,6 +433,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 16
+  "passes": 17
  }
 }

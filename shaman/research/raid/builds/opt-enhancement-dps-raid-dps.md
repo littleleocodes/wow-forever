@@ -61,16 +61,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Rank among our builds and the community simulator's
 
-**4 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/31/3 | 394 | +0.0% | 717 | +0.0% | 12 s |
-| 2 | *Standard* | community simulator | - | 394 | +0.0% | 717 | +0.0% | 12 s |
-| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 387 | -1.9% | 700 | -2.3% | 7 s |
-| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 378 | -4.0% | 654 | -8.8% | 20 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 378 | -4.2% | 678 | -5.5% | 11 s |
-| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 365 | -7.4% | 652 | -9.1% | 14 s |
+| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/31/3 | 555 | +0.0% | 717 | +0.0% | 17 s |
+| 2 | *Standard* | community simulator | - | 555 | +0.0% | 717 | +0.0% | 17 s |
+| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 540 | -2.7% | 700 | -2.3% | 10 s |
+| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 525 | -5.4% | 654 | -8.8% | 24 s |
+| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 514 | -7.4% | 652 | -9.1% | 26 s |
+| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 514 | -7.4% | 678 | -5.5% | 20 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,23 +100,23 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 7.4 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
+| 4 | cast Stormstrike | 9.4 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 8.0 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.6 |
-| 8 | cast Earth Shock | 6.7 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.4 |
+| 8 | cast Earth Shock | 5.7 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 42% |
-| Earth Shock | 16% |
-| Lightning Bolt | 13% |
-| Flame Shock | 12% |
-| Stormstrike | 10% |
-| Searing Totem | 7% |
+| Auto Attack | 33% |
+| Lightning Bolt | 21% |
+| Stormstrike | 15% |
+| Earth Shock | 15% |
+| Flame Shock | 11% |
+| Searing Totem | 5% |
 
 ## Notes
 

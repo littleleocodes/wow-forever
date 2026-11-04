@@ -49,6 +49,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 | **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 | **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Restoration | Tidal Focus | 5 | 0/0/5 |
+| 15-17 | Restoration | Mindfulness | 3 | 0/0/8 |
+| 18-22 | Elemental | Convection | 5 | 5/0/8 |
+| 23-25 | Elemental | Elemental Alacrity | 3 | 8/0/8 |
+| 26-27 | Elemental | Call of Flame | 2 | 10/0/8 |
+| 28 | Elemental | Elemental Focus | 1 | 11/0/8 |
+| 29 | Elemental | Call of Flame | 1 | 12/0/8 |
+| 30-34 | Enhancement | Thundering Strikes | 5 | 12/5/8 |
+| 35-36 | Enhancement | Guardian Totems | 2 | 12/7/8 |
+| 37-38 | Enhancement | Earth's Grasp | 2 | 12/9/8 |
+| 39 | Enhancement | Ancestral Knowledge | 1 | 12/10/8 |
+| 40 | Enhancement | Shamanistic Focus | 1 | 12/11/8 |
+| 41-43 | Enhancement | Anticipation | 3 | 12/14/8 |
+| 44 | Enhancement | Ancestral Knowledge | 1 | 12/15/8 |
+| 45-46 | Enhancement | Improved Ghost Wolf | 2 | 12/17/8 |
+| 47-49 | Elemental | Concussion | 3 | 15/17/8 |
+| 50 | Elemental | Earthbound | 1 | 16/17/8 |
+| 51-52 | Elemental | Concussion | 2 | 18/17/8 |
+| 53-54 | Elemental | Eye of the Storm | 2 | 20/17/8 |
+| 55 | Elemental | Call of Thunder | 1 | 21/17/8 |
+| 56-58 | Elemental | Lightning Overload | 3 | 24/17/8 |
+| 59 | Elemental | Eye of the Storm | 1 | 25/17/8 |
+| 60 | Elemental | Elemental Fury | 1 | 26/17/8 |
+
 ## Core talents (priority order)
 
 1. **Improved Ghost Wolf** — Removing it costs 3.0 points of score in this model.
@@ -64,27 +92,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 Elemental: Lightning Mastery on a fresh mob when ready, Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock and Earth Shock on cooldown with Lightning Bolts between them while mana lasts (Chain Lightning on a single mob only as CL_SINGLE allows); a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast. Lava Burst left the game on 2026-11-02 (it was cast on cooldown here).
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-20, on top of the priority below): drink below 15% mana; eat below 80% health. Together +1.2% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): drink below 15% mana; eat below 80% health. Together +1.3% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/elemental-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.5 | 4.8 | 4.8 | 4.4 | 4.4 | 34% |
-| Melee | 1.4 | 2.1 | 2.1 | 2.1 | 2.5 | 9% |
-| Earth Shock | 0.7 | 1.1 | 1.1 | 1.0 | 1.1 | 11% |
-| Lava Burst | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 11% |
-| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 11% |
-| Windfury | 0.0 | 0.7 | 0.7 | 0.8 | 0.9 | 4% |
-| Lightning Shield | 0.6 | 0.7 | 0.8 | 0.8 | 0.8 | 14% |
-| Searing Totem | 0.7 | 0.6 | 0.6 | 0.7 | 0.7 | 6% |
-| Elemental Mastery | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
-| Stoneclaw Totem | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Lightning Bolt | 3.2 | 4.0 | 4.1 | 4.1 | 4.1 | 55% |
+| Melee | 1.2 | 1.6 | 1.6 | 1.6 | 1.5 | 5% |
+| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 14% |
+| Earth Shock | 0.5 | 0.8 | 0.8 | 0.8 | 0.7 | 11% |
+| Searing Totem | 0.6 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
+| Lightning Shield | 0.5 | 0.5 | 0.6 | 0.6 | 0.5 | 9% |
+| Windfury | 0.0 | 0.6 | 0.6 | 0.6 | 0.5 | 2% |
 
 ## Notes
 
 - Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the elemental-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 30.1 s per kill; own tree first 30.8 s; own tree last 30.6 s.
 
 ## Open questions (verify in the live game)
 

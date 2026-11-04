@@ -11,18 +11,18 @@
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 3 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Assassination | Lethality | 2 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Lethality | 2 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2) |
 | Combat | Improved Sinister Strike | 2 | unknown | not found in Forever data |
 | Combat | Lightning Reflexes | 4 | unchanged | tier 1, max 5 |
 | Combat | Precision | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
 | Combat | Endurance | 2 | changed | tier 3, max 2 — tooltip changed |
-| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70753: was row 3, col 4 |
-| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70755: was row 3, col 4 |
+| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2); prerequisite changed in build 1.60.1.70755: was precision |
 | Combat | Blade Flurry | 1 | changed | tier 5, max 1 — tooltip changed |
 | Combat | Sword Specialization | 5 | **REMOVED** | removed from Classic |
-| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 2; prerequisite changed in build 1.60.1.70753: was blade flurry |
-| Combat | Aggression | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 3; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 2; prerequisite changed in build 1.60.1.70755: was blade flurry |
+| Combat | Aggression | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 3; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Combat | Adrenaline Rush | 1 | unchanged | tier 7, max 1 |
 
 **Orphaned points to re-spend: 5.** Points in changed/moved talents to re-evaluate: 25.
@@ -36,19 +36,19 @@
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 3 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
 | Combat | Improved Gouge | 3 | moved-tree | now in Assassination, tier 1 |
 | Combat | Lightning Reflexes | 2 | unchanged | tier 1, max 5 |
 | Combat | Improved Backstab | 3 | **REMOVED** | removed from Classic |
 | Combat | Precision | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
-| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70753: was row 3, col 4 |
+| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70755: was row 3, col 4 |
 | Combat | Dagger Specialization | 5 | **REMOVED** | removed from Classic |
-| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2); prerequisite changed in build 1.60.1.70755: was precision |
 | Combat | Blade Flurry | 1 | changed | tier 5, max 1 — tooltip changed |
-| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 2; prerequisite changed in build 1.60.1.70753: was blade flurry |
-| Combat | Aggression | 2 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 3; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 2; prerequisite changed in build 1.60.1.70755: was blade flurry |
+| Combat | Aggression | 2 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 3; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Combat | Adrenaline Rush | 1 | unchanged | tier 7, max 1 |
-| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
+| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
 
 **Orphaned points to re-spend: 8.** Points in changed/moved talents to re-evaluate: 28.
 
@@ -61,18 +61,18 @@
 | Assassination | Malice | 5 | changed | tier 1, max 5 — tooltip changed |
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2) |
 | Assassination | Cold Blood | 1 | changed | tier 4, max 1 — tooltip changed; was Assassination row 5, col 2 |
 | Assassination | Improved Kidney Shot | 3 | changed | tier 5, max 2 — max rank 3 → 2; tooltip changed |
-| Assassination | Seal Fate | 5 | moved | tier 6, max 3 — was Assassination row 6, col 2; max rank 5 -> 3 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Assassination | Seal Fate | 5 | moved | tier 6, max 3 — was Assassination row 6, col 2; max rank 5 -> 3 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Combat | Improved Sinister Strike | 2 | unknown | not found in Forever data |
 | Combat | Improved Gouge | 3 | moved-tree | now in Assassination, tier 1 |
 | Combat | Improved Backstab | 3 | **REMOVED** | removed from Classic |
 | Subtlety | Master of Deception | 5 | changed | tier 1, max 3 — max rank 5 → 3; tooltip changed |
-| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70753: was row 2, col 2 |
-| Subtlety | Camouflage | 1 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70753: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70755: was row 2, col 2 |
+| Subtlety | Camouflage | 1 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70755: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 
 **Orphaned points to re-spend: 3.** Points in changed/moved talents to re-evaluate: 35.
 
@@ -85,20 +85,20 @@
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 1 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Lethality | 5 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2) |
 | Assassination | Cold Blood | 1 | changed | tier 4, max 1 — tooltip changed; was Assassination row 5, col 2 |
 | Combat | Improved Gouge | 3 | moved-tree | now in Assassination, tier 1 |
 | Subtlety | Master of Deception | 5 | changed | tier 1, max 3 — max rank 5 → 3; tooltip changed |
-| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70753: was row 2, col 2 |
-| Subtlety | Camouflage | 2 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70753: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Subtlety | Opportunity | 5 | changed | tier 1, max 5 — max rank 5 → 2; tooltip changed; max rank 2 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Subtlety | Elusiveness | 2 | unchanged | tier 4, max 2 — moved in build 1.60.1.70755: was row 2, col 2 |
+| Subtlety | Camouflage | 2 | changed | tier 2, max 3 — tooltip changed; was Subtlety row 2, col 3; moved in build 1.60.1.70755: was row 1, col 1; max rank 5 -> 3 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Subtlety | Initiative | 3 | changed | tier 3, max 3 — tooltip changed |
-| Subtlety | Improved Ambush | 3 | moved | tier 2, max 3 — was Subtlety row 3, col 3 |
-| Subtlety | Serrated Blades | 3 | changed | tier 3, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3 |
+| Subtlety | Improved Ambush | 3 | moved | tier 2, max 3 — was Subtlety row 3, col 3; moved in build 1.60.1.70755: was row 2, col 4 |
+| Subtlety | Serrated Blades | 3 | changed | tier 3, max 3 — tooltip changed; moved in build 1.60.1.70755: was row 4, col 3 |
 | Subtlety | Preparation | 1 | unchanged | tier 5, max 1 |
-| Subtlety | Dirty Deeds | 2 | changed | tier 2, max 2 — tooltip changed; was Subtlety row 5, col 3; moved in build 1.60.1.70753: was row 5, col 1 |
-| Subtlety | Hemorrhage | 1 | changed | tier 5, max 1 — tooltip changed; was Subtlety row 5, col 4; tooltip changed in build 1.60.1.70753 (ranks 1) |
+| Subtlety | Dirty Deeds | 2 | changed | tier 2, max 2 — tooltip changed; was Subtlety row 5, col 3; moved in build 1.60.1.70755: was row 5, col 1 |
+| Subtlety | Hemorrhage | 1 | changed | tier 5, max 1 — tooltip changed; was Subtlety row 5, col 4; tooltip changed in build 1.60.1.70755 (ranks 1) |
 
 **Orphaned points to re-spend: 0.** Points in changed/moved talents to re-evaluate: 38.
 
@@ -111,18 +111,18 @@
 | Assassination | Ruthlessness | 3 | unchanged | tier 2, max 3 |
 | Assassination | Murder | 2 | unknown | not found in Forever data |
 | Assassination | Improved Slice and Dice | 3 | unchanged | tier 2, max 3 |
-| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70753: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3, 4, 5) |
-| Assassination | Lethality | 2 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Assassination | Relentless Strikes | 1 | unchanged | tier 5, max 5 — moved in build 1.60.1.70755: was row 3, col 1; max rank 1 -> 5 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3, 4, 5) |
+| Assassination | Lethality | 2 | changed | tier 3, max 2 — tooltip changed; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2) |
 | Combat | Improved Sinister Strike | 2 | unknown | not found in Forever data |
 | Combat | Lightning Reflexes | 4 | unchanged | tier 1, max 5 |
 | Combat | Precision | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
 | Combat | Endurance | 2 | changed | tier 3, max 2 — tooltip changed |
-| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70753: was row 3, col 4 |
-| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70753; tooltip changed in build 1.60.1.70753 (ranks 1, 2) |
+| Combat | Improved Sprint | 2 | unchanged | tier 2, max 2 — moved in build 1.60.1.70755: was row 3, col 4 |
+| Combat | Dual Wield Specialization | 5 | changed | tier 5, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 4, col 3; max rank 5 -> 2 in build 1.60.1.70755; tooltip changed in build 1.60.1.70755 (ranks 1, 2); prerequisite changed in build 1.60.1.70755: was precision |
 | Combat | Blade Flurry | 1 | changed | tier 5, max 1 — tooltip changed |
 | Combat | Sword Specialization | 5 | **REMOVED** | removed from Classic |
-| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 2; prerequisite changed in build 1.60.1.70753: was blade flurry |
-| Combat | Aggression | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70753: was row 6, col 3; tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3) |
+| Combat | Weapon Expertise | 2 | changed | tier 4, max 2 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 2; prerequisite changed in build 1.60.1.70755: was blade flurry |
+| Combat | Aggression | 3 | changed | tier 4, max 3 — tooltip changed; moved in build 1.60.1.70755: was row 6, col 3; tooltip changed in build 1.60.1.70755 (ranks 1, 2, 3) |
 | Combat | Adrenaline Rush | 1 | unchanged | tier 7, max 1 |
 
 **Orphaned points to re-spend: 5.** Points in changed/moved talents to re-evaluate: 25.

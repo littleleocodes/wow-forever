@@ -285,6 +285,16 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239570
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "or": {
       "vals": [

@@ -1,67 +1,96 @@
-# Combat-Subtlety — Leveling (open talent search) — 21/16/14
+# Combat-Subtlety — Leveling (open talent search) — 5/25/21
 
 *[Rogue](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 21/16/14 (Assassination / Combat / Subtlety) |
+| **Build** | 5/25/21 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.6% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
+The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +8.6% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
-### Assassination (21)
+### Assassination (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Gouge** | 3/3 | changed | Increases the duration of your Gouge ability by 1.5 sec. |
-| **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
 | **Remorseless Attacks** | 2/2 | changed | After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec. |
-| **Improved Slice and Dice** | 2/3 | unchanged | Increases the duration of your Slice and Dice ability by 30%. |
-| **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
-| **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
-| **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
-| **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Relentless Strikes** | 1/5 | unchanged | Your finishing moves have a 4% chance per Combo Point to restore 25 Energy. |
+| **Malice** | 3/5 | changed | Increases your critical strike chance with all attacks and Poisons by 3%. |
 
-### Combat (16)
+### Combat (25)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Coup de Grace** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. |
+| **Efficient Strikes** | 2/2 | unchanged | Reduces the Energy costs of Sinister Strike and Hemorrhage by 5. |
 | **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
-| **Deflection** | 3/3 | changed | Increases your Parry chance by 6%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
-| **Riposte** | 1/1 | unchanged | A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec. |
+| **Composure** | 2/2 | **NEW** | Increases the Energy cost reduction of your Poised ability by 10. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 15. |
+| **Aggression** | 3/3 | changed | Increases the damage of Sinister Strike and Eviscerate by 15%. |
+| **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
+| **Hack and Slash** | 2/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 2% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 2%.   Mace: Your attacks ignore 6% of  your target's armor. |
+| **Dual Wield Specialization** | 2/2 | changed | Increases the damage done by your off-hand weapon by 50%. |
 
-### Subtlety (14)
+### Subtlety (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Opportunity** | 2/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 8%. |
 | **Setup** | 3/3 | changed | Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
-| **Camouflage** | 1/3 | changed | Grants 5% increased movement speed in stealth and reduces stealth's cooldown by 2 seconds. |
+| **Opportunity** | 5/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%. |
 | **Dirty Deeds** | 1/2 | changed | Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target. |
 | **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |
+| **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
 | **Premeditation** | 1/1 | changed | Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. |
 | **Serrated Blades** | 3/3 | changed | Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%. |
+| **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Also causes your next Ambush or Garrote cast within 7 seconds to not require Stealth. |
+| **Hemorrhage** | 1/1 | changed | An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and increases the damage of the caster's Rupture and Garrote abilities by 15%. Lasts 15 sec. Awards 1 Combo Point. |
+
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Assassination | Remorseless Attacks | 2 | 2/3/0 |
+| 15-17 | Assassination | Malice | 3 | 5/3/0 |
+| 18-19 | Combat | Lightning Reflexes | 2 | 5/5/0 |
+| 20-22 | Combat | Precision | 3 | 5/8/0 |
+| 23-25 | Combat | Lightning Reflexes | 3 | 5/11/0 |
+| 26-27 | Combat | Efficient Strikes | 2 | 5/13/0 |
+| 28-29 | Combat | Composure | 2 | 5/15/0 |
+| 30 | Combat | Flawless Execution | 1 | 5/16/0 |
+| 31-32 | Combat | Weapon Expertise | 2 | 5/18/0 |
+| 33-35 | Combat | Aggression | 3 | 5/21/0 |
+| 36-37 | Subtlety | Opportunity | 2 | 5/21/2 |
+| 38-40 | Subtlety | Setup | 3 | 5/21/5 |
+| 41 | Subtlety | Dirty Deeds | 1 | 5/21/6 |
+| 42-44 | Subtlety | Opportunity | 3 | 5/21/9 |
+| 45 | Subtlety | Improved Ambush | 1 | 5/21/10 |
+| 46-48 | Subtlety | Serrated Blades | 3 | 5/21/13 |
+| 49 | Subtlety | Initiative | 1 | 5/21/14 |
+| 50 | Subtlety | Premeditation | 1 | 5/21/15 |
+| 51 | Subtlety | Ghostly Strike | 1 | 5/21/16 |
+| 52-53 | Subtlety | Initiative | 2 | 5/21/18 |
+| 54-55 | Combat | Dual Wield Specialization | 2 | 5/23/18 |
+| 56-57 | Combat | Hack and Slash | 2 | 5/25/18 |
+| 58-59 | Subtlety | Improved Ambush | 2 | 5/25/20 |
+| 60 | Subtlety | Hemorrhage | 1 | 5/25/21 |
 
 ## Core talents (priority order)
 
-1. **Setup** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Flawless Execution** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Remorseless Attacks** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Improved Eviscerate** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Improved Ambush** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Initiative** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Remorseless Attacks** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Improved Ambush** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Flawless Execution** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Coup de Grace** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Aggression** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Weapon Expertise** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Opportunity** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Hemorrhage** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -69,9 +98,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.83; subtlety-leveling 25.64. The search simulated 56,780 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.49; subtlety-leveling 23.33, subtlety-open-leveling 25.00. The search simulated 54,137 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
-- 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/17/21 -> 21/16/14; Murder 2 gone; Improved Eviscerate -> Coup de Grace (renamed); Camouflage 4 -> 3 (rank cap); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Aggression (tier gating for Dual Wield Specialization); +1 Dirty Deeds (tier gating for Hemorrhage); +1 Lethality (tier gating for Relentless Strikes); +1 Lethality (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Slice and Dice (tier gating for Relentless Strikes); +1 Improved Slice and Dice (tier gating for Relentless Strikes); -1 Hemorrhage (over 51); -1 Camouflage (over 51); -1 Camouflage (over 51); -1 Dual Wield Specialization (over 51); -1 Coup de Grace (over 51); -1 Coup de Grace (over 51); -1 Coup de Grace (over 51); -1 Initiative (over 51); -1 Initiative (over 51); -1 Aggression (over 51); -1 Ghostly Strike (over 51); -1 Initiative (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
 
 ## Open questions (verify in the live game)
 
@@ -80,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/0253201-305033010011-4023003310013001-7>
+- <https://talentsforever.com/rogue/60/023-32500300020132022-3050103313100001-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

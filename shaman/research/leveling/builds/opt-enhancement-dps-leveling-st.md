@@ -49,6 +49,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 | **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Enhancement | Thundering Strikes | 5 | 0/5/0 |
+| 15-17 | Enhancement | Mental Dexterity | 3 | 0/8/0 |
+| 18-19 | Enhancement | Improved Lightning Shield | 2 | 0/10/0 |
+| 20 | Enhancement | Shamanistic Focus | 1 | 0/11/0 |
+| 21 | Enhancement | Improved Lightning Shield | 1 | 0/12/0 |
+| 22-23 | Enhancement | Guardian Totems | 2 | 0/14/0 |
+| 24 | Enhancement | Earth's Grasp | 1 | 0/15/0 |
+| 25 | Enhancement | Stormstrike | 1 | 0/16/0 |
+| 26-27 | Enhancement | Improved Ghost Wolf | 2 | 0/18/0 |
+| 28-31 | Restoration | Tidal Focus | 4 | 0/18/4 |
+| 32-33 | Enhancement | Flurry | 2 | 0/20/4 |
+| 34-35 | Enhancement | Mental Quickness | 2 | 0/22/4 |
+| 36 | Restoration | Tidal Focus | 1 | 0/22/5 |
+| 37 | Restoration | Mindfulness | 1 | 0/22/6 |
+| 38 | Enhancement | Flurry | 1 | 0/23/6 |
+| 39-40 | Restoration | Mindfulness | 2 | 0/23/8 |
+| 41-42 | Enhancement | Flurry | 2 | 0/25/8 |
+| 43-47 | Elemental | Concussion | 5 | 5/25/8 |
+| 48-52 | Elemental | Reverberation | 5 | 10/25/8 |
+| 53 | Elemental | Elemental Focus | 1 | 11/25/8 |
+| 54 | Enhancement | Earth's Grasp | 1 | 11/26/8 |
+| 55-57 | Enhancement | Anticipation | 3 | 11/29/8 |
+| 58 | Enhancement | Maelstrom Weapon | 1 | 11/30/8 |
+| 59 | Enhancement | Rage of the Farseer | 1 | 11/31/8 |
+| 60 | Elemental | Call of Flame | 1 | 12/31/8 |
+
 ## Core talents (priority order)
 
 1. **Shamanistic Focus** — Removing it costs 6.6 points of score in this model.
@@ -64,24 +94,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-20, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health. Together +11.7% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health. Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/enhancement-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.5 | 3.5 | 4.2 | 4.8 | 5.7 | 25% |
-| Windfury | 0.0 | 1.8 | 2.2 | 2.3 | 2.8 | 16% |
-| Earth Shock | 2.1 | 2.0 | 2.3 | 2.5 | 2.7 | 27% |
-| Stormstrike | 0.0 | 1.7 | 1.9 | 2.2 | 2.4 | 11% |
-| Lightning Shield | 0.6 | 0.7 | 0.8 | 0.8 | 0.9 | 15% |
-| Searing Totem | 0.7 | 0.7 | 0.6 | 0.7 | 0.6 | 5% |
-| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 3.2 | 2.8 | 3.2 | 3.5 | 4.1 | 19% |
+| Stormstrike | 0.0 | 1.9 | 2.0 | 2.2 | 2.4 | 16% |
+| Windfury | 0.0 | 1.6 | 1.8 | 2.0 | 2.3 | 13% |
+| Earth Shock | 2.0 | 1.4 | 1.6 | 1.8 | 1.9 | 34% |
+| Lightning Shield | 0.6 | 0.5 | 0.6 | 0.6 | 0.7 | 12% |
+| Searing Totem | 0.8 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
 
 ## Notes
 
 - Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 12/31/8; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the enhancement-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 26.4 s per kill; own tree first 26.7 s; own tree last 28.8 s.
 
 ## Open questions (verify in the live game)
 

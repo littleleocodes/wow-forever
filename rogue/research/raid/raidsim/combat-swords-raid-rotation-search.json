@@ -154,35 +154,35 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-11-02",
-  "commit": "bac92dbd5",
+  "date": "2026-11-04",
+  "commit": "92c4c35b9",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
     "label": "combat-swords-open-raid",
-    "talents": "005303103004-32403300001515221"
+    "talents": "0053032020141-32503300000123215"
    },
    {
-    "label": "sim preset: Combat SS",
-    "talents": "005323101012-32030320201515231"
+    "label": "sim preset: Subtlety Hemo",
+    "talents": "00530301-320003-305230031321001151"
    },
    {
     "label": "combat-swords-raid",
-    "talents": "005303125-32403300001515131",
+    "talents": "2053232020101-32503300000123215",
     "protect_only": true
    },
    {
     "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "005323101005-32502300000514231",
+    "talents": "0053032020051-32503300000123215",
     "protect_only": true
    }
   ],
   "tuned_on": [
    "combat-swords-open-raid",
-   "sim preset: Combat SS"
+   "sim preset: Subtlety Hemo"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -274,41 +274,49 @@
     "gain_seed2": 0.0037250881916457423,
     "candidates": 499,
     "pass": 11
+   },
+   {
+    "round": 12,
+    "change": "threshold 3 -> 1: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.001942694622310004,
+    "gain_seed2": 0.0017626580825464977,
+    "candidates": 809,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
     "combat-swords-open-raid": {
-     "before": 577.2218330028521,
-     "after": 594.9883937406469,
-     "base": 577.2218330028521,
+     "before": 667.3040116397574,
+     "after": 669.6866880099637,
+     "base": 667.3040116397574,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Combat SS": {
-     "before": 571.0086619474978,
-     "after": 591.7930049379029,
-     "base": 571.0086619474978,
+    "sim preset: Subtlety Hemo": {
+     "before": 765.9034017311754,
+     "after": 765.9034017311754,
+     "base": 765.9034017311754,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-swords-raid": {
-     "before": 561.2773259275432,
-     "after": 578.9560349931019,
-     "base": 561.2773259275432,
+     "before": 650.1455857089511,
+     "after": 652.4644538029307,
+     "base": 650.1455857089511,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-combat-swords-raid-raid-dps": {
-     "before": 570.7494763004772,
-     "after": 584.4216089211502,
-     "base": 570.7494763004772,
+     "before": 667.0049922886134,
+     "after": 669.3649602820065,
+     "base": 667.0049922886134,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -329,6 +337,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

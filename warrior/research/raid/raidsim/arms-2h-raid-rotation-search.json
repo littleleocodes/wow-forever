@@ -226,8 +226,8 @@
  "raid": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-10-31",
-  "commit": "54ceac638",
+  "date": "2026-11-04",
+  "commit": "02bd77cbe",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
@@ -235,15 +235,15 @@
   "builds": [
    {
     "label": "opt-arms-2h-raid-raid-dps",
-    "talents": "03305013032-25050034102210501"
+    "talents": "05303013032-250500305022100231"
    },
    {
     "label": "sim preset: Fury",
-    "talents": "30305013002-25053005052010501"
+    "talents": "30303213002-350531005122100231"
    },
    {
     "label": "arms-2h-raid",
-    "talents": "03305013031-55350000052010501",
+    "talents": "05303013031-553500050020100231",
     "protect_only": true
    }
   ],
@@ -365,32 +365,40 @@
     "gain_seed2": 0.00161456815459049,
     "candidates": 981,
     "pass": 9
+   },
+   {
+    "round": 15,
+    "change": "insert before the filler: cast Reckless Swings",
+    "gain_seed1": 0.003976516639121019,
+    "gain_seed2": 0.0046377855479473595,
+    "candidates": 1025,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
     "opt-arms-2h-raid-raid-dps": {
-     "before": 630.0733018838185,
-     "after": 813.8525581885558,
-     "base": 630.0733018838185,
+     "before": 650.3284174896216,
+     "after": 865.2523681372221,
+     "base": 650.3284174896216,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Fury": {
-     "before": 615.6580425784842,
-     "after": 786.580561099681,
-     "base": 615.6580425784842,
+     "before": 619.2821604115238,
+     "after": 825.0922797641412,
+     "base": 619.2821604115238,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "arms-2h-raid": {
-     "before": 619.5888708124785,
-     "after": 797.536744839437,
-     "base": 619.5888708124785,
+     "before": 640.4798469613072,
+     "after": 853.0784645742133,
+     "base": 640.4798469613072,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -408,13 +416,13 @@
     "Mortal Strike"
    ],
    "rejected": {
-    "structure": 11,
+    "structure": 12,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

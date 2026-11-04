@@ -810,6 +810,16 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1329555
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "not": {
       "val": {

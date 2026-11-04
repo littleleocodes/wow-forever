@@ -72,22 +72,22 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 
 ## Rank among our builds and the community simulator's
 
-**7 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever d97252f (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 445 | +0.0% | 828 | +0.0% | 32 s |
-| 2 | *Unsealed Wrath* | community simulator | - | 445 | -0.1% | 824 | -0.5% | 32 s |
-| 3 | *Holy Shock* | community simulator | - | 435 | -2.4% | 717 | -13.4% | 1 s |
-| 4 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 400 | -10.1% | 664 | -19.8% | 0 s |
-| 5 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 399 | -10.3% | 664 | -19.8% | 1 s |
-| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 356 | -20.0% | 659 | -20.4% | 22 s |
-| 7 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 8/15/28 | 353 | -20.7% | 659 | -20.4% | 24 s |
+| 1 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 470 | +0.0% | 876 | +0.0% | 32 s |
+| 2 | *Unsealed Wrath* | community simulator | - | 469 | -0.1% | 872 | -0.5% | 32 s |
+| 3 | *Holy Shock* | community simulator | - | 461 | -2.0% | 759 | -13.4% | 1 s |
+| 4 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 424 | -9.8% | 703 | -19.8% | 0 s |
+| 5 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 423 | -10.0% | 703 | -19.8% | 1 s |
+| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 376 | -20.1% | 697 | -20.4% | 22 s |
+| 7 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 8/15/28 | 372 | -20.8% | 697 | -20.4% | 24 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 passes, the last 2026-11-02, 1 changes to the base rotation; third-seed check: retribution-open-raid 818 -> 826 DPS (+0.9%), sim preset: Unsealed Wrath 816 -> 824 DPS (+1.1%), ret-raid-dps 652 -> 663 DPS (+1.6%), ret-full-buffs-raid 651 -> 661 DPS (+1.5%), opt-ret-dps-raid-dps 652 -> 663 DPS (+1.6%), retribution-ml-raid 651 -> 661 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 4 passes, the last 2026-11-03, 1 changes to the base rotation; third-seed check: retribution-open-raid 865 -> 874 DPS (+1.0%), sim preset: Unsealed Wrath 863 -> 873 DPS (+1.2%), ret-raid-dps 690 -> 702 DPS (+1.7%), ret-full-buffs-raid 689 -> 700 DPS (+1.6%), opt-ret-dps-raid-dps 690 -> 702 DPS (+1.7%), retribution-ml-raid 689 -> 700 DPS (+1.7%)):
   1. insert in the middle: cast Consecration (+1.2%, pass 1)
 
 Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
@@ -110,13 +110,13 @@ Damage by ability:
 | Ability | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) |
 |---|---|
 | Auto Attack | 25% |
-| Judgement of Command | 21% |
+| Judgement of Command | 20% |
 | Seal of Command | 19% |
 | Holy Strike | 18% |
-| Consecration | 11% |
+| Consecration | 12% |
 | Hammer of Wrath | 3% |
 | Demonic Rune | 3% |
-| spell 16614 | 1% |
+| spell 16614 | 0% |
 
 ## Notes
 

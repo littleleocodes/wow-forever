@@ -77,7 +77,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (12 builds) | [leveling-combat-swords](research/leveling/builds/leveling-combat-swords.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (10 builds) | [leveling-combat-swords](research/leveling/builds/leveling-combat-swords.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (13 builds) | [combat-swords-raid](research/raid/builds/combat-swords-raid.md), [combat-daggers-raid](research/raid/builds/combat-daggers-raid.md), [assassination-mutilate-raid](research/raid/builds/assassination-mutilate-raid.md), [assassination-seal-fate-raid](research/raid/builds/assassination-seal-fate-raid.md), [subtlety-hemo-raid](research/raid/builds/subtlety-hemo-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-seal-fate-daggers](research/pvp/builds/pvp-seal-fate-daggers.md), [pvp-hemo-prep](research/pvp/builds/pvp-hemo-prep.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

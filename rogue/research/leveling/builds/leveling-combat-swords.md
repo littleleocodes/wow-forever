@@ -53,6 +53,40 @@ Allocation and order adopted on 2026-09-26 from `cand-combat-r6`, the fastest bu
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Combat | Efficient Strikes | 2 | 0/5/0 |
+| 15-16 | Combat | Puncturing Wounds | 2 | 0/7/0 |
+| 17 | Combat | Deflection | 1 | 0/8/0 |
+| 18 | Combat | Puncturing Wounds | 1 | 0/9/0 |
+| 19-20 | Combat | Deflection | 2 | 0/11/0 |
+| 21 | Combat | Riposte | 1 | 0/12/0 |
+| 22-24 | Combat | Precision | 3 | 0/15/0 |
+| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
+| 26 | Combat | Aggression | 1 | 0/17/0 |
+| 27-31 | Assassination | Malice | 5 | 5/17/0 |
+| 32-34 | Assassination | Ruthlessness | 3 | 8/17/0 |
+| 35 | Assassination | Improved Gouge | 1 | 9/17/0 |
+| 36 | Combat | Endurance | 1 | 9/18/0 |
+| 37 | Assassination | Improved Gouge | 1 | 10/18/0 |
+| 38 | Assassination | Lethality | 1 | 11/18/0 |
+| 39-40 | Assassination | Vigor | 2 | 13/18/0 |
+| 41 | Assassination | Improved Gouge | 1 | 14/18/0 |
+| 42 | Assassination | Remorseless Attacks | 1 | 15/18/0 |
+| 43 | Assassination | Cold Blood | 1 | 16/18/0 |
+| 44 | Assassination | Remorseless Attacks | 1 | 17/18/0 |
+| 45-47 | Assassination | Improved Slice and Dice | 3 | 20/18/0 |
+| 48 | Assassination | Relentless Strikes | 1 | 21/18/0 |
+| 49-52 | Assassination | Improved Poisons | 4 | 25/18/0 |
+| 53-55 | Assassination | Seal Fate | 3 | 28/18/0 |
+| 56 | Assassination | Improved Poisons | 1 | 29/18/0 |
+| 57 | Assassination | Vile Poisons | 1 | 30/18/0 |
+| 58 | Assassination | Mutilate | 1 | 31/18/0 |
+| 59-60 | Combat | Improved Sprint | 2 | 31/20/0 |
+
 ## Core talents (priority order)
 
 1. **Seal Fate** — Fight lab (2026-09-26): removing it costs +4% time per kill at 60.
@@ -80,19 +114,20 @@ Allocation and order adopted on 2026-09-26 from `cand-combat-r6`, the fastest bu
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on; Poised makes the opener 10 energy cheaper), Slice and Dice at 1-2 points when it is down, Shank whenever its energy would not overflow (from 24), Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-23, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.3% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): never cast Cheap Shot; never cast Slice and Dice; eat below 40% health; never cast Kick; never cast Kidney Shot. Together +15.7% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-swords-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.5 | 6.7 | 6.8 | 6.9 | 17% |
-| Melee (off-hand) | 3.8 | 5.0 | 6.4 | 6.4 | 6.5 | 9% |
-| Sinister Strike | 2.8 | 3.5 | 4.2 | 4.5 | 4.8 | 21% |
-| Eviscerate | 0.3 | 0.4 | 0.9 | 1.1 | 1.5 | 27% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Riposte | 0.5 | 0.6 | 0.8 | 0.8 | 0.9 | 4% |
-| Cold Blood | 0.0 | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 4.5 | 4.8 | 5.8 | 5.8 | 6.0 | 14% |
+| Melee (off-hand) | 3.9 | 4.3 | 5.4 | 5.4 | 5.5 | 7% |
+| Sinister Strike | 3.3 | 3.7 | 4.5 | 4.9 | 4.8 | 22% |
+| Shank | 0.0 | 1.5 | 1.8 | 1.8 | 1.9 | 1% |
+| Eviscerate | 0.5 | 0.8 | 1.2 | 1.4 | 1.8 | 31% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 9% |
+| Riposte | 0.0 | 0.7 | 0.8 | 0.8 | 0.9 | 4% |
+| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
@@ -104,6 +139,7 @@ What this build casts per kill ([report](../fightlab/combat-swords-raid.md), all
 - 2026-09-30: renamed from "Leveling — Combat swords (fight-lab winner adopted 2026-09-26)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 - Fight lab (leveling/fightlab/combat-swords-raid.md, 2026-11-02, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 19/22/27/27/28 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-combat-swords-raid-leveling-st is -2% at 60 and -3% at 30 (negative = faster); race winner over the leveling: cand-combat-r9; top talents at 60: Seal Fate +5%, Improved Sinister Strike +4%, Malice +4%, Improved Eviscerate +3%; about zero: Improved Gouge, Lightning Reflexes. See the Fight lab section of leveling/README.md.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/20/0 -> 31/20/0; Murder 2 gone; Seal Fate 5 -> 3 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 4 -> 2 (rank cap); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Puncturing Wounds (tier gating for Dual Wield Specialization); +1 Aggression (tier gating for Dual Wield Specialization); +1 Ruthlessness (tier gating for Seal Fate); +1 Ruthlessness (tier gating for Seal Fate); +1 Ruthlessness (tier gating for Mutilate); +1 Lethality (tier gating for Mutilate); -1 Dual Wield Specialization (over 51); -1 Dual Wield Specialization (over 51); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-daggers-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 24.1 s per kill; own tree first 24.4 s; own tree last 24.3 s.
 
 ## Open questions (verify in the live game)
 

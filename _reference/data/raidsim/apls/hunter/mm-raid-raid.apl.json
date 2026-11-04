@@ -175,7 +175,7 @@
          },
          "rhs": {
           "const": {
-           "val": "1s"
+           "val": "0.75s"
           }
          }
         }
@@ -236,7 +236,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {

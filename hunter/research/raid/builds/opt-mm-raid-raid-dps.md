@@ -58,14 +58,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 388 | +0.0% | 691 | -8.3% | 37 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 377 | -2.6% | 753 | +0.0% | 47 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 374 | -3.5% | 686 | -8.9% | 31 s |
-| 4 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 357 | -7.9% | 685 | -9.0% | 25 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 437 | +0.0% | 691 | -8.3% | 37 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 437 | -0.0% | 753 | +0.0% | 47 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 428 | -2.0% | 686 | -8.9% | 31 s |
+| 4 | *MM* | community simulator | - | 417 | -4.6% | - | - | 50 s |
+| 5 | *BM Weave* | community simulator | - | 392 | -10.4% | - | - | 45 s |
+| 6 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 389 | -11.1% | 685 | -9.0% | 25 s |
+| 7 | *BM* | community simulator | - | 382 | -12.7% | - | - | 50 s |
+| 8 | *SV* | community simulator | - | 381 | -12.7% | - | - | 45 s |
+| 9 | *SV Weave* | community simulator | - | 379 | -13.3% | - | - | 45 s |
+| 10 | *MM Weave* | community simulator | - | 364 | -16.8% | - | - | 53 s |
+| 11 | *SV Melee* | community simulator | - | 322 | -26.4% | - | - | 49 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,12 +123,12 @@ Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 35% |
-| Pet: Auto Attack | 26% |
-| Arcane Shot | 16% |
-| Serpent Sting | 9% |
-| Aimed Shot | 7% |
-| Pet: Bite | 3% |
+| Auto Shot | 32% |
+| Pet: Auto Attack | 23% |
+| Arcane Shot | 20% |
+| Serpent Sting | 11% |
+| Aimed Shot | 8% |
+| Pet: Bite | 2% |
 | Pet: Claw | 2% |
 | Multi-Shot | 1% |
 | spell 1295633 | 1% |

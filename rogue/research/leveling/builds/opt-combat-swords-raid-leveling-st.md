@@ -50,6 +50,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 |---|---|---|---|
 | **Opportunity** | 2/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 8%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Combat | Lightning Reflexes | 2 | 0/5/0 |
+| 15 | Combat | Deflection | 1 | 0/6/0 |
+| 16-17 | Combat | Precision | 2 | 0/8/0 |
+| 18-19 | Combat | Deflection | 2 | 0/10/0 |
+| 20 | Combat | Riposte | 1 | 0/11/0 |
+| 21 | Combat | Precision | 1 | 0/12/0 |
+| 22 | Combat | Lightning Reflexes | 1 | 0/13/0 |
+| 23-24 | Combat | Efficient Strikes | 2 | 0/15/0 |
+| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
+| 26-27 | Subtlety | Opportunity | 2 | 0/16/2 |
+| 28-29 | Assassination | Remorseless Attacks | 2 | 2/16/2 |
+| 30-34 | Assassination | Malice | 5 | 7/16/2 |
+| 35-37 | Assassination | Improved Gouge | 3 | 10/16/2 |
+| 38-39 | Assassination | Vigor | 2 | 12/16/2 |
+| 40-41 | Assassination | Lethality | 2 | 14/16/2 |
+| 42 | Assassination | Improved Expose Armor | 1 | 15/16/2 |
+| 43 | Assassination | Cold Blood | 1 | 16/16/2 |
+| 44-47 | Assassination | Improved Poisons | 4 | 20/16/2 |
+| 48 | Assassination | Relentless Strikes | 1 | 21/16/2 |
+| 49 | Assassination | Improved Poisons | 1 | 22/16/2 |
+| 50-52 | Assassination | Vile Poisons | 3 | 25/16/2 |
+| 53-55 | Assassination | Seal Fate | 3 | 28/16/2 |
+| 56-57 | Assassination | Vile Poisons | 2 | 30/16/2 |
+| 58-60 | Assassination | Ruthlessness | 3 | 33/16/2 |
+
 ## Core talents (priority order)
 
 1. **Seal Fate** — Removing it costs 3.3 points of score in this model.
@@ -65,18 +95,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on; Poised makes the opener 10 energy cheaper), Slice and Dice at 1-2 points when it is down, Shank whenever its energy would not overflow (from 24), Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-26, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +16.0% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +14.2% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.4 | 6.5 | 6.8 | 6.8 | 16% |
-| Melee (off-hand) | 3.9 | 4.8 | 6.1 | 6.3 | 6.4 | 8% |
-| Sinister Strike | 2.9 | 3.5 | 4.2 | 4.6 | 4.7 | 21% |
-| Eviscerate | 0.4 | 0.6 | 1.0 | 1.1 | 1.5 | 27% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
-| Riposte | 0.0 | 0.6 | 0.8 | 0.9 | 0.9 | 4% |
+| Melee | 4.4 | 4.8 | 5.8 | 5.8 | 6.0 | 14% |
+| Melee (off-hand) | 3.8 | 4.3 | 5.3 | 5.4 | 5.5 | 6% |
+| Sinister Strike | 2.7 | 3.7 | 4.5 | 4.9 | 4.8 | 21% |
+| Shank | 0.0 | 1.5 | 1.8 | 1.8 | 1.9 | 1% |
+| Eviscerate | 0.4 | 0.8 | 1.1 | 1.2 | 1.7 | 30% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 10% |
+| Riposte | 0.5 | 0.7 | 0.8 | 0.8 | 0.9 | 4% |
 | Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
@@ -84,6 +115,7 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 33/16/2 -> 33/16/2; Murder 2 gone; Lethality 4 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Ruthlessness (tier gating for Cold Blood); +1 Ruthlessness (back into Assassination); +1 Ruthlessness (back into Assassination); +1 Improved Expose Armor (back into Assassination); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-swords-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 22.9 s per kill; stats model 22.9 s; own tree first 24.1 s.
 
 ## Open questions (verify in the live game)
 

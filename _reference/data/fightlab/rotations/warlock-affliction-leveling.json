@@ -21,7 +21,7 @@
   50,
   60
  ],
- "date": "2026-11-01",
+ "date": "2026-11-04",
  "signature": {
   "required": [
    "Bane of Agony",
@@ -30,7 +30,7 @@
   "build_spec": "Hybrid Affliction/Demonology",
   "dropped_saved_rules": [],
   "core_share_before": 0.6091350365729438,
-  "core_share_after": 0.6501204339030403,
+  "core_share_after": 0.6493901429242953,
   "min_share": 0.5,
   "floor_reached": null
  },
@@ -45,8 +45,8 @@
     "Shadow Bolt",
     0.35
    ],
-   "gain_seed1": 0.06533557556664216,
-   "gain_seed2": 0.06554499736092245
+   "gain_seed1": 0.06340976404981569,
+   "gain_seed2": 0.06538846842960977
   },
   {
    "round": 2,
@@ -56,8 +56,8 @@
     "Curse of the Elements",
     true
    ],
-   "gain_seed1": 0.0289403007480874,
-   "gain_seed2": 0.02111707414287134
+   "gain_seed1": 0.029668488348027378,
+   "gain_seed2": 0.021521370118482874
   },
   {
    "round": 3,
@@ -67,8 +67,8 @@
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.01993664883513724,
-   "gain_seed2": 0.022996680823005766
+   "gain_seed1": 0.021639383134226198,
+   "gain_seed2": 0.02204988648020345
   },
   {
    "round": 4,
@@ -78,40 +78,40 @@
     "Corruption",
     0.15
    ],
-   "gain_seed1": 0.006996291605706806,
-   "gain_seed2": 0.00863369544909387
+   "gain_seed1": 0.00982032746957695,
+   "gain_seed2": 0.009654771953190311
   }
  ],
- "weighted_before": 43.85795922458546,
- "weighted_after": 38.75207022734458,
+ "weighted_before": 43.98862668952272,
+ "weighted_after": 38.992033276284886,
  "per_level": {
   "20": {
-   "before": 35.72007429228815,
-   "after": 31.357842168304078,
+   "before": 35.92324945393529,
+   "after": 31.498227185646936,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 45.40518156028935,
-   "after": 38.2038742807488,
+   "before": 45.75522267378284,
+   "after": 38.852939859754535,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 47.72076349868286,
-   "after": 41.91093867211103,
+   "before": 47.94281358227342,
+   "after": 42.20242266660631,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 45.401029436823016,
-   "after": 40.38734389485167,
+   "before": 45.45476449694468,
+   "after": 40.67532823469735,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
    "before": 41.93588167456971,
-   "after": 38.02227053422243,
+   "after": 38.01650995587136,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

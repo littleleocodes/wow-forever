@@ -364,6 +364,16 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "itemId": 272438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see affliction-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 25307
      }
     }

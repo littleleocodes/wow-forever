@@ -96,8 +96,8 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-04",
+  "commit": "92c4c35b9",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
@@ -109,7 +109,7 @@
    },
    {
     "label": "sim preset: SM/Ruin",
-    "talents": "2540002013520105--0550305003"
+    "talents": "2550002013520105--0550205003"
    },
    {
     "label": "affliction-dot-raid",
@@ -187,36 +187,44 @@
     "gain_seed2": 0.003601518455975894,
     "candidates": 478,
     "pass": 8
+   },
+   {
+    "round": 9,
+    "change": "insert before the filler: cast Weakness Analyzer",
+    "gain_seed1": 0.0028194537604733227,
+    "gain_seed2": 0.002916725314479285,
+    "candidates": 458,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
     "opt-affliction-raid-raid-dps": {
-     "before": 811.1607881488452,
-     "after": 814.8011339566019,
-     "base": 811.1607881488452,
+     "before": 810.4248502369859,
+     "after": 814.9748147637531,
+     "base": 810.4248502369859,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.26903014992680074,
-     "oom_after": 0.26903014992680074
+     "oom_before": 0.2806482499242498,
+     "oom_after": 0.26003934990224636
     },
     "sim preset: SM/Ruin": {
-     "before": 804.4267898959102,
-     "after": 812.5472792664767,
-     "base": 804.4267898959102,
+     "before": 800.322079386147,
+     "after": 809.8970052212019,
+     "base": 800.322079386147,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.30952554990434245,
-     "oom_after": 0.26931274992475157
+     "oom_before": 0.3506876999161486,
+     "oom_after": 0.3292880498873454
     },
     "affliction-dot-raid": {
-     "before": 805.008496227479,
-     "after": 807.7461708373139,
-     "base": 805.008496227479,
+     "before": 803.7773036811302,
+     "after": 809.9571029577994,
+     "base": 803.7773036811302,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.4582069498956968,
-     "oom_after": 0.4582069498956968
+     "oom_before": 0.470376199891848,
+     "oom_after": 0.4310297498667995
     }
    }
   },
@@ -236,6 +244,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 9
  }
 }

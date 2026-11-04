@@ -145,8 +145,8 @@
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-11-02",
-  "commit": "54ceac638",
+  "date": "2026-11-04",
+  "commit": "7c3453f5a",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
@@ -154,36 +154,31 @@
   "builds": [
    {
     "label": "enhancement-open-raid",
-    "talents": "053303102-053030031005102251-03"
-   },
-   {
-    "label": "sim preset: Standard",
-    "talents": "053503102-053030031005112251"
+    "talents": "053303102-053030310051002251-03"
    },
    {
     "label": "enhancement-raid-dps",
-    "talents": "5230001-055030031005102051-05004",
+    "talents": "5230001-055030310051002051-05004",
     "protect_only": true
    },
    {
     "label": "opt-enhancement-dps-raid-dps",
-    "talents": "5005031-155030001015112051-051",
+    "talents": "5005031-155030010151012051-051",
     "protect_only": true
    },
    {
     "label": "enhancement-ml-raid",
-    "talents": "503503102-055030021005102251",
+    "talents": "503503102-055030210051002251",
     "protect_only": true
    },
    {
     "label": "elemental-enhancement-ml-raid",
-    "talents": "503303102-05303003100510224-05",
+    "talents": "503303102-05303031005100224-05",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "enhancement-open-raid",
-   "sim preset: Standard"
+   "enhancement-open-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -275,63 +270,70 @@
     "gain_seed2": 0.0015383590530473334,
     "candidates": 345,
     "pass": 10
+   },
+   {
+    "round": 12,
+    "change": "only above 10% mana: cast Fire Nova",
+    "gain_seed1": 0.0033971397847478713,
+    "gain_seed2": 0.0036912086144826883,
+    "candidates": 310,
+    "pass": 13
+   },
+   {
+    "round": 13,
+    "change": "move to the top: if not Flame Shock is on the target and time left in the fight \u2265 10s: cast Flame Shock",
+    "gain_seed1": 0.0017884028630390514,
+    "gain_seed2": 0.001655357563924209,
+    "candidates": 316,
+    "pass": 13
    }
   ],
   "final": {
    "raid": {
     "enhancement-open-raid": {
-     "before": 648.0741421522846,
-     "after": 719.7291677898802,
-     "base": 648.0741421522846,
+     "before": 893.332178328972,
+     "after": 968.2104509316807,
+     "base": 893.332178328972,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.923790328872206,
-     "oom_after": 8.923790328872206
-    },
-    "sim preset: Standard": {
-     "before": 634.1005713680975,
-     "after": 705.4300764501232,
-     "base": 634.1005713680975,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 12.595464452148917,
-     "oom_after": 12.595464452148917
+     "oom_before": 11.29093904833684,
+     "oom_after": 2.3156792970279887
     },
     "enhancement-raid-dps": {
-     "before": 603.4648661642842,
-     "after": 655.7930495556595,
-     "base": 603.4648661642842,
+     "before": 845.8956016659939,
+     "after": 903.7285707323456,
+     "base": 845.8956016659939,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.632612706108651,
-     "oom_after": 5.632612706108651
+     "oom_before": 8.084981378071063,
+     "oom_after": 2.9165616033489177
     },
     "opt-enhancement-dps-raid-dps": {
-     "before": 607.4896472889496,
-     "after": 658.195915173186,
-     "base": 607.4896472889496,
+     "before": 824.5215422772711,
+     "after": 889.9577526243411,
+     "base": 824.5215422772711,
      "before_value": null,
      "after_value": null,
-     "oom_before": 12.495229098209908,
-     "oom_after": 12.495229098209908
+     "oom_before": 9.140739927664722,
+     "oom_after": 3.396711354659626
     },
     "enhancement-ml-raid": {
-     "before": 629.3409345494889,
-     "after": 703.4540121557574,
-     "base": 629.3409345494889,
+     "before": 862.0635935228127,
+     "after": 938.3598775470012,
+     "base": 862.0635935228127,
      "before_value": null,
      "after_value": null,
-     "oom_before": 6.690406970412813,
-     "oom_after": 6.690406970412813
+     "oom_before": 8.55808855926093,
+     "oom_after": 1.0062839886356578
     },
     "elemental-enhancement-ml-raid": {
-     "before": 605.3239703113255,
-     "after": 681.0667636776119,
-     "base": 605.3239703113255,
+     "before": 820.8983322362473,
+     "after": 894.0602238824737,
+     "base": 820.8983322362473,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.829929495654458,
-     "oom_after": 8.829929495654458
+     "oom_before": 13.823306063961759,
+     "oom_after": 3.1587917590189676
     }
    }
   },
@@ -344,13 +346,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 13,
+    "structure": 39,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

@@ -52,6 +52,38 @@ The Subtlety leveling build derived on 2026-09-30 (derive_leveling.py): searched
 | **Heightened Senses** | 2/2 | changed | Increases your Stealth detection as if you were 3 levels higher and reduces your chance to be hit by spells and ranged attacks by 4%. |
 | **Preparation** | 1/1 | unchanged | When activated, this ability immediately finishes the cooldown on your other Rogue abilities. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Combat | Lightning Reflexes | 2 | 0/5/0 |
+| 15-16 | Assassination | Remorseless Attacks | 2 | 2/5/0 |
+| 17 | Combat | Deflection | 1 | 2/6/0 |
+| 18-19 | Combat | Precision | 2 | 2/8/0 |
+| 20-21 | Combat | Deflection | 2 | 2/10/0 |
+| 22 | Combat | Riposte | 1 | 2/11/0 |
+| 23 | Combat | Precision | 1 | 2/12/0 |
+| 24 | Combat | Lightning Reflexes | 1 | 2/13/0 |
+| 25-26 | Combat | Efficient Strikes | 2 | 2/15/0 |
+| 27 | Combat | Flawless Execution | 1 | 2/16/0 |
+| 28-30 | Assassination | Malice | 3 | 5/16/0 |
+| 31-32 | Subtlety | Opportunity | 2 | 5/16/2 |
+| 33-35 | Subtlety | Setup | 3 | 5/16/5 |
+| 36-37 | Subtlety | Dirty Deeds | 2 | 5/16/7 |
+| 38-40 | Subtlety | Master of Deception | 3 | 5/16/10 |
+| 41-43 | Subtlety | Serrated Blades | 3 | 5/16/13 |
+| 44 | Subtlety | Initiative | 1 | 5/16/14 |
+| 45 | Subtlety | Premeditation | 1 | 5/16/15 |
+| 46 | Subtlety | Ghostly Strike | 1 | 5/16/16 |
+| 47-48 | Subtlety | Initiative | 2 | 5/16/18 |
+| 49-50 | Subtlety | Elusiveness | 2 | 5/16/20 |
+| 51 | Subtlety | Preparation | 1 | 5/16/21 |
+| 52-53 | Subtlety | Heightened Senses | 2 | 5/16/23 |
+| 54 | Subtlety | Opportunity | 1 | 5/16/24 |
+| 55-57 | Subtlety | Camouflage | 3 | 5/16/27 |
+| 58-60 | Subtlety | Improved Ambush | 3 | 5/16/30 |
+
 ## Core talents (priority order)
 
 1. **Riposte** — The scorer's value in this build: +11.5% of its score (model combat-swords-raid).
@@ -70,6 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab talent search (fightlab/fl_talent_opt.py): start subtlety-leveling, moves: none (the start was already the best the search found). Race against subtlety-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.0% faster per kill.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 5/16/30 -> 5/16/30; Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Quietus 5 gone; +1 Improved Ambush (back into Subtlety); +1 Improved Ambush (back into Subtlety); +1 Improved Ambush (back into Subtlety); +1 Camouflage (back into Subtlety); +1 Opportunity (back into Subtlety); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
+- 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the subtlety-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 23.3 s per kill; own tree first 24.5 s; own tree last 23.3 s.
 
 ## Open questions (verify in the live game)
 

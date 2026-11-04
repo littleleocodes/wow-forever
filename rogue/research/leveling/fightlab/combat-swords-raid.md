@@ -41,15 +41,15 @@ Spec model (`_reference/data/scorer/specs`) assumes: white_mh 41%, white_oh 22%,
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
 | 20 | opt-combat-swords-raid-leveling-st | 18.6s | - | 10.4s | 0.0 | 0.2s |
-| 20 | leveling-combat-swords | 18.8s | +1.4% | 10.6s | 0.0 | 0.2s |
+| 20 | leveling-combat-swords | 19.2s | +3.4% | 10.8s | 0.0 | 0.4s |
 | 30 | opt-combat-swords-raid-leveling-st | 20.1s | - | 11.7s | 0.0 | 0.4s |
-| 30 | leveling-combat-swords | 20.3s | +0.8% | 11.7s | 0.0 | 0.6s |
+| 30 | leveling-combat-swords | 22.4s | +11.4% | 13.4s | 0.0 | 1.0s |
 | 40 | opt-combat-swords-raid-leveling-st | 23.5s | - | 14.3s | 0.0 | 1.2s |
-| 40 | leveling-combat-swords | 23.7s | +0.7% | 14.4s | 0.0 | 1.3s |
+| 40 | leveling-combat-swords | 25.2s | +7.0% | 15.5s | 0.0 | 1.7s |
 | 50 | opt-combat-swords-raid-leveling-st | 24.1s | - | 14.5s | 0.0 | 1.6s |
-| 50 | leveling-combat-swords | 24.3s | +0.6% | 14.6s | 0.0 | 1.7s |
+| 50 | leveling-combat-swords | 25.0s | +3.5% | 15.1s | 0.0 | 1.8s |
 | 60 | opt-combat-swords-raid-leveling-st | 24.7s | - | 14.9s | 0.0 | 1.7s |
-| 60 | leveling-combat-swords | 24.8s | +0.4% | 14.9s | 0.0 | 1.8s |
+| 60 | leveling-combat-swords | 23.6s | -4.2% | 14.0s | 0.0 | 1.7s |
 
 ## Gear tiers (main build)
 
