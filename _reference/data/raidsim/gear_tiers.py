@@ -14,6 +14,8 @@ ElliotWood/Forever fork's until 2026-10-18, `_reference/sim-port.md`):
 - **prebis** (pre-raid): the same without any raid drop, without the quest rewards of raid bosses and without crafted items made from
   Molten Core or Onyxia materials (`PHASE1_RAID_MADE`, our list: the database has the recipe, not its materials); items with no listed
   source only when a launch or pre-raid preset uses them.
+In both tiers a source is a drop, a recipe or a reputation (`gear_opt.dated_sources`, 2026-11-05): the database's quest, vendor and PvP
+entries say how an item is obtained, not when, and count as no source listed (`_reference/page-audit.md` J1-J2).
 Unlike gear_opt.py, which gives every group of entries sharing a set one compromise set, each spec gets its own set per tier
 (a Fire mage wants fire damage, a Frost mage frost damage): the simulator's stat weights for the spec's best build in its entry
 (bench `statweights`), the best item per slot by those weights (two variants: every slot, and one keeping set pieces and items with
@@ -76,8 +78,8 @@ def load_vetted_pre(repo):
 
 
 def crafted_ok(it, tier):
-    """A crafted-only item's tier rule (see the lists above); True for items with any other source."""
-    srcs = it.get("sources") or []
+    """A crafted-only item's tier rule (see the lists above); True for items with any other dated source."""
+    srcs = G.dated_sources(it)
     if not srcs or not all(s.get("crafted") for s in srcs):
         return True
     name = it.get("name", "")
@@ -97,7 +99,7 @@ def pool_of(tier, zones):
     def prebis(it):
         if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS:
             return False
-        srcs = it.get("sources") or []
+        srcs = G.dated_sources(it)
         drops = [s["drop"] for s in srcs if s.get("drop")]
         zs = {zones.get(d.get("zoneId")) for d in drops} - {None}
         if drops and len(drops) == len(srcs) and zs and zs <= RAID_ZONES:

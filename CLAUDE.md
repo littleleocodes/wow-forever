@@ -781,6 +781,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   proto, zlib, base64, stamped with proto/common.proto's version; re-check the live site's version after a simulator update). `gear_tables.py` renders them: the raid pages' "The gear" table and "Open in the simulator" line, the rankings page.
   The Classic bench (`setup.py --game classic`) no longer compiles: the potion and conjured-item lists (2026-09-28) and the stat-weight
   mode (2026-09-30) use Forever-only proto fields; the classicbench.exe in use dates from 2026-09-27.
+- **The item database moves under the gear tools** (2026-11-05, self-audit while committing the hunter raid lane; `_reference/page-audit.md`
+  J1-J4). Three upstream database updates changed gear results with no check. b90e2b9 (2026-10-30) dropped a third of the items: all 14
+  standard sets list one or two items the simulator no longer has (the cloak in 13), the bench empties the slot and reports
+  `missing_gear`, and `run.py` does not read it (**open**: re-make the standard sets with `gear_opt.py`, make `missing_gear` fatal, race
+  again). 54ceac6 (10-31) listed `pvp` sources and bac92db (11-02) `quest` and `soldBy` sources, and the pool rule let every item with
+  a source entry through: rank-14 weapons in 49 tier sets, Naxxramas and Ahn'Qiraj quest rewards in the 19 sets made from 11-03 on
+  (hunter, Arcane and Arcane-Frost mage, Shadow and Discipline-Holy priest, Retribution; +5% to +22% over the sets they replaced). Since
+  2026-11-05 only a drop, a recipe or a reputation is a source (`gear_opt.dated_sources`, `DATED_KINDS`); an item with none follows the
+  no-source rule (vetted by a preset, item level 70 at most). Every tier set made from 10-31 to 11-05 and the ML searches run in the 19
+  need a re-make (`gear_tiers.py --remake --fresh`, the ML final steps). After every re-pin compare the database's item count and source
+  kinds with the previous pin, and probe one bench row per standard set for `missing_gear`.
 - **Deep optimisation of one class** (2026-10-02/03, user request for the shaman: "Find the best talent tree entirely for each spec and
   the best rotation for each ... a full ML model analysis that 100% finds the best optimization"). No search over this many builds can
   prove a global optimum; these make a better build very unlikely. `raidsim/deep_opt.py <class>`: per damage spec (the class's ML records;

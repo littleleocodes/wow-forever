@@ -36,6 +36,13 @@ the presets that vet sourceless items and name the class's weapon types are the 
 `raidsim/presets/elliotwood-b7083fa/` (`preset_files`, `load_vetted`); a current item the database lacks is re-filled by its shape (the
 fork's record of it, `legacy_item`), an empty armor or jewelry slot is filled and an empty relic slot of a relic class gets a relic
 (`class_picker`, shared with gear_tiers.py); enchants the database lacks are dropped (`drop_missing_enchants`).
+**Dated sources** (2026-11-05, `dated_sources`, `_reference/page-audit.md` J1-J2): only a drop, a recipe or a reputation says when an
+item exists. The official database also lists how an item is obtained, PvP rewards since 2026-10-31 and quest rewards and vendors since
+2026-11-02, and the pool let every item with any source entry through: 4,142 items instead of 1,733, 163 of them above item level 70.
+Every tier set made from 2026-10-31 on took rank 12-14 PvP pieces (item level 71-78), those made from 2026-11-03 on Naxxramas's and
+Ahn'Qiraj's quest rewards (the hunter's "pre-BiS" set: eight Cryptstalker pieces and Cloak of the Fallen God). Quest, vendor and PvP
+entries are ignored now: an item with no dated source is an item with no source listed (rule 1: vetted by a preset, item level 70 at
+most), as it was before the database listed them. The pool on the current database then equals the one of 2026-10-30 plus 56 new drops.
 Enchants stay as the current set has them. Tanks keep their sets (their ranking is relative to their own hand draft); healers are
 not in the simulator. Writes `raidsim/gear_sets/forever/<group>.p1opt.gear.json` and a record `raidsim/gear-opt.json`; --apply points
 the group's specs.json entries at the new sets (with `gear_note`).
@@ -186,6 +193,15 @@ LATER_PREFIXES = ("Bloodvine", "Blood Tiger", "Primal Batskin", "Bloodsoul", "Da
 # phase-1 class quest rewards the database lists without a source, above the sourceless item-level cap: the hunter's Molten Core quest
 # (Ancient Petrified Leaf from Majordomo's cache, 2026-10-01); every raiding hunter gets one, so they belong in a phase-1 set
 PHASE1_QUEST = {"Rhok'delar, Longbow of the Ancient Keepers", "Lok'delar, Stave of the Ancient Keepers"}
+# Source entries that say when an item exists (2026-11-05, the module docstring's "Dated sources"): a drop has a zone and a creature, a
+# recipe a profession (LATER_PREFIXES, gear_tiers.crafted_ok), a reputation a faction. The database's other kinds (`quest`, `soldBy`,
+# `pvp`, and any kind it adds later) say how an item is obtained, not in which phase: an entry of another kind opens no pool.
+DATED_KINDS = ("drop", "crafted", "rep")
+
+
+def dated_sources(it):
+    """An item's source entries of a dated kind (DATED_KINDS); [] for an item only quests, vendors or honor ranks give."""
+    return [s for s in it.get("sources") or [] if any(k in s for k in DATED_KINDS)]
 
 
 def unique_keys(it):
@@ -208,7 +224,7 @@ def pair_ok(db, pair):
 
 
 def later_craft(it):
-    srcs = it.get("sources") or []
+    srcs = dated_sources(it)   # (a quest entry next to the recipe does not make a later raid's craft a phase-1 item)
     return bool(srcs) and all(s.get("crafted") for s in srcs) and it.get("name", "").startswith(LATER_PREFIXES)
 
 
@@ -243,16 +259,17 @@ def in_pool(it, zones):
     if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or it.get("id") in SUSPECT_ITEMS:
         return False
     so = it.get("scalingOptions", {}).get("0", {})
-    zs = {zones.get(s.get("drop", {}).get("zoneId")) for s in it.get("sources", []) if s.get("drop")}
+    srcs = dated_sources(it)
+    zs = {zones.get(s.get("drop", {}).get("zoneId")) for s in srcs if s.get("drop")}
     zs.discard(None)
     if zs & RAID_NO and not zs - RAID_NO:
         return False
-    npcs = {s.get("drop", {}).get("npcId") for s in it.get("sources", []) if s.get("drop")}
+    npcs = {s.get("drop", {}).get("npcId") for s in srcs if s.get("drop")}
     if npcs and npcs <= WORLD_BOSSES | EVENT_NPCS:   # Classic phase 2 and later (Azuregos, Kazzak, the Dragons of Nightmare; the Scourge Invasion)
         return False
     if it["id"] in VENDOR_ITEMS:
         return True
-    if not it.get("sources"):   # no source listed (custom, later-phase quest or PvP rewards): only items a phase-1 community preset uses
+    if not srcs:   # no dated source (custom items, quest, vendor and PvP rewards): only items a phase-1 community preset uses
         return it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
     return True
 

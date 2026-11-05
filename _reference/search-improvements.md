@@ -371,3 +371,14 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   pin, diff against the committed record and act on every new warning before any search. Left as they are: Frost Blast (1326055, gone
   from the live spell data: dead lines), racials (race-neutral runs), the archived fork preset `dps_no_reck`, paladin's Holy Shock 20930
   (stage 2).
+- **The gear pool followed the database's source entries** (2026-11-05, hunter audit at the end of its raid lane: the new Marksmanship
+  ML build scored 943 in its entry's own race against 1004 and 1008 for the builds it replaced, and its tier sets averaged item level
+  78-80 against 66-68). Three upstream database updates changed gear results with no check (`_reference/page-audit.md` J1-J4): b90e2b9
+  (2026-10-30) dropped a third of the items, and all 14 standard sets have run with one or two empty slots since (the bench reports
+  `missing_gear`, `run.py` never read it); 54ceac6 (10-31) listed `pvp` sources and bac92db (11-02) `quest` and vendor sources, and
+  `gear_opt.in_pool` admitted every item with a source entry: rank-14 weapons in 49 tier sets, Naxxramas and Ahn'Qiraj quest rewards in
+  19, each new set +5% to +22% over the set it replaced. Fixed: only drops, recipes and reputations count as sources
+  (`gear_opt.dated_sources`). Open: the standard sets, every tier set and the searches made in them (the user decides when). Check at
+  every audit and after every re-pin: the database's item count and source kinds against the previous pin (a new kind or a shrinking
+  database is a pool change), a tier set's average item level against the set it replaces (a jump above 3 levels, or a set worth more
+  than 5% over its predecessor, is a pool change until shown otherwise), and `missing_gear` in one bench row per standard set.
