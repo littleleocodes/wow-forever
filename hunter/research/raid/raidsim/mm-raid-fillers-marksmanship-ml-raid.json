@@ -3,26 +3,27 @@
  "spec": "mm-raid",
  "build": "marksmanship-ml-raid",
  "setting": "raid",
- "date": "2026-11-02",
+ "date": "2026-11-05",
  "tank": false,
  "removal": {
-  "Careful Aim": 0.05794975689415871,
-  "Deadly Aspects": 0.03416893845689717,
-  "Efficiency": 0.04897995212038908,
-  "Focused Fire": 0.01931776409453312,
-  "Improved Arcane Shot": 0.04138055819638531,
-  "Improved Stings": 0.020109691232019,
-  "Improved Tracking": 0.03906317773313461,
-  "Lethal Attacks": 0.04946575053542135,
-  "Mortal Shots": 0.044799522256865676,
-  "Ranged Weapon Specialization": 0.03889777897841262,
-  "Rapid Killing": -0.0,
-  "Rapid Recuperation": 0.024851538408897866,
-  "Sniper Shot": 0.05066743151565456,
-  "Trueshot Aura": 0.012764263633077144
+  "Barrage": 0.01616080492042693,
+  "Careful Aim": 0.057097810632392165,
+  "Deadly Aspects": 0.046268141570392274,
+  "Efficiency": 0.030331439935427085,
+  "Endurance Training": -0.0,
+  "Focused Fire": 0.01930318477879378,
+  "Improved Arcane Shot": -0.00450990451147204,
+  "Improved Stings": 0.017871769004337512,
+  "Improved Tracking": 0.03820175122536851,
+  "Lethal Attacks": 0.048907452109076766,
+  "Mortal Shots": 0.04343664651151102,
+  "Ranged Weapon Specialization": 0.03806560657361402,
+  "Sniper Shot": -0.022698511718975967,
+  "Trueshot Aura": 0.02515322054290603,
+  "Unleashed Fury": 0.005307543145212645
  },
  "free": [
-  "Rapid Killing"
+  "Endurance Training"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
@@ -38,8 +39,16 @@
     5
    ],
    [
+    "Endurance Training",
+    3
+   ],
+   [
     "Focused Fire",
     2
+   ],
+   [
+    "Unleashed Fury",
+    1
    ]
   ],
   "Marksmanship": [
@@ -53,15 +62,11 @@
    ],
    [
     "Efficiency",
-    5
+    2
    ],
    [
     "Careful Aim",
     5
-   ],
-   [
-    "Rapid Killing",
-    2
    ],
    [
     "Improved Arcane Shot",
@@ -76,8 +81,8 @@
     5
    ],
    [
-    "Rapid Recuperation",
-    2
+    "Barrage",
+    3
    ],
    [
     "Ranged Weapon Specialization",
@@ -102,8 +107,16 @@
     5
    ],
    [
+    "Endurance Training",
+    3
+   ],
+   [
     "Focused Fire",
     2
+   ],
+   [
+    "Unleashed Fury",
+    1
    ]
   ],
   "Marksmanship": [
@@ -117,15 +130,11 @@
    ],
    [
     "Efficiency",
-    5
+    2
    ],
    [
     "Careful Aim",
     5
-   ],
-   [
-    "Rapid Killing",
-    2
    ],
    [
     "Improved Arcane Shot",
@@ -140,8 +149,8 @@
     5
    ],
    [
-    "Rapid Recuperation",
-    2
+    "Barrage",
+    3
    ],
    [
     "Ranged Weapon Specialization",

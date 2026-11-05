@@ -1,35 +1,117 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "rows": [
   {
-   "class": "paladin",
-   "entry": "ret-dps",
-   "build": "retribution-open-raid",
-   "spec": "Retribution",
-   "talent": "Repentance",
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "bm-mm-raid",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Unsealed Wrath"
-   ],
-   "advice": "taken because Unsealed Wrath requires it"
+   "removal_loss": 0.0279,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
   },
   {
-   "class": "paladin",
-   "entry": "shockadin-raid",
-   "build": "shockadin-open-raid",
-   "spec": "Hybrid Holy/Retribution",
-   "talent": "Seal of Command",
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "bm-mm-full-buffs-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
+   "removal_loss": 0.0277,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "opt-mm-raid-raid-dps",
+   "spec": "Beast Mastery",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0255,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "marksmanship-ml-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.029,
+   "kind": "automatic",
    "needed_by": [
-    "Vengeance"
+    "Sniper Shot"
    ],
-   "advice": "taken because Vengeance requires it"
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "mm-lone-wolf-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0345,
+   "kind": "automatic",
+   "needed_by": [
+    "Sniper Shot"
+   ],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "opt-mm-lonewolf-raid-raid-dps",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0341,
+   "kind": "automatic",
+   "needed_by": [
+    "Sniper Shot"
+   ],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "marksmanship-ml-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0349,
+   "kind": "automatic",
+   "needed_by": [
+    "Sniper Shot"
+   ],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "bm-raid",
+   "build": "mm-hawk-raid",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0278,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
   }
  ]
 }
