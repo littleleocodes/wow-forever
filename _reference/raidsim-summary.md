@@ -51,7 +51,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | hunter | Forever | `bm-raid` | `beast-mastery-ml-raid` (31/20/0) | 486 | 538 | 995 | 995 | 1030 | - | BM 986 |
 | hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 359 | 414 | 734 | 734 | 776 | `survival-ml-parse` 694 | SV Melee 610 |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 454 | 479 | 984 | 984 | 1019 | `opt-mm-lonewolf-raid-parse` 940 | MM 991 |
-| hunter | Forever | `mm-raid` | `marksmanship-ml-raid` (7/39/5) | 501 | 543 | 1001 | 1001 | 1029 | `opt-mm-raid-parse` 963 | BM 982 |
+| hunter | Forever | `mm-raid` | `marksmanship-with-a-pet-open-raid` (7/39/5) | 492 | 534 | 1008 | 1008 | 1056 | `opt-mm-raid-parse` 963 | BM 982 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 | mage | Forever | `arcane-dps` | `arcane-open-raid` (31/17/3) | 552 | 610 | 756 | 756 | 828 | - | Arcane Fire 742 |
 | mage | Forever | `fire-raid` | `fire-open-raid` (17/31/3) | 553 | 611 | 828 | 828 | 861 | `opt-fire-raid-parse` 807 | Fire 827 |

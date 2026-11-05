@@ -43,7 +43,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 |---|---|---|---|---|---|---|---|---|
 | [Affliction](../../leveling/affliction.md) ✅ | [`affliction-open-leveling`](builds/affliction-open-leveling.md) | affliction-leveling | 30.6 | 38.9 | 38.8 | 36.4 | 34.8 | 36.2 |
 | [Demonology](../../leveling/demonology.md) | [`demonology-leveling`](builds/demonology-leveling.md) | affliction-leveling | - | - | - | - | - | - |
-| [Destruction](../../leveling/destruction.md) | [`destruction-leveling`](builds/destruction-leveling.md) | affliction-leveling | - | - | - | - | - | - |
+| [Destruction](../../leveling/destruction.md) | [`destruction-open-leveling`](builds/destruction-open-leveling.md) | - | - | - | - | - | - | - |
 | [Affliction-Demonology](../../leveling/affliction-demonology.md) | [`leveling-affliction`](builds/leveling-affliction.md) | - | - | - | - | - | - | - |
 | [Demonology/Destruction hybrid](../../leveling/hybrid-demonology-destruction.md) | [`hybrid-demonology-destruction-open-leveling`](builds/hybrid-demonology-destruction-open-leveling.md) | - | - | - | - | - | - | - |
 

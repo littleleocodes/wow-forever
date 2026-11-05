@@ -54,7 +54,7 @@ Classic Era reference builds: [bm-solo-farm](../talents/classic-baseline/bm-solo
 | [Beast-Survival](../../leveling/beast-survival.md) ✅ | `beast-survival-open-leveling` | melee-dps | 21.2 |
 | [Marksmanship](../../leveling/marksmanship.md) | `marksmanship-open-leveling` | mm-raid | 22.7 |
 | [Beast-Marks](../../leveling/beast-marks.md) | `beast-marks-open-leveling` | bm-leveling | 22.9 |
-| [Beast Mastery](../../leveling/beast-mastery.md) | `beast-mastery-leveling` | bm-leveling | 23.4 |
+| [Beast Mastery](../../leveling/beast-mastery.md) | `bm-solo-farm` | bm-leveling | 23.9 |
 | [Survival](../../leveling/survival.md) | `opt-bm-leveling-leveling-aoe` | melee-dps | 24.6 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).

@@ -228,6 +228,9 @@
 **Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
 - [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
 
+**Marksmanship — With a pet (open talent search)** (`hunter/research/raid/builds/marksmanship-with-a-pet-open-raid.md`)
+- [ ] An open-search Marksmanship build: check it against the community's Marksmanship builds at launch.
+
 ### Mage
 
 **Frost — Arcane Power / Frostbolt (raid DPS)** (`mage/research/raid/builds/frost-arcane-power-raid.md`)
@@ -293,21 +296,6 @@
 **Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
-- [ ] An open-search Arcane leveling build: check it while leveling at launch.
-
-**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
-- [ ] An open-search Fire leveling build: check it while leveling at launch.
-
-**Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
-- [ ] An open-search Frost leveling build: check it while leveling at launch.
-
-**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
-- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
-
-**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
-- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
-
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -334,6 +322,18 @@
 
 **Arcane — Raid (open talent search)** (`mage/research/raid/builds/arcane-open-raid.md`)
 - [ ] An open-search Arcane build: check it against the community's Arcane builds at launch.
+
+**Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
+- [ ] An open-search Arcane leveling build: check it while leveling at launch.
+
+**Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
+- [ ] An open-search Frost leveling build: check it while leveling at launch.
+
+**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
+- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
+
+**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
+- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
 
 ### Paladin
 

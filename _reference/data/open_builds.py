@@ -20,7 +20,9 @@ the rotation) and the spec's other leveling builds at their numbers on the pages
 seconds per kill; `<spec slug>-open-leveling` (`derived: leveling`, the record's order) under the same bars; one per spec (the fastest
 across rotations). The pages take its numbers from the record (render_modes.leveling_numbers reads the rotation's `builds.written`).
 Every `-open-raid` / `-open-leveling` build of a class is rewritten from its records on each run (a winner that no longer qualifies
-goes); a class whose record has an entry or rotation still running is skipped unless --partial. Records: the `builds` key of each
+goes); a class whose record has an entry or rotation still running is skipped unless --partial (which also removes the open builds of
+the rotations still running: every `*-open-leveling` / `*-open-raid` build of the class is dropped and only the written ones re-added;
+put them back from git when you use it, as on 2026-11-04 for the mage Frostfire build). Records: the `builds` key of each
 entry / rotation ({written, why, spec, date}). A new hybrid family needs a player name in spec_modes.HYBRID_NAMES (the pages name
 hybrids by it; the slug is the build id's prefix).
 """

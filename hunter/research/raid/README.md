@@ -26,6 +26,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Beast Mastery — Raid (machine-learning search)](builds/beast-mastery-ml-raid.md) 🔬 | 31/20/0 | DPS |
 | [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) 🔬 | 28/21/2 | DPS |
 | [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) 🔬 | 7/39/5 | DPS |
+| [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) 🔬 | 7/39/5 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -47,17 +48,18 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -6.3% | 38 s |
-| 2 | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1001 | +0.0% | 46 s |
-| 3 | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -8.5% | 32 s |
-| 4 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -4.4% | 46 s |
-| 5 | *BM* | community simulator | - | 477 | -10.1% | 982 | -1.9% | 52 s |
-| 6 | *MM* | community simulator | - | 471 | -11.1% | 967 | -3.4% | 50 s |
-| 7 | [`bm-mm-raid`](builds/bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -9.4% | 26 s |
-| 8 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.3% | 47 s |
-| 9 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -17.4% | 47 s |
-| 10 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -16.6% | 53 s |
-| 11 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -18.6% | 51 s |
+| 1 | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -7.0% | 38 s |
+| 2 | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1004 | -0.4% | 46 s |
+| 3 | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -9.2% | 32 s |
+| 4 | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 492 | -7.2% | 1008 | +0.0% | 54 s |
+| 5 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -5.1% | 46 s |
+| 6 | *BM* | community simulator | - | 477 | -10.1% | 982 | -2.6% | 52 s |
+| 7 | *MM* | community simulator | - | 471 | -11.1% | 969 | -3.9% | 50 s |
+| 8 | [`bm-mm-raid`](builds/bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -10.1% | 26 s |
+| 9 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.9% | 47 s |
+| 10 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -18.0% | 47 s |
+| 11 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -17.2% | 53 s |
+| 12 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -19.2% | 51 s |
 
 **mm-lonewolf-raid**
 
@@ -126,10 +128,10 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 476 | 922 | -10.1% on the dummy; -7.9% in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 359 | 734 | -32.3% on the dummy; -26.6% in a raid | from `melee-survival-raid`, 0 moves | - |
+| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 476 | 922 | -10.1% on the dummy; -8.5% in a raid | from `bm-mm-raid`, 4 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 359 | 734 | -32.3% on the dummy; -27.2% in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) (mm-raid), 530 DPS; in a raid: [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) (mm-raid), 1001 DPS.
+The class's best raid DPS build on the training dummy: [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) (mm-raid), 530 DPS; in a raid: [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) (mm-raid), 1008 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -159,6 +161,7 @@ The class's best raid DPS build on the training dummy: [`opt-mm-raid-raid-dps`](
 | `mm-raid` | dummy | `opt-mm-raid-raid-dps` | 31/16/4 | 530 | +0.0% | 38 | +56% |
 | `mm-raid` | dummy | `marksmanship-ml-raid` | 7/39/5 | 501 | -5.4% | 46 | +45% |
 | `mm-raid` | dummy | `bm-mm-full-buffs-raid` | 21/30/0 | 499 | -5.9% | 32 | +48% |
+| `mm-raid` | dummy | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 492 | -7.2% | 54 | +43% |
 | `mm-raid` | dummy | sim preset: BM Weave | - | 489 | -7.8% | 46 | - |
 | `mm-raid` | dummy | sim preset: BM | - | 477 | -10.1% | 52 | - |
 | `mm-raid` | dummy | sim preset: MM | - | 471 | -11.1% | 50 | - |
@@ -203,11 +206,12 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `mm-lonewolf-raid` | sim preset: SV Melee | - | 261 | 275 | 595 | 613 | 644 |
 | `mm-raid` | `opt-mm-raid-raid-dps` | 31/16/4 | 530 | 580 | 937 | 937 | 971 |
 | `mm-raid` | `opt-mm-raid-parse` | 31/15/5 | 515 | 563 | 941 | 963 | 996 |
-| `mm-raid` | `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1001 | 1001 | 1029 |
+| `mm-raid` | `marksmanship-ml-raid` | 7/39/5 | 501 | 543 | 1004 | 1004 | 1043 |
 | `mm-raid` | `bm-mm-full-buffs-raid` | 21/30/0 | 499 | 542 | 916 | 916 | 936 |
+| `mm-raid` | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 492 | 534 | 1008 | 1008 | 1056 |
 | `mm-raid` | sim preset: BM Weave | - | 489 | 540 | 956 | 956 | 989 |
 | `mm-raid` | sim preset: BM | - | 477 | 527 | 982 | 982 | 1025 |
-| `mm-raid` | sim preset: MM | - | 471 | 508 | 967 | 967 | 994 |
+| `mm-raid` | sim preset: MM | - | 471 | 508 | 969 | 969 | 1008 |
 | `mm-raid` | `bm-mm-raid` | 22/29/0 | 461 | 506 | 906 | 906 | 928 |
 | `mm-raid` | sim preset: SV | - | 434 | 468 | 838 | 838 | 861 |
 | `mm-raid` | sim preset: SV Weave | - | 429 | 464 | 827 | 827 | 856 |

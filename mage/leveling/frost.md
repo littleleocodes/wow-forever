@@ -2,11 +2,13 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Frost
 
-**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2121252000003-3-13253223012030021-7)
+**✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
+
+**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 90% of the damage at level 60 in the fight lab comes from Frostbolt, Ice Lance, Frost Blast, Cone of Cold, Blizzard (the spec's rule: at least 60%; **Frostbolt** cast in every fight).
+**Signature spells:** 89% of the damage at level 60 in the fight lab comes from Frostbolt, Ice Lance, Frost Blast, Cone of Cold, Blizzard (the spec's rule: at least 60%; **Frostbolt** cast in every fight).
 
 ## How to play
 
@@ -26,7 +28,7 @@
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. In the fight lab at level 60 (2026-11-04 run), **Frostbolt** is 54% of this build's damage and **Ice Lance** 36%; a kill takes about 28 seconds at 60 and 29 to 37 across levels 20-60.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31), the Arcane mana talents from 40, **Incineration** last. In the fight lab at level 60 (2026-11-04 run), **Frostbolt** is 53% of this build's damage and **Ice Lance** 36%; a kill takes about 27 seconds at 60 and 28 to 35 across levels 20-60, about 30 level-weighted with the talents taken in that order.
 
 **Why it works**
 
@@ -40,7 +42,8 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 **Caveats**
 
 - This build takes neither **Cold Snap** nor **Ice Barrier**: skip the list's lines for them. The hand-made build under Other builds has both.
-- **Cone of Cold** stays out of single pulls: the tuned rules never cast it (kills measured faster without), so the one **Winter's Chill** point some versions of this build carry does nothing on a single mob.
+- This is the 2026-11-04 search's winner (18/3/30), written the same day: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of the earlier version's **Missile Barrage** and **Magic Absorption**; the list is the same.
+- **Cone of Cold** stays out of single pulls: the tuned rules never cast it (kills measured faster without).
 - Drink below a third of your mana; **Evocation** is for between fights, whenever it is ready and you are under 40% mana; eat below two thirds of your health.
 - **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it.
 - Pulls of several mobs are a different game: the AoE build under Other builds gathers about four, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**.
@@ -50,15 +53,48 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 - If **Frost Nova** is on cooldown when the mob arrives, **Fire Blast** it and keep casting **Frostbolt**; a build with **Cold Snap** resets **Frost Nova** instead when it has more than 8 seconds left and the mob still has 40% of its health.
 - Low on mana in a fight: let an **Ice Lance** into the freeze or the wand finish a nearly dead mob rather than start a **Frostbolt**.
 
+## Talents while leveling
+
+One point per level from 10, in this order:
+
+| Levels | Talent | Points |
+|---|---|---|
+| 10-11 | Precision (Frost) | 2 |
+| 12-14 | Improved Frostbolt (Frost) | 3 |
+| 15-17 | Frostbite (Frost) | 3 |
+| 18-19 | Improved Frostbolt (Frost) | 2 |
+| 20 | Ice Lance (Frost) | 1 |
+| 21-23 | Frost Channeling (Frost) | 3 |
+| 24 | Ice Shards (Frost) | 1 |
+| 25 | Shatter (Frost) | 1 |
+| 26-27 | Ice Shards (Frost) | 2 |
+| 28-29 | Shatter (Frost) | 2 |
+| 30-31 | Fingers of Frost (Frost) | 2 |
+| 32-33 | Ice Shards (Frost) | 2 |
+| 34-35 | Arctic Reach (Frost) | 2 |
+| 36-37 | Improved Frost Nova (Frost) | 2 |
+| 38 | Frost Warding (Frost) | 1 |
+| 39 | Permafrost (Frost) | 1 |
+| 40-41 | Wand Specialization (Arcane) | 2 |
+| 42-43 | Arcane Resilience (Arcane) | 2 |
+| 44 | Improved Channeling (Arcane) | 1 |
+| 45-49 | Arcane Concentration (Arcane) | 5 |
+| 50 | Arcane Subtlety (Arcane) | 1 |
+| 51-52 | Improved Channeling (Arcane) | 2 |
+| 53 | Arcane Resilience (Arcane) | 1 |
+| 54 | Arcane Impact (Arcane) | 1 |
+| 55-57 | Arcane Meditation (Arcane) | 3 |
+| 58-60 | Incineration (Fire) | 3 |
+
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 29 |
+| 20 | 28 |
 | 30 | 34 |
-| 40 | 37 |
+| 40 | 35 |
 | 50 | 30 |
-| 60 | 28 |
+| 60 | 27 |
 
 ## Other builds of this spec
 

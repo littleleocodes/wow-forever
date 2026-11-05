@@ -8,34 +8,34 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 
 | Tier | Spec | Build | Full raid DPS | Behind the best |
 |---|---|---|---|---|
-| **S** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 1004 | best |
-| **S** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 995 | 0.9% |
-| **S** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 28/21/2 | 986 | 1.8% |
-| **A** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/31/3 | 969 | 3.5% |
-| **B** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 893 | 11.1% |
-| **B** | [Warrior: Fury](warrior/raid/fury.md) | 18/33/0 | 887 | 11.6% |
-| **B** | [Paladin: Retribution](paladin/raid/retribution.md) | 16/4/31 | 876 | 12.7% |
-| **B** | [Paladin: Shockadin](paladin/raid/shockadin.md) | 23/0/28 | 839 | 16.4% |
-| **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 838 | 16.5% |
-| **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 828 | 17.5% |
-| **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 813 | 19.0% |
-| **B** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 812 | 19.1% |
-| **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 795 | 20.8% |
-| **C** | [Priest: Shadow](priest/raid/shadow.md) | 16/0/35 | 788 | 21.5% |
-| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 21/11/19 | 770 | 23.3% |
-| **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 759 | 24.4% |
-| **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/32/10 | 758 | 24.5% |
-| **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 756 | 24.7% |
-| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 31/11/9 | 746 | 25.7% |
-| **C** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 734 | 26.9% |
-| **C** | [Paladin: Prot-Ret](paladin/raid/prot-ret.md) | 8/15/28 | 697 | 30.5% |
-| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 28/10/13 | 671 | 33.2% |
-| **C** | [Rogue: Combat](rogue/raid/combat.md) | 21/30/0 | 666 | 33.6% |
-| **C** | [Druid: Balance](druid/raid/balance.md) | 33/0/18 | 647 | 35.6% |
-| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 21/0/30 | 607 | 39.5% |
-| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 29/22/0 | 603 | 40.0% |
-| **C** | [Priest: Smite](priest/raid/smite.md) | 17/17/17 | 602 | 40.1% |
-| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 520 | 48.2% |
+| **S** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 1008 | best |
+| **S** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 995 | 1.3% |
+| **S** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 28/21/2 | 986 | 2.2% |
+| **A** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/31/3 | 969 | 3.9% |
+| **B** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 893 | 11.4% |
+| **B** | [Warrior: Fury](warrior/raid/fury.md) | 18/33/0 | 887 | 12.0% |
+| **B** | [Paladin: Retribution](paladin/raid/retribution.md) | 16/4/31 | 876 | 13.1% |
+| **B** | [Paladin: Shockadin](paladin/raid/shockadin.md) | 23/0/28 | 839 | 16.7% |
+| **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 838 | 16.9% |
+| **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 828 | 17.8% |
+| **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 813 | 19.3% |
+| **B** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 812 | 19.4% |
+| **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 795 | 21.1% |
+| **C** | [Priest: Shadow](priest/raid/shadow.md) | 16/0/35 | 788 | 21.9% |
+| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 21/11/19 | 770 | 23.7% |
+| **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 759 | 24.7% |
+| **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/32/10 | 758 | 24.8% |
+| **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 756 | 25.0% |
+| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 31/11/9 | 746 | 26.0% |
+| **C** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 734 | 27.2% |
+| **C** | [Paladin: Prot-Ret](paladin/raid/prot-ret.md) | 8/15/28 | 697 | 30.8% |
+| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 28/10/13 | 671 | 33.5% |
+| **C** | [Rogue: Combat](rogue/raid/combat.md) | 21/30/0 | 666 | 33.9% |
+| **C** | [Druid: Balance](druid/raid/balance.md) | 33/0/18 | 647 | 35.9% |
+| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 21/0/30 | 607 | 39.8% |
+| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 29/22/0 | 603 | 40.2% |
+| **C** | [Priest: Smite](priest/raid/smite.md) | 17/17/17 | 602 | 40.3% |
+| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 520 | 48.4% |
 
 ## Healing
 

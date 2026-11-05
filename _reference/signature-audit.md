@@ -29,21 +29,20 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Beast-Survival | page | beast-survival-open-leveling (22/5/24) | melee-dps | - | - | 59% (min 50%) | 21.2 | OK |
 | Beast-Survival | slot | opt-melee-dps-leveling-st (15/10/26) | melee-dps | - | - | 62% (min 50%) | 22.5 | OK |
 | Beast-Survival | slot | leveling-melee (12/10/29) | melee-dps | - | - | 63% (min 50%) | 22.6 | OK |
-| Beast-Survival | slot | opt-melee-dps-solo-60 (15/10/26) | bm-leveling | - | - | 30% (min 50%) | 24.1 | FAIL: core share 30% < 50% |
+| Beast-Survival | slot | opt-melee-dps-solo-60 (15/10/26) | melee-dps | - | - | 62% (min 50%) | 21.2 | OK |
 
 ## Mage
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arcane | page | arcane-open-leveling (31/17/3) | arcane-leveling | - | Arcane Blast 1.79 | 91% (min 50%) | 29.7 | OK |
+| Arcane | page | arcane-open-leveling (30/0/21) | arcane-leveling | - | Arcane Blast 1.72 | 85% (min 50%) | 32.1 | OK |
 | Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 74% (min 50%) | 36.0 | FAIL: lacks Arcane Blast |
-| Fire | page | fire-open-leveling (0/31/20) | fire-leveling | - | Fireball 0.94, Pyroblast 0.71 | 72% (min 60%) | 31.7 | OK |
-| Fire | slot | fire-leveling (0/32/19) | fire-leveling | - | Fireball 1.19, Pyroblast 0.65 | 69% (min 60%) | 32.8 | OK |
+| Fire | page | fire-leveling (0/32/19) | fire-leveling | - | Fireball 1.19, Pyroblast 0.65 | 69% (min 60%) | 32.8 | OK |
 | Fire | slot | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.61, Pyroblast 0.57 | 73% (min 60%) | 35.7 | OK |
-| Frost | page | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 3.28 | 90% (min 60%) | 27.6 | OK |
+| Frost | page | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 3.27 | 89% (min 60%) | 30.5 | OK |
 | Frost | slot | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 3.16 | 90% (min 60%) | 28.8 | OK |
 | Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.41 | 88% (min 60%) | 31.5 | OK |
-| Arcane-Frost | page | arcane-frost-open-leveling (18/2/31) | barrage-frost-leveling | - | Frostbolt 2.61, Arcane Missiles 0.53 | 88% (min 60%) | 25.1 | OK |
+| Arcane-Frost | page | arcane-frost-open-leveling (23/0/28) | barrage-frost-leveling | - | Frostbolt 2.45, Arcane Missiles 0.44 | 85% (min 60%) | 29.6 | OK |
 | Arcane-Frost | slot | opt-frost-leveling-leveling-st (22/3/26) | barrage-frost-leveling | - | Frostbolt 2.49, Arcane Missiles 0.41 | 85% (min 60%) | 25.6 | OK |
 | Frostfire | page | frostfire-open-leveling (1/25/25) | frostfire-leveling | - | Frostfire Bolt 3.05 | 37% (min 30%) | 33.9 | OK |
 
@@ -100,7 +99,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Restoration | page | restoration-leveling (0/10/41) | enhancement-dps | - | - | - (min -) | 37.9 | no rule |
 | Elemental-Enhancement | page | elemental-enhancement-open-leveling (26/22/3) | elemental-dps | - | Lightning Bolt 3.41 | 75% (min 50%) | 29.5 | OK |
 | Elemental-Enhancement | slot | opt-elemental-dps-leveling-st (26/17/8) | elemental-dps | - | Lightning Bolt 3.96 | 79% (min 50%) | 30.0 | OK |
-| Elemental-Enhancement | slot | opt-enhancement-dps-leveling-aoe (29/22/0) | enhancement-dps | Lightning Bolt only below 35% mob health | Lightning Bolt 0.00 | 31% (min 50%) | 32.6 | FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 31% < 50% |
+| Elemental-Enhancement | slot | opt-enhancement-dps-leveling-aoe (29/22/0) | elemental-dps | - | Lightning Bolt 3.12 | 72% (min 50%) | 32.8 | OK |
 
 ## Warlock
 

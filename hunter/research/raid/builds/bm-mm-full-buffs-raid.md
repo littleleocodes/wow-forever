@@ -68,21 +68,22 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rank among our builds and the community simulator's
 
-**3 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 12** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -6.3% | 38 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1001 | +0.0% | 46 s |
-| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -8.5% | 32 s |
-| 4 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -4.4% | 46 s |
-| 5 | *BM* | community simulator | - | 477 | -10.1% | 982 | -1.9% | 52 s |
-| 6 | *MM* | community simulator | - | 471 | -11.1% | 967 | -3.4% | 50 s |
-| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -9.4% | 26 s |
-| 8 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.3% | 47 s |
-| 9 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -17.4% | 47 s |
-| 10 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -16.6% | 53 s |
-| 11 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -18.6% | 51 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -7.0% | 38 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1004 | -0.4% | 46 s |
+| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -9.2% | 32 s |
+| 4 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 492 | -7.2% | 1008 | +0.0% | 54 s |
+| 5 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -5.1% | 46 s |
+| 6 | *BM* | community simulator | - | 477 | -10.1% | 982 | -2.6% | 52 s |
+| 7 | *MM* | community simulator | - | 471 | -11.1% | 969 | -3.9% | 50 s |
+| 8 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -10.1% | 26 s |
+| 9 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.9% | 47 s |
+| 10 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -18.0% | 47 s |
+| 11 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -17.2% | 53 s |
+| 12 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -19.2% | 51 s |
 
 ## Rotation (community simulator, training dummy)
 

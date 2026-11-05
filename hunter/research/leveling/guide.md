@@ -36,7 +36,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Beast-Survival](../../leveling/beast-survival.md) ✅ | [`beast-survival-open-leveling`](builds/beast-survival-open-leveling.md) | melee-dps | 15.9 | 18.6 | 21.2 | 22.5 | 23.3 | 21.2 |
 | [Marksmanship](../../leveling/marksmanship.md) | [`marksmanship-open-leveling`](builds/marksmanship-open-leveling.md) | mm-raid | 16.4 | 19.0 | 23.0 | 24.4 | 25.2 | 22.7 |
 | [Beast-Marks](../../leveling/beast-marks.md) | [`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md) | bm-leveling | 16.4 | 19.5 | 23.0 | 24.2 | 25.5 | 22.9 |
-| [Beast Mastery](../../leveling/beast-mastery.md) | [`beast-mastery-leveling`](builds/beast-mastery-leveling.md) | bm-leveling | 15.7 | 20.0 | 23.4 | 25.3 | 26.0 | 23.4 |
+| [Beast Mastery](../../leveling/beast-mastery.md) | [`bm-solo-farm`](builds/bm-solo-farm.md) | bm-leveling | 15.7 | 20.0 | 23.4 | 25.9 | 27.4 | 23.9 |
 | [Survival](../../leveling/survival.md) | [`opt-bm-leveling-leveling-aoe`](builds/opt-bm-leveling-leveling-aoe.md) | melee-dps | 15.9 | 20.2 | 25.0 | 26.5 | 27.9 | 24.6 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **46.6 h** (48.2% faster than talentless), no respec ([respec plan](respec-plan.md)).

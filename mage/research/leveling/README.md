@@ -18,10 +18,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Arcane — Leveling (derived)](builds/arcane-leveling.md) 🔬 | 29/0/22 | DPS |
 | [Fire — Leveling (derived)](builds/fire-leveling.md) 🔬 | 0/32/19 | DPS |
-| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 31/17/3 | DPS |
-| [Fire — Leveling (open talent search)](builds/fire-open-leveling.md) 🔬 | 0/31/20 | DPS |
+| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 30/0/21 | DPS |
 | [Frost — Leveling (open talent search)](builds/frost-open-leveling.md) 🔬 | 18/3/30 | DPS |
-| [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) 🔬 | 18/2/31 | DPS |
+| [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) 🔬 | 23/0/28 | DPS |
 | [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 1/25/25 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
@@ -49,10 +48,10 @@ Classic Era reference builds: [aoe-grinding-frost](../talents/classic-baseline/a
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | `arcane-frost-open-leveling` | barrage-frost-leveling | 30.1 |
-| [Frost](../../leveling/frost.md) | `frost-open-leveling` | frost-leveling | 31.1 |
-| [Arcane](../../leveling/arcane.md) | `arcane-open-leveling` | arcane-leveling | 32.3 |
-| [Fire](../../leveling/fire.md) | `fire-open-leveling` | fire-leveling | 38.4 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | `arcane-frost-open-leveling` | barrage-frost-leveling | 29.8 |
+| [Frost](../../leveling/frost.md) ✅ | `frost-open-leveling` | frost-leveling | 30.5 |
+| [Arcane](../../leveling/arcane.md) | `arcane-open-leveling` | arcane-leveling | 32.4 |
+| [Fire](../../leveling/fire.md) | `fire-leveling` | fire-leveling | 38.8 |
 | [Frostfire](../../leveling/frostfire.md) | `frostfire-open-leveling` | - | - |
 
 ✅ = recommended (the fastest spec, or within 3% of it).

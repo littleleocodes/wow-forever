@@ -15797,7 +15797,15 @@
    },
    "minutes": 100.7,
    "done": true,
-   "date": "2026-11-03"
+   "date": "2026-11-03",
+   "builds": {
+    "written": [
+     "arcane-open-leveling"
+    ],
+    "why": null,
+    "spec": "Arcane",
+    "date": "2026-11-04"
+   }
   },
   "fire-leveling": {
    "model": "fire-leveling",
@@ -31609,7 +31617,13 @@
    },
    "minutes": 188.3,
    "done": true,
-   "date": "2026-11-03"
+   "date": "2026-11-03",
+   "builds": {
+    "written": [],
+    "why": "fails Fire's signature-spell check in the fight lab (FAIL: Pyroblast 0.00/kill at 40 (needs 0.50); signature_spells.json): not written",
+    "spec": "Fire",
+    "date": "2026-11-04"
+   }
   },
   "frost-leveling": {
    "model": "frost-leveling",
@@ -47239,7 +47253,15 @@
    },
    "minutes": 290.7,
    "done": true,
-   "date": "2026-11-04"
+   "date": "2026-11-04",
+   "builds": {
+    "written": [
+     "frost-open-leveling"
+    ],
+    "why": null,
+    "spec": "Frost",
+    "date": "2026-11-04"
+   }
   },
   "barrage-frost-leveling": {
    "model": "frost-leveling",
@@ -63899,7 +63921,15 @@
    },
    "minutes": 283.3,
    "done": true,
-   "date": "2026-11-04"
+   "date": "2026-11-04",
+   "builds": {
+    "written": [
+     "arcane-frost-open-leveling"
+    ],
+    "why": null,
+    "spec": "Hybrid Arcane/Frost",
+    "date": "2026-11-04"
+   }
   }
  }
 }

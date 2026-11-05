@@ -11,7 +11,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | [Beast-Survival](../../leveling/beast-survival.md) ✅ | [`beast-survival-open-leveling`](builds/beast-survival-open-leveling.md) | [melee-dps](#melee-dps) | 15.9 | 18.6 | 21.2 | 22.5 | 23.3 | 21.2 |
 | [Marksmanship](../../leveling/marksmanship.md) | [`marksmanship-open-leveling`](builds/marksmanship-open-leveling.md) | [mm-raid](#mm-raid) | 16.4 | 19.0 | 23.0 | 24.4 | 25.2 | 22.7 |
 | [Beast-Marks](../../leveling/beast-marks.md) | [`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md) | [bm-leveling](#bm-leveling) | 16.4 | 19.5 | 23.0 | 24.2 | 25.5 | 22.9 |
-| [Beast Mastery](../../leveling/beast-mastery.md) | [`beast-mastery-leveling`](builds/beast-mastery-leveling.md) | [bm-leveling](#bm-leveling) | 15.7 | 20.0 | 23.4 | 25.3 | 26.0 | 23.4 |
+| [Beast Mastery](../../leveling/beast-mastery.md) | [`bm-solo-farm`](builds/bm-solo-farm.md) | [bm-leveling](#bm-leveling) | 15.7 | 20.0 | 23.4 | 25.9 | 27.4 | 23.9 |
 | [Survival](../../leveling/survival.md) | [`opt-bm-leveling-leveling-aoe`](builds/opt-bm-leveling-leveling-aoe.md) | [melee-dps](#melee-dps) | 15.9 | 20.2 | 25.0 | 26.5 | 27.9 | 24.6 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
@@ -159,7 +159,7 @@ Casts per kill of [`marksmanship-open-leveling`](builds/marksmanship-open-leveli
 
 ## bm-leveling
 
-Played by the page builds of [Beast-Marks](../../leveling/beast-marks.md) ([`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md)), [Beast Mastery](../../leveling/beast-mastery.md) ([`beast-mastery-leveling`](builds/beast-mastery-leveling.md)).
+Played by the page builds of [Beast-Marks](../../leveling/beast-marks.md) ([`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md)), [Beast Mastery](../../leveling/beast-mastery.md) ([`bm-solo-farm`](builds/bm-solo-farm.md)).
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
@@ -214,7 +214,7 @@ Report: [fightlab/bm-leveling.md](fightlab/bm-leveling.md).
 | Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.2 | 1% |
 | Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 
-Casts per kill of [`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md), [`beast-mastery-leveling`](builds/beast-mastery-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
+Casts per kill of [`beast-marks-open-leveling`](builds/beast-marks-open-leveling.md), [`bm-solo-farm`](builds/bm-solo-farm.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## bm-leveling in pulls of several mobs (research)
 

@@ -12,8 +12,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Arcane** | [Arcane — Leveling](leveling/arcane.md) 🔬<br>32 s/kill | [Arcane — Raid](raid/arcane.md) 🔬<br>756 DPS (raid) |
-| **Fire** | [Fire — Leveling](leveling/fire.md) 🔬<br>38 s/kill | **✅ Recommended**<br>[Fire — Raid](raid/fire.md) 🔬<br>828 DPS (raid) |
-| **Frost** | [Frost — Leveling](leveling/frost.md) 🔬<br>31 s/kill | [Frost — Winter's Chill](raid/frost.md)<br>520 DPS (raid) |
+| **Fire** | [Fire — Leveling](leveling/fire.md) 🔬<br>39 s/kill | **✅ Recommended**<br>[Fire — Raid](raid/fire.md) 🔬<br>828 DPS (raid) |
+| **Frost** | **✅ Recommended**<br>[Frost — Leveling](leveling/frost.md) 🔬<br>30 s/kill | [Frost — Winter's Chill](raid/frost.md)<br>520 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -37,9 +37,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Arcane-Frost](leveling/arcane-frost.md) 🔬 | 30 | fastest |
-| 2 | [Frost](leveling/frost.md) 🔬 | 31 | +4% |
-| 3 | [Arcane](leveling/arcane.md) 🔬 | 32 | +8% |
-| 4 | [Fire](leveling/fire.md) 🔬 | 38 | +28% |
+| 2 | [Frost](leveling/frost.md) 🔬 | 30 | +2% |
+| 3 | [Arcane](leveling/arcane.md) 🔬 | 32 | +9% |
+| 4 | [Fire](leveling/fire.md) 🔬 | 39 | +31% |
 
 ### Raid (group)
 
@@ -90,7 +90,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (11 builds) | [leveling-frost](research/leveling/builds/leveling-frost.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (10 builds) | [leveling-frost](research/leveling/builds/leveling-frost.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (17 builds) | [frost-arcane-power-raid](research/raid/builds/frost-arcane-power-raid.md), [frost-winters-chill-raid](research/raid/builds/frost-winters-chill-raid.md), [frost-fingers-of-frost-raid](research/raid/builds/frost-fingers-of-frost-raid.md), [fire-raid](research/raid/builds/fire-raid.md), [frostfire-raid](research/raid/builds/frostfire-raid.md), [arcane-blast-raid](research/raid/builds/arcane-blast-raid.md), [frostfire-fingers-of-frost-raid](research/raid/builds/frostfire-fingers-of-frost-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-frost](research/pvp/builds/pvp-frost.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

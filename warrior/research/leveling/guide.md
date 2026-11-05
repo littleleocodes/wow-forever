@@ -18,7 +18,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Fury](../../leveling/fury.md) | [`opt-fury-dw-raid-leveling-st`](builds/opt-fury-dw-raid-leveling-st.md) | - | - | - | - | - | - | - |
 | [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | - | - | - | - | - | - | - |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **62.8 h** (30.2% faster than talentless), 1 respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **62.7 h** (30.4% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

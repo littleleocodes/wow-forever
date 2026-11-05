@@ -421,10 +421,10 @@
    },
    "opt-melee-dps-solo-60": {
     "spec": "Hybrid Beast Mastery/Survival",
-    "rotation": "bm-leveling",
-    "ok": false,
-    "verdict": "FAIL: core share 30% < 50%",
-    "core_share": 0.3048,
+    "rotation": "melee-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.6186,
     "min_share": 0.5,
     "required": [],
     "core": [
@@ -437,7 +437,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "54fa0c829435",
+    "fingerprint": "d04ff1db3a3c",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -448,7 +448,7 @@
     "rotation": "arcane-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9053,
+    "core_share": 0.8451,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -459,11 +459,11 @@
      "Arcane Wrath"
     ],
     "casts_60": {
-     "Arcane Blast": 1.79
+     "Arcane Blast": 1.72
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "460fc2642fdc",
+    "fingerprint": "55e5b7555a43",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -490,35 +490,6 @@
     ],
     "uncast": [],
     "fingerprint": "582c341b259a",
-    "date": "2026-11-04",
-    "fights": 300
-   },
-   "fire-open-leveling": {
-    "spec": "Fire",
-    "rotation": "fire-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7195,
-    "min_share": 0.6,
-    "required": [
-     "Fireball",
-     "Pyroblast"
-    ],
-    "core": [
-     "Fireball",
-     "Pyroblast",
-     "Fire Blast",
-     "Scorch",
-     "Ignite",
-     "Flamestrike"
-    ],
-    "casts_60": {
-     "Fireball": 0.94,
-     "Pyroblast": 0.71
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "ff093f3abf9f",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -585,7 +556,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9029,
+    "core_share": 0.8856,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -598,11 +569,11 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.28
+     "Frostbolt": 3.27
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "2d7982ba8602",
+    "fingerprint": "5a0b89d892c4",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -663,7 +634,7 @@
     "rotation": "barrage-frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8759,
+    "core_share": 0.8534,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -676,12 +647,12 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 2.61,
-     "Arcane Missiles": 0.53
+     "Frostbolt": 2.45,
+     "Arcane Missiles": 0.44
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "ff99b40e3585",
+    "fingerprint": "33f964a83cb3",
     "date": "2026-11-04",
     "fights": 300
    },
@@ -1639,10 +1610,10 @@
    },
    "opt-enhancement-dps-leveling-aoe": {
     "spec": "Hybrid Elemental/Enhancement",
-    "rotation": "enhancement-dps",
-    "ok": false,
-    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 31% < 50%",
-    "core_share": 0.3141,
+    "rotation": "elemental-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7162,
     "min_share": 0.5,
     "required": [
      "Lightning Bolt"
@@ -1654,42 +1625,11 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Lightning Bolt": 0.0
+     "Lightning Bolt": 3.12
     },
     "missing_talents": [],
-    "uncast": [
-     [
-      "Lightning Bolt",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
-    "fingerprint": "93b64d7c8001",
+    "uncast": [],
+    "fingerprint": "8e6a00fed3ee",
     "date": "2026-11-04",
     "fights": 300
    }
@@ -2801,7 +2741,7 @@
     "name": "Beast-Survival",
     "build": "opt-melee-dps-solo-60",
     "split": "15/10/26",
-    "rotation": "bm-leveling",
+    "rotation": "melee-dps",
     "rules": "tuned",
     "kind": "slot",
     "required": [],
@@ -2814,20 +2754,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.3048,
+    "core_share": 0.6186,
     "min_share": 0.5,
-    "weighted": 24.06,
-    "verdict": "FAIL: core share 30% < 50%",
-    "ok": false,
+    "weighted": 21.23,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Auto Shot": 0.326,
-     "Serpent Sting": 0.202,
-     "Cat melee": 0.18,
-     "Aimed Shot": 0.167,
-     "Claw": 0.072,
-     "Bite": 0.041
+     "Cat melee": 0.206,
+     "Serpent Sting": 0.199,
+     "Melee": 0.14,
+     "Melee (off-hand)": 0.103,
+     "Immolation Trap": 0.098,
+     "Claw": 0.079
     }
    }
   ],
@@ -2836,7 +2776,7 @@
     "spec": "Arcane",
     "name": "Arcane",
     "build": "arcane-open-leveling",
-    "split": "31/17/3",
+    "split": "30/0/21",
     "rotation": "arcane-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -2850,22 +2790,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Arcane Blast": 1.79
+     "Arcane Blast": 1.72
     },
-    "core_share": 0.9053,
+    "core_share": 0.8451,
     "min_share": 0.5,
-    "weighted": 29.72,
+    "weighted": 32.09,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.702,
-     "Arcane Blast": 0.157,
-     "Fire Blast": 0.074,
-     "Arcane Wrath": 0.046,
-     "Cone of Cold": 0.02,
-     "Frostbolt": 0.001
+     "Arcane Missiles": 0.667,
+     "Arcane Blast": 0.137,
+     "Fire Blast": 0.07,
+     "Ice Lance": 0.066,
+     "Arcane Wrath": 0.041,
+     "Cone of Cold": 0.02
     }
    },
    {
@@ -2909,52 +2849,11 @@
    {
     "spec": "Fire",
     "name": "Fire",
-    "build": "fire-open-leveling",
-    "split": "0/31/20",
-    "rotation": "fire-leveling",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Fireball",
-     "Pyroblast"
-    ],
-    "core": [
-     "Fireball",
-     "Pyroblast",
-     "Fire Blast",
-     "Scorch",
-     "Ignite",
-     "Flamestrike"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Fireball": 0.94,
-     "Pyroblast": 0.71
-    },
-    "core_share": 0.7195,
-    "min_share": 0.6,
-    "weighted": 31.74,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Fire Blast": 0.294,
-     "Ice Lance": 0.222,
-     "Fireball": 0.152,
-     "Pyroblast": 0.129,
-     "Ignite": 0.058,
-     "Scorch": 0.046
-    }
-   },
-   {
-    "spec": "Fire",
-    "name": "Fire",
     "build": "fire-leveling",
     "split": "0/32/19",
     "rotation": "fire-leveling",
     "rules": "tuned",
-    "kind": "slot",
+    "kind": "page",
     "required": [
      "Fireball",
      "Pyroblast"
@@ -3049,21 +2948,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.28
+     "Frostbolt": 3.27
     },
-    "core_share": 0.9029,
+    "core_share": 0.8856,
     "min_share": 0.6,
-    "weighted": 27.6,
+    "weighted": 30.48,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.541,
-     "Ice Lance": 0.362,
-     "Fire Blast": 0.056,
-     "Wand": 0.025,
-     "Frost Nova": 0.016
+     "Frostbolt": 0.527,
+     "Ice Lance": 0.359,
+     "Fire Blast": 0.068,
+     "Wand": 0.032,
+     "Frost Nova": 0.015
     }
    },
    {
@@ -3144,7 +3043,7 @@
     "spec": "Hybrid Arcane/Frost",
     "name": "Arcane-Frost",
     "build": "arcane-frost-open-leveling",
-    "split": "18/2/31",
+    "split": "23/0/28",
     "rotation": "barrage-frost-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -3160,22 +3059,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.61,
-     "Arcane Missiles": 0.53
+     "Frostbolt": 2.45,
+     "Arcane Missiles": 0.44
     },
-    "core_share": 0.8759,
+    "core_share": 0.8534,
     "min_share": 0.6,
-    "weighted": 25.1,
+    "weighted": 29.55,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.418,
-     "Ice Lance": 0.316,
-     "Arcane Missiles": 0.141,
-     "Fire Blast": 0.092,
-     "Wand": 0.017,
+     "Frostbolt": 0.405,
+     "Ice Lance": 0.328,
+     "Arcane Missiles": 0.12,
+     "Fire Blast": 0.107,
+     "Wand": 0.025,
      "Frost Nova": 0.015
     }
    },
@@ -4551,7 +4450,7 @@
     "name": "Elemental-Enhancement",
     "build": "opt-enhancement-dps-leveling-aoe",
     "split": "29/22/0",
-    "rotation": "enhancement-dps",
+    "rotation": "elemental-dps",
     "rules": "tuned",
     "kind": "slot",
     "required": [
@@ -4563,57 +4462,24 @@
      "Earth Shock",
      "Flame Shock"
     ],
-    "rule_issues": [
-     "Lightning Bolt only below 35% mob health"
-    ],
+    "rule_issues": [],
     "casts_60": {
-     "Lightning Bolt": 0.0
+     "Lightning Bolt": 3.12
     },
-    "core_share": 0.3141,
+    "core_share": 0.7162,
     "min_share": 0.5,
-    "weighted": 32.63,
-    "verdict": "FAIL: Lightning Bolt 0.00/kill at 20 (needs 0.50); Lightning Bolt 0.00/kill at 30 (needs 0.50); Lightning Bolt 0.00/kill at 40 (needs 0.50); Lightning Bolt 0.00/kill at 50 (needs 0.50); Lightning Bolt 0.00/kill at 60 (needs 0.50); core share 31% < 50%",
-    "ok": false,
+    "weighted": 32.81,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
-    "uncast": [
-     [
-      "Lightning Bolt",
-      20,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      30,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      40,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      50,
-      0.0,
-      0.5
-     ],
-     [
-      "Lightning Bolt",
-      60,
-      0.0,
-      0.5
-     ]
-    ],
+    "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.314,
-     "Melee": 0.195,
-     "Stormstrike": 0.182,
-     "Lightning Shield": 0.138,
-     "Windfury": 0.121,
-     "Searing Totem": 0.049
+     "Lightning Bolt": 0.44,
+     "Flame Shock": 0.158,
+     "Lightning Shield": 0.119,
+     "Earth Shock": 0.118,
+     "Melee": 0.085,
+     "Windfury": 0.042
     }
    }
   ],

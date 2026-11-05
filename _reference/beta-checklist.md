@@ -146,7 +146,6 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - A derived Fire leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Arcane leveling build: check it while leveling at launch.
-- An open-search Fire leveling build: check it while leveling at launch.
 - An open-search Frost leveling build: check it while leveling at launch.
 - An open-search Arcane-Frost leveling build: check it while leveling at launch.
 - An open-search Frostfire leveling build: check it while leveling at launch.

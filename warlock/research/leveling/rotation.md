@@ -10,7 +10,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 |---|---|---|---|---|---|---|---|---|
 | [Affliction](../../leveling/affliction.md) ✅ | [`affliction-open-leveling`](builds/affliction-open-leveling.md) | [affliction-leveling](#affliction-leveling) | 30.6 | 38.9 | 38.8 | 36.4 | 34.8 | 36.2 |
 | [Demonology](../../leveling/demonology.md) | [`demonology-leveling`](builds/demonology-leveling.md) | [affliction-leveling](#affliction-leveling) | - | - | - | - | - | - |
-| [Destruction](../../leveling/destruction.md) | [`destruction-leveling`](builds/destruction-leveling.md) | [affliction-leveling](#affliction-leveling) | - | - | - | - | - | - |
+| [Destruction](../../leveling/destruction.md) | [`destruction-open-leveling`](builds/destruction-open-leveling.md) | - | - | - | - | - | - | - |
 | [Affliction-Demonology](../../leveling/affliction-demonology.md) | [`leveling-affliction`](builds/leveling-affliction.md) | - | - | - | - | - | - | - |
 | [Demonology/Destruction hybrid](../../leveling/hybrid-demonology-destruction.md) | [`hybrid-demonology-destruction-open-leveling`](builds/hybrid-demonology-destruction-open-leveling.md) | - | - | - | - | - | - | - |
 
@@ -18,7 +18,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 ## affliction-leveling
 
-Played by the page builds of [Affliction](../../leveling/affliction.md) ([`affliction-open-leveling`](builds/affliction-open-leveling.md)), [Demonology](../../leveling/demonology.md) ([`demonology-leveling`](builds/demonology-leveling.md)), [Destruction](../../leveling/destruction.md) ([`destruction-leveling`](builds/destruction-leveling.md)).
+Played by the page builds of [Affliction](../../leveling/affliction.md) ([`affliction-open-leveling`](builds/affliction-open-leveling.md)), [Demonology](../../leveling/demonology.md) ([`demonology-leveling`](builds/demonology-leveling.md)).
 
 Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
 
@@ -73,7 +73,7 @@ Report: [fightlab/affliction-leveling.md](fightlab/affliction-leveling.md).
 | Immolate | 0.6 | 0.5 | 0.5 | 0.4 | 0.3 | 3% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
-Casts per kill of [`affliction-open-leveling`](builds/affliction-open-leveling.md), [`demonology-leveling`](builds/demonology-leveling.md), [`destruction-leveling`](builds/destruction-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
+Casts per kill of [`affliction-open-leveling`](builds/affliction-open-leveling.md), [`demonology-leveling`](builds/demonology-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## affliction-leveling in pulls of several mobs (research)
 

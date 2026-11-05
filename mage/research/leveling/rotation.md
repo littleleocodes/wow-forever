@@ -8,10 +8,10 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | [barrage-frost-leveling](#barrage-frost-leveling) | 27.6 | 33.8 | 36.6 | 28.9 | 25.7 | 30.1 |
-| [Frost](../../leveling/frost.md) | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 28.9 | 33.7 | 37.0 | 29.8 | 27.8 | 31.1 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | [arcane-leveling](#arcane-leveling) | 33.4 | 35.7 | 34.0 | 32.2 | 29.4 | 32.3 |
-| [Fire](../../leveling/fire.md) | [`fire-open-leveling`](builds/fire-open-leveling.md) | [fire-leveling](#fire-leveling) | 35.1 | 41.6 | 45.7 | 39.4 | 32.0 | 38.4 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | [barrage-frost-leveling](#barrage-frost-leveling) | 28.9 | 33.3 | 34.4 | 28.4 | 26.4 | 29.8 |
+| [Frost](../../leveling/frost.md) ✅ | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 27.5 | 34.1 | 35.4 | 29.9 | 26.9 | 30.5 |
+| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | [arcane-leveling](#arcane-leveling) | 33.9 | 35.2 | 33.5 | 32.5 | 29.6 | 32.4 |
+| [Fire](../../leveling/fire.md) | [`fire-leveling`](builds/fire-leveling.md) | [fire-leveling](#fire-leveling) | 35.0 | 42.1 | 46.2 | 39.9 | 32.8 | 38.8 |
 | [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | - | - | - | - | - | - | - |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
@@ -49,7 +49,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
 2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
-3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
+3. **Ice Lance** into the freeze whenever it is ready: it has an 8-second cooldown, so one per **Frost Nova**, **Frostbite** freeze or **Fingers of Frost** charge, not a stream of them.
 4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.
 
@@ -120,7 +120,7 @@ Casts per kill of [`arcane-open-leveling`](builds/arcane-open-leveling.md): not 
 
 ## fire-leveling
 
-Played by the page build of [Fire](../../leveling/fire.md) ([`fire-open-leveling`](builds/fire-open-leveling.md)).
+Played by the page build of [Fire](../../leveling/fire.md) ([`fire-leveling`](builds/fire-leveling.md)).
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
@@ -156,7 +156,7 @@ Report: [fightlab/fire-leveling.md](fightlab/fire-leveling.md).
 | Scorch | 0.0 | 0.1 | 0.2 | 0.2 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
-Casts per kill of [`fire-open-leveling`](builds/fire-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
+Casts per kill of [`fire-leveling`](builds/fire-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
 ## frost-aoe in pulls of several mobs
 

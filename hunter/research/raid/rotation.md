@@ -86,34 +86,34 @@ Damage by ability:
 | Multi-Shot | 1% |
 | spell 1295633 | 0% |
 
-### [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) (ours: derived (ML search), 501 DPS), [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) (ours: hand draft, 499 DPS), *MM* (community simulator, 471 DPS), *SV* (community simulator, 434 DPS), *SV Weave* (community simulator, 429 DPS), *MM Weave* (community simulator, 415 DPS)
+### [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) (ours: derived (ML search), 501 DPS), [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) (ours: hand draft, 499 DPS), [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) (ours: derived (open search), 492 DPS), *MM* (community simulator, 471 DPS), *SV* (community simulator, 434 DPS), *SV Weave* (community simulator, 429 DPS), *MM Weave* (community simulator, 415 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) casts/min | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) casts/min | *MM* casts/min | *SV* casts/min | *SV Weave* casts/min | *MM Weave* casts/min |
-|---|---|---|---|---|---|---|---|
-| 1 | cast Arcane Shot | 9.8 | 8.3 | 9.5 | 7.8 | 7.8 | 8.1 |
-| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.4 | 3.6 | 3.3 | 3.4 | 3.4 | 3.3 |
-| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 | 0.9 | 0.3 | 0.3 | 0.3 | 0.3 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.4 | 2.4 | 2.3 | 2.0 | 2.0 | 1.9 |
+| # | Priority (the first line whose condition holds is cast) | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) casts/min | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) casts/min | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) casts/min | *MM* casts/min | *SV* casts/min | *SV Weave* casts/min | *MM Weave* casts/min |
+|---|---|---|---|---|---|---|---|---|
+| 1 | cast Arcane Shot | 9.8 | 8.3 | 9.3 | 9.5 | 7.8 | 7.8 | 8.1 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.4 | 3.6 | 3.2 | 3.3 | 3.4 | 3.4 | 3.3 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 | 0.9 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.4 | 2.4 | 2.2 | 2.3 | 2.0 | 2.0 | 1.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 
-| Ability | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | *MM* | *SV* | *SV Weave* | *MM Weave* |
-|---|---|---|---|---|---|---|
-| Auto Shot | 36% | 34% | 38% | 38% | 38% | 37% |
-| Pet: Auto Attack | 19% | 24% | 17% | 19% | 19% | 19% |
-| Arcane Shot | 22% | 18% | 23% | 20% | 20% | 21% |
-| Serpent Sting | 12% | 10% | 13% | 12% | 12% | 12% |
-| Aimed Shot | 7% | 8% | 8% | 8% | 8% | 8% |
-| Pet: Claw | 1% | 2% | 1% | 1% | 1% | 1% |
-| Pet: Bite | 1% | 1% | 1% | 1% | 1% | 1% |
-| Multi-Shot | 0% | 1% | 0% | 0% | 0% | 0% |
-| spell 1295633 | 0% | 0% | 1% | 1% | 1% | 1% |
+| Ability | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) | *MM* | *SV* | *SV Weave* | *MM Weave* |
+|---|---|---|---|---|---|---|---|
+| Auto Shot | 36% | 34% | 37% | 38% | 38% | 38% | 37% |
+| Pet: Auto Attack | 19% | 24% | 19% | 17% | 19% | 19% | 19% |
+| Arcane Shot | 22% | 18% | 22% | 23% | 20% | 20% | 21% |
+| Serpent Sting | 12% | 10% | 12% | 13% | 12% | 12% | 12% |
+| Aimed Shot | 7% | 8% | 7% | 8% | 8% | 8% | 8% |
+| Pet: Claw | 1% | 2% | 1% | 1% | 1% | 1% | 1% |
+| Pet: Bite | 1% | 1% | 1% | 1% | 1% | 1% | 1% |
+| Multi-Shot | 0% | 1% | 0% | 0% | 0% | 0% | 0% |
+| spell 1295633 | 0% | 0% | 1% | 1% | 1% | 1% | 1% |
 
 ### *BM Weave* (community simulator, 489 DPS), *BM* (community simulator, 477 DPS)
 
@@ -397,7 +397,7 @@ Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 15 passes, the last 2026-11-04, 7 changes to the base rotation; third-seed check: melee-survival-raid 472 -> 733 DPS (+55.3%), sim preset: SV Melee 364 -> 606 DPS (+66.7%), opt-melee-dps-raid-dps 472 -> 682 DPS (+44.6%), survival-raid 447 -> 690 DPS (+54.2%), survival-ml-parse 450 -> 695 DPS (+54.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 16 passes, the last 2026-11-04, 7 changes to the base rotation; third-seed check: melee-survival-raid 472 -> 733 DPS (+55.3%), sim preset: SV Melee 364 -> 610 DPS (+67.7%), opt-melee-dps-raid-dps 472 -> 682 DPS (+44.6%), survival-raid 447 -> 690 DPS (+54.2%), survival-ml-parse 450 -> 695 DPS (+54.4%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
   3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)

@@ -51,7 +51,7 @@ Classic Era reference builds: [leveling-affliction-demo](../talents/classic-base
 |---|---|---|---|
 | [Affliction](../../leveling/affliction.md) ✅ | `affliction-open-leveling` | affliction-leveling | 36.2 |
 | [Demonology](../../leveling/demonology.md) | `demonology-leveling` | affliction-leveling | - |
-| [Destruction](../../leveling/destruction.md) | `destruction-leveling` | affliction-leveling | - |
+| [Destruction](../../leveling/destruction.md) | `destruction-open-leveling` | - | - |
 | [Affliction-Demonology](../../leveling/affliction-demonology.md) | `leveling-affliction` | - | - |
 | [Demonology/Destruction hybrid](../../leveling/hybrid-demonology-destruction.md) | `hybrid-demonology-destruction-open-leveling` | - | - |
 

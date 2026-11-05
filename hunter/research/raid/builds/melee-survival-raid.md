@@ -96,7 +96,7 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 15 passes, the last 2026-11-04, 7 changes to the base rotation; third-seed check: melee-survival-raid 472 -> 733 DPS (+55.3%), sim preset: SV Melee 364 -> 606 DPS (+66.7%), opt-melee-dps-raid-dps 472 -> 682 DPS (+44.6%), survival-raid 447 -> 690 DPS (+54.2%), survival-ml-parse 450 -> 695 DPS (+54.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 16 passes, the last 2026-11-04, 7 changes to the base rotation; third-seed check: melee-survival-raid 472 -> 733 DPS (+55.3%), sim preset: SV Melee 364 -> 610 DPS (+67.7%), opt-melee-dps-raid-dps 472 -> 682 DPS (+44.6%), survival-raid 447 -> 690 DPS (+54.2%), survival-ml-parse 450 -> 695 DPS (+54.4%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
   3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)

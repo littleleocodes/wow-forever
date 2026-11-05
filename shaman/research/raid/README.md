@@ -204,6 +204,7 @@ Beta hypotheses: every build's unverified claims are its `open_questions`, colle
 Reports under this folder that no other page links to (generated):
 
 - [deep-optimization.md](deep-optimization.md): Shaman: deep optimisation of the raid damage specs (generated)
+- [family-search.md](family-search.md): Shaman: open talent search (generated)
 - [heallab/deep-optimization-restoration.md](heallab/deep-optimization-restoration.md): Shaman Restoration: deep optimisation in the healer lab (generated)
 - [heallab/gear.md](heallab/gear.md): Healer gear — shaman
 - [heallab/resto-heal.md](heallab/resto-heal.md): Healer lab — shaman resto-heal
