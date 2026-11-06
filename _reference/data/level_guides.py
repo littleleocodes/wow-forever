@@ -170,6 +170,45 @@ def measured(cls, spec, b, order, rot):
     return m if m and m.get("fingerprint") == fingerprint(cls, b, order, rot) else None
 
 
+# ------------------------------------------------------------------------------------------------ keybinds by level
+# 2026-11-06 (user: "help set up keybinds again for mage and paladin but it depends on level ... which spells should be on which
+# keybinds dependent on what I currently have unlocked and what the rotation for that level is"). A guide's optional "keys" block:
+# {"intro", "slots": [{"key", "role", "binds": [{"from": level, "spell": a spell of the class | "text": anything else, "only": a
+# qualifier}]}], "no_key": [spells cast by clicking], "notes": []}. A key keeps its job for the whole climb; the spell on it changes
+# as better ones arrive (Q: Fireball, then Frostbolt from 4), so nothing learned has to be unlearned.
+def bind_name(b):
+    return b.get("spell") or b.get("text") or ""
+
+
+def key_slots(keys):
+    """Every slot of a keys block: its "slots", or the slots of its "bars" ([{"title", "slots"}]: the player's action bars in their
+    own slot order; the page prints one table per bar)."""
+    return [k for bar in keys.get("bars", []) for k in bar["slots"]] + list(keys.get("slots", []))
+
+
+def key_cell(slot, lo, hi):
+    """What sits on a key during levels lo-hi: the bind in force at lo, then every change inside the stage. A bind that arrives in the
+    stage is bold: it is what to set up there."""
+    binds = sorted(slot["binds"], key=lambda b: b["from"])
+    parts = []
+    cur = [b for b in binds if b["from"] <= lo]
+    if cur:
+        t = bind_name(cur[-1]) + (f" ({cur[-1]['only']})" if cur[-1].get("only") else "")
+        parts.append(f"**{t}**" if cur[-1]["from"] == lo else t)
+    parts += [f"**{bind_name(b)}** from {b['from']}" + (f" ({b['only']})" if b.get("only") else "") for b in binds if lo < b["from"] <= hi]
+    return "; ".join(parts) or "—"
+
+
+def key_holding(keys, level):
+    """{spell: key} for the binds in force at a level."""
+    out = {}
+    for k in key_slots(keys):
+        cur = [b for b in sorted(k["binds"], key=lambda b: b["from"]) if b["from"] <= level]
+        if cur and cur[-1].get("spell"):
+            out[cur[-1]["spell"]] = k["key"]
+    return out
+
+
 # ------------------------------------------------------------------------------------------------ check
 def check(cls):
     """[(level of the problem: 'error' or 'warning', text)] for a class's guides."""
@@ -187,9 +226,28 @@ def check(cls):
         for n in sorted({n for txt in [g.get("intro", "")] + g.get("between", []) + g.get("other", []) for n in BOLD.findall(txt)}):
             if n not in PLAIN and learned(cls, n, ob) == -1:
                 out.append(("error", f"{g['spec']} (intro, between or other): **{n}** is no spell or talent of the class"))
+        keys = g.get("keys")
+        for k in (key_slots(keys) if keys else []):   # a bound spell is known at the level its bind starts (a talent: in the build's order)
+            for bd in k["binds"]:
+                n = bd.get("spell")
+                if not n:
+                    continue
+                lv = learned(cls, n, ob)
+                if lv == -1:
+                    out.append(("error", f"{g['spec']} key {k['key']}: **{n}** is no spell or talent of the class"))
+                elif lv is None:
+                    if not bd.get("only"):
+                        out.append(("error", f"{g['spec']} key {k['key']}: **{n}** is a talent the build ({b['id']}) does not take"))
+                elif lv > bd["from"]:
+                    out.append(("error", f"{g['spec']} key {k['key']}: **{n}** arrives at level {lv}, its bind starts at {bd['from']}"))
         for s in stages(g):
             tag = f"{g['spec']} levels {s['from']}-{s['to']}"
             pressed = {n for txt in s.get("press", []) for n in BOLD.findall(txt)}
+            if keys:   # every spell the stage presses, in the list or in the emergency line, has a key by then
+                held_ = key_holding(keys, s["from"])
+                for n in sorted((pressed | set(BOLD.findall(s.get("if_hurt", "")))) & set(book(cls))):
+                    if n not in held_ and n not in keys.get("no_key", []):
+                        out.append(("warning", f"{tag}: the stage presses **{n}** and no key holds it"))
             hurt = set(BOLD.findall(s.get("if_hurt", "")))   # the emergency line: must be known, need not be cast in the lab
             for n in sorted(set(bold_names(s))):
                 if n in PLAIN:
@@ -245,6 +303,17 @@ def render(cls, g):
     o += ["## The short version", "", "| Level | What changes |", "|---|---|"]
     o += [f"| {s['from']}{'' if s['from'] == s['to'] else '-' + str(s['to'])} | {s.get('change', s['title'])} |" for s in st]
     o += [""]
+    keys = g.get("keys")
+    if keys:   # the keybinds by level (see "keybinds by level" above): one row per key, one column per stage
+        o += ["## Keybinds by level", ""] + ([keys["intro"], ""] if keys.get("intro") else [])
+        for bar in (keys.get("bars") or [{"title": None, "slots": keys.get("slots", [])}]):
+            if bar.get("title"):
+                o += [f"**{bar['title']}**", ""]
+            o += ["| Key | Its job | " + " | ".join(f"{s['from']}{'' if s['from'] == s['to'] else '-' + str(s['to'])}" for s in st) + " |",
+                  "|---|---|" + "---|" * len(st)]
+            o += [f"| {k['key']} | {k.get('role', '')} | " + " | ".join(key_cell(k, s["from"], s["to"]) for s in st) + " |" for k in bar["slots"]]
+            o += [""]
+        o += [f"- {t}" for t in keys.get("notes", [])] + ([""] if keys.get("notes") else [])
     for s in st:
         lo, hi = s["from"], s["to"]
         pressed = {n for txt in s.get("press", []) for n in BOLD.findall(txt)}
@@ -265,6 +334,17 @@ def render(cls, g):
                 tal.append(f"{a2}{'' if a2 == z2 else '-' + str(z2)} {step['talent']}")
         if tal:
             o += ["**Talents:** " + ", ".join(tal) + ".", ""]
+        if keys:   # what to put on the bar in this stage, and the key of every spell the list below presses
+            slot_no = {k["key"]: i for i, k in enumerate(key_slots(keys))}
+            new = sorted(((bd["from"], k["key"], bd) for k in key_slots(keys) for bd in k["binds"] if lo <= bd["from"] <= hi),
+                         key=lambda x: (x[0], slot_no[x[1]]))
+            if new:
+                o += ["**Keys to set:** " + "; ".join(f"{key} = {bind_name(bd)}" + (f" (at {lv})" if lv != lo else "")
+                                                        + (f", {bd['only']}" if bd.get("only") else "") for lv, key, bd in new) + ".", ""]
+            held_ = key_holding(keys, lo)
+            used = sorted(((n, held_[n]) for n in pressed | set(BOLD.findall(s.get("if_hurt", ""))) if n in held_), key=lambda x: slot_no[x[1]])
+            if used:
+                o += ["**Your keys in this stage:** " + ", ".join(f"{key} {n}" for n, key in used) + ".", ""]
         o += ["**What to press**, top to bottom:", ""] + [f"{i}. {t}" for i, t in enumerate(s.get("press", []), start=1)] + [""]
         if s.get("if_hurt"):
             o += [f"**If the fight goes wrong:** {s['if_hurt']}", ""]

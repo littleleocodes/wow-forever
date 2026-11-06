@@ -20,9 +20,58 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 | 20-43 | **Seal of Command** (talent) replaces Seal of Righteousness. Its **Judgement** hits a stunned mob twice as hard, so stun first. |
 | 44-60 | **Hammer of Wrath**, a ranged finisher for mobs below 20% health. Optional: the tuned rotation leaves it out. |
 
+## Keybinds by level
+
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. The scheme matches your mage: Q the strike you press most, E the control, R the payoff after it, F the escape, the thumb buttons the reactions, and the Shift bar a stronger or wider version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Setup and the macro: the [paladin keybinds page](../research/leveling/keybinds.md).
+
+**Action bar 1: the fight**
+
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-43 | 44-60 |
+|---|---|---|---|---|---|---|---|---|
+| Q | Your strike, on cooldown | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
+| E | Control: the stun | — | — | — | **Hammer of Justice** | Hammer of Justice | Hammer of Justice | Hammer of Justice |
+| R | The payoff: hits a stunned mob twice as hard from 20 | — | **Judgement** | Judgement | Judgement | Judgement | Judgement | Judgement |
+| F | Escape: the bubble | — | — | **Divine Protection** | Divine Protection | Divine Protection | Divine Protection; **Divine Shield** from 34 | Divine Shield |
+| Mouse 5 | Thumb reaction: the heal | **Holy Light** | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light |
+| Mouse 4 | Thumb reaction: the panic button | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands |
+| 1 | Your seal, before every pull | **Seal of Righteousness** | Seal of Righteousness | Seal of Righteousness | Seal of Righteousness | Seal of Righteousness | **Seal of Command** | Seal of Command |
+| 2 | Extra damage on Undead and Demons | — | — | — | — | — | **Exorcism** | Exorcism |
+| 3 | The quick heal | — | — | — | — | — | **Flash of Light** | Flash of Light |
+| 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify; **Cleanse** from 42 | Cleanse |
+| C | Drink | **Water** | Water | Water | Water | Water | Water | Water |
+| Middle mouse | Start swinging | **Attack** | Attack | Attack | Attack | Attack | Attack | Attack |
+
+**Action bar 2: the same keys with Shift (packs, buffs, travel)**
+
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-43 | 44-60 |
+|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Packs: the ground under you | — | — | — | — | — | **Consecration** | Consecration |
+| Shift+E | The stun combo in one key | — | — | — | — | — | **Stun-then-Judgement macro** | Stun-then-Judgement macro |
+| Shift+R | Finisher from range | — | — | — | — | — | — | **Hammer of Wrath** |
+| Shift+F | Escape from roots and slows | — | — | — | — | **Blessing of Freedom** from 18 | Blessing of Freedom | Blessing of Freedom |
+| Shift+Mouse 5 | A second save: no physical damage | — | — | — | — | **Blessing of Protection** | Blessing of Protection | Blessing of Protection |
+| Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead |
+| Shift+1 | Buff: your blessing | — | **Blessing of Might** | Blessing of Might | Blessing of Might | Blessing of Might | Blessing of Might | Blessing of Might |
+| Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | **Holy Wrath** from 50 |
+| Shift+3 | Bandage, if you train First Aid | **Bandage** | Bandage | Bandage | Bandage | Bandage | Bandage | Bandage |
+| Shift+4 | Travel | — | — | — | — | — | **Your mount** from 40 | Your mount |
+| Shift+C | Food | **Food** | Food | Food | Food | Food | Food | Food |
+| Shift+X | Recall | **Hearthstone** | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone |
+
+- The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. Shift+E does both in two presses if you like macros.
+- Two swaps on bar 1 in the whole climb: **Seal of Command** takes 1 at level 20, and **Divine Shield** takes F at 34.
+- Levels 1-5 fight with two keys: 1 for the seal and R for **Judgement** from 4. The middle mouse button starts your swings; a right-click on the mob does the same.
+- Shift mirrors the key under it: Shift+Q is the pack version of your strike, Shift+F the second escape, Shift+1 the buff next to your seal, Shift+2 the area version of **Exorcism**.
+- **Devotion Aura** needs no key. Click it once when you log in.
+- The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs.
+
 ## Levels 1-3: Seal of Righteousness
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
+
+**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness; C = Water; Middle mouse = Attack; Shift+3 = Bandage; Shift+C = Food; Shift+X = Hearthstone.
+
+**Your keys in this stage:** 1 Seal of Righteousness.
 
 **What to press**, top to bottom:
 
@@ -38,6 +87,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 **The trainer teaches:** Blessing of Might (4), **Judgement** (4).
 
+**Keys to set:** R = Judgement; Shift+1 = Blessing of Might.
+
+**Your keys in this stage:** R Judgement, 1 Seal of Righteousness.
+
 **What to press**, top to bottom:
 
 1. Keep **Seal of Righteousness** up.
@@ -50,6 +103,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 ## Levels 6-7: Holy Strike
 
 **The trainer teaches:** Divine Protection (6), **Holy Strike** (6), Seal of the Crusader (6).
+
+**Keys to set:** Q = Holy Strike; F = Divine Protection.
+
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, 1 Seal of Righteousness.
 
 **What to press**, top to bottom:
 
@@ -66,6 +123,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 ## Levels 8-9: Hammer of Justice
 
 **The trainer teaches:** **Hammer of Justice** (8), Purify (8).
+
+**Keys to set:** E = Hammer of Justice; 4 = Purify.
+
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, 1 Seal of Righteousness.
 
 **What to press**, top to bottom:
 
@@ -87,6 +148,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 **New ranks to buy:** Holy Strike at 12; Seal of Righteousness at 10, 18.
 
 **Talents:** 10-14 Benediction, 15-17 Sanctified Judgement, 18-19 Conviction.
+
+**Keys to set:** Mouse 4 = Lay on Hands; Shift+Mouse 5 = Blessing of Protection; Shift+F = Blessing of Freedom (at 18).
+
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Righteousness.
 
 **What to press**, top to bottom:
 
@@ -111,6 +176,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 20 Seal of Command, 21-22 Pursuit of Justice, 23 Conviction, 24 Improved Judgement, 25 Sacred Arbiter, 26 Improved Judgement, 27-29 Two-Handed Weapon Specialization, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41-43 Divine Intellect.
 
+**Keys to set:** 1 = Seal of Command; 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); Shift+4 = Your mount (at 40); 4 = Cleanse (at 42).
+
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Command, 3 Flash of Light.
+
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
@@ -123,7 +192,7 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 - **Consecration** (20): leave it off your bar against single mobs. The tuned rotation never casts it. It is for packs.
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
-- **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. **Divine Shield** (34) is a second, stronger panic button.
+- **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
 *Fight lab, seconds per kill: 19 at level 20, 22 at level 30, 27 at level 40, 28 at level 43. Presses per kill at level 20: Melee 3.6, Judgement 1.5, Holy Strike 1.3, Seal of Command 1.0, Hammer of Justice 0.3.*
 
@@ -135,6 +204,10 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 44-45 Divine Intellect, 46-48 Precision, 49 Repentance, 50 Vindication, 51-53 Champion of the Light, 54-55 Vindication, 56 Sacred Duty, 57-58 Reverence, 59-60 Purifying Power.
 
+**Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50).
+
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Command, 3 Flash of Light.
+
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
@@ -143,7 +216,7 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 4. **Judgement** whenever it is ready.
 5. **Holy Strike** whenever it is ready.
 
-**If the fight goes wrong:** Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%.
+**If the fight goes wrong:** Below a third of your health, with the mob still above a quarter of its own: **Divine Shield** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%.
 
 - **Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-02 switch it off against single mobs: kills measured no faster with it. Use it on a mob that runs.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.

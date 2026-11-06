@@ -19,9 +19,57 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 | 30-39 | **Fingers of Frost** (talent): a chill can make your next spells hit as if the mob were frozen. **Ice Armor** replaces Frost Armor. |
 | 40-60 | Nothing new to press. The remaining points go to Arcane for mana. Buy every new rank. |
 
+## Keybinds by level
+
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. A key keeps its job from 1 to 60 and only the spell on it changes, so you never relearn a key. Bold marks what arrives in that stage: drag it onto the slot when you train it. Everything the fight needs is on bar 1; the Shift bar holds the pack spells, your buffs and travel. Setup and macros: the [mage keybinds page](../research/leveling/keybinds.md).
+
+**Action bar 1: the fight**
+
+| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-23 | 24-29 | 30-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|
+| Q | Your bolt, the key you press most | **Fireball** | **Frostbolt** | Frostbolt | Frostbolt | Frostbolt | Frostbolt | Frostbolt | Frostbolt |
+| E | Control: stop the mob at your feet | — | — | — | **Frost Nova** | Frost Nova | Frost Nova | Frost Nova | Frost Nova |
+| R | The big hit into a freeze | — | — | — | — | **Ice Lance** | Ice Lance | Ice Lance | Ice Lance |
+| F | Escape, like Flash | — | — | — | — | **Blink** | Blink | Blink | Blink |
+| Mouse 5 | Thumb reaction: the instant | — | — | **Fire Blast** | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast |
+| Mouse 4 | Thumb reaction: the interrupt | — | — | — | — | — | **Counterspell** | Counterspell | Counterspell |
+| 1 | Proc button (Arcane-Frost build only) | — | — | — | — | — | — | **Arcane Missiles** from 37 | Arcane Missiles |
+| 2 | A second mob | — | — | **Polymorph** from 8 | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
+| 3 | Emergency | — | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield |
+| 4 | Mana back between fights | — | — | — | — | **Evocation** | Evocation | Evocation | Evocation |
+| C | Drink and eat | — | **Water** | **Eat-and-drink macro** | Eat-and-drink macro | Eat-and-drink macro | Eat-and-drink macro | Eat-and-drink macro | Eat-and-drink macro |
+| Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand | Wand |
+
+**Action bar 2: the same keys with Shift (packs, buffs, travel)**
+
+| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-23 | 24-29 | 30-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | An empowered bolt (Arcane-Frost build only) | — | — | — | — | — | — | — | **Presence of Mind macro** from 53 |
+| Shift+E | Packs: the blast around you | — | — | — | **Arcane Explosion** from 14 | Arcane Explosion | Arcane Explosion | Arcane Explosion | Arcane Explosion |
+| Shift+R | Packs: the big channel | — | — | — | — | **Blizzard** | Blizzard | Blizzard | Blizzard |
+| Shift+F | Packs and kiting: the slow in front of you | — | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
+| Shift+Mouse 5 | Buff: your armor | **Frost Armor** | Frost Armor | Frost Armor | Frost Armor | Frost Armor | Frost Armor | **Ice Armor** | Ice Armor |
+| Shift+Mouse 4 | Buff: your Intellect | **Arcane Intellect** | Arcane Intellect | Arcane Intellect | Arcane Intellect | Arcane Intellect | Arcane Intellect | Arcane Intellect | Arcane Intellect |
+| Shift+1 | Make water | — | **Conjure Water** | Conjure Water | Conjure Water | Conjure Water | Conjure Water | Conjure Water | Conjure Water |
+| Shift+2 | Make food | — | — | **Conjure Food** | Conjure Food | Conjure Food | Conjure Food | Conjure Food | Conjure Food |
+| Shift+3 | Lift a curse | — | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
+| Shift+4 | Travel | — | — | — | — | — | — | — | **Your mount** |
+| Shift+C | Food alone | — | — | **Food** | Food | Food | Food | Food | Food |
+| Shift+X | Recall | **Hearthstone** | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone |
+
+- Level 4 is the one swap on bar 1: **Frostbolt** takes Q and **Fireball** leaves the bar. On the Shift bar, **Ice Armor** takes over from **Frost Armor** at 30.
+- Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.
+- Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free; **Cone of Cold** on 1 is a fair use if you want a second slow at hand.
+- The single-target rotation never casts the three pack spells on Shift+E, Shift+R and Shift+F. They are there for a pull that brings friends.
+- The mount comes at 40 in Classic; set Shift+4 when you buy it.
+
 ## Levels 1-3: Fireball
 
 **The trainer teaches:** Arcane Intellect (1), **Fireball** (1), Frost Armor (1).
+
+**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+Mouse 5 = Frost Armor; Shift+Mouse 4 = Arcane Intellect; Shift+X = Hearthstone.
+
+**Your keys in this stage:** Q Fireball.
 
 **What to press**, top to bottom:
 
@@ -34,6 +82,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 ## Levels 4-5: Frostbolt replaces Fireball
 
 **The trainer teaches:** Conjure Water (4), **Frostbolt** (4).
+
+**Keys to set:** Q = Frostbolt; C = Water; Shift+1 = Conjure Water.
+
+**Your keys in this stage:** Q Frostbolt.
 
 **What to press**, top to bottom:
 
@@ -50,6 +102,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 **The trainer teaches:** Conjure Food (6), **Fire Blast** (6), Arcane Missiles (8), Polymorph (8).
 
 **New ranks to buy:** Frostbolt at 8.
+
+**Keys to set:** Mouse 5 = Fire Blast; C = Eat-and-drink macro; Shift+2 = Conjure Food; Shift+C = Food; 2 = Polymorph (at 8).
+
+**Your keys in this stage:** Q Frostbolt, Mouse 5 Fire Blast.
 
 **What to press**, top to bottom:
 
@@ -69,6 +125,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 **New ranks to buy:** Fire Blast at 14; Frostbolt at 14.
 
 **Talents:** 10-11 Precision, 12-14 Improved Frostbolt, 15-17 Frostbite, 18-19 Improved Frostbolt.
+
+**Keys to set:** E = Frost Nova; Shift+E = Arcane Explosion (at 14); Shift+3 = Remove Lesser Curse (at 18).
+
+**Your keys in this stage:** Q Frostbolt, E Frost Nova, Mouse 5 Fire Blast.
 
 **What to press**, top to bottom:
 
@@ -91,6 +151,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 
 **Talents:** 20 Ice Lance, 21-23 Frost Channeling.
 
+**Keys to set:** R = Ice Lance; F = Blink; 3 = Mana Shield; 4 = Evocation; Shift+R = Blizzard.
+
+**Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, Mouse 5 Fire Blast.
+
 **What to press**, top to bottom:
 
 1. **Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.
@@ -111,6 +175,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 **New ranks to buy:** Frost Nova at 26; Frostbolt at 26; Ice Lance at 28.
 
 **Talents:** 24 Ice Shards, 25 Shatter, 26-27 Ice Shards, 28-29 Shatter.
+
+**Keys to set:** Mouse 4 = Counterspell; Shift+F = Cone of Cold (at 26).
+
+**Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, Mouse 5 Fire Blast, Mouse 4 Counterspell.
 
 **What to press**, top to bottom:
 
@@ -134,6 +202,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 
 **Talents:** 30-31 Fingers of Frost, 32-33 Ice Shards, 34-35 Arctic Reach, 36-37 Improved Frost Nova, 38 Frost Warding, 39 Permafrost.
 
+**Keys to set:** Shift+Mouse 5 = Ice Armor; 1 = Arcane Missiles (at 37).
+
+**Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, Mouse 5 Fire Blast, Mouse 4 Counterspell.
+
 **What to press**, top to bottom:
 
 1. **Counterspell** a mob that starts casting.
@@ -156,6 +228,10 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 **New ranks to buy:** Fire Blast at 46, 54; Frost Nova at 40, 54; Frostbolt at 44, 50, 56, 60; Ice Lance at 42, 48, 56.
 
 **Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50 Arcane Subtlety, 51-52 Improved Channeling, 53 Arcane Resilience, 54 Arcane Impact, 55-57 Arcane Meditation, 58-60 Incineration.
+
+**Keys to set:** Shift+4 = Your mount; Shift+Q = Presence of Mind macro (at 53).
+
+**Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, Mouse 5 Fire Blast, Mouse 4 Counterspell.
 
 **What to press**, top to bottom:
 

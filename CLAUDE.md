@@ -233,6 +233,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   names or never casts one it names), `--write` writes the pages. `render_modes.py` writes them at every regen (its leveling folder
   is emptied first), links them from the spec's leveling page and lists them in the class's leveling index. Write a class's guide
   after its leveling search has settled, re-run `--measure` when its build, order or rules change, and keep the hand-kept
+  A guide may carry a `keys` block (2026-11-06, user: "help set up keybinds again for mage and paladin but it depends on level"):
+  `slots` = {`key`, `role`, `binds`: [{`from`, `spell` or `text`}]}, `notes`. A key keeps its job from 1 to 60 and only the spell on it
+  changes; the page gets a "Keybinds by level" table (keys by stages) and each stage a "Keys to set" line, and `--check` fails a bind
+  whose spell is not known at its level and warns when a stage presses a spell no key holds. The scheme is the user's own
+  (`<class>/research/leveling/keybinds.md`, hand-written: setup, the layout at 60, macros): Q the most-pressed attack, E the control,
+  R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest, Z and X the consumables. Mage and paladin
+  have one. Keep the
   "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
   the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow).
 - **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`

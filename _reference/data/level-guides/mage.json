@@ -18,7 +18,9 @@
       "Keep **Frost Armor** and **Arcane Intellect** up at all times, from here to 60.",
       "The fight lab does not simulate these three levels: its Frost rotation starts with **Frostbolt** at 4."
      ],
-     "unsimulated": ["Fireball"],
+     "unsimulated": [
+      "Fireball"
+     ],
      "no_numbers": true
     },
     {
@@ -142,7 +144,282 @@
    "other": [
     "Arcane-Frost is as fast in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up. See its page in this folder.",
     "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
-   ]
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. A key keeps its job from 1 to 60 and only the spell on it changes, so you never relearn a key. Bold marks what arrives in that stage: drag it onto the slot when you train it. Everything the fight needs is on bar 1; the Shift bar holds the pack spells, your buffs and travel. Setup and macros: the [mage keybinds page](../research/leveling/keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your bolt, the key you press most",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Fireball"
+         },
+         {
+          "from": 4,
+          "spell": "Frostbolt"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: stop the mob at your feet",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Frost Nova"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The big hit into a freeze",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Ice Lance"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape, like Flash",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Blink"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the instant",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Fire Blast"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: the interrupt",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Counterspell"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "Proc button (Arcane-Frost build only)",
+        "binds": [
+         {
+          "from": 37,
+          "spell": "Arcane Missiles"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second mob",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Polymorph"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Emergency",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Mana Shield"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "Mana back between fights",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Evocation"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Drink and eat",
+        "binds": [
+         {
+          "from": 4,
+          "text": "Water"
+         },
+         {
+          "from": 6,
+          "text": "Eat-and-drink macro"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Finisher, once you own a wand",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Wand"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift (packs, buffs, travel)",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "An empowered bolt (Arcane-Frost build only)",
+        "binds": [
+         {
+          "from": 53,
+          "text": "Presence of Mind macro"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the blast around you",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Arcane Explosion"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the big channel",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Blizzard"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Packs and kiting: the slow in front of you",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Cone of Cold"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Buff: your armor",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Frost Armor"
+         },
+         {
+          "from": 30,
+          "spell": "Ice Armor"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Buff: your Intellect",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Arcane Intellect"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Make water",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Conjure Water"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Make food",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Conjure Food"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Lift a curse",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Remove Lesser Curse"
+         }
+        ]
+       },
+       {
+        "key": "Shift+4",
+        "role": "Travel",
+        "binds": [
+         {
+          "from": 40,
+          "text": "Your mount"
+         }
+        ]
+       },
+       {
+        "key": "Shift+C",
+        "role": "Food alone",
+        "binds": [
+         {
+          "from": 6,
+          "text": "Food"
+         }
+        ]
+       },
+       {
+        "key": "Shift+X",
+        "role": "Recall",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Hearthstone"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "no_key": [],
+    "notes": [
+     "Level 4 is the one swap on bar 1: **Frostbolt** takes Q and **Fireball** leaves the bar. On the Shift bar, **Ice Armor** takes over from **Frost Armor** at 30.",
+     "Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.",
+     "Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free; **Cone of Cold** on 1 is a fair use if you want a second slow at hand.",
+     "The single-target rotation never casts the three pack spells on Shift+E, Shift+R and Shift+F. They are there for a pull that brings friends.",
+     "The mount comes at 40 in Classic; set Shift+4 when you buy it."
+    ]
+   }
   }
  ]
 }
