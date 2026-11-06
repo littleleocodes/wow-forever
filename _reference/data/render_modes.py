@@ -30,6 +30,7 @@ import readme_sections  # noqa: E402
 import gear_tables  # noqa: E402
 import simple_rotation  # noqa: E402
 import guides  # noqa: E402
+import level_guides as LG  # noqa: E402  (the by-level leveling guides, 2026-11-06)
 import render_rotations as rr  # noqa: E402
 import render_start_here as rs  # noqa: E402
 import spec_modes as SM  # noqa: E402
@@ -1215,11 +1216,16 @@ def class_pages(cls):
                 o += [f"*{SM.hybrid_line(cls, spec, mode)}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]   # a line per mode (2026-10-15, audit C5)
             if spec in rec[mode]:
                 o += [f"**{BADGE}** for {SM.MODE_TITLE[mode].split(' (')[0].lower()} (the best {cls} spec here, or within {TIE:.0%} of it).", ""]
+            if mode == "leveling" and LG.link_line(cls, spec):   # 2026-11-06: the spec has a level-by-level guide (level_guides.py)
+                o += [LG.link_line(cls, spec), ""]
             o += mode_section(cls, spec, mode, g[spec][mode], nums, src)
             o += ["---", foot(raid_sims(nums[0], {b["id"] for b in g[spec][mode]}) if mode == "raid" else None), ""]
             src.write_text("\n".join(o) + "\n", encoding="utf-8")
         idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../README.md) > {SM.MODE_TITLE[mode]}", ""]
         idx += ranking(cls, g, specs, mode, nums)
+        if mode == "leveling" and LG.load(cls):   # 2026-11-06 (user request): the rotation from level 1 as each spell arrives
+            idx += ["**Level by level:** " + ", ".join(f"[{SM.spec_name(cls, g_['spec'])}]({LG.page_name(cls, g_['spec'])})" for g_ in LG.load(cls)["guides"])
+                    + " (what to press from level 1 as each spell and talent arrives).", ""]
         if mode == "raid":
             # only specs with a raid page (2026-10-25: Beast-Survival kept its tier row from the ML record after its raid build left)
             idx += tier_table(cls, [s for s in specs if not s.startswith("Hybrid") or g[s]["raid"]], d / "README.md")
@@ -1227,6 +1233,8 @@ def class_pages(cls):
                 f"{GEN_MARK} = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the "
                 "simulations' noise and assumptions: treat them as a tie.", "", "---", foot(raid_sims(nums[0]) if mode == "raid" else None), ""]
         (d / "README.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
+        if mode == "leveling":   # the by-level guides live in this generated folder, emptied above: written again at every regen
+            LG.write(cls, d)
     # the class README: two generated sections on top, the hand-written overview and the research index below
     o = ["## Pick your spec", "",
          "Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents "

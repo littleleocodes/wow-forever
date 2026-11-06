@@ -1,0 +1,148 @@
+{
+ "class": "mage",
+ "updated": "2026-11-06",
+ "guides": [
+  {
+   "spec": "Frost",
+   "intro": "What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Frost levels by slowing the mob, freezing it at your feet, stepping back and hitting it while it cannot reach you. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Fireball",
+     "change": "**Fireball** is your only attack.",
+     "press": [
+      "**Fireball** until the mob is dead.",
+      "If it reaches you, keep casting. Nothing hits hard at these levels."
+     ],
+     "notes": [
+      "Keep **Frost Armor** and **Arcane Intellect** up at all times, from here to 60.",
+      "The fight lab does not simulate these three levels: its Frost rotation starts with **Frostbolt** at 4."
+     ],
+     "unsimulated": ["Fireball"],
+     "no_numbers": true
+    },
+    {
+     "from": 4,
+     "title": "Frostbolt replaces Fireball",
+     "change": "**Frostbolt** replaces Fireball. It slows the mob, so you get more casts before it arrives.",
+     "press": [
+      "**Frostbolt** from as far away as you can, again and again.",
+      "Your wand finishes a mob that is almost dead, once you own one."
+     ],
+     "notes": [
+      "**Conjure Water** (4): drink between fights instead of waiting for your mana.",
+      "Take **Fireball** off your bar. A slowed mob reaches you later, and that is worth more than Fireball's damage."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Fire Blast, your instant",
+     "change": "**Fire Blast** for the moment the mob reaches you, and to finish it.",
+     "press": [
+      "**Frostbolt** while the mob walks in, and whenever nothing below applies. Start no new one once the mob is below a fifth of its health.",
+      "**Fire Blast** when the mob would reach you before a **Frostbolt** finishes, and on a mob between a tenth and a fifth of its health.",
+      "Your wand finishes it."
+     ],
+     "notes": [
+      "**Polymorph** (8): when a second mob joins, sheep it, kill the first, then fight the sheep.",
+      "**Arcane Missiles** (8) is not part of the Frost rotation. **Conjure Food** (6) saves you buying bread."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "Frost Nova: the kite begins",
+     "change": "**Frost Nova** roots the mob at your feet: step back and keep casting. Talent points start.",
+     "press": [
+      "**Frostbolt** from maximum range while the mob walks in.",
+      "**Frost Nova** when it reaches you, then step back out of its reach.",
+      "**Frostbolt** while it stands rooted. If it reaches you again with **Frost Nova** on cooldown, **Fire Blast** it and keep casting.",
+      "Below a fifth of its health: **Fire Blast** (not below a tenth) or your wand. No new **Frostbolt**: a long cast on a dying mob is wasted."
+     ],
+     "notes": [
+      "**Improved Frostbolt** (12-14, 18-19) takes half a second off every **Frostbolt** cast.",
+      "**Frostbite** (15-17) sometimes freezes a mob your chill hits. Treat it as a free **Frost Nova**: step back and cast.",
+      "**Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Ice Lance into every freeze",
+     "change": "**Ice Lance** (talent): an instant that deals four times its damage to a frozen mob.",
+     "press": [
+      "**Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.",
+      "**Frost Nova** when it reaches you, then step back out of its reach.",
+      "**Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. It has an 8-second cooldown, so one per freeze.",
+      "If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.",
+      "Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand."
+     ],
+     "notes": [
+      "**Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana.",
+      "**Blink** (20) and **Mana Shield** (20) are escapes for a pull that goes wrong, not rotation. **Blizzard** (20) is for packs."
+     ]
+    },
+    {
+     "from": 24,
+     "title": "Counterspell and Shatter",
+     "change": "**Counterspell** for mobs that cast. **Shatter** makes spells crit far more often on a frozen mob.",
+     "press": [
+      "**Counterspell** a mob that starts casting: it stops standing back and walks to you.",
+      "**Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.",
+      "**Frost Nova** when it reaches you, then step back out of its reach.",
+      "**Ice Lance** the moment the mob is frozen. One per freeze.",
+      "If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.",
+      "Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand."
+     ],
+     "notes": [
+      "**Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.",
+      "**Cone of Cold** (26): leave it off your bar for single mobs. The tuned rotation never casts it; kills measured faster without."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Fingers of Frost",
+     "change": "**Fingers of Frost** (talent): a chill can make your next spells hit as if the mob were frozen. **Ice Armor** replaces Frost Armor.",
+     "press": [
+      "**Counterspell** a mob that starts casting.",
+      "**Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.",
+      "**Frost Nova** when it reaches you, then step back out of its reach.",
+      "**Ice Lance** whenever the mob is frozen or **Fingers of Frost** lights up, as soon as its 8-second cooldown allows.",
+      "If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.",
+      "Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand."
+     ],
+     "notes": [
+      "**Ice Armor** (30) replaces **Frost Armor** as your armor spell.",
+      "**Arctic Reach** (34-35) lets you pull from farther away: one more **Frostbolt** before the mob arrives.",
+      "**Improved Frost Nova** (36-37) brings **Frost Nova** back 4 seconds sooner."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "The finished rotation",
+     "change": "Nothing new to press. The remaining points go to Arcane for mana. Buy every new rank.",
+     "press": [
+      "**Counterspell** a mob that starts casting.",
+      "**Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.",
+      "**Frost Nova** when it reaches you, then step back out of its reach.",
+      "**Ice Lance** whenever the mob is frozen or **Fingers of Frost** lights up, as soon as its 8-second cooldown allows.",
+      "If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.",
+      "Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand."
+     ],
+     "notes": [
+      "**Arcane Concentration** (45-49) makes about one cast in ten free, and **Arcane Meditation** (55-57) keeps half your mana regeneration going while you cast.",
+      "This build takes neither **Ice Barrier** nor **Cold Snap**. The hand-made Frost build on the spec page has both: **Ice Barrier** before every pull, **Cold Snap** to get a second **Frost Nova**."
+     ]
+    }
+   ],
+   "between": [
+    "Drink your conjured water when you are below about 15% of your mana. That is the tuned rule: topping up earlier cost more time in the fight lab than the wand hits it saved.",
+    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
+    "Eat when you are below two thirds of your health. Conjure both food and water yourself.",
+    "Visit the trainer every even level. **Frostbolt** alone has eleven ranks."
+   ],
+   "other": [
+    "Arcane-Frost is as fast in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up. See its page in this folder.",
+    "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
+   ]
+  }
+ ]
+}

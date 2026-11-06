@@ -1,0 +1,153 @@
+{
+ "class": "paladin",
+ "date": "2026-11-06",
+ "fights": 400,
+ "seed": 3,
+ "guides": {
+  "Retribution": {
+   "build": "leveling-retribution",
+   "rotation": "ret-dps",
+   "provisional_order": true,
+   "fingerprint": "9a6ad137461c",
+   "levels": {
+    "1": {
+     "seconds": 11.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 1.67
+     }
+    },
+    "4": {
+     "seconds": 15.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 2.83,
+      "Judgement": 1.18
+     }
+    },
+    "6": {
+     "seconds": 16.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 3.04,
+      "Judgement": 1.24,
+      "Holy Strike": 1.1
+     }
+    },
+    "8": {
+     "seconds": 18.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 3.63,
+      "Judgement": 1.42,
+      "Holy Strike": 1.27,
+      "Hammer of Justice": 0.07
+     }
+    },
+    "10": {
+     "seconds": 17.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 3.09,
+      "Judgement": 1.32,
+      "Holy Strike": 1.14,
+      "Hammer of Justice": 0.1
+     }
+    },
+    "19": {
+     "seconds": 21.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 4.08,
+      "Judgement": 1.73,
+      "Holy Strike": 1.51,
+      "Hammer of Justice": 0.13
+     }
+    },
+    "20": {
+     "seconds": 19.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 3.56,
+      "Hammer of Justice": 0.29,
+      "Judgement": 1.54,
+      "Holy Strike": 1.33
+     }
+    },
+    "30": {
+     "seconds": 22.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 4.19,
+      "Hammer of Justice": 0.33,
+      "Judgement": 2.03,
+      "Holy Strike": 1.47
+     }
+    },
+    "40": {
+     "seconds": 26.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 5.13,
+      "Hammer of Justice": 0.38,
+      "Judgement": 2.35,
+      "Holy Strike": 1.84
+     }
+    },
+    "43": {
+     "seconds": 27.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 5.26,
+      "Hammer of Justice": 0.4,
+      "Judgement": 2.42,
+      "Holy Strike": 1.89
+     }
+    },
+    "44": {
+     "seconds": 28.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 5.33,
+      "Hammer of Justice": 0.4,
+      "Judgement": 2.44,
+      "Holy Strike": 1.92
+     }
+    },
+    "50": {
+     "seconds": 28.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 5.55,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.57,
+      "Holy Strike": 1.99
+     }
+    },
+    "60": {
+     "seconds": 32.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.01,
+      "Melee": 6.68,
+      "Hammer of Justice": 0.48,
+      "Judgement": 2.95,
+      "Holy Strike": 2.38
+     }
+    }
+   }
+  }
+ }
+}

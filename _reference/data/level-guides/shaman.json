@@ -1,0 +1,158 @@
+{
+ "class": "shaman",
+ "updated": "2026-11-06",
+ "guides": [
+  {
+   "spec": "Enhancement",
+   "intro": "What an Enhancement shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Enhancement is the shaman's fastest leveling spec in the fight lab: you walk in, swing a slow weapon, and add a shock and a strike on short cooldowns. Mana goes to shocks, not to Lightning Bolts. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Swing",
+     "change": "Your weapon and **Rockbiter Weapon** do the work.",
+     "press": [
+      "One **Lightning Bolt** while the mob runs at you, if you like. Mana is no worry yet.",
+      "Then swing until it is dead."
+     ],
+     "notes": [
+      "Keep **Rockbiter Weapon** on your weapon at all times. Recast it when it runs out.",
+      "Heal with **Healing Wave** between fights."
+     ],
+     "unsimulated": ["Lightning Bolt"]
+    },
+    {
+     "from": 4,
+     "title": "Earth Shock",
+     "change": "**Earth Shock**, an instant on a short cooldown. From here on, skip the opening Lightning Bolt.",
+     "press": [
+      "Walk in and swing. No opening Lightning Bolt: its mana costs more drinking than the damage saves.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "notes": [
+      "**Earth Shock** also interrupts. Use it on a caster's spell and the mob walks to you.",
+      "**Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 8,
+     "title": "Lightning Shield",
+     "change": "**Lightning Shield** on yourself: mobs that hit you take damage. **Stoneclaw Totem** is your first panic button.",
+     "press": [
+      "Keep **Lightning Shield** up.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.",
+     "notes": []
+    },
+    {
+     "from": 10,
+     "title": "Searing Totem, and talents begin",
+     "change": "**Searing Totem** at the pull adds free damage for the whole fight. Talent points start.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.",
+     "notes": [
+      "**Flame Shock** (10) shares its cooldown with **Earth Shock**. Against one mob the fight lab never casts it.",
+      "Stay on **Rockbiter Weapon** until level 30. **Flametongue Weapon** (10) is not the leveling imbue.",
+      "Use a slow two-handed weapon as soon as you can: every strike and proc scales with the weapon's hit.",
+      "**Strength of Earth Totem** (10) and **Fire Nova** (12) cost more mana than they return against one mob."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Lesser Healing Wave and Ghost Wolf",
+     "change": "Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Ghost Wolf** (20) between pulls and on every walk back from the graveyard.",
+      "**Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown."
+     ]
+    },
+    {
+     "from": 25,
+     "title": "Stormstrike",
+     "change": "**Stormstrike** (talent): an instant weapon strike that also makes your next shocks hit 20% harder.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free. Cast after a **Stormstrike**, it takes the 20% bonus."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Flurry** (26-29, 32) makes you swing faster after every critical hit. Nothing to press."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Windfury Weapon",
+     "change": "**Windfury Weapon** replaces Rockbiter on your weapon: a chance on every hit for extra swings.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there to 60.",
+      "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 35,
+     "title": "Maelstrom Weapon",
+     "change": "**Maelstrom Weapon** (talent): your hits build stacks, and at 5 your **Lightning Bolt** is instant.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "The stacks come faster with every point of **Maelstrom Weapon** (35-39). Never cast **Lightning Bolt** with its cast time.",
+      "Do not spend the instant bolt on a mob it would overkill."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Rage of the Farseer, the finished rotation",
+     "change": "**Rage of the Farseer** (talent) opens a fight whenever it is ready. Nothing else new: buy every new rank.",
+     "press": [
+      "**Rage of the Farseer** at the start of a fight whenever it is ready.",
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "Keep **Lightning Shield** up.",
+      "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "The remaining points go to Elemental for cheaper, harder shocks: **Convection** (52-56) and **Concussion** (47-51)."
+     ],
+     "unsimulated": ["Rage of the Farseer"]
+    }
+   ],
+   "between": [
+    "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
+    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Recast your weapon imbue when it runs out, and **Lightning Shield** before each pull.",
+    "Visit the trainer every even level for new ranks of **Earth Shock** and **Lightning Shield**."
+   ],
+   "other": [
+    "Elemental is about 16% slower per kill in the fight lab. It plays **Lightning Bolt** from range and is on its own page in this folder.",
+    "A shaman who wants to heal at 60 levels fastest as Enhancement and respecs, or levels into the Restoration build shown on its page."
+   ]
+  }
+ ]
+}

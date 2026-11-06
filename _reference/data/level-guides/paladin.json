@@ -1,0 +1,128 @@
+{
+ "class": "paladin",
+ "updated": "2026-11-06",
+ "guides": [
+  {
+   "spec": "Retribution",
+   "intro": "What a Retribution paladin presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A paladin's fight is simple: a seal on yourself, your weapon's swings, and two strikes on 10-second cooldowns. Most new spells are safety tools, not rotation. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Seal of Righteousness",
+     "change": "**Seal of Righteousness** on yourself, then your weapon does the work.",
+     "press": [
+      "**Seal of Righteousness** before the pull. It lasts 30 seconds: put it back when it runs out.",
+      "Walk in and swing."
+     ],
+     "notes": [
+      "Keep **Devotion Aura** on. Heal with **Holy Light** between fights.",
+      "Use a two-handed weapon from the first one you find. Every seal and strike hits harder with a slow, heavy weapon."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Judgement",
+     "change": "**Judgement** unleashes your seal on the mob every 10 seconds. In Forever the seal stays up afterwards.",
+     "press": [
+      "Keep **Seal of Righteousness** up.",
+      "**Judgement** whenever it is ready."
+     ],
+     "notes": [
+      "**Blessing of Might** (4) on yourself, always."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Holy Strike",
+     "change": "**Holy Strike**, an instant weapon strike every 10 seconds. With **Judgement** it is your whole rotation until 20.",
+     "press": [
+      "Keep **Seal of Righteousness** up.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**."
+     ],
+     "if_hurt": "Below a third of your health: **Divine Protection**, then **Holy Light** inside it."
+    },
+    {
+     "from": 8,
+     "title": "Hammer of Justice",
+     "change": "**Hammer of Justice**, a stun: stop a caster, or buy time to heal.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "Keep **Seal of Righteousness** up.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Purify** (8) removes a poison or a disease. It is not part of the fight."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun."
+    },
+    {
+     "from": 10,
+     "title": "Talents begin, Lay on Hands",
+     "change": "Talent points start. **Lay on Hands** is a full heal for emergencies. Nothing new to press in a normal fight.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "Keep **Seal of Righteousness** up.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of Fury** (10) and **Righteous Fury** (10) are for tanking. Leave them alone while you level as Retribution.",
+      "**Retribution Aura** (16) hurts whatever hits you. The fight lab assumes **Devotion Aura**; against single mobs either is fine.",
+      "**Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 20,
+     "title": "Seal of Command and the stun combo",
+     "change": "**Seal of Command** (talent) replaces Seal of Righteousness. Its **Judgement** hits a stunned mob twice as hard, so stun first.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "Keep **Seal of Command** up.",
+      "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Consecration** (20): leave it off your bar against single mobs. The tuned rotation never casts it. It is for packs.",
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.",
+      "**Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. **Divine Shield** (34) is a second, stronger panic button."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 44,
+     "title": "Hammer of Wrath",
+     "change": "**Hammer of Wrath**, a ranged finisher for mobs below 20% health. Optional: the tuned rotation leaves it out.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "Keep **Seal of Command** up.",
+      "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-02 switch it off against single mobs: kills measured no faster with it. Use it on a mob that runs.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    }
+   ],
+   "between": [
+    "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
+    "Drink only when you are below about 15% of your mana. Judgements and strikes are cheap, and your swings cost nothing.",
+    "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
+    "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
+   ],
+   "other": [
+    "A paladin who wants to arrive at 60 as a healer or a tank can level into that build instead. The Holy and Protection leveling pages in this folder show how, and what it costs in speed.",
+    "Packs of mobs: **Consecration** and the Protection tree's tools. Single pulls are faster for Retribution."
+   ]
+  }
+ ]
+}

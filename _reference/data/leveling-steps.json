@@ -105,7 +105,7 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "fire-leveling": {
@@ -123,7 +123,7 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "frostfire-leveling": {
@@ -139,7 +139,7 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "frost-aoe": {
@@ -263,7 +263,7 @@
     "Below a third of your health outside **Shadowform**: **Flash Heal**."
    ],
    "between": [
-    "Drink only below 15% mana, eat below two thirds of your health (**Renew** yourself instead outside **Shadowform**)."
+    "Drink only below 15% mana, eat below 40% of your health (the tuned rule) (**Renew** yourself instead outside **Shadowform**)."
    ]
   },
   "holy-leveling": {
@@ -477,7 +477,7 @@
     "Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**."
    ],
    "between": [
-    "Bandage below 60% health, eat below 50%."
+    "Bandage below 60% health, eat below 40% (the tuned rule)."
    ]
   },
   "fury-dw-raid": {
@@ -496,7 +496,7 @@
     "Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**)."
    ],
    "between": [
-    "Bandage below 60% health, eat below 40%."
+    "Bandage below 60% health, eat below two thirds of your health."
    ]
   },
   "prot-leveling": {

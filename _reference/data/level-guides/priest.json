@@ -1,0 +1,121 @@
+{
+ "class": "priest",
+ "updated": "2026-11-06",
+ "guides": [
+  {
+   "spec": "Shadow",
+   "intro": "What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Shadow levels on a small mana budget: one damage-over-time spell, **Mind Blast** on cooldown, and the wand for everything else until **Mind Flay** arrives at 20. The spec comes alive at 40 with **Shadowform**. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Smite, until you own a wand",
+     "change": "**Smite** is your only attack. Buy or beg a wand as early as you can.",
+     "press": [
+      "**Smite** until the mob is dead.",
+      "Once you own a wand: wand the mob down instead. It costs no mana, and it is how a priest levels until 20."
+     ],
+     "notes": [
+      "Keep **Power Word: Fortitude** on yourself at all times, from here to 60.",
+      "The fight lab assumes a wand from level 1 and never casts **Smite**, so these levels are not simulated as you will play them."
+     ],
+     "unsimulated": [
+      "Smite"
+     ],
+     "no_numbers": true
+    },
+    {
+     "from": 4,
+     "title": "Shadow Word: Pain",
+     "change": "**Shadow Word: Pain** at the pull, then the wand. One cast per mob.",
+     "press": [
+      "**Shadow Word: Pain** to pull.",
+      "Wand until the mob is dead."
+     ],
+     "notes": [
+      "**Power Word: Shield** (6): cast it before a pull you start below half your health, not every pull.",
+      "**Renew** (8) heals you between fights for less mana than **Lesser Heal**.",
+      "Stop casting **Smite**. The tuned rotation never uses it: the wand is free and the mana buys more as **Shadow Word: Pain**."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "Mind Blast, and talents begin",
+     "change": "**Mind Blast** whenever it is ready. Talent points start with **Spirit Tap**.",
+     "press": [
+      "**Shadow Word: Pain** to pull.",
+      "**Mind Blast** whenever it is ready.",
+      "Wand between casts, and to finish."
+     ],
+     "if_hurt": "**Power Word: Shield** before a pull you start below half your health.",
+     "notes": [
+      "**Spirit Tap** (10-14) returns mana after every kill. It is why you rarely drink.",
+      "**Inner Fire** (12) joins **Power Word: Fortitude** as a buff you always keep up.",
+      "**Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.",
+      "**Starshards** (10) and **Holy Fire** (20) are not part of the Shadow rotation."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Mind Flay",
+     "change": "**Mind Flay** (talent) replaces most of your wanding: a channel that also slows the mob.",
+     "press": [
+      "**Shadow Word: Pain** to pull.",
+      "**Mind Blast** whenever it is ready.",
+      "**Mind Flay** in between. It slows the mob while you channel.",
+      "Your wand finishes a mob with a hit or two left."
+     ],
+     "if_hurt": "Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.",
+     "notes": [
+      "**Devouring Plague** (20): leave it off your bar. The tuned rotation never casts it: it costs too much mana for what it does before the mob dies.",
+      "**Improved Mind Blast** (24, 31-34) shortens the cooldown, so **Mind Blast** comes round more often as you level."
+     ]
+    },
+    {
+     "from": 32,
+     "title": "Shadow Word: Death",
+     "change": "**Shadow Word: Death**, an instant finisher. With **Early Demise** at 35 it is for any mob below 20% health.",
+     "press": [
+      "**Shadow Word: Pain** to pull.",
+      "**Mind Blast** whenever it is ready.",
+      "**Shadow Word: Death** when one cast will kill the mob.",
+      "**Mind Flay** in between.",
+      "Your wand finishes a mob with a hit or two left."
+     ],
+     "if_hurt": "Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.",
+     "notes": [
+      "**Early Demise** (35) lets you cast **Shadow Word: Death** on any mob below 20% of its health, not only for the killing blow.",
+      "**Shadow Word: Death** hurts you if it does not kill. Keep it for the finish."
+     ]
+    },
+    {
+     "from": 39,
+     "title": "Vampiric Embrace, then Shadowform",
+     "change": "**Vampiric Embrace** (talent, 39) opens the pull and heals you as you deal damage. **Shadowform** (talent, 40) stays on for good.",
+     "press": [
+      "Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.",
+      "**Mind Blast** whenever it is ready.",
+      "**Shadow Word: Death** whenever the mob is below 20% of its health, or when one cast will kill it.",
+      "**Mind Flay** in between.",
+      "Your wand finishes a mob with a hit or two left."
+     ],
+     "if_hurt": "**Psychic Scream** if a mob is on you and you are below 40% of your health. At 39, before Shadowform, a **Flash Heal** below a third.",
+     "notes": [
+      "**Shadowform** at 40 is the biggest jump of the whole climb: the fight lab's time per kill drops by more than a third. Never leave it.",
+      "In **Shadowform** you cannot cast Holy spells. Eat or bandage between fights instead of healing yourself.",
+      "The remaining points go to Discipline for mana: **Twin Disciplines** (45-49), **Mental Strength** (53-55) and **Meditation** (58-60)."
+     ]
+    }
+   ],
+   "between": [
+    "Drink only when you are below about 15% of your mana. **Spirit Tap** and the wand keep you going.",
+    "Eat when you are below 40% of your health. Before **Shadowform**, a **Renew** on yourself does the same for a little mana.",
+    "Recast **Power Word: Fortitude** and **Inner Fire** when they run out.",
+    "Visit the trainer every even level, and replace your wand whenever a better one turns up: it is half your damage before 20."
+   ],
+   "other": [
+    "Discipline and Holy have their own leveling pages in this folder, for a priest who wants to arrive at 60 as a healer. Both are slower per kill.",
+    "After 40, Shadow is among the faster levelers in the fight lab. Before 20 every priest plays the same wand game."
+   ]
+  }
+ ]
+}

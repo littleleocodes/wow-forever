@@ -1,0 +1,146 @@
+{
+ "class": "warrior",
+ "updated": "2026-11-06",
+ "guides": [
+  {
+   "spec": "Arms",
+   "intro": "What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. The whole game is spending it on the right attack. You stay in Battle Stance with a two-handed weapon from 1 to 60. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Heroic Strike",
+     "change": "**Heroic Strike** turns rage into a harder next swing.",
+     "press": [
+      "Keep **Battle Shout** up.",
+      "**Heroic Strike** whenever you have the rage for it."
+     ],
+     "notes": [
+      "Stay in **Battle Stance**. Use a two-handed weapon from the first one you find."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Charge and Rend",
+     "change": "**Charge** opens every fight with free rage and a stun. **Rend** is a bleed you apply once.",
+     "press": [
+      "**Charge** to open every fight.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with the rage you have left."
+     ],
+     "notes": [
+      "**Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "Bloodrage, and talents begin",
+     "change": "**Bloodrage** gives you rage before you **Charge**. Talent points start.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with the rage you have left."
+     ],
+     "notes": [
+      "**Defensive Stance**, **Taunt** and **Sunder Armor** (10) are for tanking. Arms levels in **Battle Stance**.",
+      "**Improved Rend** (10-12) is why the one **Rend** per mob is worth its rage."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Overpower",
+     "change": "**Overpower** lights up when the mob dodges: a cheap hit that cannot be dodged. Keep rage for it.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Keep **Battle Shout** up.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Improved Overpower** (15-16) and **Improved Charge** (17-18) make both buttons better. Nothing new to press.",
+      "**Shield Bash** (12) and **Revenge** (14) need a shield or Defensive Stance. Skip them."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Victory Rush",
+     "change": "**Victory Rush** is a free strike after each kill. Open the next fight with it when you are hurt.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Slam** (20): leave it off your bar until **Improved Slam** at 35. **Cleave** (20) is for two or more mobs.",
+      "**Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press."
+     ]
+    },
+    {
+     "from": 24,
+     "title": "Execute",
+     "change": "**Execute** finishes a mob below 20% health. From then on it comes first.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** three times as often.",
+      "**Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**."
+     ]
+    },
+    {
+     "from": 35,
+     "title": "Slam",
+     "change": "**Improved Slam** (talent) makes **Slam** the better use of spare rage, ahead of Heroic Strike.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Whirlwind** (36) needs **Berserker Stance**. This rotation never leaves **Battle Stance**.",
+      "**Sweeping Strikes** (39) is for a second mob: press it, then **Thunder Clap** and **Cleave**."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Mortal Strike, the finished rotation",
+     "change": "**Mortal Strike** (talent): your main attack from here to 60, whenever it is ready.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Mortal Strike** whenever it is ready.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**, and 30 more when **Mortal Strike** is almost ready."
+     ],
+     "notes": [
+      "The remaining points go to Fury: **Cruelty** (41-45) for critical hits, **Unbridled Wrath** (47-50) and **Enrage** (52-56) for rage and damage.",
+      "Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**."
+     ]
+    }
+   ],
+   "between": [
+    "Bandage when you are below 60% of your health. Keep First Aid trained: it is a warrior's main way to recover.",
+    "Eat when you are below 40% of your health. That is the tuned rule for Arms.",
+    "Visit the trainer every even level. **Heroic Strike** and **Rend** have many ranks."
+   ],
+   "other": [
+    "Fury with a weapon in each hand, and Protection for a warrior who wants to arrive at 60 as a tank, have their own pages in this folder.",
+    "Pulling two mobs at a time works from 39 with **Sweeping Strikes**. Before that, one at a time is faster and safer."
+   ]
+  }
+ ]
+}

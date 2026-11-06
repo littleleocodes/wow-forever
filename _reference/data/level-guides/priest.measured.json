@@ -1,0 +1,160 @@
+{
+ "class": "priest",
+ "date": "2026-11-06",
+ "fights": 400,
+ "seed": 3,
+ "guides": {
+  "Shadow": {
+   "build": "shadow-open-leveling",
+   "rotation": "shadow-dps",
+   "provisional_order": false,
+   "fingerprint": "e6f52ff40657",
+   "levels": {
+    "1": {
+     "seconds": 12.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Wand": 3.66
+     }
+    },
+    "4": {
+     "seconds": 19.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.03,
+      "Wand": 6.01
+     }
+    },
+    "9": {
+     "seconds": 26.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.03,
+      "Wand": 10.37,
+      "Power Word: Shield": 0.09
+     }
+    },
+    "10": {
+     "seconds": 22.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.03,
+      "Mind Blast": 1.81,
+      "Wand": 5.73
+     }
+    },
+    "19": {
+     "seconds": 29.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.14,
+      "Wand": 8.22,
+      "Psychic Scream": 0.08,
+      "Power Word: Shield": 0.18
+     }
+    },
+    "20": {
+     "seconds": 32.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 1.99,
+      "Mind Flay": 2.89,
+      "Wand": 1.85
+     }
+    },
+    "30": {
+     "seconds": 35.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.06,
+      "Mind Flay": 3.2,
+      "Wand": 1.82
+     }
+    },
+    "31": {
+     "seconds": 36.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.09,
+      "Mind Flay": 3.39,
+      "Wand": 2.1
+     }
+    },
+    "32": {
+     "seconds": 34.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 1.9,
+      "Mind Flay": 2.96,
+      "Shadow Word: Death": 0.98,
+      "Wand": 1.01
+     }
+    },
+    "38": {
+     "seconds": 36.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.05,
+      "Mind Flay": 2.73,
+      "Shadow Word: Death": 0.96,
+      "Wand": 1.07
+     }
+    },
+    "39": {
+     "seconds": 37.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Vampiric Embrace": 0.77,
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.09,
+      "Mind Flay": 2.9,
+      "Shadow Word: Death": 0.96,
+      "Wand": 1.09
+     }
+    },
+    "40": {
+     "seconds": 21.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Vampiric Embrace": 0.63,
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.0,
+      "Mind Flay": 2.24,
+      "Shadow Word: Death": 0.96,
+      "Wand": 0.78
+     }
+    },
+    "50": {
+     "seconds": 21.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Vampiric Embrace": 0.6,
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 2.02,
+      "Mind Flay": 2.06,
+      "Shadow Word: Death": 0.94,
+      "Wand": 0.86
+     }
+    },
+    "60": {
+     "seconds": 20.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Vampiric Embrace": 0.54,
+      "Shadow Word: Pain": 1.0,
+      "Mind Blast": 1.91,
+      "Mind Flay": 2.03,
+      "Shadow Word: Death": 0.8,
+      "Wand": 0.51
+     }
+    }
+   }
+  }
+ }
+}

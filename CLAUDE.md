@@ -221,6 +221,20 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `heallab/rotation_opt.py` tunes the heal-choice settings of `heallab/tables.py` (downranking, HoT refresh, emergency and raid-heal
   thresholds, group-heal count, potion timing) on capacity; `heallab/rotations/<class>-<spec>.json`, applied by
   `tables.apply_rotation` in run.py and calibrate.py (`WOW_HL_ROTATION=default` for the defaults; `--set` still overrides).
+- **Leveling guides by level** (2026-11-06, user request: "Can you make a leveling guide for each class? What the rotation should be
+  throughout the leveling process as more spells are unlocked? Starting with Mage and Paladin"): `_reference/data/level_guides.py`
+  writes `<class>/leveling/<spec slug>-by-level.md` from the hand-kept `_reference/data/level-guides/<class>.json` (per guide: `spec`,
+  `intro`, `stages` = {`from`, `title`, `change`, `press`, `if_hurt`, `notes`}, `between`, `other`). Only the stage texts are hand-kept:
+  the spells the trainer teaches in a stage, the new ranks to buy, the talents the build's order takes there and the fight lab's
+  seconds and presses per kill come from the data (the spec's leveling page pick; an order-less pick gets the stats model's order and
+  a "provisional talents" banner). `--measure` runs the lab at each stage's levels (seconds; record `<class>.measured.json`, shown
+  only while its fingerprint matches the build, order and tuned rules), `--check` validates (a bold name is a spell or talent; a
+  pressed spell is trained, or its talent taken, by the stage's first level; warnings when the lab presses a spell the stage never
+  names or never casts one it names), `--write` writes the pages. `render_modes.py` writes them at every regen (its leveling folder
+  is emptied first), links them from the spec's leveling page and lists them in the class's leveling index. Write a class's guide
+  after its leveling search has settled, re-run `--measure` when its build, order or rules change, and keep the hand-kept
+  "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
+  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow).
 - **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`
   chains (refresh →) effects → calibrate ↔ optimize until the optimizer's leveling build repeats (new builds are saved as
   `<class>/research/leveling/fightlab/candidates/cand-<tag>-rN.json`) → race (hand draft vs every candidate) → report

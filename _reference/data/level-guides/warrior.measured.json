@@ -1,0 +1,209 @@
+{
+ "class": "warrior",
+ "date": "2026-11-06",
+ "fights": 400,
+ "seed": 3,
+ "guides": {
+  "Arms": {
+   "build": "arms-open-leveling",
+   "rotation": "arms-2h-raid",
+   "provisional_order": false,
+   "fingerprint": "85cbd042fcdc",
+   "levels": {
+    "1": {
+     "seconds": 12.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 1.2,
+      "Heroic Strike": 0.53
+     }
+    },
+    "4": {
+     "seconds": 14.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 0.69,
+      "Melee": 1.8,
+      "Battle Shout": 0.08,
+      "Rend": 1.04,
+      "Heroic Strike": 0.95
+     }
+    },
+    "9": {
+     "seconds": 18.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 0.97,
+      "Melee": 2.41,
+      "Battle Shout": 0.1,
+      "Rend": 1.19,
+      "Heroic Strike": 1.64
+     }
+    },
+    "10": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.27,
+      "Charge": 0.98,
+      "Melee": 2.23,
+      "Battle Shout": 0.1,
+      "Rend": 1.17,
+      "Heroic Strike": 1.8
+     }
+    },
+    "12": {
+     "seconds": 19.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.27,
+      "Charge": 0.99,
+      "Melee": 2.39,
+      "Battle Shout": 0.11,
+      "Overpower": 0.29,
+      "Rend": 1.16,
+      "Heroic Strike": 1.78
+     }
+    },
+    "19": {
+     "seconds": 23.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 2.71,
+      "Battle Shout": 0.13,
+      "Overpower": 0.37,
+      "Rend": 1.24,
+      "Heroic Strike": 2.42
+     }
+    },
+    "20": {
+     "seconds": 22.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.32,
+      "Charge": 1.0,
+      "Melee": 2.56,
+      "Battle Shout": 0.12,
+      "Overpower": 0.32,
+      "Rend": 1.17,
+      "Heroic Strike": 2.38,
+      "Victory Rush": 0.43
+     }
+    },
+    "24": {
+     "seconds": 21.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.31,
+      "Charge": 1.0,
+      "Melee": 3.22,
+      "Battle Shout": 0.12,
+      "Overpower": 0.3,
+      "Rend": 1.17,
+      "Heroic Strike": 1.5,
+      "Execute": 0.94,
+      "Victory Rush": 0.44
+     }
+    },
+    "30": {
+     "seconds": 24.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 3.47,
+      "Battle Shout": 0.14,
+      "Overpower": 0.6,
+      "Rend": 1.15,
+      "Heroic Strike": 2.03,
+      "Execute": 0.94,
+      "Victory Rush": 0.65
+     }
+    },
+    "34": {
+     "seconds": 24.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 3.41,
+      "Battle Shout": 0.14,
+      "Overpower": 0.83,
+      "Rend": 1.19,
+      "Heroic Strike": 2.1,
+      "Execute": 0.95,
+      "Victory Rush": 0.63
+     }
+    },
+    "35": {
+     "seconds": 21.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.3,
+      "Charge": 0.99,
+      "Melee": 3.67,
+      "Battle Shout": 0.12,
+      "Overpower": 0.91,
+      "Rend": 1.19,
+      "Slam": 1.19,
+      "Heroic Strike": 1.09,
+      "Execute": 0.86,
+      "Victory Rush": 0.52
+     }
+    },
+    "40": {
+     "seconds": 23.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 5.26,
+      "Battle Shout": 0.13,
+      "Overpower": 0.94,
+      "Mortal Strike": 1.89,
+      "Rend": 1.09,
+      "Victory Rush": 0.6,
+      "Execute": 0.88,
+      "Slam": 0.45
+     }
+    },
+    "50": {
+     "seconds": 24.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 5.39,
+      "Battle Shout": 0.14,
+      "Overpower": 1.03,
+      "Mortal Strike": 2.1,
+      "Rend": 1.16,
+      "Slam": 0.55,
+      "Execute": 0.92,
+      "Victory Rush": 0.61,
+      "Heroic Strike": 0.05
+     }
+    },
+    "60": {
+     "seconds": 26.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.35,
+      "Charge": 1.0,
+      "Melee": 5.86,
+      "Battle Shout": 0.15,
+      "Overpower": 1.15,
+      "Mortal Strike": 2.34,
+      "Rend": 1.16,
+      "Slam": 0.66,
+      "Execute": 1.04,
+      "Victory Rush": 0.67,
+      "Heroic Strike": 0.1
+     }
+    }
+   }
+  }
+ }
+}
