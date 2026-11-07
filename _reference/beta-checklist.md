@@ -43,9 +43,9 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Balance leveling build: check it while leveling at launch.
 - An open-search Feral Combat leveling build: check it while leveling at launch.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Hunter
 
@@ -194,10 +194,10 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - Improved Seals rank scaling (5% read at rank 1).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Holy/Protection hybrid leveling build: check it while leveling at launch.
 - An open-search Prot-Ret leveling build: check it while leveling at launch.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Priest
 
@@ -240,11 +240,11 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Shadow Word: Death availability and level.
 - Whether Shadowform's demo crit bonus (text truncated) changes the value of Blackout/Early Demise.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
-- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Discipline leveling build: check it while leveling at launch.
 - An open-search Smite leveling build: check it while leveling at launch.
 - An open-search Shadow leveling build: check it while leveling at launch.
+- Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Rogue
 
@@ -334,10 +334,10 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 - Two-hander / dual-wield availability for shamans.
 - Mental Dexterity and Mental Quickness scaling at max rank (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 - An open-search Enhancement leveling build: check it while leveling at launch.
 - An open-search Elemental leveling build: check it while leveling at launch.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Warlock
 
@@ -429,8 +429,8 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Arms leveling build: check it while leveling at launch.
 - An open-search Fury leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 

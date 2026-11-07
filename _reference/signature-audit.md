@@ -14,7 +14,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Feral Combat | slot | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 2.68, Ferocious Bite 0.99 | 97% (min 80%) | 23.1 | OK |
 | Feral Combat | slot | opt-feral-cat-dps-leveling-st (9/30/12) | feral-cat-dps | - | Claw 2.67, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
 | Feral Combat | slot | leveling-feral (9/30/12) | feral-cat-dps | - | Claw 2.75, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
-| Restoration | page | restoration-leveling (11/4/36) | feral-cat-dps | - | - | - (min -) | 28.4 | no rule |
+| Restoration | page | restoration-leveling (12/1/38) | feral-cat-dps | - | - | - (min -) | 27.8 | no rule |
 
 ## Hunter
 
@@ -52,8 +52,8 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Holy | page | holy-leveling (30/16/5) | holy-leveling | - | Holy Shock 0.00 | 73% (min 60%) | 34.9 | FAIL: lacks Holy Shock |
-| Protection | page | protection-leveling (0/34/17) | prot-leveling | - | Holy Shield 2.12 | 76% (min 60%) | 29.8 | OK |
+| Holy | page | holy-leveling (32/5/14) | holy-leveling | - | Holy Shock 0.65 | 74% (min 60%) | 38.7 | FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50) |
+| Protection | page | protection-leveling (0/35/16) | prot-leveling | - | Holy Shield 2.08 | 76% (min 60%) | 31.2 | OK |
 | Retribution | page | leveling-retribution (12/9/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 28.0 | OK |
 | Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 28.0 | OK |
 | Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (13/25/13) | prot-leveling | - | - | - (min -) | 30.8 | no rule |
@@ -66,7 +66,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
 | Discipline | page | discipline-open-leveling (30/0/21) | discipline-leveling | - | Penance 1.00, Smite 1.23 | 46% (min 40%) | 41.4 | OK |
-| Discipline | slot | discipline-leveling (30/21/0) | discipline-leveling | - | Penance 1.03, Smite 1.24 | 44% (min 40%) | 46.3 | FAIL: Penance taken at 33 (its tree allows 30) |
+| Discipline | slot | discipline-leveling (30/21/0) | discipline-leveling | - | Penance 1.03, Smite 1.24 | 44% (min 40%) | 46.3 | OK |
 | Holy | page | holy-leveling (22/29/0) | holy-leveling | - | Smite 4.19, Holy Fire 1.55 | 41% (min 40%) | 56.1 | OK |
 | Shadow | page | shadow-open-leveling (13/3/35) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.93, Mind Flay 2.09 | 84% (min 60%) | 24.5 | OK |
 | Shadow | slot | opt-shadow-dps-solo-60 (16/2/33) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.20, Mind Flay 2.64 | 82% (min 60%) | 25.0 | OK |
@@ -127,5 +127,5 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Fury | slot | opt-fury-dw-raid-solo-60 (11/40/0) | fury-dw-raid | - | Bloodthirst 2.94 | 90% (min 80%) | 26.2 | OK |
 | Fury | slot | opt-arms-2h-raid-leveling-aoe (20/31/0) | fury-dw-raid | - | Bloodthirst 2.41 | 80% (min 80%) | 27.1 | FAIL: core share 80% < 80% |
 | Protection | page | protection-open-leveling (3/16/32) | prot-leveling | - | Shield Slam 3.52 | 92% (min 70%) | 27.6 | OK |
-| Protection | slot | protection-leveling (17/3/31) | prot-leveling | - | Shield Slam 3.66 | 90% (min 70%) | 28.1 | OK |
+| Protection | slot | protection-leveling (17/3/31) | prot-leveling | - | Shield Slam 3.61 | 90% (min 70%) | 28.4 | OK |
 

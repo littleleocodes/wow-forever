@@ -204,7 +204,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "eabade1df489",
+    "fingerprint": "b4bfa90a3d25",
     "date": "2026-11-07",
     "fights": 300
    }
@@ -768,8 +768,8 @@
     "spec": "Holy",
     "rotation": "holy-leveling",
     "ok": false,
-    "verdict": "FAIL: lacks Holy Shock",
-    "core_share": 0.7291,
+    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50)",
+    "core_share": 0.7418,
     "min_share": 0.6,
     "required": [
      "Holy Shock"
@@ -783,13 +783,24 @@
      "Seal of Command"
     ],
     "casts_60": {
-     "Holy Shock": 0.0
+     "Holy Shock": 0.65
     },
-    "missing_talents": [
-     "Holy Shock"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Holy Shock",
+      30,
+      0.177,
+      0.5
+     ],
+     [
+      "Holy Shock",
+      40,
+      0.297,
+      0.5
+     ]
     ],
-    "uncast": [],
-    "fingerprint": "cea17ec1277e",
+    "fingerprint": "5fd39c4df9c3",
     "date": "2026-11-07",
     "fights": 300
    },
@@ -798,7 +809,7 @@
     "rotation": "prot-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7626,
+    "core_share": 0.7607,
     "min_share": 0.6,
     "required": [
      "Holy Shield"
@@ -812,11 +823,11 @@
      "Seal of Righteousness"
     ],
     "casts_60": {
-     "Holy Shield": 2.12
+     "Holy Shield": 2.08
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "9f2837f1a5a9",
+    "fingerprint": "facb91b898b3",
     "date": "2026-11-07",
     "fights": 300
    },
@@ -1003,8 +1014,8 @@
    "discipline-leveling": {
     "spec": "Discipline",
     "rotation": "discipline-leveling",
-    "ok": false,
-    "verdict": "FAIL: Penance taken at 33 (its tree allows 30)",
+    "ok": true,
+    "verdict": "OK",
     "core_share": 0.4352,
     "min_share": 0.4,
     "required": [
@@ -1023,7 +1034,7 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d2cd42fae0a9",
+    "fingerprint": "d613fff58d49",
     "date": "2026-11-07",
     "fights": 300
    },
@@ -1048,7 +1059,7 @@
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "40970581782e",
+    "fingerprint": "27b2969a03cb",
     "date": "2026-11-07",
     "fights": 300
    },
@@ -2106,7 +2117,7 @@
     "rotation": "prot-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9026,
+    "core_share": 0.9022,
     "min_share": 0.7,
     "required": [
      "Shield Slam"
@@ -2119,11 +2130,11 @@
      "Thunder Clap"
     ],
     "casts_60": {
-     "Shield Slam": 3.66
+     "Shield Slam": 3.61
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "a3131487cbb6",
+    "fingerprint": "4eee02063823",
     "date": "2026-11-07",
     "fights": 300
    }
@@ -2387,7 +2398,7 @@
     "spec": "Restoration",
     "name": "Restoration",
     "build": "restoration-leveling",
-    "split": "11/4/36",
+    "split": "12/1/38",
     "rotation": "feral-cat-dps",
     "rules": "tuned",
     "kind": "page",
@@ -2397,17 +2408,17 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 28.44,
+    "weighted": 27.82,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
      "Melee": 0.295,
-     "Ferocious Bite": 0.19,
+     "Ferocious Bite": 0.194,
      "Claw": 0.159,
-     "Rake": 0.156,
-     "Ravage": 0.128,
+     "Rake": 0.155,
+     "Ravage": 0.132,
      "Thorns": 0.048
     }
    }
@@ -3232,7 +3243,7 @@
     "spec": "Holy",
     "name": "Holy",
     "build": "holy-leveling",
-    "split": "30/16/5",
+    "split": "32/5/14",
     "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -3249,30 +3260,42 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shock": 0.0
+     "Holy Shock": 0.65
     },
-    "core_share": 0.7291,
+    "core_share": 0.7418,
     "min_share": 0.6,
-    "weighted": 34.91,
-    "verdict": "FAIL: lacks Holy Shock",
+    "weighted": 38.66,
+    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50)",
     "ok": false,
-    "missing_talents": [
-     "Holy Shock"
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Holy Shock",
+      30,
+      0.177,
+      0.5
+     ],
+     [
+      "Holy Shock",
+      40,
+      0.297,
+      0.5
+     ]
     ],
-    "uncast": [],
     "top_shares": {
-     "Melee": 0.388,
-     "Seal of Righteousness": 0.174,
-     "Judgement": 0.167,
-     "Holy Strike": 0.14,
-     "Hammer of Wrath": 0.131
+     "Melee": 0.301,
+     "Judgement": 0.188,
+     "Seal of Righteousness": 0.178,
+     "Hammer of Wrath": 0.139,
+     "Holy Strike": 0.119,
+     "Holy Shock": 0.076
     }
    },
    {
     "spec": "Protection",
     "name": "Protection",
     "build": "protection-leveling",
-    "split": "0/34/17",
+    "split": "0/35/16",
     "rotation": "prot-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -3289,22 +3312,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shield": 2.12
+     "Holy Shield": 2.08
     },
-    "core_share": 0.7626,
+    "core_share": 0.7607,
     "min_share": 0.6,
-    "weighted": 29.81,
+    "weighted": 31.18,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
      "Melee": 0.322,
-     "Holy Shield": 0.207,
+     "Holy Shield": 0.201,
      "Holy Strike": 0.174,
-     "Judgement": 0.15,
+     "Judgement": 0.153,
      "Seal of Fury": 0.084,
-     "Reckoning": 0.063
+     "Reckoning": 0.065
     }
    },
    {
@@ -3587,9 +3610,9 @@
     },
     "core_share": 0.4352,
     "min_share": 0.4,
-    "weighted": 46.3,
-    "verdict": "FAIL: Penance taken at 33 (its tree allows 30)",
-    "ok": false,
+    "weighted": 46.34,
+    "verdict": "OK",
+    "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
@@ -3624,7 +3647,7 @@
     },
     "core_share": 0.4135,
     "min_share": 0.4,
-    "weighted": 56.06,
+    "weighted": 56.13,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
@@ -5168,21 +5191,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Shield Slam": 3.66
+     "Shield Slam": 3.61
     },
-    "core_share": 0.9026,
+    "core_share": 0.9022,
     "min_share": 0.7,
-    "weighted": 28.15,
+    "weighted": 28.4,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Shield Slam": 0.387,
-     "Melee": 0.312,
-     "Revenge": 0.171,
-     "Rend": 0.079,
-     "Heroic Strike": 0.032,
+     "Shield Slam": 0.38,
+     "Melee": 0.313,
+     "Revenge": 0.175,
+     "Rend": 0.078,
+     "Heroic Strike": 0.034,
      "Deep Wounds": 0.011
     }
    }

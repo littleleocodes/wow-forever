@@ -2,11 +2,9 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > [Restoration](restoration.md) > Level by level
 
-What a Restoration druid presses from level 1 to 60 while leveling. Restoration has no leveling rotation of its own, so it levels as a cat with the Feral guide's play: **Wrath** and **Moonfire** to 9, **Bear Form** from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The talents are your raid healer's (11/4/36): they make your heals and shifts stronger and cheaper more than your claws, so kills take longer than with the Feral build, and you reach 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.
+What a Restoration druid presses from level 1 to 60 while leveling. Restoration has no leveling rotation of its own, so it levels as a cat with the Feral guide's play: **Wrath** and **Moonfire** to 9, **Bear Form** from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The talents are your raid healer's (12/1/38): they make your heals and shifts stronger and cheaper more than your claws, so kills take longer than with the Feral build, and you reach 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 11/4/36 ([open the talent tree](https://talentsforever.com/druid/60/05302001-04-153311505310305-12)), the one on the [Restoration leveling page](restoration.md), which has the full talent table and the reasons behind the level-60 rotation.
-
-> **Provisional talents.** The druid's leveling search has not run on the current game data yet, so the page's build has no talent order of its own. The talent levels below follow the stats model's order and will change when the search finishes; the spells the trainer teaches, and when to press them, will not.
+**The build:** 12/1/38 ([open the talent tree](https://talentsforever.com/druid/60/25022001-01-155310505311305-12)), the one on the [Restoration leveling page](restoration.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -19,7 +17,7 @@ What a Restoration druid presses from level 1 to 60 while leveling. Restoration 
 | 20-23 | **Cat Form**: **Prowl** up behind the mob, **Claw** to 2 points, **Rip**. |
 | 24-31 | **Rake** once, **Claw** to build, **Ferocious Bite** as soon as it kills. |
 | 32-39 | **Ravage** from **Prowl**: the opener that takes a third of the mob. |
-| 40-60 | Nothing new to press. **Furor** (45-48) gives you energy back after a shift; the rest of your points are for healing. |
+| 40-60 | Nothing new to press: your points from here are for the healer at 60. |
 
 ## Keybinds by level
 
@@ -40,7 +38,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 3 | Poison off you | — | — | — | **Cure Poison** | Cure Poison | Cure Poison; **Abolish Poison** from 26 | Abolish Poison | Abolish Poison |
 | 4 | A curse off you | — | — | — | — | — | **Remove Curse** | Remove Curse | Remove Curse |
 | C | Mana for a healer, or for you | — | — | — | — | — | — | — | **Innervate** |
-| Middle mouse | The instant heal: eats your Rejuvenation or Regrowth (groups) | — | — | — | — | — | — | **Swiftmend** | Swiftmend |
+| Middle mouse | The instant heal: eats your Rejuvenation or Regrowth (groups) | — | — | — | — | — | — | **Swiftmend** from 37 | Swiftmend |
 
 **Action bar 1 in Bear Form (levels 10-19; WoW swaps the bar when you shift)**
 
@@ -94,13 +92,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — |
 | Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — |
 | Shift+1 | Groups: the group heal, from caster form | — | — | — | — | — | **Tranquility** from 30 | Tranquility | Tranquility |
-| Shift+2 | Free | — | — | — | — | — | — | — | — |
+| Shift+2 | The instant heal, from caster form: the next heal casts at once | — | — | — | — | — | — | — | **Nature's Swiftness** from 55 |
 | Shift+3 | Free | — | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — | — |
 | Shift+C | Free | — | — | — | — | — | — | — | — |
 | Shift+X | Free | — | — | — | — | — | — | — | — |
 
-- What Restoration changes from the Feral layout: **Swiftmend** (32) on the middle mouse button of the caster bar and **Tranquility** (30) on Shift+1, both for healing a group; E on the Cat Form bar stays free, since **Feral Charge** is a Feral talent this build does not take. Every other spell is where the Feral guide puts it.
+- What Restoration changes from the Feral layout: **Swiftmend** (37) on the middle mouse button of the caster bar, **Tranquility** (30) on Shift+1 and **Nature's Swiftness** (55) on Shift+2, for healing; E on the Cat Form bar stays free, since **Feral Charge** is a Feral talent this build does not take. Every other spell is where the Feral guide puts it.
 - Bar 1 is three bars in one: WoW shows the form's own bar while you are in Bear Form or Cat Form, and the Prowl bar while you prowl (as Classic did). Set each one up so a key keeps its job in every form: Q attacks, E controls, R pays off, F saves.
 - The forms live on the Shift bar, the same in every form: Shift+Q Cat Form, Shift+E Bear Form, Shift+R Travel Form. Pressing your current form's key leaves it.
 - The emergency heal is three presses: Shift+Q (leave Cat Form), Mouse 5 (Regrowth, on the bar you now see), Shift+Q (Cat Form again). The keybinds page has a macro that makes it two.
@@ -151,7 +149,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Bear Form** (10), **Demoralizing Roar** (10), Growl (10), **Maul** (10), Nature's Grasp (10), Enrage (12), Regrowth (12), Revive (12).
 
-**Talents:** 10-13 Heart of the Wild.
+**Talents:** 10-11 Improved Wrath, 12-13 Genesis.
 
 **Keys to set:** Q (bear) = Maul; R (bear) = Demoralizing Roar; Mouse 4 (bear) = Growl; Shift+E = Bear Form; Shift+F = Nature's Grasp; Mouse 5 = Regrowth (at 12); Mouse 5 (bear) = Enrage (at 12).
 
@@ -165,7 +163,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Bear Form**, **Healing Touch** or **Rejuvenation**, then **Bear Form** again. At these levels the mob usually dies first.
 
-- **Heart of the Wild** (10-14): at 5 points, 20% more Stamina in Bear Form, 10% more Strength in Cat Form (from 20) and 10% more Intellect.
+- Your first points, **Improved Wrath** (10-11) and **Genesis** (12-14), do nothing for the bear. **Genesis** makes your heals over time, and from 20 your bleeds, stronger.
 - From 12, **Enrage** at the pull: 10 rage now and 20 more over 10 s, for 27% of your armor. The fight lab presses it on a mob above 40% of its health.
 - **Regrowth** (12) is your fight heal from here: a big heal plus a heal over time.
 - **Nature's Grasp** (10) can be cast in a form: the next mob that hits you is rooted. Walk away and heal.
@@ -179,7 +177,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Maul at 18.
 
-**Talents:** 14 Heart of the Wild, 15-17 Naturalist, 18 Natural Shapeshifter, 19 Genesis.
+**Talents:** 14 Genesis, 15-16 Improved Moonfire, 17 Nature's Majesty, 18 Heart of the Wild, 19 Nature's Majesty.
 
 **Keys to set:** 3 = Cure Poison; E (bear) = Bash; 1 (bear) = Swipe (at 16); 2 = Hibernate (at 18).
 
@@ -194,19 +192,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Bash** buys you 2 seconds. Below 30% of your health: leave **Bear Form**, **Regrowth**, then **Bear Form** again.
 
-- **Naturalist** (15-17): 2% more damage a point. **Natural Shapeshifter** (18): every shift costs 10% less mana.
+- **Improved Moonfire** (15-16) is a caster point too. **Nature's Majesty** (17, 19): 4% more critical strike chance at 2 points. **Heart of the Wild** (18, then 20-23): at 5 points, 20% more Stamina in Bear Form, 10% more Strength in Cat Form and 10% more Intellect.
 - **Swipe** (16) hits three mobs for little: for pulls of two or three, never one.
 - **Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it from caster form before the pull.
 - **Faerie Fire** (18) is not worth the shift out; the fight lab never casts it.
 - **Cat Form** comes at 20 and changes everything.
 
-*Fight lab, seconds per kill: 30 at level 14, 33 at level 19. Presses per kill at level 14: Melee 5.6, Maul 2.9, Demoralizing Roar 1.0, Enrage 0.5, Bash 0.1.*
+*Fight lab, seconds per kill: 30 at level 14, 33 at level 19. Presses per kill at level 14: Melee 5.7, Maul 3.0, Demoralizing Roar 1.0, Enrage 0.5, Bash 0.1.*
 
 ## Levels 20-23: Cat Form
 
 **The trainer teaches:** **Cat Form** (20), **Claw** (20), Omen of Clarity (20), **Prowl** (20), Rebirth (20), **Rip** (20), Shred (20), Starfire (20), Soothe Animal (22).
 
-**Talents:** 20-23 Genesis.
+**Talents:** 20-23 Heart of the Wild.
 
 **Keys to set:** Q (cat) = Claw; Mouse 4 (cat) = Rip; 1 (cat) = Prowl; Shift+Q = Cat Form.
 
@@ -219,14 +217,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 3. **Rip** at 2 points while the mob has more than 40% of its health: the bleed finishes it while you claw.
 4. **Claw** until it is dead.
 
-**If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again. Keep the mana for that: Cat Form costs 55% of your base mana each time, 10% less with your point in Natural Shapeshifter.
+**If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again. Keep the mana for that: Cat Form costs 55% of your base mana each time.
 
 - **Shred** (20) needs the mob's back. A mob facing you cannot be Shredded, and the tuned rules never cast it.
 - **Omen of Clarity** (20) is a buff: keep it on, no key. It makes an ability free now and then.
-- Energy, not mana, limits you now. This build has no **Furor** until 45: each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.
-- **Genesis** (19-23): your bleeds and your heals over time do up to 10% more.
+- Energy, not mana, limits you now. This build takes its one point of **Furor** at 46: until then each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.
+- **Heart of the Wild** (20-23) fills to 5 points: 10% more Strength in Cat Form.
 
-*Fight lab, seconds per kill: 20 at level 20. Presses per kill at level 20: Melee 10.6, Claw 3.7, Rip 0.8.*
+*Fight lab, seconds per kill: 20 at level 20. Presses per kill at level 20: Melee 11.0, Claw 3.8, Rip 0.8.*
 
 ## Levels 24-31: Ferocious Bite and Rake
 
@@ -234,7 +232,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Claw at 28.
 
-**Talents:** 24-25 Nature's Majesty, 26 Nature's Focus, 27-29 Reflection, 30-31 Gift of Nature.
+**Talents:** 24-28 Naturalist, 29 Natural Shapeshifter, 30-31 Genesis.
 
 **Keys to set:** 4 = Remove Curse; R (cat) = Ferocious Bite; Mouse 5 (cat) = Rake; 3 = Abolish Poison (at 26); F (cat) = Dash (at 26); 3 (bear) = Challenging Roar (at 28); 2 (cat) = Cower (at 28); Shift+R = Travel Form (at 30); Shift+1 = Tranquility (at 30).
 
@@ -250,13 +248,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.
 
 - **Rip** stays for a mob above half its health at 5 points. One on one, **Claw** and **Ferocious Bite** usually get there first.
-- **Nature's Majesty** (24-25): 4% more critical strike chance.
+- **Naturalist** (24-28): 10% more damage at 5 points. **Natural Shapeshifter** (29): every shift costs 10% less mana. **Genesis** (30-31) reaches 5 points: your bleeds and heals over time do 10% more.
 - **Dash** (26): 50% faster for 15 s in Cat Form, prowling or not. The escape, and the way to the next mob.
-- **Nature's Focus** (26), **Reflection** (27-29) and **Gift of Nature** (30-31) are healer points: fewer heals pushed back, mana while you cast, stronger heals.
 - **Travel Form** (30) is the road between mobs. **Tranquility** (30) heals your whole group: for dungeons.
 - **Cower** (28) drops your threat and **Challenging Roar** (28) is a bear taunt: groups only.
 
-*Fight lab, seconds per kill: 20 at level 24, 24 at level 30, 25 at level 31. Presses per kill at level 24: Melee 11.0, Claw 3.1, Rake 1.2, Ferocious Bite 0.5.*
+*Fight lab, seconds per kill: 21 at level 24, 24 at level 30, 24 at level 31. Presses per kill at level 24: Melee 11.5, Claw 3.2, Rake 1.2, Ferocious Bite 0.5.*
 
 ## Levels 32-39: Ravage
 
@@ -264,9 +261,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Claw at 38; Ferocious Bite at 32; Rake at 34.
 
-**Talents:** 32 Swiftmend, 33-35 Moonglow, 36 Nature's Splendor, 37-39 Tranquil Spirit.
+**Talents:** 32 Nature's Splendor, 33 Nature's Focus, 34-36 Reflection, 37 Swiftmend, 38-39 Tranquil Spirit.
 
-**Keys to set:** Middle mouse = Swiftmend; Q (prowling) = Ravage; F (bear) = Frenzied Regeneration (at 36); E (prowling) = Pounce (at 36).
+**Keys to set:** Q (prowling) = Ravage; F (bear) = Frenzied Regeneration (at 36); E (prowling) = Pounce (at 36); Middle mouse = Swiftmend (at 37).
 
 **Your keys in this stage:** Mouse 5 Regrowth, Q (cat) Claw, R (cat) Ferocious Bite, Mouse 5 (cat) Rake, 1 (cat) Prowl, Q (prowling) Ravage, Shift+Q Cat Form.
 
@@ -280,13 +277,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.
 
 - **Poised** (32): rested to full energy out of combat, your next ability costs 10 less. Wait for full energy before you prowl in, and Ravage costs 50 instead of 60.
-- **Swiftmend** (32): an instant heal that eats your **Rejuvenation** or **Regrowth**. For groups: the fight lab never casts it solo.
+- **Swiftmend** (37): an instant heal that eats your **Rejuvenation** or **Regrowth**. For groups: the fight lab never casts it solo.
 - **Pounce** (36) is the other stealth opener: a 2 s stun and a bleed for 1 combo point. **Ravage** hits harder; **Pounce** is for a caster you want quiet for the first seconds.
-- **Moonglow** (33-35), **Nature's Splendor** (36) and **Tranquil Spirit** (37-41) are healer and caster points: they do little for the cat.
+- **Nature's Splendor** (32), **Nature's Focus** (33), **Reflection** (34-36) and **Tranquil Spirit** (38-42) are healer points: longer heals over time, fewer heals pushed back, mana while you cast, a cheaper Healing Touch. They do little for the cat.
 - **Frenzied Regeneration** (36) turns rage into health in Bear Form.
 - **Track Humanoids** (32) is a tracking: clicked, no key.
 
-*Fight lab, seconds per kill: 22 at level 32, 27 at level 39. Presses per kill at level 32: Melee 12.7, Claw 2.3, Rake 1.3, Ravage 1.0, Ferocious Bite 0.7.*
+*Fight lab, seconds per kill: 22 at level 32, 27 at level 39. Presses per kill at level 32: Melee 12.0, Claw 2.2, Rake 1.3, Ravage 1.0, Ferocious Bite 0.6.*
 
 ## Levels 40-60: The same play to 60
 
@@ -294,9 +291,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Claw at 48, 58; Ferocious Bite at 40, 48, 56, 60; Prowl at 40, 60; Rake at 44, 54; Ravage at 42, 50, 58.
 
-**Talents:** 40-41 Tranquil Spirit, 42-44 Living Spirit, 45-48 Furor, 49-51 Gift of Nature, 52 Subtlety, 53-55 Improved Rejuvenation, 56-60 Improved Regrowth.
+**Talents:** 40-42 Tranquil Spirit, 43-45 Living Spirit, 46 Furor, 47-51 Gift of Nature, 52-54 Improved Rejuvenation, 55 Nature's Swiftness, 56-60 Improved Regrowth.
 
-**Keys to set:** C = Innervate; Shift+E = Dire Bear Form; F = Barkskin (at 44).
+**Keys to set:** C = Innervate; Shift+E = Dire Bear Form; F = Barkskin (at 44); Shift+2 = Nature's Swiftness (at 55).
 
 **Your keys in this stage:** Mouse 5 Regrowth, Q (cat) Claw, R (cat) Ferocious Bite, Mouse 5 (cat) Rake, 1 (cat) Prowl, Q (prowling) Ravage, Shift+Q Cat Form.
 
@@ -309,19 +306,20 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.
 
-- **Furor** (45-48): back in **Cat Form**, you get a share of the energy you left with plus some for every second out of it; by 48, 80% and 8 a second, up to 80. A **Regrowth** in the middle of a fight costs you much less now.
+- **Furor** (46), one point: back in **Cat Form** you get 20% of the energy you left with plus 2 for every second out of it, up to 20.
+- **Nature's Swiftness** (55): your next heal is instant. Out of **Cat Form** in an emergency it makes **Healing Touch** a one-press heal; the fight lab uses it that way when it has it.
 - **Dire Bear Form** (40) is Bear Form with more armor and attack power: for dungeons.
-- **Living Spirit** (42-44), more **Gift of Nature** (49-51), **Subtlety** (52), **Improved Rejuvenation** (53-55) and **Improved Regrowth** (56-60) are for the healer at 60.
+- **Living Spirit** (43-45), **Gift of Nature** (47-51), **Improved Rejuvenation** (52-54) and **Improved Regrowth** (56-60) are for the healer at 60.
 - **Barkskin** (44) needs caster form: 20% less physical damage for 15 s, before a hard pull.
 - **Innervate** (40): mana for a group's healer, or for you after a run of heals.
 - No **Feral Charge**, **Primal Bite** or **Shifting Power**: they are Feral talents this build does not take.
 
-*Fight lab, seconds per kill: 28 at level 40, 30 at level 50, 33 at level 60. Presses per kill at level 40: Melee 17.0, Claw 2.9, Rake 1.7, Ravage 1.0, Ferocious Bite 0.9.*
+*Fight lab, seconds per kill: 27 at level 40, 29 at level 50, 32 at level 60. Presses per kill at level 40: Melee 16.3, Claw 2.8, Rake 1.6, Ravage 1.0, Ferocious Bite 0.9.*
 
 ## Between fights
 
 - Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.
-- Until **Furor** (45), each shift back into Cat Form starts at no energy: let it fill before you prowl in.
+- Each shift back into Cat Form starts at no energy (from 46, **Furor** gives back up to 20): let it fill before you prowl in.
 - Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
 - Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks, and so do your heals.
 

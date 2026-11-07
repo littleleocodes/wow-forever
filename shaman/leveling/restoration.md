@@ -6,7 +6,7 @@
 
 **[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-12)
 
-> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 44 s per kill; own tree last: 44 s per kill; own tree first: 45 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 38 s per kill; own tree last: 38 s per kill; own tree first: 38 s per kill). A model of the beta, to check at launch.
 
 **Leveling as Restoration or as Enhancement?** This build takes 38 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 25 s: Restoration is about 1.5 times as slow. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
 

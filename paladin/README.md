@@ -10,8 +10,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>35 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer |
-| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>32 s/kill | [Protection — Raid tank](raid/protection.md) 🔬<br>tank |
+| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>38 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Protection — Raid tank](raid/protection.md) 🔬<br>tank |
 | **Retribution** | [Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Retribution — Raid](raid/retribution.md) 🔬<br>876 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -39,8 +39,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 1 | [Prot-Ret](leveling/prot-ret.md) 🔬 | 27 | fastest |
 | 2 | [Retribution](leveling/retribution.md) — Leveling — Retribution | 28 | +3% |
 | 3 | [Holy/Protection hybrid](leveling/hybrid-holy-protection.md) 🔬 | 31 | +14% |
-| 4 | [Protection](leveling/protection.md) — Leveling into the raid build 🔬 | 32 | +19% |
-| 5 | [Holy](leveling/holy.md) — Leveling into the raid build 🔬 | 35 | +29% |
+| 4 | [Protection](leveling/protection.md) — Leveling into the raid build 🔬 | 31 | +16% |
+| 5 | [Holy](leveling/holy.md) — Leveling into the raid build 🔬 | 38 | +43% |
 
 ### Raid (group)
 

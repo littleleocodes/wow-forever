@@ -1023,7 +1023,7 @@
   },
   {
    "spec": "Restoration",
-   "intro": "What a Restoration druid presses from level 1 to 60 while leveling. Restoration has no leveling rotation of its own, so it levels as a cat with the Feral guide's play: **Wrath** and **Moonfire** to 9, **Bear Form** from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The talents are your raid healer's (11/4/36): they make your heals and shifts stronger and cheaper more than your claws, so kills take longer than with the Feral build, and you reach 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Restoration druid presses from level 1 to 60 while leveling. Restoration has no leveling rotation of its own, so it levels as a cat with the Feral guide's play: **Wrath** and **Moonfire** to 9, **Bear Form** from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The talents are your raid healer's (12/1/38): they make your heals and shifts stronger and cheaper more than your claws, so kills take longer than with the Feral build, and you reach 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1075,7 +1075,7 @@
      ],
      "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Bear Form**, **Healing Touch** or **Rejuvenation**, then **Bear Form** again. At these levels the mob usually dies first.",
      "notes": [
-      "**Heart of the Wild** (10-14): at 5 points, 20% more Stamina in Bear Form, 10% more Strength in Cat Form (from 20) and 10% more Intellect.",
+      "Your first points, **Improved Wrath** (10-11) and **Genesis** (12-14), do nothing for the bear. **Genesis** makes your heals over time, and from 20 your bleeds, stronger.",
       "From 12, **Enrage** at the pull: 10 rage now and 20 more over 10 s, for 27% of your armor. The fight lab presses it on a mob above 40% of its health.",
       "**Regrowth** (12) is your fight heal from here: a big heal plus a heal over time.",
       "**Nature's Grasp** (10) can be cast in a form: the next mob that hits you is rooted. Walk away and heal.",
@@ -1097,7 +1097,7 @@
      ],
      "if_hurt": "**Bash** buys you 2 seconds. Below 30% of your health: leave **Bear Form**, **Regrowth**, then **Bear Form** again.",
      "notes": [
-      "**Naturalist** (15-17): 2% more damage a point. **Natural Shapeshifter** (18): every shift costs 10% less mana.",
+      "**Improved Moonfire** (15-16) is a caster point too. **Nature's Majesty** (17, 19): 4% more critical strike chance at 2 points. **Heart of the Wild** (18, then 20-23): at 5 points, 20% more Stamina in Bear Form, 10% more Strength in Cat Form and 10% more Intellect.",
       "**Swipe** (16) hits three mobs for little: for pulls of two or three, never one.",
       "**Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it from caster form before the pull.",
       "**Faerie Fire** (18) is not worth the shift out; the fight lab never casts it.",
@@ -1114,12 +1114,12 @@
       "**Rip** at 2 points while the mob has more than 40% of its health: the bleed finishes it while you claw.",
       "**Claw** until it is dead."
      ],
-     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again. Keep the mana for that: Cat Form costs 55% of your base mana each time, 10% less with your point in Natural Shapeshifter.",
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again. Keep the mana for that: Cat Form costs 55% of your base mana each time.",
      "notes": [
       "**Shred** (20) needs the mob's back. A mob facing you cannot be Shredded, and the tuned rules never cast it.",
       "**Omen of Clarity** (20) is a buff: keep it on, no key. It makes an ability free now and then.",
-      "Energy, not mana, limits you now. This build has no **Furor** until 45: each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.",
-      "**Genesis** (19-23): your bleeds and your heals over time do up to 10% more."
+      "Energy, not mana, limits you now. This build takes its one point of **Furor** at 46: until then each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.",
+      "**Heart of the Wild** (20-23) fills to 5 points: 10% more Strength in Cat Form."
      ],
      "unsimulated": [
       "Cat Form",
@@ -1139,9 +1139,8 @@
      "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
      "notes": [
       "**Rip** stays for a mob above half its health at 5 points. One on one, **Claw** and **Ferocious Bite** usually get there first.",
-      "**Nature's Majesty** (24-25): 4% more critical strike chance.",
+      "**Naturalist** (24-28): 10% more damage at 5 points. **Natural Shapeshifter** (29): every shift costs 10% less mana. **Genesis** (30-31) reaches 5 points: your bleeds and heals over time do 10% more.",
       "**Dash** (26): 50% faster for 15 s in Cat Form, prowling or not. The escape, and the way to the next mob.",
-      "**Nature's Focus** (26), **Reflection** (27-29) and **Gift of Nature** (30-31) are healer points: fewer heals pushed back, mana while you cast, stronger heals.",
       "**Travel Form** (30) is the road between mobs. **Tranquility** (30) heals your whole group: for dungeons.",
       "**Cower** (28) drops your threat and **Challenging Roar** (28) is a bear taunt: groups only."
      ],
@@ -1162,9 +1161,9 @@
      "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
      "notes": [
       "**Poised** (32): rested to full energy out of combat, your next ability costs 10 less. Wait for full energy before you prowl in, and Ravage costs 50 instead of 60.",
-      "**Swiftmend** (32): an instant heal that eats your **Rejuvenation** or **Regrowth**. For groups: the fight lab never casts it solo.",
+      "**Swiftmend** (37): an instant heal that eats your **Rejuvenation** or **Regrowth**. For groups: the fight lab never casts it solo.",
       "**Pounce** (36) is the other stealth opener: a 2 s stun and a bleed for 1 combo point. **Ravage** hits harder; **Pounce** is for a caster you want quiet for the first seconds.",
-      "**Moonglow** (33-35), **Nature's Splendor** (36) and **Tranquil Spirit** (37-41) are healer and caster points: they do little for the cat.",
+      "**Nature's Splendor** (32), **Nature's Focus** (33), **Reflection** (34-36) and **Tranquil Spirit** (38-42) are healer points: longer heals over time, fewer heals pushed back, mana while you cast, a cheaper Healing Touch. They do little for the cat.",
       "**Frenzied Regeneration** (36) turns rage into health in Bear Form.",
       "**Track Humanoids** (32) is a tracking: clicked, no key."
      ],
@@ -1175,7 +1174,7 @@
     {
      "from": 40,
      "title": "The same play to 60",
-     "change": "Nothing new to press. **Furor** (45-48) gives you energy back after a shift; the rest of your points are for healing.",
+     "change": "Nothing new to press: your points from here are for the healer at 60.",
      "press": [
       "**Prowl** up behind the mob and open with **Ravage**.",
       "**Rake** while the mob has more than 30% of its health.",
@@ -1184,9 +1183,10 @@
      ],
      "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
      "notes": [
-      "**Furor** (45-48): back in **Cat Form**, you get a share of the energy you left with plus some for every second out of it; by 48, 80% and 8 a second, up to 80. A **Regrowth** in the middle of a fight costs you much less now.",
+      "**Furor** (46), one point: back in **Cat Form** you get 20% of the energy you left with plus 2 for every second out of it, up to 20.",
+      "**Nature's Swiftness** (55): your next heal is instant. Out of **Cat Form** in an emergency it makes **Healing Touch** a one-press heal; the fight lab uses it that way when it has it.",
       "**Dire Bear Form** (40) is Bear Form with more armor and attack power: for dungeons.",
-      "**Living Spirit** (42-44), more **Gift of Nature** (49-51), **Subtlety** (52), **Improved Rejuvenation** (53-55) and **Improved Regrowth** (56-60) are for the healer at 60.",
+      "**Living Spirit** (43-45), **Gift of Nature** (47-51), **Improved Rejuvenation** (52-54) and **Improved Regrowth** (56-60) are for the healer at 60.",
       "**Barkskin** (44) needs caster form: 20% less physical damage for 15 s, before a hard pull.",
       "**Innervate** (40): mana for a group's healer, or for you after a run of heals.",
       "No **Feral Charge**, **Primal Bite** or **Shifting Power**: they are Feral talents this build does not take."
@@ -1198,7 +1198,7 @@
    ],
    "between": [
     "Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.",
-    "Until **Furor** (45), each shift back into Cat Form starts at no energy: let it fill before you prowl in.",
+    "Each shift back into Cat Form starts at no energy (from 46, **Furor** gives back up to 20): let it fill before you prowl in.",
     "Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
     "Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks, and so do your heals."
    ],
@@ -1331,7 +1331,7 @@
         "role": "The instant heal: eats your Rejuvenation or Regrowth (groups)",
         "binds": [
          {
-          "from": 32,
+          "from": 37,
           "spell": "Swiftmend"
          }
         ]
@@ -1637,8 +1637,13 @@
        },
        {
         "key": "Shift+2",
-        "role": "Free",
-        "binds": []
+        "role": "The instant heal, from caster form: the next heal casts at once",
+        "binds": [
+         {
+          "from": 55,
+          "spell": "Nature's Swiftness"
+         }
+        ]
        },
        {
         "key": "Shift+3",
@@ -1670,7 +1675,7 @@
      "Track Humanoids"
     ],
     "notes": [
-     "What Restoration changes from the Feral layout: **Swiftmend** (32) on the middle mouse button of the caster bar and **Tranquility** (30) on Shift+1, both for healing a group; E on the Cat Form bar stays free, since **Feral Charge** is a Feral talent this build does not take. Every other spell is where the Feral guide puts it.",
+     "What Restoration changes from the Feral layout: **Swiftmend** (37) on the middle mouse button of the caster bar, **Tranquility** (30) on Shift+1 and **Nature's Swiftness** (55) on Shift+2, for healing; E on the Cat Form bar stays free, since **Feral Charge** is a Feral talent this build does not take. Every other spell is where the Feral guide puts it.",
      "Bar 1 is three bars in one: WoW shows the form's own bar while you are in Bear Form or Cat Form, and the Prowl bar while you prowl (as Classic did). Set each one up so a key keeps its job in every form: Q attacks, E controls, R pays off, F saves.",
      "The forms live on the Shift bar, the same in every form: Shift+Q Cat Form, Shift+E Bear Form, Shift+R Travel Form. Pressing your current form's key leaves it.",
      "The emergency heal is three presses: Shift+Q (leave Cat Form), Mouse 5 (Regrowth, on the bar you now see), Shift+Q (Cat Form again). The keybinds page has a macro that makes it two.",

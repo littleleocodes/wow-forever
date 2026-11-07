@@ -11,7 +11,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | [Shadow](../../leveling/shadow.md) ✅ | [`shadow-open-leveling`](builds/shadow-open-leveling.md) | [shadow-dps](#shadow-dps) | 32.4 | 35.3 | 22.0 | 21.3 | 20.4 | 24.4 |
 | [Discipline](../../leveling/discipline.md) | [`discipline-open-leveling`](builds/discipline-open-leveling.md) | [discipline-leveling](#discipline-leveling) | 39.4 | 40.7 | 45.0 | 42.0 | 39.7 | 41.4 |
 | [Smite](../../leveling/smite.md) | [`smite-open-leveling`](builds/smite-open-leveling.md) | [holy-leveling](#holy-leveling) | 42.9 | 49.0 | 58.6 | 53.6 | 48.8 | 51.4 |
-| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 44.6 | 50.5 | 62.6 | 58.2 | 55.8 | 55.9 |
+| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 44.6 | 50.5 | 62.6 | 58.5 | 55.8 | 55.9 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 

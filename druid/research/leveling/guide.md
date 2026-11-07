@@ -37,10 +37,10 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
 | [Feral Combat](../../leveling/feral-combat.md) ✅ | [`feral-combat-open-leveling`](builds/feral-combat-open-leveling.md) | feral-cat-dps | 19.8 | 22.0 | 23.1 | 22.9 | 24.1 | 22.9 |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | feral-cat-dps | 20.0 | 24.7 | 27.7 | 29.6 | 32.8 | 28.5 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | feral-cat-dps | 20.3 | 24.2 | 27.0 | 28.7 | 31.8 | 27.8 |
 | [Balance](../../leveling/balance.md) | [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) | balance-dps | 36.3 | 41.9 | 44.5 | 37.4 | 30.8 | 37.4 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **61.3 h** (31.9% faster than talentless), 1 respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **68.2 h** (24.3% faster than talentless), 1 respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

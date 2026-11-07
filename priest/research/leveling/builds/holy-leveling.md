@@ -69,8 +69,8 @@ Level with the talents of the Holy raid build (holy-raid-healer) so you arrive a
 | 43 | Holy | Improved Renew | 1 | 22/12/0 |
 | 44 | Holy | Divine Fury | 1 | 22/13/0 |
 | 45-47 | Holy | Inspiration | 3 | 22/16/0 |
-| 48-50 | Holy | Improved Healing | 3 | 22/19/0 |
-| 51 | Holy | Holy Binding | 1 | 22/20/0 |
+| 48 | Holy | Holy Binding | 1 | 22/17/0 |
+| 49-51 | Holy | Improved Healing | 3 | 22/20/0 |
 | 52-53 | Holy | Litany of Light | 2 | 22/22/0 |
 | 54-57 | Holy | Spiritual Guidance | 4 | 22/26/0 |
 | 58-60 | Holy | Spiritual Healing | 3 | 22/29/0 |
@@ -92,9 +92,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.
+- 2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 60 s. First Holy point at level 32.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
-- 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 22/29/0 -> 22/29/0; Binding Heal -> Holy Binding (renamed); order kept, renamed (refill: the shadow-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

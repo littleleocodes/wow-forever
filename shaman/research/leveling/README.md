@@ -16,10 +16,10 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 0/10/41 | DPS |
 | [Elemental-Enhancement — Leveling (open talent search)](builds/elemental-enhancement-open-leveling.md) 🔬 | 26/22/3 | DPS |
 | [Enhancement — Leveling (open talent search)](builds/enhancement-open-leveling.md) 🔬 | 12/32/7 | DPS |
 | [Elemental — Leveling (open talent search)](builds/elemental-open-leveling.md) 🔬 | 32/11/8 | DPS |
+| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 0/10/41 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -44,7 +44,7 @@
 - mage: mage/leveling/frostfire.md: the guide names Heating Up, Improved Blizzard, Improved Cone of Cold, Improved Fire Ward, Pyroblast, which the page's build does not take
 - mage: mage/raid/arcane-frost.md: the guide names Arcane Power, Heating Up, Presence of Mind, Pyroblast, which the page's build does not take
 - mage: mage/raid/frost.md: the guide names Arcane Blast, Fingers of Frost, Ice Lance, Shatter, which the page's build does not take
-- paladin: paladin/leveling/holy.md: the guide names Consecrated Ground, Conviction, Divine Precision, Holy Shock, Improved Judgement, Sanctified Judgement, Seal of Command, which the page's build does not take
+- paladin: paladin/leveling/holy.md: the guide names Divine Precision, Purifying Power, Seal of Command, which the page's build does not take
 - paladin: paladin/leveling/prot-ret.md: the guide names Anticipation, Pursuit of Justice, Shield Specialization, which the page's build does not take
 - paladin: paladin/leveling/protection.md: the guide names Holy Conduit, which the page's build does not take
 - paladin: paladin/raid/protection.md: the guide names Holy Conduit, which the page's build does not take

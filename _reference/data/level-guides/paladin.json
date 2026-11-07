@@ -1113,7 +1113,7 @@
   },
   {
    "spec": "Holy",
-   "intro": "What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build. It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana, and it heals itself in the fight once it drops below 40% health. The page's current build (30/16/5) takes no **Holy Shock**, the spec's signature spell, and no **Seal of Command**, and fails the project's signature check; its talent order is provisional. Both may change when the paladin's raid-path leveling step runs. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build (32/5/14). It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana. **Holy Shock** (30), the spec's signature spell, opens the fight from range while your mana is high, and **Hammer of Wrath** (44) finishes it. Below 40% health you heal yourself in the fight. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1197,27 +1197,30 @@
      ],
      "notes": [
       "**Consecration** (20): the Holy list never casts it against a single mob. It is for packs.",
-      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it. **Holy Conduit** (21-22) makes it 40% cheaper.",
-      "**Redoubt** (26-27, 36 and 56-57) works only with a shield: with a two-hander it does nothing. Its first points fill Protection's tiers on the way to **Templar's Bulwark** (37).",
-      "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it. **Holy Conduit** (20) makes it cheaper.",
+      "The healing talents start early: **Illumination** (21-25) returns mana after a critical heal, **Spiritual Focus** (17-19 and 26-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
     {
-     "from": 37,
-     "title": "Templar's Bulwark",
-     "change": "**Templar's Bulwark** (talent), an absorb as large as your health: your first save below 40% health.",
+     "from": 30,
+     "title": "Holy Shock",
+     "change": "**Holy Shock** (talent): an instant Holy blast from 40 yards as the mob walks in, or an instant heal on yourself.",
      "press": [
       "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Holy Shock** at the mob as it walks in, while your mana is above 70% and the mob has more than a tenth of its health.",
       "**Seal of Righteousness** up before the pull: the first press of R.",
       "**Judgement** whenever it is ready.",
       "**Holy Strike** whenever it is ready."
      ],
      "notes": [
-      "**Templar's Bulwark** is off the global cooldown and lasts 8 seconds: press it, then **Holy Light** behind it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
-      "**Illumination** (40-44) returns mana after a critical heal, and **Spiritual Focus** (45) keeps your heals from being pushed back."
+      "The mana rule keeps **Holy Shock** to the start of a fight with your mana high: it is not cast on cooldown.",
+      "With a mob targeted, **Holy Shock** hits the mob. Hold Alt, the self-cast key on the [keybinds page](keybinds.md), to heal yourself with it instead.",
+      "From 30 the fight lab dresses this build in caster gear (spell power and Intellect) instead of melee gear, as it does every Holy build with **Holy Shock**. Melee gear was not measured for it.",
+      "From 31 the points go into Retribution's mana and crit talents (**Benediction**, **Sanctified Judgement**, **Conviction**, **Improved Judgement**), then Protection's **Divine Intellect** (42-46). Nothing new to press.",
+      "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
      ],
-     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Protection** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
     {
      "from": 44,
@@ -1225,35 +1228,37 @@
      "change": "**Hammer of Wrath** finishes a mob below 20% health from range. The Holy list presses it.",
      "press": [
       "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Holy Shock** at the mob as it walks in, while your mana is above 70% and the mob has more than a tenth of its health.",
       "**Seal of Righteousness** up before the pull: the first press of R.",
       "**Hammer of Wrath** when the mob is below 20% health.",
       "**Judgement** whenever it is ready.",
       "**Holy Strike** whenever it is ready."
      ],
      "notes": [
-      "**Hammer of Wrath** has a 1-second cast and a 6-second cooldown; **Holy Conduit** takes 40% off its mana.",
-      "**Healing Light** (46-48) makes **Holy Light** and **Flash of Light** heal more."
+      "**Hammer of Wrath** has a 1-second cast and a 6-second cooldown; **Holy Conduit** makes it cheaper.",
+      "**Deflection** (47-48) adds parry, **Healing Light** (49) its last point. Nothing new to press."
      ],
-     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
     {
-     "from": 49,
+     "from": 50,
      "title": "Divine Favor",
-     "change": "**Divine Favor** (talent) before an emergency heal: that heal is a sure critical.",
+     "change": "**Divine Favor** (talent): a sure critical for your next **Holy Shock** or heal.",
      "press": [
       "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Holy Shock** at the mob as it walks in, while your mana is above 70% and the mob has more than a tenth of its health; **Divine Favor** first while your own health is above 70%, for a sure critical.",
       "**Seal of Righteousness** up before the pull: the first press of R.",
       "**Hammer of Wrath** when the mob is below 20% health.",
       "**Judgement** whenever it is ready.",
       "**Holy Strike** whenever it is ready."
      ],
      "notes": [
-      "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then the heal.",
-      "**Infusion of Light** (50): a critical **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (51-55) makes critical heals bigger.",
-      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.",
-      "This build takes no **Holy Shock**. If a later pick takes it, the Holy list casts it at the mob as it walks in, while your mana is above 70%."
+      "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then **Holy Shock** or the heal.",
+      "**Infusion of Light** (51): a critical **Holy Shock** or **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (53-56) makes critical heals bigger.",
+      "**Oath of Light** (52), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo. **Consecrated Ground** (58) needs **Consecration**, which the Holy list does not cast against a single mob.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
      ],
-     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Divine Favor** and **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Divine Favor** and **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the first of those heals if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     }
    ],
    "between": [
@@ -1265,7 +1270,7 @@
    "other": [
     "The [Holy leveling page](holy.md) compares this build's time per kill with Retribution's.",
     "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target list never casts it.",
-    "Dungeons on the way: you can heal them with **Holy Light** and **Flash of Light**. The raid build's healing talents (**Illumination**, **Healing Light**, **Holy Power**) arrive at 40-55."
+    "Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 21-25, **Healing Light** at 28-29 and 49, **Holy Power** at 53-56."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. Holy keeps the Retribution layout, so muscle memory carries over: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
@@ -1364,10 +1369,10 @@
        },
        {
         "key": "3",
-        "role": "Before an emergency heal: a sure critical",
+        "role": "Before Holy Shock or an emergency heal: a sure critical",
         "binds": [
          {
-          "from": 49,
+          "from": 50,
           "spell": "Divine Favor"
          }
         ]
@@ -1393,11 +1398,11 @@
        },
        {
         "key": "Middle mouse",
-        "role": "The first save: an absorb as large as your health, then heal behind it",
+        "role": "Holy Shock: the ranged opener on the mob; with Alt held, an instant heal on you",
         "binds": [
          {
-          "from": 37,
-          "spell": "Templar's Bulwark"
+          "from": 30,
+          "spell": "Holy Shock"
          }
         ]
        }
@@ -1503,10 +1508,9 @@
      "Seal of Righteousness"
     ],
     "notes": [
-     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Three slots differ: the middle mouse button holds **Templar's Bulwark** from 37 and 3 **Divine Favor** from 49 (both free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
+     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Three slots differ: the middle mouse button holds **Holy Shock** from 30 and 3 **Divine Favor** from 50 (both free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
      "The R macro keeps **Seal of Righteousness** all the way: this build takes no **Seal of Command**. Levels 1-3 fight with R alone; from 6, Q is the **Holy Strike** macro, which also starts your swings.",
-     "The save from 37 is the middle mouse button, then Mouse 5: **Templar's Bulwark**, then **Holy Light** behind its absorb. From 49 press 3 before the heal for a sure critical.",
-     "**Divine Favor** is off the global cooldown. Instead of its own key it can be the first line of a Mouse 5 macro (`/cast Divine Favor` above `/cast Holy Light`): one press then fires both while it is ready. Not tested in Forever's client.",
+     "The mouse holds your heals: Mouse 5 **Holy Light**, Mouse 4 **Flash of Light**, and from 30 the middle button **Holy Shock**, on the mob as it walks in, or on you with Alt held. From 50, press 3 first for a sure critical.",
      "Unlike Retribution, the Holy list presses **Hammer of Wrath** (Shift+R) from 44. It never casts **Consecration** against a single mob: Shift+Q is for packs.",
      "No key: **Blessing of Wisdom**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights."
     ]

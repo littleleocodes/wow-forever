@@ -16,10 +16,10 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 30/16/5 | DPS |
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/34/17 | DPS |
 | [Holy/Protection hybrid — Leveling (open talent search)](builds/hybrid-holy-protection-open-leveling.md) 🔬 | 13/25/13 | DPS |
 | [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 12/16/23 | DPS |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 32/5/14 | DPS |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/35/16 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -49,8 +49,8 @@ Classic Era reference builds: [leveling-retribution](../talents/classic-baseline
 | [Prot-Ret](../../leveling/prot-ret.md) ✅ | `prot-ret-open-leveling` | ret-dps | 26.9 |
 | [Retribution](../../leveling/retribution.md) | `leveling-retribution` | ret-dps | 27.8 |
 | [Holy/Protection hybrid](../../leveling/hybrid-holy-protection.md) | `hybrid-holy-protection-open-leveling` | prot-leveling | 30.7 |
-| [Protection](../../leveling/protection.md) | `protection-leveling` | prot-leveling | 32.0 |
-| [Holy](../../leveling/holy.md) | `holy-leveling` | holy-leveling | 34.7 |
+| [Protection](../../leveling/protection.md) | `protection-leveling` | prot-leveling | 31.3 |
+| [Holy](../../leveling/holy.md) | `holy-leveling` | holy-leveling | 38.4 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 

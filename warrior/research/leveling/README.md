@@ -16,10 +16,10 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 17/3/31 | DPS |
 | [Arms — Leveling (open talent search)](builds/arms-open-leveling.md) 🔬 | 32/17/2 | DPS |
 | [Fury — Leveling (open talent search)](builds/fury-open-leveling.md) 🔬 | 18/33/0 | DPS |
 | [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 3/16/32 | DPS |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 17/3/31 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 - [Leveling guide](guide.md): the recommended build (Fury, `fury-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**62.7 h** (30.4% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**63.7 h** (29.2% faster than talentless), no respec).
 - Recommended build: [fury-open-leveling](builds/fury-open-leveling.md) (Fury; player page: [Fury leveling](../../leveling/fury.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

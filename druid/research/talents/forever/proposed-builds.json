@@ -958,48 +958,6 @@
       "order_label": "stats model"
     },
     {
-      "id": "restoration-leveling",
-      "name": "Restoration — Leveling into the raid build",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Restoration",
-      "generated": "2026-10-25",
-      "derived": "leveling",
-      "raid_path": "restoration-ml-heal",
-      "summary": "Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 34 s per kill over levels 20-60, the feral-cat-dps rotation).",
-      "allocation": {
-        "Balance": [
-          ["Genesis", 5],
-          ["Moonglow", 3],
-          ["Nature's Majesty", 2],
-          ["Nature's Splendor", 1]
-        ],
-        "Feral Combat": [
-          ["Furor", 4]
-        ],
-        "Restoration": [
-          ["Heart of the Wild", 5],
-          ["Nature's Focus", 1],
-          ["Natural Shapeshifter", 1],
-          ["Naturalist", 3],
-          ["Reflection", 3],
-          ["Gift of Nature", 5],
-          ["Subtlety", 1],
-          ["Improved Rejuvenation", 3],
-          ["Swiftmend", 1],
-          ["Tranquil Spirit", 5],
-          ["Living Spirit", 3],
-          ["Improved Regrowth", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 34 s; own tree first 35 s; own tree last 34 s. First Restoration point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 11/5/35 -> 11/4/36; order dropped (order_repair.py) (refill: the resto-heal model, leveling-st)."],
-      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
-      "sources": []
-    },
-    {
       "id": "opt-balance-dps-raid-dps",
       "name": "Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)",
       "role": "dps",
@@ -1523,6 +1481,72 @@
       "open_questions": ["An open-search Feral Combat leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/druid/60/15002201-51201302123002124-05501-7"],
       "replaces": "leveling-feral"
+    },
+    {
+      "id": "restoration-leveling",
+      "name": "Restoration — Leveling into the raid build",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-11-07",
+      "derived": "leveling",
+      "raid_path": "restoration-ml-heal",
+      "summary": "Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 28 s per kill over levels 20-60, the feral-cat-dps rotation).",
+      "allocation": {
+        "Balance": [
+          ["Improved Wrath", 2],
+          ["Genesis", 5],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Nature's Splendor", 1]
+        ],
+        "Feral Combat": [
+          ["Furor", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 1],
+          ["Heart of the Wild", 5],
+          ["Naturalist", 5],
+          ["Reflection", 3],
+          ["Natural Shapeshifter", 1],
+          ["Gift of Nature", 5],
+          ["Tranquil Spirit", 5],
+          ["Improved Rejuvenation", 3],
+          ["Swiftmend", 1],
+          ["Nature's Swiftness", 1],
+          ["Living Spirit", 3],
+          ["Improved Regrowth", 5]
+        ]
+      },
+      "order": [
+        {"levels": "10-11", "tree": "Balance", "talent": "Improved Wrath", "points": 2},
+        {"levels": "12-14", "tree": "Balance", "talent": "Genesis", "points": 3},
+        {"levels": "15-16", "tree": "Balance", "talent": "Improved Moonfire", "points": 2},
+        {"levels": "17", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
+        {"levels": "18", "tree": "Restoration", "talent": "Heart of the Wild", "points": 1},
+        {"levels": "19", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
+        {"levels": "20-23", "tree": "Restoration", "talent": "Heart of the Wild", "points": 4},
+        {"levels": "24-28", "tree": "Restoration", "talent": "Naturalist", "points": 5},
+        {"levels": "29", "tree": "Restoration", "talent": "Natural Shapeshifter", "points": 1},
+        {"levels": "30-31", "tree": "Balance", "talent": "Genesis", "points": 2},
+        {"levels": "32", "tree": "Balance", "talent": "Nature's Splendor", "points": 1},
+        {"levels": "33", "tree": "Restoration", "talent": "Nature's Focus", "points": 1},
+        {"levels": "34-36", "tree": "Restoration", "talent": "Reflection", "points": 3},
+        {"levels": "37", "tree": "Restoration", "talent": "Swiftmend", "points": 1},
+        {"levels": "38-42", "tree": "Restoration", "talent": "Tranquil Spirit", "points": 5},
+        {"levels": "43-45", "tree": "Restoration", "talent": "Living Spirit", "points": 3},
+        {"levels": "46", "tree": "Feral Combat", "talent": "Furor", "points": 1},
+        {"levels": "47-51", "tree": "Restoration", "talent": "Gift of Nature", "points": 5},
+        {"levels": "52-54", "tree": "Restoration", "talent": "Improved Rejuvenation", "points": 3},
+        {"levels": "55", "tree": "Restoration", "talent": "Nature's Swiftness", "points": 1},
+        {"levels": "56-60", "tree": "Restoration", "talent": "Improved Regrowth", "points": 5}
+      ],
+      "core": [],
+      "flex": [],
+      "notes": ["2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 28 s; own tree first 28 s; own tree last 28 s. First Restoration point at level 18.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
+      "sources": []
     }
   ]
 }

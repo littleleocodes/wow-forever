@@ -74,8 +74,8 @@ One point per level from 10, in this order:
 | 43 | Improved Renew (Holy) | 1 |
 | 44 | Divine Fury (Holy) | 1 |
 | 45-47 | Inspiration (Holy) | 3 |
-| 48-50 | Improved Healing (Holy) | 3 |
-| 51 | Holy Binding (Holy) | 1 |
+| 48 | Holy Binding (Holy) | 1 |
+| 49-51 | Improved Healing (Holy) | 3 |
 | 52-53 | Litany of Light (Holy) | 2 |
 | 54-57 | Spiritual Guidance (Holy) | 4 |
 | 58-60 | Spiritual Healing (Holy) | 3 |
@@ -87,7 +87,7 @@ One point per level from 10, in this order:
 | 20 | 45 |
 | 30 | 51 |
 | 40 | 63 |
-| 50 | 58 |
+| 50 | 59 |
 | 60 | 56 |
 
 ---

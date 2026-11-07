@@ -171,7 +171,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Holy Fire at 30, 36, 42, 48, 54, 60; Mind Blast at 34, 40, 46, 52, 58; Penance at 40, 50, 60; Power Word: Shield at 30, 36, 42, 48, 54, 60; Shadow Word: Pain at 34, 42, 50, 58; Smite at 30, 38, 46, 54.
 
-**Talents:** 30 Penance, 31 Soul Warding, 32-34 Twilight Focus, 35-39 Holy Specialization, 40-41 Improved Renew, 42 Holy Nova, 43 Improved Renew, 44 Divine Fury, 45-47 Inspiration, 48-50 Improved Healing, 51 Holy Binding, 52-53 Litany of Light, 54-57 Spiritual Guidance, 58-60 Spiritual Healing.
+**Talents:** 30 Penance, 31 Soul Warding, 32-34 Twilight Focus, 35-39 Holy Specialization, 40-41 Improved Renew, 42 Holy Nova, 43 Improved Renew, 44 Divine Fury, 45-47 Inspiration, 48 Holy Binding, 49-51 Improved Healing, 52-53 Litany of Light, 54-57 Spiritual Guidance, 58-60 Spiritual Healing.
 
 **Keys to set:** Mouse 5 = Penance; Shift+Q = Holy Nova (at 42).
 

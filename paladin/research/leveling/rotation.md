@@ -11,8 +11,8 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | [ret-dps](#ret-dps) | 19.5 | 22.0 | 26.7 | 28.6 | 30.5 | 26.9 |
 | [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | [ret-dps](#ret-dps) | 19.5 | 22.2 | 26.9 | 28.8 | 33.0 | 27.8 |
 | [Holy/Protection hybrid](../../leveling/hybrid-holy-protection.md) | [`hybrid-holy-protection-open-leveling`](builds/hybrid-holy-protection-open-leveling.md) | [prot-leveling](#prot-leveling) | 23.5 | 29.2 | 31.9 | 30.8 | 33.0 | 30.7 |
-| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | [prot-leveling](#prot-leveling) | 23.4 | 29.3 | 33.0 | 32.9 | 34.9 | 32.0 |
-| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 21.8 | 26.6 | 34.5 | 36.6 | 41.5 | 34.7 |
+| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | [prot-leveling](#prot-leveling) | 23.4 | 29.3 | 32.4 | 31.8 | 33.7 | 31.3 |
+| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 22.2 | 32.9 | 38.3 | 40.3 | 45.1 | 38.4 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 

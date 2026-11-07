@@ -107,7 +107,7 @@ Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Vo
 2. **Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.
 3. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health.
 4. With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.
-5. The filler is **Shadow Bolt** while the mob has more than about a third (35%) of its health; below that, your wand. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.
+5. The filler is **Shadow Bolt** while the mob has more than about a third (35%) of its health; below that, your wand. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.
 6. **Life Tap** in a fight only when you are short of mana and above 60% health.
 7. If a mob reaches you: **Death Coil** below 60% health, and let the Voidwalker's **Torment** take it back. No Fear: the tuned rules of 2026-11-07 never cast it. Your Healthstone below 35% health.
 

@@ -9,7 +9,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | Spec | Page build | Rotation | L15 | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|---|
 | [Feral Combat](../../leveling/feral-combat.md) ✅ | [`feral-combat-open-leveling`](builds/feral-combat-open-leveling.md) | [feral-cat-dps](#feral-cat-dps) | - | 19.8 | 22.0 | 23.1 | 22.9 | 24.1 | 22.9 |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [feral-cat-dps](#feral-cat-dps) | - | 20.0 | 24.7 | 27.7 | 29.6 | 32.8 | 28.5 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [feral-cat-dps](#feral-cat-dps) | - | 20.3 | 24.2 | 27.0 | 28.7 | 31.8 | 27.8 |
 | [Balance](../../leveling/balance.md) | [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) | [balance-dps](#balance-dps) | 34.3 | 36.3 | 41.9 | 44.5 | 37.4 | 30.8 | 37.4 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).

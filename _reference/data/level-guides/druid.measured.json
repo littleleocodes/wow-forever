@@ -297,8 +297,8 @@
   "Restoration": {
    "build": "restoration-leveling",
    "rotation": "feral-cat-dps",
-   "provisional_order": true,
-   "fingerprint": "56640a26e7b0",
+   "provisional_order": false,
+   "fingerprint": "e669f857b5b4",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -334,116 +334,116 @@
      "seconds": 29.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 5.64,
+      "Melee": 5.66,
       "Enrage": 0.47,
       "Demoralizing Roar": 1.0,
-      "Maul": 2.94,
+      "Maul": 2.95,
       "Bash": 0.11
      }
     },
     "19": {
-     "seconds": 32.9,
+     "seconds": 33.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 6.29,
-      "Enrage": 0.5,
+      "Melee": 6.22,
+      "Enrage": 0.51,
       "Demoralizing Roar": 1.0,
-      "Maul": 3.41,
+      "Maul": 3.59,
       "Bash": 0.15
      }
     },
     "20": {
-     "seconds": 19.9,
+     "seconds": 20.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Claw": 3.74,
-      "Melee": 10.64,
+      "Claw": 3.83,
+      "Melee": 11.02,
       "Rip": 0.85
      }
     },
     "24": {
-     "seconds": 20.4,
+     "seconds": 21.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Rake": 1.19,
-      "Melee": 10.97,
-      "Claw": 3.07,
-      "Ferocious Bite": 0.52
+      "Rake": 1.2,
+      "Melee": 11.49,
+      "Claw": 3.2,
+      "Ferocious Bite": 0.51
      }
     },
     "30": {
+     "seconds": 23.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.39,
+      "Melee": 13.98,
+      "Claw": 3.66,
+      "Ferocious Bite": 0.61
+     }
+    },
+    "31": {
      "seconds": 24.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Rake": 1.45,
-      "Melee": 14.45,
+      "Melee": 14.46,
       "Claw": 3.7,
-      "Ferocious Bite": 0.64
-     }
-    },
-    "31": {
-     "seconds": 25.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.55,
-      "Melee": 15.04,
-      "Claw": 3.76,
-      "Ferocious Bite": 0.64
+      "Ferocious Bite": 0.65
      }
     },
     "32": {
-     "seconds": 22.4,
+     "seconds": 21.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 12.65,
-      "Rake": 1.29,
-      "Claw": 2.29,
-      "Ferocious Bite": 0.66
+      "Melee": 12.01,
+      "Rake": 1.27,
+      "Claw": 2.16,
+      "Ferocious Bite": 0.64
      }
     },
     "39": {
-     "seconds": 27.4,
+     "seconds": 26.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 16.94,
-      "Rake": 1.62,
-      "Claw": 2.95,
-      "Ferocious Bite": 0.87
+      "Melee": 16.22,
+      "Rake": 1.55,
+      "Claw": 2.83,
+      "Ferocious Bite": 0.84
      }
     },
     "40": {
-     "seconds": 27.5,
+     "seconds": 26.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 17.01,
-      "Rake": 1.68,
-      "Claw": 2.88,
-      "Ferocious Bite": 0.94
+      "Melee": 16.27,
+      "Rake": 1.62,
+      "Claw": 2.75,
+      "Ferocious Bite": 0.93
      }
     },
     "50": {
-     "seconds": 30.0,
+     "seconds": 28.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 18.34,
-      "Rake": 1.79,
-      "Claw": 3.05,
-      "Ferocious Bite": 1.05
+      "Melee": 17.44,
+      "Rake": 1.71,
+      "Claw": 2.92,
+      "Ferocious Bite": 1.01
      }
     },
     "60": {
-     "seconds": 32.7,
+     "seconds": 31.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 21.98,
-      "Rake": 2.14,
-      "Claw": 3.46,
-      "Ferocious Bite": 1.22
+      "Melee": 21.11,
+      "Rake": 2.09,
+      "Claw": 3.35,
+      "Ferocious Bite": 1.18
      }
     }
    }

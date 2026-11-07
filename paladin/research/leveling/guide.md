@@ -43,8 +43,8 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | ret-dps | 19.5 | 22.0 | 26.7 | 28.6 | 30.5 | 26.9 |
 | [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | ret-dps | 19.5 | 22.2 | 26.9 | 28.8 | 33.0 | 27.8 |
 | [Holy/Protection hybrid](../../leveling/hybrid-holy-protection.md) | [`hybrid-holy-protection-open-leveling`](builds/hybrid-holy-protection-open-leveling.md) | prot-leveling | 23.5 | 29.2 | 31.9 | 30.8 | 33.0 | 30.7 |
-| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | prot-leveling | 23.4 | 29.3 | 33.0 | 32.9 | 34.9 | 32.0 |
-| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 21.8 | 26.6 | 34.5 | 36.6 | 41.5 | 34.7 |
+| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | prot-leveling | 23.4 | 29.3 | 32.4 | 31.8 | 33.7 | 31.3 |
+| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 22.2 | 32.9 | 38.3 | 40.3 | 45.1 | 38.4 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **62.5 h** (30.5% faster than talentless), no respec ([respec plan](respec-plan.md)).
 

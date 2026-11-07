@@ -16,11 +16,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Discipline — Leveling into the raid build](builds/discipline-leveling.md) 🔬 | 30/21/0 | DPS |
-| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 22/29/0 | DPS |
 | [Discipline — Leveling (open talent search)](builds/discipline-open-leveling.md) 🔬 | 30/0/21 | DPS |
 | [Smite — Leveling (open talent search)](builds/smite-open-leveling.md) 🔬 | 22/21/8 | DPS |
 | [Shadow — Leveling (open talent search)](builds/shadow-open-leveling.md) 🔬 | 13/3/35 | DPS |
+| [Discipline — Leveling into the raid build](builds/discipline-leveling.md) 🔬 | 30/21/0 | DPS |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 22/29/0 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

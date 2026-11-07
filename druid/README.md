@@ -28,7 +28,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Feral Combat](leveling/feral-combat.md) 🔬 | 23 | fastest |
-| 2 | [Restoration](leveling/restoration.md) — Leveling into the raid build 🔬 | 28 | +25% |
+| 2 | [Restoration](leveling/restoration.md) — Leveling into the raid build 🔬 | 28 | +21% |
 | 3 | [Balance](leveling/balance.md) (optimized) | 37 | +64% |
 
 ### Raid (group)

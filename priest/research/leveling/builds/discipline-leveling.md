@@ -60,9 +60,9 @@ Level with the talents of the Discipline raid build (discipline-ml-heal) so you 
 | 22-24 | Discipline | Meditation | 3 | 15/0/0 |
 | 25 | Discipline | Mental Agility | 1 | 16/0/0 |
 | 26 | Discipline | Inner Focus | 1 | 17/0/0 |
-| 27-29 | Holy | Twilight Focus | 3 | 17/3/0 |
-| 30-32 | Discipline | Improved Power Word: Shield | 3 | 20/3/0 |
-| 33 | Discipline | Penance | 1 | 21/3/0 |
+| 27-29 | Discipline | Improved Power Word: Shield | 3 | 20/0/0 |
+| 30 | Discipline | Penance | 1 | 21/0/0 |
+| 31-33 | Holy | Twilight Focus | 3 | 21/3/0 |
 | 34 | Holy | Improved Renew | 1 | 21/4/0 |
 | 35-39 | Holy | Holy Specialization | 5 | 21/9/0 |
 | 40 | Holy | Divine Fury | 1 | 21/10/0 |
@@ -83,7 +83,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-10-25 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 46 s; own tree first 46 s; own tree last 47 s. First Discipline point at level 10.
+- 2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 46 s; own tree first 46 s; own tree last 46 s. First Discipline point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
