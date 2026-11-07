@@ -6,33 +6,33 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 
 | Class | Rotation (entry) | Open winner | Family | DPS | vs our best there |
 |---|---|---|---|---|---|
-| [warrior](../warrior/research/raid/family-search.md) | fury-dw-raid | [18/31/2](https://talentsforever.com/warrior/60/31303013002-050530305020100031-2-7) | Fury | 924.2 | +1.1% |
-| [warlock](../warlock/research/raid/family-search.md) | demonology-raid | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-7) | Demonology | 869.1 | +0.0% |
-| [warrior](../warrior/research/raid/family-search.md) | arms-2h-raid | [20/31/0](https://talentsforever.com/warrior/60/12303013032-450530310020100031--7) | Fury | 843.9 | -0.1% |
-| [paladin](../paladin/research/raid/family-search.md) | ret-dps | [16/4/31](https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-7) | Retribution | 839.0 | +24.6% |
-| [warlock](../warlock/research/raid/family-search.md) | affliction-raid | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-7) | Affliction | 836.9 | +0.0% |
-| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [5/12/34](https://talentsforever.com/hunter/60/5-005005101-502220230150122151-7) | Survival | 835.2 | -0.0% |
-| [mage](../mage/research/raid/family-search.md) | fire-raid | [17/31/3](https://talentsforever.com/mage/60/2302052001002-54500001230133031-003-7) | Fire | 827.1 | +3.8% |
-| [priest](../priest/research/raid/family-search.md) | shadow-dps | [15/1/35](https://talentsforever.com/priest/60/10500502002-01-51052101241302251-7) | Shadow | 800.4 | +0.4% |
-| [paladin](../paladin/research/raid/family-search.md) | shockadin-raid | [23/0/28](https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7) | Hybrid Holy/Retribution | 796.2 | - |
-| [warrior](../warrior/research/raid/family-search.md) | arms-battle-raid | [34/17/0](https://talentsforever.com/warrior/60/02303213132214101-55050000002--7) | Arms | 795.9 | +0.0% |
-| [warlock](../warlock/research/raid/family-search.md) | sb-raid | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7) | Hybrid Affliction/Destruction | 794.8 | +0.6% |
-| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% |
-| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% |
-| [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% |
-| [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% |
-| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/32/10](https://talentsforever.com/druid/60/050022-55000032023012125001-055-7) | Feral Combat | 767.7 | +1.8% |
-| [warlock](../warlock/research/raid/family-search.md) | fire-destro-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.3 | +1.4% |
-| [warlock](../warlock/research/raid/family-search.md) | incinerate-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-7) | Hybrid Affliction/Destruction | 767.2 | +7.0% |
-| [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% |
-| [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% |
-| [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-7) | Hybrid Fire/Frost | 742.1 | +0.0% |
-| [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/17/3](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-7) | Arcane | 741.8 | +12.7% |
-| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-7) | Survival | 735.5 | +0.0% |
-| [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-7) | Combat | 683.1 | +0.0% |
-| [mage](../mage/research/raid/family-search.md) | frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-7) | Hybrid Arcane/Frost | 670.9 | +1.5% |
-| [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-001333010001002-002-7) | Hybrid Assassination/Combat | 663.4 | +0.2% |
-| [druid](../druid/research/raid/family-search.md) | balance-dps | [33/0/18](https://talentsforever.com/druid/60/0532220115501051--5553-7) | Balance | 645.7 | +0.0% |
-| [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [19/32/0](https://talentsforever.com/rogue/60/0053030020041-0002330110012221501--7) | Combat | 641.2 | +1.8% |
-| [priest](../priest/research/raid/family-search.md) | smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7) | Hybrid Discipline/Holy | 611.1 | +2.9% |
-| [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--1022331313010111-7) | Subtlety | 610.9 | +0.0% |
+| [warrior](../warrior/research/raid/family-search.md) | fury-dw-raid | [18/31/2](https://talentsforever.com/warrior/60/31303013002-050530305020100031-2-12) | Fury | 924.2 | +1.1% |
+| [warlock](../warlock/research/raid/family-search.md) | demonology-raid | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-12) | Demonology | 869.1 | +0.0% |
+| [warrior](../warrior/research/raid/family-search.md) | arms-2h-raid | [20/31/0](https://talentsforever.com/warrior/60/12303013032-450530310020100031--12) | Fury | 843.9 | -0.1% |
+| [paladin](../paladin/research/raid/family-search.md) | ret-dps | [16/4/31](https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-12) | Retribution | 839.0 | +24.6% |
+| [warlock](../warlock/research/raid/family-search.md) | affliction-raid | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-12) | Affliction | 836.9 | +0.0% |
+| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [5/12/34](https://talentsforever.com/hunter/60/5-005005101-502220230150122151-12) | Survival | 835.2 | -0.0% |
+| [mage](../mage/research/raid/family-search.md) | fire-raid | [17/31/3](https://talentsforever.com/mage/60/2302052001002-54500001230133031-003-12) | Fire | 827.1 | +3.8% |
+| [priest](../priest/research/raid/family-search.md) | shadow-dps | [15/1/35](https://talentsforever.com/priest/60/10500502002-01-51052101241302251-12) | Shadow | 800.4 | +0.4% |
+| [paladin](../paladin/research/raid/family-search.md) | shockadin-raid | [23/0/28](https://talentsforever.com/paladin/60/15025110221021--4223302100131033-12) | Hybrid Holy/Retribution | 796.2 | - |
+| [warrior](../warrior/research/raid/family-search.md) | arms-battle-raid | [34/17/0](https://talentsforever.com/warrior/60/02303213132214101-55050000002--12) | Arms | 795.9 | +0.0% |
+| [warlock](../warlock/research/raid/family-search.md) | sb-raid | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-12) | Hybrid Affliction/Destruction | 794.8 | +0.6% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-12) | Marksmanship | 780.7 | +0.1% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-12) | Marksmanship | 780.7 | +0.1% |
+| [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--12) | Beast Mastery | 771.5 | +0.4% |
+| [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--12) | Beast Mastery | 771.5 | +0.4% |
+| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/32/10](https://talentsforever.com/druid/60/050022-55000032023012125001-055-12) | Feral Combat | 767.7 | +1.8% |
+| [warlock](../warlock/research/raid/family-search.md) | fire-destro-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-12) | Hybrid Affliction/Destruction | 767.3 | +1.4% |
+| [warlock](../warlock/research/raid/family-search.md) | incinerate-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0050203001-0550205003-12) | Hybrid Affliction/Destruction | 767.2 | +7.0% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-12) | Marksmanship | 759.8 | +0.0% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-12) | Marksmanship | 759.8 | +0.0% |
+| [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-12) | Hybrid Fire/Frost | 742.1 | +0.0% |
+| [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/17/3](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-12) | Arcane | 741.8 | +12.7% |
+| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-12) | Survival | 735.5 | +0.0% |
+| [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-12) | Combat | 683.1 | +0.0% |
+| [mage](../mage/research/raid/family-search.md) | frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-12) | Hybrid Arcane/Frost | 670.9 | +1.5% |
+| [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-001333010001002-002-12) | Hybrid Assassination/Combat | 663.4 | +0.2% |
+| [druid](../druid/research/raid/family-search.md) | balance-dps | [33/0/18](https://talentsforever.com/druid/60/0532220115501051--5553-12) | Balance | 645.7 | +0.0% |
+| [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [19/32/0](https://talentsforever.com/rogue/60/0053030020041-0002330110012221501--12) | Combat | 641.2 | +1.8% |
+| [priest](../priest/research/raid/family-search.md) | smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-12) | Hybrid Discipline/Holy | 611.1 | +2.9% |
+| [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--1022331313010111-12) | Subtlety | 610.9 | +0.0% |

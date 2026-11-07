@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Balance
 
-**[Balance — Moonkin / Nature's Grace](../research/raid/builds/balance-moonkin-raid.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051--5553-7)
+**[Balance — Moonkin / Nature's Grace](../research/raid/builds/balance-moonkin-raid.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051--5553-12)
 
 ## How to play
 
@@ -57,8 +57,8 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 642 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) |
-| Phase 1 BiS | 666 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) (ties this build) |
+| Pre-BiS | 642 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) |
+| Phase 1 BiS | 666 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 63.4; Phase 1 BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
 

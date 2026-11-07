@@ -4,7 +4,7 @@
 
 *Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search).* (a hybrid: Combat/Subtlety).
 
-**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-3051030313010001-7)
+**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-3051030313010001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

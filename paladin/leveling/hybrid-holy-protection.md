@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Holy/Protection hybrid
 
-**[Holy/Protection hybrid — Leveling](../research/leveling/builds/hybrid-holy-protection-open-leveling.md)** (21/16/14) — [open the talent tree](https://talentsforever.com/paladin/60/05025014210001-5131011031-23233001-7)
+**[Holy/Protection hybrid — Leveling](../research/leveling/builds/hybrid-holy-protection-open-leveling.md)** (21/16/14) — [open the talent tree](https://talentsforever.com/paladin/60/05025014210001-5131011031-23233001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

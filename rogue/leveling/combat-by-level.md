@@ -4,7 +4,7 @@
 
 What a Combat rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Combat with swords is the rogue's fastest leveling spec in the fight lab, and the simplest: build combo points with **Sinister Strike**, spend them on **Eviscerate**, open from stealth once you have an opener worth the walk. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/rogue/60/02531320201101-321033001201232025--7)), the one on the [Combat leveling page](combat.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/rogue/60/02531320201101-321033001201232025--12)), the one on the [Combat leveling page](combat.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

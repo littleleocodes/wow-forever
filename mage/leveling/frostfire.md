@@ -4,7 +4,7 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (1/25/25) — [open the talent tree](https://talentsforever.com/mage/60/1-35501101002133-2035300321003102-7)
+**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (1/25/25) — [open the talent tree](https://talentsforever.com/mage/60/1-35501101002133-2035300321003102-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

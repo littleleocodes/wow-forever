@@ -2,7 +2,7 @@
 
 [Rogue](../README.md) > [Raid (group)](README.md) > Subtlety
 
-**[Subtlety — Hemorrhage](../research/raid/builds/subtlety-hemo-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/rogue/60/0053230020141--3352331313010011-7)
+**[Subtlety — Hemorrhage](../research/raid/builds/subtlety-hemo-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/rogue/60/0053230020141--3352331313010011-12)
 
 ## How to play
 
@@ -68,8 +68,8 @@ Subtlety in a raid is a bleed rotation: **Hemorrhage** builds combo points, **Ru
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 681 | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322320313110011-7) |
-| Phase 1 BiS | 683 | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322330313010011-7) (ties this build) |
+| Pre-BiS | 681 | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322320313110011-12) |
+| Phase 1 BiS | 683 | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322330313010011-12) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 66.5; Phase 1 BiS 66.6; each item opens its Wowhead page, with where it drops and its enchant):
 

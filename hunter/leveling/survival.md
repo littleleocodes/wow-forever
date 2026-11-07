@@ -2,7 +2,7 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Survival
 
-**[Survival (optimized, AoE pulls)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md)** (8/12/31) — [open the talent tree](https://talentsforever.com/hunter/60/512-3150102-504103031201022151-7)
+**[Survival (optimized, AoE pulls)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md)** (8/12/31) — [open the talent tree](https://talentsforever.com/hunter/60/512-3150102-504103031201022151-12)
 
 > **Signature spells: this build fails the check** in the fight lab (core share 28% < 50%). Survival is defined by melee, Raptor Strike, Mongoose Bite, Lacerate, Wing Clip carrying 50% of the damage at level 60. No leveling build of this spec passes yet; it stays on the page until one does (the leveling searches since 2026-10-22 look only for such builds).
 

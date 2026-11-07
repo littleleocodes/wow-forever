@@ -183,7 +183,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7>
+- <https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

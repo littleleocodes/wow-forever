@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Restoration
 
-**[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (11/4/36) — [open the talent tree](https://talentsforever.com/druid/60/05302001-04-153311505310305-7)
+**[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (11/4/36) — [open the talent tree](https://talentsforever.com/druid/60/05302001-04-153311505310305-12)
 
 > 🔬 These are your **raid talents** ([Restoration — Raid healing](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 34 s per kill; own tree last: 34 s per kill; own tree first: 35 s per kill). A model of the beta, to check at launch.
 

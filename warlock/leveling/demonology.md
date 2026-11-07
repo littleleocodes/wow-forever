@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Demonology
 
-**[Demonology — Leveling](../research/leveling/builds/demonology-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/23500020134001-032523020100030135--7)
+**[Demonology — Leveling](../research/leveling/builds/demonology-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/23500020134001-032523020100030135--12)
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 

@@ -107,7 +107,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/paladin>
-- <https://talentsforever.com/paladin/60/05025-5230111021-502331010113003-7>
+- <https://talentsforever.com/paladin/60/05025-5230111021-502331010113003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -110,7 +110,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/02531020211451031-32212300020122--7>
+- <https://talentsforever.com/rogue/60/02531020211451031-32212300020122--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

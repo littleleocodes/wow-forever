@@ -32,7 +32,11 @@ TODAY = datetime.date.today().isoformat()
 # build. Version 6 was the 70291 order; version 7 (2026-10-17) the 70425 trees (mage, priest, shaman and warlock moved). Checked on
 # 2026-10-17: all 45 popular version-7 codes decode onto our 70425 data with the site's own per-tree points, no rank or tier error
 # (popular_builds.CODE_VERSION).
-TF_CODE_VERSION = "7"
+# 2026-11-07: version 12 (the site moved 7 -> 12 between 10-17 and 11-04 and our label stayed): a link names the order its digits are in,
+# and the site translates an old version by that version's table, so our digits (today's order) under -7 opened other talents: 216 of the
+# 330 links on the pages, every mage, paladin and rogue link among them. Our data's order equals the site's for all nine classes
+# (data.json of 2026-11-04). Keep this at the version whose order forever-talents/ follows; page_lint.py checks it against the live site.
+TF_CODE_VERSION = "12"
 
 
 def tf_link(cls, alloc):

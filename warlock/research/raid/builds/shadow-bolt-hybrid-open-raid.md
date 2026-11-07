@@ -138,7 +138,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7>
+- <https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

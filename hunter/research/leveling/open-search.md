@@ -6,9 +6,9 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| bm-leveling | Beast Mastery | [28/19/4](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-7) | Hybrid Beast Mastery/Marksmanship | 22.86 | +0.1% faster than beast-mastery-open-leveling |
-| mm-raid | Marksmanship | [21/30/0](https://talentsforever.com/hunter/60/52210005050001-005355200101305--7) | Marksmanship | 22.74 | +0.5% faster than marksmanship-open-leveling |
-| melee-dps | Survival | [22/5/24](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7) | Hybrid Beast Mastery/Survival | 21.24 | +15.9% faster than opt-bm-leveling-leveling-aoe |
+| bm-leveling | Beast Mastery | [28/19/4](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-12) | Hybrid Beast Mastery/Marksmanship | 22.86 | +0.1% faster than beast-mastery-open-leveling |
+| mm-raid | Marksmanship | [21/30/0](https://talentsforever.com/hunter/60/52210005050001-005355200101305--12) | Marksmanship | 22.74 | +0.5% faster than marksmanship-open-leveling |
+| melee-dps | Survival | [22/5/24](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-12) | Hybrid Beast Mastery/Survival | 21.24 | +15.9% faster than opt-bm-leveling-leveling-aoe |
 
 ## bm-leveling
 

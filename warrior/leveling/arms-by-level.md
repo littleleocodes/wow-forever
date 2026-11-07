@@ -4,7 +4,7 @@
 
 What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. The whole game is spending it on the right attack. You stay in Battle Stance with a two-handed weapon from 1 to 60. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/17/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213032215201-05140005002-2-7)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 32/17/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213032215201-05140005002-2-12)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

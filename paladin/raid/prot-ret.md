@@ -4,7 +4,7 @@
 
 *Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points.* (a hybrid: Protection/Retribution).
 
-**[Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md)** (8/15/28) — [open the talent tree](https://talentsforever.com/paladin/60/05003-053020005-1523330100130033-7)
+**[Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md)** (8/15/28) — [open the talent tree](https://talentsforever.com/paladin/60/05003-053020005-1523330100130033-12)
 
 ## How to play
 

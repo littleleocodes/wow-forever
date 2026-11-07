@@ -4,7 +4,7 @@
 
 What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Frost levels by slowing the mob, freezing it at your feet, stepping back and hitting it while it cannot reach you. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-7)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-12)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

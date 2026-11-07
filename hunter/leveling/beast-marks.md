@@ -4,7 +4,7 @@
 
 *Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/19/4) — [open the talent tree](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-7)
+**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/19/4) — [open the talent tree](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

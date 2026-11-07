@@ -4,7 +4,7 @@
 
 *Damage from Smite and Holy Fire, carried by Discipline talents.* (a hybrid: Discipline/Holy).
 
-**[Smite — Leveling](../research/leveling/builds/smite-open-leveling.md)** (22/21/8) — [open the talent tree](https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7)
+**[Smite — Leveling](../research/leveling/builds/smite-open-leveling.md)** (22/21/8) — [open the talent tree](https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

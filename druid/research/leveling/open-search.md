@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| balance-dps | Balance | [33/2/16](https://talentsforever.com/druid/60/5432200113201351-02-505303-7) | Balance | 42.24 | +0.2% faster than balance-open-leveling |
-| feral-cat-dps | Feral Combat, Restoration | [11/27/13](https://talentsforever.com/druid/60/05012201-51201302123002122-05503-7) | Hybrid Feral Combat/Restoration | 27.64 | +1.2% faster than opt-feral-cat-dps-solo-60 |
+| balance-dps | Balance | [33/2/16](https://talentsforever.com/druid/60/5432200113201351-02-505303-12) | Balance | 42.24 | +0.2% faster than balance-open-leveling |
+| feral-cat-dps | Feral Combat, Restoration | [11/27/13](https://talentsforever.com/druid/60/05012201-51201302123002122-05503-12) | Hybrid Feral Combat/Restoration | 27.64 | +1.2% faster than opt-feral-cat-dps-solo-60 |
 
 ## balance-dps
 

@@ -97,7 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/shaman>
-- <https://talentsforever.com/shaman/60/540332100302135-05203001-053-7>
+- <https://talentsforever.com/shaman/60/540332100302135-05203001-053-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

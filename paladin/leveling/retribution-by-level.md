@@ -4,7 +4,7 @@
 
 What a Retribution paladin presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A paladin's fight is simple: a seal on yourself, your weapon's swings, and two strikes on 10-second cooldowns. Most new spells are safety tools, not rotation. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 12/9/30 ([open the talent tree](https://talentsforever.com/paladin/60/050232-50301-0523330120130133-7)), the one on the [Retribution leveling page](retribution.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 12/9/30 ([open the talent tree](https://talentsforever.com/paladin/60/050232-50301-0523330120130133-12)), the one on the [Retribution leveling page](retribution.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 > **Provisional talents.** The paladin's leveling search has not run on the current game data yet, so the page's build has no talent order of its own. The talent levels below follow the stats model's order and will change when the search finishes; the spells the trainer teaches, and when to press them, will not.
 

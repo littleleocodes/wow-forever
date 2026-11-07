@@ -4,7 +4,7 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**[Daggers (split, optimized, AoE pulls)](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (21/27/3) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-31203302100123015-3-7)
+**[Daggers (split, optimized, AoE pulls)](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (21/27/3) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-31203302100123015-3-12)
 
 **Signature spells:** 75% of the damage at level 60 in the fight lab comes from melee, Backstab, Mutilate, Sinister Strike, Eviscerate (the spec's rule: at least 60%).
 

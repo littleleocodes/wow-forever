@@ -151,7 +151,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/rogue/60/005303103004-32023311001515221--7>
+- <https://talentsforever.com/rogue/60/005303103004-32023311001515221--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

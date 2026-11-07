@@ -2,7 +2,7 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Elemental
 
-**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-7)
+**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

@@ -4,7 +4,7 @@
 
 What a melee hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The Beast-Survival build is the hunter's fastest leveling build in the fight lab: a pet that does a third of the work, two weapons, a sting at the pull, a trap under your feet, and Raptor Strike to finish. It is a strange hunter and a quick one. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 22/5/24 ([open the talent tree](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 22/5/24 ([open the talent tree](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-12)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

@@ -8,32 +8,32 @@ Every raid damage spec's DPS in two gear tiers, like WoWSims' Pre-BiS and BiS pr
 
 | # | Spec | Full raid DPS | Behind the best | Talents |
 |---|---|---|---|---|
-| 1 | [Arcane Mage](../mage/raid/arcane.md) | 1003 | best | [32/16/3](https://talentsforever.com/mage/60/131205203100311531-553000011001-003-7) |
-| 2 | [Fury Warrior](../warrior/raid/fury.md) | 981 | -2% | [19/31/1](https://talentsforever.com/warrior/60/30303213002-350530005020100031-1-7) |
-| 3 | [Fire Mage](../mage/raid/fire.md) | 903 | -10% | [17/31/3](https://talentsforever.com/mage/60/2032052001002-54500001230133031-003-7) |
-| 4 | [Arms Warrior](../warrior/raid/arms.md) | 886 | -12% | [39/9/3](https://talentsforever.com/warrior/60/30323213132215201-0504-21-7) |
-| 5 | [Demonology Warlock](../warlock/raid/demonology.md) | 880 | -12% | [2/31/18](https://talentsforever.com/warlock/60/002-0025003031220301351-0550005003-7) |
-| 6 | [Arcane-Frost Mage](../mage/raid/arcane-frost.md) | 868 | -13% | [28/10/13](https://talentsforever.com/mage/60/03322120312001053-55-0535-7) |
-| 7 | [Affliction Warlock](../warlock/raid/affliction.md) | 853 | -15% | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-7) |
-| 8 | [Shadow Priest](../priest/raid/shadow.md) | 850 | -15% | [18/0/33](https://talentsforever.com/priest/60/525005001--50052101231302251-7) |
-| 9 | [Frostfire Mage](../mage/raid/frostfire.md) | 842 | -16% | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-7) |
-| 10 | [Feral Combat Druid](../druid/raid/feral-combat.md) | 836 | -17% | [9/31/11](https://talentsforever.com/druid/60/050022-55000032023012025001-0551-7) |
-| 11 | [Survival Hunter](../hunter/raid/survival.md) | 825 | -18% | [5/12/34](https://talentsforever.com/hunter/60/5-005105001-500230230250122151-7) |
-| 12 | [Marksmanship Hunter](../hunter/raid/marksmanship.md) | 812 | -19% | [7/39/5](https://talentsforever.com/hunter/60/502-0053552501520051-5-7) |
-| 13 | [Shadow Bolt hybrid Warlock](../warlock/raid/shadow-bolt-hybrid.md) | 809 | -19% | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7) |
-| 14 | [Beast-Marks Hunter](../hunter/raid/beast-marks.md) | 798 | -20% | [28/21/2](https://talentsforever.com/hunter/60/532000150510123-00530503005-2-7) |
-| 15 | [Beast Mastery Hunter](../hunter/raid/beast-mastery.md) | 796 | -21% | [31/20/0](https://talentsforever.com/hunter/60/5220111505001251-20501513003--7) |
-| 16 | [Enhancement Shaman](../shaman/raid/enhancement.md) | 786 | -22% | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-7) |
-| 17 | [Destruction Warlock](../warlock/raid/destruction.md) | 783 | -22% | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055031500310035-7) |
-| 18 | [Elemental-Enhancement Shaman](../shaman/raid/elemental-enhancement.md) | 755 | -25% | [17/29/5](https://talentsforever.com/shaman/60/053303102-05303031005100224-05-7) |
-| 19 | [Combat Rogue](../rogue/raid/combat.md) | 744 | -26% | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-7) |
-| 20 | [Daggers (split) Rogue](../rogue/raid/daggers-split.md) | 721 | -28% | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-7) |
-| 21 | [Assassination Rogue](../rogue/raid/assassination.md) | 719 | -28% | [30/21/0](https://talentsforever.com/rogue/60/00530300241410031-003333000001002--7) |
-| 22 | [Smite Priest](../priest/raid/smite.md) | 685 | -32% | [17/17/17](https://talentsforever.com/priest/60/50503000103-20515101002-500520012002-7) |
-| 23 | [Subtlety Rogue](../rogue/raid/subtlety.md) | 683 | -32% | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322330313010011-7) |
-| 24 | [Balance Druid](../druid/raid/balance.md) | 666 | -34% | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) |
-| 25 | [Frost Mage](../mage/raid/frost.md) | 620 | -38% | [21/0/30](https://talentsforever.com/mage/60/0502251031001001--2535120301203012-7) |
-| 26 | [Elemental Shaman](../shaman/raid/elemental.md) | 597 | -40% | [32/10/9](https://talentsforever.com/shaman/60/550533100000035-055-05301-7) |
+| 1 | [Arcane Mage](../mage/raid/arcane.md) | 1003 | best | [32/16/3](https://talentsforever.com/mage/60/131205203100311531-553000011001-003-12) |
+| 2 | [Fury Warrior](../warrior/raid/fury.md) | 981 | -2% | [19/31/1](https://talentsforever.com/warrior/60/30303213002-350530005020100031-1-12) |
+| 3 | [Fire Mage](../mage/raid/fire.md) | 903 | -10% | [17/31/3](https://talentsforever.com/mage/60/2032052001002-54500001230133031-003-12) |
+| 4 | [Arms Warrior](../warrior/raid/arms.md) | 886 | -12% | [39/9/3](https://talentsforever.com/warrior/60/30323213132215201-0504-21-12) |
+| 5 | [Demonology Warlock](../warlock/raid/demonology.md) | 880 | -12% | [2/31/18](https://talentsforever.com/warlock/60/002-0025003031220301351-0550005003-12) |
+| 6 | [Arcane-Frost Mage](../mage/raid/arcane-frost.md) | 868 | -13% | [28/10/13](https://talentsforever.com/mage/60/03322120312001053-55-0535-12) |
+| 7 | [Affliction Warlock](../warlock/raid/affliction.md) | 853 | -15% | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-12) |
+| 8 | [Shadow Priest](../priest/raid/shadow.md) | 850 | -15% | [18/0/33](https://talentsforever.com/priest/60/525005001--50052101231302251-12) |
+| 9 | [Frostfire Mage](../mage/raid/frostfire.md) | 842 | -16% | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-12) |
+| 10 | [Feral Combat Druid](../druid/raid/feral-combat.md) | 836 | -17% | [9/31/11](https://talentsforever.com/druid/60/050022-55000032023012025001-0551-12) |
+| 11 | [Survival Hunter](../hunter/raid/survival.md) | 825 | -18% | [5/12/34](https://talentsforever.com/hunter/60/5-005105001-500230230250122151-12) |
+| 12 | [Marksmanship Hunter](../hunter/raid/marksmanship.md) | 812 | -19% | [7/39/5](https://talentsforever.com/hunter/60/502-0053552501520051-5-12) |
+| 13 | [Shadow Bolt hybrid Warlock](../warlock/raid/shadow-bolt-hybrid.md) | 809 | -19% | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-12) |
+| 14 | [Beast-Marks Hunter](../hunter/raid/beast-marks.md) | 798 | -20% | [28/21/2](https://talentsforever.com/hunter/60/532000150510123-00530503005-2-12) |
+| 15 | [Beast Mastery Hunter](../hunter/raid/beast-mastery.md) | 796 | -21% | [31/20/0](https://talentsforever.com/hunter/60/5220111505001251-20501513003--12) |
+| 16 | [Enhancement Shaman](../shaman/raid/enhancement.md) | 786 | -22% | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-12) |
+| 17 | [Destruction Warlock](../warlock/raid/destruction.md) | 783 | -22% | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055031500310035-12) |
+| 18 | [Elemental-Enhancement Shaman](../shaman/raid/elemental-enhancement.md) | 755 | -25% | [17/29/5](https://talentsforever.com/shaman/60/053303102-05303031005100224-05-12) |
+| 19 | [Combat Rogue](../rogue/raid/combat.md) | 744 | -26% | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-12) |
+| 20 | [Daggers (split) Rogue](../rogue/raid/daggers-split.md) | 721 | -28% | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-12) |
+| 21 | [Assassination Rogue](../rogue/raid/assassination.md) | 719 | -28% | [30/21/0](https://talentsforever.com/rogue/60/00530300241410031-003333000001002--12) |
+| 22 | [Smite Priest](../priest/raid/smite.md) | 685 | -32% | [17/17/17](https://talentsforever.com/priest/60/50503000103-20515101002-500520012002-12) |
+| 23 | [Subtlety Rogue](../rogue/raid/subtlety.md) | 683 | -32% | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322330313010011-12) |
+| 24 | [Balance Druid](../druid/raid/balance.md) | 666 | -34% | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) |
+| 25 | [Frost Mage](../mage/raid/frost.md) | 620 | -38% | [21/0/30](https://talentsforever.com/mage/60/0502251031001001--2535120301203012-12) |
+| 26 | [Elemental Shaman](../shaman/raid/elemental.md) | 597 | -40% | [32/10/9](https://talentsforever.com/shaman/60/550533100000035-055-05301-12) |
 
 Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on).
 
@@ -41,32 +41,32 @@ Ranked by DPS in a full raid (every raid buff and debuff: the group setting the 
 
 | # | Spec | Full raid DPS | Behind the best | Talents |
 |---|---|---|---|---|
-| 1 | [Arcane Mage](../mage/raid/arcane.md) | 1000 | best | [32/16/3](https://talentsforever.com/mage/60/023205203100311531-553000011001-003-7) |
-| 2 | [Fury Warrior](../warrior/raid/fury.md) | 977 | -2% | [18/31/2](https://talentsforever.com/warrior/60/31303013002-050530305020100031-2-7) |
-| 3 | [Fire Mage](../mage/raid/fire.md) | 885 | -12% | [17/31/3](https://talentsforever.com/mage/60/2032052001002-55500001230123031-003-7) |
-| 4 | [Arms Warrior](../warrior/raid/arms.md) | 879 | -12% | [39/10/2](https://talentsforever.com/warrior/60/30323213132215201-0505-2-7) |
-| 5 | [Arcane-Frost Mage](../mage/raid/arcane-frost.md) | 863 | -14% | [28/10/13](https://talentsforever.com/mage/60/05022320310101053-55-0535-7) |
-| 6 | [Demonology Warlock](../warlock/raid/demonology.md) | 855 | -15% | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-7) |
-| 7 | [Shadow Priest](../priest/raid/shadow.md) | 837 | -16% | [17/0/34](https://talentsforever.com/priest/60/0053050010102--50252101221311251-7) |
-| 8 | [Feral Combat Druid](../druid/raid/feral-combat.md) | 834 | -17% | [9/31/11](https://talentsforever.com/druid/60/050022-55000032023012025001-0551-7) |
-| 9 | [Affliction Warlock](../warlock/raid/affliction.md) | 823 | -18% | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-7) |
-| 10 | [Frostfire Mage](../mage/raid/frostfire.md) | 821 | -18% | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-7) |
-| 11 | [Marksmanship Hunter](../hunter/raid/marksmanship.md) | 821 | -18% | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-7) |
-| 12 | [Survival Hunter](../hunter/raid/survival.md) | 819 | -18% | [6/12/33](https://talentsforever.com/hunter/60/51-005015001-500221230250022151-7) |
-| 13 | [Beast-Marks Hunter](../hunter/raid/beast-marks.md) | 799 | -20% | [28/20/3](https://talentsforever.com/hunter/60/532000151500123-00520503005-3-7) |
-| 14 | [Beast Mastery Hunter](../hunter/raid/beast-mastery.md) | 784 | -22% | [31/17/3](https://talentsforever.com/hunter/60/5420001505001251-225305-3-7) |
-| 15 | [Shadow Bolt hybrid Warlock](../warlock/raid/shadow-bolt-hybrid.md) | 782 | -22% | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-7) |
-| 16 | [Enhancement Shaman](../shaman/raid/enhancement.md) | 773 | -23% | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-7) |
-| 17 | [Destruction Warlock](../warlock/raid/destruction.md) | 757 | -24% | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055031500310035-7) |
-| 18 | [Combat Rogue](../rogue/raid/combat.md) | 741 | -26% | [16/33/2](https://talentsforever.com/rogue/60/0053030020011-0003032200012321501-002-7) |
-| 19 | [Elemental-Enhancement Shaman](../shaman/raid/elemental-enhancement.md) | 726 | -27% | [17/29/5](https://talentsforever.com/shaman/60/503303102-05303031005100224-05-7) |
-| 20 | [Daggers (split) Rogue](../rogue/raid/daggers-split.md) | 717 | -28% | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-7) |
-| 21 | [Assassination Rogue](../rogue/raid/assassination.md) | 716 | -28% | [30/21/0](https://talentsforever.com/rogue/60/00530300231510031-005313000001002--7) |
-| 22 | [Subtlety Rogue](../rogue/raid/subtlety.md) | 681 | -32% | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322320313110011-7) |
-| 23 | [Smite Priest](../priest/raid/smite.md) | 679 | -32% | [17/17/17](https://talentsforever.com/priest/60/50503000103-20515101002-502521000002-7) |
-| 24 | [Balance Druid](../druid/raid/balance.md) | 642 | -36% | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-7) |
-| 25 | [Frost Mage](../mage/raid/frost.md) | 605 | -40% | [21/0/30](https://talentsforever.com/mage/60/0502251031001001--2535120301203012-7) |
-| 26 | [Elemental Shaman](../shaman/raid/elemental.md) | 578 | -42% | [31/10/10](https://talentsforever.com/shaman/60/550433100000035-055-05302-7) |
+| 1 | [Arcane Mage](../mage/raid/arcane.md) | 1000 | best | [32/16/3](https://talentsforever.com/mage/60/023205203100311531-553000011001-003-12) |
+| 2 | [Fury Warrior](../warrior/raid/fury.md) | 977 | -2% | [18/31/2](https://talentsforever.com/warrior/60/31303013002-050530305020100031-2-12) |
+| 3 | [Fire Mage](../mage/raid/fire.md) | 885 | -12% | [17/31/3](https://talentsforever.com/mage/60/2032052001002-55500001230123031-003-12) |
+| 4 | [Arms Warrior](../warrior/raid/arms.md) | 879 | -12% | [39/10/2](https://talentsforever.com/warrior/60/30323213132215201-0505-2-12) |
+| 5 | [Arcane-Frost Mage](../mage/raid/arcane-frost.md) | 863 | -14% | [28/10/13](https://talentsforever.com/mage/60/05022320310101053-55-0535-12) |
+| 6 | [Demonology Warlock](../warlock/raid/demonology.md) | 855 | -15% | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-12) |
+| 7 | [Shadow Priest](../priest/raid/shadow.md) | 837 | -16% | [17/0/34](https://talentsforever.com/priest/60/0053050010102--50252101221311251-12) |
+| 8 | [Feral Combat Druid](../druid/raid/feral-combat.md) | 834 | -17% | [9/31/11](https://talentsforever.com/druid/60/050022-55000032023012025001-0551-12) |
+| 9 | [Affliction Warlock](../warlock/raid/affliction.md) | 823 | -18% | [30/0/21](https://talentsforever.com/warlock/60/2550002013520005--0550305003-12) |
+| 10 | [Frostfire Mage](../mage/raid/frostfire.md) | 821 | -18% | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-12) |
+| 11 | [Marksmanship Hunter](../hunter/raid/marksmanship.md) | 821 | -18% | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-12) |
+| 12 | [Survival Hunter](../hunter/raid/survival.md) | 819 | -18% | [6/12/33](https://talentsforever.com/hunter/60/51-005015001-500221230250022151-12) |
+| 13 | [Beast-Marks Hunter](../hunter/raid/beast-marks.md) | 799 | -20% | [28/20/3](https://talentsforever.com/hunter/60/532000151500123-00520503005-3-12) |
+| 14 | [Beast Mastery Hunter](../hunter/raid/beast-mastery.md) | 784 | -22% | [31/17/3](https://talentsforever.com/hunter/60/5420001505001251-225305-3-12) |
+| 15 | [Shadow Bolt hybrid Warlock](../warlock/raid/shadow-bolt-hybrid.md) | 782 | -22% | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550105003-12) |
+| 16 | [Enhancement Shaman](../shaman/raid/enhancement.md) | 773 | -23% | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-12) |
+| 17 | [Destruction Warlock](../warlock/raid/destruction.md) | 757 | -24% | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055031500310035-12) |
+| 18 | [Combat Rogue](../rogue/raid/combat.md) | 741 | -26% | [16/33/2](https://talentsforever.com/rogue/60/0053030020011-0003032200012321501-002-12) |
+| 19 | [Elemental-Enhancement Shaman](../shaman/raid/elemental-enhancement.md) | 726 | -27% | [17/29/5](https://talentsforever.com/shaman/60/503303102-05303031005100224-05-12) |
+| 20 | [Daggers (split) Rogue](../rogue/raid/daggers-split.md) | 717 | -28% | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-12) |
+| 21 | [Assassination Rogue](../rogue/raid/assassination.md) | 716 | -28% | [30/21/0](https://talentsforever.com/rogue/60/00530300231510031-005313000001002--12) |
+| 22 | [Subtlety Rogue](../rogue/raid/subtlety.md) | 681 | -32% | [20/0/31](https://talentsforever.com/rogue/60/0053030020141--0322320313110011-12) |
+| 23 | [Smite Priest](../priest/raid/smite.md) | 679 | -32% | [17/17/17](https://talentsforever.com/priest/60/50503000103-20515101002-502521000002-12) |
+| 24 | [Balance Druid](../druid/raid/balance.md) | 642 | -36% | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) |
+| 25 | [Frost Mage](../mage/raid/frost.md) | 605 | -40% | [21/0/30](https://talentsforever.com/mage/60/0502251031001001--2535120301203012-12) |
+| 26 | [Elemental Shaman](../shaman/raid/elemental.md) | 578 | -42% | [31/10/10](https://talentsforever.com/shaman/60/550433100000035-055-05302-12) |
 
 Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on).
 

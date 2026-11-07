@@ -4,7 +4,7 @@
 
 *A melee shaman: Enhancement's Stormstrike and Flurry with Elemental's shock and Fire Nova talents.* (a hybrid: Elemental/Enhancement).
 
-**[Elemental-Enhancement — Raid](../research/raid/builds/elemental-enhancement-ml-raid.md)** (17/29/5) — [open the talent tree](https://talentsforever.com/shaman/60/503303102-05303031005100224-05-7)
+**[Elemental-Enhancement — Raid](../research/raid/builds/elemental-enhancement-ml-raid.md)** (17/29/5) — [open the talent tree](https://talentsforever.com/shaman/60/503303102-05303031005100224-05-12)
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
@@ -65,7 +65,7 @@ This hybrid is a melee shaman: Enhancement's **Stormstrike** and **Flurry** with
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 726 | this build |
-| Phase 1 BiS | 755 | [17/29/5](https://talentsforever.com/shaman/60/053303102-05303031005100224-05-7) (ties this build) |
+| Phase 1 BiS | 755 | [17/29/5](https://talentsforever.com/shaman/60/053303102-05303031005100224-05-12) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 65.8; Phase 1 BiS 65.2; each item opens its Wowhead page, with where it drops and its enchant):
 

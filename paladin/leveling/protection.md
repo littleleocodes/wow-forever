@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Protection
 
-**[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (0/34/17) — [open the talent tree](https://talentsforever.com/paladin/60/-25300122013501531-50213201201-7)
+**[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (0/34/17) — [open the talent tree](https://talentsforever.com/paladin/60/-25300122013501531-50213201201-12)
 
 > 🔬 These are your **raid talents** ([Protection — Raid tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 32 s per kill; own tree last: 32 s per kill; own tree first: 33 s per kill). A model of the beta, to check at launch.
 

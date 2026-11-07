@@ -6,9 +6,9 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| discipline-leveling | Discipline | [30/0/21](https://talentsforever.com/priest/60/525020231133201--42522000020301-7) | Discipline | 39.52 | +17.0% faster than discipline-leveling |
-| holy-leveling | Holy | [22/21/8](https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7) | Hybrid Discipline/Holy | 51.39 | +8.6% faster than holy-leveling |
-| shadow-dps | Shadow | [13/3/35](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7) | Shadow | 24.39 | +2.4% faster than opt-shadow-dps-solo-60 |
+| discipline-leveling | Discipline | [30/0/21](https://talentsforever.com/priest/60/525020231133201--42522000020301-12) | Discipline | 39.52 | +17.0% faster than discipline-leveling |
+| holy-leveling | Holy | [22/21/8](https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-12) | Hybrid Discipline/Holy | 51.39 | +8.6% faster than holy-leveling |
+| shadow-dps | Shadow | [13/3/35](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12) | Shadow | 24.39 | +2.4% faster than opt-shadow-dps-solo-60 |
 
 ## discipline-leveling
 

@@ -150,7 +150,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/hunter/60/502-0053352501522051-5-7>
+- <https://talentsforever.com/hunter/60/502-0053352501522051-5-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

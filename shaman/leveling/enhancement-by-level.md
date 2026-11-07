@@ -4,7 +4,7 @@
 
 What an Enhancement shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Enhancement is the shaman's fastest leveling spec in the fight lab: you walk in, swing a slow weapon, and add a shock and a strike on short cooldowns. Mana goes to shocks, not to Lightning Bolts. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 12/32/7 ([open the talent tree](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-7)), the one on the [Enhancement leveling page](enhancement.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 12/32/7 ([open the talent tree](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-12)), the one on the [Enhancement leveling page](enhancement.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

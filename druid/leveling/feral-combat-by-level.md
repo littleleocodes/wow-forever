@@ -4,7 +4,7 @@
 
 What a Feral druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The cat is the druid's fastest leveling build in the fight lab: Wrath and Moonfire to 9, Bear Form from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The page build (11/29/11) is a Feral Combat build with eleven points in Balance for crit, hit and bleed damage and eleven in Restoration for Heart of the Wild and Naturalist. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 11/29/11 ([open the talent tree](https://talentsforever.com/druid/60/15002201-51201302123002124-05501-7)), the one on the [Feral Combat leveling page](feral-combat.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 11/29/11 ([open the talent tree](https://talentsforever.com/druid/60/15002201-51201302123002124-05501-12)), the one on the [Feral Combat leveling page](feral-combat.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

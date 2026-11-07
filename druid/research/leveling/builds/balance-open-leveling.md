@@ -97,7 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/druid>
-- <https://talentsforever.com/druid/60/5432200115501351--505003-7>
+- <https://talentsforever.com/druid/60/5432200115501351--505003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

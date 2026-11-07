@@ -4,7 +4,7 @@
 
 What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Shadow levels on a small mana budget: one damage-over-time spell, **Mind Blast** on cooldown, and the wand for everything else until **Mind Flay** arrives at 20. The spec comes alive at 40 with **Shadowform**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 13/3/35 ([open the talent tree](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7)), the one on the [Shadow leveling page](shadow.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 13/3/35 ([open the talent tree](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12)), the one on the [Shadow leveling page](shadow.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 

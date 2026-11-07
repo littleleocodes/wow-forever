@@ -79,7 +79,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-7>
+- <https://talentsforever.com/mage/60/1-03550110002035-2035300321003102-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -4,7 +4,7 @@
 
 *Holy Shock burst and heals with Retribution's melee talents.* (a hybrid: Holy/Retribution).
 
-**[Shockadin — Raid](../research/raid/builds/shockadin-open-raid.md)** (23/0/28) — [open the talent tree](https://talentsforever.com/paladin/60/15025210220021--4523300100130033-7)
+**[Shockadin — Raid](../research/raid/builds/shockadin-open-raid.md)** (23/0/28) — [open the talent tree](https://talentsforever.com/paladin/60/15025210220021--4523300100130033-12)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
 

@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Demonology/Destruction hybrid
 
-**[Demonology/Destruction hybrid — Leveling](../research/leveling/builds/hybrid-demonology-destruction-open-leveling.md)** (5/24/22) — [open the talent tree](https://talentsforever.com/warlock/60/05-10050332012210013-0450304123-7)
+**[Demonology/Destruction hybrid — Leveling](../research/leveling/builds/hybrid-demonology-destruction-open-leveling.md)** (5/24/22) — [open the talent tree](https://talentsforever.com/warlock/60/05-10050332012210013-0450304123-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 

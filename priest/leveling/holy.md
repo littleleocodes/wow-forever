@@ -2,7 +2,7 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > Holy
 
-**[Holy — Leveling into the raid build](../research/leveling/builds/holy-leveling.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205005011330011-3350110303012043--7)
+**[Holy — Leveling into the raid build](../research/leveling/builds/holy-leveling.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205005011330011-3350110303012043--12)
 
 > 🔬 These are your **raid talents** ([Holy — Raid Healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 56 s per kill; stats model's order: 57 s per kill; own tree first: 60 s per kill). A model of the beta, to check at launch.
 
