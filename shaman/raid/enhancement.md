@@ -48,7 +48,7 @@ Enhancement is a melee spec that spends mana: your two-hander and **Windfury Wea
 **Caveats**
 
 - Mana runs short: with only your own buffs the simulator's build is out of mana for about 30 seconds of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.
-- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. If they stand away from your totem, **Totemic Projection** moves it (and all your other totems).
+- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. If they stand away from your totem, **Totemic Call** brings it to you, with all your other totems.
 - **Maelstrom Weapon**'s proc rate is not published. The simulator assumes a full stack about every 30 seconds; the stacks last 30 seconds, so cast the bolt when you reach 5.
 - Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land.
 

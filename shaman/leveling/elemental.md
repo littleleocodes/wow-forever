@@ -35,13 +35,13 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 - **Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 14% of your damage at 60 in the fight lab. **Shamanistic Focus** (level 39) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 4 seconds per kill without it).
 - **Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 47-48 and 53) cuts that by 70%. **Elemental Alacrity** (23-25) takes half a second off the cast.
 - The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 26-27 and 40, makes it 15% stronger and 9 seconds longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (18-22) makes shocks and bolts 10% cheaper.
-- **Lava Burst** comes at 49. Cast it whenever it is ready, with **Flame Shock** on the mob for its 20% bonus; **Elemental Fury** (levels 54-58) doubles the crit bonus of your spells and **Searing Totem**.
+- **Elemental Fury** (levels 54-58) doubles the crit bonus of your spells and **Searing Totem**.
 - Bolt between shocks only while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. The fight lab keeps **Rockbiter Weapon** (from 30, **Windfury Weapon**) on, and your weapon does about an eighth of your damage at 60.
 - Drop **Searing Totem** at each pull while you have more than half your mana: it does about 6% of your damage at 60.
 
 **Caveats**
 
-- From 28, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it. **Elemental Mastery** comes at 59: use it at the start of a fight on a fresh mob.
+- From 28, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it. **Lightning Mastery** comes at 59: use it at the start of a fight on a fresh mob.
 - This list is for one mob at a time; the fight lab does not model area pulls for Elemental. **Chain Lightning** hits up to 3 targets if you pull more.
 - Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast), 18-28 into Elemental, and 29-39 buy **Thundering Strikes** (5% crit with spells and attacks) and **Shamanistic Focus** from Enhancement, with five filler points to reach it (**Improved Ghost Wolf**, **Guardian Totems**, **Earth's Grasp**), before the deep Elemental talents.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.

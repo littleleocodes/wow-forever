@@ -39,7 +39,7 @@ Combat levels on short fights with two swords: open with **Garrote** from stealt
 **Why it works**
 
 - Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed. The tuned rules never open with **Cheap Shot** (about 8% faster per kill): it gives 2 points and a stun but no damage, for 60 energy.
-- **Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Improved Sinister Strike** (levels 10-11) and **Flawless Execution** (25) make them cheaper, and the fight lab measured each about a second per kill at 60. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.
+- **Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Efficient Strikes** (levels 14 and 22) and **Flawless Execution** (25) make them cheaper, and the fight lab measured each about a second per kill at 60. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.
 - **Riposte** (level 20) lights up after you parry: 10 energy for 150% weapon damage and a 6-second disarm. It is your cheapest hit, so press it as soon as it lights up.
 - **Blade Flurry** (level 34; 20% attack speed) and **Adrenaline Rush** (level 40; double energy) last 15 seconds, about one fight: use them at the start of a fight whenever they are ready.
 - **Setup** (levels 57-59) adds a combo point every time you dodge the mob's swing: the fight lab measured it the most valuable talent of this build at 60, about 1.8 seconds per kill.

@@ -27,7 +27,7 @@
 
 ## Why this rotation
 
-**Lightning Bolt** fills every gap; around it you keep **Flame Shock** ticking, spend Clearcasting on **Chain Lightning** and keep a **Searing Totem** down. Forever removed Elemental Mastery, so there is no burst window: you play the same list from pull to kill. This build takes no **Lava Burst**: its points go to Enhancement's crit and Intellect talents and **Mental Quickness** instead.
+**Lightning Bolt** fills every gap; around it you keep **Flame Shock** ticking, spend Clearcasting on **Chain Lightning** and keep a **Searing Totem** down. You play the same list from pull to kill. Blizzard's notes of 2026-11-02 removed Lava Burst and turned Elemental Mastery into **Lightning Mastery**, and this rotation dates from before them: the raid runs tune it again.
 
 **Why it works**
 
@@ -39,7 +39,7 @@
 
 **Caveats**
 
-- Several targets: with two or more enemies close together the rotation casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem only hits enemies within 8 yards of it; **Totemic Projection** can move it, but it moves all your totems.
+- Several targets: with two or more enemies close together the rotation casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem only hits enemies within 8 yards of it; **Totemic Call** brings all your totems back to you.
 - Mana: in a full raid you will not run dry in 3 minutes; the simulator's list falls back to a cheap rank 2 **Lightning Bolt** only when it cannot pay for the top rank. Alone, or in much longer fights, keep **Chain Lightning** for Clearcasting and drink a mana potion instead of downranking: Forever gives ranks far below your level much less from spell power (Blizzard's beta notes; the exact rule is not published).
 - Moving: **Flame Shock** (20 yards; this build has no **Elemental Reach**) and your totems are instant, so use them while you move. If you must keep moving, an **Earth Shock** beats casting nothing as long as Flame Shock has more than 6 seconds left: the two share a cooldown.
 - Your other totems: the simulator's full raid already counts **Mana Spring Totem**, **Strength of Earth Totem** and **Windfury Totem** as up, so this list drops only your Fire totem. If you are your group's shaman, drop what your group needs at the pull; they last 5 minutes.
@@ -49,7 +49,6 @@
 - In the last 10 seconds, do not drop a new **Searing Totem**: it would shoot only a few times. Cast a **Lightning Bolt** instead.
 - When your mana will clearly outlast the fight (more than 200 mana for every second left, say 6,000 with 30 seconds to go), cast **Chain Lightning** whenever it is ready, not only on Clearcasting.
 - If the boss will die before a 2-second cast can finish, only an instant still lands: an **Earth Shock**, which hits harder at once than **Flame Shock**.
-- If you play the optimized 31/7/13 build listed below instead, it has **Lava Burst**: cast it whenever it is ready, right after **Flame Shock** (20% more damage while your Flame Shock is on the target).
 
 *This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 

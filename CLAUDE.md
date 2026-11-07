@@ -241,6 +241,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest. Keys hold fight spells and helpful things only, never buffs, food, drink, conjuring, the mount or the Hearthstone. No key holds Attack (user, 2026-11-07): a melee class's opening key is a macro with a `/startattack` line and the middle mouse button is free; casters keep the wand there. Keep the
   "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
   the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling); owed: warlock.
+- **Page audit** (2026-11-07, user: "constantly be auditing the GitHub pages for the classes ... make sure that any talent tree calculator links are up to date with
+  the builds"): `page_lint.py [classes] [--pushed] [--live] [--write]` -> `_reference/page-lint.md` reads the pages as a player does: relative links, talentsforever.com links
+  (version label, legal build, the build the same line names), guide against spec page, keybinds page against the guide's keys, macro spells, bold names that are no spell
+  or talent. `--pushed` reads origin/main, `--live` asks the site, the simulator's upstream and Blizzard's UI mirror (github.com/Gethe/wow-ui-source, branch forever:
+  slash commands, bindings, client build). Run it at every class or lane boundary and after every data change; the regen step runs it. A link names the order its digits
+  are in and the site translates older versions by table, so `TF_CODE_VERSION` must be the site's version whose order forever-talents/ follows: the label stayed at 7 while
+  the site went to 12, and 216 of 330 links opened other talents, every mage, paladin and rogue link among them.
 - **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`
   chains (refresh →) effects → calibrate ↔ optimize until the optimizer's leveling build repeats (new builds are saved as
   `<class>/research/leveling/fightlab/candidates/cand-<tag>-rN.json`) → race (hand draft vs every candidate) → report
@@ -488,8 +495,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - **Player pages**: `render_modes.py` (regen step; see Structure rules) writes the top-level README, the class README's two player
   sections and `<class>/leveling|raid/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
   The beta build every page and report names comes from `data_build.py` (the forever-talents snapshot; 70009 had been written into the
-  code); talentsforever.com links end in the site's current code version (`render_start_here.TF_CODE_VERSION`, "6" since 2026-10-09: the
-  "-4" links opened other talents for the trees that changed). Optimizer builds read "<Spec> (optimized[, variant][, scenario])"; a derived
+  code); talentsforever.com links end in the site's current code version (`render_start_here.TF_CODE_VERSION`, "12" since 2026-11-07, see Page audit). Optimizer builds read "<Spec> (optimized[, variant][, scenario])"; a derived
   build taken from a simulator preset carries `preset` and says so (the Feral Cat 9/35/7 preset, 691 against our 594 in a full raid,
   2026-10-09); a hybrid with a build in one mode only gets a page pointing to that mode and its trees; gear-tier tables from searches
   before the current simulator say so (`render_modes.SIM_SINCE`).

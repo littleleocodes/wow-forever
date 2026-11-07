@@ -45,7 +45,7 @@ Subtlety levels on its openers and on dodges: **Premeditation** and a stealth op
 
 - **Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** and **Hemorrhage** hit much harder with a dagger: keep daggers in both hands.
 - Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike**, **Ambush** or **Ghostly Strike** 40% more crit chance.
-- **Dirty Tricks**, **Improved Distract**, **Heightened Senses** and **Cutthroat** are tier points on the way down the tree: the fight lab plays none of them (it never casts **Backstab**, which **Cutthroat** needs).
+- **Dirty Tricks** and **Heightened Senses** are tier points on the way down the tree: the fight lab plays neither of them.
 - **Rupture** is not in the leveling list: the fight lab plays **Eviscerate**, so **Serrated Blades** counts here only for the armor it ignores.
 - Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.3% faster per kill.
 - **Kick** a caster mob's spell: the tuned rules keep it.

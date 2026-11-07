@@ -29,13 +29,13 @@ The Prot-Ret leveling page is the stats model's pick for solo play at 60: a two-
 
 **Why it works**
 
-- Levels 10-44 are a Retribution leveling build: **Benediction** (10-14), **Conviction** (15-19), **Seal of Command** (20), **Sanctified Judgement** (21-22 and 26), **Sacred Arbiter** (25), **Improved Judgement** (27-28), **Vengeance** (30-32), **Two-Handed Weapon Specialization** (33-34), **Instrument of Law** (35-36), then **Divine Strength** and **Improved Seals** from Holy (37-44). Play it like the Retribution page: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, **Hammer of Justice** before a **Judgement** on a mob above 30% health.
-- No **Consecration** against a single mob: the Retribution list's tuned rules never cast it (about 5% faster kills). **Hammer of Wrath** below 20% health from level 44, instant with **Instrument of Law**. Drink below 15% of your mana.
+- Levels 10-44 are a Retribution leveling build: **Benediction** (10-14), **Conviction** (15-19), **Seal of Command** (20), **Sanctified Judgement** (21-22 and 26), **Sacred Arbiter** (25), **Improved Judgement** (27-28), **Vengeance** (30-32), **Two-Handed Weapon Specialization** (33-34), then **Divine Strength** and **Improved Seals** from Holy (37-44). Play it like the Retribution page: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, **Hammer of Justice** before a **Judgement** on a mob above 30% health.
+- No **Consecration** against a single mob: the Retribution list's tuned rules never cast it (about 5% faster kills). **Hammer of Wrath** below 20% health from level 44. Drink below 15% of your mana.
 - Of the Protection points, **Precision** (50-52, 3% hit), **Anticipation** (53-54, Defense) and **Sacred Duty** (55-56, more Stamina and a shorter **Divine Protection** cooldown) work with a two-hander in the fight lab. **Pursuit of Justice** (23-24) is travel speed, which the fight lab does not model.
 
 **Caveats**
 
-- **Redoubt**, **Shield Specialization** and **Improved Seal of Fury** need a shield and **Seal of Fury**, and the Retribution list never presses **Swift Judgement**: with a two-hander in the Retribution list these 9 points do nothing in the fight lab. The Retribution page's build is the faster measured one.
+- **Redoubt** and **Shield Specialization** need a shield and **Seal of Fury**, and the Retribution list never presses **Swift Judgement**: with a two-hander in the Retribution list these 9 points do nothing in the fight lab. The Retribution page's build is the faster measured one.
 - Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured.
 
 **When to change it**

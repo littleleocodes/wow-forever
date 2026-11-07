@@ -30,7 +30,7 @@
 
 ## Why this rotation
 
-Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on cooldown and bolts between them while your mana holds. The Enhancement half (levels 10-31) turns your Intellect into spell damage and attack power (**Mental Quickness**, **Mental Dexterity**), so your spells and your weapon both hit harder; the Elemental talents come last (40-60), **Lava Burst** only at 60.
+Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on cooldown and bolts between them while your mana holds. The Enhancement half (levels 10-31) turns your Intellect into spell damage and attack power (**Mental Quickness**, **Mental Dexterity**), so your spells and your weapon both hit harder; the Elemental talents come last (40-60).
 
 **Why it works**
 
@@ -42,7 +42,7 @@ Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while t
 
 **Caveats**
 
-- No **Elemental Mastery**, and **Lava Burst** only at 60: skip those steps until then.
+- The deep Elemental talents come last: skip their steps until you have them.
 - In the fight lab it takes 35 seconds per kill (levels 20-60): about 15% slower than Enhancement (30.5) and about 5% faster than Elemental (37).
 - This list is for one mob at a time; the fight lab does not model area pulls for this rotation.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
