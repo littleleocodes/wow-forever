@@ -2,6 +2,8 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Holy/Protection hybrid
 
+**Leveling from level 1?** [The rotation level by level](hybrid-holy-protection-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Holy/Protection hybrid — Leveling](../research/leveling/builds/hybrid-holy-protection-open-leveling.md)** (13/25/13) — [open the talent tree](https://talentsforever.com/paladin/60/050240002-353001021113014-05233-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -14,13 +16,10 @@
 
 **In the fight**, top to bottom:
 
-1. **Hammer of Justice** a mob that casts spells.
-2. Keep **Seal of Fury** up.
-3. **Hammer of Wrath** when the mob is below 20% health.
-4. **Holy Shield** whenever it is down.
-5. **Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.
-6. **Consecration** while your mana is above 60% and the mob has more than 30% health left.
-7. Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) or **Hammer of Justice**, and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+1. Keep **Seal of Fury** up.
+2. **Holy Shield** whenever it is down.
+3. **Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.
+4. Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%. The tuned rules cast no Hammer of Justice, Hammer of Wrath or Consecration against a single mob.
 
 **Between fights:** Drink below 15% of your mana; you rarely need to eat.
 

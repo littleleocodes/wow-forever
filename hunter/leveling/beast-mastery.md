@@ -2,11 +2,13 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Beast Mastery
 
+**Leveling from level 1?** [The rotation level by level](beast-mastery-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-open-leveling.md)** (31/16/4) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505011251-0053520001-4-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Beast Mastery), which stays below as the alternative. A model of the beta, to check at launch.
 
-*Signature spells (**Bestial Wrath**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 34% of the damage at level 60 in the fight lab comes from pet (the spec's rule: at least 30%; **Bestial Wrath** cast in every fight).
 
 ## How to play
 
@@ -21,7 +23,7 @@
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
 6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
 
 ## Why this rotation
 

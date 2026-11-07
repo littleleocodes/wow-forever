@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Destruction leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +11.1% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.
+The Destruction leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +1.6% faster per kill than destruction-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -58,8 +58,8 @@ The Destruction leveling build the open leveling search found on 2026-11-02: eve
 | 17-19 | Destruction | Cataclysm | 3 | 0/0/10 |
 | 20-24 | Destruction | Ruin | 5 | 0/0/15 |
 | 25-27 | Destruction | Agonizing Flames | 3 | 0/0/18 |
-| 28 | Destruction | Shadowburn | 1 | 0/0/19 |
-| 29-31 | Destruction | Intensity | 3 | 0/0/22 |
+| 28-30 | Destruction | Intensity | 3 | 0/0/21 |
+| 31 | Destruction | Shadowburn | 1 | 0/0/22 |
 | 32 | Destruction | Conflagrate | 1 | 0/0/23 |
 | 33 | Destruction | Pyroclasm | 1 | 0/0/24 |
 | 34 | Destruction | Bane of Havoc | 1 | 0/0/25 |
@@ -67,23 +67,22 @@ The Destruction leveling build the open leveling search found on 2026-11-02: eve
 | 40 | Destruction | Incinerate | 1 | 0/0/31 |
 | 41-43 | Destruction | Fire and Brimstone | 3 | 0/0/34 |
 | 44 | Affliction | Improved Life Tap | 1 | 1/0/34 |
-| 45-48 | Affliction | Suppression | 4 | 5/0/34 |
-| 49-53 | Demonology | Unholy Power | 5 | 5/5/34 |
-| 54-56 | Demonology | Improved Voidwalker | 3 | 5/8/34 |
-| 57 | Affliction | Suppression | 1 | 6/8/34 |
+| 45-49 | Affliction | Suppression | 5 | 6/0/34 |
+| 50-54 | Demonology | Unholy Power | 5 | 6/5/34 |
+| 55-57 | Demonology | Improved Voidwalker | 3 | 6/8/34 |
 | 58 | Demonology | Demonic Embrace | 1 | 6/9/34 |
 | 59-60 | Demonology | Fel Vitality | 2 | 6/11/34 |
 
 ## Core talents (priority order)
 
-1. **Suppression** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Conflagrate** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Shadow and Flame** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Agonizing Flames** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Improved Voidwalker** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Cataclysm** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Shadowburn** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Incinerate** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Conflagrate** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Shadow and Flame** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Shadowburn** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Suppression** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Incinerate** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Agonizing Flames** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Cataclysm** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Fire and Brimstone** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -91,7 +90,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 45.74; destruction-leveling 50.82. The search simulated 26,746 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.68; destruction-open-leveling 41.32, destruction-leveling 48.23. The search simulated 36,382 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -101,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warlock>
-- <https://talentsforever.com/warlock/60/15-0015032-0050325133111351-7>
+- <https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

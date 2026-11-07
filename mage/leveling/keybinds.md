@@ -32,14 +32,14 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | E | Frost Nova (10) | The mob reaches you, then step back with S | League E, the CC key |
 | R | Ice Lance (20, talent) | Into every freeze (Frost Nova, Frostbite, Fingers of Frost), one per 8 seconds | League R, the big hit |
 | F | Blink (20) | Out of melee, out of a root | Flash |
-| Mouse 5 (front side button) | Fire Blast (6) | The mob will reach you before a bolt lands, it is on you with Nova down, or the finish between a tenth and a fifth of its health | Thumb reaction |
+| Mouse 5 (front side button) | Fire Blast (6) | The finish, on a mob between a tenth and a fifth of its health: the tuned rules use it for nothing else | Thumb reaction |
 | Mouse 4 (back side button) | Counterspell (24) | A mob starts casting | Thumb reaction, like Deadlock's parry |
 | 1 | Arcane Missiles (8), Arcane-Frost build only | Whenever Missile Barrage lights up; not while being hit unless the mob is frozen. Free with the Frost build | Deadlock ability 1 |
 | 2 | Polymorph (8) | A second mob joins | Deadlock ability 2 |
 | 3 | Mana Shield (20) | Emergency only: mob on you, Nova down, low health | Deadlock ability 3 |
 | 4 | Evocation (20) | Between fights, when it is ready and you are under 40% mana. The one between-fights spell with a key: a cooldown and a mana rule make it a decision. Click it instead if you want 4 free | Deadlock 4, the long cooldown |
 | C | Cone of Cold (26) | A mob on you with Frost Nova down: slow it and walk; and packs | A reaction key next to the movement hand |
-| Middle mouse | Shoot (wand) | Finishing hits on a mob that is almost dead; while the mob closes if Fire Blast is down | The weapon attack |
+| Middle mouse | Shoot (wand) | Finishing hits on a mob that is almost dead; while the mob closes too fast for a bolt | The weapon attack |
 
 ## Bar 2: the same keys with Shift
 

@@ -2,6 +2,8 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Marksmanship
 
+**Leveling from level 1?** [The rotation level by level](marksmanship-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Marksmanship — Leveling](../research/leveling/builds/marksmanship-open-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/hunter/60/52210005050001-005355200101305--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Marksmanship with a pet). A model of the beta, to check at launch.
@@ -17,9 +19,9 @@
 1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
 2. **Rapid Fire** at the start when it is ready.
 3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
-4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot and Multi-Shot and keeping the mana.
+4. **Arcane Shot** only once the mob is below about a third of its health (the tuned rule); no Multi-Shot on a single mob: the fight lab levels faster keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
+6. If a mob reaches you while it has more than about a third of its health: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
 
 **Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
 

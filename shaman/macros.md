@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars.
+- **Frees:** nothing: this fills a free key, 3 on your bars (C holds Healing Wave from 20).
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+C on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+3 on your bars. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 

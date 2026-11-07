@@ -12,7 +12,7 @@ What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and
 |---|---|
 | 1-3 | **Fireball** is your only attack. |
 | 4-5 | **Frostbolt** replaces Fireball. It slows the mob, so you get more casts before it arrives. |
-| 6-9 | **Fire Blast** for the moment the mob reaches you, and to finish it. |
+| 6-9 | **Fire Blast** to finish a mob between a tenth and a fifth of its health. |
 | 10-19 | **Frost Nova** roots the mob at your feet: step back and keep casting. Talent points start. |
 | 20-23 | **Ice Lance** (talent): an instant that deals four times its damage to a frozen mob. |
 | 24-29 | **Counterspell** for mobs that cast. **Shatter** makes spells crit far more often on a frozen mob. |
@@ -111,7 +111,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. **Frostbolt** while the mob walks in, and whenever nothing below applies. Start no new one once the mob is below a fifth of its health.
-2. **Fire Blast** when the mob would reach you before a **Frostbolt** finishes, and on a mob between a tenth and a fifth of its health.
+2. **Fire Blast** on a mob between a tenth and a fifth of its health. The tuned rules keep it for the finish, not for the moment the mob arrives.
 3. Your wand finishes it.
 
 - **Polymorph** (8): when a second mob joins, sheep it, kill the first, then fight the sheep.
@@ -135,7 +135,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 1. **Frostbolt** from maximum range while the mob walks in.
 2. **Frost Nova** when it reaches you, then step back out of its reach.
-3. **Frostbolt** while it stands rooted. If it reaches you again with **Frost Nova** on cooldown, **Fire Blast** it and keep casting.
+3. **Frostbolt** while it stands rooted. If it reaches you again with **Frost Nova** on cooldown, keep casting.
 4. Below a fifth of its health: **Fire Blast** (not below a tenth) or your wand. No new **Frostbolt**: a long cast on a dying mob is wasted.
 
 - **Improved Frostbolt** (12-14, 18-19) takes half a second off every **Frostbolt** cast.
@@ -161,7 +161,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. **Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.
 2. **Frost Nova** when it reaches you, then step back out of its reach.
 3. **Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. It has an 8-second cooldown, so one per freeze.
-4. If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.
+4. If the mob reaches you with **Frost Nova** on cooldown, keep casting: the tuned rules save **Fire Blast** for the finish.
 5. Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
 
 - **Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana.
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.
 3. **Frost Nova** when it reaches you, then step back out of its reach.
 4. **Ice Lance** the moment the mob is frozen. One per freeze.
-5. If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.
+5. If the mob reaches you with **Frost Nova** on cooldown, keep casting: the tuned rules save **Fire Blast** for the finish.
 6. Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
 
 - **Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.
@@ -213,7 +213,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.
 3. **Frost Nova** when it reaches you, then step back out of its reach.
 4. **Ice Lance** whenever the mob is frozen or **Fingers of Frost** lights up, as soon as its 8-second cooldown allows.
-5. If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.
+5. If the mob reaches you with **Frost Nova** on cooldown, keep casting: the tuned rules save **Fire Blast** for the finish.
 6. Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
 
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
@@ -240,7 +240,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Frostbolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than a fifth of its health.
 3. **Frost Nova** when it reaches you, then step back out of its reach.
 4. **Ice Lance** whenever the mob is frozen or **Fingers of Frost** lights up, as soon as its 8-second cooldown allows.
-5. If the mob reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting.
+5. If the mob reaches you with **Frost Nova** on cooldown, keep casting: the tuned rules save **Fire Blast** for the finish.
 6. Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
 
 - **Arcane Concentration** (45-49) makes about one cast in ten free, and **Arcane Meditation** (55-57) keeps half your mana regeneration going while you cast.

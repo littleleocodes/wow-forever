@@ -10,7 +10,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.
 
-*Signature spells (**Stormstrike**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 74% of the damage at level 60 in the fight lab comes from melee, Stormstrike, Windfury Weapon, Flametongue Weapon, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Stormstrike** cast in every fight).
 
 ## How to play
 

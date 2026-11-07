@@ -6,6 +6,8 @@
 
 **✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](arcane-frost-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (23/0/28) — [open the talent tree](https://talentsforever.com/mage/60/2512052000003012--03253223011030021-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -20,9 +22,9 @@
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
 2. **Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.
-3. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**. No Cone of Cold.
+3. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health. No Cone of Cold.
 4. **Ice Lance** while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).
 5. To finish: a **Fire Blast** (not below a tenth of the mob's health) or **Ice Lance** that will kill, or your wand.
 6. **Counterspell** a mob that casts spells.

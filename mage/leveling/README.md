@@ -12,7 +12,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 4 | [Frostfire](frostfire.md) 🔬 | 36 | +25% |
 | 5 | [Fire](fire.md) 🔬 | 38 | +31% |
 
-**Level by level:** [Frost](frost-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Frost](frost-by-level.md), [Arcane-Frost](arcane-frost-by-level.md), [Arcane](arcane-by-level.md), [Fire](fire-by-level.md), [Frostfire](frostfire-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

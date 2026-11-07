@@ -4,11 +4,13 @@
 
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](survival-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Survival — Leveling](../research/leveling/builds/survival-open-leveling.md)** (5/16/30) — [open the talent tree](https://talentsforever.com/hunter/60/5-00503520001-51022023005021205-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells: not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 58% of the damage at level 60 in the fight lab comes from melee, Raptor Strike, Mongoose Bite, Lacerate, Wing Clip, pet (the spec's rule: at least 50%).
 
 ## How to play
 
@@ -22,11 +24,10 @@
 2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
 3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
 4. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
-5. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
-6. With **Expose Prey**: **Hunter's Mark** in a free global cooldown while the mob has more than 30% of its health, so your hits can light up **Mongoose Bite**.
-7. **Mend Pet** when the pet drops below a third of its health.
+5. **Immolation Trap** at your feet while the mob has more than 40% of its health.
+6. **Mend Pet** when the pet drops below a third of its health.
 
-**Between fights:** Mend the pet below half its health, drink below 60% of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
 
 ## Why this rotation
 

@@ -4,38 +4,38 @@ Every spec of every class, by the build its raid page recommends. Tiers by how f
 
 ## Damage
 
-DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off. The community's combat simulator (the official wowsims/forever simulator at bac92db (client 1.60.1.70707), 7c3453f (client 1.60.1.70755), 5ad0894 (client 1.60.1.70707), d97252f (client 1.60.1.70707), 92c4c35 (client 1.60.1.70755) and 02bd77c (client 1.60.1.70707)) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
+DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off. The community's combat simulator (the official wowsims/forever simulator at bac92db (client 1.60.1.70707), 7c3453f (client 1.60.1.70755), 5ad0894 (client 1.60.1.70707), d97252f (client 1.60.1.70707), 92c4c35 (client 1.60.1.70755), 16e8542 (client 1.60.1.70790) and 02bd77c (client 1.60.1.70707)) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
 
 | Tier | Spec | Build | Full raid DPS | Behind the best |
 |---|---|---|---|---|
-| **S** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 1008 | best |
-| **S** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 995 | 1.3% |
-| **S** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 28/21/2 | 986 | 2.2% |
-| **A** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/31/3 | 969 | 3.9% |
-| **B** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 893 | 11.4% |
-| **B** | [Warrior: Fury](warrior/raid/fury.md) | 18/33/0 | 887 | 12.0% |
-| **B** | [Paladin: Retribution](paladin/raid/retribution.md) | 16/4/31 | 876 | 13.1% |
-| **B** | [Paladin: Shockadin](paladin/raid/shockadin.md) | 23/0/28 | 839 | 16.7% |
-| **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 838 | 16.9% |
-| **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 828 | 17.8% |
-| **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 813 | 19.3% |
-| **B** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 812 | 19.4% |
-| **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 795 | 21.1% |
-| **C** | [Priest: Shadow](priest/raid/shadow.md) | 16/0/35 | 788 | 21.9% |
-| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 21/11/19 | 770 | 23.7% |
-| **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 759 | 24.7% |
-| **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/32/10 | 758 | 24.8% |
-| **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 756 | 25.0% |
-| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 31/11/9 | 746 | 26.0% |
-| **C** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 734 | 27.2% |
-| **C** | [Paladin: Prot-Ret](paladin/raid/prot-ret.md) | 8/15/28 | 697 | 30.8% |
-| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 28/10/13 | 671 | 33.5% |
-| **C** | [Rogue: Combat](rogue/raid/combat.md) | 21/30/0 | 666 | 33.9% |
-| **C** | [Druid: Balance](druid/raid/balance.md) | 33/0/18 | 647 | 35.9% |
-| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 21/0/30 | 607 | 39.8% |
-| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 29/22/0 | 603 | 40.2% |
-| **C** | [Priest: Smite](priest/raid/smite.md) | 17/17/17 | 602 | 40.3% |
-| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 520 | 48.4% |
+| **S** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/32/2 | 997 | best |
+| **S** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 995 | 0.2% |
+| **S** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 28/21/2 | 986 | 1.1% |
+| **S** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 5/41/5 | 984 | 1.3% |
+| **A** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 917 | 8.0% |
+| **B** | [Warrior: Fury](warrior/raid/fury.md) | 18/33/0 | 887 | 11.0% |
+| **B** | [Paladin: Retribution](paladin/raid/retribution.md) | 16/4/31 | 876 | 12.1% |
+| **B** | [Paladin: Shockadin](paladin/raid/shockadin.md) | 23/0/28 | 839 | 15.8% |
+| **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 838 | 15.9% |
+| **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 828 | 16.9% |
+| **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 813 | 18.4% |
+| **B** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 812 | 18.5% |
+| **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 795 | 20.3% |
+| **C** | [Priest: Shadow](priest/raid/shadow.md) | 16/0/35 | 788 | 21.0% |
+| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 21/11/19 | 770 | 22.8% |
+| **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 759 | 23.9% |
+| **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/32/10 | 758 | 23.9% |
+| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 31/11/9 | 757 | 24.1% |
+| **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 756 | 24.2% |
+| **C** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 734 | 26.4% |
+| **C** | [Paladin: Prot-Ret](paladin/raid/prot-ret.md) | 8/15/28 | 697 | 30.0% |
+| **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 28/10/13 | 671 | 32.7% |
+| **C** | [Rogue: Combat](rogue/raid/combat.md) | 21/30/0 | 666 | 33.2% |
+| **C** | [Druid: Balance](druid/raid/balance.md) | 33/0/18 | 647 | 35.1% |
+| **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 21/0/30 | 607 | 39.1% |
+| **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 29/22/0 | 603 | 39.5% |
+| **C** | [Priest: Smite](priest/raid/smite.md) | 17/17/17 | 602 | 39.7% |
+| **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 520 | 47.9% |
 
 ## Healing
 
@@ -65,10 +65,10 @@ The tiers above run with racials off. With them on, the race matters by this muc
 
 | Spec | Best race | Worst race behind it |
 |---|---|---|
-| [Hunter: Marksmanship](hunter/raid/marksmanship.md) | Skyborne (Windshaper) | 4.5% (Dwarf) |
+| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
 | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | Skyborne (Windshaper) | 4.9% (Dwarf) |
 | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | Skyborne (Windshaper) | 4.9% (Dwarf) |
-| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
+| [Hunter: Marksmanship](hunter/raid/marksmanship.md) | Skyborne (Windshaper) | 7.1% (Dwarf) |
 | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
 | [Warrior: Fury](warrior/raid/fury.md) | Skyborne (Windshaper) | 6.7% (Dwarf) |
 | [Paladin: Retribution](paladin/raid/retribution.md) | Human | 0.7% (Undead) |
@@ -82,8 +82,8 @@ The tiers above run with racials off. With them on, the race matters by this muc
 | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | Human | 2.0% (Troll) |
 | [Mage: Frostfire](mage/raid/frostfire.md) | Skyborne (High Order) | 4.8% (Troll) |
 | [Druid: Feral Combat](druid/raid/feral-combat.md) | Skyborne (Windshaper) | 5.0% (Night Elf) |
-| [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.6% (Troll) |
 | [Shaman: Elemental](shaman/raid/elemental.md) | Skyborne (Windshaper) | 6.8% (Dwarf) |
+| [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.6% (Troll) |
 | [Hunter: Survival](hunter/raid/survival.md) | Skyborne (Windshaper) | 6.6% (Dwarf) |
 | [Paladin: Prot-Ret](paladin/raid/prot-ret.md) | Human | 0.7% (Undead) |
 | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | Skyborne (High Order) | 7.1% (Troll) |
@@ -136,5 +136,5 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Warrior: Protection](warrior/raid/protection.md) (tank) | [Stormpike Insignia Rank 6](https://www.wowhead.com/forever/item=17904), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440), [Arena Grand Master](https://www.wowhead.com/forever/item=19024) |
 
 ---
-*Generated by `_reference/data/render_tier_list.py` on 2026-11-04 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70753; raid numbers: wowsims/forever at bac92db (client 70707), 7c3453f (client 70755), 5ad0894 (client 70707), d97252f (client 70707), 92c4c35 (client 70755) and 02bd77c (client 70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_tier_list.py` on 2026-11-07 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70753; raid numbers: wowsims/forever at bac92db (client 70707), 7c3453f (client 70755), 5ad0894 (client 70707), d97252f (client 70707), 92c4c35 (client 70755), 16e8542 (client 70790) and 02bd77c (client 70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

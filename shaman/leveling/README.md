@@ -11,7 +11,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Elemental-Enhancement](elemental-enhancement.md) 🔬 | 29 | +18% |
 | 4 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 38 | +51% |
 
-**Level by level:** [Enhancement](enhancement-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Enhancement](enhancement-by-level.md), [Elemental](elemental-by-level.md), [Restoration](restoration-by-level.md), [Elemental-Enhancement](elemental-enhancement-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

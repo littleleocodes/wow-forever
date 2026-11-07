@@ -2,6 +2,8 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Balance
 
+**Leveling from level 1?** [The rotation level by level](balance-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501351--5253-12)
 
 **Signature spells:** 97% of the damage at level 60 in the fight lab comes from Wrath, Starfire, Moonfire, Insect Swarm (the spec's rule: at least 70%; **Starfire**, **Moonfire** cast in every fight).

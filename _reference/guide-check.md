@@ -72,16 +72,9 @@ Guides whose rotation changed since they were stamped (63; rewrite or confirm, t
 - warrior Protection raid: prot-tank
 - warrior Protection leveling: leveling:arms-2h-raid, leveling:fury-dw-raid, leveling:prot-leveling
 
-Leveling steps that name a spell the tuned rules never cast (8; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
+Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
 
-- hunter melee-dps: **Hunter's Mark** (steps)
-- mage fire-leveling: **Scorch** (steps)
-- paladin ret-dps: **Hammer of Wrath** (steps)
-- paladin prot-leveling: **Hammer of Justice** (steps)
-- paladin prot-leveling: **Hammer of Wrath** (steps)
-- paladin prot-leveling: **Consecration** (steps)
-- warlock destruction-leveling: **Incinerate** (steps)
-- warlock destruction-leveling: **Fear** (steps)
+- none
 
 | Class | Spec | Mode | Written | Rotations stamped |
 |---|---|---|---|---|

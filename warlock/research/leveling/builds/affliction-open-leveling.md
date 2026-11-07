@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Affliction leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +5.1% faster per kill than affliction-leveling, the fastest of our leveling builds in that race.
+The Affliction leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). 
 
 ## Point allocation
 
@@ -81,14 +81,14 @@ The Affliction leveling build the open leveling search found on 2026-11-02: ever
 
 ## Core talents (priority order)
 
-1. **Suppression** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Siphon Life** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Improved Voidwalker** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Shadow Mastery** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Soul Siphon** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Life Tap** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Wrack** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Drains** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Wrack** — +3.2 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Soul Siphon** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Shadow Mastery** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Siphon Life** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Suppression** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Pandemic** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Malevolence** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Improved Life Tap** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 37.38; affliction-leveling 39.30. The search simulated 19,476 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 36.20; affliction-leveling 39.46. The search simulated 21,543 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -106,7 +106,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warlock>
-- <https://talentsforever.com/warlock/60/25500322134001351-0025030211--7>
+- <https://talentsforever.com/warlock/60/25500322134001351-0025030211--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

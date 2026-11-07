@@ -4,11 +4,13 @@
 
 **✅ Recommended** for leveling (the best warlock spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](demonology-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Demonology — Leveling](../research/leveling/builds/demonology-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/23500020134001-032523020100030135--12)
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-*Signature spells: not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 21% of the damage at level 60 in the fight lab comes from pet (the spec's rule: at least 0%).
 
 ## How to play
 
@@ -20,8 +22,8 @@
 
 1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob and you have more than 30% of your mana.
 2. **Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only on a mob above 35% of its health; **Immolate** only above half your mana, and not on a mob below about a third of its health.
-3. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain**, above 30% of your mana, when the mob has too little health left for a bolt), which the dots and brands rarely leave you.
-4. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).
+3. Your wand is the filler: **Shadow Bolt** only above 80% mana, which the dots and brands rarely leave you.
+4. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** on a mob below 35% health starts it).
 5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
 6. With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.
 7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.

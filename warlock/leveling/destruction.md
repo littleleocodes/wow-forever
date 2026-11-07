@@ -2,11 +2,13 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Destruction
 
+**Leveling from level 1?** [The rotation level by level](destruction-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Destruction — Leveling](../research/leveling/builds/destruction-open-leveling.md)** (6/11/34) — [open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells: not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 65% of the damage at level 60 in the fight lab comes from Shadow Bolt, Immolate, Conflagrate, Incinerate, Searing Pain, Soul Fire, Shadowburn (the spec's rule: at least 60%).
 
 ## How to play
 
@@ -16,15 +18,15 @@
 
 **In the fight**, top to bottom:
 
-1. Finish first: **Shadowburn** on a mob it would kill, **Conflagrate** on a burning mob it would kill, your wand for the last sliver of health.
+1. Finish first: **Shadowburn** on a mob it would kill, your wand for the last sliver of health.
 2. **Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.
-3. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning).
+3. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health.
 4. With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.
-5. The filler is **Shadow Bolt**, or **Incinerate** on a burning mob (from level 40), whenever you have mana to spare; **Shadow Bolt** only while the mob has more than a fifth of its health. The wand only when mana runs short. No Affliction dots, Searing Pain or Drain Life: the fight lab levels faster without them.
+5. The filler is **Shadow Bolt** while the mob has more than about a third (35%) of its health; below that, your wand. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.
 6. **Life Tap** in a fight only when you are short of mana and above 60% health.
-7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it while you have half your mana or more, until **Torment** takes it back. Your Healthstone below 35% health.
+7. If a mob reaches you: **Death Coil** below 60% health, and let the Voidwalker's **Torment** take it back. No Fear: the tuned rules of 2026-11-07 never cast it. Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 40% health (the tuned rule), and drink only below 15% mana (when you are too hurt to **Life Tap**).
 
 ## Why this rotation
 
@@ -63,8 +65,8 @@ One point per level from 10, in this order:
 | 17-19 | Cataclysm (Destruction) | 3 |
 | 20-24 | Ruin (Destruction) | 5 |
 | 25-27 | Agonizing Flames (Destruction) | 3 |
-| 28 | Shadowburn (Destruction) | 1 |
-| 29-31 | Intensity (Destruction) | 3 |
+| 28-30 | Intensity (Destruction) | 3 |
+| 31 | Shadowburn (Destruction) | 1 |
 | 32 | Conflagrate (Destruction) | 1 |
 | 33 | Pyroclasm (Destruction) | 1 |
 | 34 | Bane of Havoc (Destruction) | 1 |
@@ -72,10 +74,9 @@ One point per level from 10, in this order:
 | 40 | Incinerate (Destruction) | 1 |
 | 41-43 | Fire and Brimstone (Destruction) | 3 |
 | 44 | Improved Life Tap (Affliction) | 1 |
-| 45-48 | Suppression (Affliction) | 4 |
-| 49-53 | Unholy Power (Demonology) | 5 |
-| 54-56 | Improved Voidwalker (Demonology) | 3 |
-| 57 | Suppression (Affliction) | 1 |
+| 45-49 | Suppression (Affliction) | 5 |
+| 50-54 | Unholy Power (Demonology) | 5 |
+| 55-57 | Improved Voidwalker (Demonology) | 3 |
 | 58 | Demonic Embrace (Demonology) | 1 |
 | 59-60 | Fel Vitality (Demonology) | 2 |
 
@@ -84,9 +85,9 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 31 |
-| 30 | 43 |
+| 30 | 40 |
 | 40 | 44 |
-| 50 | 43 |
+| 50 | 42 |
 | 60 | 41 |
 
 ## Other builds of this spec

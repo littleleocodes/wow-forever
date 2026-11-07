@@ -18,6 +18,8 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 
 - The two action bars: bar 1 is bound to Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 to the same keys
   with Shift, with Shift+X in the last slot. The tables below list the slots in that order.
+- WoW switches bar 1 to a second page while you are in **Stealth** (the stealth bar, as in Classic). Put the same spells in the same slots
+  on it, so every key does the same thing in and out of Stealth.
 - Movement: Strafe Left on A and Strafe Right on D, turning with the right mouse button held, as in Deadlock.
 - A side bar without keybinds for the things you click: the poisons, food, bandages, the mount, the Hearthstone.
 

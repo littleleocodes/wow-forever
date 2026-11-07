@@ -2,6 +2,8 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Fire
 
+**Leveling from level 1?** [The rotation level by level](fire-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Fire — Leveling](../research/leveling/builds/fire-leveling.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/mage/60/-05501301230133131-2035301001013-12)
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one; it beat the hand-made build (Fire (optimized)), which stays below as the alternative. A model of the beta, to check at launch.
@@ -14,15 +16,14 @@
 
 **In the fight**, top to bottom:
 
-1. **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third (35%) of its health.
-2. **Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill.
-3. **Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.
+1. Open every pull with a hard-cast **Pyroblast**, then **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third (35%) of its health.
+2. **Fire Blast** when the mob would reach you before a **Fireball** lands, once it is on you, or when it will kill. No Scorch: the tuned rules never cast it.
+3. **Frost Nova** when it reaches you, while you have 30% of your mana or more, then step back; **Blast Wave** if **Frost Nova** is on cooldown and the mob has more than about a third of its health.
 4. **Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.
-5. Mob on you and no control left: **Scorch** (a short cast, pushed back less), while the mob has more than about a third of its health.
-6. Below about a third of the mob's health, no **Fireball** or **Scorch**: finish with **Fire Blast**, an **Ice Lance** or your wand.
-7. **Counterspell** a mob that casts spells.
+5. Below about a third of the mob's health, no **Fireball**: finish with **Fire Blast**, an **Ice Lance** or your wand.
+6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** when it is ready and you are under 40% mana.
 
 ## Why this rotation
 

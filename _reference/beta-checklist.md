@@ -26,7 +26,7 @@ Global checks: respec cost schedule in Forever (the planner assumes 1g then +5g,
 
 Plan: **feral-cat-dps -> level-30 build (0/21/0)** (from `druid/leveling/respec-plan.md`)
 
-- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2
+- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2; 30 Leader of the Pack
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -43,8 +43,9 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Balance leveling build: check it while leveling at launch.
 - Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Balance leveling build: check it while leveling at launch.
+- An open-search Feral Combat leveling build: check it while leveling at launch.
 
 ## Hunter
 
@@ -99,6 +100,8 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - An open-search Beast-Marks leveling build: check it while leveling at launch.
 - An open-search Marksmanship leveling build: check it while leveling at launch.
 - An open-search Beast-Survival leveling build: check it while leveling at launch.
+- An open-search Beast Mastery leveling build: check it while leveling at launch.
+- An open-search Survival leveling build: check it while leveling at launch.
 
 ## Mage
 
@@ -237,11 +240,11 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Shadow Word: Death availability and level.
 - Whether Shadowform's demo crit bonus (text truncated) changes the value of Blackout/Early Demise.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Discipline leveling build: check it while leveling at launch.
 - An open-search Smite leveling build: check it while leveling at launch.
 - An open-search Shadow leveling build: check it while leveling at launch.
-- Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
-- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Rogue
 
@@ -283,9 +286,9 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - A generated Combat build: check it against the community's Combat builds at launch.
 - A derived Subtlety leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Assassination leveling build: check it while leveling at launch.
 - An open-search Combat leveling build: check it while leveling at launch.
 - An open-search Combat-Subtlety leveling build: check it while leveling at launch.
+- An open-search Assassination leveling build: check it while leveling at launch.
 - An open-search Subtlety leveling build: check it while leveling at launch.
 
 ## Shaman
@@ -384,7 +387,6 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Affliction leveling build: check it while leveling at launch.
 - An open-search Affliction-Demonology leveling build: check it while leveling at launch.
-- An open-search Demonology/Destruction hybrid leveling build: check it while leveling at launch.
 - An open-search Destruction leveling build: check it while leveling at launch.
 
 ## Warrior
@@ -408,9 +410,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 ### 4. Play the recommended 10-30 order and time it
 
-Plan: **fury-dw-raid -> level-40 build (0/31/0)** (from `warrior/leveling/respec-plan.md`)
+Plan: **arms-2h-raid -> level-40 build (31/0/0)** (from `warrior/leveling/respec-plan.md`)
 
-- 10-14 Cruelty x5; 15-19 Unbridled Wrath x5; 20-24 Enrage x5; 25-26 Improved Execute x2; 27 Dual Wield Specialization; 28 Furious Precision; 29 Dual Wield Specialization; 30 Death Wish
+- 10-12 Improved Rend x3; 13-14 Deflection x2; 15-16 Improved Overpower x2; 17 Improved Charge; 18-19 Improved Tactical Mastery x2; 20-22 Deep Wounds x3; 23 Improved Tactical Mastery; 24 Anger Management; 25 Spearing Strike; 26-28 Two-Handed Weapon Specialization x3; 29 Impale; 30-31 Bloodthrill x2
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -428,6 +430,7 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Arms leveling build: check it while leveling at launch.
 - An open-search Fury leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
 

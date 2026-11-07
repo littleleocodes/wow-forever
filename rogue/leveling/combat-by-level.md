@@ -59,7 +59,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+C | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+X | Free | — | — | — | — | — | — | — | — | — | — |
 
-- Nothing on bar 1 ever swaps: every key gets its spell once and keeps it.
+- WoW switches bar 1 to the stealth bar while you are in **Stealth** (as in Classic): put the same spells in the same slots on it. Otherwise nothing swaps: every key gets its spell once and keeps it.
 - **Stealth** sits on Shift+1, right above the opener on 1: press one, then the other, before each pull from 14.
 - No key: the poisons, **Slice and Dice**, **Cheap Shot** and **Kidney Shot** (the tuned rotation never casts them), food, bandages, the mount and the Hearthstone.
 - Levels 1-5 fight with Q and R. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.

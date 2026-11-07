@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "date": "2026-11-06",
+ "date": "2026-11-07",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -201,6 +201,472 @@
       "Execute": 1.04,
       "Victory Rush": 0.67,
       "Heroic Strike": 0.1
+     }
+    }
+   }
+  },
+  "Fury": {
+   "build": "fury-open-leveling",
+   "rotation": "fury-dw-raid",
+   "provisional_order": false,
+   "fingerprint": "6c5234c234b3",
+   "levels": {
+    "1": {
+     "seconds": 12.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 1.58,
+      "Melee (off-hand)": 1.39,
+      "Battle Shout": 0.07,
+      "Heroic Strike": 0.46
+     }
+    },
+    "4": {
+     "seconds": 14.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 0.61,
+      "Melee": 2.32,
+      "Melee (off-hand)": 2.94,
+      "Battle Shout": 0.08,
+      "Rend": 1.01,
+      "Heroic Strike": 0.92
+     }
+    },
+    "9": {
+     "seconds": 18.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 0.92,
+      "Melee": 3.06,
+      "Melee (off-hand)": 4.65,
+      "Battle Shout": 0.1,
+      "Rend": 1.18,
+      "Heroic Strike": 1.65
+     }
+    },
+    "10": {
+     "seconds": 18.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.26,
+      "Charge": 0.94,
+      "Melee": 2.77,
+      "Melee (off-hand)": 4.61,
+      "Battle Shout": 0.1,
+      "Rend": 1.12,
+      "Heroic Strike": 1.89
+     }
+    },
+    "12": {
+     "seconds": 18.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.26,
+      "Charge": 0.95,
+      "Melee": 2.98,
+      "Melee (off-hand)": 4.87,
+      "Battle Shout": 0.1,
+      "Rend": 1.14,
+      "Heroic Strike": 1.92,
+      "Overpower": 0.42
+     }
+    },
+    "19": {
+     "seconds": 21.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.31,
+      "Charge": 0.99,
+      "Melee": 3.26,
+      "Melee (off-hand)": 5.78,
+      "Battle Shout": 0.12,
+      "Rend": 1.19,
+      "Heroic Strike": 2.52,
+      "Overpower": 0.56
+     }
+    },
+    "20": {
+     "seconds": 20.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.29,
+      "Charge": 0.99,
+      "Melee": 3.13,
+      "Melee (off-hand)": 5.55,
+      "Battle Shout": 0.11,
+      "Rend": 1.17,
+      "Heroic Strike": 2.42,
+      "Overpower": 0.52,
+      "Victory Rush": 0.34
+     }
+    },
+    "24": {
+     "seconds": 20.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.29,
+      "Charge": 0.99,
+      "Melee": 4.04,
+      "Melee (off-hand)": 5.5,
+      "Battle Shout": 0.11,
+      "Rend": 1.21,
+      "Heroic Strike": 1.48,
+      "Execute": 0.86,
+      "Victory Rush": 0.4,
+      "Overpower": 0.5
+     }
+    },
+    "29": {
+     "seconds": 22.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.32,
+      "Charge": 1.0,
+      "Melee": 4.09,
+      "Melee (off-hand)": 6.25,
+      "Battle Shout": 0.12,
+      "Rend": 1.22,
+      "Heroic Strike": 2.17,
+      "Execute": 0.95,
+      "Victory Rush": 0.54,
+      "Overpower": 0.61
+     }
+    },
+    "30": {
+     "seconds": 22.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.32,
+      "Death Wish": 0.11,
+      "Charge": 1.0,
+      "Melee": 4.1,
+      "Melee (off-hand)": 6.18,
+      "Battle Shout": 0.12,
+      "Rend": 1.16,
+      "Heroic Strike": 2.08,
+      "Execute": 0.94,
+      "Victory Rush": 0.56,
+      "Overpower": 0.67
+     }
+    },
+    "39": {
+     "seconds": 26.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.35,
+      "Death Wish": 0.12,
+      "Charge": 1.0,
+      "Melee": 4.63,
+      "Melee (off-hand)": 8.0,
+      "Battle Shout": 0.14,
+      "Rend": 1.24,
+      "Heroic Strike": 3.34,
+      "Execute": 1.07,
+      "Victory Rush": 0.66,
+      "Overpower": 0.83
+     }
+    },
+    "40": {
+     "seconds": 24.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Death Wish": 0.12,
+      "Charge": 1.0,
+      "Melee": 6.65,
+      "Melee (off-hand)": 7.35,
+      "Battle Shout": 0.14,
+      "Bloodthirst": 2.02,
+      "Rend": 1.16,
+      "Heroic Strike": 0.63,
+      "Execute": 1.01,
+      "Victory Rush": 0.58,
+      "Overpower": 0.8
+     }
+    },
+    "50": {
+     "seconds": 25.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Death Wish": 0.12,
+      "Charge": 1.0,
+      "Melee": 6.74,
+      "Melee (off-hand)": 7.93,
+      "Battle Shout": 0.14,
+      "Bloodthirst": 2.23,
+      "Rend": 1.18,
+      "Heroic Strike": 1.18,
+      "Execute": 1.06,
+      "Victory Rush": 0.55,
+      "Overpower": 0.89
+     }
+    },
+    "60": {
+     "seconds": 27.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.36,
+      "Death Wish": 0.12,
+      "Charge": 1.0,
+      "Melee": 7.33,
+      "Melee (off-hand)": 8.72,
+      "Battle Shout": 0.15,
+      "Bloodthirst": 2.5,
+      "Rend": 1.21,
+      "Heroic Strike": 1.43,
+      "Execute": 1.12,
+      "Overpower": 0.99,
+      "Victory Rush": 0.63
+     }
+    }
+   }
+  },
+  "Protection": {
+   "build": "protection-open-leveling",
+   "rotation": "prot-leveling",
+   "provisional_order": false,
+   "fingerprint": "fea96007170d",
+   "levels": {
+    "1": {
+     "seconds": 13.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 2.23,
+      "Battle Shout": 0.07,
+      "Heroic Strike": 0.15
+     }
+    },
+    "4": {
+     "seconds": 16.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 0.8,
+      "Melee": 3.31,
+      "Battle Shout": 0.09,
+      "Rend": 0.97,
+      "Heroic Strike": 0.63
+     }
+    },
+    "9": {
+     "seconds": 21.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Charge": 1.0,
+      "Melee": 5.06,
+      "Battle Shout": 0.12,
+      "Rend": 1.19,
+      "Heroic Strike": 1.06
+     }
+    },
+    "10": {
+     "seconds": 22.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 5.57,
+      "Rend": 1.16,
+      "Defensive Stance": 1.0,
+      "Battle Shout": 0.12,
+      "Heroic Strike": 0.97
+     }
+    },
+    "12": {
+     "seconds": 25.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 6.33,
+      "Rend": 1.16,
+      "Defensive Stance": 1.0,
+      "Battle Shout": 0.13,
+      "Heroic Strike": 1.11,
+      "Shield Bash": 0.14
+     }
+    },
+    "14": {
+     "seconds": 25.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 6.4,
+      "Rend": 1.17,
+      "Defensive Stance": 1.0,
+      "Battle Shout": 0.14,
+      "Revenge": 1.37,
+      "Heroic Strike": 1.12,
+      "Shield Bash": 0.17
+     }
+    },
+    "16": {
+     "seconds": 25.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 7.05,
+      "Rend": 1.14,
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.86,
+      "Battle Shout": 0.13,
+      "Revenge": 2.77,
+      "Heroic Strike": 0.32,
+      "Shield Bash": 0.18
+     }
+    },
+    "20": {
+     "seconds": 24.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 6.41,
+      "Rend": 1.13,
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.77,
+      "Revenge": 2.68,
+      "Battle Shout": 0.13,
+      "Heroic Strike": 0.61,
+      "Shield Bash": 0.28,
+      "Victory Rush": 0.06
+     }
+    },
+    "30": {
+     "seconds": 29.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.38,
+      "Charge": 1.0,
+      "Melee": 7.65,
+      "Rend": 1.18,
+      "Defensive Stance": 1.0,
+      "Shield Block": 3.65,
+      "Revenge": 3.69,
+      "Battle Shout": 0.15,
+      "Heroic Strike": 1.08,
+      "Shield Bash": 0.31,
+      "Victory Rush": 0.19
+     }
+    },
+    "32": {
+     "seconds": 29.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.39,
+      "Charge": 1.0,
+      "Melee": 7.76,
+      "Rend": 1.18,
+      "Defensive Stance": 1.0,
+      "Shield Block": 3.77,
+      "Revenge": 3.83,
+      "Battle Shout": 0.16,
+      "Heroic Strike": 1.2,
+      "Shield Bash": 0.31,
+      "Victory Rush": 0.23
+     }
+    },
+    "33": {
+     "seconds": 30.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.41,
+      "Charge": 1.0,
+      "Melee": 7.99,
+      "Rend": 1.19,
+      "Defensive Stance": 1.0,
+      "Shield Block": 3.92,
+      "Revenge": 3.99,
+      "Battle Shout": 0.17,
+      "Heroic Strike": 1.28,
+      "Shield Bash": 0.32,
+      "Victory Rush": 0.23
+     }
+    },
+    "39": {
+     "seconds": 35.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.48,
+      "Charge": 1.0,
+      "Melee": 9.38,
+      "Rend": 1.21,
+      "Defensive Stance": 1.0,
+      "Shield Block": 4.76,
+      "Revenge": 4.88,
+      "Battle Shout": 0.19,
+      "Heroic Strike": 1.65,
+      "Shield Bash": 0.33,
+      "Victory Rush": 0.32
+     }
+    },
+    "40": {
+     "seconds": 25.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 7.03,
+      "Shield Slam": 2.74,
+      "Rend": 1.18,
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.39,
+      "Revenge": 2.58,
+      "Battle Shout": 0.14,
+      "Heroic Strike": 0.22,
+      "Shield Bash": 0.2,
+      "Victory Rush": 0.21
+     }
+    },
+    "50": {
+     "seconds": 26.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.35,
+      "Charge": 1.0,
+      "Melee": 7.49,
+      "Shield Slam": 3.09,
+      "Rend": 1.22,
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.69,
+      "Revenge": 2.94,
+      "Battle Shout": 0.14,
+      "Victory Rush": 0.38,
+      "Heroic Strike": 0.35,
+      "Shield Bash": 0.21
+     }
+    },
+    "60": {
+     "seconds": 28.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.38,
+      "Charge": 1.0,
+      "Melee": 8.27,
+      "Shield Slam": 3.5,
+      "Rend": 1.18,
+      "Defensive Stance": 1.0,
+      "Shield Block": 3.14,
+      "Revenge": 3.27,
+      "Battle Shout": 0.15,
+      "Heroic Strike": 0.37,
+      "Shield Bash": 0.13,
+      "Victory Rush": 0.43
      }
     }
    }

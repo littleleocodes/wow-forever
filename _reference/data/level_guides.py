@@ -79,10 +79,10 @@ _PETS = {}
 
 
 def pet_spells(cls):
-    """The spells of the class spellbook's "Pets" tab (the hunter's pet abilities): the pet casts them, the player never presses them."""
+    """The spells of the class spellbook's "Pets" or "Demons" tab (the hunter's and the warlock's pet abilities): the pet casts them, the player never presses them."""
     if cls not in _PETS:
         _PETS[cls] = {s["name"] for tab in json.load(open(HERE / "forever-spells" / f"{cls}.json", encoding="utf-8")).get("tabs", [])
-                      if tab.get("name") == "Pets" for s in tab.get("spells", [])}
+                      if tab.get("name") in ("Pets", "Demons") for s in tab.get("spells", [])}   # the warlock's tab is "Demons" (2026-11-07)
     return _PETS[cls]
 
 

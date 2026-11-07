@@ -1,6 +1,6 @@
 {
  "class": "hunter",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "guides": [
   {
    "spec": "Hybrid Beast Mastery/Survival",
@@ -58,7 +58,7 @@
      "change": "**Immolation Trap** under your feet is a fifth of your damage. **Mongoose Bite** lights up after a dodge.",
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
-      "**Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
       "**Mongoose Bite** when it lights up, after you dodge.",
       "Melee until the mob is dead.",
       "**Raptor Strike** once the mob is below 20% of its health."
@@ -77,7 +77,7 @@
      "change": "**Freezing Trap** holds a second mob. Nothing new in a one-mob fight.",
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
-      "**Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
       "**Mongoose Bite** when it lights up, after you dodge.",
       "Melee until the mob is dead.",
       "**Raptor Strike** once the mob is below 20% of its health."
@@ -98,7 +98,7 @@
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
       "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
-      "**Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
       "**Mongoose Bite** when it lights up, after you dodge.",
       "Melee until the mob is dead.",
       "**Raptor Strike** once the mob is below 20% of its health."
@@ -119,7 +119,7 @@
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
       "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
-      "**Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
       "**Mongoose Bite** when it lights up, after you dodge.",
       "Melee until the mob is dead.",
       "**Raptor Strike** once the mob is below 20% of its health."
@@ -132,7 +132,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 60% of your mana, eat below two thirds of your health. Feed the pet when it sulks.",
+    "Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health. Feed the pet when it sulks.",
     "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
@@ -355,6 +355,1688 @@
      "The pet is sent with the pet bar, which has its own keys. Keep its Growl on and its attack command where your hand finds it.",
      "No key: **Aspect of the Monkey** and **Aspect of the Beast**, the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, **Hunter's Mark** (the tuned rotation never casts it), food, drink, the mount and the Hearthstone.",
      "Levels 1-3 fight with Q and 4: right-click the mob to start swinging. From 4, Mouse 4 is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives."
+    ]
+   }
+  },
+  {
+   "spec": "Beast Mastery",
+   "intro": "What a Beast Mastery hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The cat is your tank and a large part of your damage: it holds the mob while you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. **Bestial Wrath** at 40 is the build's signature. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Auto Shot and the pet",
+     "change": "Send the pet, then shoot from range: **Auto Shot** fires on its own.",
+     "press": [
+      "Send the pet at the mob and let it take the mob.",
+      "Start **Auto Shot** from range. It fires on its own until the mob is dead.",
+      "Keep your distance: the bow cannot fire within 8 yards. If the mob ends up next to you while the pet holds it, step back."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "The fight lab gives the hunter a pet from level 1. In Classic, **Tame Beast** comes at 10, so levels 1-9 read faster here than they will play. Without a pet, shoot as the mob comes and finish it with **Raptor Strike** and your weapon.",
+      "**Auto Shot** keeps firing while you cast, but after you move it waits until you have stood still for half a second (Blizzard's notes of 2026-10-16): step back once, not in small shuffles."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Serpent Sting",
+     "change": "**Serpent Sting** on every mob: a poison that ticks for 15 seconds.",
+     "press": [
+      "Send the pet in.",
+      "**Serpent Sting** while the mob has more than 40% of its health.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Monkey** (4) is the melee hunter's aspect. The fight lab's ranged hunter fights without an aspect until **Aspect of the Hawk** at 10."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Hunter's Mark",
+     "change": "**Hunter's Mark** first: your shots hit harder on the marked mob.",
+     "press": [
+      "Send the pet in.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Arcane Shot** (6): the tuned rules never cast it on a single mob. Its mana buys more as fewer drinks between pulls.",
+      "**Concussive Shot** (8) slows a mob that runs. Not in the rotation."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "The pet, Aspect of the Hawk, and talents begin",
+     "change": "**Tame Beast** and **Aspect of the Hawk**. Talent points start with **Deadly Aspects**.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Hawk** (10) stays on from here: more ranged attack power. No key, click it.",
+      "**Deadly Aspects** (10-14): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
+      "**Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Mend Pet and Wing Clip",
+     "change": "**Mend Pet** keeps your tank alive. **Wing Clip** for a mob that gets to you.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Focused Fire** (15-16) adds 2% to your damage and the pet's. **Endurance Training** (17-19) gives the pet more health and armor.",
+      "**Mongoose Bite** (16) lights up after you dodge: one more button for a mob on you.",
+      "**Scare Beast** (14) holds a second beast. **Multi-Shot** (18) is for packs: the tuned rules never cast it on one mob, because it shares **Aimed Shot**'s cooldown."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Aimed Shot",
+     "change": "**Aimed Shot** whenever it is ready: your one cooldown shot.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.",
+      "**Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.",
+      "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
+     ]
+    },
+    {
+     "from": 26,
+     "title": "Rapid Fire",
+     "change": "**Rapid Fire** at the pull: 40% faster shots for 15 seconds.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. This build has no **Rapid Killing**, so the cooldown stays at 5 minutes.",
+      "**Frost Trap** (28) slows a pack."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Feign Death",
+     "change": "**Feign Death** sends a mob that reaches you back to the pet.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Bestial Discipline** (30-31) lets half your mana regeneration continue while casting. **Spirit Bond** (32) heals you and the pet a little every 10 seconds. **Bestial Swiftness** (33) is a faster pet."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 34,
+     "title": "Intimidation",
+     "change": "**Intimidation** at the pull: the pet's next hit stuns the mob and crits.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "At the pull, when they are ready: **Intimidation** and **Rapid Fire**.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Intimidation** (34): the pet's next successful attack stuns the mob for 3 seconds and gains 100% crit chance; a 1-minute cooldown. It is also the point that opens the way to **Bestial Wrath**.",
+      "**Frenzy** (35-39): after a crit the pet attacks 30% faster for 8 seconds. **Explosive Trap** (34) is for packs."
+     ],
+     "unsimulated": [
+      "Rapid Fire",
+      "Intimidation"
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Bestial Wrath",
+     "change": "**Bestial Wrath** at the pull: the pet does 50% more damage for 18 seconds. The rotation is complete.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "At the pull, when they are ready: **Bestial Wrath**, **Intimidation** and **Rapid Fire**.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Bestial Wrath** (40) has a 2-minute cooldown, so it is ready for some pulls, not all: use it on the first pull it is ready for, as the fight lab does.",
+      "**Lethal Attacks** (41-45), **Efficiency** (46-50), **Improved Stings** (51-53) and **Careful Aim** (54-55): more crit, cheaper shots, a stronger sting and attack power from your Intellect. Nothing new to press.",
+      "**Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.",
+      "**Volley** (40) is a channel for packs, with **Multi-Shot**. Buy every new rank."
+     ],
+     "unsimulated": [
+      "Rapid Fire",
+      "Intimidation"
+     ]
+    }
+   ],
+   "between": [
+    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
+    "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
+   ],
+   "other": [
+    "The [leveling index](README.md) ranks the hunter's five leveling specs by the fight lab's time per kill. Beast-Survival, the melee hunter, has the [first level-by-level guide](beast-survival-by-level.md).",
+    "Beast-Marks plays this same rotation with more Marksmanship talents and no **Bestial Wrath**: [its guide](beast-marks-by-level.md). Marksmanship does more of the damage itself and finishes with **Arcane Shot**: [its guide](marksmanship-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; aspects, Trueshot Aura, tracking, pet feeding and reviving, food, drink, the mount and the Hearthstone have no key, you click them between fights. Auto Shot has no key either: the pull macro on Mouse 4 starts it, and it fires on its own. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [hunter keybinds page](keybinds.md); its tables are the melee hunter's, so take the spells from the tables below.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main shot, whenever it is ready",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Aimed Shot"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: a mob that reaches you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Wing Clip"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff: the pet's rage at the pull",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Bestial Wrath"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the mob goes back to the pet",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Feign Death"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: lights up after a dodge",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Mongoose Bite"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: the pull; the macro also sends the pet and starts Auto Shot",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Pet and Auto Shot (macro)"
+         },
+         {
+          "from": 4,
+          "spell": "Serpent Sting",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The mark, the first press of a pull; the macro also sends the pet",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Hunter's Mark",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second mob, before the pull",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Freezing Trap"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The pet's heal",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Mend Pet"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "A mob on you: the strike",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Raptor Strike"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "The burst at the pull",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Rapid Fire"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The pet's stun at the pull",
+        "binds": [
+         {
+          "from": 34,
+          "spell": "Intimidation"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Slow a mob at range",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Concussive Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Control a second beast",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Scare Beast"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the trap that blows",
+        "binds": [
+         {
+          "from": 34,
+          "spell": "Explosive Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A ranged hit for a mob that runs",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Arcane Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs and escapes: the slow field",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Frost Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Packs: shares Aimed Shot's cooldown",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Multi-Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Packs: the channel",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Volley"
+         }
+        ]
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Auto Shot"
+    ],
+    "notes": [
+     "The keys of the [Beast-Survival guide](beast-survival-by-level.md) where the spells are the same: **Wing Clip** E, **Feign Death** F, **Mongoose Bite** Mouse 5, the **Serpent Sting** macro Mouse 4, **Freezing Trap** 2, **Mend Pet** 3 and the Shift bar's shots and traps. Changed for a ranged hunter: **Aimed Shot**, the shot you press most, takes Q; **Raptor Strike**, only for a mob that reaches you, moves from Q to 4 (Auto Shot needs no key here); **Hunter's Mark** takes 1 (no **Lacerate** at range); **Bestial Wrath** takes R (no **Immolation Trap**: the trap belongs to the melee hunter); **Intimidation** takes the middle mouse button; **Rapid Fire** on C; **Multi-Shot** and **Volley** on Shift+2 and Shift+3.",
+     "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it. The Mouse 4 macro gains its **Serpent Sting** line at 4. Q waits for **Aimed Shot** at 20: before that, the pull keys and **Auto Shot** do the work.",
+     "Mouse 4 and 1 are macros that also send the pet, so the first press of a pull sends it, whichever key that is. Mouse 4 is the Sting and send macro of the [macro page](../macros.md): `#showtooltip Serpent Sting`, `/petattack`, `/cast !Auto Shot`, `/cast Serpent Sting` (at levels 1-3 leave out the sting line). 1: `#showtooltip Hunter's Mark`, `/petattack`, `/cast Hunter's Mark`. The `!` keeps a second press from turning **Auto Shot** off. Pet commands and **Auto Shot** are off the global cooldown, so one press does all of it.",
+     "The Everything at the pull macro of the [macro page](../macros.md) casts **Bestial Wrath**, **Rapid Fire** and **Intimidation** in one press (the first two are off the global cooldown) and frees C and the middle mouse button.",
+     "The pet bar keeps its own keys. Keep the pet's Growl on: it is your tank.",
+     "No key: **Aspect of the Hawk**, **Trueshot Aura** (56), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.",
+     "**Arcane Shot** on Shift+Mouse 5 is not in the single-mob rotation: it is there for a mob that runs. The Shift bar is for packs and trouble: **Multi-Shot** shares **Aimed Shot**'s cooldown, so the single-mob rotation never casts it; **Volley** (40) is a channel for a pack."
+    ]
+   }
+  },
+  {
+   "spec": "Marksmanship",
+   "intro": "What a Marksmanship hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The cat still tanks, but more of the damage is your own: **Serpent Sting** on every mob, **Aimed Shot** on its cooldown from 20, **Arcane Shot** to finish below 35% of the mob's health and **Auto Shot** in between. The build fills Marksmanship to 30 points by level 39, then puts the rest into the pet. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Auto Shot and the pet",
+     "change": "Send the pet, then shoot from range: **Auto Shot** fires on its own.",
+     "press": [
+      "Send the pet at the mob and let it take the mob.",
+      "Start **Auto Shot** from range. It fires on its own until the mob is dead.",
+      "Keep your distance: the bow cannot fire within 8 yards. If the mob ends up next to you while the pet holds it, step back."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "The fight lab gives the hunter a pet from level 1. In Classic, **Tame Beast** comes at 10, so levels 1-9 read faster here than they will play. Without a pet, shoot as the mob comes and finish it with **Raptor Strike** and your weapon.",
+      "**Auto Shot** keeps firing while you cast, but after you move it waits until you have stood still for half a second (Blizzard's notes of 2026-10-16): step back once, not in small shuffles."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Serpent Sting",
+     "change": "**Serpent Sting** on every mob: a poison that ticks for 15 seconds.",
+     "press": [
+      "Send the pet in.",
+      "**Serpent Sting** while the mob has more than 40% of its health.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Monkey** (4) is the melee hunter's aspect. The fight lab's ranged hunter fights without an aspect until **Aspect of the Hawk** at 10."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Hunter's Mark and Arcane Shot",
+     "change": "**Hunter's Mark** first: your shots hit harder on the marked mob. **Arcane Shot** finishes it below 35% of its health.",
+     "press": [
+      "Send the pet in.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "The tuned rules cast **Arcane Shot** only once the mob is below 35% of its health: cast earlier, it measured slower in the fight lab.",
+      "**Concussive Shot** (8) slows a mob that runs. Not in the rotation."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "The pet, Aspect of the Hawk, and talents begin",
+     "change": "**Tame Beast** and **Aspect of the Hawk**. Talent points start with **Lethal Attacks**.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Hawk** (10) stays on from here: more ranged attack power. No key, click it.",
+      "**Lethal Attacks** (10-14): 5% more crit with every attack.",
+      "**Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Mend Pet and Wing Clip",
+     "change": "**Mend Pet** keeps your tank alive. **Wing Clip** for a mob that gets to you.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Careful Aim** (15-19): attack power from your Intellect.",
+      "**Mongoose Bite** (16) lights up after you dodge: one more button for a mob on you.",
+      "**Scare Beast** (14) holds a second beast. **Multi-Shot** (18) is for packs: the tuned rules never cast it on one mob, because it shares **Aimed Shot**'s cooldown."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Aimed Shot",
+     "change": "**Aimed Shot** whenever it is ready: your signature shot.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. In the band between a quarter and 35% of the mob's health, **Arcane Shot** goes first.",
+      "**Improved Stings** (20-22): **Serpent Sting** does 20% more damage. **Rapid Killing** (23-24) cuts **Rapid Fire**'s cooldown by 2 minutes; its other half, 20% on your next shot after a kill, is not in the fight lab.",
+      "**Trueshot Aura** (25) is a buff you cast in Forever: keep it on, no key.",
+      "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
+     ]
+    },
+    {
+     "from": 26,
+     "title": "Rapid Fire",
+     "change": "**Rapid Fire** at the pull: 40% faster shots for 15 seconds, every 3 minutes with **Rapid Killing**.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for.",
+      "**Efficiency** (26-29, 31) makes your shots and stings 15% cheaper. **Frost Trap** (28) slows a pack."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Feign Death",
+     "change": "**Feign Death** sends a mob that reaches you back to the pet.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
+     "notes": [
+      "The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.",
+      "**Rapid Recuperation** (30): after **Serpent Sting**, half your mana regeneration continues while casting for 15 seconds. **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.",
+      "**Explosive Trap** (34) is for packs."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Nothing new to press",
+     "change": "The rotation is complete. The rest of the points go to the pet. Buy every new rank.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Arcane Shot** once the mob is below 35% of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
+     "notes": [
+      "**Deadly Aspects** (40-44): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
+      "**Focused Fire** (45-46), **Endurance Training** (47-48), **Unleashed Fury** (50-54), **Ferocity** (55-59) and **Bestial Discipline** (60) go to the pet: more damage and crit, health and focus. **Improved Aspect of the Monkey** (49) is the point the row needs: a ranged hunter has no use for the Monkey.",
+      "**Volley** (40) is a channel for packs, with **Multi-Shot**."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    }
+   ],
+   "between": [
+    "Mend the pet below half its health, drink below 15% of your mana, eat below two thirds of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25.",
+    "Visit the trainer every even level: **Serpent Sting**, **Arcane Shot** and **Aimed Shot** have many ranks."
+   ],
+   "other": [
+    "The [leveling index](README.md) ranks the hunter's five leveling specs by the fight lab's time per kill. Beast-Survival, the melee hunter, has the [first level-by-level guide](beast-survival-by-level.md); Survival plays the same melee rotation: [its guide](survival-by-level.md).",
+    "Beast Mastery and Beast-Marks shoot with the same pet, give it more talents and never cast **Arcane Shot**: [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; aspects, Trueshot Aura, tracking, pet feeding and reviving, food, drink, the mount and the Hearthstone have no key, you click them between fights. Auto Shot has no key either: the pull macro on Mouse 4 starts it, and it fires on its own. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [hunter keybinds page](keybinds.md); its tables are the melee hunter's, so take the spells from the tables below.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main shot, whenever it is ready",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Aimed Shot"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: a mob that reaches you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Wing Clip"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The finish: below 35% of the mob's health",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Arcane Shot"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the mob goes back to the pet",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Feign Death"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: lights up after a dodge",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Mongoose Bite"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: the pull; the macro also sends the pet and starts Auto Shot",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Pet and Auto Shot (macro)"
+         },
+         {
+          "from": 4,
+          "spell": "Serpent Sting",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The mark, the first press of a pull; the macro also sends the pet",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Hunter's Mark",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second mob, before the pull",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Freezing Trap"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The pet's heal",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Mend Pet"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "A mob on you: the strike",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Raptor Strike"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "The burst at the pull",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Rapid Fire"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Slow a mob at range",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Concussive Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Control a second beast",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Scare Beast"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the trap that blows",
+        "binds": [
+         {
+          "from": 34,
+          "spell": "Explosive Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs and escapes: the slow field",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Frost Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Packs: shares Aimed Shot's cooldown",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Multi-Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Packs: the channel",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Volley"
+         }
+        ]
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Auto Shot"
+    ],
+    "notes": [
+     "The keys of the [Beast-Survival guide](beast-survival-by-level.md) where the spells are the same: **Wing Clip** E, **Feign Death** F, **Mongoose Bite** Mouse 5, the **Serpent Sting** macro Mouse 4, **Freezing Trap** 2, **Mend Pet** 3 and the Shift bar's shots and traps. Changed for a ranged hunter: **Aimed Shot**, the shot you press most, takes Q; **Raptor Strike**, only for a mob that reaches you, moves from Q to 4 (Auto Shot needs no key here); **Hunter's Mark** takes 1 (no **Lacerate** at range); **Arcane Shot**, cast in every fight, moves up from Shift+Mouse 5 to R (no **Immolation Trap**: the trap belongs to the melee hunter); **Rapid Fire** on C; **Multi-Shot** and **Volley** on Shift+2 and Shift+3.",
+     "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it. The Mouse 4 macro gains its **Serpent Sting** line at 4. Q waits for **Aimed Shot** at 20: before that, the pull keys and **Auto Shot** do the work.",
+     "Mouse 4 and 1 are macros that also send the pet, so the first press of a pull sends it, whichever key that is. Mouse 4 is the Sting and send macro of the [macro page](../macros.md): `#showtooltip Serpent Sting`, `/petattack`, `/cast !Auto Shot`, `/cast Serpent Sting` (at levels 1-3 leave out the sting line). 1: `#showtooltip Hunter's Mark`, `/petattack`, `/cast Hunter's Mark`. The `!` keeps a second press from turning **Auto Shot** off. Pet commands and **Auto Shot** are off the global cooldown, so one press does all of it.",
+     "Two more on the [macro page](../macros.md): **Aimed Shot** with `/cast !Auto Shot` on Q, and **Rapid Fire** with **Aimed Shot** in one press (**Rapid Fire** is off the global cooldown).",
+     "The pet bar keeps its own keys. Keep the pet's Growl on: it is your tank.",
+     "No key: **Aspect of the Hawk**, **Trueshot Aura** (25), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.",
+     "The Shift bar is for packs and trouble: **Multi-Shot** shares **Aimed Shot**'s cooldown, so the single-mob rotation never casts it; **Volley** (40) is a channel for a pack."
+    ]
+   }
+  },
+  {
+   "spec": "Survival",
+   "intro": "What a Survival hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This is a melee hunter: two one-handed weapons, a pet that holds the mob and does a part of the damage, **Serpent Sting** at the pull, **Immolation Trap** under your feet and **Raptor Strike** to finish. It plays the same rotation as the Beast-Survival build, with Survival's crit, hit and Agility talents in place of most of the pet talents. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Auto Shot, then melee",
+     "change": "One **Auto Shot** as the mob comes, then your weapons. **Raptor Strike** finishes.",
+     "press": [
+      "**Auto Shot** once as the mob comes at you.",
+      "Melee until it is dead.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing."
+     ],
+     "notes": [
+      "The tuned rules keep **Raptor Strike** for the finish: its mana buys more as a sting and a trap later on.",
+      "The fight lab gives the hunter a pet and two weapons from level 1. In Classic, **Tame Beast** comes at 10 and a second weapon at 20, so levels 1-19 read faster here than they will play."
+     ],
+     "unsimulated": [
+      "Auto Shot"
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Serpent Sting",
+     "change": "**Serpent Sting** at the pull: a poison that ticks for 15 seconds.",
+     "press": [
+      "**Serpent Sting** as the mob comes at you, while it has more than 40% of its health.",
+      "Melee until it is dead.",
+      "**Raptor Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "**Aspect of the Monkey** (4) stays on from here to 30: more dodges, and from 16 each dodge lights up **Mongoose Bite**. No key, click it.",
+      "**Arcane Shot** (6) and **Concussive Shot** (8) are ranged tools, and the fight lab's melee hunter never casts **Hunter's Mark**. Walk in instead."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "The pet, and talents begin",
+     "change": "**Tame Beast**: the pet holds the mob and does a part of the damage. Talent points start with **Improved Tracking**.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "Melee until the mob is dead.",
+      "**Raptor Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "**Improved Tracking** (10-14): keep the tracking of the mobs you fight switched on. It is 5% more damage against them.",
+      "**Savage Strikes** (15-16): 4% more crit on **Raptor Strike** and your other strikes, not on your swings.",
+      "**Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons. **Aspect of the Hawk** (10) is for ranged hunters.",
+      "**Mend Pet** (12) when the pet drops below a third of its health. **Wing Clip** (12) stops a mob that runs."
+     ]
+    },
+    {
+     "from": 16,
+     "title": "Immolation Trap and Mongoose Bite",
+     "change": "**Immolation Trap** under your feet burns the mob. **Mongoose Bite** lights up after a dodge.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. Your own health: let the pet hold the mob and step back.",
+     "notes": [
+      "Traps work in combat in Forever but land where you stand: drop it beside the mob. The burn lasts 15 seconds, so the fight lab skips it on a mob below 40%.",
+      "**Deflection** (17) adds parries, **Survivalist** (18-19) 4% more health. Nothing to press.",
+      "**Multi-Shot** (18) is a ranged spell. Not for this build."
+     ],
+     "unsimulated": [
+      "Mongoose Bite"
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Freezing Trap",
+     "change": "**Freezing Trap** holds a second mob. Nothing new in a one-mob fight.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. Your own health: let the pet hold the mob and step back.",
+     "notes": [
+      "**Surefooted** (20-22): 3% more hit. **Clever Traps** (23-24): **Immolation Trap** burns 30% harder. **Predator's Edge** (25-29): bigger crits on your strikes and 50% more off-hand damage.",
+      "**Freezing Trap** (20): drop it before a pull that will bring two mobs; the second one stands frozen.",
+      "**Aspect of the Cheetah** (20) is for the road. **Aimed Shot** (20) is a ranged spell: not for this build."
+     ],
+     "unsimulated": [
+      "Mongoose Bite"
+     ]
+    },
+    {
+     "from": 26,
+     "title": "Rapid Fire",
+     "change": "**Rapid Fire** at the pull: your swings are 40% faster for 15 seconds.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. Your own health: let the pet hold the mob and step back.",
+     "notes": [
+      "**Rapid Fire** speeds your melee swings as well as your shots. The fight lab casts it at the start of every fight it is ready for, on a 5-minute cooldown.",
+      "**Frost Trap** (28) is a slow field for packs and escapes."
+     ],
+     "unsimulated": [
+      "Mongoose Bite",
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Lacerate, Feign Death, Aspect of the Beast",
+     "change": "**Lacerate** is a bleed for when your mana is full. **Feign Death** is the exit. **Aspect of the Beast** replaces the Monkey.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**, and the mobs go for the pet or home.",
+     "notes": [
+      "**Aspect of the Beast** (30) replaces **Aspect of the Monkey**: attack power instead of dodge. Click it.",
+      "**Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Expose Prey** (31) works only on a mob with your **Hunter's Mark**, and the tuned rules never cast the mark: in the fight lab it measured slower even with this talent.",
+      "**Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lightning Reflexes** (35-39): 15% more Agility.",
+      "**Strider Kick**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them."
+     ],
+     "unsimulated": [
+      "Mongoose Bite",
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Nothing new to press",
+     "change": "The rotation is complete. The rest of the points go to Marksmanship and the aspect. Buy every new rank.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
+     "notes": [
+      "**Lethal Attacks** (40-44): 5% more crit. **Careful Aim** (45-49): attack power from your Intellect. **Deadly Aspects** (50-54): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
+      "**Efficiency** (55-57) makes your strikes cheaper. **Rapid Killing** (58-59) cuts **Rapid Fire**'s cooldown to 3 minutes. **Mortal Shots** (60) adds crit damage to ranged abilities, which this build hardly uses.",
+      "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
+     ],
+     "unsimulated": [
+      "Mongoose Bite",
+      "Rapid Fire"
+     ]
+    }
+   ],
+   "between": [
+    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks.",
+    "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
+    "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
+   ],
+   "other": [
+    "Beast-Survival plays this same melee rotation with Beast Mastery's pet talents: [its guide](beast-survival-by-level.md). The [leveling index](README.md) ranks the hunter's five leveling specs by the fight lab's time per kill.",
+    "Marksmanship, Beast Mastery and Beast-Marks are the ranged hunters: [Marksmanship](marksmanship-by-level.md), [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; aspects, tracking, pet feeding and reviving, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [hunter keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your strike: the finish below 20%",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Raptor Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: stop a mob that runs",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Wing Clip"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff: the trap under your feet",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Immolation Trap"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Feign Death"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: lights up after a dodge",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Mongoose Bite"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: the pull; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Serpent Sting"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The bleed when your mana is full",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Lacerate"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second mob, before the pull",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Freezing Trap"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The pet's heal",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Mend Pet"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "One shot as the mob comes",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Auto Shot"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "The burst at the pull",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Rapid Fire"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Slow a mob at range",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Concussive Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Control a second beast",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Scare Beast"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the trap that blows",
+        "binds": [
+         {
+          "from": 34,
+          "spell": "Explosive Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A ranged hit for a mob that runs",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Arcane Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs and escapes: the slow field",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Frost Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [],
+    "notes": [
+     "Every key is the [Beast-Survival guide](beast-survival-by-level.md)'s: the two builds play the same melee rotation. One addition: **Rapid Fire** on C from 26, which the fight lab casts at the start of a fight whenever it is ready.",
+     "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it.",
+     "The pet is sent with the pet bar, which has its own keys. Keep its Growl on and its attack command where your hand finds it.",
+     "No key: **Aspect of the Monkey** and **Aspect of the Beast**, the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, **Hunter's Mark** (the tuned rotation never casts it), food, drink, the mount and the Hearthstone.",
+     "Levels 1-3 fight with Q and 4: right-click the mob to start swinging. From 4, Mouse 4 is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives."
+    ]
+   }
+  },
+  {
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "intro": "What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels like Beast Mastery: the cat tanks and does a large part of the damage, you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. The split puts the pet talents first (levels 10-37), then Marksmanship's crit, cheaper shots and stronger stings. It takes neither **Bestial Wrath** nor **Intimidation**. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Auto Shot and the pet",
+     "change": "Send the pet, then shoot from range: **Auto Shot** fires on its own.",
+     "press": [
+      "Send the pet at the mob and let it take the mob.",
+      "Start **Auto Shot** from range. It fires on its own until the mob is dead.",
+      "Keep your distance: the bow cannot fire within 8 yards. If the mob ends up next to you while the pet holds it, step back."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "The fight lab gives the hunter a pet from level 1. In Classic, **Tame Beast** comes at 10, so levels 1-9 read faster here than they will play. Without a pet, shoot as the mob comes and finish it with **Raptor Strike** and your weapon.",
+      "**Auto Shot** keeps firing while you cast, but after you move it waits until you have stood still for half a second (Blizzard's notes of 2026-10-16): step back once, not in small shuffles."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Serpent Sting",
+     "change": "**Serpent Sting** on every mob: a poison that ticks for 15 seconds.",
+     "press": [
+      "Send the pet in.",
+      "**Serpent Sting** while the mob has more than 40% of its health.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Monkey** (4) is the melee hunter's aspect. The fight lab's ranged hunter fights without an aspect until **Aspect of the Hawk** at 10."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Hunter's Mark",
+     "change": "**Hunter's Mark** first: your shots hit harder on the marked mob.",
+     "press": [
+      "Send the pet in.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest from range."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Arcane Shot** (6): the tuned rules never cast it on a single mob. Its mana buys more as fewer drinks between pulls.",
+      "**Concussive Shot** (8) slows a mob that runs. Not in the rotation."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "The pet, Aspect of the Hawk, and talents begin",
+     "change": "**Tame Beast** and **Aspect of the Hawk**. Talent points start with **Deadly Aspects**.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
+     "notes": [
+      "**Aspect of the Hawk** (10) stays on from here: more ranged attack power. No key, click it.",
+      "**Deadly Aspects** (10-14): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
+      "**Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Mend Pet and Wing Clip",
+     "change": "**Mend Pet** keeps your tank alive. **Wing Clip** for a mob that gets to you.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Focused Fire** (15-16) adds 2% to your damage and the pet's. **Endurance Training** (17-18) gives the pet more health and armor. **Improved Revive Pet** (19) makes **Revive Pet** quicker and cheaper.",
+      "**Mongoose Bite** (16) lights up after you dodge: one more button for a mob on you.",
+      "**Scare Beast** (14) holds a second beast. **Multi-Shot** (18) is for packs: the tuned rules never cast it on one mob, because it shares **Aimed Shot**'s cooldown."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Aimed Shot",
+     "change": "**Aimed Shot** whenever it is ready: your one cooldown shot.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.",
+      "**Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.",
+      "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
+     ]
+    },
+    {
+     "from": 26,
+     "title": "Rapid Fire",
+     "change": "**Rapid Fire** at the pull: 40% faster shots for 15 seconds.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. This build has no **Rapid Killing**, so the cooldown stays at 5 minutes.",
+      "**Frost Trap** (28) slows a pack."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Feign Death",
+     "change": "**Feign Death** sends a mob that reaches you back to the pet.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Bestial Discipline** (30-31) lets half your mana regeneration continue while casting. **Pathfinding** (32) is the point the row needs. **Spirit Bond** (33-34) heals you and the pet 1% of health every 5 seconds. **Frenzy** (35-37): after a crit the pet sometimes attacks 30% faster for 8 seconds.",
+      "**Explosive Trap** (34) is for packs."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 38,
+     "title": "Marksmanship talents, nothing new to press",
+     "change": "The rotation is complete. The points go to Marksmanship's crit, cheaper shots and stronger stings. Buy every new rank.",
+     "press": [
+      "Send the pet in first and let it hold the mob.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Hunter's Mark** while the mob has more than 30% of its health.",
+      "**Serpent Sting** while it has more than 40%.",
+      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
+     "notes": [
+      "**Lethal Attacks** (38-42): 5% more crit. **Efficiency** (43-47): shots and stings 15% cheaper. **Improved Stings** (48-50): **Serpent Sting** does 20% more damage. **Careful Aim** (51-52, 54-56): attack power from your Intellect.",
+      "**Trueshot Aura** (53) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.",
+      "**Volley** (40) is a channel for packs, with **Multi-Shot**."
+     ],
+     "unsimulated": [
+      "Rapid Fire"
+     ]
+    }
+   ],
+   "between": [
+    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 53. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
+    "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
+   ],
+   "other": [
+    "The [leveling index](README.md) ranks the hunter's five leveling specs by the fight lab's time per kill. Beast-Survival, the melee hunter, has the [first level-by-level guide](beast-survival-by-level.md).",
+    "Beast Mastery plays this same rotation with **Bestial Wrath** and **Intimidation** at the pull: [its guide](beast-mastery-by-level.md). Marksmanship finishes with **Arcane Shot**: [its guide](marksmanship-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; aspects, Trueshot Aura, tracking, pet feeding and reviving, food, drink, the mount and the Hearthstone have no key, you click them between fights. Auto Shot has no key either: the pull macro on Mouse 4 starts it, and it fires on its own. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [hunter keybinds page](keybinds.md); its tables are the melee hunter's, so take the spells from the tables below.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main shot, whenever it is ready",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Aimed Shot"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: a mob that reaches you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Wing Clip"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "Free: this build has no payoff spell of its own",
+        "binds": []
+       },
+       {
+        "key": "F",
+        "role": "Escape: the mob goes back to the pet",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Feign Death"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: lights up after a dodge",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Mongoose Bite"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: the pull; the macro also sends the pet and starts Auto Shot",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Pet and Auto Shot (macro)"
+         },
+         {
+          "from": 4,
+          "spell": "Serpent Sting",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The mark, the first press of a pull; the macro also sends the pet",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Hunter's Mark",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second mob, before the pull",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Freezing Trap"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The pet's heal",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Mend Pet"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "A mob on you: the strike",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Raptor Strike"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "The burst at the pull",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Rapid Fire"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Slow a mob at range",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Concussive Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Control a second beast",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Scare Beast"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the trap that blows",
+        "binds": [
+         {
+          "from": 34,
+          "spell": "Explosive Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A ranged hit for a mob that runs",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Arcane Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs and escapes: the slow field",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Frost Trap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Packs: shares Aimed Shot's cooldown",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Multi-Shot"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Packs: the channel",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Volley"
+         }
+        ]
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Auto Shot"
+    ],
+    "notes": [
+     "The keys of the [Beast-Survival guide](beast-survival-by-level.md) where the spells are the same: **Wing Clip** E, **Feign Death** F, **Mongoose Bite** Mouse 5, the **Serpent Sting** macro Mouse 4, **Freezing Trap** 2, **Mend Pet** 3 and the Shift bar's shots and traps. Changed for a ranged hunter: **Aimed Shot**, the shot you press most, takes Q; **Raptor Strike**, only for a mob that reaches you, moves from Q to 4 (Auto Shot needs no key here); **Hunter's Mark** takes 1 (no **Lacerate** at range); R stays free (no **Immolation Trap**: the trap belongs to the melee hunter); **Rapid Fire** on C; **Multi-Shot** and **Volley** on Shift+2 and Shift+3.",
+     "The keys of the [Beast Mastery guide](beast-mastery-by-level.md) as well, except two: R and the middle mouse button stay free, because this build takes neither **Bestial Wrath** nor **Intimidation**.",
+     "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it. The Mouse 4 macro gains its **Serpent Sting** line at 4. Q waits for **Aimed Shot** at 20: before that, the pull keys and **Auto Shot** do the work.",
+     "Mouse 4 and 1 are macros that also send the pet, so the first press of a pull sends it, whichever key that is. Mouse 4 is the Sting and send macro of the [macro page](../macros.md): `#showtooltip Serpent Sting`, `/petattack`, `/cast !Auto Shot`, `/cast Serpent Sting` (at levels 1-3 leave out the sting line). 1: `#showtooltip Hunter's Mark`, `/petattack`, `/cast Hunter's Mark`. The `!` keeps a second press from turning **Auto Shot** off. Pet commands and **Auto Shot** are off the global cooldown, so one press does all of it.",
+     "The pet bar keeps its own keys. Keep the pet's Growl on: it is your tank.",
+     "No key: **Aspect of the Hawk**, **Trueshot Aura** (53), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.",
+     "**Arcane Shot** on Shift+Mouse 5 is not in the single-mob rotation: it is there for a mob that runs. The Shift bar is for packs and trouble: **Multi-Shot** shares **Aimed Shot**'s cooldown, so the single-mob rotation never casts it; **Volley** (40) is a channel for a pack."
     ]
    }
   }

@@ -2,11 +2,13 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Arcane
 
+**Leveling from level 1?** [The rotation level by level](arcane-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Arcane — Leveling](../research/leveling/builds/arcane-open-leveling.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/mage/60/05100520310031153--2323013031200001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Arcane Blast**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 80% of the damage at level 60 in the fight lab comes from Arcane Blast, Arcane Missiles, Arcane Wrath (the spec's rule: at least 50%; **Arcane Blast** cast in every fight).
 
 ## How to play
 
@@ -19,11 +21,11 @@
 1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
 2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (12% of your Intellect) for 18 seconds.
 3. **Arcane Missiles** as your channel, also once the mob is on you (with **Improved Channeling**, hits do not cut it short), and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you).
-4. No Frost Nova: let the mob come and keep channeling. **Cone of Cold** only when the mob is on you and below a fifth of its health, then step back; **Ice Lance** if the mob is frozen.
+4. Mob on you: **Frost Nova** while it has more than about a tenth of its health, then step back and keep casting; **Cone of Cold** only when the mob is on you and below a fifth of its health, then step back; **Ice Lance** if the mob is frozen.
 5. When you cannot afford **Arcane Missiles**: **Fire Blast** if the mob is on you, else **Frostbolt**; finish with a **Fire Blast** that will kill, or your wand.
 6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 ## Why this rotation
 

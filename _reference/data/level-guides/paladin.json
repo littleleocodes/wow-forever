@@ -1,6 +1,6 @@
 {
  "class": "paladin",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "guides": [
   {
    "spec": "Retribution",
@@ -329,6 +329,1610 @@
      "The seal has no key of its own: the R macro casts it once per mob and again after three **Judgement** presses, about when its 30 seconds run out. From 20, press R once before you stun, because the first press on a mob is the seal.",
      "No key: **Blessing of Might**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
      "The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs."
+    ]
+   }
+  },
+  {
+   "spec": "Hybrid Protection/Retribution",
+   "intro": "What a Prot-Ret paladin presses from level 1 to 60, stage by stage. It plays the Retribution rotation with a two-handed weapon: a seal on yourself, your swings, and **Judgement** and **Holy Strike** on their 10-second cooldowns, with **Hammer of Justice** before a **Judgement** from 20. Up to 48 the talents are close to the Retribution page's (both take Protection's **Divine Intellect** and **Precision** at 41-48); from 49 the rest go into Protection, which adds **Templar's Bulwark** (51) and **Swift Judgement** (56), a free extra Judgement once a minute. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Seal of Righteousness",
+     "change": "**Seal of Righteousness** on yourself, then your weapon does the work.",
+     "press": [
+      "**Seal of Righteousness** before the pull. It lasts 30 seconds: put it back when it runs out.",
+      "Walk in and swing."
+     ],
+     "notes": [
+      "Keep **Devotion Aura** on. Heal with **Holy Light** between fights.",
+      "Use a two-handed weapon from the first one you find. Every seal and strike hits harder with a slow, heavy weapon."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Judgement",
+     "change": "**Judgement** unleashes your seal on the mob every 10 seconds. In Forever the seal stays up afterwards.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready."
+     ],
+     "notes": [
+      "**Blessing of Might** (4) on yourself, always."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Holy Strike",
+     "change": "**Holy Strike**, an instant weapon strike every 10 seconds. With **Judgement** it is your whole rotation until 20.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**."
+     ],
+     "if_hurt": "Below a third of your health: **Divine Protection**, then **Holy Light** inside it."
+    },
+    {
+     "from": 8,
+     "title": "Hammer of Justice",
+     "change": "**Hammer of Justice**, a stun: stop a caster, or buy time to heal.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Purify** (8) removes a poison or a disease. It is not part of the fight."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun."
+    },
+    {
+     "from": 10,
+     "title": "Talents begin, Lay on Hands",
+     "change": "Talent points start. **Lay on Hands** is a full heal for emergencies. Nothing new to press in a normal fight.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of Fury** (10) and **Righteous Fury** (10) are for a shield and for tanking. Leave them alone: this build fights with a two-hander.",
+      "**Retribution Aura** (16) hurts whatever hits you. The fight lab assumes **Devotion Aura**; against single mobs either is fine.",
+      "**Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 20,
+     "title": "Seal of Command and the stun combo",
+     "change": "**Seal of Command** (talent) replaces Seal of Righteousness. Its **Judgement** hits a stunned mob twice as hard, so stun first.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "**Seal of Command** up before the pull: the first press of R.",
+      "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "Change the seal in your R macro to **Seal of Command** when you take the talent at 20.",
+      "**Consecration** (20): leave it off your bar against single mobs. The tuned rotation never casts it. It is for packs.",
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.",
+      "**Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 44,
+     "title": "Hammer of Wrath, then Protection talents",
+     "change": "**Hammer of Wrath**, a ranged finisher, is optional: the tuned rotation leaves it out. From 49 the talents go into Protection.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "**Seal of Command** up before the pull: the first press of R.",
+      "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-07 switch it off against single mobs: kills measured faster without it. Use it on a mob that runs.",
+      "From 49 the build parts from the Retribution page's: it takes Protection's **Sacred Duty** (49, a shorter cooldown on your bubble), **Templar's Bulwark** (51), **Improved Hammer of Justice** (52, the stun combo a little more often), **Toughness** (54-55, armor) and **Swift Judgement** (56) where Retribution takes **Repentance** and **Champion of the Light**.",
+      "**Redoubt** (50 and 53) works only with a shield: with a two-hander it does nothing. Its points fill Protection's tiers on the way to **Swift Judgement**.",
+      "**Templar's Bulwark** (51) goes on the middle mouse button: an absorb as large as your health for 8 seconds. The Retribution list never presses it, so the fight lab has not measured it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Shield** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 56,
+     "title": "Swift Judgement",
+     "change": "**Swift Judgement** (talent): a free extra Judgement once a minute, off the global cooldown.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells.",
+      "**Seal of Command** up before the pull: the first press of R.",
+      "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R. On a stunned mob, **Seal of Command**'s judgement hits twice as hard through it as well.",
+      "**Reverence** (57-58) and **Improved Seals** (59-60) finish the build. Nothing new to press."
+     ],
+     "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Shield** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    }
+   ],
+   "between": [
+    "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
+    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-07 keep.",
+    "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
+    "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
+   ],
+   "other": [
+    "The [Retribution guide](retribution-by-level.md) plays the same rotation with the Retribution page's talents. The two leveling pages show each build's time per kill.",
+    "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target rotation never casts it."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. Prot-Ret keeps the Retribution layout, so the two feel alike: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your strike, on cooldown; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Holy Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: the stun",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hammer of Justice"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff, with the seal in a macro from 4: hits a stunned mob twice as hard from 20",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Seal of Righteousness"
+         },
+         {
+          "from": 4,
+          "spell": "Judgement",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the bubble",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Divine Protection"
+         },
+         {
+          "from": 34,
+          "spell": "Divine Shield"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Holy Light"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: the quick heal, next to the big one",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Flash of Light"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The backup save, once F is on cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Blessing of Protection"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Extra damage on Undead and Demons",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Exorcism"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "4",
+        "role": "Cure a poison or a disease",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Purify"
+         },
+         {
+          "from": 42,
+          "spell": "Cleanse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "A free extra Judgement, once a minute",
+        "binds": [
+         {
+          "from": 56,
+          "spell": "Swift Judgement"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "A second save: an absorb as large as your health",
+        "binds": [
+         {
+          "from": 51,
+          "spell": "Templar's Bulwark"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift (packs, buffs, travel)",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Packs: the ground under you",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Consecration"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Free (the Retribution build's Repentance key; this build does not take it)",
+        "binds": []
+       },
+       {
+        "key": "Shift+R",
+        "role": "Finisher from range",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Hammer of Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape from roots and slows",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Blessing of Freedom"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "The panic button: a full heal",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Lay on Hands"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Send an extra Undead mob running",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Turn Undead"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Undead and Demons: the area version",
+        "binds": [
+         {
+          "from": 50,
+          "spell": "Holy Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Seal of Righteousness",
+     "Seal of Command"
+    ],
+    "notes": [
+     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md). Three slots differ: the middle mouse button holds **Templar's Bulwark** from 51 and C **Swift Judgement** from 56 (both free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
+     "The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. From 20, press R once before you stun, because the first press on a mob is the seal.",
+     "Levels 1-3 fight with R alone, for the seal. From 4, R is the seal and **Judgement** macro; from 6, Q is the **Holy Strike** macro, which also starts your swings. Change the R macro's seal to **Seal of Command** at 20.",
+     "**Swift Judgement** is off the global cooldown, like **Judgement**. Instead of its own key it can be the first line of the R macro (`/cast Swift Judgement` above the castsequence line): one press then fires both while it is ready. Not tested in Forever's client.",
+     "No key: **Blessing of Might**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
+     "The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs."
+    ]
+   }
+  },
+  {
+   "spec": "Hybrid Holy/Protection",
+   "intro": "What a Holy/Protection paladin presses from level 1 to 60, stage by stage. It levels behind a shield and plays the Protection list: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. Protection takes the first 21 points (10-30) and the last 4; Retribution's mana talents come at 31-45 and Holy's at 43-56, with nothing new to press. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Shield and Seal of Righteousness",
+     "change": "A one-handed weapon and a shield, **Seal of Righteousness** on yourself, then your swings.",
+     "press": [
+      "**Seal of Righteousness** before the pull. It lasts 30 seconds: put it back when it runs out.",
+      "Walk in and swing."
+     ],
+     "notes": [
+      "Keep **Devotion Aura** on. Heal with **Holy Light** between fights.",
+      "Use a one-handed weapon and a shield from the first ones you find: the fight lab plays this build with them from level 1, and the shield carries **Seal of Fury**'s absorb and the build's block talents."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Judgement",
+     "change": "**Judgement** unleashes your seal on the mob every 10 seconds. In Forever the seal stays up afterwards.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready."
+     ],
+     "notes": [
+      "**Blessing of Might** (4) on yourself, always."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Holy Strike",
+     "change": "**Holy Strike**, an instant weapon strike every 10 seconds. With **Judgement** it is the whole fight until 10.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of the Crusader** (6) is not part of the rotation.",
+      "**Hammer of Justice** (8) goes on E, but the Protection list's tuned rules of 2026-11-06 never cast it, not even on a mob that casts spells: kills measured slightly faster without it (under 1%), its mana going to **Judgement** and **Holy Strike**. Keep it for a pull that goes wrong."
+     ],
+     "if_hurt": "Below 30% of your health, with the mob above a fifth of its own: **Divine Protection**, then **Holy Light** inside it."
+    },
+    {
+     "from": 10,
+     "title": "Seal of Fury, talents begin",
+     "change": "**Seal of Fury** replaces Seal of Righteousness: Holy damage on every swing and, with the shield, an absorb. Talent points start.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "Change the seal in your R macro to **Seal of Fury** at 10. With a shield, every swing it adds also gives you an absorb of half its Holy damage. Its judgement taunts the mob, which a solo fight does not need.",
+      "**Lay on Hands** (10) is a full heal for emergencies. **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation."
+     ],
+     "if_hurt": "Below 30% of your health, with the mob above a fifth of its own: **Divine Protection**, then **Holy Light** inside it. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 20,
+     "title": "Templar's Bulwark",
+     "change": "**Templar's Bulwark** (talent), an absorb as large as your health: your first save. **Flash of Light** for a quick heal.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Templar's Bulwark** is off the global cooldown and lasts 8 seconds: press it, then **Holy Light** behind it. It shares Forbearance with **Divine Protection** and **Blessing of Protection**: one of the three a minute.",
+      "**Consecration** (20): the tuned rules of 2026-11-06 never cast it against a single mob (about 3.5% faster kills without it). It is for packs.",
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 25,
+     "title": "Swift Judgement",
+     "change": "**Swift Judgement** (talent): a free extra Judgement once a minute, off the global cooldown.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R.",
+      "From 29, **Improved Righteous Fury** cuts your damage taken while **Righteous Fury** is on: cast it then and keep it up (30 minutes; click it between fights). Before 29 it only adds threat, which a solo fight does not need."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 30,
+     "title": "Holy Shield",
+     "change": "**Holy Shield** (talent): more block for 10 seconds and Holy damage on every block. The fight is now four keys.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "From 31 the points go into Retribution's mana and crit talents (**Benediction**, **Sanctified Judgement**, **Conviction**, **Improved Judgement**), then Holy's **Divine Strength** from 43. Nothing new to press.",
+      "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 44,
+     "title": "Hammer of Wrath, left out",
+     "change": "**Hammer of Wrath**, a finisher below 20% health. The tuned rules leave it out: nothing new to press.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Hammer of Wrath** (44): the tuned rules of 2026-11-06 never cast it (about 2% faster kills without it). Use it on a mob that runs.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.",
+      "**Holy Conduit** (54-55) makes **Exorcism** 40% cheaper. Its savings on **Consecration** and **Hammer of Wrath** do not count here: the tuned list casts neither.",
+      "**Reckoning** (57-60): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    }
+   ],
+   "between": [
+    "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
+    "Drink below 15% of your mana: the Protection list's default, which its tuned rules of 2026-11-06 keep. Eat only if you are still below about two thirds of your health after the heals.",
+    "Re-cast **Blessing of Might** when it runs out, your seal just before each pull, and from 29 **Righteous Fury** every 30 minutes.",
+    "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
+   ],
+   "other": [
+    "The [Protection guide](protection-by-level.md) plays the same Protection list with the Protection page's deeper Protection build.",
+    "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target rules never cast it.",
+    "Dungeons on the way: you can tank them. **Seal of Fury**'s judgement taunts, and **Righteous Fury** adds threat."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. The shield specs keep the Retribution layout, so muscle memory carries over: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your strike, on cooldown; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Holy Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: the stun (the tuned Protection list never presses it; keep it for a bad pull)",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hammer of Justice"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff, with the seal in a macro from 4: Seal of Fury in it from 10",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Seal of Righteousness"
+         },
+         {
+          "from": 4,
+          "spell": "Judgement",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the bubble",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Divine Protection"
+         },
+         {
+          "from": 34,
+          "spell": "Divine Shield"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Holy Light"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: the quick heal, next to the big one",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Flash of Light"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The backup save, once F is on cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Blessing of Protection"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Extra damage on Undead and Demons",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Exorcism"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The shield's strike: keep it up",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Holy Shield"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "Cure a poison or a disease",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Purify"
+         },
+         {
+          "from": 42,
+          "spell": "Cleanse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "A free extra Judgement, once a minute",
+        "binds": [
+         {
+          "from": 25,
+          "spell": "Swift Judgement"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The first save: an absorb as large as your health, then heal behind it",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Templar's Bulwark"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift (packs, buffs, travel)",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Packs: the ground under you",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Consecration"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Free (the Retribution build's Repentance key; this build does not take it)",
+        "binds": []
+       },
+       {
+        "key": "Shift+R",
+        "role": "Finisher from range (the tuned list leaves it out)",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Hammer of Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape from roots and slows",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Blessing of Freedom"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "The panic button: a full heal",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Lay on Hands"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Send an extra Undead mob running",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Turn Undead"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Undead and Demons: the area version",
+        "binds": [
+         {
+          "from": 50,
+          "spell": "Holy Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Seal of Righteousness",
+     "Seal of Fury"
+    ],
+    "notes": [
+     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Four slots differ: the middle mouse button holds **Templar's Bulwark** from 20, C **Swift Judgement** from 25 and 3 **Holy Shield** from 30 (all three free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
+     "The R macro is the same castsequence with **Seal of Fury** as its seal from 10 (**Seal of Righteousness** at 1-9). Levels 1-3 fight with R alone; from 6, Q is the **Holy Strike** macro, which also starts your swings.",
+     "The save is the middle mouse button, then Mouse 5: **Templar's Bulwark**, then **Holy Light** behind its absorb. F is the save for when the Bulwark is on cooldown.",
+     "**Swift Judgement** is off the global cooldown, like **Judgement**. Instead of its own key it can be the first line of the R macro (`/cast Swift Judgement` above the castsequence line): one press then fires both while it is ready. Not tested in Forever's client.",
+     "No key: **Blessing of Might**, **Devotion Aura**, **Righteous Fury**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
+     "The tuned Protection list never presses **Hammer of Justice**, **Hammer of Wrath** or **Consecration** against single mobs. E is for a caster you want stopped or a bad pull, Shift+R for a mob that runs, Shift+Q for packs."
+    ]
+   }
+  },
+  {
+   "spec": "Holy",
+   "intro": "What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build. It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana, and it heals itself in the fight once it drops below 40% health. The page's current build (30/16/5) takes no **Holy Shock**, the spec's signature spell, and no **Seal of Command**, and fails the project's signature check; its talent order is provisional. Both may change when the paladin's raid-path leveling step runs. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Seal of Righteousness",
+     "change": "**Seal of Righteousness** on yourself, then your weapon does the work.",
+     "press": [
+      "**Seal of Righteousness** before the pull. It lasts 30 seconds: put it back when it runs out.",
+      "Walk in and swing."
+     ],
+     "notes": [
+      "Keep **Devotion Aura** on. Heal with **Holy Light** between fights.",
+      "Use a two-handed weapon from the first one you find: the Holy list fights with one, and every seal and strike hits harder with a slow, heavy weapon."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Judgement",
+     "change": "**Judgement** unleashes your seal on the mob every 10 seconds. In Forever the seal stays up afterwards.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready."
+     ],
+     "notes": [
+      "**Blessing of Might** (4) on yourself until 14, then **Blessing of Wisdom** (14) for mana: the fight lab plays the Holy list with Wisdom."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Holy Strike",
+     "change": "**Holy Strike**, an instant weapon strike every 10 seconds. With **Judgement** it is your whole rotation.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Light**. Below 30%, **Divine Protection** first."
+    },
+    {
+     "from": 8,
+     "title": "Hammer of Justice",
+     "change": "**Hammer of Justice**, a stun: stop a caster, or buy time to heal.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Purify** (8) removes a poison or a disease. It is not part of the fight."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**."
+    },
+    {
+     "from": 10,
+     "title": "Talents begin, Lay on Hands",
+     "change": "Talent points start. **Lay on Hands** is a full heal for emergencies. Nothing new to press in a normal fight.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of Fury** (10) and **Righteous Fury** (10) are for a shield and for tanking. Leave them alone: the Holy list fights with a two-hander.",
+      "**Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 20,
+     "title": "Flash of Light, the same fight",
+     "change": "Nothing new in the rotation: this build takes no **Seal of Command**, so **Seal of Righteousness** stays your seal. **Flash of Light** joins the heals.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Consecration** (20): the Holy list never casts it against a single mob. It is for packs.",
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it. **Holy Conduit** (21-22) makes it 40% cheaper.",
+      "**Redoubt** (26-27, 36 and 56-57) works only with a shield: with a two-hander it does nothing. Its first points fill Protection's tiers on the way to **Templar's Bulwark** (37).",
+      "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 37,
+     "title": "Templar's Bulwark",
+     "change": "**Templar's Bulwark** (talent), an absorb as large as your health: your first save below 40% health.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Templar's Bulwark** is off the global cooldown and lasts 8 seconds: press it, then **Holy Light** behind it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
+      "**Illumination** (40-44) returns mana after a critical heal, and **Spiritual Focus** (45) keeps your heals from being pushed back."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 44,
+     "title": "Hammer of Wrath",
+     "change": "**Hammer of Wrath** finishes a mob below 20% health from range. The Holy list presses it.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Hammer of Wrath** when the mob is below 20% health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Hammer of Wrath** has a 1-second cast and a 6-second cooldown; **Holy Conduit** takes 40% off its mana.",
+      "**Healing Light** (46-48) makes **Holy Light** and **Flash of Light** heal more."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 49,
+     "title": "Divine Favor",
+     "change": "**Divine Favor** (talent) before an emergency heal: that heal is a sure critical.",
+     "press": [
+      "**Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.",
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Hammer of Wrath** when the mob is below 20% health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then the heal.",
+      "**Infusion of Light** (50): a critical **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (51-55) makes critical heals bigger.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.",
+      "This build takes no **Holy Shock**. If a later pick takes it, the Holy list casts it at the mob as it walks in, while your mana is above 70%."
+     ],
+     "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Divine Favor** and **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** first if you are below 30%, then **Hammer of Justice**, then **Divine Favor** and **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
+    }
+   ],
+   "between": [
+    "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
+    "Drink below 15% of your mana, and eat only if you are still below 40% of your health after the heals: the tuned rules of 2026-11-06 (the Holy list's own defaults are a quarter of your mana and about two thirds of your health).",
+    "Re-cast **Blessing of Wisdom** when it runs out, and your seal just before each pull.",
+    "Visit the trainer every even level for new ranks of your seal, **Holy Strike** and **Holy Light**."
+   ],
+   "other": [
+    "The [Holy leveling page](holy.md) compares this build's time per kill with Retribution's.",
+    "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target list never casts it.",
+    "Dungeons on the way: you can heal them with **Holy Light** and **Flash of Light**. The raid build's healing talents (**Illumination**, **Healing Light**, **Holy Power**) arrive at 40-55."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. Holy keeps the Retribution layout, so muscle memory carries over: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your strike, on cooldown; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Holy Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: the stun",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hammer of Justice"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff, with the seal in a macro from 4",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Seal of Righteousness"
+         },
+         {
+          "from": 4,
+          "spell": "Judgement",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the bubble",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Divine Protection"
+         },
+         {
+          "from": 34,
+          "spell": "Divine Shield"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Holy Light"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: the quick heal, next to the big one",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Flash of Light"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The backup save, once F is on cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Blessing of Protection"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Extra damage on Undead and Demons",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Exorcism"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Before an emergency heal: a sure critical",
+        "binds": [
+         {
+          "from": 49,
+          "spell": "Divine Favor"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "Cure a poison or a disease",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Purify"
+         },
+         {
+          "from": 42,
+          "spell": "Cleanse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The first save: an absorb as large as your health, then heal behind it",
+        "binds": [
+         {
+          "from": 37,
+          "spell": "Templar's Bulwark"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift (packs, buffs, travel)",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Packs: the ground under you",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Consecration"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Free (the Retribution build's Repentance key; this build does not take it)",
+        "binds": []
+       },
+       {
+        "key": "Shift+R",
+        "role": "Finisher from range: below 20% health, part of the Holy list from 44",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Hammer of Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape from roots and slows",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Blessing of Freedom"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "The panic button: a full heal",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Lay on Hands"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Send an extra Undead mob running",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Turn Undead"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Undead and Demons: the area version",
+        "binds": [
+         {
+          "from": 50,
+          "spell": "Holy Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Seal of Righteousness"
+    ],
+    "notes": [
+     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Three slots differ: the middle mouse button holds **Templar's Bulwark** from 37 and 3 **Divine Favor** from 49 (both free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
+     "The R macro keeps **Seal of Righteousness** all the way: this build takes no **Seal of Command**. Levels 1-3 fight with R alone; from 6, Q is the **Holy Strike** macro, which also starts your swings.",
+     "The save from 37 is the middle mouse button, then Mouse 5: **Templar's Bulwark**, then **Holy Light** behind its absorb. From 49 press 3 before the heal for a sure critical.",
+     "**Divine Favor** is off the global cooldown. Instead of its own key it can be the first line of a Mouse 5 macro (`/cast Divine Favor` above `/cast Holy Light`): one press then fires both while it is ready. Not tested in Forever's client.",
+     "Unlike Retribution, the Holy list presses **Hammer of Wrath** (Shift+R) from 44. It never casts **Consecration** against a single mob: Shift+Q is for packs.",
+     "No key: **Blessing of Wisdom**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights."
+    ]
+   }
+  },
+  {
+   "spec": "Protection",
+   "intro": "What a Protection paladin presses from level 1 to 60, stage by stage, while leveling into the Protection raid build. It levels behind a shield: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. The talent order is provisional: the page's build has no order of its own on the current data yet, and its pick may change when the paladin's raid-path leveling step runs. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Shield and Seal of Righteousness",
+     "change": "A one-handed weapon and a shield, **Seal of Righteousness** on yourself, then your swings.",
+     "press": [
+      "**Seal of Righteousness** before the pull. It lasts 30 seconds: put it back when it runs out.",
+      "Walk in and swing."
+     ],
+     "notes": [
+      "Keep **Devotion Aura** on. Heal with **Holy Light** between fights.",
+      "Use a one-handed weapon and a shield from the first ones you find: the fight lab plays this build with them from level 1, and the shield carries **Seal of Fury**'s absorb and the build's block talents."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Judgement",
+     "change": "**Judgement** unleashes your seal on the mob every 10 seconds. In Forever the seal stays up afterwards.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready."
+     ],
+     "notes": [
+      "**Blessing of Might** (4) on yourself, always."
+     ]
+    },
+    {
+     "from": 6,
+     "title": "Holy Strike",
+     "change": "**Holy Strike**, an instant weapon strike every 10 seconds. With **Judgement** it is the whole fight until 10.",
+     "press": [
+      "**Seal of Righteousness** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Seal of the Crusader** (6) is not part of the rotation.",
+      "**Hammer of Justice** (8) goes on E, but the Protection list's tuned rules of 2026-11-06 never cast it, not even on a mob that casts spells: kills measured slightly faster without it (under 1%), its mana going to **Judgement** and **Holy Strike**. Keep it for a pull that goes wrong."
+     ],
+     "if_hurt": "Below 30% of your health, with the mob above a fifth of its own: **Divine Protection**, then **Holy Light** inside it."
+    },
+    {
+     "from": 10,
+     "title": "Seal of Fury, talents begin",
+     "change": "**Seal of Fury** replaces Seal of Righteousness: Holy damage on every swing and, with the shield, an absorb. Talent points start.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "Change the seal in your R macro to **Seal of Fury** at 10. With a shield, every swing it adds also gives you an absorb of half its Holy damage. Its judgement taunts the mob, which a solo fight does not need.",
+      "**Lay on Hands** (10) is a full heal for emergencies. **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation."
+     ],
+     "if_hurt": "Below 30% of your health, with the mob above a fifth of its own: **Divine Protection**, then **Holy Light** inside it. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 20,
+     "title": "Templar's Bulwark",
+     "change": "**Templar's Bulwark** (talent), an absorb as large as your health: your first save. **Flash of Light** for a quick heal.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Templar's Bulwark** is off the global cooldown and lasts 8 seconds: press it, then **Holy Light** behind it. It shares Forbearance with **Divine Protection** and **Blessing of Protection**: one of the three a minute.",
+      "**Consecration** (20): the tuned rules of 2026-11-06 never cast it against a single mob (about 3.5% faster kills without it). It is for packs.",
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 25,
+     "title": "Swift Judgement",
+     "change": "**Swift Judgement** (talent): a free extra Judgement once a minute, off the global cooldown.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R.",
+      "**Righteous Fury** (10) only adds threat until **Improved Righteous Fury** (49): a solo fight does not need it yet."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 30,
+     "title": "Holy Shield",
+     "change": "**Holy Shield** (talent): more block for 10 seconds and Holy damage on every block. The fight is now four keys.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "From 31 the points go into Retribution: **Deflection** (31-35, parry), then **Sanctified Judgement** (36-38), which returns mana each time you judge. Nothing new to press.",
+      "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.",
+      "**Seal of Command** (41) comes with the build's Retribution points. It is not your leveling seal: with a shield the Protection list stays on **Seal of Fury**."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 44,
+     "title": "Hammer of Wrath, left out",
+     "change": "**Hammer of Wrath**, a finisher below 20% health. The tuned rules leave it out: nothing new to press.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Hammer of Wrath** (44): the tuned rules of 2026-11-06 never cast it (about 2% faster kills without it). Use it on a mob that runs.",
+      "**Sacred Arbiter** (46) makes **Holy Strike** hit 20% harder and refresh your judgements on the mob."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 49,
+     "title": "Righteous Fury pays",
+     "change": "**Improved Righteous Fury** (talent) cuts your damage taken while **Righteous Fury** is on: cast it and keep it up.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Righteous Fury** lasts 30 minutes: click it between fights, like the blessing. The fight lab keeps it up all the time.",
+      "**Reckoning** (52-56): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.",
+      "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    },
+    {
+     "from": 57,
+     "title": "Shieldsworn and Iron Creed",
+     "change": "**Shieldsworn** (talent): **Holy Strike** every 6 seconds instead of 10. **Iron Creed** (58-60) makes each one cut your damage taken.",
+     "press": [
+      "**Seal of Fury** up before the pull: the first press of R.",
+      "**Holy Shield** whenever it is down (its 4 charges used or its 10 seconds over), while the mob has more than a fifth of its health.",
+      "**Swift Judgement** whenever it is ready, with your seal up and the mob above a quarter of its health.",
+      "**Judgement** whenever it is ready.",
+      "**Holy Strike** whenever it is ready."
+     ],
+     "notes": [
+      "**Iron Creed** (58-60): each **Holy Strike** cuts your damage taken for 6 seconds, only while **Righteous Fury** is on.",
+      "Q comes up more often from 57: keep pressing it whenever it is ready."
+     ],
+     "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
+    }
+   ],
+   "between": [
+    "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
+    "Drink below 15% of your mana: the Protection list's default, which its tuned rules of 2026-11-06 keep. Eat only if you are still below about two thirds of your health after the heals.",
+    "Re-cast **Blessing of Might** when it runs out, your seal just before each pull, and from 49 **Righteous Fury** every 30 minutes.",
+    "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
+   ],
+   "other": [
+    "The [Holy/Protection guide](hybrid-holy-protection-by-level.md) plays the same Protection list with a split build.",
+    "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target rules never cast it.",
+    "Dungeons on the way: you can tank them. **Seal of Fury**'s judgement taunts, and **Righteous Fury** adds threat."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. The shield specs keep the Retribution layout, so muscle memory carries over: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your strike, on cooldown; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Holy Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: the stun (the tuned Protection list never presses it; keep it for a bad pull)",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hammer of Justice"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff, with the seal in a macro from 4: Seal of Fury in it from 10",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Seal of Righteousness"
+         },
+         {
+          "from": 4,
+          "spell": "Judgement",
+          "only": "macro"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: the bubble",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Divine Protection"
+         },
+         {
+          "from": 34,
+          "spell": "Divine Shield"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Holy Light"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: the quick heal, next to the big one",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Flash of Light"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The backup save, once F is on cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Blessing of Protection"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Extra damage on Undead and Demons",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Exorcism"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The shield's strike: keep it up",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Holy Shield"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "Cure a poison or a disease",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Purify"
+         },
+         {
+          "from": 42,
+          "spell": "Cleanse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "A free extra Judgement, once a minute",
+        "binds": [
+         {
+          "from": 25,
+          "spell": "Swift Judgement"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The first save: an absorb as large as your health, then heal behind it",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Templar's Bulwark"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift (packs, buffs, travel)",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Packs: the ground under you",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Consecration"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Free (the Retribution build's Repentance key; this build does not take it)",
+        "binds": []
+       },
+       {
+        "key": "Shift+R",
+        "role": "Finisher from range (the tuned list leaves it out)",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Hammer of Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape from roots and slows",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Blessing of Freedom"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "The panic button: a full heal",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Lay on Hands"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Send an extra Undead mob running",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Turn Undead"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Undead and Demons: the area version",
+        "binds": [
+         {
+          "from": 50,
+          "spell": "Holy Wrath"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Seal of Righteousness",
+     "Seal of Fury"
+    ],
+    "notes": [
+     "The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Four slots differ: the middle mouse button holds **Templar's Bulwark** from 20, C **Swift Judgement** from 25 and 3 **Holy Shield** from 30 (all three free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.",
+     "The R macro is the same castsequence with **Seal of Fury** as its seal from 10 (**Seal of Righteousness** at 1-9). Levels 1-3 fight with R alone; from 6, Q is the **Holy Strike** macro, which also starts your swings.",
+     "The save is the middle mouse button, then Mouse 5: **Templar's Bulwark**, then **Holy Light** behind its absorb. F is the save for when the Bulwark is on cooldown.",
+     "**Swift Judgement** is off the global cooldown, like **Judgement**. Instead of its own key it can be the first line of the R macro (`/cast Swift Judgement` above the castsequence line): one press then fires both while it is ready. Not tested in Forever's client.",
+     "No key: **Blessing of Might**, **Devotion Aura**, **Righteous Fury**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
+     "The tuned Protection list never presses **Hammer of Justice**, **Hammer of Wrath** or **Consecration** against single mobs. E is for a caster you want stopped or a bad pull, Shift+R for a mob that runs, Shift+Q for packs."
     ]
    }
   }

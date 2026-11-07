@@ -2,11 +2,13 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Elemental
 
+**Leveling from level 1?** [The rotation level by level](elemental-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Lightning Bolt**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 76% of the damage at level 60 in the fight lab comes from Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Lightning Bolt** cast in every fight).
 
 ## How to play
 

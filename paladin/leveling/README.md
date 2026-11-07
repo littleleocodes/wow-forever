@@ -12,7 +12,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 4 | [Protection](protection.md) — Leveling into the raid build 🔬 | 32 | +19% |
 | 5 | [Holy](holy.md) — Leveling into the raid build 🔬 | 35 | +29% |
 
-**Level by level:** [Retribution](retribution-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Retribution](retribution-by-level.md), [Prot-Ret](prot-ret-by-level.md), [Holy/Protection hybrid](hybrid-holy-protection-by-level.md), [Holy](holy-by-level.md), [Protection](protection-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

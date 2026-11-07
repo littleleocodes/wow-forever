@@ -1,6 +1,6 @@
 {
  "class": "shaman",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "guides": [
   {
    "spec": "Enhancement",
@@ -392,6 +392,1174 @@
      "No key: **Lightning Shield**, the weapon imbue, **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
      "The single-target rotation never casts **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
+    ]
+   }
+  },
+  {
+   "spec": "Elemental",
+   "intro": "What an Elemental shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Elemental fights from range: **Lightning Bolt** while the mob walks in, then the shocks on their shared cooldown, more bolts between them while your mana holds, and your weapon swinging in every gap. Mana is the limit, so the list always keeps enough for the next shock. The build's first points go to Restoration and Enhancement for hit, mana and crit; the Elemental talents start at 29. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Lightning Bolt",
+     "change": "**Lightning Bolt** is your attack: from range as the mob walks in, and again in melee while your mana lasts.",
+     "press": [
+      "**Lightning Bolt** from as far as it reaches, and again while the mob walks in.",
+      "In melee, **Lightning Bolt** again while you have the mana; then let your weapon swing until the mob is dead."
+     ],
+     "notes": [
+      "Keep **Rockbiter Weapon** on your weapon. Your swings fill every gap between casts, from here to 60.",
+      "Right-click the mob once it reaches you, so your weapon swings between casts.",
+      "Heal with **Healing Wave** between fights."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Earth Shock",
+     "change": "**Earth Shock**, an instant on a short cooldown. It also interrupts a caster.",
+     "press": [
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** whenever it is ready, first of all when it would kill the mob.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "notes": [
+      "In melee the bolts now stop where your mana would no longer cover the next **Earth Shock**: the shock is instant, and a mob's hits cannot push it back.",
+      "**Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 8,
+     "title": "Lightning Shield",
+     "change": "**Lightning Shield** on yourself: mobs that hit you take damage. **Stoneclaw Totem** is your first panic button.",
+     "press": [
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** whenever it is ready, first of all when it would kill the mob.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.",
+     "notes": []
+    },
+    {
+     "from": 10,
+     "title": "Flame Shock and Searing Totem, and talents begin",
+     "change": "**Flame Shock** burns the mob over time and **Searing Totem** shoots it from the pull. Talent points start.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.",
+     "notes": [
+      "The shocks share one cooldown: **Flame Shock** takes it while it is not ticking, **Earth Shock** every other time.",
+      "The first points go to Restoration: **Tidal Focus** (10-14) for 5% more chance to hit, **Mindfulness** (15-17) to keep half your mana regeneration going while you cast.",
+      "Stay on **Rockbiter Weapon** until level 30. **Flametongue Weapon** (10) is not the leveling imbue.",
+      "**Strength of Earth Totem** (10), **Fire Nova** (12) and **Purge** (12) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Lesser Healing Wave and Frost Shock",
+     "change": "Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Ghost Wolf** (20) between pulls and on every walk back from the graveyard.",
+      "**Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.",
+      "The points of 18-28 go to Enhancement: **Thundering Strikes** for crit with spells and swings, **Ancestral Knowledge** for more Intellect and **Mental Dexterity**, which turns Intellect into attack power for your weapon."
+     ]
+    },
+    {
+     "from": 28,
+     "title": "Shamanistic Focus, then the Elemental tree",
+     "change": "**Shamanistic Focus** (talent) makes your shocks and **Lightning Shield** 45% cheaper. From 29, **Convection** cuts the cost of shocks and bolts.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "Cheaper shocks mean more bolts between them: the list does not change, your mana lasts longer.",
+      "Put **Windfury Weapon** (30) on your weapon the moment you train it, and keep it there to 60.",
+      "**Grounding Totem** (30) eats a caster mob's next spell.",
+      "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 34,
+     "title": "Elemental Alacrity: faster bolts",
+     "change": "**Elemental Alacrity** (talent) takes up to half a second off **Lightning Bolt**'s cast: more bolts fit in while the mob walks in.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Call of Flame** (37-38) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.",
+      "**Elemental Focus** (39): after a damage spell, sometimes the next one is free. Nothing to press: the next spell in the list takes it.",
+      "**Concussion** (40-43): your bolts and **Earth Shock** hit harder."
+     ]
+    },
+    {
+     "from": 44,
+     "title": "Eye of the Storm, the finished rotation",
+     "change": "**Eye of the Storm** (talent): at 3 points (46), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Reverberation** (47-48, 53) shortens the shock cooldown.",
+      "**Call of Thunder** (49), **Lightning Overload** (50-52) and **Elemental Fury** (54-58): more bolt crits, a free second bolt now and then, and bigger crits. Nothing to press.",
+      "**Elemental Reach** (59-60) adds range to **Lightning Bolt**: start the pull a little farther out."
+     ]
+    }
+   ],
+   "between": [
+    "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
+    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Recast your weapon imbue when it runs out, and **Lightning Shield** before each pull.",
+    "Visit the trainer every even level for new ranks of **Lightning Bolt**, **Earth Shock**, **Flame Shock** and your heals."
+   ],
+   "other": [
+    "Enhancement is the shaman's fastest leveling spec in the fight lab. It fights in melee with **Stormstrike** and is on its own page in this folder.",
+    "The Elemental-Enhancement hybrid plays this same list with more Enhancement talents; it has its own page and guide in this folder."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [shaman keybinds page](keybinds.md), written for Enhancement; the notes under these tables say which keys differ here.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your bolt, the key you press most",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Lightning Bolt"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: slow a mob that runs or that you leave",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Frost Shock"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The shock: the kill shot and the interrupt",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Earth Shock"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "The save: mobs turn on the totem while you heal",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Stoneclaw Totem"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the quick heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Healing Wave"
+         },
+         {
+          "from": 20,
+          "spell": "Lesser Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: eat a caster's spell",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Grounding Totem"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The fire shock, once per mob",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Flame Shock"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Your pull totem",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Searing Totem"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "4",
+        "role": "Free (Lightning Mastery, in a build that takes it)",
+        "binds": []
+       },
+       {
+        "key": "C",
+        "role": "The big heal, in a stun or behind the totem",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free (a shaman cannot use a wand)",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Free (Flame Shock sits on 1 here)",
+        "binds": []
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the blast around you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Fire Nova"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the bolt that jumps",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Chain Lightning"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape: slow everything around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Earthbind Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A heal that keeps ticking",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Stream Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Break a fear",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Tremor Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs: the fire totem",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Magma Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Strip a mob's buff",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Purge"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": ["Lightning Shield"],
+    "notes": [
+     "Three spells sit on other keys than in the [Enhancement guide](enhancement-by-level.md): **Lightning Bolt**, the spell you press most here, takes Q; **Earth Shock** moves to R (Stormstrike's key, a talent this build lacks); **Flame Shock**, cast once per mob, moves up from Shift+Q to 1, the key Lightning Bolt leaves. Key 4 stays free: no Rage of the Farseer here. The heals, the totems and **Frost Shock** keep their keys, so a shaman who switches specs finds them where they were.",
+     "Q is plain **Lightning Bolt**, no macro: a spell never starts your swings. Right-click the mob once it reaches you, and your weapon swings between casts (the fight lab's weapon does a part of your damage at every level). The middle mouse button stays free.",
+     "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
+     "No key: **Lightning Shield**, the weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30), **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
+     "The single-target rotation never casts **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
+    ]
+   }
+  },
+  {
+   "spec": "Restoration",
+   "intro": "What a Restoration shaman presses from level 1 to 60 while leveling into the raid healer's talents. Restoration has no leveling rotation of its own, so it plays the Enhancement list without the talents it never takes (**Stormstrike**, **Maelstrom Weapon**, **Rage of the Farseer**): a slow two-handed weapon, a weapon imbue, a shield, **Searing Totem** at the pull and **Earth Shock** whenever it is ready. It is slower per kill than Enhancement: the price of arriving at 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Swing",
+     "change": "Your weapon and **Rockbiter Weapon** do the work.",
+     "press": [
+      "One **Lightning Bolt** while the mob runs at you, if you like. Mana is no worry yet.",
+      "Then swing until it is dead."
+     ],
+     "notes": [
+      "Keep **Rockbiter Weapon** on your weapon at all times. Recast it when it runs out.",
+      "Heal with **Healing Wave** between fights."
+     ],
+     "unsimulated": [
+      "Lightning Bolt"
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Earth Shock",
+     "change": "**Earth Shock**, an instant on a short cooldown. From here on, skip the opening Lightning Bolt.",
+     "press": [
+      "Walk in and swing. No opening Lightning Bolt: its mana costs more drinking than the damage saves.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "notes": [
+      "**Earth Shock** also interrupts. Use it on a caster's spell and the mob walks to you.",
+      "**Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 8,
+     "title": "Lightning Shield",
+     "change": "**Lightning Shield** on yourself: mobs that hit you take damage. **Stoneclaw Totem** is your first panic button.",
+     "press": [
+      "**Lightning Shield** up before the pull.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.",
+     "notes": []
+    },
+    {
+     "from": 10,
+     "title": "Searing Totem, and talents begin",
+     "change": "**Searing Totem** at the pull adds free damage for the whole fight. Talent points start.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.",
+     "notes": [
+      "The first points: **Tidal Focus** (10-14) for 5% more chance to hit, **Mindfulness** (15-17) to keep half your mana regeneration going while you cast.",
+      "**Flame Shock** (10) shares its cooldown with **Earth Shock**. Against one mob the fight lab never casts it.",
+      "Stay on **Rockbiter Weapon** until level 30. Use a slow two-handed weapon as soon as you can: your swings are most of your damage.",
+      "**Strength of Earth Totem** (10) and **Fire Nova** (12) cost more mana than they return against one mob."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Lesser Healing Wave and Ghost Wolf",
+     "change": "Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Ghost Wolf** (20) between pulls and on every walk back from the graveyard.",
+      "**Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.",
+      "**Thundering Strikes** (18-22) adds crit to spells and swings; **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper."
+     ]
+    },
+    {
+     "from": 28,
+     "title": "Water Shield",
+     "change": "**Water Shield** (talent): a shield that gives you mana back when you are hit. It takes Lightning Shield's place when your mana is low.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "Only one shield can be up at a time, and each has 3 charges: put a new one up before the pull once the old one's charges are gone. **Water Shield** when your mana is under 60%, **Lightning Shield** otherwise.",
+      "**Ancestral Healing** (29) is a healer's talent: nothing to press."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Windfury Weapon and Mana Tide Totem",
+     "change": "**Windfury Weapon** replaces Rockbiter on your weapon. **Mana Tide Totem** (talent) is a long cooldown for mana.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there to 60.",
+      "**Mana Tide Totem** (30) has a long cooldown, and the fight lab does not use it solo. Keep it for a long fight or a dungeon.",
+      "**Restorative Totems** (31-34) makes **Healing Stream Totem** and **Mana Spring Totem** stronger: a healer's talent.",
+      "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 35,
+     "title": "Nature's Swiftness, the finished rotation",
+     "change": "**Nature's Swiftness** (talent) makes your next **Healing Wave** instant: your emergency heal. Nothing else new in the fight: buy every new rank.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
+      "**Earth Shock** whenever it is ready."
+     ],
+     "if_hurt": "Under 30% of your health: **Nature's Swiftness**, then **Healing Wave**: an instant big heal. With it on cooldown, drop **Stoneclaw Totem** instead. Under 40%: **Lesser Healing Wave**.",
+     "notes": [
+      "From 37 the points go to **Ancestral Knowledge** (more Intellect) and then the healing talents: **Healing Focus**, **Tidal Mastery**, **Healing Way**, **Purification** and **Riptide** (60). They make you a healer at 60; solo, they do little.",
+      "**Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them."
+     ]
+    }
+   ],
+   "between": [
+    "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
+    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Recast your weapon imbue when it runs out, and your shield before each pull: **Lightning Shield**, or **Water Shield** from 28 when you are under 60% of your mana.",
+    "Visit the trainer every even level for new ranks of **Earth Shock**, **Lightning Shield** and your heals."
+   ],
+   "other": [
+    "Enhancement plays the same list with **Stormstrike** and levels faster per kill in the fight lab. If you only quest, level as Enhancement and respec at 60.",
+    "Elemental fights from range with **Lightning Bolt**; it has its own page and guide in this folder."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [shaman keybinds page](keybinds.md), written for Enhancement; the notes under these tables say which keys differ here.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your shock, pressed most; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Earth Shock"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: slow a mob that runs or that you leave",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Frost Shock"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "Free (Stormstrike's key in Enhancement; this build has none)",
+        "binds": []
+       },
+       {
+        "key": "F",
+        "role": "The save: mobs turn on the totem while you heal",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Stoneclaw Totem"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the quick heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Healing Wave"
+         },
+         {
+          "from": 20,
+          "spell": "Lesser Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: eat a caster's spell",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Grounding Totem"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "A pull from range (an opener at 1-3 if you like)",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Lightning Bolt"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Your pull totem",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Searing Totem"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "The instant heal: press it, then C",
+        "binds": [
+         {
+          "from": 35,
+          "spell": "Nature's Swiftness"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "The long cooldown: mana back in a long fight",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Mana Tide Totem"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "The big heal, in a stun or behind the totem",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Packs: the fire shock to spread",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Flame Shock"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the blast around you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Fire Nova"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the bolt that jumps",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Chain Lightning"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape: slow everything around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Earthbind Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A heal that keeps ticking",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Stream Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Break a fear",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Tremor Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs: the fire totem",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Magma Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Strip a mob's buff",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Purge"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Dungeons: the heal that jumps, the wider version of C",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Chain Heal"
+         }
+        ]
+       },
+       {
+        "key": "Shift+X",
+        "role": "Dungeons: the heal over time",
+        "binds": [
+         {
+          "from": 60,
+          "spell": "Riptide"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "no_key": ["Lightning Shield", "Water Shield"],
+    "notes": [
+     "The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).",
+     "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
+     "The Instant heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.",
+     "**Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.",
+     "Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
+     "The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends."
+    ]
+   }
+  },
+  {
+   "spec": "Hybrid Elemental/Enhancement",
+   "intro": "What an Elemental-Enhancement shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The hybrid plays the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on their shared cooldown, more bolts between them while your mana holds, and your weapon swinging in every gap. Its talents swap trees in blocks: Elemental first for cheaper, faster bolts (10-20), then hit from Restoration (21-23), Enhancement for crit and Intellect (25-35), Elemental again for the deep bolt talents (36-47), and Enhancement for most of the last points. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Lightning Bolt",
+     "change": "**Lightning Bolt** is your attack: from range as the mob walks in, and again in melee while your mana lasts.",
+     "press": [
+      "**Lightning Bolt** from as far as it reaches, and again while the mob walks in.",
+      "In melee, **Lightning Bolt** again while you have the mana; then let your weapon swing until the mob is dead."
+     ],
+     "notes": [
+      "Keep **Rockbiter Weapon** on your weapon. Your swings fill every gap between casts, from here to 60.",
+      "Right-click the mob once it reaches you, so your weapon swings between casts.",
+      "Heal with **Healing Wave** between fights."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Earth Shock",
+     "change": "**Earth Shock**, an instant on a short cooldown. It also interrupts a caster.",
+     "press": [
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** whenever it is ready, first of all when it would kill the mob.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "notes": [
+      "In melee the bolts now stop where your mana would no longer cover the next **Earth Shock**: the shock is instant, and a mob's hits cannot push it back.",
+      "**Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 8,
+     "title": "Lightning Shield",
+     "change": "**Lightning Shield** on yourself: mobs that hit you take damage. **Stoneclaw Totem** is your first panic button.",
+     "press": [
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** whenever it is ready, first of all when it would kill the mob.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.",
+     "notes": []
+    },
+    {
+     "from": 10,
+     "title": "Flame Shock and Searing Totem, and talents begin",
+     "change": "**Flame Shock** burns the mob over time and **Searing Totem** shoots it from the pull. Talent points start, in Elemental.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.",
+     "notes": [
+      "The shocks share one cooldown: **Flame Shock** takes it while it is not ticking, **Earth Shock** every other time.",
+      "**Convection** (10-14) makes shocks and bolts cheaper; **Elemental Alacrity** (15-17) takes up to half a second off **Lightning Bolt**'s cast; **Call of Flame** (18-19) makes **Flame Shock** and **Searing Totem** hit harder.",
+      "Stay on **Rockbiter Weapon** until level 30. **Flametongue Weapon** (10) is not the leveling imbue.",
+      "**Strength of Earth Totem** (10), **Fire Nova** (12) and **Purge** (12) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Lesser Healing Wave and Frost Shock",
+     "change": "Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Ghost Wolf** (20) between pulls and on every walk back from the graveyard.",
+      "**Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.",
+      "**Elemental Focus** (20): after a damage spell, sometimes the next one is free. Nothing to press: the next spell in the list takes it.",
+      "**Tidal Focus** (21-23) for more chance to hit, then **Thundering Strikes** (25-29) for crit with spells and swings."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Windfury Weapon",
+     "change": "**Windfury Weapon** replaces Rockbiter on your weapon. **Mental Dexterity** (talent) turns your Intellect into attack power for its swings, and **Ancestral Knowledge** raises that Intellect.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there to 60.",
+      "**Grounding Totem** (30) eats a caster mob's next spell.",
+      "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
+     ]
+    },
+    {
+     "from": 35,
+     "title": "Shamanistic Focus",
+     "change": "**Shamanistic Focus** (talent) makes your shocks and **Lightning Shield** 45% cheaper: more bolts between the shocks.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Concussion** (36-37): your bolts and **Earth Shock** hit harder. **Reverberation** (38) shortens the shock cooldown."
+     ]
+    },
+    {
+     "from": 39,
+     "title": "Eye of the Storm, the finished rotation",
+     "change": "**Eye of the Storm** (talent): at 3 points (41), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you. The first one from as far as it reaches.",
+      "**Earth Shock** a caster mob's spell: it interrupts, and the mob walks to you.",
+      "In melee: **Earth Shock** when it would kill the mob.",
+      "**Flame Shock** while it is not on the mob and the mob has more than 30% of its health.",
+      "**Earth Shock** whenever the shock cooldown is free.",
+      "**Lightning Bolt** between shocks while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. Skip it on a mob your next swing or shock will finish."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Reverberation** (42-43) shortens the shock cooldown further; **Call of Thunder** (44) and **Lightning Overload** (45-47) give more bolt crits and a free second bolt now and then.",
+      "From 48 the points go back to Enhancement: **Mental Dexterity** (48-49), **Improved Lightning Shield** (50-51, 56), **Toughness** (52-55) for health and **Mental Quickness** (57-58) for spell damage from your Intellect.",
+      "**Elemental Reach** (59) adds range to **Lightning Bolt**: start the pull a little farther out. **Elemental Fury** (60) makes your crits bigger."
+     ]
+    }
+   ],
+   "between": [
+    "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
+    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Recast your weapon imbue when it runs out, and **Lightning Shield** before each pull.",
+    "Visit the trainer every even level for new ranks of **Lightning Bolt**, **Earth Shock**, **Flame Shock** and your heals."
+   ],
+   "other": [
+    "Elemental plays this same list with the deep Elemental talents earlier; it has its own page and guide in this folder.",
+    "Enhancement is the shaman's fastest leveling spec in the fight lab. It fights in melee with **Stormstrike** and is on its own page in this folder."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [shaman keybinds page](keybinds.md), written for Enhancement; the notes under these tables say which keys differ here.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your bolt, the key you press most",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Lightning Bolt"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: slow a mob that runs or that you leave",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Frost Shock"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The shock: the kill shot and the interrupt",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Earth Shock"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "The save: mobs turn on the totem while you heal",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Stoneclaw Totem"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the quick heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Healing Wave"
+         },
+         {
+          "from": 20,
+          "spell": "Lesser Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb reaction: eat a caster's spell",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Grounding Totem"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The fire shock, once per mob",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Flame Shock"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Your pull totem",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Searing Totem"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "4",
+        "role": "Free (Lightning Mastery, in a build that takes it)",
+        "binds": []
+       },
+       {
+        "key": "C",
+        "role": "The big heal, in a stun or behind the totem",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Wave"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free (a shaman cannot use a wand)",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Free (Flame Shock sits on 1 here)",
+        "binds": []
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the blast around you",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Fire Nova"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the bolt that jumps",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Chain Lightning"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Escape: slow everything around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Earthbind Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "A heal that keeps ticking",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Healing Stream Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Break a fear",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Tremor Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs: the fire totem",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Magma Totem"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Strip a mob's buff",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Purge"
+         }
+        ]
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": ["Lightning Shield"],
+    "notes": [
+     "Three spells sit on other keys than in the [Enhancement guide](enhancement-by-level.md): **Lightning Bolt**, the spell you press most here, takes Q; **Earth Shock** moves to R (Stormstrike's key, a talent this build lacks); **Flame Shock**, cast once per mob, moves up from Shift+Q to 1, the key Lightning Bolt leaves. Key 4 stays free: no Rage of the Farseer here. The heals, the totems and **Frost Shock** keep their keys, so a shaman who switches specs finds them where they were.",
+     "Q is plain **Lightning Bolt**, no macro: a spell never starts your swings. Right-click the mob once it reaches you, and your weapon swings between casts (the fight lab's weapon does a part of your damage at every level). The middle mouse button stays free.",
+     "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
+     "No key: **Lightning Shield**, the weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30), **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
+     "The single-target rotation never casts **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
     ]
    }
   }

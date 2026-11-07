@@ -26,11 +26,10 @@
 2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
 3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
 4. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
-5. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
-6. With **Expose Prey**: **Hunter's Mark** in a free global cooldown while the mob has more than 30% of its health, so your hits can light up **Mongoose Bite**.
-7. **Mend Pet** when the pet drops below a third of its health.
+5. **Immolation Trap** at your feet while the mob has more than 40% of its health.
+6. **Mend Pet** when the pet drops below a third of its health.
 
-**Between fights:** Mend the pet below half its health, drink below 60% of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
 
 ## Why this rotation
 

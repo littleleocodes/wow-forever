@@ -1,6 +1,6 @@
 {
  "class": "druid",
- "date": "2026-11-06",
+ "date": "2026-11-07",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -155,6 +155,295 @@
       "Claw": 2.69,
       "Ferocious Bite": 0.98,
       "Rip": 0.1
+     }
+    }
+   }
+  },
+  "Balance": {
+   "build": "opt-balance-dps-leveling-st",
+   "rotation": "balance-dps",
+   "provisional_order": false,
+   "fingerprint": "1bb0bb9ffb65",
+   "levels": {
+    "1": {
+     "seconds": 14.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Wrath": 3.59
+     }
+    },
+    "4": {
+     "seconds": 20.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.51,
+      "Wrath": 5.11
+     }
+    },
+    "10": {
+     "seconds": 28.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.53,
+      "Wrath": 6.2
+     }
+    },
+    "11": {
+     "seconds": 30.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.56,
+      "Wrath": 7.31
+     }
+    },
+    "12": {
+     "seconds": 33.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.65,
+      "Wrath": 8.26
+     }
+    },
+    "19": {
+     "seconds": 37.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 2.16,
+      "Wrath": 9.1
+     }
+    },
+    "20": {
+     "seconds": 36.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 2.12,
+      "Wrath": 9.35
+     }
+    },
+    "29": {
+     "seconds": 48.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 2.48,
+      "Wrath": 12.7
+     }
+    },
+    "30": {
+     "seconds": 42.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.48,
+      "Wrath": 2.08,
+      "Starfire": 3.91
+     }
+    },
+    "39": {
+     "seconds": 46.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.58,
+      "Wrath": 2.38,
+      "Starfire": 4.74
+     }
+    },
+    "40": {
+     "seconds": 44.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.59,
+      "Wrath": 2.31,
+      "Starfire": 4.67
+     }
+    },
+    "45": {
+     "seconds": 40.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.42,
+      "Wrath": 2.07,
+      "Starfire": 4.0,
+      "Regrowth": 0.06
+     }
+    },
+    "46": {
+     "seconds": 40.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.39,
+      "Wrath": 2.02,
+      "Starfire": 4.01
+     }
+    },
+    "50": {
+     "seconds": 37.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.49,
+      "Wrath": 2.1,
+      "Starfire": 4.04
+     }
+    },
+    "60": {
+     "seconds": 31.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.4,
+      "Wrath": 1.85,
+      "Starfire": 3.59
+     }
+    }
+   }
+  },
+  "Restoration": {
+   "build": "restoration-leveling",
+   "rotation": "feral-cat-dps",
+   "provisional_order": true,
+   "fingerprint": "56640a26e7b0",
+   "levels": {
+    "1": {
+     "seconds": 14.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 5.83
+     }
+    },
+    "4": {
+     "seconds": 21.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 12.87
+     }
+    },
+    "9": {
+     "seconds": 37.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 20.41
+     }
+    },
+    "10": {
+     "seconds": 25.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 5.48,
+      "Demoralizing Roar": 1.0,
+      "Maul": 1.91
+     }
+    },
+    "14": {
+     "seconds": 29.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 5.64,
+      "Enrage": 0.47,
+      "Demoralizing Roar": 1.0,
+      "Maul": 2.94,
+      "Bash": 0.11
+     }
+    },
+    "19": {
+     "seconds": 32.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 6.29,
+      "Enrage": 0.5,
+      "Demoralizing Roar": 1.0,
+      "Maul": 3.41,
+      "Bash": 0.15
+     }
+    },
+    "20": {
+     "seconds": 19.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Claw": 3.74,
+      "Melee": 10.64,
+      "Rip": 0.85
+     }
+    },
+    "24": {
+     "seconds": 20.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.19,
+      "Melee": 10.97,
+      "Claw": 3.07,
+      "Ferocious Bite": 0.52
+     }
+    },
+    "30": {
+     "seconds": 24.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.45,
+      "Melee": 14.45,
+      "Claw": 3.7,
+      "Ferocious Bite": 0.64
+     }
+    },
+    "31": {
+     "seconds": 25.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.55,
+      "Melee": 15.04,
+      "Claw": 3.76,
+      "Ferocious Bite": 0.64
+     }
+    },
+    "32": {
+     "seconds": 22.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 12.65,
+      "Rake": 1.29,
+      "Claw": 2.29,
+      "Ferocious Bite": 0.66
+     }
+    },
+    "39": {
+     "seconds": 27.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 16.94,
+      "Rake": 1.62,
+      "Claw": 2.95,
+      "Ferocious Bite": 0.87
+     }
+    },
+    "40": {
+     "seconds": 27.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 17.01,
+      "Rake": 1.68,
+      "Claw": 2.88,
+      "Ferocious Bite": 0.94
+     }
+    },
+    "50": {
+     "seconds": 30.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 18.34,
+      "Rake": 1.79,
+      "Claw": 3.05,
+      "Ferocious Bite": 1.05
+     }
+    },
+    "60": {
+     "seconds": 32.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 21.98,
+      "Rake": 2.14,
+      "Claw": 3.46,
+      "Ferocious Bite": 1.22
      }
     }
    }

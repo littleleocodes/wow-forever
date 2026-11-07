@@ -180,7 +180,8 @@ def check_guides(tree, cls, out):
         mine = TF.search(tree.text(guide))
         if lead and mine and TF.search(lead.group(2)) and TF.search(lead.group(2)).group(2) != mine.group(2):
             out.append(("guide", cls, f"{guide} teaches `{mine.group(2)}`, {page} leads with {lead.group(1)} `{TF.search(lead.group(2)).group(2)}`"))
-        check_keys(tree, cls, g, out)
+        if g is data["guides"][0]:   # the keybinds page is written for the class's first guide; other specs keep their own keys (2026-11-07)
+            check_keys(tree, cls, g, out)
 
 
 def check_keys(tree, cls, g, out):

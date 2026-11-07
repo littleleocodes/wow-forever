@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](fury-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Fury — Leveling](../research/leveling/builds/fury-open-leveling.md)** (18/33/0) — [open the talent tree](https://talentsforever.com/warrior/60/20323213002-050530355010110031--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.

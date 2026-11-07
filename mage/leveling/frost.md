@@ -18,8 +18,8 @@
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, **Fire Blast** it instead (or wand it until it arrives if **Fire Blast** is on cooldown and **Frost Nova** is ready).
-2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health; with both down, **Fire Blast**.
+1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
+2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health.
 3. **Ice Lance** into the freeze whenever it is ready: it has an 8-second cooldown, so one per **Frost Nova**, **Frostbite** freeze or **Fingers of Frost** charge, not a stream of them.
 4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.

@@ -12,7 +12,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 4 | [Beast-Marks](beast-marks.md) 🔬 | 23 | +8% |
 | 5 | [Beast Mastery](beast-mastery.md) 🔬 | 23 | +9% |
 
-**Level by level:** [Beast-Survival](beast-survival-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Beast-Survival](beast-survival-by-level.md), [Beast Mastery](beast-mastery-by-level.md), [Marksmanship](marksmanship-by-level.md), [Survival](survival-by-level.md), [Beast-Marks](beast-marks-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

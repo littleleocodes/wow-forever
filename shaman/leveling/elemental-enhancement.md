@@ -4,11 +4,13 @@
 
 *A Lightning Bolt caster (Lightning Overload) that dips Enhancement for its passive bonuses.* (a hybrid: Elemental/Enhancement).
 
+**Leveling from level 1?** [The rotation level by level](elemental-enhancement-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Elemental-Enhancement — Leveling](../research/leveling/builds/elemental-enhancement-open-leveling.md)** (26/22/3) — [open the talent tree](https://talentsforever.com/shaman/60/520333100301131-054033010400002-03-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Lightning Bolt**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 75% of the damage at level 60 in the fight lab comes from Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock (the spec's rule: at least 50%; **Lightning Bolt** cast in every fight).
 
 ## How to play
 

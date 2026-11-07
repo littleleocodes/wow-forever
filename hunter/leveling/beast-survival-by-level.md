@@ -138,7 +138,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. Send the pet in, then **Serpent Sting** as you walk in behind it.
-2. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
+2. **Immolation Trap** at your feet while the mob has more than 40% of its health.
 3. **Mongoose Bite** when it lights up, after you dodge.
 4. Melee until the mob is dead.
 5. **Raptor Strike** once the mob is below 20% of its health.
@@ -164,7 +164,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. Send the pet in, then **Serpent Sting** as you walk in behind it.
-2. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
+2. **Immolation Trap** at your feet while the mob has more than 40% of its health.
 3. **Mongoose Bite** when it lights up, after you dodge.
 4. Melee until the mob is dead.
 5. **Raptor Strike** once the mob is below 20% of its health.
@@ -192,7 +192,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 1. Send the pet in, then **Serpent Sting** as you walk in behind it.
 2. **Lacerate** while the mob has more than half its health and you have 80% of your mana or more.
-3. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
+3. **Immolation Trap** at your feet while the mob has more than 40% of its health.
 4. **Mongoose Bite** when it lights up, after you dodge.
 5. Melee until the mob is dead.
 6. **Raptor Strike** once the mob is below 20% of its health.
@@ -218,7 +218,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 1. Send the pet in, then **Serpent Sting** as you walk in behind it.
 2. **Lacerate** while the mob has more than half its health and you have 80% of your mana or more.
-3. **Immolation Trap** at your feet while the mob has more than 40% of its health and you have half your mana or more.
+3. **Immolation Trap** at your feet while the mob has more than 40% of its health.
 4. **Mongoose Bite** when it lights up, after you dodge.
 5. Melee until the mob is dead.
 6. **Raptor Strike** once the mob is below 20% of its health.
@@ -232,7 +232,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Between fights
 
-- Mend the pet below half its health, drink below 60% of your mana, eat below two thirds of your health. Feed the pet when it sulks.
+- Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health. Feed the pet when it sulks.
 - Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
 - Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks.
 

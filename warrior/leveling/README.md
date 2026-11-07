@@ -10,7 +10,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 2 | [Arms](arms.md) 🔬 | 25 | +0.7% |
 | 3 | [Protection](protection.md) 🔬 | 28 | +11% |
 
-**Level by level:** [Arms](arms-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Arms](arms-by-level.md), [Fury](fury-by-level.md), [Protection](protection-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

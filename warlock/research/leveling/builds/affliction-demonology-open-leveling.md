@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.4% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
+The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.2% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -84,14 +84,14 @@ The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the o
 
 ## Core talents (priority order)
 
-1. **Siphon Life** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Suppression** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Demonic Knowledge** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Demonic Brand** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Demonic Energies** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Siphon Life** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Demonic Knowledge** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Demonic Brand** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Suppression** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Demonic Energies** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Improved Corruption** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 7. **Improved Life Tap** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Voidwalker** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Pandemic** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -99,7 +99,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.42; demonology-leveling 31.15. The search simulated 34,237 builds.
+- +28.5% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.47; demonology-leveling 31.14. The search simulated 36,200 builds.
+- The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.34 s, leveling-affliction 39.16 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -109,7 +111,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warlock>
-- <https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--7>
+- <https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

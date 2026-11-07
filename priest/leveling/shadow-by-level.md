@@ -34,7 +34,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 1 | The opener cooldown | — | — | — | — | — | **Vampiric Embrace** |
 | 2 | Free | — | — | — | — | — | — |
 | 3 | The emergency heal (not in Shadowform) | — | — | — | **Flash Heal** | Flash Heal | Flash Heal |
-| 4 | The panic heal, on a long cooldown | — | — | **Desperate Prayer** | Desperate Prayer | Desperate Prayer | Desperate Prayer |
+| 4 | The panic heal, on a long cooldown (a Dwarf's spell) | — | — | **Desperate Prayer** | Desperate Prayer | Desperate Prayer | Desperate Prayer |
 | C | Free | — | — | — | — | — | — |
 | Middle mouse | The wand: your filler before 20, the finisher after | **Wand** | Wand | Wand | Wand | Wand | Wand |
 

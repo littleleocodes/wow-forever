@@ -11,7 +11,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Smite](smite.md) 🔬 | 51 | +111% |
 | 4 | [Holy](holy.md) — Leveling into the raid build 🔬 | 56 | +129% |
 
-**Level by level:** [Shadow](shadow-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Shadow](shadow-by-level.md), [Discipline](discipline-by-level.md), [Holy](holy-by-level.md), [Smite](smite-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

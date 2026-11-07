@@ -36,7 +36,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | 1 | Vampiric Embrace (39, talent) | At the pull whenever it is ready |
 | 2 | Free | |
 | 3 | Flash Heal (20) | Below a third of your health, outside Shadowform |
-| 4 | Desperate Prayer (10) | The panic heal, on a long cooldown |
+| 4 | Desperate Prayer (10, Dwarf only) | The panic heal, on a long cooldown; Forever makes it a Dwarf's spell, so other races leave 4 free |
 | C | Free | |
 | Middle mouse | Shoot (wand) | The filler until 20; the finishing hits after |
 

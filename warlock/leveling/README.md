@@ -6,9 +6,14 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Demonology](demonology.md) 🔬 | 31 | fastest |
-| 2 | [Affliction](affliction.md) 🔬 | 36 | +16% |
-| 3 | [Destruction](destruction.md) 🔬 | 41 | +33% |
+| 1 | [Affliction-Demonology](affliction-demonology.md) 🔬 | 30 | fastest |
+| 2 | [Demonology](demonology.md) 🔬 | 31 | +2% |
+| 3 | [Affliction](affliction.md) 🔬 | 36 | +19% |
+| 4 | [Destruction](destruction.md) 🔬 | 41 | +34% |
+
+**Level by level:** [Demonology](demonology-by-level.md), [Affliction](affliction-by-level.md), [Destruction](destruction-by-level.md), [Affliction-Demonology](affliction-demonology-by-level.md) (what to press from level 1 as each spell and talent arrives).
+
+**Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 
 **Macro ideas:** [every spec's macros](../macros.md), with the keys each one frees.
 

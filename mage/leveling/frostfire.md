@@ -4,6 +4,8 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
+**Leveling from level 1?** [The rotation level by level](frostfire-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (3/26/22) — [open the talent tree](https://talentsforever.com/mage/60/201-5550030000003311-2125300301003002-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -16,13 +18,13 @@
 
 **In the fight**, top to bottom:
 
-1. Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
+1. Your bolt: **Frostbolt** until level 40, to the end of the fight; **Frostfire Bolt** from 40, while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
 2. **Frost Nova** when it reaches you, then step back.
 3. **Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).
-4. Below about a third of the mob's health: no bolt, no Fire Blast and no Cone of Cold (the tuned rules switch both off); an **Ice Lance** that will kill, or your wand, finishes it.
+4. From 40, below about a third of the mob's health: no bolt; no Fire Blast and no Cone of Cold at any level (the tuned rules switch both off); an **Ice Lance** that will kill, or your wand, finishes it.
 5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health (the tuned rule).
 
 ## Why this rotation
 

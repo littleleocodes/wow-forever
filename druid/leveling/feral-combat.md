@@ -10,7 +10,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Feral cat), which stays below as the alternative. A model of the beta, to check at launch.
 
-*Signature spells (**Claw**, **Ferocious Bite**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 97% of the damage at level 60 in the fight lab comes from melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite, Ravage, Pounce (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast in every fight).
 
 ## How to play
 

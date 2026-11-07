@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "guides": [
   {
    "spec": "Arms",
@@ -362,6 +362,855 @@
      "No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.",
      "Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.",
      "The single-target rotation never casts **Thunder Clap**, **Cleave** or **Sweeping Strikes**. They are there for a pull that brings friends."
+    ]
+   }
+  },
+  {
+   "spec": "Fury",
+   "intro": "What a Fury warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. Fury fights with a weapon in each hand: two weapons swing more often, and every landed swing gives rage. You stay in Battle Stance from 1 to 60, as Arms does; what Fury adds is Death Wish at 30 and Bloodthirst at 40. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Heroic Strike",
+     "change": "**Heroic Strike** turns rage into a harder next swing.",
+     "press": [
+      "Keep **Battle Shout** up.",
+      "**Heroic Strike** whenever you have the rage for it."
+     ],
+     "notes": [
+      "Stay in **Battle Stance**. The fight lab gives you a one-handed weapon in each hand from level 1. The Forever data here names no level for Dual Wield (in Classic Era the trainer taught it at 20): until you can wield two weapons, fight with a two-hander. The fight lab has not measured that stretch."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Charge and Rend",
+     "change": "**Charge** opens every fight with free rage and a stun. **Rend** is a bleed you apply once.",
+     "press": [
+      "**Charge** to open every fight.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with the rage you have left."
+     ],
+     "notes": [
+      "**Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "Bloodrage, and talents begin",
+     "change": "**Bloodrage** gives you rage before you **Charge**. Talent points start, all in Fury until 42.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with the rage you have left."
+     ],
+     "notes": [
+      "**Defensive Stance**, **Taunt** and **Sunder Armor** (10) are for tanking. Fury levels in **Battle Stance**.",
+      "**Cruelty** (10-14) adds critical strikes. A critical swing gives double rage, so it feeds every button."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Overpower",
+     "change": "**Overpower** lights up when the mob dodges: a cheap hit that cannot be dodged. Keep rage for it.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Keep **Battle Shout** up.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Unbridled Wrath** (15-19) gives extra rage from your white swings, with both hands. Nothing new to press.",
+      "**Shield Bash** (12) and **Revenge** (14) need a shield or Defensive Stance. Skip them. **Tactical Mastery** (14) only matters when you change stance, and Fury never does."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Victory Rush",
+     "change": "**Victory Rush** is a free strike after each kill. Open the next fight with it when you are hurt.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Slam** (20) stays off your bar: this build never takes **Improved Slam**, and plain Slam stops your swings. **Cleave** (20) is for two or more mobs.",
+      "**Enrage** (20-24): more damage for 12 seconds after a mob hits you. Nothing to press. **Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong."
+     ]
+    },
+    {
+     "from": 24,
+     "title": "Execute",
+     "change": "**Execute** finishes a mob below 20% health. From then on it comes first.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Improved Execute** (25) makes **Execute** 3 rage cheaper.",
+      "**Dual Wield Specialization** (26-32) and **Furious Precision** (27, 33-34) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Death Wish",
+     "change": "**Death Wish** (talent): 20% more physical damage for 30 seconds, every 3 minutes. Press it before the Charge whenever it is ready.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health and **Death Wish** when it is ready, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Bloodrage** goes first: **Death Wish** costs 10 rage. It also makes you take 5% more damage while it lasts.",
+      "**Berserker Stance** (30) opens **Berserker Rage** and **Intercept** (30), **Whirlwind** (36) and **Pummel** (38). This rotation stays in **Battle Stance**: the fight lab has not measured the swap.",
+      "**Flurry** (35-37) swings faster after a critical strike, **Blood Craze** (38-39) heals you after a big hit. Nothing new to press."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Bloodthirst, the finished rotation",
+     "change": "**Bloodthirst** (talent): your main attack from here to 60, whenever it is ready.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health and **Death Wish** when it is ready, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Bloodthirst** whenever it is ready.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Gore Drinker** (42): your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** each heal 0.5% of your health.",
+      "From 43 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds**, **Improved Overpower** and **Impale** make the buttons you have better. Nothing new to press.",
+      "Two or more mobs: **Thunder Clap** and **Cleave**."
+     ]
+    }
+   ],
+   "between": [
+    "Bandage when you are below 60% of your health. Keep First Aid trained: it is a warrior's main way to recover.",
+    "Eat when you are below 65% of your health, about two thirds. That is the fight lab's default, and the 2026-11-03 tuning of the Fury rotation kept it.",
+    "Visit the trainer every even level. **Heroic Strike** and **Rend** have many ranks."
+   ],
+   "other": [
+    "Arms with a two-hander, and Protection for a warrior who wants to arrive at 60 as a tank, have their own pages in this folder.",
+    "Several mobs: **Thunder Clap** and **Cleave** in **Battle Stance**. **Whirlwind** needs **Berserker Stance**; the fight lab has not measured Fury fighting there."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the opener macro: the [warrior keybinds page](keybinds.md), laid out for Arms; the notes below say what Fury changes.",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main strike; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Heroic Strike"
+         },
+         {
+          "from": 40,
+          "spell": "Bloodthirst"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Engage: the charge and its stun",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Charge"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The bleed, once per mob",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Rend"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: scatter what is on you",
+        "binds": [
+         {
+          "from": 22,
+          "spell": "Intimidating Shout"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: it lights up after a dodge",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Overpower"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: rage before the charge",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Bloodrage"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "Lights up after a kill",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Victory Rush"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "The finisher below 20%",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Execute"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Stop a mob that runs",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hamstring"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "The long cooldown",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Retaliation"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Spare rage once Bloodthirst has Q",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Heroic Strike"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the clap around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Thunder Clap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Packs: the strike that hits two",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Cleave"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Thumb with Shift: the damage cooldown before the charge",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Death Wish"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Battle Shout"
+    ],
+    "notes": [
+     "These are the Arms keys, so the two specs share muscle memory. Three changes: **Bloodthirst** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C, as **Mortal Strike** does for Arms; **Death Wish** (30) goes on Shift+Mouse 4, the Shift version of the **Bloodrage** key, because you press both before the Charge; Shift+Q and Shift+R stay free, since this build takes neither **Improved Slam** nor **Sweeping Strikes**.",
+     "The pull from 30: Mouse 4 (**Bloodrage**), Shift+Mouse 4 (**Death Wish**, when it is ready), E (**Charge**). **Bloodrage** first, because **Death Wish** costs 10 rage. The [macros page](../macros.md) has a macro that puts the two cooldowns on one key.",
+     "No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.",
+     "Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.",
+     "The single-target rotation never casts **Thunder Clap** or **Cleave**. They are there for a pull that brings friends. **Whirlwind** needs **Berserker Stance** and has no key."
+    ]
+   }
+  },
+  {
+   "spec": "Protection",
+   "intro": "What a Protection warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit; with a shield, blocks give rage too. Protection levels with a one-handed weapon and a shield. From level 10 you fight in Defensive Stance and step into Battle Stance only to Charge. It kills more slowly than Arms (the Protection leveling page has the numbers), but you almost never stop to eat, and you arrive at 60 as a tank. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Heroic Strike, with a shield",
+     "change": "A one-handed weapon and a shield from the start. **Heroic Strike** is for the end of the fight.",
+     "press": [
+      "Keep **Battle Shout** up.",
+      "**Heroic Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "You start in **Battle Stance**; **Defensive Stance** comes at 10.",
+      "This rotation's tuned rule (2026-11-06) holds **Heroic Strike** until the mob is below 20% of its health, at every level: before that the rage is worth more on your other attacks. At 1-3 that means: let the rage build, then spend it at the end."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Charge and Rend",
+     "change": "**Charge** opens every fight with free rage and a stun. **Rend** is a bleed you apply once.",
+     "press": [
+      "**Charge** to open every fight.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, while the mob has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "**Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away, in **Battle Stance** only."
+     ]
+    },
+    {
+     "from": 10,
+     "title": "Defensive Stance: charge, then swap",
+     "change": "**Defensive Stance**: you take 10% less damage (and deal 10% less) and fight there. **Charge** still needs **Battle Stance**, so every pull starts with a swap.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "**Rend** if you have the rage, then **Defensive Stance**. Until 14 a stance change loses all your rage, so spend it first.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "Press **Bloodrage** after the swap to **Battle Stance**, not before: a stance change keeps none of your rage until 14, and 10 of it after. Its second 10 rage comes over 10 seconds, in **Defensive Stance** too.",
+      "**Iron Will** (10) and **Improved Bloodrage** (11-12): nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Shield Bash",
+     "change": "**Shield Bash** interrupts a caster and locks that school of spells for 6 seconds.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "**Rend** if you have the rage, then **Defensive Stance**. Until 14 a stance change loses all your rage, so spend it first.",
+      "**Shield Bash** a mob that is casting.",
+      "Keep **Battle Shout** up.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health."
+     ],
+     "notes": [
+      "**Shield Specialization** (13-14, 17-19): more blocks, and rage from each block. Nothing new to press."
+     ]
+    },
+    {
+     "from": 14,
+     "title": "Revenge and Tactical Mastery",
+     "change": "**Revenge** lights up after you block, dodge or parry: cheap and hard-hitting. **Tactical Mastery** keeps 10 rage through a stance change.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Above 10 rage: **Rend**. Then **Defensive Stance**, which keeps the first 10.",
+      "**Shield Bash** a mob that is casting.",
+      "Keep **Battle Shout** up.",
+      "**Revenge** whenever it lights up.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+     ],
+     "notes": [
+      "**Revenge** works in **Defensive Stance** only. **Demoralizing Shout** (14) is for two or more mobs.",
+      "**Anticipation** (15-16) raises your Defense: more dodges, parries and blocks, so more **Revenge**."
+     ]
+    },
+    {
+     "from": 16,
+     "title": "Shield Block",
+     "change": "**Shield Block**: 75% more chance to block for 7 seconds or 2 blocks. Each block opens **Revenge** and gives rage.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Above 10 rage: **Rend**. Then **Defensive Stance**, which keeps the first 10.",
+      "**Shield Bash** a mob that is casting.",
+      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "Keep **Battle Shout** up.",
+      "**Revenge** whenever it lights up.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+     ],
+     "notes": [
+      "**Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (25-26): rage from your dodges and parries. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.",
+      "**Victory Rush** (20, key 1) lights up after a kill: open the next fight with it when you are below 90% of your health. The fight lab rarely needs it before 33 (with the shield you seldom end a fight below 90%), so the list leaves it out until then.",
+      "**Retaliation** (20) needs **Battle Stance**. Skip it. For a pull that goes wrong: **Intimidating Shout** (22, F) and **Shield Wall** (28, key 4: 60% less damage for 12 seconds, a 15-minute cooldown)."
+     ]
+    },
+    {
+     "from": 33,
+     "title": "Concussion Blow",
+     "change": "**Concussion Blow** (talent): a 5-second stun, your emergency button below half your health.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Above 10 rage: **Rend**. Then **Defensive Stance**, which keeps the first 10.",
+      "**Shield Bash** a mob that is casting.",
+      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "Keep **Battle Shout** up.",
+      "Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "**Revenge** whenever it lights up.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+     ],
+     "if_hurt": "Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.",
+     "notes": [
+      "**Bastion** (35-39): 10% more damage of every kind while you hold a shield. Nothing new to press."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Shield Slam, the finished rotation",
+     "change": "**Shield Slam** (talent): your main attack from here to 60, whenever it is ready. It works in both stances.",
+     "press": [
+      "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
+      "Above 10 rage: **Shield Slam**, then **Rend**. Then **Defensive Stance**, which keeps the first 10.",
+      "**Shield Bash** a mob that is casting.",
+      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "Keep **Battle Shout** up.",
+      "Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "**Revenge** whenever it lights up, then **Shield Slam** whenever it is ready.",
+      "**Rend** once, if the mob has none yet and has more than half its health.",
+      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge** and the next **Shield Slam**."
+     ],
+     "if_hurt": "Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.",
+     "notes": [
+      "From 42 the points leave Protection: **Cruelty** (43-47) for critical strikes, **Unbridled Wrath** (48-51) for rage, **Enrage** (55-59) for damage after a mob hits you, **Improved Rend** (42, 53-54) and **Booming Voice** (52, 60) for a cheaper **Battle Shout**.",
+      "Two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**."
+     ]
+    }
+   ],
+   "between": [
+    "Bandage when you are below 60% of your health and eat below 65%: the fight lab's defaults, which the 2026-11-06 tuning of this rotation did not change. With the shield you rarely need either.",
+    "Visit the trainer every even level. **Revenge**, **Rend** and **Heroic Strike** have many ranks."
+   ],
+   "other": [
+    "Arms with a two-hander and Fury with a weapon in each hand kill faster and have their own pages in this folder. Protection is for arriving at 60 as a tank, and for tanking dungeons on the way.",
+    "**Vanguard**, a Protection talent this build does not take, lets **Charge** work in **Defensive Stance**: with it the swap goes away.",
+    "Two or three mobs: open with **Demoralizing Shout** and **Thunder Clap**, and use **Cleave** for spare rage. On pulls of 3 the fight lab measured fewer deaths with **Demoralizing Shout**."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. A warrior's bar 1 is one bar per stance: WoW shows the Battle Stance bar while you are in Battle Stance and the Defensive Stance bar while you are in Defensive Stance, so the tables below give bar 1 once per stance; bar 2 stays the same in every stance. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the opener macro: the [warrior keybinds page](keybinds.md), laid out for Arms; the notes below say what Protection changes.",
+    "bars": [
+     {
+      "title": "Action bar 1 in Battle Stance (levels 1-9; from 10, the first seconds of each pull)",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main strike; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Heroic Strike"
+         },
+         {
+          "from": 40,
+          "spell": "Shield Slam"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Engage: the charge and its stun",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Charge"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The bleed, once per mob",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Rend"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: scatter what is on you",
+        "binds": [
+         {
+          "from": 22,
+          "spell": "Intimidating Shout"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb: back into Defensive Stance once the charge is done",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Defensive Stance"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: rage before the charge",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Bloodrage"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "Lights up after a kill",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Victory Rush"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "3",
+        "role": "Stop a mob that runs",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hamstring"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 1 in Defensive Stance (from 10; WoW swaps the bar when you change stance)",
+      "slots": [
+       {
+        "key": "Q (defensive)",
+        "role": "Your main strike; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Heroic Strike"
+         },
+         {
+          "from": 40,
+          "spell": "Shield Slam"
+         }
+        ]
+       },
+       {
+        "key": "E (defensive)",
+        "role": "Engage: into Battle Stance, then E again is the charge",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Battle Stance"
+         }
+        ]
+       },
+       {
+        "key": "R (defensive)",
+        "role": "The bleed, once per mob",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Rend"
+         }
+        ]
+       },
+       {
+        "key": "F (defensive)",
+        "role": "Escape: scatter what is on you",
+        "binds": [
+         {
+          "from": 22,
+          "spell": "Intimidating Shout"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5 (defensive)",
+        "role": "Thumb reaction: it lights up after a block, dodge or parry",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Revenge"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4 (defensive)",
+        "role": "Thumb: block while the mob hits you",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Shield Block"
+         }
+        ]
+       },
+       {
+        "key": "1 (defensive)",
+        "role": "Lights up after a kill",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Victory Rush"
+         }
+        ]
+       },
+       {
+        "key": "2 (defensive)",
+        "role": "The stun below half your health",
+        "binds": [
+         {
+          "from": 33,
+          "spell": "Concussion Blow"
+         }
+        ]
+       },
+       {
+        "key": "3 (defensive)",
+        "role": "Stop a caster",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Shield Bash"
+         }
+        ]
+       },
+       {
+        "key": "4 (defensive)",
+        "role": "The long cooldown",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Shield Wall"
+         }
+        ]
+       },
+       {
+        "key": "C (defensive)",
+        "role": "The rage dump below 20% once Shield Slam has Q",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Heroic Strike"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse (defensive)",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift, in every stance",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the clap around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Thunder Clap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: the shout that weakens their hits",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Demoralizing Shout"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Packs: the strike that hits two",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Cleave"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Groups: a mob goes for someone else",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Taunt"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Battle Shout"
+    ],
+    "notes": [
+     "Bar 1 is two bars from level 10: set up the Defensive Stance bar the first time you enter the stance. A key keeps its job on both: Q strikes, E engages, R bleeds, F escapes.",
+     "Every pull from 10: E (**Battle Stance**), Mouse 4 (**Bloodrage**), E again (**Charge**, on the bar you now see), R (**Rend**; from 40 Q, **Shield Slam**) while you have the rage, Mouse 5 (**Defensive Stance**). The fight then runs on the Defensive Stance bar: Mouse 4 **Shield Block**, Mouse 5 **Revenge**, Q **Shield Slam** from 40.",
+     "What changes from the Arms keys: on the Defensive Stance bar the thumbs hold the shield's reactions, **Revenge** where Arms has **Overpower** and **Shield Block** where Arms has **Bloodrage** (which stays on the Battle Stance bar, where you press it); 2, 3 and 4 hold **Concussion Blow**, **Shield Bash** and **Shield Wall**, because **Execute**, **Hamstring** and **Retaliation** need Battle Stance. On the Battle Stance bar, Mouse 5 takes **Defensive Stance** and 2, 4 and C stay free. On bar 2, Shift+R takes **Demoralizing Shout** and Shift+Mouse 4 **Taunt**; Shift+Q stays free.",
+     "Q is the macro from the [keybinds page](keybinds.md) on both stance bars: it starts your swings. This rotation presses **Heroic Strike** only below 20% of the mob's health, so before 40 press Q to start swinging and then only at the end of the fight. At 40 change the macro's two names to **Shield Slam**; plain **Heroic Strike** goes to C on the Defensive Stance bar. The [macros page](../macros.md) has a macro that puts the swap and **Charge** on one key, and one that adds **Shield Block** to Q.",
+     "A mob that runs: E (**Battle Stance**), then 3 (**Hamstring**), which needs Battle Stance.",
+     "No key: **Battle Shout** (3 minutes: click it between fights), food, bandages, the mount and the Hearthstone.",
+     "The single-target rotation never casts **Thunder Clap**, **Demoralizing Shout** or **Cleave**. They are there for a pull that brings friends. **Taunt** is for a group."
     ]
    }
   }

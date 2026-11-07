@@ -18,7 +18,7 @@
 
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| [Enhancement](enhancement.md) | 773 | 786 |
+| [Enhancement](enhancement.md) | 985 | 1021 |
 | [Elemental](elemental.md) | 755 | 778 |
 | [Elemental-Enhancement](elemental-enhancement.md) | 726 | 755 |
 

@@ -2,6 +2,8 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Assassination
 
+**Leveling from level 1?** [The rotation level by level](assassination-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Assassination — Leveling](../research/leveling/builds/assassination-open-leveling.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/02530021211451031-30232300020122--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Assassination with Combat's weapon talents). A model of the beta, to check at launch.

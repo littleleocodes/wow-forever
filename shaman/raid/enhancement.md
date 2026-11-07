@@ -66,16 +66,14 @@ Enhancement is a melee spec that spends mana: your two-hander and **Windfury Wea
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 997 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 773 | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-12) |
-| Phase 1 BiS | 786 | [17/31/3](https://talentsforever.com/shaman/60/053303102-053030310051002251-03-12) (ties this build) |
+| Pre-BiS | 985 | [17/31/3](https://talentsforever.com/shaman/60/253103102-053030310051002251-03-12) |
+| Phase 1 BiS | 1021 | [17/31/3](https://talentsforever.com/shaman/60/153203102-053030310051002251-03-12) |
 
-*From the previous search run (searched 2026-11-02); a new run is under way and will replace these numbers and the gear.*
-
-**The gear** (average item level: Pre-BiS 62.0; Phase 1 BiS 63.6; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.1; Phase 1 BiS 62.9; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|

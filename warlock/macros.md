@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars.
+- **Frees:** nothing: this fills a free key, Shift+C on your bars (C holds your Healthstone).
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+C on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+X on your bars. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 
@@ -54,7 +54,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 
 ## Affliction
 
-Leveling and raid. No keybinds page yet: the warlock's results are still running, so keys below are by job.
+Leveling and raid. The keys below are those of the [keybinds page](leveling/keybinds.md).
 
 ### Every dot on one key
 
@@ -64,9 +64,9 @@ Leveling and raid. No keybinds page yet: the warlock's results are still running
 /castsequence reset=target Corruption, Bane of Agony, Siphon Life
 ```
 
-- **Replaces:** Your Corruption, Bane of Agony and Siphon Life keys, and the pet attack key.
-- **Frees:** Three keys.
-- **Fill it with:** Fear, Death Coil and Drain Life, the keys for when a mob reaches you.
+- **Replaces:** The pull macro on Mouse 4, Bane of Agony on 1 and Siphon Life on 3.
+- **Frees:** Keys 1 and 3.
+- **Fill it with:** Nothing needed: Fear, Drain Life and Death Coil, the keys for when a mob reaches you, already sit on E, R and F.
 - **Why it works:** One press each: three presses put every dot up, and the pet goes in with the first. The sequence loops, so stop pressing once they are up. Before you learn Siphon Life, drop it from the list.
 
 ### Amplified curse
@@ -77,9 +77,9 @@ Leveling and raid. No keybinds page yet: the warlock's results are still running
 /cast Bane of Agony
 ```
 
-- **Replaces:** Amplify Curse's key.
-- **Frees:** One key.
-- **Fill it with:** Life Tap.
+- **Replaces:** Plain Bane of Agony on 1: the keybinds page puts this macro there once you have the talent.
+- **Frees:** The key Amplify Curse would need of its own.
+- **Fill it with:** Nothing: Life Tap already has 4.
 - **Why it works:** Amplify Curse is off the global cooldown.
 
 ### A wand that never turns itself off
@@ -106,9 +106,9 @@ Demon builds.
 /cast Summon Voidwalker
 ```
 
-- **Replaces:** Fel Domination and the summon key.
-- **Frees:** One key.
-- **Fill it with:** Health Funnel.
+- **Replaces:** Clicking Fel Domination and the summon on your side bar.
+- **Frees:** Nothing on your bars: summons have no key. Put it on the side bar, or on a free Shift key if you summon in a fight.
+- **Fill it with:** Nothing: Health Funnel already has Shift+R.
 - **Why it works:** Fel Domination is off the global cooldown and makes the next summon fast. Swap the demon's name as you like.
 
 ### Dots and the brand
@@ -119,10 +119,10 @@ Demon builds.
 /cast Searing Pain
 ```
 
-- **Replaces:** The Searing Pain key, and the pet attack key.
-- **Frees:** One key.
-- **Fill it with:** Fear.
-- **Why it works:** With Demonic Brand, Searing Pain is your opener, so the pet goes in with it.
+- **Replaces:** Searing Pain on Mouse 5, if you would rather send the pet with the brand than with the Corruption pull on Mouse 4.
+- **Frees:** Nothing: the pull macro on Mouse 4 already sends the pet.
+- **Fill it with:** Nothing: Fear has E.
+- **Why it works:** The pet goes in with your Searing Pain. The fight lab opens with Corruption instead (the pull macro on Mouse 4), so this is for players who would rather open with the brand.
 
 ### A wand that never turns itself off
 
@@ -147,9 +147,9 @@ Immolate and Conflagrate.
 /castsequence reset=target Immolate, Conflagrate
 ```
 
-- **Replaces:** The Immolate and Conflagrate keys.
-- **Frees:** One key.
-- **Fill it with:** Shadowburn, right next to it.
+- **Replaces:** Immolate on 2 and Conflagrate on R.
+- **Frees:** Key 2.
+- **Fill it with:** Nothing needed: Shadowburn already sits on Mouse 5.
 - **Why it works:** First press burns the mob, the next one consumes or refreshes it, depending on your talents. On a new target it starts over.
 
 ### Pet and fire
@@ -160,9 +160,9 @@ Immolate and Conflagrate.
 /cast Immolate
 ```
 
-- **Replaces:** The Immolate key, and the pet attack key.
-- **Frees:** One key.
-- **Fill it with:** Fear.
+- **Replaces:** Immolate on 2. The keybinds page's Destruction pull macro on Mouse 4 opens with Shadow Bolt instead, as the fight lab does from level 10.
+- **Frees:** Key 2, if you pull with this macro.
+- **Fill it with:** Nothing: Fear has E.
 - **Why it works:** The pet goes in with your opener.
 
 ### A wand that never turns itself off

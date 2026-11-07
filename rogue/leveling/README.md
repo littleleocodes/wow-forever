@@ -11,7 +11,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Assassination](assassination.md) 🔬 | 22 | +8% |
 | 4 | [Subtlety](subtlety.md) 🔬 | 22 | +9% |
 
-**Level by level:** [Combat](combat-by-level.md) (what to press from level 1 as each spell and talent arrives).
+**Level by level:** [Combat](combat-by-level.md), [Assassination](assassination-by-level.md), [Subtlety](subtlety-by-level.md), [Combat-Subtlety](combat-subtlety-by-level.md) (what to press from level 1 as each spell and talent arrives).
 
 **Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
 

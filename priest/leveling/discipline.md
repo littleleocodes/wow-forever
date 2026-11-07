@@ -2,11 +2,13 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > Discipline
 
+**Leveling from level 1?** [The rotation level by level](discipline-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Discipline — Leveling](../research/leveling/builds/discipline-open-leveling.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/priest/60/525020231133201--42522000020301-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Penance**, **Smite**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 46% of the damage at level 60 in the fight lab comes from Penance, Smite, Holy Fire, Mind Blast (the spec's rule: at least 40%; **Penance**, **Smite** cast in every fight).
 
 **Leveling as Discipline or as Shadow?** This build takes 41 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 24 s: Discipline is about 1.7 times as slow. Your first Discipline point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 

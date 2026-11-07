@@ -4,6 +4,8 @@
 
 *Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents.* (a hybrid: Beast Mastery/Marksmanship).
 
+**Leveling from level 1?** [The rotation level by level](beast-marks-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/19/4) — [open the talent tree](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -25,7 +27,7 @@
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
 6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
 
 ## Why this rotation
 

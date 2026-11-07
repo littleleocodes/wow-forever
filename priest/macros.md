@@ -188,5 +188,5 @@ The Holy Fire and Smite damage build.
 
 - **Replaces:** The Holy Fire and Shadow Word: Pain keys, at the pull.
 - **Frees:** Two keys.
-- **Fill it with:** Penance and Mind Blast.
-- **Why it works:** Each press casts the next spell, then Smite repeats. It stays on Smite for the rest of the mob. Press Penance and Mind Blast on their own when ready.
+- **Fill it with:** Mind Blast and Renew (the Smite build has no Penance).
+- **Why it works:** Each press casts the next spell, then Smite repeats. It stays on Smite for the rest of the mob. Press Mind Blast on its own when ready.

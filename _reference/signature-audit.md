@@ -10,35 +10,35 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 |---|---|---|---|---|---|---|---|---|
 | Balance | page | opt-balance-dps-leveling-st (36/0/15) | balance-dps | - | Starfire 3.62, Moonfire 1.47 | 97% (min 70%) | 38.0 | OK |
 | Balance | slot | balance-open-leveling (36/0/15) | balance-dps | - | Starfire 3.62, Moonfire 1.44 | 97% (min 70%) | 37.5 | OK |
-| Feral Combat | page | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 2.68, Ferocious Bite 0.99 | 97% (min 80%) | 23.1 | OK |
+| Feral Combat | page | feral-combat-open-leveling (11/29/11) | feral-cat-dps | - | Claw 2.71, Ferocious Bite 1.00 | 97% (min 80%) | 23.0 | OK |
+| Feral Combat | slot | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 2.68, Ferocious Bite 0.99 | 97% (min 80%) | 23.1 | OK |
 | Feral Combat | slot | opt-feral-cat-dps-leveling-st (9/30/12) | feral-cat-dps | - | Claw 2.67, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
 | Feral Combat | slot | leveling-feral (9/30/12) | feral-cat-dps | - | Claw 2.75, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
 | Restoration | page | restoration-leveling (11/4/36) | feral-cat-dps | - | - | - (min -) | 28.4 | no rule |
-| Balance/Feral Combat hybrid | page | cat-split-open-leveling (11/29/11) | feral-cat-dps | - | - | - (min -) | 23.0 | no rule |
 
 ## Hunter
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Beast Mastery | page | beast-mastery-open-leveling (31/20/0) | bm-leveling | - | Bestial Wrath 0.20 | 36% (min 30%) | 23.0 | FAIL: Bestial Wrath taken at 56 (its tree allows 40) |
+| Beast Mastery | page | beast-mastery-open-leveling (31/16/4) | bm-leveling | - | Bestial Wrath 0.20 | 34% (min 30%) | 23.1 | OK |
 | Beast Mastery | slot | beast-mastery-leveling (30/21/0) | bm-leveling | - | Bestial Wrath 0.00 | 33% (min 30%) | 22.9 | FAIL: lacks Bestial Wrath |
 | Beast Mastery | slot | bm-solo-farm (31/20/0) | bm-leveling | - | Bestial Wrath 0.20 | 36% (min 30%) | 23.4 | OK |
 | Marksmanship | page | marksmanship-open-leveling (21/30/0) | mm-raid | - | Aimed Shot 1.06 | 72% (min 60%) | 22.6 | OK |
 | Marksmanship | slot | opt-bm-leveling-solo-60 (20/31/0) | mm-raid | - | Aimed Shot 1.08 | 72% (min 60%) | 22.8 | OK |
 | Marksmanship | slot | opt-mm-raid-leveling-st (13/33/5) | mm-raid | - | Aimed Shot 1.07 | 74% (min 60%) | 23.2 | OK |
-| Survival | page | opt-bm-leveling-leveling-aoe (8/12/31) | melee-dps | - | - | 57% (min 50%) | 24.6 | OK |
+| Survival | page | survival-open-leveling (5/16/30) | melee-dps | - | - | 58% (min 50%) | 21.6 | OK |
+| Survival | slot | opt-bm-leveling-leveling-aoe (8/12/31) | melee-dps | - | - | 57% (min 50%) | 24.6 | OK |
 | Beast-Marks | page | beast-marks-open-leveling (28/19/4) | bm-leveling | - | Aimed Shot 1.26 | 98% (min 70%) | 22.8 | OK |
 | Beast-Survival | page | beast-survival-open-leveling (22/5/24) | melee-dps | - | - | 59% (min 50%) | 21.2 | OK |
 | Beast-Survival | slot | opt-melee-dps-leveling-st (15/10/26) | melee-dps | - | - | 62% (min 50%) | 22.5 | OK |
 | Beast-Survival | slot | leveling-melee (12/10/29) | melee-dps | - | - | 63% (min 50%) | 22.6 | OK |
 | Beast-Survival | slot | opt-melee-dps-solo-60 (15/10/26) | melee-dps | - | - | 62% (min 50%) | 22.5 | OK |
-| Beast Mastery | default | beast-mastery-open-leveling (31/20/0) | bm-leveling (no rules) | - | Bestial Wrath 0.20 | 41% (min 30%) | 24.7 | FAIL: Bestial Wrath taken at 56 (its tree allows 40) |
 
 ## Mage
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arcane | page | arcane-open-leveling (30/0/21) | arcane-leveling | - | Arcane Blast 1.79 | 79% (min 50%) | 31.0 | FAIL: Arcane Blast taken at 24 (its tree allows 20) |
+| Arcane | page | arcane-open-leveling (30/0/21) | arcane-leveling | - | Arcane Blast 1.80 | 80% (min 50%) | 31.2 | OK |
 | Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 67% (min 50%) | 38.6 | FAIL: lacks Arcane Blast |
 | Fire | page | fire-leveling (0/32/19) | fire-leveling | - | Fireball 0.91, Pyroblast 1.00 | 70% (min 60%) | 38.3 | OK |
 | Fire | slot | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.29, Pyroblast 1.02 | 76% (min 60%) | 39.6 | OK |
@@ -47,7 +47,6 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.41 | 88% (min 60%) | 35.7 | OK |
 | Arcane-Frost | page | arcane-frost-open-leveling (23/0/28) | barrage-frost-leveling | - | Frostbolt 2.60, Arcane Missiles 0.48 | 90% (min 60%) | 29.2 | OK |
 | Frostfire | page | frostfire-open-leveling (3/26/22) | frostfire-leveling | - | Frostfire Bolt 3.13 | 37% (min 30%) | 36.1 | OK |
-| Arcane | default | arcane-open-leveling (30/0/21) | arcane-leveling (no rules) | - | Arcane Blast 1.78 | 76% (min 50%) | 31.9 | FAIL: Arcane Blast taken at 24 (its tree allows 20) |
 
 ## Paladin
 
@@ -55,19 +54,18 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 |---|---|---|---|---|---|---|---|---|
 | Holy | page | holy-leveling (30/16/5) | holy-leveling | - | Holy Shock 0.00 | 73% (min 60%) | 34.9 | FAIL: lacks Holy Shock |
 | Protection | page | protection-leveling (0/34/17) | prot-leveling | - | Holy Shield 2.12 | 76% (min 60%) | 29.8 | OK |
-| Retribution | page | leveling-retribution (12/9/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 26.5 | OK |
-| Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 26.5 | OK |
-| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (21/16/14) | holy-leveling | - | - | - (min -) | 29.5 | no rule |
-| Prot-Ret | page | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.32 | 100% (min 60%) | 25.9 | OK |
-| Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.93 | 100% (min 60%) | 26.9 | OK |
-| Prot-Ret | slot | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.31 | 100% (min 60%) | 27.4 | OK |
-| Holy | default | holy-leveling (30/16/5) | holy-leveling (no rules) | - | Holy Shock 0.00 | 73% (min 60%) | 35.2 | FAIL: lacks Holy Shock |
+| Retribution | page | leveling-retribution (12/9/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 28.0 | OK |
+| Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.94 | 100% (min 60%) | 28.0 | OK |
+| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (13/25/13) | prot-leveling | - | - | - (min -) | 30.8 | no rule |
+| Prot-Ret | page | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.27 | 100% (min 60%) | 27.2 | OK |
+| Prot-Ret | slot | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.32 | 100% (min 60%) | 27.7 | OK |
+| Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.93 | 100% (min 60%) | 28.1 | OK |
 
 ## Priest
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Discipline | page | discipline-open-leveling (30/0/21) | discipline-leveling | - | Penance 1.00, Smite 1.23 | 46% (min 40%) | 39.7 | FAIL: Penance taken at 51 (its tree allows 30) |
+| Discipline | page | discipline-open-leveling (30/0/21) | discipline-leveling | - | Penance 1.00, Smite 1.23 | 46% (min 40%) | 41.4 | OK |
 | Discipline | slot | discipline-leveling (30/21/0) | discipline-leveling | - | Penance 1.03, Smite 1.24 | 44% (min 40%) | 46.3 | FAIL: Penance taken at 33 (its tree allows 30) |
 | Holy | page | holy-leveling (22/29/0) | holy-leveling | - | Smite 4.19, Holy Fire 1.55 | 41% (min 40%) | 56.1 | OK |
 | Shadow | page | shadow-open-leveling (13/3/35) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.93, Mind Flay 2.09 | 84% (min 60%) | 24.5 | OK |
@@ -76,7 +74,6 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Shadow | slot | opt-shadow-dps-leveling-aoe (20/0/31) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.27, Mind Flay 2.72 | 82% (min 60%) | 28.6 | OK |
 | Shadow | slot | opt-shadow-dps-leveling-st (16/2/33) | shadow-dps | - | Shadow Word: Pain 1.00, Mind Blast 1.20, Mind Flay 2.64 | 82% (min 60%) | 33.0 | OK |
 | Smite | page | smite-open-leveling (22/21/8) | holy-leveling | - | Smite 6.02, Holy Fire 1.39 | 56% (min 50%) | 51.7 | OK |
-| Discipline | default | discipline-open-leveling (30/0/21) | discipline-leveling (no rules) | - | Penance 1.05, Smite 2.57 | 58% (min 40%) | 52.6 | FAIL: Penance taken at 51 (its tree allows 30) |
 
 ## Rogue
 
@@ -99,7 +96,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Enhancement | page | enhancement-open-leveling (12/32/7) | enhancement-dps | - | Stormstrike 2.34 | 74% (min 60%) | 25.1 | OK |
 | Enhancement | slot | leveling-enhancement (7/34/10) | enhancement-dps | - | Stormstrike 2.36 | 76% (min 60%) | 25.8 | OK |
 | Enhancement | slot | opt-enhancement-dps-leveling-st (12/31/8) | enhancement-dps | - | Stormstrike 2.40 | 82% (min 60%) | 26.6 | OK |
-| Enhancement | slot | opt-enhancement-dps-solo-60 (12/31/8) | enhancement-dps | - | Stormstrike 2.40 | 82% (min 60%) | 25.7 | OK |
+| Enhancement | slot | opt-enhancement-dps-solo-60 (12/31/8) | enhancement-dps | - | Stormstrike 2.40 | 82% (min 60%) | 26.6 | OK |
 | Restoration | page | restoration-leveling (0/10/41) | enhancement-dps | - | - | - (min -) | 37.9 | no rule |
 | Elemental-Enhancement | page | elemental-enhancement-open-leveling (26/22/3) | elemental-dps | - | Lightning Bolt 3.41 | 75% (min 50%) | 29.5 | OK |
 | Elemental-Enhancement | slot | opt-elemental-dps-leveling-st (26/17/8) | elemental-dps | - | Lightning Bolt 3.96 | 79% (min 50%) | 30.0 | OK |
@@ -111,15 +108,12 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 |---|---|---|---|---|---|---|---|---|
 | Affliction | page | affliction-open-leveling (37/14/0) | affliction-leveling | - | Corruption 1.00, Bane of Agony 1.00 | 82% (min 50%) | 36.4 | OK |
 | Affliction | slot | affliction-leveling (33/6/12) | affliction-leveling | - | Corruption 1.05, Bane of Agony 1.00 | 56% (min 50%) | 39.8 | OK |
-| Demonology | page | demonology-leveling (21/30/0) | affliction-leveling | - | - | 12% (min 0%) | 39.4 | OK |
-| Destruction | page | destruction-leveling (21/0/30) | affliction-leveling | - | - | 21% (min 60%) | 41.6 | FAIL: core share 21% < 60% |
-| Destruction | slot | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 81% (min 60%) | 45.7 | OK |
-| Affliction-Demonology | page | leveling-affliction (23/26/2) | demonology-leveling | - | Corruption 1.24 | 68% (min 50%) | 32.8 | OK |
-| Affliction-Demonology | slot | opt-affliction-leveling-leveling-st (27/24/0) | demonology-leveling | - | Corruption 1.12 | 68% (min 50%) | 32.8 | OK |
+| Demonology | page | demonology-leveling (21/30/0) | demonology-leveling | - | - | 21% (min 0%) | 31.2 | OK |
+| Destruction | page | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 65% (min 60%) | 40.8 | OK |
+| Destruction | slot | destruction-leveling (21/0/30) | destruction-leveling | - | - | 47% (min 60%) | 48.4 | FAIL: core share 47% < 60% |
+| Affliction-Demonology | page | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.06 | 72% (min 50%) | 30.6 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-solo-60 (27/24/0) | demonology-leveling | - | Corruption 1.12 | 68% (min 50%) | 32.8 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-leveling-aoe (21/24/6) | demonology-leveling | - | Corruption 1.28 | 70% (min 50%) | 33.6 | OK |
-| Affliction-Demonology | slot | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.06 | 72% (min 50%) | 30.7 | OK |
-| Demonology/Destruction hybrid | page | hybrid-demonology-destruction-open-leveling (5/24/22) | demonology-leveling | - | - | - (min -) | 34.1 | no rule |
 
 ## Warrior
 

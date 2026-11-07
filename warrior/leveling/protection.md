@@ -2,6 +2,8 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > Protection
 
+**Leveling from level 1?** [The rotation level by level](protection-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Protection — Leveling](../research/leveling/builds/protection-open-leveling.md)** (3/16/32) — [open the talent tree](https://talentsforever.com/warrior/60/003-25040005-251232021300101351-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -25,7 +27,7 @@
 5. **Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.
 6. **Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.
 7. **Rend** once, while the mob has more than half its health.
-8. **Heroic Strike** with spare rage, keeping enough for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
+8. **Heroic Strike** only once the mob is below 20% of its health (the tuned rule), keeping enough rage for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
 
 **Between fights:** You rarely need to eat or bandage: the shield soaks most of the damage.
 

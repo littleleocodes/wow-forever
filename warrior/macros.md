@@ -94,9 +94,9 @@ Leveling and raid.
 /cast Bloodthirst
 ```
 
-- **Replaces:** Q, and Attack on Middle mouse.
-- **Frees:** Middle mouse.
-- **Fill it with:** Nothing needs it. Death Wish fits there if you want the cooldown off a number key.
+- **Replaces:** Bloodthirst on Q from 40 (the opening key holds a start-attack macro, so no key needs Attack).
+- **Frees:** nothing.
+- **Fill it with:** nothing needed.
 - **Why it works:** The same idea as the Arms and Holy Strike macros.
 
 ### Whirlwind from any stance

@@ -2,6 +2,8 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Holy
 
+**Leveling from level 1?** [The rotation level by level](holy-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Holy — Leveling into the raid build](../research/leveling/builds/holy-leveling.md)** (30/16/5) — [open the talent tree](https://talentsforever.com/paladin/60/1532321520100005-353111001001-05-12)
 
 > 🔬 These are your **raid talents** ([Holy — Raid healing](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 36 s per kill; stats model's order: 36 s per kill; own tree last: 36 s per kill). A model of the beta, to check at launch.

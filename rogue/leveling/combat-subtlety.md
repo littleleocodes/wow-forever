@@ -6,6 +6,8 @@
 
 **✅ Recommended** for leveling (the best rogue spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](combat-subtlety-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
@@ -20,11 +22,11 @@
 
 **In the fight**, top to bottom:
 
-1. Open with **Ambush**; once fights last long enough for its bleed to pay (the Subtlety build from about level 40), **Garrote** instead.
+1. Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (the fight lab picks it from about level 22 with these builds).
 2. **Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.
 3. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.
 4. **Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.
-5. Once you have **Death Mark** (level 40): at 5 points, **Death Mark** instead of **Eviscerate** while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.
+5. Once you have **Death Mark** (level 40): press it whenever it is ready, from one combo point on (the tuned rule), while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.
 6. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
 7. **Riposte** after you parry.
 8. **Kick** a caster mob's spell.

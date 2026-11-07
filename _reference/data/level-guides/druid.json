@@ -642,6 +642,1042 @@
      "Levels 1-9 fight with Q and R on the caster bar: right-click the mob to start swinging. From 10, Q on each form's bar is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free."
     ]
    }
+  },
+  {
+   "spec": "Balance",
+   "intro": "What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Regrowth** from range from 12, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Wrath",
+     "change": "**Wrath** is your only attack.",
+     "press": [
+      "**Wrath** until the mob is dead.",
+      "Keep casting when it reaches you: its hits push each cast back a little."
+     ],
+     "if_hurt": "**Healing Touch** below a third of your health. The mob hits you through the cast, so step back first when you can.",
+     "notes": [
+      "**Mark of the Wild** (1) is a buff: keep it on, no key.",
+      "Druids cannot use a wand, so mana is your limit: drink after a fight that left you below about a third."
+     ]
+    },
+    {
+     "from": 4,
+     "title": "Moonfire",
+     "change": "**Moonfire** at the pull, **Wrath** after it.",
+     "press": [
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** while it walks in, and after it reaches you.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
+     ],
+     "if_hurt": "**Healing Touch** below a third of your health. At these levels the mob usually dies first.",
+     "notes": [
+      "**Rejuvenation** (4) is your heal between fights: below 85% of your health.",
+      "**Thorns** (6) is a buff: keep it on, no key. Every mob that hits you takes its damage.",
+      "**Entangling Roots** (8) is for the emergency of the next stage: root the mob, step out of its reach, heal. A direct hit can break it.",
+      "From 10, **Improved Wrath**, one point a level: by 14 **Wrath** is a 1.5-second cast for half the mana.",
+      "**Nature's Grasp** (10) roots the next mob that hits you: your way out. **Bear Form** (10) is for the Feral build; this one stays a caster."
+     ]
+    },
+    {
+     "from": 12,
+     "title": "Regrowth, from range",
+     "change": "Hurt: root the mob, step out of its reach, **Regrowth**.",
+     "press": [
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** while it walks in, and after it reaches you.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. A mob with less left: finish it instead.",
+     "notes": [
+      "**Regrowth** (12) between fights too: below 70% of your health, after the **Rejuvenation** below 85%.",
+      "**Moonglow** (15, 17, 19): your damage spells cost up to 25% less. **Improved Moonfire** (16, 18): **Moonfire** gets 10% more damage and critical strike chance.",
+      "**Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it before the pull.",
+      "**Faerie Fire** (18) lowers armor, which your spells ignore: no key."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Starfire waits",
+     "change": "**Starfire** arrives; **Wrath** stays your nuke until **Eclipse** at 30.",
+     "press": [
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** while it walks in, and after it reaches you.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.",
+     "notes": [
+      "**Starfire** (20) is your biggest hit and a 3.5-second cast that the mob's hits push back. The fight lab casts it only into a root or a stun, so at these levels it almost never does.",
+      "**Improved Starfire** (25-29): **Starfire** casts 0.5 s faster and stuns the mob for 3 s 15% of the time.",
+      "**Nature's Majesty** (20-21): 4% more critical strike chance. **Nature's Splendor** (22): **Moonfire** burns 3 s longer.",
+      "**Improved Entangling Roots** (23-24): the roots hit harder and hold through more damage (the fight lab does not model the hold).",
+      "**Omen of Clarity** (20) is a buff: keep it on, no key. **Cat Form** (20) is for the Feral build.",
+      "**Insect Swarm** is a talent this build skips."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Wrath, then Starfire",
+     "change": "**Eclipse**: each **Wrath** speeds up your next two **Starfire** casts. About two **Starfire** to each **Wrath**.",
+     "press": [
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** whenever **Eclipse** has no charges: each one stores 2 (up to 4, for 15 s). So the first **Wrath** comes as the mob walks in.",
+      "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.",
+     "notes": [
+      "**Eclipse** (30-32) takes 0.17 s off each charged **Starfire** at 1 point, 0.33 s at 2 and 0.5 s at 3.",
+      "**Nature's Grace** (33): a spell critical hit makes your casts and your global cooldown 10% faster for 3 s.",
+      "**Vengeance** (34, 37, 39, 41-42): your Arcane and Nature critical hits do more damage. **Moonfury** (35-36, 38, 43-44): 10% more Arcane and Nature damage at 5 points.",
+      "**Travel Form** (30) is the road between mobs."
+     ]
+    },
+    {
+     "from": 40,
+     "title": "Moonkin Form",
+     "change": "**Moonkin Form**: fight in it, and eat instead of healing between fights.",
+     "press": [
+      "**Moonkin Form** before the pull, and stay in it.",
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** whenever **Eclipse** has no charges: each one stores 2 (up to 4, for 15 s). So the first **Wrath** comes as the mob walks in.",
+      "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.",
+     "notes": [
+      "**Moonkin Form** (40): 360% more armor from your items, 3% more critical strike chance and **Omen of Clarity** twice as often. Going in costs 35% of your base mana each time, so you stay in it.",
+      "**Hurricane** (40) is a channelled storm for packs. The fight lab fights one mob at a time and never casts it.",
+      "**Innervate** (40): mana for you after a run of hard pulls, or for a group's healer.",
+      "**Barkskin** (44): 20% less physical damage for 15 s, and the mob's hits no longer push your casts back. The form blocks only heals, so it works in **Moonkin Form**; the fight lab does not cast it."
+     ],
+     "unsimulated": [
+      "Moonkin Form"
+     ]
+    },
+    {
+     "from": 46,
+     "title": "The same play to 60",
+     "change": "Nothing new to press: your last 15 points go to Restoration for Intellect, pushback, mana and damage.",
+     "press": [
+      "**Moonkin Form** before the pull, and stay in it.",
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Wrath** whenever **Eclipse** has no charges: each one stores 2 (up to 4, for 15 s). So the first **Wrath** comes as the mob walks in.",
+      "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.",
+     "notes": [
+      "**Heart of the Wild** (46-47): 4% more Intellect.",
+      "**Nature's Focus** (48-50, 59-60): **Wrath** and **Starfire** ignore the mob's pushback 42% of the time at 3 points, 70% at 5.",
+      "**Reflection** (51, 57-58): up to half your mana regeneration keeps going while you cast.",
+      "**Naturalist** (52-56): 10% more damage at 5 points."
+     ],
+     "unsimulated": [
+      "Moonkin Form"
+     ]
+    }
+   ],
+   "between": [
+    "Before 40: **Rejuvenation** below 85% of your health and **Regrowth** below 70%, then the next pull. From 40, stay in **Moonkin Form** and eat below 40% of your health: leaving it to heal costs 35% of your base mana to go back in.",
+    "Drink when your mana is below about a third (35%). Eat below 40% of your health when there was no mana to heal.",
+    "Visit the trainer every even level: **Wrath**, **Moonfire** and **Starfire** have many ranks."
+   ],
+   "other": [
+    "Feral Combat, the cat, is the druid's fastest leveling build in the fight lab: [its level-by-level guide](feral-combat-by-level.md).",
+    "Restoration levels as a cat with its raid healer's talents: [its level-by-level guide](restoration-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Balance fights in caster form and, from 40, in Moonkin Form, both on the same bar 1. Keys are for spells you press in a fight and for the things that help you there; Mark of the Wild, Thorns, Omen of Clarity, food, water, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the forms and the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [druid keybinds page](keybinds.md), written for the Feral build; the notes below say what Balance changes.",
+    "bars": [
+     {
+      "title": "Action bar 1: caster form and Moonkin Form",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your nuke: the key you press most until 30, every other cast after",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Wrath"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: root it and step back",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Entangling Roots"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The payoff: the big hit into a root, a stun or an Eclipse charge",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Starfire"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "The save before a hard pull",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Barkskin"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "The fight heal, after the root",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Regrowth"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "The heal over time: between fights before 40",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Rejuvenation"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The big slow heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Healing Touch"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second beast sleeps",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Hibernate"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Poison off you",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Cure Poison"
+         },
+         {
+          "from": 26,
+          "spell": "Abolish Poison"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "A curse off you",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Remove Curse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Mana for you, or for a healer",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Innervate"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The instant: at the pull, and to finish",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Moonfire"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Moonkin Form; press it again to leave",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Moonkin Form"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Free (Bear Form in the Feral layout)",
+        "binds": []
+       },
+       {
+        "key": "Shift+R",
+        "role": "The road",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Travel Form"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "The escape: the next mob that hits you is rooted",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Nature's Grasp"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Packs: the storm",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Hurricane"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Mark of the Wild",
+     "Thorns",
+     "Omen of Clarity"
+    ],
+    "notes": [
+     "Two changes from the Feral layout, both for Balance's own spells. **Starfire** takes R, the payoff after **Entangling Roots** on E and from 30 the spell you press most, so **Moonfire** sits on the middle mouse button from 4 (R at levels 1-9 in the Feral layout). **Moonkin Form** takes Shift+Q, the key of the form you fight in (Cat Form in the Feral layout). Every other spell is where the Feral guide puts it.",
+     "**Wrath** stays on Q from 1 to 60: from 30 it is every other cast, the one that charges **Eclipse**.",
+     "The emergency heal in **Moonkin Form**: E (**Entangling Roots**), step back, Shift+Q (leave the form), Mouse 5 (**Regrowth**), Shift+Q (back in). The same Shift+Q, Mouse 5, Shift+Q as the cat's. The [macros page](../macros.md) has a **Regrowth** macro that leaves the form for you.",
+     "Moonkin Form uses this same bar 1. If your bar changes when you shift into it, set the new one up as a copy of this one.",
+     "Bear Form and Cat Form have no key: this build never fights in them. **Travel Form** on Shift+R is your road between mobs.",
+     "No key: **Mark of the Wild**, **Thorns**, **Omen of Clarity**, **Faerie Fire**, food, water, the mount and the Hearthstone.",
+     "Levels 1-19 fight with Q and the middle mouse button; **Starfire** joins on R at 20. No key holds Attack: a caster does not need its staff."
+    ]
+   }
+  },
+  {
+   "spec": "Restoration",
+   "intro": "What a Restoration druid presses from level 1 to 60 while leveling. Restoration has no leveling rotation of its own, so it levels as a cat with the Feral guide's play: **Wrath** and **Moonfire** to 9, **Bear Form** from 10 to 19, and from 20 a cat that prowls up behind the mob, claws, bleeds it and bites. The talents are your raid healer's (11/4/36): they make your heals and shifts stronger and cheaper more than your claws, so kills take longer than with the Feral build, and you reach 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.",
+   "stages": [
+    {
+     "from": 1,
+     "title": "Wrath, then your weapon",
+     "change": "**Wrath** as the mob comes, melee once it is on you.",
+     "press": [
+      "**Wrath** as the mob comes at you, and again as long as your mana lasts.",
+      "Melee once it reaches you: an early Wrath is slow, and the mob's hits push the cast back."
+     ],
+     "if_hurt": "**Healing Touch** below a third of your health. The mob hits you through the cast, so step back first when you can.",
+     "notes": [
+      "The fight lab does not model levels 1-9 (it only swings the weapon there), so this stage and the next carry no numbers.",
+      "**Mark of the Wild** (1) is a buff: keep it on, no key."
+     ],
+     "unsimulated": [
+      "Wrath"
+     ],
+     "no_numbers": true
+    },
+    {
+     "from": 4,
+     "title": "Moonfire",
+     "change": "**Moonfire** once at the pull, **Wrath** while the mob walks in, melee after.",
+     "press": [
+      "**Moonfire** once as the mob comes: the hit and the bleed.",
+      "**Wrath** while it walks in.",
+      "Melee once it reaches you. **Wrath** between hits only while you have the mana: at these levels your water is the limit."
+     ],
+     "if_hurt": "**Rejuvenation** on yourself at the first hits, **Healing Touch** below a third of your health.",
+     "notes": [
+      "**Thorns** (6) is a buff: keep it on, no key.",
+      "**Entangling Roots** (8): root the mob, step back, cast. Damage can break it.",
+      "Levels 1-9 are not in the fight lab: no numbers."
+     ],
+     "unsimulated": [
+      "Wrath",
+      "Moonfire"
+     ],
+     "no_numbers": true
+    },
+    {
+     "from": 10,
+     "title": "Bear Form",
+     "change": "**Bear Form**: walk up, **Demoralizing Roar** once, **Maul** on every swing you have the rage for.",
+     "press": [
+      "**Bear Form** before the pull and stay in it. Walk up to the mob: a bear has no stealth.",
+      "**Demoralizing Roar** once the mob is on you.",
+      "**Maul** whenever you have the rage: it replaces your next swing. White swings fill the rest."
+     ],
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Bear Form**, **Healing Touch** or **Rejuvenation**, then **Bear Form** again. At these levels the mob usually dies first.",
+     "notes": [
+      "**Heart of the Wild** (10-14): at 5 points, 20% more Stamina in Bear Form, 10% more Strength in Cat Form (from 20) and 10% more Intellect.",
+      "From 12, **Enrage** at the pull: 10 rage now and 20 more over 10 s, for 27% of your armor. The fight lab presses it on a mob above 40% of its health.",
+      "**Regrowth** (12) is your fight heal from here: a big heal plus a heal over time.",
+      "**Nature's Grasp** (10) can be cast in a form: the next mob that hits you is rooted. Walk away and heal.",
+      "**Growl** (10) is a taunt: for groups."
+     ],
+     "unsimulated": [
+      "Bear Form"
+     ]
+    },
+    {
+     "from": 14,
+     "title": "Bash",
+     "change": "**Enrage** at the pull, **Bash** a mob that casts.",
+     "press": [
+      "**Enrage** at the pull while the mob has more than 40% of its health.",
+      "**Demoralizing Roar** once the mob is on you.",
+      "**Bash** a mob that starts casting, or whenever you drop below 40% of your health.",
+      "**Maul** whenever you have the rage. White swings fill the rest."
+     ],
+     "if_hurt": "**Bash** buys you 2 seconds. Below 30% of your health: leave **Bear Form**, **Regrowth**, then **Bear Form** again.",
+     "notes": [
+      "**Naturalist** (15-17): 2% more damage a point. **Natural Shapeshifter** (18): every shift costs 10% less mana.",
+      "**Swipe** (16) hits three mobs for little: for pulls of two or three, never one.",
+      "**Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it from caster form before the pull.",
+      "**Faerie Fire** (18) is not worth the shift out; the fight lab never casts it.",
+      "**Cat Form** comes at 20 and changes everything."
+     ]
+    },
+    {
+     "from": 20,
+     "title": "Cat Form",
+     "change": "**Cat Form**: **Prowl** up behind the mob, **Claw** to 2 points, **Rip**.",
+     "press": [
+      "**Cat Form** before the pull. **Prowl**, and walk up behind the mob.",
+      "**Claw** to 2 combo points.",
+      "**Rip** at 2 points while the mob has more than 40% of its health: the bleed finishes it while you claw.",
+      "**Claw** until it is dead."
+     ],
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again. Keep the mana for that: Cat Form costs 55% of your base mana each time, 10% less with your point in Natural Shapeshifter.",
+     "notes": [
+      "**Shred** (20) needs the mob's back. A mob facing you cannot be Shredded, and the tuned rules never cast it.",
+      "**Omen of Clarity** (20) is a buff: keep it on, no key. It makes an ability free now and then.",
+      "Energy, not mana, limits you now. This build has no **Furor** until 45: each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.",
+      "**Genesis** (19-23): your bleeds and your heals over time do up to 10% more."
+     ],
+     "unsimulated": [
+      "Cat Form",
+      "Prowl"
+     ]
+    },
+    {
+     "from": 24,
+     "title": "Ferocious Bite and Rake",
+     "change": "**Rake** once, **Claw** to build, **Ferocious Bite** as soon as it kills.",
+     "press": [
+      "**Prowl** up behind the mob; **Claw** is the first hit.",
+      "**Rake** once while the mob has more than 30% of its health: it bleeds for 9 s.",
+      "**Claw** to build combo points.",
+      "**Ferocious Bite** at any number of points as soon as it will kill the mob."
+     ],
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
+     "notes": [
+      "**Rip** stays for a mob above half its health at 5 points. One on one, **Claw** and **Ferocious Bite** usually get there first.",
+      "**Nature's Majesty** (24-25): 4% more critical strike chance.",
+      "**Dash** (26): 50% faster for 15 s in Cat Form, prowling or not. The escape, and the way to the next mob.",
+      "**Nature's Focus** (26), **Reflection** (27-29) and **Gift of Nature** (30-31) are healer points: fewer heals pushed back, mana while you cast, stronger heals.",
+      "**Travel Form** (30) is the road between mobs. **Tranquility** (30) heals your whole group: for dungeons.",
+      "**Cower** (28) drops your threat and **Challenging Roar** (28) is a bear taunt: groups only."
+     ],
+     "unsimulated": [
+      "Prowl"
+     ]
+    },
+    {
+     "from": 32,
+     "title": "Ravage",
+     "change": "**Ravage** from **Prowl**: the opener that takes a third of the mob.",
+     "press": [
+      "**Prowl** up behind the mob and open with **Ravage**: 435% weapon damage from stealth, the biggest hit you have.",
+      "**Rake** while the mob has more than 30% of its health.",
+      "**Claw** to build combo points.",
+      "**Ferocious Bite** as soon as it will kill the mob."
+     ],
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
+     "notes": [
+      "**Poised** (32): rested to full energy out of combat, your next ability costs 10 less. Wait for full energy before you prowl in, and Ravage costs 50 instead of 60.",
+      "**Swiftmend** (32): an instant heal that eats your **Rejuvenation** or **Regrowth**. For groups: the fight lab never casts it solo.",
+      "**Pounce** (36) is the other stealth opener: a 2 s stun and a bleed for 1 combo point. **Ravage** hits harder; **Pounce** is for a caster you want quiet for the first seconds.",
+      "**Moonglow** (33-35), **Nature's Splendor** (36) and **Tranquil Spirit** (37-41) are healer and caster points: they do little for the cat.",
+      "**Frenzied Regeneration** (36) turns rage into health in Bear Form.",
+      "**Track Humanoids** (32) is a tracking: clicked, no key."
+     ],
+     "unsimulated": [
+      "Prowl"
+     ]
+    },
+    {
+     "from": 40,
+     "title": "The same play to 60",
+     "change": "Nothing new to press. **Furor** (45-48) gives you energy back after a shift; the rest of your points are for healing.",
+     "press": [
+      "**Prowl** up behind the mob and open with **Ravage**.",
+      "**Rake** while the mob has more than 30% of its health.",
+      "**Claw** to build combo points.",
+      "**Ferocious Bite** as soon as it will kill the mob."
+     ],
+     "if_hurt": "Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.",
+     "notes": [
+      "**Furor** (45-48): back in **Cat Form**, you get a share of the energy you left with plus some for every second out of it; by 48, 80% and 8 a second, up to 80. A **Regrowth** in the middle of a fight costs you much less now.",
+      "**Dire Bear Form** (40) is Bear Form with more armor and attack power: for dungeons.",
+      "**Living Spirit** (42-44), more **Gift of Nature** (49-51), **Subtlety** (52), **Improved Rejuvenation** (53-55) and **Improved Regrowth** (56-60) are for the healer at 60.",
+      "**Barkskin** (44) needs caster form: 20% less physical damage for 15 s, before a hard pull.",
+      "**Innervate** (40): mana for a group's healer, or for you after a run of heals.",
+      "No **Feral Charge**, **Primal Bite** or **Shifting Power**: they are Feral talents this build does not take."
+     ],
+     "unsimulated": [
+      "Prowl"
+     ]
+    }
+   ],
+   "between": [
+    "Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.",
+    "Until **Furor** (45), each shift back into Cat Form starts at no energy: let it fill before you prowl in.",
+    "Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
+    "Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks, and so do your heals."
+   ],
+   "other": [
+    "Feral Combat levels as a cat with Feral talents, faster per kill in the fight lab: [its level-by-level guide](feral-combat-by-level.md). A respec at a class trainer at 60 then gives you these healer talents.",
+    "Balance stays a caster with its own rotation: [its level-by-level guide](balance-by-level.md)."
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. A druid's bar 1 is three bars in one: WoW shows the form's own bar while you are in Bear Form or Cat Form, and the Prowl bar while you prowl, so the tables below give bar 1 once per form. Keys are for spells you press in a fight and for the things that help you there; Mark of the Wild, Thorns, Omen of Clarity, the tracking, food, water, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class and in every form: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the forms and the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [druid keybinds page](keybinds.md), written for the Feral build: the same keys, with the changes in the notes below.",
+    "bars": [
+     {
+      "title": "Action bar 1 out of form (levels 1-9, and whenever you shift out)",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "The caster filler at 1-9",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Wrath"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: root it and step back",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Entangling Roots"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The hit at the pull, 1-9",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Moonfire"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "The save before a hard pull",
+        "binds": [
+         {
+          "from": 44,
+          "spell": "Barkskin"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "The fight heal you shift out for",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Regrowth"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "The heal over time: in a fight at 1-9, between fights later",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Rejuvenation"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The big slow heal",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Healing Touch"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "A second beast sleeps",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Hibernate"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Poison off you",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Cure Poison"
+         },
+         {
+          "from": 26,
+          "spell": "Abolish Poison"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "A curse off you",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Remove Curse"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Mana for a healer, or for you",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Innervate"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The instant heal: eats your Rejuvenation or Regrowth (groups)",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Swiftmend"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 1 in Bear Form (levels 10-19; WoW swaps the bar when you shift)",
+      "slots": [
+       {
+        "key": "Q (bear)",
+        "role": "Your attack: it replaces the next swing; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Maul"
+         }
+        ]
+       },
+       {
+        "key": "E (bear)",
+        "role": "Control: the stun",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Bash"
+         }
+        ]
+       },
+       {
+        "key": "R (bear)",
+        "role": "Once a fight: the roar",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Demoralizing Roar"
+         }
+        ]
+       },
+       {
+        "key": "F (bear)",
+        "role": "The save: rage into health",
+        "binds": [
+         {
+          "from": 36,
+          "spell": "Frenzied Regeneration"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5 (bear)",
+        "role": "The pull: rage",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Enrage"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4 (bear)",
+        "role": "Taunt: a mob on a friend",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Growl"
+         }
+        ]
+       },
+       {
+        "key": "1 (bear)",
+        "role": "Packs",
+        "binds": [
+         {
+          "from": 16,
+          "spell": "Swipe"
+         }
+        ]
+       },
+       {
+        "key": "2 (bear)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "3 (bear)",
+        "role": "Packs on a friend",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Challenging Roar"
+         }
+        ]
+       },
+       {
+        "key": "4 (bear)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "C (bear)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Middle mouse (bear)",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 1 in Cat Form (from 20)",
+      "slots": [
+       {
+        "key": "Q (cat)",
+        "role": "Your attack: the combo points; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Claw"
+         }
+        ]
+       },
+       {
+        "key": "E (cat)",
+        "role": "Free (Feral Charge in the Feral build)",
+        "binds": []
+       },
+       {
+        "key": "R (cat)",
+        "role": "The payoff: the kill",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Ferocious Bite"
+         }
+        ]
+       },
+       {
+        "key": "F (cat)",
+        "role": "The escape",
+        "binds": [
+         {
+          "from": 26,
+          "spell": "Dash"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5 (cat)",
+        "role": "Once a fight: the bleed",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Rake"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4 (cat)",
+        "role": "The bleed finisher: every fight at 20-23, rare after",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Rip"
+         }
+        ]
+       },
+       {
+        "key": "1 (cat)",
+        "role": "Before every pull",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Prowl"
+         }
+        ]
+       },
+       {
+        "key": "2 (cat)",
+        "role": "Groups: drop your threat",
+        "binds": [
+         {
+          "from": 28,
+          "spell": "Cower"
+         }
+        ]
+       },
+       {
+        "key": "3 (cat)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "4 (cat)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "C (cat)",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Middle mouse (cat)",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 1 while prowling: copy the Cat Form bar, then change Q and E",
+      "slots": [
+       {
+        "key": "Q (prowling)",
+        "role": "The opener from behind (before 32: Claw, the copied key)",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Ravage"
+         }
+        ]
+       },
+       {
+        "key": "E (prowling)",
+        "role": "The stun opener",
+        "binds": [
+         {
+          "from": 36,
+          "spell": "Pounce"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift, in every form",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Cat Form; press it again to leave",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Cat Form"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Bear Form; press it again to leave",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Bear Form"
+         },
+         {
+          "from": 40,
+          "spell": "Dire Bear Form"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "The road",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Travel Form"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "The escape in any form: the next mob that hits you is rooted",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Nature's Grasp"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Groups: the group heal, from caster form",
+        "binds": [
+         {
+          "from": 30,
+          "spell": "Tranquility"
+         }
+        ]
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Mark of the Wild",
+     "Thorns",
+     "Omen of Clarity",
+     "Track Humanoids"
+    ],
+    "notes": [
+     "What Restoration changes from the Feral layout: **Swiftmend** (32) on the middle mouse button of the caster bar and **Tranquility** (30) on Shift+1, both for healing a group; E on the Cat Form bar stays free, since **Feral Charge** is a Feral talent this build does not take. Every other spell is where the Feral guide puts it.",
+     "Bar 1 is three bars in one: WoW shows the form's own bar while you are in Bear Form or Cat Form, and the Prowl bar while you prowl (as Classic did). Set each one up so a key keeps its job in every form: Q attacks, E controls, R pays off, F saves.",
+     "The forms live on the Shift bar, the same in every form: Shift+Q Cat Form, Shift+E Bear Form, Shift+R Travel Form. Pressing your current form's key leaves it.",
+     "The emergency heal is three presses: Shift+Q (leave Cat Form), Mouse 5 (Regrowth, on the bar you now see), Shift+Q (Cat Form again). The keybinds page has a macro that makes it two.",
+     "No key: **Mark of the Wild**, **Thorns**, **Omen of Clarity**, **Track Humanoids**, food, water, the mount and the Hearthstone.",
+     "Levels 1-9 fight with Q and R on the caster bar: right-click the mob to start swinging. From 10, Q on each form's bar is a macro on the [keybinds page](keybinds.md) that also starts your swings, so no key holds Attack."
+    ]
+   }
   }
  ]
 }

@@ -6,11 +6,13 @@
 
 **✅ Recommended** for leveling (the best paladin spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](prot-ret-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Prot-Ret — Leveling](../research/leveling/builds/prot-ret-open-leveling.md)** (12/16/23) — [open the talent tree](https://talentsforever.com/paladin/60/05025-5230111021-232331010113003-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Judgement**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 100% of the damage at level 60 in the fight lab comes from melee, Seal of Command, Seal of Righteousness, Seal of Fury, Judgement, Holy Strike (the spec's rule: at least 60%; **Judgement** cast in every fight).
 
 ## How to play
 
@@ -20,10 +22,9 @@
 
 1. **Hammer of Justice** a mob that casts spells: it stands back and casts until you stop it.
 2. Keep your seal up: put it back if it runs out.
-3. **Hammer of Wrath** when the mob is below 20% health.
-4. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.
-5. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the tuned rotation never casts it.
-6. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+3. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.
+4. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the tuned rotation never casts it.
+5. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
 **Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below about a third of your mana.
 

@@ -2,11 +2,13 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Affliction
 
+**Leveling from level 1?** [The rotation level by level](affliction-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Affliction — Leveling](../research/leveling/builds/affliction-open-leveling.md)** (37/14/0) — [open the talent tree](https://talentsforever.com/warlock/60/25500322134001351-0025030211--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Corruption**, **Bane of Agony**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 82% of the damage at level 60 in the fight lab comes from Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, Drain Soul (the spec's rule: at least 50%; **Corruption**, **Bane of Agony** cast in every fight).
 
 ## How to play
 
