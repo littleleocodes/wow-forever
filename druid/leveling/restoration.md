@@ -18,12 +18,11 @@
 2. From 20 (cat), open from **Prowl** with **Ravage** (from 32; **Claw** before that).
 3. **Rake** whenever it is not on the mob and the mob has more than 30% of its health.
 4. **Claw** to build combo points.
-5. **Ferocious Bite** (from 32) whenever it will kill the mob, at any number of points.
-6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-31): **Rip** at 2 points while the mob has more than 40% of its health.
-7. **Berserk** on the pull whenever it is ready.
+5. **Ferocious Bite** (from 24) whenever it will kill the mob, at any number of points.
+6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-23): **Rip** at 2 points while the mob has more than 40% of its health.
 8. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
 
-**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below 15%: it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
+**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
 
 ## Why this rotation
 
@@ -32,7 +31,7 @@ You level as a cat with your healer's talents: the Feral Combat steps, slower pe
 **Why it works**
 
 - Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points go to **Furor** (11-14): rage each time you shift into **Bear Form**, and later most of your energy back when you return to **Cat Form**. **Naturalist** (15-18, 3 points) adds 3% to all your damage.
-- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health). This build has no **Berserk**: skip that step.
+- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 24, **Rip** at 2 points while the mob has more than 40% of its health).
 - The points that add damage: **Genesis** (17-23: 5% more periodic damage on **Rake** and **Rip**), **Nature's Majesty** (+4% critical strike chance, 24-25) and **Heart of the Wild** (+10% Strength in **Cat Form**, 26-30). Without **Ferocity**, **Claw** and **Rake** cost their full energy.
 - **Natural Shapeshifter** (one point at 19) makes each shift a little cheaper, and **Furor** refills your energy when you shift back: a **Regrowth** in the middle of a fight costs you less.
 - The rest is the raid healer: **Reflection** (32-34) keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Swiftmend** comes at 37.
@@ -41,7 +40,7 @@ You level as a cat with your healer's talents: the Feral Combat steps, slower pe
 
 - Each shift into **Cat Form** costs 55% of your base mana before **Natural Shapeshifter**: heal between fights rather than during them when you can.
 - The fight lab does not cast **Swiftmend** while leveling: it heals with **Rejuvenation** and **Regrowth** between fights (below 70% health) and with **Regrowth** in an emergency.
-- Drink late: mana only pays for shifts and heals, and the tuned cat rotation drinks below 15% mana.
+- Drink late: mana only pays for shifts and heals, and the tuned cat rotation keeps the default, below about a third of your mana.
 
 **When to change it**
 

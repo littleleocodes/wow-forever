@@ -214,10 +214,15 @@ def check_keys(tree, cls, g, out):
 
 
 def check_macros(tree, cls, out):
-    p = f"{cls}/leveling/keybinds.md"
-    if not tree.exists(p):
-        return
-    book = set(LG.book(cls)) | {t["name"] for tr in talents(cls) for t in tr["talents"]}
+    for p in (f"{cls}/leveling/keybinds.md", f"{cls}/macros.md"):
+        if tree.exists(p):
+            check_macro_page(tree, cls, p, out)
+    if not tree.exists(f"{cls}/macros.md"):
+        out.append(("coverage", cls, "no macro page"))
+
+
+def check_macro_page(tree, cls, p, out):
+    book = set(LG.book(cls)) | {t["name"] for tr in talents(cls) for t in tr["talents"]} | {"Attack", "Shoot", "Auto Shot"}
     fence = False
     for line in tree.text(p).splitlines():
         if line.startswith("```"):
@@ -228,9 +233,9 @@ def check_macros(tree, cls, out):
         m = re.match(r"(/cast|/castsequence|#showtooltip)\s+(.*)", line)
         if not m or not m.group(2):
             continue
-        text = re.sub(r"\[[^\]]*\]", "", re.sub(r"reset=\S+", "", m.group(2)))
+        text = re.sub(r"\[[^\]]*\]", "", re.sub(r"reset=\S+", "", m.group(2))).replace("!", "")
         for name in (x.strip() for x in re.split(r"[,;]", text)):
-            if name and name != "Attack" and name not in book:
+            if name and name not in book:
                 out.append(("macros", cls, f"`{line}`: {name} is no {cls} spell or talent"))
 
 

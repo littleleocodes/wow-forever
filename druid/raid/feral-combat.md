@@ -27,7 +27,7 @@ Between these, your white swings do the rest.
 
 ## Why this rotation
 
-A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight, **Berserk** goes on the pull.
+A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight.
 
 **Why it works**
 
@@ -35,7 +35,7 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 - **Rip** does a large share of your damage (close to 40% on the training dummy). Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.
 - **Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 10% more damage from **Rend and Tear** while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.
 - **Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.
-- **Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds with **Improved Shifting Power**: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator's full raid this build (694 DPS) and the 9/35/7 build (688) both take it and do about 17% more than the 9/31/11 build without it (590).
+- **Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator's full raid this build (694 DPS) and the 9/35/7 build (688) both take it and do about 17% more than the 9/31/11 build without it (590).
 - Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it), but the community simulator still reads it from the client as granted and casts it on every cooldown, so the raid numbers on this page run about 2-3% high until the simulator drops it.
 
 **Caveats**

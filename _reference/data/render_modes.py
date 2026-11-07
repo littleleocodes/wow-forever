@@ -1229,6 +1229,8 @@ def class_pages(cls):
                     + " (what to press from level 1 as each spell and talent arrives).", ""]
         if mode == "leveling" and LG.keybinds_line(cls):   # 2026-11-07 (user: the folder should show it)
             idx += [LG.keybinds_line(cls), ""]
+        if LG.macros_line(cls):   # 2026-11-07 (user: macros for each spec, what they replace, what fills the freed keys)
+            idx += [LG.macros_line(cls), ""]
         if mode == "raid":
             # only specs with a raid page (2026-10-25: Beast-Survival kept its tier row from the ML record after its raid build left)
             idx += tier_table(cls, [s for s in specs if not s.startswith("Hybrid") or g[s]["raid"]], d / "README.md")

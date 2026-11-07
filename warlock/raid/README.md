@@ -20,6 +20,8 @@
 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) | 782 | 809 |
 | [Destruction](destruction.md) | 757 | 783 |
 
+**Macro ideas:** [every spec's macros](../macros.md), with the keys each one frees.
+
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 
 ---

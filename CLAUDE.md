@@ -248,6 +248,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   slash commands, bindings, client build). Run it at every class or lane boundary and after every data change; the regen step runs it. A link names the order its digits
   are in and the site translates older versions by table, so `TF_CODE_VERSION` must be the site's version whose order forever-talents/ follows: the label stayed at 7 while
   the site went to 12, and 216 of 330 links opened other talents, every mage, paladin and rogue link among them.
+  Every class has a hand-written `<class>/macros.md` (2026-11-07, user: "create and theorize macros to use for each spec and which keybinds those macros could replace and what
+  could then be used in those freed keybinds"): each macro with what it replaces, what it frees and what could fill that. One press only fires two spells if the first is off the
+  global cooldown (`fightlab/spell_gcd.json` off_gcd). The audit checks their spell names.
 - **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`
   chains (refresh →) effects → calibrate ↔ optimize until the optimizer's leveling build repeats (new builds are saved as
   `<class>/research/leveling/fightlab/candidates/cand-<tag>-rN.json`) → race (hand draft vs every candidate) → report

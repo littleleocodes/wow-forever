@@ -20,7 +20,7 @@
 4. A nearly dead mob: finish it with **Moonfire** or **Wrath**.
 5. Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while you have half your health and the mob still has half of its own).
 
-**Between fights:** In **Moonkin Form**, stay in it and eat when your health is below half. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%. Drink when your mana is below about a third (35%).
+**Between fights:** In **Moonkin Form**, stay in it and eat when your health is below 40%. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%. Drink when your mana is below about a third (35%).
 
 ## Why this rotation
 
@@ -39,7 +39,7 @@ Pull with instants, then cast: **Moonfire** and **Insect Swarm** on the mob, **W
 **Caveats**
 
 - **Moonkin Form** blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while you have half your health and the mob still has half of its own (the fight lab plays it that way).
-- Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 56-58) keeps half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana and eats below half your health (eating at half measured about 0.6% faster per kill than at two thirds). Druids cannot use a wand, so an empty bar means waiting.
+- Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 56-58) keeps half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana and eats below 40% of your health (the tuned rule; eating at half had measured about 0.6% faster per kill than at two thirds). Druids cannot use a wand, so an empty bar means waiting.
 - Before **Moonkin Form** (levels 10-39) the fight lab heals between fights instead of eating: **Rejuvenation** below 85% health, **Regrowth** below 70%.
 
 **When to change it**

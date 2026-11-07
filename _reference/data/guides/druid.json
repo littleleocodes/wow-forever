@@ -43,28 +43,28 @@
     ],
     "caveats": [
      "**Moonkin Form** blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while you have half your health and the mob still has half of its own (the fight lab plays it that way).",
-     "Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 56-58) keeps half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana and eats below half your health (eating at half measured about 0.6% faster per kill than at two thirds). Druids cannot use a wand, so an empty bar means waiting.",
+     "Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 56-58) keeps half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana and eats below 40% of your health (the tuned rule; eating at half had measured about 0.6% faster per kill than at two thirds). Druids cannot use a wand, so an empty bar means waiting.",
      "Before **Moonkin Form** (levels 10-39) the fight lab heals between fights instead of eating: **Rejuvenation** below 85% health, **Regrowth** below 70%."
     ],
     "diverge": [
      "When the mob is nearly dead, finish it with an instant **Moonfire** or a quick **Wrath** rather than a **Starfire** it will not live through: the fight lab does exactly that."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "9009cf5ede62",
-     "leveling:balance-dps": "53df2b13a941"
+     "leveling:feral-cat-dps": "029eb15b2e21",
+     "leveling:balance-dps": "622dfe700c7c"
     },
     "written": "2026-10-22"
    }
   },
   "Feral Combat": {
    "raid": {
-    "plan": "A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight, **Berserk** goes on the pull.",
+    "plan": "A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight.",
     "why": [
      "**Faerie Fire** takes 505 armor off the boss for 40 seconds, so your **Shred** and white hits land harder, and in **Cat Form** it costs nothing. Cast it on the pull. In a full raid the simulator assumes the raid keeps it up and casts it once a fight; if nobody else does, refresh it before it runs out.",
      "**Rip** does a large share of your damage (close to 40% on the training dummy). Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.",
      "**Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 10% more damage from **Rend and Tear** while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.",
      "**Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.",
-     "**Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds with **Improved Shifting Power**: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator's full raid this build (694 DPS) and the 9/35/7 build (688) both take it and do about 17% more than the 9/31/11 build without it (590).",
+     "**Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator's full raid this build (694 DPS) and the 9/35/7 build (688) both take it and do about 17% more than the 9/31/11 build without it (590).",
      "Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it), but the community simulator still reads it from the client as granted and casts it on every cooldown, so the raid numbers on this page run about 2-3% high until the simulator drops it."
     ],
     "caveats": [
@@ -93,21 +93,20 @@
      "Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it); the fight lab no longer casts it since 2026-10-17.",
      "**Rake**: a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** (levels 35-39) adds 10% to your attacks. The fight lab puts it back whenever it has run out and the mob has more than 30% of its health, about twice a kill.",
      "**Claw** builds your combo points because the mob faces you. With **Ferocity** it costs 40 energy; **Sharpened Claws** and **Blood Frenzy** (an extra point on a critical **Claw**) are among the most valuable talents at 60.",
-     "**Ferocious Bite** (from 32) ends most fights: the fight lab bites whenever the bite would kill, at any number of points, about once a kill. **Rip** only goes on a mob with more than half its health at 5 points, under one kill in two at 60: on a mob that dies sooner, most of its 12 seconds are wasted."
+     "**Ferocious Bite** (from 24) ends most fights: the fight lab bites whenever the bite would kill, at any number of points, about once a kill. **Rip** only goes on a mob with more than half its health at 5 points, under one kill in two at 60: on a mob that dies sooner, most of its 12 seconds are wasted."
     ],
     "caveats": [
      "Before 32 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health. The fight lab measured that 3% faster per kill at 30 than waiting for 5 points on a mob above half health, which almost never came.",
      "Leaving **Cat Form** costs you: going back costs 55% of your base mana (less with **Natural Shapeshifter**), and without **Furor** your energy starts from zero. Heal between fights rather than in them when you can.",
-     "Your mana only pays for shifts and heals, so drink late: the tuned fight lab drinks below 15% mana, about 0.5-0.7% faster per kill than drinking at about a third. It heals with **Rejuvenation** and **Regrowth** below 70% health between fights and eats only when there was no mana for that.",
-     "**Berserk**, once you have it (level 40 in this order), goes on the pull whenever it is ready: 15 seconds of sure critical strikes on your combo point attacks, every 3 minutes."
+     "Your mana only pays for shifts and heals, so drink late. The tuned rules of 2026-11-06 keep the lab's default, drinking below about a third of your mana (an earlier tune drank below 15%, about 0.5-0.7% faster per kill; the 2026-11-02 re-tune did not keep it). It heals with **Rejuvenation** and **Regrowth** below 70% health between fights and eats only when there was no mana for that."
     ],
     "diverge": [
      "Under 30% health with the mob still above a quarter of its health: shift out, cast **Regrowth**, then **Cat Form** again. If the mob is lower than that, finish it instead.",
      "In the bear levels, **Bash** a mob that starts casting, or when you are low: the fight lab does both."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "9009cf5ede62",
-     "leveling:balance-dps": "53df2b13a941"
+     "leveling:feral-cat-dps": "029eb15b2e21",
+     "leveling:balance-dps": "622dfe700c7c"
     },
     "written": "2026-10-22"
    }
@@ -144,7 +143,7 @@
     "plan": "You level as a cat with your healer's talents: the Feral Combat steps, slower per kill than the Feral Combat build (the comparison above). Your points make your heals and shifts cheaper and stronger more than your claws.",
     "why": [
      "Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points go to **Furor** (11-14): rage each time you shift into **Bear Form**, and later most of your energy back when you return to **Cat Form**. **Naturalist** (15-18, 3 points) adds 3% to all your damage.",
-     "From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health). This build has no **Berserk**: skip that step.",
+     "From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 24, **Rip** at 2 points while the mob has more than 40% of its health).",
      "The points that add damage: **Genesis** (17-23: 5% more periodic damage on **Rake** and **Rip**), **Nature's Majesty** (+4% critical strike chance, 24-25) and **Heart of the Wild** (+10% Strength in **Cat Form**, 26-30). Without **Ferocity**, **Claw** and **Rake** cost their full energy.",
      "**Natural Shapeshifter** (one point at 19) makes each shift a little cheaper, and **Furor** refills your energy when you shift back: a **Regrowth** in the middle of a fight costs you less.",
      "The rest is the raid healer: **Reflection** (32-34) keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Swiftmend** comes at 37."
@@ -152,15 +151,15 @@
     "caveats": [
      "Each shift into **Cat Form** costs 55% of your base mana before **Natural Shapeshifter**: heal between fights rather than during them when you can.",
      "The fight lab does not cast **Swiftmend** while leveling: it heals with **Rejuvenation** and **Regrowth** between fights (below 70% health) and with **Regrowth** in an emergency.",
-     "Drink late: mana only pays for shifts and heals, and the tuned cat rotation drinks below 15% mana."
+     "Drink late: mana only pays for shifts and heals, and the tuned cat rotation keeps the default, below about a third of your mana."
     ],
     "diverge": [
      "Under 30% health with the mob still above a quarter of its health: shift out and cast **Regrowth**, then back into **Cat Form**.",
      "In a dungeon group, heal instead: that is the reason to level with these talents, and the times on this page are solo kills."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "9009cf5ede62",
-     "leveling:balance-dps": "53df2b13a941"
+     "leveling:feral-cat-dps": "029eb15b2e21",
+     "leveling:balance-dps": "622dfe700c7c"
     },
     "written": "2026-10-22"
    }

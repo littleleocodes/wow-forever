@@ -416,6 +416,13 @@ def keybinds_line(cls):
     return None
 
 
+def macros_line(cls):
+    """The line that points at the class's hand-written macro page, else None."""
+    if (ROOT / cls / "macros.md").exists():
+        return "**Macro ideas:** [every spec's macros](../macros.md), with the keys each one frees."
+    return None
+
+
 def link_line(cls, spec):
     """The line a spec's leveling page carries when the class has a by-level guide for it, else None."""
     data = load(cls)
