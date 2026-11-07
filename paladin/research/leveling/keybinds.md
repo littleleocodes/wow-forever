@@ -6,7 +6,9 @@ A personal layout, written 2026-11-06 on the player's own two action bars, for a
 that has two side buttons (WoW shows them as Button 4 and Button 5). It uses the same scheme as the
 [mage layout](../../../mage/research/leveling/keybinds.md), so both characters feel alike: Q is the strike you press most, E the control,
 R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest, and the Shift bar a stronger or wider version of
-the key under it. It is built on the [Retribution leveling page](../../leveling/retribution.md).
+the key under it. Keys are for spells you press in a fight and for the things that help you there: the blessing, the aura, food, drink,
+the mount and the Hearthstone have no key and are clicked between fights. It is built on the
+[Retribution leveling page](../../leveling/retribution.md).
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Retribution level-by-level guide](../../leveling/retribution-by-level.md). This page is the layout at 60, the setup and the macro.
@@ -21,6 +23,8 @@ This file is hand-written and nothing generates or deletes it (`paladin/leveling
   WoW uses for strafing by default.
 - Interface, Combat: Auto Self Cast on, Self Cast Key Alt. With a mob targeted, your heals then land on you without changing target,
   which is what the thumb heal needs.
+- A side bar without keybinds (Interface, Action Bars: the right bars) for the things you click: Blessing of Might, Devotion Aura, food,
+  water, bandages, the mount, the Hearthstone.
 
 ## Bar 1: the fight
 
@@ -32,11 +36,11 @@ This file is hand-written and nothing generates or deletes it (`paladin/leveling
 | F | Divine Protection (6), Divine Shield from 34 | The fight goes wrong: bubble, then heal inside it | Flash |
 | Mouse 5 (front side button) | Holy Light (1) | Below a third of your health, inside the bubble or during a stun; between fights, back to about 80% | Thumb reaction |
 | Mouse 4 (back side button) | Lay on Hands (10) | Below 15% of your health | Thumb reaction, the panic button |
-| 1 | Seal of Righteousness (1), Seal of Command from 20 (talent) | Before every pull, and again when it runs out after 30 seconds | Deadlock ability 1 |
+| 1 | Seal of Righteousness (1), Seal of Command from 20 (talent) | Before every pull, and again when it runs out after 30 seconds. It keeps a key because you recast it mid-fight and the stun combo needs it up | Deadlock ability 1 |
 | 2 | Exorcism (20) | On cooldown, against Undead and Demons only | Deadlock ability 2 |
 | 3 | Flash of Light (20) | Below a quarter of your health; a cheap top-up between fights | Deadlock ability 3 |
 | 4 | Purify (8), Cleanse from 42 | A poison or a disease is on you | Deadlock ability 4 |
-| C | Your water | Below about 15% of your mana | A consumable key next to the movement hand |
+| C | Free | | |
 | Middle mouse | Attack | To start swinging at levels 1-5, and whenever your swings stop. A right-click on the mob does the same | The weapon attack, like the mage's wand |
 
 The whole fight is three keys: 1 before the pull, then Q and R on cooldown, with E before R from level 20.
@@ -51,17 +55,20 @@ The whole fight is three keys: 1 before the pull, then Q and R on cooldown, with
 | Shift+F | Blessing of Freedom (18) | You are rooted or slowed |
 | Shift+Mouse 5 | Blessing of Protection (10) | A second save against physical damage. You cannot attack while it is on you |
 | Shift+Mouse 4 | Turn Undead (24) | An extra Undead mob joins: send it running |
-| Shift+1 | Blessing of Might (4) | When it runs out |
+| Shift+1 | Free | |
 | Shift+2 | Holy Wrath (50) | Several Undead or Demons at once |
-| Shift+3 | Your bandage | If you train First Aid; otherwise free |
-| Shift+4 | Your mount (40 in Classic) | Travel |
-| Shift+C | Your food | Between fights, if you are out of mana for heals |
-| Shift+X | Hearthstone | The recall key |
+| Shift+3 | Free | |
+| Shift+4 | Free | |
+| Shift+C | Free | |
+| Shift+X | Free | |
 
-## No key needed
+Free slots stay free until something earns them: Repentance if your final build takes it (the provisional build has it at 49), or
+Seal of Justice for mobs that run.
 
-Tab (target nearest enemy) and Space (jump) stay on WoW's defaults. Devotion Aura is a click once per login. Seal of the Crusader, Seal
-of Fury and Righteous Fury are not part of leveling as Retribution.
+## No key: click these between fights
+
+Blessing of Might, Devotion Aura, food, water, bandages, your mount (40 in Classic) and the Hearthstone. Tab (target nearest enemy) and
+Space (jump) stay on WoW's defaults. Seal of the Crusader, Seal of Fury and Righteous Fury are not part of leveling as Retribution.
 
 ## Macro (Esc, Macros, New; pick the question-mark icon so the button shows the spell)
 
@@ -74,5 +81,3 @@ The stun combo on one key, on Shift+E. Press it twice: the first press stuns, th
 
 It only moves on when Hammer of Justice goes off, so use it when the stun is ready and keep plain Judgement on R for the fifty seconds
 in between. `/castsequence` is a command of the Classic client; if Forever lacks it, press E then R.
-
-Drag your water and food from the bag onto the C and Shift+C slots. Replace them when you buy a better kind.

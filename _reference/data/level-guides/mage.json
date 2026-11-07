@@ -146,7 +146,7 @@
     "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
    ],
    "keys": {
-    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. A key keeps its job from 1 to 60 and only the spell on it changes, so you never relearn a key. Bold marks what arrives in that stage: drag it onto the slot when you train it. Everything the fight needs is on bar 1; the Shift bar holds the pack spells, your buffs and travel. Setup and macros: the [mage keybinds page](../research/leveling/keybinds.md).",
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, conjuring, the mount and the Hearthstone have no key, you click them between fights. A key keeps its job from 1 to 60 and only the spell on it changes, so you never relearn a key. Bold marks what arrives in that stage: drag it onto the slot when you train it. Free slots stay free until something earns them. Setup and macros: the [mage keybinds page](../research/leveling/keybinds.md).",
     "bars": [
      {
       "title": "Action bar 1: the fight",
@@ -257,15 +257,11 @@
        },
        {
         "key": "C",
-        "role": "Drink and eat",
+        "role": "The slow when Frost Nova is down, and packs",
         "binds": [
          {
-          "from": 4,
-          "text": "Water"
-         },
-         {
-          "from": 6,
-          "text": "Eat-and-drink macro"
+          "from": 26,
+          "spell": "Cone of Cold"
          }
         ]
        },
@@ -316,57 +312,38 @@
        },
        {
         "key": "Shift+F",
-        "role": "Packs and kiting: the slow in front of you",
-        "binds": [
-         {
-          "from": 26,
-          "spell": "Cone of Cold"
-         }
-        ]
+        "role": "Free",
+        "binds": []
        },
        {
         "key": "Shift+Mouse 5",
-        "role": "Buff: your armor",
+        "role": "Absorb a fire caster's spells",
         "binds": [
          {
-          "from": 1,
-          "spell": "Frost Armor"
-         },
-         {
-          "from": 30,
-          "spell": "Ice Armor"
+          "from": 20,
+          "spell": "Fire Ward"
          }
         ]
        },
        {
         "key": "Shift+Mouse 4",
-        "role": "Buff: your Intellect",
+        "role": "Absorb a frost caster's spells",
         "binds": [
          {
-          "from": 1,
-          "spell": "Arcane Intellect"
+          "from": 22,
+          "spell": "Frost Ward"
          }
         ]
        },
        {
         "key": "Shift+1",
-        "role": "Make water",
-        "binds": [
-         {
-          "from": 4,
-          "spell": "Conjure Water"
-         }
-        ]
+        "role": "Free (Ice Barrier with the hand-made Frost build)",
+        "binds": []
        },
        {
         "key": "Shift+2",
-        "role": "Make food",
-        "binds": [
-         {
-          "from": 6,
-          "spell": "Conjure Food"
-         }
-        ]
+        "role": "Free (Cold Snap with the hand-made Frost build)",
+        "binds": []
        },
        {
         "key": "Shift+3",
@@ -380,44 +357,30 @@
        },
        {
         "key": "Shift+4",
-        "role": "Travel",
-        "binds": [
-         {
-          "from": 40,
-          "text": "Your mount"
-         }
-        ]
+        "role": "Free",
+        "binds": []
        },
        {
         "key": "Shift+C",
-        "role": "Food alone",
-        "binds": [
-         {
-          "from": 6,
-          "text": "Food"
-         }
-        ]
+        "role": "Free",
+        "binds": []
        },
        {
         "key": "Shift+X",
-        "role": "Recall",
-        "binds": [
-         {
-          "from": 1,
-          "text": "Hearthstone"
-         }
-        ]
+        "role": "Free",
+        "binds": []
        }
       ]
      }
     ],
     "no_key": [],
     "notes": [
-     "Level 4 is the one swap on bar 1: **Frostbolt** takes Q and **Fireball** leaves the bar. On the Shift bar, **Ice Armor** takes over from **Frost Armor** at 30.",
+     "Level 4 is the one swap on bar 1: **Frostbolt** takes Q and **Fireball** leaves the bar.",
      "Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.",
-     "Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free; **Cone of Cold** on 1 is a fair use if you want a second slow at hand.",
-     "The single-target rotation never casts the three pack spells on Shift+E, Shift+R and Shift+F. They are there for a pull that brings friends.",
-     "The mount comes at 40 in Classic; set Shift+4 when you buy it."
+     "No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The eat-and-drink macro on the keybinds page is a click too.",
+     "**Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.",
+     "Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free.",
+     "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends, and **Cone of Cold** on C for a mob on you with **Frost Nova** down."
     ]
    }
   }

@@ -4,9 +4,10 @@
 
 A personal layout, written 2026-11-04 and moved onto the player's own two action bars on 2026-11-06, for a player of League of Legends
 and Deadlock with a mouse that has two side buttons (WoW shows them as Button 4 and Button 5). League's Q/E/R and F (Flash) hold the
-core rotation, the two thumb buttons the two reaction spells, 1-4 the secondary spells, and the Shift bar the pack spells, the buffs and
-travel. It fits both recommended builds: [Frost](../../leveling/frost.md) and [Arcane-Frost](../../leveling/arcane-frost.md), which adds
-**Arcane Missiles** on **Missile Barrage** procs.
+core rotation, the two thumb buttons the two reaction spells, 1-4 the secondary spells, and the Shift bar the pack spells and the wards.
+Keys are for spells you press in a fight and for the things that help you there: buffs, food, drink, conjuring, the mount and the
+Hearthstone have no key and are clicked between fights. It fits both recommended builds: [Frost](../../leveling/frost.md) and
+[Arcane-Frost](../../leveling/arcane-frost.md), which adds **Arcane Missiles** on **Missile Barrage** procs.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Frost level-by-level guide](../../leveling/frost-by-level.md). This page is the layout at 60, the setup and the macros.
@@ -20,6 +21,8 @@ This file is hand-written and nothing generates or deletes it (`mage/leveling/` 
 - Movement: Strafe Left on A and Strafe Right on D, turning with the right mouse button held, as in Deadlock. That frees Q and E, which
   WoW uses for strafing by default.
 - Interface, Combat: Auto Self Cast on, Self Cast Key Alt, so Alt+key self-casts like League.
+- A side bar without keybinds (Interface, Action Bars: the right bars) for the things you click: armor, Arcane Intellect, Conjure Water,
+  Conjure Food, the eat-and-drink macro, the mount, the Hearthstone.
 
 ## Bar 1: the fight
 
@@ -31,43 +34,43 @@ This file is hand-written and nothing generates or deletes it (`mage/leveling/` 
 | F | Blink (20) | Out of melee, out of a root | Flash |
 | Mouse 5 (front side button) | Fire Blast (6) | The mob will reach you before a bolt lands, it is on you with Nova down, or the finish between a tenth and a fifth of its health | Thumb reaction |
 | Mouse 4 (back side button) | Counterspell (24) | A mob starts casting | Thumb reaction, like Deadlock's parry |
-| 1 | Arcane Missiles (8), Arcane-Frost build only | Whenever Missile Barrage lights up; not while being hit unless the mob is frozen. With the Frost build the key is free: Cone of Cold fits if you want a second slow | Deadlock ability 1 |
+| 1 | Arcane Missiles (8), Arcane-Frost build only | Whenever Missile Barrage lights up; not while being hit unless the mob is frozen. Free with the Frost build | Deadlock ability 1 |
 | 2 | Polymorph (8) | A second mob joins | Deadlock ability 2 |
 | 3 | Mana Shield (20) | Emergency only: mob on you, Nova down, low health | Deadlock ability 3 |
-| 4 | Evocation (20) | Between fights, when it is ready and you are under 40% mana | Deadlock 4, the long cooldown |
-| C | Eat-and-drink macro (below); plain water at 4-5 | Drink below 15% of your mana, eat below two thirds of your health (below 40% with the Arcane-Frost build's tuned rule): one press starts both | A consumable key next to the movement hand |
+| 4 | Evocation (20) | Between fights, when it is ready and you are under 40% mana. The one between-fights spell with a key: a cooldown and a mana rule make it a decision. Click it instead if you want 4 free | Deadlock 4, the long cooldown |
+| C | Cone of Cold (26) | A mob on you with Frost Nova down: slow it and walk; and packs | A reaction key next to the movement hand |
 | Middle mouse | Shoot (wand) | Finishing hits on a mob that is almost dead; while the mob closes if Fire Blast is down | The weapon attack |
 
 ## Bar 2: the same keys with Shift
 
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
-| Shift+Q | Presence of Mind macro (53, talent), Arcane-Frost build only | At the pull whenever it is ready, every 3 minutes: an instant Frostbolt |
+| Shift+Q | Presence of Mind macro (53, talent), Arcane-Frost build only | At the pull whenever it is ready, every 3 minutes: an instant Frostbolt. Free with the Frost build |
 | Shift+E | Arcane Explosion (14) | Packs: several mobs on you |
 | Shift+R | Blizzard (20) | Packs: on a frozen or slowed group |
-| Shift+F | Cone of Cold (26) | Packs, or to slow a mob you want to walk away from |
-| Shift+Mouse 5 | Frost Armor (1), Ice Armor from 30 | When it runs out |
-| Shift+Mouse 4 | Arcane Intellect (1) | When it runs out |
-| Shift+1 | Conjure Water (4) | Between fights, when the stack runs low |
-| Shift+2 | Conjure Food (6) | Between fights, when the stack runs low |
+| Shift+F | Free | |
+| Shift+Mouse 5 | Fire Ward (20) | A fire caster is on you: absorbs its next spells |
+| Shift+Mouse 4 | Frost Ward (22) | A frost caster is on you |
+| Shift+1 | Free; Ice Barrier with the hand-made Frost build | Before every pull, with that build |
+| Shift+2 | Free; Cold Snap with the hand-made Frost build | Frost Nova has more than 8 seconds of cooldown left and the mob still has 40% of its health |
 | Shift+3 | Remove Lesser Curse (18) | A curse is on you |
-| Shift+4 | Your mount (40 in Classic) | Travel |
-| Shift+C | Conjured food alone | Only if the macro's food line ever stops working |
-| Shift+X | Hearthstone | The recall key |
+| Shift+4 | Free | |
+| Shift+C | Free | |
+| Shift+X | Free | |
 
-The single-target rotation never casts the three pack spells on Shift+E, Shift+R and Shift+F; they are for the AoE build under Other
-builds on the Frost page, and for a pull that brings friends. The hand-made Frost build (the alternative on the Frost page) has Ice
-Barrier (before every pull) and Cold Snap: put them on Shift+3 and key 1.
+The single-target rotation never casts Cone of Cold, Arcane Explosion or Blizzard; they are for the AoE build under Other builds on the
+Frost page and for a pull that brings friends. Free slots stay free until something earns them.
 
-## No key needed
+## No key: click these between fights
 
-Tab (target nearest enemy) and Space (jump) stay on WoW's defaults. Frost Blast (trained at 24) is never cast by the list. Slow Fall,
-Dampen Magic and the teleports are fine in the spellbook or on a bar you click.
+Frost Armor (Ice Armor from 30), Arcane Intellect, Conjure Water, Conjure Food, the eat-and-drink macro, your mount (40 in Classic),
+the Hearthstone, Slow Fall and the teleports. Tab (target nearest enemy) and Space (jump) stay on WoW's defaults. Frost Blast (trained at
+24) is never cast by the list.
 
 ## Macros (Esc, Macros, New; pick the question-mark icon so the button shows the spell or the item count)
 
-Presence of Mind and the Frostbolt in one press, on Shift+Q. Presence of Mind is off the global cooldown in the Classic client, so the second
-line fires at once; if it does not in Forever, press the two separately.
+Presence of Mind and the Frostbolt in one press, on Shift+Q (Arcane-Frost build). Presence of Mind is off the global cooldown in the
+Classic client, so the second line fires at once; if it does not in Forever, press the two separately.
 
 ```
 #showtooltip Presence of Mind
@@ -75,7 +78,7 @@ line fires at once; if it does not in Forever, press the two separately.
 /cast Frostbolt
 ```
 
-Eat and drink in one press, on C. Food and drink share no cooldown in the Classic client, so the meal starts right after the drink.
+Eat and drink in one click, on the side bar. Food and drink share no cooldown in the Classic client, so the meal starts right after the drink.
 
 ```
 #showtooltip

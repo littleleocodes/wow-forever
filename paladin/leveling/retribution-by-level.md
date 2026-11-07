@@ -22,7 +22,7 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 ## Keybinds by level
 
-Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. The scheme matches your mage: Q the strike you press most, E the control, R the payoff after it, F the escape, the thumb buttons the reactions, and the Shift bar a stronger or wider version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Setup and the macro: the [paladin keybinds page](../research/leveling/keybinds.md).
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme matches your mage: Q the strike you press most, E the control, R the payoff after it, F the escape, the thumb buttons the reactions. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macro: the [paladin keybinds page](../research/leveling/keybinds.md).
 
 **Action bar 1: the fight**
 
@@ -38,7 +38,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | Extra damage on Undead and Demons | — | — | — | — | — | **Exorcism** | Exorcism |
 | 3 | The quick heal | — | — | — | — | — | **Flash of Light** | Flash of Light |
 | 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify; **Cleanse** from 42 | Cleanse |
-| C | Drink | **Water** | Water | Water | Water | Water | Water | Water |
+| C | Free | — | — | — | — | — | — | — |
 | Middle mouse | Start swinging | **Attack** | Attack | Attack | Attack | Attack | Attack | Attack |
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
@@ -51,25 +51,25 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+F | Escape from roots and slows | — | — | — | — | **Blessing of Freedom** from 18 | Blessing of Freedom | Blessing of Freedom |
 | Shift+Mouse 5 | A second save: no physical damage | — | — | — | — | **Blessing of Protection** | Blessing of Protection | Blessing of Protection |
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead |
-| Shift+1 | Buff: your blessing | — | **Blessing of Might** | Blessing of Might | Blessing of Might | Blessing of Might | Blessing of Might | Blessing of Might |
+| Shift+1 | Free | — | — | — | — | — | — | — |
 | Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | **Holy Wrath** from 50 |
-| Shift+3 | Bandage, if you train First Aid | **Bandage** | Bandage | Bandage | Bandage | Bandage | Bandage | Bandage |
-| Shift+4 | Travel | — | — | — | — | — | **Your mount** from 40 | Your mount |
-| Shift+C | Food | **Food** | Food | Food | Food | Food | Food | Food |
-| Shift+X | Recall | **Hearthstone** | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone | Hearthstone |
+| Shift+3 | Free | — | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — |
 
 - The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. Shift+E does both in two presses if you like macros.
 - Two swaps on bar 1 in the whole climb: **Seal of Command** takes 1 at level 20, and **Divine Shield** takes F at 34.
 - Levels 1-5 fight with two keys: 1 for the seal and R for **Judgement** from 4. The middle mouse button starts your swings; a right-click on the mob does the same.
-- Shift mirrors the key under it: Shift+Q is the pack version of your strike, Shift+F the second escape, Shift+1 the buff next to your seal, Shift+2 the area version of **Exorcism**.
-- **Devotion Aura** needs no key. Click it once when you log in.
+- The seal keeps its key: it lasts 30 seconds, so you recast it in the middle of longer fights, and the stun combo needs **Seal of Command** up.
+- No key: **Blessing of Might**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs.
 
 ## Levels 1-3: Seal of Righteousness
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
 
-**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness; C = Water; Middle mouse = Attack; Shift+3 = Bandage; Shift+C = Food; Shift+X = Hearthstone.
+**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness; Middle mouse = Attack.
 
 **Your keys in this stage:** 1 Seal of Righteousness.
 
@@ -87,7 +87,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Might (4), **Judgement** (4).
 
-**Keys to set:** R = Judgement; Shift+1 = Blessing of Might.
+**Keys to set:** R = Judgement.
 
 **Your keys in this stage:** R Judgement, 1 Seal of Righteousness.
 
@@ -176,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 20 Seal of Command, 21-22 Pursuit of Justice, 23 Conviction, 24 Improved Judgement, 25 Sacred Arbiter, 26 Improved Judgement, 27-29 Two-Handed Weapon Specialization, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41-43 Divine Intellect.
 
-**Keys to set:** 1 = Seal of Command; 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); Shift+4 = Your mount (at 40); 4 = Cleanse (at 42).
+**Keys to set:** 1 = Seal of Command; 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
 **Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Command, 3 Flash of Light.
 
