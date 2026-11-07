@@ -115,7 +115,218 @@
    "other": [
     "Discipline and Holy have their own leveling pages in this folder, for a priest who wants to arrive at 60 as a healer. Both are slower per kill.",
     "After 40, Shadow is among the faster levelers in the fight lab. Before 20 every priest plays the same wand game."
-   ]
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [priest keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your filler, pressed most",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Smite"
+         },
+         {
+          "from": 20,
+          "spell": "Mind Flay"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Control: fear what is on you",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Psychic Scream"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The big hit, on cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Mind Blast"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "The save: the shield",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Power Word: Shield"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: the finisher",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Shadow Word: Death"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: the pull",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Shadow Word: Pain"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "The opener cooldown",
+        "binds": [
+         {
+          "from": 39,
+          "spell": "Vampiric Embrace"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "3",
+        "role": "The emergency heal (not in Shadowform)",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Flash Heal"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "The panic heal, on a long cooldown",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Desperate Prayer"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Middle mouse",
+        "role": "The wand: your filler before 20, the finisher after",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Wand"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+E",
+        "role": "Control a second Undead mob",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Shackle Undead"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Strip a mob's buff or your debuff",
+        "binds": [
+         {
+          "from": 18,
+          "spell": "Dispel Magic"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Cure a disease",
+        "binds": [
+         {
+          "from": 14,
+          "spell": "Cure Disease"
+         }
+        ]
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [],
+    "notes": [
+     "One swap on bar 1: **Mind Flay** takes Q at 20 and **Smite** leaves the bar for good.",
+     "No key: **Power Word: Fortitude**, **Inner Fire**, **Shadowform** (a click once, it stays on), **Renew** (a between-fights heal before 40), food, water, the mount and the Hearthstone.",
+     "Levels 1-9 fight with Q, Mouse 4 and the middle mouse button. The wand is your filler until 20.",
+     "**Devouring Plague** and **Holy Fire** are never cast by the tuned rotation: no key."
+    ]
+   }
   }
  ]
 }

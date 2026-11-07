@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best druid spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](feral-combat-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md)** (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-7)
 
 **Signature spells:** 81% of the damage at level 60 in the fight lab comes from melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast in every fight).

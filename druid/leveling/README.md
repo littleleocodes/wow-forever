@@ -10,6 +10,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 2 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 34 | +21% |
 | 3 | [Balance](balance.md) 🔬 | 42 | +51% |
 
+**Level by level:** [Feral Combat](feral-combat-by-level.md) (what to press from level 1 as each spell and talent arrives).
+
+**Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
+
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 
 ---

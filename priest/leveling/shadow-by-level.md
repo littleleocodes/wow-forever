@@ -17,9 +17,56 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 | 32-38 | **Shadow Word: Death**, an instant finisher. With **Early Demise** at 35 it is for any mob below 20% health. |
 | 39-60 | **Vampiric Embrace** (talent, 39) opens the pull and heals you as you deal damage. **Shadowform** (talent, 40) stays on for good. |
 
+## Keybinds by level
+
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [priest keybinds page](keybinds.md).
+
+**Action bar 1: the fight**
+
+| Key | Its job | 1-3 | 4-9 | 10-19 | 20-31 | 32-38 | 39-60 |
+|---|---|---|---|---|---|---|---|
+| Q | Your filler, pressed most | **Smite** | Smite | Smite | **Mind Flay** | Mind Flay | Mind Flay |
+| E | Control: fear what is on you | — | — | **Psychic Scream** from 14 | Psychic Scream | Psychic Scream | Psychic Scream |
+| R | The big hit, on cooldown | — | — | **Mind Blast** | Mind Blast | Mind Blast | Mind Blast |
+| F | The save: the shield | — | **Power Word: Shield** from 6 | Power Word: Shield | Power Word: Shield | Power Word: Shield | Power Word: Shield |
+| Mouse 5 | Thumb reaction: the finisher | — | — | — | — | **Shadow Word: Death** | Shadow Word: Death |
+| Mouse 4 | Thumb: the pull | — | **Shadow Word: Pain** | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain |
+| 1 | The opener cooldown | — | — | — | — | — | **Vampiric Embrace** |
+| 2 | Free | — | — | — | — | — | — |
+| 3 | The emergency heal (not in Shadowform) | — | — | — | **Flash Heal** | Flash Heal | Flash Heal |
+| 4 | The panic heal, on a long cooldown | — | — | **Desperate Prayer** | Desperate Prayer | Desperate Prayer | Desperate Prayer |
+| C | Free | — | — | — | — | — | — |
+| Middle mouse | The wand: your filler before 20, the finisher after | **Wand** | Wand | Wand | Wand | Wand | Wand |
+
+**Action bar 2: the same keys with Shift**
+
+| Key | Its job | 1-3 | 4-9 | 10-19 | 20-31 | 32-38 | 39-60 |
+|---|---|---|---|---|---|---|---|
+| Shift+Q | Free | — | — | — | — | — | — |
+| Shift+E | Control a second Undead mob | — | — | — | **Shackle Undead** | Shackle Undead | Shackle Undead |
+| Shift+R | Free | — | — | — | — | — | — |
+| Shift+F | Free | — | — | — | — | — | — |
+| Shift+Mouse 5 | Strip a mob's buff or your debuff | — | — | **Dispel Magic** from 18 | Dispel Magic | Dispel Magic | Dispel Magic |
+| Shift+Mouse 4 | Cure a disease | — | — | **Cure Disease** from 14 | Cure Disease | Cure Disease | Cure Disease |
+| Shift+1 | Free | — | — | — | — | — | — |
+| Shift+2 | Free | — | — | — | — | — | — |
+| Shift+3 | Free | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — |
+
+- One swap on bar 1: **Mind Flay** takes Q at 20 and **Smite** leaves the bar for good.
+- No key: **Power Word: Fortitude**, **Inner Fire**, **Shadowform** (a click once, it stays on), **Renew** (a between-fights heal before 40), food, water, the mount and the Hearthstone.
+- Levels 1-9 fight with Q, Mouse 4 and the middle mouse button. The wand is your filler until 20.
+- **Devouring Plague** and **Holy Fire** are never cast by the tuned rotation: no key.
+
 ## Levels 1-3: Smite, until you own a wand
 
 **The trainer teaches:** Lesser Heal (1), Power Word: Fortitude (1), **Smite** (1).
+
+**Keys to set:** Q = Smite; Middle mouse = Wand.
+
+**Your keys in this stage:** Q Smite.
 
 **What to press**, top to bottom:
 
@@ -32,6 +79,10 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 ## Levels 4-9: Shadow Word: Pain
 
 **The trainer teaches:** **Shadow Word: Pain** (4), Power Word: Shield (6), Fade (8), Renew (8).
+
+**Keys to set:** Mouse 4 = Shadow Word: Pain; F = Power Word: Shield (at 6).
+
+**Your keys in this stage:** Mouse 4 Shadow Word: Pain.
 
 **What to press**, top to bottom:
 
@@ -51,6 +102,10 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Mind Blast at 16; Shadow Word: Pain at 10, 18.
 
 **Talents:** 10-14 Spirit Tap, 15-18 Shadow Focus, 19 Shadow Reach.
+
+**Keys to set:** R = Mind Blast; 4 = Desperate Prayer; E = Psychic Scream (at 14); Shift+Mouse 4 = Cure Disease (at 14); Shift+Mouse 5 = Dispel Magic (at 18).
+
+**Your keys in this stage:** R Mind Blast, F Power Word: Shield, Mouse 4 Shadow Word: Pain.
 
 **What to press**, top to bottom:
 
@@ -75,6 +130,10 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 
 **Talents:** 20 Mind Flay, 21-22 Improved Mind Flay, 23 Shadow Reach, 24 Improved Mind Blast, 25-27 Dark Inspiration, 28-30 Shadow Weaving, 31 Improved Mind Blast.
 
+**Keys to set:** Q = Mind Flay; 3 = Flash Heal; Shift+E = Shackle Undead.
+
+**Your keys in this stage:** Q Mind Flay, E Psychic Scream, R Mind Blast, F Power Word: Shield, Mouse 4 Shadow Word: Pain, 3 Flash Heal.
+
 **What to press**, top to bottom:
 
 1. **Shadow Word: Pain** to pull.
@@ -96,6 +155,10 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Mind Blast at 34; Mind Flay at 36; Shadow Word: Pain at 34.
 
 **Talents:** 32-34 Improved Mind Blast, 35 Early Demise, 36-38 Darkness.
+
+**Keys to set:** Mouse 5 = Shadow Word: Death.
+
+**Your keys in this stage:** Q Mind Flay, E Psychic Scream, R Mind Blast, F Power Word: Shield, Mouse 5 Shadow Word: Death, Mouse 4 Shadow Word: Pain, 3 Flash Heal.
 
 **What to press**, top to bottom:
 
@@ -119,6 +182,10 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Mind Blast at 40, 46, 52, 58; Mind Flay at 44, 52, 60; Shadow Word: Death at 40, 48, 56; Shadow Word: Pain at 42, 50, 58.
 
 **Talents:** 39 Vampiric Embrace, 40 Shadowform, 41-42 Darkness, 43-44 Dark Inspiration, 45-49 Twin Disciplines, 50-52 Twilight Focus, 53-55 Mental Strength, 56-57 Power in Light, 58-60 Meditation.
+
+**Keys to set:** 1 = Vampiric Embrace.
+
+**Your keys in this stage:** Q Mind Flay, E Psychic Scream, R Mind Blast, Mouse 5 Shadow Word: Death, Mouse 4 Shadow Word: Pain, 1 Vampiric Embrace, 3 Flash Heal.
 
 **What to press**, top to bottom:
 

@@ -19,9 +19,56 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 | 35-39 | **Improved Slam** (talent) makes **Slam** the better use of spare rage, ahead of Heroic Strike. |
 | 40-60 | **Mortal Strike** (talent): your main attack from here to 60, whenever it is ready. |
 
+## Keybinds by level
+
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the opener macro: the [warrior keybinds page](keybinds.md).
+
+**Action bar 1: the fight**
+
+| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|
+| Q | Your main strike; the macro also starts your swings | **Heroic Strike** | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | **Mortal Strike** |
+| E | Engage: the charge and its stun | — | **Charge** | Charge | Charge | Charge | Charge | Charge | Charge |
+| R | The bleed, once per mob | — | **Rend** | Rend | Rend | Rend | Rend | Rend | Rend |
+| F | Escape: scatter what is on you | — | — | — | — | **Intimidating Shout** from 22 | Intimidating Shout | Intimidating Shout | Intimidating Shout |
+| Mouse 5 | Thumb reaction: it lights up after a dodge | — | — | — | **Overpower** | Overpower | Overpower | Overpower | Overpower |
+| Mouse 4 | Thumb: rage before the charge | — | — | **Bloodrage** | Bloodrage | Bloodrage | Bloodrage | Bloodrage | Bloodrage |
+| 1 | Lights up after a kill | — | — | — | — | **Victory Rush** | Victory Rush | Victory Rush | Victory Rush |
+| 2 | The finisher below 20% | — | — | — | — | — | **Execute** | Execute | Execute |
+| 3 | Stop a mob that runs | — | **Hamstring** from 8 | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring |
+| 4 | The long cooldown | — | — | — | — | **Retaliation** | Retaliation | Retaliation | Retaliation |
+| C | Spare rage once Mortal Strike has Q | — | — | — | — | — | — | — | **Heroic Strike** |
+| Middle mouse | Free | — | — | — | — | — | — | — | — |
+
+**Action bar 2: the same keys with Shift**
+
+| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Spare rage with Improved Slam | — | — | — | — | — | — | **Slam** | Slam |
+| Shift+E | Packs: the clap around you | — | **Thunder Clap** from 6 | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap |
+| Shift+R | Packs: every strike hits a second mob | — | — | — | — | — | — | **Sweeping Strikes** from 39 | Sweeping Strikes |
+| Shift+F | Free | — | — | — | — | — | — | — | — |
+| Shift+Mouse 5 | Packs: the strike that hits two | — | — | — | — | **Cleave** | Cleave | Cleave | Cleave |
+| Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — |
+| Shift+1 | Free | — | — | — | — | — | — | — | — |
+| Shift+2 | Free | — | — | — | — | — | — | — | — |
+| Shift+3 | Free | — | — | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — | — |
+
+- One swap on bar 1: **Mortal Strike** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C.
+- No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.
+- Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.
+- The single-target rotation never casts **Thunder Clap**, **Cleave** or **Sweeping Strikes**. They are there for a pull that brings friends.
+
 ## Levels 1-3: Heroic Strike
 
 **The trainer teaches:** **Battle Shout** (1), Battle Stance (1), **Heroic Strike** (1).
+
+**Keys to set:** Q = Heroic Strike.
+
+**Your keys in this stage:** Q Heroic Strike.
 
 **What to press**, top to bottom:
 
@@ -37,6 +84,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 **The trainer teaches:** **Charge** (4), **Rend** (4), Thunder Clap (6), Hamstring (8).
 
 **New ranks to buy:** Heroic Strike at 8.
+
+**Keys to set:** E = Charge; R = Rend; Shift+E = Thunder Clap (at 6); 3 = Hamstring (at 8).
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend.
 
 **What to press**, top to bottom:
 
@@ -57,6 +108,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 
 **Talents:** 10-11 Improved Rend.
 
+**Keys to set:** Mouse 4 = Bloodrage.
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 4 Bloodrage.
+
 **What to press**, top to bottom:
 
 1. **Bloodrage** while you are above 45% of your health, then **Charge** in.
@@ -76,6 +131,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Battle Shout at 12; Heroic Strike at 16.
 
 **Talents:** 12 Improved Rend, 13-14 Deflection, 15-16 Improved Overpower, 17-18 Improved Charge, 19 Improved Tactical Mastery.
+
+**Keys to set:** Mouse 5 = Overpower.
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage.
 
 **What to press**, top to bottom:
 
@@ -98,6 +157,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 
 **Talents:** 20-22 Deep Wounds, 23 Improved Tactical Mastery.
 
+**Keys to set:** 1 = Victory Rush; 4 = Retaliation; Shift+Mouse 5 = Cleave; F = Intimidating Shout (at 22).
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush.
+
 **What to press**, top to bottom:
 
 1. **Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.
@@ -118,6 +181,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Battle Shout at 32; Charge at 26; Execute at 32; Heroic Strike at 24, 32; Overpower at 28; Rend at 30.
 
 **Talents:** 24 Improved Tactical Mastery, 25 Anger Management, 26-28 Two-Handed Weapon Specialization, 29 Impale, 30-31 Bloodthrill, 32-34 Weaponmaster.
+
+**Keys to set:** 2 = Execute.
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute.
 
 **What to press**, top to bottom:
 
@@ -141,6 +208,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 
 **Talents:** 35-36 Improved Slam, 37-38 Weaponmaster, 39 Sweeping Strikes.
 
+**Keys to set:** Shift+Q = Slam; Shift+R = Sweeping Strikes (at 39).
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, Shift+Q Slam.
+
 **What to press**, top to bottom:
 
 1. **Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.
@@ -162,6 +233,10 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 **New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Execute at 40, 48, 56; Heroic Strike at 40, 48, 56, 60; Mortal Strike at 48, 54, 60; Overpower at 44, 60; Rend at 40, 50, 60; Slam at 46, 54.
 
 **Talents:** 40 Mortal Strike, 41-45 Cruelty, 46 Impale, 47-50 Unbridled Wrath, 51 Lingering Rage, 52-56 Enrage, 57-58 Improved Execute, 59-60 Improved Bloodrage.
+
+**Keys to set:** Q = Mortal Strike; C = Heroic Strike.
+
+**Your keys in this stage:** Q Mortal Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, C Heroic Strike, Shift+Q Slam.
 
 **What to press**, top to bottom:
 

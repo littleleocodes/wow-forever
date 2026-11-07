@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best shaman spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](enhancement-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (12/32/7) — [open the talent tree](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.

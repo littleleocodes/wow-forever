@@ -11,6 +11,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Arcane](arcane.md) 🔬 | 32 | +9% |
 | 4 | [Fire](fire.md) 🔬 | 39 | +31% |
 
+**Level by level:** [Frost](frost-by-level.md) (what to press from level 1 as each spell and talent arrives).
+
+**Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
+
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 
 ---

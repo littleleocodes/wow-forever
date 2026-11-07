@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best rogue spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](combat-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Combat — Leveling](../research/leveling/builds/combat-open-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/rogue/60/02531320201101-321033001201232025--7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.

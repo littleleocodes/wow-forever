@@ -140,7 +140,230 @@
    "other": [
     "Fury with a weapon in each hand, and Protection for a warrior who wants to arrive at 60 as a tank, have their own pages in this folder.",
     "Pulling two mobs at a time works from 39 with **Sweeping Strikes**. Before that, one at a time is faster and safer."
-   ]
+   ],
+   "keys": {
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the opener macro: the [warrior keybinds page](keybinds.md).",
+    "bars": [
+     {
+      "title": "Action bar 1: the fight",
+      "slots": [
+       {
+        "key": "Q",
+        "role": "Your main strike; the macro also starts your swings",
+        "binds": [
+         {
+          "from": 1,
+          "spell": "Heroic Strike"
+         },
+         {
+          "from": 40,
+          "spell": "Mortal Strike"
+         }
+        ]
+       },
+       {
+        "key": "E",
+        "role": "Engage: the charge and its stun",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Charge"
+         }
+        ]
+       },
+       {
+        "key": "R",
+        "role": "The bleed, once per mob",
+        "binds": [
+         {
+          "from": 4,
+          "spell": "Rend"
+         }
+        ]
+       },
+       {
+        "key": "F",
+        "role": "Escape: scatter what is on you",
+        "binds": [
+         {
+          "from": 22,
+          "spell": "Intimidating Shout"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 5",
+        "role": "Thumb reaction: it lights up after a dodge",
+        "binds": [
+         {
+          "from": 12,
+          "spell": "Overpower"
+         }
+        ]
+       },
+       {
+        "key": "Mouse 4",
+        "role": "Thumb: rage before the charge",
+        "binds": [
+         {
+          "from": 10,
+          "spell": "Bloodrage"
+         }
+        ]
+       },
+       {
+        "key": "1",
+        "role": "Lights up after a kill",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Victory Rush"
+         }
+        ]
+       },
+       {
+        "key": "2",
+        "role": "The finisher below 20%",
+        "binds": [
+         {
+          "from": 24,
+          "spell": "Execute"
+         }
+        ]
+       },
+       {
+        "key": "3",
+        "role": "Stop a mob that runs",
+        "binds": [
+         {
+          "from": 8,
+          "spell": "Hamstring"
+         }
+        ]
+       },
+       {
+        "key": "4",
+        "role": "The long cooldown",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Retaliation"
+         }
+        ]
+       },
+       {
+        "key": "C",
+        "role": "Spare rage once Mortal Strike has Q",
+        "binds": [
+         {
+          "from": 40,
+          "spell": "Heroic Strike"
+         }
+        ]
+       },
+       {
+        "key": "Middle mouse",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     },
+     {
+      "title": "Action bar 2: the same keys with Shift",
+      "slots": [
+       {
+        "key": "Shift+Q",
+        "role": "Spare rage with Improved Slam",
+        "binds": [
+         {
+          "from": 35,
+          "spell": "Slam"
+         }
+        ]
+       },
+       {
+        "key": "Shift+E",
+        "role": "Packs: the clap around you",
+        "binds": [
+         {
+          "from": 6,
+          "spell": "Thunder Clap"
+         }
+        ]
+       },
+       {
+        "key": "Shift+R",
+        "role": "Packs: every strike hits a second mob",
+        "binds": [
+         {
+          "from": 39,
+          "spell": "Sweeping Strikes"
+         }
+        ]
+       },
+       {
+        "key": "Shift+F",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+Mouse 5",
+        "role": "Packs: the strike that hits two",
+        "binds": [
+         {
+          "from": 20,
+          "spell": "Cleave"
+         }
+        ]
+       },
+       {
+        "key": "Shift+Mouse 4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+1",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+2",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+3",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+4",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+C",
+        "role": "Free",
+        "binds": []
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
+       }
+      ]
+     }
+    ],
+    "no_key": [
+     "Battle Shout"
+    ],
+    "notes": [
+     "One swap on bar 1: **Mortal Strike** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C.",
+     "No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.",
+     "Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.",
+     "The single-target rotation never casts **Thunder Clap**, **Cleave** or **Sweeping Strikes**. They are there for a pull that brings friends."
+    ]
+   }
   }
  ]
 }

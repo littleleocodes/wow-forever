@@ -238,10 +238,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   changes; the page gets a "Keybinds by level" table (keys by stages) and each stage a "Keys to set" line, and `--check` fails a bind
   whose spell is not known at its level and warns when a stage presses a spell no key holds. The scheme is the user's own
   (`<class>/leveling/keybinds.md`, hand-written: setup, the layout at 60, macros; the one file `render_modes.py`'s cleanup of that folder leaves): Q the most-pressed attack, E the control,
-  R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest, Z and X the consumables. Mage and paladin
-  have one. Keep the
+  R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest. Keys hold fight spells and helpful things only, never buffs, food, drink, conjuring, the mount or the Hearthstone. No key holds Attack (user, 2026-11-07): a melee class's opening key is a macro with a `/startattack` line and the middle mouse button is free; casters keep the wand there. Keep the
   "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
-  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow).
+  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling); owed: warlock.
 - **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`
   chains (refresh →) effects → calibrate ↔ optimize until the optimizer's leveling build repeats (new builds are saved as
   `<class>/research/leveling/fightlab/candidates/cand-<tag>-rN.json`) → race (hand draft vs every candidate) → report

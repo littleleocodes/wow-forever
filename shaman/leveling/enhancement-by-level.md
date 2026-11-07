@@ -20,9 +20,57 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 | 35-39 | **Maelstrom Weapon** (talent): your hits build stacks, and at 5 your **Lightning Bolt** is instant. |
 | 40-60 | **Rage of the Farseer** (talent) opens a fight whenever it is ready. Nothing else new: buy every new rank. |
 
+## Keybinds by level
+
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [shaman keybinds page](keybinds.md).
+
+**Action bar 1: the fight**
+
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q | Your shock, pressed most; the macro also starts your swings | — | **Earth Shock** | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock |
+| E | Control: slow a mob that runs or that you leave | — | — | — | — | **Frost Shock** | Frost Shock | Frost Shock | Frost Shock | Frost Shock |
+| R | The payoff: your strike, then the shock hits harder | — | — | — | — | — | **Stormstrike** | Stormstrike | Stormstrike | Stormstrike |
+| F | The save: mobs turn on the totem while you heal | — | — | **Stoneclaw Totem** | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem |
+| Mouse 5 | Thumb reaction: the quick heal | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave | **Lesser Healing Wave** | Lesser Healing Wave | Lesser Healing Wave | Lesser Healing Wave | Lesser Healing Wave |
+| Mouse 4 | Thumb reaction: eat a caster's spell | — | — | — | — | — | — | **Grounding Totem** | Grounding Totem | Grounding Totem |
+| 1 | The instant bolt at 5 Maelstrom stacks (an opener at 1-3 if you like) | **Lightning Bolt** | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt |
+| 2 | Your pull totem | — | — | — | **Searing Totem** | Searing Totem | Searing Totem | Searing Totem | Searing Totem | Searing Totem |
+| 3 | Free | — | — | — | — | — | — | — | — | — |
+| 4 | The opener cooldown | — | — | — | — | — | — | — | — | **Rage of the Farseer** |
+| C | The big heal, in a stun or behind the totem | — | — | — | — | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave | Healing Wave |
+| Middle mouse | Free | — | — | — | — | — | — | — | — | — |
+
+**Action bar 2: the same keys with Shift**
+
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Packs: the fire shock to spread | — | — | — | **Flame Shock** | Flame Shock | Flame Shock | Flame Shock | Flame Shock | Flame Shock |
+| Shift+E | Packs: the blast around you | — | — | — | **Fire Nova** from 12 | Fire Nova | Fire Nova | Fire Nova | Fire Nova | Fire Nova |
+| Shift+R | Packs: the bolt that jumps | — | — | — | — | — | — | **Chain Lightning** from 32 | Chain Lightning | Chain Lightning |
+| Shift+F | Escape: slow everything around you | — | **Earthbind Totem** from 6 | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem |
+| Shift+Mouse 5 | A heal that keeps ticking | — | — | — | — | **Healing Stream Totem** | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem |
+| Shift+Mouse 4 | Break a fear | — | — | — | **Tremor Totem** from 18 | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem |
+| Shift+1 | Packs: the fire totem | — | — | — | — | — | **Magma Totem** from 26 | Magma Totem | Magma Totem | Magma Totem |
+| Shift+2 | Strip a mob's buff | — | — | — | **Purge** from 12 | Purge | Purge | Purge | Purge | Purge |
+| Shift+3 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — | — | — |
+
+- Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.
+- **Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.
+- No key: **Lightning Shield**, the weapon imbue, **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.
+- Right-click the mob to start swinging at levels 1-3. From 4, Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
+- The single-target rotation never casts **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends.
+
 ## Levels 1-3: Swing
 
 **The trainer teaches:** Healing Wave (1), **Lightning Bolt** (1), Rockbiter Weapon (1).
+
+**Keys to set:** Mouse 5 = Healing Wave; 1 = Lightning Bolt.
+
+**Your keys in this stage:** 1 Lightning Bolt.
 
 **What to press**, top to bottom:
 
@@ -35,6 +83,10 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 ## Levels 4-7: Earth Shock
 
 **The trainer teaches:** **Earth Shock** (4), Stoneskin Totem (4), Earthbind Totem (6).
+
+**Keys to set:** Q = Earth Shock; Shift+F = Earthbind Totem (at 6).
+
+**Your keys in this stage:** Q Earth Shock.
 
 **What to press**, top to bottom:
 
@@ -52,9 +104,13 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **New ranks to buy:** Earth Shock at 8.
 
+**Keys to set:** F = Stoneclaw Totem.
+
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Healing Wave.
+
 **What to press**, top to bottom:
 
-1. Keep **Lightning Shield** up.
+1. **Lightning Shield** up before the pull.
 2. **Earth Shock** whenever it is ready.
 
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.
@@ -69,10 +125,14 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 10-14 Thundering Strikes, 15-17 Mental Dexterity, 18-19 Improved Lightning Shield.
 
+**Keys to set:** 2 = Searing Totem; Shift+Q = Flame Shock; Shift+E = Fire Nova (at 12); Shift+2 = Purge (at 12); Shift+Mouse 4 = Tremor Totem (at 18).
+
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Healing Wave, 2 Searing Totem.
+
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
-2. Keep **Lightning Shield** up.
+2. **Lightning Shield** up before the pull.
 3. **Earth Shock** whenever it is ready.
 
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.
@@ -92,10 +152,14 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 20 Shamanistic Focus, 21 Improved Lightning Shield, 22 Anticipation, 23-24 Elemental Weapons.
 
+**Keys to set:** E = Frost Shock; Mouse 5 = Lesser Healing Wave; C = Healing Wave; Shift+Mouse 5 = Healing Stream Totem.
+
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
+
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
-2. Keep **Lightning Shield** up.
+2. **Lightning Shield** up before the pull.
 3. **Earth Shock** whenever it is ready.
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
@@ -111,10 +175,14 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 25 Stormstrike, 26-29 Flurry.
 
+**Keys to set:** R = Stormstrike; Shift+1 = Magma Totem (at 26).
+
+**Your keys in this stage:** Q Earth Shock, R Stormstrike, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
+
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
-2. Keep **Lightning Shield** up.
+2. **Lightning Shield** up before the pull.
 3. **Stormstrike** whenever it is ready.
 4. **Earth Shock** whenever the shock cooldown is free. Cast after a **Stormstrike**, it takes the 20% bonus.
 
@@ -132,10 +200,14 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 30-31 Mental Quickness, 32 Flurry, 33 Spirit Weapons, 34 Improved Stormstrike.
 
+**Keys to set:** Mouse 4 = Grounding Totem; Shift+R = Chain Lightning (at 32).
+
+**Your keys in this stage:** Q Earth Shock, R Stormstrike, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
+
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
-2. Keep **Lightning Shield** up.
+2. **Lightning Shield** up before the pull.
 3. **Stormstrike** whenever it is ready.
 4. **Earth Shock** whenever the shock cooldown is free.
 
@@ -154,10 +226,12 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 35-39 Maelstrom Weapon.
 
+**Your keys in this stage:** Q Earth Shock, R Stormstrike, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 1 Lightning Bolt, 2 Searing Totem.
+
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
-2. Keep **Lightning Shield** up.
+2. **Lightning Shield** up before the pull.
 3. With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.
 4. **Stormstrike** whenever it is ready.
 5. **Earth Shock** whenever the shock cooldown is free.
@@ -177,11 +251,15 @@ What an Enhancement shaman presses from level 1 to 60, stage by stage, as the tr
 
 **Talents:** 40 Rage of the Farseer, 41 Improved Stormstrike, 42-46 Tidal Focus, 47-51 Concussion, 52-56 Convection, 57 Elemental Focus, 58 Elemental Warding, 59-60 Totemic Focus.
 
+**Keys to set:** 4 = Rage of the Farseer.
+
+**Your keys in this stage:** Q Earth Shock, R Stormstrike, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 1 Lightning Bolt, 2 Searing Totem, 4 Rage of the Farseer.
+
 **What to press**, top to bottom:
 
 1. **Rage of the Farseer** at the start of a fight whenever it is ready.
 2. **Searing Totem** as you pull, while you have more than half your mana.
-3. Keep **Lightning Shield** up.
+3. **Lightning Shield** up before the pull.
 4. With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.
 5. **Stormstrike** whenever it is ready.
 6. **Earth Shock** whenever the shock cooldown is free.

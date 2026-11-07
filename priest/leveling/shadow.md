@@ -2,6 +2,8 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > Shadow
 
+**Leveling from level 1?** [The rotation level by level](shadow-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Leveling — Shadow](../research/leveling/builds/leveling-shadow.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-7)
 
 **Signature spells:** 82% of the damage at level 60 in the fight lab comes from Shadow Word: Pain, Mind Blast, Mind Flay, Devouring Plague (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast in every fight).

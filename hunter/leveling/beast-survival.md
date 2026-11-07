@@ -6,6 +6,8 @@
 
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](beast-survival-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Beast-Survival — Leveling](../research/leveling/builds/beast-survival-open-leveling.md)** (22/5/24) — [open the talent tree](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.

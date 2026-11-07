@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](arms-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Arms (optimized)](../research/leveling/builds/opt-arms-2h-raid-leveling-st.md)** (42/9/0) — [open the talent tree](https://talentsforever.com/warrior/60/35323213132215231-0504--7)
 
 **Signature spells:** 98% of the damage at level 60 in the fight lab comes from melee, Mortal Strike, Overpower, Slam, Execute, Rend, Whirlwind, Heroic Strike, Deep Wounds (the spec's rule: at least 80%; **Mortal Strike** cast in every fight).

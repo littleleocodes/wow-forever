@@ -1,18 +1,18 @@
 # Mage leveling keybinds (hand-written)
 
-[Mage](../../README.md) > [Leveling research](README.md) > Keybinds
+[Mage](../README.md) > [Leveling (solo)](README.md) > Keybinds
 
 A personal layout, written 2026-11-04 and moved onto the player's own two action bars on 2026-11-06, for a player of League of Legends
 and Deadlock with a mouse that has two side buttons (WoW shows them as Button 4 and Button 5). League's Q/E/R and F (Flash) hold the
 core rotation, the two thumb buttons the two reaction spells, 1-4 the secondary spells, and the Shift bar the pack spells and the wards.
 Keys are for spells you press in a fight and for the things that help you there: buffs, food, drink, conjuring, the mount and the
-Hearthstone have no key and are clicked between fights. It fits both recommended builds: [Frost](../../leveling/frost.md) and
-[Arcane-Frost](../../leveling/arcane-frost.md), which adds **Arcane Missiles** on **Missile Barrage** procs.
+Hearthstone have no key and are clicked between fights. It fits both recommended builds: [Frost](frost.md) and
+[Arcane-Frost](arcane-frost.md), which adds **Arcane Missiles** on **Missile Barrage** procs.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
-[Frost level-by-level guide](../../leveling/frost-by-level.md). This page is the layout at 60, the setup and the macros.
+[Frost level-by-level guide](frost-by-level.md). This page is the layout at 60, the setup and the macros.
 
-This file is hand-written and nothing generates or deletes it (`mage/leveling/` is regenerated, so it lives here). Edit it by hand.
+This file is hand-written: the regeneration that rewrites the rest of this folder leaves it alone. Edit it by hand.
 
 ## Set up first (Esc, Key Bindings and Interface)
 

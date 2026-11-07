@@ -4,6 +4,8 @@
 
 **✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
+**Leveling from level 1?** [The rotation level by level](frost-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
