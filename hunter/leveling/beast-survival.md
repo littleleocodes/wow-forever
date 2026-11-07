@@ -18,11 +18,11 @@
 
 **Not in this build:** **Counterattack**, **Deterrence**, **Expose Prey** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). Send the pet in and walk in behind it. No sting from range: the fight lab levels faster without it.
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** as the mob comes, then walk in behind the pet.
 
 **In the fight**, top to bottom:
 
-1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
+1. **Raptor Strike** once the mob is below 20% of its health: it replaces your next swing. The tuned rules keep it for the finish; its mana buys more as the sting and the trap.
 2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
 3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
 4. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
