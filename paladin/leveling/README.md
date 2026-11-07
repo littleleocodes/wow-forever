@@ -4,6 +4,10 @@
 
 No leveling numbers yet.
 
+**Level by level:** [Retribution](retribution-by-level.md) (what to press from level 1 as each spell and talent arrives).
+
+**Keybinds:** [Your keys and macros](keybinds.md), set out on your two action bars.
+
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 
 ---

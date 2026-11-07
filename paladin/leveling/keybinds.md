@@ -1,19 +1,19 @@
 # Paladin leveling keybinds (hand-written)
 
-[Paladin](../../README.md) > [Leveling research](README.md) > Keybinds
+[Paladin](../README.md) > [Leveling (solo)](README.md) > Keybinds
 
 A personal layout, written 2026-11-06 on the player's own two action bars, for a player of League of Legends and Deadlock with a mouse
 that has two side buttons (WoW shows them as Button 4 and Button 5). It uses the same scheme as the
-[mage layout](../../../mage/research/leveling/keybinds.md), so both characters feel alike: Q is the strike you press most, E the control,
+mage layout, so both characters feel alike: Q is the strike you press most, E the control,
 R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest, and the Shift bar a stronger or wider version of
 the key under it. Keys are for spells you press in a fight and for the things that help you there: the blessing, the aura, food, drink,
 the mount and the Hearthstone have no key and are clicked between fights. It is built on the
-[Retribution leveling page](../../leveling/retribution.md).
+[Retribution leveling page](retribution.md).
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
-[Retribution level-by-level guide](../../leveling/retribution-by-level.md). This page is the layout at 60, the setup and the macros.
+[Retribution level-by-level guide](retribution-by-level.md). This page is the layout at 60, the setup and the macros.
 
-This file is hand-written and nothing generates or deletes it (`paladin/leveling/` is regenerated, so it lives here). Edit it by hand.
+This file is hand-written: the regeneration that rewrites the rest of this folder leaves it alone. Edit it by hand.
 
 ## Set up first (Esc, Key Bindings and Interface)
 

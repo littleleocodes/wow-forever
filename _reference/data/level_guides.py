@@ -45,6 +45,7 @@ DIR = HERE / "level-guides"
 FIGHTS, SEED = 400, 3
 BOLD = re.compile(r"\*\*([^*]+)\*\*")
 PLAIN = {"wand", "Wand", "Auto Shot", "melee", "Melee"}   # bold words that are no spell of the book
+KEYBINDS = "keybinds.md"   # hand-written, in the class's generated leveling folder: render_modes.py's cleanup leaves it (2026-11-07)
 NOISE = ("Portal: ", "Teleport: ")                       # trained spells left out of the "you train" lines
 TODAY = datetime.date.today().isoformat()
 
@@ -74,9 +75,34 @@ def book(cls):
     return _BOOK[cls]
 
 
+_PETS = {}
+
+
+def pet_spells(cls):
+    """The spells of the class spellbook's "Pets" tab (the hunter's pet abilities): the pet casts them, the player never presses them."""
+    if cls not in _PETS:
+        _PETS[cls] = {s["name"] for tab in json.load(open(HERE / "forever-spells" / f"{cls}.json", encoding="utf-8")).get("tabs", [])
+                      if tab.get("name") == "Pets" for s in tab.get("spells", [])}
+    return _PETS[cls]
+
+
+def fightlab_signature_audit():
+    """fightlab/signature_audit.py loaded by its path: raidsim/ has a signature_audit.py too, and inside render_modes.py (which puts
+    raidsim/ at the front of sys.path for the raid pages) a plain import found that one (2026-11-06: the first regen with the by-level
+    hook died on it and left the class's leveling folder without its guide)."""
+    import importlib.util
+    name = "fightlab_signature_audit"
+    if name not in sys.modules:
+        spec = importlib.util.spec_from_file_location(name, HERE / "fightlab" / "signature_audit.py")
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules[name] = mod
+        spec.loader.exec_module(mod)
+    return sys.modules[name]
+
+
 def pick(cls, spec):
     """(build, order, provisional, rotation): the spec's leveling page pick; an order-less pick gets the stats model's order."""
-    import signature_audit as SA
+    SA = fightlab_signature_audit()
     import fl_signature as FS
     import fl_talent_opt as FT
     import derive_leveling as DL
@@ -267,7 +293,7 @@ def check(cls):
                         cast[sp] = max(cast.get(sp, 0), n)
                 named = set(bold_names(s))
                 for sp, n in sorted(cast.items()):
-                    if n >= 0.2 and sp not in named and sp not in PLAIN and sp in book(cls):
+                    if n >= 0.2 and sp not in named and sp not in PLAIN and sp in book(cls) and sp not in pet_spells(cls):
                         out.append(("warning", f"{tag}: the fight lab presses {sp} {n:.1f} times a kill and the stage never names it"))
                 for n in sorted(pressed):
                     if n in book(cls) and n not in cast and s["from"] >= 10 and not (s.get("unsimulated") and n in s["unsimulated"]):
@@ -383,12 +409,20 @@ def write(cls, folder=None):
     return out
 
 
+def keybinds_line(cls):
+    """The line that points at the class's hand-written keybinds page, else None."""
+    if (ROOT / cls / "leveling" / KEYBINDS).exists():
+        return f"**Keybinds:** [Your keys and macros]({KEYBINDS}), set out on your two action bars."
+    return None
+
+
 def link_line(cls, spec):
     """The line a spec's leveling page carries when the class has a by-level guide for it, else None."""
     data = load(cls)
     if data and any(g["spec"] == spec for g in data["guides"]):
-        return (f"**Leveling from level 1?** [The rotation level by level]({page_name(cls, spec)}): what to press as each spell and talent "
+        line = (f"**Leveling from level 1?** [The rotation level by level]({page_name(cls, spec)}): what to press as each spell and talent "
                 "arrives.")
+        return line + (f" [Your keys and macros]({KEYBINDS})." if keybinds_line(cls) else "")
     return None
 
 

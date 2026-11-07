@@ -1205,7 +1205,8 @@ def class_pages(cls):
         d = ROOT / cls / mode
         d.mkdir(parents=True, exist_ok=True)
         for old in d.glob("*.md"):
-            old.unlink()   # generated folder: pages of specs that no longer have builds go away
+            if old.name != LG.KEYBINDS:   # 2026-11-07: the hand-written keybinds page lives here, next to the by-level guide
+                old.unlink()   # generated folder: pages of specs that no longer have builds go away
         for spec in specs:
             if spec.startswith("Hybrid") and not g[spec][mode]:
                 continue   # 2026-10-15 page audit D7: a hybrid's page in a mode it has no build for was a stub no page linked to
@@ -1226,6 +1227,8 @@ def class_pages(cls):
         if mode == "leveling" and LG.load(cls):   # 2026-11-06 (user request): the rotation from level 1 as each spell arrives
             idx += ["**Level by level:** " + ", ".join(f"[{SM.spec_name(cls, g_['spec'])}]({LG.page_name(cls, g_['spec'])})" for g_ in LG.load(cls)["guides"])
                     + " (what to press from level 1 as each spell and talent arrives).", ""]
+        if mode == "leveling" and LG.keybinds_line(cls):   # 2026-11-07 (user: the folder should show it)
+            idx += [LG.keybinds_line(cls), ""]
         if mode == "raid":
             # only specs with a raid page (2026-10-25: Beast-Survival kept its tier row from the ML record after its raid build left)
             idx += tier_table(cls, [s for s in specs if not s.startswith("Hybrid") or g[s]["raid"]], d / "README.md")

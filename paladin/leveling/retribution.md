@@ -2,6 +2,8 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Retribution
 
+**Leveling from level 1?** [The rotation level by level](retribution-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+
 **[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (12/9/30) — [open the talent tree](https://talentsforever.com/paladin/60/050232-50301-0523330120130133-7)
 
 **Signature spells:** 100% of the damage at level 60 in the fight lab comes from melee, Seal of Command, Seal of Righteousness, Judgement, Holy Strike, Vengeance (the spec's rule: at least 60%; **Judgement** cast in every fight).
