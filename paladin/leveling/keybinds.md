@@ -35,10 +35,10 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | R | Seal and Judgement macro (4); plain Seal of Righteousness at 1-3 | The first press on a new mob, before the pull, casts the seal. Then whenever Judgement is ready; from 20, right after E, because Seal of Command's judgement hits a stunned mob twice as hard | League R, the payoff after the CC |
 | F | Divine Protection (6), Divine Shield from 34 | The fight goes wrong: bubble, then heal inside it | Flash |
 | Mouse 5 (front side button) | Holy Light (1) | Below a third of your health, inside the bubble or during a stun; between fights, back to about 80% | Thumb reaction |
-| Mouse 4 (back side button) | Lay on Hands (10) | Below 15% of your health | Thumb reaction, the panic button |
-| 1 | Free | | |
+| Mouse 4 (back side button) | Flash of Light (20) | Below a quarter of your health; a cheap top-up between fights | Thumb reaction, the quick heal next to the big one |
+| 1 | Blessing of Protection (10) | F is on cooldown and a mob is killing you: 10 seconds safe from physical attacks. It shares Forbearance with F, so it cannot follow the bubble within a minute. You cannot attack while it is on you, and it replaces your Blessing of Might: click that back on after | Deadlock ability 1 |
 | 2 | Exorcism (20) | On cooldown, against Undead and Demons only | Deadlock ability 2 |
-| 3 | Flash of Light (20) | Below a quarter of your health; a cheap top-up between fights | Deadlock ability 3 |
+| 3 | Free | | |
 | 4 | Purify (8), Cleanse from 42 | A poison or a disease is on you | Deadlock ability 4 |
 | C | Free | | |
 | Middle mouse | Free | | |
@@ -50,10 +50,10 @@ The whole fight is two keys: R once before the pull for the seal, then Q and R o
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
 | Shift+Q | Consecration (20) | Packs only. The single-target rotation never casts it |
-| Shift+E | The stun combo macro (below), from 20 | Hammer of Justice is ready: press twice |
+| Shift+E | Repentance (49, talent) | A humanoid: it stands incapacitated for up to 6 seconds, from 20 yards, until damage wakes it. A second setup for the doubled Judgement, or a breather. The fight lab does not model it |
 | Shift+R | Hammer of Wrath (44) | A mob below 20% health that runs. Optional: the tuned rotation leaves it out |
 | Shift+F | Blessing of Freedom (18) | You are rooted or slowed |
-| Shift+Mouse 5 | Blessing of Protection (10) | A second save against physical damage. You cannot attack while it is on you |
+| Shift+Mouse 5 | Lay on Hands (10) | Below 15% of your health: a full heal every 20 minutes. It drains your mana, and its tooltip has no Forbearance, so it works right after the bubble |
 | Shift+Mouse 4 | Turn Undead (24) | An extra Undead mob joins: send it running |
 | Shift+1 | Free | |
 | Shift+2 | Holy Wrath (50) | Several Undead or Demons at once |
@@ -62,8 +62,8 @@ The whole fight is two keys: R once before the pull for the seal, then Q and R o
 | Shift+C | Free | |
 | Shift+X | Free | |
 
-Free slots stay free until something earns them: Repentance if your final build takes it (the provisional build has it at 49), or
-Seal of Justice for mobs that run.
+Free slots stay free until something earns them. The fight lab's fights are Q, R and E, with heals and saves only for a bad pull, so the paladin
+has more keys than spells worth one. Seal of Justice is the first candidate, for mobs that run.
 
 ## No key: click these between fights
 
@@ -100,12 +100,15 @@ first press on a mob is always the seal. Levels 1-3 put plain Seal of Righteousn
 Holy Strike one fails, put plain Holy Strike back on Q and right-click the mob to start swinging. If the seal one fails, put plain
 Judgement back on R and the seal on 1.
 
-The stun combo on one key, on Shift+E. Press it twice: the first press stuns, the second judges.
+The stun combo needs no macro: E, then R. A second macro that casts Judgement would not move R's sequence on, so its reseal would come late.
+
+Optional: the whole rotation on one key. Judgement is off the global cooldown in the simulator's data, so one press can cast both attacks, in
+the fight lab's order. Put this on Q from level 6, in place of the Holy Strike macro, and R comes free. The stun combo is then E, then Q.
+At level 20, change the seal to Seal of Command.
 
 ```
-#showtooltip
-/castsequence reset=10 Hammer of Justice, Judgement
+#showtooltip Holy Strike
+/startattack [harm,nodead]
+/castsequence reset=target Seal of Righteousness, Judgement, Judgement, Judgement
+/cast Holy Strike
 ```
-
-It only moves on when Hammer of Justice goes off, so use it when the stun is ready and keep Judgement on R for the fifty seconds
-in between. `/castsequence` is a command of the Classic client; if Forever lacks it, press E then R.

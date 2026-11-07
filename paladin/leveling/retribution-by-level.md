@@ -33,10 +33,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | R | The payoff, with the seal in a macro from 4: hits a stunned mob twice as hard from 20 | **Seal of Righteousness** | **Judgement (macro)** | Judgement (macro) | Judgement (macro) | Judgement (macro) | Judgement (macro) | Judgement (macro) |
 | F | Escape: the bubble | — | — | **Divine Protection** | Divine Protection | Divine Protection | Divine Protection; **Divine Shield** from 34 | Divine Shield |
 | Mouse 5 | Thumb reaction: the heal | **Holy Light** | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light |
-| Mouse 4 | Thumb reaction: the panic button | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands |
-| 1 | Free | — | — | — | — | — | — | — |
+| Mouse 4 | Thumb reaction: the quick heal, next to the big one | — | — | — | — | — | **Flash of Light** | Flash of Light |
+| 1 | The backup save, once F is on cooldown | — | — | — | — | **Blessing of Protection** | Blessing of Protection | Blessing of Protection |
 | 2 | Extra damage on Undead and Demons | — | — | — | — | — | **Exorcism** | Exorcism |
-| 3 | The quick heal | — | — | — | — | — | **Flash of Light** | Flash of Light |
+| 3 | Free | — | — | — | — | — | — | — |
 | 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify; **Cleanse** from 42 | Cleanse |
 | C | Free | — | — | — | — | — | — | — |
 | Middle mouse | Free | — | — | — | — | — | — | — |
@@ -46,10 +46,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-43 | 44-60 |
 |---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the ground under you | — | — | — | — | — | **Consecration** | Consecration |
-| Shift+E | The stun combo in one key | — | — | — | — | — | **Stun-then-Judgement macro** | Stun-then-Judgement macro |
+| Shift+E | Control a humanoid: a second setup for the doubled Judgement | — | — | — | — | — | — | **Repentance** from 49 (talent) |
 | Shift+R | Finisher from range | — | — | — | — | — | — | **Hammer of Wrath** |
 | Shift+F | Escape from roots and slows | — | — | — | — | **Blessing of Freedom** from 18 | Blessing of Freedom | Blessing of Freedom |
-| Shift+Mouse 5 | A second save: no physical damage | — | — | — | — | **Blessing of Protection** | Blessing of Protection | Blessing of Protection |
+| Shift+Mouse 5 | The panic button: a full heal | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands |
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead |
 | Shift+1 | Free | — | — | — | — | — | — | — |
 | Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | **Holy Wrath** from 50 |
@@ -58,7 +58,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+C | Free | — | — | — | — | — | — | — |
 | Shift+X | Free | — | — | — | — | — | — | — |
 
-- The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. Shift+E does both in two presses if you like macros.
+- The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. From 49, **Repentance** on Shift+E sets up the same doubled hit on a humanoid.
 - Two changes on bar 1 in the whole climb: the R macro's seal becomes **Seal of Command** at level 20, and **Divine Shield** takes F at 34.
 - Levels 1-3 fight with R alone, for the seal. From 4, R is the seal and **Judgement** macro on the [keybinds page](keybinds.md): the first press on a new mob casts the seal, the next ones **Judgement**. Right-click the mob to start your swings. From 6, Q is the Holy Strike macro: it starts your swings too, so the middle mouse button stays free.
 - The seal has no key of its own: the R macro casts it once per mob and again after three **Judgement** presses, about when its 30 seconds run out. From 20, press R once before you stun, because the first press on a mob is the seal.
@@ -149,9 +149,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 10-14 Benediction, 15-17 Sanctified Judgement, 18-19 Conviction.
 
-**Keys to set:** Mouse 4 = Lay on Hands; Shift+Mouse 5 = Blessing of Protection; Shift+F = Blessing of Freedom (at 18).
+**Keys to set:** 1 = Blessing of Protection; Shift+Mouse 5 = Lay on Hands; Shift+F = Blessing of Freedom (at 18).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Shift+Mouse 5 Lay on Hands.
 
 **What to press**, top to bottom:
 
@@ -176,9 +176,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 20 Seal of Command, 21-22 Pursuit of Justice, 23 Conviction, 24 Improved Judgement, 25 Sacred Arbiter, 26 Improved Judgement, 27-29 Two-Handed Weapon Specialization, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41-43 Divine Intellect.
 
-**Keys to set:** 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
+**Keys to set:** Mouse 4 = Flash of Light; 2 = Exorcism; Shift+Q = Consecration; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 3 Flash of Light.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Flash of Light, Shift+Mouse 5 Lay on Hands.
 
 **What to press**, top to bottom:
 
@@ -205,9 +205,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 44-45 Divine Intellect, 46-48 Precision, 49 Repentance, 50 Vindication, 51-53 Champion of the Light, 54-55 Vindication, 56 Sacred Duty, 57-58 Reverence, 59-60 Purifying Power.
 
-**Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50).
+**Keys to set:** Shift+R = Hammer of Wrath; Shift+E = Repentance (at 49), talent; Shift+2 = Holy Wrath (at 50).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 3 Flash of Light.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, Shift+Mouse 5 Lay on Hands.
 
 **What to press**, top to bottom:
 
