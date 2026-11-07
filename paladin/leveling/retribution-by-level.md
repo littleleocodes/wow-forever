@@ -22,13 +22,13 @@ What a Retribution paladin presses from level 1 to 60, stage by stage, as the tr
 
 ## Keybinds by level
 
-Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme matches your mage: Q the strike you press most, E the control, R the payoff after it, F the escape, the thumb buttons the reactions. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macro: the [paladin keybinds page](../research/leveling/keybinds.md).
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme matches your mage: Q the strike you press most, E the control, R the payoff after it, F the escape, the thumb buttons the reactions. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](../research/leveling/keybinds.md).
 
 **Action bar 1: the fight**
 
 | Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-43 | 44-60 |
 |---|---|---|---|---|---|---|---|---|
-| Q | Your strike, on cooldown | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
+| Q | Your strike, on cooldown; the macro also starts your swings | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
 | E | Control: the stun | — | — | — | **Hammer of Justice** | Hammer of Justice | Hammer of Justice | Hammer of Justice |
 | R | The payoff: hits a stunned mob twice as hard from 20 | — | **Judgement** | Judgement | Judgement | Judgement | Judgement | Judgement |
 | F | Escape: the bubble | — | — | **Divine Protection** | Divine Protection | Divine Protection | Divine Protection; **Divine Shield** from 34 | Divine Shield |
@@ -39,7 +39,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 3 | The quick heal | — | — | — | — | — | **Flash of Light** | Flash of Light |
 | 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify; **Cleanse** from 42 | Cleanse |
 | C | Free | — | — | — | — | — | — | — |
-| Middle mouse | Start swinging | **Attack** | Attack | Attack | Attack | Attack | Attack | Attack |
+| Middle mouse | Free | — | — | — | — | — | — | — |
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
 
@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. Shift+E does both in two presses if you like macros.
 - Two swaps on bar 1 in the whole climb: **Seal of Command** takes 1 at level 20, and **Divine Shield** takes F at 34.
-- Levels 1-5 fight with two keys: 1 for the seal and R for **Judgement** from 4. The middle mouse button starts your swings; a right-click on the mob does the same.
+- Levels 1-5 fight with two keys: 1 for the seal and R for **Judgement** from 4. Right-click the mob to start your swings. From 6, Q is the Holy Strike macro on the [keybinds page](../research/leveling/keybinds.md): it starts your swings too, so the middle mouse button stays free.
 - The seal keeps its key: it lasts 30 seconds, so you recast it in the middle of longer fights, and the stun combo needs **Seal of Command** up.
 - No key: **Blessing of Might**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs.
@@ -69,7 +69,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
 
-**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness; Middle mouse = Attack.
+**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness.
 
 **Your keys in this stage:** 1 Seal of Righteousness.
 

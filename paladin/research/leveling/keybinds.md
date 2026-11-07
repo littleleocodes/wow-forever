@@ -11,7 +11,7 @@ the mount and the Hearthstone have no key and are clicked between fights. It is 
 [Retribution leveling page](../../leveling/retribution.md).
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
-[Retribution level-by-level guide](../../leveling/retribution-by-level.md). This page is the layout at 60, the setup and the macro.
+[Retribution level-by-level guide](../../leveling/retribution-by-level.md). This page is the layout at 60, the setup and the macros.
 
 This file is hand-written and nothing generates or deletes it (`paladin/leveling/` is regenerated, so it lives here). Edit it by hand.
 
@@ -30,7 +30,7 @@ This file is hand-written and nothing generates or deletes it (`paladin/leveling
 
 | Key | Spell (learned at) | Press it when | Habit it matches |
 |---|---|---|---|
-| Q | Holy Strike (6) | Whenever it is ready, every 10 seconds | League Q, the basic hit |
+| Q | Holy Strike macro (6) | Whenever it is ready, every 10 seconds. It starts your swings too | League Q, the basic hit |
 | E | Hammer of Justice (8) | A mob starts casting; from 20, right before Judgement when both are ready and the mob has more than 30% health; to buy time to heal | League E, the CC key |
 | R | Judgement (4) | Whenever it is ready; from 20, right after E, because Seal of Command's judgement hits a stunned mob twice as hard | League R, the payoff after the CC |
 | F | Divine Protection (6), Divine Shield from 34 | The fight goes wrong: bubble, then heal inside it | Flash |
@@ -41,7 +41,7 @@ This file is hand-written and nothing generates or deletes it (`paladin/leveling
 | 3 | Flash of Light (20) | Below a quarter of your health; a cheap top-up between fights | Deadlock ability 3 |
 | 4 | Purify (8), Cleanse from 42 | A poison or a disease is on you | Deadlock ability 4 |
 | C | Free | | |
-| Middle mouse | Attack | To start swinging at levels 1-5, and whenever your swings stop. A right-click on the mob does the same | The weapon attack, like the mage's wand |
+| Middle mouse | Free | | |
 
 The whole fight is three keys: 1 before the pull, then Q and R on cooldown, with E before R from level 20.
 
@@ -70,7 +70,31 @@ Seal of Justice for mobs that run.
 Blessing of Might, Devotion Aura, food, water, bandages, your mount (40 in Classic) and the Hearthstone. Tab (target nearest enemy) and
 Space (jump) stay on WoW's defaults. Seal of the Crusader, Seal of Fury and Righteous Fury are not part of leveling as Retribution.
 
-## Macro (Esc, Macros, New; pick the question-mark icon so the button shows the spell)
+## Macros (Esc, Macros, New; pick the question-mark icon so the button shows the spell)
+
+The Holy Strike macro, on Q from level 6. It starts your swings as well, so no key needs the plain Attack button. The start line runs
+first, so a press still starts your swings while Holy Strike is on its 10-second cooldown. At levels 1-5, right-click the mob to start
+swinging.
+
+```
+#showtooltip Holy Strike
+/startattack [harm,nodead]
+/cast Holy Strike
+```
+
+Optional, on R: Judgement then starts your swings too, for a fight you open with it from range. In Classic a spell does not start them
+by itself.
+
+```
+#showtooltip Judgement
+/startattack [harm,nodead]
+/cast Judgement
+```
+
+`/startattack` is a command of the Classic client, and Forever macro guides use it
+([RankedBoost](https://rankedboost.com/world-of-warcraft/forever/macros/paladin/retribution/),
+[Kami Labs](https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/)). It is not tested in Forever's client here; if it fails,
+put plain Holy Strike back on Q and right-click the mob to start swinging.
 
 The stun combo on one key, on Shift+E. Press it twice: the first press stuns, the second judges.
 
@@ -79,5 +103,5 @@ The stun combo on one key, on Shift+E. Press it twice: the first press stuns, th
 /castsequence reset=10 Hammer of Justice, Judgement
 ```
 
-It only moves on when Hammer of Justice goes off, so use it when the stun is ready and keep plain Judgement on R for the fifty seconds
+It only moves on when Hammer of Justice goes off, so use it when the stun is ready and keep Judgement on R for the fifty seconds
 in between. `/castsequence` is a command of the Classic client; if Forever lacks it, press E then R.
