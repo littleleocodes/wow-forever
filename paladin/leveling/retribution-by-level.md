@@ -30,11 +30,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 |---|---|---|---|---|---|---|---|---|
 | Q | Your strike, on cooldown; the macro also starts your swings | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
 | E | Control: the stun | — | — | — | **Hammer of Justice** | Hammer of Justice | Hammer of Justice | Hammer of Justice |
-| R | The payoff: hits a stunned mob twice as hard from 20 | — | **Judgement** | Judgement | Judgement | Judgement | Judgement | Judgement |
+| R | The payoff, with the seal in a macro from 4: hits a stunned mob twice as hard from 20 | **Seal of Righteousness** | **Judgement (macro)** | Judgement (macro) | Judgement (macro) | Judgement (macro) | Judgement (macro) | Judgement (macro) |
 | F | Escape: the bubble | — | — | **Divine Protection** | Divine Protection | Divine Protection | Divine Protection; **Divine Shield** from 34 | Divine Shield |
 | Mouse 5 | Thumb reaction: the heal | **Holy Light** | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light | Holy Light |
 | Mouse 4 | Thumb reaction: the panic button | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands |
-| 1 | Your seal, before every pull | **Seal of Righteousness** | Seal of Righteousness | Seal of Righteousness | Seal of Righteousness | Seal of Righteousness | **Seal of Command** | Seal of Command |
+| 1 | Free | — | — | — | — | — | — | — |
 | 2 | Extra damage on Undead and Demons | — | — | — | — | — | **Exorcism** | Exorcism |
 | 3 | The quick heal | — | — | — | — | — | **Flash of Light** | Flash of Light |
 | 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify; **Cleanse** from 42 | Cleanse |
@@ -59,9 +59,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+X | Free | — | — | — | — | — | — | — |
 
 - The combo from 20 is E then R: **Hammer of Justice**, then **Judgement** on the stunned mob. Shift+E does both in two presses if you like macros.
-- Two swaps on bar 1 in the whole climb: **Seal of Command** takes 1 at level 20, and **Divine Shield** takes F at 34.
-- Levels 1-5 fight with two keys: 1 for the seal and R for **Judgement** from 4. Right-click the mob to start your swings. From 6, Q is the Holy Strike macro on the [keybinds page](../research/leveling/keybinds.md): it starts your swings too, so the middle mouse button stays free.
-- The seal keeps its key: it lasts 30 seconds, so you recast it in the middle of longer fights, and the stun combo needs **Seal of Command** up.
+- Two changes on bar 1 in the whole climb: the R macro's seal becomes **Seal of Command** at level 20, and **Divine Shield** takes F at 34.
+- Levels 1-3 fight with R alone, for the seal. From 4, R is the seal and **Judgement** macro on the [keybinds page](../research/leveling/keybinds.md): the first press on a new mob casts the seal, the next ones **Judgement**. Right-click the mob to start your swings. From 6, Q is the Holy Strike macro: it starts your swings too, so the middle mouse button stays free.
+- The seal has no key of its own: the R macro casts it once per mob and again after three **Judgement** presses, about when its 30 seconds run out. From 20, press R once before you stun, because the first press on a mob is the seal.
 - No key: **Blessing of Might**, **Devotion Aura**, food, drink, bandages, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - The tuned rotation leaves **Hammer of Wrath** and **Consecration** out against single mobs. Their keys are for a mob that runs and for packs.
 
@@ -69,9 +69,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
 
-**Keys to set:** Mouse 5 = Holy Light; 1 = Seal of Righteousness.
+**Keys to set:** R = Seal of Righteousness; Mouse 5 = Holy Light.
 
-**Your keys in this stage:** 1 Seal of Righteousness.
+**Your keys in this stage:** R Seal of Righteousness.
 
 **What to press**, top to bottom:
 
@@ -87,13 +87,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Might (4), **Judgement** (4).
 
-**Keys to set:** R = Judgement.
+**Keys to set:** R = Judgement, macro.
 
-**Your keys in this stage:** R Judgement, 1 Seal of Righteousness.
+**Your keys in this stage:** R Judgement.
 
 **What to press**, top to bottom:
 
-1. Keep **Seal of Righteousness** up.
+1. **Seal of Righteousness** up before the pull: the first press of R.
 2. **Judgement** whenever it is ready.
 
 - **Blessing of Might** (4) on yourself, always.
@@ -106,11 +106,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Q = Holy Strike; F = Divine Protection.
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, 1 Seal of Righteousness.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light.
 
 **What to press**, top to bottom:
 
-1. Keep **Seal of Righteousness** up.
+1. **Seal of Righteousness** up before the pull: the first press of R.
 2. **Judgement** whenever it is ready.
 3. **Holy Strike** whenever it is ready.
 
@@ -126,12 +126,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** E = Hammer of Justice; 4 = Purify.
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, 1 Seal of Righteousness.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light.
 
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.
-2. Keep **Seal of Righteousness** up.
+2. **Seal of Righteousness** up before the pull: the first press of R.
 3. **Judgement** whenever it is ready.
 4. **Holy Strike** whenever it is ready.
 
@@ -151,12 +151,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Mouse 4 = Lay on Hands; Shift+Mouse 5 = Blessing of Protection; Shift+F = Blessing of Freedom (at 18).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Righteousness.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands.
 
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
-2. Keep **Seal of Righteousness** up.
+2. **Seal of Righteousness** up before the pull: the first press of R.
 3. **Judgement** whenever it is ready.
 4. **Holy Strike** whenever it is ready.
 
@@ -176,20 +176,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 20 Seal of Command, 21-22 Pursuit of Justice, 23 Conviction, 24 Improved Judgement, 25 Sacred Arbiter, 26 Improved Judgement, 27-29 Two-Handed Weapon Specialization, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41-43 Divine Intellect.
 
-**Keys to set:** 1 = Seal of Command; 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
+**Keys to set:** 2 = Exorcism; 3 = Flash of Light; Shift+Q = Consecration; Shift+E = Stun-then-Judgement macro; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Command, 3 Flash of Light.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 3 Flash of Light.
 
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
-2. Keep **Seal of Command** up.
+2. **Seal of Command** up before the pull: the first press of R.
 3. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.
 4. **Judgement** whenever it is ready.
 5. **Holy Strike** whenever it is ready.
 
 **If the fight goes wrong:** Below a third of your health, with the mob still above a quarter of its own: **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%.
 
+- Change the seal in your R macro to **Seal of Command** when you take the talent at 20.
 - **Consecration** (20): leave it off your bar against single mobs. The tuned rotation never casts it. It is for packs.
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
 - **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
@@ -206,12 +207,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50).
 
-**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 1 Seal of Command, 3 Flash of Light.
+**Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Lay on Hands, 3 Flash of Light.
 
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
-2. Keep **Seal of Command** up.
+2. **Seal of Command** up before the pull: the first press of R.
 3. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% of its health left.
 4. **Judgement** whenever it is ready.
 5. **Holy Strike** whenever it is ready.

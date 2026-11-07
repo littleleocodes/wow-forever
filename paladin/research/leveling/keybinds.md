@@ -32,18 +32,18 @@ This file is hand-written and nothing generates or deletes it (`paladin/leveling
 |---|---|---|---|
 | Q | Holy Strike macro (6) | Whenever it is ready, every 10 seconds. It starts your swings too | League Q, the basic hit |
 | E | Hammer of Justice (8) | A mob starts casting; from 20, right before Judgement when both are ready and the mob has more than 30% health; to buy time to heal | League E, the CC key |
-| R | Judgement (4) | Whenever it is ready; from 20, right after E, because Seal of Command's judgement hits a stunned mob twice as hard | League R, the payoff after the CC |
+| R | Seal and Judgement macro (4); plain Seal of Righteousness at 1-3 | The first press on a new mob, before the pull, casts the seal. Then whenever Judgement is ready; from 20, right after E, because Seal of Command's judgement hits a stunned mob twice as hard | League R, the payoff after the CC |
 | F | Divine Protection (6), Divine Shield from 34 | The fight goes wrong: bubble, then heal inside it | Flash |
 | Mouse 5 (front side button) | Holy Light (1) | Below a third of your health, inside the bubble or during a stun; between fights, back to about 80% | Thumb reaction |
 | Mouse 4 (back side button) | Lay on Hands (10) | Below 15% of your health | Thumb reaction, the panic button |
-| 1 | Seal of Righteousness (1), Seal of Command from 20 (talent) | Before every pull, and again when it runs out after 30 seconds. It keeps a key because you recast it mid-fight and the stun combo needs it up | Deadlock ability 1 |
+| 1 | Free | | |
 | 2 | Exorcism (20) | On cooldown, against Undead and Demons only | Deadlock ability 2 |
 | 3 | Flash of Light (20) | Below a quarter of your health; a cheap top-up between fights | Deadlock ability 3 |
 | 4 | Purify (8), Cleanse from 42 | A poison or a disease is on you | Deadlock ability 4 |
 | C | Free | | |
 | Middle mouse | Free | | |
 
-The whole fight is three keys: 1 before the pull, then Q and R on cooldown, with E before R from level 20.
+The whole fight is two keys: R once before the pull for the seal, then Q and R on cooldown, with E before R from level 20.
 
 ## Bar 2: the same keys with Shift
 
@@ -82,19 +82,23 @@ swinging.
 /cast Holy Strike
 ```
 
-Optional, on R: Judgement then starts your swings too, for a fight you open with it from range. In Classic a spell does not start them
-by itself.
+The seal and Judgement macro, on R from level 4, so the seal needs no key of its own. The first press on a new target casts the seal, and
+each press after that casts Judgement when it is ready. After three Judgements it casts the seal again, about when the 30 seconds run
+out. One seal per mob is enough, because Judgement does not use up the seal in Forever.
 
 ```
 #showtooltip Judgement
-/startattack [harm,nodead]
-/cast Judgement
+/castsequence reset=target Seal of Righteousness, Judgement, Judgement, Judgement
 ```
 
-`/startattack` is a command of the Classic client, and Forever macro guides use it
+At level 20, when the build takes Seal of Command, change the macro's seal to Seal of Command. From 20, press R once before you stun: the
+first press on a mob is always the seal. Levels 1-3 put plain Seal of Righteousness on R, because Judgement comes at 4.
+
+`/startattack` and `/castsequence` are commands of the Classic client, and Forever macro guides use `/startattack`
 ([RankedBoost](https://rankedboost.com/world-of-warcraft/forever/macros/paladin/retribution/),
-[Kami Labs](https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/)). It is not tested in Forever's client here; if it fails,
-put plain Holy Strike back on Q and right-click the mob to start swinging.
+[Kami Labs](https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/)). Neither macro is tested in Forever's client here. If the
+Holy Strike one fails, put plain Holy Strike back on Q and right-click the mob to start swinging. If the seal one fails, put plain
+Judgement back on R and the seal on 1.
 
 The stun combo on one key, on Shift+E. Press it twice: the first press stuns, the second judges.
 
