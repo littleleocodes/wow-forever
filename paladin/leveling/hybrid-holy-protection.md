@@ -2,25 +2,27 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Holy/Protection hybrid
 
-**[Holy/Protection hybrid — Leveling](../research/leveling/builds/hybrid-holy-protection-open-leveling.md)** (21/16/14) — [open the talent tree](https://talentsforever.com/paladin/60/05025014210001-5131011031-23233001-12)
+**[Holy/Protection hybrid — Leveling](../research/leveling/builds/hybrid-holy-protection-open-leveling.md)** (13/25/13) — [open the talent tree](https://talentsforever.com/paladin/60/050240002-353001021113014-05233-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 ## How to play
 
-**Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull; **Seal of Command** instead once your build has it.
+**Not in this build:** **Iron Creed** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
+**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too: **Iron Creed** and **Improved Righteous Fury** cut your damage taken only while it is on (the fight lab keeps it up). **Seal of Fury** before each pull: with a shield it also gives you an absorb.
 
 **In the fight**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
-2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
-3. Keep your seal up.
-4. **Hammer of Wrath** when the mob is below 20% health.
-5. With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).
-6. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
-7. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+2. Keep **Seal of Fury** up.
+3. **Hammer of Wrath** when the mob is below 20% health.
+4. **Holy Shield** whenever it is down.
+5. **Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.
+6. **Consecration** while your mana is above 60% and the mob has more than 30% health left.
+7. Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) or **Hammer of Justice**, and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana.
+**Between fights:** Drink below 15% of your mana; you rarely need to eat.
 
 ## Talents while leveling
 
@@ -28,32 +30,41 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-12 | Benediction (Retribution) | 3 |
-| 13-14 | Deflection (Retribution) | 2 |
-| 15-17 | Sanctified Judgement (Retribution) | 3 |
-| 18-19 | Conviction (Retribution) | 2 |
-| 20 | Seal of Command (Retribution) | 1 |
-| 21 | Conviction (Retribution) | 1 |
-| 22-26 | Divine Strength (Holy) | 5 |
-| 27-29 | Improved Seals (Holy) | 3 |
-| 30-31 | Improved Judgement (Retribution) | 2 |
-| 32-36 | Divine Intellect (Protection) | 5 |
-| 37-39 | Precision (Protection) | 3 |
-| 40 | Redoubt (Protection) | 1 |
-| 41 | Guardian's Favor (Protection) | 1 |
-| 42 | Templar's Bulwark (Protection) | 1 |
-| 43 | Improved Hammer of Justice (Protection) | 1 |
-| 44-46 | Toughness (Protection) | 3 |
-| 47 | Swift Judgement (Protection) | 1 |
-| 48-49 | Reverence (Holy) | 2 |
-| 50-51 | Holy Conduit (Holy) | 2 |
-| 52-54 | Illumination (Holy) | 3 |
-| 55 | Divine Precision (Holy) | 1 |
-| 56 | Illumination (Holy) | 1 |
-| 57-58 | Improved Seals (Holy) | 2 |
-| 59 | Divine Favor (Holy) | 1 |
-| 60 | Holy Shock (Holy) | 1 |
+| 10-12 | Divine Intellect (Protection) | 3 |
+| 13-14 | Redoubt (Protection) | 2 |
+| 15-17 | Precision (Protection) | 3 |
+| 18-19 | Redoubt (Protection) | 2 |
+| 20 | Templar's Bulwark (Protection) | 1 |
+| 21 | Redoubt (Protection) | 1 |
+| 22-23 | Shield Specialization (Protection) | 2 |
+| 24 | Toughness (Protection) | 1 |
+| 25 | Swift Judgement (Protection) | 1 |
+| 26-28 | Anticipation (Protection) | 3 |
+| 29 | Improved Righteous Fury (Protection) | 1 |
+| 30 | Holy Shield (Protection) | 1 |
+| 31-35 | Benediction (Retribution) | 5 |
+| 36-38 | Sanctified Judgement (Retribution) | 3 |
+| 39-41 | Conviction (Retribution) | 3 |
+| 42 | Improved Judgement (Retribution) | 1 |
+| 43-44 | Divine Strength (Holy) | 2 |
+| 45 | Improved Judgement (Retribution) | 1 |
+| 46-48 | Divine Strength (Holy) | 3 |
+| 49-50 | Reverence (Holy) | 2 |
+| 51-53 | Improved Seals (Holy) | 3 |
+| 54-55 | Holy Conduit (Holy) | 2 |
+| 56 | Improved Seals (Holy) | 1 |
+| 57-60 | Reckoning (Protection) | 4 |
+
+## The numbers
+
+| Level | Seconds per kill (same-level mobs, eating and drinking included) |
+|---|---|
+| 20 | 23 |
+| 30 | 29 |
+| 40 | 32 |
+| 50 | 31 |
+| 60 | 33 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

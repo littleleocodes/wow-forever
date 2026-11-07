@@ -49,6 +49,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 | **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Retribution | Benediction | 5 | 0/0/5 |
+| 15-17 | Retribution | Sanctified Judgement | 3 | 0/0/8 |
+| 18-19 | Retribution | Conviction | 2 | 0/0/10 |
+| 20 | Retribution | Seal of Command | 1 | 0/0/11 |
+| 21-22 | Retribution | Pursuit of Justice | 2 | 0/0/13 |
+| 23 | Retribution | Conviction | 1 | 0/0/14 |
+| 24 | Retribution | Improved Judgement | 1 | 0/0/15 |
+| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
+| 26 | Retribution | Improved Judgement | 1 | 0/0/17 |
+| 27-29 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/20 |
+| 30-32 | Retribution | Vengeance | 3 | 0/0/23 |
+| 33-37 | Holy | Divine Strength | 5 | 5/0/23 |
+| 38-40 | Holy | Improved Seals | 3 | 8/0/23 |
+| 41-45 | Protection | Divine Intellect | 5 | 8/5/23 |
+| 46-48 | Protection | Precision | 3 | 8/8/23 |
+| 49 | Retribution | Repentance | 1 | 8/8/24 |
+| 50 | Retribution | Vindication | 1 | 8/8/25 |
+| 51-53 | Retribution | Champion of the Light | 3 | 8/8/28 |
+| 54-55 | Protection | Sacred Duty | 2 | 8/10/28 |
+| 56 | Protection | Templar's Bulwark | 1 | 8/11/28 |
+| 57-58 | Retribution | Vindication | 2 | 8/11/30 |
+| 59-60 | Holy | Reverence | 2 | 10/11/30 |
+
 ## Core talents (priority order)
 
 1. **Seal of Command** — Removing it costs 3.9 points of score in this model.
@@ -64,22 +91,23 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Consecration; never cast Hammer of Wrath; drink below 15% mana. Together +11.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-07, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +11.9% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.8 | 3.8 | 5.1 | 5.7 | 7.0 | 41% |
-| Judgement | 1.4 | 1.8 | 2.4 | 2.6 | 3.1 | 22% |
-| Holy Strike | 1.0 | 1.3 | 1.8 | 2.1 | 2.5 | 17% |
-| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
-| Hammer of Justice | 0.2 | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
+| Melee | 3.6 | 4.2 | 5.2 | 5.6 | 6.7 | 40% |
+| Judgement | 1.6 | 2.0 | 2.4 | 2.6 | 3.0 | 22% |
+| Holy Strike | 1.3 | 1.5 | 1.9 | 2.0 | 2.4 | 18% |
+| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 20% |
+| Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
 
 ## Notes
 
 - Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-st.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 10/11/30; Divine Intellect 5 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +2 Sacred Duty, +1 Templar's Bulwark; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).
+- 2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.
 
 ## Open questions (verify in the live game)
 

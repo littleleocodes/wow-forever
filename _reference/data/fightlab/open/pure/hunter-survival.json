@@ -1,0 +1,8461 @@
+{
+ "class": "hunter",
+ "date": "2026-11-05",
+ "rotations": {
+  "melee-dps": {
+   "model": "melee-dps",
+   "trees": [
+    "Survival"
+   ],
+   "families": [
+    {
+     "keystones": "Rapid Killing + Expose Prey",
+     "split": "8/13/30",
+     "family": "Survival",
+     "kills_per_hour": 87.19
+    },
+    {
+     "keystones": "Trueshot Aura + Survival Tactics",
+     "split": "5/16/30",
+     "family": "Survival",
+     "kills_per_hour": 85.91
+    },
+    {
+     "keystones": "Rapid Killing + Counterattack",
+     "split": "6/15/30",
+     "family": "Survival",
+     "kills_per_hour": 85.44
+    },
+    {
+     "keystones": "Trueshot Aura + Counterattack",
+     "split": "5/16/30",
+     "family": "Survival",
+     "kills_per_hour": 84.15
+    },
+    {
+     "keystones": "Trueshot Aura + Resourcefulness",
+     "split": "5/16/30",
+     "family": "Survival",
+     "kills_per_hour": 82.69
+    },
+    {
+     "keystones": "Rapid Killing + Survival Tactics",
+     "split": "6/11/34",
+     "family": "Survival",
+     "kills_per_hour": 80.57
+    },
+    {
+     "keystones": "Scatter Shot + Counterattack",
+     "split": "0/21/30",
+     "family": "Survival",
+     "kills_per_hour": 79.52
+    },
+    {
+     "keystones": "Trueshot Aura + Strider Kick",
+     "split": "4/17/30",
+     "family": "Survival",
+     "kills_per_hour": 79.5
+    },
+    {
+     "keystones": "Rapid Killing + Resourcefulness",
+     "split": "2/19/30",
+     "family": "Survival",
+     "kills_per_hour": 78.81
+    },
+    {
+     "keystones": "Scatter Shot + Expose Prey",
+     "split": "0/21/30",
+     "family": "Survival",
+     "kills_per_hour": 78.28
+    },
+    {
+     "keystones": "Rapid Killing + Strider Kick",
+     "split": "7/11/33",
+     "family": "Survival",
+     "kills_per_hour": 77.88
+    },
+    {
+     "keystones": "Summon Hawk + Survival Tactics",
+     "split": "16/4/31",
+     "family": "Survival",
+     "kills_per_hour": 77.76
+    },
+    {
+     "keystones": "Scatter Shot + Survival Tactics",
+     "split": "0/21/30",
+     "family": "Survival",
+     "kills_per_hour": 77.33
+    },
+    {
+     "keystones": "Rapid Killing + Lacerating Strikes",
+     "split": "6/14/31",
+     "family": "Survival",
+     "kills_per_hour": 77.25
+    },
+    {
+     "keystones": "Summon Hawk + Strider Kick",
+     "split": "16/3/32",
+     "family": "Survival",
+     "kills_per_hour": 76.76
+    }
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Efficiency",
+       3
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Rapid Killing",
+       2
+      ],
+      [
+       "Mortal Shots",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Deflection",
+       1
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       2
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Resourcefulness",
+       2
+      ],
+      [
+       "Expose Prey",
+       1
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ]
+     ]
+    },
+    "split": "5/16/30",
+    "picked_by": "the 20-60 polish after the race"
+   },
+   "runs_agree": 1,
+   "simulated_builds": 43753,
+   "important_features": [
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.2704
+    },
+    {
+     "feature": "Rapid Killing",
+     "importance": 0.1088
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0976
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.0707
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.063
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0413
+    },
+    {
+     "feature": "Strider Kick",
+     "importance": 0.0409
+    },
+    {
+     "feature": "Survivalist's Discipline",
+     "importance": 0.0359
+    },
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.0355
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0351
+    },
+    {
+     "feature": "Resourcefulness",
+     "importance": 0.0334
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0299
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        1
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        1
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        2
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Deflection",
+        4
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        1
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ]
+      ]
+     },
+     "split": "8/13/30",
+     "dps": 86.39,
+     "se": 0.1059
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        1
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        1
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        2
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Deflection",
+        1
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        2
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Expose Prey",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        5
+       ]
+      ]
+     },
+     "split": "8/13/30",
+     "dps": 85.88,
+     "se": 0.1082
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-14",
+     "tree": "Survival",
+     "talent": "Improved Tracking",
+     "points": 5
+    },
+    {
+     "levels": "15-16",
+     "tree": "Survival",
+     "talent": "Savage Strikes",
+     "points": 2
+    },
+    {
+     "levels": "17",
+     "tree": "Survival",
+     "talent": "Deflection",
+     "points": 1
+    },
+    {
+     "levels": "18-19",
+     "tree": "Survival",
+     "talent": "Survivalist",
+     "points": 2
+    },
+    {
+     "levels": "20-22",
+     "tree": "Survival",
+     "talent": "Surefooted",
+     "points": 3
+    },
+    {
+     "levels": "23-24",
+     "tree": "Survival",
+     "talent": "Clever Traps",
+     "points": 2
+    },
+    {
+     "levels": "25-29",
+     "tree": "Survival",
+     "talent": "Predator's Edge",
+     "points": 5
+    },
+    {
+     "levels": "30",
+     "tree": "Survival",
+     "talent": "Resourcefulness",
+     "points": 1
+    },
+    {
+     "levels": "31",
+     "tree": "Survival",
+     "talent": "Expose Prey",
+     "points": 1
+    },
+    {
+     "levels": "32",
+     "tree": "Survival",
+     "talent": "Resourcefulness",
+     "points": 1
+    },
+    {
+     "levels": "33-34",
+     "tree": "Survival",
+     "talent": "Survivalist's Discipline",
+     "points": 2
+    },
+    {
+     "levels": "35-39",
+     "tree": "Survival",
+     "talent": "Lightning Reflexes",
+     "points": 5
+    },
+    {
+     "levels": "40-44",
+     "tree": "Marksmanship",
+     "talent": "Lethal Attacks",
+     "points": 5
+    },
+    {
+     "levels": "45-49",
+     "tree": "Marksmanship",
+     "talent": "Careful Aim",
+     "points": 5
+    },
+    {
+     "levels": "50-54",
+     "tree": "Beast Mastery",
+     "talent": "Deadly Aspects",
+     "points": 5
+    },
+    {
+     "levels": "55-57",
+     "tree": "Marksmanship",
+     "talent": "Efficiency",
+     "points": 3
+    },
+    {
+     "levels": "58-59",
+     "tree": "Marksmanship",
+     "talent": "Rapid Killing",
+     "points": 2
+    },
+    {
+     "levels": "60",
+     "tree": "Marksmanship",
+     "talent": "Mortal Shots",
+     "points": 1
+    }
+   ],
+   "race": {
+    "finalist 10/11/30 (the previous record's winner)": {
+     "weighted": 22.26,
+     "levels": {
+      "20": 15.9,
+      "30": 18.66,
+      "40": 21.8,
+      "50": 23.64,
+      "60": 25.34
+     },
+     "signature": "OK"
+    },
+    "opt-bm-leveling-leveling-aoe": {
+     "weighted": 24.61,
+     "levels": {
+      "20": 15.91,
+      "30": 20.16,
+      "40": 25.18,
+      "50": 26.41,
+      "60": 27.86
+     }
+    },
+    "finalist 8/13/30 (before the 20-60 polish)": {
+     "weighted": 22.37,
+     "levels": {
+      "20": 15.9,
+      "30": 18.7,
+      "40": 21.81,
+      "50": 23.75,
+      "60": 25.6
+     },
+     "signature": "OK"
+    },
+    "finalist 5/16/30 (stats model order)": {
+     "weighted": 21.64,
+     "levels": {
+      "20": 15.9,
+      "30": 18.61,
+      "40": 21.64,
+      "50": 22.65,
+      "60": 24.24
+     }
+    },
+    "finalist 5/16/30 (own tree last order)": {
+     "weighted": 22.72,
+     "levels": {
+      "20": 15.41,
+      "30": 18.64,
+      "40": 23.98,
+      "50": 25.24,
+      "60": 24.24
+     }
+    },
+    "open winner": {
+     "weighted": 21.57,
+     "levels": {
+      "20": 15.9,
+      "30": 18.61,
+      "40": 21.4,
+      "50": 22.56,
+      "60": 24.24
+     }
+    }
+   },
+   "order_stats": [
+    {
+     "levels": "10-14",
+     "tree": "Survival",
+     "talent": "Improved Tracking",
+     "points": 5
+    },
+    {
+     "levels": "15-16",
+     "tree": "Survival",
+     "talent": "Savage Strikes",
+     "points": 2
+    },
+    {
+     "levels": "17",
+     "tree": "Survival",
+     "talent": "Deflection",
+     "points": 1
+    },
+    {
+     "levels": "18-19",
+     "tree": "Survival",
+     "talent": "Survivalist",
+     "points": 2
+    },
+    {
+     "levels": "20-22",
+     "tree": "Survival",
+     "talent": "Surefooted",
+     "points": 3
+    },
+    {
+     "levels": "23-24",
+     "tree": "Survival",
+     "talent": "Clever Traps",
+     "points": 2
+    },
+    {
+     "levels": "25-29",
+     "tree": "Survival",
+     "talent": "Predator's Edge",
+     "points": 5
+    },
+    {
+     "levels": "30",
+     "tree": "Survival",
+     "talent": "Resourcefulness",
+     "points": 1
+    },
+    {
+     "levels": "31",
+     "tree": "Survival",
+     "talent": "Expose Prey",
+     "points": 1
+    },
+    {
+     "levels": "32",
+     "tree": "Survival",
+     "talent": "Resourcefulness",
+     "points": 1
+    },
+    {
+     "levels": "33-37",
+     "tree": "Marksmanship",
+     "talent": "Lethal Attacks",
+     "points": 5
+    },
+    {
+     "levels": "38-42",
+     "tree": "Marksmanship",
+     "talent": "Careful Aim",
+     "points": 5
+    },
+    {
+     "levels": "43-47",
+     "tree": "Beast Mastery",
+     "talent": "Deadly Aspects",
+     "points": 5
+    },
+    {
+     "levels": "48-49",
+     "tree": "Survival",
+     "talent": "Survivalist's Discipline",
+     "points": 2
+    },
+    {
+     "levels": "50-54",
+     "tree": "Survival",
+     "talent": "Lightning Reflexes",
+     "points": 5
+    },
+    {
+     "levels": "55-57",
+     "tree": "Marksmanship",
+     "talent": "Efficiency",
+     "points": 3
+    },
+    {
+     "levels": "58-59",
+     "tree": "Marksmanship",
+     "talent": "Rapid Killing",
+     "points": 2
+    },
+    {
+     "levels": "60",
+     "tree": "Marksmanship",
+     "talent": "Mortal Shots",
+     "points": 1
+    }
+   ],
+   "order_stats_split": "5/16/30",
+   "level_polish": {
+    "date": "2026-11-06",
+    "levels": [
+     40,
+     50,
+     60
+    ],
+    "from": "8/13/30",
+    "steps": [
+     {
+      "round": 1,
+      "split": "8/13/30",
+      "seed1": -0.0207,
+      "seed2": -0.0201,
+      "seconds_40_60": 23.16
+     },
+     {
+      "round": 2,
+      "split": "5/16/30",
+      "seed1": -0.0137,
+      "seed2": -0.0076,
+      "seconds_40_60": 22.99
+     }
+    ],
+    "neighbours_tried": 160,
+    "minutes": 17.0,
+    "changed": true
+   },
+   "order_label": "own tree first",
+   "orders_raced": "5/16/30",
+   "order_polish": {
+    "date": "2026-11-06",
+    "levels": [
+     30,
+     40,
+     50
+    ],
+    "from": "own tree first",
+    "steps": [],
+    "minutes": 4.2,
+    "changed": false
+   },
+   "values": {
+    "Resourcefulness": {
+     "ranks": 2,
+     "seconds": 2.06,
+     "per_point": 1.03
+    },
+    "Survivalist's Discipline": {
+     "ranks": 2,
+     "seconds": 1.39,
+     "per_point": 0.7
+    },
+    "Clever Traps": {
+     "ranks": 2,
+     "seconds": 0.66,
+     "per_point": 0.33
+    },
+    "Lethal Attacks": {
+     "ranks": 5,
+     "seconds": 0.56,
+     "per_point": 0.11
+    },
+    "Surefooted": {
+     "ranks": 3,
+     "seconds": 0.53,
+     "per_point": 0.18
+    },
+    "Improved Tracking": {
+     "ranks": 5,
+     "seconds": 0.49,
+     "per_point": 0.1
+    },
+    "Careful Aim": {
+     "ranks": 5,
+     "seconds": 0.38,
+     "per_point": 0.08
+    },
+    "Lightning Reflexes": {
+     "ranks": 5,
+     "seconds": 0.28,
+     "per_point": 0.06
+    },
+    "Predator's Edge": {
+     "ranks": 5,
+     "seconds": 0.24,
+     "per_point": 0.05
+    },
+    "Deadly Aspects": {
+     "ranks": 5,
+     "seconds": 0.22,
+     "per_point": 0.04
+    },
+    "Efficiency": {
+     "ranks": 3,
+     "seconds": 0.21,
+     "per_point": 0.07
+    },
+    "Savage Strikes": {
+     "ranks": 2,
+     "seconds": 0.04,
+     "per_point": 0.02
+    },
+    "Survivalist": {
+     "ranks": 2,
+     "seconds": 0.04,
+     "per_point": 0.02
+    },
+    "Deflection": {
+     "ranks": 1,
+     "seconds": 0.03,
+     "per_point": 0.03
+    },
+    "Expose Prey": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Rapid Killing": {
+     "ranks": 2,
+     "seconds": -0.01,
+     "per_point": -0.01
+    },
+    "Mortal Shots": {
+     "ranks": 1,
+     "seconds": -0.01,
+     "per_point": -0.01
+    }
+   },
+   "values_base": 24.23,
+   "split": "5/16/30",
+   "family": "Survival",
+   "link": "https://talentsforever.com/hunter/60/5-00503520001-51022023005021205-7",
+   "ours_best": "opt-bm-leveling-leveling-aoe",
+   "gain_vs_ours": 0.1409,
+   "synergy": {
+    "date": "2026-11-06",
+    "winner": "5/16/30",
+    "relevant": 36,
+    "missing": 22,
+    "pairs": 540,
+    "screen_fights": 400,
+    "singles": {
+     "Unleashed Fury": 0.0353,
+     "Bestial Discipline": 0.0243,
+     "Ferocity": 0.0229,
+     "Rapid Recuperation": 0.0158,
+     "Focused Fire": 0.0135,
+     "Frenzy": 0.0134,
+     "Improved Stings": 0.0133,
+     "Survival Tactics": 0.0118,
+     "Bestial Wrath": 0.0079,
+     "Rapid Killing -1": 0.0066,
+     "Trueshot Aura": 0.0064,
+     "Strider Kick": 0.0053
+    },
+    "top_pairs": [
+     {
+      "pair": "Unleashed Fury + Improved Stings",
+      "gain": 0.0603,
+      "interaction": 0.0117
+     },
+     {
+      "pair": "Unleashed Fury + Bestial Discipline",
+      "gain": 0.0588,
+      "interaction": -0.0008
+     },
+     {
+      "pair": "Unleashed Fury + Rapid Recuperation",
+      "gain": 0.0515,
+      "interaction": 0.0004
+     },
+     {
+      "pair": "Unleashed Fury + Ferocity",
+      "gain": 0.0481,
+      "interaction": -0.0101
+     },
+     {
+      "pair": "Focused Fire + Unleashed Fury",
+      "gain": 0.0468,
+      "interaction": -0.002
+     },
+     {
+      "pair": "Ferocity + Bestial Discipline",
+      "gain": 0.0464,
+      "interaction": -0.0008
+     },
+     {
+      "pair": "Focused Fire + Bestial Discipline",
+      "gain": 0.0412,
+      "interaction": 0.0034
+     },
+     {
+      "pair": "Unleashed Fury + Frenzy",
+      "gain": 0.0407,
+      "interaction": -0.008
+     },
+     {
+      "pair": "Ferocity + Rapid Recuperation",
+      "gain": 0.0404,
+      "interaction": 0.0017
+     },
+     {
+      "pair": "Unleashed Fury + Ranged Weapon Specialization",
+      "gain": 0.0398,
+      "interaction": 0.0002
+     },
+     {
+      "pair": "Unleashed Fury + Survival Tactics",
+      "gain": 0.0395,
+      "interaction": -0.0076
+     },
+     {
+      "pair": "Bestial Discipline + Frenzy",
+      "gain": 0.0371,
+      "interaction": -0.0006
+     }
+    ],
+    "top_interactions": [
+     {
+      "pair": "Lone Wolf + Clever Traps",
+      "gain": -0.4661,
+      "interaction": 0.4748,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Predator's Edge",
+      "gain": -0.5161,
+      "interaction": 0.4677,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Improved Tracking",
+      "gain": -0.4966,
+      "interaction": 0.4671,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Resourcefulness",
+      "gain": -0.5206,
+      "interaction": 0.463,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Expose Prey",
+      "gain": -0.4902,
+      "interaction": 0.4553,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Savage Strikes",
+      "gain": -0.4973,
+      "interaction": 0.4546,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Survivalist's Discipline",
+      "gain": -0.473,
+      "interaction": 0.4426,
+      "kind": "swap"
+     },
+     {
+      "pair": "Lone Wolf + Surefooted",
+      "gain": -0.5112,
+      "interaction": 0.4373,
+      "kind": "swap"
+     },
+     {
+      "pair": "Unleashed Fury + Improved Stings",
+      "gain": 0.0603,
+      "interaction": 0.0117
+     },
+     {
+      "pair": "Improved Stings + Deadly Aspects",
+      "gain": 0.0138,
+      "interaction": 0.0111,
+      "kind": "swap"
+     },
+     {
+      "pair": "Bestial Discipline + Lethal Attacks",
+      "gain": 0.0106,
+      "interaction": 0.0097,
+      "kind": "swap"
+     },
+     {
+      "pair": "Strider Kick + Careful Aim",
+      "gain": -0.0022,
+      "interaction": 0.0079,
+      "kind": "swap"
+     }
+    ],
+    "leads": [],
+    "base_kills_per_hour": 149.18,
+    "winner_allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Efficiency",
+       3
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Rapid Killing",
+       2
+      ],
+      [
+       "Mortal Shots",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ],
+      [
+       "Deflection",
+       1
+      ],
+      [
+       "Savage Strikes",
+       2
+      ],
+      [
+       "Survivalist",
+       2
+      ],
+      [
+       "Clever Traps",
+       2
+      ],
+      [
+       "Surefooted",
+       3
+      ],
+      [
+       "Predator's Edge",
+       5
+      ],
+      [
+       "Resourcefulness",
+       2
+      ],
+      [
+       "Expose Prey",
+       1
+      ],
+      [
+       "Survivalist's Discipline",
+       2
+      ],
+      [
+       "Lightning Reflexes",
+       5
+      ]
+     ]
+    },
+    "singles_all": {
+     "Focused Fire": 0.0135,
+     "Unleashed Fury": 0.0353,
+     "Ferocity": 0.0229,
+     "Summon Hawk": 0.0,
+     "Intimidation": -0.0077,
+     "Bestial Discipline": 0.0243,
+     "Frenzy": 0.0134,
+     "Bestial Wrath": 0.0079,
+     "Improved Concussive Shot": 0.0,
+     "Improved Stings": 0.0133,
+     "Improved Arcane Shot": 0.0,
+     "Lone Wolf": -0.472,
+     "Trueshot Aura": 0.0064,
+     "Rapid Recuperation": 0.0158,
+     "Barrage": 0.0,
+     "Scatter Shot": 0.0,
+     "Ranged Weapon Specialization": 0.0043,
+     "Sniper Shot": 0.0,
+     "Survival Tactics": 0.0118,
+     "Counterattack": -0.0009,
+     "Strider Kick": 0.0053,
+     "Lacerating Strikes": 0.0039,
+     "-Deadly Aspects": -0.0106,
+     "Deadly Aspects -1": 0.0029,
+     "Deadly Aspects -2": -0.0009,
+     "-Lethal Attacks": -0.0234,
+     "Lethal Attacks -1": 0.0005,
+     "Lethal Attacks -2": -0.0031,
+     "-Efficiency": -0.0076,
+     "Efficiency -1": -0.0013,
+     "Efficiency -2": -0.009,
+     "-Careful Aim": -0.0154,
+     "Careful Aim -1": -0.0007,
+     "Careful Aim -2": -0.0031,
+     "-Rapid Killing": 0.0031,
+     "Rapid Killing -1": 0.0066,
+     "-Mortal Shots": -0.0002,
+     "-Improved Tracking": -0.4917,
+     "Improved Tracking -1": -0.4729,
+     "Improved Tracking -2": -0.4827,
+     "-Savage Strikes": -0.4799,
+     "Savage Strikes -1": -0.4761,
+     "-Clever Traps": -0.4689,
+     "Clever Traps -1": -0.4704,
+     "-Surefooted": -0.4765,
+     "Surefooted -1": -0.4701,
+     "Surefooted -2": -0.476,
+     "-Predator's Edge": -0.5118,
+     "Predator's Edge -1": -0.4771,
+     "Predator's Edge -2": -0.4874,
+     "-Resourcefulness": -0.5116,
+     "Resourcefulness -1": -0.4862,
+     "-Expose Prey": -0.4735,
+     "-Survivalist's Discipline": -0.4436,
+     "Survivalist's Discipline -1": -0.4677
+    },
+    "pairs_all": {
+     "Focused Fire + Unleashed Fury": {
+      "gain": 0.0468,
+      "interaction": -0.002
+     },
+     "Focused Fire + Ferocity": {
+      "gain": 0.0329,
+      "interaction": -0.0035
+     },
+     "Focused Fire + Summon Hawk": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Intimidation": {
+      "gain": 0.0023,
+      "interaction": -0.0035
+     },
+     "Focused Fire + Bestial Discipline": {
+      "gain": 0.0412,
+      "interaction": 0.0034
+     },
+     "Focused Fire + Frenzy": {
+      "gain": 0.023,
+      "interaction": -0.0039
+     },
+     "Focused Fire + Bestial Wrath": {
+      "gain": 0.0139,
+      "interaction": -0.0075
+     },
+     "Focused Fire + Improved Concussive Shot": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Improved Stings": {
+      "gain": 0.0259,
+      "interaction": -0.0009
+     },
+     "Focused Fire + Improved Arcane Shot": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": -0.0135
+     },
+     "Focused Fire + Trueshot Aura": {
+      "gain": 0.0179,
+      "interaction": -0.002
+     },
+     "Focused Fire + Rapid Recuperation": {
+      "gain": 0.0271,
+      "interaction": -0.0022
+     },
+     "Focused Fire + Barrage": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Scatter Shot": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Ranged Weapon Specialization": {
+      "gain": 0.0114,
+      "interaction": -0.0064
+     },
+     "Focused Fire + Sniper Shot": {
+      "gain": 0.0135,
+      "interaction": -0.0
+     },
+     "Focused Fire + Survival Tactics": {
+      "gain": 0.0164,
+      "interaction": -0.0089
+     },
+     "Focused Fire + Counterattack": {
+      "gain": 0.0095,
+      "interaction": -0.0031
+     },
+     "Focused Fire + Strider Kick": {
+      "gain": 0.0225,
+      "interaction": 0.0037
+     },
+     "Focused Fire + Lacerating Strikes": {
+      "gain": 0.0173,
+      "interaction": -0.0001
+     },
+     "Unleashed Fury + Ferocity": {
+      "gain": 0.0481,
+      "interaction": -0.0101
+     },
+     "Unleashed Fury + Summon Hawk": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Intimidation": {
+      "gain": 0.0138,
+      "interaction": -0.0138
+     },
+     "Unleashed Fury + Bestial Discipline": {
+      "gain": 0.0588,
+      "interaction": -0.0008
+     },
+     "Unleashed Fury + Frenzy": {
+      "gain": 0.0407,
+      "interaction": -0.008
+     },
+     "Unleashed Fury + Bestial Wrath": {
+      "gain": 0.033,
+      "interaction": -0.0102
+     },
+     "Unleashed Fury + Improved Concussive Shot": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Improved Stings": {
+      "gain": 0.0603,
+      "interaction": 0.0117
+     },
+     "Unleashed Fury + Improved Arcane Shot": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": -0.0353
+     },
+     "Unleashed Fury + Trueshot Aura": {
+      "gain": 0.0359,
+      "interaction": -0.0058
+     },
+     "Unleashed Fury + Rapid Recuperation": {
+      "gain": 0.0515,
+      "interaction": 0.0004
+     },
+     "Unleashed Fury + Barrage": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Scatter Shot": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Ranged Weapon Specialization": {
+      "gain": 0.0398,
+      "interaction": 0.0002
+     },
+     "Unleashed Fury + Sniper Shot": {
+      "gain": 0.0353,
+      "interaction": -0.0
+     },
+     "Unleashed Fury + Survival Tactics": {
+      "gain": 0.0395,
+      "interaction": -0.0076
+     },
+     "Unleashed Fury + Counterattack": {
+      "gain": 0.0305,
+      "interaction": -0.0039
+     },
+     "Unleashed Fury + Strider Kick": {
+      "gain": 0.0365,
+      "interaction": -0.0041
+     },
+     "Unleashed Fury + Lacerating Strikes": {
+      "gain": 0.0303,
+      "interaction": -0.0089
+     },
+     "Ferocity + Summon Hawk": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Intimidation": {
+      "gain": 0.0154,
+      "interaction": 0.0002
+     },
+     "Ferocity + Bestial Discipline": {
+      "gain": 0.0464,
+      "interaction": -0.0008
+     },
+     "Ferocity + Frenzy": {
+      "gain": 0.0266,
+      "interaction": -0.0097
+     },
+     "Ferocity + Bestial Wrath": {
+      "gain": 0.0263,
+      "interaction": -0.0045
+     },
+     "Ferocity + Improved Concussive Shot": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Improved Stings": {
+      "gain": 0.0369,
+      "interaction": 0.0007
+     },
+     "Ferocity + Improved Arcane Shot": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": -0.0229
+     },
+     "Ferocity + Trueshot Aura": {
+      "gain": 0.0273,
+      "interaction": -0.002
+     },
+     "Ferocity + Rapid Recuperation": {
+      "gain": 0.0404,
+      "interaction": 0.0017
+     },
+     "Ferocity + Barrage": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Scatter Shot": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Ranged Weapon Specialization": {
+      "gain": 0.0273,
+      "interaction": 0.0001
+     },
+     "Ferocity + Sniper Shot": {
+      "gain": 0.0229,
+      "interaction": 0.0
+     },
+     "Ferocity + Survival Tactics": {
+      "gain": 0.0294,
+      "interaction": -0.0053
+     },
+     "Ferocity + Counterattack": {
+      "gain": 0.0251,
+      "interaction": 0.0031
+     },
+     "Ferocity + Strider Kick": {
+      "gain": 0.0298,
+      "interaction": 0.0016
+     },
+     "Ferocity + Lacerating Strikes": {
+      "gain": 0.0202,
+      "interaction": -0.0066
+     },
+     "Summon Hawk + Intimidation": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Bestial Discipline": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Summon Hawk + Frenzy": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Summon Hawk + Bestial Wrath": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Improved Concussive Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Improved Stings": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Improved Arcane Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Trueshot Aura": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Rapid Recuperation": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Summon Hawk + Barrage": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Scatter Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Ranged Weapon Specialization": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Summon Hawk + Sniper Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Summon Hawk + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Intimidation + Bestial Discipline": {
+      "gain": 0.0155,
+      "interaction": -0.0011
+     },
+     "Intimidation + Frenzy": {
+      "gain": 0.0038,
+      "interaction": -0.0019
+     },
+     "Intimidation + Bestial Wrath": {
+      "gain": -0.0115,
+      "interaction": -0.0117
+     },
+     "Intimidation + Improved Concussive Shot": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Intimidation + Improved Stings": {
+      "gain": 0.0063,
+      "interaction": 0.0007
+     },
+     "Intimidation + Improved Arcane Shot": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Intimidation + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": 0.0077
+     },
+     "Intimidation + Trueshot Aura": {
+      "gain": -0.004,
+      "interaction": -0.0027
+     },
+     "Intimidation + Rapid Recuperation": {
+      "gain": 0.0062,
+      "interaction": -0.0019
+     },
+     "Intimidation + Barrage": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Intimidation + Scatter Shot": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Intimidation + Ranged Weapon Specialization": {
+      "gain": -0.0058,
+      "interaction": -0.0024
+     },
+     "Intimidation + Sniper Shot": {
+      "gain": -0.0077,
+      "interaction": 0.0
+     },
+     "Intimidation + Survival Tactics": {
+      "gain": -0.0063,
+      "interaction": -0.0104
+     },
+     "Intimidation + Counterattack": {
+      "gain": -0.0076,
+      "interaction": 0.001
+     },
+     "Intimidation + Strider Kick": {
+      "gain": -0.0015,
+      "interaction": 0.0009
+     },
+     "Intimidation + Lacerating Strikes": {
+      "gain": -0.0073,
+      "interaction": -0.0035
+     },
+     "Bestial Discipline + Frenzy": {
+      "gain": 0.0371,
+      "interaction": -0.0006
+     },
+     "Bestial Discipline + Bestial Wrath": {
+      "gain": 0.028,
+      "interaction": -0.0042
+     },
+     "Bestial Discipline + Improved Concussive Shot": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Bestial Discipline + Improved Stings": {
+      "gain": 0.0351,
+      "interaction": -0.0025
+     },
+     "Bestial Discipline + Improved Arcane Shot": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Bestial Discipline + Lone Wolf": {
+      "gain": -0.4717,
+      "interaction": -0.024
+     },
+     "Bestial Discipline + Trueshot Aura": {
+      "gain": 0.0284,
+      "interaction": -0.0023
+     },
+     "Bestial Discipline + Rapid Recuperation": {
+      "gain": 0.0243,
+      "interaction": -0.0158
+     },
+     "Bestial Discipline + Barrage": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Bestial Discipline + Scatter Shot": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Bestial Discipline + Ranged Weapon Specialization": {
+      "gain": 0.0288,
+      "interaction": 0.0002
+     },
+     "Bestial Discipline + Sniper Shot": {
+      "gain": 0.0243,
+      "interaction": -0.0
+     },
+     "Bestial Discipline + Survival Tactics": {
+      "gain": 0.0349,
+      "interaction": -0.0012
+     },
+     "Bestial Discipline + Counterattack": {
+      "gain": 0.031,
+      "interaction": 0.0076
+     },
+     "Bestial Discipline + Strider Kick": {
+      "gain": 0.034,
+      "interaction": 0.0044
+     },
+     "Bestial Discipline + Lacerating Strikes": {
+      "gain": 0.0308,
+      "interaction": 0.0026
+     },
+     "Frenzy + Bestial Wrath": {
+      "gain": 0.0107,
+      "interaction": -0.0106
+     },
+     "Frenzy + Improved Concussive Shot": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Frenzy + Improved Stings": {
+      "gain": 0.0276,
+      "interaction": 0.0009
+     },
+     "Frenzy + Improved Arcane Shot": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Frenzy + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": -0.0134
+     },
+     "Frenzy + Trueshot Aura": {
+      "gain": 0.0197,
+      "interaction": -0.0001
+     },
+     "Frenzy + Rapid Recuperation": {
+      "gain": 0.0235,
+      "interaction": -0.0057
+     },
+     "Frenzy + Barrage": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Frenzy + Scatter Shot": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Frenzy + Ranged Weapon Specialization": {
+      "gain": 0.0179,
+      "interaction": 0.0002
+     },
+     "Frenzy + Sniper Shot": {
+      "gain": 0.0134,
+      "interaction": -0.0
+     },
+     "Frenzy + Survival Tactics": {
+      "gain": 0.0179,
+      "interaction": -0.0073
+     },
+     "Frenzy + Counterattack": {
+      "gain": 0.0096,
+      "interaction": -0.0029
+     },
+     "Frenzy + Strider Kick": {
+      "gain": 0.0158,
+      "interaction": -0.0029
+     },
+     "Frenzy + Lacerating Strikes": {
+      "gain": 0.008,
+      "interaction": -0.0093
+     },
+     "Bestial Wrath + Improved Concussive Shot": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Bestial Wrath + Improved Stings": {
+      "gain": 0.0243,
+      "interaction": 0.0031
+     },
+     "Bestial Wrath + Improved Arcane Shot": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Bestial Wrath + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": -0.0079
+     },
+     "Bestial Wrath + Trueshot Aura": {
+      "gain": 0.0096,
+      "interaction": -0.0047
+     },
+     "Bestial Wrath + Rapid Recuperation": {
+      "gain": 0.0302,
+      "interaction": 0.0065
+     },
+     "Bestial Wrath + Barrage": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Bestial Wrath + Scatter Shot": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Bestial Wrath + Ranged Weapon Specialization": {
+      "gain": 0.0128,
+      "interaction": 0.0006
+     },
+     "Bestial Wrath + Sniper Shot": {
+      "gain": 0.0079,
+      "interaction": 0.0
+     },
+     "Bestial Wrath + Survival Tactics": {
+      "gain": 0.0116,
+      "interaction": -0.0081
+     },
+     "Bestial Wrath + Counterattack": {
+      "gain": 0.0028,
+      "interaction": -0.0042
+     },
+     "Bestial Wrath + Strider Kick": {
+      "gain": 0.0107,
+      "interaction": -0.0025
+     },
+     "Bestial Wrath + Lacerating Strikes": {
+      "gain": 0.0072,
+      "interaction": -0.0046
+     },
+     "Improved Concussive Shot + Improved Stings": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Improved Arcane Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Trueshot Aura": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Rapid Recuperation": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Improved Concussive Shot + Barrage": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Scatter Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Ranged Weapon Specialization": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Improved Concussive Shot + Sniper Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Improved Concussive Shot + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Improved Stings + Improved Arcane Shot": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Improved Stings + Lone Wolf": {
+      "gain": -0.4875,
+      "interaction": -0.0288
+     },
+     "Improved Stings + Trueshot Aura": {
+      "gain": 0.0096,
+      "interaction": -0.0101
+     },
+     "Improved Stings + Rapid Recuperation": {
+      "gain": 0.0329,
+      "interaction": 0.0038
+     },
+     "Improved Stings + Barrage": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Improved Stings + Scatter Shot": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Improved Stings + Ranged Weapon Specialization": {
+      "gain": 0.011,
+      "interaction": -0.0066
+     },
+     "Improved Stings + Sniper Shot": {
+      "gain": 0.0133,
+      "interaction": 0.0
+     },
+     "Improved Stings + Survival Tactics": {
+      "gain": 0.0221,
+      "interaction": -0.003
+     },
+     "Improved Stings + Counterattack": {
+      "gain": 0.0194,
+      "interaction": 0.007
+     },
+     "Improved Stings + Strider Kick": {
+      "gain": 0.0193,
+      "interaction": 0.0007
+     },
+     "Improved Stings + Lacerating Strikes": {
+      "gain": 0.0198,
+      "interaction": 0.0026
+     },
+     "Improved Arcane Shot + Lone Wolf": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Trueshot Aura": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Rapid Recuperation": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Improved Arcane Shot + Barrage": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Scatter Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Ranged Weapon Specialization": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Improved Arcane Shot + Sniper Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Improved Arcane Shot + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Lone Wolf + Trueshot Aura": {
+      "gain": -0.4788,
+      "interaction": -0.0132
+     },
+     "Lone Wolf + Rapid Recuperation": {
+      "gain": -0.471,
+      "interaction": -0.0148
+     },
+     "Lone Wolf + Barrage": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Lone Wolf + Scatter Shot": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Lone Wolf + Ranged Weapon Specialization": {
+      "gain": -0.4789,
+      "interaction": -0.0112
+     },
+     "Lone Wolf + Sniper Shot": {
+      "gain": -0.472,
+      "interaction": 0.0
+     },
+     "Lone Wolf + Survival Tactics": {
+      "gain": -0.4775,
+      "interaction": -0.0173
+     },
+     "Lone Wolf + Counterattack": {
+      "gain": -0.4845,
+      "interaction": -0.0116
+     },
+     "Lone Wolf + Strider Kick": {
+      "gain": -0.4995,
+      "interaction": -0.0328
+     },
+     "Lone Wolf + Lacerating Strikes": {
+      "gain": -0.4869,
+      "interaction": -0.0188
+     },
+     "Trueshot Aura + Rapid Recuperation": {
+      "gain": 0.02,
+      "interaction": -0.0022
+     },
+     "Trueshot Aura + Barrage": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Trueshot Aura + Scatter Shot": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Trueshot Aura + Ranged Weapon Specialization": {
+      "gain": 0.0067,
+      "interaction": -0.004
+     },
+     "Trueshot Aura + Sniper Shot": {
+      "gain": 0.0064,
+      "interaction": 0.0
+     },
+     "Trueshot Aura + Survival Tactics": {
+      "gain": 0.0113,
+      "interaction": -0.0069
+     },
+     "Trueshot Aura + Counterattack": {
+      "gain": 0.0086,
+      "interaction": 0.0031
+     },
+     "Trueshot Aura + Strider Kick": {
+      "gain": 0.005,
+      "interaction": -0.0067
+     },
+     "Trueshot Aura + Lacerating Strikes": {
+      "gain": 0.0044,
+      "interaction": -0.0059
+     },
+     "Rapid Recuperation + Barrage": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Rapid Recuperation + Scatter Shot": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Rapid Recuperation + Ranged Weapon Specialization": {
+      "gain": 0.0169,
+      "interaction": -0.0032
+     },
+     "Rapid Recuperation + Sniper Shot": {
+      "gain": 0.0158,
+      "interaction": -0.0
+     },
+     "Rapid Recuperation + Survival Tactics": {
+      "gain": 0.0244,
+      "interaction": -0.0032
+     },
+     "Rapid Recuperation + Counterattack": {
+      "gain": 0.0161,
+      "interaction": 0.0012
+     },
+     "Rapid Recuperation + Strider Kick": {
+      "gain": 0.0228,
+      "interaction": 0.0017
+     },
+     "Rapid Recuperation + Lacerating Strikes": {
+      "gain": 0.0177,
+      "interaction": -0.002
+     },
+     "Barrage + Scatter Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Barrage + Ranged Weapon Specialization": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Barrage + Sniper Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Barrage + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Barrage + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Barrage + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Barrage + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Scatter Shot + Ranged Weapon Specialization": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Scatter Shot + Sniper Shot": {
+      "gain": 0.0,
+      "interaction": 0.0
+     },
+     "Scatter Shot + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Scatter Shot + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Scatter Shot + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Scatter Shot + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Ranged Weapon Specialization + Sniper Shot": {
+      "gain": 0.0043,
+      "interaction": -0.0
+     },
+     "Ranged Weapon Specialization + Survival Tactics": {
+      "gain": 0.01,
+      "interaction": -0.0061
+     },
+     "Ranged Weapon Specialization + Counterattack": {
+      "gain": 0.0028,
+      "interaction": -0.0006
+     },
+     "Ranged Weapon Specialization + Strider Kick": {
+      "gain": 0.01,
+      "interaction": 0.0004
+     },
+     "Ranged Weapon Specialization + Lacerating Strikes": {
+      "gain": 0.0045,
+      "interaction": -0.0037
+     },
+     "Sniper Shot + Survival Tactics": {
+      "gain": 0.0118,
+      "interaction": 0.0
+     },
+     "Sniper Shot + Counterattack": {
+      "gain": -0.0009,
+      "interaction": 0.0
+     },
+     "Sniper Shot + Strider Kick": {
+      "gain": 0.0053,
+      "interaction": 0.0
+     },
+     "Sniper Shot + Lacerating Strikes": {
+      "gain": 0.0039,
+      "interaction": -0.0
+     },
+     "Survival Tactics + Counterattack": {
+      "gain": 0.0092,
+      "interaction": -0.0017
+     },
+     "Survival Tactics + Strider Kick": {
+      "gain": 0.0135,
+      "interaction": -0.0036
+     },
+     "Survival Tactics + Lacerating Strikes": {
+      "gain": 0.0096,
+      "interaction": -0.0061
+     },
+     "Counterattack + Strider Kick": {
+      "gain": 0.0091,
+      "interaction": 0.0047
+     },
+     "Counterattack + Lacerating Strikes": {
+      "gain": 0.0021,
+      "interaction": -0.0009
+     },
+     "Strider Kick + Lacerating Strikes": {
+      "gain": 0.0055,
+      "interaction": -0.0037
+     },
+     "Focused Fire + Lethal Attacks": {
+      "gain": -0.0076,
+      "interaction": 0.0023,
+      "kind": "swap"
+     },
+     "Focused Fire + Efficiency": {
+      "gain": 0.0001,
+      "interaction": -0.0058,
+      "kind": "swap"
+     },
+     "Focused Fire + Careful Aim": {
+      "gain": -0.0013,
+      "interaction": 0.0006,
+      "kind": "swap"
+     },
+     "Focused Fire + Rapid Killing": {
+      "gain": 0.0124,
+      "interaction": -0.0042,
+      "kind": "swap"
+     },
+     "Focused Fire + Mortal Shots": {
+      "gain": 0.0149,
+      "interaction": 0.0016,
+      "kind": "swap"
+     },
+     "Focused Fire + Improved Tracking": {
+      "gain": -0.493,
+      "interaction": -0.0148,
+      "kind": "swap"
+     },
+     "Focused Fire + Savage Strikes": {
+      "gain": -0.474,
+      "interaction": -0.0076,
+      "kind": "swap"
+     },
+     "Focused Fire + Clever Traps": {
+      "gain": -0.4546,
+      "interaction": 0.0008,
+      "kind": "swap"
+     },
+     "Focused Fire + Surefooted": {
+      "gain": -0.4684,
+      "interaction": -0.0054,
+      "kind": "swap"
+     },
+     "Focused Fire + Predator's Edge": {
+      "gain": -0.5032,
+      "interaction": -0.0049,
+      "kind": "swap"
+     },
+     "Focused Fire + Resourcefulness": {
+      "gain": -0.5079,
+      "interaction": -0.0098,
+      "kind": "swap"
+     },
+     "Focused Fire + Expose Prey": {
+      "gain": -0.4697,
+      "interaction": -0.0097,
+      "kind": "swap"
+     },
+     "Focused Fire + Survivalist's Discipline": {
+      "gain": -0.4447,
+      "interaction": -0.0146,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Lethal Attacks": {
+      "gain": -0.0002,
+      "interaction": -0.0121,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Efficiency": {
+      "gain": 0.0266,
+      "interaction": -0.0011,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Careful Aim": {
+      "gain": 0.0148,
+      "interaction": -0.0051,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Rapid Killing": {
+      "gain": 0.0332,
+      "interaction": -0.0052,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Mortal Shots": {
+      "gain": 0.0346,
+      "interaction": -0.0005,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Improved Tracking": {
+      "gain": -0.5059,
+      "interaction": -0.0495,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Savage Strikes": {
+      "gain": -0.4957,
+      "interaction": -0.0511,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Clever Traps": {
+      "gain": -0.4829,
+      "interaction": -0.0493,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Surefooted": {
+      "gain": -0.4949,
+      "interaction": -0.0537,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Predator's Edge": {
+      "gain": -0.5232,
+      "interaction": -0.0467,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Resourcefulness": {
+      "gain": -0.5236,
+      "interaction": -0.0473,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Expose Prey": {
+      "gain": -0.4825,
+      "interaction": -0.0443,
+      "kind": "swap"
+     },
+     "Unleashed Fury + Survivalist's Discipline": {
+      "gain": -0.4728,
+      "interaction": -0.0645,
+      "kind": "swap"
+     },
+     "Ferocity + Lethal Attacks": {
+      "gain": -0.0068,
+      "interaction": -0.0063,
+      "kind": "swap"
+     },
+     "Ferocity + Efficiency": {
+      "gain": 0.015,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Ferocity + Careful Aim": {
+      "gain": 0.0006,
+      "interaction": -0.0069,
+      "kind": "swap"
+     },
+     "Ferocity + Rapid Killing": {
+      "gain": 0.0238,
+      "interaction": -0.0022,
+      "kind": "swap"
+     },
+     "Ferocity + Mortal Shots": {
+      "gain": 0.0222,
+      "interaction": -0.0005,
+      "kind": "swap"
+     },
+     "Ferocity + Improved Tracking": {
+      "gain": -0.5051,
+      "interaction": -0.0363,
+      "kind": "swap"
+     },
+     "Ferocity + Savage Strikes": {
+      "gain": -0.4833,
+      "interaction": -0.0263,
+      "kind": "swap"
+     },
+     "Ferocity + Clever Traps": {
+      "gain": -0.4722,
+      "interaction": -0.0262,
+      "kind": "swap"
+     },
+     "Ferocity + Surefooted": {
+      "gain": -0.4803,
+      "interaction": -0.0267,
+      "kind": "swap"
+     },
+     "Ferocity + Predator's Edge": {
+      "gain": -0.5164,
+      "interaction": -0.0275,
+      "kind": "swap"
+     },
+     "Ferocity + Resourcefulness": {
+      "gain": -0.5183,
+      "interaction": -0.0296,
+      "kind": "swap"
+     },
+     "Ferocity + Expose Prey": {
+      "gain": -0.4857,
+      "interaction": -0.0351,
+      "kind": "swap"
+     },
+     "Ferocity + Survivalist's Discipline": {
+      "gain": -0.4595,
+      "interaction": -0.0388,
+      "kind": "swap"
+     },
+     "Summon Hawk + Lethal Attacks": {
+      "gain": -0.0234,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Efficiency": {
+      "gain": -0.0076,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Careful Aim": {
+      "gain": -0.0154,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Rapid Killing": {
+      "gain": 0.0031,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Mortal Shots": {
+      "gain": -0.0002,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Summon Hawk + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Intimidation + Lethal Attacks": {
+      "gain": -0.0314,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Intimidation + Efficiency": {
+      "gain": -0.0191,
+      "interaction": -0.0038,
+      "kind": "swap"
+     },
+     "Intimidation + Careful Aim": {
+      "gain": -0.0236,
+      "interaction": -0.0005,
+      "kind": "swap"
+     },
+     "Intimidation + Rapid Killing": {
+      "gain": -0.0112,
+      "interaction": -0.0066,
+      "kind": "swap"
+     },
+     "Intimidation + Mortal Shots": {
+      "gain": -0.0076,
+      "interaction": 0.0003,
+      "kind": "swap"
+     },
+     "Intimidation + Improved Tracking": {
+      "gain": -0.4931,
+      "interaction": 0.0063,
+      "kind": "swap"
+     },
+     "Intimidation + Savage Strikes": {
+      "gain": -0.4849,
+      "interaction": 0.0027,
+      "kind": "swap"
+     },
+     "Intimidation + Clever Traps": {
+      "gain": -0.4702,
+      "interaction": 0.0064,
+      "kind": "swap"
+     },
+     "Intimidation + Surefooted": {
+      "gain": -0.4889,
+      "interaction": -0.0047,
+      "kind": "swap"
+     },
+     "Intimidation + Predator's Edge": {
+      "gain": -0.5176,
+      "interaction": 0.0019,
+      "kind": "swap"
+     },
+     "Intimidation + Resourcefulness": {
+      "gain": -0.5183,
+      "interaction": 0.001,
+      "kind": "swap"
+     },
+     "Intimidation + Expose Prey": {
+      "gain": -0.4796,
+      "interaction": 0.0016,
+      "kind": "swap"
+     },
+     "Intimidation + Survivalist's Discipline": {
+      "gain": -0.4589,
+      "interaction": -0.0076,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Lethal Attacks": {
+      "gain": 0.0106,
+      "interaction": 0.0097,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Efficiency": {
+      "gain": 0.0137,
+      "interaction": -0.003,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Careful Aim": {
+      "gain": 0.008,
+      "interaction": -0.0009,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Rapid Killing": {
+      "gain": 0.0296,
+      "interaction": 0.0022,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Mortal Shots": {
+      "gain": 0.0272,
+      "interaction": 0.0031,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Improved Tracking": {
+      "gain": -0.4908,
+      "interaction": -0.0234,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Savage Strikes": {
+      "gain": -0.4736,
+      "interaction": -0.018,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Clever Traps": {
+      "gain": -0.4645,
+      "interaction": -0.0199,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Surefooted": {
+      "gain": -0.4727,
+      "interaction": -0.0205,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Predator's Edge": {
+      "gain": -0.5041,
+      "interaction": -0.0166,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Resourcefulness": {
+      "gain": -0.5039,
+      "interaction": -0.0166,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0243,
+      "kind": "swap"
+     },
+     "Bestial Discipline + Survivalist's Discipline": {
+      "gain": -0.4346,
+      "interaction": -0.0153,
+      "kind": "swap"
+     },
+     "Frenzy + Lethal Attacks": {
+      "gain": -0.0078,
+      "interaction": 0.0022,
+      "kind": "swap"
+     },
+     "Frenzy + Efficiency": {
+      "gain": 0.0025,
+      "interaction": -0.0033,
+      "kind": "swap"
+     },
+     "Frenzy + Careful Aim": {
+      "gain": -0.0041,
+      "interaction": -0.0021,
+      "kind": "swap"
+     },
+     "Frenzy + Rapid Killing": {
+      "gain": 0.0138,
+      "interaction": -0.0027,
+      "kind": "swap"
+     },
+     "Frenzy + Mortal Shots": {
+      "gain": 0.0154,
+      "interaction": 0.0022,
+      "kind": "swap"
+     },
+     "Frenzy + Improved Tracking": {
+      "gain": -0.4873,
+      "interaction": -0.009,
+      "kind": "swap"
+     },
+     "Frenzy + Savage Strikes": {
+      "gain": -0.4793,
+      "interaction": -0.0128,
+      "kind": "swap"
+     },
+     "Frenzy + Clever Traps": {
+      "gain": -0.4592,
+      "interaction": -0.0037,
+      "kind": "swap"
+     },
+     "Frenzy + Surefooted": {
+      "gain": -0.4865,
+      "interaction": -0.0234,
+      "kind": "swap"
+     },
+     "Frenzy + Predator's Edge": {
+      "gain": -0.5131,
+      "interaction": -0.0147,
+      "kind": "swap"
+     },
+     "Frenzy + Resourcefulness": {
+      "gain": -0.5175,
+      "interaction": -0.0193,
+      "kind": "swap"
+     },
+     "Frenzy + Expose Prey": {
+      "gain": -0.4774,
+      "interaction": -0.0173,
+      "kind": "swap"
+     },
+     "Frenzy + Survivalist's Discipline": {
+      "gain": -0.4593,
+      "interaction": -0.0291,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Lethal Attacks": {
+      "gain": -0.0179,
+      "interaction": -0.0024,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Efficiency": {
+      "gain": -0.0049,
+      "interaction": -0.0052,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Careful Aim": {
+      "gain": -0.0065,
+      "interaction": 0.001,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Rapid Killing": {
+      "gain": 0.0068,
+      "interaction": -0.0042,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Mortal Shots": {
+      "gain": 0.0084,
+      "interaction": 0.0007,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Improved Tracking": {
+      "gain": -0.4995,
+      "interaction": -0.0157,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Savage Strikes": {
+      "gain": -0.498,
+      "interaction": -0.026,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Clever Traps": {
+      "gain": -0.4839,
+      "interaction": -0.0229,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Surefooted": {
+      "gain": -0.4873,
+      "interaction": -0.0187,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Predator's Edge": {
+      "gain": -0.5214,
+      "interaction": -0.0175,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Resourcefulness": {
+      "gain": -0.5298,
+      "interaction": -0.0261,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Expose Prey": {
+      "gain": -0.4835,
+      "interaction": -0.0179,
+      "kind": "swap"
+     },
+     "Bestial Wrath + Survivalist's Discipline": {
+      "gain": -0.4728,
+      "interaction": -0.0371,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Deadly Aspects": {
+      "gain": -0.0106,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Concussive Shot + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Stings + Deadly Aspects": {
+      "gain": 0.0138,
+      "interaction": 0.0111,
+      "kind": "swap"
+     },
+     "Improved Stings + Improved Tracking": {
+      "gain": -0.5019,
+      "interaction": -0.0235,
+      "kind": "swap"
+     },
+     "Improved Stings + Savage Strikes": {
+      "gain": -0.4937,
+      "interaction": -0.0271,
+      "kind": "swap"
+     },
+     "Improved Stings + Clever Traps": {
+      "gain": -0.4784,
+      "interaction": -0.0228,
+      "kind": "swap"
+     },
+     "Improved Stings + Surefooted": {
+      "gain": -0.4995,
+      "interaction": -0.0363,
+      "kind": "swap"
+     },
+     "Improved Stings + Predator's Edge": {
+      "gain": -0.5199,
+      "interaction": -0.0214,
+      "kind": "swap"
+     },
+     "Improved Stings + Resourcefulness": {
+      "gain": -0.5328,
+      "interaction": -0.0345,
+      "kind": "swap"
+     },
+     "Improved Stings + Expose Prey": {
+      "gain": -0.4918,
+      "interaction": -0.0316,
+      "kind": "swap"
+     },
+     "Improved Stings + Survivalist's Discipline": {
+      "gain": -0.4492,
+      "interaction": -0.0189,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Deadly Aspects": {
+      "gain": -0.0106,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Improved Arcane Shot + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Lone Wolf + Deadly Aspects": {
+      "gain": -0.5033,
+      "interaction": -0.0207,
+      "kind": "swap"
+     },
+     "Lone Wolf + Improved Tracking": {
+      "gain": -0.4966,
+      "interaction": 0.4671,
+      "kind": "swap"
+     },
+     "Lone Wolf + Savage Strikes": {
+      "gain": -0.4973,
+      "interaction": 0.4546,
+      "kind": "swap"
+     },
+     "Lone Wolf + Clever Traps": {
+      "gain": -0.4661,
+      "interaction": 0.4748,
+      "kind": "swap"
+     },
+     "Lone Wolf + Surefooted": {
+      "gain": -0.5112,
+      "interaction": 0.4373,
+      "kind": "swap"
+     },
+     "Lone Wolf + Predator's Edge": {
+      "gain": -0.5161,
+      "interaction": 0.4677,
+      "kind": "swap"
+     },
+     "Lone Wolf + Resourcefulness": {
+      "gain": -0.5206,
+      "interaction": 0.463,
+      "kind": "swap"
+     },
+     "Lone Wolf + Expose Prey": {
+      "gain": -0.4902,
+      "interaction": 0.4553,
+      "kind": "swap"
+     },
+     "Lone Wolf + Survivalist's Discipline": {
+      "gain": -0.473,
+      "interaction": 0.4426,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Deadly Aspects": {
+      "gain": -0.0051,
+      "interaction": -0.0009,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Improved Tracking": {
+      "gain": -0.499,
+      "interaction": -0.0137,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Savage Strikes": {
+      "gain": -0.4858,
+      "interaction": -0.0123,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Clever Traps": {
+      "gain": -0.4724,
+      "interaction": -0.0099,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Surefooted": {
+      "gain": -0.479,
+      "interaction": -0.0089,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Predator's Edge": {
+      "gain": -0.5123,
+      "interaction": -0.0069,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Resourcefulness": {
+      "gain": -0.5181,
+      "interaction": -0.0129,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Expose Prey": {
+      "gain": -0.4856,
+      "interaction": -0.0185,
+      "kind": "swap"
+     },
+     "Trueshot Aura + Survivalist's Discipline": {
+      "gain": -0.4431,
+      "interaction": -0.0059,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Deadly Aspects": {
+      "gain": 0.0073,
+      "interaction": 0.0021,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Improved Tracking": {
+      "gain": -0.4893,
+      "interaction": -0.0134,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Savage Strikes": {
+      "gain": -0.4663,
+      "interaction": -0.0022,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Clever Traps": {
+      "gain": -0.4601,
+      "interaction": -0.007,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Surefooted": {
+      "gain": -0.4694,
+      "interaction": -0.0087,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Predator's Edge": {
+      "gain": -0.4955,
+      "interaction": 0.0005,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Resourcefulness": {
+      "gain": -0.5021,
+      "interaction": -0.0063,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Expose Prey": {
+      "gain": -0.4726,
+      "interaction": -0.0149,
+      "kind": "swap"
+     },
+     "Rapid Recuperation + Survivalist's Discipline": {
+      "gain": -0.4446,
+      "interaction": -0.0168,
+      "kind": "swap"
+     },
+     "Barrage + Deadly Aspects": {
+      "gain": -0.0106,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Barrage + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Barrage + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Barrage + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Barrage + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Barrage + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Barrage + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Barrage + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Barrage + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Deadly Aspects": {
+      "gain": -0.0106,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Scatter Shot + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Deadly Aspects": {
+      "gain": -0.0032,
+      "interaction": 0.0031,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Improved Tracking": {
+      "gain": -0.5006,
+      "interaction": -0.0132,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Savage Strikes": {
+      "gain": -0.4887,
+      "interaction": -0.0131,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Clever Traps": {
+      "gain": -0.469,
+      "interaction": -0.0044,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Surefooted": {
+      "gain": -0.4791,
+      "interaction": -0.0069,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Predator's Edge": {
+      "gain": -0.5139,
+      "interaction": -0.0064,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Resourcefulness": {
+      "gain": -0.5217,
+      "interaction": -0.0144,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Expose Prey": {
+      "gain": -0.4811,
+      "interaction": -0.0119,
+      "kind": "swap"
+     },
+     "Ranged Weapon Specialization + Survivalist's Discipline": {
+      "gain": -0.451,
+      "interaction": -0.0117,
+      "kind": "swap"
+     },
+     "Sniper Shot + Deadly Aspects": {
+      "gain": -0.0106,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Improved Tracking": {
+      "gain": -0.4917,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Savage Strikes": {
+      "gain": -0.4799,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Clever Traps": {
+      "gain": -0.4689,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Surefooted": {
+      "gain": -0.4765,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Predator's Edge": {
+      "gain": -0.5118,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Resourcefulness": {
+      "gain": -0.5116,
+      "interaction": 0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Expose Prey": {
+      "gain": -0.4735,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Sniper Shot + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Survival Tactics + Deadly Aspects": {
+      "gain": 0.0073,
+      "interaction": 0.0061,
+      "kind": "swap"
+     },
+     "Survival Tactics + Lethal Attacks": {
+      "gain": -0.0112,
+      "interaction": 0.0004,
+      "kind": "swap"
+     },
+     "Survival Tactics + Efficiency": {
+      "gain": 0.0042,
+      "interaction": -0.0,
+      "kind": "swap"
+     },
+     "Survival Tactics + Careful Aim": {
+      "gain": -0.0027,
+      "interaction": 0.0009,
+      "kind": "swap"
+     },
+     "Survival Tactics + Rapid Killing": {
+      "gain": 0.0056,
+      "interaction": -0.0093,
+      "kind": "swap"
+     },
+     "Survival Tactics + Mortal Shots": {
+      "gain": 0.0145,
+      "interaction": 0.0029,
+      "kind": "swap"
+     },
+     "Counterattack + Deadly Aspects": {
+      "gain": -0.0141,
+      "interaction": -0.0026,
+      "kind": "swap"
+     },
+     "Counterattack + Lethal Attacks": {
+      "gain": -0.0213,
+      "interaction": 0.003,
+      "kind": "swap"
+     },
+     "Counterattack + Efficiency": {
+      "gain": -0.0104,
+      "interaction": -0.0019,
+      "kind": "swap"
+     },
+     "Counterattack + Careful Aim": {
+      "gain": -0.0188,
+      "interaction": -0.0025,
+      "kind": "swap"
+     },
+     "Counterattack + Rapid Killing": {
+      "gain": 0.003,
+      "interaction": 0.0008,
+      "kind": "swap"
+     },
+     "Counterattack + Mortal Shots": {
+      "gain": 0.0002,
+      "interaction": 0.0013,
+      "kind": "swap"
+     },
+     "Strider Kick + Deadly Aspects": {
+      "gain": -0.0039,
+      "interaction": 0.0014,
+      "kind": "swap"
+     },
+     "Strider Kick + Lethal Attacks": {
+      "gain": -0.0171,
+      "interaction": 0.001,
+      "kind": "swap"
+     },
+     "Strider Kick + Efficiency": {
+      "gain": -0.0056,
+      "interaction": -0.0033,
+      "kind": "swap"
+     },
+     "Strider Kick + Careful Aim": {
+      "gain": -0.0022,
+      "interaction": 0.0079,
+      "kind": "swap"
+     },
+     "Strider Kick + Rapid Killing": {
+      "gain": 0.0096,
+      "interaction": 0.0012,
+      "kind": "swap"
+     },
+     "Strider Kick + Mortal Shots": {
+      "gain": 0.0067,
+      "interaction": 0.0016,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Deadly Aspects": {
+      "gain": -0.0051,
+      "interaction": 0.0016,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Lethal Attacks": {
+      "gain": -0.0203,
+      "interaction": -0.0008,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Efficiency": {
+      "gain": -0.004,
+      "interaction": -0.0003,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Careful Aim": {
+      "gain": -0.0153,
+      "interaction": -0.0038,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Rapid Killing": {
+      "gain": 0.0009,
+      "interaction": -0.0061,
+      "kind": "swap"
+     },
+     "Lacerating Strikes + Mortal Shots": {
+      "gain": 0.0045,
+      "interaction": 0.0008,
+      "kind": "swap"
+     }
+    },
+    "removed_pairs_all": {
+     "Deadly Aspects + Lethal Attacks": {
+      "gain": -0.0367,
+      "interaction": -0.0027
+     },
+     "Deadly Aspects + Efficiency": {
+      "gain": -0.0191,
+      "interaction": -0.0009
+     },
+     "Deadly Aspects + Careful Aim": {
+      "gain": -0.0281,
+      "interaction": -0.0021
+     },
+     "Deadly Aspects + Rapid Killing": {
+      "gain": -0.0098,
+      "interaction": -0.0023
+     },
+     "Deadly Aspects + Mortal Shots": {
+      "gain": -0.0107,
+      "interaction": 0.0001
+     },
+     "Deadly Aspects + Improved Tracking": {
+      "gain": -0.522,
+      "interaction": -0.0197
+     },
+     "Deadly Aspects + Savage Strikes": {
+      "gain": -0.5054,
+      "interaction": -0.0149
+     },
+     "Deadly Aspects + Clever Traps": {
+      "gain": -0.4913,
+      "interaction": -0.0118
+     },
+     "Deadly Aspects + Surefooted": {
+      "gain": -0.5156,
+      "interaction": -0.0285
+     },
+     "Deadly Aspects + Predator's Edge": {
+      "gain": -0.5348,
+      "interaction": -0.0124
+     },
+     "Deadly Aspects + Resourcefulness": {
+      "gain": -0.5509,
+      "interaction": -0.0287
+     },
+     "Deadly Aspects + Expose Prey": {
+      "gain": -0.4974,
+      "interaction": -0.0133
+     },
+     "Deadly Aspects + Survivalist's Discipline": {
+      "gain": -0.4877,
+      "interaction": -0.0335
+     },
+     "Lethal Attacks + Efficiency": {
+      "gain": -0.0321,
+      "interaction": -0.0011
+     },
+     "Lethal Attacks + Careful Aim": {
+      "gain": -0.0397,
+      "interaction": -0.0009
+     },
+     "Lethal Attacks + Rapid Killing": {
+      "gain": -0.0244,
+      "interaction": -0.0041
+     },
+     "Lethal Attacks + Mortal Shots": {
+      "gain": -0.0252,
+      "interaction": -0.0016
+     },
+     "Lethal Attacks + Improved Tracking": {
+      "gain": -0.5223,
+      "interaction": -0.0072
+     },
+     "Lethal Attacks + Savage Strikes": {
+      "gain": -0.5048,
+      "interaction": -0.0015
+     },
+     "Lethal Attacks + Clever Traps": {
+      "gain": -0.4897,
+      "interaction": 0.0026
+     },
+     "Lethal Attacks + Surefooted": {
+      "gain": -0.5078,
+      "interaction": -0.0079
+     },
+     "Lethal Attacks + Predator's Edge": {
+      "gain": -0.5287,
+      "interaction": 0.0065
+     },
+     "Lethal Attacks + Resourcefulness": {
+      "gain": -0.5388,
+      "interaction": -0.0038
+     },
+     "Lethal Attacks + Expose Prey": {
+      "gain": -0.4999,
+      "interaction": -0.003
+     },
+     "Lethal Attacks + Survivalist's Discipline": {
+      "gain": -0.4782,
+      "interaction": -0.0112
+     },
+     "Efficiency + Careful Aim": {
+      "gain": -0.0211,
+      "interaction": 0.0019
+     },
+     "Efficiency + Rapid Killing": {
+      "gain": -0.0052,
+      "interaction": -0.0007
+     },
+     "Efficiency + Mortal Shots": {
+      "gain": -0.0115,
+      "interaction": -0.0037
+     },
+     "Efficiency + Improved Tracking": {
+      "gain": -0.4964,
+      "interaction": 0.0029
+     },
+     "Efficiency + Savage Strikes": {
+      "gain": -0.4806,
+      "interaction": 0.0069
+     },
+     "Efficiency + Clever Traps": {
+      "gain": -0.4653,
+      "interaction": 0.0112
+     },
+     "Efficiency + Surefooted": {
+      "gain": -0.4795,
+      "interaction": 0.0046
+     },
+     "Efficiency + Predator's Edge": {
+      "gain": -0.5156,
+      "interaction": 0.0038
+     },
+     "Efficiency + Resourcefulness": {
+      "gain": -0.5171,
+      "interaction": 0.0021
+     },
+     "Efficiency + Expose Prey": {
+      "gain": -0.4837,
+      "interaction": -0.0026
+     },
+     "Efficiency + Survivalist's Discipline": {
+      "gain": -0.4471,
+      "interaction": 0.0041
+     },
+     "Careful Aim + Rapid Killing": {
+      "gain": -0.0147,
+      "interaction": -0.0024
+     },
+     "Careful Aim + Mortal Shots": {
+      "gain": -0.0164,
+      "interaction": -0.0008
+     },
+     "Careful Aim + Improved Tracking": {
+      "gain": -0.5156,
+      "interaction": -0.0085
+     },
+     "Careful Aim + Savage Strikes": {
+      "gain": -0.5065,
+      "interaction": -0.0112
+     },
+     "Careful Aim + Clever Traps": {
+      "gain": -0.4896,
+      "interaction": -0.0053
+     },
+     "Careful Aim + Surefooted": {
+      "gain": -0.4987,
+      "interaction": -0.0068
+     },
+     "Careful Aim + Predator's Edge": {
+      "gain": -0.5409,
+      "interaction": -0.0137
+     },
+     "Careful Aim + Resourcefulness": {
+      "gain": -0.5384,
+      "interaction": -0.0114
+     },
+     "Careful Aim + Expose Prey": {
+      "gain": -0.5056,
+      "interaction": -0.0167
+     },
+     "Careful Aim + Survivalist's Discipline": {
+      "gain": -0.4794,
+      "interaction": -0.0204
+     },
+     "Rapid Killing + Mortal Shots": {
+      "gain": 0.0041,
+      "interaction": 0.0012
+     },
+     "Rapid Killing + Improved Tracking": {
+      "gain": -0.4978,
+      "interaction": -0.0092
+     },
+     "Rapid Killing + Savage Strikes": {
+      "gain": -0.487,
+      "interaction": -0.0102
+     },
+     "Rapid Killing + Clever Traps": {
+      "gain": -0.462,
+      "interaction": 0.0038
+     },
+     "Rapid Killing + Surefooted": {
+      "gain": -0.4819,
+      "interaction": -0.0085
+     },
+     "Rapid Killing + Predator's Edge": {
+      "gain": -0.5175,
+      "interaction": -0.0088
+     },
+     "Rapid Killing + Resourcefulness": {
+      "gain": -0.5237,
+      "interaction": -0.0152
+     },
+     "Rapid Killing + Expose Prey": {
+      "gain": -0.4809,
+      "interaction": -0.0105
+     },
+     "Rapid Killing + Survivalist's Discipline": {
+      "gain": -0.4517,
+      "interaction": -0.0112
+     },
+     "Mortal Shots + Improved Tracking": {
+      "gain": -0.4967,
+      "interaction": -0.0048
+     },
+     "Mortal Shots + Savage Strikes": {
+      "gain": -0.4769,
+      "interaction": 0.0032
+     },
+     "Mortal Shots + Clever Traps": {
+      "gain": -0.4686,
+      "interaction": 0.0005
+     },
+     "Mortal Shots + Surefooted": {
+      "gain": -0.4762,
+      "interaction": 0.0005
+     },
+     "Mortal Shots + Predator's Edge": {
+      "gain": -0.5131,
+      "interaction": -0.0011
+     },
+     "Mortal Shots + Resourcefulness": {
+      "gain": -0.5109,
+      "interaction": 0.0009
+     },
+     "Mortal Shots + Expose Prey": {
+      "gain": -0.4739,
+      "interaction": -0.0002
+     },
+     "Mortal Shots + Survivalist's Discipline": {
+      "gain": -0.4476,
+      "interaction": -0.0038
+     },
+     "Improved Tracking + Savage Strikes": {
+      "gain": -0.4964,
+      "interaction": 0.4752
+     },
+     "Improved Tracking + Clever Traps": {
+      "gain": -0.4817,
+      "interaction": 0.4789
+     },
+     "Improved Tracking + Surefooted": {
+      "gain": -0.4921,
+      "interaction": 0.4761
+     },
+     "Improved Tracking + Predator's Edge": {
+      "gain": -0.5263,
+      "interaction": 0.4772
+     },
+     "Improved Tracking + Resourcefulness": {
+      "gain": -0.5263,
+      "interaction": 0.477
+     },
+     "Improved Tracking + Expose Prey": {
+      "gain": -0.4917,
+      "interaction": 0.4735
+     },
+     "Improved Tracking + Survivalist's Discipline": {
+      "gain": -0.4688,
+      "interaction": 0.4665
+     },
+     "Savage Strikes + Clever Traps": {
+      "gain": -0.4716,
+      "interaction": 0.4772
+     },
+     "Savage Strikes + Surefooted": {
+      "gain": -0.4837,
+      "interaction": 0.4727
+     },
+     "Savage Strikes + Predator's Edge": {
+      "gain": -0.5072,
+      "interaction": 0.4845
+     },
+     "Savage Strikes + Resourcefulness": {
+      "gain": -0.5152,
+      "interaction": 0.4763
+     },
+     "Savage Strikes + Expose Prey": {
+      "gain": -0.4799,
+      "interaction": 0.4735
+     },
+     "Savage Strikes + Survivalist's Discipline": {
+      "gain": -0.4565,
+      "interaction": 0.467
+     },
+     "Clever Traps + Surefooted": {
+      "gain": -0.4692,
+      "interaction": 0.4762
+     },
+     "Clever Traps + Predator's Edge": {
+      "gain": -0.5002,
+      "interaction": 0.4805
+     },
+     "Clever Traps + Resourcefulness": {
+      "gain": -0.4991,
+      "interaction": 0.4814
+     },
+     "Clever Traps + Expose Prey": {
+      "gain": -0.4689,
+      "interaction": 0.4735
+     },
+     "Clever Traps + Survivalist's Discipline": {
+      "gain": -0.4453,
+      "interaction": 0.4672
+     },
+     "Surefooted + Predator's Edge": {
+      "gain": -0.5121,
+      "interaction": 0.4762
+     },
+     "Surefooted + Resourcefulness": {
+      "gain": -0.5247,
+      "interaction": 0.4634
+     },
+     "Surefooted + Expose Prey": {
+      "gain": -0.4765,
+      "interaction": 0.4735
+     },
+     "Surefooted + Survivalist's Discipline": {
+      "gain": -0.4619,
+      "interaction": 0.4582
+     },
+     "Predator's Edge + Resourcefulness": {
+      "gain": -0.5394,
+      "interaction": 0.484
+     },
+     "Predator's Edge + Expose Prey": {
+      "gain": -0.5118,
+      "interaction": 0.4735
+     },
+     "Predator's Edge + Survivalist's Discipline": {
+      "gain": -0.4898,
+      "interaction": 0.4656
+     },
+     "Resourcefulness + Expose Prey": {
+      "gain": -0.5116,
+      "interaction": 0.4735
+     },
+     "Resourcefulness + Survivalist's Discipline": {
+      "gain": -0.48,
+      "interaction": 0.4752
+     },
+     "Expose Prey + Survivalist's Discipline": {
+      "gain": -0.4436,
+      "interaction": 0.4735
+     }
+    },
+    "builds_all": {
+     "Focused Fire": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Unleashed Fury": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Ferocity": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Summon Hawk": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Intimidation": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Bestial Discipline": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Frenzy": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Bestial Wrath": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Improved Concussive Shot": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Stings": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Arcane Shot": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Lone Wolf": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Trueshot Aura": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Rapid Recuperation": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Barrage": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Scatter Shot": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Ranged Weapon Specialization": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Sniper Shot": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Survival Tactics": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Counterattack": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Strider Kick": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Lacerating Strikes": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "-Deadly Aspects": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Deadly Aspects -1": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 1
+      },
+      "gain": 0.00288
+     },
+     "Deadly Aspects -2": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 2
+      },
+      "gain": -0.00089
+     },
+     "-Lethal Attacks": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.02343
+     },
+     "Lethal Attacks -1": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 1
+      },
+      "gain": 0.00051
+     },
+     "Lethal Attacks -2": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 2
+      },
+      "gain": -0.00314
+     },
+     "-Efficiency": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.00758
+     },
+     "Efficiency -1": {
+      "added": {},
+      "removed": {
+       "Efficiency": 1
+      },
+      "gain": -0.00128
+     },
+     "Efficiency -2": {
+      "added": {},
+      "removed": {
+       "Efficiency": 2
+      },
+      "gain": -0.00903
+     },
+     "-Careful Aim": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.01535
+     },
+     "Careful Aim -1": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 1
+      },
+      "gain": -0.00068
+     },
+     "Careful Aim -2": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 2
+      },
+      "gain": -0.00311
+     },
+     "-Rapid Killing": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00305
+     },
+     "Rapid Killing -1": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 1
+      },
+      "gain": 0.00657
+     },
+     "-Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": -0.00018
+     },
+     "-Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Improved Tracking -1": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 1
+      },
+      "gain": -0.47289
+     },
+     "Improved Tracking -2": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 2
+      },
+      "gain": -0.48269
+     },
+     "-Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Savage Strikes -1": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 1
+      },
+      "gain": -0.4761
+     },
+     "-Clever Traps": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Clever Traps -1": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 1
+      },
+      "gain": -0.47037
+     },
+     "-Surefooted": {
+      "added": {},
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Surefooted -1": {
+      "added": {},
+      "removed": {
+       "Surefooted": 1
+      },
+      "gain": -0.47013
+     },
+     "Surefooted -2": {
+      "added": {},
+      "removed": {
+       "Surefooted": 2
+      },
+      "gain": -0.47596
+     },
+     "-Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Predator's Edge -1": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 1
+      },
+      "gain": -0.47713
+     },
+     "Predator's Edge -2": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 2
+      },
+      "gain": -0.4874
+     },
+     "-Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Resourcefulness -1": {
+      "added": {},
+      "removed": {
+       "Resourcefulness": 1
+      },
+      "gain": -0.48616
+     },
+     "-Expose Prey": {
+      "added": {},
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "-Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Survivalist's Discipline -1": {
+      "added": {},
+      "removed": {
+       "Survivalist's Discipline": 1
+      },
+      "gain": -0.46765
+     },
+     "Focused Fire + Unleashed Fury": {
+      "added": {
+       "Focused Fire": 2,
+       "Unleashed Fury": 5
+      },
+      "removed": {},
+      "gain": 0.04683
+     },
+     "Focused Fire + Ferocity": {
+      "added": {
+       "Focused Fire": 2,
+       "Ferocity": 5
+      },
+      "removed": {},
+      "gain": 0.03293
+     },
+     "Focused Fire + Summon Hawk": {
+      "added": {
+       "Focused Fire": 2,
+       "Summon Hawk": 1
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Intimidation": {
+      "added": {
+       "Focused Fire": 2,
+       "Intimidation": 1
+      },
+      "removed": {},
+      "gain": 0.00227
+     },
+     "Focused Fire + Bestial Discipline": {
+      "added": {
+       "Focused Fire": 2,
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.04124
+     },
+     "Focused Fire + Frenzy": {
+      "added": {
+       "Focused Fire": 2,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.02304
+     },
+     "Focused Fire + Bestial Wrath": {
+      "added": {
+       "Focused Fire": 2,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.01385
+     },
+     "Focused Fire + Improved Concussive Shot": {
+      "added": {
+       "Focused Fire": 2,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Improved Stings": {
+      "added": {
+       "Focused Fire": 2,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.0259
+     },
+     "Focused Fire + Improved Arcane Shot": {
+      "added": {
+       "Focused Fire": 2,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Lone Wolf": {
+      "added": {
+       "Focused Fire": 2,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Focused Fire + Trueshot Aura": {
+      "added": {
+       "Focused Fire": 2,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.01788
+     },
+     "Focused Fire + Rapid Recuperation": {
+      "added": {
+       "Focused Fire": 2,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.02707
+     },
+     "Focused Fire + Barrage": {
+      "added": {
+       "Focused Fire": 2,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Scatter Shot": {
+      "added": {
+       "Focused Fire": 2,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Ranged Weapon Specialization": {
+      "added": {
+       "Focused Fire": 2,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.01137
+     },
+     "Focused Fire + Sniper Shot": {
+      "added": {
+       "Focused Fire": 2,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01345
+     },
+     "Focused Fire + Survival Tactics": {
+      "added": {
+       "Focused Fire": 2,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.0164
+     },
+     "Focused Fire + Counterattack": {
+      "added": {
+       "Focused Fire": 2,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00951
+     },
+     "Focused Fire + Strider Kick": {
+      "added": {
+       "Focused Fire": 2,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.02248
+     },
+     "Focused Fire + Lacerating Strikes": {
+      "added": {
+       "Focused Fire": 2,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.01725
+     },
+     "Unleashed Fury + Ferocity": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Ferocity": 5
+      },
+      "removed": {},
+      "gain": 0.04814
+     },
+     "Unleashed Fury + Summon Hawk": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Summon Hawk": 1
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Intimidation": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Intimidation": 1
+      },
+      "removed": {},
+      "gain": 0.01384
+     },
+     "Unleashed Fury + Bestial Discipline": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.05877
+     },
+     "Unleashed Fury + Frenzy": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.04073
+     },
+     "Unleashed Fury + Bestial Wrath": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.03299
+     },
+     "Unleashed Fury + Improved Concussive Shot": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Improved Stings": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.06027
+     },
+     "Unleashed Fury + Improved Arcane Shot": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Lone Wolf": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Unleashed Fury + Trueshot Aura": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.03588
+     },
+     "Unleashed Fury + Rapid Recuperation": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.05147
+     },
+     "Unleashed Fury + Barrage": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Scatter Shot": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Ranged Weapon Specialization": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.03979
+     },
+     "Unleashed Fury + Sniper Shot": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.03529
+     },
+     "Unleashed Fury + Survival Tactics": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.03954
+     },
+     "Unleashed Fury + Counterattack": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.03051
+     },
+     "Unleashed Fury + Strider Kick": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.03649
+     },
+     "Unleashed Fury + Lacerating Strikes": {
+      "added": {
+       "Unleashed Fury": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.0303
+     },
+     "Ferocity + Summon Hawk": {
+      "added": {
+       "Ferocity": 5,
+       "Summon Hawk": 1
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Intimidation": {
+      "added": {
+       "Ferocity": 5,
+       "Intimidation": 1
+      },
+      "removed": {},
+      "gain": 0.01544
+     },
+     "Ferocity + Bestial Discipline": {
+      "added": {
+       "Ferocity": 5,
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.04637
+     },
+     "Ferocity + Frenzy": {
+      "added": {
+       "Ferocity": 5,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.02665
+     },
+     "Ferocity + Bestial Wrath": {
+      "added": {
+       "Ferocity": 5,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.0263
+     },
+     "Ferocity + Improved Concussive Shot": {
+      "added": {
+       "Ferocity": 5,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Improved Stings": {
+      "added": {
+       "Ferocity": 5,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.03687
+     },
+     "Ferocity + Improved Arcane Shot": {
+      "added": {
+       "Ferocity": 5,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Lone Wolf": {
+      "added": {
+       "Ferocity": 5,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Ferocity + Trueshot Aura": {
+      "added": {
+       "Ferocity": 5,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.02727
+     },
+     "Ferocity + Rapid Recuperation": {
+      "added": {
+       "Ferocity": 5,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.04041
+     },
+     "Ferocity + Barrage": {
+      "added": {
+       "Ferocity": 5,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Scatter Shot": {
+      "added": {
+       "Ferocity": 5,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Ranged Weapon Specialization": {
+      "added": {
+       "Ferocity": 5,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.02726
+     },
+     "Ferocity + Sniper Shot": {
+      "added": {
+       "Ferocity": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.02294
+     },
+     "Ferocity + Survival Tactics": {
+      "added": {
+       "Ferocity": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.0294
+     },
+     "Ferocity + Counterattack": {
+      "added": {
+       "Ferocity": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.02511
+     },
+     "Ferocity + Strider Kick": {
+      "added": {
+       "Ferocity": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.02983
+     },
+     "Ferocity + Lacerating Strikes": {
+      "added": {
+       "Ferocity": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.02015
+     },
+     "Summon Hawk + Intimidation": {
+      "added": {
+       "Summon Hawk": 1,
+       "Intimidation": 1
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Summon Hawk + Bestial Discipline": {
+      "added": {
+       "Summon Hawk": 1,
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Summon Hawk + Frenzy": {
+      "added": {
+       "Summon Hawk": 1,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Summon Hawk + Bestial Wrath": {
+      "added": {
+       "Summon Hawk": 1,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Summon Hawk + Improved Concussive Shot": {
+      "added": {
+       "Summon Hawk": 1,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Summon Hawk + Improved Stings": {
+      "added": {
+       "Summon Hawk": 1,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Summon Hawk + Improved Arcane Shot": {
+      "added": {
+       "Summon Hawk": 1,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Summon Hawk + Lone Wolf": {
+      "added": {
+       "Summon Hawk": 1,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Summon Hawk + Trueshot Aura": {
+      "added": {
+       "Summon Hawk": 1,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Summon Hawk + Rapid Recuperation": {
+      "added": {
+       "Summon Hawk": 1,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Summon Hawk + Barrage": {
+      "added": {
+       "Summon Hawk": 1,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Summon Hawk + Scatter Shot": {
+      "added": {
+       "Summon Hawk": 1,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Summon Hawk + Ranged Weapon Specialization": {
+      "added": {
+       "Summon Hawk": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Summon Hawk + Sniper Shot": {
+      "added": {
+       "Summon Hawk": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Summon Hawk + Survival Tactics": {
+      "added": {
+       "Summon Hawk": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Summon Hawk + Counterattack": {
+      "added": {
+       "Summon Hawk": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Summon Hawk + Strider Kick": {
+      "added": {
+       "Summon Hawk": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Summon Hawk + Lacerating Strikes": {
+      "added": {
+       "Summon Hawk": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Intimidation + Bestial Discipline": {
+      "added": {
+       "Intimidation": 1,
+       "Bestial Discipline": 2
+      },
+      "removed": {},
+      "gain": 0.01547
+     },
+     "Intimidation + Frenzy": {
+      "added": {
+       "Intimidation": 1,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.00384
+     },
+     "Intimidation + Bestial Wrath": {
+      "added": {
+       "Intimidation": 1,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": -0.01149
+     },
+     "Intimidation + Improved Concussive Shot": {
+      "added": {
+       "Intimidation": 1,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Intimidation + Improved Stings": {
+      "added": {
+       "Intimidation": 1,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.00635
+     },
+     "Intimidation + Improved Arcane Shot": {
+      "added": {
+       "Intimidation": 1,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Intimidation + Lone Wolf": {
+      "added": {
+       "Intimidation": 1,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Intimidation + Trueshot Aura": {
+      "added": {
+       "Intimidation": 1,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": -0.00403
+     },
+     "Intimidation + Rapid Recuperation": {
+      "added": {
+       "Intimidation": 1,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.00624
+     },
+     "Intimidation + Barrage": {
+      "added": {
+       "Intimidation": 1,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Intimidation + Scatter Shot": {
+      "added": {
+       "Intimidation": 1,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Intimidation + Ranged Weapon Specialization": {
+      "added": {
+       "Intimidation": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": -0.00581
+     },
+     "Intimidation + Sniper Shot": {
+      "added": {
+       "Intimidation": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": -0.00765
+     },
+     "Intimidation + Survival Tactics": {
+      "added": {
+       "Intimidation": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": -0.00626
+     },
+     "Intimidation + Counterattack": {
+      "added": {
+       "Intimidation": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.0076
+     },
+     "Intimidation + Strider Kick": {
+      "added": {
+       "Intimidation": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": -0.00146
+     },
+     "Intimidation + Lacerating Strikes": {
+      "added": {
+       "Intimidation": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": -0.00728
+     },
+     "Bestial Discipline + Frenzy": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Frenzy": 5
+      },
+      "removed": {},
+      "gain": 0.03712
+     },
+     "Bestial Discipline + Bestial Wrath": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.02802
+     },
+     "Bestial Discipline + Improved Concussive Shot": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Improved Stings": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.03511
+     },
+     "Bestial Discipline + Improved Arcane Shot": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Lone Wolf": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47173
+     },
+     "Bestial Discipline + Trueshot Aura": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.02837
+     },
+     "Bestial Discipline + Rapid Recuperation": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Barrage": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Scatter Shot": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Ranged Weapon Specialization": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.02883
+     },
+     "Bestial Discipline + Sniper Shot": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0243
+     },
+     "Bestial Discipline + Survival Tactics": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.03489
+     },
+     "Bestial Discipline + Counterattack": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.03103
+     },
+     "Bestial Discipline + Strider Kick": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.03403
+     },
+     "Bestial Discipline + Lacerating Strikes": {
+      "added": {
+       "Bestial Discipline": 2,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.03082
+     },
+     "Frenzy + Bestial Wrath": {
+      "added": {
+       "Frenzy": 5,
+       "Bestial Wrath": 1
+      },
+      "removed": {},
+      "gain": 0.01068
+     },
+     "Frenzy + Improved Concussive Shot": {
+      "added": {
+       "Frenzy": 5,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Frenzy + Improved Stings": {
+      "added": {
+       "Frenzy": 5,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.02765
+     },
+     "Frenzy + Improved Arcane Shot": {
+      "added": {
+       "Frenzy": 5,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Frenzy + Lone Wolf": {
+      "added": {
+       "Frenzy": 5,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Frenzy + Trueshot Aura": {
+      "added": {
+       "Frenzy": 5,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.01969
+     },
+     "Frenzy + Rapid Recuperation": {
+      "added": {
+       "Frenzy": 5,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.0235
+     },
+     "Frenzy + Barrage": {
+      "added": {
+       "Frenzy": 5,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Frenzy + Scatter Shot": {
+      "added": {
+       "Frenzy": 5,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Frenzy + Ranged Weapon Specialization": {
+      "added": {
+       "Frenzy": 5,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.01793
+     },
+     "Frenzy + Sniper Shot": {
+      "added": {
+       "Frenzy": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01338
+     },
+     "Frenzy + Survival Tactics": {
+      "added": {
+       "Frenzy": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01792
+     },
+     "Frenzy + Counterattack": {
+      "added": {
+       "Frenzy": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00962
+     },
+     "Frenzy + Strider Kick": {
+      "added": {
+       "Frenzy": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.01585
+     },
+     "Frenzy + Lacerating Strikes": {
+      "added": {
+       "Frenzy": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00803
+     },
+     "Bestial Wrath + Improved Concussive Shot": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Improved Concussive Shot": 5
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Bestial Wrath + Improved Stings": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.02428
+     },
+     "Bestial Wrath + Improved Arcane Shot": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Bestial Wrath + Lone Wolf": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Bestial Wrath + Trueshot Aura": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.0096
+     },
+     "Bestial Wrath + Rapid Recuperation": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.03017
+     },
+     "Bestial Wrath + Barrage": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Bestial Wrath + Scatter Shot": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Bestial Wrath + Ranged Weapon Specialization": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.01281
+     },
+     "Bestial Wrath + Sniper Shot": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.00792
+     },
+     "Bestial Wrath + Survival Tactics": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01162
+     },
+     "Bestial Wrath + Counterattack": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00276
+     },
+     "Bestial Wrath + Strider Kick": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.01074
+     },
+     "Bestial Wrath + Lacerating Strikes": {
+      "added": {
+       "Bestial Wrath": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00724
+     },
+     "Improved Concussive Shot + Improved Stings": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Improved Stings": 3
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Concussive Shot + Improved Arcane Shot": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Concussive Shot + Lone Wolf": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Improved Concussive Shot + Trueshot Aura": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Improved Concussive Shot + Rapid Recuperation": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Improved Concussive Shot + Barrage": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Concussive Shot + Scatter Shot": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Concussive Shot + Ranged Weapon Specialization": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Improved Concussive Shot + Sniper Shot": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Concussive Shot + Survival Tactics": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Improved Concussive Shot + Counterattack": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Improved Concussive Shot + Strider Kick": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Improved Concussive Shot + Lacerating Strikes": {
+      "added": {
+       "Improved Concussive Shot": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Improved Stings + Improved Arcane Shot": {
+      "added": {
+       "Improved Stings": 3,
+       "Improved Arcane Shot": 5
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Stings + Lone Wolf": {
+      "added": {
+       "Improved Stings": 3,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.4875
+     },
+     "Improved Stings + Trueshot Aura": {
+      "added": {
+       "Improved Stings": 3,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.00959
+     },
+     "Improved Stings + Rapid Recuperation": {
+      "added": {
+       "Improved Stings": 3,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.03294
+     },
+     "Improved Stings + Barrage": {
+      "added": {
+       "Improved Stings": 3,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Stings + Scatter Shot": {
+      "added": {
+       "Improved Stings": 3,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Stings + Ranged Weapon Specialization": {
+      "added": {
+       "Improved Stings": 3,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.011
+     },
+     "Improved Stings + Sniper Shot": {
+      "added": {
+       "Improved Stings": 3,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0133
+     },
+     "Improved Stings + Survival Tactics": {
+      "added": {
+       "Improved Stings": 3,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.02206
+     },
+     "Improved Stings + Counterattack": {
+      "added": {
+       "Improved Stings": 3,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.01943
+     },
+     "Improved Stings + Strider Kick": {
+      "added": {
+       "Improved Stings": 3,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.01925
+     },
+     "Improved Stings + Lacerating Strikes": {
+      "added": {
+       "Improved Stings": 3,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.01982
+     },
+     "Improved Arcane Shot + Lone Wolf": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Lone Wolf": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Improved Arcane Shot + Trueshot Aura": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Improved Arcane Shot + Rapid Recuperation": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Improved Arcane Shot + Barrage": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Arcane Shot + Scatter Shot": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Arcane Shot + Ranged Weapon Specialization": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Improved Arcane Shot + Sniper Shot": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Improved Arcane Shot + Survival Tactics": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Improved Arcane Shot + Counterattack": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Improved Arcane Shot + Strider Kick": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Improved Arcane Shot + Lacerating Strikes": {
+      "added": {
+       "Improved Arcane Shot": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Lone Wolf + Trueshot Aura": {
+      "added": {
+       "Lone Wolf": 1,
+       "Trueshot Aura": 1
+      },
+      "removed": {},
+      "gain": -0.47879
+     },
+     "Lone Wolf + Rapid Recuperation": {
+      "added": {
+       "Lone Wolf": 1,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": -0.47103
+     },
+     "Lone Wolf + Barrage": {
+      "added": {
+       "Lone Wolf": 1,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Lone Wolf + Scatter Shot": {
+      "added": {
+       "Lone Wolf": 1,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Lone Wolf + Ranged Weapon Specialization": {
+      "added": {
+       "Lone Wolf": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": -0.47888
+     },
+     "Lone Wolf + Sniper Shot": {
+      "added": {
+       "Lone Wolf": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": -0.47197
+     },
+     "Lone Wolf + Survival Tactics": {
+      "added": {
+       "Lone Wolf": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": -0.47752
+     },
+     "Lone Wolf + Counterattack": {
+      "added": {
+       "Lone Wolf": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.48454
+     },
+     "Lone Wolf + Strider Kick": {
+      "added": {
+       "Lone Wolf": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": -0.49949
+     },
+     "Lone Wolf + Lacerating Strikes": {
+      "added": {
+       "Lone Wolf": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": -0.48694
+     },
+     "Trueshot Aura + Rapid Recuperation": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Rapid Recuperation": 2
+      },
+      "removed": {},
+      "gain": 0.02005
+     },
+     "Trueshot Aura + Barrage": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Trueshot Aura + Scatter Shot": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Trueshot Aura + Ranged Weapon Specialization": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.00672
+     },
+     "Trueshot Aura + Sniper Shot": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.00641
+     },
+     "Trueshot Aura + Survival Tactics": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01127
+     },
+     "Trueshot Aura + Counterattack": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00856
+     },
+     "Trueshot Aura + Strider Kick": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00504
+     },
+     "Trueshot Aura + Lacerating Strikes": {
+      "added": {
+       "Trueshot Aura": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00438
+     },
+     "Rapid Recuperation + Barrage": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Barrage": 3
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Rapid Recuperation + Scatter Shot": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Rapid Recuperation + Ranged Weapon Specialization": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0169
+     },
+     "Rapid Recuperation + Sniper Shot": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.01579
+     },
+     "Rapid Recuperation + Survival Tactics": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.02439
+     },
+     "Rapid Recuperation + Counterattack": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.01607
+     },
+     "Rapid Recuperation + Strider Kick": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.02284
+     },
+     "Rapid Recuperation + Lacerating Strikes": {
+      "added": {
+       "Rapid Recuperation": 2,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.01769
+     },
+     "Barrage + Scatter Shot": {
+      "added": {
+       "Barrage": 3,
+       "Scatter Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Barrage + Ranged Weapon Specialization": {
+      "added": {
+       "Barrage": 3,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Barrage + Sniper Shot": {
+      "added": {
+       "Barrage": 3,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Barrage + Survival Tactics": {
+      "added": {
+       "Barrage": 3,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Barrage + Counterattack": {
+      "added": {
+       "Barrage": 3,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Barrage + Strider Kick": {
+      "added": {
+       "Barrage": 3,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Barrage + Lacerating Strikes": {
+      "added": {
+       "Barrage": 3,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Scatter Shot + Ranged Weapon Specialization": {
+      "added": {
+       "Scatter Shot": 1,
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Scatter Shot + Sniper Shot": {
+      "added": {
+       "Scatter Shot": 1,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0
+     },
+     "Scatter Shot + Survival Tactics": {
+      "added": {
+       "Scatter Shot": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Scatter Shot + Counterattack": {
+      "added": {
+       "Scatter Shot": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Scatter Shot + Strider Kick": {
+      "added": {
+       "Scatter Shot": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Scatter Shot + Lacerating Strikes": {
+      "added": {
+       "Scatter Shot": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Ranged Weapon Specialization + Sniper Shot": {
+      "added": {
+       "Ranged Weapon Specialization": 5,
+       "Sniper Shot": 1
+      },
+      "removed": {},
+      "gain": 0.0043
+     },
+     "Ranged Weapon Specialization + Survival Tactics": {
+      "added": {
+       "Ranged Weapon Specialization": 5,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01003
+     },
+     "Ranged Weapon Specialization + Counterattack": {
+      "added": {
+       "Ranged Weapon Specialization": 5,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00277
+     },
+     "Ranged Weapon Specialization + Strider Kick": {
+      "added": {
+       "Ranged Weapon Specialization": 5,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.01001
+     },
+     "Ranged Weapon Specialization + Lacerating Strikes": {
+      "added": {
+       "Ranged Weapon Specialization": 5,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00449
+     },
+     "Sniper Shot + Survival Tactics": {
+      "added": {
+       "Sniper Shot": 1,
+       "Survival Tactics": 2
+      },
+      "removed": {},
+      "gain": 0.01182
+     },
+     "Sniper Shot + Counterattack": {
+      "added": {
+       "Sniper Shot": 1,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": -0.00087
+     },
+     "Sniper Shot + Strider Kick": {
+      "added": {
+       "Sniper Shot": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00532
+     },
+     "Sniper Shot + Lacerating Strikes": {
+      "added": {
+       "Sniper Shot": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00388
+     },
+     "Survival Tactics + Counterattack": {
+      "added": {
+       "Survival Tactics": 2,
+       "Counterattack": 1
+      },
+      "removed": {},
+      "gain": 0.00922
+     },
+     "Survival Tactics + Strider Kick": {
+      "added": {
+       "Survival Tactics": 2,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.01351
+     },
+     "Survival Tactics + Lacerating Strikes": {
+      "added": {
+       "Survival Tactics": 2,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00956
+     },
+     "Counterattack + Strider Kick": {
+      "added": {
+       "Counterattack": 1,
+       "Strider Kick": 1
+      },
+      "removed": {},
+      "gain": 0.00907
+     },
+     "Counterattack + Lacerating Strikes": {
+      "added": {
+       "Counterattack": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00212
+     },
+     "Strider Kick + Lacerating Strikes": {
+      "added": {
+       "Strider Kick": 1,
+       "Lacerating Strikes": 1
+      },
+      "removed": {},
+      "gain": 0.00554
+     },
+     "Focused Fire - Lethal Attacks": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.0076
+     },
+     "Focused Fire - Efficiency": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 8e-05
+     },
+     "Focused Fire - Careful Aim": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.00132
+     },
+     "Focused Fire - Rapid Killing": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.01242
+     },
+     "Focused Fire - Mortal Shots": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.01494
+     },
+     "Focused Fire - Improved Tracking": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49304
+     },
+     "Focused Fire - Savage Strikes": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47398
+     },
+     "Focused Fire - Clever Traps": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.45461
+     },
+     "Focused Fire - Surefooted": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.46836
+     },
+     "Focused Fire - Predator's Edge": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.50317
+     },
+     "Focused Fire - Resourcefulness": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.50786
+     },
+     "Focused Fire - Expose Prey": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.46973
+     },
+     "Focused Fire - Survivalist's Discipline": {
+      "added": {
+       "Focused Fire": 2
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44474
+     },
+     "Unleashed Fury - Lethal Attacks": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.00022
+     },
+     "Unleashed Fury - Efficiency": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 0.02664
+     },
+     "Unleashed Fury - Careful Aim": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": 0.01484
+     },
+     "Unleashed Fury - Rapid Killing": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.03321
+     },
+     "Unleashed Fury - Mortal Shots": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.03456
+     },
+     "Unleashed Fury - Improved Tracking": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.50594
+     },
+     "Unleashed Fury - Savage Strikes": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.49569
+     },
+     "Unleashed Fury - Clever Traps": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.48286
+     },
+     "Unleashed Fury - Surefooted": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.49485
+     },
+     "Unleashed Fury - Predator's Edge": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.52324
+     },
+     "Unleashed Fury - Resourcefulness": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.5236
+     },
+     "Unleashed Fury - Expose Prey": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.48254
+     },
+     "Unleashed Fury - Survivalist's Discipline": {
+      "added": {
+       "Unleashed Fury": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47281
+     },
+     "Ferocity - Lethal Attacks": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.00679
+     },
+     "Ferocity - Efficiency": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 0.01498
+     },
+     "Ferocity - Careful Aim": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": 0.00059
+     },
+     "Ferocity - Rapid Killing": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.0238
+     },
+     "Ferocity - Mortal Shots": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.02223
+     },
+     "Ferocity - Improved Tracking": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.50512
+     },
+     "Ferocity - Savage Strikes": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.48333
+     },
+     "Ferocity - Clever Traps": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.47217
+     },
+     "Ferocity - Surefooted": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.48029
+     },
+     "Ferocity - Predator's Edge": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51637
+     },
+     "Ferocity - Resourcefulness": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51826
+     },
+     "Ferocity - Expose Prey": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.48572
+     },
+     "Ferocity - Survivalist's Discipline": {
+      "added": {
+       "Ferocity": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45946
+     },
+     "Summon Hawk - Lethal Attacks": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.02343
+     },
+     "Summon Hawk - Efficiency": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.00758
+     },
+     "Summon Hawk - Careful Aim": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.01535
+     },
+     "Summon Hawk - Rapid Killing": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00305
+     },
+     "Summon Hawk - Mortal Shots": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": -0.00018
+     },
+     "Summon Hawk - Improved Tracking": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Summon Hawk - Savage Strikes": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Summon Hawk - Clever Traps": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Summon Hawk - Surefooted": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Summon Hawk - Predator's Edge": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Summon Hawk - Resourcefulness": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Summon Hawk - Expose Prey": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Summon Hawk - Survivalist's Discipline": {
+      "added": {
+       "Summon Hawk": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Intimidation - Lethal Attacks": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.03135
+     },
+     "Intimidation - Efficiency": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.01908
+     },
+     "Intimidation - Careful Aim": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.02355
+     },
+     "Intimidation - Rapid Killing": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": -0.01118
+     },
+     "Intimidation - Mortal Shots": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": -0.00756
+     },
+     "Intimidation - Improved Tracking": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49306
+     },
+     "Intimidation - Savage Strikes": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.48491
+     },
+     "Intimidation - Clever Traps": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.47018
+     },
+     "Intimidation - Surefooted": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.4889
+     },
+     "Intimidation - Predator's Edge": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51756
+     },
+     "Intimidation - Resourcefulness": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51833
+     },
+     "Intimidation - Expose Prey": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47958
+     },
+     "Intimidation - Survivalist's Discipline": {
+      "added": {
+       "Intimidation": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45893
+     },
+     "Bestial Discipline - Lethal Attacks": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": 0.01055
+     },
+     "Bestial Discipline - Efficiency": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 0.01366
+     },
+     "Bestial Discipline - Careful Aim": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": 0.00803
+     },
+     "Bestial Discipline - Rapid Killing": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.0296
+     },
+     "Bestial Discipline - Mortal Shots": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.02723
+     },
+     "Bestial Discipline - Improved Tracking": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49081
+     },
+     "Bestial Discipline - Savage Strikes": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47364
+     },
+     "Bestial Discipline - Clever Traps": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46452
+     },
+     "Bestial Discipline - Surefooted": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47271
+     },
+     "Bestial Discipline - Predator's Edge": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.50411
+     },
+     "Bestial Discipline - Resourcefulness": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.50385
+     },
+     "Bestial Discipline - Expose Prey": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47347
+     },
+     "Bestial Discipline - Survivalist's Discipline": {
+      "added": {
+       "Bestial Discipline": 2
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.43458
+     },
+     "Frenzy - Lethal Attacks": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.00776
+     },
+     "Frenzy - Efficiency": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 0.00253
+     },
+     "Frenzy - Careful Aim": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.00409
+     },
+     "Frenzy - Rapid Killing": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.01384
+     },
+     "Frenzy - Mortal Shots": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.0154
+     },
+     "Frenzy - Improved Tracking": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.48733
+     },
+     "Frenzy - Savage Strikes": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47932
+     },
+     "Frenzy - Clever Traps": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.45921
+     },
+     "Frenzy - Surefooted": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.48648
+     },
+     "Frenzy - Predator's Edge": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.5131
+     },
+     "Frenzy - Resourcefulness": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51747
+     },
+     "Frenzy - Expose Prey": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47742
+     },
+     "Frenzy - Survivalist's Discipline": {
+      "added": {
+       "Frenzy": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45928
+     },
+     "Bestial Wrath - Lethal Attacks": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.01792
+     },
+     "Bestial Wrath - Efficiency": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.00488
+     },
+     "Bestial Wrath - Careful Aim": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.00646
+     },
+     "Bestial Wrath - Rapid Killing": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00681
+     },
+     "Bestial Wrath - Mortal Shots": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.00836
+     },
+     "Bestial Wrath - Improved Tracking": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49951
+     },
+     "Bestial Wrath - Savage Strikes": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.49802
+     },
+     "Bestial Wrath - Clever Traps": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.48389
+     },
+     "Bestial Wrath - Surefooted": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.48726
+     },
+     "Bestial Wrath - Predator's Edge": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.52136
+     },
+     "Bestial Wrath - Resourcefulness": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.5298
+     },
+     "Bestial Wrath - Expose Prey": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.48352
+     },
+     "Bestial Wrath - Survivalist's Discipline": {
+      "added": {
+       "Bestial Wrath": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47283
+     },
+     "Improved Concussive Shot - Deadly Aspects": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Improved Concussive Shot - Improved Tracking": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Improved Concussive Shot - Savage Strikes": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Improved Concussive Shot - Clever Traps": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Improved Concussive Shot - Surefooted": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Improved Concussive Shot - Predator's Edge": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Improved Concussive Shot - Resourcefulness": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Improved Concussive Shot - Expose Prey": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Improved Concussive Shot - Survivalist's Discipline": {
+      "added": {
+       "Improved Concussive Shot": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Improved Stings - Deadly Aspects": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": 0.01382
+     },
+     "Improved Stings - Improved Tracking": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.50195
+     },
+     "Improved Stings - Savage Strikes": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.49374
+     },
+     "Improved Stings - Clever Traps": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.4784
+     },
+     "Improved Stings - Surefooted": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.49955
+     },
+     "Improved Stings - Predator's Edge": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51989
+     },
+     "Improved Stings - Resourcefulness": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.53284
+     },
+     "Improved Stings - Expose Prey": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.49182
+     },
+     "Improved Stings - Survivalist's Discipline": {
+      "added": {
+       "Improved Stings": 3
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44922
+     },
+     "Improved Arcane Shot - Deadly Aspects": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Improved Arcane Shot - Improved Tracking": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Improved Arcane Shot - Savage Strikes": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Improved Arcane Shot - Clever Traps": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Improved Arcane Shot - Surefooted": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Improved Arcane Shot - Predator's Edge": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Improved Arcane Shot - Resourcefulness": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Improved Arcane Shot - Expose Prey": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Improved Arcane Shot - Survivalist's Discipline": {
+      "added": {
+       "Improved Arcane Shot": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Lone Wolf - Deadly Aspects": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.50331
+     },
+     "Lone Wolf - Improved Tracking": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49657
+     },
+     "Lone Wolf - Savage Strikes": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.49726
+     },
+     "Lone Wolf - Clever Traps": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.4661
+     },
+     "Lone Wolf - Surefooted": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.51124
+     },
+     "Lone Wolf - Predator's Edge": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51608
+     },
+     "Lone Wolf - Resourcefulness": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.52057
+     },
+     "Lone Wolf - Expose Prey": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.49021
+     },
+     "Lone Wolf - Survivalist's Discipline": {
+      "added": {
+       "Lone Wolf": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47301
+     },
+     "Trueshot Aura - Deadly Aspects": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.00506
+     },
+     "Trueshot Aura - Improved Tracking": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49901
+     },
+     "Trueshot Aura - Savage Strikes": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.48585
+     },
+     "Trueshot Aura - Clever Traps": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.47244
+     },
+     "Trueshot Aura - Surefooted": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47898
+     },
+     "Trueshot Aura - Predator's Edge": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.5123
+     },
+     "Trueshot Aura - Resourcefulness": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51806
+     },
+     "Trueshot Aura - Expose Prey": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.48556
+     },
+     "Trueshot Aura - Survivalist's Discipline": {
+      "added": {
+       "Trueshot Aura": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44311
+     },
+     "Rapid Recuperation - Deadly Aspects": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": 0.00735
+     },
+     "Rapid Recuperation - Improved Tracking": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.48932
+     },
+     "Rapid Recuperation - Savage Strikes": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.46625
+     },
+     "Rapid Recuperation - Clever Traps": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46013
+     },
+     "Rapid Recuperation - Surefooted": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.46936
+     },
+     "Rapid Recuperation - Predator's Edge": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.49554
+     },
+     "Rapid Recuperation - Resourcefulness": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.50207
+     },
+     "Rapid Recuperation - Expose Prey": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47257
+     },
+     "Rapid Recuperation - Survivalist's Discipline": {
+      "added": {
+       "Rapid Recuperation": 2
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44459
+     },
+     "Barrage - Deadly Aspects": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Barrage - Improved Tracking": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Barrage - Savage Strikes": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Barrage - Clever Traps": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Barrage - Surefooted": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Barrage - Predator's Edge": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Barrage - Resourcefulness": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Barrage - Expose Prey": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Barrage - Survivalist's Discipline": {
+      "added": {
+       "Barrage": 3
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Scatter Shot - Deadly Aspects": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Scatter Shot - Improved Tracking": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Scatter Shot - Savage Strikes": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Scatter Shot - Clever Traps": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Scatter Shot - Surefooted": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Scatter Shot - Predator's Edge": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Scatter Shot - Resourcefulness": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Scatter Shot - Expose Prey": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Scatter Shot - Survivalist's Discipline": {
+      "added": {
+       "Scatter Shot": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Ranged Weapon Specialization - Deadly Aspects": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.00318
+     },
+     "Ranged Weapon Specialization - Improved Tracking": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.50057
+     },
+     "Ranged Weapon Specialization - Savage Strikes": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.48865
+     },
+     "Ranged Weapon Specialization - Clever Traps": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46901
+     },
+     "Ranged Weapon Specialization - Surefooted": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47913
+     },
+     "Ranged Weapon Specialization - Predator's Edge": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51387
+     },
+     "Ranged Weapon Specialization - Resourcefulness": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.52166
+     },
+     "Ranged Weapon Specialization - Expose Prey": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.48113
+     },
+     "Ranged Weapon Specialization - Survivalist's Discipline": {
+      "added": {
+       "Ranged Weapon Specialization": 5
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45098
+     },
+     "Sniper Shot - Deadly Aspects": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01059
+     },
+     "Sniper Shot - Improved Tracking": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Improved Tracking": 5
+      },
+      "gain": -0.49169
+     },
+     "Sniper Shot - Savage Strikes": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Savage Strikes": 2
+      },
+      "gain": -0.47994
+     },
+     "Sniper Shot - Clever Traps": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Clever Traps": 2
+      },
+      "gain": -0.46892
+     },
+     "Sniper Shot - Surefooted": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Surefooted": 3
+      },
+      "gain": -0.47646
+     },
+     "Sniper Shot - Predator's Edge": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Predator's Edge": 5
+      },
+      "gain": -0.51185
+     },
+     "Sniper Shot - Resourcefulness": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Resourcefulness": 2
+      },
+      "gain": -0.51155
+     },
+     "Sniper Shot - Expose Prey": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Expose Prey": 1
+      },
+      "gain": -0.47353
+     },
+     "Sniper Shot - Survivalist's Discipline": {
+      "added": {
+       "Sniper Shot": 1
+      },
+      "removed": {
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     },
+     "Survival Tactics - Deadly Aspects": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": 0.00726
+     },
+     "Survival Tactics - Lethal Attacks": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.01117
+     },
+     "Survival Tactics - Efficiency": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": 0.00418
+     },
+     "Survival Tactics - Careful Aim": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.00271
+     },
+     "Survival Tactics - Rapid Killing": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00559
+     },
+     "Survival Tactics - Mortal Shots": {
+      "added": {
+       "Survival Tactics": 2
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.0145
+     },
+     "Counterattack - Deadly Aspects": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.01409
+     },
+     "Counterattack - Lethal Attacks": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.02127
+     },
+     "Counterattack - Efficiency": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.01045
+     },
+     "Counterattack - Careful Aim": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.01885
+     },
+     "Counterattack - Rapid Killing": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00297
+     },
+     "Counterattack - Mortal Shots": {
+      "added": {
+       "Counterattack": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.00019
+     },
+     "Strider Kick - Deadly Aspects": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.00386
+     },
+     "Strider Kick - Lethal Attacks": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.01711
+     },
+     "Strider Kick - Efficiency": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.00558
+     },
+     "Strider Kick - Careful Aim": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.00215
+     },
+     "Strider Kick - Rapid Killing": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00964
+     },
+     "Strider Kick - Mortal Shots": {
+      "added": {
+       "Strider Kick": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.00671
+     },
+     "Lacerating Strikes - Deadly Aspects": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Deadly Aspects": 5
+      },
+      "gain": -0.00511
+     },
+     "Lacerating Strikes - Lethal Attacks": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Lethal Attacks": 5
+      },
+      "gain": -0.02032
+     },
+     "Lacerating Strikes - Efficiency": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Efficiency": 3
+      },
+      "gain": -0.00398
+     },
+     "Lacerating Strikes - Careful Aim": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Careful Aim": 5
+      },
+      "gain": -0.01534
+     },
+     "Lacerating Strikes - Rapid Killing": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Rapid Killing": 2
+      },
+      "gain": 0.00094
+     },
+     "Lacerating Strikes - Mortal Shots": {
+      "added": {
+       "Lacerating Strikes": 1
+      },
+      "removed": {
+       "Mortal Shots": 1
+      },
+      "gain": 0.00447
+     },
+     "-Deadly Aspects - Lethal Attacks": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Lethal Attacks": 5
+      },
+      "gain": -0.03666
+     },
+     "-Deadly Aspects - Efficiency": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Efficiency": 3
+      },
+      "gain": -0.0191
+     },
+     "-Deadly Aspects - Careful Aim": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Careful Aim": 5
+      },
+      "gain": -0.02805
+     },
+     "-Deadly Aspects - Rapid Killing": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Rapid Killing": 2
+      },
+      "gain": -0.00978
+     },
+     "-Deadly Aspects - Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Mortal Shots": 1
+      },
+      "gain": -0.0107
+     },
+     "-Deadly Aspects - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Improved Tracking": 5
+      },
+      "gain": -0.52197
+     },
+     "-Deadly Aspects - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Savage Strikes": 2
+      },
+      "gain": -0.50536
+     },
+     "-Deadly Aspects - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Clever Traps": 2
+      },
+      "gain": -0.4913
+     },
+     "-Deadly Aspects - Surefooted": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Surefooted": 3
+      },
+      "gain": -0.51561
+     },
+     "-Deadly Aspects - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Predator's Edge": 5
+      },
+      "gain": -0.5348
+     },
+     "-Deadly Aspects - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Resourcefulness": 2
+      },
+      "gain": -0.55087
+     },
+     "-Deadly Aspects - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Expose Prey": 1
+      },
+      "gain": -0.4974
+     },
+     "-Deadly Aspects - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Deadly Aspects": 5,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.48771
+     },
+     "-Lethal Attacks - Efficiency": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Efficiency": 3
+      },
+      "gain": -0.03209
+     },
+     "-Lethal Attacks - Careful Aim": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Careful Aim": 5
+      },
+      "gain": -0.0397
+     },
+     "-Lethal Attacks - Rapid Killing": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Rapid Killing": 2
+      },
+      "gain": -0.02443
+     },
+     "-Lethal Attacks - Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Mortal Shots": 1
+      },
+      "gain": -0.02523
+     },
+     "-Lethal Attacks - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Improved Tracking": 5
+      },
+      "gain": -0.52226
+     },
+     "-Lethal Attacks - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Savage Strikes": 2
+      },
+      "gain": -0.50481
+     },
+     "-Lethal Attacks - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Clever Traps": 2
+      },
+      "gain": -0.48971
+     },
+     "-Lethal Attacks - Surefooted": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Surefooted": 3
+      },
+      "gain": -0.50784
+     },
+     "-Lethal Attacks - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Predator's Edge": 5
+      },
+      "gain": -0.52871
+     },
+     "-Lethal Attacks - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Resourcefulness": 2
+      },
+      "gain": -0.53881
+     },
+     "-Lethal Attacks - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Expose Prey": 1
+      },
+      "gain": -0.49988
+     },
+     "-Lethal Attacks - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Lethal Attacks": 5,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47818
+     },
+     "-Efficiency - Careful Aim": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Careful Aim": 5
+      },
+      "gain": -0.02106
+     },
+     "-Efficiency - Rapid Killing": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Rapid Killing": 2
+      },
+      "gain": -0.00516
+     },
+     "-Efficiency - Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Mortal Shots": 1
+      },
+      "gain": -0.01147
+     },
+     "-Efficiency - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Improved Tracking": 5
+      },
+      "gain": -0.49642
+     },
+     "-Efficiency - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Savage Strikes": 2
+      },
+      "gain": -0.48062
+     },
+     "-Efficiency - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Clever Traps": 2
+      },
+      "gain": -0.4653
+     },
+     "-Efficiency - Surefooted": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Surefooted": 3
+      },
+      "gain": -0.47952
+     },
+     "-Efficiency - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Predator's Edge": 5
+      },
+      "gain": -0.5156
+     },
+     "-Efficiency - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Resourcefulness": 2
+      },
+      "gain": -0.51713
+     },
+     "-Efficiency - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Expose Prey": 1
+      },
+      "gain": -0.48367
+     },
+     "-Efficiency - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Efficiency": 3,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44713
+     },
+     "-Careful Aim - Rapid Killing": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Rapid Killing": 2
+      },
+      "gain": -0.0147
+     },
+     "-Careful Aim - Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Mortal Shots": 1
+      },
+      "gain": -0.01639
+     },
+     "-Careful Aim - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Improved Tracking": 5
+      },
+      "gain": -0.51565
+     },
+     "-Careful Aim - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Savage Strikes": 2
+      },
+      "gain": -0.50648
+     },
+     "-Careful Aim - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Clever Traps": 2
+      },
+      "gain": -0.48957
+     },
+     "-Careful Aim - Surefooted": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Surefooted": 3
+      },
+      "gain": -0.49871
+     },
+     "-Careful Aim - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Predator's Edge": 5
+      },
+      "gain": -0.54088
+     },
+     "-Careful Aim - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Resourcefulness": 2
+      },
+      "gain": -0.53836
+     },
+     "-Careful Aim - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Expose Prey": 1
+      },
+      "gain": -0.50564
+     },
+     "-Careful Aim - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Careful Aim": 5,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47941
+     },
+     "-Rapid Killing - Mortal Shots": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Mortal Shots": 1
+      },
+      "gain": 0.00408
+     },
+     "-Rapid Killing - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Improved Tracking": 5
+      },
+      "gain": -0.49781
+     },
+     "-Rapid Killing - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Savage Strikes": 2
+      },
+      "gain": -0.48704
+     },
+     "-Rapid Killing - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Clever Traps": 2
+      },
+      "gain": -0.46201
+     },
+     "-Rapid Killing - Surefooted": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Surefooted": 3
+      },
+      "gain": -0.48191
+     },
+     "-Rapid Killing - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Predator's Edge": 5
+      },
+      "gain": -0.51747
+     },
+     "-Rapid Killing - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Resourcefulness": 2
+      },
+      "gain": -0.5237
+     },
+     "-Rapid Killing - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Expose Prey": 1
+      },
+      "gain": -0.48086
+     },
+     "-Rapid Killing - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Rapid Killing": 2,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45173
+     },
+     "-Mortal Shots - Improved Tracking": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Improved Tracking": 5
+      },
+      "gain": -0.49672
+     },
+     "-Mortal Shots - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Savage Strikes": 2
+      },
+      "gain": -0.4769
+     },
+     "-Mortal Shots - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Clever Traps": 2
+      },
+      "gain": -0.46864
+     },
+     "-Mortal Shots - Surefooted": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Surefooted": 3
+      },
+      "gain": -0.47618
+     },
+     "-Mortal Shots - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Predator's Edge": 5
+      },
+      "gain": -0.51313
+     },
+     "-Mortal Shots - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Resourcefulness": 2
+      },
+      "gain": -0.51088
+     },
+     "-Mortal Shots - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Expose Prey": 1
+      },
+      "gain": -0.47387
+     },
+     "-Mortal Shots - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Mortal Shots": 1,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4476
+     },
+     "-Improved Tracking - Savage Strikes": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Savage Strikes": 2
+      },
+      "gain": -0.49642
+     },
+     "-Improved Tracking - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Clever Traps": 2
+      },
+      "gain": -0.48172
+     },
+     "-Improved Tracking - Surefooted": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Surefooted": 3
+      },
+      "gain": -0.4921
+     },
+     "-Improved Tracking - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Predator's Edge": 5
+      },
+      "gain": -0.5263
+     },
+     "-Improved Tracking - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Resourcefulness": 2
+      },
+      "gain": -0.52625
+     },
+     "-Improved Tracking - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Expose Prey": 1
+      },
+      "gain": -0.49169
+     },
+     "-Improved Tracking - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Improved Tracking": 5,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.46876
+     },
+     "-Savage Strikes - Clever Traps": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Clever Traps": 2
+      },
+      "gain": -0.47163
+     },
+     "-Savage Strikes - Surefooted": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Surefooted": 3
+      },
+      "gain": -0.48365
+     },
+     "-Savage Strikes - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Predator's Edge": 5
+      },
+      "gain": -0.50718
+     },
+     "-Savage Strikes - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Resourcefulness": 2
+      },
+      "gain": -0.51525
+     },
+     "-Savage Strikes - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Expose Prey": 1
+      },
+      "gain": -0.47994
+     },
+     "-Savage Strikes - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Savage Strikes": 2,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.45647
+     },
+     "-Clever Traps - Surefooted": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2,
+       "Surefooted": 3
+      },
+      "gain": -0.4692
+     },
+     "-Clever Traps - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2,
+       "Predator's Edge": 5
+      },
+      "gain": -0.50019
+     },
+     "-Clever Traps - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2,
+       "Resourcefulness": 2
+      },
+      "gain": -0.49913
+     },
+     "-Clever Traps - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2,
+       "Expose Prey": 1
+      },
+      "gain": -0.46892
+     },
+     "-Clever Traps - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Clever Traps": 2,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.44527
+     },
+     "-Surefooted - Predator's Edge": {
+      "added": {},
+      "removed": {
+       "Surefooted": 3,
+       "Predator's Edge": 5
+      },
+      "gain": -0.51207
+     },
+     "-Surefooted - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Surefooted": 3,
+       "Resourcefulness": 2
+      },
+      "gain": -0.52466
+     },
+     "-Surefooted - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Surefooted": 3,
+       "Expose Prey": 1
+      },
+      "gain": -0.47646
+     },
+     "-Surefooted - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Surefooted": 3,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.46186
+     },
+     "-Predator's Edge - Resourcefulness": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 5,
+       "Resourcefulness": 2
+      },
+      "gain": -0.53937
+     },
+     "-Predator's Edge - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 5,
+       "Expose Prey": 1
+      },
+      "gain": -0.51185
+     },
+     "-Predator's Edge - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Predator's Edge": 5,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.48984
+     },
+     "-Resourcefulness - Expose Prey": {
+      "added": {},
+      "removed": {
+       "Resourcefulness": 2,
+       "Expose Prey": 1
+      },
+      "gain": -0.51155
+     },
+     "-Resourcefulness - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Resourcefulness": 2,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.47995
+     },
+     "-Expose Prey - Survivalist's Discipline": {
+      "added": {},
+      "removed": {
+       "Expose Prey": 1,
+       "Survivalist's Discipline": 2
+      },
+      "gain": -0.4436
+     }
+    },
+    "minutes": 15.0
+   },
+   "signature": {
+    "spec": "Survival",
+    "rotation": "melee-dps",
+    "date": "2026-11-06",
+    "fights": 600,
+    "split": "5/16/30",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.5795,
+    "min_share": 0.5,
+    "required": [],
+    "core": [
+     "melee",
+     "Raptor Strike",
+     "Mongoose Bite",
+     "Lacerate",
+     "Wing Clip",
+     "pet"
+    ],
+    "missing_talents": [],
+    "uncast": [],
+    "late": [],
+    "casts": {},
+    "fingerprint": "25906f53b245"
+   },
+   "minutes": 45.2,
+   "done": true,
+   "date": "2026-11-06",
+   "builds": {
+    "written": [
+     "survival-open-leveling"
+    ],
+    "why": null,
+    "spec": "Survival",
+    "date": "2026-11-06"
+   }
+  }
+ },
+ "tree": "Survival"
+}

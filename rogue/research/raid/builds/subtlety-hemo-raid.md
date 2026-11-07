@@ -138,9 +138,9 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 5 | if not Vanish is ready: cast Preparation | 0.3 |
 | 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 7 | groupReference | as ready |
-| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast spell 1329549 | 5.8 |
+| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast Shank | 5.8 |
 | 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
-| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and spell 1325758 is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
+| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
 | 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
 | 12 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not variableRef and not variableRef and not talentIsKnown: cast Rupture | 3.5 |
 | 13 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.3 |
@@ -150,7 +150,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.1 |
 | 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast spell 1325758, cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Mutilate (needs the Mutilate talent).
+Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Death Mark (needs the Death Mark talent); cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 

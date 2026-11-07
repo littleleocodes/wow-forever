@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Discipline leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +17.0% faster per kill than discipline-leveling, the fastest of our leveling builds in that race.
+The Discipline leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). -4.7% faster per kill than discipline-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -60,22 +60,20 @@ The Discipline leveling build the open leveling search found on 2026-10-23: ever
 | 19 | Discipline | Power in Light | 1 | 10/0/0 |
 | 20-21 | Discipline | Mental Agility | 2 | 12/0/0 |
 | 22-24 | Discipline | Meditation | 3 | 15/0/0 |
-| 25-27 | Shadow | Spirit Tap | 3 | 15/0/3 |
-| 28 | Discipline | Mental Agility | 1 | 16/0/3 |
-| 29 | Shadow | Spirit Tap | 1 | 16/0/4 |
-| 30 | Discipline | Inner Focus | 1 | 17/0/4 |
-| 31 | Shadow | Spirit Tap | 1 | 17/0/5 |
-| 32-35 | Shadow | Shadow Focus | 4 | 17/0/9 |
-| 36-37 | Shadow | Blackout | 2 | 17/0/11 |
-| 38-39 | Shadow | Improved Mind Blast | 2 | 17/0/13 |
-| 40-41 | Shadow | Improved Shadow Word: Pain | 2 | 17/0/15 |
-| 42-44 | Shadow | Shadow Weaving | 3 | 17/0/18 |
-| 45-46 | Shadow | Dark Inspiration | 2 | 17/0/20 |
-| 47 | Discipline | Improved Power Word: Shield | 1 | 18/0/20 |
-| 48-49 | Discipline | Improved Inner Fire | 2 | 20/0/20 |
-| 50 | Shadow | Devouring Contagion | 1 | 20/0/21 |
-| 51 | Discipline | Penance | 1 | 21/0/21 |
-| 52 | Discipline | Improved Inner Fire | 1 | 22/0/21 |
+| 25 | Discipline | Mental Agility | 1 | 16/0/0 |
+| 26 | Discipline | Inner Focus | 1 | 17/0/0 |
+| 27 | Discipline | Improved Power Word: Shield | 1 | 18/0/0 |
+| 28-29 | Discipline | Improved Inner Fire | 2 | 20/0/0 |
+| 30 | Discipline | Penance | 1 | 21/0/0 |
+| 31-35 | Shadow | Spirit Tap | 5 | 21/0/5 |
+| 36-39 | Shadow | Shadow Focus | 4 | 21/0/9 |
+| 40-41 | Shadow | Blackout | 2 | 21/0/11 |
+| 42-43 | Shadow | Improved Mind Blast | 2 | 21/0/13 |
+| 44-45 | Shadow | Improved Shadow Word: Pain | 2 | 21/0/15 |
+| 46-48 | Shadow | Shadow Weaving | 3 | 21/0/18 |
+| 49-50 | Shadow | Dark Inspiration | 2 | 21/0/20 |
+| 51 | Discipline | Improved Inner Fire | 1 | 22/0/20 |
+| 52 | Shadow | Devouring Contagion | 1 | 22/0/21 |
 | 53-55 | Discipline | Power in Light | 3 | 25/0/21 |
 | 56 | Discipline | Holy Precision | 1 | 26/0/21 |
 | 57-58 | Discipline | Martyrdom | 2 | 28/0/21 |
@@ -98,7 +96,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 39.52; discipline-leveling 46.22. The search simulated 23,417 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 41.45; discipline-open-leveling 39.52, discipline-leveling 45.95. The search simulated 23,417 builds.
+- The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -108,7 +107,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/525020231133201--42522000020301-12>
+- <https://talentsforever.com/priest/60/525020231133201--42522000020301-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

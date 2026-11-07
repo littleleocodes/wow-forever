@@ -3,29 +3,32 @@
  "spec": "enhancement-dps",
  "build": "enhancement-open-raid",
  "setting": "raid",
- "date": "2026-11-02",
+ "date": "2026-11-07",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.00815040669607281,
-  "Call of Flame": 0.0414902923494026,
-  "Concussion": 0.008000791242421812,
-  "Elemental Devastation": 0.025194136013370283,
-  "Elemental Focus": 0.017715876537527597,
-  "Elemental Weapons": 0.024338030464605365,
-  "Flurry": 0.08522408966280814,
-  "Improved Stormstrike": 0.04280732357275774,
-  "Maelstrom Weapon": 0.062251610640721045,
-  "Mental Dexterity": 0.05643918235643053,
-  "Mental Quickness": 0.02645379058281372,
-  "Rage of the Farseer": 0.02124458706806609,
-  "Reverberation": 0.01410412278868689,
-  "Shamanistic Focus": 0.07380700504690407,
-  "Stormstrike": 0.2089724854139574,
-  "Thundering Strikes": 0.04612472697497849,
-  "Tidal Focus": 0.025293613485377953,
-  "Trial by Fire": 0.03716614289133913
+  "Ancestral Knowledge": 0.01254650561655768,
+  "Call of Flame": 0.038311767395324714,
+  "Concussion": 0.010356246399904845,
+  "Convection": 0.0002965822364459081,
+  "Elemental Devastation": 0.02611366425211048,
+  "Elemental Focus": 0.00920859015270925,
+  "Elemental Weapons": 0.021495682084714418,
+  "Flurry": 0.08467622046216405,
+  "Improved Stormstrike": 0.032901854021175625,
+  "Maelstrom Weapon": 0.09969490470396891,
+  "Mental Dexterity": 0.09066094576595662,
+  "Mental Quickness": 0.0262163721542108,
+  "Rage of the Farseer": 0.016245314697745483,
+  "Reverberation": 0.004952406930172404,
+  "Shamanistic Focus": 0.053020245144412725,
+  "Stormstrike": 0.291591200718448,
+  "Thundering Strikes": 0.0451537636839725,
+  "Tidal Focus": 0.02163337686165956,
+  "Trial by Fire": 0.03400046381124622
  },
- "free": [],
+ "free": [
+  "Convection"
+ ],
  "kept_for_rotation": [
   "Maelstrom Weapon",
   "Stormstrike"
@@ -37,6 +40,10 @@
  "start": {
   "Elemental": [
    [
+    "Convection",
+    1
+   ],
+   [
     "Concussion",
     5
    ],
@@ -46,7 +53,7 @@
    ],
    [
     "Reverberation",
-    3
+    2
    ],
    [
     "Call of Flame",
@@ -68,7 +75,7 @@
    ],
    [
     "Ancestral Knowledge",
-    3
+    4
    ],
    [
     "Mental Dexterity",
@@ -110,13 +117,17 @@
   "Restoration": [
    [
     "Tidal Focus",
-    3
+    2
    ]
   ]
  },
  "allocation": {
   "Elemental": [
    [
+    "Convection",
+    1
+   ],
+   [
     "Concussion",
     5
    ],
@@ -126,7 +137,7 @@
    ],
    [
     "Reverberation",
-    3
+    2
    ],
    [
     "Call of Flame",
@@ -148,7 +159,7 @@
    ],
    [
     "Ancestral Knowledge",
-    3
+    4
    ],
    [
     "Mental Dexterity",
@@ -190,7 +201,7 @@
   "Restoration": [
    [
     "Tidal Focus",
-    3
+    2
    ]
   ]
  }

@@ -145,8 +145,8 @@
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-07",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
@@ -291,49 +291,49 @@
   "final": {
    "raid": {
     "enhancement-open-raid": {
-     "before": 893.332178328972,
-     "after": 968.2104509316807,
-     "base": 893.332178328972,
+     "before": 917.9672397691818,
+     "after": 994.2725373635685,
+     "base": 917.9672397691818,
      "before_value": null,
      "after_value": null,
-     "oom_before": 11.29093904833684,
-     "oom_after": 2.3156792970279887
+     "oom_before": 1.1044255413586077,
+     "oom_after": 1.1044255413586077
     },
     "enhancement-raid-dps": {
-     "before": 845.8956016659939,
-     "after": 903.7285707323456,
-     "base": 845.8956016659939,
+     "before": 869.0236439076789,
+     "after": 930.5955944876312,
+     "base": 869.0236439076789,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.084981378071063,
-     "oom_after": 2.9165616033489177
+     "oom_before": 1.179346807712807,
+     "oom_after": 1.179346807712807
     },
     "opt-enhancement-dps-raid-dps": {
-     "before": 824.5215422772711,
-     "after": 889.9577526243411,
-     "base": 824.5215422772711,
+     "before": 846.7127321616287,
+     "after": 914.8697276659608,
+     "base": 846.7127321616287,
      "before_value": null,
      "after_value": null,
-     "oom_before": 9.140739927664722,
-     "oom_after": 3.396711354659626
+     "oom_before": 1.563440444617008,
+     "oom_after": 1.563440444617008
     },
     "enhancement-ml-raid": {
-     "before": 862.0635935228127,
-     "after": 938.3598775470012,
-     "base": 862.0635935228127,
+     "before": 886.2608317570329,
+     "after": 964.1226579331058,
+     "base": 886.2608317570329,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.55808855926093,
-     "oom_after": 1.0062839886356578
+     "oom_before": 0.3399472636498986,
+     "oom_after": 0.3399472636498986
     },
     "elemental-enhancement-ml-raid": {
-     "before": 820.8983322362473,
-     "after": 894.0602238824737,
-     "base": 820.8983322362473,
+     "before": 844.2389139397595,
+     "after": 918.3527230927542,
+     "base": 844.2389139397595,
      "before_value": null,
      "after_value": null,
-     "oom_before": 13.823306063961759,
-     "oom_after": 3.1587917590189676
+     "oom_before": 1.6753778334587537,
+     "oom_after": 1.6753778334587537
     }
    }
   },
@@ -346,13 +346,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 39,
+    "structure": 13,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 14
  }
 }

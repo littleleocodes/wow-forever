@@ -123,7 +123,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/paladin/60/15025110221021--4223302100131033-12>
+- <https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

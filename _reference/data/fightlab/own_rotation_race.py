@@ -76,6 +76,8 @@ def main():
                                                                        key=lambda t: sum(k for _, k in b["allocation"].get(t, [])))
                 model = (DL.LEVEL.get((cls, tree)) or (own, own))[1]
                 order = b.get("order") or FT.order_of(cls, model, FT.flat_of(b))
+                if not b.get("order"):   # 2026-11-06 (page-audit L3): an order made here takes the signature talents as early as the tree allows
+                    order = FT.FS.sig_order(cls, own, {"allocation": b["allocation"], "order": order})
                 w, per = FT.race(pool, cls, own, [{"id": b["id"], "allocation": b["allocation"], "order": order}], FIGHTS, SEED)[0]
                 st.setdefault(cls, {})[b["id"]] = {"rotation": own, "levels": {str(L): round(v, 2) for L, v in per.items()},
                                                    "weighted": round(w, 2), "was": rot, "spec": spec, "date": TODAY}

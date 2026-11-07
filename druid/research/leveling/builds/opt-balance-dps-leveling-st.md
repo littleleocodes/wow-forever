@@ -45,6 +45,38 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Balance | Improved Wrath | 5 | 5/0/0 |
+| 15 | Balance | Moonglow | 1 | 6/0/0 |
+| 16 | Balance | Improved Moonfire | 1 | 7/0/0 |
+| 17 | Balance | Moonglow | 1 | 8/0/0 |
+| 18 | Balance | Improved Moonfire | 1 | 9/0/0 |
+| 19 | Balance | Moonglow | 1 | 10/0/0 |
+| 20-21 | Balance | Nature's Majesty | 2 | 12/0/0 |
+| 22 | Balance | Nature's Splendor | 1 | 13/0/0 |
+| 23-24 | Balance | Improved Entangling Roots | 2 | 15/0/0 |
+| 25-29 | Balance | Improved Starfire | 5 | 20/0/0 |
+| 30-32 | Balance | Eclipse | 3 | 23/0/0 |
+| 33 | Balance | Nature's Grace | 1 | 24/0/0 |
+| 34 | Balance | Vengeance | 1 | 25/0/0 |
+| 35-36 | Balance | Moonfury | 2 | 27/0/0 |
+| 37 | Balance | Vengeance | 1 | 28/0/0 |
+| 38 | Balance | Moonfury | 1 | 29/0/0 |
+| 39 | Balance | Vengeance | 1 | 30/0/0 |
+| 40 | Balance | Moonkin Form | 1 | 31/0/0 |
+| 41-42 | Balance | Vengeance | 2 | 33/0/0 |
+| 43-44 | Balance | Moonfury | 2 | 35/0/0 |
+| 45 | Balance | Improved Entangling Roots | 1 | 36/0/0 |
+| 46-47 | Restoration | Heart of the Wild | 2 | 36/0/2 |
+| 48-50 | Restoration | Nature's Focus | 3 | 36/0/5 |
+| 51 | Restoration | Reflection | 1 | 36/0/6 |
+| 52-56 | Restoration | Naturalist | 5 | 36/0/11 |
+| 57-58 | Restoration | Reflection | 2 | 36/0/13 |
+| 59-60 | Restoration | Nature's Focus | 2 | 36/0/15 |
+
 ## Core talents (priority order)
 
 1. **Improved Starfire** — Removing it costs 7.5 points of score in this model.
@@ -60,15 +92,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): eat below 40% health; Starfire only while the mob has more than 10% health. Together +1.2% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): eat below 40% health. Together +0.8% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/balance-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 2.9 | 3.9 | 4.9 | 4.5 | 4.4 | 64% |
-| Wrath | 6.4 | 1.4 | 1.9 | 2.5 | 2.3 | 2.3 | 10% |
-| Moonfire | 1.5 | 1.3 | 1.5 | 1.7 | 1.6 | 1.6 | 22% |
+| Starfire | 0.0 | 0.0 | 4.0 | 4.7 | 4.1 | 3.6 | 70% |
+| Wrath | 8.3 | 9.5 | 2.0 | 2.3 | 2.1 | 1.9 | 8% |
+| Moonfire | 1.6 | 2.1 | 1.5 | 1.5 | 1.5 | 1.4 | 19% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Entangling Roots | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Moonkin Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
@@ -77,6 +109,7 @@ What this build casts per kill ([report](../fightlab/balance-dps.md), all leveli
 
 - Report: druid/research/talents/forever/optimizer/balance-dps-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/2/13 -> 36/0/15; order dropped (order_repair.py) (refill: the balance-dps model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the balance-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 37.6 s per kill; own tree first 37.6 s; own tree last 39.6 s.
 
 ## Open questions (verify in the live game)
 

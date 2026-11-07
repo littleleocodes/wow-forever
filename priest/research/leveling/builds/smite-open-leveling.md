@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +8.6% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
+The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +8.6% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -73,8 +73,8 @@ The Smite (a Discipline/Holy hybrid) leveling build the open leveling search fou
 | 42-46 | Holy | Holy Specialization | 5 | 22/9/6 |
 | 47-51 | Holy | Divine Fury | 5 | 22/14/6 |
 | 52 | Holy | Holy Nova | 1 | 22/15/6 |
-| 53-54 | Holy | Searing Light | 2 | 22/17/6 |
-| 55-57 | Holy | Improved Healing | 3 | 22/20/6 |
+| 53-55 | Holy | Improved Healing | 3 | 22/18/6 |
+| 56-57 | Holy | Searing Light | 2 | 22/20/6 |
 | 58 | Holy | Litany of Light | 1 | 22/21/6 |
 | 59-60 | Shadow | Improved Shadow Word: Pain | 2 | 22/21/8 |
 
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 51.39; holy-leveling 55.83. The search simulated 40,040 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 51.42; holy-leveling 55.86. The search simulated 40,040 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -105,7 +105,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-12>
+- <https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

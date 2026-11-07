@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 
 | Rotation (entry) | Open winner | Family | DPS | vs our best build there | Rotation re-tuned |
 |---|---|---|---|---|---|
-| ret-dps | [16/4/31](https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-12) | Retribution | 839.0 | +24.6% (ret-raid-dps) | yes |
-| shockadin-raid | [23/0/28](https://talentsforever.com/paladin/60/15025110221021--4223302100131033-12) | Hybrid Holy/Retribution | 796.2 | - | yes |
+| ret-dps | [16/4/31](https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-7) | Retribution | 839.0 | +24.6% (ret-raid-dps) | yes |
+| shockadin-raid | [23/0/28](https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7) | Hybrid Holy/Retribution | 796.2 | - | yes |
 
 ## ret-dps
 

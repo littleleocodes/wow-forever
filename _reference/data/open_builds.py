@@ -514,6 +514,9 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
                              f"leveling pick, the hand draft stays as the alternative.")
     elif best_hand:
         b["notes"].append(f"Against the spec's fastest hand draft {best_hand}: {hand_t / wt - 1:+.1%} (under the replacement bar: the hand draft stays the pick).")
+    if r.get("order_signature_first"):   # fl_levels.pick_order (2026-11-06): the order was changed for the signature rule
+        b["notes"].append("The talent order takes the spec's signature talents at the earliest level their tree allows (the signature "
+                          "rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.")
     b["notes"].append("Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.")
     return b
 
@@ -546,6 +549,15 @@ def main():
             continue
         bp = paths.builds_json("forever", cls)
         data = json.load(open(bp, encoding="utf-8"))
+        if a.write and a.only != "raid" and lev_sig().enabled():
+            # 2026-11-06: the bar a leveling winner must clear leaves out the rivals that fail their signature check, read from
+            # fightlab/signature-audit.json (RM.lev_sig_check), which only the regen step refreshed. A rival whose verdict changed since
+            # (a rule changed, its order was repaired) counted on the old verdict, and after a change to the check itself every row is
+            # stale and no rival was left out at all. The class's audit is measured again first (about a minute).
+            import subprocess
+            subprocess.run([sys.executable, "-u", str(HERE / "fightlab" / "signature_audit.py"), cls, "--write", "--jobs", "3"],
+                           check=False, stdout=subprocess.DEVNULL)
+            RM._LEV_SIG.clear()
         rc = raid_candidates(cls, fam, data, RM) if use_fam else []
         lc = [(OPEN / f"{cls}.json", lvl, x) for x in leveling_candidates(cls, lvl, data, RM)] if use_lvl else []
         if a.only != "raid":   # the one-tree searches (fl_open_search.py --tree, 2026-10-25): a pure spec whose rotation a hybrid won

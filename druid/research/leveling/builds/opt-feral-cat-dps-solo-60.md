@@ -47,6 +47,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Natural Shapeshifter** | 2/3 | moved | Reduces the mana cost of all shapeshifting by 20%. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Feral Combat | Ferocity | 5 | 0/5/0 |
+| 15-16 | Feral Combat | Feral Swiftness | 2 | 0/7/0 |
+| 17 | Feral Combat | Thick Hide | 1 | 0/8/0 |
+| 18-19 | Feral Combat | Furor | 2 | 0/10/0 |
+| 20-21 | Feral Combat | Sharpened Claws | 2 | 0/12/0 |
+| 22-23 | Feral Combat | Savage Fury | 2 | 0/14/0 |
+| 24 | Feral Combat | Furor | 1 | 0/15/0 |
+| 25-27 | Feral Combat | Predatory Strikes | 3 | 0/18/0 |
+| 28-29 | Feral Combat | Blood Frenzy | 2 | 0/20/0 |
+| 30 | Feral Combat | Leader of the Pack | 1 | 0/21/0 |
+| 31-32 | Feral Combat | Natural Instinct | 2 | 0/23/0 |
+| 33-37 | Balance | Genesis | 5 | 5/23/0 |
+| 38-39 | Balance | Nature's Reach | 2 | 7/23/0 |
+| 40-41 | Balance | Nature's Majesty | 2 | 9/23/0 |
+| 42-46 | Restoration | Heart of the Wild | 5 | 9/23/5 |
+| 47-51 | Restoration | Naturalist | 5 | 9/23/10 |
+| 52-53 | Restoration | Natural Shapeshifter | 2 | 9/23/12 |
+| 54-55 | Feral Combat | Furor | 2 | 9/25/12 |
+| 56-60 | Feral Combat | Rend and Tear | 5 | 9/30/12 |
+
 ## Core talents (priority order)
 
 1. **Blood Frenzy** — Removing it costs 2.7 points of score in this model.
@@ -66,6 +90,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Report: druid/research/talents/forever/optimizer/feral-cat-dps-solo-60.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/31/11 -> 9/30/12; Berserk 1 gone; refill +1 Natural Shapeshifter; order dropped (order_repair.py) (refill: the feral-cat-dps model, solo-60).
+- 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (feral-cat-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

@@ -125,6 +125,157 @@ def learn_level(cls, spell, build):
     return spellbook(cls).get(spell, (1, 0.0))[0]
 
 
+# ------------------------------------------------------------------------------------------------ signature talents as early as the tree allows
+# 2026-11-06 (user decision on page-audit K5, "Go with your recs": "Signature talent timing. Take it as early as the tree allows"): the
+# checks counted a talent spell from the level the build's order takes its talent, and the orders were picked on speed alone, so the
+# Assassination page took Mutilate at 60, Subtlety Hemorrhage at 54 and Death Mark at 60, Beast Mastery Bestial Wrath at 56, Holy
+# (paladin) Holy Shock at 60: a spec that levels for fifty levels without the spell that makes it that spec. A leveling order now
+# takes every talent that grants a required spell at the earliest level its tree allows (`late_talents` fails the check otherwise;
+# `signature_first` is the order every leveling tool starts from).
+_INFO = {}
+
+
+def talent_info(cls):
+    """{talent: {"tree", "row" (0-based), "max", "req": [(talent, rank)]}} of the current trees (validate_builds.load_forever)."""
+    if cls not in _INFO:
+        if sys.path[:1] != [str(HERE)]:
+            sys.path.insert(0, str(HERE))
+        import validate_builds as VB
+        for c, trees in VB.load_forever().items():
+            _INFO[c] = {n: {"tree": tn, "row": int(t["row"]), "max": int(t["max"]), "req": [(q, int(r)) for q, r in t["requires"]]}
+                        for tn, tr in trees.items() for n, t in tr["talents"].items()}
+    return _INFO.get(cls, {})
+
+
+def signature_talents(cls, rl, build):
+    """The talents that grant the rule's required spells and that the build holds, in the order they are learned: the lower row first."""
+    info, have = talent_info(cls), held(build)
+    return sorted((s for s in granting_talents(cls, (rl or {}).get("required") or []) if have.get(s) and s in info),
+                  key=lambda s: (info[s]["row"], s))
+
+
+def earliest_levels(cls, rl, build):
+    """{signature talent: the earliest level its tree allows}. A talent of row r is its tree's point 5r + 1, so level 10 + 5r (Mutilate
+    40, Pyroblast 20); two in one tree: the tree's points simply go on (Hemorrhage 30, Death Mark 40); two in different trees: the lower
+    row first, the other tree's points after it."""
+    info, need, out = talent_info(cls), {}, {}
+    for s in signature_talents(cls, rl, build):
+        t = info[s]["tree"]
+        need[t] = max(need.get(t, 0), 5 * info[s]["row"]) + 1
+        out[s] = 9 + sum(need.values())
+    return out
+
+
+def late_talents(cls, rl, build):
+    """[(talent, the level the build's order takes it, the earliest level its tree allows)] for the signature talents taken later than
+    the tree allows; [] for a build without an order (nothing to judge)."""
+    if not (build.get("order") or []):
+        return []
+    out = []
+    for s, lv in earliest_levels(cls, rl, build).items():
+        got = learn_level(cls, s, build)
+        if got is not None and got > lv:
+            out.append((s, int(got), int(lv)))
+    return out
+
+
+def order_points(order):
+    """A compressed order as one (tree, talent) per point."""
+    return [(s["tree"], s["talent"]) for s in order for _ in range(int(s["points"]))]
+
+
+def order_alloc(order):
+    """{talent: points} an order ends on."""
+    out = {}
+    for s in order:
+        out[s["talent"]] = out.get(s["talent"], 0) + int(s["points"])
+    return out
+
+
+def compress_points(points, start=10):
+    """One (tree, talent) per point -> the builds' compressed order (levels from `start`)."""
+    out = []
+    for i, (tree, name) in enumerate(points):
+        lv = start + i
+        if out and out[-1]["talent"] == name:
+            out[-1]["points"] += 1
+            out[-1]["levels"] = f"{out[-1]['levels'].split('-')[0]}-{lv}"
+        else:
+            out.append({"levels": str(lv), "tree": tree, "talent": name, "points": 1})
+    return out
+
+
+def _below(info, alloc, tree, row):
+    return sum(r for n, r in alloc.items() if info[n]["tree"] == tree and info[n]["row"] < row)
+
+
+def _addable(info, alloc, name):
+    i = info[name]
+    if alloc.get(name, 0) >= i["max"]:
+        return False
+    if i["row"] and _below(info, alloc, i["tree"], i["row"]) < 5 * i["row"]:
+        return False
+    return all(alloc.get(q, 0) >= qr for q, qr in i["req"])
+
+
+def legal_points(cls, points):
+    """Every prefix of a per-point order is a legal partial build (rank caps, 5 points per tier, prerequisites)."""
+    info, alloc = talent_info(cls), {}
+    for _, name in points:
+        if name not in info or not _addable(info, alloc, name):
+            return False
+        alloc[name] = alloc.get(name, 0) + 1
+    return True
+
+
+def signature_first(cls, rl, build):
+    """The build's order with every signature talent at the earliest level its tree allows (earliest_levels). For each one, the lower
+    row first: its tree's points of the rows above it come forward in the order they already had, as many as its row needs (the
+    talent's prerequisites among them), then the talent; every other point keeps its place in line. Returns the order itself when
+    nothing is late, when the build has no order, or when no legal order could be made (the check then says what is late)."""
+    order = build.get("order") or []
+    if not order or not late_talents(cls, rl, build):
+        return order
+    info = talent_info(cls)
+    rest = order_points(order)
+    if any(n not in info for _, n in rest):
+        return order
+    out, alloc = [], {}
+
+    def take(i):
+        p = rest.pop(i)
+        out.append(p)
+        alloc[p[1]] = alloc.get(p[1], 0) + 1
+
+    for s in signature_talents(cls, rl, build):
+        if alloc.get(s):
+            continue
+        tree, row = info[s]["tree"], info[s]["row"]
+        must, stack = {}, [s]   # the prerequisite chain: the ranks that have to be in before the talent
+        while stack:
+            for q, qr in info[stack.pop()]["req"]:
+                if must.get(q, 0) < qr:
+                    must[q] = qr
+                    stack.append(q)
+        while True:
+            have = _below(info, alloc, tree, row)
+            owed = sum(max(0, qr - alloc.get(q, 0)) for q, qr in must.items())
+            if have >= 5 * row and not owed:
+                break
+            free = 5 * row - have - owed   # the points left for talents outside the chain
+            pick = next((i for i, (t, n) in enumerate(rest) if t == tree and n != s and info[n]["row"] < row
+                         and (alloc.get(n, 0) < must.get(n, 0) or free > 0) and _addable(info, alloc, n)), None)
+            if pick is None:
+                return order
+            take(pick)
+        i = next((i for i, (_, n) in enumerate(rest) if n == s), None)
+        if i is None or not _addable(info, alloc, s):
+            return order
+        take(i)
+    out += rest
+    return compress_points(out) if legal_points(cls, out) else order
+
+
 def min_casts(cls, spell, time_per_kill):
     """Casts per kill that count as playing the spell: MIN_CASTS_PER_KILL, or half of what its cooldown allows in a kill's time."""
     cd = spellbook(cls).get(spell, (1, 0.0))[1]
@@ -165,8 +316,9 @@ def check_levels(cls, spec, build, per_level, mode="leveling", rl=None):
     {"ok", "missing_talents", "uncast": [(spell, level, casts per kill, needed)], "core_share" (at the highest level), "min_share", "rule"}."""
     rl = rl or rule(cls, spec, mode)
     if not rl:
-        return {"ok": True, "rule": None, "missing_talents": [], "uncast": [], "core_share": None, "min_share": None}
+        return {"ok": True, "rule": None, "missing_talents": [], "uncast": [], "late": [], "core_share": None, "min_share": None}
     miss = [s for s in granting_talents(cls, rl["required"]) if s not in held(build)]
+    late = late_talents(cls, rl, build) if mode == "leveling" else []   # 2026-11-06: a signature talent taken later than its tree allows
     uncast = []
     checked = list(rl["required"]) + [s for s in (rl.get("min_casts") or {}) if s not in rl["required"]]
     for spell in checked:   # the required spells, and the spells given a cast rate only (reactive: Mongoose Bite)
@@ -187,8 +339,8 @@ def check_levels(cls, spec, build, per_level, mode="leveling", rl=None):
                 uncast.append((spell, int(L), round(got, 3), round(need, 3)))
     top = max(per_level, key=lambda L: int(L)) if per_level else None
     cs = core_share(per_level[top].get("shares"), rl, per_level[top].get("pet_sources") or ()) if top is not None else None
-    ok = not miss and not uncast and (cs is None or cs >= rl["min_share"])
-    return {"ok": ok, "rule": rl, "missing_talents": miss, "uncast": uncast, "core_share": cs, "min_share": rl["min_share"],
+    ok = not miss and not uncast and not late and (cs is None or cs >= rl["min_share"])
+    return {"ok": ok, "rule": rl, "missing_talents": miss, "uncast": uncast, "late": late, "core_share": cs, "min_share": rl["min_share"],
             "level": int(top) if top is not None else None}
 
 
@@ -200,6 +352,8 @@ def verdict_text(v):
         bits.append("lacks " + ", ".join(v["missing_talents"]))
     if v["uncast"]:
         bits.append("; ".join(f"{s} {g:.2f}/kill at {L} (needs {n:.2f})" for s, L, g, n in v["uncast"]))
+    if v.get("late"):
+        bits.append("; ".join(f"{s} taken at {g} (its tree allows {e})" for s, g, e in v["late"]))
     if v["core_share"] is not None and v["core_share"] < v["min_share"]:
         bits.append(f"core share {v['core_share']:.0%} < {v['min_share']:.0%}")
     return "OK" if v["ok"] else "FAIL: " + "; ".join(bits)

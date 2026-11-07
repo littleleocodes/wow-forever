@@ -47,6 +47,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 | **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Retribution | Deflection | 5 | 0/0/5 |
+| 15 | Retribution | Sanctified Judgement | 1 | 0/0/6 |
+| 16-18 | Retribution | Conviction | 3 | 0/0/9 |
+| 19 | Retribution | Sanctified Judgement | 1 | 0/0/10 |
+| 20 | Retribution | Seal of Command | 1 | 0/0/11 |
+| 21-22 | Retribution | Improved Judgement | 2 | 0/0/13 |
+| 23 | Retribution | Sanctified Judgement | 1 | 0/0/14 |
+| 24 | Retribution | Vindication | 1 | 0/0/15 |
+| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
+| 26-28 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/19 |
+| 29 | Retribution | Pursuit of Justice | 1 | 0/0/20 |
+| 30-32 | Retribution | Vengeance | 3 | 0/0/23 |
+| 33-37 | Holy | Divine Strength | 5 | 5/0/23 |
+| 38 | Protection | Divine Intellect | 1 | 5/1/23 |
+| 39-41 | Holy | Improved Seals | 3 | 8/1/23 |
+| 42-45 | Protection | Divine Intellect | 4 | 8/5/23 |
+| 46-48 | Protection | Precision | 3 | 8/8/23 |
+| 49-50 | Retribution | Vindication | 2 | 8/8/25 |
+| 51 | Retribution | Pursuit of Justice | 1 | 8/8/26 |
+| 52-54 | Retribution | Champion of the Light | 3 | 8/8/29 |
+| 55-56 | Protection | Sacred Duty | 2 | 8/10/29 |
+| 57-60 | Protection | Toughness | 4 | 8/14/29 |
+
 ## Core talents (priority order)
 
 1. **Conviction** — Removing it costs 4.0 points of score in this model.
@@ -62,7 +89,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Consecration; never cast Hammer of Wrath; drink below 15% mana. Together +11.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-07, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +11.9% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 
@@ -83,6 +110,7 @@ What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveli
 
 - Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/14/29; Divine Intellect 2 gone (moved to Protection); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); -1 Toughness (over 51); order dropped (order_repair.py) (refill: the ret-dps model, leveling-aoe).
+- 2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
 
 ## Open questions (verify in the live game)
 

@@ -141,7 +141,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/mage/60/03220421310101053-55-0535-12>
+- <https://talentsforever.com/mage/60/03220421310101053-55-0535-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

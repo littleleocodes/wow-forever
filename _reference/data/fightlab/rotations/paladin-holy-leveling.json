@@ -1,8 +1,9 @@
 {
  "drink_below": 0.15,
+ "eat_below": 0.4,
  "class": "paladin",
  "spec": "holy-leveling",
- "build": "paladin/research/leveling/fightlab/candidates/sig-holy-shock-start.json",
+ "build": "holy-leveling",
  "levels": [
   20,
   30,
@@ -10,15 +11,15 @@
   50,
   60
  ],
- "date": "2026-10-23",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Holy Shock"
   ],
   "build_spec": "Holy",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7404379678914385,
-  "core_share_after": 0.7389053487121515,
+  "core_share_before": 0.7289448439387831,
+  "core_share_after": 0.7289421867883542,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -33,42 +34,62 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.004948266504606669,
-   "gain_seed2": 0.004039300904188137
+   "gain_seed1": 0.003773615125917562,
+   "gain_seed2": 0.005230025308503694
+  },
+  {
+   "round": 2,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.006696581307627736,
+   "gain_seed2": 0.0042941377170869766
   }
  ],
- "weighted_before": 34.711650395178076,
- "weighted_after": 34.5991955422358,
+ "weighted_before": 34.874242286643,
+ "weighted_after": 34.51592554680538,
  "per_level": {
   "20": {
-   "before": 21.882366666529787,
-   "after": 21.882366666529787,
+   "before": 21.28066666653518,
+   "after": 21.28066666653518,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.45736134889397,
-   "after": 25.459906490897303,
+   "before": 26.36910075341501,
+   "after": 26.362056256463383,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 32.058466762509646,
-   "after": 32.05979815216333,
+   "before": 34.30485135950375,
+   "after": 34.274144215557236,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 38.915124587387076,
-   "after": 38.70314796976488,
+   "before": 36.94136374274675,
+   "after": 36.48578100314576,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 41.881116756141004,
-   "after": 41.68075426358113,
+   "before": 42.314997664632656,
+   "after": 41.52425449261487,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 34.721,
+   "from scratch": 34.516,
+   "continued": 34.516
+  },
+  "installed": "from scratch",
+  "reference_ok": true
  }
 }

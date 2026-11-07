@@ -6,10 +6,10 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 
 | Rotation (entry) | Open winner | Family | DPS | vs our best build there | Rotation re-tuned |
 |---|---|---|---|---|---|
-| frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-12) | Hybrid Arcane/Frost | 670.9 | +1.5% (opt-frost-raid-raid-dps) | yes |
-| fire-raid | [17/31/3](https://talentsforever.com/mage/60/2302052001002-54500001230133031-003-12) | Fire | 827.1 | +3.8% (fire-raid) | yes |
-| arcane-dps | [31/17/3](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-12) | Arcane | 741.8 | +12.7% (arcane-blast-raid) | yes |
-| frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-12) | Hybrid Fire/Frost | 742.1 | +0.0% (frostfire-ml-raid) | yes |
+| frost-raid | [28/10/13](https://talentsforever.com/mage/60/03220421310101053-55-0535-7) | Hybrid Arcane/Frost | 670.9 | +1.5% (opt-frost-raid-raid-dps) | yes |
+| fire-raid | [17/31/3](https://talentsforever.com/mage/60/2302052001002-54500001230133031-003-7) | Fire | 827.1 | +3.8% (fire-raid) | yes |
+| arcane-dps | [31/17/3](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-7) | Arcane | 741.8 | +12.7% (arcane-blast-raid) | yes |
+| frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-3550000123013303-2135000301113002-7) | Hybrid Fire/Frost | 742.1 | +0.0% (frostfire-ml-raid) | yes |
 
 ## frost-raid
 

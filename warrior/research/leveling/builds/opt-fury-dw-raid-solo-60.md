@@ -47,6 +47,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fury | Cruelty | 5 | 0/5/0 |
+| 15-19 | Fury | Unbridled Wrath | 5 | 0/10/0 |
+| 20-24 | Fury | Enrage | 5 | 0/15/0 |
+| 25-26 | Fury | Improved Execute | 2 | 0/17/0 |
+| 27 | Fury | Dual Wield Specialization | 1 | 0/18/0 |
+| 28 | Fury | Furious Precision | 1 | 0/19/0 |
+| 29 | Fury | Dual Wield Specialization | 1 | 0/20/0 |
+| 30 | Fury | Death Wish | 1 | 0/21/0 |
+| 31-33 | Fury | Dual Wield Specialization | 3 | 0/24/0 |
+| 34 | Fury | Furious Precision | 1 | 0/25/0 |
+| 35 | Fury | Flurry | 1 | 0/26/0 |
+| 36-37 | Fury | Improved Whirlwind | 2 | 0/28/0 |
+| 38 | Fury | Flurry | 1 | 0/29/0 |
+| 39 | Fury | Blood Craze | 1 | 0/30/0 |
+| 40 | Fury | Bloodthirst | 1 | 0/31/0 |
+| 41-42 | Fury | Blood Craze | 2 | 0/33/0 |
+| 43-44 | Fury | Gore Drinker | 2 | 0/35/0 |
+| 45 | Fury | Furious Precision | 1 | 0/36/0 |
+| 46 | Fury | Flurry | 1 | 0/37/0 |
+| 47-51 | Arms | Deflection | 5 | 5/37/0 |
+| 52-53 | Arms | Improved Charge | 2 | 7/37/0 |
+| 54-56 | Arms | Improved Tactical Mastery | 3 | 10/37/0 |
+| 57 | Arms | Anger Management | 1 | 11/37/0 |
+| 58-59 | Fury | Improved Intercept | 2 | 11/39/0 |
+| 60 | Fury | Improved Berserker Rage | 1 | 11/40/0 |
+
 ## Core talents (priority order)
 
 1. **Bloodthirst** — Removing it costs 10.8 points of score in this model.
@@ -67,6 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Report: warrior/research/talents/forever/optimizer/fury-dw-raid-solo-60.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/38/0 -> 11/40/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury); refill +2 Improved Intercept; order dropped (order_repair.py) (refill: the fury-dw-raid model, solo-60).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 11/40/0 -> 11/40/0; Raging Blows 1 gone; +1 Improved Berserker Rage (back into Fury) (refill: the fury-dw-raid model, solo-60).
+- 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (fury-dw-raid, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

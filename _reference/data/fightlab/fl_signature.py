@@ -79,6 +79,9 @@ def spec_for(cls, rot, flat):
         h = hybrid_only(cls, rot)
         if h and pair == h:   # the hybrid's rotation files a split of its two trees under it (a 0/21/30 Frostfire), not 17/0/34 Frost
             spec = h
+        fa = SM.LEVELING_FILE_AS.get((cls, rot))   # 2026-11-06 (user decision, page-audit K3): the cat rotation's 11/29/11 is a Feral
+        if fa and spec.startswith("Hybrid ") and SM.tree_points(cls, {"allocation": SG_alloc(cls, flat)}).get(fa[0], 0) >= fa[1]:
+            spec = fa[0]                           # Combat build (a majority of its points in the tree), not a hybrid with its own page
         if len(_CLS) > 50000:
             _CLS.clear()
         _CLS[key] = spec
@@ -129,7 +132,7 @@ def check(cls, rot, flat, level, result, order=None, spec=None):
     for s_ in rule_specs(cls, rot, spec):   # its own rule, or (a hybrid without one) its rotation's tree's
         v = SG.check_levels(cls, s_, build, per, "leveling", SG.rule(cls, s_, "leveling"))
         if int(level) < 60:   # the core share is the level-60 rule
-            v["ok"] = not v["missing_talents"] and not v["uncast"]
+            v["ok"] = not v["missing_talents"] and not v["uncast"] and not v.get("late")
             v["core_share_checked"] = False
         v["spec"] = s_
         if s_ != spec:
@@ -180,9 +183,38 @@ def summary(cls, rot, build, per, spec=None):
         out.update(ok=True, verdict="no rule")
         return out
     out.update(ok=v["ok"], verdict=SG.verdict_text(v), core_share=round(v["core_share"] or 0.0, 4), min_share=v["min_share"],
-               required=rl["required"], core=rl["core"], missing_talents=v["missing_talents"], uncast=v["uncast"],
+               required=rl["required"], core=rl["core"], missing_talents=v["missing_talents"], uncast=v["uncast"], late=v.get("late") or [],
                casts={s: {str(L): round(SG.casts_per_kill(r, s), 2) for L, r in per.items()} for s in rl["required"]})
     return out
+
+
+def order_rule(cls, rot, build, spec=None):
+    """The leveling rule a build's order is held to in `rot`: its spec's own, or (a hybrid without one) its rotation's tree's; the first
+    whose signature talents the build holds. None when the checks are off or no rule applies."""
+    if not enabled():
+        return None
+    flat = flat_of(build)
+    spec = spec or spec_for(cls, rot, flat)
+    for s_ in rule_specs(cls, rot, spec):
+        rl = SG.rule(cls, s_, "leveling")
+        if rl and all(t in flat for t in SG.granting_talents(cls, rl["required"])):
+            return rl
+    return None
+
+
+def sig_order(cls, rot, build, spec=None):
+    """`build`'s order with its spec's signature talents at the earliest level their tree allows (signature.signature_first; user
+    decision 2026-11-06, page-audit K5): the order every leveling tool starts from (the race's finalists, the 20-60 polish, the three
+    orders of the order choice, raid_path_leveling.py, order_repair.py). The order itself when no rule applies or nothing is late."""
+    order = build.get("order") or []
+    rl = order_rule(cls, rot, build, spec) if order else None
+    return SG.signature_first(cls, rl, {"allocation": flat_of(build), "order": order}) if rl else order
+
+
+def order_ok(cls, rot, build, spec=None):
+    """True when the build's order takes no signature talent later than its tree allows (the order polish keeps only such moves)."""
+    rl = order_rule(cls, rot, build, spec)
+    return not rl or not SG.late_talents(cls, rl, {"allocation": flat_of(build), "order": build.get("order") or []})
 
 
 def SG_alloc(cls, flat):
@@ -225,8 +257,17 @@ def rules_fingerprint(cls, rot):
     return hashlib.sha1(rules.encode("utf-8")).hexdigest()[:12]
 
 
+CHECK_VERSION = 2   # 2 (2026-11-06): a signature talent taken later than its tree allows fails (signature.late_talents)
+
+
 def build_fingerprint(cls, build, rot):
+    """What a stored verdict was made for: the build, its order, the rotation and its tuned rules and, since 2026-11-06, the check
+    itself (CHECK_VERSION and the signature rules the build is held to: the Survival, Feral and Beast Mastery rules changed that day and
+    the stored verdicts of their records would have stood). A verdict with another fingerprint is measured again (fl_open_search.
+    set_signature, open_builds.leveling_sig)."""
     import hashlib
     import json
-    key = json.dumps([sorted(flat_of(build).items()), build.get("order") or [], rot, rules_fingerprint(cls, rot)], sort_keys=True)
+    rules = [SG.rule(cls, s_, "leveling") for s_ in rule_specs(cls, rot, spec_for(cls, rot, flat_of(build)))] if enabled() else []
+    key = json.dumps([sorted(flat_of(build).items()), build.get("order") or [], rot, rules_fingerprint(cls, rot), CHECK_VERSION, rules],
+                     sort_keys=True)
     return hashlib.sha1(key.encode("utf-8")).hexdigest()[:12]

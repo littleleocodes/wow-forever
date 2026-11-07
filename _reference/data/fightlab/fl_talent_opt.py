@@ -181,6 +181,7 @@ def main():
     # Frost mage's hand draft it was 0.9% slower per kill over 20-60, 2026-09-30), else the scorer's order
     same = [load(cls, s) for s, f in starts if f == cur and load(cls, s).get("order")]
     cand = {"id": f"fl-{a.tree.lower().replace(' ', '-')}-{a.spec}", "allocation": alloc, "order": same[0]["order"] if same else order_of(cls, a.model, cur)}
+    cand["order"] = FS.sig_order(cls, a.spec, cand, a.tree)   # 2026-11-06 (page-audit L3): signature talents as early as the tree allows
     incs = [load(cls, x) for x in (a.incumbent or a.start[:1])]
     res = race(pool, cls, a.spec, incs + [cand], a.confirm, 3)
     # the signature check of every raced build under the tree's rule (2026-10-22): the bar is the fastest incumbent that passes (a

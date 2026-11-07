@@ -16,8 +16,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 38/0/13 | DPS |
 | [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/4/36 | DPS |
+| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 36/0/15 | DPS |
+| [Feral Combat — Leveling (open talent search)](builds/feral-combat-open-leveling.md) 🔬 | 11/29/11 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

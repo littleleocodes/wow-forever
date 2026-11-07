@@ -103,6 +103,9 @@ def main():
         orders = {"stats model's order": scorer,
                   "own tree first": compress([p for p in pts if p[0] == tree] + [p for p in pts if p[0] != tree]),
                   "own tree last": compress([p for p in pts if p[0] != tree] + [p for p in pts if p[0] == tree])}
+        # 2026-11-06 (user decision on page-audit K5): each order takes the tree's signature talents as early as the tree allows
+        # (fl_signature.sig_order; an order that takes one later fails the check since that day)
+        orders = {k: FS.sig_order(cls, spec, {"allocation": target["allocation"], "order": o}, tree) for k, o in orders.items()}
         res = {}
         for name, order in orders.items():
             b = {"allocation": target["allocation"], "order": order}

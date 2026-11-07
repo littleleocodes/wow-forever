@@ -350,8 +350,13 @@ class MageModule(BaseModule):
     # 2026-10-25 (cast-path audit: Pyroblast was cast only on a full Heating Up, Frost Blast never): decide_fire / decide_frost
     PYRO_HARDCAST = 0        # 1: a hard-cast Pyroblast whenever its whole cast finishes before the mob is on you (0: as before)
     FROST_BLAST = 0          # 1: Frost Blast as a finisher; 2: also when a Frostbolt cannot finish before the mob arrives (0: never)
+    # 2026-11-06 (user decision on the Fire page's signature check: "teach the simulator the real opener, a hard-cast Pyroblast at the
+    # start of every pull"): decide_fire's first cast of a pull. The lab's mob runs in from the pull's first second, the convention every
+    # class's opener is cast under, so the cast ends with the mob arriving; that a mob only notices on the first hit is modelled for
+    # nobody (search-improvements.md, open). Off by default (the regression, every other rotation); the Fire rule file turns it on.
+    PYRO_OPENER = 0          # 1: a hard-cast Pyroblast as the first cast of every pull (0: as before)
     ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1],
-                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2]}
+                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -1133,6 +1138,9 @@ class MageModule(BaseModule):
         # a full Heating Up: a 1.5s Pyroblast beats everything
         hs = p.buff("Heating Up", t)
         if pyro and hs and hs["stacks"] >= 3 and can(pyro) and hp > avg(scorch) * 1.5 if scorch else False:
+            return pyro
+        # PYRO_OPENER: the pull's first cast is a hard-cast Pyroblast (nothing has resolved yet in this fight and the mob is not on me)
+        if self.PYRO_OPENER and pyro and not fight.casts and not in_melee and can(pyro):
             return pyro
         # control when the mob is on us
         if in_melee and not rooted and not m.stunned(t):

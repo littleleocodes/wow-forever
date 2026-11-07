@@ -24,6 +24,7 @@ The fight lab is this project's model of stated assumptions (fightlab/tables.py)
 """
 import argparse
 import datetime
+import hashlib
 import importlib.util
 import json
 import math
@@ -31,6 +32,7 @@ import multiprocessing
 import os
 import pathlib
 import sys
+import threading
 import time
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -87,27 +89,130 @@ def _ttk(job):
     fastest build that plays its spec. A 7th element False (the talent values) measures the plain time."""
     cls, spec, alloc, level, fights, seed = job[:6]
     sig = job[6] if len(job) > 6 else True
+    # an 8th element (2026-11-06): (the build's full allocation, its order) when `alloc` is one level of a leveling path. The check is
+    # then the build's own (its spec, a talent spell counted from the level its order takes the talent), as fl_signature.summary. Before,
+    # the level's partial allocation was judged as a build of its own: a level where the order had not reached a signature talent yet
+    # read "talent missing" (x0.45), and a hybrid's partial build was filed under whatever its points so far made it, so the 20-60
+    # polish and the order polish chased those penalties (an order move "22% faster" that the plain 20-60 race then refused).
+    path = job[7] if len(job) > 7 else None
     try:
         o = FR.simulate(cls, alloc, level, spec, fights, seed, 0)
-        f = FS.penalty(FS.check(cls, spec, alloc, level, o)) if sig else 1.0
+        f = 1.0 if not sig else FS.penalty(FS.check(cls, spec, path[0], level, o, order=path[1]) if path else FS.check(cls, spec, alloc, level, o))
         return o["time_per_kill"] / f, (o.get("fight_sd") or 0.0) / f
     except Exception as e:   # noqa: BLE001
         print(f"  error {type(e).__name__}: {e}", flush=True)
         return 1e9, 0.0
 
 
-class LabSim:
-    """ml_talents.Sim's interface on the fight lab: run(allocs, fights, seed) -> [(kills per hour, per-fight spread)]."""
+SAVE_VERSION = 1   # bump when _ttk changes what it returns for a build (the save points below keep its results)
 
-    def __init__(self, cls, spec, pool, procs):
+
+def sim_fingerprint(cls, spec):
+    """What a fight-lab result at level 60 depends on, as one hash: the engine, tables, run.py and every class module, the signature
+    rule code and file (the penalty is part of _ttk's result), the rotation's tuned rules, the class's talent and spell data, the lab's
+    mob, gear and stat tables, the gear tier and the switches. A save point made under another fingerprint is thrown away."""
+    h = hashlib.sha1()
+    files = [HERE / "engine.py", HERE / "tables.py", HERE / "run.py", HERE / "fl_signature.py", ROOT / "_reference/data/signature.py",
+             ROOT / "_reference/data/signature_spells.json", ROOT / "_reference/data/spec_modes.py", FR.rotation_file(cls, spec),
+             ROOT / "_reference/data/forever-talents" / f"{cls}.json", ROOT / "_reference/data/forever-spells" / f"{cls}.json"]
+    files += sorted(HERE / f"{m[0]}.py" for m in FR.MODULES.values())
+    files += [HERE / n for n in ("mob_stats.json", "gear_stats.json", "player_expected_stat.json", "spell_gcd.json", "spell_scaling.json")]   # not every json here: rebuild.py
+                                                                                                      # rewrites last-rebuild.json
+    for f in files:
+        h.update(f.name.encode("utf-8"))
+        h.update(f.read_bytes() if f.exists() else b"-")
+    h.update(repr((SAVE_VERSION, cls, spec, PURE, "greens", os.environ.get("WOW_FOREVER_SIGNATURE"), os.environ.get("WOW_FOREVER_UNRESTRICTED"),
+                   os.environ.get("WOW_FL_ROTATION"))).encode("utf-8"))
+    return h.hexdigest()
+
+
+class SimCache:
+    """Save points for the level-60 block of a rotation (2026-11-06, search-improvements.md 0c; user: "Go with your recs"): the family
+    polish and the search were saved only at their winner, so a pause or a reboot threw away 5 to 20 hours of fight-lab results, four
+    times between 2026-11-04 and 11-05 for Fury, Frostfire, Demonology and the one-tree Survival search. Every result of LabSim.run
+    (a build at level 60, a number of fights and a seed: exact repeats under common random numbers) is appended to
+    open/cache/<class>-<rotation>.simcache.jsonl as it is made; a restarted block makes the same draws from the same seeds, finds its
+    finished work in the file and goes on where it was stopped. The file carries sim_fingerprint (code, data, rules) in its first line
+    and is deleted when the block's winner is in the record. WOW_FL_SAVEPOINT=0 switches it off."""
+
+    def __init__(self, path, fingerprint, log_):
+        self.path, self.lock, self.data, self.hits, self.new = path, threading.Lock(), {}, 0, 0
+        head = json.dumps({"fingerprint": fingerprint})
+        text = path.read_text(encoding="utf-8") if path.exists() else ""
+        lines = text.split("\n")
+        if lines and lines[0] == head:
+            for ln in lines[1:]:
+                try:
+                    k, t, sd = json.loads(ln)
+                    self.data[k] = (t, sd)
+                except (ValueError, TypeError):   # an empty line, or the line a stop cut off
+                    continue
+            log_(f"    save point: {len(self.data)} fight-lab results of an interrupted run are reused ({path.name})")
+            self.f = open(path, "a", encoding="utf-8")
+            if text and not text.endswith("\n"):
+                self.f.write("\n")
+        else:
+            if text:
+                log_(f"    save point: {path.name} was made on other code, data or rules: discarded")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            self.f = open(path, "w", encoding="utf-8")
+            self.f.write(head + "\n")
+        self.f.flush()
+
+    @staticmethod
+    def key(alloc, iterations, seed):
+        return hashlib.sha1(json.dumps([sorted((n, r) for n, r in alloc.items() if r), iterations, seed]).encode("utf-8")).hexdigest()
+
+    def get(self, k):
+        with self.lock:
+            v = self.data.get(k)
+            if v is not None:
+                self.hits += 1
+            return v
+
+    def put(self, items):
+        with self.lock:
+            for k, v in items:
+                self.data[k] = v
+                self.f.write(json.dumps([k, v[0], v[1]]) + "\n")
+            self.f.flush()
+            self.new += len(items)
+
+    def close(self, remove=False):
+        with self.lock:
+            self.f.close()
+            if remove and self.path.exists():
+                self.path.unlink()
+
+
+def save_point(cls, spec):
+    return CACHE / (f"{cls}-{spec}-{SM.slug(PURE)}.simcache.jsonl" if PURE else f"{cls}-{spec}.simcache.jsonl")
+
+
+class LabSim:
+    """ml_talents.Sim's interface on the fight lab: run(allocs, fights, seed) -> [(kills per hour, per-fight spread)]. With `cache` (a
+    SimCache) a result made before, in this run or the one a stop interrupted, is read back instead of simulated."""
+
+    def __init__(self, cls, spec, pool, procs, cache=None):
         self.cls, self.spec, self.pool, self.procs = cls, spec, pool, procs
         self.setting = "leveling"
         self.n = 0
         self.fights = 0
+        self.cache = cache
 
     def run(self, allocs, iterations, seed):
-        jobs = [(self.cls, self.spec, al, 60, iterations, seed) for al in allocs]
-        res = self.pool.map(_ttk, jobs, chunksize=max(1, len(jobs) // (self.procs * 4)))
+        res, todo, keys = [None] * len(allocs), list(range(len(allocs))), []
+        if self.cache is not None:
+            keys = [self.cache.key(al, iterations, seed) for al in allocs]
+            res = [self.cache.get(k) for k in keys]
+            todo = [i for i, v in enumerate(res) if v is None]
+        if todo:
+            jobs = [(self.cls, self.spec, allocs[i], 60, iterations, seed) for i in todo]
+            out = self.pool.map(_ttk, jobs, chunksize=max(1, len(jobs) // (self.procs * 4)))
+            for i, o in zip(todo, out):
+                res[i] = (o[0], o[1])
+            if self.cache is not None:   # a build the lab could not run (1e9) is tried again next time
+                self.cache.put([(keys[i], res[i]) for i in todo if res[i][0] < 1e8])
         self.n += len(allocs)
         self.fights += len(allocs) * iterations
         return [(3600.0 / t, 3600.0 * sd / t ** 2) if t < 1e8 else (0.0, 0.0) for t, sd in res]
@@ -202,6 +307,7 @@ def main():
     st = json.load(open(rp, encoding="utf-8")) if rp.exists() and not a.fresh else {"class": cls, "date": TODAY, "rotations": {}, **({"tree": PURE} if PURE else {})}
     warm = [FT.flat_of(r["winner"]) for r in json.load(open(prev, encoding="utf-8")).get("rotations", {}).values()
             if r.get("winner")] if prev.exists() else []
+    prev_rots = json.load(open(prev, encoding="utf-8")).get("rotations", {}) if prev.exists() else {}   # the 20-60 race's "previous" finalist
 
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -230,9 +336,12 @@ def main():
                 base_ok = space.allowed
                 space.allowed = lambda flat, _b=base_ok, _r=spec: _b(flat) and FS.spec_for(cls, _r, flat) == PURE
             rstarts = [x for x in starts if space.valid(x)]
+            keep = os.environ.get("WOW_FL_SAVEPOINT", "0" if SMOKE else "1") == "1"   # the save points of the level-60 block (SimCache)
+            if "winner" in r and save_point(cls, spec).exists():   # a stop between the winner's save and the cleanup
+                save_point(cls, spec).unlink()
             if "winner" not in r:
                 import random
-                sim = LabSim(cls, spec, pool, a.jobs)
+                sim = LabSim(cls, spec, pool, a.jobs, SimCache(save_point(cls, spec), sim_fingerprint(cls, spec), log) if keep else None)
                 log(f"== {cls} {spec}: family polish over every pair of {len(space.keystones())} keystones from different trees")
                 fam = MLT.family_polish(space, sim, random.Random(83), log, **POLISH)
                 if not SMOKE:   # the polished families, for the class's other rotations (their search starts) and re-runs
@@ -249,11 +358,18 @@ def main():
                 r.update({"winner": rec["winner"], "runs_agree": rec["runs_agree"], "simulated_builds": rec["simulated_builds"],
                           "important_features": rec.get("important_features"), "finalists": rec.get("finalists") or []})
                 save()
+                if sim.cache is not None:   # the winner is in the record: the block's save point has done its work
+                    if sim.cache.hits:
+                        log(f"    save point: {sim.cache.hits} results read back, {sim.cache.new} simulated")
+                    sim.cache.close(remove=os.environ.get("WOW_FL_SAVEPOINT_KEEP") != "1")   # (kept only for a test of the replay)
+            def sig(b, order):   # 2026-11-06 (page-audit K5): every order made here takes the spec's signature talents as early as
+                return FS.sig_order(cls, spec, {"allocation": b["allocation"], "order": order})   # their tree allows (fl_signature.sig_order)
+
             ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees}
             for bid, b in list(ours.items()):   # 2026-10-06 audit: a leveling build without an order (the mage's Fire ones) was left out of the
                 if not b.get("order"):          # race, so a winner raced against nothing; it gets the stats model's order instead
                     try:
-                        ours[bid] = dict(b, order=FT.order_of(cls, model, FT.flat_of(b)))
+                        ours[bid] = dict(b, order=sig(b, FT.order_of(cls, model, FT.flat_of(b))))
                     except Exception as ex:   # noqa: BLE001
                         log(f"  {bid}: no order and none could be made ({type(ex).__name__}: {ex}); left out of the race")
                         ours.pop(bid)
@@ -269,20 +385,48 @@ def main():
                     k = tuple(sorted(FT.flat_of(f).items()))
                     if k not in seen and space.valid(FT.flat_of(f)):   # 2026-10-26 audit: a known positive outside the space (the
                         seen.add(k)                                   # one-tree Survival search took the 17/10/24 hybrid) never races
-                        cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
+                        cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"],
+                                      "order": sig(f, FT.order_of(cls, model, FT.flat_of(f)))})
+                # 2026-11-06 (search-improvements.md 0e; the lead of 2026-10-28): two more eligible picks, each with the order it carries.
+                # The previous record's winner of this rotation (<record>.prev.json, which --fresh writes) and our raced builds of the
+                # rotation's specs. The fresh warlock Affliction search of 2026-11-04 ended on 38/11/2 at 36.78 s while
+                # affliction-open-leveling, the winner it replaced, ran 36.20 s in the same race with its polished order, and
+                # open_builds.py would have rewritten that build from the slower record. Not with --no-known (a clean test).
+                kept = set()   # candidate ids that carry an order of their own
+                pr = {} if a.no_known else (prev_rots.get(spec) or {})
+                if pr.get("winner") and pr.get("order"):
+                    k = tuple(sorted(FT.flat_of(pr["winner"]).items()))
+                    # its order must still be a legal path to that build (a tree update can move a talent's row), and it takes the
+                    # signature talents as early as the tree allows like every other order here
+                    if k not in seen and space.valid(FT.flat_of(pr["winner"])) and FS.SG.legal_points(cls, FS.SG.order_points(pr["order"])) \
+                            and FS.SG.order_alloc(pr["order"]) == FT.flat_of(pr["winner"]):
+                        seen.add(k)
+                        cands.append({"id": f"finalist {space.split(FT.flat_of(pr['winner']))} (the previous record's winner)",
+                                      "allocation": pr["winner"]["allocation"], "order": sig(pr["winner"], pr["order"])})
+                        kept.add(cands[-1]["id"])
                 builds = cands + list(ours.values())
                 res = FT.race(pool, cls, spec, builds, RACE_FIGHTS, 3)
                 table = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
+                mine = [] if a.no_known else [i for i in range(len(cands), len(builds)) if builds[i].get("order") and space.valid(FT.flat_of(builds[i]))]
                 # the pick among the finalists that play their spec's signature spells at levels 20-60 (2026-10-22); all of them when none does
-                qual = FS.qualifying(pool, cls, spec, cands)
+                qual = FS.qualifying(pool, cls, spec, cands + [builds[i] for i in mine])
                 for c_, (ok_, sm_) in zip(cands, qual):
                     if sm_ is not None:
                         table[c_["id"]]["signature"] = sm_.get("verdict")
-                elig = [i for i, (ok_, _) in enumerate(qual) if ok_] or list(range(len(cands)))
+                idx = list(range(len(cands))) + mine
+                elig = [idx[j] for j, (ok_, _) in enumerate(qual) if ok_] or list(range(len(cands)))
                 best = min(elig, key=lambda i: res[i][0])
-                r["winner"] = {"allocation": cands[best]["allocation"], "split": space.split(FT.flat_of(cands[best])), "picked_by": "the 20-60 race among the finalists"}
-                r["order"] = cands[best]["order"]
-                table["open winner"] = table.pop(cands[best]["id"])
+                pick = builds[best]
+                own_id = pick["id"] if best >= len(cands) else None
+                how = (f" (our build {own_id}, with its own order)" if own_id
+                       else " (the previous record's winner, with its own order)" if pick["id"] in kept else "")
+                r["winner"] = {"allocation": pick["allocation"], "split": space.split(FT.flat_of(pick)), "picked_by": "the 20-60 race among the finalists" + how}
+                r["order"] = pick["order"]
+                if how:   # it carries an order of its own: the stats model's is computed here for the order choice (fl_levels.pick_order)
+                    r["order_label"] = "previous"
+                    r["order_stats"], r["order_stats_split"] = FT.order_of(cls, model, FT.flat_of(pick)), r["winner"]["split"]
+                    log(f"  {cls} {spec}: the 20-60 race's pick is {r['winner']['split']}{how}")
+                table["open winner"] = dict(table[pick["id"]]) if own_id else table.pop(pick["id"])
                 r["race"] = table
                 save()
             if "level_polish" not in r and not SMOKE:

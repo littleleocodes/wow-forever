@@ -1,17 +1,17 @@
-# Enhancement — Raid (open talent search) — 17/31/3
+# Enhancement — Raid (open talent search) — 17/32/2
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 17/31/3 (Elemental / Enhancement / Restoration) |
+| **Build** | 17/32/2 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Enhancement raid build the open talent search found on 2026-11-02: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over enhancement-ml-raid, the best of our builds in that rotation.
+The Enhancement raid build the open talent search found on 2026-11-07: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -19,19 +19,20 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Convection** | 1/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 2%. |
 | **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
 | **Elemental Devastation** | 3/3 | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
-| **Reverberation** | 3/5 | changed | Reduces the cooldown of your Shock spells by 0.6 sec. |
+| **Reverberation** | 2/5 | changed | Reduces the cooldown of your Shock spells by 0.4 sec. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Trial by Fire** | 2/2 | **NEW** | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec. |
 
-### Enhancement (31)
+### Enhancement (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
-| **Ancestral Knowledge** | 3/5 | changed | Increases your Intellect by 6%. |
+| **Ancestral Knowledge** | 4/5 | changed | Increases your Intellect by 8%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 150% of your Intellect. |
 | **Elemental Weapons** | 3/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
@@ -42,35 +43,35 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
 | **Maelstrom Weapon** | 5/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 | **Rage of the Farseer** | 1/1 | **NEW** | Increases your attack speed by 30% for 25 sec. |
 
-### Restoration (3)
+### Restoration (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Tidal Focus** | 3/5 | changed | Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%. |
+| **Tidal Focus** | 2/5 | changed | Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%. |
 
 ## Core talents (priority order)
 
-1. **Maelstrom Weapon** — 292 DPS lost without it (40% of the build in a full raid; removal, 12,000 fights).
-2. **Stormstrike** — 153 DPS lost without it (21% of the build in a full raid; removal, 12,000 fights).
-3. **Flurry** — 61 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
-4. **Shamanistic Focus** — 53 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
-5. **Mental Dexterity** — 42 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
-6. **Thundering Strikes** — 34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-7. **Call of Flame** — 31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-8. **Improved Stormstrike** — 30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+1. **Stormstrike** — 290 DPS lost without it (29% of the build in a full raid; removal, 12,000 fights).
+2. **Maelstrom Weapon** — 98 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights).
+3. **Mental Dexterity** — 90 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+4. **Flurry** — 85 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+5. **Shamanistic Focus** — 52 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+6. **Thundering Strikes** — 44 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+7. **Call of Flame** — 38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+8. **Trial by Fire** — 32 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/31/3 | 555 | +0.0% | 969 | +0.0% | 17 s |
-| 2 | *Standard* | community simulator | - | 555 | +0.0% | 969 | +0.0% | 17 s |
-| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 540 | -2.7% | 938 | -3.1% | 10 s |
-| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 525 | -5.4% | 889 | -8.2% | 24 s |
-| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 514 | -7.4% | 904 | -6.7% | 26 s |
-| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 514 | -7.4% | 893 | -7.8% | 20 s |
+| 1 | **[`enhancement-open-raid`](enhancement-open-raid.md)** | ours: derived (open search) | 17/32/2 | 578 | +0.0% | 997 | +0.0% | 9 s |
+| 2 | *Standard* | community simulator | - | 577 | -0.1% | 996 | -0.1% | 11 s |
+| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 562 | -2.8% | 963 | -3.4% | 5 s |
+| 4 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 549 | -5.1% | 915 | -8.3% | 17 s |
+| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 538 | -6.8% | 930 | -6.8% | 19 s |
+| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 538 | -6.9% | 917 | -8.0% | 13 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -80,7 +81,7 @@ The Enhancement raid build the open talent search found on 2026-11-02: every leg
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-04, 13 changes to the base rotation; third-seed check: enhancement-open-raid 893 -> 968 DPS (+8.4%), enhancement-raid-dps 846 -> 904 DPS (+6.8%), opt-enhancement-dps-raid-dps 825 -> 890 DPS (+7.9%), enhancement-ml-raid 862 -> 938 DPS (+8.9%), elemental-enhancement-ml-raid 821 -> 894 DPS (+8.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-11-07, 13 changes to the base rotation; third-seed check: enhancement-open-raid 918 -> 994 DPS (+8.3%), enhancement-raid-dps 869 -> 931 DPS (+7.1%), opt-enhancement-dps-raid-dps 847 -> 915 DPS (+8.0%), enhancement-ml-raid 886 -> 964 DPS (+8.8%), elemental-enhancement-ml-raid 844 -> 918 DPS (+8.8%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -102,11 +103,11 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 9.8 |
+| 4 | cast Stormstrike | 9.9 |
 | 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 8.2 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.5 |
-| 8 | cast Earth Shock | 5.9 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 2.7 |
+| 8 | cast Earth Shock | 6.5 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
@@ -114,7 +115,7 @@ Damage by ability:
 | Ability | [`enhancement-open-raid`](enhancement-open-raid.md) |
 |---|---|
 | Auto Attack | 34% |
-| Lightning Bolt | 21% |
+| Lightning Bolt | 20% |
 | Stormstrike | 15% |
 | Earth Shock | 15% |
 | Flame Shock | 11% |
@@ -122,11 +123,10 @@ Damage by ability:
 
 ## Notes
 
-- +9.9% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (enhancement-dps, full raid): 17/31/3 (Enhancement) at 733.5 DPS; enhancement-ml-raid 722.4, opt-enhancement-dps-raid-dps 670.8, enhancement-raid-dps 667.7, elemental-enhancement-ml-raid 437.2 in the same fights; 2,330 builds simulated, 1 independent runs reached the top.
-- The enhancement-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): elemental-dps -54.4%, stormcaller-dps -55.0%; none adopted.
-- Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.
+- +7.1% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (enhancement-dps, full raid): 17/32/2 (Enhancement) at 996.5 DPS; enhancement-ml-raid 964.1, enhancement-raid-dps 930.1, elemental-enhancement-ml-raid 918.6, opt-enhancement-dps-raid-dps 915.3 in the same fights; 4,542 builds simulated, 2 independent runs reached the top.
+- Sibling rotations tried on it (10,000 fights): elemental-dps -58.1%, stormcaller-dps -57.1%; none adopted.
+- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
@@ -135,7 +135,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/shaman/60/053303102-053030031005102251-03-12>
+- <https://talentsforever.com/shaman/60/153203102-054030310051002251-02-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

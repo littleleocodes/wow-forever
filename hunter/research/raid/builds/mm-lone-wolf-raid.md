@@ -80,7 +80,7 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 | 4 | *SV* | community simulator | - | 411 | -11.1% | 825 | -16.8% | 47 s |
 | 5 | *SV Weave* | community simulator | - | 407 | -12.0% | 817 | -17.6% | 47 s |
 | 6 | *MM Weave* | community simulator | - | 393 | -15.0% | 828 | -16.4% | 54 s |
-| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 388 | -16.0% | 814 | -17.9% | 48 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 11/35/5 | 361 | -22.0% | 758 | -23.6% | 66 s |
 | 8 | *BM Weave* | community simulator | - | 298 | -35.4% | 631 | -36.4% | 36 s |
 | 9 | *BM* | community simulator | - | 288 | -37.7% | 641 | -35.3% | 42 s |
 | 10 | *SV Melee* | community simulator | - | 261 | -43.6% | 595 | -40.0% | 54 s |

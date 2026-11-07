@@ -221,6 +221,20 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `heallab/rotation_opt.py` tunes the heal-choice settings of `heallab/tables.py` (downranking, HoT refresh, emergency and raid-heal
   thresholds, group-heal count, potion timing) on capacity; `heallab/rotations/<class>-<spec>.json`, applied by
   `tables.apply_rotation` in run.py and calibrate.py (`WOW_HL_ROTATION=default` for the defaults; `--set` still overrides).
+- **Leveling queue lessons of 2026-11-06** (self-audit of the 2026-11-02 patch queue; `_reference/search-improvements.md` 0e,
+  `_reference/page-audit.md` K). `rotation_opt.py <class> --fresh --write` tunes a class pipeline's rotations only: after a mechanics
+  change every other leveling rotation with a file under `fightlab/rotations/` (and the two `prot-leveling` ones without) needs
+  `fightlab/rules_retune.py <class> <rotation> <build>` (rotation_opt's search from scratch and continued from the saved file; the
+  fastest set is installed only when it beats the saved rules by 0.3% on the final check). Eight files had predated their class's patch
+  port: warlock Destruction ran 9% slower under the old file, rogue Subtlety 0.7% (2.3% at level 60). Never change a rule file while
+  its rotation's search runs. `fl_open_search.py`'s 20-60 race also takes the previous record's winner (`<record>.prev.json`) and our
+  raced builds as eligible picks, each with the order it carries: a fresh Affliction search had ended 1.6% below the build it replaced,
+  and `open_builds.py` would have rewritten that build from the slower record. `deep-runs/refresh_keys.py <record> <rotation>` and a
+  plain `fl_open_search.py <class> --rotation <rotation>` run redo a rotation from that race on (after a rules change, or to re-date a
+  class a patch did not touch: the priest's pages showed no leveling numbers because its records predated the capture date). A queue's
+  class lists cover all nine classes or say why not. `order_repair.py` gives a solo build whose order a repair dropped the stats
+  model's leveling order (a leveling page's pick needs a talent table). No backup copy of a record may sit in `fightlab/open/` or
+  `open/pure/`: `open_builds.py`, `render_modes.py` and the summary page read every file there.
 - **Leveling guides by level** (2026-11-06, user request: "Can you make a leveling guide for each class? What the rotation should be
   throughout the leveling process as more spells are unlocked? Starting with Mage and Paladin"): `_reference/data/level_guides.py`
   writes `<class>/leveling/<spec slug>-by-level.md` from the hand-kept `_reference/data/level-guides/<class>.json` (per guide: `spec`,
@@ -238,9 +252,33 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   changes; the page gets a "Keybinds by level" table (keys by stages) and each stage a "Keys to set" line, and `--check` fails a bind
   whose spell is not known at its level and warns when a stage presses a spell no key holds. The scheme is the user's own
   (`<class>/leveling/keybinds.md`, hand-written: setup, the layout at 60, macros; the one file `render_modes.py`'s cleanup of that folder leaves): Q the most-pressed attack, E the control,
-  R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest. Keys hold fight spells and helpful things only, never buffs, food, drink, conjuring, the mount or the Hearthstone. No key holds Attack (user, 2026-11-07): a melee class's opening key is a macro with a `/startattack` line and the middle mouse button is free; casters keep the wand there. Keep the
+  R the payoff after it, F the escape, the two thumb buttons the reactions, 1-4 the rest. Mage and paladin
+  have one. **Every class gets all three when its leveling results are in** (user, 2026-11-06: "Make sure were making these same
+  pages for every class that finishes"): the by-level guide, its `keys` block and the keybinds page; keys hold fight spells and helpful
+  things only, never buffs, food, drink, conjuring, the mount or the Hearthstone (user, the same day). No key holds Attack (user, 2026-11-07): a melee class's opening key is a macro with a `/startattack` line and the middle mouse button is free; casters keep the wand there. Keep the
   "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
-  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling); owed: warlock.
+  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling); owed: warlock. `level_guides.pick` loads `fightlab/signature_audit.py` by its path (`raidsim/` has a module of the same name and render_modes puts it first on sys.path).
+- **Decisions of 2026-11-06** (user: "Go with your recs for the changes and fixes"; `_reference/page-audit.md` L,
+  `_reference/search-improvements.md` 0f). **A spec takes its signature talent as early as its tree allows**: `signature.late_talents`
+  fails a leveling order that takes one later (Mutilate 40, Pyroblast 20, Hemorrhage 30 and Death Mark 40), and every tool that makes
+  an order starts from `fl_signature.sig_order` (the race's finalists, the 20-60 polish, the order choice and polish, the certificate,
+  `raid_path_leveling.py`, `order_repair.py`); a hand draft or export with a late talent is repaired by `order_repair.py`, an open
+  build by redoing its record from the race on. A path's level is judged as the build's own (`fl_open_search._ttk`'s 8th job element),
+  never as a build of its own. A stored signature verdict is valid for one check version and rule set (`fl_signature.build_fingerprint`),
+  and `open_builds.py --write` measures the class's signature audit before it sets the bar. Rule changes: Survival's leveling core
+  counts the pet, Feral's counts Ravage and Pounce, Beast Mastery's leveling floor is 30%; in the cat rotation a build with a majority
+  of its points in Feral Combat is a Feral Combat build (`spec_modes.LEVELING_FILE_AS`); a hybrid's leveling slot holding only
+  optimizer exports is no page (`spec_modes.grid`). Fire opens every pull with a hard-cast Pyroblast (`mage.PYRO_OPENER`, a rule
+  knob; the mob still runs in from the pull's first second, the lab's convention for every class), and `rules_retune.py` installs a
+  rule set that plays the required spells over a faster one that does not. **Save points**: `fl_open_search.SimCache` keeps every
+  fight-lab result of a rotation's level-60 block in `open/cache/<class>-<rotation>.simcache.jsonl` until the winner is saved, so a
+  stopped search replays its finished work (the file is void after any change to the engine, a class module, the rules or the data).
+  **Gear**: `raidsim/gear_check.py [classes] [--pool]` lists, without a simulator run, the sets that hold items the database lacks
+  (run it after every re-pin, next to `spec_check.py`); a bench run that reports `missing_gear` is fatal (`run.check_bench_stderr`;
+  `WOW_FOREVER_ALLOW_MISSING_GEAR=1` to measure an old set); `gear_opt.LATER_FACTIONS` keeps later phases' reputation rewards out
+  (the Signet Ring of the Bronze Dragonflight). A raid lane starts with its class's gear repair
+  (`deep-runs/gear_repair_1103.sh`). Never write a regex replacement with a backslash through a shell heredoc: `fl_levels.py`
+  carried a control byte in place of a group reference for three weeks.
 - **Page audit** (2026-11-07, user: "constantly be auditing the GitHub pages for the classes ... make sure that any talent tree calculator links are up to date with
   the builds"): `page_lint.py [classes] [--pushed] [--live] [--write]` -> `_reference/page-lint.md` reads the pages as a player does: relative links, talentsforever.com links
   (version label, legal build, the build the same line names), guide against spec page, keybinds page against the guide's keys, macro spells, bold names that are no spell

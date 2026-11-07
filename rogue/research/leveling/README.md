@@ -18,9 +18,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Combat — Leveling (generated)](builds/combat-leveling.md) ⚗ | 21/30/0 | DPS |
 | [Subtlety — Leveling (derived)](builds/subtlety-leveling.md) 🔬 | 5/16/30 | DPS |
-| [Assassination — Leveling (open talent search)](builds/assassination-open-leveling.md) 🔬 | 31/20/0 | DPS |
 | [Combat — Leveling (open talent search)](builds/combat-open-leveling.md) 🔬 | 21/30/0 | DPS |
 | [Combat-Subtlety — Leveling (open talent search)](builds/combat-subtlety-open-leveling.md) 🔬 | 5/25/21 | DPS |
+| [Assassination — Leveling (open talent search)](builds/assassination-open-leveling.md) 🔬 | 31/20/0 | DPS |
 | [Subtlety — Leveling (open talent search)](builds/subtlety-open-leveling.md) 🔬 | 0/20/31 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):

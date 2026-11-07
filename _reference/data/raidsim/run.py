@@ -51,6 +51,14 @@ def check_bench_stderr(r, what):
     bad = [l for l in r.stderr.splitlines() if l.startswith("spec: the simulator ignores")]
     if bad:
         raise SystemExit(f"{what}: {bad[0]} (fix the entry's spec fragment in specs.json; raidsim/spec_check.py lists every such field)")
+    # 2026-11-06 (page-audit J3, user: "Go with your recs"): a run that lost gear is fatal too. The bench empties the slot of an item
+    # the database lacks and says so in its result row ("missing_gear"); nothing read it, and after the 2026-10-30 database update
+    # all 14 standard sets ran with one or two empty slots for a week. raidsim/gear_check.py lists such sets without a simulator run;
+    # WOW_FOREVER_ALLOW_MISSING_GEAR=1 lets a run through (to measure what an old set was worth).
+    if '"missing_gear"' in (r.stdout or "") and os.environ.get("WOW_FOREVER_ALLOW_MISSING_GEAR") != "1":
+        row = next((json.loads(l) for l in r.stdout.splitlines() if l.startswith("{") and '"missing_gear"' in l), {})
+        raise SystemExit(f"{what}: the gear set lists items or enchants the simulator's database lacks ({', '.join(row.get('missing_gear') or [])}"
+                         f"; build {row.get('label')}): re-make the set (gear_opt.py / gear_tiers.py; raidsim/gear_check.py lists them)")
 
 
 def repo_path(a):

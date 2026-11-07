@@ -22,6 +22,8 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Beast-Marks — Leveling (open talent search)](builds/beast-marks-open-leveling.md) 🔬 | 28/19/4 | DPS |
 | [Marksmanship — Leveling (open talent search)](builds/marksmanship-open-leveling.md) 🔬 | 21/30/0 | DPS |
 | [Beast-Survival — Leveling (open talent search)](builds/beast-survival-open-leveling.md) 🔬 | 22/5/24 | DPS |
+| [Beast Mastery — Leveling (open talent search)](builds/beast-mastery-open-leveling.md) 🔬 | 31/16/4 | DPS |
+| [Survival — Leveling (open talent search)](builds/survival-open-leveling.md) 🔬 | 5/16/30 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -9,10 +9,12 @@
 # Runs on the fourth checkout ~/.wow-forever-tools/wowsims-forever-x at 7c3453f5a (2026-11-04 master, patched bench by repin_rehearsal.py),
 # shared with the hunter lane (bench configs are named per class and spec, so the two do not collide).
 # Resume: the same command (markers deep-runs/r1103/sha-*; family_search resumes from its record without --fresh).
+# 2026-11-07 (user: "Go with your recs"): re-pinned to ~/.wow-forever-tools/wowsims-forever-y at 16e85426c (upstream master, classes, racials and
+# items on 1.60.1.70790 up to hotfix push 113715), like every raid lane. The header above says what this lane was written for.
 cd F:/wow-forever || exit 1
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
-export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-x"
+export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"
 L=_reference/data/deep-runs
 M=$L/r1103
 mkdir -p $M
@@ -31,9 +33,12 @@ run() {
 }
 fresh() { if [ -e "$M/$1.started" ]; then echo ""; else touch "$M/$1.started"; echo "--fresh"; fi; }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "7c3453f5a" ] || { say "raid: shaman STOP, the fourth checkout is not at 7c3453f5a"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "16e85426c" ] || { say "raid: shaman STOP, the fourth checkout is not at 7c3453f5a"; exit 1; }
+# 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers, so it
+# runs again in the new sets (gear_repair_1103.sh; once per class, marker r1103/gear-shaman)
+bash $L/gear_repair_1103.sh shaman "sha-*" || { say "raid: shaman STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 
-say "raid: shaman start (7c3453f5a in wowsims-forever-x)"
+say "raid: shaman start (16e85426c in wowsims-forever-y)"
 for e in $E; do run sha-race-$e $LG race shaman $e; done
 for e in $E; do
   run sha-apl-$e $LG python -u $R/apl_opt.py shaman --spec $e --write --setting raid --rounds 8 --lookahead 0

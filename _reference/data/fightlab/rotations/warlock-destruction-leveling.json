@@ -1,21 +1,28 @@
 {
  "veto": {
-  "Searing Pain": {
-   "off": true
-  },
-  "Shadow Bolt": {
-   "min_hp": 0.2
-  },
   "Fear": {
-   "min_mana": 0.5
+   "off": true
   },
   "Drain Life": {
    "off": true
+  },
+  "Searing Pain": {
+   "off": true
+  },
+  "Incinerate": {
+   "off": true
+  },
+  "Shadow Bolt": {
+   "min_hp": 0.35
+  },
+  "Conflagrate": {
+   "min_hp": 0.2
   }
  },
+ "eat_below": 0.4,
  "class": "warlock",
  "spec": "destruction-leveling",
- "build": "destruction-leveling",
+ "build": "destruction-open-leveling",
  "levels": [
   20,
   30,
@@ -23,98 +30,142 @@
   50,
   60
  ],
- "date": "2026-10-24",
+ "date": "2026-11-07",
  "signature": {
   "required": [
    "Shadow Bolt"
   ],
   "build_spec": "Destruction",
   "dropped_saved_rules": [],
-  "core_share_before": 0.6818988400951871,
-  "core_share_after": 0.6212520740294775,
+  "core_share_before": 0.7878167098192868,
+  "core_share_after": 0.6521262980587363,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Searing Pain",
+   "change": "never cast Fear",
    "rule": [
     "off",
-    "Searing Pain",
+    "Fear",
     true
    ],
-   "gain_seed1": 0.03565196048310426,
-   "gain_seed2": 0.03078050014170053
+   "gain_seed1": 0.05397750870103024,
+   "gain_seed2": 0.04970017290680062
   },
   {
    "round": 2,
-   "change": "Shadow Bolt only while the mob has more than 20% health",
-   "rule": [
-    "min_hp",
-    "Shadow Bolt",
-    0.2
-   ],
-   "gain_seed1": 0.0341972779337818,
-   "gain_seed2": 0.037343898608604875
-  },
-  {
-   "round": 3,
-   "change": "Fear only above 50% mana",
-   "rule": [
-    "min_mana",
-    "Fear",
-    0.5
-   ],
-   "gain_seed1": 0.020703333566558624,
-   "gain_seed2": 0.019227449814563258
-  },
-  {
-   "round": 4,
    "change": "never cast Drain Life",
    "rule": [
     "off",
     "Drain Life",
     true
    ],
-   "gain_seed1": 0.022601014412492626,
-   "gain_seed2": 0.022845038108922355
+   "gain_seed1": 0.03219804146867988,
+   "gain_seed2": 0.031847766165097546
+  },
+  {
+   "round": 3,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.017363249380361045,
+   "gain_seed2": 0.013679821630779077
+  },
+  {
+   "round": 4,
+   "change": "never cast Searing Pain",
+   "rule": [
+    "off",
+    "Searing Pain",
+    true
+   ],
+   "gain_seed1": 0.013708643957920374,
+   "gain_seed2": 0.012318658775344438
+  },
+  {
+   "round": 5,
+   "change": "never cast Incinerate",
+   "rule": [
+    "off",
+    "Incinerate",
+    true
+   ],
+   "gain_seed1": 0.0318449148115314,
+   "gain_seed2": 0.03111689474318735
+  },
+  {
+   "round": 6,
+   "change": "Shadow Bolt only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Shadow Bolt",
+    0.35
+   ],
+   "gain_seed1": 0.030622401227526685,
+   "gain_seed2": 0.03407222536860255
+  },
+  {
+   "round": 7,
+   "change": "Conflagrate only while the mob has more than 20% health",
+   "rule": [
+    "min_hp",
+    "Conflagrate",
+    0.2
+   ],
+   "gain_seed1": 0.004401444337169824,
+   "gain_seed2": 0.004369321882933264
   }
  ],
- "weighted_before": 56.787563530494914,
- "weighted_after": 50.82351382454358,
+ "weighted_before": 49.465945087610486,
+ "weighted_after": 41.32436747807699,
  "per_level": {
   "20": {
-   "before": 36.82956033897791,
-   "after": 34.32619969065549,
+   "before": 34.78340086366475,
+   "after": 31.116362517824644,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 51.591885741029,
-   "after": 47.54896522797266,
+   "before": 47.44250381180917,
+   "after": 42.55001886441367,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 62.69074047065307,
-   "after": 55.98081768108852,
+   "before": 56.30567333951168,
+   "after": 43.621017563458224,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 57.90350532454166,
-   "after": 52.83320660947871,
+   "before": 51.69541920395615,
+   "after": 42.80511774271587,
    "deaths_before": 0.0,
    "deaths_after": 0.03333333333333333
   },
   "60": {
-   "before": 61.172667367255826,
-   "after": 52.84694627564917,
+   "before": 48.95413320193754,
+   "after": 41.349151494206204,
    "deaths_before": 0.0,
-   "deaths_after": 0.03333333333333333
+   "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 41.478,
+   "from scratch": 41.324,
+   "continued": 41.324
+  },
+  "installed": "from scratch",
+  "reference_ok": true
  }
 }

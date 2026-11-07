@@ -52,6 +52,39 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ao
 | **Winter's Chill** | 3/5 | changed | Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a 60% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by 20% and it gains an additional 7% of your spell damage, stacking up to 5 times. |
 | **Ice Barrier** | 1/1 | changed | Shield yourself, absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your Frost damage is increased by an additional 5% and you do not lose casting time when you take damage. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-11 | Frost | Frost Warding | 2 | 0/0/2 |
+| 12-13 | Frost | Precision | 2 | 0/0/4 |
+| 14 | Frost | Improved Frostbolt | 1 | 0/0/5 |
+| 15-16 | Frost | Improved Frost Nova | 2 | 0/0/7 |
+| 17-19 | Frost | Permafrost | 3 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-23 | Frost | Improved Blizzard | 3 | 0/0/14 |
+| 24 | Frost | Frost Channeling | 1 | 0/0/15 |
+| 25 | Frost | Ice Block | 1 | 0/0/16 |
+| 26 | Frost | Arctic Reach | 1 | 0/0/17 |
+| 27-29 | Frost | Shatter | 3 | 0/0/20 |
+| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
+| 32 | Frost | Arctic Reach | 1 | 0/0/23 |
+| 33-35 | Frost | Improved Cone of Cold | 3 | 0/0/26 |
+| 36-38 | Frost | Ice Shards | 3 | 0/0/29 |
+| 39 | Frost | Cold Snap | 1 | 0/0/30 |
+| 40 | Frost | Ice Barrier | 1 | 0/0/31 |
+| 41-42 | Frost | Ice Shards | 2 | 0/0/33 |
+| 43 | Frost | Winter's Chill | 1 | 0/0/34 |
+| 44-45 | Arcane | Arcane Resilience | 2 | 2/0/34 |
+| 46 | Arcane | Improved Channeling | 1 | 3/0/34 |
+| 47-48 | Arcane | Wand Specialization | 2 | 5/0/34 |
+| 49-50 | Arcane | Missile Barrage | 2 | 7/0/34 |
+| 51-52 | Frost | Winter's Chill | 2 | 7/0/36 |
+| 53 | Frost | Frost Channeling | 1 | 7/0/37 |
+| 54-56 | Fire | Incineration | 3 | 7/3/37 |
+| 57 | Frost | Frost Channeling | 1 | 7/3/38 |
+| 58-60 | Frost | Improved Frostbolt | 3 | 7/3/41 |
+
 ## Core talents (priority order)
 
 1. **Improved Blizzard** — Removing it costs 8.2 points of score in this model.
@@ -86,6 +119,7 @@ What this build casts per kill ([report](../fightlab/frost-aoe.md), all leveling
 - Allocation and order taken from cand-aoe-r8 on 2026-10-22: an earlier optimizer round beat the last export in the fight lab (31.8s vs 33.9s per kill, level-weighted).
 - Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/3/43 -> 7/3/41; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Precision (over 51); -1 Improved Frostbolt (over 51); order dropped (order_repair.py) (refill: the frost-aoe model, leveling-aoe).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
 
 ## Open questions (verify in the live game)
 

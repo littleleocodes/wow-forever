@@ -46,6 +46,35 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fury | Cruelty | 5 | 0/5/0 |
+| 15-19 | Fury | Unbridled Wrath | 5 | 0/10/0 |
+| 20-24 | Fury | Enrage | 5 | 0/15/0 |
+| 25-26 | Fury | Improved Execute | 2 | 0/17/0 |
+| 27 | Fury | Dual Wield Specialization | 1 | 0/18/0 |
+| 28 | Fury | Furious Precision | 1 | 0/19/0 |
+| 29 | Fury | Dual Wield Specialization | 1 | 0/20/0 |
+| 30 | Fury | Death Wish | 1 | 0/21/0 |
+| 31-33 | Fury | Dual Wield Specialization | 3 | 0/24/0 |
+| 34 | Fury | Furious Precision | 1 | 0/25/0 |
+| 35-36 | Fury | Improved Whirlwind | 2 | 0/27/0 |
+| 37-38 | Fury | Flurry | 2 | 0/29/0 |
+| 39 | Fury | Furious Precision | 1 | 0/30/0 |
+| 40 | Fury | Bloodthirst | 1 | 0/31/0 |
+| 41-43 | Fury | Blood Craze | 3 | 0/34/0 |
+| 44-45 | Fury | Gore Drinker | 2 | 0/36/0 |
+| 46 | Fury | Flurry | 1 | 0/37/0 |
+| 47 | Fury | Improved Intercept | 1 | 0/38/0 |
+| 48-52 | Arms | Deflection | 5 | 5/38/0 |
+| 53 | Arms | Improved Charge | 1 | 6/38/0 |
+| 54-55 | Arms | Improved Rend | 2 | 8/38/0 |
+| 56 | Arms | Improved Charge | 1 | 9/38/0 |
+| 57 | Arms | Improved Rend | 1 | 10/38/0 |
+| 58-60 | Arms | Deep Wounds | 3 | 13/38/0 |
+
 ## Core talents (priority order)
 
 1. **Bloodthirst** — Removing it costs 9.7 points of score in this model.
@@ -65,13 +94,13 @@ What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 5.6 | 6.6 | 7.2 | 8.3 | 9.3 | 21% |
-| Melee | 3.1 | 4.5 | 6.6 | 7.4 | 8.2 | 26% |
+| Melee (off-hand) | 5.6 | 6.4 | 7.2 | 8.2 | 9.3 | 21% |
+| Melee | 3.1 | 4.3 | 6.6 | 7.3 | 8.2 | 26% |
 | Bloodthirst | 0.0 | 0.0 | 2.0 | 2.4 | 2.8 | 19% |
 | Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 7% |
 | Execute | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 15% |
-| Heroic Strike | 2.5 | 2.1 | 0.6 | 0.8 | 1.1 | 7% |
-| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
+| Heroic Strike | 2.4 | 2.1 | 0.6 | 0.9 | 1.1 | 7% |
+| Overpower | 0.6 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
 | Victory Rush | 0.3 | 0.6 | 0.6 | 0.2 | 0.2 | 0% |
@@ -82,6 +111,7 @@ What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all level
 
 - Report: warrior/research/talents/forever/optimizer/fury-dw-raid-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 13/38/0 -> 13/38/0; Flurry 5 -> 3 (rank cap); +1 Improved Whirlwind (back into Fury); +1 Improved Whirlwind (back into Fury); order dropped (order_repair.py) (refill: the fury-dw-raid model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fury-dw-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 25.6 s per kill; stats model 25.8 s; own tree last 27.5 s.
 
 ## Open questions (verify in the live game)
 

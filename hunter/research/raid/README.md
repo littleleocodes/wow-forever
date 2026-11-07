@@ -25,8 +25,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) 🔬 | 5/14/32 | DPS |
 | [Beast Mastery — Raid (machine-learning search)](builds/beast-mastery-ml-raid.md) 🔬 | 31/20/0 | DPS |
 | [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) 🔬 | 28/21/2 | DPS |
-| [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) 🔬 | 7/39/5 | DPS |
-| [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) 🔬 | 7/39/5 | DPS |
+| [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) 🔬 | 11/35/5 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

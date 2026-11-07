@@ -48,6 +48,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Natural Shapeshifter** | 1/3 | moved | Reduces the mana cost of all shapeshifting by 10%. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Feral Combat | Ferocity | 5 | 0/5/0 |
+| 15-16 | Feral Combat | Feral Swiftness | 2 | 0/7/0 |
+| 17-19 | Feral Combat | Thick Hide | 3 | 0/10/0 |
+| 20-21 | Feral Combat | Sharpened Claws | 2 | 0/12/0 |
+| 22-23 | Feral Combat | Savage Fury | 2 | 0/14/0 |
+| 24 | Feral Combat | Furor | 1 | 0/15/0 |
+| 25-27 | Feral Combat | Predatory Strikes | 3 | 0/18/0 |
+| 28-29 | Feral Combat | Blood Frenzy | 2 | 0/20/0 |
+| 30 | Feral Combat | Leader of the Pack | 1 | 0/21/0 |
+| 31-32 | Feral Combat | Natural Instinct | 2 | 0/23/0 |
+| 33-37 | Balance | Genesis | 5 | 5/23/0 |
+| 38-39 | Balance | Nature's Reach | 2 | 7/23/0 |
+| 40-41 | Balance | Nature's Majesty | 2 | 9/23/0 |
+| 42-46 | Restoration | Heart of the Wild | 5 | 9/23/5 |
+| 47-51 | Restoration | Naturalist | 5 | 9/23/10 |
+| 52 | Restoration | Natural Shapeshifter | 1 | 9/23/11 |
+| 53-54 | Feral Combat | Furor | 2 | 9/25/11 |
+| 55-59 | Feral Combat | Rend and Tear | 5 | 9/30/11 |
+| 60 | Restoration | Nature's Focus | 1 | 9/30/12 |
+
 ## Core talents (priority order)
 
 1. **Blood Frenzy** — Removing it costs 2.8 points of score in this model.
@@ -63,29 +87,28 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): never cast Shred. Together +0.5% time per kill saved for `leveling-feral` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): never cast Shred. Together +0.7% time per kill saved for `leveling-feral` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 3.3 | 7.9 | 11.6 | 14.7 | 15.9 | 18.5 | 32% |
-| Claw | 0.0 | 3.5 | 3.4 | 2.7 | 2.9 | 3.3 | 18% |
-| Rake | 0.0 | 0.0 | 1.4 | 1.4 | 1.5 | 1.8 | 8% |
-| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Ferocious Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.0 | 1.0 | 16% |
-| Rip | 0.0 | 0.9 | 0.0 | 0.1 | 0.1 | 0.4 | 10% |
-| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 5.0 | 10.4 | 12.2 | 13.1 | 12.4 | 13.9 | 23% |
+| Claw | 0.0 | 4.3 | 3.5 | 2.6 | 2.5 | 2.7 | 19% |
+| Rake | 0.0 | 0.0 | 1.5 | 1.5 | 1.4 | 1.6 | 13% |
+| Ferocious Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.0 | 1.0 | 23% |
+| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 16% |
+| Rip | 0.0 | 0.9 | 0.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
 - Report: druid/research/talents/forever/optimizer/feral-cat-dps-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/31/11 -> 9/30/12; Berserk 1 gone; +1 Thick Hide (tier gating for Savage Fury); +1 Thick Hide (tier gating for Savage Fury); +1 Furor (tier gating for Blood Frenzy); +1 Furor (tier gating for Rend and Tear); +1 Furor (tier gating for Rend and Tear); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); order dropped (order_repair.py) (refill: the feral-cat-dps model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the feral-cat-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 23.0 s per kill; own tree first 23.4 s; own tree last 23.6 s.
 
 ## Open questions (verify in the live game)
 

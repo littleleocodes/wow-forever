@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Frost leveling build the open leveling search found on 2026-11-04: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +2.2% faster per kill than frost-open-leveling, the fastest of our leveling builds in that race.
+The Frost leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +2.2% faster per kill than frost-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -109,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-12>
+- <https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

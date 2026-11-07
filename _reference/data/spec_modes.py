@@ -173,6 +173,14 @@ HYBRID_LEVELING_ROTATION = {
 }
 
 
+# A leveling rotation that files a split under one tree (2026-11-06, user decision on page-audit K3: "Make it the Feral page's build and
+# drop the separate page"). The cat rotation's open winner was 11/29/11, one point short of 30 Feral Combat points, and had its own
+# hybrid page ("Cat (split)") next to the Feral page, whose build was 0.5% slower. It casts only cat spells and the 30th point by
+# itself unlocks nothing, so in that rotation a build with a majority of its points in the tree is a build of the tree
+# (fl_signature.spec_for; open_builds.py writes it with `spec`: the tree). {(class, rotation): (tree, the points that make it the tree's)}
+LEVELING_FILE_AS = {("druid", "feral-cat-dps"): ("Feral Combat", 26)}
+
+
 def leveling_rotation_ok(cls, spec, rot, trees_=None):
     """Whether `spec` may be shown leveling with fight-lab rotation `rot`: a hybrid with a HYBRID_LEVELING_ROTATION only with that
     rotation (2026-10-22, the signature rule); otherwise rotation_allows on the rotation's trees. A rotation no tree levels with: only
@@ -230,4 +238,11 @@ def grid(cls, builds):
     out = {t: {m: [] for m in MODES} for t in trees(cls)}
     for b in builds:
         out.setdefault(spec_of(cls, b), {m: [] for m in MODES})[mode_of(b)].append(b)
+    # 2026-11-06 (user decision on page-audit K7): a hybrid's leveling slot that holds nothing but optimizer exports (`opt-<model>-<profile>`:
+    # builds of a tree's stats model whose points happen to split across two trees) is no page. The rogue's "Daggers (split)" leveling
+    # page showed the swords model's AoE export, without numbers, as its only build once the daggers rotation's winner became a pure
+    # Assassination build. The exports stay in the builds file and on the research pages.
+    for spec, modes in out.items():
+        if spec.startswith("Hybrid ") and modes["leveling"] and all(b["id"].startswith("opt-") for b in modes["leveling"]):
+            modes["leveling"] = []
     return out

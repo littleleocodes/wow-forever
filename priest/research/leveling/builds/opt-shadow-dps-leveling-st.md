@@ -53,24 +53,23 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-11 | Discipline | Wand Specialization | 2 | 2/0/0 |
-| 12-14 | Discipline | Twin Disciplines | 3 | 5/0/0 |
-| 15-17 | Discipline | Mental Strength | 3 | 8/0/0 |
-| 18-19 | Discipline | Twin Disciplines | 2 | 10/0/0 |
-| 20-21 | Discipline | Mental Agility | 2 | 12/0/0 |
-| 22-24 | Discipline | Meditation | 3 | 15/0/0 |
-| 25-29 | Shadow | Spirit Tap | 5 | 15/0/5 |
-| 30-31 | Shadow | Shadow Focus | 2 | 15/0/7 |
-| 32 | Discipline | Inner Focus | 1 | 16/0/7 |
-| 33-34 | Holy | Twilight Focus | 2 | 16/2/7 |
-| 35-37 | Shadow | Shadow Focus | 3 | 16/2/10 |
-| 38-39 | Shadow | Shadow Reach | 2 | 16/2/12 |
-| 40-42 | Shadow | Blackout | 3 | 16/2/15 |
-| 43-45 | Shadow | Shadow Weaving | 3 | 16/2/18 |
-| 46-47 | Shadow | Blackout | 2 | 16/2/20 |
-| 48 | Shadow | Improved Mind Blast | 1 | 16/2/21 |
-| 49 | Shadow | Vampiric Embrace | 1 | 16/2/22 |
-| 50 | Shadow | Mind Flay | 1 | 16/2/23 |
+| 10-14 | Shadow | Spirit Tap | 5 | 0/0/5 |
+| 15-19 | Shadow | Shadow Focus | 5 | 0/0/10 |
+| 20 | Shadow | Mind Flay | 1 | 0/0/11 |
+| 21-22 | Discipline | Wand Specialization | 2 | 2/0/11 |
+| 23-25 | Discipline | Twin Disciplines | 3 | 5/0/11 |
+| 26-28 | Discipline | Mental Strength | 3 | 8/0/11 |
+| 29-30 | Discipline | Twin Disciplines | 2 | 10/0/11 |
+| 31-32 | Discipline | Mental Agility | 2 | 12/0/11 |
+| 33-35 | Discipline | Meditation | 3 | 15/0/11 |
+| 36 | Discipline | Inner Focus | 1 | 16/0/11 |
+| 37-38 | Holy | Twilight Focus | 2 | 16/2/11 |
+| 39-40 | Shadow | Shadow Reach | 2 | 16/2/13 |
+| 41-43 | Shadow | Blackout | 3 | 16/2/16 |
+| 44-46 | Shadow | Shadow Weaving | 3 | 16/2/19 |
+| 47-48 | Shadow | Blackout | 2 | 16/2/21 |
+| 49 | Shadow | Improved Mind Blast | 1 | 16/2/22 |
+| 50 | Shadow | Vampiric Embrace | 1 | 16/2/23 |
 | 51-52 | Shadow | Improved Mind Flay | 2 | 16/2/25 |
 | 53-54 | Shadow | Early Demise | 2 | 16/2/27 |
 | 55-57 | Shadow | Darkness | 3 | 16/2/30 |
@@ -98,17 +97,20 @@ What this build casts per kill ([report](../fightlab/shadow-dps.md), all levelin
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Mind Flay | 0.0 | 0.0 | 0.0 | 3.5 | 2.6 | 46% |
-| Mind Blast | 2.0 | 2.5 | 2.5 | 2.0 | 1.3 | 20% |
-| Shadow Word: Pain | 1.0 | 1.1 | 1.2 | 1.0 | 1.0 | 16% |
+| Mind Flay | 2.9 | 3.7 | 3.8 | 3.5 | 2.6 | 46% |
+| Mind Blast | 2.0 | 2.0 | 2.0 | 2.0 | 1.3 | 20% |
+| Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 16% |
 | Shadow Word: Death | 0.0 | 0.0 | 1.0 | 0.9 | 0.8 | 16% |
 | Vampiric Embrace | 0.0 | 0.0 | 0.0 | 0.8 | 0.6 | 0% |
-| Wand | 7.8 | 9.9 | 8.8 | 1.2 | 0.5 | 1% |
-| Power Word: Shield | 0.0 | 0.2 | 0.1 | 0.0 | 0.0 | 0% |
+| Wand | 1.9 | 2.1 | 1.0 | 1.2 | 0.5 | 1% |
+| Power Word: Shield | 0.0 | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
+| Flash Heal | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Psychic Scream | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
 - Report: priest/research/talents/forever/optimizer/shadow-dps-leveling-st.md
+- 2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Mind Flay at 20 (was 50); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.
 
 ## Open questions (verify in the live game)
 

@@ -15,10 +15,12 @@
 # 2026-11-04 03:45: moved to ~/.wow-forever-tools/wowsims-forever-z at 92c4c35b9 (shared with the warlock lane): #851 doubled the poisons'
 # attack-power scaling (Instant 0.005 -> 0.01, Deadly 0.0045 -> 0.009 over the ticks) and #854 tuned the default rotation's Vanish line; the
 # races on 6ee3c30f3 (00:52-02:04) were discarded and the rotation search stopped in its second round.
+# 2026-11-07 (user: "Go with your recs"): re-pinned to ~/.wow-forever-tools/wowsims-forever-y at 16e85426c (upstream master, classes, racials and
+# items on 1.60.1.70790 up to hotfix push 113715), like every raid lane. The header above says what this lane was written for.
 cd F:/wow-forever || exit 1
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
-export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-z"
+export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"
 L=_reference/data/deep-runs
 M=$L/r1103
 mkdir -p $M
@@ -37,9 +39,12 @@ run() {
 }
 fresh() { if [ -e "$M/$1.started" ]; then echo ""; else touch "$M/$1.started"; echo "--fresh"; fi; }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "92c4c35b9" ] || { say "raid: rogue STOP, the checkout is not at 92c4c35b9"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "16e85426c" ] || { say "raid: rogue STOP, the checkout is not at 92c4c35b9"; exit 1; }
+# 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers, so it
+# runs again in the new sets (gear_repair_1103.sh; once per class, marker r1103/gear-rogue)
+bash $L/gear_repair_1103.sh rogue "rog-*" || { say "raid: rogue STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 
-say "raid: rogue start (92c4c35b9 in wowsims-forever-z)"
+say "raid: rogue start (16e85426c in wowsims-forever-y)"
 for e in $E; do run rog-race-$e $LG race rogue $e; done
 for e in $E; do
   run rog-apl-$e $LG python -u $R/apl_opt.py rogue --spec $e --write --setting raid --rounds 8 --lookahead 0
@@ -76,3 +81,5 @@ for e in $E; do run rog-final-race-$e $LG race rogue $e; done
 run rog-tidy $LG python -u $R/ml_builds.py rogue --tidy-winners
 run rog-unused $LG python -u $R/unused_abilities.py rogue --write
 say "raid: rogue done (rankings and gear links after the last raid lane; pages at the regen)"
+# 2026-11-06: the last lane of resume_1104.sh; the classes whose raid half ran before the gear repair follow it here
+bash $L/gear_redo_1103.sh

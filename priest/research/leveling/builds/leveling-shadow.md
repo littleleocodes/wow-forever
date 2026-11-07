@@ -114,7 +114,7 @@ What this build casts per kill ([report](../fightlab/shadow-dps.md), all levelin
 | Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Shadow Word: Death | 0.0 | 0.0 | 0.9 | 0.9 | 0.8 | 17% |
 | Vampiric Embrace | 0.0 | 0.8 | 0.7 | 0.6 | 0.6 | 0% |
-| Wand | 1.9 | 1.8 | 0.8 | 0.9 | 0.5 | 1% |
+| Wand | 2.0 | 1.8 | 0.8 | 0.9 | 0.5 | 1% |
 | Power Word: Shield | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

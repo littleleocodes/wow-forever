@@ -7,10 +7,12 @@
 # treatment (re-tunes, certificate and structural ranking, the ML final step), not the full family search. Presets: presets.ts (five).
 # Runs on ~/.wow-forever-tools/wowsims-forever-z at 92c4c35b9, shared with the rogue lane.
 # Resume: the same command (markers deep-runs/r1103/wl-*).
+# 2026-11-07 (user: "Go with your recs"): re-pinned to ~/.wow-forever-tools/wowsims-forever-y at 16e85426c (upstream master, classes, racials and
+# items on 1.60.1.70790 up to hotfix push 113715), like every raid lane. The header above says what this lane was written for.
 cd F:/wow-forever || exit 1
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
-export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-z"
+export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"
 L=_reference/data/deep-runs
 M=$L/r1103
 mkdir -p $M
@@ -28,9 +30,12 @@ run() {
   return 0
 }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "92c4c35b9" ] || { say "raid: warlock STOP, the checkout is not at 92c4c35b9"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "16e85426c" ] || { say "raid: warlock STOP, the checkout is not at 92c4c35b9"; exit 1; }
+# 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers, so it
+# runs again in the new sets (gear_repair_1103.sh; once per class, marker r1103/gear-warlock)
+bash $L/gear_repair_1103.sh warlock "wl-*" || { say "raid: warlock STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 
-say "raid: warlock start (92c4c35b9 in wowsims-forever-z)"
+say "raid: warlock start (16e85426c in wowsims-forever-y)"
 for e in $E; do run wl-race-$e $LG race warlock $e; done
 for e in $E; do
   run wl-apl-$e $LG python -u $R/apl_opt.py warlock --spec $e --write --setting raid --rounds 8 --lookahead 0

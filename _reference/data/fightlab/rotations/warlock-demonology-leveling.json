@@ -4,12 +4,13 @@
    "min_hp": 0.35
   },
   "Searing Pain": {
-   "min_mana": 0.3
+   "min_mana": 0.3,
+   "min_hp": 0.35
   }
  },
  "class": "warlock",
  "spec": "demonology-leveling",
- "build": "affliction-demonology-open-leveling",
+ "build": "demonology-leveling",
  "levels": [
   20,
   30,
@@ -17,16 +18,16 @@
   50,
   60
  ],
- "date": "2026-10-24",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Corruption"
   ],
-  "build_spec": "Hybrid Affliction/Demonology",
+  "build_spec": "Demonology",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7001805941912373,
-  "core_share_after": 0.7086559516745801,
-  "min_share": 0.5,
+  "core_share_before": 0.24047490034235497,
+  "core_share_after": 0.20639574640424457,
+  "min_share": 0.0,
   "floor_reached": null
  },
  "fights": 600,
@@ -40,8 +41,8 @@
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.010393636063888656,
-   "gain_seed2": 0.009935485224431218
+   "gain_seed1": 0.011163597935843983,
+   "gain_seed2": 0.0129003399857609
   },
   {
    "round": 2,
@@ -51,42 +52,62 @@
     "Searing Pain",
     0.3
    ],
-   "gain_seed1": 0.01000047361806522,
-   "gain_seed2": 0.012456285415238466
+   "gain_seed1": 0.011607264658911265,
+   "gain_seed2": 0.014149891353288258
+  },
+  {
+   "round": 3,
+   "change": "Searing Pain only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Searing Pain",
+    0.35
+   ],
+   "gain_seed1": 0.006824122462026017,
+   "gain_seed2": 0.0057539776179192925
   }
  ],
- "weighted_before": 31.44226740256972,
- "weighted_after": 30.792156796669218,
+ "weighted_before": 32.17426684654544,
+ "weighted_after": 31.138076783364873,
  "per_level": {
   "20": {
-   "before": 23.821966666595113,
-   "after": 23.821866666595103,
+   "before": 24.590866666622144,
+   "after": 24.598133333288875,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 27.137258526737433,
-   "after": 26.97013333337824,
+   "before": 27.88807810045101,
+   "after": 27.436900000058397,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 31.82046714791921,
-   "after": 31.167711209784105,
+   "before": 32.81390736316318,
+   "after": 31.46489704299488,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 33.73253965125399,
-   "after": 32.9694795088865,
+   "before": 34.5250703606256,
+   "after": 33.42304996045297,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.974178715007504,
-   "after": 32.96179336941508,
+   "before": 34.45973134008845,
+   "after": 33.04662183771669,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 31.312,
+   "from scratch": 31.138,
+   "continued": 31.138
+  },
+  "installed": "from scratch",
+  "reference_ok": true
  }
 }

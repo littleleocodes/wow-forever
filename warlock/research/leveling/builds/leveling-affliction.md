@@ -116,16 +116,16 @@ What this build casts per kill ([report](../fightlab/affliction-leveling.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 2.6 | 5.5 | 7.1 | 9.2 | 8.1 | 17% |
-| Torment | 3.2 | 4.3 | 4.5 | 4.8 | 4.3 | 0% |
-| Shadow Bolt | 2.2 | 2.6 | 2.7 | 2.2 | 1.4 | 15% |
+| Wand | 2.5 | 5.4 | 7.2 | 9.0 | 8.1 | 17% |
+| Torment | 3.1 | 4.3 | 4.5 | 4.7 | 4.3 | 0% |
+| Shadow Bolt | 2.2 | 2.7 | 2.7 | 2.3 | 1.4 | 15% |
 | Corruption | 1.0 | 1.0 | 1.0 | 1.1 | 1.1 | 20% |
 | Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 21% |
 | Siphon Life | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 9% |
 | Life Tap | 0.1 | 0.1 | 0.1 | 0.1 | 0.4 | 0% |
 | Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 2% |
 | Fear | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 0% |
-| Immolate | 0.6 | 0.5 | 0.5 | 0.4 | 0.3 | 3% |
+| Immolate | 0.6 | 0.5 | 0.4 | 0.4 | 0.3 | 3% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

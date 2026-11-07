@@ -97,7 +97,7 @@ def pool_of(tier, zones):
         return G.in_pool(it, zones) and crafted_ok(it, "bis")
 
     def prebis(it):
-        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS:
+        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS or G.later_rep(it):   # (2026-11-06: gear_opt.LATER_FACTIONS)
             return False
         srcs = G.dated_sources(it)
         drops = [s["drop"] for s in srcs if s.get("drop")]
@@ -109,6 +109,8 @@ def pool_of(tier, zones):
             return False
         if it["id"] in G.VENDOR_ITEMS:
             return True
+        if not srcs and G.later_reward(it):   # 2026-11-07: Zul'Gurub quest rewards and battleground items (gear_opt.later_reward)
+            return False
         if not srcs:
             so = it.get("scalingOptions", {}).get("0", {})
             return it["id"] in VETTED_PRE and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL

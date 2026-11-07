@@ -1,0 +1,114 @@
+{
+ "veto": {
+  "Consecration": {
+   "off": true
+  },
+  "Hammer of Wrath": {
+   "off": true
+  },
+  "Hammer of Justice": {
+   "off": true
+  }
+ },
+ "class": "paladin",
+ "spec": "prot-leveling",
+ "build": "protection-leveling",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-11-06",
+ "signature": {
+  "required": [
+   "Holy Shield"
+  ],
+  "build_spec": "Protection",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.6936486656934578,
+  "core_share_after": 0.7609243566736906,
+  "min_share": 0.6,
+  "floor_reached": null
+ },
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Consecration",
+   "rule": [
+    "off",
+    "Consecration",
+    true
+   ],
+   "gain_seed1": 0.03468681736284396,
+   "gain_seed2": 0.0356028196021041
+  },
+  {
+   "round": 2,
+   "change": "never cast Hammer of Wrath",
+   "rule": [
+    "off",
+    "Hammer of Wrath",
+    true
+   ],
+   "gain_seed1": 0.022876207681111982,
+   "gain_seed2": 0.019890619742135573
+  },
+  {
+   "round": 3,
+   "change": "never cast Hammer of Justice",
+   "rule": [
+    "off",
+    "Hammer of Justice",
+    true
+   ],
+   "gain_seed1": 0.00851677509152371,
+   "gain_seed2": 0.0043958006773737734
+  }
+ ],
+ "weighted_before": 31.95528751792231,
+ "weighted_after": 30.03083891363321,
+ "per_level": {
+  "20": {
+   "before": 20.660899999872697,
+   "after": 21.030799999867824,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 24.693584062337013,
+   "after": 24.03559619343238,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 31.44096267423272,
+   "after": 30.253879757224457,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 34.464582310623236,
+   "after": 31.16297407076159,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 37.60273932027379,
+   "after": 34.9363333849876,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ },
+ "retune": {
+  "times": {
+   "hand-written": 31.955,
+   "from scratch": 30.031
+  },
+  "installed": "from scratch",
+  "reference_ok": true
+ }
+}

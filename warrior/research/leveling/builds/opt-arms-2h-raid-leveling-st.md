@@ -48,6 +48,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Arms | Improved Rend | 3 | 3/0/0 |
+| 13-14 | Arms | Deflection | 2 | 5/0/0 |
+| 15-16 | Arms | Improved Overpower | 2 | 7/0/0 |
+| 17-18 | Arms | Improved Charge | 2 | 9/0/0 |
+| 19 | Arms | Improved Tactical Mastery | 1 | 10/0/0 |
+| 20-22 | Arms | Deep Wounds | 3 | 13/0/0 |
+| 23-24 | Arms | Improved Tactical Mastery | 2 | 15/0/0 |
+| 25 | Arms | Spearing Strike | 1 | 16/0/0 |
+| 26 | Arms | Anger Management | 1 | 17/0/0 |
+| 27-29 | Arms | Two-Handed Weapon Specialization | 3 | 20/0/0 |
+| 30-31 | Arms | Bloodthrill | 2 | 22/0/0 |
+| 32-34 | Arms | Weaponmaster | 3 | 25/0/0 |
+| 35-36 | Arms | Improved Slam | 2 | 27/0/0 |
+| 37-38 | Arms | Weaponmaster | 2 | 29/0/0 |
+| 39 | Arms | Sweeping Strikes | 1 | 30/0/0 |
+| 40 | Arms | Mortal Strike | 1 | 31/0/0 |
+| 41-45 | Fury | Cruelty | 5 | 31/5/0 |
+| 46-47 | Arms | Impale | 2 | 33/5/0 |
+| 48-50 | Arms | Deflection | 3 | 36/5/0 |
+| 51-53 | Arms | Improved Hamstring | 3 | 39/5/0 |
+| 54-57 | Fury | Unbridled Wrath | 4 | 39/9/0 |
+| 58-60 | Arms | Improved Heroic Strike | 3 | 42/9/0 |
+
 ## Core talents (priority order)
 
 1. **Mortal Strike** — Removing it costs 9.4 points of score in this model.
@@ -69,16 +96,16 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.6 | 4.2 | 5.9 | 5.9 | 6.7 | 38% |
-| Mortal Strike | 0.0 | 0.0 | 1.9 | 2.1 | 2.4 | 20% |
-| Overpower | 0.3 | 0.5 | 1.0 | 1.1 | 1.4 | 14% |
-| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.2 | 6% |
-| Execute | 0.0 | 1.0 | 0.9 | 0.9 | 1.0 | 13% |
+| Melee | 2.6 | 3.9 | 5.5 | 5.7 | 6.5 | 37% |
+| Mortal Strike | 0.0 | 0.0 | 1.9 | 2.1 | 2.4 | 21% |
+| Overpower | 0.3 | 0.7 | 1.0 | 1.0 | 1.3 | 14% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 5% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.4 | 0.6 | 0.6 | 0.7 | 0.7 | 1% |
-| Slam | 0.0 | 0.0 | 0.4 | 0.5 | 0.7 | 5% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Spearing Strike | 0.0 | 1.0 | 0.1 | 0.1 | 0.2 | 1% |
+| Execute | 0.0 | 0.9 | 0.9 | 0.9 | 1.0 | 13% |
+| Victory Rush | 0.4 | 0.6 | 0.6 | 0.6 | 0.7 | 1% |
+| Slam | 0.0 | 0.0 | 0.5 | 0.6 | 0.7 | 5% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
+| Spearing Strike | 0.0 | 1.0 | 0.1 | 0.2 | 0.2 | 1% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 | Heroic Strike | 2.4 | 1.4 | 0.0 | 0.0 | 0.0 | 0% |
 
@@ -86,6 +113,7 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid.md), all level
 
 - Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 44/7/0 -> 42/9/0; Improved Tactical Mastery 5 -> 3 (rank cap); Bloodthrill 5 -> 2 (rank cap); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); +1 Improved Heroic Strike (back into Arms); refill +2 Unbridled Wrath; order dropped (order_repair.py) (refill: the arms-2h-raid model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 25.5 s per kill; own tree first 25.8 s; own tree last 26.6 s.
 
 ## Open questions (verify in the live game)
 

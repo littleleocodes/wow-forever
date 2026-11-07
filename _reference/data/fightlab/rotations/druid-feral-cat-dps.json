@@ -15,7 +15,7 @@
   50,
   60
  ],
- "date": "2026-11-02",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Claw",
@@ -23,8 +23,8 @@
   ],
   "build_spec": "Feral Combat",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8255956195329229,
-  "core_share_after": 0.8255956195329229,
+  "core_share_before": 0.8084948433142513,
+  "core_share_after": 0.8084948433142513,
   "min_share": 0.8,
   "floor_reached": null
  },
@@ -39,12 +39,12 @@
     "Shred",
     true
    ],
-   "gain_seed1": 0.004107888993099107,
-   "gain_seed2": 0.004761614683775672
+   "gain_seed1": 0.5025795429139845,
+   "gain_seed2": 0.5030249905351472
   }
  ],
- "weighted_before": 26.1064140742847,
- "weighted_after": 25.970291593662846,
+ "weighted_before": 21.73376252714862,
+ "weighted_after": 21.591767178313,
  "per_level": {
   "15": {
    "before": 23.73389999992213,
@@ -53,32 +53,32 @@
    "deaths_after": 0.0
   },
   "20": {
-   "before": 17.25089999991834,
-   "after": 16.858733333255717,
+   "before": 15.764866666601051,
+   "after": 15.457666666604295,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.39779999988376,
-   "after": 21.683699999868896,
+   "before": 19.418933333228885,
+   "after": 18.6060999999048,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 25.58586666665709,
-   "after": 25.58586666665709,
+   "before": 20.867433333213544,
+   "after": 20.867433333213544,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.545201346492806,
-   "after": 27.545201346492806,
+   "before": 22.047554404392383,
+   "after": 22.047554404392383,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.653729866442905,
-   "after": 30.653729866442905,
+   "before": 24.696834274351207,
+   "after": 24.696834274351207,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

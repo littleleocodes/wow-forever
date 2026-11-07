@@ -21,7 +21,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Elemental — Raid (generated)](builds/elemental-raid.md) ⚗ | 30/8/13 | DPS |
 | [Enhancement — Raid (machine-learning search)](builds/enhancement-ml-raid.md) 🔬 | 19/32/0 | DPS |
 | [Elemental-Enhancement — Raid (machine-learning search)](builds/elemental-enhancement-ml-raid.md) 🔬 | 17/29/5 | DPS |
-| [Enhancement — Raid (open talent search)](builds/enhancement-open-raid.md) 🔬 | 17/31/3 | DPS |
+| [Enhancement — Raid (open talent search)](builds/enhancement-open-raid.md) 🔬 | 17/32/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

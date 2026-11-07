@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +15.9% faster per kill than opt-bm-leveling-leveling-aoe, the fastest of our leveling builds in that race.
+The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +15.9% faster per kill than opt-bm-leveling-leveling-aoe, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -88,7 +88,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- +6.8% faster than the hand draft leveling-melee, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.24; opt-bm-leveling-leveling-aoe 24.61. The search simulated 60,489 builds.
+- The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 22.50 s, leveling-melee 22.68 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -98,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-12>
+- <https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

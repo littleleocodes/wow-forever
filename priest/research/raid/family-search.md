@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 
 | Rotation (entry) | Open winner | Family | DPS | vs our best build there | Rotation re-tuned |
 |---|---|---|---|---|---|
-| shadow-dps | [15/1/35](https://talentsforever.com/priest/60/10500502002-01-51052101241302251-12) | Shadow | 800.4 | +0.4% (opt-shadow-dps-raid-dps) | no |
-| smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-12) | Hybrid Discipline/Holy | 611.1 | +2.9% (smite-discipline-raid) | yes |
+| shadow-dps | [15/1/35](https://talentsforever.com/priest/60/10500502002-01-51052101241302251-7) | Shadow | 800.4 | +0.4% (opt-shadow-dps-raid-dps) | no |
+| smite-dps | [17/17/17](https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7) | Hybrid Discipline/Holy | 611.1 | +2.9% (smite-discipline-raid) | yes |
 
 ## shadow-dps
 

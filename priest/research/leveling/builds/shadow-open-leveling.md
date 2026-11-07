@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shadow leveling build the open leveling search found on 2026-10-23: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
+The Shadow leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -58,10 +58,9 @@ The Shadow leveling build the open leveling search found on 2026-10-23: every le
 | 21-22 | Shadow | Improved Mind Flay | 2 | 0/0/13 |
 | 23 | Shadow | Shadow Reach | 1 | 0/0/14 |
 | 24 | Shadow | Improved Mind Blast | 1 | 0/0/15 |
-| 25-26 | Shadow | Dark Inspiration | 2 | 0/0/17 |
-| 27-29 | Shadow | Shadow Weaving | 3 | 0/0/20 |
-| 30-33 | Shadow | Improved Mind Blast | 4 | 0/0/24 |
-| 34 | Shadow | Dark Inspiration | 1 | 0/0/25 |
+| 25-27 | Shadow | Dark Inspiration | 3 | 0/0/18 |
+| 28-30 | Shadow | Shadow Weaving | 3 | 0/0/21 |
+| 31-34 | Shadow | Improved Mind Blast | 4 | 0/0/25 |
 | 35 | Shadow | Early Demise | 1 | 0/0/26 |
 | 36-38 | Shadow | Darkness | 3 | 0/0/29 |
 | 39 | Shadow | Vampiric Embrace | 1 | 0/0/30 |
@@ -76,13 +75,13 @@ The Shadow leveling build the open leveling search found on 2026-10-23: every le
 
 ## Core talents (priority order)
 
-1. **Shadowform** — +11.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Mind Flay** — +5.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shadowform** — +11.6 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Mind Flay** — +6.7 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Spirit Tap** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Darkness** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Improved Mind Flay** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Vampiric Embrace** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Meditation** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Darkness** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Vampiric Embrace** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Mind Flay** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Meditation** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Improved Mind Blast** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -92,7 +91,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - +4.4% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.39; opt-shadow-dps-solo-60 24.97, leveling-shadow 25.46, opt-shadow-dps-leveling-aoe 28.67, opt-shadow-dps-leveling-st 30.44. The search simulated 45,475 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.41; opt-shadow-dps-solo-60 24.99, leveling-shadow 25.48, opt-shadow-dps-leveling-aoe 28.67, opt-shadow-dps-leveling-st 30.60. The search simulated 45,475 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -102,7 +101,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12>
+- <https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

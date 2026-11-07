@@ -46,6 +46,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Marksmanship | Lethal Attacks | 5 | 0/5/0 |
+| 15-19 | Marksmanship | Efficiency | 5 | 0/10/0 |
+| 20-22 | Marksmanship | Improved Stings | 3 | 0/13/0 |
+| 23-24 | Marksmanship | Careful Aim | 2 | 0/15/0 |
+| 25 | Marksmanship | Trueshot Aura | 1 | 0/16/0 |
+| 26-27 | Marksmanship | Careful Aim | 2 | 0/18/0 |
+| 28-29 | Marksmanship | Rapid Killing | 2 | 0/20/0 |
+| 30-31 | Marksmanship | Rapid Recuperation | 2 | 0/22/0 |
+| 32 | Marksmanship | Scatter Shot | 1 | 0/23/0 |
+| 33-34 | Marksmanship | Barrage | 2 | 0/25/0 |
+| 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
+| 40 | Marksmanship | Sniper Shot | 1 | 0/31/0 |
+| 41-45 | Beast Mastery | Deadly Aspects | 5 | 5/31/0 |
+| 46-47 | Beast Mastery | Focused Fire | 2 | 7/31/0 |
+| 48-50 | Beast Mastery | Endurance Training | 3 | 10/31/0 |
+| 51-55 | Beast Mastery | Unleashed Fury | 5 | 15/31/0 |
+| 56-58 | Beast Mastery | Ferocity | 3 | 18/31/0 |
+| 59-60 | Beast Mastery | Pathfinding | 2 | 20/31/0 |
+
 ## Core talents (priority order)
 
 1. **Unleashed Fury** — Removing it costs 3.4 points of score in this model.
@@ -65,6 +88,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Report: hunter/research/talents/forever/optimizer/bm-leveling-solo-60.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 20/31/0 -> 20/31/0; +1 Endurance Training (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Ferocity (over 51); -1 Ferocity (over 51); order dropped (order_repair.py) (refill: the bm-leveling model, solo-60).
+- 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (bm-leveling, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

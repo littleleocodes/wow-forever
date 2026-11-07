@@ -6,10 +6,10 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 
 | Rotation (entry) | Open winner | Family | DPS | vs our best build there | Rotation re-tuned |
 |---|---|---|---|---|---|
-| mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-12) | Marksmanship | 780.7 | +0.1% (marksmanship-with-a-pet-open-raid) | no |
-| mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-12) | Marksmanship | 759.8 | +0.0% (mm-lone-wolf-raid) | no |
-| bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--12) | Beast Mastery | 771.5 | +0.4% (beast-mastery-ml-raid) | no |
-| melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-12) | Survival | 735.5 | +0.0% (melee-survival-raid) | no |
+| mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-7) | Marksmanship | 780.7 | +0.1% (marksmanship-with-a-pet-open-raid) | no |
+| mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-7) | Marksmanship | 759.8 | +0.0% (mm-lone-wolf-raid) | no |
+| bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5122011505001251-00520503005--7) | Beast Mastery | 771.5 | +0.4% (beast-mastery-ml-raid) | no |
+| melee-dps | [5/13/33](https://talentsforever.com/hunter/60/5-005015101-521200230250022151-7) | Survival | 735.5 | +0.0% (melee-survival-raid) | no |
 
 ## mm-raid
 

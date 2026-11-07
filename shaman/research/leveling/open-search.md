@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| elemental-dps | Elemental | [26/22/3](https://talentsforever.com/shaman/60/520333100301131-054033010400002-03-12) | Hybrid Elemental/Enhancement | 29.48 | +0.3% faster than elemental-open-leveling |
-| enhancement-dps | Enhancement, Restoration | [12/32/7](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-12) | Enhancement | 24.99 | +0.2% faster than enhancement-open-leveling |
+| elemental-dps | Elemental | [26/22/3](https://talentsforever.com/shaman/60/520333100301131-054033010400002-03-7) | Hybrid Elemental/Enhancement | 29.48 | +0.3% faster than elemental-open-leveling |
+| enhancement-dps | Enhancement, Restoration | [12/32/7](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-7) | Enhancement | 24.99 | +0.2% faster than enhancement-open-leveling |
 
 ## elemental-dps
 

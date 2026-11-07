@@ -18,7 +18,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 30/16/5 | DPS |
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/34/17 | DPS |
-| [Holy/Protection hybrid — Leveling (open talent search)](builds/hybrid-holy-protection-open-leveling.md) 🔬 | 21/16/14 | DPS |
+| [Holy/Protection hybrid — Leveling (open talent search)](builds/hybrid-holy-protection-open-leveling.md) 🔬 | 13/25/13 | DPS |
 | [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 12/16/23 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):

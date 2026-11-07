@@ -50,6 +50,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Retribution | Benediction | 5 | 0/0/5 |
+| 15-17 | Retribution | Sanctified Judgement | 3 | 0/0/8 |
+| 18-19 | Retribution | Conviction | 2 | 0/0/10 |
+| 20 | Retribution | Seal of Command | 1 | 0/0/11 |
+| 21-22 | Retribution | Pursuit of Justice | 2 | 0/0/13 |
+| 23 | Retribution | Conviction | 1 | 0/0/14 |
+| 24 | Retribution | Improved Judgement | 1 | 0/0/15 |
+| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
+| 26 | Retribution | Improved Judgement | 1 | 0/0/17 |
+| 27-29 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/20 |
+| 30-32 | Retribution | Vengeance | 3 | 0/0/23 |
+| 33-37 | Holy | Divine Strength | 5 | 5/0/23 |
+| 38-40 | Holy | Improved Seals | 3 | 8/0/23 |
+| 41-45 | Protection | Redoubt | 5 | 8/5/23 |
+| 46-48 | Protection | Precision | 3 | 8/8/23 |
+| 49-50 | Protection | Sacred Duty | 2 | 8/10/23 |
+| 51 | Protection | Templar's Bulwark | 1 | 8/11/23 |
+| 52-54 | Protection | Improved Hammer of Justice | 3 | 8/14/23 |
+| 55 | Protection | Shield Specialization | 1 | 8/15/23 |
+| 56 | Protection | Swift Judgement | 1 | 8/16/23 |
+| 57 | Retribution | Vindication | 1 | 8/16/24 |
+| 58 | Protection | Shield Specialization | 1 | 8/17/24 |
+| 59-60 | Protection | Anticipation | 2 | 8/19/24 |
+
 ## Core talents (priority order)
 
 1. **Seal of Command** — Removing it costs 3.9 points of score in this model.
@@ -69,6 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Report: paladin/research/talents/forever/optimizer/ret-dps-solo-60.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 8/16/27 -> 8/19/24; Improved Seal of Fury 1 gone; Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Templar's Bulwark (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); refill +1 Two-Handed Weapon Specialization, +1 Improved Hammer of Justice; order dropped (order_repair.py) (refill: the ret-dps model, solo-60).
+- 2026-11-07 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (ret-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

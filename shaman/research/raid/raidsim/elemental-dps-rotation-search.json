@@ -137,8 +137,8 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-07",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
@@ -270,40 +270,40 @@
   "final": {
    "raid": {
     "opt-elemental-dps-raid-dps": {
-     "before": 737.6791462120551,
-     "after": 745.6162478760289,
-     "base": 737.6791462120551,
+     "before": 747.9328570240391,
+     "after": 756.3293650454065,
+     "base": 747.9328570240391,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 1.8209000000062303
+     "oom_before": 0.383385000011904,
+     "oom_after": 0.383385000011904
     },
     "sim preset: Standard": {
-     "before": 739.1896923622945,
-     "after": 752.0628082549578,
-     "base": 739.1896923622945,
+     "before": 748.8392666386382,
+     "after": 757.6783903060906,
+     "base": 748.8392666386382,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.8159250000012028
+     "oom_before": 0.1676750000050993,
+     "oom_after": 0.1676750000050993
     },
     "elemental-raid-dps": {
-     "before": 723.9679439476806,
-     "after": 726.0696326500092,
-     "base": 723.9679439476806,
+     "before": 749.5728641822783,
+     "after": 751.022542855456,
+     "base": 749.5728641822783,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0050949999978,
-     "oom_after": 4.436114999739495
+     "oom_before": 1.4385349998926564,
+     "oom_after": 1.4385349998926564
     },
     "elemental-raid": {
-     "before": 718.2615597117654,
-     "after": 723.2771162331283,
-     "base": 718.2615597117654,
+     "before": 728.8673133218733,
+     "after": 732.767954548294,
+     "base": 728.8673133218733,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 2.341100000004741
+     "oom_before": 1.0562850000307107,
+     "oom_after": 1.0562850000307107
     }
    }
   },
@@ -315,13 +315,13 @@
     "Lightning Bolt"
    ],
    "rejected": {
-    "structure": 78,
+    "structure": 26,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 15
  }
 }

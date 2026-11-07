@@ -113,6 +113,16 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-11-02 | The bench reads both buff names across upstream's 2026-11-01 rank work (`foreverbench/main.go` `fieldAliases`; a rank select takes true as 1, a bool field takes a number) | bac92dbd5 renamed four raid buffs (Gift of the Wild -> mark_of_the_wild ...) and made four rank selects (0 off, 1 trainer rank, 2+ book): our configs died with `no raid, party or individual buff field "gift_of_the_wild"` | Rehearsal on bac92dbd5: feral smoke race runs; apl_validate: no new warning |
 | 2026-11-04 | Entry options use the official protos' names (hunter `petAttackSpeed` FasterAttackVI, `quiverBonus` AncientSinewWrappedLamina; two stray Enhancement fields removed); `raidsim/spec_check.py` checks every entry's spec fragment against the proto files statically; `run.check_bench_stderr` makes the bench's `spec:` warning fatal in every caller | The bench dropped the fork's `OneTwo` and `Speed15` silently (DiscardUnknown; the warning only reached a log when a bench was killed at the 11-04 reboot): every hunter raid number since the port (2026-10-18) had a 2 s pet without its Faster Attack passive and no quiver haste | Hunter raid lane redone from its races; nothing of the kind can pass unseen again |
 | 2026-11-04 | Capped queue runs pin processes by type: `deep-runs/rebalance.ps1` (benches and every other queue python BelowNormal on 6 of the run's 8 cores; fight-lab and healer-lab python and their workers Idle on all 8) applied every 60 s by `deep-runs/balance_1104.ps1` next to `resume_1104.sh` (throttle.ps1 keeps the whole tree off the desktop's 4 processors) | Under one shared mask and priority the two Go benches had 0.3 of the 8 cores and the 12 fight-lab python workers 7.3 (the hunter rotation re-tune's bench: 0.1 CPU-seconds per 8 s, 2.7% of its work in 62 min; with the workers at Idle for 12 s it took 5.2 cores): on Windows the simulator's threads lose to CPU-bound python at equal priority | Benches 5.3 cores, fight lab 2.6, total CPU unchanged at 71-75%: the raid lanes run at near the cap's full speed and the leveling lanes take what they leave plus 2 cores of their own; the fight lab gets every run core once the raid lanes are done |
+| 2026-11-06 | Priest leveling refresh lane next to the patch queue (`deep-runs/priest_refresh_1103.sh`, `priest_refresh_keys.py`): the open record taken back to the end of each level-60 search, then the search tool's own stages from the 20-60 race on, the open builds, orders, races and reports | Self-audit at the warrior and druid boundaries: no priest leveling number on any page since the 2026-11-02 checkpoint (records of 2026-10-23, older than the capture date; the patch queue lists the eight changed classes). Its rules (2026-11-02) and winners (certificate of 2026-11-03) were already checked on its current data, so no new level-60 search. `fl_open_search.py` gates every stage on its key, so "refresh from the race on" is a reset of those keys and a plain run (`page-audit.md` K1) |
+| 2026-11-06 | `order_repair.py`: a solo build whose order a repair dropped gets the stats model's leveling-st order back (no race). `render_modes.weighted`: levels 20-60 only. `spec_modes.HYBRID_NAMES`: the druid's "Cat (split)" | The druid's recommended leveling page had no talent table since 2026-10-30 (`opt-feral-cat-dps-solo-60`) and six other solo builds were order-less; the druid's level-15 report row put report builds and race-row builds on different level sets (23.6 against 23.07 s for one build); the cat rotation's 11/29/11 winner carried the fallback hybrid name (`page-audit.md` K2-K4) |
+| 2026-11-06 | `fightlab/rules_retune.py <class> <rotation> <build>`: one rotation's rules from scratch and continued from the saved file, the fastest set installed only when it beats the saved rules by 0.3% on the tuner's final check. `deep-runs/rules_repair_1103.sh` runs it for the rotations the rules step skipped (rogue Subtlety, paladin Holy and Protection, mage Arcane and Arcane-Frost, warrior Protection, warlock Demonology once lane C has saved it); `deep-runs/refresh_keys.py` takes a record's rotation back to the end of its level-60 search for the re-races | Open idea 0e: eight rule files predated their class's patch port. The tool also closes the open item of 2026-10-27 on main (a from-scratch run wrote its result even when the saved rules were faster). Smoke-tested on Subtlety (tiny budgets, dry run) |
+| 2026-11-06 | Warlock Destruction leveling rules replaced at 07:21, before the patch queue started that rotation's open search (07:16: the Demonology rotation was in its order polish): the first six rounds of a from-scratch tune on `destruction-open-leveling` (never cast Fear, Drain Life, Searing Pain or Incinerate; Shadow Bolt only above 35% mob health; eat below 40%) | Seed 3, 3,000 fights per level, levels 20-60: hand-written 49.47 s, the rules of 2026-10-24 45.60 s, the six rules 41.48 s (9.0% faster than the old file; 6.5% at level 60, where the search scores). The old rules still cast Incinerate and Fear, so the search would have valued talents for a rotation the tuned rules never play. The tune was stopped after round 6 (the search was minutes away and a rules file must not change under a running search); after the search: `rules_retune.py warlock destruction-leveling <winner>` and, if it gains, the record from the 20-60 race on |
+| 2026-11-06 | `fl_open_search.py`: the 20-60 race's eligible picks now include the previous record's winner of the rotation (`<record>.prev.json`) and our raced builds of the rotation's specs, each with the order it carries (`picked_by` says so; `order_label` "previous"; the stats model's order is computed for the order choice). Not with `--no-known` | Self-audit at the warlock's Demonology save. The fresh Affliction search of 2026-11-04 ended on 38/11/2 at 36.78 s while `affliction-open-leveling` (37/14/0, the winner it replaced, with its polished order) ran 36.20 s in the same race, and `open_builds.py` would have rewritten that build from the slower record at the lane's builds step (its "confirms the spec's open build" branch; dry run: "Affliction 36.78 s per kill -> new build"). The note of 2026-10-28 called this harmless on main; it is not when the faster build is the spec's own open build. Smoke test on a copy of the record: the previous winner is picked (35.90 against 37.49-37.53 s at 200 fights) and its order beats the three standard ones (stats model 37.14, own tree first 36.69, own tree last 38.11). Lane C's warlock process had loaded the old code: `deep-runs/rules_refresh_1103.sh` races the warlock's three rotations again after its class steps. Every other finished rotation checked the same day (`deep-runs/fightlab/prev_check.py`: the previous winner with its order on the race's seed and fights): 10 previous winners still legal, none both 0.5% faster than the new winner and passing its check (druid Balance -0.8%, cat -0.3%, Marksmanship -0.5%, melee hunter -0.1%, priest Holy -3.4%, Shadow -0.5%, Enhancement -0.2%, warrior Protection -1.1%, Survival-only -0.7%; Beast-Mastery-only +0.7% but at a core share of 34% against 35%), 14 no longer legal after the patch |
+| 2026-11-06 | **Signature talents as early as the tree allows** (user decision, page-audit L3): `signature.late_talents` (check), `signature.signature_first` and `fl_signature.sig_order` (the order every leveling tool starts from), `fl_signature.order_ok` (the order polish keeps only such moves), `order_repair.py` (hand drafts and exports). The stored verdicts carry the check's version and rules (`build_fingerprint`), and `open_builds.py --write` measures the class's audit first | The checks counted a talent spell from the level the order takes it and orders were picked on speed, so Assassination took Mutilate at 60, Subtlety Hemorrhage at 54, Beast Mastery Bestial Wrath at 56, Discipline Penance at 51, the Holy paladin hybrid Holy Shock at 60. Cost of the rule where measured: Assassination 1.8% (22.46 against 22.06 s), Discipline about 4% on a small test |
+| 2026-11-06 | **A path's level is judged as the build's own** (page-audit L12): `fl_open_search._ttk` takes the build's full allocation and order as an 8th job element, `fl_levels.evaluate` passes it | The 20-60 polish and the order polish read a level before the signature talent as "talent missing" (x0.45) and filed a hybrid's partial build under another spec: a Subtlety order move scored 22% faster and lost the plain 20-60 race; after the fix the same polish kept a move worth 1.3% that held (21.18 -> 21.09 s) |
+| 2026-11-06 | **Save points for the level-60 block** (open idea 0c, user decision): `fl_open_search.SimCache`, `sim_fingerprint`, `LabSim(cache=)`. Every `LabSim.run` result is appended to `open/cache/<class>-<rotation>.simcache.jsonl` (first line: a hash of the engine, tables, class modules, signature rules, tuned rules and data); deleted when the winner is saved; `WOW_FL_SAVEPOINT=0` off | Four blocks of 5-20 h were lost to pauses on 2026-11-04/05. Test: a small search (8,307 simulated builds) run twice with the file kept: the second run read 8,360 results back, simulated none and ended on the same winner and numbers; the polish and the search are deterministic from their seeds, so the replay is complete |
+| 2026-11-06 | **Fire's Pyroblast opener** (user decision, page-audit L2): `mage.PYRO_OPENER`, a rule knob; `rules_retune.py` and `rotation_opt.search` record whether the tuning build casts every required spell (`played_before`, `played_after`) and a set that plays wins over a faster one that does not | The saved Fire rules never cast Pyroblast before Heating Up and were 0.4% faster than the same rules with the opener: a comparison on speed alone would have kept them |
+| 2026-11-06 | **Gear repair wired into the raid lanes** (user decision, page-audit L7-L8): `deep-runs/gear_repair_1103.sh`, `gear_redo_1103.sh`, `raid_rest_1103.sh`, `ml_clear.py`; `raidsim/gear_check.py` (static: items and enchants a set lists that the database lacks, tier-set items outside the pool); `run.check_bench_stderr` stops a run that reports `missing_gear`; `gear_opt.LATER_FACTIONS` | 14 entry sets listed dropped items on every checkout (gear_check, 2026-11-06). A dry run of the shaman's sets on tiny budgets replaced the dropped items and the Signet Ring and wrote nothing |
 
 ## Tested and rejected
 
@@ -122,6 +132,130 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-07 | Rank-3 Seal of Command on Retribution's twist line | Rotation search | Best for mana-hungry builds, but costs the hand draft 0.6% | Rejected by the protection rule; a mana-conditional rank line stays open (below) |
 
 ## Open ideas, ranked by what they could still find
+
+0g. **A long search can mix two versions of the code (found 2026-11-07, the tripwire on lane C)**. `fl_open_search.py warlock`, started
+    2026-11-05 10:20, crashed on 11-07 02:19 at Destruction's 20-60 polish: `module 'fl_signature' has no attribute 'sig_order'`. `_load`
+    re-reads `fl_levels.py` from disk for every rotation, while `fl_signature` stays what the process imported at its start, so the
+    process met the fl_levels.py of 11-06 12:22 with the fl_signature of before 12:14. Affliction and Demonology had finished before the
+    edit. Nothing searched was lost: the level-60 block (36,382 builds) was saved before the crash, the winner 7/12/32 and two finalists
+    stand. Three follow-ups, the first done:
+    - done: `refresh_keys.py` refused a rotation without `done`, so `fix-keys-warlock` would have failed, `fix-open-warlock` and
+      `after warlock` would have been skipped, and the fixes lane would have ended with "fixes lane done" and no warlock. It now takes a
+      rotation with a winner and finalists. Tested on copies of the record. `open-warlock` touched by hand (patch-1103.log).
+    - open: `patch_1103.sh`'s `run` returns 0 on every failure by design, so builds, orders and the race ran on a failed search
+      (harmless here: `open_builds.py` wrote nothing, "record not complete"). A later step should stop or say so when its class's search failed.
+    - open: load `fl_levels.py` once at the start of `fl_open_search.py`, so a process runs one version from end to end. Until then, an
+      edit to a module the search loads per rotation reaches every search already running.
+0f. **After the decisions of 2026-11-06 (user: "Go with your recs"; `_reference/page-audit.md` L)**: what is still open.
+   - **Mobs notice on the first hit, for every class.** The lab's mob runs in from the pull's first second, so every opener is cast
+     under approach; in the game a mob aggros when the first spell lands. Fire's Pyroblast opener (6 s) is modelled under the lab's
+     convention and costs 0.4%; a faithful opener would favour every long first cast (Pyroblast, Starfire, Aimed Shot, Shadow Bolt).
+     A tables knob for all classes, then every leveling rule and record again: for the next full pass, not a patch for one spec.
+   - **A fresh one-tree Survival search.** Its level-60 search ran while every pure Survival build paid the old rule's penalty
+     (melee share 34% against 50%: time divided by 0.61), so the search weighed melee share against speed. The record is redone
+     from the 20-60 race on (polish and certificate under the new rule); a fresh search (5-11 h at 4 processors) is the full answer.
+     The cat rotation and the Beast Mastery one-tree search sat on their floors (80% and 35%) and are redone the same way.
+   - **Which later-phase items a community preset vets** (page-audit L15): Zul'Gurub quest rewards and battleground vendor items of
+     item level 70 or less. The user's knowledge of Forever's launch content decides.
+   - **The cost of the early-talent rule per spec** is measured by the fixes lane's records (`order_signature_first` and the race
+     rows "signature talents late"): report it per spec when the lane ends.
+   - **Mage specs outside the raid lane's ML final** (Fire, Frost, Frostfire) keep talent winners searched in tier sets that held a
+     rank-14 weapon; their sets are re-made, their searches are not.
+0e. **Queue shape and class lists (self-audit 2026-11-06, at the end of lane A of the patch queue)**:
+   - **A fixed class list per lane leaves the machine idle at the end.** Lanes A (rogue, warrior, druid) and B (shaman, mage) ended on
+     2026-11-06 at 05:45 and 00:57. Lane C (hunter, warlock, paladin) holds the two longest classes and the paladin after them, and the
+     one-tree lane waits for `race-warlock`. From 05:45 one search ran: 4 workers on 12 logical processors while the user had asked for
+     full power, and the leveling half now ends when lane C does (the rest of the warlock, then the paladin's three rotations, one after
+     the other). Ideas: one shared class queue with per-class markers from which any free lane takes the next class, or lanes balanced by
+     the hours of the previous run (`minutes` in the records; the warlock's and the hunter's blocks are the longest), and a search's
+     worker count taken from the processors free when it starts.
+   - **Class lists: nine classes, or a line saying why not, and a page check before and after.** The priest was left out twice (the
+     70707 sweep, lesson of 2026-11-02; the patch queue, because the patch did not change it), and both times the capture date had moved
+     for every class, so its pages lost their numbers (`page-audit.md` K1). The check that finds it needs no simulation: for every class,
+     the pick of every leveling slot has current numbers and an order, read from the renderer itself (`render_modes` grid after
+     `own_rotation_only`, `rank_builds`, `leveling_numbers`; 40 lines, this audit's scratch script).
+   - **A one-tree search is bounded by the any-split winner.** When a spec's best build is within the write bar (0.5%) of its rotation's
+     any-split winner, the one-tree search cannot write a build: skip it (druid cat rotation: 22.86 s for the 11/29/11 winner, 22.98 for
+     the Feral page build, so no one-tree Feral search was queued). The same bound says when one is worth its hours: the Assassination
+     page build was at 22.47 s, its one-tree winner came out at 22.06.
+   - **The rules step runs before the orders step**, so a class whose builds lost their orders in a repair has its rules tuned on
+     builds that hold all 51 points from level 10. Measured on the druid with the orders present (dry run, nothing written): the cat's
+     rules come out the same (never cast Shred; 23.74 -> 23.61 s), Balance takes "eat below 50%" where the saved file has 40% (+0.08%
+     between the two). For Fire it flips one knob worth 0.3-0.7% (0d). Small, but free to avoid: orders before rules, or the tuner gives an
+     order-less build the stats model's order as the search's race does.
+   - **The rules step covers a class's pipeline rotations only.** `rotation_opt.py <class> --fresh --write` tunes the pipeline's spec
+     and its extra reports; every other rotation needs `--spec <rotation> --build <build>`. The patch queue's `rules-<class>` step
+     therefore left eight rule files as they were before their class's module was ported to the patch (2026-11-03; the priest
+     2026-10-31): mage `arcane-leveling` and `barrage-frost-leveling` (2026-10-22/23; the port corrected Missile Barrage's numbers),
+     rogue `subtlety-leveling` (10-23: before the rework and before Death Mark became a required spell), warlock
+     `demonology-leveling` and `destruction-leveling` (10-24), paladin `holy-leveling` (10-23), priest `discipline-leveling` and
+     `holy-leveling` (10-23); the warrior's and the paladin's `prot-leveling` have no rule file and were not tried again either. The
+     open searches of this queue ran under those rules. Measured on Subtlety (a continued tune from the saved rules on
+     `subtlety-open-leveling`, nothing written): one new rule, `DEATH_MARK_CP = 1`, 22.44 -> 22.28 s at levels 20-60 (+0.7%) and
+     21.9 -> 21.4 s at 60 (+2.3%, the level the search scores). The priest is the mild case: Shadow's rules from scratch on 2026-11-02
+     gave the time of before its port (25.48 against 25.46 s). Remedy as on 2026-10-15 (`page-audit.md` B24): each file from scratch on
+     its rotation's page pick, the result installed only when it beats the saved rules on the same build (seed 3, 3,000 fights: a
+     from-scratch run can end on a slower set, 2026-10-27), then the open record from the 20-60 race on, builds, races and reports;
+     the rotations whose search has not started first. What was done is in the changes table. Check for every queue: each file under
+     `fightlab/rotations/` of a changed class is newer than the class's last module or data change, or a line says why not.
+0d. **The signature rule is enforced on talents, not on rules and orders (self-audit 2026-11-06, at the mage and hunter class boundaries
+   of the patch queue)**: of the 34 leveling winners on record two fail their spec's signature check, and the talent search that made
+   them could not have fixed either. Three gaps:
+   - **Rules are floor-checked for one spec only.** `rotation_opt` checks the signature floor on its tuning build's spec, and the saved
+     rules apply to every spec of the rotation. The 11-02 patch repair moved the hunter's `leveling-melee` from 9/10/32 to 12/10/29,
+     one point short of Survival, so the 11-03 re-tune of `melee-dps` ran under the Beast-Survival rule (the pet counts: 62%, no floor
+     phase) and dropped the floor rules of 2026-10-24 (never cast Serpent Sting, Immolation Trap above half mana). Pure Survival (the
+     pet does not count) under them: the one-tree winner 8/13/30 at a melee share of 34.0% (Serpent Sting 21%, the cat 26%, the trap
+     10%; 400 fights, level 60, seed 4), 35.4% without the new Raptor Strike rule, 36.5% with no rules, 48.9% with the 10-24 rules
+     (27.57 against 25.11 s per kill). Every pure Survival build pays about the same penalty, so the search optimized speed: the
+     one-tree Survival search (15 h on 11-05/06, after three lost attempts) ended on a refused winner, and the Survival leveling page
+     still shows a build that fails (28%).
+   - **Orders are chosen on speed alone.** `fl_levels.pick_order`, the order polish and `order_repair.py` take the fastest order; only
+     the old pick's win-back asks the signature check. The Fire winner 0/31/20 fails under all three orders, each at the first check
+     level that holds Pyroblast (stats model: 20 and 30; own tree first: 20; own tree last, the chosen one: 40).
+   - **A required spell the lab casts only with a second talent.** The mage module casts Pyroblast on a full Heating Up only
+     (`PYRO_HARDCAST` is 0; the opener is not modelled), so every level that holds Pyroblast without Heating Up fails "cast in every
+     fight", whatever the order. The Fire page builds passed on 11-04 only because the patch repair of 11-02 had dropped their orders
+     (the check then plays the full build at every level); the lane's orders-mage step of 11-06 (00:45-00:57) wrote orders (Pyroblast
+     at 39 and Heating Up at 44 for `fire-leveling`; 20 and 25 for `opt-fire-leveling-leveling-st`) under which both fail, so the
+     next regen would show the Fire page failing. The Fire rules of 11-03 were tuned on those order-less builds: the floor phase never
+     saw the levels in between.
+   Ideas, none applied (the queue was running, and how strict the two rules are is the user's call): (1) run the floor phase on one
+   build of every spec that levels with the rotation, or give a pure spec its own rule file, then re-run the Survival one-tree search
+   under it; (2) qualify the orders as the finalists are (the fastest order that passes at 20-60, plus a move that takes a required
+   talent next to the talent that makes the lab cast it) in `pick_order`, the order polish and `order_repair.py`; (3) Fire: the
+   hard-cast opener where Heating Up is missing, or count Pyroblast from the level the build can cast it; (4) never tune rules on a
+   build without an order, and stop a doomed search early: when no polished family passes its spec's check, say so and skip the three
+   search runs. Checks to add after every class: the verdict of every winner in the class's records, and the signature check of every
+   page build with the orders its orders step wrote.
+   Added 2026-11-06 at the warrior, druid and rogue one-tree boundaries (tiny sims: 600 fights per level, seed 4; nothing applied):
+   - **The Fire module already has the hard cast, as a rule knob** (`mage.PYRO_HARDCAST` in `ROTATION_KNOBS`; the 11-03 rules left it
+     at 0, tuned on order-less builds, which hold Heating Up at every level). Under real orders the knob at 1 is slightly faster for
+     four of five builds (the winner under its chosen order 35.23 -> 35.10 s, own tree first 37.02 -> 36.76, `fire-leveling` 37.00 ->
+     36.83, `opt-fire-leveling-leveling-st` 39.79 -> 39.58; the stats model order 37.44 -> 37.55) and changes no verdict: the lab
+     hard-casts only when the whole cast ends before the mob arrives, which never happens at the first check level that holds Pyroblast
+     (0.00 casts per kill at 20 under own tree first and at 40 under own tree last; 1.08 at 30 with more Fire points). Idea (3) therefore
+     needs either an opener the arriving mob may hit (a new knob value: always open with Pyroblast) or the rule change.
+   - **The other side of the order gap: a signature talent taken last passes with nothing checked.** `assassination-open-leveling` takes
+     Mutilate at 60 (0.0 casts per kill at 20-50, 2.91 at 60), `subtlety-open-leveling` Hemorrhage at 54 and Death Mark at 60,
+     `beast-mastery-open-leveling` Bestial Wrath at 56; the warrior's three winners take theirs at 40. The Assassination winner with its
+     own tree first (Mutilate at 40) is 1.8% slower (22.46 against 22.06 s). Whether a pure spec's order must take its signature talent
+     as early as its tree allows belongs to the same decision (`page-audit.md` K5).
+   - **A rule with one point of margin**: every cat build is at 80.5-81% against the Feral floor of 80%, because Ravage (16% of a cat's
+     damage at 60) is outside the core list (`page-audit.md` K6).
+0c. **A paused leveling search loses its whole polish-and-search block (found 2026-11-05, progress check of the patch queue)**:
+   `fl_open_search.py` saves a rotation only once its winner is known. The family polish and the three search runs before it live in
+   memory, and a restart redoes even a polish that had finished: the family cache of the rotation is written and never read back (the
+   raid side has `family_search --reuse-polish` since 2026-10-31). Evidence: the Fury (warrior), Frostfire (mage), Demonology
+   (warlock) and Survival one-tree (hunter) blocks were each restarted from zero four times between 2026-11-04 11:05 and 2026-11-05
+   10:20 (a reboot and three pauses: run windows of 5-6 h against blocks of 6-9 h at night speed and 11-20 h on four logical
+   processors), about 15 h lost per search, and the leveling half has completed no search since 2026-11-04 08:16. The Fury polish
+   that finished on 11-05 at 05:46 was redone from 10:20 with identical progress lines. Idea: persist the lab results per build
+   (build, fights, seed, plus a fingerprint of the lab code, the class data and the rotation rules; common random numbers make a
+   stored result exact), so a restarted polish and search replay from disk; or read the finished family cache back as the raid side
+   does and journal the polish per pair. A replay is only as fast as the search repeats itself: the Survival polish drew other start
+   builds after the raid lane rewrote the class builds (the starts set the random splits). Until then: change the cores with the
+   balancer alone (`balance_1104.ps1 -Run/-Bench`: no restart, nothing lost) and pause only after a block has logged its winner.
 
 0b. **The hunter's simulator presets are not read (found 2026-11-03)**: `run.sim_presets` finds no preset in `ui/specs/hunter/dps/presets.ts`
    (bac92dbd5 and later: one `Builds` list of preset builds, `Builds.map(build => build.talents!)`), so no hunter entry races or seeds from
@@ -263,6 +397,8 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
 - (2026-10-25) After a leveling queue: every pure spec has a winner filed under it in some record (main or `open/pure/`), not only a
   hybrid that won its shared rotation; the signature audit's page rows show no FAIL (`_reference/signature-audit.md`).
 - (2026-10-25) Every signature spell a leveling rotation requires (`rotations/<class>-<spec>.json` `signature.required`) has a cast path in its fight-lab module's priority for that rotation: a talent the module never presses (Mutilate until 2026-10-25) fails every build of the spec however long the search runs.
+- (2026-11-06) After every class of a leveling queue: `fightlab/signature_audit.py <class>` without `--write` (six classes in a minute): no page row fails; and the pick of every leveling slot has an order and current numbers, read from the renderer itself (`render_modes` grid after `own_rotation_only`, `rank_builds`, `leveling_numbers`; no simulation). Found that way: a class without numbers, a recommended page without a talent table, a hybrid page showing another model's AoE export (`page-audit.md` K1, K2, K7).
+- (2026-11-06) The jump of every leveling winner against the previous record, with its cause named, and the old winner run once on today's data when the jump is unexplained (druid 2026-11-06: Feral 27.6 -> 22.9 s and Balance 42.2 -> 37.3 s, the 11-02 patch as ported on 11-03: Rip, Rake, Ferocious Bite and Pounce +25%, attack-power coefficients, Starfire +40%; warrior Arms -4.7%, Fury -1.2%; Protection +6.6%: the 10-19 winner 0/20/31 takes 30.0 s at 60 today against 27.5 then, so the data or the module moved, not the search; which number moved is not identified). Also the level at which each page build takes its signature talent.
 
 - 2026-10-26 (druid self-audit): `raid_signature.entry_spec` filed the unlabelled builds of a tank entry (a search's "deep: tank", the
   simulator's presets) by split, so the bear rotation search held them to the cat's Feral Combat rule (core share 18-27% against 80%) and

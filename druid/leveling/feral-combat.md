@@ -6,9 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](feral-combat-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md)** (9/30/12) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-12)
+**[Feral Combat — Leveling](../research/leveling/builds/feral-combat-open-leveling.md)** (11/29/11) — [open the talent tree](https://talentsforever.com/druid/60/15002201-51201302123002124-05501-12)
 
-**Signature spells:** 81% of the damage at level 60 in the fight lab comes from melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast in every fight).
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Feral cat), which stays below as the alternative. A model of the beta, to check at launch.
+
+*Signature spells (**Claw**, **Ferocious Bite**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
 
 ## How to play
 
@@ -22,7 +24,7 @@
 4. **Claw** to build combo points.
 5. **Ferocious Bite** (from 24) whenever it will kill the mob, at any number of points.
 6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-23): **Rip** at 2 points while the mob has more than 40% of its health.
-8. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
+7. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
 
 **Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
 
@@ -51,23 +53,50 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 - Under 30% health with the mob still above a quarter of its health: shift out, cast **Regrowth**, then **Cat Form** again. If the mob is lower than that, finish it instead.
 - In the bear levels, **Bash** a mob that starts casting, or when you are low: the fight lab does both.
 
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
+## Talents while leveling
+
+One point per level from 10, in this order:
+
+| Levels | Talent | Points |
+|---|---|---|
+| 10-14 | Ferocity (Feral Combat) | 5 |
+| 15-16 | Feral Swiftness (Feral Combat) | 2 |
+| 17-19 | Thick Hide (Feral Combat) | 3 |
+| 20-21 | Sharpened Claws (Feral Combat) | 2 |
+| 22-23 | Savage Fury (Feral Combat) | 2 |
+| 24 | Furor (Feral Combat) | 1 |
+| 25-27 | Predatory Strikes (Feral Combat) | 3 |
+| 28-29 | Blood Frenzy (Feral Combat) | 2 |
+| 30 | Leader of the Pack (Feral Combat) | 1 |
+| 31-35 | Genesis (Balance) | 5 |
+| 36-37 | Nature's Reach (Balance) | 2 |
+| 38-39 | Nature's Majesty (Balance) | 2 |
+| 40-41 | Natural Instinct (Feral Combat) | 2 |
+| 42-46 | Heart of the Wild (Restoration) | 5 |
+| 47-51 | Naturalist (Restoration) | 5 |
+| 52 | Natural Shapeshifter (Restoration) | 1 |
+| 53 | Brutal Impact (Feral Combat) | 1 |
+| 54 | Feral Charge (Feral Combat) | 1 |
+| 55-58 | Rend and Tear (Feral Combat) | 4 |
+| 59 | Improved Wrath (Balance) | 1 |
+| 60 | Nature's Splendor (Balance) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 21 |
-| 30 | 26 |
-| 40 | 28 |
-| 50 | 29 |
-| 60 | 30 |
+| 20 | 20 |
+| 30 | 22 |
+| 40 | 23 |
+| 50 | 23 |
+| 60 | 24 |
 
 ## Other builds of this spec
 
-- [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-12)
-- [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/30/12, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-12)
+- [Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-12)
+- [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-12)
+- [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-04 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

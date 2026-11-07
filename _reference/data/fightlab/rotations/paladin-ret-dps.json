@@ -7,7 +7,6 @@
    "off": true
   }
  },
- "drink_below": 0.15,
  "class": "paladin",
  "spec": "ret-dps",
  "build": "leveling-retribution",
@@ -18,17 +17,19 @@
   50,
   60
  ],
- "date": "2026-11-02",
+ "date": "2026-11-07",
  "signature": {
   "required": [
    "Judgement"
   ],
   "build_spec": "Retribution",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7837999542766103,
+  "core_share_before": 0.7768658785602747,
   "core_share_after": 1.0,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
@@ -41,8 +42,8 @@
     "Consecration",
     true
    ],
-   "gain_seed1": 0.09903039852695539,
-   "gain_seed2": 0.09804959927831747
+   "gain_seed1": 0.10232208516132202,
+   "gain_seed2": 0.09993871892880735
   },
   {
    "round": 2,
@@ -52,51 +53,40 @@
     "Hammer of Wrath",
     true
    ],
-   "gain_seed1": 0.01351545440484092,
-   "gain_seed2": 0.015627275581702182
-  },
-  {
-   "round": 3,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.003631026296781359,
-   "gain_seed2": 0.004423402105323437
+   "gain_seed1": 0.015252592392534181,
+   "gain_seed2": 0.02029260953637202
   }
  ],
- "weighted_before": 30.426060995676114,
- "weighted_after": 26.90482897825629,
+ "weighted_before": 29.483476935170767,
+ "weighted_after": 25.98851470866179,
  "per_level": {
   "20": {
-   "before": 16.289253874397225,
-   "after": 16.2270999999274,
+   "before": 15.761908821035922,
+   "after": 15.733133333266428,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.771252289768206,
-   "after": 19.78509999988772,
+   "before": 22.143900880994178,
+   "after": 19.258284070154772,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 29.228210706003477,
-   "after": 25.526559120991145,
+   "before": 28.29415350764363,
+   "after": 24.599180732028245,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 33.464411117979466,
-   "after": 28.468415367686397,
+   "before": 32.42266088317083,
+   "after": 27.486858936924598,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 37.232342813585326,
-   "after": 33.63979437386854,
+   "before": 36.07068332865538,
+   "after": 32.44969294725045,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

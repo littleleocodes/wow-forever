@@ -52,6 +52,37 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fire | Accelerant | 5 | 0/5/0 |
+| 15-19 | Fire | Ignite | 5 | 0/10/0 |
+| 20 | Fire | Pyroblast | 1 | 0/11/0 |
+| 21-22 | Fire | Improved Fire Blast | 2 | 0/13/0 |
+| 23-24 | Fire | Burning Soul | 2 | 0/15/0 |
+| 25 | Fire | Heating Up | 1 | 0/16/0 |
+| 26 | Fire | Burning Soul | 1 | 0/17/0 |
+| 27-29 | Fire | Impact | 3 | 0/20/0 |
+| 30 | Fire | Blast Wave | 1 | 0/21/0 |
+| 31 | Fire | Flame Throwing | 1 | 0/22/0 |
+| 32-34 | Fire | Critical Mass | 3 | 0/25/0 |
+| 35-37 | Fire | Fire Power | 3 | 0/28/0 |
+| 38 | Fire | Flame Throwing | 1 | 0/29/0 |
+| 39 | Fire | Improved Scorch | 1 | 0/30/0 |
+| 40 | Fire | Combustion | 1 | 0/31/0 |
+| 41-42 | Frost | Precision | 2 | 0/31/2 |
+| 43-44 | Frost | Frost Warding | 2 | 0/31/4 |
+| 45 | Frost | Precision | 1 | 0/31/5 |
+| 46-48 | Frost | Permafrost | 3 | 0/31/8 |
+| 49-50 | Frost | Frostbite | 2 | 0/31/10 |
+| 51 | Frost | Ice Lance | 1 | 0/31/11 |
+| 52 | Frost | Frostbite | 1 | 0/31/12 |
+| 53-55 | Frost | Frost Channeling | 3 | 0/31/15 |
+| 56 | Frost | Ice Block | 1 | 0/31/16 |
+| 57-58 | Arcane | Arcane Resilience | 2 | 2/31/16 |
+| 59-60 | Arcane | Wand Specialization | 2 | 4/31/16 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — Removing it costs 20.9 points of score in this model.
@@ -67,26 +98,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health; Pyroblast only while the mob has more than 35% health; drink below 15% mana. Together +5.1% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): PYRO_OPENER = 1; Fireball only while the mob has more than 35% health; never cast Scorch; drink below 15% mana; Pyroblast only while the mob has more than 35% health; Frost Nova only above 30% mana; Blast Wave only while the mob has more than 35% health; eat below 40% health. Together +4.7% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/fire-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 0.8 | 1.1 | 1.8 | 1.9 | 2.1 | 5% |
-| Fire Blast | 1.4 | 1.7 | 2.0 | 1.9 | 1.9 | 26% |
-| Fireball | 2.6 | 1.5 | 1.8 | 1.7 | 1.6 | 25% |
-| Ice Lance | 0.8 | 0.9 | 1.1 | 1.2 | 1.1 | 16% |
-| Frost Nova | 0.5 | 0.6 | 0.8 | 0.7 | 0.7 | 1% |
-| Pyroblast | 0.0 | 0.6 | 0.7 | 0.6 | 0.6 | 11% |
-| Blast Wave | 0.0 | 0.2 | 0.3 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 0.1 | 0.2 | 0.2 | 0.2 | 1% |
+| Wand | 1.8 | 2.4 | 3.1 | 3.1 | 2.2 | 5% |
+| Fire Blast | 1.4 | 2.0 | 2.2 | 2.1 | 1.7 | 25% |
+| Fireball | 2.1 | 1.6 | 2.0 | 1.9 | 1.3 | 21% |
+| Ice Lance | 0.0 | 0.0 | 0.0 | 0.0 | 1.1 | 15% |
+| Pyroblast | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
+| Frost Nova | 0.7 | 0.7 | 0.7 | 0.6 | 0.6 | 1% |
+| Blast Wave | 0.0 | 0.3 | 0.3 | 0.2 | 0.2 | 3% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/fire-leveling-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 2/33/16 -> 4/31/16; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Accelerant (tier gating for Flame Throwing); +1 Accelerant (tier gating for Flame Throwing); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Improved Scorch (over 51); -1 Improved Scorch (over 51); -1 Missile Barrage (over 51); -1 Missile Barrage (over 51); -1 Improved Channeling (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 39.6 s per kill; stats model 39.9 s; own tree last 39.9 s.
 
 ## Open questions (verify in the live game)
 

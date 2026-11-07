@@ -50,6 +50,37 @@ The Fire leveling build derived on 2026-09-30 (derive_leveling.py): searched in 
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fire | Accelerant | 5 | 0/5/0 |
+| 15-19 | Fire | Ignite | 5 | 0/10/0 |
+| 20 | Fire | Pyroblast | 1 | 0/11/0 |
+| 21-22 | Frost | Precision | 2 | 0/11/2 |
+| 23-24 | Frost | Frost Warding | 2 | 0/11/4 |
+| 25 | Frost | Precision | 1 | 0/11/5 |
+| 26 | Frost | Permafrost | 1 | 0/11/6 |
+| 27-29 | Frost | Frostbite | 3 | 0/11/9 |
+| 30 | Frost | Ice Shards | 1 | 0/11/10 |
+| 31 | Frost | Ice Lance | 1 | 0/11/11 |
+| 32-35 | Frost | Ice Shards | 4 | 0/11/15 |
+| 36 | Frost | Ice Block | 1 | 0/11/16 |
+| 37-39 | Frost | Shatter | 3 | 0/11/19 |
+| 40-41 | Fire | Improved Fire Blast | 2 | 0/13/19 |
+| 42-43 | Fire | Burning Soul | 2 | 0/15/19 |
+| 44 | Fire | Heating Up | 1 | 0/16/19 |
+| 45 | Fire | Burning Soul | 1 | 0/17/19 |
+| 46 | Fire | Impact | 1 | 0/18/19 |
+| 47-48 | Fire | Improved Scorch | 2 | 0/20/19 |
+| 49 | Fire | Blast Wave | 1 | 0/21/19 |
+| 50 | Fire | Improved Scorch | 1 | 0/22/19 |
+| 51-53 | Fire | Critical Mass | 3 | 0/25/19 |
+| 54-56 | Fire | Fire Power | 3 | 0/28/19 |
+| 57-58 | Fire | Master of Elements | 2 | 0/30/19 |
+| 59 | Fire | Combustion | 1 | 0/31/19 |
+| 60 | Fire | Master of Elements | 1 | 0/32/19 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — The scorer's value in this build: +38.5% of its score (model fire-leveling).
@@ -75,6 +106,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
 - 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Heating Up (tier gating for Combustion); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.9 s per kill; stats model 38.8 s; own tree first 38.2 s.
+- 2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Pyroblast at 20 (was 39); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.
 
 ## Open questions (verify in the live game)
 

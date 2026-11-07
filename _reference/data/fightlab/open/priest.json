@@ -188,7 +188,7 @@
      ]
     },
     "split": "30/0/21",
-    "picked_by": "the 20-60 race (the polish's gain at levels 40-60 did not hold at 20-60)"
+    "picked_by": "the 20-60 race among the finalists"
    },
    "runs_agree": 2,
    "simulated_builds": 23417,
@@ -472,99 +472,87 @@
      "points": 3
     },
     {
-     "levels": "25-27",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 3
-    },
-    {
-     "levels": "28",
+     "levels": "25",
      "tree": "Discipline",
      "talent": "Mental Agility",
      "points": 1
     },
     {
-     "levels": "29",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 1
-    },
-    {
-     "levels": "30",
+     "levels": "26",
      "tree": "Discipline",
      "talent": "Inner Focus",
      "points": 1
     },
     {
-     "levels": "31",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 1
-    },
-    {
-     "levels": "32-35",
-     "tree": "Shadow",
-     "talent": "Shadow Focus",
-     "points": 4
-    },
-    {
-     "levels": "36-37",
-     "tree": "Shadow",
-     "talent": "Blackout",
-     "points": 2
-    },
-    {
-     "levels": "38-39",
-     "tree": "Shadow",
-     "talent": "Improved Mind Blast",
-     "points": 2
-    },
-    {
-     "levels": "40-41",
-     "tree": "Shadow",
-     "talent": "Improved Shadow Word: Pain",
-     "points": 2
-    },
-    {
-     "levels": "42-44",
-     "tree": "Shadow",
-     "talent": "Shadow Weaving",
-     "points": 3
-    },
-    {
-     "levels": "45-46",
-     "tree": "Shadow",
-     "talent": "Dark Inspiration",
-     "points": 2
-    },
-    {
-     "levels": "47",
+     "levels": "27",
      "tree": "Discipline",
      "talent": "Improved Power Word: Shield",
      "points": 1
     },
     {
-     "levels": "48-49",
+     "levels": "28-29",
      "tree": "Discipline",
      "talent": "Improved Inner Fire",
      "points": 2
     },
     {
-     "levels": "50",
-     "tree": "Shadow",
-     "talent": "Devouring Contagion",
-     "points": 1
-    },
-    {
-     "levels": "51",
+     "levels": "30",
      "tree": "Discipline",
      "talent": "Penance",
      "points": 1
     },
     {
-     "levels": "52",
+     "levels": "31-35",
+     "tree": "Shadow",
+     "talent": "Spirit Tap",
+     "points": 5
+    },
+    {
+     "levels": "36-39",
+     "tree": "Shadow",
+     "talent": "Shadow Focus",
+     "points": 4
+    },
+    {
+     "levels": "40-41",
+     "tree": "Shadow",
+     "talent": "Blackout",
+     "points": 2
+    },
+    {
+     "levels": "42-43",
+     "tree": "Shadow",
+     "talent": "Improved Mind Blast",
+     "points": 2
+    },
+    {
+     "levels": "44-45",
+     "tree": "Shadow",
+     "talent": "Improved Shadow Word: Pain",
+     "points": 2
+    },
+    {
+     "levels": "46-48",
+     "tree": "Shadow",
+     "talent": "Shadow Weaving",
+     "points": 3
+    },
+    {
+     "levels": "49-50",
+     "tree": "Shadow",
+     "talent": "Dark Inspiration",
+     "points": 2
+    },
+    {
+     "levels": "51",
      "tree": "Discipline",
      "talent": "Improved Inner Fire",
+     "points": 1
+    },
+    {
+     "levels": "52",
+     "tree": "Shadow",
+     "talent": "Devouring Contagion",
      "points": 1
     },
     {
@@ -594,46 +582,16 @@
    ],
    "race": {
     "discipline-leveling": {
-     "weighted": 46.22,
+     "weighted": 45.95,
      "levels": {
       "20": 40.59,
-      "30": 42.19,
-      "40": 50.56,
-      "50": 47.56,
+      "30": 41.17,
+      "40": 50.25,
+      "50": 47.32,
       "60": 46.11
      }
     },
-    "finalist 30/0/21 (stats model order)": {
-     "weighted": 40.68,
-     "levels": {
-      "20": 36.7,
-      "30": 38.62,
-      "40": 46.43,
-      "50": 39.24,
-      "60": 40.41
-     }
-    },
-    "finalist 30/0/21 (own tree first order)": {
-     "weighted": 43.13,
-     "levels": {
-      "20": 39.88,
-      "30": 41.67,
-      "40": 48.76,
-      "50": 44.06,
-      "60": 40.41
-     }
-    },
-    "finalist 30/0/21 (own tree last order)": {
-     "weighted": 40.68,
-     "levels": {
-      "20": 36.7,
-      "30": 38.62,
-      "40": 46.43,
-      "50": 39.24,
-      "60": 40.41
-     }
-    },
-    "open winner": {
+    "discipline-open-leveling": {
      "weighted": 39.52,
      "levels": {
       "20": 39.43,
@@ -643,16 +601,35 @@
       "60": 39.71
      }
     },
-    "finalist 30/0/21 (stats model order, before the order polish)": {
-     "weighted": 40.5,
+    "open winner": {
+     "weighted": 41.45,
      "levels": {
       "20": 39.43,
-      "30": 37.81,
-      "40": 42.38,
+      "30": 40.66,
+      "40": 44.98,
       "50": 41.98,
       "60": 39.71
-     },
-     "signature": "OK"
+     }
+    },
+    "finalist 30/0/21 (own tree first order)": {
+     "weighted": 42.23,
+     "levels": {
+      "20": 39.43,
+      "30": 40.66,
+      "40": 47.66,
+      "50": 42.97,
+      "60": 39.71
+     }
+    },
+    "finalist 30/0/21 (own tree last order)": {
+     "weighted": 41.45,
+     "levels": {
+      "20": 39.43,
+      "30": 40.66,
+      "40": 44.98,
+      "50": 41.98,
+      "60": 39.71
+     }
     }
    },
    "order_stats": [
@@ -699,88 +676,76 @@
      "points": 3
     },
     {
-     "levels": "25-27",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 3
-    },
-    {
-     "levels": "28",
+     "levels": "25",
      "tree": "Discipline",
      "talent": "Mental Agility",
      "points": 1
     },
     {
-     "levels": "29",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 1
-    },
-    {
-     "levels": "30",
+     "levels": "26",
      "tree": "Discipline",
      "talent": "Inner Focus",
      "points": 1
     },
     {
-     "levels": "31",
-     "tree": "Shadow",
-     "talent": "Spirit Tap",
-     "points": 1
-    },
-    {
-     "levels": "32-35",
-     "tree": "Shadow",
-     "talent": "Shadow Focus",
-     "points": 4
-    },
-    {
-     "levels": "36-37",
-     "tree": "Shadow",
-     "talent": "Blackout",
-     "points": 2
-    },
-    {
-     "levels": "38-39",
-     "tree": "Shadow",
-     "talent": "Improved Mind Blast",
-     "points": 2
-    },
-    {
-     "levels": "40-41",
-     "tree": "Shadow",
-     "talent": "Improved Shadow Word: Pain",
-     "points": 2
-    },
-    {
-     "levels": "42-44",
-     "tree": "Shadow",
-     "talent": "Shadow Weaving",
-     "points": 3
-    },
-    {
-     "levels": "45-46",
-     "tree": "Shadow",
-     "talent": "Dark Inspiration",
-     "points": 2
-    },
-    {
-     "levels": "47",
+     "levels": "27",
      "tree": "Discipline",
      "talent": "Improved Power Word: Shield",
      "points": 1
     },
     {
-     "levels": "48-49",
+     "levels": "28-29",
      "tree": "Discipline",
      "talent": "Improved Inner Fire",
      "points": 2
     },
     {
-     "levels": "50",
+     "levels": "30",
      "tree": "Discipline",
      "talent": "Penance",
      "points": 1
+    },
+    {
+     "levels": "31-35",
+     "tree": "Shadow",
+     "talent": "Spirit Tap",
+     "points": 5
+    },
+    {
+     "levels": "36-39",
+     "tree": "Shadow",
+     "talent": "Shadow Focus",
+     "points": 4
+    },
+    {
+     "levels": "40-41",
+     "tree": "Shadow",
+     "talent": "Blackout",
+     "points": 2
+    },
+    {
+     "levels": "42-43",
+     "tree": "Shadow",
+     "talent": "Improved Mind Blast",
+     "points": 2
+    },
+    {
+     "levels": "44-45",
+     "tree": "Shadow",
+     "talent": "Improved Shadow Word: Pain",
+     "points": 2
+    },
+    {
+     "levels": "46-48",
+     "tree": "Shadow",
+     "talent": "Shadow Weaving",
+     "points": 3
+    },
+    {
+     "levels": "49-50",
+     "tree": "Shadow",
+     "talent": "Dark Inspiration",
+     "points": 2
     },
     {
      "levels": "51",
@@ -821,74 +786,43 @@
    ],
    "order_stats_split": "30/0/21",
    "level_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      40,
      50,
      60
     ],
     "from": "30/0/21",
-    "steps": [
-     {
-      "round": 1,
-      "split": "30/0/21",
-      "seed1": -0.1983,
-      "seed2": -0.1981,
-      "seconds_40_60": 53.18
-     },
-     {
-      "round": 2,
-      "split": "30/0/21",
-      "seed1": -0.2099,
-      "seed2": -0.2106,
-      "seconds_40_60": 41.98
-     },
-     {
-      "round": 3,
-      "split": "30/0/21",
-      "seed1": -0.0057,
-      "seed2": -0.0067,
-      "seconds_40_60": 41.69
-     },
-     {
-      "round": 4,
-      "split": "30/0/21",
-      "seed1": -0.0055,
-      "seed2": -0.0057,
-      "seconds_40_60": 41.46
-     }
-    ],
-    "neighbours_tried": 200,
-    "minutes": 9.6,
+    "steps": [],
+    "neighbours_tried": 40,
+    "minutes": 7.9,
     "changed": false
    },
-   "order_label": "polished from the stats model order",
+   "order_signature_first": {
+    "date": "2026-11-06",
+    "moved_in": [
+     "own tree last"
+    ]
+   },
+   "order_label": "stats model",
    "orders_raced": "30/0/21",
    "order_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      30,
      40,
      50
     ],
     "from": "stats model",
-    "steps": [
-     {
-      "round": 1,
-      "change": "Improved Inner Fire: 48-49/51 -> 48-49/52; Devouring Contagion: 52 -> 50; Penance: 50 -> 51",
-      "seed1": -0.0468,
-      "seed2": -0.041,
-      "seconds_30_50": 78.83
-     }
-    ],
-    "minutes": 0.9,
-    "changed": true
+    "steps": [],
+    "minutes": 3.2,
+    "changed": false
    },
    "split": "30/0/21",
    "family": "Discipline",
    "link": "https://talentsforever.com/priest/60/525020231133201--42522000020301-7",
-   "ours_best": "discipline-leveling",
-   "gain_vs_ours": 0.1695,
+   "ours_best": "discipline-open-leveling",
+   "gain_vs_ours": -0.0466,
    "values": {
     "Spirit Tap": {
      "ranks": 5,
@@ -993,7 +927,7 @@
    },
    "values_base": 39.76,
    "synergy": {
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "winner": "30/0/21",
     "relevant": 39,
     "missing": 20,
@@ -2951,8 +2885,8 @@
       "kind": "swap"
      },
      "Prayer of Mending + Shadow Weaving": {
-      "gain": -1.0,
-      "interaction": -0.9904,
+      "gain": -0.0096,
+      "interaction": -0.0,
       "kind": "swap"
      },
      "Prayer of Mending + Devouring Contagion": {
@@ -7691,7 +7625,7 @@
       "removed": {
        "Shadow Weaving": 3
       },
-      "gain": -1.0
+      "gain": -0.00963
      },
      "Prayer of Mending - Devouring Contagion": {
       "added": {
@@ -9935,12 +9869,12 @@
       "gain": -0.02916
      }
     },
-    "minutes": 2.0
+    "minutes": 9.9
    },
    "signature": {
     "spec": "Discipline",
     "rotation": "discipline-leveling",
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "30/0/21",
     "ok": true,
@@ -9959,34 +9893,35 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Penance": {
       "20": 0.0,
-      "30": 0.0,
-      "40": 0.0,
-      "50": 0.0,
+      "30": 1.01,
+      "40": 1.03,
+      "50": 1.0,
       "60": 1.0
      },
      "Smite": {
       "20": 1.44,
-      "30": 1.53,
-      "40": 1.63,
-      "50": 1.52,
+      "30": 1.16,
+      "40": 1.45,
+      "50": 1.43,
       "60": 1.22
      }
     },
-    "fingerprint": "b71c1acc215f"
+    "fingerprint": "e47dee16dfbf"
    },
-   "minutes": 101.8,
+   "minutes": 28.0,
    "done": true,
-   "date": "2026-10-23",
+   "date": "2026-11-06",
    "builds": {
     "written": [
      "discipline-open-leveling"
     ],
     "why": null,
     "spec": "Discipline",
-    "date": "2026-10-23"
+    "date": "2026-11-06"
    }
   },
   "holy-leveling": {
@@ -10180,7 +10115,7 @@
      ]
     },
     "split": "22/21/8",
-    "picked_by": "the 20-60 polish after the race"
+    "picked_by": "the 20-60 race among the finalists"
    },
    "runs_agree": 3,
    "simulated_builds": 40040,
@@ -10532,16 +10467,16 @@
      "points": 1
     },
     {
-     "levels": "53-54",
-     "tree": "Holy",
-     "talent": "Searing Light",
-     "points": 2
-    },
-    {
-     "levels": "55-57",
+     "levels": "53-55",
      "tree": "Holy",
      "talent": "Improved Healing",
      "points": 3
+    },
+    {
+     "levels": "56-57",
+     "tree": "Holy",
+     "talent": "Searing Light",
+     "points": 2
     },
     {
      "levels": "58",
@@ -10557,10 +10492,21 @@
     }
    ],
    "race": {
-    "finalist 25/17/9": {
-     "weighted": 52.15,
+    "finalist 22/17/12": {
+     "weighted": 51.79,
      "levels": {
-      "20": 43.03,
+      "20": 42.85,
+      "30": 48.42,
+      "40": 59.4,
+      "50": 55.37,
+      "60": 48.4
+     },
+     "signature": "OK"
+    },
+    "finalist 25/17/9": {
+     "weighted": 52.18,
+     "levels": {
+      "20": 43.3,
       "30": 49.1,
       "40": 60.23,
       "50": 55.56,
@@ -10569,30 +10515,29 @@
      "signature": "OK"
     },
     "holy-leveling": {
-     "weighted": 55.83,
+     "weighted": 55.86,
      "levels": {
-      "20": 44.34,
+      "20": 44.57,
       "30": 50.53,
       "40": 62.56,
       "50": 58.25,
       "60": 55.81
      }
     },
-    "finalist 22/17/12 (before the 20-60 polish)": {
-     "weighted": 51.76,
+    "open winner": {
+     "weighted": 51.42,
      "levels": {
-      "20": 42.58,
-      "30": 48.42,
-      "40": 59.4,
-      "50": 55.37,
-      "60": 48.4
-     },
-     "signature": "OK"
+      "20": 42.85,
+      "30": 49.05,
+      "40": 58.64,
+      "50": 53.64,
+      "60": 48.79
+     }
     },
     "finalist 22/21/8 (stats model order)": {
-     "weighted": 51.65,
+     "weighted": 51.68,
      "levels": {
-      "20": 42.58,
+      "20": 42.85,
       "30": 48.42,
       "40": 59.63,
       "50": 54.27,
@@ -10600,29 +10545,19 @@
      }
     },
     "finalist 22/21/8 (own tree last order)": {
-     "weighted": 53.71,
+     "weighted": 53.73,
      "levels": {
-      "20": 42.78,
+      "20": 43.05,
       "30": 55.45,
       "40": 63.23,
       "50": 55.31,
       "60": 48.79
      }
     },
-    "open winner": {
-     "weighted": 51.39,
-     "levels": {
-      "20": 42.58,
-      "30": 49.05,
-      "40": 58.64,
-      "50": 53.64,
-      "60": 48.79
-     }
-    },
     "finalist 22/21/8 (own tree first order, before the order polish)": {
-     "weighted": 51.52,
+     "weighted": 51.55,
      "levels": {
-      "20": 42.58,
+      "20": 42.85,
       "30": 49.05,
       "40": 58.64,
       "50": 54.18,
@@ -10752,16 +10687,16 @@
      "points": 4
     },
     {
-     "levels": "52-53",
-     "tree": "Holy",
-     "talent": "Searing Light",
-     "points": 2
-    },
-    {
-     "levels": "54-56",
+     "levels": "52-54",
      "tree": "Holy",
      "talent": "Improved Healing",
      "points": 3
+    },
+    {
+     "levels": "55-56",
+     "tree": "Holy",
+     "talent": "Searing Light",
+     "points": 2
     },
     {
      "levels": "57",
@@ -10784,30 +10719,22 @@
    ],
    "order_stats_split": "22/21/8",
    "level_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      40,
      50,
      60
     ],
-    "from": "22/17/12",
-    "steps": [
-     {
-      "round": 1,
-      "split": "22/21/8",
-      "seed1": -0.2304,
-      "seed2": -0.2288,
-      "seconds_40_60": 53.5
-     }
-    ],
-    "neighbours_tried": 80,
-    "minutes": 2.3,
-    "changed": true
+    "from": "22/21/8",
+    "steps": [],
+    "neighbours_tried": 40,
+    "minutes": 5.7,
+    "changed": false
    },
    "order_label": "polished from the own tree first order",
    "orders_raced": "22/21/8",
    "order_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      30,
      40,
@@ -10818,14 +10745,19 @@
      {
       "round": 1,
       "change": "Divine Fury: 47/49-52 -> 47-51; Holy Nova: 48 -> 52",
-      "seed1": -0.0034,
-      "seed2": -0.0037,
-      "seconds_30_50": 72.93
+      "seed1": -0.0032,
+      "seed2": -0.0035,
+      "seconds_30_50": 77.19
      }
     ],
-    "minutes": 0.5,
+    "minutes": 1.7,
     "changed": true
    },
+   "split": "22/21/8",
+   "family": "Hybrid Discipline/Holy",
+   "link": "https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7",
+   "ours_best": "holy-leveling",
+   "gain_vs_ours": 0.0863,
    "values": {
     "Meditation": {
      "ranks": 3,
@@ -10934,13 +10866,8 @@
     }
    },
    "values_base": 48.87,
-   "split": "22/21/8",
-   "family": "Hybrid Discipline/Holy",
-   "link": "https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7",
-   "ours_best": "holy-leveling",
-   "gain_vs_ours": 0.0864,
    "synergy": {
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "winner": "22/21/8",
     "relevant": 39,
     "missing": 22,
@@ -19720,12 +19647,12 @@
       "gain": -0.01593
      }
     },
-    "minutes": 1.4
+    "minutes": 5.5
    },
    "signature": {
     "spec": "Hybrid Discipline/Holy",
     "rotation": "holy-leveling",
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "22/21/8",
     "ok": true,
@@ -19742,9 +19669,10 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Smite": {
-      "20": 3.69,
+      "20": 3.71,
       "30": 4.73,
       "40": 5.96,
       "50": 6.48,
@@ -19758,18 +19686,18 @@
       "60": 1.39
      }
     },
-    "fingerprint": "4d6fbc39f29b"
+    "fingerprint": "667524130858"
    },
-   "minutes": 84.8,
+   "minutes": 18.3,
    "done": true,
-   "date": "2026-10-23",
+   "date": "2026-11-06",
    "builds": {
     "written": [
      "smite-open-leveling"
     ],
     "why": null,
     "spec": "Hybrid Discipline/Holy",
-    "date": "2026-10-23"
+    "date": "2026-11-06"
    }
   },
   "shadow-dps": {
@@ -19947,7 +19875,7 @@
      ]
     },
     "split": "13/3/35",
-    "picked_by": "the 20-60 polish after the race"
+    "picked_by": "the 20-60 race among the finalists"
    },
    "runs_agree": 3,
    "simulated_builds": 45475,
@@ -20213,28 +20141,22 @@
      "points": 1
     },
     {
-     "levels": "25-26",
+     "levels": "25-27",
      "tree": "Shadow",
      "talent": "Dark Inspiration",
-     "points": 2
+     "points": 3
     },
     {
-     "levels": "27-29",
+     "levels": "28-30",
      "tree": "Shadow",
      "talent": "Shadow Weaving",
      "points": 3
     },
     {
-     "levels": "30-33",
+     "levels": "31-34",
      "tree": "Shadow",
      "talent": "Improved Mind Blast",
      "points": 4
-    },
-    {
-     "levels": "34",
-     "tree": "Shadow",
-     "talent": "Dark Inspiration",
-     "points": 1
     },
     {
      "levels": "35",
@@ -20305,115 +20227,104 @@
    ],
    "race": {
     "finalist 14/3/34": {
-     "weighted": 30.25,
+     "weighted": 30.37,
      "levels": {
-      "20": 29.74,
-      "30": 31.34,
-      "40": 37.89,
-      "50": 35.58,
-      "60": 20.33
+      "20": 29.8,
+      "30": 31.85,
+      "40": 38.01,
+      "50": 35.56,
+      "60": 20.41
      },
      "signature": "OK"
     },
     "leveling-shadow": {
-     "weighted": 25.46,
+     "weighted": 25.48,
      "levels": {
-      "20": 35.01,
-      "30": 35.38,
+      "20": 35.0,
+      "30": 35.45,
       "40": 23.0,
-      "50": 22.28,
-      "60": 21.6
+      "50": 22.26,
+      "60": 21.66
      }
     },
     "opt-shadow-dps-leveling-st": {
-     "weighted": 30.44,
+     "weighted": 30.6,
      "levels": {
-      "20": 30.44,
-      "30": 31.26,
-      "40": 36.22,
-      "50": 36.5,
-      "60": 21.12
+      "20": 30.5,
+      "30": 31.81,
+      "40": 36.48,
+      "50": 36.53,
+      "60": 21.16
      }
     },
     "opt-shadow-dps-solo-60": {
-     "weighted": 24.97,
+     "weighted": 24.99,
      "levels": {
-      "20": 33.07,
-      "30": 34.75,
-      "40": 22.91,
-      "50": 22.12,
-      "60": 21.12
+      "20": 33.15,
+      "30": 34.81,
+      "40": 22.92,
+      "50": 22.11,
+      "60": 21.16
      }
     },
     "opt-shadow-dps-leveling-aoe": {
      "weighted": 28.67,
      "levels": {
-      "20": 35.51,
-      "30": 38.03,
-      "40": 27.56,
-      "50": 26.74,
-      "60": 24.06
+      "20": 35.53,
+      "30": 38.01,
+      "40": 27.55,
+      "50": 26.7,
+      "60": 24.11
      }
     },
     "shadow-open-leveling": {
-     "weighted": 24.47,
+     "weighted": 24.43,
      "levels": {
-      "20": 32.92,
-      "30": 35.8,
-      "40": 21.78,
-      "50": 21.36,
-      "60": 20.38
-     }
-    },
-    "finalist 13/3/35 (before the 20-60 polish)": {
-     "weighted": 29.62,
-     "levels": {
-      "20": 29.74,
-      "30": 31.36,
-      "40": 36.41,
-      "50": 34.26,
-      "60": 20.29
-     },
-     "signature": "OK"
-    },
-    "finalist 13/3/35 (stats model order)": {
-     "weighted": 24.55,
-     "levels": {
-      "20": 32.37,
-      "30": 36.28,
-      "40": 22.04,
-      "50": 21.41,
-      "60": 20.35
-     }
-    },
-    "finalist 13/3/35 (own tree last order)": {
-     "weighted": 31.6,
-     "levels": {
-      "20": 32.72,
-      "30": 35.27,
-      "40": 38.6,
-      "50": 36.83,
-      "60": 20.35
+      "20": 32.43,
+      "30": 35.47,
+      "40": 22.03,
+      "50": 21.31,
+      "60": 20.44
      }
     },
     "open winner": {
-     "weighted": 24.39,
+     "weighted": 24.41,
      "levels": {
-      "20": 32.37,
-      "30": 35.4,
-      "40": 22.04,
+      "20": 32.43,
+      "30": 35.33,
+      "40": 22.03,
       "50": 21.31,
-      "60": 20.35
+      "60": 20.44
+     }
+    },
+    "finalist 13/3/35 (stats model order)": {
+     "weighted": 24.58,
+     "levels": {
+      "20": 32.43,
+      "30": 36.3,
+      "40": 22.03,
+      "50": 21.42,
+      "60": 20.44
+     }
+    },
+    "finalist 13/3/35 (own tree last order)": {
+     "weighted": 31.72,
+     "levels": {
+      "20": 32.92,
+      "30": 35.86,
+      "40": 38.64,
+      "50": 36.77,
+      "60": 20.44
      }
     },
     "finalist 13/3/35 (own tree first order, before the order polish)": {
-     "weighted": 24.52,
+     "weighted": 24.55,
      "levels": {
-      "20": 32.37,
-      "30": 36.28,
-      "40": 22.04,
+      "20": 32.43,
+      "30": 36.3,
+      "40": 22.03,
       "50": 21.31,
-      "60": 20.35
+      "60": 20.44
      }
     }
    },
@@ -20547,30 +20458,22 @@
    ],
    "order_stats_split": "13/3/35",
    "level_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      40,
      50,
      60
     ],
     "from": "13/3/35",
-    "steps": [
-     {
-      "round": 1,
-      "split": "13/3/35",
-      "seed1": -0.5833,
-      "seed2": -0.5823,
-      "seconds_40_60": 21.1
-     }
-    ],
-    "neighbours_tried": 80,
-    "minutes": 1.5,
-    "changed": true
+    "steps": [],
+    "neighbours_tried": 40,
+    "minutes": 3.5,
+    "changed": false
    },
    "order_label": "polished from the own tree first order",
    "orders_raced": "13/3/35",
    "order_polish": {
-    "date": "2026-10-23",
+    "date": "2026-11-06",
     "levels": [
      30,
      40,
@@ -20580,25 +20483,30 @@
     "steps": [
      {
       "round": 1,
-      "change": "Improved Mind Blast: 24/28-31 -> 24/30-33; Dark Inspiration: 32-34/43-44 -> 25-26/34/43-44; Shadow Weaving: 25-27 -> 27-29",
+      "change": "Improved Mind Blast: 24/28-31 -> 24/31-34; Dark Inspiration: 32-34/43-44 -> 25-27/43-44; Shadow Weaving: 25-27 -> 28-30",
       "seed1": -0.0072,
-      "seed2": -0.0129,
-      "seconds_30_50": 25.01
+      "seed2": -0.0125,
+      "seconds_30_50": 25.03
      }
     ],
-    "minutes": 0.1,
+    "minutes": 0.3,
     "changed": true
    },
+   "split": "13/3/35",
+   "family": "Shadow",
+   "link": "https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7",
+   "ours_best": "shadow-open-leveling",
+   "gain_vs_ours": 0.0008,
    "values": {
     "Shadowform": {
      "ranks": 1,
-     "seconds": 11.27,
-     "per_point": 11.27
+     "seconds": 11.57,
+     "per_point": 11.57
     },
     "Mind Flay": {
      "ranks": 1,
-     "seconds": 5.06,
-     "per_point": 5.06
+     "seconds": 6.67,
+     "per_point": 6.67
     },
     "Spirit Tap": {
      "ranks": 5,
@@ -20607,62 +20515,62 @@
     },
     "Darkness": {
      "ranks": 5,
-     "seconds": 1.24,
-     "per_point": 0.25
-    },
-    "Improved Mind Flay": {
-     "ranks": 2,
-     "seconds": 1.2,
-     "per_point": 0.6
+     "seconds": 1.48,
+     "per_point": 0.3
     },
     "Vampiric Embrace": {
      "ranks": 1,
-     "seconds": 1.04,
-     "per_point": 1.04
+     "seconds": 1.39,
+     "per_point": 1.39
+    },
+    "Improved Mind Flay": {
+     "ranks": 2,
+     "seconds": 1.21,
+     "per_point": 0.61
     },
     "Meditation": {
      "ranks": 3,
-     "seconds": 0.96,
-     "per_point": 0.32
+     "seconds": 0.93,
+     "per_point": 0.31
     },
     "Improved Mind Blast": {
      "ranks": 5,
-     "seconds": 0.88,
+     "seconds": 0.91,
      "per_point": 0.18
     },
     "Dark Inspiration": {
      "ranks": 5,
-     "seconds": 0.82,
-     "per_point": 0.16
+     "seconds": 0.85,
+     "per_point": 0.17
     },
     "Shadow Weaving": {
      "ranks": 3,
-     "seconds": 0.73,
-     "per_point": 0.24
+     "seconds": 0.83,
+     "per_point": 0.28
     },
     "Early Demise": {
      "ranks": 1,
-     "seconds": 0.63,
-     "per_point": 0.63
+     "seconds": 0.56,
+     "per_point": 0.56
     },
     "Shadow Focus": {
      "ranks": 4,
-     "seconds": 0.48,
-     "per_point": 0.12
+     "seconds": 0.5,
+     "per_point": 0.13
     },
     "Twin Disciplines": {
      "ranks": 5,
-     "seconds": 0.34,
+     "seconds": 0.37,
      "per_point": 0.07
     },
     "Twilight Focus": {
      "ranks": 3,
-     "seconds": 0.22,
+     "seconds": 0.21,
      "per_point": 0.07
     },
     "Mental Strength": {
      "ranks": 3,
-     "seconds": 0.02,
+     "seconds": 0.03,
      "per_point": 0.01
     },
     "Shadow Reach": {
@@ -20676,14 +20584,9 @@
      "per_point": 0.0
     }
    },
-   "values_base": 20.34,
-   "split": "13/3/35",
-   "family": "Shadow",
-   "link": "https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7",
-   "ours_best": "shadow-open-leveling",
-   "gain_vs_ours": 0.0033,
+   "values_base": 20.42,
    "synergy": {
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "winner": "13/3/35",
     "relevant": 39,
     "missing": 25,
@@ -29637,12 +29540,12 @@
       "gain": -0.40656
      }
     },
-    "minutes": 0.9
+    "minutes": 3.3
    },
    "signature": {
     "spec": "Shadow",
     "rotation": "shadow-dps",
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "13/3/35",
     "ok": true,
@@ -29662,6 +29565,7 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Shadow Word: Pain": {
       "20": 1.0,
@@ -29679,74 +29583,74 @@
      },
      "Mind Flay": {
       "20": 2.92,
-      "30": 3.23,
+      "30": 3.24,
       "40": 2.3,
       "50": 2.08,
       "60": 2.03
      }
     },
-    "fingerprint": "68bfec6f68aa"
+    "fingerprint": "f605e15dd9ff"
    },
-   "minutes": 52.0,
+   "minutes": 11.2,
    "done": true,
-   "date": "2026-10-23",
+   "date": "2026-11-06",
    "builds": {
     "written": [
      "shadow-open-leveling"
     ],
     "why": null,
     "spec": "Shadow",
-    "date": "2026-10-23"
+    "date": "2026-11-06"
    }
   }
  },
  "cross": {
-  "discipline-leveling": {
-   "own": 39.52,
-   "tested": {
-    "holy-leveling": 52.61,
-    "shadow-dps": 34.41
-   },
-   "best": "shadow-dps",
-   "best_seconds": 34.41,
-   "levels": {
-    "20": 30.47,
-    "30": 31.57,
-    "40": 34.39,
-    "50": 34.68,
-    "60": 36.93
-   }
-  },
   "holy-leveling": {
-   "own": 51.39,
+   "own": 51.42,
    "tested": {
     "discipline-leveling": 42.33,
-    "shadow-dps": 37.09
+    "shadow-dps": 37.25
    },
    "best": "shadow-dps",
-   "best_seconds": 37.09,
+   "best_seconds": 37.25,
    "levels": {
-    "20": 30.74,
-    "30": 34.65,
-    "40": 37.2,
-    "50": 38.63,
-    "60": 39.08
+    "20": 30.82,
+    "30": 35.14,
+    "40": 37.53,
+    "50": 38.72,
+    "60": 39.03
    }
   },
   "shadow-dps": {
-   "own": 24.39,
+   "own": 24.41,
    "tested": {
-    "discipline-leveling": 31.6,
-    "holy-leveling": 53.41
+    "discipline-leveling": 31.63,
+    "holy-leveling": 53.43
    },
    "best": "shadow-dps",
-   "best_seconds": 24.39,
+   "best_seconds": 24.41,
    "levels": {
-    "20": 32.37,
-    "30": 35.4,
-    "40": 22.04,
+    "20": 32.43,
+    "30": 35.33,
+    "40": 22.03,
     "50": 21.31,
-    "60": 20.35
+    "60": 20.44
+   }
+  },
+  "discipline-leveling": {
+   "own": 41.45,
+   "tested": {
+    "holy-leveling": 51.76,
+    "shadow-dps": 35.37
+   },
+   "best": "shadow-dps",
+   "best_seconds": 35.37,
+   "levels": {
+    "20": 30.51,
+    "30": 34.58,
+    "40": 36.99,
+    "50": 34.68,
+    "60": 36.86
    }
   }
  }

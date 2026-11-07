@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-04: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +1.0% faster per kill than arcane-frost-open-leveling, the fastest of our leveling builds in that race.
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 ## Point allocation
 
@@ -83,14 +83,14 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 
 ## Core talents (priority order)
 
-1. **Shatter** — +3.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Missile Barrage** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Ice Shards** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Fingers of Frost** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Frostbite** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +4.0 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Missile Barrage** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Ice Shards** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Arcane Meditation** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Fingers of Frost** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Frost Channeling** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,7 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.77; arcane-frost-open-leveling 30.07, opt-frost-leveling-leveling-st 30.54. The search simulated 56,559 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.11; opt-frost-leveling-leveling-st 30.04. The search simulated 56,559 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -108,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/2512052000003012--03253223011030021-12>
+- <https://talentsforever.com/mage/60/2512052000003012--03253223011030021-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

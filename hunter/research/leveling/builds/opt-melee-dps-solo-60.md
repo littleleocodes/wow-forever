@@ -47,6 +47,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Survivalist's Discipline** | 1/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 20%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
+| 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
+| 17-19 | Survival | Deflection | 3 | 0/0/10 |
+| 20-22 | Survival | Surefooted | 3 | 0/0/13 |
+| 23 | Survival | Deterrence | 1 | 0/0/14 |
+| 24 | Survival | Deflection | 1 | 0/0/15 |
+| 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
+| 30 | Survival | Strider Kick | 1 | 0/0/21 |
+| 31 | Survival | Resourcefulness | 1 | 0/0/22 |
+| 32-33 | Survival | Expose Prey | 2 | 0/0/24 |
+| 34 | Survival | Resourcefulness | 1 | 0/0/25 |
+| 35-39 | Marksmanship | Lethal Attacks | 5 | 0/5/25 |
+| 40-44 | Marksmanship | Careful Aim | 5 | 0/10/25 |
+| 45-49 | Beast Mastery | Deadly Aspects | 5 | 5/10/25 |
+| 50-51 | Beast Mastery | Focused Fire | 2 | 7/10/25 |
+| 52 | Survival | Survivalist's Discipline | 1 | 7/10/26 |
+| 53-54 | Beast Mastery | Improved Revive Pet | 2 | 9/10/26 |
+| 55 | Beast Mastery | Endurance Training | 1 | 10/10/26 |
+| 56-60 | Beast Mastery | Unleashed Fury | 5 | 15/10/26 |
+
 ## Core talents (priority order)
 
 1. **Strider Kick** — Removing it costs 6.0 points of score in this model.
@@ -66,6 +90,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Report: hunter/research/talents/forever/optimizer/melee-dps-solo-60.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 15/10/26 -> 15/10/26; +1 Improved Revive Pet (tier gating for Pathfinding); +1 Endurance Training (tier gating for Pathfinding); -1 Pathfinding (over 51); -1 Pathfinding (over 51); order dropped (order_repair.py) (refill: the melee-dps model, solo-60).
+- 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (melee-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

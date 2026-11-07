@@ -199,6 +199,33 @@ PHASE1_QUEST = {"Rhok'delar, Longbow of the Ancient Keepers", "Lok'delar, Stave 
 DATED_KINDS = ("drop", "crafted", "rep")
 
 
+# Reputations of later phases (2026-11-06, user decision on page-audit J4: "Exclude it ... the project's rule is launch-phase gear"): a
+# reputation reward passes at any item level, and the Signet Ring of the Bronze Dragonflight (Brood of Nozdormu, the Ahn'Qiraj
+# reputation of Classic's phase 5; item level 60-80) sat in 67 of our sets. An item such a faction rewards is out of every pool,
+# whatever a preset uses. {repFactionId: why}. The Arathi Basin factions (509, 510; item level 65 at most) and Forever's new factions
+# stay until it is known when their rewards open.
+LATER_FACTIONS = {910: "Brood of Nozdormu (Ahn'Qiraj, Classic phase 5)"}
+
+
+# 2026-11-07 (page-audit L15, user: "Go with your recs"; the question "are Zul'Gurub and the battlegrounds open?" stayed open, so this is our
+# assumption): Blizzard's roadmap names Barrow Deeps, Hyjal Summit and Onyxia's Lair for 2026-12-09, then new raids through summer 2027, and
+# no Zul'Gurub (blizzardwatch.com, 2026-09-13); no source confirms Classic's battlegrounds at launch. Their rewards vetted by a community
+# preset stay out: Zandalar quest rewards, anything the database marks pvp, the Warsong and Arathi quartermasters' stock.
+LATER_QUESTS = ("Paragons of Power", "A Collection of Heads")
+BG_VENDORS = {"Kelm Hargunth", "Illiyana Moonblaze", "Gaelden Hammersmith", "Thanthaldis Snowgleam"}
+
+
+def later_reward(it):
+    srcs = it.get("sources") or []
+    return (any("pvp" in s for s in srcs) or any(s["quest"].get("name", "").startswith(LATER_QUESTS) for s in srcs if "quest" in s)
+            or any(s["soldBy"].get("npcName") in BG_VENDORS for s in srcs if "soldBy" in s))
+
+
+def later_rep(it):
+    """True when a later phase's reputation rewards the item (LATER_FACTIONS)."""
+    return any((s.get("rep") or {}).get("repFactionId") in LATER_FACTIONS for s in it.get("sources") or [])
+
+
 def dated_sources(it):
     """An item's source entries of a dated kind (DATED_KINDS); [] for an item only quests, vendors or honor ranks give."""
     return [s for s in it.get("sources") or [] if any(k in s for k in DATED_KINDS)]
@@ -256,7 +283,7 @@ VENDOR_ITEMS = {
 
 
 def in_pool(it, zones):
-    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or it.get("id") in SUSPECT_ITEMS:
+    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or later_rep(it) or it.get("id") in SUSPECT_ITEMS:
         return False
     so = it.get("scalingOptions", {}).get("0", {})
     srcs = dated_sources(it)
@@ -270,7 +297,7 @@ def in_pool(it, zones):
     if it["id"] in VENDOR_ITEMS:
         return True
     if not srcs:   # no dated source (custom items, quest, vendor and PvP rewards): only items a phase-1 community preset uses
-        return it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
+        return not later_reward(it) and it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
     return True
 
 

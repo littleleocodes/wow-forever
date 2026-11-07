@@ -49,6 +49,36 @@ The Arcane leveling build derived on 2026-09-30 (derive_leveling.py): searched i
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-11 | Arcane | Wand Specialization | 2 | 2/0/0 |
+| 12-13 | Arcane | Arcane Resilience | 2 | 4/0/0 |
+| 14 | Arcane | Improved Channeling | 1 | 5/0/0 |
+| 15-19 | Arcane | Arcane Concentration | 5 | 10/0/0 |
+| 20-21 | Arcane | Arcane Subtlety | 2 | 12/0/0 |
+| 22 | Arcane | Magic Absorption | 1 | 13/0/0 |
+| 23-24 | Arcane | Arcane Impact | 2 | 15/0/0 |
+| 25-27 | Arcane | Arcane Meditation | 3 | 18/0/0 |
+| 28 | Arcane | Arcane Shielding | 1 | 19/0/0 |
+| 29 | Arcane | Arcane Impact | 1 | 20/0/0 |
+| 30 | Arcane | Presence of Mind | 1 | 21/0/0 |
+| 31-34 | Arcane | Arcane Mind | 4 | 25/0/0 |
+| 35-37 | Arcane | Arcane Instability | 3 | 28/0/0 |
+| 38 | Arcane | Arcane Mind | 1 | 29/0/0 |
+| 39-40 | Frost | Precision | 2 | 29/0/2 |
+| 41-43 | Frost | Improved Frostbolt | 3 | 29/0/5 |
+| 44-46 | Frost | Frostbite | 3 | 29/0/8 |
+| 47-48 | Frost | Improved Frostbolt | 2 | 29/0/10 |
+| 49 | Frost | Ice Lance | 1 | 29/0/11 |
+| 50-53 | Frost | Ice Shards | 4 | 29/0/15 |
+| 54 | Frost | Shatter | 1 | 29/0/16 |
+| 55 | Frost | Ice Block | 1 | 29/0/17 |
+| 56 | Frost | Ice Shards | 1 | 29/0/18 |
+| 57-58 | Frost | Shatter | 2 | 29/0/20 |
+| 59-60 | Frost | Fingers of Frost | 2 | 29/0/22 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — The scorer's value in this build: +21.2% of its score (model frost-leveling).
@@ -69,6 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 30/0/21 -> 30/0/21; Piercing Ice 2 gone; +1 Elemental Precision (tier gating for Ice Block); +1 Elemental Precision (tier gating for Fingers of Frost); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 - 2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 36.1 s per kill; own tree first 38.0 s; own tree last 36.1 s.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 30/0/21 -> 29/0/22; Arcane Focus 3 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); refill +1 Fingers of Frost; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arcane-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 40.0 s per kill; stats model 40.9 s; own tree last 40.9 s.
 
 ## Open questions (verify in the live game)
 

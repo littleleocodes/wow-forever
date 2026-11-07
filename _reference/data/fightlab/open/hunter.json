@@ -8898,7 +8898,7 @@
    "signature": {
     "spec": "Hybrid Beast Mastery/Marksmanship",
     "rotation": "bm-leveling",
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "28/19/4",
     "ok": true,
@@ -8920,6 +8920,7 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Aimed Shot": {
       "20": 0.98,
@@ -8929,7 +8930,7 @@
       "60": 1.26
      }
     },
-    "fingerprint": "b80351cd9af0"
+    "fingerprint": "e0f085096103"
    },
    "minutes": 149.6,
    "done": true,
@@ -8940,7 +8941,7 @@
     ],
     "why": null,
     "spec": "Hybrid Beast Mastery/Marksmanship",
-    "date": "2026-11-03"
+    "date": "2026-11-06"
    }
   },
   "mm-raid": {
@@ -17771,7 +17772,7 @@
    "signature": {
     "spec": "Marksmanship",
     "rotation": "mm-raid",
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "21/30/0",
     "ok": true,
@@ -17792,6 +17793,7 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Aimed Shot": {
       "20": 0.93,
@@ -17801,7 +17803,7 @@
       "60": 1.04
      }
     },
-    "fingerprint": "272a08c6108b"
+    "fingerprint": "b4e39e2622a5"
    },
    "minutes": 125.9,
    "done": true,
@@ -17812,7 +17814,7 @@
     ],
     "why": null,
     "spec": "Marksmanship",
-    "date": "2026-11-03"
+    "date": "2026-11-06"
    }
   },
   "melee-dps": {
@@ -27221,7 +27223,7 @@
    "signature": {
     "spec": "Hybrid Beast Mastery/Survival",
     "rotation": "melee-dps",
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "fights": 600,
     "split": "22/5/24",
     "ok": true,
@@ -27238,8 +27240,9 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {},
-    "fingerprint": "6d1a03564e7d"
+    "fingerprint": "937aaa2689e8"
    },
    "minutes": 42.1,
    "done": true,
@@ -27250,7 +27253,7 @@
     ],
     "why": null,
     "spec": "Hybrid Beast Mastery/Survival",
-    "date": "2026-11-03"
+    "date": "2026-11-06"
    }
   }
  },

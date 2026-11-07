@@ -65,22 +65,21 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**8 of 12** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -7.0% | 38 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 501 | -5.4% | 1004 | -0.4% | 46 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -9.2% | 32 s |
-| 4 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 492 | -7.2% | 1008 | +0.0% | 54 s |
-| 5 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -5.1% | 46 s |
-| 6 | *BM* | community simulator | - | 477 | -10.1% | 982 | -2.6% | 52 s |
-| 7 | *MM* | community simulator | - | 471 | -11.1% | 969 | -3.9% | 50 s |
-| 8 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -10.1% | 26 s |
-| 9 | *SV* | community simulator | - | 434 | -18.2% | 838 | -16.9% | 47 s |
-| 10 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -18.0% | 47 s |
-| 11 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -17.2% | 53 s |
-| 12 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -19.2% | 51 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -4.5% | 38 s |
+| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -6.7% | 32 s |
+| 3 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -2.6% | 46 s |
+| 4 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 11/35/5 | 478 | -9.9% | 943 | -3.9% | 64 s |
+| 5 | *BM* | community simulator | - | 477 | -10.1% | 982 | +0.0% | 52 s |
+| 6 | *MM* | community simulator | - | 471 | -11.1% | 969 | -1.3% | 50 s |
+| 7 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -7.7% | 26 s |
+| 8 | *SV* | community simulator | - | 434 | -18.2% | 838 | -14.7% | 47 s |
+| 9 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -15.7% | 47 s |
+| 10 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -15.0% | 53 s |
+| 11 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -17.0% | 51 s |
 
 ## Rotation (community simulator, training dummy)
 

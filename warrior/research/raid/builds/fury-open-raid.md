@@ -169,7 +169,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-12>
+- <https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

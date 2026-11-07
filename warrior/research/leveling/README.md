@@ -17,8 +17,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 17/3/31 | DPS |
-| [Fury — Leveling (open talent search)](builds/fury-open-leveling.md) 🔬 | 16/35/0 | DPS |
-| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 0/20/31 | DPS |
+| [Arms — Leveling (open talent search)](builds/arms-open-leveling.md) 🔬 | 32/17/2 | DPS |
+| [Fury — Leveling (open talent search)](builds/fury-open-leveling.md) 🔬 | 18/33/0 | DPS |
+| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 3/16/32 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

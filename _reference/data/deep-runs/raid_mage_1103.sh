@@ -11,9 +11,12 @@
 # Then the mage's raid half: the rotations the fix touches re-tuned (Arcane, Fire), every mage entry raced, the certificates and the
 # structural ranking, the open builds, the ML final step for the Missile Barrage specs (Arcane, Arcane-Frost), builds, rankings.
 # Resume: the same command (markers deep-runs/r1103/<step>).
+# 2026-11-07 (user: "Go with your recs"): re-pinned to ~/.wow-forever-tools/wowsims-forever-y at 16e85426c (upstream master, classes, racials and
+# items on 1.60.1.70790 up to hotfix push 113715), like every raid lane. The header above says what this lane was written for.
 cd F:/wow-forever || exit 1
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
+export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"
 L=_reference/data/deep-runs
 M=$L/r1103
 mkdir -p $M
@@ -56,6 +59,9 @@ PY
 say "raid: start (re-pin to 5ad0894c9, then the mage's raid half)"
 run repin repin-1103.log repin
 if [ ! -e "$M/repin" ]; then say "raid: STOP, the re-pin failed (repin-1103.log)"; exit 1; fi
+# 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers (not the
+# re-pin), so it runs again in the new sets (gear_repair_1103.sh; once, marker r1103/gear-mage)
+bash $L/gear_repair_1103.sh mage "*-mage* rank unused gear-links sim-value-audit" || { say "raid: mage STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 for e in arcane-dps fire-raid frost-raid frostfire-raid; do run race-mage-$e $LG race mage $e; done
 for e in arcane-dps fire-raid; do
   run apl-mage-$e $LG python -u $R/apl_opt.py mage --spec $e --write --setting raid --rounds 8 --lookahead 0

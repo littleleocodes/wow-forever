@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-02: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.1% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
+The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.4% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -40,7 +40,8 @@ The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
+| **Deflection** | 2/5 | moved | Increases your Parry chance by 2%. |
+| **Benediction** | 3/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 6%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
 | **Conviction** | 3/3 | changed | Improves your chance to get a critical strike with all spells and attacks by 6%. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
@@ -55,7 +56,8 @@ The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling 
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-14 | Retribution | Deflection | 5 | 0/0/5 |
+| 10-12 | Retribution | Benediction | 3 | 0/0/3 |
+| 13-14 | Retribution | Deflection | 2 | 0/0/5 |
 | 15-17 | Retribution | Sanctified Judgement | 3 | 0/0/8 |
 | 18-19 | Retribution | Conviction | 2 | 0/0/10 |
 | 20 | Retribution | Seal of Command | 1 | 0/0/11 |
@@ -82,14 +84,14 @@ The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling 
 
 ## Core talents (priority order)
 
-1. **Sanctified Judgement** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Conviction** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Swift Judgement** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Seal of Command** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Sanctified Judgement** — +3.2 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Conviction** — +2.4 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Swift Judgement** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Vengeance** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Improved Seals** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Vengeance** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Reverence** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Seal of Command** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Two-Handed Weapon Specialization** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Precision** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -97,7 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.83; leveling-retribution 28.42, opt-ret-dps-leveling-st 28.42, retribution-open-leveling 28.54. The search simulated 37,847 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.88; leveling-retribution 27.52, opt-ret-dps-leveling-st 27.52. The search simulated 40,642 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -107,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/paladin>
-- <https://talentsforever.com/paladin/60/05025-5230111021-502331010113003-12>
+- <https://talentsforever.com/paladin/60/05025-5230111021-232331010113003-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

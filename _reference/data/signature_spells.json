@@ -30,10 +30,12 @@
     "Rip",
     "Ferocious Bite",
     "Shred",
-    "Primal Bite"
+    "Primal Bite",
+    "Ravage",
+    "Pounce"
    ],
    "min_share": 0.8,
-   "note": "Cat Form (Bear Form at 10-19 while leveling); Shred needs the mob's back, so solo it is the stealth opener only",
+   "note": "Cat Form (Bear Form at 10-19 while leveling); Shred needs the mob's back, so solo it is the stealth opener only; 2026-11-06 (user decision on page-audit K6): the stealth openers Ravage and Pounce are cat spells and count (Ravage alone is 16% of a leveling cat's damage, and every cat build sat at 80.5-81% against the 80% floor without it)",
    "modes": {
     "raid": {
      "required": [
@@ -62,8 +64,8 @@
    "core": [
     "pet"
    ],
-   "min_share": 0.35,
-   "note": "the pet is the damage",
+   "min_share": 0.3,
+   "note": "the pet is the damage; 2026-11-06 (user decision on page-audit K6): the leveling floor is the raid's 30% (35% before: the leveling builds sat at 34-36%, a pass or fail on one point of noise)",
    "modes": {
     "raid": {
      "required": [
@@ -102,7 +104,7 @@
     "Wing Clip"
    ],
    "min_share": 0.5,
-   "note": "the melee hunter; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share",
+   "note": "the melee hunter; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share; 2026-11-06 (user decision, the one-tree Survival search): while leveling the pet counts, as in the Beast-Survival rule. The pet fights in melee beside the hunter; without it the fastest one-tree build (8/13/30) read 34% and only a build forced to drop Serpent Sting and Immolation Trap passed, 10% slower per kill. The raid rule is unchanged",
    "modes": {
     "leveling": {
      "required": [],
@@ -111,7 +113,8 @@
       "Raptor Strike",
       "Mongoose Bite",
       "Lacerate",
-      "Wing Clip"
+      "Wing Clip",
+      "pet"
      ],
      "min_share": 0.5
     }

@@ -714,9 +714,37 @@
         {"talent": "Reverberation", "why": "Removing it costs 1.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-solo-60.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 12/31/8; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, solo-60)."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-solo-60.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 12/31/8; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, solo-60).", "2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (enhancement-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"]
+      "sources": ["https://warcraftforever.games/talents/shaman"],
+      "order": [
+        {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "15-17", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "18-19", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
+        {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "21", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+        {"levels": "22-23", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "24", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+        {"levels": "26-27", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "28-31", "tree": "Restoration", "talent": "Tidal Focus", "points": 4},
+        {"levels": "32-33", "tree": "Enhancement", "talent": "Flurry", "points": 2},
+        {"levels": "34-35", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+        {"levels": "36", "tree": "Restoration", "talent": "Tidal Focus", "points": 1},
+        {"levels": "37", "tree": "Restoration", "talent": "Mindfulness", "points": 1},
+        {"levels": "38", "tree": "Enhancement", "talent": "Flurry", "points": 1},
+        {"levels": "39-40", "tree": "Restoration", "talent": "Mindfulness", "points": 2},
+        {"levels": "41-42", "tree": "Enhancement", "talent": "Flurry", "points": 2},
+        {"levels": "43-47", "tree": "Elemental", "talent": "Concussion", "points": 5},
+        {"levels": "48-52", "tree": "Elemental", "talent": "Reverberation", "points": 5},
+        {"levels": "53", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "54", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "55-57", "tree": "Enhancement", "talent": "Anticipation", "points": 3},
+        {"levels": "58", "tree": "Enhancement", "talent": "Maelstrom Weapon", "points": 1},
+        {"levels": "59", "tree": "Enhancement", "talent": "Rage of the Farseer", "points": 1},
+        {"levels": "60", "tree": "Elemental", "talent": "Call of Flame", "points": 1}
+      ],
+      "order_label": "stats model"
     },
     {
       "id": "opt-resto-heal-raid-heal",
@@ -1206,58 +1234,6 @@
       "sources": ["https://github.com/wowsims/forever"]
     },
     {
-      "id": "enhancement-open-raid",
-      "name": "Enhancement — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Enhancement",
-      "generated": "2026-11-02",
-      "derived": "raid",
-      "summary": "The Enhancement raid build the open talent search found on 2026-11-02: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over enhancement-ml-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Elemental": [
-          ["Concussion", 5],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 3],
-          ["Call of Flame", 3],
-          ["Elemental Focus", 1],
-          ["Trial by Fire", 2]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 3],
-          ["Mental Dexterity", 3],
-          ["Elemental Weapons", 3],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Mental Quickness", 2],
-          ["Improved Stormstrike", 2],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Maelstrom Weapon", "why": "292 DPS lost without it (40% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Stormstrike", "why": "153 DPS lost without it (21% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Flurry", "why": "61 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shamanistic Focus", "why": "53 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Mental Dexterity", "why": "42 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Thundering Strikes", "why": "34 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Call of Flame", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Stormstrike", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+9.9% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (enhancement-dps, full raid): 17/31/3 (Enhancement) at 733.5 DPS; enhancement-ml-raid 722.4, opt-enhancement-dps-raid-dps 670.8, enhancement-raid-dps 667.7, elemental-enhancement-ml-raid 437.2 in the same fights; 2,330 builds simulated, 1 independent runs reached the top.", "The enhancement-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): elemental-dps -54.4%, stormcaller-dps -55.0%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements."],
-      "open_questions": ["An open-search Enhancement build: check it against the community's Enhancement builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/shaman/60/053303102-053030031005102251-03-7"],
-      "replaces": "enhancement-raid-dps"
-    },
-    {
       "id": "elemental-enhancement-open-leveling",
       "name": "Elemental-Enhancement — Leveling (open talent search)",
       "role": "dps",
@@ -1480,6 +1456,59 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.99; elemental-open-leveling 29.57. The search simulated 26,225 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Elemental leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/540332100302135-05203001-053-7"]
+    },
+    {
+      "id": "enhancement-open-raid",
+      "name": "Enhancement — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-11-07",
+      "derived": "raid",
+      "summary": "The Enhancement raid build the open talent search found on 2026-11-07: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 1],
+          ["Concussion", 5],
+          ["Elemental Devastation", 3],
+          ["Reverberation", 2],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Trial by Fire", 2]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 4],
+          ["Mental Dexterity", 3],
+          ["Elemental Weapons", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Stormstrike", "why": "290 DPS lost without it (29% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Maelstrom Weapon", "why": "98 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Mental Dexterity", "why": "90 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Flurry", "why": "85 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shamanistic Focus", "why": "52 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Thundering Strikes", "why": "44 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Call of Flame", "why": "38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Trial by Fire", "why": "32 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+7.1% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (enhancement-dps, full raid): 17/32/2 (Enhancement) at 996.5 DPS; enhancement-ml-raid 964.1, enhancement-raid-dps 930.1, elemental-enhancement-ml-raid 918.6, opt-enhancement-dps-raid-dps 915.3 in the same fights; 4,542 builds simulated, 2 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): elemental-dps -58.1%, stormcaller-dps -57.1%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Enhancement build: check it against the community's Enhancement builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/shaman/60/153203102-054030310051002251-02-12"],
+      "replaces": "enhancement-raid-dps"
     }
   ]
 }

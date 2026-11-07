@@ -47,6 +47,12 @@ ORDER = dict(levels=(30, 40, 50), fights=150, batch=30, rounds=6, min_gain=0.003
 log = FO.log
 
 
+def sig_order(cls, rot, build):
+    """A build's order with its spec's signature talents at the earliest level their tree allows (fl_signature.sig_order; user
+    decision 2026-11-06, page-audit K5). Every order this module races or polishes goes through it."""
+    return FO.FS.sig_order(cls, rot, build)
+
+
 # ------------------------------------------------------------------------------------------------ helpers
 def alloc_of(space, flat):
     return {t: [[n, flat[n]] for n in space.by_tree[t] if flat.get(n)] for t in space.tree_names}
@@ -76,7 +82,8 @@ def weighted_at(per, levels):
 
 def evaluate(pool, cls, spec, builds, levels, fights, seed):
     """Weighted time per kill over `levels` for {allocation, order} builds (the allocation at each level from the order)."""
-    jobs = [(cls, spec, FR.allocation_at(b, L), L, fights, seed) for b in builds for L in levels]
+    # each level is judged as a level of the build's path (fl_open_search._ttk's 8th element, 2026-11-06), not as a build of its own
+    jobs = [(cls, spec, FR.allocation_at(b, L), L, fights, seed, True, (FT.flat_of(b), b["order"])) for b in builds for L in levels]
     res = pool.map(FO._ttk, jobs, chunksize=1)
     return [weighted_at({L: res[i * len(levels) + k][0] for k, L in enumerate(levels)}, levels) for i in range(len(builds))]
 
@@ -105,7 +112,8 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
     lv = list(cfg["levels"])
     cur = FT.flat_of(r["winner"])
     cur_b = {"allocation": r["winner"]["allocation"], "order": r["order"]}
-    rng = random.Random(97)
+    cur_b["order"] = sig_order(cls, spec, cur_b)   # the reference plays by the neighbours' rule (a record from before 2026-11-06 may
+    rng = random.Random(97)                        # hold an order with a late signature talent, which the objective penalizes)
     tried = {tuple(sorted(cur.items()))}
     steps, t0 = [], time.time()
     log(f"== {cls} {spec}: 20-60 polish of the race's pick {space.split(cur)} (levels {', '.join(map(str, lv))}, batches of {cfg['batch']}, "
@@ -127,6 +135,8 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
         nb = [x for _, x in nb]
         orders = pool.map(FT.order_job, [(cls, model, x) for x in nb], chunksize=1)
         cands = [{"allocation": alloc_of(space, x), "order": o} for x, o in zip(nb, orders) if o]
+        for c in cands:   # 2026-11-06 (page-audit K5): each neighbour's order with its signature talents as early as the tree allows
+            c["order"] = sig_order(cls, spec, c)
         if not cands:
             break
         sc = evaluate(pool, cls, spec, [cur_b] + cands, lv, cfg["fights"], 11)
@@ -167,13 +177,31 @@ def pick_order(cls, spec, r, pool, space, save, before=None, model=None):
                 ("own tree first", compress([x for x in pts if x[0] == lead] + [x for x in pts if x[0] != lead])),
                 ("own tree last", compress([x for x in pts if x[0] != lead] + [x for x in pts if x[0] == lead]))]
     cur_lab = r.get("order_label") or "stats model"
-    if r["order"] not in [o for _, o in variants]:   # a polished order from an earlier run competes under its own label
-        variants.append((cur_lab, r["order"]))
+    # 2026-11-06 (user decision on page-audit K5): every order raced takes the spec's signature talents as early as their tree allows
+    # (fl_signature.sig_order: the Assassination page had taken Mutilate at 60, own tree last). Two variants the rule makes equal race once.
+    sig = lambda o: sig_order(cls, spec, {"allocation": r["winner"]["allocation"], "order": o})   # noqa: E731
+    firsts, uniq = [], []
+    for lab, o in variants:
+        o2 = sig(o)
+        if o2 != o:
+            firsts.append(lab)
+        if o2 not in [x for _, x in uniq]:
+            uniq.append((lab, o2))
+    variants = uniq
+    cur = sig(r["order"])
+    if cur != r["order"] or firsts:
+        r["order_signature_first"] = {"date": FO.TODAY, "moved_in": firsts + ([cur_lab + " (the record's)"] if cur != r["order"] else [])}
+        log(f"  {cls} {spec}: signature talents moved to the earliest level their tree allows in the "
+            + ", ".join(r["order_signature_first"]["moved_in"]) + " order" + ("s" if len(r["order_signature_first"]["moved_in"]) > 1 else ""))
+    if cur not in [o for _, o in variants]:   # a polished order from an earlier run competes under its own label
+        variants.append((cur_lab, cur))
     table = r["race"]
     before_id = None
     if before:
         before_id = f"finalist {before['split']} (before the 20-60 polish)"
         table[before_id] = table.pop("open winner")
+    elif cur != r["order"]:   # the record's row was raced with the signature talents late: kept under its own name, never a pick
+        table[f"finalist {split} ({cur_lab} order, signature talents late)"] = table["open winner"]
     else:
         table[f"finalist {split} ({cur_lab} order)"] = table["open winner"]
     labels, cands = {}, []
@@ -231,11 +259,12 @@ def legal_order(space, pts, total):
     return len(pts) == total
 
 
-def order_moves(order, rng, n, space, levels=(30, 40, 50)):
+def order_moves(order, rng, n, space, levels=(30, 40, 50), ok=None):
     """Up to n random legal orders one block move away from `order`: a talent's block, or a part of it, moved up to three blocks
     earlier or later (the first ranks of a talent are worth more than the last: a split lets them come early and the rest late).
     Only moves that change the build at one of `levels` count: the race looks at levels 20-60 in steps of ten, so a move inside one
-    decade changes nothing it can see (26 of 30 random moves in a first test)."""
+    decade changes nothing it can see (26 of 30 random moves in a first test). `ok(order)` (2026-11-06): only moves it accepts, the
+    orders that still take the signature talents as early as their tree allows."""
     blocks = [(s["tree"], s["talent"], s["points"]) for s in order]
     total = sum(p for _, _, p in blocks)
     cur_key = tuple((t, nm) for t, nm, p in blocks for _ in range(p))
@@ -269,6 +298,8 @@ def order_moves(order, rng, n, space, levels=(30, 40, 50)):
         cand = compress(pts)
         if all(FR.allocation_at({"order": cand}, L) == base_at[L] for L in levels) or not legal_order(space, pts, total):
             continue
+        if ok is not None and not ok(cand):
+            continue
         out.append(cand)
     return out
 
@@ -296,7 +327,7 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
     log(f"== {cls} {spec}: order polish of the {r.get('order_label', 'stats model')} order (levels {', '.join(map(str, lv))}, batches of "
         f"{cfg['batch']} block moves, {cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
     for rnd in range(1, cfg["rounds"] + 1):
-        cands = order_moves(cur, rng, cfg["batch"], space, lv)
+        cands = order_moves(cur, rng, cfg["batch"], space, lv, ok=lambda o: FO.FS.order_ok(cls, spec, {"allocation": alloc, "order": o}))
         if not cands:
             log(f"    round {rnd}: no legal block move left")
             break
@@ -334,7 +365,7 @@ def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None, model=N
     if res[0] < table["open winner"]["weighted"]:
         table[f"finalist {split} ({label} order, before the order polish)"] = table["open winner"]
         table["open winner"] = row(res)
-        base = re.sub(r"^(?:polished from the )+(.*?)(?: order)+$", r"", label)   # 2026-10-15: a second polish nested the label
+        base = re.sub(r"^(?:polished from the )+(.*?)(?: order)+$", r"\1", label)   # 2026-10-15: a second polish nested the label
         r["order"], r["order_label"] = o, f"polished from the {base} order"
         log(f"  {cls} {spec}: the polished order is the page's ({res[0]:.2f} s per kill at 20-60, was {table[f'finalist {split} ({label} order, before the order polish)']['weighted']:.2f})")
     else:

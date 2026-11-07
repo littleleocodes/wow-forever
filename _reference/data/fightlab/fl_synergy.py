@@ -181,6 +181,7 @@ def certificate(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, a, sav
         race_builds = [{"id": "winner", "allocation": r["winner"]["allocation"], "order": r["order"]}]
         for _, pair, x in top:
             race_builds.append({"id": f"{pair[0]} + {pair[1]}", "allocation": by_tree(space, x), "order": FT.order_of(cls, model, x)})
+            race_builds[-1]["order"] = FO.FS.sig_order(cls, spec, race_builds[-1])   # 2026-11-06: signature talents as early as the tree allows
         res3 = FT.race(pool, cls, spec, race_builds, FO.RACE_FIGHTS, 7)
         wt = res3[0][0]
         for (_, pair, x), rb, (t, per) in zip(top, race_builds[1:], res3[1:]):
@@ -214,6 +215,7 @@ def research(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, leads, be
         if k not in seen and space.valid(FT.flat_of(f)):   # 2026-10-25 audit: a lead made legal by with_talents may leave the space
             seen.add(k)                                     # (another spec's build, a signature talent dropped): no winner then
             cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
+            cands[-1]["order"] = FO.FS.sig_order(cls, spec, cands[-1])   # 2026-11-06 (page-audit K5), as the race in fl_open_search.py
     builds = cands + list(ours.values())
     res = FT.race(pool, cls, spec, builds, FO.RACE_FIGHTS, 3)
     table = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
@@ -309,6 +311,7 @@ def main():
                 if not b.get("order"):
                     try:
                         ours[bid] = dict(b, order=FT.order_of(cls, model, FT.flat_of(b)))
+                        ours[bid]["order"] = FO.FS.sig_order(cls, spec, ours[bid])
                     except Exception:   # noqa: BLE001
                         ours.pop(bid)
             certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, a, save)

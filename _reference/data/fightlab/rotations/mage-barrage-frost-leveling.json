@@ -1,21 +1,21 @@
 {
  "veto": {
   "Frostbolt": {
-   "min_hp": 0.1
-  },
-  "Fire Blast": {
-   "min_hp": 0.1
+   "min_hp": 0.2
   },
   "Cone of Cold": {
-   "min_hp": 0.35,
    "off": true
+  },
+  "Fire Blast": {
+   "max_hp": 0.2,
+   "min_hp": 0.1
   }
  },
  "drink_below": 0.15,
  "eat_below": 0.4,
  "class": "mage",
  "spec": "barrage-frost-leveling",
- "build": "opt-frost-leveling-leveling-st",
+ "build": "arcane-frost-open-leveling",
  "levels": [
   20,
   30,
@@ -23,7 +23,7 @@
   50,
   60
  ],
- "date": "2026-10-23",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Arcane Missiles",
@@ -31,8 +31,8 @@
   ],
   "build_spec": "Hybrid Arcane/Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7817447059651919,
-  "core_share_after": 0.8482981317114755,
+  "core_share_before": 0.8083947879956302,
+  "core_share_after": 0.9024185218730741,
   "min_share": 0.6,
   "floor_reached": null
  },
@@ -41,58 +41,58 @@
  "changes": [
   {
    "round": 1,
-   "change": "Frostbolt only while the mob has more than 10% health",
+   "change": "Frostbolt only while the mob has more than 20% health",
    "rule": [
     "min_hp",
     "Frostbolt",
-    0.1
+    0.2
    ],
-   "gain_seed1": 0.008435091592626343,
-   "gain_seed2": 0.008290201060907831
+   "gain_seed1": 0.0044638105120689,
+   "gain_seed2": 0.012068821874976265
   },
   {
    "round": 2,
-   "change": "Fire Blast only while the mob has more than 10% health",
-   "rule": [
-    "min_hp",
-    "Fire Blast",
-    0.1
-   ],
-   "gain_seed1": 0.009491307778768054,
-   "gain_seed2": 0.010664811735921043
-  },
-  {
-   "round": 3,
-   "change": "Cone of Cold only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Cone of Cold",
-    0.35
-   ],
-   "gain_seed1": 0.003228440905019725,
-   "gain_seed2": 0.006275940159683691
-  },
-  {
-   "round": 4,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.006387476929957225,
-   "gain_seed2": 0.005290329173745167
-  },
-  {
-   "round": 5,
    "change": "never cast Cone of Cold",
    "rule": [
     "off",
     "Cone of Cold",
     true
    ],
-   "gain_seed1": 0.012317261461029405,
-   "gain_seed2": 0.011252722098045953
+   "gain_seed1": 0.01320007496436515,
+   "gain_seed2": 0.01071580716512377
+  },
+  {
+   "round": 3,
+   "change": "Fire Blast only when the mob is below 20% health",
+   "rule": [
+    "max_hp",
+    "Fire Blast",
+    0.2
+   ],
+   "gain_seed1": 0.017422231923475584,
+   "gain_seed2": 0.012851341836774943
+  },
+  {
+   "round": 4,
+   "change": "Fire Blast only while the mob has more than 10% health",
+   "rule": [
+    "min_hp",
+    "Fire Blast",
+    0.1
+   ],
+   "gain_seed1": 0.003363449148302,
+   "gain_seed2": 0.0048116812396169495
+  },
+  {
+   "round": 5,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.0060264837344288225,
+   "gain_seed2": 0.006185959409923392
   },
   {
    "round": 6,
@@ -102,42 +102,51 @@
     null,
     0.4
    ],
-   "gain_seed1": 0.007172129166699737,
-   "gain_seed2": 0.00630973257595302
+   "gain_seed1": 0.005599994348657988,
+   "gain_seed2": 0.004885442276823859
   }
  ],
- "weighted_before": 31.396864499130043,
- "weighted_after": 29.98859347437758,
+ "weighted_before": 30.819962713237395,
+ "weighted_after": 29.110728469182675,
  "per_level": {
   "20": {
-   "before": 27.616194531113926,
-   "after": 26.87793024342566,
+   "before": 29.924369317213422,
+   "after": 28.69357598745145,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 35.22802324905813,
-   "after": 33.455299591767755,
+   "before": 34.70492727829766,
+   "after": 33.59953625059633,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 37.24531603210884,
-   "after": 35.1931602039403,
+   "before": 35.97114202340273,
+   "after": 33.46061041101203,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 31.007095240258288,
-   "after": 29.676674104033413,
+   "before": 29.531867346840805,
+   "after": 27.44414693698289,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 27.16734847391198,
-   "after": 26.08234981491145,
+   "before": 26.815304827935535,
+   "after": 25.494272054666517,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 29.768,
+   "from scratch": 29.111,
+   "continued": 29.346
+  },
+  "installed": "from scratch",
+  "reference_ok": true
  }
 }

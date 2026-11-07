@@ -357,7 +357,10 @@ def search(pool, cls, spec, bid, levels, a):
           + ", ".join(f"L{L} {v['before']:.1f}->{v['after']:.1f}s" for L, v in per_level.items()), flush=True)
     sig = {"required": sorted(req), "build_spec": spec_b, "dropped_saved_rules": flagged,
            "core_share_before": core_share_of(fin[0], rl), "core_share_after": core_share_of(fin[1], rl),
-           "min_share": (rl or {}).get("min_share"), "floor_reached": reached} if req or rl else None
+           "min_share": (rl or {}).get("min_share"), "floor_reached": reached,
+           # 2026-11-06: whether the tuning build casts every required spell it holds at every level (sig_factor) under the rules the
+           # search started from and under its result; rules_retune.py installs a set that plays over a faster one that does not
+           "played_before": sig_factor(fin[0], rl, b_, spec_b, cls) >= 1.0, "played_after": sig_factor(fin[1], rl, b_, spec_b, cls) >= 1.0} if req or rl else None
     if rl:
         print(f"  core share at 60 (seed 3): {core_share_of(fin[0], rl):.0%} -> {core_share_of(fin[1], rl):.0%} (floor {rl['min_share']:.0%})", flush=True)
     return dict(rot, **{"class": cls, "spec": spec, "build": bid, "levels": levels, "date": datetime.date.today().isoformat(), "signature": sig,

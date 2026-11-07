@@ -50,6 +50,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 |---|---|---|---|
 | **Opportunity** | 2/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 8%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Combat | Coup de Grace | 3 | 0/3/0 |
+| 13-14 | Combat | Lightning Reflexes | 2 | 0/5/0 |
+| 15-16 | Assassination | Remorseless Attacks | 2 | 2/5/0 |
+| 17 | Combat | Deflection | 1 | 2/6/0 |
+| 18-19 | Combat | Precision | 2 | 2/8/0 |
+| 20-21 | Combat | Deflection | 2 | 2/10/0 |
+| 22 | Combat | Riposte | 1 | 2/11/0 |
+| 23 | Combat | Precision | 1 | 2/12/0 |
+| 24 | Combat | Lightning Reflexes | 1 | 2/13/0 |
+| 25-26 | Combat | Efficient Strikes | 2 | 2/15/0 |
+| 27 | Combat | Flawless Execution | 1 | 2/16/0 |
+| 28-32 | Assassination | Malice | 5 | 7/16/0 |
+| 33-34 | Subtlety | Opportunity | 2 | 7/16/2 |
+| 35-37 | Assassination | Improved Gouge | 3 | 10/16/2 |
+| 38-39 | Assassination | Vigor | 2 | 12/16/2 |
+| 40-41 | Assassination | Lethality | 2 | 14/16/2 |
+| 42 | Assassination | Improved Expose Armor | 1 | 15/16/2 |
+| 43 | Assassination | Cold Blood | 1 | 16/16/2 |
+| 44-47 | Assassination | Improved Poisons | 4 | 20/16/2 |
+| 48 | Assassination | Relentless Strikes | 1 | 21/16/2 |
+| 49 | Assassination | Improved Poisons | 1 | 22/16/2 |
+| 50-52 | Assassination | Vile Poisons | 3 | 25/16/2 |
+| 53-55 | Assassination | Seal Fate | 3 | 28/16/2 |
+| 56-57 | Assassination | Vile Poisons | 2 | 30/16/2 |
+| 58-60 | Assassination | Ruthlessness | 3 | 33/16/2 |
+
 ## Core talents (priority order)
 
 1. **Seal Fate** — Removing it costs 3.4 points of score in this model.
@@ -69,6 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-solo-60.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 33/16/2 -> 33/16/2; Murder 2 gone; Lethality 4 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Ruthlessness (tier gating for Cold Blood); +1 Ruthlessness (back into Assassination); +1 Ruthlessness (back into Assassination); +1 Improved Expose Armor (back into Assassination); order dropped (order_repair.py) (refill: the combat-swords-raid model, solo-60).
+- 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (combat-swords-raid, leveling-st), the order the open leveling search races an order-less build with; not raced here.
 
 ## Open questions (verify in the live game)
 

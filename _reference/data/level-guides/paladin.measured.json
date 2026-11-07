@@ -1,14 +1,14 @@
 {
  "class": "paladin",
- "date": "2026-11-06",
+ "date": "2026-11-07",
  "fights": 400,
  "seed": 3,
  "guides": {
   "Retribution": {
    "build": "leveling-retribution",
    "rotation": "ret-dps",
-   "provisional_order": true,
-   "fingerprint": "9a6ad137461c",
+   "provisional_order": false,
+   "fingerprint": "7cb0dbf5980d",
    "levels": {
     "1": {
      "seconds": 11.6,
@@ -82,68 +82,68 @@
      }
     },
     "30": {
-     "seconds": 22.3,
+     "seconds": 22.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 4.19,
+      "Melee": 4.25,
       "Hammer of Justice": 0.33,
       "Judgement": 2.03,
-      "Holy Strike": 1.47
+      "Holy Strike": 1.49
      }
     },
     "40": {
-     "seconds": 26.8,
+     "seconds": 26.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.13,
-      "Hammer of Justice": 0.38,
+      "Melee": 5.14,
+      "Hammer of Justice": 0.39,
       "Judgement": 2.35,
-      "Holy Strike": 1.84
+      "Holy Strike": 1.83
      }
     },
     "43": {
-     "seconds": 27.5,
+     "seconds": 27.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.26,
-      "Hammer of Justice": 0.4,
-      "Judgement": 2.42,
-      "Holy Strike": 1.89
+      "Melee": 5.32,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.43,
+      "Holy Strike": 1.9
      }
     },
     "44": {
-     "seconds": 28.1,
+     "seconds": 27.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.33,
-      "Hammer of Justice": 0.4,
-      "Judgement": 2.44,
-      "Holy Strike": 1.92
+      "Melee": 5.22,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.4,
+      "Holy Strike": 1.88
      }
     },
     "50": {
-     "seconds": 28.9,
+     "seconds": 29.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.55,
-      "Hammer of Justice": 0.41,
-      "Judgement": 2.57,
-      "Holy Strike": 1.99
+      "Melee": 5.59,
+      "Hammer of Justice": 0.42,
+      "Judgement": 2.56,
+      "Holy Strike": 2.02
      }
     },
     "60": {
-     "seconds": 32.8,
+     "seconds": 32.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.01,
-      "Melee": 6.68,
+      "Melee": 6.67,
       "Hammer of Justice": 0.48,
-      "Judgement": 2.95,
+      "Judgement": 2.94,
       "Holy Strike": 2.38
      }
     }

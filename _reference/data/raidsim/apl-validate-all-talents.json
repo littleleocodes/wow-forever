@@ -51,14 +51,7 @@
     "line": ""
    }
   },
-  "frostfire-raid:frostfire-raid.apl.json": {
-   "priority[3]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20554}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20554}}}"
-   }
-  },
+  "frostfire-raid:frostfire-raid.apl.json": {},
   "frostfire-raid:frostfire-raid-raid.apl.json": {},
   "frostfire-raid:frostfire-raid.base.apl.json": {}
  },
@@ -86,51 +79,16 @@
  },
  "warlock": {
   "affliction-raid:affliction-raid.apl.json": {},
-  "affliction-raid:affliction-raid-raid.apl.json": {
-   "priority[12]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
+  "affliction-raid:affliction-raid-raid.apl.json": {},
   "affliction-raid:affliction.apl.json": {},
-  "fire-destro-raid:fire-destro-raid.apl.json": {
-   "priority[11]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
-  "fire-destro-raid:fire-destro-raid-raid.apl.json": {
-   "priority[11]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
+  "fire-destro-raid:fire-destro-raid.apl.json": {},
+  "fire-destro-raid:fire-destro-raid-raid.apl.json": {},
   "fire-destro-raid:destruction.apl.json": {},
-  "sb-raid:sb-raid.apl.json": {
-   "priority[13]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
+  "sb-raid:sb-raid.apl.json": {},
   "sb-raid:sb-raid-raid.apl.json": {},
   "sb-raid:ds_ruin.apl.json": {},
   "demonology-raid:demonology-raid.apl.json": {},
-  "demonology-raid:demonology-raid-raid.apl.json": {
-   "priority[10]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
+  "demonology-raid:demonology-raid-raid.apl.json": {},
   "demonology-raid:demonic_pact.apl.json": {},
   "incinerate-raid:incinerate-raid.apl.json": {},
   "incinerate-raid:incinerate-raid-raid.apl.json": {},
@@ -233,75 +191,57 @@
   }
  },
  "rogue": {
-  "combat-swords-raid:combat-swords-raid.apl.json": {},
-  "combat-swords-raid:combat-swords-raid-raid.apl.json": {
-   "priority[0]": {
+  "combat-swords-raid:default.apl.json": {
+   "priority[11]": {
     "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259812}",
-     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"50\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}, {\"not\": {\"val\": {\"spel"
    },
-   "priority[9]": {
+   "priority[12]": {
     "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"auraRemainingTime\": {\"auraId\": {\"spellId\": 6774}"
-   }
-  },
-  "combat-swords-raid:combat_sinister_strike.apl.json": {},
-  "combat-daggers-raid:combat-daggers-raid.apl.json": {},
-  "combat-daggers-raid:combat-daggers-raid-raid.apl.json": {
-   "priority[10]": {
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 20572}}}]}}, {\"and\": {\"vals"
+   },
+   "priority[13]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259799}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 1259799}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}]}}, \"st"
    },
-   "priority[11]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20572}"
-    ],
-    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
-   },
-   "priority[12]": {
+   "priority[14]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259799}"
     ],
     "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
    },
-   "priority[13]": {
+   "priority[15]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259812}"
     ],
     "line": "{\"condition\": {\"variableRef\": {\"name\": \"Gnome Eureka - Should Cast\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259812}}}"
    },
-   "priority[14]": {
+   "priority[16]": {
     "messages": [
      "Warning:  (#1) picks no potion for {OtherID: 26}"
     ],
     "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}, \"includeReactionTime\": true}}]}}, \"castSpell\": {\"spellId\": {\"otherId\": \""
    },
-   "priority[15]": {
+   "priority[17]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259812}",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"not\": {\"val\": {\"talentIsKnown\": {\"talentId\": {\"spellId\": 131670"
    },
-   "priority[21]": {
+   "priority[22]": {
     "messages": [
      "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": "
-   },
-   "priority[25]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259812}",
-     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
-     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
-    ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 462707}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less t"
    },
    "priority[26]": {
     "messages": [
@@ -309,7 +249,7 @@
      "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 1329326}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less "
    },
    "priority[27]": {
     "messages": [
@@ -317,7 +257,7 @@
      "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
    },
    "priority[28]": {
     "messages": [
@@ -325,52 +265,447 @@
      "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 4}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+   },
+   "priority[29]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 3}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
    },
    "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13877}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}]}}, \"strictSequence\": {\"actions\": [{\"castSpell\": {\"spellId\": {\"spellId\": 20572}}}, {\"ca"
+   },
+   "priority[9]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259812}"
     ],
     "line": "{\"groupReference\": {\"groupName\": \"Energy Pooling Checks\"}}"
-   },
-   "priority[8]": {
+   }
+  },
+  "combat-swords-raid:combat-swords-raid-raid.apl.json": {
+   "priority[11]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259799}",
      "Warning:  (#1) does not know spell {SpellID: 20572}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"50\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}, {\"not\": {\"val\": {\"spel"
    },
-   "priority[9]": {
+   "priority[12]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259799}",
      "Warning:  (#1) does not know spell {SpellID: 20572}"
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 20572}}}]}}, {\"and\": {\"vals"
-   }
-  },
-  "combat-daggers-raid:combat_backstab.apl.json": {},
-  "assassination-raid:assassination-raid.apl.json": {},
-  "assassination-raid:assassination-raid-raid.apl.json": {
-   "priority[1]": {
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 1259799}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}]}}, \"st"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
+   },
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Gnome Eureka - Should Cast\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259812}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) picks no potion for {OtherID: 26}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}, \"includeReactionTime\": true}}]}}, \"castSpell\": {\"spellId\": {\"otherId\": \""
+   },
+   "priority[17]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259812}",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
-   }
-  },
-  "assassination-raid:forever_mutilate.apl.json": {},
-  "subtlety-raid:subtlety-raid.apl.json": {},
-  "subtlety-raid:subtlety-raid-raid.apl.json": {
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"not\": {\"val\": {\"talentIsKnown\": {\"talentId\": {\"spellId\": 131670"
+   },
+   "priority[22]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": "
+   },
+   "priority[26]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 1329326}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less "
+   },
+   "priority[27]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
+   },
+   "priority[28]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+   },
+   "priority[29]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 3}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
+   },
    "priority[7]": {
     "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13877}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}]}}, \"strictSequence\": {\"actions\": [{\"castSpell\": {\"spellId\": {\"spellId\": 20572}}}, {\"ca"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Energy Pooling Checks\"}}"
+   }
+  },
+  "combat-daggers-raid:default.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"50\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}, {\"not\": {\"val\": {\"spel"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 20572}}}]}}, {\"and\": {\"vals"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 1259799}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}]}}, \"st"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
+   },
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Gnome Eureka - Should Cast\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259812}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) picks no potion for {OtherID: 26}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}, \"includeReactionTime\": true}}]}}, \"castSpell\": {\"spellId\": {\"otherId\": \""
+   },
+   "priority[17]": {
+    "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259812}",
      "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
     ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259812}}}, {\"cmp\": {\"op"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"not\": {\"val\": {\"talentIsKnown\": {\"talentId\": {\"spellId\": 131670"
+   },
+   "priority[22]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": "
+   },
+   "priority[26]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 1329326}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less "
+   },
+   "priority[27]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
+   },
+   "priority[28]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+   },
+   "priority[29]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 3}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13877}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}]}}, \"strictSequence\": {\"actions\": [{\"castSpell\": {\"spellId\": {\"spellId\": 20572}}}, {\"ca"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Energy Pooling Checks\"}}"
    }
   },
-  "subtlety-raid:forever_hemorrhage.apl.json": {}
+  "assassination-raid:default.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"50\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}, {\"not\": {\"val\": {\"spel"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 20572}}}]}}, {\"and\": {\"vals"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 1259799}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}]}}, \"st"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
+   },
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Gnome Eureka - Should Cast\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259812}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) picks no potion for {OtherID: 26}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}, \"includeReactionTime\": true}}]}}, \"castSpell\": {\"spellId\": {\"otherId\": \""
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"not\": {\"val\": {\"talentIsKnown\": {\"talentId\": {\"spellId\": 131670"
+   },
+   "priority[22]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": "
+   },
+   "priority[26]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 1329326}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less "
+   },
+   "priority[27]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
+   },
+   "priority[28]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+   },
+   "priority[29]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 3}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13877}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}]}}, \"strictSequence\": {\"actions\": [{\"castSpell\": {\"spellId\": {\"spellId\": 20572}}}, {\"ca"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Energy Pooling Checks\"}}"
+   }
+  },
+  "subtlety-raid:default.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"50\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}, {\"not\": {\"val\": {\"spel"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}",
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 20572}}}]}}, {\"and\": {\"vals"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13750}}}, {\"spellIsReady\": {\"spellId\": {\"spellId\": 1259799}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774}, \"includeReactionTime\": true}}]}}, \"st"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 13750}}}, \"rhs\": {\"const\": {\"val\": \"1.9m\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
+   },
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Gnome Eureka - Should Cast\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259812}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) picks no potion for {OtherID: 26}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}, \"includeReactionTime\": true}}]}}, \"castSpell\": {\"spellId\": {\"otherId\": \""
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"15\"}}}}, {\"not\": {\"val\": {\"talentIsKnown\": {\"talentId\": {\"spellId\": 131670"
+   },
+   "priority[22]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1259799}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": "
+   },
+   "priority[26]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 1329326}, \"includeReactionTime\": true}}}}, {\"variableRef\": {\"name\": \"Use Backstab\"}}, {\"variableRef\": {\"name\": \"Current Points less "
+   },
+   "priority[27]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Imminent\"}}}}, {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": "
+   },
+   "priority[28]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Backstab\"}}}}, {\"variableRef\": {\"name\": \"Current Points less than 5\"}}, {\"or\": {\"vals\": [{\"not\": {\"val\": {\"variableRef\": {\"name\": \"SnD Fall Im"
+   },
+   "priority[29]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1259812}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 1241584, \"rank\": 3}}}}}, {\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 16511}}}}}, {\"not\": {\"val\": {\"variableRef\": {\"nam"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13877}}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 13877}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 20572}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsReady\": {\"spellId\": {\"spellId\": 13877}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 20572}}}]}}, \"strictSequence\": {\"actions\": [{\"castSpell\": {\"spellId\": {\"spellId\": 20572}}}, {\"ca"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259812}"
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Energy Pooling Checks\"}}"
+   }
+  }
  },
  "warrior": {
   "arms-2h-raid:arms-2h-raid.apl.json": {
@@ -908,13 +1243,51 @@
   }
  },
  "paladin": {
+  "ret-dps:retribution-default.apl.json": {},
   "ret-dps:ret-dps-raid.apl.json": {},
+  "prot-tank:protection-default.apl.json": {},
+  "prot-tank:prot-tank-raid.apl.json": {},
+  "shockadin-raid:retribution-holy_shock.apl.json": {
+   "prepull[1]": {
+    "messages": [
+     "Warning: No swap set configured in Settings."
+    ],
+    "line": ""
+   }
+  },
   "shockadin-raid:shockadin-raid-raid.apl.json": {}
  },
  "shaman": {
-  "elemental-dps:elemental-dps.apl.json": {},
-  "elemental-dps:elemental-dps-raid.apl.json": {},
-  "elemental-dps:forever.apl.json": {},
+  "elemental-dps:elemental-dps.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238300}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1238300}}}"
+   }
+  },
+  "elemental-dps:elemental-dps-raid.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1326047}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326047}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238300}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1238300}}}"
+   }
+  },
+  "elemental-dps:forever.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238300}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1238300}}}"
+   }
+  },
   "enhancement-dps:enhancement-dps.apl.json": {},
   "enhancement-dps:enhancement-dps-raid.apl.json": {},
   "enhancement-dps:forever.apl.json": {}
@@ -1061,7 +1434,7 @@
    }
   },
   "feral-bear-tank:adaptive.apl.json": {
-   "priority[15]": {
+   "priority[14]": {
     "messages": [
      "Warning: No aura found on Target 1 for: {SpellID: 440667, Tag: -1}"
     ],

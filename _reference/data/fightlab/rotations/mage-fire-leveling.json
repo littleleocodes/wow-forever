@@ -1,16 +1,26 @@
 {
+ "knobs": {
+  "PYRO_OPENER": 1
+ },
  "veto": {
   "Fireball": {
    "min_hp": 0.35
   },
   "Scorch": {
-   "min_hp": 0.35
+   "off": true
   },
   "Pyroblast": {
+   "min_hp": 0.35
+  },
+  "Frost Nova": {
+   "min_mana": 0.3
+  },
+  "Blast Wave": {
    "min_hp": 0.35
   }
  },
  "drink_below": 0.15,
+ "eat_below": 0.4,
  "class": "mage",
  "spec": "fire-leveling",
  "build": "opt-fire-leveling-leveling-st",
@@ -21,7 +31,7 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Fireball",
@@ -30,45 +40,47 @@
   "build_spec": "Fire",
   "dropped_saved_rules": [],
   "core_share_before": 0.799888971765821,
-  "core_share_after": 0.7364803405413443,
+  "core_share_after": 0.7562557345376346,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": false,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "change": "PYRO_OPENER = 1",
+   "rule": [
+    "knob",
+    "PYRO_OPENER",
+    1
+   ],
+   "gain_seed1": 0.49001517419135665,
+   "gain_seed2": 0.488093414369681
+  },
+  {
+   "round": 2,
    "change": "Fireball only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Fireball",
     0.35
    ],
-   "gain_seed1": 0.011627188822577628,
-   "gain_seed2": 0.015079268471488438
-  },
-  {
-   "round": 2,
-   "change": "Scorch only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Scorch",
-    0.35
-   ],
-   "gain_seed1": 0.02273583116060518,
-   "gain_seed2": 0.018496364934458054
+   "gain_seed1": 0.010935306846606041,
+   "gain_seed2": 0.01567872553779881
   },
   {
    "round": 3,
-   "change": "Pyroblast only while the mob has more than 35% health",
+   "change": "never cast Scorch",
    "rule": [
-    "min_hp",
-    "Pyroblast",
-    0.35
+    "off",
+    "Scorch",
+    true
    ],
-   "gain_seed1": 0.01301475199613511,
-   "gain_seed2": 0.008899728768443138
+   "gain_seed1": 0.01564143881894442,
+   "gain_seed2": 0.019515402460650977
   },
   {
    "round": 4,
@@ -78,42 +90,95 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.007765629574390531,
-   "gain_seed2": 0.010159999851900192
+   "gain_seed1": 0.016427467550756858,
+   "gain_seed2": 0.010506122318430067
+  },
+  {
+   "round": 5,
+   "change": "Pyroblast only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Pyroblast",
+    0.35
+   ],
+   "gain_seed1": 0.004474280905622963,
+   "gain_seed2": 0.008225600335169503
+  },
+  {
+   "round": 6,
+   "change": "Frost Nova only above 30% mana",
+   "rule": [
+    "min_mana",
+    "Frost Nova",
+    0.3
+   ],
+   "gain_seed1": 0.00795279530390669,
+   "gain_seed2": 0.0055662259892079735
+  },
+  {
+   "round": 7,
+   "change": "Blast Wave only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Blast Wave",
+    0.35
+   ],
+   "gain_seed1": 0.003637147526173168,
+   "gain_seed2": 0.004898736815870941
+  },
+  {
+   "round": 8,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.006153443270451198,
+   "gain_seed2": 0.004809484516391294
   }
  ],
- "weighted_before": 37.57919877892505,
- "weighted_after": 35.65080876490141,
+ "weighted_before": 41.40682554628581,
+ "weighted_after": 39.48071031934176,
  "per_level": {
   "20": {
-   "before": 28.18875494962209,
-   "after": 26.645247985859573,
+   "before": 36.919981534822284,
+   "after": 34.7779920540715,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 34.82018814510603,
-   "after": 32.60813159650925,
+   "before": 43.546870244312196,
+   "after": 40.29748363614199,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 42.38528047606741,
-   "after": 39.70095320935426,
+   "before": 46.54786678357666,
+   "after": 44.00294557383281,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.06666666666666667
   },
   "50": {
-   "before": 39.62180521771566,
-   "after": 37.42520215658201,
+   "before": 42.87374334754753,
+   "after": 40.798763448874666,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.1
   },
   "60": {
    "before": 37.18262554184845,
-   "after": 35.99524348607572,
+   "after": 36.52669530509362,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 39.566,
+   "from scratch": 39.481,
+   "continued": 39.823
+  },
+  "installed": "from scratch",
+  "reference_ok": false
  }
 }

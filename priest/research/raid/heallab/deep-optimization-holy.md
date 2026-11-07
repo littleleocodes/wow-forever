@@ -4,7 +4,7 @@
 
 Talents and the heal-choice policy were tuned in turns until neither moved; the winner was then checked against its one-move neighbours and the two-move builds around its 25 best neighbours, and raced against our builds on 400 fresh seeds. Capacity is the healer lab's model of stated assumptions (heallab/tables.py), not a measurement.
 
-**Winner:** [21/30/0](https://talentsforever.com/priest/60/005125031030001-3350101303012053--12), capacity 0.6934 ± 0.0014; cycles 1; independent runs agreeing in the last cycle 2/4.
+**Winner:** [21/30/0](https://talentsforever.com/priest/60/005125031030001-3350101303012053--7), capacity 0.6934 ± 0.0014; cycles 1; independent runs agreeing in the last cycle 2/4.
 
 | Build | Capacity (400 seeds) |
 |---|---|

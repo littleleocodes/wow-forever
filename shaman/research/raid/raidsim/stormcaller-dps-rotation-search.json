@@ -150,20 +150,25 @@
  "raid": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-07",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "550433100000134-255213010001002"
+   },
+   {
     "label": "sim preset: Stormcaller 28/23/0",
-    "talents": "150533130010303-055030030004102"
+    "talents": "150533130010303-055030030004102",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "sim preset: Stormcaller 28/23/0"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -255,18 +260,59 @@
     "gain_seed2": 0.0022003885452575034,
     "candidates": 326,
     "pass": 10
+   },
+   {
+    "round": 12,
+    "change": "insert in the middle: cast Earth Shock",
+    "gain_seed1": 0.03213122829676229,
+    "gain_seed2": 0.030828751222813366,
+    "candidates": 320,
+    "pass": 11
+   },
+   {
+    "round": 13,
+    "change": "threshold 10s -> 20s: if number of targets = 1 and time left on the totem \u2264 1s and time left in the fight \u2265 10s: cast Searing Totem",
+    "gain_seed1": 0.0030315896052504065,
+    "gain_seed2": 0.003662814523020197,
+    "candidates": 330,
+    "pass": 11
+   },
+   {
+    "round": 14,
+    "change": "threshold 25% -> 5%: if mana % \u2265 25%: cast Lightning Bolt (rank 9)",
+    "gain_seed1": 0.0024404709876826303,
+    "gain_seed2": 0.0023565944744254885,
+    "candidates": 330,
+    "pass": 11
+   },
+   {
+    "round": 15,
+    "change": "threshold 100 -> 75: if (Clearcasting is up or number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 100)): cast Chain Lightning",
+    "gain_seed1": 0.001499909858093229,
+    "gain_seed2": 0.0024484349518218984,
+    "candidates": 324,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
-    "sim preset: Stormcaller 28/23/0": {
-     "before": 613.2363920727463,
-     "after": 607.0355878737072,
-     "base": 613.2363920727463,
+    "open winner": {
+     "before": 750.4052364776787,
+     "after": 735.6608917542737,
+     "base": 750.4052364776787,
      "before_value": null,
      "after_value": null,
-     "oom_before": 6.077814999999881,
-     "oom_after": 1.8606149999995447
+     "oom_before": 0.09854499999999983,
+     "oom_after": 0.09854499999999983
+    },
+    "sim preset: Stormcaller 28/23/0": {
+     "before": 668.9935921982471,
+     "after": 674.7695251981913,
+     "base": 668.9935921982471,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.5108499999998507,
+     "oom_after": 0.5108499999998507
     }
    }
   },
@@ -280,13 +326,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 65,
+    "structure": 39,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 13
  }
 }

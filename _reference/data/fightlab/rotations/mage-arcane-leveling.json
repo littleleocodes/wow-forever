@@ -2,15 +2,11 @@
  "veto": {
   "Cone of Cold": {
    "max_hp": 0.2
-  },
-  "Frost Nova": {
-   "off": true
   }
  },
- "eat_below": 0.4,
  "class": "mage",
  "spec": "arcane-leveling",
- "build": "mage/research/leveling/fightlab/candidates/arcane-blast-leveling-start.json",
+ "build": "arcane-open-leveling",
  "levels": [
   20,
   30,
@@ -18,15 +14,15 @@
   50,
   60
  ],
- "date": "2026-10-22",
+ "date": "2026-11-06",
  "signature": {
   "required": [
    "Arcane Blast"
   ],
   "build_spec": "Arcane",
   "dropped_saved_rules": [],
-  "core_share_before": 0.911977121430604,
-  "core_share_after": 0.9197255337717877,
+  "core_share_before": 0.7626377928086143,
+  "core_share_after": 0.7850810417439125,
   "min_share": 0.5,
   "floor_reached": null
  },
@@ -41,64 +37,51 @@
     "Cone of Cold",
     0.2
    ],
-   "gain_seed1": 0.014405395028714851,
-   "gain_seed2": 0.01620545680323593
-  },
-  {
-   "round": 2,
-   "change": "never cast Frost Nova",
-   "rule": [
-    "off",
-    "Frost Nova",
-    true
-   ],
-   "gain_seed1": 0.01999823934268785,
-   "gain_seed2": 0.01758100486976133
-  },
-  {
-   "round": 3,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.007798412184439885,
-   "gain_seed2": 0.007986924727185651
+   "gain_seed1": 0.02184949723294738,
+   "gain_seed2": 0.020753282258870187
   }
  ],
- "weighted_before": 36.442086642839016,
- "weighted_after": 34.97778975481204,
+ "weighted_before": 31.812069571830556,
+ "weighted_after": 31.12168174589367,
  "per_level": {
   "20": {
-   "before": 35.125610285548156,
-   "after": 34.359571838451416,
+   "before": 34.23484818007082,
+   "after": 34.23484818007082,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 38.75207501130065,
-   "after": 37.629828921152416,
+   "before": 33.28563760836711,
+   "after": 32.59205047046277,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 38.69884401202492,
-   "after": 36.95576263058933,
+   "before": 33.31150559272239,
+   "after": 32.14999283265551,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 36.95624571357521,
-   "after": 35.20255260848988,
+   "before": 31.460201048797682,
+   "after": 30.815086166181665,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.792947105967706,
-   "after": 32.35189184851232,
+   "before": 29.561292439415027,
+   "after": 28.91873083080218,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 32.378,
+   "from scratch": 31.122,
+   "continued": 32.378
+  },
+  "installed": "from scratch",
+  "reference_ok": true
  }
 }

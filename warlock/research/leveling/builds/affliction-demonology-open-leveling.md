@@ -109,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warlock>
-- <https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12>
+- <https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

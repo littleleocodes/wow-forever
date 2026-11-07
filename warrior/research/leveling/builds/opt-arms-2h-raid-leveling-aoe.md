@@ -49,6 +49,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fury | Cruelty | 5 | 0/5/0 |
+| 15-19 | Fury | Unbridled Wrath | 5 | 0/10/0 |
+| 20 | Fury | Blood Craze | 1 | 0/11/0 |
+| 21-25 | Fury | Enrage | 5 | 0/16/0 |
+| 26-27 | Fury | Blood Craze | 2 | 0/18/0 |
+| 28-29 | Fury | Improved Execute | 2 | 0/20/0 |
+| 30 | Fury | Death Wish | 1 | 0/21/0 |
+| 31 | Fury | Piercing Howl | 1 | 0/22/0 |
+| 32-33 | Fury | Gore Drinker | 2 | 0/24/0 |
+| 34 | Fury | Booming Voice | 1 | 0/25/0 |
+| 35-37 | Fury | Flurry | 3 | 0/28/0 |
+| 38-39 | Fury | Improved Intercept | 2 | 0/30/0 |
+| 40 | Fury | Bloodthirst | 1 | 0/31/0 |
+| 41-45 | Arms | Deflection | 5 | 5/31/0 |
+| 46-47 | Arms | Improved Overpower | 2 | 7/31/0 |
+| 48-50 | Arms | Improved Rend | 3 | 10/31/0 |
+| 51-53 | Arms | Deep Wounds | 3 | 13/31/0 |
+| 54-55 | Arms | Improved Charge | 2 | 15/31/0 |
+| 56 | Arms | Spearing Strike | 1 | 16/31/0 |
+| 57-59 | Arms | Two-Handed Weapon Specialization | 3 | 19/31/0 |
+| 60 | Arms | Impale | 1 | 20/31/0 |
+
 ## Core talents (priority order)
 
 1. **Cruelty** — Removing it costs 5.3 points of score in this model.
@@ -91,6 +117,8 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid-aoe.md), all l
 - Report: warrior/research/talents/forever/optimizer/arms-2h-raid-leveling-aoe.md
 - 2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (arms-2h-raid).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/31/0 -> 20/31/0; Flurry 5 -> 3 (rank cap); +1 Gore Drinker (tier gating for Bloodthirst); +1 Gore Drinker (tier gating for Bloodthirst); order dropped (order_repair.py) (refill: the arms-2h-raid model, leveling-aoe).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
+- 2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Bloodthirst at 40 (was 43); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.
 
 ## Open questions (verify in the live game)
 

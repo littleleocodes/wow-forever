@@ -561,8 +561,12 @@ def lev_sig_lines(cls, spec, top):
 
 
 def weighted(per):
-    tot = sum(int(L) / 10 for L in per)
-    return sum(v * int(L) / 10 for L, v in per.items()) / tot if tot else None
+    """Level-weighted seconds per kill at levels 20-60, the levels the pages and every race state. 2026-11-06 (page-audit K4): the druid's
+    fight-lab reports carry a level-15 row (Bear Form) that entered the mean of report builds only, so a build read from a report and
+    one read from an open-search race (20-60) were ranked on different level sets: 23.6 against 23.1 s for the same Feral build."""
+    per = {int(L): v for L, v in per.items() if 20 <= int(L) <= 60}
+    tot = sum(L / 10 for L in per)
+    return sum(v * L / 10 for L, v in per.items()) / tot if tot else None
 
 
 # ------------------------------------------------------------------------------------------------ picking builds

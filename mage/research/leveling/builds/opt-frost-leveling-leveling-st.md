@@ -52,6 +52,39 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-11 | Frost | Precision | 2 | 0/0/2 |
+| 12-14 | Frost | Improved Frostbolt | 3 | 0/0/5 |
+| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
+| 18-19 | Frost | Improved Frostbolt | 2 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
+| 24 | Frost | Ice Shards | 1 | 0/0/15 |
+| 25 | Frost | Shatter | 1 | 0/0/16 |
+| 26 | Frost | Ice Block | 1 | 0/0/17 |
+| 27 | Frost | Ice Shards | 1 | 0/0/18 |
+| 28-29 | Frost | Shatter | 2 | 0/0/20 |
+| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
+| 32-34 | Frost | Ice Shards | 3 | 0/0/25 |
+| 35 | Frost | Arctic Reach | 1 | 0/0/26 |
+| 36-37 | Arcane | Wand Specialization | 2 | 2/0/26 |
+| 38-39 | Arcane | Arcane Resilience | 2 | 4/0/26 |
+| 40 | Arcane | Improved Channeling | 1 | 5/0/26 |
+| 41-43 | Arcane | Arcane Concentration | 3 | 8/0/26 |
+| 44-45 | Arcane | Missile Barrage | 2 | 10/0/26 |
+| 46-47 | Arcane | Arcane Concentration | 2 | 12/0/26 |
+| 48-49 | Arcane | Arcane Subtlety | 2 | 14/0/26 |
+| 50 | Arcane | Arcane Blast | 1 | 15/0/26 |
+| 51 | Arcane | Arcane Wrath | 1 | 16/0/26 |
+| 52-54 | Arcane | Arcane Meditation | 3 | 19/0/26 |
+| 55 | Arcane | Magic Absorption | 1 | 20/0/26 |
+| 56 | Arcane | Presence of Mind | 1 | 21/0/26 |
+| 57-59 | Fire | Incineration | 3 | 21/3/26 |
+| 60 | Arcane | Magic Absorption | 1 | 22/3/26 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — Removing it costs 11.4 points of score in this model.
@@ -73,17 +106,18 @@ What this build casts per kill ([report](../fightlab/frost-leveling.md), all lev
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 2.8 | 3.7 | 4.1 | 3.5 | 3.2 | 52% |
-| Wand | 0.7 | 1.2 | 1.6 | 1.5 | 1.7 | 4% |
-| Ice Lance | 1.1 | 1.6 | 1.8 | 1.6 | 1.6 | 36% |
-| Frost Nova | 0.4 | 0.7 | 0.8 | 0.7 | 0.6 | 1% |
-| Fire Blast | 0.4 | 0.5 | 0.5 | 0.5 | 0.4 | 6% |
+| Frostbolt | 3.9 | 4.1 | 4.1 | 3.4 | 3.2 | 52% |
+| Wand | 0.8 | 1.2 | 1.7 | 1.6 | 1.7 | 4% |
+| Ice Lance | 1.2 | 1.7 | 1.8 | 1.7 | 1.6 | 36% |
+| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
+| Fire Blast | 0.5 | 0.6 | 0.5 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/frost-leveling-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/3/27 -> 22/3/26; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Improved Channeling (tier gating for Arcane Concentration); -1 Precision (over 51); order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
+- 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the frost-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 31.2 s per kill; stats model 31.4 s; own tree last 37.9 s.
 
 ## Open questions (verify in the live game)
 

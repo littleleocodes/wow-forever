@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane leveling build the open leveling search found on 2026-11-04: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+The Arcane leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). -0.1% faster per kill than arcane-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -43,9 +43,9 @@ The Arcane leveling build the open leveling search found on 2026-11-04: every le
 | **Improved Frostbolt** | 3/5 | changed | Reduces the casting time of your Frostbolt spell by 0.3 sec. |
 | **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Ice Shards** | 3/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 60%. |
-| **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Improved Frost Nova** | 1/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 2 sec. |
 | **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
+| **Improved Blizzard** | 3/3 | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 40% for 1.5 sec. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 | **Fingers of Frost** | 1/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 1 spell cast as if the target were Frozen. Lasts 15 sec. |
@@ -57,10 +57,10 @@ The Arcane leveling build the open leveling search found on 2026-11-04: every le
 | 10 | Arcane | Arcane Resilience | 1 | 1/0/0 |
 | 11-14 | Arcane | Improved Channeling | 4 | 5/0/0 |
 | 15-19 | Arcane | Arcane Concentration | 5 | 10/0/0 |
-| 20-21 | Arcane | Missile Barrage | 2 | 12/0/0 |
-| 22 | Arcane | Improved Channeling | 1 | 13/0/0 |
-| 23 | Arcane | Arcane Impact | 1 | 14/0/0 |
-| 24 | Arcane | Arcane Blast | 1 | 15/0/0 |
+| 20 | Arcane | Arcane Blast | 1 | 11/0/0 |
+| 21-22 | Arcane | Missile Barrage | 2 | 13/0/0 |
+| 23 | Arcane | Improved Channeling | 1 | 14/0/0 |
+| 24 | Arcane | Arcane Impact | 1 | 15/0/0 |
 | 25 | Arcane | Arcane Wrath | 1 | 16/0/0 |
 | 26-28 | Arcane | Arcane Meditation | 3 | 19/0/0 |
 | 29 | Arcane | Arcane Impact | 1 | 20/0/0 |
@@ -71,26 +71,26 @@ The Arcane leveling build the open leveling search found on 2026-11-04: every le
 | 38-39 | Arcane | Arcane Mind | 2 | 30/0/0 |
 | 40-41 | Frost | Precision | 2 | 30/0/2 |
 | 42-44 | Frost | Improved Frostbolt | 3 | 30/0/5 |
-| 45-47 | Frost | Frostbite | 3 | 30/0/8 |
-| 48-49 | Frost | Ice Shards | 2 | 30/0/10 |
+| 45-47 | Frost | Ice Shards | 3 | 30/0/8 |
+| 48 | Frost | Improved Frost Nova | 1 | 30/0/9 |
+| 49 | Frost | Frost Warding | 1 | 30/0/10 |
 | 50 | Frost | Ice Lance | 1 | 30/0/11 |
-| 51 | Frost | Ice Shards | 1 | 30/0/12 |
-| 52 | Frost | Improved Frost Nova | 1 | 30/0/13 |
-| 53-54 | Frost | Frost Warding | 2 | 30/0/15 |
+| 51 | Frost | Frost Warding | 1 | 30/0/12 |
+| 52-54 | Frost | Improved Blizzard | 3 | 30/0/15 |
 | 55-56 | Frost | Arctic Reach | 2 | 30/0/17 |
 | 57-59 | Frost | Permafrost | 3 | 30/0/20 |
 | 60 | Frost | Fingers of Frost | 1 | 30/0/21 |
 
 ## Core talents (priority order)
 
-1. **Missile Barrage** — +4.1 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Improved Channeling** — +2.4 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Arcane Blast** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Arcane Mind** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Arcane Instability** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Arcane Concentration** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Precision** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Missile Barrage** — +4.6 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Improved Channeling** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Arcane Blast** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Arcane Mind** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Arcane Meditation** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Arcane Instability** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Arcane Concentration** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,7 +98,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.38; arcane-leveling 40.89. The search simulated 53,708 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; arcane-open-leveling 31.12, arcane-leveling 38.63. The search simulated 53,708 builds.
+- The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -108,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/05100520310031153--2323313001200001-12>
+- <https://talentsforever.com/mage/60/05100520310031153--2323013031200001-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*
