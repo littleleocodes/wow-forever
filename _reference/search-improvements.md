@@ -518,3 +518,9 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   every audit and after every re-pin: the database's item count and source kinds against the previous pin (a new kind or a shrinking
   database is a pool change), a tier set's average item level against the set it replaces (a jump above 3 levels, or a set worth more
   than 5% over its predecessor, is a pool change until shown otherwise), and `missing_gear` in one bench row per standard set.
+- (2026-11-09) Free points and guides, after every lane: `page_lint.py` dead and build checks clean, which now include a guide that says the
+  build lacks a talent it takes ("This build takes no **Holy Shock**" on a build with it) and a guide that gives a talent other points
+  than the build ("**Frenzy** (2 points)" on 3). A healer or leveling page whose idle note says "opens nothing" gets a filler pass
+  (`heallab/filler_pass.py`, `fightlab/fl_filler_pass.py`): the leveling pass now moves a zero point into a live talent when the move
+  costs at most 0.1% on each seed (noise had kept Improved Sayaad in a Voidwalker build), and `open_builds.py` re-applies a written pass.
+  A healer report's * marks (not simulated) must agree with what the lab applies (Conviction read * at +7.3%).

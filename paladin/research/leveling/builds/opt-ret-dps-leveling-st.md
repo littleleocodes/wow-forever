@@ -84,14 +84,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 4. **Vengeance** — Removing it costs 2.3 points of score in this model.
 5. **Pursuit of Justice** — Removing it costs 2.3 points of score in this model.
 6. **Sanctified Judgement** — Removing it costs 2.2 points of score in this model.
-7. **Instrument of Law** — Removing it costs 1.8 points of score in this model.
-8. **Two-Handed Weapon Specialization** — Removing it costs 1.5 points of score in this model.
+7. **Two-Handed Weapon Specialization** — Removing it costs 1.5 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-07, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +11.9% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-09, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +12.7% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
@@ -108,6 +107,7 @@ What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling b
 - Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-st.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 10/11/30; Divine Intellect 5 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +2 Sacred Duty, +1 Templar's Bulwark; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).
 - 2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

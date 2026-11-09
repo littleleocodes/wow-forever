@@ -442,11 +442,10 @@
         {"talent": "Eye of the Storm", "why": "The scorer's value in this build: +10.5% of its score (model elemental-dps)."},
         {"talent": "Reverberation", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
         {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
-        {"talent": "Earthbound", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
-        {"talent": "Lava Burst", "why": "The scorer's value in this build: +7.5% of its score (model elemental-dps)."}
+        {"talent": "Earthbound", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."}
       ],
       "flex": [],
-      "notes": ["Scores +40.4% of the optimum's talent value above the hand draft pvp-elemental-ns, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Warding -> Improved Fire Nova.", "Where we disagree with the community: most Elemental builds take Convection (76% take it), which the model values below this build's weakest point; this build takes Anticipation (5%), Earth's Grasp (12%), Guardian Totems (12%), Stormstrike (18%), which few Elemental builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-16 (repair_builds.py, client build 70425 trees): 35/16/0 -> 35/16/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; refill +1 Elemental Warding (refill: the elemental-dps model, pvp).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 35/16/0 -> 33/18/0; Lava Burst 1 gone; +1 Ancestral Knowledge (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); -1 Trial by Fire (over 51) (refill: the elemental-dps model, pvp)."],
+      "notes": ["Scores +40.4% of the optimum's talent value above the hand draft pvp-elemental-ns, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Warding -> Improved Fire Nova.", "Where we disagree with the community: most Elemental builds take Convection (76% take it), which the model values below this build's weakest point; this build takes Anticipation (5%), Earth's Grasp (12%), Guardian Totems (12%), Stormstrike (18%), which few Elemental builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-16 (repair_builds.py, client build 70425 trees): 35/16/0 -> 35/16/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; refill +1 Elemental Warding (refill: the elemental-dps model, pvp).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 35/16/0 -> 33/18/0; Lava Burst 1 gone; +1 Ancestral Knowledge (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); -1 Trial by Fire (over 51) (refill: the elemental-dps model, pvp).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out)."],
       "open_questions": ["A derived Elemental PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/popular.js"],
       "replaces": "pvp-elemental-ns"
@@ -550,47 +549,6 @@
       "notes": ["Community tie-break moves: 1 point Restorative Totems -> Mana Tide Totem; 2 points Restorative Totems -> Mindfulness; 1 point Restorative Totems -> Ancestral Healing.", "Where we disagree with the community: most Restoration builds take Water Shield (96% take it), Tidal Mastery (88% take it), Ancestral Knowledge (85% take it), which the model values below this build's weakest point; this build takes Anticipation (7%), Earth's Grasp (5%), Guardian Totems (18%), Toughness (8%), which few Restoration builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 0/20/31 -> 0/20/31; +1 Ancestral Knowledge (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); -1 Toughness (over 51); -1 Toughness (over 51) (refill: the resto-heal model, pvp)."],
       "open_questions": ["A derived Restoration PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/popular.js"]
-    },
-    {
-      "id": "enhancement-ml-raid",
-      "name": "Enhancement — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Enhancement",
-      "generated": "2026-10-03",
-      "derived": "raid",
-      "summary": "The Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 5],
-          ["Call of Flame", 3],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 5],
-          ["Elemental Focus", 1],
-          ["Trial by Fire", 2]
-        ],
-        "Enhancement": [
-          ["Ancestral Knowledge", 5],
-          ["Thundering Strikes", 5],
-          ["Mental Dexterity", 3],
-          ["Elemental Weapons", 2],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Improved Stormstrike", 2],
-          ["Mental Quickness", 2],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": []
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft enhancement-raid-dps in a full raid, same gear and fights (100,000, one seed): +7.9% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Search result (full raid): 19/32/0 at 801.3 ± 0.12 DPS over 200,000 fights; runner-up 19/32/0 (+0.05%; the winner takes Ancestral Knowledge 5, Elemental Weapons 2; the runner-up Ancestral Knowledge 4, Elemental Weapons 3); 7,070 builds simulated; certificate: none of its 322 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 19/32/0 at 781.7 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 20/31/0 at 416.9 DPS.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Enhancement: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.", "2026-10-16 (repair_builds.py, client build 70425 trees): 19/32/0 -> 19/32/0; Improved Fire Nova -> Trial by Fire (renamed) (refill: the enhancement-dps model, raid-dps)."],
-      "open_questions": ["A machine-searched Enhancement build: check it against the community's Enhancement builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"],
-      "replaces": "enhancement-raid-dps"
     },
     {
       "id": "opt-enhancement-dps-leveling-st",
@@ -829,12 +787,10 @@
         {"talent": "Mental Quickness", "why": "Removing it costs 2.5 points of score in this model."},
         {"talent": "Trial by Fire", "why": "Removing it costs 2.5 points of score in this model."},
         {"talent": "Mental Dexterity", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Tidal Focus", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Stormstrike", "why": "Removing it costs 2.1 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 1.1 points of score in this model."}
+        {"talent": "Stormstrike", "why": "Removing it costs 2.1 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r9 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (54.1s vs 60.2s per kill, level-weighted).", "Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs)."],
+      "notes": ["Allocation and order taken from cand-aoe-r9 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (54.1s vs 60.2s per kill, level-weighted).", "Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Tidal Focus, Flurry; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"],
       "order": [
@@ -899,14 +855,13 @@
         {"talent": "Improved Ghost Wolf", "why": "Removing it costs 3.0 points of score in this model."},
         {"talent": "Mindfulness", "why": "Removing it costs 3.0 points of score in this model."},
         {"talent": "Elemental Alacrity", "why": "Removing it costs 2.8 points of score in this model."},
-        {"talent": "Lava Burst", "why": "Removing it costs 2.7 points of score in this model."},
         {"talent": "Tidal Focus", "why": "Removing it costs 2.4 points of score in this model."},
         {"talent": "Elemental Fury", "why": "Removing it costs 2.1 points of score in this model."},
         {"talent": "Thundering Strikes", "why": "Removing it costs 2.0 points of score in this model."},
         {"talent": "Shamanistic Focus", "why": "Removing it costs 1.9 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the elemental-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 30.1 s per kill; own tree first 30.8 s; own tree last 30.6 s."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).", "2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the elemental-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 30.1 s per kill; own tree first 30.8 s; own tree last 30.6 s.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"],
       "order": [
@@ -973,13 +928,12 @@
         {"talent": "Call of Flame", "why": "Removing it costs 18.6 points of score in this model."},
         {"talent": "Elemental Fury", "why": "Removing it costs 16.6 points of score in this model."},
         {"talent": "Shamanistic Focus", "why": "Removing it costs 11.2 points of score in this model."},
-        {"talent": "Lava Burst", "why": "Removing it costs 11.2 points of score in this model."},
         {"talent": "Tidal Focus", "why": "Removing it costs 11.2 points of score in this model."},
         {"talent": "Mindfulness", "why": "Removing it costs 9.9 points of score in this model."},
         {"talent": "Thundering Strikes", "why": "Removing it costs 8.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-raid-dps.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-raid-dps.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
     },
@@ -1019,14 +973,13 @@
         {"talent": "Elemental Alacrity", "why": "Removing it costs 28.2 points of score in this model."},
         {"talent": "Elemental Fury", "why": "Removing it costs 16.7 points of score in this model."},
         {"talent": "Call of Flame", "why": "Removing it costs 16.7 points of score in this model."},
-        {"talent": "Lava Burst", "why": "Removing it costs 10.1 points of score in this model."},
         {"talent": "Tidal Focus", "why": "Removing it costs 9.6 points of score in this model."},
         {"talent": "Thundering Strikes", "why": "Removing it costs 7.3 points of score in this model."},
         {"talent": "Concussion", "why": "Removing it costs 6.5 points of score in this model."},
         {"talent": "Lightning Overload", "why": "Removing it costs 4.7 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)."],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
     },
@@ -1124,47 +1077,6 @@
       "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
-    },
-    {
-      "id": "elemental-enhancement-ml-raid",
-      "name": "Elemental-Enhancement — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Elemental/Enhancement",
-      "generated": "2026-10-29",
-      "derived": "raid",
-      "summary": "The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-29 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 5],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 3],
-          ["Call of Flame", 3],
-          ["Elemental Focus", 1],
-          ["Trial by Fire", 2]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 3],
-          ["Mental Dexterity", 3],
-          ["Elemental Weapons", 3],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Mental Quickness", 2],
-          ["Improved Stormstrike", 2],
-          ["Maelstrom Weapon", 4]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 5]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Search result (full raid): 17/29/5 at 711.8 ± 0.12 DPS over 100,000 fights; runner-up 17/29/5 (+0.02%; the winner takes Concussion 4, Convection 1; the runner-up Concussion 2, Convection 3); 1,660 builds simulated; certificate: none of its 250 one-move and chain-move neighbours was 0.1% ahead.", "Where the simulator measured no difference, the points follow elemental-enhancement-ml-raid: Concussion → Convection (4 points) (within 0.02% of the search winner 17/29/5 on one seed, 30,000 fights).", "Simulator numbers are the community's model of the beta (wowsims/forever 30f67f5 (client 70450) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/29/5 at 697.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 16/29/6 at 391.7 DPS."],
-      "open_questions": ["A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch."],
-      "sources": ["https://github.com/wowsims/forever"]
     },
     {
       "id": "elemental-enhancement-open-leveling",
@@ -1391,59 +1303,6 @@
       "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/540332100302135-05203001-053-7"]
     },
     {
-      "id": "enhancement-open-raid",
-      "name": "Enhancement — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Enhancement",
-      "generated": "2026-11-07",
-      "derived": "raid",
-      "summary": "The Enhancement raid build the open talent search found on 2026-11-07: every legal 51-point build with no tree rule, searched in the community simulator's enhancement-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 1],
-          ["Concussion", 5],
-          ["Elemental Devastation", 3],
-          ["Reverberation", 2],
-          ["Call of Flame", 3],
-          ["Elemental Focus", 1],
-          ["Trial by Fire", 2]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Ancestral Knowledge", 4],
-          ["Mental Dexterity", 3],
-          ["Elemental Weapons", 3],
-          ["Shamanistic Focus", 1],
-          ["Flurry", 5],
-          ["Stormstrike", 1],
-          ["Mental Quickness", 2],
-          ["Improved Stormstrike", 2],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": [
-          ["Tidal Focus", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Stormstrike", "why": "290 DPS lost without it (29% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Maelstrom Weapon", "why": "98 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Mental Dexterity", "why": "90 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Flurry", "why": "85 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shamanistic Focus", "why": "52 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Thundering Strikes", "why": "44 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Call of Flame", "why": "38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Trial by Fire", "why": "32 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+7.1% over the best hand draft of the spec, enhancement-raid-dps, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (enhancement-dps, full raid): 17/32/2 (Enhancement) at 996.5 DPS; enhancement-ml-raid 964.1, enhancement-raid-dps 930.1, elemental-enhancement-ml-raid 918.6, opt-enhancement-dps-raid-dps 915.3 in the same fights; 4,542 builds simulated, 2 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): elemental-dps -58.1%, stormcaller-dps -57.1%; none adopted.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements."],
-      "open_questions": ["An open-search Enhancement build: check it against the community's Enhancement builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/shaman/60/153203102-054030310051002251-02-12"],
-      "replaces": "enhancement-raid-dps"
-    },
-    {
       "id": "restoration-leveling",
       "name": "Restoration — Leveling into the raid build",
       "role": "dps",
@@ -1509,6 +1368,134 @@
       "notes": ["2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 38 s; own tree first 38 s; own tree last 38 s. First Restoration point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "elemental-ml-raid",
+      "name": "Elemental — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Elemental",
+      "generated": "2026-11-07",
+      "derived": "raid",
+      "summary": "The Elemental build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-07 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry elemental-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 5],
+          ["Reverberation", 3],
+          ["Elemental Alacrity", 3],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Call of Thunder", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Fury", 5],
+          ["Lightning Mastery", 1],
+          ["Elemental Reach", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5],
+          ["Shamanistic Focus", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Mindfulness", 3],
+          ["Natural Grace", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft elemental-raid-dps in a full raid, same gear and fights (100,000, one seed): +3.9% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow elemental-raid-dps: Elemental Warding → Eye of the Storm, Totemic Focus → Eye of the Storm (the same DPS as the search winner 31/11/9 on one seed, 30,000 fights).", "Search result (full raid): 31/11/9 at 778.3 ± 0.11 DPS over 100,000 fights; runner-up 31/11/9 (+0.00%; the winner takes Elemental Warding 1, Reverberation 3; the runner-up Reverberation 4); 1,418 builds simulated; certificate: none of its 210 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 31/11/9 at 755.4 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 31/11/9 at 589.5 DPS.", "2026-11-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Eye of the Storm -> Natural Grace (threat); Eye of the Storm -> Elemental Reach (range). Net +0.00% on a third seed."],
+      "open_questions": ["A machine-searched Elemental build: check it against the community's Elemental builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "elemental-raid-dps"
+    },
+    {
+      "id": "enhancement-ml-raid",
+      "name": "Enhancement — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-11-07",
+      "derived": "raid",
+      "summary": "The Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-07 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 2],
+          ["Concussion", 5],
+          ["Elemental Devastation", 3],
+          ["Reverberation", 1],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Trial by Fire", 2]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 3],
+          ["Mental Dexterity", 3],
+          ["Elemental Weapons", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 3]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft enhancement-raid-dps in a full raid, same gear and fights (100,000, one seed): +6.7% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow enhancement-raid-dps: Reverberation → Convection (the same DPS as the search winner 17/31/3 on one seed, 30,000 fights).", "Search result (full raid): 17/31/3 at 1020.7 ± 0.16 DPS over 100,000 fights; runner-up 17/31/3 (+0.00%; the winner takes Convection 1, Reverberation 2; the runner-up Convection 2, Reverberation 1); 1,664 builds simulated; certificate: none of its 258 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/31/3 at 984.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 12/31/8 at 608.7 DPS."],
+      "open_questions": ["A machine-searched Enhancement build: check it against the community's Enhancement builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"],
+      "replaces": "enhancement-raid-dps"
+    },
+    {
+      "id": "elemental-enhancement-ml-raid",
+      "name": "Elemental-Enhancement — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Elemental/Enhancement",
+      "generated": "2026-11-07",
+      "derived": "raid",
+      "summary": "The Elemental-Enhancement build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-07 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry enhancement-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 1],
+          ["Concussion", 5],
+          ["Elemental Devastation", 3],
+          ["Reverberation", 2],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Trial by Fire", 2]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 3],
+          ["Mental Dexterity", 3],
+          ["Elemental Weapons", 3],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 5],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 4]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Search result (full raid): 17/29/5 at 941.0 ± 0.15 DPS over 100,000 fights; runner-up 17/29/5 (+0.09%; the winner takes Convection 1, Reverberation 2; the runner-up Convection 2, Reverberation 1); 1,418 builds simulated; certificate: none of its 233 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 17/29/5 at 942.7 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 14/29/8 at 550.7 DPS."],
+      "open_questions": ["A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch."],
+      "sources": ["https://github.com/wowsims/forever"]
     }
   ]
 }

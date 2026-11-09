@@ -111,6 +111,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Arcane Shot** (6), **Hunter's Mark** (6), Concussive Shot (8), Demoralizing Screech (8), Scorpid Poison (8).
 
+**New ranks to buy:** Raptor Strike at 8.
+
 **Keys to set:** R = Arcane Shot; 1 = Hunter's Mark, macro; Shift+Q = Concussive Shot (at 8).
 
 **Your keys in this stage:** R Arcane Shot, Mouse 4 Serpent Sting, 1 Hunter's Mark, 4 Raptor Strike.
@@ -160,7 +162,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Dismember (12), Distracting Shot (12), Dust Cloud (12), Mend Pet (12), Pinch (12), Savage Rend (12), Sonic Blast (12), Swipe (12), Tendon Rip (12), Web (12), Wing Clip (12), Eagle Eye (14), Eyes of the Beast (14), Scare Beast (14), Immolation Trap (16), Mongoose Bite (16), Multi-Shot (18), Track Undead (18).
 
-**New ranks to buy:** Arcane Shot at 12; Serpent Sting at 18.
+**New ranks to buy:** Arcane Shot at 12; Raptor Strike at 16; Serpent Sting at 18.
 
 **Talents:** 12-14 Lethal Attacks, 15-19 Careful Aim.
 
@@ -188,7 +190,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Aimed Shot** (20), Arcane Resistance (20), Aspect of the Cheetah (20), Disengage (20), Fire Resistance (20), Freezing Trap (20), Frost Resistance (20), Nature Resistance (20), Shadow Resistance (20), Shell Shield (20), Trickster's Dance (20), Scorpid Sting (22), Beast Lore (24), Track Hidden (24).
 
-**New ranks to buy:** Arcane Shot at 20; Hunter's Mark at 22.
+**New ranks to buy:** Arcane Shot at 20; Hunter's Mark at 22; Mend Pet at 20; Raptor Strike at 24.
 
 **Talents:** 20-22 Improved Stings, 23-24 Rapid Killing, 25 Trueshot Aura.
 
@@ -218,7 +220,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Rapid Fire** (26), Track Elementals (26), Frost Trap (28).
 
-**New ranks to buy:** Aimed Shot at 28; Arcane Shot at 28; Serpent Sting at 26.
+**New ranks to buy:** Aimed Shot at 28; Arcane Shot at 28; Mend Pet at 28; Serpent Sting at 26.
 
 **Talents:** 26-29 Efficiency.
 
@@ -247,7 +249,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Aspect of the Beast (30), Dash (30), Dive (30), Feign Death (30), Lacerate (30), Prowl (30), Thunderstomp (30), Enchanted Flare (32), Flare (32), Track Demons (32), Explosive Trap (34), Viper Sting (36).
 
-**New ranks to buy:** Aimed Shot at 36; Arcane Shot at 36; Serpent Sting at 34.
+**New ranks to buy:** Aimed Shot at 36; Arcane Shot at 36; Mend Pet at 36; Mongoose Bite at 30; Raptor Strike at 32; Scare Beast at 30; Serpent Sting at 34; Wing Clip at 38.
 
 **Talents:** 30 Rapid Recuperation, 31 Efficiency, 32-34 Barrage, 35-39 Ranged Weapon Specialization.
 
@@ -268,7 +270,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
 
 - The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.
-- **Rapid Recuperation** (30): after **Serpent Sting**, half your mana regeneration continues while casting for 15 seconds. **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.
+- **Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.
 - **Explosive Trap** (34) is for packs.
 
 *Fight lab, seconds per kill: 19 at level 30, 22 at level 39. Presses per kill at level 30: Claw 3.9, Auto Shot 3.3, Growl 1.4, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0, Arcane Shot 1.0, Melee 0.2.*
@@ -277,7 +279,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Aspect of the Pack (40), Track Giants (40), Volley (40), Aspect of the Wild (46), Track Dragonkin (50), Tranquilizing Shot (60).
 
-**New ranks to buy:** Aimed Shot at 44, 52, 60; Arcane Shot at 44, 52, 60; Hunter's Mark at 40, 58; Serpent Sting at 42, 50, 58, 60.
+**New ranks to buy:** Aimed Shot at 44, 52, 60; Arcane Shot at 44, 52, 60; Explosive Trap at 44, 54; Freezing Trap at 40, 60; Hunter's Mark at 40, 58; Mend Pet at 44, 52, 60; Mongoose Bite at 44, 58; Raptor Strike at 40, 48, 56; Scare Beast at 46; Serpent Sting at 42, 50, 58, 60; Volley at 50, 58; Wing Clip at 60.
 
 **Talents:** 40-44 Deadly Aspects, 45-46 Focused Fire, 47-48 Endurance Training, 49 Improved Aspect of the Monkey, 50-54 Unleashed Fury, 55-59 Ferocity, 60 Bestial Discipline.
 
@@ -305,7 +307,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Between fights
 
-- Mend the pet below half its health, drink below 15% of your mana, eat below two thirds of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.
+- Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.
 - Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25.
 - Visit the trainer every even level: **Serpent Sting**, **Arcane Shot** and **Aimed Shot** have many ranks.
 
@@ -315,4 +317,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast Mastery and Beast-Marks shoot with the same pet, give it more talents and never cast **Arcane Shot**: [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

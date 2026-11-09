@@ -45,21 +45,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-27 | 28-29 | 30-34 | 35-60 |
 |---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the fire shock to spread | — | — | — | **Flame Shock** | Flame Shock | Flame Shock | Flame Shock | Flame Shock |
-| Shift+E | Packs: the blast around you | — | — | — | **Fire Nova** from 12 | Fire Nova | Fire Nova | Fire Nova | Fire Nova |
+| Shift+E | Packs: the blast around your Fire totem (drop Searing Totem first) | — | — | — | **Fire Nova** from 12 | Fire Nova | Fire Nova | Fire Nova | Fire Nova |
 | Shift+R | Packs: the bolt that jumps | — | — | — | — | — | — | **Chain Lightning** from 32 | Chain Lightning |
 | Shift+F | Escape: slow everything around you | — | **Earthbind Totem** from 6 | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem |
 | Shift+Mouse 5 | A heal that keeps ticking | — | — | — | — | **Healing Stream Totem** | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem |
 | Shift+Mouse 4 | Break a fear | — | — | — | **Tremor Totem** from 18 | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem |
 | Shift+1 | Packs: the fire totem | — | — | — | — | **Magma Totem** from 26 | Magma Totem | Magma Totem | Magma Totem |
 | Shift+2 | Strip a mob's buff | — | — | — | **Purge** from 12 | Purge | Purge | Purge | Purge |
-| Shift+3 | Free | — | — | — | — | — | — | — | — |
-| Shift+4 | Free | — | — | — | — | — | — | — | — |
+| Shift+3 | Your healing potion (macro on the macro page) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+4 | Your mana potion (macro on the macro page) | — | **Mana potion macro** from 5 | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro |
 | Shift+C | Dungeons: the heal that jumps, the wider version of C | — | — | — | — | — | — | — | **Chain Heal** from 40 |
 | Shift+X | Dungeons: the heal over time | — | — | — | — | — | — | — | **Riptide** from 60 |
 
 - The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).
 - Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.
-- The Instant heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.
+- The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.
 - **Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.
 - Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
 - The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends.
@@ -68,7 +68,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Healing Wave (1), **Lightning Bolt** (1), Rockbiter Weapon (1).
 
-**Keys to set:** Mouse 5 = Healing Wave; 1 = Lightning Bolt.
+**Keys to set:** Mouse 5 = Healing Wave; 1 = Lightning Bolt; Shift+3 = Healing potion macro.
 
 **Your keys in this stage:** 1 Lightning Bolt.
 
@@ -84,7 +84,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Earth Shock** (4), Stoneskin Totem (4), Earthbind Totem (6).
 
-**Keys to set:** Q = Earth Shock; Shift+F = Earthbind Totem (at 6).
+**New ranks to buy:** Healing Wave at 6.
+
+**Keys to set:** Q = Earth Shock; Shift+4 = Mana potion macro (at 5); Shift+F = Earthbind Totem (at 6).
 
 **Your keys in this stage:** Q Earth Shock.
 
@@ -102,7 +104,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Lightning Shield** (8), Stoneclaw Totem (8).
 
-**New ranks to buy:** Earth Shock at 8.
+**New ranks to buy:** Earth Shock at 8; Lightning Bolt at 8.
 
 **Keys to set:** F = Stoneclaw Totem.
 
@@ -121,7 +123,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Flame Shock (10), Flametongue Weapon (10), **Searing Totem** (10), Strength of Earth Totem (10), Ancestral Spirit (12), Fire Nova (12), Purge (12), Cure Poison (16), Tremor Totem (18).
 
-**New ranks to buy:** Earth Shock at 14; Lightning Shield at 16.
+**New ranks to buy:** Earth Shock at 14; Flame Shock at 18; Healing Wave at 12, 18; Lightning Bolt at 14; Lightning Shield at 16; Stoneclaw Totem at 18.
 
 **Talents:** 10-14 Tidal Focus, 15-17 Mindfulness, 18-19 Thundering Strikes.
 
@@ -148,7 +150,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Call of the Elements (20), Frost Shock (20), Frostbrand Weapon (20), Ghost Wolf (20), Healing Stream Totem (20), Lesser Healing Wave (20), Totemic Recall (20), Cure Disease (22), Poison Cleansing Totem (22), Totemic Call (22), Water Breathing (22), Frost Resistance Totem (24), Far Sight (26), Magma Totem (26), Mana Spring Totem (26).
 
-**New ranks to buy:** Earth Shock at 24; Lightning Shield at 24; Searing Totem at 20.
+**New ranks to buy:** Earth Shock at 24; Fire Nova at 22; Healing Wave at 24; Lightning Bolt at 20, 26; Lightning Shield at 24; Searing Totem at 20.
 
 **Talents:** 20-22 Thundering Strikes, 23-27 Totemic Focus.
 
@@ -174,6 +176,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Fire Resistance Totem (28), Flametongue Totem (28), Water Walking (28).
 
+**New ranks to buy:** Flame Shock at 28; Lesser Healing Wave at 28; Stoneclaw Totem at 28.
+
 **Talents:** 28 Water Shield, 29 Ancestral Healing.
 
 **Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
@@ -195,7 +199,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Astral Recall (30), Call of the Ancestors (30), Grounding Totem (30), Nature Resistance Totem (30), Reincarnation (30), Windfury Weapon (30), Chain Lightning (32), Windfury Totem (32), Sentry Totem (34).
 
-**New ranks to buy:** Lightning Shield at 32; Searing Totem at 30.
+**New ranks to buy:** Fire Nova at 32; Frost Shock at 34; Healing Stream Totem at 30; Healing Wave at 32; Lightning Bolt at 32; Lightning Shield at 32; Purge at 32; Searing Totem at 30.
 
 **Talents:** 30 Mana Tide Totem, 31-34 Restorative Totems.
 
@@ -222,7 +226,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Windwall Totem (36), Disease Cleansing Totem (38), Call of the Spirits (40), Chain Heal (40), Grace of Air Totem (42).
 
-**New ranks to buy:** Earth Shock at 36, 48, 60; Lightning Shield at 40, 48, 56; Searing Totem at 40, 50, 60.
+**New ranks to buy:** Chain Heal at 46, 54; Chain Lightning at 40, 48, 56; Earth Shock at 36, 48, 60; Fire Nova at 42, 52; Flame Shock at 40, 52, 60; Frost Shock at 46, 58; Healing Stream Totem at 40, 50, 60; Healing Wave at 40, 48, 56, 60; Lesser Healing Wave at 36, 44, 52, 60; Lightning Bolt at 38, 44, 50, 56; Lightning Shield at 40, 48, 56; Magma Totem at 36, 46, 56; Mana Tide Totem at 38, 48, 58; Riptide at 50, 60; Searing Totem at 40, 50, 60; Stoneclaw Totem at 38, 48, 58.
 
 **Talents:** 35 Nature's Swiftness, 36 Restorative Totems, 37-41 Ancestral Knowledge, 42-43 Ancestral Healing, 44-46 Healing Focus, 47-51 Tidal Mastery, 52-54 Healing Way, 55-59 Purification, 60 Riptide.
 
@@ -256,4 +260,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Elemental fights from range with **Lightning Bolt**; it has its own page and guide in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

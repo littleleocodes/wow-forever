@@ -37,7 +37,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | A second mob | — | — | **Polymorph** from 8 | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
 | 3 | Emergency | — | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield |
 | 4 | Mana back between fights | — | — | — | — | **Evocation** | Evocation | Evocation | Evocation |
-| C | The slow when Frost Nova is down, and packs | — | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
+| C | Packs: the cone (the single-target list never casts it) | — | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
 | Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand | Wand |
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
@@ -54,7 +54,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+2 | Free (Cold Snap with the hand-made Frost build) | — | — | — | — | — | — | — | — |
 | Shift+3 | Lift a curse | — | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
 | Shift+4 | Free | — | — | — | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — | — | — | — |
+| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 | Shift+X | Free | — | — | — | — | — | — | — | — |
 
 - Level 4 is the one swap on bar 1: **Frostbolt** takes Q and **Fireball** leaves the bar.
@@ -62,13 +62,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The eat-and-drink macro on the keybinds page is a click too.
 - **Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.
 - Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free.
-- The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends, and **Cone of Cold** on C for a mob on you with **Frost Nova** down.
+- The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends, and **Cone of Cold** on C is the slow for it.
 
 ## Levels 1-3: Fireball
 
 **The trainer teaches:** Arcane Intellect (1), **Fireball** (1), Frost Armor (1).
 
-**Keys to set:** Q = Fireball; Middle mouse = Wand.
+**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+C = Healing potion macro.
 
 **Your keys in this stage:** Q Fireball.
 
@@ -148,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blink (20), Blizzard (20), Evocation (20), Fire Ward (20), Mana Shield (20), Frost Ward (22), Scorch (22).
 
-**New ranks to buy:** Fire Blast at 22; Frostbolt at 20.
+**New ranks to buy:** Arcane Explosion at 22; Fire Blast at 22; Frostbolt at 20; Polymorph at 20.
 
 **Talents:** 20 Ice Lance, 21-23 Frost Channeling.
 
@@ -173,7 +173,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Counterspell** (24), Cone of Cold (26), Conjure Mana Agate (28).
 
-**New ranks to buy:** Frost Nova at 26; Frostbolt at 26; Ice Lance at 28.
+**New ranks to buy:** Blizzard at 28; Frost Nova at 26; Frostbolt at 26; Ice Lance at 28; Mana Shield at 28.
 
 **Talents:** 24 Ice Shards, 25 Shatter, 26-27 Ice Shards, 28-29 Shatter.
 
@@ -191,7 +191,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 6. Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
 
 - **Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.
-- **Cone of Cold** (26): leave it off your bar for single mobs. The tuned rotation never casts it; kills measured faster without.
+- **Cone of Cold** (26) goes on C for packs. The tuned rotation never casts it on a single mob; kills measured faster without.
 
 *Fight lab, seconds per kill: 32 at level 24, 34 at level 29. Presses per kill at level 24: Frostbolt 4.7, Ice Lance 1.5, Wand 0.9, Frost Nova 0.7, Fire Blast 0.6, Counterspell 0.2.*
 
@@ -199,7 +199,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Ice Armor (30), Mage Armor (34), Conjure Mana Jade (38).
 
-**New ranks to buy:** Fire Blast at 30, 38; Frostbolt at 32, 38; Ice Lance at 34.
+**New ranks to buy:** Arcane Explosion at 30, 38; Arcane Missiles at 32; Blizzard at 36; Cone of Cold at 34; Fire Blast at 30, 38; Fire Ward at 30; Frost Ward at 32; Frostbolt at 32, 38; Ice Lance at 34; Mana Shield at 36.
 
 **Talents:** 30-31 Fingers of Frost, 32-33 Ice Shards, 34-35 Arctic Reach, 36-37 Improved Frost Nova, 38 Frost Warding, 39 Permafrost.
 
@@ -226,7 +226,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Frostfire Bolt (40), Conjure Mana Citrine (48), Arcane Brilliance (56), Conjure Mana Ruby (58).
 
-**New ranks to buy:** Fire Blast at 46, 54; Frost Nova at 40, 54; Frostbolt at 44, 50, 56, 60; Ice Lance at 42, 48, 56.
+**New ranks to buy:** Arcane Explosion at 46, 54; Arcane Missiles at 40, 48, 56; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostbolt at 44, 50, 56, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
 **Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50 Arcane Subtlety, 51-52 Improved Channeling, 53 Arcane Resilience, 54 Arcane Impact, 55-57 Arcane Meditation, 58-60 Incineration.
 
@@ -257,8 +257,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- Arcane-Frost is as fast in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up. See its page in this folder.
+- [Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up.
 - Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

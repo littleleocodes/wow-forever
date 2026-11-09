@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars.
+- **Frees:** nothing: this fills a free key, Shift+C on your bars. Fire and Frostfire put it on Shift+X: their Shift+C holds Cone of Cold (Fire, from 49) or Blast Wave (Frostfire, from 55). On the other specs' bars Cone of Cold is on C from 26; Fire's C becomes Blast Wave at 49.
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+C on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+X on your bars, Shift+4 for Fire and Frostfire. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 
@@ -52,9 +52,25 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 - **Replaces:** nothing. Click it once after each login from a side bar.
 - **Why it works:** the first two lines turn off the text, speech and sound of the "not ready" errors only, the way Forever's own error frame does, and useful errors like "Out of range" stay. The last line mutes the spell fizzle sound until you restart the game. These macros press spells on cooldown a lot, so this keeps them quiet.
 
+### Gnome: Eureka! with your bolt
+
+```
+#showtooltip Frostbolt
+/cast Eureka!
+/cast Frostbolt
+```
+
+- **Replaces:** Q, your bolt, the spell you press most and the bulk of your damage. Fire puts Fireball in both places, Frostfire its Frostfire Bolt from 40, and the Arcane spec (not Arcane-Frost, whose Q is Frostbolt) its Arcane Missiles from 8.
+- **Frees:** Eureka! never needs a key of its own.
+- **Fill it with:** Nothing.
+- **Why it works:** Eureka! has no global cooldown, so one press fires it and starts the bolt. For the next 2 minutes the Eureka! line fails and the bolt still casts: use the macro above to quiet the "not ready" errors. Q is your most-pressed key, so Eureka! goes out on the first bolt after it is ready.
+- **What it boosts:** for 8 seconds every mage attack spell costs 10% less mana and its direct damage is 10% higher (the simulator's spell data, 2026-11-06; it names Frostbolt, Ice Lance, Frost Nova, Fire Blast, Cone of Cold, Blizzard, Arcane Missiles and Fireball). An earlier beta text (build 70291) read "your next 3 non-periodic damaging abilities" instead, so read the tooltip in your own client before you trust either.
+- **Timing:** the bonus counts when a bolt finishes, so the bolt you start with Eureka! gets it, and starting Eureka! at a cast's start or at its end boosts the same number of bolts. Pressed alone in the last moment of a Frostbolt's cast it would boost one bolt more, since the simulator works a bolt's damage out when its cast ends: untested, the game may not let Eureka! go out while you cast, and on a key of its own it is easy to forget again. Once the bolt is flying it is too late for it.
+- **No macro can time it:** a macro's lines all run in the same instant, so Frostbolt first and Eureka! second still fires Eureka! as the cast starts, and a `/castsequence` moves to its next spell only when the cast finishes (the client's CastSequenceManager.lua steps on UNIT_SPELLCAST_SUCCEEDED).
+
 ## Frost
 
-Leveling and raid. Keys below are your [Frost keybinds](leveling/keybinds.md).
+Leveling and raid. Keys below are the keys of the [keybinds page](leveling/keybinds.md), whose layout is the Arcane-Frost one; the Frost build uses the same keys.
 
 ### Interrupt mid-cast
 
@@ -115,29 +131,29 @@ Arcane Blast and Missile Barrage builds.
 #showtooltip Arcane Power
 /cast Arcane Power
 /cast Presence of Mind
-/cast Arcane Blast
+/cast Arcane Wrath
 ```
 
-- **Replaces:** Arcane Power and Presence of Mind.
+- **Replaces:** Arcane Power and Presence of Mind, in a build that takes both (Arcane Power needs Presence of Mind). The leveling Arcane and Arcane-Frost builds take no Arcane Power, so this is for a raid build that does; check yours.
 - **Frees:** Two keys.
-- **Fill it with:** Cold Snap and Evocation, in a build that has them.
-- **Why it works:** Both cooldowns are off the global cooldown. Use it for a burst, not every pull. For Arcane-Frost, use the Presence of Mind macro on your keybinds page.
+- **Fill it with:** Nothing: Evocation already has 4.
+- **Why it works:** Arcane Power and Presence of Mind are both off the global cooldown, so one press starts them and the Arcane Wrath, which Presence of Mind makes instant. Use it for a burst, not every pull. For Arcane-Frost, use the Presence of Mind macro on your keybinds page; for the Arcane leveling spec, Shift+Q holds Presence of Mind and Arcane Wrath.
 
 ## Fire
 
 Fireball and Heating Up.
 
-### Combustion with your next nuke
+### Combustion with your opening Pyroblast
 
 ```
-#showtooltip Combustion
+#showtooltip Pyroblast
 /cast Combustion
-/cast Fireball
+/cast Pyroblast
 ```
 
-- **Replaces:** The Combustion key.
+- **Replaces:** The Combustion key (Combustion is a talent, level 59 on the Fire leveling page).
 - **Frees:** One key.
-- **Fill it with:** Blast Wave.
+- **Fill it with:** Nothing: the Fire guide puts this macro on Shift+Q and keeps Blast Wave on C. Fire opens every pull with a hard-cast Pyroblast, so that is the spell the macro casts; with no Combustion ready, the second line still opens the pull.
 - **Why it works:** Combustion is off the global cooldown.
 
 ### Instant Pyroblast
@@ -148,9 +164,9 @@ Fireball and Heating Up.
 /cast Pyroblast
 ```
 
-- **Replaces:** Presence of Mind and one Pyroblast press, if your build has both.
+- **Replaces:** Presence of Mind and one Pyroblast press, if your build has the Presence of Mind talent (none of the current Fire or Frostfire leveling pages' builds does).
 - **Frees:** One key.
-- **Fill it with:** Scorch.
+- **Fill it with:** Nothing.
 - **Why it works:** Presence of Mind is off the global cooldown. Keep plain Pyroblast for Heating Up, since this one spends the cooldown each press.
 
 ## Frostfire

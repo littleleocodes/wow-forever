@@ -10,51 +10,47 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 98% of the damage at level 60 in the fight lab comes from pet, Auto Shot, Aimed Shot, Arcane Shot, Multi-Shot, Sniper Shot, Barrage, Serpent Sting (the spec's rule: at least 70%; **Aimed Shot** cast in every fight).
+**Signature spells:** 98% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet, Auto Shot, Aimed Shot, Barrage, Serpent Sting; this build never casts Arcane Shot, Multi-Shot, Sniper Shot) (the spec's rule: at least 70%; **Aimed Shot** cast at level 60).
 
 ## How to play
-
-**Not in this build:** **Bestial Wrath**, **Intimidation** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** Pet out (a cat), **Aspect of the Hawk** up. Send the pet in first and let it hold the mob.
 
 **In the fight**, top to bottom:
 
 1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
-2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
-3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
-4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
-5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
+2. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+3. No other shots on a single mob: the fight lab levels faster skipping **Arcane Shot** and **Multi-Shot** and keeping the mana.
+4. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
+5. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health.
 
 ## Why this rotation
 
-Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split puts a full set of pet talents first (levels 10-37) and then adds Marksmanship's crit (**Lethal Attacks**), cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**).
+Beast-Marks levels like Beast Mastery without its two cooldowns: the cat tanks and you shoot from range. The split puts the pet talents first (levels 10-37: **Deadly Aspects**, **Unleashed Fury**, **Ferocity**, **Bestial Discipline**, **Frenzy**) and then adds Marksmanship's crit (**Lethal Attacks**), cheaper shots (**Efficiency**), stronger stings (**Improved Stings**) and **Careful Aim**.
 
 **Why it works**
 
-- Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity**, **Bestial Discipline** and **Frenzy** make it a real part of your damage: **Unleashed Fury** and **Bestial Discipline** were the build's most valuable talents in the fight lab at 60, about a second a kill each.
-- **Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The tuned rules (2026-10-24) never cast Multi-Shot (about 3.5% faster per kill), Arcane Shot (about 2%) or **Summon Hawk** (about 2.5%).
-- **Summon Hawk** (level 34) is only the point that opens the next row (**Frenzy**); the fight lab gives it no value while leveling. Don't spend mana on it.
-- **Auto Shot** is the largest share (about 35% at 60, the cat about a third) and cannot fire within 8 yards: step back out if the mob ends up beside you. **Mend Pet** when the pet drops below about a third; **Spirit Bond** (levels 32-33) heals you both between pulls.
+- Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own. **Unleashed Fury** (20-24) and **Bestial Discipline** (30-31) were the build's most valuable talents at 60 in the fight lab, about a second a kill each, ahead of **Efficiency** (43-47) and **Ferocity** (25-29), about 0.8.
+- **Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The tuned rules (2026-11-03) never cast **Multi-Shot** or **Arcane Shot**; this build has no **Summon Hawk** point anyway.
+- **Frenzy** (35-37) keeps the cat attacking faster after its crits; **Spirit Bond** (33-34) heals you both between pulls but measured nothing.
+- **Auto Shot** with **Aimed Shot** and the sting is most of your own damage, the cat the rest, and **Auto Shot** cannot fire within 8 yards: step back out if the mob ends up beside you. **Mend Pet** when the pet drops below about a third.
 - **Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build: no **Rapid Killing**). **Trueshot Aura** (level 53) is a buff you cast in Forever: keep it on.
 
 **Caveats**
 
-- This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
+- This build does not take **Bestial Wrath**, nor **Intimidation**, so the list leaves out the step that names them, and **Rapid Fire** with it: still press **Rapid Fire** at the start of a fight when it is ready.
 - **Endurance Training**, **Pathfinding** and **Improved Revive Pet** measured nothing at 60 in the fight lab: they open the rows.
-- From level 57, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
-- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite**, **Raptor Strike** and **Wing Clip** hold it until the pet's Growl takes it back.
-- Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
+- **Improved Tracking** (levels 57-60, 4 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
+- The lab drinks below 35% of your mana and eats below 65% of your health (the defaults). A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite**, **Raptor Strike** and **Wing Clip** hold it until the pet's Growl takes it back.
+- Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Hawk** rank 7 gives +120 ranged attack power (rank 6 +110), **Hunter's Mark** rank 4 +143 (rank 3 +98) and **Trueshot Aura** rank 5 +100 (rank 4 +75). Cast the highest rank you know; the fight lab does.
+- **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
 **When to change it**
 
 - Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
 - If the pet dies, finish the mob in melee or **Feign Death**, and revive it before the next pull. When a mob is nearly dead, stop spending mana and let **Auto Shot** and the pet finish it.
-
-*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -90,6 +86,8 @@ One point per level from 10, in this order:
 | 50 | 24 |
 | 60 | 25 |
 
+**Points that do nothing for this spec:** **Improved Revive Pet** (1) only counts toward the points the tree needs before **Frenzy**, **Pathfinding** and **Unleashed Fury**; **Pathfinding** (1) only counts toward the points the tree needs before **Frenzy**.
+
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

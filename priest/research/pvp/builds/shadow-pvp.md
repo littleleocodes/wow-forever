@@ -65,12 +65,6 @@ Shadowform (+10% damage, -50% Shadow mana cost), Silence, Vampiric Embrace, Blac
 12. **Improved Power Word: Shield** — +20% absorb on the shield a PvP priest recasts every 15 s; casts are not pushed back while it holds.
 13. **Inner Focus** — A free spell with +25% crit on a 3 min cooldown: a near-certain crit Mind Blast in a burst window.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 5 | Wand Specialization 2 + Twin Disciplines 3 | Twin Disciplines 5 | Tier-1 Discipline filler. |
-
 ## Notes
 
 - Shadow raid DPS may finally be viable: Shadow Weaving no longer needs debuff slots, Vampiric Embrace heals the party, and Shadowform halves mana costs. The same 7/0/44 with Shadow Affinity 3 is the raid variant.

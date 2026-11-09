@@ -1,10 +1,10 @@
 {
  "class": "priest",
  "spec": "holy-heal",
- "date": "2026-10-21",
+ "date": "2026-11-09",
  "runs": 60,
  "steps": 10,
- "seconds": 206,
+ "seconds": 399,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -36,17 +36,17 @@
    "summary": {
     "multiplier": 0.6909667968750001,
     "shares": {
-     "Greater Heal": 0.4628527533040197,
-     "Penance": 0.242691755844497,
-     "Prayer of Healing": 0.16259890220462198,
-     "Flash Heal": 0.10780952174572958,
-     "Renew": 0.022949712191166437,
-     "Power Word: Shield": 0.0010973547099653138
+     "Greater Heal": 0.462663250836852,
+     "Penance": 0.2431868110657959,
+     "Prayer of Healing": 0.1610385731858881,
+     "Flash Heal": 0.10842445152964156,
+     "Renew": 0.02358960828480535,
+     "Power Word: Shield": 0.0010973050970170986
     },
-    "hps": 390.6995578608779,
-    "overheal_share": 0.09914694317532002,
-    "oom_time": 39.7283333333336,
-    "mana_left": 251.9412500000003,
+    "hps": 390.71722273547346,
+    "overheal_share": 0.09858274427591797,
+    "oom_time": 40.12500000000025,
+    "mana_left": 285.82395833333345,
     "survival": 0.8666666666666667
    },
    "stats": {
@@ -283,23 +283,23 @@
    }
   },
   "discipline-ml-heal": {
-   "split": "30/21/0",
-   "capacity": 0.628759765625,
+   "split": "29/22/0",
+   "capacity": 0.6465332031250001,
    "summary": {
-    "multiplier": 0.628759765625,
+    "multiplier": 0.6465332031250001,
     "shares": {
-     "Greater Heal": 0.43839327434835623,
-     "Penance": 0.2397543504768827,
-     "Prayer of Healing": 0.13564512640982687,
-     "Flash Heal": 0.12568461692616398,
-     "Power Word: Shield": 0.030957723708352335,
-     "Renew": 0.029564908130417886
+     "Greater Heal": 0.4283709136603769,
+     "Penance": 0.23361157329571422,
+     "Prayer of Healing": 0.1608861185705556,
+     "Flash Heal": 0.12734555205590448,
+     "Power Word: Shield": 0.02905209886655275,
+     "Renew": 0.020733743550896157
     },
-    "hps": 343.5101469038732,
-    "overheal_share": 0.07257151009374051,
-    "oom_time": 42.85166666666698,
-    "mana_left": 232.93499999999986,
-    "survival": 0.8166666666666667
+    "hps": 357.3290571514808,
+    "overheal_share": 0.06707632855465573,
+    "oom_time": 34.72500000000021,
+    "mana_left": 221.19229166666628,
+    "survival": 0.9
    },
    "stats": {
     "intellect": 480,
@@ -314,22 +314,22 @@
  "deltas": {
   "holy-raid-healer": [
    {
+    "talent": "Divine Fury",
+    "ranks": 1,
+    "sim_delta": -0.002748414376321257,
+    "cap_with": 0.6909667968750001,
+    "cap_without": 0.69287109375,
+    "ev_delta": 0.0,
+    "simulated": true
+   },
+   {
     "talent": "Holy Binding",
     "ranks": 1,
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.013824326827384301,
-    "simulated": false
-   },
-   {
-    "talent": "Divine Fury",
-    "ranks": 1,
-    "sim_delta": 0.005078305337547563,
-    "cap_with": 0.6909667968750001,
-    "cap_without": 0.6874755859375,
     "ev_delta": 0.0,
-    "simulated": true
+    "simulated": false
    },
    {
     "talent": "Holy Nova",
@@ -337,142 +337,133 @@
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0025967210998706193,
+    "ev_delta": 0.0026285613805110335,
     "simulated": false
    },
    {
     "talent": "Holy Specialization",
     "ranks": 5,
-    "sim_delta": 0.013028849595532833,
+    "sim_delta": 0.01208696896009161,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6820800781250002,
-    "ev_delta": 0.018253437753025663,
+    "cap_without": 0.68271484375,
+    "ev_delta": 0.018170289761860248,
     "simulated": true
    },
    {
     "talent": "Improved Healing",
     "ranks": 3,
-    "sim_delta": 0.09451620388274425,
+    "sim_delta": 0.09122455274521915,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.631298828125,
-    "ev_delta": 0.07303439829339815,
+    "cap_without": 0.633203125,
+    "ev_delta": 0.07399366790003808,
     "simulated": true
    },
    {
     "talent": "Improved Power Word: Shield",
     "ranks": 3,
-    "sim_delta": 0.0,
+    "sim_delta": 0.005542528245576603,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0017405256094373005,
+    "cap_without": 0.6871582031250001,
+    "ev_delta": 0.0017104452437760524,
     "simulated": true
    },
    {
     "talent": "Improved Renew",
     "ranks": 3,
-    "sim_delta": 0.0,
+    "sim_delta": -0.0022913949307293686,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0014190279705056249,
+    "cap_without": 0.6925537109375001,
+    "ev_delta": 0.0013945115730212964,
     "simulated": true
    },
    {
     "talent": "Inner Focus",
     "ranks": 1,
-    "sim_delta": 0.010208452312963986,
+    "sim_delta": 0.027370408015100777,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6839843750000001,
-    "ev_delta": 0.030920226905603747,
+    "cap_without": 0.6725585937500002,
+    "ev_delta": 0.030869883993420156,
     "simulated": true
    },
    {
     "talent": "Inspiration",
     "ranks": 3,
-    "sim_delta": 0.024952015355086572,
+    "sim_delta": 0.018717154992441146,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6741455078124999,
-    "ev_delta": 0.020738330718916325,
+    "cap_without": 0.6782714843750001,
+    "ev_delta": 0.020373246256476168,
     "simulated": true
    },
    {
     "talent": "Litany of Light",
     "ranks": 2,
-    "sim_delta": 0.06767768220914462,
+    "sim_delta": 0.07082860385925095,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6471679687499999,
-    "ev_delta": 0.010468435219332486,
+    "cap_without": 0.645263671875,
+    "ev_delta": 0.010597816555994618,
     "simulated": true
    },
    {
     "talent": "Meditation",
     "ranks": 3,
-    "sim_delta": 0.24541254125412554,
+    "sim_delta": 0.24115247993685043,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.5548095703125,
-    "ev_delta": 0.21730565639152497,
-    "simulated": true
-   },
-   {
-    "talent": "Mental Agility",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "cap_with": 0.6909667968750001,
-    "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0015564160285856717,
+    "cap_without": 0.5567138671875,
+    "ev_delta": 0.22054933545556374,
     "simulated": true
    },
    {
     "talent": "Mental Strength",
     "ranks": 5,
-    "sim_delta": 0.014444962185024618,
+    "sim_delta": 0.008336896109448677,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6811279296875,
-    "ev_delta": 0.03816705682239582,
+    "cap_without": 0.6852539062499999,
+    "ev_delta": 0.0385270690936633,
     "simulated": true
    },
    {
     "talent": "Penance",
     "ranks": 1,
-    "sim_delta": 0.06820154746178535,
+    "sim_delta": 0.07135556649127454,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6468505859375,
-    "ev_delta": 0.03592253874195765,
+    "cap_without": 0.6449462890625001,
+    "ev_delta": 0.035479175683154535,
     "simulated": true
    },
    {
-    "talent": "Power in Light",
-    "ranks": 2,
+    "talent": "Silent Resolve",
+    "ranks": 3,
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0,
+    "ev_delta": 0.003155932769212569,
     "simulated": false
    },
    {
     "talent": "Soul Warding",
     "ranks": 1,
-    "sim_delta": 0.0023019442575344406,
+    "sim_delta": 0.009271806575850508,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6893798828125001,
-    "ev_delta": 0.004659424056304072,
+    "cap_without": 0.6846191406250001,
+    "ev_delta": 0.004600341347995149,
     "simulated": true
    },
    {
     "talent": "Spiritual Guidance",
     "ranks": 4,
-    "sim_delta": 0.0168139685277,
+    "sim_delta": 0.011146838156484555,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.679541015625,
-    "ev_delta": 0.026976199014013918,
+    "cap_without": 0.683349609375,
+    "ev_delta": 0.02649845027857689,
     "simulated": true
    },
    {
     "talent": "Spiritual Healing",
     "ranks": 3,
-    "sim_delta": 0.04162526222811099,
+    "sim_delta": 0.04262295081967223,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6633544921875,
-    "ev_delta": 0.05503916660330608,
+    "cap_without": 0.6627197265625,
+    "ev_delta": 0.054038271140703246,
     "simulated": true
    },
    {
@@ -481,16 +472,16 @@
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.00972283657335945,
+    "ev_delta": 0.009553487505477014,
     "simulated": false
    },
    {
     "talent": "Twin Disciplines",
     "ranks": 5,
-    "sim_delta": 0.008336896109448351,
+    "sim_delta": 0.005542528245576603,
     "cap_with": 0.6909667968750001,
-    "cap_without": 0.6852539062500002,
-    "ev_delta": 0.0010147814550201249,
+    "cap_without": 0.6871582031250001,
+    "ev_delta": 0.0009972561372968308,
     "simulated": true
    }
   ]
@@ -506,9 +497,9 @@
   "Mental Agility": "-3/7/10% mana cost of instant casts",
   "Penance": "an instant 3-pulse heal on a 12 s cooldown that keeps the healer busy for its 2 s channel: on the tank whenever it is ready and he misses 80% of its heal, and the emergency heal",
   "Prayer of Mending": "kept on the tank: heals 413 when he is hit, then jumps (5 charges, 10 s cooldown, a global cooldown to place)",
-  "Holy Binding": "never cast: Flash Heal fills its role (its self-heal would be idle, the healer takes no damage here)",
+  "Holy Binding": "not modelled: it heals the priest when Flash Heal heals another target, and the healer takes no damage here",
   "Divine Aegis": "a critical non-periodic heal leaves an absorb of 5%/rank of the amount healed on the target for 12 s, the Aegis part at most 1,200 (client 70425's cap; it joins the target's shield; a new Power Word: Shield replaces it)",
-  "Renewed Hope": "+2%/rank crit for Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened Soul; each such heal takes 1 s/rank off its Weakened Soul",
+  "Renewed Hope": "+2%/rank crit for Flash Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened Soul; each such heal takes 1 s/rank off its Weakened Soul",
   "Litany of Light": "a heal unlike your previous one returns 5%/rank of its base mana cost"
  },
  "simulated": [

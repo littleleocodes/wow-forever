@@ -14,6 +14,7 @@ Run validate_builds.py first; this script does not re-check the point math.
 """
 import json
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -112,17 +113,24 @@ def render_build(cls: str, game: str, build: dict, trees: dict, forever_trees: d
             o.append(f"| {step['levels']} | {step['tree']} | {esc(step['talent'])} | {step['points']} | {tot} |")
         o.append("")
 
-    if build.get("core"):
+    # 2026-11-09 audit: 57 Forever builds listed core talents the allocation no longer holds (Twist of Light, removed in 70753; Lava
+    # Burst in builds a repair moved off it): the page lists only what the build takes, and a flex row only for a talent it takes
+    held = {n for items in build.get("allocation", {}).values() for n, r in items if r}
+    core = [c for c in build.get("core") or [] if c.get("talent") in held]
+    if core:
         o.append("## Core talents (priority order)\n")
-        for i, c in enumerate(build["core"], 1):
+        for i, c in enumerate(core, 1):
             o.append(f"{i}. **{esc(c['talent'])}** — {c.get('why', '')}")
         o.append("")
 
-    if build.get("flex"):
+    def flex_names(s):   # "Endurance Training 1 + Improved Revive Pet 2", "Winter's Chill (41-45)": the talent names
+        return [re.sub(r"\s+[\d\-]+$", "", re.sub(r"\s*\(.*?\)", "", p)).strip() for p in re.split(r"\s*\+\s*", str(s or ""))]
+    flex = [f for f in build.get("flex") or [] if not held or all(n in held for n in flex_names(f.get("default")) if n)]
+    if flex:
         o.append("## Flex points\n")
         o.append("| Pts | Default | Alternatives | Why |")
         o.append("|---|---|---|---|")
-        for f in build["flex"]:
+        for f in flex:
             o.append(f"| {f['points']} | {esc(f['default'])} | {esc(', '.join(f.get('alternatives', [])))} | {esc(f.get('why', ''))} |")
         o.append("")
 

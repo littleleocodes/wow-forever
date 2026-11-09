@@ -1,6 +1,6 @@
 {
  "class": "shaman",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "guides": [
   {
    "spec": "Enhancement",
@@ -294,7 +294,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "Packs: the blast around you",
+        "role": "Packs: the blast around your Fire totem (drop Searing Totem first)",
         "binds": [
          {
           "from": 12,
@@ -364,13 +364,23 @@
        },
        {
         "key": "Shift+3",
-        "role": "Free",
-        "binds": []
+        "role": "Your healing potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+4",
-        "role": "Free",
-        "binds": []
+        "role": "Your mana potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 5,
+          "text": "Mana potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+C",
@@ -385,7 +395,9 @@
       ]
      }
     ],
-    "no_key": ["Lightning Shield"],
+    "no_key": [
+     "Lightning Shield"
+    ],
     "notes": [
      "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
      "**Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.",
@@ -657,7 +669,7 @@
        },
        {
         "key": "4",
-        "role": "Free (Lightning Mastery, in a build that takes it)",
+        "role": "Free",
         "binds": []
        },
        {
@@ -687,7 +699,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "Packs: the blast around you",
+        "role": "Packs: the blast around your Fire totem (drop Searing Totem first)",
         "binds": [
          {
           "from": 12,
@@ -757,13 +769,23 @@
        },
        {
         "key": "Shift+3",
-        "role": "Free",
-        "binds": []
+        "role": "Your healing potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+4",
-        "role": "Free",
-        "binds": []
+        "role": "Your mana potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 5,
+          "text": "Mana potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+C",
@@ -778,7 +800,9 @@
       ]
      }
     ],
-    "no_key": ["Lightning Shield"],
+    "no_key": [
+     "Lightning Shield"
+    ],
     "notes": [
      "Three spells sit on other keys than in the [Enhancement guide](enhancement-by-level.md): **Lightning Bolt**, the spell you press most here, takes Q; **Earth Shock** moves to R (Stormstrike's key, a talent this build lacks); **Flame Shock**, cast once per mob, moves up from Shift+Q to 1, the key Lightning Bolt leaves. Key 4 stays free: no Rage of the Farseer here. The heals, the totems and **Frost Shock** keep their keys, so a shaman who switches specs finds them where they were.",
      "Q is plain **Lightning Bolt**, no macro: a spell never starts your swings. Right-click the mob once it reaches you, and your weapon swings between casts (the fight lab's weapon does a part of your damage at every level). The middle mouse button stays free.",
@@ -1060,7 +1084,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "Packs: the blast around you",
+        "role": "Packs: the blast around your Fire totem (drop Searing Totem first)",
         "binds": [
          {
           "from": 12,
@@ -1130,13 +1154,23 @@
        },
        {
         "key": "Shift+3",
-        "role": "Free",
-        "binds": []
+        "role": "Your healing potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+4",
-        "role": "Free",
-        "binds": []
+        "role": "Your mana potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 5,
+          "text": "Mana potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+C",
@@ -1161,11 +1195,14 @@
       ]
      }
     ],
-    "no_key": ["Lightning Shield", "Water Shield"],
+    "no_key": [
+     "Lightning Shield",
+     "Water Shield"
+    ],
     "notes": [
      "The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).",
      "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
-     "The Instant heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.",
+     "The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.",
      "**Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
      "The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends."
@@ -1432,7 +1469,7 @@
        },
        {
         "key": "4",
-        "role": "Free (Lightning Mastery, in a build that takes it)",
+        "role": "Free",
         "binds": []
        },
        {
@@ -1462,7 +1499,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "Packs: the blast around you",
+        "role": "Packs: the blast around your Fire totem (drop Searing Totem first)",
         "binds": [
          {
           "from": 12,
@@ -1532,13 +1569,23 @@
        },
        {
         "key": "Shift+3",
-        "role": "Free",
-        "binds": []
+        "role": "Your healing potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+4",
-        "role": "Free",
-        "binds": []
+        "role": "Your mana potion (macro on the macro page)",
+        "binds": [
+         {
+          "from": 5,
+          "text": "Mana potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+C",
@@ -1553,7 +1600,9 @@
       ]
      }
     ],
-    "no_key": ["Lightning Shield"],
+    "no_key": [
+     "Lightning Shield"
+    ],
     "notes": [
      "Three spells sit on other keys than in the [Enhancement guide](enhancement-by-level.md): **Lightning Bolt**, the spell you press most here, takes Q; **Earth Shock** moves to R (Stormstrike's key, a talent this build lacks); **Flame Shock**, cast once per mob, moves up from Shift+Q to 1, the key Lightning Bolt leaves. Key 4 stays free: no Rage of the Farseer here. The heals, the totems and **Frost Shock** keep their keys, so a shaman who switches specs finds them where they were.",
      "Q is plain **Lightning Bolt**, no macro: a spell never starts your swings. Right-click the mob once it reaches you, and your weapon swings between casts (the fight lab's weapon does a part of your damage at every level). The middle mouse button stays free.",

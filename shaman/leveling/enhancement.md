@@ -10,11 +10,11 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 74% of the damage at level 60 in the fight lab comes from melee, Stormstrike, Windfury Weapon, Flametongue Weapon, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Stormstrike** cast in every fight).
+**Signature spells:** 74% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Stormstrike, Earth Shock; this build never casts Windfury Weapon, Flametongue Weapon, Flame Shock) (the spec's rule: at least 60%; **Stormstrike** cast at level 60).
 
 ## How to play
 
-**Not in this build:** **Nature's Swiftness** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Nature's Swiftness** is a talent this build does not take: where a line below names it, that part does not apply. The fight lab played the build without it.
 
 **Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
@@ -37,15 +37,16 @@ Melee with a slow two-hander and **Windfury Weapon**, and use your spells to fin
 
 - Before every pull: **Lightning Shield** and your imbue (**Rockbiter Weapon** until 30, then **Windfury Weapon**). At 60 in the fight lab your swings and Windfury attacks do about 40% of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 15%, because a mob hits you all fight.
 - **Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, about 5% of your damage at 60.
-- **Stormstrike** (level 25) whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (34 and 41) half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (4.6 seconds per kill without it).
+- **Stormstrike** (level 25) whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (34 and 41) half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (about 4 seconds per kill without it).
 - One tuned rule shapes the fight: no **Lightning Bolt** until the mob is under 35% health, so no opening bolt, and a 5-stack bolt finishes the mob. The fight lab measured it about 10% faster per kill (re-tuned 2026-10-20).
 - **Earth Shock** whenever the shock cooldown is free: about a quarter of your damage at 60. It shares that cooldown with **Flame Shock**, so the fight lab never casts **Flame Shock** on one mob.
 - **Maelstrom Weapon** (levels 35-39) stacks as you hit; 5 stacks make **Lightning Bolt** instant and cheaper. **Rage of the Farseer** (from 40) goes at the start of a fight whenever it is ready.
 
 **Caveats**
 
-- **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 4 seconds per kill in the fight lab.
+- **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 3 seconds per kill in the fight lab.
 - Before 25 you have no **Stormstrike** and before 35 no **Maelstrom Weapon**: until then it is weapon, shield, **Earth Shock** and **Searing Totem**.
+- **Anticipation** (22) and **Elemental Weapons** (23-24) mostly fill the 15 Enhancement points that **Stormstrike**'s row asks for before you can take it at 25.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
 
 **When to change it**
@@ -53,8 +54,6 @@ Melee with a slow two-hander and **Windfury Weapon**, and use your spells to fin
 - A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
 - Do not spend a 5-stack **Lightning Bolt** on a mob your next swing will kill: the stacks last 30 seconds and may carry over to the next pull.
 - A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50%.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -101,5 +100,5 @@ One point per level from 10, in this order:
 - [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

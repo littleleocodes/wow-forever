@@ -99,35 +99,25 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-08",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
-    "label": "combat-ml-raid",
-    "talents": "00530310301-30531300001515231-002"
-   },
-   {
-    "label": "sim preset: Combat BS",
-    "talents": "00532310101-32030320201515231-002"
-   },
-   {
     "label": "combat-daggers-raid",
-    "talents": "005323102-30531300001515231-002",
-    "protect_only": true
+    "talents": "2053232020101-30532300000123215"
    },
    {
-    "label": "opt-combat-daggers-raid-raid-dps",
-    "talents": "005323121-30531300000515231-002",
-    "protect_only": true
+    "label": "sim preset: Asn Muti",
+    "talents": "00530311231251031-32030302020103-001"
    }
   ],
   "tuned_on": [
-   "combat-ml-raid",
-   "sim preset: Combat BS"
+   "combat-daggers-raid",
+   "sim preset: Asn Muti"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -204,41 +194,55 @@
     "gain_seed2": 0.0032420661919361216,
     "candidates": 730,
     "pass": 10
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: cast Backstab",
+    "gain_seed1": 0.014386062944526046,
+    "gain_seed2": 0.01468358882982379,
+    "candidates": 809,
+    "pass": 11
+   },
+   {
+    "round": 11,
+    "change": "drop: if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike",
+    "gain_seed1": 0.030407635887639284,
+    "gain_seed2": 0.03081237987860308,
+    "candidates": 828,
+    "pass": 11
+   },
+   {
+    "round": 12,
+    "change": "threshold 4 -> 3: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.003458350248067843,
+    "gain_seed2": 0.003248827253962805,
+    "candidates": 798,
+    "pass": 11
+   },
+   {
+    "round": 13,
+    "change": "threshold 3 -> 1: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 3 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.0020851587169632424,
+    "gain_seed2": 0.0021921723125168935,
+    "candidates": 801,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
-    "combat-ml-raid": {
-     "before": 622.2178066001942,
-     "after": 652.4239570244159,
-     "base": 622.2178066001942,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Combat BS": {
-     "before": 616.294643125627,
-     "after": 646.9246198560196,
-     "base": 616.294643125627,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "combat-daggers-raid": {
-     "before": 618.132636558174,
-     "after": 645.6419726883902,
-     "base": 618.132636558174,
+     "before": 614.7764553960973,
+     "after": 674.6018778052721,
+     "base": 614.7764553960973,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "opt-combat-daggers-raid-raid-dps": {
-     "before": 607.2506952706872,
-     "after": 630.6113329221328,
-     "base": 607.2506952706872,
+    "sim preset: Asn Muti": {
+     "before": 804.3570968464279,
+     "after": 809.1963086734169,
+     "base": 804.3570968464279,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -259,6 +263,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }

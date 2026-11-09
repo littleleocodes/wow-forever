@@ -54,20 +54,16 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Core talents (priority order)
 
-1. **Improved Fireball** — -0.1 s per rank on Fireball and Frostfire Bolt: a 2.5 s bolt at 5/5.
-2. **Ignite** — Frostfire Bolt counts as Fire: its crits ignite for 40% more.
-3. **Critical Mass** — +Fire crit, and Frostfire Bolt is Fire.
-4. **Fire Power** — +Fire damage on Frostfire Bolt.
-5. **Ice Shards** — +Frost crit damage: Frostfire Bolt is Frost too (the simulator search's first move from the Fire build).
-6. **Piercing Ice** — +Frost damage on Frostfire Bolt.
-7. **Elemental Precision** — Fire and Frost hit against a level-63 boss.
+1. **Ignite** — Frostfire Bolt counts as Fire: its crits ignite for 40% more.
+2. **Critical Mass** — +Fire crit, and Frostfire Bolt is Fire.
+3. **Fire Power** — +Fire damage on Frostfire Bolt.
+4. **Ice Shards** — +Frost crit damage: Frostfire Bolt is Frost too (the simulator search's first move from the Fire build).
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Frost Channeling | Master of Elements | Mana: Frostfire Bolt costs 370 at rank 3, more than Frostbolt's 290. |
-| 5 | Flame Throwing 2 + Burning Soul 2 + Blast Wave 1 | Arcane Focus | Tier fillers on the way to the Fire capstones. |
 
 ## Rank among our builds and the community simulator's
 
@@ -185,6 +181,7 @@ Damage by ability:
 - 2026-10-17 (audit of 2026-10-17, finding 26): core Heating Up dropped and the name changed: the allocation has not held Heating Up since the simulator searches of 2026-10 (Hot Streak was renamed Heating Up in 70170).
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 4/32/15 -> 5/33/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 2 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +1 Heating Up, +1 Missile Barrage (refill: the fire-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/33/13 -> 7/31/13; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); refill +1 Arcane Concentration (refill: the fire-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Fireball, Piercing Ice, Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

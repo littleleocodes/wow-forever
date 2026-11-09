@@ -87,7 +87,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 5. **Precision** — Removing it costs 2.4 points of score in this model.
 6. **Pursuit of Justice** — Removing it costs 2.3 points of score in this model.
 7. **Vengeance** — Removing it costs 2.3 points of score in this model.
-8. **Instrument of Law** — Removing it costs 1.8 points of score in this model.
 
 ## Leveling rotation
 
@@ -98,6 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Report: paladin/research/talents/forever/optimizer/ret-dps-solo-60.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 8/16/27 -> 8/19/24; Improved Seal of Fury 1 gone; Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Templar's Bulwark (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); refill +1 Two-Handed Weapon Specialization, +1 Improved Hammer of Justice; order dropped (order_repair.py) (refill: the ret-dps model, solo-60).
 - 2026-11-07 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (ret-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

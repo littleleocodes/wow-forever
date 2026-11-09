@@ -2,9 +2,9 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > [Demonology](demonology.md) > Level by level
 
-What a Demonology warlock presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Demonology levels behind its demon: the Voidwalker (from 10) holds the mob, your dots and the demon's talents do the damage, and the wand fills every gap. From 28, **Searing Pain** brands the mob so the Voidwalker's hits deal extra damage. Each stage lists the full priority, so you can jump in at your level.
+What a Demonology warlock presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Demonology levels behind its demon: the Voidwalker (from 10) holds the mob, your dots and the demon's talents do the damage, and the wand fills every gap. From 27, **Searing Pain** brands the mob so the Voidwalker's hits deal extra damage. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/warlock/60/23500020134001-032523020100030135--12)), the one on the [Demonology leveling page](demonology.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/warlock/60/24310020134001-020523021110031135--12)), the one on the [Demonology leveling page](demonology.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -13,9 +13,9 @@ What a Demonology warlock presses from level 1 to 60, stage by stage, as the tra
 | 1-3 | **Immolate**, a **Shadow Bolt** while your mana is nearly full, then the wand, while the Imp throws **Firebolt**. |
 | 4-7 | **Corruption** is your pull. From here the dots and the wand do the work, and **Shadow Bolt** waits for a nearly full mana bar. |
 | 8-9 | **Bane of Agony** joins **Corruption**. **Fear** what reaches you: the Imp cannot hold a mob. |
-| 10-27 | **Summon Voidwalker**: it holds the mob while you dot and wand. Talent points start. |
-| 28-41 | **Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next 6 attacks deal extra damage. |
-| 42-49 | **Death Coil** for a mob that reaches you while you are hurt. **Improved Corruption** (40-44) makes **Corruption** instant at 44. |
+| 10-26 | **Summon Voidwalker**: it holds the mob while you dot and wand. Talent points start. |
+| 27-41 | **Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next 2 attacks (4 at 28, 6 from 29) deal 65 to 68 extra damage each. |
+| 42-49 | **Death Coil** for a mob that reaches you while you are hurt. **Improved Corruption** (35-37) already shortens **Corruption** to 0.8 seconds. |
 | 50-59 | **Amplify Curse** (talent) makes the next **Bane of Agony** 50% stronger, every 3 minutes. One macro casts both. |
 | 60 | **Siphon Life** (talent): a third dot that heals you. |
 
@@ -25,7 +25,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-7 | 8-9 | 10-27 | 28-41 | 42-49 | 50-59 | 60 |
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-26 | 27-41 | 42-49 | 50-59 | 60 |
 |---|---|---|---|---|---|---|---|---|---|
 | Q | Your bolt | **Shadow Bolt** | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt |
 | E | Control: send the mob running | — | — | **Fear** | Fear | Fear | Fear | Fear | Fear |
@@ -42,10 +42,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 2: the same keys with Shift (a second mob, the pet, packs)**
 
-| Key | Its job | 1-3 | 4-7 | 8-9 | 10-27 | 28-41 | 42-49 | 50-59 | 60 |
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-26 | 27-41 | 42-49 | 50-59 | 60 |
 |---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Free | — | — | — | — | — | — | — | — |
-| Shift+E | Control a second mob, a demon or an elemental | — | — | — | — | **Banish** | Banish | Banish | Banish |
+| Shift+E | Control a second mob, a demon or an elemental | — | — | — | — | **Banish** from 28 | Banish | Banish | Banish |
 | Shift+R | Heal the Voidwalker | — | — | — | **Health Funnel** from 12 | Health Funnel | Health Funnel | Health Funnel | Health Funnel |
 | Shift+F | Escape from a pack: fear every mob near you | — | — | — | — | **Howl of Terror** from 40 | Howl of Terror | Howl of Terror | Howl of Terror |
 | Shift+Mouse 5 | Absorb a shadow caster's spells | — | — | — | — | **Shadow Ward** from 32 | Shadow Ward | Shadow Ward | Shadow Ward |
@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Q keeps **Shadow Bolt** in every warlock spec. Demonology casts it only above 80% of its mana, mostly on the first pull after a rest: from level 4 the wand on the middle mouse button is your most-pressed key.
 - Mouse 4 starts every fight from level 4: a macro that sends your demon and casts **Corruption** (the keybinds page). At 1-3, send the Imp from the pet bar and open with **Immolate** on 2.
 - E then R answers a mob that reaches you: **Fear** it, then **Drain Life** while it runs. From 42 **Death Coil** on F comes first when you are below 60% health.
-- Mouse 5 holds **Searing Pain** from 28: press it each time the brand drops. Key 1 becomes the Amplify Curse macro at 50.
+- Mouse 5 holds **Searing Pain** from 27: press it each time the brand drops. Key 1 becomes the Amplify Curse macro at 50.
 - No key: **Demon Skin** and **Demon Armor**, **Summon Imp** and **Summon Voidwalker**, **Soul Link**, **Create Healthstone**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The Voidwalker's **Torment** casts by itself; **Consume Shadows** and **Sacrifice** stay on the pet bar.
 - Every warlock guide in this folder keeps these keys for the spells it shares with Demonology, so the keys feel the same whichever spec you level; each guide's notes name the few keys it changes.
 
@@ -123,13 +123,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 *Fight lab, seconds per kill: 24 at level 8. Presses per kill at level 8: Wand 5.2, Fear 1.4, Corruption 1.1, Bane of Agony 1.0, Immolate 0.9.*
 
-## Levels 10-27: The Voidwalker tanks
+## Levels 10-26: The Voidwalker tanks
 
 **The trainer teaches:** Create Healthstone (10), Drain Soul (10), Summon Voidwalker (10), **Torment** (10), Health Funnel (12), Phase Shift (12), Curse of Recklessness (14), Drain Life (14), Fire Shield (14), Sacrifice (16), Unending Breath (16), Consume Shadows (18), Create Soulstone (18), Searing Pain (18), Curse of the Elements (20), Demon Armor (20), Lash of Pain (20), Rain of Fire (20), Ritual of Summoning (20), Summon Incubus (20), Summon Succubus (20), Eye of Kilrogg (22), Soothing Kiss (22), Drain Mana (24), Sense Demons (24), Suffering (24), Curse of Tongues (26), Detect Invisibility (26), Seduction (26).
 
-**New ranks to buy:** Bane of Agony at 18; Corruption at 14, 24; Immolate at 10, 20; Torment at 20.
+**New ranks to buy:** Bane of Agony at 18; Corruption at 14, 24; Drain Life at 22; Drain Soul at 24; Health Funnel at 20; Immolate at 10, 20; Life Tap at 16, 26; Shadow Bolt at 12, 20; Torment at 20.
 
-**Talents:** 10-14 Unholy Power, 15-16 Demonic Embrace, 17-19 Improved Imp, 20-21 Demonic Aegis, 22-23 Demonic Energies, 24-26 Improved Voidwalker, 27 Demonic Sacrifice.
+**Talents:** 10-14 Unholy Power, 15 Demonic Energies, 16-18 Improved Voidwalker, 19 Demonic Energies, 20-21 Improved Imp, 22-23 Demonic Aegis, 24 Improved Sayaad, 25 Demonic Sacrifice, 26 Master Summoner.
 
 **Keys to set:** C = Healthstone macro; Shift+Mouse 4 = Drain Soul; Shift+R = Health Funnel (at 12); R = Drain Life (at 14); Shift+1 = Rain of Fire (at 20).
 
@@ -147,28 +147,28 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Summon Voidwalker** costs a Soul Shard: **Drain Soul** (10) a mob as it dies to get one (Shift+Mouse 4). The fight lab does not count shards; keep two or three in your bags for the demon and your Healthstone.
 - Heal the Voidwalker between fights with **Consume Shadows** (18, its own spell, not usable in a fight) or **Health Funnel** (12). Check that its **Torment** is on autocast on the pet bar.
 - **Shadow Bolt** waits for 80% of your mana from here on. With the dots and the wand you rarely have that much past the first pull after a rest, so the fight lab casts almost none.
-- **Drain Life** (14) goes on R: from 28 it is the answer after **Fear**.
-- **Unholy Power** (10-14) adds 10% to the Voidwalker's damage, **Demonic Energies** (22-23) heals it for 15% of your spell damage and **Improved Voidwalker** (24-26) makes **Torment** and **Consume Shadows** 30% stronger.
-- **Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Searing Pain** (18) waits for **Demonic Brand** at 28.
+- **Drain Life** (14) goes on R: from 27 it is the answer after **Fear**.
+- **Unholy Power** (10-14) adds 10% to the Voidwalker's damage, **Demonic Energies** (15, 19) heals it for 15% of your spell damage and **Improved Voidwalker** (16-18) makes **Torment** and **Consume Shadows** 30% stronger. **Improved Imp** (20-21) and **Improved Sayaad** (24) do nothing for a Voidwalker; **Demonic Aegis** (22-23) makes **Demon Armor** 30% stronger.
+- **Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Searing Pain** (18) waits for **Demonic Brand** at 27.
 
-*Fight lab, seconds per kill: 20 at level 10, 24 at level 20, 28 at level 27. Presses per kill at level 10: Wand 4.1, Torment 2.3, Bane of Agony 1.1, Immolate 1.0, Corruption 1.0.*
+*Fight lab, seconds per kill: 20 at level 10, 24 at level 20, 27 at level 26. Presses per kill at level 10: Wand 4.1, Torment 2.3, Bane of Agony 1.1, Immolate 1.0, Corruption 1.0.*
 
-## Levels 28-41: Demonic Brand: Searing Pain for the Voidwalker
+## Levels 27-41: Demonic Brand: Searing Pain for the Voidwalker
 
 **The trainer teaches:** Banish (28), Create Firestone (28), Devour Magic (30), Hellfire (30), Subjugate Demon (30), Summon Felhunter (30), Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32), Create Spellstone (36), Spell Lock (36), Howl of Terror (40).
 
-**New ranks to buy:** Bane of Agony at 28, 38; Corruption at 34; Immolate at 30, 40; Searing Pain at 34; Torment at 30, 40.
+**New ranks to buy:** Bane of Agony at 28, 38; Corruption at 34; Drain Life at 30, 38; Drain Soul at 38; Fear at 32; Health Funnel at 28, 36; Immolate at 30, 40; Life Tap at 36; Rain of Fire at 34; Searing Pain at 34; Shadow Bolt at 28, 36; Torment at 30, 40.
 
-**Talents:** 28-29 Demonic Brand, 30 Soul Link, 31-33 Demonic Knowledge, 34 Demonic Brand, 35-39 Master Demonologist, 40-41 Improved Corruption.
+**Talents:** 27-29 Demonic Brand, 30 Soul Link, 31-33 Demonic Knowledge, 34 Improved Felhunter, 35-37 Improved Corruption, 38-41 Master Demonologist.
 
-**Keys to set:** Mouse 5 = Searing Pain; Shift+E = Banish; Shift+Mouse 5 = Shadow Ward (at 32); Shift+F = Howl of Terror (at 40).
+**Keys to set:** Mouse 5 = Searing Pain; Shift+E = Banish (at 28); Shift+Mouse 5 = Shadow Ward (at 32); Shift+F = Howl of Terror (at 40).
 
 **Your keys in this stage:** E Fear, R Drain Life, Mouse 5 Searing Pain, Mouse 4 Corruption, 1 Bane of Agony, 2 Immolate.
 
 **What to press**, top to bottom:
 
 1. Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.
-2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.
+2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.
 3. **Bane of Agony** on a mob above about a third of its health.
 4. **Immolate** only while you have more than half your mana: rare from here, since the brand costs mana.
 5. Your wand until the mob dies.
@@ -176,19 +176,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Fear** it, then **Drain Life** while it runs, until the Voidwalker takes it back. Your Healthstone below 35% health.
 
 - **Soul Link** (30): click it once after every summon. 30% of the damage you take goes to the Voidwalker, and you both deal 3% more.
-- **Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (35-39) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.
-- **Demonic Sacrifice** (27) is only the step to **Soul Link**: never sacrifice your tank.
-- **Searing Pain** is no finisher here: the tuned rules cast it only on a mob above about a third of its health. **Banish** (28) holds a second mob if it is a demon or an elemental.
+- **Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (38-42) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.
+- **Demonic Sacrifice** (25) is only the step to **Soul Link**: never sacrifice your tank.
+- **Searing Pain** is no finisher here: the tuned rules cast it only on a mob above a third of its health. **Banish** (28) holds a second mob if it is a demon or an elemental.
 
-*Fight lab, seconds per kill: 27 at level 28, 27 at level 30, 31 at level 40, 31 at level 41. Presses per kill at level 28: Wand 7.9, Torment 3.7, Searing Pain 1.7, Corruption 1.0, Bane of Agony 1.0.*
+*Fight lab, seconds per kill: 26 at level 27, 27 at level 30, 31 at level 40, 31 at level 41. Presses per kill at level 27: Wand 7.2, Torment 3.5, Searing Pain 1.9, Corruption 1.0, Bane of Agony 1.0.*
 
 ## Levels 42-49: Death Coil; Corruption turns instant
 
 **The trainer teaches:** Death Coil (42), Paranoia (42), Soul Fire (48).
 
-**New ranks to buy:** Bane of Agony at 48; Corruption at 44; Searing Pain at 42.
+**New ranks to buy:** Bane of Agony at 48; Banish at 48; Corruption at 44; Drain Life at 46; Health Funnel at 44; Life Tap at 46; Rain of Fire at 46; Searing Pain at 42; Shadow Bolt at 44; Shadow Ward at 42.
 
-**Talents:** 42-44 Improved Corruption, 45-47 Suppression, 48-49 Improved Life Tap.
+**Talents:** 42 Master Demonologist, 43-44 Improved Life Tap, 45-48 Suppression, 49 Grim Reach.
 
 **Keys to set:** F = Death Coil.
 
@@ -197,7 +197,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.
-2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.
+2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.
 3. **Bane of Agony** on a mob above about a third of its health.
 4. Your wand until the mob dies.
 
@@ -205,7 +205,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Immolate** only while you have more than half your mana, which the brand almost never leaves you: the fight lab casts it on about one mob in twenty from here.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
-- **Suppression** (45-47) gives 5% hit and cuts your threat by 20%; **Improved Life Tap** (48-49) adds 20% to each **Life Tap**.
+- **Improved Life Tap** (43-44) adds 20% to each **Life Tap**; **Suppression** (45-48) gives 5% hit and cuts your threat by 20%; **Grim Reach** (49) only widens the range of your Affliction spells.
 
 *Fight lab, seconds per kill: 31 at level 42, 33 at level 49. Presses per kill at level 42: Wand 11.1, Torment 4.5, Searing Pain 1.6, Corruption 1.0, Bane of Agony 1.0.*
 
@@ -213,9 +213,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Inferno (50).
 
-**New ranks to buy:** Bane of Agony at 58; Corruption at 54; Searing Pain at 50, 58; Torment at 50.
+**New ranks to buy:** Bane of Agony at 58; Corruption at 54; Death Coil at 50, 58; Drain Life at 54; Drain Soul at 52; Fear at 56; Health Funnel at 52; Howl of Terror at 54; Immolate at 50; Life Tap at 56; Rain of Fire at 58; Searing Pain at 50, 58; Shadow Bolt at 52; Shadow Ward at 52; Torment at 50.
 
-**Talents:** 50 Amplify Curse, 51-52 Improved Bane of Agony, 53-55 Pandemic, 56-59 Malevolence.
+**Talents:** 50 Amplify Curse, 51-52 Improved Bane of Agony, 53-54 Pandemic, 55-58 Malevolence, 59 Pandemic.
 
 **Keys to set:** 1 = Bane of Agony, Amplify Curse macro.
 
@@ -224,22 +224,22 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.
-2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.
+2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.
 3. **Bane of Agony** with key 1's macro (it adds Amplify Curse when that is ready), on a mob above about a third of its health.
 4. Your wand until the mob dies.
 
 **If the fight goes wrong:** A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
 - **Amplify Curse** (50): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.
-- **Improved Bane of Agony** (51-52), **Pandemic** (53-55) and **Malevolence** (56-59) make your dots hit harder and crit more often and harder.
+- **Improved Bane of Agony** (51-52), **Pandemic** (53-54, 59) and **Malevolence** (55-58) make your dots hit harder and crit more often and harder.
 
-*Fight lab, seconds per kill: 33 at level 50, 34 at level 59. Presses per kill at level 50: Wand 12.6, Torment 4.9, Searing Pain 1.4, Corruption 1.1, Bane of Agony 1.0.*
+*Fight lab, seconds per kill: 33 at level 50, 34 at level 59. Presses per kill at level 50: Wand 12.6, Torment 4.8, Searing Pain 1.5, Corruption 1.0, Bane of Agony 1.0.*
 
 ## Level 60: Siphon Life
 
 **The trainer teaches:** Bane of Doom (60), Ritual of Doom (60).
 
-**New ranks to buy:** Corruption at 60; Torment at 60.
+**New ranks to buy:** Corruption at 60; Health Funnel at 60; Immolate at 60; Shadow Bolt at 60; Shadow Ward at 60; Torment at 60.
 
 **Talents:** 60 Siphon Life.
 
@@ -250,7 +250,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.
-2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.
+2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.
 3. **Bane of Agony** (key 1's macro) and **Siphon Life** on a mob above about a third of its health.
 4. **Life Tap** in a fight only when you are short of mana and above 60% health.
 5. Your wand until the mob dies.
@@ -259,7 +259,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - The third dot costs mana: the fight lab casts **Life Tap** in about one fight in three at 60.
 
-*Fight lab, seconds per kill: 33 at level 60. Presses per kill at level 60: Wand 11.7, Torment 4.7, Corruption 1.1, Siphon Life 1.0, Bane of Agony 1.0, Searing Pain 0.9, Life Tap 0.4.*
+*Fight lab, seconds per kill: 33 at level 60. Presses per kill at level 60: Wand 11.7, Torment 4.8, Searing Pain 1.1, Corruption 1.0, Bane of Agony 1.0, Siphon Life 1.0, Life Tap 0.3.*
 
 ## Between fights
 
@@ -275,4 +275,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Affliction/Demonology hybrid plays this same Demonology list with other talents: its guide is in this folder too.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

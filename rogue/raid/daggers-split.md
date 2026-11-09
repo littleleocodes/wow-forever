@@ -4,7 +4,9 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**[Assassination — Seal Fate / Vigor](../research/raid/builds/assassination-mutilate-raid.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/rogue/60/3153232022111003-305313000001222--12)
+**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
+
+**[Assassination — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md)** (28/21/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053231022151003-305313000001221-002-12)
 
 ## How to play
 
@@ -13,13 +15,13 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Garrote**: keep it on the target
-2. **Vanish**
+2. **Vanish**; no global cooldown, so press it alongside the others
 3. **Shank**
-4. **Cold Blood** right before your finisher
-5. **Eviscerate** (rank 8) when you have 5 combo points
-6. **Sinister Strike**
+4. **Cold Blood** right before your finisher; no global cooldown, so press it alongside the others
+5. **Eviscerate** (rank 8) when you have 3 or more combo points
+6. **Backstab**
 
-**Sinister Strike** is your filler: cast it whenever nothing above is ready.
+**Backstab** is your filler: cast it whenever nothing above is ready.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -29,11 +31,11 @@ Daggers (split) plays the Assassination raid list with Combat's dagger talents: 
 
 **Why it works**
 
-- **Slice and Dice** stays up all fight: 30% more attack speed, 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point.
+- **Slice and Dice** stays up all fight: 20% more attack speed, 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point.
 - **Eviscerate** at 4 or more points while **Slice and Dice** is up (or with 79 or more energy, or in the last 6 seconds): **Mutilate** gives 2 points at once, so waiting for 5 often wastes one. **Relentless Strikes** returns 25 energy for 20% of each finisher's points and **Ruthlessness** adds a point after 60% of them; in a full raid the simulator measured **Relentless Strikes** as this build's most valuable talent (about 7% of its damage).
 - **Cold Blood** right before an **Eviscerate** at 4 or more points with **Slice and Dice** up: a sure critical strike on your biggest hit.
 - **Mutilate** is your builder and filler: both weapons, 2 combo points, 20% more damage against a poisoned target. **Backstab** costs the same 60 energy and sits below it in the list, so it comes up only when **Mutilate** cannot be cast.
-- **Blade Flurry** (20% attack speed for 15 seconds, 2-minute cooldown) with your trinkets while **Slice and Dice** is up. **Hack and Slash** gives you 4% crit with daggers and **Dual Wield Specialization** 25% more off-hand damage.
+- **Blade Flurry** (20% attack speed for 15 seconds, 2-minute cooldown) with your trinkets while **Slice and Dice** is up. **Hack and Slash** gives you 4% crit with daggers and **Dual Wield Specialization** 50% more off-hand damage.
 - Poisons: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with a sharpening stone on top (Forever lets them stack); **Improved Poisons** raises their chance to land.
 
 **Caveats**
@@ -48,20 +50,30 @@ Daggers (split) plays the Assassination raid list with Combat's dagger talents: 
 
 *This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Assassination | 28 | Malice 5, Improved Expose Armor 2, Improved Slice and Dice 3, Ruthlessness 3, Lethality 2, Vigor 1, Cold Blood 1, Improved Poisons 5, Vile Poisons 2, Relentless Strikes 1, Seal Fate 3 |
+| Combat | 21 | Coup de Grace 3, Lightning Reflexes 5, Deflection 1, Precision 3, Puncturing Wounds 3, Aggression 2, Flawless Execution 1, Weapon Expertise 2, Dual Wield Specialization 1 |
+| Subtlety | 2 | Opportunity 2 |
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 603 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 687 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 717 | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-12) |
-| Phase 1 BiS | 721 | [28/21/2](https://talentsforever.com/rogue/60/00530300231510031-003333000001002-002-12) |
+| Pre-BiS | - | being searched again: the talents found before the latest talent change are no longer legal |
+| Phase 1 BiS | - | being searched again: the talents found before the latest talent change are no longer legal |
 
-**The gear** (average item level: Pre-BiS 66.5; Phase 1 BiS 66.5; each item opens its Wowhead page, with where it drops and its enchant):
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
+
+**The gear** (average item level: Pre-BiS 61.2; Phase 1 BiS 62.3; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -87,9 +99,9 @@ Daggers (split) plays the Assassination raid list with Combat's dagger talents: 
 
 ## Other builds of this spec
 
-- [Assassination — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md) (28/21/2, 599 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/0053231022151003-305313000001221-002-12)
-- [Daggers — Raid](../research/raid/builds/daggers-split-open-raid.md) (28/21/2, 598 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/0053232021151003-303333000001221-002-12)
+- [Daggers — Raid](../research/raid/builds/daggers-split-open-raid.md) (28/21/2, 685 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/0053232021151003-303333000001221-002-12)
+- [Assassination — Seal Fate / Vigor](../research/raid/builds/assassination-mutilate-raid.md) (29/22/0, 678 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/3153232022111003-305313000001222--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 92c4c35 (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
 

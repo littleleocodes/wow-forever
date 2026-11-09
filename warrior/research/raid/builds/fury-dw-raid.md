@@ -71,15 +71,15 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 02bd77c (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Fury* | community simulator | - | 485 | +0.0% | 887 | -0.6% | 0 s |
-| 2 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 485 | -0.1% | 892 | +0.0% | 0 s |
-| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 484 | -0.2% | 887 | -0.5% | 0 s |
-| 4 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 459 | -5.4% | 841 | -5.6% | 0 s |
-| 5 | *Arms* | community simulator | - | 326 | -32.9% | 601 | -32.6% | 0 s |
+| 1 | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) | ours: derived (open search) | 17/32/2 | 488 | +0.0% | 894 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 486 | -0.3% | 891 | -0.3% | 0 s |
+| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 486 | -0.4% | 859 | -4.0% | 0 s |
+| 4 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 461 | -5.4% | 818 | -8.5% | 0 s |
+| 5 | *Arms* | community simulator | - | 349 | -28.4% | 598 | -33.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -105,7 +105,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
   19. threshold 30s -> 45s: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+1.2%, pass 5)
   20. threshold 22.5s -> 33.75s: if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready (+0.4%, pass 5)
   21. drop: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-11-04, 21 changes to the base rotation; third-seed check: fury-open-raid 736 -> 895 DPS (+21.5%), sim preset: Fury 735 -> 917 DPS (+24.7%), fury-dw-raid 698 -> 846 DPS (+21.3%), opt-fury-dw-raid-raid-dps 724 -> 888 DPS (+22.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-08, 24 changes to the base rotation; third-seed check: open winner 738 -> 893 DPS (+20.9%), fury-open-raid 737 -> 865 DPS (+17.3%), sim preset: Fury 738 -> 890 DPS (+20.7%), fury-dw-raid 700 -> 819 DPS (+17.1%), opt-fury-dw-raid-raid-dps 723 -> 859 DPS (+18.8%)):
   1. drop: if false: cast Recklessness (+11.1%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+2.5%, pass 1)
   3. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.7%, pass 1)
@@ -127,12 +127,15 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
   19. insert in the middle: if (selectedPotion or selectedPotion or selectedPotion) and rage ≤ 15: cast OffensivePotion (+0.2%, pass 9)
   20. insert in the middle: cast Reckless Swings (+1.3%, pass 10)
   21. insert before the filler: if time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and talentIsKnown: cast Berserker Rage (+0.4%, pass 10)
+  22. threshold 1s -> 2s: if time until Bloodthirst is ready > 1.125s and time until Whirlwind is ready > 1s: cast Hamstring (+0.2%, pass 11)
+  23. threshold 90 -> 67.5: if rage < 90: cast Bloodrage (+0.2%, pass 12)
+  24. only with 20s or more of the fight left: cast Bloodthirst + threshold 20s -> 30s: if time left in the fight ≥ 20s: cast Bloodthirst (+0.2%, pass 12)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](fury-dw-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 6.7 |
-| 3 | cast Bloodthirst | 6.9 |
+| 2 | if execute phase (E20): cast Execute | 6.8 |
+| 3 | cast Bloodthirst | 7.2 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -142,10 +145,10 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 5.1 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.1 |
+| 13 | cast Whirlwind | 5.3 |
+| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.3 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.5 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -153,10 +156,10 @@ Damage by ability:
 
 | Ability | [`fury-dw-raid`](fury-dw-raid.md) |
 |---|---|
-| Auto Attack | 44% |
-| Execute | 23% |
+| Auto Attack | 45% |
+| Execute | 24% |
 | Bloodthirst | 15% |
-| Whirlwind | 13% |
+| Whirlwind | 12% |
 | Deep Wound | 4% |
 
 ## Notes

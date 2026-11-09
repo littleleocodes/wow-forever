@@ -10,11 +10,9 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 84% of the damage at level 60 in the fight lab comes from melee, Bloodthirst, Whirlwind, Heroic Strike, Execute, Slam (the spec's rule: at least 80%; **Bloodthirst** cast in every fight).
+**Signature spells:** 84% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Bloodthirst, Heroic Strike, Execute; this build never casts Whirlwind, Slam) (the spec's rule: at least 80%; **Bloodthirst** cast at level 60).
 
 ## How to play
-
-**Not in this build:** **Reckless Swings** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
 **Before the fight:** **Battle Stance**, a weapon in each hand.
 
@@ -24,40 +22,37 @@
 2. **Battle Shout**: keep it up (it lasts 3 minutes).
 3. **Execute** first once the mob is below 20% health.
 4. **Overpower** whenever it lights up (after a dodge).
-5. **Reckless Swings** (if your build has it) whenever it is ready while you are above 80% health and the mob above 30%: your next 4 hits give 5 more rage each.
-6. **Bloodthirst** whenever ready.
-7. **Rend** once, while the mob has more than a third of its health.
-8. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
-9. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
+5. **Bloodthirst** whenever ready.
+6. **Rend** once, while the mob has more than a third of its health.
+7. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
+8. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
 
 **Between fights:** Bandage below 60% health, eat below two thirds of your health.
 
 ## Why this rotation
 
-Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodrage** and **Charge** (and **Death Wish** when it is ready), hit **Bloodthirst** on cooldown, **Overpower** after a dodge and **Execute** below 20%, and spend the rest on **Heroic Strike**.
+Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodrage** and **Charge** (and **Death Wish** when it is ready), hit **Bloodthirst** on cooldown, **Overpower** after a dodge and **Execute** below 20%, and spend the rest on **Heroic Strike**; bandage below 60% health and eat below two thirds.
 
 **Why it works**
 
 - The opening matches Arms: **Bloodrage** (above 45% health) and **Charge** fill your rage before the first swing. The fight lab also presses **Death Wish** (level 30) on the pull whenever it is ready (3-minute cooldown): 20% more physical damage for 30 seconds covers a whole fight.
-- Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** (levels 25-26) cuts its cost by 5; it is about a sixth of your damage at 40-60. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage, with 50% more crit chance once **Improved Overpower** arrives at 58-59.
+- Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** (one rank, level 25) cuts its cost by 3; it is about a sixth of your damage at 40-60. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage, with 25% more crit chance from **Improved Overpower** at 57 and 50% at 60.
 - **Bloodthirst** (from 40: 30 rage, 6-second cooldown, 45% of your attack power) is your main attack, about a fifth of your damage. Before 40, **Heroic Strike** is where your rage goes (about a third of your damage at 20, a quarter at 30).
-- **Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and the build takes **Improved Rend** at 47-49.
-- **Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build opens with **Cruelty** (10-14) and **Unbridled Wrath** (15-19) and takes **Flurry** (faster swings after a crit) and **Enrage**; in the fight lab **Cruelty** and **Dual Wield Specialization** are its two most valuable talents at 60.
+- **Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and the build takes **Improved Rend** at 43-45.
+- **Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build opens with **Cruelty** (10-14), **Unbridled Wrath** (15-19) and **Enrage** (20-24) and takes **Flurry** (30% faster swings for 3 swings after a crit, at 35-37); in the fight lab **Cruelty**, **Dual Wield Specialization**, **Flurry**, **Gore Drinker** and **Enrage** are its most valuable talents at 60.
 - **Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls, and **Victory Rush** (free, heals 10%) opens the next fight whenever you are below 90% health.
 
 **Caveats**
 
-- **Furious Precision** (levels 20-22: 10% more off-hand hit) and **Dual Wield Specialization** (33-37: 25% more off-hand damage and 50% more off-hand rage) are why this build wants a weapon in each hand; **Gore Drinker** (41) makes your next 3 hits after **Bloodrage**, **Death Wish** or **Bloodthirst** heal 1% of your health each.
-- From 44 the points go to Arms (**Deflection**, **Improved Rend**, **Improved Charge**, **Improved Heroic Strike**, **Deep Wounds**, **Improved Overpower**): small gains each, none of them changes the list.
-- Between fights the fight lab bandages below 60% health and eats below 40%; with **Victory Rush** and the bandage it almost never needs food.
+- **Furious Precision** (levels 27 and 33-34: 10% more off-hand hit) and **Dual Wield Specialization** (26, 28-29 and 31-32: 25% more off-hand damage and 50% more off-hand rage) are why this build wants a weapon in each hand; **Gore Drinker** (42, one rank) makes your next 3 hits after **Bloodrage**, **Death Wish** or **Bloodthirst** heal 0.5% of your health each.
+- From 43 the points go to Arms (**Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Improved Tactical Mastery**, **Anger Management**, **Deep Wounds**, **Improved Overpower**, **Impale**): small gains each, none of them changes the list.
+- Between fights the fight lab bandages below 60% health and eats below 65%, its default (the 2026-11-03 tuning of this rotation changed no rule); with **Victory Rush** and the bandage it almost never needs food.
 - Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks).
 
 **When to change it**
 
 - Fighting in **Berserker Stance** instead (3% more crit, 10% more damage taken) gives you **Whirlwind**, **Berserker Rage** and **Pummel** but costs **Overpower**; the fight lab has not measured that trade.
 - A mob that runs at low health: **Hamstring** it, or finish it with **Execute**.
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -100,6 +95,8 @@ One point per level from 10, in this order:
 | 50 | 25 |
 | 60 | 27 |
 
+**Points that do nothing for this spec:** **Improved Tactical Mastery** (3) only counts toward the points the tree needs before **Anger Management**.
+
 ## Other builds of this spec
 
 - [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-050530355020121231--12)
@@ -107,5 +104,5 @@ One point per level from 10, in this order:
 - [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-150501350020122031--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -120,6 +120,9 @@ class Healer(E.BaseHealer):
     }
     SIMULATED = {"Nature's Swiftness", "Mana Tide Totem", "Ancestral Healing", "Water Shield", "Riptide", "Healing Way", "Improved Healing Wave", "Tidal Mastery", "Purification",
                  "Tidal Focus", "Restorative Totems", "Ancestral Knowledge", "Mindfulness", "Thundering Strikes"}
+    # talents with raid value the lab leaves out, which heallab/filler_pass.py never moves (2026-11-09: the pass had moved Totemic Focus to
+    # Natural Grace): a raid shaman keeps the group's totems up all fight and recasts them; the lab charges Healing Stream Totem once
+    KEEP = {"Totemic Focus": "the group's totems are recast all fight; the lab charges one totem at the pull"}
     SHARE_SOURCE = {"Chain Heal": "chain_heal", "Healing Wave": "healing_wave", "Lesser Healing Wave": "lesser_hw", "Healing Stream Totem": "healing_stream"}
 
     def __init__(self, allocation, game="forever"):

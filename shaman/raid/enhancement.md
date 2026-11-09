@@ -4,15 +4,15 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[Enhancement — Raid](../research/raid/builds/enhancement-open-raid.md)** (17/32/2) — [open the talent tree](https://talentsforever.com/shaman/60/153203102-054030310051002251-02-12)
+**[Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md)** (17/31/3) — [open the talent tree](https://talentsforever.com/shaman/60/253103102-053030310051002251-03-12)
 
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Enhancement — Stormstrike / Maelstrom Weapon), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Enhancement — Stormstrike / Maelstrom Weapon), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
 
-**Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Magma Totem**, **Searing Totem**.
+**Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Magma Totem**, **Searing Totem**, **Rockbiter Weapon**.
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -21,9 +21,8 @@
 3. **Lightning Bolt** when Maelstrom Weapon has 5 or more stacks
 4. **Earth Shock**
 5. **Fire Nova** when you have at least 10% mana
-6. **Rockbiter Weapon**
 
-**Rockbiter Weapon** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
@@ -34,22 +33,22 @@
 
 ## Why this rotation
 
-Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Stormstrike**, shocks, instant **Maelstrom Weapon** bolts and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.
+Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.
 
 **Why it works**
 
 - Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** turns Windfury Totem off for you, and a party gets only one of the two.
-- **Stormstrike** comes first: it costs only 125 mana, hits with your weapon and makes your next **Lightning Bolt** or **Earth Shock** deal 20% more. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 8-second cooldown that never drops.
-- **Flame Shock** and **Earth Shock** share one cooldown (5 seconds with **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Flame Shock takes it whenever the burn is off the target (keeping it up measured about 1% better); every other shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.
-- **Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: with all 5 talent points, 5 stacks make the bolt instant and free. The rotation's condition is above 4.2 stacks, so 4 is not enough; the simulator measured waiting for 5 about 5% better than casting at 3.
-- **Fire Nova** erupts around your Fire totem, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured 7% more damage, the biggest single change to this list. It has a 6-second cooldown (10, 4 less with **Trial by Fire**), so it is not a true filler: when nothing is ready, keep swinging.
-- Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion.
+- **Flame Shock** goes on the target whenever it is off (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 150% weapon damage and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 6-second cooldown that never drops.
+- **Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.8 with your point in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.
+- **Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: 5 stacks make the bolt instant and free. Waiting for the full stack measured better than casting at 3.
+- **Fire Nova** erupts around your Fire totem, not around you, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured about 7% more damage in the rotation search, the biggest single change to this list. With **Trial by Fire** its cooldown is 6 seconds (10 without), so it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.
+- Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage, and **Elemental Weapons** makes them 40% stronger. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion.
 
 **Caveats**
 
-- Mana runs short: with only your own buffs the simulator's build is out of mana for about 30 seconds of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.
-- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. If they stand away from your totem, **Totemic Call** brings it to you, with all your other totems.
-- **Maelstrom Weapon**'s proc rate is not published. The simulator assumes a full stack about every 30 seconds; the stacks last 30 seconds, so cast the bolt when you reach 5.
+- Mana runs short: with only your own buffs the simulator's build runs out of mana for part of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.
+- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.
+- **Maelstrom Weapon**'s proc rate is not published. The stacks last 30 seconds, so cast the bolt when you reach 5.
 - Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land.
 
 **When to change it**
@@ -58,20 +57,28 @@ Enhancement is a melee spec that spends mana: your two-hander and **Windfury Wea
 - If the fight runs past 3 minutes, press **Rage of the Farseer** again as soon as it is ready.
 - In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**. A party gets only one of the two, and Windfury Totem does nothing for you while you use **Windfury Weapon**.
 
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Elemental | 17 | Convection 2, Concussion 5, Elemental Devastation 3, Reverberation 1, Call of Flame 3, Elemental Focus 1, Trial by Fire 2 |
+| Enhancement | 31 | Thundering Strikes 5, Ancestral Knowledge 3, Mental Dexterity 3, Elemental Weapons 3, Shamanistic Focus 1, Flurry 5, Stormstrike 1, Mental Quickness 2, Improved Stormstrike 2, Maelstrom Weapon 5, Rage of the Farseer 1 |
+| Restoration | 3 | Tidal Focus 3 |
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 997 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 998 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 985 | [17/31/3](https://talentsforever.com/shaman/60/253103102-053030310051002251-03-12) |
-| Phase 1 BiS | 1021 | [17/31/3](https://talentsforever.com/shaman/60/153203102-053030310051002251-03-12) |
+| Pre-BiS | 985 | this build |
+| Phase 1 BiS | 1021 | this build |
+
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
 **The gear** (average item level: Pre-BiS 62.1; Phase 1 BiS 62.9; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -98,10 +105,9 @@ Enhancement is a melee spec that spends mana: your two-hander and **Windfury Wea
 
 ## Other builds of this spec
 
-- [Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md) (19/32/0, 963 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/503503102-055030210051002251--12)
 - [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 930 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5230001-055030310051002051-05004-12)
 - [Enhancement (optimized)](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (14/31/6, 915 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5005031-155030010151012051-051-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -96,7 +96,7 @@
      ],
      "notes": [
       "**Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.",
-      "**Cone of Cold** (26): leave it off your bar for single mobs. The tuned rotation never casts it; kills measured faster without."
+      "**Cone of Cold** (26) goes on C for packs. The tuned rotation never casts it on a single mob; kills measured faster without."
      ]
     },
     {
@@ -142,7 +142,7 @@
     "Visit the trainer every even level. **Frostbolt** alone has eleven ranks."
    ],
    "other": [
-    "Arcane-Frost is as fast in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up. See its page in this folder.",
+    "[Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab. It plays this same loop and adds **Arcane Missiles** whenever **Missile Barrage** lights up.",
     "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
    ],
    "keys": {
@@ -257,7 +257,7 @@
        },
        {
         "key": "C",
-        "role": "The slow when Frost Nova is down, and packs",
+        "role": "Packs: the cone (the single-target list never casts it)",
         "binds": [
          {
           "from": 26,
@@ -362,8 +362,13 @@
        },
        {
         "key": "Shift+C",
-        "role": "Free",
-        "binds": []
+        "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+X",
@@ -380,7 +385,7 @@
      "No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The eat-and-drink macro on the keybinds page is a click too.",
      "**Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.",
      "Key 1 and Shift+Q are for the Arcane-Frost build: **Arcane Missiles** once it has **Missile Barrage** (37 on its page) and the **Presence of Mind** macro at 53. With the Frost build of this page they stay free.",
-     "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends, and **Cone of Cold** on C for a mob on you with **Frost Nova** down."
+     "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends, and **Cone of Cold** on C is the slow for it."
     ]
    }
   },
@@ -558,7 +563,7 @@
     "Visit the trainer every even level. **Frostbolt** alone has eleven ranks."
    ],
    "other": [
-    "The [Frost guide](frost-by-level.md) plays the same loop without **Missile Barrage**. The two are the recommended mage leveling specs in the fight lab, close together.",
+    "The [Frost guide](frost-by-level.md) plays the same loop without **Missile Barrage**, a little slower in the fight lab. This guide's build is the one the pages recommend.",
     "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
    ],
    "keys": {
@@ -673,7 +678,7 @@
        },
        {
         "key": "C",
-        "role": "The slow when Frost Nova is down, and packs",
+        "role": "Packs: the cone (the single-target list never casts it)",
         "binds": [
          {
           "from": 26,
@@ -778,8 +783,13 @@
        },
        {
         "key": "Shift+C",
-        "role": "Free",
-        "binds": []
+        "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+X",
@@ -967,7 +977,7 @@
     "Visit the trainer every even level. **Arcane Missiles** alone has seven ranks."
    ],
    "other": [
-    "[Arcane-Frost](arcane-frost-by-level.md) and [Frost](frost-by-level.md) are the recommended mage leveling specs in the fight lab: both freeze the mob and hit it with **Frostbolt** and **Ice Lance**.",
+    "[Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab (the [Frost](frost-by-level.md) guide is close behind): both freeze the mob and hit it with **Frostbolt** and **Ice Lance**.",
     "Packs: **Frost Nova** when two or more reach you, then **Arcane Explosion** while they stand around you."
    ],
    "keys": {
@@ -1086,7 +1096,7 @@
        },
        {
         "key": "C",
-        "role": "The slow when Frost Nova is down, and packs",
+        "role": "A mob on you under a fifth of its health, and packs",
         "binds": [
          {
           "from": 26,
@@ -1196,8 +1206,13 @@
        },
        {
         "key": "Shift+C",
-        "role": "Free",
-        "binds": []
+        "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        },
        {
         "key": "Shift+X",
@@ -1400,7 +1415,7 @@
    ],
    "other": [
     "Packs: **Flamestrike** and, from 49, **Blast Wave** hit every mob around you. The fight lab measured single pulls only for Fire.",
-    "[Arcane-Frost](arcane-frost-by-level.md) and [Frost](frost-by-level.md) are the recommended mage leveling specs in the fight lab."
+    "[Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab; [Frost](frost-by-level.md) is close behind."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, conjuring, the mount and the Hearthstone have no key, you click them between fights. A key keeps its job from 1 to 60 and only the spell on it changes, so you never relearn a key. Bold marks what arrives in that stage: drag it onto the slot when you train it. Free slots stay free until something earns them. Setup: the [mage keybinds page](keybinds.md); this spec's macro is in the notes below the tables.",
@@ -1510,7 +1525,7 @@
        },
        {
         "key": "C",
-        "role": "The slow when Frost Nova is down, and packs",
+        "role": "Packs: the cone, then Blast Wave from 49 for when Frost Nova is down",
         "binds": [
          {
           "from": 26,
@@ -1635,8 +1650,13 @@
        },
        {
         "key": "Shift+X",
-        "role": "Free",
-        "binds": []
+        "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        }
       ]
      }
@@ -1790,7 +1810,7 @@
     "Visit the trainer every even level: **Frostbolt** to 40, then **Frostfire Bolt** at 50 and 60."
    ],
    "other": [
-    "The [Frost guide](frost-by-level.md) plays the same loop with **Frostbolt** all the way, and [Arcane-Frost](arcane-frost-by-level.md) adds free **Arcane Missiles**: those two are the recommended mage leveling specs in the fight lab.",
+    "The [Frost guide](frost-by-level.md) plays the same loop with **Frostbolt** all the way, and [Arcane-Frost](arcane-frost-by-level.md), the recommended mage leveling spec, adds free **Arcane Missiles**.",
     "Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**."
    ],
    "keys": {
@@ -1904,7 +1924,7 @@
        },
        {
         "key": "C",
-        "role": "The slow when Frost Nova is down, and packs",
+        "role": "Packs: the cone (the single-target list never casts it)",
         "binds": [
          {
           "from": 26,
@@ -2014,8 +2034,13 @@
        },
        {
         "key": "Shift+X",
-        "role": "Free",
-        "binds": []
+        "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+        "binds": [
+         {
+          "from": 1,
+          "text": "Healing potion macro"
+         }
+        ]
        }
       ]
      }

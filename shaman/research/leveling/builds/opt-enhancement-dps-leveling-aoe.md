@@ -79,9 +79,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 3. **Mental Quickness** — Removing it costs 2.5 points of score in this model.
 4. **Trial by Fire** — Removing it costs 2.5 points of score in this model.
 5. **Mental Dexterity** — Removing it costs 2.3 points of score in this model.
-6. **Tidal Focus** — Removing it costs 2.2 points of score in this model.
-7. **Stormstrike** — Removing it costs 2.1 points of score in this model.
-8. **Flurry** — Removing it costs 1.1 points of score in this model.
+6. **Stormstrike** — Removing it costs 2.1 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -112,6 +110,7 @@ What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), al
 - Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 29/22/0 -> 29/22/0; order dropped: a moved talent breaks it (order_repair.py) (refill: the enhancement-dps model, leveling-aoe).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Tidal Focus, Flurry; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

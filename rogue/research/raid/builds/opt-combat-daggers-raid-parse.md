@@ -54,11 +54,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 1. **Puncturing Wounds** — Removing it costs 26.9 points of score in this model.
 2. **Relentless Strikes** — Removing it costs 13.6 points of score in this model.
 3. **Improved Slice and Dice** — Removing it costs 12.6 points of score in this model.
-4. **Adrenaline Rush** — Removing it costs 12.3 points of score in this model.
-5. **Improved Expose Armor** — Removing it costs 10.0 points of score in this model.
-6. **Malice** — Removing it costs 8.0 points of score in this model.
-7. **Hack and Slash** — Removing it costs 7.8 points of score in this model.
-8. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
+4. **Improved Expose Armor** — Removing it costs 10.0 points of score in this model.
+5. **Malice** — Removing it costs 8.0 points of score in this model.
+6. **Hack and Slash** — Removing it costs 7.8 points of score in this model.
+7. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
 
 ## Rotation
 
@@ -68,6 +67,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 - Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-parse.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 17/32/2 -> 21/30/0; Lethality 3 -> 2 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Cold Blood (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Flawless Execution (tier gating for Adrenaline Rush); +1 Deflection (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Adrenaline Rush (over 51) (refill: the combat-daggers-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Adrenaline Rush; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

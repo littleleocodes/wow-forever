@@ -56,26 +56,25 @@ Holy Shock (tier 5) with Holy Power's +15% Holy Shock crit, Divine Favor, Light'
 1. **Holy Shock** — Instant Holy burst/heal.
 2. **Holy Power** — +15% Holy Shock crit (est.).
 3. **Divine Favor** — Guaranteed crit Holy Shock.
-4. **Voice of Truth** — New: 6s immunity to silence/interrupts.
-5. **Light's Vigil** — Cooldown-free Holy Shock on a marked target.
-6. **Illumination** — Mana on crits.
-7. **Unyielding Faith** — Shorter fears/disorients.
-8. **Seal of Command** — Melee pressure.
-9. **Improved Judgement** — Faster Judgements.
-10. **Pursuit of Justice** — +8% movement (est. 16%).
+4. **Light's Vigil** — Cooldown-free Holy Shock on a marked target.
+5. **Illumination** — Mana on crits.
+6. **Unyielding Faith** — Shorter fears/disorients.
+7. **Seal of Command** — Melee pressure.
+8. **Improved Judgement** — Faster Judgements.
+9. **Pursuit of Justice** — +8% movement (est. 16%).
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Sanctified Judgement 2 + Vindication 1 | Holy Conduit, Sanctified Judgement 3 | Tier-2/3 Retribution fillers. |
-| 2 | Crusade | Eye for an Eye | Damage vs. reflect. |
 
 ## Notes
 
 - Divine Precision (Holy hit, requires Holy Shock) may be worth 2-3 points if Holy Shock misses are common in PvP.
 - Build 1.60.1.70009 removed Crusade: Sanctified Judgement 3 and Vindication 2 instead.
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/0/20 -> 31/0/20; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Conviction 5 -> 3 (rank cap); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Divine Precision (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); refill +2 Unyielding Faith (refill: the holy-heal model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Voice of Truth; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

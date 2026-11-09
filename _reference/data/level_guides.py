@@ -78,6 +78,19 @@ def book(cls):
 _PETS = {}
 
 
+def racial_spells(cls):
+    """{spell: race} for a class's race-only spells: the fight-lab module's RACIAL_SPELLS (the priest's, 2026-10-09)."""
+    p = HERE / "fightlab" / f"{cls}.py"
+    if not p.exists():
+        return {}
+    m = re.search(r"^RACIAL_SPELLS = (\{.*?\})\s*$", p.read_text(encoding="utf-8"), re.S | re.M)
+    try:
+        import ast
+        return ast.literal_eval(m.group(1)) if m else {}
+    except (ValueError, SyntaxError):
+        return {}
+
+
 def pet_spells(cls):
     """The spells of the class spellbook's "Pets" or "Demons" tab (the hunter's and the warlock's pet abilities): the pet casts them, the player never presses them."""
     if cls not in _PETS:
@@ -236,6 +249,44 @@ def key_holding(keys, level):
 
 
 # ------------------------------------------------------------------------------------------------ check
+TALENT_AT = re.compile(r"\*\*([^*]+)\*\* \(((?:\d+(?:-\d+)?)(?:, \d+(?:-\d+)?)*)\)")
+
+
+def _levels(text):
+    out = set()
+    for part in str(text).split(","):
+        a, _, z = part.strip().partition("-")
+        out |= set(range(int(a), int(z or a) + 1))
+    return out
+
+
+def stale_levels(cls, g, b, order):
+    """Talents a guide text places at levels the build's order does not (2026-11-09 audit W22: the Protection warrior's guide kept the
+    levels of the build its page showed before, "**Iron Will** (10)", "**Cruelty** (43-47)", and no check read them): every
+    "**Talent** (a-b, c)" with levels 10+ against the order's levels for that talent."""
+    out = []
+    held = {n for items in b["allocation"].values() for n, r in items if r}
+    texts = [g.get("intro", "")] + g.get("between", []) + g.get("other", [])
+    for s in g.get("stages", []):
+        texts += [s.get("change", ""), s.get("if_hurt", "")] + s.get("press", []) + s.get("notes", [])
+    tnames = SG.talent_names(cls)
+    for txt in texts:
+        for m in TALENT_AT.finditer(txt or ""):
+            n, lv = m.group(1), _levels(m.group(2))
+            if n not in tnames or min(lv) < 10:
+                continue
+            if n not in held:
+                out.append(f"places **{n}** at {m.group(2)}; the build ({b['id']}) does not take it")
+                continue
+            want = set()
+            for step in order or []:
+                if step.get("talent") == n:
+                    want |= _levels(step["levels"])
+            if want and not lv <= want:   # a stage may name some of the talent's levels (Ice Shards 24, 26-27, then 32-33)
+                out.append(f"places **{n}** at {m.group(2)}; the order takes it at {', '.join(str(x) for x in sorted(want))}")
+    return out
+
+
 def check(cls):
     """[(level of the problem: 'error' or 'warning', text)] for a class's guides."""
     out = []
@@ -245,6 +296,8 @@ def check(cls):
         if not b:
             out.append(("error", f"{g['spec']}: no leveling build on its page"))
             continue
+        for t in stale_levels(cls, g, b, order):
+            out.append(("error", f"{g['spec']}: the guide {t}"))
         ob = {"allocation": b["allocation"], "order": order}
         m = measured(cls, g["spec"], b, order, rot)
         if not m:
@@ -346,9 +399,17 @@ def render(cls, g):
         o += [f"## Levels {lo}-{hi}: {s['title']}" if lo != hi else f"## Level {lo}: {s['title']}", ""]
         new = sorted(((lv[0], n) for n, lv in book(cls).items() if lo <= lv[0] <= hi and n not in SG.talent_names(cls)
                       and not n.startswith(NOISE)), key=lambda x: x)
-        if new:
-            o += ["**The trainer teaches:** " + ", ".join(f"{'**' + n + '**' if n in pressed else n} ({lv})" for lv, n in new) + ".", ""]
-        ranks = sorted((n, [x for x in book(cls)[n][1:] if lo <= x <= hi]) for n in pressed if n in book(cls))
+        if new:   # a race-only spell says whose (2026-11-08 full page read PR12: Dark Sacrifice, Starshards ... listed for every priest)
+            race = racial_spells(cls)
+            o += ["**The trainer teaches:** " + ", ".join(f"{'**' + n + '**' if n in pressed else n} ({lv}" + (f", {race[n]} only" if n in race else "") + ")"
+                                                         for lv, n in new) + ".", ""]
+        # every spell you press, keep for emergencies or hold on a key gets its new ranks (2026-11-09 audit P16: the paladin's Divine
+        # Protection, Blessing of Protection, Lay on Hands and Divine Shield sat on keys and their ranks were never listed)
+        buy = pressed | set(BOLD.findall(s.get("if_hurt", "")))
+        if keys:
+            for L in range(lo, hi + 1):
+                buy |= set(key_holding(keys, L))
+        ranks = sorted((n, [x for x in book(cls)[n][1:] if lo <= x <= hi]) for n in buy if n in book(cls))
         ranks = [(n, lv) for n, lv in ranks if lv]
         if ranks:
             o += ["**New ranks to buy:** " + "; ".join(f"{n} at {', '.join(map(str, lv))}" for n, lv in ranks) + ".", ""]

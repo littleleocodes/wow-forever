@@ -76,12 +76,6 @@ Spirit Tap for endless mana, Mind Flay at 22, Shadow Weaving, Silence and Vampir
 3. **Shadowform** — +15% damage / -15% physical taken at 40.
 4. **Vampiric Embrace** — Self-heal while you DoT.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 5 | Spirit Tap first | Wand Specialization first (levels 10-14) then respec | Wanding is the actual damage source before 20; some prefer Wand Spec first. |
-
 ## Notes
 
 - Shadow Word: Pain -> Mind Blast -> wand until 22; then SW:P -> Mind Blast -> Mind Flay.

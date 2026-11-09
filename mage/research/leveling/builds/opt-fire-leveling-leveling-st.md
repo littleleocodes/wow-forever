@@ -92,7 +92,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 5. **Improved Fire Blast** — Removing it costs 2.3 points of score in this model.
 6. **Combustion** — Removing it costs 2.1 points of score in this model.
 7. **Fire Power** — Removing it costs 1.8 points of score in this model.
-8. **Elemental Precision** — Removing it costs 1.4 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -118,6 +117,7 @@ What this build casts per kill ([report](../fightlab/fire-leveling.md), all leve
 - Report: mage/research/talents/forever/optimizer/fire-leveling-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 2/33/16 -> 4/31/16; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Accelerant (tier gating for Flame Throwing); +1 Accelerant (tier gating for Flame Throwing); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Wand Specialization (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Improved Scorch (over 51); -1 Improved Scorch (over 51); -1 Missile Barrage (over 51); -1 Missile Barrage (over 51); -1 Improved Channeling (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
 - 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 39.6 s per kill; stats model 39.9 s; own tree last 39.9 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

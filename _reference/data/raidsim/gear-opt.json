@@ -3263,38 +3263,36 @@
    "rogue/subtlety-raid"
   ],
   "evaluated_on": [
-   "combat-swords-raid: combat-swords-raid",
+   "combat-swords-raid: opt-combat-swords-raid-raid-dps",
    "subtlety-raid: subtlety-hemo-raid"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.6871,
-   "PseudoStatOffHandDps": 0.4919,
-   "StatAgility": 0.2546,
-   "StatArmorPenetration": 0.0387,
-   "StatAttackPower": 0.151,
-   "StatCritRating": 0.2301,
-   "StatExpertiseRating": 0.2988,
-   "StatHasteRating": 0.1856,
-   "StatHitRating": 0.3366,
-   "StatSpellPiercing": 0.0306,
-   "StatStrength": 0.151
+   "PseudoStatMainHandDps": 1.2079,
+   "PseudoStatOffHandDps": 0.5688,
+   "StatAgility": 0.2503,
+   "StatArmorPenetration": 0.0305,
+   "StatAttackPower": 0.1529,
+   "StatCritRating": 0.2215,
+   "StatExpertiseRating": 0.2591,
+   "StatHasteRating": 0.2,
+   "StatHitRating": 0.2852,
+   "StatSpellPiercing": 0.0621,
+   "StatStrength": 0.1529
   },
   "trinkets": [
    "Adaptive Combat Assistant",
    "Rune of the Guard Captain"
   ],
   "trinket_screen": {
-   "Adaptive Combat Assistant (272437)": 1.017,
-   "Rune of the Guard Captain (19120)": 1.0133,
-   "Cleansed Vilebranch Medallion (270275)": 1.0133,
-   "Molten Heart of the Mountain (249470)": 1.0098,
-   "Frozen Heart of the Mountain (249469)": 1.0079,
-   "Everlook Delivery Bot (274760)": 1.0077,
-   "Everlook Pathcarver (274759)": 1.0063,
-   "Jewel of the Guard Captain (270225)": 1.0047,
-   "Weakness Analyzer (272438)": 1.0008,
-   "Ankh of Life (1713)": 1.0,
-   "Dog Whistle (3456)": 1.0,
+   "Adaptive Combat Assistant (272437)": 1.0177,
+   "Rune of the Guard Captain (19120)": 1.0142,
+   "Cleansed Vilebranch Medallion (270275)": 1.0142,
+   "Frozen Heart of the Mountain (249469)": 1.0098,
+   "Molten Heart of the Mountain (249470)": 1.0086,
+   "Everlook Delivery Bot (274760)": 1.0064,
+   "Everlook Pathcarver (274759)": 1.0046,
+   "Jewel of the Guard Captain (270225)": 1.0045,
+   "Weakness Analyzer (272438)": 1.0011,
    "Minor Recombobulator (4381)": 1.0,
    "Gnomish Universal Remote (7506)": 1.0,
    "Shard of the Splithooves (10659)": 1.0,
@@ -3303,11 +3301,11 @@
    "Heart of the Scale (13164)": 1.0,
    "Alchemist's Stone (13503)": 1.0,
    "Arcanite Dragonling (16022)": 1.0,
-   "Stormpike Insignia Rank 6 (17904)": 1.0,
    "Gyrofreeze Ice Reflector (18634)": 1.0,
    "Major Recombobulator (18637)": 1.0,
    "Hyper-Radiant Flame Reflector (18638)": 1.0,
    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+   "The Eye of Shadow (18665)": 1.0,
    "Essence of the Pure Flame (18815)": 1.0,
    "Talisman of Ephemeral Power (18820)": 1.0,
    "Arena Grand Master (19024)": 1.0,
@@ -3335,58 +3333,68 @@
    "Relentless Raider's Seal (272062)": 1.0,
    "Serenity Field (272439)": 1.0,
    "Defender's Grip Stabilizer (272440)": 1.0,
+   "Lookie's Spyglass (273298)": 1.0,
+   "Worgenbane Talisman (273643)": 1.0,
+   "Cursed Murloc Eye (273840)": 1.0,
+   "Roogug's Severed Head (274152)": 1.0,
    "Parachute-Priest Pager (274761)": 1.0
   },
   "race_seed1": {
    "all-slots": 1.0,
-   "keep-sets-and-effects": 0.9916674187932919
+   "keep-sets-and-effects": 1.0018573860182527
   },
   "confirm_seed2": {
-   "keep-sets-and-effects": 1.0,
-   "all-slots": 1.0085611343061522
+   "all-slots": 1.0,
+   "keep-sets-and-effects": 1.0013509580663267
   },
-  "chosen": "all-slots",
-  "gain": 0.00856113430615224,
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.0013509580663266796,
   "current_in_pool": false,
-  "ilvl_before": 65.7,
-  "ilvl_after": 63.6,
+  "ilvl_before": 63.6,
+  "ilvl_after": 62.5,
   "items": [
    {
-    "id": 22005
+    "id": 22005,
+    "enchant": 1508
    },
    {
     "id": 18404
    },
    {
-    "id": 19835
+    "id": 271955
    },
    {
     "id": 272414,
     "enchant": 849
    },
    {
-    "id": 252483
+    "id": 252483,
+    "enchant": 1891
    },
    {
-    "id": 19587
+    "id": 22004,
+    "enchant": 1885
    },
    {
-    "id": 271948
+    "id": 271948,
+    "enchant": 1887
    },
    {
     "id": 272395
    },
    {
-    "id": 22749
+    "id": 15062,
+    "enchant": 1508
    },
    {
-    "id": 16711
+    "id": 16711,
+    "enchant": 1887
    },
    {
-    "id": 21205
+    "id": 18821
    },
    {
-    "id": 19325
+    "id": 275981
    },
    {
     "id": 272437
@@ -3395,93 +3403,55 @@
     "id": 19120
    },
    {
-    "id": 19168
+    "id": 19168,
+    "enchant": 1900
    },
    {
-    "id": 272452
+    "id": 279259,
+    "enchant": 1900
    },
    {
-    "id": 272594
+    "id": 13022
    }
   ],
   "changed": [
    {
-    "slot": 0,
-    "from": "Bloodfang Hood (not in the database)",
-    "to": "Darkmantle Cap"
-   },
-   {
     "slot": 2,
-    "from": "Nightslayer Shoulder Pads (not in the database)",
-    "to": "Zandalar Madcap's Mantle"
-   },
-   {
-    "slot": 4,
-    "from": "Nightslayer Chestpiece (not in the database)",
-    "to": "Dawn Armor"
+    "from": "Zandalar Madcap's Mantle",
+    "to": "Theramore Pauldrons"
    },
    {
     "slot": 5,
-    "from": "Nightslayer Bracelets (not in the database)",
-    "to": "Forest Stalker's Bracers"
-   },
-   {
-    "slot": 6,
-    "from": "Nightslayer Gloves (not in the database)",
-    "to": "Theramore Gloves"
-   },
-   {
-    "slot": 7,
-    "from": "Nightslayer Belt (not in the database)",
-    "to": "Assassin's Waistguard"
+    "from": "Forest Stalker's Bracers",
+    "to": "Darkmantle Bracers"
    },
    {
     "slot": 8,
-    "from": "Bloodfang Pants (not in the database)",
-    "to": "Sentinel's Leather Pants"
-   },
-   {
-    "slot": 9,
-    "from": "Nightslayer Boots (not in the database)",
-    "to": "Shadowcraft Boots"
+    "from": "Sentinel's Leather Pants",
+    "to": "Devilsaur Leggings"
    },
    {
     "slot": 10,
-    "from": "Band of Accuria (not in the database)",
-    "to": "Signet Ring of the Bronze Dragonflight"
+    "from": "Signet Ring of the Bronze Dragonflight",
+    "to": "Quick Strike Ring"
    },
    {
     "slot": 11,
-    "from": "Quick Strike Ring",
-    "to": "Don Julio's Band"
-   },
-   {
-    "slot": 12,
-    "from": "Blackhand's Breadth (not in the database)",
-    "to": "Adaptive Combat Assistant"
-   },
-   {
-    "slot": 13,
-    "from": "Royal Seal of Eldre'Thalas (not in the database)",
-    "to": "Rune of the Guard Captain"
-   },
-   {
-    "slot": 14,
-    "from": "Vis'kag the Bloodletter (not in the database)",
-    "to": "Blackguard"
+    "from": "Don Julio's Band",
+    "to": "Warden's Signet of Ferocity"
    },
    {
     "slot": 15,
-    "from": "Brutality Blade (not in the database)",
-    "to": "Premier High Warlord's Blade"
+    "from": "Premier High Warlord's Blade",
+    "to": "Ironwood Blade"
    },
    {
     "slot": 16,
-    "from": "Striker's Mark (not in the database)",
-    "to": "Premier High Warlord's Recurve"
+    "from": "Premier High Warlord's Recurve",
+    "to": "Gryphonwing Long Bow"
    }
   ],
-  "date": "2026-10-22"
+  "date": "2026-11-08"
  },
  "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json",
@@ -3491,34 +3461,32 @@
   ],
   "evaluated_on": [
    "arms-2h-raid: opt-arms-2h-raid-raid-dps",
-   "arms-battle-raid: arms-community-parse"
+   "arms-battle-raid: arms-battle-raid"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.5632,
-   "StatAgility": 0.2362,
-   "StatArmorPenetration": 0.0431,
-   "StatAttackPower": 0.1302,
-   "StatCritRating": 0.3477,
-   "StatExpertiseRating": 0.3794,
-   "StatHasteRating": 0.3084,
-   "StatHitRating": 0.3794,
-   "StatStrength": 0.2604
+   "PseudoStatMainHandDps": 1.9677,
+   "StatAgility": 0.2903,
+   "StatArmorPenetration": 0.0507,
+   "StatAttackPower": 0.1531,
+   "StatCritRating": 0.4226,
+   "StatExpertiseRating": 0.4385,
+   "StatHasteRating": 0.3895,
+   "StatHitRating": 0.4415,
+   "StatStrength": 0.3061
   },
   "trinkets": [
    "Adaptive Combat Assistant",
    "Everlook Pathcarver"
   ],
   "trinket_screen": {
-   "Adaptive Combat Assistant (272437)": 1.0134,
-   "Everlook Pathcarver (274759)": 1.0092,
-   "Everlook Delivery Bot (274760)": 1.0074,
-   "Jewel of the Guard Captain (270225)": 1.0065,
-   "Molten Heart of the Mountain (249470)": 1.0058,
-   "Rune of the Guard Captain (19120)": 1.0053,
-   "Cleansed Vilebranch Medallion (270275)": 1.0053,
-   "Weakness Analyzer (272438)": 1.0013,
-   "Ankh of Life (1713)": 1.0,
-   "Dog Whistle (3456)": 1.0,
+   "Adaptive Combat Assistant (272437)": 1.0167,
+   "Jewel of the Guard Captain (270225)": 1.0062,
+   "Molten Heart of the Mountain (249470)": 1.0055,
+   "Everlook Pathcarver (274759)": 1.0053,
+   "Rune of the Guard Captain (19120)": 1.0051,
+   "Cleansed Vilebranch Medallion (270275)": 1.0051,
+   "Everlook Delivery Bot (274760)": 1.0044,
+   "Weakness Analyzer (272438)": 1.0011,
    "Minor Recombobulator (4381)": 1.0,
    "Gnomish Universal Remote (7506)": 1.0,
    "Shard of the Splithooves (10659)": 1.0,
@@ -3527,11 +3495,11 @@
    "Heart of the Scale (13164)": 1.0,
    "Alchemist's Stone (13503)": 1.0,
    "Arcanite Dragonling (16022)": 1.0,
-   "Stormpike Insignia Rank 6 (17904)": 1.0,
    "Gyrofreeze Ice Reflector (18634)": 1.0,
    "Major Recombobulator (18637)": 1.0,
    "Hyper-Radiant Flame Reflector (18638)": 1.0,
    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+   "The Eye of Shadow (18665)": 1.0,
    "Essence of the Pure Flame (18815)": 1.0,
    "Talisman of Ephemeral Power (18820)": 1.0,
    "Arena Grand Master (19024)": 1.0,
@@ -3560,33 +3528,38 @@
    "Relentless Raider's Seal (272062)": 1.0,
    "Serenity Field (272439)": 1.0,
    "Defender's Grip Stabilizer (272440)": 1.0,
+   "Lookie's Spyglass (273298)": 1.0,
+   "Worgenbane Talisman (273643)": 1.0,
+   "Cursed Murloc Eye (273840)": 1.0,
+   "Roogug's Severed Head (274152)": 1.0,
    "Parachute-Priest Pager (274761)": 1.0
   },
   "race_seed1": {
    "all-slots": 1.0,
-   "keep-sets-and-effects": 1.0013684899943318
+   "keep-sets-and-effects": 0.9680066153944461
   },
   "confirm_seed2": {
-   "all-slots": 1.0,
-   "keep-sets-and-effects": 1.0014387779022118
+   "keep-sets-and-effects": 1.0,
+   "all-slots": 1.0319587096499645
   },
-  "chosen": "keep-sets-and-effects",
-  "gain": 0.0014387779022118075,
+  "chosen": "all-slots",
+  "gain": 0.0319587096499645,
   "current_in_pool": false,
-  "ilvl_before": 63.1,
-  "ilvl_after": 63.9,
+  "ilvl_before": 63.9,
+  "ilvl_after": 62.5,
   "items": [
    {
-    "id": 12640
+    "id": 12640,
+    "enchant": 1506
    },
    {
     "id": 18404
    },
    {
-    "id": 20057
+    "id": 271955
    },
    {
-    "id": 272414,
+    "id": 21187,
     "enchant": 849
    },
    {
@@ -3594,14 +3567,15 @@
     "enchant": 1891
    },
    {
-    "id": 19587,
+    "id": 21184,
     "enchant": 1885
    },
    {
-    "id": 19157
+    "id": 19157,
+    "enchant": 927
    },
    {
-    "id": 20216
+    "id": 272403
    },
    {
     "id": 22385,
@@ -3612,10 +3586,10 @@
     "enchant": 1887
    },
    {
-    "id": 19325
+    "id": 21182
    },
    {
-    "id": 284716
+    "id": 18821
    },
    {
     "id": 272437
@@ -3624,76 +3598,52 @@
     "id": 274759
    },
    {
-    "id": 21188
+    "id": 21188,
+    "enchant": 1900
    },
    {},
    {
-    "id": 272594
+    "id": 13022
    }
   ],
   "changed": [
    {
-    "slot": 0,
-    "from": "Crown of Destruction (not in the database)",
-    "to": "Lionheart Helm"
-   },
-   {
-    "slot": 1,
-    "from": "Mark of Fordring (not in the database)",
-    "to": "Onyxia Tooth Pendant"
-   },
-   {
     "slot": 2,
-    "from": "Theramore Pauldrons",
-    "to": "Highlander's Plate Spaulders"
+    "from": "Highlander's Plate Spaulders",
+    "to": "Theramore Pauldrons"
    },
    {
     "slot": 3,
-    "from": "Deathguard's Cloak",
-    "to": "Howler's Furs"
+    "from": "Howler's Furs",
+    "to": "Earthweave Cloak"
    },
    {
     "slot": 5,
-    "from": "Deeprock Bracers",
-    "to": "Forest Stalker's Bracers"
-   },
-   {
-    "slot": 6,
-    "from": "Flameguard Gauntlets (not in the database)",
-    "to": "Chromatic Gauntlets"
+    "from": "Forest Stalker's Bracers",
+    "to": "Deeprock Bracers"
    },
    {
     "slot": 7,
-    "from": "Onslaught Girdle (not in the database)",
-    "to": "Belt of Preserved Heads"
+    "from": "Belt of Preserved Heads",
+    "to": "Valiant's Waistguard"
    },
    {
     "slot": 10,
-    "from": "Quick Strike Ring",
-    "to": "Don Julio's Band"
+    "from": "Don Julio's Band",
+    "to": "Band of Earthen Might"
    },
    {
     "slot": 11,
-    "from": "Painweaver Band (not in the database)",
-    "to": "Band of the Better Half"
+    "from": "Band of the Better Half",
+    "to": "Quick Strike Ring"
    },
    {
-    "slot": 12,
-    "from": "Hand of Justice (not in the database)",
-    "to": "Adaptive Combat Assistant"
-   },
-   {
-    "slot": 13,
-    "from": "Blackhand's Breadth (not in the database)",
-    "to": "Everlook Pathcarver"
-   },
-   {
-    "slot": 14,
-    "from": "Bonereaver's Edge (not in the database)",
-    "to": "Fist of Cenarius"
+    "slot": 16,
+    "from": "Premier High Warlord's Recurve",
+    "to": "Gryphonwing Long Bow"
    }
   ],
-  "date": "2026-10-22"
+  "date": "2026-11-08"
  },
  "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json",
@@ -3704,33 +3654,31 @@
    "fury-dw-raid: fury-open-raid"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.5349,
-   "PseudoStatOffHandDps": 0.7417,
-   "StatAgility": 0.2751,
-   "StatArmorPenetration": 0.0603,
-   "StatAttackPower": 0.1855,
-   "StatCritRating": 0.3784,
-   "StatExpertiseRating": 0.5954,
-   "StatHasteRating": 0.3482,
-   "StatHitRating": 0.3745,
-   "StatStrength": 0.3711
+   "PseudoStatMainHandDps": 1.9357,
+   "PseudoStatOffHandDps": 0.768,
+   "StatAgility": 0.3256,
+   "StatArmorPenetration": 0.0617,
+   "StatAttackPower": 0.1934,
+   "StatCritRating": 0.446,
+   "StatExpertiseRating": 0.7572,
+   "StatHasteRating": 0.358,
+   "StatHitRating": 0.3771,
+   "StatStrength": 0.3868
   },
   "trinkets": [
    "Adaptive Combat Assistant",
    "Rune of the Guard Captain"
   ],
   "trinket_screen": {
-   "Adaptive Combat Assistant (272437)": 1.0255,
-   "Rune of the Guard Captain (19120)": 1.0103,
-   "Cleansed Vilebranch Medallion (270275)": 1.0103,
-   "Frozen Heart of the Mountain (249469)": 1.0073,
-   "Jewel of the Guard Captain (270225)": 1.0071,
-   "Everlook Delivery Bot (274760)": 1.0067,
-   "Molten Heart of the Mountain (249470)": 1.0062,
-   "Everlook Pathcarver (274759)": 1.0024,
-   "Weakness Analyzer (272438)": 1.0017,
-   "Ankh of Life (1713)": 1.0,
-   "Dog Whistle (3456)": 1.0,
+   "Adaptive Combat Assistant (272437)": 1.0334,
+   "Rune of the Guard Captain (19120)": 1.0141,
+   "Cleansed Vilebranch Medallion (270275)": 1.0141,
+   "Frozen Heart of the Mountain (249469)": 1.0095,
+   "Jewel of the Guard Captain (270225)": 1.0077,
+   "Molten Heart of the Mountain (249470)": 1.0075,
+   "Everlook Delivery Bot (274760)": 1.0053,
+   "Everlook Pathcarver (274759)": 1.0037,
+   "Weakness Analyzer (272438)": 1.0023,
    "Minor Recombobulator (4381)": 1.0,
    "Gnomish Universal Remote (7506)": 1.0,
    "Shard of the Splithooves (10659)": 1.0,
@@ -3739,11 +3687,11 @@
    "Heart of the Scale (13164)": 1.0,
    "Alchemist's Stone (13503)": 1.0,
    "Arcanite Dragonling (16022)": 1.0,
-   "Stormpike Insignia Rank 6 (17904)": 1.0,
    "Gyrofreeze Ice Reflector (18634)": 1.0,
    "Major Recombobulator (18637)": 1.0,
    "Hyper-Radiant Flame Reflector (18638)": 1.0,
    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+   "The Eye of Shadow (18665)": 1.0,
    "Essence of the Pure Flame (18815)": 1.0,
    "Talisman of Ephemeral Power (18820)": 1.0,
    "Arena Grand Master (19024)": 1.0,
@@ -3771,6 +3719,10 @@
    "Relentless Raider's Seal (272062)": 1.0,
    "Serenity Field (272439)": 1.0,
    "Defender's Grip Stabilizer (272440)": 1.0,
+   "Lookie's Spyglass (273298)": 1.0,
+   "Worgenbane Talisman (273643)": 1.0,
+   "Cursed Murloc Eye (273840)": 1.0,
+   "Roogug's Severed Head (274152)": 1.0,
    "Parachute-Priest Pager (274761)": 1.0
   },
   "race_seed1": {
@@ -3784,8 +3736,8 @@
   "chosen": "keep-sets-and-effects",
   "gain": 0.0,
   "current_in_pool": false,
-  "ilvl_before": 62.8,
-  "ilvl_after": 63.9,
+  "ilvl_before": 63.9,
+  "ilvl_after": 62.7,
   "items": [
    {
     "id": 12640,
@@ -3798,7 +3750,8 @@
     "id": 271955
    },
    {
-    "id": 272414
+    "id": 272414,
+    "enchant": 849
    },
    {
     "id": 252484,
@@ -3809,10 +3762,11 @@
     "enchant": 1885
    },
    {
-    "id": 19157
+    "id": 19157,
+    "enchant": 927
    },
    {
-    "id": 20216
+    "id": 272403
    },
    {
     "id": 22385,
@@ -3823,10 +3777,10 @@
     "enchant": 1887
    },
    {
-    "id": 284716
+    "id": 18821
    },
    {
-    "id": 18821
+    "id": 21182
    },
    {
     "id": 272437
@@ -3835,69 +3789,50 @@
     "id": 19120
    },
    {
-    "id": 272452
-   },
-   {
-    "id": 272592,
+    "id": 19168,
     "enchant": 1900
    },
    {
-    "id": 272594
+    "id": 22384,
+    "enchant": 1900
+   },
+   {
+    "id": 13022
    }
   ],
   "changed": [
    {
-    "slot": 3,
-    "from": "Cape of the Black Baron (not in the database)",
-    "to": "Howler's Furs"
-   },
-   {
-    "slot": 6,
-    "from": "Flameguard Gauntlets (not in the database)",
-    "to": "Chromatic Gauntlets"
-   },
-   {
     "slot": 7,
-    "from": "Onslaught Girdle (not in the database)",
-    "to": "Belt of Preserved Heads"
+    "from": "Belt of Preserved Heads",
+    "to": "Valiant's Waistguard"
    },
    {
     "slot": 10,
-    "from": "Quick Strike Ring",
-    "to": "Band of the Better Half"
-   },
-   {
-    "slot": 11,
-    "from": "Don Julio's Band",
+    "from": "Band of the Better Half",
     "to": "Quick Strike Ring"
    },
    {
-    "slot": 12,
-    "from": "Blackhand's Breadth (not in the database)",
-    "to": "Adaptive Combat Assistant"
-   },
-   {
-    "slot": 13,
-    "from": "Adaptive Combat Assistant",
-    "to": "Rune of the Guard Captain"
+    "slot": 11,
+    "from": "Quick Strike Ring",
+    "to": "Band of Earthen Might"
    },
    {
     "slot": 14,
-    "from": "Brutality Blade (not in the database)",
-    "to": "Premier High Warlord's Blade"
+    "from": "Premier High Warlord's Blade",
+    "to": "Blackguard"
    },
    {
     "slot": 15,
-    "from": "Premier High Warlord's Blade",
-    "to": "Premier High Warlord's Cleaver"
+    "from": "Premier High Warlord's Cleaver",
+    "to": "Persuader"
    },
    {
     "slot": 16,
-    "from": "Striker's Mark (not in the database)",
-    "to": "Premier High Warlord's Recurve"
+    "from": "Premier High Warlord's Recurve",
+    "to": "Gryphonwing Long Bow"
    }
   ],
-  "date": "2026-10-22"
+  "date": "2026-11-08"
  },
  "_reference/data/raidsim/gear_sets/forever/druid-balance-p1.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/druid-balance-p1.p1opt.gear.json",
@@ -4483,78 +4418,80 @@
   "evaluated_on": [
    "affliction-raid: opt-affliction-raid-raid-dps",
    "fire-destro-raid: shadow-bolt-hybrid-fire-open-raid",
-   "sb-raid: shadow-bolt-hybrid-open-raid",
+   "sb-raid: destruction-ml-raid",
    "demonology-raid: demonology-pact-raid",
    "incinerate-raid: destruction-incinerate-raid"
   ],
   "weights": {
-   "StatCritRating": 0.5861,
-   "StatFireDamage": 0.0638,
-   "StatHasteRating": 0.495,
-   "StatHitRating": 0.6555,
-   "StatIntellect": 0.2469,
-   "StatShadowDamage": 0.5335,
-   "StatSpellDamage": 0.5973,
-   "StatSpellPiercing": 0.711,
-   "StatSpirit": 0.0902
+   "StatCritRating": 0.5581,
+   "StatFireDamage": 0.0632,
+   "StatHasteRating": 0.5559,
+   "StatHitRating": 0.7715,
+   "StatIntellect": 0.2138,
+   "StatShadowDamage": 0.54,
+   "StatSpellDamage": 0.6032,
+   "StatSpellPiercing": 0.7432,
+   "StatSpirit": 0.1079
   },
   "trinkets": [
-   "Talisman of Ephemeral Power",
-   "Weakness Analyzer"
+   "Weakness Analyzer",
+   "Talisman of Ephemeral Power"
   ],
   "trinket_screen": {
-   "Talisman of Ephemeral Power (18820)": 1.0249,
-   "Weakness Analyzer (272438)": 1.024,
-   "Serenity Field (272439)": 1.0118,
-   "Jewel of the Guard Captain (270225)": 1.0096,
-   "Frozen Heart of the Mountain (249469)": 1.0086,
-   "Rune of the Guard Captain (19120)": 1.0042,
-   "Cleansed Vilebranch Medallion (270275)": 1.0042,
+   "Weakness Analyzer (272438)": 1.0264,
+   "Talisman of Ephemeral Power (18820)": 1.0263,
+   "Serenity Field (272439)": 1.0147,
+   "Jewel of the Guard Captain (270225)": 1.0121,
+   "Frozen Heart of the Mountain (249469)": 1.0115,
+   "Rune of the Guard Captain (19120)": 1.0075,
+   "Cleansed Vilebranch Medallion (270275)": 1.0075,
    "Everlook Delivery Bot (274760)": 1.0018,
-   "Ankh of Life (1713)": 1.0,
-   "Enriched Seal (271903)": 0.9992,
-   "Darkspear Voodoo Seal (272061)": 0.9992,
-   "Shard of the Splithooves (10659)": 0.9991,
-   "Enriched Seal (271905)": 0.9983,
-   "Darkspear Voodoo Seal (272059)": 0.9983,
-   "Alchemist's Stone (13503)": 0.9981,
-   "Dog Whistle (3456)": 0.9973,
-   "Minor Recombobulator (4381)": 0.9973,
-   "Gnomish Universal Remote (7506)": 0.9973,
-   "Demon's Blood (10779)": 0.9973,
-   "Smoking Heart of the Mountain (11811)": 0.9973,
-   "Heart of the Scale (13164)": 0.9973,
-   "Arcanite Dragonling (16022)": 0.9973,
-   "Stormpike Insignia Rank 6 (17904)": 0.9973,
-   "Gyrofreeze Ice Reflector (18634)": 0.9973,
-   "Major Recombobulator (18637)": 0.9973,
-   "Hyper-Radiant Flame Reflector (18638)": 0.9973,
-   "Ultra-Flash Shadow Reflector (18639)": 0.9973,
-   "Essence of the Pure Flame (18815)": 0.9973,
-   "Arena Grand Master (19024)": 0.9973,
-   "Talisman of Arathor (20071)": 0.9973,
-   "Defiler's Talisman (20072)": 0.9973,
-   "Defiler's Talisman (21115)": 0.9973,
-   "Defiler's Talisman (21116)": 0.9973,
-   "Talisman of Arathor (21117)": 0.9973,
-   "Talisman of Arathor (21118)": 0.9973,
-   "Talisman of Arathor (21119)": 0.9973,
-   "Defiler's Talisman (21120)": 0.9973,
-   "Defender of the Timbermaw (21326)": 0.9973,
-   "Molten Heart of the Mountain (249470)": 0.9973,
-   "Dormant Heart of the Mountain (249473)": 0.9973,
-   "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9973,
-   "SAF-T Emergency Ripper: Everlook (260820)": 0.9973,
-   "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9973,
-   "Gnomish Poultryizer (260824)": 0.9973,
-   "Volunteer's Lucky Seal (271904)": 0.9973,
-   "Volunteer's Lucky Seal (271906)": 0.9973,
-   "Relentless Raider's Seal (272060)": 0.9973,
-   "Relentless Raider's Seal (272062)": 0.9973,
-   "Adaptive Combat Assistant (272437)": 0.9973,
-   "Defender's Grip Stabilizer (272440)": 0.9973,
-   "Everlook Pathcarver (274759)": 0.9973,
-   "Parachute-Priest Pager (274761)": 0.9973
+   "Shard of the Splithooves (10659)": 1.0017,
+   "Enriched Seal (271903)": 1.0013,
+   "Darkspear Voodoo Seal (272061)": 1.0013,
+   "Roogug's Severed Head (274152)": 1.0012,
+   "Enriched Seal (271905)": 1.001,
+   "Darkspear Voodoo Seal (272059)": 1.001,
+   "Alchemist's Stone (13503)": 1.0009,
+   "Worgenbane Talisman (273643)": 1.0007,
+   "Lookie's Spyglass (273298)": 1.0004,
+   "Minor Recombobulator (4381)": 1.0,
+   "Gnomish Universal Remote (7506)": 1.0,
+   "Demon's Blood (10779)": 1.0,
+   "Smoking Heart of the Mountain (11811)": 1.0,
+   "Heart of the Scale (13164)": 1.0,
+   "Arcanite Dragonling (16022)": 1.0,
+   "Gyrofreeze Ice Reflector (18634)": 1.0,
+   "Major Recombobulator (18637)": 1.0,
+   "Hyper-Radiant Flame Reflector (18638)": 1.0,
+   "Ultra-Flash Shadow Reflector (18639)": 1.0,
+   "The Eye of Shadow (18665)": 1.0,
+   "Essence of the Pure Flame (18815)": 1.0,
+   "Arena Grand Master (19024)": 1.0,
+   "Talisman of Arathor (20071)": 1.0,
+   "Defiler's Talisman (20072)": 1.0,
+   "Defiler's Talisman (21115)": 1.0,
+   "Defiler's Talisman (21116)": 1.0,
+   "Talisman of Arathor (21117)": 1.0,
+   "Talisman of Arathor (21118)": 1.0,
+   "Talisman of Arathor (21119)": 1.0,
+   "Defiler's Talisman (21120)": 1.0,
+   "Defender of the Timbermaw (21326)": 1.0,
+   "Molten Heart of the Mountain (249470)": 1.0,
+   "Dormant Heart of the Mountain (249473)": 1.0,
+   "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+   "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+   "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+   "Gnomish Poultryizer (260824)": 1.0,
+   "Volunteer's Lucky Seal (271904)": 1.0,
+   "Volunteer's Lucky Seal (271906)": 1.0,
+   "Relentless Raider's Seal (272060)": 1.0,
+   "Relentless Raider's Seal (272062)": 1.0,
+   "Adaptive Combat Assistant (272437)": 1.0,
+   "Defender's Grip Stabilizer (272440)": 1.0,
+   "Cursed Murloc Eye (273840)": 1.0,
+   "Everlook Pathcarver (274759)": 1.0,
+   "Parachute-Priest Pager (274761)": 1.0
   },
   "race_seed1": {
    "all-slots": 1.0,
@@ -4567,11 +4504,12 @@
   "chosen": "keep-sets-and-effects",
   "gain": 0.0,
   "current_in_pool": false,
-  "ilvl_before": 66.4,
-  "ilvl_after": 63.9,
+  "ilvl_before": 63.9,
+  "ilvl_after": 62.8,
   "items": [
    {
-    "id": 14111
+    "id": 14111,
+    "enchant": 1509
    },
    {
     "id": 18814
@@ -4583,7 +4521,8 @@
     "id": 272411
    },
    {
-    "id": 14153
+    "id": 14153,
+    "enchant": 1891
    },
    {
     "id": 21186,
@@ -4596,7 +4535,8 @@
     "id": 18405
    },
    {
-    "id": 19165
+    "id": 19165,
+    "enchant": 1509
    },
    {
     "id": 22064,
@@ -4609,16 +4549,17 @@
     "id": 19147
    },
    {
-    "id": 18820
-   },
-   {
     "id": 272438
    },
    {
-    "id": 22383
+    "id": 18820
    },
    {
-    "id": 19315
+    "id": 22383,
+    "enchant": 2504
+   },
+   {
+    "id": 10770
    },
    {
     "id": 249385
@@ -4626,67 +4567,22 @@
   ],
   "changed": [
    {
-    "slot": 0,
-    "from": "Spellweaver's Turban (not in the database)",
-    "to": "Felcloth Hood"
-   },
-   {
-    "slot": 2,
-    "from": "Rugged Mantle of the Timbermaw (not in the database)",
-    "to": "Mantle of the Timbermaw"
-   },
-   {
-    "slot": 3,
-    "from": "Crystalline Threaded Cape (not in the database)",
-    "to": "Arcanoweave Cloak"
-   },
-   {
-    "slot": 4,
-    "from": "Robe of Volatile Power (not in the database)",
-    "to": "Robe of the Void"
-   },
-   {
-    "slot": 6,
-    "from": "Hands of Power (not in the database)",
-    "to": "Gloves of Spell Mastery"
-   },
-   {
-    "slot": 7,
-    "from": "Mana Igniting Cord (not in the database)",
-    "to": "Belt of the Archmage"
-   },
-   {
-    "slot": 8,
-    "from": "Nemesis Leggings (not in the database)",
-    "to": "Flarecore Leggings"
-   },
-   {
-    "slot": 10,
-    "from": "Rune Band of Wizardry (not in the database)",
-    "to": "Ring of Spell Power"
-   },
-   {
-    "slot": 13,
-    "from": "Briarwood Reed (not in the database)",
+    "slot": 12,
+    "from": "Talisman of Ephemeral Power",
     "to": "Weakness Analyzer"
    },
    {
-    "slot": 14,
-    "from": "Azuresong Mageblade (not in the database)",
-    "to": "Sageblade"
+    "slot": 13,
+    "from": "Weakness Analyzer",
+    "to": "Talisman of Ephemeral Power"
    },
    {
     "slot": 15,
-    "from": "Scepter of Interminable Focus (not in the database)",
-    "to": "Therazane's Touch"
-   },
-   {
-    "slot": 16,
-    "from": "Bonecreeper Stylus (not in the database)",
-    "to": "Brilliant Wand"
+    "from": "Therazane's Touch",
+    "to": "Mordresh's Lifeless Skull"
    }
   ],
-  "date": "2026-10-22"
+  "date": "2026-11-07"
  },
  "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json": {
   "gear": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
@@ -4917,5 +4813,207 @@
    }
   ],
   "date": "2026-10-22"
+ },
+ "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_backstab_p1_bis.p1opt.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_backstab_p1_bis.p1opt.gear.json",
+  "members": [
+   "rogue/combat-daggers-raid",
+   "rogue/assassination-raid"
+  ],
+  "evaluated_on": [
+   "combat-daggers-raid: combat-daggers-raid",
+   "assassination-raid: assassination-ml-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.1032,
+   "PseudoStatOffHandDps": 0.5802,
+   "StatAgility": 0.2173,
+   "StatArmorPenetration": 0.0276,
+   "StatAttackPower": 0.1362,
+   "StatCritRating": 0.1851,
+   "StatExpertiseRating": 0.2407,
+   "StatHasteRating": 0.1769,
+   "StatHitRating": 0.2668,
+   "StatSpellPiercing": 0.0437,
+   "StatStrength": 0.1362
+  },
+  "trinkets": [
+   "Adaptive Combat Assistant",
+   "Rune of the Guard Captain"
+  ],
+  "trinket_screen": {
+   "Adaptive Combat Assistant (272437)": 1.0167,
+   "Rune of the Guard Captain (19120)": 1.0117,
+   "Cleansed Vilebranch Medallion (270275)": 1.0117,
+   "Molten Heart of the Mountain (249470)": 1.0111,
+   "Frozen Heart of the Mountain (249469)": 1.0079,
+   "Everlook Delivery Bot (274760)": 1.0079,
+   "Everlook Pathcarver (274759)": 1.0062,
+   "Jewel of the Guard Captain (270225)": 1.0049,
+   "Weakness Analyzer (272438)": 1.0008,
+   "Minor Recombobulator (4381)": 1.0,
+   "Gnomish Universal Remote (7506)": 1.0,
+   "Shard of the Splithooves (10659)": 1.0,
+   "Demon's Blood (10779)": 1.0,
+   "Smoking Heart of the Mountain (11811)": 1.0,
+   "Heart of the Scale (13164)": 1.0,
+   "Alchemist's Stone (13503)": 1.0,
+   "Arcanite Dragonling (16022)": 1.0,
+   "Gyrofreeze Ice Reflector (18634)": 1.0,
+   "Major Recombobulator (18637)": 1.0,
+   "Hyper-Radiant Flame Reflector (18638)": 1.0,
+   "Ultra-Flash Shadow Reflector (18639)": 1.0,
+   "The Eye of Shadow (18665)": 1.0,
+   "Essence of the Pure Flame (18815)": 1.0,
+   "Talisman of Ephemeral Power (18820)": 1.0,
+   "Arena Grand Master (19024)": 1.0,
+   "Talisman of Arathor (20071)": 1.0,
+   "Defiler's Talisman (20072)": 1.0,
+   "Defiler's Talisman (21115)": 1.0,
+   "Defiler's Talisman (21116)": 1.0,
+   "Talisman of Arathor (21117)": 1.0,
+   "Talisman of Arathor (21118)": 1.0,
+   "Talisman of Arathor (21119)": 1.0,
+   "Defiler's Talisman (21120)": 1.0,
+   "Defender of the Timbermaw (21326)": 1.0,
+   "Dormant Heart of the Mountain (249473)": 1.0,
+   "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+   "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+   "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+   "Gnomish Poultryizer (260824)": 1.0,
+   "Enriched Seal (271903)": 1.0,
+   "Volunteer's Lucky Seal (271904)": 1.0,
+   "Enriched Seal (271905)": 1.0,
+   "Volunteer's Lucky Seal (271906)": 1.0,
+   "Darkspear Voodoo Seal (272059)": 1.0,
+   "Relentless Raider's Seal (272060)": 1.0,
+   "Darkspear Voodoo Seal (272061)": 1.0,
+   "Relentless Raider's Seal (272062)": 1.0,
+   "Serenity Field (272439)": 1.0,
+   "Defender's Grip Stabilizer (272440)": 1.0,
+   "Lookie's Spyglass (273298)": 1.0,
+   "Worgenbane Talisman (273643)": 1.0,
+   "Cursed Murloc Eye (273840)": 1.0,
+   "Roogug's Severed Head (274152)": 1.0,
+   "Parachute-Priest Pager (274761)": 1.0
+  },
+  "race_seed1": {
+   "all-slots": 1.0,
+   "keep-sets-and-effects": 1.0
+  },
+  "confirm_seed2": {
+   "keep-sets-and-effects": 1.0,
+   "all-slots": 1.0
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.0,
+  "current_in_pool": false,
+  "ilvl_before": 63.8,
+  "ilvl_after": 62.3,
+  "items": [
+   {
+    "id": 22005,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 272414,
+    "enchant": 849
+   },
+   {
+    "id": 252483,
+    "enchant": 1891
+   },
+   {
+    "id": 22004,
+    "enchant": 1885
+   },
+   {
+    "id": 271948,
+    "enchant": 1887
+   },
+   {
+    "id": 272395
+   },
+   {
+    "id": 15062,
+    "enchant": 1508
+   },
+   {
+    "id": 16711,
+    "enchant": 1887
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 275981
+   },
+   {
+    "id": 272437
+   },
+   {
+    "id": 19120
+   },
+   {
+    "id": 19166,
+    "enchant": 1900
+   },
+   {
+    "id": 22377,
+    "enchant": 1900
+   },
+   {
+    "id": 13022
+   }
+  ],
+  "changed": [
+   {
+    "slot": 2,
+    "from": "Zandalar Madcap's Mantle",
+    "to": "Theramore Pauldrons"
+   },
+   {
+    "slot": 5,
+    "from": "Forest Stalker's Bracers",
+    "to": "Darkmantle Bracers"
+   },
+   {
+    "slot": 8,
+    "from": "Sentinel's Leather Pants",
+    "to": "Devilsaur Leggings"
+   },
+   {
+    "slot": 10,
+    "from": "Signet Ring of the Bronze Dragonflight",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 13,
+    "from": "Molten Heart of the Mountain",
+    "to": "Rune of the Guard Captain"
+   },
+   {
+    "slot": 14,
+    "from": "Premier High Warlord's Razor",
+    "to": "Black Amnesty"
+   },
+   {
+    "slot": 15,
+    "from": "Heartseeker",
+    "to": "The Thunderwood Poker"
+   },
+   {
+    "slot": 16,
+    "from": "Premier High Warlord's Recurve",
+    "to": "Gryphonwing Long Bow"
+   }
+  ],
+  "date": "2026-11-08"
  }
 }

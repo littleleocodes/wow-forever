@@ -62,6 +62,10 @@ def mob_armor(level):
 
 
 MOB_SWING = 2.0          # seconds between melee swings
+# Vindication (paladin, 2026-11-09): the tooltip's level-60 attack power cut (204 at 3/3) comes off every mob swing as / 14 x MOB_SWING.
+# How it scales below 60 is unknown: "mob" keeps the share of a mob's swing it has at 60 (the cautious reading: 29 of 188 at 60, 15%),
+# "level" scales it by level / 60, "flat" uses 204 at every level (most of a level-20 mob's swing), "off" the lab before 2026-11-09.
+VINDICATION_SCALE = "mob"
 MOB_SPEED = 7.0          # yards per second (same as a running player)
 MELEE_RANGE = 5.0        # yards at which a mob starts swinging
 MOB_HIT_CHANCE = 0.95    # vs a same-level player before the player's dodge

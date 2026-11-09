@@ -56,9 +56,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 3. **Deflection** — Removing it costs 5.5 points of score in this model.
 4. **Improved Righteous Fury** — Removing it costs 5.0 points of score in this model.
 5. **Shield Specialization** — Removing it costs 4.1 points of score in this model.
-6. **One-Handed Weapon Specialization** — Removing it costs 4.0 points of score in this model.
-7. **Conviction** — Removing it costs 3.0 points of score in this model.
-8. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
+6. **Conviction** — Removing it costs 3.0 points of score in this model.
+7. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -115,6 +114,7 @@ Damage by ability (threat for tanks):
 
 - Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/35/16 -> 1/34/16; Improved Seal of Fury 1 gone; Shield Specialization 3 -> 2 (rank cap); One-Handed Weapon Specialization 3 gone; Iron Creed 5 -> 3 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Divine Intellect (tier gating for Shield Specialization); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Unyielding Faith (tier gating for Sacred Arbiter); refill +1 Shieldsworn, +3 Improved Hammer of Justice, +1 Divine Strength (refill: the prot-tank model, raid-tank).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (One-Handed Weapon Specialization; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

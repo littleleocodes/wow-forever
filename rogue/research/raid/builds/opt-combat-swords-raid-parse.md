@@ -52,13 +52,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 ## Core talents (priority order)
 
 1. **Relentless Strikes** — Removing it costs 12.5 points of score in this model.
-2. **Improved Sinister Strike** — Removing it costs 9.5 points of score in this model.
-3. **Improved Slice and Dice** — Removing it costs 9.2 points of score in this model.
-4. **Malice** — Removing it costs 7.9 points of score in this model.
-5. **Ruthlessness** — Removing it costs 7.8 points of score in this model.
-6. **Dual Wield Specialization** — Removing it costs 7.7 points of score in this model.
-7. **Adrenaline Rush** — Removing it costs 7.3 points of score in this model.
-8. **Precision** — Removing it costs 5.8 points of score in this model.
+2. **Improved Slice and Dice** — Removing it costs 9.2 points of score in this model.
+3. **Malice** — Removing it costs 7.9 points of score in this model.
+4. **Ruthlessness** — Removing it costs 7.8 points of score in this model.
+5. **Dual Wield Specialization** — Removing it costs 7.7 points of score in this model.
+6. **Precision** — Removing it costs 5.8 points of score in this model.
 
 ## Rotation
 
@@ -68,6 +66,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-parse.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 21/30/0; Murder 2 gone; Lethality 5 -> 2 (rank cap); Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Expose Armor (tier gating for Relentless Strikes); +1 Improved Expose Armor (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Flawless Execution (tier gating for Adrenaline Rush); +1 Deflection (tier gating for Adrenaline Rush); -1 Adrenaline Rush (over 51) (refill: the combat-swords-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Sinister Strike, Adrenaline Rush; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

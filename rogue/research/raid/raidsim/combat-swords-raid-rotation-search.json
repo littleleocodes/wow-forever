@@ -154,20 +154,26 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-11-04",
-  "commit": "92c4c35b9",
+  "date": "2026-11-09",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
-    "label": "combat-swords-open-raid",
-    "talents": "0053032020141-32503300000123215"
+    "label": "open winner",
+    "talents": "0053031122125103-320033011201132"
+   },
+   {
+    "label": "opt-combat-swords-raid-raid-dps",
+    "talents": "0053032020051-32503300000123215",
+    "protect_only": true
    },
    {
     "label": "sim preset: Subtlety Hemo",
-    "talents": "00530301-320003-305230031321001151"
+    "talents": "00530301-320003-305230031321001151",
+    "protect_only": true
    },
    {
     "label": "combat-swords-raid",
@@ -175,14 +181,13 @@
     "protect_only": true
    },
    {
-    "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "0053032020051-32503300000123215",
+    "label": "combat-swords-open-raid",
+    "talents": "0053032020141-32503300000123215",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "combat-swords-open-raid",
-   "sim preset: Subtlety Hemo"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -286,37 +291,46 @@
   ],
   "final": {
    "raid": {
-    "combat-swords-open-raid": {
-     "before": 667.3040116397574,
-     "after": 669.6866880099637,
-     "base": 667.3040116397574,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Subtlety Hemo": {
-     "before": 765.9034017311754,
-     "after": 765.9034017311754,
-     "base": 765.9034017311754,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "combat-swords-raid": {
-     "before": 650.1455857089511,
-     "after": 652.4644538029307,
-     "base": 650.1455857089511,
+    "open winner": {
+     "before": 779.3242841311586,
+     "after": 781.4497698091835,
+     "base": 779.3242841311586,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-combat-swords-raid-raid-dps": {
-     "before": 667.0049922886134,
-     "after": 669.3649602820065,
-     "base": 667.0049922886134,
+     "before": 690.2494299718416,
+     "after": 692.565725866337,
+     "base": 690.2494299718416,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Subtlety Hemo": {
+     "before": 788.1720632048957,
+     "after": 788.1720632048957,
+     "base": 788.1720632048957,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "combat-swords-raid": {
+     "before": 673.2414556803479,
+     "after": 675.4448121731555,
+     "base": 673.2414556803479,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "combat-swords-open-raid": {
+     "before": 691.1789686721563,
+     "after": 693.4926610442577,
+     "base": 691.1789686721563,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -326,7 +340,8 @@
   },
   "signature": {
    "specs": [
-    "Combat"
+    "Combat",
+    "Hybrid Assassination/Combat"
    ],
    "required": [],
    "rejected": {
@@ -337,6 +352,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 14
  }
 }

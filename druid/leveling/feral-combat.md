@@ -10,7 +10,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Feral cat), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 97% of the damage at level 60 in the fight lab comes from melee, Claw, Rake, Rip, Ferocious Bite, Shred, Primal Bite, Ravage, Pounce (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast in every fight).
+**Signature spells:** 97% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Claw, Rake, Rip, Ferocious Bite, Ravage; this build never casts Shred, Primal Bite, Pounce) (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast at level 60).
 
 ## How to play
 
@@ -34,19 +34,19 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 
 **Why it works**
 
-- Levels 10-19: no **Cat Form** yet, so **Bear Form**'s armor and health carry you. You start each fight with no rage: **Enrage** first (10 rage at once, 20 more over 10 seconds), then **Demoralizing Roar** to cut the mob's attack power, then **Maul** on every swing you can pay for.
-- From 20, **Prowl** up behind the mob and open with your hardest stealth hit: **Ravage** from 32 (350% weapon damage plus a bonus, about 14% of all your damage at 60), **Claw** before that. **Pounce** only arrives at 36, after **Ravage**, so the fight lab never opens with it.
-- The 22-31 opener from behind used to be Shred. The re-tuned fight lab (2026-10-19) never casts it: opening with **Claw** instead measured about 0.3-0.4% faster per kill. Shred costs 60 energy against **Claw**'s 40 with **Ferocity**, and once the mob turns to face you it cannot be used anyway.
-- Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it); the fight lab no longer casts it since 2026-10-17.
-- **Rake**: a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** (levels 35-39) adds 10% to your attacks. The fight lab puts it back whenever it has run out and the mob has more than 30% of its health, about twice a kill.
-- **Claw** builds your combo points because the mob faces you. With **Ferocity** it costs 40 energy; **Sharpened Claws** and **Blood Frenzy** (an extra point on a critical **Claw**) are among the most valuable talents at 60.
-- **Ferocious Bite** (from 24) ends most fights: the fight lab bites whenever the bite would kill, at any number of points, about once a kill. **Rip** only goes on a mob with more than half its health at 5 points, under one kill in two at 60: on a mob that dies sooner, most of its 12 seconds are wasted.
+- Levels 10-19: no **Cat Form** yet, so **Bear Form**'s armor and health carry you. You start each fight with no rage: from 12, **Enrage** first (10 rage at once, 20 more over 10 seconds), then **Demoralizing Roar** to cut the mob's attack power, then **Maul** on every swing you can pay for. **Ferocity** (levels 10-14) takes up to 5 rage off each **Maul**.
+- From 20, **Prowl** up behind the mob and open with your hardest stealth hit: **Ravage** from 32 (435% damage plus a bonus), **Claw** before that. **Pounce** only arrives at 36, after **Ravage**, so the fight lab never opens with it.
+- **Shred** is learned at 20 but the tuned rules never cast it: opening with **Claw** measured about 0.5% faster per kill. **Shred** costs 60 energy against **Claw**'s 40 with **Ferocity**, and once the mob turns to face you it cannot be used anyway.
+- Tiger's Fury was removed (Blizzard's notes of 1 Oct; the spellbook lacks it); the fight lab no longer casts it.
+- **Rake** (from 24): a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** (levels 55-58, 3% a point) adds to your melee abilities. The fight lab puts it back whenever it has run out and the mob has more than 30% of its health.
+- **Claw** builds your combo points because the mob faces you. With **Ferocity** it costs 40 energy; **Sharpened Claws** (levels 20-21) and **Blood Frenzy** (an extra combo point on a critical **Claw**) are among the most valuable talents at 60.
+- **Ferocious Bite** (from 24) ends most fights: the fight lab bites whenever the bite would kill, at any number of points. **Rip** only goes on a mob with more than half its health at 5 points, which most one-on-one fights never reach: on a mob that dies sooner, most of its 12 seconds are wasted.
 
 **Caveats**
 
-- Before 32 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health. The fight lab measured that 3% faster per kill at 30 than waiting for 5 points on a mob above half health, which almost never came.
-- Leaving **Cat Form** costs you: going back costs 55% of your base mana (less with **Natural Shapeshifter**), and without **Furor** your energy starts from zero. Heal between fights rather than in them when you can.
-- Your mana only pays for shifts and heals, so drink late. The tuned rules of 2026-11-06 keep the lab's default, drinking below about a third of your mana (an earlier tune drank below 15%, about 0.5-0.7% faster per kill; the 2026-11-02 re-tune did not keep it). It heals with **Rejuvenation** and **Regrowth** below 70% health between fights and eats only when there was no mana for that.
+- Before 24 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health, rather than waiting for 5 points that almost never come on a mob above half health.
+- Leaving **Cat Form** costs you: going back costs 55% of your base mana (10% less with the one point of **Natural Shapeshifter**, level 52), and your energy starts low: one point of **Furor** (from 24) gives back 20% of the energy you left with, plus 2 a second out of form. Heal between fights rather than in them when you can.
+- Your mana only pays for shifts and heals, so drink late: the tuned rules of 2026-11-06 keep the lab's default, below about a third of your mana (35%). Between fights it heals with **Rejuvenation** and **Regrowth** below 70% health and eats only when there was no mana for that.
 
 **When to change it**
 
@@ -91,6 +91,8 @@ One point per level from 10, in this order:
 | 50 | 23 |
 | 60 | 24 |
 
+**Points that do nothing for this spec:** **Improved Wrath** (1) only counts toward the points the tree needs before **Nature's Splendor**; **Feral Charge** (1) only counts toward the points the tree needs before **Rend and Tear**.
+
 ## Other builds of this spec
 
 - [Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-12)
@@ -98,5 +100,5 @@ One point per level from 10, in this order:
 - [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

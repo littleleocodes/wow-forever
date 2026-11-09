@@ -1,0 +1,241 @@
+{
+ "class": "warrior",
+ "spec": "arms-2h-raid",
+ "build": "fury-open-raid",
+ "setting": "raid",
+ "date": "2026-11-08",
+ "tank": false,
+ "removal": {
+  "Anger Management": 0.006403355998009008,
+  "Blood Craze": -0.0,
+  "Bloodthirst": 0.09593092632666766,
+  "Cruelty": 0.04826320037503573,
+  "Death Wish": 0.04314053893971337,
+  "Deep Wounds": 0.07692956896432279,
+  "Deflection": -0.0,
+  "Enrage": -0.0,
+  "Flurry": 0.15199668585018566,
+  "Furious Precision": -0.0,
+  "Gore Drinker": 6.5875729171605e-07,
+  "Impale": 0.030283884801867278,
+  "Improved Berserker Rage": -0.0,
+  "Improved Execute": 0.018272748615208223,
+  "Improved Heroic Strike": 0.0015487279037866841,
+  "Improved Rend": -0.0,
+  "Improved Tactical Mastery": -0.0,
+  "Improved Whirlwind": 0.035875635055323984,
+  "Reckless Swings": 0.008005169411795743,
+  "Two-Handed Weapon Specialization": 0.05561615922812513,
+  "Unbridled Wrath": 0.0061923001142563106
+ },
+ "free": [
+  "Blood Craze",
+  "Deflection",
+  "Enrage",
+  "Furious Precision",
+  "Gore Drinker",
+  "Improved Heroic Strike",
+  "Improved Rend",
+  "Improved Tactical Mastery"
+ ],
+ "kept_for_rotation": [
+  "Bloodthirst",
+  "Improved Berserker Rage"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Enrage",
+   "to": "Gore Drinker",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    3
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Furious Precision",
+    3
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Enrage",
+    2
+   ],
+   [
+    "Reckless Swings",
+    1
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Improved Berserker Rage",
+    2
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Gore Drinker",
+    1
+   ],
+   [
+    "Improved Whirlwind",
+    2
+   ],
+   [
+    "Flurry",
+    3
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    3
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Furious Precision",
+    3
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Enrage",
+    1
+   ],
+   [
+    "Reckless Swings",
+    1
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Improved Berserker Rage",
+    2
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Gore Drinker",
+    2
+   ],
+   [
+    "Improved Whirlwind",
+    2
+   ],
+   [
+    "Flurry",
+    3
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ }
+}

@@ -53,14 +53,12 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Raid sim (2026-09-26): removing it costs +8% tank value. Raid sim (2026-09-28): removing it costs +7% tank value.
-2. **Deflection** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +4% tank value.
-3. **Improved Righteous Fury** — Reworked: -2%/rank damage taken while Righteous Fury is up (est. 6%). Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
-4. **Vengeance** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
-5. **Vindication** — Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
-6. **Templar's Bulwark** — Raid sim (2026-09-28): removing it costs +3% tank value.
-7. **Anticipation** — Raid sim (2026-09-28): removing it costs +2% tank value.
-8. **Conviction** — Raid sim (2026-09-26): removing it costs +2% tank value. Raid sim (2026-09-28): removing it costs +2% tank value.
+1. **Deflection** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +4% tank value.
+2. **Improved Righteous Fury** — Reworked: -2%/rank damage taken while Righteous Fury is up (est. 6%). Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
+3. **Vindication** — Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
+4. **Templar's Bulwark** — Raid sim (2026-09-28): removing it costs +3% tank value.
+5. **Anticipation** — Raid sim (2026-09-28): removing it costs +2% tank value.
+6. **Conviction** — Raid sim (2026-09-26): removing it costs +2% tank value. Raid sim (2026-09-28): removing it costs +2% tank value.
 
 ## Flex points
 
@@ -71,7 +69,6 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | 1 | Shield Specialization | any utility talent legal at that tier | Measures +0.3% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Redoubt | any utility talent legal at that tier | Measures +0.2% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Eye for an Eye | Benediction, any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Improved Seal of Fury | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -134,6 +131,7 @@ Damage by ability (threat for tanks):
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Benediction -> Improved Judgement (+1.2% DPS); Benediction -> Improved Judgement (+1.0% DPS); Benediction -> Eye for an Eye (+0.3% DPS). Net +2.42% on a third seed.
 - 2026-10-22 (signature-spell rule, user 2026-10-22: a Protection paladin tanks with Holy Shield): 0/23/28 -> 0/31/20, the nearest legal build with Holy Shield (needs 30 Protection points): Vindication 1, Sanctified Judgement 1, Vengeance 3, Champion of the Light 3 out; Toughness 5, Guardian's Favor 1, Iron Creed 1, Holy Shield 1 in; tank value x1.0437 against the old draft on the official simulator 30f67f5.
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/31/20 -> 0/33/18; Improved Seal of Fury 1 gone; One-Handed Weapon Specialization 3 gone; Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Sanctified Judgement (tier gating for Eye for an Eye); refill +1 Shield Specialization, +2 Iron Creed, +1 Vindication, +1 Shieldsworn, +1 Improved Hammer of Justice (refill: the prot-tank model, raid-tank).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Champion of the Light, Vengeance; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

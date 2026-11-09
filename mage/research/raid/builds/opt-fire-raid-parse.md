@@ -57,8 +57,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 4. **Critical Mass** — Removing it costs 28.8 points of score in this model.
 5. **Ignite** — Removing it costs 21.8 points of score in this model.
 6. **Fire Power** — Removing it costs 21.1 points of score in this model.
-7. **Elemental Precision** — Removing it costs 20.1 points of score in this model.
-8. **Combustion** — Removing it costs 11.2 points of score in this model.
+7. **Combustion** — Removing it costs 11.2 points of score in this model.
 
 ## Rotation
 
@@ -68,6 +67,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 - Report: mage/research/talents/forever/optimizer/fire-raid-parse.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 17/31/3 -> 17/31/3; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Master of Elements (tier gating for Combustion); +1 Burning Soul (tier gating for Combustion) (refill: the fire-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

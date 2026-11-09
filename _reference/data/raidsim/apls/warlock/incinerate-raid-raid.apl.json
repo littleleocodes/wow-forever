@@ -68,29 +68,6 @@
   {
    "action": {
     "condition": {
-     "not": {
-      "val": {
-       "auraIsActive": {
-        "sourceUnit": {
-         "type": "CurrentTarget"
-        },
-        "auraId": {
-         "spellId": 1311680
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1311680
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "and": {
       "vals": [
        {
@@ -135,6 +112,29 @@
     }
    },
    "notes": "apl_opt 2026-10-12: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "not": {
+      "val": {
+       "auraIsActive": {
+        "sourceUnit": {
+         "type": "CurrentTarget"
+        },
+        "auraId": {
+         "spellId": 1311680
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1311680
+     }
+    }
+   }
   },
   {
    "action": {
@@ -328,7 +328,7 @@
          },
          "rhs": {
           "const": {
-           "val": "20s"
+           "val": "10s"
           }
          }
         }
@@ -341,7 +341,8 @@
       "spellId": 25309
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-11-07: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   },
   {
    "action": {

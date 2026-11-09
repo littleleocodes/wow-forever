@@ -49,18 +49,18 @@ The Protection tank build the machine-learning talent search found in the commun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 02bd77c (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 17/3/31 | 1.014 | +0.0% | 1115 | 277 |
-| 2 | *Protection* | community simulator | - | 1.007 | -0.7% | 1094 | 276 |
-| 3 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.004 | -1.0% | 1087 | 276 |
-| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.4% | 1081 | 277 |
+| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 17/3/31 | 1.014 | +0.0% | 1604 | 277 |
+| 2 | *Protection* | community simulator | - | 1.012 | -0.2% | 1590 | 276 |
+| 3 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.004 | -1.0% | 1564 | 276 |
+| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.4% | 1555 | 277 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-28, 9 changes to the base rotation; third-seed check: deep: tank 489 -> 523 DPS (+6.9%), protection-ml-tank 488 -> 521 DPS (+6.7%), sim preset: Protection 486 -> 512 DPS (+5.3%), prot-raid-tank 483 -> 498 DPS (+3.0%), opt-prot-tank-raid-tank 476 -> 503 DPS (+5.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-11-08, 9 changes to the base rotation; third-seed check: protection-ml-tank 438 -> 468 DPS (+6.8%), sim preset: Protection 442 -> 461 DPS (+4.2%), prot-raid-tank 434 -> 446 DPS (+2.8%), opt-prot-tank-raid-tank 425 -> 449 DPS (+5.6%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
   2. insert at the top: cast Shield Wall (+3.2%, pass 3)
   3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)
@@ -99,8 +99,8 @@ Damage by ability (threat for tanks):
 | Sunder Armor | 8% |
 | Rend | 3% |
 | Judgement of Light | 2% |
-| OtherActionRageGain | 1% |
 | Deep Wound | 1% |
+| OtherActionRageGain | 1% |
 | Retribution Aura | 1% |
 
 ## Notes

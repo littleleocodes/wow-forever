@@ -54,26 +54,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 1. **Puncturing Wounds** — Removing it costs 26.7 points of score in this model.
 2. **Relentless Strikes** — Removing it costs 13.6 points of score in this model.
 3. **Improved Slice and Dice** — Removing it costs 12.5 points of score in this model.
-4. **Adrenaline Rush** — Removing it costs 12.3 points of score in this model.
-5. **Improved Expose Armor** — Removing it costs 10.0 points of score in this model.
-6. **Malice** — Removing it costs 8.1 points of score in this model.
-7. **Hack and Slash** — Removing it costs 7.9 points of score in this model.
-8. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
+4. **Improved Expose Armor** — Removing it costs 10.0 points of score in this model.
+5. **Malice** — Removing it costs 8.1 points of score in this model.
+6. **Hack and Slash** — Removing it costs 7.9 points of score in this model.
+7. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**7 of 8** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 8** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 473 | +0.0% | 786 | -0.9% | 0 s |
-| 2 | *Asn Muti* | community simulator | - | 434 | -8.3% | 793 | +0.0% | 0 s |
-| 3 | *Combat Venom* | community simulator | - | 386 | -18.4% | 728 | -8.1% | 0 s |
-| 4 | *Combat SS* | community simulator | - | 353 | -25.3% | 701 | -11.6% | 0 s |
-| 5 | *Combat BS* | community simulator | - | 340 | -28.1% | 676 | -14.7% | 0 s |
-| 6 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
-| 7 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
-| 8 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 21/30/0 | 304 | -35.7% | 607 | -23.4% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 785 | -2.9% | 0 s |
+| 2 | *Asn Muti* | community simulator | - | 443 | -7.8% | 809 | +0.0% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 395 | -17.8% | 706 | -12.7% | 0 s |
+| 4 | *Combat SS* | community simulator | - | 358 | -25.6% | 676 | -16.4% | 0 s |
+| 5 | *Combat BS* | community simulator | - | 344 | -28.4% | 755 | -6.7% | 0 s |
+| 6 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
+| 7 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
+| 8 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,7 +83,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 2)
   5. spell probe: insert in the middle: cast Mutilate (+15.6%, pass 4)
   6. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-11-01, 9 changes to the base rotation; third-seed check: combat-ml-raid 622 -> 652 DPS (+4.9%), sim preset: Combat BS 616 -> 647 DPS (+5.0%), combat-daggers-raid 618 -> 646 DPS (+4.5%), opt-combat-daggers-raid-raid-dps 607 -> 631 DPS (+3.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-08, 13 changes to the base rotation; third-seed check: combat-daggers-raid 615 -> 675 DPS (+9.7%), sim preset: Asn Muti 804 -> 809 DPS (+0.6%)):
   1. insert at the top: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.9%, pass 1)
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
   3. spell probe: insert before the filler: cast Mutilate (+9.9%, pass 4)
@@ -94,6 +93,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
   7. insert at the top: if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote (+0.3%, pass 8)
   8. rotation replaced by the official simulator's default.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+0.7%, pass 9)
   9. threshold 3 -> 1: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and (not talentIsKnown or time left on Rupture ≥ 4 or variableRef or variableRef) and not variableRef: cast Eviscerate (rank 8) (+0.3%, pass 10)
+  10. insert before the filler: cast Backstab (+1.5%, pass 11)
+  11. drop: if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike (+3.1%, pass 11)
+  12. threshold 4 -> 3: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.3%, pass 11)
+  13. threshold 3 -> 1: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 3 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.2%, pass 11)
 
 Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
 
@@ -120,11 +123,11 @@ Damage by ability:
 
 | Ability | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 47% |
-| Sinister Strike | 19% |
-| Eviscerate | 15% |
+| Auto Attack | 48% |
+| Sinister Strike | 18% |
+| Eviscerate | 14% |
 | spell 25349 | 9% |
-| spell 11337 | 5% |
+| spell 11337 | 6% |
 | Goblin Sapper Charge | 2% |
 | Garrote | 2% |
 | Shank | 1% |
@@ -133,6 +136,7 @@ Damage by ability:
 
 - Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 17/32/2 -> 21/30/0; Murder 2 gone; Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Lethality (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Flawless Execution (tier gating for Adrenaline Rush); +1 Deflection (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Adrenaline Rush (over 51) (refill: the combat-daggers-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Adrenaline Rush; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

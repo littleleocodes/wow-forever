@@ -85,12 +85,12 @@
     },
     {
       "id": "ret-raid-dps",
-      "name": "Retribution — Seal of Command / Twist of Light (simulator winner adopted 2026-09-27)",
+      "name": "Retribution — Seal of Command (simulator winner adopted 2026-09-27)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "based_on": "ret-raid-dps",
-      "summary": "Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the community simulator (+2.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Seal of Command, Conviction, Vengeance (now a stacking buff), Two-Handed Weapon Specialization and Repentance survive; Sanctity Aura, Improved Blessing of Might and Improved Seal of the Crusader are gone. New: Sacred Arbiter (Holy Strike refreshes Judgements), Crusade, Champion of the Light (Intellect to spell damage), Instrument of Law and the Twist of Light capstone (seal twisting echoes). Improved Seals and Divine Strength from Holy, Precision (hit) from Protection.",
+      "summary": "Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the community simulator (+2.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. On today's trees (the 2026-10-31 repair for client 70707) it takes Seal of Command, Sacred Arbiter (Holy Strike refreshes Judgements), Champion of the Light (Intellect to spell damage), Conviction, Vengeance (a stacking buff), Two-Handed Weapon Specialization, Vindication, Improved Seals, Divine Strength and Precision (hit).",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -120,7 +120,6 @@
         ]
       },
       "core": [
-        {"talent": "Twist of Light", "why": "New capstone: swapping seals grants an Echo that applies the replaced seal on the next hit — seal twisting. Raid sim (2026-09-27): removing it costs +13% DPS."},
         {"talent": "Champion of the Light", "why": "New: spell damage from Intellect (est. 33%) — Judgements, Consecration, Exorcism scale. Raid sim (2026-09-27): removing it costs +12% DPS."},
         {"talent": "Seal of Command", "why": "Still the damage engine: 70% weapon damage Holy procs. Raid sim (2026-09-27): removing it costs +11% DPS."},
         {"talent": "Sanctified Judgement", "why": "Mana on Judgements; prerequisite for Vengeance. Raid sim (2026-09-27): removing it costs +8% DPS."},
@@ -143,18 +142,18 @@
           "why": "Measures +0.4% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-27: cand-ret-dps-r1 beat the previous draft by +2.9% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Seal of Command auto-attacks, Judgement on cooldown, Holy Strike (refreshes Judgements), Consecration/Exorcism (Holy Conduit) as mana allows, seal twists for Echoes.", "Consecration is baseline in Forever.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).", "Companion build `ret-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 748 DPS against this build's 729 (+2.7%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (307 vs 298).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 17/0/34 -> 17/6/28; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Deflection (tier gating for Champion of the Light); refill +2 Holy Conduit, +2 Purifying Power, +2 Divine Precision, +5 Redoubt, +1 Precision (refill: the ret-dps model, raid-dps)."],
-      "open_questions": ["How Twist of Light Echoes interact with Seal of Command procs — the core of a Forever Ret rotation.", "Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.", "Vengeance stacking uptime with 5-10% crit."],
+      "notes": ["Adopted from the community simulator on 2026-09-27: cand-ret-dps-r1 beat the previous draft by +2.9% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Seal of Command auto-attacks, Judgement on cooldown, Holy Strike (refreshes Judgements), Consecration/Exorcism (Holy Conduit) as mana allows, seal twists for Echoes.", "Consecration is baseline in Forever.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).", "Companion build `ret-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 748 DPS against this build's 729 (+2.7%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (307 vs 298).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 17/0/34 -> 17/6/28; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Deflection (tier gating for Champion of the Light); refill +2 Holy Conduit, +2 Purifying Power, +2 Divine Precision, +5 Redoubt, +1 Precision (refill: the ret-dps model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Twist of Light; a tree change or a repair took them out)."],
+      "open_questions": ["How Unsealed Wrath's stored seal copies (Twist of Light until build 70753) interact with Seal of Command procs.", "Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.", "Vengeance stacking uptime with 5-10% crit."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
       "id": "ret-full-buffs-raid",
-      "name": "Retribution — Seal of Command / Twist of Light (full raid buffs, 10/8/33)",
+      "name": "Retribution — Seal of Command (full raid buffs)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "based_on": "ret-raid-dps",
-      "summary": "The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-dps` until the training-dummy adoption of 2026-09-27, restored as its companion. In the community simulator's raid setting (full buffs, ElliotWood/Forever 40be98e, 3000 iterations) it does 748 DPS against `ret-raid-dps`'s 729 (+2.7%); on the training dummy, where our raid drafts are ranked (your own buffs only), it does 298 against 307 (-2.8%). Simulator numbers, not measurements. Seal of Command, Conviction, Vengeance (now a stacking buff), Two-Handed Weapon Specialization and Repentance survive; Sanctity Aura, Improved Blessing of Might and Improved Seal of the Crusader are gone. New: Sacred Arbiter (Holy Strike refreshes Judgements), Crusade, Champion of the Light (Intellect to spell damage), Instrument of Law and the Twist of Light capstone (seal twisting echoes). Improved Seals and Divine Strength from Holy, Precision (hit) from Protection.",
+      "summary": "The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-dps` until the training-dummy adoption of 2026-09-27, restored as its companion. In the community simulator's raid setting (full buffs, ElliotWood/Forever 40be98e, 3000 iterations) it does 748 DPS against `ret-raid-dps`'s 729 (+2.7%); on the training dummy, where our raid drafts are ranked (your own buffs only), it does 298 against 307 (-2.8%). Simulator numbers, not measurements. On today's trees (the 2026-10-31 repair for client 70707) it takes Seal of Command, Sacred Arbiter (Holy Strike refreshes Judgements), Champion of the Light (Intellect to spell damage), Conviction, Vengeance (a stacking buff), Two-Handed Weapon Specialization, Vindication, Improved Seals, Divine Strength and Precision (hit).",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -182,7 +181,6 @@
       },
       "core": [
         {"talent": "Seal of Command", "why": "Still the damage engine: 70% weapon damage Holy procs."},
-        {"talent": "Twist of Light", "why": "New capstone: swapping seals grants an Echo that applies the replaced seal on the next hit — seal twisting."},
         {"talent": "Improved Seals", "why": "New: +5%/rank Seal and Judgement damage (est. 15%)."},
         {"talent": "Conviction", "why": "+5% melee crit."},
         {"talent": "Vengeance", "why": "Reworked: after a non-periodic crit, +1%/rank Physical and Holy damage for 30 s, stacking 3 times (+9% at 3/3, 70291 tooltip); requires Sanctified Judgement 3."},
@@ -191,8 +189,7 @@
         {"talent": "Champion of the Light", "why": "New: spell damage from Intellect (est. 33%) — Judgements, Consecration, Exorcism scale."},
         {"talent": "Sacred Arbiter", "why": "New 16-point talent: Holy Strike +10% and refreshes Judgements — no more re-judging."},
         {"talent": "Two-Handed Weapon Specialization", "why": "+3% (est.) two-hander damage."},
-        {"talent": "Sanctified Judgement", "why": "Mana on Judgements; prerequisite for Vengeance."},
-        {"talent": "Instrument of Law", "why": "Faster Hammer of Wrath and -10% threat."}
+        {"talent": "Sanctified Judgement", "why": "Mana on Judgements; prerequisite for Vengeance."}
       ],
       "flex": [
         {
@@ -208,8 +205,8 @@
           "why": "Mana vs. threat."
         }
       ],
-      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `ret-raid-dps` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Rotation hypothesis: Seal of Command auto-attacks, Judgement on cooldown, Holy Strike (refreshes Judgements), Consecration/Exorcism (Holy Conduit) as mana allows, seal twists for Echoes.", "Consecration is baseline in Forever.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/15/28; Divine Intellect 2 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); +1 Vindication (tier gating for Champion of the Light); +1 Deflection (tier gating for Champion of the Light) (refill: the ret-dps model, raid-dps)."],
-      "open_questions": ["How Twist of Light Echoes interact with Seal of Command procs — the core of a Forever Ret rotation.", "Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.", "Vengeance stacking uptime with 5-10% crit."],
+      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `ret-raid-dps` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Rotation hypothesis: Seal of Command auto-attacks, Judgement on cooldown, Holy Strike (refreshes Judgements), Consecration/Exorcism (Holy Conduit) as mana allows, seal twists for Echoes.", "Consecration is baseline in Forever.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/15/28; Divine Intellect 2 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); +1 Vindication (tier gating for Champion of the Light); +1 Deflection (tier gating for Champion of the Light) (refill: the ret-dps model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Twist of Light, Instrument of Law; a tree change or a repair took them out)."],
+      "open_questions": ["How Unsealed Wrath's stored seal copies (Twist of Light until build 70753) interact with Seal of Command procs.", "Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.", "Vengeance stacking uptime with 5-10% crit."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
@@ -249,10 +246,8 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Raid sim (2026-09-26): removing it costs +8% tank value. Raid sim (2026-09-28): removing it costs +7% tank value."},
         {"talent": "Deflection", "why": "Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +4% tank value."},
         {"talent": "Improved Righteous Fury", "why": "Reworked: -2%/rank damage taken while Righteous Fury is up (est. 6%). Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value."},
-        {"talent": "Vengeance", "why": "Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +3% tank value."},
         {"talent": "Vindication", "why": "Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value."},
         {"talent": "Templar's Bulwark", "why": "Raid sim (2026-09-28): removing it costs +3% tank value."},
         {"talent": "Anticipation", "why": "Raid sim (2026-09-28): removing it costs +2% tank value."},
@@ -296,7 +291,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-prot-tank-raid-tank` beat the previous draft by +2.9% tank value; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: cand-prot-tank-r1 beat the previous draft by +9.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Seal of Fury (a new baseline tank seal with an absorb shield) replaces Blessing of Sanctuary's role.", "Consecration is baseline; AoE threat no longer needs Holy points.", "Build 1.60.1.70009 removed Improved Holy Strike (Holy Strike's cooldown is 10 sec baseline now): the 2 points go to Divine Strength.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Benediction -> Improved Judgement (+1.2% DPS); Benediction -> Improved Judgement (+1.0% DPS); Benediction -> Eye for an Eye (+0.3% DPS). Net +2.42% on a third seed.", "2026-10-22 (signature-spell rule, user 2026-10-22: a Protection paladin tanks with Holy Shield): 0/23/28 -> 0/31/20, the nearest legal build with Holy Shield (needs 30 Protection points): Vindication 1, Sanctified Judgement 1, Vengeance 3, Champion of the Light 3 out; Toughness 5, Guardian's Favor 1, Iron Creed 1, Holy Shield 1 in; tank value x1.0437 against the old draft on the official simulator 30f67f5.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/31/20 -> 0/33/18; Improved Seal of Fury 1 gone; One-Handed Weapon Specialization 3 gone; Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Sanctified Judgement (tier gating for Eye for an Eye); refill +1 Shield Specialization, +2 Iron Creed, +1 Vindication, +1 Shieldsworn, +1 Improved Hammer of Justice (refill: the prot-tank model, raid-tank)."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-prot-tank-raid-tank` beat the previous draft by +2.9% tank value; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: cand-prot-tank-r1 beat the previous draft by +9.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Seal of Fury (a new baseline tank seal with an absorb shield) replaces Blessing of Sanctuary's role.", "Consecration is baseline; AoE threat no longer needs Holy points.", "Build 1.60.1.70009 removed Improved Holy Strike (Holy Strike's cooldown is 10 sec baseline now): the 2 points go to Divine Strength.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Benediction -> Improved Judgement (+1.2% DPS); Benediction -> Improved Judgement (+1.0% DPS); Benediction -> Eye for an Eye (+0.3% DPS). Net +2.42% on a third seed.", "2026-10-22 (signature-spell rule, user 2026-10-22: a Protection paladin tanks with Holy Shield): 0/23/28 -> 0/31/20, the nearest legal build with Holy Shield (needs 30 Protection points): Vindication 1, Sanctified Judgement 1, Vengeance 3, Champion of the Light 3 out; Toughness 5, Guardian's Favor 1, Iron Creed 1, Holy Shield 1 in; tank value x1.0437 against the old draft on the official simulator 30f67f5.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/31/20 -> 0/33/18; Improved Seal of Fury 1 gone; One-Handed Weapon Specialization 3 gone; Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Sanctified Judgement (tier gating for Eye for an Eye); refill +1 Shield Specialization, +2 Iron Creed, +1 Vindication, +1 Shieldsworn, +1 Improved Hammer of Justice (refill: the prot-tank model, raid-tank).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Champion of the Light, Vengeance; a tree change or a repair took them out)."],
       "open_questions": ["Does Forever give paladins a taunt? (Classic's lack of one kept them out of raid tanking.)", "Seal of Fury and Holy Strike numbers — the entire threat model is new.", "Reckoning's reworked proc (8% on block, 20% on being crit) vs. Iron Creed for threat."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
@@ -340,7 +335,6 @@
         {"talent": "Holy Shock", "why": "Instant Holy burst/heal."},
         {"talent": "Holy Power", "why": "+15% Holy Shock crit (est.)."},
         {"talent": "Divine Favor", "why": "Guaranteed crit Holy Shock."},
-        {"talent": "Voice of Truth", "why": "New: 6s immunity to silence/interrupts."},
         {"talent": "Light's Vigil", "why": "Cooldown-free Holy Shock on a marked target."},
         {"talent": "Illumination", "why": "Mana on crits."},
         {"talent": "Unyielding Faith", "why": "Shorter fears/disorients."},
@@ -362,7 +356,7 @@
           "why": "Damage vs. reflect."
         }
       ],
-      "notes": ["Divine Precision (Holy hit, requires Holy Shock) may be worth 2-3 points if Holy Shock misses are common in PvP.", "Build 1.60.1.70009 removed Crusade: Sanctified Judgement 3 and Vindication 2 instead.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/0/20 -> 31/0/20; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Conviction 5 -> 3 (rank cap); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Divine Precision (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); refill +2 Unyielding Faith (refill: the holy-heal model, pvp)."],
+      "notes": ["Divine Precision (Holy hit, requires Holy Shock) may be worth 2-3 points if Holy Shock misses are common in PvP.", "Build 1.60.1.70009 removed Crusade: Sanctified Judgement 3 and Vindication 2 instead.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/0/20 -> 31/0/20; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Conviction 5 -> 3 (rank cap); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Divine Precision (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Shock); +1 Purifying Power (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Divine Strength (tier gating for Holy Power); refill +2 Unyielding Faith (refill: the holy-heal model, pvp).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Voice of Truth; a tree change or a repair took them out)."],
       "open_questions": ["Holy Shock damage at 60 (demo: 129-139 at level 38)."],
       "sources": ["https://warcraftforever.games/talents/paladin"],
       "spec": "Hybrid Holy/Retribution"
@@ -403,12 +397,10 @@
         ]
       },
       "core": [
-        {"talent": "Holy Conduit", "why": "Fight lab (2026-09-26): removing it costs +8% time per kill at 60, +9% at 30."},
         {"talent": "Sanctified Judgement", "why": "Mana back on Judgements (60% of the seal's cost at 3/3, 70291 tooltip); Vengeance prerequisite. Fight lab (2026-09-26): removing it costs +6% time per kill at 60, +12% at 30."},
         {"talent": "Improved Seals", "why": "New Holy tier-2 talent: +5%/rank (est. 15%) Seal and Judgement damage — the biggest multiplier available in the 20s, which is why Holy is dipped early. Fight lab (2026-09-26): removing it costs +4% time per kill at 60."},
         {"talent": "Conviction", "why": "+5% melee crit. Fight lab (2026-09-26): removing it costs +3% time per kill at 60, +3% at 30."},
         {"talent": "Champion of the Light", "why": "Fight lab (2026-09-26): removing it costs +3% time per kill at 60."},
-        {"talent": "Instrument of Law", "why": "Fight lab (2026-09-26): removing it costs +2% time per kill at 60."},
         {"talent": "Vindication", "why": "Fight lab (2026-09-26): removing it costs +2% time per kill at 60, -0% at 30."},
         {"talent": "Sacred Arbiter", "why": "16-pt: Holy Strike +10% and refreshes Judgements — assumes Holy Strike is a baseline ability by 34. Fight lab (2026-09-26): removing it costs +2% time per kill at 60, +2% at 30."},
         {"talent": "Pursuit of Justice", "why": "+15% run and mounted speed: less time between pulls (the fight lab uses a fixed 6 s travel, so it does not count this)."}
@@ -439,7 +431,7 @@
           "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-ret-r5 beat the previous draft by +5.1% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: Seal of Command -> Judgement on cooldown -> Holy Strike (refreshes the Judgement from 34) -> Consecration (baseline) on 2+ mobs; heal between pulls.", "Consecration and Blessing of Kings are baseline in Forever, so no points are spent on them.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Divine Intellect 3, Voice of Truth 1, Divine Favor 1, Holy Shock 1 -> Vindication 2, Vengeance 2, Pursuit of Justice 2. The melee leveling loop never casts Holy Shock or Divine Favor, and Voice of Truth and the extra Divine Intellect ranks only opened their tier (fight lab 0.0% each). Vindication and Vengeance finish their ranks, and Pursuit of Justice adds 15% run speed between pulls, which the fight lab's fixed travel time does not count. Fight lab race (1500 fights per level): equal at 20-50, 0.4% less time per kill at 60.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 12/9/30; Divine Intellect 2 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +1 Sacred Duty; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.", "Fight lab (leveling/fightlab/ret-dps.md, 2026-11-07, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 20/22/27/29/33 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-ret-dps-leveling-st is +0% at 60 and +0% at 30 (negative = faster); race winner over the leveling: leveling-retribution; top talents at 60: Sanctified Judgement +9%, Conviction +7%, Vengeance +4%, Two-Handed Weapon Specialization +4%; about zero: Benediction, Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark. See the Fight lab section of leveling/README.md."],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-ret-r5 beat the previous draft by +5.1% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: Seal of Command -> Judgement on cooldown -> Holy Strike (refreshes the Judgement from 34) -> Consecration (baseline) on 2+ mobs; heal between pulls.", "Consecration and Blessing of Kings are baseline in Forever, so no points are spent on them.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Divine Intellect 3, Voice of Truth 1, Divine Favor 1, Holy Shock 1 -> Vindication 2, Vengeance 2, Pursuit of Justice 2. The melee leveling loop never casts Holy Shock or Divine Favor, and Voice of Truth and the extra Divine Intellect ranks only opened their tier (fight lab 0.0% each). Vindication and Vengeance finish their ranks, and Pursuit of Justice adds 15% run speed between pulls, which the fight lab's fixed travel time does not count. Fight lab race (1500 fights per level): equal at 20-50, 0.4% less time per kill at 60.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 12/9/30; Divine Intellect 2 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +1 Sacred Duty; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.", "Fight lab (leveling/fightlab/ret-dps.md, 2026-11-07, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 20/22/27/29/33 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-ret-dps-leveling-st is +0% at 60 and +0% at 30 (negative = faster); race winner over the leveling: leveling-retribution; top talents at 60: Sanctified Judgement +9%, Conviction +7%, Vengeance +4%, Two-Handed Weapon Specialization +4%; about zero: Benediction, Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark. See the Fight lab section of leveling/README.md.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Holy Conduit, Instrument of Law; a tree change or a repair took them out)."],
       "open_questions": ["Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).", "Improved Seals rank scaling (5% read at rank 1)."],
       "sources": ["https://warcraftforever.games/talents/paladin"],
       "order": [
@@ -510,12 +502,10 @@
         {"talent": "Light's Vigil", "why": "The scorer's value in this build: +11.6% of its score (model holy-heal)."},
         {"talent": "Holy Shock", "why": "The scorer's value in this build: +9.5% of its score (model holy-heal)."},
         {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +8.8% of its score (model holy-heal)."},
-        {"talent": "Divine Favor", "why": "The scorer's value in this build: +8.2% of its score (model holy-heal)."},
-        {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.0% of its score (model holy-heal)."},
-        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.4% of its score (model holy-heal)."}
+        {"talent": "Divine Favor", "why": "The scorer's value in this build: +8.2% of its score (model holy-heal)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 3 points Anticipation -> Precision; 1 point Illumination -> Divine Precision.", "Where we disagree with the community: most Holy builds take Illumination (78% take it), Benediction (77% take it), which the model values below this build's weakest point; this build takes Deflection (17%), Improved Hammer of Justice (10%), Improved Righteous Fury (16%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/18/2 -> 31/18/2; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Divine Precision 3 -> 2 (rank cap); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Holy Shock); +1 Illumination (tier gating for Holy Power); +1 Illumination (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); -1 Precision (over 51); -1 Precision (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51) (refill: the holy-heal model, pvp)."],
+      "notes": ["Community tie-break moves: 3 points Anticipation -> Precision; 1 point Illumination -> Divine Precision.", "Where we disagree with the community: most Holy builds take Illumination (78% take it), Benediction (77% take it), which the model values below this build's weakest point; this build takes Deflection (17%), Improved Hammer of Justice (10%), Improved Righteous Fury (16%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/18/2 -> 31/18/2; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Divine Precision 3 -> 2 (rank cap); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Holy Shock); +1 Illumination (tier gating for Holy Power); +1 Illumination (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); -1 Precision (over 51); -1 Precision (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51) (refill: the holy-heal model, pvp).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Unyielding Faith, Voice of Truth; a tree change or a repair took them out)."],
       "open_questions": ["A derived Holy PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
     },
@@ -615,12 +605,11 @@
         {"talent": "Sanctified Judgement", "why": "The scorer's value in this build: +9.4% of its score (model ret-dps)."},
         {"talent": "Seal of Command", "why": "The scorer's value in this build: +9.0% of its score (model ret-dps)."},
         {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.1% of its score (model ret-dps)."},
-        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."},
         {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."},
         {"talent": "Repentance", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 2 points Deflection -> Benediction; 1 point Conviction -> Vengeance.", "Where we disagree with the community: most Retribution builds take none, which the model values below this build's weakest point; this build takes Deflection (20%), Infusion of Light (15%), which few Retribution builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 22/0/29; Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Instrument of Law 2 gone; +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Holy Conduit (tier gating for Holy Shock); +1 Unyielding Faith (tier gating for Champion of the Light); +1 Unyielding Faith (tier gating for Champion of the Light); refill +1 Vengeance, +1 Holy Conduit (refill: the ret-dps model, pvp)."],
+      "notes": ["Community tie-break moves: 2 points Deflection -> Benediction; 1 point Conviction -> Vengeance.", "Where we disagree with the community: most Retribution builds take none, which the model values below this build's weakest point; this build takes Deflection (20%), Infusion of Light (15%), which few Retribution builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 22/0/29; Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Instrument of Law 2 gone; +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Holy Conduit (tier gating for Holy Shock); +1 Unyielding Faith (tier gating for Champion of the Light); +1 Unyielding Faith (tier gating for Champion of the Light); refill +1 Vengeance, +1 Holy Conduit (refill: the ret-dps model, pvp).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Voice of Truth; a tree change or a repair took them out)."],
       "open_questions": ["A derived Retribution PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
     },
@@ -707,11 +696,10 @@
         {"talent": "Vengeance", "why": "Removing it costs 2.3 points of score in this model."},
         {"talent": "Pursuit of Justice", "why": "Removing it costs 2.3 points of score in this model."},
         {"talent": "Sanctified Judgement", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Instrument of Law", "why": "Removing it costs 1.8 points of score in this model."},
         {"talent": "Two-Handed Weapon Specialization", "why": "Removing it costs 1.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-st.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 10/11/30; Divine Intellect 5 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +2 Sacred Duty, +1 Templar's Bulwark; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s."],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-st.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 10/11/30; Divine Intellect 5 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +2 Sacred Duty, +1 Templar's Bulwark; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"],
       "order": [
@@ -782,11 +770,10 @@
         {"talent": "Conviction", "why": "Removing it costs 2.4 points of score in this model."},
         {"talent": "Precision", "why": "Removing it costs 2.4 points of score in this model."},
         {"talent": "Pursuit of Justice", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Instrument of Law", "why": "Removing it costs 1.8 points of score in this model."}
+        {"talent": "Vengeance", "why": "Removing it costs 2.3 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-solo-60.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 8/16/27 -> 8/19/24; Improved Seal of Fury 1 gone; Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Templar's Bulwark (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); refill +1 Two-Handed Weapon Specialization, +1 Improved Hammer of Justice; order dropped (order_repair.py) (refill: the ret-dps model, solo-60).", "2026-11-07 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (ret-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here."],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-solo-60.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 8/16/27 -> 8/19/24; Improved Seal of Fury 1 gone; Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Templar's Bulwark (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); +1 Improved Hammer of Justice (tier gating for Anticipation); refill +1 Two-Handed Weapon Specialization, +1 Improved Hammer of Justice; order dropped (order_repair.py) (refill: the ret-dps model, solo-60).", "2026-11-07 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (ret-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"],
       "order": [
@@ -904,11 +891,10 @@
         {"talent": "Sanctified Judgement", "why": "Removing it costs 2.8 points of score in this model."},
         {"talent": "Improved Seals", "why": "Removing it costs 2.5 points of score in this model."},
         {"talent": "Precision", "why": "Removing it costs 2.5 points of score in this model."},
-        {"talent": "Instrument of Law", "why": "Removing it costs 2.2 points of score in this model."},
         {"talent": "Divine Strength", "why": "Removing it costs 1.7 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/14/29; Divine Intellect 2 gone (moved to Protection); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); -1 Toughness (over 51); order dropped (order_repair.py) (refill: the ret-dps model, leveling-aoe).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs)."],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/14/29; Divine Intellect 2 gone (moved to Protection); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); -1 Toughness (over 51); order dropped (order_repair.py) (refill: the ret-dps model, leveling-aoe).", "2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"],
       "order": [
@@ -1078,12 +1064,11 @@
         {"talent": "Deflection", "why": "Removing it costs 5.5 points of score in this model."},
         {"talent": "Improved Righteous Fury", "why": "Removing it costs 5.0 points of score in this model."},
         {"talent": "Shield Specialization", "why": "Removing it costs 4.1 points of score in this model."},
-        {"talent": "One-Handed Weapon Specialization", "why": "Removing it costs 4.0 points of score in this model."},
         {"talent": "Conviction", "why": "Removing it costs 3.0 points of score in this model."},
         {"talent": "Templar's Bulwark", "why": "Removing it costs 3.0 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/35/16 -> 1/34/16; Improved Seal of Fury 1 gone; Shield Specialization 3 -> 2 (rank cap); One-Handed Weapon Specialization 3 gone; Iron Creed 5 -> 3 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Divine Intellect (tier gating for Shield Specialization); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Unyielding Faith (tier gating for Sacred Arbiter); refill +1 Shieldsworn, +3 Improved Hammer of Justice, +1 Divine Strength (refill: the prot-tank model, raid-tank)."],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 0/35/16 -> 1/34/16; Improved Seal of Fury 1 gone; Shield Specialization 3 -> 2 (rank cap); One-Handed Weapon Specialization 3 gone; Iron Creed 5 -> 3 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); +1 Divine Intellect (tier gating for Shield Specialization); +1 Divine Intellect (tier gating for Shield Specialization); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Vindication (tier gating for Sacred Arbiter); +1 Unyielding Faith (tier gating for Sacred Arbiter); refill +1 Shieldsworn, +3 Improved Hammer of Justice, +1 Divine Strength (refill: the prot-tank model, raid-tank).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (One-Handed Weapon Specialization; a tree change or a repair took them out)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
@@ -1100,18 +1085,17 @@
       "allocation": {
         "Holy": [
           ["Spiritual Focus", 5],
-          ["Divine Strength", 5],
+          ["Divine Strength", 4],
           ["Healing Light", 3],
           ["Reverence", 2],
+          ["Purifying Power", 2],
           ["Divine Favor", 1],
           ["Illumination", 5],
-          ["Holy Conduit", 1],
           ["Infusion of Light", 1],
           ["Oath of Light", 1],
-          ["Consecrated Ground", 1],
           ["Holy Shock", 1],
           ["Boundless Light", 1],
-          ["Holy Power", 4],
+          ["Holy Power", 5],
           ["Light's Vigil", 1]
         ],
         "Protection": [
@@ -1120,16 +1104,14 @@
         "Retribution": [
           ["Deflection", 2],
           ["Benediction", 5],
-          ["Improved Judgement", 1],
           ["Conviction", 3],
-          ["Sanctified Judgement", 1],
-          ["Unyielding Faith", 1],
-          ["Pursuit of Justice", 1]
+          ["Unyielding Faith", 2],
+          ["Pursuit of Justice", 2]
         ]
       },
       "core": [],
       "flex": [],
-      "notes": ["+24.7% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.629 ± 0.002; holy-raid-healer 0.505, opt-holy-heal-raid-heal 0.495.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 595 one-move and 7,633 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "notes": ["+24.7% capacity over the hand draft holy-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.629 ± 0.002; holy-raid-healer 0.505, opt-holy-heal-raid-heal 0.495.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 595 one-move and 7,633 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement.", "2026-11-09 page audit: Consecrated Ground 1 -> Holy Power 5/5, Improved Judgement 1 and Sanctified Judgement 1 -> Unyielding Faith 2/2 and Pursuit of Justice 2/2. The three points did nothing for a healer that never casts Consecration or Judgement. Healer lab, 200 runs: capacity 0.6237 -> 0.6242 in the five-minute fight, 0.4823 -> 0.4851 in the ten-minute fight (standard error 0.003 and 0.002). The other healing ranks left (Infusion of Light 2, Boundless Light 2) measured 1.1% lower. Fear and movement are not in the lab.", "2026-11-09 page audit: Holy Conduit 1 -> Purifying Power 1 (Cleanse and Purify 10% cheaper; the lab has no debuffs). With Consecrated Ground gone the tree had a point to spare before Light's Vigil, so Holy Conduit opened nothing. Healer lab, 200 runs: 0.6242 and 0.4851 either way; Infusion of Light 2/2 measured 0.6184 and 0.4745, Boundless Light 2/2 0.6242 and 0.4834.", "2026-11-09 page audit: Divine Strength 5 -> 4, Purifying Power 1 -> 2 (Cleanse and Purify 20% cheaper). Holy held 31 points before Light's Vigil, which needs 30, so the fifth Strength rank opened nothing and Strength does nothing for a healer. Healer lab, 60 runs: bit-identical (0.6357, 0.4926 in the ten-minute fight)."],
       "open_questions": ["A machine-searched Holy build: check it against the community's healing builds at launch."],
       "sources": [],
       "replaces": "holy-raid-healer"
@@ -1288,9 +1270,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Holy/Protection",
-      "generated": "2026-11-07",
+      "generated": "2026-11-09",
       "derived": "leveling",
-      "summary": "The Holy/Protection hybrid (a Holy/Protection hybrid) leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +4.4% faster per kill than protection-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Holy/Protection hybrid (a Holy/Protection hybrid) leveling build the open leveling search found on 2026-11-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.0% faster per kill than protection-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -1355,9 +1337,9 @@
         {"talent": "Improved Seals", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.70; protection-leveling 32.04. The search simulated 33,174 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.70; protection-leveling 31.30. The search simulated 32,236 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Holy/Protection hybrid leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/050240002-353001021113014-05233-7"]
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/050240002-353001021113014-05233-12"]
     },
     {
       "id": "prot-ret-open-leveling",
@@ -1366,80 +1348,77 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Protection/Retribution",
-      "generated": "2026-11-07",
+      "generated": "2026-11-09",
       "derived": "leveling",
-      "summary": "The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.4% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.",
+      "summary": "The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.8% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
           ["Reverence", 2],
-          ["Improved Seals", 5]
+          ["Improved Seals", 4]
         ],
         "Protection": [
           ["Divine Intellect", 5],
           ["Redoubt", 2],
           ["Precision", 3],
-          ["Sacred Duty", 1],
           ["Templar's Bulwark", 1],
           ["Improved Hammer of Justice", 1],
-          ["Toughness", 2],
+          ["Toughness", 3],
           ["Swift Judgement", 1]
         ],
         "Retribution": [
-          ["Deflection", 2],
-          ["Benediction", 3],
-          ["Improved Judgement", 2],
+          ["Deflection", 5],
+          ["Benediction", 1],
+          ["Improved Judgement", 1],
           ["Conviction", 3],
           ["Sanctified Judgement", 3],
-          ["Vindication", 1],
+          ["Vindication", 3],
           ["Seal of Command", 1],
-          ["Eye for an Eye", 1],
           ["Sacred Arbiter", 1],
           ["Two-Handed Weapon Specialization", 3],
           ["Vengeance", 3]
         ]
       },
       "order": [
-        {"levels": "10-12", "tree": "Retribution", "talent": "Benediction", "points": 3},
-        {"levels": "13-14", "tree": "Retribution", "talent": "Deflection", "points": 2},
+        {"levels": "10", "tree": "Retribution", "talent": "Benediction", "points": 1},
+        {"levels": "11-14", "tree": "Retribution", "talent": "Deflection", "points": 4},
         {"levels": "15-17", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
         {"levels": "18-19", "tree": "Retribution", "talent": "Conviction", "points": 2},
         {"levels": "20", "tree": "Retribution", "talent": "Seal of Command", "points": 1},
         {"levels": "21", "tree": "Retribution", "talent": "Conviction", "points": 1},
-        {"levels": "22-23", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
-        {"levels": "24", "tree": "Retribution", "talent": "Vindication", "points": 1},
+        {"levels": "22", "tree": "Retribution", "talent": "Improved Judgement", "points": 1},
+        {"levels": "23-24", "tree": "Retribution", "talent": "Vindication", "points": 2},
         {"levels": "25", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
         {"levels": "26-28", "tree": "Retribution", "talent": "Two-Handed Weapon Specialization", "points": 3},
-        {"levels": "29", "tree": "Retribution", "talent": "Eye for an Eye", "points": 1},
+        {"levels": "29", "tree": "Retribution", "talent": "Vindication", "points": 1},
         {"levels": "30-32", "tree": "Retribution", "talent": "Vengeance", "points": 3},
-        {"levels": "33-37", "tree": "Holy", "talent": "Divine Strength", "points": 5},
-        {"levels": "38-40", "tree": "Holy", "talent": "Improved Seals", "points": 3},
-        {"levels": "41-45", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
-        {"levels": "46-48", "tree": "Protection", "talent": "Precision", "points": 3},
-        {"levels": "49", "tree": "Protection", "talent": "Sacred Duty", "points": 1},
-        {"levels": "50", "tree": "Protection", "talent": "Redoubt", "points": 1},
-        {"levels": "51", "tree": "Protection", "talent": "Templar's Bulwark", "points": 1},
-        {"levels": "52", "tree": "Protection", "talent": "Improved Hammer of Justice", "points": 1},
-        {"levels": "53", "tree": "Protection", "talent": "Redoubt", "points": 1},
-        {"levels": "54-55", "tree": "Protection", "talent": "Toughness", "points": 2},
-        {"levels": "56", "tree": "Protection", "talent": "Swift Judgement", "points": 1},
-        {"levels": "57-58", "tree": "Holy", "talent": "Reverence", "points": 2},
-        {"levels": "59-60", "tree": "Holy", "talent": "Improved Seals", "points": 2}
+        {"levels": "33", "tree": "Retribution", "talent": "Deflection", "points": 1},
+        {"levels": "34-38", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "39-41", "tree": "Holy", "talent": "Improved Seals", "points": 3},
+        {"levels": "42-46", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
+        {"levels": "47-49", "tree": "Protection", "talent": "Precision", "points": 3},
+        {"levels": "50-51", "tree": "Protection", "talent": "Redoubt", "points": 2},
+        {"levels": "52", "tree": "Protection", "talent": "Templar's Bulwark", "points": 1},
+        {"levels": "53", "tree": "Protection", "talent": "Improved Hammer of Justice", "points": 1},
+        {"levels": "54-56", "tree": "Protection", "talent": "Toughness", "points": 3},
+        {"levels": "57", "tree": "Protection", "talent": "Swift Judgement", "points": 1},
+        {"levels": "58-59", "tree": "Holy", "talent": "Reverence", "points": 2},
+        {"levels": "60", "tree": "Holy", "talent": "Improved Seals", "points": 1}
       ],
       "core": [
         {"talent": "Sanctified Judgement", "why": "+3.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Conviction", "why": "+2.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Swift Judgement", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Conviction", "why": "+2.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Swift Judgement", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Vengeance", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Seals", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Seal of Command", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Two-Handed Weapon Specialization", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Improved Seals", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Precision", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Seal of Command", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.88; leveling-retribution 27.52, opt-ret-dps-leveling-st 27.52. The search simulated 40,642 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.46; leveling-retribution 27.19, opt-ret-dps-leveling-st 27.19. The search simulated 47,144 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Prot-Ret leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/05025-5230111021-232331010113003-7"]
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/05024-5230011031-511333010013003-12"]
     },
     {
       "id": "holy-leveling",
@@ -1448,25 +1427,24 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Holy",
-      "generated": "2026-11-07",
+      "generated": "2026-11-09",
       "derived": "leveling",
       "raid_path": "holy-ml-heal",
-      "summary": "Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 38 s per kill over levels 20-60, the holy-leveling rotation).",
+      "summary": "Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 39 s per kill over levels 20-60, the holy-leveling rotation).",
       "allocation": {
         "Holy": [
           ["Spiritual Focus", 5],
-          ["Divine Strength", 5],
+          ["Divine Strength", 4],
           ["Healing Light", 3],
           ["Reverence", 2],
+          ["Purifying Power", 2],
           ["Divine Favor", 1],
           ["Illumination", 5],
-          ["Holy Conduit", 1],
           ["Infusion of Light", 1],
           ["Oath of Light", 1],
-          ["Consecrated Ground", 1],
           ["Holy Shock", 1],
           ["Boundless Light", 1],
-          ["Holy Power", 4],
+          ["Holy Power", 5],
           ["Light's Vigil", 1]
         ],
         "Protection": [
@@ -1475,42 +1453,38 @@
         "Retribution": [
           ["Deflection", 2],
           ["Benediction", 5],
-          ["Improved Judgement", 1],
           ["Conviction", 3],
-          ["Sanctified Judgement", 1],
-          ["Unyielding Faith", 1],
-          ["Pursuit of Justice", 1]
+          ["Unyielding Faith", 2],
+          ["Pursuit of Justice", 2]
         ]
       },
       "order": [
-        {"levels": "10-14", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "10-13", "tree": "Holy", "talent": "Divine Strength", "points": 4},
+        {"levels": "14", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
         {"levels": "15-16", "tree": "Holy", "talent": "Reverence", "points": 2},
-        {"levels": "17-19", "tree": "Holy", "talent": "Spiritual Focus", "points": 3},
-        {"levels": "20", "tree": "Holy", "talent": "Holy Conduit", "points": 1},
-        {"levels": "21-25", "tree": "Holy", "talent": "Illumination", "points": 5},
-        {"levels": "26-27", "tree": "Holy", "talent": "Spiritual Focus", "points": 2},
+        {"levels": "17-18", "tree": "Holy", "talent": "Purifying Power", "points": 2},
+        {"levels": "19", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
+        {"levels": "20-24", "tree": "Holy", "talent": "Illumination", "points": 5},
+        {"levels": "25-27", "tree": "Holy", "talent": "Spiritual Focus", "points": 3},
         {"levels": "28-29", "tree": "Holy", "talent": "Healing Light", "points": 2},
         {"levels": "30", "tree": "Holy", "talent": "Holy Shock", "points": 1},
         {"levels": "31-35", "tree": "Retribution", "talent": "Benediction", "points": 5},
-        {"levels": "36", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 1},
-        {"levels": "37-39", "tree": "Retribution", "talent": "Conviction", "points": 3},
-        {"levels": "40", "tree": "Retribution", "talent": "Improved Judgement", "points": 1},
-        {"levels": "41", "tree": "Retribution", "talent": "Pursuit of Justice", "points": 1},
-        {"levels": "42-46", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
-        {"levels": "47-48", "tree": "Retribution", "talent": "Deflection", "points": 2},
-        {"levels": "49", "tree": "Holy", "talent": "Healing Light", "points": 1},
-        {"levels": "50", "tree": "Holy", "talent": "Divine Favor", "points": 1},
-        {"levels": "51", "tree": "Holy", "talent": "Infusion of Light", "points": 1},
-        {"levels": "52", "tree": "Holy", "talent": "Oath of Light", "points": 1},
-        {"levels": "53-56", "tree": "Holy", "talent": "Holy Power", "points": 4},
-        {"levels": "57", "tree": "Retribution", "talent": "Unyielding Faith", "points": 1},
-        {"levels": "58", "tree": "Holy", "talent": "Consecrated Ground", "points": 1},
+        {"levels": "36-38", "tree": "Retribution", "talent": "Conviction", "points": 3},
+        {"levels": "39-40", "tree": "Retribution", "talent": "Deflection", "points": 2},
+        {"levels": "41-42", "tree": "Retribution", "talent": "Pursuit of Justice", "points": 2},
+        {"levels": "43-47", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
+        {"levels": "48-49", "tree": "Retribution", "talent": "Unyielding Faith", "points": 2},
+        {"levels": "50", "tree": "Holy", "talent": "Healing Light", "points": 1},
+        {"levels": "51", "tree": "Holy", "talent": "Divine Favor", "points": 1},
+        {"levels": "52", "tree": "Holy", "talent": "Infusion of Light", "points": 1},
+        {"levels": "53", "tree": "Holy", "talent": "Oath of Light", "points": 1},
+        {"levels": "54-58", "tree": "Holy", "talent": "Holy Power", "points": 5},
         {"levels": "59", "tree": "Holy", "talent": "Boundless Light", "points": 1},
         {"levels": "60", "tree": "Holy", "talent": "Light's Vigil", "points": 1}
       ],
       "core": [],
       "flex": [],
-      "notes": ["2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 38 s; own tree first 39 s; own tree last 38 s. First Holy point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-11-09 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 39 s; own tree first 40 s; own tree last 39 s. First Holy point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
     },
@@ -1521,7 +1495,7 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Protection",
-      "generated": "2026-11-07",
+      "generated": "2026-11-09",
       "derived": "leveling",
       "raid_path": "protection-ml-tank",
       "summary": "Level with the talents of the Protection raid build (protection-ml-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (stats model's order: 31 s per kill over levels 20-60, the prot-leveling rotation).",
@@ -1580,7 +1554,7 @@
       ],
       "core": [],
       "flex": [],
-      "notes": ["2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 31 s; own tree first 33 s; own tree last 31 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-11-09 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 31 s; own tree first 33 s; own tree last 31 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
     }

@@ -82,14 +82,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 4. **Sanctified Judgement** — Removing it costs 2.8 points of score in this model.
 5. **Improved Seals** — Removing it costs 2.5 points of score in this model.
 6. **Precision** — Removing it costs 2.5 points of score in this model.
-7. **Instrument of Law** — Removing it costs 2.2 points of score in this model.
-8. **Divine Strength** — Removing it costs 1.7 points of score in this model.
+7. **Divine Strength** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-07, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +11.9% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-09, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +12.7% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 
@@ -111,6 +110,7 @@ What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveli
 - Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/14/29; Divine Intellect 2 gone (moved to Protection); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Divine Intellect (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); -1 Toughness (over 51); order dropped (order_repair.py) (refill: the ret-dps model, leveling-aoe).
 - 2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Instrument of Law; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

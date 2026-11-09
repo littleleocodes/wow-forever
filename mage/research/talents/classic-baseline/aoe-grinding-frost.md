@@ -95,7 +95,6 @@ The community AoE-farming build (Icy Veins' 1-60 AoE grinding build): control fi
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 1 | Arcane Focus 3 | Improved Arcane Missiles 1 | Fifth Arcane tier-1 point; Icy Veins takes two Arcane Focus, any tier-1 point works. |
-| 19 | Arcane mana talents | 7/0/44 (Warcraft Tavern): Shatter and the remaining Frost talents instead of Arcane | Arcane Concentration + Arcane Meditation cut drinking; the deep-Frost variant trades that for Shatter crits during the Nova window. |
 
 ## Notes
 

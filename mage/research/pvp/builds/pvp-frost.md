@@ -68,7 +68,6 @@ Shatter (3 ranks), Ice Lance + Fingers of Frost, Frostbite, Permafrost, Improved
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 3 | Piercing Ice | Frostbite 3 | Flat damage vs. random freezes (Frostbite is stronger with Fingers of Frost/Shatter in PvP). |
 | 3 | Arcane Resilience 2 + Arcane Blast 1 | Magic Absorption, Arcane Geometry | Arcane gating filler. |
 
 ## Notes

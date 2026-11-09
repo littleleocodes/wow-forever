@@ -50,7 +50,9 @@ def load_popular(path):
 # Checked for every code of the 2026-10-17 list (and the version-6 codes of 2026-10-09 against the 70291 data): no tree has more
 # digits than talents, no digit exceeds its talent's rank cap, the per-tree points equal the site's own `pts`, and the validator passes
 # but for builds under 51 points. A code of another version is refused rather than decoded onto the wrong talents.
-CODE_VERSION = "7"
+# 2026-11-09: version 12, the version render_start_here.TF_CODE_VERSION names (the site moved 7 -> 12 between 10-17 and 11-04). All 45 codes
+# of the 2026-11-09 list decode onto our data with the site's per-tree points and no rank, tier or prerequisite error; 7 are under 51 points.
+CODE_VERSION = "12"
 
 
 def decode(cls, code, trees_data):

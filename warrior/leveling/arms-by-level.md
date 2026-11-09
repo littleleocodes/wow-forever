@@ -36,7 +36,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 1 | Lights up after a kill | — | — | — | — | **Victory Rush** | Victory Rush | Victory Rush | Victory Rush |
 | 2 | The finisher below 20% | — | — | — | — | — | **Execute** | Execute | Execute |
 | 3 | Stop a mob that runs | — | **Hamstring** from 8 | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring |
-| 4 | The long cooldown | — | — | — | — | **Retaliation** | Retaliation | Retaliation | Retaliation |
+| 4 | Battle Stance only: every melee attacker takes a counterattack for 15 seconds (once per 15 minutes); for a pull that goes wrong | — | — | — | — | **Retaliation** | Retaliation | Retaliation | Retaliation |
 | C | Spare rage once Mortal Strike has Q | — | — | — | — | — | — | — | **Heroic Strike** |
 | Middle mouse | Free | — | — | — | — | — | — | — | — |
 
@@ -128,7 +128,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Overpower** (12), Shield Bash (12), Demoralizing Shout (14), Revenge (14), Tactical Mastery (14), Mocking Blow (16), Shield Block (16), Disarm (18).
 
-**New ranks to buy:** Battle Shout at 12; Heroic Strike at 16.
+**New ranks to buy:** Battle Shout at 12; Heroic Strike at 16; Thunder Clap at 18.
 
 **Talents:** 12 Improved Rend, 13-14 Deflection, 15-16 Improved Overpower, 17-18 Improved Charge, 19 Improved Tactical Mastery.
 
@@ -171,6 +171,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Slam** (20): leave it off your bar until **Improved Slam** at 35. **Cleave** (20) is for two or more mobs.
 - **Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press.
+- **Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong: **Retaliation** counterattacks everything that hits you in melee for 15 seconds, once per 15 minutes, in **Battle Stance** only.
 
 *Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Melee 2.6, Heroic Strike 2.4, Rend 1.2, Charge 1.0, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
 
@@ -178,7 +179,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Execute** (24), Challenging Shout (26), Shield Wall (28), Berserker Rage (30), Berserker Stance (30), Intercept (30).
 
-**New ranks to buy:** Battle Shout at 32; Charge at 26; Execute at 32; Heroic Strike at 24, 32; Overpower at 28; Rend at 30.
+**New ranks to buy:** Battle Shout at 32; Charge at 26; Cleave at 30; Execute at 32; Hamstring at 32; Heroic Strike at 24, 32; Overpower at 28; Rend at 30; Thunder Clap at 28.
 
 **Talents:** 24 Improved Tactical Mastery, 25 Anger Management, 26-28 Two-Handed Weapon Specialization, 29 Impale, 30-31 Bloodthrill, 32-34 Weaponmaster.
 
@@ -195,7 +196,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 5. **Rend** once, while the mob has more than a third of its health.
 6. **Heroic Strike** with spare rage. Keep 15 back for **Overpower**.
 
-- **Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** three times as often.
+- **Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.
 - **Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**.
 
 *Fight lab, seconds per kill: 22 at level 24, 24 at level 30, 24 at level 34. Presses per kill at level 24: Melee 3.2, Heroic Strike 1.5, Rend 1.2, Charge 1.0, Execute 0.9, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
@@ -204,7 +205,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Whirlwind (36), Pummel (38).
 
-**New ranks to buy:** Slam at 38.
+**New ranks to buy:** Slam at 38; Thunder Clap at 38.
 
 **Talents:** 35-36 Improved Slam, 37-38 Weaponmaster, 39 Sweeping Strikes.
 
@@ -230,7 +231,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Recklessness (50).
 
-**New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Execute at 40, 48, 56; Heroic Strike at 40, 48, 56, 60; Mortal Strike at 48, 54, 60; Overpower at 44, 60; Rend at 40, 50, 60; Slam at 46, 54.
+**New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Cleave at 40, 50, 60; Execute at 40, 48, 56; Hamstring at 54; Heroic Strike at 40, 48, 56, 60; Mortal Strike at 48, 54, 60; Overpower at 44, 60; Rend at 40, 50, 60; Slam at 46, 54; Thunder Clap at 48, 58.
 
 **Talents:** 40 Mortal Strike, 41-45 Cruelty, 46 Impale, 47-50 Unbridled Wrath, 51 Lingering Rage, 52-56 Enrage, 57-58 Improved Execute, 59-60 Improved Bloodrage.
 
@@ -265,4 +266,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling two mobs at a time works from 39 with **Sweeping Strikes**. Before that, one at a time is faster and safer.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

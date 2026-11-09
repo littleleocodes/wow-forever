@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "updated": "2026-11-07",
+ "updated": "2026-11-09",
  "guides": [
   {
    "spec": "Arms",
@@ -76,7 +76,8 @@
      ],
      "notes": [
       "**Slam** (20): leave it off your bar until **Improved Slam** at 35. **Cleave** (20) is for two or more mobs.",
-      "**Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press."
+      "**Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press.",
+      "**Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong: **Retaliation** counterattacks everything that hits you in melee for 15 seconds, once per 15 minutes, in **Battle Stance** only."
      ]
     },
     {
@@ -92,7 +93,7 @@
       "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
      ],
      "notes": [
-      "**Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** three times as often.",
+      "**Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.",
       "**Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**."
      ]
     },
@@ -243,7 +244,7 @@
        },
        {
         "key": "4",
-        "role": "The long cooldown",
+        "role": "Battle Stance only: every melee attacker takes a counterattack for 15 seconds (once per 15 minutes); for a pull that goes wrong",
         "binds": [
          {
           "from": 20,
@@ -456,7 +457,7 @@
      ],
      "notes": [
       "**Improved Execute** (25) makes **Execute** 3 rage cheaper.",
-      "**Dual Wield Specialization** (26-32) and **Furious Precision** (27, 33-34) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press."
+      "**Dual Wield Specialization** (26, 28-29, 31-32) and **Furious Precision** (27, 33-34) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press."
      ]
     },
     {
@@ -608,7 +609,7 @@
        },
        {
         "key": "4",
-        "role": "The long cooldown",
+        "role": "Battle Stance only: every melee attacker takes a counterattack for 15 seconds (once per 15 minutes); for a pull that goes wrong",
         "binds": [
          {
           "from": 20,
@@ -728,7 +729,7 @@
   },
   {
    "spec": "Protection",
-   "intro": "What a Protection warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit; with a shield, blocks give rage too. Protection levels with a one-handed weapon and a shield. From level 10 you fight in Defensive Stance and step into Battle Stance only to Charge. It kills more slowly than Arms (the Protection leveling page has the numbers), but you almost never stop to eat, and you arrive at 60 as a tank. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Protection warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit; with a shield, blocks give rage too. Protection levels with a one-handed weapon and a shield. From level 10 you fight in Defensive Stance and step into Battle Stance only to Charge. It kills more slowly than Arms (the Protection leveling page has the numbers), but you almost never stop to eat, and you arrive at 60 as a tank in your raid talents. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -770,7 +771,7 @@
      ],
      "notes": [
       "Press **Bloodrage** after the swap to **Battle Stance**, not before: a stance change keeps none of your rage until 14, and 10 of it after. Its second 10 rage comes over 10 seconds, in **Defensive Stance** too.",
-      "**Iron Will** (10) and **Improved Bloodrage** (11-12): nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups."
+      "**Shield Specialization** (10-14): more blocks, and rage from each block. Nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups."
      ]
     },
     {
@@ -786,7 +787,7 @@
       "**Heroic Strike** once the mob is below 20% of its health."
      ],
      "notes": [
-      "**Shield Specialization** (13-14, 17-19): more blocks, and rage from each block. Nothing new to press."
+      "Nothing new from the talents: **Shield Specialization** fills its five points by 14."
      ]
     },
     {
@@ -804,7 +805,7 @@
      ],
      "notes": [
       "**Revenge** works in **Defensive Stance** only. **Demoralizing Shout** (14) is for two or more mobs.",
-      "**Anticipation** (15-16) raises your Defense: more dodges, parries and blocks, so more **Revenge**."
+      "**Anticipation** (15-19) raises your Defense: more dodges, parries and blocks, so more **Revenge**."
      ]
     },
     {
@@ -822,7 +823,7 @@
       "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
      ],
      "notes": [
-      "**Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (25-26): rage from your dodges and parries. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.",
+      "**Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (23-24): rage from your dodges and parries. **Defiance** (25-27) and **Improved Sunder Armor** (28-29, 34) are the raid tank's threat talents: nothing for a lone warrior. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.",
       "**Victory Rush** (20, key 1) lights up after a kill: open the next fight with it when you are below 90% of your health. The fight lab rarely needs it before 33 (with the shield you seldom end a fight below 90%), so the list leaves it out until then.",
       "**Retaliation** (20) needs **Battle Stance**. Skip it. For a pull that goes wrong: **Intimidating Shout** (22, F) and **Shield Wall** (28, key 4: 60% less damage for 12 seconds, a 15-minute cooldown)."
      ]
@@ -864,7 +865,7 @@
      ],
      "if_hurt": "Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.",
      "notes": [
-      "From 42 the points leave Protection: **Cruelty** (43-47) for critical strikes, **Unbridled Wrath** (48-51) for rage, **Enrage** (55-59) for damage after a mob hits you, **Improved Rend** (42, 53-54) and **Booming Voice** (52, 60) for a cheaper **Battle Shout**.",
+      "From 41 the points go to the raid build's Arms and Fury talents: **Improved Rend** (41-43), **Deflection** (44-45, 47-49), **Improved Overpower** (46), **Improved Heroic Strike** (50, 55-56), **Deep Wounds** (51-53), **Cruelty** (54, 59-60) and **Impale** (57-58). **Cruelty**, **Improved Rend**, **Impale** and **Deep Wounds** speed you up a little; **Improved Overpower** does nothing here, since this rotation never casts **Overpower**.",
       "Two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**."
      ]
     }

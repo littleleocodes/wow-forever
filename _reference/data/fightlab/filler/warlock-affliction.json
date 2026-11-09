@@ -1,0 +1,770 @@
+{
+ "class": "warlock",
+ "spec": "Affliction",
+ "build": "affliction-open-leveling",
+ "rotation": "affliction-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "steps": [
+  {
+   "weighted": 36.425,
+   "values_at_60": {
+    "Demonic Embrace": -0.052,
+    "Demonic Energies": 0.0,
+    "Demonic Sacrifice": 0.0,
+    "Fel Concentration": -0.091,
+    "Improved Drains": -0.098,
+    "Improved Sayaad": 0.0,
+    "Improved Voidwalker": -0.265,
+    "Soul Siphon": -0.786,
+    "Wrack": -3.617
+   },
+   "zero": [
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Demonic Sacrifice",
+    "Fel Concentration",
+    "Improved Drains",
+    "Improved Sayaad"
+   ]
+  },
+  {
+   "weighted": 36.399,
+   "values_at_60": {
+    "Demonic Embrace": -0.049,
+    "Demonic Energies": 0.0,
+    "Demonic Sacrifice": 0.0,
+    "Fel Concentration": -0.135,
+    "Improved Drains": -0.064,
+    "Improved Sayaad": 0.0,
+    "Improved Voidwalker": -0.251,
+    "Malevolence": -0.141,
+    "Soul Siphon": -0.821,
+    "Wrack": -3.678
+   },
+   "zero": [
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Demonic Sacrifice",
+    "Improved Drains",
+    "Improved Sayaad"
+   ]
+  },
+  {
+   "weighted": 36.381,
+   "values_at_60": {
+    "Demonic Embrace": 0.001,
+    "Demonic Energies": 0.0,
+    "Demonic Sacrifice": 0.0,
+    "Fel Concentration": -0.105,
+    "Improved Drains": -0.122,
+    "Improved Sayaad": 0.0,
+    "Improved Voidwalker": -0.327,
+    "Malevolence": -0.109,
+    "Soul Siphon": -0.822,
+    "Wrack": -4.074
+   },
+   "zero": [
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Demonic Sacrifice",
+    "Improved Sayaad"
+   ]
+  },
+  {
+   "weighted": 36.374,
+   "values_at_60": {
+    "Demonic Embrace": -0.059,
+    "Demonic Energies": 0.0,
+    "Fel Concentration": -0.113,
+    "Grim Reach": -0.046,
+    "Improved Drains": -0.107,
+    "Improved Sayaad": 0.0,
+    "Improved Voidwalker": -0.283,
+    "Malevolence": -0.182,
+    "Soul Siphon": -0.784,
+    "Wrack": -4.058
+   },
+   "zero": [
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Grim Reach",
+    "Improved Sayaad"
+   ]
+  },
+  {
+   "weighted": 36.366,
+   "values_at_60": {
+    "Demonic Aegis": -0.102,
+    "Demonic Embrace": -0.135,
+    "Demonic Energies": 0.0,
+    "Fel Concentration": -0.076,
+    "Grim Reach": -0.113,
+    "Improved Drains": -0.207,
+    "Improved Sayaad": 0.0,
+    "Improved Voidwalker": -0.317,
+    "Malevolence": -0.289,
+    "Soul Siphon": -0.862,
+    "Wrack": -4.185
+   },
+   "zero": [
+    "Demonic Aegis",
+    "Demonic Energies",
+    "Fel Concentration",
+    "Improved Sayaad"
+   ]
+  },
+  {
+   "weighted": 36.363,
+   "values_at_60": {
+    "Demonic Aegis": -0.182,
+    "Demonic Embrace": -0.151,
+    "Demonic Energies": 0.0,
+    "Fel Concentration": -0.089,
+    "Grim Reach": -0.257,
+    "Improved Drains": -0.226,
+    "Improved Shadow Bolt": -0.021,
+    "Improved Voidwalker": -0.38,
+    "Malevolence": -0.307,
+    "Soul Siphon": -0.868,
+    "Wrack": -4.167
+   },
+   "zero": [
+    "Demonic Energies",
+    "Fel Concentration",
+    "Improved Shadow Bolt"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Improved Drains",
+   "to": "Malevolence",
+   "level": 44,
+   "seed3": -0.0007,
+   "seed4": -0.0006,
+   "why": "tie-break"
+  },
+  {
+   "from": "Demonic Energies",
+   "to": "Fel Concentration",
+   "level": 56,
+   "seed3": -0.0005,
+   "seed4": -0.0008,
+   "why": "tie-break"
+  },
+  {
+   "from": "Demonic Sacrifice",
+   "to": "Grim Reach",
+   "level": 59,
+   "seed3": -0.0002,
+   "seed4": 0.0004,
+   "why": "no loss"
+  },
+  {
+   "from": "Demonic Embrace",
+   "to": "Demonic Aegis",
+   "level": 58,
+   "seed3": -0.0002,
+   "seed4": -0.0001,
+   "why": "no loss"
+  },
+  {
+   "from": "Improved Sayaad",
+   "to": "Improved Shadow Bolt",
+   "level": 60,
+   "seed3": -0.0001,
+   "seed4": 0.0,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-11",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "12-15",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "16-19",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "28",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "32-33",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Affliction",
+   "talent": "Wrack",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Affliction",
+   "talent": "Improved Drains",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "45-49",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "50",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Affliction",
+   "talent": "Fel Concentration",
+   "points": 2
+  },
+  {
+   "levels": "53-55",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Affliction",
+   "talent": "Fel Concentration",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Destruction",
+   "talent": "Improved Shadow Bolt",
+   "points": 1
+  }
+ ],
+ "start_order": [
+  {
+   "levels": "10-11",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "12-15",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "16-19",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "28",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "32-33",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Affliction",
+   "talent": "Wrack",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 1
+  },
+  {
+   "levels": "42-44",
+   "tree": "Affliction",
+   "talent": "Improved Drains",
+   "points": 3
+  },
+  {
+   "levels": "45-49",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "50",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Affliction",
+   "talent": "Fel Concentration",
+   "points": 2
+  },
+  {
+   "levels": "53-55",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Demonology",
+   "talent": "Improved Sayaad",
+   "points": 1
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     5
+    ],
+    [
+     "Grim Reach",
+     1
+    ],
+    [
+     "Improved Drains",
+     2
+    ],
+    [
+     "Improved Bane of Agony",
+     2
+    ],
+    [
+     "Fel Concentration",
+     3
+    ],
+    [
+     "Amplify Curse",
+     1
+    ],
+    [
+     "Pandemic",
+     3
+    ],
+    [
+     "Malevolence",
+     5
+    ],
+    [
+     "Siphon Life",
+     1
+    ],
+    [
+     "Soul Siphon",
+     3
+    ],
+    [
+     "Shadow Mastery",
+     5
+    ],
+    [
+     "Wrack",
+     1
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     1
+    ],
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     1
+    ],
+    [
+     "Improved Voidwalker",
+     3
+    ],
+    [
+     "Demonic Energies",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Affliction",
+    "talent": "Improved Life Tap",
+    "points": 2
+   },
+   {
+    "levels": "12-15",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 4
+   },
+   {
+    "levels": "16-19",
+    "tree": "Affliction",
+    "talent": "Improved Corruption",
+    "points": 4
+   },
+   {
+    "levels": "20",
+    "tree": "Affliction",
+    "talent": "Amplify Curse",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Affliction",
+    "talent": "Improved Bane of Agony",
+    "points": 2
+   },
+   {
+    "levels": "23",
+    "tree": "Affliction",
+    "talent": "Improved Corruption",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "25-27",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 3
+   },
+   {
+    "levels": "28",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "29",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 1
+   },
+   {
+    "levels": "30",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 1
+   },
+   {
+    "levels": "32-33",
+    "tree": "Affliction",
+    "talent": "Soul Siphon",
+    "points": 2
+   },
+   {
+    "levels": "34",
+    "tree": "Affliction",
+    "talent": "Siphon Life",
+    "points": 1
+   },
+   {
+    "levels": "35-39",
+    "tree": "Affliction",
+    "talent": "Shadow Mastery",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Affliction",
+    "talent": "Wrack",
+    "points": 1
+   },
+   {
+    "levels": "41",
+    "tree": "Affliction",
+    "talent": "Soul Siphon",
+    "points": 1
+   },
+   {
+    "levels": "42-43",
+    "tree": "Affliction",
+    "talent": "Improved Drains",
+    "points": 2
+   },
+   {
+    "levels": "44",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 1
+   },
+   {
+    "levels": "45-49",
+    "tree": "Demonology",
+    "talent": "Unholy Power",
+    "points": 5
+   },
+   {
+    "levels": "50",
+    "tree": "Demonology",
+    "talent": "Demonic Energies",
+    "points": 1
+   },
+   {
+    "levels": "51-52",
+    "tree": "Affliction",
+    "talent": "Fel Concentration",
+    "points": 2
+   },
+   {
+    "levels": "53-55",
+    "tree": "Demonology",
+    "talent": "Improved Voidwalker",
+    "points": 3
+   },
+   {
+    "levels": "56",
+    "tree": "Affliction",
+    "talent": "Fel Concentration",
+    "points": 1
+   },
+   {
+    "levels": "57",
+    "tree": "Demonology",
+    "talent": "Demonic Embrace",
+    "points": 1
+   },
+   {
+    "levels": "58",
+    "tree": "Demonology",
+    "talent": "Demonic Aegis",
+    "points": 1
+   },
+   {
+    "levels": "59",
+    "tree": "Affliction",
+    "talent": "Grim Reach",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Destruction",
+    "talent": "Improved Shadow Bolt",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
+ }
+}

@@ -309,7 +309,7 @@ MECHANICS = {
                       "keeping the mana for an emergency heal and the way back (70170 put it where King of the Jungle was)",
     "Natural Reaction": "+1%/rank dodge",
     "Rend and Tear": "+3%/rank ability damage on a bleeding mob (Rake, Rip, Pounce; the tooltip's number, 3% a rank since client 70753)",
-    "Genesis": "+1%/rank periodic damage (Rake, Rip, Pounce, Moonfire) and healing",
+    "Genesis": "+2%/rank periodic damage (Rake, Rip, Pounce, Moonfire) and healing (10% at 5/5)",
     "Nature's Majesty": "+2%/rank crit with spells and melee",
     "Nature's Reach": "+2%/rank hit",
     "Moonglow": "caster form only",

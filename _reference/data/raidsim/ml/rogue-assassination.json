@@ -14,115 +14,335 @@
   "bis": {
    "entry": "assassination-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-assassination-bis.gear.json",
-   "date": "2026-11-02",
-   "setting": "raid",
+   "date": "2026-11-08",
    "chosen": "all-slots",
-   "ilvl": 66.5,
+   "ilvl": 62.0,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0139,
+    "Rune of the Guard Captain (19120)": 1.0095,
+    "Cleansed Vilebranch Medallion (270275)": 1.0095,
+    "Molten Heart of the Mountain (249470)": 1.0081,
+    "Frozen Heart of the Mountain (249469)": 1.0067,
+    "Everlook Pathcarver (274759)": 1.005,
+    "Everlook Delivery Bot (274760)": 1.0042,
+    "Jewel of the Guard Captain (270225)": 1.0041,
+    "Weakness Analyzer (272438)": 1.0005,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
-    "Field Marshal's Leather Mask",
+    "Darkmantle Cap",
     "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
     "Earthweave Cloak",
     "Dawn Armor",
-    "Forest Stalker's Bracers",
-    "Marshal's Leather Handgrips",
+    "Darkmantle Bracers",
+    "Theramore Gloves",
     "Assassin's Waistguard",
-    "Marshal's Leather Leggings",
+    "Devilsaur Leggings",
     "Shadowcraft Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
+    "Quick Strike Ring",
+    "Warden's Signet of Ferocity",
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain",
-    "Grand Marshal's Dirk",
-    "High Warlord's Razor",
-    "Premier High Warlord's Recurve"
+    "Black Amnesty",
+    "Heartseeker",
+    "Gryphonwing Long Bow"
    ],
    "race_seed1": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9945492279975515
+    "current": 1.0,
+    "all-slots": 1.0016935075720506,
+    "keep-sets-and-effects": 1.0016935075720506
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0051067962616773
+    "current": 1.0,
+    "all-slots": 1.0017660128460972
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.8377,
-    "PseudoStatOffHandDps": 0.95,
-    "StatAgility": 0.4548,
-    "StatArmorPenetration": 0.0923,
-    "StatAttackPower": 0.2186,
-    "StatCritRating": 0.4303,
-    "StatExpertiseRating": 0.5517,
-    "StatHasteRating": 0.3832,
-    "StatHitRating": 0.523,
-    "StatSpellPiercing": 0.0883,
-    "StatStrength": 0.2404
+    "PseudoStatMainHandDps": 1.6942,
+    "PseudoStatOffHandDps": 0.8067,
+    "StatAgility": 0.4028,
+    "StatArmorPenetration": 0.0774,
+    "StatAttackPower": 0.2055,
+    "StatCritRating": 0.3747,
+    "StatExpertiseRating": 0.5099,
+    "StatHasteRating": 0.3239,
+    "StatHitRating": 0.518,
+    "StatSpellPiercing": 0.1019,
+    "StatStrength": 0.2261
    },
    "evaluated_on": [
     "assassination-raid: ml winner"
    ],
-   "commit": "54ceac638"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Field Marshal's Leather Mask",
+     "to": "Darkmantle Cap"
+    },
+    {
+     "slot": 5,
+     "from": "Forest Stalker's Bracers",
+     "to": "Darkmantle Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Marshal's Leather Handgrips",
+     "to": "Theramore Gloves"
+    },
+    {
+     "slot": 8,
+     "from": "Marshal's Leather Leggings",
+     "to": "Devilsaur Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Quick Strike Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Warden's Signet of Ferocity"
+    },
+    {
+     "slot": 14,
+     "from": "Grand Marshal's Dirk",
+     "to": "Black Amnesty"
+    },
+    {
+     "slot": 15,
+     "from": "High Warlord's Razor",
+     "to": "Heartseeker"
+    },
+    {
+     "slot": 16,
+     "from": "Premier High Warlord's Recurve",
+     "to": "Gryphonwing Long Bow"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 16e85426c",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Improved Eviscerate"
+    ],
+    "minutes": 3.2
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "assassination-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-assassination-prebis.gear.json",
-   "date": "2026-11-02",
-   "setting": "raid",
-   "chosen": "all-slots",
-   "ilvl": 66.5,
+   "date": "2026-11-08",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 61.4,
    "trinkets": [
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0133,
+    "Rune of the Guard Captain (19120)": 1.0097,
+    "Cleansed Vilebranch Medallion (270275)": 1.0097,
+    "Molten Heart of the Mountain (249470)": 1.008,
+    "Frozen Heart of the Mountain (249469)": 1.0054,
+    "Everlook Pathcarver (274759)": 1.0046,
+    "Jewel of the Guard Captain (270225)": 1.004,
+    "Everlook Delivery Bot (274760)": 1.0038,
+    "Weakness Analyzer (272438)": 1.0005,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
-    "Field Marshal's Leather Mask",
+    "Darkmantle Cap",
     "Amulet of the Darkmoon",
     "Theramore Pauldrons",
     "Earthweave Cloak",
     "Dawn Armor",
-    "Forest Stalker's Bracers",
-    "Marshal's Leather Handgrips",
+    "Shadowcraft Bracers",
+    "Theramore Gloves",
     "Assassin's Waistguard",
-    "Marshal's Leather Leggings",
+    "Devilsaur Leggings",
     "Shadowcraft Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
+    "Warden's Signet of Ferocity",
+    "Cutthroat's Signet",
     "Adaptive Combat Assistant",
     "Rune of the Guard Captain",
-    "Grand Marshal's Dirk",
-    "High Warlord's Razor",
-    "Premier High Warlord's Recurve"
+    "The Thunderwood Poker",
+    "Heartseeker",
+    "Gryphonwing Long Bow"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9951134209736009
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0052230299908433
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.8296,
-    "PseudoStatOffHandDps": 0.7635,
-    "StatAgility": 0.4213,
-    "StatArmorPenetration": 0.086,
-    "StatAttackPower": 0.2031,
-    "StatCritRating": 0.3913,
-    "StatExpertiseRating": 0.5065,
-    "StatHasteRating": 0.3313,
-    "StatHitRating": 0.4987,
-    "StatSpellPiercing": 0.09,
-    "StatStrength": 0.2234
+    "PseudoStatMainHandDps": 1.7454,
+    "PseudoStatOffHandDps": 0.8024,
+    "StatAgility": 0.405,
+    "StatArmorPenetration": 0.0766,
+    "StatAttackPower": 0.2049,
+    "StatCritRating": 0.369,
+    "StatExpertiseRating": 0.4358,
+    "StatHasteRating": 0.318,
+    "StatHitRating": 0.4742,
+    "StatSpellPiercing": 0.0952,
+    "StatStrength": 0.2254
    },
    "evaluated_on": [
     "assassination-raid: ml winner (bis)"
    ],
-   "commit": "54ceac638"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Field Marshal's Leather Mask",
+     "to": "Darkmantle Cap"
+    },
+    {
+     "slot": 5,
+     "from": "Forest Stalker's Bracers",
+     "to": "Shadowcraft Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Marshal's Leather Handgrips",
+     "to": "Theramore Gloves"
+    },
+    {
+     "slot": 8,
+     "from": "Marshal's Leather Leggings",
+     "to": "Devilsaur Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Warden's Signet of Ferocity"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Cutthroat's Signet"
+    },
+    {
+     "slot": 14,
+     "from": "Grand Marshal's Dirk",
+     "to": "The Thunderwood Poker"
+    },
+    {
+     "slot": 15,
+     "from": "High Warlord's Razor",
+     "to": "Heartseeker"
+    },
+    {
+     "slot": 16,
+     "from": "Premier High Warlord's Recurve",
+     "to": "Gryphonwing Long Bow"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 16e85426c",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Improved Eviscerate"
+    ],
+    "minutes": 2.9
+   }
   }
  },
  "search": {

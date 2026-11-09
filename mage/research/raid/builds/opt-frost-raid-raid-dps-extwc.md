@@ -58,8 +58,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 4. **Ice Lance** — Removing it costs 12.5 points of score in this model.
 5. **Missile Barrage** — Removing it costs 12.0 points of score in this model.
 6. **Shatter** — Removing it costs 11.3 points of score in this model.
-7. **Elemental Precision** — Removing it costs 10.1 points of score in this model.
-8. **Arcane Instability** — Removing it costs 9.5 points of score in this model.
+7. **Arcane Instability** — Removing it costs 9.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -135,6 +134,7 @@ Damage by ability:
 
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps-extwc.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 28/1/22 -> 28/1/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration) (refill: the frost-raid model, raid-dps-extwc).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -12,14 +12,15 @@ Heal the tank with **Healing Wave** at the rank that covers what it is missing, 
 
 - **Healing Wave** is your main heal: **Healing Way** adds 25%, and it heals the most per point of mana of your cast heals. In the healer lab's fight (one tank and four raid members for five minutes) it does about three quarters of your healing. It takes 3 seconds (this build skips **Improved Healing Wave**), so start it early.
 - Cast the rank that covers the missing health, no more: the healer lab picks the lowest rank that heals 90% of it, and overhealing is wasted mana. Forever gives ranks far below your level less from healing power (the exact rule is not published; the lab assumes TBC's), but ranks learned at 48 or later keep all of it, so drop a rank or two, not to rank 1.
-- **Riptide** is instant and heals twice: at once and over 15 seconds. Keep its heal over time on the tank and spend the spare casts (6-second cooldown) on hurt raid members or as your first emergency heal; a **Chain Heal** that starts on a target with your Riptide heals that target 25% more.
+- **Riptide** is instant and heals over 15 seconds; it has a 12-second cooldown. Keep it on the tank and use it on a hurt raid member or as a quick first heal when it is ready; a **Chain Heal** that starts on a target with your Riptide heals that target 25% more.
 - **Chain Heal** heals three targets for 100%, 50% and 25% of its amount, so it pays only when three people are hurt: the lab casts it when three group members are under half health. Cast on a party member, it jumps only to party members.
 - **Lesser Healing Wave** lands in 1.5 seconds but heals less per point of mana: it is the emergency heal for someone under 35% when **Riptide** is on cooldown, and the top-up for small gaps.
 - Drop **Healing Stream Totem** at the pull: it heals your whole group every 2 seconds for 5 minutes, and with **Restorative Totems** it did about a tenth of the healing in the lab.
 
 **Caveats**
 
-- Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or any of your spells crits (client 70425; heals only before), at most one every few seconds (the lab and the community simulator use 3.5). It costs nothing and has no cooldown (the 15-second cooldown its tooltip used to show was a tooltip error, fixed in the 2026-10-08 build), so recast it whenever the globes are gone.
+- Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or any of your spells crits, at most one every few seconds (the lab and the community simulator use 3.5). It costs nothing and has no cooldown, so recast it whenever the globes are gone.
+- **Totemic Focus** (5 points, 25% cheaper totems) and **Mindfulness** (half your mana regeneration continues while you cast) are the build's mana points, and they also count toward the tier gates in front of **Water Shield** and **Mana Tide Totem**; the healer lab values the gate points low.
 - Drop **Mana Tide Totem** at about half mana: it restores 290 mana every 3 seconds for 12 seconds to everyone in your group within 30 yards, on a 5-minute cooldown. The lab also measured drinking a mana potion early (below 80% mana) better than saving it, since its 2-minute cooldown starts sooner.
 - Let raid members drop to about half health before you heal them: the healer lab measured that better than healing them at 70%.
 - The healer lab is a model of one group (a tank and four raid members) under stated assumptions; real raids spread damage differently.
@@ -29,6 +30,13 @@ Heal the tank with **Healing Wave** at the rank that covers what it is missing, 
 - **Nature's Swiftness** makes your next Nature spell instant (3-minute cooldown): save it for a tank under 35% health and pair it with a top-rank **Healing Wave**. It measured small in the lab (0.4%) because emergencies are rare there; keep it for the moment someone would otherwise die.
 - When three or more of your group take damage together, switch from **Healing Wave** to **Chain Heal**, starting on a target with your **Riptide**.
 - If your group needs mana more than healing (several casters), **Mana Spring Totem** is the other water totem; the lab only models **Healing Stream Totem**.
+
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Enhancement | 10 | Thundering Strikes 5, Ancestral Knowledge 5 |
+| Restoration | 41 | Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Water Shield 1, Ancestral Healing 3, Healing Focus 3, Mana Tide Totem 1, Restorative Totems 5, Tidal Mastery 5, Healing Way 3, Nature's Swiftness 1, Purification 5, Riptide 1 |
 
 ## The numbers
 
@@ -60,5 +68,5 @@ Healing capacity 0.69 (the raid damage it heals through in this project's healer
 - [Restoration (optimized)](../research/raid/builds/opt-resto-heal-raid-heal.md) (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0533203315513151-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

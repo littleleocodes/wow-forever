@@ -52,7 +52,17 @@ def talent_names(cls):
 # buffs a player keeps on themselves (the rest of the "keep up" spells are debuffs on the target)
 SELF = ("Seal of ", " Aura", " Shout", " Form", " Stance", "Shadowform", "Slice and Dice", "Inner Fire", "Demon Armor", "Demon Skin", "Mage Armor",
         "Ice Armor", "Frost Armor", "Molten Armor", "Lightning Shield", "Water Shield", "Aspect of", "Blessing of", "Righteous Fury",
-        "Bone Shield", "Trueshot", "Moonkin", "Omen", "Nature's Grasp", "Thorns", "Mark of the Wild", "Arcane Intellect", "Power Word: Fortitude")
+        "Bone Shield", "Trueshot", "Moonkin", "Omen", "Nature's Grasp", "Thorns", "Mark of the Wild", "Arcane Intellect", "Power Word: Fortitude",
+        # weapon imbues are kept on the weapon, not pressed as a filler (2026-11-08 full page read S3: "Rockbiter Weapon is your filler")
+        "Rockbiter Weapon", "Flametongue Weapon", "Frostbrand Weapon", "Windfury Weapon")
+# emergency buttons on long cooldowns: never a step of "press the first one that is ready" (2026-11-08 full page read S5: the Protection
+# paladin's list had Lay on Hands as step 5); the Advanced list says when
+EMERGENCY = {"Lay on Hands": "when you are about to die: a full heal on a long cooldown that empties your mana",
+             "Divine Shield": "when you are about to die: a few seconds of immunity on a long cooldown",
+             "Shield Wall": "when a hit could kill you: much less damage taken for a few seconds, on a long cooldown",
+             "Last Stand": "when your health drops low: extra health for a few seconds, on a long cooldown",
+             "Ice Block": "when you are about to die: a few seconds of immunity on a long cooldown",
+             "Blessing of Protection": "on someone about to die to physical hits"}
 # race-only spells in the priest's spellbook: the pages are race-neutral. Forever gives each race two (priest/README.md, "Racial priest
 # spells"); 2026-10-15 page audit B12: the Forever-only ones were missing, and the Smite page listed the Undead's Dark Sacrifice
 RACIAL = {"Desperate Prayer", "Touch of Weakness", "Hex of Weakness", "Elune's Grace", "Starshards", "Feedback", "Shadowguard",
@@ -150,6 +160,11 @@ def _clause(c, spell, ok):
     m = re.match(r"time until (.+?) is ready > 0s?$", c)
     if m:
         return ("when", f"{m.group(1)} is on cooldown")
+    # "Whirlwind while Bloodthirst is more than 1.5 seconds away" (2026-11-09: the Fury page listed Whirlwind above Bloodthirst with no
+    # condition, since this clause fell through and was dropped)
+    m = re.match(r"time until (.+?) is ready > ([\d.]+)s?$", c)
+    if m:
+        return ("when", f"**{m.group(1)}** is more than {_n(m.group(2))} seconds from ready")
     m = re.match(r"time left in the fight (≥|>) ([\d.]+)s?$", c)
     if m:
         return ("until", float(m.group(2))) if float(m.group(2)) >= 10 else None
@@ -295,6 +310,9 @@ PREP = {"Cold Blood": "right before your finisher", "Inner Focus": "right before
         "Presence of Mind": "right before a long cast", "Nature's Swiftness": "right before a long cast",
         "Elemental Mastery": "right before your next big spell", "Divine Favor": "right before your next big heal"}
 KEEP_UP = {"Summon Hawk", "Ghostly Strike"}   # kept up on you (or as your pet), not on the target
+# spells whose stacks are a buff on you (2026-11-09 audit M17: "Arcane Blast: keep it on the target" read like a debuff; Forever's Arcane
+# Blast gives you spell damage from Intellect, stacking to 4)
+SELF_STACK = {"Arcane Blast": "keep its buff stacked on you"}
 MANA_TOOLS = {"Evocation", "Life Tap", "Innervate", "Mana Tide Totem", "Dark Pact", "Shadowfiend", "Aspect of the Viper", "Dark Sacrifice"}
 CUR = [None]   # the class being parsed (for _clause's other-class test)
 FLOOR = [None]   # (spell, seconds) when the line just parsed is an always-ready spell cast while more than that many seconds are left
@@ -328,7 +346,7 @@ def _parse(cls, t):
     km = re.match(r"^[Kk]eep (.+?) on up to", act)
     if km:
         sp = km.group(1).strip()
-        return ([sp], f"**{sp}**: keep it on the target", swing) if sp in ok else None
+        return ([sp], f"**{sp}**: " + SELF_STACK.get(sp, "keep it on the target"), swing) if sp in ok else None
     cm = re.match(r"^(?:[Cc]ast|[Cc]hannel) (.+?)(?: \(interrupt.*)?$", act)
     if not cm:
         return None
@@ -340,6 +358,11 @@ def _parse(cls, t):
         return None
     if sp in MANA_TOOLS and sp != "Life Tap":   # Evocation, Innervate, Dark Sacrifice...: the Advanced list says when (advanced())
         return None
+    if sp in EMERGENCY:   # the Advanced list says when (advanced())
+        return None
+    nt = re.search(r"number of targets (≥|>) ([\d.]+)", cond or "")
+    if nt and _count(nt.group(1), nt.group(2)) >= 2:   # a line for packs: the pages' list is one target (2026-11-08 full page read S4:
+        return None                                     # Magma Totem beside Searing Totem in one fire totem slot)
     if swing and sp.startswith("Seal of"):   # seal twisting (a second seal timed to the swing): the Advanced list explains it
         return None
     if sp.startswith("Seal of") and cond:
@@ -377,9 +400,11 @@ def _parse(cls, t):
     whens = list(dict.fromkeys(v for k, v in clauses if k == "when"))
     until = max((v for k, v in clauses if k == "until"), default=None)
     if "stack" in kinds:
-        txt = f"**{sp}**: stack it to {int(kinds['stack']) + 1 if int(kinds['stack']) < 5 else 5} on the target"
+        n = int(kinds['stack']) + 1 if int(kinds['stack']) < 5 else 5
+        txt = f"**{sp}**: stack its buff to {n} on you" if sp in SELF_STACK else f"**{sp}**: stack it to {n} on the target"
     elif "keep" in kinds:
-        txt = f"**{sp}**: " + ("keep it down" if sp.endswith("Totem") else "keep it up" if is_self(sp) or sp in KEEP_UP else "keep it on the target")
+        txt = f"**{sp}**: " + ("keep it down" if sp.endswith("Totem") else SELF_STACK[sp] if sp in SELF_STACK
+                               else "keep it up" if is_self(sp) or sp in KEEP_UP else "keep it on the target")
     else:
         txt = f"**{sp}**"
     if rk and txt == f"**{sp}**":
@@ -530,6 +555,12 @@ def advanced(cls, casts, shown, window=None):
         times = f"about {round(n)} time{'s' if round(n) != 1 else ''} a fight"
         if sp in ADV_TEXT:
             out.append(f"**{sp}**: {ADV_TEXT[sp]}")
+        elif sp in EMERGENCY:
+            out.append(f"**{sp}**: {EMERGENCY[sp]}")
+        elif is_self(sp):   # an aura, a seal or a form is no cooldown (2026-11-08 full page read S1: "Retribution Aura: a cooldown")
+            out.append(f"**{sp}**: " + ("put it up at the start and keep it up" if n < 2 else f"part of the rotation ({times})"))
+        elif n < 8 and cooldowns(cls).get(sp) is False:   # no cooldown: say how often, not "whenever it is ready"
+            out.append(f"**{sp}**: {times}" if n >= 0.95 else f"**{sp}**: now and then (in about {round(n * 10)} of 10 fights)")
         elif sp in MANA_TOOLS:
             out.append(f"**{sp}**: when you run out of mana (needed in about {min(10, round(n * 10))} of 10 fights)" if n < 0.95 else
                        f"**{sp}**: when you run low on mana ({times})")

@@ -1,0 +1,157 @@
+{
+ "class": "druid",
+ "build": "restoration-ml-heal",
+ "date": "2026-11-09",
+ "runs": 200,
+ "long": {
+  "DURATION": 600.0
+ },
+ "steps": [
+  {
+   "capacity": 0.6906,
+   "se": 0.0019,
+   "long": 0.5293,
+   "long_se": 0.0011,
+   "values": {
+    "Bloom": 0.03,
+    "Genesis": 0.0038,
+    "Gift of Nature": 0.0448,
+    "Heart of the Wild": 0.0028,
+    "Improved Moonfire": 0.0,
+    "Improved Regrowth": 0.0066,
+    "Improved Rejuvenation": 0.0077,
+    "Improved Wrath": 0.0,
+    "Living Spirit": 0.0436,
+    "Naturalist": 0.0041,
+    "Nature's Focus": 0.0,
+    "Nature's Majesty": 0.004,
+    "Nature's Splendor": 0.0305,
+    "Nature's Swiftness": 0.0007,
+    "Reflection": 0.1084,
+    "Swiftmend": 0.0057,
+    "Tranquil Spirit": 0.0405
+   },
+   "values_long": {
+    "Heart of the Wild": -0.0003
+   },
+   "zero": [
+    "Heart of the Wild"
+   ],
+   "long_only": []
+  },
+  {
+   "capacity": 0.6879,
+   "se": 0.0029,
+   "long": 0.5296,
+   "long_se": 0.0011,
+   "values": {
+    "Bloom": 0.0307,
+    "Genesis": 0.0088,
+    "Gift of Nature": 0.0439,
+    "Heart of the Wild": 0.0009,
+    "Improved Moonfire": 0.0,
+    "Improved Regrowth": 0.0051,
+    "Improved Rejuvenation": 0.0137,
+    "Improved Wrath": 0.0,
+    "Living Spirit": 0.0451,
+    "Naturalist": 0.006,
+    "Nature's Focus": 0.0,
+    "Nature's Majesty": 0.0093,
+    "Nature's Splendor": 0.0353,
+    "Nature's Swiftness": 0.0042,
+    "Reflection": 0.1075,
+    "Swiftmend": 0.0062,
+    "Tranquil Spirit": 0.0424
+   },
+   "values_long": {
+    "Heart of the Wild": 0.0014,
+    "Improved Regrowth": 0.0036
+   },
+   "zero": [
+    "Heart of the Wild"
+   ],
+   "long_only": [
+    "Improved Regrowth"
+   ]
+  },
+  {
+   "capacity": 0.687,
+   "se": 0.0024,
+   "long": 0.5282,
+   "long_se": 0.0012,
+   "values": {
+    "Bloom": 0.0337,
+    "Genesis": 0.0103,
+    "Gift of Nature": 0.0457,
+    "Heart of the Wild": 0.0162,
+    "Improved Moonfire": 0.0,
+    "Improved Regrowth": 0.0046,
+    "Improved Rejuvenation": 0.0116,
+    "Improved Wrath": 0.0,
+    "Living Spirit": 0.0426,
+    "Naturalist": 0.009,
+    "Nature's Focus": 0.0,
+    "Nature's Majesty": 0.0051,
+    "Nature's Splendor": 0.0397,
+    "Nature's Swiftness": 0.007,
+    "Reflection": 0.1085,
+    "Swiftmend": 0.0108,
+    "Tranquil Spirit": 0.0497
+   },
+   "values_long": {
+    "Improved Regrowth": 0.004
+   },
+   "zero": [],
+   "long_only": [
+    "Improved Regrowth"
+   ]
+  }
+ ],
+ "start": {
+  "std": 0.6906,
+  "std_se": 0.0019,
+  "long": 0.5293,
+  "long_se": 0.0011
+ },
+ "end": {
+  "std": 0.687,
+  "long": 0.5282
+ },
+ "moves": [
+  {
+   "from": "Heart of the Wild",
+   "to": "Nature's Focus",
+   "capacity": 0.6879,
+   "gain": -0.004,
+   "long": 0.0005,
+   "why": "pushback protection"
+  },
+  {
+   "from": "Heart of the Wild",
+   "to": "Nature's Focus",
+   "capacity": 0.687,
+   "gain": -0.0012,
+   "long": -0.0027,
+   "why": "pushback protection"
+  }
+ ],
+ "final": {
+  "Improved Wrath": 1,
+  "Genesis": 5,
+  "Improved Moonfire": 2,
+  "Nature's Majesty": 2,
+  "Nature's Splendor": 1,
+  "Nature's Focus": 5,
+  "Heart of the Wild": 3,
+  "Naturalist": 5,
+  "Reflection": 3,
+  "Gift of Nature": 5,
+  "Tranquil Spirit": 5,
+  "Improved Rejuvenation": 3,
+  "Swiftmend": 1,
+  "Nature's Swiftness": 1,
+  "Living Spirit": 3,
+  "Improved Regrowth": 5,
+  "Bloom": 1
+ }
+}

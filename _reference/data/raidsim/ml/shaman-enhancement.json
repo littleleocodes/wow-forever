@@ -2492,5 +2492,266 @@
   "best_hand": "enhancement-raid-dps",
   "gain_vs_hand": 0.1072,
   "commit": "16e85426c"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "enhancement-dps",
+    "dps": 1020.51,
+    "se": 0.155
+   },
+   "enhancement-raid-dps": {
+    "entry": "enhancement-dps",
+    "dps": 956.03,
+    "se": 0.152
+   },
+   "enhancement-open-raid": {
+    "entry": "enhancement-dps",
+    "dps": 1011.45,
+    "se": 0.157
+   },
+   "enhancement-ml-raid": {
+    "entry": "enhancement-dps",
+    "dps": 976.28,
+    "se": 0.155
+   }
+  },
+  "best_hand": "enhancement-raid-dps",
+  "gain_vs_hand": 0.0674
+ },
+ "signature_check": {
+  "spec": "Enhancement",
+  "ok": true,
+  "core_share": 0.7869,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "enhancement-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 1020.8,
+  "date": "2026-11-07",
+  "commit": "16e85426c",
+  "shares": {
+   "Auto Attack": 0.3983,
+   "Stormstrike": 0.2076,
+   "Earth Shock": 0.1084,
+   "Lightning Bolt": 0.1053,
+   "Flame Shock": 0.0726,
+   "Fire Nova": 0.0574,
+   "Magma Totem": 0.0466,
+   "Searing Totem": 0.0037
+  },
+  "casts": {
+   "Searing Totem": 2.11,
+   "Lightning Bolt": 19.33,
+   "Strength of Earth Totem": 1.0,
+   "Stormstrike": 29.69,
+   "Fire Nova": 21.42,
+   "Rage of the Farseer": 1.0,
+   "Magma Totem": 4.04,
+   "Grace of Air Totem": 1.0,
+   "Earth Shock": 21.27,
+   "Flame Shock": 8.06,
+   "Rockbiter Weapon": 1.0
+  },
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     1
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Elemental Devastation",
+     3
+    ],
+    [
+     "Reverberation",
+     2
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Trial by Fire",
+     2
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     3
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Elemental Weapons",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Stormstrike",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ],
+    [
+     "Improved Stormstrike",
+     2
+    ],
+    [
+     "Maelstrom Weapon",
+     5
+    ],
+    [
+     "Rage of the Farseer",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     3
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "enhancement-raid-dps",
+  "moves": [
+   {
+    "from": "Reverberation",
+    "to": "Convection",
+    "ratio": 1.00052
+   }
+  ],
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     2
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Elemental Devastation",
+     3
+    ],
+    [
+     "Reverberation",
+     1
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Trial by Fire",
+     2
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     3
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Elemental Weapons",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Stormstrike",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ],
+    [
+     "Improved Stormstrike",
+     2
+    ],
+    [
+     "Maelstrom Weapon",
+     5
+    ],
+    [
+     "Rage of the Farseer",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     3
+    ]
+   ]
+  },
+  "split": "17/31/3",
+  "ratio": 1.00052
+ },
+ "builds": {
+  "written": [
+   "enhancement-ml-raid"
+  ],
+  "superseded": [
+   "enhancement-open-raid"
+  ],
+  "date": "2026-11-07",
+  "setting": "raid"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

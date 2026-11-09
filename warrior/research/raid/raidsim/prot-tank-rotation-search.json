@@ -2,30 +2,24 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-10-28",
-  "commit": "30f67f5d2",
+  "date": "2026-11-08",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/apls/protection.apl.json",
   "start": "ui\\specs\\warrior\\protection\\apls\\protection.apl.json",
   "builds": [
    {
-    "label": "deep: tank",
-    "talents": "35310003002-03-150530020320001351"
-   },
-   {
     "label": "protection-ml-tank",
-    "talents": "35310003002-03-250530020310001351",
-    "protect_only": true
+    "talents": "35300103002-03-050530020330001351"
    },
    {
     "label": "sim preset: Protection",
-    "talents": "35300003-05-050531120300021351",
-    "protect_only": true
+    "talents": "05-05050005-150531120300001351"
    },
    {
     "label": "prot-raid-tank",
-    "talents": "3500501-05-150533020300001351",
+    "talents": "3500301-05-150533020311001351",
     "protect_only": true
    },
    {
@@ -35,7 +29,8 @@
    }
   ],
   "tuned_on": [
-   "deep: tank"
+   "protection-ml-tank",
+   "sim preset: Protection"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -115,48 +110,39 @@
   ],
   "final": {
    "raid": {
-    "deep: tank": {
-     "before": 489.1438866998225,
-     "after": 522.9586047013289,
-     "base": 489.1438866998225,
-     "before_value": 1.0,
-     "after_value": 1.1087473412924571,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "protection-ml-tank": {
-     "before": 488.4336173387898,
-     "after": 520.9959219414055,
-     "base": 488.4336173387898,
+     "before": 438.0686505592252,
+     "after": 467.73626318330804,
+     "base": 438.0686505592252,
      "before_value": 1.0,
-     "after_value": 1.1092743226048882,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Protection": {
-     "before": 486.31950538305165,
-     "after": 512.3001865677849,
-     "base": 486.31950538305165,
+     "before": 442.16224039494824,
+     "after": 460.94054548295867,
+     "base": 442.16224039494824,
      "before_value": 1.0,
-     "after_value": 1.1101636043466683,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "prot-raid-tank": {
-     "before": 483.37730294680597,
-     "after": 497.947054156713,
-     "base": 483.37730294680597,
+     "before": 434.2022318744746,
+     "after": 446.241986636493,
+     "base": 434.2022318744746,
      "before_value": 1.0,
-     "after_value": 1.1091766842321134,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-prot-tank-raid-tank": {
-     "before": 475.7917545628506,
-     "after": 503.3578112994234,
-     "base": 475.7917545628506,
+     "before": 425.4308382511642,
+     "after": 449.2739257157568,
+     "base": 425.4308382511642,
      "before_value": 1.0,
-     "after_value": 1.1103428101848114,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     }
@@ -170,13 +156,13 @@
     "Shield Slam"
    ],
    "rejected": {
-    "structure": 6,
+    "structure": 2,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

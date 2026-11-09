@@ -4,7 +4,7 @@
 
 What a Holy priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The build is the Holy raid healer's talents, taken in the order that levels fastest: Discipline's damage and mana talents first, the first Holy point at 32. The fight is a **Smite** priest's: a shield before every pull, **Holy Fire** to open from 20, **Shadow Word: Pain**, **Mind Blast** and, from 30, **Penance** whenever they are ready, and **Smite** in every gap. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 22/29/0 ([open the talent tree](https://talentsforever.com/priest/60/205005011330011-3350110303012043--12)), the one on the [Holy leveling page](holy.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 22/29/0 ([open the talent tree](https://talentsforever.com/priest/60/005305001330011-3350110303012043--12)), the one on the [Holy leveling page](holy.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -86,7 +86,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Shadow Word: Pain** (4), Power Word: Shield (6), Fade (8), Renew (8).
 
-**New ranks to buy:** Smite at 6.
+**New ranks to buy:** Lesser Heal at 4; Smite at 6.
 
 **Keys to set:** Mouse 4 = Shadow Word: Pain; F = Power Word: Shield (at 6); Shift+3 = Renew (at 8).
 
@@ -107,9 +107,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Levels 10-19: Mind Blast, and talents begin
 
-**The trainer teaches:** Confounding Flash (10), Desperate Prayer (10), Divine Grace (10), Hex of Weakness (10), **Mind Blast** (10), Resurrection (10), Starshards (10), Touch of Weakness (10), Inner Fire (12), Cure Disease (14), Psychic Scream (14), Heal (16), Dispel Magic (18).
+**The trainer teaches:** Confounding Flash (10, Gnome only), Desperate Prayer (10, Dwarf only), Divine Grace (10, Human only), Hex of Weakness (10, Troll only), **Mind Blast** (10), Resurrection (10), Starshards (10, Night Elf only), Touch of Weakness (10, Undead only), Inner Fire (12), Cure Disease (14), Psychic Scream (14), Heal (16), Dispel Magic (18).
 
-**New ranks to buy:** Mind Blast at 16; Power Word: Shield at 12, 18; Shadow Word: Pain at 10, 18; Smite at 14.
+**New ranks to buy:** Desperate Prayer at 18; Lesser Heal at 10; Mind Blast at 16; Power Word: Shield at 12, 18; Renew at 14; Shadow Word: Pain at 10, 18; Smite at 14.
 
 **Talents:** 10-14 Twin Disciplines, 15-19 Mental Strength.
 
@@ -131,16 +131,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Mental Strength** (15-19) adds Intellect: a bigger mana pool.
 - **Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.
 - **Mind Blast** waits while you are below 30% of your mana, so the mana goes to **Smite** and, from 20, **Holy Fire**.
+- Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own.
 
 *Fight lab, seconds per kill: 30 at level 10, 42 at level 19. Presses per kill at level 10: Smite 4.0, Shadow Word: Pain 1.0, Power Word: Shield 1.0, Mind Blast 1.0, Wand 0.5.*
 
 ## Levels 20-29: Holy Fire
 
-**The trainer teaches:** Chastise (20), Contingency Plan (20), Dark Sacrifice (20), Devouring Plague (20), Elune's Grace (20), Fear Ward (20), Feedback (20), Flash Heal (20), **Holy Fire** (20), Mind Soothe (20), Shackle Undead (20), Shadowguard (20), Mind Vision (22), Mana Burn (24), Binding Heal (25).
+**The trainer teaches:** Chastise (20, Dwarf only), Contingency Plan (20, Gnome only), Dark Sacrifice (20, Undead only), Devouring Plague (20), Elune's Grace (20, Night Elf only), Fear Ward (20), Feedback (20, Human only), Flash Heal (20), **Holy Fire** (20), Mind Soothe (20), Shackle Undead (20), Shadowguard (20, Troll only), Mind Vision (22), Mana Burn (24), Binding Heal (25).
 
-**New ranks to buy:** Holy Fire at 24; Mind Blast at 22, 28; Power Word: Shield at 24; Shadow Word: Pain at 26; Smite at 22.
+**New ranks to buy:** Desperate Prayer at 26; Flash Heal at 26; Holy Fire at 24; Mind Blast at 22, 28; Power Word: Shield at 24; Psychic Scream at 28; Renew at 20, 26; Shadow Word: Pain at 26; Smite at 22.
 
-**Talents:** 20-22 Meditation, 23 Mental Agility, 24 Inner Focus, 25-27 Improved Power Word: Shield, 28-29 Power in Light.
+**Talents:** 20-22 Meditation, 23 Inner Focus, 24-26 Improved Power Word: Shield, 27-29 Silent Resolve.
 
 **Keys to set:** 2 = Holy Fire; 3 = Flash Heal; Shift+E = Shackle Undead; 1 = Inner Focus (at 24).
 
@@ -159,17 +160,18 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Flash Heal** (20) replaces **Lesser Heal** on your emergency key.
 - **Meditation** (20-22) keeps half your mana regeneration going while you cast.
-- **Inner Focus** (24): press it as the pull starts, whenever it is ready, right before **Holy Fire**. The opener is then free and more likely to crit.
-- **Power in Light** (28-29) makes **Smite** stronger while **Holy Fire** or **Shadow Word: Pain** burns on the mob.
+- **Inner Focus** (23): press it as the pull starts, whenever it is ready, right before **Holy Fire**. The opener is then free and more likely to crit.
+- **Silent Resolve** (27-29) cuts the threat your spells cause: nothing for a lone priest, it is the raid healer's point.
 - **Devouring Plague** (20): leave it off your bar. The tuned rotation never casts it for this build.
+- Racial spells in the list above: Feedback (Human), Chastise (Dwarf), Elune's Grace (Night Elf), Contingency Plan (Gnome), Dark Sacrifice (Undead), Shadowguard (Troll). Only that race can learn its own.
 
-*Fight lab, seconds per kill: 45 at level 20, 52 at level 29. Presses per kill at level 20: Smite 4.2, Wand 1.2, Holy Fire 1.1, Mind Blast 1.1, Shadow Word: Pain 1.0, Power Word: Shield 1.0.*
+*Fight lab, seconds per kill: 45 at level 20, 53 at level 29. Presses per kill at level 20: Smite 4.2, Wand 1.2, Holy Fire 1.1, Mind Blast 1.1, Shadow Word: Pain 1.0, Power Word: Shield 1.0.*
 
 ## Levels 30-60: Penance
 
 **The trainer teaches:** Divine Spirit (30), Mind Control (30), Prayer of Healing (30), Shadow Protection (30), Abolish Disease (32), Shadow Word: Death (32), Levitate (34), Greater Heal (40), Prayer of Fortitude (48), Prayer of Shadow Protection (56), Prayer of Spirit (60).
 
-**New ranks to buy:** Holy Fire at 30, 36, 42, 48, 54, 60; Mind Blast at 34, 40, 46, 52, 58; Penance at 40, 50, 60; Power Word: Shield at 30, 36, 42, 48, 54, 60; Shadow Word: Pain at 34, 42, 50, 58; Smite at 30, 38, 46, 54.
+**New ranks to buy:** Desperate Prayer at 34, 42, 50, 58; Dispel Magic at 36; Flash Heal at 32, 38, 44, 50, 56; Holy Fire at 30, 36, 42, 48, 54, 60; Holy Nova at 36, 44, 52, 60; Mind Blast at 34, 40, 46, 52, 58; Penance at 40, 50, 60; Power Word: Shield at 30, 36, 42, 48, 54, 60; Psychic Scream at 42, 56; Renew at 32, 38, 44, 50, 56, 60; Shackle Undead at 40, 60; Shadow Word: Pain at 34, 42, 50, 58; Smite at 30, 38, 46, 54.
 
 **Talents:** 30 Penance, 31 Soul Warding, 32-34 Twilight Focus, 35-39 Holy Specialization, 40-41 Improved Renew, 42 Holy Nova, 43 Improved Renew, 44 Divine Fury, 45-47 Inspiration, 48 Holy Binding, 49-51 Improved Healing, 52-53 Litany of Light, 54-57 Spiritual Guidance, 58-60 Spiritual Healing.
 
@@ -190,11 +192,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.
 
 - **Soul Warding** (31) shortens the shield's cooldown and cost. **Twilight Focus** (32-34) keeps most hits from pushing your casts back once the shield breaks.
-- **Holy Specialization** (35-39) adds crit to your Holy spells, and **Divine Fury** (44) takes a little off the cast of **Smite** and **Holy Fire**. **Improved Healing** (48-50) makes **Penance** cheaper.
+- **Holy Specialization** (35-39) adds crit to your Holy spells, and **Divine Fury** (44) takes a tenth of a second off the cast of **Smite** and **Holy Fire**. **Improved Healing** (49-51) makes **Penance** cheaper.
 - **Holy Nova** (42) is for pulls of several mobs: cast it only when two or more are within 10 yards of you.
 - The rest of the Holy points (**Improved Renew**, **Inspiration**, **Holy Binding**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**) are for healing at 60. They do little for your kills, which is why this is a slow way to level.
 
-*Fight lab, seconds per kill: 50 at level 30, 62 at level 40, 58 at level 50, 56 at level 60. Presses per kill at level 30: Smite 3.6, Wand 2.1, Penance 1.3, Holy Fire 1.2, Shadow Word: Pain 1.0, Power Word: Shield 1.0, Mind Blast 0.9.*
+*Fight lab, seconds per kill: 52 at level 30, 64 at level 40, 59 at level 50, 57 at level 60. Presses per kill at level 30: Smite 3.6, Wand 2.1, Penance 1.3, Holy Fire 1.2, Shadow Word: Pain 1.0, Mind Blast 1.0, Power Word: Shield 1.0.*
 
 ## Between fights
 
@@ -209,4 +211,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The [Smite guide](smite-by-level.md) plays this same list on a damage build without **Penance**. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Devouring Plague** and no **Holy Fire**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

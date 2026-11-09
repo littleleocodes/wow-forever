@@ -7,8 +7,8 @@ that has two side buttons (WoW shows them as Button 4 and Button 5). Same scheme
 [paladin](../../paladin/leveling/keybinds.md) layouts: Q your bolt, E the control, R the payoff after it, F the save, the two thumb
 buttons the reaction and the pull, 1-4 the dots and the mana, the middle mouse button the wand, the Shift bar the rarer tools. Keys are
 for spells you press in a fight and for the things that help you there: armor, summons, Soul Link, conjured stones, food, drink, the
-mount and the Hearthstone have no key and are clicked between fights. It is built on the [Demonology leveling page](demonology.md), the
-fastest warlock spec in the fight lab. The other warlock specs keep these keys for every spell they share and change only a few
+mount and the Hearthstone have no key and are clicked between fights. It is built on the [Demonology leveling page](demonology.md); the
+Affliction-Demonology hybrid plays the same list. The other warlock specs keep these keys for every spell they share and change only a few
 (see "The other warlock specs" below).
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
@@ -34,10 +34,10 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | Key | Spell (learned at) | Press it when | Habit it matches |
 |---|---|---|---|
 | Q | Shadow Bolt (1) | At levels 1-3 after Immolate; from 4 only above 80% of your mana, mostly on the first pull after a rest. The wand does the filling | League Q, the basic hit |
-| E | Fear (8) | A mob reaches you: it runs for up to 20 seconds, the Voidwalker takes it back | League E, the CC key |
+| E | Fear (8) | A mob reaches you: it runs for up to 10 seconds (15 from rank 2 at level 32, 20 from rank 3 at level 56), the Voidwalker takes it back | League E, the CC key |
 | R | Drain Life (14) | Right after E, while the feared mob runs; and whenever you are below 60% of your health | League R, the payoff after the CC |
 | F | Death Coil (42) | A mob is on you and you are below 60% of your health: it runs in horror for 3 seconds and you heal for the damage. 2-minute cooldown | Flash, the save |
-| Mouse 5 (front side button) | Searing Pain (18; a key from 28, with Demonic Brand) | The brand has dropped, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you more than 30% of your mana | Thumb reaction |
+| Mouse 5 (front side button) | Searing Pain (18; a key from 27, with Demonic Brand) | The brand has dropped, the Voidwalker is hitting the mob, the mob has more than a third of its health and you more than 30% of your mana | Thumb reaction |
 | Mouse 4 (back side button) | Corruption pull macro (4) | The pull, every fight: it sends your demon and casts Corruption, on a mob above about a third of its health | Thumb: the pull, as on the priest and the hunter |
 | 1 | Bane of Agony (8); the Amplify Curse macro from 50 | Right after the pull, on a mob above about a third of its health | Deadlock ability 1 |
 | 2 | Immolate (1) | On every mob at levels 1-27 while you have more than half your mana; rare after that, since the brand costs mana | Deadlock ability 2 |
@@ -46,7 +46,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | C | Healthstone macro (10) | Below 35% of your health | A reaction key next to the movement hand |
 | Middle mouse | Shoot (wand) | The filler: whenever no key above applies | The weapon attack |
 
-From 28 the whole fight is Mouse 4 to pull, Mouse 5 each time the brand drops, 1 for the bane, and the middle mouse button in between.
+From 27 the whole fight is Mouse 4 to pull, Mouse 5 each time the brand drops, 1 for the bane, and the middle mouse button in between.
 E, R, F and C are for a mob that reaches you.
 
 ## Bar 2: the same keys with Shift
@@ -69,12 +69,12 @@ Free slots stay free until something earns them.
 
 Each spec's level-by-level guide has its own keybinds table. They keep the keys above for every spell they share with Demonology:
 
-- [Affliction](affliction-by-level.md): Mouse 5 holds Wrack (40) where Demonology keeps Searing Pain. The Amplify Curse macro takes 1 at
+- [Affliction](affliction-by-level.md): Mouse 5 holds Wrack (40) where Demonology keeps Searing Pain. R, E and F matter more here: it casts Fear and Drain Life when a mob reaches you. The Amplify Curse macro takes 1 at
   20 and Siphon Life takes 3 at 34. Q's Shadow Bolt is the main nuke until 40.
 - [Destruction](destruction-by-level.md): Mouse 4's pull macro casts Shadow Bolt in place of Corruption, from 10 (the fight lab opens with
   a bolt while the Voidwalker takes the mob, then Immolate). R holds Conflagrate (32) and Mouse 5 Shadowburn (31): the tuned rules of
-  2026-11-07 never cast Drain Life or Searing Pain. 1 and 3 stay free (no Affliction dots). E keeps Fear for a pull that brings a second
-  mob, though those rules never cast it against one.
+  2026-11-07 never cast Drain Life, Searing Pain or Fear. 1 and 3 stay free (no Affliction dots). E keeps Fear for a pull that brings a
+  second mob, though those rules never cast it.
 - [Affliction-Demonology](affliction-demonology-by-level.md) (27/24/0): this layout unchanged. Searing Pain arrives at 27, the Amplify
   Curse macro at 44 and Siphon Life at 54, and Health Funnel on Shift+R is a fight spell from 20 (Improved Health Funnel).
 

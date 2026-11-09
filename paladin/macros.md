@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars.
+- **Frees:** nothing: this fills a free key, C on your bars, for every spec. Swift Judgement never takes it: Prot-Ret holds it on 3, Protection and the Holy/Protection hybrid on Shift+3.
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+C on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+C on your bars for every spec. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 
@@ -67,7 +67,7 @@ Leveling and raid. Keys below are your [Retribution keybinds](leveling/keybinds.
 
 - **Replaces:** Q and R, from level 6.
 - **Frees:** R.
-- **Fill it with:** R takes Exorcism from 2, the biggest hit you have on Undead and Demons, and 2 goes free. From 44 Hammer of Wrath can leave Shift+R for 2.
+- **Fill it with:** R is free once Q holds the whole rotation: put Exorcism on R from level 20, the biggest hit you have on Undead and Demons, and key 2, where it sat, goes free. From 44 Hammer of Wrath can leave Shift+R for 2.
 - **Why it works:** Judgement is off the global cooldown, so one press casts both attacks in the fight lab's order. Judgement then fires as soon as it is ready, so press E before Q when you want the doubled hit. Change the seal at level 20.
 
 ### Repentance that holds
@@ -181,4 +181,4 @@ The hybrids.
 - **Replaces:** The Judgement key, for Shockadin.
 - **Frees:** One key.
 - **Fill it with:** Exorcism.
-- **Why it works:** Judgement is off the global cooldown. Prot-Ret plays Retribution's macros.
+- **Why it works:** Judgement is off the global cooldown. Prot-Ret plays Retribution's macros. From 56, when it takes Swift Judgement, add `/cast Swift Judgement` as the first line of the R macro (above the castsequence line): Swift Judgement is off the global cooldown, so one press fires both while it is ready, and 3, where the level guide puts it, goes free.

@@ -49,6 +49,21 @@ for _name in ("Rejuvenation", "Regrowth"):
     _m = re.search(rf"{_name} spells? by ([\d.]+) sec", talent_text("Nature's Splendor"))
     if _m:
         SPLENDOR[_name] = float(_m.group(1))
+# Bloom (2026-11-08, the user's audit: the deep search had parked spare points on Furor and Improved Wrath because Bloom read 0):
+# "When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of
+# your Spirit." Read as a flat heal of that share of Spirit, no healing bonus or crit (the tooltip names none). Dispels are not modelled.
+_bloom = re.search(r"equal to (\d+)% of your Spirit", talent_text("Bloom"))
+BLOOM_SPIRIT = float(_bloom.group(1)) / 100 if _bloom else 0.0
+BLOOM_SPELLS = ("Rejuvenation", "Regrowth")
+# Improved Tranquility: "Reduces threat caused by Tranquility by 100% and its cooldown by 60%." (rank 2; 30% at rank 1): the cooldown cut.
+# Threat is not modelled.
+
+
+def tranquility_cut(rank):
+    m = re.search(r"cooldown by (\d+)%", talent_text("Improved Tranquility", rank))
+    return float(m.group(1)) / 100 if (m and rank) else 0.0
+
+
 # Swiftmend: Classic "Consumes a Rejuvenation or Regrowth effect ..."; Forever's tooltip no longer says so.
 SWIFTMEND_CONSUMES = bool(re.search(r"\bconsume", talent_text("Swiftmend"), re.I))
 
@@ -60,7 +75,7 @@ class Healer(E.BaseHealer):
     TALENT_SPELLS = {"Swiftmend": "Swiftmend", "Wild Growth": "Wild Growth", "Nature's Swiftness": "Nature's Swiftness"}
     MECHANICS = {
         "Swiftmend": "instant heal for the full periodic amount of the target's Regrowth or Rejuvenation, 15 s cooldown; the heal over time "
-                     "stays (Forever's tooltip no longer says it is consumed)",
+                     "is consumed when the tooltip says so (SWIFTMEND_CONSUMES, read from it: 70753's \"the consumed spell\")",
         "Nature's Swiftness": "instant Healing Touch on a tank under the emergency threshold, every 3 min",
         "Nature's Grace": "a critical direct heal: 10% faster casts and a 10% shorter global cooldown for 3 s",
         "Genesis": "+1%/rank periodic healing",
@@ -68,17 +83,24 @@ class Healer(E.BaseHealer):
         "Nature's Splendor": "Rejuvenation +3 s, Regrowth +6 s: one or two more ticks of the same size",
         "Moonglow": "nothing for heals: Forever's Moonglow cheapens damaging spells only",
         "Wild Growth": "679 over 7 s on the group, 6 s cooldown: the group heal",
+        "Bloom": "a Rejuvenation or Regrowth that runs its full duration heals its target for 100% of your Spirit (2026-11-08)",
+        "Improved Tranquility": "Tranquility's cooldown 30% / 60% shorter (2026-11-08); threat not modelled",
         "Innervate": "on yourself under 40% mana (every 6 min): 5x regeneration for 20 s, all of it while casting (the tooltip; until "
                      "2026-10-17 the five-second rule still cut it)",
     }
     SIMULATED = {"Swiftmend", "Nature's Swiftness", "Nature's Grace", "Genesis", "Gift of the Earthmother", "Nature's Splendor", "Wild Growth", "Gift of Nature",
-                 "Improved Rejuvenation", "Naturalist", "Improved Regrowth", "Reflection", "Tranquil Spirit", "Living Spirit", "Nature's Majesty", "Moonglow", "Heart of the Wild"}
+                 "Improved Rejuvenation", "Naturalist", "Improved Regrowth", "Reflection", "Tranquil Spirit", "Living Spirit", "Nature's Majesty", "Moonglow", "Heart of the Wild",
+                 "Bloom", "Improved Tranquility"}
     SHARE_SOURCE = {"Healing Touch": "healing_touch", "Regrowth": "regrowth", "Rejuvenation": "rejuvenation", "Tranquility": "tranquility"}
 
     def __init__(self, allocation, game="forever"):
         super().__init__(allocation, game)
         if "Wild Growth" not in self.book:
             self.ROLES = dict(self.ROLES, group="Tranquility")
+        cut = tranquility_cut(self.rank("Improved Tranquility"))
+        if cut:
+            for h in self.book.get("Tranquility", []):
+                h.cooldown *= 1 - cut
         if self.rank("Nature's Splendor"):
             for name, extra in SPLENDOR.items():
                 for h in self.book.get(name, []):   # this healer's own copy of the spellbook
@@ -101,6 +123,10 @@ class Healer(E.BaseHealer):
         if t > 0 and sim.buffs.get("Nature's Grace", 0.0) > sim.t:
             t = max(T.GCD * (1 - NG_HASTE), t / (1 + NG_HASTE))
         return t
+
+    def on_hot_expire(self, sim, name, target):
+        if name in BLOOM_SPELLS and BLOOM_SPIRIT and self.rank("Bloom"):
+            sim.apply_heal(self.book[name][-1], target, self.spirit * BLOOM_SPIRIT, False, label="Bloom")
 
     def on_heal(self, sim, spell, target, amount, crit):
         if crit and self.rank("Nature's Grace") and spell.heal_min > 0:

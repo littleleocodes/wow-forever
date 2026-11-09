@@ -202,20 +202,26 @@
  "raid": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-11-04",
-  "commit": "92c4c35b9",
+  "date": "2026-11-07",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/destruction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "253-0050203001-055030500310035"
+   },
+   {
     "label": "shadow-bolt-hybrid-fire-open-raid",
-    "talents": "25300020035-0050203001-0550205003"
+    "talents": "25300020035-0050203001-0550205003",
+    "protect_only": true
    },
    {
     "label": "sim preset: SM/Ruin",
-    "talents": "2550002013520105--0550205003"
+    "talents": "2550002013520105--0550205003",
+    "protect_only": true
    },
    {
     "label": "destruction-fire-raid",
@@ -229,8 +235,7 @@
    }
   ],
   "tuned_on": [
-   "shadow-bolt-hybrid-fire-open-raid",
-   "sim preset: SM/Ruin"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -334,37 +339,46 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 710.5092668604851,
+     "after": 786.3493409410961,
+     "base": 710.5092668604851,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.06340010000000014,
+     "oom_after": 0.06340010000000014
+    },
     "shadow-bolt-hybrid-fire-open-raid": {
-     "before": 746.2248139671154,
-     "after": 745.1124736365817,
-     "base": 746.2248139671154,
+     "before": 764.0143271504298,
+     "after": 755.8008733573287,
+     "base": 764.0143271504298,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: SM/Ruin": {
-     "before": 722.0462804209864,
-     "after": 717.6701622564935,
-     "base": 722.0462804209864,
+     "before": 739.36848405234,
+     "after": 728.6734982380466,
+     "base": 739.36848405234,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.2305233500000365,
-     "oom_after": 1.2264495000028848
+     "oom_before": 0.8954353500020127,
+     "oom_after": 0.8954353500020127
     },
     "destruction-fire-raid": {
-     "before": 732.9629119886671,
-     "after": 727.4669968136353,
-     "base": 732.9629119886671,
+     "before": 750.9044324159374,
+     "after": 738.0711099918902,
+     "base": 750.9044324159374,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.19611999999999852,
-     "oom_after": 0.19527705000034817
+     "oom_before": 0.04846000000000063,
+     "oom_after": 0.04846000000000063
     },
     "opt-fire-destro-raid-raid-dps": {
-     "before": 743.7081364135651,
-     "after": 735.0886995626067,
-     "base": 743.7081364135651,
+     "before": 761.5115447824418,
+     "after": 745.5964743233518,
+     "base": 761.5115447824418,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -381,13 +395,13 @@
     "Shadow Bolt"
    ],
    "rejected": {
-    "structure": 104,
+    "structure": 52,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 10
+  "passes": 12
  }
 }

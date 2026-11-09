@@ -55,7 +55,6 @@ The Elemental PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's
 3. **Reverberation** — The scorer's value in this build: +10.0% of its score (model elemental-dps).
 4. **Improved Ghost Wolf** — The scorer's value in this build: +10.0% of its score (model elemental-dps).
 5. **Earthbound** — The scorer's value in this build: +10.0% of its score (model elemental-dps).
-6. **Lava Burst** — The scorer's value in this build: +7.5% of its score (model elemental-dps).
 
 ## Notes
 
@@ -65,6 +64,7 @@ The Elemental PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 35/16/0 -> 35/16/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; refill +1 Elemental Warding (refill: the elemental-dps model, pvp).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 35/16/0 -> 33/18/0; Lava Burst 1 gone; +1 Ancestral Knowledge (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); -1 Trial by Fire (over 51) (refill: the elemental-dps model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

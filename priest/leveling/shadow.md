@@ -10,19 +10,17 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Shadow), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 84% of the damage at level 60 in the fight lab comes from Shadow Word: Pain, Mind Blast, Mind Flay, Devouring Plague (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast in every fight).
+**Signature spells:** 84% of the damage at level 60 in the fight lab comes from the spec's core spells (Shadow Word: Pain, Mind Blast, Mind Flay; this build never casts Devouring Plague) (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast at level 60).
 
 ## How to play
 
-**Not in this build:** **Inner Focus** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
-
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below half your health; **Inner Focus** when it is ready, as the pull starts (your first spell is free).
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** before a pull only when you start it below half your health.
 
 **In the fight**, top to bottom:
 
 1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
 2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
-3. **Shadow Word: Death** when one cast will kill the mob, and below 20% health once you have **Early Demise**.
+3. **Shadow Word: Death** when one cast will kill the mob, and on a mob at or below 20% health once you have **Early Demise** (it adds crit there; you take 30% of your maximum health if the mob survives).
 4. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
 5. Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).
 6. Below a third of your health outside **Shadowform**: **Flash Heal**.
@@ -31,31 +29,29 @@
 
 ## Why this rotation
 
-Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step. In the fight lab (2026-11-04 run) a kill takes about 25 seconds level-weighted, the fastest priest leveling page by far; at 60 **Mind Flay** is 47% of the damage, **Mind Blast** 19%, **Shadow Word: Death** and **Shadow Word: Pain** 17% each.
+Shadow levels on a short loop: **Shadow Word: Pain** and **Mind Blast** land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step. In the fight lab a kill takes about 24 seconds level-weighted (20 at level 60), the fastest priest leveling page by far.
 
 **Why it works**
 
-- Open from as far away as you can: the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so they land while the mob walks in. **Shadow Reach** (levels 15-16) adds 20% range.
-- **Mind Flay** (level 20) is your filler: it slows the mob by 50% while you channel, so a mob walking in reaches you later, and **Improved Mind Flay** (21-22) makes each tick 20% stronger than the last. **Mind Blast** goes out whenever it is ready; this build takes no **Improved Mind Blast**, so that is every 8 seconds. At 60 the fight lab casts about 1.2 **Mind Blast** and 2.7 **Mind Flay** per kill.
-- **Shadow Word: Death** finishes: the fight lab casts it when one cast will kill the mob, so its backlash (30% of your health when the target survives) never lands, and below 20% of the mob's health once you have **Early Demise** (35-36).
+- Open from as far away as you can: the fight lab casts the instants first (**Vampiric Embrace** from 39 when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so they land while the mob walks in. **Shadow Reach** (19 and 23) adds 20% range to your Shadow spells.
+- **Mind Flay** (level 20) is your filler: it slows the mob by 50% while you channel, so a mob walking in reaches you later, and **Improved Mind Flay** (21-22) makes each tick 20% stronger than the last. **Mind Blast** goes out whenever it is ready; **Improved Mind Blast** (24, 31-34) takes 2.5 seconds off its 8-second cooldown.
+- **Shadow Word: Death** (32) finishes: the fight lab casts it when one cast will kill the mob, so its backlash (30% of your maximum health when the target survives) never lands. **Early Demise** (35) adds 15% crit chance to it on a mob at or below 20% of its health, and the lab casts it there too. The tooltip gives no other bonus, so that cast can leave the mob alive and cost you the backlash.
 - Before 20 your wand fills the gaps between **Mind Blast** casts and finishes: when a mob has a hit or two of wand damage left, a new spell is wasted mana.
-- **Vampiric Embrace** (25) is your heal once **Shadowform** stops real heals: it heals you for a fifth of your Shadow damage, and the fight lab casts it whenever it is ready. Without **Shadowform** a kill at 60 takes about 11 seconds longer in the fight lab, without **Mind Flay** 5, without **Spirit Tap** 3.
-- Mana: **Spirit Tap** (23-31) doubles your Spirit for 15 seconds after a kill and keeps half your regeneration going meanwhile, and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half your health: the shield is not a Shadow spell and costs full mana.
+- **Vampiric Embrace** (39) is your heal once **Shadowform** stops real heals: for 30 seconds your party heals for 20% of the Shadow damage you deal to that mob, and the fight lab casts it whenever it is ready. **Shadowform** (40) adds 10% Shadow damage, halves your Shadow costs and takes 15% off physical damage: time per kill drops from 37 seconds at level 39 to 22 at level 40.
+- Mana: **Spirit Tap** (10-14) gives a chance after a kill to double your Spirit for 15 seconds and keeps half your regeneration going meanwhile, and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half your health: the shield is not a Shadow spell and costs full mana.
 
 **Caveats**
 
-- The tuned rules never cast **Devouring Plague** (at top rank it costs 985 mana for 848 damage over 24 seconds, and most mobs die before it ends) nor **Smite**.
-- **Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.
-- The Discipline points come last (43-60): **Twin Disciplines** makes your instants and **Mind Flay** 5% stronger, **Mental Strength** adds 10% Intellect, **Martyrdom** stops pushback for 6 seconds after a crit, **Meditation** gets one point. **Blackout** (10-12) is a 10% stun on Shadow damage, a filler that also saves a few hits.
+- The tuned rules never cast **Devouring Plague** (it costs a lot of mana and most mobs die before its 24 seconds end) nor **Smite**.
+- **Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace**, and between fights you eat (below 40% of your health, the tuned rule) instead of casting **Renew**.
+- Most points go into Shadow damage and hit: **Shadow Focus** (15-18), **Darkness** (36-38, 41-42, up to 10% Shadow damage), **Shadow Weaving** (28-30), **Dark Inspiration** (25-27, 43-44). The last 16 points (45-60) go to mana and filler: **Twin Disciplines** (45-49), **Twilight Focus** (50-52), **Mental Strength** (53-55), **Power in Light** (56-57, a **Smite** and **Penance** talent this rotation never uses) and **Meditation** (58-60).
 - Two or three mobs at once: put **Shadow Word: Pain** on each and use **Psychic Scream** (below 40% of your health with a mob on you) to buy time. The rules were tuned on single pulls.
 
 **When to change it**
 
 - When a pull goes wrong (an add, a caster pack), shield yourself: **Power Word: Shield** absorbs damage and stops pushback on your casts while it holds.
 - Below 40% health with the mob on you: **Psychic Scream**, then **Flash Heal** if you are not in **Shadowform** yet.
-- **Silence** (34) a mob that casts: 5 seconds of silence and a 3-second interrupt on a 45-second cooldown.
-
-*This guide was written for the rotation of 2026-11-04; the list above was re-tuned since, so follow the list where the two differ.*
+- In **Shadowform** a real heal means leaving the form (the macros page has a macro for it) and clicking it back on afterwards, so eat between fights instead and keep **Vampiric Embrace** up.
 
 ## Talents while leveling
 
@@ -102,5 +98,5 @@ One point per level from 10, in this order:
 - [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 29 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

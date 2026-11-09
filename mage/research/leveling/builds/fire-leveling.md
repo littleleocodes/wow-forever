@@ -87,8 +87,7 @@ The Fire leveling build derived on 2026-09-30 (derive_leveling.py): searched in 
 2. **Ignite** — The scorer's value in this build: +10.5% of its score (model fire-leveling).
 3. **Fire Power** — The scorer's value in this build: +5.0% of its score (model fire-leveling).
 4. **Combustion** — The scorer's value in this build: +3.6% of its score (model fire-leveling).
-5. **Elemental Precision** — The scorer's value in this build: +2.1% of its score (model fire-leveling).
-6. **Ice Block** — The scorer's value in this build: +1.7% of its score (model fire-leveling).
+5. **Ice Block** — The scorer's value in this build: +1.7% of its score (model fire-leveling).
 
 ## Leveling rotation
 
@@ -108,6 +107,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Heating Up (tier gating for Combustion); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
 - 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.9 s per kill; stats model 38.8 s; own tree first 38.2 s.
 - 2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Pyroblast at 20 (was 39); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

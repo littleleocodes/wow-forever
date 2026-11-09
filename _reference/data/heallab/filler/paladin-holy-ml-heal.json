@@ -1,0 +1,105 @@
+{
+ "class": "paladin",
+ "build": "holy-ml-heal",
+ "date": "2026-11-09",
+ "runs": 200,
+ "long": {
+  "DURATION": 600.0
+ },
+ "steps": [
+  {
+   "capacity": 0.625,
+   "se": 0.0027,
+   "long": 0.4836,
+   "long_se": 0.0017,
+   "values": {
+    "Benediction": 0.0001,
+    "Boundless Light": 0.0014,
+    "Consecrated Ground": 0.0,
+    "Conviction": 0.0061,
+    "Deflection": 0.0,
+    "Divine Favor": 0.007,
+    "Divine Intellect": 0.0214,
+    "Divine Strength": 0.0,
+    "Healing Light": 0.0109,
+    "Holy Conduit": 0.0,
+    "Holy Power": -0.0013,
+    "Holy Shock": 0.0246,
+    "Illumination": 0.0277,
+    "Improved Judgement": 0.0,
+    "Infusion of Light": 0.001,
+    "Light's Vigil": 0.0325,
+    "Oath of Light": 0.1083,
+    "Pursuit of Justice": 0.0,
+    "Reverence": 0.0368,
+    "Sanctified Judgement": 0.0,
+    "Spiritual Focus": 0.0,
+    "Unyielding Faith": 0.0
+   },
+   "values_long": {
+    "Benediction": 0.0013,
+    "Boundless Light": 0.0005,
+    "Consecrated Ground": 0.0,
+    "Deflection": 0.0,
+    "Divine Strength": 0.0,
+    "Holy Conduit": 0.0,
+    "Holy Power": 0.0005,
+    "Improved Judgement": 0.0,
+    "Infusion of Light": -0.0045,
+    "Pursuit of Justice": 0.0,
+    "Sanctified Judgement": 0.0,
+    "Unyielding Faith": 0.0
+   },
+   "zero": [
+    "Benediction",
+    "Boundless Light",
+    "Consecrated Ground",
+    "Deflection",
+    "Divine Strength",
+    "Holy Conduit",
+    "Holy Power",
+    "Improved Judgement",
+    "Infusion of Light",
+    "Pursuit of Justice",
+    "Sanctified Judgement",
+    "Unyielding Faith"
+   ],
+   "long_only": []
+  }
+ ],
+ "start": {
+  "std": 0.625,
+  "std_se": 0.0027,
+  "long": 0.4836,
+  "long_se": 0.0017
+ },
+ "end": {
+  "std": 0.625,
+  "long": 0.4836
+ },
+ "moves": [],
+ "final": {
+  "Spiritual Focus": 5,
+  "Divine Strength": 5,
+  "Healing Light": 3,
+  "Reverence": 2,
+  "Divine Favor": 1,
+  "Illumination": 5,
+  "Holy Conduit": 1,
+  "Infusion of Light": 1,
+  "Oath of Light": 1,
+  "Consecrated Ground": 1,
+  "Holy Shock": 1,
+  "Boundless Light": 1,
+  "Holy Power": 4,
+  "Light's Vigil": 1,
+  "Divine Intellect": 5,
+  "Deflection": 2,
+  "Benediction": 5,
+  "Improved Judgement": 1,
+  "Conviction": 3,
+  "Sanctified Judgement": 1,
+  "Unyielding Faith": 1,
+  "Pursuit of Justice": 1
+ }
+}

@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > [Affliction-Demonology](affliction-demonology.md) > Level by level
 
-What the Affliction/Demonology hybrid (27 Affliction and 24 Demonology points) presses from level 1 to 60. It plays the Demonology list: the Voidwalker (from 10) holds the mob, **Searing Pain** (27) brands it for the Voidwalker, **Corruption** and **Bane of Agony** tick, and the wand does the rest. The Demonology points come first (levels 10-33) and make the Voidwalker a large share of your damage; the Affliction points (34-60) make your dots stronger. Each stage lists the full priority, so you can jump in at your level.
+What the Affliction/Demonology hybrid (27 Affliction and 24 Demonology points) presses from level 1 to 60. It plays the Demonology list: the Voidwalker (from 10) holds the mob, **Demonic Brand** (27) turns **Searing Pain** into extra Voidwalker hits, **Corruption** and **Bane of Agony** tick, and the wand does the rest. The Demonology points come first (levels 10-33) and make the Voidwalker a large share of your damage; the Affliction points (34-60) make your dots stronger. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 27/24/0 ([open the talent tree](https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12)), the one on the [Affliction-Demonology leveling page](affliction-demonology.md), which has the full talent table and the reasons behind the level-60 rotation.
 
@@ -126,7 +126,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Create Healthstone (10), Drain Soul (10), Summon Voidwalker (10), **Torment** (10), Health Funnel (12), Phase Shift (12), Curse of Recklessness (14), Drain Life (14), Fire Shield (14), Sacrifice (16), Unending Breath (16), Consume Shadows (18), Create Soulstone (18), Searing Pain (18), Curse of the Elements (20), Demon Armor (20), Lash of Pain (20), Rain of Fire (20), Ritual of Summoning (20), Summon Incubus (20), Summon Succubus (20), Eye of Kilrogg (22), Soothing Kiss (22), Drain Mana (24), Sense Demons (24), Suffering (24), Curse of Tongues (26), Detect Invisibility (26), Seduction (26).
 
-**New ranks to buy:** Bane of Agony at 18; Corruption at 14, 24; Immolate at 10, 20; Torment at 20.
+**New ranks to buy:** Bane of Agony at 18; Corruption at 14, 24; Drain Life at 22; Drain Soul at 24; Health Funnel at 20; Immolate at 10, 20; Life Tap at 16, 26; Shadow Bolt at 12, 20; Torment at 20.
 
 **Talents:** 10-14 Unholy Power, 15 Demonic Energies, 16-18 Improved Voidwalker, 19 Demonic Energies, 20 Improved Health Funnel, 21-24 Demonic Embrace, 25 Demonic Sacrifice, 26 Master Summoner.
 
@@ -158,7 +158,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Banish (28), Create Firestone (28), Devour Magic (30), Hellfire (30), Subjugate Demon (30), Summon Felhunter (30), Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32), Create Spellstone (36), Spell Lock (36), Howl of Terror (40).
 
-**New ranks to buy:** Bane of Agony at 28, 38; Corruption at 34; Immolate at 30, 40; Searing Pain at 34; Torment at 30, 40.
+**New ranks to buy:** Bane of Agony at 28, 38; Corruption at 34; Drain Life at 30, 38; Drain Soul at 38; Fear at 32; Health Funnel at 28, 36; Immolate at 30, 40; Life Tap at 36; Rain of Fire at 34; Searing Pain at 34; Shadow Bolt at 28, 36; Torment at 30, 40.
 
 **Talents:** 27-29 Demonic Brand, 30 Soul Link, 31-33 Demonic Knowledge, 34-35 Improved Life Tap, 36 Suppression, 37-40 Improved Corruption, 41 Suppression.
 
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Death Coil (42), Paranoia (42).
 
-**New ranks to buy:** Searing Pain at 42.
+**New ranks to buy:** Searing Pain at 42; Shadow Ward at 42.
 
 **Talents:** 42-43 Suppression.
 
@@ -213,7 +213,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Soul Fire (48), Inferno (50).
 
-**New ranks to buy:** Bane of Agony at 48; Corruption at 44; Searing Pain at 50; Torment at 50.
+**New ranks to buy:** Bane of Agony at 48; Banish at 48; Corruption at 44; Death Coil at 50; Drain Life at 46; Drain Soul at 52; Health Funnel at 44, 52; Immolate at 50; Life Tap at 46; Rain of Fire at 46; Searing Pain at 50; Shadow Bolt at 44, 52; Shadow Ward at 52; Torment at 50.
 
 **Talents:** 44 Amplify Curse, 45-46 Improved Bane of Agony, 47 Improved Corruption, 48 Pandemic, 49-51 Malevolence, 52 Pandemic, 53 Malevolence.
 
@@ -239,7 +239,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Bane of Doom (60), Ritual of Doom (60).
 
-**New ranks to buy:** Bane of Agony at 58; Corruption at 54, 60; Life Tap at 56; Searing Pain at 58; Siphon Life at 58; Torment at 60.
+**New ranks to buy:** Bane of Agony at 58; Corruption at 54, 60; Death Coil at 58; Drain Life at 54; Fear at 56; Health Funnel at 60; Howl of Terror at 54; Immolate at 60; Life Tap at 56; Rain of Fire at 58; Searing Pain at 58; Shadow Bolt at 60; Shadow Ward at 60; Siphon Life at 58; Torment at 60.
 
 **Talents:** 54 Siphon Life, 55 Pandemic, 56 Malevolence, 57 Suppression, 58 Grim Reach, 59-60 Shadow Mastery.
 
@@ -275,4 +275,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - This hybrid plays the Demonology list with the Voidwalker's talents first and Affliction's dot talents after. The Demonology and Affliction guides in this folder show the two specs it is made of; the leveling index ranks the specs by time per kill.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

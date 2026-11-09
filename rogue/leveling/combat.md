@@ -10,11 +10,9 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 75% of the damage at level 60 in the fight lab comes from melee, Sinister Strike, Backstab, Eviscerate, Blade Flurry (the spec's rule: at least 70%).
+**Signature spells:** 75% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Sinister Strike, Eviscerate; this build never casts Backstab, Blade Flurry) (the spec's rule: at least 70%).
 
 ## How to play
-
-**Not in this build:** **Adrenaline Rush**, **Blade Flurry** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
@@ -24,43 +22,40 @@
 2. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum.
 3. **Sinister Strike** until you have 5 combo points.
 4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
-5. **Cold Blood** right before an **Eviscerate** at 5 points.
+5. **Cold Blood** (a talent; 3-minute cooldown) right before an **Eviscerate** at 5 points.
 6. **Riposte** after you parry.
-7. **Blade Flurry** and **Adrenaline Rush** at the start of a fight.
-8. Do not interrupt a caster mob: let it cast and walk in.
-9. **Evasion** below half health while the mob still has more than 30% of its health.
+7. Do not interrupt a caster mob: let it cast and walk in.
+8. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
-Combat levels on short fights with two swords: open with **Garrote** from stealth, build 5 points with **Sinister Strike**, finish with **Eviscerate**, and let **Riposte**, your poisons, **Blade Flurry** and **Adrenaline Rush** do the rest. Fights are too short for **Slice and Dice** or **Cheap Shot** to pay.
+Combat levels on short fights with two swords: open with **Garrote** from stealth, build to 5 points with **Sinister Strike**, finish with **Eviscerate**, press **Shank** and **Riposte** whenever they are ready, and put **Cold Blood** before an **Eviscerate** from level 55. Fights are too short for **Slice and Dice** or **Cheap Shot** to pay.
 
 **Why it works**
 
-- Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed. The tuned rules never open with **Cheap Shot** (about 8% faster per kill): it gives 2 points and a stun but no damage, for 60 energy.
-- **Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Efficient Strikes** (levels 14 and 22) and **Flawless Execution** (25) make them cheaper, and the fight lab measured each about a second per kill at 60. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.
-- **Riposte** (level 20) lights up after you parry: 10 energy for 150% weapon damage and a 6-second disarm. It is your cheapest hit, so press it as soon as it lights up.
-- **Blade Flurry** (level 34; 20% attack speed) and **Adrenaline Rush** (level 40; double energy) last 15 seconds, about one fight: use them at the start of a fight whenever they are ready.
-- **Setup** (levels 57-59) adds a combo point every time you dodge the mob's swing: the fight lab measured it the most valuable talent of this build at 60, about 1.8 seconds per kill.
-- Skip **Slice and Dice**: in fights this short it does not pay back its 25 energy and the points it takes from **Eviscerate** (about 1.5% faster per kill without it).
-- Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (levels 41-42) gives your next **Sinister Strike** 40% more crit chance.
+- Open with **Garrote** (learned at 14) from stealth behind the mob: a combo point and an 18-second bleed. The tuned rules never open with **Cheap Shot** (about 6% faster per kill without it): it gives points and a stun but no damage, for 60 energy.
+- **Sinister Strike** builds to 5 points and **Eviscerate** finishes. **Efficient Strikes** (levels 14 and 22) cut **Sinister Strike** by 5 energy, **Flawless Execution** (25) cuts **Eviscerate** by 15, and **Coup de Grace** (10-12) and **Aggression** (28-30) make the hits harder. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.
+- **Riposte** (talent, level 21) lights up after you parry: 10 energy for 150% weapon damage and a 6-second disarm. It is your cheapest hit, so press it as soon as it lights up.
+- **Shank** (level 24) strikes with your off hand for 5 energy, cannot miss and gives 15 energy back on a 10-second cooldown (25 energy from rank 2 at 44). **Flash of Steel** (35-39) adds up to 15 more energy and cuts the cooldown by 2 seconds, so press it on cooldown unless the energy would go over your maximum.
+- **Cold Blood** (talent, level 55) makes your next **Eviscerate** a sure critical strike. Its cooldown is 3 minutes, so it comes up about every eighth pull: press it at 5 points whenever it is ready.
+- Skip **Slice and Dice**: in fights this short it does not pay back its energy and the points it takes from **Eviscerate** (about 4% to 5% faster per kill without it).
+- Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (levels 40-41) gives your next **Sinister Strike** 40% more crit chance.
 
 **Caveats**
 
-- This build has no **Cold Blood**: the steps' **Cold Blood** line applies only to a build that takes it.
-- **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.
-- With swords the tuned rules never **Kick** (about 0.8% faster per kill): a caster mob that stays back walks in once it has cast.
-- On a pull of two, **Blade Flurry** hits both mobs.
-- Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.6% faster per kill.
+- This build has no **Blade Flurry** or **Adrenaline Rush** (the list above leaves their line out) and no **Setup**, so **Evasion** is your only cooldown when a pull goes wrong.
+- **Improved Expose Armor** (54) opens **Venom** (60), which makes each **Shank** strengthen your poisons for 6 seconds; it and **Improved Slice and Dice** (57-59) improve spells this list never casts, and **Improved Poisons** (56) only helps your poisons.
+- **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.
+- With swords the tuned rules never **Kick** (about 0.5% to 1% faster per kill): a caster mob that stays back walks in once it has cast. **Backstab** and **Ambush** need a dagger, so they are not in the list.
+- Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.5% faster per kill.
 
 **When to change it**
 
-- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
-- In long fights such as dungeon bosses, **Slice and Dice** pays again: the raid list keeps it up from the first point.
+- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds).
+- In long fights such as dungeon bosses, **Slice and Dice** may pay again: the fight lab only plays solo mobs.
 - If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes.
-
-*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -103,10 +98,12 @@ One point per level from 10, in this order:
 | 50 | 21 |
 | 60 | 21 |
 
+**Points that do nothing for this spec:** **Improved Expose Armor** (1) only counts toward the points the tree needs before **Venom**.
+
 ## Other builds of this spec
 
 - [Combat — Leveling](../research/leveling/builds/combat-leveling.md) (21/30/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3251002020141-32503300100123214--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -1,0 +1,236 @@
+{
+ "class": "warlock",
+ "spec": "incinerate-raid",
+ "build": "destruction-incinerate-open-raid",
+ "setting": "raid",
+ "date": "2026-11-08",
+ "tank": false,
+ "removal": {
+  "Agonizing Flames": 0.06314756386632525,
+  "Bane": 0.10402374161047989,
+  "Cataclysm": 0.017971911821882736,
+  "Conflagrate": 0.118932556997971,
+  "Demonic Sacrifice": 0.10516853974814155,
+  "Fel Vitality": 0.008260395226091677,
+  "Fire and Brimstone": 0.013567497272503393,
+  "Improved Corruption": 0.03313019720704169,
+  "Improved Life Tap": 0.010714424175182091,
+  "Improved Shadow Bolt": 0.0504758799038133,
+  "Improved Voidwalker": -0.0,
+  "Ruin": 0.05431405788405652,
+  "Shadow and Flame": 0.18297869296352387,
+  "Suppression": 0.05617146276849172,
+  "Unholy Power": -0.0
+ },
+ "free": [
+  "Improved Voidwalker",
+  "Unholy Power"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Demonic Sacrifice"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Voidwalker",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Voidwalker",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Aegis",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Aegis",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Improved Voidwalker",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ]
+  ],
+  "Demonology": [
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ]
+  ]
+ }
+}

@@ -59,12 +59,6 @@ The Classic endgame Regrowth build, adapted: Nature's Grace (now +10% cast speed
 6. **Swiftmend** — Reachable at 16 points now — the Classic build had to give it up.
 7. **Nature's Swiftness** — Instant Healing Touch.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 9 | Improved Moonfire 2 + Nature's Reach 2 + Improved Entangling Roots 3 + Balance of Nature 1 + Insect Swarm 1 | Improved Wrath, Eclipse path | Balance gating fillers between tier 2 and Nature's Grace. |
-
 ## Rotation
 
 A healer: not in the community simulator, see the healer lab section of the [raid README](../README.md).

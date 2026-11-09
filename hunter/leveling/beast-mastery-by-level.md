@@ -112,6 +112,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Arcane Shot (6), **Hunter's Mark** (6), Concussive Shot (8), Demoralizing Screech (8), Scorpid Poison (8).
 
+**New ranks to buy:** Raptor Strike at 8.
+
 **Keys to set:** 1 = Hunter's Mark, macro; Shift+Mouse 5 = Arcane Shot; Shift+Q = Concussive Shot (at 8).
 
 **Your keys in this stage:** Mouse 4 Serpent Sting, 1 Hunter's Mark, 4 Raptor Strike.
@@ -159,7 +161,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Dismember (12), Distracting Shot (12), Dust Cloud (12), Mend Pet (12), Pinch (12), Savage Rend (12), Sonic Blast (12), Swipe (12), Tendon Rip (12), Web (12), Wing Clip (12), Eagle Eye (14), Eyes of the Beast (14), Scare Beast (14), Immolation Trap (16), Mongoose Bite (16), Multi-Shot (18), Track Undead (18).
 
-**New ranks to buy:** Serpent Sting at 18.
+**New ranks to buy:** Arcane Shot at 12; Raptor Strike at 16; Serpent Sting at 18.
 
 **Talents:** 12-14 Deadly Aspects, 15-16 Focused Fire, 17-19 Endurance Training.
 
@@ -186,7 +188,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Aimed Shot** (20), Arcane Resistance (20), Aspect of the Cheetah (20), Disengage (20), Fire Resistance (20), Freezing Trap (20), Frost Resistance (20), Nature Resistance (20), Shadow Resistance (20), Shell Shield (20), Trickster's Dance (20), Scorpid Sting (22), Beast Lore (24), Track Hidden (24).
 
-**New ranks to buy:** Hunter's Mark at 22.
+**New ranks to buy:** Arcane Shot at 20; Hunter's Mark at 22; Mend Pet at 20; Raptor Strike at 24.
 
 **Talents:** 20-24 Unleashed Fury, 25 Ferocity.
 
@@ -214,7 +216,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Rapid Fire** (26), Track Elementals (26), Frost Trap (28).
 
-**New ranks to buy:** Aimed Shot at 28; Serpent Sting at 26.
+**New ranks to buy:** Aimed Shot at 28; Arcane Shot at 28; Mend Pet at 28; Serpent Sting at 26.
 
 **Talents:** 26-29 Ferocity.
 
@@ -242,6 +244,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Aspect of the Beast (30), Dash (30), Dive (30), Feign Death (30), Lacerate (30), Prowl (30), Thunderstomp (30), Enchanted Flare (32), Flare (32), Track Demons (32).
 
+**New ranks to buy:** Mongoose Bite at 30; Raptor Strike at 32; Scare Beast at 30.
+
 **Talents:** 30-31 Bestial Discipline, 32 Spirit Bond, 33 Bestial Swiftness.
 
 **Keys to set:** F = Feign Death.
@@ -267,7 +271,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Explosive Trap (34), Viper Sting (36).
 
-**New ranks to buy:** Aimed Shot at 36; Serpent Sting at 34.
+**New ranks to buy:** Aimed Shot at 36; Arcane Shot at 36; Mend Pet at 36; Serpent Sting at 34; Wing Clip at 38.
 
 **Talents:** 34 Intimidation, 35-39 Frenzy.
 
@@ -295,7 +299,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Aspect of the Pack (40), Track Giants (40), Volley (40), Aspect of the Wild (46), Track Dragonkin (50), Tranquilizing Shot (60).
 
-**New ranks to buy:** Aimed Shot at 44, 52, 60; Hunter's Mark at 40, 58; Serpent Sting at 42, 50, 58, 60.
+**New ranks to buy:** Aimed Shot at 44, 52, 60; Arcane Shot at 44, 52, 60; Explosive Trap at 44, 54; Freezing Trap at 40, 60; Hunter's Mark at 40, 58; Mend Pet at 44, 52, 60; Mongoose Bite at 44, 58; Raptor Strike at 40, 48, 56; Scare Beast at 46; Serpent Sting at 42, 50, 58, 60; Volley at 50, 58; Wing Clip at 60.
 
 **Talents:** 40 Bestial Wrath, 41-45 Lethal Attacks, 46-50 Efficiency, 51-53 Improved Stings, 54-55 Careful Aim, 56 Trueshot Aura, 57-60 Improved Tracking.
 
@@ -323,7 +327,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Between fights
 
-- Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks, and revive it before the next pull if it died.
+- Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.
 - Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
 - Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks.
 
@@ -333,4 +337,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast-Marks plays this same rotation with more Marksmanship talents and no **Bestial Wrath**: [its guide](beast-marks-by-level.md). Marksmanship does more of the damage itself and finishes with **Arcane Shot**: [its guide](marksmanship-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

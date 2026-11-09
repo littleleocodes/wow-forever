@@ -57,8 +57,7 @@ Nature's Grasp is gone (likely baseline), so the Balance dip is Genesis, Nature'
 5. **Improved Entangling Roots** — Roots resist damage breaks.
 6. **Improved Regrowth** — Regrowth crits.
 7. **Nature's Focus** — Heal through damage.
-8. **Gift of the Earthmother** — Faster Rejuvenation/Swiftmend globals.
-9. **Nature's Splendor** — +3 s Rejuvenation and +6 s Regrowth: more healing per cast while being trained.
+8. **Nature's Splendor** — +3 s Rejuvenation and +6 s Regrowth: more healing per cast while being trained.
 
 ## Flex points
 
@@ -72,6 +71,7 @@ Nature's Grasp is gone (likely baseline), so the Balance dip is Genesis, Nature'
 - 2026-09-27 scenario audit: Moonglow 1 -> Nature's Splendor 1. Moonglow (beta) only cheapens damaging spells, which a Restoration druid rarely casts in PvP; its first rank stays as the Balance tier filler. Nature's Splendor lengthens Rejuvenation by 3 s and Regrowth by 6 s: more healing per global cooldown under pressure (PvP profile +0.9 points).
 - 2026-09-30: renamed from "Restoration / Balance — PvP Healer (14/0/37)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 14/0/37 -> 14/6/31; Gift of the Earthmother 1 gone; refill +1 Feral Swiftness (refill: the resto-heal model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Gift of the Earthmother; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

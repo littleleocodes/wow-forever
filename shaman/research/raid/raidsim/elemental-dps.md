@@ -4,19 +4,20 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| sim preset: Standard | - | 592 | 27 | +0.0% | 561 | 1 | - |
+| `elemental-ml-raid` | 31/11/9 | 592 | 27 | +0.0% | 534 | 1 | +94.0% |
+| sim preset: Standard | - | 592 | 27 | -0.0% | 561 | 1 | - |
 | `opt-elemental-dps-raid-dps` | 31/11/9 | 586 | 28 | -1.1% | 502 | 4 | +94.0% |
 | `elemental-raid-dps` | 29/22/0 | 562 | 33 | -5.1% | 536 | 12 | +85.3% |
-| sim preset: Mana Tide | - | 561 | 30 | -5.2% | 503 | 10 | - |
+| sim preset: Mana Tide | - | 561 | 30 | -5.3% | 503 | 10 | - |
 | `elemental-raid` | 30/8/13 | 560 | 30 | -5.4% | 532 | 9 | +86.5% |
 
-## Damage shares (`sim preset: Standard`, simulator actions)
+## Damage shares (`elemental-ml-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Lightning Bolt | 70.3% |
-| Flame Shock | 15.0% |
-| Chain Lightning | 8.2% |
+| Lightning Bolt | 70.2% |
+| Flame Shock | 15.1% |
+| Chain Lightning | 8.1% |
 | Searing Totem | 4.9% |
 | Demonic Rune | 1.6% |
 
@@ -25,6 +26,7 @@ Mapped onto the spec model's sources: `lightning_bolt` 71%, `flame_shock` 15%, `
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- elemental-ml-raid: `5503331000011351-05500001-0531`
 - sim preset: Standard: `5500331023001351-05500001-053`
 - opt-elemental-dps-raid-dps: `5500331003011351-05500001-0522`
 - elemental-raid-dps: `550233100200134-255000013400002`

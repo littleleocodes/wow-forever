@@ -12,55 +12,51 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 89% of the damage at level 60 in the fight lab comes from melee, Sinister Strike, Hemorrhage, Ghostly Strike, Ambush, Eviscerate (the spec's rule: at least 60%; **Ghostly Strike** cast in every fight).
+**Signature spells:** 89% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate; this build never casts Sinister Strike) (the spec's rule: at least 60%; **Ghostly Strike** cast at level 60).
 
 ## How to play
 
-**Not in this build:** **Boot Knife**, **Death Mark**, **Preparation**, **Riposte** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Boot Knife**, **Preparation** are talents this build does not take: where a line below names them, that part does not apply. The fight lab played the build without them.
 
 **Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper. **Premeditation** for two free combo points.
 
 **In the fight**, top to bottom:
 
-1. Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (the fight lab picks it from about level 22 with these builds).
+1. Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (the fight lab picks **Garrote** from about level 22 with the Subtlety build; the Combat-Subtlety build opens with **Ambush** on every pull from level 18).
 2. **Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.
 3. **Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.
 4. **Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.
-5. Once you have **Death Mark** (level 40): press it whenever it is ready, from one combo point on (the tuned rule), while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.
-6. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
-7. **Riposte** after you parry.
-8. **Kick** a caster mob's spell.
-9. **Evasion** below half health while the mob still has more than 30% of its health; if it is on cooldown, **Preparation** resets it.
+5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
+6. **Kick** a caster mob's spell.
+7. **Evasion** below half health while the mob still has more than 30% of its health; if it is on cooldown, **Preparation** resets it.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
-Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditation** and **Ambush** start the fight at up to 4 points, **Hemorrhage** builds, **Eviscerate** finishes, and **Setup**, **Ghostly Strike** and **Riposte** turn the mob's swings into combo points and free hits.
+Combat-Subtlety levels on Subtlety's openers and Combat's finishers: **Premeditation** (24) and **Ambush** start the fight at up to 4 points, **Sinister Strike** builds, **Ghostly Strike** (25) goes in on its cooldown, **Eviscerate** finishes, and **Hemorrhage** is the last point, at level 60.
 
 **Why it works**
 
-- From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.
-- Open with **Ambush**: with **Improved Ambush** (3 points) and **Initiative** it stays the better opener at every level in the fight lab, which almost never picks **Garrote** for this build.
-- **Hemorrhage** is your builder from level 32: 35 energy for 145% weapon damage with a dagger in your main hand (**Sinister Strike** before that).
-- **Ghostly Strike** (level 20) goes in on its 20-second cooldown: 180% weapon damage with a dagger and 15% more dodge for 7 seconds, about once per kill at 60. With **Setup** (levels 15-17) every dodge adds a combo point; the fight lab measured **Setup** the most valuable talent of this build, about 2.2 seconds per kill at 60.
-- At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. At 5 points **Relentless Strikes** always refunds 25 energy and **Ruthlessness** often adds a point back.
-- **Riposte** after a parry is your cheapest hit: 10 energy for 150% weapon damage and a 6-second disarm.
+- From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** (1 rank at 23, all 3 by 53) makes your opener add a second one: up to 4 points before your first builder.
+- Open with **Ambush** on every pull once you have it (level 18): **Opportunity** (5 ranks by 16) and **Improved Ambush** (17-19) make it hit harder and crit more. **Garrote** is the opener before that (14-17); later the fight lab casts it after a **Ghostly Strike**, whose next **Garrote** needs no stealth (**Dirty Deeds** lets it land from the front), when no bleed is on the mob and it has more than half its health.
+- **Sinister Strike** is your builder all the way to 59: **Hemorrhage** needs 3 ranks of **Serrated Blades** behind it and arrives with the last point, at 60. **Efficient Strikes** (34-35) cut **Sinister Strike**'s cost by 5.
+- **Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 15% more dodge for 7 seconds. With **Setup** (1 rank at 12, 15%) a dodge sometimes adds a combo point.
+- At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. **Coup de Grace** (26-28) makes it hit 20% harder.
+- Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (29-30) gives your next strike 40% more crit chance.
 
 **Caveats**
 
-- Skip **Slice and Dice** (about 3.7% faster per kill without it). **Kidney Shot** is not in the list: the tuned rules never cast it (about 0.9% faster per kill). Keep it for an add or a pull that goes wrong.
-- Keep a dagger in your main hand: **Ambush** needs one, and **Hemorrhage** and **Ghostly Strike** hit much harder with it.
-- This build has no **Preparation**: when **Evasion** is on cooldown, there is no second one.
-- Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.3% faster per kill.
+- Skip **Slice and Dice** (about 5% faster per kill without it). **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.
+- Keep a dagger in your main hand: **Ambush** needs one, and **Ghostly Strike** and **Hemorrhage** hit much harder with it.
+- This build has no **Riposte**, **Preparation**, **Death Mark**, **Boot Knife** or **Relentless Strikes**: the list drops the lines that lead with them, and where it still names **Boot Knife** or **Preparation**, that part does not apply. **Evasion** is your only cooldown when a pull goes wrong.
+- Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.5% faster per kill.
 - **Kick** a caster mob's spell: the tuned rules keep it.
 
 **When to change it**
 
-- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
+- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** sometimes a combo point).
 - If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes.
-
-*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -106,5 +102,5 @@ One point per level from 10, in this order:
 | 60 | 21 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

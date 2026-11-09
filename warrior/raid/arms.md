@@ -17,7 +17,7 @@
 5. **Execute** when the target is below 20% health
 6. **Spearing Strike**
 7. **Hamstring**
-8. **Bloodrage** when you have less than 45 rage
+8. **Bloodrage** when you have less than 45 rage; no global cooldown, so press it alongside the others
 
 Between these, your white swings do the rest.
 
@@ -30,11 +30,11 @@ Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Re
 **Why it works**
 
 - **Overpower** is at the top: 5 rage for a full weapon hit with 50% more crit chance (**Improved Overpower**), and it stays lit for only 5 to 6 seconds. Most of yours come from **Bloodthrill**, not from dodges: each main-hand hit on a target with your **Rend** has a 20% chance to light it up. The simulator measured 2% more damage with **Overpower** first.
-- **Slam** comes next. With **Improved Slam** it is a 1-second cast on a 15-second cooldown that no longer delays your swing, so it costs only 15 rage and a short global cooldown; the simulator measured it best right under **Overpower**.
-- **Rend** goes before **Mortal Strike** because **Bloodthrill** only works while it ticks: without it, **Overpower** lights up on dodges alone. It lasts 21 seconds, about 9 casts a fight.
+- **Slam** comes next. With both ranks of **Improved Slam** it is a 1-second cast (1.5 base) on a 10-second cooldown (15 base) that no longer delays your swing, so it costs only 15 rage and a short global cooldown; the simulator measured it best right under **Overpower**.
+- **Rend** goes before **Mortal Strike** because **Bloodthrill** only works while it ticks: without it, **Overpower** lights up on dodges alone. It lasts 21 seconds, about 8 casts a fight; the list skips it in the last 6 seconds of the fight (0.3% in the simulator).
 - **Execute** stays below **Mortal Strike** even under 20%. It spends all your rage (600 damage plus 15 per extra rage point), so the rotation uses **Overpower**, **Slam**, **Rend** and **Mortal Strike** whenever they are ready and lets **Execute** take what is left; the simulator measured 1.3% more damage than with **Execute** at the top.
 - **Spearing Strike** (15 rage, 20-second cooldown) deals only 40% of your weapon damage against most bosses, so it sits under your main attacks and above the filler.
-- **Hamstring**, not **Bloodrage**, is your real filler. For 10 rage it is another main-hand hit that can light up **Overpower** through **Bloodthrill** and, in a raid, trigger a shaman's Windfury Totem; the simulator measured about 1% more damage casting it freely than only above 80 rage. **Bloodrage** is a 1-minute rage cooldown for when you run short: the rotation uses it under 90 rage when nothing else is ready, once or twice a fight.
+- **Hamstring**, not **Bloodrage**, is your real filler. For 10 rage it is another main-hand hit that can light up **Overpower** through **Bloodthrill** and, in a raid, trigger a shaman's Windfury Totem; the simulator measured about 1% more damage casting it freely than only above 80 rage. **Bloodrage** is a 1-minute rage cooldown for when you run short: the rotation uses it only under 45 rage, 2 or 3 times a fight, which the simulator measured 0.6% better than under 90.
 
 **Caveats**
 
@@ -49,22 +49,29 @@ Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Re
 - If the boss has no **Sunder Armor** and no Expose Armor, put one **Sunder Armor** on it. That is the full list's only **Sunder Armor** line; it never fired because the simulator's raid already carries the tank's 5 stacks.
 - Against Giants and Dragonkin, **Spearing Strike** deals an extra 80% of weapon damage (three times as much), so press it right after **Mortal Strike**. The simulator's boss is neither, so that order is untested.
 
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Arms | 34 | Deflection 5, Improved Rend 3, Improved Overpower 2, Improved Tactical Mastery 3, Anger Management 1, Deep Wounds 3, Impale 2, Spearing Strike 1, Two-Handed Weapon Specialization 3, Bloodthrill 2, Sweeping Strikes 1, Weaponmaster 5, Improved Slam 2, Mortal Strike 1 |
+| Fury | 17 | Booming Voice 5, Cruelty 5, Unbridled Wrath 5, Improved Execute 2 |
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 813 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 845 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 879 | [39/10/2](https://talentsforever.com/warrior/60/30323213132215201-0505-2-12) |
-| Phase 1 BiS | 886 | [39/9/3](https://talentsforever.com/warrior/60/30323213132215201-0504-21-12) |
+| Pre-BiS | 820 | [32/17/2](https://talentsforever.com/warrior/60/30303213132215201-55050000002-2-12) |
+| Phase 1 BiS | 868 | [33/17/1](https://talentsforever.com/warrior/60/30303213132215211-25050003002-1-12) (as good as this build in this gear) |
 
-**The gear** (average item level: Pre-BiS 65.4; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
+
+**The gear** (average item level: Pre-BiS 61.6; Phase 1 BiS 62.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -87,10 +94,12 @@ Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Re
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHFUU3jM/O2dPmu30JtLJjT/TRetm68T5yaRJFbMpCuqLRR+UvJhJsu2u1CTs7EP7lkQREQktYmEDmvgTCdEqFo2lSEULWoVCIzTgH4ZUUNSH+qaiVu7sblKT4ENg9T4MZ+85557vO9+5s0PXI+hggAlp6Ic8jMIYwNMAMwBzAGxb5JWEtwv4V9tR0YEfpTguDxgrDaTgUyeBFFweA9Lw3CwYi3HS8LfXwbicJA2fKIPxjTBefA2MaY0U/PUFEfnLmyDSNbw8Bsa3SVLwzxPinEuz4vnuRZ0UPP6BThpOPgfGz0mKkYKfL+qpW/SPC+nvpuHA0iQ8A9JEYQoSrwRvBF/2Ts/CPEjPFq7ARGE/RrAhC2ckw7M913cdz/Fc3/Fd27Fs3/Yt97ykrEg/NhIjjaskY7kppZFKsuWELMErex/2rZqX+liW30Uec6g104IyS34EDaSmVbzQxyRdFUEEDrGUTslTVdfZhyOXVourHqafeIgRRx4nRV88DqyTd9Ae3kY7MttRYdL9MR4h8eyQmjMM49EWEVLcdZx2PxS1cK6f3YjA+fosp+p/r5F53KE2fuv6CNcOiWX06rlIcVKcDjvkCkkGZ3u5vxkYdyMYpyMCEycFv54BdgNvXZ/UaYeCJP50FpjPvc3AeJuA8Spp+vuzW0nDl7/fUrXxd7ac9hawQ8Ho4UdHRkuma7udlmNbnrPPHMwHw4dyQ+ZI0QyGhnJD5sBRs5TPmcWRUlAqjAybYS4oDubNdJjLmUHx8dAaCEqlwzmrGBSGrFqUVYlqfywcGW7jd9OdbB/t5jcTTaFGsn51j85r9vhta/ZEQeekZ5Ki28WYwEqS41dVFmIJn8rkFYhVh1coYibxWCN7fhNC7t76EMrQLnYTNaQSpLlisBf6ItSVgYhQd1YmeqGvdmvw7TlgTXwHqZ9JEoJQJK3iwkuwGjD5xwNsG6fIo+DSGWCjbPAfjOxuy+3aCiM3/29sEmtN7OU95LDbN/aZWnlLjWNNmQ67RoYITUir+MUMsNJGGWy3PjJEwNMyXuhmT/6H41xphHxNI/xI7KvN7D4Efg/dwbqjN67KGuZhVc7qJWz3Q+IZA1VG81Br/JpPnIjnjgEL1xES4nfXh1D0WseLMxuL1vEORUX1T1Z0tpNfR9tSRHgKRBvLTdU/N0P+QToPVyR3XI5Fqzk7LzVQgjSU02D/Dqm/pITYj40dzLZMlcX6tGfXwWgt9bjLkqGYPZnTUux/WaVszarr2n2ybnW6o+eDr2Z7qxvZfvGhVYboR2y5JyPj6Z37r/kes6ELsnAvHIBHIA+jcASOSH8PAC763Kg=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warrior/dps/#eJzEVl1oHFUU3jM/O2dPku30JtLJjT/TRetm68T5yaRJFbMpCuqLRR+UvJhJsu2u1CTs7EP7lkQfRCS2iIUENPEnEuIfFo2lSEQLWoVCIxhQKoa0oKgP9U1FrdzZ3aQmwYfA2vswnL3nnHu+73znzg7diKCDASakoQ/yMAKjAM8AzADMAbD6yCsJbyfwiztQ0YEfoziu9BurdaTg5eeBFFwZBdLw7CwYS3HS8Pc3wbiUJA2fmgTjO2G8/AYY0xop+NtLIvLXd0Cka3hpFIzvk6TgXyfFOYuz4vnBBZ0UPPGxThpOvADGL0mKkYJfLemp2/TPCunL03BweQKeBWm8MAWJ14K3gm97pmdhHqTnCldgvHAAI9iQhTNSs2d7ru86nuO5vuO7tmPZvt1uuc45SVmVfmogRhpXScbJxpRGKsmWE7IEL+990rtmft3Lsvwe8phDLZlmlFnyU6gjNa3i+V4m6aoIInCIpXRKnqq4Fh+NXFo1rnKYfvIRRhx5nBR96QSwDt5Oe3kr7czsQIVJD8Z4hMSzQ2rKMIxHW0RIcddx2vxQ1MK5PnYzAucbs5yK/8MG5nGHWvntGyNcOySW0SvnIsVJcdrtkCskGZzt4/5WYNzNYJz2CEycFLw4A+wm3rIxqcMOBUn8eRGYz72twHhbgPHKafpHs9tJw1d/2Fa1sfe3nfYusMPByJHHh0dKpmu7HZZjW56z3xzIB0OHc4PmcNEMBgdzg2b/MbOUz5nF4VJQKgwPmWEuKA7kzXSYy5lB8cnQ6g9KpSM5qxgUBq1qlFWOansiHB5q5ffS3Ww/7eG3Ek2hRrJ+da/Oq/bYHev2eEHnpGeSotvFmMBKkuNXVBZiCZ/K5FWIVYZXKGIm8XgDe3ELQu6+2hDK0G52C9WlEqS5YrAXeiPU5YGIUHeUJ3qht3pr8L05YI18J6lfShKCUCSt4sIrsBYw8edDrJ5T5FFw+QywETbwL0Z2l+V2boeRm/8vNon1JvbwbnLYnZv7TC28ucqxqky7XSVDhCakVfxmBlhpswy2WxsZIuBpGc93saf/x3EuN0K+phF+JPbVJvYAAr+P7mJd0RtXZXXzsCZn5RK2+SHxjIEqo3moNn7dJ07Es8eBhRsICfG7akMoeq3jhZnNRWt4h6Ki+uerOtvFb6D6FBGeAtHGycbKn5sh/yidgyuSOybHotWUnZfqKEEaymmw/4DU31JC7MdGD2WbpybF+qJ796FoLXe7K5KhmN2Z01LsuqxStmrVdO15u2Z1uqLnw69neyob2T7xpTUJ0Y/YSndGxtO7DlzzQWZDJ2ThfjgIj0EeRuAoHJX+GQCqB90D).
 
+**Points that do nothing for this spec:** **Improved Tactical Mastery** (3) only counts toward the points the tree needs before **Anger Management**.
+
 ## Other builds of this spec
 
-- [Arms — Raid](../research/raid/builds/arms-ml-raid.md) (39/10/2, 809 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/35313213132215211-0505-2-12)
+- [Arms — Raid](../research/raid/builds/arms-ml-raid.md) (39/10/2, 841 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/35313213132215211-0505-2-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 02bd77c (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
 

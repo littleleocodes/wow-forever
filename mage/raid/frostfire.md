@@ -54,6 +54,13 @@ Frostfire is a Fire list whose main spell is **Frostfire Bolt**: it counts as bo
 - In the last 3 seconds, **Scorch** instead of starting a **Frostfire Bolt**.
 - Out of mana with the fight going on: **Evocation** if it is back, else **Scorch** (150 mana) keeps the stacks and **Heating Up** moving until a gem or potion returns.
 
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Fire | 29 | Accelerant 5, Incineration 3, Ignite 5, Improved Fire Blast 2, Pyroblast 1, Heating Up 1, Improved Scorch 3, Master of Elements 3, Critical Mass 3, Fire Power 3 |
+| Frost | 22 | Frost Warding 2, Improved Frostbolt 1, Precision 3, Ice Shards 5, Frost Channeling 3, Ice Lance 1, Arctic Reach 1, Ice Block 1, Shatter 3, Fingers of Frost 2 |
+
 ## The numbers
 
 | Setting | DPS |
@@ -65,7 +72,9 @@ Frostfire is a Fire list whose main spell is **Frostfire Bolt**: it counts as bo
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 821 | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-12) |
-| Phase 1 BiS | 842 | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-12) (ties this build) |
+| Phase 1 BiS | 842 | [0/29/22](https://talentsforever.com/mage/60/-4550000123012303-2135000301113002-12) (as good as this build in this gear) |
+
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
 **The gear** (average item level: Pre-BiS 65.4; Phase 1 BiS 66.2; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -91,11 +100,13 @@ Frostfire is a Fire list whose main spell is **Frostfire Bolt**: it counts as bo
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzkVk1sG0UU9pvdxOOXNHGmULbbHKaGkGQTJ/uTVEmQiFsJUUpRKk6IA3Tt3Y0XHK/l3UTtLUAPqBIpLVWrhCKhiAqKQEhFQJMLwhfMpao4gASHREEVCHEgQarEBaFZJ2249NZwyJM8s/PefO/NfO95ZrCTQhoU4NADJ6EIFZgFeBPgfYCPAFhrbCXCOgLq+Q5K01SdwSRdmgXldgvKdO0yoEx/vyjam28DNtN6WfmlDZO0dhWUn9tQorUyyvT2OcAkXW7AkvSLWVDOJVGmP10VyLk/0ijTL2+J9vzXaUzSd78Cpb4XZfrXJTHh2pX2TH+67vfcnAP9Tv7EW4twFsgZ/wKQO/kFIL8e/hjoh1fgk7Mw56/CGf8IjZcOOVgmmezQ8LCu67phWvHPypqGJTSWbhiGpetmncAt0rJGLrbjY0jVZpTp3xcgo1wnD1OJpRbIpkZYkGQNVmGuXSm9HFQiburmoayhZy1jjBeKdnnSdXhQ5bbjuA7Pn+ZR0eXVILIjPyjz0LWrhSLvCV2Xe9UgjDy/6martu9kt+ZkG3MGXgmDcq+aVJtQSn/7JJsnbB22xxJ+A8/zC75d4qE/NV2yo6DaHfIpe9IddCrhoF0phYOelx+wK6XYHbcjPjxUcO3CIWuE205QiVyH99yNXLInuT3t+BG3vcitNpbuZit+eYz3mQN6F/eChtYtR9XT3SHPu2HE89N+yeF+mdvcmy6VuNhOP+8zBowuHgUCaTaQfhTykh+KoDEm7OeG3q/rOvf8yWIU8pgh1wm5ye2yw61e9VHcq3VQiZEXE2pqQ9rMwxq0YOqpmaAQs8pWYKfSMYNT7FV8Qh1FVVOoxPbUAFGmn30OjKSJyBXCMB7Q9gvb8n9scekYOvar2n3AQ9iaQaQb0IQSXZkQHunKBLu0O7PPsVNTKbD2GrTeY0qBTaLHEuza7iTGwl7Wjfu0hyiwVA3E32J9SWnQYuGeTAumNmDboSV6dnl3cnUQFW0flVhLDSjK9L1lZauATNHRHyfYGzt2gKiY1tpoMyPHEiIvSKxQ9PSb2rM7fKnQlQlF0hZh+0H6jPo0djK1UUDX4wJarj+Hqe9l8bm0ftzs3rwel9aP44HXQUGJvvOS2qG1iz3lE2oSm1AaHe1ix9Sj2Kf2NlzdxTeGi7A1vBfkPr5+I3X4k5ivSYlYhnIxHgmFzD8kJVSJWS+3f2FeyHfjB71Yfhg3V4ki83HtBkn8LxLltr4eqDz+6QOLMxq3z3+QO7ypyJ0Uz8N5iAeJ1XFNojceObLtFanDCOTgKJyAF6AIFTgFp8i/AwD3I4ZR); Phase 1 BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzkVk9MHFUY3+/NwL79oLC8ap1OObyuIjCwMH+gAUxk28RYaw2NJ+NBO7szw44uO5udgbQ3VA6miW2ktQasiSE2WqMxqVELN9eDa0xM40EPHiA1jcaTYNLES2PeLFC89FY88CX73rzve7/ve+/3ffvew04KaVCAQw+chiJUYBbgTYAPAD4GYK2xlQjrCKhvd1CapuoMJunyLCi3W1Cmd+cBZfrnJdF+exWwmdbLym9tmKS1q6D82oYSrZVRprcvACbpSgOWpF/OgnIhiTL94R3Ybr+6mUaZzl0UM9/7GpT6fpTp35eF6dqV9kx/uu73/Hge9Dv5U28twTkgc/48kDv5RSC/H/0E6EdX4NNzcN5fgzn/GI2XDjlYIZns0PCwruu6YVrxz8qahiU0lm4YhqXrZp3ATdJyi1xqx8eQqs0o03/mIaNcJw9TiaUWyaZGWJBkDVZhrl0pvRxUIm7q5pGsoWctY4wXinZ50nV4UOW247gOz5/lUdHl1SCyIz8o89C1q4Ui7wldl3vVIIw8v+pmq7bvZLfmZBtzBl4Jg3KvmlSbUEp/9yRbIGwddsYSfgPP8wu+XeKhPzVdsqOg2h3yKXvSHXQq4aBdKYWDnpcfsCul2B23Iz48VHDtwhFrhNtOUIlch/dsRy7Zk9yedvyI217kVhtLd7MVvzzG+8wBvYt7QUPrlqPq2e6Q590w4vlpv+Rwv8xt7k2XSlxsp5/3GQNGF48CgTQbSD8KeckPRdAYE/ZzQ+/XdZ17/mQxCnnMkOuE3OR22eFWr/oo7tc6qMTIiwk1tSFt5uEWtGDqqZmgELPKVmG30jGDU+xVfEIdRVVTqMT21QBRpp9/AYykicgVwjAe0g4K28p/bHHpGDr2q9p9wEPYmkGkG9CEEl2dEB7p6gS7vDezz7FTUymw9hq03mNKgU2ixxLs2t4kxsJe1o0HtIcosFQNxN9ifVlp0GLhvkwLpjZgx6Elevbu3uTqMCraASqxlhpQlOn7K8pWAZmio79MsDd27QBRMa210WZGTiREXpBYoejpN7Vnd/lSoasTiqQtwc6D9Bn1aexkaqOArscFtFJ/DlM/yeJzef2k2b15PS6vn8RDr4OCEr34ktqhtYs95RNqEptQGh3tYifU49in9jZcbeMbwyXYGt4Lch9ff5A6/EXM16RELEO5GI+EQuYuSQlVYtbLHVxcEPL9+GEvlp/HzTWiyHxcu0ES/4tEua2vByqPf/bA4ozG7fMf5o5uKnKnxfNwAeJBYm1ck+iNR47teEXqMAI5OA6n4AUoQgXOwBny7wC7KYXi).
 
+**Points that do nothing for this spec:** **Improved Frostbolt** (1) only counts toward the points the tree needs before **Arctic Reach**, **Fingers of Frost**, **Ice Block** and **Shatter**; **Ice Block** (1) only counts toward the points the tree needs before **Fingers of Frost**.
+
 ## Other builds of this spec
 
 - [Frostfire — Fingers of Frost / Ice Lance](../research/raid/builds/frostfire-fingers-of-frost-raid.md) (0/29/22, 751 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/-3551000113013303-2135000301113002-12)
 - [Frostfire — Frostfire Bolt](../research/raid/builds/frostfire-raid.md) (7/31/13, 694 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0410011-32510301230133031-20350003-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 5ad0894 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 5ad0894 (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

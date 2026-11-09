@@ -61,16 +61,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Rank among our builds and the community simulator's
 
-**4 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 17/32/2 | 578 | +0.0% | 997 | +0.0% | 9 s |
-| 2 | *Standard* | community simulator | - | 577 | -0.1% | 996 | -0.1% | 11 s |
-| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 19/32/0 | 562 | -2.8% | 963 | -3.4% | 5 s |
-| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 549 | -5.1% | 915 | -8.3% | 17 s |
-| 5 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 538 | -6.8% | 930 | -6.8% | 19 s |
-| 6 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 538 | -6.9% | 917 | -8.0% | 13 s |
+| 1 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 17/31/3 | 578 | +0.0% | 998 | +0.0% | 9 s |
+| 2 | *Standard* | community simulator | - | 577 | -0.1% | 996 | -0.2% | 11 s |
+| 3 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 549 | -5.1% | 915 | -8.3% | 17 s |
+| 4 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 538 | -6.8% | 930 | -6.8% | 19 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 538 | -7.0% | 928 | -7.0% | 19 s |
 
 ## Rotation (community simulator, training dummy)
 

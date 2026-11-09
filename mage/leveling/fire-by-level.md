@@ -38,7 +38,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | A second mob | — | **Polymorph** from 8 | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
 | 3 | Emergency | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield | Mana Shield | Mana Shield |
 | 4 | Mana back between fights | — | — | — | **Evocation** | Evocation | Evocation | Evocation | Evocation | Evocation |
-| C | The slow when Frost Nova is down, and packs | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold | **Blast Wave** | Blast Wave |
+| C | Packs: the cone, then Blast Wave from 49 for when Frost Nova is down | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold | **Blast Wave** | Blast Wave |
 | Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand | Wand | Wand |
 
 **Action bar 2: the same keys with Shift (packs, wards, emergencies)**
@@ -56,7 +56,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+3 | Lift a curse | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
 | Shift+4 | Free | — | — | — | — | — | — | — | — | — |
 | Shift+C | Packs: the cone | — | — | — | — | — | — | — | **Cone of Cold** | Cone of Cold |
-| Shift+X | Free | — | — | — | — | — | — | — | — | — |
+| Shift+X | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 
 - The [Frost guide](frost-by-level.md)'s keys, with the changes Fire needs: Q keeps **Fireball** to 60 (Fire never casts **Frostbolt**), **Pyroblast** goes on 1 (the free-Missiles key of the Arcane-Frost build), **Blast Wave** takes C at 49 and **Cone of Cold** moves to Shift+C, **Flamestrike** takes Shift+R in place of **Blizzard**, **Ice Block** goes on Shift+F, and Shift+Q holds the **Combustion** macro.
 - **Ice Lance** stays on R, as in every mage guide; it arrives at 31 in this build.
@@ -70,7 +70,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Arcane Intellect (1), **Fireball** (1), Frost Armor (1), Conjure Water (4), Frostbolt (4).
 
-**Keys to set:** Q = Fireball; Middle mouse = Wand.
+**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+X = Healing potion macro.
 
 **Your keys in this stage:** Q Fireball.
 
@@ -134,7 +134,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blink (20), Blizzard (20), Evocation (20), Fire Ward (20), Mana Shield (20), Frost Ward (22), Scorch (22).
 
-**New ranks to buy:** Fire Blast at 22.
+**New ranks to buy:** Arcane Explosion at 22; Fire Blast at 22; Polymorph at 20.
 
 **Talents:** 20 Pyroblast, 21-22 Precision, 23 Frost Warding.
 
@@ -163,7 +163,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Counterspell** (24), Cone of Cold (26), Conjure Mana Agate (28), Ice Armor (30).
 
-**New ranks to buy:** Fire Blast at 30; Fireball at 24, 30; Frost Nova at 26; Pyroblast at 24, 30.
+**New ranks to buy:** Arcane Explosion at 30; Fire Blast at 30; Fire Ward at 30; Fireball at 24, 30; Flamestrike at 24; Frost Nova at 26; Mana Shield at 28; Pyroblast at 24, 30.
 
 **Talents:** 24 Frost Warding, 25 Precision, 26 Permafrost, 27-29 Frostbite, 30 Ice Shards.
 
@@ -193,7 +193,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Mage Armor (34), Conjure Mana Jade (38), Frostfire Bolt (40).
 
-**New ranks to buy:** Fire Blast at 38; Fireball at 36, 42; Frost Nova at 40; Ice Lance at 34, 42; Pyroblast at 36, 42.
+**New ranks to buy:** Arcane Explosion at 38; Cone of Cold at 34, 42; Fire Blast at 38; Fire Ward at 40; Fireball at 36, 42; Flamestrike at 32, 40; Frost Nova at 40; Frost Ward at 32, 42; Ice Lance at 34, 42; Mana Shield at 36; Polymorph at 40; Pyroblast at 36, 42.
 
 **Talents:** 31 Ice Lance, 32-35 Ice Shards, 36 Ice Block, 37-39 Shatter, 40-41 Improved Fire Blast, 42-43 Burning Soul.
 
@@ -224,7 +224,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Conjure Mana Citrine (48).
 
-**New ranks to buy:** Fire Blast at 46; Fireball at 48; Ice Lance at 48; Pyroblast at 48.
+**New ranks to buy:** Arcane Explosion at 46; Fire Blast at 46; Fireball at 48; Flamestrike at 48; Ice Lance at 48; Mana Shield at 44; Pyroblast at 48.
 
 **Talents:** 44 Heating Up, 45 Burning Soul, 46 Impact, 47-48 Improved Scorch.
 
@@ -253,7 +253,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Arcane Brilliance (56), Conjure Mana Ruby (58).
 
-**New ranks to buy:** Blast Wave at 52; Fire Blast at 54; Fireball at 54; Frost Nova at 54; Ice Lance at 56; Pyroblast at 54.
+**New ranks to buy:** Arcane Explosion at 54; Blast Wave at 52; Cone of Cold at 50, 58; Fire Blast at 54; Fire Ward at 50; Fireball at 54; Flamestrike at 56; Frost Nova at 54; Frost Ward at 52; Ice Lance at 56; Mana Shield at 52; Pyroblast at 54.
 
 **Talents:** 49 Blast Wave, 50 Improved Scorch, 51-53 Critical Mass, 54-56 Fire Power, 57-58 Master of Elements.
 
@@ -283,7 +283,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Levels 59-60: Combustion on the pull
 
-**New ranks to buy:** Blast Wave at 60; Fireball at 60; Pyroblast at 60.
+**New ranks to buy:** Blast Wave at 60; Fire Ward at 60; Fireball at 60; Frost Ward at 60; Mana Shield at 60; Polymorph at 60; Pyroblast at 60.
 
 **Talents:** 59 Combustion, 60 Master of Elements.
 
@@ -321,7 +321,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Other ways to level this class
 
 - Packs: **Flamestrike** and, from 49, **Blast Wave** hit every mob around you. The fight lab measured single pulls only for Fire.
-- [Arcane-Frost](arcane-frost-by-level.md) and [Frost](frost-by-level.md) are the recommended mage leveling specs in the fight lab.
+- [Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab; [Frost](frost-by-level.md) is close behind.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

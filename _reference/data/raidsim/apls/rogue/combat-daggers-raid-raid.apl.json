@@ -11,7 +11,7 @@
    },
    "doAtValue": {
     "const": {
-     "val": "-2s"
+     "val": "-3"
     }
    }
   },
@@ -31,6 +31,11 @@
   },
   {
    "action": {
+    "condition": {
+     "variableRef": {
+      "name": "Start In Stealth"
+     }
+    },
     "castSpell": {
      "spellId": {
       "spellId": 1787,
@@ -56,8 +61,7 @@
     "groupReference": {
      "groupName": "Maintain Expose"
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -65,33 +69,13 @@
      "and": {
       "vals": [
        {
-        "or": {
-         "vals": [
-          {
-           "auraIsActive": {
-            "auraId": {
-             "spellId": 462707
-            },
-            "includeReactionTime": true
-           }
-          },
-          {
-           "and": {
-            "vals": [
-             {
-              "variableRef": {
-               "name": "Use Stealth/Vanish for Damage"
-              }
-             },
-             {
-              "variableRef": {
-               "name": "Use Ambush Opener"
-              }
-             }
-            ]
-           }
-          }
-         ]
+        "variableRef": {
+         "name": "Use Vanish for Damage"
+        }
+       },
+       {
+        "variableRef": {
+         "name": "Use Ambush Opener"
         }
        },
        {
@@ -107,8 +91,7 @@
       "spellId": 11269
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -126,7 +109,7 @@
        },
        {
         "variableRef": {
-         "name": "Use Stealth/Vanish for Damage"
+         "name": "Use Vanish for Damage"
         }
        },
        {
@@ -153,8 +136,7 @@
       "spellId": 11290
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -198,7 +180,7 @@
        },
        {
         "variableRef": {
-         "name": "Use Stealth/Vanish for Damage"
+         "name": "Use Vanish for Damage"
         }
        },
        {
@@ -214,6 +196,19 @@
           }
          }
         }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
        }
       ]
      }
@@ -224,8 +219,7 @@
       "rank": 2
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -254,7 +248,7 @@
        },
        {
         "variableRef": {
-         "name": "Use Stealth/Vanish for Damage"
+         "name": "Use Vanish for Damage"
         }
        },
        {
@@ -270,6 +264,19 @@
           }
          }
         }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
        }
       ]
      }
@@ -280,8 +287,7 @@
       "rank": 2
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -308,22 +314,182 @@
       "spellId": 14185
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "spellIsKnown": {
+           "spellId": {
+            "spellId": 13877
+           }
+          }
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 13877
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20572
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "spellIsReady": {
+         "spellId": {
+          "spellId": 13877
+         }
+        }
+       },
+       {
+        "spellIsKnown": {
+         "spellId": {
+          "spellId": 20572
+         }
+        }
+       }
+      ]
+     }
+    },
+    "strictSequence": {
+     "actions": [
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 20572
+        }
+       }
+      },
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 13877
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 6774
+      },
+      "includeReactionTime": true
+     }
+    },
     "autocastOtherCooldowns": {}
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
     "groupReference": {
      "groupName": "Energy Pooling Checks"
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "and": {
+         "vals": [
+          {
+           "variableRef": {
+            "name": "Boot Knife Known"
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentEnergy": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "80"
+             }
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "not": {
+            "val": {
+             "variableRef": {
+              "name": "Boot Knife Known"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "currentEnergy": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "80"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1329549
+     }
+    }
+   }
   },
   {
    "action": {
@@ -381,8 +547,7 @@
       "spellId": 13750
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -465,8 +630,7 @@
       }
      ]
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -516,35 +680,7 @@
       }
      ]
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "spellTimeToReady": {
-        "spellId": {
-         "spellId": 13750
-        }
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "1.9m"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 20572
-     }
-    }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -570,8 +706,7 @@
       "spellId": 1259799
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -585,8 +720,7 @@
       "spellId": 1259812
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -620,8 +754,7 @@
       "otherId": "OtherActionOffensivePotion"
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -632,16 +765,34 @@
         "or": {
          "vals": [
           {
-           "cmp": {
-            "op": "OpLe",
-            "lhs": {
-             "currentEnergy": {}
-            },
-            "rhs": {
-             "const": {
-              "val": "15"
+           "and": {
+            "vals": [
+             {
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "const": {
+                 "val": "15"
+                }
+               }
+              }
+             },
+             {
+              "not": {
+               "val": {
+                "talentIsKnown": {
+                 "talentId": {
+                  "spellId": 1316709,
+                  "rank": 1
+                 }
+                }
+               }
+              }
              }
-            }
+            ]
            }
           },
           {
@@ -668,11 +819,42 @@
               }
              },
              {
-              "auraIsActive": {
-               "auraId": {
-                "spellId": 1259812
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
                },
-               "includeReactionTime": true
+               "rhs": {
+                "const": {
+                 "val": "25"
+                }
+               }
+              }
+             }
+            ]
+           }
+          },
+          {
+           "and": {
+            "vals": [
+             {
+              "cmp": {
+               "op": "OpLe",
+               "lhs": {
+                "currentEnergy": {}
+               },
+               "rhs": {
+                "const": {
+                 "val": "25"
+                }
+               }
+              }
+             },
+             {
+              "dotIsActive": {
+               "spellId": {
+                "spellId": 1325758
+               }
               }
              }
             ]
@@ -721,33 +903,7 @@
       "itemId": 7676
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "SnD Fall Imminent"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 13877
-     }
-    }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -769,8 +925,132 @@
       "spellId": 14183
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentComboPoints": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "4"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1325758
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "or": {
+         "vals": [
+          {
+           "talentIsKnown": {
+            "talentId": {
+             "spellId": 1329256,
+             "rank": 1
+            }
+           }
+          },
+          {
+           "talentIsKnown": {
+            "talentId": {
+             "spellId": 16511,
+             "rank": 1
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "3"
+             }
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 11275
+           }
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "variableRef": {
+           "name": "Fight About to End"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "variableRef": {
+           "name": "Expose - Prevent Other Finishers"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "talentIsKnown": {
+           "talentId": {
+            "spellId": 1310711,
+            "rank": 1
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11275
+     }
+    }
+   }
   },
   {
    "action": {
@@ -814,136 +1094,7 @@
       "rank": 2
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "auraIsInactive": {
-         "auraId": {
-          "spellId": 1310703
-         },
-         "includeReactionTime": true
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentComboPoints": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "3"
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Expose - Prevent Other Finishers"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1310703
-     }
-    }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentComboPoints": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "3"
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 11275
-           }
-          }
-         }
-        }
-       },
-       {
-        "or": {
-         "vals": [
-          {
-           "auraIsKnown": {
-            "auraId": {
-             "spellId": 1310723
-            }
-           }
-          },
-          {
-           "auraIsActive": {
-            "sourceUnit": {
-             "type": "CurrentTarget"
-            },
-            "auraId": {
-             "spellId": 16511
-            },
-            "includeReactionTime": true
-           }
-          }
-         ]
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Fight About to End"
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Expose - Prevent Other Finishers"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 11275
-     }
-    }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -981,7 +1132,7 @@
          "rhs": {
           "spellCurrentCost": {
            "spellId": {
-            "spellId": 31016
+            "spellId": 11300
            }
           }
          }
@@ -1016,8 +1167,7 @@
       "spellId": 14177
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -1060,7 +1210,7 @@
               "spellIsKnown": {
                "spellId": {
                 "spellId": 1241584,
-                "rank": 4
+                "rank": 3
                }
               }
              }
@@ -1078,7 +1228,7 @@
                },
                "rhs": {
                 "const": {
-                 "val": "4"
+                 "val": "3"
                 }
                }
               }
@@ -1140,55 +1290,22 @@
         }
        },
        {
-        "or": {
-         "vals": [
-          {
-           "not": {
-            "val": {
-             "talentIsKnown": {
-              "talentId": {
-               "spellId": 1310721,
-               "rank": 1
-              }
-             }
-            }
-           }
-          },
-          {
-           "cmp": {
-            "op": "OpGe",
-            "lhs": {
-             "dotRemainingTime": {
-              "spellId": {
-               "spellId": 11275
-              }
-             }
-            },
-            "rhs": {
-             "const": {
-              "val": "4"
-             }
-            }
-           }
-          },
-          {
-           "variableRef": {
-            "name": "In Danger of Energy Capping"
-           }
-          },
-          {
-           "variableRef": {
-            "name": "Fight About to End"
-           }
+        "not": {
+         "val": {
+          "variableRef": {
+           "name": "Expose - Prevent Other Finishers"
           }
-         ]
+         }
         }
        },
        {
         "not": {
          "val": {
-          "variableRef": {
-           "name": "Expose - Prevent Other Finishers"
+          "talentIsKnown": {
+           "talentId": {
+            "spellId": 1316709,
+            "rank": 1
+           }
           }
          }
         }
@@ -1202,13 +1319,54 @@
      }
     }
    },
-   "notes": "apl_opt 2026-11-01: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-08: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
   },
   {
    "action": {
     "condition": {
-     "variableRef": {
-      "name": "Current Points less than 5"
+     "and": {
+      "vals": [
+       {
+        "variableRef": {
+         "name": "Current Points less than 5"
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "not": {
+            "val": {
+             "frontOfTarget": {}
+            }
+           }
+          },
+          {
+           "variableRef": {
+            "name": "Dirty Deeds Known"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 11290
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "4s"
+          }
+         }
+        }
+       }
+      ]
      }
     },
     "castSpell": {
@@ -1216,8 +1374,7 @@
       "spellId": 14278
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -1257,8 +1414,7 @@
       "spellId": 16511
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -1270,7 +1426,7 @@
          "val": {
           "auraIsActive": {
            "auraId": {
-            "spellId": 462707
+            "spellId": 1329326
            },
            "includeReactionTime": true
           }
@@ -1376,8 +1532,7 @@
       "spellId": 11281
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -1476,11 +1631,10 @@
     "castSpell": {
      "spellId": {
       "spellId": 1241584,
-      "rank": 4
+      "rank": 3
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
@@ -1581,6 +1735,41 @@
         "variableRef": {
          "name": "Gnome Eureka - Active or Not Ready"
         }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "dotRemainingTime": {
+              "spellId": {
+               "spellId": 11290
+              }
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "8s"
+             }
+            }
+           }
+          },
+          {
+           "not": {
+            "val": {
+             "talentIsKnown": {
+              "talentId": {
+               "spellId": 14278,
+               "rank": 1
+              }
+             }
+            }
+           }
+          }
+         ]
+        }
        }
       ]
      }
@@ -1590,142 +1779,17 @@
       "spellId": 16511
      }
     }
-   },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   }
   },
   {
    "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "not": {
-         "val": {
-          "spellIsKnown": {
-           "spellId": {
-            "spellId": 1241584,
-            "rank": 4
-           }
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "spellIsKnown": {
-           "spellId": {
-            "spellId": 16511
-           }
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "variableRef": {
-           "name": "Use Backstab"
-          }
-         }
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Current Points less than 5"
-        }
-       },
-       {
-        "or": {
-         "vals": [
-          {
-           "not": {
-            "val": {
-             "variableRef": {
-              "name": "SnD Fall Imminent"
-             }
-            }
-           }
-          },
-          {
-           "and": {
-            "vals": [
-             {
-              "cmp": {
-               "op": "OpGt",
-               "lhs": {
-                "currentEnergy": {}
-               },
-               "rhs": {
-                "math": {
-                 "op": "OpAdd",
-                 "lhs": {
-                  "spellCurrentCost": {
-                   "spellId": {
-                    "spellId": 6774
-                   }
-                  }
-                 },
-                 "rhs": {
-                  "spellCurrentCost": {
-                   "spellId": {
-                    "spellId": 11294
-                   }
-                  }
-                 }
-                }
-               }
-              }
-             },
-             {
-              "not": {
-               "val": {
-                "variableRef": {
-                 "name": "SnD Fall Imminent"
-                }
-               }
-              }
-             }
-            ]
-           }
-          },
-          {
-           "not": {
-            "val": {
-             "variableRef": {
-              "name": "Above SnD Point Threshold"
-             }
-            }
-           }
-          },
-          {
-           "variableRef": {
-            "name": "In Danger of Energy Capping"
-           }
-          },
-          {
-           "variableRef": {
-            "name": "Expose - Low Duration"
-           }
-          }
-         ]
-        }
-       },
-       {
-        "variableRef": {
-         "name": "Gnome Eureka - Active or Not Ready"
-        }
-       }
-      ]
-     }
-    },
     "castSpell": {
      "spellId": {
-      "spellId": 11294
+      "spellId": 25300
      }
     }
    },
-   "notes": "2026-10-31: the official simulator's rogue/dps/apls/default.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +0.7% for the entry's best build in a full raid, +0.6% to +0.8% for its listed builds, 10,000 fights on seeds 2 and 3)"
+   "notes": "apl_opt 2026-11-08: changed or added by the rotation search (see combat-daggers-raid-rotation-search.json)"
   }
  ],
  "groups": [
@@ -1786,10 +1850,18 @@
  ],
  "valueVariables": [
   {
+   "name": "Start In Stealth",
+   "value": {
+    "const": {
+     "val": "false"
+    }
+   }
+  },
+  {
    "name": "Use Backstab",
    "value": {
     "const": {
-     "val": "true"
+     "val": "false"
     }
    }
   },
@@ -1802,7 +1874,7 @@
    }
   },
   {
-   "name": "Use Stealth/Vanish for Damage",
+   "name": "Use Vanish for Damage",
    "value": {
     "const": {
      "val": "true"
@@ -1811,6 +1883,14 @@
   },
   {
    "name": "Use Ambush Opener",
+   "value": {
+    "const": {
+     "val": "false"
+    }
+   }
+  },
+  {
+   "name": "Prio Slice and Dice",
    "value": {
     "const": {
      "val": "false"
@@ -1836,20 +1916,31 @@
   {
    "name": "SnD Fall Imminent",
    "value": {
-    "cmp": {
-     "op": "OpLe",
-     "lhs": {
-      "auraRemainingTime": {
-       "auraId": {
-        "spellId": 6774
+    "and": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "auraRemainingTime": {
+          "auraId": {
+           "spellId": 6774
+          }
+         }
+        },
+        "rhs": {
+         "const": {
+          "val": "2s"
+         }
+        }
+       }
+      },
+      {
+       "variableRef": {
+        "name": "Prio Slice and Dice"
        }
       }
-     },
-     "rhs": {
-      "const": {
-       "val": "2s"
-      }
-     }
+     ]
     }
    }
   },
@@ -1872,16 +1963,27 @@
   {
    "name": "Above SnD Point Threshold",
    "value": {
-    "cmp": {
-     "op": "OpGe",
-     "lhs": {
-      "currentComboPoints": {}
-     },
-     "rhs": {
-      "const": {
-       "val": "1"
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpGe",
+        "lhs": {
+         "currentComboPoints": {}
+        },
+        "rhs": {
+         "const": {
+          "val": "1"
+         }
+        }
+       }
+      },
+      {
+       "variableRef": {
+        "name": "Prio Slice and Dice"
+       }
       }
-     }
+     ]
     }
    }
   },
@@ -2187,6 +2289,66 @@
        }
       }
      ]
+    }
+   }
+  },
+  {
+   "name": "Boot Knife Known",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "talentIsKnown": {
+        "talentId": {
+         "spellId": 1329286,
+         "rank": 5
+        }
+       }
+      },
+      {
+       "talentIsKnown": {
+        "talentId": {
+         "spellId": 1329286,
+         "rank": 4
+        }
+       }
+      },
+      {
+       "talentIsKnown": {
+        "talentId": {
+         "spellId": 1329286,
+         "rank": 3
+        }
+       }
+      },
+      {
+       "talentIsKnown": {
+        "talentId": {
+         "spellId": 1329286,
+         "rank": 2
+        }
+       }
+      },
+      {
+       "talentIsKnown": {
+        "talentId": {
+         "spellId": 1329286,
+         "rank": 1
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Dirty Deeds Known",
+   "value": {
+    "talentIsKnown": {
+     "talentId": {
+      "spellId": 14082,
+      "rank": 2
+     }
     }
    }
   }

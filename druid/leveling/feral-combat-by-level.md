@@ -47,12 +47,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Q (bear) | Your attack: it replaces the next swing; the macro also starts your swings | — | — | **Maul** | Maul | Maul | Maul | Maul | Maul |
 | E (bear) | Control: the stun | — | — | — | **Bash** | Bash | Bash | Bash | Bash |
 | R (bear) | Once a fight: the roar | — | — | **Demoralizing Roar** | Demoralizing Roar | Demoralizing Roar | Demoralizing Roar | Demoralizing Roar | Demoralizing Roar |
-| F (bear) | The save: rage into health | — | — | — | — | — | — | **Frenzied Regeneration** from 36 | Frenzied Regeneration |
+| F (bear) | Free (Frenzied Regeneration, learned at 36, is for a bear that tanks later) | — | — | — | — | — | — | — | — |
 | Mouse 5 (bear) | The pull: rage | — | — | **Enrage** from 12 | Enrage | Enrage | Enrage | Enrage | Enrage |
 | Mouse 4 (bear) | Taunt: a mob on a friend | — | — | **Growl** | Growl | Growl | Growl | Growl | Growl |
 | 1 (bear) | Packs | — | — | — | **Swipe** from 16 | Swipe | Swipe | Swipe | Swipe |
 | 2 (bear) | Free | — | — | — | — | — | — | — | — |
-| 3 (bear) | Packs on a friend | — | — | — | — | — | **Challenging Roar** from 28 | Challenging Roar | Challenging Roar |
+| 3 (bear) | Free (Challenging Roar, learned at 28, is for a bear that tanks later) | — | — | — | — | — | — | — | — |
 | 4 (bear) | Free | — | — | — | — | — | — | — | — |
 | C (bear) | Free | — | — | — | — | — | — | — | — |
 | Middle mouse (bear) | Free | — | — | — | — | — | — | — | — |
@@ -95,20 +95,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+2 | Free | — | — | — | — | — | — | — | — |
 | Shift+3 | Free | — | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — | — | — | — |
-| Shift+X | Free | — | — | — | — | — | — | — | — |
+| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+X | The best mana potion in your bags (a macro, shares the healing potion's cooldown) | **Mana potion macro** | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro |
 
 - Bar 1 is three bars in one: WoW shows the form's own bar while you are in Bear Form or Cat Form, and the Prowl bar while you prowl (as Classic did). Set each one up so a key keeps its job in every form: Q attacks, E controls, R pays off, F saves.
 - The forms live on the Shift bar, the same in every form: Shift+Q Cat Form, Shift+E Bear Form, Shift+R Travel Form. Pressing your current form's key leaves it.
 - The emergency heal is three presses: Shift+Q (leave Cat Form), Mouse 5 (Regrowth, on the bar you now see), Shift+Q (Cat Form again). The keybinds page has a macro that makes it two.
 - No key: **Mark of the Wild**, **Thorns**, **Omen of Clarity**, **Track Humanoids**, food, water, the mount and the Hearthstone.
 - Levels 1-9 fight with Q and R on the caster bar: right-click the mob to start swinging. From 10, Q on each form's bar is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
+- Potions: the best healing potion on Shift+C and the best mana potion on Shift+X (macros on the [macros page](../macros.md)), so C keeps Innervate from 40.
 
 ## Levels 1-3: Wrath, then your weapon
 
 **The trainer teaches:** Healing Touch (1), Mark of the Wild (1), **Wrath** (1).
 
-**Keys to set:** Q = Wrath; 1 = Healing Touch.
+**Keys to set:** Q = Wrath; 1 = Healing Touch; Shift+C = Healing potion macro; Shift+X = Mana potion macro.
 
 **Your keys in this stage:** Q Wrath, 1 Healing Touch.
 
@@ -126,7 +127,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Moonfire** (4), Rejuvenation (4), Thorns (6), Entangling Roots (8).
 
-**New ranks to buy:** Wrath at 6.
+**New ranks to buy:** Healing Touch at 8; Wrath at 6.
 
 **Keys to set:** R = Moonfire; Mouse 4 = Rejuvenation; E = Entangling Roots (at 8).
 
@@ -147,6 +148,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Levels 10-13: Bear Form
 
 **The trainer teaches:** **Bear Form** (10), **Demoralizing Roar** (10), Growl (10), **Maul** (10), Nature's Grasp (10), Enrage (12), Regrowth (12), Revive (12).
+
+**New ranks to buy:** Moonfire at 10; Rejuvenation at 10.
 
 **Talents:** 10-13 Ferocity.
 
@@ -173,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Bash** (14), Cure Poison (14), Aquatic Form (16), Swipe (16), Faerie Fire (18), Hibernate (18).
 
-**New ranks to buy:** Maul at 18.
+**New ranks to buy:** Entangling Roots at 18; Healing Touch at 14; Maul at 18; Moonfire at 16; Nature's Grasp at 18; Regrowth at 18; Rejuvenation at 16; Wrath at 14.
 
 **Talents:** 14 Ferocity, 15-16 Feral Swiftness, 17-19 Thick Hide.
 
@@ -201,6 +204,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Cat Form** (20), **Claw** (20), Omen of Clarity (20), **Prowl** (20), Rebirth (20), **Rip** (20), Shred (20), Starfire (20), Soothe Animal (22).
 
+**New ranks to buy:** Demoralizing Roar at 20; Healing Touch at 20; Moonfire at 22; Rejuvenation at 22; Wrath at 22.
+
 **Talents:** 20-21 Sharpened Claws, 22-23 Savage Fury.
 
 **Keys to set:** Q (cat) = Claw; Mouse 4 (cat) = Rip; 1 (cat) = Prowl; Shift+Q = Cat Form.
@@ -226,11 +231,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Ferocious Bite** (24), **Rake** (24), Remove Curse (24), Abolish Poison (26), Dash (26), Challenging Roar (28), Cower (28), Tranquility (30), Travel Form (30).
 
-**New ranks to buy:** Claw at 28.
+**New ranks to buy:** Bash at 30; Claw at 28; Entangling Roots at 28; Healing Touch at 26; Maul at 26; Moonfire at 28; Nature's Grasp at 28; Regrowth at 24, 30; Rejuvenation at 28; Rip at 28; Swipe at 24; Wrath at 30.
 
 **Talents:** 24 Furor, 25-27 Predatory Strikes, 28-29 Blood Frenzy, 30 Leader of the Pack, 31 Genesis.
 
-**Keys to set:** 4 = Remove Curse; R (cat) = Ferocious Bite; Mouse 5 (cat) = Rake; 3 = Abolish Poison (at 26); F (cat) = Dash (at 26); 3 (bear) = Challenging Roar (at 28); 2 (cat) = Cower (at 28); Shift+R = Travel Form (at 30).
+**Keys to set:** 4 = Remove Curse; R (cat) = Ferocious Bite; Mouse 5 (cat) = Rake; 3 = Abolish Poison (at 26); F (cat) = Dash (at 26); 2 (cat) = Cower (at 28); Shift+R = Travel Form (at 30).
 
 **Your keys in this stage:** Mouse 5 Regrowth, Q (cat) Claw, R (cat) Ferocious Bite, Mouse 5 (cat) Rake, 1 (cat) Prowl, Shift+Q Cat Form.
 
@@ -243,7 +248,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.
 
-- **Rip** stays for a mob above half its health at 5 points. One on one, Claw and Bite get there first: the fight lab casts it about once in ten fights from 52 and never here.
+- **Rip** stays for a mob above half its health at 5 points. One on one, Claw and Bite get there first: the fight lab casts it only now and then from here on.
 - **Dash** (26): 50% faster for 15 s in Cat Form, prowling or not. The escape, and the way to the next mob.
 - **Travel Form** (30) is the road between mobs.
 - **Cower** (28) drops your threat and **Challenging Roar** (28) is a bear taunt: groups only.
@@ -254,11 +259,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Poised (32), **Ravage** (32), Track Humanoids (32), Frenzied Regeneration (36), Pounce (36).
 
-**New ranks to buy:** Claw at 38; Ferocious Bite at 32; Rake at 34.
+**New ranks to buy:** Claw at 38; Demoralizing Roar at 32; Entangling Roots at 38; Ferocious Bite at 32; Healing Touch at 32, 38; Hibernate at 38; Maul at 34; Moonfire at 34; Nature's Grasp at 38; Rake at 34; Regrowth at 36; Rejuvenation at 34; Rip at 36; Swipe at 34; Wrath at 38.
 
 **Talents:** 32-35 Genesis, 36-37 Nature's Reach, 38-39 Nature's Majesty.
 
-**Keys to set:** Q (prowling) = Ravage; F (bear) = Frenzied Regeneration (at 36); E (prowling) = Pounce (at 36).
+**Keys to set:** Q (prowling) = Ravage; E (prowling) = Pounce (at 36).
 
 **Your keys in this stage:** Mouse 5 Regrowth, Q (cat) Claw, R (cat) Ferocious Bite, Mouse 5 (cat) Rake, 1 (cat) Prowl, Q (prowling) Ravage, Shift+Q Cat Form.
 
@@ -282,7 +287,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Dire Bear Form (40), Feline Grace (40), Hurricane (40), Innervate (40), Barkskin (44), Gift of the Wild (50).
 
-**New ranks to buy:** Claw at 48, 58; Ferocious Bite at 40, 48, 56, 60; Prowl at 40, 60; Rake at 44, 54; Ravage at 42, 50, 58.
+**New ranks to buy:** Bash at 46; Claw at 48, 58; Cower at 40, 52; Dash at 46; Demoralizing Roar at 42, 52; Entangling Roots at 48, 58; Ferocious Bite at 40, 48, 56, 60; Healing Touch at 44, 50, 56, 60; Hibernate at 58; Maul at 42, 50, 58; Moonfire at 40, 46, 52, 58; Nature's Grasp at 48, 58; Pounce at 46, 56; Prowl at 40, 60; Rake at 44, 54; Ravage at 42, 50, 58; Regrowth at 42, 48, 54, 60; Rejuvenation at 40, 46, 52, 58, 60; Rip at 44, 52, 60; Swipe at 44, 54; Wrath at 46, 54.
 
 **Talents:** 40-41 Natural Instinct, 42-46 Heart of the Wild, 47-51 Naturalist, 52 Natural Shapeshifter, 53 Brutal Impact, 54 Feral Charge, 55-58 Rend and Tear, 59 Improved Wrath, 60 Nature's Splendor.
 
@@ -300,6 +305,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 30% of your health while the mob has more than a quarter of its own: leave **Cat Form**, **Regrowth**, then **Cat Form** again.
 
 - **Dire Bear Form** (40) is Bear Form with more armor and attack power: for dungeons.
+- **Rend and Tear** (55-58): 3% a point more melee damage against a bleeding mob, which **Rake** and **Rip** keep it.
 - **Primal Bite** and **Shifting Power** are the Feral tree's last row: this build stops at Rend and Tear and never has them.
 - From 54, **Feral Charge** (the talent): at a caster that stands and casts at 8-25 yards, you leap behind it and interrupt it for 4 s. The fight lab meets few casters at range, so it rarely fires.
 - **Barkskin** (44) needs caster form: 20% less physical damage for 15 s, before a hard pull.
@@ -315,8 +321,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- Balance (36/0/15, the Moonkin) is 63% slower per kill in the fight lab (37.4 against 22.9 s) and has its own page in this folder with the Moonkin rotation.
-- Restoration levels as a cat with its raid build (11/4/36): 28.5 s per kill, a quarter slower than Feral Combat.
+- Balance (the Moonkin) is much slower per kill in the fight lab and has its own page in this folder with the Moonkin rotation.
+- Restoration levels as a cat with its raid build, slower per kill than Feral Combat: [its level-by-level guide](restoration-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

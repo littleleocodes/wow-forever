@@ -7,7 +7,7 @@ that has two side buttons (WoW shows them as Button 4 and Button 5). Same scheme
 and [paladin](../../paladin/leveling/keybinds.md) layouts: Q the attack you press most, E the control, R the payoff, F the
 save, the two thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. Keys
 are for spells you press in a fight and for the things that help you there; poisons, food, the mount and the Hearthstone have no key and
-are clicked between fights. It is built on the [Combat leveling page](combat.md) (swords).
+are clicked between fights. **This layout is built on Combat with swords** ([Combat leveling page](combat.md)). Assassination, Subtlety and Combat-Subtlety use the same keys and change a few: their by-level guides ([Assassination](assassination-by-level.md), [Subtlety](subtlety-by-level.md), [Combat-Subtlety](combat-subtlety-by-level.md)) list their own binds, for example Q takes Mutilate at 40 (Assassination) or Hemorrhage at 30 (Subtlety), Cold Blood is on C from 25 (Assassination), and Mouse 4 holds Ghostly Strike where there is no Riposte.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Combat level-by-level guide](combat-by-level.md). This page is the layout at 60, the setup and the macros.
@@ -44,7 +44,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
-| Shift+E | Kick (12) | The tuned rotation never interrupts; for a caster that hits too hard |
+| Shift+E | Kick (12) | Combat with swords: the tuned rotation never interrupts, so this is for a caster that hits too hard. Assassination, Subtlety and Combat-Subtlety keep Kick in their rotation: press it on a caster mob's spell |
 | Shift+1 | Stealth (1) | Before each pull from 14: Shift+1, then 1 for the opener |
 | Shift+2 | Blind (34) | A second mob joins mid-fight |
 | Shift+Q, Shift+R, Shift+F, Shift+Mouse 5, Shift+Mouse 4, Shift+3, Shift+4, Shift+C, Shift+X | Free | |

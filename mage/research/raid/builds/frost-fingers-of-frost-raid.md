@@ -54,10 +54,8 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 2. **Improved Frostbolt** — Cast time. Raid sim (2026-09-27): removing it costs +17% DPS. Raid sim (2026-09-28): removing it costs +15% DPS.
 3. **Ice Shards** — Crit damage on all of it. Raid sim (2026-09-27): removing it costs +14% DPS. Raid sim (2026-09-28): removing it costs +10% DPS.
 4. **Shatter** — +51% crit vs. Frozen at max rank (est.). Raid sim (2026-09-27): removing it costs +8% DPS. Raid sim (2026-09-28): removing it costs +7% DPS.
-5. **Elemental Precision** — 5% hit. Raid sim (2026-09-27): removing it costs +7% DPS. Raid sim (2026-09-28): removing it costs +5% DPS.
-6. **Winter's Chill** — Frostbolt/Ice Lance crit debuff. Raid sim (2026-09-27): removing it costs +8% DPS. Raid sim (2026-09-28): removing it costs +5% DPS.
-7. **Piercing Ice** — Raid sim (2026-09-28): removing it costs +5% DPS.
-8. **Missile Barrage** — Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value.
+5. **Winter's Chill** — Frostbolt/Ice Lance crit debuff. Raid sim (2026-09-27): removing it costs +8% DPS. Raid sim (2026-09-28): removing it costs +5% DPS.
+6. **Missile Barrage** — Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value.
 
 ## Flex points
 
@@ -148,6 +146,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt). Net +0.00% on a third seed.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 22/0/29 -> 22/0/29; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 22/0/29 -> 22/0/29; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Arcane Subtlety (tier gating for Arcane Mind); +1 Arcane Subtlety (tier gating for Arcane Mind) (refill: the frost-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision, Piercing Ice; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

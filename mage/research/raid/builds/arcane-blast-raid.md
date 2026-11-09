@@ -53,11 +53,10 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 2. **Arcane Blast** — The build's nuke. Simulator (2026-09-28): the rotation reads this talent's own spell or proc (or casts it in a sequence), so its removal run breaks the rotation rather than measuring it.
 3. **Arcane Mind** — Intellect. Simulator removal run (2026-09-28): the build loses 8.3% of its DPS on the training dummy without it.
 4. **Arcane Instability** — +damage and crit. Simulator removal run (2026-09-28): the build loses 5.4% of its DPS on the training dummy without it.
-5. **Arcane Focus** — Simulator removal run (2026-09-28): the build loses 4.2% of its DPS on the training dummy without it.
-6. **Arcane Power** — +damage cooldown. Simulator removal run (2026-09-28): the build loses 4.1% of its DPS on the training dummy without it.
-7. **Arcane Impact** — Simulator removal run (2026-09-28): the build loses 3.6% of its DPS on the training dummy without it.
-8. **Incineration** — Simulator removal run (2026-09-28): the build loses 3.3% of its DPS on the training dummy without it.
-9. **Ignite** — Simulator removal run (2026-09-28): the build loses 2.7% of its DPS on the training dummy without it.
+5. **Arcane Power** — +damage cooldown. Simulator removal run (2026-09-28): the build loses 4.1% of its DPS on the training dummy without it.
+6. **Arcane Impact** — Simulator removal run (2026-09-28): the build loses 3.6% of its DPS on the training dummy without it.
+7. **Incineration** — Simulator removal run (2026-09-28): the build loses 3.3% of its DPS on the training dummy without it.
+8. **Ignite** — Simulator removal run (2026-09-28): the build loses 2.7% of its DPS on the training dummy without it.
 
 ## Flex points
 
@@ -162,6 +161,7 @@ Damage by ability:
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 35/11/5 -> 35/11/5; Wake of Fire -> Improved Fire Blast (renamed) (refill: the frost-raid model, raid-dps).
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 35/11/5 -> 36/11/4; Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/11/4 -> 31/13/7; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Incineration (tier gating for Ignite); +1 Incineration (tier gating for Ignite); refill +3 Improved Frostbolt (refill: the frost-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Arcane Focus; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

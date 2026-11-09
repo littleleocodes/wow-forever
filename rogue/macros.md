@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 
 ## Combat
 
-Leveling and raid. Keys below are your [Combat keybinds](leveling/keybinds.md), with the Sinister Strike macro on Q.
+Leveling and raid. Keys below are your [Combat keybinds](leveling/keybinds.md) (the layout is built on Combat with swords), with the Sinister Strike macro on Q.
 
 ### Stealth and the opener on one key
 
@@ -64,8 +64,9 @@ Leveling and raid. Keys below are your [Combat keybinds](leveling/keybinds.md), 
 
 - **Replaces:** R and C.
 - **Frees:** C.
-- **Fill it with:** C takes Kick from Shift+E.
-- **Why it works:** Cold Blood is off the global cooldown, so a 5-point Eviscerate always carries it when it is ready. It also fires on a small finisher, so press R at 5 points.
+- **Fill it with:** C takes Kick from Shift+E if you play daggers (swords never Kick in the tuned rotation: leave C free or put Blind there).
+- **Only for a build that has Cold Blood.** The Combat leveling build takes it at 55; check the talent link of the raid page you follow, because a Combat raid build may not have it. Without the talent, use plain Eviscerate on R.
+- **Why it works:** Cold Blood is off the global cooldown, so an Eviscerate pressed while it is ready always carries it (its cooldown is 3 minutes). It fires on every Eviscerate, including the small one that finishes a mob, so press R at 5 points; to spend Cold Blood on purpose, keep the plain macro on C instead.
 
 ### A breather that holds
 
@@ -93,9 +94,9 @@ Leveling and raid. Keys below are your [Combat keybinds](leveling/keybinds.md), 
 - **Fill it with:** 4 takes Blind from Shift+2.
 - **Why it works:** Both are off the global cooldown. Only for a fight you are leaving: Sprint's cooldown is long.
 
-## Assassination and Daggers
+## Assassination
 
-Mutilate builds.
+Mutilate builds (the Assassination leveling build takes Mutilate at level 40; before that the Q macro is Sinister Strike). The Daggers (split) raid builds are not Mutilate builds unless the talent link on their raid page shows it: otherwise use the Combat macros above.
 
 ### Stealth and the opener
 
@@ -118,10 +119,10 @@ Mutilate builds.
 /cast Mutilate
 ```
 
-- **Replaces:** Q, and Attack.
-- **Frees:** Middle mouse.
+- **Replaces:** the plain Mutilate button on Q. The Q macro already starts your swings from level 1 (no key holds Attack), so this changes the spell on Q from Sinister Strike to Mutilate at level 40.
+- **Frees:** nothing.
 - **Fill it with:** Nothing needs it.
-- **Why it works:** The strike macro for this build. Before Mutilate, use Sinister Strike.
+- **Why it works:** The strike macro for this build. Before Mutilate, the same macro with Sinister Strike.
 
 ### Cold Blood into your finisher
 
@@ -134,7 +135,7 @@ Mutilate builds.
 - **Replaces:** The finisher key and the Cold Blood key.
 - **Frees:** One key.
 - **Fill it with:** Kick.
-- **Why it works:** Off the global cooldown, as for Combat.
+- **Why it works:** Off the global cooldown, as for Combat. The Assassination leveling build has Cold Blood from level 25. It fires on every Eviscerate, including the small one that kills a mob, so press it at 5 points.
 
 ## Subtlety and Combat-Subtlety
 
@@ -162,7 +163,7 @@ Hemorrhage builds.
 /cast Hemorrhage
 ```
 
-- **Replaces:** Q, and Attack.
-- **Frees:** Middle mouse.
+- **Replaces:** the plain Hemorrhage button on Q. The Q macro already starts your swings from level 1 (no key holds Attack), so this changes the spell on Q from Sinister Strike to Hemorrhage: at level 30 in the Subtlety build, at level 60 in Combat-Subtlety.
+- **Frees:** nothing.
 - **Fill it with:** Nothing needs it.
-- **Why it works:** From the level you take Hemorrhage. Before that, use Sinister Strike.
+- **Why it works:** The strike macro for the Subtlety builds. Before Hemorrhage, the same macro with Sinister Strike.

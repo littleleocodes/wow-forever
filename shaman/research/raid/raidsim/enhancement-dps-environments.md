@@ -4,13 +4,12 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `enhancement-open-raid` | 17/32/2 | 578 | 641 | 997 | 997 | 1039 |
+| `enhancement-ml-raid` | 17/31/3 | 578 | 637 | 998 | 998 | 1035 |
 | sim preset: Standard | - | 577 | 637 | 996 | 996 | 1049 |
 | `opt-enhancement-dps-parse` | 15/31/5 | 562 | 614 | 941 | 941 | 993 |
-| `enhancement-ml-raid` | 19/32/0 | 562 | 639 | 963 | 963 | 1011 |
 | `opt-enhancement-dps-raid-dps` | 14/31/6 | 549 | 601 | 915 | 915 | 964 |
 | `enhancement-raid-dps` | 11/31/9 | 538 | 591 | 930 | 930 | 979 |
-| `elemental-enhancement-ml-raid` | 17/29/5 | 538 | 585 | 917 | 917 | 944 |
+| `elemental-enhancement-ml-raid` | 17/29/5 | 538 | 585 | 928 | 928 | 945 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -24,13 +23,12 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `enhancement-open-raid` | 578 | +2% | +21% | +12% | +8% | +30% | 997 |
+| `enhancement-ml-raid` | 578 | +2% | +21% | +12% | +8% | +30% | 998 |
 | sim preset: Standard | 577 | +3% | +21% | +12% | +8% | +29% | 996 |
 | `opt-enhancement-dps-parse` | 562 | +6% | +21% | +13% | +8% | +20% | 941 |
-| `enhancement-ml-raid` | 562 | +1% | +21% | +12% | +8% | +30% | 963 |
 | `opt-enhancement-dps-raid-dps` | 549 | +5% | +21% | +12% | +8% | +21% | 915 |
 | `enhancement-raid-dps` | 538 | +5% | +23% | +13% | +8% | +24% | 930 |
-| `elemental-enhancement-ml-raid` | 538 | +4% | +21% | +12% | +8% | +26% | 917 |
+| `elemental-enhancement-ml-raid` | 538 | +6% | +21% | +12% | +8% | +26% | 928 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -40,13 +38,12 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `enhancement-open-raid` | 608 | 601 | 578 | 561 | 522 |
+| `enhancement-ml-raid` | 609 | 601 | 578 | 563 | 524 |
 | sim preset: Standard | 611 | 602 | 577 | 559 | 520 |
 | `opt-enhancement-dps-parse` | 613 | 601 | 562 | 533 | 493 |
-| `enhancement-ml-raid` | 583 | 575 | 562 | 549 | 509 |
 | `opt-enhancement-dps-raid-dps` | 590 | 581 | 549 | 522 | 480 |
 | `enhancement-raid-dps` | 589 | 575 | 538 | 513 | 472 |
-| `elemental-enhancement-ml-raid` | 556 | 561 | 538 | 512 | 472 |
+| `elemental-enhancement-ml-raid` | 566 | 569 | 538 | 507 | 469 |
 
 Gear presets: raid `shaman-enhancement-phase_1.p1opt.gear.json`, maximum `shaman-enhancement-phase_1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

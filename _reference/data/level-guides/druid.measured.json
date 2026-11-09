@@ -1,6 +1,6 @@
 {
  "class": "druid",
- "date": "2026-11-07",
+ "date": "2026-11-08",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -298,7 +298,7 @@
    "build": "restoration-leveling",
    "rotation": "feral-cat-dps",
    "provisional_order": false,
-   "fingerprint": "e669f857b5b4",
+   "fingerprint": "7222b1d6a033",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -337,7 +337,7 @@
       "Melee": 5.66,
       "Enrage": 0.47,
       "Demoralizing Roar": 1.0,
-      "Maul": 2.95,
+      "Maul": 2.94,
       "Bash": 0.11
      }
     },
@@ -353,11 +353,11 @@
      }
     },
     "20": {
-     "seconds": 20.4,
+     "seconds": 20.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Claw": 3.83,
-      "Melee": 11.02,
+      "Claw": 3.81,
+      "Melee": 11.0,
       "Rip": 0.85
      }
     },
@@ -366,9 +366,9 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Rake": 1.2,
-      "Melee": 11.49,
-      "Claw": 3.2,
-      "Ferocious Bite": 0.51
+      "Melee": 11.44,
+      "Claw": 3.19,
+      "Ferocious Bite": 0.5
      }
     },
     "30": {
@@ -376,9 +376,9 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Rake": 1.39,
-      "Melee": 13.98,
-      "Claw": 3.66,
-      "Ferocious Bite": 0.61
+      "Melee": 13.93,
+      "Claw": 3.65,
+      "Ferocious Bite": 0.6
      }
     },
     "31": {
@@ -414,7 +414,7 @@
      }
     },
     "40": {
-     "seconds": 26.8,
+     "seconds": 26.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
@@ -425,22 +425,22 @@
      }
     },
     "50": {
-     "seconds": 28.9,
+     "seconds": 29.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 17.44,
+      "Melee": 17.45,
       "Rake": 1.71,
       "Claw": 2.92,
       "Ferocious Bite": 1.01
      }
     },
     "60": {
-     "seconds": 31.7,
+     "seconds": 31.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 21.11,
+      "Melee": 21.12,
       "Rake": 2.09,
       "Claw": 3.35,
       "Ferocious Bite": 1.18

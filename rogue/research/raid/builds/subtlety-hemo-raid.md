@@ -55,18 +55,16 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 1. **Hemorrhage** — The builder, 145% weapon damage with a dagger. Simulator removal run (2026-09-28): the build loses 186.6% of its DPS on the training dummy without it.
 2. **Relentless Strikes** — Simulator removal run (2026-09-28): the build loses 12.1% of its DPS on the training dummy without it.
 3. **Ruthlessness** — Simulator removal run (2026-09-28): the build loses 8.6% of its DPS on the training dummy without it.
-4. **Thousand Cuts** — Rupture ticks cut Hemorrhage's energy cost. Simulator removal run (2026-09-28): the build loses 8.4% of its DPS on the training dummy without it.
-5. **Serrated Blades** — Armor penetration and +30% Rupture. Simulator removal run (2026-09-28): the build loses 6.0% of its DPS on the training dummy without it.
-6. **Improved Expose Armor** — Simulator removal run (2026-09-28): the build loses 5.7% of its DPS on the training dummy without it.
-7. **Malice** — +5% crit. Simulator removal run (2026-09-28): the build loses 4.6% of its DPS on the training dummy without it.
-8. **Premeditation** — Simulator removal run (2026-09-28): the build loses 3.5% of its DPS on the training dummy without it.
-9. **Improved Poisons** — Simulator removal run (2026-09-28): the build loses 2.7% of its DPS on the training dummy without it.
+4. **Serrated Blades** — Armor penetration and +30% Rupture. Simulator removal run (2026-09-28): the build loses 6.0% of its DPS on the training dummy without it.
+5. **Improved Expose Armor** — Simulator removal run (2026-09-28): the build loses 5.7% of its DPS on the training dummy without it.
+6. **Malice** — +5% crit. Simulator removal run (2026-09-28): the build loses 4.6% of its DPS on the training dummy without it.
+7. **Premeditation** — Simulator removal run (2026-09-28): the build loses 3.5% of its DPS on the training dummy without it.
+8. **Improved Poisons** — Simulator removal run (2026-09-28): the build loses 2.7% of its DPS on the training dummy without it.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 5 | Quietus | any talent legal at that tier | Worth 0.9% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 1 | Lethality | any talent legal at that tier | Worth 0.2% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 5 | Camouflage | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 3 | Master of Deception | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
@@ -78,12 +76,12 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**2 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 455 | +0.0% | 766 | +0.0% | 0 s |
-| 2 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 342 | -24.9% | 607 | -20.7% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | +0.0% | 0 s |
+| 2 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 356 | -24.9% | 639 | -19.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -105,7 +103,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   15. threshold 60 -> 30: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.5%, pass 6)
   16. drop: if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea (+3.0%, pass 7)
   17. insert at the end: cast Preparation (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-02, 20 changes to the base rotation; third-seed check: subtlety-hemo-raid 549 -> 577 DPS (+5.1%), sim preset: Subtlety Hemo 549 -> 577 DPS (+5.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-09, 24 changes to the base rotation; third-seed check: subtlety-hemo-raid 626 -> 639 DPS (+2.0%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%)):
   1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.1%, pass 1)
   2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   3. insert at the top: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
@@ -126,6 +124,10 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   18. insert at the end: if not Vanish is ready: cast Preparation (+0.2%, pass 11)
   19. insert at the top: if true and not Hemorrhage is up and combo points < 5: cast Hemorrhage (+0.2%, pass 11)
   20. drop the condition: if not Garrote is on the target: cast Garrote (+0.2%, pass 11)
+  21. threshold 8s -> 6s: if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage (+0.5%, pass 12)
+  22. threshold 4 -> 5: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.2%, pass 12)
+  23. drop '(combo points < 3 or variableRef or Eureka! is up)' from the condition: if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+0.2%, pass 12)
+  24. drop 'variableRef' from the condition: if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage (+0.2%, pass 12)
 
 Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
 
@@ -147,8 +149,8 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 14 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
 | 15 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 1.6 |
 | 16 | if variableRef and (not in front of the target or variableRef) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.7 |
-| 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.1 |
-| 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.1 |
+| 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.0 |
+| 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Death Mark (needs the Death Mark talent); cast Mutilate (needs the Mutilate talent).
 
@@ -157,21 +159,22 @@ Damage by ability:
 | Ability | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) |
 |---|---|
 | Auto Attack | 33% |
-| Garrote | 18% |
+| Garrote | 17% |
 | Rupture | 15% |
 | Hemorrhage | 9% |
+| spell 25349 | 7% |
 | spell 11337 | 7% |
-| spell 25349 | 6% |
 | Eviscerate | 6% |
 | Ghostly Strike | 3% |
 | Goblin Sapper Charge | 2% |
-| Shank | 2% |
+| Shank | 1% |
 
 ## Notes
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Subtlety Hemo 15/0/36`: 2 points Remorseless Attacks -> Improved Expose Armor, 5 points Cutthroat -> Improved Poisons, 2 points Murder -> Improved Slice and Dice, 1 point Improved Gouge -> Lethality, 1 point Improved Poisons -> Cold Blood, 1 point Lethality -> Improved Slice and Dice.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/0/31 -> 21/0/30; Camouflage 5 -> 3 (rank cap); Quietus 5 gone; Thousand Cuts 1 gone; +1 Lethality (tier gating for Cold Blood); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Opportunity (back into Subtlety); +1 Dirty Tricks (back into Subtlety) (refill: the combat-daggers-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Thousand Cuts; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

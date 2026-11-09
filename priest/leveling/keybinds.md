@@ -7,7 +7,7 @@ that has two side buttons (WoW shows them as Button 4 and Button 5). Same scheme
 and [paladin](../../paladin/leveling/keybinds.md) layouts: Q the filler you press most, E the control, R the big hit, F the
 save, the two thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the rarer tools. Keys are for
 spells you press in a fight; Power Word: Fortitude, Inner Fire, Shadowform, Renew between fights, food, water, the mount and the
-Hearthstone have no key and are clicked. It is built on the [Shadow leveling page](shadow.md).
+Hearthstone have no key and are clicked. It is built on the [Shadow leveling page](shadow.md) and is the Shadow layout. Holy, Discipline and Smite play Smite on Q (and Holy Fire, Penance or Devouring Plague on other keys): their own key tables are in their level-by-level guides, [Holy](holy-by-level.md), [Discipline](discipline-by-level.md) and [Smite](smite-by-level.md); spells they share with Shadow sit on the same keys.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Shadow level-by-level guide](shadow-by-level.md). This page is the layout at 60 and the setup.
@@ -27,11 +27,11 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
-| Q | Smite (1), Mind Flay from 20 (talent) | Smite until you own a wand; Mind Flay in between Mind Blasts from 20 |
+| Q | Smite (1), Mind Flay from 20 (talent) | Smite until you own a wand; from 4 the tuned Shadow rotation never casts Smite, so Q is free until Mind Flay arrives at 20, then Mind Flay in between Mind Blasts |
 | E | Psychic Scream (14) | A mob is on you and you are below 40% of your health |
 | R | Mind Blast (10) | Whenever it is ready |
 | F | Power Word: Shield (6) | Before a pull you start below half your health; in an emergency |
-| Mouse 5 (front side button) | Shadow Word: Death (32) | When one cast will kill the mob; from 35 with Early Demise, whenever the mob is below 20% |
+| Mouse 5 (front side button) | Shadow Word: Death (32) | When one cast will kill the mob; from 35 Early Demise adds crit on a mob at or below 20% health, and the fight lab casts it there too. It hurts you for 30% of your maximum health when the mob survives |
 | Mouse 4 (back side button) | Shadow Word: Pain (4) | The pull, every fight |
 | 1 | Vampiric Embrace (39, talent) | At the pull whenever it is ready |
 | 2 | Free | |

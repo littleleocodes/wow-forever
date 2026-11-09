@@ -53,22 +53,22 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 2. **Call of Flame** — Removing it costs 18.6 points of score in this model.
 3. **Elemental Fury** — Removing it costs 16.6 points of score in this model.
 4. **Shamanistic Focus** — Removing it costs 11.2 points of score in this model.
-5. **Lava Burst** — Removing it costs 11.2 points of score in this model.
-6. **Tidal Focus** — Removing it costs 11.2 points of score in this model.
-7. **Mindfulness** — Removing it costs 9.9 points of score in this model.
-8. **Thundering Strikes** — Removing it costs 8.4 points of score in this model.
+5. **Tidal Focus** — Removing it costs 11.2 points of score in this model.
+6. **Mindfulness** — Removing it costs 9.9 points of score in this model.
+7. **Thundering Strikes** — Removing it costs 8.4 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Standard* | community simulator | - | 592 | +0.0% | 758 | +0.0% | 1 s |
-| 2 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 586 | -1.1% | 757 | -0.2% | 4 s |
-| 3 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 562 | -5.1% | 752 | -0.9% | 12 s |
-| 4 | *Mana Tide* | community simulator | - | 561 | -5.2% | 736 | -3.0% | 10 s |
-| 5 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 560 | -5.4% | 732 | -3.4% | 9 s |
+| 1 | [`elemental-ml-raid`](elemental-ml-raid.md) | ours: derived (ML search) | 31/11/9 | 592 | +0.0% | 758 | +0.0% | 1 s |
+| 2 | *Standard* | community simulator | - | 592 | -0.0% | 758 | -0.0% | 1 s |
+| 3 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 586 | -1.1% | 757 | -0.2% | 4 s |
+| 4 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 562 | -5.1% | 752 | -0.9% | 12 s |
+| 5 | *Mana Tide* | community simulator | - | 561 | -5.3% | 736 | -3.0% | 10 s |
+| 6 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 560 | -5.4% | 732 | -3.4% | 9 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -118,6 +118,7 @@ Damage by ability:
 
 - Report: shaman/research/talents/forever/optimizer/elemental-dps-raid-dps.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

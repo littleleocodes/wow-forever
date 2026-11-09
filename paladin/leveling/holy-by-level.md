@@ -38,7 +38,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | Extra damage on Undead and Demons | — | — | — | — | — | **Exorcism** | Exorcism | Exorcism | Exorcism |
 | 3 | Before Holy Shock or an emergency heal: a sure critical | — | — | — | — | — | — | — | — | **Divine Favor** |
 | 4 | Cure a poison or a disease | — | — | — | **Purify** | Purify | Purify | Purify; **Cleanse** from 42 | Cleanse | Cleanse |
-| C | Free | — | — | — | — | — | — | — | — | — |
+| C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 | Middle mouse | Holy Shock: the ranged opener on the mob; with Alt held, an instant heal on you | — | — | — | — | — | — | **Holy Shock** | Holy Shock | Holy Shock |
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
@@ -68,7 +68,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
 
-**Keys to set:** R = Seal of Righteousness; Mouse 5 = Holy Light.
+**Keys to set:** R = Seal of Righteousness; Mouse 5 = Holy Light; C = Healing potion macro.
 
 **Your keys in this stage:** R Seal of Righteousness.
 
@@ -102,6 +102,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Levels 6-7: Holy Strike
 
 **The trainer teaches:** Divine Protection (6), **Holy Strike** (6), Seal of the Crusader (6).
+
+**New ranks to buy:** Holy Light at 6.
 
 **Keys to set:** Q = Holy Strike; F = Divine Protection.
 
@@ -144,7 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Protection (10), Lay on Hands (10), Righteous Fury (10), Seal of Fury (10), Redemption (12), Blessing of Wisdom (14), Retribution Aura (16), Blessing of Freedom (18).
 
-**New ranks to buy:** Holy Strike at 12; Seal of Righteousness at 10, 18.
+**New ranks to buy:** Divine Protection at 18; Holy Light at 14; Holy Strike at 12; Seal of Righteousness at 10, 18.
 
 **Talents:** 10-14 Divine Strength, 15-16 Reverence, 17-19 Spiritual Focus.
 
@@ -163,6 +165,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Seal of Fury** (10) and **Righteous Fury** (10) are for a shield and for tanking. Leave them alone: the Holy list fights with a two-hander.
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
+- Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
 *Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 3.2, Judgement 1.4, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
@@ -170,7 +173,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Kings (20), Consecration (20), Exorcism (20), Flash of Light (20), Voice of Truth (20), Concentration Aura (22), Seal of Justice (22), Turn Undead (24), Shadow Resistance Aura (28).
 
-**New ranks to buy:** Hammer of Justice at 24; Holy Strike at 20, 28; Seal of Righteousness at 26.
+**New ranks to buy:** Blessing of Protection at 24; Exorcism at 28; Flash of Light at 26; Hammer of Justice at 24; Holy Light at 22; Holy Strike at 20, 28; Seal of Righteousness at 26.
 
 **Talents:** 20 Holy Conduit, 21-25 Illumination, 26-27 Spiritual Focus, 28-29 Healing Light.
 
@@ -197,7 +200,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Divine Intervention (30), Seal of Light (30), Frost Resistance Aura (32), Divine Shield (34), Fire Resistance Aura (36), Seal of Wisdom (38), Cleanse (42).
 
-**New ranks to buy:** Hammer of Justice at 40; Holy Shock at 40; Holy Strike at 36; Seal of Righteousness at 34, 42.
+**New ranks to buy:** Blessing of Protection at 38; Consecration at 30, 40; Exorcism at 36; Flash of Light at 34, 42; Hammer of Justice at 40; Holy Light at 30, 38; Holy Shock at 40; Holy Strike at 36; Lay on Hands at 30; Seal of Righteousness at 34, 42; Turn Undead at 38.
 
 **Talents:** 30 Holy Shock, 31-35 Benediction, 36 Sanctified Judgement, 37-39 Conviction, 40 Improved Judgement, 41 Pursuit of Justice, 42-43 Divine Intellect.
 
@@ -227,7 +230,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Hammer of Wrath** (44), Blessing of Sacrifice (46).
 
-**New ranks to buy:** Holy Shock at 48; Holy Strike at 44.
+**New ranks to buy:** Exorcism at 44; Holy Light at 46; Holy Shock at 48; Holy Strike at 44.
 
 **Talents:** 44-46 Divine Intellect, 47-48 Deflection, 49 Healing Light.
 
@@ -255,7 +258,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Holy Wrath (50), Greater Blessing of Might (52), Greater Blessing of Wisdom (54), Greater Blessing of Kings (60).
 
-**New ranks to buy:** Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Shock at 56; Holy Strike at 52, 60; Seal of Righteousness at 50, 58.
+**New ranks to buy:** Consecration at 50, 60; Divine Shield at 50; Exorcism at 52, 60; Flash of Light at 50, 58; Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Light at 54, 60; Holy Shock at 56; Holy Strike at 52, 60; Holy Wrath at 60; Lay on Hands at 50; Seal of Righteousness at 50, 58; Turn Undead at 52.
 
 **Talents:** 50 Divine Favor, 51 Infusion of Light, 52 Oath of Light, 53-56 Holy Power, 57 Unyielding Faith, 58 Consecrated Ground, 59 Boundless Light, 60 Light's Vigil.
 
@@ -295,4 +298,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 21-25, **Healing Light** at 28-29 and 49, **Holy Power** at 53-56.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

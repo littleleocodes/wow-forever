@@ -59,7 +59,6 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 5. **Combustion** — Reworked: each Fire hit +10% crit until 4 crits. Raid sim (2026-09-28): removing it costs +9% DPS.
 6. **Arcane Concentration** — Clearcasting. Raid sim (2026-09-28): removing it costs +9% DPS.
 7. **Critical Mass** — +6% Fire crit. Raid sim (2026-09-28): removing it costs +6% DPS.
-8. **Improved Fireball** — -0.5s Fireball (also Frostfire Bolt). Raid sim (2026-09-28): removing it costs +6% DPS.
 
 ## Flex points
 
@@ -174,6 +173,7 @@ Damage by ability:
 - 2026-10-17 (audit of 2026-10-17, finding 26): flex default Wake of Fire -> Improved Fire Blast (renamed in 70425).
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 12/34/5 -> 14/34/3; Elemental Precision 5 -> 3 (rank cap); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 14/34/3 -> 16/32/3; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); refill +1 Magic Absorption, +1 Arcane Meditation (refill: the fire-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Fireball; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

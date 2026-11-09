@@ -12,16 +12,16 @@
 
 ## How to play
 
+**Setup, before the pull:** **Dismiss Pet**: **Lone Wolf** only works while you have no pet out.
+
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
 **Keep up all fight:** **Aspect of the Hawk**.
 
-**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
-
 **Then press the first one that is ready**, top to bottom:
 
 1. **Aimed Shot**
-2. **Rapid Fire**
+2. **Rapid Fire**; no global cooldown, so press it alongside the others
 3. **Multi-Shot**
 4. **Serpent Sting**: keep it on the target
 5. **Arcane Shot**
@@ -37,12 +37,12 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 **Why it works**
 
-- Before the pull: **Dismiss Pet**, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type. In the simulator **Lone Wolf** is about 16% of this build's damage, more than any other talent.
-- **Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 166, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. The simulator measured about 4% more damage with it at the top.
+- Before the pull: **Dismiss Pet**, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type. In the simulator **Lone Wolf** is about 16% of this build's damage, more than any other talent.
+- **Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. The simulator measured about 4% more damage with it at the top.
 - **Rapid Fire** gives 40% faster attacks for 15 seconds; **Rapid Killing** cuts its cooldown to 3 minutes, so it comes once in a 3-minute fight, at the pull. The full rotation presses it right before an **Auto Shot**.
 - **Serpent Sting**: recast it in its last second, but not when **Aimed Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.
 - **Arcane Shot** comes back every 4.5 seconds with 5 points in **Improved Arcane Shot**: about 33 casts a fight, more than any other button, filling the gaps between **Aimed Shot** casts.
-- **Sniper Shot** hits hardest (weapon damage plus 295) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least a second from ready. It is not a true filler: it has a 15-second cooldown and comes about 9 times a fight, and between casts **Auto Shot** does the work.
+- **Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least a second from ready. It is not a true filler: it has a 15-second cooldown and comes about 9 times a fight, and between casts **Auto Shot** does the work.
 
 **Caveats**
 
@@ -50,7 +50,7 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - Mana is tight even in a full raid: the simulator's hunter uses two mana potions a fight and still runs dry for a few seconds. With only your own buffs its rotation never casts **Sniper Shot** (365 mana) and casts **Aimed Shot** only above 10% mana.
 - Moving: **Auto Shot**, **Aimed Shot** and **Sniper Shot** need you to stand still, while **Arcane Shot** and **Serpent Sting** are instant. Do not start a 4-second **Sniper Shot** when you know you must move.
 - **Rapid Killing**'s other half (a kill makes your next Shot within 20 seconds hit 20% harder) never happens on a boss; on trash, let the next pull's first **Aimed Shot** spend it.
-- Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate).
+- Watch your ranks: in the beta client (build 70753) the top ranks are the strongest. **Hunter's Mark** rank 4 gives +143 ranged attack power (rank 3 +98), **Trueshot Aura** rank 5 +100 (rank 4 +75; if your build has it) and **Aspect of the Hawk** rank 7 +120 (rank 6 +110). Cast the highest rank you have.
 
 **When to change it**
 
@@ -59,6 +59,14 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - With a pet out **Lone Wolf** does nothing: if you want the pet, take the pet build linked above, whose rotation puts **Arcane Shot** first.
 
 *This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Beast Mastery | 5 | Deadly Aspects 5 |
+| Marksmanship | 41 | Lethal Attacks 5, Careful Aim 5, Improved Stings 3, Efficiency 4, Lone Wolf 1, Rapid Killing 2, Trueshot Aura 1, Mortal Shots 5, Barrage 3, Rapid Recuperation 1, Ranged Weapon Specialization 5, Sniper Shot 1, Improved Arcane Shot 5 |
+| Survival | 5 | Improved Tracking 5 |
 
 ## The numbers
 
@@ -72,6 +80,8 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 |---|---|---|
 | Pre-BiS | 1182 | [13/33/5](https://talentsforever.com/hunter/60/53200003-0053050501503051-5-12) |
 | Phase 1 BiS | 1163 | [11/35/5](https://talentsforever.com/hunter/60/53200001-0053250501503051-5-12) |
+
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
 **The gear** (average item level: Pre-BiS 78.4; Phase 1 BiS 78.2; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -102,5 +112,5 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 916 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 7c3453f (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 7c3453f (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
 

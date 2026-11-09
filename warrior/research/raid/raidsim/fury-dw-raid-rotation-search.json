@@ -250,20 +250,26 @@
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-11-04",
-  "commit": "02bd77cbe",
+  "date": "2026-11-08",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "32303013002-151530005122100231-2"
+   },
+   {
     "label": "fury-open-raid",
-    "talents": "32303013102-050530305021100231-2"
+    "talents": "32303013102-050530305021100231-2",
+    "protect_only": true
    },
    {
     "label": "sim preset: Fury",
-    "talents": "30303213002-350531005122100231"
+    "talents": "30303213002-350530005122100231-1",
+    "protect_only": true
    },
    {
     "label": "fury-dw-raid",
@@ -277,8 +283,7 @@
    }
   ],
   "tuned_on": [
-   "fury-open-raid",
-   "sim preset: Fury"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -450,41 +455,74 @@
     "gain_seed2": 0.004317518991451941,
     "candidates": 1028,
     "pass": 10
+   },
+   {
+    "round": 22,
+    "change": "threshold 1s -> 2s: if time until Bloodthirst is ready > 1.125s and time until Whirlwind is ready > 1s: cast Hamstring",
+    "gain_seed1": 0.0014839865030440436,
+    "gain_seed2": 0.0017302197422970345,
+    "candidates": 1050,
+    "pass": 11
+   },
+   {
+    "round": 23,
+    "change": "threshold 90 -> 67.5: if rage < 90: cast Bloodrage",
+    "gain_seed1": 0.002212317370095862,
+    "gain_seed2": 0.0022784837051119666,
+    "candidates": 1051,
+    "pass": 12
+   },
+   {
+    "round": 24,
+    "change": "only with 20s or more of the fight left: cast Bloodthirst + threshold 20s -> 30s: if time left in the fight \u2265 20s: cast Bloodthirst",
+    "gain_seed1": 0.001145020926913709,
+    "gain_seed2": 0.001526217044133027,
+    "candidates": 1051,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 738.4597001159628,
+     "after": 892.8126029689429,
+     "base": 738.4597001159628,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "fury-open-raid": {
-     "before": 736.2833426447601,
-     "after": 894.8958252302912,
-     "base": 736.2833426447601,
+     "before": 737.4424803173528,
+     "after": 865.1811213038989,
+     "base": 737.4424803173528,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Fury": {
-     "before": 735.0878938078805,
-     "after": 916.7811961513821,
-     "base": 735.0878938078805,
+     "before": 737.8066617866587,
+     "after": 890.4141880643025,
+     "base": 737.8066617866587,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "fury-dw-raid": {
-     "before": 697.735740601017,
-     "after": 846.1105268390465,
-     "base": 697.735740601017,
+     "before": 699.542021585414,
+     "after": 819.4890101805855,
+     "base": 699.542021585414,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-fury-dw-raid-raid-dps": {
-     "before": 723.6810925128842,
-     "after": 887.7470526745915,
-     "base": 723.6810925128842,
+     "before": 723.0007985894724,
+     "after": 858.8600214645707,
+     "base": 723.0007985894724,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -502,13 +540,13 @@
     "Mortal Strike"
    ],
    "rejected": {
-    "structure": 12,
+    "structure": 36,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 12
  }
 }

@@ -4,6 +4,21 @@
   {
    "action": {
     "condition": {
+     "isExecutePhase": {
+      "threshold": "E20"
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1719
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-08: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "cmp": {
       "op": "OpGt",
       "lhs": {
@@ -647,25 +662,13 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLt",
-      "lhs": {
-       "currentRage": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "90"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
-      "spellId": 2687
+      "itemId": 13442
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
   },
   {
    "hide": true,
@@ -721,13 +724,25 @@
   },
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "currentRage": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "90"
+       }
+      }
+     }
+    },
     "castSpell": {
      "spellId": {
-      "itemId": 13442
+      "spellId": 2687
      }
     }
-   },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
+   }
   },
   {
    "action": {

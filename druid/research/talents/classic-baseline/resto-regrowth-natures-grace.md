@@ -60,7 +60,6 @@ The endgame Regrowth build: Nature's Grace (-0.5s cast after a crit) chained wit
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 20 | Balance utility (Improved Wrath, Nature's Grasp, Improved Entangling Roots, Natural Shapeshifter, Improved Thorns, Nature's Reach) | Improved Moonfire, Natural Weapons + Omen of Clarity (feral off-spec) | Icy Veins: the first 20 Balance points are discretionary — only Nature's Grace matters. |
 | 1 | Improved Rejuvenation | Subtlety | Twentieth Restoration point to unlock Gift of Nature. |
 
 ## Notes

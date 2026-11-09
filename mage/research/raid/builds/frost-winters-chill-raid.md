@@ -53,12 +53,10 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 1. **Winter's Chill** — 100% chance at max rank to apply the crit debuff for Frostbolt/Ice Lance — the raid-support reason for the build.
 2. **Ice Shards** — Frostbolt crit damage.
-3. **Elemental Precision** — 5% hit.
-4. **Improved Frostbolt** — Cast time.
-5. **Piercing Ice** — Frost damage.
-6. **Ice Block** — Now the 16-point Frost talent — cheap immunity.
-7. **Frost Channeling** — Mana and threat.
-8. **Arcane Meditation** — Regen while casting (2/3).
+3. **Improved Frostbolt** — Cast time.
+4. **Ice Block** — Now the 16-point Frost talent — cheap immunity.
+5. **Frost Channeling** — Mana and threat.
+6. **Arcane Meditation** — Regen while casting (2/3).
 
 ## Flex points
 
@@ -137,6 +135,7 @@ Damage by ability:
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast, Ice Barrier was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Ice Barrier -> Presence of Mind (+1.1% DPS); Arcane Blast -> Improved Channeling (interrupt). Net +1.11% on a third seed.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Cold Snap); +1 Frost Warding (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill); +1 Frostbite (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 21/0/30; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Missile Barrage (tier gating for Arcane Meditation); +1 Arcane Subtlety (tier gating for Presence of Mind); +1 Arcane Subtlety (tier gating for Presence of Mind); +1 Magic Absorption (tier gating for Presence of Mind) (refill: the frost-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision, Piercing Ice; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

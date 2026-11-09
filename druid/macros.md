@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars.
+- **Frees:** nothing: this fills a free key, Shift+C on your bars. C stays with Innervate from 40 (the level guides' layout).
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+C on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+X on your bars. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 
@@ -94,7 +94,7 @@ Leveling and raid. Keys below are your [Feral Combat keybinds](leveling/keybinds
 - **Replaces:** Q (bear) and Mouse 5 (bear).
 - **Frees:** Mouse 5 (bear).
 - **Fill it with:** Swipe from 1 (bear), for pulls of two.
-- **Why it works:** Both are off the global cooldown. Enrage just fails while it is on cooldown, so this is safe to use all fight.
+- **Why it works:** Both are off the global cooldown. Enrage just fails while it is on cooldown, so this is safe to use all fight. It also fires on a mob that is nearly dead, where the fight lab skips Enrage (it lowers your armor): press plain Maul then.
 
 ### Out of form and heal
 
@@ -126,18 +126,11 @@ Moonkin.
 - **Fill it with:** Entangling Roots stays next to it.
 - **Why it works:** The rotation roots, steps out, then heals. Click Moonkin Form back on afterward, once you have the mana.
 
-### Instant Starfire
+### No instant Starfire
 
-```
-#showtooltip Starfire
-/cast Nature's Swiftness
-/cast Starfire
-```
-
-- **Replaces:** Nature's Swiftness, used for damage.
-- **Frees:** Nothing.
-- **Fill it with:** Keep plain Starfire on its key.
-- **Why it works:** Off the global cooldown, in a build that has it. A finisher, or an opener on a runner.
+Nature's Swiftness only makes **Nature** spells instant (Wrath, Healing Touch, Regrowth), and Starfire is an Arcane spell, so there is no instant
+Starfire macro. No Balance build here takes Nature's Swiftness either. The keys Balance frees come from the Regrowth macro above (one press less in
+an emergency) and from Innervate on a mouseover (the Restoration section has it).
 
 ## Restoration
 
@@ -165,7 +158,7 @@ Healing. Restoration levels as a cat, with Feral's macros.
 
 - **Replaces:** Clicking raid frames.
 - **Frees:** Nothing.
-- **Fill it with:** Do the same for Regrowth, Swiftmend and Wild Growth.
+- **Fill it with:** Do the same for Regrowth and Swiftmend.
 - **Why it works:** With no friend under the mouse it casts on your target.
 
 ### Innervate on whoever your mouse is on

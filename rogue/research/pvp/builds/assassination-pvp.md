@@ -55,11 +55,10 @@ The Assassination PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 ## Core talents (priority order)
 
 1. **Mutilate** — The scorer's value in this build: +9.1% of its score (model combat-daggers-raid).
-2. **Preparation** — The scorer's value in this build: +8.9% of its score (model combat-daggers-raid).
-3. **Seal Fate** — The scorer's value in this build: +7.9% of its score (model combat-daggers-raid).
-4. **Elusiveness** — The scorer's value in this build: +7.7% of its score (model combat-daggers-raid).
-5. **Premeditation** — The scorer's value in this build: +7.5% of its score (model combat-daggers-raid).
-6. **Cold Blood** — The scorer's value in this build: +7.5% of its score (model combat-daggers-raid).
+2. **Seal Fate** — The scorer's value in this build: +7.9% of its score (model combat-daggers-raid).
+3. **Elusiveness** — The scorer's value in this build: +7.7% of its score (model combat-daggers-raid).
+4. **Premeditation** — The scorer's value in this build: +7.5% of its score (model combat-daggers-raid).
+5. **Cold Blood** — The scorer's value in this build: +7.5% of its score (model combat-daggers-raid).
 
 ## Notes
 
@@ -69,6 +68,7 @@ The Assassination PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/0/21 -> 31/0/20; Murder 2 gone; Seal Fate 5 -> 3 (rank cap); +1 Remorseless Attacks (tier gating for Cold Blood); +1 Dirty Deeds (tier gating for Heightened Senses); +1 Dirty Deeds (tier gating for Heightened Senses); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Mutilate); +1 Relentless Strikes (tier gating for Mutilate); -1 Heightened Senses (over 51); -1 Heightened Senses (over 51); -1 Preparation (over 51) (refill: the combat-daggers-raid model, pvp).
 - 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/0/20 -> 31/0/20; +1 Venom (prerequisite of Mutilate); -1 Relentless Strikes (over 51) (refill: the combat-daggers-raid model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Preparation; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

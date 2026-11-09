@@ -4,20 +4,19 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `enhancement-open-raid` | 17/32/2 | 578 | 35 | +0.0% | 588 | 9 | +116.9% |
+| `enhancement-ml-raid` | 17/31/3 | 578 | 34 | +0.0% | 588 | 9 | +116.9% |
 | sim preset: Standard | - | 577 | 34 | -0.1% | 587 | 11 | - |
-| `enhancement-ml-raid` | 19/32/0 | 562 | 33 | -2.8% | 572 | 5 | +118.5% |
 | `opt-enhancement-dps-raid-dps` | 14/31/6 | 549 | 31 | -5.1% | 394 | 17 | +124.0% |
 | `enhancement-raid-dps` | 11/31/9 | 538 | 34 | -6.8% | 548 | 19 | +113.3% |
-| `elemental-enhancement-ml-raid` | 17/29/5 | 538 | 30 | -6.9% | 548 | 13 | +110.0% |
+| `elemental-enhancement-ml-raid` | 17/29/5 | 538 | 31 | -7.0% | 548 | 19 | +108.6% |
 
-## Damage shares (`enhancement-open-raid`, simulator actions)
+## Damage shares (`enhancement-ml-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Attack | 33.7% |
-| Lightning Bolt | 20.3% |
-| Stormstrike | 15.4% |
+| Auto Attack | 33.6% |
+| Lightning Bolt | 20.5% |
+| Stormstrike | 15.3% |
 | Earth Shock | 15.1% |
 | Flame Shock | 10.8% |
 | Searing Totem | 4.7% |
@@ -27,10 +26,9 @@ Mapped onto the spec model's sources: `white` 34%, `lightning_bolt` 20%, `storms
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- enhancement-open-raid: `153203102-054030310051002251-02`
+- enhancement-ml-raid: `253103102-053030310051002251-03`
 - sim preset: Standard: `053303102-053030310051002251-03`
-- enhancement-ml-raid: `503503102-055030210051002251`
 - opt-enhancement-dps-raid-dps: `5005031-155030010151012051-051`
 - enhancement-raid-dps: `5230001-055030310051002051-05004`
-- elemental-enhancement-ml-raid: `503303102-05303031005100224-05`
+- elemental-enhancement-ml-raid: `153203102-05303031005100224-05`
 

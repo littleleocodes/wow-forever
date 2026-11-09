@@ -20,7 +20,7 @@ What a Balance druid presses from level 1 to 60, stage by stage, as the trainer 
 
 ## Keybinds by level
 
-Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Balance fights in caster form and, from 40, in Moonkin Form, both on the same bar 1. Keys are for spells you press in a fight and for the things that help you there; Mark of the Wild, Thorns, Omen of Clarity, food, water, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the forms and the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [druid keybinds page](keybinds.md), written for the Feral build; the notes below say what Balance changes.
+Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Balance fights in caster form and, from 40, in Moonkin Form, both on the same bar 1. Keys are for spells you press in a fight and for the things that help you there; Mark of the Wild, Thorns, Omen of Clarity, food, water, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the forms and the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [druid keybinds page](keybinds.md), its Balance section says what changes for you.
 
 **Action bar 1: caster form and Moonkin Form**
 
@@ -53,8 +53,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+2 | Free | — | — | — | — | — | — | — |
 | Shift+3 | Free | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — | — | — |
-| Shift+X | Free | — | — | — | — | — | — | — |
+| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+X | The best mana potion in your bags (a macro, shares the healing potion's cooldown) | **Mana potion macro** | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro |
 
 - Two changes from the Feral layout, both for Balance's own spells. **Starfire** takes R, the payoff after **Entangling Roots** on E and from 30 the spell you press most, so **Moonfire** sits on the middle mouse button from 4 (R at levels 1-9 in the Feral layout). **Moonkin Form** takes Shift+Q, the key of the form you fight in (Cat Form in the Feral layout). Every other spell is where the Feral guide puts it.
 - **Wrath** stays on Q from 1 to 60: from 30 it is every other cast, the one that charges **Eclipse**.
@@ -63,12 +63,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Bear Form and Cat Form have no key: this build never fights in them. **Travel Form** on Shift+R is your road between mobs.
 - No key: **Mark of the Wild**, **Thorns**, **Omen of Clarity**, **Faerie Fire**, food, water, the mount and the Hearthstone.
 - Levels 1-19 fight with Q and the middle mouse button; **Starfire** joins on R at 20. No key holds Attack: a caster does not need its staff.
+- Potions: the best healing potion on Shift+C and the best mana potion on Shift+X (macros on the [macros page](../macros.md)), so C keeps Innervate from 40.
 
 ## Levels 1-3: Wrath
 
 **The trainer teaches:** Healing Touch (1), Mark of the Wild (1), **Wrath** (1).
 
-**Keys to set:** Q = Wrath; 1 = Healing Touch.
+**Keys to set:** Q = Wrath; 1 = Healing Touch; Shift+C = Healing potion macro; Shift+X = Mana potion macro.
 
 **Your keys in this stage:** Q Wrath, 1 Healing Touch.
 
@@ -88,7 +89,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Moonfire** (4), Rejuvenation (4), Thorns (6), Entangling Roots (8), Bear Form (10), Demoralizing Roar (10), Growl (10), Maul (10), Nature's Grasp (10).
 
-**New ranks to buy:** Moonfire at 10; Wrath at 6.
+**New ranks to buy:** Healing Touch at 8; Moonfire at 10; Rejuvenation at 10; Wrath at 6.
 
 **Talents:** 10-11 Improved Wrath.
 
@@ -116,7 +117,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Enrage (12), Regrowth (12), Revive (12), Bash (14), Cure Poison (14), Aquatic Form (16), Swipe (16), Faerie Fire (18), Hibernate (18).
 
-**New ranks to buy:** Moonfire at 16; Wrath at 14.
+**New ranks to buy:** Entangling Roots at 18; Healing Touch at 14; Moonfire at 16; Nature's Grasp at 18; Regrowth at 18; Rejuvenation at 16; Wrath at 14.
 
 **Talents:** 12-14 Improved Wrath, 15 Moonglow, 16 Improved Moonfire, 17 Moonglow, 18 Improved Moonfire, 19 Moonglow.
 
@@ -143,7 +144,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Cat Form (20), Claw (20), Omen of Clarity (20), Prowl (20), Rebirth (20), Rip (20), Shred (20), Starfire (20), Soothe Animal (22), Ferocious Bite (24), Rake (24), Remove Curse (24), Abolish Poison (26), Dash (26), Challenging Roar (28), Cower (28).
 
-**New ranks to buy:** Moonfire at 22, 28; Wrath at 22.
+**New ranks to buy:** Entangling Roots at 28; Healing Touch at 20, 26; Moonfire at 22, 28; Nature's Grasp at 28; Regrowth at 24; Rejuvenation at 22, 28; Starfire at 26; Wrath at 22.
 
 **Talents:** 20-21 Nature's Majesty, 22 Nature's Splendor, 23-24 Improved Entangling Roots, 25-29 Improved Starfire.
 
@@ -172,7 +173,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Tranquility (30), Travel Form (30), Poised (32), Ravage (32), Track Humanoids (32), Frenzied Regeneration (36), Pounce (36).
 
-**New ranks to buy:** Moonfire at 34; Starfire at 34; Wrath at 30, 38.
+**New ranks to buy:** Entangling Roots at 38; Healing Touch at 32, 38; Hibernate at 38; Moonfire at 34; Nature's Grasp at 38; Regrowth at 30, 36; Rejuvenation at 34; Starfire at 34; Wrath at 30, 38.
 
 **Talents:** 30-32 Eclipse, 33 Nature's Grace, 34 Vengeance, 35-36 Moonfury, 37 Vengeance, 38 Moonfury, 39 Vengeance.
 
@@ -200,7 +201,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Dire Bear Form (40), Feline Grace (40), Hurricane (40), Innervate (40), Barkskin (44).
 
-**New ranks to buy:** Moonfire at 40; Starfire at 42.
+**New ranks to buy:** Healing Touch at 44; Moonfire at 40; Regrowth at 42; Rejuvenation at 40; Starfire at 42.
 
 **Talents:** 40 Moonkin Form, 41-42 Vengeance, 43-44 Moonfury, 45 Improved Entangling Roots.
 
@@ -218,7 +219,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.
 
-- **Moonkin Form** (40): 360% more armor from your items, 3% more critical strike chance and **Omen of Clarity** twice as often. Going in costs 35% of your base mana each time, so you stay in it.
+- **Moonkin Form** (40): 360% more armor from your items, 3% more critical strike chance for your party or raid within 45 yards and **Omen of Clarity** twice as often. Going in costs 35% of your base mana each time, so you stay in it.
 - **Hurricane** (40) is a channelled storm for packs. The fight lab fights one mob at a time and never casts it.
 - **Innervate** (40): mana for you after a run of hard pulls, or for a group's healer.
 - **Barkskin** (44): 20% less physical damage for 15 s, and the mob's hits no longer push your casts back. The form blocks only heals, so it works in **Moonkin Form**; the fight lab does not cast it.
@@ -229,7 +230,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Gift of the Wild (50).
 
-**New ranks to buy:** Moonfire at 46, 52, 58; Starfire at 50, 58, 60; Wrath at 46, 54.
+**New ranks to buy:** Entangling Roots at 48, 58; Healing Touch at 50, 56, 60; Hibernate at 58; Hurricane at 50, 60; Moonfire at 46, 52, 58; Nature's Grasp at 48, 58; Regrowth at 48, 54, 60; Rejuvenation at 46, 52, 58, 60; Starfire at 50, 58, 60; Wrath at 46, 54.
 
 **Talents:** 46-47 Heart of the Wild, 48-50 Nature's Focus, 51 Reflection, 52-56 Naturalist, 57-58 Reflection, 59-60 Nature's Focus.
 
@@ -264,4 +265,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Restoration levels as a cat with its raid healer's talents: [its level-by-level guide](restoration-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

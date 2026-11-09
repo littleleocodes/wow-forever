@@ -53,13 +53,11 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 ## Core talents (priority order)
 
 1. **Relentless Strikes** — Energy on finishers. Raid sim (2026-09-28): removing it costs +10% DPS.
-2. **Adrenaline Rush** — Reworked: 100% energy regeneration for 15s on a 5-minute cooldown — Restless Blades brings it back faster. Raid sim (2026-09-28): removing it costs +8% DPS.
-3. **Improved Sinister Strike** — Raid sim (2026-09-28): removing it costs +8% DPS.
-4. **Improved Slice and Dice** — Longer Slice and Dice. Raid sim (2026-09-28): removing it costs +6% DPS.
-5. **Improved Expose Armor** — Raid sim (2026-09-28): removing it costs +6% DPS.
-6. **Ruthlessness** — Raid sim (2026-09-28): removing it costs +6% DPS.
-7. **Malice** — +5% crit, now including poisons. Raid sim (2026-09-28): removing it costs +5% DPS.
-8. **Dual Wield Specialization** — +5% off-hand damage per rank (est. 25%); requires Precision 3/3. Raid sim (2026-09-28): removing it costs +4% DPS.
+2. **Improved Slice and Dice** — Longer Slice and Dice. Raid sim (2026-09-28): removing it costs +6% DPS.
+3. **Improved Expose Armor** — Raid sim (2026-09-28): removing it costs +6% DPS.
+4. **Ruthlessness** — Raid sim (2026-09-28): removing it costs +6% DPS.
+5. **Malice** — +5% crit, now including poisons. Raid sim (2026-09-28): removing it costs +5% DPS.
+6. **Dual Wield Specialization** — +5% off-hand damage per rank (est. 25%); requires Precision 3/3. Raid sim (2026-09-28): removing it costs +4% DPS.
 
 ## Flex points
 
@@ -73,18 +71,18 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 ## Rank among our builds and the community simulator's
 
-**7 of 8** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 92c4c35 (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 8** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 455 | +0.0% | 766 | +0.0% | 0 s |
-| 2 | *Combat Venom* | community simulator | - | 392 | -14.0% | 751 | -2.0% | 0 s |
-| 3 | *Combat SS* | community simulator | - | 356 | -21.9% | 720 | -6.0% | 0 s |
-| 4 | *Combat BS* | community simulator | - | 344 | -24.4% | 698 | -8.8% | 0 s |
-| 5 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 334 | -26.7% | 666 | -13.0% | 0 s |
-| 6 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 21/30/0 | 334 | -26.7% | 667 | -12.8% | 0 s |
-| 7 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 21/30/0 | 320 | -29.8% | 649 | -15.2% | 0 s |
-| 8 | *Asn Muti* | community simulator | - | 136 | -70.1% | 272 | -64.5% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | +0.0% | 0 s |
+| 2 | *Combat Venom* | community simulator | - | 408 | -13.8% | 778 | -1.4% | 0 s |
+| 3 | *Combat SS* | community simulator | - | 371 | -21.8% | 745 | -5.5% | 0 s |
+| 4 | *Combat BS* | community simulator | - | 359 | -24.3% | 722 | -8.5% | 0 s |
+| 5 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 349 | -26.4% | 693 | -12.1% | 0 s |
+| 6 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 21/30/0 | 348 | -26.4% | 693 | -12.1% | 0 s |
+| 7 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 21/30/0 | 335 | -29.3% | 675 | -14.4% | 0 s |
+| 8 | *Asn Muti* | community simulator | - | 144 | -69.7% | 284 | -64.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,7 +96,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
   7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
   8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
   9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-04, 12 changes to the base rotation; third-seed check: combat-swords-open-raid 667 -> 670 DPS (+0.4%), sim preset: Subtlety Hemo 766 -> 766 DPS (+0.0%), combat-swords-raid 650 -> 652 DPS (+0.4%), opt-combat-swords-raid-raid-dps 667 -> 669 DPS (+0.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-08, 12 changes to the base rotation; third-seed check: opt-combat-swords-raid-raid-dps 690 -> 693 DPS (+0.3%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%), combat-swords-raid 673 -> 675 DPS (+0.3%), combat-swords-open-raid 691 -> 693 DPS (+0.3%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
   3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)
@@ -137,14 +135,14 @@ Damage by ability:
 
 | Ability | [`combat-swords-raid`](combat-swords-raid.md) |
 |---|---|
-| Auto Attack | 45% |
+| Auto Attack | 46% |
 | Sinister Strike | 22% |
-| Eviscerate | 16% |
+| Eviscerate | 15% |
+| spell 25349 | 7% |
 | spell 11337 | 6% |
-| spell 25349 | 6% |
 | Goblin Sapper Charge | 2% |
 | Shank | 2% |
-| Garrote | 2% |
+| Garrote | 1% |
 
 ## Notes
 
@@ -153,6 +151,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival). Net +0.00% on a third seed.
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Riposte was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Riposte -> Lightning Reflexes (survival). Net +0.00% on a third seed.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 21/30/0; Lethality 5 -> 2 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Improved Gouge (tier gating for Relentless Strikes); +1 Weapon Expertise (tier gating for Adrenaline Rush); +1 Lightning Reflexes (tier gating for Adrenaline Rush); -1 Adrenaline Rush (over 51) (refill: the combat-swords-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Adrenaline Rush, Improved Sinister Strike; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

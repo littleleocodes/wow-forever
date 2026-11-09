@@ -5,6 +5,7 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `opt-elemental-dps-parse` | 31/11/9 | 592 | 645 | 758 | 758 | 773 |
+| `elemental-ml-raid` | 31/11/9 | 592 | 645 | 758 | 758 | 772 |
 | sim preset: Standard | - | 592 | 645 | 758 | 758 | 773 |
 | `opt-elemental-dps-raid-dps` | 31/11/9 | 586 | 638 | 757 | 757 | 772 |
 | `elemental-raid-dps` | 29/22/0 | 562 | 648 | 752 | 752 | 759 |
@@ -24,6 +25,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `opt-elemental-dps-parse` | 592 | +1% | +0% | +2% | +11% | +13% | 758 |
+| `elemental-ml-raid` | 592 | +2% | +0% | +2% | +11% | +13% | 758 |
 | sim preset: Standard | 592 | +2% | +0% | +2% | +11% | +13% | 758 |
 | `opt-elemental-dps-raid-dps` | 586 | +2% | +0% | +3% | +11% | +13% | 757 |
 | `elemental-raid-dps` | 562 | +6% | +0% | +2% | +12% | +13% | 752 |
@@ -39,6 +41,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `opt-elemental-dps-parse` | 640 | 618 | 592 | 542 | 478 |
+| `elemental-ml-raid` | 641 | 618 | 592 | 540 | 477 |
 | sim preset: Standard | 640 | 618 | 592 | 541 | 477 |
 | `opt-elemental-dps-raid-dps` | 640 | 616 | 586 | 519 | 456 |
 | `elemental-raid-dps` | 615 | 605 | 562 | 488 | 426 |

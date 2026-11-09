@@ -4,45 +4,46 @@
  "guides": {
   "Elemental": {
    "raid": {
-    "plan": "**Lightning Bolt** fills every gap; around it you keep **Flame Shock** ticking, spend Clearcasting on **Chain Lightning** and keep a **Searing Totem** down. You play the same list from pull to kill. Blizzard's notes of 2026-11-02 removed Lava Burst and turned Elemental Mastery into **Lightning Mastery**, and this rotation dates from before them: the raid runs tune it again.",
+    "plan": "**Lightning Bolt** fills every gap. Around it you keep **Flame Shock** ticking and a **Searing Totem** down, cast **Chain Lightning** when two or more enemies stand together or when you have mana to spare, and press **Lightning Mastery** whenever it is ready. You play the same list from pull to kill. Lava Burst was removed on 2026-11-02 and **Lightning Mastery** took the place of Elemental Mastery; this list is the one tuned for that client.",
     "why": [
-     "**Flame Shock** comes first so it never drops: about a fifth of your damage in the simulator. Recast it only after it falls off: it lasts 12 seconds and the shock cooldown is under 6 (2 points in **Reverberation**), so it never has to wait.",
-     "**Chain Lightning** waits for Clearcasting: **Elemental Focus** gives each damage spell a 10% chance to make your next one free. Chain Lightning costs more than twice the mana of a Lightning Bolt, so a free one saves the most, and on one target it does about the same damage per second of casting.",
-     "**Lightning Bolt** is the filler, always at the top rank, and about two thirds of your damage. With a full raid's mana buffs the simulator does not run you dry in a 3-minute fight, and dropping the old rule that switched to a cheap low rank to save mana measured 1.4% better. Start the first bolt 2 seconds before the pull so it lands as the fight starts.",
-     "**Searing Totem** shoots the boss for about 6% of your damage. It lasts 55 seconds, so drop a new one when it expires, and stand within 20 yards of the boss: that is as far as it shoots.",
-     "The Enhancement half feeds the bolt: **Thundering Strikes** adds 5% crit, which **Elemental Fury** makes count, **Ancestral Knowledge** 10% Intellect, and **Mental Quickness** turns 30% of your Intellect into spell damage."
+     "**Flame Shock** comes first so it never drops: about 15% of your damage in the simulator. With 3 points in **Call of Flame** it lasts 21 seconds, so recast it only after it falls off. The shock cooldown is 6 seconds, so it is ready by then.",
+     "**Chain Lightning** (6-second cooldown, about 8% of your damage) goes in whenever two or more enemies stand close, and on one target whenever you hold more than 50 mana for every second of the fight left (3,000 mana with a minute to go). Tuning that mana threshold down from 200 to 50 measured about 3% better. **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next line takes it.",
+     "**Lightning Bolt** is the filler, always at the top rank, and about 70% of your damage. The list drops to rank 8 only when you cannot pay for the top rank. With a full raid's mana buffs the simulator does not run you dry in a 3-minute fight. Start the first bolt 2 seconds before the pull so it lands as the fight starts.",
+     "**Lightning Mastery** (3-minute cooldown) takes 0.5 seconds off each **Lightning Bolt** and removes the cooldown of **Chain Lightning** for 15 seconds. Press it at the start of the fight and again whenever it is ready. It is not off the global cooldown, so it costs a cast.",
+     "**Searing Totem** shoots the boss for about 5% of your damage. It lasts 55 seconds at the top rank, so drop a new one when it expires, and stand within 20 yards of the boss: that is as far as it shoots.",
+     "The rest of the build feeds the bolt: **Concussion** adds 5% damage to your bolts and **Earth Shock**, **Call of Thunder** 5% crit to **Lightning Bolt** and **Chain Lightning**, **Lightning Overload** gives each of them a 30% chance of a second, half-strength cast, and **Elemental Fury** raises the damage of your spell crits from 150% to 200%. From Enhancement, **Thundering Strikes** adds 5% crit and **Ancestral Knowledge** 10% Intellect."
     ],
     "caveats": [
-     "Several targets: with two or more enemies close together the rotation casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem only hits enemies within 8 yards of it; **Totemic Call** brings all your totems back to you.",
-     "Mana: in a full raid you will not run dry in 3 minutes; the simulator's list falls back to a cheap rank 2 **Lightning Bolt** only when it cannot pay for the top rank. Alone, or in much longer fights, keep **Chain Lightning** for Clearcasting and drink a mana potion instead of downranking: Forever gives ranks far below your level much less from spell power (Blizzard's beta notes; the exact rule is not published).",
-     "Moving: **Flame Shock** (20 yards; this build has no **Elemental Reach**) and your totems are instant, so use them while you move. If you must keep moving, an **Earth Shock** beats casting nothing as long as Flame Shock has more than 6 seconds left: the two share a cooldown.",
+     "Several targets: with two or more enemies close together the list casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem lasts 20 seconds and only hits enemies within 8 yards of it; **Totemic Call** brings all your totems back to you.",
+     "Mana: in a full raid you will not run dry in 3 minutes. Alone, or in much longer fights, cast **Chain Lightning** only on two or more targets or when Clearcasting makes it free, and drink a mana potion instead of downranking: Forever gives ranks far below your level much less from spell power (Blizzard's beta notes; the exact rule is not published).",
+     "Moving: **Flame Shock** (20 yards) and your totems are instant, so use them while you move. **Elemental Reach** (1 point) lengthens only your bolts and **Chain Lightning**. If you must keep moving, an **Earth Shock** beats casting nothing as long as Flame Shock has more than 6 seconds left: the two share a cooldown.",
      "Your other totems: the simulator's full raid already counts **Mana Spring Totem**, **Strength of Earth Totem** and **Windfury Totem** as up, so this list drops only your Fire totem. If you are your group's shaman, drop what your group needs at the pull; they last 5 minutes."
     ],
     "diverge": [
      "In the last 10 seconds, do not drop a new **Searing Totem**: it would shoot only a few times. Cast a **Lightning Bolt** instead.",
-     "When your mana will clearly outlast the fight (more than 200 mana for every second left, say 6,000 with 30 seconds to go), cast **Chain Lightning** whenever it is ready, not only on Clearcasting.",
+     "When mana is short (a long fight, or no mana buffs from the raid), cast **Chain Lightning** only on two or more targets or when Clearcasting makes it free.",
      "If the boss will die before a 2-second cast can finish, only an instant still lands: an **Earth Shock**, which hits harder at once than **Flame Shock**."
     ],
     "rotations": {
-     "elemental-dps": "6871f3eacb72",
-     "stormcaller-dps": "6f1b03f81902"
+     "elemental-dps": "260725d0143a",
+     "stormcaller-dps": "fc9ab1b433fe"
     },
     "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Kill as much as you can with **Lightning Bolt** before the mob reaches you, then use your shocks whenever they are ready and bolt between them while your mana holds. Mana is the limit: about a third of each kill is drinking in the fight lab.",
     "why": [
-     "**Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 14% of your damage at 60 in the fight lab. **Shamanistic Focus** (level 39) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 4 seconds per kill without it).",
-     "**Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 47-48 and 53) cuts that by 70%. **Elemental Alacrity** (23-25) takes half a second off the cast.",
-     "The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 26-27 and 40, makes it 15% stronger and 9 seconds longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (18-22) makes shocks and bolts 10% cheaper.",
+     "**Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 14% of your damage at 60 in the fight lab. **Shamanistic Focus** (level 28) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 3 seconds per kill without it).",
+     "**Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 44-46) cuts that by 70%. **Elemental Alacrity** (34-36) takes half a second off the cast.",
+     "The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 37-38, strengthens it and makes it last longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (29-33) makes shocks and bolts 10% cheaper.",
      "**Elemental Fury** (levels 54-58) doubles the crit bonus of your spells and **Searing Totem**.",
      "Bolt between shocks only while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. The fight lab keeps **Rockbiter Weapon** (from 30, **Windfury Weapon**) on, and your weapon does about an eighth of your damage at 60.",
      "Drop **Searing Totem** at each pull while you have more than half your mana: it does about 6% of your damage at 60."
     ],
     "caveats": [
-     "From 28, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it. **Lightning Mastery** comes at 59: use it at the start of a fight on a fresh mob.",
+     "From 39, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it.",
      "This list is for one mob at a time; the fight lab does not model area pulls for Elemental. **Chain Lightning** hits up to 3 targets if you pull more.",
-     "Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast), 18-28 into Elemental, and 29-39 buy **Thundering Strikes** (5% crit with spells and attacks) and **Shamanistic Focus** from Enhancement, with five filler points to reach it (**Improved Ghost Wolf**, **Guardian Totems**, **Earth's Grasp**), before the deep Elemental talents.",
+     "Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Ancestral Knowledge**: more Intellect; **Mental Dexterity**, which mostly opens the tier of **Shamanistic Focus** at 28). From 29 every point goes to Elemental.",
      "Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays."
     ],
     "diverge": [
@@ -52,27 +53,27 @@
      "A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown)."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "499f6f722483",
-     "leveling:elemental-dps": "077df4b835a8"
+     "leveling:enhancement-dps": "21e2b0278592",
+     "leveling:elemental-dps": "29615eae1d95"
     },
     "written": "2026-10-22"
    }
   },
   "Enhancement": {
    "raid": {
-    "plan": "Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Stormstrike**, shocks, instant **Maelstrom Weapon** bolts and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.",
+    "plan": "Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.",
     "why": [
      "Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** turns Windfury Totem off for you, and a party gets only one of the two.",
-     "**Stormstrike** comes first: it costs only 125 mana, hits with your weapon and makes your next **Lightning Bolt** or **Earth Shock** deal 20% more. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 8-second cooldown that never drops.",
-     "**Flame Shock** and **Earth Shock** share one cooldown (5 seconds with **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Flame Shock takes it whenever the burn is off the target (keeping it up measured about 1% better); every other shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.",
-     "**Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: with all 5 talent points, 5 stacks make the bolt instant and free. The rotation's condition is above 4.2 stacks, so 4 is not enough; the simulator measured waiting for 5 about 5% better than casting at 3.",
-     "**Fire Nova** erupts around your Fire totem, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured 7% more damage, the biggest single change to this list. It has a 6-second cooldown (10, 4 less with **Trial by Fire**), so it is not a true filler: when nothing is ready, keep swinging.",
-     "Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion."
+     "**Flame Shock** goes on the target whenever it is off (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 150% weapon damage and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 6-second cooldown that never drops.",
+     "**Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.8 with your point in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.",
+     "**Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: 5 stacks make the bolt instant and free. Waiting for the full stack measured better than casting at 3.",
+     "**Fire Nova** erupts around your Fire totem, not around you, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured about 7% more damage in the rotation search, the biggest single change to this list. With **Trial by Fire** its cooldown is 6 seconds (10 without), so it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.",
+     "Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage, and **Elemental Weapons** makes them 40% stronger. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion."
     ],
     "caveats": [
-     "Mana runs short: with only your own buffs the simulator's build is out of mana for about 30 seconds of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.",
-     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. If they stand away from your totem, **Totemic Call** brings it to you, with all your other totems.",
-     "**Maelstrom Weapon**'s proc rate is not published. The simulator assumes a full stack about every 30 seconds; the stacks last 30 seconds, so cast the bolt when you reach 5.",
+     "Mana runs short: with only your own buffs the simulator's build runs out of mana for part of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.",
+     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.",
+     "**Maelstrom Weapon**'s proc rate is not published. The stacks last 30 seconds, so cast the bolt when you reach 5.",
      "Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land."
     ],
     "diverge": [
@@ -81,7 +82,7 @@
      "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**. A party gets only one of the two, and Windfury Totem does nothing for you while you use **Windfury Weapon**."
     ],
     "rotations": {
-     "enhancement-dps": "2091583cf1d6"
+     "enhancement-dps": "f5e839848893"
     },
     "written": "2026-10-15"
    },
@@ -90,14 +91,15 @@
     "why": [
      "Before every pull: **Lightning Shield** and your imbue (**Rockbiter Weapon** until 30, then **Windfury Weapon**). At 60 in the fight lab your swings and Windfury attacks do about 40% of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 15%, because a mob hits you all fight.",
      "**Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, about 5% of your damage at 60.",
-     "**Stormstrike** (level 25) whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (34 and 41) half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (4.6 seconds per kill without it).",
+     "**Stormstrike** (level 25) whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (34 and 41) half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (about 4 seconds per kill without it).",
      "One tuned rule shapes the fight: no **Lightning Bolt** until the mob is under 35% health, so no opening bolt, and a 5-stack bolt finishes the mob. The fight lab measured it about 10% faster per kill (re-tuned 2026-10-20).",
      "**Earth Shock** whenever the shock cooldown is free: about a quarter of your damage at 60. It shares that cooldown with **Flame Shock**, so the fight lab never casts **Flame Shock** on one mob.",
      "**Maelstrom Weapon** (levels 35-39) stacks as you hit; 5 stacks make **Lightning Bolt** instant and cheaper. **Rage of the Farseer** (from 40) goes at the start of a fight whenever it is ready."
     ],
     "caveats": [
-     "**Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 4 seconds per kill in the fight lab.",
+     "**Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 3 seconds per kill in the fight lab.",
      "Before 25 you have no **Stormstrike** and before 35 no **Maelstrom Weapon**: until then it is weapon, shield, **Earth Shock** and **Searing Totem**.",
+     "**Anticipation** (22) and **Elemental Weapons** (23-24) mostly fill the 15 Enhancement points that **Stormstrike**'s row asks for before you can take it at 25.",
      "Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays."
     ],
     "diverge": [
@@ -106,8 +108,8 @@
      "A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50%."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "499f6f722483",
-     "leveling:elemental-dps": "077df4b835a8"
+     "leveling:enhancement-dps": "21e2b0278592",
+     "leveling:elemental-dps": "29615eae1d95"
     },
     "written": "2026-10-22"
    }
@@ -118,13 +120,14 @@
     "why": [
      "**Healing Wave** is your main heal: **Healing Way** adds 25%, and it heals the most per point of mana of your cast heals. In the healer lab's fight (one tank and four raid members for five minutes) it does about three quarters of your healing. It takes 3 seconds (this build skips **Improved Healing Wave**), so start it early.",
      "Cast the rank that covers the missing health, no more: the healer lab picks the lowest rank that heals 90% of it, and overhealing is wasted mana. Forever gives ranks far below your level less from healing power (the exact rule is not published; the lab assumes TBC's), but ranks learned at 48 or later keep all of it, so drop a rank or two, not to rank 1.",
-     "**Riptide** is instant and heals twice: at once and over 15 seconds. Keep its heal over time on the tank and spend the spare casts (6-second cooldown) on hurt raid members or as your first emergency heal; a **Chain Heal** that starts on a target with your Riptide heals that target 25% more.",
+     "**Riptide** is instant and heals over 15 seconds; it has a 12-second cooldown. Keep it on the tank and use it on a hurt raid member or as a quick first heal when it is ready; a **Chain Heal** that starts on a target with your Riptide heals that target 25% more.",
      "**Chain Heal** heals three targets for 100%, 50% and 25% of its amount, so it pays only when three people are hurt: the lab casts it when three group members are under half health. Cast on a party member, it jumps only to party members.",
      "**Lesser Healing Wave** lands in 1.5 seconds but heals less per point of mana: it is the emergency heal for someone under 35% when **Riptide** is on cooldown, and the top-up for small gaps.",
      "Drop **Healing Stream Totem** at the pull: it heals your whole group every 2 seconds for 5 minutes, and with **Restorative Totems** it did about a tenth of the healing in the lab."
     ],
     "caveats": [
-     "Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or any of your spells crits (client 70425; heals only before), at most one every few seconds (the lab and the community simulator use 3.5). It costs nothing and has no cooldown (the 15-second cooldown its tooltip used to show was a tooltip error, fixed in the 2026-10-08 build), so recast it whenever the globes are gone.",
+     "Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or any of your spells crits, at most one every few seconds (the lab and the community simulator use 3.5). It costs nothing and has no cooldown, so recast it whenever the globes are gone.",
+     "**Totemic Focus** (5 points, 25% cheaper totems) and **Mindfulness** (half your mana regeneration continues while you cast) are the build's mana points, and they also count toward the tier gates in front of **Water Shield** and **Mana Tide Totem**; the healer lab values the gate points low.",
      "Drop **Mana Tide Totem** at about half mana: it restores 290 mana every 3 seconds for 12 seconds to everyone in your group within 30 yards, on a 5-minute cooldown. The lab also measured drinking a mana potion early (below 80% mana) better than saving it, since its 2-minute cooldown starts sooner.",
      "Let raid members drop to about half health before you heal them: the healer lab measured that better than healing them at 70%.",
      "The healer lab is a model of one group (a tank and four raid members) under stated assumptions; real raids spread damage differently."
@@ -140,9 +143,9 @@
     "written": "2026-10-22"
    },
    "leveling": {
-    "plan": "You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free. It is about 45% slower than leveling as Enhancement (44 against 30.5 seconds per kill in the fight lab, levels 20-60): the price of arriving at 60 ready to heal.",
+    "plan": "You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free. It is about 50% slower than leveling as Enhancement (38 against 25 seconds per kill in the fight lab, levels 20-60, level-weighted): the price of arriving at 60 ready to heal.",
     "why": [
-     "This build has no **Stormstrike**, **Maelstrom Weapon** or **Rage of the Farseer**: skip what uses them. In the fight lab it casts no **Lightning Bolt** at all: the tuned rule allows a bolt only once the mob is under 35% health, and without Maelstrom Weapon there is no instant one.",
+     "This build takes none of Enhancement's melee talents (the \"Not in this build\" line names them): skip the lines that use them. In the fight lab it opens no fight with a **Lightning Bolt**: the tuned rule allows a bolt only once the mob is under 35% health, and with no Maelstrom Weapon there is no instant one.",
      "**Earth Shock** takes every free shock (it shares the cooldown with **Flame Shock**, which the list therefore never reaches on one mob), and it interrupts a caster mob.",
      "Your damage is your weapon: **Rockbiter Weapon** until 30, then **Windfury Weapon**, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).",
      "The first points are **Tidal Focus** (10-14: 5% more chance to hit), **Mindfulness** (15-17) and **Thundering Strikes** (18-22: 5% crit); **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper. Drop it at each pull while you have more than half your mana.",
@@ -158,27 +161,28 @@
      "A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50% (both share the shock cooldown)."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "499f6f722483",
-     "leveling:elemental-dps": "077df4b835a8"
+     "leveling:enhancement-dps": "21e2b0278592",
+     "leveling:elemental-dps": "29615eae1d95"
     },
     "written": "2026-10-22"
    }
   },
   "Hybrid Elemental/Enhancement": {
    "raid": {
-    "plan": "This hybrid is a melee shaman: Enhancement's **Stormstrike** and **Flurry** with Elemental's shock and **Fire Nova** talents. It plays the Enhancement raid list without its **Maelstrom Weapon** bolt: **Stormstrike**, **Flame Shock**, **Earth Shock** and **Fire Nova** between your swings, which with **Windfury Weapon** do about half the damage.",
+    "plan": "This hybrid is a melee shaman: Enhancement's **Stormstrike**, **Flurry** and **Maelstrom Weapon** with Elemental's **Elemental Devastation**, **Call of Flame** and **Trial by Fire**. It plays the Enhancement raid list: **Flame Shock**, **Stormstrike**, an instant **Lightning Bolt** at 5 **Maelstrom Weapon** stacks, **Earth Shock** and **Fire Nova** between your swings, which with **Windfury Weapon** do about half the damage.",
     "why": [
      "Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem**; the first two last 5 minutes, so one cast covers the fight.",
-     "**Stormstrike** first: 125 mana, a weapon hit and 20% more on your next **Earth Shock**; with **Improved Stormstrike** each one keeps half your mana regeneration going while you cast for 15 seconds.",
-     "**Flame Shock** whenever the burn is off the target, **Earth Shock** on every other free shock. Your Elemental points shape them: 3 points in **Reverberation** bring the shared cooldown to 5.4 seconds, **Convection** and **Shamanistic Focus** cut their cost, and **Call of Flame** adds 15% to **Flame Shock**, **Fire Nova** and **Searing Totem**.",
-     "**Fire Nova** last: it erupts around your Fire totem, so keep **Searing Totem** within 10 yards of the boss and replace it when it expires. **Trial by Fire** makes it 20% stronger on a 6-second cooldown; adding Fire Nova to this list measured about 7% more damage in the rotation search.",
+     "**Stormstrike** is your main button: 8% of your base mana, a weapon hit and 20% more on your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock**; with **Improved Stormstrike** each one keeps half your mana regeneration going while you cast for 15 seconds.",
+     "**Flame Shock** whenever the burn is off the target, **Earth Shock** on every other free shock. Your Elemental points shape them: 2 points in **Reverberation** bring the shared cooldown to 5.6 seconds, **Concussion** adds 5% to **Earth Shock** and your bolts, **Shamanistic Focus** halves their cost, and **Call of Flame** adds 15% to **Flame Shock**, **Fire Nova** and **Searing Totem**.",
+     "**Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**, when it is instant and free. This build takes 4 of the 5 points, so the stacks come a little slower than in the Enhancement build.",
+     "**Fire Nova** last: it erupts around your Fire totem, so keep **Searing Totem** within 10 yards of the boss and replace it when it expires. **Trial by Fire** makes it 20% stronger on a 6-second cooldown; adding Fire Nova to the Enhancement list measured about 7% more damage in the rotation search.",
      "**Elemental Devastation** turns every spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry**: another reason to keep a shock going between swings.",
-     "Put **Windfury Weapon** on your weapon with a sharpening stone on top: in Forever an imbue and a stone stack."
+     "Put **Windfury Weapon** on your weapon with a sharpening stone on top: in Forever an imbue and a stone stack, and **Elemental Weapons** makes the Windfury attacks 40% stronger."
     ],
     "caveats": [
-     "No **Maelstrom Weapon** and no **Rage of the Farseer** (26 Enhancement points): the list's **Lightning Bolt** line never fires for this build. Use your trinkets and potion at the pull.",
-     "Mana: **Improved Stormstrike**, **Mindfulness** and **Totemic Focus** pay for the shocks; with only your own buffs the simulator's build is out of mana for about 12 seconds of a 3-minute fight. Use a mana potion when low, and do not hold shocks back.",
-     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem.",
+     "No **Rage of the Farseer** in this build: use your trinkets and potion at the pull.",
+     "Mana: **Improved Stormstrike** and **Shamanistic Focus** pay for the shocks; with only your own buffs the simulator's build still runs out of mana for part of a 3-minute fight. Use a mana potion when low, and do not hold shocks back.",
+     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem. You can have only one Fire totem out; **Totemic Call** brings it to you, with your other totems.",
      "For a **Lightning Bolt** caster, play Elemental: this split is a melee build."
     ],
     "diverge": [
@@ -186,24 +190,24 @@
      "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: a party gets only one, and it does nothing for you while you use **Windfury Weapon**."
     ],
     "rotations": {
-     "elemental-dps": "6871f3eacb72",
-     "enhancement-dps": "2091583cf1d6",
-     "stormcaller-dps": "6f1b03f81902"
+     "elemental-dps": "260725d0143a",
+     "enhancement-dps": "f5e839848893",
+     "stormcaller-dps": "fc9ab1b433fe"
     },
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on cooldown and bolts between them while your mana holds. The Enhancement half (levels 10-31) turns your Intellect into spell damage and attack power (**Mental Quickness**, **Mental Dexterity**), so your spells and your weapon both hit harder; the Elemental talents come last (40-60).",
+    "plan": "Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on cooldown and bolts between them while your mana holds. The talents come in blocks: Elemental first for cheaper, faster bolts (levels 10-20), hit and then crit and Intellect from Restoration and Enhancement (21-35), the deep Elemental talents (36-47), and Enhancement for the last points (48-58), which turn your Intellect into attack power and spell damage (**Mental Dexterity**, **Mental Quickness**).",
     "why": [
-     "**Shamanistic Focus** (level 20) makes your shocks and **Lightning Shield** 45% cheaper: at 60 the fight lab measured 3.9 seconds per kill without it, the build's most valuable talent.",
-     "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you; **Elemental Alacrity** (levels 45-47) cuts its cast by half a second. Once the mob hits you each hit pushes a cast back until **Eye of the Storm** (55-57): bolt in melee only while you keep the mana for the next shocks.",
-     "The shocks share one cooldown: **Flame Shock** while it is not ticking and the mob is above 30% health, **Earth Shock** on every other free shock and first whenever it would kill. **Reverberation** (levels 52-54) shortens the shared cooldown by 0.6 seconds.",
-     "**Mental Quickness** (levels 30-31) adds 30% of your Intellect as spell damage and **Mental Dexterity** (19 and 23-24) all of it as attack power; **Ancestral Knowledge** (15-18) raises that Intellect. Without Mental Quickness the fight lab measured 2.7 seconds more per kill at 60.",
-     "Before every pull: **Lightning Shield** (**Improved Lightning Shield** from 25), **Rockbiter Weapon** (**Windfury Weapon** from 30), and **Searing Totem** while you have more than half your mana."
+     "**Shamanistic Focus** (level 35) makes your shocks and **Lightning Shield** 45% cheaper: more bolts between the shocks, and one of the most valuable talents of the Elemental rotation in the fight lab.",
+     "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you; **Elemental Alacrity** (levels 15-17) cuts its cast by half a second. Once the mob hits you each hit pushes a cast back until **Eye of the Storm** (39-41): bolt in melee only while you keep the mana for the next shocks.",
+     "The shocks share one cooldown: **Flame Shock** while it is not ticking and the mob is above 30% health, **Earth Shock** on every other free shock and first whenever it would kill. **Reverberation** (levels 38 and 42-43) shortens the shared cooldown by 0.6 seconds.",
+     "**Ancestral Knowledge** (31-34) raises your Intellect, **Mental Dexterity** (30, 48-49) turns 150% of it into attack power and **Mental Quickness** (57-58) turns 30% of it into spell damage, so the Enhancement points make both your weapon and your spells hit harder.",
+     "Before every pull: **Lightning Shield** (**Improved Lightning Shield** from 50), **Rockbiter Weapon** (**Windfury Weapon** from 30), and **Searing Totem** while you have more than half your mana."
     ],
     "caveats": [
-     "The deep Elemental talents come last: skip their steps until you have them.",
-     "In the fight lab it takes 35 seconds per kill (levels 20-60): about 15% slower than Enhancement (30.5) and about 5% faster than Elemental (37).",
+     "**Toughness** (52-55) and **Improved Lightning Shield** (50-51, 56) mostly fill the tier points on the way to **Mental Quickness**: buy them in this order anyway.",
+     "In the fight lab it takes 29 seconds per kill (levels 20-60, level-weighted): about 18% slower than Enhancement (25) and level with Elemental (29).",
      "This list is for one mob at a time; the fight lab does not model area pulls for this rotation.",
      "Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays."
     ],
@@ -215,8 +219,8 @@
     ],
     "written": "2026-10-22",
     "rotations": {
-     "leveling:enhancement-dps": "499f6f722483",
-     "leveling:elemental-dps": "077df4b835a8"
+     "leveling:enhancement-dps": "21e2b0278592",
+     "leveling:elemental-dps": "29615eae1d95"
     }
    }
   }

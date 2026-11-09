@@ -85,10 +85,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 2. **Mind Flay** — Removing it costs 6.4 points of score in this model.
 3. **Darkness** — Removing it costs 3.7 points of score in this model.
 4. **Improved Shadow Word: Pain** — Removing it costs 3.2 points of score in this model.
-5. **Twilight Focus** — Removing it costs 2.7 points of score in this model.
-6. **Shadow Focus** — Removing it costs 2.2 points of score in this model.
-7. **Blackout** — Removing it costs 1.9 points of score in this model.
-8. **Shadow Reach** — Removing it costs 1.0 points of score in this model.
+5. **Shadow Focus** — Removing it costs 2.2 points of score in this model.
+6. **Blackout** — Removing it costs 1.9 points of score in this model.
+7. **Shadow Reach** — Removing it costs 1.0 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -114,6 +113,7 @@ What this build casts per kill ([report](../fightlab/shadow-dps-aoe.md), all lev
 
 - Allocation and order taken from cand-aoe-r2 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (51.3s vs 59.9s per kill, level-weighted).
 - Report: priest/research/talents/forever/optimizer/shadow-dps-leveling-aoe.md
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Twilight Focus; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

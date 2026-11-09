@@ -87,9 +87,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 3. **Malice** — Removing it costs 2.4 points of score in this model.
 4. **Improved Poisons** — Removing it costs 1.9 points of score in this model.
 5. **Flawless Execution** — Removing it costs 1.8 points of score in this model.
-6. **Improved Sinister Strike** — Removing it costs 1.8 points of score in this model.
-7. **Precision** — Removing it costs 1.8 points of score in this model.
-8. **Relentless Strikes** — Removing it costs 1.7 points of score in this model.
+6. **Precision** — Removing it costs 1.8 points of score in this model.
+7. **Relentless Strikes** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -116,6 +115,7 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 33/16/2 -> 33/16/2; Murder 2 gone; Lethality 4 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Ruthlessness (tier gating for Cold Blood); +1 Ruthlessness (back into Assassination); +1 Ruthlessness (back into Assassination); +1 Improved Expose Armor (back into Assassination); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-swords-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 22.9 s per kill; stats model 22.9 s; own tree first 24.1 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Sinister Strike; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -35,7 +35,8 @@ LEVEL_AS = {("druid", "Restoration"): "Feral Combat", ("paladin", "Holy"): "Retr
 # talents the page's build holds (checked 2026-10-15 against the page picks).
 HYBRID_NAMES = {
     ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", {
-        "raid": "Marksmanship's shots (Trueshot Aura, Barrage, Sniper Shot) with a few Beast Mastery points: the classic raid hunter split.",
+        "raid": "Beast Mastery's pet talents with Marksmanship's shot talents (Mortal Shots, Improved Arcane Shot, Careful Aim): a pet build "
+                "short of 30 Beast Mastery points.",   # 2026-11-08 full page read H3: the raid pick 28/21/2 has no Trueshot Aura, Barrage, Sniper Shot
         "leveling": "Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents."}),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
     ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points."),

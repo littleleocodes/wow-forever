@@ -19,9 +19,10 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Affliction — Leveling (derived)](builds/affliction-leveling.md) 🔬 | 33/6/12 | DPS |
 | [Demonology — Leveling (derived)](builds/demonology-leveling.md) 🔬 | 21/30/0 | DPS |
 | [Destruction — Leveling (derived)](builds/destruction-leveling.md) 🔬 | 21/0/30 | DPS |
-| [Affliction — Leveling (open talent search)](builds/affliction-open-leveling.md) 🔬 | 37/14/0 | DPS |
+| [Affliction — Leveling (open talent search)](builds/affliction-open-leveling.md) 🔬 | 39/11/1 | DPS |
 | [Affliction-Demonology — Leveling (open talent search)](builds/affliction-demonology-open-leveling.md) 🔬 | 27/24/0 | DPS |
 | [Destruction — Leveling (open talent search)](builds/destruction-open-leveling.md) 🔬 | 6/11/34 | DPS |
+| [Demonology — Leveling (open talent search)](builds/demonology-open-leveling.md) 🔬 | 21/30/0 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

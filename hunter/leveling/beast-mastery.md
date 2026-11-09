@@ -8,7 +8,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Beast Mastery), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 34% of the damage at level 60 in the fight lab comes from pet (the spec's rule: at least 30%; **Bestial Wrath** cast in every fight).
+**Signature spells:** 34% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet) (the spec's rule: at least 30%; **Bestial Wrath** cast at level 60).
 
 ## How to play
 
@@ -19,41 +19,38 @@
 1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
 2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
 3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
-4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
+4. No other shots on a single mob: the fight lab levels faster skipping **Arcane Shot** and **Multi-Shot** and keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
 6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health.
 
 ## Why this rotation
 
-Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. The build spends its first 15 points in Marksmanship (cheaper shots and crit) and then makes the pet strong, with **Bestial Wrath** at 60. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.
+Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. The build puts its first 31 points into the pet (**Deadly Aspects** from level 10, **Unleashed Fury** at 20, **Ferocity** at 25, **Bestial Wrath** at 40) and then adds Marksmanship's crit and cheaper shots. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.
 
 **Why it works**
 
-- Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts them only while the mob has more than 30% and 40% of its health.
-- **Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The fight lab's tuned rules (2026-10-24) never cast Multi-Shot (it shares the cooldown; about 3.5% faster per kill without it), Arcane Shot (about 2%) or **Summon Hawk** (about 2.5%): their mana is worth more as fewer drinks between pulls.
-- **Efficiency** and **Lethal Attacks** (levels 10-19) come first: in the fight lab's removal runs at 60 they are worth almost a second a kill each, next to the pet's **Unleashed Fury**, **Bestial Discipline** and **Ferocity** (levels 36-47), the build's most valuable talents. **Trueshot Aura** (level 25) is a buff you cast in Forever: keep it on.
-- At 60 **Auto Shot** is about a third of your damage, the cat's swings and Claw about 40%, **Serpent Sting** and **Aimed Shot** about 12-15% each. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
-- **Rapid Fire** at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (54) and **Bestial Wrath** (60) likewise. At 60 the fight lab casts **Bestial Wrath** about one pull in five.
-- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then.
+- Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts the mark only while the mob has more than 30% of its health and the sting while it has more than 40%.
+- **Aimed Shot** (from level 20) is your only cooldown shot on a single mob, cast while the mob has more than a quarter of its health. The fight lab's tuned rules (2026-11-03) never cast **Multi-Shot** (it shares the cooldown) or **Arcane Shot**: their mana is worth more as fewer drinks between pulls. This build has no **Summon Hawk** point (the rules switch the hawk off as well).
+- The pet talents come first: **Deadly Aspects** (levels 10-14), **Unleashed Fury** (20-24), **Ferocity** (25-29) and **Bestial Discipline** (30-31, half your mana regeneration keeps running while you cast). In the fight lab's removal runs at 60 (seconds a kill costs without the talent) **Unleashed Fury** is worth about 1.0 second, **Bestial Discipline** about 0.9, **Efficiency** (46-50) about 0.85 and **Ferocity** about 0.7: the build's four most valuable talents. **Trueshot Aura** (56) is a buff you cast in Forever: keep it on.
+- **Rapid Fire** (26) at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (34) and **Bestial Wrath** (40) likewise, the pet's stun and rage at the pull. **Bestial Wrath** has a 2-minute cooldown, so it goes on the first pull and then again every few pulls.
+- At 60 the pet is about a third of your damage (34% in the fight lab) and your shots most of the rest. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
+- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 35% of your mana and eats below 65% of your health: the tuned rules change neither.
 
 **Caveats**
 
-- **Intimidation** is the point that opens **Bestial Wrath**: on its own it measured nothing in the fight lab. **Endurance Training**, **Spirit Bond** and **Bestial Swiftness** also measured about 0 at 60 (a sturdier, faster pet; the lab's pet rarely dies).
-- The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster (under 1% per kill): less time sitting between pulls.
+- **Intimidation** is the point that opens **Bestial Wrath**: cast on its own it measured slightly slower in the fight lab (about 0.2 seconds a kill), and **Bestial Wrath** itself is worth about 0.2. **Endurance Training**, **Bestial Swiftness** and **Spirit Bond** measured nothing at 60 (a sturdier, faster, self-healing pet; the lab's pet rarely dies).
 - A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.
-- Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage.
-- From level 50, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
-- Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
+- Several mobs at once: **Multi-Shot** and **Volley** (from level 40; a 6-second channel with no cooldown in Forever) are your area damage.
+- **Improved Tracking** (levels 57-60, 4 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
+- Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Hawk** rank 7 gives +120 ranged attack power (rank 6 +110), **Hunter's Mark** rank 4 +143 (rank 3 +98) and **Trueshot Aura** rank 5 +100 (rank 4 +75). Cast the highest rank you know; the fight lab does.
 - **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
 **When to change it**
 
 - When the mob is nearly dead, stop spending mana: **Auto Shot** and the pet finish it, and you start the next pull fuller.
 - If the pet dies mid-fight, finish the mob with **Raptor Strike** and **Wing Clip** (or **Feign Death** if it is going badly), and revive the pet before the next pull.
-
-*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -95,5 +92,5 @@ One point per level from 10, in this order:
 - [Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md) (30/21/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/532002050510025-005355200001--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

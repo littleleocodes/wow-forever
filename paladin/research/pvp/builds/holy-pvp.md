@@ -56,8 +56,6 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 2. **Holy Shock** — The scorer's value in this build: +9.5% of its score (model holy-heal).
 3. **Spiritual Focus** — The scorer's value in this build: +8.8% of its score (model holy-heal).
 4. **Divine Favor** — The scorer's value in this build: +8.2% of its score (model holy-heal).
-5. **Unyielding Faith** — The scorer's value in this build: +8.0% of its score (model holy-heal).
-6. **Voice of Truth** — The scorer's value in this build: +7.4% of its score (model holy-heal).
 
 ## Notes
 
@@ -65,6 +63,7 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 - Where we disagree with the community: most Holy builds take Illumination (78% take it), Benediction (77% take it), which the model values below this build's weakest point; this build takes Deflection (17%), Improved Hammer of Justice (10%), Improved Righteous Fury (16%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 31/18/2 -> 31/18/2; Divine Intellect 5 gone (moved to Protection); Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Divine Precision 3 -> 2 (rank cap); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Divine Intellect (tier gating for Guardian's Favor); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Spiritual Focus (tier gating for Healing Light); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Divine Precision); +1 Illumination (tier gating for Holy Shock); +1 Illumination (tier gating for Holy Power); +1 Illumination (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); +1 Boundless Light (tier gating for Holy Power); -1 Precision (over 51); -1 Precision (over 51); -1 Toughness (over 51); -1 Toughness (over 51); -1 Toughness (over 51) (refill: the holy-heal model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Unyielding Faith, Voice of Truth; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

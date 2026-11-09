@@ -14,7 +14,7 @@ What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer 
 | 4-9 | **Shadow Word: Pain** at the pull, then the wand. One cast per mob. |
 | 10-19 | **Mind Blast** whenever it is ready. Talent points start with **Spirit Tap**. |
 | 20-31 | **Mind Flay** (talent) replaces most of your wanding: a channel that also slows the mob. |
-| 32-38 | **Shadow Word: Death**, an instant finisher. With **Early Demise** at 35 it is for any mob below 20% health. |
+| 32-38 | **Shadow Word: Death**, an instant finisher. **Early Demise** (35) adds crit chance to it on a mob at or below 20% health. |
 | 39-60 | **Vampiric Embrace** (talent, 39) opens the pull and heals you as you deal damage. **Shadowform** (talent, 40) stays on for good. |
 
 ## Keybinds by level
@@ -25,7 +25,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 | Key | Its job | 1-3 | 4-9 | 10-19 | 20-31 | 32-38 | 39-60 |
 |---|---|---|---|---|---|---|---|
-| Q | Your filler, pressed most | **Smite** | Smite | Smite | **Mind Flay** | Mind Flay | Mind Flay |
+| Q | Your filler, pressed most | **Smite** | **Free until Mind Flay** | Free until Mind Flay | **Mind Flay** | Mind Flay | Mind Flay |
 | E | Control: fear what is on you | — | — | **Psychic Scream** from 14 | Psychic Scream | Psychic Scream | Psychic Scream |
 | R | The big hit, on cooldown | — | — | **Mind Blast** | Mind Blast | Mind Blast | Mind Blast |
 | F | The save: the shield | — | **Power Word: Shield** from 6 | Power Word: Shield | Power Word: Shield | Power Word: Shield | Power Word: Shield |
@@ -55,9 +55,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+C | Free | — | — | — | — | — | — |
 | Shift+X | Free | — | — | — | — | — | — |
 
-- One swap on bar 1: **Mind Flay** takes Q at 20 and **Smite** leaves the bar for good.
+- Q changes twice on bar 1: **Smite** until you own a wand, free from 4 (the tuned rotation stops casting it), then **Mind Flay** at 20.
 - No key: **Power Word: Fortitude**, **Inner Fire**, **Shadowform** (a click once, it stays on), **Renew** (a between-fights heal before 40), food, water, the mount and the Hearthstone.
-- Levels 1-9 fight with Q, Mouse 4 and the middle mouse button. The wand is your filler until 20.
+- Levels 1-3 fight with Q and the middle mouse button. From 4, Mouse 4 and the middle mouse button: the wand is your filler until 20.
 - **Devouring Plague** and **Holy Fire** are never cast by the tuned rotation: no key.
 
 ## Levels 1-3: Smite, until you own a wand
@@ -80,7 +80,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Shadow Word: Pain** (4), Power Word: Shield (6), Fade (8), Renew (8).
 
-**Keys to set:** Mouse 4 = Shadow Word: Pain; F = Power Word: Shield (at 6).
+**Keys to set:** Q = Free until Mind Flay; Mouse 4 = Shadow Word: Pain; F = Power Word: Shield (at 6).
 
 **Your keys in this stage:** Mouse 4 Shadow Word: Pain.
 
@@ -97,9 +97,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Levels 10-19: Mind Blast, and talents begin
 
-**The trainer teaches:** Confounding Flash (10), Desperate Prayer (10), Divine Grace (10), Hex of Weakness (10), **Mind Blast** (10), Resurrection (10), Starshards (10), Touch of Weakness (10), Inner Fire (12), Cure Disease (14), Psychic Scream (14), Heal (16), Dispel Magic (18).
+**The trainer teaches:** Confounding Flash (10, Gnome only), Desperate Prayer (10, Dwarf only), Divine Grace (10, Human only), Hex of Weakness (10, Troll only), **Mind Blast** (10), Resurrection (10), Starshards (10, Night Elf only), Touch of Weakness (10, Undead only), Inner Fire (12), Cure Disease (14), Psychic Scream (14), Heal (16), Dispel Magic (18).
 
-**New ranks to buy:** Mind Blast at 16; Shadow Word: Pain at 10, 18.
+**New ranks to buy:** Desperate Prayer at 18; Mind Blast at 16; Power Word: Shield at 12, 18; Shadow Word: Pain at 10, 18.
 
 **Talents:** 10-14 Spirit Tap, 15-18 Shadow Focus, 19 Shadow Reach.
 
@@ -118,15 +118,16 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Spirit Tap** (10-14) returns mana after every kill. It is why you rarely drink.
 - **Inner Fire** (12) joins **Power Word: Fortitude** as a buff you always keep up.
 - **Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.
-- **Starshards** (10) and **Holy Fire** (20) are not part of the Shadow rotation.
+- **Holy Fire** (20) is not part of the Shadow rotation, and **Starshards** (10, Night Elf only) is not either.
+- Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own.
 
 *Fight lab, seconds per kill: 23 at level 10, 29 at level 19. Presses per kill at level 10: Wand 5.7, Mind Blast 1.8, Shadow Word: Pain 1.0.*
 
 ## Levels 20-31: Mind Flay
 
-**The trainer teaches:** Chastise (20), Contingency Plan (20), Dark Sacrifice (20), Devouring Plague (20), Elune's Grace (20), Fear Ward (20), Feedback (20), Flash Heal (20), Holy Fire (20), Mind Soothe (20), Shackle Undead (20), Shadowguard (20), Mind Vision (22), Mana Burn (24), Binding Heal (25), Divine Spirit (30), Mind Control (30), Prayer of Healing (30), Shadow Protection (30).
+**The trainer teaches:** Chastise (20, Dwarf only), Contingency Plan (20, Gnome only), Dark Sacrifice (20, Undead only), Devouring Plague (20), Elune's Grace (20, Night Elf only), Fear Ward (20), Feedback (20, Human only), Flash Heal (20), Holy Fire (20), Mind Soothe (20), Shackle Undead (20), Shadowguard (20, Troll only), Mind Vision (22), Mana Burn (24), Binding Heal (25), Divine Spirit (30), Mind Control (30), Prayer of Healing (30), Shadow Protection (30).
 
-**New ranks to buy:** Mind Blast at 22, 28; Mind Flay at 28; Shadow Word: Pain at 26.
+**New ranks to buy:** Desperate Prayer at 26; Flash Heal at 26; Mind Blast at 22, 28; Mind Flay at 28; Power Word: Shield at 24, 30; Psychic Scream at 28; Shadow Word: Pain at 26.
 
 **Talents:** 20 Mind Flay, 21-22 Improved Mind Flay, 23 Shadow Reach, 24 Improved Mind Blast, 25-27 Dark Inspiration, 28-30 Shadow Weaving, 31 Improved Mind Blast.
 
@@ -145,6 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Devouring Plague** (20): leave it off your bar. The tuned rotation never casts it: it costs too much mana for what it does before the mob dies.
 - **Improved Mind Blast** (24, 31-34) shortens the cooldown, so **Mind Blast** comes round more often as you level.
+- Racial spells in the list above: Feedback (Human), Chastise (Dwarf), Elune's Grace (Night Elf), Contingency Plan (Gnome), Dark Sacrifice (Undead), Shadowguard (Troll). Only that race can learn its own.
 
 *Fight lab, seconds per kill: 32 at level 20, 35 at level 30, 37 at level 31. Presses per kill at level 20: Mind Flay 2.9, Mind Blast 2.0, Wand 1.9, Shadow Word: Pain 1.0.*
 
@@ -152,7 +154,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Abolish Disease (32), **Shadow Word: Death** (32), Levitate (34).
 
-**New ranks to buy:** Mind Blast at 34; Mind Flay at 36; Shadow Word: Pain at 34.
+**New ranks to buy:** Desperate Prayer at 34; Dispel Magic at 36; Flash Heal at 32, 38; Mind Blast at 34; Mind Flay at 36; Power Word: Shield at 36; Shadow Word: Pain at 34.
 
 **Talents:** 32-34 Improved Mind Blast, 35 Early Demise, 36-38 Darkness.
 
@@ -170,8 +172,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.
 
-- **Early Demise** (35) lets you cast **Shadow Word: Death** on any mob below 20% of its health, not only for the killing blow.
-- **Shadow Word: Death** hurts you if it does not kill. Keep it for the finish.
+- **Early Demise** (35) adds 15% critical strike chance to **Shadow Word: Death** on a mob at or below 20% of its health. It does not unlock a cast: the spell was always castable. The fight lab casts it there too.
+- **Shadow Word: Death** hurts you for 30% of your maximum health when the mob survives it. Keep it for the finish.
 
 *Fight lab, seconds per kill: 35 at level 32, 37 at level 38. Presses per kill at level 32: Mind Flay 3.0, Mind Blast 1.9, Wand 1.0, Shadow Word: Pain 1.0, Shadow Word: Death 1.0.*
 
@@ -179,7 +181,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Greater Heal (40), Prayer of Fortitude (48), Prayer of Shadow Protection (56), Prayer of Spirit (60).
 
-**New ranks to buy:** Mind Blast at 40, 46, 52, 58; Mind Flay at 44, 52, 60; Shadow Word: Death at 40, 48, 56; Shadow Word: Pain at 42, 50, 58.
+**New ranks to buy:** Desperate Prayer at 42, 50, 58; Flash Heal at 44, 50, 56; Mind Blast at 40, 46, 52, 58; Mind Flay at 44, 52, 60; Power Word: Shield at 42, 48, 54, 60; Psychic Scream at 42, 56; Shackle Undead at 40, 60; Shadow Word: Death at 40, 48, 56; Shadow Word: Pain at 42, 50, 58.
 
 **Talents:** 39 Vampiric Embrace, 40 Shadowform, 41-42 Darkness, 43-44 Dark Inspiration, 45-49 Twin Disciplines, 50-52 Twilight Focus, 53-55 Mental Strength, 56-57 Power in Light, 58-60 Meditation.
 
@@ -191,7 +193,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
 2. **Mind Blast** whenever it is ready.
-3. **Shadow Word: Death** whenever the mob is below 20% of its health, or when one cast will kill it.
+3. **Shadow Word: Death** when one cast will kill the mob, or on a mob at or below 20% of its health (**Early Demise** adds crit there; if the mob survives you take the backlash).
 4. **Mind Flay** in between.
 5. Your wand finishes a mob with a hit or two left.
 
@@ -199,7 +201,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Shadowform** at 40 is the biggest jump of the whole climb: the fight lab's time per kill drops by more than a third. Never leave it.
 - In **Shadowform** you cannot cast Holy spells. Eat or bandage between fights instead of healing yourself.
-- The remaining points go to Discipline for mana: **Twin Disciplines** (45-49), **Mental Strength** (53-55) and **Meditation** (58-60).
+- The remaining points: **Darkness** (41-42) and **Dark Inspiration** (43-44), then mana: **Twin Disciplines** (45-49), **Twilight Focus** (50-52), **Mental Strength** (53-55), **Power in Light** (56-57, which this rotation never uses) and **Meditation** (58-60).
 
 *Fight lab, seconds per kill: 37 at level 39, 22 at level 40, 21 at level 50, 20 at level 60. Presses per kill at level 39: Mind Flay 2.9, Mind Blast 2.1, Wand 1.1, Shadow Word: Pain 1.0, Shadow Word: Death 1.0, Vampiric Embrace 0.8.*
 
@@ -212,8 +214,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- Discipline and Holy have their own leveling pages in this folder, for a priest who wants to arrive at 60 as a healer. Both are slower per kill.
-- After 40, Shadow is among the faster levelers in the fight lab. Before 20 every priest plays the same wand game.
+- Discipline and Holy have their own leveling pages in this folder, for a priest who wants to arrive at 60 as a healer, and Smite is a damage build on their talents. All three are slower per kill.
+- Shadow is the fastest priest leveler at every level the fight lab simulates (20 to 60). Before 20 the wand does most of the work in every spec.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

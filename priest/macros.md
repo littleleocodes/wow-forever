@@ -66,7 +66,7 @@ Leveling and raid. Keys below are your [Shadow keybinds](leveling/keybinds.md).
 - **Replaces:** Mouse 4 and 1.
 - **Frees:** 1.
 - **Fill it with:** 1 takes Flash Heal from 3, closer to your hand.
-- **Why it works:** Both are on the global cooldown, so press Mouse 4 twice. Use it from 39, when Vampiric Embrace arrives. Until then keep plain Shadow Word: Pain.
+- **Why it works:** Both are on the global cooldown, so press Mouse 4 twice: Vampiric Embrace, then Shadow Word: Pain. A third press on the same mob would cast Vampiric Embrace again (a sequence returns to its first spell), so go back to Mind Blast and Mind Flay after two. Use it from 39, when Vampiric Embrace arrives. Until then keep plain Shadow Word: Pain.
 
 ### Out of Shadowform and heal
 
@@ -107,7 +107,7 @@ Leveling and raid. Keys below are your [Shadow keybinds](leveling/keybinds.md).
 
 ## Discipline
 
-Healing, and the Discipline leveling page.
+The Discipline raid healer. The Discipline leveling page levels in the same raid talents (healers level in their raid build): the shield macro works there too, while the leveling rotation spends **Inner Focus** on the pull's first spell rather than a heal. No Discipline build of ours takes Power Infusion, so there is no macro for it.
 
 ### Inner Focus into a big heal
 
@@ -119,20 +119,8 @@ Healing, and the Discipline leveling page.
 
 - **Replaces:** Inner Focus and one heal press.
 - **Frees:** One key.
-- **Fill it with:** Power Infusion.
+- **Fill it with:** Penance on a mouseover (the next macro, done for Penance).
 - **Why it works:** Inner Focus is off the global cooldown.
-
-### Power Infusion on whoever your mouse is on
-
-```
-#showtooltip Power Infusion
-/cast [@mouseover,help,nodead][@player] Power Infusion
-```
-
-- **Replaces:** Targeting a friend for it.
-- **Frees:** Nothing.
-- **Fill it with:** Nothing.
-- **Why it works:** Off the global cooldown, so it never costs you a heal.
 
 ### Shield whoever your mouse is on
 
@@ -179,14 +167,14 @@ Healing, and the Holy leveling page.
 
 The Holy Fire and Smite damage build.
 
-### Smite that opens with Holy Fire
+### The Smite pull on one key
 
 ```
-#showtooltip Smite
-/castsequence reset=target Holy Fire, Shadow Word: Pain, Smite
+#showtooltip Holy Fire
+/castsequence reset=target Holy Fire, Shadow Word: Pain
 ```
 
-- **Replaces:** The Holy Fire and Shadow Word: Pain keys, at the pull.
-- **Frees:** Two keys.
-- **Fill it with:** Mind Blast and Renew (the Smite build has no Penance).
-- **Why it works:** Each press casts the next spell, then Smite repeats. It stays on Smite for the rest of the mob. Press Mind Blast on its own when ready.
+- **Replaces:** The Holy Fire and Shadow Word: Pain presses at the pull (keys 2 and Mouse 4).
+- **Frees:** Nothing: the rotation casts both again when their burn runs out, so keep them on their own keys for the recasts. It saves a press at the pull.
+- **Fill it with:** Nothing.
+- **Why it works:** Press it twice at the pull: Holy Fire, then Shadow Word: Pain. A sequence returns to its first spell after the last, so a third press on the same mob would cast Holy Fire again; after two presses go to Q (Smite) and Mind Blast on R. The build has no Penance.

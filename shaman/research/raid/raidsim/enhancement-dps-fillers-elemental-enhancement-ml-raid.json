@@ -3,28 +3,31 @@
  "spec": "enhancement-dps",
  "build": "elemental-enhancement-ml-raid",
  "setting": "raid",
- "date": "2026-10-29",
+ "date": "2026-11-07",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.008978099613767387,
-  "Call of Flame": 0.04540831853968663,
-  "Convection": 0.010840908304430963,
-  "Elemental Devastation": 0.0244687715087456,
-  "Elemental Focus": 0.019577713971996147,
-  "Elemental Weapons": 0.023415086973298194,
-  "Flurry": 0.08319912433084697,
-  "Improved Stormstrike": 0.04806845141705396,
-  "Maelstrom Weapon": 0.017850564756020648,
-  "Mental Dexterity": 0.05534875427064412,
-  "Mental Quickness": 0.027938679572653502,
-  "Reverberation": 0.017972935548387636,
-  "Shamanistic Focus": 0.06918347956337523,
-  "Stormstrike": 0.20114320699870814,
-  "Thundering Strikes": 0.0469636690748213,
-  "Tidal Focus": 0.028055130064012723,
-  "Trial by Fire": 0.042195621792763593
+  "Ancestral Knowledge": 0.010438683536265758,
+  "Call of Flame": 0.04139102783257842,
+  "Concussion": 0.010789031718381636,
+  "Convection": 0.0014757874062358844,
+  "Elemental Devastation": 0.02833497316163558,
+  "Elemental Focus": 0.014205790474205116,
+  "Elemental Weapons": 0.021212213310401795,
+  "Flurry": 0.08169218948291324,
+  "Improved Stormstrike": 0.05087207637036284,
+  "Maelstrom Weapon": 0.04137828982659353,
+  "Mental Dexterity": 0.08569150339652809,
+  "Mental Quickness": 0.026704958475795126,
+  "Reverberation": 0.006467227439716394,
+  "Shamanistic Focus": 0.06491173190858923,
+  "Stormstrike": 0.28450161386133765,
+  "Thundering Strikes": 0.04534593246960028,
+  "Tidal Focus": 0.03486944301591732,
+  "Trial by Fire": 0.03074430845732834
  },
- "free": [],
+ "free": [
+  "Convection"
+ ],
  "kept_for_rotation": [
   "Maelstrom Weapon",
   "Stormstrike"
@@ -37,6 +40,10 @@
   "Elemental": [
    [
     "Convection",
+    1
+   ],
+   [
+    "Concussion",
     5
    ],
    [
@@ -45,7 +52,7 @@
    ],
    [
     "Reverberation",
-    3
+    2
    ],
    [
     "Call of Flame",
@@ -113,6 +120,10 @@
   "Elemental": [
    [
     "Convection",
+    1
+   ],
+   [
+    "Concussion",
     5
    ],
    [
@@ -121,7 +132,7 @@
    ],
    [
     "Reverberation",
-    3
+    2
    ],
    [
     "Call of Flame",

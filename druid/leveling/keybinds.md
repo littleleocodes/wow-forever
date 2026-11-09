@@ -8,10 +8,10 @@ and [paladin](../../paladin/leveling/keybinds.md) layouts: Q the attack you pres
 escape, the two thumb buttons the reactions, 1-4 the rest, the Shift bar the forms and the
 rarer tools. Keys are for spells you press in a fight and for the things that help you there; Mark of the Wild, Thorns, Omen of Clarity,
 the tracking, food, water, the mount and the Hearthstone have no key and are clicked between fights. It is built on the
-[Feral Combat leveling page](feral-combat.md): the cat, the druid's fastest leveling build in the fight lab.
+[Feral Combat leveling page](feral-combat.md): the cat. Balance and Restoration use the same keys with a few changes: see "If you play Balance or Restoration" below.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
-[Feral Combat level-by-level guide](feral-combat-by-level.md). This page is the layout at 60, the setup and the macros.
+level-by-level guide of your spec ([Feral Combat](feral-combat-by-level.md), [Balance](balance-by-level.md), [Restoration](restoration-by-level.md)). This page is the layout at 60, the setup and the macros.
 
 This file is hand-written: the regeneration that rewrites the rest of this folder leaves it alone. Edit it by hand.
 
@@ -51,12 +51,12 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | Q | Maul macro (10) | Whenever you have the rage: it replaces your next swing. It starts your swings too |
 | E | Bash (14) | A mob starts casting, or you are below 40% of your health |
 | R | Demoralizing Roar (10) | Once a fight, as the mob reaches you |
-| F | Frenzied Regeneration (36) | The bear's save: rage into health |
+| F | Free | Frenzied Regeneration (36) comes after the bear levels: for a bear that tanks in a dungeon |
 | Mouse 5 (front side button) | Enrage (12) | At the pull while the mob has more than 40% of its health |
 | Mouse 4 (back side button) | Growl (10) | Taunt: a mob on a friend |
 | 1 | Swipe (16) | Pulls of two or three mobs |
 | 2 | Free | |
-| 3 | Challenging Roar (28) | A pack on a friend |
+| 3 | Free | Challenging Roar (28) comes after the bear levels: for a bear that tanks in a dungeon |
 | 4, C | Free | |
 | Middle mouse | Free | |
 
@@ -90,7 +90,11 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | Shift+E | Bear Form (10), Dire Bear Form from 40 | Levels 10-19, and dungeons later; press it again to leave the form |
 | Shift+R | Travel Form (30) | The road between mobs |
 | Shift+F | Nature's Grasp (10) | Castable in any form: the next mob that hits you is rooted, and you walk away |
-| Shift+Mouse 5, Shift+Mouse 4, Shift+1 to Shift+4, Shift+C, Shift+X | Free | |
+| Shift+C | Best healing potion (macro) | A bad pull: only the first potion you own goes off |
+| Shift+X | Best mana potion (macro) | Shares the healing potion's cooldown |
+| Shift+Mouse 5, Shift+Mouse 4, Shift+1 to Shift+4 | Free | Shift+Mouse 5 takes the leave-the-form Regrowth macro below |
+
+The potions are on Shift+C and Shift+X so that C keeps Innervate from 40. Both macros are on the [macros page](../macros.md).
 
 ## Macros (Esc, Macros, New; pick the question-mark icon so the button shows the spell)
 
@@ -130,6 +134,20 @@ Natural Shapeshifter at 52), and the tuned rotation only shifts out when it has 
 ## No key: click these between fights
 
 Mark of the Wild, Thorns, Omen of Clarity (once, it stays on for 30 minutes), Track Humanoids, food, water, your mount (40 in Classic)
-and the Hearthstone. Shred needs the mob's back and the tuned rotation never casts it; Starfire, Insect Swarm, Hurricane and Moonkin Form
-are for the Balance build, which has its own page; Primal Bite and Shifting Power are the Feral tree's last row, which this build does
+and the Hearthstone. Shred needs the mob's back and the tuned rotation never casts it; Starfire, Hurricane and Moonkin Form
+are for the Balance build (below); Primal Bite and Shifting Power are the Feral tree's last row, which this build does
 not reach. Tab and Space stay on WoW's defaults.
+
+## If you play Balance or Restoration
+
+The keys and the bars are the same; what changes is below. The [Balance](balance-by-level.md) and [Restoration](restoration-by-level.md)
+level-by-level guides have the table of what sits on each key at your level.
+
+**Balance** fights in caster form (and from 40 in Moonkin Form), so it uses bar 1 out of form only; Bear Form and Cat Form have no keys.
+**Starfire** takes R (from 20), because R is the payoff after **Entangling Roots** on E; **Moonfire** moves to the middle mouse button
+(from 4). Wrath stays on Q from 1 to 60. **Moonkin Form** takes Shift+Q (Cat Form's key in the Feral layout); Shift+E is free and
+Shift+1 holds **Hurricane** from 40. The emergency heal in Moonkin Form is E (roots), Shift+Q (leave the form), Mouse 5 (Regrowth),
+Shift+Q (back in); the Regrowth macro on the [macros page](../macros.md) makes it two presses. No key holds Attack.
+
+**Restoration** levels as a cat, so it keeps the Feral layout. **Swiftmend** (36) takes the middle mouse button of the caster bar,
+**Tranquility** (30) Shift+1 and **Nature's Swiftness** (54) Shift+2; E on the Cat Form bar stays free (no **Feral Charge** in the build).

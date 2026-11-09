@@ -188,6 +188,11 @@ def vetoed_steps():
             for key, vals in st.items():
                 for v in (vals if isinstance(vals, list) else [vals]):
                     for n in bold_names(v if isinstance(v, str) else ""):
+                        # a step that tells the player not to cast it agrees with the veto (2026-11-09: the BM steps' "No other shots
+                        # on a single mob: the fight lab levels faster skipping **Arcane Shot** and **Multi-Shot**")
+                        lead = v[:v.find(f"**{n}**")].lower()
+                        if any(k in lead for k in ("skipping", "skip ", "no other", "without", "never", "not ", "instead of")):
+                            continue
                         if n in off and n not in seen:
                             seen.add(n)
                             out.append((cls, model, n, key))

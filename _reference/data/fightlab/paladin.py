@@ -244,7 +244,7 @@ MECHANICS = {
     "Improved Judgement": "-1 s/rank Judgement cooldown",
     "Holy Conduit": "-20%/rank Consecration / Holy Wrath / Exorcism / Hammer of Wrath mana",
     "Conviction": "+2%/rank crit with every spell and attack (hotfix 113554: melee, seal procs, judgements and spells)",
-    "Vindication": "the target's attack power -68/rank: not modelled (hotfix 113554 dropped the paladin's own attack power gain)",
+    "Vindication": "every landed melee attack: the target's attack power -68/rank for 30 s, off each of its swings as / 14 x 2 s (tables.VINDICATION_SCALE below 60; modelled since 2026-11-09; hotfix 113554 dropped the paladin's own attack power gain)",
     "Sanctified Judgement": "33%/rank chance per Judgement to refund 20%/rank of the seal's mana",
     "Seal of Command": "unlocks Seal of Command (7 procs per minute: 70% of weapon damage + 0.29 x spell power as Holy, hit and crit on the melee table; judgement 169..187, doubled on a stunned mob)",
     "Pursuit of Justice": "travel speed only",
@@ -501,6 +501,27 @@ class PaladinModule(BaseModule):
         """Vindication (client and fork: every damaging melee attack that lands procs it, white or special; 30 s)."""
         if self.rank("Vindication") and spell.kind == "melee":
             fight.p.buffs["Vindication"] = {"until": fight.t + 30.0}
+            red = self._vind_reduction()
+            m = fight.m
+            if red > 0 and m is not None:
+                # the mob's swings lose the attack power (2026-11-09: until then not modelled, so Vindication read 0 in every leveling
+                # build though it cuts the eating time); engine.Fight takes dmg_reduction off each swing before armor
+                live = m.dmg_reduction if fight.t < m.dmg_reduction_until else 0.0
+                m.dmg_reduction = max(live, red)
+                m.dmg_reduction_until = fight.t + 30.0
+
+    def _vind_reduction(self):
+        """Damage off each mob swing from Vindication's attack power cut at this level (tables.VINDICATION_SCALE)."""
+        import tables
+        ap = self.tv("Vindication", 0)
+        mode = getattr(tables, "VINDICATION_SCALE", "mob")
+        if not ap or mode == "off":
+            return 0.0
+        if mode == "mob":
+            ap *= tables.mob_melee_damage(self.level) / tables.mob_melee_damage(60)
+        elif mode == "level":
+            ap *= self.level / 60.0
+        return ap / 14.0 * tables.MOB_SWING
 
     def _melee_roll(self, fight, can_miss=True):
         """The seals' procs and the judgements roll on the melee table (the fork: Seal of Righteousness and Seal of Fury hits "crit only",

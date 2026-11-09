@@ -1,10 +1,10 @@
 {
  "class": "paladin",
  "spec": "holy-heal",
- "date": "2026-11-02",
+ "date": "2026-11-09",
  "runs": 60,
  "steps": 10,
- "seconds": 438,
+ "seconds": 345,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -30,6 +30,33 @@
   "crit_gear": 0.02
  },
  "results": {
+  "holy-ml-heal": {
+   "split": "32/5/14",
+   "capacity": 0.6357421875,
+   "summary": {
+    "multiplier": 0.6357421875,
+    "shares": {
+     "Holy Light": 0.44681310544573255,
+     "Flash of Light": 0.3708747403808811,
+     "Light's Vigil": 0.140287764816297,
+     "Holy Shock": 0.021100038129811517,
+     "Lay on Hands": 0.02092435122727778
+    },
+    "hps": 370.3818539375694,
+    "overheal_share": 0.1475971657910254,
+    "oom_time": 26.780000000000154,
+    "mana_left": 608.1963666666694,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 456,
+    "spirit": 287,
+    "healing": 360,
+    "mp5": 64,
+    "mana": 8355,
+    "crit": 0.1295
+   }
+  },
   "holy-raid-healer": {
    "split": "31/2/18",
    "capacity": 0.50244140625,
@@ -134,206 +161,179 @@
     "mana": 8355,
     "crit": 0.1295
    }
-  },
-  "holy-ml-heal": {
-   "split": "32/5/14",
-   "capacity": 0.630029296875,
-   "summary": {
-    "multiplier": 0.630029296875,
-    "shares": {
-     "Holy Light": 0.4463498135995614,
-     "Flash of Light": 0.38341293482624733,
-     "Light's Vigil": 0.13351250851146199,
-     "Holy Shock": 0.01912085938798263,
-     "Lay on Hands": 0.017603883674746645
-    },
-    "hps": 369.23670481443054,
-    "overheal_share": 0.1337712210082369,
-    "oom_time": 24.403333333333464,
-    "mana_left": 682.4148333333368,
-    "survival": 0.9
-   },
-   "stats": {
-    "intellect": 456,
-    "spirit": 287,
-    "healing": 360,
-    "mp5": 64,
-    "mana": 8355,
-    "crit": 0.1295
-   }
   }
  },
  "deltas": {
-  "holy-raid-healer": [
+  "holy-ml-heal": [
    {
     "talent": "Benediction",
     "ranks": 5,
-    "sim_delta": 0.0006320805173334598,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.5021240234375001,
-    "ev_delta": 0.005441864826236779,
+    "sim_delta": 0.007038440714672548,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6312988281249999,
+    "ev_delta": 0.005568746729252162,
     "simulated": true
    },
    {
     "talent": "Boundless Light",
     "ranks": 1,
-    "sim_delta": 0.004441407584557523,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.5002197265625,
-    "ev_delta": 0.00011075521414359963,
+    "sim_delta": -0.0024899444550852325,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6373291015625,
+    "ev_delta": 0.00011412456401337399,
     "simulated": true
    },
    {
     "talent": "Conviction",
     "ranks": 3,
-    "sim_delta": 0.014742862777969688,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.4951416015624999,
+    "sim_delta": 0.07284113381674345,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.5925781250000001,
     "ev_delta": 0.0,
-    "simulated": false
+    "simulated": true
    },
    {
     "talent": "Deflection",
-    "ranks": 3,
+    "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Divine Favor",
     "ranks": 1,
-    "sim_delta": 0.014092835320784536,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.49545898437499997,
-    "ev_delta": 0.0437709737939737,
+    "sim_delta": 0.03514072189537291,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.61416015625,
+    "ev_delta": 0.04408457840040963,
     "simulated": true
    },
    {
     "talent": "Divine Intellect",
-    "ranks": 2,
-    "sim_delta": -0.006277160791887977,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.505615234375,
-    "ev_delta": 0.0176280292813582,
+    "ranks": 5,
+    "sim_delta": 0.04051786142411896,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.610986328125,
+    "ev_delta": 0.04615319633244666,
     "simulated": true
    },
    {
     "talent": "Divine Strength",
-    "ranks": 3,
+    "ranks": 4,
     "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Healing Light",
     "ranks": 3,
-    "sim_delta": 0.054627446961156165,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.47641601562499997,
-    "ev_delta": 0.06892066420013522,
+    "sim_delta": 0.07629990906836402,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.590673828125,
+    "ev_delta": 0.0686879762241482,
     "simulated": true
    },
    {
     "talent": "Holy Power",
     "ranks": 5,
-    "sim_delta": 0.007638072855464227,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.49863281249999997,
-    "ev_delta": 0.03607792621914311,
+    "sim_delta": 0.03300539511266276,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6154296874999999,
+    "ev_delta": 0.03597465815265381,
     "simulated": true
    },
    {
     "talent": "Holy Shock",
     "ranks": 1,
-    "sim_delta": 0.014092835320784536,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.49545898437499997,
-    "ev_delta": 0.0005996756139591973,
+    "sim_delta": 0.04923845595938443,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6059082031249999,
+    "ev_delta": 0.0006179278903369724,
     "simulated": true
    },
    {
     "talent": "Illumination",
     "ranks": 5,
-    "sim_delta": 0.09777564410305646,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.4576904296875,
-    "ev_delta": 0.1491767109841093,
+    "sim_delta": 0.15048157638950246,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.552587890625,
+    "ev_delta": 0.1531654241516421,
     "simulated": true
    },
    {
-    "talent": "Improved Judgement",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
-    "ev_delta": 0.0,
-    "simulated": false
-   },
-   {
     "talent": "Infusion of Light",
-    "ranks": 2,
-    "sim_delta": -0.012476007677543186,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.5087890625,
-    "ev_delta": 0.03318011187998183,
+    "ranks": 1,
+    "sim_delta": 0.007038440714672371,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.631298828125,
+    "ev_delta": 0.01682420459789495,
     "simulated": true
    },
    {
     "talent": "Light's Vigil",
     "ranks": 1,
-    "sim_delta": 0.020630827216822127,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.49228515624999997,
-    "ev_delta": 0.035153716078918,
+    "sim_delta": 0.0609085353432471,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.5992431640625,
+    "ev_delta": 0.035215135326653324,
+    "simulated": true
+   },
+   {
+    "talent": "Oath of Light",
+    "ranks": 1,
+    "sim_delta": 0.2131941856131196,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.5240234375,
+    "ev_delta": 0.0,
     "simulated": true
    },
    {
     "talent": "Purifying Power",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
-    "ev_delta": 0.0027135490296092,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
+    "ev_delta": 0.0027766421561634235,
     "simulated": false
    },
    {
     "talent": "Pursuit of Justice",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Reverence",
     "ranks": 2,
-    "sim_delta": 0.09777564410305646,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.4576904296875,
-    "ev_delta": 0.07901974576416837,
+    "sim_delta": 0.130993745656706,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.562109375,
+    "ev_delta": 0.08100036793755302,
     "simulated": true
-   },
-   {
-    "talent": "Sanctified Judgement",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
-    "ev_delta": 0.03356445509539792,
-    "simulated": false
    },
    {
     "talent": "Spiritual Focus",
     "ranks": 5,
     "sim_delta": 0.0,
-    "cap_with": 0.50244140625,
-    "cap_without": 0.50244140625,
-    "ev_delta": 0.02460710865508426,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
+    "ev_delta": 0.02454689579724518,
+    "simulated": false
+   },
+   {
+    "talent": "Unyielding Faith",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "cap_with": 0.6357421875,
+    "cap_without": 0.6357421875,
+    "ev_delta": 0.0,
     "simulated": false
    }
   ]
@@ -353,6 +353,7 @@
  "simulated": [
   "Benediction",
   "Boundless Light",
+  "Conviction",
   "Divine Favor",
   "Divine Intellect",
   "Healing Light",

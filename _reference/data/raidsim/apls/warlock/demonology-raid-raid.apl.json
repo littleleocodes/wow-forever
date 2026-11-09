@@ -287,9 +287,22 @@
      "spellId": {
       "itemId": 18820
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "25%"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-07: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
   },
   {
    "action": {

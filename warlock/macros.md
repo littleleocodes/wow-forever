@@ -67,7 +67,7 @@ Leveling and raid. The keys below are those of the [keybinds page](leveling/keyb
 - **Replaces:** The pull macro on Mouse 4, Bane of Agony on 1 and Siphon Life on 3.
 - **Frees:** Keys 1 and 3.
 - **Fill it with:** Nothing needed: Fear, Drain Life and Death Coil, the keys for when a mob reaches you, already sit on E, R and F.
-- **Why it works:** One press each: three presses put every dot up, and the pet goes in with the first. The sequence loops, so stop pressing once they are up. Before you learn Siphon Life, drop it from the list.
+- **Why it works:** One press each: three presses put every dot up, and the pet goes in with the first. The sequence loops, so stop pressing once they are up. Before you learn Siphon Life, drop it from the list. It does not know the tuned limits (no Corruption below 35% of the mob's health, none below 15% mana), so skip a dot by hand on a mob that is nearly dead. In a raid the dots are recast on their own timers, so use the plain keys there. The Amplify Curse macro below needs key 1 for itself: keep this one to Corruption and Siphon Life once you have the talent.
 
 ### Amplified curse
 
@@ -98,18 +98,18 @@ Leveling and raid. The keys below are those of the [keybinds page](leveling/keyb
 
 Demon builds.
 
-### Summon in a hurry
+### Sacrifice the Imp and summon the Succubus (raid)
 
 ```
-#showtooltip Summon Voidwalker
-/cast Fel Domination
-/cast Summon Voidwalker
+#showtooltip Summon Succubus
+/cast Demonic Sacrifice
+/cast Summon Succubus
 ```
 
-- **Replaces:** Clicking Fel Domination and the summon on your side bar.
-- **Frees:** Nothing on your bars: summons have no key. Put it on the side bar, or on a free Shift key if you summon in a fight.
-- **Fill it with:** Nothing: Health Funnel already has Shift+R.
-- **Why it works:** Fel Domination is off the global cooldown and makes the next summon fast. Swap the demon's name as you like.
+- **Replaces:** Clicking Demonic Sacrifice and the summon on your side bar before the pull.
+- **Frees:** Nothing on your bars: summons have no key. Put it on the side bar.
+- **Fill it with:** Nothing.
+- **Why it works:** Demonic Sacrifice is off the global cooldown, so one press sacrifices the Imp and starts the Succubus cast. It is for the Demonology raid build, which takes Demonic Pact: with it the sacrifice survives the new summon. Without Demonic Pact the summon would end the buff, so do not use it. Fel Domination (which makes the next summon fast) is not in any Demonology build on the pages, so there is no macro for it.
 
 ### Dots and the brand
 
@@ -122,7 +122,7 @@ Demon builds.
 - **Replaces:** Searing Pain on Mouse 5, if you would rather send the pet with the brand than with the Corruption pull on Mouse 4.
 - **Frees:** Nothing: the pull macro on Mouse 4 already sends the pet.
 - **Fill it with:** Nothing: Fear has E.
-- **Why it works:** The pet goes in with your Searing Pain. The fight lab opens with Corruption instead (the pull macro on Mouse 4), so this is for players who would rather open with the brand.
+- **Why it works:** The pet goes in with your Searing Pain. The fight lab opens with Corruption instead (the pull macro on Mouse 4), so this is for players who would rather open with the brand. The tuned rules cast Searing Pain only on a mob above a third of its health and while you have more than 30% mana, so do not open with it on a nearly dead mob.
 
 ### A wand that never turns itself off
 
@@ -140,17 +140,17 @@ Demon builds.
 
 Immolate and Conflagrate.
 
-### Immolate, then Conflagrate
+### Immolate, then Conflagrate (leveling, from 5 points in Shadow and Flame)
 
 ```
 #showtooltip Conflagrate
 /castsequence reset=target Immolate, Conflagrate
 ```
 
-- **Replaces:** Immolate on 2 and Conflagrate on R.
-- **Frees:** Key 2.
+- **Replaces:** Immolate on 2 and Conflagrate on R: put the macro on one of them, and the other is free.
+- **Frees:** Key 2, if you put the macro on R.
 - **Fill it with:** Nothing needed: Shadowburn already sits on Mouse 5.
-- **Why it works:** First press burns the mob, the next one consumes or refreshes it, depending on your talents. On a new target it starts over.
+- **Why it works:** First press burns the mob, the second casts Conflagrate. A castsequence stops at a step that is not ready, so it stalls on Conflagrate's 10-second cooldown: press the plain Conflagrate key then, and the sequence starts over on a new target. Conflagrate consumes Immolate unless Shadow and Flame saves it (20% per rank, so always at 5 ranks, level 39): before that, cast it when Immolate has about 3 seconds left, by hand. In a raid Immolate and Conflagrate run on separate timers, so use the plain keys there.
 
 ### Pet and fire
 

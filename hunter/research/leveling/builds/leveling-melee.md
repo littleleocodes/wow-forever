@@ -89,7 +89,6 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 4 | Deflection | Survivalist | Survival points on the way to Lacerating Strikes: with the pet tanking the hunter is rarely hit (fight lab +0.6% at 60). |
-| 2 | Deterrence 1 + Counterattack 1 | Survivalist | Tier fillers for the capstone; the pet takes the hits, so parry procs are rare (fight lab 0.0% and -0.1% at 60). |
 | 2 | Pathfinding | Endurance Training, Improved Revive Pet | +run speed between pulls; the fight lab uses a fixed 6 s travel, so only the scorer's travel value counts it. |
 
 ## Leveling rotation (fight lab)

@@ -204,20 +204,20 @@
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-11-02",
-  "commit": "54ceac638",
+  "date": "2026-11-09",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
     "label": "subtlety-hemo-raid",
-    "talents": "005303121014--5320003310013211501"
+    "talents": "0053230020141--3352331313010011"
    },
    {
     "label": "sim preset: Subtlety Hemo",
-    "talents": "005323101014--4323200300013211501"
+    "talents": "00530301-320003-305230031321001151"
    }
   ],
   "tuned_on": [
@@ -386,23 +386,55 @@
     "gain_seed2": 0.0018642498434791044,
     "candidates": 545,
     "pass": 11
+   },
+   {
+    "round": 21,
+    "change": "threshold 8s -> 6s: if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote \u2265 8s or not talentIsKnown): cast Hemorrhage",
+    "gain_seed1": 0.004099303680490829,
+    "gain_seed2": 0.004640132456843471,
+    "candidates": 791,
+    "pass": 12
+   },
+   {
+    "round": 22,
+    "change": "threshold 4 -> 5: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.0024832800326795024,
+    "gain_seed2": 0.0019015366037540282,
+    "candidates": 791,
+    "pass": 12
+   },
+   {
+    "round": 23,
+    "change": "drop '(combo points < 3 or variableRef or Eureka! is up)' from the condition: if (energy \u2264 15 and not talentIsKnown or Eureka! is known and energy \u2264 25 and energy \u2264 25 or energy \u2264 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea",
+    "gain_seed1": 0.002601835245065409,
+    "gain_seed2": 0.0017862820177865224,
+    "candidates": 794,
+    "pass": 12
+   },
+   {
+    "round": 24,
+    "change": "drop 'variableRef' from the condition: if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage",
+    "gain_seed1": 0.0013539126451376227,
+    "gain_seed2": 0.0015045502482293749,
+    "candidates": 787,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
     "subtlety-hemo-raid": {
-     "before": 548.7175698922017,
-     "after": 576.5776709855342,
-     "base": 548.7175698922017,
+     "before": 626.3188854393686,
+     "after": 638.8813874882657,
+     "base": 626.3188854393686,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo": {
-     "before": 548.7175698922017,
-     "after": 576.5776709855342,
-     "base": 548.7175698922017,
+     "before": 788.1720632048957,
+     "after": 788.3870374412512,
+     "base": 788.1720632048957,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -418,13 +450,13 @@
     "Hemorrhage"
    ],
    "rejected": {
-    "structure": 17,
+    "structure": 90,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

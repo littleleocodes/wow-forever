@@ -82,11 +82,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 1. **Improved Ghost Wolf** — Removing it costs 3.0 points of score in this model.
 2. **Mindfulness** — Removing it costs 3.0 points of score in this model.
 3. **Elemental Alacrity** — Removing it costs 2.8 points of score in this model.
-4. **Lava Burst** — Removing it costs 2.7 points of score in this model.
-5. **Tidal Focus** — Removing it costs 2.4 points of score in this model.
-6. **Elemental Fury** — Removing it costs 2.1 points of score in this model.
-7. **Thundering Strikes** — Removing it costs 2.0 points of score in this model.
-8. **Shamanistic Focus** — Removing it costs 1.9 points of score in this model.
+4. **Tidal Focus** — Removing it costs 2.4 points of score in this model.
+5. **Elemental Fury** — Removing it costs 2.1 points of score in this model.
+6. **Thundering Strikes** — Removing it costs 2.0 points of score in this model.
+7. **Shamanistic Focus** — Removing it costs 1.9 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -111,6 +110,7 @@ What this build casts per kill ([report](../fightlab/elemental-dps.md), all leve
 - Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/12/8 -> 26/17/8; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Earth's Grasp (tier gating for Anticipation); +1 Ancestral Knowledge (tier gating for Anticipation); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Anticipation (tier gating for Improved Ghost Wolf); +1 Ancestral Knowledge (tier gating for Improved Ghost Wolf); +1 Call of Thunder (tier gating for Elemental Fury); -1 Lightning Mastery (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); -1 Elemental Fury (over 51); order dropped (order_repair.py) (refill: the elemental-dps model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the elemental-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 30.1 s per kill; own tree first 30.8 s; own tree last 30.6 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

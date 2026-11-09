@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, 3 on your bars (C holds Healing Wave from 20).
+- **Frees:** nothing: this fills a free key, Shift+3 on your bars in every spec's by-level guide (C holds Healing Wave from 20).
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags
@@ -39,7 +39,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, Shift+3 on your bars. It shares the healing potion's cooldown.
+- **Frees:** nothing: this fills a free key, Shift+4 on your bars. It shares the healing potion's cooldown.
 
 ### Quiet the not-ready errors
 
@@ -54,7 +54,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 
 ## Enhancement
 
-Leveling and raid. Keys below are your [Enhancement keybinds](leveling/keybinds.md), with the Earth Shock macro on Q.
+Leveling and raid. Keys below are the [Enhancement layout](leveling/keybinds.md), with the Earth Shock macro on Q; the other specs' keys are in their by-level guides.
 
 ### Rage of the Farseer with Stormstrike
 
@@ -69,19 +69,6 @@ Leveling and raid. Keys below are your [Enhancement keybinds](leveling/keybinds.
 - **Frees:** 4.
 - **Fill it with:** 4 takes Healing Stream Totem from Shift+Mouse 5.
 - **Why it works:** Rage of the Farseer is off the global cooldown, and the rotation wants it at the start of a fight. Stormstrike is first in your fight anyway.
-
-### Instant heal
-
-```
-#showtooltip Nature's Swiftness
-/cast Nature's Swiftness
-/cast [@player] Healing Wave
-```
-
-- **Replaces:** C, in a build that has Nature's Swiftness.
-- **Frees:** Nothing.
-- **Fill it with:** Nothing.
-- **Why it works:** Nature's Swiftness is off the global cooldown, so one press is a full heal with no cast.
 
 ### Stop the cast, then shock
 
@@ -103,28 +90,17 @@ Leveling and raid.
 
 ### Lightning Mastery into your first bolt
 
+Raid only: Lightning Mastery is a talent of the Elemental raid build (a level-40 talent, 3-minute cooldown). Neither Elemental leveling build takes it.
+
 ```
 #showtooltip Lightning Mastery
 /castsequence reset=15 Lightning Mastery, Lightning Bolt
 ```
 
-- **Replaces:** The Lightning Mastery key.
-- **Frees:** One key.
-- **Fill it with:** Chain Lightning, if it sits on a harder reach.
-- **Why it works:** The first press starts the window and the next casts faster bolts. It may share the global cooldown, so a sequence is the safe form.
-
-### Instant big hit
-
-```
-#showtooltip Lightning Bolt
-/cast Nature's Swiftness
-/cast Lightning Bolt
-```
-
-- **Replaces:** Nature's Swiftness, used for damage.
+- **Replaces:** nothing in the leveling layouts. It goes on key 4, which the Elemental level-by-level guide leaves free.
 - **Frees:** Nothing.
-- **Fill it with:** Keep plain Lightning Bolt on its key.
-- **Why it works:** Off the global cooldown. A finisher for a mob you need dead now.
+- **Fill it with:** Nothing.
+- **Why it works:** The first press starts the 15-second window (bolts cast 0.5 s faster, Chain Lightning has no cooldown) and the next casts the first bolt. Lightning Mastery is not in the list of spells that skip the global cooldown, so it costs a cast and the sequence needs two presses.
 
 ### Stop the cast, then shock
 
@@ -141,7 +117,7 @@ Leveling and raid.
 
 ## Restoration
 
-Healing. Restoration levels with the Enhancement rotation.
+Healing. Restoration levels with the Enhancement rotation (without Stormstrike, Maelstrom Weapon and Rage of the Farseer).
 
 ### Heal whoever your mouse is on
 
@@ -163,7 +139,7 @@ Healing. Restoration levels with the Enhancement rotation.
 /cast [@mouseover,help,nodead][] Healing Wave
 ```
 
-- **Replaces:** Nature's Swiftness and one heal press.
-- **Frees:** One key.
-- **Fill it with:** Mana Tide Totem.
-- **Why it works:** Nature's Swiftness is off the global cooldown.
+- **Replaces:** Nature's Swiftness (key 3 from level 35) and Healing Wave (C); put the macro on C.
+- **Frees:** 3.
+- **Fill it with:** Nothing yet; Mana Tide Totem is already on 4.
+- **Why it works:** Nature's Swiftness is off the global cooldown, so one press is a full Healing Wave with no cast. Only the Restoration build takes the talent.

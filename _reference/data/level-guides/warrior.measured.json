@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "date": "2026-11-07",
+ "date": "2026-11-09",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -424,10 +424,10 @@
    }
   },
   "Protection": {
-   "build": "protection-open-leveling",
+   "build": "protection-leveling",
    "rotation": "prot-leveling",
    "provisional_order": false,
-   "fingerprint": "fea96007170d",
+   "fingerprint": "5cbfa72db4cf",
    "levels": {
     "1": {
      "seconds": 13.3,
@@ -468,130 +468,130 @@
       "Bloodrage": 0.33,
       "Charge": 1.0,
       "Melee": 5.57,
-      "Rend": 1.16,
+      "Rend": 1.14,
       "Defensive Stance": 1.0,
       "Battle Shout": 0.12,
       "Heroic Strike": 0.97
      }
     },
     "12": {
-     "seconds": 25.2,
+     "seconds": 25.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 6.33,
+      "Melee": 6.32,
       "Rend": 1.16,
       "Defensive Stance": 1.0,
       "Battle Shout": 0.13,
-      "Heroic Strike": 1.11,
+      "Heroic Strike": 1.08,
       "Shield Bash": 0.14
      }
     },
     "14": {
-     "seconds": 25.7,
+     "seconds": 25.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 6.4,
-      "Rend": 1.17,
+      "Melee": 6.36,
+      "Rend": 1.18,
       "Defensive Stance": 1.0,
       "Battle Shout": 0.14,
-      "Revenge": 1.37,
-      "Heroic Strike": 1.12,
+      "Revenge": 1.47,
+      "Heroic Strike": 1.08,
       "Shield Bash": 0.17
      }
     },
     "16": {
-     "seconds": 25.5,
+     "seconds": 25.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 7.05,
-      "Rend": 1.14,
+      "Melee": 6.56,
+      "Rend": 1.15,
       "Defensive Stance": 1.0,
-      "Shield Block": 2.86,
+      "Shield Block": 2.91,
+      "Revenge": 2.83,
       "Battle Shout": 0.13,
-      "Revenge": 2.77,
-      "Heroic Strike": 0.32,
+      "Heroic Strike": 0.65,
       "Shield Bash": 0.18
      }
     },
     "20": {
-     "seconds": 24.6,
+     "seconds": 24.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.33,
       "Charge": 1.0,
-      "Melee": 6.41,
-      "Rend": 1.13,
+      "Melee": 6.43,
+      "Rend": 1.14,
       "Defensive Stance": 1.0,
-      "Shield Block": 2.77,
-      "Revenge": 2.68,
+      "Shield Block": 2.75,
+      "Revenge": 2.63,
       "Battle Shout": 0.13,
-      "Heroic Strike": 0.61,
-      "Shield Bash": 0.28,
+      "Heroic Strike": 0.56,
+      "Shield Bash": 0.29,
       "Victory Rush": 0.06
      }
     },
     "30": {
-     "seconds": 29.0,
+     "seconds": 28.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.38,
       "Charge": 1.0,
-      "Melee": 7.65,
+      "Melee": 7.59,
       "Rend": 1.18,
       "Defensive Stance": 1.0,
-      "Shield Block": 3.65,
-      "Revenge": 3.69,
+      "Shield Block": 3.59,
+      "Revenge": 3.68,
       "Battle Shout": 0.15,
-      "Heroic Strike": 1.08,
-      "Shield Bash": 0.31,
-      "Victory Rush": 0.19
+      "Heroic Strike": 1.07,
+      "Shield Bash": 0.3,
+      "Victory Rush": 0.18
      }
     },
     "32": {
-     "seconds": 29.6,
+     "seconds": 29.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.39,
+      "Bloodrage": 0.4,
       "Charge": 1.0,
-      "Melee": 7.76,
+      "Melee": 7.81,
       "Rend": 1.18,
       "Defensive Stance": 1.0,
       "Shield Block": 3.77,
-      "Revenge": 3.83,
+      "Revenge": 3.84,
       "Battle Shout": 0.16,
-      "Heroic Strike": 1.2,
+      "Heroic Strike": 1.17,
       "Shield Bash": 0.31,
-      "Victory Rush": 0.23
+      "Victory Rush": 0.21
      }
     },
     "33": {
-     "seconds": 30.4,
+     "seconds": 30.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.41,
       "Charge": 1.0,
-      "Melee": 7.99,
-      "Rend": 1.19,
+      "Melee": 8.04,
+      "Rend": 1.18,
       "Defensive Stance": 1.0,
-      "Shield Block": 3.92,
-      "Revenge": 3.99,
+      "Shield Block": 3.9,
+      "Revenge": 3.98,
       "Battle Shout": 0.17,
-      "Heroic Strike": 1.28,
+      "Heroic Strike": 1.26,
       "Shield Bash": 0.32,
-      "Victory Rush": 0.23
+      "Victory Rush": 0.24
      }
     },
     "39": {
@@ -601,72 +601,72 @@
       "Battle Stance": 1.0,
       "Bloodrage": 0.48,
       "Charge": 1.0,
-      "Melee": 9.38,
+      "Melee": 9.43,
       "Rend": 1.21,
       "Defensive Stance": 1.0,
-      "Shield Block": 4.76,
-      "Revenge": 4.88,
+      "Shield Block": 4.75,
+      "Revenge": 4.91,
       "Battle Shout": 0.19,
-      "Heroic Strike": 1.65,
+      "Heroic Strike": 1.59,
       "Shield Bash": 0.33,
       "Victory Rush": 0.32
      }
     },
     "40": {
-     "seconds": 25.3,
+     "seconds": 25.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 7.03,
-      "Shield Slam": 2.74,
+      "Melee": 7.0,
+      "Shield Slam": 2.73,
       "Rend": 1.18,
       "Defensive Stance": 1.0,
-      "Shield Block": 2.39,
+      "Shield Block": 2.37,
       "Revenge": 2.58,
-      "Battle Shout": 0.14,
-      "Heroic Strike": 0.22,
+      "Battle Shout": 0.13,
+      "Heroic Strike": 0.18,
       "Shield Bash": 0.2,
-      "Victory Rush": 0.21
+      "Victory Rush": 0.18
      }
     },
     "50": {
-     "seconds": 26.9,
+     "seconds": 28.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.35,
+      "Bloodrage": 0.36,
       "Charge": 1.0,
-      "Melee": 7.49,
-      "Shield Slam": 3.09,
-      "Rend": 1.22,
+      "Melee": 8.03,
+      "Shield Slam": 3.23,
+      "Rend": 1.2,
       "Defensive Stance": 1.0,
-      "Shield Block": 2.69,
-      "Revenge": 2.94,
-      "Battle Shout": 0.14,
-      "Victory Rush": 0.38,
-      "Heroic Strike": 0.35,
-      "Shield Bash": 0.21
+      "Shield Block": 2.82,
+      "Revenge": 3.12,
+      "Battle Shout": 0.15,
+      "Heroic Strike": 0.32,
+      "Shield Bash": 0.24,
+      "Victory Rush": 0.38
      }
     },
     "60": {
-     "seconds": 28.9,
+     "seconds": 30.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.38,
+      "Bloodrage": 0.41,
       "Charge": 1.0,
-      "Melee": 8.27,
-      "Shield Slam": 3.5,
+      "Melee": 8.65,
+      "Shield Slam": 3.61,
       "Rend": 1.18,
       "Defensive Stance": 1.0,
-      "Shield Block": 3.14,
-      "Revenge": 3.27,
-      "Battle Shout": 0.15,
-      "Heroic Strike": 0.37,
-      "Shield Bash": 0.13,
-      "Victory Rush": 0.43
+      "Shield Block": 3.28,
+      "Revenge": 3.55,
+      "Battle Shout": 0.16,
+      "Victory Rush": 0.46,
+      "Heroic Strike": 0.52,
+      "Shield Bash": 0.15
      }
     }
    }

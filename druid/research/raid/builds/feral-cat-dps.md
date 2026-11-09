@@ -52,11 +52,10 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 1. **Shredding Attacks** — -18 energy on Shred (est.) — the Improved Shred replacement. Raid sim (2026-09-26): removing it costs +21% DPS.
 2. **Sharpened Claws** — +6% crit in forms (2 ranks now). Raid sim (2026-09-26): removing it costs +6% DPS.
-3. **Berserk** — Capstone: 15s of cooldown-free multi-target Mangle and 100% crit on combo-point builders, fear immunity. Raid sim (2026-09-26): removing it costs +5% DPS.
-4. **Naturalist** — +5% all damage (est.) from Restoration tier 2. Raid sim (2026-09-26): removing it costs +5% DPS.
-5. **Nature's Majesty** — +4% crit with attacks (est.). Raid sim (2026-09-26): removing it costs +4% DPS.
-6. **Savage Fury** — Claw/Rake/Shred/Maul/Swipe damage; Mangle prerequisite. Raid sim (2026-09-26): removing it costs +4% DPS.
-7. **Predatory Strikes** — AP from level. Raid sim (2026-09-26): removing it costs +3% DPS.
+3. **Naturalist** — +5% all damage (est.) from Restoration tier 2. Raid sim (2026-09-26): removing it costs +5% DPS.
+4. **Nature's Majesty** — +4% crit with attacks (est.). Raid sim (2026-09-26): removing it costs +4% DPS.
+5. **Savage Fury** — Claw/Rake/Shred/Maul/Swipe damage; Mangle prerequisite. Raid sim (2026-09-26): removing it costs +4% DPS.
+6. **Predatory Strikes** — AP from level. Raid sim (2026-09-26): removing it costs +3% DPS.
 
 ## Flex points
 
@@ -137,6 +136,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Feral Swiftness -> Feral Charge (interrupt); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival). Net +0.00% on a third seed.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Ferocity 5 in; to be re-optimized.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/32/10 -> 9/32/10; Berserk 1 gone; refill +1 Rend and Tear (refill: the feral-cat-dps model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Berserk; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

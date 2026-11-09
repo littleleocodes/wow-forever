@@ -1,0 +1,225 @@
+{
+ "class": "priest",
+ "build": "holy-raid-healer",
+ "date": "2026-11-09",
+ "runs": 200,
+ "long": {
+  "DURATION": 600.0
+ },
+ "steps": [
+  {
+   "capacity": 0.6955,
+   "se": 0.0015,
+   "long": 0.5804,
+   "long_se": 0.0008,
+   "values": {
+    "Divine Fury": 0.0017,
+    "Holy Binding": 0.0,
+    "Holy Nova": 0.0,
+    "Holy Specialization": 0.0086,
+    "Improved Healing": 0.0256,
+    "Improved Power Word: Shield": 0.0,
+    "Improved Renew": -0.0001,
+    "Inner Focus": 0.0095,
+    "Inspiration": 0.0095,
+    "Litany of Light": 0.0231,
+    "Meditation": 0.0537,
+    "Mental Agility": 0.0009,
+    "Mental Strength": 0.003,
+    "Penance": 0.0527,
+    "Power in Light": 0.0,
+    "Soul Warding": 0.0004,
+    "Spiritual Guidance": 0.0074,
+    "Spiritual Healing": 0.0379,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": 0.0012
+   },
+   "values_long": {
+    "Mental Agility": 0.0015,
+    "Power in Light": 0.0,
+    "Soul Warding": 0.0036,
+    "Twin Disciplines": 0.0058
+   },
+   "zero": [
+    "Mental Agility",
+    "Power in Light"
+   ],
+   "long_only": [
+    "Soul Warding",
+    "Twin Disciplines"
+   ]
+  },
+  {
+   "capacity": 0.6955,
+   "se": 0.0015,
+   "long": 0.5804,
+   "long_se": 0.0008,
+   "values": {
+    "Divine Fury": 0.0017,
+    "Holy Binding": 0.0,
+    "Holy Nova": 0.0,
+    "Holy Specialization": 0.0086,
+    "Improved Healing": 0.0256,
+    "Improved Power Word: Shield": 0.0,
+    "Improved Renew": -0.0001,
+    "Inner Focus": 0.0095,
+    "Inspiration": 0.0095,
+    "Litany of Light": 0.0231,
+    "Meditation": 0.0537,
+    "Mental Agility": 0.0009,
+    "Mental Strength": 0.003,
+    "Penance": 0.0527,
+    "Power in Light": 0.0,
+    "Silent Resolve": 0.0,
+    "Soul Warding": 0.0004,
+    "Spiritual Guidance": 0.0074,
+    "Spiritual Healing": 0.0379,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": 0.0012
+   },
+   "values_long": {
+    "Mental Agility": 0.0015,
+    "Power in Light": 0.0,
+    "Soul Warding": 0.0036,
+    "Twin Disciplines": 0.0058
+   },
+   "zero": [
+    "Mental Agility",
+    "Power in Light"
+   ],
+   "long_only": [
+    "Soul Warding",
+    "Twin Disciplines"
+   ]
+  },
+  {
+   "capacity": 0.6955,
+   "se": 0.0015,
+   "long": 0.5804,
+   "long_se": 0.0008,
+   "values": {
+    "Divine Fury": 0.0017,
+    "Holy Binding": 0.0,
+    "Holy Nova": 0.0,
+    "Holy Specialization": 0.0086,
+    "Improved Healing": 0.0256,
+    "Improved Power Word: Shield": 0.0,
+    "Improved Renew": -0.0001,
+    "Inner Focus": 0.0095,
+    "Inspiration": 0.0095,
+    "Litany of Light": 0.0231,
+    "Meditation": 0.0537,
+    "Mental Agility": 0.0009,
+    "Mental Strength": 0.003,
+    "Penance": 0.0527,
+    "Silent Resolve": 0.0,
+    "Soul Warding": 0.0004,
+    "Spiritual Guidance": 0.0074,
+    "Spiritual Healing": 0.0379,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": 0.0012
+   },
+   "values_long": {
+    "Mental Agility": 0.0015,
+    "Soul Warding": 0.0036
+   },
+   "zero": [
+    "Mental Agility"
+   ],
+   "long_only": [
+    "Soul Warding"
+   ]
+  },
+  {
+   "capacity": 0.6946,
+   "se": 0.0016,
+   "long": 0.5788,
+   "long_se": 0.0012,
+   "values": {
+    "Divine Fury": 0.0032,
+    "Holy Binding": 0.0,
+    "Holy Nova": 0.0,
+    "Holy Specialization": 0.0012,
+    "Improved Healing": 0.0251,
+    "Improved Power Word: Shield": 0.0007,
+    "Improved Renew": -0.0008,
+    "Inner Focus": 0.0099,
+    "Inspiration": 0.0116,
+    "Litany of Light": 0.0251,
+    "Meditation": 0.0542,
+    "Mental Strength": 0.0033,
+    "Penance": 0.0485,
+    "Silent Resolve": 0.0,
+    "Soul Warding": 0.0017,
+    "Spiritual Guidance": 0.0074,
+    "Spiritual Healing": 0.0376,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": -0.0006
+   },
+   "values_long": {
+    "Soul Warding": 0.0018
+   },
+   "zero": [
+    "Soul Warding"
+   ],
+   "long_only": []
+  }
+ ],
+ "start": {
+  "std": 0.6955,
+  "std_se": 0.0015,
+  "long": 0.5804,
+  "long_se": 0.0008
+ },
+ "end": {
+  "std": 0.6946,
+  "long": 0.5788
+ },
+ "moves": [
+  {
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "capacity": 0.6955,
+   "gain": 0.0,
+   "long": 0.0,
+   "why": "threat reduction"
+  },
+  {
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "capacity": 0.6955,
+   "gain": 0.0,
+   "long": 0.0,
+   "why": "threat reduction"
+  },
+  {
+   "from": "Mental Agility",
+   "to": "Silent Resolve",
+   "capacity": 0.6946,
+   "gain": -0.0012,
+   "long": -0.0026,
+   "why": "threat reduction"
+  }
+ ],
+ "final": {
+  "Twin Disciplines": 5,
+  "Mental Strength": 5,
+  "Improved Power Word: Shield": 3,
+  "Inner Focus": 1,
+  "Meditation": 3,
+  "Soul Warding": 1,
+  "Penance": 1,
+  "Holy Specialization": 5,
+  "Improved Renew": 3,
+  "Twilight Focus": 3,
+  "Divine Fury": 1,
+  "Holy Nova": 1,
+  "Inspiration": 3,
+  "Holy Binding": 1,
+  "Improved Healing": 3,
+  "Litany of Light": 2,
+  "Spiritual Guidance": 4,
+  "Spiritual Healing": 3,
+  "Silent Resolve": 3
+ }
+}

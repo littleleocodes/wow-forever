@@ -52,11 +52,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 1. **Elemental Alacrity** — Removing it costs 28.2 points of score in this model.
 2. **Elemental Fury** — Removing it costs 16.7 points of score in this model.
 3. **Call of Flame** — Removing it costs 16.7 points of score in this model.
-4. **Lava Burst** — Removing it costs 10.1 points of score in this model.
-5. **Tidal Focus** — Removing it costs 9.6 points of score in this model.
-6. **Thundering Strikes** — Removing it costs 7.3 points of score in this model.
-7. **Concussion** — Removing it costs 6.5 points of score in this model.
-8. **Lightning Overload** — Removing it costs 4.7 points of score in this model.
+4. **Tidal Focus** — Removing it costs 9.6 points of score in this model.
+5. **Thundering Strikes** — Removing it costs 7.3 points of score in this model.
+6. **Concussion** — Removing it costs 6.5 points of score in this model.
+7. **Lightning Overload** — Removing it costs 4.7 points of score in this model.
 
 ## Rotation
 
@@ -66,6 +65,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 - Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 31/11/9 -> 31/11/9; Lava Burst 1 gone; Elemental Mastery -> Lightning Mastery (renamed); +1 Call of Thunder (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Lava Burst; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

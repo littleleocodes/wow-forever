@@ -79,9 +79,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 3. **Predatory Strikes** — Removing it costs 2.4 points of score in this model.
 4. **Naturalist** — Removing it costs 2.3 points of score in this model.
 5. **Nature's Reach** — Removing it costs 2.2 points of score in this model.
-6. **Berserk** — Removing it costs 2.1 points of score in this model.
-7. **Rend and Tear** — Removing it costs 1.8 points of score in this model.
-8. **Nature's Majesty** — Removing it costs 1.7 points of score in this model.
+6. **Rend and Tear** — Removing it costs 1.8 points of score in this model.
+7. **Nature's Majesty** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -109,6 +108,7 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 - Report: druid/research/talents/forever/optimizer/feral-cat-dps-leveling-st.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/31/11 -> 9/30/12; Berserk 1 gone; +1 Thick Hide (tier gating for Savage Fury); +1 Thick Hide (tier gating for Savage Fury); +1 Furor (tier gating for Blood Frenzy); +1 Furor (tier gating for Rend and Tear); +1 Furor (tier gating for Rend and Tear); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); -1 Nature's Focus (over 51); order dropped (order_repair.py) (refill: the feral-cat-dps model, leveling-st).
 - 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the feral-cat-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 23.0 s per kill; own tree first 23.4 s; own tree last 23.6 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Berserk; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -8,6 +8,7 @@ are up to date with the builds"). Reads the class pages the way a player does an
              that differs from the link of the build the same line names (the page is behind its build);
   guide      a by-level guide whose build is not the one its spec page leads with;
   build      a talent a spec page's guide names that the page's lead build does not take (a guide left behind by its build);
+  dead       a talent of a spec page's build that only improves spells or forms the page never uses, with no word on why it is there;
   keys       a key whose spell on the hand-written keybinds page differs from the guide's keys block at 60;
   steps      a "How to play" line of a leveling page that leveling-steps.json no longer holds;
   macros     a macro on a keybinds or macro page that casts something the class cannot have;
@@ -224,8 +225,13 @@ def check_macros(tree, cls, out):
         out.append(("coverage", cls, "no macro page"))
 
 
+# Racials a macro may cast (the class books hold none). Names as the check reads them, "!" removed: Eureka! is the Gnome's
+# (2026-11-08, user: a macro so they use it more).
+RACIALS = {"Eureka", "Stoneform", "Blood Fury", "Berserking"}
+
+
 def check_macro_page(tree, cls, p, out):
-    book = set(LG.book(cls)) | {t["name"] for tr in talents(cls) for t in tr["talents"]} | {"Attack", "Shoot", "Auto Shot"}
+    book = set(LG.book(cls)) | {t["name"] for tr in talents(cls) for t in tr["talents"]} | {"Attack", "Shoot", "Auto Shot"} | RACIALS
     fence = False
     for line in tree.text(p).splitlines():
         if line.startswith("```"):
@@ -256,7 +262,19 @@ def check_steps(tree, cls, pages, out):
                 out.append(("steps", cls, f"{p}: `{line[:90]}` is not in leveling-steps.json"))
 
 
-NEGATE = ("no ", "without", "not ", "lacks", "skip", "instead of", "unlike", "never", "nor ", "other builds", "drop")
+NEGATE = ("no ", "without", "not ", "lacks", "skip", "instead of", "unlike", "never", "nor ", "other builds", "drop",
+          # another player's talent ("a feral druid's Leader of the Pack", 2026-11-09)
+          "druid's ", "shaman's ", "paladin's ", "priest's ", "mage's ", "warrior's ", "rogue's ", "hunter's ", "warlock's ")
+NEGATE_AFTER = ("is not in", "are not in", "isn't", "aren't", "not taken", "lacks", "does not take", "doesn't take", "is missing",
+                "are missing", "not in this build", "not in the build", "the build skips", "this build skips", "a build that takes",
+                "builds that take", "if your build has")
+
+
+WORDNUM = {"one": "1", "two": "2", "three": "3", "four": "4", "five": "5"}
+# "**Holy Power** (five ranks)", "**Totemic Focus** (5 points, ...)", "this build's 5 points in **Naturalist**", "two ranks of **X**"
+# (a level path, "(1 rank at 23, all 3 by 53)", is no claim about the build at 60)
+RANK_SAID = re.compile(r"\*\*(?P<n1>[^*]+)\*\* \((?P<k1>\d|one|two|three|four|five) (?:points?|ranks?)\b(?! at \d)"
+                       r"|\b(?P<k2>\d|one|two|three|four|five) (?:points?|ranks?) (?:in|of) \*\*(?P<n2>[^*]+)\*\*", re.I)
 
 
 def check_build(tree, cls, pages, out):
@@ -275,10 +293,185 @@ def check_build(tree, cls, pages, out):
             continue
         have = {t["name"] for s, tr in zip(m.group(2).split("-"), trees) for c, t in zip(s, tr["talents"]) if c.isdigit() and int(c)}
         body = sec.group(2)
-        miss = sorted({b.group(1) for b in BOLD.finditer(body) if b.group(1) in tnames and b.group(1) not in have
-                       and not any(k in body[max(0, b.start() - 40):b.start()].lower() for k in NEGATE)})
+        def negated(b):
+            if any(k in body[max(0, b.start() - 40):b.start()].lower() for k in NEGATE):
+                return True
+            # or after it: "Riposte is not in this build", "Setup, which this build lacks" (2026-11-08)
+            if any(k in body[b.end():b.end() + 45].lower() for k in NEGATE_AFTER):
+                return True
+            # 2026-11-09: the sentence it stands in. A list after "has no" / "takes no" / "without" ("This build has no **Riposte**,
+            # **Preparation** ... or **Relentless Strikes**"), and a build-membership phrase later in the sentence ("**Eclipse** (each
+            # **Wrath** ...) is not in the raid build")
+            s0 = max(body.rfind(". ", 0, b.start()), body.rfind("\n", 0, b.start())) + 1
+            e = [x for x in (body.find(". ", b.end()), body.find("\n", b.end())) if x >= 0]
+            s1 = min(e) if e else len(body)
+            before, after = body[s0:b.start()], body[b.end():s1].lower()
+            nm = re.search(r"\b(?:has|have|takes|take|with) no\b|\bwithout\b|\bgives up\b|\btakes neither\b", before, re.I)
+            if nm and re.fullmatch(r"(?:\s*\*\*[^*]+\*\*\s*(?:,|\bor\b|\band\b)?)*\s*", before[nm.end():]):
+                return True
+            return any(k in after for k in NEGATE_AFTER + ("never uses", "this rotation never", "not in the raid build", "does not apply",
+                                                          "not been simulated"))
+        miss = sorted({b.group(1) for b in BOLD.finditer(body) if b.group(1) in tnames and b.group(1) not in have and not negated(b)})
         if miss:
             out.append(("build", cls, f"{p}: the guide names {', '.join(miss)}, which the page's build does not take"))
+        # the reverse (2026-11-09): the guide says the build lacks a talent it takes. The Holy paladin raid guide said "This build takes
+        # no **Holy Shock**" and "takes neither **Holy Shock** nor **Light's Vigil**" after the deep search's new winner took both
+        def says_lacks(b):
+            s0 = max(body.rfind(". ", 0, b.start()), body.rfind("\n", 0, b.start())) + 1
+            e = [x for x in (body.find(". ", b.end()), body.find("\n", b.end())) if x >= 0]
+            before, after = body[s0:b.start()], body[b.end():min(e) if e else len(body)].lower()
+            # a condition ("if your build has no ...", "Before 25 you have no **Stormstrike**") is no claim
+            if re.search(r"\bif\b|\bwhen\b|\bunless\b|\bbefore\b|\buntil\b", before, re.I):
+                return False
+            nm = re.search(r"\b(?:takes|take|has|have) (?:no|neither)\b|\bdoes not take\b|\bskips\b", before, re.I)
+            if nm and re.fullmatch(r"(?:\s*\*\*[^*]+\*\*\s*(?:,|\bor\b|\band\b|\bnor\b)?)*\s*", before[nm.end():]):
+                return True
+            return bool(re.match(r"\s*(?:\([^)]*\)\s*)?(?:is|are) not (?:in|taken)|\s*(?:,\s*)?which (?:this|the) build (?:lacks|skips)", after))
+        wrong = sorted({b.group(1) for b in BOLD.finditer(body) if b.group(1) in have and says_lacks(b)})
+        if wrong:
+            out.append(("build", cls, f"{p}: the guide says the build lacks {', '.join(wrong)}, which the page's build takes"))
+        # and the points it gives a talent (2026-11-09: a guide that says "four ranks" after the build went to five)
+        ranks = {t["name"]: int(c) for s, tr in zip(m.group(2).split("-"), trees) for c, t in zip(s, tr["talents"]) if c.isdigit() and int(c)}
+        said = []
+        for q in RANK_SAID.finditer(body):
+            n, k = (q.group("n1"), q.group("k1")) if q.group("n1") else (q.group("n2"), q.group("k2"))
+            k = WORDNUM.get(k.lower(), k)
+            if n in ranks and k.isdigit() and int(k) != ranks[n]:
+                said.append(f"{n} ({k} said, {ranks[n]} taken)")
+        if said:
+            out.append(("build", cls, f"{p}: the guide gives {', '.join(sorted(set(said)))}"))
+
+
+FORMS = {"Bear Form", "Dire Bear Form", "Cat Form", "Moonkin Form", "Travel Form", "Aquatic Form", "Ghost Wolf", "Battle Stance", "Defensive Stance",
+         "Berserker Stance", "Stealth", "Shadowform"}
+EXPLAINED = ("gate", "filler", "tier point", "to reach", "for the tier")
+# a tooltip that also does something general (a stat, every spell, all damage) is no dead talent for a page that skips its named spells
+GENERIC = re.compile(r"\ball\b|\byour (?:spells|attacks|abilities|melee|ranged|healing|damage)|\b(?:Intellect|Stamina|Spirit|Strength|Agility|armor|Armor)\b|"
+                     r"attack power|spell power|chance to (?:dodge|parry|hit|be hit)|movement speed|damage (?:you deal|done by you|taken)|maximum (?:health|mana)|"
+                     r"\binstant(?: cast)? spells\b",   # Mental Agility: "your Smite, Holy Fire, and instant cast spells" (2026-11-09)
+                     re.I)
+
+
+def rank_text(t):
+    r = (t.get("ranks") or [""])[-1]
+    return r if isinstance(r, str) else (r.get("text") or r.get("description") or "")
+
+
+# a tooltip naming a family of spells by its last word (Shock, Sting, Totem ...) is about every member: never read it as dead
+FAMILY = re.compile(r"\b(?:Shocks?|Stings?|Totems?|Seals?|Blessings?|Curses?|Banes?|Aspects?|Shouts?|Traps?|Wards?|Poisons?|Shots?|Strikes?|Judgements?)\b")
+IDLE_LINE = "**Points that do nothing for this spec:**"   # the note render_modes writes (2026-11-08); the check reads around it
+
+
+def dead_talents(cls, text, body):
+    """The lead build's talents (digits `body`) that do nothing on a page (`text`): [(talent, ranks, tree, spells or None)], spells None
+    for a talent ability the page never uses, else the only spells or forms it improves, none of which the page uses. The tooltip's spell
+    names are matched with every non-spell talent name cut out first ("Improved Wrath" is no mention of Wrath); a tooltip that also does
+    something general (a stat, all spells) is never dead. The page's own note on such points is left out of the reading."""
+    trees = talents(cls)
+    book = set(LG.book(cls)) | FORMS
+    tnames = sorted({t["name"] for tr in trees for t in tr["talents"]} - book, key=len, reverse=True)
+    lead = text[:text.find("\n## Other builds")] if "\n## Other builds" in text else text
+    lead = "\n".join(ln for ln in lead.splitlines() if IDLE_LINE not in ln and not ln.startswith("**Taken for raid utility:**"))
+    # the talent tables list every talent the build takes (2026-11-09: raid pages got one, S16): a listing is no use of a spell
+    lead = re.sub(r"\n## Talents(?: while leveling)?\n.*?(?=\n## |\Z)", "\n", lead, flags=re.S)
+    cut = lead
+    for n in tnames:
+        cut = cut.replace(n, " ")
+    prose = "\n".join(ln for ln in lead.splitlines() if "|" not in ln)
+    found = []
+    for s, tr in zip(body.split("-"), trees):
+        for c, t in zip(s, tr["talents"]):
+            if not (c.isdigit() and int(c)):
+                continue
+            if t["name"] in book:   # a talent that grants an ability: the page must use the ability
+                if not re.search(rf"\b{re.escape(t['name'])}\b", prose):
+                    found.append((t["name"], int(c), tr["name"], None))
+                continue
+            tip = rank_text(t)
+            names = {n for n in book if re.search(rf"\b{re.escape(n)}\b", tip)}
+            names -= {n for n in names if any(n != o and n in o for o in names)}   # "Bear Form" inside "Dire Bear Form"
+            rest = tip
+            for n in names:
+                rest = rest.replace(n, " ")
+            if FAMILY.search(rest):   # "your Shock and Lightning Shield spells": every shock counts (the shaman audit, 2026-11-08)
+                continue
+            if names and not GENERIC.search(rest) and not any(re.search(rf"\b{re.escape(n)}\b", cut) for n in names):
+                found.append((t["name"], int(c), tr["name"], sorted(names)))
+    return found
+
+
+def classify_dead(cls, body, dead):
+    """Why each dead talent is there: {talent: {"free": points removable at no loss of legality, "gate": points that open a deeper talent,
+    "opens": the deeper talents}}. Points come off the dead talents one at a time, deepest row first, while the build stays legal (tier
+    gating and prerequisites, validate_builds.check_state); the talent a failed removal would break is what the rest opens."""
+    import validate_builds as VB
+    trees = talents(cls)
+    vb = VB.load_forever()[cls]
+    state = {tr["name"]: {t["name"]: int(c) for c, t in zip(s, tr["talents"]) if c.isdigit() and int(c)}
+             for s, tr in zip(body.split("-"), trees)}
+    row = {t["name"]: t["row"] for tr in trees for t in tr["talents"]}
+    out = {n: {"free": 0, "gate": r, "opens": set()} for n, r, _, _ in dead}
+    tree_of = {n: tr for n, _, tr, _ in dead}
+    for n in sorted(out, key=lambda x: -row.get(x, 0)):
+        while state[tree_of[n]].get(n, 0) > 0:
+            state[tree_of[n]][n] -= 1
+            errors = []
+            VB.check_state(vb, {t: {k: v for k, v in a.items() if v} for t, a in state.items()}, "x", errors)
+            if errors:
+                state[tree_of[n]][n] += 1
+                for e in errors:
+                    m = re.search(r": (.+?) \(tier \d+\) needs", e) or re.search(r": (.+?) requires ", e)
+                    if m:
+                        out[n]["opens"].add(m.group(1))
+                break
+            out[n]["free"] += 1
+            out[n]["gate"] -= 1
+    return out
+
+
+def raid_utility(cls, name):
+    """Why a raid build keeps a talent its rotation never uses, when the raid filler audit's utility tags give one (2026-11-09: the feral
+    raid page called Feral Charge, the filler audit's interrupt, a point that does nothing): its interrupt, or its threat cut."""
+    t = next((x for tr in talents(cls) for x in tr["talents"] if x["name"] == name), None)
+    txt = rank_text(t) if t else ""
+    if re.search(r"\binterrupt", txt, re.I):
+        return "its interrupt"
+    if re.search(r"threat generated by your", txt, re.I):
+        return "its threat cut"
+    return None
+
+
+def check_dead(tree, cls, pages, out):
+    """A talent of a spec page's lead build that only improves spells or forms the page never uses, or a talent ability it never uses
+    (2026-11-08, user: "the resto druid talent spec says to take Improved Wrath. Why would that ever be a thing? ... Check things like that
+    constantly"). Gate points (they open a deeper talent) pass when the page's "Points that do nothing" note names them; free points are
+    always a finding: the build should spend them on something."""
+    bs = builds(tree, cls)
+    for p in pages:
+        if not re.match(rf"{cls}/(leveling|raid)/[a-z0-9-]+\.md$", p) or p.endswith(("README.md", "keybinds.md", "-by-level.md")):
+            continue
+        text = tree.text(p)
+        m = TF.search(text)
+        if not m:
+            continue
+        lead = text[:text.find("\n## Other builds")] if "\n## Other builds" in text else text
+        lead_id = next(iter(re.findall(r"builds/([a-z0-9-]+)\.md", lead)), None)
+        if "/leveling/" in p and lead_id and any("raid_path_leveling" in n for n in (bs.get(lead_id) or {}).get("notes", [])):
+            continue   # a healer's or tank's leveling page levels in its raid build (user decision 2026-09-30): its raid page is checked
+        dead = dead_talents(cls, text, m.group(2))
+        if not dead:
+            continue
+        why = classify_dead(cls, m.group(2), dead)
+        noted = IDLE_LINE in lead
+        for n, r, _, names in dead:
+            w = why[n]
+            what = "is a talent ability the page never uses" if names is None else f"improves only {', '.join(names)}, which the page never uses"
+            if w["free"] and "/raid/" in p and raid_utility(cls, n) and f"**{n}** ({r}) is not in the rotation" in lead:
+                continue   # the raid filler audit's utility, and the page says so (render_modes.idle_note)
+            if w["free"]:
+                out.append(("dead", cls, f"{p}: {n} ({r}) {what}; {w['free']} of its points could go elsewhere"))
+            elif not noted:
+                out.append(("dead", cls, f"{p}: {n} ({r}) {what}; it opens {', '.join(sorted(w['opens'])) or 'a deeper talent'}, and the page does not say so"))
 
 
 def check_names(tree, cls, pages, known, out):
@@ -361,9 +554,10 @@ def main():
         check_macros(tree, cls, out)
         check_steps(tree, cls, pages, out)
         check_build(tree, cls, pages, out)
+        check_dead(tree, cls, pages, out)
         check_names(tree, cls, pages, known, out)
     notes = live(out) if a.live else []
-    order = ["patch", "talents", "links", "guide", "build", "keys", "steps", "macros", "coverage", "names"]
+    order = ["patch", "talents", "links", "guide", "build", "dead", "keys", "steps", "macros", "coverage", "names"]
     src = "origin/main" if a.pushed else "the working tree"
     o = ["# Page audit", "", f"> Generated by `_reference/data/page_lint.py` on {datetime.date.today().isoformat()} from {src}: {len(classes)} classes, {links} talent links. Do not hand-edit.", ""]
     o += [f"- {n}" for n in notes] + ([""] if notes else [])

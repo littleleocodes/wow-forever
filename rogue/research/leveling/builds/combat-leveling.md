@@ -84,8 +84,7 @@ The best Combat leveling build with at least 30 points in Combat, generated on 2
 2. **Weapon Expertise** — The scorer's value in this build: +7.6% of its score (model combat-swords-raid).
 3. **Cold Blood** — The scorer's value in this build: +7.5% of its score (model combat-swords-raid).
 4. **Malice** — The scorer's value in this build: +7.5% of its score (model combat-swords-raid).
-5. **Improved Sinister Strike** — The scorer's value in this build: +5.9% of its score (model combat-swords-raid).
-6. **Flawless Execution** — The scorer's value in this build: +5.8% of its score (model combat-swords-raid).
+5. **Flawless Execution** — The scorer's value in this build: +5.8% of its score (model combat-swords-raid).
 
 ## Leveling rotation
 
@@ -96,6 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/31/2 -> 21/30/0; Murder 2 gone; Lethality 4 -> 2 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Dual Wield Specialization 5 -> 2 (rank cap); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Vigor (tier gating for Cold Blood); +1 Vigor (tier gating for Cold Blood); +1 Ruthlessness (tier gating for Cold Blood); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Hack and Slash (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Adrenaline Rush (over 51); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the combat-swords-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 21.9 s per kill; stats model 22.5 s; own tree last 23.3 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Sinister Strike; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

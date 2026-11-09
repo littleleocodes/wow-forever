@@ -63,7 +63,6 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 2 | Improved Stings | Improved Arcane Shot, Improved Stings, Rapid Killing | Tier-3 Marksmanship filler; Rapid Killing (-1 min Rapid Fire) also unlocks Rapid Recuperation if you find 2 more points. |
-| 3 | Endurance Training 1 + Improved Revive Pet 2 | Improved Aspect of the Monkey, Pathfinding | Beast Mastery gating fillers. |
 | 4 | Efficiency 4 | Efficiency 5 with Rapid Killing 1 | Mana vs. Rapid Fire uptime. |
 
 ## Rank among our builds and the community simulator's

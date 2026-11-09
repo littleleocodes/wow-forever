@@ -24,8 +24,8 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 
 **Why it works**
 
-- **Moonkin Form** first (the rotation shifts 10 seconds before the pull) and for the whole fight: it gives your party 3% critical strike chance and doubles how often **Omen of Clarity** makes your next spell free. The aura does not stack with **Leader of the Pack**, and you cannot heal while in the form.
-- **Insect Swarm** and **Moonfire** each do close to a fifth of your damage for one instant cast every 14 to 15 seconds (**Nature's Splendor** makes them last that long, **Genesis** adds 5% to their ticks). Recast each one the moment it runs out, not before: recasting a running one throws away the ticks it had left.
+- **Moonkin Form** first (the rotation shifts 10 seconds before the pull) and for the whole fight: it gives all party or raid members within 45 yards 3% spell critical strike chance and doubles how often **Omen of Clarity** makes your next spell free. A feral druid's **Leader of the Pack** adds melee and ranged crit instead of competing with it, and you cannot heal while in the form.
+- **Insect Swarm** and **Moonfire** each do close to a fifth of your damage for one instant cast every 14 to 15 seconds (**Nature's Splendor** makes them last that long, **Genesis** adds 2% to their ticks a point, 10% at 5 points). Recast each one the moment it runs out, not before: recasting a running one throws away the ticks it had left.
 - When both are due, **Insect Swarm** goes first: it costs 160 mana against 375 for **Moonfire**, and the simulator measured that order 0.3% better in a full raid (1.8% on a training dummy, where mana runs short).
 - **Starfire** is your filler and about two thirds of your damage. It beats **Wrath** per second of casting at any gear: 350 to 412 damage plus all of your spell power in 3 seconds with **Improved Starfire**, against 92 to 102 plus 57% of it in 2 seconds. The raid build takes no **Eclipse**, so **Wrath** has no place in the list.
 - Critical strikes feed the filler: **Vengeance** doubles their bonus damage, and every critical hit from **Starfire** or **Moonfire**'s first hit triggers **Nature's Grace**, 10% faster casts and global cooldown for 3 seconds.
@@ -34,7 +34,7 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 **Caveats**
 
 - Moving: **Starfire** needs 3 seconds standing still. Refresh **Insect Swarm** or **Moonfire** while you move, then go back to **Starfire**.
-- Damage taken pushes your casts back. **Nature's Focus** gives you a 70% chance to ignore each push, and **Barkskin** (1-minute cooldown) stops pushback for 15 seconds without slowing your casts as it did in Classic: press it when the raid is taking damage.
+- Damage taken pushes your casts back. **Nature's Focus** gives you a 14% chance a point (70% at 5 points) to ignore each push, and **Barkskin** (1-minute cooldown) stops pushback for 15 seconds without slowing your casts as it did in Classic: press it when the raid is taking damage.
 - Without raid mana buffs (a small group, or alone) you run short. The training-dummy rotation then casts rank 1 **Starfire** (95 mana) whenever a full one is out of reach, which the simulator measured better than waiting for mana.
 - **Eclipse** (each **Wrath** takes up to 0.5 seconds off your next 2 **Starfire** casts, at 3 points) is not in the raid build despite its name, and no rotation here weaves **Wrath**. A 3-point **Eclipse** with a **Wrath** whenever its charges run out has not been simulated.
 
@@ -47,6 +47,13 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 
 *This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Balance | 33 | Genesis 5, Improved Moonfire 2, Moonglow 3, Nature's Majesty 2, Nature's Reach 2, Nature's Splendor 1, Improved Starfire 5, Insect Swarm 1, Vengeance 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1 |
+| Restoration | 18 | Heart of the Wild 5, Nature's Focus 5, Naturalist 5, Reflection 3 |
+
 ## The numbers
 
 | Setting | DPS |
@@ -58,7 +65,9 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 642 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) |
-| Phase 1 BiS | 666 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) (ties this build) |
+| Phase 1 BiS | 666 | [36/0/15](https://talentsforever.com/druid/60/0532223115501051--055302-12) (as good as this build in this gear) |
+
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
 **The gear** (average item level: Pre-BiS 63.4; Phase 1 BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -84,5 +93,5 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEk0FLFV8Yxuc5c3TO//WPjqPROLU4CoUJIzNzmTA3d7yrFi2kVbuc6x27V+zeizML2ym4iCAtCkJpEZEEQa0iRAhFKW4bkRYtcnNRpKiIPkHEjEl9AelZvLzn+b2H85zFSz0COkxI9GMMZdQxC9wEHgHG/xliKRqCtaEKTW+zEtLE1izMgzbiYu8BiIsv99O6fQekifUVmPvtpInNFZi77cTF2kpKDxZT+vZlR3pRE683OsxFjbj4mNGFbzpx8WonrXfXddLE2j2YjS5SiIsXO3pfr96o9G8vYPT2Y9wCm68sg30aeYaWpw+xUGlivlIQWVoEWGOm4+c8z8u5ru87ruO7tu34fs7xGgw7rG2P7YK6SUy2EhfLm+gT1Ercdp3Y6LaMgk6q+HpJh6VRC6nO9dg4YXUVOtNoW/jb5hYbVow5GMWwPnW1Vk+k53jnbdexc+6wHC+H1WtRSdamZVgqRSVZvCGTciSna0mYVGpVGUfh9HhZ9sdRJIvhVFgdj+xSPbaPBuzDgcHJuFY9Z52izoEOwQ1WVA4TuM4ZK/3A930YZImsf/8GpvqZNfCDeXOqkmkwKLZanBgpfT/Zf6mjzE4EPctLqd7leycyfch7TWZymR9YZco/URIcdceqs8+P7Z0LWb38JBj5bQRj6SotITsozfyAKlZPFk7/2TgHQwhwEaO4gjLqmMEM+zUAB2CLDg==); Phase 1 BiS: [full raid](https://wowsims.com/forever/druid/balance/#eJzEk89LFV8Yxuc5c3TO9/WLjqPROLU4CoUJIzNzmTA3d7yrFi2kVbuc6x27V+zeizML2ym4iCDNfiwUFxFJEBUtKsRNYRQ3ApEWbdxIIkVB9BdIzJjVPyB9Fg/veZ73cN6zeKlLQIcJiV6MoIw6poGrwF3A+D+LWBoNwHqlCk1vsRLSxMLzNnO3hbjYuwni4uvtVDdugDTxcgXmTitpYn0F5lYrcbG2kqa782n69ll2URNPH8Gc14iL93fwW2dvpfpiUydN7C7DbHSQQlw82dR7uvVGpXdjDsPX7+Ea2GxlCezz0EM0PVjGXGUbs5WCyKZFgDVmOn7O87yc6/q+4zq+a9uO7+ccr8GwyVo+sS1QJ4nxZuJiaR09gpqJ264TG52WUdBJFd/O6bA0aiLVuRwbR6yOQjtxsfAaf9vcYoOKMQOjGNYnLtbqifQc77TtOnbOHZSj5bB6KSrJ2qQMS6WoJItXZFKO5GQtCZNKrSrjKJwcLcveOIpkMZwIq6ORXarH9kGDvd/QPx7XqqesY9Te1ya4wYrK/gSuc8JKP/B9BwZZIqs/vIGpfmEN/GDejKpk9AfFZosTI6Vnj/2XOsr0WNC1tJjyLt89lvEx720zk8t83ypT/glJcFAdKicfH9o7ZzI9fz8Y+mUEI+kqLSI7KNv5PlWsHi0c/7NxDgYQ4CyGcQFl1DGFKfZzAN9qiqs=).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at bac92db (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at bac92db (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

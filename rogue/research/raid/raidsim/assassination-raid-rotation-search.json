@@ -110,39 +110,39 @@
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-11-02",
-  "commit": "54ceac638",
+  "date": "2026-11-09",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "daggers-split-open-raid",
-    "talents": "0053031033150103-303333000015-002"
+    "label": "assassination-mutilate-raid",
+    "talents": "3153232022111003-305313000001222"
    },
    {
     "label": "sim preset: Asn Muti",
-    "talents": "00532310151501031-302303202014"
-   },
-   {
-    "label": "assassination-mutilate-raid",
-    "talents": "0053031252112005-305313000015",
-    "protect_only": true
+    "talents": "00530311231251031-32030302020103-001"
    },
    {
     "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002",
+    "talents": "0053231022151003-305313000001221-002",
     "protect_only": true
    },
    {
     "label": "assassination-ml-raid",
-    "talents": "0053031033150105-305313000015",
+    "talents": "0053232022151003-305313000001222",
+    "protect_only": true
+   },
+   {
+    "label": "daggers-split-open-raid",
+    "talents": "0053232021151003-303333000001221-002",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "daggers-split-open-raid",
+   "assassination-mutilate-raid",
    "sim preset: Asn Muti"
   ],
   "iterations": 3000,
@@ -211,50 +211,74 @@
     "gain_seed2": 0.002713901642679817,
     "candidates": 435,
     "pass": 13
+   },
+   {
+    "round": 9,
+    "change": "insert before the filler: cast Backstab",
+    "gain_seed1": 0.016665829902929197,
+    "gain_seed2": 0.015853164340923875,
+    "candidates": 793,
+    "pass": 14
+   },
+   {
+    "round": 10,
+    "change": "drop: if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike",
+    "gain_seed1": 0.03625220253381478,
+    "gain_seed2": 0.03652039062464407,
+    "candidates": 813,
+    "pass": 14
+   },
+   {
+    "round": 11,
+    "change": "threshold 5 -> 2.5: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 4 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.006369468349676222,
+    "gain_seed2": 0.006354203455434693,
+    "candidates": 783,
+    "pass": 14
    }
   ],
   "final": {
    "raid": {
-    "daggers-split-open-raid": {
-     "before": 610.5319389635793,
-     "after": 630.8317943427295,
-     "base": 610.5319389635793,
+    "assassination-mutilate-raid": {
+     "before": 610.3587338669743,
+     "after": 678.7200510292726,
+     "base": 610.3587338669743,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Asn Muti": {
-     "before": 596.9949225354849,
-     "after": 616.6875457774524,
-     "base": 596.9949225354849,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-mutilate-raid": {
-     "before": 261.6742626792377,
-     "after": 607.2685481423918,
-     "base": 261.6742626792377,
+     "before": 804.3570968464279,
+     "after": 811.7610908078811,
+     "base": 804.3570968464279,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-seal-fate-raid": {
-     "before": 267.24702549710685,
-     "after": 621.6560859805397,
-     "base": 267.24702549710685,
+     "before": 608.6514584439602,
+     "after": 687.2766138973888,
+     "base": 608.6514584439602,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-ml-raid": {
-     "before": 610.6555990493442,
-     "after": 630.5821883483607,
-     "base": 610.6555990493442,
+     "before": 628.2540112260207,
+     "after": 695.6365990844131,
+     "base": 628.2540112260207,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "daggers-split-open-raid": {
+     "before": 606.2485970120563,
+     "after": 685.6007143176228,
+     "base": 606.2485970120563,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -271,13 +295,13 @@
     "Mutilate"
    ],
    "rejected": {
-    "structure": 31,
+    "structure": 61,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 14
  }
 }

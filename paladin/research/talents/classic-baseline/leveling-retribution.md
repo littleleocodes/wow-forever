@@ -75,12 +75,6 @@ Retribution from 10: Benediction/Improved Judgement early, Seal of Command at 20
 3. **Vengeance** — +15% damage after crits at 39.
 4. **Benediction** — Mana efficiency for seals/judgements from level 10.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 5 | Benediction first | Improved Blessing of Might first | Benediction keeps mana up early; Might is more damage. |
-
 ## Notes
 
 - Seal of Command -> Judgement on cooldown -> auto-attack; heal with Holy Light between pulls, Consecration at 60 for multi-target.

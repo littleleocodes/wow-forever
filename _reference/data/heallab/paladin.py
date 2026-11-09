@@ -108,7 +108,8 @@ class Healer(E.BaseHealer):
     }
     SIMULATED = {"Illumination", "Divine Favor", "Holy Shock", "Holy Power", "Infusion of Light", "Healing Light", "Divine Intellect", "Reverence",
                  "Light's Vigil", "Benediction",
-                 "Oath of Light", "Boundless Light"}
+                 "Oath of Light", "Boundless Light",
+                 "Conviction"}   # 2026-11-09: a generic crit effect the lab applies to heals (+7.3% capacity on holy-ml-heal); it had read "not simulated"
     SHARE_SOURCE = {"Holy Light": "holy_light", "Flash of Light": "flash", "Holy Shock": "holy_shock", "Lay on Hands": "loh"}
 
     def __init__(self, allocation, game="forever"):

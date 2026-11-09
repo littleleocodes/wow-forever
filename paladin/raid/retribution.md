@@ -14,7 +14,7 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Judgement**
+1. **Judgement**; no global cooldown, so press it alongside the others
 2. **Hammer of Wrath** when the target is below 20% health
 3. **Consecration**
 4. **Holy Strike**
@@ -23,9 +23,8 @@ Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Seal of the Crusader**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- **Retribution Aura**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets and a potion together with your big cooldowns.
+- **Seal of the Crusader**: put it up at the start and keep it up
+- **Retribution Aura**: put it up at the start and keep it up
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -56,7 +55,13 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 - Against an Undead or Demon boss, add **Exorcism** on cooldown (15 seconds, 40% cheaper with **Holy Conduit**): it hits harder than **Holy Strike**. The simulator's target is an Elemental, so where it fits best was not measured.
 - When you have to leave melee range, keep pressing **Judgement** (10 yards) and, under 20%, **Hammer of Wrath** (30 yards); your seals only work on swings.
 
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Holy | 16 | Divine Strength 5, Reverence 2, Improved Seals 5, Holy Conduit 2, Divine Precision 1, Purifying Power 1 |
+| Protection | 4 | Divine Intellect 4 |
+| Retribution | 31 | Deflection 3, Benediction 5, Improved Judgement 2, Conviction 3, Sanctified Judgement 3, Seal of Command 1, Sacred Arbiter 1, Two-Handed Weapon Specialization 3, Repentance 1, Vengeance 3, Champion of the Light 5, Unsealed Wrath 1 |
 
 ## The numbers
 
@@ -71,7 +76,9 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 983 | [17/3/31](https://talentsforever.com/paladin/60/0501511022-3-35230101201301351-12) |
-| Phase 1 BiS | 990 | [17/3/31](https://talentsforever.com/paladin/60/0502510022-3-35233001001301351-12) (ties this build) |
+| Phase 1 BiS | 990 | [17/3/31](https://talentsforever.com/paladin/60/0502510022-3-35233001001301351-12) (as good as this build in this gear) |
+
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
 **The gear** (average item level: Pre-BiS 68.9; Phase 1 BiS 68.8; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -96,10 +103,12 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzEV2tsFNcV3jM7O3t91uvHxY/xxeDpFoO97bozs92KuoAXm7Y8anVr1EKlqmXsHXuXrnfcmbVl/lRuRelDiCqJlAikQMRDQg4EBIqErKBIRJEIv4iSOAiJxNr8iSKiEP9AyUqJopn1eh/4ERRQ7o/V7LlnzuO79/uOBlsJ1IEIEnTAAUjAGEwB/AfgJYDzALTa2eXs3c3AZpsJX8exSRTI3KCY9SFPjlwE5MnxT+rQS944B+LbAnrJly+D+FENesmNcyDeq0GB3BkUT3mRJ1+8COgln78C9ttecvkCiB/WIE++et4O8945+/fV23XIk2det0Meew7E+zXoQp5cvV0X6Kq7meyY/6v8cDA2ewz+B9zh5LPAPRw8AcIZ7YJ2d/s0eI8mp8/DseQcHE72Eqd8iMIM1yZHZCUiy7ISisjhkBpRw2FZVmRFCctKOKLc5Pgsd68RN+HaLIjYtH0ok5zQMrqkWVZyJK3HJW3c1AIEBeRDqmyhhA3TUI+1OaEaMTaeSkmmlh7RSzw2YEsWmrAhZupj0l5dS0nGsNRnjI5q6XjAix50h8IW/hjbstCKrMxrIDmSyOjGuJXWLStQhV70hJSuiIWd2JqFFmzu06xMsbSD4/ERfVRPZ0pc6QYWwJpANeI88aKng5B7sSzUor/fmNCljCGN6ildpy2sGf05AZHs+5U0Mq6ZcSYgTy6dBCfA+mArESjX7WINOaEea3foKe2Q1K8dNEypb4fV7aK9LIo/ZSq2BJsJUN8JjqDQ4SaXroMdCDnZwsbgGuKmnnkvR9zMwUfuUi226EhT9M/aWOovxlhGUmX1ZyFFDoWVbmkoYSMalwxT0uJxPS4NHpIyCV0yjYyWSRppydI1cyghdVi6Lpl6JhQfs0KFzVB+s+ugZaQ7GTrZPOS1M0B/w3ZjD91a0Tb6Az6sOg0L3eO6nMBQ3G0jK5m6lkpao9KYaWT0ITs6K0BK29kPsTknNCDdmzDGU3HJ1IdN3UpIe42+haTXzsBKbgOOGyFvngS6htVnoQar+4y0pQ+ZTpu0lvmzgEh+OWmYQ0lrVHQH25e7odTHqpziPOR6LLhj2ZtCO9kmXJsTRGzaqVlLODhFCeTdkxAcWvoO0z1sF26lv8C2wLoVQ6GYExpxze8tvTJEEaDgWViJA/RfwP4JOEEzq2dbnxPWYktptrJQqLCfYGuALV8V1gb86MsSuzggL5yC4gEFP+ArGfQA2KeAR4H+F1auqzQi9rM9KxQQCEirtrEY7v9TsTzRs5wXPaPGhK7QPxUeGqeBYl1O8KOv3yZ8XqWo3/Rh1TwpUJ0skt4b8KB7hnfRAmPsy1tjlskInQX2DqBF/7Zyw7Y0lEFpV1qJ7SpHUd6YWmhM/a6N5elW2dgUsL9jmCqrX7LyusL014WHx62rooRgvMhzup/9AffQXY6AeqjnBrcooM4wqA/W2uI86LIJj25Fbq8UMafK01AIbvt1CORWLJiskJg/sn1PNtOi3KqB5TCkTvyMOa6rbUsefolD+wpMKHFreWRC0YUhpDaUTum8VY2oDeWn5EE3QkTdUhwLVKZdDipCxQBTrIK5BCy5S7HUI9xSs4B+BvT+E+d9N9uMvrvCIlWxk25C3xUoGsRgE+Gpb6ZoYvmLhFG27VF6/oh2ov+ugAVnMR9BoL4bQJAnd/4dE4E5OCmrzEj11lJADNCrHL3MOdlXa/URrSgrdRvb8pg6vix2jhqUYpc3lGHnmArY/Y799ltIWwmYztsLYEIBzPeLYIZXA7N3+T26MbiB8LRqusBG1niFo4SjVae9BYut6R9zN+EBp/7D7XJWQ3QGeOTQFfiaq7INrqnhaMuJ4/Z6q+cHw86a7VHnOJGXeoLXONf3sjLRwtNTXRsvPrU8P3d+B85Gty8Yogfsb6zj4PxxzfUE3eRac2/Jp5gMmyEKOyEG+yEBYzAJk9w3AwDqrQOG); Phase 1 BiS: [full raid](https://wowsims.com/forever/paladin/retribution/#eJzEV1tsE1ca9j8ej09+x7kccpkcApn1Eki86+zMeL1is0BMwu5y2Wi9Qbuw0mqXSTyJzTqedMaJ4KVKK3pHILVSK5AKFRdBUyooqBKKSh+oKlGkSlStACHRIrcPfaAqygNq/VBVM47jC7kUFdTzYI3/889/+c75vl+DrQTqQAQJOmAXJGAMJgGeB3gD4DQArXZ2OXt3LbAbzYSv49he9JKXToGY9SFPvjoIyJODpwC95IOTIH4ioJd8/xaIX9agl1w+CeLtGhTIzUHxqBd58t3rtuOB/Ntecu4MiF/UIE8+ftMO8/5J+/fda3XIk1ffcTxfAfFuDbqQJxeu1QW66q4kO2b+L98fjF0/AC8Cty/5MnD3Bw+DcFw7o93aOAXe/cmp03AgeQf2JXuJUz9EYZprkyOyEpFlWQlF5HAoHFHDYVlWZFkJy0o4olzh+Cx3uxHX4PIsiNi0cSiTnNAyuqRZVnIkrcclbdzUAgQF5EOqbKGEDVNQj7U5oRoxNp5KSaaWHtFLPFZhSxaasCFm6mPSdl1LScaw1GeMjmrpeMCLHnSHwhb+Ftuy0IqszGsgOZLI6Ma4ldYtK1CFXvSElK6IhZ3YmoUWbO7TrEyxtN3j8RF9VE9nSlzpKhbAmkA14gzxoqeDkNuxLNSiv9+Y0KWMIY3qKV2nLawZ/TkBkez4izQyrplxJiBPzh4BJ8DKYCsRKNftYg05oR5rN+kpba/Ur+02TKlvk9Xtor0sir9nKrYEmwlQ32GOoNDhJmcvgR0IOdnCxuAy4qaeGS9H3MzBR+5SLTbnSFP0v9pY6n/GWEZSZfUPIUUOhZVuaShhIxqXDFPS4nE9Lg3ulTIJXTKNjJZJGmnJ0jVzKCF1WLoumXomFB+zQoXNUH6za7dlpDsZOtk85L3jQP/GtmIPXV/RNvoDPqw6BrPd44qcwFDcaiMrmbqWSlqj0phpZPQhOzorQErb2a+xOSc0IN2eMMZTccnUh03dSkjbjb7ZpBePw2JuA44bIR8eAbqM1WehBqv7jLSlD5lOm7SW+bOASP68xzCHktao6A62L3RDqY9VOcV5yKVYcNOCN4V2sjW4PCeI2LRZs+ZxcIoSyGdHIDg0/x2m29gWXE//hG2BFYuGQjEnNOKyf1p6ZYgiQMETsBgH6DPAngacoJmls63MCcuxpTRbWShU2O+wNcAWrgprA370ZYldHJDXjkLxgIKf85UMugfsG8D9QF+AxesqjYj9bNsiBQQC0pJtzIU7OBnLEz3LedEzakzoCv1P4aFxCijW5QQ/+vptwudVivpNH1bNkALVyRzpvQEPuqd5Fy0wxr68NWaZjNDrwD4FtOgTizdsS0MZlHalldgucRTljamFxtSf21iebpWNTQJ7EsNUWfqSldcVpn8tPDxsXRUlBONFntOd7F+4jW5xBNRDPZe5OQF1hkF9sNYW50GXTXh0K3J7pYg5VR6DQnDbr0MgV2PBZIXE/JvteLSZ5uRWDSyEIXXiZ8xxXW2b9/BLHNoXYUKJW8sDE4rODiG1oXRK561qRG0oPyUPuhEi6rriWKAy7XJQESoGmGIVzCVgyV2KpT7LzTcL6LdA7z5y3neztei7JcxRFTvpGvSdh6JBDDYRnvqmiyaWv0gYZRsepOdvaCf6bwlYcBbzEQTquwwEeXLzuZgIzMFJWWJGqlfnA2KAXuDoOc7JvlSrD2hFWakb2LqH1PEFsXPUoBS7vKEMO8dUwO4f7O8/QdpKwHTengUTCmDeKIIZXgrM3oX36OrgKsLTqqkCG1njeY4SjlYd8xYstqZ/zV2Be5z6lNvlrIboNPDIoSvwA1dlG1yTw9GWw4fs9VHPr4addb1HvcOJvNQTvMi5fpGViRaeHuta/fZjy/NH53fgRHTjrCG6y/7IOgTOH9ednqCbXGzuLfkWk2EtRGEzxGAnJGAM9sAe7scBAH7JAqg=).
 
+**Points that do nothing for this spec:** **Repentance** (1) only counts toward the points the tree needs before **Champion of the Light** and **Unsealed Wrath**.
+
 ## Other builds of this spec
 
 - [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (9/14/28, 697 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/05013-053020004-1523330100130033-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at d97252f (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at d97252f (client 1.60.1.70707)). Simulations, not in-game measurements. Do not hand-edit.*
 

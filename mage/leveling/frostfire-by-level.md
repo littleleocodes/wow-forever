@@ -36,7 +36,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | A second mob | — | **Polymorph** from 8 | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
 | 3 | Emergency | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield |
 | 4 | Mana back between fights | — | — | — | **Evocation** | Evocation | Evocation | Evocation |
-| C | The slow when Frost Nova is down, and packs | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
+| C | Packs: the cone (the single-target list never casts it) | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
 | Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand |
 
 **Action bar 2: the same keys with Shift (packs, wards, emergencies)**
@@ -54,7 +54,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+3 | Lift a curse | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
 | Shift+4 | Free | — | — | — | — | — | — | — |
 | Shift+C | Packs: the blast that dazes | — | — | — | — | — | — | **Blast Wave** from 55 |
-| Shift+X | Free | — | — | — | — | — | — | — |
+| Shift+X | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 
 - The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, **Blast Wave** goes on Shift+C at 55 for packs, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).
 - Levels 4 and 40 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Frostfire Bolt** replaces **Frostbolt**.
@@ -67,7 +67,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Arcane Intellect (1), **Fireball** (1), Frost Armor (1).
 
-**Keys to set:** Q = Fireball; Middle mouse = Wand.
+**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+X = Healing potion macro.
 
 **Your keys in this stage:** Q Fireball.
 
@@ -104,7 +104,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Frost Nova** (10), Dampen Magic (12), Slow Fall (12), Arcane Explosion (14), Flamestrike (16), Amplify Magic (18), Remove Lesser Curse (18).
 
-**New ranks to buy:** Frostbolt at 14.
+**New ranks to buy:** Fire Blast at 14; Frostbolt at 14.
 
 **Talents:** 10-11 Precision, 12-13 Frost Warding, 14 Improved Frostbolt, 15-17 Frostbite, 18-19 Ice Shards.
 
@@ -130,7 +130,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blink (20), Blizzard (20), Evocation (20), Fire Ward (20), Mana Shield (20), Frost Ward (22), Scorch (22).
 
-**New ranks to buy:** Frostbolt at 20.
+**New ranks to buy:** Arcane Explosion at 22; Fire Blast at 22; Frostbolt at 20; Polymorph at 20.
 
 **Talents:** 20 Ice Lance, 21-23 Ice Shards.
 
@@ -158,7 +158,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Counterspell** (24), Cone of Cold (26), Conjure Mana Agate (28).
 
-**New ranks to buy:** Frost Nova at 26; Frostbolt at 26; Ice Lance at 28.
+**New ranks to buy:** Blizzard at 28; Frost Nova at 26; Frostbolt at 26; Ice Lance at 28; Mana Shield at 28.
 
 **Talents:** 24 Frost Channeling, 25-27 Shatter, 28-29 Frost Channeling.
 
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Ice Armor (30), Mage Armor (34), Conjure Mana Jade (38).
 
-**New ranks to buy:** Frostbolt at 32, 38; Ice Lance at 34.
+**New ranks to buy:** Arcane Explosion at 30, 38; Blizzard at 36; Cone of Cold at 34; Fire Blast at 30, 38; Fire Ward at 30; Frost Ward at 32; Frostbolt at 32, 38; Ice Lance at 34; Mana Shield at 36.
 
 **Talents:** 30-31 Fingers of Frost, 32 Arcane Resilience, 33-34 Wand Specialization, 35-39 Accelerant.
 
@@ -215,7 +215,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Frostfire Bolt** (40), Conjure Mana Citrine (48), Arcane Brilliance (56), Conjure Mana Ruby (58).
 
-**New ranks to buy:** Frost Nova at 40, 54; Frostfire Bolt at 50, 60; Ice Lance at 42, 48, 56.
+**New ranks to buy:** Arcane Explosion at 46, 54; Blast Wave at 44, 52, 60; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostfire Bolt at 50, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
 **Talents:** 40-44 Ignite, 45-47 Burning Soul, 48-49 Incineration, 50-52 Master of Elements, 53-54 Incineration, 55 Blast Wave, 56-58 Critical Mass, 59 Incineration, 60 Fire Power.
 
@@ -250,8 +250,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- The [Frost guide](frost-by-level.md) plays the same loop with **Frostbolt** all the way, and [Arcane-Frost](arcane-frost-by-level.md) adds free **Arcane Missiles**: those two are the recommended mage leveling specs in the fight lab.
+- The [Frost guide](frost-by-level.md) plays the same loop with **Frostbolt** all the way, and [Arcane-Frost](arcane-frost-by-level.md), the recommended mage leveling spec, adds free **Arcane Missiles**.
 - Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -1,10 +1,10 @@
 {
  "class": "druid",
  "spec": "resto-heal",
- "date": "2026-11-02",
+ "date": "2026-11-09",
  "runs": 60,
  "steps": 10,
- "seconds": 156,
+ "seconds": 306,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -193,22 +193,23 @@
    }
   },
   "restoration-ml-heal": {
-   "split": "12/1/38",
-   "capacity": 0.6620849609375,
+   "split": "11/0/40",
+   "capacity": 0.6855712890625001,
    "summary": {
-    "multiplier": 0.6620849609375,
+    "multiplier": 0.6855712890625001,
     "shares": {
-     "Healing Touch": 0.5710220819577346,
-     "Rejuvenation": 0.28629965336299334,
-     "Regrowth": 0.07795534815087284,
-     "Tranquility": 0.05844812680779175,
-     "Swiftmend": 0.00627478972060743
+     "Healing Touch": 0.5394522534890177,
+     "Rejuvenation": 0.26456990646479744,
+     "Regrowth": 0.07907422140945516,
+     "Tranquility": 0.05939437890813974,
+     "Bloom": 0.04918462803109934,
+     "Swiftmend": 0.008324611697490623
     },
-    "hps": 390.2343811285987,
-    "overheal_share": 0.13680461714813066,
-    "oom_time": 27.95666666666683,
-    "mana_left": 407.464100000003,
-    "survival": 0.9
+    "hps": 404.85096952721415,
+    "overheal_share": 0.16465777877060264,
+    "oom_time": 27.126666666666836,
+    "mana_left": 455.2256333333374,
+    "survival": 0.8333333333333334
    },
    "stats": {
     "intellect": 456,
@@ -369,7 +370,7 @@
   ]
  },
  "mechanics": {
-  "Swiftmend": "instant heal for the full periodic amount of the target's Regrowth or Rejuvenation, 15 s cooldown; the heal over time stays (Forever's tooltip no longer says it is consumed)",
+  "Swiftmend": "instant heal for the full periodic amount of the target's Regrowth or Rejuvenation, 15 s cooldown; the heal over time is consumed when the tooltip says so (SWIFTMEND_CONSUMES, read from it: 70753's \"the consumed spell\")",
   "Nature's Swiftness": "instant Healing Touch on a tank under the emergency threshold, every 3 min",
   "Nature's Grace": "a critical direct heal: 10% faster casts and a 10% shorter global cooldown for 3 s",
   "Genesis": "+1%/rank periodic healing",
@@ -377,15 +378,19 @@
   "Nature's Splendor": "Rejuvenation +3 s, Regrowth +6 s: one or two more ticks of the same size",
   "Moonglow": "nothing for heals: Forever's Moonglow cheapens damaging spells only",
   "Wild Growth": "679 over 7 s on the group, 6 s cooldown: the group heal",
+  "Bloom": "a Rejuvenation or Regrowth that runs its full duration heals its target for 100% of your Spirit (2026-11-08)",
+  "Improved Tranquility": "Tranquility's cooldown 30% / 60% shorter (2026-11-08); threat not modelled",
   "Innervate": "on yourself under 40% mana (every 6 min): 5x regeneration for 20 s, all of it while casting (the tooltip; until 2026-10-17 the five-second rule still cut it)"
  },
  "simulated": [
+  "Bloom",
   "Genesis",
   "Gift of Nature",
   "Gift of the Earthmother",
   "Heart of the Wild",
   "Improved Regrowth",
   "Improved Rejuvenation",
+  "Improved Tranquility",
   "Living Spirit",
   "Moonglow",
   "Naturalist",

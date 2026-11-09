@@ -144,8 +144,8 @@
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-11-01",
-  "commit": "54ceac638",
+  "date": "2026-11-07",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
@@ -227,36 +227,44 @@
     "gain_seed2": 0.001527196561108335,
     "candidates": 482,
     "pass": 6
+   },
+   {
+    "round": 8,
+    "change": "only above 25% mana: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.0017468686429313873,
+    "gain_seed2": 0.0016200399128663001,
+    "candidates": 461,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "demonology-ml-raid": {
-     "before": 853.8989797578979,
-     "after": 843.7993587675813,
-     "base": 853.8989797578979,
+     "before": 872.4181476587486,
+     "after": 855.8350895955549,
+     "base": 872.4181476587486,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18260165000014794,
-     "oom_after": 0.18260165000014794
+     "oom_before": 0.051834400000050934,
+     "oom_after": 0.051580000000000896
     },
     "sim preset: Demo (Shadow Brand)": {
-     "before": 853.8989797578979,
-     "after": 843.7993587675813,
-     "base": 853.8989797578979,
+     "before": 872.4181476587486,
+     "after": 855.8350895955549,
+     "base": 872.4181476587486,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18260165000014794,
-     "oom_after": 0.18260165000014794
+     "oom_before": 0.051834400000050934,
+     "oom_after": 0.051580000000000896
     },
     "demonology-pact-raid": {
-     "before": 849.1698257779392,
-     "after": 838.5514557681367,
-     "base": 849.1698257779392,
+     "before": 868.1876735862711,
+     "after": 851.094244619387,
+     "base": 868.1876735862711,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18783720000019707,
-     "oom_after": 0.18783720000019707
+     "oom_before": 0.05124000000000076,
+     "oom_after": 0.05116000000000071
     }
    }
   },
@@ -273,6 +281,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }

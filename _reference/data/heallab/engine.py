@@ -328,6 +328,10 @@ class BaseHealer:
         """Every 2 s (totems, shields)."""
         pass
 
+    def on_hot_expire(self, sim, name, target):
+        """A heal over time ran its full duration (not refreshed, not on a dead target): the druid's Bloom (2026-11-08)."""
+        pass
+
     def mending_trigger(self, sim, target):
         pass
 
@@ -571,6 +575,7 @@ class Sim:
                     left -= 1
                     if left <= 0:
                         del x.hots[name]
+                        self.h.on_hot_expire(self, name, x)
                     else:
                         x.hots[name] = [per, left, nxt + self.h.book[name][-1].tick_every, per * left, fc]
 

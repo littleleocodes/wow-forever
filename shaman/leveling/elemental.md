@@ -8,23 +8,20 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 76% of the damage at level 60 in the fight lab comes from Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock (the spec's rule: at least 60%; **Lightning Bolt** cast in every fight).
+**Signature spells:** 76% of the damage at level 60 in the fight lab comes from the spec's core spells (Lightning Bolt, Earth Shock, Flame Shock; this build never casts Chain Lightning) (the spec's rule: at least 60%; **Lightning Bolt** cast at level 60).
 
 ## How to play
-
-**Not in this build:** **Lightning Mastery** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
 **Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30): you swing it whenever nothing else is ready. Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**.
 
 **In the fight**, top to bottom:
 
-1. **Lightning Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** casts 0.5 s faster for 15 s.
-2. **Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.
-3. **Earth Shock** when it would kill the mob, or to interrupt a caster.
-4. **Flame Shock** while it is not on the mob and the mob has more than 30% health.
-5. **Earth Shock** whenever the shock cooldown is free.
-6. **Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.
-7. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
+1. **Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.
+2. **Earth Shock** when it would kill the mob, or to interrupt a caster.
+3. **Flame Shock** while it is not on the mob and the mob has more than 30% health.
+4. **Earth Shock** whenever the shock cooldown is free.
+5. **Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.
+6. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
 
 **Between fights:** Heal back to 80% health with **Lesser Healing Wave** (eat if you cannot), drink below 15% of your mana.
 
@@ -34,18 +31,18 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 
 **Why it works**
 
-- **Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 14% of your damage at 60 in the fight lab. **Shamanistic Focus** (level 39) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 4 seconds per kill without it).
-- **Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 47-48 and 53) cuts that by 70%. **Elemental Alacrity** (23-25) takes half a second off the cast.
-- The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 26-27 and 40, makes it 15% stronger and 9 seconds longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (18-22) makes shocks and bolts 10% cheaper.
+- **Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 14% of your damage at 60 in the fight lab. **Shamanistic Focus** (level 28) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 3 seconds per kill without it).
+- **Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 44-46) cuts that by 70%. **Elemental Alacrity** (34-36) takes half a second off the cast.
+- The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 37-38, strengthens it and makes it last longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (29-33) makes shocks and bolts 10% cheaper.
 - **Elemental Fury** (levels 54-58) doubles the crit bonus of your spells and **Searing Totem**.
 - Bolt between shocks only while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. The fight lab keeps **Rockbiter Weapon** (from 30, **Windfury Weapon**) on, and your weapon does about an eighth of your damage at 60.
 - Drop **Searing Totem** at each pull while you have more than half your mana: it does about 6% of your damage at 60.
 
 **Caveats**
 
-- From 28, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it. **Lightning Mastery** comes at 59: use it at the start of a fight on a fresh mob.
+- From 39, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it.
 - This list is for one mob at a time; the fight lab does not model area pulls for Elemental. **Chain Lightning** hits up to 3 targets if you pull more.
-- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast), 18-28 into Elemental, and 29-39 buy **Thundering Strikes** (5% crit with spells and attacks) and **Shamanistic Focus** from Enhancement, with five filler points to reach it (**Improved Ghost Wolf**, **Guardian Totems**, **Earth's Grasp**), before the deep Elemental talents.
+- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Ancestral Knowledge**: more Intellect; **Mental Dexterity**, which mostly opens the tier of **Shamanistic Focus** at 28). From 29 every point goes to Elemental.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
 
 **When to change it**
@@ -54,8 +51,6 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 - A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
 - A bad pull (you under 30% health): **Stoneclaw Totem** taunts the mob onto itself, then heal with **Lesser Healing Wave**; the fight lab does this for every shaman.
 - A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown).
-
-*This guide was written for the rotation of 2026-10-22; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -93,5 +88,5 @@ One point per level from 10, in this order:
 | 60 | 28 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

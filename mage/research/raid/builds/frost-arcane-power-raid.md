@@ -57,18 +57,13 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 4. **Arcane Mind** — +10% Intellect at max rank (est.) — mana and crit.
 5. **Ice Shards** — +100% Frostbolt crit damage (unchanged).
 6. **Improved Frostbolt** — -0.5s Frostbolt (unchanged).
-7. **Elemental Precision** — Now 1% hit per rank over 5 ranks — 5% hit for 5 points.
-8. **Piercing Ice** — +6% Frost damage.
-9. **Arcane Concentration** — Clearcasting (unchanged); prerequisite for Arcane Meditation.
-10. **Arcane Meditation** — Reworked: 17% of regen per rank continues while casting (est. 51% at 3/3) — much stronger than Classic.
+7. **Arcane Concentration** — Clearcasting (unchanged); prerequisite for Arcane Meditation.
+8. **Arcane Meditation** — Reworked: 17% of regen per rank continues while casting (est. 51% at 3/3) — much stronger than Classic.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 5 | Wand Specialization 2 + Arcane Focus 3 | Improved Channeling | Tier-1 Arcane is all filler for a Frost mage (Arcane Focus is Arcane-only hit now). |
-| 3 | Arcane Geometry 2 + Arcane Blast 1 | Arcane Impact | Tier-3 Arcane filler to reach 15 points; Improved Arcane Explosion no longer exists. |
-| 3 | Improved Counterspell 2 + Missile Barrage 1 | Magic Absorption 2, Arcane Shielding | Gating fillers to reach 20 and 30 points. |
 | 2 | Improved Channeling | Frost Channeling, Frost Channeling 3 with Elemental Precision 4 | Mana/threat vs. the fifth point of hit. |
 
 ## Rank among our builds and the community simulator's
@@ -145,6 +140,7 @@ Damage by ability:
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Blast -> Frost Channeling (threat). Net -0.01% on a third seed.
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 32/0/19 -> 35/0/16; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +1 Missile Barrage, +1 Frost Channeling, +1 Arcane Blast, +1 Arcane Wrath, +1 Ice Block (refill: the frost-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 35/0/16 -> 32/3/16; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Subtlety (tier gating for Arcane Power); refill +1 Arcane Subtlety, +3 Incineration (refill: the frost-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision, Piercing Ice; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -87,11 +87,10 @@ The Subtlety leveling build derived on 2026-09-30 (derive_leveling.py): searched
 ## Core talents (priority order)
 
 1. **Riposte** — The scorer's value in this build: +11.5% of its score (model combat-swords-raid).
-2. **Improved Sinister Strike** — The scorer's value in this build: +7.6% of its score (model combat-swords-raid).
-3. **Serrated Blades** — The scorer's value in this build: +7.4% of its score (model combat-swords-raid).
-4. **Flawless Execution** — The scorer's value in this build: +7.4% of its score (model combat-swords-raid).
-5. **Precision** — The scorer's value in this build: +7.1% of its score (model combat-swords-raid).
-6. **Remorseless Attacks** — The scorer's value in this build: +7.0% of its score (model combat-swords-raid).
+2. **Serrated Blades** — The scorer's value in this build: +7.4% of its score (model combat-swords-raid).
+3. **Flawless Execution** — The scorer's value in this build: +7.4% of its score (model combat-swords-raid).
+4. **Precision** — The scorer's value in this build: +7.1% of its score (model combat-swords-raid).
+5. **Remorseless Attacks** — The scorer's value in this build: +7.0% of its score (model combat-swords-raid).
 
 ## Leveling rotation
 
@@ -103,6 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 5/16/30 -> 5/16/30; Improved Eviscerate -> Coup de Grace (renamed); Improved Sinister Strike -> Efficient Strikes (renamed); Quietus 5 gone; +1 Improved Ambush (back into Subtlety); +1 Improved Ambush (back into Subtlety); +1 Improved Ambush (back into Subtlety); +1 Camouflage (back into Subtlety); +1 Opportunity (back into Subtlety); order dropped (order_repair.py) (refill: the combat-daggers-raid model, leveling-st).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the subtlety-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 23.3 s per kill; own tree first 24.5 s; own tree last 23.3 s.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Sinister Strike; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

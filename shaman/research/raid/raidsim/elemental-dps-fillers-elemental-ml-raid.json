@@ -1,0 +1,202 @@
+{
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "build": "elemental-ml-raid",
+ "setting": "raid",
+ "date": "2026-11-07",
+ "tank": false,
+ "removal": {
+  "Ancestral Knowledge": 0.007385528957790877,
+  "Call of Flame": 0.05051585282372628,
+  "Call of Thunder": 0.03097297445563374,
+  "Concussion": 0.03871800097564215,
+  "Convection": 0.004207550657240655,
+  "Elemental Alacrity": 0.1676499365961105,
+  "Elemental Focus": 0.004083640811313849,
+  "Elemental Fury": 0.11121571513620854,
+  "Eye of the Storm": -0.0,
+  "Lightning Mastery": 0.027499751289553842,
+  "Lightning Overload": 0.06998840319501942,
+  "Mindfulness": 0.005097667997655986,
+  "Reverberation": 6.066025806894526e-05,
+  "Shamanistic Focus": 0.0020261814538919953,
+  "Thundering Strikes": 0.03839411243737767,
+  "Tidal Focus": 0.054995891794490936
+ },
+ "free": [
+  "Eye of the Storm",
+  "Reverberation"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Eye of the Storm",
+   "to": "Natural Grace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Eye of the Storm",
+   "to": "Elemental Reach",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Reverberation",
+    3
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Eye of the Storm",
+    2
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lightning Mastery",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Reverberation",
+    3
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lightning Mastery",
+    1
+   ],
+   [
+    "Elemental Reach",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ],
+   [
+    "Natural Grace",
+    1
+   ]
+  ]
+ }
+}

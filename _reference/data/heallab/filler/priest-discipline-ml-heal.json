@@ -1,0 +1,136 @@
+{
+ "class": "priest",
+ "build": "discipline-ml-heal",
+ "date": "2026-11-09",
+ "runs": 200,
+ "long": {
+  "DURATION": 600.0
+ },
+ "steps": [
+  {
+   "capacity": 0.6323,
+   "se": 0.0026,
+   "long": 0.5149,
+   "long_se": 0.0019,
+   "values": {
+    "Blessed Recovery": 0.0,
+    "Divine Aegis": 0.0128,
+    "Divine Fury": 0.0035,
+    "Holy Precision": 0.0,
+    "Holy Reach": 0.0,
+    "Holy Specialization": 0.0058,
+    "Improved Healing": 0.0186,
+    "Improved Power Word: Shield": 0.0024,
+    "Improved Renew": 0.0005,
+    "Inner Focus": 0.0182,
+    "Inspiration": 0.0157,
+    "Litany of Light": 0.0246,
+    "Meditation": 0.0467,
+    "Mental Agility": 0.0058,
+    "Mental Strength": 0.0099,
+    "Penance": 0.0454,
+    "Power in Light": 0.0,
+    "Silent Resolve": 0.0,
+    "Soul Warding": 0.0007,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": 0.0046
+   },
+   "values_long": {
+    "Holy Precision": 0.0,
+    "Power in Light": 0.0,
+    "Soul Warding": 0.0027,
+    "Twin Disciplines": 0.0007
+   },
+   "zero": [
+    "Holy Precision",
+    "Power in Light",
+    "Soul Warding",
+    "Twin Disciplines"
+   ],
+   "long_only": []
+  },
+  {
+   "capacity": 0.6548,
+   "se": 0.0017,
+   "long": 0.5321,
+   "long_se": 0.0013,
+   "values": {
+    "Blessed Recovery": 0.0,
+    "Divine Aegis": 0.0135,
+    "Divine Fury": 0.0066,
+    "Holy Precision": 0.0,
+    "Holy Reach": 0.0,
+    "Holy Specialization": 0.0052,
+    "Improved Healing": 0.0265,
+    "Improved Power Word: Shield": 0.0011,
+    "Improved Renew": 0.0005,
+    "Inner Focus": 0.0173,
+    "Inspiration": 0.0162,
+    "Litany of Light": 0.0468,
+    "Meditation": 0.0593,
+    "Mental Agility": 0.0024,
+    "Mental Strength": 0.0079,
+    "Penance": 0.0567,
+    "Power in Light": 0.0,
+    "Silent Resolve": 0.0,
+    "Soul Warding": 0.0047,
+    "Twilight Focus": 0.0,
+    "Twin Disciplines": 0.0077
+   },
+   "values_long": {
+    "Holy Precision": 0.0,
+    "Mental Agility": 0.003
+   },
+   "zero": [
+    "Holy Precision"
+   ],
+   "long_only": [
+    "Mental Agility"
+   ]
+  }
+ ],
+ "start": {
+  "std": 0.6323,
+  "std_se": 0.0026,
+  "long": 0.5149,
+  "long_se": 0.0019
+ },
+ "end": {
+  "std": 0.6548,
+  "long": 0.5321
+ },
+ "moves": [
+  {
+   "from": "Twin Disciplines",
+   "to": "Litany of Light",
+   "capacity": 0.6548,
+   "gain": 0.0357,
+   "fresh": 0.0321,
+   "long": 0.0335,
+   "why": "measured"
+  }
+ ],
+ "final": {
+  "Power in Light": 1,
+  "Twin Disciplines": 4,
+  "Silent Resolve": 3,
+  "Holy Precision": 1,
+  "Mental Strength": 5,
+  "Mental Agility": 3,
+  "Inner Focus": 1,
+  "Improved Power Word: Shield": 3,
+  "Meditation": 3,
+  "Soul Warding": 1,
+  "Penance": 1,
+  "Divine Aegis": 3,
+  "Twilight Focus": 3,
+  "Improved Renew": 1,
+  "Holy Specialization": 5,
+  "Divine Fury": 1,
+  "Blessed Recovery": 2,
+  "Inspiration": 3,
+  "Holy Reach": 2,
+  "Improved Healing": 3,
+  "Litany of Light": 2
+ }
+}

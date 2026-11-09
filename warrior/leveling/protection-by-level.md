@@ -2,9 +2,9 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > [Protection](protection.md) > Level by level
 
-What a Protection warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit; with a shield, blocks give rage too. Protection levels with a one-handed weapon and a shield. From level 10 you fight in Defensive Stance and step into Battle Stance only to Charge. It kills more slowly than Arms (the Protection leveling page has the numbers), but you almost never stop to eat, and you arrive at 60 as a tank. Each stage lists the full priority, so you can jump in at your level.
+What a Protection warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit; with a shield, blocks give rage too. Protection levels with a one-handed weapon and a shield. From level 10 you fight in Defensive Stance and step into Battle Stance only to Charge. It kills more slowly than Arms (the Protection leveling page has the numbers), but you almost never stop to eat, and you arrive at 60 as a tank in your raid talents. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 3/16/32 ([open the talent tree](https://talentsforever.com/warrior/60/003-25040005-251232021300101351-12)), the one on the [Protection leveling page](protection.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 17/3/31 ([open the talent tree](https://talentsforever.com/warrior/60/35300103002-03-050530020330001351-12)), the one on the [Protection leveling page](protection.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -127,7 +127,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Rend at 10.
 
-**Talents:** 10 Iron Will, 11 Improved Bloodrage.
+**Talents:** 10-11 Shield Specialization.
 
 **Keys to set:** Mouse 5 = Defensive Stance; Mouse 4 = Bloodrage; Q (defensive) = Heroic Strike; E (defensive) = Battle Stance; R (defensive) = Rend; Shift+Mouse 4 = Taunt.
 
@@ -142,9 +142,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 5. **Heroic Strike** once the mob is below 20% of its health.
 
 - Press **Bloodrage** after the swap to **Battle Stance**, not before: a stance change keeps none of your rage until 14, and 10 of it after. Its second 10 rage comes over 10 seconds, in **Defensive Stance** too.
-- **Iron Will** (10) and **Improved Bloodrage** (11-12): nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups.
+- **Shield Specialization** (10-14): more blocks, and rage from each block. Nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups.
 
-*Fight lab, seconds per kill: 23 at level 10. Presses per kill at level 10: Melee 5.6, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 1.0, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 23 at level 10. Presses per kill at level 10: Melee 5.6, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 1.0, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 12-13: Shield Bash
 
@@ -152,7 +152,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Battle Shout at 12.
 
-**Talents:** 12 Improved Bloodrage, 13 Shield Specialization.
+**Talents:** 12-13 Shield Specialization.
 
 **Keys to set:** 3 (defensive) = Shield Bash.
 
@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 5. **Rend** once, if the mob has none yet and has more than half its health.
 6. **Heroic Strike** once the mob is below 20% of its health.
 
-- **Shield Specialization** (13-14, 17-19): more blocks, and rage from each block. Nothing new to press.
+- Nothing new from the talents: **Shield Specialization** fills its five points by 14.
 
 *Fight lab, seconds per kill: 25 at level 12. Presses per kill at level 12: Melee 6.3, Rend 1.2, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.1, Battle Shout 0.1.*
 
@@ -192,17 +192,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 7. **Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**.
 
 - **Revenge** works in **Defensive Stance** only. **Demoralizing Shout** (14) is for two or more mobs.
-- **Anticipation** (15-16) raises your Defense: more dodges, parries and blocks, so more **Revenge**.
+- **Anticipation** (15-19) raises your Defense: more dodges, parries and blocks, so more **Revenge**.
 
-*Fight lab, seconds per kill: 26 at level 14. Presses per kill at level 14: Melee 6.4, Revenge 1.4, Rend 1.2, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 14. Presses per kill at level 14: Melee 6.4, Revenge 1.5, Rend 1.2, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
 
 ## Levels 16-32: Shield Block
 
 **The trainer teaches:** Mocking Blow (16), **Shield Block** (16), Disarm (18), Cleave (20), Retaliation (20), Slam (20), Victory Rush (20), Intimidating Shout (22), Execute (24), Challenging Shout (26), Shield Wall (28), Berserker Rage (30), Berserker Stance (30), Intercept (30).
 
-**New ranks to buy:** Battle Shout at 22, 32; Charge at 26; Heroic Strike at 16, 24, 32; Rend at 20, 30; Revenge at 24; Shield Bash at 32.
+**New ranks to buy:** Battle Shout at 22, 32; Charge at 26; Cleave at 30; Demoralizing Shout at 24; Hamstring at 32; Heroic Strike at 16, 24, 32; Rend at 20, 30; Revenge at 24; Shield Bash at 32; Thunder Clap at 18, 28.
 
-**Talents:** 16 Anticipation, 17-19 Shield Specialization, 20-22 Improved Revenge, 23-24 Improved Thunder Clap, 25-26 Master of Defense, 27 Improved Disarm, 28 Improved Shield Bash, 29 Defiance, 30-32 Focused Rage.
+**Talents:** 16-19 Anticipation, 20-22 Improved Revenge, 23-24 Master of Defense, 25-27 Defiance, 28-29 Improved Sunder Armor, 30-32 Focused Rage.
 
 **Keys to set:** Mouse 4 (defensive) = Shield Block; 1 = Victory Rush (at 20); 1 (defensive) = Victory Rush (at 20); Shift+Mouse 5 = Cleave (at 20); F = Intimidating Shout (at 22); F (defensive) = Intimidating Shout (at 22); 4 (defensive) = Shield Wall (at 28).
 
@@ -219,19 +219,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 7. **Rend** once, if the mob has none yet and has more than half its health.
 8. **Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**.
 
-- **Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (25-26): rage from your dodges and parries. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.
+- **Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (23-24): rage from your dodges and parries. **Defiance** (25-27) and **Improved Sunder Armor** (28-29, 34) are the raid tank's threat talents: nothing for a lone warrior. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.
 - **Victory Rush** (20, key 1) lights up after a kill: open the next fight with it when you are below 90% of your health. The fight lab rarely needs it before 33 (with the shield you seldom end a fight below 90%), so the list leaves it out until then.
 - **Retaliation** (20) needs **Battle Stance**. Skip it. For a pull that goes wrong: **Intimidating Shout** (22, F) and **Shield Wall** (28, key 4: 60% less damage for 12 seconds, a 15-minute cooldown).
 
-*Fight lab, seconds per kill: 26 at level 16, 25 at level 20, 29 at level 30, 30 at level 32. Presses per kill at level 16: Melee 7.0, Shield Block 2.9, Revenge 2.8, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Heroic Strike 0.3, Shield Bash 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 16, 24 at level 20, 29 at level 30, 30 at level 32. Presses per kill at level 16: Melee 6.6, Shield Block 2.9, Revenge 2.8, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 0.7, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
 
 ## Levels 33-39: Concussion Blow
 
 **The trainer teaches:** Whirlwind (36), Pummel (38).
 
-**New ranks to buy:** Revenge at 34.
+**New ranks to buy:** Demoralizing Shout at 34; Revenge at 34; Thunder Clap at 38.
 
-**Talents:** 33 Concussion Blow, 34 Defiance, 35-39 Bastion.
+**Talents:** 33 Concussion Blow, 34 Improved Sunder Armor, 35-39 Bastion.
 
 **Keys to set:** 2 (defensive) = Concussion Blow.
 
@@ -259,9 +259,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Recklessness (50).
 
-**New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Heroic Strike at 40, 48, 56, 60; Rend at 40, 50, 60; Revenge at 44, 54, 60; Shield Bash at 52; Shield Slam at 48, 54, 60.
+**New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Cleave at 40, 50, 60; Demoralizing Shout at 44, 54; Hamstring at 54; Heroic Strike at 40, 48, 56, 60; Rend at 40, 50, 60; Revenge at 44, 54, 60; Shield Bash at 52; Shield Slam at 48, 54, 60; Thunder Clap at 48, 58.
 
-**Talents:** 40 Shield Slam, 41 Defiance, 42 Improved Rend, 43-47 Cruelty, 48-51 Unbridled Wrath, 52 Booming Voice, 53-54 Improved Rend, 55-59 Enrage, 60 Booming Voice.
+**Talents:** 40 Shield Slam, 41-43 Improved Rend, 44-45 Deflection, 46 Improved Overpower, 47-49 Deflection, 50 Improved Heroic Strike, 51-53 Deep Wounds, 54 Cruelty, 55-56 Improved Heroic Strike, 57-58 Impale, 59-60 Cruelty.
 
 **Keys to set:** Q = Shield Slam; Q (defensive) = Shield Slam; C (defensive) = Heroic Strike.
 
@@ -281,10 +281,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.
 
-- From 42 the points leave Protection: **Cruelty** (43-47) for critical strikes, **Unbridled Wrath** (48-51) for rage, **Enrage** (55-59) for damage after a mob hits you, **Improved Rend** (42, 53-54) and **Booming Voice** (52, 60) for a cheaper **Battle Shout**.
+- From 41 the points go to the raid build's Arms and Fury talents: **Improved Rend** (41-43), **Deflection** (44-45, 47-49), **Improved Overpower** (46), **Improved Heroic Strike** (50, 55-56), **Deep Wounds** (51-53), **Cruelty** (54, 59-60) and **Impale** (57-58). **Cruelty**, **Improved Rend**, **Impale** and **Deep Wounds** speed you up a little; **Improved Overpower** does nothing here, since this rotation never casts **Overpower**.
 - Two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
 
-*Fight lab, seconds per kill: 25 at level 40, 27 at level 50, 29 at level 60. Presses per kill at level 40: Melee 7.0, Shield Slam 2.7, Revenge 2.6, Shield Block 2.4, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Heroic Strike 0.2, Victory Rush 0.2, Shield Bash 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 40, 28 at level 50, 30 at level 60. Presses per kill at level 40: Melee 7.0, Shield Slam 2.7, Revenge 2.6, Shield Block 2.4, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Heroic Strike 0.2, Victory Rush 0.2, Battle Shout 0.1.*
 
 ## Between fights
 
@@ -298,4 +298,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Two or three mobs: open with **Demoralizing Shout** and **Thunder Clap**, and use **Cleave** for spare rage. On pulls of 3 the fight lab measured fewer deaths with **Demoralizing Shout**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

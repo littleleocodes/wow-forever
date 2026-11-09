@@ -42,3 +42,17 @@ def seed_caps(job):
     mod = importlib.import_module(CLASSES[cls])
     h = mod.Healer(alloc)
     return [E.seed_capacity(h, s, steps=steps) for s in seeds]
+
+
+def capacity_with(job):
+    """capacity() under table overrides set for this job only: (cls, alloc, seeds, steps, {tables name: value}). filler_pass.py's
+    mana check runs a longer fight (DURATION) where the five-minute fight leaves a healer's mana talents at zero (2026-11-09)."""
+    cls, alloc, seeds, steps, over = job
+    old = {k: getattr(T, k) for k in over}
+    try:
+        for k, v in over.items():
+            setattr(T, k, v)
+        return capacity((cls, alloc, seeds, steps))
+    finally:
+        for k, v in old.items():
+            setattr(T, k, v)

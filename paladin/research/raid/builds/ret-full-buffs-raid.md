@@ -1,4 +1,4 @@
-# Retribution — Seal of Command / Twist of Light (full raid buffs, 10/8/33) — 8/15/28
+# Retribution — Seal of Command (full raid buffs) — 8/15/28
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -12,7 +12,7 @@
 
 ## Summary
 
-The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-dps` until the training-dummy adoption of 2026-09-27, restored as its companion. In the community simulator's raid setting (full buffs, ElliotWood/Forever 40be98e, 3000 iterations) it does 748 DPS against `ret-raid-dps`'s 729 (+2.7%); on the training dummy, where our raid drafts are ranked (your own buffs only), it does 298 against 307 (-2.8%). Simulator numbers, not measurements. Seal of Command, Conviction, Vengeance (now a stacking buff), Two-Handed Weapon Specialization and Repentance survive; Sanctity Aura, Improved Blessing of Might and Improved Seal of the Crusader are gone. New: Sacred Arbiter (Holy Strike refreshes Judgements), Crusade, Champion of the Light (Intellect to spell damage), Instrument of Law and the Twist of Light capstone (seal twisting echoes). Improved Seals and Divine Strength from Holy, Precision (hit) from Protection.
+The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-dps` until the training-dummy adoption of 2026-09-27, restored as its companion. In the community simulator's raid setting (full buffs, ElliotWood/Forever 40be98e, 3000 iterations) it does 748 DPS against `ret-raid-dps`'s 729 (+2.7%); on the training dummy, where our raid drafts are ranked (your own buffs only), it does 298 against 307 (-2.8%). Simulator numbers, not measurements. On today's trees (the 2026-10-31 repair for client 70707) it takes Seal of Command, Sacred Arbiter (Holy Strike refreshes Judgements), Champion of the Light (Intellect to spell damage), Conviction, Vengeance (a stacking buff), Two-Handed Weapon Specialization, Vindication, Improved Seals, Divine Strength and Precision (hit).
 
 ## Point allocation
 
@@ -51,24 +51,21 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 ## Core talents (priority order)
 
 1. **Seal of Command** — Still the damage engine: 70% weapon damage Holy procs.
-2. **Twist of Light** — New capstone: swapping seals grants an Echo that applies the replaced seal on the next hit — seal twisting.
-3. **Improved Seals** — New: +5%/rank Seal and Judgement damage (est. 15%).
-4. **Conviction** — +5% melee crit.
-5. **Vengeance** — Reworked: after a non-periodic crit, +1%/rank Physical and Holy damage for 30 s, stacking 3 times (+9% at 3/3, 70291 tooltip); requires Sanctified Judgement 3.
-6. **Precision** — +3% hit with all attacks and spells.
-7. **Divine Strength** — +10% Strength.
-8. **Champion of the Light** — New: spell damage from Intellect (est. 33%) — Judgements, Consecration, Exorcism scale.
-9. **Sacred Arbiter** — New 16-point talent: Holy Strike +10% and refreshes Judgements — no more re-judging.
-10. **Two-Handed Weapon Specialization** — +3% (est.) two-hander damage.
-11. **Sanctified Judgement** — Mana on Judgements; prerequisite for Vengeance.
-12. **Instrument of Law** — Faster Hammer of Wrath and -10% threat.
+2. **Improved Seals** — New: +5%/rank Seal and Judgement damage (est. 15%).
+3. **Conviction** — +5% melee crit.
+4. **Vengeance** — Reworked: after a non-periodic crit, +1%/rank Physical and Holy damage for 30 s, stacking 3 times (+9% at 3/3, 70291 tooltip); requires Sanctified Judgement 3.
+5. **Precision** — +3% hit with all attacks and spells.
+6. **Divine Strength** — +10% Strength.
+7. **Champion of the Light** — New: spell damage from Intellect (est. 33%) — Judgements, Consecration, Exorcism scale.
+8. **Sacred Arbiter** — New 16-point talent: Holy Strike +10% and refreshes Judgements — no more re-judging.
+9. **Two-Handed Weapon Specialization** — +3% (est.) two-hander damage.
+10. **Sanctified Judgement** — Mana on Judgements; prerequisite for Vengeance.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 5 | Toughness | Redoubt | Tier-1 Protection filler to unlock Precision. |
-| 3 | Divine Intellect 2 + Holy Conduit 1 | Divine Intellect 5 by dropping Instrument of Law | Mana vs. threat. |
 
 ## Rank among our builds and the community simulator's
 
@@ -126,10 +123,11 @@ Damage by ability:
 - Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.
 - 2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 10/8/33 -> 8/15/28; Divine Intellect 2 gone (moved to Protection); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Redoubt (tier gating for Precision); +1 Sacred Duty (tier gating for Toughness); +1 Sacred Duty (tier gating for Toughness); +1 Vindication (tier gating for Champion of the Light); +1 Deflection (tier gating for Champion of the Light) (refill: the ret-dps model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Twist of Light, Instrument of Law; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 
-- How Twist of Light Echoes interact with Seal of Command procs — the core of a Forever Ret rotation.
+- How Unsealed Wrath's stored seal copies (Twist of Light until build 70753) interact with Seal of Command procs.
 - Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.
 - Vengeance stacking uptime with 5-10% crit.
 

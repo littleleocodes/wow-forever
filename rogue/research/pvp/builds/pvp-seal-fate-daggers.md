@@ -65,7 +65,6 @@ The Classic 30/8/13 maps almost one-to-one: Seal Fate, Cold Blood and Improved K
 6. **Lethality** — +30% crit damage.
 7. **Improved Ambush** — Ambush crit (now Subtlety tier 2).
 8. **Initiative** — Extra combo point on openers.
-9. **Elusiveness** — Vanish/Blind cooldowns.
 
 ## Flex points
 
@@ -79,6 +78,7 @@ The Classic 30/8/13 maps almost one-to-one: Seal Fate, Cold Blood and Improved K
 - Vigor moved from the Assassination capstone to tier 5 (2 ranks) — cheap +10 energy for every deep-Assassination build.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 30/8/13 -> 31/8/12; Murder 2 gone; Lethality 5 -> 2 (rank cap); Seal Fate 5 -> 3 (rank cap); Improved Eviscerate -> Coup de Grace (renamed); +1 Dirty Deeds (tier gating for Initiative); +1 Dirty Deeds (tier gating for Initiative); +1 Improved Gouge (tier gating for Cold Blood); +1 Premeditation (tier gating for Elusiveness); +1 Dirty Tricks (tier gating for Elusiveness); +1 Improved Gouge (tier gating for Improved Kidney Shot); +1 Improved Gouge (tier gating for Improved Kidney Shot); +1 Vile Poisons (tier gating for Improved Kidney Shot); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Seal Fate); +1 Relentless Strikes (tier gating for Mutilate); +1 Relentless Strikes (tier gating for Mutilate); -1 Elusiveness (over 51); -1 Elusiveness (over 51); -1 Dirty Deeds (over 51); -1 Initiative (over 51); -1 Initiative (over 51) (refill: the combat-daggers-raid model, pvp).
 - 2026-11-04 (repair_builds.py, client build 1.60.1.70753 trees): 31/8/12 -> 31/8/12; +1 Venom (prerequisite of Mutilate); -1 Relentless Strikes (over 51) (refill: the combat-daggers-raid model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elusiveness; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

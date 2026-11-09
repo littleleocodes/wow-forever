@@ -4,7 +4,7 @@
 
 What an Affliction warlock presses from level 1 to 60, stage by stage. Affliction levels on its damage-over-time spells while the Voidwalker (from 10) holds the mob: **Corruption** and **Bane of Agony** on every mob, **Shadow Bolt** while the mob is healthy, then the wand while the dots finish it. From 40, **Wrack** takes over from most of your bolts. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 37/14/0 ([open the talent tree](https://talentsforever.com/warlock/60/25500322134001351-0025030211--12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 39/11/1 ([open the talent tree](https://talentsforever.com/warlock/60/25510223135001351-00151301-01-12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -127,7 +127,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Create Healthstone (10), Drain Soul (10), Summon Voidwalker (10), **Torment** (10), Health Funnel (12), Phase Shift (12), Curse of Recklessness (14), Drain Life (14), Fire Shield (14), Sacrifice (16), Unending Breath (16), Consume Shadows (18), Create Soulstone (18), Searing Pain (18).
 
-**New ranks to buy:** Bane of Agony at 18; Corruption at 14; Immolate at 10; Shadow Bolt at 12.
+**New ranks to buy:** Bane of Agony at 18; Corruption at 14; Immolate at 10; Life Tap at 16; Shadow Bolt at 12.
 
 **Talents:** 10-11 Improved Life Tap, 12-15 Suppression, 16-19 Improved Corruption.
 
@@ -157,7 +157,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Curse of the Elements (20), Demon Armor (20), Lash of Pain (20), Rain of Fire (20), Ritual of Summoning (20), Summon Incubus (20), Summon Succubus (20), Eye of Kilrogg (22), Soothing Kiss (22), Drain Mana (24), Sense Demons (24), Suffering (24), Curse of Tongues (26), Detect Invisibility (26), Seduction (26), Banish (28), Create Firestone (28), Devour Magic (30), Hellfire (30), Subjugate Demon (30), Summon Felhunter (30), Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32).
 
-**New ranks to buy:** Bane of Agony at 28; Corruption at 24; Immolate at 20, 30; Life Tap at 26; Shadow Bolt at 20, 28; Torment at 20, 30.
+**New ranks to buy:** Bane of Agony at 28; Corruption at 24; Drain Life at 22, 30; Drain Soul at 24; Fear at 32; Health Funnel at 20, 28; Immolate at 20, 30; Life Tap at 26; Shadow Bolt at 20, 28; Torment at 20, 30.
 
 **Talents:** 20 Amplify Curse, 21-22 Improved Bane of Agony, 23 Improved Corruption, 24 Pandemic, 25-27 Malevolence, 28 Pandemic, 29 Malevolence, 30 Pandemic, 31 Suppression, 32-33 Soul Siphon.
 
@@ -178,7 +178,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Amplify Curse** (20): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.
 - **Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it.
-- **Pandemic** (24, 28, 30) and **Malevolence** (25-27, 29) make your dots crit more often and harder.
+- **Pandemic** (24, 28, 30) and **Malevolence** (25-27, 29, 44) make your dots crit more often and harder.
 - **Curse of the Elements** (20) is not part of the list: the tuned rules of 2026-11-04 measured about 2-3% faster kills without it.
 
 *Fight lab, seconds per kill: 30 at level 20, 39 at level 30, 42 at level 33. Presses per kill at level 20: Torment 3.0, Wand 2.5, Shadow Bolt 2.2, Corruption 1.0, Bane of Agony 1.0, Immolate 0.5, Life Tap 0.1.*
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Create Spellstone (36), Spell Lock (36).
 
-**New ranks to buy:** Bane of Agony at 38; Corruption at 34; Life Tap at 36; Shadow Bolt at 36; Siphon Life at 38.
+**New ranks to buy:** Bane of Agony at 38; Corruption at 34; Drain Life at 38; Drain Soul at 38; Health Funnel at 36; Life Tap at 36; Rain of Fire at 34; Shadow Bolt at 36; Siphon Life at 38.
 
 **Talents:** 34 Siphon Life, 35-39 Shadow Mastery.
 
@@ -234,7 +234,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 60% health: **Drain Life**, and in place of the wand below 85%. A mob on you: **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
-- **Wrack** makes your other Shadow dots 10% stronger while it lasts, and **Soul Siphon** (32-33, 41) adds up to 36% to it with your other dots on the mob.
+- **Wrack** makes your other Shadow dots 10% stronger while it lasts, and **Soul Siphon** (32-33, 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Improved Drains** (42-43) no longer touches it.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 
 *Fight lab, seconds per kill: 38 at level 40. Presses per kill at level 40: Torment 3.8, Wand 2.8, Wrack 1.4, Corruption 1.0, Bane of Agony 1.0, Siphon Life 1.0, Shadow Bolt 0.8, Immolate 0.5, Life Tap 0.1.*
@@ -243,9 +243,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Death Coil (42), Paranoia (42), Soul Fire (48), Inferno (50), Bane of Doom (60), Ritual of Doom (60).
 
-**New ranks to buy:** Bane of Agony at 48, 58; Corruption at 44, 54, 60; Drain Life at 46, 54; Fear at 56; Immolate at 50, 60; Life Tap at 46, 56; Shadow Bolt at 44, 52, 60; Siphon Life at 48, 58; Torment at 50, 60.
+**New ranks to buy:** Bane of Agony at 48, 58; Banish at 48; Corruption at 44, 54, 60; Death Coil at 50, 58; Drain Life at 46, 54; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Bolt at 44, 52, 60; Shadow Ward at 42, 52, 60; Siphon Life at 48, 58; Torment at 50, 60.
 
-**Talents:** 42-44 Improved Drains, 45-49 Unholy Power, 50 Demonic Energies, 51-52 Fel Concentration, 53-55 Improved Voidwalker, 56 Demonic Energies, 57-58 Demonic Embrace, 59 Demonic Sacrifice, 60 Improved Sayaad.
+**Talents:** 42-43 Improved Drains, 44 Malevolence, 45-49 Unholy Power, 50 Demonic Energies, 51-52 Fel Concentration, 53-55 Improved Voidwalker, 56 Fel Concentration, 57 Demonic Embrace, 58 Demonic Aegis, 59 Grim Reach, 60 Improved Shadow Bolt.
 
 **Keys to set:** F = Death Coil.
 
@@ -265,8 +265,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** A mob on you below 60% health: **Death Coil** first. Your Healthstone below 35% health.
 
-- **Improved Drains** (42-44) adds 20% to **Drain Life**.
-- The 14 Demonology points (45-60) are for the Voidwalker: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage. **Demonic Sacrifice** and **Improved Sayaad** are only steps: never sacrifice your tank.
+- **Improved Drains** (42-43) adds 13% to **Drain Life**. **Fel Concentration** (51-52, 56) gives your drains and **Wrack** a 70% chance not to lose casting time when you take damage.
+- The 11 Demonology points (45-58) are for the Voidwalker and you: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 8% of your spell damage, **Demonic Embrace** and **Demonic Aegis** make you sturdier. **Grim Reach** (59) and **Improved Shadow Bolt** (60) close the build.
 
 *Fight lab, seconds per kill: 38 at level 42, 37 at level 50, 35 at level 60. Presses per kill at level 42: Torment 3.6, Wand 2.8, Wrack 1.3, Corruption 1.0, Bane of Agony 1.0, Siphon Life 1.0, Shadow Bolt 0.7, Immolate 0.5, Life Tap 0.1, Fear 0.1, Drain Life 0.1.*
 
@@ -284,4 +284,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Affliction/Demonology hybrid plays the Demonology list, not this one: see its own guide.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

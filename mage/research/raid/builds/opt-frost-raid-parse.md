@@ -52,10 +52,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 2. **Ice Shards** — Removing it costs 12.2 points of score in this model.
 3. **Fingers of Frost** — Removing it costs 11.1 points of score in this model.
 4. **Missile Barrage** — Removing it costs 9.8 points of score in this model.
-5. **Elemental Precision** — Removing it costs 9.4 points of score in this model.
-6. **Arcane Mind** — Removing it costs 9.3 points of score in this model.
-7. **Arcane Instability** — Removing it costs 8.8 points of score in this model.
-8. **Ice Lance** — Removing it costs 8.3 points of score in this model.
+5. **Arcane Mind** — Removing it costs 9.3 points of score in this model.
+6. **Arcane Instability** — Removing it costs 8.8 points of score in this model.
+7. **Ice Lance** — Removing it costs 8.3 points of score in this model.
 
 ## Rotation
 
@@ -65,6 +64,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 - Report: mage/research/talents/forever/optimizer/frost-raid-parse.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 29/0/22 -> 29/0/22; Arcane Focus 5 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Arcane Resilience (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration); +1 Wand Specialization (tier gating for Arcane Concentration) (refill: the frost-raid model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

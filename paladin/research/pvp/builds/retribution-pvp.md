@@ -57,9 +57,8 @@ The Retribution PvP build derived on 2026-09-30 (derive_pvp.py): the stats model
 1. **Sanctified Judgement** — The scorer's value in this build: +9.4% of its score (model ret-dps).
 2. **Seal of Command** — The scorer's value in this build: +9.0% of its score (model ret-dps).
 3. **Unyielding Faith** — The scorer's value in this build: +8.1% of its score (model ret-dps).
-4. **Voice of Truth** — The scorer's value in this build: +7.5% of its score (model ret-dps).
-5. **Spiritual Focus** — The scorer's value in this build: +7.5% of its score (model ret-dps).
-6. **Repentance** — The scorer's value in this build: +7.5% of its score (model ret-dps).
+4. **Spiritual Focus** — The scorer's value in this build: +7.5% of its score (model ret-dps).
+5. **Repentance** — The scorer's value in this build: +7.5% of its score (model ret-dps).
 
 ## Notes
 
@@ -67,6 +66,7 @@ The Retribution PvP build derived on 2026-09-30 (derive_pvp.py): the stats model
 - Where we disagree with the community: most Retribution builds take none, which the model values below this build's weakest point; this build takes Deflection (20%), Infusion of Light (15%), which few Retribution builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 21/0/30 -> 22/0/29; Unyielding Faith 2 gone (moved to Retribution); Voice of Truth 1 gone; Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Instrument of Law 2 gone; +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Spiritual Focus (tier gating for Holy Shock); +1 Holy Conduit (tier gating for Holy Shock); +1 Unyielding Faith (tier gating for Champion of the Light); +1 Unyielding Faith (tier gating for Champion of the Light); refill +1 Vengeance, +1 Holy Conduit (refill: the ret-dps model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Voice of Truth; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

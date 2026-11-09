@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > [Destruction](destruction.md) > Level by level
 
-What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Shadow Bolt** and **Immolate**, **Shadowburn** (31) to finish and **Conflagrate** (32) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. The warlock's leveling search is still running, so the build and its talent levels may change. Each stage lists the full priority, so you can jump in at your level.
+What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Shadow Bolt** and **Immolate**, **Shadowburn** (31) to finish and **Conflagrate** (32) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 6/11/34 ([open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
@@ -90,7 +90,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Create Healthstone (10), Drain Soul (10), Summon Voidwalker (10), **Torment** (10), Health Funnel (12), Phase Shift (12), Curse of Recklessness (14), Drain Life (14), Fire Shield (14), Sacrifice (16), Unending Breath (16), Consume Shadows (18), Create Soulstone (18), Searing Pain (18), Curse of the Elements (20), Demon Armor (20), Lash of Pain (20), Rain of Fire (20), Ritual of Summoning (20), Summon Incubus (20), Summon Succubus (20), Eye of Kilrogg (22), Soothing Kiss (22), Drain Mana (24), Sense Demons (24), Suffering (24), Curse of Tongues (26), Detect Invisibility (26), Seduction (26), Banish (28), Create Firestone (28), Devour Magic (30), Hellfire (30), Subjugate Demon (30), Summon Felhunter (30).
 
-**New ranks to buy:** Immolate at 10, 20, 30; Life Tap at 16, 26; Shadow Bolt at 12, 20, 28; Torment at 20, 30.
+**New ranks to buy:** Drain Soul at 24; Health Funnel at 20, 28; Immolate at 10, 20, 30; Life Tap at 16, 26; Shadow Bolt at 12, 20, 28; Torment at 20, 30.
 
 **Talents:** 10-14 Bane, 15-16 Aftermath, 17-19 Cataclysm, 20-24 Ruin, 25-27 Agonizing Flames, 28-30 Intensity.
 
@@ -138,7 +138,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32), Create Spellstone (36), Spell Lock (36).
 
-**New ranks to buy:** Conflagrate at 32; Life Tap at 36; Shadow Bolt at 36; Shadowburn at 32.
+**New ranks to buy:** Conflagrate at 32; Drain Soul at 38; Fear at 32; Health Funnel at 36; Life Tap at 36; Rain of Fire at 34; Shadow Bolt at 36; Shadowburn at 32.
 
 **Talents:** 32 Conflagrate, 33 Pyroclasm, 34 Bane of Havoc, 35-39 Shadow and Flame.
 
@@ -158,7 +158,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Conflagrate** is no kill shot: the tuned rules cast it only on a mob above a fifth of its health.
 - **Shadow and Flame** (35-39): at 5 points (39) **Conflagrate** no longer uses up **Immolate**, so cast it whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds.
-- **Pyroclasm** (33) and **Bane of Havoc** (34) are steps to the next tier: this list casts no **Soul Fire** and fights one mob at a time, so neither does anything here.
+- **Pyroclasm** (33) and **Bane of Havoc** (34) are tier points before **Shadow and Flame**: this list casts no **Soul Fire** and fights one mob at a time, so neither does anything here.
 
 *Fight lab, seconds per kill: 45 at level 32, 47 at level 39. Presses per kill at level 32: Shadow Bolt 4.5, Torment 3.6, Wand 3.6, Immolate 1.0, Shadowburn 1.0, Conflagrate 0.4, Life Tap 0.1.*
 
@@ -183,7 +183,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** A mob on you: **Shadowburn** if it would kill, **Conflagrate** if it is ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
-- **Incinerate** (40) is a step to **Fire and Brimstone**. The tuned rules of 2026-11-07 never cast it, and since the list fills a burning mob with **Incinerate**, the fight lab now wands a burning mob instead of casting a bolt: about one and a half **Shadow Bolt** a kill from here, four before. A check on 2026-11-07 (400 fights a level) measured that 5-12% faster per kill at levels 40-60 than bolting the burning mob.
+- **Incinerate** (40) is a tier point: the tuned rules of 2026-11-07 never cast it, and because the list reserves the filler for it on a burning mob, the fight lab now wands a burning mob instead of casting a bolt: about one and a half **Shadow Bolt** a kill from here, four before. A check on 2026-11-07 (400 fights a level) measured that 5-12% faster per kill at levels 40-60 than bolting the burning mob.
 - **Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 
@@ -193,7 +193,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Death Coil** (42), Paranoia (42), Soul Fire (48), Inferno (50), Bane of Doom (60), Ritual of Doom (60).
 
-**New ranks to buy:** Conflagrate at 48, 54, 60; Death Coil at 50, 58; Immolate at 50, 60; Shadow Bolt at 44, 52, 60; Shadowburn at 48, 56; Torment at 50, 60.
+**New ranks to buy:** Banish at 48; Conflagrate at 48, 54, 60; Death Coil at 50, 58; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Bolt at 44, 52, 60; Shadow Ward at 42, 52, 60; Shadowburn at 48, 56; Torment at 50, 60.
 
 **Talents:** 42-43 Fire and Brimstone, 44 Improved Life Tap, 45-49 Suppression, 50-54 Unholy Power, 55-57 Improved Voidwalker, 58 Demonic Embrace, 59-60 Fel Vitality.
 
@@ -212,7 +212,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Shadowburn** or **Conflagrate** if ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
 - **Life Tap** in a fight only when you are short of mana and above 60% health: rare from 40, since the wand costs nothing.
-- **Improved Life Tap** (44) adds 20% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. **Unholy Power**, **Improved Voidwalker**, **Demonic Embrace** and **Fel Vitality** (50-60) make the Voidwalker and you sturdier.
+- **Improved Life Tap** (44) adds 20% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 60, **Unholy Power**, **Improved Voidwalker**, **Demonic Embrace** and **Fel Vitality** make the Voidwalker and you sturdier.
 
 *Fight lab, seconds per kill: 42 at level 42, 41 at level 50, 41 at level 60. Presses per kill at level 42: Wand 9.3, Torment 4.1, Conflagrate 1.6, Shadow Bolt 1.5, Immolate 1.1, Shadowburn 1.0, Death Coil 0.2.*
 
@@ -229,4 +229,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Demonology and Affliction level with lists of their own: their guides are in this folder, and the leveling index ranks the specs by time per kill.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

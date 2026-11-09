@@ -2356,5 +2356,240 @@
   "best_hand": "elemental-raid-dps",
   "gain_vs_hand": 0.0969,
   "commit": "16e85426c"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "elemental-dps",
+    "dps": 778.47,
+    "se": 0.109
+   },
+   "elemental-raid-dps": {
+    "entry": "elemental-dps",
+    "dps": 749.53,
+    "se": 0.126
+   },
+   "opt-elemental-dps-raid-dps": {
+    "entry": "elemental-dps",
+    "dps": 774.47,
+    "se": 0.11
+   },
+   "elemental-raid": {
+    "entry": "elemental-dps",
+    "dps": 752.0,
+    "se": 0.108
+   }
+  },
+  "best_hand": "elemental-raid-dps",
+  "gain_vs_hand": 0.0386
+ },
+ "signature_check": {
+  "spec": "Elemental",
+  "ok": true,
+  "core_share": 0.9449,
+  "min_share": 0.6,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "elemental-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 778.5,
+  "date": "2026-11-07",
+  "commit": "16e85426c",
+  "shares": {
+   "Lightning Bolt": 0.6767,
+   "Flame Shock": 0.1358,
+   "Chain Lightning": 0.1324,
+   "Searing Totem": 0.0493,
+   "Demonic Rune": 0.0058
+  },
+  "casts": {
+   "Chain Lightning": 12.83,
+   "Lightning Mastery": 1.05,
+   "Lightning Bolt": 70.96,
+   "Searing Totem": 4.0,
+   "Flame Shock": 9.19
+  },
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Reverberation",
+     3
+    ],
+    [
+     "Elemental Alacrity",
+     3
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Elemental Warding",
+     1
+    ],
+    [
+     "Call of Thunder",
+     1
+    ],
+    [
+     "Lightning Overload",
+     3
+    ],
+    [
+     "Elemental Fury",
+     5
+    ],
+    [
+     "Lightning Mastery",
+     1
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     5
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     5
+    ],
+    [
+     "Mindfulness",
+     3
+    ],
+    [
+     "Totemic Focus",
+     1
+    ]
+   ]
+  }
+ },
+ "aligned_raid": {
+  "target": "elemental-raid-dps",
+  "moves": [
+   {
+    "from": "Elemental Warding",
+    "to": "Eye of the Storm",
+    "ratio": 1.0
+   },
+   {
+    "from": "Totemic Focus",
+    "to": "Eye of the Storm",
+    "ratio": 1.00002
+   }
+  ],
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Reverberation",
+     3
+    ],
+    [
+     "Elemental Alacrity",
+     3
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Eye of the Storm",
+     2
+    ],
+    [
+     "Call of Thunder",
+     1
+    ],
+    [
+     "Lightning Overload",
+     3
+    ],
+    [
+     "Elemental Fury",
+     5
+    ],
+    [
+     "Lightning Mastery",
+     1
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     5
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Tidal Focus",
+     5
+    ],
+    [
+     "Mindfulness",
+     3
+    ]
+   ]
+  },
+  "split": "32/11/8",
+  "ratio": 1.00002
+ },
+ "builds": {
+  "written": [
+   "elemental-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-11-07",
+  "setting": "raid"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

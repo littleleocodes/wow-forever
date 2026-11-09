@@ -12,51 +12,45 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Melee Survival leveling), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 59% of the damage at level 60 in the fight lab comes from melee, Raptor Strike, Mongoose Bite, Lacerate, pet (the spec's rule: at least 50%).
+**Signature spells:** 59% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Raptor Strike, Lacerate, your pet; this build never casts Mongoose Bite) (the spec's rule: at least 50%).
 
 ## How to play
-
-**Not in this build:** **Counterattack**, **Deterrence**, **Expose Prey** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** as the mob comes, then walk in behind the pet.
 
 **In the fight**, top to bottom:
 
-1. **Raptor Strike** once the mob is below 20% of its health: it replaces your next swing. The tuned rules keep it for the finish; its mana buys more as the sting and the trap.
-2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
-3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
-4. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
-5. **Immolation Trap** at your feet while the mob has more than 40% of its health.
-6. **Mend Pet** when the pet drops below a third of its health.
+1. **Raptor Strike** once the mob is below 20% of its health: it replaces your next swing. The tuned rules keep it for the finish; its mana buys more in the sting and the trap.
+2. **Lacerate** (from level 30) while the mob has more than half its health and you have 80% of your mana or more.
+3. **Immolation Trap** at your feet while the mob has more than 40% of its health.
+4. **Mend Pet** when the pet drops below a third of its health.
 
-**Between fights:** Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health.
 
 ## Why this rotation
 
-Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings. Survival comes first (levels 10-34), then the pet.
+Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings. Survival comes first (levels 10-33), then the pet.
 
 **Why it works**
 
-- **Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds to it, **Survival Tactics** (29) helps it hit, and **Survivalist's Discipline** (33-34) brings it back every 18 seconds. In the fight lab's removal runs at 60, **Resourcefulness** (levels 30 and 32: cheaper traps and strikes, about 3.5 seconds a kill) and **Survivalist's Discipline** (about 1 second) were the build's most valuable talents; at 60 the trap is about a fifth of your damage.
-- Set the trap at your feet beside the mob (traps work in combat in Forever but land where you stand), only while the mob has more than 40% of its health (the burn lasts 15 seconds) and you have half your mana or more.
-- **Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown); **Mongoose Bite** when it lights up. **Lacerate** (from level 30) only while the mob has more than half its health and you have 80% of your mana or more.
-- From level 35 the points go to **Lethal Attacks** and then Beast Mastery: **Deadly Aspects** for your swings, then the pet: **Focused Fire**, **Endurance Training**, **Unleashed Fury** and **Ferocity** (48-57), **Bestial Discipline** (58-59). The cat's swings and Claw are over a third of the damage at 60: send it first and let it hold the mob.
-- No **Serpent Sting**: the tuned rules never cast it. With **Expose Prey** (level 31) **Hunter's Mark** goes on in a free global cooldown so your hits can light up **Mongoose Bite**. **Aspect of the Monkey** until 30, then **Aspect of the Beast**. Drink below 60% mana.
+- **Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds to it, **Survival Tactics** (29) helps it hit, and **Survivalist's Discipline** (32-33) brings it back every 18 seconds. In the fight lab's removal runs at 60 (seconds a kill costs without the talent), **Resourcefulness** (levels 30-31: cheaper traps and strikes) was worth about 1.9 seconds and **Survivalist's Discipline** 1.4, the build's most valuable talents; **Clever Traps** 0.7 and **Bestial Discipline** 0.5 come next.
+- Set the trap at your feet beside the mob (traps work in combat in Forever but land where you stand), only while the mob has more than 40% of its health (the burn lasts 15 seconds).
+- **Serpent Sting** as the mob runs in, from range (more than 8 yards away, mob above 40% of its health), then walk in behind the pet. **Raptor Strike** only once the mob is below 20% of its health: the tuned rules (2026-11-03) hold it for the finish (it replaces your next main-hand swing and costs no global cooldown). **Mongoose Bite** lights up only after you dodge, which is rare while the pet holds the mob: the fight lab casts it almost never (none at 60). **Lacerate** (from level 30) only while the mob has more than half its health and you have 80% of your mana or more.
+- From level 34 the points go to **Lethal Attacks** and then Beast Mastery: **Deadly Aspects** for your swings (39-43), then the pet: **Focused Fire**, **Endurance Training**, **Unleashed Fury** (49-51), **Ferocity** (54-58) and **Bestial Discipline** (59-60). The cat's swings and Claw are a large part of the damage at 60: send it first and let it hold the mob.
+- The tuned rules never cast **Hunter's Mark**, and the build has no **Expose Prey**. **Aspect of the Monkey** until level 30, then **Aspect of the Beast**. Between fights the lab drinks below 35% of your mana and eats below 65% of your health.
 
 **Caveats**
 
-- This build takes none of **Strider Kick**, **Counterattack** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free, and white swings and the pet do most of the damage.
-- The trap only from half your mana up comes from the fight lab's tuning for melee Survival (the project's melee rule: more than half the damage from white swings and strikes); the rotation is shared, and this build plays it too.
-- **Entrapment** and **Survivalist** measured nothing at 60 in the fight lab: they fill the tree's first row.
-- **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
-- Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
+- This build takes no **Strider Kick**, nor **Counterattack**, nor **Deterrence**, nor **Expose Prey**: the list above leaves their lines out. Between traps your global cooldown is mostly free, and white swings and the pet do most of the damage.
+- The list is shared with Survival: the tuned rules hold **Raptor Strike** (this build lacks **Strider Kick**) for the last 20% of the mob's health. The project counts a melee hunter's damage as swings, strikes, bleeds and the pet (at least half at 60; this build reaches 59%).
+- **Savage Strikes** (15-16), **Deflection** (17-18) and **Survivalist** (19) measured almost nothing at 60 in the fight lab: they fill the tree's first rows. **Improved Aspect of the Monkey** (52-53) measured nothing.
+- **Improved Tracking** (levels 10-14) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
+- Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Beast** rank 4 gives +110 melee attack power at 60 (rank 3 +90); the other ranks of the spells you press only add damage. Cast the highest rank you know; the fight lab does.
 
 **When to change it**
 
 - Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
-- Low on health with no **Deterrence**: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you.
-
-*This guide was written for the rotation of 2026-10-26; the list above was re-tuned since, so follow the list where the two differ.*
+- Low on health: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you.
 
 ## Talents while leveling
 
@@ -99,5 +93,5 @@ One point per level from 10, in this order:
 - [Melee Survival leveling](../research/leveling/builds/leveling-melee.md) (12/10/29, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/512022-005005-54020003105022014-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

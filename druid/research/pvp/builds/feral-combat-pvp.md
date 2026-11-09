@@ -52,11 +52,10 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 ## Core talents (priority order)
 
 1. **Natural Shapeshifter** — The scorer's value in this build: +11.8% of its score (model feral-cat-dps).
-2. **Berserk** — The scorer's value in this build: +9.9% of its score (model feral-cat-dps).
-3. **Feral Swiftness** — The scorer's value in this build: +9.3% of its score (model feral-cat-dps).
-4. **Thick Hide** — The scorer's value in this build: +8.9% of its score (model feral-cat-dps).
-5. **Feral Charge** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
-6. **Brutal Impact** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
+2. **Feral Swiftness** — The scorer's value in this build: +9.3% of its score (model feral-cat-dps).
+3. **Thick Hide** — The scorer's value in this build: +8.9% of its score (model feral-cat-dps).
+4. **Feral Charge** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
+5. **Brutal Impact** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
 
 ## Notes
 
@@ -65,6 +64,7 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Blood Frenzy 2, Ferocity 2 in; to be re-optimized.
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Berserk 1 gone; Gift of the Earthmother 1 gone; refill +1 Naturalist, +1 Rend and Tear (refill: the feral-cat-dps model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Berserk; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -86,12 +86,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 1. **Setup** — Removing it costs 4.9 points of score in this model.
 2. **Blade Flurry** — Removing it costs 4.0 points of score in this model.
-3. **Improved Sinister Strike** — Removing it costs 3.1 points of score in this model.
-4. **Relentless Strikes** — Removing it costs 2.7 points of score in this model.
-5. **Deflection** — Removing it costs 2.5 points of score in this model.
-6. **Precision** — Removing it costs 2.3 points of score in this model.
-7. **Flawless Execution** — Removing it costs 2.1 points of score in this model.
-8. **Improved Eviscerate** — Removing it costs 2.0 points of score in this model.
+3. **Relentless Strikes** — Removing it costs 2.7 points of score in this model.
+4. **Deflection** — Removing it costs 2.5 points of score in this model.
+5. **Precision** — Removing it costs 2.3 points of score in this model.
+6. **Flawless Execution** — Removing it costs 2.1 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -118,6 +116,7 @@ What this build casts per kill ([report](../fightlab/combat-swords-raid-aoe.md),
 - Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 12/31/8 -> 21/27/3; Murder 2 gone; Improved Sinister Strike -> Efficient Strikes (renamed); Improved Eviscerate -> Coup de Grace (renamed); Dual Wield Specialization 4 -> 2 (rank cap); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Vigor (tier gating for Relentless Strikes); +1 Vigor (tier gating for Relentless Strikes); +1 Lethality (tier gating for Relentless Strikes); +1 Ruthlessness (tier gating for Relentless Strikes); +1 Cold Blood (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Improved Poisons (tier gating for Relentless Strikes); +1 Hack and Slash (tier gating for Adrenaline Rush); +1 Lightning Reflexes (tier gating for Adrenaline Rush); -1 Opportunity (over 51); -1 Opportunity (over 51); -1 Master of Deception (over 51); -1 Master of Deception (over 51); -1 Master of Deception (over 51); -1 Adrenaline Rush (over 51); -1 Efficient Strikes (over 51); -1 Dual Wield Specialization (over 51); -1 Dual Wield Specialization (over 51); order dropped (order_repair.py) (refill: the combat-swords-raid model, leveling-aoe).
 - 2026-11-03 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Improved Sinister Strike, Improved Eviscerate; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

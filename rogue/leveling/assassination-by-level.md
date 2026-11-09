@@ -51,7 +51,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+F | Free | — | — | — | — | — | — | — | — | — |
 | Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — | — |
 | Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — | — |
-| Shift+1 | Stealth, before the opener on 1 | **Stealth** | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth |
+| Shift+1 | Stealth, before the opener on 1 | — | — | — | — | — | **Stealth** | Stealth | Stealth | Stealth |
 | Shift+2 | A second mob mid-fight | — | — | — | — | — | — | — | **Blind** from 34 | Blind |
 | Shift+3 | Free | — | — | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — | — | — |
@@ -68,7 +68,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Eviscerate** (1), **Sinister Strike** (1), Stealth (1), Backstab (4), Pick Pocket (4).
 
-**Keys to set:** Q = Sinister Strike; R = Eviscerate; Shift+1 = Stealth.
+**Keys to set:** Q = Sinister Strike; R = Eviscerate.
 
 **Your keys in this stage:** Q Sinister Strike, R Eviscerate.
 
@@ -79,7 +79,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Carry a dagger in each hand from the start: the build plays daggers, and **Mutilate** (40) needs them.
 - **Backstab** (4) needs the mob's back, and a mob you fight alone turns to face you after your first hit: never Backstab.
-- **Stealth** (1) is not worth the walk yet. Mobs die in a few hits.
+- **Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**.
 
 *Fight lab, seconds per kill: 10 at level 1. Presses per kill at level 1: Sinister Strike 1.6, Melee 1.3, Melee (off-hand) 1.0, Eviscerate 0.2.*
 
@@ -169,11 +169,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Expose Armor (14), **Garrote** (14), Feint (16), Ambush (18), Poised (18), Crippling Poison (20), Instant Poison (20), Rupture (20), Distract (22), Vanish (22).
 
-**New ranks to buy:** Eviscerate at 16; Garrote at 22; Sinister Strike at 14, 22; Stealth at 20.
+**New ranks to buy:** Eviscerate at 16; Garrote at 22; Gouge at 18; Sinister Strike at 14, 22; Stealth at 20.
 
 **Talents:** 14 Malice, 15-17 Ruthlessness, 18-19 Remorseless Attacks, 20-21 Lethality, 22-23 Vigor.
 
-**Keys to set:** 1 = Garrote; 3 = Vanish (at 22).
+**Keys to set:** 1 = Garrote; Shift+1 = Stealth; 3 = Vanish (at 22).
 
 **Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, Shift+E Kick, Shift+1 Stealth.
 
@@ -228,7 +228,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Cheap Shot (26), Deadly Poison (30), Disarm Trap (30), Kidney Shot (30), Wound Poison (32), Blind (34), Blinding Powder (34).
 
-**New ranks to buy:** Eviscerate at 32; Garrote at 30, 38; Kick at 26; Sinister Strike at 30, 38.
+**New ranks to buy:** Eviscerate at 32; Garrote at 30, 38; Gouge at 32; Kick at 26; Sap at 28; Sinister Strike at 30, 38; Sprint at 34.
 
 **Talents:** 25 Cold Blood, 26 Vile Poisons, 27-29 Improved Poisons, 30 Venom, 31 Relentless Strikes, 32 Improved Poisons, 33-34 Relentless Strikes, 35-37 Seal Fate, 38-39 Relentless Strikes.
 
@@ -254,7 +254,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.
 - **Venom** (30): a **Shank** that lands makes your poisons stronger for 6 seconds. Nothing new to press.
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
-- **Relentless Strikes** (31-39) gives a finisher a chance to refund 25 energy. **Seal Fate** (35-37): a builder that crits adds a second combo point.
+- **Relentless Strikes** (31, 33-34, 38-39) gives a finisher a chance to refund 25 energy. **Seal Fate** (35-37): a builder that crits adds a second combo point.
 - **Blind** (34) handles a second mob that joins mid-fight.
 
 *Fight lab, seconds per kill: 22 at level 25, 22 at level 30, 26 at level 39. Presses per kill at level 25: Melee 7.4, Melee (off-hand) 6.9, Sinister Strike 3.6, Shank 1.5, Garrote 1.0, Eviscerate 0.5, Kick 0.3.*
@@ -263,7 +263,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Safe Fall (40).
 
-**New ranks to buy:** Eviscerate at 40, 48, 56, 60; Garrote at 46, 54; Kick at 42, 58; Mutilate at 50, 60; Shank at 44; Stealth at 40, 60.
+**New ranks to buy:** Eviscerate at 40, 48, 56, 60; Garrote at 46, 54; Gouge at 46, 60; Kick at 42, 58; Mutilate at 50, 60; Sap at 48; Shank at 44; Sprint at 58; Stealth at 40, 60; Vanish at 42.
 
 **Talents:** 40 Mutilate, 41-42 Lightning Reflexes, 43-45 Coup de Grace, 46-48 Puncturing Wounds, 49-51 Precision, 52-53 Deflection, 54-55 Composure, 56 Flawless Execution, 57-58 Aggression, 59-60 Weapon Expertise.
 
@@ -301,4 +301,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Combat with swords is the rogue's fastest leveling spec in the fight lab and builds with **Sinister Strike** all the way; the Subtlety and Combat-Subtlety builds open with **Premeditation** and **Ambush** and strike with **Ghostly Strike**. Each has a page in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

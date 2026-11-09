@@ -18,8 +18,8 @@ What a Protection paladin presses from level 1 to 60, stage by stage, while leve
 | 25-29 | **Swift Judgement** (talent): a free extra Judgement once a minute, off the global cooldown. |
 | 30-43 | **Holy Shield** (talent): more block for 10 seconds and Holy damage on every block. The fight is now four keys. |
 | 44-48 | **Hammer of Wrath**, a finisher below 20% health. The tuned rules leave it out: nothing new to press. |
-| 49-56 | **Improved Righteous Fury** (talent) cuts your damage taken while **Righteous Fury** is on: cast it and keep it up. |
-| 57-60 | **Shieldsworn** (talent): **Holy Strike** every 6 seconds instead of 10. **Iron Creed** (58-60) makes each one cut your damage taken. |
+| 49-55 | **Improved Righteous Fury** (talent) cuts your damage taken while **Righteous Fury** is on: cast it and keep it up. |
+| 56-60 | **Shieldsworn** (talent): **Holy Strike** every 6 seconds instead of 10. **Iron Creed** (58-60) makes each one cut your damage taken. |
 
 ## Keybinds by level
 
@@ -27,7 +27,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-24 | 25-29 | 30-43 | 44-48 | 49-56 | 57-60 |
+| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-24 | 25-29 | 30-43 | 44-48 | 49-55 | 56-60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q | Your strike, on cooldown; the macro also starts your swings | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
 | E | Control: the stun (the tuned Protection list never presses it; keep it for a bad pull) | — | — | **Hammer of Justice** from 8 | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice |
@@ -39,12 +39,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | 2 | Extra damage on Undead and Demons | — | — | — | — | **Exorcism** | Exorcism | Exorcism | Exorcism | Exorcism | Exorcism |
 | 3 | The shield's strike: keep it up | — | — | — | — | — | — | **Holy Shield** | Holy Shield | Holy Shield | Holy Shield |
 | 4 | Cure a poison or a disease | — | — | **Purify** from 8 | Purify | Purify | Purify | Purify; **Cleanse** from 42 | Cleanse | Cleanse | Cleanse |
-| C | A free extra Judgement, once a minute | — | — | — | — | — | **Swift Judgement** | Swift Judgement | Swift Judgement | Swift Judgement | Swift Judgement |
+| C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 | Middle mouse | The first save: an absorb as large as your health, then heal behind it | — | — | — | — | **Templar's Bulwark** | Templar's Bulwark | Templar's Bulwark | Templar's Bulwark | Templar's Bulwark | Templar's Bulwark |
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
 
-| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-24 | 25-29 | 30-43 | 44-48 | 49-56 | 57-60 |
+| Key | Its job | 1-3 | 4-5 | 6-9 | 10-19 | 20-24 | 25-29 | 30-43 | 44-48 | 49-55 | 56-60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the ground under you | — | — | — | — | **Consecration** | Consecration | Consecration | Consecration | Consecration | Consecration |
 | Shift+E | Free (the Retribution build's Repentance key; this build does not take it) | — | — | — | — | — | — | — | — | — | — |
@@ -54,12 +54,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | **Turn Undead** from 24 | Turn Undead | Turn Undead | Turn Undead | Turn Undead | Turn Undead |
 | Shift+1 | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | — | — | **Holy Wrath** from 50 | Holy Wrath |
-| Shift+3 | Free | — | — | — | — | — | — | — | — | — | — |
+| Shift+3 | A free extra Judgement, once a minute | — | — | — | — | — | **Swift Judgement** | Swift Judgement | Swift Judgement | Swift Judgement | Swift Judgement |
 | Shift+4 | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+C | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+X | Free | — | — | — | — | — | — | — | — | — | — |
 
-- The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Four slots differ: the middle mouse button holds **Templar's Bulwark** from 20, C **Swift Judgement** from 25 and 3 **Holy Shield** from 30 (all three free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.
+- The same keys and macros as the [Retribution guide](retribution-by-level.md) and the [keybinds page](keybinds.md) for every spell the two share. Four slots differ: the middle mouse button holds **Templar's Bulwark** from 20, Shift+3 **Swift Judgement** from 25 and 3 **Holy Shield** from 30 (all three free in the Retribution layout), and Shift+E stays free, because this build takes no **Repentance**.
 - The R macro is the same castsequence with **Seal of Fury** as its seal from 10 (**Seal of Righteousness** at 1-9). Levels 1-3 fight with R alone; from 6, Q is the **Holy Strike** macro, which also starts your swings.
 - The save is the middle mouse button, then Mouse 5: **Templar's Bulwark**, then **Holy Light** behind its absorb. F is the save for when the Bulwark is on cooldown.
 - **Swift Judgement** is off the global cooldown, like **Judgement**. Instead of its own key it can be the first line of the R macro (`/cast Swift Judgement` above the castsequence line): one press then fires both while it is ready. Not tested in Forever's client.
@@ -70,7 +70,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Devotion Aura (1), Holy Light (1), **Seal of Righteousness** (1).
 
-**Keys to set:** R = Seal of Righteousness; Mouse 5 = Holy Light.
+**Keys to set:** R = Seal of Righteousness; Mouse 5 = Holy Light; C = Healing potion macro.
 
 **Your keys in this stage:** R Seal of Righteousness.
 
@@ -105,6 +105,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Divine Protection (6), **Holy Strike** (6), Seal of the Crusader (6), Hammer of Justice (8), Purify (8).
 
+**New ranks to buy:** Holy Light at 6.
+
 **Keys to set:** Q = Holy Strike; F = Divine Protection; E = Hammer of Justice (at 8); 4 = Purify (at 8).
 
 **Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light.
@@ -126,7 +128,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Protection (10), Lay on Hands (10), Righteous Fury (10), **Seal of Fury** (10), Redemption (12), Blessing of Wisdom (14), Retribution Aura (16), Blessing of Freedom (18).
 
-**New ranks to buy:** Holy Strike at 12; Seal of Fury at 18.
+**New ranks to buy:** Divine Protection at 18; Holy Light at 14; Holy Strike at 12; Seal of Fury at 18.
 
 **Talents:** 10-14 Redoubt, 15-17 Precision, 18 Sacred Duty, 19 Guardian's Favor.
 
@@ -144,6 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Change the seal in your R macro to **Seal of Fury** at 10. With a shield, every swing it adds also gives you an absorb of half its Holy damage. Its judgement taunts the mob, which a solo fight does not need.
 - **Lay on Hands** (10) is a full heal for emergencies. **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
+- Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
 *Fight lab, seconds per kill: 19 at level 10, 23 at level 19. Presses per kill at level 10: Melee 4.4, Judgement 1.5, Holy Strike 1.3, Seal of Fury 1.0, Shield block 0.3.*
 
@@ -151,7 +154,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Blessing of Kings (20), Consecration (20), Exorcism (20), Flash of Light (20), Voice of Truth (20), Concentration Aura (22), Seal of Justice (22), Turn Undead (24).
 
-**New ranks to buy:** Holy Strike at 20.
+**New ranks to buy:** Blessing of Protection at 24; Hammer of Justice at 24; Holy Light at 22; Holy Strike at 20.
 
 **Talents:** 20 Templar's Bulwark, 21-22 Shield Specialization, 23-24 Toughness.
 
@@ -177,13 +180,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Shadow Resistance Aura (28).
 
-**New ranks to buy:** Holy Strike at 28; Seal of Fury at 26.
+**New ranks to buy:** Exorcism at 28; Flash of Light at 26; Holy Strike at 28; Seal of Fury at 26.
 
 **Talents:** 25 Swift Judgement, 26-28 Anticipation, 29 Toughness.
 
-**Keys to set:** C = Swift Judgement.
+**Keys to set:** Shift+3 = Swift Judgement.
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Flash of Light, C Swift Judgement, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Flash of Light, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands, Shift+3 Swift Judgement.
 
 **What to press**, top to bottom:
 
@@ -203,13 +206,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Divine Intervention (30), Seal of Light (30), Frost Resistance Aura (32), Divine Shield (34), Fire Resistance Aura (36), Seal of Wisdom (38), Cleanse (42).
 
-**New ranks to buy:** Holy Shield at 40; Holy Strike at 36; Seal of Fury at 34, 42.
+**New ranks to buy:** Blessing of Protection at 38; Consecration at 30, 40; Exorcism at 36; Flash of Light at 34, 42; Hammer of Justice at 40; Holy Light at 30, 38; Holy Shield at 40; Holy Strike at 36; Lay on Hands at 30; Seal of Fury at 34, 42; Turn Undead at 38.
 
 **Talents:** 30 Holy Shield, 31-32 Benediction, 33-35 Deflection, 36-38 Sanctified Judgement, 39-41 Conviction, 42-43 Improved Judgement.
 
 **Keys to set:** 3 = Holy Shield; F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, C Swift Judgement, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Protection, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands, Shift+3 Swift Judgement.
 
 **What to press**, top to bottom:
 
@@ -221,9 +224,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Protection** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%.
 
-- From 31 the points go into Retribution: **Deflection** (31-35, parry), then **Sanctified Judgement** (36-38), which returns mana each time you judge. Nothing new to press.
+- From 31 the points go into Retribution: **Benediction** (31-32), **Deflection** (33-35, parry), then **Sanctified Judgement** (36-38), which returns mana each time you judge. Nothing new to press.
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
-- **Seal of Command** (41) comes with the build's Retribution points. It is not your leveling seal: with a shield the Protection list stays on **Seal of Fury**.
+- This build takes no **Seal of Command**: with a shield the Protection list stays on **Seal of Fury**.
 
 *Fight lab, seconds per kill: 29 at level 30, 33 at level 40, 31 at level 43. Presses per kill at level 30: Melee 6.7, Shield block 2.5, Judgement 2.4, Holy Shield 1.9, Holy Strike 1.8, Seal of Fury 1.0, Swift Judgement 0.4.*
 
@@ -231,13 +234,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Hammer of Wrath (44), Blessing of Sacrifice (46).
 
-**New ranks to buy:** Holy Strike at 44.
+**New ranks to buy:** Exorcism at 44; Holy Light at 46; Holy Strike at 44.
 
 **Talents:** 44-45 Deflection, 46 Sacred Arbiter, 47-48 Toughness.
 
 **Keys to set:** Shift+R = Hammer of Wrath.
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, C Swift Judgement, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands, Shift+3 Swift Judgement.
 
 **What to press**, top to bottom:
 
@@ -254,17 +257,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 *Fight lab, seconds per kill: 31 at level 44. Presses per kill at level 44: Melee 8.3, Judgement 3.5, Shield block 3.1, Holy Strike 2.3, Holy Shield 2.0, Seal of Fury 1.0, Swift Judgement 0.5.*
 
-## Levels 49-56: Righteous Fury pays
+## Levels 49-55: Righteous Fury pays
 
 **The trainer teaches:** Holy Wrath (50), Greater Blessing of Might (52), Greater Blessing of Wisdom (54).
 
-**New ranks to buy:** Holy Shield at 50; Holy Strike at 52; Seal of Fury at 50.
+**New ranks to buy:** Consecration at 50; Divine Shield at 50; Exorcism at 52; Flash of Light at 50; Hammer of Justice at 54; Hammer of Wrath at 52; Holy Light at 54; Holy Shield at 50; Holy Strike at 52; Lay on Hands at 50; Seal of Fury at 50; Turn Undead at 52.
 
-**Talents:** 49-51 Improved Righteous Fury, 52-55 Reckoning, 56 Shieldsworn.
+**Talents:** 49-51 Improved Righteous Fury, 52-55 Reckoning.
 
 **Keys to set:** Shift+2 = Holy Wrath (at 50).
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, C Swift Judgement, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands, Shift+3 Swift Judgement.
 
 **What to press**, top to bottom:
 
@@ -277,20 +280,20 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%.
 
 - **Righteous Fury** lasts 30 minutes: click it between fights, like the blessing. The fight lab keeps it up all the time.
-- **Reckoning** (52-56): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
+- **Reckoning** (52-55 and 57): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 34 at level 49, 32 at level 50, 34 at level 56. Presses per kill at level 49: Melee 9.3, Judgement 3.8, Shield block 3.7, Holy Strike 2.6, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 34 at level 49, 32 at level 50. Presses per kill at level 49: Melee 9.3, Judgement 3.8, Shield block 3.7, Holy Strike 2.6, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
 
-## Levels 57-60: Shieldsworn and Iron Creed
+## Levels 56-60: Shieldsworn and Iron Creed
 
 **The trainer teaches:** Greater Blessing of Kings (60).
 
-**New ranks to buy:** Holy Shield at 60; Holy Strike at 60; Seal of Fury at 58.
+**New ranks to buy:** Consecration at 60; Exorcism at 60; Flash of Light at 58; Hammer of Wrath at 60; Holy Light at 60; Holy Shield at 60; Holy Strike at 60; Holy Wrath at 60; Seal of Fury at 58.
 
-**Talents:** 57 Reckoning, 58-60 Iron Creed.
+**Talents:** 56 Shieldsworn, 57 Reckoning, 58-60 Iron Creed.
 
-**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, C Swift Judgement, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands.
+**Your keys in this stage:** Q Holy Strike, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Holy Shield, Middle mouse Templar's Bulwark, Shift+Mouse 5 Lay on Hands, Shift+3 Swift Judgement.
 
 **What to press**, top to bottom:
 
@@ -303,9 +306,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%.
 
 - **Iron Creed** (58-60): each **Holy Strike** cuts your damage taken for 6 seconds, only while **Righteous Fury** is on.
-- Q comes up more often from 57: keep pressing it whenever it is ready.
+- Q comes up more often from 56: keep pressing it whenever it is ready.
 
-*Fight lab, seconds per kill: 34 at level 57, 33 at level 60. Presses per kill at level 57: Melee 9.2, Holy Strike 3.6, Shield block 3.6, Judgement 3.3, Holy Shield 2.1, Reckoning 1.6, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 34 at level 56, 33 at level 60. Presses per kill at level 56: Melee 9.0, Holy Strike 3.5, Shield block 3.4, Judgement 3.2, Holy Shield 2.1, Reckoning 1.3, Seal of Fury 1.0, Swift Judgement 0.5.*
 
 ## Between fights
 
@@ -321,4 +324,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Dungeons on the way: you can tank them. **Seal of Fury**'s judgement taunts, and **Righteous Fury** adds threat.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -1243,60 +1243,6 @@
       "replaces": "arms-battle-raid"
     },
     {
-      "id": "fury-open-raid",
-      "name": "Fury — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Fury",
-      "generated": "2026-10-31",
-      "derived": "raid",
-      "summary": "The Fury raid build the open talent search found on 2026-10-31: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
-      "allocation": {
-        "Arms": [
-          ["Deflection", 2],
-          ["Improved Heroic Strike", 3],
-          ["Improved Rend", 3],
-          ["Improved Tactical Mastery", 3],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3],
-          ["Impale", 2],
-          ["Spearing Strike", 1]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Unbridled Wrath", 5],
-          ["Blood Craze", 3],
-          ["Furious Precision", 3],
-          ["Dual Wield Specialization", 5],
-          ["Improved Execute", 2],
-          ["Death Wish", 1],
-          ["Improved Berserker Rage", 1],
-          ["Flurry", 3],
-          ["Improved Whirlwind", 2],
-          ["Bloodthirst", 1]
-        ],
-        "Protection": [
-          ["Improved Bloodrage", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Flurry", "why": "130 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Bloodthirst", "why": "89 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Dual Wield Specialization", "why": "72 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Deep Wounds", "why": "57 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Cruelty", "why": "54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Death Wish", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Impale", "why": "27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Furious Precision", "why": "26 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+5.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (fury-dw-raid, full raid): 18/31/2 (Fury) at 924.2 DPS; opt-fury-dw-raid-raid-dps 913.9, fury-dw-raid 873.9 in the same fights; 5,742 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 816.4, arms-2h-raid 798.3.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.5%, arms-battle-raid -18.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Blood Craze.", "Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements.", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/31/2 -> 18/31/2; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Impale); +1 Improved Whirlwind (tier gating for Bloodthirst); +1 Improved Whirlwind (tier gating for Bloodthirst); refill +1 Spearing Strike (refill: the fury-dw-raid model, raid-dps).", "2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 18/31/2 -> 18/31/2; Raging Blows 1 gone; +1 Improved Berserker Rage (tier gating for Flurry) (refill: the fury-dw-raid model, raid-dps)."],
-      "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/31305013002-05053035102010501-2-7"],
-      "replaces": "fury-dw-raid"
-    },
-    {
       "id": "arms-open-leveling",
       "name": "Arms — Leveling (open talent search)",
       "role": "dps",
@@ -1594,6 +1540,113 @@
       "notes": ["2026-11-07 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 28 s; own tree first 28 s; own tree last 28 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
+    },
+    {
+      "id": "fury-open-raid",
+      "name": "Fury — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Fury",
+      "generated": "2026-11-08",
+      "derived": "raid",
+      "summary": "The Fury raid build the open talent search found on 2026-11-08: every legal 51-point build with no tree rule, searched in the community simulator's arms-2h-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.0% over opt-arms-2h-raid-raid-dps, the best of our builds in that rotation.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Deflection", 2],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 3],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Furious Precision", 3],
+          ["Blood Craze", 3],
+          ["Enrage", 1],
+          ["Reckless Swings", 1],
+          ["Improved Execute", 2],
+          ["Improved Berserker Rage", 2],
+          ["Death Wish", 1],
+          ["Gore Drinker", 2],
+          ["Improved Whirlwind", 2],
+          ["Flurry", 3],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Flurry", "why": "136 DPS lost without it (15% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bloodthirst", "why": "90 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deep Wounds", "why": "70 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "51 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Cruelty", "why": "46 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Death Wish", "why": "39 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Whirlwind", "why": "33 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Impale", "why": "28 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+2.5% over the best hand draft of the spec, arms-2h-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (arms-2h-raid, full raid): 20/31/0 (Fury) at 910.3 DPS; opt-arms-2h-raid-raid-dps 901.2, arms-2h-raid 887.8 in the same fights; 2,133 builds simulated, 1 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): opt-fury-dw-raid-raid-dps 856.5, fury-dw-raid 817.2.", "The arms-2h-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fury-dw-raid -2.2%, arms-battle-raid -16.9%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Furious Precision, Blood Craze, Enrage, Improved Berserker Rage, Gore Drinker.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-08 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Enrage -> Gore Drinker (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/32303013032-050530320122110231--12"],
+      "replaces": "arms-2h-raid"
+    },
+    {
+      "id": "fury-dual-wield-open-raid",
+      "name": "Fury — Dual-wield (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Fury",
+      "generated": "2026-11-08",
+      "derived": "raid",
+      "summary": "The Fury raid build the open talent search found on 2026-11-08: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +3.2% over fury-open-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Deflection", 2],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 3],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Furious Precision", 3],
+          ["Dual Wield Specialization", 5],
+          ["Reckless Swings", 1],
+          ["Improved Execute", 2],
+          ["Improved Berserker Rage", 2],
+          ["Death Wish", 1],
+          ["Improved Whirlwind", 2],
+          ["Flurry", 3],
+          ["Bloodthirst", 1],
+          ["Blood Craze", 2]
+        ],
+        "Protection": [
+          ["Improved Bloodrage", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Flurry", "why": "130 DPS lost without it (15% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bloodthirst", "why": "76 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Dual Wield Specialization", "why": "64 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Cruelty", "why": "52 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deep Wounds", "why": "44 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Death Wish", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Whirlwind", "why": "35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Impale", "why": "29 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["The best dual-wield build: +3.2% over fury-open-raid, the best of our builds in fury-dw-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (fury-dw-raid, full raid): 17/32/2 (Fury) at 892.8 DPS; fury-open-raid 865.1, opt-fury-dw-raid-raid-dps 858.3, fury-dw-raid 819.6 in the same fights; 2,452 builds simulated, 1 independent runs reached the top.", "The fury-dw-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): arms-2h-raid -3.9%, arms-battle-raid -23.1%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Deflection, Improved Rend, Improved Tactical Mastery, Booming Voice, Lingering Rage.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-08 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Blood Craze (survival); Lingering Rage -> Blood Craze (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Fury build: check it against the community's Fury builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warrior/60/32303013002-151530005122100231-2-12"]
     }
   ]
 }

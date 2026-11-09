@@ -5476,25 +5476,9 @@
   "spec": "any",
   "entry": "combat-swords-raid",
   "setting": "raid",
-  "date": "2026-10-24",
-  "base_dps": 641.79,
+  "date": "2026-11-09",
+  "base_dps": 781.84,
   "abilities": [
-   {
-    "ability": "Blade Flurry",
-    "talent": "Blade Flurry",
-    "spell": 13877,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
-    "best": {
-     "line": "plain",
-     "spot": "before the filler",
-     "gain_seed1": -0.0016,
-     "split": "19/32/0",
-     "vs_spec_build": -0.0016
-    },
-    "kept": false
-   },
    {
     "ability": "Riposte",
     "talent": "Riposte",
@@ -5506,7 +5490,7 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "19/32/0",
+     "split": "29/22/0",
      "vs_spec_build": 0.0
     },
     "kept": false

@@ -275,7 +275,7 @@
         "mhImbueId": 25122,
         "extraMhImbueId": 13603
       },
-      "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps", "shadow-bolt-hybrid-fire-open-raid"]
+      "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps", "shadow-bolt-hybrid-open-raid"]
     },
     "sb-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
@@ -309,7 +309,7 @@
         "mhImbueId": 25122,
         "extraMhImbueId": 13603
       },
-      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid", "shadow-bolt-hybrid-open-raid"]
+      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid"]
     },
     "demonology-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
@@ -378,7 +378,7 @@
         "mhImbueId": 25122,
         "extraMhImbueId": 13603
       },
-      "builds": ["destruction-incinerate-raid"],
+      "builds": ["destruction-incinerate-raid", "destruction-incinerate-open-raid"],
       "rotation_only": true,
       "preset_names": ["Destro"],
       "rotation_note": "Incinerate warlock (2026-09-28, new-builds survey): Incinerate, the Forever Destruction capstone cast by none of the simulator's warlock rotations, as the filler (+25% on an Immolated target) with Immolate kept up and Conflagrate while it burns. Kept as that untuned rotation: the rotation search on destruction-incinerate-raid (2026-09-28) inserted Shadow Bolt ahead of Incinerate in its first round, on the training dummy and in a raid, so a tuned rotation here would no longer be an Incinerate rotation."
@@ -578,6 +578,7 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "combat-daggers-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "profile": "raid-dps",
@@ -613,6 +614,7 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "assassination-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "race": "RaceDwarf",
@@ -649,6 +651,7 @@
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there)."
     },
     "subtlety-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "race": "RaceDwarf",
@@ -716,7 +719,7 @@
         "mhImbueId": 22756,
         "potId": 13442
       },
-      "builds": ["arms-2h-raid", "opt-arms-2h-raid-raid-dps"]
+      "builds": ["arms-2h-raid", "opt-arms-2h-raid-raid-dps", "fury-open-raid"]
     },
     "fury-dw-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
@@ -749,7 +752,7 @@
         "ohImbueId": 16138,
         "potId": 13442
       },
-      "builds": ["fury-dw-raid", "opt-fury-dw-raid-raid-dps", "fury-open-raid"]
+      "builds": ["fury-dw-raid", "opt-fury-dw-raid-raid-dps", "fury-dual-wield-open-raid"]
     },
     "prot-tank": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
@@ -962,7 +965,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps", "elemental-raid"],
+      "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps", "elemental-raid", "elemental-ml-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -1000,7 +1003,7 @@
         "mhImbueId": 22756,
         "ohImbueId": 16138
       },
-      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-raid", "elemental-enhancement-ml-raid", "enhancement-open-raid"],
+      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-raid", "elemental-enhancement-ml-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

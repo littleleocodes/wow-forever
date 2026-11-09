@@ -71,9 +71,6 @@ Illumination (now requiring Reverence, the new regen-while-casting talent), Divi
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Deflection | Toughness 5 + Guardian's Favor 2 + Sacred Duty (Protection dip instead of Retribution) | Tier-1 Retribution filler; a Protection dip (Guardian's Favor, Sacred Duty's -30s Divine Shield) is the survivability alternative. |
-| 3 | Holy Conduit 2 + Conviction 1 | Vindication | Tier-2/3 Retribution gating fillers. |
-| 2 | Crusade | Eye for an Eye | Tier-4 Retribution filler. |
-| 3 | Unyielding Faith 2 + Voice of Truth 1 | Purifying Power, Improved Seals | Holy gating fillers; Voice of Truth (silence immunity) is a real cooldown. |
 
 ## Rotation
 

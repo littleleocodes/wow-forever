@@ -78,12 +78,6 @@ Cat Form from 20: Ferocity and Thick Hide early, Sharpened Claws, Predatory Stri
 4. **Leader of the Pack** — Crit aura at 41.
 5. **Furor** — Powershifting from 46.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 5 | Furor at 42-46 | Furor at 10-14 (Bear Form rage) and Ferocity later | Many take Furor first for instant bear rage at 10; this order maximizes cat damage. |
-
 ## Notes
 
 - Claw/Rake -> Rip; Bear Form for elites and multi-pulls; Moonfire pulls until 20.

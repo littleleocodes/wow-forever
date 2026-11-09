@@ -1,6 +1,6 @@
 {
  "class": "priest",
- "date": "2026-11-07",
+ "date": "2026-11-09",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -157,10 +157,10 @@
    }
   },
   "Discipline": {
-   "build": "discipline-open-leveling",
+   "build": "discipline-leveling",
    "rotation": "discipline-leveling",
    "provisional_order": false,
-   "fingerprint": "09b22b57ce4f",
+   "fingerprint": "becc8ecdb4bd",
    "levels": {
     "1": {
      "seconds": 12.8,
@@ -190,95 +190,100 @@
      }
     },
     "10": {
-     "seconds": 23.6,
+     "seconds": 24.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Shadow Word: Pain": 1.03,
-      "Mind Blast": 1.67,
-      "Smite": 0.57,
-      "Wand": 4.62
+      "Mind Blast": 1.75,
+      "Smite": 0.64,
+      "Wand": 4.63
      }
     },
     "19": {
-     "seconds": 37.0,
+     "seconds": 38.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Shadow Word: Pain": 1.03,
-      "Mind Blast": 1.96,
-      "Smite": 1.73,
-      "Wand": 4.12,
-      "Power Word: Shield": 0.46
+      "Mind Blast": 2.02,
+      "Smite": 1.78,
+      "Power Word: Shield": 0.51,
+      "Wand": 4.81
      }
     },
     "20": {
-     "seconds": 39.4,
+     "seconds": 40.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Shadow Word: Pain": 1.03,
-      "Devouring Plague": 0.98,
-      "Mind Blast": 1.87,
-      "Smite": 1.47,
-      "Wand": 3.42,
-      "Power Word: Shield": 0.09
+      "Shadow Word: Pain": 1.04,
+      "Devouring Plague": 1.0,
+      "Mind Blast": 1.94,
+      "Smite": 1.54,
+      "Wand": 3.59,
+      "Power Word: Shield": 0.08
      }
     },
     "29": {
-     "seconds": 39.9,
+     "seconds": 41.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Shadow Word: Pain": 1.04,
+      "Shadow Word: Pain": 1.05,
       "Devouring Plague": 1.0,
-      "Mind Blast": 2.0,
-      "Smite": 1.59,
-      "Wand": 4.48
+      "Mind Blast": 2.04,
+      "Smite": 1.71,
+      "Wand": 4.86,
+      "Power Word: Shield": 0.07
      }
     },
     "30": {
-     "seconds": 40.7,
+     "seconds": 42.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Shadow Word: Pain": 1.04,
-      "Devouring Plague": 0.99,
-      "Penance": 1.0,
-      "Mind Blast": 1.68,
+      "Devouring Plague": 1.0,
+      "Penance": 1.02,
+      "Mind Blast": 1.76,
       "Smite": 1.15,
-      "Wand": 4.1
+      "Wand": 4.56,
+      "Power Word: Shield": 0.07
      }
     },
     "40": {
-     "seconds": 44.9,
+     "seconds": 50.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Shadow Word: Pain": 1.01,
-      "Devouring Plague": 1.0,
-      "Penance": 1.05,
-      "Mind Blast": 1.91,
-      "Smite": 1.49,
-      "Wand": 5.14
+      "Shadow Word: Pain": 1.08,
+      "Devouring Plague": 0.99,
+      "Penance": 1.03,
+      "Mind Blast": 2.02,
+      "Smite": 1.71,
+      "Wand": 6.14,
+      "Power Word: Shield": 0.11
      }
     },
     "50": {
-     "seconds": 41.9,
+     "seconds": 47.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Shadow Word: Pain": 1.0,
-      "Devouring Plague": 1.0,
-      "Penance": 1.0,
-      "Mind Blast": 1.96,
-      "Smite": 1.41,
-      "Wand": 4.75
+      "Shadow Word: Pain": 1.04,
+      "Devouring Plague": 0.98,
+      "Penance": 1.04,
+      "Mind Blast": 2.05,
+      "Smite": 1.46,
+      "Wand": 7.01,
+      "Power Word: Shield": 0.08
      }
     },
     "60": {
-     "seconds": 39.7,
+     "seconds": 46.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Shadow Word: Pain": 1.0,
-      "Devouring Plague": 1.0,
-      "Penance": 0.99,
-      "Mind Blast": 1.93,
-      "Smite": 1.25,
-      "Wand": 4.83
+      "Shadow Word: Pain": 1.04,
+      "Devouring Plague": 0.9,
+      "Penance": 1.05,
+      "Mind Blast": 1.96,
+      "Smite": 1.23,
+      "Wand": 8.08,
+      "Power Word: Shield": 0.09
      }
     }
    }
@@ -287,7 +292,7 @@
    "build": "holy-leveling",
    "rotation": "holy-leveling",
    "provisional_order": false,
-   "fingerprint": "0fedca08949f",
+   "fingerprint": "92e4697724b9",
    "levels": {
     "1": {
      "seconds": 12.8,
@@ -351,67 +356,67 @@
      }
     },
     "29": {
-     "seconds": 52.0,
+     "seconds": 53.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.58,
-      "Shadow Word: Pain": 1.07,
-      "Mind Blast": 1.38,
-      "Smite": 5.42,
-      "Wand": 0.89
+      "Holy Fire": 1.6,
+      "Shadow Word: Pain": 1.09,
+      "Mind Blast": 1.37,
+      "Smite": 5.47,
+      "Wand": 0.98
      }
     },
     "30": {
-     "seconds": 50.0,
+     "seconds": 51.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.2,
+      "Holy Fire": 1.19,
       "Shadow Word: Pain": 1.04,
-      "Penance": 1.31,
-      "Mind Blast": 0.95,
-      "Smite": 3.57,
-      "Wand": 2.07
+      "Penance": 1.32,
+      "Mind Blast": 1.04,
+      "Smite": 3.65,
+      "Wand": 2.1
      }
     },
     "40": {
-     "seconds": 62.0,
+     "seconds": 63.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.58,
-      "Shadow Word: Pain": 1.06,
-      "Penance": 1.7,
-      "Mind Blast": 1.33,
-      "Smite": 4.47,
-      "Wand": 1.85
+      "Holy Fire": 1.6,
+      "Shadow Word: Pain": 1.07,
+      "Penance": 1.74,
+      "Mind Blast": 1.35,
+      "Smite": 4.52,
+      "Wand": 2.04
      }
     },
     "50": {
-     "seconds": 58.3,
+     "seconds": 59.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.44,
+      "Holy Fire": 1.51,
       "Shadow Word: Pain": 1.05,
-      "Penance": 1.75,
-      "Mind Blast": 1.22,
-      "Smite": 4.56,
-      "Wand": 2.35
+      "Penance": 1.85,
+      "Mind Blast": 1.17,
+      "Smite": 4.4,
+      "Wand": 2.8
      }
     },
     "60": {
-     "seconds": 55.8,
+     "seconds": 56.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.44,
-      "Shadow Word: Pain": 1.05,
-      "Penance": 1.52,
-      "Mind Blast": 1.01,
-      "Smite": 4.28,
-      "Wand": 4.35
+      "Holy Fire": 1.47,
+      "Shadow Word: Pain": 1.04,
+      "Penance": 1.6,
+      "Mind Blast": 1.0,
+      "Smite": 4.03,
+      "Wand": 5.13
      }
     }
    }

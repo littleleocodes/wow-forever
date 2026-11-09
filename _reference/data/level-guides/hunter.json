@@ -132,13 +132,13 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below about a third of your mana, eat below two thirds of your health. Feed the pet when it sulks.",
+    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks.",
     "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
    "other": [
     "Pure Survival (5/16/30) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.",
-    "Beast Mastery, the pet-first ranged build, is the slowest of the four in the fight lab."
+    "Beast Mastery, the pet-first ranged build, is the slowest of the five in the fight lab."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; aspects, tracking, pet feeding and reviving, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [hunter keybinds page](keybinds.md).",
@@ -548,7 +548,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],
@@ -949,7 +949,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
      "notes": [
       "The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.",
-      "**Rapid Recuperation** (30): after **Serpent Sting**, half your mana regeneration continues while casting for 15 seconds. **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.",
+      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.",
       "**Explosive Trap** (34) is for packs."
      ],
      "unsimulated": [
@@ -981,7 +981,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 15% of your mana, eat below two thirds of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25.",
     "Visit the trainer every even level: **Serpent Sting**, **Arcane Shot** and **Aimed Shot** have many ranks."
    ],
@@ -1394,7 +1394,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks.",
+    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks.",
     "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
@@ -1793,7 +1793,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below two thirds of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 53. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],

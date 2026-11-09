@@ -54,7 +54,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+F | Free | — | — | — | — | — | — | — | — | — | — | — | — |
 | Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
 | Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+1 | Stealth, before the opener | **Stealth** | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth |
+| Shift+1 | Stealth, before the opener | — | — | — | — | — | **Stealth** | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth |
 | Shift+2 | A second mob mid-fight | — | — | — | — | — | — | — | — | — | **Blind** from 34 | Blind | Blind |
 | Shift+3 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
@@ -71,7 +71,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Eviscerate** (1), **Sinister Strike** (1), Stealth (1), Backstab (4), Pick Pocket (4).
 
-**Keys to set:** Q = Sinister Strike; R = Eviscerate; Shift+1 = Stealth.
+**Keys to set:** Q = Sinister Strike; R = Eviscerate.
 
 **Your keys in this stage:** Q Sinister Strike, R Eviscerate.
 
@@ -82,7 +82,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Carry a dagger in each hand from the start: **Ambush** (18) needs one in your main hand, and **Ghostly Strike** hits much harder with it.
 - **Backstab** (4) needs the mob's back, and a mob you fight alone turns to face you after your first hit: never Backstab.
-- **Stealth** (1) is not worth the walk yet. Mobs die in a few hits.
+- **Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**.
 
 *Fight lab, seconds per kill: 10 at level 1. Presses per kill at level 1: Sinister Strike 1.6, Melee 1.3, Melee (off-hand) 1.0, Eviscerate 0.2.*
 
@@ -177,7 +177,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 14 Opportunity, 15 Dirty Deeds, 16 Opportunity, 17 Improved Ambush.
 
-**Keys to set:** 1 = Garrote.
+**Keys to set:** 1 = Garrote; Shift+1 = Stealth.
 
 **Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, Shift+E Kick, Shift+1 Stealth.
 
@@ -200,7 +200,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** **Ambush** (18), Poised (18), Crippling Poison (20), Instant Poison (20), Rupture (20), Distract (22), Vanish (22).
 
-**New ranks to buy:** Sinister Strike at 22; Stealth at 20.
+**New ranks to buy:** Garrote at 22; Gouge at 18; Sinister Strike at 22; Stealth at 20.
 
 **Talents:** 18-19 Improved Ambush, 20-22 Serrated Blades, 23 Initiative.
 
@@ -260,7 +260,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Cheap Shot (26).
 
-**New ranks to buy:** Ambush at 26; Kick at 26.
+**New ranks to buy:** Ambush at 26; Kick at 26; Sap at 28.
 
 **Talents:** 25 Ghostly Strike, 26-28 Coup de Grace, 29 Remorseless Attacks.
 
@@ -291,7 +291,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Deadly Poison (30), Disarm Trap (30), Kidney Shot (30), Wound Poison (32), Blind (34), Blinding Powder (34).
 
-**New ranks to buy:** Ambush at 34; Eviscerate at 32; Garrote at 30, 38; Sinister Strike at 30, 38.
+**New ranks to buy:** Ambush at 34; Eviscerate at 32; Garrote at 30, 38; Gouge at 32; Sinister Strike at 30, 38; Sprint at 34.
 
 **Talents:** 30 Remorseless Attacks, 31-33 Malice, 34-35 Efficient Strikes, 36-37 Lightning Reflexes, 38-39 Precision.
 
@@ -323,7 +323,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **The trainer teaches:** Safe Fall (40).
 
-**New ranks to buy:** Ambush at 42, 50, 58; Eviscerate at 40, 48, 56; Garrote at 46, 54; Kick at 42, 58; Shank at 44; Sinister Strike at 46, 54; Stealth at 40.
+**New ranks to buy:** Ambush at 42, 50, 58; Eviscerate at 40, 48, 56; Garrote at 46, 54; Gouge at 46; Kick at 42, 58; Sap at 48; Shank at 44; Sinister Strike at 46, 54; Sprint at 58; Stealth at 40; Vanish at 42.
 
 **Talents:** 40 Precision, 41-43 Lightning Reflexes, 44-45 Composure, 46 Flawless Execution, 47-48 Weapon Expertise, 49-51 Aggression, 52-53 Initiative, 54-55 Dual Wield Specialization, 56-57 Hack and Slash, 58-59 Elusiveness.
 
@@ -349,7 +349,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Level 60: Hemorrhage
 
-**New ranks to buy:** Eviscerate at 60; Stealth at 60.
+**New ranks to buy:** Eviscerate at 60; Gouge at 60; Stealth at 60.
 
 **Talents:** 60 Hemorrhage.
 
@@ -385,4 +385,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Combat with swords is the rogue's fastest leveling spec in the fight lab, this split close behind it. Subtlety plays the same rotation deeper in its tree, with **Hemorrhage** from 30 and **Death Mark** from 40. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-07: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

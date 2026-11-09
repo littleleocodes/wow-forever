@@ -518,6 +518,14 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
         b["notes"].append("The talent order takes the spec's signature talents at the earliest level their tree allows (the signature "
                           "rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.")
     b["notes"].append("Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.")
+    # 2026-11-09: a leveling filler pass written onto this build (fightlab/fl_filler_pass.py --write: points that measured nothing moved to
+    # talents that do something, at no measured cost) survives the rewrite while it started from the order the record still carries
+    for f in sorted((HERE / "fightlab" / "filler").glob(f"{cls}-*.json")):
+        fr = json.load(open(f, encoding="utf-8"))
+        if fr.get("build") == b["id"] and fr.get("written") and fr.get("start_order") == r["order"]:
+            b["allocation"], b["order"] = fr["written"]["allocation"], fr["written"]["order"]
+            b["notes"].insert(0, fr["written"]["note"])
+            print(f"  {b['id']}: the leveling filler pass of {fr['date']} re-applied ({len(fr['moves'])} moves)")
     return b
 
 

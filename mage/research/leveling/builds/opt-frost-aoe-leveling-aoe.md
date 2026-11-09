@@ -93,8 +93,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ao
 4. **Ice Barrier** — Removing it costs 4.8 points of score in this model.
 5. **Ice Lance** — Removing it costs 4.1 points of score in this model.
 6. **Ice Block** — Removing it costs 3.1 points of score in this model.
-7. **Elemental Precision** — Removing it costs 2.5 points of score in this model.
-8. **Ice Shards** — Removing it costs 1.8 points of score in this model.
+7. **Ice Shards** — Removing it costs 1.8 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -120,6 +119,7 @@ What this build casts per kill ([report](../fightlab/frost-aoe.md), all leveling
 - Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 5/3/43 -> 7/3/41; Arcane Focus 1 gone; Elemental Precision -> Precision (renamed); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Arcane Resilience (tier gating for Missile Barrage); +1 Improved Channeling (tier gating for Missile Barrage); -1 Precision (over 51); -1 Improved Frostbolt (over 51); order dropped (order_repair.py) (refill: the frost-aoe model, leveling-aoe).
 - 2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the stats model's leveling-aoe order (not raced: the race plays single mobs).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

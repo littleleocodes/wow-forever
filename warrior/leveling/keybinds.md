@@ -34,7 +34,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | 1 | Victory Rush (20) | It lights up after a kill: open the next fight with it when you are below 90% of your health |
 | 2 | Execute (24) | First, once the mob is below 20% of its health |
 | 3 | Hamstring (8) | A mob runs away |
-| 4 | Retaliation (20) | A pull goes wrong and the mobs are on you |
+| 4 | Retaliation (20) | A pull goes wrong and the mobs are on you: everything that hits you in melee takes a counterattack for 15 seconds, once per 15 minutes, in Battle Stance only |
 | C | Heroic Strike (40) | Spare rage after Slam, once Mortal Strike has taken Q |
 | Middle mouse | Free | |
 
@@ -46,7 +46,8 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | Shift+E | Thunder Clap (6) | Packs: after Sweeping Strikes |
 | Shift+R | Sweeping Strikes (39, talent) | Two or more mobs: press it, then Thunder Clap and Cleave |
 | Shift+Mouse 5 | Cleave (20) | Packs: the spare-rage strike that hits two |
-| Shift+F, Shift+Mouse 4, Shift+1 to Shift+X | Free | |
+| Shift+C | Free for the healing potion macro on the [macros page](../macros.md) | When you need health back faster than a bandage gives it |
+| Shift+F, Shift+Mouse 4, Shift+1 to Shift+4, Shift+X | Free | |
 
 ## No key: click these between fights
 

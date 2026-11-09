@@ -57,27 +57,25 @@ Subtlety went deeper: Preparation now sits at tier 5 with Thousand Cuts (cheaper
 ## Core talents (priority order)
 
 1. **Preparation** — Resets every rogue cooldown (10-minute cooldown in the demo).
-2. **Thousand Cuts** — New capstone: Rupture ticks make Hemorrhage/Backstab up to 15 energy cheaper.
-3. **Hemorrhage** — 145% weapon damage with a dagger and +15% Rupture damage.
-4. **Premeditation** — New 16-point talent for Subtlety: 2 free combo points from stealth.
-5. **Cold Blood** — Guaranteed crit.
-6. **Improved Ambush** — Ambush crit.
-7. **Initiative** — Extra combo point on openers.
-8. **Serrated Blades** — Armor ignore and Rupture damage; prerequisite for Hemorrhage.
-9. **Dirty Deeds** — Cheaper Cheap Shot/Garrote, Garrote from the front.
-10. **Quietus** — +10% Hemorrhage/Sinister Strike/Ghostly Strike damage below 35% (only path to 30 points).
+2. **Hemorrhage** — 145% weapon damage with a dagger and +15% Rupture damage.
+3. **Premeditation** — New 16-point talent for Subtlety: 2 free combo points from stealth.
+4. **Cold Blood** — Guaranteed crit.
+5. **Improved Ambush** — Ambush crit.
+6. **Initiative** — Extra combo point on openers.
+7. **Serrated Blades** — Armor ignore and Rupture damage; prerequisite for Hemorrhage.
+8. **Dirty Deeds** — Cheaper Cheap Shot/Garrote, Garrote from the front.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Improved Poisons | Vile Poisons, Improved Slice and Dice | Filler to reach Cold Blood. |
-| 3 | Improved Distract 1 + Heightened Senses 2 | Dirty Tricks, Camouflage | Gating fillers in Subtlety tiers 3-4. |
 
 ## Notes
 
 - Cutthroat (Backstab makes Ambush usable out of stealth) is the alternative tier-6 sink for a dagger-heavy version.
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 20/0/31 -> 21/0/30; Murder 2 gone; Lethality 5 -> 2 (rank cap); Improved Distract 1 gone; Quietus 5 gone; Thousand Cuts 1 gone; +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Lethality); +1 Improved Gouge (tier gating for Cold Blood); +1 Vigor (tier gating for Cold Blood); +1 Vigor (tier gating for Cold Blood); +1 Remorseless Attacks (tier gating for Relentless Strikes); +1 Dirty Tricks (back into Subtlety); +1 Dirty Tricks (back into Subtlety); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Setup (back into Subtlety); +1 Camouflage (back into Subtlety) (refill: the combat-daggers-raid model, pvp).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Thousand Cuts, Quietus; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

@@ -1,0 +1,65 @@
+{
+ "class": "shaman",
+ "build": "resto-raid-healer",
+ "date": "2026-11-09",
+ "runs": 200,
+ "long": {
+  "DURATION": 600.0
+ },
+ "steps": [
+  {
+   "capacity": 0.6903,
+   "se": 0.0027,
+   "long": 0.5528,
+   "long_se": 0.0014,
+   "values": {
+    "Ancestral Healing": 0.0315,
+    "Ancestral Knowledge": 0.033,
+    "Healing Focus": 0.0,
+    "Healing Way": 0.0232,
+    "Mana Tide Totem": 0.0394,
+    "Mindfulness": 0.122,
+    "Nature's Swiftness": 0.009,
+    "Purification": 0.0472,
+    "Restorative Totems": 0.0304,
+    "Riptide": 0.0043,
+    "Thundering Strikes": 0.0241,
+    "Tidal Focus": 0.0158,
+    "Tidal Mastery": 0.0241,
+    "Totemic Focus": 0.0,
+    "Water Shield": 0.0487
+   },
+   "values_long": {},
+   "zero": [],
+   "long_only": []
+  }
+ ],
+ "start": {
+  "std": 0.6903,
+  "std_se": 0.0027,
+  "long": 0.5528,
+  "long_se": 0.0014
+ },
+ "end": {
+  "std": 0.6903,
+  "long": 0.5528
+ },
+ "moves": [],
+ "final": {
+  "Thundering Strikes": 5,
+  "Ancestral Knowledge": 5,
+  "Totemic Focus": 5,
+  "Mindfulness": 3,
+  "Tidal Focus": 5,
+  "Water Shield": 1,
+  "Ancestral Healing": 3,
+  "Healing Focus": 3,
+  "Mana Tide Totem": 1,
+  "Restorative Totems": 5,
+  "Tidal Mastery": 5,
+  "Healing Way": 3,
+  "Nature's Swiftness": 1,
+  "Purification": 5,
+  "Riptide": 1
+ }
+}

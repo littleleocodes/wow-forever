@@ -50,14 +50,14 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 02bd77c (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `arms-battle-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 391 | +0.0% | 813 | +0.0% | 0 s |
-| 2 | *Arms* | community simulator | - | 386 | -1.2% | 810 | -0.4% | 0 s |
-| 3 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 385 | -1.5% | 809 | -0.5% | 0 s |
-| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 383 | -2.0% | 804 | -1.1% | 0 s |
+| 1 | *Arms* | community simulator | - | 406 | +0.0% | 848 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 404 | -0.6% | 845 | -0.4% | 0 s |
+| 3 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 398 | -1.8% | 841 | -0.8% | 0 s |
+| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 395 | -2.6% | 836 | -1.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -74,7 +74,7 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
   10. insert before the filler: if time until Bloodthirst is ready > 1.5s: cast Whirlwind (+0.5%, pass 2)
   11. move to the top: if not Battle Stance is up: cast Battle Stance (+0.2%, pass 2)
   12. threshold 24.5s -> 36.75s: if time left in the fight ≤ 24.5s: use every other cooldown when ready (+0.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 5 passes, the last 2026-10-31, 17 changes to the base rotation; third-seed check: arms-battle-raid 708 -> 778 DPS (+10.0%), sim preset: Arms 707 -> 780 DPS (+10.3%), arms-community-parse 704 -> 775 DPS (+10.1%), arms-ml-raid 707 -> 780 DPS (+10.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 6 passes, the last 2026-11-08, 17 changes to the base rotation; third-seed check: arms-battle-raid 776 -> 845 DPS (+8.9%), sim preset: Arms 779 -> 848 DPS (+8.9%), arms-community-parse 768 -> 836 DPS (+8.9%), arms-ml-raid 771 -> 841 DPS (+9.1%)):
   1. move to the top: cast Overpower (+2.0%, pass 1)
   2. drop: if (time left in the fight ≤ 30s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.2%, pass 1)
   3. drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.4%, pass 1)
@@ -109,7 +109,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
 | 12 | if number of targets > 1: cast Whirlwind | 0.9 |
-| 13 | cast Mortal Strike | 2.5 |
+| 13 | cast Mortal Strike | 2.8 |
 | 14 | if not Rend is on the target: cast Rend | 2.4 |
 | 15 | cast Slam | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
@@ -128,8 +128,8 @@ Damage by ability:
 | Auto Attack | 36% |
 | Execute | 15% |
 | Overpower | 14% |
-| Slam | 10% |
-| Mortal Strike | 7% |
+| Slam | 9% |
+| Mortal Strike | 8% |
 | Deep Wound | 7% |
 | Rend | 6% |
 | Spearing Strike | 2% |

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-07",
+ "date": "2026-11-09",
  "fights": 300,
  "levels": [
   20,
@@ -801,7 +801,7 @@
      ]
     ],
     "fingerprint": "5fd39c4df9c3",
-    "date": "2026-11-07",
+    "date": "2026-11-09",
     "fights": 300
    },
    "protection-leveling": {
@@ -828,7 +828,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "facb91b898b3",
-    "date": "2026-11-07",
+    "date": "2026-11-09",
     "fights": 300
    },
    "leveling-retribution": {
@@ -850,12 +850,12 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.94
+     "Judgement": 2.97
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "94ccd7845f01",
-    "date": "2026-11-07",
+    "fingerprint": "6b92a0ac17fc",
+    "date": "2026-11-09",
     "fights": 300
    },
    "opt-ret-dps-leveling-st": {
@@ -877,12 +877,12 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.94
+     "Judgement": 2.97
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "e385a1251bf2",
-    "date": "2026-11-07",
+    "fingerprint": "3122b28dddef",
+    "date": "2026-11-09",
     "fights": 300
    },
    "hybrid-holy-protection-open-leveling": {
@@ -898,34 +898,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "550819f29331",
-    "date": "2026-11-07",
-    "fights": 300
-   },
-   "prot-ret-open-leveling": {
-    "spec": "Hybrid Protection/Retribution",
-    "rotation": "ret-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9994,
-    "min_share": 0.6,
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Seal of Fury",
-     "Judgement",
-     "Holy Strike"
-    ],
-    "casts_60": {
-     "Judgement": 3.27
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "4de12f08f900",
-    "date": "2026-11-07",
+    "date": "2026-11-09",
     "fights": 300
    },
    "opt-ret-dps-solo-60": {
@@ -947,12 +920,12 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 3.32
+     "Judgement": 3.4
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "343889e50f17",
-    "date": "2026-11-07",
+    "fingerprint": "fc4b33b0d0b9",
+    "date": "2026-11-09",
     "fights": 300
    },
    "opt-ret-dps-leveling-aoe": {
@@ -974,12 +947,39 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 2.93
+     "Judgement": 2.95
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "20ac74e488aa",
-    "date": "2026-11-07",
+    "fingerprint": "dd7e8e3b27b9",
+    "date": "2026-11-09",
+    "fights": 300
+   },
+   "prot-ret-open-leveling": {
+    "spec": "Hybrid Protection/Retribution",
+    "rotation": "ret-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.9993,
+    "min_share": 0.6,
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "casts_60": {
+     "Judgement": 3.31
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "58d49582e7b3",
+    "date": "2026-11-09",
     "fights": 300
    }
   },
@@ -1707,7 +1707,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "96c17479c4a2",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "affliction-leveling": {
@@ -1736,7 +1736,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "dc237334a002",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "demonology-leveling": {
@@ -1754,7 +1754,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "8f920a0e9598",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "destruction-open-leveling": {
@@ -1778,7 +1778,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "9bf9ebf345ca",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "destruction-leveling": {
@@ -1802,7 +1802,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "08969bce1470",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "affliction-demonology-open-leveling": {
@@ -1829,7 +1829,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "f8d5356bbf59",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "opt-affliction-leveling-solo-60": {
@@ -1856,7 +1856,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "5eca5b0b1a50",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    },
    "opt-affliction-leveling-leveling-aoe": {
@@ -1883,7 +1883,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "87576bdfdd61",
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "fights": 300
    }
   },
@@ -3351,20 +3351,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.94
+     "Judgement": 2.97
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 27.96,
+    "weighted": 27.66,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.395,
-     "Judgement": 0.223,
-     "Seal of Command": 0.203,
-     "Holy Strike": 0.179
+     "Melee": 0.393,
+     "Judgement": 0.225,
+     "Seal of Command": 0.199,
+     "Holy Strike": 0.183
     }
    },
    {
@@ -3388,20 +3388,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.94
+     "Judgement": 2.97
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 27.96,
+    "weighted": 27.66,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.395,
-     "Judgement": 0.223,
-     "Seal of Command": 0.203,
-     "Holy Strike": 0.179
+     "Melee": 0.393,
+     "Judgement": 0.225,
+     "Seal of Command": 0.199,
+     "Holy Strike": 0.183
     }
    },
    {
@@ -3435,8 +3435,8 @@
    {
     "spec": "Hybrid Protection/Retribution",
     "name": "Prot-Ret",
-    "build": "prot-ret-open-leveling",
-    "split": "12/16/23",
+    "build": "opt-ret-dps-solo-60",
+    "split": "8/19/24",
     "rotation": "ret-dps",
     "rules": "tuned",
     "kind": "page",
@@ -3453,58 +3453,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 3.27
-    },
-    "core_share": 0.9994,
-    "min_share": 0.6,
-    "weighted": 27.25,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.372,
-     "Judgement": 0.262,
-     "Seal of Command": 0.195,
-     "Holy Strike": 0.172,
-     "Eye for an Eye": 0.001
-    }
-   },
-   {
-    "spec": "Hybrid Protection/Retribution",
-    "name": "Prot-Ret",
-    "build": "opt-ret-dps-solo-60",
-    "split": "8/19/24",
-    "rotation": "ret-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Seal of Fury",
-     "Judgement",
-     "Holy Strike"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Judgement": 3.32
+     "Judgement": 3.4
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 27.73,
+    "weighted": 27.78,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.387,
-     "Judgement": 0.252,
+     "Melee": 0.391,
+     "Judgement": 0.251,
      "Seal of Command": 0.188,
-     "Holy Strike": 0.173
+     "Holy Strike": 0.171
     }
    },
    {
@@ -3528,20 +3490,110 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.93
+     "Judgement": 2.95
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 28.07,
+    "weighted": 27.64,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.402,
-     "Judgement": 0.222,
-     "Seal of Command": 0.199,
+     "Melee": 0.401,
+     "Judgement": 0.225,
+     "Seal of Command": 0.197,
      "Holy Strike": 0.177
+    }
+   },
+   {
+    "spec": "Hybrid Protection/Retribution",
+    "name": "Prot-Ret",
+    "build": "prot-ret-open-leveling",
+    "split": "12/16/23",
+    "rotation": "ret-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Judgement": 3.31
+    },
+    "core_share": 0.9993,
+    "min_share": 0.6,
+    "weighted": 27.01,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.383,
+     "Judgement": 0.255,
+     "Seal of Command": 0.193,
+     "Holy Strike": 0.169,
+     "Eye for an Eye": 0.001
+    }
+   },
+   {
+    "spec": "Holy",
+    "name": "Holy",
+    "build": "holy-leveling",
+    "split": "32/5/14",
+    "rotation": "holy-leveling",
+    "rules": "default",
+    "kind": "default",
+    "required": [
+     "Holy Shock"
+    ],
+    "core": [
+     "Holy Shock",
+     "Exorcism",
+     "Judgement",
+     "melee",
+     "Seal of Righteousness",
+     "Seal of Command"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Holy Shock": 0.77
+    },
+    "core_share": 0.7428,
+    "min_share": 0.6,
+    "weighted": 38.92,
+    "verdict": "FAIL: Holy Shock 0.24/kill at 30 (needs 0.50); Holy Shock 0.38/kill at 40 (needs 0.50)",
+    "ok": false,
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Holy Shock",
+      30,
+      0.24,
+      0.5
+     ],
+     [
+      "Holy Shock",
+      40,
+      0.38,
+      0.5
+     ]
+    ],
+    "top_shares": {
+     "Melee": 0.295,
+     "Judgement": 0.184,
+     "Seal of Righteousness": 0.175,
+     "Hammer of Wrath": 0.142,
+     "Holy Strike": 0.115,
+     "Holy Shock": 0.088
     }
    }
   ],

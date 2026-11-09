@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Swords setup. The spec's best build for each other setup, in a full raid:
 
-- Daggers: [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (21/30/0, 607 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/2053232020101-30532300000123215--12)
+- Daggers: [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (21/30/0, 674 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/2053232020101-30532300000123215--12)
 
 ## How to play
 
@@ -19,7 +19,7 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Garrote**: keep it on the target
-2. **Vanish**
+2. **Vanish**; no global cooldown, so press it alongside the others
 3. **Shank**
 4. **Eviscerate** (rank 8) when you have 5 combo points
 5. **Sinister Strike**
@@ -34,7 +34,7 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 
 **Why it works**
 
-- **Slice and Dice** comes first: 30% more attack speed for the whole fight is worth more than any single hit. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. Do not refresh it early: while it is up, 4 or more points go into **Eviscerate**, and the simulator found no gain from refreshing it at 5 points before it runs out.
+- **Slice and Dice** comes first: 20% more attack speed for the whole fight is worth more than any single hit. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. Do not refresh it early: while it is up, 4 or more points go into **Eviscerate**, and the simulator found no gain from refreshing it at 5 points before it runs out.
 - **Eviscerate** goes at 4 or more combo points, not only at 5: its damage grows by the same amount per point, so the fifth point adds no bonus. A **Backstab** at 4 points often wastes a point, since **Puncturing Wounds** gives it a 45% chance to add a second one, and **Ruthlessness** adds a point after 60% of your finishers, so finishing more often collects more of them. The simulator measured finishing at 4 or more 0.9% better than waiting for 5 with daggers, 0.7% with swords.
 - **Cold Blood** spends no combo points. It makes your next attack a sure critical strike, so the rotation times it right before an **Eviscerate** at 4 or more points, your biggest hit.
 - **Adrenaline Rush** doubles your energy regeneration for 15 seconds: press it whenever it is ready. The rotation used to hold it for low energy, and pressing it on cooldown measured 1.5% better.
@@ -53,20 +53,29 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 
 *This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
+## Talents
+
+| Tree | Points | Talents (ranks) |
+|---|---|---|
+| Assassination | 21 | Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Lethality 2, Vigor 2, Improved Poisons 5, Relentless Strikes 1 |
+| Combat | 30 | Coup de Grace 3, Efficient Strikes 2, Lightning Reflexes 5, Deflection 3, Precision 3, Aggression 3, Flawless Execution 1, Weapon Expertise 2, Blade Flurry 1, Dual Wield Specialization 2, Hack and Slash 5 |
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 666 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 693 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 54ceac6 (client 70707); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 741 | [16/33/2](https://talentsforever.com/rogue/60/0053030020011-0003032200012321501-002-12) |
-| Phase 1 BiS | 744 | [16/33/2](https://talentsforever.com/rogue/60/0053030020101-0053130000012321501-002-12) |
+| Pre-BiS | - | being searched again: the talents found before the latest talent change are no longer legal |
+| Phase 1 BiS | - | being searched again: the talents found before the latest talent change are no longer legal |
 
-**The gear** (average item level: Pre-BiS 66.5; Phase 1 BiS 66.5; each item opens its Wowhead page, with where it drops and its enchant):
+*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
+
+**The gear** (average item level: Pre-BiS 61.4; Phase 1 BiS 62.1; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -92,10 +101,9 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 
 ## Other builds of this spec
 
-- [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (21/30/0, 667 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/0053032020141-32503300000123215--12)
-- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (21/30/0, 649 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/2053232020101-32503300000123215--12)
-- [Combat (optimized, daggers)](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (21/30/0, 607 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/2053232020101-30532300000123215--12)
+- [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (21/30/0, 693 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/0053032020141-32503300000123215--12)
+- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (21/30/0, 675 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/2053232020101-32503300000123215--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 92c4c35 (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -8,18 +8,18 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 89% of the damage at level 60 in the fight lab comes from Frostbolt, Ice Lance, Frost Blast, Cone of Cold, Blizzard (the spec's rule: at least 60%; **Frostbolt** cast in every fight).
+**Signature spells:** 89% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostbolt, Ice Lance; this build never casts Cone of Cold, Blizzard) (the spec's rule: at least 60%; **Frostbolt** cast at level 60).
 
 ## How to play
 
-**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: where a line below names them, that part does not apply. The fight lab played the build without them.
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
 1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
-2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it has more than 8 seconds of cooldown left and the mob still has 40% of its health.
+2. **Frost Nova** when it reaches you, then step back out of melee; if your build has **Cold Snap**, it resets **Frost Nova** when more than 8 seconds of cooldown are left and the mob still has 40% of its health.
 3. **Ice Lance** into the freeze whenever it is ready: it has an 8-second cooldown, so one per **Frost Nova**, **Frostbite** freeze or **Fingers of Frost** charge, not a stream of them.
 4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.
@@ -28,32 +28,30 @@
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31), the Arcane mana talents from 40, **Incineration** last. In the fight lab at level 60 (2026-11-04 run), **Frostbolt** is 53% of this build's damage and **Ice Lance** 36%; a kill takes about 27 seconds at 60 and 28 to 35 across levels 20-60, about 30 level-weighted with the talents taken in that order.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-06 this build took about 30.5 seconds per kill, level-weighted; the page's numbers table has each level.
 
 **Why it works**
 
-- **Frostbolt** from as far away as you can and whenever nothing else applies, while the mob has more than a fifth of its health: 2.5 seconds with **Improved Frostbolt**, 290 mana less **Frost Channeling**'s 15%, and a 40% slow for 9 seconds (longer and stronger with **Permafrost**) that buys extra casts before the mob reaches you. Every chill can freeze it (**Frostbite**, 15%) or light up **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). If the mob would reach you before the cast ends, **Fire Blast** it instead, or wand it while it closes if **Fire Blast** is on cooldown and **Frost Nova** is ready.
-- **Frost Nova** when it reaches you, then step back out of melee: it roots the mob for up to 8 seconds, and out of reach it cannot hit you or push your casts back. **Improved Frost Nova** brings it back 4 seconds sooner, every 21 seconds.
-- **Ice Lance** into the freeze whenever it is ready: it deals 300% more damage to a frozen target, crits 50% more often there with **Shatter**, and crits for double with **Ice Shards**. It has an 8-second cooldown, so you get one per freeze, not a stream. In the fight lab the search's winner loses about 4.6 seconds per kill at 60 without **Shatter** and 3.5 without **Ice Lance**, then 2.4 without **Ice Shards** and 2.0 without **Improved Frostbolt**.
-- **Fire Blast** is the instant for the moments a **Frostbolt** does not fit: the mob about to reach you, the mob on you with **Frost Nova** down, and the finish. The tuned rules (2026-11-03) cast it only while the mob is between a tenth and a fifth of its health, and start no **Frostbolt** below a fifth: a long cast overkills, and an **Ice Lance** that will kill, or the wand, finishes cheaper. **Incineration** adds crit to both.
-- The Arcane points are for mana: **Arcane Concentration** makes one cast in ten free and **Arcane Meditation** keeps half your regeneration going while you cast (about 1.4 seconds per kill at 60 in the fight lab). **Wand Specialization** makes the finishing wand hits 25% stronger.
+- **Frostbolt** from as far away as you can and whenever nothing else applies, while the mob has more than a fifth of its health: 2.5 seconds with **Improved Frostbolt** at 5 points, 290 mana at top rank less **Frost Channeling**'s 15%, and a 40% slow for 9 seconds that buys extra casts before the mob reaches you (**Permafrost** lengthens it). Every chill can freeze the mob (**Frostbite**, 15%) or light up **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). If the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives; if it is already on you with **Frost Nova** down, keep casting.
+- **Frost Nova** when it reaches you, then step back out of melee: it freezes the mob for up to 8 seconds (damage can break it), and out of reach it cannot hit you or push your casts back. **Improved Frost Nova** takes 4 seconds off its 25-second cooldown.
+- **Ice Lance** into the freeze whenever it is ready: it deals 300% more damage to a frozen target, crits 50% more often there with **Shatter**, and crits for double with **Ice Shards**. It has an 8-second cooldown, so you get one per freeze, not a stream. In the open search's talent values at level 60, the build loses about 4.6 seconds per kill without **Shatter**, 3.5 without **Ice Lance**, 2.4 without **Ice Shards** and 2.0 without **Improved Frostbolt**.
+- **Fire Blast** is the finish and nothing else: the tuned rules (2026-11-06) cast it only while the mob is between a tenth and a fifth of its health, and start no **Frostbolt** below a fifth. A long cast overkills, and an **Ice Lance** that will kill, or the wand, finishes cheaper. It is not the answer to a mob that reaches you. **Incineration** adds crit to **Fire Blast** and **Ice Lance**.
+- The Arcane points are for mana: **Arcane Concentration** gives a 10% chance after a damage spell hits that your next one is free, and **Arcane Meditation** (which needs all 5 **Arcane Concentration** points) keeps half your regeneration going while you cast (about 1.4 seconds per kill at 60 in the open search). **Wand Specialization** makes the finishing wand hits 25% stronger.
 - **Counterspell** (level 24) a mob that casts spells: it stops the cast and locks that school for 10 seconds.
 
 **Caveats**
 
-- This build takes neither **Cold Snap** nor **Ice Barrier**: skip the list's lines for them. The hand-made build under Other builds has both.
-- This is the 2026-11-04 search's winner (18/3/30), written the same day: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of the earlier version's **Missile Barrage** and **Magic Absorption**; the list is the same.
-- **Cone of Cold** stays out of single pulls: the tuned rules never cast it (kills measured faster without).
-- Drink below 15% of your mana (the tuned rule); **Evocation** is for between fights, whenever it is ready and you are under 40% mana; eat below two thirds of your health.
+- This build takes neither Cold Snap nor Ice Barrier: skip the list's lines for them. The hand-made build under Other builds has both.
+- This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption.
+- **Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).
+- Drink below 15% of your mana (the tuned rule); **Evocation** between fights, whenever it is ready and you are under 40% mana; eat below two thirds of your health (the tuned rules set no eat threshold for this list, so the fight lab's default of 65% applies).
 - **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it.
 - Pulls of several mobs are a different game: the AoE build under Other builds gathers about four, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**.
 
 **When to change it**
 
-- If **Frost Nova** is on cooldown when the mob arrives, **Fire Blast** it and keep casting **Frostbolt**; a build with **Cold Snap** resets **Frost Nova** instead when it has more than 8 seconds left and the mob still has 40% of its health.
+- If **Frost Nova** is on cooldown when the mob arrives, keep casting **Frostbolt**; a build with Cold Snap resets **Frost Nova** instead when it has more than 8 seconds left and the mob still has 40% of its health.
 - Low on mana in a fight: let an **Ice Lance** into the freeze or the wand finish a nearly dead mob rather than start a **Frostbolt**.
-
-*This guide was written for the rotation of 2026-11-04; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -98,11 +96,13 @@ One point per level from 10, in this order:
 | 50 | 30 |
 | 60 | 27 |
 
+**Points that do nothing for this spec:** **Improved Channeling** (3) only counts toward the points the tree needs before **Arcane Meditation**.
+
 ## Other builds of this spec
 
 - [Leveling — Frost](../research/leveling/builds/leveling-frost.md) (17/0/34, 32 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/21220520010011--053530030111301251-12)
 - [Frost (optimized, AoE pulls)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (7/3/41, 34 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2120002-3-242502333121331231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-07 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -55,14 +55,12 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 5. **Rend and Tear** — Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-27): removing it costs +4% tank value.
 6. **Sharpened Claws** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-27): removing it costs +4% tank value.
 7. **Nature's Majesty** — Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-27): removing it costs +3% tank value.
-8. **Feral Swiftness** — Raid sim (2026-09-26): removing it costs +2% tank value. Raid sim (2026-09-27): removing it costs +2% tank value.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 5 | Genesis | any utility talent legal at that tier | Measures +0.4% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Savage Fury | any utility talent legal at that tier | Measures +0.4% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Ferocity | any utility talent legal at that tier | Measures +0.2% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Feral Charge | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Furor | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
@@ -117,6 +115,7 @@ Damage by ability (threat for tanks):
 - Adopted from the community simulator on 2026-09-26: cand-feral-bear-tank-r1 beat the previous draft by +7.4% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Faerie Fire (Feral) is baseline now; Lacerate (a bear bleed) exists in Forever (Shredding Attacks names it).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/35/9 -> 7/35/9; +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); -1 Feral Swiftness (over 51); -1 Feral Swiftness (over 51); -1 Savage Fury (over 51); -1 Savage Fury (over 51); -1 Blood Frenzy (over 51) (refill: the feral-bear-tank model, raid-dps).
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Feral Swiftness; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 

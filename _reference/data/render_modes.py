@@ -160,6 +160,74 @@ def page_gear(r, tier):
     return g.get(f"{tier}-raid") or g.get(tier)
 
 
+def setup_line(cls, entry, held, named=()):
+    """What the simulator sets up from the entry's class options and the rotation never casts (2026-11-08 full page read WL1, H7: the
+    warlock's Imp sacrifice, about 10% of the damage, and the Lone Wolf hunter's missing pet were only in the guide text; 2026-11-09 W27:
+    the Fury page never named Berserker Stance, the entry's starting stance, because its rotation never casts a stance). `named`: the
+    spells the page's pre-pull and keep-up lines already name."""
+    spec = ((json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls) or {}).get(entry) or {}).get("spec") or {}
+    co = ((spec.get(cls) or next(iter(spec.values()), {}) or {}).get("options") or {}).get("classOptions") or {}
+    stance = {"WarriorStanceBerserker": "Berserker Stance", "WarriorStanceBattle": "Battle Stance",
+              "WarriorStanceDefensive": "Defensive Stance"}.get(co.get("defaultStance"))
+    if cls == "warrior" and stance and not any("Stance" in x for x in named):
+        return f"**Setup, before the pull:** **{stance}**: the simulator starts the fight in it, and the rotation below assumes it."
+    s = co.get("summon")
+    if cls == "warlock" and s:
+        armor = {"DemonArmor": "Demon Armor", "DemonSkin": "Demon Skin"}.get(co.get("armor"))
+        arm = f" Keep **{armor}** on you." if armor else ""
+        if co.get("sacrificeSummon") and "Demonic Sacrifice" in held:
+            return (f"**Setup, before the pull:** **Summon {s}**, then **Demonic Sacrifice** it: you fight with its buff and no demon, which the "
+                    "rotation below assumes." + arm)
+        return f"**Setup, before the pull:** **Summon {s}** and keep it out all fight." + arm
+    if cls == "hunter" and co.get("petType") == "PetNone" and "Lone Wolf" in held:
+        return "**Setup, before the pull:** **Dismiss Pet**: **Lone Wolf** only works while you have no pet out."
+    return None
+
+
+def idle_note(cls, b, text):
+    """Talents of the page's build that do nothing on this page (2026-11-08, user: "the resto druid talent spec says to take Improved
+    Wrath. Why would that ever be a thing? ... Check things like that constantly"): `page_lint.dead_talents` finds them (a talent that
+    only improves spells or forms the page never uses, a talent ability it never uses), `classify_dead` says which points only open a
+    deeper talent and which are free. The page says so in one line; free points stay a finding of the page audit until the build moves
+    them."""
+    import page_lint as PL
+    m = PL.TF.match(rs.tf_link(cls, rs.flat(b)))
+    if not m:
+        return []
+    dead = PL.dead_talents(cls, text, m.group(2))
+    if not dead:
+        return []
+    why = PL.classify_dead(cls, m.group(2), dead)
+    names = lambda xs: (", ".join(xs[:-1]) + " and " + xs[-1]) if len(xs) > 1 else xs[0]   # noqa: E731
+    gates, free, util = {}, [], []
+    for n, r, _, _ in dead:
+        w = why[n]
+        if w["gate"]:
+            gates.setdefault(tuple(sorted(w["opens"])), []).append(f"**{n}** ({w['gate']})")
+        u = PL.raid_utility(cls, n) if b.get("content") in ("raid", "dungeon") else None
+        if w["free"] and u:   # the raid filler audit's utility point (2026-11-09: Feral Charge, an interrupt, read "does nothing")
+            util.append(f"**{n}** ({r}) is not in the rotation: it is there for {u}, which the raid simulator does not measure")
+        elif w["free"]:
+            free.append(f"**{n}** ({w['free']})")
+    parts = [f"{names(v)} only count{'s' if len(v) == 1 else ''} toward the points the tree needs before "
+             + (names([f"**{x}**" for x in k]) if k else "a deeper row") for k, v in gates.items()]
+    if free:
+        parts.append(f"{names(free)} open{'s' if len(free) == 1 else ''} nothing and could go to any talent")
+    out = [f"{PL.IDLE_LINE} " + "; ".join(parts) + ".", ""] if parts else []
+    if util:
+        out += ["**Taken for raid utility:** " + "; ".join(util) + ".", ""]
+    return out
+
+
+def tree_legal(cls, alloc):
+    """True when an allocation ({tree: [[talent, ranks], ...]}) is legal on today's trees (gating, prerequisites, caps, 51 points)."""
+    import validate_builds as VB
+    state = {t: {n: k for n, k in items if k} for t, items in alloc.items()}
+    errors = []
+    VB.check_state(VB.load_forever()[cls], state, "tier", errors)
+    return not errors and sum(sum(v.values()) for v in state.values()) <= VB.TOTAL_POINTS
+
+
 def tier_lines(cls, spec, src, top):
     """A spec raid page's DPS by gear tier: the best talents per tier and setting in the spec's own gear, and that gear."""
     r = TIERS.get((cls, spec))
@@ -182,10 +250,15 @@ def tier_lines(cls, spec, src, top):
         al = ((r.get("tidied") or {}).get(f"{t}-raid") or ((r.get("aligned_raid") or {}) if t == "bis" and (r.get("aligned_raid") or {}).get("moves") else None)
               or w)
         same = {n: k for n, k in flat(al["allocation"]).items() if k}
+        if not tree_legal(cls, al["allocation"]):   # 2026-11-08 (page audit O5): a winner of the trees before a patch opens another build
+            o.append(f"| {name} | - | being searched again: the talents found before the latest talent change are no longer legal |")
+            continue
         tl = "this build" if rs.flat(top) == same else f"[{al['split']}]({rs.tf_link(cls, same)})"
         if tl != "this build" and t == "bis" and f"confirms {top['id']} " in ((r.get("builds") or {}).get("why") or ""):
-            tl += " (ties this build)"
+            tl += " (as good as this build in this gear)"
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tl} |")
+    o += ["", "*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do "
+          "not match.*"]   # 2026-11-08 full page read S9
     o.append("")
     if r.get("_prev"):   # 2026-10-15 page audit B2: the previous run keeps the stale caveat when it predates the current simulator
         o += [f"*From the previous search run (searched {tier_date(r) or 'on an earlier date'}); a new run is under way and will replace "
@@ -530,6 +603,7 @@ def late_dps(cls, r):
 
 LEVEL_MODEL = {}   # (class, build id) -> the fight-lab spec model the build plays
 STEPS = {k: v for k, v in json.load(open(HERE / "leveling-steps.json", encoding="utf-8")).items() if not k.startswith("_")}
+OFF_GCD = json.load(open(HERE / "fightlab" / "spell_gcd.json", encoding="utf-8")).get("off_gcd", {})   # spells off the global cooldown
 
 
 def healer_numbers(cls):
@@ -546,14 +620,37 @@ def lev_sig_lines(cls, spec, top):
         return []
     c = lev_sig_check(cls, top)
     req = ", ".join(f"**{x}**" for x in rl["required"])
-    core = ", ".join(rl["core"])
+    core = ", ".join("your pet" if x == "pet" else x for x in rl["core"])
     if c is None:
         return [f"*Signature spells{' (' + req + ')' if req else ''}: not checked for this build in its rotation yet "
                 f"(fightlab/signature_audit.py).*", ""]
     share = f"{c['core_share']:.0%}" if c.get("core_share") is not None else "?"
-    if c.get("ok"):
-        return [f"**Signature spells:** {share} of the damage at level 60 in the fight lab comes from {core} (the spec's rule: at least "
-                f"{rl['min_share']:.0%}" + (f"; {req} cast in every fight" if req else "") + ").", ""]
+    if c.get("ok"):   # 2026-11-08 full page read S13: the core set is the spec's, not a list of what this build casts
+        rule = [f"the spec's rule: at least {rl['min_share']:.0%}"] if rl.get("min_share") else []
+        rule += [f"{req} cast at level 60"] if req else []
+        # 2026-11-09 (S13): the core spells this build never casts at 60 (the guide's measured casts), named apart, so the line does not
+        # count Primal Bite for a 29-point Feral build or Devouring Plague for a Shadow page that says to skip it
+        never = []
+        try:
+            import level_guides as LG
+            b, order, _, rot = LG.pick(cls, spec)
+            m = LG.measured(cls, spec, b, order, rot) if b and b["id"] == top["id"] else None
+            casts = ((m or {}).get("levels", {}).get("60") or {}).get("casts") if m else None
+            if casts is not None:
+                # only spells you press: a proc or passive source (Venom, Ignite, Deep Wounds, Vengeance) or a poison is never "cast"
+                bk = LG.book(cls)
+                never = [x for x in rl["core"] if x not in ("pet", "melee") and x in bk and "Poison" not in x and casts.get(x, 0) < 0.05]
+        except Exception:   # the line stays the spec's core set when the guide's numbers are not there
+            never = []
+        try:   # a core name today's data no longer has (Frost Blast, gone in 70753) is not printed
+            import signature as SGN2
+            alive = set(LG.book(cls)) | set(SGN2.talent_names(cls)) | {"pet", "melee"}
+        except Exception:
+            alive = set(rl["core"])
+        shown = ", ".join("your pet" if x == "pet" else x for x in rl["core"] if x not in never and x in alive)
+        tail = f"; this build never casts {', '.join(never)}" if never else ""
+        return [f"**Signature spells:** {share} of the damage at level 60 in the fight lab comes from the spec's core spells ({shown}{tail})"
+                + (f" ({'; '.join(rule)})" if rule else "") + ".", ""]
     return [f"> **Signature spells: this build fails the check** in the fight lab ({c.get('verdict', '').replace('FAIL: ', '')}). "
             f"{SM.spec_name(cls, spec)} is defined by " + (f"{req} cast in every fight and " if req else "")
             + f"{core} carrying {rl['min_share']:.0%} of the damage at level 60. No leveling build of this spec passes yet; it stays on the "
@@ -656,6 +753,14 @@ def rank_builds(cls, mode, builds, nums, signature=True):
         if others and metric(main[0]) and metric(main[0]) < metric(others[0]) * (1 + DERIVED_BAR):
             main.remove(others[0])
             main.insert(0, others[0])
+    # the user's rule (2026-09-30: "the healer and tank leveling order should really just be what the raid specs are"): a healer or tank
+    # spec's leveling pick is its raid-path build even when a search build levels faster (2026-11-09 audit W22: the Protection warrior and
+    # Discipline priest pages showed their open-leveling winners; those stay under "Other builds" with their times)
+    if mode == "leveling":
+        rp = [b for b in main if b.get("raid_path")]
+        if rp and main[0] is not rp[0]:
+            main.remove(rp[0])
+            main.insert(0, rp[0])
     return main + [b for b in builds if b["id"] in parse_ids]
 
 
@@ -853,6 +958,12 @@ def mode_section(cls, spec, mode, builds, nums, src):
     if mode == "leveling":
         o += lev_sig_lines(cls, spec, top)
     play, talents, numbers = [], [], []   # the page reads: build, how to play, talents while leveling, the numbers, other builds
+    if mode == "raid":   # 2026-11-09 audit S16: a raid page showed only the tree link and the split, while its guide talks about talents
+        rows = [(t, [(n, r) for n, r in items if r]) for t, items in (top.get("allocation") or {}).items()]
+        rows = [(t, xs) for t, xs in rows if xs]
+        if rows:
+            talents += ["## Talents", "", "| Tree | Points | Talents (ranks) |", "|---|---|---|"]
+            talents += [f"| {t} | {sum(r for _, r in xs)} | " + ", ".join(f"{n} {r}" for n, r in xs) + " |" for t, xs in rows] + [""]
     if mode == "leveling":
         if top.get("order"):
             talents += ["## Talents while leveling", "", "One point per level from 10, in this order:", "", "| Levels | Talent | Points |", "|---|---|---|"]
@@ -868,10 +979,17 @@ def mode_section(cls, spec, mode, builds, nums, src):
             # 2026-10-15 page audit B11: every talent the steps name, passive ones too (Maelstrom Weapon, Renewed Hope, Missile Barrage
             # had stayed in the steps of builds without them); before, only talents that grant an active spell counted
             lacking = sorted(n for n in named if (n in talent_spells(cls) or n in simple_rotation.talent_names(cls)) and n not in held)
+            # 2026-11-08 (the full page read, S2): a line whose first bold name, the thing it tells you to press, is a talent the build
+            # lacks is left out; a line that names it only as one condition among others stays, under the banner
+            lead_name = lambda x: (re.findall(r"\*\*(.+?)\*\*", x) or [None])[0]   # noqa: E731
+            st = dict(st, before=[x for x in (st.get("before") or []) if lead_name(x) not in lacking],
+                      steps=[x for x in (st.get("steps") or []) if lead_name(x) not in lacking])
+            kept = {m for x in st["before"] + st["steps"] + (st.get("between") or []) for m in re.findall(r"\*\*(.+?)\*\*", x)}
+            lacking = [n for n in lacking if n in kept]
             if lacking:
                 play += ["**Not in this build:** " + ", ".join(f"**{n}**" for n in lacking) + (" is a talent this build does not take" if len(lacking) == 1 else " are talents this build does not take")
-                         + ": skip the lines that use " + ("it" if len(lacking) == 1 else "them") + ". The fight lab played the build without "
-                         + ("it" if len(lacking) == 1 else "them") + ".", ""]
+                         + ": where a line below names " + ("it" if len(lacking) == 1 else "them") + ", that part does not apply. The fight lab "
+                         "played the build without " + ("it" if len(lacking) == 1 else "them") + ".", ""]
             if st.get("before"):
                 play += ["**Before the fight:** " + " ".join(st["before"]), ""]
             play += ["**In the fight**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(st["steps"], 1)] + [""]
@@ -949,6 +1067,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
             keep_names = [x.split("|")[0] for x in keep]   # an item may carry "|<how to keep it up>" (Slice and Dice's combo points)
             keep_text = ", ".join(f"**{x.split('|')[0]}**" + (f" ({x.split('|', 1)[1]})" if "|" in x else "") for x in keep)
             play += ["## How to play", ""]
+            su = setup_line(cls, r["entry"], held, keep_names + list(pre))
+            if su:
+                play += [su, ""]
             if pre and set(pre) == set(keep_names):   # totems and self-buffs: one line instead of the same list twice
                 play += ["**Before the pull, then keep up all fight:** " + keep_text + ".", ""]
             else:
@@ -960,6 +1081,11 @@ def mode_section(cls, spec, mode, builds, nums, src):
             if quiet:   # talents the build takes whose ability has no line in the rotation (2026-10-02, user report on unused abilities)
                 play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
             if prio:   # "Then" only after a pre-pull, keep-up or talent line (2026-10-15 page audit B9)
+                # a line off the global cooldown is no step that waits its turn (2026-11-08 full page read S6: Fury's Heroic Strike and
+                # Bloodrage under an always-ready Hamstring read as never pressed)
+                off = set(OFF_GCD.get(cls, []))
+                prio = [x + ("; no global cooldown, so press it alongside the others" if (re.findall(r"\*\*(.+?)\*\*", x) or [""])[0] in off
+                             and "no global cooldown" not in x else "") for x in prio]
                 then = play[-2:] != ["## How to play", ""]
                 play += [("**Then press" if then else "**Press") + " the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
                 # the filler: the last line when it has no condition and no cooldown (2026-10-09: Bloodrage, Aimed Shot, Fire Nova had been
@@ -968,6 +1094,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 shown = set(pre) | set(keep_names) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
                 # the build's casts in the full raid the page ranks on (the dummy race's when the environments run has none)
                 casts = raid_casts_of(cls, r["entry"], top["id"]) or casts_of(cls, r["entry"], top["id"])
+                if not fill:   # the build's most-cast always-ready spell the list left out is its filler (2026-11-08 full page read S7:
+                    nocd = simple_rotation.cooldowns(cls)   # Subtlety's Hemorrhage, 30 casts a fight, sat under "Advanced")
+                    cand = [(n, sp) for sp, n in (casts or {}).items() if n >= 8 and nocd.get(sp) is False and sp not in shown
+                            and sp not in ("Auto Shot", "Attack", "Shoot") and not simple_rotation.is_self(sp)]
+                    if cand:
+                        fill = max(cand)[1]
+                        prio.append(f"**{fill}**")
+                        play.append(f"{len(prio)}. **{fill}**")
+                        shown.add(fill)
                 extra = [f"**{x}**: in the last {n:g} seconds of the fight, when there is no time left for another **{f}**" for x, n, f in late]
                 extra += twists
                 extra += simple_rotation.advanced(cls, casts, shown, simple_rotation.mcd_window(texts))
@@ -1017,6 +1152,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
         mdl = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
         gl = guides.render(cls, spec, mode, f"leveling:{mdl}", guides.leveling_fingerprint(cls, mdl))
     o += play + gl + talents + numbers
+    if not (mode == "leveling" and top.get("raid_path")):   # a healer's or tank's leveling build is its raid build: the raid page explains it
+        o += idle_note(cls, top, "\n".join(o))
     if mode == "raid" and not (R.get(top["id"]) or {}).get("tank"):
         # a damage spec that also holds the class's tank builds (the druid's bear in Feral Combat, 2026-10-15): the best tank build with
         # its numbers and gear, as on the Protection pages
@@ -1033,6 +1170,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
     same = {json.dumps(sorted(rs.flat(top).items()))}
     uniq = []
     shown_setups = variant_ids(cls, top, builds, nums) if mode == "raid" else set()
+    # 2026-11-08 full page read R22: a build with the talents of one under "Other setups" was listed again as another build
+    same |= {json.dumps(sorted(rs.flat(b).items())) for b in builds if b["id"] in shown_setups}
     for b in alts:
         if b["id"] in shown_setups:   # already under "Other setups of this spec" (2026-10-15 page audit B9)
             continue
@@ -1237,7 +1376,8 @@ def class_pages(cls):
             idx += [LG.macros_line(cls), ""]
         if mode == "raid":
             # only specs with a raid page (2026-10-25: Beast-Survival kept its tier row from the ML record after its raid build left)
-            idx += tier_table(cls, [s for s in specs if not s.startswith("Hybrid") or g[s]["raid"]], d / "README.md")
+            # 2026-11-08 full page read R12: a spec without a raid page (rogue Assassination) kept its row: every spec needs its raid page
+            idx += tier_table(cls, [s for s in specs if g[s]["raid"]], d / "README.md")
         idx += [f"{DER_MARK} = a derived build (searched in a simulator). "
                 f"{GEN_MARK} = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the "
                 "simulations' noise and assumptions: treat them as a tie.", "", "---", foot(raid_sims(nums[0]) if mode == "raid" else None), ""]

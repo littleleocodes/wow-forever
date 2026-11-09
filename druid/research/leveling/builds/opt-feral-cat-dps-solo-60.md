@@ -78,9 +78,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 3. **Naturalist** — Removing it costs 2.3 points of score in this model.
 4. **Nature's Reach** — Removing it costs 2.2 points of score in this model.
 5. **Sharpened Claws** — Removing it costs 2.2 points of score in this model.
-6. **Berserk** — Removing it costs 2.1 points of score in this model.
-7. **Natural Instinct** — Removing it costs 2.0 points of score in this model.
-8. **Rend and Tear** — Removing it costs 1.8 points of score in this model.
+6. **Natural Instinct** — Removing it costs 2.0 points of score in this model.
+7. **Rend and Tear** — Removing it costs 1.8 points of score in this model.
 
 ## Leveling rotation
 
@@ -91,6 +90,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Report: druid/research/talents/forever/optimizer/feral-cat-dps-solo-60.md
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/31/11 -> 9/30/12; Berserk 1 gone; refill +1 Natural Shapeshifter; order dropped (order_repair.py) (refill: the feral-cat-dps model, solo-60).
 - 2026-11-06 (order_repair.py, page audit K2): the order a repair dropped is the stats model's leveling order (feral-cat-dps, leveling-st), the order the open leveling search races an order-less build with; not raced here.
+- 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Berserk; a tree change or a repair took them out).
 
 ## Open questions (verify in the live game)
 
