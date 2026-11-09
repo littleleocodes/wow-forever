@@ -1367,7 +1367,11 @@ def profession_section(profs):
             o += [f"| {a}-{b} | {r['name']} | {crafts:.0f} | {net_money(c)} |"]
         top6 = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]
         CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": stop, "total": total,
-                                   "steps": [{"from": a, "to": b, "recipe": r["name"], "crafts": round(crafts), "cost": c} for a, b, r, crafts, c in groups],
+                                   "steps": [{"from": a, "to": b, "recipe": r["name"], "crafts": round(crafts), "cost": c,
+                                              "mats": [(item_name(i), round(n * crafts)) for i, n in r["reagents"]],
+                                              "product": item_name(r["out_item"]) if r.get("out_item") else None,
+                                              "sell": resale(r["out_item"]) if r.get("out_item") else None}
+                                             for a, b, r, crafts, c in groups],
                                    "mats": [(item_name(i), round(n)) for i, n in top6]})
         o += ["", (f"You spend about {AH.money(total)} in all" if total >= 0 else f"You make about {AH.money(-total)} in all")
               + f" to reach {stop}, after selling what you make at its usual price (at most 8 of each, and "

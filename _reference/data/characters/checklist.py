@@ -66,7 +66,7 @@ def item(r):
     return f'<span class="q q{min(max(r.get("quality") or 2, 1), 5)}">{esc(r["item"])}</span>'
 
 
-def upgrade_line(r, lv):
+def upgrade_line(r, lv, why=True):
     when = "now" if r["level"] <= lv else f"wear at {r['level']}"
     head = f'{item(r)} <span class="slot">{esc(r["slot"])}</span> <span class="pct">{esc(r["pct"])} faster</span>'
     bits = [f"{when}", f"saves about {r['minutes']} min"]
@@ -85,7 +85,7 @@ def upgrade_line(r, lv):
         sub += f'<br><span class="alt">{esc(r["miss"])}: {md(r["fallback"])}</span>'
     if r.get("wait"):
         sub += f'<br><strong>{md(r["wait"])}</strong>'
-    if r.get("why"):
+    if why and r.get("why"):
         sub += f'<br><span class="why">Kept long because: {md(r["why"])}</span>'
     return head, sub
 
@@ -134,109 +134,153 @@ def stage_html(g, lv):
             + (f'<p class="muted small">Next change at {nxt["from"]}: {md(nxt["title"])}.</p>' if nxt else ""))
 
 
+def steps_html(C, lv):
+    """The town visit as numbered steps in the order you walk them (2026-11-09, user: "a to do list of almost a step by step guide. Like
+    1. Make this gear 2. Do X on the auction house 3. Start working towards this piece of gear via quest or dungeon"): buy, learn,
+    craft, sell, gear up, train, pick up quests, then what to work toward. A step with nothing to do is left out."""
+    soon, later = C.get("soon") or [], C.get("later") or []
+    profs = C.get("professions") or []
+    steps = []
+
+    # the craft steps worth doing now: those that make money (the rest is listed as the way on)
+    craft_steps = [(pp, st) for pp in profs for st in pp["steps"] if st["cost"] < 0]
+    mats = {}
+    for pp, st in craft_steps:
+        for n, k in st.get("mats") or []:
+            mats[n] = mats.get(n, 0) + k
+    gear_crafts = [r for r in soon if r["kind"] == "craft" and r["level"] <= lv + 3]
+
+    # 1. buy
+    items = []
+    for r in soon:
+        if r["kind"] in ("auction", "market") and r["get_at"] <= lv:
+            head, sub = upgrade_line(r, lv, why=False)
+            items.append(todo(f"buy{r['item']}{r['slot']}", f"Buy {head}", sub))
+    for cn in C.get("consumables") or []:
+        if cn["best"] and cn.get("worth") and cn.get("qty"):
+            tr = C.get("trip") or {}
+            items.append(todo(f"cons{cn['item']}", f"Buy ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
+                              f"{coins(cn['total'])} · keeps it up for about {tr.get('minutes', 0) / 60:.1f} h of play · {esc(cn['effect'])}"))
+    if mats:
+        items.append(todo("mats", "Buy the materials for your crafts below (less what is in your bags)",
+                          ", ".join(f"{esc(n)} ×{k}" for n, k in sorted(mats.items(), key=lambda kv: -kv[1]))))
+    steps.append(("Auction House", "Buy", items))
+
+    # 2. learn
+    items = []
+    for cr in C.get("crafts") or []:
+        if not cr["known"] and cr["level"] <= lv + 8:
+            items.append(todo(f"learn{cr['item']}", f"Learn {esc(cr['item'])}",
+                              f"{esc(cr['profession'])} {cr.get('skill') or '?'} (you have {cr['have']}) · {esc(cr.get('learn') or 'source unknown')} · "
+                              f"for your {esc(cr['slot'])} at {cr['level']}"))
+    for pp in profs:
+        if pp.get("capped"):
+            items.append(todo(f"rank{pp['name']}{pp['cap']}", f"Train the next {esc(pp['name'])} rank", f"you are at its cap, {pp['skill']}/{pp['cap']}"))
+    steps.append(("Profession trainer", "Learn", items))
+
+    # 3. craft
+    items = []
+    for pp, st in craft_steps:
+        items.append(todo(f"skill{pp['name']}{st['from']}", f"Craft {esc(st['recipe'])} ×{st['crafts']}",
+                          f"{esc(pp['name'])} {st['from']}–{st['to']} · {net(st['cost'])} after selling them"))
+    for r in gear_crafts:
+        head, sub = upgrade_line(r, lv, why=False)
+        items.append(todo(f"craft{r['item']}", f"Craft {head}", sub))
+    for pp in profs:
+        rest = [st for st in pp["steps"] if st["cost"] >= 0]
+        if rest:
+            more = sum(st["cost"] for st in rest)
+            items.append(info(f"To keep raising {esc(pp['name'])}",
+                              f"next {esc(rest[0]['recipe'])} ×{rest[0]['crafts']} ({coins(rest[0]['cost'])}); "
+                              f"about {coins(more)} more to reach {pp['stop']}"))
+    steps.append(("Workbench", "Craft", items))
+
+    # 4. sell
+    items = []
+    for pp, st in craft_steps:
+        if st.get("product") and st.get("sell"):
+            each, limit = st["sell"]
+            n = min(st["crafts"], limit) if limit else st["crafts"]
+            items.append(todo(f"sell{st['product']}{st['from']}", f"Sell {esc(st['product'])} ×{n}",
+                              f"about {coins(each)} each after the auction house's cut · list the rest later if they do not all sell"))
+    steps.append(("Auction House", "Sell", items))
+
+    # 5. gear up: wear and enchant
+    items = []
+    for r in soon:
+        if r["kind"] in ("auction", "market", "craft", "vendor") and r["get_at"] <= lv:
+            when = "Wear" if r["level"] <= lv else f"Keep for level {r['level']}:"
+            items.append(todo(f"wear{r['item']}", f"{when} {item(r)} <span class=\"slot\">{esc(r['slot'])}</span>"))
+    for e in C.get("enchants") or []:
+        tx = e[2:] if e.startswith("- ") else e
+        if ": skip," not in tx:
+            items.append(todo(f"ench{tx[:60]}", md(tx)))
+    steps.append(("Bags", "Gear up", items))
+
+    # 6. train
+    items = []
+    tr = C.get("training") or []
+    here = next((x for x in tr if x["level"] == lv), None)
+    if here and here["need"]:
+        items.append(todo(f"train{lv}", f"Train {', '.join(esc(n) for n in here['need'])}", f"{coins(here['cost'])} · skip what you already have"))
+    nxt = next((x for x in tr if x["level"] > lv and x["need"]), None)
+    if nxt:
+        items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"])))
+    tal = C.get("talents") or {}
+    if tal.get("path"):
+        path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])
+        if tal.get("have", 0) < tal.get("want", 0):
+            items.append(todo(f"talent{lv}", "Spend your talent point", path))
+        else:
+            items.append(info("Next talents", path))
+    steps.append(("Class trainer", "Train", items))
+
+    # 7. pick up quests before you leave
+    items = []
+    for r in soon:
+        if r["kind"] == "quest":
+            head, sub = upgrade_line(r, lv, why=False)
+            items.append(todo(f"quest{r['item']}", f"Quest for {head}", sub))
+    for dg in C.get("dungeons") or []:
+        if dg["run"] <= lv + 3:
+            qs = [q for q in dg["quests"] if not q["grey"] and not q["log"]]
+            if qs:
+                items.append(todo(f"dq{dg['zone']}", f"Pick up the quests for {esc(dg['zone'])}",
+                                  "; ".join(f"{esc(q['title'])} ({q['level']}{', ' + esc(q['start']) if q['start'] else ''})" for q in qs)))
+    steps.append(("Before you leave", "Pick up quests", items))
+
+    # 8. work toward
+    items = []
+    for dg in C.get("dungeons") or []:
+        if dg["run"] <= lv + 3:
+            items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
+                              "once, with its quests" + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+    for r in soon:
+        if r["kind"] in ("auction", "market") and r["get_at"] > lv:
+            head, sub = upgrade_line(r, lv, why=False)
+            items.append(todo(f"watch{r['item']}", f"At {r['get_at']}: buy {head}", sub))
+    for r in later[:4]:
+        head, sub = upgrade_line(r, lv, why=False)
+        items.append(info(f"At {r['get_at']}: {KIND[r['kind']].lower()} {head}", sub))
+    steps.append(("Next levels", "Work toward", items))
+
+    out, n = [], 0
+    for where, title, its in steps:
+        if not its:
+            continue
+        n += 1
+        out.append(f'<section class="card step"><h3><span class="num">{n}</span><span class="where">{esc(where)}</span>{esc(title)}</h3>'
+                   f'<ul class="list">{"".join(its)}</ul></section>')
+    return "".join(out)
+
+
 def render(cfg, C):
     h = C["head"]
     lv = h["level"]
     g = guide(cfg["class"], h["spec"])
     soon, later = C.get("soon") or [], C.get("later") or []
     gold = C.get("gold") or {}
-    sec = []
-
-    # the trainer
-    tr = C.get("training") or []
-    items = []
-    here = next((t for t in tr if t["level"] == lv), None)
-    if here and here["need"]:
-        items.append(todo(f"train{lv}", f"Train {', '.join(esc(n) for n in here['need'])}", f"{coins(here['cost'])} · skip what you already have"))
-    for t in [t for t in tr if t["level"] > lv][:2]:
-        if t["need"]:
-            items.append(info(f"Level {t['level']}: {', '.join(esc(n) for n in t['need'])}", f"{coins(t['cost'])} · keep it aside"))
-    opt = [t for t in tr if t["optional"]][:1]
-    if opt:
-        items.append(info("Optional", f"{', '.join(esc(n) for n in opt[0]['optional'])} at {opt[0]['level']} ({coins(opt[0]['optional_cost'])}): "
-                          "spells your rotation does not use"))
-    tal = C.get("talents") or {}
-    if tal.get("path"):
-        path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"])
-        if tal.get("have", 0) < tal.get("want", 0):
-            items.append(todo(f"talent{lv}", "Spend your talent point", path))
-        else:
-            items.append(info("Next talents", path))
-    for n, have, want in (tal.get("diff") or [])[:4]:
-        items.append(info(f"Talent check: {esc(n)}", f"you have {have}, the page has {want}"))
-    sec.append(("Trainer", "Spells and talents", items))
-
-    # the auction house
-    items = []
-    for r in soon:
-        if r["kind"] in ("auction", "market"):
-            head, sub = upgrade_line(r, lv)
-            items.append(todo(f"buy{r['item']}{r['slot']}", head, sub))
-    tr = C.get("trip") or {}
-    hours = f"about {tr['minutes'] / 60:.1f} h of play" + (f", to level {tr['level']}" if tr.get("level") else "") if tr.get("minutes") else ""
-    for c in C.get("consumables") or []:
-        if not c["best"]:
-            continue
-        head = f'{esc(c["item"])} <span class="slot">{esc(c["kind"].lower())}</span> <span class="pct">{esc(c["pct"])} faster</span>'
-        if c.get("worth") and c.get("qty"):
-            items.append(todo(f"cons{c['item']}", f"Buy ×{c['qty']} {head}",
-                              f"{coins(c['total'])} for {hours} · {esc(c['effect'])} · lasts {c['minutes']} min · {coins(c['cost'])} each · "
-                              f"saves {c['saved']:.1f} min an hour, its price takes {c['earn']:.1f} to earn · {esc(c['how'])}"))
-        else:
-            items.append(info(f"Skip {head}", f"costs more than it saves: {c['saved']:.1f} min an hour saved, "
-                              + (f"{c['earn']:.1f} to earn its price" if c.get("earn") is not None else "no price") + f" · {esc(c['effect'])}"))
-    sec.append(("Auction House", "Buy", items))
-
-    # professions
-    items = []
-    for p in C.get("professions") or []:
-        pct_ = 100 * p["skill"] / max(1, p["cap"])
-        bar = f'<span class="skill"><span style="width:{pct_:.0f}%"></span></span>'
-        if p.get("capped"):
-            items.append(todo(f"rank{p['name']}{p['cap']}", f"{esc(p['name'])} {p['skill']}/{p['cap']} {bar}", "at your rank's cap: train the next rank"))
-            continue
-        items.append(info(f"{esc(p['name'])} {p['skill']}/{p['cap']} {bar}",
-                          ((f"you spend about {coins(p['total'])} in all to reach {p['stop']}" if p["total"] >= 0 else
-                            f"you make about {coins(-p['total'])} in all to reach {p['stop']}") if p["steps"] else "no recipe you know gives a point: learn new ones at the trainer")))
-        for st in p["steps"][:4]:
-            items.append(todo(f"skill{p['name']}{st['from']}", f"{esc(st['recipe'])} ×{st['crafts']}",
-                              f"{p['name']} {st['from']}–{st['to']} · {net(st['cost'])}" + (" net" if st["cost"] >= 0 else " after selling them")))
-        if p["mats"]:
-            items.append(info("Materials for the climb", ", ".join(f"{esc(n)} ×{c}" for n, c in p["mats"])))
-    for c in C.get("crafts") or []:
-        if not c["known"] and c["level"] <= lv + 8:   # recipes for the next few levels; later ones show under Coming up
-            items.append(todo(f"learn{c['item']}", f"Learn {esc(c['item'])}",
-                              f"{esc(c['profession'])} {c.get('skill') or '?'} (you have {c['have']}) · {esc(c.get('learn') or 'source unknown')} · for your {esc(c['slot'])} at {c['level']}"))
-    sec.append(("Profession trainer", "Skill up and learn", items))
-
-    # crafting and enchanting
-    items = []
-    for r in soon:
-        if r["kind"] == "craft":
-            head, sub = upgrade_line(r, lv)
-            items.append(todo(f"craft{r['item']}", head, sub))
-    for e in C.get("enchants") or []:
-        t = e[2:] if e.startswith("- ") else e
-        if ": skip," in t:
-            items.append(info(md(t)))
-        else:
-            items.append(todo(f"ench{t[:60]}", md(t)))
-    sec.append(("Workbench", "Craft and enchant", items))
-
-    # out in the world
-    items = []
-    for r in soon:
-        if r["kind"] in ("quest", "dungeon", "vendor"):
-            head, sub = upgrade_line(r, lv)
-            items.append(todo(f"world{r['item']}", f'<span class="tag">{KIND[r["kind"]]}</span> {head}', sub))
-    for dg in C.get("dungeons") or []:   # every dungeon once, with its quests (the drops are bonuses over the plan)
-        if dg["run"] <= lv + 3:
-            body = f'<span class="tag">Dungeon</span> Run {esc(dg["zone"])} at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>'
-            qs = "; ".join(f"{esc(q['title'])} ({q['level']}{', in your log' if q['log'] else ''}{', ' + esc(q['start']) if q['start'] else ''})"
-                           for q in dg["quests"] if not q["grey"])
-            sub = (f"Pick up first: {qs}" if qs else "No quests for you there") + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])
-            items.append(todo(f"dg{dg['zone']}", body, sub))
-    sec.append(("Out in the world", "Quests and dungeons, the next few levels", items))
+    town = steps_html(C, lv)
 
     # right column: bars, fight, judging, gold
     bars, coming = bars_html(g, lv)
@@ -284,9 +328,6 @@ def render(cfg, C):
                         + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 
-    town = "".join(
-        f'<section class="card"><h3><span class="where">{esc(w)}</span>{esc(t)}</h3><ul class="list">{"".join(it)}</ul></section>'
-        for w, t, it in sec if it)
     refresh = esc(h["fetched"])
     ah = f" · auction prices {h['ah_age']:.1f} h old" if h.get("ah_age") is not None else ""
     profs = " · ".join(f"{esc(k)} {v[0]}" for k, v in h["professions"].items())
@@ -348,6 +389,8 @@ h2 {{ font: 700 1.05rem var(--display); text-transform: uppercase; letter-spacin
 .col {{ display: grid; gap: 14px; min-width: 0; }}
 .card {{ background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }}
 .card h3 {{ margin: 0 0 8px; font: 700 1.2rem/1.2 var(--display); display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }}
+.num {{ font: 700 1.35rem/1 var(--display); color: var(--panel); background: var(--accent); border-radius: 50%; width: 1.6em; height: 1.6em; display: inline-grid; place-items: center; flex: none; }}
+.card h3:has(.num) {{ align-items: center; }}
 .where {{ font: 600 .74rem var(--display); text-transform: uppercase; letter-spacing: .12em; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 4px; }}
 h4 {{ margin: 12px 0 6px; font: 600 .82rem var(--display); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }}
 ul.list {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }}
@@ -408,7 +451,7 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
 </div></header>
 <main class="wrap" data-refresh="{refresh}">
   {changes}
-  <h2>In town</h2>
+  <h2>Your steps this visit</h2>
   <div class="board">
     <div class="col">{town}</div>
     <div class="col">

@@ -87,7 +87,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.4 hours old). "For your trip": enough to keep it up for about 3.1 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.7 hours old). "For your trip": enough to keep it up for about 3.1 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
