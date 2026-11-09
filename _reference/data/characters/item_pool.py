@@ -240,9 +240,15 @@ def versions(cls, faction, school_share, rows, plain=False):
     db = sim_db()
     items = {it["id"]: it for it in db["items"]}
     suffixes = {s["id"]: s for s in db.get("randomSuffixes") or []}
-    best = {}
+    best, classic = {}, None
     for item, v, name, src in rows:
         it = items.get(item)
+        if not it and plain and not v:   # a plain item the simulator's database lost (b90e2b9 dropped a third of them; Thoughtcast Boots,
+            classic = classic if classic is not None else classic_items(cls, school_share)   # Cassandra's Grace): the Classic database's
+            c = classic.get(item)                                                             # stats (2026-11-09)
+            if c and any(k != "armor" for k in c["stats"]) and item not in best:
+                best[item] = dict(c, sources=[dict(src)])
+            continue
         if not it or not usable(it, cls, faction):
             continue
         if v.startswith("b"):

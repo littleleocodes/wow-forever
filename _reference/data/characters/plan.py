@@ -191,9 +191,14 @@ def enchants(school_share):
     return out
 
 
+FRECIPES = {}   # Forever's recipe book for the character's professions (professions.forever_recipes, main)
+
+
 def reagents_of(spell):
-    """[(name, count, item id)] of a craft spell (the Classic recipe)."""
+    """[(name, count, item id)] of a craft spell: Forever's recipe (Blizzard's API) when known, else the Classic one."""
     names = {int(r["item"]): r["name"] for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8"))}
+    if spell in FRECIPES:
+        return [(names.get(i, str(i)), n, i) for i, n in FRECIPES[spell]["reagents"]]
     for r in csv.DictReader(open(IP.RAW / "craft_spells.csv", encoding="utf-8")):
         if int(r["spell"]) == spell:
             return [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1]), int(x.split(":")[0]))
@@ -286,8 +291,9 @@ def sources_text(it):
                 out.append(f"{s['profession']}: you know this recipe, craft it now")
             else:
                 have = (PROFS.get(s["profession"]) or (None,))[0]
-                out.append(f"{s['profession']}: learn it first ({s.get('learn') or 'recipe source unknown'}; Classic asked skill "
-                           f"{s['skill'] if s.get('skill') else '?'}, Forever often less; you have {have})")
+                need = (f"turns yellow at {s['skill']} in the client's data" if (s.get("learn") or "").startswith("a Forever recipe")
+                        else f"Classic asked skill {s['skill'] if s.get('skill') else '?'}, Forever often less")
+                out.append(f"{s['profession']}: learn it first ({s.get('learn') or 'recipe source unknown'}; {need}; you have {have})")
         elif k == "vendor":
             out.append(f"vendor {s.get('npc')} ({s.get('zone')})")
         elif k in ("rep", "quartermaster", "trash") and len(it["sources"]) == 1:
@@ -1329,6 +1335,12 @@ def main():
                 byid[m["id"]] = m
     COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])
     RECIPES[:] = PF.known_recipes(snap["profile"]["name"], ah.get("duckdb"), d / "recipes.json")
+    FRECIPES.update(PF.forever_recipes([k for k in profs if k in PF.PROFESSION_ID], cfg.get("region", "us")))
+    for p in pool:   # a craft Classic's data lacks (Forever's own recipes): the skill where the client table turns it yellow
+        for s in p["sources"]:
+            if s["kind"] == "craft" and not s.get("skill") and s.get("spell") in FRECIPES:
+                s["skill"] = FRECIPES[s["spell"]]["yellow"]
+                s["learn"] = s.get("learn") or "a Forever recipe: where it is taught is not in the data yet"
     KNOWN.update(r["spell"] for r in RECIPES)
     INLOG.update(q["id"] for q in (snap.get("quests") or {}).get("in_progress") or [])
     global GEAR_SHARE

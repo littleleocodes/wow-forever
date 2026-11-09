@@ -41,12 +41,16 @@ def token(region):
 def get(region, tok, path, namespace):
     url = f"https://{region}.api.blizzard.com{path}?" + urllib.parse.urlencode({"namespace": namespace, "locale": "en_US"})
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {tok}"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, json.load(r)
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", "replace")
-        return e.code, {"error": body[:300]}
+    for attempt in range(3):   # a read that times out is asked again twice (2026-11-09: one timeout had ended a 1,000-request recipe pull)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.status, json.load(r)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "replace")
+            return e.code, {"error": body[:300]}
+        except (TimeoutError, urllib.error.URLError, ConnectionError) as e:
+            if attempt == 2:
+                return 0, {"error": f"{type(e).__name__}: {e}"}
 
 
 def fetch(slug, region="us"):

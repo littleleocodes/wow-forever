@@ -31,6 +31,61 @@ def thresholds():
     return out
 
 
+PROFESSION_ID = {"Tailoring": 197, "Enchanting": 333, "Cooking": 185, "Alchemy": 171, "First Aid": 129, "Blacksmithing": 164,
+                 "Leatherworking": 165, "Engineering": 202, "Mining": 186}
+
+
+def forever_recipes(professions, region="us"):
+    """{craft spell: {"recipe", "profession", "item", "reagents": [(item, count)], "yellow"}} for the professions given, from Blizzard's
+    Forever API (profession -> skill tiers -> recipes, each with its crafted item and reagents; 2026-11-09: Forever's own recipes, Earthen
+    Silk Slippers among them, are missing from the Classic data). A recipe id is a SkillLineAbility id: its spell and skill range come
+    from the client table (SLA). Cached in cache/recipes-forever-<region>.json, asked again weekly."""
+    path = HERE / "cache" / f"recipes-forever-{region}.json"
+    cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    today = datetime.date.today()
+    todo = [x for x in professions if x in PROFESSION_ID and (x not in cache or (today - datetime.date.fromisoformat(
+        cache[x].get("fetched", "2000-01-01"))).days > 7)]
+    if todo:
+        import bnet
+        tok = bnet.token(region)
+        ns = f"static-forever-{region}"
+        for prof in todo:
+            st, js = bnet.get(region, tok, f"/data/wow/profession/{PROFESSION_ID[prof]}", ns)
+            if st != 200:
+                continue
+            ids = []
+            for tier in js.get("skill_tiers") or []:
+                st, t = bnet.get(region, tok, f"/data/wow/profession/{PROFESSION_ID[prof]}/skill-tier/{tier['id']}", ns)
+                for cat in (t.get("categories") or []) if st == 200 else []:
+                    ids += [r["id"] for r in cat.get("recipes") or []]
+            old = (cache.get(prof) or {}).get("recipes") or {}
+            rec = {}
+
+            def one(rid):
+                return rid, bnet.get(region, tok, f"/data/wow/recipe/{rid}", ns)
+
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(8) as pool:   # about 470 recipes for Tailoring: eight at a time
+                for rid, (st, x) in pool.map(one, ids):
+                    if st == 200:
+                        rec[str(rid)] = {"name": x.get("name"), "item": (x.get("crafted_item") or {}).get("id"),
+                                         "reagents": [[g["reagent"]["id"], g["quantity"]] for g in x.get("reagents") or []]}
+                    elif str(rid) in old:   # a failed read keeps last week's copy
+                        rec[str(rid)] = old[str(rid)]
+            cache[prof] = {"fetched": today.isoformat(), "recipes": rec}
+            path.parent.mkdir(exist_ok=True)
+            path.write_text(json.dumps(cache, separators=(",", ":")) + "\n", encoding="utf-8")   # saved after each profession
+    sla = {int(r["ID"]): (int(r["Spell"]), int(r["TrivialSkillLineRankLow"])) for r in csv.DictReader(open(SLA, encoding="utf-8"))}
+    out = {}
+    for prof in professions:
+        for rid, r in ((cache.get(prof) or {}).get("recipes") or {}).items():
+            if int(rid) in sla:
+                spell, yellow = sla[int(rid)]
+                out[spell] = {"recipe": int(rid), "profession": prof, "name": r["name"], "item": r["item"],
+                              "reagents": [tuple(g) for g in r["reagents"]], "yellow": yellow}
+    return out
+
+
 def known_recipes(char, duckdb_path, cache):
     """[{profession, spell, name, out_item, reagents: [(item, count)]}] of the character's known recipes; from the add-on's database when
     it can be read now, else the last copy."""
