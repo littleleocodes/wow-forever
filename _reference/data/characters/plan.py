@@ -35,6 +35,7 @@ LAST = 59              # the plan stops at 59: level 60 gear is not leveling gea
 ENDGAME = {"Naxxramas", "Ahn'Qiraj", "Ruins of Ahn'Qiraj", "Temple of Ahn'Qiraj", "Gates of Ahn'Qiraj", "Molten Core", "Blackwing Lair",
            "Zul'Gurub", "Onyxia's Lair", "Alterac Valley", "Warsong Gulch", "Arathi Basin"}
 LOOKAHEAD = 3          # "a piece of gear that I will use within a couple levels": an item usable this many levels on
+MIN_LASTS = 3          # an upgrade or enchant is suggested only for an item worn this many levels (character.json "min_levels")
 SKILL_CAP = [(1, 75), (10, 150), (20, 225), (35, 300)]   # Classic's profession ranks: the cap a character of that level can train
 API_SLOT = {"HEAD": "head", "NECK": "neck", "SHOULDER": "shoulder", "BACK": "back", "CHEST": "chest", "WRIST": "wrist", "HANDS": "hands",
             "WAIST": "waist", "LEGS": "legs", "FEET": "feet", "FINGER_1": "finger1", "FINGER_2": "finger2", "TRINKET_1": "trinket1",
@@ -218,6 +219,7 @@ def sources_text(it):
     return "; ".join(out)
 
 
+DATAVER = {}   # the data versions the page names (main())
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
 
@@ -311,25 +313,32 @@ def plan(cfg, snap, at, pool, profs):
                 taken.add(c["item"].get("id"))
     for e in events:
         e.setdefault("until", None)
-    # an upgrade replaced again within a level is not worth the trip (2026-11-09: a quest ring worn for one level): drop it, and the next
-    # upgrade of the slot replaces what it replaced, its gain counted against that
+    # an upgrade worn fewer than MIN_LASTS levels before the next one is not worth the trip (user 2026-11-09: "if I'm going to just go
+    # and get something that is only going to last one level, then there's no point in getting it when I'm just going to or can replace
+    # it within the next level or so"): it is dropped, the next upgrade of the slot replaces what it replaced and its gain is counted
+    # against that; the end of leveling (60) counts as a replacement
     kept = []
     for slot in SLOT_ORDER:
         evs = [e for e in events if e["slot"] == slot]
-        i = 0
-        while i < len(evs):
-            e = evs[i]
-            if e["until"] is not None and e["until"] - e["level"] <= 1 and i + 1 < len(evs):
-                n = evs[i + 1]
-                n["replaces"], n["prev"] = e["replaces"], e["prev"]
-                wl = at(n["level"])
-                pv = sum(value((x or {}).get("stats"), wl) for x in n["prev"])
-                nv = value(n["item"]["stats"], wl) + (value(n["off"]["stats"], wl) if n.get("off") else 0.0)
-                n["gain"] = (nv - pv) / wl["time"]
-                n["get_at"] = min(n["get_at"], max(n["get_at"], e["level"]))
+        changed = True
+        while changed:
+            changed = False
+            for i, e in enumerate(evs):
+                end = e["until"] if e["until"] is not None else 60
+                if end - e["level"] >= MIN_LASTS:
+                    continue
+                if i + 1 < len(evs):
+                    n = evs[i + 1]
+                    n["replaces"], n["prev"] = e["replaces"], e["prev"]
+                    wl = at(n["level"])
+                    pv = sum(value((x or {}).get("stats"), wl) for x in n["prev"])
+                    nv = value(n["item"]["stats"], wl) + (value(n["off"]["stats"], wl) if n.get("off") else 0.0)
+                    n["gain"] = (nv - pv) / wl["time"]
                 evs.pop(i)
-                continue
-            i += 1
+                changed = True
+                break
+        for i, e in enumerate(evs):   # each kept upgrade lasts until the next kept one
+            e["until"] = evs[i + 1]["level"] if i + 1 < len(evs) else None
         kept += evs
     return eq, sorted(kept, key=lambda e: (e["level"], SLOT_ORDER.index(e["slot"])))
 
@@ -402,9 +411,12 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           "and wear a level or two later. Percentages are how much faster you kill a mob of your level once the item replaces what you "
           "wear (fight lab).", ""]
     worn = {s: (eq.get("main-hand") if s == "weapon" else eq.get(s)) for s in SLOT_ORDER}
+    for s in SLOT_ORDER:   # when the item worn now is replaced (the first upgrade of the slot)
+        if worn.get(s):
+            worn[s] = dict(worn[s], until=next((e["level"] for e in events if e["slot"] == s), None), since=lv)
     for e in sorted(soon, key=lambda e: e["level"]):
         worn[e["slot"]] = {"name": e["item"]["name"], "stats": e["item"]["stats"], "enchant": [], "enchant_stats": {},
-                           "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"]}
+                           "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
     o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
     o += action_sections(soon, at, lv)
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
@@ -454,7 +466,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           "- Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their "
           "drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession "
           "rank allows the skill at that level.",
-          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of the time per kill or more over what you would be wearing then.", ""]
+          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of the time per kill or more over what you would be wearing then, and you "
+          f"would wear it at least {MIN_LASTS} levels before the next one (level 60 ends leveling): an item you replace a level or two later "
+          "is left out, and the next upgrade is counted against what you would still be wearing. Enchants: only on an item you keep that long.",
+          f"- Data: the simulator's WoW: Forever item database at {DATAVER['sim']} ({DATAVER['items']} items; it grows as the game is played, "
+          "and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's "
+          f"API for the character (fetched {fetched}) and for Forever's own quests (asked again weekly), stat values measured {DATAVER['weights']} "
+          f"for {DATAVER['weights_build']}.", ""]
     (d / "README.md").write_text("\n".join(o) + "\n", encoding="utf-8")
 
 
@@ -519,6 +537,9 @@ def enchant_lines(worn, ench, profs, wl):
         it = worn.get(slot)
         if not it:
             continue
+        if (it.get("until") or 60) - it.get("since", 0) < MIN_LASTS:   # not worth enchanting an item you wear for a level or two
+            out.append(f"- **{it['name']}** ({slot}): skip, you replace it at level {it['until']}.")
+            continue
         kinds = ["weapon2h", "weapon"] if slot == "weapon" and it.get("two_hand") else (["weapon"] if slot == "weapon" else [slot])
         have = value(it.get("enchant_stats"), wl)
         opts = sorted([e for e in ench if e["slot"] in kinds], key=lambda e: -value(e["stats"], wl))
@@ -550,10 +571,16 @@ def main():
     import level_guides as LG
     b, order, prov, rot = LG.pick(cfg["class"], cfg["spec"])
     wfile = f"{cfg['class']}-{rot}.json"
-    at, _ = weights(cfg["class"], rot)
+    at, wrec = weights(cfg["class"], rot)
+    commit, n_items = IP.sim_version()
+    DATAVER.update({"sim": commit, "items": n_items, "weights": wrec.get("date"), "weights_build": wrec.get("build")})
+    if wrec.get("build") != b["id"]:
+        print(f"WARNING: stat values were measured for {wrec.get('build')}; the page now shows {b['id']}: re-run stat_weights.py")
     pool = IP.pool(cfg["class"], cfg["faction"], cfg["school_share"], cfg.get("region", "us"))
     profs = skills(snap)
     PROFS.update(profs)
+    global MIN_LASTS
+    MIN_LASTS = int(cfg.get("min_levels", MIN_LASTS))
     eq, events = plan(cfg, snap, at, pool, profs)
     ench = enchants(cfg["school_share"])
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)

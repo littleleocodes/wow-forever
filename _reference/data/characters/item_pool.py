@@ -139,6 +139,15 @@ def sim_db():
     return json.load(open(pathlib.Path(setup.checkout()) / "assets/database/db.json", encoding="utf-8"))
 
 
+def sim_version():
+    """(commit, item count) of the simulator database the pool reads: the page names it, so an update of the database shows."""
+    import subprocess
+    import setup
+    repo = pathlib.Path(setup.checkout())
+    commit = subprocess.run(["git", "-C", str(repo), "rev-parse", "--short=9", "HEAD"], capture_output=True, text=True).stdout.strip()
+    return commit, len(sim_db()["items"])
+
+
 def classic_quests():
     return {int(r["quest"]): r for r in csv.DictReader(open(RAW / "quests.csv", encoding="utf-8"))}
 
@@ -163,17 +172,24 @@ def recipe_skills():
 
 def forever_quests(ids, region="us"):
     """Zone and faction of quests Forever added, from Blizzard's quest API (cached; the API names no quest level)."""
+    import datetime
     path = HERE / "cache" / f"quests-forever-{region}.json"
     cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
-    todo = [q for q in ids if str(q) not in cache]
+    today = datetime.date.today()
+    # an entry older than a week, or one the API had no answer for, is asked again: Blizzard's data for Forever is still filling in
+    stale = {q for q, v in cache.items() if v.get("error") or (today - datetime.date.fromisoformat(v.get("fetched", "2000-01-01"))).days > 7}
+    todo = [q for q in ids if str(q) not in cache or str(q) in stale]
     if todo:
         import bnet
         tok = bnet.token(region)
         for q in todo:
             st, js = bnet.get(region, tok, f"/data/wow/quest/{q}", f"static-forever-{region}")
-            cache[str(q)] = {"title": js.get("title"), "area": (js.get("area") or {}).get("name"), "type": (js.get("type") or {}).get("name"),
-                             "faction": ((js.get("requirements") or {}).get("faction") or {}).get("type"), "xp": (js.get("rewards") or {}).get("experience")} \
-                if st == 200 else {"error": st}
+            if st == 200:
+                cache[str(q)] = {"title": js.get("title"), "area": (js.get("area") or {}).get("name"), "type": (js.get("type") or {}).get("name"),
+                                 "faction": ((js.get("requirements") or {}).get("faction") or {}).get("type"),
+                                 "xp": (js.get("rewards") or {}).get("experience"), "fetched": today.isoformat()}
+            else:
+                cache[str(q)] = {"error": st, "fetched": today.isoformat()}
         path.parent.mkdir(exist_ok=True)
         path.write_text(json.dumps(cache, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return cache
