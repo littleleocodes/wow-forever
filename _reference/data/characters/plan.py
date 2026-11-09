@@ -282,7 +282,11 @@ def sources_text(it):
                 log += f"; from {st[1]}"
             out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv}{log})")
         elif k == "auction":
-            out.append(f"Auction House now: {AH.money(s.get('price'))}")
+            mk = next((x for x in it.get("sources") or [] if x["kind"] == "market" and x.get("price")), None)
+            if mk and s.get("price") and s["price"] > 1.5 * mk["price"]:   # a listing far above the usual price: wait for another
+                out.append(f"Auction House: listed now at {AH.money(s['price'])}, usually about {AH.money(mk['price'])}: wait for a cheaper one")
+            else:
+                out.append(f"Auction House now: {AH.money(s.get('price'))}")
         elif k == "market":
             if not any(x["kind"] == "auction" for x in it.get("sources") or []):
                 out.append(f"Auction House: usually listed (in {s['share']:.0%} of the hourly snapshots), about {AH.money(s.get('price'))}, "
@@ -1663,6 +1667,14 @@ def main():
     # rates and stuff if it's within a dungeon?"). Dungeon drops stay out of it and are listed apart, each against what this plan has you
     # wear then, with its drop chance and what a run is worth; a plan built on drops had dropped the auction and quest items it needed as
     # its fallbacks from the buy list and the budget.
+    # gear a profession has to wear (Spellpower Goggles Xtreme: Engineering 215, 2026-11-09): only with that profession at that rank
+    # (Classic's item data; the simulator's database does not say)
+    line_of = {"Engineering": 202, "Tailoring": 197, "Enchanting": 333, "Leatherworking": 165, "Blacksmithing": 164, "Alchemy": 171,
+               "Mining": 186, "Herbalism": 182, "Skinning": 393, "Cooking": 185, "First Aid": 129, "Fishing": 356}
+    have = {line_of[k]: v[0] for k, v in profs.items() if k in line_of}
+    needs = {int(r["item"]): (int(r["required_skill"] or 0), int(r["required_rank"] or 0))
+             for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8")) if r["required_skill"] not in ("", "0")}
+    pool = [p for p in pool if not (lambda n: n and have.get(n[0], 0) < n[1])(needs.get(int(str(p["id"]).split(":")[0])))]
     FULL_BY_ID.update({p["id"]: p for p in pool})
     SCHOOL_SHARE.update(cfg["school_share"])
     sure_pool = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
