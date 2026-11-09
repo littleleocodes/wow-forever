@@ -29,6 +29,7 @@ sys.path[:0] = [str(HERE), str(DATA / "fightlab"), str(DATA / "scorer"), str(DAT
 import ah_prices as AH  # noqa: E402
 import bnet  # noqa: E402
 import item_pool as IP  # noqa: E402
+import professions as PF  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -200,6 +201,8 @@ def reagents_of(spell):
 
 PRICES = None     # ah_prices.Prices of the character's auction house (character.json "ah"), or None
 VENDOR = {}       # vendor price of vendor-sold reagents (thread, dye, vials), copper
+RECIPES = []        # the recipes the character knows (professions.known_recipes)
+KNOWN = set()       # their spell ids
 COMPLETED = set()   # quest ids the character has completed (Blizzard's API): their rewards are gone
 INLOG = set()       # quest ids in the character's quest log now
 
@@ -247,9 +250,12 @@ def sources_text(it):
         elif k == "drop":
             out.append(f"drop: {s.get('boss') or 'world drop'}{', ' + s['zone'] if s.get('zone') else ''}")
         elif k == "craft":
-            have = (PROFS.get(s["profession"]) or (None,))[0]
-            gap = "" if have is None or not s.get("skill") else (f"; you have {have}" if have >= s["skill"] else f"; you have {have}, {s['skill'] - have} to go")
-            out.append(f"{s['profession']} {s['skill'] if s.get('skill') else '?'} ({s.get('learn') or 'recipe source unknown'}{gap})")
+            if s.get("spell") in KNOWN:
+                out.append(f"{s['profession']}: you know this recipe, craft it now")
+            else:
+                have = (PROFS.get(s["profession"]) or (None,))[0]
+                out.append(f"{s['profession']}: learn it first ({s.get('learn') or 'recipe source unknown'}; Classic asked skill "
+                           f"{s['skill'] if s.get('skill') else '?'}, Forever often less; you have {have})")
         elif k == "vendor":
             out.append(f"vendor {s.get('npc')} ({s.get('zone')})")
         elif k in ("rep", "quartermaster", "trash") and len(it["sources"]) == 1:
@@ -278,7 +284,9 @@ def acquirable(it, L, start, profs):
             hi = start + LOOKAHEAD
         if s["kind"] == "craft":
             have = profs.get(s["profession"])
-            if have is None or not s.get("skill") or s["skill"] > skill_cap(L):
+            # a recipe the character knows is craftable now (Forever asks no skill to craft a known recipe: Arcea knew and could make
+            # Spidersilk Boots, Classic 125, at 106); an unknown one is planned by the Classic trainer's skill, which Forever may undercut
+            if have is None or (s.get("spell") not in KNOWN and (not s.get("skill") or s["skill"] > skill_cap(L))):
                 continue
         a = max(lo, start)
         if a <= L and a <= hi:
@@ -466,6 +474,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += action_sections(soon, at, lv)
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
           f"{cfg['class']}/leveling/{cfg['page']}-by-level.md) for your rotation.", ""]
+    o += profession_section(profs)
     # current gear
     o += ["## Your gear", "", "| Slot | Item | Worth at your level | Replaced at |", "|---|---|---|---|"]
     first = {}
@@ -496,13 +505,18 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
             if s["kind"] == "dungeon":
                 runs.setdefault((s["zone"], s["lo"], s["hi"]), []).append((s["boss"], e))
     if runs:
-        o += ["## Dungeons worth running", "", "Every dungeon with an upgrade in the plan, the boss that drops it, and the level you wear it.", ""]
+        o += ["## Dungeons worth running", "", "Every dungeon with an upgrade in the plan, the boss that drops it, and the level you wear it. "
+              "\"One run worth\" adds up each upgrade's minutes of killing saved times its drop chance (25% where the chance is unknown); the run "
+              f"gives its own experience too. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
         for (z, lo, hi), ev in sorted(runs.items(), key=lambda kv: kv[0][1]):
             merged = {}
             for boss, e in ev:   # one line per item: every boss that drops it
                 merged.setdefault(id(e), (e, []))[1].append(boss)
             items = ", ".join(f"{e['item']['name']} ({e['slot']}, wear at {e['level']}, {' or '.join(bosses)})" for e, bosses in merged.values())
-            o += [f"- **{z}** ({lo}-{hi}): {items}"]
+            # one run's expected worth: each upgrade's minutes saved x its drop chance (a run also gives experience of its own)
+            worth = sum(minutes_saved(e, at) * max((s.get("chance") or 0.25) for s in e["item"]["sources"] if s["kind"] == "dungeon"
+                                                    and s["zone"] == z) for e, _ in merged.values())
+            o += [f"- **{z}** ({lo}-{hi}), one run worth about {worth:.0f} min of killing saved: {items}"]
         o += [""]
     o += ["## How this is worked out", "",
           f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
@@ -517,8 +531,30 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           f"- Data: the simulator's WoW: Forever item database at {DATAVER['sim']} ({DATAVER['items']} items; it grows as the game is played, "
           "and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's "
           f"API for the character (fetched {fetched}) and for Forever's own quests (asked again weekly), stat values measured {DATAVER['weights']} "
-          f"for {DATAVER['weights_build']}.", ""]
+          f"for {DATAVER['weights_build']}.",
+          "- Raid preparation (items worth keeping for 60) waits for the mage raid lane's gear redo: today's pre-raid set still holds "
+          "Naxxramas and Ahn'Qiraj quest rewards (the gear pool fault of 2026-11-05).", ""]
     (d / "README.md").write_text("\n".join(o) + "\n", encoding="utf-8")
+
+
+KILL_SHARE = 0.5   # the share of a solo quester's experience that comes from kills (an estimate; the rest is quest experience)
+XP = {}
+
+
+def kills_per_level(L):
+    """Mobs killed in a level: the experience to the next level x KILL_SHARE / a same-level mob's experience (45 + 5 x level, Classic's
+    rule for mobs in Azeroth); the table from the CMaNGOS dump (xp_for_level.csv)."""
+    if not XP:
+        for r in csv.DictReader(open(IP.RAW / "xp_for_level.csv", encoding="utf-8")):
+            XP[int(r["level"])] = int(r["xp_to_next"])
+    return XP.get(L, 0) * KILL_SHARE / (45 + 5 * L)
+
+
+def minutes_saved(e, at):
+    """Minutes of killing an upgrade saves while it is worn: its share of faster kills x the time per kill x the kills, level by level
+    until it is replaced (or 60)."""
+    end = e["until"] or 60
+    return sum(e["gain"] * at(L)["time"] * kills_per_level(L) for L in range(e["level"], end)) / 60
 
 
 def line(e, at):
@@ -528,7 +564,7 @@ def line(e, at):
     src = sources_text(p) + (f" / {sources_text(o)}" if o else "")
     rep = f", replaces {e['replaces']}" if e.get("replaces") else ""
     until = f"; best until level {e['until']}" if e.get("until") else "; best to the end of leveling"
-    return f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}). {src}."
+    return f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
 
 
 KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction"]
@@ -611,6 +647,63 @@ def character_gold(cfg):
                 st2, js = bnet.get(region, t["access_token"], urllib.parse.urlparse(ch["protected_character"]["href"]).path, ns)
                 return js.get("money") if st2 == 200 else None
     return None
+
+
+NAMES = {}
+
+
+def item_name(i):
+    if not NAMES:
+        for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8")):
+            NAMES[int(r["item"])] = r["name"]
+    return NAMES.get(i, f"item {i}")
+
+
+def resale(item):
+    """(what one sells for after the auction house's 5% cut, how many to count as sold) from the usual price of real sales (Insights,
+    source "s"); None when the product has no sales history."""
+    t = PRICES.typical.get(item) if PRICES else None
+    if not t or t[1] != "s":
+        return None
+    return 0.95 * t[0], min(8, int(t[2]) if len(t) > 2 else 0)   # (value after the cut, at most 8 sold, no more than a day's sales)
+
+
+def profession_section(profs):
+    """Per profession: the cheapest expected way from the character's skill to its rank's cap with the recipes it knows (professions.py),
+    with the materials it takes at today's prices."""
+    if not RECIPES:
+        return []
+    tri = PF.thresholds()
+    o = ["## Professions", "",
+         "The cheapest way up with the recipes you know, materials at today's prices (auction house or vendor, the cheaper). Crafts are "
+         "expected counts: a yellow or green recipe does not always give a point. Forever lets you learn recipes earlier than Classic did, "
+         "so check your trainer whenever a profession stalls.", ""]
+    for prof in ("Tailoring", "Enchanting", "Cooking"):
+        if prof not in profs:
+            continue
+        skill, cap = profs[prof]
+        if skill >= cap:
+            o += [f"**{prof}** {skill}/{cap}: at your rank's cap; train the next rank to go on.", ""]
+            continue
+        groups, stop, mats = PF.skill_plan(prof, skill, cap, RECIPES, tri, unit_price, sell=resale)
+        o += [f"### {prof} {skill} to {cap}", ""]
+        if prof == "Enchanting":
+            o += ["(The add-on records only recipes that make an item, so your enchants are not in this list: a skill point from an "
+                  "enchant you know can be cheaper than these.)", ""]
+        if not groups:
+            o += ["No recipe you know gives a point at your skill: learn new ones at the trainer.", ""]
+            continue
+        o += ["| Skill | Recipe | Crafts (expected) | Cost after selling what you make |", "|---|---|---|---|"]
+        total = 0.0
+        for a, b, r, crafts, c in groups:
+            total += c
+            o += [f"| {a}-{b} | {r['name']} | {crafts:.0f} | {AH.money(c)} |"]
+        o += ["", f"About {AH.money(total)} net to reach {stop}, if you sell what you make at its usual price (at most 8 of each, and "
+              "no more than a day's sales; products without a sales history count as unsold)"
+              + ("." if stop >= cap else f"; from {stop} no recipe you know gives points: learn new ones at the trainer.")]
+        top = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]
+        o += ["Materials: " + ", ".join(f"{item_name(i)} x{n:.0f}" for i, n in top) + ".", ""]
+    return o
 
 
 CONSUMABLE_KIND = {6: "Weapon oil", 3: "Food", 11: "Elixir", 4: "Scroll"}
@@ -764,6 +857,8 @@ def main():
             if PRICES.listed(p["id"]):
                 p["sources"].append({"kind": "auction", "price": PRICES.buy(p["id"])})
     COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])
+    RECIPES[:] = PF.known_recipes(snap["profile"]["name"], ah.get("duckdb"), d / "recipes.json")
+    KNOWN.update(r["spell"] for r in RECIPES)
     INLOG.update(q["id"] for q in (snap.get("quests") or {}).get("in_progress") or [])
     eq, events = plan(cfg, snap, at, pool, profs)
     ench = enchants(cfg["school_share"])

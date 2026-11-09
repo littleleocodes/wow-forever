@@ -14,7 +14,7 @@ import re
 import time
 
 ROW = re.compile(r"^(\d+),(\d+),(\d+),[^,]*,[^,]*,[^,]*,(.*)$")
-INS = re.compile(r"\[(\d+)\]\s*=\s*\"(\d+),([a-z]?),")
+INS = re.compile(r"\[(\d+)\]\s*=\s*\"(\d+),([a-z]?),([\d.]*)")
 
 
 class Prices:
@@ -36,7 +36,8 @@ class Prices:
         q = pathlib.Path(insights) if insights else None
         if q and q.exists():
             for m in INS.finditer(q.read_text(encoding="utf-8", errors="replace")):
-                self.typical[int(m.group(1))] = (int(m.group(2)), m.group(3))
+                per_day = float(m.group(4)) if m.group(4) else 0.0   # sold per day (the add-on says it runs high: cancels look like sales)
+                self.typical[int(m.group(1))] = (int(m.group(2)), m.group(3), per_day)
 
     def age_hours(self):
         return None if self.t is None else (time.time() - self.t) / 3600
