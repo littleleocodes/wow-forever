@@ -19,7 +19,7 @@ import urllib.parse
 import urllib.request
 
 CRED = pathlib.Path.home() / ".wow-forever-tools" / "blizzard.json"
-PARTS = ["", "/equipment", "/professions", "/specializations", "/statistics", "/quests", "/quests/completed"]
+PARTS = ["", "/equipment", "/professions", "/specializations", "/statistics", "/quests", "/quests/completed", "/reputations"]
 
 
 def credentials():

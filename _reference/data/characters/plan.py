@@ -67,7 +67,7 @@ def snapshot(cfg, d, refresh):
             if st == 200:
                 (arm / f"{part.strip('/').replace('/', '-')}.json").write_text(json.dumps(js, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         (arm / "fetched.txt").write_text(datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "\n", encoding="utf-8")
-    parts = ("profile", "equipment", "professions", "specializations", "quests", "quests-completed")
+    parts = ("profile", "equipment", "professions", "specializations", "quests", "quests-completed", "reputations")
     return {p: json.loads((arm / f"{p}.json").read_text(encoding="utf-8")) for p in parts
             if (arm / f"{p}.json").exists()}, (arm / "fetched.txt").read_text(encoding="utf-8").strip()
 
@@ -264,6 +264,7 @@ def sources_text(it):
 
 
 DATAVER = {}   # the data versions the page names (main())
+AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
 
@@ -280,7 +281,9 @@ def acquirable(it, L, start, profs):
         if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME or s.get("quest") in COMPLETED):
             continue
         lo, hi = IP.window(it, s)
-        if s["kind"] == "auction":   # listed now: buy it now (wear it at its level), only for the next few levels (listings change hourly)
+        if s["kind"] == "auction" and AUCTION_FUTURE:   # a what-if: today's listings as a typical market, buyable at their level later
+            lo, hi = it.get("req") or start, 60
+        elif s["kind"] == "auction":   # listed now: buy it now (wear it at its level), only for the next few levels (listings change hourly)
             if (it.get("req") or 0) > start + LOOKAHEAD:
                 continue
             if GOLD is not None and (s.get("price") or 0) > GOLD:   # more than the character has: not part of the plan
@@ -459,6 +462,9 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
     soon = [e for e in events if max(e["get_at"], lv) <= lv + LOOKAHEAD]
+    global SPENDABLE
+    gs, SPENDABLE = gold_plan(cfg, snap, at, lv)
+    o += gs
     o += [f"## Now (level {lv})", "",
           f"Everything below is worth doing at your level or within {LOOKAHEAD} levels: items you can wear now, and items you can get now "
           "and wear a level or two later. Percentages are how much faster you kill a mob of your level once the item replaces what you "
@@ -541,6 +547,120 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     (d / "README.md").write_text("\n".join(o) + "\n", encoding="utf-8")
 
 
+PLAY_KILL_SHARE = 0.5   # the share of play time spent killing (the rest: travel, quest turn-ins, looting, vendoring): an estimate
+ESSENTIALS = {"mage": {"Arcane Intellect", "Frost Armor", "Ice Armor", "Conjure Water", "Conjure Food", "Frost Nova", "Blink", "Counterspell"}}
+MOUNT = {"level": 40, "riding": 200000, "mount": 800000, "discount_rep": "Honored"}   # Classic: riding 20g + mount 80g, 10% off the
+                                                                                        # mount at Honored with the race's faction
+
+
+def training_by_level(cls):
+    """{level: [(spell name, cost copper)]} the class trainer teaches (Classic prices, class_training.csv)."""
+    out = {}
+    for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")):
+        if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]:
+            out.setdefault(int(r["level"]), []).append((r["name"], int(r["cost"])))
+    return out
+
+
+def needed_spells(cfg):
+    """The spells the character's rotation and kit use: every bold name of its by-level guide, plus the class's essentials (buffs,
+    conjures, the escape and control kit); other trainer spells are optional (a frost mage's fire spells, teleports)."""
+    g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
+    x = next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
+    return set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
+
+
+def income_per_level(L, quests_per_level):
+    """Copper a level brings (Classic data): kills x (coin + the vendor value of gray and white loot, spawn-weighted by mob level) plus
+    the quests done in a level x the average quest money at that level. Leaves out auction sales (greens, cloth, crafts)."""
+    if not INCOME:
+        for r in csv.DictReader(open(IP.RAW / "mob_income.csv", encoding="utf-8")):
+            INCOME[int(r["level"])] = float(r["coin_per_kill"]) + float(r["vendor_per_kill"])
+        qm = {}
+        for r in csv.DictReader(open(IP.RAW / "quests.csv", encoding="utf-8")):
+            q = int(r["quest_level"] or 0)
+            if 1 <= q <= 60:
+                qm.setdefault(q, []).append(int(r.get("money") or 0))
+        QUEST_MONEY.update({q: sum(v) / len(v) for q, v in qm.items()})
+    return kills_per_level(L) * INCOME.get(L, 0) + quests_per_level * QUEST_MONEY.get(L, 0)
+
+
+def minutes_per_level(L, at):
+    return kills_per_level(L) * at(L)["time"] / 60 / PLAY_KILL_SHARE
+
+
+INCOME, QUEST_MONEY = {}, {}
+RACE_FACTION = {"Gnome": "Gnomeregan Exiles", "Human": "Stormwind", "Dwarf": "Ironforge", "Night Elf": "Darnassus", "Orc": "Orgrimmar",
+                "Troll": "Darkspear Trolls", "Tauren": "Thunder Bluff", "Undead": "Undercity"}
+STANDING = ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted"]
+SPENDABLE = None   # gold free for gear now (gold minus the training the next two levels need), copper; None when the gold is unknown
+
+
+def gold_plan(cfg, snap, at, lv):
+    """The gold section and the copper free for gear now (2026-11-09, user: "I also don't want to have to upgrade too often. That costs a
+    lot of gold that I don't get back ... looks at my current gold and factors in what % of my gold it costs and compared to how much gold
+    per hour I'm making, how much training costs")."""
+    done = len((snap.get("quests-completed") or {}).get("quests") or [])
+    qpl = done / max(1, lv - 1)
+    train = training_by_level(cfg["class"])
+    need = needed_spells(cfg)
+    race = snap["profile"]["race"]["name"]
+    reps = {r["faction"]["name"]: r["standing"]["name"] for r in (snap.get("reputations") or {}).get("reputations") or []}
+    rep = reps.get(RACE_FACTION.get(race, ""), "Neutral")
+    discount = STANDING.index(rep) >= STANDING.index(MOUNT["discount_rep"]) if rep in STANDING else False
+    mount = MOUNT["riding"] + MOUNT["mount"] * (0.9 if discount else 1.0)
+    rows, saved, mount_at = [], GOLD or 0, None
+    for L in range(lv, 60):
+        inc = income_per_level(L, qpl)
+        nt = sum(c for n, c in train.get(L + 1, []) if n in need)
+        ot = sum(c for n, c in train.get(L + 1, []) if n not in need)
+        saved += inc - nt
+        if L + 1 >= MOUNT["level"] and mount_at is None and saved >= mount:
+            mount_at = L + 1
+        rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need]))
+    reserve = sum(r[2] for r in rows[:2])
+    spend = None if GOLD is None else max(0, GOLD - reserve)
+    by40 = (GOLD or 0) + sum(r[1] - r[2] for r in rows if r[0] < MOUNT["level"])
+    o = ["## Gold plan", "",
+         f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need at the next two levels: "
+         f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**.", "",
+         f"Income is an estimate from Classic's data: coin and the vendor value of gray and white loot from about {kills_per_level(lv):.0f} "
+         f"kills a level, plus your pace of {qpl:.1f} quests a level at Classic's quest money. It leaves out auction sales (greens, cloth, "
+         "crafts), so you likely earn more. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
+         "spells, teleports) are listed apart.", "",
+         "| Level | Income (estimate) | Training you need at the next level | Optional training |", "|---|---|---|---|"]
+    for L, inc, nt, ot, names in rows[:LAST - lv + 1][:14]:
+        o += [f"| {L} | {AH.money(inc)} | {AH.money(nt) if nt else '-'}{' (' + ', '.join(names) + ')' if names else ''} | "
+              f"{AH.money(ot) if ot else '-'} |"]
+    o += ["", f"Mount at {MOUNT['level']}: about **{AH.money(mount)}** (Classic prices: riding {AH.money(MOUNT['riding'])} and the mount "
+          f"{AH.money(MOUNT['mount'])}{', 10% off at ' + rep + ' with ' + RACE_FACTION.get(race, '') if discount else ''}; Forever's not "
+          f"confirmed). At this income you would have about {AH.money(by40)} by {MOUNT['level']} after training"
+          + (f", enough for the mount at {mount_at}." if mount_at else ", not enough by 60 on income alone: auction sales have to make up the rest.")]
+    hist = history(cfg)
+    if len(hist) >= 2:
+        a, z = hist[0], hist[-1]
+        lv_a = a["level"] + a["xp"] / max(1, XP.get(a["level"], 1))
+        lv_z = z["level"] + z["xp"] / max(1, XP.get(z["level"], 1))
+        if lv_z - lv_a >= 0.5 and a.get("gold") is not None and z.get("gold") is not None:
+            o += ["", f"Measured from your refreshes: {AH.money((z['gold'] - a['gold']) / (lv_z - lv_a))} net a level "
+                  f"(gold change after what you spent, {lv_z - lv_a:.1f} levels from {a['time']} to {z['time']})."]
+    o += [""]
+    return o, spend
+
+
+def history(cfg):
+    p = char_dir(cfg["name"]) / "history.jsonl"
+    return [json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()] if p.exists() else []
+
+
+def pays_for_itself(e, at, price):
+    """(minutes of killing it saves, minutes of play its price takes to earn at the estimated income)."""
+    L = e["level"]
+    inc = income_per_level(L, QPL) or 1
+    return minutes_saved(e, at), price / inc * minutes_per_level(L, at)
+
+
+QPL = 8.0   # quests a level (main() sets the character's pace)
 KILL_SHARE = 0.5   # the share of a solo quester's experience that comes from kills (an estimate; the rest is quest experience)
 XP = {}
 
@@ -616,12 +736,16 @@ def action_sections(evs, at, L, head="###"):
         evs = sorted(by["auction"], key=lambda e: -e["gain"] / price(e))
         o += [f"{head} Buy on the Auction House (listed now; prices change hourly; best speed per gold first)", ""]
         spent = 0
-        for e in evs:   # greedy: a buy that does not fit is skipped, a cheaper one after it can still fit
+        budget = SPENDABLE if SPENDABLE is not None else GOLD
+        for e in evs:   # greedy over the gold free for gear: a buy that does not fit is skipped, a cheaper one after it can still fit
+            saves, earn = pays_for_itself(e, at, price(e))
+            verdict = (f" Saves about {saves:.0f} min of killing; earning its price takes about {earn:.0f} min of play: "
+                       + ("worth it." if saves >= earn else "not worth the gold."))
             fits = ""
-            if GOLD is not None and spent + price(e) <= GOLD:
+            if saves >= earn and budget is not None and spent + price(e) <= budget:
                 spent += price(e)
-                fits = f" Fits your gold ({AH.money(GOLD - spent)} left after the buys marked so far)."
-            o += [line(e, at) + fits]
+                fits = f" Fits the gold free for gear ({AH.money(budget - spent)} left after the buys marked so far)."
+            o += [line(e, at) + verdict + fits]
         o += [""]
     return o
 
@@ -845,6 +969,12 @@ def main():
     PROFS.update(profs)
     global MIN_LASTS, PRICES, GOLD
     GOLD = character_gold(cfg)
+    global QPL
+    lv0 = snap["profile"]["level"]
+    QPL = len((snap.get("quests-completed") or {}).get("quests") or []) / max(1, lv0 - 1)
+    if not a.no_refresh:   # the history the measured income comes from: one line per refresh
+        with open(d / "history.jsonl", "a", encoding="utf-8") as f:
+            f.write(json.dumps({"time": fetched, "level": lv0, "xp": snap["profile"].get("experience", 0), "gold": GOLD}) + "\n")
     MIN_LASTS = int(cfg.get("min_levels", MIN_LASTS))
     ah = cfg.get("ah") or {}
     if ah.get("ahcopy") and pathlib.Path(ah["ahcopy"]).exists():   # the user's ForeverTape add-on, read only

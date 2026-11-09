@@ -152,9 +152,10 @@ def main():
     for r in d["quest_template"]:
         rew = ";".join(f"{r.get(f'RewItemId{k}')}" for k in range(1, 5) if r.get(f"RewItemId{k}") not in (None, "0"))
         cho = ";".join(f"{r.get(f'RewChoiceItemId{k}')}" for k in range(1, 7) if r.get(f"RewChoiceItemId{k}") not in (None, "0"))
-        qs.append([int(r["entry"]), r["Title"], r["ZoneOrSort"], r["MinLevel"], r["QuestLevel"], r["RequiredRaces"], r["RequiredClasses"], rew, cho])
+        qs.append([int(r["entry"]), r["Title"], r["ZoneOrSort"], r["MinLevel"], r["QuestLevel"], r["RequiredRaces"], r["RequiredClasses"], rew, cho,
+                   max(0, int(r.get("RewOrReqMoney") or 0))])
     write(out / "quests.csv", ["quest", "title", "zone_or_sort", "min_level", "quest_level", "required_races", "required_classes", "rewards",
-                               "choices"], sorted(qs))
+                               "choices", "money"], sorted(qs))
     # crafting and enchanting spells: the item a spell creates (effect 24) or the enchantment it applies (effect 53), and its reagents
     cs = []
     for r in d["spell_template"]:
@@ -196,6 +197,55 @@ def main():
                 continue
             rows.append([spawned[e], e, r["Name"], r["Rank"], r["MaxLevel"], it, x["name"], round(ch, 4)])
     write(out / "dungeon_drops.csv", ["map", "creature", "name", "rank", "level", "item", "item_name", "chance"], sorted(rows))
+    # class training (2026-11-09, the planner's gold budget: "how much training costs"): every spell a class trainer teaches, its level
+    # and price (copper), by class (TrainerType 0 = class trainer; npc_trainer rows by creature, npc_trainer_template rows by template)
+    names = {int(r["Id"]): r.get("SpellName", "") for r in d["spell_template"]}
+    learns = {int(r["Id"]): int(r[f"EffectTriggerSpell{k}"]) for r in d["spell_template"] for k in (1, 2, 3)
+              if r.get(f"Effect{k}") == "36" and r.get(f"EffectTriggerSpell{k}") not in (None, "0")}
+    by_creature, by_template = {}, {}
+    for r in d["npc_trainer"]:
+        by_creature.setdefault(int(r["entry"]), []).append(r)
+    for r in d["npc_trainer_template"]:
+        by_template.setdefault(int(r["entry"]), []).append(r)
+    tr = {}
+    for r in d["creature_template"]:
+        if r.get("TrainerType") != "0" or int(r.get("TrainerClass") or 0) == 0:
+            continue
+        cls = int(r["TrainerClass"])
+        for t in by_creature.get(int(r["Entry"]), []) + by_template.get(int(r.get("TrainerTemplateId") or 0), []):
+            sp = int(t["spell"])
+            real = learns.get(sp, sp)
+            k = (cls, real)
+            row = [cls, real, names.get(real, ""), int(t["reqlevel"]), int(t["spellcost"])]
+            if k not in tr or row[4] < tr[k][4]:
+                tr[k] = row
+    write(out / "class_training.csv", ["class", "spell", "name", "level", "cost"], sorted(tr.values()))
+    # mob income by level: coin and the vendor value of gray and white loot per kill, over normal-rank creatures that spawn and fight
+    # (no critters, no NPCs with services), weighted by their spawns (the fight lab's mob pool, mob_stats.py, uses the same filter idea)
+    spawns = {}
+    for r in d["creature"]:
+        spawns[int(r["id"])] = spawns.get(int(r["id"]), 0) + 1
+    sell = {int(r["entry"]): (int(r["Quality"]), int(r["SellPrice"])) for r in d["item_template"]}
+    agg = {}
+    for r in d["creature_template"]:
+        e = int(r["Entry"])
+        n = spawns.get(e, 0)
+        if not n or r["Rank"] != "0" or r["CreatureType"] in ("8", "11", "12") or int(r["NpcFlags"] or 0):
+            continue
+        lv = (int(r["MinLevel"]) + int(r["MaxLevel"])) // 2
+        coin = (int(r["MinLootGold"]) + int(r["MaxLootGold"])) / 2
+        vend = 0.0
+        if int(r.get("LootId") or 0):
+            for it, ch in loot_chances(cl, rl, int(r["LootId"])).items():
+                q, sp_ = sell.get(it, (9, 0))
+                if q <= 1:
+                    vend += ch * sp_
+        a = agg.setdefault(lv, [0, 0.0, 0.0])
+        a[0] += n
+        a[1] += coin * n
+        a[2] += vend * n
+    write(out / "mob_income.csv", ["level", "spawns", "coin_per_kill", "vendor_per_kill"],
+          [[lv, a[0], round(a[1] / a[0], 1), round(a[2] / a[0], 1)] for lv, a in sorted(agg.items())])
     # buy_price: what a vendor charges (copper); vendor: 1 when some vendor sells it (the planner's fallback for vendor-sold reagents,
     # thread, dyes, vials, when the user's ForeverTape export has not seen that vendor yet)
     write(out / "item_names.csv", ["item", "name", "class", "subclass", "quality", "required_level", "required_skill", "required_rank",
