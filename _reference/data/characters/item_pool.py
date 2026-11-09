@@ -195,6 +195,31 @@ def forever_quests(ids, region="us"):
     return cache
 
 
+def item_texts(ids, region="us"):
+    """{item id: [use/equip descriptions]} from Blizzard's item API (cached, asked again weekly): consumables' effects and durations
+    ("Lasts for 30 min."; Forever's well-fed foods: "+5% experience from kills")."""
+    import datetime
+    path = HERE / "cache" / f"items-forever-{region}.json"
+    cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    today = datetime.date.today()
+    stale = {q for q, v in cache.items() if v.get("error") or (today - datetime.date.fromisoformat(v.get("fetched", "2000-01-01"))).days > 7}
+    todo = [i for i in ids if str(i) not in cache or str(i) in stale]
+    if todo:
+        import bnet
+        tok = bnet.token(region)
+        for i in todo:
+            st, js = bnet.get(region, tok, f"/data/wow/item/{i}", f"static-forever-{region}")
+            if st == 200:
+                sp = (js.get("preview_item") or {}).get("spells") or []
+                cache[str(i)] = {"name": js.get("name"), "texts": [x.get("description", "") for x in sp],
+                                 "level": js.get("required_level"), "fetched": today.isoformat()}
+            else:
+                cache[str(i)] = {"error": st, "fetched": today.isoformat()}
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(json.dumps(cache, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    return {int(k): v for k, v in cache.items()}
+
+
 def usable(it, cls, faction):
     use = USE[cls]
     if it.get("classAllowlist") and CLASS_ID[cls] not in it["classAllowlist"]:

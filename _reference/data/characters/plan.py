@@ -26,6 +26,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE.parent
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(HERE), str(DATA / "fightlab"), str(DATA / "scorer"), str(DATA)]
+import ah_prices as AH  # noqa: E402
 import bnet  # noqa: E402
 import item_pool as IP  # noqa: E402
 
@@ -63,9 +64,10 @@ def snapshot(cfg, d, refresh):
         arm.mkdir(parents=True, exist_ok=True)
         for part, (st, js) in res.items():
             if st == 200:
-                (arm / f"{part.strip('/')}.json").write_text(json.dumps(js, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+                (arm / f"{part.strip('/').replace('/', '-')}.json").write_text(json.dumps(js, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         (arm / "fetched.txt").write_text(datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "\n", encoding="utf-8")
-    return {p: json.loads((arm / f"{p}.json").read_text(encoding="utf-8")) for p in ("profile", "equipment", "professions", "specializations")
+    parts = ("profile", "equipment", "professions", "specializations", "quests", "quests-completed")
+    return {p: json.loads((arm / f"{p}.json").read_text(encoding="utf-8")) for p in parts
             if (arm / f"{p}.json").exists()}, (arm / "fetched.txt").read_text(encoding="utf-8").strip()
 
 
@@ -181,17 +183,48 @@ def enchants(school_share):
                 st["stamina"] = st.get("stamina", 0) + v / 10.0
         if not st:
             continue
-        reag = [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1])) for x in r["reagents"].split(";") if x]
+        reag = [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1]), int(x.split(":")[0])) for x in r["reagents"].split(";") if x]
         out.append({"slot": ENCHANT_SLOT[m.group(1)], "name": r["name"], "stats": st, "skill": sk[1], "learn": sk[2], "reagents": reag})
     return out
 
 
 def reagents_of(spell):
+    """[(name, count, item id)] of a craft spell (the Classic recipe)."""
     names = {int(r["item"]): r["name"] for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8"))}
     for r in csv.DictReader(open(IP.RAW / "craft_spells.csv", encoding="utf-8")):
         if int(r["spell"]) == spell:
-            return [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1])) for x in r["reagents"].split(";") if x]
+            return [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1]), int(x.split(":")[0]))
+                    for x in r["reagents"].split(";") if x]
     return []
+
+
+PRICES = None     # ah_prices.Prices of the character's auction house (character.json "ah"), or None
+VENDOR = {}       # vendor price of vendor-sold reagents (thread, dye, vials), copper
+COMPLETED = set()   # quest ids the character has completed (Blizzard's API): their rewards are gone
+INLOG = set()       # quest ids in the character's quest log now
+
+
+def unit_price(item):
+    """The cheaper of the vendor and the auction house for one unit, copper; None when neither is known."""
+    v = VENDOR.get(item)
+    a = PRICES.buy(item) if PRICES else None
+    known = [x for x in (v, a) if x]
+    return min(known) if known else None
+
+
+def mats_text(reag):
+    """Materials with their cost at today's prices (auction house or vendor)."""
+    parts = ", ".join(f"{n} x{c}" for n, c, _ in reag)
+    if not PRICES:
+        return parts
+    tot, miss = 0.0, []
+    for n, c, i in reag:
+        p = unit_price(i)
+        if p is None:
+            miss.append(n)
+        else:
+            tot += p * c
+    return parts + f" (about {AH.money(tot)} at today's prices" + (f"; no price for {', '.join(miss)}" if miss else "") + ")"
 
 
 # ---------------------------------------------------------------------------------------------------------------- the plan
@@ -200,8 +233,13 @@ def sources_text(it):
     for s in it["sources"]:
         k = s["kind"]
         if k == "quest":
+            if s.get("quest") in COMPLETED:
+                continue
             lv = f", level {s['level']}" if s.get("level") else ""
-            out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv})")
+            log = ", in your quest log" if s.get("quest") in INLOG else ""
+            out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv}{log})")
+        elif k == "auction":
+            out.append(f"Auction House now: {AH.money(s.get('price'))}")
         elif k == "dungeon":
             est = ", range estimated" if s.get("estimated") else ""
             ch = f", {s['chance']:.0%} drop" if s.get("chance") else ""
@@ -233,9 +271,11 @@ def acquirable(it, L, start, profs):
             continue
         if s["kind"] == "dungeon" and s.get("chance") is not None and s["chance"] < MIN_CHANCE:
             continue
-        if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME):
+        if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME or s.get("quest") in COMPLETED):
             continue
         lo, hi = IP.window(it, s)
+        if s["kind"] == "auction":   # listed now: the next few levels only (listings change every hour)
+            hi = start + LOOKAHEAD
         if s["kind"] == "craft":
             have = profs.get(s["profession"])
             if have is None or not s.get("skill") or s["skill"] > skill_cap(L):
@@ -418,6 +458,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         worn[e["slot"]] = {"name": e["item"]["name"], "stats": e["item"]["stats"], "enchant": [], "enchant_stats": {},
                            "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
     o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
+    cl = consumable_lines(lv, wl, profs, cfg["school_share"])
+    if cl:
+        o += ["### Oils, food and elixirs", "", "The best three of each kind you can use now, with today's prices"
+              + (f" (auction house snapshot {PRICES.age_hours():.1f} hours old)" if PRICES and PRICES.age_hours() is not None else "") + ".", ""] + cl + [""]
     o += action_sections(soon, at, lv)
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
           f"{cfg['class']}/leveling/{cfg['page']}-by-level.md) for your rotation.", ""]
@@ -486,7 +530,7 @@ def line(e, at):
     return f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}). {src}."
 
 
-KIND_ORDER = ["dungeon", "quest", "craft", "vendor"]
+KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction"]
 
 
 def primary(e):
@@ -521,11 +565,92 @@ def action_sections(evs, at, L, head="###"):
         for e in by["craft"]:
             s = primary(e)
             reag = reagents_of(s["spell"]) if s.get("spell") else []
-            o += [line(e, at) + (" Materials: " + ", ".join(f"{n} x{c}" for n, c in reag) + "." if reag else "")]
+            o += [line(e, at) + (" Materials: " + mats_text(reag) + "." if reag else "")]
         o += [""]
     if by.get("vendor"):
         o += [f"{head} Buy", ""] + [line(e, at) for e in by["vendor"]] + [""]
+    if by.get("auction"):
+        o += [f"{head} Buy on the Auction House (listed now; prices change hourly)", ""] + [line(e, at) for e in by["auction"]] + [""]
     return o
+
+
+CONSUMABLE_KIND = {6: "Weapon oil", 3: "Food", 11: "Elixir", 4: "Scroll"}
+SKILL_NAME = {333: "Enchanting", 185: "Cooking", 171: "Alchemy"}
+
+
+def consumable_effect(c, texts, school_share):
+    """(fight-lab stats, kill-experience bonus %, minutes) of a consumable from its tooltip (Blizzard's item API); the database's stats
+    when the tooltip names none (oils carry theirs only in the tooltip)."""
+    st, txt = {}, " ".join(texts)
+    m = re.search(r"spell (frost|fire|arcane|shadow|nature|holy) damage by up to (\d+)", txt, re.I)
+    if m:
+        st["spell_power"] = int(m.group(2)) * school_share.get(m.group(1).lower(), 0)
+    else:
+        m = re.search(r"spell damage(?: and healing)? by up to (\d+)|gain (\d+) Spell Damage", txt, re.I)
+        if m:
+            st["spell_power"] = int(m.group(1) or m.group(2))
+    m = re.search(r"(\d+) mana every 5 sec", txt)
+    if m:
+        st["mp5"] = int(m.group(1))
+    for name, key in (("Intellect", "intellect"), ("Spirit", "spirit"), ("Stamina", "stamina")):
+        m = re.search(rf"(?:gain|increase[sd]?[^.]*?) (\d+) {name}|{name} by (\d+)", txt)
+        if m:
+            st[key] = int(m.group(1) or m.group(2))
+    if not st:
+        for i, v in enumerate(c.get("stats") or []):
+            if v and i in IP.STAT:
+                st[IP.STAT[i]] = st.get(IP.STAT[i], 0) + v
+            elif v and i in IP.SCHOOLS:
+                st["spell_power"] = st.get("spell_power", 0) + v * school_share.get(IP.SCHOOLS[i], 0)
+    xp = re.search(r"experience gained from kills is increased by (\d+)%", txt)
+    dur = re.search(r"(?:Lasts for|for) (\d+) (min|minutes|hour|hours)", txt)
+    minutes = (int(dur.group(1)) * (60 if dur.group(2).startswith("hour") else 1)) if dur else None
+    return st, (int(xp.group(1)) if xp else 0), minutes
+
+
+def consumable_lines(level, wl, profs, school_share):
+    """Oils, food, elixirs and scrolls usable now: how much faster kills, how long, what one costs (auction house, or the materials when
+    the character's own profession makes it) and what an hour of leveling with it costs."""
+    db = IP.sim_db()
+    cands = [c for c in db["consumables"] if c.get("type") in CONSUMABLE_KIND and (c.get("lvl") or 0) <= level]
+    texts = IP.item_texts([c["id"] for c in cands])
+    rs = IP.recipe_skills()
+    makes = {}
+    for r in csv.DictReader(open(IP.RAW / "craft_spells.csv", encoding="utf-8")):
+        if r["creates"]:
+            makes.setdefault(int(r["creates"]), int(r["spell"]))
+    rows = []
+    for c in cands:
+        t = texts.get(c["id"]) or {}
+        st, xp, minutes = consumable_effect(c, t.get("texts") or [], school_share)
+        gain = value(st, wl) / wl["time"]
+        if gain < 0.005 and not xp:
+            continue
+        how, cost = "buy", (PRICES.buy(c["id"]) if PRICES else None)
+        sp = makes.get(c["id"])
+        if sp and rs.get(sp) and rs[sp][0] in SKILL_NAME:
+            prof = SKILL_NAME[rs[sp][0]]
+            have = (profs.get(prof) or (None,))[0]
+            if have is not None and have >= rs[sp][1]:
+                reag = reagents_of(sp)
+                mats = sum((unit_price(i) or 0) * n for _, n, i in reag) if PRICES else None
+                how, cost = f"make it ({prof} {rs[sp][1]})", (mats if mats else cost)
+            elif have is not None:
+                how = f"buy (you make it at {prof} {rs[sp][1]}; you have {have})"
+        per_hour = cost * 60 / minutes if cost and minutes else None
+        rows.append((CONSUMABLE_KIND[c["type"]], c["name"], st, xp, gain, minutes, how, cost, per_hour))
+    out = []
+    for kind in ("Weapon oil", "Food", "Elixir", "Scroll"):
+        ks = sorted([r for r in rows if r[0] == kind], key=lambda r: -(r[4] + r[3] / 100 * 0.5))[:3]
+        for k, name, st, xp, gain, minutes, how, cost, per_hour in ks:
+            eff = ", ".join(f"+{v:g} {x.replace('_', ' ')}" for x, v in st.items()) + (f", +{xp}% kill experience" if xp else "")
+            out.append(f"| {kind} | {name} | {eff} | {pct(gain)} | {minutes or '?'} min | {how} | {AH.money(cost) if cost else 'no price'} | "
+                       f"{AH.money(per_hour) if per_hour else '?'} |")
+    if not out:
+        return []
+    return (["| Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |", "|---|---|---|---|---|---|---|---|"] + out +
+            ["", "One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the "
+             "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
 
 
 def enchant_lines(worn, ench, profs, wl):
@@ -550,7 +675,7 @@ def enchant_lines(worn, ench, profs, wl):
         if now and (nv - have) / wl["time"] >= 0.001:
             txt.append(f"{now['name']} (Enchanting {now['skill']}, {now['learn']}), {pct((nv - have) / wl['time'])} faster kills"
                        + (f" over its {', '.join(it['enchant'])}" if it.get("enchant") else "") + ". Materials: "
-                       + ", ".join(f"{n} x{c}" for n, c in now["reagents"]) + ".")
+                       + mats_text(now["reagents"]) + ".")
         nxt = sorted([e for e in opts if e["skill"] > skill and (value(e["stats"], wl) - max(have, nv)) / wl["time"] >= 0.001], key=lambda e: e["skill"])[:1]
         for e in nxt:
             txt.append(f"At Enchanting {e['skill']}: {e['name']} ({e['learn']}), {pct((value(e['stats'], wl) - have) / wl['time'])} faster kills.")
@@ -579,8 +704,21 @@ def main():
     pool = IP.pool(cfg["class"], cfg["faction"], cfg["school_share"], cfg.get("region", "us"))
     profs = skills(snap)
     PROFS.update(profs)
-    global MIN_LASTS
+    global MIN_LASTS, PRICES
     MIN_LASTS = int(cfg.get("min_levels", MIN_LASTS))
+    ah = cfg.get("ah") or {}
+    if ah.get("ahcopy") and pathlib.Path(ah["ahcopy"]).exists():   # the user's ForeverTape add-on, read only
+        PRICES = AH.Prices(ah["ahcopy"], ah.get("insights"))
+        if ah.get("prices_csv") and pathlib.Path(ah["prices_csv"]).exists():   # vendor prices from the add-on project's hourly export
+            for r in csv.DictReader(open(ah["prices_csv"], encoding="utf-8")):
+                v = r.get("vendor_buy") or r.get("vendor_price_buy") or ""
+                if v.strip().isdigit() and int(v):
+                    VENDOR[int(r["item_id"])] = int(v)
+        for p in pool:   # gear listed on the auction house now (plain items; random-suffix versions are not read yet)
+            if PRICES.listed(p["id"]):
+                p["sources"].append({"kind": "auction", "price": PRICES.buy(p["id"])})
+    COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])
+    INLOG.update(q["id"] for q in (snap.get("quests") or {}).get("in_progress") or [])
     eq, events = plan(cfg, snap, at, pool, profs)
     ench = enchants(cfg["school_share"])
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)

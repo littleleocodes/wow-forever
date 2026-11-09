@@ -1,0 +1,147 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/quests?namespace=profile-forever-us"
+  }
+ },
+ "character": {
+  "key": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan?namespace=profile-forever-us"
+  },
+  "name": "Arcea",
+  "id": 5579921,
+  "surname": "Fizzlegan",
+  "slug": "arcea-fizzlegan"
+ },
+ "in_progress": [
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/971?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Knowledge in the Deeps",
+   "id": 971
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/96137?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Ira's Dagger",
+   "id": 96137
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/101?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Totem of Infliction",
+   "id": 101
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98246?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Trying Times",
+   "id": 98246
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/173?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Worgen in the Woods",
+   "id": 173
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98245?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Razormaw Needling",
+   "id": 98245
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "A Watchful Eye",
+   "id": 94
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/453?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Finding the Shadowy Figure",
+   "id": 453
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/79362?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Grant's Shield",
+   "id": 79362
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/156?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Gather Rot Blossoms",
+   "id": 156
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95772?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Songblade Search",
+   "id": 95772
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1074?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Ineptitude + Chemicals = Fun",
+   "id": 1074
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/386?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "What Comes Around...",
+   "id": 386
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/74?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Legend of Stalvan",
+   "id": 74
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/240?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Return to Jitters",
+   "id": 240
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/470?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Digging Through the Ooze",
+   "id": 470
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/57?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Night Watch",
+   "id": 57
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/277?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Fire Taboo",
+   "id": 277
+  }
+ ],
+ "completed": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/quests/completed?namespace=profile-forever-us"
+ }
+}
