@@ -10,14 +10,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 12/9/30 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
+| [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 12/8/31 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
 | Build | Split | Role |
 |---|---|---|
-| [Holy/Protection hybrid — Leveling (open talent search)](builds/hybrid-holy-protection-open-leveling.md) 🔬 | 13/25/13 | DPS |
-| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 12/16/23 | DPS |
+| [Holy/Protection hybrid — Leveling (open talent search)](builds/hybrid-holy-protection-open-leveling.md) 🔬 | 11/26/14 | DPS |
+| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 10/16/25 | DPS |
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 32/5/14 | DPS |
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/35/16 | DPS |
 

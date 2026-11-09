@@ -2,9 +2,9 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > [Holy/Protection hybrid](hybrid-holy-protection.md) > Level by level
 
-What a Holy/Protection paladin presses from level 1 to 60, stage by stage. It levels behind a shield and plays the Protection list: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. Protection takes the first 21 points (10-30) and the last 4; Retribution's mana talents come at 31-45 and Holy's at 43-56, with nothing new to press. Each stage lists the full priority, so you can jump in at your level.
+What a Holy/Protection paladin presses from level 1 to 60, stage by stage. It levels behind a shield and plays the Protection list: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. Protection takes the first 21 points (10-30) and **Reckoning** (55 and 57-60); Retribution's mana talents come at 31-45 and 54, Holy's at 43-56, with nothing new to press. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 13/25/13 ([open the talent tree](https://talentsforever.com/paladin/60/050240002-353001021113014-05233-12)), the one on the [Holy/Protection hybrid leveling page](hybrid-holy-protection.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 11/26/14 ([open the talent tree](https://talentsforever.com/paladin/60/05024-353001021113015-052331-12)), the one on the [Holy/Protection hybrid leveling page](hybrid-holy-protection.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -233,7 +233,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Consecration at 50, 60; Divine Shield at 50; Exorcism at 44, 52, 60; Flash of Light at 50, 58; Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Light at 46, 54, 60; Holy Shield at 50, 60; Holy Strike at 44, 52, 60; Holy Wrath at 60; Lay on Hands at 50; Seal of Fury at 50, 58; Turn Undead at 52.
 
-**Talents:** 44 Divine Strength, 45 Improved Judgement, 46-48 Divine Strength, 49-50 Reverence, 51-53 Improved Seals, 54-55 Holy Conduit, 56 Improved Seals, 57-60 Reckoning.
+**Talents:** 44 Divine Strength, 45 Improved Judgement, 46-48 Divine Strength, 49-50 Reverence, 51-53 Improved Seals, 54 Vindication, 55 Reckoning, 56 Improved Seals, 57-60 Reckoning.
 
 **Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50).
 
@@ -251,8 +251,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Hammer of Wrath** (44): the tuned rules of 2026-11-06 never cast it (about 2% faster kills without it). Use it on a mob that runs.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
-- **Holy Conduit** (54-55) makes **Exorcism** 40% cheaper. Its savings on **Consecration** and **Hammer of Wrath** do not count here: the tuned list casts neither.
-- **Reckoning** (57-60): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
+- **Vindication** (54) lowers the attack power of the mob you hit, so it hits you softer.
+- **Reckoning** (55 and 57-60): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
 
 *Fight lab, seconds per kill: 32 at level 44, 31 at level 50, 32 at level 60. Presses per kill at level 44: Melee 8.5, Shield block 3.3, Judgement 3.1, Holy Strike 2.3, Holy Shield 2.2, Seal of Fury 1.0, Swift Judgement 0.5.*
 

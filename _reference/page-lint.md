@@ -8,7 +8,7 @@
 | talents | 0 |
 | links | 0 |
 | guide | 0 |
-| build | 7 |
+| build | 6 |
 | dead | 1 |
 | keys | 0 |
 | steps | 0 |
@@ -20,7 +20,6 @@
 
 - mage: mage/raid/arcane-frost.md: the guide names Arcane Power, Heating Up, Presence of Mind, Pyroblast, which the page's build does not take
 - mage: mage/raid/frost.md: the guide names Arcane Blast, Fingers of Frost, Ice Lance, Shatter, which the page's build does not take
-- paladin: paladin/leveling/prot-ret.md: the guide names Deflection, Divine Intellect, Toughness, which the page's build does not take
 - rogue: rogue/raid/combat.md: the guide names Adrenaline Rush, Cold Blood, Puncturing Wounds, which the page's build does not take
 - rogue: rogue/raid/daggers-split.md: the guide names Blade Flurry, Hack and Slash, Mutilate, which the page's build does not take
 - rogue: rogue/raid/daggers-split.md: the guide says the build lacks Seal Fate, which the page's build takes

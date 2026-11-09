@@ -118,7 +118,7 @@
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-07 keep (the 2026-11-02 tune drank below 15%, about 0.4% faster per kill; the re-tune did not keep it). Eat only if you are still below 65% of your health after the heals.",
+    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep (the 2026-11-02 tune drank below 15%, about 0.4% faster per kill; the re-tune did not keep it). Eat only if you are still below 65% of your health after the heals.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
    ],
@@ -375,7 +375,7 @@
   },
   {
    "spec": "Hybrid Protection/Retribution",
-   "intro": "What a Prot-Ret paladin presses from level 1 to 60, stage by stage. It plays the Retribution rotation with a two-handed weapon: a seal on yourself, your swings, and **Judgement** and **Holy Strike** on their 10-second cooldowns, with **Hammer of Justice** before a **Judgement** from 20. Up to 48 the talents are close to the Retribution page's (both take Protection's **Divine Intellect** and **Precision** at 41-48); from 49 the rest go into Protection, which adds **Templar's Bulwark** (51) and **Swift Judgement** (56), a free extra Judgement once a minute. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Prot-Ret paladin presses from level 1 to 60, stage by stage. It plays the Retribution rotation with a two-handed weapon: a seal on yourself, your swings, and **Judgement** and **Holy Strike** on their 10-second cooldowns, with **Hammer of Justice** before a **Judgement** from 20. Up to 49 the talents are close to the Retribution page's (both take Protection's **Divine Intellect** and **Precision**, here at 42-49); from 50 the rest go into Protection, which adds **Templar's Bulwark** (52) and **Swift Judgement** (57), a free extra Judgement once a minute. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -471,7 +471,7 @@
     {
      "from": 44,
      "title": "Hammer of Wrath, then Protection talents",
-     "change": "**Hammer of Wrath**, a ranged finisher, is optional: the tuned rotation leaves it out. From 49 the talents go into Protection.",
+     "change": "**Hammer of Wrath**, a ranged finisher, is optional: the tuned rotation leaves it out. From 50 the talents go into Protection.",
      "press": [
       "**Hammer of Justice** a mob that casts spells.",
       "**Seal of Command** up before the pull: the first press of R.",
@@ -480,16 +480,16 @@
       "**Holy Strike** whenever it is ready."
      ],
      "notes": [
-      "**Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-07 switch it off against single mobs: kills measured faster without it. Use it on a mob that runs.",
-      "From 49 the build parts from the Retribution page's: it takes Protection's **Sacred Duty** (49, a shorter cooldown on your bubble), **Templar's Bulwark** (51), **Improved Hammer of Justice** (52, the stun combo a little more often), **Toughness** (54-55, armor) and **Swift Judgement** (56) where Retribution takes **Repentance** and **Champion of the Light**.",
-      "**Redoubt** (50 and 53) works only with a shield: with a two-hander it does nothing. Its points fill Protection's tiers on the way to **Swift Judgement**.",
-      "**Templar's Bulwark** (51) goes on the middle mouse button: an absorb as large as your health for 8 seconds. The Retribution list never presses it, so the fight lab has not measured it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
+      "**Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-09 switch it off against single mobs: kills measured faster without it. Use it on a mob that runs.",
+      "From 50 the build parts from the Retribution page's: it takes Protection's **Sacred Duty** (50-51, a minute off the cooldown of your bubble), **Templar's Bulwark** (52), **Improved Hammer of Justice** (53 and 55-56, the stun combo 15 seconds sooner), **Toughness** (54, armor) and **Swift Judgement** (57) where Retribution takes **Repentance** and **Champion of the Light**.",
+      "**Sacred Duty** and **Toughness** fill Protection's rows on the way to **Swift Judgement**. The build takes no **Redoubt**, the other choice there: it adds block, which needs a shield, and with a two-hander it does nothing.",
+      "**Templar's Bulwark** (52) goes on the middle mouse button: an absorb as large as your health for 8 seconds. The Retribution list never presses it, so the fight lab has not measured it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
       "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
      ],
      "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Shield** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
     },
     {
-     "from": 56,
+     "from": 57,
      "title": "Swift Judgement",
      "change": "**Swift Judgement** (talent): a free extra Judgement once a minute, off the global cooldown.",
      "press": [
@@ -502,14 +502,14 @@
      ],
      "notes": [
       "**Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R. On a stunned mob, **Seal of Command**'s judgement hits twice as hard through it as well.",
-      "**Reverence** (57-58) and **Improved Seals** (59-60) finish the build. Nothing new to press."
+      "**Reverence** (58-59) and **Improved Judgement** (60) finish the build. Nothing new to press."
      ],
      "if_hurt": "Below a third of your health, with the mob still above a quarter of its own: **Divine Shield** and **Holy Light** inside it, or **Hammer of Justice** and **Holy Light** during the stun. **Flash of Light** below a quarter. **Lay on Hands** below 15%."
     }
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-07 keep. Eat only if you are still below 65% of your health after the heals.",
+    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep. Eat only if you are still below 65% of your health after the heals.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
    ],
@@ -617,7 +617,7 @@
         "role": "A free extra Judgement, once a minute",
         "binds": [
          {
-          "from": 56,
+          "from": 57,
           "spell": "Swift Judgement"
          }
         ]
@@ -651,7 +651,7 @@
         "role": "A second save: an absorb as large as your health",
         "binds": [
          {
-          "from": 51,
+          "from": 52,
           "spell": "Templar's Bulwark"
          }
         ]
@@ -770,7 +770,7 @@
   },
   {
    "spec": "Hybrid Holy/Protection",
-   "intro": "What a Holy/Protection paladin presses from level 1 to 60, stage by stage. It levels behind a shield and plays the Protection list: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. Protection takes the first 21 points (10-30) and the last 4; Retribution's mana talents come at 31-45 and Holy's at 43-56, with nothing new to press. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Holy/Protection paladin presses from level 1 to 60, stage by stage. It levels behind a shield and plays the Protection list: a one-handed weapon and a shield, **Seal of Fury** from 10 (Holy damage on every swing and, with the shield, an absorb), **Judgement** and **Holy Strike** on cooldown, **Swift Judgement** from 25 and **Holy Shield** from 30. Protection takes the first 21 points (10-30) and **Reckoning** (55 and 57-60); Retribution's mana talents come at 31-45 and 54, Holy's at 43-56, with nothing new to press. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -891,8 +891,8 @@
      "notes": [
       "**Hammer of Wrath** (44): the tuned rules of 2026-11-06 never cast it (about 2% faster kills without it). Use it on a mob that runs.",
       "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.",
-      "**Holy Conduit** (54-55) makes **Exorcism** 40% cheaper. Its savings on **Consecration** and **Hammer of Wrath** do not count here: the tuned list casts neither.",
-      "**Reckoning** (57-60): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press."
+      "**Vindication** (54) lowers the attack power of the mob you hit, so it hits you softer.",
+      "**Reckoning** (55 and 57-60): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press."
      ],
      "if_hurt": "Below about a third of your health, with the mob above a fifth of its own: **Templar's Bulwark**, then **Holy Light** behind its absorb. With the Bulwark on cooldown: **Divine Shield** below 30% and **Holy Light** inside it, or **Flash of Light** below a quarter. **Lay on Hands** below 15%."
     }
@@ -1251,8 +1251,8 @@
      ],
      "notes": [
       "**Consecration** (20): the Holy list never casts it against a single mob. It is for packs.",
-      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it. **Holy Conduit** (20) makes it cheaper.",
-      "The healing talents start early: **Illumination** (21-25) returns mana after a critical heal, **Spiritual Focus** (17-19 and 26-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger."
+      "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.",
+      "The healing talents start early: **Illumination** (20-24) returns mana after a critical heal, **Spiritual Focus** (14, 19 and 25-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
@@ -1271,7 +1271,7 @@
       "The mana rule keeps **Holy Shock** to the start of a fight with your mana high: it is not cast on cooldown.",
       "With a mob targeted, **Holy Shock** hits the mob. Hold Alt, the self-cast key on the [keybinds page](keybinds.md), to heal yourself with it instead.",
       "From 30 the fight lab dresses this build in caster gear (spell power and Intellect) instead of melee gear, as it does every Holy build with **Holy Shock**. Melee gear was not measured for it.",
-      "From 31 the points go into Retribution's mana and crit talents (**Benediction**, **Sanctified Judgement**, **Conviction**, **Improved Judgement**), then Protection's **Divine Intellect** (42-46). Nothing new to press.",
+      "From 31 the points go into Retribution: **Benediction** (31-35) makes instant spells such as **Holy Shock**, your seal and **Judgement** 10% cheaper, **Conviction** (36-38) adds 6% critical chance to spells and attacks, **Deflection** (39-40) adds parry and **Pursuit of Justice** (41-42) 15% movement speed. Then Protection's **Divine Intellect** (43-47). Nothing new to press.",
       "From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Protection** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
@@ -1289,13 +1289,13 @@
       "**Holy Strike** whenever it is ready."
      ],
      "notes": [
-      "**Hammer of Wrath** has a 1-second cast and a 6-second cooldown; **Holy Conduit** makes it cheaper.",
-      "**Deflection** (47-48) adds parry, **Healing Light** (49) its last point. Nothing new to press."
+      "**Hammer of Wrath** has a 1-second cast and a 6-second cooldown.",
+      "**Unyielding Faith** (48-49) shortens fears and disorients on you by 30%, and **Healing Light** takes its last point at 50. Nothing new to press."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
     {
-     "from": 50,
+     "from": 51,
      "title": "Divine Favor",
      "change": "**Divine Favor** (talent): a sure critical for your next **Holy Shock** or heal.",
      "press": [
@@ -1308,8 +1308,8 @@
      ],
      "notes": [
       "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then **Holy Shock** or the heal.",
-      "**Infusion of Light** (51): a critical **Holy Shock** or **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (53-56) makes critical heals bigger.",
-      "**Oath of Light** (52), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo. **Consecrated Ground** (58) needs **Consecration**, which the Holy list does not cast against a single mob.",
+      "**Infusion of Light** (52): a critical **Holy Shock** or **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (54-58) makes critical heals bigger.",
+      "**Oath of Light** (53), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo.",
       "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the first of those heals if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
@@ -1324,7 +1324,7 @@
    "other": [
     "The [Holy leveling page](holy.md) compares this build's time per kill with Retribution's.",
     "Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target list never casts it.",
-    "Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 21-25, **Healing Light** at 28-29 and 49, **Holy Power** at 53-56."
+    "Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 20-24, **Healing Light** at 28-29 and 50, **Holy Power** at 54-58."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; the blessing, the aura, food, drink, the mount and the Hearthstone have no key, you click them between fights. Holy keeps the Retribution layout, so muscle memory carries over: Q the strike you press most, E the stun, R the seal and **Judgement**, F the bubble, the thumb buttons the heals. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [paladin keybinds page](keybinds.md).",
@@ -1426,7 +1426,7 @@
         "role": "Before Holy Shock or an emergency heal: a sure critical",
         "binds": [
          {
-          "from": 50,
+          "from": 51,
           "spell": "Divine Favor"
          }
         ]

@@ -2,13 +2,11 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Retribution
 
-**✅ Recommended** for leveling (the best paladin spec here, or within 3% of it).
-
 **Leveling from level 1?** [The rotation level by level](retribution-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (12/9/30) — [open the talent tree](https://talentsforever.com/paladin/60/050232-50301-0523330120130133-12)
+**[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (12/8/31) — [open the talent tree](https://talentsforever.com/paladin/60/05025-503-0523330120130134-12)
 
-*Signature spells (**Judgement**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 100% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Seal of Command, Judgement, Holy Strike, Vengeance; this build never casts Seal of Righteousness) (the spec's rule: at least 60%; **Judgement** cast at level 60).
 
 ## How to play
 
@@ -32,24 +30,22 @@ Retribution levels with one seal: **Seal of Command** before each pull (**Seal o
 
 - **Seal of Command** goes up before each pull (from level 20, when you take it; **Seal of Righteousness** before that) and lasts 30 seconds, longer than most fights. It gives your swings a chance to add a Holy hit of 70% of your weapon damage, so a slow two-hander suits it. This build has no **Unsealed Wrath**, so there is no seal swapping while leveling.
 - **Judgement** and **Holy Strike** whenever ready. **Judgement** is off the global cooldown and has a 10-second cooldown; both points of **Improved Judgement** (levels 24 and 26) cut it to 8. **Sanctified Judgement** (15-17) returns 60% of your seal's mana cost each time you judge, **Sacred Arbiter** (25) adds 20% to **Holy Strike**, **Benediction** (10-14) makes your instant spells and strikes 10% cheaper, **Conviction** (18-19 and 23) adds 6% critical strike chance, **Two-Handed Weapon Specialization** (27-29) 6% Holy and Physical damage, and **Vengeance** (30-32) up to 3% per stack, five stacks, after each critical strike.
-- **Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rules (re-tuned from scratch on 2026-11-07) never cast it and kill about 10% faster that way: its mana costs more drinking than its damage saves.
+- **Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rules (re-tuned from scratch on 2026-11-07 and again on 2026-11-09, with **Vindication** modelled: the same two rules) never cast it and kill about 10% faster that way: its mana costs more drinking than its damage saves.
 - **Hammer of Justice** doubles **Seal of Command**'s judgement: against a stunned mob it hits for 339 to 373 instead of 169 to 187 at rank 5. It has a 1-minute cooldown, so the combo is ready for about one pull in three; on those pulls, when both spells are ready and the mob has more than 30% health left, stun first, then judge. The same stun is your answer to a mob that casts spells, so a caster in the next fight runs free if you just spent it.
-- **Hammer of Wrath** comes at 44, with a 1-second cast (**Champion of the Light**, 51-53, takes 0.6 seconds off). The tuned rules leave it out, because never casting it measured faster: keep it for a mob that runs.
-- The points from level 41 on are small: **Divine Intellect** (41-45), **Precision** (46-48, 3% hit), **Repentance** (49), **Vindication** (50 and 54-55), **Champion of the Light** (51-53), **Sacred Duty** (56), **Reverence** (57-58) and **Purifying Power** (59-60). **Pursuit of Justice** (21-22) is movement speed, which the lab models as constant travel. The lab measures nothing for **Vindication** (not modelled), **Sacred Duty** and **Purifying Power** against single mobs of your level.
+- **Hammer of Wrath** comes at 44, with a 1-second cast (**Champion of the Light**, 51-53 and 56, takes 0.8 seconds off). The tuned rules leave it out, because never casting it measured faster: keep it for a mob that runs.
+- The points from level 41 on are small: **Divine Intellect** (41-45), **Precision** (46-48, 3% hit), **Repentance** (49), **Vindication** (50 and 54-55), **Champion of the Light** (51-53 and 56), **Reverence** (57-58) and **Improved Seals** (59-60, its last two ranks). **Pursuit of Justice** (21-22) is movement speed, which the lab models as constant travel. **Vindication** lowers the attack power of the mob you hit, so it hits you softer: the fight lab models it since 2026-11-09. The build takes no **Sacred Duty** or **Purifying Power** since that date: both measured nothing against single mobs of your level, and their three points went to **Champion of the Light** (56) and **Improved Seals** (59-60).
 - Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune from level 18, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. From 34 **Divine Shield** (10 seconds, your damage halved) takes the bubble's place. Against same-level mobs the fight lab almost never needed these. Between fights heal back to 80%, drink below about a third of your mana and eat only if you are still below 65% of your health (the lab's defaults for this list, which the tuned rules do not change).
 
 **Caveats**
 
 - Several mobs: **Consecration** hits all of them and its bonus damage goes to the first four in it, so it earns its mana there. The fight lab's three-mob runs still played without it, so the gain is unmeasured.
-- Undead and Demons: **Exorcism** (instant, 15-second cooldown; **Purifying Power** takes 17% off it at 59 and a third at 60) hits them hard, and **Holy Wrath** (level 50, a 2-second cast, 1-minute cooldown) hits and stuns every one within 20 yards. The fight lab has no Undead or Demon mobs, so neither was measured.
+- Undead and Demons: **Exorcism** (instant, 15-second cooldown) hits them hard, and **Holy Wrath** (level 50, a 2-second cast, 1-minute cooldown) hits and stuns every one within 20 yards. The fight lab has no Undead or Demon mobs, so neither was measured. This build has no **Purifying Power**, which cuts both cooldowns by a third: where you level through many of them, move the points **Improved Seals** takes at 59-60 into it.
 - **Divine Protection**, **Divine Shield** and **Blessing of Protection** share one Forbearance: after one of them, none of the others is available for a minute.
 
 **When to change it**
 
 - A mob that stands back and casts: **Hammer of Justice** (10 yards) stops the cast; the fight lab uses it that way.
 - A mob that runs at low health: **Hammer of Wrath** (30 yards) finishes it, or **Hammer of Justice** holds it if it is ready.
-
-*This guide was written for the rotation of 2026-11-08; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -76,9 +72,9 @@ One point per level from 10, in this order:
 | 50 | Vindication (Retribution) | 1 |
 | 51-53 | Champion of the Light (Retribution) | 3 |
 | 54-55 | Vindication (Retribution) | 2 |
-| 56 | Sacred Duty (Protection) | 1 |
+| 56 | Champion of the Light (Retribution) | 1 |
 | 57-58 | Reverence (Holy) | 2 |
-| 59-60 | Purifying Power (Holy) | 2 |
+| 59-60 | Improved Seals (Holy) | 2 |
 
 ## The numbers
 
@@ -88,11 +84,11 @@ One point per level from 10, in this order:
 | 30 | 22 |
 | 40 | 27 |
 | 50 | 29 |
-| 60 | 33 |
+| 60 | 32 |
 
 ## Other builds of this spec
 
-- [Retribution (optimized)](../research/leveling/builds/opt-ret-dps-leveling-st.md) (10/11/30, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/paladin/60/05023-503021-0523330120130133-12)
+- [Retribution (optimized)](../research/leveling/builds/opt-ret-dps-leveling-st.md) (10/11/30, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/paladin/60/05023-503021-0523330120130133-12)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*

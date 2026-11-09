@@ -390,3 +390,13 @@ Healer filler pass (fixed tool, 200 runs, five-minute and ten-minute fights) res
 - Stale comments fixed: fightlab/warrior.py eat thresholds (65%, Arms 40% by the 11-03 rules), fightlab/druid.py Genesis (+2%/rank).
 - page_lint: build 7 (mage 2 wait for the gear redo, rogue 4 for the rogue lane, paladin Prot-Ret for the Vindication lane), dead 1
   (rogue Subtlety's Dirty Tricks, rogue lane), the rest 0.
+
+## Status, 2026-11-09 ~07:53 (paladin Vindication lane done 07:35)
+
+- Lane results: Holy open winner 30/0/21 (32.96 s, 16.6% faster than the page) not written, it fails Holy's signature rule (Holy Shock
+  0.16-0.47 a kill at 30-50); the page keeps the raid path, now 32/5/14 in the stats model's order. Protection's winner 13/25/13 is the
+  Hybrid Holy/Protection page (30.70 s), Retribution's 11/16/24 the Prot-Ret page (26.46 s). Signature audit re-run: Holy still FAIL.
+- Filler passes: Retribution (Purifying Power 2 to Improved Seals, Sacred Duty to Champion of the Light), Prot-Ret (Improved Seals to
+  Improved Judgement, plus the two gate swaps above), Holy/Protection (Holy Conduit 2 to Reckoning and Vindication).
+- Guides rewritten for the new orders: Holy, Retribution, Prot-Ret, Holy/Protection (by-level and rotation guides), stamped, measured.
+  `level_guides.py --check`: 0 errors for every class. `page_lint`: 0 paladin findings; left: mage raid (gear redo), rogue raid (rogue lane).

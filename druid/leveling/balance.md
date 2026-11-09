@@ -40,7 +40,7 @@ Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it run
 
 - **Moonkin Form** blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while you have half your health and the mob still has half of its own (the fight lab plays it that way).
 - Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 51, 57-58) keeps up to half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana (35%) and eats below 40% of your health (the tuned rule of 2026-11-06). Druids cannot use a wand, so an empty bar means waiting.
-- Before **Moonkin Form** (levels 10-39) the fight lab heals between fights instead of eating: **Rejuvenation** below 85% health, **Regrowth** below 70%.
+- Until **Moonkin Form** arrives at level 40, the fight lab heals between fights instead of eating: **Rejuvenation** below 85% health, **Regrowth** below 70%.
 
 **When to change it**
 

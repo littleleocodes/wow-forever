@@ -10,7 +10,7 @@
 
 **Signature spells:** 76% of the damage at level 60 in the fight lab comes from the spec's core spells (Holy Shield, Seal of Fury, Judgement, melee; this build never casts Consecration, Seal of Righteousness) (the spec's rule: at least 60%; **Holy Shield** cast at level 60).
 
-**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 13% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 27 s: Protection is 14% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

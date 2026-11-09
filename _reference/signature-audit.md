@@ -52,15 +52,14 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Holy | page | holy-leveling (32/5/14) | holy-leveling | - | Holy Shock 0.65 | 74% (min 60%) | 38.7 | FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50) |
+| Holy | page | holy-leveling (32/5/14) | holy-leveling | - | Holy Shock 0.66 | 74% (min 60%) | 39.5 | FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.23/kill at 40 (needs 0.50) |
 | Protection | page | protection-leveling (0/35/16) | prot-leveling | - | Holy Shield 2.08 | 76% (min 60%) | 31.2 | OK |
-| Retribution | page | leveling-retribution (12/9/30) | ret-dps | - | Judgement 2.97 | 100% (min 60%) | 27.7 | OK |
+| Retribution | page | leveling-retribution (12/8/31) | ret-dps | - | Judgement 2.90 | 100% (min 60%) | 27.3 | OK |
 | Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.97 | 100% (min 60%) | 27.7 | OK |
-| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (13/25/13) | prot-leveling | - | - | - (min -) | 30.8 | no rule |
-| Prot-Ret | page | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.40 | 100% (min 60%) | 27.8 | OK |
+| Holy/Protection hybrid | page | hybrid-holy-protection-open-leveling (11/26/14) | prot-leveling | - | - | - (min -) | 30.6 | no rule |
+| Prot-Ret | page | prot-ret-open-leveling (10/16/25) | ret-dps | - | Judgement 3.31 | 100% (min 60%) | 26.8 | OK |
+| Prot-Ret | slot | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.40 | 100% (min 60%) | 27.8 | OK |
 | Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.95 | 100% (min 60%) | 27.6 | OK |
-| Prot-Ret | slot | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.31 | 100% (min 60%) | 27.0 | OK |
-| Holy | default | holy-leveling (32/5/14) | holy-leveling (no rules) | - | Holy Shock 0.77 | 74% (min 60%) | 38.9 | FAIL: Holy Shock 0.24/kill at 30 (needs 0.50); Holy Shock 0.38/kill at 40 (needs 0.50) |
 
 ## Priest
 

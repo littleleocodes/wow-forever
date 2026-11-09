@@ -249,41 +249,62 @@ def key_holding(keys, level):
 
 
 # ------------------------------------------------------------------------------------------------ check
-TALENT_AT = re.compile(r"\*\*([^*]+)\*\* \(((?:\d+(?:-\d+)?)(?:, \d+(?:-\d+)?)*)\)")
+# "**Talent** (a-b, c)"; since 2026-11-09 also "(level 30; ...)", "(levels 24 and 26)" and "(18, 30 seconds a rank ...)": the rotation
+# guides write levels that way, and the Holy paladin's "**Sanctified Judgement** (36; one rank ...)" had outlived its build
+# A group, "**Lethal Attacks** and **Careful Aim** (levels 10-19)", gives one range for all its talents (group 1 holds the others).
+TALENT_AT = re.compile(r"((?:\*\*[^*]+\*\*(?:, and |, | and ))*)\*\*([^*]+)\*\* \((?:levels? )?(\d+(?:-\d+)?(?:(?:, | and )\d+(?:-\d+)?)*)(?=[);,:])")
 
 
 def _levels(text):
     out = set()
-    for part in str(text).split(","):
+    for part in str(text).replace(" and ", ",").split(","):
         a, _, z = part.strip().partition("-")
         out |= set(range(int(a), int(z or a) + 1))
     return out
 
 
-def stale_levels(cls, g, b, order):
+def guide_texts(g):
+    texts = [g.get("intro", "")] + g.get("between", []) + g.get("other", [])
+    for s in g.get("stages", []):
+        texts += [s.get("change", ""), s.get("if_hurt", "")] + s.get("press", []) + s.get("notes", [])
+    return texts
+
+
+def rotation_guide_texts(cls, spec):
+    """The spec's leveling rotation guide (guides/<class>.json, the leveling page's "## Why this rotation"). 2026-11-09: the paladin
+    lane re-ordered three builds, the by-level guides failed the check below and the rotation guides, which cite the same levels
+    ("**Sacred Duty** (56)", "**Holy Conduit** (20)"), passed it unread."""
+    import guides as GD
+    g = GD.guide(cls, spec, "leveling") or {}
+    return [g.get("plan") or ""] + [x for k in ("why", "caveats", "diverge") for x in (g.get(k) or [])]
+
+
+def stale_levels(cls, texts, b, order):
     """Talents a guide text places at levels the build's order does not (2026-11-09 audit W22: the Protection warrior's guide kept the
     levels of the build its page showed before, "**Iron Will** (10)", "**Cruelty** (43-47)", and no check read them): every
     "**Talent** (a-b, c)" with levels 10+ against the order's levels for that talent."""
     out = []
     held = {n for items in b["allocation"].values() for n, r in items if r}
-    texts = [g.get("intro", "")] + g.get("between", []) + g.get("other", [])
-    for s in g.get("stages", []):
-        texts += [s.get("change", ""), s.get("if_hurt", "")] + s.get("press", []) + s.get("notes", [])
     tnames = SG.talent_names(cls)
     for txt in texts:
         for m in TALENT_AT.finditer(txt or ""):
-            n, lv = m.group(1), _levels(m.group(2))
+            n, said, lv = m.group(2), m.group(3), _levels(m.group(3))
             if n not in tnames or min(lv) < 10:
                 continue
             if n not in held:
-                out.append(f"places **{n}** at {m.group(2)}; the build ({b['id']}) does not take it")
+                out.append(f"places **{n}** at {said}; the build ({b['id']}) does not take it")
                 continue
+            group = {n} | {x for x in re.findall(r"\*\*([^*]+)\*\*", m.group(1)) if x in held}
             want = set()
             for step in order or []:
-                if step.get("talent") == n:
+                if step.get("talent") in group:
                     want |= _levels(step["levels"])
-            if want and not lv <= want:   # a stage may name some of the talent's levels (Ice Shards 24, 26-27, then 32-33)
-                out.append(f"places **{n}** at {m.group(2)}; the order takes it at {', '.join(str(x) for x in sorted(want))}")
+            # a stage may name some of the talent's levels (Ice Shards 24, 26-27, then 32-33); one range from the first rank's level to
+            # the last's is the span its ranks arrive in ("**Relentless Strikes** (31-39)" for 31, 33, 34, 38, 39)
+            span = re.fullmatch(r"\d+-\d+", said) and want and min(lv) == min(want) and max(lv) == max(want)
+            if want and not lv <= want and not span:
+                who = n if len(group) == 1 else " / ".join(sorted(group))
+                out.append(f"places **{who}** at {said}; the order takes {'it' if len(group) == 1 else 'them'} at {', '.join(str(x) for x in sorted(want))}")
     return out
 
 
@@ -296,8 +317,10 @@ def check(cls):
         if not b:
             out.append(("error", f"{g['spec']}: no leveling build on its page"))
             continue
-        for t in stale_levels(cls, g, b, order):
+        for t in stale_levels(cls, guide_texts(g), b, order):
             out.append(("error", f"{g['spec']}: the guide {t}"))
+        for t in stale_levels(cls, rotation_guide_texts(cls, g["spec"]), b, order):
+            out.append(("error", f"{g['spec']}: the rotation guide {t}"))
         ob = {"allocation": b["allocation"], "order": order}
         m = measured(cls, g["spec"], b, order, rot)
         if not m:

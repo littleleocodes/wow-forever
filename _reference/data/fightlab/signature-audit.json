@@ -768,8 +768,8 @@
     "spec": "Holy",
     "rotation": "holy-leveling",
     "ok": false,
-    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50)",
-    "core_share": 0.7418,
+    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.23/kill at 40 (needs 0.50)",
+    "core_share": 0.7387,
     "min_share": 0.6,
     "required": [
      "Holy Shock"
@@ -783,24 +783,24 @@
      "Seal of Command"
     ],
     "casts_60": {
-     "Holy Shock": 0.65
+     "Holy Shock": 0.66
     },
     "missing_talents": [],
     "uncast": [
      [
       "Holy Shock",
       30,
-      0.177,
+      0.18,
       0.5
      ],
      [
       "Holy Shock",
       40,
-      0.297,
+      0.233,
       0.5
      ]
     ],
-    "fingerprint": "5fd39c4df9c3",
+    "fingerprint": "8ecee70b8e96",
     "date": "2026-11-09",
     "fights": 300
    },
@@ -850,11 +850,11 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.97
+     "Judgement": 2.9
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "6b92a0ac17fc",
+    "fingerprint": "f3086ae8d575",
     "date": "2026-11-09",
     "fights": 300
    },
@@ -897,7 +897,34 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "550819f29331",
+    "fingerprint": "fc4249ffbc51",
+    "date": "2026-11-09",
+    "fights": 300
+   },
+   "prot-ret-open-leveling": {
+    "spec": "Hybrid Protection/Retribution",
+    "rotation": "ret-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "casts_60": {
+     "Judgement": 3.31
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "3d6439e760a3",
     "date": "2026-11-09",
     "fights": 300
    },
@@ -952,33 +979,6 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "dd7e8e3b27b9",
-    "date": "2026-11-09",
-    "fights": 300
-   },
-   "prot-ret-open-leveling": {
-    "spec": "Hybrid Protection/Retribution",
-    "rotation": "ret-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.9993,
-    "min_share": 0.6,
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Seal of Fury",
-     "Judgement",
-     "Holy Strike"
-    ],
-    "casts_60": {
-     "Judgement": 3.31
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "58d49582e7b3",
     "date": "2026-11-09",
     "fights": 300
    }
@@ -3260,35 +3260,35 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shock": 0.65
+     "Holy Shock": 0.66
     },
-    "core_share": 0.7418,
+    "core_share": 0.7387,
     "min_share": 0.6,
-    "weighted": 38.66,
-    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.30/kill at 40 (needs 0.50)",
+    "weighted": 39.46,
+    "verdict": "FAIL: Holy Shock 0.18/kill at 30 (needs 0.50); Holy Shock 0.23/kill at 40 (needs 0.50)",
     "ok": false,
     "missing_talents": [],
     "uncast": [
      [
       "Holy Shock",
       30,
-      0.177,
+      0.18,
       0.5
      ],
      [
       "Holy Shock",
       40,
-      0.297,
+      0.233,
       0.5
      ]
     ],
     "top_shares": {
-     "Melee": 0.301,
-     "Judgement": 0.188,
-     "Seal of Righteousness": 0.178,
-     "Hammer of Wrath": 0.139,
-     "Holy Strike": 0.119,
-     "Holy Shock": 0.076
+     "Melee": 0.309,
+     "Seal of Righteousness": 0.185,
+     "Judgement": 0.171,
+     "Hammer of Wrath": 0.138,
+     "Holy Strike": 0.123,
+     "Holy Shock": 0.073
     }
    },
    {
@@ -3334,7 +3334,7 @@
     "spec": "Retribution",
     "name": "Retribution",
     "build": "leveling-retribution",
-    "split": "12/9/30",
+    "split": "12/8/31",
     "rotation": "ret-dps",
     "rules": "tuned",
     "kind": "page",
@@ -3351,20 +3351,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.97
+     "Judgement": 2.9
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 27.66,
+    "weighted": 27.29,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.393,
-     "Judgement": 0.225,
-     "Seal of Command": 0.199,
-     "Holy Strike": 0.183
+     "Melee": 0.388,
+     "Judgement": 0.24,
+     "Seal of Command": 0.196,
+     "Holy Strike": 0.176
     }
    },
    {
@@ -3408,7 +3408,7 @@
     "spec": "Hybrid Holy/Protection",
     "name": "Holy/Protection hybrid",
     "build": "hybrid-holy-protection-open-leveling",
-    "split": "13/25/13",
+    "split": "11/26/14",
     "rotation": "prot-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -3418,18 +3418,55 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 30.75,
+    "weighted": 30.58,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.34,
-     "Holy Shield": 0.206,
-     "Judgement": 0.196,
-     "Holy Strike": 0.11,
-     "Seal of Fury": 0.094,
-     "Reckoning": 0.054
+     "Melee": 0.338,
+     "Holy Shield": 0.2,
+     "Judgement": 0.198,
+     "Holy Strike": 0.104,
+     "Seal of Fury": 0.093,
+     "Reckoning": 0.067
+    }
+   },
+   {
+    "spec": "Hybrid Protection/Retribution",
+    "name": "Prot-Ret",
+    "build": "prot-ret-open-leveling",
+    "split": "10/16/25",
+    "rotation": "ret-dps",
+    "rules": "tuned",
+    "kind": "page",
+    "required": [
+     "Judgement"
+    ],
+    "core": [
+     "melee",
+     "Seal of Command",
+     "Seal of Righteousness",
+     "Seal of Fury",
+     "Judgement",
+     "Holy Strike"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Judgement": 3.31
+    },
+    "core_share": 1.0,
+    "min_share": 0.6,
+    "weighted": 26.81,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Melee": 0.385,
+     "Judgement": 0.245,
+     "Seal of Command": 0.196,
+     "Holy Strike": 0.174
     }
    },
    {
@@ -3439,7 +3476,7 @@
     "split": "8/19/24",
     "rotation": "ret-dps",
     "rules": "tuned",
-    "kind": "page",
+    "kind": "slot",
     "required": [
      "Judgement"
     ],
@@ -3504,96 +3541,6 @@
      "Judgement": 0.225,
      "Seal of Command": 0.197,
      "Holy Strike": 0.177
-    }
-   },
-   {
-    "spec": "Hybrid Protection/Retribution",
-    "name": "Prot-Ret",
-    "build": "prot-ret-open-leveling",
-    "split": "12/16/23",
-    "rotation": "ret-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Judgement"
-    ],
-    "core": [
-     "melee",
-     "Seal of Command",
-     "Seal of Righteousness",
-     "Seal of Fury",
-     "Judgement",
-     "Holy Strike"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Judgement": 3.31
-    },
-    "core_share": 0.9993,
-    "min_share": 0.6,
-    "weighted": 27.01,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Melee": 0.383,
-     "Judgement": 0.255,
-     "Seal of Command": 0.193,
-     "Holy Strike": 0.169,
-     "Eye for an Eye": 0.001
-    }
-   },
-   {
-    "spec": "Holy",
-    "name": "Holy",
-    "build": "holy-leveling",
-    "split": "32/5/14",
-    "rotation": "holy-leveling",
-    "rules": "default",
-    "kind": "default",
-    "required": [
-     "Holy Shock"
-    ],
-    "core": [
-     "Holy Shock",
-     "Exorcism",
-     "Judgement",
-     "melee",
-     "Seal of Righteousness",
-     "Seal of Command"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Holy Shock": 0.77
-    },
-    "core_share": 0.7428,
-    "min_share": 0.6,
-    "weighted": 38.92,
-    "verdict": "FAIL: Holy Shock 0.24/kill at 30 (needs 0.50); Holy Shock 0.38/kill at 40 (needs 0.50)",
-    "ok": false,
-    "missing_talents": [],
-    "uncast": [
-     [
-      "Holy Shock",
-      30,
-      0.24,
-      0.5
-     ],
-     [
-      "Holy Shock",
-      40,
-      0.38,
-      0.5
-     ]
-    ],
-    "top_shares": {
-     "Melee": 0.295,
-     "Judgement": 0.184,
-     "Seal of Righteousness": 0.175,
-     "Hammer of Wrath": 0.142,
-     "Holy Strike": 0.115,
-     "Holy Shock": 0.088
     }
    }
   ],

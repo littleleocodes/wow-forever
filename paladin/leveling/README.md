@@ -6,9 +6,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Retribution](retribution.md) — Leveling — Retribution | 28 | fastest |
-| 2 | [Protection](protection.md) — Leveling into the raid build 🔬 | 31 | +13% |
-| 3 | [Holy](holy.md) — Leveling into the raid build 🔬 | 38 | +38% |
+| 1 | [Prot-Ret](prot-ret.md) 🔬 | 26 | fastest |
+| 2 | [Retribution](retribution.md) — Leveling — Retribution | 27 | +4% |
+| 3 | [Holy/Protection hybrid](hybrid-holy-protection.md) 🔬 | 31 | +16% |
+| 4 | [Protection](protection.md) — Leveling into the raid build 🔬 | 31 | +18% |
+| 5 | [Holy](holy.md) — Leveling into the raid build 🔬 | 39 | +48% |
 
 **Level by level:** [Retribution](retribution-by-level.md), [Prot-Ret](prot-ret-by-level.md), [Holy/Protection hybrid](hybrid-holy-protection-by-level.md), [Holy](holy-by-level.md), [Protection](protection-by-level.md) (what to press from level 1 as each spell and talent arrives).
 

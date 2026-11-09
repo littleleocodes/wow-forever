@@ -524,3 +524,15 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   (`heallab/filler_pass.py`, `fightlab/fl_filler_pass.py`): the leveling pass now moves a zero point into a live talent when the move
   costs at most 0.1% on each seed (noise had kept Improved Sayaad in a Voidwalker build), and `open_builds.py` re-applies a written pass.
   A healer report's * marks (not simulated) must agree with what the lab applies (Conviction read * at +7.3%).
+- (2026-11-09) Tier-gate points and the rotation guides' levels, after the paladin Vindication lane. (1) `fightlab/fl_filler_pass.py` reads
+  only points the build can drop and stay legal, so a point that holds a tier open is never measured: the Prot-Ret leveling build kept
+  2 **Redoubt** (block, which needs a shield, on a two-hander) and 2 of 3 **Toughness** as the 15 Protection points **Swift Judgement**
+  needs. Moved by hand and recorded in the pass's record (`fightlab/filler/paladin-hybrid-protection-retribution.json`, so
+  `open_builds.py` keeps them): Redoubt to **Sacred Duty** (0.00% on both seeds, a shorter bubble cooldown) and 2 Toughness to
+  **Improved Hammer of Justice** 3/3 (-0.17% / -0.15%). **Open**: a gate step in the pass (each non-removable point moved to a talent of
+  the same tree at its row or above, legal along the order, kept when faster on both seeds), then the pass over every leveling page pick.
+  (2) `level_guides.py --check` now also reads each leveling spec's rotation guide (guides/<class>.json) for talent levels against the
+  build's order, with the forms those guides use ("(level 30;", "(levels 24 and 26)", "(18, 30 seconds a rank"), a group's one range
+  ("**Lethal Attacks** and **Careful Aim** (levels 10-19)") and a span ("**Relentless Strikes** (31-39)" for ranks at 31-39). Its first run:
+  41 stale paladin levels and talents the builds no longer take (Holy Conduit, Consecrated Ground, Sacred Duty, Eye for an Eye), every
+  other class clean but one druid line ("Before **Moonkin Form** (levels 10-39)", reworded).

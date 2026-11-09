@@ -4,7 +4,7 @@
 
 What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build (32/5/14). It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana. **Holy Shock** (30), the spec's signature spell, opens the fight from range while your mana is high, and **Hammer of Wrath** (44) finishes it. Below 40% health you heal yourself in the fight. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/5/14 ([open the talent tree](https://talentsforever.com/paladin/60/55320015101111141-5-251310101-12)), the one on the [Holy leveling page](holy.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 32/5/14 ([open the talent tree](https://talentsforever.com/paladin/60/54320215001101151-5-250300202-12)), the one on the [Holy leveling page](holy.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -17,8 +17,8 @@ What a Holy paladin presses from level 1 to 60, stage by stage, while leveling i
 | 10-19 | Talent points start. **Lay on Hands** is a full heal for emergencies. Nothing new to press in a normal fight. |
 | 20-29 | Nothing new in the rotation: this build takes no **Seal of Command**, so **Seal of Righteousness** stays your seal. **Flash of Light** joins the heals. |
 | 30-43 | **Holy Shock** (talent): an instant Holy blast from 40 yards as the mob walks in, or an instant heal on yourself. |
-| 44-49 | **Hammer of Wrath** finishes a mob below 20% health from range. The Holy list presses it. |
-| 50-60 | **Divine Favor** (talent): a sure critical for your next **Holy Shock** or heal. |
+| 44-50 | **Hammer of Wrath** finishes a mob below 20% health from range. The Holy list presses it. |
+| 51-60 | **Divine Favor** (talent): a sure critical for your next **Holy Shock** or heal. |
 
 ## Keybinds by level
 
@@ -26,7 +26,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-29 | 30-43 | 44-49 | 50-60 |
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-29 | 30-43 | 44-50 | 51-60 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Q | Your strike, on cooldown; the macro also starts your swings | — | — | **Holy Strike** | Holy Strike | Holy Strike | Holy Strike | Holy Strike | Holy Strike | Holy Strike |
 | E | Control: the stun | — | — | — | **Hammer of Justice** | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice | Hammer of Justice |
@@ -43,7 +43,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 2: the same keys with Shift (packs, buffs, travel)**
 
-| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-29 | 30-43 | 44-49 | 50-60 |
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-29 | 30-43 | 44-50 | 51-60 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the ground under you | — | — | — | — | — | **Consecration** | Consecration | Consecration | Consecration |
 | Shift+E | Free (the Retribution build's Repentance key; this build does not take it) | — | — | — | — | — | — | — | — | — |
@@ -52,7 +52,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+Mouse 5 | The panic button: a full heal | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands | Lay on Hands | Lay on Hands |
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead | Turn Undead | Turn Undead |
 | Shift+1 | Free | — | — | — | — | — | — | — | — | — |
-| Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | — | — | **Holy Wrath** |
+| Shift+2 | Undead and Demons: the area version | — | — | — | — | — | — | — | **Holy Wrath** from 50 | Holy Wrath |
 | Shift+3 | Free | — | — | — | — | — | — | — | — | — |
 | Shift+4 | Free | — | — | — | — | — | — | — | — | — |
 | Shift+C | Free | — | — | — | — | — | — | — | — | — |
@@ -148,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Divine Protection at 18; Holy Light at 14; Holy Strike at 12; Seal of Righteousness at 10, 18.
 
-**Talents:** 10-14 Divine Strength, 15-16 Reverence, 17-19 Spiritual Focus.
+**Talents:** 10-13 Divine Strength, 14 Spiritual Focus, 15-16 Reverence, 17-18 Purifying Power, 19 Spiritual Focus.
 
 **Keys to set:** 1 = Blessing of Protection; Shift+Mouse 5 = Lay on Hands; Shift+F = Blessing of Freedom (at 18).
 
@@ -175,7 +175,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Blessing of Protection at 24; Exorcism at 28; Flash of Light at 26; Hammer of Justice at 24; Holy Light at 22; Holy Strike at 20, 28; Seal of Righteousness at 26.
 
-**Talents:** 20 Holy Conduit, 21-25 Illumination, 26-27 Spiritual Focus, 28-29 Healing Light.
+**Talents:** 20-24 Illumination, 25-27 Spiritual Focus, 28-29 Healing Light.
 
 **Keys to set:** Mouse 4 = Flash of Light; 2 = Exorcism; Shift+Q = Consecration; Shift+Mouse 4 = Turn Undead (at 24).
 
@@ -191,10 +191,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%.
 
 - **Consecration** (20): the Holy list never casts it against a single mob. It is for packs.
-- **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it. **Holy Conduit** (20) makes it cheaper.
-- The healing talents start early: **Illumination** (21-25) returns mana after a critical heal, **Spiritual Focus** (17-19 and 26-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger.
+- **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
+- The healing talents start early: **Illumination** (20-24) returns mana after a critical heal, **Spiritual Focus** (14, 19 and 25-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger.
 
-*Fight lab, seconds per kill: 22 at level 20, 27 at level 29. Presses per kill at level 20: Melee 4.3, Judgement 1.9, Holy Strike 1.6, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 22 at level 20, 27 at level 29. Presses per kill at level 20: Melee 4.4, Judgement 1.8, Holy Strike 1.6, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 30-43: Holy Shock
 
@@ -202,7 +202,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Blessing of Protection at 38; Consecration at 30, 40; Exorcism at 36; Flash of Light at 34, 42; Hammer of Justice at 40; Holy Light at 30, 38; Holy Shock at 40; Holy Strike at 36; Lay on Hands at 30; Seal of Righteousness at 34, 42; Turn Undead at 38.
 
-**Talents:** 30 Holy Shock, 31-35 Benediction, 36 Sanctified Judgement, 37-39 Conviction, 40 Improved Judgement, 41 Pursuit of Justice, 42-43 Divine Intellect.
+**Talents:** 30 Holy Shock, 31-35 Benediction, 36-38 Conviction, 39-40 Deflection, 41-42 Pursuit of Justice, 43 Divine Intellect.
 
 **Keys to set:** Middle mouse = Holy Shock; F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
@@ -221,20 +221,20 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The mana rule keeps **Holy Shock** to the start of a fight with your mana high: it is not cast on cooldown.
 - With a mob targeted, **Holy Shock** hits the mob. Hold Alt, the self-cast key on the [keybinds page](keybinds.md), to heal yourself with it instead.
 - From 30 the fight lab dresses this build in caster gear (spell power and Intellect) instead of melee gear, as it does every Holy build with **Holy Shock**. Melee gear was not measured for it.
-- From 31 the points go into Retribution's mana and crit talents (**Benediction**, **Sanctified Judgement**, **Conviction**, **Improved Judgement**), then Protection's **Divine Intellect** (42-46). Nothing new to press.
+- From 31 the points go into Retribution: **Benediction** (31-35) makes instant spells such as **Holy Shock**, your seal and **Judgement** 10% cheaper, **Conviction** (36-38) adds 6% critical chance to spells and attacks, **Deflection** (39-40) adds parry and **Pursuit of Justice** (41-42) 15% movement speed. Then Protection's **Divine Intellect** (43-47). Nothing new to press.
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
-*Fight lab, seconds per kill: 33 at level 30, 38 at level 40, 39 at level 43. Presses per kill at level 30: Melee 6.7, Judgement 2.6, Holy Strike 2.4, Seal of Righteousness 1.0, Holy Shock 0.2, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 33 at level 30, 38 at level 40, 40 at level 43. Presses per kill at level 30: Melee 6.8, Judgement 2.6, Holy Strike 2.4, Seal of Righteousness 1.0, Holy Shock 0.1, Hammer of Justice 0.1.*
 
-## Levels 44-49: Hammer of Wrath
+## Levels 44-50: Hammer of Wrath
 
-**The trainer teaches:** **Hammer of Wrath** (44), Blessing of Sacrifice (46).
+**The trainer teaches:** **Hammer of Wrath** (44), Blessing of Sacrifice (46), Holy Wrath (50).
 
-**New ranks to buy:** Exorcism at 44; Holy Light at 46; Holy Shock at 48; Holy Strike at 44.
+**New ranks to buy:** Consecration at 50; Divine Shield at 50; Exorcism at 44; Flash of Light at 50; Holy Light at 46; Holy Shock at 48; Holy Strike at 44; Lay on Hands at 50; Seal of Righteousness at 50.
 
-**Talents:** 44-46 Divine Intellect, 47-48 Deflection, 49 Healing Light.
+**Talents:** 44-47 Divine Intellect, 48-49 Unyielding Faith, 50 Healing Light.
 
-**Keys to set:** Shift+R = Hammer of Wrath.
+**Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50).
 
 **Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, Middle mouse Holy Shock, Shift+R Hammer of Wrath, Shift+Mouse 5 Lay on Hands.
 
@@ -249,20 +249,20 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%.
 
-- **Hammer of Wrath** has a 1-second cast and a 6-second cooldown; **Holy Conduit** makes it cheaper.
-- **Deflection** (47-48) adds parry, **Healing Light** (49) its last point. Nothing new to press.
+- **Hammer of Wrath** has a 1-second cast and a 6-second cooldown.
+- **Unyielding Faith** (48-49) shortens fears and disorients on you by 30%, and **Healing Light** takes its last point at 50. Nothing new to press.
 
-*Fight lab, seconds per kill: 39 at level 44, 41 at level 49. Presses per kill at level 44: Melee 6.5, Judgement 2.7, Holy Strike 2.2, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Holy Shock 0.6, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 40 at level 44, 42 at level 50. Presses per kill at level 44: Melee 6.6, Judgement 2.6, Holy Strike 2.2, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Holy Shock 0.6, Hammer of Justice 0.1.*
 
-## Levels 50-60: Divine Favor
+## Levels 51-60: Divine Favor
 
-**The trainer teaches:** Holy Wrath (50), Greater Blessing of Might (52), Greater Blessing of Wisdom (54), Greater Blessing of Kings (60).
+**The trainer teaches:** Greater Blessing of Might (52), Greater Blessing of Wisdom (54), Greater Blessing of Kings (60).
 
-**New ranks to buy:** Consecration at 50, 60; Divine Shield at 50; Exorcism at 52, 60; Flash of Light at 50, 58; Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Light at 54, 60; Holy Shock at 56; Holy Strike at 52, 60; Holy Wrath at 60; Lay on Hands at 50; Seal of Righteousness at 50, 58; Turn Undead at 52.
+**New ranks to buy:** Consecration at 60; Exorcism at 52, 60; Flash of Light at 58; Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Light at 54, 60; Holy Shock at 56; Holy Strike at 52, 60; Holy Wrath at 60; Seal of Righteousness at 58; Turn Undead at 52.
 
-**Talents:** 50 Divine Favor, 51 Infusion of Light, 52 Oath of Light, 53-56 Holy Power, 57 Unyielding Faith, 58 Consecrated Ground, 59 Boundless Light, 60 Light's Vigil.
+**Talents:** 51 Divine Favor, 52 Infusion of Light, 53 Oath of Light, 54-58 Holy Power, 59 Boundless Light, 60 Light's Vigil.
 
-**Keys to set:** 3 = Divine Favor; Shift+2 = Holy Wrath.
+**Keys to set:** 3 = Divine Favor.
 
 **Your keys in this stage:** Q Holy Strike, E Hammer of Justice, R Judgement, F Divine Shield, Mouse 5 Holy Light, Mouse 4 Flash of Light, 3 Divine Favor, Middle mouse Holy Shock, Shift+R Hammer of Wrath, Shift+Mouse 5 Lay on Hands.
 
@@ -278,11 +278,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Shield** if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the first of those heals if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%.
 
 - **Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then **Holy Shock** or the heal.
-- **Infusion of Light** (51): a critical **Holy Shock** or **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (53-56) makes critical heals bigger.
-- **Oath of Light** (52), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo. **Consecrated Ground** (58) needs **Consecration**, which the Holy list does not cast against a single mob.
+- **Infusion of Light** (52): a critical **Holy Shock** or **Flash of Light** shortens your next **Holy Light**'s cast. **Holy Power** (54-58) makes critical heals bigger.
+- **Oath of Light** (53), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 40 at level 50, 45 at level 60. Presses per kill at level 50: Melee 7.0, Judgement 3.0, Holy Strike 2.4, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Holy Shock 0.6, Divine Favor 0.2, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 43 at level 51, 46 at level 60. Presses per kill at level 51: Melee 7.4, Judgement 2.8, Holy Strike 2.5, Seal of Righteousness 1.1, Hammer of Wrath 1.0, Holy Shock 0.6, Divine Favor 0.2, Hammer of Justice 0.1.*
 
 ## Between fights
 
@@ -295,7 +295,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - The [Holy leveling page](holy.md) compares this build's time per kill with Retribution's.
 - Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target list never casts it.
-- Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 21-25, **Healing Light** at 28-29 and 49, **Holy Power** at 53-56.
+- Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 20-24, **Healing Light** at 28-29 and 50, **Holy Power** at 54-58.
 
 ---
 *Generated by `_reference/data/level_guides.py` on 2026-11-09: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

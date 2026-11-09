@@ -1,0 +1,609 @@
+{
+ "class": "paladin",
+ "spec": "Hybrid Holy/Protection",
+ "build": "hybrid-holy-protection-open-leveling",
+ "rotation": "prot-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-12",
+   "tree": "Protection",
+   "talent": "Divine Intellect",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 2
+  },
+  {
+   "levels": "15-17",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "22-23",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Protection",
+   "talent": "Improved Righteous Fury",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Protection",
+   "talent": "Holy Shield",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "36-38",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "39-41",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 3
+  },
+  {
+   "levels": "42",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "43-44",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 2
+  },
+  {
+   "levels": "45",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 3
+  },
+  {
+   "levels": "49-50",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 2
+  },
+  {
+   "levels": "51-53",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "54-55",
+   "tree": "Holy",
+   "talent": "Holy Conduit",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Protection",
+   "talent": "Reckoning",
+   "points": 4
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 30.94,
+   "values_at_60": {
+    "Conviction": -0.448,
+    "Holy Conduit": 0.0,
+    "Holy Shield": -54.782,
+    "Improved Judgement": -0.357,
+    "Improved Seals": -0.241,
+    "Reckoning": -0.386,
+    "Sanctified Judgement": -1.837
+   },
+   "zero": [
+    "Holy Conduit"
+   ]
+  },
+  {
+   "weighted": 30.829,
+   "values_at_60": {
+    "Conviction": -0.55,
+    "Holy Conduit": 0.0,
+    "Holy Shield": -6.66,
+    "Improved Judgement": -0.416,
+    "Improved Seals": -0.191,
+    "Reckoning": -0.376,
+    "Sanctified Judgement": -1.947
+   },
+   "zero": [
+    "Holy Conduit"
+   ]
+  },
+  {
+   "weighted": 30.771,
+   "values_at_60": {
+    "Conviction": -0.388,
+    "Holy Shield": -6.702,
+    "Improved Judgement": -0.272,
+    "Improved Seals": -0.173,
+    "Reckoning": -0.343,
+    "Reverence": -0.39,
+    "Sanctified Judgement": -1.774,
+    "Vindication": -0.166
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Holy Conduit",
+   "to": "Reckoning",
+   "level": 55,
+   "seed3": -0.0036,
+   "seed4": -0.003,
+   "why": "measured"
+  },
+  {
+   "from": "Holy Conduit",
+   "to": "Vindication",
+   "level": 54,
+   "seed3": -0.0019,
+   "seed4": -0.0025,
+   "why": "tie-break"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-12",
+   "tree": "Protection",
+   "talent": "Divine Intellect",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 2
+  },
+  {
+   "levels": "15-17",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "22-23",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Protection",
+   "talent": "Improved Righteous Fury",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Protection",
+   "talent": "Holy Shield",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "36-38",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "39-41",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 3
+  },
+  {
+   "levels": "42",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "43-44",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 2
+  },
+  {
+   "levels": "45",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 3
+  },
+  {
+   "levels": "49-50",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 2
+  },
+  {
+   "levels": "51-53",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "54",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Protection",
+   "talent": "Reckoning",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Protection",
+   "talent": "Reckoning",
+   "points": 4
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Holy": [
+    [
+     "Divine Strength",
+     5
+    ],
+    [
+     "Reverence",
+     2
+    ],
+    [
+     "Improved Seals",
+     4
+    ]
+   ],
+   "Protection": [
+    [
+     "Divine Intellect",
+     3
+    ],
+    [
+     "Redoubt",
+     5
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Templar's Bulwark",
+     1
+    ],
+    [
+     "Shield Specialization",
+     2
+    ],
+    [
+     "Toughness",
+     1
+    ],
+    [
+     "Swift Judgement",
+     1
+    ],
+    [
+     "Improved Righteous Fury",
+     1
+    ],
+    [
+     "Anticipation",
+     3
+    ],
+    [
+     "Holy Shield",
+     1
+    ],
+    [
+     "Reckoning",
+     5
+    ]
+   ],
+   "Retribution": [
+    [
+     "Benediction",
+     5
+    ],
+    [
+     "Improved Judgement",
+     2
+    ],
+    [
+     "Conviction",
+     3
+    ],
+    [
+     "Sanctified Judgement",
+     3
+    ],
+    [
+     "Vindication",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-12",
+    "tree": "Protection",
+    "talent": "Divine Intellect",
+    "points": 3
+   },
+   {
+    "levels": "13-14",
+    "tree": "Protection",
+    "talent": "Redoubt",
+    "points": 2
+   },
+   {
+    "levels": "15-17",
+    "tree": "Protection",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "18-19",
+    "tree": "Protection",
+    "talent": "Redoubt",
+    "points": 2
+   },
+   {
+    "levels": "20",
+    "tree": "Protection",
+    "talent": "Templar's Bulwark",
+    "points": 1
+   },
+   {
+    "levels": "21",
+    "tree": "Protection",
+    "talent": "Redoubt",
+    "points": 1
+   },
+   {
+    "levels": "22-23",
+    "tree": "Protection",
+    "talent": "Shield Specialization",
+    "points": 2
+   },
+   {
+    "levels": "24",
+    "tree": "Protection",
+    "talent": "Toughness",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Protection",
+    "talent": "Swift Judgement",
+    "points": 1
+   },
+   {
+    "levels": "26-28",
+    "tree": "Protection",
+    "talent": "Anticipation",
+    "points": 3
+   },
+   {
+    "levels": "29",
+    "tree": "Protection",
+    "talent": "Improved Righteous Fury",
+    "points": 1
+   },
+   {
+    "levels": "30",
+    "tree": "Protection",
+    "talent": "Holy Shield",
+    "points": 1
+   },
+   {
+    "levels": "31-35",
+    "tree": "Retribution",
+    "talent": "Benediction",
+    "points": 5
+   },
+   {
+    "levels": "36-38",
+    "tree": "Retribution",
+    "talent": "Sanctified Judgement",
+    "points": 3
+   },
+   {
+    "levels": "39-41",
+    "tree": "Retribution",
+    "talent": "Conviction",
+    "points": 3
+   },
+   {
+    "levels": "42",
+    "tree": "Retribution",
+    "talent": "Improved Judgement",
+    "points": 1
+   },
+   {
+    "levels": "43-44",
+    "tree": "Holy",
+    "talent": "Divine Strength",
+    "points": 2
+   },
+   {
+    "levels": "45",
+    "tree": "Retribution",
+    "talent": "Improved Judgement",
+    "points": 1
+   },
+   {
+    "levels": "46-48",
+    "tree": "Holy",
+    "talent": "Divine Strength",
+    "points": 3
+   },
+   {
+    "levels": "49-50",
+    "tree": "Holy",
+    "talent": "Reverence",
+    "points": 2
+   },
+   {
+    "levels": "51-53",
+    "tree": "Holy",
+    "talent": "Improved Seals",
+    "points": 3
+   },
+   {
+    "levels": "54",
+    "tree": "Retribution",
+    "talent": "Vindication",
+    "points": 1
+   },
+   {
+    "levels": "55",
+    "tree": "Protection",
+    "talent": "Reckoning",
+    "points": 1
+   },
+   {
+    "levels": "56",
+    "tree": "Holy",
+    "talent": "Improved Seals",
+    "points": 1
+   },
+   {
+    "levels": "57-60",
+    "tree": "Protection",
+    "talent": "Reckoning",
+    "points": 4
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Holy Conduit to Reckoning at 55 (measured: -0.4% seed 3, -0.3% seed 4, level-weighted time per kill); Holy Conduit to Vindication at 54 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill)."
+ }
+}

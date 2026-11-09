@@ -6,7 +6,7 @@
 
 - none
 
-Guides whose rotation changed since they were stamped (16; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (11; rewrite or confirm, then `--stamp`):
 
 - druid Balance raid: balance-dps
 - druid Feral Combat raid: feral-bear-tank, feral-cat-dps
@@ -15,11 +15,6 @@ Guides whose rotation changed since they were stamped (16; rewrite or confirm, t
 - hunter Survival raid: melee-dps
 - hunter Hybrid Beast Mastery/Marksmanship raid: bm-raid, mm-lonewolf-raid, mm-raid
 - hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
-- paladin Retribution leveling: leveling:ret-dps
-- paladin Protection leveling: leveling:ret-dps
-- paladin Holy leveling: leveling:ret-dps
-- paladin Hybrid Protection/Retribution leveling: leveling:ret-dps
-- paladin Hybrid Holy/Protection leveling: leveling:ret-dps
 - rogue Combat raid: combat-daggers-raid, combat-swords-raid
 - rogue Assassination raid: assassination-raid
 - rogue Subtlety raid: subtlety-raid
@@ -59,13 +54,13 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | mage | Hybrid Fire/Frost | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
 | mage | Hybrid Fire/Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps b8271e4a77aa |
-| paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 70ce3a0e1635 |
+| paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | paladin | Protection | raid | 2026-10-15 | prot-tank 271ef28b893a |
-| paladin | Protection | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 70ce3a0e1635 |
+| paladin | Protection | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | paladin | Holy | raid | 2026-11-09 | healer-policy daf1051b3b18 |
-| paladin | Holy | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 70ce3a0e1635 |
-| paladin | Hybrid Protection/Retribution | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 70ce3a0e1635 |
-| paladin | Hybrid Holy/Protection | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 70ce3a0e1635 |
+| paladin | Holy | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Hybrid Protection/Retribution | leveling | 2026-11-09 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Hybrid Holy/Protection | leveling | 2026-11-09 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | priest | Shadow | raid | 2026-11-04 | shadow-dps f98eed89871b |
 | priest | Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 11d48ca4a0ea, leveling:holy-leveling efa767cc819b, leveling:shadow-dps bf384f69c323 |
 | priest | Hybrid Discipline/Holy | raid | 2026-11-04 | smite-dps 15055efffd77 |

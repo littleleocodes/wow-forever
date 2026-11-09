@@ -3,19 +3,153 @@
  "spec": "Retribution",
  "build": "leveling-retribution",
  "rotation": "ret-dps",
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Retribution",
+   "talent": "Pursuit of Justice",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Retribution",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "30-32",
+   "tree": "Retribution",
+   "talent": "Vengeance",
+   "points": 3
+  },
+  {
+   "levels": "33-37",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "38-40",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "41-45",
+   "tree": "Protection",
+   "talent": "Divine Intellect",
+   "points": 5
+  },
+  {
+   "levels": "46-48",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Retribution",
+   "talent": "Repentance",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 1
+  },
+  {
+   "levels": "51-53",
+   "tree": "Retribution",
+   "talent": "Champion of the Light",
+   "points": 3
+  },
+  {
+   "levels": "54-55",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Protection",
+   "talent": "Sacred Duty",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Holy",
+   "talent": "Purifying Power",
+   "points": 2
+  }
+ ],
  "steps": [
   {
-   "weighted": 27.355,
+   "weighted": 27.003,
    "values_at_60": {
-    "Champion of the Light": -617.564,
-    "Improved Seals": -0.418,
-    "Precision": -0.455,
+    "Champion of the Light": -602.718,
+    "Improved Seals": -0.442,
+    "Precision": -0.682,
     "Purifying Power": 0.0,
-    "Reverence": -0.51,
+    "Reverence": -0.522,
     "Sacred Duty": 0.0,
-    "Vindication": -613.792
+    "Vindication": -609.111
    },
    "zero": [
     "Purifying Power",
@@ -23,15 +157,15 @@
    ]
   },
   {
-   "weighted": 27.343,
+   "weighted": 26.99,
    "values_at_60": {
-    "Champion of the Light": -613.134,
-    "Improved Seals": -0.075,
-    "Precision": -0.335,
+    "Champion of the Light": -597.852,
+    "Improved Seals": -0.077,
+    "Precision": -0.272,
     "Purifying Power": 0.0,
-    "Reverence": -0.171,
+    "Reverence": -0.241,
     "Sacred Duty": 0.0,
-    "Vindication": -612.368
+    "Vindication": -604.513
    },
    "zero": [
     "Improved Seals",
@@ -40,33 +174,29 @@
    ]
   },
   {
-   "weighted": 27.298,
+   "weighted": 26.963,
    "values_at_60": {
-    "Champion of the Light": -0.266,
-    "Improved Seals": -0.353,
-    "Precision": -0.477,
-    "Reverence": -0.451,
-    "Sacred Duty": 0.0,
-    "Vindication": 0.0
+    "Champion of the Light": -0.163,
+    "Improved Seals": -0.273,
+    "Precision": -0.388,
+    "Purifying Power": 0.0,
+    "Reverence": -0.295,
+    "Vindication": -0.334
    },
    "zero": [
-    "Sacred Duty",
-    "Vindication"
+    "Purifying Power"
    ]
   },
   {
-   "weighted": 27.208,
+   "weighted": 26.927,
    "values_at_60": {
-    "Champion of the Light": -603.678,
-    "Improved Seals": -0.325,
-    "Precision": -0.442,
-    "Reverence": -0.497,
-    "Sacred Duty": 0.0,
-    "Vindication": -601.144
+    "Champion of the Light": -0.182,
+    "Improved Seals": -0.212,
+    "Precision": -0.255,
+    "Reverence": -0.35,
+    "Vindication": -0.278
    },
-   "zero": [
-    "Sacred Duty"
-   ]
+   "zero": []
   }
  ],
  "moves": [
@@ -75,23 +205,23 @@
    "to": "Improved Seals",
    "level": 60,
    "seed3": -0.0005,
-   "seed4": -0.0028,
+   "seed4": -0.0021,
    "why": "tie-break"
+  },
+  {
+   "from": "Sacred Duty",
+   "to": "Champion of the Light",
+   "level": 56,
+   "seed3": -0.001,
+   "seed4": -0.0003,
+   "why": "no loss"
   },
   {
    "from": "Purifying Power",
-   "to": "Champion of the Light",
-   "level": 59,
-   "seed3": -0.0016,
-   "seed4": -0.0011,
-   "why": "tie-break"
-  },
-  {
-   "from": "Vindication",
    "to": "Improved Seals",
-   "level": 55,
-   "seed3": -0.0033,
-   "seed4": -0.0025,
+   "level": 59,
+   "seed3": -0.0013,
+   "seed4": -0.0019,
    "why": "tie-break"
   }
  ],
@@ -205,21 +335,15 @@
    "points": 3
   },
   {
-   "levels": "54",
+   "levels": "54-55",
    "tree": "Retribution",
    "talent": "Vindication",
-   "points": 1
-  },
-  {
-   "levels": "55",
-   "tree": "Holy",
-   "talent": "Improved Seals",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "56",
-   "tree": "Protection",
-   "talent": "Sacred Duty",
+   "tree": "Retribution",
+   "talent": "Champion of the Light",
    "points": 1
   },
   {
@@ -229,16 +353,223 @@
    "points": 2
   },
   {
-   "levels": "59",
-   "tree": "Retribution",
-   "talent": "Champion of the Light",
-   "points": 1
-  },
-  {
-   "levels": "60",
+   "levels": "59-60",
    "tree": "Holy",
    "talent": "Improved Seals",
-   "points": 1
+   "points": 2
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Holy": [
+    [
+     "Divine Strength",
+     5
+    ],
+    [
+     "Reverence",
+     2
+    ],
+    [
+     "Improved Seals",
+     5
+    ]
+   ],
+   "Protection": [
+    [
+     "Divine Intellect",
+     5
+    ],
+    [
+     "Precision",
+     3
+    ]
+   ],
+   "Retribution": [
+    [
+     "Benediction",
+     5
+    ],
+    [
+     "Improved Judgement",
+     2
+    ],
+    [
+     "Conviction",
+     3
+    ],
+    [
+     "Sanctified Judgement",
+     3
+    ],
+    [
+     "Vindication",
+     3
+    ],
+    [
+     "Seal of Command",
+     1
+    ],
+    [
+     "Pursuit of Justice",
+     2
+    ],
+    [
+     "Sacred Arbiter",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Repentance",
+     1
+    ],
+    [
+     "Vengeance",
+     3
+    ],
+    [
+     "Champion of the Light",
+     4
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Retribution",
+    "talent": "Benediction",
+    "points": 5
+   },
+   {
+    "levels": "15-17",
+    "tree": "Retribution",
+    "talent": "Sanctified Judgement",
+    "points": 3
+   },
+   {
+    "levels": "18-19",
+    "tree": "Retribution",
+    "talent": "Conviction",
+    "points": 2
+   },
+   {
+    "levels": "20",
+    "tree": "Retribution",
+    "talent": "Seal of Command",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Retribution",
+    "talent": "Pursuit of Justice",
+    "points": 2
+   },
+   {
+    "levels": "23",
+    "tree": "Retribution",
+    "talent": "Conviction",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Retribution",
+    "talent": "Improved Judgement",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Retribution",
+    "talent": "Sacred Arbiter",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Retribution",
+    "talent": "Improved Judgement",
+    "points": 1
+   },
+   {
+    "levels": "27-29",
+    "tree": "Retribution",
+    "talent": "Two-Handed Weapon Specialization",
+    "points": 3
+   },
+   {
+    "levels": "30-32",
+    "tree": "Retribution",
+    "talent": "Vengeance",
+    "points": 3
+   },
+   {
+    "levels": "33-37",
+    "tree": "Holy",
+    "talent": "Divine Strength",
+    "points": 5
+   },
+   {
+    "levels": "38-40",
+    "tree": "Holy",
+    "talent": "Improved Seals",
+    "points": 3
+   },
+   {
+    "levels": "41-45",
+    "tree": "Protection",
+    "talent": "Divine Intellect",
+    "points": 5
+   },
+   {
+    "levels": "46-48",
+    "tree": "Protection",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "49",
+    "tree": "Retribution",
+    "talent": "Repentance",
+    "points": 1
+   },
+   {
+    "levels": "50",
+    "tree": "Retribution",
+    "talent": "Vindication",
+    "points": 1
+   },
+   {
+    "levels": "51-53",
+    "tree": "Retribution",
+    "talent": "Champion of the Light",
+    "points": 3
+   },
+   {
+    "levels": "54-55",
+    "tree": "Retribution",
+    "talent": "Vindication",
+    "points": 2
+   },
+   {
+    "levels": "56",
+    "tree": "Retribution",
+    "talent": "Champion of the Light",
+    "points": 1
+   },
+   {
+    "levels": "57-58",
+    "tree": "Holy",
+    "talent": "Reverence",
+    "points": 2
+   },
+   {
+    "levels": "59-60",
+    "tree": "Holy",
+    "talent": "Improved Seals",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Purifying Power to Improved Seals at 60 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Sacred Duty to Champion of the Light at 56 (no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Purifying Power to Improved Seals at 59 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill)."
+ }
 }

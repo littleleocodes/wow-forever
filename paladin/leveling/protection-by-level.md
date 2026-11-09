@@ -283,7 +283,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Reckoning** (52-55 and 57): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 34 at level 49, 32 at level 50. Presses per kill at level 49: Melee 9.3, Judgement 3.8, Shield block 3.7, Holy Strike 2.6, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 34 at level 49, 32 at level 50, 34 at level 55. Presses per kill at level 49: Melee 9.3, Judgement 3.8, Shield block 3.7, Holy Strike 2.6, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
 
 ## Levels 56-60: Shieldsworn and Iron Creed
 
