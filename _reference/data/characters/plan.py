@@ -994,7 +994,9 @@ def action_sections(evs, at, L, head="###"):
         for e in sorted(by[kind], key=lambda e: -minutes_saved(e, at) / (price_of(e) or 1)):
             saves, earn = pays_for_itself(e, at, price_of(e) or 0)
             verdict = f" Saves about {saves:.0f} min of killing; earning its price takes about {earn:.0f} min of play."
-            if e.get("paid"):
+            if e.get("paid") and e["paid"][0] > max(e["get_at"], NOW_LV):
+                verdict += f" Your gear budget covers it at level {e['paid'][0]} ({AH.money(e['paid'][1])} left after it)."
+            elif e.get("paid"):
                 verdict += f" Fits your gear budget ({AH.money(e['paid'][1])} left after it)."
             o += [line(e, at) + verdict]
         o += [""]
