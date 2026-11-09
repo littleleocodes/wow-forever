@@ -47,7 +47,7 @@ def known_recipes(char, duckdb_path, cache):
                 con.close()
             out = []
             for prof, key, name, item, reag in rows:
-                if not (key or "").startswith("r") or not key[1:].isdigit():
+                if not (key or "")[:1] in ("r", "e") or not key[1:].isdigit():   # "r<spell>" (modern window), "e<spell>" (classic window, enchants)
                     continue
                 rg = [(int(a), int(b)) for a, b in (x.split(":") for x in (reag or "").split(",") if ":" in x)]
                 out.append({"profession": prof, "spell": int(key[1:]), "name": name, "out_item": item, "reagents": rg})
