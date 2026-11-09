@@ -709,12 +709,18 @@ def main():
     ah = cfg.get("ah") or {}
     if ah.get("ahcopy") and pathlib.Path(ah["ahcopy"]).exists():   # the user's ForeverTape add-on, read only
         PRICES = AH.Prices(ah["ahcopy"], ah.get("insights"))
-        if ah.get("prices_csv") and pathlib.Path(ah["prices_csv"]).exists():   # vendor prices from the add-on project's hourly export
+        # vendor prices: Classic's for every vendor-sold item, then the add-on project's hourly export where it has seen the vendor
+        for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8")):
+            if r.get("vendor") == "1" and r.get("buy_price", "0").isdigit() and int(r["buy_price"]):
+                VENDOR[int(r["item"])] = int(r["buy_price"])
+        if ah.get("prices_csv") and pathlib.Path(ah["prices_csv"]).exists():
             for r in csv.DictReader(open(ah["prices_csv"], encoding="utf-8")):
-                v = r.get("vendor_buy") or r.get("vendor_price_buy") or ""
+                v = r.get("vendor_buy") or ""
                 if v.strip().isdigit() and int(v):
                     VENDOR[int(r["item_id"])] = int(v)
-        for p in pool:   # gear listed on the auction house now (plain items; random-suffix versions are not read yet)
+        if ah.get("gear_versions_csv") and pathlib.Path(ah["gear_versions_csv"]).exists():   # random-suffix gear listed now
+            pool = pool + IP.suffix_versions(cfg["class"], cfg["faction"], cfg["school_share"], ah["gear_versions_csv"])
+        for p in pool:   # plain gear listed on the auction house now (random-suffix versions: suffix_versions above)
             if PRICES.listed(p["id"]):
                 p["sources"].append({"kind": "auction", "price": PRICES.buy(p["id"])})
     COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])

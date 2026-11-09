@@ -15,7 +15,8 @@
  "ah": {
   "ahcopy": "D:/World of Warcraft/_forever_/Interface/AddOns/ForeverTape/AHCopy.lua",
   "insights": "D:/World of Warcraft/_forever_/Interface/AddOns/ForeverTape/Insights.lua",
-  "prices_csv": "",
-  "note": "the user's ForeverTape add-on (F:/wow-addons, its own Claude session 'Addons'): READ ONLY; hourly from Blizzard's AH API"
+  "prices_csv": "F:/wow-addons/data/exports/prices.csv",
+  "note": "the user's ForeverTape add-on (F:/wow-addons, its own Claude session 'Addons'): READ ONLY; hourly from Blizzard's AH API",
+  "gear_versions_csv": "F:/wow-addons/data/exports/gear_versions.csv"
  }
 }

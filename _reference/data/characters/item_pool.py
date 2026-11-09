@@ -195,6 +195,49 @@ def forever_quests(ids, region="us"):
     return cache
 
 
+def suffix_versions(cls, faction, school_share, csv_path):
+    """Random-suffix gear listed on the auction house now ("of the Owl", "of Arcane Wrath"...), from the user's ForeverTape export
+    `gear_versions.csv` (item_id,variant,name,suffix_name,stats,cheapest,units,as_of; variant "b<suffix id>"), in pool form with the
+    source "auction". Stats: the item's fixed stats plus round(allocation x the item's random property points / 10000) per suffix stat,
+    the simulator's rule (sim/core/database.go ItemEquipmentBaseStats), so no in-game scan is needed. One entry per item and stats, at the
+    cheapest price."""
+    db = sim_db()
+    items = {it["id"]: it for it in db["items"]}
+    suffixes = {s["id"]: s for s in db.get("randomSuffixes") or []}
+    best = {}
+    for r in csv.DictReader(open(csv_path, encoding="utf-8")):
+        it = items.get(int(r["item_id"]))
+        v = r["variant"].strip()
+        if not it or not v.startswith("b") or not r["cheapest"] or not usable(it, cls, faction):
+            continue
+        sids = [int(x) for x in v[1:].split(".") if x.isdigit() and int(x) in suffixes]
+        if not sids:
+            continue
+        st = lab_stats(it, school_share)
+        points = ((it.get("scalingOptions") or {}).get("0") or {}).get("randPropPoints") or 0
+        for sid in sids:
+            for k, alloc in enumerate(suffixes[sid].get("stats") or []):
+                if not alloc:
+                    continue
+                amount = int(alloc * points / 10000 + 0.5)   # Go's math.Round: half away from zero
+                if k in STAT:
+                    st[STAT[k]] = st.get(STAT[k], 0) + amount
+                elif k in SCHOOLS:
+                    st["spell_power"] = st.get("spell_power", 0) + amount * school_share.get(SCHOOLS[k], 0)
+        if not any(k != "armor" for k in st):
+            continue
+        name = r["name"] or f"{it['name']} {suffixes[sids[0]]['name']}"
+        key = (it["id"], tuple(sorted(st.items())))
+        price = int(r["cheapest"])
+        if key not in best or price < best[key]["sources"][0]["price"]:
+            slot = SLOTS.get(it.get("type"))
+            if it.get("type") == 13:
+                slot = {4: "two-hand", 3: "off-hand"}.get(it.get("handType"), "main-hand")
+            best[key] = {"id": f"{it['id']}:{v}", "name": name, "slot": slot, "quality": it.get("quality"), "req": it.get("reqLvl") or 0,
+                         "stats": st, "sources": [{"kind": "auction", "price": price}], "unique": False, "set": None}
+    return list(best.values())
+
+
 def item_texts(ids, region="us"):
     """{item id: [use/equip descriptions]} from Blizzard's item API (cached, asked again weekly): consumables' effects and durations
     ("Lasts for 30 min."; Forever's well-fed foods: "+5% experience from kills")."""

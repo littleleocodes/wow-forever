@@ -196,10 +196,13 @@ def main():
                 continue
             rows.append([spawned[e], e, r["Name"], r["Rank"], r["MaxLevel"], it, x["name"], round(ch, 4)])
     write(out / "dungeon_drops.csv", ["map", "creature", "name", "rank", "level", "item", "item_name", "chance"], sorted(rows))
+    # buy_price: what a vendor charges (copper); vendor: 1 when some vendor sells it (the planner's fallback for vendor-sold reagents,
+    # thread, dyes, vials, when the user's ForeverTape export has not seen that vendor yet)
     write(out / "item_names.csv", ["item", "name", "class", "subclass", "quality", "required_level", "required_skill", "required_rank",
-                                   "rep_faction", "rep_rank"],
+                                   "rep_faction", "rep_rank", "buy_price", "vendor"],
           sorted([int(r["entry"]), r["name"], r["class"], r["subclass"], r["Quality"], r["RequiredLevel"], r["RequiredSkill"], r["RequiredSkillRank"],
-                  r.get("RequiredReputationFaction", "0"), r.get("RequiredReputationRank", "0")] for r in d["item_template"]))
+                  r.get("RequiredReputationFaction", "0"), r.get("RequiredReputationRank", "0"), r.get("BuyPrice", "0"),
+                  int(int(r["entry"]) in vendor)] for r in d["item_template"]))
 
 
 if __name__ == "__main__":
