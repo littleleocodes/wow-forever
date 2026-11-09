@@ -98,9 +98,16 @@ def value(stats, wl):
     return sum(wl["w"].get(k, 0.0) * v for k, v in (stats or {}).items())
 
 
+SCHOOL_SHARE = {}   # the character's damage by school (main), for "+32 Frost Damage" read from an item's text
+
+
 def text_stats(lines):
     out = {}
     for t in lines:
+        sm = re.match(r"\+(\d+) (Frost|Fire|Arcane|Shadow|Nature|Holy) (?:Spell )?Damage$", t.strip(), re.I)
+        if sm:   # school damage counts by the build's share of that school (Coldspire Staff: "+32 Frost Damage")
+            out["spell_power"] = out.get("spell_power", 0) + int(sm.group(1)) * SCHOOL_SHARE.get(sm.group(2).lower(), 0)
+            continue
         m = re.search(r"\+(\d+) ([A-Za-z ]+?)$", t.strip()) or re.search(r"([A-Za-z ]+?) \+(\d+)$", t.strip())
         if not m:
             continue
@@ -259,7 +266,7 @@ def chain_step(q):
 # ---------------------------------------------------------------------------------------------------------------- the plan
 def sources_text(it):
     out = []
-    for s in it["sources"]:
+    for s in it.get("sources") or []:
         k = s["kind"]
         if k == "quest":
             if s.get("quest") in COMPLETED:
@@ -277,7 +284,7 @@ def sources_text(it):
         elif k == "auction":
             out.append(f"Auction House now: {AH.money(s.get('price'))}")
         elif k == "market":
-            if not any(x["kind"] == "auction" for x in it["sources"]):
+            if not any(x["kind"] == "auction" for x in it.get("sources") or []):
                 out.append(f"Auction House: usually listed (in {s['share']:.0%} of the hourly snapshots), about {AH.money(s.get('price'))}, "
                            "not this hour")
         elif k == "dungeon":
@@ -296,7 +303,7 @@ def sources_text(it):
                 out.append(f"{s['profession']}: learn it first ({s.get('learn') or 'recipe source unknown'}; {need}; you have {have})")
         elif k == "vendor":
             out.append(f"vendor {s.get('npc')} ({s.get('zone')})")
-        elif k in ("rep", "quartermaster", "trash") and len(it["sources"]) == 1:
+        elif k in ("rep", "quartermaster", "trash") and len(it.get("sources") or []) == 1:
             out.append({"rep": "reputation reward", "quartermaster": f"reputation or PvP vendor {s.get('npc')}", "trash": f"random trash drop in {s.get('zone')}"}[k])
     return "; ".join(out)
 
@@ -310,6 +317,7 @@ PLANNED = []              # (level, copper) of the buys budget_walk fits, for th
 NOW_LV = 0                # the character's level (main)
 PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
 CTX = {}                  # what the town checklist page (checklist.py) shows, filled while the README is written
+BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -319,7 +327,7 @@ def acquirable(it, L, start, profs):
     best = None
     if (it.get("quality") or 0) >= 5:   # legendaries are not leveling gear
         return None
-    for s in it["sources"]:
+    for s in it.get("sources") or []:
         if s["kind"] in ("rep", "drop", "trash", "quartermaster"):
             continue
         if s["kind"] == "dungeon" and s.get("chance") is not None and s["chance"] < MIN_CHANCE:
@@ -349,9 +357,13 @@ def acquirable(it, L, start, profs):
     return best
 
 
+FULL_BY_ID = {}   # every item the planner knows, by id (main): what you wear is read from it whatever pool a plan runs on
+
+
 def plan(cfg, snap, at, pool, profs):
     level = snap["profile"]["level"]
-    eq = equipped(snap, {p["id"]: p for p in pool})
+    eq = equipped(snap, FULL_BY_ID or {p["id"]: p for p in pool})   # (the sure plan's pool has no dungeon drops: a worn dungeon staff
+                                                                      # had read as worth nothing, 2026-11-09)
     by_slot = {}
     for p in pool:
         s = p["slot"]
@@ -374,40 +386,57 @@ def plan(cfg, snap, at, pool, profs):
             pair = {"finger1": "finger2", "finger2": "finger1", "trinket1": "trinket2", "trinket2": "trinket1"}.get(slot)
             if pair and value((cur[pair]["item"] or {}).get("stats"), wl) < cv - 1e-12:
                 continue   # a new ring or trinket replaces the weaker of the two (the other slot's turn)
+            worn_mh = worn_oh = None
             if slot == "weapon":
                 cands = [(value(p["stats"], wl), p, None) for p in by_slot.get("two-hand", []) if p["req"] <= L + LOOKAHEAD]
-                mh = [p for p in by_slot.get("main-hand", []) if p["req"] <= L + LOOKAHEAD]
-                oh = [p for p in by_slot.get("off-hand", []) if p["req"] <= L + LOOKAHEAD]
-                bm = max(mh, key=lambda p: value(p["stats"], wl), default=None)
-                bo = max(oh, key=lambda p: value(p["stats"], wl), default=None)
-                if bm and bo:
-                    cands.append((value(bm["stats"], wl) + value(bo["stats"], wl), bm, bo))
+                # a main hand and an off hand (user 2026-11-09: "Make sure we're also considering a Main + offhand weapon combo as well"):
+                # every pair of the eight best of each you can get, the worn one-hander or off hand kept as one half. Only the best of
+                # each by stats was tried before, and that was often one you cannot get (a random drop, a 200g listing): no pair at all,
+                # and Hypnotic Blade + Orb of the Forgotten Seer (20% faster kills at 34) lost to a 16% staff.
+                def top(hand):
+                    xs = [p for p in by_slot.get(hand, []) if p["req"] <= L + LOOKAHEAD and acquirable(p, L, level, profs) is not None]
+                    return sorted(xs, key=lambda p: -value(p["stats"], wl))[:8]
+                worn_mh = c["item"] if c.get("item") and not is_2h(c["item"]) else None
+                worn_oh = c.get("off")
+                mhs = top("main-hand") + ([worn_mh] if worn_mh else [])
+                ohs = top("off-hand") + ([worn_oh] if worn_oh else [])
+                for m in mhs:
+                    cands.append((value(m["stats"], wl), m, None))   # a one-hander alone (the off hand stays empty)
+                    for oh_ in ohs:
+                        if not (m is worn_mh and oh_ is worn_oh):
+                            cands.append((value(m["stats"], wl) + value(oh_["stats"], wl), m, oh_))
             else:
                 cands = [(value(p["stats"], wl), p, None) for p in by_slot.get(slot, []) if p["req"] <= L + LOOKAHEAD]
-            best = None
+            best, alts = None, []
             for v, p, o in sorted(cands, key=lambda x: -x[0]):
-                if v - cv < UPGRADE * wl["time"]:
+                if v - cv < UPGRADE * wl["time"] or len(alts) >= 2:
                     break
                 if p["id"] in taken or (o and o["id"] in taken):
                     continue
-                a = acquirable(p, L, level, profs)
-                ao = acquirable(o, L, level, profs) if o else level
+                a = level if p is worn_mh else acquirable(p, L, level, profs)
+                ao = level if (o is None or o is worn_oh) else acquirable(o, L, level, profs)
                 if a is None or ao is None:
                     continue
-                if p["req"] > L:   # an item worn later is a candidate at its own level; best_chain picks between it and what you can wear
+                if p.get("req", 0) > L or (o and o.get("req", 0) > L):   # an item worn later is a candidate at its own level; best_chain picks between it and what you can wear
                     continue       # now (waiting for it had skipped 1g 29s boots wearable at 26 for 2g boots at 28, 2026-11-09)
-                best = (v, p, o, max(a, ao))
-                break
-            if best and (best[1]["req"] <= L):
+                if best is None:
+                    best = (v, p, o, max(a, ao))
+                elif p is not best[1] or o is not best[2]:   # the runners-up (2026-11-09: a free quest staff 0.2% behind a dungeon pair
+                    alts.append((v, p, o, max(a, ao)))        # had vanished from the plan)
+            if best and best[1].get("req", 0) <= L:
                 v, p, o, a = best
                 gain = (v - cv) / wl["time"]
                 prev = c["item"]
                 events.append({"level": L, "get_at": a, "slot": slot, "item": p, "off": o, "gain": gain, "replaces": (prev or {}).get("name"),
                                "lasts_from": L, "prev": [prev, c.get("off")]})
+                alt_events = [{"level": L, "get_at": a2, "slot": slot, "item": p2, "off": o2, "gain": (v2 - cv) / wl["time"],
+                               "replaces": (prev or {}).get("name"), "lasts_from": L, "prev": [prev, c.get("off")], "alt": True}
+                              for v2, p2, o2, a2 in alts]
                 if slot in held:
                     held[slot]["until"] = L
                 held[slot] = events[-1]
-                cur[slot] = {"item": {"name": p["name"], "stats": p["stats"], "id": p["id"]}, "off": o, "since": L}
+                events += alt_events
+                cur[slot] = {"item": p, "off": o, "since": L}
                 taken.add(p["id"])
             elif best and best[1]["req"] > L:
                 pass
@@ -447,11 +476,37 @@ def craft_cost(spell):
     return CRAFT_COST[spell]
 
 
-def price_of(e):
-    """What an upgrade costs in gold: None when a quest or a dungeon gives it (free but for the time), else the cheapest of the auction
-    house now, its usual price there, a vendor and the materials of a craft (2026-11-09: every bought or crafted upgrade must pay for
-    itself and fit the gear budget)."""
-    srcs = e["item"]["sources"]
+def is_2h(x):
+    return bool(x.get("two_hand")) or x.get("slot") == "two-hand"
+
+
+def pieces(e):
+    """The items of an upgrade: one, or a main hand and an off hand."""
+    return [x for x in (e["item"], e.get("off")) if x]
+
+
+def new_pieces(e, owned=None):
+    """The pieces of an upgrade you still have to get: not the half of a weapon pair you hold already (owned: item ids; by default the
+    ones best_chain found in the step before), and not an item you wear (it has no sources)."""
+    own = owned if owned is not None else (e.get("owned") or set())
+    return [it for it in pieces(e) if it.get("id") not in own and it.get("sources")]
+
+
+def new_sources(e, owned=None):
+    return [x for it in new_pieces(e, owned) for x in it["sources"]]
+
+
+def price_of(e, owned=None):
+    """What an upgrade costs in gold, both halves of a weapon pair together: None when nothing in it is bought or crafted."""
+    cs = [c for c in (piece_price(it, e) for it in new_pieces(e, owned)) if c is not None]
+    return sum(cs) if cs else None
+
+
+def piece_price(it, e):
+    """What one item costs in gold: None when a quest or a dungeon gives it (free but for the time) or you wear it already, else the
+    cheapest of the auction house now, its usual price there, a vendor and the materials of a craft (2026-11-09: every bought or crafted
+    upgrade must pay for itself and fit the gear budget)."""
+    srcs = it.get("sources") or []
     if any(x["kind"] in ("quest", "dungeon") for x in srcs):
         return None
     cost = []
@@ -461,8 +516,8 @@ def price_of(e):
             cost.append(x["price"])
         elif x["kind"] == "market" and x.get("price") and not now:   # bought later: its usual price
             cost.append(x["price"])
-        elif x["kind"] == "vendor" and isinstance(e["item"]["id"], int) and VENDOR.get(e["item"]["id"]):
-            cost.append(VENDOR[e["item"]["id"]])
+        elif x["kind"] == "vendor" and isinstance(it["id"], int) and VENDOR.get(it["id"]):
+            cost.append(VENDOR[it["id"]])
         elif x["kind"] == "craft" and x.get("spell") and PRICES:
             c = craft_cost(x["spell"])
             if c is not None:
@@ -499,10 +554,161 @@ def budget_walk(events, cfg, at, lv):
                     e["level"], e["get_at"] = L, L
                 pending.remove(e)
             elif L >= max(e["get_at"], lv) + 2 or L + MIN_LASTS >= (e["until"] or 60):
-                dropped.add(e["item"]["id"])
+                dropped |= {it["id"] for it in pieces(e) if piece_price(it, e) is not None}
                 pending.remove(e)
-    dropped |= {e["item"]["id"] for e in pending}
+    dropped |= {it["id"] for e in pending for it in pieces(e) if piece_price(it, e) is not None}
     return dropped
+
+
+def bonus_drops(full, events, eq, at):
+    """Dungeon drops worth chasing on top of the sure plan: each upgrade of the plan with drops (full) that needs one, against what the
+    sure plan (events) has you wear at every level it would be worn, until the next upgrade of the slot in the plan with drops; kept when
+    it beats that by 0.5% and saves MIN_MINUTES if it drops."""
+    def sure_at(slot, L):
+        on = [e for e in events if e["slot"] == slot and e["level"] <= L]
+        if on:
+            e = max(on, key=lambda e: e["level"])
+            return [e["item"], e.get("off")]
+        return [eq.get("main-hand"), eq.get("off-hand")] if slot == "weapon" else [eq.get(slot)]
+
+    def val(its, L):
+        return sum(value((x or {}).get("stats"), at(L)) for x in its)
+
+    out = []
+    for d in full:
+        if not any(all(s["kind"] == "dungeon" for s in it["sources"]) for it in pieces(d) if it.get("sources")):
+            continue
+        L0 = d["level"]
+        nxt = [x["level"] for x in full if x["slot"] == d["slot"] and x["level"] > L0]
+        end = min(nxt) if nxt else 60
+        mine = [d["item"], d.get("off")]
+        m = sum(max(0.0, val(mine, L) - val(sure_at(d["slot"], L), L)) * kills_per_level(L) for L in range(L0, end)) / 60
+        g = (val(mine, L0) - val(sure_at(d["slot"], L0), L0)) / at(L0)["time"]
+        if g < UPGRADE or m < MIN_MINUTES:
+            continue
+        over = " + ".join(x["name"] for x in sure_at(d["slot"], L0) if x) or "an empty slot"
+        out.append(dict(d, owned=set(), bonus_gain=g, bonus_minutes=m, over=over, until=end if nxt else None))
+    return out
+
+
+def dungeon_lines(sched):
+    o = []
+    for r in sched:
+        o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}), run at level {r['run']}"
+              + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] else "") + ":"]
+        if r["quests"]:
+            o += ["  - Quests: " + "; ".join(f"{q['title']} ({q['level']}{', in your log' if q['log'] else ''}"
+                                               f"{', ' + q['start'] if q['start'] else ''}{', grey for you by then' if q['grey'] else ''})"
+                                               for q in r["quests"])]
+        o += [f"  - Drop: {x}" for x in r["drops"]]
+    return o + [""]
+
+
+def dungeon_runs(bonus):
+    """[{zone, lo, hi, worth, own, items}] from the drops worth chasing: one run's worth adds up each drop's minutes over the sure plan
+    times its drop chance in that dungeon (25% where the chance is unknown)."""
+    runs = {}
+    for e in bonus:
+        for s in new_sources(e):
+            if s["kind"] == "dungeon":
+                runs.setdefault((s["zone"], s["lo"], s["hi"]), []).append((s, e))
+    out = []
+    for (z, lo, hi), ev in sorted(runs.items(), key=lambda kv: kv[0][1]):
+        merged = {}
+        for s_, e in ev:
+            merged.setdefault(id(e), (e, []))[1].append(s_)
+        def other(e):   # the other half of a weapon pair that drops elsewhere: (its dungeons, its chance within two runs)
+            rest = [it for it in new_pieces(e) if not any(x["kind"] == "dungeon" and x["zone"] == z for x in it["sources"])]
+            rest = [it for it in rest if it["sources"] and all(x["kind"] == "dungeon" for x in it["sources"])]
+            if not rest:
+                return None, 1.0
+            zs = sorted({x["zone"] for it in rest for x in it["sources"]})
+            pr = 1.0
+            for it in rest:
+                pr *= max((x.get("chance") or 0.25) for x in it["sources"])
+            return " or ".join(zs), pr
+
+        worth = sum(e["bonus_minutes"] * max((x.get("chance") or 0.25) for x in ss) * other(e)[1] for e, ss in merged.values())
+        items = []
+        for e, ss in merged.values():
+            what, _ = upgrade_name(e)
+            ch = max((x.get("chance") or 0.25) for x in ss)
+            oz, op = other(e)
+            items.append(f"{what} ({e['slot']}, from level {e['level']}; {' or '.join(x['boss'] for x in ss)}, "
+                         f"{ch:.0%} drop{', chance unknown' if not any(x.get('chance') for x in ss) else ''}"
+                         + (f"; the other half drops in {oz}, {op:.0%}" if oz else "")
+                         + f"): over your {e['over']}, {pct(e['bonus_gain'])} faster, about {e['bonus_minutes']:.0f} min saved "
+                         + ("with both halves" if oz else "if it drops"))
+        out.append({"zone": z, "lo": lo, "hi": hi, "worth": round(worth), "own": worth >= MIN_MINUTES, "items": items,
+                    "first": min(e["level"] for e, _ in merged.values())})
+    return out
+
+
+DQ = {}
+
+
+def dungeon_schedule(cfg, lv, runs):
+    """Every leveling dungeon you have not outgrown, once (2026-11-09, user: "Make sure dungeons are not being skipped, because dungeons
+    are so worth to run at least once. The XP from the dungeon quests is significant, and I can collect the quest and then run the dungeon
+    once"): the level to run it (the middle of its quests you have not done, inside its range, not below yours), its quests with where
+    each starts (dungeon_quests.csv: a quest whose target, item or giver exists only in that dungeon), and its drops worth hoping for
+    (`runs`, dungeon_runs). A dungeon whose quests are all five or more levels below you and that drops nothing for you is left out."""
+    if not DQ:
+        for r in csv.DictReader(open(IP.RAW / "dungeon_quests.csv", encoding="utf-8")):
+            DQ.setdefault(int(r["map"]), []).append(int(r["quest"]))
+    chain_step(0)   # (loads the quest tables)
+    race_mask = 77 if cfg["faction"] == "alliance" else 178
+    cls_bit = 1 << (IP.CLASS_ID[cfg["class"]] - 1)
+    drops = {r["zone"]: r for r in runs}
+    out = []
+    for m, zid in IP.MAP_TO_ZONE.items():
+        if zid not in IP.DUNGEONS:
+            continue
+        name, lo, hi, side = IP.DUNGEONS[zid]
+        if (side and side != cfg["faction"]) or hi < lv:
+            continue
+        qs = {}
+        for q in DQ.get(m, []):
+            r = CQUESTS.get(q)
+            if not r:
+                continue
+            rr, rc, ql = int(r["required_races"] or 0), int(r["required_classes"] or 0), int(r["quest_level"] or 0)
+            if (rr and not rr & race_mask) or (rc and not rc & cls_bit) or ql >= 60 or ql < lo - 10 or q in COMPLETED:
+                continue   # (a quest far below the dungeon is a data quirk: Rocknot's Ale reads level 1)
+            qs.setdefault(r["title"], (q, ql))
+        levels = sorted(v[1] for v in qs.values() if v[1] > 0)
+        run = levels[len(levels) // 2] if levels else (lo + hi) // 2
+        dr = drops.get(name)
+        if dr:   # a drop you would wear early pulls the run forward (Scarlet Monastery's one Alliance quest is level 40, its Library drop 32)
+            run = min(run, dr["first"] + 1)
+        run = max(lv, lo + 2, min(run, hi - 2))
+        quests = []
+        for title, (q, ql) in sorted(qs.items(), key=lambda kv: kv[1][1]):
+            st = chain_step(q)
+            start = ""
+            if st and st[0] != q and st[0] not in INLOG:
+                first = (CQUESTS.get(st[0]) or {}).get("title", st[0])
+                start = (f"start with part 1" if first == title else f"start with \"{first}\"") + (f" from {st[1]}" if st[1] else "")
+            elif st and st[1]:
+                start = f"from {st[1]}"
+            quests.append({"title": title, "level": ql, "start": start, "grey": ql < run - 5, "log": q in INLOG})
+        if not dr and not any(not x["grey"] for x in quests):
+            continue
+        out.append({"zone": name, "lo": lo, "hi": hi, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
+                    "worth": (dr or {}).get("worth", 0)})
+    return sorted(out, key=lambda x: (x["run"], x["lo"]))
+
+
+def certainty(e, owned=None):
+    """The chance you have an upgrade when the plan wears it: 1 for a quest, a craft or a buy; for a piece only a dungeon drops, its drop
+    chance in your one run of that dungeon (Classic's data, 25% where it has none; the user runs each dungeon once with its quests). best_chain weighs a chain's minutes by it,
+    so a sure upgrade wins a close call against a drop (2026-11-09); the page still names a fallback for a drop that does not come."""
+    out = 1.0
+    for it in new_pieces(e, owned):
+        srcs = it["sources"]
+        if all(s["kind"] == "dungeon" for s in srcs):
+            out *= min(1.0, max((s.get("chance") or 0.25) for s in srcs))
+    return out
 
 
 def best_chain(evs, at):
@@ -516,6 +722,9 @@ def best_chain(evs, at):
     def items(c):
         return base if c is None else [evs[c]["item"], evs[c].get("off")]
 
+    def held(c):   # the item ids you hold after step c (None: what you wear now)
+        return {x["id"] for x in items(c) if x and x.get("id") is not None}
+
     def gain(p, c):
         e = evs[c]
         wl = at(e["level"])
@@ -524,36 +733,59 @@ def best_chain(evs, at):
         nv = value(e["item"]["stats"], wl) + (value(e["off"]["stats"], wl) if e.get("off") else 0.0)
         return (nv - pv) / wl["time"]
 
-    def worth(p, c, nx):
-        """c worn after p (None: the item the slot holds first) until nx (None: 60): None when the swap fails a bar (the minutes it saves
-        over p), else the minutes c saves over the slot's first item while worn (the chain's total adds these up: what the whole chain
-        saves against keeping today's item)."""
-        end = 60 if nx is None else evs[nx]["level"]
-        if end - evs[c]["level"] < MIN_LASTS:
-            return None
-        m = span_minutes(items(c), items(p), evs[c]["level"], end, at)
-        if gain(p, c) < UPGRADE or m < MIN_MINUTES:
-            return None
-        price = price_of(evs[c])   # a buy must also pay for itself (pays_for_itself), or a dearer one could push out a cheaper
-        if price and m < price / (income_per_level(evs[c]["level"], QPL) or 1) * minutes_per_level(evs[c]["level"], at):
-            return None                      # one the gold test then rejected (a 2g 25s tunic over a 79s one, 2026-11-09)
-        return span_minutes(items(c), base, evs[c]["level"], end, at)
+    def val(its, L):
+        return sum(value((x or {}).get("stats"), at(L)) for x in its)
 
-    @functools.lru_cache(maxsize=None)
-    def best(p, c):   # (minutes, chain) choosing c after p, then the best rest
-        top = None
-        for nx in list(range(c + 1, n)) + [None]:
-            m = worth(p, c, nx)
-            if m is None:
-                continue
-            rest = (0.0, ()) if nx is None else best(c, nx)
-            if rest[0] < 0:
-                continue
-            if top is None or m + rest[0] > top[0]:
-                top = (m + rest[0], (c,) + rest[1])
-        return top or (-1.0, ())
+    def run(allowed, fb):
+        """The chain over the steps in `allowed` that saves the most minutes in all. fb(L): what you wear at level L when a dungeon drop
+        does not come (the sure plan; None in the sure plan's own run, which has no drops)."""
+        allowed = sorted(allowed)
 
-    pick = max([best(None, c) for c in range(n)] + [(0.0, ())], key=lambda t: t[0])[1]
+        def worth(p, c, nx):
+            """c worn after p (None: the item the slot holds first) until nx (None: 60): None when the swap fails a bar (the minutes it
+            saves over p, the gold test), else what it saves over the slot's first item while worn. A drop counts at its chance of
+            coming within two runs, over what the sure plan wears then (you wear that when it does not drop; 2026-11-09: counting a
+            missed drop as nothing, or as an earlier drop that may not have come either, had swapped a free quest staff for a chain
+            of drops)."""
+            L0 = evs[c]["level"]
+            end = 60 if nx is None else evs[nx]["level"]
+            if end - L0 < MIN_LASTS:
+                return None
+            m = span_minutes(items(c), items(p), L0, end, at)
+            if gain(p, c) < UPGRADE or m < MIN_MINUTES:
+                return None
+            price = price_of(evs[c], held(p))   # a buy must also pay for itself (pays_for_itself), or a dearer one could push out a
+            if price and m < price / (income_per_level(L0, QPL) or 1) * minutes_per_level(L0, at):   # cheaper one the gold test
+                return None                                                                           # then rejected
+            cert = certainty(evs[c], held(p))
+            if cert >= 1 or fb is None:
+                return span_minutes(items(c), base, L0, end, at)
+            return sum((val(fb(L), L) - val(base, L) + cert * max(0.0, val(items(c), L) - val(fb(L), L))) * kills_per_level(L)
+                       for L in range(L0, end)) / 60
+
+        @functools.lru_cache(maxsize=None)
+        def best(p, c):   # (minutes, chain) choosing c after p, then the best rest
+            top = None
+            for nx in [x for x in allowed if x > c] + [None]:
+                m = worth(p, c, nx)
+                if m is None:
+                    continue
+                rest = (0.0, ()) if nx is None else best(c, nx)
+                if rest[0] < 0:
+                    continue
+                if top is None or m + rest[0] > top[0]:
+                    top = (m + rest[0], (c,) + rest[1])
+            return top or (-1.0, ())
+
+        return max([best(None, c) for c in allowed] + [(0.0, ())], key=lambda t: t[0])[1]
+
+    sure_pick = run([i for i in range(n) if certainty(evs[i], set()) >= 1], None)
+
+    def fb(L):
+        on = [k for k in sure_pick if evs[k]["level"] <= L]
+        return items(on[-1]) if on else base
+
+    pick = run(range(n), fb)
     # the upgrades passed over, each against the item the chain has on at its level, with the reason (user 2026-11-09: "if something like
     # the headpiece ... is the best gear until level 35 ... then that's okay. I just want there to be a reason for me keeping it")
     for c in range(n):
@@ -567,10 +799,14 @@ def best_chain(evs, at):
         end = evs[nxt[0]]["level"] if nxt else 60
         g = gain(k, c)
         m = span_minutes(items(c), items(k), evs[c]["level"], end, at)
-        price = price_of(evs[c])
+        price = price_of(evs[c], held(k))
         earn = price / (income_per_level(evs[c]["level"], QPL) or 1) * minutes_per_level(evs[c]["level"], at) if price else 0
+        if evs[c]["level"] == evs[k]["level"] and g <= 0:
+            continue   # a runner-up at the same level the chain beat outright
         if g < UPGRADE:
             why = f"only {pct(g)} faster"
+        elif certainty(evs[c], held(k)) < 1 and m >= MIN_MINUTES:
+            why = f"{pct(g)} faster, but a dungeon drop ({certainty(evs[c], held(k)):.0%} in your run): a surer upgrade saves more on average"
         elif m < MIN_MINUTES:
             why = f"{pct(g)} faster, saves about {m:.0f} min before {'60' if not nxt else 'its next upgrade'}"
         elif price and m < earn:
@@ -584,6 +820,7 @@ def best_chain(evs, at):
         e["gain"] = gain(p, c)
         e["replaces"] = evs[0]["replaces"] if p is None else evs[p]["item"]["name"]
         e["prev"] = base if p is None else [evs[p]["item"], evs[p].get("off")]
+        e["owned"] = held(p)
         e["until"] = evs[pick[k + 1]]["level"] if k + 1 < len(pick) else None
         out.append(e)
     return out
@@ -671,7 +908,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
             worn[s] = dict(worn[s], until=next((e["level"] for e in events if e["slot"] == s), None), since=lv)
     for e in sorted(soon, key=lambda e: e["level"]):
         worn[e["slot"]] = {"name": e["item"]["name"], "stats": e["item"]["stats"], "enchant": [], "enchant_stats": {},
-                           "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
+                           "two_hand": e["item"].get("slot") == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
     o += judge_lines(worn, events, wl, lv, cfg)
     CTX["soon"] = [event_row(e, at) for e in sorted(soon, key=lambda e: (max(e["get_at"], lv), e["level"]))]
     CTX["later"] = [event_row(e, at) for e in sorted(events, key=lambda e: (max(e["get_at"], lv), e["level"]))
@@ -683,6 +920,14 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         o += ["### Oils, food and elixirs", "", "The best three of each kind you can use now, with today's prices"
               + (f" (auction house snapshot {PRICES.age_hours():.1f} hours old)" if PRICES and PRICES.age_hours() is not None else "") + ".", ""] + cl + [""]
     o += action_sections(soon, at, lv)
+    runs = dungeon_runs(BONUS)
+    sched = dungeon_schedule(cfg, lv, runs)
+    CTX["dungeons"] = sched
+    near = [r for r in sched if r["run"] <= lv + LOOKAHEAD]
+    if near:
+        o += ["### Dungeon runs", "", "Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that "
+              "beats what the plan has you wear is a bonus; the plan works without it.", ""]
+        o += dungeon_lines(near)
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
           f"{cfg['class']}/leveling/{cfg['page']}-by-level.md) for your rotation.", ""]
     o += profession_section(profs)
@@ -710,29 +955,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         ev = [e for e in later if max(e["get_at"], lv) == L]
         if ev:
             o += [f"### Level {L}", ""] + action_sections(ev, at, L, head="####") + [""]
-    # dungeons worth running, whole list
-    runs = {}
-    for e in events:
-        for s in e["item"]["sources"]:
-            if s["kind"] == "dungeon":
-                runs.setdefault((s["zone"], s["lo"], s["hi"]), []).append((s["boss"], e))
-    if runs:
-        o += ["## Dungeons worth running", "", "Every dungeon with an upgrade in the plan, the boss that drops it, and the level you wear it. "
-              "\"One run worth\" adds up each upgrade's minutes of killing saved times its drop chance (25% where the chance is unknown); the run "
-              f"gives its own experience too. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
-        for (z, lo, hi), ev in sorted(runs.items(), key=lambda kv: kv[0][1]):
-            merged = {}
-            for boss, e in ev:   # one line per item: every boss that drops it
-                merged.setdefault(id(e), (e, []))[1].append(boss)
-            items = ", ".join(f"{e['item']['name']} ({e['slot']}, wear at {e['level']}, {' or '.join(bosses)})" for e, bosses in merged.values())
-            # one run's expected worth: each upgrade's minutes saved x its drop chance (a run also gives experience of its own)
-            worth = sum(minutes_saved(e, at) * max((s.get("chance") or 0.25) for s in e["item"]["sources"] if s["kind"] == "dungeon"
-                                                    and s["zone"] == z) for e, _ in merged.values())
-            go = "worth a run on its own" if worth >= MIN_MINUTES else "only when you are grouping for it anyway"
-            CTX.setdefault("dungeons", []).append({"zone": z, "lo": lo, "hi": hi, "worth": round(worth), "own": worth >= MIN_MINUTES,
-                                                   "items": [f"{e['item']['name']} ({e['slot']}, {' or '.join(b)})" for e, b in merged.values()]})
-            o += [f"- **{z}** ({lo}-{hi}), one run worth about {worth:.0f} min of killing saved, {go}: {items}"]
-        o += [""]
+    # every dungeon run, by level
+    if sched:
+        o += ["## Dungeon runs", "", "Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. "
+              "Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances "
+              "are Classic's (25% where it has none); \"about N min\" is a drop's minutes of killing saved over the plan's item, and a "
+              f"run's drops are worth that times their chances. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
+        o += dungeon_lines(sched)
     o += ["## How this is worked out", "",
           f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
           "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0.",
@@ -945,12 +1174,13 @@ def minutes_saved(e, at):
 
 def line(e, at):
     p, o = e["item"], e.get("off")
-    what = p["name"] + (f" + {o['name']}" if o else "")
     wear = f"wear at {e['level']}" if e["level"] > e["get_at"] else "wear it right away"
-    src = sources_text(p) + (f" / {sources_text(o)}" if o else "")
+    what, src = upgrade_name(e)
     rep = f", replaces {e['replaces']}" if e.get("replaces") else ""
     until = f"; best until level {e['until']}" if e.get("until") else "; best to the end of leveling"
     out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
+    if e.get("wait"):
+        out += f" {e['wait']}."
     if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:   # a long-held item: why nothing replaces it sooner
         alts = sorted(e["passed"], key=lambda x: -x[2])[:3]
         out += " Why it stays: " + "; ".join(f"{n} at {L}, {why}" for L, n, g, why in sorted(alts)) + "."
@@ -970,13 +1200,14 @@ KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction", "market"]
 def primary(e):
     """The source to act on: the first acquirable kind in KIND_ORDER; a craft from a recipe you do not know yields to the auction house
     when the item is sold there (Earthen Silk Slippers, a Forever recipe nobody had found, sold at 2g 69s, 2026-11-09)."""
-    sold = any(s["kind"] in ("auction", "market") for s in e["item"]["sources"])
-    later = (e.get("get_at") or 0) > NOW_LV and any(s["kind"] == "market" for s in e["item"]["sources"])
+    srcs = new_sources(e)
+    sold = any(s["kind"] in ("auction", "market") for s in srcs)
+    later = (e.get("get_at") or 0) > NOW_LV and any(s["kind"] == "market" for s in srcs)
     for k in KIND_ORDER:
-        for s in e["item"]["sources"]:
+        for s in srcs:
             if s["kind"] == k and not (k == "craft" and sold and s.get("spell") not in KNOWN) and not (k == "auction" and later):
                 return s   # bought on a later visit: the usual price, not this hour's listing
-    return e["item"]["sources"][0] if e["item"]["sources"] else {"kind": "?"}
+    return srcs[0] if srcs else {"kind": "?"}
 
 
 def action_sections(evs, at, L, head="###"):
@@ -1216,6 +1447,16 @@ def consumable_lines(level, wl, profs, school_share):
              "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
 
 
+def upgrade_name(e):
+    """(what to get, where): a weapon pair names the half you get and the half you keep."""
+    new = new_pieces(e)
+    keep = [it["name"] for it in pieces(e) if it not in new]
+    what = " + ".join(it["name"] for it in new) or " + ".join(keep)
+    if new and keep:
+        what += f" (with your {', '.join(keep)})"
+    return what, " / ".join(t for t in (sources_text(it) for it in new) if t) or "you hold it already"
+
+
 def event_row(e, at):
     """One upgrade as the checklist page shows it."""
     pr = price_of(e)
@@ -1234,10 +1475,13 @@ def event_row(e, at):
     src = primary(e)
     mats = mats_text(reagents_of(src["spell"])) if src["kind"] == "craft" and src.get("spell") else None
     saves, earn = pays_for_itself(e, at, pr) if pr else (minutes_saved(e, at), 0)
-    return {"slot": e["slot"], "item": e["item"]["name"], "quality": e["item"].get("quality") or 2, "pct": pct(e["gain"]),
+    what, where = upgrade_name(e)
+    return {"slot": e["slot"], "item": what,
+            "quality": max((it.get("quality") or 2) for it in new_pieces(e)) if new_pieces(e) else 2, "pct": pct(e["gain"]),
             "minutes": round(saves), "earn": round(earn), "level": e["level"], "get_at": max(e["get_at"], NOW_LV), "until": e["until"],
-            "kind": src["kind"], "where": sources_text(e["item"]), "price": pr, "budget": budget, "replaces": e.get("replaces"),
+            "kind": src["kind"], "where": where, "price": pr, "budget": budget, "replaces": e.get("replaces"),
             "fallback": fbt, "miss": "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop", "why": why,
+            "wait": e.get("wait"),
             "mats": mats}
 
 
@@ -1415,22 +1659,45 @@ def main():
     GEAR_SHARE = float(cfg.get("gear_share", GEAR_SHARE))
     # the plan within the gear budget: a buy or craft the budget cannot pay leaves the pool and the plan is made again (another item, or
     # a cheaper one, takes the slot), until every bought upgrade fits
+    # the plan you can count on: quests, crafts and buys (2026-11-09, user: "We're factoring in how obtainable an item is right? Like drop
+    # rates and stuff if it's within a dungeon?"). Dungeon drops stay out of it and are listed apart, each against what this plan has you
+    # wear then, with its drop chance and what a run is worth; a plan built on drops had dropped the auction and quest items it needed as
+    # its fallbacks from the buy list and the budget.
+    FULL_BY_ID.update({p["id"]: p for p in pool})
+    SCHOOL_SHARE.update(cfg["school_share"])
+    sure_pool = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
+    sure_pool = [p for p in sure_pool if p["sources"]]
     out = set()
     for _ in range(8):
-        eq, events = plan(cfg, snap, at, [p for p in pool if p["id"] not in out], profs)
+        eq, events = plan(cfg, snap, at, [p for p in sure_pool if p["id"] not in out], profs)
         drop = budget_walk(events, cfg, at, snap["profile"]["level"])
         if not drop:
             break
         out |= drop
     pool = [p for p in pool if p["id"] not in out]
-    # a dungeon drop may not drop and a craft from a recipe you do not know yet may not happen: the same plan without either names what
-    # to wear instead (2026-11-09)
-    unsure = lambda s: s["kind"] == "dungeon" or (s["kind"] == "craft" and s.get("spell") not in KNOWN)
-    nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in pool]
+    sure_pool = [p for p in sure_pool if p["id"] not in out]
+    _, full = plan(cfg, snap, at, pool, profs)
+    BONUS[:] = bonus_drops(full, events, eq, at)
+    sched = dungeon_schedule(cfg, lv0, dungeon_runs(BONUS))
+    for e in events:   # a buy a dungeon drop beats soon: run the dungeon first, buy only if it does not drop
+        if not price_of(e):
+            continue
+        for b in BONUS:
+            zones = {s["zone"] for s in new_sources(b) if s["kind"] == "dungeon"}
+            run = min((r["run"] for r in sched if r["zone"] in zones), default=None)
+            if (b["slot"] == e["slot"] and run is not None and max(e["get_at"], lv0) - 1 <= run <= e["level"] + 2
+                    and b["level"] <= run + 1 and b["over"] == upgrade_name(e)[0].split(" (with")[0]):
+                ch = max((s.get("chance") or 0.25) for s in new_sources(b) if s["kind"] == "dungeon")
+                e["wait"] = (f"Run {' or '.join(sorted(zones))} first (level {run}): {upgrade_name(b)[0]} ({ch:.0%} drop) beats it; "
+                             "buy this only if it does not drop")
+                break
+    # a craft from a recipe you do not know yet may not happen: the same plan without such crafts names what to wear instead
+    unsure = lambda s: s["kind"] == "craft" and s.get("spell") not in KNOWN
+    nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in sure_pool]
     _, alt = plan(cfg, snap, at, [p for p in nod if p["sources"]], profs)
     for e in events:
-        if e["item"]["sources"] and all(unsure(s) for s in e["item"]["sources"]):
-            e["unsure"] = "drop" if primary(e)["kind"] == "dungeon" else "craft"
+        if new_sources(e) and all(unsure(s) for s in new_sources(e)):
+            e["unsure"] = "craft"
             have = {(x or {}).get("id") for x in e["prev"]} - {None}
             cover = [x for x in alt if x["slot"] == e["slot"] and x["level"] < (e["until"] or 60) and x["item"].get("id") not in have]
             before = [x for x in cover if x["level"] <= e["level"]]

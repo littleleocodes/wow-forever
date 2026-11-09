@@ -75,8 +75,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   asks what to do at a level: refresh with `plan.py <name>` and answer from the page.
   The plan (2026-11-09, user: "a refresh every couple levels, finding upgrades that make meaningful impacts ... utilize the auction house ...
   But it also needs to be something that's practical"): per slot the chain of upgrades that saves the most minutes of killing (each level's
-  stat values x that level's kills), each swap saving 20 minutes before the next (`min_minutes`, 2-level floor `min_levels`) and paying for
-  itself in play time; gear the auction house usually lists (`characters/market.py`: the add-on's hourly snapshots, read only) counts at
+  stat values x that level's kills), each swap saving 20 minutes before the next (`min_minutes`, floor `min_levels`: 3 since the user's
+  "replacing items every 2 levels is not ideal") and paying for itself in play time; the plan uses only what you can count on (quests,
+  crafts, buys); dungeon drops are bonuses over it at their one-run chance, and every dungeon the character has not outgrown is scheduled
+  once with its quests (user: "dungeons are so worth to run at least once. The XP from the dungeon quests is significant"; quests linked
+  by `dungeon_quests.csv`: a target, item or giver found only in that dungeon); weapons compare two-handers with every pair of the eight
+  best main hands and off hands you can get (user: "Main + offhand weapon combo as well"); gear the auction house usually lists (`characters/market.py`: the add-on's hourly snapshots, read only) counts at
   its usual price on later visits; every bought or crafted piece fits a gear budget (today's gold above two levels' training, then
   `gear_share` of each level's income; the rest saves for the mount and 60), else the plan is made again without it; income values loot
   at the add-on's sale prices (`mob_loot.csv`; asking prices capped at twice the vendor's); a long-held item says why nothing replaces it;

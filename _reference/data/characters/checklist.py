@@ -78,6 +78,8 @@ def upgrade_line(r, lv):
         sub += f"<br>Materials: {md(r['mats'])}"
     if r.get("fallback"):
         sub += f'<br><span class="alt">{esc(r["miss"])}: {md(r["fallback"])}</span>'
+    if r.get("wait"):
+        sub += f'<br><strong>{md(r["wait"])}</strong>'
     if r.get("why"):
         sub += f'<br><span class="why">Kept long because: {md(r["why"])}</span>'
     return head, sub
@@ -212,11 +214,13 @@ def render(cfg, C):
         if r["kind"] in ("quest", "dungeon", "vendor"):
             head, sub = upgrade_line(r, lv)
             items.append(todo(f"world{r['item']}", f'<span class="tag">{KIND[r["kind"]]}</span> {head}', sub))
-    for dg in C.get("dungeons") or []:
-        if dg["lo"] <= lv + 3 and dg["hi"] >= lv:
-            items.append(info(f'{esc(dg["zone"])} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
-                              f"one run is worth about {dg['worth']} min of killing saved · "
-                              + ("worth a run on its own" if dg["own"] else "only if you are grouping anyway")))
+    for dg in C.get("dungeons") or []:   # every dungeon once, with its quests (the drops are bonuses over the plan)
+        if dg["run"] <= lv + 3:
+            body = f'<span class="tag">Dungeon</span> Run {esc(dg["zone"])} at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>'
+            qs = "; ".join(f"{esc(q['title'])} ({q['level']}{', in your log' if q['log'] else ''}{', ' + esc(q['start']) if q['start'] else ''})"
+                           for q in dg["quests"] if not q["grey"])
+            sub = (f"Pick up first: {qs}" if qs else "No quests for you there") + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])
+            items.append(todo(f"dg{dg['zone']}", body, sub))
     sec.append(("Out in the world", "Quests and dungeons, the next few levels", items))
 
     # right column: bars, fight, judging, gold
@@ -246,6 +250,11 @@ def render(cfg, C):
     by_level = {}
     for r in later:
         by_level.setdefault(r["get_at"], []).append(r)
+    runs_at = {}
+    for dg in C.get("dungeons") or []:
+        if dg["run"] > lv + 3:
+            runs_at.setdefault(dg["run"], []).append(dg)
+            by_level.setdefault(dg["run"], [])
     ahead = []
     for L in sorted(by_level)[:8]:
         rows = []
@@ -253,6 +262,11 @@ def render(cfg, C):
             price = f" · {coins(r['price'])}" if r.get("price") else ""
             rows.append(f'<li><span class="tag">{KIND[r["kind"]]}</span> {item(r)} <span class="slot">{esc(r["slot"])}</span> '
                         f'<span class="pct">{esc(r["pct"])}</span>{price}<span class="sub">{md(r["where"])}</span></li>')
+        for dg in runs_at.get(L, []):
+            n = len([q for q in dg["quests"] if not q["grey"]])
+            rows.append(f'<li><span class="tag">Dungeon</span> Run <strong>{esc(dg["zone"])}</strong>'
+                        f'<span class="sub">{n} quest{"s" if n != 1 else ""} to pick up first'
+                        + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 
     town = "".join(

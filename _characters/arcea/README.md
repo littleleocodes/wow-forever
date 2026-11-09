@@ -21,7 +21,8 @@ You stay one point off the page's order; at 60 you go without its last point (Ar
 ## Since your last refresh (2026-11-09 17:12, level 26)
 
 - Gold: 4g 69s 48c then, 4g 69s 48c now.
-- Nothing new in the plan.
+- New in the plan: Gravestone Scepter (ranged, level 26), Arcane Runed Bracers (wrist, level 36).
+- Left the plan (worn, replaced by a better choice, or no longer listed): Illusionary Rod (weapon), Spidertank Oilrag (wrist).
 
 ## Gold plan
 
@@ -65,7 +66,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 | shoulder | Double-Stitched Woolen Shoulders | 4 | 17 | 31 |
 | back | Seer's Cape | 1 | 17 | 30 |
 | chest | Rotmender's Garb | 6 | 15 | 33 |
-| wrist | Spidertank Oilrag (planned, level 29) | 12 | 13 | - |
+| wrist | Bridgebreaker Bindings | 3 | 9 | 36 |
 | hands | Town Clerk's Mittens | 5 | 8 | 40 |
 | waist | Elder's Sash of Frozen Wrath (planned, level 26) | 11 | 12 | - |
 | legs | Durable Pants of Frozen Wrath (planned, level 28) | 16 | 17 | - |
@@ -74,18 +75,18 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 | finger2 | Snake Hoop (planned, level 27) | 7 | 8 | - |
 | trinket1 | empty | 0 | 1 | - |
 | trinket2 | empty | 0 | 1 | - |
-| weapon | Fallen Dragon's Scepter (planned, level 26) | 42 | 49 | 34 |
-| ranged | Deepblaze | 7 | 9 | 49 |
+| weapon | Fallen Dragon's Scepter (planned, level 26) | 42 | 43 | - |
+| ranged | Gravestone Scepter (planned, level 26) | 12 | 13 | 49 |
 
 ### Enchant
 
-- **Spidertank Oilrag** (wrist, once you have it at level 29): skip, Enchant Bracer - Lesser Spirit saves only about 18 min of killing before you replace it.
+- **Bridgebreaker Bindings** (wrist): skip, Enchant Bracer - Lesser Spirit saves only about 4 min of killing before you replace it at level 36.
 - **Rotmender's Garb** (chest): skip, Enchant Chest - Intellect saves only about 2 min of killing before you replace it at level 33.
-- **Fallen Dragon's Scepter** (weapon, once you have it at level 26): skip, Enchant 2H Weapon - Lesser Intellect saves only about 3 min of killing before you replace it at level 34.
+- **Fallen Dragon's Scepter** (weapon, once you have it at level 26): skip, Enchant 2H Weapon - Lesser Intellect saves only about 19 min of killing before you replace it.
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.0 hours old).
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.5 hours old).
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |
 |---|---|---|---|---|---|---|---|
@@ -101,15 +102,11 @@ The best three of each kind you can use now, with today's prices (auction house 
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
-### Dungeons to run
-
-- **Gnomeregan** (level 29-38):
-  - Electrocutioner 6000: **wrist**: Spidertank Oilrag, 3.6% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 60 min of killing). Gnomeregan (29-38), Electrocutioner 6000, 40% drop. Why it stays: Netherfroth Cuffs at 45, 0.6% faster, saves about 9 min before 60. If it does not drop, wear Durable Bracers of Frozen Wrath instead (1.9% faster kills; Auction House now: 99s).
-
 ### Quests to do
 
-- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best until level 34; saves about 33 min of killing). quest "Stopping the Cycle" (Wetlands).
+- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best to the end of leveling; saves about 123 min of killing). quest "Stopping the Cycle" (Wetlands). Why it stays: Staff of Jordan at 35, 7.8% faster, saves about 126 min, but its 200g 27s takes about 3985 min of play to earn.
 - **finger2**: Snake Hoop, 3.3% faster kills, replaces Slain Baron's Signet (wear it right away; best to the end of leveling; saves about 52 min of killing). quest "Willix the Importer" (Razorfen Kraul, level 30; from Willix the Importer). Why it stays: Band of the Unicorn at 43, 1.3% faster, saves about 18 min before 60.
+- **ranged**: Gravestone Scepter, 2.3% faster kills, replaces Deepblaze (wear it right away; best until level 49; saves about 33 min of killing). quest "Blackfathom Villainy" (Blackfathom Deeps, level 27; the chain starts with "In Search of Thaelrid" from Dawnwatcher Shaedlass, level 18). Why it stays: Thunderwood at 26, 2.2% faster, saves about 25 min, but its 3g 8s takes about 88 min of play to earn; Freezing Shard at 34, 3.5% faster, saves about 39 min, but its 125g takes about 2540 min of play to earn.
 
 ### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
@@ -118,7 +115,18 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 
 ### Look for on the Auction House (not listed this hour, usually is; usual prices)
 
-- **waist**: Elder's Sash of Frozen Wrath, 4.8% faster kills, replaces Rotmender's Sash (wear it right away; best to the end of leveling; saves about 73 min of killing). Auction House: usually listed (in 37% of the hourly snapshots), about 1g, not this hour. Why it stays: Regal Sash of Frozen Wrath at 35, 1.1% faster, saves about 17 min before 60; Ghostweave Cord at 47, 1.4% faster, saves about 19 min before 60. Saves about 73 min of killing; earning its price takes about 29 min of play. Fits your gear budget (1g 59s 48c left after it).
+- **waist**: Elder's Sash of Frozen Wrath, 4.8% faster kills, replaces Rotmender's Sash (wear it right away; best to the end of leveling; saves about 73 min of killing). Auction House: usually listed (in 37% of the hourly snapshots), about 1g, not this hour. Why it stays: Regal Sash of Frozen Wrath at 35, 1.1% faster, saves about 17 min before 60; Frothing Waistcord at 47, 1.4% faster, saves about 15 min before 60; Ghostweave Cord at 47, 1.4% faster, saves about 19 min before 60. Saves about 73 min of killing; earning its price takes about 29 min of play. Fits your gear budget (1g 59s 48c left after it).
+
+### Dungeon runs
+
+Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that beats what the plan has you wear is a bonus; the plan works without it.
+
+- **The Deadmines** (17-26), run at level 26:
+  - Quests: Underground Assault (20, from Shoni the Shilent, grey for you by then); The Defias Brotherhood (22, start with part 1 from Gryan Stoutmantle); The Unsent Letter (22)
+- **Blackfathom Deeps** (24-32), run at level 26:
+  - Quests: In Search of Thaelrid (24, from Dawnwatcher Shaedlass); Twilight Falls (25, from Argent Guard Manados); Blackfathom Villainy (27, start with "In Search of Thaelrid" from Dawnwatcher Shaedlass)
+- **The Stockade** (24-32), run at level 27:
+  - Quests: What Comes Around... (25, in your log, from Guard Berton); The Color of Blood (26, from Nikova Raskol); The Fury Runs Deep (27, start with "The Dark Iron War" from Motley Garmason); The Stockade Riots (29, start with "The Unsent Letter")
 
 ### Talents and the rest
 
@@ -179,7 +187,7 @@ Materials: Boar Ribs x4, Hot Spices x2.
 | shoulder | Double-Stitched Woolen Shoulders | 2.1% faster kills | level 31: Conjurer's Mantle of Magic |
 | back | Seer's Cape | 0.5% faster kills | level 30: Azure Silk Cloak |
 | chest | Rotmender's Garb | 3.2% faster kills | level 33: Robe of Power |
-| wrist | Bridgebreaker Bindings | 1.5% faster kills | level 29: Spidertank Oilrag |
+| wrist | Bridgebreaker Bindings | 1.5% faster kills | level 36: Arcane Runed Bracers |
 | hands | Town Clerk's Mittens | 2.3% faster kills | level 40: Dreamweave Gloves |
 | waist | Rotmender's Sash | 0.7% faster kills | level 26: Elder's Sash of Frozen Wrath |
 | legs | Rotmender's Leggings | 1.8% faster kills | level 28: Durable Pants of Frozen Wrath |
@@ -189,7 +197,7 @@ Materials: Boar Ribs x4, Hot Spices x2.
 | trinket1 | **empty** | 0 | nothing worth 0.5% before 60 |
 | trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
 | weapon | Coldspire Staff (Enchanted: Intellect +5) | 14.0% faster kills | level 26: Fallen Dragon's Scepter |
-| ranged | Deepblaze | 3.4% faster kills | level 49: Lesser Eternal Wand |
+| ranged | Deepblaze | 3.4% faster kills | level 26: Gravestone Scepter |
 
 ## Level by level
 
@@ -199,20 +207,15 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 106); Auction House now: 57s. Why it stays: Ranger Cloak of Frozen Wrath at 35, 0.5% faster, saves about 7 min before 60; Spritecaster Cape at 52, 1.0% faster, saves about 8 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play. Fits your gear budget (1g 89s 36c left after it).
+- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 106); Auction House now: 57s. Why it stays: Ranger Cloak of Frozen Wrath at 35, 0.5% faster, saves about 7 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play. Fits your gear budget (1g 89s 36c left after it).
 
 
 ### Level 31
 
-#### Dungeons to run
-
-- **Scarlet Monastery** (level 30-45):
-  - Arcanist Doan: **weapon**: Illusionary Rod, 1.8% faster kills, replaces Fallen Dragon's Scepter (wear at 34; best to the end of leveling; saves about 24 min of killing). Scarlet Monastery (30-45), Arcanist Doan, 25% drop. Why it stays: Staff of Jordan at 35, 6.2% faster, saves about 103 min, but its 200g 27s takes about 3985 min of play to earn. If it does not drop, keep your Fallen Dragon's Scepter.
-
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
 - **feet**: Earthen Silk Slippers, 9.7% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 157 min of killing). Tailoring: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 165 in the client's data; you have 106); Auction House now: 2g. Saves about 157 min of killing; earning its price takes about 15 min of play. Fits your gear budget (3g 16s 67c left after it).
-- **shoulder**: Conjurer's Mantle of Magic, 3.6% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 56 min of killing). Auction House: usually listed (in 26% of the hourly snapshots), about 1g 33s, not this hour. Why it stays: Netherfroth Shoulders at 42, 1.4% faster, saves about 21 min, but its 42g 91s 76c takes about 538 min of play to earn; Boreal Mantle at 52, 1.8% faster, saves about 15 min before 60. Saves about 56 min of killing; earning its price takes about 32 min of play. Fits your gear budget (1g 83s 67c left after it).
+- **shoulder**: Conjurer's Mantle of Magic, 3.6% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 56 min of killing). Auction House: usually listed (in 26% of the hourly snapshots), about 1g 33s, not this hour. Why it stays: Netherfroth Shoulders at 42, 1.4% faster, saves about 21 min, but its 42g 91s 76c takes about 538 min of play to earn; Argent Shoulders at 56, 1.6% faster, saves about 9 min before 60. Saves about 56 min of killing; earning its price takes about 32 min of play. Fits your gear budget (1g 83s 67c left after it).
 
 
 ### Level 32
@@ -226,14 +229,21 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Craft
 
-- **chest**: Robe of Power, 4.6% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 78 min of killing). Tailoring: learn it first (trainer; Classic asked skill 190, Forever often less; you have 106). Why it stays: Robe of the Magi at 35, 1.8% faster, saves about 27 min, but its 8g 40s takes about 167 min of play to earn; Robe of Winter Night at 52, 2.1% faster, saves about 16 min before 60; Robe of the Archmage at 57, 1.9% faster, saves about 8 min before 60. If you do not craft it, wear Conjurer's Robe of Frozen Wrath instead (4.2% faster kills; Auction House now: 99s). Materials: Bolt of Mageweave x2, Elemental Earth x2, Elemental Water x2, Elemental Fire x2, Elemental Air x2, Silken Thread x2 (about 2g 22s 32c at today's prices).
+- **chest**: Robe of Power, 4.6% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 78 min of killing). Tailoring: learn it first (trainer; Classic asked skill 190, Forever often less; you have 106). Why it stays: Robe of the Magi at 35, 1.8% faster, saves about 27 min, but its 8g 40s takes about 167 min of play to earn; Robe of Winter Night at 52, 2.1% faster, saves about 16 min before 60; Robe of the Archmage at 57, 1.9% faster, saves about 8 min before 60. If you do not craft it, wear Twilight Armor of Frozen Wrath from level 35 (4.1% faster kills; Auction House now: 2g). Materials: Bolt of Mageweave x2, Elemental Earth x2, Elemental Water x2, Elemental Fire x2, Elemental Air x2, Silken Thread x2 (about 2g 22s 32c at today's prices).
+
+
+### Level 36
+
+#### Quests to do
+
+- **wrist**: Arcane Runed Bracers, 1.8% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 29 min of killing). quest "WANTED: Marez Cowl" (Arathi Highlands, level 39; from Wanted Board). Why it stays: Netherfroth Cuffs at 45, 1.2% faster, saves about 16 min before 60.
 
 
 ### Level 40
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 60s. Why it stays: Hands of Power at 55, 0.7% faster, saves about 5 min before 60. Saves about 66 min of killing; earning its price takes about 32 min of play. Fits your gear budget (18g 31s 16c left after it).
+- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 60s. Saves about 66 min of killing; earning its price takes about 32 min of play. Fits your gear budget (18g 31s 16c left after it).
 
 
 ### Level 41
@@ -247,22 +257,53 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Red Mageweave Headband, 2.2% faster kills, replaces Durable Hat of Frozen Wrath (wear it right away; best to the end of leveling; saves about 26 min of killing). Tailoring: learn it first (pattern: Pattern: Red Mageweave Headband (drop); Classic asked skill 240, Forever often less; you have 106); Auction House now: 3g 99s. Why it stays: Dreamweave Circlet at 45, 0.9% faster, saves about 16 min before 60; Crimson Felt Hat at 58, 1.3% faster, saves about 4 min before 60. Saves about 26 min of killing; earning its price takes about 18 min of play. Fits your gear budget (30g 13s 75c left after it).
+- **head**: Red Mageweave Headband, 2.2% faster kills, replaces Durable Hat of Frozen Wrath (wear it right away; best to the end of leveling; saves about 26 min of killing). Tailoring: learn it first (pattern: Pattern: Red Mageweave Headband (drop); Classic asked skill 240, Forever often less; you have 106); Auction House now: 3g 99s. Why it stays: Dreamweave Circlet at 45, 0.9% faster, saves about 16 min before 60. Saves about 26 min of killing; earning its price takes about 18 min of play. Fits your gear budget (30g 13s 75c left after it).
 
 
 ### Level 49
 
 #### Craft
 
-- **ranged**: Lesser Eternal Wand, 4.3% faster kills, replaces Deepblaze (wear it right away; best to the end of leveling; saves about 48 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 265 in the client's data; you have 150). Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60; Ritssyn's Wand of Bad Mojo at 58, 1.8% faster, saves about 5 min before 60. If you do not craft it, keep your Deepblaze. Materials: Lesser Eternal Essence x1, Dream Dust x1, Star Wood x1 (about 1g 61s 81c at today's prices).
+- **ranged**: Lesser Eternal Wand, 2.9% faster kills, replaces Gravestone Scepter (wear it right away; best to the end of leveling; saves about 31 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 265 in the client's data; you have 150). Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60. If you do not craft it, keep your Gravestone Scepter. Materials: Lesser Eternal Essence x1, Dream Dust x1, Star Wood x1 (about 1g 61s 81c at today's prices).
 
 
-## Dungeons worth running
+## Dungeon runs
 
-Every dungeon with an upgrade in the plan, the boss that drops it, and the level you wear it. "One run worth" adds up each upgrade's minutes of killing saved times its drop chance (25% where the chance is unknown); the run gives its own experience too. Minutes assume 50% of your experience comes from kills.
+Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances are Classic's (25% where it has none); "about N min" is a drop's minutes of killing saved over the plan's item, and a run's drops are worth that times their chances. Minutes assume 50% of your experience comes from kills.
 
-- **Gnomeregan** (29-38), one run worth about 24 min of killing saved, worth a run on its own: Spidertank Oilrag (wrist, wear at 29, Electrocutioner 6000)
-- **Scarlet Monastery** (30-45), one run worth about 6 min of killing saved, only when you are grouping for it anyway: Illusionary Rod (weapon, wear at 34, Arcanist Doan)
+- **The Deadmines** (17-26), run at level 26:
+  - Quests: Underground Assault (20, from Shoni the Shilent, grey for you by then); The Defias Brotherhood (22, start with part 1 from Gryan Stoutmantle); The Unsent Letter (22)
+- **Blackfathom Deeps** (24-32), run at level 26:
+  - Quests: In Search of Thaelrid (24, from Dawnwatcher Shaedlass); Twilight Falls (25, from Argent Guard Manados); Blackfathom Villainy (27, start with "In Search of Thaelrid" from Dawnwatcher Shaedlass)
+- **The Stockade** (24-32), run at level 27:
+  - Quests: What Comes Around... (25, in your log, from Guard Berton); The Color of Blood (26, from Nikova Raskol); The Fury Runs Deep (27, start with "The Dark Iron War" from Motley Garmason); The Stockade Riots (29, start with "The Unsent Letter")
+- **Gnomeregan** (29-38), run at level 31; its drops are worth about 13 min on average:
+  - Quests: A Fine Mess (30, from Kernobee); Grime-Encrusted Ring (34); The Grand Betrayal (35, from High Tinker Mekkatorque)
+  - Drop: Spidertank Oilrag (wrist, from level 29; Electrocutioner 6000, 40% drop): over your Bridgebreaker Bindings, 3.6% faster, about 31 min saved if it drops
+- **Razorfen Kraul** (29-38), run at level 31; its drops are worth about 14 min on average:
+  - Quests: Mortality Wanes (30, from Heralath Fallowbrook); Willix the Importer (30, from Willix the Importer); The Crone of the Kraul (34, start with "Lonebrow's Journal")
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 32; Agathelos the Raging, 40% drop; the other half drops in Scarlet Monastery, 50%): over your Fallen Dragon's Scepter, 5.1% faster, about 70 min saved with both halves
+- **Scarlet Monastery** (30-45), run at level 33; its drops are worth about 14 min on average:
+  - Quests: In the Name of the Light (40, start with "Down the Scarlet Path" from Brother Anton)
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 32; Bloodmage Thalnos, 50% drop; the other half drops in Razorfen Kraul, 40%): over your Fallen Dragon's Scepter, 5.1% faster, about 70 min saved with both halves
+- **Razorfen Downs** (37-46), run at level 39:
+  - Quests: Scourge of the Downs (37, from Belnistrasz); Extinguishing the Idol (37, start with "Scourge of the Downs" from Belnistrasz); Bring the Light (42, from Archbishop Benedictus)
+- **Uldaman** (41-51), run at level 43:
+  - Quests: Power in Uldaman (40, start with "Return to the Marsh" from Anastasia Hartwell / Bink / Jennea Cannon / Uthel'nay); The Hidden Chamber (40, start with "The Lost Dwarves" from Prospector Stormpike); The Lost Dwarves (40, from Prospector Stormpike); Indurium Ore (42, start with "Martek the Exiled" from Fizzle Brassbolts); Back to Uldaman (42, start with "The Shattered Necklace"); Find the Gems (43, start with "The Shattered Necklace"); Restoring the Necklace (44, start with "The Shattered Necklace"); Wild Leather Shoulders (45, start with "Wild Leather Armor" from Pratt McGrubben)
+- **Zul'Farrak** (44-54), run at level 46:
+  - Quests: Scarab Shells (45, from Tran'rek); Troll Temper (45, from Trenton Lighthammer); Tiara of the Deep (46, from Tabetha); Divino-matic Rod (47, from Chief Engineer Bilgewhizzle); The Prophecy of Mosh'aru (47, start with "Screecher Spirits" from Yeh'kinya)
+- **Maraudon** (46-55), run at level 51:
+  - Quests: Legends of Maraudon (49, from Cavindra); Corruption of Earth and Seed (51, from Keeper Marandis)
+- **Sunken Temple** (50-56), run at level 53:
+  - Quests: Destroy Morphaz (52, start with "Magecraft" from Elsharin / Enyo / Juli Stormkettle / Pierce Shackleton / Thurston Xane); Jammal'an the Prophet (53, from Atal'ai Exile); The Essence of Eranikus (55)
+- **Dire Maul** (55-60), run at level 57:
+  - Quests: Enticing Negolash (52, from Ruined Lifeboat); Lethtendris's Web (57, from Latronicus Moonspear); Pusillin and the Elder Azj'Tordin (58, from Azj'Tordin)
+- **Blackrock Depths** (52-60), run at level 58:
+  - Quests: Dark Iron Legacy (52, start with part 1 from Franclorn Forgewright, grey for you by then); Ribbly Screwspigot (53, from Yuka Screwspigot); The Love Potion (54, from Mistress Nagmara); Marshal Windsor (54, start with "Dragonkin Menace" from Helendis Riverhorn); Abandoned Hope (54, start with "Dragonkin Menace" from Helendis Riverhorn); Incendius! (56, start with "Overmaster Pyron" from Jalinda Sprig); The Good Stuff (56, from Oralius); A Crumpled Up Note (58, start with "Dragonkin Menace" from Helendis Riverhorn); A Shred of Hope (58, start with "Dragonkin Menace" from Helendis Riverhorn); Jail Break! (58, start with "Dragonkin Menace" from Helendis Riverhorn); Kharan Mighthammer (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); Kharan's Tale (59, from Kharan Mighthammer); The Bearer of Bad News (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Fate of the Kingdom (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Princess's Surprise (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus)
+- **Blackrock Spire** (55-60), run at level 58:
+  - Quests: Put Her Down (59, from Helendis Riverhorn); Bijou's Belongings (59, from Bijou); Message to Maxwell (59, start with "Bijou's Belongings" from Bijou)
+- **Scholomance** (58-60), run at level 60:
+  - Quests: Plagued Hatchlings (58, from Betina Bigglezink); Healthy Dragon Scale (58, start with "Plagued Hatchlings" from Betina Bigglezink)
 
 ## How this is worked out
 
@@ -270,7 +311,7 @@ Every dungeon with an upgrade in the plan, the boss that drops it, and the level
 - Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as you level) x the kills of that level (50% of the level's experience from kills, an estimate), until the plan replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later auction listings) may replace an item sooner.
 - School damage counts by the build's share: frost 85%, arcane 15% (an estimate).
 - Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession rank allows the skill at that level.
-- An upgrade is listed when it is worth 0.5% of the time per kill or more over what you would be wearing then, and it saves at least 20 minutes of killing before the next upgrade of the slot replaces it, worn at least 2 levels (level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves 20 minutes before you replace the item.
+- An upgrade is listed when it is worth 0.5% of the time per kill or more over what you would be wearing then, and it saves at least 20 minutes of killing before the next upgrade of the slot replaces it, worn at least 3 levels (level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves 20 minutes before you replace the item.
 - Data: the simulator's WoW: Forever item database at 16e85426c (8378 items; it grows as the game is played, and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's API for the character (fetched 2026-11-09 17:12) and for Forever's own quests (asked again weekly), stat values measured 2026-11-09 for arcane-frost-open-leveling.
 - Raid preparation (items worth keeping for 60) waits for the mage raid lane's gear redo: today's pre-raid set still holds Naxxramas and Ahn'Qiraj quest rewards (the gear pool fault of 2026-11-05).
 

@@ -11,7 +11,8 @@ Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sq
 - instances.csv: map, level_min, level_max
 - item_names.csv: item, name, class, subclass, quality, required_level, required_skill, required_rank
 - dungeon_drops.csv, class_training.csv, mob_income.csv (coin and vendor value per kill by level) and mob_loot.csv (level, item, per_kill,
-  quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers)
+  quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers),
+  dungeon_quests.csv (quest, map, how: a creature to kill, an item that drops, or a giver in a leveling dungeon)
 Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
 database and only skill levels, quest levels and reagents from here.
 """
@@ -23,7 +24,7 @@ import sys
 
 WANT = {"npc_trainer", "npc_trainer_template", "quest_template", "item_template", "spell_template", "npc_vendor", "npc_vendor_template",
         "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature",
-        "creature_questrelation", "gameobject_questrelation", "gameobject_template"}
+        "creature_questrelation", "gameobject_questrelation", "gameobject_template", "creature_involvedrelation"}
 # the leveling dungeons' map ids (Classic)
 DUNGEON_MAPS = {389, 43, 36, 33, 48, 34, 90, 47, 189, 129, 70, 209, 349, 109, 230, 229, 429, 289, 329}
 
@@ -277,6 +278,48 @@ def main():
     write(out / "quest_chain.csv", ["quest", "prev", "next_in_chain", "givers"],
           sorted([int(r["entry"]), abs(int(r.get("PrevQuestId") or 0)), int(r.get("NextQuestInChain") or 0),
                   " / ".join(sorted(x for x in givers.get(int(r["entry"]), ()) if x))] for r in d["quest_template"]))
+    # dungeon quests (2026-11-09, user: "dungeons are so worth to run at least once. The XP from the dungeon quests is significant"):
+    # a quest belongs to a leveling dungeon when a creature it asks you to kill lives there, an item it asks for drops there, or its giver
+    # or ender stands there (the quests' own zone often names the city that gives them: Gnomeregan's are filed under Dun Morogh and
+    # Ironforge, Razorfen Kraul's under 1717); how = kill, item or giver
+    # only what exists nowhere but in leveling dungeons counts (a quest item that also drops outside, such as Westfall Stew's meat, or a
+    # creature that also roams outside, does not make a quest a dungeon quest)
+    spawn_maps = {}
+    for r in d["creature"]:
+        spawn_maps.setdefault(int(r["id"]), set()).add(int(r["map"]))
+    maps = {c: min(ms & DUNGEON_MAPS) for c, ms in spawn_maps.items() if ms and ms <= DUNGEON_MAPS}
+    lootid = {int(r["Entry"]): int(r.get("LootId") or 0) for r in d["creature_template"]}
+    item_maps = {}
+    for cid, ms in spawn_maps.items():
+        if lootid.get(cid):
+            for it in loot_chances(cl, rl, lootid[cid]):
+                item_maps.setdefault(it, set()).update(ms)
+    item_map = {it: min(ms & DUNGEON_MAPS) for it, ms in item_maps.items() if ms and ms <= DUNGEON_MAPS}
+    talk = {}
+    for t in ("creature_questrelation", "creature_involvedrelation"):
+        for r in d[t]:
+            if int(r["id"]) in maps:
+                talk.setdefault(int(r["quest"]), maps[int(r["id"])])
+    dq = []
+    for r in d["quest_template"]:
+        q = int(r["entry"])
+        found = None
+        for k in (1, 2, 3, 4):
+            c = int(r.get(f"ReqCreatureOrGOId{k}") or 0)
+            if c > 0 and c in maps:
+                found = (maps[c], "kill")
+                break
+        if not found:
+            for k in (1, 2, 3, 4):
+                it = int(r.get(f"ReqItemId{k}") or 0)
+                if it and it in item_map:
+                    found = (item_map[it], "item")
+                    break
+        if not found and q in talk:
+            found = (talk[q], "giver")
+        if found:
+            dq.append([q, found[0], found[1]])
+    write(out / "dungeon_quests.csv", ["quest", "map", "how"], sorted(dq))
     write(out / "mob_loot.csv", ["level", "item", "per_kill", "quality", "class", "sell"],
           [[lv, it, round(v / kills[lv], 5), sell.get(it, (9, 0))[0], klass.get(it, ""), sell.get(it, (9, 0))[1]]
            for (lv, it), v in sorted(loot.items()) if v / kills[lv] >= 0.0005 or (sell.get(it, (0, 0))[0] >= 2 and v / kills[lv] >= 0.000005)])
