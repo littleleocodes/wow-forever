@@ -439,10 +439,17 @@ def gear_stats(level, tier="leveling", cls="mage"):
         out["spell_power"] = sp * max(0.0, level - 20) * k * (1.3 if t == "blues" else 1.0)
         out["healing"] = 0.0
     out["attack_power"] = 0.0
+    for st, v in GEAR_BONUS.items():   # a character's gear against the typical set (characters/stat_weights.py); empty: no change
+        if st in out:
+            out[st] += v
     return out
 
 
 WEAPON_DPS_MULT = 1.0    # sensitivity knob on top of the item-database weapon dps
+# Stats added on top of the item-database gear (2026-11-09, the character gear planner, user: "optimizes the gear that I'm getting at each
+# level"): gear_stats keys (intellect, spirit, stamina, agility, strength, armor, spell_power, healing, attack_power), "wand_dps" (wand_dps)
+# and "mp5" (mana every 5 seconds, also inside the five-second rule; engine regen ticks). Empty: every result bit-identical.
+GEAR_BONUS = {}
 GEAR_STAT_MULT = 1.0     # sensitivity knob on top of the item-database gear stats
 GEAR_TIER = "greens"     # "greens" (fixed-stat green items, mostly quest rewards) or "blues" (dungeon blues); see gear_stats.py
 GEAR_TIERS = {"greens": {"GEAR_TIER": "greens"}, "blues": {"GEAR_TIER": "blues"}}
@@ -475,7 +482,8 @@ def wand_dps(level):
     """Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
     11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20)."""
     pts = [(int(L), row.get("dps", 0.0)) for L, row in sorted(_GEAR["weapons"][GEAR_TIER]["wand"].items(), key=lambda kv: int(kv[0])) if row.get("dps")]
-    return interp(pts, level) * WEAPON_DPS_MULT
+    d = interp(pts, level) * WEAPON_DPS_MULT
+    return d + GEAR_BONUS["wand_dps"] if "wand_dps" in GEAR_BONUS else d
 
 
 WAND_SPEED = 1.5

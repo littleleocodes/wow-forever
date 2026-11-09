@@ -1,0 +1,104 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan?namespace=profile-forever-us"
+  }
+ },
+ "id": 5579921,
+ "name": "Arcea",
+ "gender": {
+  "type": "MALE",
+  "name": "Male"
+ },
+ "faction": {
+  "type": "ALLIANCE",
+  "name": "Alliance"
+ },
+ "race": {
+  "key": {
+   "href": "https://us.api.blizzard.com/data/wow/playable-race/7?namespace=static-1.60.1_70399-forever-us"
+  },
+  "name": "Gnome",
+  "id": 7
+ },
+ "character_class": {
+  "key": {
+   "href": "https://us.api.blizzard.com/data/wow/playable-class/8?namespace=static-1.60.1_70399-forever-us"
+  },
+  "name": "Mage",
+  "id": 8
+ },
+ "guild": {
+  "key": {
+   "href": "https://us.api.blizzard.com/data/wow/guild/afk?namespace=profile-forever-us"
+  },
+  "name": "AFK",
+  "id": 66013,
+  "faction": {
+   "type": "ALLIANCE",
+   "name": "Alliance"
+  },
+  "slug": "afk"
+ },
+ "level": 26,
+ "experience": 16562,
+ "achievement_points": 0,
+ "achievements": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/achievements?namespace=profile-forever-us"
+ },
+ "titles": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/titles?namespace=profile-forever-us"
+ },
+ "pvp_summary": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/pvp-summary?namespace=profile-forever-us"
+ },
+ "encounters": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/encounters?namespace=profile-forever-us"
+ },
+ "media": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/character-media?namespace=profile-forever-us"
+ },
+ "last_login_timestamp": 1794192598000,
+ "average_item_level": 18,
+ "equipped_item_level": 18,
+ "specializations": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/specializations?namespace=profile-forever-us"
+ },
+ "statistics": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
+ },
+ "mythic_keystone_profile": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/mythic-keystone-profile?namespace=profile-forever-us"
+ },
+ "equipment": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/equipment?namespace=profile-forever-us"
+ },
+ "appearance": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/appearance?namespace=profile-forever-us"
+ },
+ "collections": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/collections?namespace=profile-forever-us"
+ },
+ "reputations": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/reputations?namespace=profile-forever-us"
+ },
+ "quests": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/quests?namespace=profile-forever-us"
+ },
+ "achievements_statistics": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/achievements/statistics?namespace=profile-forever-us"
+ },
+ "professions": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/professions?namespace=profile-forever-us"
+ },
+ "is_remix": false,
+ "surname": "Fizzlegan",
+ "ruleset": {
+  "key": {
+   "href": "https://us.api.blizzard.com/data/wow/ruleset/1?namespace=dynamic-forever-us"
+  },
+  "name": "PvP",
+  "id": 1
+ },
+ "name_search": "Arcea Fizzlegan"
+}

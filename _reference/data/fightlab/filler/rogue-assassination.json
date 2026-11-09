@@ -1,0 +1,325 @@
+{
+ "class": "rogue",
+ "spec": "Assassination",
+ "build": "assassination-open-leveling",
+ "rotation": "combat-daggers-raid",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Assassination",
+   "talent": "Blood Splatter",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Assassination",
+   "talent": "Venom",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Assassination",
+   "talent": "Seal Fate",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Assassination",
+   "talent": "Mutilate",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "43-45",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
+  },
+  {
+   "levels": "46-48",
+   "tree": "Combat",
+   "talent": "Puncturing Wounds",
+   "points": 3
+  },
+  {
+   "levels": "49-51",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Combat",
+   "talent": "Composure",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 22.98,
+   "values_at_60": {
+    "Aggression": -0.254,
+    "Flawless Execution": -1.364,
+    "Mutilate": -31.512,
+    "Weapon Expertise": -0.428
+   },
+   "zero": []
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Assassination",
+   "talent": "Blood Splatter",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Assassination",
+   "talent": "Venom",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Assassination",
+   "talent": "Seal Fate",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Assassination",
+   "talent": "Mutilate",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "43-45",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
+  },
+  {
+   "levels": "46-48",
+   "tree": "Combat",
+   "talent": "Puncturing Wounds",
+   "points": 3
+  },
+  {
+   "levels": "49-51",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Combat",
+   "talent": "Composure",
+   "points": 2
+  },
+  {
+   "levels": "56",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  }
+ ]
+}

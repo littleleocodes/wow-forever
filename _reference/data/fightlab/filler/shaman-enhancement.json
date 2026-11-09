@@ -1,0 +1,312 @@
+{
+ "class": "shaman",
+ "spec": "Enhancement",
+ "build": "enhancement-open-leveling",
+ "rotation": "enhancement-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Enhancement",
+   "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 5
+  },
+  {
+   "levels": "52-56",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "57",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Elemental",
+   "talent": "Elemental Warding",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 24.68,
+   "values_at_60": {
+    "Elemental Focus": -0.186,
+    "Elemental Warding": 0.0,
+    "Improved Stormstrike": -0.371,
+    "Rage of the Farseer": -0.176,
+    "Totemic Focus": -0.149
+   },
+   "zero": [
+    "Elemental Warding"
+   ]
+  },
+  {
+   "weighted": 24.659,
+   "values_at_60": {
+    "Anticipation": -0.127,
+    "Elemental Focus": -0.284,
+    "Improved Stormstrike": -0.631,
+    "Rage of the Farseer": -0.22,
+    "Totemic Focus": -0.14
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Elemental Warding",
+   "to": "Anticipation",
+   "level": 58,
+   "seed3": -0.0009,
+   "seed4": -0.0002,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Enhancement",
+   "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 5
+  },
+  {
+   "levels": "52-56",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "57",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 2
+  }
+ ]
+}

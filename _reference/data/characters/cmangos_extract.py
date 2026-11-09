@@ -1,0 +1,206 @@
+"""Extract the parts of the CMaNGOS Classic world database the character gear planner needs (2026-11-09, user: "build folders/guides for
+my specific characters ... optimizes the gear that I'm getting at each level ... tailoring ... enchanting").
+
+    python -I _reference/data/characters/cmangos_extract.py <ClassicDB_1_12_1_z2815.sql.gz> <out folder>
+
+Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sql.gz (13 MB; not archived, the CSVs are). Writes:
+- trainer_spells.csv: spell, reqskill, reqskillvalue, reqlevel (the lowest over every trainer that teaches it)
+- recipe_items.csv: item, name, required_skill, required_rank, teaches (the recipe spell), vendor, drop
+- quests.csv: quest, title, zone_or_sort, min_level, quest_level, required_races, required_classes, rewards, choices
+- craft_spells.csv: spell, name, creates (item), enchant (item enchantment id), reagents (item:count;...)
+- instances.csv: map, level_min, level_max
+- item_names.csv: item, name, class, subclass, quality, required_level, required_skill, required_rank
+Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
+database and only skill levels, quest levels and reagents from here.
+"""
+import csv
+import gzip
+import pathlib
+import re
+import sys
+
+WANT = {"npc_trainer", "npc_trainer_template", "quest_template", "item_template", "spell_template", "npc_vendor", "npc_vendor_template",
+        "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature"}
+# the leveling dungeons' map ids (Classic)
+DUNGEON_MAPS = {389, 43, 36, 33, 48, 34, 90, 47, 189, 129, 70, 209, 349, 109, 230, 229, 429, 289, 329}
+
+
+def loot_chances(table, refs, entry, depth=0):
+    """{item: chance} of one loot entry: ungrouped rows roll on their own; a group drops one of its rows (rows with chance 0 share what the
+    others leave); a negative mincountOrRef is a reference table rolled with the row's chance, maxcount times (CMaNGOS loot rules)."""
+    out = {}
+    rows = table.get(entry, [])
+    groups = {}
+    for r in rows:
+        groups.setdefault(int(r["groupid"]), []).append(r)
+    for g, rs in groups.items():
+        fixed = [r for r in rs if float(r["ChanceOrQuestChance"]) != 0]
+        equal = [r for r in rs if float(r["ChanceOrQuestChance"]) == 0]
+        left = max(0.0, 100.0 - sum(abs(float(r["ChanceOrQuestChance"])) for r in fixed)) if g else 0.0
+        for r in rs:
+            ch = abs(float(r["ChanceOrQuestChance"])) if float(r["ChanceOrQuestChance"]) != 0 else (left / len(equal) if g and equal else 0.0)
+            ch /= 100.0
+            ref = int(r["mincountOrRef"])
+            if ref < 0 and depth < 3:
+                times = max(1, int(r["maxcount"] or 1))
+                for it, c in loot_chances(refs, refs, -ref, depth + 1).items():
+                    out[it] = 1 - (1 - out.get(it, 0.0)) * (1 - ch * c) ** times
+            elif ref >= 0:
+                it = int(r["item"])
+                out[it] = 1 - (1 - out.get(it, 0.0)) * (1 - ch)
+    return out
+
+
+def rows(values):
+    """Tuples of a VALUES list: (...),(...); strings with backslash escapes."""
+    i, n = 0, len(values)
+    while i < n:
+        if values[i] != "(":
+            i += 1
+            continue
+        i += 1
+        row, cur, q = [], [], False
+        while i < n:
+            c = values[i]
+            if q:
+                if c == "\\" and i + 1 < n:
+                    cur.append(values[i + 1])
+                    i += 2
+                    continue
+                if c == "'":
+                    q = False
+                else:
+                    cur.append(c)
+            elif c == "'":
+                q = True
+            elif c == ",":
+                row.append("".join(cur))
+                cur = []
+            elif c == ")":
+                row.append("".join(cur))
+                i += 1
+                break
+            else:
+                cur.append(c)
+            i += 1
+        yield row
+
+
+def load(path):
+    cols, data, table = {}, {t: [] for t in WANT}, None
+    create = re.compile(r"^CREATE TABLE `([a-z_]+)`")
+    colre = re.compile(r"^\s+`([A-Za-z0-9_]+)`")
+    insert = re.compile(r"^INSERT INTO `([a-z_]+)`(?: \(([^)]*)\))? VALUES ?(.*)$")
+    with gzip.open(path, "rt", encoding="utf-8", errors="replace") as f:
+        for line in f:
+            m = create.match(line)
+            if m:
+                table = m.group(1)
+                cols[table] = []
+                continue
+            if table and line.startswith(")"):
+                table = None
+                continue
+            if table:
+                c = colre.match(line)
+                if c and table in WANT:
+                    cols[table].append(c.group(1))
+                continue
+            m = insert.match(line)
+            if m and m.group(1) in WANT:
+                t = m.group(1)
+                names = [x.strip(" `") for x in m.group(2).split(",")] if m.group(2) else cols[t]
+                for r in rows(m.group(3)):
+                    data[t].append(dict(zip(names, r)))
+    return data
+
+
+def write(path, header, items):
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(items)
+    print(f"  {path.name}: {len(items)} rows")
+
+
+def main():
+    src, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
+    out.mkdir(parents=True, exist_ok=True)
+    d = load(src)
+    print({t: len(v) for t, v in d.items()})
+    # trainer recipes: the lowest requirement over every trainer
+    tr = {}
+    for r in d["npc_trainer"] + d["npc_trainer_template"]:
+        sp = int(r["spell"])
+        k = (int(r["reqskill"]), int(r["reqskillvalue"]), int(r["reqlevel"]))
+        if sp not in tr or k[1] < tr[sp][1]:
+            tr[sp] = k
+    write(out / "trainer_spells.csv", ["spell", "reqskill", "reqskillvalue", "reqlevel"], sorted([s, *k] for s, k in tr.items()))
+    # recipe items (item class 9): the spell they teach and where they come from
+    vendor = {int(r["item"]) for r in d["npc_vendor"] + d["npc_vendor_template"]}
+    looted = {int(r["item"]) for t in ("creature_loot_template", "reference_loot_template", "gameobject_loot_template") for r in d[t]}
+    rec = []
+    for r in d["item_template"]:
+        if r.get("class") != "9":
+            continue
+        teaches = next((r[f"spellid_{k}"] for k in (2, 1) if r.get(f"spellid_{k}") not in (None, "0", "483", "55884")), "0")
+        rec.append([int(r["entry"]), r["name"], r["RequiredSkill"], r["RequiredSkillRank"], teaches, int(int(r["entry"]) in vendor),
+                    int(int(r["entry"]) in looted)])
+    write(out / "recipe_items.csv", ["item", "name", "required_skill", "required_rank", "teaches", "vendor", "drop"], sorted(rec))
+    # quests
+    qs = []
+    for r in d["quest_template"]:
+        rew = ";".join(f"{r.get(f'RewItemId{k}')}" for k in range(1, 5) if r.get(f"RewItemId{k}") not in (None, "0"))
+        cho = ";".join(f"{r.get(f'RewChoiceItemId{k}')}" for k in range(1, 7) if r.get(f"RewChoiceItemId{k}") not in (None, "0"))
+        qs.append([int(r["entry"]), r["Title"], r["ZoneOrSort"], r["MinLevel"], r["QuestLevel"], r["RequiredRaces"], r["RequiredClasses"], rew, cho])
+    write(out / "quests.csv", ["quest", "title", "zone_or_sort", "min_level", "quest_level", "required_races", "required_classes", "rewards",
+                               "choices"], sorted(qs))
+    # crafting and enchanting spells: the item a spell creates (effect 24) or the enchantment it applies (effect 53), and its reagents
+    cs = []
+    for r in d["spell_template"]:
+        eff = [(r.get(f"Effect{k}"), r.get(f"EffectItemType{k}"), r.get(f"EffectMiscValue{k}")) for k in (1, 2, 3)]
+        creates = next((it for e, it, _ in eff if e == "24" and it not in (None, "0")), "")
+        enchant = next((mv for e, _, mv in eff if e == "53" and mv not in (None, "0")), "")
+        if not creates and not enchant:
+            continue
+        reag = ";".join(f"{r[f'Reagent{k}']}:{r[f'ReagentCount{k}']}" for k in range(1, 9) if r.get(f"Reagent{k}") not in (None, "0"))
+        cs.append([int(r["Id"]), r.get("SpellName", ""), creates, enchant, reag])
+    write(out / "craft_spells.csv", ["spell", "name", "creates", "enchant", "reagents"], sorted(cs))
+    # trainers and recipe items teach a "learn" spell (effect 36) whose trigger spell is the craft spell
+    ls = []
+    for r in d["spell_template"]:
+        for k in (1, 2, 3):
+            if r.get(f"Effect{k}") == "36" and r.get(f"EffectTriggerSpell{k}") not in (None, "0"):
+                ls.append([int(r["Id"]), int(r[f"EffectTriggerSpell{k}"])])
+    write(out / "learn_spells.csv", ["spell", "learns"], sorted(ls))
+    write(out / "instances.csv", ["map", "level_min", "level_max"], sorted([int(r["map"]), r["levelMin"], r["levelMax"]] for r in d["instance_template"]))
+    # dungeon drops: every creature spawned in a leveling dungeon, each item it drops at 1% or more (green or better, equippable)
+    spawned = {}
+    for r in d["creature"]:
+        if int(r["map"]) in DUNGEON_MAPS:
+            spawned.setdefault(int(r["id"]), int(r["map"]))
+    cl, rl = {}, {}
+    for r in d["creature_loot_template"]:
+        cl.setdefault(int(r["entry"]), []).append(r)
+    for r in d["reference_loot_template"]:
+        rl.setdefault(int(r["entry"]), []).append(r)
+    items = {int(r["entry"]): r for r in d["item_template"]}
+    rows = []
+    for r in d["creature_template"]:
+        e = int(r["Entry"])
+        if e not in spawned or not int(r.get("LootId") or 0):
+            continue
+        for it, ch in loot_chances(cl, rl, int(r["LootId"])).items():
+            x = items.get(it)
+            if ch < 0.01 or not x or int(x["Quality"]) < 2 or x["class"] not in ("2", "4"):
+                continue
+            rows.append([spawned[e], e, r["Name"], r["Rank"], r["MaxLevel"], it, x["name"], round(ch, 4)])
+    write(out / "dungeon_drops.csv", ["map", "creature", "name", "rank", "level", "item", "item_name", "chance"], sorted(rows))
+    write(out / "item_names.csv", ["item", "name", "class", "subclass", "quality", "required_level", "required_skill", "required_rank",
+                                   "rep_faction", "rep_rank"],
+          sorted([int(r["entry"]), r["name"], r["class"], r["subclass"], r["Quality"], r["RequiredLevel"], r["RequiredSkill"], r["RequiredSkillRank"],
+                  r.get("RequiredReputationFaction", "0"), r.get("RequiredReputationRank", "0")] for r in d["item_template"]))
+
+
+if __name__ == "__main__":
+    main()

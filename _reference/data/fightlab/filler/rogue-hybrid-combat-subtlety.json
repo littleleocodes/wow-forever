@@ -1,0 +1,358 @@
+{
+ "class": "rogue",
+ "spec": "Hybrid Combat/Subtlety",
+ "build": "combat-subtlety-open-leveling",
+ "rotation": "subtlety-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-11",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "12",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 1
+  },
+  {
+   "levels": "13-14",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "15",
+   "tree": "Subtlety",
+   "talent": "Dirty Deeds",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 1
+  },
+  {
+   "levels": "17-19",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
+   "points": 3
+  },
+  {
+   "levels": "20-22",
+   "tree": "Subtlety",
+   "talent": "Serrated Blades",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Subtlety",
+   "talent": "Premeditation",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Subtlety",
+   "talent": "Ghostly Strike",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
+  },
+  {
+   "levels": "29-30",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "31-33",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Combat",
+   "talent": "Efficient Strikes",
+   "points": 2
+  },
+  {
+   "levels": "36-37",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "38-40",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "41-43",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "44-45",
+   "tree": "Combat",
+   "talent": "Composure",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "56-57",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 2
+  },
+  {
+   "levels": "58-59",
+   "tree": "Subtlety",
+   "talent": "Elusiveness",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Subtlety",
+   "talent": "Hemorrhage",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 21.046,
+   "values_at_60": {
+    "Aggression": -0.342,
+    "Dual Wield Specialization": -0.295,
+    "Flawless Execution": -1.423,
+    "Hack and Slash": -0.127,
+    "Hemorrhage": -0.976,
+    "Malice": -0.124,
+    "Remorseless Attacks": -1.765,
+    "Weapon Expertise": -0.567
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Elusiveness",
+   "to": "Setup",
+   "level": 59,
+   "seed3": -0.0016,
+   "seed4": -0.0011,
+   "why": "gate"
+  },
+  {
+   "from": "Elusiveness",
+   "to": "Setup",
+   "level": 58,
+   "seed3": -0.0008,
+   "seed4": -0.0007,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-11",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "12",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 1
+  },
+  {
+   "levels": "13-14",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "15",
+   "tree": "Subtlety",
+   "talent": "Dirty Deeds",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 1
+  },
+  {
+   "levels": "17-19",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
+   "points": 3
+  },
+  {
+   "levels": "20-22",
+   "tree": "Subtlety",
+   "talent": "Serrated Blades",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Subtlety",
+   "talent": "Premeditation",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Subtlety",
+   "talent": "Ghostly Strike",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
+  },
+  {
+   "levels": "29-30",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "31-33",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Combat",
+   "talent": "Efficient Strikes",
+   "points": 2
+  },
+  {
+   "levels": "36-37",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "38-40",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "41-43",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "44-45",
+   "tree": "Combat",
+   "talent": "Composure",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "56-57",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 2
+  },
+  {
+   "levels": "58-59",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Subtlety",
+   "talent": "Hemorrhage",
+   "points": 1
+  }
+ ]
+}

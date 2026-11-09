@@ -61,7 +61,18 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   a healing spec with a viable leveling rotation of its own, Holy and Discipline priest, Holy paladin, uses it).
   Optimizer builds are named after their own spec on the pages ("Assassination (optimized)", not their model's "Raid Combat swords").
   If you add an optimization category, add it with the same name and layout to every class, even if some are only a stub.
-- Folders that are *not* classes start with an underscore: `_reference/` (facts, data, scripts), `_templates/`.
+- Folders that are *not* classes start with an underscore: `_reference/` (facts, data, scripts), `_templates/`, `_characters/`.
+- **The user's own characters** (2026-11-09, user: "build folders/guides for my specific characters ... I want to be able to reference to
+  you at each level If I should be looking to get a new piece of gear or put a new enchant on, or if I should be running a dungeon ... or
+  doing certain quests"; Arcea first): `_characters/<name>/character.json` (hand-kept: API slug, class, faction, leveling page spec, spell
+  school shares), `README.md` written by `python _reference/data/characters/plan.py <name>` (talents against the page's order and the
+  character's own path, enchants it can make now, dungeons, quests, crafts and vendors for upgrades worth 0.5% faster kills, level by level
+  to 59), `armory/` the last snapshot. Live data from Blizzard's API (`characters/bnet.py`, namespace profile-forever-<region>; the user's
+  developer key in `~/.wow-forever-tools/blizzard.json`, never in the repository; armorywowforever.com's robots.txt forbids its `/api/`).
+  Item values: `characters/stat_weights.py` (the page build in the fight lab with `tables.GEAR_BONUS` raised per stat, levels 20-60) x the
+  item's stats; items and sources from the simulator's Forever database plus the Classic dump's dungeon loot with drop chances, recipe
+  skills, quest levels and reagents (`characters/cmangos_extract.py` -> `raw/2026-11-09-cmangos-classic-db-c33f90b8e/`). When the user
+  asks what to do at a level: refresh with `plan.py <name>` and answer from the page.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 

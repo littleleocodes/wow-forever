@@ -1,0 +1,156 @@
+{
+ "class": "mage",
+ "spec": "Hybrid Arcane/Frost",
+ "build": "arcane-frost-open-leveling",
+ "rotation": "barrage-frost-leveling",
+ "date": "2026-11-09",
+ "fights": 3000,
+ "seeds": [
+  3,
+  4
+ ],
+ "steps": {
+  "intellect": 30,
+  "spirit": 30,
+  "stamina": 30,
+  "spell_power": 15,
+  "armor": 300,
+  "mp5": 10,
+  "wand_dps": 10
+ },
+ "unit": "seconds per kill saved per point (negative: slower)",
+ "levels": {
+  "20": {
+   "time_per_kill": 28.755,
+   "weights": {
+    "intellect": 0.02016,
+    "spirit": 0.04178,
+    "stamina": -0.00079,
+    "spell_power": 0.16501,
+    "armor": 0.0005,
+    "mp5": 0.09698,
+    "wand_dps": 0.07392
+   }
+  },
+  "23": {
+   "time_per_kill": 30.624,
+   "weights": {
+    "intellect": 0.03508,
+    "spirit": 0.05374,
+    "stamina": 0.00161,
+    "spell_power": 0.19109,
+    "armor": 0.00043,
+    "mp5": 0.14918,
+    "wand_dps": 0.05371
+   }
+  },
+  "26": {
+   "time_per_kill": 33.444,
+   "weights": {
+    "intellect": 0.03942,
+    "spirit": 0.03973,
+    "stamina": 0.00264,
+    "spell_power": 0.14994,
+    "armor": 0.00081,
+    "mp5": 0.13419,
+    "wand_dps": 0.07022
+   }
+  },
+  "29": {
+   "time_per_kill": 34.146,
+   "weights": {
+    "intellect": 0.03434,
+    "spirit": 0.0413,
+    "stamina": 0.00197,
+    "spell_power": 0.15687,
+    "armor": 0.00089,
+    "mp5": 0.13718,
+    "wand_dps": 0.06016
+   }
+  },
+  "32": {
+   "time_per_kill": 33.363,
+   "weights": {
+    "intellect": 0.02308,
+    "spirit": 0.02924,
+    "stamina": 0.00185,
+    "spell_power": 0.11996,
+    "armor": 0.00084,
+    "mp5": 0.10403,
+    "wand_dps": 0.04596
+   }
+  },
+  "35": {
+   "time_per_kill": 33.978,
+   "weights": {
+    "intellect": 0.03204,
+    "spirit": 0.0318,
+    "stamina": 0.00278,
+    "spell_power": 0.11036,
+    "armor": 0.00076,
+    "mp5": 0.11634,
+    "wand_dps": 0.04364
+   }
+  },
+  "40": {
+   "time_per_kill": 33.689,
+   "weights": {
+    "intellect": 0.0222,
+    "spirit": 0.03085,
+    "stamina": 0.00125,
+    "spell_power": 0.08477,
+    "armor": 0.0002,
+    "mp5": 0.09335,
+    "wand_dps": 0.03674
+   }
+  },
+  "45": {
+   "time_per_kill": 29.692,
+   "weights": {
+    "intellect": 0.01466,
+    "spirit": 0.02421,
+    "stamina": -0.00051,
+    "spell_power": 0.06196,
+    "armor": 0.00048,
+    "mp5": 0.06297,
+    "wand_dps": 0.03391
+   }
+  },
+  "50": {
+   "time_per_kill": 27.496,
+   "weights": {
+    "intellect": 0.00427,
+    "spirit": 0.0181,
+    "stamina": 0.00198,
+    "spell_power": 0.037,
+    "armor": 0.00036,
+    "mp5": 0.02339,
+    "wand_dps": 0.02238
+   }
+  },
+  "55": {
+   "time_per_kill": 28.845,
+   "weights": {
+    "intellect": 0.00684,
+    "spirit": 0.01969,
+    "stamina": 0.00129,
+    "spell_power": 0.03179,
+    "armor": 0.00026,
+    "mp5": 0.03107,
+    "wand_dps": 0.03268
+   }
+  },
+  "60": {
+   "time_per_kill": 25.587,
+   "weights": {
+    "intellect": 0.00529,
+    "spirit": 0.01615,
+    "stamina": -0.00072,
+    "spell_power": 0.01411,
+    "armor": -0.00024,
+    "mp5": 0.02246,
+    "wand_dps": 0.01302
+   }
+  }
+ }
+}

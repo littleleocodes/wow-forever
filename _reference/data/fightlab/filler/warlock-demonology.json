@@ -1,0 +1,381 @@
+{
+ "class": "warlock",
+ "spec": "Demonology",
+ "build": "demonology-open-leveling",
+ "rotation": "demonology-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Demonology",
+   "talent": "Improved Imp",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Demonology",
+   "talent": "Improved Sayaad",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Demonology",
+   "talent": "Demonic Brand",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Demonology",
+   "talent": "Improved Felhunter",
+   "points": 1
+  },
+  {
+   "levels": "35-37",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 3
+  },
+  {
+   "levels": "38-42",
+   "tree": "Demonology",
+   "talent": "Master Demonologist",
+   "points": 5
+  },
+  {
+   "levels": "43-44",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "45-48",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "49",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "53-54",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 2
+  },
+  {
+   "levels": "55-58",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 4
+  },
+  {
+   "levels": "59",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 30.88,
+   "values_at_60": {
+    "Master Demonologist": -0.066,
+    "Siphon Life": -1.864
+   },
+   "zero": [
+    "Master Demonologist"
+   ]
+  },
+  {
+   "weighted": 30.738,
+   "values_at_60": {
+    "Amplify Curse": -0.279,
+    "Grim Reach": -0.05,
+    "Improved Bane of Agony": -0.266,
+    "Improved Corruption": -0.183,
+    "Improved Life Tap": -0.358,
+    "Malevolence": -0.094,
+    "Master Demonologist": -0.023,
+    "Pandemic": -0.237,
+    "Siphon Life": -1.782,
+    "Suppression": -0.244
+   },
+   "zero": [
+    "Grim Reach",
+    "Malevolence",
+    "Master Demonologist"
+   ]
+  },
+  {
+   "weighted": 30.744,
+   "values_at_60": {
+    "Amplify Curse": -0.359,
+    "Grim Reach": -0.082,
+    "Improved Bane of Agony": -0.301,
+    "Improved Corruption": -0.059,
+    "Improved Life Tap": -0.4,
+    "Malevolence": -0.204,
+    "Master Demonologist": -0.119,
+    "Pandemic": -0.229,
+    "Siphon Life": -1.681,
+    "Suppression": -0.25
+   },
+   "zero": [
+    "Grim Reach",
+    "Improved Corruption"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Master Demonologist",
+   "to": "Improved Corruption",
+   "level": 42,
+   "seed3": -0.0046,
+   "seed4": -0.0047,
+   "why": "measured"
+  },
+  {
+   "from": "Malevolence",
+   "to": "Improved Corruption",
+   "level": 58,
+   "seed3": 0.0002,
+   "seed4": 0.0004,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Demonology",
+   "talent": "Improved Imp",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Demonology",
+   "talent": "Improved Sayaad",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Demonology",
+   "talent": "Demonic Brand",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Demonology",
+   "talent": "Improved Felhunter",
+   "points": 1
+  },
+  {
+   "levels": "35-37",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 3
+  },
+  {
+   "levels": "38-41",
+   "tree": "Demonology",
+   "talent": "Master Demonologist",
+   "points": 4
+  },
+  {
+   "levels": "42",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "43-44",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "45-48",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "49",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "53-54",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 2
+  },
+  {
+   "levels": "55-57",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  }
+ ]
+}

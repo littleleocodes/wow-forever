@@ -1,0 +1,298 @@
+{
+ "class": "warlock",
+ "spec": "Destruction",
+ "build": "destruction-open-leveling",
+ "rotation": "destruction-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Destruction",
+   "talent": "Aftermath",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Destruction",
+   "talent": "Cataclysm",
+   "points": 3
+  },
+  {
+   "levels": "20-24",
+   "tree": "Destruction",
+   "talent": "Ruin",
+   "points": 5
+  },
+  {
+   "levels": "25-27",
+   "tree": "Destruction",
+   "talent": "Agonizing Flames",
+   "points": 3
+  },
+  {
+   "levels": "28-30",
+   "tree": "Destruction",
+   "talent": "Intensity",
+   "points": 3
+  },
+  {
+   "levels": "31",
+   "tree": "Destruction",
+   "talent": "Shadowburn",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Destruction",
+   "talent": "Conflagrate",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Destruction",
+   "talent": "Pyroclasm",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Destruction",
+   "talent": "Bane of Havoc",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Destruction",
+   "talent": "Shadow and Flame",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Destruction",
+   "talent": "Incinerate",
+   "points": 1
+  },
+  {
+   "levels": "41-43",
+   "tree": "Destruction",
+   "talent": "Fire and Brimstone",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 1
+  },
+  {
+   "levels": "45-49",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 5
+  },
+  {
+   "levels": "50-54",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "55-57",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 41.226,
+   "values_at_60": {
+    "Demonic Embrace": 0.022,
+    "Fel Vitality": -0.245,
+    "Fire and Brimstone": -0.475,
+    "Improved Life Tap": -0.19,
+    "Improved Voidwalker": -0.675,
+    "Incinerate": -2.037,
+    "Suppression": -0.358
+   },
+   "zero": [
+    "Demonic Embrace"
+   ]
+  },
+  {
+   "weighted": 41.176,
+   "values_at_60": {
+    "Demonic Energies": -0.283,
+    "Fel Vitality": -0.332,
+    "Fire and Brimstone": -0.548,
+    "Improved Life Tap": -0.091,
+    "Improved Voidwalker": -0.841,
+    "Incinerate": -2.165,
+    "Suppression": -0.641
+   },
+   "zero": [
+    "Improved Life Tap"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Demonic Embrace",
+   "to": "Demonic Energies",
+   "level": 58,
+   "seed3": -0.0012,
+   "seed4": -0.0013,
+   "why": "tie-break"
+  },
+  {
+   "from": "Aftermath",
+   "to": "Destructive Reach",
+   "level": 16,
+   "seed3": -0.0012,
+   "seed4": -0.0028,
+   "why": "gate"
+  },
+  {
+   "from": "Aftermath",
+   "to": "Destructive Reach",
+   "level": 15,
+   "seed3": -0.0034,
+   "seed4": -0.0023,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Destruction",
+   "talent": "Destructive Reach",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Destruction",
+   "talent": "Cataclysm",
+   "points": 3
+  },
+  {
+   "levels": "20-24",
+   "tree": "Destruction",
+   "talent": "Ruin",
+   "points": 5
+  },
+  {
+   "levels": "25-27",
+   "tree": "Destruction",
+   "talent": "Agonizing Flames",
+   "points": 3
+  },
+  {
+   "levels": "28-30",
+   "tree": "Destruction",
+   "talent": "Intensity",
+   "points": 3
+  },
+  {
+   "levels": "31",
+   "tree": "Destruction",
+   "talent": "Shadowburn",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Destruction",
+   "talent": "Conflagrate",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Destruction",
+   "talent": "Pyroclasm",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Destruction",
+   "talent": "Bane of Havoc",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Destruction",
+   "talent": "Shadow and Flame",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Destruction",
+   "talent": "Incinerate",
+   "points": 1
+  },
+  {
+   "levels": "41-43",
+   "tree": "Destruction",
+   "talent": "Fire and Brimstone",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 1
+  },
+  {
+   "levels": "45-49",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 5
+  },
+  {
+   "levels": "50-54",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "55-57",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 2
+  }
+ ]
+}

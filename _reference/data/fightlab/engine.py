@@ -1386,6 +1386,8 @@ class Fight:
                     tick = self.mod.mana_regen(p, t)
                     if t < p.fsr_until:
                         tick *= min(1.0, p.regen_while_casting)
+                    if "mp5" in tables.GEAR_BONUS:   # gear mana per 5 s regenerates while casting too (2026-11-09)
+                        tick += tables.GEAR_BONUS["mp5"] * 0.4
                     p.mana = min(p.mana_max, p.mana + tick)
                 if p.energy_max > 0:
                     p.energy = min(p.energy_max, p.energy + tables.ENERGY_PER_TICK)
@@ -1704,7 +1706,8 @@ class Session:
         ticks = int(seconds / 2.0)
         for _ in range(ticks):
             if p.mana_max > 0:
-                p.mana = min(p.mana_max, p.mana + self.mod.mana_regen(p, t_end) * (1.0 if t_end > p.fsr_until else p.regen_while_casting))
+                p.mana = min(p.mana_max, p.mana + self.mod.mana_regen(p, t_end) * (1.0 if t_end > p.fsr_until else p.regen_while_casting)
+                             + (tables.GEAR_BONUS["mp5"] * 0.4 if "mp5" in tables.GEAR_BONUS else 0.0))
             p.hp = min(p.hp_max, p.hp + self.mod.health_regen(p))
             if p.pet is not None and p.pet.alive:
                 p.pet.hp = min(p.pet.hp_max, p.pet.hp + tables.PET_OOC_REGEN * p.pet.hp_max)

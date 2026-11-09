@@ -1,0 +1,315 @@
+{
+ "class": "shaman",
+ "spec": "Hybrid Elemental/Enhancement",
+ "build": "elemental-enhancement-open-leveling",
+ "rotation": "elemental-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 1
+  },
+  {
+   "levels": "25-29",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "30",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 1
+  },
+  {
+   "levels": "31-34",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 4
+  },
+  {
+   "levels": "35",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "36-37",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "39-41",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 3
+  },
+  {
+   "levels": "42-43",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 2
+  },
+  {
+   "levels": "50-51",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "52-55",
+   "tree": "Enhancement",
+   "talent": "Toughness",
+   "points": 4
+  },
+  {
+   "levels": "56",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Elemental",
+   "talent": "Elemental Reach",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Elemental",
+   "talent": "Elemental Fury",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 29.796,
+   "values_at_60": {
+    "Elemental Fury": -0.203,
+    "Mental Quickness": -0.602,
+    "Tidal Focus": -0.163
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Toughness",
+   "to": "Anticipation",
+   "level": 55,
+   "seed3": -0.0005,
+   "seed4": -0.0014,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 1
+  },
+  {
+   "levels": "25-29",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "30",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 1
+  },
+  {
+   "levels": "31-34",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 4
+  },
+  {
+   "levels": "35",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "36-37",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "39-41",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 3
+  },
+  {
+   "levels": "42-43",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 2
+  },
+  {
+   "levels": "50-51",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "52-54",
+   "tree": "Enhancement",
+   "talent": "Toughness",
+   "points": 3
+  },
+  {
+   "levels": "55",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Elemental",
+   "talent": "Elemental Reach",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Elemental",
+   "talent": "Elemental Fury",
+   "points": 1
+  }
+ ]
+}
