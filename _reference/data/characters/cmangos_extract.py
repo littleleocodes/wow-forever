@@ -10,6 +10,8 @@ Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sq
 - craft_spells.csv: spell, name, creates (item), enchant (item enchantment id), reagents (item:count;...)
 - instances.csv: map, level_min, level_max
 - item_names.csv: item, name, class, subclass, quality, required_level, required_skill, required_rank
+- dungeon_drops.csv, class_training.csv, mob_income.csv (coin and vendor value per kill by level) and mob_loot.csv (level, item, per_kill,
+  quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers)
 Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
 database and only skill levels, quest levels and reagents from here.
 """
@@ -20,7 +22,8 @@ import re
 import sys
 
 WANT = {"npc_trainer", "npc_trainer_template", "quest_template", "item_template", "spell_template", "npc_vendor", "npc_vendor_template",
-        "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature"}
+        "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature",
+        "creature_questrelation", "gameobject_questrelation", "gameobject_template"}
 # the leveling dungeons' map ids (Classic)
 DUNGEON_MAPS = {389, 43, 36, 33, 48, 34, 90, 47, 189, 129, 70, 209, 349, 109, 230, 229, 429, 289, 329}
 
@@ -246,6 +249,37 @@ def main():
         a[2] += vend * n
     write(out / "mob_income.csv", ["level", "spawns", "coin_per_kill", "vendor_per_kill"],
           [[lv, a[0], round(a[1] / a[0], 1), round(a[2] / a[0], 1)] for lv, a in sorted(agg.items())])
+    # mob loot by level (2026-11-09, the planner's income: cloth and greens sell on the auction house for more than a vendor pays): the
+    # expected count per kill of every item a level's mobs drop, same creatures and spawn weights as mob_income: items of 1 in 2,000 kills
+    # or more, and every green or better (world drops come one in tens of thousands of kills each, but there are hundreds of them);
+    # sell = the vendor's price, quality and class for the planner's valuation
+    loot, kills = {}, {}
+    for r in d["creature_template"]:
+        e = int(r["Entry"])
+        n = spawns.get(e, 0)
+        if not n or r["Rank"] != "0" or r["CreatureType"] in ("8", "11", "12") or int(r["NpcFlags"] or 0):
+            continue
+        lv = (int(r["MinLevel"]) + int(r["MaxLevel"])) // 2
+        kills[lv] = kills.get(lv, 0) + n
+        if int(r.get("LootId") or 0):
+            for it, ch in loot_chances(cl, rl, int(r["LootId"])).items():
+                loot[(lv, it)] = loot.get((lv, it), 0.0) + ch * n
+    klass = {int(r["entry"]): r["class"] for r in d["item_template"]}
+    # quest chains and givers (2026-11-09, the planner's "work toward" list: where a reward's chain starts and who gives each step):
+    # prev = PrevQuestId's quest (negative in the data when it only has to be active), next_in_chain, the creatures or objects that give it
+    cname = {int(r["Entry"]): r["Name"] for r in d["creature_template"]}
+    gname = {int(r["entry"]): r["name"] for r in d["gameobject_template"]}
+    givers = {}
+    for r in d["creature_questrelation"]:
+        givers.setdefault(int(r["quest"]), set()).add(cname.get(int(r["id"]), ""))
+    for r in d["gameobject_questrelation"]:
+        givers.setdefault(int(r["quest"]), set()).add(gname.get(int(r["id"]), ""))
+    write(out / "quest_chain.csv", ["quest", "prev", "next_in_chain", "givers"],
+          sorted([int(r["entry"]), abs(int(r.get("PrevQuestId") or 0)), int(r.get("NextQuestInChain") or 0),
+                  " / ".join(sorted(x for x in givers.get(int(r["entry"]), ()) if x))] for r in d["quest_template"]))
+    write(out / "mob_loot.csv", ["level", "item", "per_kill", "quality", "class", "sell"],
+          [[lv, it, round(v / kills[lv], 5), sell.get(it, (9, 0))[0], klass.get(it, ""), sell.get(it, (9, 0))[1]]
+           for (lv, it), v in sorted(loot.items()) if v / kills[lv] >= 0.0005 or (sell.get(it, (0, 0))[0] >= 2 and v / kills[lv] >= 0.000005)])
     # buy_price: what a vendor charges (copper); vendor: 1 when some vendor sells it (the planner's fallback for vendor-sold reagents,
     # thread, dyes, vials, when the user's ForeverTape export has not seen that vendor yet)
     write(out / "item_names.csv", ["item", "name", "class", "subclass", "quality", "required_level", "required_skill", "required_rank",

@@ -73,6 +73,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   item's stats; items and sources from the simulator's Forever database plus the Classic dump's dungeon loot with drop chances, recipe
   skills, quest levels and reagents (`characters/cmangos_extract.py` -> `raw/2026-11-09-cmangos-classic-db-c33f90b8e/`). When the user
   asks what to do at a level: refresh with `plan.py <name>` and answer from the page.
+  The plan (2026-11-09, user: "a refresh every couple levels, finding upgrades that make meaningful impacts ... utilize the auction house ...
+  But it also needs to be something that's practical"): per slot the chain of upgrades that saves the most minutes of killing (each level's
+  stat values x that level's kills), each swap saving 20 minutes before the next (`min_minutes`, 2-level floor `min_levels`) and paying for
+  itself in play time; gear the auction house usually lists (`characters/market.py`: the add-on's hourly snapshots, read only) counts at
+  its usual price on later visits; every bought or crafted piece fits a gear budget (today's gold above two levels' training, then
+  `gear_share` of each level's income; the rest saves for the mount and 60), else the plan is made again without it; income values loot
+  at the add-on's sale prices (`mob_loot.csv`; asking prices capped at twice the vendor's); a long-held item says why nothing replaces it;
+  drops and unknown-recipe crafts carry a fallback; quest rewards name where their chain starts (`quest_chain.csv`); refreshes write
+  `state.json` and the next page lists what changed.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 

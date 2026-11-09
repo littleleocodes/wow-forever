@@ -198,43 +198,72 @@ def forever_quests(ids, region="us"):
 def suffix_versions(cls, faction, school_share, csv_path):
     """Random-suffix gear listed on the auction house now ("of the Owl", "of Arcane Wrath"...), from the user's ForeverTape export
     `gear_versions.csv` (item_id,variant,name,suffix_name,stats,cheapest,units,as_of; variant "b<suffix id>"), in pool form with the
-    source "auction". Stats: the item's fixed stats plus round(allocation x the item's random property points / 10000) per suffix stat,
-    the simulator's rule (sim/core/database.go ItemEquipmentBaseStats), so no in-game scan is needed. One entry per item and stats, at the
-    cheapest price."""
+    source "auction". Stats: suffix_stats. One entry per item and stats, at the cheapest price."""
+    rows = [(int(r["item_id"]), r["variant"].strip(), r["name"], {"kind": "auction", "price": int(r["cheapest"])})
+            for r in csv.DictReader(open(csv_path, encoding="utf-8")) if r["cheapest"]]
+    return versions(cls, faction, school_share, rows)
+
+
+def market_versions(cls, faction, school_share, hist, min_share=0.2):
+    """Gear the auction house usually lists (market.history: listed in at least `min_share` of the hourly windows), random-suffix
+    versions and plain items alike, with the source "market" (the share of windows and the median cheapest price): what the plan may
+    count on at the item's level although nobody lists it this hour (2026-11-09)."""
+    n = hist.get("windows") or 0
+    rows = []
+    for key, (seen, price) in (hist.get("items") or {}).items():
+        if n and seen / n >= min_share:
+            item, variant = key.split(":", 1)
+            rows.append((int(item), variant, None, {"kind": "market", "price": price, "share": seen / n}))
+    return versions(cls, faction, school_share, rows, plain=True)
+
+
+def suffix_stats(it, sids, suffixes, school_share):
+    """The item's fixed stats plus round(allocation x the item's random property points / 10000) per suffix stat, the simulator's rule
+    (sim/core/database.go ItemEquipmentBaseStats), so no in-game scan is needed."""
+    st = lab_stats(it, school_share)
+    points = ((it.get("scalingOptions") or {}).get("0") or {}).get("randPropPoints") or 0
+    for sid in sids:
+        for k, alloc in enumerate(suffixes[sid].get("stats") or []):
+            if not alloc:
+                continue
+            amount = int(alloc * points / 10000 + 0.5)   # Go's math.Round: half away from zero
+            if k in STAT:
+                st[STAT[k]] = st.get(STAT[k], 0) + amount
+            elif k in SCHOOLS:
+                st["spell_power"] = st.get("spell_power", 0) + amount * school_share.get(SCHOOLS[k], 0)
+    return st
+
+
+def versions(cls, faction, school_share, rows, plain=False):
+    """Pool entries for (item id, variant "b<suffix ids>" or "", name or None, source) rows: one per item and stats, the cheapest
+    source kept; plain items (variant "") only with `plain` (the plan adds today's listings of plain items to the pool items itself)."""
     db = sim_db()
     items = {it["id"]: it for it in db["items"]}
     suffixes = {s["id"]: s for s in db.get("randomSuffixes") or []}
     best = {}
-    for r in csv.DictReader(open(csv_path, encoding="utf-8")):
-        it = items.get(int(r["item_id"]))
-        v = r["variant"].strip()
-        if not it or not v.startswith("b") or not r["cheapest"] or not usable(it, cls, faction):
+    for item, v, name, src in rows:
+        it = items.get(item)
+        if not it or not usable(it, cls, faction):
             continue
-        sids = [int(x) for x in v[1:].split(".") if x.isdigit() and int(x) in suffixes]
-        if not sids:
+        if v.startswith("b"):
+            sids = [int(x) for x in v[1:].split(".") if x.isdigit() and int(x) in suffixes]
+            if not sids:
+                continue
+            st = suffix_stats(it, sids, suffixes, school_share)
+            name = name or f"{it['name']} {suffixes[sids[0]]['name']}"
+        elif plain and not v:
+            sids, st, name = [], lab_stats(it, school_share), it["name"]
+        else:
             continue
-        st = lab_stats(it, school_share)
-        points = ((it.get("scalingOptions") or {}).get("0") or {}).get("randPropPoints") or 0
-        for sid in sids:
-            for k, alloc in enumerate(suffixes[sid].get("stats") or []):
-                if not alloc:
-                    continue
-                amount = int(alloc * points / 10000 + 0.5)   # Go's math.Round: half away from zero
-                if k in STAT:
-                    st[STAT[k]] = st.get(STAT[k], 0) + amount
-                elif k in SCHOOLS:
-                    st["spell_power"] = st.get("spell_power", 0) + amount * school_share.get(SCHOOLS[k], 0)
         if not any(k != "armor" for k in st):
             continue
-        name = r["name"] or f"{it['name']} {suffixes[sids[0]]['name']}"
         key = (it["id"], tuple(sorted(st.items())))
-        price = int(r["cheapest"])
-        if key not in best or price < best[key]["sources"][0]["price"]:
+        if key not in best or src["price"] < best[key]["sources"][0]["price"]:
             slot = SLOTS.get(it.get("type"))
             if it.get("type") == 13:
                 slot = {4: "two-hand", 3: "off-hand"}.get(it.get("handType"), "main-hand")
-            best[key] = {"id": f"{it['id']}:{v}", "name": name, "slot": slot, "quality": it.get("quality"), "req": it.get("reqLvl") or 0,
-                         "stats": st, "sources": [{"kind": "auction", "price": price}], "unique": False, "set": None}
+            best[key] = {"id": f"{it['id']}:{v}" if v else it["id"], "name": name, "slot": slot, "quality": it.get("quality"),
+                         "req": it.get("reqLvl") or 0, "stats": st, "sources": [dict(src)], "unique": False, "set": None}
     return list(best.values())
 
 

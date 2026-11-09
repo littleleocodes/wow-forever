@@ -30,6 +30,7 @@ import ah_prices as AH  # noqa: E402
 import bnet  # noqa: E402
 import item_pool as IP  # noqa: E402
 import professions as PF  # noqa: E402
+import market as MK  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -231,6 +232,25 @@ def mats_text(reag):
     return parts + f" (about {AH.money(tot)} at today's prices" + (f"; no price for {', '.join(miss)}" if miss else "") + ")"
 
 
+QCHAIN, CQUESTS = {}, {}
+
+
+def chain_step(q):
+    """(the first quest of q's chain you have not done, its givers) from the Classic data (quest_chain.csv: PrevQuestId), or None for a
+    quest the data lacks (Forever's own)."""
+    if not QCHAIN:
+        for r in csv.DictReader(open(IP.RAW / "quest_chain.csv", encoding="utf-8")):
+            QCHAIN[int(r["quest"])] = (int(r["prev"]), r["givers"])
+        CQUESTS.update(IP.classic_quests())
+    if q not in QCHAIN:
+        return None
+    first, seen = q, set()
+    while QCHAIN[first][0] and QCHAIN[first][0] not in COMPLETED and QCHAIN[first][0] in QCHAIN and first not in seen:
+        seen.add(first)
+        first = QCHAIN[first][0]
+    return first, QCHAIN[first][1]
+
+
 # ---------------------------------------------------------------------------------------------------------------- the plan
 def sources_text(it):
     out = []
@@ -241,9 +261,20 @@ def sources_text(it):
                 continue
             lv = f", level {s['level']}" if s.get("level") else ""
             log = ", in your quest log" if s.get("quest") in INLOG else ""
+            st = chain_step(s["quest"]) if isinstance(s.get("quest"), int) else None
+            if st and st[0] != s["quest"] and st[0] not in INLOG:   # a chain: where to start it (2026-11-09, the "work toward" list)
+                row = CQUESTS.get(st[0]) or {}
+                log += (f"; the chain starts with \"{row.get('title', st[0])}\"" + (f" from {st[1]}" if st[1] else "")
+                        + (f", level {row['min_level']}" if row.get("min_level") not in (None, "", "0") else ""))
+            elif st and st[1] and s.get("quest") not in INLOG:
+                log += f"; from {st[1]}"
             out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv}{log})")
         elif k == "auction":
             out.append(f"Auction House now: {AH.money(s.get('price'))}")
+        elif k == "market":
+            if not any(x["kind"] == "auction" for x in it["sources"]):
+                out.append(f"Auction House: usually listed (in {s['share']:.0%} of the hourly snapshots), about {AH.money(s.get('price'))}, "
+                           "not this hour")
         elif k == "dungeon":
             est = ", range estimated" if s.get("estimated") else ""
             ch = f", {s['chance']:.0%} drop" if s.get("chance") else ""
@@ -265,6 +296,13 @@ def sources_text(it):
 
 
 DATAVER = {}   # the data versions the page names (main())
+MARKET = {"windows": 0}   # market.history: the auction house over the add-on's hourly snapshots
+GEAR_SHARE = 1 / 3        # the gear budget's share of each level's income after training (character.json "gear_share"); the rest saves
+                          # for the mount at 40 and level 60 (user 2026-11-09: "I don't want to sit here and upgrade my gear every single level
+                          # because that costs money that I need for later levels, such as level 40 ... for my mount, or for level 60")
+PLANNED = []              # (level, copper) of the buys budget_walk fits, for the gold plan
+NOW_LV = 0                # the character's level (main)
+PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -282,7 +320,9 @@ def acquirable(it, L, start, profs):
         if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME or s.get("quest") in COMPLETED):
             continue
         lo, hi = IP.window(it, s)
-        if s["kind"] == "auction" and AUCTION_FUTURE:   # a what-if: today's listings as a typical market, buyable at their level later
+        if s["kind"] == "market":   # usually listed (market.history): from the item's level on, at its usual price
+            lo, hi = max(it.get("req") or start, start), 60
+        elif s["kind"] == "auction" and AUCTION_FUTURE:   # a what-if: today's listings as a typical market, buyable at their level later
             lo, hi = it.get("req") or start, 60
         elif s["kind"] == "auction":   # listed now: buy it now (wear it at its level), only for the next few levels (listings change hourly)
             if (it.get("req") or 0) > start + LOOKAHEAD:
@@ -382,12 +422,80 @@ def plan(cfg, snap, at, pool, profs):
     return eq, sorted(kept, key=lambda e: (e["level"], SLOT_ORDER.index(e["slot"])))
 
 
-def auction_only_price(e):
-    """The price of an upgrade only the auction house has (None when a quest, dungeon, craft or vendor has it too)."""
-    kinds = {s["kind"] for s in e["item"]["sources"]}
-    if "auction" not in kinds or kinds & {"quest", "dungeon", "craft", "vendor"}:
+CRAFT_COST = {}
+
+
+def craft_cost(spell):
+    """The materials of a craft at today's prices (unit_price), copper; None when one has no price."""
+    if spell not in CRAFT_COST:
+        reag = reagents_of(spell)
+        tot = 0.0 if reag else None   # a recipe Classic's data lacks (Forever's own): its materials are unknown, not free
+        for _, c, i in reag:
+            p = unit_price(i)
+            if p is None:
+                tot = None
+                break
+            tot += p * c
+        CRAFT_COST[spell] = tot
+    return CRAFT_COST[spell]
+
+
+def price_of(e):
+    """What an upgrade costs in gold: None when a quest or a dungeon gives it (free but for the time), else the cheapest of the auction
+    house now, its usual price there, a vendor and the materials of a craft (2026-11-09: every bought or crafted upgrade must pay for
+    itself and fit the gear budget)."""
+    srcs = e["item"]["sources"]
+    if any(x["kind"] in ("quest", "dungeon") for x in srcs):
         return None
-    return next((s.get("price") for s in e["item"]["sources"] if s["kind"] == "auction"), None)
+    cost = []
+    now = (e.get("get_at") or 0) <= NOW_LV and any(x["kind"] == "auction" for x in srcs)
+    for x in srcs:
+        if x["kind"] == "auction" and x.get("price") and now:   # bought this visit: today's listing
+            cost.append(x["price"])
+        elif x["kind"] == "market" and x.get("price") and not now:   # bought later: its usual price
+            cost.append(x["price"])
+        elif x["kind"] == "vendor" and isinstance(e["item"]["id"], int) and VENDOR.get(e["item"]["id"]):
+            cost.append(VENDOR[e["item"]["id"]])
+        elif x["kind"] == "craft" and x.get("spell") and PRICES:
+            c = craft_cost(x["spell"])
+            if c is not None:
+                cost.append(c)
+    return min(cost) if cost else None
+
+
+def budget_walk(events, cfg, at, lv):
+    """The gear budget level by level (GEAR_SHARE): today's gold above the training of the next two levels, then GEAR_SHARE of each
+    level's income after the training two levels on. Bought and crafted upgrades in the order you reach them (the most minutes per gold
+    first within a level) are paid from it; one that does not fit waits up to two levels (worn later) and is dropped after that.
+    Returns the item ids dropped; sets each paid event's "paid" (level, budget left) and PLANNED."""
+    PLANNED.clear()
+    if GOLD is None:
+        return set()
+    train, need = training_by_level(cfg["class"]), needed_spells(cfg)
+    tr = lambda L: sum(c for n, c in train.get(L, []) if n in need)
+    budget = max(0.0, GOLD - tr(lv + 1) - tr(lv + 2))
+    pending = [e for e in events if price_of(e)]
+    dropped = set()
+    for L in range(lv, LAST + 1):
+        if L > lv:
+            budget += GEAR_SHARE * max(0.0, income_per_level(L - 1, QPL) - tr(L + 2))
+        due = sorted([e for e in pending if max(e["get_at"], lv) <= L], key=lambda e: -minutes_saved(e, at) / price_of(e))
+        for e in due:
+            if price_of(e) <= budget:
+                budget -= price_of(e)
+                e["paid"] = (L, budget)
+                PLANNED.append((L, price_of(e)))
+                if L > max(e["level"], e["get_at"]):   # bought later than planned: worn from then on
+                    for x in events:
+                        if x["slot"] == e["slot"] and x.get("until") == e["level"]:
+                            x["until"] = L
+                    e["level"], e["get_at"] = L, L
+                pending.remove(e)
+            elif L >= max(e["get_at"], lv) + 2 or L + MIN_LASTS >= (e["until"] or 60):
+                dropped.add(e["item"]["id"])
+                pending.remove(e)
+    dropped |= {e["item"]["id"] for e in pending}
+    return dropped
 
 
 def best_chain(evs, at):
@@ -419,7 +527,7 @@ def best_chain(evs, at):
         m = span_minutes(items(c), items(p), evs[c]["level"], end, at)
         if gain(p, c) < UPGRADE or m < MIN_MINUTES:
             return None
-        price = auction_only_price(evs[c])   # a buy must also pay for itself (pays_for_itself), or a dearer one could push out a cheaper
+        price = price_of(evs[c])   # a buy must also pay for itself (pays_for_itself), or a dearer one could push out a cheaper
         if price and m < price / (income_per_level(evs[c]["level"], QPL) or 1) * minutes_per_level(evs[c]["level"], at):
             return None                      # one the gold test then rejected (a 2g 25s tunic over a 79s one, 2026-11-09)
         return span_minutes(items(c), base, evs[c]["level"], end, at)
@@ -439,6 +547,30 @@ def best_chain(evs, at):
         return top or (-1.0, ())
 
     pick = max([best(None, c) for c in range(n)] + [(0.0, ())], key=lambda t: t[0])[1]
+    # the upgrades passed over, each against the item the chain has on at its level, with the reason (user 2026-11-09: "if something like
+    # the headpiece ... is the best gear until level 35 ... then that's okay. I just want there to be a reason for me keeping it")
+    for c in range(n):
+        if c in pick:
+            continue
+        on = [k for k in pick if evs[k]["level"] <= evs[c]["level"]]
+        if not on:
+            continue
+        k = on[-1]
+        nxt = [x for x in pick if evs[x]["level"] > evs[c]["level"]]
+        end = evs[nxt[0]]["level"] if nxt else 60
+        g = gain(k, c)
+        m = span_minutes(items(c), items(k), evs[c]["level"], end, at)
+        price = price_of(evs[c])
+        earn = price / (income_per_level(evs[c]["level"], QPL) or 1) * minutes_per_level(evs[c]["level"], at) if price else 0
+        if g < UPGRADE:
+            why = f"only {pct(g)} faster"
+        elif m < MIN_MINUTES:
+            why = f"{pct(g)} faster, saves about {m:.0f} min before {'60' if not nxt else 'its next upgrade'}"
+        elif price and m < earn:
+            why = f"{pct(g)} faster, saves about {m:.0f} min, but its {AH.money(price)} takes about {earn:.0f} min of play to earn"
+        else:
+            why = f"{pct(g)} faster, but a later upgrade of the slot saves more without it"
+        evs[k].setdefault("passed", []).append((evs[c]["level"], evs[c]["item"]["name"], g, why))
     out = []
     for k, c in enumerate(pick):
         e, p = evs[c], (pick[k - 1] if k else None)
@@ -511,6 +643,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                   "least of its talents."]
         o += [""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
+    o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
     soon = [e for e in events if max(e["get_at"], lv) <= lv + LOOKAHEAD]
@@ -528,6 +661,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     for e in sorted(soon, key=lambda e: e["level"]):
         worn[e["slot"]] = {"name": e["item"]["name"], "stats": e["item"]["stats"], "enchant": [], "enchant_stats": {},
                            "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
+    o += judge_lines(worn, events, wl, lv, cfg)
     o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl, at, lv) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
     cl = consumable_lines(lv, wl, profs, cfg["school_share"])
     if cl:
@@ -554,7 +688,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += [""]
     # level by level: by the level you act (the earliest the quest, dungeon or recipe allows); "wear at" when it comes later
     o += ["## Level by level", "", f"Each upgrade worth {UPGRADE:.1%} faster kills or more, under the level at which you can go and get it, "
-          "with the level you can wear it when that is later. A dungeon item can drop or not: the data has no drop chances.", ""]
+          "with the level you can wear it when that is later. Dungeon drops carry Classic's drop chance and a fallback if they do not drop; "
+          "auction house items on later visits are ones the house usually lists, at their usual price.", ""]
     later = [e for e in events if max(e["get_at"], lv) > lv + LOOKAHEAD]
     for L in range(lv + LOOKAHEAD + 1, LAST + 1):
         ev = [e for e in later if max(e["get_at"], lv) == L]
@@ -629,12 +764,34 @@ def needed_spells(cfg):
     return set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
 
 
+def loot_value(item, quality, klass, sell):
+    """What one looted item brings, copper: grays and quest items their vendor price; anything else the better of the vendor and the
+    auction house after its 5% cut, at the add-on's typical price (Insights), else 80% of the cheapest listing (2026-11-09). A typical
+    price from listings rather than sales (source "l": three items in four, nearly every level-45 green) is an asking price: capped at
+    twice the vendor's, about what greens sold for where the add-on saw sales."""
+    if quality < 1 or klass == "12" or not PRICES:
+        return sell
+    t = PRICES.typical.get(item)
+    if t and t[0]:
+        v = 0.95 * t[0]
+        return max(sell, v if t[1] == "s" or not sell else min(v, 2 * sell))
+    c = PRICES.cheapest(item)
+    return max(sell, min(0.95 * 0.8 * c[0], 2 * sell) if sell else 0.95 * 0.8 * c[0]) if c else sell
+
+
 def income_per_level(L, quests_per_level):
-    """Copper a level brings (Classic data): kills x (coin + the vendor value of gray and white loot, spawn-weighted by mob level) plus
-    the quests done in a level x the average quest money at that level. Leaves out auction sales (greens, cloth, crafts)."""
+    """Copper a level brings (Classic data): kills x (coin + the loot, each item at loot_value: cloth and greens at auction prices,
+    spawn-weighted by mob level) plus the quests done in a level x the average quest money at that level. Assumes you sell what drops
+    (or use it in place of buying it)."""
     if not INCOME:
+        loot = {}
+        lp = IP.RAW / "mob_loot.csv"
+        if lp.exists():
+            for r in csv.DictReader(open(lp, encoding="utf-8")):
+                v = loot_value(int(r["item"]), int(r["quality"]), r["class"], int(r["sell"]))
+                loot[int(r["level"])] = loot.get(int(r["level"]), 0.0) + float(r["per_kill"]) * v
         for r in csv.DictReader(open(IP.RAW / "mob_income.csv", encoding="utf-8")):
-            INCOME[int(r["level"])] = float(r["coin_per_kill"]) + float(r["vendor_per_kill"])
+            INCOME[int(r["level"])] = float(r["coin_per_kill"]) + loot.get(int(r["level"]), float(r["vendor_per_kill"]))
         qm = {}
         for r in csv.DictReader(open(IP.RAW / "quests.csv", encoding="utf-8")):
             q = int(r["quest_level"] or 0)
@@ -669,23 +826,27 @@ def gold_plan(cfg, snap, at, lv):
     discount = STANDING.index(rep) >= STANDING.index(MOUNT["discount_rep"]) if rep in STANDING else False
     mount = MOUNT["riding"] + MOUNT["mount"] * (0.9 if discount else 1.0)
     rows, saved, mount_at = [], GOLD or 0, None
+    gear = {}
+    for L, c in PLANNED:
+        gear[L] = gear.get(L, 0) + c
     for L in range(lv, 60):
         inc = income_per_level(L, qpl)
         nt = sum(c for n, c in train.get(L + 1, []) if n in need)
         ot = sum(c for n, c in train.get(L + 1, []) if n not in need)
-        saved += inc - nt
+        saved += inc - nt - gear.get(L, 0)
         if L + 1 >= MOUNT["level"] and mount_at is None and saved >= mount:
             mount_at = L + 1
         rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need]))
     reserve = sum(r[2] for r in rows[:2])
     spend = None if GOLD is None else max(0, GOLD - reserve)
-    by40 = (GOLD or 0) + sum(r[1] - r[2] for r in rows if r[0] < MOUNT["level"])
+    by40 = (GOLD or 0) + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
+    at60 = saved - (mount if mount_at else 0)
     o = ["## Gold plan", "",
          f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need at the next two levels: "
          f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**.", "",
-         f"Income is an estimate from Classic's data: coin and the vendor value of gray and white loot from about {kills_per_level(lv):.0f} "
-         f"kills a level, plus your pace of {qpl:.1f} quests a level at Classic's quest money. It leaves out auction sales (greens, cloth, "
-         "crafts), so you likely earn more. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
+         f"Income is an estimate from Classic's data: coin and loot from about {kills_per_level(lv):.0f} kills a level (cloth, greens and "
+         "other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of "
+         f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
          "spells, teleports) are listed apart.", "",
          "| Level | Income (estimate) | Training you need at the next level | Optional training |", "|---|---|---|---|"]
     for L, inc, nt, ot, names in rows[:LAST - lv + 1][:14]:
@@ -693,8 +854,13 @@ def gold_plan(cfg, snap, at, lv):
               f"{AH.money(ot) if ot else '-'} |"]
     o += ["", f"Mount at {MOUNT['level']}: about **{AH.money(mount)}** (Classic prices: riding {AH.money(MOUNT['riding'])} and the mount "
           f"{AH.money(MOUNT['mount'])}{', 10% off at ' + rep + ' with ' + RACE_FACTION.get(race, '') if discount else ''}; Forever's not "
-          f"confirmed). At this income you would have about {AH.money(by40)} by {MOUNT['level']} after training"
-          + (f", enough for the mount at {mount_at}." if mount_at else ", not enough by 60 on income alone: auction sales have to make up the rest.")]
+          f"confirmed). At this income you would have about {AH.money(by40)} by {MOUNT['level']} after training and the plan's gear"
+          + (f", enough for the mount at {mount_at}." if mount_at else ", not enough by 60 on income alone: auction sales have to make up the rest."),
+          "", f"Gear budget: the gold above the next two levels' training now, then {GEAR_SHARE:.0%} of each level's income after training "
+          "(character.json \"gear_share\"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's "
+          f"buys and crafts come to {AH.money(sum(c for L, c in PLANNED if L < MOUNT['level']))} before {MOUNT['level']} and "
+          f"{AH.money(sum(c for L, c in PLANNED))} in all; you would reach 60 with about {AH.money(max(0, at60))}"
+          + (" after the mount." if mount_at else ".")]
     hist = history(cfg)
     if len(hist) >= 2:
         a, z = hist[0], hist[-1]
@@ -758,24 +924,31 @@ def line(e, at):
     rep = f", replaces {e['replaces']}" if e.get("replaces") else ""
     until = f"; best until level {e['until']}" if e.get("until") else "; best to the end of leveling"
     out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
+    if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:   # a long-held item: why nothing replaces it sooner
+        alts = sorted(e["passed"], key=lambda x: -x[2])[:3]
+        out += " Why it stays: " + "; ".join(f"{n} at {L}, {why}" for L, n, g, why in sorted(alts)) + "."
     fb = e.get("fallback")
+    miss = "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop"
     if fb and "keep" in fb:
-        return out + (f" If it does not drop, keep your {fb['keep']}." if fb["keep"] else "")
+        return out + (f" {miss}, keep your {fb['keep']}." if fb["keep"] else "")
     if fb:
         when = f"from level {fb['level']}" if fb["level"] > e["level"] else "instead"
-        out += f" If it does not drop, wear {fb['item']['name']} {when} ({pct(fb['gain'])} faster kills; {sources_text(fb['item'])})."
+        out += f" {miss}, wear {fb['item']['name']} {when} ({pct(fb['gain'])} faster kills; {sources_text(fb['item'])})."
     return out
 
 
-KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction"]
+KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction", "market"]
 
 
 def primary(e):
-    """The source to act on: the first acquirable kind in KIND_ORDER."""
+    """The source to act on: the first acquirable kind in KIND_ORDER; a craft from a recipe you do not know yields to the auction house
+    when the item is sold there (Earthen Silk Slippers, a Forever recipe nobody had found, sold at 2g 69s, 2026-11-09)."""
+    sold = any(s["kind"] in ("auction", "market") for s in e["item"]["sources"])
+    later = (e.get("get_at") or 0) > NOW_LV and any(s["kind"] == "market" for s in e["item"]["sources"])
     for k in KIND_ORDER:
         for s in e["item"]["sources"]:
-            if s["kind"] == k:
-                return s
+            if s["kind"] == k and not (k == "craft" and sold and s.get("spell") not in KNOWN) and not (k == "auction" and later):
+                return s   # bought on a later visit: the usual price, not this hour's listing
     return e["item"]["sources"][0] if e["item"]["sources"] else {"kind": "?"}
 
 
@@ -806,22 +979,18 @@ def action_sections(evs, at, L, head="###"):
         o += [""]
     if by.get("vendor"):
         o += [f"{head} Buy", ""] + [line(e, at) for e in by["vendor"]] + [""]
-    if by.get("auction"):
-        # most minutes saved per gold first; with the character's gold known, a running total says what it can afford (2026-11-09)
-        price = lambda e: next((s.get("price") for s in e["item"]["sources"] if s["kind"] == "auction"), None) or 1e12
-        evs = sorted(by["auction"], key=lambda e: -minutes_saved(e, at) / price(e))   # minutes, not percent: a 7% hat worn 33 levels beats a 4% tunic worn 14
-        o += [f"{head} Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)", ""]
-        spent = 0
-        budget = SPENDABLE if SPENDABLE is not None else GOLD
-        for e in evs:   # greedy over the gold free for gear: a buy that does not fit is skipped, a cheaper one after it can still fit
-            saves, earn = pays_for_itself(e, at, price(e))
-            verdict = (f" Saves about {saves:.0f} min of killing; earning its price takes about {earn:.0f} min of play: "
-                       + ("worth it." if saves >= earn else "not worth the gold."))
-            fits = ""
-            if saves >= earn and budget is not None and spent + price(e) <= budget:
-                spent += price(e)
-                fits = f" Fits the gold free for gear ({AH.money(budget - spent)} left after the buys marked so far)."
-            o += [line(e, at) + verdict + fits]
+    for kind, title in (("auction", "Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)"),
+                        ("market", "Look for on the Auction House (not listed this hour, usually is; usual prices)" if L <= NOW_LV + LOOKAHEAD
+                         else "Buy on the Auction House (usually listed; usual prices, look again then)")):
+        if not by.get(kind):
+            continue
+        o += [f"{head} {title}", ""]
+        for e in sorted(by[kind], key=lambda e: -minutes_saved(e, at) / (price_of(e) or 1)):
+            saves, earn = pays_for_itself(e, at, price_of(e) or 0)
+            verdict = f" Saves about {saves:.0f} min of killing; earning its price takes about {earn:.0f} min of play."
+            if e.get("paid"):
+                verdict += f" Fits your gear budget ({AH.money(e['paid'][1])} left after it)."
+            o += [line(e, at) + verdict]
         o += [""]
     return o
 
@@ -882,6 +1051,16 @@ def profession_section(profs):
          "The cheapest way up with the recipes you know, materials at today's prices (auction house or vendor, the cheaper). Crafts are "
          "expected counts: a yellow or green recipe does not always give a point. Forever lets you learn recipes earlier than Classic did, "
          "so check your trainer whenever a profession stalls.", ""]
+    crafts = [e for e in PLAN_EVENTS if primary(e)["kind"] == "craft"]
+    if crafts:   # what the plan's crafts ask of the professions (2026-11-09, the "work toward" list)
+        o += ["Crafts in your plan:", ""]
+        for e in sorted(crafts, key=lambda e: e["level"]):
+            s = primary(e)
+            have = (profs.get(s["profession"]) or (0,))[0]
+            how = ("you know the recipe" if s.get("spell") in KNOWN else
+                   f"learn it ({s.get('learn') or 'source unknown'}); Classic asked {s['profession']} {s.get('skill') or '?'}, you have {have}")
+            o += [f"- {e['item']['name']} ({e['slot']}, level {e['level']}): {how}."]
+        o += [""]
     for prof in ("Tailoring", "Enchanting", "Cooking"):
         if prof not in profs:
             continue
@@ -992,6 +1171,64 @@ def consumable_lines(level, wl, profs, school_share):
              "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
 
 
+def plan_state(events, lv, fetched):
+    return {"time": fetched, "level": lv, "gold": GOLD,
+            "plan": sorted([e["slot"], e["level"], e["item"]["name"]] for e in events)}
+
+
+def change_lines(d, events, lv):
+    """What moved since the last refresh (state.json, written by refreshes only): upgrades new to the plan, gone from it, or at another
+    level (2026-11-09, user: "have you look every even level or even every level and see what upgrades I can make")."""
+    p = d / "state.json"
+    if not p.exists():
+        return []
+    old = json.loads(p.read_text(encoding="utf-8"))
+    was = {(s, n): L for s, L, n in old["plan"]}
+    now = {(e["slot"], e["item"]["name"]): e["level"] for e in events}
+    new = [f"{n} ({s}, level {L})" for (s, n), L in sorted(now.items(), key=lambda kv: kv[1]) if (s, n) not in was]
+    gone = [f"{n} ({s})" for (s, n) in was if (s, n) not in now]
+    moved = [f"{n} ({s}) level {was[(s, n)]} to {L}" for (s, n), L in now.items() if (s, n) in was and was[(s, n)] != L]
+    o = [f"## Since your last refresh ({old['time']}, level {old['level']})", ""]
+    if old.get("gold") is not None and GOLD is not None:
+        o += [f"- Gold: {AH.money(old['gold'])} then, {AH.money(GOLD)} now."]
+    o += [f"- New in the plan: {', '.join(new)}." if new else "- Nothing new in the plan."]
+    if gone:
+        o += [f"- Left the plan (worn, replaced by a better choice, or no longer listed): {', '.join(gone)}."]
+    if moved:
+        o += [f"- Moved: {', '.join(moved)}."]
+    return o + [""]
+
+
+def judge_lines(worn, events, wl, lv, cfg):
+    """A quick test for a random drop or an auction find (2026-11-09, user: "random drops, whatever is available"): per slot what the
+    item you will wear adds in spell power equivalents (each stat at this level's value over spell power's) and what a find must add on
+    top to save MIN_MINUTES before the plan's next upgrade of the slot (and 0.5% faster kills)."""
+    sp = wl["w"].get("spell_power") or 0
+    if sp <= 0:
+        return []
+    rate = {k: wl["w"].get(k, 0.0) / sp for k in ("intellect", "spirit", "stamina", "mp5", "armor")}
+    sch = ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items())
+    o = ["### Judging a drop or an auction find", "",
+         f"Count a piece's stats in spell power: 1 intellect = {rate['intellect']:.2f}, 1 spirit = {rate['spirit']:.2f}, 1 stamina = "
+         f"{rate['stamina']:.2f}, 1 mana per 5 sec = {rate['mp5']:.2f}, 100 armor = {100 * rate['armor']:.2f}; school damage counts by your "
+         f"build's share ({sch}: +10 frost damage counts {10 * cfg['school_share'].get('frost', 0):.1f}), \"spell damage and healing\" in "
+         "full. A find is worth wearing when it reaches the number below: enough to save "
+         f"{MIN_MINUTES:.0f} minutes before the plan's next upgrade of the slot.", "",
+         "| Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |", "|---|---|---|---|---|"]
+    for slot in SLOT_ORDER:   # against the item the plan has you in over the next levels (the planned one when it comes within LOOKAHEAD)
+        it = worn.get(slot)
+        since = max(lv, (it or {}).get("planned") or lv)
+        nxt = min((e["level"] for e in events if e["slot"] == slot and e["level"] > since), default=60)
+        kills = sum(kills_per_level(L) for L in range(since, max(nxt, since + 1)))
+        need = max(UPGRADE * wl["time"], MIN_MINUTES * 60 / max(kills, 1)) / sp
+        have = value((it or {}).get("stats"), wl) / sp
+        name = (it or {}).get("name") or "empty"
+        if (it or {}).get("planned"):
+            name += f" (planned, level {it['planned']})"
+        o += [f"| {slot} | {name} | {have:.0f} | {have + need:.0f} | {nxt if nxt < 60 else '-'} |"]
+    return o + [""]
+
+
 def enchant_lines(worn, ench, profs, wl, at=None, lv=None):
     """Per enchantable slot: the best enchant at the character's Enchanting skill for the item it will wear, and the next one a higher
     skill opens; only enchants worth 0.1% faster kills or more."""
@@ -1021,8 +1258,11 @@ def enchant_lines(worn, ench, profs, wl, at=None, lv=None):
             txt.append(f"{now['name']} (Enchanting {now['skill']}, {now['learn']}), {pct((nv - have) / wl['time'])} faster kills"
                        + (f" over its {', '.join(it['enchant'])}" if it.get("enchant") else "") + ". Materials: "
                        + mats_text(now["reagents"]) + ".")
-        nxt = sorted([e for e in opts if e["skill"] > skill and (value(e["stats"], wl) - max(have, nv)) / wl["time"] >= 0.001], key=lambda e: e["skill"])[:1]
+        nxt = sorted([e for e in opts if skill < e["skill"] <= skill + 30 and (value(e["stats"], wl) - max(have, nv)) / wl["time"] >= 0.001], key=lambda e: e["skill"])[:1]
         for e in nxt:
+            if at and lv and minutes_saved({"gain": (value(e["stats"], wl) - have) / wl["time"], "level": max(lv, it.get("since") or lv),
+                                            "until": it.get("until")}, at) < MIN_MINUTES:
+                continue   # the same 20-minute bar as the enchant you can make now
             txt.append(f"At Enchanting {e['skill']}: {e['name']} ({e['learn']}), {pct((value(e['stats'], wl) - have) / wl['time'])} faster kills.")
         if txt:
             out.append(f"- {who}: " + " ".join(txt))
@@ -1057,6 +1297,8 @@ def main():
     if not a.no_refresh:   # the history the measured income comes from: one line per refresh
         with open(d / "history.jsonl", "a", encoding="utf-8") as f:
             f.write(json.dumps({"time": fetched, "level": lv0, "xp": snap["profile"].get("experience", 0), "gold": GOLD}) + "\n")
+    global NOW_LV
+    NOW_LV = lv0
     MIN_LASTS = int(cfg.get("min_levels", MIN_LASTS))
     MIN_MINUTES = float(cfg.get("min_minutes", MIN_MINUTES))
     ah = cfg.get("ah") or {}
@@ -1076,16 +1318,39 @@ def main():
         for p in pool:   # plain gear listed on the auction house now (random-suffix versions: suffix_versions above)
             if PRICES.listed(p["id"]):
                 p["sources"].append({"kind": "auction", "price": PRICES.buy(p["id"])})
+        # gear the auction house usually lists although nobody does this hour (the add-on's hourly history, 2026-11-09)
+        MARKET.update(MK.history(ah.get("duckdb")))
+        byid = {p["id"]: p for p in pool}
+        for m in IP.market_versions(cfg["class"], cfg["faction"], cfg["school_share"], MARKET):
+            if m["id"] in byid:
+                byid[m["id"]]["sources"] += m["sources"]
+            else:
+                pool.append(m)
+                byid[m["id"]] = m
     COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])
     RECIPES[:] = PF.known_recipes(snap["profile"]["name"], ah.get("duckdb"), d / "recipes.json")
     KNOWN.update(r["spell"] for r in RECIPES)
     INLOG.update(q["id"] for q in (snap.get("quests") or {}).get("in_progress") or [])
-    eq, events = plan(cfg, snap, at, pool, profs)
-    # a dungeon drop may not drop: the same plan without dungeon drops names what to wear instead (2026-11-09)
-    nod = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
+    global GEAR_SHARE
+    GEAR_SHARE = float(cfg.get("gear_share", GEAR_SHARE))
+    # the plan within the gear budget: a buy or craft the budget cannot pay leaves the pool and the plan is made again (another item, or
+    # a cheaper one, takes the slot), until every bought upgrade fits
+    out = set()
+    for _ in range(8):
+        eq, events = plan(cfg, snap, at, [p for p in pool if p["id"] not in out], profs)
+        drop = budget_walk(events, cfg, at, snap["profile"]["level"])
+        if not drop:
+            break
+        out |= drop
+    pool = [p for p in pool if p["id"] not in out]
+    # a dungeon drop may not drop and a craft from a recipe you do not know yet may not happen: the same plan without either names what
+    # to wear instead (2026-11-09)
+    unsure = lambda s: s["kind"] == "dungeon" or (s["kind"] == "craft" and s.get("spell") not in KNOWN)
+    nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in pool]
     _, alt = plan(cfg, snap, at, [p for p in nod if p["sources"]], profs)
     for e in events:
-        if e["item"]["sources"] and all(s["kind"] == "dungeon" for s in e["item"]["sources"]):
+        if e["item"]["sources"] and all(unsure(s) for s in e["item"]["sources"]):
+            e["unsure"] = "drop" if primary(e)["kind"] == "dungeon" else "craft"
             have = {(x or {}).get("id") for x in e["prev"]} - {None}
             cover = [x for x in alt if x["slot"] == e["slot"] and x["level"] < (e["until"] or 60) and x["item"].get("id") not in have]
             before = [x for x in cover if x["level"] <= e["level"]]
@@ -1097,7 +1362,10 @@ def main():
                 fb = dict(fb, gain=g) if g >= UPGRADE else None
             e["fallback"] = fb or {"keep": (e["prev"][0] or {}).get("name")}
     ench = enchants(cfg["school_share"])
+    PLAN_EVENTS[:] = events
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)
+    if not a.no_refresh:   # the plan this refresh made, for the next refresh's change list
+        (d / "state.json").write_text(json.dumps(plan_state(events, lv0, fetched), indent=1) + "\n", encoding="utf-8")
     print(f"wrote {d / 'README.md'}: {len(events)} upgrades to 60")
 
 
