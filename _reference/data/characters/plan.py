@@ -574,11 +574,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           "- Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their "
           "drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession "
           "rank allows the skill at that level.",
-          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of the time per kill or more over what you would be wearing then, and you "
-          f"it saves at least {MIN_MINUTES} minutes of killing before the next upgrade of the slot replaces it, worn at least {MIN_LASTS} levels "
+          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of the time per kill or more over what you would be wearing then, and "
+          f"it saves at least {MIN_MINUTES:.0f} minutes of killing before the next upgrade of the slot replaces it, worn at least {MIN_LASTS} levels "
           "(level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still "
           "be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves "
-          f"{MIN_MINUTES} minutes before you replace the item.",
+          f"{MIN_MINUTES:.0f} minutes before you replace the item.",
           f"- Data: the simulator's WoW: Forever item database at {DATAVER['sim']} ({DATAVER['items']} items; it grows as the game is played, "
           "and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's "
           f"API for the character (fetched {fetched}) and for Forever's own quests (asked again weekly), stat values measured {DATAVER['weights']} "
