@@ -97,6 +97,8 @@ class Healer(E.BaseHealer):
         super().__init__(allocation, game)
         if "Wild Growth" not in self.book:
             self.ROLES = dict(self.ROLES, group="Tranquility")
+        else:   # both group heals (2026-11-09): Tranquility when it is ready, Wild Growth on its 6-second cooldown otherwise
+            self.ROLES = dict(self.ROLES, big_group="Tranquility")
         cut = tranquility_cut(self.rank("Improved Tranquility"))
         if cut:
             for h in self.book.get("Tranquility", []):

@@ -394,10 +394,16 @@ class BaseHealer:
                 return self.choice(R["fast"], tank.deficit, tank, sim)
         # raid members
         hurt_raid = [x for x in raid if x.hp > 0 and x.frac < T.RAID_HEAL_AT]
-        if len(hurt_raid) >= T.GROUP_HEAL_MIN and R.get("group") in self.book:
-            g = self.group_spell(sim, hurt_raid)
-            if g:
-                return g
+        if len(hurt_raid) >= T.GROUP_HEAL_MIN:
+            # 2026-11-09 (user: "is Wild Growth not taken because ... Wild Growth is meant to be used for parties and raids?"): a healer
+            # with two group heals casts the one on a long cooldown first when it is ready ("big_group": the druid's Tranquility next to
+            # Wild Growth). Before, the druid's one group slot held Wild Growth or Tranquility, so taking Wild Growth meant never
+            # casting Tranquility, and the lab measured Wild Growth at -2% to -4%.
+            for role in ("big_group", "group"):
+                if R.get(role) in self.book:
+                    g = self.group_spell(sim, hurt_raid, role)
+                    if g:
+                        return g
         if hurt_raid:
             x = hurt_raid[0]
             if hot and R["hot"] not in x.hots and x.deficit > 0.5 * self.expected(hot) and self.hot_ok(sim, x):
@@ -424,8 +430,8 @@ class BaseHealer:
     def instant_ok(self, sim, spell, target):
         return True
 
-    def group_spell(self, sim, hurt):
-        name = self.ROLES.get("group")
+    def group_spell(self, sim, hurt, role="group"):
+        name = self.ROLES.get(role)
         s = self.book[name][-1]
         if s.cooldown and not self.cooldown_ready(sim, name, s.cooldown):
             return None

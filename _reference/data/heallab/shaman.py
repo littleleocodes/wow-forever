@@ -160,11 +160,11 @@ class Healer(E.BaseHealer):
             return 1.0 + RIPTIDE_CHAIN_HEAL
         return 1.0
 
-    def group_spell(self, sim, hurt):
+    def group_spell(self, sim, hurt, role="group"):
         """Chain Heal starts on a target with your Riptide when there is one worth it: the tank (the lab keeps Riptide there) when it misses
         at least as much as the most hurt raid member, else the most hurt raid member with Riptide, else the most hurt (the generic choice).
         The jumps go to the most hurt others either way (engine.Sim.land)."""
-        g = super().group_spell(sim, hurt)
+        g = super().group_spell(sim, hurt, role)
         if not g:
             return g
         tank = sim.tank

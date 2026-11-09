@@ -11,7 +11,10 @@ filled with a talent nobody presses. For the spec page's pick (level_guides.pick
    the levels from that point on (20-60 by fives, weighted level / 10 as every leveling race) on seed 3; the best that gains --bar
    (0.3%, fl_levels' bar) is checked on seed 4 and kept when it holds there, then the pass starts over;
 4. else a tie-break (the best of the top moves that is faster on both seeds), else a "no loss" move (2026-11-09: one that costs at most
-   NO_LOSS, 0.1%, on each seed), always into a talent that is not itself a zero point: a point that does nothing never stays.
+   NO_LOSS, 0.1%, on each seed), always into a talent that is not itself a zero point: a point that does nothing never stays;
+5. then the tier-gate points (2026-11-09): a point the build cannot drop is moved to any talent legal along the order when that is
+   faster on both seeds (`--no-gates` skips it). A gate that does nothing by mechanics (Redoubt's block without a shield) and costs
+   nothing to move is a judgment call the pass leaves to the reader: its swap measures 0.00%.
 
     python _reference/data/fightlab/fl_filler_pass.py <class> --spec "<Spec>" [--fights 1500] [--jobs 10] [--write]
 
@@ -23,6 +26,7 @@ import datetime
 import json
 import multiprocessing
 import pathlib
+import subprocess
 import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -65,6 +69,7 @@ def main():
     ap.add_argument("--bar", type=float, default=0.003)
     ap.add_argument("--max-moves", type=int, default=6)
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--no-gates", dest="gates", action="store_false", help="skip step 5, the tier-gate points")
     a = ap.parse_args()
     cls = a.cls
     b, order, prov, rot = LG.pick(cls, a.spec)
@@ -156,10 +161,64 @@ def main():
             print(f"  {why} {n} (level {10 + i}) -> {d}: {w0:.2f} -> {w1:.2f} s; seed 4 {g2:+.2%}", flush=True)
             rec["moves"].append({"from": n, "to": d, "level": 10 + i, "seed3": round(w1 / w0 - 1, 4), "seed4": round(g2, 4), "why": why})
             pts = new
+        # 5 (2026-11-09): tier-gate points. A point the build cannot drop (it holds a deeper talent's tier open) never reads as a zero
+        # point above, so a gate filled with a talent that does little stays unmeasured: the Prot-Ret leveling build's Toughness, 2 of
+        # the 15 Protection points Swift Judgement needs, was 0.15% slower on both seeds than Improved Hammer of Justice. Each such
+        # point (its last rank) moved to any talent legal along the order, raced as in step 3, kept when faster on both seeds (the
+        # tie-break rule; no "no loss" move here: a gate point's own value is unknown).
+        for _ in range(a.max_moves if a.gates else 0):
+            base = per_level(pool, cls, rot, space, [pts], LEVELS, a.fights, 3)[0]
+            w0 = FL.weighted_at(base, LEVELS)
+            left = {m["from"] for m in rec["moves"]}
+            filled = {m["to"] for m in rec["moves"]}
+            gates = []
+            for n in sorted(flat_of(pts)):
+                i = max(k for k, (_, x) in enumerate(pts) if x == n)
+                if n not in filled and not FL.legal_order(space, pts[:i] + pts[i + 1:], total - 1):
+                    gates.append((n, i))
+            cand = []
+            for n, i in gates:
+                for tname in space.tree_names:
+                    for d in space.by_tree[tname]:
+                        if d == n or d in left:
+                            continue
+                        new = pts[:i] + [(tname, d)] + pts[i + 1:]
+                        if FL.legal_order(space, new, total):
+                            cand.append((n, d, i, new))
+            print(f"  gates: {', '.join(n for n, _ in gates) or 'none'}; {len(cand)} legal moves", flush=True)
+            if not cand:
+                break
+            scored = []
+            for i in sorted({c[2] for c in cand}):
+                group = [c for c in cand if c[2] == i]
+                lv = [L for L in LEVELS if L >= 10 + i] or [60]
+                for (n, d, _, new), res in zip(group, per_level(pool, cls, rot, space, [c[3] for c in group], lv, a.fights, 3)):
+                    scored.append((FL.weighted_at({**base, **res}, LEVELS), n, d, i, new))
+            scored.sort()
+            best = None
+            for w1, n, d, i, new in [s for s in scored if s[0] < w0 * (1 - 0.0005)][:4]:
+                b2, n2 = per_level(pool, cls, rot, space, [pts, new], LEVELS, a.fights, 4)
+                g2 = FL.weighted_at(n2, LEVELS) / FL.weighted_at(b2, LEVELS) - 1
+                if g2 < -0.0005 and (best is None or (w1 / w0 - 1) + g2 < (best[0] / w0 - 1) + best[5]):
+                    best = (w1, n, d, i, new, g2)
+            if not best:
+                print(f"  gates: best move {scored[0][1]} -> {scored[0][2]}: {w0:.2f} -> {scored[0][0]:.2f} s, not faster on both seeds", flush=True)
+                break
+            w1, n, d, i, new, g2 = best
+            print(f"  gate {n} (level {10 + i}) -> {d}: {w0:.2f} -> {w1:.2f} s; seed 4 {g2:+.2%}", flush=True)
+            rec["moves"].append({"from": n, "to": d, "level": 10 + i, "seed3": round(w1 / w0 - 1, 4), "seed4": round(g2, 4), "why": "gate"})
+            pts = new
     OUT.mkdir(exist_ok=True)
     slug = a.spec.lower().replace("/", "-").replace(" ", "-")
     rec["final_order"] = FL.compress(pts)
-    (OUT / f"{cls}-{slug}.json").write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    out = OUT / f"{cls}-{slug}.json"
+    prev = json.load(open(out, encoding="utf-8")) if out.exists() else None
+    # 2026-11-09: a dry run after a written pass must not replace its record: open_builds.py re-applies the pass from that record's
+    # "written" and "start_order" (a dry run starts from the moved build and has neither), so the dry run gets a file of its own
+    if not a.write and out.exists() and json.load(open(out, encoding="utf-8")).get("written"):
+        out = OUT / f"{cls}-{slug}.dry.json"
+    out.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"record {out.name}")
     print(json.dumps(rec["moves"], indent=1))
     if a.write and rec["moves"]:
         path = ROOT / cls / "research/talents/forever/proposed-builds.json"
@@ -170,12 +229,19 @@ def main():
         text = "; ".join(f"{m['from']} to {m['to']} at {m['level']} ({m['why']}: {m['seed3']:+.1%} seed 3, {m['seed4']:+.1%} seed 4, level-weighted time per kill)"
                          for m in rec["moves"])
         bb.setdefault("notes", []).insert(0, f"{rec['date']}: leveling filler pass (fightlab/fl_filler_pass.py, {a.fights} fights a level): points that "
-                                             f"measured nothing moved: {text}.")
+                                             f"measured nothing, or held a tier open, moved: {text}.")
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+        subprocess.run([sys.executable, str(ROOT / "_reference/data/fmt_json.py"), str(path)], check=True)   # talent pairs on one line
         print(f"wrote {path}")
         # open_builds.py rewrites an -open-leveling build from its search record on every run: it re-applies a written pass whose
         # start_order is still the record's order (2026-11-09), from these two fields
         rec["written"] = {"allocation": bb["allocation"], "order": bb["order"], "note": bb["notes"][0]}
+        # a second write on a build that still carries the previous written pass (2026-11-09): chain onto that record, so its
+        # start_order stays the search record's order open_builds.py compares, and its moves and note stay with this one
+        if prev and prev.get("written") and prev["written"].get("order") == rec["start_order"]:
+            rec["start_order"] = prev.get("start_order", rec["start_order"])
+            rec["moves"] = prev.get("moves", []) + rec["moves"]
+            rec["written"]["note"] += " Earlier: " + prev["written"]["note"]
         (OUT / f"{cls}-{slug}.json").write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 

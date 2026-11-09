@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered Druid effects (Forever). Tags: cat = Cat Form sources (white/Shred/finishers), tank/bear = Bear Form threat sources, finisher/builder = combo-point abilities, hot/direct = heal parts, form:cat/form:bear for Heart of the Wild stats. mana_share tag shapeshift = mana spent on form changes.",
   "Genesis": {
-    "note": "+1%/rank periodic damage and healing (Moonfire/Rip/Rake DoTs, Rejuvenation/Regrowth HoTs). Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.27 to match (0.6%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "+1%/rank periodic damage and healing (Moonfire/Rip/Rake DoTs, Rejuvenation/Regrowth HoTs). Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.27 to match (0.6%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 3.6% healing capacity in the lab (scorer said 1.6% on the same scale); heal values scaled x1.84 to match (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -112,20 +112,6 @@
         "specs": ["feral-bear-tank"]
       },
       {
-        "channel": "dmg",
-        "scope": ["dot"],
-        "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["hot"],
-        "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
         "channel": "heal",
         "scope": ["hot"],
         "per_rank": 0.025066,
@@ -172,6 +158,20 @@
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "modes": ["raid"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.037083, 0.074534, 0.112355, 0.150545, 0.189103],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -414,7 +414,7 @@
     ]
   },
   "Nature's Splendor": {
-    "note": "+3s Moonfire/Rejuvenation, +6s Regrowth, +2s Insect Swarm: fewer refreshes -> ~+4% HoT throughput, +10% Moonfire, some mana. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
+    "note": "+3s Moonfire/Rejuvenation, +6s Regrowth, +2s Insect Swarm: fewer refreshes -> ~+4% HoT throughput, +10% Moonfire, some mana. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 6.8% healing capacity in the lab (scorer said 1.0% on the same scale); heal values scaled x5.23 to match (7.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -584,27 +584,6 @@
       {
         "channel": "heal",
         "scope": ["ability:Rejuvenation", "ability:Regrowth"],
-        "values": [0.04],
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Moonfire"],
-        "values": [0.1],
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "values": [0.02],
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
         "values": [0.027463],
         "modes": ["raid"],
         "specs": ["balance-dps"]
@@ -643,6 +622,27 @@
         "values": [0.0],
         "modes": ["raid"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.209172],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.104586],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -2042,7 +2042,7 @@
     ]
   },
   "Swiftmend": {
-    "note": "Instant heal every 15s worth a full Rejuvenation/Regrowth HoT (no longer consumes it): ~+20% throughput, mana-cheap. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Healer lab calibration (2026-09-30, resto-heal): removing it costs 0.6% healing capacity in the lab (scorer said 0.4% on the same scale); already within tolerance, heal effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "Instant heal every 15s worth a full Rejuvenation/Regrowth HoT (no longer consumes it): ~+20% throughput, mana-cheap. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 2.3% healing capacity in the lab (scorer said 0.4% on the same scale); heal values scaled x5.44 to match (3.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -2192,14 +2192,14 @@
       {
         "channel": "heal",
         "scope": ["heal"],
-        "values": [0.010371],
+        "values": [0.056454],
         "modes": ["heal"],
         "specs": ["resto-heal"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.002593],
+        "values": [0.014115],
         "modes": ["heal"],
         "specs": ["resto-heal"]
       }
@@ -2216,7 +2216,7 @@
     ]
   },
   "Nature's Swiftness": {
-    "note": "Instant Healing Touch (or Starfire) every 3 min. Healer lab calibration (2026-09-30, resto-heal): removing it costs 1.4% healing capacity in the lab (scorer said 1.1% on the same scale); already within tolerance, heal effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "Instant Healing Touch (or Starfire) every 3 min. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 2.1% healing capacity in the lab (scorer said 1.0% on the same scale); heal values scaled x2.83 to match (2.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -2259,21 +2259,21 @@
       {
         "channel": "heal",
         "scope": ["heal"],
-        "values": [0.015],
+        "values": [0.042494],
         "modes": ["heal"],
         "specs": ["resto-heal"]
       },
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "values": [0.005],
+        "values": [0.014165],
         "modes": ["heal"],
         "specs": ["resto-heal"]
       }
     ]
   },
   "Wild Growth": {
-    "note": "Party HoT every 6s: ~+15% raid healing plus group coverage. Healer lab calibration (2026-09-30, resto-heal): removing it costs 0.0% healing capacity in the lab (scorer said 0.8% on the same scale); heal values scaled x0.00 to match (0.7%). Other modes unchanged.",
+    "note": "Party HoT every 6s: ~+15% raid healing plus group coverage. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs -1.9% healing capacity in the lab (scorer said 0.7% on the same scale); heal values scaled x0.00 to match (0.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -2398,7 +2398,7 @@
     ]
   },
   "Heart of the Wild": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 3.1% healing capacity in the lab (scorer said 4.5% on the same scale); heal values scaled x0.51 to match (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2527,30 +2527,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.073188, 0.146377, 0.219565, 0.292753, 0.365941],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:stamina", "form:bear"],
-        "values": [0.146377, 0.292753, 0.439128, 0.585505, 0.731882],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength", "form:cat"],
-        "values": [0.073188, 0.146377, 0.219565, 0.292753, 0.365941],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["tank"],
@@ -2667,6 +2643,30 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.037412, 0.074824, 0.112235, 0.149647, 0.187059],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.074824, 0.149647, 0.22447, 0.299293, 0.374117],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.037412, 0.074824, 0.112235, 0.149647, 0.187059],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -2791,7 +2791,7 @@
     ]
   },
   "Nature's Majesty": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 5.4% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [feral-bear-tank] (2026-10-26, wowsims/forever 30f67f5d2, feral-bear-tank): removing it costs 5.4% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.4%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 2.1% healing capacity in the lab (scorer said 1.1% on the same scale); already within tolerance, heal effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2823,14 +2823,6 @@
         "values": [0.02, 0.04],
         "source": "parsed",
         "modes": ["leveling-aoe"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee", "type:spell"],
-        "values": [0.06, 0.12],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
       },
       {
         "channel": "crit",
@@ -2871,6 +2863,14 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.06, 0.12],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -3038,7 +3038,7 @@
     ]
   },
   "Moonglow": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 10.2% time per kill in the simulator (scorer said 7.6% on the same scale); leveling-st/solo-60 values scaled x1.58 to match (10.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 24.2% DPS in the simulator (scorer said 21.8% on the same scale); already within tolerance, raid effects split off unchanged (24.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 10.2% time per kill in the simulator (scorer said 7.6% on the same scale); leveling-st/solo-60 values scaled x1.58 to match (10.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 24.2% DPS in the simulator (scorer said 21.8% on the same scale); already within tolerance, raid effects split off unchanged (24.7%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 0.0% healing capacity in the lab (scorer said 26.9% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -3091,14 +3091,6 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell"],
-        "values": [0.402662, 0.855657, 1.25832],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["type:spell"],
         "values": [0.460752, 0.9791, 1.439853],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -3119,6 +3111,14 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -3365,7 +3365,7 @@
     ]
   },
   "Reflection": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.9% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 8.9% DPS in the simulator (scorer said 7.8% on the same scale); already within tolerance, raid effects split off unchanged (7.6%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.4% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [feral-cat-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [balance-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.9% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged. Raid sim calibration [balance-dps] (2026-10-26, wowsims/forever 30f67f5d2, balance-dps, training dummy): removing it costs 8.9% DPS in the simulator (scorer said 7.8% on the same scale); already within tolerance, raid effects split off unchanged (7.6%). Other modes unchanged. Raid sim calibration [feral-cat-dps] (2026-10-26, wowsims/forever 30f67f5d2, feral-cat-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.4% on the same scale); mana values moved to the mana limit's unit (x0.29), raid values otherwise unchanged (noise) (0.7%). Other modes unchanged. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 17.3% healing capacity in the lab (scorer said 12.8% on the same scale); heal values scaled x1.00, the cap on effect size stops short of the target (18.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -3441,14 +3441,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.51, 0.99, 1.5],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -3477,6 +3469,14 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
       }
     ]
   },
@@ -3516,7 +3516,7 @@
     ]
   },
   "Gift of Nature": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, resto-heal): removing it costs 7.2% healing capacity in the lab (scorer said 5.5% on the same scale); heal values scaled x1.37 to match (7.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 6.9% healing capacity in the lab (scorer said 7.4% on the same scale); heal values scaled x0.65 to match (7.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -3536,7 +3536,7 @@
       {
         "channel": "heal",
         "scope": ["type:spell", "heal"],
-        "values": [0.049252, 0.098504, 0.147756, 0.197009, 0.246261],
+        "values": [0.031801, 0.063602, 0.095403, 0.127205, 0.159006],
         "source": "parsed",
         "modes": ["heal"],
         "specs": ["resto-heal"]
@@ -3544,7 +3544,7 @@
     ]
   },
   "Improved Regrowth": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, resto-heal): removing it costs 0.5% healing capacity in the lab (scorer said 0.7% on the same scale); already within tolerance, heal effects split off unchanged (0.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 1.4% healing capacity in the lab (scorer said 0.3% on the same scale); heal values scaled x1.51, the cap on effect size stops short of the target (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -3564,7 +3564,7 @@
       {
         "channel": "crit",
         "scope": ["ability:Regrowth"],
-        "values": [0.066356, 0.132712, 0.199067, 0.265423, 0.331779],
+        "values": [0.1, 0.200001, 0.299999, 0.4, 0.5],
         "source": "parsed",
         "modes": ["heal"],
         "specs": ["resto-heal"]
@@ -3572,7 +3572,7 @@
     ]
   },
   "Improved Rejuvenation": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, resto-heal): removing it costs 2.1% healing capacity in the lab (scorer said 2.0% on the same scale); already within tolerance, heal effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 3.1% healing capacity in the lab (scorer said 5.1% on the same scale); heal values scaled x0.48 to match (4.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -3592,7 +3592,7 @@
       {
         "channel": "heal",
         "scope": ["ability:Rejuvenation"],
-        "values": [0.178356, 0.356712, 0.535068],
+        "values": [0.085864, 0.171729, 0.257593],
         "source": "parsed",
         "modes": ["heal"],
         "specs": ["resto-heal"]
@@ -3600,7 +3600,7 @@
     ]
   },
   "Living Spirit": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, resto-heal): removing it costs 6.1% healing capacity in the lab (scorer said 5.1% on the same scale); heal values scaled x1.27 to match (6.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 4.8% healing capacity in the lab (scorer said 5.9% on the same scale); heal values scaled x0.61 to match (4.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -3620,7 +3620,7 @@
       {
         "channel": "stat",
         "scope": ["stat:spirit"],
-        "values": [0.219143, 0.438287, 0.657428],
+        "values": [0.133531, 0.267062, 0.400592],
         "source": "parsed",
         "modes": ["heal"],
         "specs": ["resto-heal"]
@@ -3628,7 +3628,7 @@
     ]
   },
   "Tranquil Spirit": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, resto-heal): removing it costs 9.7% healing capacity in the lab (scorer said 6.1% on the same scale); heal values scaled x1.58 to match (9.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [resto-heal] (2026-11-09, resto-heal): removing it costs 5.1% healing capacity in the lab (scorer said 9.0% on the same scale); heal values scaled x0.44 to match (5.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -3648,8 +3648,21 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Healing Touch", "ability:Tranquility"],
-        "values": [0.279416, 0.558831, 0.838247, 1.117663, 1.39708],
+        "values": [0.124149, 0.248297, 0.372446, 0.496595, 0.620745],
         "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Bloom": {
+    "note": "2026-11-09 template (the tooltip parses to no effect): a Rejuvenation or Regrowth that runs its full duration heals its target for 100% of your Spirit, about a tenth more healing from those two spells on a raid healer's Spirit. The healer calibration scales it to the lab's removal value (+3.5% capacity on restoration-ml-heal, 2026-11-09).",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.1],
+        "source": "template",
         "modes": ["heal"],
         "specs": ["resto-heal"]
       }

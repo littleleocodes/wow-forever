@@ -23,25 +23,25 @@ Capacity lost when the talent is removed (relative to the build without it); EV 
 
 | Talent | Ranks | Lab | Scorer |
 |---|---|---|---|
-| Meditation | 3 | +24.1% | +22.1% |
-| Improved Healing | 3 | +9.1% | +7.4% |
-| Penance | 1 | +7.1% | +3.5% |
-| Litany of Light | 2 | +7.1% | +1.1% |
-| Spiritual Healing | 3 | +4.3% | +5.4% |
-| Inner Focus | 1 | +2.7% | +3.1% |
-| Inspiration | 3 | +1.9% | +2.0% |
-| Holy Specialization | 5 | +1.2% | +1.8% |
-| Spiritual Guidance | 4 | +1.1% | +2.6% |
-| Soul Warding | 1 | +0.9% | +0.5% |
-| Mental Strength | 5 | +0.8% | +3.9% |
-| Improved Power Word: Shield | 3 | +0.6% | +0.2% |
+| Meditation | 3 | +24.1% | +21.0% |
+| Improved Healing | 3 | +9.1% | +9.2% |
+| Penance | 1 | +7.1% | +7.3% |
+| Litany of Light | 2 | +7.1% | +7.7% |
+| Spiritual Healing | 3 | +4.3% | +5.1% |
+| Inner Focus | 1 | +2.7% | +2.8% |
+| Inspiration | 3 | +1.9% | +1.9% |
+| Holy Specialization | 5 | +1.2% | +1.7% |
+| Spiritual Guidance | 4 | +1.1% | +2.5% |
+| Soul Warding | 1 | +0.9% | +0.1% |
+| Mental Strength | 5 | +0.8% | +1.4% |
+| Improved Power Word: Shield | 3 | +0.6% | +0.0% |
 | Twin Disciplines | 5 | +0.6% | +0.1% |
 | Holy Binding * | 1 | +0.0% | +0.0% |
-| Holy Nova * | 1 | +0.0% | +0.3% |
+| Holy Nova * | 1 | +0.0% | +0.2% |
 | Silent Resolve * | 3 | +0.0% | +0.3% |
-| Twilight Focus * | 3 | +0.0% | +1.0% |
-| Improved Renew | 3 | -0.2% | +0.1% |
-| Divine Fury | 1 | -0.3% | +0.0% |
+| Twilight Focus * | 3 | +0.0% | +0.9% |
+| Improved Renew | 3 | -0.2% | +0.2% |
+| Divine Fury | 1 | -0.3% | +0.2% |
 
 ## Mechanics simulated
 

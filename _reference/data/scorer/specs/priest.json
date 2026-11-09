@@ -2,11 +2,11 @@
   "_doc": "Priest spec models. Healing model: sources are heals (tag heal + type:spell + school:holy); 'direct' = direct heals that can crit, 'hot' = Renew, 'instant' = instant casts (Mental Agility/Twin Disciplines). Shadow model: Mind Flay is a talent in both games so its damage arrives as a talent effect; the source represents the channel time it replaces. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "holy-heal": {
-      "note": "Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4%. Prayer of Mending/Penance/Binding Heal arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Power Word: Shield has a 4s cooldown in the beta client (Weakened Soul still limits one target per 15s) and can always overwrite a shield on a target without Weakened Soul; Renew can crit; Penance ranks at 30/40/50/60, Binding Heal 6 ranks, Prayer of Mending 3 ranks. Healer lab shares (2026-09-30, holy-raid-healer): greater_heal 69%, prayer_of_healing 18%, flash_heal 10%, renew 2%, shield 1%; 3% of the healing came from talent-taught spells the model carries as talent effects.",
+      "note": "Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4%. Prayer of Mending/Penance/Binding Heal arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Power Word: Shield has a 4s cooldown in the beta client (Weakened Soul still limits one target per 15s) and can always overwrite a shield on a target without Weakened Soul; Renew can crit; Penance ranks at 30/40/50/60, Binding Heal 6 ranks, Prayer of Mending 3 ranks. Healer lab shares (2026-11-09, holy-raid-healer): greater_heal 61%, prayer_of_healing 21%, flash_heal 14%, renew 3%, shield 0%; 24% of the healing came from talent-taught spells the model carries as talent effects.",
       "sources": [
         {
           "id": "greater_heal",
-          "share": 0.6942,
+          "share": 0.6113,
           "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Greater Heal"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -14,7 +14,7 @@
         },
         {
           "id": "flash_heal",
-          "share": 0.0959,
+          "share": 0.1433,
           "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Flash Heal"],
           "cast": 1.5,
           "min_cast": 1.5,
@@ -22,14 +22,14 @@
         },
         {
           "id": "renew",
-          "share": 0.0214,
+          "share": 0.0312,
           "tags": ["type:spell", "heal", "school:holy", "hot", "instant", "ability:Renew"],
           "can_crit": false,
           "min_level": 8
         },
         {
           "id": "prayer_of_healing",
-          "share": 0.1762,
+          "share": 0.2128,
           "tags": ["type:spell", "heal", "school:holy", "direct", "aoe", "ability:Prayer of Healing"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -37,7 +37,7 @@
         },
         {
           "id": "shield",
-          "share": 0.0123,
+          "share": 0.0014,
           "tags": ["type:spell", "heal", "school:holy", "instant", "absorb", "ability:Power Word: Shield"],
           "can_crit": false,
           "cooldown": 4,

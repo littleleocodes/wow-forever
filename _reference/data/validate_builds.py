@@ -33,6 +33,34 @@ CLASSES = ["warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", 
 TOTAL_POINTS = 51
 
 
+def gone_talents(cls: str, build: dict) -> list:
+    """Talents a build allocates that the current Forever trees lack (2026-11-09: about 300 saved candidates under the classes'
+    `candidates/` folders still held talents later beta builds removed, Berserk, Lava Burst, Raging Blows, Instrument of Law..., and
+    the calibrations fit over them: the healer calibration stopped on the druid's Gift of the Earthmother, the others read 0)."""
+    trees = json.load(open(DATA / "forever-talents" / f"{cls}.json", encoding="utf-8")).get("trees", [])
+    names = {t["name"] for tr in trees for t in tr.get("talents", [])}
+    al = build.get("allocation") or {}
+    return sorted({n for items in (al.values() if isinstance(al, dict) else []) for n, r in items if r and n not in names})
+
+
+def live_candidates(cls: str, files, log=print) -> list:
+    """The candidate files a calibration, race or seed may use: those whose talents all exist in the current trees (a stale one is
+    skipped with a line saying why; repair or remove it)."""
+    keep = []
+    for f in files:
+        try:
+            b = json.load(open(f, encoding="utf-8"))
+        except (OSError, ValueError):
+            keep.append(f)
+            continue
+        gone = gone_talents(cls, b)
+        if gone:
+            log(f"  skipped {pathlib.Path(f).name}: holds {', '.join(gone)}, which the current trees lack")
+        else:
+            keep.append(f)
+    return keep
+
+
 # ---------------------------------------------------------------- tree loading
 
 def load_classic():

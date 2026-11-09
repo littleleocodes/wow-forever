@@ -1,0 +1,408 @@
+{
+ "class": "hunter",
+ "spec": "Survival",
+ "build": "survival-open-leveling",
+ "rotation": "melee-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "17",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Survival",
+   "talent": "Survivalist",
+   "points": 2
+  },
+  {
+   "levels": "20-22",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Survival",
+   "talent": "Clever Traps",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 5
+  },
+  {
+   "levels": "30",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Survival",
+   "talent": "Expose Prey",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "45-49",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "50-54",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "55-57",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 3
+  },
+  {
+   "levels": "58-59",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Marksmanship",
+   "talent": "Mortal Shots",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 21.579,
+   "values_at_60": {
+    "Deadly Aspects": -0.059,
+    "Lightning Reflexes": -22.308,
+    "Mortal Shots": 0.01
+   },
+   "zero": [
+    "Deadly Aspects",
+    "Mortal Shots"
+   ]
+  },
+  {
+   "weighted": 21.506,
+   "values_at_60": {
+    "Deadly Aspects": -0.124,
+    "Lightning Reflexes": -0.098,
+    "Mortal Shots": -0.025,
+    "Strider Kick": -0.244
+   },
+   "zero": [
+    "Mortal Shots"
+   ]
+  },
+  {
+   "weighted": 21.483,
+   "values_at_60": {
+    "Careful Aim": -0.067,
+    "Deadly Aspects": -0.081,
+    "Efficiency": -0.214,
+    "Improved Stings": -0.158,
+    "Lightning Reflexes": -0.159,
+    "Rapid Killing": -0.082,
+    "Strider Kick": -0.34
+   },
+   "zero": [
+    "Careful Aim"
+   ]
+  },
+  {
+   "weighted": 21.481,
+   "values_at_60": {
+    "Careful Aim": -0.038,
+    "Deadly Aspects": -0.048,
+    "Efficiency": -0.145,
+    "Improved Stings": -0.046,
+    "Lightning Reflexes": 0.024,
+    "Rapid Killing": -0.021,
+    "Strider Kick": -0.225
+   },
+   "zero": [
+    "Careful Aim",
+    "Deadly Aspects",
+    "Improved Stings",
+    "Lightning Reflexes",
+    "Rapid Killing"
+   ]
+  },
+  {
+   "weighted": 21.453,
+   "values_at_60": {
+    "Careful Aim": -0.062,
+    "Deadly Aspects": -0.04,
+    "Efficiency": -0.112,
+    "Improved Stings": -0.044,
+    "Lightning Reflexes": -0.064,
+    "Rapid Killing": -0.007,
+    "Strider Kick": -0.197,
+    "Survival Tactics": -0.141
+   },
+   "zero": [
+    "Careful Aim",
+    "Deadly Aspects",
+    "Improved Stings",
+    "Lightning Reflexes",
+    "Rapid Killing"
+   ]
+  },
+  {
+   "weighted": 21.437,
+   "values_at_60": {
+    "Careful Aim": 0.021,
+    "Deadly Aspects": -0.022,
+    "Efficiency": -0.098,
+    "Improved Stings": -0.089,
+    "Lightning Reflexes": -0.098,
+    "Rapid Killing": 0.04,
+    "Strider Kick": -0.236,
+    "Survival Tactics": -0.149
+   },
+   "zero": [
+    "Careful Aim",
+    "Deadly Aspects",
+    "Rapid Killing"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Deadly Aspects",
+   "to": "Strider Kick",
+   "level": 54,
+   "seed3": -0.0034,
+   "seed4": -0.0027,
+   "why": "tie-break"
+  },
+  {
+   "from": "Mortal Shots",
+   "to": "Improved Stings",
+   "level": 60,
+   "seed3": -0.001,
+   "seed4": -0.0013,
+   "why": "tie-break"
+  },
+  {
+   "from": "Careful Aim",
+   "to": "Improved Stings",
+   "level": 49,
+   "seed3": -0.0001,
+   "seed4": -0.0011,
+   "why": "tie-break"
+  },
+  {
+   "from": "Deadly Aspects",
+   "to": "Survival Tactics",
+   "level": 53,
+   "seed3": -0.0013,
+   "seed4": -0.0015,
+   "why": "tie-break"
+  },
+  {
+   "from": "Rapid Killing",
+   "to": "Efficiency",
+   "level": 59,
+   "seed3": -0.0007,
+   "seed4": -0.0001,
+   "why": "no loss"
+  },
+  {
+   "from": "Careful Aim",
+   "to": "Improved Stings",
+   "level": 48,
+   "seed3": -0.0015,
+   "seed4": -0.0028,
+   "why": "tie-break"
+  },
+  {
+   "from": "Expose Prey",
+   "to": "Survival Tactics",
+   "level": 31,
+   "seed3": -0.0019,
+   "seed4": -0.0022,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "17",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Survival",
+   "talent": "Survivalist",
+   "points": 2
+  },
+  {
+   "levels": "20-22",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Survival",
+   "talent": "Clever Traps",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 5
+  },
+  {
+   "levels": "30",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "45-47",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Survival",
+   "talent": "Strider Kick",
+   "points": 1
+  },
+  {
+   "levels": "55-57",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 1
+  }
+ ]
+}

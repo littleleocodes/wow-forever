@@ -1,0 +1,422 @@
+{
+ "class": "mage",
+ "spec": "Fire",
+ "build": "fire-leveling",
+ "rotation": "fire-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Frost",
+   "talent": "Permafrost",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "32-35",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 4
+  },
+  {
+   "levels": "36",
+   "tree": "Frost",
+   "talent": "Ice Block",
+   "points": 1
+  },
+  {
+   "levels": "37-39",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "40-41",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
+  },
+  {
+   "levels": "42-43",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 1
+  },
+  {
+   "levels": "46",
+   "tree": "Fire",
+   "talent": "Impact",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 2
+  },
+  {
+   "levels": "49",
+   "tree": "Fire",
+   "talent": "Blast Wave",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 1
+  },
+  {
+   "levels": "51-53",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "54-56",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 3
+  },
+  {
+   "levels": "57-58",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 38.213,
+   "values_at_60": {
+    "Combustion": -1.339,
+    "Ice Block": 0.0,
+    "Master of Elements": -0.454,
+    "Shatter": -1.072
+   },
+   "zero": [
+    "Ice Block"
+   ]
+  },
+  {
+   "weighted": 38.09,
+   "values_at_60": {
+    "Combustion": -1.02,
+    "Ice Lance": -3.355,
+    "Ice Shards": -0.049,
+    "Improved Frost Nova": -0.12,
+    "Master of Elements": -0.373,
+    "Shatter": -0.746
+   },
+   "zero": [
+    "Ice Shards"
+   ]
+  },
+  {
+   "weighted": 37.981,
+   "values_at_60": {
+    "Combustion": -1.347,
+    "Master of Elements": -0.194,
+    "Shatter": -0.829,
+    "Wand Specialization": -0.218
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Ice Block",
+   "to": "Improved Frost Nova",
+   "level": 36,
+   "seed3": -0.0032,
+   "seed4": -0.0049,
+   "why": "measured"
+  },
+  {
+   "from": "Ice Shards",
+   "to": "Wand Specialization",
+   "level": 35,
+   "seed3": -0.0029,
+   "seed4": 0.0003,
+   "why": "no loss"
+  },
+  {
+   "from": "Permafrost",
+   "to": "Improved Frost Nova",
+   "level": 26,
+   "seed3": -0.0052,
+   "seed4": -0.007,
+   "why": "gate"
+  },
+  {
+   "from": "Blast Wave",
+   "to": "Incineration",
+   "level": 49,
+   "seed3": -0.0062,
+   "seed4": -0.0043,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Scorch",
+   "to": "Incineration",
+   "level": 50,
+   "seed3": -0.0007,
+   "seed4": -0.0012,
+   "why": "gate"
+  },
+  {
+   "from": "Impact",
+   "to": "Incineration",
+   "level": 46,
+   "seed3": -0.0039,
+   "seed4": -0.0017,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Scorch",
+   "to": "Incineration",
+   "level": 48,
+   "seed3": -0.0025,
+   "seed4": -0.0029,
+   "why": "gate"
+  },
+  {
+   "from": "Burning Soul",
+   "to": "Incineration",
+   "level": 45,
+   "seed3": -0.0006,
+   "seed4": -0.001,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 3
+  },
+  {
+   "levels": "35",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "37-39",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "40-41",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
+  },
+  {
+   "levels": "42-43",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 1
+  },
+  {
+   "levels": "48-50",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 3
+  },
+  {
+   "levels": "51-53",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "54-56",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 3
+  },
+  {
+   "levels": "57-58",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 1
+  }
+ ]
+}

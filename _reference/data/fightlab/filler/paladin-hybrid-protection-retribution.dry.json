@@ -1,0 +1,327 @@
+{
+ "class": "paladin",
+ "spec": "Hybrid Protection/Retribution",
+ "build": "prot-ret-open-leveling",
+ "rotation": "ret-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 1
+  },
+  {
+   "levels": "11-14",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 4
+  },
+  {
+   "levels": "15-17",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Retribution",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 1
+  },
+  {
+   "levels": "30-32",
+   "tree": "Retribution",
+   "talent": "Vengeance",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "34-38",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "39-41",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "42-46",
+   "tree": "Protection",
+   "talent": "Divine Intellect",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "50-51",
+   "tree": "Protection",
+   "talent": "Sacred Duty",
+   "points": 2
+  },
+  {
+   "levels": "52",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "55-56",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 2
+  },
+  {
+   "levels": "57",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "58-59",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 26.445,
+   "values_at_60": {
+    "Deflection": -0.265,
+    "Improved Judgement": -0.499,
+    "Improved Seals": -0.564,
+    "Reverence": -0.474,
+    "Swift Judgement": -1.426,
+    "Vengeance": -0.515
+   },
+   "zero": []
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 1
+  },
+  {
+   "levels": "11-14",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 4
+  },
+  {
+   "levels": "15-17",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Retribution",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 1
+  },
+  {
+   "levels": "30-32",
+   "tree": "Retribution",
+   "talent": "Vengeance",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "34-38",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "39-41",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "42-46",
+   "tree": "Protection",
+   "talent": "Divine Intellect",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "50-51",
+   "tree": "Protection",
+   "talent": "Sacred Duty",
+   "points": 2
+  },
+  {
+   "levels": "52",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "55-56",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 2
+  },
+  {
+   "levels": "57",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "58-59",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  }
+ ]
+}

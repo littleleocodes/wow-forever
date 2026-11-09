@@ -203,7 +203,7 @@ class Healer(E.BaseHealer):
         sim.illum_seen.clear()
 
     # ---------------------------------------------------------------- choices
-    def group_spell(self, sim, hurt):
+    def group_spell(self, sim, hurt, role="group"):
         """Light's Vigil on the lowest hurt raid member, when its Holy Shock can follow."""
         lv = (self.book.get("Light's Vigil") or [None])[-1]
         if lv is None or self.vigil_shock is None or sim.vigil_target is not None:

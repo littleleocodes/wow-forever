@@ -1,0 +1,229 @@
+{
+ "class": "hunter",
+ "spec": "Marksmanship",
+ "build": "marksmanship-open-leveling",
+ "rotation": "mm-raid",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Marksmanship",
+   "talent": "Barrage",
+   "points": 3
+  },
+  {
+   "levels": "35-39",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "45-46",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "47-48",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 2
+  },
+  {
+   "levels": "49",
+   "tree": "Beast Mastery",
+   "talent": "Improved Aspect of the Monkey",
+   "points": 1
+  },
+  {
+   "levels": "50-54",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "55-59",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 22.552,
+   "values_at_60": {
+    "Bestial Discipline": -0.057,
+    "Ranged Weapon Specialization": -0.099
+   },
+   "zero": [
+    "Bestial Discipline"
+   ]
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Marksmanship",
+   "talent": "Barrage",
+   "points": 3
+  },
+  {
+   "levels": "35-39",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "45-46",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "47-48",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 2
+  },
+  {
+   "levels": "49",
+   "tree": "Beast Mastery",
+   "talent": "Improved Aspect of the Monkey",
+   "points": 1
+  },
+  {
+   "levels": "50-54",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "55-59",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 1
+  }
+ ]
+}

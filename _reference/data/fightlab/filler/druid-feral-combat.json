@@ -1,0 +1,277 @@
+{
+ "class": "druid",
+ "spec": "Feral Combat",
+ "build": "feral-combat-open-leveling",
+ "rotation": "feral-cat-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Feral Combat",
+   "talent": "Feral Swiftness",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Feral Combat",
+   "talent": "Thick Hide",
+   "points": 3
+  },
+  {
+   "levels": "20-21",
+   "tree": "Feral Combat",
+   "talent": "Sharpened Claws",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Feral Combat",
+   "talent": "Savage Fury",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Feral Combat",
+   "talent": "Furor",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Feral Combat",
+   "talent": "Predatory Strikes",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Feral Combat",
+   "talent": "Blood Frenzy",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Feral Combat",
+   "talent": "Leader of the Pack",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 5
+  },
+  {
+   "levels": "36-37",
+   "tree": "Balance",
+   "talent": "Nature's Reach",
+   "points": 2
+  },
+  {
+   "levels": "38-39",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "40-41",
+   "tree": "Feral Combat",
+   "talent": "Natural Instinct",
+   "points": 2
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Heart of the Wild",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Feral Combat",
+   "talent": "Brutal Impact",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Feral Combat",
+   "talent": "Feral Charge",
+   "points": 1
+  },
+  {
+   "levels": "55-58",
+   "tree": "Feral Combat",
+   "talent": "Rend and Tear",
+   "points": 4
+  },
+  {
+   "levels": "59",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 22.886,
+   "values_at_60": {
+    "Natural Shapeshifter": -0.126,
+    "Naturalist": -0.378,
+    "Nature's Splendor": -0.591,
+    "Rend and Tear": -0.097
+   },
+   "zero": []
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Feral Combat",
+   "talent": "Feral Swiftness",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Feral Combat",
+   "talent": "Thick Hide",
+   "points": 3
+  },
+  {
+   "levels": "20-21",
+   "tree": "Feral Combat",
+   "talent": "Sharpened Claws",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Feral Combat",
+   "talent": "Savage Fury",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Feral Combat",
+   "talent": "Furor",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Feral Combat",
+   "talent": "Predatory Strikes",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Feral Combat",
+   "talent": "Blood Frenzy",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Feral Combat",
+   "talent": "Leader of the Pack",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 5
+  },
+  {
+   "levels": "36-37",
+   "tree": "Balance",
+   "talent": "Nature's Reach",
+   "points": 2
+  },
+  {
+   "levels": "38-39",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "40-41",
+   "tree": "Feral Combat",
+   "talent": "Natural Instinct",
+   "points": 2
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Heart of the Wild",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Feral Combat",
+   "talent": "Brutal Impact",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Feral Combat",
+   "talent": "Feral Charge",
+   "points": 1
+  },
+  {
+   "levels": "55-58",
+   "tree": "Feral Combat",
+   "talent": "Rend and Tear",
+   "points": 4
+  },
+  {
+   "levels": "59",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  }
+ ]
+}

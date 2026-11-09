@@ -12,17 +12,18 @@
   "cand-holy-r4"
  ],
  "capacity": [
-  1.0,
-  26.666666666666664
+  3.200436966327136,
+  1.6487103787417483,
+  1.0881503330465452
  ],
  "talents": [
   {
    "talent": "Meditation",
-   "lab": 0.25195966058650404,
-   "ev_before": 0.22073385166344212,
-   "ev_after": 0.2153355903130346,
-   "scale": 1.0,
-   "how": "kept",
+   "lab": 0.25401573385968274,
+   "ev_before": 0.22381095704353757,
+   "ev_after": 0.21342061687770614,
+   "scale": 1.0881503330465452,
+   "how": "capped",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
@@ -35,11 +36,11 @@
   },
   {
    "talent": "Improved Healing",
-   "lab": 0.0809687326806581,
-   "ev_before": 0.07404303381954892,
-   "ev_after": 0.07244427474627624,
-   "scale": 1.0,
-   "how": "kept",
+   "lab": 0.1014253736601191,
+   "ev_before": 0.07495090081236473,
+   "ev_after": 0.09380560342055867,
+   "scale": 1.391813955269754,
+   "how": "fitted",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
@@ -51,16 +52,15 @@
    ]
   },
   {
-   "talent": "Spiritual Healing",
-   "lab": 0.0633683905610433,
-   "ev_before": 0.05628735063810648,
-   "ev_after": 0.055837557632889424,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Litany of Light",
+   "lab": 0.0789279446198869,
+   "ev_before": 0.01065484287516786,
+   "ev_after": 0.07735173207922284,
+   "scale": 7.7714374996721745,
+   "how": "fitted",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
     "cand-holy-r1",
     "cand-holy-r2",
     "cand-holy-r3",
@@ -69,31 +69,14 @@
   },
   {
    "talent": "Penance",
-   "lab": 0.052206637619634934,
-   "ev_before": 0.05752588542054531,
-   "ev_after": 0.05688523031234385,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
-    "cand-holy-r2",
-    "cand-holy-r3",
-    "cand-holy-r4"
-   ]
-  },
-  {
-   "talent": "Mental Strength",
-   "lab": 0.03482887294015096,
-   "ev_before": 0.024721857636718508,
-   "ev_after": 0.03449081638906547,
-   "scale": 1.4088299991562963,
+   "lab": 0.07457638105515467,
+   "ev_before": 0.03544615215814278,
+   "ev_after": 0.07353523029750354,
+   "scale": 2.2762622106820345,
    "how": "fitted",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
     "cand-holy-r1",
     "cand-holy-r2",
     "cand-holy-r3",
@@ -101,44 +84,10 @@
    ]
   },
   {
-   "talent": "Spiritual Guidance",
-   "lab": 0.03305397011473622,
-   "ev_before": 0.030413192933961847,
-   "ev_after": 0.030178447770331955,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
-    "cand-holy-r1",
-    "cand-holy-r2",
-    "cand-holy-r3",
-    "cand-holy-r4"
-   ]
-  },
-  {
-   "talent": "Inner Focus",
-   "lab": 0.030996914132078973,
-   "ev_before": 0.02032029656415215,
-   "ev_after": 0.0309971698536587,
-   "scale": 1.5390625009313226,
-   "how": "fitted",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
-    "cand-holy-r1",
-    "cand-holy-r2",
-    "cand-holy-r3",
-    "cand-holy-r4"
-   ]
-  },
-  {
-   "talent": "Inspiration",
-   "lab": 0.027237685688136403,
-   "ev_before": 0.021193004231639112,
-   "ev_after": 0.02102923761607081,
+   "talent": "Spiritual Healing",
+   "lab": 0.05640648681319254,
+   "ev_before": 0.053992788383326294,
+   "ev_after": 0.051452895750815915,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -153,35 +102,71 @@
   },
   {
    "talent": "Prayer of Mending",
-   "lab": 0.02010785502278329,
-   "ev_before": 0.012940650079823786,
-   "ev_after": 0.012863245127324098,
-   "scale": 1.0,
-   "how": "kept",
+   "lab": 0.047242186869094725,
+   "ev_before": 0.01268900147432819,
+   "ev_after": 0.04525185914967155,
+   "scale": 3.673743886873126,
+   "how": "fitted",
    "builds": [
     "cand-holy-heal-hand-2026-09-26"
    ]
   },
   {
-   "talent": "Soul Warding",
-   "lab": 0.016544330357817487,
-   "ev_before": 0.004768229844143258,
-   "ev_after": 0.004723862247411851,
+   "talent": "Inspiration",
+   "lab": 0.0291551894870069,
+   "ev_before": 0.02035662905353791,
+   "ev_after": 0.019427865528146206,
    "scale": 1.0,
-   "how": "capped",
+   "how": "kept",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
     "cand-holy-heal-hand-2026-09-26",
     "cand-holy-r1",
-    "cand-holy-r3"
+    "cand-holy-r2",
+    "cand-holy-r3",
+    "cand-holy-r4"
+   ]
+  },
+  {
+   "talent": "Spiritual Guidance",
+   "lab": 0.028670758583365093,
+   "ev_before": 0.03012539515481754,
+   "ev_after": 0.028757920800346802,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3",
+    "cand-holy-r4"
+   ]
+  },
+  {
+   "talent": "Inner Focus",
+   "lab": 0.024933711999348164,
+   "ev_before": 0.03106430094860081,
+   "ev_after": 0.028394889819875247,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3",
+    "cand-holy-r4"
    ]
   },
   {
    "talent": "Holy Specialization",
-   "lab": 0.0164309196881759,
-   "ev_before": 0.014349286364691124,
-   "ev_after": 0.014163545840804039,
+   "lab": 0.01655258979122198,
+   "ev_before": 0.01416101253875055,
+   "ev_after": 0.013093813894218128,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -195,29 +180,12 @@
    ]
   },
   {
-   "talent": "Mental Agility",
-   "lab": 0.01123149794271559,
-   "ev_before": 0.002130532201293957,
-   "ev_after": 0.0020902182617751866,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
-    "cand-holy-r1",
-    "cand-holy-r2",
-    "cand-holy-r3",
-    "cand-holy-r4"
-   ]
-  },
-  {
-   "talent": "Improved Power Word: Shield",
-   "lab": 0.008157861479232874,
-   "ev_before": 0.0015493405468474046,
-   "ev_after": 0.0015377364641012373,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Mental Strength",
+   "lab": 0.013251249615091557,
+   "ev_before": 0.035435601505658956,
+   "ev_after": 0.013245849564840834,
+   "scale": 0.4309567301534116,
+   "how": "fitted",
    "builds": [
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
@@ -230,9 +198,9 @@
   },
   {
    "talent": "Twin Disciplines",
-   "lab": 0.005052137264302891,
-   "ev_before": 0.000980412024268099,
-   "ev_after": 0.0009729923711828344,
+   "lab": 0.007225892905648961,
+   "ev_before": 0.0007884285805822013,
+   "ev_after": 0.0007449315225357538,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -246,10 +214,71 @@
    ]
   },
   {
+   "talent": "Divine Fury",
+   "lab": 0.006575510475998326,
+   "ev_before": 0.0,
+   "ev_after": 0.006479180247002265,
+   "scale": 0.20664900029078126,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Soul Warding",
+   "lab": 0.00651193946337161,
+   "ev_before": 0.001195665979067635,
+   "ev_after": 0.0010889213396517161,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Mental Agility",
+   "lab": 0.004690194102768543,
+   "ev_before": 0.0028566989922498274,
+   "ev_after": 0.002549998271697524,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3",
+    "cand-holy-r4"
+   ]
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "lab": 0.0024485552204883843,
+   "ev_before": 0.00016624554414847948,
+   "ev_after": 0.00015733948438513128,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "holy-raid-healer",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3",
+    "cand-holy-r4"
+   ]
+  },
+  {
    "talent": "Improved Renew",
-   "lab": 0.00381824113198376,
-   "ev_before": 0.0013234214860935436,
-   "ev_after": 0.0013128700131093652,
+   "lab": 0.00046168290338403163,
+   "ev_before": 0.0018638594525815253,
+   "ev_after": 0.001755024713431217,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -261,30 +290,14 @@
     "cand-holy-r3",
     "cand-holy-r4"
    ]
-  },
-  {
-   "talent": "Divine Fury",
-   "lab": 0.0032461614650377327,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-heal-hand-2026-09-26",
-    "cand-holy-r1",
-    "cand-holy-r2",
-    "cand-holy-r3"
-   ]
   }
  ],
  "shares": {
-  "Greater Heal": 0.6737498605210464,
-  "Prayer of Healing": 0.1710441356885453,
-  "Flash Heal": 0.0930757035350732,
-  "Penance": 0.029389011041360085,
-  "Renew": 0.02075982780541699,
-  "Power Word: Shield": 0.01198146140855813
+  "Greater Heal": 0.462663250836852,
+  "Penance": 0.2431868110657959,
+  "Prayer of Healing": 0.1610385731858881,
+  "Flash Heal": 0.10842445152964156,
+  "Renew": 0.02358960828480535,
+  "Power Word: Shield": 0.0010973050970170986
  }
 }

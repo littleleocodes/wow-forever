@@ -1,0 +1,375 @@
+{
+ "class": "priest",
+ "spec": "Shadow",
+ "build": "shadow-open-leveling",
+ "rotation": "shadow-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "15-18",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 4
+  },
+  {
+   "levels": "19",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Shadow",
+   "talent": "Dark Inspiration",
+   "points": 3
+  },
+  {
+   "levels": "28-30",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "31-34",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 4
+  },
+  {
+   "levels": "35",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 1
+  },
+  {
+   "levels": "36-38",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 2
+  },
+  {
+   "levels": "43-44",
+   "tree": "Shadow",
+   "talent": "Dark Inspiration",
+   "points": 2
+  },
+  {
+   "levels": "45-49",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "50-52",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "53-55",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 3
+  },
+  {
+   "levels": "56-57",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 2
+  },
+  {
+   "levels": "58-60",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 25.321,
+   "values_at_60": {
+    "Dark Inspiration": -0.064,
+    "Darkness": -0.203,
+    "Meditation": -0.193,
+    "Shadowform": -11.527,
+    "Twilight Focus": -0.016
+   },
+   "zero": [
+    "Twilight Focus"
+   ]
+  },
+  {
+   "weighted": 25.321,
+   "values_at_60": {
+    "Dark Inspiration": -0.048,
+    "Darkness": -0.233,
+    "Early Demise": -0.032,
+    "Meditation": -0.188,
+    "Shadowform": -11.414,
+    "Twilight Focus": -0.106
+   },
+   "zero": [
+    "Dark Inspiration",
+    "Early Demise"
+   ]
+  },
+  {
+   "weighted": 25.34,
+   "values_at_60": {
+    "Dark Inspiration": -0.154,
+    "Darkness": -0.256,
+    "Early Demise": -0.018,
+    "Meditation": -0.32,
+    "Mental Strength": -0.004,
+    "Power in Light": 0.0,
+    "Shadowform": -11.46,
+    "Twilight Focus": -0.064,
+    "Twin Disciplines": -0.121,
+    "Wand Specialization": 0.002
+   },
+   "zero": [
+    "Early Demise",
+    "Mental Strength",
+    "Power in Light",
+    "Wand Specialization"
+   ]
+  },
+  {
+   "weighted": 25.332,
+   "values_at_60": {
+    "Dark Inspiration": -0.074,
+    "Darkness": -0.213,
+    "Early Demise": -0.019,
+    "Inner Focus": -0.048,
+    "Meditation": -0.182,
+    "Shadowform": -11.243,
+    "Twilight Focus": -0.111
+   },
+   "zero": [
+    "Early Demise",
+    "Inner Focus"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Twilight Focus",
+   "to": "Early Demise",
+   "level": 52,
+   "seed3": 0.0,
+   "seed4": -0.0001,
+   "why": "no loss"
+  },
+  {
+   "from": "Dark Inspiration",
+   "to": "Wand Specialization",
+   "level": 44,
+   "seed3": 0.0008,
+   "seed4": -0.0004,
+   "why": "no loss"
+  },
+  {
+   "from": "Power in Light",
+   "to": "Inner Focus",
+   "level": 57,
+   "seed3": -0.0003,
+   "seed4": -0.0,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "15-18",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 4
+  },
+  {
+   "levels": "19",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Shadow",
+   "talent": "Dark Inspiration",
+   "points": 3
+  },
+  {
+   "levels": "28-30",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "31-34",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 4
+  },
+  {
+   "levels": "35",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 1
+  },
+  {
+   "levels": "36-38",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Shadow",
+   "talent": "Dark Inspiration",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 1
+  },
+  {
+   "levels": "45-49",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "50-51",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 2
+  },
+  {
+   "levels": "52",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  }
+ ]
+}

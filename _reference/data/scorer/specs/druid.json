@@ -2,18 +2,18 @@
   "_doc": "Druid spec models. resto-heal: Healing Touch / Regrowth / Rejuvenation healer (Swiftmend and Wild Growth arrive as talent effects). balance-dps: Starfire caster with Wrath and Moonfire. feral-cat-dps: Shred cat with Ferocious Bite/Rip finishers (tags cat, finisher). feral-bear-tank: Maul/Swipe bear (tags tank, bear; Mangle arrives as a talent effect). 'form' drives Heart of the Wild's form-specific stats. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "resto-heal": {
-      "note": "Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5%. Healer lab shares (2026-09-30, resto-raid-healer): healing_touch 67%, regrowth 21%, rejuvenation 12%; 1% of the healing came from talent-taught spells the model carries as talent effects.",
+      "note": "Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5%. Healer lab shares (2026-11-09, resto-raid-healer): healing_touch 60%, rejuvenation 31%, regrowth 9%; 5% of the healing came from talent-taught spells the model carries as talent effects.",
       "sources": [
         {
           "id": "healing_touch",
-          "share": 0.6697,
+          "share": 0.5987,
           "tags": ["type:spell", "heal", "school:nature", "direct", "ability:Healing Touch", "ability:Healing"],
           "cast": 3.5,
           "min_cast": 1.5
         },
         {
           "id": "regrowth",
-          "share": 0.2144,
+          "share": 0.0912,
           "tags": ["type:spell", "heal", "school:nature", "direct", "hot", "ability:Regrowth", "ability:Healing"],
           "cast": 2.0,
           "min_cast": 1.5,
@@ -21,7 +21,7 @@
         },
         {
           "id": "rejuvenation",
-          "share": 0.1159,
+          "share": 0.3101,
           "tags": ["type:spell", "heal", "school:nature", "hot", "instant", "ability:Rejuvenation", "ability:Healing"],
           "can_crit": false,
           "min_level": 4

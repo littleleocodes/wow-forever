@@ -9,7 +9,6 @@ Healer stats assumed (phase-1 raid gear, raid buffed): intellect 456, spirit 287
 | `holy-ml-heal` | 32/5/14 | 0.636 | 370 | 15% | 27 s | Holy Light 45%, Flash of Light 37%, Light's Vigil 14%, Holy Shock 2%, Lay on Hands 2% |
 | `holy-raid-healer` | 31/2/18 | 0.502 | 285 | 18% | 47 s | Holy Light 46%, Flash of Light 38%, Light's Vigil 10%, Lay on Hands 4%, Holy Shock 2% |
 | `cand-holy-r2` | 23/0/28 | 0.499 | 270 | 8% | 47 s | Flash of Light 49%, Holy Light 47%, Lay on Hands 4% |
-| `cand-holy-r1` | 23/0/28 | 0.495 | 270 | 7% | 47 s | Holy Light 47%, Flash of Light 47%, Lay on Hands 4%, Holy Shock 1% |
 | `opt-holy-heal-raid-heal` | 31/10/10 | 0.493 | 272 | 16% | 43 s | Holy Light 45%, Flash of Light 40%, Light's Vigil 10%, Lay on Hands 3%, Holy Shock 2% |
 
 ## Talent values of `holy-ml-heal`
@@ -18,25 +17,25 @@ Capacity lost when the talent is removed (relative to the build without it); EV 
 
 | Talent | Ranks | Lab | Scorer |
 |---|---|---|---|
-| Oath of Light | 1 | +21.3% | +0.0% |
-| Illumination | 5 | +15.0% | +15.3% |
-| Reverence | 2 | +13.1% | +8.1% |
-| Healing Light | 3 | +7.6% | +6.9% |
-| Conviction | 3 | +7.3% | +0.0% |
-| Light's Vigil | 1 | +6.1% | +3.5% |
-| Holy Shock | 1 | +4.9% | +0.1% |
-| Divine Intellect | 5 | +4.1% | +4.6% |
-| Divine Favor | 1 | +3.5% | +4.4% |
-| Holy Power | 5 | +3.3% | +3.6% |
-| Benediction | 5 | +0.7% | +0.6% |
-| Infusion of Light | 1 | +0.7% | +1.7% |
+| Oath of Light | 1 | +21.3% | +21.4% |
+| Illumination | 5 | +15.0% | +7.1% |
+| Reverence | 2 | +13.1% | +7.5% |
+| Healing Light | 3 | +7.6% | +8.9% |
+| Conviction | 3 | +7.3% | +4.6% |
+| Light's Vigil | 1 | +6.1% | +3.2% |
+| Holy Shock | 1 | +4.9% | +2.0% |
+| Divine Intellect | 5 | +4.1% | +1.3% |
+| Divine Favor | 1 | +3.5% | +1.6% |
+| Holy Power | 5 | +3.3% | +0.7% |
+| Benediction | 5 | +0.7% | +0.1% |
+| Infusion of Light | 1 | +0.7% | +0.0% |
 | Deflection * | 2 | +0.0% | +0.0% |
 | Divine Strength * | 4 | +0.0% | +0.0% |
 | Purifying Power * | 2 | +0.0% | +0.3% |
 | Pursuit of Justice * | 2 | +0.0% | +0.0% |
-| Spiritual Focus * | 5 | +0.0% | +2.5% |
+| Spiritual Focus * | 5 | +0.0% | +3.1% |
 | Unyielding Faith * | 2 | +0.0% | +0.0% |
-| Boundless Light | 1 | -0.2% | +0.0% |
+| Boundless Light | 1 | -0.2% | +0.1% |
 
 ## Mechanics simulated
 

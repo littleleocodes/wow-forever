@@ -90,6 +90,8 @@ def main():
     spec = P["spec"]
     folder = paths.heallab_dir(a.cls) / "candidates"
     cands = sorted(str(p) for p in folder.glob(f"cand-{P['tag']}-*.json")) if folder.exists() else []
+    import validate_builds as VB   # a candidate holding talents the current trees lack stays out (2026-11-09: Gift of the Earthmother)
+    cands = VB.live_candidates(a.cls, cands)
     ids = a.builds or [P["hand"], P["opt"]] + cands
     seeds = list(range(a.runs))
     # ---- 1. the lab with removals
@@ -162,7 +164,8 @@ def main():
             continue
         noise = abs(target) < NOISE and before < NOISE   # both say ~0: leave the entry alone
         fit, other = heal_split(entry_m, spec, other_specs)
-        import splitfx   # scorer/splitfx.py
+        # 2026-11-09: an "import splitfx" here made the name local to main(), so the shares sentence above read it unbound and every
+        # healer calibration since 2026-10-18 stopped with an UnboundLocalError (the module imports it at the top)
         fit = splitfx.seed_from_parsed(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, set(FIT_MODES) | {"raid-heal"}, spec, NO_FIT)
         dead = splitfx.dead_scopes(fit, specs["models"][spec])   # a scope no source carries scores nothing however it is scaled (audit 2026-10-18, row 47)
         if dead:

@@ -1,0 +1,260 @@
+{
+ "class": "hunter",
+ "spec": "Hybrid Beast Mastery/Marksmanship",
+ "build": "beast-marks-open-leveling",
+ "rotation": "bm-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Beast Mastery",
+   "talent": "Improved Revive Pet",
+   "points": 1
+  },
+  {
+   "levels": "20-24",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "25-29",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "30-31",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Beast Mastery",
+   "talent": "Spirit Bond",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Beast Mastery",
+   "talent": "Frenzy",
+   "points": 3
+  },
+  {
+   "levels": "38-42",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "43-47",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "48-50",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "51-52",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 3
+  },
+  {
+   "levels": "57-60",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 4
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 22.718,
+   "values_at_60": {
+    "Careful Aim": -0.023,
+    "Frenzy": -0.054,
+    "Improved Tracking": -0.022,
+    "Trueshot Aura": -0.281
+   },
+   "zero": [
+    "Careful Aim",
+    "Frenzy",
+    "Improved Tracking"
+   ]
+  },
+  {
+   "weighted": 22.719,
+   "values_at_60": {
+    "Frenzy": -0.114,
+    "Improved Tracking": -0.083,
+    "Mortal Shots": -0.016,
+    "Trueshot Aura": -0.387
+   },
+   "zero": [
+    "Mortal Shots"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Improved Tracking",
+   "to": "Mortal Shots",
+   "level": 60,
+   "seed3": 0.0,
+   "seed4": 0.0006,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Beast Mastery",
+   "talent": "Improved Revive Pet",
+   "points": 1
+  },
+  {
+   "levels": "20-24",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "25-29",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "30-31",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Beast Mastery",
+   "talent": "Spirit Bond",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Beast Mastery",
+   "talent": "Frenzy",
+   "points": 3
+  },
+  {
+   "levels": "38-42",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "43-47",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "48-50",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "51-52",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 3
+  },
+  {
+   "levels": "57-59",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Marksmanship",
+   "talent": "Mortal Shots",
+   "points": 1
+  }
+ ]
+}

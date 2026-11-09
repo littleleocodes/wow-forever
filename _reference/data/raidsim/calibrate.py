@@ -155,6 +155,9 @@ def main():
         OTHER_MODES[:] = ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
     repo = raidrun.repo_path(a)
     cands = sorted(str(p) for p in (paths.raidsim_dir(a.cls, game) / "candidates").glob(f"cand-{a.spec}-*.json"))
+    if game == "forever":   # a candidate holding talents the current trees lack stays out of the fit (2026-11-09)
+        import validate_builds as VB
+        cands = VB.live_candidates(a.cls, cands)
     ids = a.builds or (entry["builds"] + cands)
     # ---- 1. simulate with removals
     args = argparse.Namespace(builds=ids, iterations=a.iterations, duration=raidrun.FIGHT, seed=1, repo=a.repo, no_presets=True, write=a.write, deltas=[] if a.shares_only else ["all"])

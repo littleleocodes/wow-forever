@@ -4,7 +4,7 @@
  "date": "2026-11-09",
  "runs": 60,
  "steps": 10,
- "seconds": 399,
+ "seconds": 537,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -58,6 +58,62 @@
     "crit": 0.1131
    }
   },
+  "discipline-ml-heal": {
+   "split": "29/22/0",
+   "capacity": 0.6465332031250001,
+   "summary": {
+    "multiplier": 0.6465332031250001,
+    "shares": {
+     "Greater Heal": 0.4283709136603769,
+     "Penance": 0.23361157329571422,
+     "Prayer of Healing": 0.1608861185705556,
+     "Flash Heal": 0.12734555205590448,
+     "Power Word: Shield": 0.02905209886655275,
+     "Renew": 0.020733743550896157
+    },
+    "hps": 357.3290571514808,
+    "overheal_share": 0.06707632855465573,
+    "oom_time": 34.72500000000021,
+    "mana_left": 221.19229166666628,
+    "survival": 0.9
+   },
+   "stats": {
+    "intellect": 480,
+    "spirit": 419,
+    "healing": 380,
+    "mp5": 52,
+    "mana": 8582,
+    "crit": 0.1131
+   }
+  },
+  "holy-ml-heal": {
+   "split": "21/30/0",
+   "capacity": 0.6887451171875001,
+   "summary": {
+    "multiplier": 0.6887451171875001,
+    "shares": {
+     "Greater Heal": 0.4687423473850072,
+     "Penance": 0.24020023134639715,
+     "Prayer of Healing": 0.1571282316684168,
+     "Flash Heal": 0.1062966180232838,
+     "Renew": 0.02619278280624348,
+     "Power Word: Shield": 0.0014397887706516055
+    },
+    "hps": 389.4734270033817,
+    "overheal_share": 0.10142244961276557,
+    "oom_time": 41.86333333333362,
+    "mana_left": 277.6908333333334,
+    "survival": 0.8666666666666667
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 419,
+    "healing": 485,
+    "mp5": 52,
+    "mana": 8320,
+    "crit": 0.1101
+   }
+  },
   "opt-holy-heal-raid-heal": {
    "split": "21/30/0",
    "capacity": 0.6906494140625,
@@ -84,34 +140,6 @@
     "mp5": 52,
     "mana": 8582,
     "crit": 0.1131
-   }
-  },
-  "cand-holy-heal-hand-2026-09-26": {
-   "split": "20/31/0",
-   "capacity": 0.633203125,
-   "summary": {
-    "multiplier": 0.633203125,
-    "shares": {
-     "Greater Heal": 0.6886017807968973,
-     "Flash Heal": 0.10519952204622071,
-     "Prayer of Mending": 0.10426857732828478,
-     "Prayer of Healing": 0.07719567935464106,
-     "Renew": 0.02172226487012562,
-     "Power Word: Shield": 0.003012175603830607
-    },
-    "hps": 355.83582797660694,
-    "overheal_share": 0.08928205042182215,
-    "oom_time": 40.636666666666905,
-    "mana_left": 311.55499999999995,
-    "survival": 0.85
-   },
-   "stats": {
-    "intellect": 454,
-    "spirit": 419,
-    "healing": 485,
-    "mp5": 52,
-    "mana": 8189,
-    "crit": 0.1087
    }
   },
   "cand-holy-r1": {
@@ -226,6 +254,34 @@
     "crit": 0.1131
    }
   },
+  "cand-holy-heal-hand-2026-09-26": {
+   "split": "20/31/0",
+   "capacity": 0.633203125,
+   "summary": {
+    "multiplier": 0.633203125,
+    "shares": {
+     "Greater Heal": 0.6886017807968973,
+     "Flash Heal": 0.10519952204622071,
+     "Prayer of Mending": 0.10426857732828478,
+     "Prayer of Healing": 0.07719567935464106,
+     "Renew": 0.02172226487012562,
+     "Power Word: Shield": 0.003012175603830607
+    },
+    "hps": 355.83582797660694,
+    "overheal_share": 0.08928205042182215,
+    "oom_time": 40.636666666666905,
+    "mana_left": 311.55499999999995,
+    "survival": 0.85
+   },
+   "stats": {
+    "intellect": 454,
+    "spirit": 419,
+    "healing": 485,
+    "mp5": 52,
+    "mana": 8189,
+    "crit": 0.1087
+   }
+  },
   "disc-penance-healer": {
    "split": "31/20/0",
    "capacity": 0.6001953125,
@@ -253,62 +309,6 @@
     "mana": 8320,
     "crit": 0.1101
    }
-  },
-  "holy-ml-heal": {
-   "split": "21/30/0",
-   "capacity": 0.6887451171875001,
-   "summary": {
-    "multiplier": 0.6887451171875001,
-    "shares": {
-     "Greater Heal": 0.4687423473850072,
-     "Penance": 0.24020023134639715,
-     "Prayer of Healing": 0.1571282316684168,
-     "Flash Heal": 0.1062966180232838,
-     "Renew": 0.02619278280624348,
-     "Power Word: Shield": 0.0014397887706516055
-    },
-    "hps": 389.4734270033817,
-    "overheal_share": 0.10142244961276557,
-    "oom_time": 41.86333333333362,
-    "mana_left": 277.6908333333334,
-    "survival": 0.8666666666666667
-   },
-   "stats": {
-    "intellect": 463,
-    "spirit": 419,
-    "healing": 485,
-    "mp5": 52,
-    "mana": 8320,
-    "crit": 0.1101
-   }
-  },
-  "discipline-ml-heal": {
-   "split": "29/22/0",
-   "capacity": 0.6465332031250001,
-   "summary": {
-    "multiplier": 0.6465332031250001,
-    "shares": {
-     "Greater Heal": 0.4283709136603769,
-     "Penance": 0.23361157329571422,
-     "Prayer of Healing": 0.1608861185705556,
-     "Flash Heal": 0.12734555205590448,
-     "Power Word: Shield": 0.02905209886655275,
-     "Renew": 0.020733743550896157
-    },
-    "hps": 357.3290571514808,
-    "overheal_share": 0.06707632855465573,
-    "oom_time": 34.72500000000021,
-    "mana_left": 221.19229166666628,
-    "survival": 0.9
-   },
-   "stats": {
-    "intellect": 480,
-    "spirit": 419,
-    "healing": 380,
-    "mp5": 52,
-    "mana": 8582,
-    "crit": 0.1131
-   }
   }
  },
  "deltas": {
@@ -319,7 +319,7 @@
     "sim_delta": -0.002748414376321257,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.69287109375,
-    "ev_delta": 0.0,
+    "ev_delta": 0.001824611392764977,
     "simulated": true
    },
    {
@@ -337,7 +337,7 @@
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.0026285613805110335,
+    "ev_delta": 0.002316307671304902,
     "simulated": false
    },
    {
@@ -346,7 +346,7 @@
     "sim_delta": 0.01208696896009161,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.68271484375,
-    "ev_delta": 0.018170289761860248,
+    "ev_delta": 0.016692442951565373,
     "simulated": true
    },
    {
@@ -355,7 +355,7 @@
     "sim_delta": 0.09122455274521915,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.633203125,
-    "ev_delta": 0.07399366790003808,
+    "ev_delta": 0.09232958401461584,
     "simulated": true
    },
    {
@@ -364,7 +364,7 @@
     "sim_delta": 0.005542528245576603,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6871582031250001,
-    "ev_delta": 0.0017104452437760524,
+    "ev_delta": 0.0001837226195683204,
     "simulated": true
    },
    {
@@ -373,7 +373,7 @@
     "sim_delta": -0.0022913949307293686,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6925537109375001,
-    "ev_delta": 0.0013945115730212964,
+    "ev_delta": 0.0019225819066317844,
     "simulated": true
    },
    {
@@ -382,7 +382,7 @@
     "sim_delta": 0.027370408015100777,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6725585937500002,
-    "ev_delta": 0.030869883993420156,
+    "ev_delta": 0.0279870938411354,
     "simulated": true
    },
    {
@@ -391,7 +391,7 @@
     "sim_delta": 0.018717154992441146,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6782714843750001,
-    "ev_delta": 0.020373246256476168,
+    "ev_delta": 0.019158817768938685,
     "simulated": true
    },
    {
@@ -400,7 +400,7 @@
     "sim_delta": 0.07082860385925095,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.645263671875,
-    "ev_delta": 0.010597816555994618,
+    "ev_delta": 0.07739771719269331,
     "simulated": true
    },
    {
@@ -409,7 +409,7 @@
     "sim_delta": 0.24115247993685043,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.5567138671875,
-    "ev_delta": 0.22054933545556374,
+    "ev_delta": 0.2096602634090196,
     "simulated": true
    },
    {
@@ -418,7 +418,7 @@
     "sim_delta": 0.008336896109448677,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6852539062499999,
-    "ev_delta": 0.0385270690936633,
+    "ev_delta": 0.014404625049142094,
     "simulated": true
    },
    {
@@ -427,7 +427,7 @@
     "sim_delta": 0.07135556649127454,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6449462890625001,
-    "ev_delta": 0.035479175683154535,
+    "ev_delta": 0.07326534440197445,
     "simulated": true
    },
    {
@@ -436,7 +436,7 @@
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.003155932769212569,
+    "ev_delta": 0.0027808574698638716,
     "simulated": false
    },
    {
@@ -445,7 +445,7 @@
     "sim_delta": 0.009271806575850508,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6846191406250001,
-    "ev_delta": 0.004600341347995149,
+    "ev_delta": 0.0010643877125005791,
     "simulated": true
    },
    {
@@ -454,7 +454,7 @@
     "sim_delta": 0.011146838156484555,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.683349609375,
-    "ev_delta": 0.02649845027857689,
+    "ev_delta": 0.024909991139827253,
     "simulated": true
    },
    {
@@ -463,7 +463,7 @@
     "sim_delta": 0.04262295081967223,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6627197265625,
-    "ev_delta": 0.054038271140703246,
+    "ev_delta": 0.05071736042770522,
     "simulated": true
    },
    {
@@ -472,7 +472,7 @@
     "sim_delta": 0.0,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6909667968750001,
-    "ev_delta": 0.009553487505477014,
+    "ev_delta": 0.008989696015419466,
     "simulated": false
    },
    {
@@ -481,7 +481,7 @@
     "sim_delta": 0.005542528245576603,
     "cap_with": 0.6909667968750001,
     "cap_without": 0.6871582031250001,
-    "ev_delta": 0.0009972561372968308,
+    "ev_delta": 0.0007535981379351287,
     "simulated": true
    }
   ]

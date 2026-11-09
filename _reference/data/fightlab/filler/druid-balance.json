@@ -1,0 +1,394 @@
+{
+ "class": "druid",
+ "spec": "Balance",
+ "build": "opt-balance-dps-leveling-st",
+ "rotation": "balance-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Balance",
+   "talent": "Improved Entangling Roots",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Balance",
+   "talent": "Improved Starfire",
+   "points": 5
+  },
+  {
+   "levels": "30-32",
+   "tree": "Balance",
+   "talent": "Eclipse",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Balance",
+   "talent": "Nature's Grace",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "35-36",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 2
+  },
+  {
+   "levels": "37",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "38",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Balance",
+   "talent": "Moonkin Form",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 2
+  },
+  {
+   "levels": "43-44",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 2
+  },
+  {
+   "levels": "45",
+   "tree": "Balance",
+   "talent": "Improved Entangling Roots",
+   "points": 1
+  },
+  {
+   "levels": "46-47",
+   "tree": "Restoration",
+   "talent": "Heart of the Wild",
+   "points": 2
+  },
+  {
+   "levels": "48-50",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 3
+  },
+  {
+   "levels": "51",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "57-58",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 37.828,
+   "values_at_60": {
+    "Improved Entangling Roots": 0.0,
+    "Moonfury": -0.215,
+    "Moonkin Form": -2.286,
+    "Naturalist": -0.215,
+    "Nature's Focus": -0.167,
+    "Reflection": -0.481,
+    "Vengeance": -0.241
+   },
+   "zero": [
+    "Improved Entangling Roots"
+   ]
+  },
+  {
+   "weighted": 37.815,
+   "values_at_60": {
+    "Genesis": 0.025,
+    "Moonfury": -0.287,
+    "Moonkin Form": -2.174,
+    "Naturalist": -0.287,
+    "Nature's Focus": -0.155,
+    "Reflection": -0.267,
+    "Vengeance": -0.215
+   },
+   "zero": [
+    "Genesis"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Improved Entangling Roots",
+   "to": "Genesis",
+   "level": 45,
+   "seed3": -0.0003,
+   "seed4": -0.0017,
+   "why": "tie-break"
+  },
+  {
+   "from": "Improved Entangling Roots",
+   "to": "Genesis",
+   "level": 24,
+   "seed3": -0.0041,
+   "seed4": -0.002,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Entangling Roots",
+   "to": "Genesis",
+   "level": 23,
+   "seed3": -0.0044,
+   "seed4": -0.0027,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Balance",
+   "talent": "Improved Starfire",
+   "points": 5
+  },
+  {
+   "levels": "30-32",
+   "tree": "Balance",
+   "talent": "Eclipse",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Balance",
+   "talent": "Nature's Grace",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "35-36",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 2
+  },
+  {
+   "levels": "37",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "38",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Balance",
+   "talent": "Moonkin Form",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 2
+  },
+  {
+   "levels": "43-44",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 2
+  },
+  {
+   "levels": "45",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 1
+  },
+  {
+   "levels": "46-47",
+   "tree": "Restoration",
+   "talent": "Heart of the Wild",
+   "points": 2
+  },
+  {
+   "levels": "48-50",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 3
+  },
+  {
+   "levels": "51",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "57-58",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 2
+  }
+ ]
+}

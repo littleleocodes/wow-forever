@@ -529,10 +529,42 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   2 **Redoubt** (block, which needs a shield, on a two-hander) and 2 of 3 **Toughness** as the 15 Protection points **Swift Judgement**
   needs. Moved by hand and recorded in the pass's record (`fightlab/filler/paladin-hybrid-protection-retribution.json`, so
   `open_builds.py` keeps them): Redoubt to **Sacred Duty** (0.00% on both seeds, a shorter bubble cooldown) and 2 Toughness to
-  **Improved Hammer of Justice** 3/3 (-0.17% / -0.15%). **Open**: a gate step in the pass (each non-removable point moved to a talent of
-  the same tree at its row or above, legal along the order, kept when faster on both seeds), then the pass over every leveling page pick.
+  **Improved Hammer of Justice** 3/3 (-0.17% / -0.15%). Done the same morning: step 5 of the pass (each point the build cannot drop, moved to any
+  talent legal along the order, kept when faster on both seeds; on the Prot-Ret build after the hand moves: 14 gates, 27 legal moves,
+  none faster), and two record fixes (a dry run beside a written record goes to `<record>.dry.json`; a second `--write` chains onto the
+  written record so `open_builds.py` still re-applies it). A dry run over the 27 leveling page picks that are no raid build followed.
   (2) `level_guides.py --check` now also reads each leveling spec's rotation guide (guides/<class>.json) for talent levels against the
   build's order, with the forms those guides use ("(level 30;", "(levels 24 and 26)", "(18, 30 seconds a rank"), a group's one range
   ("**Lethal Attacks** and **Careful Aim** (levels 10-19)") and a span ("**Relentless Strikes** (31-39)" for ranks at 31-39). Its first run:
   41 stale paladin levels and talents the builds no longer take (Holy Conduit, Consecrated Ground, Sacred Duty, Eye for an Eye), every
   other class clean but one druid line ("Before **Moonkin Form** (levels 10-39)", reworded).
+- (2026-11-09) A tool no lane runs can break unseen. `heallab/calibrate.py` stopped with an UnboundLocalError on every run from
+  2026-10-18 (c90090d6) to today: an `import splitfx` inside `main()` made the name local, and the shares sentence earlier in `main()`
+  read it unbound. The four healer calibration records date from 2026-10-01, so the stats model's heal-mode values for Holy paladin,
+  Holy and Discipline priest, Restoration shaman and Restoration druid predate every healer-lab mechanic since (Oath of Light and
+  Conviction scored 0). The raid sim's calibrate.py had the same bug on 2026-10-23 and was fixed then; nobody looked for its twin.
+  Fixed, the four calibrations re-run, and `_reference/data/code_lint.py` (static: a name a function reads before its own local import
+  of a module-level name) finds no other case. Run it at every lane boundary, next to page_lint.
+- (2026-11-09) Stale candidates and stale hand-entered effects. (1) About 300 saved candidates under the classes' `candidates/` folders
+  held talents later beta builds removed (druid Berserk and Gift of the Earthmother, mage Arcane Focus, Elemental Precision and Improved
+  Fireball, paladin Instrument of Law, Twist of Light and Voice of Truth, rogue Murder and Improved Eviscerate, shaman Lava Burst, warlock
+  Malediction, warrior Raging Blows); `repair_builds.py` repairs proposed-builds.json only. The calibrations fit over them and the races
+  list them, measuring builds a point or more short (this morning's paladin leveling race still ranked cand-ret-r1..r8). Since today
+  `validate_builds.live_candidates` keeps them out of rebuild.py's fight-lab, raid and heal steps and of the raid and healer
+  calibrations, each skip logged. **Open**: repair or retire the files (rogue after its lane). (2) A hand-entered effect replaces the
+  parsed one, so a talent the client reworked keeps its old shape: paladin Conviction's heal entries were 5 ranks of melee crit
+  (now 3 ranks, 2% to every spell and attack), so no heal matched it and the lab's +7.3% could not be fitted; fixed for holy-heal, and Oath
+  of Light (no parsed effect) got a template the calibration scales. **Open**: 178 manual entries in nine classes carry values for another
+  rank count than the talent has now (a scan: `len(values)` against the tree's maxRank); most are fits that keep five values for any
+  talent, but each one a client rework touched needs the check Conviction failed. The healer calibration had also measured only the
+  hand draft, the optimizer export and candidates, never the page's ML build (holy-ml-heal, the one with Oath of Light): pass it with
+  `--builds` until the default includes the spec's `-ml-heal` build.
+- (2026-11-09, user: "is Wild Growth not taken because the simulator and tests are looking at single target healing numbers where Wild
+  Growth is meant to be used for parties and raids?") The healer lab heals one party (tank and four raid members, a raid-wide hit of
+  700 +-30% every 20 +-6 s), which is Wild Growth's reach, so not single target. Light damage was not the cause either: with the old
+  model Wild Growth cost -2.1% to -3.7% at the lab's damage, twice the damage, 2100-damage bursts and twice as often. The cause was the
+  lab: the druid had one group-heal role, Wild Growth when the build has it, else Tranquility, so taking Wild Growth meant never casting
+  Tranquility. Fixed (engine "big_group" role, tried first when ready; only the druid with Wild Growth has one, every other build is
+  bit-identical): Wild Growth on top of the page build -0.7% / +0.4% / -0.5% / +0.3% in those four settings, in the hand draft -0.1% /
+  +0.2% / +0.9% / +1.0%. The Restoration deep search ran with the old penalty: re-run fresh (deep_heal.py druid --fresh). Check every
+  healer module for roles that exclude each other the same way when a spec gets a second spell of a kind.

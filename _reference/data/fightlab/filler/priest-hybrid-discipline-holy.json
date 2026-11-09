@@ -1,0 +1,349 @@
+{
+ "class": "priest",
+ "spec": "Hybrid Discipline/Holy",
+ "build": "smite-open-leveling",
+ "rotation": "holy-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-11",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 2
+  },
+  {
+   "levels": "14-18",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 5
+  },
+  {
+   "levels": "19",
+   "tree": "Discipline",
+   "talent": "Holy Precision",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  },
+  {
+   "levels": "25",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Discipline",
+   "talent": "Improved Inner Fire",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Discipline",
+   "talent": "Soul Warding",
+   "points": 1
+  },
+  {
+   "levels": "32-36",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "37-39",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Holy",
+   "talent": "Improved Renew",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Holy",
+   "talent": "Divine Fury",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Holy",
+   "talent": "Holy Nova",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Holy",
+   "talent": "Improved Healing",
+   "points": 3
+  },
+  {
+   "levels": "56-57",
+   "tree": "Holy",
+   "talent": "Searing Light",
+   "points": 2
+  },
+  {
+   "levels": "58",
+   "tree": "Holy",
+   "talent": "Litany of Light",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 51.514,
+   "values_at_60": {
+    "Improved Inner Fire": -0.054,
+    "Improved Mind Blast": -0.113,
+    "Improved Shadow Word: Pain": -0.272,
+    "Inner Focus": -0.458,
+    "Litany of Light": 0.0,
+    "Meditation": -0.682,
+    "Mental Agility": -0.41,
+    "Soul Warding": -0.425
+   },
+   "zero": [
+    "Improved Inner Fire",
+    "Improved Mind Blast",
+    "Litany of Light"
+   ]
+  },
+  {
+   "weighted": 51.484,
+   "values_at_60": {
+    "Improved Inner Fire": -0.022,
+    "Improved Mind Blast": -0.118,
+    "Improved Shadow Word: Pain": -0.162,
+    "Inner Focus": -0.438,
+    "Meditation": -0.616,
+    "Mental Agility": -0.436,
+    "Soul Warding": -0.422,
+    "Spiritual Guidance": -0.176
+   },
+   "zero": [
+    "Improved Inner Fire",
+    "Improved Mind Blast"
+   ]
+  },
+  {
+   "weighted": 51.451,
+   "values_at_60": {
+    "Improved Inner Fire": -0.086,
+    "Improved Shadow Word: Pain": -0.191,
+    "Inner Focus": -0.511,
+    "Meditation": -0.681,
+    "Mental Agility": -0.52,
+    "Shadow Focus": -0.136,
+    "Soul Warding": -0.424,
+    "Spirit Tap": -0.301,
+    "Spiritual Guidance": -0.225
+   },
+   "zero": [
+    "Improved Inner Fire",
+    "Shadow Focus"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "from": "Litany of Light",
+   "to": "Spiritual Guidance",
+   "level": 58,
+   "seed3": -0.0006,
+   "seed4": -0.0005,
+   "why": "no loss"
+  },
+  {
+   "from": "Improved Mind Blast",
+   "to": "Shadow Focus",
+   "level": 40,
+   "seed3": -0.0007,
+   "seed4": -0.0005,
+   "why": "no loss"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-11",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 2
+  },
+  {
+   "levels": "14-18",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 5
+  },
+  {
+   "levels": "19",
+   "tree": "Discipline",
+   "talent": "Holy Precision",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  },
+  {
+   "levels": "25",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Discipline",
+   "talent": "Improved Inner Fire",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Discipline",
+   "talent": "Soul Warding",
+   "points": 1
+  },
+  {
+   "levels": "32-36",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "37-39",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Holy",
+   "talent": "Improved Renew",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 5
+  },
+  {
+   "levels": "47-51",
+   "tree": "Holy",
+   "talent": "Divine Fury",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Holy",
+   "talent": "Holy Nova",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Holy",
+   "talent": "Improved Healing",
+   "points": 3
+  },
+  {
+   "levels": "56-57",
+   "tree": "Holy",
+   "talent": "Searing Light",
+   "points": 2
+  },
+  {
+   "levels": "58",
+   "tree": "Holy",
+   "talent": "Spiritual Guidance",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 2
+  }
+ ]
+}

@@ -2,11 +2,11 @@
   "_doc": "Paladin spec models. Holy: Flash of Light / Holy Light healer. Retribution: two-hander with seal procs and Judgements (Seal of Command is a talent -> damage effect). Protection: shield tank whose threat is Holy Strike (Forever baseline), Consecration, seal/judgement, Retribution Aura and white swings; Holy Shield arrives as a talent effect. Per-game overrides zero out abilities that do not exist in that game. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "holy-heal": {
-      "note": "Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Shock rank 1 is learned at 30 (128-140, 10s cooldown), Flash of Light and Holy Light gained five ranks each, Lay on Hands has a 20 min cooldown. Healer lab shares (2026-09-30, holy-raid-healer): holy_light 52%, flash 44%, loh 3%, holy_shock 0%; 0% of the healing came from talent-taught spells the model carries as talent effects.",
+      "note": "Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Shock rank 1 is learned at 30 (128-140, 10s cooldown), Flash of Light and Holy Light gained five ranks each, Lay on Hands has a 20 min cooldown. Healer lab shares (2026-11-09, holy-ml-heal): holy_light 52%, flash 43%, holy_shock 2%, loh 2%; 14% of the healing came from talent-taught spells the model carries as talent effects.",
       "sources": [
         {
           "id": "flash",
-          "share": 0.4388,
+          "share": 0.4314,
           "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Flash of Light"],
           "cast": 1.5,
           "min_cast": 1.5,
@@ -14,14 +14,14 @@
         },
         {
           "id": "holy_light",
-          "share": 0.5229,
+          "share": 0.5197,
           "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Holy Light"],
           "cast": 2.5,
           "min_cast": 1.5
         },
         {
           "id": "holy_shock",
-          "share": 0.0049,
+          "share": 0.0245,
           "tags": ["type:spell", "heal", "school:holy", "direct", "instant", "ability:Holy Shock"],
           "cooldown": 10,
           "min_level": 30,
@@ -30,7 +30,7 @@
         },
         {
           "id": "loh",
-          "share": 0.0334,
+          "share": 0.0243,
           "tags": ["type:spell", "heal", "school:holy", "instant", "ability:Lay on Hands"],
           "can_crit": false,
           "min_level": 10,

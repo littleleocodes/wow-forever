@@ -71,7 +71,7 @@
     ]
   },
   "Infusion of Light": {
-    "note": "Holy Shock/Flash of Light crits cut the next Holy Light by 0.5s/rank: ~30% of Holy Lights get the cut at raid crit -> +6%/rank Holy Light throughput. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 2.8% on the same scale); already within tolerance, heal effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Holy Shock/Flash of Light crits cut the next Holy Light by 0.5s/rank: ~30% of Holy Lights get the cut at raid crit -> +6%/rank Holy Light throughput. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs -0.1% healing capacity in the lab (scorer said 2.6% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -98,15 +98,15 @@
       {
         "channel": "heal",
         "scope": ["ability:Holy Light"],
-        "per_rank": 0.064521,
-        "values": [0.064521, 0.129041, 0.193559, 0.258079, 0.3226],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["heal"],
         "specs": ["holy-heal"]
       }
     ]
   },
   "Illumination": {
-    "note": "20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, ret-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, ret-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 9.9% healing capacity in the lab (scorer said 9.1% on the same scale); already within tolerance, heal effects split off unchanged (8.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -166,13 +166,6 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.095936, 0.191872, 0.287808, 0.383744, 0.479682],
-        "modes": ["heal"],
-        "specs": ["holy-heal"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["raid"],
@@ -184,11 +177,18 @@
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-aoe"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.050751, 0.101503, 0.152254, 0.203006, 0.253758],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
   "Divine Favor": {
-    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -2.0% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -2.0% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 1.9% healing capacity in the lab (scorer said 1.5% on the same scale); already within tolerance, heal effects split off unchanged (1.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -240,30 +240,30 @@
         "values": [0.04, 0.08, 0.12, 0.16, 0.2]
       },
       {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
         "channel": "heal",
         "scope": ["heal"],
-        "values": [0.056049],
+        "values": [0.017466],
         "modes": ["heal"],
         "specs": ["holy-heal"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.056049],
+        "values": [0.017466],
         "modes": ["heal"],
         "specs": ["holy-heal"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
-        "values": [0.0],
-        "modes": ["raid"],
-        "specs": ["ret-dps"]
       }
     ]
   },
   "Holy Shock": {
-    "note": "Instant heal or damage every 10s: +3% healing (an instant on the move) and +5% Holy damage while leveling. Healer lab calibration (2026-09-30, holy-heal): removing it costs -1.4% healing capacity in the lab (scorer said 0.0% on the same scale); already within tolerance, heal effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Instant heal or damage every 10s: +3% healing (an instant on the move) and +5% Holy damage while leveling. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 2.3% healing capacity in the lab (scorer said 0.1% on the same scale); re-seeded from its tooltip (an earlier fit had left its heal values at zero), already within tolerance, heal effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -308,9 +308,16 @@
         "values": [0.04, 0.08, 0.12, 0.16, 0.2]
       },
       {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.05],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
         "channel": "heal",
         "scope": ["heal"],
-        "values": [0.0],
+        "values": [0.03],
         "modes": ["heal"],
         "specs": ["holy-heal"]
       }
@@ -386,19 +393,21 @@
     ]
   },
   "Light's Vigil": {
-    "note": "Marked target: next Holy Shock has no cooldown, party heal and mana refund on enemies -> +6% healing, +2% mana. 2026-09-27 audit: healing and mana while healing: healer model only (its sustain gave Retribution +0.8 in raid). PvP (2026-09-27): high, burst: Pre-cast on the target (1.5 s cast, lasts 30 s): the next Holy Shock on it triggers no cooldown, so two Holy Shocks land back to back plus 380-410 Holy damage (rank 3), or the whole party is healed for 684-724. Doubles the shockadin's instant burst; audit said medium, raised because the Forever draft is built on it. Beta numbers.",
+    "note": "Marked target: next Holy Shock has no cooldown, party heal and mana refund on enemies -> +6% healing, +2% mana. 2026-09-27 audit: healing and mana while healing: healer model only (its sustain gave Retribution +0.8 in raid). PvP (2026-09-27): high, burst: Pre-cast on the target (1.5 s cast, lasts 30 s): the next Holy Shock on it triggers no cooldown, so two Holy Shocks land back to back plus 380-410 Holy damage (rank 3), or the whole party is healed for 684-724. Doubles the shockadin's instant burst; audit said medium, raised because the Forever draft is built on it. Beta numbers. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 3.0% healing capacity in the lab (scorer said 1.4% on the same scale); heal values scaled x2.02 to match (3.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
         "scope": ["heal"],
         "values": [0.06],
-        "specs": ["holy-heal"]
+        "specs": ["holy-heal"],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank", "pvp"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
         "values": [0.02],
-        "specs": ["holy-heal"]
+        "specs": ["holy-heal"],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank", "pvp"]
       },
       {
         "channel": "dmg",
@@ -418,7 +427,22 @@
         "channel": "utility",
         "scope": ["mode:pvp"],
         "per_rank": 0.04,
-        "modes": ["pvp"]
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.045362],
+        "specs": ["holy-heal"],
+        "modes": ["heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.015122],
+        "specs": ["holy-heal"],
+        "modes": ["heal"]
       }
     ]
   },
@@ -1178,7 +1202,7 @@
     ]
   },
   "Holy Power": {
-    "note": "Build 70009: +3%/rank crit on Holy Shock AND Holy Strike, +1%/rank crit on all other spells (parser keeps only the first clause). Healer lab calibration (2026-09-30, holy-heal): removing it costs 6.4% healing capacity in the lab (scorer said 3.4% on the same scale); heal values scaled x1.00, the cap on effect size stops short of the target (3.4%). Other modes unchanged.",
+    "note": "Build 70009: +3%/rank crit on Holy Shock AND Holy Strike, +1%/rank crit on all other spells (parser keeps only the first clause). Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 1.5% healing capacity in the lab (scorer said 0.7% on the same scale); already within tolerance, heal effects split off unchanged (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1213,23 +1237,23 @@
       {
         "channel": "crit",
         "scope": ["ability:Holy Shock", "ability:Holy Strike"],
-        "per_rank": 0.1,
-        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "per_rank": 0.016002,
+        "values": [0.016002, 0.032005, 0.048007, 0.064009, 0.080011],
         "modes": ["heal"],
         "specs": ["holy-heal"]
       },
       {
         "channel": "crit",
         "scope": ["type:spell"],
-        "per_rank": 0.033333,
-        "values": [0.033333, 0.066667, 0.1, 0.133334, 0.166667],
+        "per_rank": 0.005334,
+        "values": [0.005334, 0.010668, 0.016002, 0.021336, 0.026671],
         "modes": ["heal"],
         "specs": ["holy-heal"]
       }
     ]
   },
   "Benediction": {
-    "note": "-2%/rank mana on all instant spells and abilities (Judgements, Seals, Holy Shock, Consecration). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x2.00 to match (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.7% on the same scale); raid values scaled x0.73 to match (2.9%). Other modes unchanged.",
+    "note": "-2%/rank mana on all instant spells and abilities (Judgements, Seals, Holy Shock, Consecration). Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x2.00 to match (0.9%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.7% on the same scale); raid values scaled x0.73 to match (2.9%). Other modes unchanged. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 0.2% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x0.28 to match (0.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1244,7 +1268,7 @@
         "scope": ["instant", "yellow"],
         "per_rank": 0.02,
         "values": [0.02, 0.04, 0.06, 0.08, 0.1],
-        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "modes": ["raid", "leveling-aoe", "tank"],
         "specs": ["holy-heal"]
       },
       {
@@ -1260,7 +1284,8 @@
         "scope": ["instant", "yellow"],
         "per_rank": 0.02,
         "values": [0.02, 0.04, 0.06, 0.08, 0.1],
-        "modes": ["heal"]
+        "modes": ["heal"],
+        "specs": ["ret-dps", "prot-tank"]
       },
       {
         "channel": "mana_cost",
@@ -1308,6 +1333,13 @@
         "values": [0.007055, 0.014111, 0.021168, 0.028223, 0.035277],
         "modes": ["raid"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant", "yellow"],
+        "values": [0.011141, 0.022283, 0.033424, 0.044565, 0.055706],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2020,7 +2052,7 @@
     ]
   },
   "Reverence": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 0.9% on the same scale); raid values scaled x3.23 to match (3.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 0.9% on the same scale); raid values scaled x3.23 to match (3.1%). Other modes unchanged. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 10.3% healing capacity in the lab (scorer said 7.8% on the same scale); heal values scaled x1.37 to match (10.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2049,14 +2081,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.27061, 0.541222, 0.811832],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["holy-heal"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.500001, 1.000002, 1.5],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2077,6 +2101,14 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.266611, 0.533221, 0.799832],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2279,7 +2311,7 @@
     ]
   },
   "Conviction": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.3% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x1.50 to match (4.4%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 6.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (6.6%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 4.9% on the same scale); raid values scaled x0.74 to match (3.9%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.6% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.3% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x1.50 to match (4.4%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 6.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (6.6%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 4.9% on the same scale); raid values scaled x0.74 to match (3.9%). Other modes unchanged. Raid sim calibration [prot-tank] (2026-10-26, wowsims/forever 30f67f5d2, prot-tank): removing it costs 1.6% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged. 2026-11-09: the holy-heal entries still described the old talent (5 ranks of melee crit), so no heal matched them and the healer calibration could not fit the +7.3% the lab measures on holy-ml-heal; now the client 70753 tooltip, 2% a rank to every spell and attack (3 ranks), for the heal sources. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 3.9% healing capacity in the lab (scorer said 1.4% on the same scale); heal values scaled x2.84 to match (4.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2288,22 +2320,6 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["holy-heal", "prot-tank"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "source": "parsed",
-        "modes": ["raid", "leveling-aoe", "heal", "tank"],
-        "specs": ["holy-heal"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "source": "parsed",
-        "modes": ["leveling-aoe", "heal", "tank"],
-        "specs": ["holy-heal"]
       },
       {
         "channel": "crit",
@@ -2336,6 +2352,22 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "tooltip",
+        "modes": ["raid", "leveling-aoe", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.056712, 0.113424, 0.170136],
+        "source": "tooltip",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2393,7 +2425,7 @@
     ]
   },
   "Divine Intellect": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.1% on the same scale); already within tolerance, raid effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.00 to match (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x8.43 to match (2.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -0.0% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 0.5% DPS in the simulator (scorer said 0.1% on the same scale); already within tolerance, raid effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x4.00 to match (0.6%). Other modes unchanged. Fight lab calibration [ret-dps, leveling-aoe] (2026-10-19, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-aoe values scaled x8.43 to match (2.0%). Other modes unchanged. Raid sim calibration [ret-dps] (2026-10-26, wowsims/forever 30f67f5d2, ret-dps, training dummy): removing it costs -0.0% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 1.7% healing capacity in the lab (scorer said 1.3% on the same scale); already within tolerance, heal effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2410,14 +2442,6 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
         "specs": ["prot-tank"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
-        "values": [0.03945, 0.0789, 0.11835, 0.1578, 0.197249],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["holy-heal"]
       },
       {
         "channel": "stat",
@@ -2450,6 +2474,14 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.01154, 0.023079, 0.034619, 0.046159, 0.057698],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2550,7 +2582,7 @@
     ]
   },
   "Healing Light": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, holy-heal): removing it costs 6.7% healing capacity in the lab (scorer said 6.7% on the same scale); already within tolerance, heal effects split off unchanged (6.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 6.8% healing capacity in the lab (scorer said 7.2% on the same scale); already within tolerance, heal effects split off unchanged (7.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -2572,6 +2604,19 @@
         "scope": ["ability:Holy Light", "ability:Flash of Light", "ability:Holy Shock"],
         "values": [0.050182, 0.100364, 0.150547],
         "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Oath of Light": {
+    "note": "2026-11-09 template (the tooltip parses to no effect): the Oath target's Holy Light +400, Flash of Light +115, Holy Shock +229 healing, about 15% on a Holy Light of the raid build's rank against the share of healing that lands on the one Oath target (the tank in the healer lab's group). The healer calibration scales it to the lab's removal value (+21.3% capacity on holy-ml-heal, 2026-11-09). Healer lab calibration [holy-heal] (2026-11-09, holy-heal): removing it costs 21.3% healing capacity in the lab (scorer said 8.0% on the same scale); heal values scaled x2.64 to match (21.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Holy Light", "ability:Flash of Light", "ability:Holy Shock"],
+        "values": [0.39567],
+        "source": "template",
         "modes": ["heal"],
         "specs": ["holy-heal"]
       }

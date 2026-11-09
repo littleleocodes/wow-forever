@@ -1,0 +1,380 @@
+{
+ "class": "mage",
+ "spec": "Hybrid Fire/Frost",
+ "build": "frostfire-open-leveling",
+ "rotation": "frostfire-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-11",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "14",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 1
+  },
+  {
+   "levels": "15-17",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Arcane",
+   "talent": "Arcane Resilience",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "45-47",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "53-54",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "55",
+   "tree": "Fire",
+   "talent": "Blast Wave",
+   "points": 1
+  },
+  {
+   "levels": "56-58",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 36.709,
+   "values_at_60": {
+    "Arcane Resilience": -0.009,
+    "Fingers of Frost": -0.838,
+    "Fire Power": 0.015,
+    "Wand Specialization": -0.094
+   },
+   "zero": [
+    "Arcane Resilience",
+    "Fire Power",
+    "Wand Specialization"
+   ]
+  },
+  {
+   "weighted": 36.645,
+   "values_at_60": {
+    "Fingers of Frost": -0.856,
+    "Fire Power": 0.048,
+    "Improved Frost Nova": -0.06,
+    "Wand Specialization": -0.468
+   },
+   "zero": [
+    "Fire Power",
+    "Improved Frost Nova"
+   ]
+  },
+  {
+   "weighted": 36.615,
+   "values_at_60": {
+    "Blast Wave": 0.0,
+    "Critical Mass": -0.47,
+    "Fingers of Frost": -1.129,
+    "Impact": -0.132,
+    "Improved Frost Nova": -0.308,
+    "Incineration": -0.311,
+    "Wand Specialization": -0.388
+   },
+   "zero": [
+    "Blast Wave"
+   ]
+  },
+  {
+   "weighted": 36.54,
+   "values_at_60": {
+    "Critical Mass": -0.331,
+    "Fingers of Frost": -1.278,
+    "Impact": -0.179,
+    "Improved Frost Nova": -0.214,
+    "Incineration": -0.204,
+    "Wand Specialization": -0.521
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Arcane Resilience",
+   "to": "Improved Frost Nova",
+   "level": 32,
+   "seed3": -0.0018,
+   "seed4": -0.0029,
+   "why": "tie-break"
+  },
+  {
+   "from": "Fire Power",
+   "to": "Impact",
+   "level": 60,
+   "seed3": -0.0008,
+   "seed4": -0.0008,
+   "why": "tie-break"
+  },
+  {
+   "from": "Blast Wave",
+   "to": "Improved Frost Nova",
+   "level": 55,
+   "seed3": -0.002,
+   "seed4": -0.0008,
+   "why": "tie-break"
+  },
+  {
+   "from": "Frost Warding",
+   "to": "Improved Frostbolt",
+   "level": 13,
+   "seed3": -0.0033,
+   "seed4": -0.0046,
+   "why": "gate"
+  },
+  {
+   "from": "Frost Warding",
+   "to": "Improved Frostbolt",
+   "level": 12,
+   "seed3": -0.0011,
+   "seed4": -0.0008,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-11",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "12-14",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 3
+  },
+  {
+   "levels": "15-17",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "40-44",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "45-47",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "53-54",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "55",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "56-58",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Impact",
+   "points": 1
+  }
+ ]
+}

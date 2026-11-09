@@ -400,3 +400,9 @@ Healer filler pass (fixed tool, 200 runs, five-minute and ten-minute fights) res
   Improved Judgement, plus the two gate swaps above), Holy/Protection (Holy Conduit 2 to Reckoning and Vindication).
 - Guides rewritten for the new orders: Holy, Retribution, Prot-Ret, Holy/Protection (by-level and rotation guides), stamped, measured.
   `level_guides.py --check`: 0 errors for every class. `page_lint`: 0 paladin findings; left: mage raid (gear redo), rogue raid (rogue lane).
+- Healer calibrations repaired and re-run for all four healer classes (the healer calibration had crashed on every run since
+  2026-10-18; records dated 2026-10-01). Paladin now with the page build holy-ml-heal: Oath of Light fitted (lab +21.3%, stats model
+  +21.4%), Conviction +4.0% (its stale melee-only entry replaced). Druid: Moonglow fitted from 26.9% to 0 (it cheapens damage spells only).
+  Open, an alternative only: the Restoration hand draft `resto-raid-healer` under "Other builds" keeps Moonglow 3 (nothing for heals)
+  and Wild Growth (-1.9% in the lab); the page build `restoration-ml-heal` takes neither. The four healer reports re-run on the page
+  builds with the new fits (the shaman report dated from 2026-09-30).

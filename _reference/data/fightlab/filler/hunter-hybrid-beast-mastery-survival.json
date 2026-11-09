@@ -1,0 +1,252 @@
+{
+ "class": "hunter",
+ "spec": "Hybrid Beast Mastery/Survival",
+ "build": "beast-survival-open-leveling",
+ "rotation": "melee-dps",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Survival",
+   "talent": "Survivalist",
+   "points": 1
+  },
+  {
+   "levels": "20-22",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Survival",
+   "talent": "Clever Traps",
+   "points": 2
+  },
+  {
+   "levels": "25-28",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 4
+  },
+  {
+   "levels": "29",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 1
+  },
+  {
+   "levels": "30-31",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 2
+  },
+  {
+   "levels": "32-33",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "34-38",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "39-43",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "44-45",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "46-48",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 3
+  },
+  {
+   "levels": "49-51",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Beast Mastery",
+   "talent": "Improved Aspect of the Monkey",
+   "points": 2
+  },
+  {
+   "levels": "54-58",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "59-60",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 21.327,
+   "values_at_60": {
+    "Bestial Discipline": -0.312,
+    "Lethal Attacks": -0.088,
+    "Resourcefulness": -0.979,
+    "Survivalist's Discipline": -0.908
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Improved Aspect of the Monkey",
+   "to": "Unleashed Fury",
+   "level": 53,
+   "seed3": -0.0019,
+   "seed4": -0.0024,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Aspect of the Monkey",
+   "to": "Unleashed Fury",
+   "level": 52,
+   "seed3": -0.0018,
+   "seed4": -0.0018,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Survival",
+   "talent": "Survivalist",
+   "points": 1
+  },
+  {
+   "levels": "20-22",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Survival",
+   "talent": "Clever Traps",
+   "points": 2
+  },
+  {
+   "levels": "25-28",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 4
+  },
+  {
+   "levels": "29",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 1
+  },
+  {
+   "levels": "30-31",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 2
+  },
+  {
+   "levels": "32-33",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "34-38",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "39-43",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "44-45",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "46-48",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 3
+  },
+  {
+   "levels": "49-53",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "54-58",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "59-60",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 2
+  }
+ ]
+}

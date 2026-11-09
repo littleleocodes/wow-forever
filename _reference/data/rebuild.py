@@ -121,7 +121,8 @@ def load_build(cls, bid):
 
 
 def candidates(cls, tag):
-    return sorted(glob.glob(str(paths.fightlab_dir(cls) / "candidates" / f"cand-{tag}-*.json")))
+    import validate_builds as VB   # candidates holding talents the current trees lack stay out of fits and races (2026-11-09)
+    return VB.live_candidates(cls, sorted(glob.glob(str(paths.fightlab_dir(cls) / "candidates" / f"cand-{tag}-*.json"))))
 
 
 def optimizer_pairs(cls):
@@ -432,10 +433,11 @@ def raid_step(cls, a, log, result):
         folder.mkdir(parents=True, exist_ok=True)
         # the simulator's presets within reach of our best build compete: calibrated with ours, seeding the optimizer, raced, adoptable
         sh([rs / "run.py", cls, "--spec", spec, "--preset-candidates"], a.dry_run, log)
-        presets = sorted(str(p) for p in folder.glob(f"cand-{spec}-preset-*.json"))
+        import validate_builds as VB   # stale candidates out (2026-11-09)
+        presets = VB.live_candidates(cls, sorted(str(p) for p in folder.glob(f"cand-{spec}-preset-*.json")))
         rounds = []
         for rnd in range(1, a.raid_rounds + 1):
-            cands = sorted(str(p) for p in folder.glob(f"cand-{spec}-*.json"))
+            cands = VB.live_candidates(cls, sorted(str(p) for p in folder.glob(f"cand-{spec}-*.json")))
             before = alloc_of(load_build(cls, opt_id)) if not a.dry_run else {}
             sh([rs / "calibrate.py", cls, "--spec", spec, "--iterations", a.iterations_calibrate, "--write"], a.dry_run, log)
             hands = [b for b in entry["builds"] if not b.startswith("opt-")]   # the hand raid drafts seed the search
@@ -470,7 +472,7 @@ def raid_step(cls, a, log, result):
                     rounds[-1]["converged_by_noise"] = True
                     break
             print(f"  {spec}: new {opt_id} saved as {path.name}; calibrating again")
-        cands = sorted(str(p) for p in folder.glob(f"cand-{spec}-*.json"))
+        cands = VB.live_candidates(cls, sorted(str(p) for p in folder.glob(f"cand-{spec}-*.json")))
         rc, so = sh([rs / "run.py", cls, "--spec", spec, "--builds", *entry["builds"], *cands, "--iterations", a.iterations_race, "--write"], a.dry_run, log)
         best, promoted = None, None
         if not a.dry_run and rc == 0:
@@ -639,8 +641,9 @@ def heal_step(cls, a, log, result):
     folder = paths.heallab_dir(cls) / "candidates"
     folder.mkdir(parents=True, exist_ok=True)
     rounds = []
+    import validate_builds as VB   # stale candidates out (2026-11-09)
     for rnd in range(1, a.raid_rounds + 1):
-        cands = sorted(str(p) for p in folder.glob(f"cand-{tag}-*.json"))
+        cands = VB.live_candidates(cls, sorted(str(p) for p in folder.glob(f"cand-{tag}-*.json")))
         before = alloc_of(load_build(cls, opt)) if not a.dry_run else {}
         sh([HL / "calibrate.py", cls, "--runs", a.runs_heal, "--write"], a.dry_run, log)
         sh([HERE / "scorer/run.py", cls, "--spec", spec, "--profile", "raid-heal", "--write", "--export", "--seed", hand], a.dry_run, log)

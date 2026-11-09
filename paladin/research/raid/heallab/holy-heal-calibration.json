@@ -3,136 +3,196 @@
  "spec": "holy-heal",
  "runs": 60,
  "builds": [
+  "holy-ml-heal",
   "holy-raid-healer",
   "opt-holy-heal-raid-heal",
-  "cand-holy-r1",
   "cand-holy-r2"
  ],
  "capacity": [
-  5.0,
-  2.5,
-  1.6666666666666667,
-  1.25,
-  1.0,
-  15.000150001500014,
-  7.4999625001874985,
-  5.0,
-  3.7499812500937493,
-  2.999994000012
+  66.68741386209044,
+  200.05334755934916
  ],
  "talents": [
   {
-   "talent": "Illumination",
-   "lab": 0.12756492962484003,
-   "ev_before": 0.13712429120871636,
-   "ev_after": 0.13712429120871636,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Oath of Light",
+   "lab": 0.2131941856131196,
+   "ev_before": 0.07974349651326391,
+   "ev_after": 0.214316983382464,
+   "scale": 2.6378033328801394,
+   "how": "fitted",
    "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
-    "cand-holy-r2"
+    "holy-ml-heal"
    ]
   },
   {
    "talent": "Reverence",
-   "lab": 0.1158159845780195,
-   "ev_before": 0.11363993447595458,
-   "ev_after": 0.11363993447595458,
+   "lab": 0.10329066684170764,
+   "ev_before": 0.07823705744185792,
+   "ev_after": 0.10014764020102387,
+   "scale": 1.3682660767808557,
+   "how": "fitted",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Illumination",
+   "lab": 0.09917074119466823,
+   "ev_before": 0.09131086768804345,
+   "ev_after": 0.0825585024851086,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "holy-ml-heal",
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
     "cand-holy-r2"
    ]
   },
   {
    "talent": "Healing Light",
-   "lab": 0.06672544154621804,
-   "ev_before": 0.06654658739028786,
-   "ev_after": 0.06654658739028786,
+   "lab": 0.06799305454089763,
+   "ev_before": 0.07229741906378707,
+   "ev_after": 0.07469099010098815,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "holy-ml-heal",
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Conviction",
+   "lab": 0.03946063995904558,
+   "ev_before": 0.013737967175596092,
+   "ev_after": 0.03966442961645867,
+   "scale": 2.8355916682630777,
+   "how": "fitted",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Light's Vigil",
+   "lab": 0.029555992239198872,
+   "ev_before": 0.014474073662735459,
+   "ev_after": 0.029555748208220586,
+   "scale": 2.0167385395616293,
+   "how": "fitted",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal"
+   ]
+  },
+  {
+   "talent": "Holy Shock",
+   "lab": 0.02348663514589879,
+   "ev_before": 0.0013291581992289105,
+   "ev_after": 0.01787931000697333,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal"
+   ]
+  },
+  {
+   "talent": "Divine Favor",
+   "lab": 0.018946386452037754,
+   "ev_before": 0.014984368573885336,
+   "ev_after": 0.014723628417197753,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Divine Intellect",
+   "lab": 0.017037183484819425,
+   "ev_before": 0.013013709289346571,
+   "ev_after": 0.011999064554649178,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
     "cand-holy-r2"
    ]
   },
   {
    "talent": "Holy Power",
-   "lab": 0.06366604477611948,
-   "ev_before": 0.03363403178489572,
-   "ev_after": 0.03363403178489572,
-   "scale": 1.0,
-   "how": "capped",
-   "builds": [
-    "holy-raid-healer"
-   ]
-  },
-  {
-   "talent": "Divine Intellect",
-   "lab": 0.03480786595684163,
-   "ev_before": 0.042130006801151414,
-   "ev_after": 0.042130006801151414,
+   "lab": 0.015272618251179747,
+   "ev_before": 0.006634639995197676,
+   "ev_after": 0.006697331266119245,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal"
+   ]
+  },
+  {
+   "talent": "Benediction",
+   "lab": 0.003370252301609539,
+   "ev_before": 0.0018401008583408857,
+   "ev_after": 0.0016762166716263903,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "holy-ml-heal",
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
     "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Boundless Light",
+   "lab": 0.001295201060349801,
+   "ev_before": 0.0008663994007344391,
+   "ev_after": 0.0008745194400855146,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "holy-ml-heal",
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal"
    ]
   },
   {
    "talent": "Infusion of Light",
-   "lab": 0.03440941310665879,
-   "ev_before": 0.028159262808774378,
-   "ev_after": 0.028159262808774378,
+   "lab": -0.0007233161156325391,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
-   "how": "kept",
+   "how": "noise",
    "builds": [
+    "holy-ml-heal",
     "holy-raid-healer",
     "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
     "cand-holy-r2"
-   ]
-  },
-  {
-   "talent": "Divine Favor",
-   "lab": 0.03363793329067401,
-   "ev_before": 0.04170124603215637,
-   "ev_after": 0.04170124603215637,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "holy-raid-healer",
-    "opt-holy-heal-raid-heal",
-    "cand-holy-r1",
-    "cand-holy-r2"
-   ]
-  },
-  {
-   "talent": "Holy Shock",
-   "lab": -0.013838297374970767,
-   "ev_before": 0.00022814669620283118,
-   "ev_after": 0.00022814669620283118,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "holy-raid-healer",
-    "cand-holy-r1"
    ]
   }
  ],
  "shares": {
-  "Holy Light": 0.5229191947260762,
-  "Flash of Light": 0.43876123983444976,
-  "Lay on Hands": 0.03338872740992421,
-  "Holy Shock": 0.004930838029549842
+  "Holy Light": 0.44681310544573255,
+  "Flash of Light": 0.3708747403808811,
+  "Light's Vigil": 0.140287764816297,
+  "Holy Shock": 0.021100038129811517,
+  "Lay on Hands": 0.02092435122727778
  }
 }
