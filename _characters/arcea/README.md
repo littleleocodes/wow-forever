@@ -50,15 +50,15 @@ Everything below is worth doing at your level or within 3 levels: items you can 
 ### Enchant
 
 - **Spidertank Oilrag** (wrist, once you have it at level 29): skip, Enchant Bracer - Lesser Spirit saves only about 18 min of killing before you replace it.
-- **Ivycloth Tunic of Frozen Wrath** (chest, once you have it at level 26): skip, Enchant Chest - Intellect saves only about 5 min of killing before you replace it at level 40.
-- **Infiltrator Cloak of Frozen Wrath** (back, once you have it at level 26): At Enchanting 285: Enchant Cloak - Superior Defense (pattern: Formula: Enchant Cloak - Superior Defense (vendor)), 0.1% faster kills.
-- **Thistlefur Gloves of Magic** (hands, once you have it at level 28): At Enchanting 300: Enchant Gloves - Frost Power (pattern: Formula: Enchant Gloves - Frost Power (drop)), 8.4% faster kills.
+- **Rotmender's Garb** (chest): skip, Enchant Chest - Intellect saves only about 2 min of killing before you replace it at level 33.
+- **Seer's Cape** (back): At Enchanting 285: Enchant Cloak - Superior Defense (pattern: Formula: Enchant Cloak - Superior Defense (vendor)), 0.1% faster kills.
+- **Town Clerk's Mittens** (hands): At Enchanting 300: Enchant Gloves - Frost Power (pattern: Formula: Enchant Gloves - Frost Power (drop)), 8.4% faster kills.
 - **Durable Boots of Frozen Wrath** (feet, once you have it at level 26): At Enchanting 190: Enchant Boots - Lesser Spirit (pattern: Formula: Enchant Boots - Lesser Spirit (drop)), 0.5% faster kills.
-- **Fallen Dragon's Scepter** (weapon, once you have it at level 26): skip, Enchant 2H Weapon - Lesser Intellect saves only about 19 min of killing before you replace it.
+- **Fallen Dragon's Scepter** (weapon, once you have it at level 26): skip, Enchant 2H Weapon - Lesser Intellect saves only about 3 min of killing before you replace it at level 34.
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.7 hours old).
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.1 hours old).
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |
 |---|---|---|---|---|---|---|---|
@@ -77,31 +77,21 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 ### Dungeons to run
 
 - **Shadowfang Keep** (level 22-30):
-  - Archmage Arugal: **waist**: Belt of Arugal, 4.8% faster kills, replaces Rotmender's Sash (wear it right away; best to the end of leveling; saves about 166 min of killing). Shadowfang Keep (22-30), Archmage Arugal, 40% drop. If it does not drop, wear Sage's Sash of Frozen Wrath instead (4.0% faster kills; Auction House now: 79s).
-  - Commander Springvale: **trinket1**: Worgenbane Talisman, 0.8% faster kills (wear it right away; best to the end of leveling; saves about 29 min of killing). Shadowfang Keep (22-30), Commander Springvale.
-- **Blackfathom Deeps** (level 24-32):
-  - Twilight Lord Kelris: **legs**: Gaze Dreamer Pants, 5.5% faster kills, replaces Rotmender's Leggings (wear it right away; best to the end of leveling; saves about 189 min of killing). Blackfathom Deeps (24-32), Twilight Lord Kelris, 40% drop. If it does not drop, wear Durable Pants of Frozen Wrath from level 28 (7.2% faster kills; Auction House now: 1g 29s).
+  - Archmage Arugal: **waist**: Belt of Arugal, 4.8% faster kills, replaces Rotmender's Sash (wear it right away; best to the end of leveling; saves about 77 min of killing). Shadowfang Keep (22-30), Archmage Arugal, 40% drop. If it does not drop, wear Star Belt from level 35 (3.9% faster kills; Tailoring: learn it first (pattern: Pattern: Star Belt (drop); Classic asked skill 200, Forever often less; you have 106)).
 - **Gnomeregan** (level 29-38):
-  - Electrocutioner 6000: **wrist**: Spidertank Oilrag, 3.6% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 118 min of killing). Gnomeregan (29-38), Electrocutioner 6000, 40% drop. If it does not drop, wear Arcane Runed Bracers from level 36 (1.8% faster kills; quest "WANTED: Marez Cowl" (Arathi Highlands, level 39)).
-- **The Stockade** (level 24-32):
-  - Targorr the Dread: **finger1**: Dark Horde Band, 3.0% faster kills, replaces Avala's Binding (wear it right away; best to the end of leveling; saves about 104 min of killing). The Stockade (24-32), Targorr the Dread. If it does not drop, wear Ring of Forlorn Spirits from level 32 (3.1% faster kills; quest "The Legend of Stalvan" (Duskwood, level 35)).
-- **Razorfen Kraul** (level 29-38):
-  - Roogug: **trinket2**: Roogug's Severed Head, 0.6% faster kills (wear it right away; best to the end of leveling; saves about 21 min of killing). Razorfen Kraul (29-38), Roogug.
+  - Electrocutioner 6000: **wrist**: Spidertank Oilrag, 3.6% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 60 min of killing). Gnomeregan (29-38), Electrocutioner 6000, 40% drop. If it does not drop, wear Arcane Runed Bracers from level 36 (1.8% faster kills; quest "WANTED: Marez Cowl" (Arathi Highlands, level 39)).
 
 ### Quests to do
 
-- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best to the end of leveling; saves about 253 min of killing). quest "Stopping the Cycle" (Wetlands).
-- **finger2**: Snake Hoop, 3.3% faster kills, replaces Slain Baron's Signet (wear it right away; best to the end of leveling; saves about 113 min of killing). quest "Willix the Importer" (Razorfen Kraul, level 30).
+- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best until level 34; saves about 33 min of killing). quest "Stopping the Cycle" (Wetlands).
+- **finger2**: Snake Hoop, 3.3% faster kills, replaces Slain Baron's Signet (wear it right away; best to the end of leveling; saves about 52 min of killing). quest "Willix the Importer" (Razorfen Kraul, level 30).
 
 ### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **head**: Durable Hat of Frozen Wrath, 6.9% faster kills (wear at 27; best to the end of leveling; saves about 234 min of killing). Auction House now: 1g 55s. Saves about 234 min of killing; earning its price takes about 62 min of play: worth it. Fits the gold free for gear (1g 4s 48c left after the buys marked so far).
-- **feet**: Durable Boots of Frozen Wrath, 4.8% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 167 min of killing). Auction House now: 1g 29s. Saves about 167 min of killing; earning its price takes about 50 min of play: worth it.
-- **shoulder**: Elder's Mantle of Magic, 3.1% faster kills, replaces Double-Stitched Woolen Shoulders (wear at 28; best to the end of leveling; saves about 103 min of killing). Auction House now: 98s. Saves about 103 min of killing; earning its price takes about 49 min of play: worth it. Fits the gold free for gear (6s 48c left after the buys marked so far).
-- **chest**: Ivycloth Tunic of Frozen Wrath, 3.7% faster kills, replaces Rotmender's Garb (wear it right away; best until level 40; saves about 40 min of killing). Auction House now: 79s. Saves about 40 min of killing; earning its price takes about 30 min of play: worth it.
-- **hands**: Thistlefur Gloves of Magic, 2.9% faster kills, replaces Town Clerk's Mittens (wear at 28; best until level 40; saves about 28 min of killing). Auction House now: 75s. Saves about 28 min of killing; earning its price takes about 38 min of play: not worth the gold.
-- **back**: Infiltrator Cloak of Frozen Wrath, 3.3% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 115 min of killing). Auction House now: 3g 36s. Saves about 115 min of killing; earning its price takes about 130 min of play: not worth the gold.
-- **ranged**: Thunderwood, 4.6% faster kills, replaces Deepblaze (wear it right away; best until level 37; saves about 36 min of killing). Auction House now: 3g 8s. Saves about 36 min of killing; earning its price takes about 119 min of play: not worth the gold.
+- **legs**: Durable Pants of Frozen Wrath, 5.6% faster kills, replaces Rotmender's Leggings (wear at 28; best until level 53; saves about 75 min of killing). Auction House now: 1g 29s. Saves about 75 min of killing; earning its price takes about 65 min of play: worth it. Fits the gold free for gear (1g 30s 48c left after the buys marked so far).
+- **feet**: Durable Boots of Frozen Wrath, 4.8% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 73 min of killing). Auction House now: 1g 29s. Saves about 73 min of killing; earning its price takes about 50 min of play: worth it. Fits the gold free for gear (1s 48c left after the buys marked so far).
+- **head**: Durable Hat of Frozen Wrath, 6.9% faster kills (wear at 27; best until level 45; saves about 71 min of killing). Auction House now: 1g 55s. Saves about 71 min of killing; earning its price takes about 62 min of play: worth it.
+- **shoulder**: Sage's Mantle of Frozen Wrath, 2.6% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 40 min of killing). Auction House now: 96s. Saves about 40 min of killing; earning its price takes about 37 min of play: worth it.
 
 ### Talents and the rest
 
@@ -153,60 +143,102 @@ Materials: Boar Ribs x4, Hot Spices x2.
 |---|---|---|---|
 | head | **empty** | 0 | level 27: Durable Hat of Frozen Wrath |
 | neck | Ephemeral Choker | 0.7% faster kills | level 41: Talvash's Enhancing Necklace |
-| shoulder | Double-Stitched Woolen Shoulders | 2.1% faster kills | level 28: Elder's Mantle of Magic |
-| back | Seer's Cape | 0.5% faster kills | level 26: Infiltrator Cloak of Frozen Wrath |
-| chest | Rotmender's Garb | 3.2% faster kills | level 26: Ivycloth Tunic of Frozen Wrath |
+| shoulder | Double-Stitched Woolen Shoulders | 2.1% faster kills | level 26: Sage's Mantle of Frozen Wrath |
+| back | Seer's Cape | 0.5% faster kills | level 30: Azure Silk Cloak |
+| chest | Rotmender's Garb | 3.2% faster kills | level 33: Robe of Power |
 | wrist | Bridgebreaker Bindings | 1.5% faster kills | level 29: Spidertank Oilrag |
-| hands | Town Clerk's Mittens | 2.3% faster kills | level 28: Thistlefur Gloves of Magic |
+| hands | Town Clerk's Mittens | 2.3% faster kills | level 40: Dreamweave Gloves |
 | waist | Rotmender's Sash | 0.7% faster kills | level 26: Belt of Arugal |
-| legs | Rotmender's Leggings | 1.8% faster kills | level 26: Gaze Dreamer Pants |
+| legs | Rotmender's Leggings | 1.8% faster kills | level 28: Durable Pants of Frozen Wrath |
 | feet | Incinerator's Boots (Enchanted: Stamina +3) | 0.7% faster kills | level 26: Durable Boots of Frozen Wrath |
-| finger1 | Avala's Binding | 0.0% faster kills | level 26: Dark Horde Band |
+| finger1 | Avala's Binding | 0.0% faster kills | level 32: Ring of Forlorn Spirits |
 | finger2 | Slain Baron's Signet | 0.0% faster kills | level 27: Snake Hoop |
-| trinket1 | **empty** | 0 | level 26: Worgenbane Talisman |
-| trinket2 | **empty** | 0 | level 29: Roogug's Severed Head |
+| trinket1 | **empty** | 0 | nothing worth 0.5% before 60 |
+| trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
 | weapon | Coldspire Staff (Enchanted: Intellect +5) | 14.0% faster kills | level 26: Fallen Dragon's Scepter |
-| ranged | Deepblaze | 3.4% faster kills | level 26: Thunderwood |
+| ranged | Deepblaze | 3.4% faster kills | level 37: Icefury Wand |
 
 ## Level by level
 
 Each upgrade worth 0.5% faster kills or more, under the level at which you can go and get it, with the level you can wear it when that is later. A dungeon item can drop or not: the data has no drop chances.
 
+### Level 30
+
+#### Craft
+
+- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 106); Auction House now: 57s. Materials: Bolt of Silk Cloth x3, Blue Dye x2, Fine Thread x2 (about 29s 16c at today's prices).
+
+
+### Level 31
+
+#### Dungeons to run
+
+- **Scarlet Monastery** (level 30-45):
+  - Arcanist Doan: **weapon**: Illusionary Rod, 1.8% faster kills, replaces Fallen Dragon's Scepter (wear at 34; best to the end of leveling; saves about 24 min of killing). Scarlet Monastery (30-45), Arcanist Doan, 25% drop. If it does not drop, keep your Fallen Dragon's Scepter.
+
+
+### Level 32
+
+#### Quests to do
+
+- **finger1**: Ring of Forlorn Spirits, 3.1% faster kills, replaces Avala's Binding (wear it right away; best to the end of leveling; saves about 47 min of killing). quest "The Legend of Stalvan" (Duskwood, level 35).
+
+
+### Level 33
+
+#### Craft
+
+- **chest**: Robe of Power, 4.6% faster kills, replaces Rotmender's Garb (wear it right away; best until level 40; saves about 25 min of killing). Tailoring: learn it first (trainer; Classic asked skill 190, Forever often less; you have 106). Materials: Bolt of Mageweave x2, Elemental Earth x2, Elemental Water x2, Elemental Fire x2, Elemental Air x2, Silken Thread x2 (about 2g 17s 28c at today's prices).
+
+
 ### Level 37
 
 #### Quests to do
 
-- **ranged**: Icefury Wand, 1.9% faster kills, replaces Thunderwood (wear it right away; best to the end of leveling; saves about 51 min of killing). quest "Mage's Wand" (?, level 40).
+- **ranged**: Icefury Wand, 4.6% faster kills, replaces Deepblaze (wear it right away; best to the end of leveling; saves about 87 min of killing). quest "Mage's Wand" (?, level 40).
 
 
 ### Level 40
 
 #### Craft
 
-- **chest**: Dreamweave Vest, 3.0% faster kills, replaces Ivycloth Tunic of Frozen Wrath (wear it right away; best to the end of leveling; saves about 70 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 99s. Materials: Bolt of Mageweave x6, Wildvine x6, Heart of the Wild x2, Heavy Silken Thread x2 (about 2g 45s 40c at today's prices).
-- **hands**: Dreamweave Gloves, 2.7% faster kills, replaces Thistlefur Gloves of Magic (wear it right away; best to the end of leveling; saves about 63 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 60s. Materials: Bolt of Mageweave x4, Wildvine x4, Heart of the Wild x2, Heavy Silken Thread x2 (about 1g 83s 60c at today's prices).
+- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 60s. Materials: Bolt of Mageweave x4, Wildvine x4, Heart of the Wild x2, Heavy Silken Thread x2 (about 1g 83s 60c at today's prices).
+- **chest**: Dreamweave Vest, 1.3% faster kills, replaces Robe of Power (wear it right away; best to the end of leveling; saves about 23 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 106); Auction House now: 4g 99s. Materials: Bolt of Mageweave x6, Wildvine x6, Heart of the Wild x2, Heavy Silken Thread x2 (about 2g 45s 40c at today's prices).
 
 
 ### Level 41
 
 #### Quests to do
 
-- **neck**: Talvash's Enhancing Necklace, 2.6% faster kills, replaces Ephemeral Choker (wear it right away; best to the end of leveling; saves about 59 min of killing). quest "Restoring the Necklace" (?, level 44).
+- **neck**: Talvash's Enhancing Necklace, 2.6% faster kills, replaces Ephemeral Choker (wear it right away; best to the end of leveling; saves about 35 min of killing). quest "Restoring the Necklace" (?, level 44).
+
+
+### Level 45
+
+#### Craft
+
+- **head**: Dreamweave Circlet, 2.8% faster kills, replaces Durable Hat of Frozen Wrath (wear it right away; best to the end of leveling; saves about 38 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 106). Materials: Bolt of Mageweave x8, Wildvine x4, Heart of the Wild x2, Heavy Silken Thread x3, Truesilver Bar x1, Jade x1 (about 3g 49s 78c at today's prices).
+
+
+### Level 53
+
+#### Craft
+
+- **legs**: Ghostweave Pants, 2.6% faster kills, replaces Durable Pants of Frozen Wrath (wear it right away; best to the end of leveling; saves about 21 min of killing). Tailoring: learn it first (pattern: Pattern: Ghostweave Pants (drop); Classic asked skill 290, Forever often less; you have 106). Materials: Bolt of Runecloth x6, Ghost Dye x4, Rune Thread x1 (about 30g 29s 40c at today's prices).
 
 
 ## Dungeons worth running
 
 Every dungeon with an upgrade in the plan, the boss that drops it, and the level you wear it. "One run worth" adds up each upgrade's minutes of killing saved times its drop chance (25% where the chance is unknown); the run gives its own experience too. Minutes assume 50% of your experience comes from kills.
 
-- **Shadowfang Keep** (22-30), one run worth about 74 min of killing saved, worth a run on its own: Belt of Arugal (waist, wear at 26, Archmage Arugal), Worgenbane Talisman (trinket1, wear at 26, Commander Springvale)
-- **Blackfathom Deeps** (24-32), one run worth about 76 min of killing saved, worth a run on its own: Gaze Dreamer Pants (legs, wear at 26, Twilight Lord Kelris)
-- **The Stockade** (24-32), one run worth about 26 min of killing saved, worth a run on its own: Dark Horde Band (finger1, wear at 26, Targorr the Dread)
-- **Gnomeregan** (29-38), one run worth about 47 min of killing saved, worth a run on its own: Spidertank Oilrag (wrist, wear at 29, Electrocutioner 6000)
-- **Razorfen Kraul** (29-38), one run worth about 5 min of killing saved, only when you are grouping for it anyway: Roogug's Severed Head (trinket2, wear at 29, Roogug)
+- **Shadowfang Keep** (22-30), one run worth about 31 min of killing saved, worth a run on its own: Belt of Arugal (waist, wear at 26, Archmage Arugal)
+- **Gnomeregan** (29-38), one run worth about 24 min of killing saved, worth a run on its own: Spidertank Oilrag (wrist, wear at 29, Electrocutioner 6000)
+- **Scarlet Monastery** (30-45), one run worth about 6 min of killing saved, only when you are grouping for it anyway: Illusionary Rod (weapon, wear at 34, Arcanist Doan)
 
 ## How this is worked out
 
 - Stat values: `_reference/data/characters/weights/mage-barrage-frost-leveling.json` (stat_weights.py): the page build in the fight lab at levels 20-60 with each stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0.
+- Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as you level) x the kills of that level (50% of the level's experience from kills, an estimate), until the plan replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later auction listings) may replace an item sooner.
 - School damage counts by the build's share: frost 85%, arcane 15% (an estimate).
 - Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession rank allows the skill at that level.
 - An upgrade is listed when it is worth 0.5% of the time per kill or more over what you would be wearing then, and it saves at least 20 minutes of killing before the next upgrade of the slot replaces it, worn at least 2 levels (level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves 20 minutes before you replace the item.

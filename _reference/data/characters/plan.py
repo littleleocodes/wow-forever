@@ -382,6 +382,14 @@ def plan(cfg, snap, at, pool, profs):
     return eq, sorted(kept, key=lambda e: (e["level"], SLOT_ORDER.index(e["slot"])))
 
 
+def auction_only_price(e):
+    """The price of an upgrade only the auction house has (None when a quest, dungeon, craft or vendor has it too)."""
+    kinds = {s["kind"] for s in e["item"]["sources"]}
+    if "auction" not in kinds or kinds & {"quest", "dungeon", "craft", "vendor"}:
+        return None
+    return next((s.get("price") for s in e["item"]["sources"] if s["kind"] == "auction"), None)
+
+
 def best_chain(evs, at):
     """The upgrades of one slot worth making (see plan): the subset of the slot's upgrades, in level order, that saves the most minutes
     of killing, each upgrade in it worn MIN_LASTS levels and saving MIN_MINUTES over the item it replaces; their replaces, gain and until
@@ -389,6 +397,9 @@ def best_chain(evs, at):
     import functools
     n = len(evs)
     base = evs[0]["prev"]
+
+    def items(c):
+        return base if c is None else [evs[c]["item"], evs[c].get("off")]
 
     def gain(p, c):
         e = evs[c]
@@ -405,10 +416,13 @@ def best_chain(evs, at):
         end = 60 if nx is None else evs[nx]["level"]
         if end - evs[c]["level"] < MIN_LASTS:
             return None
-        g = gain(p, c)
-        if g < UPGRADE or minutes_saved({"gain": g, "level": evs[c]["level"], "until": end}, at) < MIN_MINUTES:
+        m = span_minutes(items(c), items(p), evs[c]["level"], end, at)
+        if gain(p, c) < UPGRADE or m < MIN_MINUTES:
             return None
-        return minutes_saved({"gain": gain(None, c), "level": evs[c]["level"], "until": end}, at)
+        price = auction_only_price(evs[c])   # a buy must also pay for itself (pays_for_itself), or a dearer one could push out a cheaper
+        if price and m < price / (income_per_level(evs[c]["level"], QPL) or 1) * minutes_per_level(evs[c]["level"], at):
+            return None                      # one the gold test then rejected (a 2g 25s tunic over a 79s one, 2026-11-09)
+        return span_minutes(items(c), base, evs[c]["level"], end, at)
 
     @functools.lru_cache(maxsize=None)
     def best(p, c):   # (minutes, chain) choosing c after p, then the best rest
@@ -570,6 +584,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += ["## How this is worked out", "",
           f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
           "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0.",
+          f"- Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as "
+          f"you level) x the kills of that level ({KILL_SHARE:.0%} of the level's experience from kills, an estimate), until the plan "
+          "replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later "
+          "auction listings) may replace an item sooner.",
           "- School damage counts by the build's share: " + ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items()) + " (an estimate).",
           "- Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their "
           "drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession "
@@ -715,10 +733,20 @@ def kills_per_level(L):
     return XP.get(L, 0) * KILL_SHARE / (45 + 5 * L)
 
 
+def span_minutes(new, old, L0, L1, at):
+    """Minutes of killing the items `new` save over the items `old` from level L0 to L1: at each level the seconds per kill the stat
+    values give the difference x that level's kills (an item's stats are worth less as a character's own grow: holding its percent at
+    the level it was put on had kept a level-27 hat ahead of every later one, 2026-11-09)."""
+    return sum((sum(value((x or {}).get("stats"), at(L)) for x in new) - sum(value((x or {}).get("stats"), at(L)) for x in old))
+               * kills_per_level(L) for L in range(L0, L1)) / 60
+
+
 def minutes_saved(e, at):
-    """Minutes of killing an upgrade saves while it is worn: its share of faster kills x the time per kill x the kills, level by level
-    until it is replaced (or 60)."""
+    """Minutes of killing an upgrade saves while it is worn, level by level until it is replaced (or 60): by its stats against what it
+    replaces when the plan knows both, else its share of faster kills x the time per kill x the kills."""
     end = e["until"] or 60
+    if e.get("item") and "prev" in e:
+        return span_minutes([e["item"], e.get("off")], e["prev"], e["level"], end, at)
     return sum(e["gain"] * at(L)["time"] * kills_per_level(L) for L in range(e["level"], end)) / 60
 
 
@@ -731,6 +759,8 @@ def line(e, at):
     until = f"; best until level {e['until']}" if e.get("until") else "; best to the end of leveling"
     out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
     fb = e.get("fallback")
+    if fb and "keep" in fb:
+        return out + (f" If it does not drop, keep your {fb['keep']}." if fb["keep"] else "")
     if fb:
         when = f"from level {fb['level']}" if fb["level"] > e["level"] else "instead"
         out += f" If it does not drop, wear {fb['item']['name']} {when} ({pct(fb['gain'])} faster kills; {sources_text(fb['item'])})."
@@ -1056,9 +1086,16 @@ def main():
     _, alt = plan(cfg, snap, at, [p for p in nod if p["sources"]], profs)
     for e in events:
         if e["item"]["sources"] and all(s["kind"] == "dungeon" for s in e["item"]["sources"]):
-            cover = [x for x in alt if x["slot"] == e["slot"] and x["level"] < (e["until"] or 60)]
+            have = {(x or {}).get("id") for x in e["prev"]} - {None}
+            cover = [x for x in alt if x["slot"] == e["slot"] and x["level"] < (e["until"] or 60) and x["item"].get("id") not in have]
             before = [x for x in cover if x["level"] <= e["level"]]
-            e["fallback"] = before[-1] if before else (cover[0] if cover else None)
+            fb = before[-1] if before else (cover[0] if cover else None)
+            if fb:   # its gain against what you would still be wearing (the other plan's own chain had its own predecessor)
+                wl = at(max(fb["level"], e["level"]))
+                g = (value(fb["item"]["stats"], wl) + (value(fb["off"]["stats"], wl) if fb.get("off") else 0.0)
+                     - sum(value((x or {}).get("stats"), wl) for x in e["prev"])) / wl["time"]
+                fb = dict(fb, gain=g) if g >= UPGRADE else None
+            e["fallback"] = fb or {"keep": (e["prev"][0] or {}).get("name")}
     ench = enchants(cfg["school_share"])
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)
     print(f"wrote {d / 'README.md'}: {len(events)} upgrades to 60")
