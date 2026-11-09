@@ -309,6 +309,7 @@ GEAR_SHARE = 1 / 3        # the gear budget's share of each level's income after
 PLANNED = []              # (level, copper) of the buys budget_walk fits, for the gold plan
 NOW_LV = 0                # the character's level (main)
 PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
+CTX = {}                  # what the town checklist page (checklist.py) shows, filled while the README is written
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -649,6 +650,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                   "least of its talents."]
         o += [""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
+    CTX.update({"head": {"name": name, "level": lv, "race": race, "class": cls, "gold": GOLD, "fetched": fetched,
+                         "faction": snap["profile"]["faction"]["name"], "professions": {k: list(v) for k, v in profs.items()},
+                         "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"]},
+                "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n}})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
@@ -668,6 +673,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         worn[e["slot"]] = {"name": e["item"]["name"], "stats": e["item"]["stats"], "enchant": [], "enchant_stats": {},
                            "two_hand": e["item"]["slot"] == "two-hand", "planned": e["level"], "since": e["level"], "until": e["until"]}
     o += judge_lines(worn, events, wl, lv, cfg)
+    CTX["soon"] = [event_row(e, at) for e in sorted(soon, key=lambda e: (max(e["get_at"], lv), e["level"]))]
+    CTX["later"] = [event_row(e, at) for e in sorted(events, key=lambda e: (max(e["get_at"], lv), e["level"]))
+                    if lv + LOOKAHEAD < max(e["get_at"], lv) <= lv + 14]
+    CTX["enchants"] = enchant_lines(worn, ench, profs, wl, at, lv)
     o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl, at, lv) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
     cl = consumable_lines(lv, wl, profs, cfg["school_share"])
     if cl:
@@ -720,6 +729,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
             worth = sum(minutes_saved(e, at) * max((s.get("chance") or 0.25) for s in e["item"]["sources"] if s["kind"] == "dungeon"
                                                     and s["zone"] == z) for e, _ in merged.values())
             go = "worth a run on its own" if worth >= MIN_MINUTES else "only when you are grouping for it anyway"
+            CTX.setdefault("dungeons", []).append({"zone": z, "lo": lo, "hi": hi, "worth": round(worth), "own": worth >= MIN_MINUTES,
+                                                   "items": [f"{e['item']['name']} ({e['slot']}, {' or '.join(b)})" for e, b in merged.values()]})
             o += [f"- **{z}** ({lo}-{hi}), one run worth about {worth:.0f} min of killing saved, {go}: {items}"]
         o += [""]
     o += ["## How this is worked out", "",
@@ -845,8 +856,18 @@ def gold_plan(cfg, snap, at, lv):
         rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need]))
     reserve = sum(r[2] for r in rows[:2])
     spend = None if GOLD is None else max(0, GOLD - reserve)
+    opt = {L + 1: [n for n, c in train.get(L + 1, []) if n not in need] for L in range(lv - 1, 60)}
+    CTX["training"] = [{"level": lv, "need": [n for n, c in train.get(lv, []) if n in need],
+                        "cost": sum(c for n, c in train.get(lv, []) if n in need), "optional": opt.get(lv, []),
+                        "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need)}] + \
+                      [{"level": L + 1, "need": names, "cost": nt, "optional": opt.get(L + 1, []), "optional_cost": ot}
+                       for L, inc, nt, ot, names in rows[:8] if nt or ot]
     by40 = (GOLD or 0) + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
     at60 = saved - (mount if mount_at else 0)
+    CTX["gold"] = {"gold": GOLD, "reserve": reserve, "spend": spend, "mount": mount, "mount_level": MOUNT["level"], "by40": by40,
+                   "mount_at": mount_at, "at60": at60, "gear_share": GEAR_SHARE,
+                   "gear_before40": sum(c for L, c in PLANNED if L < MOUNT["level"]),
+                   "income": [(r[0], r[1]) for r in rows[:6]]}
     o = ["## Gold plan", "",
          f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need at the next two levels: "
          f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**.", "",
@@ -1060,6 +1081,12 @@ def profession_section(profs):
          "expected counts: a yellow or green recipe does not always give a point. Forever lets you learn recipes earlier than Classic did, "
          "so check your trainer whenever a profession stalls.", ""]
     crafts = [e for e in PLAN_EVENTS if primary(e)["kind"] == "craft"]
+    CTX["professions"], CTX["crafts"] = [], []
+    for e in sorted(crafts, key=lambda e: e["level"]):
+        s0 = primary(e)
+        CTX["crafts"].append({"item": e["item"]["name"], "slot": e["slot"], "level": e["level"], "profession": s0["profession"],
+                              "known": s0.get("spell") in KNOWN, "learn": s0.get("learn"), "skill": s0.get("skill"),
+                              "have": (profs.get(s0["profession"]) or (0,))[0]})
     if crafts:   # what the plan's crafts ask of the professions (2026-11-09, the "work toward" list)
         o += ["Crafts in your plan:", ""]
         for e in sorted(crafts, key=lambda e: e["level"]):
@@ -1074,6 +1101,8 @@ def profession_section(profs):
             continue
         skill, cap = profs[prof]
         if skill >= cap:
+            CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": skill, "total": 0, "steps": [], "mats": [],
+                                       "capped": True})
             o += [f"**{prof}** {skill}/{cap}: at your rank's cap; train the next rank to go on.", ""]
             continue
         groups, stop, mats = PF.skill_plan(prof, skill, cap, RECIPES, tri, unit_price, sell=resale)
@@ -1082,6 +1111,7 @@ def profession_section(profs):
             o += ["(The add-on records only recipes that make an item, so your enchants are not in this list: a skill point from an "
                   "enchant you know can be cheaper than these.)", ""]
         if not groups:
+            CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": skill, "total": 0, "steps": [], "mats": []})
             o += ["No recipe you know gives a point at your skill: learn new ones at the trainer.", ""]
             continue
         o += ["| Skill | Recipe | Crafts (expected) | Cost after selling what you make |", "|---|---|---|---|"]
@@ -1089,6 +1119,10 @@ def profession_section(profs):
         for a, b, r, crafts, c in groups:
             total += c
             o += [f"| {a}-{b} | {r['name']} | {crafts:.0f} | {AH.money(c)} |"]
+        top6 = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]
+        CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": stop, "total": total,
+                                   "steps": [{"from": a, "to": b, "recipe": r["name"], "crafts": round(crafts), "cost": c} for a, b, r, crafts, c in groups],
+                                   "mats": [(item_name(i), round(n)) for i, n in top6]})
         o += ["", f"About {AH.money(total)} net to reach {stop}, if you sell what you make at its usual price (at most 8 of each, and "
               "no more than a day's sales; products without a sales history count as unsold)"
               + ("." if stop >= cap else f"; from {stop} no recipe you know gives points: learn new ones at the trainer.")]
@@ -1166,10 +1200,13 @@ def consumable_lines(level, wl, profs, school_share):
         per_hour = cost * 60 / minutes if cost and minutes else None
         rows.append((CONSUMABLE_KIND[c["type"]], c["name"], st, xp, gain, minutes, how, cost, per_hour))
     out = []
+    CTX["consumables"] = []
     for kind in ("Weapon oil", "Food", "Elixir", "Scroll"):
         ks = sorted([r for r in rows if r[0] == kind], key=lambda r: -(r[4] + r[3] / 100 * 0.5))[:3]
         for k, name, st, xp, gain, minutes, how, cost, per_hour in ks:
             eff = ", ".join(f"+{v:g} {x.replace('_', ' ')}" for x, v in st.items()) + (f", +{xp}% kill experience" if xp else "")
+            CTX["consumables"].append({"kind": kind, "item": name, "effect": eff, "pct": pct(gain), "minutes": minutes, "how": how,
+                                       "cost": cost, "hour": per_hour, "best": name == ks[0][1]})
             out.append(f"| {kind} | {name} | {eff} | {pct(gain)} | {minutes or '?'} min | {how} | {AH.money(cost) if cost else 'no price'} | "
                        f"{AH.money(per_hour) if per_hour else '?'} |")
     if not out:
@@ -1177,6 +1214,31 @@ def consumable_lines(level, wl, profs, school_share):
     return (["| Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |", "|---|---|---|---|---|---|---|---|"] + out +
             ["", "One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the "
              "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
+
+
+def event_row(e, at):
+    """One upgrade as the checklist page shows it."""
+    pr = price_of(e)
+    fb, fbt = e.get("fallback"), None
+    if fb and "keep" in fb:
+        fbt = f"keep your {fb['keep']}" if fb["keep"] else None
+    elif fb:
+        fbt = f"{fb['item']['name']}, {pct(fb['gain'])} faster ({sources_text(fb['item'])})"
+    why = None
+    if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:
+        why = "; ".join(f"{n} at {L}: {w}" for L, n, g, w in sorted(sorted(e["passed"], key=lambda x: -x[2])[:2]))
+    budget = None
+    if e.get("paid"):
+        budget = (f"your gear budget covers it at level {e['paid'][0]}" if e["paid"][0] > max(e["get_at"], NOW_LV)
+                  else "fits your gear budget")
+    src = primary(e)
+    mats = mats_text(reagents_of(src["spell"])) if src["kind"] == "craft" and src.get("spell") else None
+    saves, earn = pays_for_itself(e, at, pr) if pr else (minutes_saved(e, at), 0)
+    return {"slot": e["slot"], "item": e["item"]["name"], "quality": e["item"].get("quality") or 2, "pct": pct(e["gain"]),
+            "minutes": round(saves), "earn": round(earn), "level": e["level"], "get_at": max(e["get_at"], NOW_LV), "until": e["until"],
+            "kind": src["kind"], "where": sources_text(e["item"]), "price": pr, "budget": budget, "replaces": e.get("replaces"),
+            "fallback": fbt, "miss": "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop", "why": why,
+            "mats": mats}
 
 
 def plan_state(events, lv, fetched):
@@ -1196,6 +1258,7 @@ def change_lines(d, events, lv):
     new = [f"{n} ({s}, level {L})" for (s, n), L in sorted(now.items(), key=lambda kv: kv[1]) if (s, n) not in was]
     gone = [f"{n} ({s})" for (s, n) in was if (s, n) not in now]
     moved = [f"{n} ({s}) level {was[(s, n)]} to {L}" for (s, n), L in now.items() if (s, n) in was and was[(s, n)] != L]
+    CTX["changes"] = {"time": old["time"], "level": old["level"], "gold_then": old.get("gold"), "new": new, "gone": gone, "moved": moved}
     o = [f"## Since your last refresh ({old['time']}, level {old['level']})", ""]
     if old.get("gold") is not None and GOLD is not None:
         o += [f"- Gold: {AH.money(old['gold'])} then, {AH.money(GOLD)} now."]
@@ -1234,6 +1297,9 @@ def judge_lines(worn, events, wl, lv, cfg):
         if (it or {}).get("planned"):
             name += f" (planned, level {it['planned']})"
         o += [f"| {slot} | {name} | {have:.0f} | {have + need:.0f} | {nxt if nxt < 60 else '-'} |"]
+        CTX.setdefault("judge", []).append({"slot": slot, "item": name, "have": round(have), "need": round(have + need),
+                                            "next": nxt if nxt < 60 else None})
+    CTX["rates"] = {k: round(v, 2) for k, v in rate.items()}
     return o + [""]
 
 
@@ -1378,6 +1444,8 @@ def main():
     ench = enchants(cfg["school_share"])
     PLAN_EVENTS[:] = events
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)
+    import checklist   # the town checklist page (2026-11-09, user: "an easy to look at almost to-do list of every time I'm in a city")
+    checklist.write(cfg, d, CTX)
     if not a.no_refresh:   # the plan this refresh made, for the next refresh's change list
         (d / "state.json").write_text(json.dumps(plan_state(events, lv0, fetched), indent=1) + "\n", encoding="utf-8")
     print(f"wrote {d / 'README.md'}: {len(events)} upgrades to 60")

@@ -81,7 +81,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `gear_share` of each level's income; the rest saves for the mount and 60), else the plan is made again without it; income values loot
   at the add-on's sale prices (`mob_loot.csv`; asking prices capped at twice the vendor's); a long-held item says why nothing replaces it;
   drops and unknown-recipe crafts carry a fallback; quest rewards name where their chain starts (`quest_chain.csv`); refreshes write
-  `state.json` and the next page lists what changed.
+  `state.json` and the next page lists what changed. **When the user says "refresh <name>"**: run `plan.py <name>` (it also writes
+  `_characters/<name>/checklist.html`, the town checklist: trainer, talents, auction buys, profession steps and recipes, crafts, enchants,
+  quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file with the Artifact tool to the
+  character's `checklist_url` (user, 2026-11-09: "a page can open every time I say refresh").
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 
